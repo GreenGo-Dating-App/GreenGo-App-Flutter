@@ -1,0 +1,33 @@
+{
+ "topic": "anime",
+ "intro": {
+  "en": [
+   "Hi, I'm {name}! Let's dive into the colourful world of anime and manga together on a 365-day path, with one small lesson a day. ✨",
+   "We'll go from the basics and Studio Ghibli to anime history, how studios work, genres, art and Japanese culture. Which anime or manga made you smile the most?"
+  ],
+  "de": [
+   "Hallo, ich bin {name}! Lass uns 365 Tage lang gemeinsam in die bunte Welt von Anime und Manga eintauchen, mit einer kleinen Lektion pro Tag. ✨",
+   "Wir gehen von den Grundlagen und Studio Ghibli über Anime-Geschichte und Studios bis zu Genres, Kunst und japanischer Kultur. Welcher Anime oder Manga hat dich am meisten zum Lächeln gebracht?"
+  ],
+  "es": [
+   "¡Hola, soy {name}! Sumerjámonos juntos en el colorido mundo del anime y el manga en un camino de 365 días, con una pequeña lección diaria. ✨",
+   "Iremos de lo básico y el Studio Ghibli a la historia del anime, los estudios, los géneros, el arte y la cultura japonesa. ¿Qué anime o manga te ha hecho sonreír más?"
+  ],
+  "fr": [
+   "Bonjour, je suis {name} ! Plongeons ensemble dans l'univers coloré de l'anime et du manga sur un parcours de 365 jours, avec une petite leçon par jour. ✨",
+   "Des bases et du Studio Ghibli à l'histoire de l'animation japonaise, en passant par les studios, les genres, l'art et la culture du Japon. Quel anime ou manga t'a le plus fait sourire ?"
+  ],
+  "it": [
+   "Ciao, sono {name}! Tuffiamoci insieme nel mondo colorato di anime e manga in un percorso di 365 giorni, con una piccola lezione al giorno. ✨",
+   "Passeremo dalle basi e dallo Studio Ghibli alla storia degli anime, agli studi di animazione, ai generi, all'arte e alla cultura giapponese. Quale anime o manga ti ha fatto sorridere di più?"
+  ],
+  "pt": [
+   "Olá, chamo-me {name}! Vamos mergulhar juntos no mundo colorido do anime e da manga num percurso de 365 dias, com uma pequena lição por dia. ✨",
+   "Vamos das bases e do Studio Ghibli à história do anime, aos estúdios, aos géneros, à arte e à cultura japonesa. Que anime ou manga te fez sorrir mais?"
+  ],
+  "pt_BR": [
+   "Oi, eu sou {name}! Vamos mergulhar juntos no mundo colorido dos animes e mangás numa jornada de 365 dias, com uma pequena lição por dia. ✨",
+   "Vamos do básico e do Studio Ghibli à história dos animes, aos estúdios, aos gêneros, à arte e à cultura japonesa. Qual anime ou mangá mais fez você sorrir?"
+  ]
+ }
+}

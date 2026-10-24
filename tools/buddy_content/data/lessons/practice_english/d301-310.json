@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_english",
+ "lessons": [
+  {
+   "d": 301,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Hedging: it seems, arguably",
+     "g": "Sound careful and balanced with hedging words like it seems that and arguably.",
+     "p": [
+      "Hedging softens a claim: It seems that... It appears that... This is arguably the best option.",
+      "Tends to and to some extent: People tend to work longer hours. I agree to some extent.",
+      "Modals hedge too: This may be true. It could be a problem. Compare: It is wrong vs It might not be ideal."
+     ],
+     "q": "What is something you believe is true, but only to some extent? Explain with tends to or arguably.",
+     "c": "Rewrite three strong opinions with hedging: it seems that, arguably and to some extent."
+    },
+    "de": {
+     "t": "Hedging: it seems, arguably",
+     "g": "Du klingst vorsichtig und ausgewogen mit Formulierungen wie it seems that und arguably.",
+     "p": [
+      "Hedging schwächt eine Aussage ab: It seems that... It appears that... This is arguably the best option.",
+      "Tends to und to some extent: People tend to work longer hours. I agree to some extent.",
+      "Auch Modalverben helfen: This may be true. It could be a problem. Vergleiche: It is wrong vs It might not be ideal."
+     ],
+     "q": "Was hältst du nur bis zu einem gewissen Grad für wahr? Erkläre es mit tends to oder arguably.",
+     "c": "Formuliere drei starke Meinungen vorsichtiger: mit it seems that, arguably und to some extent."
+    },
+    "es": {
+     "t": "Hedging: it seems, arguably",
+     "g": "Suena prudente y equilibrado con expresiones como it seems that y arguably.",
+     "p": [
+      "El hedging suaviza una afirmación: It seems that... It appears that... This is arguably the best option.",
+      "Tends to y to some extent: People tend to work longer hours. I agree to some extent.",
+      "Los modales también suavizan: This may be true. It could be a problem. Compara: It is wrong vs It might not be ideal."
+     ],
+     "q": "¿Qué crees que es cierto, pero solo hasta cierto punto? Explícalo con tends to o arguably.",
+     "c": "Reescribe tres opiniones tajantes con it seems that, arguably y to some extent."
+    },
+    "fr": {
+     "t": "Hedging: it seems, arguably",
+     "g": "Exprime-toi avec nuance et prudence grâce à it seems that et arguably.",
+     "p": [
+      "Le hedging atténue une affirmation : It seems that... It appears that... This is arguably the best option.",
+      "Tends to et to some extent : People tend to work longer hours. I agree to some extent.",
+      "Les modaux nuancent aussi : This may be true. It could be a problem. Compare : It is wrong vs It might not be ideal."
+     ],
+     "q": "Qu'est-ce que tu crois vrai, mais seulement dans une certaine mesure ? Explique avec tends to ou arguably.",
+     "c": "Réécris trois opinions tranchées avec it seems that, arguably et to some extent."
+    },
+    "it": {
+     "t": "Hedging: it seems, arguably",
+     "g": "Esprimiti in modo cauto ed equilibrato con formule come it seems that e arguably.",
+     "p": [
+      "L'hedging attenua un'affermazione: It seems that... It appears that... This is arguably the best option.",
+      "Tends to e to some extent: People tend to work longer hours. I agree to some extent.",
+      "Anche i modali attenuano: This may be true. It could be a problem. Confronta: It is wrong vs It might not be ideal."
+     ],
+     "q": "Cosa pensi sia vero, ma solo fino a un certo punto? Spiegalo con tends to o arguably.",
+     "c": "Riscrivi tre opinioni nette usando it seems that, arguably e to some extent."
+    },
+    "pt": {
+     "t": "Hedging: it seems, arguably",
+     "g": "Soa prudente e equilibrado com expressões como it seems that e arguably.",
+     "p": [
+      "O hedging suaviza uma afirmação: It seems that... It appears that... This is arguably the best option.",
+      "Tends to e to some extent: People tend to work longer hours. I agree to some extent.",
+      "Os modais também suavizam: This may be true. It could be a problem. Compara: It is wrong vs It might not be ideal."
+     ],
+     "q": "Em que acreditas, mas só até certo ponto? Explica com tends to ou arguably.",
+     "c": "Reescreve três opiniões fortes com it seems that, arguably e to some extent."
+    },
+    "pt_BR": {
+     "t": "Hedging: it seems, arguably",
+     "g": "Soe cuidadoso e equilibrado com expressões como it seems that e arguably.",
+     "p": [
+      "O hedging suaviza uma afirmação: It seems that... It appears that... This is arguably the best option.",
+      "Tends to e to some extent: People tend to work longer hours. I agree to some extent.",
+      "Os modais também suavizam: This may be true. It could be a problem. Compare: It is wrong vs It might not be ideal."
+     ],
+     "q": "Em que você acredita, mas só até certo ponto? Explique com tends to ou arguably.",
+     "c": "Reescreva três opiniões fortes com it seems that, arguably e to some extent."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "it seems that",
+      "ex": "It seems that the meeting has been moved."
+     },
+     {
+      "w": "arguably",
+      "ex": "This is arguably the best café in town."
+     },
+     {
+      "w": "tend to",
+      "ex": "Children tend to learn languages quickly."
+     },
+     {
+      "w": "to some extent",
+      "ex": "I agree with you to some extent."
+     },
+     {
+      "w": "it appears that",
+      "ex": "It appears that the train is delayed."
+     },
+     {
+      "w": "might not be ideal",
+      "ex": "This plan might not be ideal for everyone."
+     }
+    ],
+    "gram": "Hedging: it seems/appears that, arguably, tend to, to some extent and modals (may, might, could) make claims less absolute."
+   }
+  },
+  {
+   "d": 302,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Formal vs neutral register",
+     "g": "Shift register by choosing formal or neutral words: request or ask, obtain or get.",
+     "p": [
+      "Formal verbs are often longer: request (ask), obtain (get), assist (help), require (need), inform (tell).",
+      "Formal English avoids phrasal verbs and contractions: We regret to inform you... vs Sorry to tell you...",
+      "Neutral English fits most emails to colleagues; formal fits official letters, applications and reports."
+     ],
+     "q": "Which situations in your life need formal English, and which are fine with neutral English?",
+     "c": "Turn this into formal English: Can you help me get the forms? I need them by Friday."
+    },
+    "de": {
+     "t": "Formeller vs. neutraler Stil",
+     "g": "Du wechselst das Register mit formellen oder neutralen Wörtern: request oder ask, obtain oder get.",
+     "p": [
+      "Formelle Verben sind oft länger: request (ask), obtain (get), assist (help), require (need), inform (tell).",
+      "Formelles Englisch meidet Phrasal Verbs und Kurzformen: We regret to inform you... statt Sorry to tell you...",
+      "Neutral passt für die meisten Mails an Kollegen, formell für offizielle Briefe, Bewerbungen und Berichte."
+     ],
+     "q": "In welchen Situationen brauchst du formelles Englisch, und wo reicht neutrales?",
+     "c": "Mach diesen Satz formell: Can you help me get the forms? I need them by Friday."
+    },
+    "es": {
+     "t": "Registro formal y neutro",
+     "g": "Cambia de registro eligiendo palabras formales o neutras: request o ask, obtain o get.",
+     "p": [
+      "Los verbos formales suelen ser más largos: request (ask), obtain (get), assist (help), require (need), inform (tell).",
+      "El inglés formal evita phrasal verbs y contracciones: We regret to inform you... frente a Sorry to tell you...",
+      "El neutro sirve para casi todos los correos a colegas; el formal, para cartas oficiales, solicitudes e informes."
+     ],
+     "q": "¿En qué situaciones de tu vida necesitas inglés formal y en cuáles basta el neutro?",
+     "c": "Pasa esto a inglés formal: Can you help me get the forms? I need them by Friday."
+    },
+    "fr": {
+     "t": "Registre formel ou neutre",
+     "g": "Change de registre en choisissant des mots formels ou neutres : request ou ask, obtain ou get.",
+     "p": [
+      "Les verbes formels sont souvent plus longs : request (ask), obtain (get), assist (help), require (need), inform (tell).",
+      "L'anglais formel évite phrasal verbs et contractions : We regret to inform you... plutôt que Sorry to tell you...",
+      "Le neutre convient à la plupart des mails entre collègues ; le formel aux lettres officielles, candidatures et rapports."
+     ],
+     "q": "Dans quelles situations as-tu besoin d'un anglais formel, et quand le neutre suffit-il ?",
+     "c": "Rends cette phrase formelle : Can you help me get the forms? I need them by Friday."
+    },
+    "it": {
+     "t": "Registro formale e neutro",
+     "g": "Cambia registro scegliendo parole formali o neutre: request o ask, obtain o get.",
+     "p": [
+      "I verbi formali sono spesso più lunghi: request (ask), obtain (get), assist (help), require (need), inform (tell).",
+      "L'inglese formale evita phrasal verbs e contrazioni: We regret to inform you... invece di Sorry to tell you...",
+      "Il neutro va bene per quasi tutte le email ai colleghi; il formale per lettere ufficiali, candidature e relazioni."
+     ],
+     "q": "In quali situazioni ti serve l'inglese formale e in quali basta quello neutro?",
+     "c": "Rendi formale questa frase: Can you help me get the forms? I need them by Friday."
+    },
+    "pt": {
+     "t": "Registo formal e neutro",
+     "g": "Muda de registo escolhendo palavras formais ou neutras: request ou ask, obtain ou get.",
+     "p": [
+      "Os verbos formais costumam ser mais longos: request (ask), obtain (get), assist (help), require (need), inform (tell).",
+      "O inglês formal evita phrasal verbs e contrações: We regret to inform you... em vez de Sorry to tell you...",
+      "O neutro serve para a maioria dos e-mails a colegas; o formal para cartas oficiais, candidaturas e relatórios."
+     ],
+     "q": "Em que situações da tua vida precisas de inglês formal, e quando basta o neutro?",
+     "c": "Passa isto para inglês formal: Can you help me get the forms? I need them by Friday."
+    },
+    "pt_BR": {
+     "t": "Registro formal e neutro",
+     "g": "Mude de registro escolhendo palavras formais ou neutras: request ou ask, obtain ou get.",
+     "p": [
+      "Verbos formais costumam ser mais longos: request (ask), obtain (get), assist (help), require (need), inform (tell).",
+      "O inglês formal evita phrasal verbs e contrações: We regret to inform you... em vez de Sorry to tell you...",
+      "O neutro serve para a maioria dos e-mails a colegas; o formal, para cartas oficiais, candidaturas e relatórios."
+     ],
+     "q": "Em que situações da sua vida você precisa de inglês formal, e quando o neutro basta?",
+     "c": "Passe isto para inglês formal: Can you help me get the forms? I need them by Friday."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "request",
+      "ex": "We would like to request further information."
+     },
+     {
+      "w": "obtain",
+      "ex": "You can obtain a copy from the office."
+     },
+     {
+      "w": "assist",
+      "ex": "Our staff will be happy to assist you."
+     },
+     {
+      "w": "require",
+      "ex": "Do you require any further details?"
+     },
+     {
+      "w": "inform",
+      "ex": "Please inform us of any changes."
+     },
+     {
+      "w": "regret",
+      "ex": "We regret to inform you that the event is cancelled."
+     }
+    ],
+    "gram": "Formal register: Latin-based verbs (request, obtain, assist), no contractions, fewer phrasal verbs; neutral register suits everyday work."
+   }
+  },
+  {
+   "d": 303,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Writing a formal letter",
+     "g": "Write a formal letter or enquiry with the right structure, tone and fixed phrases.",
+     "p": [
+      "Open: Dear Sir or Madam (name unknown) or Dear Ms Lee. Reason: I am writing to enquire about...",
+      "Body: one idea per paragraph. Polite requests: I would be grateful if you could... Could you please confirm...?",
+      "Close: I look forward to hearing from you. Yours faithfully (no name) or Yours sincerely (with name)."
+     ],
+     "q": "Have you ever had to write a formal letter or email? What was it about and how did it go?",
+     "c": "Write a short formal enquiry to a language school asking about course dates and prices."
+    },
+    "de": {
+     "t": "Einen formellen Brief schreiben",
+     "g": "Du schreibst einen formellen Brief oder eine Anfrage mit passender Struktur, Ton und festen Wendungen.",
+     "p": [
+      "Anrede: Dear Sir or Madam (Name unbekannt) oder Dear Ms Lee. Anlass: I am writing to enquire about...",
+      "Hauptteil: ein Gedanke pro Absatz. Höfliche Bitten: I would be grateful if you could... Could you please confirm...?",
+      "Schluss: I look forward to hearing from you. Yours faithfully (ohne Namen) oder Yours sincerely (mit Namen)."
+     ],
+     "q": "Musstest du schon einmal einen formellen Brief schreiben? Worum ging es, und wie lief es?",
+     "c": "Schreib eine kurze formelle Anfrage an eine Sprachschule zu Kursterminen und Preisen."
+    },
+    "es": {
+     "t": "Escribir una carta formal",
+     "g": "Escribe una carta o consulta formal con la estructura, el tono y las fórmulas adecuadas.",
+     "p": [
+      "Saludo: Dear Sir or Madam (sin nombre) o Dear Ms Lee. Motivo: I am writing to enquire about...",
+      "Cuerpo: una idea por párrafo. Peticiones corteses: I would be grateful if you could... Could you please confirm...?",
+      "Cierre: I look forward to hearing from you. Yours faithfully (sin nombre) o Yours sincerely (con nombre)."
+     ],
+     "q": "¿Alguna vez has tenido que escribir una carta formal? ¿Sobre qué era y cómo salió?",
+     "c": "Escribe una breve consulta formal a una academia de idiomas sobre fechas y precios de cursos."
+    },
+    "fr": {
+     "t": "Écrire une lettre formelle",
+     "g": "Rédige une lettre ou une demande formelle avec la bonne structure, le bon ton et les formules figées.",
+     "p": [
+      "Ouverture : Dear Sir or Madam (nom inconnu) ou Dear Ms Lee. Objet : I am writing to enquire about...",
+      "Corps : une idée par paragraphe. Demandes polies : I would be grateful if you could... Could you please confirm...?",
+      "Clôture : I look forward to hearing from you. Yours faithfully (sans nom) ou Yours sincerely (avec nom)."
+     ],
+     "q": "As-tu déjà dû écrire une lettre formelle ? De quoi s'agissait-il et comment ça s'est passé ?",
+     "c": "Écris une courte demande formelle à une école de langues sur les dates et les prix des cours."
+    },
+    "it": {
+     "t": "Scrivere una lettera formale",
+     "g": "Scrivi una lettera o una richiesta formale con struttura, tono e formule fisse giusti.",
+     "p": [
+      "Apertura: Dear Sir or Madam (nome ignoto) o Dear Ms Lee. Motivo: I am writing to enquire about...",
+      "Corpo: un'idea per paragrafo. Richieste cortesi: I would be grateful if you could... Could you please confirm...?",
+      "Chiusura: I look forward to hearing from you. Yours faithfully (senza nome) o Yours sincerely (con nome)."
+     ],
+     "q": "Ti è mai capitato di scrivere una lettera formale? Di cosa si trattava e com'è andata?",
+     "c": "Scrivi una breve richiesta formale a una scuola di lingue su date e prezzi dei corsi."
+    },
+    "pt": {
+     "t": "Escrever uma carta formal",
+     "g": "Escreve uma carta ou pedido formal com a estrutura, o tom e as fórmulas certas.",
+     "p": [
+      "Abertura: Dear Sir or Madam (nome desconhecido) ou Dear Ms Lee. Motivo: I am writing to enquire about...",
+      "Corpo: uma ideia por parágrafo. Pedidos corteses: I would be grateful if you could... Could you please confirm...?",
+      "Fecho: I look forward to hearing from you. Yours faithfully (sem nome) ou Yours sincerely (com nome)."
+     ],
+     "q": "Já tiveste de escrever uma carta formal? Sobre o que era e como correu?",
+     "c": "Escreve um pequeno pedido formal a uma escola de línguas sobre datas e preços dos cursos."
+    },
+    "pt_BR": {
+     "t": "Escrever uma carta formal",
+     "g": "Escreva uma carta ou consulta formal com a estrutura, o tom e as fórmulas certas.",
+     "p": [
+      "Abertura: Dear Sir or Madam (nome desconhecido) ou Dear Ms Lee. Motivo: I am writing to enquire about...",
+      "Corpo: uma ideia por parágrafo. Pedidos educados: I would be grateful if you could... Could you please confirm...?",
+      "Fechamento: I look forward to hearing from you. Yours faithfully (sem nome) ou Yours sincerely (com nome)."
+     ],
+     "q": "Você já precisou escrever uma carta formal? Sobre o que era e como foi?",
+     "c": "Escreva uma consulta formal curta a uma escola de idiomas sobre datas e preços dos cursos."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "Dear Sir or Madam",
+      "ex": "Dear Sir or Madam, I am writing to complain about my order."
+     },
+     {
+      "w": "I am writing to enquire",
+      "ex": "I am writing to enquire about your summer courses."
+     },
+     {
+      "w": "I would be grateful if",
+      "ex": "I would be grateful if you could send me a brochure."
+     },
+     {
+      "w": "please confirm",
+      "ex": "Could you please confirm the date of the interview?"
+     },
+     {
+      "w": "I look forward to",
+      "ex": "I look forward to hearing from you."
+     },
+     {
+      "w": "Yours faithfully",
+      "ex": "Yours faithfully, Maria Costa"
+     }
+    ],
+    "gram": "Formal letters: Dear Sir or Madam ... Yours faithfully; Dear Ms X ... Yours sincerely; I would be grateful if you could + verb."
+   }
+  },
+  {
+   "d": 304,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Writing a report",
+     "g": "Write a clear report with headings, a purpose, findings and recommendations.",
+     "p": [
+      "Structure: Introduction (The aim of this report is to...), Findings, Conclusion and Recommendations.",
+      "Use headings and neutral language: The survey shows that... A majority of staff stated that...",
+      "Recommend politely: It is recommended that... I would suggest introducing... It would be advisable to..."
+     ],
+     "q": "If you wrote a report about your town, school or office, what would you recommend improving?",
+     "c": "Write a mini report (four headings, one sentence each) about a café or gym you know."
+    },
+    "de": {
+     "t": "Einen Bericht schreiben",
+     "g": "Du schreibst einen klaren Bericht mit Überschriften, Zweck, Ergebnissen und Empfehlungen.",
+     "p": [
+      "Aufbau: Introduction (The aim of this report is to...), Findings, Conclusion and Recommendations.",
+      "Nutze Überschriften und neutrale Sprache: The survey shows that... A majority of staff stated that...",
+      "Höflich empfehlen: It is recommended that... I would suggest introducing... It would be advisable to..."
+     ],
+     "q": "Wenn du einen Bericht über deine Stadt, Schule oder dein Büro schriebest: Was würdest du verbessern?",
+     "c": "Schreib einen Mini-Bericht (vier Überschriften, je ein Satz) über ein Café oder Fitnessstudio."
+    },
+    "es": {
+     "t": "Escribir un informe",
+     "g": "Escribe un informe claro con títulos, propósito, resultados y recomendaciones.",
+     "p": [
+      "Estructura: Introduction (The aim of this report is to...), Findings, Conclusion and Recommendations.",
+      "Usa títulos y lenguaje neutro: The survey shows that... A majority of staff stated that...",
+      "Recomienda con cortesía: It is recommended that... I would suggest introducing... It would be advisable to..."
+     ],
+     "q": "Si escribieras un informe sobre tu ciudad, escuela u oficina, ¿qué recomendarías mejorar?",
+     "c": "Escribe un miniinforme (cuatro títulos, una frase cada uno) sobre un café o gimnasio que conozcas."
+    },
+    "fr": {
+     "t": "Rédiger un rapport",
+     "g": "Rédige un rapport clair avec titres, objectif, constats et recommandations.",
+     "p": [
+      "Structure : Introduction (The aim of this report is to...), Findings, Conclusion and Recommendations.",
+      "Utilise des titres et un langage neutre : The survey shows that... A majority of staff stated that...",
+      "Recommande poliment : It is recommended that... I would suggest introducing... It would be advisable to..."
+     ],
+     "q": "Si tu écrivais un rapport sur ta ville, ton école ou ton bureau, que recommanderais-tu d'améliorer ?",
+     "c": "Rédige un mini-rapport (quatre titres, une phrase chacun) sur un café ou une salle de sport."
+    },
+    "it": {
+     "t": "Scrivere una relazione",
+     "g": "Scrivi una relazione chiara con titoli, scopo, risultati e raccomandazioni.",
+     "p": [
+      "Struttura: Introduction (The aim of this report is to...), Findings, Conclusion and Recommendations.",
+      "Usa titoli e un linguaggio neutro: The survey shows that... A majority of staff stated that...",
+      "Raccomanda con garbo: It is recommended that... I would suggest introducing... It would be advisable to..."
+     ],
+     "q": "Se scrivessi una relazione sulla tua città, scuola o ufficio, cosa consiglieresti di migliorare?",
+     "c": "Scrivi una mini relazione (quattro titoli, una frase ciascuno) su un bar o una palestra."
+    },
+    "pt": {
+     "t": "Escrever um relatório",
+     "g": "Escreve um relatório claro com títulos, objetivo, conclusões e recomendações.",
+     "p": [
+      "Estrutura: Introduction (The aim of this report is to...), Findings, Conclusion and Recommendations.",
+      "Usa títulos e linguagem neutra: The survey shows that... A majority of staff stated that...",
+      "Recomenda com cortesia: It is recommended that... I would suggest introducing... It would be advisable to..."
+     ],
+     "q": "Se escrevesses um relatório sobre a tua cidade, escola ou escritório, o que recomendarias melhorar?",
+     "c": "Escreve um mini-relatório (quatro títulos, uma frase cada) sobre um café ou ginásio que conheças."
+    },
+    "pt_BR": {
+     "t": "Escrever um relatório",
+     "g": "Escreva um relatório claro com títulos, objetivo, resultados e recomendações.",
+     "p": [
+      "Estrutura: Introduction (The aim of this report is to...), Findings, Conclusion and Recommendations.",
+      "Use títulos e linguagem neutra: The survey shows that... A majority of staff stated that...",
+      "Recomende com educação: It is recommended that... I would suggest introducing... It would be advisable to..."
+     ],
+     "q": "Se você escrevesse um relatório sobre sua cidade, escola ou escritório, o que recomendaria melhorar?",
+     "c": "Escreva um mini-relatório (quatro títulos, uma frase cada) sobre um café ou academia que você conhece."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "the aim of this report",
+      "ex": "The aim of this report is to assess the new timetable."
+     },
+     {
+      "w": "findings",
+      "ex": "The main findings are summarised below."
+     },
+     {
+      "w": "a majority of",
+      "ex": "A majority of students prefer online classes."
+     },
+     {
+      "w": "it is recommended that",
+      "ex": "It is recommended that the library opens earlier."
+     },
+     {
+      "w": "advisable",
+      "ex": "It would be advisable to hire more staff."
+     },
+     {
+      "w": "in conclusion",
+      "ex": "In conclusion, the project was a success."
+     }
+    ],
+    "gram": "Reports: neutral style with headings; recommendations with It is recommended that, I would suggest + -ing, It would be advisable to."
+   }
+  },
+  {
+   "d": 305,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Summarising a text",
+     "g": "Find the main ideas of a text and express them briefly in your own words.",
+     "p": [
+      "First read for gist, then underline the key idea of each paragraph. Ignore examples and small details.",
+      "Start with the source: The article argues that... The author claims... According to the text...",
+      "Keep it short and neutral: no new opinions. Link ideas with while, whereas, as a result, overall."
+     ],
+     "q": "What is the last article, video or book you enjoyed? Summarise it in two sentences.",
+     "c": "Choose a short news story and summarise it in exactly 40 words."
+    },
+    "de": {
+     "t": "Einen Text zusammenfassen",
+     "g": "Du erkennst die Hauptgedanken eines Textes und gibst sie kurz in eigenen Worten wieder.",
+     "p": [
+      "Lies zuerst für den Gesamteindruck, dann markiere die Kernaussage jedes Absatzes. Beispiele und Details weglassen.",
+      "Beginne mit der Quelle: The article argues that... The author claims... According to the text...",
+      "Kurz und neutral bleiben: keine eigene Meinung. Verbinde Ideen mit while, whereas, as a result, overall."
+     ],
+     "q": "Welcher Artikel, welches Video oder Buch hat dir zuletzt gefallen? Fasse es in zwei Sätzen zusammen.",
+     "c": "Wähle eine kurze Nachricht und fasse sie in genau 40 Wörtern zusammen."
+    },
+    "es": {
+     "t": "Resumir un texto",
+     "g": "Encuentra las ideas principales de un texto y exprésalas brevemente con tus palabras.",
+     "p": [
+      "Primero lee para captar la idea general; luego subraya la idea clave de cada párrafo. Omite ejemplos y detalles.",
+      "Empieza por la fuente: The article argues that... The author claims... According to the text...",
+      "Sé breve y neutral: sin opiniones nuevas. Une ideas con while, whereas, as a result, overall."
+     ],
+     "q": "¿Cuál es el último artículo, vídeo o libro que te gustó? Resúmelo en dos frases.",
+     "c": "Elige una noticia corta y resúmela en exactamente 40 palabras."
+    },
+    "fr": {
+     "t": "Résumer un texte",
+     "g": "Repère les idées principales d'un texte et exprime-les brièvement avec tes propres mots.",
+     "p": [
+      "Lis d'abord pour l'idée générale, puis souligne l'idée clé de chaque paragraphe. Laisse les exemples et détails.",
+      "Commence par la source : The article argues that... The author claims... According to the text...",
+      "Reste bref et neutre : pas d'opinion nouvelle. Relie les idées avec while, whereas, as a result, overall."
+     ],
+     "q": "Quel est le dernier article, vidéo ou livre qui t'a plu ? Résume-le en deux phrases.",
+     "c": "Choisis une brève info et résume-la en exactement 40 mots."
+    },
+    "it": {
+     "t": "Riassumere un testo",
+     "g": "Individua le idee principali di un testo ed esprimile in breve con parole tue.",
+     "p": [
+      "Prima leggi per il senso generale, poi sottolinea l'idea chiave di ogni paragrafo. Tralascia esempi e dettagli.",
+      "Parti dalla fonte: The article argues that... The author claims... According to the text...",
+      "Sii breve e neutrale: niente opinioni nuove. Collega le idee con while, whereas, as a result, overall."
+     ],
+     "q": "Qual è l'ultimo articolo, video o libro che ti è piaciuto? Riassumilo in due frasi.",
+     "c": "Scegli una breve notizia e riassumila in esattamente 40 parole."
+    },
+    "pt": {
+     "t": "Resumir um texto",
+     "g": "Encontra as ideias principais de um texto e exprime-as brevemente por palavras tuas.",
+     "p": [
+      "Lê primeiro para a ideia geral, depois sublinha a ideia-chave de cada parágrafo. Ignora exemplos e pormenores.",
+      "Começa pela fonte: The article argues that... The author claims... According to the text...",
+      "Sê breve e neutro: sem opiniões novas. Liga ideias com while, whereas, as a result, overall."
+     ],
+     "q": "Qual foi o último artigo, vídeo ou livro de que gostaste? Resume-o em duas frases.",
+     "c": "Escolhe uma notícia curta e resume-a em exatamente 40 palavras."
+    },
+    "pt_BR": {
+     "t": "Resumir um texto",
+     "g": "Encontre as ideias principais de um texto e expresse-as brevemente com suas palavras.",
+     "p": [
+      "Leia primeiro para pegar a ideia geral, depois sublinhe a ideia-chave de cada parágrafo. Ignore exemplos e detalhes.",
+      "Comece pela fonte: The article argues that... The author claims... According to the text...",
+      "Seja breve e neutro: sem opiniões novas. Ligue ideias com while, whereas, as a result, overall."
+     ],
+     "q": "Qual foi o último artigo, vídeo ou livro de que você gostou? Resuma em duas frases.",
+     "c": "Escolha uma notícia curta e resuma em exatamente 40 palavras."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "the article argues that",
+      "ex": "The article argues that cities need more parks."
+     },
+     {
+      "w": "the main idea",
+      "ex": "The main idea is that sleep improves memory."
+     },
+     {
+      "w": "according to",
+      "ex": "According to the author, reading daily helps."
+     },
+     {
+      "w": "in short",
+      "ex": "In short, the plan saves time and money."
+     },
+     {
+      "w": "whereas",
+      "ex": "Some prefer trains, whereas others prefer flying."
+     },
+     {
+      "w": "overall",
+      "ex": "Overall, the text is positive about remote work."
+     }
+    ],
+    "gram": "Summaries: reporting verbs (argue, claim, suggest) + that; present simple; own words; no personal opinion or minor details."
+   }
+  },
+  {
+   "d": 306,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Paraphrasing in your own words",
+     "g": "Paraphrase by changing words and structure while keeping the meaning.",
+     "p": [
+      "Use synonyms: important becomes essential, rise becomes increase, start becomes begin.",
+      "Change the structure: active to passive, verb to noun. People use the app widely becomes The app is widely used.",
+      "Keep the meaning and key terms. Useful openers: In other words... What I mean is... To put it another way..."
+     ],
+     "q": "Can you explain your job or studies in two different ways, as if to a child and to an expert?",
+     "c": "Paraphrase this sentence twice: Learning a language takes time, but it opens many doors."
+    },
+    "de": {
+     "t": "Mit eigenen Worten umschreiben",
+     "g": "Du paraphrasierst, indem du Wörter und Satzbau änderst, die Bedeutung aber behältst.",
+     "p": [
+      "Synonyme nutzen: important wird essential, rise wird increase, start wird begin.",
+      "Satzbau ändern: Aktiv zu Passiv, Verb zu Nomen. People use the app widely wird The app is widely used.",
+      "Bedeutung und Fachbegriffe bleiben. Nützliche Einstiege: In other words... What I mean is... To put it another way..."
+     ],
+     "q": "Kannst du deinen Job oder dein Studium auf zwei Arten erklären, einem Kind und einem Experten?",
+     "c": "Formuliere diesen Satz zweimal um: Learning a language takes time, but it opens many doors."
+    },
+    "es": {
+     "t": "Parafrasear con tus palabras",
+     "g": "Parafrasea cambiando palabras y estructura sin cambiar el significado.",
+     "p": [
+      "Usa sinónimos: important pasa a essential, rise a increase, start a begin.",
+      "Cambia la estructura: activa a pasiva, verbo a sustantivo. People use the app widely pasa a The app is widely used.",
+      "Mantén el sentido y los términos clave. Fórmulas útiles: In other words... What I mean is... To put it another way..."
+     ],
+     "q": "¿Puedes explicar tu trabajo o tus estudios de dos maneras, a un niño y a un experto?",
+     "c": "Parafrasea esta frase dos veces: Learning a language takes time, but it opens many doors."
+    },
+    "fr": {
+     "t": "Reformuler avec ses mots",
+     "g": "Reformule en changeant les mots et la structure tout en gardant le sens.",
+     "p": [
+      "Utilise des synonymes : important devient essential, rise devient increase, start devient begin.",
+      "Change la structure : actif en passif, verbe en nom. People use the app widely devient The app is widely used.",
+      "Garde le sens et les termes clés. Amorces utiles : In other words... What I mean is... To put it another way..."
+     ],
+     "q": "Peux-tu expliquer ton travail ou tes études de deux façons, à un enfant et à un expert ?",
+     "c": "Reformule cette phrase deux fois : Learning a language takes time, but it opens many doors."
+    },
+    "it": {
+     "t": "Parafrasare con parole tue",
+     "g": "Parafrasa cambiando parole e struttura senza cambiare il significato.",
+     "p": [
+      "Usa sinonimi: important diventa essential, rise diventa increase, start diventa begin.",
+      "Cambia la struttura: da attiva a passiva, da verbo a nome. People use the app widely diventa The app is widely used.",
+      "Mantieni senso e termini chiave. Formule utili: In other words... What I mean is... To put it another way..."
+     ],
+     "q": "Sai spiegare il tuo lavoro o i tuoi studi in due modi, a un bambino e a un esperto?",
+     "c": "Parafrasa questa frase due volte: Learning a language takes time, but it opens many doors."
+    },
+    "pt": {
+     "t": "Parafrasear por palavras tuas",
+     "g": "Parafraseia mudando palavras e estrutura sem mudar o sentido.",
+     "p": [
+      "Usa sinónimos: important passa a essential, rise a increase, start a begin.",
+      "Muda a estrutura: ativa para passiva, verbo para nome. People use the app widely passa a The app is widely used.",
+      "Mantém o sentido e os termos-chave. Fórmulas úteis: In other words... What I mean is... To put it another way..."
+     ],
+     "q": "Consegues explicar o teu trabalho ou estudos de duas formas, a uma criança e a um especialista?",
+     "c": "Parafraseia esta frase duas vezes: Learning a language takes time, but it opens many doors."
+    },
+    "pt_BR": {
+     "t": "Parafrasear com suas palavras",
+     "g": "Parafraseie mudando palavras e estrutura sem mudar o sentido.",
+     "p": [
+      "Use sinônimos: important vira essential, rise vira increase, start vira begin.",
+      "Mude a estrutura: ativa para passiva, verbo para substantivo. People use the app widely vira The app is widely used.",
+      "Mantenha o sentido e os termos-chave. Fórmulas úteis: In other words... What I mean is... To put it another way..."
+     ],
+     "q": "Você consegue explicar seu trabalho ou estudo de duas formas, para uma criança e para um especialista?",
+     "c": "Parafraseie esta frase duas vezes: Learning a language takes time, but it opens many doors."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "in other words",
+      "ex": "In other words, we need more time."
+     },
+     {
+      "w": "to put it another way",
+      "ex": "To put it another way, practice beats talent."
+     },
+     {
+      "w": "what I mean is",
+      "ex": "What I mean is that the price is too high."
+     },
+     {
+      "w": "essential",
+      "ex": "Water is essential for all living things."
+     },
+     {
+      "w": "increase",
+      "ex": "There has been an increase in cyclists."
+     },
+     {
+      "w": "is widely used",
+      "ex": "English is widely used in science."
+     }
+    ],
+    "gram": "Paraphrasing: change words (synonyms), word class (verb to noun) and structure (active to passive) while keeping the original meaning."
+   }
+  },
+  {
+   "d": 307,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Building an argument",
+     "g": "Build a convincing argument with a claim, a reason, an example and a conclusion.",
+     "p": [
+      "Claim: I firmly believe that... Reason: This is because... / The main reason is that...",
+      "Example: For instance... A good example of this is... Evidence makes your reason believable.",
+      "Conclusion: Therefore... That is why... Then answer the other side: Some may say..., however..."
+     ],
+     "q": "Do you think everyone should learn a second language? Give a claim, a reason and an example.",
+     "c": "Write a five-sentence argument for or against a four-day working week."
+    },
+    "de": {
+     "t": "Ein Argument aufbauen",
+     "g": "Du baust ein überzeugendes Argument auf: Behauptung, Begründung, Beispiel, Schluss.",
+     "p": [
+      "Behauptung: I firmly believe that... Begründung: This is because... / The main reason is that...",
+      "Beispiel: For instance... A good example of this is... Belege machen deine Begründung glaubwürdig.",
+      "Schluss: Therefore... That is why... Dann die Gegenseite: Some may say..., however..."
+     ],
+     "q": "Sollte jeder eine zweite Sprache lernen? Nenne Behauptung, Begründung und Beispiel.",
+     "c": "Schreib ein Argument in fünf Sätzen für oder gegen die Vier-Tage-Woche."
+    },
+    "es": {
+     "t": "Construir un argumento",
+     "g": "Construye un argumento convincente con tesis, razón, ejemplo y conclusión.",
+     "p": [
+      "Tesis: I firmly believe that... Razón: This is because... / The main reason is that...",
+      "Ejemplo: For instance... A good example of this is... Las pruebas hacen creíble tu razón.",
+      "Conclusión: Therefore... That is why... Luego responde a la otra parte: Some may say..., however..."
+     ],
+     "q": "¿Crees que todo el mundo debería aprender un segundo idioma? Da tesis, razón y ejemplo.",
+     "c": "Escribe un argumento de cinco frases a favor o en contra de la semana laboral de cuatro días."
+    },
+    "fr": {
+     "t": "Construire un argument",
+     "g": "Construis un argument convaincant : thèse, raison, exemple, conclusion.",
+     "p": [
+      "Thèse : I firmly believe that... Raison : This is because... / The main reason is that...",
+      "Exemple : For instance... A good example of this is... Les preuves rendent ta raison crédible.",
+      "Conclusion : Therefore... That is why... Puis réponds à l'autre camp : Some may say..., however..."
+     ],
+     "q": "Penses-tu que tout le monde devrait apprendre une deuxième langue ? Donne thèse, raison et exemple.",
+     "c": "Écris un argument en cinq phrases pour ou contre la semaine de quatre jours."
+    },
+    "it": {
+     "t": "Costruire un'argomentazione",
+     "g": "Costruisci un'argomentazione convincente: tesi, motivo, esempio, conclusione.",
+     "p": [
+      "Tesi: I firmly believe that... Motivo: This is because... / The main reason is that...",
+      "Esempio: For instance... A good example of this is... Le prove rendono credibile il motivo.",
+      "Conclusione: Therefore... That is why... Poi rispondi all'altra parte: Some may say..., however..."
+     ],
+     "q": "Pensi che tutti dovrebbero imparare una seconda lingua? Dai tesi, motivo ed esempio.",
+     "c": "Scrivi un'argomentazione di cinque frasi a favore o contro la settimana lavorativa di quattro giorni."
+    },
+    "pt": {
+     "t": "Construir um argumento",
+     "g": "Constrói um argumento convincente com tese, razão, exemplo e conclusão.",
+     "p": [
+      "Tese: I firmly believe that... Razão: This is because... / The main reason is that...",
+      "Exemplo: For instance... A good example of this is... As provas tornam a razão credível.",
+      "Conclusão: Therefore... That is why... Depois responde ao outro lado: Some may say..., however..."
+     ],
+     "q": "Achas que toda a gente devia aprender uma segunda língua? Dá tese, razão e exemplo.",
+     "c": "Escreve um argumento de cinco frases a favor ou contra a semana de trabalho de quatro dias."
+    },
+    "pt_BR": {
+     "t": "Construir um argumento",
+     "g": "Construa um argumento convincente com tese, motivo, exemplo e conclusão.",
+     "p": [
+      "Tese: I firmly believe that... Motivo: This is because... / The main reason is that...",
+      "Exemplo: For instance... A good example of this is... As evidências deixam o motivo convincente.",
+      "Conclusão: Therefore... That is why... Depois responda ao outro lado: Some may say..., however..."
+     ],
+     "q": "Você acha que todo mundo deveria aprender uma segunda língua? Dê tese, motivo e exemplo.",
+     "c": "Escreva um argumento de cinco frases a favor ou contra a semana de trabalho de quatro dias."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "I firmly believe that",
+      "ex": "I firmly believe that reading builds vocabulary."
+     },
+     {
+      "w": "the main reason is",
+      "ex": "The main reason is that it saves time."
+     },
+     {
+      "w": "for instance",
+      "ex": "Many cities, for instance Copenhagen, love bikes."
+     },
+     {
+      "w": "a good example of this",
+      "ex": "A good example of this is online banking."
+     },
+     {
+      "w": "therefore",
+      "ex": "It is cheap and fast. Therefore, I recommend it."
+     },
+     {
+      "w": "some may say",
+      "ex": "Some may say it is expensive; however, it lasts."
+     }
+    ],
+    "gram": "Argument structure: claim (I firmly believe that), reason (because), example (for instance), counter-argument (some may say), conclusion."
+   }
+  },
+  {
+   "d": 308,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Debating politely",
+     "g": "Debate with grace using phrases like I take your point, but... and With respect, I'd argue that...",
+     "p": [
+      "Acknowledge first: I take your point, but... That's a fair point; however... I see where you're coming from.",
+      "Disagree softly: With respect, I'd argue that... I'm not sure I agree. Couldn't it also be said that...?",
+      "Keep it friendly: Can I just add something? Sorry, may I finish? Let's agree to disagree."
+     ],
+     "q": "Is it better to travel alone or with friends? Disagree politely with the opposite view.",
+     "c": "Practise three polite disagreements aloud, each starting with a different phrase from today."
+    },
+    "de": {
+     "t": "Höflich debattieren",
+     "g": "Du debattierst respektvoll mit Wendungen wie I take your point, but... und With respect, I'd argue that...",
+     "p": [
+      "Erst anerkennen: I take your point, but... That's a fair point; however... I see where you're coming from.",
+      "Sanft widersprechen: With respect, I'd argue that... I'm not sure I agree. Couldn't it also be said that...?",
+      "Freundlich bleiben: Can I just add something? Sorry, may I finish? Let's agree to disagree."
+     ],
+     "q": "Reist man besser allein oder mit Freunden? Widersprich höflich der Gegenmeinung.",
+     "c": "Übe laut drei höfliche Widersprüche, jeder mit einer anderen Wendung von heute."
+    },
+    "es": {
+     "t": "Debatir con cortesía",
+     "g": "Debate con elegancia con frases como I take your point, but... y With respect, I'd argue that...",
+     "p": [
+      "Primero reconoce: I take your point, but... That's a fair point; however... I see where you're coming from.",
+      "Discrepa con suavidad: With respect, I'd argue that... I'm not sure I agree. Couldn't it also be said that...?",
+      "Mantén el buen tono: Can I just add something? Sorry, may I finish? Let's agree to disagree."
+     ],
+     "q": "¿Es mejor viajar solo o con amigos? Discrepa con cortesía de la opinión contraria.",
+     "c": "Practica en voz alta tres desacuerdos corteses, cada uno con una frase distinta de hoy."
+    },
+    "fr": {
+     "t": "Débattre poliment",
+     "g": "Débats avec élégance grâce à I take your point, but... et With respect, I'd argue that...",
+     "p": [
+      "Reconnais d'abord : I take your point, but... That's a fair point; however... I see where you're coming from.",
+      "Contredis en douceur : With respect, I'd argue that... I'm not sure I agree. Couldn't it also be said that...?",
+      "Reste aimable : Can I just add something? Sorry, may I finish? Let's agree to disagree."
+     ],
+     "q": "Vaut-il mieux voyager seul ou entre amis ? Contredis poliment l'avis opposé.",
+     "c": "Entraîne-toi à voix haute à trois désaccords polis, chacun avec une formule différente du jour."
+    },
+    "it": {
+     "t": "Dibattere con garbo",
+     "g": "Dibatti con eleganza usando frasi come I take your point, but... e With respect, I'd argue that...",
+     "p": [
+      "Prima riconosci: I take your point, but... That's a fair point; however... I see where you're coming from.",
+      "Dissenti con delicatezza: With respect, I'd argue that... I'm not sure I agree. Couldn't it also be said that...?",
+      "Resta cordiale: Can I just add something? Sorry, may I finish? Let's agree to disagree."
+     ],
+     "q": "È meglio viaggiare da soli o con gli amici? Dissenti con garbo dall'opinione opposta.",
+     "c": "Esercitati ad alta voce con tre disaccordi cortesi, ognuno con una frase diversa di oggi."
+    },
+    "pt": {
+     "t": "Debater com educação",
+     "g": "Debate com elegância usando frases como I take your point, but... e With respect, I'd argue that...",
+     "p": [
+      "Primeiro reconhece: I take your point, but... That's a fair point; however... I see where you're coming from.",
+      "Discorda com suavidade: With respect, I'd argue that... I'm not sure I agree. Couldn't it also be said that...?",
+      "Mantém a simpatia: Can I just add something? Sorry, may I finish? Let's agree to disagree."
+     ],
+     "q": "É melhor viajar sozinho ou com amigos? Discorda educadamente da opinião contrária.",
+     "c": "Pratica em voz alta três discordâncias educadas, cada uma com uma frase diferente de hoje."
+    },
+    "pt_BR": {
+     "t": "Debater com educação",
+     "g": "Debata com elegância usando frases como I take your point, but... e With respect, I'd argue that...",
+     "p": [
+      "Primeiro reconheça: I take your point, but... That's a fair point; however... I see where you're coming from.",
+      "Discorde com suavidade: With respect, I'd argue that... I'm not sure I agree. Couldn't it also be said that...?",
+      "Mantenha a gentileza: Can I just add something? Sorry, may I finish? Let's agree to disagree."
+     ],
+     "q": "É melhor viajar sozinho ou com amigos? Discorde educadamente da opinião contrária.",
+     "c": "Pratique em voz alta três discordâncias educadas, cada uma com uma frase diferente de hoje."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "I take your point, but",
+      "ex": "I take your point, but the cost is still high."
+     },
+     {
+      "w": "that's a fair point",
+      "ex": "That's a fair point; however, time matters too."
+     },
+     {
+      "w": "with respect",
+      "ex": "With respect, I'd argue that the data is old."
+     },
+     {
+      "w": "I see where you're coming from",
+      "ex": "I see where you're coming from, but I disagree."
+     },
+     {
+      "w": "may I finish",
+      "ex": "Sorry, may I just finish my point?"
+     },
+     {
+      "w": "agree to disagree",
+      "ex": "Let's agree to disagree on this one."
+     }
+    ],
+    "gram": "Polite debate: acknowledge (I take your point), then contrast (but/however), soften with I'd argue, I'm not sure, couldn't it be said."
+   }
+  },
+  {
+   "d": 309,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Persuasive language",
+     "g": "Persuade an audience with rhetorical questions, the rule of three and strong verbs.",
+     "p": [
+      "Rhetorical questions make people think: Who doesn't want more free time? Isn't it time we acted?",
+      "The rule of three is memorable: It's quick, cheap and easy. Strong verbs: transform, boost, discover.",
+      "Speak to the listener: Imagine... You deserve... Just think how... Add a clear call to action: Join us today!"
+     ],
+     "q": "What product, place or habit would you love to persuade people to try? Why?",
+     "c": "Write a three-sentence advert for your favourite place using a rhetorical question and the rule of three."
+    },
+    "de": {
+     "t": "Überzeugende Sprache",
+     "g": "Du überzeugst ein Publikum mit rhetorischen Fragen, der Dreierregel und starken Verben.",
+     "p": [
+      "Rhetorische Fragen regen an: Who doesn't want more free time? Isn't it time we acted?",
+      "Die Dreierregel bleibt hängen: It's quick, cheap and easy. Starke Verben: transform, boost, discover.",
+      "Sprich die Zuhörer an: Imagine... You deserve... Just think how... Plus klarer Aufruf: Join us today!"
+     ],
+     "q": "Welches Produkt, welchen Ort oder welche Gewohnheit würdest du anderen gern schmackhaft machen? Warum?",
+     "c": "Schreib eine Werbung in drei Sätzen für deinen Lieblingsort mit rhetorischer Frage und Dreierregel."
+    },
+    "es": {
+     "t": "Lenguaje persuasivo",
+     "g": "Persuade a tu público con preguntas retóricas, la regla de tres y verbos potentes.",
+     "p": [
+      "Las preguntas retóricas hacen pensar: Who doesn't want more free time? Isn't it time we acted?",
+      "La regla de tres se recuerda: It's quick, cheap and easy. Verbos potentes: transform, boost, discover.",
+      "Habla al oyente: Imagine... You deserve... Just think how... Y una llamada clara a la acción: Join us today!"
+     ],
+     "q": "¿Qué producto, lugar o hábito te encantaría convencer a la gente de probar? ¿Por qué?",
+     "c": "Escribe un anuncio de tres frases sobre tu lugar favorito con una pregunta retórica y la regla de tres."
+    },
+    "fr": {
+     "t": "Le langage persuasif",
+     "g": "Persuade ton public avec des questions rhétoriques, la règle de trois et des verbes forts.",
+     "p": [
+      "Les questions rhétoriques font réfléchir : Who doesn't want more free time? Isn't it time we acted?",
+      "La règle de trois marque les esprits : It's quick, cheap and easy. Verbes forts : transform, boost, discover.",
+      "Adresse-toi à l'auditeur : Imagine... You deserve... Just think how... Et un appel clair : Join us today!"
+     ],
+     "q": "Quel produit, lieu ou habitude aimerais-tu faire essayer aux autres ? Pourquoi ?",
+     "c": "Écris une pub de trois phrases pour ton lieu préféré avec une question rhétorique et la règle de trois."
+    },
+    "it": {
+     "t": "Il linguaggio persuasivo",
+     "g": "Convinci il pubblico con domande retoriche, la regola del tre e verbi forti.",
+     "p": [
+      "Le domande retoriche fanno riflettere: Who doesn't want more free time? Isn't it time we acted?",
+      "La regola del tre resta in mente: It's quick, cheap and easy. Verbi forti: transform, boost, discover.",
+      "Parla all'ascoltatore: Imagine... You deserve... Just think how... E un invito chiaro: Join us today!"
+     ],
+     "q": "Quale prodotto, luogo o abitudine ti piacerebbe convincere gli altri a provare? Perché?",
+     "c": "Scrivi una pubblicità di tre frasi per il tuo posto preferito con una domanda retorica e la regola del tre."
+    },
+    "pt": {
+     "t": "Linguagem persuasiva",
+     "g": "Convence o público com perguntas retóricas, a regra dos três e verbos fortes.",
+     "p": [
+      "As perguntas retóricas fazem pensar: Who doesn't want more free time? Isn't it time we acted?",
+      "A regra dos três fica na memória: It's quick, cheap and easy. Verbos fortes: transform, boost, discover.",
+      "Fala para o ouvinte: Imagine... You deserve... Just think how... E um apelo claro: Join us today!"
+     ],
+     "q": "Que produto, lugar ou hábito gostavas de convencer as pessoas a experimentar? Porquê?",
+     "c": "Escreve um anúncio de três frases sobre o teu lugar favorito com uma pergunta retórica e a regra dos três."
+    },
+    "pt_BR": {
+     "t": "Linguagem persuasiva",
+     "g": "Convença o público com perguntas retóricas, a regra de três e verbos fortes.",
+     "p": [
+      "Perguntas retóricas fazem pensar: Who doesn't want more free time? Isn't it time we acted?",
+      "A regra de três fica na memória: It's quick, cheap and easy. Verbos fortes: transform, boost, discover.",
+      "Fale com o ouvinte: Imagine... You deserve... Just think how... E uma chamada clara: Join us today!"
+     ],
+     "q": "Que produto, lugar ou hábito você adoraria convencer as pessoas a experimentar? Por quê?",
+     "c": "Escreva um anúncio de três frases sobre seu lugar favorito com uma pergunta retórica e a regra de três."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "rhetorical question",
+      "ex": "Who doesn't love a sunny weekend?"
+     },
+     {
+      "w": "imagine",
+      "ex": "Imagine waking up to a view of the sea."
+     },
+     {
+      "w": "transform",
+      "ex": "This course will transform the way you cook."
+     },
+     {
+      "w": "boost",
+      "ex": "A short walk can boost your energy."
+     },
+     {
+      "w": "you deserve",
+      "ex": "You deserve a break after all that work."
+     },
+     {
+      "w": "call to action",
+      "ex": "Sign up today and start learning tomorrow!"
+     }
+    ],
+    "gram": "Persuasion: rhetorical questions, the rule of three (quick, cheap and easy), imperatives (Imagine, Join), direct you, strong verbs."
+   }
+  },
+  {
+   "d": 310,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Review: writing and arguing",
+     "g": "Recap register, reports, summaries and debate skills in a mini debate.",
+     "p": [
+      "Register: formal (request, obtain, I would be grateful if) vs neutral (ask, get, could you). Hedge with arguably.",
+      "Texts: letters (Yours faithfully), reports (It is recommended that), summaries (The article argues that).",
+      "Arguing: claim, reason, example. Debate: I take your point, but... Persuade: Isn't it time we...?"
+     ],
+     "q": "Should schools teach money skills? Give your view, hedge one point and answer an objection politely.",
+     "c": "Hold a two-minute mini debate with yourself: argue one side, then politely answer it from the other."
+    },
+    "de": {
+     "t": "Review: Schreiben und Argumentieren",
+     "g": "Du wiederholst Register, Berichte, Zusammenfassungen und Debattieren in einer Mini-Debatte.",
+     "p": [
+      "Register: formell (request, obtain, I would be grateful if) vs neutral (ask, get, could you). Abschwächen mit arguably.",
+      "Texte: Briefe (Yours faithfully), Berichte (It is recommended that), Zusammenfassungen (The article argues that).",
+      "Argumentieren: Behauptung, Grund, Beispiel. Debatte: I take your point, but... Überzeugen: Isn't it time we...?"
+     ],
+     "q": "Sollten Schulen Finanzwissen lehren? Sag deine Meinung, schwäche einen Punkt ab und kontere höflich einen Einwand.",
+     "c": "Führe eine Zwei-Minuten-Debatte mit dir selbst: vertritt eine Seite und antworte dann höflich als Gegenseite."
+    },
+    "es": {
+     "t": "Repaso: escribir y argumentar",
+     "g": "Repasa registro, informes, resúmenes y debate en un minidebate.",
+     "p": [
+      "Registro: formal (request, obtain, I would be grateful if) frente a neutro (ask, get, could you). Matiza con arguably.",
+      "Textos: cartas (Yours faithfully), informes (It is recommended that), resúmenes (The article argues that).",
+      "Argumentar: tesis, razón, ejemplo. Debatir: I take your point, but... Persuadir: Isn't it time we...?"
+     ],
+     "q": "¿Deberían los colegios enseñar a manejar el dinero? Da tu opinión, matiza un punto y responde con cortesía a una objeción.",
+     "c": "Haz un minidebate de dos minutos contigo mismo: defiende una postura y luego respóndete desde la otra."
+    },
+    "fr": {
+     "t": "Révision : écrire et argumenter",
+     "g": "Révise registre, rapports, résumés et débat dans un mini-débat.",
+     "p": [
+      "Registre : formel (request, obtain, I would be grateful if) ou neutre (ask, get, could you). Nuance avec arguably.",
+      "Textes : lettres (Yours faithfully), rapports (It is recommended that), résumés (The article argues that).",
+      "Argumenter : thèse, raison, exemple. Débattre : I take your point, but... Persuader : Isn't it time we...?"
+     ],
+     "q": "L'école devrait-elle enseigner la gestion de l'argent ? Donne ton avis, nuance un point et réponds poliment à une objection.",
+     "c": "Fais un mini-débat de deux minutes avec toi-même : défends un camp, puis réponds poliment depuis l'autre."
+    },
+    "it": {
+     "t": "Ripasso: scrivere e argomentare",
+     "g": "Ripassa registro, relazioni, riassunti e dibattito in un mini dibattito.",
+     "p": [
+      "Registro: formale (request, obtain, I would be grateful if) o neutro (ask, get, could you). Attenua con arguably.",
+      "Testi: lettere (Yours faithfully), relazioni (It is recommended that), riassunti (The article argues that).",
+      "Argomentare: tesi, motivo, esempio. Dibattere: I take your point, but... Convincere: Isn't it time we...?"
+     ],
+     "q": "La scuola dovrebbe insegnare a gestire il denaro? Esprimi la tua idea, attenua un punto e rispondi con garbo a un'obiezione.",
+     "c": "Fai un mini dibattito di due minuti con te stesso: sostieni una tesi, poi rispondi con garbo dall'altra parte."
+    },
+    "pt": {
+     "t": "Revisão: escrever e argumentar",
+     "g": "Revê registo, relatórios, resumos e debate num minidebate.",
+     "p": [
+      "Registo: formal (request, obtain, I would be grateful if) ou neutro (ask, get, could you). Suaviza com arguably.",
+      "Textos: cartas (Yours faithfully), relatórios (It is recommended that), resumos (The article argues that).",
+      "Argumentar: tese, razão, exemplo. Debater: I take your point, but... Persuadir: Isn't it time we...?"
+     ],
+     "q": "As escolas deviam ensinar a gerir dinheiro? Dá a tua opinião, suaviza um ponto e responde com educação a uma objeção.",
+     "c": "Faz um minidebate de dois minutos contigo: defende um lado e depois responde com educação pelo outro."
+    },
+    "pt_BR": {
+     "t": "Revisão: escrever e argumentar",
+     "g": "Revise registro, relatórios, resumos e debate num minidebate.",
+     "p": [
+      "Registro: formal (request, obtain, I would be grateful if) ou neutro (ask, get, could you). Suavize com arguably.",
+      "Textos: cartas (Yours faithfully), relatórios (It is recommended that), resumos (The article argues that).",
+      "Argumentar: tese, motivo, exemplo. Debater: I take your point, but... Persuadir: Isn't it time we...?"
+     ],
+     "q": "As escolas deveriam ensinar a lidar com dinheiro? Dê sua opinião, suavize um ponto e responda com educação a uma objeção.",
+     "c": "Faça um minidebate de dois minutos com você mesmo: defenda um lado e depois responda com educação pelo outro."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "arguably",
+      "ex": "Arguably, practice matters more than talent."
+     },
+     {
+      "w": "I would be grateful if",
+      "ex": "I would be grateful if you could reply soon."
+     },
+     {
+      "w": "it is recommended that",
+      "ex": "It is recommended that staff take regular breaks."
+     },
+     {
+      "w": "the author claims",
+      "ex": "The author claims that cities are getting greener."
+     },
+     {
+      "w": "I take your point",
+      "ex": "I take your point, but there's another side."
+     },
+     {
+      "w": "isn't it time",
+      "ex": "Isn't it time we tried something new?"
+     }
+    ],
+    "gram": "Review: register shifts, hedging, letter and report phrases, reporting verbs for summaries, argument structure and polite disagreement."
+   }
+  }
+ ]
+}

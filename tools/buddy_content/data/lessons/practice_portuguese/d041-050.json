@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_portuguese",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Getting around town",
+     "g": "Ask for directions and understand simple answers.",
+     "p": [
+      "Start politely: Desculpe, onde fica a estação? Ask É longe? to know if it is far.",
+      "Key answers: vire à esquerda (turn left), vire à direita (turn right), siga em frente (go straight on).",
+      "Listen for landmarks: ao fundo da rua (at the end of the street), na esquina (on the corner), perto (near)."
+     ],
+     "q": "How would you explain the way from your home to the nearest café?",
+     "c": "Give directions in Portuguese from your door to a place you go often, using vire, siga and fica."
+    },
+    "de": {
+     "t": "Unterwegs in der Stadt",
+     "g": "Du fragst nach dem Weg und verstehst einfache Antworten.",
+     "p": [
+      "Fang höflich an: Desculpe, onde fica a estação? Mit É longe? fragst du, ob es weit ist.",
+      "Wichtige Antworten: vire à esquerda (links abbiegen), vire à direita (rechts), siga em frente (geradeaus).",
+      "Achte auf Orientierungspunkte: ao fundo da rua (am Ende der Straße), na esquina (an der Ecke)."
+     ],
+     "q": "Wie würdest du den Weg von deiner Wohnung zum nächsten Café erklären?",
+     "c": "Beschreib auf Portugiesisch den Weg von deiner Tür zu einem Ort, an den du oft gehst."
+    },
+    "es": {
+     "t": "Moverse por la ciudad",
+     "g": "Preguntar por una dirección y entender respuestas sencillas.",
+     "p": [
+      "Empieza con educación: Desculpe, onde fica a estação? Pregunta É longe? para saber si está lejos.",
+      "Respuestas clave: vire à esquerda (gire a la izquierda), vire à direita, siga em frente (siga recto).",
+      "Fíjate en las referencias: ao fundo da rua (al fondo de la calle), na esquina, perto (cerca)."
+     ],
+     "q": "¿Cómo explicarías el camino de tu casa a la cafetería más cercana?",
+     "c": "Explica en portugués el camino de tu puerta a un lugar al que vas a menudo, con vire, siga y fica."
+    },
+    "fr": {
+     "t": "Se déplacer en ville",
+     "g": "Demander son chemin et comprendre des réponses simples.",
+     "p": [
+      "Commence poliment : Desculpe, onde fica a estação? Demande É longe? pour savoir si c'est loin.",
+      "Réponses clés : vire à esquerda (tournez à gauche), vire à direita (à droite), siga em frente (tout droit).",
+      "Repère les indices : ao fundo da rua (au bout de la rue), na esquina (au coin), perto (près)."
+     ],
+     "q": "Comment expliquerais-tu le chemin de chez toi jusqu'au café le plus proche ?",
+     "c": "Explique en portugais le chemin de ta porte jusqu'à un endroit où tu vas souvent."
+    },
+    "it": {
+     "t": "Muoversi in città",
+     "g": "Chiedi indicazioni e capisci risposte semplici.",
+     "p": [
+      "Inizia con gentilezza: Desculpe, onde fica a estação? Chiedi É longe? per sapere se è lontano.",
+      "Risposte chiave: vire à esquerda (giri a sinistra), vire à direita (a destra), siga em frente (dritto).",
+      "Ascolta i punti di riferimento: ao fundo da rua (in fondo alla strada), na esquina (all'angolo)."
+     ],
+     "q": "Come spiegheresti la strada da casa tua al bar più vicino?",
+     "c": "Spiega in portoghese la strada dalla tua porta a un posto dove vai spesso, con vire, siga e fica."
+    },
+    "pt": {
+     "t": "Orientar-se na cidade",
+     "g": "Revê as expressões para pedir e dar direções de forma clara a um visitante.",
+     "p": [
+      "Desculpe, onde fica...? e É longe? são as perguntas básicas; a resposta usa o imperativo: vire, siga.",
+      "No Brasil diz-se muitas vezes siga reto ou vá reto; em Portugal, siga em frente.",
+      "Ao fundo da rua, na esquina, no cruzamento e na rotunda são referências muito portuguesas."
+     ],
+     "q": "Qual é o sítio da tua cidade que os turistas mais te perguntam como encontrar?",
+     "c": "Escreve as direções da tua casa até à estação mais próxima, como se fosse para um turista."
+    },
+    "pt_BR": {
+     "t": "Orientar-se na cidade",
+     "g": "Revise como pedir e dar direções com as expressões usadas em Portugal.",
+     "p": [
+      "Em Portugal diz-se siga em frente em vez de siga reto, e a rotunda é a rotatória.",
+      "O semáforo é o sinal ou farol brasileiro: no semáforo, vire à direita.",
+      "Onde fica...? é a pergunta mais natural; Onde é...? também se ouve."
+     ],
+     "q": "Como você explicaria a um português o caminho até sua padaria preferida?",
+     "c": "Explique um trajeto do seu dia a dia com siga em frente, rotunda e semáforo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "onde fica...?",
+      "ex": "Desculpe, onde fica a estação?"
+     },
+     {
+      "w": "vire à esquerda",
+      "ex": "Vire à esquerda na segunda rua."
+     },
+     {
+      "w": "vire à direita",
+      "ex": "No semáforo, vire à direita."
+     },
+     {
+      "w": "siga em frente",
+      "ex": "Siga em frente até à praça."
+     },
+     {
+      "w": "é longe?",
+      "ex": "É longe daqui? — Não, é perto."
+     },
+     {
+      "w": "ao fundo da rua",
+      "ex": "O museu fica ao fundo da rua."
+     }
+    ],
+    "gram": "Para dar direções usa-se o imperativo de cortesia: vire, siga, atravesse, suba. Até à praça leva a + a."
+   }
+  },
+  {
+   "d": 42,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Transport",
+     "g": "Talk about how you get around, with Portugal and Brazil words.",
+     "p": [
+      "Portugal: o autocarro (bus), o comboio (train), o metro, o elétrico (tram). Brazil: o ônibus, o trem, o metrô.",
+      "Use de for the means: vou de comboio, vou de metro. But on foot is a pé.",
+      "To catch a bus is apanhar in Portugal and pegar in Brazil. Buy um bilhete (a ticket)."
+     ],
+     "q": "How do you usually get to work, school or the shops?",
+     "c": "Describe your usual trips today in Portuguese: vou de..., apanho o..., vou a pé."
+    },
+    "de": {
+     "t": "Verkehrsmittel",
+     "g": "Du sprichst über deine Wege, mit Wörtern aus Portugal und Brasilien.",
+     "p": [
+      "Portugal: o autocarro (Bus), o comboio (Zug), o metro, o elétrico (Tram). Brasilien: o ônibus, o trem, o metrô.",
+      "Mit de für das Verkehrsmittel: vou de comboio, vou de metro. Aber zu Fuß: a pé.",
+      "Den Bus nehmen heißt in Portugal apanhar, in Brasilien pegar. Ein Ticket ist um bilhete."
+     ],
+     "q": "Wie kommst du normalerweise zur Arbeit, zur Schule oder zum Einkaufen?",
+     "c": "Beschreibe heute deine Wege auf Portugiesisch: vou de..., apanho o..., vou a pé."
+    },
+    "es": {
+     "t": "Transportes",
+     "g": "Hablar de cómo te desplazas, con palabras de Portugal y de Brasil.",
+     "p": [
+      "Portugal: o autocarro (autobús), o comboio (tren), o metro, o elétrico (tranvía). Brasil: o ônibus, o trem, o metrô.",
+      "Se usa de: vou de comboio, vou de metro. Pero a pie es a pé.",
+      "Coger el autobús es apanhar en Portugal y pegar en Brasil. El billete es o bilhete."
+     ],
+     "q": "¿Cómo sueles ir al trabajo, a clase o de compras?",
+     "c": "Describe hoy tus trayectos en portugués: vou de..., apanho o..., vou a pé."
+    },
+    "fr": {
+     "t": "Les transports",
+     "g": "Parler de tes déplacements, avec les mots du Portugal et du Brésil.",
+     "p": [
+      "Portugal : o autocarro (bus), o comboio (train), o metro, o elétrico (tram). Brésil : o ônibus, o trem, o metrô.",
+      "On utilise de : vou de comboio, vou de metro. Mais à pied se dit a pé.",
+      "Prendre le bus, c'est apanhar au Portugal et pegar au Brésil. Le billet : o bilhete."
+     ],
+     "q": "Comment vas-tu d'habitude au travail, à l'école ou faire tes courses ?",
+     "c": "Décris tes trajets du jour en portugais : vou de..., apanho o..., vou a pé."
+    },
+    "it": {
+     "t": "I trasporti",
+     "g": "Parli di come ti sposti, con parole del Portogallo e del Brasile.",
+     "p": [
+      "Portogallo: o autocarro (autobus), o comboio (treno), o metro, o elétrico (tram). Brasile: o ônibus, o trem, o metrô.",
+      "Si usa de: vou de comboio, vou de metro. Ma a piedi è a pé.",
+      "Prendere l'autobus è apanhar in Portogallo e pegar in Brasile. Il biglietto è o bilhete."
+     ],
+     "q": "Come vai di solito al lavoro, a scuola o a fare la spesa?",
+     "c": "Descrivi oggi i tuoi spostamenti in portoghese: vou de..., apanho o..., vou a pé."
+    },
+    "pt": {
+     "t": "Transportes",
+     "g": "Revê o vocabulário dos transportes, uma das áreas com mais diferenças entre os dois países.",
+     "p": [
+      "Autocarro, comboio, metro e elétrico são portugueses; no Brasil: ônibus, trem, metrô e bonde.",
+      "Em Portugal apanha-se o comboio; no Brasil pega-se o trem. Ambas as formas se entendem bem.",
+      "O elétrico 28 de Lisboa é tão famoso que muitos turistas aprendem a palavra elétrico logo no início."
+     ],
+     "q": "Qual é o meio de transporte que mais usas e o que achas dele?",
+     "c": "Explica a um brasileiro, em três frases, como vais para o trabalho ou para a escola, usando palavras portuguesas."
+    },
+    "pt_BR": {
+     "t": "Transportes",
+     "g": "Aprenda os nomes dos transportes em Portugal, muito diferentes do Brasil.",
+     "p": [
+      "Em Portugal: o autocarro é o ônibus, o comboio é o trem e o metro (sem acento) é o metrô.",
+      "Lá se diz apanhar em vez de pegar: Apanho o autocarro às oito.",
+      "O elétrico é o bonde; o de Lisboa, linha 28, é um dos símbolos da cidade."
+     ],
+     "q": "Como você iria do aeroporto de Lisboa até o centro, em palavras portuguesas?",
+     "c": "Descreva seu trajeto de hoje trocando ônibus, trem e pegar pelas palavras de Portugal."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "o autocarro",
+      "ex": "Apanho o autocarro às oito."
+     },
+     {
+      "w": "o comboio",
+      "ex": "O comboio para o Porto está atrasado."
+     },
+     {
+      "w": "o metro",
+      "ex": "Vamos de metro, é mais rápido."
+     },
+     {
+      "w": "o elétrico",
+      "ex": "O elétrico 28 passa pela Baixa."
+     },
+     {
+      "w": "apanhar",
+      "ex": "Onde apanho o táxi?"
+     },
+     {
+      "w": "o bilhete",
+      "ex": "Queria um bilhete de ida e volta."
+     }
+    ],
+    "gram": "Diz-se ir de autocarro, de comboio, de metro, mas ir a pé. Em Portugal apanha-se o autocarro; no Brasil, pega-se o ônibus."
+   }
+  },
+  {
+   "d": 43,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Fazer: to do and make",
+     "g": "Conjugate fazer and use it in everyday expressions.",
+     "p": [
+      "Eu faço, tu fazes, ele/ela/você faz, nós fazemos, eles/elas/vocês fazem.",
+      "Fazer means both do and make: faço o jantar, faço exercício. O que fazes? = What do you do?",
+      "Fixed expressions: faz frio/calor (it is cold/hot), fazer compras (go shopping), fazer anos (have a birthday)."
+     ],
+     "q": "What do you usually do on Sunday mornings? Answer with faço.",
+     "c": "Make five sentences with fazer about your week: food, sport, shopping, weather and one question."
+    },
+    "de": {
+     "t": "Fazer: machen und tun",
+     "g": "Du konjugierst fazer und nutzt es in Alltagsausdrücken.",
+     "p": [
+      "Eu faço, tu fazes, ele/ela/você faz, nós fazemos, eles/elas/vocês fazem.",
+      "Fazer heißt machen und tun: faço o jantar, faço exercício. O que fazes? = Was machst du?",
+      "Feste Ausdrücke: faz frio/calor (es ist kalt/heiß), fazer compras (einkaufen), fazer anos (Geburtstag haben)."
+     ],
+     "q": "Was machst du meistens am Sonntagmorgen? Antworte mit faço.",
+     "c": "Bilde fünf Sätze mit fazer über deine Woche: Essen, Sport, Einkaufen, Wetter und eine Frage."
+    },
+    "es": {
+     "t": "Fazer: hacer",
+     "g": "Conjugar fazer y usarlo en expresiones cotidianas.",
+     "p": [
+      "Eu faço, tu fazes, ele/ela/você faz, nós fazemos, eles/elas/vocês fazem.",
+      "Fazer es hacer: faço o jantar, faço exercício. O que fazes? = ¿Qué haces?",
+      "Expresiones fijas: faz frio/calor (hace frío/calor), fazer compras (ir de compras), fazer anos (cumplir años)."
+     ],
+     "q": "¿Qué sueles hacer los domingos por la mañana? Responde con faço.",
+     "c": "Haz cinco frases con fazer sobre tu semana: comida, deporte, compras, tiempo y una pregunta."
+    },
+    "fr": {
+     "t": "Fazer : faire",
+     "g": "Conjuguer fazer et l'utiliser dans des expressions courantes.",
+     "p": [
+      "Eu faço, tu fazes, ele/ela/você faz, nós fazemos, eles/elas/vocês fazem.",
+      "Fazer veut dire faire : faço o jantar, faço exercício. O que fazes? = Que fais-tu ?",
+      "Expressions : faz frio/calor (il fait froid/chaud), fazer compras (faire les courses), fazer anos (avoir son anniversaire)."
+     ],
+     "q": "Que fais-tu d'habitude le dimanche matin ? Réponds avec faço.",
+     "c": "Fais cinq phrases avec fazer sur ta semaine : repas, sport, courses, météo et une question."
+    },
+    "it": {
+     "t": "Fazer: fare",
+     "g": "Coniughi fazer e lo usi in espressioni di tutti i giorni.",
+     "p": [
+      "Eu faço, tu fazes, ele/ela/você faz, nós fazemos, eles/elas/vocês fazem.",
+      "Fazer significa fare: faço o jantar, faço exercício. O que fazes? = Cosa fai?",
+      "Espressioni fisse: faz frio/calor (fa freddo/caldo), fazer compras (fare acquisti), fazer anos (compiere gli anni)."
+     ],
+     "q": "Cosa fai di solito la domenica mattina? Rispondi con faço.",
+     "c": "Fai cinque frasi con fazer sulla tua settimana: cibo, sport, spesa, tempo e una domanda."
+    },
+    "pt": {
+     "t": "Fazer: fazer e expressões",
+     "g": "Revê o presente de fazer e as expressões fixas mais usadas.",
+     "p": [
+      "Faço, fazes, faz, fazemos, fazem: um verbo irregular só na primeira pessoa e na grafia faz.",
+      "Fazer anos é muito português; no Brasil diz-se fazer aniversário. Faz frio e faz calor servem nos dois.",
+      "Fazer uma pergunta, fazer as malas, fazer a cama: expressões que o inglês traduz com outros verbos."
+     ],
+     "q": "Qual é a tarefa de casa que mais gostas de fazer?",
+     "c": "Escreve cinco expressões com fazer que um estrangeiro teria dificuldade em traduzir."
+    },
+    "pt_BR": {
+     "t": "Fazer: fazer e expressões",
+     "g": "Revise fazer e expressões típicas de Portugal.",
+     "p": [
+      "Fazer anos é a forma portuguesa de fazer aniversário: Quando fazes anos?",
+      "O que fazes? com tu é a pergunta normal entre amigos em Portugal.",
+      "Fazer compras e fazer uma pergunta são iguais nos dois países."
+     ],
+     "q": "Quando você faz anos e como gosta de comemorar?",
+     "c": "Pergunte a três pessoas, à portuguesa: Quando fazes anos?"
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "faço",
+      "ex": "Faço o jantar todos os dias."
+     },
+     {
+      "w": "fazes",
+      "ex": "O que fazes ao fim de semana?"
+     },
+     {
+      "w": "fazer anos",
+      "ex": "Amanhã faço anos!"
+     },
+     {
+      "w": "faz frio",
+      "ex": "Hoje faz frio em Lisboa."
+     },
+     {
+      "w": "fazer compras",
+      "ex": "Vamos fazer compras ao mercado."
+     },
+     {
+      "w": "fazer uma pergunta",
+      "ex": "Posso fazer uma pergunta?"
+     }
+    ],
+    "gram": "Fazer no presente: faço, fazes, faz, fazemos, fazem. Usa-se em expressões fixas: faz calor, fazer anos, fazer compras."
+   }
+  },
+  {
+   "d": 44,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Daily routine",
+     "g": "Describe your day from morning to night in the present tense.",
+     "p": [
+      "Morning: acordo (I wake up), tomo banho (I shower), tomo o pequeno-almoço (I have breakfast).",
+      "Day: saio de casa (I leave home), trabalho, almoço (I have lunch). Evening: janto (I have dinner).",
+      "Link steps with depois (then) and às + time: Acordo às sete, depois tomo banho."
+     ],
+     "q": "What time do you wake up, and what is the first thing you do?",
+     "c": "Write your routine in six steps with times, using acordo, tomo, saio, almoço, janto and depois."
+    },
+    "de": {
+     "t": "Tagesablauf",
+     "g": "Du beschreibst deinen Tag von morgens bis abends im Präsens.",
+     "p": [
+      "Morgens: acordo (ich wache auf), tomo banho (ich dusche), tomo o pequeno-almoço (ich frühstücke).",
+      "Tagsüber: saio de casa (ich gehe aus dem Haus), trabalho, almoço. Abends: janto (ich esse zu Abend).",
+      "Verbinde mit depois (dann) und às + Uhrzeit: Acordo às sete, depois tomo banho."
+     ],
+     "q": "Wann wachst du auf und was machst du als Erstes?",
+     "c": "Schreib deinen Tagesablauf in sechs Schritten mit Uhrzeiten: acordo, tomo, saio, almoço, janto, depois."
+    },
+    "es": {
+     "t": "La rutina diaria",
+     "g": "Describir tu día de la mañana a la noche en presente.",
+     "p": [
+      "Mañana: acordo (me despierto), tomo banho (me ducho), tomo o pequeno-almoço (desayuno).",
+      "Día: saio de casa (salgo de casa), trabalho, almoço (como). Noche: janto (ceno).",
+      "Une los pasos con depois (después) y às + hora: Acordo às sete, depois tomo banho."
+     ],
+     "q": "¿A qué hora te despiertas y qué es lo primero que haces?",
+     "c": "Escribe tu rutina en seis pasos con horas: acordo, tomo, saio, almoço, janto y depois."
+    },
+    "fr": {
+     "t": "La routine quotidienne",
+     "g": "Décrire ta journée du matin au soir au présent.",
+     "p": [
+      "Le matin : acordo (je me réveille), tomo banho (je me douche), tomo o pequeno-almoço (je prends le petit-déjeuner).",
+      "La journée : saio de casa (je sors), trabalho, almoço (je déjeune). Le soir : janto (je dîne).",
+      "Relie les étapes avec depois (ensuite) et às + heure : Acordo às sete, depois tomo banho."
+     ],
+     "q": "À quelle heure te réveilles-tu et que fais-tu en premier ?",
+     "c": "Écris ta routine en six étapes avec les heures : acordo, tomo, saio, almoço, janto et depois."
+    },
+    "it": {
+     "t": "La routine quotidiana",
+     "g": "Descrivi la tua giornata dalla mattina alla sera al presente.",
+     "p": [
+      "Mattina: acordo (mi sveglio), tomo banho (faccio la doccia), tomo o pequeno-almoço (faccio colazione).",
+      "Giorno: saio de casa (esco di casa), trabalho, almoço (pranzo). Sera: janto (ceno).",
+      "Collega i passi con depois (poi) e às + ora: Acordo às sete, depois tomo banho."
+     ],
+     "q": "A che ora ti svegli e qual è la prima cosa che fai?",
+     "c": "Scrivi la tua routine in sei passi con gli orari: acordo, tomo, saio, almoço, janto e depois."
+    },
+    "pt": {
+     "t": "A rotina diária",
+     "g": "Revê o vocabulário da rotina e as diferenças entre Portugal e o Brasil.",
+     "p": [
+      "Em Portugal toma-se o pequeno-almoço; no Brasil toma-se o café da manhã. Tomar banho serve nos dois.",
+      "Almoçar e jantar são verbos: almoço ao meio-dia, jantamos tarde. Não é preciso dizer comer o almoço.",
+      "Em Portugal e no Brasil janta-se muitas vezes mais tarde do que no Norte da Europa, o que surpreende visitantes."
+     ],
+     "q": "Qual é o momento do teu dia de que mais gostas?",
+     "c": "Descreve o teu dia de ontem como se fosse hoje, no presente, em seis frases."
+    },
+    "pt_BR": {
+     "t": "A rotina diária",
+     "g": "Revise a rotina com as palavras usadas em Portugal.",
+     "p": [
+      "Em Portugal: tomo o pequeno-almoço, e não tomo café da manhã.",
+      "Lá a hora do almoço vai muitas vezes até às duas, e o jantar é por volta das oito ou nove.",
+      "Saio de casa, trabalho, almoço, janto: os verbos são iguais nos dois países."
+     ],
+     "q": "A que horas você janta normalmente? Seria tarde ou cedo em Portugal?",
+     "c": "Escreva sua rotina em seis passos usando pequeno-almoço e o horário português."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "acordar",
+      "ex": "Acordo às sete da manhã."
+     },
+     {
+      "w": "tomar o pequeno-almoço",
+      "ex": "Tomo o pequeno-almoço em casa."
+     },
+     {
+      "w": "tomar banho",
+      "ex": "Tomo banho antes de sair."
+     },
+     {
+      "w": "sair de casa",
+      "ex": "Saio de casa às oito e meia."
+     },
+     {
+      "w": "almoçar",
+      "ex": "Almoço com os colegas."
+     },
+     {
+      "w": "jantar",
+      "ex": "Jantamos às oito da noite."
+     }
+    ],
+    "gram": "Para a rotina usa-se o presente: acordo, tomo, saio. Sair é irregular só no eu: saio, sais, sai, saímos, saem."
+   }
+  },
+  {
+   "d": 45,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Reflexive verbs",
+     "g": "Use reflexive verbs and place the pronoun the European way.",
+     "p": [
+      "Reflexive verbs carry a pronoun: levanto-me (I get up), deito-me (I go to bed), chama-se (is called).",
+      "Pronouns: me, te, se, nos, se. Note: levantamos + nos becomes levantamo-nos, losing the s.",
+      "In Portugal the pronoun follows the verb, but goes before after não: Não me levanto. Brazil: Me levanto."
+     ],
+     "q": "What time do you get up on weekdays, and what time do you go to bed?",
+     "c": "Write your morning in four sentences with levanto-me, visto-me and two other reflexive verbs."
+    },
+    "de": {
+     "t": "Reflexive Verben",
+     "g": "Du benutzt reflexive Verben und stellst das Pronomen auf europäische Art.",
+     "p": [
+      "Reflexive Verben haben ein Pronomen: levanto-me (ich stehe auf), deito-me (ich gehe ins Bett).",
+      "Pronomen: me, te, se, nos, se. Achtung: levantamos + nos wird zu levantamo-nos, ohne s.",
+      "In Portugal steht das Pronomen nach dem Verb, nach não aber davor: Não me levanto. Brasilien: Me levanto."
+     ],
+     "q": "Wann stehst du werktags auf und wann gehst du schlafen?",
+     "c": "Beschreibe deinen Morgen in vier Sätzen mit levanto-me, visto-me und zwei weiteren reflexiven Verben."
+    },
+    "es": {
+     "t": "Verbos reflexivos",
+     "g": "Usar verbos reflexivos y colocar el pronombre a la manera europea.",
+     "p": [
+      "Llevan pronombre, como en español: levanto-me (me levanto), deito-me (me acuesto), chama-se.",
+      "Pronombres: me, te, se, nos, se. Ojo: levantamos + nos se convierte en levantamo-nos, sin s.",
+      "En Portugal el pronombre va detrás del verbo, pero delante tras não: Não me levanto. En Brasil: Me levanto."
+     ],
+     "q": "¿A qué hora te levantas entre semana y a qué hora te acuestas?",
+     "c": "Escribe tu mañana en cuatro frases con levanto-me, visto-me y otros dos verbos reflexivos."
+    },
+    "fr": {
+     "t": "Verbes pronominaux",
+     "g": "Utiliser les verbes pronominaux et placer le pronom à l'européenne.",
+     "p": [
+      "Ils ont un pronom : levanto-me (je me lève), deito-me (je me couche), chama-se (s'appelle).",
+      "Pronoms : me, te, se, nos, se. Attention : levantamos + nos devient levantamo-nos, sans le s.",
+      "Au Portugal, le pronom suit le verbe, mais le précède après não : Não me levanto. Au Brésil : Me levanto."
+     ],
+     "q": "À quelle heure te lèves-tu en semaine, et à quelle heure te couches-tu ?",
+     "c": "Écris ta matinée en quatre phrases avec levanto-me, visto-me et deux autres verbes pronominaux."
+    },
+    "it": {
+     "t": "Verbi riflessivi",
+     "g": "Usi i verbi riflessivi e metti il pronome alla maniera europea.",
+     "p": [
+      "Hanno un pronome: levanto-me (mi alzo), deito-me (vado a letto), chama-se (si chiama).",
+      "Pronomi: me, te, se, nos, se. Attenzione: levantamos + nos diventa levantamo-nos, senza s.",
+      "In Portogallo il pronome va dopo il verbo, ma prima dopo não: Não me levanto. In Brasile: Me levanto."
+     ],
+     "q": "A che ora ti alzi nei giorni feriali e a che ora vai a letto?",
+     "c": "Scrivi la tua mattina in quattro frasi con levanto-me, visto-me e altri due verbi riflessivi."
+    },
+    "pt": {
+     "t": "Verbos reflexos",
+     "g": "Revê a colocação dos pronomes, a maior diferença gramatical entre Portugal e o Brasil.",
+     "p": [
+      "Em Portugal: levanto-me, mas não me levanto, já me levantei, quando me levanto.",
+      "Palavras como não, já, nunca, quando e que puxam o pronome para antes do verbo.",
+      "No Brasil o pronome vem quase sempre antes: me levanto, me chamo. É um bom tema para quem aprende."
+     ],
+     "q": "A que horas te levantas ao domingo, sem despertador?",
+     "c": "Escreve cinco frases com verbos reflexos e, em duas delas, usa não ou já antes do verbo."
+    },
+    "pt_BR": {
+     "t": "Verbos reflexivos",
+     "g": "Entenda a colocação dos pronomes em Portugal, a diferença que mais se nota.",
+     "p": [
+      "Em Portugal: levanto-me, deito-me, chamo-me, sempre com hífen e o pronome depois.",
+      "Mas com não, já, nunca ou nas perguntas com palavra interrogativa, o pronome vem antes: não me lembro.",
+      "Em levantamo-nos o s de levantamos desaparece antes de nos."
+     ],
+     "q": "A que horas você se levanta? Responda à portuguesa: Levanto-me às...",
+     "c": "Escreva sua manhã com quatro verbos reflexivos com o pronome depois do verbo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "levantar-se",
+      "ex": "Levanto-me às sete."
+     },
+     {
+      "w": "deitar-se",
+      "ex": "Deito-me tarde ao sábado."
+     },
+     {
+      "w": "chamar-se",
+      "ex": "Ela chama-se Inês."
+     },
+     {
+      "w": "vestir-se",
+      "ex": "Visto-me depressa de manhã."
+     },
+     {
+      "w": "sentar-se",
+      "ex": "Sente-se, por favor."
+     },
+     {
+      "w": "não me lembro",
+      "ex": "Desculpe, não me lembro do nome."
+     }
+    ],
+    "gram": "Em Portugal o pronome vem depois do verbo (levanto-me), mas vai antes com não e perguntas: não me levanto. No Brasil: me levanto."
+   }
+  },
+  {
+   "d": 46,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Frequency words",
+     "g": "Say how often you do things with sempre, às vezes and nunca.",
+     "p": [
+      "From most to least: sempre (always), normalmente (usually), às vezes (sometimes), raramente (rarely), nunca (never).",
+      "Also useful: todos os dias (every day), uma vez por semana (once a week), duas vezes por mês (twice a month).",
+      "Às vezes and normalmente often open the sentence: Às vezes vou ao cinema."
+     ],
+     "q": "What do you do every day, and what do you only do once a week?",
+     "c": "Write one sentence for each frequency word about your real habits."
+    },
+    "de": {
+     "t": "Häufigkeitswörter",
+     "g": "Du sagst, wie oft du etwas tust, mit sempre, às vezes und nunca.",
+     "p": [
+      "Von oft bis nie: sempre (immer), normalmente (normalerweise), às vezes (manchmal), raramente (selten), nunca (nie).",
+      "Auch nützlich: todos os dias (jeden Tag), uma vez por semana (einmal pro Woche), duas vezes por mês.",
+      "Às vezes und normalmente stehen oft am Satzanfang: Às vezes vou ao cinema."
+     ],
+     "q": "Was machst du jeden Tag und was nur einmal pro Woche?",
+     "c": "Schreib zu jedem Häufigkeitswort einen Satz über deine echten Gewohnheiten."
+    },
+    "es": {
+     "t": "Palabras de frecuencia",
+     "g": "Decir con qué frecuencia haces las cosas con sempre, às vezes y nunca.",
+     "p": [
+      "De más a menos: sempre (siempre), normalmente, às vezes (a veces), raramente, nunca.",
+      "También: todos os dias, uma vez por semana (una vez a la semana), duas vezes por mês.",
+      "Às vezes y normalmente suelen abrir la frase: Às vezes vou ao cinema."
+     ],
+     "q": "¿Qué haces todos los días y qué haces solo una vez a la semana?",
+     "c": "Escribe una frase con cada palabra de frecuencia sobre tus hábitos reales."
+    },
+    "fr": {
+     "t": "Les mots de fréquence",
+     "g": "Dire à quelle fréquence tu fais les choses avec sempre, às vezes et nunca.",
+     "p": [
+      "Du plus au moins : sempre (toujours), normalmente (d'habitude), às vezes (parfois), raramente (rarement), nunca (jamais).",
+      "Aussi : todos os dias (tous les jours), uma vez por semana (une fois par semaine), duas vezes por mês.",
+      "Às vezes et normalmente ouvrent souvent la phrase : Às vezes vou ao cinema."
+     ],
+     "q": "Que fais-tu tous les jours, et que fais-tu seulement une fois par semaine ?",
+     "c": "Écris une phrase avec chaque mot de fréquence sur tes vraies habitudes."
+    },
+    "it": {
+     "t": "Avverbi di frequenza",
+     "g": "Dici quanto spesso fai le cose con sempre, às vezes e nunca.",
+     "p": [
+      "Dal più al meno: sempre, normalmente (di solito), às vezes (a volte), raramente, nunca (mai).",
+      "Anche: todos os dias (tutti i giorni), uma vez por semana (una volta alla settimana), duas vezes por mês.",
+      "Às vezes e normalmente aprono spesso la frase: Às vezes vou ao cinema."
+     ],
+     "q": "Cosa fai tutti i giorni e cosa solo una volta alla settimana?",
+     "c": "Scrivi una frase con ogni avverbio di frequenza sulle tue vere abitudini."
+    },
+    "pt": {
+     "t": "Expressões de frequência",
+     "g": "Revê as palavras de frequência e a sua posição natural na frase.",
+     "p": [
+      "Sempre, normalmente, às vezes, raramente e nunca: uma escala simples para falar de hábitos.",
+      "Às vezes leva acento grave; é um dos erros de escrita mais comuns, até entre nativos.",
+      "Em Portugal ouve-se muito de vez em quando e quase nunca; no Brasil também direto, no sentido de sempre."
+     ],
+     "q": "Há algum hábito que gostavas de ter todos os dias e que só tens às vezes?",
+     "c": "Escreve a tua semana típica usando cinco expressões de frequência diferentes."
+    },
+    "pt_BR": {
+     "t": "Expressões de frequência",
+     "g": "Revise as expressões de frequência e algumas preferências de Portugal.",
+     "p": [
+      "Sempre, normalmente, às vezes, raramente, nunca: iguais nos dois países.",
+      "Direto no sentido de sempre (vou lá direto) é brasileiro; em Portugal diz-se muitas vezes ou sempre.",
+      "De vez em quando e quase nunca são muito comuns em Portugal."
+     ],
+     "q": "O que você faz direto que um português diria que faz muitas vezes?",
+     "c": "Escreva cinco hábitos seus sem usar direto, com expressões portuguesas."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "sempre",
+      "ex": "Bebo sempre café de manhã."
+     },
+     {
+      "w": "normalmente",
+      "ex": "Normalmente janto às oito."
+     },
+     {
+      "w": "às vezes",
+      "ex": "Às vezes vou ao cinema."
+     },
+     {
+      "w": "raramente",
+      "ex": "Vejo televisão raramente."
+     },
+     {
+      "w": "todos os dias",
+      "ex": "Ando a pé todos os dias."
+     },
+     {
+      "w": "uma vez por semana",
+      "ex": "Vou ao ginásio uma vez por semana."
+     }
+    ],
+    "gram": "Sempre e nunca costumam ir antes do verbo ou logo depois; às vezes e normalmente vão muitas vezes no início da frase."
+   }
+  },
+  {
+   "d": 47,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Jobs and professions",
+     "g": "Name common jobs and say what you do.",
+     "p": [
+      "Many jobs have a feminine form: o professor, a professora; o médico, a médica; o enfermeiro, a enfermeira.",
+      "Say Sou médica or Trabalho como cozinheiro. No article: not Sou uma médica.",
+      "Waiter is empregado de mesa in Portugal and garçom in Brazil. Ask O que fazes? for What do you do?"
+     ],
+     "q": "What do you do, or what would you like to do?",
+     "c": "Name the jobs of five people you know in Portuguese, with the right masculine or feminine form."
+    },
+    "de": {
+     "t": "Berufe",
+     "g": "Du nennst häufige Berufe und sagst, was du machst.",
+     "p": [
+      "Viele Berufe haben eine weibliche Form: o professor, a professora; o médico, a médica.",
+      "Sag Sou médica oder Trabalho como cozinheiro. Ohne Artikel: nicht Sou uma médica.",
+      "Kellner heißt in Portugal empregado de mesa, in Brasilien garçom. Was machst du beruflich? O que fazes?"
+     ],
+     "q": "Was machst du beruflich oder was würdest du gern machen?",
+     "c": "Nenne die Berufe von fünf Bekannten auf Portugiesisch, mit der richtigen männlichen oder weiblichen Form."
+    },
+    "es": {
+     "t": "Trabajos y profesiones",
+     "g": "Nombrar profesiones comunes y decir a qué te dedicas.",
+     "p": [
+      "Muchas tienen femenino: o professor, a professora; o médico, a médica; o enfermeiro, a enfermeira.",
+      "Di Sou médica o Trabalho como cozinheiro. Sin artículo, como en español.",
+      "Camarero es empregado de mesa en Portugal y garçom en Brasil. ¿A qué te dedicas? O que fazes?"
+     ],
+     "q": "¿A qué te dedicas o a qué te gustaría dedicarte?",
+     "c": "Di en portugués la profesión de cinco personas que conoces, en masculino o femenino."
+    },
+    "fr": {
+     "t": "Métiers et professions",
+     "g": "Nommer des métiers courants et dire ce que tu fais.",
+     "p": [
+      "Beaucoup de métiers ont un féminin : o professor, a professora ; o médico, a médica.",
+      "Dis Sou médica ou Trabalho como cozinheiro. Sans article, comme en français.",
+      "Serveur se dit empregado de mesa au Portugal et garçom au Brésil. Que fais-tu dans la vie ? O que fazes?"
+     ],
+     "q": "Que fais-tu dans la vie, ou que voudrais-tu faire ?",
+     "c": "Nomme en portugais le métier de cinq personnes que tu connais, au masculin ou au féminin."
+    },
+    "it": {
+     "t": "Lavori e professioni",
+     "g": "Nomini le professioni comuni e dici che lavoro fai.",
+     "p": [
+      "Molte professioni hanno il femminile: o professor, a professora; o médico, a médica.",
+      "Di' Sou médica o Trabalho como cozinheiro. Senza articolo, come sono medico.",
+      "Cameriere è empregado de mesa in Portogallo e garçom in Brasile. Che lavoro fai? O que fazes?"
+     ],
+     "q": "Che lavoro fai o cosa ti piacerebbe fare?",
+     "c": "Di' in portoghese il lavoro di cinque persone che conosci, al maschile o al femminile."
+    },
+    "pt": {
+     "t": "Profissões",
+     "g": "Revê o vocabulário das profissões e as diferenças com o Brasil.",
+     "p": [
+      "Profissão sem artigo depois de ser: sou enfermeira. Com artigo só se se especifica: é a médica do meu pai.",
+      "Empregado de mesa e ementa são portugueses; no Brasil diz-se garçom e cardápio.",
+      "Em Portugal usa-se muito o título: o senhor doutor, a senhora engenheira, até fora do trabalho."
+     ],
+     "q": "Qual era a profissão dos teus sonhos quando eras criança?",
+     "c": "Escreve cinco profissões com o masculino e o feminino e assinala as que têm uma forma diferente no Brasil."
+    },
+    "pt_BR": {
+     "t": "Profissões",
+     "g": "Revise as profissões e o vocabulário de trabalho de Portugal.",
+     "p": [
+      "Em Portugal: empregado de mesa é garçom, e a ementa é o cardápio.",
+      "Os títulos são muito usados: o senhor doutor, a senhora engenheira, até em conversas normais.",
+      "Engenheiro informático é o engenheiro de computação ou de software brasileiro."
+     ],
+     "q": "O que você faz? Responda como se estivesse numa entrevista em Lisboa.",
+     "c": "Apresente sua profissão em duas frases à portuguesa: Sou... Trabalho como... em..."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "o professor / a professora",
+      "ex": "A minha irmã é professora de música."
+     },
+     {
+      "w": "o médico / a médica",
+      "ex": "O médico chega às nove."
+     },
+     {
+      "w": "o engenheiro / a engenheira",
+      "ex": "Sou engenheira informática."
+     },
+     {
+      "w": "o empregado de mesa",
+      "ex": "O empregado de mesa traz a ementa."
+     },
+     {
+      "w": "o enfermeiro / a enfermeira",
+      "ex": "O enfermeiro é muito simpático."
+     },
+     {
+      "w": "trabalho como",
+      "ex": "Trabalho como cozinheiro num hotel."
+     }
+    ],
+    "gram": "Depois de ser, a profissão não leva artigo: sou médica. Muitas profissões têm feminino em -a: professor, professora."
+   }
+  },
+  {
+   "d": 48,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "At work and at school",
+     "g": "Talk about where you work or study with useful workplace and classroom words.",
+     "p": [
+      "Workplace: o escritório (office), a reunião (meeting), o colega/a colega (colleague), o chefe (boss).",
+      "School: a sala de aula (classroom), o aluno (student), a caneta (pen), o caderno (notebook).",
+      "Say trabalho em/num/numa + place and estudo + subject: Trabalho num hotel. Estudo Economia."
+     ],
+     "q": "Where do you work or study, and what do you like most about it?",
+     "c": "Describe your workplace or school in four sentences, using trabalho em or estudo em."
+    },
+    "de": {
+     "t": "Bei der Arbeit und in der Schule",
+     "g": "Du sprichst über Arbeitsplatz oder Studium mit nützlichen Wörtern.",
+     "p": [
+      "Arbeit: o escritório (Büro), a reunião (Besprechung), o colega/a colega (Kollege/Kollegin), o chefe.",
+      "Schule: a sala de aula (Klassenzimmer), o aluno (Schüler), a caneta (Kuli), o caderno (Heft).",
+      "Trabalho em/num/numa + Ort und estudo + Fach: Trabalho num hotel. Estudo Economia."
+     ],
+     "q": "Wo arbeitest oder studierst du, und was gefällt dir daran am besten?",
+     "c": "Beschreib deinen Arbeitsplatz oder deine Schule in vier Sätzen mit trabalho em oder estudo em."
+    },
+    "es": {
+     "t": "En el trabajo y en clase",
+     "g": "Hablar de dónde trabajas o estudias con palabras útiles.",
+     "p": [
+      "Trabajo: o escritório (oficina), a reunião, o colega/a colega, o chefe (jefe). Ojo: escritório no es escritorio.",
+      "Clase: a sala de aula (aula), o aluno, a caneta (bolígrafo), o caderno (cuaderno).",
+      "Di trabalho em/num/numa + lugar y estudo + materia: Trabalho num hotel. Estudo Economia."
+     ],
+     "q": "¿Dónde trabajas o estudias y qué es lo que más te gusta?",
+     "c": "Describe tu trabajo o tu centro de estudios en cuatro frases con trabalho em o estudo em."
+    },
+    "fr": {
+     "t": "Au travail et à l'école",
+     "g": "Parler de ton travail ou de tes études avec des mots utiles.",
+     "p": [
+      "Travail : o escritório (bureau), a reunião (réunion), o colega/a colega (collègue), o chefe (chef).",
+      "École : a sala de aula (salle de classe), o aluno (élève), a caneta (stylo), o caderno (cahier).",
+      "Dis trabalho em/num/numa + lieu et estudo + matière : Trabalho num hotel. Estudo Economia."
+     ],
+     "q": "Où travailles-tu ou étudies-tu, et qu'est-ce que tu aimes le plus ?",
+     "c": "Décris ton lieu de travail ou ton école en quatre phrases avec trabalho em ou estudo em."
+    },
+    "it": {
+     "t": "Al lavoro e a scuola",
+     "g": "Parli di dove lavori o studi con parole utili.",
+     "p": [
+      "Lavoro: o escritório (ufficio), a reunião (riunione), o colega/a colega, o chefe (capo).",
+      "Scuola: a sala de aula (aula), o aluno (alunno), a caneta (penna), o caderno (quaderno).",
+      "Di' trabalho em/num/numa + luogo e estudo + materia: Trabalho num hotel. Estudo Economia."
+     ],
+     "q": "Dove lavori o studi e cosa ti piace di più?",
+     "c": "Descrivi il tuo posto di lavoro o la tua scuola in quattro frasi con trabalho em o estudo em."
+    },
+    "pt": {
+     "t": "No trabalho e na escola",
+     "g": "Revê o vocabulário de trabalho e escola e algumas diferenças entre países.",
+     "p": [
+      "Escritório, reunião e colega são iguais; o chefe em Portugal, o chefe ou o patrão no Brasil.",
+      "Em Portugal a escola tem o recreio e a cantina; no Brasil fala-se também do intervalo e do refeitório.",
+      "Disciplinas e cursos escrevem-se muitas vezes com maiúscula: estudo Direito, sou aluna de Medicina."
+     ],
+     "q": "Que colega ou professor marcou mais a tua vida?",
+     "c": "Descreve um dia típico no teu trabalho ou na tua escola em cinco frases."
+    },
+    "pt_BR": {
+     "t": "No trabalho e na escola",
+     "g": "Revise o vocabulário de trabalho e escola usado em Portugal.",
+     "p": [
+      "Caneta, caderno e lápis são iguais nos dois países, mas em Portugal o grampeador chama-se agrafador.",
+      "O ensino secundário é o ensino médio brasileiro, e a licenciatura é a graduação.",
+      "Emprestas-me uma caneta? usa tu e o pronome depois do verbo."
+     ],
+     "q": "Como você descreveria seu trabalho ou curso a um colega português?",
+     "c": "Escreva quatro frases sobre seu trabalho ou estudo com trabalho num/numa e estudo..."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "o escritório",
+      "ex": "Chego ao escritório às nove."
+     },
+     {
+      "w": "a reunião",
+      "ex": "Tenho uma reunião às dez."
+     },
+     {
+      "w": "o colega / a colega",
+      "ex": "O meu colega ajuda-me muito."
+     },
+     {
+      "w": "a sala de aula",
+      "ex": "A sala de aula tem trinta alunos."
+     },
+     {
+      "w": "a caneta",
+      "ex": "Emprestas-me uma caneta?"
+     },
+     {
+      "w": "trabalho em / estudo em",
+      "ex": "Trabalho num banco e estudo inglês à noite."
+     }
+    ],
+    "gram": "Diz-se trabalho em (num banco, numa loja) e estudo em (na universidade). Para cursos: estudo Direito, estudo português."
+   }
+  },
+  {
+   "d": 49,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Weather",
+     "g": "Talk about the weather with estar and fazer.",
+     "p": [
+      "Como está o tempo? (How is the weather?) Answer: Está sol, está nublado, está frio, está vento.",
+      "Fazer also works: faz calor (it is hot), faz frio (it is cold), faz bom tempo (the weather is nice).",
+      "It is raining is está a chover in Portugal and está chovendo in Brazil."
+     ],
+     "q": "What is the weather like where you are today? Describe it in two sentences.",
+     "c": "Look out of the window three times today and describe the weather in Portuguese each time."
+    },
+    "de": {
+     "t": "Wetter",
+     "g": "Du sprichst mit estar und fazer über das Wetter.",
+     "p": [
+      "Como está o tempo? (Wie ist das Wetter?) Antwort: Está sol, está nublado, está frio, está vento.",
+      "Auch fazer geht: faz calor (es ist heiß), faz frio (es ist kalt), faz bom tempo (schönes Wetter).",
+      "Es regnet heißt in Portugal está a chover, in Brasilien está chovendo."
+     ],
+     "q": "Wie ist das Wetter heute bei dir? Beschreib es in zwei Sätzen.",
+     "c": "Schau heute dreimal aus dem Fenster und beschreibe das Wetter jedes Mal auf Portugiesisch."
+    },
+    "es": {
+     "t": "El tiempo",
+     "g": "Hablar del tiempo con estar y fazer.",
+     "p": [
+      "Como está o tempo? (¿Qué tiempo hace?) Responde: Está sol, está nublado, está frio, está vento.",
+      "Fazer también sirve, como hacer: faz calor, faz frio, faz bom tempo.",
+      "Está lloviendo es está a chover en Portugal y está chovendo en Brasil."
+     ],
+     "q": "¿Qué tiempo hace hoy donde estás? Descríbelo en dos frases.",
+     "c": "Mira por la ventana tres veces hoy y describe el tiempo en portugués cada vez."
+    },
+    "fr": {
+     "t": "La météo",
+     "g": "Parler du temps qu'il fait avec estar et fazer.",
+     "p": [
+      "Como está o tempo? (Quel temps fait-il ?) Réponds : Está sol, está nublado, está frio, está vento.",
+      "Fazer marche aussi, comme faire : faz calor (il fait chaud), faz frio, faz bom tempo.",
+      "Il pleut se dit está a chover au Portugal et está chovendo au Brésil."
+     ],
+     "q": "Quel temps fait-il chez toi aujourd'hui ? Décris-le en deux phrases.",
+     "c": "Regarde par la fenêtre trois fois aujourd'hui et décris le temps en portugais à chaque fois."
+    },
+    "it": {
+     "t": "Il tempo",
+     "g": "Parli del tempo con estar e fazer.",
+     "p": [
+      "Como está o tempo? (Che tempo fa?) Rispondi: Está sol, está nublado, está frio, está vento.",
+      "Funziona anche fazer, come fare: faz calor (fa caldo), faz frio, faz bom tempo.",
+      "Sta piovendo è está a chover in Portogallo e está chovendo in Brasile."
+     ],
+     "q": "Che tempo fa oggi dove sei? Descrivilo in due frasi.",
+     "c": "Guarda fuori dalla finestra tre volte oggi e descrivi il tempo in portoghese ogni volta."
+    },
+    "pt": {
+     "t": "O tempo",
+     "g": "Revê como falar do tempo e a diferença entre está a chover e está chovendo.",
+     "p": [
+      "Está sol, está nublado, está vento, faz calor, faz frio: as fórmulas básicas para o tempo.",
+      "Em Portugal diz-se está a chover e está a nevar; no Brasil, está chovendo e está nevando.",
+      "Morrinha e chuva miudinha são palavras portuguesas para aquela chuva fina que não para."
+     ],
+     "q": "Qual é o teu tempo preferido para passear?",
+     "c": "Escreve uma previsão do tempo para amanhã na tua cidade em quatro frases."
+    },
+    "pt_BR": {
+     "t": "O tempo",
+     "g": "Revise o tempo e a forma portuguesa está a chover.",
+     "p": [
+      "Em Portugal: está a chover, está a fazer frio; no Brasil, está chovendo, está fazendo frio.",
+      "Está vento é a forma portuguesa de está ventando.",
+      "Faz calor, faz frio e está sol são iguais nos dois países."
+     ],
+     "q": "Como está o tempo hoje aí? Responda à portuguesa.",
+     "c": "Descreva o tempo de hoje em três frases com está a + infinitivo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "está sol",
+      "ex": "Hoje está sol, vamos à praia!"
+     },
+     {
+      "w": "está a chover",
+      "ex": "Leva o guarda-chuva, está a chover."
+     },
+     {
+      "w": "faz calor",
+      "ex": "Em agosto faz muito calor no Alentejo."
+     },
+     {
+      "w": "está frio",
+      "ex": "Está frio, veste um casaco."
+     },
+     {
+      "w": "está vento",
+      "ex": "Está muito vento na praia hoje."
+     },
+     {
+      "w": "está nublado",
+      "ex": "O céu está nublado de manhã."
+     }
+    ],
+    "gram": "Em Portugal diz-se está a chover (estar a + infinitivo); no Brasil, está chovendo. Faz calor e faz frio também são comuns."
+   }
+  },
+  {
+   "d": 50,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Clothes",
+     "g": "Name everyday clothes and say what you wear in each season.",
+     "p": [
+      "A camisola (jumper, top), as calças (trousers), o casaco (jacket, coat), os sapatos (shoes), o vestido (dress).",
+      "Careful: in Brazil camisola means nightgown; a jumper there is suéter or blusa.",
+      "Trousers are plural: umas calças. Use vestir or usar: No inverno uso um casaco grosso."
+     ],
+     "q": "What do you usually wear on a cold winter day?",
+     "c": "Describe what you are wearing today, item by item, with its colour: uma camisola azul..."
+    },
+    "de": {
+     "t": "Kleidung",
+     "g": "Du benennst Alltagskleidung und sagst, was du in jeder Jahreszeit trägst.",
+     "p": [
+      "A camisola (Pullover, Oberteil), as calças (Hose), o casaco (Jacke, Mantel), os sapatos (Schuhe), o vestido (Kleid).",
+      "Achtung: In Brasilien heißt camisola Nachthemd; ein Pullover ist dort suéter oder blusa.",
+      "Hose steht im Plural: umas calças. Mit vestir oder usar: No inverno uso um casaco grosso."
+     ],
+     "q": "Was trägst du meistens an einem kalten Wintertag?",
+     "c": "Beschreib, was du heute trägst, Stück für Stück mit Farbe: uma camisola azul..."
+    },
+    "es": {
+     "t": "La ropa",
+     "g": "Nombrar la ropa diaria y decir qué llevas en cada estación.",
+     "p": [
+      "A camisola (jersey), as calças (pantalones), o casaco (chaqueta, abrigo), os sapatos (zapatos), o vestido.",
+      "Ojo: en Brasil camisola es camisón; allí un jersey es suéter o blusa.",
+      "Pantalones va en plural: umas calças. Usa vestir o usar: No inverno uso um casaco grosso."
+     ],
+     "q": "¿Qué sueles llevar un día frío de invierno?",
+     "c": "Describe lo que llevas hoy, prenda a prenda, con su color: uma camisola azul..."
+    },
+    "fr": {
+     "t": "Les vêtements",
+     "g": "Nommer les vêtements du quotidien et dire ce que tu portes selon la saison.",
+     "p": [
+      "A camisola (pull, haut), as calças (pantalon), o casaco (veste, manteau), os sapatos (chaussures), o vestido (robe).",
+      "Attention : au Brésil, camisola veut dire chemise de nuit ; un pull, c'est suéter ou blusa.",
+      "Pantalon est au pluriel : umas calças. Avec vestir ou usar : No inverno uso um casaco grosso."
+     ],
+     "q": "Que portes-tu d'habitude par une froide journée d'hiver ?",
+     "c": "Décris ce que tu portes aujourd'hui, pièce par pièce, avec la couleur : uma camisola azul..."
+    },
+    "it": {
+     "t": "I vestiti",
+     "g": "Nomini i vestiti di tutti i giorni e dici cosa indossi in ogni stagione.",
+     "p": [
+      "A camisola (maglione), as calças (pantaloni), o casaco (giacca, cappotto), os sapatos (scarpe), o vestido.",
+      "Attenzione: in Brasile camisola è la camicia da notte; il maglione lì è suéter o blusa.",
+      "Pantaloni è plurale: umas calças. Con vestir o usar: No inverno uso um casaco grosso."
+     ],
+     "q": "Cosa indossi di solito in una fredda giornata d'inverno?",
+     "c": "Descrivi cosa indossi oggi, capo per capo, con il colore: uma camisola azul..."
+    },
+    "pt": {
+     "t": "A roupa",
+     "g": "Revê o vocabulário da roupa e os falsos amigos entre Portugal e o Brasil.",
+     "p": [
+      "Camisola em Portugal é a peça de malha; no Brasil é roupa de dormir, o que dá conversas engraçadas.",
+      "Calções, cuecas e fato são portugueses; no Brasil: bermuda ou short, cueca e terno.",
+      "Calças é sempre plural em Portugal (umas calças pretas); no Brasil diz-se também uma calça."
+     ],
+     "q": "Que peça de roupa tens há mais tempo e ainda usas?",
+     "c": "Escreve a lista do que levarias numa mala para um fim de semana no Porto no inverno."
+    },
+    "pt_BR": {
+     "t": "A roupa",
+     "g": "Aprenda os nomes de roupa em Portugal e alguns falsos amigos importantes.",
+     "p": [
+      "Em Portugal, a camisola é o suéter ou a blusa de frio, não roupa de dormir!",
+      "O fato é o terno, os calções são a bermuda e a camisa é igual nos dois países.",
+      "As calças são sempre plural em Portugal: umas calças de ganga são uma calça jeans."
+     ],
+     "q": "Qual seria a sua roupa para um dia de inverno em Lisboa, em palavras portuguesas?",
+     "c": "Descreva sua roupa de hoje com as palavras de Portugal: camisola, calças, calções..."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "a camisola",
+      "ex": "Esta camisola de lã é muito quente."
+     },
+     {
+      "w": "as calças",
+      "ex": "Preciso de umas calças novas."
+     },
+     {
+      "w": "os sapatos",
+      "ex": "Os sapatos pretos são confortáveis."
+     },
+     {
+      "w": "o casaco",
+      "ex": "Leva o casaco, está frio."
+     },
+     {
+      "w": "o vestido",
+      "ex": "Ela tem um vestido azul."
+     },
+     {
+      "w": "vestir / usar",
+      "ex": "No verão uso calções e t-shirt."
+     }
+    ],
+    "gram": "Em Portugal a camisola é a peça de lã ou de malha; no Brasil diz-se suéter ou blusa. Calças usa-se no plural: umas calças."
+   }
+  }
+ ]
+}

@@ -1,0 +1,835 @@
+{
+ "topic": "world_cultures",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Street food stories",
+     "g": "Discover why street food tells you so much about a city's daily life.",
+     "p": [
+      "Street food is quick, affordable and made for people on the move, so it shows how locals really eat.",
+      "Think of tacos in Mexico City, pad thai in Bangkok, falafel in Cairo or pastéis in Lisbon and São Paulo.",
+      "Busy stalls with long local queues are often the best sign that the food is fresh and loved."
+     ],
+     "q": "What street food from your city would you proudly recommend to a visitor?",
+     "c": "Look up one famous street food from a country you have never visited and learn its main ingredients."
+    },
+    "de": {
+     "t": "Geschichten vom Streetfood",
+     "g": "Entdecke, warum Streetfood so viel über den Alltag einer Stadt verrät.",
+     "p": [
+      "Streetfood ist schnell, günstig und für Menschen unterwegs gemacht, so zeigt es, wie Einheimische wirklich essen.",
+      "Denk an Tacos in Mexiko-Stadt, Pad Thai in Bangkok, Falafel in Kairo oder Pastéis in Lissabon und São Paulo.",
+      "Belebte Stände mit langen Schlangen von Einheimischen sind oft das beste Zeichen für frisches, beliebtes Essen."
+     ],
+     "q": "Welches Streetfood aus deiner Stadt würdest du einem Gast stolz empfehlen?",
+     "c": "Recherchiere ein berühmtes Streetfood aus einem Land, das du nie besucht hast, und lerne seine Hauptzutaten."
+    },
+    "es": {
+     "t": "Historias de la comida callejera",
+     "g": "Descubre por qué la comida callejera dice tanto de la vida diaria de una ciudad.",
+     "p": [
+      "Es rápida, económica y pensada para gente en movimiento, así que muestra cómo come de verdad la gente local.",
+      "Piensa en los tacos de Ciudad de México, el pad thai de Bangkok, el falafel de El Cairo o los pastéis de Lisboa y São Paulo.",
+      "Los puestos con largas colas de gente local suelen ser la mejor señal de comida fresca y querida."
+     ],
+     "q": "¿Qué comida callejera de tu ciudad recomendarías con orgullo a un visitante?",
+     "c": "Busca una comida callejera famosa de un país que nunca hayas visitado y aprende sus ingredientes principales."
+    },
+    "fr": {
+     "t": "Histoires de cuisine de rue",
+     "g": "Découvre pourquoi la cuisine de rue en dit tant sur la vie quotidienne d'une ville.",
+     "p": [
+      "Rapide, abordable et faite pour les gens pressés, elle montre comment les habitants mangent vraiment.",
+      "Pense aux tacos de Mexico, au pad thaï de Bangkok, aux falafels du Caire ou aux pastéis de Lisbonne et São Paulo.",
+      "Les stands animés avec de longues files d'habitants sont souvent le meilleur signe d'une cuisine fraîche et aimée."
+     ],
+     "q": "Quelle spécialité de rue de ta ville recommanderais-tu fièrement à un visiteur ?",
+     "c": "Renseigne-toi sur un plat de rue célèbre d'un pays où tu n'es jamais allé et apprends ses ingrédients."
+    },
+    "it": {
+     "t": "Storie di cibo di strada",
+     "g": "Scopri perché il cibo di strada racconta così tanto della vita quotidiana di una città.",
+     "p": [
+      "È veloce, economico e pensato per chi è in movimento, quindi mostra come mangiano davvero le persone del posto.",
+      "Pensa ai tacos di Città del Messico, al pad thai di Bangkok, al falafel del Cairo o ai pastéis di Lisbona e San Paolo.",
+      "Le bancarelle affollate con lunghe file di gente del posto sono spesso il segno migliore di cibo fresco e amato."
+     ],
+     "q": "Quale cibo di strada della tua città consiglieresti con orgoglio a un visitatore?",
+     "c": "Cerca un famoso cibo di strada di un paese che non hai mai visitato e scopri i suoi ingredienti principali."
+    },
+    "pt": {
+     "t": "Histórias de comida de rua",
+     "g": "Descobre porque é que a comida de rua diz tanto sobre o dia a dia de uma cidade.",
+     "p": [
+      "É rápida, acessível e feita para quem anda com pressa, por isso mostra como as pessoas locais comem de verdade.",
+      "Pensa nos tacos da Cidade do México, no pad thai de Banguecoque, no falafel do Cairo ou nas bifanas de Lisboa.",
+      "Bancas movimentadas com longas filas de locais são muitas vezes o melhor sinal de comida fresca e querida."
+     ],
+     "q": "Que comida de rua da tua cidade recomendarias com orgulho a um visitante?",
+     "c": "Pesquisa uma comida de rua famosa de um país que nunca visitaste e aprende os seus ingredientes principais."
+    },
+    "pt_BR": {
+     "t": "Histórias de comida de rua",
+     "g": "Descubra por que a comida de rua diz tanto sobre o dia a dia de uma cidade.",
+     "p": [
+      "Ela é rápida, acessível e feita para quem está na correria, por isso mostra como as pessoas do lugar comem de verdade.",
+      "Pense nos tacos da Cidade do México, no pad thai de Bangkok, no falafel do Cairo ou no pastel de feira de São Paulo.",
+      "Barracas cheias, com filas longas de moradores, costumam ser o melhor sinal de comida fresca e querida."
+     ],
+     "q": "Que comida de rua da sua cidade você recomendaria com orgulho a um visitante?",
+     "c": "Pesquise uma comida de rua famosa de um país que você nunca visitou e aprenda seus ingredientes principais."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Family structures",
+     "g": "Explore the different shapes a family can take around the world.",
+     "p": [
+      "A nuclear family is parents and children living together, common in many European and North American cities.",
+      "Extended families include grandparents, aunts, uncles and cousins, who may live close and help each other daily.",
+      "In many parts of Asia, Africa and Latin America several generations share one home, and that is a source of pride."
+     ],
+     "q": "Who do you count as your close family, and who lived in your home when you were a child?",
+     "c": "Draw a small family tree with three generations and add one tradition your family keeps."
+    },
+    "de": {
+     "t": "Familienstrukturen",
+     "g": "Entdecke die verschiedenen Formen, die eine Familie weltweit annehmen kann.",
+     "p": [
+      "Die Kernfamilie besteht aus Eltern und Kindern, die zusammenleben, häufig in Städten Europas und Nordamerikas.",
+      "Zur Großfamilie gehören Großeltern, Tanten, Onkel und Cousins, die oft nah wohnen und sich täglich helfen.",
+      "In vielen Teilen Asiens, Afrikas und Lateinamerikas leben mehrere Generationen unter einem Dach, und darauf ist man stolz."
+     ],
+     "q": "Wen zählst du zu deiner engen Familie, und wer lebte in deiner Kindheit mit dir zusammen?",
+     "c": "Zeichne einen kleinen Stammbaum mit drei Generationen und notiere eine Tradition deiner Familie."
+    },
+    "es": {
+     "t": "Estructuras familiares",
+     "g": "Explora las distintas formas que puede tener una familia en el mundo.",
+     "p": [
+      "La familia nuclear son padres e hijos que viven juntos, algo común en muchas ciudades de Europa y Norteamérica.",
+      "La familia extensa incluye abuelos, tíos y primos, que a menudo viven cerca y se ayudan a diario.",
+      "En muchas partes de Asia, África y Latinoamérica varias generaciones comparten casa, y eso es motivo de orgullo."
+     ],
+     "q": "¿A quién consideras tu familia cercana y quién vivía en tu casa cuando eras niño?",
+     "c": "Dibuja un pequeño árbol genealógico de tres generaciones y añade una tradición que conserve tu familia."
+    },
+    "fr": {
+     "t": "Les structures familiales",
+     "g": "Explore les différentes formes qu'une famille peut prendre dans le monde.",
+     "p": [
+      "La famille nucléaire, ce sont les parents et les enfants sous le même toit, courante dans les villes d'Europe et d'Amérique du Nord.",
+      "La famille élargie inclut grands-parents, oncles, tantes et cousins, qui vivent souvent près et s'entraident au quotidien.",
+      "Dans bien des régions d'Asie, d'Afrique et d'Amérique latine, plusieurs générations partagent une maison, avec fierté."
+     ],
+     "q": "Qui comptes-tu dans ta famille proche, et qui vivait chez toi quand tu étais enfant ?",
+     "c": "Dessine un petit arbre généalogique sur trois générations et ajoute une tradition que ta famille garde."
+    },
+    "it": {
+     "t": "Strutture familiari",
+     "g": "Esplora le diverse forme che una famiglia può avere nel mondo.",
+     "p": [
+      "La famiglia nucleare è formata da genitori e figli che vivono insieme, comune in molte città d'Europa e Nord America.",
+      "La famiglia allargata comprende nonni, zii e cugini, che spesso vivono vicino e si aiutano ogni giorno.",
+      "In molte zone di Asia, Africa e America Latina più generazioni condividono la casa, e ne vanno fiere."
+     ],
+     "q": "Chi consideri la tua famiglia stretta, e chi viveva in casa con te da bambino?",
+     "c": "Disegna un piccolo albero genealogico di tre generazioni e aggiungi una tradizione della tua famiglia."
+    },
+    "pt": {
+     "t": "Estruturas familiares",
+     "g": "Explora as diferentes formas que uma família pode ter pelo mundo.",
+     "p": [
+      "A família nuclear são pais e filhos a viver juntos, algo comum em muitas cidades da Europa e da América do Norte.",
+      "A família alargada inclui avós, tios e primos, que muitas vezes vivem perto e se ajudam todos os dias.",
+      "Em muitas partes da Ásia, de África e da América Latina várias gerações partilham a casa, e isso é motivo de orgulho."
+     ],
+     "q": "Quem consideras a tua família próxima, e quem vivia contigo quando eras criança?",
+     "c": "Desenha uma pequena árvore genealógica com três gerações e junta uma tradição que a tua família mantém."
+    },
+    "pt_BR": {
+     "t": "Estruturas familiares",
+     "g": "Explore as diferentes formas que uma família pode ter pelo mundo.",
+     "p": [
+      "A família nuclear é formada por pais e filhos morando juntos, algo comum em muitas cidades da Europa e da América do Norte.",
+      "A família estendida inclui avós, tios e primos, que muitas vezes moram perto e se ajudam no dia a dia.",
+      "Em muitas partes da Ásia, da África e da América Latina várias gerações dividem a casa, e isso é motivo de orgulho."
+     ],
+     "q": "Quem você considera sua família próxima, e quem morava com você quando era criança?",
+     "c": "Desenhe uma pequena árvore genealógica com três gerações e acrescente uma tradição que sua família mantém."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The role of grandparents",
+     "g": "See how grandparents raise, teach and are honoured in different societies.",
+     "p": [
+      "In many families grandparents care for grandchildren daily, passing on recipes, songs, stories and language.",
+      "Japan honours older people with a national holiday, Respect for the Aged Day, every September.",
+      "Across cultures, elders are valued as keepers of memory who connect children to their roots."
+     ],
+     "q": "What is something a grandparent or older person taught you that you still remember?",
+     "c": "Call or message an older relative or friend today and ask them about a tradition from their childhood."
+    },
+    "de": {
+     "t": "Die Rolle der Großeltern",
+     "g": "Sieh, wie Großeltern in verschiedenen Gesellschaften erziehen, lehren und geehrt werden.",
+     "p": [
+      "In vielen Familien betreuen Großeltern täglich die Enkel und geben Rezepte, Lieder, Geschichten und Sprache weiter.",
+      "Japan ehrt ältere Menschen jeden September mit einem Feiertag, dem Tag der Achtung vor dem Alter.",
+      "In vielen Kulturen gelten Ältere als Hüter der Erinnerung, die Kinder mit ihren Wurzeln verbinden."
+     ],
+     "q": "Was hat dir ein Großelternteil oder ein älterer Mensch beigebracht, woran du dich noch erinnerst?",
+     "c": "Ruf heute eine ältere Person aus Familie oder Freundeskreis an und frag nach einer Tradition aus ihrer Kindheit."
+    },
+    "es": {
+     "t": "El papel de los abuelos",
+     "g": "Descubre cómo los abuelos crían, enseñan y son honrados en distintas sociedades.",
+     "p": [
+      "En muchas familias los abuelos cuidan a diario de los nietos y transmiten recetas, canciones, historias e idioma.",
+      "Japón honra a las personas mayores con un día festivo nacional, el Día del Respeto a los Mayores, cada septiembre.",
+      "En muchas culturas los mayores son guardianes de la memoria que unen a los niños con sus raíces."
+     ],
+     "q": "¿Qué te enseñó un abuelo o una persona mayor que todavía recuerdas?",
+     "c": "Llama o escribe hoy a un familiar o amigo mayor y pregúntale por una tradición de su infancia."
+    },
+    "fr": {
+     "t": "Le rôle des grands-parents",
+     "g": "Vois comment les grands-parents élèvent, transmettent et sont honorés selon les sociétés.",
+     "p": [
+      "Dans beaucoup de familles, les grands-parents gardent les petits-enfants et transmettent recettes, chansons, contes et langue.",
+      "Le Japon honore les aînés par un jour férié national, la Journée du respect des personnes âgées, chaque septembre.",
+      "Dans de nombreuses cultures, les aînés sont les gardiens de la mémoire qui relient les enfants à leurs racines."
+     ],
+     "q": "Qu'est-ce qu'un grand-parent ou une personne âgée t'a appris dont tu te souviens encore ?",
+     "c": "Appelle ou écris aujourd'hui à un proche âgé et demande-lui une tradition de son enfance."
+    },
+    "it": {
+     "t": "Il ruolo dei nonni",
+     "g": "Scopri come i nonni crescono, insegnano e vengono onorati in società diverse.",
+     "p": [
+      "In molte famiglie i nonni si occupano ogni giorno dei nipoti e tramandano ricette, canzoni, storie e lingua.",
+      "Il Giappone onora gli anziani con una festa nazionale, la Giornata del rispetto per gli anziani, ogni settembre.",
+      "In molte culture gli anziani sono custodi della memoria che legano i bambini alle loro radici."
+     ],
+     "q": "Che cosa ti ha insegnato un nonno o una persona anziana che ricordi ancora?",
+     "c": "Chiama o scrivi oggi a un parente o amico anziano e chiedigli di una tradizione della sua infanzia."
+    },
+    "pt": {
+     "t": "O papel dos avós",
+     "g": "Vê como os avós criam, ensinam e são homenageados em diferentes sociedades.",
+     "p": [
+      "Em muitas famílias os avós cuidam dos netos todos os dias e passam receitas, canções, histórias e a língua.",
+      "O Japão homenageia os mais velhos com um feriado nacional, o Dia do Respeito aos Idosos, todos os setembros.",
+      "Em muitas culturas os mais velhos são guardiões da memória que ligam as crianças às suas raízes."
+     ],
+     "q": "O que te ensinou um avô, uma avó ou uma pessoa mais velha de que ainda te lembras?",
+     "c": "Liga ou escreve hoje a um familiar ou amigo mais velho e pergunta por uma tradição da infância dele."
+    },
+    "pt_BR": {
+     "t": "O papel dos avós",
+     "g": "Veja como os avós criam, ensinam e são homenageados em diferentes sociedades.",
+     "p": [
+      "Em muitas famílias os avós cuidam dos netos todos os dias e passam adiante receitas, músicas, histórias e o idioma.",
+      "O Japão homenageia os idosos com um feriado nacional, o Dia do Respeito aos Idosos, todo mês de setembro.",
+      "Em muitas culturas os mais velhos são guardiões da memória que ligam as crianças às suas raízes."
+     ],
+     "q": "O que um avô, uma avó ou uma pessoa mais velha te ensinou que você ainda lembra?",
+     "c": "Ligue ou mande mensagem hoje a um parente ou amigo mais velho e pergunte sobre uma tradição da infância dele."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Homes around the world",
+     "g": "Explore how climate, history and lifestyle shape homes in different cultures.",
+     "p": [
+      "Traditional Japanese rooms use tatami mats, and room sizes are often still counted in the number of mats.",
+      "The Mongolian ger is a round felt tent that herding families can take down and move with the seasons.",
+      "In Norway and Sweden many families escape to simple cabins, a hytte or stuga, to enjoy nature at weekends."
+     ],
+     "q": "What is one thing about homes where you live that a visitor might find surprising?",
+     "c": "Look around your home and pick one feature that exists because of your climate or culture."
+    },
+    "de": {
+     "t": "Wohnen rund um die Welt",
+     "g": "Entdecke, wie Klima, Geschichte und Lebensstil Häuser in verschiedenen Kulturen prägen.",
+     "p": [
+      "Traditionelle japanische Räume haben Tatamimatten, und Zimmergrößen werden oft noch in Matten angegeben.",
+      "Die mongolische Jurte, der Ger, ist ein rundes Filzzelt, das Hirtenfamilien abbauen und mit den Jahreszeiten mitnehmen.",
+      "In Norwegen und Schweden fahren viele Familien am Wochenende in einfache Hütten, hytte oder stuga, um die Natur zu genießen."
+     ],
+     "q": "Was an Wohnungen oder Häusern bei dir könnte einen Gast überraschen?",
+     "c": "Schau dich zu Hause um und finde ein Detail, das es wegen deines Klimas oder deiner Kultur gibt."
+    },
+    "es": {
+     "t": "Casas del mundo",
+     "g": "Explora cómo el clima, la historia y el estilo de vida dan forma a las casas en distintas culturas.",
+     "p": [
+      "Las habitaciones japonesas tradicionales tienen tatamis, y su tamaño a menudo se sigue midiendo en número de esteras.",
+      "El ger mongol es una tienda redonda de fieltro que las familias de pastores desmontan y trasladan según la estación.",
+      "En Noruega y Suecia muchas familias se escapan a cabañas sencillas, hytte o stuga, para disfrutar de la naturaleza."
+     ],
+     "q": "¿Qué cosa de las casas de tu país podría sorprender a un visitante?",
+     "c": "Mira tu casa y elige un detalle que exista por tu clima o tu cultura."
+    },
+    "fr": {
+     "t": "Les maisons du monde",
+     "g": "Explore comment le climat, l'histoire et le mode de vie façonnent les maisons selon les cultures.",
+     "p": [
+      "Les pièces japonaises traditionnelles ont des tatamis, et leur taille se compte souvent encore en nombre de nattes.",
+      "La ger mongole est une tente ronde en feutre que les familles d'éleveurs démontent et déplacent selon les saisons.",
+      "En Norvège et en Suède, beaucoup de familles filent le week-end dans une cabane simple, hytte ou stuga, en pleine nature."
+     ],
+     "q": "Qu'est-ce qui, dans les maisons de chez toi, pourrait surprendre un visiteur ?",
+     "c": "Observe ton logement et choisis un détail qui existe à cause de ton climat ou de ta culture."
+    },
+    "it": {
+     "t": "Case nel mondo",
+     "g": "Esplora come clima, storia e stile di vita danno forma alle case nelle diverse culture.",
+     "p": [
+      "Le stanze giapponesi tradizionali hanno i tatami, e la loro misura si conta spesso ancora in numero di stuoie.",
+      "La ger mongola è una tenda rotonda di feltro che le famiglie di pastori smontano e spostano con le stagioni.",
+      "In Norvegia e Svezia molte famiglie passano il fine settimana in semplici casette, hytte o stuga, immerse nella natura."
+     ],
+     "q": "Che cosa delle case dove vivi potrebbe sorprendere un visitatore?",
+     "c": "Guardati intorno a casa e scegli un dettaglio che esiste per via del tuo clima o della tua cultura."
+    },
+    "pt": {
+     "t": "Casas pelo mundo",
+     "g": "Explora como o clima, a história e o estilo de vida moldam as casas em diferentes culturas.",
+     "p": [
+      "Os quartos japoneses tradicionais têm tatamis, e o seu tamanho ainda se mede muitas vezes em número de esteiras.",
+      "A ger mongol é uma tenda redonda de feltro que as famílias de pastores desmontam e levam consigo conforme a estação.",
+      "Na Noruega e na Suécia muitas famílias fogem ao fim de semana para cabanas simples, hytte ou stuga, no meio da natureza."
+     ],
+     "q": "Que coisa das casas onde vives poderia surpreender um visitante?",
+     "c": "Olha à tua volta em casa e escolhe um detalhe que existe por causa do teu clima ou da tua cultura."
+    },
+    "pt_BR": {
+     "t": "Casas pelo mundo",
+     "g": "Explore como clima, história e estilo de vida moldam as casas em diferentes culturas.",
+     "p": [
+      "Os cômodos japoneses tradicionais têm tatames, e o tamanho deles ainda é medido muitas vezes em número de esteiras.",
+      "O ger mongol é uma tenda redonda de feltro que famílias de pastores desmontam e levam junto conforme a estação.",
+      "Na Noruega e na Suécia muitas famílias vão no fim de semana para cabanas simples, hytte ou stuga, no meio da natureza."
+     ],
+     "q": "O que nas casas de onde você mora poderia surpreender um visitante?",
+     "c": "Olhe ao redor da sua casa e escolha um detalhe que existe por causa do seu clima ou da sua cultura."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Shoes off at the door",
+     "g": "Learn where and why people take off their shoes before entering a home.",
+     "p": [
+      "In Japan homes have a genkan, a small entrance area where shoes are left and slippers are often offered.",
+      "Taking shoes off is also common in Korea, Thailand, Turkey, the Nordic countries and Canada, among others.",
+      "The reasons are practical and respectful: it keeps floors clean and marks the home as a calm, private space."
+     ],
+     "q": "Do people take their shoes off at home where you live, and what do you do as a guest?",
+     "c": "Next time you visit someone, quietly notice whether shoes stay on or come off and follow the host."
+    },
+    "de": {
+     "t": "Schuhe aus an der Tür",
+     "g": "Erfahre, wo und warum Menschen vor dem Betreten einer Wohnung die Schuhe ausziehen.",
+     "p": [
+      "In Japan haben Wohnungen einen genkan, einen kleinen Eingangsbereich für die Schuhe, oft mit Hausschuhen für Gäste.",
+      "Schuhe auszuziehen ist auch in Korea, Thailand, der Türkei, den nordischen Ländern und Kanada üblich.",
+      "Die Gründe sind praktisch und respektvoll: saubere Böden und das Zuhause als ruhiger, privater Ort."
+     ],
+     "q": "Zieht man bei dir zu Hause die Schuhe aus, und was machst du als Gast?",
+     "c": "Achte beim nächsten Besuch still darauf, ob die Schuhe an- oder ausbleiben, und folge dem Beispiel der Gastgeber."
+    },
+    "es": {
+     "t": "Zapatos fuera en la puerta",
+     "g": "Aprende dónde y por qué la gente se quita los zapatos antes de entrar en casa.",
+     "p": [
+      "En Japón las casas tienen un genkan, una pequeña entrada donde se dejan los zapatos y a menudo se ofrecen zapatillas.",
+      "Quitarse los zapatos también es habitual en Corea, Tailandia, Turquía, los países nórdicos y Canadá, entre otros.",
+      "Las razones son prácticas y de respeto: mantiene el suelo limpio y marca el hogar como un espacio tranquilo y privado."
+     ],
+     "q": "¿Donde vives la gente se quita los zapatos en casa y qué haces tú cuando eres invitado?",
+     "c": "La próxima vez que visites a alguien, fíjate si los zapatos se quedan puestos o no y sigue al anfitrión."
+    },
+    "fr": {
+     "t": "Chaussures à la porte",
+     "g": "Découvre où et pourquoi on enlève ses chaussures avant d'entrer dans une maison.",
+     "p": [
+      "Au Japon, les logements ont un genkan, petite entrée où l'on laisse ses chaussures et où l'on propose souvent des chaussons.",
+      "Se déchausser est aussi courant en Corée, en Thaïlande, en Turquie, dans les pays nordiques et au Canada, entre autres.",
+      "Les raisons sont pratiques et respectueuses : des sols propres et un foyer vécu comme un lieu calme et privé."
+     ],
+     "q": "Chez toi, enlève-t-on ses chaussures à la maison, et que fais-tu quand tu es invité ?",
+     "c": "À ta prochaine visite, observe discrètement si l'on garde ses chaussures ou non, et fais comme ton hôte."
+    },
+    "it": {
+     "t": "Scarpe fuori dalla porta",
+     "g": "Scopri dove e perché ci si toglie le scarpe prima di entrare in casa.",
+     "p": [
+      "In Giappone le case hanno un genkan, un piccolo ingresso dove si lasciano le scarpe e spesso si offrono le pantofole.",
+      "Togliersi le scarpe è comune anche in Corea, Thailandia, Turchia, nei paesi nordici e in Canada, tra gli altri.",
+      "I motivi sono pratici e di rispetto: pavimenti puliti e la casa vissuta come uno spazio tranquillo e privato."
+     ],
+     "q": "Dove vivi ci si toglie le scarpe in casa, e tu cosa fai quando sei ospite?",
+     "c": "La prossima volta che vai da qualcuno, nota con discrezione se le scarpe restano ai piedi e segui il padrone di casa."
+    },
+    "pt": {
+     "t": "Sapatos fora à porta",
+     "g": "Aprende onde e porquê as pessoas tiram os sapatos antes de entrar em casa.",
+     "p": [
+      "No Japão as casas têm um genkan, uma pequena entrada onde se deixam os sapatos e onde muitas vezes se oferecem chinelos.",
+      "Tirar os sapatos também é comum na Coreia, na Tailândia, na Turquia, nos países nórdicos e no Canadá, entre outros.",
+      "As razões são práticas e de respeito: mantém o chão limpo e marca a casa como um espaço calmo e privado."
+     ],
+     "q": "Onde vives, as pessoas tiram os sapatos em casa, e o que fazes quando és convidado?",
+     "c": "Na próxima visita, repara discretamente se os sapatos ficam calçados ou não e segue o anfitrião."
+    },
+    "pt_BR": {
+     "t": "Sapatos fora na porta",
+     "g": "Aprenda onde e por que as pessoas tiram os sapatos antes de entrar em casa.",
+     "p": [
+      "No Japão as casas têm um genkan, uma pequena entrada onde se deixam os sapatos e muitas vezes se oferecem chinelos.",
+      "Tirar os sapatos também é comum na Coreia, na Tailândia, na Turquia, nos países nórdicos e no Canadá, entre outros.",
+      "Os motivos são práticos e de respeito: o chão fica limpo e a casa vira um espaço calmo e reservado."
+     ],
+     "q": "Onde você mora, as pessoas tiram os sapatos em casa, e o que você faz quando é visita?",
+     "c": "Na próxima visita, repare com discrição se os sapatos ficam nos pés ou não e siga o anfitrião."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Traditional clothing",
+     "g": "Discover what traditional dress like the kimono, sari, kilt and dirndl expresses.",
+     "p": [
+      "The Japanese kimono is wrapped left over right and tied with a wide sash called an obi.",
+      "The sari, a long piece of fabric draped around the body, is worn in India, Nepal, Bangladesh and Sri Lanka.",
+      "The Scottish kilt often shows a tartan linked to a family or region, and the dirndl is loved in Austria and Bavaria."
+     ],
+     "q": "Is there a traditional outfit from your culture, and when do people wear it today?",
+     "c": "Look up how one traditional garment is made or worn and share one surprising detail with a friend."
+    },
+    "de": {
+     "t": "Traditionelle Kleidung",
+     "g": "Entdecke, was traditionelle Kleidung wie Kimono, Sari, Kilt und Dirndl ausdrückt.",
+     "p": [
+      "Der japanische Kimono wird links über rechts gewickelt und mit einem breiten Gürtel, dem Obi, gebunden.",
+      "Der Sari, eine lange Stoffbahn, die um den Körper drapiert wird, wird in Indien, Nepal, Bangladesch und Sri Lanka getragen.",
+      "Der schottische Kilt zeigt oft ein Tartan einer Familie oder Region, und das Dirndl ist in Österreich und Bayern beliebt."
+     ],
+     "q": "Gibt es in deiner Kultur eine Tracht, und wann trägt man sie heute?",
+     "c": "Lies nach, wie ein traditionelles Kleidungsstück hergestellt oder getragen wird, und erzähl einem Freund ein überraschendes Detail."
+    },
+    "es": {
+     "t": "Ropa tradicional",
+     "g": "Descubre lo que expresa la vestimenta tradicional como el kimono, el sari, el kilt o el dirndl.",
+     "p": [
+      "El kimono japonés se cruza con el lado izquierdo sobre el derecho y se ata con una faja ancha llamada obi.",
+      "El sari, una larga pieza de tela que envuelve el cuerpo, se lleva en India, Nepal, Bangladés y Sri Lanka.",
+      "El kilt escocés suele mostrar un tartán ligado a una familia o región, y el dirndl es muy querido en Austria y Baviera."
+     ],
+     "q": "¿Hay un traje tradicional en tu cultura y cuándo se lleva hoy en día?",
+     "c": "Busca cómo se hace o se lleva una prenda tradicional y cuéntale a un amigo un detalle sorprendente."
+    },
+    "fr": {
+     "t": "Les vêtements traditionnels",
+     "g": "Découvre ce qu'expriment des tenues traditionnelles comme le kimono, le sari, le kilt et le dirndl.",
+     "p": [
+      "Le kimono japonais se croise gauche sur droite et se noue avec une large ceinture appelée obi.",
+      "Le sari, longue pièce de tissu drapée autour du corps, se porte en Inde, au Népal, au Bangladesh et au Sri Lanka.",
+      "Le kilt écossais arbore souvent un tartan lié à une famille ou une région, et le dirndl est très aimé en Autriche et en Bavière."
+     ],
+     "q": "Existe-t-il une tenue traditionnelle dans ta culture, et quand la porte-t-on aujourd'hui ?",
+     "c": "Renseigne-toi sur la fabrication ou le port d'un vêtement traditionnel et partage un détail surprenant avec un ami."
+    },
+    "it": {
+     "t": "Abiti tradizionali",
+     "g": "Scopri cosa esprimono abiti tradizionali come kimono, sari, kilt e dirndl.",
+     "p": [
+      "Il kimono giapponese si chiude sinistra su destra e si lega con un'ampia fascia chiamata obi.",
+      "Il sari, un lungo tessuto drappeggiato attorno al corpo, si indossa in India, Nepal, Bangladesh e Sri Lanka.",
+      "Il kilt scozzese mostra spesso un tartan legato a una famiglia o a una regione, e il dirndl è amato in Austria e Baviera."
+     ],
+     "q": "Esiste un abito tradizionale nella tua cultura, e quando si indossa oggi?",
+     "c": "Informati su come si realizza o si indossa un capo tradizionale e racconta a un amico un dettaglio sorprendente."
+    },
+    "pt": {
+     "t": "Roupa tradicional",
+     "g": "Descobre o que exprime a roupa tradicional como o quimono, o sári, o kilt e o dirndl.",
+     "p": [
+      "O quimono japonês cruza-se com o lado esquerdo sobre o direito e aperta-se com uma faixa larga chamada obi.",
+      "O sári, um longo tecido enrolado à volta do corpo, usa-se na Índia, no Nepal, no Bangladesh e no Sri Lanka.",
+      "O kilt escocês mostra muitas vezes um tartã ligado a uma família ou região, e o dirndl é muito querido na Áustria e na Baviera."
+     ],
+     "q": "Há um traje tradicional na tua cultura, e quando é que se usa hoje?",
+     "c": "Pesquisa como se faz ou se veste uma peça tradicional e conta a um amigo um pormenor surpreendente."
+    },
+    "pt_BR": {
+     "t": "Roupas tradicionais",
+     "g": "Descubra o que expressam roupas tradicionais como o quimono, o sári, o kilt e o dirndl.",
+     "p": [
+      "O quimono japonês é cruzado com o lado esquerdo sobre o direito e amarrado com uma faixa larga chamada obi.",
+      "O sári, um longo tecido drapeado em volta do corpo, é usado na Índia, no Nepal, em Bangladesh e no Sri Lanka.",
+      "O kilt escocês costuma ter um xadrez tartan ligado a uma família ou região, e o dirndl é muito querido na Áustria e na Baviera."
+     ],
+     "q": "Existe um traje tradicional na sua cultura, e quando as pessoas o usam hoje?",
+     "c": "Pesquise como se faz ou se veste uma peça tradicional e conte a um amigo um detalhe surpreendente."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Colours and their meanings",
+     "g": "Find out why colours like white, red or yellow can mean very different things across cultures.",
+     "p": [
+      "In China red stands for luck and joy, so it fills New Year decorations and many celebrations.",
+      "In many Western countries brides often wear white, while in India brides traditionally wear red.",
+      "In Brazil many people wear white on New Year's Eve to wish for peace in the year ahead."
+     ],
+     "q": "Which colour has a special meaning in your culture, and when do people use it?",
+     "c": "Choose a colour for your day today and look up what it means in two other cultures."
+    },
+    "de": {
+     "t": "Farben und ihre Bedeutung",
+     "g": "Finde heraus, warum Farben wie Weiß, Rot oder Gelb in verschiedenen Kulturen ganz anderes bedeuten können.",
+     "p": [
+      "In China steht Rot für Glück und Freude, deshalb prägt es Neujahrsdekorationen und viele Feiern.",
+      "In vielen westlichen Ländern tragen Bräute oft Weiß, in Indien dagegen traditionell Rot.",
+      "In Brasilien tragen viele Menschen an Silvester Weiß, um sich Frieden für das neue Jahr zu wünschen."
+     ],
+     "q": "Welche Farbe hat in deiner Kultur eine besondere Bedeutung, und wann nutzt man sie?",
+     "c": "Wähle heute eine Farbe für deinen Tag und lies nach, was sie in zwei anderen Kulturen bedeutet."
+    },
+    "es": {
+     "t": "Los colores y sus significados",
+     "g": "Descubre por qué colores como el blanco, el rojo o el amarillo pueden significar cosas muy distintas.",
+     "p": [
+      "En China el rojo representa la suerte y la alegría, por eso llena los adornos de Año Nuevo y muchas fiestas.",
+      "En muchos países occidentales las novias suelen vestir de blanco, mientras que en India visten tradicionalmente de rojo.",
+      "En Brasil mucha gente se viste de blanco en Nochevieja para desear paz en el año que empieza."
+     ],
+     "q": "¿Qué color tiene un significado especial en tu cultura y cuándo se usa?",
+     "c": "Elige hoy un color para tu día y busca qué significa en otras dos culturas."
+    },
+    "fr": {
+     "t": "Les couleurs et leur sens",
+     "g": "Découvre pourquoi des couleurs comme le blanc, le rouge ou le jaune peuvent avoir des sens très différents.",
+     "p": [
+      "En Chine, le rouge symbolise la chance et la joie : il domine les décorations du Nouvel An et bien des fêtes.",
+      "Dans beaucoup de pays occidentaux, les mariées portent souvent du blanc, alors qu'en Inde elles portent traditionnellement du rouge.",
+      "Au Brésil, beaucoup de gens s'habillent en blanc le soir du Nouvel An pour souhaiter la paix pour l'année."
+     ],
+     "q": "Quelle couleur a un sens particulier dans ta culture, et quand l'utilise-t-on ?",
+     "c": "Choisis aujourd'hui une couleur pour ta journée et cherche ce qu'elle signifie dans deux autres cultures."
+    },
+    "it": {
+     "t": "I colori e i loro significati",
+     "g": "Scopri perché colori come il bianco, il rosso o il giallo possono avere significati molto diversi.",
+     "p": [
+      "In Cina il rosso rappresenta fortuna e gioia, per questo riempie le decorazioni del Capodanno e molte feste.",
+      "In molti paesi occidentali le spose vestono spesso di bianco, mentre in India indossano tradizionalmente il rosso.",
+      "In Brasile molte persone si vestono di bianco a Capodanno per augurarsi pace nell'anno nuovo."
+     ],
+     "q": "Quale colore ha un significato speciale nella tua cultura, e quando si usa?",
+     "c": "Scegli oggi un colore per la tua giornata e cerca cosa significa in altre due culture."
+    },
+    "pt": {
+     "t": "As cores e os seus significados",
+     "g": "Descobre porque é que cores como o branco, o vermelho ou o amarelo podem significar coisas muito diferentes.",
+     "p": [
+      "Na China o vermelho representa sorte e alegria, por isso enche as decorações do Ano Novo e muitas festas.",
+      "Em muitos países ocidentais as noivas vestem muitas vezes de branco, enquanto na Índia vestem tradicionalmente de vermelho.",
+      "No Brasil muita gente veste branco na passagem de ano para desejar paz no ano que começa."
+     ],
+     "q": "Que cor tem um significado especial na tua cultura, e quando é que se usa?",
+     "c": "Escolhe hoje uma cor para o teu dia e pesquisa o que significa noutras duas culturas."
+    },
+    "pt_BR": {
+     "t": "As cores e seus significados",
+     "g": "Descubra por que cores como branco, vermelho ou amarelo podem significar coisas bem diferentes.",
+     "p": [
+      "Na China o vermelho representa sorte e alegria, por isso domina as decorações de Ano-Novo e muitas festas.",
+      "Em muitos países ocidentais as noivas costumam usar branco, enquanto na Índia usam tradicionalmente vermelho.",
+      "No Brasil muita gente se veste de branco no Réveillon para desejar paz no ano que começa."
+     ],
+     "q": "Que cor tem um significado especial na sua cultura, e quando as pessoas a usam?",
+     "c": "Escolha hoje uma cor para o seu dia e pesquise o que ela significa em outras duas culturas."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Lucky and unlucky numbers",
+     "g": "Learn why some numbers bring luck in one culture and are avoided in another.",
+     "p": [
+      "In parts of East Asia the number 4 is avoided because it sounds like an unlucky word, so some buildings skip it.",
+      "In China 8 is very lucky because it sounds like the word for prosperity, and the Beijing Olympics opened on 8 August 2008.",
+      "Seven is lucky in many Western cultures, and in Italy 17 is often thought unlucky rather than 13."
+     ],
+     "q": "Do you have a lucky number, and is there a number people avoid where you live?",
+     "c": "Look at today's date and find out whether its numbers are lucky in any culture."
+    },
+    "de": {
+     "t": "Glücks- und Unglückszahlen",
+     "g": "Erfahre, warum manche Zahlen in einer Kultur Glück bringen und in einer anderen gemieden werden.",
+     "p": [
+      "In Teilen Ostasiens meidet man die 4, weil sie wie ein Unglückswort klingt; manche Gebäude lassen sie aus.",
+      "In China gilt die 8 als Glückszahl, weil sie wie das Wort für Wohlstand klingt; Olympia in Peking begann am 8. August 2008.",
+      "Die Sieben bringt in vielen westlichen Kulturen Glück, und in Italien gilt oft eher die 17 als Unglückszahl als die 13."
+     ],
+     "q": "Hast du eine Glückszahl, und gibt es eine Zahl, die man bei dir meidet?",
+     "c": "Schau dir das heutige Datum an und finde heraus, ob seine Zahlen in einer Kultur Glück bringen."
+    },
+    "es": {
+     "t": "Números de la suerte y de la mala suerte",
+     "g": "Aprende por qué algunos números traen suerte en una cultura y se evitan en otra.",
+     "p": [
+      "En partes de Asia oriental se evita el 4 porque suena como una palabra de mala suerte, y algunos edificios se lo saltan.",
+      "En China el 8 da mucha suerte porque suena como la palabra prosperidad; los Juegos de Pekín empezaron el 8 de agosto de 2008.",
+      "El siete trae suerte en muchas culturas occidentales, y en Italia se considera de mala suerte el 17 más que el 13."
+     ],
+     "q": "¿Tienes un número de la suerte y hay algún número que se evite donde vives?",
+     "c": "Mira la fecha de hoy y averigua si sus números traen suerte en alguna cultura."
+    },
+    "fr": {
+     "t": "Nombres porte-bonheur et porte-malheur",
+     "g": "Découvre pourquoi certains nombres portent chance dans une culture et sont évités dans une autre.",
+     "p": [
+      "Dans une partie de l'Asie de l'Est, on évite le 4, qui sonne comme un mot de malheur ; certains immeubles le sautent.",
+      "En Chine, le 8 porte chance car il sonne comme le mot prospérité ; les JO de Pékin ont commencé le 8 août 2008.",
+      "Le sept porte bonheur dans beaucoup de cultures occidentales, et en Italie c'est plutôt le 17 que le 13 qui inquiète."
+     ],
+     "q": "As-tu un nombre porte-bonheur, et y a-t-il un nombre qu'on évite chez toi ?",
+     "c": "Regarde la date du jour et cherche si ses chiffres portent chance dans une culture."
+    },
+    "it": {
+     "t": "Numeri fortunati e sfortunati",
+     "g": "Scopri perché alcuni numeri portano fortuna in una cultura e vengono evitati in un'altra.",
+     "p": [
+      "In parte dell'Asia orientale si evita il 4 perché suona come una parola sfortunata, e alcuni edifici lo saltano.",
+      "In Cina l'8 è fortunatissimo perché suona come la parola prosperità; le Olimpiadi di Pechino iniziarono l'8 agosto 2008.",
+      "Il sette porta fortuna in molte culture occidentali, e in Italia è il 17, più del 13, a essere considerato sfortunato."
+     ],
+     "q": "Hai un numero fortunato, e c'è un numero che si evita dove vivi?",
+     "c": "Guarda la data di oggi e scopri se i suoi numeri portano fortuna in qualche cultura."
+    },
+    "pt": {
+     "t": "Números da sorte e do azar",
+     "g": "Aprende porque é que alguns números dão sorte numa cultura e são evitados noutra.",
+     "p": [
+      "Em partes da Ásia Oriental evita-se o 4, porque soa como uma palavra de azar, e alguns edifícios saltam esse andar.",
+      "Na China o 8 dá muita sorte por soar como a palavra prosperidade; os Jogos de Pequim começaram a 8 de agosto de 2008.",
+      "O sete dá sorte em muitas culturas ocidentais, e em Itália é o 17, mais do que o 13, que é visto como azarento."
+     ],
+     "q": "Tens um número da sorte, e há algum número que se evita onde vives?",
+     "c": "Olha para a data de hoje e descobre se os seus números dão sorte em alguma cultura."
+    },
+    "pt_BR": {
+     "t": "Números da sorte e do azar",
+     "g": "Aprenda por que alguns números dão sorte em uma cultura e são evitados em outra.",
+     "p": [
+      "Em partes da Ásia Oriental se evita o 4, porque soa como uma palavra de azar, e alguns prédios pulam esse andar.",
+      "Na China o 8 dá muita sorte por soar como a palavra prosperidade; os Jogos de Pequim começaram em 8 de agosto de 2008.",
+      "O sete dá sorte em muitas culturas ocidentais, e na Itália é o 17, mais do que o 13, que tem fama de azarento."
+     ],
+     "q": "Você tem um número da sorte, e existe algum número que as pessoas evitam onde você mora?",
+     "c": "Olhe a data de hoje e descubra se os números dela dão sorte em alguma cultura."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Gestures that change meaning",
+     "g": "Learn why gestures like the thumbs up or the OK sign can travel badly.",
+     "p": [
+      "The OK sign with thumb and finger in a circle is friendly in many places but rude in some, such as Brazil.",
+      "A thumbs up means great in many countries, yet in parts of the Middle East and West Africa it can offend.",
+      "In the Philippines and much of Asia, people beckon with the palm down; a curled finger can feel rude."
+     ],
+     "q": "Is there a gesture in your culture that visitors often misunderstand?",
+     "c": "Spend today noticing your own hand gestures and think about which ones might confuse a visitor."
+    },
+    "de": {
+     "t": "Gesten, die ihre Bedeutung ändern",
+     "g": "Erfahre, warum Gesten wie Daumen hoch oder das OK-Zeichen auf Reisen missverstanden werden können.",
+     "p": [
+      "Das OK-Zeichen mit Daumen und Finger im Kreis ist vielerorts freundlich, in manchen Ländern wie Brasilien aber unhöflich.",
+      "Daumen hoch heißt in vielen Ländern super, kann aber in Teilen des Nahen Ostens und Westafrikas beleidigen.",
+      "Auf den Philippinen und in weiten Teilen Asiens winkt man mit der Handfläche nach unten heran; ein gekrümmter Finger wirkt unhöflich."
+     ],
+     "q": "Gibt es in deiner Kultur eine Geste, die Gäste oft missverstehen?",
+     "c": "Achte heute auf deine eigenen Handgesten und überlege, welche einen Gast verwirren könnten."
+    },
+    "es": {
+     "t": "Gestos que cambian de significado",
+     "g": "Aprende por qué gestos como el pulgar arriba o el signo de OK pueden viajar mal.",
+     "p": [
+      "El signo de OK con el pulgar y el índice en círculo es amable en muchos lugares, pero grosero en algunos, como Brasil.",
+      "El pulgar arriba significa genial en muchos países, pero en partes de Oriente Medio y África occidental puede ofender.",
+      "En Filipinas y gran parte de Asia se llama a alguien con la palma hacia abajo; un dedo curvado puede resultar descortés."
+     ],
+     "q": "¿Hay algún gesto de tu cultura que los visitantes suelan malinterpretar?",
+     "c": "Fíjate hoy en tus propios gestos con las manos y piensa cuáles podrían confundir a un visitante."
+    },
+    "fr": {
+     "t": "Les gestes qui changent de sens",
+     "g": "Découvre pourquoi des gestes comme le pouce levé ou le signe OK voyagent parfois mal.",
+     "p": [
+      "Le signe OK, pouce et index en cercle, est aimable dans bien des pays mais grossier dans d'autres, comme au Brésil.",
+      "Le pouce levé veut dire super dans beaucoup de pays, mais peut vexer dans une partie du Moyen-Orient et de l'Afrique de l'Ouest.",
+      "Aux Philippines et dans une grande partie de l'Asie, on fait signe de venir paume vers le bas ; un doigt replié peut sembler impoli."
+     ],
+     "q": "Existe-t-il dans ta culture un geste que les visiteurs comprennent souvent de travers ?",
+     "c": "Observe aujourd'hui tes propres gestes de la main et demande-toi lesquels pourraient dérouter un visiteur."
+    },
+    "it": {
+     "t": "Gesti che cambiano significato",
+     "g": "Scopri perché gesti come il pollice alzato o il segno OK possono viaggiare male.",
+     "p": [
+      "Il segno OK con pollice e indice a cerchio è amichevole in molti paesi ma offensivo in alcuni, come il Brasile.",
+      "Il pollice alzato significa ottimo in molti paesi, ma in parte del Medio Oriente e dell'Africa occidentale può offendere.",
+      "Nelle Filippine e in gran parte dell'Asia si chiama qualcuno con il palmo verso il basso; un dito piegato può sembrare scortese."
+     ],
+     "q": "C'è un gesto della tua cultura che i visitatori fraintendono spesso?",
+     "c": "Osserva oggi i tuoi gesti con le mani e pensa a quali potrebbero confondere un visitatore."
+    },
+    "pt": {
+     "t": "Gestos que mudam de significado",
+     "g": "Aprende porque é que gestos como o polegar para cima ou o sinal de OK podem viajar mal.",
+     "p": [
+      "O sinal de OK com o polegar e o indicador em círculo é simpático em muitos sítios, mas ofensivo noutros, como o Brasil.",
+      "O polegar para cima quer dizer ótimo em muitos países, mas em partes do Médio Oriente e da África Ocidental pode ofender.",
+      "Nas Filipinas e em grande parte da Ásia chama-se alguém com a palma para baixo; um dedo dobrado pode parecer indelicado."
+     ],
+     "q": "Há algum gesto da tua cultura que os visitantes costumam interpretar mal?",
+     "c": "Repara hoje nos teus próprios gestos com as mãos e pensa em quais poderiam confundir um visitante."
+    },
+    "pt_BR": {
+     "t": "Gestos que mudam de significado",
+     "g": "Aprenda por que gestos como o joinha ou o sinal de OK podem viajar mal.",
+     "p": [
+      "O sinal de OK com polegar e indicador em círculo é simpático em muitos lugares, mas ofensivo em alguns, como no Brasil.",
+      "O joinha significa ótimo em muitos países, mas em partes do Oriente Médio e da África Ocidental pode ofender.",
+      "Nas Filipinas e em boa parte da Ásia se chama alguém com a palma para baixo; um dedo dobrado pode parecer falta de educação."
+     ],
+     "q": "Existe algum gesto da sua cultura que os visitantes costumam entender errado?",
+     "c": "Repare hoje nos seus próprios gestos com as mãos e pense em quais poderiam confundir um visitante."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: first steps in culture",
+     "g": "Look back at greetings, names, food and home life from your first month.",
+     "p": [
+      "Culture is like an iceberg: greetings, food and clothes are visible, while values like respect lie beneath.",
+      "You met bows, the wai and cheek kisses, two-surname systems, Icelandic patronymics and the order of names.",
+      "You explored meals, tea and coffee rituals, family life, shoes at the door, colours, numbers and gestures."
+     ],
+     "q": "Which lesson from this first month surprised you the most, and why?",
+     "c": "Explain one custom you learned this month to a friend or family member in your own words."
+    },
+    "de": {
+     "t": "Rückblick: erste Schritte in der Kultur",
+     "g": "Blicke auf Begrüßungen, Namen, Essen und das Leben zu Hause aus deinem ersten Monat zurück.",
+     "p": [
+      "Kultur ist wie ein Eisberg: Begrüßung, Essen und Kleidung sind sichtbar, Werte wie Respekt liegen darunter.",
+      "Du hast Verbeugung, Wai und Wangenküsse kennengelernt, doppelte Nachnamen, isländische Vatersnamen und Namensfolgen.",
+      "Du hast Mahlzeiten, Tee- und Kaffeerituale, Familienleben, Schuhe an der Tür, Farben, Zahlen und Gesten erkundet."
+     ],
+     "q": "Welche Lektion aus diesem ersten Monat hat dich am meisten überrascht und warum?",
+     "c": "Erkläre einem Freund oder Familienmitglied einen Brauch aus diesem Monat in deinen eigenen Worten."
+    },
+    "es": {
+     "t": "Repaso: primeros pasos en la cultura",
+     "g": "Repasa los saludos, los nombres, la comida y la vida en casa de tu primer mes.",
+     "p": [
+      "La cultura es como un iceberg: saludos, comida y ropa se ven, mientras que valores como el respeto están debajo.",
+      "Conociste la reverencia, el wai y los besos, los dos apellidos, los patronímicos islandeses y el orden de los nombres.",
+      "Exploraste comidas, rituales de té y café, la vida familiar, los zapatos en la puerta, colores, números y gestos."
+     ],
+     "q": "¿Qué lección de este primer mes te sorprendió más y por qué?",
+     "c": "Explica con tus propias palabras a un amigo o familiar una costumbre que aprendiste este mes."
+    },
+    "fr": {
+     "t": "Révision : premiers pas dans la culture",
+     "g": "Reviens sur les salutations, les noms, la cuisine et la vie à la maison de ton premier mois.",
+     "p": [
+      "La culture est comme un iceberg : salutations, cuisine et vêtements se voient, des valeurs comme le respect sont dessous.",
+      "Tu as découvert le salut japonais, le wai et la bise, les doubles noms, les patronymes islandais et l'ordre des noms.",
+      "Tu as exploré les repas, les rituels du thé et du café, la famille, les chaussures à la porte, les couleurs, les nombres et les gestes."
+     ],
+     "q": "Quelle leçon de ce premier mois t'a le plus surpris, et pourquoi ?",
+     "c": "Explique avec tes mots une coutume apprise ce mois-ci à un ami ou à un proche."
+    },
+    "it": {
+     "t": "Ripasso: primi passi nella cultura",
+     "g": "Ripercorri saluti, nomi, cibo e vita in casa del tuo primo mese.",
+     "p": [
+      "La cultura è come un iceberg: saluti, cibo e abiti si vedono, mentre valori come il rispetto stanno sotto.",
+      "Hai conosciuto l'inchino, il wai e i baci sulle guance, i doppi cognomi, i patronimici islandesi e l'ordine dei nomi.",
+      "Hai esplorato pasti, riti del tè e del caffè, vita familiare, scarpe alla porta, colori, numeri e gesti."
+     ],
+     "q": "Quale lezione di questo primo mese ti ha sorpreso di più, e perché?",
+     "c": "Spiega con parole tue a un amico o a un familiare un'usanza che hai imparato questo mese."
+    },
+    "pt": {
+     "t": "Revisão: primeiros passos na cultura",
+     "g": "Revê os cumprimentos, os nomes, a comida e a vida em casa do teu primeiro mês.",
+     "p": [
+      "A cultura é como um icebergue: cumprimentos, comida e roupa veem-se, e valores como o respeito estão por baixo.",
+      "Conheceste a vénia, o wai e os beijinhos, os dois apelidos, os patronímicos islandeses e a ordem dos nomes.",
+      "Exploraste refeições, rituais do chá e do café, a vida em família, os sapatos à porta, cores, números e gestos."
+     ],
+     "q": "Que lição deste primeiro mês te surpreendeu mais, e porquê?",
+     "c": "Explica por palavras tuas a um amigo ou familiar um costume que aprendeste este mês."
+    },
+    "pt_BR": {
+     "t": "Revisão: primeiros passos na cultura",
+     "g": "Relembre os cumprimentos, os nomes, a comida e a vida em casa do seu primeiro mês.",
+     "p": [
+      "A cultura é como um iceberg: cumprimentos, comida e roupa aparecem, e valores como o respeito ficam por baixo.",
+      "Você conheceu a reverência, o wai e os beijinhos, os dois sobrenomes, os patronímicos islandeses e a ordem dos nomes.",
+      "Você explorou refeições, rituais de chá e café, vida em família, sapatos na porta, cores, números e gestos."
+     ],
+     "q": "Qual lição deste primeiro mês mais te surpreendeu, e por quê?",
+     "c": "Explique com suas palavras a um amigo ou familiar um costume que você aprendeu este mês."
+    }
+   }
+  }
+ ]
+}

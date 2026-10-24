@@ -1,0 +1,835 @@
+{
+ "topic": "world_cultures",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Welcome to world cultures",
+     "g": "Discover what culture means and why exploring it makes every encounter richer.",
+     "p": [
+      "Culture is the set of shared habits, foods, stories and values that a group of people passes on.",
+      "It shapes small things like how we greet and big things like what we think is polite or important.",
+      "Everyone has a culture, and nobody's culture is the default: each is one way among many to live well."
+     ],
+     "q": "When you think of the word culture, what is the first thing that comes to your mind?",
+     "c": "Write down three things you did today that someone from another country might find new or interesting."
+    },
+    "de": {
+     "t": "Willkommen bei den Kulturen der Welt",
+     "g": "Entdecke, was Kultur bedeutet und warum sie jede Begegnung reicher macht.",
+     "p": [
+      "Kultur sind die gemeinsamen Gewohnheiten, Speisen, Geschichten und Werte, die eine Gruppe weitergibt.",
+      "Sie prägt Kleines wie die Begrüßung und Großes wie die Frage, was als höflich oder wichtig gilt.",
+      "Jeder Mensch hat eine Kultur, und keine ist der Normalfall: Jede ist ein Weg unter vielen, gut zu leben."
+     ],
+     "q": "Woran denkst du als Erstes, wenn du das Wort Kultur hörst?",
+     "c": "Notiere drei Dinge, die du heute getan hast und die jemand aus einem anderen Land neu finden könnte."
+    },
+    "es": {
+     "t": "Bienvenido a las culturas del mundo",
+     "g": "Descubre qué significa cultura y por qué explorarla enriquece cada encuentro.",
+     "p": [
+      "La cultura es el conjunto de hábitos, comidas, historias y valores que un grupo comparte y transmite.",
+      "Influye en lo pequeño, como saludar, y en lo grande, como lo que consideramos educado o importante.",
+      "Todos tenemos una cultura y ninguna es la norma: cada una es una forma entre muchas de vivir bien."
+     ],
+     "q": "Cuando piensas en la palabra cultura, ¿qué es lo primero que te viene a la mente?",
+     "c": "Apunta tres cosas que hiciste hoy que a alguien de otro país le parecerían nuevas o curiosas."
+    },
+    "fr": {
+     "t": "Bienvenue dans les cultures du monde",
+     "g": "Découvre ce que signifie la culture et pourquoi l'explorer enrichit chaque rencontre.",
+     "p": [
+      "La culture, ce sont les habitudes, plats, récits et valeurs qu'un groupe partage et transmet.",
+      "Elle façonne les petites choses, comme saluer, et les grandes, comme ce qui nous semble poli ou important.",
+      "Chacun a une culture et aucune n'est la norme : chacune est une façon parmi d'autres de bien vivre."
+     ],
+     "q": "Quand tu entends le mot culture, quelle est la première chose qui te vient à l'esprit ?",
+     "c": "Note trois choses faites aujourd'hui qu'une personne d'un autre pays pourrait trouver nouvelles."
+    },
+    "it": {
+     "t": "Benvenuto nelle culture del mondo",
+     "g": "Scopri cosa significa cultura e perché esplorarla rende ogni incontro più ricco.",
+     "p": [
+      "La cultura è l'insieme di abitudini, cibi, storie e valori che un gruppo condivide e tramanda.",
+      "Influenza le piccole cose, come salutare, e le grandi, come ciò che riteniamo educato o importante.",
+      "Ognuno ha una cultura e nessuna è la norma: ciascuna è un modo tra tanti di vivere bene."
+     ],
+     "q": "Quando pensi alla parola cultura, qual è la prima cosa che ti viene in mente?",
+     "c": "Annota tre cose che hai fatto oggi che una persona di un altro paese troverebbe nuove o curiose."
+    },
+    "pt": {
+     "t": "Bem-vindo às culturas do mundo",
+     "g": "Descobre o que significa cultura e porque explorá-la torna cada encontro mais rico.",
+     "p": [
+      "A cultura é o conjunto de hábitos, comidas, histórias e valores que um grupo partilha e transmite.",
+      "Molda as pequenas coisas, como cumprimentar, e as grandes, como o que achamos educado ou importante.",
+      "Todos temos uma cultura e nenhuma é a norma: cada uma é uma forma, entre muitas, de viver bem."
+     ],
+     "q": "Quando pensas na palavra cultura, qual é a primeira coisa que te vem à cabeça?",
+     "c": "Escreve três coisas que fizeste hoje que alguém de outro país poderia achar novas ou curiosas."
+    },
+    "pt_BR": {
+     "t": "Boas-vindas às culturas do mundo",
+     "g": "Descubra o que significa cultura e por que explorá-la deixa cada encontro mais rico.",
+     "p": [
+      "Cultura é o conjunto de hábitos, comidas, histórias e valores que um grupo compartilha e transmite.",
+      "Ela molda coisas pequenas, como cumprimentar, e grandes, como o que achamos educado ou importante.",
+      "Todo mundo tem uma cultura e nenhuma é o padrão: cada uma é um jeito, entre muitos, de viver bem."
+     ],
+     "q": "Quando você pensa na palavra cultura, qual é a primeira coisa que vem à sua cabeça?",
+     "c": "Anote três coisas que você fez hoje que alguém de outro país poderia achar novas ou curiosas."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Culture is everywhere",
+     "g": "Learn to spot culture in ordinary daily life, not only in museums and festivals.",
+     "p": [
+      "How you greet a neighbour, what you eat for breakfast and how you queue are all cultural habits.",
+      "Clothes, music on the radio and how you spend Sunday afternoon all carry cultural meaning.",
+      "Culture is learned, not inborn: children absorb it by watching family, friends and their community."
+     ],
+     "q": "Which everyday habit of yours do you think says the most about where you grew up?",
+     "c": "During one meal today, notice three customs around the table that you usually never think about."
+    },
+    "de": {
+     "t": "Kultur ist überall",
+     "g": "Lerne, Kultur im ganz normalen Alltag zu erkennen, nicht nur in Museen und auf Festen.",
+     "p": [
+      "Wie du Nachbarn grüßt, was du frühstückst und wie du Schlange stehst, sind kulturelle Gewohnheiten.",
+      "Kleidung, Musik im Radio und dein Sonntagnachmittag tragen alle eine kulturelle Bedeutung.",
+      "Kultur ist erlernt, nicht angeboren: Kinder übernehmen sie von Familie, Freunden und ihrem Umfeld."
+     ],
+     "q": "Welche Alltagsgewohnheit von dir verrät wohl am meisten darüber, wo du aufgewachsen bist?",
+     "c": "Achte heute bei einer Mahlzeit auf drei Bräuche am Tisch, über die du sonst nie nachdenkst."
+    },
+    "es": {
+     "t": "La cultura está en todas partes",
+     "g": "Aprende a ver la cultura en la vida diaria, no solo en museos y fiestas.",
+     "p": [
+      "Cómo saludas al vecino, qué desayunas y cómo haces cola son hábitos culturales.",
+      "La ropa, la música de la radio y cómo pasas el domingo por la tarde también tienen un significado cultural.",
+      "La cultura se aprende, no se hereda: los niños la absorben observando a su familia, amigos y comunidad."
+     ],
+     "q": "¿Qué costumbre diaria tuya crees que dice más sobre el lugar donde creciste?",
+     "c": "En una comida de hoy, fíjate en tres costumbres de la mesa en las que normalmente nunca piensas."
+    },
+    "fr": {
+     "t": "La culture est partout",
+     "g": "Apprends à repérer la culture dans la vie quotidienne, pas seulement dans les musées et les fêtes.",
+     "p": [
+      "Ta façon de saluer un voisin, ton petit-déjeuner et ta manière de faire la queue sont culturels.",
+      "Les vêtements, la musique à la radio et ton dimanche après-midi ont aussi un sens culturel.",
+      "La culture s'apprend, elle n'est pas innée : les enfants l'absorbent auprès de leur famille et de leur entourage."
+     ],
+     "q": "Quelle habitude quotidienne dit le plus, selon toi, sur l'endroit où tu as grandi ?",
+     "c": "Pendant un repas aujourd'hui, repère trois coutumes de table auxquelles tu ne penses jamais."
+    },
+    "it": {
+     "t": "La cultura è ovunque",
+     "g": "Impara a riconoscere la cultura nella vita di tutti i giorni, non solo nei musei e alle feste.",
+     "p": [
+      "Come saluti un vicino, cosa mangi a colazione e come fai la fila sono abitudini culturali.",
+      "I vestiti, la musica alla radio e come passi la domenica pomeriggio hanno anche un significato culturale.",
+      "La cultura si impara, non è innata: i bambini la assorbono osservando famiglia, amici e comunità."
+     ],
+     "q": "Quale tua abitudine quotidiana pensi dica di più sul luogo in cui sei cresciuto?",
+     "c": "Durante un pasto di oggi, nota tre usanze a tavola a cui di solito non pensi mai."
+    },
+    "pt": {
+     "t": "A cultura está em todo o lado",
+     "g": "Aprende a reconhecer a cultura no dia a dia, não só em museus e festas.",
+     "p": [
+      "A forma como cumprimentas um vizinho, o que comes ao pequeno-almoço e como fazes fila são hábitos culturais.",
+      "A roupa, a música na rádio e a forma como passas o domingo à tarde também têm significado cultural.",
+      "A cultura aprende-se, não é inata: as crianças absorvem-na ao observar a família, os amigos e a comunidade."
+     ],
+     "q": "Que hábito do teu dia a dia achas que diz mais sobre o sítio onde cresceste?",
+     "c": "Numa refeição de hoje, repara em três costumes à mesa em que normalmente nunca pensas."
+    },
+    "pt_BR": {
+     "t": "A cultura está em toda parte",
+     "g": "Aprenda a perceber a cultura no dia a dia, não só em museus e festas.",
+     "p": [
+      "O jeito de cumprimentar o vizinho, o que você come no café da manhã e como faz fila são hábitos culturais.",
+      "A roupa, a música no rádio e como você passa o domingo à tarde também têm significado cultural.",
+      "Cultura se aprende, não nasce com a gente: as crianças a absorvem observando família, amigos e comunidade."
+     ],
+     "q": "Qual hábito do seu dia a dia você acha que diz mais sobre o lugar onde cresceu?",
+     "c": "Em uma refeição de hoje, repare em três costumes à mesa em que você normalmente nem pensa."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The iceberg of culture",
+     "g": "Understand the iceberg model: the visible parts of culture rest on a much larger hidden base.",
+     "p": [
+      "Above the water we see food, clothing, music, festivals and language.",
+      "Below the surface lie ideas about time, respect, family roles, privacy and what counts as polite.",
+      "Most misunderstandings happen below the waterline, so curiosity about values helps more than facts alone."
+     ],
+     "q": "Can you think of a custom that looks simple on the surface but hides a deeper value?",
+     "c": "Pick one visible custom from your culture and write one hidden value that sits beneath it."
+    },
+    "de": {
+     "t": "Der Eisberg der Kultur",
+     "g": "Verstehe das Eisbergmodell: Die sichtbaren Teile der Kultur ruhen auf einem viel größeren verborgenen Teil.",
+     "p": [
+      "Über Wasser sehen wir Essen, Kleidung, Musik, Feste und Sprache.",
+      "Unter der Oberfläche liegen Vorstellungen von Zeit, Respekt, Familienrollen, Privatsphäre und Höflichkeit.",
+      "Die meisten Missverständnisse passieren unter Wasser, daher hilft Neugier auf Werte mehr als reines Faktenwissen."
+     ],
+     "q": "Fällt dir ein Brauch ein, der einfach aussieht, aber einen tieferen Wert verbirgt?",
+     "c": "Wähle einen sichtbaren Brauch deiner Kultur und notiere einen verborgenen Wert, der darunter liegt."
+    },
+    "es": {
+     "t": "El iceberg de la cultura",
+     "g": "Entiende el modelo del iceberg: lo visible de una cultura descansa sobre una base oculta mucho mayor.",
+     "p": [
+      "Sobre el agua vemos la comida, la ropa, la música, las fiestas y el idioma.",
+      "Bajo la superficie están las ideas sobre el tiempo, el respeto, la familia, la privacidad y la cortesía.",
+      "La mayoría de los malentendidos ocurren bajo el agua, por eso la curiosidad por los valores ayuda más que los datos."
+     ],
+     "q": "¿Se te ocurre una costumbre que parece sencilla pero esconde un valor más profundo?",
+     "c": "Elige una costumbre visible de tu cultura y escribe un valor oculto que esté debajo."
+    },
+    "fr": {
+     "t": "L'iceberg de la culture",
+     "g": "Comprends le modèle de l'iceberg : la partie visible d'une culture repose sur une base cachée bien plus grande.",
+     "p": [
+      "Au-dessus de l'eau, on voit la cuisine, les vêtements, la musique, les fêtes et la langue.",
+      "Sous la surface se trouvent les idées sur le temps, le respect, la famille, l'intimité et la politesse.",
+      "La plupart des malentendus naissent sous l'eau : la curiosité pour les valeurs aide plus que les faits seuls."
+     ],
+     "q": "Vois-tu une coutume simple en apparence qui cache une valeur plus profonde ?",
+     "c": "Choisis une coutume visible de ta culture et note une valeur cachée qui se trouve en dessous."
+    },
+    "it": {
+     "t": "L'iceberg della cultura",
+     "g": "Comprendi il modello dell'iceberg: la parte visibile di una cultura poggia su una base nascosta molto più grande.",
+     "p": [
+      "Sopra l'acqua vediamo cibo, abiti, musica, feste e lingua.",
+      "Sotto la superficie ci sono idee sul tempo, sul rispetto, sui ruoli in famiglia, sulla privacy e sulla cortesia.",
+      "La maggior parte dei malintesi nasce sott'acqua, quindi la curiosità per i valori aiuta più dei soli fatti."
+     ],
+     "q": "Ti viene in mente un'usanza che sembra semplice ma nasconde un valore più profondo?",
+     "c": "Scegli un'usanza visibile della tua cultura e scrivi un valore nascosto che sta sotto."
+    },
+    "pt": {
+     "t": "O icebergue da cultura",
+     "g": "Percebe o modelo do icebergue: a parte visível de uma cultura assenta numa base escondida muito maior.",
+     "p": [
+      "Acima da água vemos a comida, a roupa, a música, as festas e a língua.",
+      "Debaixo da superfície estão ideias sobre o tempo, o respeito, a família, a privacidade e a cortesia.",
+      "A maioria dos mal-entendidos acontece debaixo de água, por isso a curiosidade pelos valores ajuda mais do que os factos."
+     ],
+     "q": "Consegues pensar num costume que parece simples mas esconde um valor mais profundo?",
+     "c": "Escolhe um costume visível da tua cultura e escreve um valor escondido que está por baixo dele."
+    },
+    "pt_BR": {
+     "t": "O iceberg da cultura",
+     "g": "Entenda o modelo do iceberg: a parte visível de uma cultura se apoia numa base escondida muito maior.",
+     "p": [
+      "Acima da água vemos comida, roupa, música, festas e idioma.",
+      "Abaixo da superfície estão ideias sobre tempo, respeito, papéis na família, privacidade e educação.",
+      "A maioria dos mal-entendidos acontece debaixo d'água, então a curiosidade pelos valores ajuda mais do que os fatos."
+     ],
+     "q": "Você consegue pensar em um costume que parece simples mas esconde um valor mais profundo?",
+     "c": "Escolha um costume visível da sua cultura e escreva um valor escondido que está por baixo dele."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your own culture first",
+     "g": "See your own customs with fresh eyes, since we often notice them only when we meet someone different.",
+     "p": [
+      "Like fish in water, we rarely notice our own culture until something unfamiliar makes it visible.",
+      "Habits that feel normal to you, like meal times or how loudly people talk, are choices your culture made.",
+      "Knowing your own culture helps you explain it kindly and understand why others may do things differently."
+     ],
+     "q": "What is one thing about your culture that surprised a visitor or a friend from elsewhere?",
+     "c": "Imagine explaining your typical weekend to a visitor and list two things you would need to explain."
+    },
+    "de": {
+     "t": "Zuerst die eigene Kultur",
+     "g": "Sieh deine eigenen Bräuche mit neuen Augen, denn oft fallen sie uns erst im Kontakt mit anderen auf.",
+     "p": [
+      "Wie ein Fisch im Wasser bemerken wir unsere Kultur selten, bis etwas Fremdes sie sichtbar macht.",
+      "Was dir normal vorkommt, etwa Essenszeiten oder Lautstärke beim Reden, hat deine Kultur so gewählt.",
+      "Wer die eigene Kultur kennt, kann sie freundlich erklären und versteht, warum andere es anders machen."
+     ],
+     "q": "Was an deiner Kultur hat einen Gast oder Freund von woanders schon einmal überrascht?",
+     "c": "Stell dir vor, du erklärst einem Gast dein typisches Wochenende, und notiere zwei Dinge, die Erklärung bräuchten."
+    },
+    "es": {
+     "t": "Primero, tu propia cultura",
+     "g": "Mira tus costumbres con ojos nuevos, porque a menudo solo las notamos al conocer a alguien diferente.",
+     "p": [
+      "Como el pez en el agua, rara vez notamos nuestra cultura hasta que algo desconocido la hace visible.",
+      "Lo que te parece normal, como el horario de comidas o el volumen al hablar, es una elección de tu cultura.",
+      "Conocer tu propia cultura te ayuda a explicarla con cariño y a entender por qué otros hacen las cosas distinto."
+     ],
+     "q": "¿Qué cosa de tu cultura ha sorprendido alguna vez a un visitante o a un amigo de fuera?",
+     "c": "Imagina que le explicas tu fin de semana típico a un visitante y apunta dos cosas que tendrías que aclarar."
+    },
+    "fr": {
+     "t": "D'abord ta propre culture",
+     "g": "Regarde tes propres coutumes avec un œil neuf, car on ne les remarque souvent qu'au contact des autres.",
+     "p": [
+      "Comme un poisson dans l'eau, on remarque rarement sa culture jusqu'à ce que l'inconnu la rende visible.",
+      "Ce qui te semble normal, comme l'heure des repas ou le ton de voix, est un choix de ta culture.",
+      "Connaître ta culture t'aide à l'expliquer avec bienveillance et à comprendre pourquoi d'autres font autrement."
+     ],
+     "q": "Quelle chose de ta culture a déjà surpris un visiteur ou un ami venu d'ailleurs ?",
+     "c": "Imagine que tu racontes ton week-end typique à un visiteur et note deux choses qu'il faudrait expliquer."
+    },
+    "it": {
+     "t": "Prima la tua cultura",
+     "g": "Guarda le tue usanze con occhi nuovi, perché spesso le notiamo solo quando incontriamo qualcuno di diverso.",
+     "p": [
+      "Come un pesce nell'acqua, notiamo di rado la nostra cultura finché qualcosa di nuovo non la rende visibile.",
+      "Ciò che ti sembra normale, come gli orari dei pasti o il tono di voce, è una scelta della tua cultura.",
+      "Conoscere la tua cultura ti aiuta a spiegarla con gentilezza e a capire perché altri fanno diversamente."
+     ],
+     "q": "Che cosa della tua cultura ha sorpreso un ospite o un amico venuto da fuori?",
+     "c": "Immagina di raccontare il tuo weekend tipico a un ospite e annota due cose che dovresti spiegare."
+    },
+    "pt": {
+     "t": "Primeiro, a tua cultura",
+     "g": "Olha para os teus costumes com outros olhos, porque muitas vezes só os notamos ao conhecer alguém diferente.",
+     "p": [
+      "Como um peixe na água, raramente notamos a nossa cultura até algo desconhecido a tornar visível.",
+      "O que te parece normal, como a hora das refeições ou o tom de voz, é uma escolha da tua cultura.",
+      "Conhecer a tua cultura ajuda-te a explicá-la com simpatia e a perceber porque é que outros fazem diferente."
+     ],
+     "q": "Que coisa da tua cultura já surpreendeu um visitante ou um amigo de fora?",
+     "c": "Imagina que explicas o teu fim de semana típico a um visitante e anota duas coisas que terias de explicar."
+    },
+    "pt_BR": {
+     "t": "Primeiro, a sua cultura",
+     "g": "Olhe para os seus costumes com outros olhos, porque muitas vezes só os notamos ao conhecer alguém diferente.",
+     "p": [
+      "Como peixe na água, raramente notamos nossa cultura até que algo desconhecido a torne visível.",
+      "O que parece normal para você, como horário das refeições ou tom de voz, é uma escolha da sua cultura.",
+      "Conhecer sua cultura ajuda você a explicá-la com carinho e a entender por que outras pessoas fazem diferente."
+     ],
+     "q": "O que da sua cultura já surpreendeu um visitante ou um amigo de fora?",
+     "c": "Imagine que você explica seu fim de semana típico a um visitante e anote duas coisas que precisaria explicar."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Curiosity over judgement",
+     "g": "Practise replacing quick judgement with friendly curiosity when a custom seems unusual.",
+     "p": [
+      "Asking 'why do they do that?' opens a conversation, while 'that is strange' closes it.",
+      "Most customs make sense once you know the history, climate or values behind them.",
+      "A good habit: describe what you see, think of possible reasons, then ask someone politely."
+     ],
+     "q": "Can you remember a custom that seemed odd to you at first but made sense later?",
+     "c": "The next time something feels unusual today, turn your first thought into a curious question."
+    },
+    "de": {
+     "t": "Neugier statt Urteil",
+     "g": "Übe, schnelle Urteile durch freundliche Neugier zu ersetzen, wenn dir ein Brauch ungewohnt vorkommt.",
+     "p": [
+      "Die Frage ‚Warum machen sie das?' öffnet ein Gespräch, der Satz ‚Das ist komisch' beendet es.",
+      "Die meisten Bräuche ergeben Sinn, sobald man Geschichte, Klima oder Werte dahinter kennt.",
+      "Eine gute Gewohnheit: beschreiben, was du siehst, mögliche Gründe überlegen, dann höflich nachfragen."
+     ],
+     "q": "Erinnerst du dich an einen Brauch, der dir erst seltsam vorkam und später Sinn ergab?",
+     "c": "Wenn dir heute etwas ungewohnt vorkommt, mach aus deinem ersten Gedanken eine neugierige Frage."
+    },
+    "es": {
+     "t": "Curiosidad antes que juicio",
+     "g": "Practica cambiar el juicio rápido por una curiosidad amable cuando una costumbre te parezca rara.",
+     "p": [
+      "Preguntar «¿por qué lo hacen?» abre una conversación; decir «qué raro» la cierra.",
+      "La mayoría de las costumbres tienen sentido cuando conoces la historia, el clima o los valores que hay detrás.",
+      "Un buen hábito: describe lo que ves, piensa en posibles razones y luego pregunta con amabilidad."
+     ],
+     "q": "¿Recuerdas una costumbre que al principio te pareció extraña y luego entendiste?",
+     "c": "La próxima vez que algo te parezca raro hoy, convierte tu primer pensamiento en una pregunta curiosa."
+    },
+    "fr": {
+     "t": "La curiosité avant le jugement",
+     "g": "Entraîne-toi à remplacer le jugement rapide par une curiosité bienveillante face à une coutume inhabituelle.",
+     "p": [
+      "Demander « pourquoi font-ils cela ? » ouvre la conversation, dire « c'est bizarre » la ferme.",
+      "La plupart des coutumes ont du sens dès qu'on connaît l'histoire, le climat ou les valeurs derrière elles.",
+      "Une bonne habitude : décrire ce que tu vois, imaginer des raisons possibles, puis demander poliment."
+     ],
+     "q": "Te souviens-tu d'une coutume qui t'a semblé étrange au début, puis logique ensuite ?",
+     "c": "La prochaine fois qu'une chose te semble inhabituelle aujourd'hui, transforme ta première pensée en question."
+    },
+    "it": {
+     "t": "Curiosità prima del giudizio",
+     "g": "Esercitati a sostituire il giudizio rapido con una curiosità gentile quando un'usanza ti sembra strana.",
+     "p": [
+      "Chiedere «perché lo fanno?» apre una conversazione, dire «che strano» la chiude.",
+      "Quasi tutte le usanze hanno senso quando conosci la storia, il clima o i valori che ci sono dietro.",
+      "Una buona abitudine: descrivi ciò che vedi, pensa a possibili motivi, poi chiedi con garbo."
+     ],
+     "q": "Ricordi un'usanza che all'inizio ti sembrava strana e che poi hai capito?",
+     "c": "La prossima volta che oggi qualcosa ti sembra insolito, trasforma il tuo primo pensiero in una domanda curiosa."
+    },
+    "pt": {
+     "t": "Curiosidade antes do julgamento",
+     "g": "Pratica trocar o julgamento rápido por uma curiosidade simpática quando um costume parece estranho.",
+     "p": [
+      "Perguntar «porque é que fazem isso?» abre uma conversa; dizer «que estranho» fecha-a.",
+      "A maioria dos costumes faz sentido quando conheces a história, o clima ou os valores por trás deles.",
+      "Um bom hábito: descreve o que vês, pensa em razões possíveis e depois pergunta com delicadeza."
+     ],
+     "q": "Lembras-te de um costume que no início te pareceu estranho e que depois percebeste?",
+     "c": "Da próxima vez que algo te pareça estranho hoje, transforma o teu primeiro pensamento numa pergunta curiosa."
+    },
+    "pt_BR": {
+     "t": "Curiosidade antes do julgamento",
+     "g": "Pratique trocar o julgamento rápido por uma curiosidade gentil quando um costume parecer estranho.",
+     "p": [
+      "Perguntar ‘por que fazem isso?’ abre uma conversa; dizer ‘que esquisito’ fecha.",
+      "A maioria dos costumes faz sentido quando você conhece a história, o clima ou os valores por trás deles.",
+      "Um bom hábito: descreva o que vê, pense em motivos possíveis e depois pergunte com gentileza."
+     ],
+     "q": "Você se lembra de um costume que no começo pareceu estranho e depois fez sentido?",
+     "c": "Na próxima vez que algo parecer estranho hoje, transforme seu primeiro pensamento numa pergunta curiosa."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Saying hello around the world",
+     "g": "Explore the many ways people greet each other, from handshakes to bows, kisses and nods.",
+     "p": [
+      "Handshakes are common in business in many countries, but their firmness and length vary.",
+      "Bows are typical in Japan and Korea, and cheek kisses among friends in much of Europe and Latin America.",
+      "When unsure, watch what locals do, let the other person lead and add a warm smile."
+     ],
+     "q": "How do people usually greet each other where you live, and does it change with friends or at work?",
+     "c": "Learn how to say hello in one language you do not speak yet and try it out today."
+    },
+    "de": {
+     "t": "Hallo sagen rund um die Welt",
+     "g": "Entdecke die vielen Arten, sich zu begrüßen: Händeschütteln, Verbeugen, Wangenküsse und Nicken.",
+     "p": [
+      "Händeschütteln ist in vielen Ländern im Beruf üblich, doch Festigkeit und Dauer sind verschieden.",
+      "In Japan und Korea verbeugt man sich, unter Freunden in Teilen Europas und Lateinamerikas gibt es Wangenküsse.",
+      "Im Zweifel beobachte die Einheimischen, lass dein Gegenüber den Anfang machen und lächle freundlich."
+     ],
+     "q": "Wie begrüßt man sich bei dir, und ist das unter Freunden anders als bei der Arbeit?",
+     "c": "Lerne, wie man in einer Sprache, die du noch nicht sprichst, Hallo sagt, und probier es heute aus."
+    },
+    "es": {
+     "t": "Saludar alrededor del mundo",
+     "g": "Explora las muchas formas de saludar: apretones de manos, reverencias, besos en la mejilla y gestos.",
+     "p": [
+      "El apretón de manos es habitual en el trabajo en muchos países, pero su fuerza y duración varían.",
+      "En Japón y Corea se hace una reverencia; entre amigos, en gran parte de Europa y Latinoamérica, se dan besos.",
+      "Si dudas, observa a la gente local, deja que la otra persona empiece y añade una sonrisa cálida."
+     ],
+     "q": "¿Cómo se saluda la gente donde vives? ¿Cambia entre amigos o en el trabajo?",
+     "c": "Aprende a decir hola en un idioma que aún no hablas y pruébalo hoy."
+    },
+    "fr": {
+     "t": "Dire bonjour dans le monde",
+     "g": "Explore les nombreuses façons de saluer : poignée de main, révérence, bise et signe de tête.",
+     "p": [
+      "La poignée de main est courante au travail dans beaucoup de pays, mais sa fermeté et sa durée varient.",
+      "On s'incline au Japon et en Corée ; entre amis, la bise est fréquente en Europe et en Amérique latine.",
+      "Dans le doute, observe les gens du coin, laisse l'autre personne commencer et ajoute un sourire."
+     ],
+     "q": "Comment se salue-t-on chez toi, et est-ce différent entre amis et au travail ?",
+     "c": "Apprends à dire bonjour dans une langue que tu ne parles pas encore et essaie-la aujourd'hui."
+    },
+    "it": {
+     "t": "Salutarsi nel mondo",
+     "g": "Esplora i tanti modi di salutarsi: strette di mano, inchini, baci sulle guance e cenni del capo.",
+     "p": [
+      "La stretta di mano è comune al lavoro in molti paesi, ma forza e durata cambiano.",
+      "In Giappone e Corea ci si inchina; tra amici, in gran parte d'Europa e America Latina, ci si bacia sulle guance.",
+      "Nel dubbio osserva le persone del posto, lascia che sia l'altro a iniziare e aggiungi un bel sorriso."
+     ],
+     "q": "Come ci si saluta dove vivi? Cambia tra amici e al lavoro?",
+     "c": "Impara a dire ciao in una lingua che non parli ancora e provala oggi."
+    },
+    "pt": {
+     "t": "Cumprimentar pelo mundo",
+     "g": "Explora as muitas formas de cumprimentar: aperto de mão, vénia, beijinhos na cara e acenos.",
+     "p": [
+      "O aperto de mão é comum no trabalho em muitos países, mas a força e a duração variam.",
+      "No Japão e na Coreia faz-se uma vénia; entre amigos, em grande parte da Europa e da América Latina, dão-se beijinhos.",
+      "Na dúvida, observa as pessoas locais, deixa a outra pessoa começar e junta um sorriso caloroso."
+     ],
+     "q": "Como se cumprimentam as pessoas onde vives? Muda entre amigos e no trabalho?",
+     "c": "Aprende a dizer olá numa língua que ainda não falas e experimenta hoje."
+    },
+    "pt_BR": {
+     "t": "Cumprimentos pelo mundo",
+     "g": "Explore as muitas formas de cumprimentar: aperto de mão, reverência, beijinho no rosto e aceno.",
+     "p": [
+      "O aperto de mão é comum no trabalho em muitos países, mas a força e a duração variam.",
+      "No Japão e na Coreia se faz reverência; entre amigos, em boa parte da Europa e da América Latina, rola beijinho.",
+      "Na dúvida, observe as pessoas do lugar, deixe a outra pessoa começar e capriche no sorriso."
+     ],
+     "q": "Como as pessoas se cumprimentam onde você mora? Muda entre amigos e no trabalho?",
+     "c": "Aprenda a dizer olá em um idioma que você ainda não fala e experimente hoje."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The Japanese bow",
+     "g": "Learn how bowing shows respect in Japan and how its depth carries meaning.",
+     "p": [
+      "A light bow of about 15 degrees is a casual hello; deeper bows show more respect or a sincere apology.",
+      "People bow with a straight back, and often men keep hands at their sides and women hold them in front.",
+      "Visitors are not expected to be perfect: a small, sincere bow with a smile is warmly received."
+     ],
+     "q": "Is there a gesture in your culture that, like the bow, shows respect without words?",
+     "c": "Try a gentle 15-degree bow in front of a mirror and say the Japanese greeting konnichiwa."
+    },
+    "de": {
+     "t": "Die japanische Verbeugung",
+     "g": "Erfahre, wie die Verbeugung in Japan Respekt zeigt und wie ihre Tiefe Bedeutung trägt.",
+     "p": [
+      "Eine leichte Verbeugung von etwa 15 Grad ist ein lockerer Gruß; tiefere zeigen mehr Respekt oder eine Entschuldigung.",
+      "Man verbeugt sich mit geradem Rücken; Männer halten die Hände oft seitlich, Frauen oft vor dem Körper.",
+      "Von Gästen erwartet niemand Perfektion: Eine kleine, ehrliche Verbeugung mit Lächeln kommt herzlich an."
+     ],
+     "q": "Gibt es in deiner Kultur eine Geste, die wie die Verbeugung ohne Worte Respekt zeigt?",
+     "c": "Probiere vor dem Spiegel eine sanfte Verbeugung von 15 Grad und sag dazu den japanischen Gruß konnichiwa."
+    },
+    "es": {
+     "t": "La reverencia japonesa",
+     "g": "Aprende cómo la reverencia muestra respeto en Japón y cómo su profundidad tiene significado.",
+     "p": [
+      "Una inclinación leve de unos 15 grados es un saludo informal; las más profundas muestran más respeto o una disculpa.",
+      "Se hace con la espalda recta; los hombres suelen tener las manos a los lados y las mujeres delante.",
+      "A los visitantes no se les pide perfección: una pequeña reverencia sincera con una sonrisa se agradece mucho."
+     ],
+     "q": "¿Hay algún gesto en tu cultura que, como la reverencia, muestre respeto sin palabras?",
+     "c": "Prueba frente al espejo una reverencia suave de 15 grados y di el saludo japonés konnichiwa."
+    },
+    "fr": {
+     "t": "La révérence japonaise",
+     "g": "Découvre comment le salut incliné exprime le respect au Japon et pourquoi sa profondeur compte.",
+     "p": [
+      "Une légère inclinaison d'environ 15 degrés est un salut simple ; plus profonde, elle marque le respect ou des excuses.",
+      "On s'incline le dos droit ; les hommes gardent souvent les mains le long du corps, les femmes devant elles.",
+      "On n'attend pas la perfection des visiteurs : un petit salut sincère avec un sourire est très apprécié."
+     ],
+     "q": "Existe-t-il dans ta culture un geste qui, comme le salut japonais, montre le respect sans mots ?",
+     "c": "Essaie devant un miroir une douce inclinaison de 15 degrés en disant le salut japonais konnichiwa."
+    },
+    "it": {
+     "t": "L'inchino giapponese",
+     "g": "Scopri come l'inchino esprime rispetto in Giappone e perché la sua profondità ha un significato.",
+     "p": [
+      "Un inchino leggero di circa 15 gradi è un saluto informale; quelli più profondi mostrano rispetto o scuse sincere.",
+      "Ci si inchina con la schiena dritta; gli uomini tengono spesso le mani lungo i fianchi, le donne davanti.",
+      "Ai visitatori non si chiede la perfezione: un piccolo inchino sincero con un sorriso è molto apprezzato."
+     ],
+     "q": "Nella tua cultura c'è un gesto che, come l'inchino, mostra rispetto senza parole?",
+     "c": "Prova allo specchio un inchino leggero di 15 gradi e pronuncia il saluto giapponese konnichiwa."
+    },
+    "pt": {
+     "t": "A vénia japonesa",
+     "g": "Aprende como a vénia mostra respeito no Japão e como a sua profundidade tem significado.",
+     "p": [
+      "Uma vénia leve, de cerca de 15 graus, é um olá informal; as mais profundas mostram mais respeito ou um pedido de desculpa.",
+      "Faz-se com as costas direitas; os homens costumam ter as mãos ao lado do corpo e as mulheres à frente.",
+      "Ninguém espera perfeição de um visitante: uma pequena vénia sincera com um sorriso é muito bem recebida."
+     ],
+     "q": "Há algum gesto na tua cultura que, como a vénia, mostre respeito sem palavras?",
+     "c": "Experimenta ao espelho uma vénia suave de 15 graus e diz o cumprimento japonês konnichiwa."
+    },
+    "pt_BR": {
+     "t": "A reverência japonesa",
+     "g": "Aprenda como a reverência mostra respeito no Japão e como a sua profundidade tem significado.",
+     "p": [
+      "Uma reverência leve, de uns 15 graus, é um oi informal; as mais profundas mostram mais respeito ou um pedido de desculpas.",
+      "Ela é feita com as costas retas; os homens costumam deixar as mãos ao lado do corpo e as mulheres na frente.",
+      "Ninguém espera perfeição de um visitante: uma pequena reverência sincera com um sorriso é muito bem-vinda."
+     ],
+     "q": "Existe algum gesto na sua cultura que, como a reverência, mostre respeito sem palavras?",
+     "c": "Experimente no espelho uma reverência suave de 15 graus e diga o cumprimento japonês konnichiwa."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Cheek kisses in Europe and Latin America",
+     "g": "Find out how cheek kisses work and when a handshake is the safer choice.",
+     "p": [
+      "The number varies: often two in Spain and Italy, one in much of Latin America, and in France it depends on the region.",
+      "Usually the cheeks barely touch and the kiss is a light sound in the air rather than a real kiss.",
+      "In business or with someone new, a handshake is safer; let the other person show what they prefer."
+     ],
+     "q": "How many cheek kisses, if any, are normal where you live, and with whom?",
+     "c": "Ask a friend from another country or region how they greet friends and compare it with your way."
+    },
+    "de": {
+     "t": "Wangenküsse in Europa und Lateinamerika",
+     "g": "Finde heraus, wie Wangenküsse funktionieren und wann ein Handschlag die sicherere Wahl ist.",
+     "p": [
+      "Die Zahl variiert: oft zwei in Spanien und Italien, einer in weiten Teilen Lateinamerikas, in Frankreich je nach Region.",
+      "Meist berühren sich die Wangen nur leicht, und der Kuss ist eher ein Geräusch in der Luft als ein echter Kuss.",
+      "Im Beruf oder bei Fremden ist ein Handschlag sicherer; lass dein Gegenüber zeigen, was es bevorzugt."
+     ],
+     "q": "Wie viele Wangenküsse sind bei dir üblich, wenn überhaupt, und mit wem?",
+     "c": "Frag eine Person aus einem anderen Land oder einer anderen Region, wie sie Freunde begrüßt, und vergleiche."
+    },
+    "es": {
+     "t": "Besos en la mejilla en Europa y Latinoamérica",
+     "g": "Descubre cómo funcionan los besos en la mejilla y cuándo es mejor un apretón de manos.",
+     "p": [
+      "El número varía: suelen ser dos en España e Italia, uno en gran parte de Latinoamérica, y en Francia depende de la región.",
+      "Normalmente las mejillas apenas se rozan y el beso es más un sonido en el aire que un beso real.",
+      "En el trabajo o con alguien nuevo, el apretón de manos es más seguro; deja que la otra persona marque el estilo."
+     ],
+     "q": "¿Cuántos besos se dan donde vives, si es que se dan, y con quién?",
+     "c": "Pregunta a alguien de otro país o región cómo saluda a sus amigos y compáralo con tu forma."
+    },
+    "fr": {
+     "t": "La bise en Europe et en Amérique latine",
+     "g": "Découvre comment fonctionne la bise et quand une poignée de main est le choix le plus sûr.",
+     "p": [
+      "Le nombre varie : souvent deux en Espagne et en Italie, une dans une grande partie de l'Amérique latine, et selon la région en France.",
+      "En général, les joues se frôlent à peine et la bise est plutôt un petit bruit dans l'air qu'un vrai baiser.",
+      "Au travail ou avec une personne nouvelle, la poignée de main est plus sûre ; laisse l'autre montrer sa préférence."
+     ],
+     "q": "Combien de bises se fait-on chez toi, s'il y en a, et avec qui ?",
+     "c": "Demande à quelqu'un d'un autre pays ou d'une autre région comment il salue ses amis et compare."
+    },
+    "it": {
+     "t": "Baci sulle guance in Europa e America Latina",
+     "g": "Scopri come funzionano i baci sulle guance e quando la stretta di mano è la scelta più sicura.",
+     "p": [
+      "Il numero varia: spesso due in Spagna e in Italia, uno in gran parte dell'America Latina, in Francia dipende dalla regione.",
+      "Di solito le guance si sfiorano appena e il bacio è più un suono nell'aria che un vero bacio.",
+      "Al lavoro o con qualcuno di nuovo è meglio la stretta di mano; lascia che sia l'altro a mostrare cosa preferisce."
+     ],
+     "q": "Quanti baci sulle guance si danno dove vivi, se si danno, e con chi?",
+     "c": "Chiedi a una persona di un altro paese o regione come saluta gli amici e confrontalo con il tuo modo."
+    },
+    "pt": {
+     "t": "Beijinhos na Europa e na América Latina",
+     "g": "Descobre como funcionam os beijinhos na cara e quando um aperto de mão é a escolha mais segura.",
+     "p": [
+      "O número varia: em Portugal, Espanha e Itália costumam ser dois, em grande parte da América Latina um, e em França depende da região.",
+      "Normalmente as caras mal se tocam e o beijinho é mais um som no ar do que um beijo verdadeiro.",
+      "No trabalho ou com alguém novo, o aperto de mão é mais seguro; deixa a outra pessoa mostrar o que prefere."
+     ],
+     "q": "Quantos beijinhos se dão onde vives, se se dão, e a quem?",
+     "c": "Pergunta a alguém de outro país ou região como cumprimenta os amigos e compara com a tua forma."
+    },
+    "pt_BR": {
+     "t": "Beijinhos na Europa e na América Latina",
+     "g": "Descubra como funciona o beijinho no rosto e quando um aperto de mão é a escolha mais segura.",
+     "p": [
+      "O número varia: dois na Espanha e na Itália, um em boa parte da América Latina; no Brasil depende da cidade e na França, da região.",
+      "Normalmente os rostos mal se encostam e o beijinho é mais um som no ar do que um beijo de verdade.",
+      "No trabalho ou com alguém novo, o aperto de mão é mais seguro; deixe a outra pessoa mostrar o que prefere."
+     ],
+     "q": "Quantos beijinhos são comuns onde você mora, se forem, e com quem?",
+     "c": "Pergunte a alguém de outro país ou região como cumprimenta os amigos e compare com o seu jeito."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The Thai wai",
+     "g": "Discover the wai, Thailand's graceful greeting with palms pressed together and a slight bow.",
+     "p": [
+      "To wai, press your palms together near your chest and bow your head slightly.",
+      "The higher the hands and the deeper the bow, the more respect is shown, for example to elders or monks.",
+      "Usually the younger person wais first; returning a wai with a smile is the kind response."
+     ],
+     "q": "Which greeting from another culture would you most like to try, and why?",
+     "c": "Practise a wai today and say the Thai greeting sawasdee, which is widely used to say hello."
+    },
+    "de": {
+     "t": "Das thailändische Wai",
+     "g": "Entdecke das Wai, Thailands anmutigen Gruß mit aneinandergelegten Handflächen und leichter Verbeugung.",
+     "p": [
+      "Für das Wai legst du die Handflächen vor der Brust zusammen und neigst leicht den Kopf.",
+      "Je höher die Hände und je tiefer die Verbeugung, desto mehr Respekt, etwa gegenüber Älteren oder Mönchen.",
+      "Meist grüßt die jüngere Person zuerst; ein Wai mit einem Lächeln zu erwidern ist die freundliche Antwort."
+     ],
+     "q": "Welchen Gruß aus einer anderen Kultur würdest du am liebsten ausprobieren und warum?",
+     "c": "Übe heute ein Wai und sag dazu den thailändischen Gruß sawasdee, mit dem man Hallo sagt."
+    },
+    "es": {
+     "t": "El wai tailandés",
+     "g": "Descubre el wai, el elegante saludo tailandés con las palmas juntas y una leve inclinación.",
+     "p": [
+      "Para hacer el wai, junta las palmas cerca del pecho e inclina un poco la cabeza.",
+      "Cuanto más altas las manos y más profunda la inclinación, más respeto se muestra, por ejemplo a mayores o monjes.",
+      "Normalmente saluda primero la persona más joven; devolver el wai con una sonrisa es la respuesta amable."
+     ],
+     "q": "¿Qué saludo de otra cultura te gustaría probar más y por qué?",
+     "c": "Practica hoy un wai y di el saludo tailandés sawasdee, que se usa mucho para decir hola."
+    },
+    "fr": {
+     "t": "Le wai thaïlandais",
+     "g": "Découvre le wai, le salut gracieux de la Thaïlande, paumes jointes et légère inclinaison.",
+     "p": [
+      "Pour faire le wai, joins les paumes près de la poitrine et incline légèrement la tête.",
+      "Plus les mains sont hautes et l'inclinaison profonde, plus on montre de respect, par exemple aux aînés ou aux moines.",
+      "En général, la personne la plus jeune salue en premier ; rendre le wai avec un sourire est la réponse aimable."
+     ],
+     "q": "Quel salut d'une autre culture aimerais-tu le plus essayer, et pourquoi ?",
+     "c": "Entraîne-toi au wai aujourd'hui en disant le salut thaï sawasdee, très utilisé pour dire bonjour."
+    },
+    "it": {
+     "t": "Il wai thailandese",
+     "g": "Scopri il wai, l'elegante saluto thailandese a mani giunte con un leggero inchino.",
+     "p": [
+      "Per fare il wai, unisci i palmi vicino al petto e china leggermente la testa.",
+      "Più le mani sono alte e l'inchino profondo, più rispetto si mostra, ad esempio agli anziani o ai monaci.",
+      "Di solito saluta per prima la persona più giovane; ricambiare il wai con un sorriso è la risposta gentile."
+     ],
+     "q": "Quale saluto di un'altra cultura ti piacerebbe di più provare, e perché?",
+     "c": "Esercitati oggi con un wai e pronuncia il saluto thailandese sawasdee, molto usato per dire ciao."
+    },
+    "pt": {
+     "t": "O wai tailandês",
+     "g": "Descobre o wai, o elegante cumprimento tailandês com as palmas juntas e uma leve vénia.",
+     "p": [
+      "Para fazer o wai, junta as palmas perto do peito e inclina ligeiramente a cabeça.",
+      "Quanto mais altas as mãos e mais funda a vénia, mais respeito se mostra, por exemplo aos mais velhos ou aos monges.",
+      "Normalmente cumprimenta primeiro a pessoa mais nova; retribuir o wai com um sorriso é a resposta simpática."
+     ],
+     "q": "Que cumprimento de outra cultura gostavas mais de experimentar, e porquê?",
+     "c": "Pratica hoje um wai e diz o cumprimento tailandês sawasdee, muito usado para dizer olá."
+    },
+    "pt_BR": {
+     "t": "O wai tailandês",
+     "g": "Descubra o wai, o elegante cumprimento tailandês com as palmas unidas e uma leve reverência.",
+     "p": [
+      "Para fazer o wai, una as palmas perto do peito e incline levemente a cabeça.",
+      "Quanto mais altas as mãos e mais profunda a reverência, mais respeito se mostra, por exemplo a idosos ou monges.",
+      "Normalmente a pessoa mais jovem cumprimenta primeiro; retribuir o wai com um sorriso é a resposta gentil."
+     ],
+     "q": "Qual cumprimento de outra cultura você mais gostaria de experimentar, e por quê?",
+     "c": "Pratique hoje um wai e diga o cumprimento tailandês sawasdee, muito usado para dizer olá."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Names and how we use them",
+     "g": "Learn how the order of names, nicknames and titles changes from culture to culture.",
+     "p": [
+      "In China, Japan, Korea and Hungary the family name usually comes first, then the given name.",
+      "Titles matter in many places: in Japan people often add -san to a name, and in Germany Herr or Frau is common.",
+      "If you are unsure how to address someone, simply ask: 'How would you like me to call you?'"
+     ],
+     "q": "What does your name mean, and do people use a nickname or a title for you?",
+     "c": "Ask someone today how their name is written or pronounced in their own language."
+    },
+    "de": {
+     "t": "Namen und wie wir sie verwenden",
+     "g": "Erfahre, wie sich Reihenfolge der Namen, Spitznamen und Titel von Kultur zu Kultur ändern.",
+     "p": [
+      "In China, Japan, Korea und Ungarn steht meist der Familienname zuerst, dann der Vorname.",
+      "Titel sind vielerorts wichtig: In Japan hängt man oft -san an den Namen, in Deutschland sagt man Herr oder Frau.",
+      "Wenn du unsicher bist, wie du jemanden ansprechen sollst, frag einfach: ‚Wie darf ich dich nennen?'"
+     ],
+     "q": "Was bedeutet dein Name, und nutzen andere für dich einen Spitznamen oder Titel?",
+     "c": "Frag heute jemanden, wie sein Name in seiner eigenen Sprache geschrieben oder ausgesprochen wird."
+    },
+    "es": {
+     "t": "Los nombres y cómo los usamos",
+     "g": "Aprende cómo el orden de los nombres, los apodos y los títulos cambian de una cultura a otra.",
+     "p": [
+      "En China, Japón, Corea y Hungría el apellido suele ir primero y luego el nombre de pila.",
+      "Los títulos importan en muchos lugares: en Japón se añade -san al nombre y en Alemania se usa Herr o Frau.",
+      "Si no sabes cómo dirigirte a alguien, pregunta sin más: «¿Cómo quieres que te llame?»"
+     ],
+     "q": "¿Qué significa tu nombre y la gente usa contigo un apodo o un título?",
+     "c": "Pregunta hoy a alguien cómo se escribe o se pronuncia su nombre en su propio idioma."
+    },
+    "fr": {
+     "t": "Les noms et leur usage",
+     "g": "Découvre comment l'ordre des noms, les surnoms et les titres changent d'une culture à l'autre.",
+     "p": [
+      "En Chine, au Japon, en Corée et en Hongrie, le nom de famille vient généralement avant le prénom.",
+      "Les titres comptent souvent : au Japon on ajoute -san au nom, en Allemagne on dit Herr ou Frau.",
+      "Si tu ne sais pas comment t'adresser à quelqu'un, demande simplement : « Comment veux-tu que je t'appelle ? »"
+     ],
+     "q": "Que signifie ton prénom, et les gens utilisent-ils un surnom ou un titre pour toi ?",
+     "c": "Demande aujourd'hui à quelqu'un comment son nom s'écrit ou se prononce dans sa propre langue."
+    },
+    "it": {
+     "t": "I nomi e come li usiamo",
+     "g": "Scopri come l'ordine dei nomi, i soprannomi e i titoli cambiano da una cultura all'altra.",
+     "p": [
+      "In Cina, Giappone, Corea e Ungheria il cognome di solito viene prima del nome.",
+      "I titoli contano in molti luoghi: in Giappone si aggiunge -san al nome, in Germania si usa Herr o Frau.",
+      "Se non sai come rivolgerti a qualcuno, chiedi semplicemente: «Come preferisci che ti chiami?»"
+     ],
+     "q": "Cosa significa il tuo nome, e le persone usano un soprannome o un titolo per te?",
+     "c": "Chiedi oggi a qualcuno come si scrive o si pronuncia il suo nome nella sua lingua."
+    },
+    "pt": {
+     "t": "Os nomes e como os usamos",
+     "g": "Aprende como a ordem dos nomes, as alcunhas e os títulos mudam de cultura para cultura.",
+     "p": [
+      "Na China, no Japão, na Coreia e na Hungria o apelido de família costuma vir primeiro e depois o nome próprio.",
+      "Os títulos contam em muitos sítios: no Japão junta-se -san ao nome e na Alemanha usa-se Herr ou Frau.",
+      "Se não sabes como tratar alguém, pergunta simplesmente: «Como preferes que te chame?»"
+     ],
+     "q": "O que significa o teu nome, e as pessoas usam uma alcunha ou um título contigo?",
+     "c": "Pergunta hoje a alguém como se escreve ou pronuncia o seu nome na sua própria língua."
+    },
+    "pt_BR": {
+     "t": "Os nomes e como os usamos",
+     "g": "Aprenda como a ordem dos nomes, os apelidos e os títulos mudam de cultura para cultura.",
+     "p": [
+      "Na China, no Japão, na Coreia e na Hungria o sobrenome costuma vir primeiro e depois o nome.",
+      "Títulos importam em muitos lugares: no Japão se acrescenta -san ao nome e na Alemanha se usa Herr ou Frau.",
+      "Se não souber como chamar alguém, pergunte simplesmente: ‘Como você prefere que eu te chame?’"
+     ],
+     "q": "O que significa o seu nome, e as pessoas usam um apelido ou um título com você?",
+     "c": "Pergunte hoje a alguém como se escreve ou se pronuncia o nome dela na própria língua."
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_german",
+ "lessons": [
+  {
+   "d": 301,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Writing an essay: body",
+     "g": "Build the main part of an essay with clear arguments, examples and transitions.",
+     "p": [
+      "One paragraph, one argument: state it, explain it, prove it. Ein wichtiges Argument für... ist, dass...",
+      "Back it up with an example: Dies zeigt sich zum Beispiel daran, dass... / Ein gutes Beispiel dafür ist...",
+      "Transitions guide the reader: außerdem, darüber hinaus, hingegen, demgegenüber, trotzdem."
+     ],
+     "q": "Give me one argument for and one against working from home, joined with hingegen.",
+     "c": "Write two body paragraphs on a topic you like, each with an argument, an example and a transition."
+    },
+    "de": {
+     "t": "Einen Aufsatz schreiben: der Hauptteil",
+     "g": "Du baust den Hauptteil mit klaren Argumenten, Beispielen und Überleitungen.",
+     "p": [
+      "Ein Absatz, ein Argument: nennen, erklären, belegen. Ein wichtiges Argument für... ist, dass...",
+      "Stütze es mit einem Beispiel: Dies zeigt sich zum Beispiel daran, dass... / Ein gutes Beispiel dafür ist...",
+      "Überleitungen führen den Leser: außerdem, darüber hinaus, hingegen, demgegenüber, trotzdem."
+     ],
+     "q": "Nenn mir ein Argument für und eins gegen Homeoffice, verbunden mit hingegen.",
+     "c": "Schreib zwei Absätze zu einem Thema deiner Wahl, jeweils mit Argument, Beispiel und Überleitung."
+    },
+    "es": {
+     "t": "Escribir un ensayo: el desarrollo",
+     "g": "Construye el cuerpo del ensayo con argumentos claros, ejemplos y transiciones.",
+     "p": [
+      "Un párrafo, un argumento: enúncialo, explícalo, demuéstralo. Ein wichtiges Argument für... ist, dass...",
+      "Apóyalo con un ejemplo: Dies zeigt sich zum Beispiel daran, dass... / Ein gutes Beispiel dafür ist...",
+      "Los conectores guían al lector: außerdem, darüber hinaus, hingegen, demgegenüber, trotzdem."
+     ],
+     "q": "Dame un argumento a favor y otro en contra del teletrabajo, unidos con hingegen.",
+     "c": "Escribe dos párrafos sobre un tema que te guste, cada uno con argumento, ejemplo y conector."
+    },
+    "fr": {
+     "t": "Écrire une dissertation : le développement",
+     "g": "Construire le développement avec des arguments clairs, des exemples et des transitions.",
+     "p": [
+      "Un paragraphe, un argument : l'énoncer, l'expliquer, le prouver. Ein wichtiges Argument für... ist, dass...",
+      "Appuie-le d'un exemple : Dies zeigt sich zum Beispiel daran, dass... / Ein gutes Beispiel dafür ist...",
+      "Les transitions guident le lecteur : außerdem, darüber hinaus, hingegen, demgegenüber, trotzdem."
+     ],
+     "q": "Donne-moi un argument pour et un contre le télétravail, reliés par hingegen.",
+     "c": "Écris deux paragraphes sur un sujet qui te plaît, chacun avec argument, exemple et transition."
+    },
+    "it": {
+     "t": "Scrivere un saggio: lo svolgimento",
+     "g": "Costruisci il corpo del saggio con argomenti chiari, esempi e passaggi logici.",
+     "p": [
+      "Un paragrafo, un argomento: enuncialo, spiegalo, dimostralo. Ein wichtiges Argument für... ist, dass...",
+      "Sostienilo con un esempio: Dies zeigt sich zum Beispiel daran, dass... / Ein gutes Beispiel dafür ist...",
+      "I connettivi guidano il lettore: außerdem, darüber hinaus, hingegen, demgegenüber, trotzdem."
+     ],
+     "q": "Dammi un argomento a favore e uno contro il lavoro da casa, uniti con hingegen.",
+     "c": "Scrivi due paragrafi su un tema che ti piace, ognuno con argomento, esempio e connettivo."
+    },
+    "pt": {
+     "t": "Escrever um ensaio: o desenvolvimento",
+     "g": "Construir o corpo do ensaio com argumentos claros, exemplos e transições.",
+     "p": [
+      "Um parágrafo, um argumento: apresenta-o, explica-o, prova-o. Ein wichtiges Argument für... ist, dass...",
+      "Apoia-o com um exemplo: Dies zeigt sich zum Beispiel daran, dass... / Ein gutes Beispiel dafür ist...",
+      "As transições guiam o leitor: außerdem, darüber hinaus, hingegen, demgegenüber, trotzdem."
+     ],
+     "q": "Dá-me um argumento a favor e outro contra o teletrabalho, ligados com hingegen.",
+     "c": "Escreve dois parágrafos sobre um tema de que gostes, cada um com argumento, exemplo e transição."
+    },
+    "pt_BR": {
+     "t": "Escrever uma redação: o desenvolvimento",
+     "g": "Construir o corpo da redação com argumentos claros, exemplos e transições.",
+     "p": [
+      "Um parágrafo, um argumento: apresente, explique, comprove. Ein wichtiges Argument für... ist, dass...",
+      "Apoie com um exemplo: Dies zeigt sich zum Beispiel daran, dass... / Ein gutes Beispiel dafür ist...",
+      "Os conectivos guiam o leitor: außerdem, darüber hinaus, hingegen, demgegenüber, trotzdem."
+     ],
+     "q": "Me dê um argumento a favor e outro contra o home office, ligados com hingegen.",
+     "c": "Escreva dois parágrafos sobre um tema de que você goste, cada um com argumento, exemplo e conectivo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "der Hauptteil",
+      "ex": "Im Hauptteil stelle ich meine Argumente dar."
+     },
+     {
+      "w": "das Argument",
+      "ex": "Ein wichtiges Argument für das Homeoffice ist die gesparte Zeit."
+     },
+     {
+      "w": "belegen",
+      "ex": "Diese These lässt sich mit Zahlen belegen."
+     },
+     {
+      "w": "darüber hinaus",
+      "ex": "Darüber hinaus schont weniger Verkehr die Umwelt."
+     },
+     {
+      "w": "hingegen",
+      "ex": "Viele genießen die Ruhe, andere hingegen vermissen ihre Kollegen."
+     },
+     {
+      "w": "Dies zeigt sich daran, dass ...",
+      "ex": "Dies zeigt sich daran, dass immer mehr Firmen flexible Modelle anbieten."
+     }
+    ],
+    "gram": "Überleitungen: außerdem, darüber hinaus (Verb folgt direkt: Darüber hinaus spart man Zeit); hingegen oft nach dem Subjekt."
+   }
+  },
+  {
+   "d": 302,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Writing an essay: conclusion",
+     "g": "End an essay well: sum up, give your own view and look ahead.",
+     "p": [
+      "Summary: Zusammenfassend lässt sich sagen, dass... / Insgesamt zeigt sich, dass... Repeat the key points briefly.",
+      "Your view: Meiner Ansicht nach überwiegen die Vorteile. / Ich persönlich halte... für sinnvoll.",
+      "A look ahead: Es bleibt abzuwarten, ob... / In Zukunft wird es darauf ankommen, ... No new arguments here!"
+     ],
+     "q": "Sum up in one sentence what you think about learning languages with apps, starting with Zusammenfassend.",
+     "c": "Write a conclusion of 50 to 70 words for yesterday's essay: summary, your view and a look ahead."
+    },
+    "de": {
+     "t": "Einen Aufsatz schreiben: der Schluss",
+     "g": "Du beendest einen Aufsatz gut: Zusammenfassung, eigene Meinung, Ausblick.",
+     "p": [
+      "Zusammenfassung: Zusammenfassend lässt sich sagen, dass... / Insgesamt zeigt sich, dass... Kurz die Kernpunkte wiederholen.",
+      "Eigene Meinung: Meiner Ansicht nach überwiegen die Vorteile. / Ich persönlich halte... für sinnvoll.",
+      "Ausblick: Es bleibt abzuwarten, ob... / In Zukunft wird es darauf ankommen, ... Hier keine neuen Argumente!"
+     ],
+     "q": "Fass in einem Satz zusammen, was du vom Sprachenlernen mit Apps hältst, beginnend mit Zusammenfassend.",
+     "c": "Schreib einen Schluss von 50 bis 70 Wörtern zu deinem Aufsatz von gestern: Fazit, Meinung, Ausblick."
+    },
+    "es": {
+     "t": "Escribir un ensayo: la conclusión",
+     "g": "Termina bien un ensayo: resume, da tu opinión y mira hacia el futuro.",
+     "p": [
+      "Resumen: Zusammenfassend lässt sich sagen, dass... / Insgesamt zeigt sich, dass... Repite brevemente lo esencial.",
+      "Tu opinión: Meiner Ansicht nach überwiegen die Vorteile. / Ich persönlich halte... für sinnvoll.",
+      "Perspectiva: Es bleibt abzuwarten, ob... / In Zukunft wird es darauf ankommen, ... ¡Aquí nada de argumentos nuevos!"
+     ],
+     "q": "Resume en una frase qué piensas de aprender idiomas con apps, empezando con Zusammenfassend.",
+     "c": "Escribe una conclusión de 50 a 70 palabras para el ensayo de ayer: resumen, opinión y perspectiva."
+    },
+    "fr": {
+     "t": "Écrire une dissertation : la conclusion",
+     "g": "Bien conclure : résumer, donner son avis et ouvrir une perspective.",
+     "p": [
+      "Bilan : Zusammenfassend lässt sich sagen, dass... / Insgesamt zeigt sich, dass... Reprends brièvement l'essentiel.",
+      "Ton avis : Meiner Ansicht nach überwiegen die Vorteile. / Ich persönlich halte... für sinnvoll.",
+      "Ouverture : Es bleibt abzuwarten, ob... / In Zukunft wird es darauf ankommen, ... Pas de nouvel argument ici !"
+     ],
+     "q": "Résume en une phrase ce que tu penses des applis pour apprendre les langues, en commençant par Zusammenfassend.",
+     "c": "Écris une conclusion de 50 à 70 mots pour ta dissertation d'hier : bilan, avis et ouverture."
+    },
+    "it": {
+     "t": "Scrivere un saggio: la conclusione",
+     "g": "Concludi bene un saggio: riassumi, dai la tua opinione e guarda avanti.",
+     "p": [
+      "Sintesi: Zusammenfassend lässt sich sagen, dass... / Insgesamt zeigt sich, dass... Riprendi in breve i punti chiave.",
+      "La tua opinione: Meiner Ansicht nach überwiegen die Vorteile. / Ich persönlich halte... für sinnvoll.",
+      "Prospettiva: Es bleibt abzuwarten, ob... / In Zukunft wird es darauf ankommen, ... Niente argomenti nuovi qui!"
+     ],
+     "q": "Riassumi in una frase cosa pensi delle app per imparare le lingue, iniziando con Zusammenfassend.",
+     "c": "Scrivi una conclusione di 50-70 parole per il saggio di ieri: sintesi, opinione e prospettiva."
+    },
+    "pt": {
+     "t": "Escrever um ensaio: a conclusão",
+     "g": "Terminar bem um ensaio: resumir, dar a tua opinião e olhar para o futuro.",
+     "p": [
+      "Resumo: Zusammenfassend lässt sich sagen, dass... / Insgesamt zeigt sich, dass... Retoma brevemente o essencial.",
+      "A tua opinião: Meiner Ansicht nach überwiegen die Vorteile. / Ich persönlich halte... für sinnvoll.",
+      "Perspetiva: Es bleibt abzuwarten, ob... / In Zukunft wird es darauf ankommen, ... Aqui, nada de argumentos novos!"
+     ],
+     "q": "Resume numa frase o que pensas de aprender línguas com aplicações, começando com Zusammenfassend.",
+     "c": "Escreve uma conclusão de 50 a 70 palavras para o ensaio de ontem: resumo, opinião e perspetiva."
+    },
+    "pt_BR": {
+     "t": "Escrever uma redação: a conclusão",
+     "g": "Terminar bem uma redação: resumir, dar sua opinião e olhar para o futuro.",
+     "p": [
+      "Resumo: Zusammenfassend lässt sich sagen, dass... / Insgesamt zeigt sich, dass... Retome brevemente o essencial.",
+      "Sua opinião: Meiner Ansicht nach überwiegen die Vorteile. / Ich persönlich halte... für sinnvoll.",
+      "Perspectiva: Es bleibt abzuwarten, ob... / In Zukunft wird es darauf ankommen, ... Aqui, nada de argumentos novos!"
+     ],
+     "q": "Resuma numa frase o que você acha de aprender idiomas com aplicativos, começando com Zusammenfassend.",
+     "c": "Escreva uma conclusão de 50 a 70 palavras para a redação de ontem: resumo, opinião e perspectiva."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "der Schluss",
+      "ex": "Im Schluss fasse ich die wichtigsten Punkte zusammen."
+     },
+     {
+      "w": "zusammenfassend",
+      "ex": "Zusammenfassend lässt sich sagen, dass beide Seiten recht haben."
+     },
+     {
+      "w": "überwiegen",
+      "ex": "Meiner Ansicht nach überwiegen die Vorteile deutlich."
+     },
+     {
+      "w": "das Fazit",
+      "ex": "Mein Fazit fällt positiv aus."
+     },
+     {
+      "w": "der Ausblick",
+      "ex": "Zum Schluss gebe ich einen kurzen Ausblick."
+     },
+     {
+      "w": "Es bleibt abzuwarten, ob ...",
+      "ex": "Es bleibt abzuwarten, ob sich das Modell durchsetzt."
+     }
+    ],
+    "gram": "lässt sich + Infinitiv als Passiversatz: Zusammenfassend lässt sich sagen, dass... (= kann gesagt werden)."
+   }
+  },
+  {
+   "d": 303,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Formal letter of complaint",
+     "g": "Write a firm but polite complaint with a clear structure.",
+     "p": [
+      "Structure: Betreff, Sehr geehrte Damen und Herren, the facts, your demand, Mit freundlichen Grüßen.",
+      "Facts first, calmly: Am 3. Mai habe ich bei Ihnen... bestellt. Leider musste ich feststellen, dass...",
+      "Firm demand: Ich bitte Sie daher, ... / Ich erwarte eine Erstattung bis zum... Stay polite, never rude."
+     ],
+     "q": "A hotel room was noisy all night. How would you start the complaint after the greeting?",
+     "c": "Write a complaint of about 100 words about a parcel that arrived damaged, with a clear demand and deadline."
+    },
+    "de": {
+     "t": "Formeller Beschwerdebrief",
+     "g": "Du schreibst eine bestimmte, aber höfliche Beschwerde mit klarem Aufbau.",
+     "p": [
+      "Aufbau: Betreff, Sehr geehrte Damen und Herren, Sachverhalt, Forderung, Mit freundlichen Grüßen.",
+      "Erst sachlich die Fakten: Am 3. Mai habe ich bei Ihnen... bestellt. Leider musste ich feststellen, dass...",
+      "Klare Forderung: Ich bitte Sie daher, ... / Ich erwarte eine Erstattung bis zum... Höflich bleiben, nie unhöflich."
+     ],
+     "q": "Ein Hotelzimmer war die ganze Nacht laut. Wie beginnst du die Beschwerde nach der Anrede?",
+     "c": "Schreib eine Beschwerde von etwa 100 Wörtern über ein beschädigtes Paket, mit Forderung und Frist."
+    },
+    "es": {
+     "t": "Carta formal de reclamación",
+     "g": "Escribe una reclamación firme pero cortés y bien estructurada.",
+     "p": [
+      "Estructura: Betreff, Sehr geehrte Damen und Herren, los hechos, tu petición, Mit freundlichen Grüßen.",
+      "Primero los hechos, con calma: Am 3. Mai habe ich bei Ihnen... bestellt. Leider musste ich feststellen, dass...",
+      "Petición firme: Ich bitte Sie daher, ... / Ich erwarte eine Erstattung bis zum... Educado siempre, nunca grosero."
+     ],
+     "q": "Una habitación de hotel fue ruidosa toda la noche. ¿Cómo empezarías la queja tras el saludo?",
+     "c": "Escribe una reclamación de unas 100 palabras por un paquete que llegó dañado, con petición y plazo."
+    },
+    "fr": {
+     "t": "Lettre de réclamation formelle",
+     "g": "Rédiger une réclamation ferme mais polie, bien structurée.",
+     "p": [
+      "Structure : Betreff, Sehr geehrte Damen und Herren, les faits, ta demande, Mit freundlichen Grüßen.",
+      "D'abord les faits, calmement : Am 3. Mai habe ich bei Ihnen... bestellt. Leider musste ich feststellen, dass...",
+      "Demande ferme : Ich bitte Sie daher, ... / Ich erwarte eine Erstattung bis zum... Reste poli, jamais grossier."
+     ],
+     "q": "Une chambre d'hôtel a été bruyante toute la nuit. Comment commencerais-tu la réclamation après la formule d'appel ?",
+     "c": "Écris une réclamation d'environ 100 mots pour un colis arrivé abîmé, avec une demande et un délai."
+    },
+    "it": {
+     "t": "Lettera formale di reclamo",
+     "g": "Scrivi un reclamo fermo ma cortese, con una struttura chiara.",
+     "p": [
+      "Struttura: Betreff, Sehr geehrte Damen und Herren, i fatti, la richiesta, Mit freundlichen Grüßen.",
+      "Prima i fatti, con calma: Am 3. Mai habe ich bei Ihnen... bestellt. Leider musste ich feststellen, dass...",
+      "Richiesta ferma: Ich bitte Sie daher, ... / Ich erwarte eine Erstattung bis zum... Sempre cortese, mai scortese."
+     ],
+     "q": "Una camera d'albergo è stata rumorosa tutta la notte. Come inizieresti il reclamo dopo il saluto?",
+     "c": "Scrivi un reclamo di circa 100 parole per un pacco arrivato danneggiato, con richiesta e scadenza."
+    },
+    "pt": {
+     "t": "Carta formal de reclamação",
+     "g": "Escrever uma reclamação firme mas educada, com estrutura clara.",
+     "p": [
+      "Estrutura: Betreff, Sehr geehrte Damen und Herren, os factos, o teu pedido, Mit freundlichen Grüßen.",
+      "Primeiro os factos, com calma: Am 3. Mai habe ich bei Ihnen... bestellt. Leider musste ich feststellen, dass...",
+      "Pedido firme: Ich bitte Sie daher, ... / Ich erwarte eine Erstattung bis zum... Sempre educado, nunca rude."
+     ],
+     "q": "Um quarto de hotel foi barulhento a noite toda. Como começarias a reclamação depois da saudação?",
+     "c": "Escreve uma reclamação de cerca de 100 palavras sobre uma encomenda danificada, com pedido e prazo."
+    },
+    "pt_BR": {
+     "t": "Carta formal de reclamação",
+     "g": "Escrever uma reclamação firme mas educada, com estrutura clara.",
+     "p": [
+      "Estrutura: Betreff, Sehr geehrte Damen und Herren, os fatos, seu pedido, Mit freundlichen Grüßen.",
+      "Primeiro os fatos, com calma: Am 3. Mai habe ich bei Ihnen... bestellt. Leider musste ich feststellen, dass...",
+      "Pedido firme: Ich bitte Sie daher, ... / Ich erwarte eine Erstattung bis zum... Sempre educado, nunca grosseiro."
+     ],
+     "q": "Um quarto de hotel ficou barulhento a noite toda. Como você começaria a reclamação depois da saudação?",
+     "c": "Escreva uma reclamação de umas 100 palavras sobre uma encomenda que chegou danificada, com pedido e prazo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "die Beschwerde",
+      "ex": "Ich möchte mich über die Lieferung beschweren."
+     },
+     {
+      "w": "der Betreff",
+      "ex": "Betreff: Beschwerde über meine Bestellung Nr. 4521"
+     },
+     {
+      "w": "feststellen",
+      "ex": "Leider musste ich feststellen, dass das Gerät nicht funktioniert."
+     },
+     {
+      "w": "die Erstattung",
+      "ex": "Ich bitte um eine vollständige Erstattung des Kaufpreises."
+     },
+     {
+      "w": "die Frist",
+      "ex": "Bitte antworten Sie innerhalb einer Frist von zwei Wochen."
+     },
+     {
+      "w": "Ich bitte Sie daher, ...",
+      "ex": "Ich bitte Sie daher, mir umgehend Ersatz zu schicken."
+     }
+    ],
+    "gram": "Formelle Bitte: Ich bitte Sie, ... zu + Infinitiv; Ich wäre Ihnen dankbar, wenn Sie... könnten (Konjunktiv II)."
+   }
+  },
+  {
+   "d": 304,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Cover letter in German",
+     "g": "Write das Anschreiben: the German cover letter, with its structure and key phrases.",
+     "p": [
+      "Structure: your address, the company, date, Betreff, greeting, introduction, motivation, skills, closing.",
+      "Opening: Mit großem Interesse habe ich Ihre Stellenanzeige gelesen. Avoid the old cliché Hiermit bewerbe ich mich.",
+      "Skills with proof: Durch meine Tätigkeit bei... konnte ich... End: Über eine Einladung zu einem Vorstellungsgespräch freue ich mich."
+     ],
+     "q": "What would be your first sentence in a cover letter for your dream job?",
+     "c": "Write the opening and the skills paragraph of a cover letter, about 80 words, for a job you would enjoy."
+    },
+    "de": {
+     "t": "Das Anschreiben",
+     "g": "Du schreibst ein Anschreiben mit klarem Aufbau und den wichtigsten Wendungen.",
+     "p": [
+      "Aufbau: deine Adresse, Firma, Datum, Betreff, Anrede, Einstieg, Motivation, Qualifikationen, Schluss.",
+      "Einstieg: Mit großem Interesse habe ich Ihre Stellenanzeige gelesen. Vermeide die Floskel Hiermit bewerbe ich mich.",
+      "Qualifikationen mit Beleg: Durch meine Tätigkeit bei... konnte ich... Schluss: Über eine Einladung zu einem Gespräch freue ich mich."
+     ],
+     "q": "Wie lautet dein erster Satz in einem Anschreiben für deinen Traumjob?",
+     "c": "Schreib Einstieg und Qualifikationsabsatz eines Anschreibens, etwa 80 Wörter, für eine Stelle, die dir gefallen würde."
+    },
+    "es": {
+     "t": "La carta de presentación en alemán",
+     "g": "Escribe das Anschreiben: la carta de presentación alemana, con su estructura y frases clave.",
+     "p": [
+      "Estructura: tu dirección, la empresa, fecha, Betreff, saludo, introducción, motivación, competencias, cierre.",
+      "Inicio: Mit großem Interesse habe ich Ihre Stellenanzeige gelesen. Evita el tópico Hiermit bewerbe ich mich.",
+      "Competencias con pruebas: Durch meine Tätigkeit bei... konnte ich... Cierre: Über eine Einladung zu einem Gespräch freue ich mich."
+     ],
+     "q": "¿Cuál sería tu primera frase en una carta para el trabajo de tus sueños?",
+     "c": "Escribe el inicio y el párrafo de competencias de una carta, unas 80 palabras, para un puesto que te guste."
+    },
+    "fr": {
+     "t": "La lettre de motivation en allemand",
+     "g": "Rédiger das Anschreiben : la lettre de motivation allemande, sa structure et ses formules clés.",
+     "p": [
+      "Structure : ton adresse, l'entreprise, la date, Betreff, formule d'appel, introduction, motivation, compétences, fin.",
+      "Accroche : Mit großem Interesse habe ich Ihre Stellenanzeige gelesen. Évite le cliché Hiermit bewerbe ich mich.",
+      "Compétences prouvées : Durch meine Tätigkeit bei... konnte ich... Fin : Über eine Einladung zu einem Gespräch freue ich mich."
+     ],
+     "q": "Quelle serait ta première phrase dans une lettre pour le poste de tes rêves ?",
+     "c": "Écris l'accroche et le paragraphe compétences d'une lettre, environ 80 mots, pour un poste qui te plairait."
+    },
+    "it": {
+     "t": "La lettera di presentazione in tedesco",
+     "g": "Scrivi das Anschreiben: la lettera di presentazione tedesca, con struttura e frasi chiave.",
+     "p": [
+      "Struttura: tuo indirizzo, azienda, data, Betreff, saluto, introduzione, motivazione, competenze, chiusura.",
+      "Apertura: Mit großem Interesse habe ich Ihre Stellenanzeige gelesen. Evita il cliché Hiermit bewerbe ich mich.",
+      "Competenze con prove: Durch meine Tätigkeit bei... konnte ich... Chiusura: Über eine Einladung zu einem Gespräch freue ich mich."
+     ],
+     "q": "Quale sarebbe la tua prima frase in una lettera per il lavoro dei tuoi sogni?",
+     "c": "Scrivi l'apertura e il paragrafo sulle competenze di una lettera, circa 80 parole, per un lavoro che ti piacerebbe."
+    },
+    "pt": {
+     "t": "A carta de apresentação em alemão",
+     "g": "Escrever das Anschreiben: a carta de apresentação alemã, com estrutura e frases-chave.",
+     "p": [
+      "Estrutura: a tua morada, a empresa, data, Betreff, saudação, introdução, motivação, competências, fecho.",
+      "Início: Mit großem Interesse habe ich Ihre Stellenanzeige gelesen. Evita o cliché Hiermit bewerbe ich mich.",
+      "Competências com provas: Durch meine Tätigkeit bei... konnte ich... Fecho: Über eine Einladung zu einem Gespräch freue ich mich."
+     ],
+     "q": "Qual seria a tua primeira frase numa carta para o emprego dos teus sonhos?",
+     "c": "Escreve o início e o parágrafo de competências de uma carta, cerca de 80 palavras, para um emprego de que gostasses."
+    },
+    "pt_BR": {
+     "t": "A carta de apresentação em alemão",
+     "g": "Escrever das Anschreiben: a carta de apresentação alemã, com estrutura e frases-chave.",
+     "p": [
+      "Estrutura: seu endereço, a empresa, data, Betreff, saudação, introdução, motivação, competências, fechamento.",
+      "Início: Mit großem Interesse habe ich Ihre Stellenanzeige gelesen. Evite o clichê Hiermit bewerbe ich mich.",
+      "Competências com provas: Durch meine Tätigkeit bei... konnte ich... Fecho: Über eine Einladung zu einem Gespräch freue ich mich."
+     ],
+     "q": "Qual seria sua primeira frase numa carta para o emprego dos seus sonhos?",
+     "c": "Escreva o início e o parágrafo de competências de uma carta, umas 80 palavras, para uma vaga de que você gostaria."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "das Anschreiben",
+      "ex": "Ein gutes Anschreiben passt genau zur Stelle."
+     },
+     {
+      "w": "die Stellenanzeige",
+      "ex": "Mit großem Interesse habe ich Ihre Stellenanzeige gelesen."
+     },
+     {
+      "w": "die Tätigkeit",
+      "ex": "Durch meine Tätigkeit im Vertrieb kenne ich viele Kunden."
+     },
+     {
+      "w": "die Qualifikation",
+      "ex": "Meine Qualifikationen passen gut zu Ihren Anforderungen."
+     },
+     {
+      "w": "sich bewerben um",
+      "ex": "Ich bewerbe mich um die Stelle als Projektleiterin."
+     },
+     {
+      "w": "das Vorstellungsgespräch",
+      "ex": "Über eine Einladung zu einem Vorstellungsgespräch freue ich mich sehr."
+     }
+    ],
+    "gram": "Über + Akkusativ freue ich mich: Über eine Einladung freue ich mich. Durch + Akkusativ für Erfahrungen: Durch meine Arbeit lernte ich..."
+   }
+  },
+  {
+   "d": 305,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Job interview advanced",
+     "g": "Handle the big interview questions: yourself, strengths and weaknesses, goals.",
+     "p": [
+      "Erzählen Sie von sich: a short story, not your CV. Nach meinem Studium habe ich... Seitdem...",
+      "Strengths and weaknesses: Zu meinen Stärken zählt... An meiner Schwäche arbeite ich, indem ich...",
+      "Goals: In fünf Jahren sehe ich mich... / Ich möchte mich gern weiterentwickeln im Bereich..."
+     ],
+     "q": "Erzählen Sie von sich! Answer me in three or four sentences, as in a real interview.",
+     "c": "Prepare and say aloud answers to three questions: about yourself, one strength with an example, one goal."
+    },
+    "de": {
+     "t": "Vorstellungsgespräch für Fortgeschrittene",
+     "g": "Du meisterst die großen Fragen: über dich, Stärken und Schwächen, Ziele.",
+     "p": [
+      "Erzählen Sie von sich: eine kurze Geschichte, kein Lebenslauf. Nach meinem Studium habe ich... Seitdem...",
+      "Stärken und Schwächen: Zu meinen Stärken zählt... An meiner Schwäche arbeite ich, indem ich...",
+      "Ziele: In fünf Jahren sehe ich mich... / Ich möchte mich gern im Bereich... weiterentwickeln."
+     ],
+     "q": "Erzählen Sie von sich! Antworte mir in drei oder vier Sätzen wie in einem echten Gespräch.",
+     "c": "Bereite drei Antworten vor und sprich sie laut: über dich, eine Stärke mit Beispiel, ein Ziel."
+    },
+    "es": {
+     "t": "Entrevista de trabajo avanzada",
+     "g": "Afronta las grandes preguntas: hablar de ti, fortalezas y debilidades, metas.",
+     "p": [
+      "Erzählen Sie von sich: una historia breve, no tu currículum. Nach meinem Studium habe ich... Seitdem...",
+      "Fortalezas y debilidades: Zu meinen Stärken zählt... An meiner Schwäche arbeite ich, indem ich...",
+      "Metas: In fünf Jahren sehe ich mich... / Ich möchte mich gern im Bereich... weiterentwickeln."
+     ],
+     "q": "Erzählen Sie von sich! Respóndeme en tres o cuatro frases, como en una entrevista real.",
+     "c": "Prepara y di en voz alta tres respuestas: sobre ti, una fortaleza con ejemplo y una meta."
+    },
+    "fr": {
+     "t": "Entretien d'embauche avancé",
+     "g": "Maîtriser les grandes questions : se présenter, forces et faiblesses, objectifs.",
+     "p": [
+      "Erzählen Sie von sich : une courte histoire, pas ton CV. Nach meinem Studium habe ich... Seitdem...",
+      "Forces et faiblesses : Zu meinen Stärken zählt... An meiner Schwäche arbeite ich, indem ich...",
+      "Objectifs : In fünf Jahren sehe ich mich... / Ich möchte mich gern im Bereich... weiterentwickeln."
+     ],
+     "q": "Erzählen Sie von sich ! Réponds-moi en trois ou quatre phrases, comme dans un vrai entretien.",
+     "c": "Prépare et dis à voix haute trois réponses : sur toi, une force avec exemple, un objectif."
+    },
+    "it": {
+     "t": "Colloquio di lavoro avanzato",
+     "g": "Affronta le grandi domande: parlare di sé, punti di forza e deboli, obiettivi.",
+     "p": [
+      "Erzählen Sie von sich: una breve storia, non il curriculum. Nach meinem Studium habe ich... Seitdem...",
+      "Forze e debolezze: Zu meinen Stärken zählt... An meiner Schwäche arbeite ich, indem ich...",
+      "Obiettivi: In fünf Jahren sehe ich mich... / Ich möchte mich gern im Bereich... weiterentwickeln."
+     ],
+     "q": "Erzählen Sie von sich! Rispondimi in tre o quattro frasi, come in un vero colloquio.",
+     "c": "Prepara e di' ad alta voce tre risposte: su di te, un punto di forza con esempio, un obiettivo."
+    },
+    "pt": {
+     "t": "Entrevista de emprego avançada",
+     "g": "Dominar as grandes perguntas: falar de ti, pontos fortes e fracos, objetivos.",
+     "p": [
+      "Erzählen Sie von sich: uma história curta, não o currículo. Nach meinem Studium habe ich... Seitdem...",
+      "Pontos fortes e fracos: Zu meinen Stärken zählt... An meiner Schwäche arbeite ich, indem ich...",
+      "Objetivos: In fünf Jahren sehe ich mich... / Ich möchte mich gern im Bereich... weiterentwickeln."
+     ],
+     "q": "Erzählen Sie von sich! Responde-me em três ou quatro frases, como numa entrevista real.",
+     "c": "Prepara e diz em voz alta três respostas: sobre ti, um ponto forte com exemplo, um objetivo."
+    },
+    "pt_BR": {
+     "t": "Entrevista de emprego avançada",
+     "g": "Dominar as grandes perguntas: falar de você, pontos fortes e fracos, metas.",
+     "p": [
+      "Erzählen Sie von sich: uma história curta, não o currículo. Nach meinem Studium habe ich... Seitdem...",
+      "Pontos fortes e fracos: Zu meinen Stärken zählt... An meiner Schwäche arbeite ich, indem ich...",
+      "Metas: In fünf Jahren sehe ich mich... / Ich möchte mich gern im Bereich... weiterentwickeln."
+     ],
+     "q": "Erzählen Sie von sich! Me responda em três ou quatro frases, como numa entrevista de verdade.",
+     "c": "Prepare e diga em voz alta três respostas: sobre você, um ponto forte com exemplo e uma meta."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "die Stärke",
+      "ex": "Zu meinen Stärken zählt meine Geduld."
+     },
+     {
+      "w": "die Schwäche",
+      "ex": "An meiner Schwäche arbeite ich jeden Tag."
+     },
+     {
+      "w": "sich weiterentwickeln",
+      "ex": "Ich möchte mich im Bereich Marketing weiterentwickeln."
+     },
+     {
+      "w": "die Berufserfahrung",
+      "ex": "Ich habe fünf Jahre Berufserfahrung in der Logistik."
+     },
+     {
+      "w": "belastbar",
+      "ex": "Auch unter Zeitdruck bin ich belastbar."
+     },
+     {
+      "w": "teamfähig",
+      "ex": "Als Trainerin habe ich gelernt, teamfähig zu sein."
+     }
+    ],
+    "gram": "indem + Nebensatz für die Methode: Ich arbeite daran, indem ich Kurse besuche. Zu meinen Stärken zählt + Nominativ."
+   }
+  },
+  {
+   "d": 306,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Negotiating",
+     "g": "Make an offer, find a compromise and reach an agreement in German.",
+     "p": [
+      "Making an offer: Ich könnte Ihnen... anbieten. / Was halten Sie von folgendem Vorschlag?",
+      "Meeting halfway: Wie wäre es, wenn wir uns in der Mitte treffen? / Unter der Bedingung, dass..., bin ich einverstanden.",
+      "Agreeing: Dann sind wir uns einig. / Abgemacht! / Lassen Sie uns das schriftlich festhalten."
+     ],
+     "q": "You want to sell your bike for 300 euros, I offer 200. What do you suggest?",
+     "c": "Role-play a negotiation with yourself: a flatmate and you share chores. Write four lines ending in an agreement."
+    },
+    "de": {
+     "t": "Verhandeln",
+     "g": "Du machst ein Angebot, findest einen Kompromiss und einigst dich.",
+     "p": [
+      "Ein Angebot machen: Ich könnte Ihnen... anbieten. / Was halten Sie von folgendem Vorschlag?",
+      "Entgegenkommen: Wie wäre es, wenn wir uns in der Mitte treffen? / Unter der Bedingung, dass..., bin ich einverstanden.",
+      "Sich einigen: Dann sind wir uns einig. / Abgemacht! / Lassen Sie uns das schriftlich festhalten."
+     ],
+     "q": "Du willst dein Fahrrad für 300 Euro verkaufen, ich biete 200. Was schlägst du vor?",
+     "c": "Spiel eine Verhandlung durch: Du und ein Mitbewohner teilt die Hausarbeit. Schreib vier Zeilen bis zur Einigung."
+    },
+    "es": {
+     "t": "Negociar",
+     "g": "Haz una oferta, busca un compromiso y llega a un acuerdo en alemán.",
+     "p": [
+      "Hacer una oferta: Ich könnte Ihnen... anbieten. / Was halten Sie von folgendem Vorschlag?",
+      "Ceder un poco: Wie wäre es, wenn wir uns in der Mitte treffen? / Unter der Bedingung, dass..., bin ich einverstanden.",
+      "Llegar a un acuerdo: Dann sind wir uns einig. / Abgemacht! / Lassen Sie uns das schriftlich festhalten."
+     ],
+     "q": "Quieres vender tu bici por 300 euros y yo ofrezco 200. ¿Qué propones?",
+     "c": "Simula una negociación: tú y un compañero de piso repartís las tareas. Escribe cuatro líneas hasta el acuerdo."
+    },
+    "fr": {
+     "t": "Négocier",
+     "g": "Faire une offre, trouver un compromis et se mettre d'accord en allemand.",
+     "p": [
+      "Faire une offre : Ich könnte Ihnen... anbieten. / Was halten Sie von folgendem Vorschlag?",
+      "Faire un pas : Wie wäre es, wenn wir uns in der Mitte treffen? / Unter der Bedingung, dass..., bin ich einverstanden.",
+      "Conclure : Dann sind wir uns einig. / Abgemacht! / Lassen Sie uns das schriftlich festhalten."
+     ],
+     "q": "Tu veux vendre ton vélo 300 euros, je t'en offre 200. Que proposes-tu ?",
+     "c": "Joue une négociation : toi et un colocataire répartissez les tâches. Écris quatre répliques jusqu'à l'accord."
+    },
+    "it": {
+     "t": "Negoziare",
+     "g": "Fai un'offerta, trova un compromesso e raggiungi un accordo in tedesco.",
+     "p": [
+      "Fare un'offerta: Ich könnte Ihnen... anbieten. / Was halten Sie von folgendem Vorschlag?",
+      "Venirsi incontro: Wie wäre es, wenn wir uns in der Mitte treffen? / Unter der Bedingung, dass..., bin ich einverstanden.",
+      "Accordarsi: Dann sind wir uns einig. / Abgemacht! / Lassen Sie uns das schriftlich festhalten."
+     ],
+     "q": "Vuoi vendere la tua bici a 300 euro, io ne offro 200. Che cosa proponi?",
+     "c": "Simula una trattativa: tu e un coinquilino dividete le faccende. Scrivi quattro battute fino all'accordo."
+    },
+    "pt": {
+     "t": "Negociar",
+     "g": "Fazer uma oferta, encontrar um compromisso e chegar a acordo em alemão.",
+     "p": [
+      "Fazer uma oferta: Ich könnte Ihnen... anbieten. / Was halten Sie von folgendem Vorschlag?",
+      "Ceder um pouco: Wie wäre es, wenn wir uns in der Mitte treffen? / Unter der Bedingung, dass..., bin ich einverstanden.",
+      "Chegar a acordo: Dann sind wir uns einig. / Abgemacht! / Lassen Sie uns das schriftlich festhalten."
+     ],
+     "q": "Queres vender a tua bicicleta por 300 euros e eu ofereço 200. O que propões?",
+     "c": "Simula uma negociação: tu e um colega de casa dividem as tarefas. Escreve quatro falas até ao acordo."
+    },
+    "pt_BR": {
+     "t": "Negociar",
+     "g": "Fazer uma oferta, achar um meio-termo e chegar a um acordo em alemão.",
+     "p": [
+      "Fazer uma oferta: Ich könnte Ihnen... anbieten. / Was halten Sie von folgendem Vorschlag?",
+      "Ceder um pouco: Wie wäre es, wenn wir uns in der Mitte treffen? / Unter der Bedingung, dass..., bin ich einverstanden.",
+      "Fechar acordo: Dann sind wir uns einig. / Abgemacht! / Lassen Sie uns das schriftlich festhalten."
+     ],
+     "q": "Você quer vender sua bicicleta por 300 euros e eu ofereço 200. O que você propõe?",
+     "c": "Simule uma negociação: você e um colega de casa dividem as tarefas. Escreva quatro falas até o acordo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "das Angebot",
+      "ex": "Ich mache Ihnen ein faires Angebot."
+     },
+     {
+      "w": "der Kompromiss",
+      "ex": "Wir haben schließlich einen guten Kompromiss gefunden."
+     },
+     {
+      "w": "sich einigen auf",
+      "ex": "Wir haben uns auf 250 Euro geeinigt."
+     },
+     {
+      "w": "entgegenkommen",
+      "ex": "Ich komme Ihnen beim Preis gern ein Stück entgegen."
+     },
+     {
+      "w": "unter der Bedingung, dass ...",
+      "ex": "Unter der Bedingung, dass Sie liefern, nehme ich das Angebot an."
+     },
+     {
+      "w": "Abgemacht!",
+      "ex": "Also 250 Euro und Sie holen es ab? Abgemacht!"
+     }
+    ],
+    "gram": "Vorschlag im Konjunktiv II: Wie wäre es, wenn wir... würden? Ich könnte Ihnen... anbieten. Klingt weicher als der Indikativ."
+   }
+  },
+  {
+   "d": 307,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Leading a meeting",
+     "g": "Chair a meeting: open it, give people the floor and sum up.",
+     "p": [
+      "Opening: Ich begrüße Sie herzlich zu unserer Besprechung. Auf der Tagesordnung stehen heute drei Punkte.",
+      "Giving the floor: Frau Weber, Sie haben das Wort. / Möchte jemand etwas ergänzen? / Lassen Sie Herrn Kim bitte ausreden.",
+      "Summing up: Halten wir fest: ... / Wer übernimmt was bis wann? / Damit schließe ich die Sitzung."
+     ],
+     "q": "You chair a meeting about a team party. How do you open it and give someone the floor?",
+     "c": "Write a mini script for a five-minute meeting with an opening, two speakers and a summary."
+    },
+    "de": {
+     "t": "Eine Besprechung leiten",
+     "g": "Du moderierst eine Sitzung: eröffnen, das Wort erteilen, zusammenfassen.",
+     "p": [
+      "Eröffnung: Ich begrüße Sie herzlich zu unserer Besprechung. Auf der Tagesordnung stehen heute drei Punkte.",
+      "Das Wort erteilen: Frau Weber, Sie haben das Wort. / Möchte jemand etwas ergänzen? / Lassen Sie Herrn Kim bitte ausreden.",
+      "Zusammenfassen: Halten wir fest: ... / Wer übernimmt was bis wann? / Damit schließe ich die Sitzung."
+     ],
+     "q": "Du leitest eine Besprechung über ein Teamfest. Wie eröffnest du sie und erteilst jemandem das Wort?",
+     "c": "Schreib ein Mini-Skript für eine Fünf-Minuten-Besprechung: Eröffnung, zwei Beiträge, Zusammenfassung."
+    },
+    "es": {
+     "t": "Dirigir una reunión",
+     "g": "Modera una reunión: ábrela, da la palabra y resume.",
+     "p": [
+      "Apertura: Ich begrüße Sie herzlich zu unserer Besprechung. Auf der Tagesordnung stehen heute drei Punkte.",
+      "Dar la palabra: Frau Weber, Sie haben das Wort. / Möchte jemand etwas ergänzen? / Lassen Sie Herrn Kim bitte ausreden.",
+      "Resumir: Halten wir fest: ... / Wer übernimmt was bis wann? / Damit schließe ich die Sitzung."
+     ],
+     "q": "Diriges una reunión sobre una fiesta del equipo. ¿Cómo la abres y das la palabra a alguien?",
+     "c": "Escribe un miniguion para una reunión de cinco minutos: apertura, dos intervenciones y resumen."
+    },
+    "fr": {
+     "t": "Animer une réunion",
+     "g": "Présider une réunion : l'ouvrir, donner la parole, résumer.",
+     "p": [
+      "Ouverture : Ich begrüße Sie herzlich zu unserer Besprechung. Auf der Tagesordnung stehen heute drei Punkte.",
+      "Donner la parole : Frau Weber, Sie haben das Wort. / Möchte jemand etwas ergänzen? / Lassen Sie Herrn Kim bitte ausreden.",
+      "Résumer : Halten wir fest: ... / Wer übernimmt was bis wann? / Damit schließe ich die Sitzung."
+     ],
+     "q": "Tu animes une réunion sur une fête d'équipe. Comment l'ouvres-tu et donnes-tu la parole ?",
+     "c": "Écris un mini-script pour une réunion de cinq minutes : ouverture, deux interventions, synthèse."
+    },
+    "it": {
+     "t": "Condurre una riunione",
+     "g": "Modera una riunione: aprila, dai la parola e riassumi.",
+     "p": [
+      "Apertura: Ich begrüße Sie herzlich zu unserer Besprechung. Auf der Tagesordnung stehen heute drei Punkte.",
+      "Dare la parola: Frau Weber, Sie haben das Wort. / Möchte jemand etwas ergänzen? / Lassen Sie Herrn Kim bitte ausreden.",
+      "Riassumere: Halten wir fest: ... / Wer übernimmt was bis wann? / Damit schließe ich die Sitzung."
+     ],
+     "q": "Conduci una riunione su una festa di squadra. Come la apri e dai la parola a qualcuno?",
+     "c": "Scrivi un mini copione per una riunione di cinque minuti: apertura, due interventi e sintesi."
+    },
+    "pt": {
+     "t": "Conduzir uma reunião",
+     "g": "Moderar uma reunião: abri-la, dar a palavra e resumir.",
+     "p": [
+      "Abertura: Ich begrüße Sie herzlich zu unserer Besprechung. Auf der Tagesordnung stehen heute drei Punkte.",
+      "Dar a palavra: Frau Weber, Sie haben das Wort. / Möchte jemand etwas ergänzen? / Lassen Sie Herrn Kim bitte ausreden.",
+      "Resumir: Halten wir fest: ... / Wer übernimmt was bis wann? / Damit schließe ich die Sitzung."
+     ],
+     "q": "Conduzes uma reunião sobre uma festa da equipa. Como a abres e dás a palavra a alguém?",
+     "c": "Escreve um mini guião para uma reunião de cinco minutos: abertura, duas intervenções e resumo."
+    },
+    "pt_BR": {
+     "t": "Conduzir uma reunião",
+     "g": "Moderar uma reunião: abrir, passar a palavra e resumir.",
+     "p": [
+      "Abertura: Ich begrüße Sie herzlich zu unserer Besprechung. Auf der Tagesordnung stehen heute drei Punkte.",
+      "Passar a palavra: Frau Weber, Sie haben das Wort. / Möchte jemand etwas ergänzen? / Lassen Sie Herrn Kim bitte ausreden.",
+      "Resumir: Halten wir fest: ... / Wer übernimmt was bis wann? / Damit schließe ich die Sitzung."
+     ],
+     "q": "Você conduz uma reunião sobre uma festa da equipe. Como você abre e passa a palavra a alguém?",
+     "c": "Escreva um miniroteiro para uma reunião de cinco minutos: abertura, duas falas e resumo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "die Tagesordnung",
+      "ex": "Auf der Tagesordnung stehen heute drei Punkte."
+     },
+     {
+      "w": "das Wort erteilen",
+      "ex": "Ich erteile jetzt Frau Weber das Wort."
+     },
+     {
+      "w": "ergänzen",
+      "ex": "Möchte jemand noch etwas ergänzen?"
+     },
+     {
+      "w": "ausreden lassen",
+      "ex": "Bitte lassen Sie Herrn Kim ausreden."
+     },
+     {
+      "w": "festhalten",
+      "ex": "Halten wir fest: Das Fest findet im Juni statt."
+     },
+     {
+      "w": "die Sitzung schließen",
+      "ex": "Vielen Dank, damit schließe ich die Sitzung."
+     }
+    ],
+    "gram": "Imperativ 1. Person Plural: Halten wir fest! Kommen wir zum nächsten Punkt! lassen + Infinitiv: Lassen Sie ihn ausreden."
+   }
+  },
+  {
+   "d": 308,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Giving a presentation",
+     "g": "Present with confidence: win the audience, illustrate and answer questions.",
+     "p": [
+      "Win them at the start: Wussten Sie, dass...? / Heute möchte ich Ihnen zeigen, wie... A question or story works well.",
+      "Illustrate: Wie Sie auf dieser Grafik sehen... / Das möchte ich an einem Beispiel verdeutlichen.",
+      "Questions: Das ist eine sehr gute Frage. / Darauf komme ich gleich zurück. / Habe ich Ihre Frage damit beantwortet?"
+     ],
+     "q": "Start a two-minute presentation about your city for me with a question to the audience.",
+     "c": "Prepare a three-minute talk on a hobby: hook, one image you describe, and two questions you might get."
+    },
+    "de": {
+     "t": "Eine Präsentation halten",
+     "g": "Du präsentierst sicher: Publikum gewinnen, veranschaulichen, Fragen beantworten.",
+     "p": [
+      "Zu Beginn gewinnen: Wussten Sie, dass...? / Heute möchte ich Ihnen zeigen, wie... Eine Frage oder Geschichte wirkt gut.",
+      "Veranschaulichen: Wie Sie auf dieser Grafik sehen... / Das möchte ich an einem Beispiel verdeutlichen.",
+      "Fragen: Das ist eine sehr gute Frage. / Darauf komme ich gleich zurück. / Habe ich Ihre Frage damit beantwortet?"
+     ],
+     "q": "Beginn für mich eine Zwei-Minuten-Präsentation über deine Stadt mit einer Frage ans Publikum.",
+     "c": "Bereite einen Drei-Minuten-Vortrag über ein Hobby vor: Einstieg, ein beschriebenes Bild, zwei mögliche Fragen."
+    },
+    "es": {
+     "t": "Hacer una presentación",
+     "g": "Presenta con seguridad: gana al público, ilustra y responde preguntas.",
+     "p": [
+      "Gánatelos al principio: Wussten Sie, dass...? / Heute möchte ich Ihnen zeigen, wie... Una pregunta o una historia funcionan bien.",
+      "Ilustrar: Wie Sie auf dieser Grafik sehen... / Das möchte ich an einem Beispiel verdeutlichen.",
+      "Preguntas: Das ist eine sehr gute Frage. / Darauf komme ich gleich zurück. / Habe ich Ihre Frage damit beantwortet?"
+     ],
+     "q": "Empieza para mí una presentación de dos minutos sobre tu ciudad con una pregunta al público.",
+     "c": "Prepara una charla de tres minutos sobre un hobby: gancho, una imagen que describas y dos posibles preguntas."
+    },
+    "fr": {
+     "t": "Faire une présentation",
+     "g": "Présenter avec assurance : capter le public, illustrer, répondre aux questions.",
+     "p": [
+      "Capter dès le début : Wussten Sie, dass...? / Heute möchte ich Ihnen zeigen, wie... Une question ou une histoire marche bien.",
+      "Illustrer : Wie Sie auf dieser Grafik sehen... / Das möchte ich an einem Beispiel verdeutlichen.",
+      "Questions : Das ist eine sehr gute Frage. / Darauf komme ich gleich zurück. / Habe ich Ihre Frage damit beantwortet?"
+     ],
+     "q": "Commence pour moi une présentation de deux minutes sur ta ville avec une question au public.",
+     "c": "Prépare un exposé de trois minutes sur un loisir : accroche, une image décrite et deux questions possibles."
+    },
+    "it": {
+     "t": "Fare una presentazione",
+     "g": "Presenta con sicurezza: conquista il pubblico, illustra e rispondi alle domande.",
+     "p": [
+      "Conquista subito: Wussten Sie, dass...? / Heute möchte ich Ihnen zeigen, wie... Una domanda o una storia funzionano bene.",
+      "Illustrare: Wie Sie auf dieser Grafik sehen... / Das möchte ich an einem Beispiel verdeutlichen.",
+      "Domande: Das ist eine sehr gute Frage. / Darauf komme ich gleich zurück. / Habe ich Ihre Frage damit beantwortet?"
+     ],
+     "q": "Inizia per me una presentazione di due minuti sulla tua città con una domanda al pubblico.",
+     "c": "Prepara un intervento di tre minuti su un hobby: aggancio, un'immagine descritta e due possibili domande."
+    },
+    "pt": {
+     "t": "Fazer uma apresentação",
+     "g": "Apresentar com confiança: conquistar o público, ilustrar e responder a perguntas.",
+     "p": [
+      "Conquista logo no início: Wussten Sie, dass...? / Heute möchte ich Ihnen zeigen, wie... Uma pergunta ou história resulta bem.",
+      "Ilustrar: Wie Sie auf dieser Grafik sehen... / Das möchte ich an einem Beispiel verdeutlichen.",
+      "Perguntas: Das ist eine sehr gute Frage. / Darauf komme ich gleich zurück. / Habe ich Ihre Frage damit beantwortet?"
+     ],
+     "q": "Começa para mim uma apresentação de dois minutos sobre a tua cidade com uma pergunta ao público.",
+     "c": "Prepara uma palestra de três minutos sobre um passatempo: gancho, uma imagem descrita e duas perguntas possíveis."
+    },
+    "pt_BR": {
+     "t": "Fazer uma apresentação",
+     "g": "Apresentar com confiança: conquistar o público, ilustrar e responder perguntas.",
+     "p": [
+      "Conquiste logo no início: Wussten Sie, dass...? / Heute möchte ich Ihnen zeigen, wie... Uma pergunta ou história funciona bem.",
+      "Ilustrar: Wie Sie auf dieser Grafik sehen... / Das möchte ich an einem Beispiel verdeutlichen.",
+      "Perguntas: Das ist eine sehr gute Frage. / Darauf komme ich gleich zurück. / Habe ich Ihre Frage damit beantwortet?"
+     ],
+     "q": "Comece para mim uma apresentação de dois minutos sobre sua cidade com uma pergunta ao público.",
+     "c": "Prepare uma fala de três minutos sobre um hobby: gancho, uma imagem descrita e duas perguntas possíveis."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "der Vortrag",
+      "ex": "Mein Vortrag dauert etwa zehn Minuten."
+     },
+     {
+      "w": "veranschaulichen",
+      "ex": "Ich möchte das an einem Beispiel veranschaulichen."
+     },
+     {
+      "w": "die Grafik",
+      "ex": "Wie Sie auf dieser Grafik sehen, steigen die Zahlen."
+     },
+     {
+      "w": "das Publikum",
+      "ex": "Das Publikum hat viele Fragen gestellt."
+     },
+     {
+      "w": "zurückkommen auf",
+      "ex": "Auf diesen Punkt komme ich gleich zurück."
+     },
+     {
+      "w": "Vielen Dank für Ihre Aufmerksamkeit.",
+      "ex": "Das war mein Vortrag. Vielen Dank für Ihre Aufmerksamkeit."
+     }
+    ],
+    "gram": "Pronominaladverbien: Darauf komme ich zurück (auf + Sache = darauf); Wie Sie sehen... als Verweis auf Folien."
+   }
+  },
+  {
+   "d": 309,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Economy vocabulary",
+     "g": "Talk about the economy: growth, the job market, purchasing power and companies.",
+     "p": [
+      "Key nouns: das Wachstum, der Arbeitsmarkt, die Kaufkraft, das Unternehmen, die Arbeitslosigkeit.",
+      "Typical verbs: Die Wirtschaft wächst. / Die Preise steigen. / Das Unternehmen stellt neue Mitarbeiter ein.",
+      "Germany is known for the Mittelstand: many medium-sized, often family-run companies."
+     ],
+     "q": "What kind of company would you like to work for: a big Konzern or a small Mittelstand firm? Why?",
+     "c": "Write three sentences about the economy of your country using Wachstum, Arbeitsmarkt and Unternehmen."
+    },
+    "de": {
+     "t": "Wirtschaftswortschatz",
+     "g": "Du sprichst über Wirtschaft: Wachstum, Arbeitsmarkt, Kaufkraft und Unternehmen.",
+     "p": [
+      "Wichtige Nomen: das Wachstum, der Arbeitsmarkt, die Kaufkraft, das Unternehmen, die Arbeitslosigkeit.",
+      "Typische Verben: Die Wirtschaft wächst. / Die Preise steigen. / Das Unternehmen stellt neue Mitarbeiter ein.",
+      "Deutschland ist für den Mittelstand bekannt: viele mittelgroße, oft familiengeführte Firmen."
+     ],
+     "q": "In welcher Firma würdest du gern arbeiten: in einem großen Konzern oder im Mittelstand? Warum?",
+     "c": "Schreib drei Sätze über die Wirtschaft deines Landes mit Wachstum, Arbeitsmarkt und Unternehmen."
+    },
+    "es": {
+     "t": "Vocabulario de economía",
+     "g": "Habla de economía: crecimiento, mercado laboral, poder adquisitivo y empresas.",
+     "p": [
+      "Sustantivos clave: das Wachstum, der Arbeitsmarkt, die Kaufkraft, das Unternehmen, die Arbeitslosigkeit.",
+      "Verbos típicos: Die Wirtschaft wächst. / Die Preise steigen. / Das Unternehmen stellt neue Mitarbeiter ein.",
+      "Alemania es famosa por el Mittelstand: muchas empresas medianas, a menudo familiares."
+     ],
+     "q": "¿En qué empresa te gustaría trabajar: un gran Konzern o una pequeña del Mittelstand? ¿Por qué?",
+     "c": "Escribe tres frases sobre la economía de tu país con Wachstum, Arbeitsmarkt y Unternehmen."
+    },
+    "fr": {
+     "t": "Vocabulaire de l'économie",
+     "g": "Parler d'économie : croissance, marché du travail, pouvoir d'achat et entreprises.",
+     "p": [
+      "Noms clés : das Wachstum, der Arbeitsmarkt, die Kaufkraft, das Unternehmen, die Arbeitslosigkeit.",
+      "Verbes typiques : Die Wirtschaft wächst. / Die Preise steigen. / Das Unternehmen stellt neue Mitarbeiter ein.",
+      "L'Allemagne est connue pour son Mittelstand : beaucoup d'entreprises moyennes, souvent familiales."
+     ],
+     "q": "Dans quelle entreprise aimerais-tu travailler : un grand Konzern ou une PME du Mittelstand ? Pourquoi ?",
+     "c": "Écris trois phrases sur l'économie de ton pays avec Wachstum, Arbeitsmarkt et Unternehmen."
+    },
+    "it": {
+     "t": "Lessico dell'economia",
+     "g": "Parla di economia: crescita, mercato del lavoro, potere d'acquisto e imprese.",
+     "p": [
+      "Sostantivi chiave: das Wachstum, der Arbeitsmarkt, die Kaufkraft, das Unternehmen, die Arbeitslosigkeit.",
+      "Verbi tipici: Die Wirtschaft wächst. / Die Preise steigen. / Das Unternehmen stellt neue Mitarbeiter ein.",
+      "La Germania è famosa per il Mittelstand: tante medie imprese, spesso a conduzione familiare."
+     ],
+     "q": "In che azienda ti piacerebbe lavorare: un grande Konzern o una piccola del Mittelstand? Perché?",
+     "c": "Scrivi tre frasi sull'economia del tuo paese con Wachstum, Arbeitsmarkt e Unternehmen."
+    },
+    "pt": {
+     "t": "Vocabulário de economia",
+     "g": "Falar de economia: crescimento, mercado de trabalho, poder de compra e empresas.",
+     "p": [
+      "Substantivos-chave: das Wachstum, der Arbeitsmarkt, die Kaufkraft, das Unternehmen, die Arbeitslosigkeit.",
+      "Verbos típicos: Die Wirtschaft wächst. / Die Preise steigen. / Das Unternehmen stellt neue Mitarbeiter ein.",
+      "A Alemanha é conhecida pelo Mittelstand: muitas empresas médias, muitas vezes familiares."
+     ],
+     "q": "Em que empresa gostarias de trabalhar: num grande Konzern ou numa pequena do Mittelstand? Porquê?",
+     "c": "Escreve três frases sobre a economia do teu país com Wachstum, Arbeitsmarkt e Unternehmen."
+    },
+    "pt_BR": {
+     "t": "Vocabulário de economia",
+     "g": "Falar de economia: crescimento, mercado de trabalho, poder de compra e empresas.",
+     "p": [
+      "Substantivos-chave: das Wachstum, der Arbeitsmarkt, die Kaufkraft, das Unternehmen, die Arbeitslosigkeit.",
+      "Verbos típicos: Die Wirtschaft wächst. / Die Preise steigen. / Das Unternehmen stellt neue Mitarbeiter ein.",
+      "A Alemanha é conhecida pelo Mittelstand: muitas empresas médias, muitas vezes familiares."
+     ],
+     "q": "Em que empresa você gostaria de trabalhar: num grande Konzern ou numa pequena do Mittelstand? Por quê?",
+     "c": "Escreva três frases sobre a economia do seu país com Wachstum, Arbeitsmarkt e Unternehmen."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "das Wachstum",
+      "ex": "Das Wachstum der Wirtschaft war stabil."
+     },
+     {
+      "w": "der Arbeitsmarkt",
+      "ex": "Auf dem Arbeitsmarkt werden Fachkräfte gesucht."
+     },
+     {
+      "w": "die Kaufkraft",
+      "ex": "Wenn die Löhne steigen, wächst die Kaufkraft."
+     },
+     {
+      "w": "das Unternehmen",
+      "ex": "Das Unternehmen hat zweihundert Mitarbeiter."
+     },
+     {
+      "w": "einstellen",
+      "ex": "Die Firma stellt im Herbst zehn neue Leute ein."
+     },
+     {
+      "w": "der Mittelstand",
+      "ex": "Der Mittelstand ist das Rückgrat der deutschen Wirtschaft."
+     }
+    ],
+    "gram": "Komposita: Arbeit + s + Markt = der Arbeitsmarkt; das letzte Wort bestimmt den Artikel. Fugen-s nach -ung, -heit, -keit, -tät."
+   }
+  },
+  {
+   "d": 310,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Science and research",
+     "g": "Talk about science: a study, a hypothesis, a discovery and how to prove it.",
+     "p": [
+      "Key words: die Studie, die Hypothese, die Entdeckung, das Ergebnis, beweisen, untersuchen.",
+      "Reporting research: Laut einer Studie... / Forscher haben herausgefunden, dass... / Die Ergebnisse deuten darauf hin, dass...",
+      "Germany has a strong research tradition, for example the Max Planck Institutes and scientists like Albert Einstein."
+     ],
+     "q": "Which scientific discovery do you find most fascinating, and why?",
+     "c": "Find a simple science fact you like and report it in German with Laut einer Studie or Forscher haben herausgefunden."
+    },
+    "de": {
+     "t": "Wissenschaft und Forschung",
+     "g": "Du sprichst über Wissenschaft: Studie, Hypothese, Entdeckung, Beweis.",
+     "p": [
+      "Wichtige Wörter: die Studie, die Hypothese, die Entdeckung, das Ergebnis, beweisen, untersuchen.",
+      "Forschung wiedergeben: Laut einer Studie... / Forscher haben herausgefunden, dass... / Die Ergebnisse deuten darauf hin, dass...",
+      "Deutschland hat eine starke Forschungstradition, etwa die Max-Planck-Institute und Forscher wie Albert Einstein."
+     ],
+     "q": "Welche wissenschaftliche Entdeckung findest du am faszinierendsten und warum?",
+     "c": "Such dir eine einfache wissenschaftliche Tatsache und gib sie mit Laut einer Studie oder Forscher haben herausgefunden wieder."
+    },
+    "es": {
+     "t": "Ciencia e investigación",
+     "g": "Habla de ciencia: un estudio, una hipótesis, un descubrimiento y cómo probarlo.",
+     "p": [
+      "Palabras clave: die Studie, die Hypothese, die Entdeckung, das Ergebnis, beweisen, untersuchen.",
+      "Contar una investigación: Laut einer Studie... / Forscher haben herausgefunden, dass... / Die Ergebnisse deuten darauf hin, dass...",
+      "Alemania tiene una gran tradición científica, como los Institutos Max Planck o científicos como Albert Einstein."
+     ],
+     "q": "¿Qué descubrimiento científico te parece más fascinante y por qué?",
+     "c": "Busca un dato científico sencillo que te guste y cuéntalo en alemán con Laut einer Studie o Forscher haben herausgefunden."
+    },
+    "fr": {
+     "t": "Science et recherche",
+     "g": "Parler de science : une étude, une hypothèse, une découverte et sa preuve.",
+     "p": [
+      "Mots clés : die Studie, die Hypothese, die Entdeckung, das Ergebnis, beweisen, untersuchen.",
+      "Rapporter une recherche : Laut einer Studie... / Forscher haben herausgefunden, dass... / Die Ergebnisse deuten darauf hin, dass...",
+      "L'Allemagne a une forte tradition de recherche, comme les instituts Max Planck et des savants comme Albert Einstein."
+     ],
+     "q": "Quelle découverte scientifique trouves-tu la plus fascinante, et pourquoi ?",
+     "c": "Choisis un fait scientifique simple et rapporte-le en allemand avec Laut einer Studie ou Forscher haben herausgefunden."
+    },
+    "it": {
+     "t": "Scienza e ricerca",
+     "g": "Parla di scienza: uno studio, un'ipotesi, una scoperta e come dimostrarla.",
+     "p": [
+      "Parole chiave: die Studie, die Hypothese, die Entdeckung, das Ergebnis, beweisen, untersuchen.",
+      "Riferire una ricerca: Laut einer Studie... / Forscher haben herausgefunden, dass... / Die Ergebnisse deuten darauf hin, dass...",
+      "La Germania ha una forte tradizione di ricerca, come gli Istituti Max Planck e scienziati come Albert Einstein."
+     ],
+     "q": "Quale scoperta scientifica trovi più affascinante e perché?",
+     "c": "Scegli un fatto scientifico semplice e riferiscilo in tedesco con Laut einer Studie o Forscher haben herausgefunden."
+    },
+    "pt": {
+     "t": "Ciência e investigação",
+     "g": "Falar de ciência: um estudo, uma hipótese, uma descoberta e como prová-la.",
+     "p": [
+      "Palavras-chave: die Studie, die Hypothese, die Entdeckung, das Ergebnis, beweisen, untersuchen.",
+      "Relatar uma investigação: Laut einer Studie... / Forscher haben herausgefunden, dass... / Die Ergebnisse deuten darauf hin, dass...",
+      "A Alemanha tem uma forte tradição de investigação, como os Institutos Max Planck e cientistas como Albert Einstein."
+     ],
+     "q": "Que descoberta científica achas mais fascinante e porquê?",
+     "c": "Escolhe um facto científico simples e relata-o em alemão com Laut einer Studie ou Forscher haben herausgefunden."
+    },
+    "pt_BR": {
+     "t": "Ciência e pesquisa",
+     "g": "Falar de ciência: um estudo, uma hipótese, uma descoberta e como comprová-la.",
+     "p": [
+      "Palavras-chave: die Studie, die Hypothese, die Entdeckung, das Ergebnis, beweisen, untersuchen.",
+      "Relatar uma pesquisa: Laut einer Studie... / Forscher haben herausgefunden, dass... / Die Ergebnisse deuten darauf hin, dass...",
+      "A Alemanha tem forte tradição de pesquisa, como os Institutos Max Planck e cientistas como Albert Einstein."
+     ],
+     "q": "Qual descoberta científica você acha mais fascinante e por quê?",
+     "c": "Escolha um fato científico simples e conte em alemão com Laut einer Studie ou Forscher haben herausgefunden."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "die Studie",
+      "ex": "Laut einer Studie schlafen viele Menschen zu wenig."
+     },
+     {
+      "w": "die Hypothese",
+      "ex": "Die Forscher wollten ihre Hypothese überprüfen."
+     },
+     {
+      "w": "die Entdeckung",
+      "ex": "Die Entdeckung des Penicillins hat die Medizin verändert."
+     },
+     {
+      "w": "beweisen",
+      "ex": "Mit diesem Experiment konnte man die These beweisen."
+     },
+     {
+      "w": "untersuchen",
+      "ex": "Das Team untersucht das Verhalten von Bienen."
+     },
+     {
+      "w": "darauf hindeuten, dass ...",
+      "ex": "Die Ergebnisse deuten darauf hin, dass Bewegung hilft."
+     }
+    ],
+    "gram": "laut + Dativ/Genitiv für Quellen: laut einer Studie; Pronominaladverb mit dass: darauf hindeuten, dass..."
+   }
+  }
+ ]
+}

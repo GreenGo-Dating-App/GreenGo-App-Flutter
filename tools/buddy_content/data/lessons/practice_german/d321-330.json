@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_german",
+ "lessons": [
+  {
+   "d": 321,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Colloquial words",
+     "g": "Learn everyday colloquial words: die Kohle, die Bude, pennen, quatschen, der Kram.",
+     "p": [
+      "Die Kohle = money; die Bude = flat or room. Ich habe keine Kohle mehr. Komm doch mal in meine Bude!",
+      "Pennen = to sleep; quatschen = to chat. Ich habe zehn Stunden gepennt. Wir haben die ganze Nacht gequatscht.",
+      "Der Kram = stuff, things. Räum deinen Kram weg! Fine with friends, but not in a job interview."
+     ],
+     "q": "What did you do last weekend? Tell me using at least two colloquial words.",
+     "c": "Translate a formal sentence into colloquial German: Ich habe kein Geld und möchte in meiner Wohnung schlafen."
+    },
+    "de": {
+     "t": "Umgangssprache",
+     "g": "Du lernst Alltagswörter der Umgangssprache: die Kohle, die Bude, pennen, quatschen, der Kram.",
+     "p": [
+      "Die Kohle = Geld; die Bude = Wohnung oder Zimmer. Ich habe keine Kohle mehr. Komm doch mal in meine Bude!",
+      "Pennen = schlafen; quatschen = plaudern. Ich habe zehn Stunden gepennt. Wir haben die ganze Nacht gequatscht.",
+      "Der Kram = Sachen, Zeug. Räum deinen Kram weg! Gut unter Freunden, aber nicht im Vorstellungsgespräch."
+     ],
+     "q": "Was hast du letztes Wochenende gemacht? Erzähl mit mindestens zwei umgangssprachlichen Wörtern.",
+     "c": "Übertrag einen formellen Satz in Umgangssprache: Ich habe kein Geld und möchte in meiner Wohnung schlafen."
+    },
+    "es": {
+     "t": "Palabras coloquiales",
+     "g": "Aprende palabras coloquiales: die Kohle, die Bude, pennen, quatschen, der Kram.",
+     "p": [
+      "Die Kohle = la pasta, el dinero; die Bude = el piso o cuarto. Ich habe keine Kohle mehr. Komm doch mal in meine Bude!",
+      "Pennen = sobar, dormir; quatschen = charlar. Ich habe zehn Stunden gepennt. Wir haben die ganze Nacht gequatscht.",
+      "Der Kram = los trastos, las cosas. Räum deinen Kram weg! Bien con amigos, pero no en una entrevista."
+     ],
+     "q": "¿Qué hiciste el fin de semana pasado? Cuéntamelo con al menos dos palabras coloquiales.",
+     "c": "Pasa una frase formal a lenguaje coloquial: Ich habe kein Geld und möchte in meiner Wohnung schlafen."
+    },
+    "fr": {
+     "t": "Mots familiers",
+     "g": "Apprendre des mots familiers du quotidien : die Kohle, die Bude, pennen, quatschen, der Kram.",
+     "p": [
+      "Die Kohle = le fric ; die Bude = l'appart, la piaule. Ich habe keine Kohle mehr. Komm doch mal in meine Bude!",
+      "Pennen = pioncer, dormir ; quatschen = papoter. Ich habe zehn Stunden gepennt. Wir haben die ganze Nacht gequatscht.",
+      "Der Kram = le bazar, les trucs. Räum deinen Kram weg! Ok entre amis, pas en entretien d'embauche."
+     ],
+     "q": "Qu'as-tu fait le week-end dernier ? Raconte avec au moins deux mots familiers.",
+     "c": "Passe une phrase soutenue en langage familier : Ich habe kein Geld und möchte in meiner Wohnung schlafen."
+    },
+    "it": {
+     "t": "Parole colloquiali",
+     "g": "Impara parole colloquiali di tutti i giorni: die Kohle, die Bude, pennen, quatschen, der Kram.",
+     "p": [
+      "Die Kohle = i soldi, la grana; die Bude = la casa, la stanza. Ich habe keine Kohle mehr. Komm doch mal in meine Bude!",
+      "Pennen = dormire; quatschen = chiacchierare. Ich habe zehn Stunden gepennt. Wir haben die ganze Nacht gequatscht.",
+      "Der Kram = la roba, le cose. Räum deinen Kram weg! Va bene tra amici, non a un colloquio di lavoro."
+     ],
+     "q": "Che cosa hai fatto lo scorso weekend? Raccontamelo con almeno due parole colloquiali.",
+     "c": "Trasforma una frase formale in tedesco colloquiale: Ich habe kein Geld und möchte in meiner Wohnung schlafen."
+    },
+    "pt": {
+     "t": "Palavras coloquiais",
+     "g": "Aprender palavras coloquiais do dia a dia: die Kohle, die Bude, pennen, quatschen, der Kram.",
+     "p": [
+      "Die Kohle = o guito, o dinheiro; die Bude = a casa, o quarto. Ich habe keine Kohle mehr. Komm doch mal in meine Bude!",
+      "Pennen = dormir; quatschen = conversar, cavaquear. Ich habe zehn Stunden gepennt. Wir haben die ganze Nacht gequatscht.",
+      "Der Kram = a tralha, as coisas. Räum deinen Kram weg! Bom entre amigos, mas não numa entrevista."
+     ],
+     "q": "O que fizeste no fim de semana passado? Conta com pelo menos duas palavras coloquiais.",
+     "c": "Passa uma frase formal para linguagem coloquial: Ich habe kein Geld und möchte in meiner Wohnung schlafen."
+    },
+    "pt_BR": {
+     "t": "Palavras coloquiais",
+     "g": "Aprender palavras coloquiais do dia a dia: die Kohle, die Bude, pennen, quatschen, der Kram.",
+     "p": [
+      "Die Kohle = a grana; die Bude = o apê, o quarto. Ich habe keine Kohle mehr. Komm doch mal in meine Bude!",
+      "Pennen = dormir, capotar; quatschen = bater papo. Ich habe zehn Stunden gepennt. Wir haben die ganze Nacht gequatscht.",
+      "Der Kram = as tralhas, as coisas. Räum deinen Kram weg! Tudo bem com amigos, mas não numa entrevista."
+     ],
+     "q": "O que você fez no fim de semana passado? Conte usando pelo menos duas palavras coloquiais.",
+     "c": "Passe uma frase formal para linguagem coloquial: Ich habe kein Geld und möchte in meiner Wohnung schlafen."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "die Kohle",
+      "ex": "Für den Urlaub spare ich gerade Kohle."
+     },
+     {
+      "w": "die Bude",
+      "ex": "Meine Bude ist klein, aber gemütlich."
+     },
+     {
+      "w": "pennen",
+      "ex": "Du kannst heute bei mir pennen."
+     },
+     {
+      "w": "quatschen",
+      "ex": "Wir haben stundenlang über alles gequatscht."
+     },
+     {
+      "w": "der Kram",
+      "ex": "Wohin mit dem ganzen Kram?"
+     },
+     {
+      "w": "kapieren",
+      "ex": "Hast du die Aufgabe kapiert?"
+     }
+    ],
+    "gram": "Umgangssprache: oft Wegfall von Endungen (ich hab, gibt's) und Partikeln wie mal, doch: Komm doch mal vorbei!"
+   }
+  },
+  {
+   "d": 322,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Humour and wordplay",
+     "g": "Enjoy German wordplay and Kalauer, and question the myth that Germans have no humour.",
+     "p": [
+      "Ein Wortspiel plays with double meanings: Was ist grün und klopft an die Tür? Ein Klopfsalat! (Kopfsalat = lettuce)",
+      "Ein Kalauer is a cheesy pun people groan at, like a dad joke. Loriot and Heinz Erhardt are classic German comedians.",
+      "German humour is often dry and ironic: Na super, schon wieder Regen. Irony depends on tone."
+     ],
+     "q": "Tell me a joke or pun from your language and try to explain why it is funny.",
+     "c": "Learn the Klopfsalat joke by heart and tell it to someone today, in German."
+    },
+    "de": {
+     "t": "Humor und Wortspiele",
+     "g": "Du genießt Wortspiele und Kalauer und hinterfragst das Klischee vom humorlosen Deutschen.",
+     "p": [
+      "Ein Wortspiel spielt mit Doppelbedeutungen: Was ist grün und klopft an die Tür? Ein Klopfsalat! (Kopfsalat)",
+      "Ein Kalauer ist ein flacher Witz, über den man stöhnt. Loriot und Heinz Erhardt sind Klassiker des deutschen Humors.",
+      "Deutscher Humor ist oft trocken und ironisch: Na super, schon wieder Regen. Ironie hängt vom Tonfall ab."
+     ],
+     "q": "Erzähl mir einen Witz oder ein Wortspiel aus deiner Sprache und erkläre, warum es lustig ist.",
+     "c": "Lern den Klopfsalat-Witz auswendig und erzähl ihn heute jemandem auf Deutsch."
+    },
+    "es": {
+     "t": "Humor y juegos de palabras",
+     "g": "Disfruta de los juegos de palabras y Kalauer, y cuestiona el mito de que los alemanes no tienen humor.",
+     "p": [
+      "Un Wortspiel juega con dobles sentidos: Was ist grün und klopft an die Tür? Ein Klopfsalat! (Kopfsalat = lechuga)",
+      "Un Kalauer es un chiste malo que hace resoplar. Loriot y Heinz Erhardt son clásicos del humor alemán.",
+      "El humor alemán suele ser seco e irónico: Na super, schon wieder Regen. La ironía depende del tono."
+     ],
+     "q": "Cuéntame un chiste o juego de palabras de tu idioma e intenta explicar por qué tiene gracia.",
+     "c": "Apréndete el chiste del Klopfsalat y cuéntaselo hoy a alguien en alemán."
+    },
+    "fr": {
+     "t": "Humour et jeux de mots",
+     "g": "Savourer les jeux de mots et Kalauer, et remettre en cause le mythe des Allemands sans humour.",
+     "p": [
+      "Un Wortspiel joue sur le double sens : Was ist grün und klopft an die Tür? Ein Klopfsalat! (Kopfsalat = laitue)",
+      "Un Kalauer est un calembour lourd qui fait soupirer. Loriot et Heinz Erhardt sont des classiques de l'humour allemand.",
+      "L'humour allemand est souvent pince-sans-rire : Na super, schon wieder Regen. L'ironie dépend du ton."
+     ],
+     "q": "Raconte-moi une blague ou un jeu de mots de ta langue et explique pourquoi c'est drôle.",
+     "c": "Apprends la blague du Klopfsalat par cœur et raconte-la à quelqu'un aujourd'hui en allemand."
+    },
+    "it": {
+     "t": "Umorismo e giochi di parole",
+     "g": "Goditi giochi di parole e Kalauer, e metti in dubbio il mito dei tedeschi senza umorismo.",
+     "p": [
+      "Un Wortspiel gioca sui doppi sensi: Was ist grün und klopft an die Tür? Ein Klopfsalat! (Kopfsalat = lattuga)",
+      "Un Kalauer è una battuta scontata che fa sbuffare. Loriot e Heinz Erhardt sono classici dell'umorismo tedesco.",
+      "L'umorismo tedesco è spesso secco e ironico: Na super, schon wieder Regen. L'ironia dipende dal tono."
+     ],
+     "q": "Raccontami una barzelletta o un gioco di parole della tua lingua e spiega perché fa ridere.",
+     "c": "Impara a memoria la battuta del Klopfsalat e raccontala oggi a qualcuno in tedesco."
+    },
+    "pt": {
+     "t": "Humor e trocadilhos",
+     "g": "Apreciar trocadilhos e Kalauer, e questionar o mito de que os alemães não têm humor.",
+     "p": [
+      "Um Wortspiel brinca com duplos sentidos: Was ist grün und klopft an die Tür? Ein Klopfsalat! (Kopfsalat = alface)",
+      "Um Kalauer é uma piada seca que faz suspirar. Loriot e Heinz Erhardt são clássicos do humor alemão.",
+      "O humor alemão é muitas vezes seco e irónico: Na super, schon wieder Regen. A ironia depende do tom."
+     ],
+     "q": "Conta-me uma piada ou trocadilho da tua língua e tenta explicar porque tem graça.",
+     "c": "Decora a piada do Klopfsalat e conta-a hoje a alguém em alemão."
+    },
+    "pt_BR": {
+     "t": "Humor e trocadilhos",
+     "g": "Curtir trocadilhos e Kalauer, e questionar o mito de que alemão não tem humor.",
+     "p": [
+      "Um Wortspiel brinca com duplo sentido: Was ist grün und klopft an die Tür? Ein Klopfsalat! (Kopfsalat = alface)",
+      "Um Kalauer é uma piada de tiozão que faz a gente gemer. Loriot e Heinz Erhardt são clássicos do humor alemão.",
+      "O humor alemão costuma ser seco e irônico: Na super, schon wieder Regen. A ironia depende do tom."
+     ],
+     "q": "Me conte uma piada ou trocadilho da sua língua e tente explicar por que é engraçado.",
+     "c": "Decore a piada do Klopfsalat e conte para alguém hoje em alemão."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "das Wortspiel",
+      "ex": "Der Werbespruch ist ein cleveres Wortspiel."
+     },
+     {
+      "w": "der Kalauer",
+      "ex": "Mein Vater erzählt gern alte Kalauer."
+     },
+     {
+      "w": "die Pointe",
+      "ex": "Ich habe die Pointe nicht verstanden."
+     },
+     {
+      "w": "ironisch",
+      "ex": "Das war ironisch gemeint, keine Sorge!"
+     },
+     {
+      "w": "der Witz",
+      "ex": "Kennst du einen guten Witz über Lehrer?"
+     },
+     {
+      "w": "sich totlachen",
+      "ex": "Bei dem Film haben wir uns fast totgelacht."
+     }
+    ],
+    "gram": "Ironie durch Partikeln und Tonfall: Na super! Das hat ja toll geklappt. Wörtlich positiv, gemeint negativ."
+   }
+  },
+  {
+   "d": 323,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Dialects of German",
+     "g": "Get an overview of German dialects: Bairisch, Sächsisch, Schwäbisch, Plattdeutsch.",
+     "p": [
+      "Bairisch in Bavaria and Austria: Servus! Grüß Gott! I mog di. Schwäbisch in the southwest loves -le: Häusle, Spätzle.",
+      "Sächsisch in Saxony is soft and melodic; Plattdeutsch in the north is close to Dutch: Moin! Wat is dat?",
+      "Everyone learns Hochdeutsch at school, so you can always ask: Können Sie das bitte auf Hochdeutsch sagen?"
+     ],
+     "q": "Is there a strong dialect in your country? Do you speak it, and what do people think of it?",
+     "c": "Find a short video or song in a German dialect and note three words that sound different from Hochdeutsch."
+    },
+    "de": {
+     "t": "Deutsche Dialekte",
+     "g": "Du bekommst einen Überblick über Dialekte: Bairisch, Sächsisch, Schwäbisch, Plattdeutsch.",
+     "p": [
+      "Bairisch in Bayern und Österreich: Servus! Grüß Gott! I mog di. Schwäbisch im Südwesten liebt -le: Häusle, Spätzle.",
+      "Sächsisch in Sachsen klingt weich und melodisch; Plattdeutsch im Norden ist dem Niederländischen nah: Moin! Wat is dat?",
+      "Hochdeutsch lernt jeder in der Schule, du kannst also fragen: Können Sie das bitte auf Hochdeutsch sagen?"
+     ],
+     "q": "Gibt es in deinem Land einen starken Dialekt? Sprichst du ihn, und was denken die Leute darüber?",
+     "c": "Such ein kurzes Video oder Lied im Dialekt und notier drei Wörter, die anders klingen als im Hochdeutschen."
+    },
+    "es": {
+     "t": "Dialectos del alemán",
+     "g": "Conoce los dialectos alemanes: Bairisch, Sächsisch, Schwäbisch, Plattdeutsch.",
+     "p": [
+      "Bairisch en Baviera y Austria: Servus! Grüß Gott! I mog di. El Schwäbisch del suroeste adora el -le: Häusle, Spätzle.",
+      "El Sächsisch de Sajonia es suave y melódico; el Plattdeutsch del norte se parece al neerlandés: Moin! Wat is dat?",
+      "Todos aprenden Hochdeutsch en la escuela, así que siempre puedes pedir: Können Sie das bitte auf Hochdeutsch sagen?"
+     ],
+     "q": "¿Hay un dialecto fuerte en tu país? ¿Lo hablas y qué opina la gente de él?",
+     "c": "Busca un vídeo o canción corta en dialecto alemán y anota tres palabras que suenen distinto al Hochdeutsch."
+    },
+    "fr": {
+     "t": "Les dialectes allemands",
+     "g": "Avoir une vue d'ensemble : Bairisch, Sächsisch, Schwäbisch, Plattdeutsch.",
+     "p": [
+      "Le Bairisch en Bavière et en Autriche : Servus! Grüß Gott! I mog di. Le Schwäbisch du sud-ouest adore le -le : Häusle, Spätzle.",
+      "Le Sächsisch de Saxe est doux et chantant ; le Plattdeutsch du nord ressemble au néerlandais : Moin! Wat is dat?",
+      "Tout le monde apprend le Hochdeutsch à l'école, tu peux donc demander : Können Sie das bitte auf Hochdeutsch sagen?"
+     ],
+     "q": "Y a-t-il un dialecte fort dans ton pays ? Le parles-tu, et qu'en pensent les gens ?",
+     "c": "Trouve une courte vidéo ou chanson en dialecte et note trois mots qui sonnent différemment du Hochdeutsch."
+    },
+    "it": {
+     "t": "I dialetti tedeschi",
+     "g": "Una panoramica dei dialetti: Bairisch, Sächsisch, Schwäbisch, Plattdeutsch.",
+     "p": [
+      "Il Bairisch in Baviera e Austria: Servus! Grüß Gott! I mog di. Lo Schwäbisch del sud-ovest ama il -le: Häusle, Spätzle.",
+      "Il Sächsisch della Sassonia è morbido e melodico; il Plattdeutsch del nord somiglia all'olandese: Moin! Wat is dat?",
+      "Tutti imparano lo Hochdeutsch a scuola, quindi puoi sempre chiedere: Können Sie das bitte auf Hochdeutsch sagen?"
+     ],
+     "q": "Nel tuo paese c'è un dialetto forte? Lo parli e cosa ne pensa la gente?",
+     "c": "Trova un breve video o una canzone in dialetto e annota tre parole che suonano diverse dallo Hochdeutsch."
+    },
+    "pt": {
+     "t": "Dialetos do alemão",
+     "g": "Ter uma visão geral dos dialetos: Bairisch, Sächsisch, Schwäbisch, Plattdeutsch.",
+     "p": [
+      "Bairisch na Baviera e na Áustria: Servus! Grüß Gott! I mog di. O Schwäbisch do sudoeste adora o -le: Häusle, Spätzle.",
+      "O Sächsisch da Saxónia é suave e melódico; o Plattdeutsch do norte parece neerlandês: Moin! Wat is dat?",
+      "Todos aprendem Hochdeutsch na escola, por isso podes sempre pedir: Können Sie das bitte auf Hochdeutsch sagen?"
+     ],
+     "q": "Há um dialeto forte no teu país? Falas esse dialeto e o que pensam as pessoas dele?",
+     "c": "Procura um vídeo ou canção curta num dialeto alemão e anota três palavras que soam diferentes do Hochdeutsch."
+    },
+    "pt_BR": {
+     "t": "Dialetos do alemão",
+     "g": "Ter uma visão geral dos dialetos: Bairisch, Sächsisch, Schwäbisch, Plattdeutsch.",
+     "p": [
+      "Bairisch na Baviera e na Áustria: Servus! Grüß Gott! I mog di. O Schwäbisch do sudoeste adora o -le: Häusle, Spätzle.",
+      "O Sächsisch da Saxônia é suave e melódico; o Plattdeutsch do norte lembra o holandês: Moin! Wat is dat?",
+      "Todo mundo aprende Hochdeutsch na escola, então você sempre pode pedir: Können Sie das bitte auf Hochdeutsch sagen?"
+     ],
+     "q": "Existe um sotaque ou dialeto forte no seu país? Você fala, e o que as pessoas acham dele?",
+     "c": "Procure um vídeo ou música curta num dialeto alemão e anote três palavras que soam diferentes do Hochdeutsch."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "der Dialekt",
+      "ex": "Meine Großeltern sprechen noch einen starken Dialekt."
+     },
+     {
+      "w": "das Hochdeutsch",
+      "ex": "In den Nachrichten spricht man Hochdeutsch."
+     },
+     {
+      "w": "Grüß Gott!",
+      "ex": "In Bayern sagt man oft Grüß Gott statt Guten Tag."
+     },
+     {
+      "w": "Moin!",
+      "ex": "In Hamburg grüßt man den ganzen Tag mit Moin."
+     },
+     {
+      "w": "der Akzent",
+      "ex": "Man hört an ihrem Akzent, dass sie aus Sachsen kommt."
+     },
+     {
+      "w": "die Mundart",
+      "ex": "Im Dorf wird noch Mundart gesprochen."
+     }
+    ],
+    "gram": "Diminutiv: hochdeutsch -chen/-lein (Häuschen), schwäbisch -le (Häusle), bairisch -erl (Hauserl). Diminutive sind immer sächlich."
+   }
+  },
+  {
+   "d": 324,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Swiss German in depth",
+     "g": "Understand Schwiizerdütsch: Swiss German in speech versus standard German in writing.",
+     "p": [
+      "In German-speaking Switzerland people speak Schwiizerdütsch every day but mostly write Hochdeutsch.",
+      "Typical words: Grüezi (hello), Merci vielmal (thank you), Chuchichäschtli (kitchen cupboard), es Velo (a bike).",
+      "Swiss standard German has its own words: das Trottoir (pavement), parkieren (to park), and no ß, only ss."
+     ],
+     "q": "Do you know other places where people speak one language and write another?",
+     "c": "Learn Grüezi, Merci vielmal and Uf Widerluege and greet someone with them today, Swiss style."
+    },
+    "de": {
+     "t": "Schweizerdeutsch genauer",
+     "g": "Du verstehst Schwiizerdütsch: Mundart beim Sprechen, Hochdeutsch beim Schreiben.",
+     "p": [
+      "In der Deutschschweiz spricht man im Alltag Schwiizerdütsch, schreibt aber meist Hochdeutsch.",
+      "Typische Wörter: Grüezi (Hallo), Merci vielmal (danke), Chuchichäschtli (Küchenschrank), es Velo (ein Fahrrad).",
+      "Schweizer Hochdeutsch hat eigene Wörter: das Trottoir (Gehweg), parkieren (parken) und kein ß, nur ss."
+     ],
+     "q": "Kennst du andere Orte, wo man eine Sprache spricht und eine andere schreibt?",
+     "c": "Lern Grüezi, Merci vielmal und Uf Widerluege und begrüß heute jemanden auf Schweizer Art."
+    },
+    "es": {
+     "t": "El alemán suizo a fondo",
+     "g": "Entiende el Schwiizerdütsch: dialecto al hablar y alemán estándar al escribir.",
+     "p": [
+      "En la Suiza germanófona se habla Schwiizerdütsch a diario, pero se escribe sobre todo en Hochdeutsch.",
+      "Palabras típicas: Grüezi (hola), Merci vielmal (gracias), Chuchichäschtli (armario de cocina), es Velo (una bici).",
+      "El alemán estándar suizo tiene palabras propias: das Trottoir (acera), parkieren (aparcar) y no usa ß, solo ss."
+     ],
+     "q": "¿Conoces otros lugares donde se habla una lengua y se escribe otra?",
+     "c": "Aprende Grüezi, Merci vielmal y Uf Widerluege y saluda hoy a alguien al estilo suizo."
+    },
+    "fr": {
+     "t": "Le suisse allemand en détail",
+     "g": "Comprendre le Schwiizerdütsch : dialecte à l'oral, allemand standard à l'écrit.",
+     "p": [
+      "En Suisse alémanique, on parle Schwiizerdütsch au quotidien mais on écrit surtout en Hochdeutsch.",
+      "Mots typiques : Grüezi (bonjour), Merci vielmal (merci), Chuchichäschtli (placard de cuisine), es Velo (un vélo).",
+      "L'allemand standard suisse a ses mots : das Trottoir, parkieren (se garer) et pas de ß, seulement ss."
+     ],
+     "q": "Connais-tu d'autres endroits où l'on parle une langue et en écrit une autre ?",
+     "c": "Apprends Grüezi, Merci vielmal et Uf Widerluege et salue quelqu'un aujourd'hui à la suisse."
+    },
+    "it": {
+     "t": "Lo svizzero tedesco a fondo",
+     "g": "Capisci lo Schwiizerdütsch: dialetto nel parlato, tedesco standard nello scritto.",
+     "p": [
+      "Nella Svizzera tedesca si parla Schwiizerdütsch ogni giorno, ma si scrive soprattutto in Hochdeutsch.",
+      "Parole tipiche: Grüezi (ciao), Merci vielmal (grazie), Chuchichäschtli (pensile da cucina), es Velo (una bici).",
+      "Il tedesco standard svizzero ha parole sue: das Trottoir (marciapiede), parkieren (parcheggiare) e niente ß, solo ss."
+     ],
+     "q": "Conosci altri posti dove si parla una lingua e se ne scrive un'altra?",
+     "c": "Impara Grüezi, Merci vielmal e Uf Widerluege e saluta oggi qualcuno alla svizzera."
+    },
+    "pt": {
+     "t": "O alemão suíço a fundo",
+     "g": "Perceber o Schwiizerdütsch: dialeto na fala, alemão padrão na escrita.",
+     "p": [
+      "Na Suíça alemã fala-se Schwiizerdütsch no dia a dia, mas escreve-se sobretudo em Hochdeutsch.",
+      "Palavras típicas: Grüezi (olá), Merci vielmal (obrigado), Chuchichäschtli (armário de cozinha), es Velo (uma bicicleta).",
+      "O alemão padrão suíço tem palavras próprias: das Trottoir (passeio), parkieren (estacionar) e não usa ß, só ss."
+     ],
+     "q": "Conheces outros lugares onde se fala uma língua e se escreve outra?",
+     "c": "Aprende Grüezi, Merci vielmal e Uf Widerluege e cumprimenta hoje alguém à moda suíça."
+    },
+    "pt_BR": {
+     "t": "O alemão suíço a fundo",
+     "g": "Entender o Schwiizerdütsch: dialeto na fala, alemão padrão na escrita.",
+     "p": [
+      "Na Suíça alemã se fala Schwiizerdütsch no dia a dia, mas se escreve principalmente em Hochdeutsch.",
+      "Palavras típicas: Grüezi (oi), Merci vielmal (obrigado), Chuchichäschtli (armário de cozinha), es Velo (uma bicicleta).",
+      "O alemão padrão suíço tem palavras próprias: das Trottoir (calçada), parkieren (estacionar) e não usa ß, só ss."
+     ],
+     "q": "Você conhece outros lugares onde se fala uma língua e se escreve outra?",
+     "c": "Aprenda Grüezi, Merci vielmal e Uf Widerluege e cumprimente alguém hoje ao estilo suíço."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "Grüezi",
+      "ex": "Grüezi, wie geht es Ihnen?"
+     },
+     {
+      "w": "Merci vielmal",
+      "ex": "Merci vielmal für die Einladung!"
+     },
+     {
+      "w": "das Velo",
+      "ex": "In Zürich fahre ich jeden Tag mit dem Velo."
+     },
+     {
+      "w": "parkieren",
+      "ex": "Hier darf man nicht parkieren."
+     },
+     {
+      "w": "das Trottoir",
+      "ex": "Bitte bleib auf dem Trottoir."
+     },
+     {
+      "w": "die Deutschschweiz",
+      "ex": "In der Deutschschweiz spricht man im Alltag Dialekt."
+     }
+    ],
+    "gram": "Schweizer Schreibung: immer ss statt ß (die Strasse, gross). Viele Lehnwörter aus dem Französischen: Velo, Trottoir, merci."
+   }
+  },
+  {
+   "d": 325,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Austrian culture",
+     "g": "Discover Austrian coffee house culture, Wiener Schmäh and Austrian politeness.",
+     "p": [
+      "The Viennese Kaffeehaus is UNESCO intangible heritage: you can sit for hours over one Melange and read the papers.",
+      "Wiener Schmäh is Vienna's charming, ironic, slightly grumpy humour. Don't take it personally, enjoy it!",
+      "Austrians love titles and polite forms: Grüß Gott, Herr Magister! Also Austrian words: Jänner, Paradeiser, Erdäpfel."
+     ],
+     "q": "What is the café culture like where you live? Would you enjoy a Viennese Kaffeehaus?",
+     "c": "Order in your head in a Viennese café: greet, order a Melange and an Apfelstrudel, and ask for the bill."
+    },
+    "de": {
+     "t": "Österreichische Kultur",
+     "g": "Du entdeckst Kaffeehauskultur, Wiener Schmäh und österreichische Höflichkeit.",
+     "p": [
+      "Das Wiener Kaffeehaus ist immaterielles UNESCO-Kulturerbe: Man sitzt stundenlang bei einer Melange und liest Zeitung.",
+      "Der Wiener Schmäh ist charmanter, ironischer, leicht grantiger Humor. Nicht persönlich nehmen, genießen!",
+      "Man liebt Titel und Höflichkeit: Grüß Gott, Herr Magister! Österreichische Wörter: Jänner, Paradeiser, Erdäpfel."
+     ],
+     "q": "Wie ist die Cafékultur dort, wo du lebst? Würde dir ein Wiener Kaffeehaus gefallen?",
+     "c": "Bestell im Kopf in einem Wiener Café: grüßen, eine Melange und einen Apfelstrudel bestellen, zahlen."
+    },
+    "es": {
+     "t": "Cultura austriaca",
+     "g": "Descubre la cultura del café, el Wiener Schmäh y la cortesía austriaca.",
+     "p": [
+      "El café vienés es patrimonio inmaterial de la UNESCO: puedes pasar horas con una Melange leyendo el periódico.",
+      "El Wiener Schmäh es el humor vienés: encantador, irónico y algo gruñón. ¡No te lo tomes a mal, disfrútalo!",
+      "A los austriacos les encantan los títulos: Grüß Gott, Herr Magister! Y palabras propias: Jänner, Paradeiser, Erdäpfel."
+     ],
+     "q": "¿Cómo es la cultura de café donde vives? ¿Te gustaría un café vienés?",
+     "c": "Pide mentalmente en un café vienés: saluda, pide una Melange y un Apfelstrudel y pide la cuenta."
+    },
+    "fr": {
+     "t": "Culture autrichienne",
+     "g": "Découvrir la culture des cafés, le Wiener Schmäh et la politesse autrichienne.",
+     "p": [
+      "Le café viennois est patrimoine immatériel de l'UNESCO : on y reste des heures devant une Melange à lire le journal.",
+      "Le Wiener Schmäh est l'humour viennois : charmant, ironique, un peu ronchon. Ne le prends pas mal, savoure-le !",
+      "Les Autrichiens aiment les titres : Grüß Gott, Herr Magister! Mots autrichiens : Jänner, Paradeiser, Erdäpfel."
+     ],
+     "q": "Comment est la culture des cafés chez toi ? Aimerais-tu un café viennois ?",
+     "c": "Commande en pensée dans un café viennois : salue, commande une Melange et un Apfelstrudel, demande l'addition."
+    },
+    "it": {
+     "t": "Cultura austriaca",
+     "g": "Scopri la cultura dei caffè, il Wiener Schmäh e la cortesia austriaca.",
+     "p": [
+      "Il caffè viennese è patrimonio immateriale UNESCO: si resta ore con una Melange a leggere il giornale.",
+      "Il Wiener Schmäh è l'umorismo viennese: affascinante, ironico, un po' brontolone. Non prenderla male, goditelo!",
+      "Gli austriaci amano i titoli: Grüß Gott, Herr Magister! Parole austriache: Jänner, Paradeiser, Erdäpfel."
+     ],
+     "q": "Com'è la cultura del caffè dove vivi? Ti piacerebbe un Kaffeehaus viennese?",
+     "c": "Ordina mentalmente in un caffè viennese: saluta, ordina una Melange e un Apfelstrudel e chiedi il conto."
+    },
+    "pt": {
+     "t": "Cultura austríaca",
+     "g": "Descobrir a cultura dos cafés, o Wiener Schmäh e a cortesia austríaca.",
+     "p": [
+      "O café vienense é património imaterial da UNESCO: fica-se horas com uma Melange a ler o jornal.",
+      "O Wiener Schmäh é o humor vienense: encantador, irónico e um pouco rabugento. Não leves a mal, aproveita!",
+      "Os austríacos adoram títulos: Grüß Gott, Herr Magister! Palavras austríacas: Jänner, Paradeiser, Erdäpfel."
+     ],
+     "q": "Como é a cultura de café onde vives? Gostarias de um café vienense?",
+     "c": "Faz um pedido mental num café vienense: cumprimenta, pede uma Melange e um Apfelstrudel e pede a conta."
+    },
+    "pt_BR": {
+     "t": "Cultura austríaca",
+     "g": "Descobrir a cultura dos cafés, o Wiener Schmäh e a cortesia austríaca.",
+     "p": [
+      "O café vienense é patrimônio imaterial da UNESCO: dá para ficar horas com uma Melange lendo jornal.",
+      "O Wiener Schmäh é o humor vienense: charmoso, irônico e meio ranzinza. Não leve a mal, curta!",
+      "Os austríacos adoram títulos: Grüß Gott, Herr Magister! Palavras austríacas: Jänner, Paradeiser, Erdäpfel."
+     ],
+     "q": "Como é a cultura de café onde você mora? Você curtiria um café vienense?",
+     "c": "Faça um pedido mental num café vienense: cumprimente, peça uma Melange e um Apfelstrudel e peça a conta."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "das Kaffeehaus",
+      "ex": "Im Kaffeehaus kann man stundenlang sitzen."
+     },
+     {
+      "w": "die Melange",
+      "ex": "Eine Melange und ein Glas Wasser, bitte."
+     },
+     {
+      "w": "der Schmäh",
+      "ex": "Der Kellner hatte viel Schmäh."
+     },
+     {
+      "w": "der Paradeiser",
+      "ex": "In Wien sagt man Paradeiser statt Tomate."
+     },
+     {
+      "w": "der Jänner",
+      "ex": "Im Jänner ist es in Wien oft kalt."
+     },
+     {
+      "w": "Zahlen, bitte!",
+      "ex": "Herr Ober, zahlen, bitte!"
+     }
+    ],
+    "gram": "Österreichisches Deutsch: eigene Wörter (Jänner, Erdäpfel); Perfekt mit sein bei sitzen, stehen, liegen: Ich bin im Café gesessen."
+   }
+  },
+  {
+   "d": 326,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Gender-inclusive German",
+     "g": "Understand gender-inclusive forms: Lehrerinnen und Lehrer, Studierende and others.",
+     "p": [
+      "Pair form: Lehrerinnen und Lehrer, Liebe Kolleginnen und Kollegen. Clear and accepted everywhere.",
+      "Neutral forms: Studierende, Lehrende, die Lehrkraft, das Team. They avoid choosing a gender.",
+      "Written forms like Lehrer*innen or Lehrer:innen are common in some media, but their use is debated and not official."
+     ],
+     "q": "How does your language deal with masculine and feminine forms for jobs and groups?",
+     "c": "Rewrite Liebe Lehrer, liebe Schüler! in two inclusive ways: with a pair form and with neutral words."
+    },
+    "de": {
+     "t": "Geschlechtergerechte Sprache",
+     "g": "Du verstehst inklusive Formen: Lehrerinnen und Lehrer, Studierende und andere.",
+     "p": [
+      "Paarform: Lehrerinnen und Lehrer, Liebe Kolleginnen und Kollegen. Klar und überall akzeptiert.",
+      "Neutrale Formen: Studierende, Lehrende, die Lehrkraft, das Team. So wählt man kein Geschlecht.",
+      "Schreibweisen wie Lehrer*innen oder Lehrer:innen sieht man in manchen Medien; sie sind umstritten und nicht amtlich."
+     ],
+     "q": "Wie geht deine Sprache mit männlichen und weiblichen Formen für Berufe und Gruppen um?",
+     "c": "Schreib Liebe Lehrer, liebe Schüler! auf zwei inklusive Arten um: mit Paarform und mit neutralen Wörtern."
+    },
+    "es": {
+     "t": "El alemán inclusivo",
+     "g": "Entiende las formas inclusivas: Lehrerinnen und Lehrer, Studierende y otras.",
+     "p": [
+      "Forma doble: Lehrerinnen und Lehrer, Liebe Kolleginnen und Kollegen. Clara y aceptada en todas partes.",
+      "Formas neutras: Studierende, Lehrende, die Lehrkraft, das Team. Evitan elegir un género.",
+      "Grafías como Lehrer*innen o Lehrer:innen aparecen en algunos medios, pero su uso es debatido y no oficial."
+     ],
+     "q": "¿Cómo trata tu idioma las formas masculinas y femeninas de profesiones y grupos?",
+     "c": "Reescribe Liebe Lehrer, liebe Schüler! de dos formas inclusivas: con forma doble y con palabras neutras."
+    },
+    "fr": {
+     "t": "L'allemand inclusif",
+     "g": "Comprendre les formes inclusives : Lehrerinnen und Lehrer, Studierende et autres.",
+     "p": [
+      "Forme double : Lehrerinnen und Lehrer, Liebe Kolleginnen und Kollegen. Claire et acceptée partout.",
+      "Formes neutres : Studierende, Lehrende, die Lehrkraft, das Team. Elles évitent de choisir un genre.",
+      "Les graphies Lehrer*innen ou Lehrer:innen existent dans certains médias, mais elles sont débattues et non officielles."
+     ],
+     "q": "Comment ta langue gère-t-elle le masculin et le féminin pour les métiers et les groupes ?",
+     "c": "Réécris Liebe Lehrer, liebe Schüler! de deux façons inclusives : forme double et mots neutres."
+    },
+    "it": {
+     "t": "Il tedesco inclusivo",
+     "g": "Capisci le forme inclusive: Lehrerinnen und Lehrer, Studierende e altre.",
+     "p": [
+      "Forma doppia: Lehrerinnen und Lehrer, Liebe Kolleginnen und Kollegen. Chiara e accettata ovunque.",
+      "Forme neutre: Studierende, Lehrende, die Lehrkraft, das Team. Evitano di scegliere un genere.",
+      "Grafie come Lehrer*innen o Lehrer:innen compaiono in alcuni media, ma sono discusse e non ufficiali."
+     ],
+     "q": "Come gestisce la tua lingua il maschile e il femminile per professioni e gruppi?",
+     "c": "Riscrivi Liebe Lehrer, liebe Schüler! in due modi inclusivi: con la forma doppia e con parole neutre."
+    },
+    "pt": {
+     "t": "O alemão inclusivo",
+     "g": "Perceber as formas inclusivas: Lehrerinnen und Lehrer, Studierende e outras.",
+     "p": [
+      "Forma dupla: Lehrerinnen und Lehrer, Liebe Kolleginnen und Kollegen. Clara e aceite em todo o lado.",
+      "Formas neutras: Studierende, Lehrende, die Lehrkraft, das Team. Evitam escolher um género.",
+      "Grafias como Lehrer*innen ou Lehrer:innen aparecem em alguns meios, mas o seu uso é debatido e não oficial."
+     ],
+     "q": "Como trata a tua língua as formas masculinas e femininas de profissões e grupos?",
+     "c": "Reescreve Liebe Lehrer, liebe Schüler! de duas formas inclusivas: com forma dupla e com palavras neutras."
+    },
+    "pt_BR": {
+     "t": "O alemão inclusivo",
+     "g": "Entender as formas inclusivas: Lehrerinnen und Lehrer, Studierende e outras.",
+     "p": [
+      "Forma dupla: Lehrerinnen und Lehrer, Liebe Kolleginnen und Kollegen. Clara e aceita em todo lugar.",
+      "Formas neutras: Studierende, Lehrende, die Lehrkraft, das Team. Evitam escolher um gênero.",
+      "Grafias como Lehrer*innen ou Lehrer:innen aparecem em alguns veículos, mas o uso é debatido e não oficial."
+     ],
+     "q": "Como sua língua lida com formas masculinas e femininas de profissões e grupos?",
+     "c": "Reescreva Liebe Lehrer, liebe Schüler! de duas formas inclusivas: com forma dupla e com palavras neutras."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "Kolleginnen und Kollegen",
+      "ex": "Liebe Kolleginnen und Kollegen, herzlich willkommen!"
+     },
+     {
+      "w": "die Studierenden",
+      "ex": "Die Studierenden schreiben heute eine Klausur."
+     },
+     {
+      "w": "die Lehrkraft",
+      "ex": "Jede Lehrkraft bekommt einen neuen Laptop."
+     },
+     {
+      "w": "die Mitarbeitenden",
+      "ex": "Alle Mitarbeitenden sind zum Sommerfest eingeladen."
+     },
+     {
+      "w": "geschlechtergerecht",
+      "ex": "Viele Behörden formulieren geschlechtergerecht."
+     },
+     {
+      "w": "die Paarform",
+      "ex": "Die Paarform ist lang, aber sehr klar."
+     }
+    ],
+    "gram": "Partizip I als Nomen: studieren → die Studierenden (Plural), ein Studierender, eine Studierende. Endung wie beim Adjektiv."
+   }
+  },
+  {
+   "d": 327,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Anglicisms in German",
+     "g": "Spot English words in German and learn their German alternatives.",
+     "p": [
+      "Common anglicisms: das Meeting, downloaden, chillen, das Handy (not used in English!), cool, der Job.",
+      "German verbs from English take German endings: Ich habe die Datei gedownloadet / heruntergeladen.",
+      "Alternatives: die Besprechung (Meeting), herunterladen (downloaden), sich entspannen (chillen), die Veranstaltung (Event)."
+     ],
+     "q": "Which English words do you use in your own language every day?",
+     "c": "Write three sentences full of anglicisms, then rewrite them using only German alternatives."
+    },
+    "de": {
+     "t": "Anglizismen im Deutschen",
+     "g": "Du erkennst englische Wörter im Deutschen und lernst deutsche Alternativen.",
+     "p": [
+      "Häufige Anglizismen: das Meeting, downloaden, chillen, das Handy (im Englischen unbekannt!), cool, der Job.",
+      "Verben aus dem Englischen bekommen deutsche Endungen: Ich habe die Datei gedownloadet / heruntergeladen.",
+      "Alternativen: die Besprechung (Meeting), herunterladen (downloaden), sich entspannen (chillen), die Veranstaltung (Event)."
+     ],
+     "q": "Welche englischen Wörter benutzt du jeden Tag in deiner eigenen Sprache?",
+     "c": "Schreib drei Sätze voller Anglizismen und formuliere sie dann nur mit deutschen Alternativen."
+    },
+    "es": {
+     "t": "Anglicismos en alemán",
+     "g": "Descubre las palabras inglesas del alemán y sus alternativas alemanas.",
+     "p": [
+      "Anglicismos comunes: das Meeting, downloaden, chillen, das Handy (¡no existe en inglés!), cool, der Job.",
+      "Los verbos ingleses toman terminaciones alemanas: Ich habe die Datei gedownloadet / heruntergeladen.",
+      "Alternativas: die Besprechung (Meeting), herunterladen (downloaden), sich entspannen (chillen), die Veranstaltung (Event)."
+     ],
+     "q": "¿Qué palabras inglesas usas cada día en tu idioma?",
+     "c": "Escribe tres frases llenas de anglicismos y reescríbelas solo con alternativas alemanas."
+    },
+    "fr": {
+     "t": "Les anglicismes en allemand",
+     "g": "Repérer les mots anglais en allemand et apprendre leurs équivalents allemands.",
+     "p": [
+      "Anglicismes courants : das Meeting, downloaden, chillen, das Handy (inconnu en anglais !), cool, der Job.",
+      "Les verbes anglais prennent des terminaisons allemandes : Ich habe die Datei gedownloadet / heruntergeladen.",
+      "Équivalents : die Besprechung (Meeting), herunterladen (downloaden), sich entspannen (chillen), die Veranstaltung (Event)."
+     ],
+     "q": "Quels mots anglais utilises-tu chaque jour dans ta langue ?",
+     "c": "Écris trois phrases pleines d'anglicismes, puis réécris-les seulement avec des équivalents allemands."
+    },
+    "it": {
+     "t": "Anglicismi in tedesco",
+     "g": "Riconosci le parole inglesi nel tedesco e impara le alternative tedesche.",
+     "p": [
+      "Anglicismi comuni: das Meeting, downloaden, chillen, das Handy (in inglese non esiste!), cool, der Job.",
+      "I verbi inglesi prendono desinenze tedesche: Ich habe die Datei gedownloadet / heruntergeladen.",
+      "Alternative: die Besprechung (Meeting), herunterladen (downloaden), sich entspannen (chillen), die Veranstaltung (Event)."
+     ],
+     "q": "Quali parole inglesi usi ogni giorno nella tua lingua?",
+     "c": "Scrivi tre frasi piene di anglicismi e poi riscrivile solo con alternative tedesche."
+    },
+    "pt": {
+     "t": "Anglicismos em alemão",
+     "g": "Identificar palavras inglesas no alemão e aprender as alternativas alemãs.",
+     "p": [
+      "Anglicismos comuns: das Meeting, downloaden, chillen, das Handy (não existe em inglês!), cool, der Job.",
+      "Os verbos ingleses levam terminações alemãs: Ich habe die Datei gedownloadet / heruntergeladen.",
+      "Alternativas: die Besprechung (Meeting), herunterladen (downloaden), sich entspannen (chillen), die Veranstaltung (Event)."
+     ],
+     "q": "Que palavras inglesas usas todos os dias na tua língua?",
+     "c": "Escreve três frases cheias de anglicismos e reescreve-as só com alternativas alemãs."
+    },
+    "pt_BR": {
+     "t": "Anglicismos no alemão",
+     "g": "Identificar palavras inglesas no alemão e aprender as alternativas alemãs.",
+     "p": [
+      "Anglicismos comuns: das Meeting, downloaden, chillen, das Handy (não existe em inglês!), cool, der Job.",
+      "Os verbos ingleses ganham terminações alemãs: Ich habe die Datei gedownloadet / heruntergeladen.",
+      "Alternativas: die Besprechung (Meeting), herunterladen (downloaden), sich entspannen (chillen), die Veranstaltung (Event)."
+     ],
+     "q": "Quais palavras em inglês você usa todo dia na sua língua?",
+     "c": "Escreva três frases cheias de anglicismos e depois reescreva só com alternativas alemãs."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "der Anglizismus",
+      "ex": "Das Wort Meeting ist ein typischer Anglizismus."
+     },
+     {
+      "w": "das Handy",
+      "ex": "Mein Handy ist leider kaputt."
+     },
+     {
+      "w": "herunterladen",
+      "ex": "Du kannst die App kostenlos herunterladen."
+     },
+     {
+      "w": "die Besprechung",
+      "ex": "Die Besprechung beginnt um zehn Uhr."
+     },
+     {
+      "w": "sich entspannen",
+      "ex": "Nach der Arbeit entspanne ich mich im Park."
+     },
+     {
+      "w": "die Veranstaltung",
+      "ex": "Die Veranstaltung findet im Rathaus statt."
+     }
+    ],
+    "gram": "Englische Verben im Perfekt: ge- + Stamm + -t (gechillt, gedownloadet); Nomen bekommen einen Artikel: das Meeting, der Job."
+   }
+  },
+  {
+   "d": 328,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Spelling traps: ss or ß, das or dass",
+     "g": "Avoid the most common spelling mistakes: ss or ß, das or dass.",
+     "p": [
+      "ß after a long vowel or diphthong: die Straße, groß, heißen. ss after a short vowel: der Fluss, essen, dass.",
+      "das = article or relative pronoun (can be replaced by dieses or welches). dass = conjunction: Ich hoffe, dass...",
+      "Test: Das Buch, das ich lese... (welches works = das). Ich weiß, dass du recht hast (no replacement = dass)."
+     ],
+     "q": "Make a sentence with both das and dass, and tell me why each one is spelled that way.",
+     "c": "Write five sentences that use das, dass, a word with ß and a word with ss correctly."
+    },
+    "de": {
+     "t": "Rechtschreibfallen: ss oder ß, das oder dass",
+     "g": "Du vermeidest typische Fehler: ss oder ß, das oder dass.",
+     "p": [
+      "ß nach langem Vokal oder Doppellaut: die Straße, groß, heißen. ss nach kurzem Vokal: der Fluss, essen, dass.",
+      "das = Artikel oder Relativpronomen (ersetzbar durch dieses oder welches). dass = Konjunktion: Ich hoffe, dass...",
+      "Test: Das Buch, das ich lese... (welches passt = das). Ich weiß, dass du recht hast (kein Ersatz = dass)."
+     ],
+     "q": "Bilde einen Satz mit das und dass und erkläre mir, warum sie so geschrieben werden.",
+     "c": "Schreib fünf Sätze, in denen du das, dass, ein Wort mit ß und eins mit ss richtig benutzt."
+    },
+    "es": {
+     "t": "Trampas: ss o ß, das o dass",
+     "g": "Evita los errores ortográficos más comunes: ss o ß, das o dass.",
+     "p": [
+      "ß tras vocal larga o diptongo: die Straße, groß, heißen. ss tras vocal corta: der Fluss, essen, dass.",
+      "das = artículo o pronombre relativo (sustituible por dieses o welches). dass = conjunción: Ich hoffe, dass...",
+      "Prueba: Das Buch, das ich lese... (welches funciona = das). Ich weiß, dass du recht hast (sin sustituto = dass)."
+     ],
+     "q": "Haz una frase con das y dass y explícame por qué se escribe así cada uno.",
+     "c": "Escribe cinco frases que usen bien das, dass, una palabra con ß y otra con ss."
+    },
+    "fr": {
+     "t": "Pièges : ss ou ß, das ou dass",
+     "g": "Éviter les fautes les plus courantes : ss ou ß, das ou dass.",
+     "p": [
+      "ß après une voyelle longue ou une diphtongue : die Straße, groß, heißen. ss après une voyelle brève : der Fluss, essen, dass.",
+      "das = article ou pronom relatif (remplaçable par dieses ou welches). dass = conjonction : Ich hoffe, dass...",
+      "Test : Das Buch, das ich lese... (welches marche = das). Ich weiß, dass du recht hast (aucun remplacement = dass)."
+     ],
+     "q": "Fais une phrase avec das et dass, et explique-moi pourquoi chacun s'écrit ainsi.",
+     "c": "Écris cinq phrases utilisant correctement das, dass, un mot avec ß et un mot avec ss."
+    },
+    "it": {
+     "t": "Trappole: ss o ß, das o dass",
+     "g": "Evita gli errori di ortografia più comuni: ss o ß, das o dass.",
+     "p": [
+      "ß dopo vocale lunga o dittongo: die Straße, groß, heißen. ss dopo vocale breve: der Fluss, essen, dass.",
+      "das = articolo o pronome relativo (sostituibile con dieses o welches). dass = congiunzione: Ich hoffe, dass...",
+      "Prova: Das Buch, das ich lese... (welches funziona = das). Ich weiß, dass du recht hast (nessun sostituto = dass)."
+     ],
+     "q": "Fai una frase con das e dass e spiegami perché si scrivono così.",
+     "c": "Scrivi cinque frasi che usano correttamente das, dass, una parola con ß e una con ss."
+    },
+    "pt": {
+     "t": "Armadilhas: ss ou ß, das ou dass",
+     "g": "Evitar os erros ortográficos mais comuns: ss ou ß, das ou dass.",
+     "p": [
+      "ß depois de vogal longa ou ditongo: die Straße, groß, heißen. ss depois de vogal curta: der Fluss, essen, dass.",
+      "das = artigo ou pronome relativo (substituível por dieses ou welches). dass = conjunção: Ich hoffe, dass...",
+      "Teste: Das Buch, das ich lese... (welches serve = das). Ich weiß, dass du recht hast (sem substituto = dass)."
+     ],
+     "q": "Faz uma frase com das e dass e explica-me porque se escreve assim cada um.",
+     "c": "Escreve cinco frases que usem bem das, dass, uma palavra com ß e outra com ss."
+    },
+    "pt_BR": {
+     "t": "Armadilhas: ss ou ß, das ou dass",
+     "g": "Evitar os erros de ortografia mais comuns: ss ou ß, das ou dass.",
+     "p": [
+      "ß depois de vogal longa ou ditongo: die Straße, groß, heißen. ss depois de vogal curta: der Fluss, essen, dass.",
+      "das = artigo ou pronome relativo (dá para trocar por dieses ou welches). dass = conjunção: Ich hoffe, dass...",
+      "Teste: Das Buch, das ich lese... (welches serve = das). Ich weiß, dass du recht hast (sem troca = dass)."
+     ],
+     "q": "Faça uma frase com das e dass e me explique por que cada um se escreve assim.",
+     "c": "Escreva cinco frases usando corretamente das, dass, uma palavra com ß e outra com ss."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "die Straße",
+      "ex": "Die Straße ist lang und breit."
+     },
+     {
+      "w": "der Fluss",
+      "ex": "Der Fluss fließt durch die ganze Stadt."
+     },
+     {
+      "w": "dass",
+      "ex": "Ich freue mich, dass du gekommen bist."
+     },
+     {
+      "w": "das",
+      "ex": "Das Lied, das im Radio läuft, gefällt mir."
+     },
+     {
+      "w": "bisschen",
+      "ex": "Ich spreche ein bisschen Schwedisch."
+     },
+     {
+      "w": "der Fuß",
+      "ex": "Ich gehe gern zu Fuß zur Arbeit."
+     }
+    ],
+    "gram": "ß nach langem Vokal (Fuß, groß), ss nach kurzem (Fluss, muss). das ersetzbar durch dieses/welches, sonst dass."
+   }
+  },
+  {
+   "d": 329,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Capitalisation rules",
+     "g": "Master German capitals: nouns and nominalised words like das Lesen and etwas Gutes.",
+     "p": [
+      "All nouns are capitalised: der Tisch, die Freiheit, das Glück. Also at the start of a sentence and Sie (formal you).",
+      "Verbs become nouns with an article: das Lesen, beim Kochen, zum Schwimmen. Ich liebe das Reisen.",
+      "Adjectives after etwas, nichts, viel, alles: etwas Gutes, nichts Neues, alles Liebe. But: alles gut (no noun)."
+     ],
+     "q": "Tell me something positive with etwas Schönes or nichts Besseres. What made you happy today?",
+     "c": "Write five sentences with nominalised words: two with beim / zum + verb and three with etwas, nichts or viel."
+    },
+    "de": {
+     "t": "Großschreibung",
+     "g": "Du beherrschst die Großschreibung: Nomen und Nominalisierungen wie das Lesen, etwas Gutes.",
+     "p": [
+      "Alle Nomen schreibt man groß: der Tisch, die Freiheit, das Glück. Ebenso Satzanfänge und die Anrede Sie.",
+      "Verben werden mit Artikel zu Nomen: das Lesen, beim Kochen, zum Schwimmen. Ich liebe das Reisen.",
+      "Adjektive nach etwas, nichts, viel, alles: etwas Gutes, nichts Neues, alles Liebe. Aber: alles gut (kein Nomen)."
+     ],
+     "q": "Erzähl mir etwas Positives mit etwas Schönes oder nichts Besseres. Was hat dich heute gefreut?",
+     "c": "Schreib fünf Sätze mit Nominalisierungen: zwei mit beim / zum + Verb, drei mit etwas, nichts oder viel."
+    },
+    "es": {
+     "t": "Reglas de mayúsculas",
+     "g": "Domina las mayúsculas: sustantivos y palabras sustantivadas como das Lesen o etwas Gutes.",
+     "p": [
+      "Todos los sustantivos van con mayúscula: der Tisch, die Freiheit, das Glück. También al inicio de frase y Sie (usted).",
+      "Los verbos se vuelven sustantivos con artículo: das Lesen, beim Kochen, zum Schwimmen. Ich liebe das Reisen.",
+      "Adjetivos tras etwas, nichts, viel, alles: etwas Gutes, nichts Neues, alles Liebe. Pero: alles gut (sin sustantivo)."
+     ],
+     "q": "Cuéntame algo positivo con etwas Schönes o nichts Besseres. ¿Qué te alegró hoy?",
+     "c": "Escribe cinco frases sustantivadas: dos con beim / zum + verbo y tres con etwas, nichts o viel."
+    },
+    "fr": {
+     "t": "Les majuscules",
+     "g": "Maîtriser les majuscules : noms et mots nominalisés comme das Lesen ou etwas Gutes.",
+     "p": [
+      "Tous les noms prennent une majuscule : der Tisch, die Freiheit, das Glück. De même en début de phrase et Sie (vous).",
+      "Les verbes deviennent noms avec un article : das Lesen, beim Kochen, zum Schwimmen. Ich liebe das Reisen.",
+      "Adjectifs après etwas, nichts, viel, alles : etwas Gutes, nichts Neues, alles Liebe. Mais : alles gut (pas de nom)."
+     ],
+     "q": "Dis-moi quelque chose de positif avec etwas Schönes ou nichts Besseres. Qu'est-ce qui t'a fait plaisir aujourd'hui ?",
+     "c": "Écris cinq phrases nominalisées : deux avec beim / zum + verbe et trois avec etwas, nichts ou viel."
+    },
+    "it": {
+     "t": "Regole delle maiuscole",
+     "g": "Padroneggia le maiuscole: sostantivi e parole sostantivate come das Lesen o etwas Gutes.",
+     "p": [
+      "Tutti i sostantivi vogliono la maiuscola: der Tisch, die Freiheit, das Glück. Così anche a inizio frase e Sie (Lei).",
+      "I verbi diventano sostantivi con l'articolo: das Lesen, beim Kochen, zum Schwimmen. Ich liebe das Reisen.",
+      "Aggettivi dopo etwas, nichts, viel, alles: etwas Gutes, nichts Neues, alles Liebe. Ma: alles gut (senza sostantivo)."
+     ],
+     "q": "Dimmi qualcosa di positivo con etwas Schönes o nichts Besseres. Che cosa ti ha reso felice oggi?",
+     "c": "Scrivi cinque frasi sostantivate: due con beim / zum + verbo e tre con etwas, nichts o viel."
+    },
+    "pt": {
+     "t": "Regras das maiúsculas",
+     "g": "Dominar as maiúsculas: substantivos e palavras substantivadas como das Lesen ou etwas Gutes.",
+     "p": [
+      "Todos os substantivos levam maiúscula: der Tisch, die Freiheit, das Glück. Também no início da frase e Sie (você formal).",
+      "Os verbos tornam-se substantivos com artigo: das Lesen, beim Kochen, zum Schwimmen. Ich liebe das Reisen.",
+      "Adjetivos depois de etwas, nichts, viel, alles: etwas Gutes, nichts Neues, alles Liebe. Mas: alles gut (sem substantivo)."
+     ],
+     "q": "Diz-me algo positivo com etwas Schönes ou nichts Besseres. O que te deixou feliz hoje?",
+     "c": "Escreve cinco frases substantivadas: duas com beim / zum + verbo e três com etwas, nichts ou viel."
+    },
+    "pt_BR": {
+     "t": "Regras de maiúsculas",
+     "g": "Dominar as maiúsculas: substantivos e palavras substantivadas como das Lesen ou etwas Gutes.",
+     "p": [
+      "Todo substantivo leva maiúscula: der Tisch, die Freiheit, das Glück. Também no início da frase e Sie (o senhor/a senhora).",
+      "Verbos viram substantivos com artigo: das Lesen, beim Kochen, zum Schwimmen. Ich liebe das Reisen.",
+      "Adjetivos depois de etwas, nichts, viel, alles: etwas Gutes, nichts Neues, alles Liebe. Mas: alles gut (sem substantivo)."
+     ],
+     "q": "Me conte algo positivo com etwas Schönes ou nichts Besseres. O que te deixou feliz hoje?",
+     "c": "Escreva cinco frases substantivadas: duas com beim / zum + verbo e três com etwas, nichts ou viel."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "das Lesen",
+      "ex": "Das Lesen am Abend entspannt mich."
+     },
+     {
+      "w": "beim Kochen",
+      "ex": "Beim Kochen höre ich gern Musik."
+     },
+     {
+      "w": "zum Schwimmen",
+      "ex": "Wir fahren zum Schwimmen an den See."
+     },
+     {
+      "w": "etwas Gutes",
+      "ex": "Heute koche ich dir etwas Gutes."
+     },
+     {
+      "w": "nichts Neues",
+      "ex": "In der Zeitung steht nichts Neues."
+     },
+     {
+      "w": "alles Liebe",
+      "ex": "Alles Liebe zum Geburtstag!"
+     }
+    ],
+    "gram": "Nominalisierung: Artikel oder beim/zum + Verb wird groß (das Lernen, beim Lernen); etwas/nichts/viel + Adjektiv groß mit -es."
+   }
+  },
+  {
+   "d": 330,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Review: language variety",
+     "g": "Recap idioms, slang, dialects and spelling from the last two weeks.",
+     "p": [
+      "Idioms and proverbs: Tomaten auf den Augen haben, sich ins Zeug legen, auf dem Schlauch stehen, Übung macht den Meister.",
+      "Registers and varieties: youth language (Digga, cringe), colloquial words (Kohle, pennen), dialects, Swiss and Austrian German.",
+      "Spelling: ß after long vowels, ss after short ones, das vs dass, capitals for nouns and nominalised words."
+     ],
+     "q": "Which idiom or dialect word from these two weeks is your favourite, and why?",
+     "c": "Write a short dialogue of six lines with one idiom, one colloquial word, one proverb and a correct dass."
+    },
+    "de": {
+     "t": "Wiederholung: Sprachvielfalt",
+     "g": "Du wiederholst Redewendungen, Slang, Dialekte und Rechtschreibung.",
+     "p": [
+      "Redewendungen und Sprichwörter: Tomaten auf den Augen haben, sich ins Zeug legen, auf dem Schlauch stehen, Übung macht den Meister.",
+      "Register und Varietäten: Jugendsprache (Digga, cringe), Umgangssprache (Kohle, pennen), Dialekte, Schweizer und österreichisches Deutsch.",
+      "Rechtschreibung: ß nach langem Vokal, ss nach kurzem, das oder dass, Großschreibung von Nomen und Nominalisierungen."
+     ],
+     "q": "Welche Redewendung oder welches Dialektwort aus diesen zwei Wochen magst du am liebsten und warum?",
+     "c": "Schreib einen Dialog mit sechs Zeilen: eine Redewendung, ein umgangssprachliches Wort, ein Sprichwort und ein richtiges dass."
+    },
+    "es": {
+     "t": "Repaso: variedad lingüística",
+     "g": "Repasa modismos, argot, dialectos y ortografía de las dos últimas semanas.",
+     "p": [
+      "Modismos y refranes: Tomaten auf den Augen haben, sich ins Zeug legen, auf dem Schlauch stehen, Übung macht den Meister.",
+      "Registros y variedades: lenguaje juvenil (Digga, cringe), coloquial (Kohle, pennen), dialectos, alemán suizo y austriaco.",
+      "Ortografía: ß tras vocal larga, ss tras vocal corta, das o dass, mayúsculas en sustantivos y palabras sustantivadas."
+     ],
+     "q": "¿Qué modismo o palabra dialectal de estas dos semanas es tu favorita y por qué?",
+     "c": "Escribe un diálogo de seis líneas con un modismo, una palabra coloquial, un refrán y un dass correcto."
+    },
+    "fr": {
+     "t": "Révision : variété de la langue",
+     "g": "Réviser expressions, argot, dialectes et orthographe des deux dernières semaines.",
+     "p": [
+      "Expressions et proverbes : Tomaten auf den Augen haben, sich ins Zeug legen, auf dem Schlauch stehen, Übung macht den Meister.",
+      "Registres et variétés : langage jeune (Digga, cringe), familier (Kohle, pennen), dialectes, allemand suisse et autrichien.",
+      "Orthographe : ß après voyelle longue, ss après voyelle brève, das ou dass, majuscules des noms et nominalisations."
+     ],
+     "q": "Quelle expression ou quel mot dialectal de ces deux semaines préfères-tu, et pourquoi ?",
+     "c": "Écris un dialogue de six répliques avec une expression, un mot familier, un proverbe et un dass correct."
+    },
+    "it": {
+     "t": "Ripasso: varietà della lingua",
+     "g": "Ripassa modi di dire, slang, dialetti e ortografia delle ultime due settimane.",
+     "p": [
+      "Modi di dire e proverbi: Tomaten auf den Augen haben, sich ins Zeug legen, auf dem Schlauch stehen, Übung macht den Meister.",
+      "Registri e varietà: linguaggio giovanile (Digga, cringe), colloquiale (Kohle, pennen), dialetti, tedesco svizzero e austriaco.",
+      "Ortografia: ß dopo vocale lunga, ss dopo vocale breve, das o dass, maiuscole per sostantivi e parole sostantivate."
+     ],
+     "q": "Quale modo di dire o parola dialettale di queste due settimane preferisci e perché?",
+     "c": "Scrivi un dialogo di sei battute con un modo di dire, una parola colloquiale, un proverbio e un dass corretto."
+    },
+    "pt": {
+     "t": "Revisão: variedade linguística",
+     "g": "Rever expressões, calão, dialetos e ortografia das duas últimas semanas.",
+     "p": [
+      "Expressões e provérbios: Tomaten auf den Augen haben, sich ins Zeug legen, auf dem Schlauch stehen, Übung macht den Meister.",
+      "Registos e variedades: linguagem jovem (Digga, cringe), coloquial (Kohle, pennen), dialetos, alemão suíço e austríaco.",
+      "Ortografia: ß depois de vogal longa, ss depois de vogal curta, das ou dass, maiúsculas em substantivos e substantivações."
+     ],
+     "q": "Que expressão ou palavra dialetal destas duas semanas preferes e porquê?",
+     "c": "Escreve um diálogo de seis falas com uma expressão, uma palavra coloquial, um provérbio e um dass correto."
+    },
+    "pt_BR": {
+     "t": "Revisão: variedade linguística",
+     "g": "Revisar expressões, gírias, dialetos e ortografia das duas últimas semanas.",
+     "p": [
+      "Expressões e provérbios: Tomaten auf den Augen haben, sich ins Zeug legen, auf dem Schlauch stehen, Übung macht den Meister.",
+      "Registros e variedades: gíria jovem (Digga, cringe), coloquial (Kohle, pennen), dialetos, alemão suíço e austríaco.",
+      "Ortografia: ß depois de vogal longa, ss depois de vogal curta, das ou dass, maiúsculas em substantivos e substantivações."
+     ],
+     "q": "Qual expressão ou palavra de dialeto destas duas semanas é sua favorita e por quê?",
+     "c": "Escreva um diálogo de seis falas com uma expressão, uma palavra coloquial, um provérbio e um dass correto."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "die Redewendung",
+      "ex": "Diese Redewendung kenne ich von meiner Oma."
+     },
+     {
+      "w": "die Umgangssprache",
+      "ex": "In der Umgangssprache sagt man oft Kohle statt Geld."
+     },
+     {
+      "w": "die Varietät",
+      "ex": "Österreichisches Deutsch ist eine Varietät des Deutschen."
+     },
+     {
+      "w": "die Rechtschreibung",
+      "ex": "Die Rechtschreibung ist nicht immer logisch."
+     },
+     {
+      "w": "der Fehler",
+      "ex": "Aus Fehlern lernt man am meisten."
+     },
+     {
+      "w": "das Register",
+      "ex": "Im Beruf wählt man ein formelleres Register."
+     }
+    ],
+    "gram": "Register bewusst wählen: formell (Geld, schlafen), umgangssprachlich (Kohle, pennen), jugendsprachlich (Digga). Je nach Situation."
+   }
+  }
+ ]
+}

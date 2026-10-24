@@ -1,0 +1,2195 @@
+{
+"topic": "movies",
+"days": [
+{
+"d": 1,
+"lv": "beginner",
+"t": "Welcome to the world of movies",
+"f": "What this path covers, from first frames to world cinema, and how to watch films more actively"
+},
+{
+"d": 2,
+"lv": "beginner",
+"t": "What makes a movie a movie",
+"f": "Moving images, story, sound and editing working together to create an experience"
+},
+{
+"d": 3,
+"lv": "beginner",
+"t": "Watching films actively",
+"f": "Simple habits for noticing more: who, where, how it feels and why"
+},
+{
+"d": 4,
+"lv": "beginner",
+"t": "Your personal movie profile",
+"f": "Exploring the films you already love and what they have in common"
+},
+{
+"d": 5,
+"lv": "beginner",
+"t": "A first map of film genres",
+"f": "Comedy, drama, adventure, animation, sci-fi and more: what defines a genre"
+},
+{
+"d": 6,
+"lv": "beginner",
+"t": "The shot: cinema's basic unit",
+"f": "What a shot is and how films are built from many of them"
+},
+{
+"d": 7,
+"lv": "beginner",
+"t": "Wide, medium and close-up shots",
+"f": "How shot size changes what we notice and feel"
+},
+{
+"d": 8,
+"lv": "beginner",
+"t": "Camera angles and their meaning",
+"f": "High, low and eye-level angles and the impressions they create"
+},
+{
+"d": 9,
+"lv": "beginner",
+"t": "Camera movement basics",
+"f": "Pans, tilts, tracking shots and zooms explained simply"
+},
+{
+"d": 10,
+"lv": "beginner",
+"t": "The frame and composition",
+"f": "How filmmakers arrange people and objects inside the frame"
+},
+{
+"d": 11,
+"lv": "beginner",
+"t": "Light and mood",
+"f": "How bright or shadowy lighting sets the tone of a scene"
+},
+{
+"d": 12,
+"lv": "beginner",
+"t": "Colour on screen",
+"f": "How colour palettes create atmosphere and guide our eyes"
+},
+{
+"d": 13,
+"lv": "beginner",
+"t": "Sound in film",
+"f": "Dialogue, sound effects and music as storytelling tools"
+},
+{
+"d": 14,
+"lv": "beginner",
+"t": "The magic of a film score",
+"f": "How music shapes emotion and memory in movies"
+},
+{
+"d": 15,
+"lv": "beginner",
+"t": "Editing: the invisible art",
+"f": "How cuts join shots together to create rhythm and meaning"
+},
+{
+"d": 16,
+"lv": "beginner",
+"t": "The scene and the sequence",
+"f": "How films group shots into scenes and scenes into sequences"
+},
+{
+"d": 17,
+"lv": "beginner",
+"t": "Beginning, middle and end",
+"f": "The basic shape of most film stories"
+},
+{
+"d": 18,
+"lv": "beginner",
+"t": "Characters we care about",
+"f": "What makes a film character memorable and relatable"
+},
+{
+"d": 19,
+"lv": "beginner",
+"t": "Actors and performance",
+"f": "How acting styles differ between stage and screen"
+},
+{
+"d": 20,
+"lv": "beginner",
+"t": "Who does what on a film set",
+"f": "A first look at the director, crew and cast"
+},
+{
+"d": 21,
+"lv": "beginner",
+"t": "Feature films and short films",
+"f": "How length shapes the way a story is told"
+},
+{
+"d": 22,
+"lv": "beginner",
+"t": "Live action and animation",
+"f": "Two ways of making moving images and what each does best"
+},
+{
+"d": 23,
+"lv": "beginner",
+"t": "Documentaries: real-life stories",
+"f": "How non-fiction films inform, inspire and entertain"
+},
+{
+"d": 24,
+"lv": "beginner",
+"t": "Subtitles versus dubbing",
+"f": "Two ways to watch foreign-language films and their pros and cons"
+},
+{
+"d": 25,
+"lv": "beginner",
+"t": "Reading a film poster",
+"f": "What posters and trailers tell us before we watch"
+},
+{
+"d": 26,
+"lv": "beginner",
+"t": "Watching at home and in cinemas",
+"f": "How the viewing experience changes with screen and setting"
+},
+{
+"d": 27,
+"lv": "beginner",
+"t": "Keeping a film diary",
+"f": "Writing a few lines after each film to remember and reflect"
+},
+{
+"d": 28,
+"lv": "beginner",
+"t": "Talking about movies with friends",
+"f": "Sharing opinions and recommendations without spoilers"
+},
+{
+"d": 29,
+"lv": "beginner",
+"t": "Building your first watchlist",
+"f": "Choosing a varied list of films to explore this year"
+},
+{
+"d": 30,
+"lv": "beginner",
+"t": "Review: the basics of film",
+"f": "Recapping shots, sound, editing and genres from the first month"
+},
+{
+"d": 31,
+"lv": "beginner",
+"t": "Before cinema: optical toys",
+"f": "Magic lanterns, zoetropes and the dream of moving pictures"
+},
+{
+"d": 32,
+"lv": "beginner",
+"t": "The Lumière brothers",
+"f": "How the Lumière Cinématographe brought early films to paying audiences in Paris in 1895"
+},
+{
+"d": 33,
+"lv": "beginner",
+"t": "Georges Méliès and film magic",
+"f": "The stage magician who invented early special effects and fantasy films"
+},
+{
+"d": 34,
+"lv": "beginner",
+"t": "Early narrative films",
+"f": "How films grew from single scenes into stories"
+},
+{
+"d": 35,
+"lv": "beginner",
+"t": "The silent era",
+"f": "How films told stories without spoken dialogue"
+},
+{
+"d": 36,
+"lv": "beginner",
+"t": "Music in silent cinema",
+"f": "Live pianists and orchestras that accompanied silent films"
+},
+{
+"d": 37,
+"lv": "beginner",
+"t": "Charlie Chaplin",
+"f": "The Tramp character and Chaplin's mix of comedy and heart"
+},
+{
+"d": 38,
+"lv": "beginner",
+"t": "Buster Keaton",
+"f": "Deadpan comedy and astonishing physical stunts"
+},
+{
+"d": 39,
+"lv": "beginner",
+"t": "Harold Lloyd and silent comedy",
+"f": "Daring gags and the golden age of slapstick"
+},
+{
+"d": 40,
+"lv": "beginner",
+"t": "Intertitles and visual storytelling",
+"f": "How silent films used text cards and images to communicate"
+},
+{
+"d": 41,
+"lv": "beginner",
+"t": "German Expressionism",
+"f": "Bold shadows and stylised sets in 1920s German cinema"
+},
+{
+"d": 42,
+"lv": "beginner",
+"t": "Metropolis and early sci-fi",
+"f": "Fritz Lang's 1927 vision of a futuristic city"
+},
+{
+"d": 43,
+"lv": "beginner",
+"t": "Soviet montage",
+"f": "How editing pioneers like Eisenstein used cuts to create meaning"
+},
+{
+"d": 44,
+"lv": "beginner",
+"t": "The Kuleshov effect",
+"f": "An experiment showing how editing changes our reading of faces"
+},
+{
+"d": 45,
+"lv": "beginner",
+"t": "The birth of Hollywood",
+"f": "Why American film studios settled in Los Angeles"
+},
+{
+"d": 46,
+"lv": "beginner",
+"t": "Early movie stars",
+"f": "How audiences began following favourite actors"
+},
+{
+"d": 47,
+"lv": "beginner",
+"t": "The arrival of sound",
+"f": "The Jazz Singer and the move to talking pictures in 1927"
+},
+{
+"d": 48,
+"lv": "beginner",
+"t": "Challenges of early sound",
+"f": "How microphones changed acting, sets and camera work"
+},
+{
+"d": 49,
+"lv": "beginner",
+"t": "Early animation pioneers",
+"f": "From Winsor McCay's Gertie the Dinosaur to early cartoons"
+},
+{
+"d": 50,
+"lv": "beginner",
+"t": "Walt Disney and Mickey Mouse",
+"f": "Steamboat Willie and synchronised sound in animation"
+},
+{
+"d": 51,
+"lv": "beginner",
+"t": "Black and white cinematography",
+"f": "Why black and white images can look so expressive"
+},
+{
+"d": 52,
+"lv": "beginner",
+"t": "The first colour films",
+"f": "Hand-colouring, early processes and the arrival of Technicolor"
+},
+{
+"d": 53,
+"lv": "beginner",
+"t": "Movie palaces",
+"f": "The grand cinemas of the 1920s and 1930s"
+},
+{
+"d": 54,
+"lv": "beginner",
+"t": "The first Academy Awards",
+"f": "How the Oscars began in 1929 and what they celebrate"
+},
+{
+"d": 55,
+"lv": "beginner",
+"t": "Early cinema around the world",
+"f": "Film beginnings in France, India, Japan and beyond"
+},
+{
+"d": 56,
+"lv": "beginner",
+"t": "Silent classics worth watching",
+"f": "A beginner-friendly list of silent films to explore"
+},
+{
+"d": 57,
+"lv": "beginner",
+"t": "Restoring old films",
+"f": "How archives save and restore fragile early films"
+},
+{
+"d": 58,
+"lv": "beginner",
+"t": "How film stock works",
+"f": "Celluloid, frames per second and the basics of projection"
+},
+{
+"d": 59,
+"lv": "beginner",
+"t": "Watching a silent film today",
+"f": "Tips to enjoy silent films with a modern eye"
+},
+{
+"d": 60,
+"lv": "beginner",
+"t": "Review: early cinema",
+"f": "Recapping cinema's first decades from Lumière to sound"
+},
+{
+"d": 61,
+"lv": "beginner",
+"t": "Comedy: making us laugh",
+"f": "Slapstick, wit and situation comedy on screen"
+},
+{
+"d": 62,
+"lv": "beginner",
+"t": "The screwball comedy",
+"f": "Fast talk and lively characters in 1930s Hollywood comedies"
+},
+{
+"d": 63,
+"lv": "beginner",
+"t": "The musical",
+"f": "How song and dance tell stories in film"
+},
+{
+"d": 64,
+"lv": "beginner",
+"t": "Great movie musicals",
+"f": "From Singin' in the Rain to modern musical films"
+},
+{
+"d": 65,
+"lv": "beginner",
+"t": "The western",
+"f": "Landscapes, frontier myths and the classic American genre"
+},
+{
+"d": 66,
+"lv": "beginner",
+"t": "Science fiction",
+"f": "Big ideas about technology, space and the future"
+},
+{
+"d": 67,
+"lv": "beginner",
+"t": "Fantasy films",
+"f": "Magic, myth and imaginary worlds on screen"
+},
+{
+"d": 68,
+"lv": "beginner",
+"t": "Adventure films",
+"f": "Quests, treasure and exciting journeys"
+},
+{
+"d": 69,
+"lv": "beginner",
+"t": "Family films",
+"f": "Stories that entertain children and adults together"
+},
+{
+"d": 70,
+"lv": "beginner",
+"t": "Animated features",
+"f": "How animation became a major form of feature filmmaking"
+},
+{
+"d": 71,
+"lv": "beginner",
+"t": "Mystery and detective films",
+"f": "Clues, puzzles and the pleasure of solving a case"
+},
+{
+"d": 72,
+"lv": "beginner",
+"t": "Suspense and tension",
+"f": "How filmmakers keep audiences on the edge of their seats"
+},
+{
+"d": 73,
+"lv": "beginner",
+"t": "Sports films",
+"f": "Teamwork, underdogs and personal growth on the field"
+},
+{
+"d": 74,
+"lv": "beginner",
+"t": "Biographical films",
+"f": "How biopics turn real lives into stories"
+},
+{
+"d": 75,
+"lv": "beginner",
+"t": "Historical dramas",
+"f": "Recreating past eras with costumes, sets and research"
+},
+{
+"d": 76,
+"lv": "beginner",
+"t": "Coming-of-age films",
+"f": "Stories about growing up and finding yourself"
+},
+{
+"d": 77,
+"lv": "beginner",
+"t": "Road movies",
+"f": "Journeys that change the characters along the way"
+},
+{
+"d": 78,
+"lv": "beginner",
+"t": "Disaster and survival films",
+"f": "Spectacle and human resilience against nature"
+},
+{
+"d": 79,
+"lv": "beginner",
+"t": "Superhero films",
+"f": "From comic pages to global blockbusters"
+},
+{
+"d": 80,
+"lv": "beginner",
+"t": "Heist films",
+"f": "Clever plans, teams and twists in caper movies"
+},
+{
+"d": 81,
+"lv": "beginner",
+"t": "Martial arts films",
+"f": "Choreography, discipline and the art of movement"
+},
+{
+"d": 82,
+"lv": "beginner",
+"t": "Dance films",
+"f": "Stories driven by rhythm and performance"
+},
+{
+"d": 83,
+"lv": "beginner",
+"t": "Music documentaries and concert films",
+"f": "Capturing musicians and live performance on film"
+},
+{
+"d": 84,
+"lv": "beginner",
+"t": "Nature documentaries",
+"f": "Filming wildlife and landscapes around the world"
+},
+{
+"d": 85,
+"lv": "beginner",
+"t": "Mockumentaries",
+"f": "Comedy that imitates the documentary style"
+},
+{
+"d": 86,
+"lv": "beginner",
+"t": "Genre mixing",
+"f": "How films blend genres to create something new"
+},
+{
+"d": 87,
+"lv": "beginner",
+"t": "Remakes and reboots",
+"f": "Why stories are retold for new generations"
+},
+{
+"d": 88,
+"lv": "beginner",
+"t": "Sequels and franchises",
+"f": "How film series keep audiences coming back"
+},
+{
+"d": 89,
+"lv": "beginner",
+"t": "Finding your favourite genre",
+"f": "Reflecting on which genres you enjoy most and why"
+},
+{
+"d": 90,
+"lv": "beginner",
+"t": "Review: film genres",
+"f": "Recapping the main genres and their typical features"
+},
+{
+"d": 91,
+"lv": "beginner",
+"t": "How a film is made",
+"f": "Development, pre-production, production and post-production"
+},
+{
+"d": 92,
+"lv": "beginner",
+"t": "The producer's role",
+"f": "Finding money, people and keeping a film on track"
+},
+{
+"d": 93,
+"lv": "beginner",
+"t": "The director's vision",
+"f": "How a director shapes story, style and performances"
+},
+{
+"d": 94,
+"lv": "beginner",
+"t": "The screenwriter",
+"f": "Turning an idea into a screenplay"
+},
+{
+"d": 95,
+"lv": "beginner",
+"t": "What a screenplay looks like",
+"f": "Scene headings, action lines and dialogue format"
+},
+{
+"d": 96,
+"lv": "beginner",
+"t": "The storyboard",
+"f": "Drawing a film shot by shot before filming"
+},
+{
+"d": 97,
+"lv": "beginner",
+"t": "Casting",
+"f": "How actors are chosen for roles"
+},
+{
+"d": 98,
+"lv": "beginner",
+"t": "The cinematographer",
+"f": "The director of photography and the look of a film"
+},
+{
+"d": 99,
+"lv": "beginner",
+"t": "Production design",
+"f": "Creating the world of a film through sets and locations"
+},
+{
+"d": 100,
+"lv": "beginner",
+"t": "Costume design",
+"f": "How clothes reveal character and period"
+},
+{
+"d": 101,
+"lv": "beginner",
+"t": "Hair and make-up",
+"f": "Transforming actors for their roles"
+},
+{
+"d": 102,
+"lv": "beginner",
+"t": "Shooting on location and in studios",
+"f": "Pros and cons of real places versus built sets"
+},
+{
+"d": 103,
+"lv": "beginner",
+"t": "A day on a film set",
+"f": "Call sheets, takes and the rhythm of shooting"
+},
+{
+"d": 104,
+"lv": "beginner",
+"t": "The clapperboard and continuity",
+"f": "Keeping track of shots and details between takes"
+},
+{
+"d": 105,
+"lv": "beginner",
+"t": "Sound recording on set",
+"f": "Boom microphones, clean dialogue and room tone"
+},
+{
+"d": 106,
+"lv": "beginner",
+"t": "The editor at work",
+"f": "Assembling footage into a finished film"
+},
+{
+"d": 107,
+"lv": "beginner",
+"t": "Sound design and mixing",
+"f": "Building the full soundscape of a film"
+},
+{
+"d": 108,
+"lv": "beginner",
+"t": "Composing a film score",
+"f": "How composers work with directors"
+},
+{
+"d": 109,
+"lv": "beginner",
+"t": "Visual effects basics",
+"f": "Green screens, compositing and digital effects"
+},
+{
+"d": 110,
+"lv": "beginner",
+"t": "Practical effects",
+"f": "Models, miniatures and in-camera tricks"
+},
+{
+"d": 111,
+"lv": "beginner",
+"t": "Stunt work and safety",
+"f": "How stunt teams plan action scenes safely"
+},
+{
+"d": 112,
+"lv": "beginner",
+"t": "Animation production",
+"f": "Scripts, voice recording and animation pipelines"
+},
+{
+"d": 113,
+"lv": "beginner",
+"t": "The trailer and marketing",
+"f": "How films are promoted to audiences"
+},
+{
+"d": 114,
+"lv": "beginner",
+"t": "Film distribution",
+"f": "How films reach cinemas, festivals and streaming services"
+},
+{
+"d": 115,
+"lv": "beginner",
+"t": "Film credits explained",
+"f": "Reading the credits and understanding who did what"
+},
+{
+"d": 116,
+"lv": "beginner",
+"t": "Independent films",
+"f": "Making films outside the big studios"
+},
+{
+"d": 117,
+"lv": "beginner",
+"t": "Low-budget creativity",
+"f": "How limits can inspire inventive filmmaking"
+},
+{
+"d": 118,
+"lv": "beginner",
+"t": "Film crews around the world",
+"f": "How production differs across countries"
+},
+{
+"d": 119,
+"lv": "beginner",
+"t": "Behind-the-scenes documentaries",
+"f": "Learning filmmaking from making-of films"
+},
+{
+"d": 120,
+"lv": "beginner",
+"t": "Review: how films are made",
+"f": "Recapping the stages and roles of filmmaking"
+},
+{
+"d": 121,
+"lv": "intermediate",
+"t": "Hollywood's studio system",
+"f": "How the big studios controlled production in the classic era"
+},
+{
+"d": 122,
+"lv": "intermediate",
+"t": "The golden age of Hollywood",
+"f": "The 1930s and 1940s and the films that defined them"
+},
+{
+"d": 123,
+"lv": "intermediate",
+"t": "Classic Hollywood stars",
+"f": "Icons like Katharine Hepburn, Cary Grant and James Stewart"
+},
+{
+"d": 124,
+"lv": "intermediate",
+"t": "The Wizard of Oz and Technicolor",
+"f": "How colour amazed audiences in 1939"
+},
+{
+"d": 125,
+"lv": "intermediate",
+"t": "Citizen Kane",
+"f": "Why Orson Welles's 1941 film is studied for its innovation"
+},
+{
+"d": 126,
+"lv": "intermediate",
+"t": "Deep focus",
+"f": "Keeping foreground and background sharp at the same time"
+},
+{
+"d": 127,
+"lv": "intermediate",
+"t": "Alfred Hitchcock, master of suspense",
+"f": "Hitchcock's techniques for building tension without showing too much"
+},
+{
+"d": 128,
+"lv": "intermediate",
+"t": "Frank Capra's optimism",
+"f": "Feel-good stories like It's a Wonderful Life"
+},
+{
+"d": 129,
+"lv": "intermediate",
+"t": "Classic Hollywood comedies",
+"f": "Wit and charm from the Marx Brothers to Billy Wilder"
+},
+{
+"d": 130,
+"lv": "intermediate",
+"t": "Golden age musicals",
+"f": "Fred Astaire, Ginger Rogers and Gene Kelly"
+},
+{
+"d": 131,
+"lv": "intermediate",
+"t": "Film noir style",
+"f": "Shadowy visuals and moody storytelling of 1940s mystery dramas"
+},
+{
+"d": 132,
+"lv": "intermediate",
+"t": "Disney's first feature",
+"f": "Snow White and the Seven Dwarfs and the birth of animated features"
+},
+{
+"d": 133,
+"lv": "intermediate",
+"t": "Classic animation studios",
+"f": "Warner Bros, Fleischer and the golden age of cartoons"
+},
+{
+"d": 134,
+"lv": "intermediate",
+"t": "Widescreen and CinemaScope",
+"f": "How screens grew wider in the 1950s"
+},
+{
+"d": 135,
+"lv": "intermediate",
+"t": "Epics of the 1950s and 1960s",
+"f": "Spectacular historical films with huge sets and casts"
+},
+{
+"d": 136,
+"lv": "intermediate",
+"t": "Audrey Hepburn and style icons",
+"f": "How stars influenced fashion and culture"
+},
+{
+"d": 137,
+"lv": "intermediate",
+"t": "The end of the studio era",
+"f": "Why the studio system changed in the 1950s and 1960s"
+},
+{
+"d": 138,
+"lv": "intermediate",
+"t": "Classic films for beginners",
+"f": "An approachable list of golden age favourites"
+},
+{
+"d": 139,
+"lv": "intermediate",
+"t": "Black and white versus colour debates",
+"f": "Why some directors kept shooting in black and white"
+},
+{
+"d": 140,
+"lv": "intermediate",
+"t": "The art of the movie trailer",
+"f": "How trailers evolved through Hollywood history"
+},
+{
+"d": 141,
+"lv": "intermediate",
+"t": "Movie theatres of the past",
+"f": "Drive-ins, double features and newsreels"
+},
+{
+"d": 142,
+"lv": "intermediate",
+"t": "Screen acting in the classic era",
+"f": "How acting became more natural over the decades"
+},
+{
+"d": 143,
+"lv": "intermediate",
+"t": "Method acting",
+"f": "Marlon Brando and the influence of the Actors Studio"
+},
+{
+"d": 144,
+"lv": "intermediate",
+"t": "Classic film scores",
+"f": "Composers like Max Steiner and Bernard Herrmann"
+},
+{
+"d": 145,
+"lv": "intermediate",
+"t": "Hollywood and literature",
+"f": "Famous novels adapted into classic films"
+},
+{
+"d": 146,
+"lv": "intermediate",
+"t": "Women behind the camera",
+"f": "Pioneers like Alice Guy-Blaché, Dorothy Arzner and Ida Lupino"
+},
+{
+"d": 147,
+"lv": "intermediate",
+"t": "Classic Hollywood and world audiences",
+"f": "How American films travelled around the globe"
+},
+{
+"d": 148,
+"lv": "intermediate",
+"t": "Rewatching classics",
+"f": "Why classic films reward a second viewing"
+},
+{
+"d": 149,
+"lv": "intermediate",
+"t": "What makes a film timeless",
+"f": "Qualities that keep old films relevant"
+},
+{
+"d": 150,
+"lv": "intermediate",
+"t": "Review: classic Hollywood",
+"f": "Recapping the studio era, stars and innovations"
+},
+{
+"d": 151,
+"lv": "intermediate",
+"t": "Introduction to world cinema",
+"f": "Why watching films from many countries broadens your view"
+},
+{
+"d": 152,
+"lv": "intermediate",
+"t": "Italian neorealism",
+"f": "Real locations, everyday people and post-war stories"
+},
+{
+"d": 153,
+"lv": "intermediate",
+"t": "Bicycle Thieves",
+"f": "Vittorio De Sica's moving story of a father and son"
+},
+{
+"d": 154,
+"lv": "intermediate",
+"t": "Federico Fellini",
+"f": "Dreamlike imagination in Italian cinema"
+},
+{
+"d": 155,
+"lv": "intermediate",
+"t": "The French New Wave",
+"f": "Young directors who broke the rules in the late 1950s"
+},
+{
+"d": 156,
+"lv": "intermediate",
+"t": "François Truffaut",
+"f": "The 400 Blows and personal storytelling"
+},
+{
+"d": 157,
+"lv": "intermediate",
+"t": "Jean-Luc Godard's style",
+"f": "Jump cuts and playful experiments with film form"
+},
+{
+"d": 158,
+"lv": "intermediate",
+"t": "Agnès Varda",
+"f": "A pioneer of the New Wave and the essay film"
+},
+{
+"d": 159,
+"lv": "intermediate",
+"t": "Japanese cinema's golden age",
+"f": "Masters who shaped world cinema in the 1950s"
+},
+{
+"d": 160,
+"lv": "intermediate",
+"t": "Akira Kurosawa",
+"f": "Seven Samurai, Rashomon and dynamic storytelling"
+},
+{
+"d": 161,
+"lv": "intermediate",
+"t": "Yasujirō Ozu",
+"f": "Quiet family dramas and low camera positions"
+},
+{
+"d": 162,
+"lv": "intermediate",
+"t": "Satyajit Ray",
+"f": "The Apu Trilogy and humanist Indian cinema"
+},
+{
+"d": 163,
+"lv": "intermediate",
+"t": "Indian popular cinema",
+"f": "Song, dance and colour in Hindi and regional films"
+},
+{
+"d": 164,
+"lv": "intermediate",
+"t": "Swedish cinema and Ingmar Bergman",
+"f": "Thoughtful dramas and striking images from Sweden"
+},
+{
+"d": 165,
+"lv": "intermediate",
+"t": "Spanish cinema classics",
+"f": "From Luis Buñuel to Pedro Almodóvar"
+},
+{
+"d": 166,
+"lv": "intermediate",
+"t": "British cinema",
+"f": "Ealing comedies, David Lean epics and beyond"
+},
+{
+"d": 167,
+"lv": "intermediate",
+"t": "Soviet and Russian cinema",
+"f": "Andrei Tarkovsky and poetic filmmaking"
+},
+{
+"d": 168,
+"lv": "intermediate",
+"t": "Polish film school",
+"f": "Andrzej Wajda and Krzysztof Kieślowski's influential work"
+},
+{
+"d": 169,
+"lv": "intermediate",
+"t": "Chinese cinema landmarks",
+"f": "Fifth Generation directors like Zhang Yimou"
+},
+{
+"d": 170,
+"lv": "intermediate",
+"t": "Hong Kong cinema",
+"f": "Action choreography and the energy of Hong Kong films"
+},
+{
+"d": 171,
+"lv": "intermediate",
+"t": "Taiwanese cinema",
+"f": "Edward Yang and Hou Hsiao-hsien's observational style"
+},
+{
+"d": 172,
+"lv": "intermediate",
+"t": "World cinema watchlist",
+"f": "Building a list of classics from different continents"
+},
+{
+"d": 173,
+"lv": "intermediate",
+"t": "How to enjoy foreign films",
+"f": "Tips for getting into unfamiliar film styles"
+},
+{
+"d": 174,
+"lv": "intermediate",
+"t": "Film and national identity",
+"f": "How films reflect the culture they come from"
+},
+{
+"d": 175,
+"lv": "intermediate",
+"t": "Cultural details in films",
+"f": "Noticing food, customs and language on screen"
+},
+{
+"d": 176,
+"lv": "intermediate",
+"t": "Films that crossed borders",
+"f": "International hits that found global audiences"
+},
+{
+"d": 177,
+"lv": "intermediate",
+"t": "Co-productions",
+"f": "When countries team up to make films"
+},
+{
+"d": 178,
+"lv": "intermediate",
+"t": "The Oscar for international films",
+"f": "How non-English films are recognised"
+},
+{
+"d": 179,
+"lv": "intermediate",
+"t": "Comparing film traditions",
+"f": "How storytelling differs from culture to culture"
+},
+{
+"d": 180,
+"lv": "intermediate",
+"t": "Review: world cinema classics",
+"f": "Recapping key movements from Italy to Japan to India"
+},
+{
+"d": 181,
+"lv": "intermediate",
+"t": "Cinematography in depth",
+"f": "How light, lens and camera create a film's look"
+},
+{
+"d": 182,
+"lv": "intermediate",
+"t": "Lenses and focal length",
+"f": "How wide and long lenses change space and faces"
+},
+{
+"d": 183,
+"lv": "intermediate",
+"t": "Depth of field",
+"f": "Using focus to guide attention"
+},
+{
+"d": 184,
+"lv": "intermediate",
+"t": "Natural and artificial light",
+"f": "Working with sunlight, lamps and studio lighting"
+},
+{
+"d": 185,
+"lv": "intermediate",
+"t": "Three-point lighting",
+"f": "Key, fill and back light explained"
+},
+{
+"d": 186,
+"lv": "intermediate",
+"t": "Golden hour shooting",
+"f": "Why the light after sunrise and before sunset is so popular"
+},
+{
+"d": 187,
+"lv": "intermediate",
+"t": "Long takes",
+"f": "Unbroken shots and the skill they require"
+},
+{
+"d": 188,
+"lv": "intermediate",
+"t": "The Steadicam",
+"f": "Smooth moving shots and their impact on filmmaking"
+},
+{
+"d": 189,
+"lv": "intermediate",
+"t": "Aspect ratios",
+"f": "Why some films are wide and others almost square"
+},
+{
+"d": 190,
+"lv": "intermediate",
+"t": "Colour grading",
+"f": "Adjusting colour after shooting to shape mood"
+},
+{
+"d": 191,
+"lv": "intermediate",
+"t": "Symbolic colour",
+"f": "How colours can represent ideas and emotions"
+},
+{
+"d": 192,
+"lv": "intermediate",
+"t": "Mise-en-scène",
+"f": "Everything placed in front of the camera and why it matters"
+},
+{
+"d": 193,
+"lv": "intermediate",
+"t": "Set dressing and props",
+"f": "Small details that bring a world to life"
+},
+{
+"d": 194,
+"lv": "intermediate",
+"t": "Editing rhythm",
+"f": "How the pace of cuts changes our feelings"
+},
+{
+"d": 195,
+"lv": "intermediate",
+"t": "Continuity editing",
+"f": "The rules that make cuts feel smooth"
+},
+{
+"d": 196,
+"lv": "intermediate",
+"t": "The 180-degree rule",
+"f": "Keeping viewers oriented in conversations and action"
+},
+{
+"d": 197,
+"lv": "intermediate",
+"t": "Match cuts",
+"f": "Linking two shots with a shared shape or movement"
+},
+{
+"d": 198,
+"lv": "intermediate",
+"t": "Montage sequences",
+"f": "Showing time passing or change through quick cuts"
+},
+{
+"d": 199,
+"lv": "intermediate",
+"t": "Cross-cutting",
+"f": "Showing two events at once to build tension"
+},
+{
+"d": 200,
+"lv": "intermediate",
+"t": "Diegetic and non-diegetic sound",
+"f": "Sound inside the story world versus sound for the audience"
+},
+{
+"d": 201,
+"lv": "intermediate",
+"t": "Silence in film",
+"f": "How the absence of sound can be powerful"
+},
+{
+"d": 202,
+"lv": "intermediate",
+"t": "Leitmotifs in film music",
+"f": "Musical themes for characters and ideas"
+},
+{
+"d": 203,
+"lv": "intermediate",
+"t": "Iconic film composers",
+"f": "John Williams, Ennio Morricone, Hans Zimmer and others"
+},
+{
+"d": 204,
+"lv": "intermediate",
+"t": "Songs in movies",
+"f": "How pop songs and soundtracks shape scenes"
+},
+{
+"d": 205,
+"lv": "intermediate",
+"t": "Voice-over narration",
+"f": "When a narrator helps or changes a story"
+},
+{
+"d": 206,
+"lv": "intermediate",
+"t": "Opening scenes",
+"f": "How the first minutes set tone and expectations"
+},
+{
+"d": 207,
+"lv": "intermediate",
+"t": "Final shots",
+"f": "How endings leave a lasting impression"
+},
+{
+"d": 208,
+"lv": "intermediate",
+"t": "Visual motifs",
+"f": "Repeated images that carry meaning through a film"
+},
+{
+"d": 209,
+"lv": "intermediate",
+"t": "Analysing a single scene",
+"f": "A step-by-step method for close viewing"
+},
+{
+"d": 210,
+"lv": "intermediate",
+"t": "Review: film craft",
+"f": "Recapping cinematography, editing and sound techniques"
+},
+{
+"d": 211,
+"lv": "intermediate",
+"t": "New Hollywood",
+"f": "The 1970s generation of bold American directors"
+},
+{
+"d": 212,
+"lv": "intermediate",
+"t": "Steven Spielberg",
+"f": "Crowd-pleasing storytelling from E.T. to Indiana Jones"
+},
+{
+"d": 213,
+"lv": "intermediate",
+"t": "George Lucas and Star Wars",
+"f": "How a 1977 space adventure changed blockbusters"
+},
+{
+"d": 214,
+"lv": "intermediate",
+"t": "The birth of the blockbuster",
+"f": "Summer releases and wide openings"
+},
+{
+"d": 215,
+"lv": "intermediate",
+"t": "Special effects revolution",
+"f": "From Industrial Light and Magic to digital worlds"
+},
+{
+"d": 216,
+"lv": "intermediate",
+"t": "Computer-generated imagery",
+"f": "Jurassic Park and the rise of CGI"
+},
+{
+"d": 217,
+"lv": "intermediate",
+"t": "Pixar and Toy Story",
+"f": "The first fully computer-animated feature film in 1995"
+},
+{
+"d": 218,
+"lv": "intermediate",
+"t": "Studio Ghibli",
+"f": "Hayao Miyazaki's hand-drawn worlds and gentle heroes"
+},
+{
+"d": 219,
+"lv": "intermediate",
+"t": "The Disney renaissance",
+"f": "The Little Mermaid, The Lion King and a new golden age"
+},
+{
+"d": 220,
+"lv": "intermediate",
+"t": "Stop-motion animation",
+"f": "Aardman, Laika and the craft of frame-by-frame animation"
+},
+{
+"d": 221,
+"lv": "intermediate",
+"t": "Motion capture",
+"f": "Turning actors' movements into digital characters"
+},
+{
+"d": 222,
+"lv": "intermediate",
+"t": "3D cinema",
+"f": "How 3D films work and their waves of popularity"
+},
+{
+"d": 223,
+"lv": "intermediate",
+"t": "IMAX and large formats",
+"f": "Giant screens and immersive viewing"
+},
+{
+"d": 224,
+"lv": "intermediate",
+"t": "Digital cameras",
+"f": "How filmmaking moved from film stock to digital"
+},
+{
+"d": 225,
+"lv": "intermediate",
+"t": "Home video history",
+"f": "From VHS and DVD to streaming"
+},
+{
+"d": 226,
+"lv": "intermediate",
+"t": "The streaming era",
+"f": "How streaming changed what and how we watch"
+},
+{
+"d": 227,
+"lv": "intermediate",
+"t": "Binge culture and movies",
+"f": "How viewing habits are changing"
+},
+{
+"d": 228,
+"lv": "intermediate",
+"t": "Franchise storytelling",
+"f": "Connected universes and long-running series"
+},
+{
+"d": 229,
+"lv": "intermediate",
+"t": "Modern auteurs",
+"f": "Directors with a strong personal style today"
+},
+{
+"d": 230,
+"lv": "intermediate",
+"t": "Christopher Nolan and practical spectacle",
+"f": "Blending big ideas with in-camera filmmaking"
+},
+{
+"d": 231,
+"lv": "intermediate",
+"t": "Greta Gerwig and personal stories",
+"f": "Contemporary storytelling rooted in character"
+},
+{
+"d": 232,
+"lv": "intermediate",
+"t": "Modern animation styles",
+"f": "Mixing 2D and 3D in recent animated films"
+},
+{
+"d": 233,
+"lv": "intermediate",
+"t": "Fan culture",
+"f": "Conventions, fan communities and celebrating films together"
+},
+{
+"d": 234,
+"lv": "intermediate",
+"t": "Cult classics",
+"f": "Films that found devoted audiences over time"
+},
+{
+"d": 235,
+"lv": "intermediate",
+"t": "Box office basics",
+"f": "How film success is measured"
+},
+{
+"d": 236,
+"lv": "intermediate",
+"t": "Film ratings and age guidance",
+"f": "How age ratings help families choose films"
+},
+{
+"d": 237,
+"lv": "intermediate",
+"t": "Accessibility in cinema",
+"f": "Audio description and subtitles for all audiences"
+},
+{
+"d": 238,
+"lv": "intermediate",
+"t": "Sustainable filmmaking",
+"f": "Efforts to make film production greener"
+},
+{
+"d": 239,
+"lv": "intermediate",
+"t": "Modern classics",
+"f": "Recent films that may become future classics"
+},
+{
+"d": 240,
+"lv": "intermediate",
+"t": "Review: modern cinema",
+"f": "Recapping blockbusters, animation and digital change"
+},
+{
+"d": 241,
+"lv": "intermediate",
+"t": "Latin American cinema",
+"f": "Rich film traditions across the region"
+},
+{
+"d": 242,
+"lv": "intermediate",
+"t": "Brazilian Cinema Novo",
+"f": "Glauber Rocha and the movement's bold ideas"
+},
+{
+"d": 243,
+"lv": "intermediate",
+"t": "Modern Brazilian cinema",
+"f": "Central Station, The Second Mother and new Brazilian voices worldwide"
+},
+{
+"d": 244,
+"lv": "intermediate",
+"t": "Mexican cinema",
+"f": "From the golden age to Cuarón, Iñárritu and del Toro"
+},
+{
+"d": 245,
+"lv": "intermediate",
+"t": "Argentine cinema",
+"f": "Character-driven stories and international success"
+},
+{
+"d": 246,
+"lv": "intermediate",
+"t": "Cuban and Chilean cinema",
+"f": "Distinctive voices from the Caribbean and Southern Cone"
+},
+{
+"d": 247,
+"lv": "intermediate",
+"t": "Korean cinema wave",
+"f": "How South Korean films gained global acclaim"
+},
+{
+"d": 248,
+"lv": "intermediate",
+"t": "Bong Joon-ho and genre blending",
+"f": "Mixing comedy, drama and social observation"
+},
+{
+"d": 249,
+"lv": "intermediate",
+"t": "Iranian cinema",
+"f": "Abbas Kiarostami and poetic realism"
+},
+{
+"d": 250,
+"lv": "intermediate",
+"t": "Turkish cinema",
+"f": "Nuri Bilge Ceylan and contemplative storytelling"
+},
+{
+"d": 251,
+"lv": "advanced",
+"t": "Nollywood",
+"f": "Nigeria's fast-growing film industry"
+},
+{
+"d": 252,
+"lv": "advanced",
+"t": "African cinema voices",
+"f": "Ousmane Sembène and filmmakers across the continent"
+},
+{
+"d": 253,
+"lv": "advanced",
+"t": "Egyptian cinema",
+"f": "The long history of the Arab world's major film industry"
+},
+{
+"d": 254,
+"lv": "advanced",
+"t": "Australian and New Zealand cinema",
+"f": "Landscapes and stories from Oceania"
+},
+{
+"d": 255,
+"lv": "advanced",
+"t": "Canadian cinema",
+"f": "Distinctive filmmakers and animation from Canada"
+},
+{
+"d": 256,
+"lv": "advanced",
+"t": "German cinema today",
+"f": "From New German Cinema to recent successes"
+},
+{
+"d": 257,
+"lv": "advanced",
+"t": "Scandinavian cinema",
+"f": "Danish, Norwegian and Finnish filmmakers"
+},
+{
+"d": 258,
+"lv": "advanced",
+"t": "Portuguese cinema",
+"f": "Manoel de Oliveira and a quiet, poetic tradition"
+},
+{
+"d": 259,
+"lv": "advanced",
+"t": "Italian cinema today",
+"f": "Contemporary directors and Italy's film heritage"
+},
+{
+"d": 260,
+"lv": "advanced",
+"t": "French cinema today",
+"f": "Popular comedies, auteurs and animation from France"
+},
+{
+"d": 261,
+"lv": "advanced",
+"t": "Bollywood today",
+"f": "Modern Hindi cinema and its global fans"
+},
+{
+"d": 262,
+"lv": "advanced",
+"t": "South Indian cinema",
+"f": "Tamil, Telugu and Malayalam film industries"
+},
+{
+"d": 263,
+"lv": "advanced",
+"t": "Japanese anime films",
+"f": "Makoto Shinkai, Satoshi Kon and beyond"
+},
+{
+"d": 264,
+"lv": "advanced",
+"t": "Chinese-language blockbusters",
+"f": "Martial arts epics and modern hits"
+},
+{
+"d": 265,
+"lv": "advanced",
+"t": "Southeast Asian cinema",
+"f": "Films from Thailand, the Philippines and Indonesia"
+},
+{
+"d": 266,
+"lv": "advanced",
+"t": "Indigenous filmmakers",
+"f": "Stories told by Indigenous communities worldwide"
+},
+{
+"d": 267,
+"lv": "advanced",
+"t": "Diaspora cinema",
+"f": "Films about living between cultures"
+},
+{
+"d": 268,
+"lv": "advanced",
+"t": "Film festivals around the world",
+"f": "Cannes, Venice, Berlin, Toronto and Sundance"
+},
+{
+"d": 269,
+"lv": "advanced",
+"t": "A world tour watchlist",
+"f": "Choosing one film from each continent"
+},
+{
+"d": 270,
+"lv": "advanced",
+"t": "Review: global cinema today",
+"f": "Recapping film cultures from every continent"
+},
+{
+"d": 271,
+"lv": "advanced",
+"t": "Storytelling in depth",
+"f": "How screen stories are built and why they work"
+},
+{
+"d": 272,
+"lv": "advanced",
+"t": "The three-act structure",
+"f": "Setup, confrontation and resolution"
+},
+{
+"d": 273,
+"lv": "advanced",
+"t": "The hero's journey",
+"f": "Joseph Campbell's pattern and how films use it"
+},
+{
+"d": 274,
+"lv": "advanced",
+"t": "The inciting incident",
+"f": "The moment that starts the story moving"
+},
+{
+"d": 275,
+"lv": "advanced",
+"t": "Character goals and obstacles",
+"f": "What characters want and what stands in their way"
+},
+{
+"d": 276,
+"lv": "advanced",
+"t": "Character arcs",
+"f": "How characters change through a film"
+},
+{
+"d": 277,
+"lv": "advanced",
+"t": "Protagonists and antagonists",
+"f": "Heroes, rivals and opposing forces"
+},
+{
+"d": 278,
+"lv": "advanced",
+"t": "Supporting characters",
+"f": "Mentors, friends and sidekicks that enrich a story"
+},
+{
+"d": 279,
+"lv": "advanced",
+"t": "Writing great dialogue",
+"f": "Subtext, rhythm and character voice"
+},
+{
+"d": 280,
+"lv": "advanced",
+"t": "Show, don't tell",
+"f": "Communicating through images and actions"
+},
+{
+"d": 281,
+"lv": "advanced",
+"t": "Setups and payoffs",
+"f": "Planting details early that matter later"
+},
+{
+"d": 282,
+"lv": "advanced",
+"t": "Plot twists done well",
+"f": "Surprises that feel earned"
+},
+{
+"d": 283,
+"lv": "advanced",
+"t": "Nonlinear storytelling",
+"f": "Flashbacks and stories told out of order"
+},
+{
+"d": 284,
+"lv": "advanced",
+"t": "Multiple storylines",
+"f": "Ensemble films with interwoven stories"
+},
+{
+"d": 285,
+"lv": "advanced",
+"t": "Point of view",
+"f": "Whose eyes we see the story through"
+},
+{
+"d": 286,
+"lv": "advanced",
+"t": "Unreliable narrators",
+"f": "When the storyteller cannot be fully trusted"
+},
+{
+"d": 287,
+"lv": "advanced",
+"t": "Theme and meaning",
+"f": "The deeper ideas behind a story"
+},
+{
+"d": 288,
+"lv": "advanced",
+"t": "Tone and atmosphere",
+"f": "Keeping a consistent feel throughout a film"
+},
+{
+"d": 289,
+"lv": "advanced",
+"t": "Adapting books into films",
+"f": "What changes when a novel becomes a film"
+},
+{
+"d": 290,
+"lv": "advanced",
+"t": "Adapting plays and true stories",
+"f": "Bringing stage works and real events to the screen"
+},
+{
+"d": 291,
+"lv": "advanced",
+"t": "Short film storytelling",
+"f": "Telling a complete story in a few minutes"
+},
+{
+"d": 292,
+"lv": "advanced",
+"t": "World-building",
+"f": "Creating believable fictional worlds"
+},
+{
+"d": 293,
+"lv": "advanced",
+"t": "Humour in storytelling",
+"f": "Timing and set-ups in comedy writing"
+},
+{
+"d": 294,
+"lv": "advanced",
+"t": "Emotional moments",
+"f": "How films earn tears and joy"
+},
+{
+"d": 295,
+"lv": "advanced",
+"t": "Opening lines and loglines",
+"f": "Summing up a film in one sentence"
+},
+{
+"d": 296,
+"lv": "advanced",
+"t": "Pitching a film idea",
+"f": "Presenting a story idea clearly and with passion"
+},
+{
+"d": 297,
+"lv": "advanced",
+"t": "Story across cultures",
+"f": "How different traditions structure narratives"
+},
+{
+"d": 298,
+"lv": "advanced",
+"t": "Famous screenwriters",
+"f": "Writers like Billy Wilder, Nora Ephron and Charlie Kaufman"
+},
+{
+"d": 299,
+"lv": "advanced",
+"t": "Write your own logline",
+"f": "Practising by summarising your own movie idea"
+},
+{
+"d": 300,
+"lv": "advanced",
+"t": "Review: storytelling",
+"f": "Recapping structure, character and adaptation"
+},
+{
+"d": 301,
+"lv": "advanced",
+"t": "Thinking like a film critic",
+"f": "Moving from liking a film to analysing it"
+},
+{
+"d": 302,
+"lv": "advanced",
+"t": "Writing a short film review",
+"f": "Structure: summary, analysis and opinion without spoilers"
+},
+{
+"d": 303,
+"lv": "advanced",
+"t": "Famous film critics",
+"f": "Roger Ebert, Pauline Kael and the art of criticism"
+},
+{
+"d": 304,
+"lv": "advanced",
+"t": "Auteur theory",
+"f": "The idea of the director as author"
+},
+{
+"d": 305,
+"lv": "advanced",
+"t": "Film theory basics",
+"f": "Formalism, realism and ways of reading films"
+},
+{
+"d": 306,
+"lv": "advanced",
+"t": "Reading film symbolism",
+"f": "Finding meaning in objects, colours and settings"
+},
+{
+"d": 307,
+"lv": "advanced",
+"t": "Comparing two films",
+"f": "Analysing similarities and differences"
+},
+{
+"d": 308,
+"lv": "advanced",
+"t": "Film and society",
+"f": "How films reflect and shape their times"
+},
+{
+"d": 309,
+"lv": "advanced",
+"t": "Representation on screen",
+"f": "Who gets seen and heard in films"
+},
+{
+"d": 310,
+"lv": "advanced",
+"t": "Film and other arts",
+"f": "Links between cinema, painting, music and literature"
+},
+{
+"d": 311,
+"lv": "advanced",
+"t": "Awards seasons explained",
+"f": "Oscars, BAFTAs, Césars and other film awards"
+},
+{
+"d": 312,
+"lv": "advanced",
+"t": "Inside the Cannes Film Festival",
+"f": "History and traditions of the Palme d'Or"
+},
+{
+"d": 313,
+"lv": "advanced",
+"t": "Venice and Berlin festivals",
+"f": "The world's oldest festivals and their prizes"
+},
+{
+"d": 314,
+"lv": "advanced",
+"t": "Sundance and independent film",
+"f": "How festivals launch new talent"
+},
+{
+"d": 315,
+"lv": "advanced",
+"t": "Film archives and preservation",
+"f": "Protecting film heritage for the future"
+},
+{
+"d": 316,
+"lv": "advanced",
+"t": "Restored classics",
+"f": "How restorations give old films new life"
+},
+{
+"d": 317,
+"lv": "advanced",
+"t": "Film museums around the world",
+"f": "Places to explore cinema history"
+},
+{
+"d": 318,
+"lv": "advanced",
+"t": "Film criticism in the digital age",
+"f": "Blogs, video essays and online reviews"
+},
+{
+"d": 319,
+"lv": "advanced",
+"t": "Video essays",
+"f": "Analysing films with clips and narration"
+},
+{
+"d": 320,
+"lv": "advanced",
+"t": "Film scholarship",
+"f": "How cinema is studied at universities"
+},
+{
+"d": 321,
+"lv": "advanced",
+"t": "Debating film rankings",
+"f": "Why best-of lists spark lively discussions"
+},
+{
+"d": 322,
+"lv": "advanced",
+"t": "Personal taste versus quality",
+"f": "Separating what you enjoy from what is well made"
+},
+{
+"d": 323,
+"lv": "advanced",
+"t": "Guilty pleasures",
+"f": "Celebrating films you love for fun"
+},
+{
+"d": 324,
+"lv": "advanced",
+"t": "Overlooked gems",
+"f": "Discovering lesser-known films worth watching"
+},
+{
+"d": 325,
+"lv": "advanced",
+"t": "Directors' signature styles",
+"f": "Recognising a director from their visual choices"
+},
+{
+"d": 326,
+"lv": "advanced",
+"t": "Analysing a director's body of work",
+"f": "Watching several films by one filmmaker"
+},
+{
+"d": 327,
+"lv": "advanced",
+"t": "Festival-style viewing",
+"f": "Watching several films in a day like at a festival"
+},
+{
+"d": 328,
+"lv": "advanced",
+"t": "Hosting a film discussion",
+"f": "Leading a lively talk about a movie"
+},
+{
+"d": 329,
+"lv": "advanced",
+"t": "Your critic's voice",
+"f": "Developing a personal style for talking about films"
+},
+{
+"d": 330,
+"lv": "advanced",
+"t": "Review: criticism and culture",
+"f": "Recapping critical skills, festivals and archives"
+},
+{
+"d": 331,
+"lv": "advanced",
+"t": "Making your own short film",
+"f": "Planning a simple film you can shoot with a phone"
+},
+{
+"d": 332,
+"lv": "advanced",
+"t": "Smartphone filmmaking",
+"f": "Getting the best images and sound from a phone"
+},
+{
+"d": 333,
+"lv": "advanced",
+"t": "Writing a one-page script",
+"f": "A short script with a clear beginning, middle and end"
+},
+{
+"d": 334,
+"lv": "advanced",
+"t": "Planning shots with a shot list",
+"f": "Organising your shoot step by step"
+},
+{
+"d": 335,
+"lv": "advanced",
+"t": "Framing and composition in practice",
+"f": "Applying the rule of thirds and headroom"
+},
+{
+"d": 336,
+"lv": "advanced",
+"t": "Lighting with what you have",
+"f": "Windows, lamps and reflectors for home filmmaking"
+},
+{
+"d": 337,
+"lv": "advanced",
+"t": "Recording clear sound",
+"f": "Simple tips for better audio on a budget"
+},
+{
+"d": 338,
+"lv": "advanced",
+"t": "Directing friends and family",
+"f": "Giving clear, encouraging direction to actors"
+},
+{
+"d": 339,
+"lv": "advanced",
+"t": "Editing on a computer or phone",
+"f": "Free and simple editing tools and basic cuts"
+},
+{
+"d": 340,
+"lv": "advanced",
+"t": "Adding music and titles",
+"f": "Choosing royalty-free music and simple credits"
+},
+{
+"d": 341,
+"lv": "advanced",
+"t": "Creating a one-minute film",
+"f": "A practical challenge combining everything learned"
+},
+{
+"d": 342,
+"lv": "advanced",
+"t": "Stop-motion at home",
+"f": "Making a tiny animation with toys or clay"
+},
+{
+"d": 343,
+"lv": "advanced",
+"t": "Making a mini documentary",
+"f": "Telling a real story about a place or hobby"
+},
+{
+"d": 344,
+"lv": "advanced",
+"t": "Sharing your films",
+"f": "Getting feedback and sharing work with others"
+},
+{
+"d": 345,
+"lv": "advanced",
+"t": "Starting a film club",
+"f": "Inviting friends to watch and discuss films regularly"
+},
+{
+"d": 346,
+"lv": "advanced",
+"t": "Themed movie nights",
+"f": "Planning screenings around a genre, country or director"
+},
+{
+"d": 347,
+"lv": "advanced",
+"t": "Watching with subtitles to learn languages",
+"f": "Using films as a fun language-learning tool"
+},
+{
+"d": 348,
+"lv": "advanced",
+"t": "Movies that teach about cultures",
+"f": "Films that open windows onto other countries"
+},
+{
+"d": 349,
+"lv": "advanced",
+"t": "Film tourism",
+"f": "Visiting famous filming locations around the world"
+},
+{
+"d": 350,
+"lv": "advanced",
+"t": "Cinema and food",
+"f": "Iconic food scenes and themed snacks for movie nights"
+},
+{
+"d": 351,
+"lv": "advanced",
+"t": "Collecting film memorabilia",
+"f": "Posters, soundtracks and books for film lovers"
+},
+{
+"d": 352,
+"lv": "advanced",
+"t": "Film books worth reading",
+"f": "Accessible books about cinema history and craft"
+},
+{
+"d": 353,
+"lv": "advanced",
+"t": "Film soundtracks to listen to",
+"f": "Enjoying scores and soundtracks on their own"
+},
+{
+"d": 354,
+"lv": "advanced",
+"t": "Careers in film",
+"f": "Many roles from animation to sound to marketing"
+},
+{
+"d": 355,
+"lv": "advanced",
+"t": "The future of cinema",
+"f": "New technologies and how films may evolve"
+},
+{
+"d": 356,
+"lv": "advanced",
+"t": "Virtual production",
+"f": "LED screens and real-time digital sets"
+},
+{
+"d": 357,
+"lv": "advanced",
+"t": "Cinema as a shared experience",
+"f": "Why watching together still matters"
+},
+{
+"d": 358,
+"lv": "advanced",
+"t": "Your all-time top ten",
+"f": "Building and explaining your personal favourite films list"
+},
+{
+"d": 359,
+"lv": "advanced",
+"t": "Your film identity",
+"f": "Reflecting on how your taste has grown this year"
+},
+{
+"d": 360,
+"lv": "advanced",
+"t": "Review: becoming a film lover",
+"f": "Recapping filmmaking, film clubs and the future of cinema"
+},
+{
+"d": 361,
+"lv": "advanced",
+"t": "Your year in movies",
+"f": "Looking back at the films you discovered on this path"
+},
+{
+"d": 362,
+"lv": "advanced",
+"t": "Recommending films to others",
+"f": "Matching films to friends' tastes"
+},
+{
+"d": 363,
+"lv": "advanced",
+"t": "Your next watchlist",
+"f": "Planning a new year of film discoveries"
+},
+{
+"d": 364,
+"lv": "advanced",
+"t": "Lifelong cinephile habits",
+"f": "Keeping curiosity alive for films old and new"
+},
+{
+"d": 365,
+"lv": "advanced",
+"t": "Final review and celebration",
+"f": "A joyful wrap-up of the 365-day movie path"
+}
+]
+}

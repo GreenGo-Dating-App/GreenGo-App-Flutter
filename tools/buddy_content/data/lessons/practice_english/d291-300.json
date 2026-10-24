@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_english",
+ "lessons": [
+  {
+   "d": 291,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Inversion for emphasis: Never have I",
+     "g": "Add drama and emphasis with inversion: Never have I, Not only... but also.",
+     "p": [
+      "Negative or limiting word first, then auxiliary + subject: Never have I tasted anything so good. Rarely do I watch TV.",
+      "Not only + auxiliary + subject, but also: Not only did we win, but we also broke the record.",
+      "It's formal or dramatic, great for stories and speeches: Little did she know... No sooner had I left than it rained."
+     ],
+     "q": "Complete this dramatically: Never have I ever... What's the most amazing thing you've seen?",
+     "c": "Rewrite three normal sentences with inversion, e.g. I have never been so happy → Never have I been so happy."
+    },
+    "de": {
+     "t": "Inversion for emphasis: Never have I",
+     "g": "Mit Inversion fügst du Dramatik und Betonung hinzu: Never have I, Not only... but also.",
+     "p": [
+      "Negatives oder einschränkendes Wort zuerst, dann Hilfsverb + Subjekt: Never have I tasted anything so good. Rarely do I watch TV.",
+      "Not only + Hilfsverb + Subjekt, but also: Not only did we win, but we also broke the record.",
+      "Klingt formell oder dramatisch, ideal für Geschichten und Reden: Little did she know... No sooner had I left than it rained."
+     ],
+     "q": "Ergänze dramatisch: Never have I ever... Was ist das Erstaunlichste, das du je gesehen hast?",
+     "c": "Schreib drei normale Sätze mit Inversion um, z. B. I have never been so happy → Never have I been so happy."
+    },
+    "es": {
+     "t": "Inversion for emphasis: Never have I",
+     "g": "Añade drama y énfasis con la inversión: Never have I, Not only... but also.",
+     "p": [
+      "Primero la palabra negativa o limitadora, luego auxiliar + sujeto: Never have I tasted anything so good. Rarely do I watch TV.",
+      "Not only + auxiliar + sujeto, but also: Not only did we win, but we also broke the record.",
+      "Es formal o dramática, ideal para historias y discursos: Little did she know... No sooner had I left than it rained."
+     ],
+     "q": "Completa con dramatismo: Never have I ever... ¿Qué es lo más increíble que has visto?",
+     "c": "Reescribe tres frases normales con inversión, p. ej. I have never been so happy → Never have I been so happy."
+    },
+    "fr": {
+     "t": "Inversion for emphasis: Never have I",
+     "g": "Ajoute du drame et de l'emphase avec l'inversion : Never have I, Not only... but also.",
+     "p": [
+      "Mot négatif ou restrictif d'abord, puis auxiliaire + sujet : Never have I tasted anything so good. Rarely do I watch TV.",
+      "Not only + auxiliaire + sujet, but also : Not only did we win, but we also broke the record.",
+      "C'est soutenu ou dramatique, idéal pour récits et discours : Little did she know... No sooner had I left than it rained."
+     ],
+     "q": "Complète de façon dramatique : Never have I ever... Quelle est la chose la plus incroyable que tu aies vue ?",
+     "c": "Réécris trois phrases simples avec inversion, par ex. I have never been so happy → Never have I been so happy."
+    },
+    "it": {
+     "t": "Inversion for emphasis: Never have I",
+     "g": "Aggiungi enfasi e dramma con l'inversione: Never have I, Not only... but also.",
+     "p": [
+      "Prima la parola negativa o limitativa, poi ausiliare + soggetto: Never have I tasted anything so good. Rarely do I watch TV.",
+      "Not only + ausiliare + soggetto, but also: Not only did we win, but we also broke the record.",
+      "È formale o drammatica, perfetta per racconti e discorsi: Little did she know... No sooner had I left than it rained."
+     ],
+     "q": "Completa in modo drammatico: Never have I ever... Qual è la cosa più incredibile che hai visto?",
+     "c": "Riscrivi tre frasi normali con l'inversione, ad es. I have never been so happy → Never have I been so happy."
+    },
+    "pt": {
+     "t": "Inversion for emphasis: Never have I",
+     "g": "Acrescenta drama e ênfase com a inversão: Never have I, Not only... but also.",
+     "p": [
+      "Primeiro a palavra negativa ou restritiva, depois auxiliar + sujeito: Never have I tasted anything so good. Rarely do I watch TV.",
+      "Not only + auxiliar + sujeito, but also: Not only did we win, but we also broke the record.",
+      "É formal ou dramática, ótima para histórias e discursos: Little did she know... No sooner had I left than it rained."
+     ],
+     "q": "Completa de forma dramática: Never have I ever... Qual é a coisa mais incrível que já viste?",
+     "c": "Reescreve três frases normais com inversão, p. ex. I have never been so happy → Never have I been so happy."
+    },
+    "pt_BR": {
+     "t": "Inversion for emphasis: Never have I",
+     "g": "Dê drama e ênfase com a inversão: Never have I, Not only... but also.",
+     "p": [
+      "Primeiro a palavra negativa ou restritiva, depois auxiliar + sujeito: Never have I tasted anything so good. Rarely do I watch TV.",
+      "Not only + auxiliar + sujeito, but also: Not only did we win, but we also broke the record.",
+      "É formal ou dramática, ótima para histórias e discursos: Little did she know... No sooner had I left than it rained."
+     ],
+     "q": "Complete de forma dramática: Never have I ever... Qual é a coisa mais incrível que você já viu?",
+     "c": "Reescreva três frases normais com inversão, ex.: I have never been so happy → Never have I been so happy."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "Never have I",
+      "ex": "Never have I seen such a beautiful sunset."
+     },
+     {
+      "w": "Rarely do we",
+      "ex": "Rarely do we get snow in this city."
+     },
+     {
+      "w": "Not only... but also",
+      "ex": "Not only is she kind, but she's also very funny."
+     },
+     {
+      "w": "Only then did I",
+      "ex": "Only then did I realise my mistake."
+     },
+     {
+      "w": "No sooner had... than",
+      "ex": "No sooner had we sat down than it started to rain."
+     },
+     {
+      "w": "Little did I know",
+      "ex": "Little did I know that day would change my life."
+     }
+    ],
+    "gram": "Inversion: after a negative or limiting adverb at the start, the auxiliary comes before the subject: Never have I..., Rarely do we..."
+   }
+  },
+  {
+   "d": 292,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Cleft sentences: What I need is",
+     "g": "Highlight the key part of a sentence with cleft sentences.",
+     "p": [
+      "What-clefts: What I love is travelling. What surprised me was the silence. What we need is more time.",
+      "It-clefts point to the focus: It was Maria who organised the party (not someone else). It's the weather that I miss.",
+      "Spoken favourites: The thing is,... All I want is... The reason why I came is... The best part was..."
+     ],
+     "q": "What do you love most about where you live? Start your answer with What I love about... is...",
+     "c": "Write four cleft sentences about your life: two What... is/was and two It was... who/that."
+    },
+    "de": {
+     "t": "Cleft sentences: What I need is",
+     "g": "Mit Spaltsätzen (cleft sentences) hebst du den wichtigsten Teil eines Satzes hervor.",
+     "p": [
+      "What-Sätze: What I love is travelling. What surprised me was the silence. What we need is more time.",
+      "It-Sätze zeigen auf den Fokus: It was Maria who organised the party (niemand sonst). It's the weather that I miss.",
+      "Beliebt im Gespräch: The thing is,... All I want is... The reason why I came is... The best part was..."
+     ],
+     "q": "Was liebst du am meisten an deinem Wohnort? Beginne deine Antwort mit What I love about... is...",
+     "c": "Schreib vier Spaltsätze über dein Leben: zwei mit What... is/was und zwei mit It was... who/that."
+    },
+    "es": {
+     "t": "Cleft sentences: What I need is",
+     "g": "Destaca la parte clave de una frase con las oraciones escindidas (cleft sentences).",
+     "p": [
+      "Con What: What I love is travelling. What surprised me was the silence. What we need is more time.",
+      "Con It se señala el foco: It was Maria who organised the party (nadie más). It's the weather that I miss.",
+      "Favoritas al hablar: The thing is,... All I want is... The reason why I came is... The best part was..."
+     ],
+     "q": "¿Qué es lo que más te gusta del lugar donde vives? Empieza con What I love about... is...",
+     "c": "Escribe cuatro oraciones escindidas sobre tu vida: dos con What... is/was y dos con It was... who/that."
+    },
+    "fr": {
+     "t": "Cleft sentences: What I need is",
+     "g": "Mets en valeur l'élément clé d'une phrase avec les phrases clivées (cleft sentences).",
+     "p": [
+      "Avec What : What I love is travelling. What surprised me was the silence. What we need is more time.",
+      "Avec It, on pointe le focus : It was Maria who organised the party (personne d'autre). It's the weather that I miss.",
+      "Très courant à l'oral : The thing is,... All I want is... The reason why I came is... The best part was..."
+     ],
+     "q": "Qu'est-ce que tu aimes le plus là où tu vis ? Commence par What I love about... is...",
+     "c": "Écris quatre phrases clivées sur ta vie : deux avec What... is/was et deux avec It was... who/that."
+    },
+    "it": {
+     "t": "Cleft sentences: What I need is",
+     "g": "Metti in risalto la parte chiave di una frase con le frasi scisse (cleft sentences).",
+     "p": [
+      "Con What: What I love is travelling. What surprised me was the silence. What we need is more time.",
+      "Con It indichi il focus: It was Maria who organised the party (non un altro). It's the weather that I miss.",
+      "Le preferite nel parlato: The thing is,... All I want is... The reason why I came is... The best part was..."
+     ],
+     "q": "Cosa ami di più del posto in cui vivi? Inizia con What I love about... is...",
+     "c": "Scrivi quattro frasi scisse sulla tua vita: due con What... is/was e due con It was... who/that."
+    },
+    "pt": {
+     "t": "Cleft sentences: What I need is",
+     "g": "Destaca a parte principal de uma frase com as frases clivadas (cleft sentences).",
+     "p": [
+      "Com What: What I love is travelling. What surprised me was the silence. What we need is more time.",
+      "Com It aponta-se o foco: It was Maria who organised the party (mais ninguém). It's the weather that I miss.",
+      "Muito usadas na fala: The thing is,... All I want is... The reason why I came is... The best part was..."
+     ],
+     "q": "O que mais adoras no sítio onde vives? Começa com What I love about... is...",
+     "c": "Escreve quatro frases clivadas sobre a tua vida: duas com What... is/was e duas com It was... who/that."
+    },
+    "pt_BR": {
+     "t": "Cleft sentences: What I need is",
+     "g": "Destaque a parte principal de uma frase com as frases clivadas (cleft sentences).",
+     "p": [
+      "Com What: What I love is travelling. What surprised me was the silence. What we need is more time.",
+      "Com It você aponta o foco: It was Maria who organised the party (ninguém mais). It's the weather that I miss.",
+      "Muito usadas na fala: The thing is,... All I want is... The reason why I came is... The best part was..."
+     ],
+     "q": "Do que você mais gosta no lugar onde mora? Comece com What I love about... is...",
+     "c": "Escreva quatro frases clivadas sobre a sua vida: duas com What... is/was e duas com It was... who/that."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "What I need is",
+      "ex": "What I need is a long holiday."
+     },
+     {
+      "w": "What I love about",
+      "ex": "What I love about this city is the food."
+     },
+     {
+      "w": "It was... who",
+      "ex": "It was Sam who found the keys."
+     },
+     {
+      "w": "It's... that",
+      "ex": "It's the people that make this place special."
+     },
+     {
+      "w": "All I want is",
+      "ex": "All I want is a quiet evening at home."
+     },
+     {
+      "w": "The thing is",
+      "ex": "The thing is, I've already made plans."
+     }
+    ],
+    "gram": "Clefts: What + clause + is/was + focus (What I need is sleep); It is/was + focus + who/that (It was Ana who called)."
+   }
+  },
+  {
+   "d": 293,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Participle clauses: Having finished",
+     "g": "Shorten sentences elegantly with participle clauses like Having finished work.",
+     "p": [
+      "-ing for actions at the same time or a reason: Walking along the beach, we found a shell. Feeling hungry, I made a sandwich.",
+      "Having + past participle for an earlier action: Having finished my homework, I watched a film.",
+      "Past participle for a passive meaning: Painted in 1503, the Mona Lisa is world-famous. Both parts need the same subject!"
+     ],
+     "q": "Describe your morning with a participle clause, e.g. Having had breakfast, I... What did you do next?",
+     "c": "Join three pairs of sentences with participle clauses, e.g. I finished work. I went home. → Having finished work, I went home."
+    },
+    "de": {
+     "t": "Participle clauses: Having finished",
+     "g": "Mit Partizipialsätzen wie Having finished work kürzt du Sätze elegant.",
+     "p": [
+      "-ing für Gleichzeitiges oder einen Grund: Walking along the beach, we found a shell. Feeling hungry, I made a sandwich.",
+      "Having + Partizip für eine frühere Handlung: Having finished my homework, I watched a film.",
+      "Partizip Perfekt mit Passivbedeutung: Painted in 1503, the Mona Lisa is world-famous. Beide Teile brauchen dasselbe Subjekt!"
+     ],
+     "q": "Beschreib deinen Morgen mit einem Partizipialsatz, z. B. Having had breakfast, I... Was hast du danach gemacht?",
+     "c": "Verbinde drei Satzpaare mit Partizipialsätzen, z. B. I finished work. I went home. → Having finished work, I went home."
+    },
+    "es": {
+     "t": "Participle clauses: Having finished",
+     "g": "Acorta frases con elegancia usando oraciones de participio como Having finished work.",
+     "p": [
+      "-ing para acciones simultáneas o una causa: Walking along the beach, we found a shell. Feeling hungry, I made a sandwich.",
+      "Having + participio para una acción anterior: Having finished my homework, I watched a film.",
+      "Participio pasado con sentido pasivo: Painted in 1503, the Mona Lisa is world-famous. ¡Las dos partes deben tener el mismo sujeto!"
+     ],
+     "q": "Describe tu mañana con una oración de participio, p. ej. Having had breakfast, I... ¿Qué hiciste después?",
+     "c": "Une tres pares de frases con participio, p. ej. I finished work. I went home. → Having finished work, I went home."
+    },
+    "fr": {
+     "t": "Participle clauses: Having finished",
+     "g": "Raccourcis tes phrases avec élégance grâce aux propositions participiales comme Having finished work.",
+     "p": [
+      "-ing pour la simultanéité ou une cause : Walking along the beach, we found a shell. Feeling hungry, I made a sandwich.",
+      "Having + participe pour une action antérieure : Having finished my homework, I watched a film.",
+      "Participe passé à sens passif : Painted in 1503, the Mona Lisa is world-famous. Les deux parties doivent avoir le même sujet !"
+     ],
+     "q": "Décris ta matinée avec une participiale, par ex. Having had breakfast, I... Qu'as-tu fait ensuite ?",
+     "c": "Relie trois paires de phrases avec une participiale, par ex. I finished work. I went home. → Having finished work, I went home."
+    },
+    "it": {
+     "t": "Participle clauses: Having finished",
+     "g": "Accorcia le frasi con eleganza usando le participiali come Having finished work.",
+     "p": [
+      "-ing per azioni contemporanee o una causa: Walking along the beach, we found a shell. Feeling hungry, I made a sandwich.",
+      "Having + participio per un'azione precedente: Having finished my homework, I watched a film.",
+      "Participio passato con valore passivo: Painted in 1503, the Mona Lisa is world-famous. Le due parti devono avere lo stesso soggetto!"
+     ],
+     "q": "Descrivi la tua mattina con una participiale, ad es. Having had breakfast, I... Cosa hai fatto dopo?",
+     "c": "Unisci tre coppie di frasi con una participiale, ad es. I finished work. I went home. → Having finished work, I went home."
+    },
+    "pt": {
+     "t": "Participle clauses: Having finished",
+     "g": "Encurta frases com elegância usando orações participiais como Having finished work.",
+     "p": [
+      "-ing para ações simultâneas ou uma causa: Walking along the beach, we found a shell. Feeling hungry, I made a sandwich.",
+      "Having + particípio para uma ação anterior: Having finished my homework, I watched a film.",
+      "Particípio passado com sentido passivo: Painted in 1503, the Mona Lisa is world-famous. As duas partes têm o mesmo sujeito!"
+     ],
+     "q": "Descreve a tua manhã com uma oração participial, p. ex. Having had breakfast, I... O que fizeste a seguir?",
+     "c": "Junta três pares de frases com orações participiais, p. ex. I finished work. I went home. → Having finished work, I went home."
+    },
+    "pt_BR": {
+     "t": "Participle clauses: Having finished",
+     "g": "Encurte frases com elegância usando orações participiais como Having finished work.",
+     "p": [
+      "-ing para ações simultâneas ou uma causa: Walking along the beach, we found a shell. Feeling hungry, I made a sandwich.",
+      "Having + particípio para uma ação anterior: Having finished my homework, I watched a film.",
+      "Particípio passado com sentido passivo: Painted in 1503, the Mona Lisa is world-famous. As duas partes têm o mesmo sujeito!"
+     ],
+     "q": "Descreva a sua manhã com uma oração participial, ex.: Having had breakfast, I... O que você fez depois?",
+     "c": "Junte três pares de frases com orações participiais, ex.: I finished work. I went home. → Having finished work, I went home."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "Having finished",
+      "ex": "Having finished work, she went for a run."
+     },
+     {
+      "w": "Walking home",
+      "ex": "Walking home, I saw an old friend."
+     },
+     {
+      "w": "Not knowing",
+      "ex": "Not knowing the way, we asked a local."
+     },
+     {
+      "w": "Built in",
+      "ex": "Built in 1890, the station is still in use."
+     },
+     {
+      "w": "Feeling tired",
+      "ex": "Feeling tired, he went to bed early."
+     },
+     {
+      "w": "Having been told",
+      "ex": "Having been told the news, she called her mum."
+     }
+    ],
+    "gram": "Participle clauses shorten sentences with the same subject: -ing (at the same time/reason), having + pp (before), pp (passive meaning)."
+   }
+  },
+  {
+   "d": 294,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Advanced relative clauses",
+     "g": "Use refined relative clauses like most of whom, some of which and the reason why.",
+     "p": [
+      "Quantifier + of whom (people) / of which (things): I have many friends, a few of whom speak Japanese.",
+      "Formal preposition first: the city in which I was born = the city I was born in. The person to whom I spoke.",
+      "Which for a whole idea: It rained all week, which was disappointing. Use commas with these extra-information clauses."
+     ],
+     "q": "Tell me about a group of people you know, using most of whom or some of whom.",
+     "c": "Write four sentences with most of whom, some of which, the reason why and a which that refers to a whole idea."
+    },
+    "de": {
+     "t": "Advanced relative clauses",
+     "g": "Du verwendest gehobene Relativsätze wie most of whom, some of which und the reason why.",
+     "p": [
+      "Mengenwort + of whom (Personen) / of which (Dinge): I have many friends, a few of whom speak Japanese.",
+      "Formell steht die Präposition vorn: the city in which I was born = the city I was born in. The person to whom I spoke.",
+      "Which für einen ganzen Gedanken: It rained all week, which was disappointing. Solche Zusatzsätze stehen mit Kommas."
+     ],
+     "q": "Erzähl mir von einer Gruppe von Menschen, die du kennst, mit most of whom oder some of whom.",
+     "c": "Schreib vier Sätze mit most of whom, some of which, the reason why und einem which, das sich auf einen ganzen Gedanken bezieht."
+    },
+    "es": {
+     "t": "Advanced relative clauses",
+     "g": "Usa oraciones de relativo avanzadas como most of whom, some of which y the reason why.",
+     "p": [
+      "Cuantificador + of whom (personas) / of which (cosas): I have many friends, a few of whom speak Japanese.",
+      "En registro formal, la preposición va delante: the city in which I was born = the city I was born in. The person to whom I spoke.",
+      "Which para una idea completa: It rained all week, which was disappointing. Estas oraciones van entre comas."
+     ],
+     "q": "Háblame de un grupo de personas que conoces usando most of whom o some of whom.",
+     "c": "Escribe cuatro frases con most of whom, some of which, the reason why y un which que se refiera a toda una idea."
+    },
+    "fr": {
+     "t": "Advanced relative clauses",
+     "g": "Utilise des relatives soutenues comme most of whom, some of which et the reason why.",
+     "p": [
+      "Quantificateur + of whom (personnes) / of which (choses) : I have many friends, a few of whom speak Japanese.",
+      "En style soutenu, la préposition passe devant : the city in which I was born = the city I was born in. The person to whom I spoke.",
+      "Which pour reprendre toute une idée : It rained all week, which was disappointing. Ces relatives prennent des virgules."
+     ],
+     "q": "Parle-moi d'un groupe de personnes que tu connais en utilisant most of whom ou some of whom.",
+     "c": "Écris quatre phrases avec most of whom, some of which, the reason why et un which qui reprend toute une idée."
+    },
+    "it": {
+     "t": "Advanced relative clauses",
+     "g": "Usa relative più raffinate come most of whom, some of which e the reason why.",
+     "p": [
+      "Quantificatore + of whom (persone) / of which (cose): I have many friends, a few of whom speak Japanese.",
+      "Nel registro formale la preposizione va prima: the city in which I was born = the city I was born in. The person to whom I spoke.",
+      "Which per un'intera idea: It rained all week, which was disappointing. Queste relative vogliono le virgole."
+     ],
+     "q": "Parlami di un gruppo di persone che conosci usando most of whom o some of whom.",
+     "c": "Scrivi quattro frasi con most of whom, some of which, the reason why e un which riferito a un'intera idea."
+    },
+    "pt": {
+     "t": "Advanced relative clauses",
+     "g": "Usa orações relativas mais elaboradas como most of whom, some of which e the reason why.",
+     "p": [
+      "Quantificador + of whom (pessoas) / of which (coisas): I have many friends, a few of whom speak Japanese.",
+      "No registo formal, a preposição vem antes: the city in which I was born = the city I was born in. The person to whom I spoke.",
+      "Which para uma ideia inteira: It rained all week, which was disappointing. Estas orações levam vírgulas."
+     ],
+     "q": "Fala-me de um grupo de pessoas que conheces usando most of whom ou some of whom.",
+     "c": "Escreve quatro frases com most of whom, some of which, the reason why e um which que se refira a uma ideia inteira."
+    },
+    "pt_BR": {
+     "t": "Advanced relative clauses",
+     "g": "Use orações relativas mais elaboradas como most of whom, some of which e the reason why.",
+     "p": [
+      "Quantificador + of whom (pessoas) / of which (coisas): I have many friends, a few of whom speak Japanese.",
+      "No registro formal, a preposição vem antes: the city in which I was born = the city I was born in. The person to whom I spoke.",
+      "Which para uma ideia inteira: It rained all week, which was disappointing. Essas orações levam vírgulas."
+     ],
+     "q": "Me fale de um grupo de pessoas que você conhece usando most of whom ou some of whom.",
+     "c": "Escreva quatro frases com most of whom, some of which, the reason why e um which que se refira a uma ideia inteira."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "most of whom",
+      "ex": "I have ten cousins, most of whom live abroad."
+     },
+     {
+      "w": "some of which",
+      "ex": "She wrote five books, some of which became films."
+     },
+     {
+      "w": "the reason why",
+      "ex": "That's the reason why I moved here."
+     },
+     {
+      "w": "whose",
+      "ex": "I met a woman whose son is a pilot."
+     },
+     {
+      "w": "in which",
+      "ex": "This is the house in which I grew up."
+     },
+     {
+      "w": "which (whole idea)",
+      "ex": "He arrived on time, which surprised everyone."
+     }
+    ],
+    "gram": "Advanced relatives: quantifier + of whom/which (most of whom), preposition + which/whom (in which), which referring to a whole clause."
+   }
+  },
+  {
+   "d": 295,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Articles: tricky cases",
+     "g": "Master tricky article cases with places, institutions and abstract ideas.",
+     "p": [
+      "Institutions used for their purpose take no article: go to school, be in bed, go to church, at work. The school = the building.",
+      "Places: no article for most countries, cities, lakes and single mountains (France, Lake Garda, Everest).",
+      "The with rivers, seas, oceans, ranges and plural countries: the Nile, the Alps, the USA. Abstract ideas in general: Love is..., Music helps."
+     ],
+     "q": "Where did you go to school, and do you ever go back to the school to visit?",
+     "c": "Write five sentences with tricky articles: school vs the school, a lake, a river, a mountain range and an abstract idea."
+    },
+    "de": {
+     "t": "Articles: tricky cases",
+     "g": "Du meisterst knifflige Artikelfälle bei Orten, Institutionen und abstrakten Begriffen.",
+     "p": [
+      "Institutionen in ihrem Zweck ohne Artikel: go to school, be in bed, go to church, at work. The school = das Gebäude.",
+      "Orte: kein Artikel bei den meisten Ländern, Städten, Seen und einzelnen Bergen (France, Lake Garda, Everest).",
+      "The bei Flüssen, Meeren, Gebirgen und Ländern im Plural: the Nile, the Alps, the USA. Abstraktes allgemein: Love is..., Music helps."
+     ],
+     "q": "Wo bist du zur Schule gegangen, und besuchst du die Schule manchmal noch?",
+     "c": "Schreib fünf Sätze mit kniffligen Artikeln: school vs. the school, ein See, ein Fluss, ein Gebirge und ein abstrakter Begriff."
+    },
+    "es": {
+     "t": "Articles: tricky cases",
+     "g": "Domina los casos difíciles de artículos con lugares, instituciones e ideas abstractas.",
+     "p": [
+      "Las instituciones usadas para su fin van sin artículo: go to school, be in bed, go to church, at work. The school = el edificio.",
+      "Lugares: sin artículo la mayoría de países, ciudades, lagos y montañas sueltas (France, Lake Garda, Everest).",
+      "The con ríos, mares, cordilleras y países en plural: the Nile, the Alps, the USA. Ideas abstractas en general: Love is..., Music helps."
+     ],
+     "q": "¿Dónde fuiste al colegio? ¿Vuelves alguna vez al edificio de visita?",
+     "c": "Escribe cinco frases con artículos difíciles: school frente a the school, un lago, un río, una cordillera y una idea abstracta."
+    },
+    "fr": {
+     "t": "Articles: tricky cases",
+     "g": "Maîtrise les cas difficiles des articles avec les lieux, les institutions et les idées abstraites.",
+     "p": [
+      "Les institutions dans leur fonction n'ont pas d'article : go to school, be in bed, go to church, at work. The school = le bâtiment.",
+      "Lieux : pas d'article pour la plupart des pays, villes, lacs et sommets isolés (France, Lake Garda, Everest).",
+      "The avec fleuves, mers, chaînes de montagnes et pays au pluriel : the Nile, the Alps, the USA. Idées générales : Love is..., Music helps."
+     ],
+     "q": "Où es-tu allé à l'école, et retournes-tu parfois voir le bâtiment ?",
+     "c": "Écris cinq phrases avec des articles difficiles : school ou the school, un lac, un fleuve, une chaîne de montagnes et une idée abstraite."
+    },
+    "it": {
+     "t": "Articles: tricky cases",
+     "g": "Padroneggia i casi difficili degli articoli con luoghi, istituzioni e idee astratte.",
+     "p": [
+      "Le istituzioni usate per il loro scopo non hanno articolo: go to school, be in bed, go to church, at work. The school = l'edificio.",
+      "Luoghi: niente articolo per la maggior parte di paesi, città, laghi e singole montagne (France, Lake Garda, Everest).",
+      "The con fiumi, mari, catene montuose e paesi al plurale: the Nile, the Alps, the USA. Idee in generale: Love is..., Music helps."
+     ],
+     "q": "Dove sei andato a scuola, e ci torni mai a visitare l'edificio?",
+     "c": "Scrivi cinque frasi con articoli difficili: school o the school, un lago, un fiume, una catena montuosa e un'idea astratta."
+    },
+    "pt": {
+     "t": "Articles: tricky cases",
+     "g": "Domina os casos difíceis dos artigos com lugares, instituições e ideias abstratas.",
+     "p": [
+      "Instituições usadas para o seu fim não levam artigo: go to school, be in bed, go to church, at work. The school = o edifício.",
+      "Lugares: sem artigo na maioria dos países, cidades, lagos e montanhas isoladas (France, Lake Garda, Everest).",
+      "The com rios, mares, cordilheiras e países no plural: the Nile, the Alps, the USA. Ideias em geral: Love is..., Music helps."
+     ],
+     "q": "Onde andaste na escola, e ainda voltas lá de visita?",
+     "c": "Escreve cinco frases com artigos difíceis: school vs the school, um lago, um rio, uma cordilheira e uma ideia abstrata."
+    },
+    "pt_BR": {
+     "t": "Articles: tricky cases",
+     "g": "Domine os casos difíceis de artigos com lugares, instituições e ideias abstratas.",
+     "p": [
+      "Instituições usadas para sua função não levam artigo: go to school, be in bed, go to church, at work. The school = o prédio.",
+      "Lugares: sem artigo na maioria dos países, cidades, lagos e montanhas isoladas (France, Lake Garda, Everest).",
+      "The com rios, mares, cordilheiras e países no plural: the Nile, the Alps, the USA. Ideias em geral: Love is..., Music helps."
+     ],
+     "q": "Onde você estudou, e ainda volta lá para visitar a escola?",
+     "c": "Escreva cinco frases com artigos difíceis: school vs the school, um lago, um rio, uma cordilheira e uma ideia abstrata."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "go to school",
+      "ex": "My little sister goes to school by bus."
+     },
+     {
+      "w": "go to the school",
+      "ex": "I went to the school to talk to her teacher."
+     },
+     {
+      "w": "in hospital (UK)",
+      "ex": "My uncle is in hospital after his operation."
+     },
+     {
+      "w": "the Alps",
+      "ex": "We went skiing in the Alps."
+     },
+     {
+      "w": "Lake Como",
+      "ex": "We had lunch by Lake Como."
+     },
+     {
+      "w": "life / the life",
+      "ex": "Life is beautiful. The life of Mozart was short."
+     }
+    ],
+    "gram": "No article: go to school/bed/work, most countries and lakes. The: a specific building, rivers, seas, mountain ranges."
+   }
+  },
+  {
+   "d": 296,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Advanced modals: needn't have",
+     "g": "Use advanced modals: needn't have vs didn't need to, would rather and had better.",
+     "p": [
+      "Needn't have + past participle: you did it, but it wasn't necessary. I needn't have cooked: they'd already eaten.",
+      "Didn't need to: it wasn't necessary, so you probably didn't do it. I didn't need to queue, so I went straight in.",
+      "Would rather + verb (preference): I'd rather walk. Had better = strong advice: You'd better hurry."
+     ],
+     "q": "Would you rather spend a weekend in the mountains or by the sea? Why?",
+     "c": "Write four sentences: one with needn't have, one with didn't need to, one with I'd rather and one with you'd better."
+    },
+    "de": {
+     "t": "Advanced modals: needn't have",
+     "g": "Du nutzt fortgeschrittene Modalverben: needn't have vs. didn't need to, would rather und had better.",
+     "p": [
+      "Needn't have + Partizip: Du hast es getan, es war aber unnötig. I needn't have cooked: they'd already eaten.",
+      "Didn't need to: Es war nicht nötig, also hast du es wohl nicht getan. I didn't need to queue, so I went straight in.",
+      "Would rather + Verb (Vorliebe): I'd rather walk. Had better = dringender Rat: You'd better hurry."
+     ],
+     "q": "Würdest du lieber ein Wochenende in den Bergen oder am Meer verbringen? Warum?",
+     "c": "Schreib vier Sätze: mit needn't have, mit didn't need to, mit I'd rather und mit you'd better."
+    },
+    "es": {
+     "t": "Advanced modals: needn't have",
+     "g": "Usa modales avanzados: needn't have frente a didn't need to, would rather y had better.",
+     "p": [
+      "Needn't have + participio: lo hiciste, pero no hacía falta. I needn't have cooked: they'd already eaten.",
+      "Didn't need to: no hacía falta, así que seguramente no lo hiciste. I didn't need to queue, so I went straight in.",
+      "Would rather + verbo (preferencia): I'd rather walk. Had better = consejo fuerte: You'd better hurry."
+     ],
+     "q": "¿Preferirías pasar un fin de semana en la montaña o en la playa? ¿Por qué?",
+     "c": "Escribe cuatro frases: con needn't have, con didn't need to, con I'd rather y con you'd better."
+    },
+    "fr": {
+     "t": "Advanced modals: needn't have",
+     "g": "Utilise des modaux avancés : needn't have ou didn't need to, would rather et had better.",
+     "p": [
+      "Needn't have + participe : tu l'as fait, mais c'était inutile. I needn't have cooked: they'd already eaten.",
+      "Didn't need to : ce n'était pas nécessaire, donc tu ne l'as sans doute pas fait. I didn't need to queue, so I went straight in.",
+      "Would rather + verbe (préférence): I'd rather walk. Had better = conseil fort: You'd better hurry."
+     ],
+     "q": "Préférerais-tu passer un week-end à la montagne ou à la mer ? Pourquoi ?",
+     "c": "Écris quatre phrases : avec needn't have, avec didn't need to, avec I'd rather et avec you'd better."
+    },
+    "it": {
+     "t": "Advanced modals: needn't have",
+     "g": "Usa i modali avanzati: needn't have o didn't need to, would rather e had better.",
+     "p": [
+      "Needn't have + participio: l'hai fatto, ma non serviva. I needn't have cooked: they'd already eaten.",
+      "Didn't need to: non era necessario, quindi probabilmente non l'hai fatto. I didn't need to queue, so I went straight in.",
+      "Would rather + verbo (preferenza): I'd rather walk. Had better = consiglio forte: You'd better hurry."
+     ],
+     "q": "Preferiresti passare un weekend in montagna o al mare? Perché?",
+     "c": "Scrivi quattro frasi: con needn't have, con didn't need to, con I'd rather e con you'd better."
+    },
+    "pt": {
+     "t": "Advanced modals: needn't have",
+     "g": "Usa modais avançados: needn't have vs didn't need to, would rather e had better.",
+     "p": [
+      "Needn't have + particípio: fizeste, mas não era preciso. I needn't have cooked: they'd already eaten.",
+      "Didn't need to: não era preciso, por isso provavelmente não fizeste. I didn't need to queue, so I went straight in.",
+      "Would rather + verbo (preferência): I'd rather walk. Had better = conselho forte: You'd better hurry."
+     ],
+     "q": "Preferias passar um fim de semana na montanha ou na praia? Porquê?",
+     "c": "Escreve quatro frases: com needn't have, com didn't need to, com I'd rather e com you'd better."
+    },
+    "pt_BR": {
+     "t": "Advanced modals: needn't have",
+     "g": "Use modais avançados: needn't have vs didn't need to, would rather e had better.",
+     "p": [
+      "Needn't have + particípio: você fez, mas não precisava. I needn't have cooked: they'd already eaten.",
+      "Didn't need to: não era preciso, então você provavelmente não fez. I didn't need to queue, so I went straight in.",
+      "Would rather + verbo (preferência): I'd rather walk. Had better = conselho forte: You'd better hurry."
+     ],
+     "q": "Você preferiria passar um fim de semana na montanha ou na praia? Por quê?",
+     "c": "Escreva quatro frases: com needn't have, com didn't need to, com I'd rather e com you'd better."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "needn't have",
+      "ex": "You needn't have brought food: we had plenty."
+     },
+     {
+      "w": "didn't need to",
+      "ex": "I didn't need to wear a coat, so I left it at home."
+     },
+     {
+      "w": "would rather",
+      "ex": "I'd rather stay in tonight."
+     },
+     {
+      "w": "would rather you",
+      "ex": "I'd rather you didn't tell anyone."
+     },
+     {
+      "w": "had better",
+      "ex": "You'd better hurry or you'll miss the bus."
+     },
+     {
+      "w": "had better not",
+      "ex": "We'd better not be late again."
+     }
+    ],
+    "gram": "Needn't have + pp = done but unnecessary; didn't need to = not necessary (usually not done). Would rather / had better + verb."
+   }
+  },
+  {
+   "d": 297,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Would for past habits",
+     "g": "Tell nostalgic stories about past habits with would.",
+     "p": [
+      "Would + verb for repeated past actions: When I was little, we would spend summers at my grandparents' house.",
+      "Would is only for actions, not states: I used to love sweets (not I would love). We used to have a dog.",
+      "Start with used to, then continue with would: We used to go camping. We'd wake up early and we'd swim in the river."
+     ],
+     "q": "What would you do on summer holidays when you were a child?",
+     "c": "Write a nostalgic paragraph of five sentences about your childhood: start with used to, then use would three times."
+    },
+    "de": {
+     "t": "Would for past habits",
+     "g": "Du erzählst nostalgische Geschichten über frühere Gewohnheiten mit would.",
+     "p": [
+      "Would + Verb für wiederholte Handlungen früher: When I was little, we would spend summers at my grandparents' house.",
+      "Would nur für Handlungen, nicht für Zustände: I used to love sweets (nicht I would love). We used to have a dog.",
+      "Beginne mit used to und erzähle mit would weiter: We used to go camping. We'd wake up early and we'd swim in the river."
+     ],
+     "q": "Was hast du als Kind in den Sommerferien immer gemacht?",
+     "c": "Schreib einen nostalgischen Absatz in fünf Sätzen über deine Kindheit: Beginne mit used to, dann dreimal would."
+    },
+    "es": {
+     "t": "Would for past habits",
+     "g": "Cuenta historias nostálgicas sobre hábitos del pasado con would.",
+     "p": [
+      "Would + verbo para acciones repetidas en el pasado: When I was little, we would spend summers at my grandparents' house.",
+      "Would solo sirve para acciones, no estados: I used to love sweets (no I would love). We used to have a dog.",
+      "Empieza con used to y sigue con would: We used to go camping. We'd wake up early and we'd swim in the river."
+     ],
+     "q": "¿Qué solías hacer en las vacaciones de verano cuando eras pequeño?",
+     "c": "Escribe un párrafo nostálgico de cinco frases sobre tu infancia: empieza con used to y luego usa would tres veces."
+    },
+    "fr": {
+     "t": "Would for past habits",
+     "g": "Raconte des souvenirs nostalgiques d'habitudes passées avec would.",
+     "p": [
+      "Would + verbe pour des actions répétées dans le passé : When I was little, we would spend summers at my grandparents' house.",
+      "Would seulement pour des actions, pas des états : I used to love sweets (pas I would love). We used to have a dog.",
+      "Commence avec used to, puis continue avec would : We used to go camping. We'd wake up early and we'd swim in the river."
+     ],
+     "q": "Que faisais-tu pendant les vacances d'été quand tu étais enfant ?",
+     "c": "Écris un paragraphe nostalgique de cinq phrases sur ton enfance : commence par used to, puis utilise would trois fois."
+    },
+    "it": {
+     "t": "Would for past habits",
+     "g": "Racconta storie nostalgiche sulle abitudini del passato con would.",
+     "p": [
+      "Would + verbo per azioni ripetute nel passato: When I was little, we would spend summers at my grandparents' house.",
+      "Would solo per azioni, non stati: I used to love sweets (non I would love). We used to have a dog.",
+      "Inizia con used to e prosegui con would: We used to go camping. We'd wake up early and we'd swim in the river."
+     ],
+     "q": "Cosa facevi durante le vacanze estive quando eri piccolo?",
+     "c": "Scrivi un paragrafo nostalgico di cinque frasi sulla tua infanzia: inizia con used to, poi usa would tre volte."
+    },
+    "pt": {
+     "t": "Would for past habits",
+     "g": "Conta histórias nostálgicas sobre hábitos do passado com would.",
+     "p": [
+      "Would + verbo para ações repetidas no passado: When I was little, we would spend summers at my grandparents' house.",
+      "Would só serve para ações, não estados: I used to love sweets (não I would love). We used to have a dog.",
+      "Começa com used to e continua com would: We used to go camping. We'd wake up early and we'd swim in the river."
+     ],
+     "q": "O que costumavas fazer nas férias de verão quando eras pequeno?",
+     "c": "Escreve um parágrafo nostálgico de cinco frases sobre a tua infância: começa com used to e depois usa would três vezes."
+    },
+    "pt_BR": {
+     "t": "Would for past habits",
+     "g": "Conte histórias nostálgicas sobre hábitos do passado com would.",
+     "p": [
+      "Would + verbo para ações repetidas no passado: When I was little, we would spend summers at my grandparents' house.",
+      "Would só serve para ações, não estados: I used to love sweets (não I would love). We used to have a dog.",
+      "Comece com used to e continue com would: We used to go camping. We'd wake up early and we'd swim in the river."
+     ],
+     "q": "O que você costumava fazer nas férias de verão quando era criança?",
+     "c": "Escreva um parágrafo nostálgico de cinco frases sobre a sua infância: comece com used to e depois use would três vezes."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "we would spend",
+      "ex": "Every summer, we would spend weeks by the lake."
+     },
+     {
+      "w": "used to",
+      "ex": "I used to have long hair."
+     },
+     {
+      "w": "would always",
+      "ex": "My grandad would always tell us stories."
+     },
+     {
+      "w": "back then",
+      "ex": "Back then, there were no mobile phones."
+     },
+     {
+      "w": "as a child",
+      "ex": "As a child, I would climb trees all day."
+     },
+     {
+      "w": "I remember",
+      "ex": "I remember how we would race our bikes."
+     }
+    ],
+    "gram": "Would + verb for repeated past actions (not states): We would play outside. Used to works for actions and states: I used to live there."
+   }
+  },
+  {
+   "d": 298,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Be used to vs get used to",
+     "g": "Tell apart be used to, get used to and used to.",
+     "p": [
+      "Be used to + -ing or noun = it's normal for me: I'm used to the cold. I'm used to working at night.",
+      "Get used to = the process of it becoming normal: I'm getting used to my new job. I soon got used to the food.",
+      "Don't confuse with used to + verb (past habit): I used to drive (I don't now) vs I'm used to driving (it's easy for me)."
+     ],
+     "q": "What's something new in your life that you're still getting used to?",
+     "c": "Write three sentences about yourself: one with I'm used to, one with I'm getting used to and one with I used to."
+    },
+    "de": {
+     "t": "Be used to vs get used to",
+     "g": "Du unterscheidest be used to, get used to und used to.",
+     "p": [
+      "Be used to + -ing oder Nomen = für mich normal: I'm used to the cold. I'm used to working at night.",
+      "Get used to = der Prozess, sich zu gewöhnen: I'm getting used to my new job. I soon got used to the food.",
+      "Nicht verwechseln mit used to + Verb (früher): I used to drive (heute nicht mehr) vs. I'm used to driving (fällt mir leicht)."
+     ],
+     "q": "An welche neue Sache in deinem Leben gewöhnst du dich gerade noch?",
+     "c": "Schreib drei Sätze über dich: mit I'm used to, mit I'm getting used to und mit I used to."
+    },
+    "es": {
+     "t": "Be used to vs get used to",
+     "g": "Distingue entre be used to, get used to y used to.",
+     "p": [
+      "Be used to + -ing o sustantivo = para mí es normal: I'm used to the cold. I'm used to working at night.",
+      "Get used to = el proceso de acostumbrarse: I'm getting used to my new job. I soon got used to the food.",
+      "No lo confundas con used to + verbo (hábito pasado): I used to drive (ya no) frente a I'm used to driving (me resulta fácil)."
+     ],
+     "q": "¿A qué cosa nueva de tu vida te estás acostumbrando todavía?",
+     "c": "Escribe tres frases sobre ti: con I'm used to, con I'm getting used to y con I used to."
+    },
+    "fr": {
+     "t": "Be used to vs get used to",
+     "g": "Fais la différence entre be used to, get used to et used to.",
+     "p": [
+      "Be used to + -ing ou nom = c'est normal pour moi : I'm used to the cold. I'm used to working at night.",
+      "Get used to = le fait de s'habituer : I'm getting used to my new job. I soon got used to the food.",
+      "À ne pas confondre avec used to + verbe (habitude passée) : I used to drive (plus maintenant) vs I'm used to driving (c'est facile)."
+     ],
+     "q": "À quelle nouveauté dans ta vie es-tu encore en train de t'habituer ?",
+     "c": "Écris trois phrases sur toi : avec I'm used to, avec I'm getting used to et avec I used to."
+    },
+    "it": {
+     "t": "Be used to vs get used to",
+     "g": "Distingui be used to, get used to e used to.",
+     "p": [
+      "Be used to + -ing o nome = per me è normale: I'm used to the cold. I'm used to working at night.",
+      "Get used to = il processo di abituarsi: I'm getting used to my new job. I soon got used to the food.",
+      "Non confonderlo con used to + verbo (abitudine passata): I used to drive (ora no) e I'm used to driving (mi viene facile)."
+     ],
+     "q": "A quale novità della tua vita ti stai ancora abituando?",
+     "c": "Scrivi tre frasi su di te: con I'm used to, con I'm getting used to e con I used to."
+    },
+    "pt": {
+     "t": "Be used to vs get used to",
+     "g": "Distingue be used to, get used to e used to.",
+     "p": [
+      "Be used to + -ing ou nome = para mim é normal: I'm used to the cold. I'm used to working at night.",
+      "Get used to = o processo de te habituares: I'm getting used to my new job. I soon got used to the food.",
+      "Não confundas com used to + verbo (hábito passado): I used to drive (já não) vs I'm used to driving (é fácil para mim)."
+     ],
+     "q": "A que novidade da tua vida te estás ainda a habituar?",
+     "c": "Escreve três frases sobre ti: com I'm used to, com I'm getting used to e com I used to."
+    },
+    "pt_BR": {
+     "t": "Be used to vs get used to",
+     "g": "Diferencie be used to, get used to e used to.",
+     "p": [
+      "Be used to + -ing ou substantivo = para mim é normal: I'm used to the cold. I'm used to working at night.",
+      "Get used to = o processo de se acostumar: I'm getting used to my new job. I soon got used to the food.",
+      "Não confunda com used to + verbo (hábito passado): I used to drive (não mais) vs I'm used to driving (é fácil para mim)."
+     ],
+     "q": "Com que novidade na sua vida você ainda está se acostumando?",
+     "c": "Escreva três frases sobre você: com I'm used to, com I'm getting used to e com I used to."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "be used to",
+      "ex": "I'm used to getting up early."
+     },
+     {
+      "w": "get used to",
+      "ex": "I'm getting used to driving on the left."
+     },
+     {
+      "w": "used to (past habit)",
+      "ex": "I used to live in a small town."
+     },
+     {
+      "w": "not be used to",
+      "ex": "She isn't used to spicy food."
+     },
+     {
+      "w": "got used to",
+      "ex": "It took me a while, but I got used to the noise."
+     },
+     {
+      "w": "can't get used to",
+      "ex": "I can't get used to the cold winters here."
+     }
+    ],
+    "gram": "Be used to + -ing/noun = familiar, not strange; get used to + -ing/noun = becoming familiar. Used to + verb = past habit (different!)."
+   }
+  },
+  {
+   "d": 299,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Review: advanced grammar",
+     "g": "Recap conditionals, futures, inversion and clefts with personal examples.",
+     "p": [
+      "The past that wasn't: If I had..., I would have... I wish I had... I should have... I was going to..., but...",
+      "Futures: This time tomorrow I'll be... By June I'll have... The train is about to leave. It's due to arrive at six.",
+      "Style and emphasis: Never have I... What I love is... It was Sam who... Having finished,... I had my hair cut."
+     ],
+     "q": "What is one thing you would have done differently this year, and what will you have achieved by next year?",
+     "c": "Write five personal sentences: one third conditional, one future perfect, one inversion, one cleft and one participle clause."
+    },
+    "de": {
+     "t": "Review: advanced grammar",
+     "g": "Du wiederholst Bedingungssätze, Zukunftsformen, Inversion und Spaltsätze mit persönlichen Beispielen.",
+     "p": [
+      "Die Vergangenheit, die nicht war: If I had..., I would have... I wish I had... I should have... I was going to..., but...",
+      "Zukunft: This time tomorrow I'll be... By June I'll have... The train is about to leave. It's due to arrive at six.",
+      "Stil und Betonung: Never have I... What I love is... It was Sam who... Having finished,... I had my hair cut."
+     ],
+     "q": "Was hättest du dieses Jahr anders gemacht, und was wirst du bis nächstes Jahr erreicht haben?",
+     "c": "Schreib fünf persönliche Sätze: third conditional, future perfect, Inversion, Spaltsatz und Partizipialsatz."
+    },
+    "es": {
+     "t": "Review: advanced grammar",
+     "g": "Repasa condicionales, futuros, inversión y oraciones escindidas con ejemplos personales.",
+     "p": [
+      "El pasado que no fue: If I had..., I would have... I wish I had... I should have... I was going to..., but...",
+      "Futuros: This time tomorrow I'll be... By June I'll have... The train is about to leave. It's due to arrive at six.",
+      "Estilo y énfasis: Never have I... What I love is... It was Sam who... Having finished,... I had my hair cut."
+     ],
+     "q": "¿Qué habrías hecho de otra manera este año y qué habrás conseguido para el año que viene?",
+     "c": "Escribe cinco frases personales: un third conditional, un future perfect, una inversión, una escindida y una de participio."
+    },
+    "fr": {
+     "t": "Review: advanced grammar",
+     "g": "Révise les conditionnelles, les futurs, l'inversion et les phrases clivées avec des exemples personnels.",
+     "p": [
+      "Le passé qui n'a pas eu lieu : If I had..., I would have... I wish I had... I should have... I was going to..., but...",
+      "Les futurs : This time tomorrow I'll be... By June I'll have... The train is about to leave. It's due to arrive at six.",
+      "Style et emphase : Never have I... What I love is... It was Sam who... Having finished,... I had my hair cut."
+     ],
+     "q": "Qu'aurais-tu fait autrement cette année, et qu'auras-tu accompli d'ici l'an prochain ?",
+     "c": "Écris cinq phrases personnelles : un third conditional, un future perfect, une inversion, une clivée et une participiale."
+    },
+    "it": {
+     "t": "Review: advanced grammar",
+     "g": "Ripassa periodi ipotetici, futuri, inversione e frasi scisse con esempi personali.",
+     "p": [
+      "Il passato che non è stato: If I had..., I would have... I wish I had... I should have... I was going to..., but...",
+      "I futuri: This time tomorrow I'll be... By June I'll have... The train is about to leave. It's due to arrive at six.",
+      "Stile ed enfasi: Never have I... What I love is... It was Sam who... Having finished,... I had my hair cut."
+     ],
+     "q": "Cosa avresti fatto diversamente quest'anno, e cosa avrai ottenuto entro l'anno prossimo?",
+     "c": "Scrivi cinque frasi personali: un third conditional, un future perfect, un'inversione, una scissa e una participiale."
+    },
+    "pt": {
+     "t": "Review: advanced grammar",
+     "g": "Revê condicionais, futuros, inversão e frases clivadas com exemplos pessoais.",
+     "p": [
+      "O passado que não aconteceu: If I had..., I would have... I wish I had... I should have... I was going to..., but...",
+      "Futuros: This time tomorrow I'll be... By June I'll have... The train is about to leave. It's due to arrive at six.",
+      "Estilo e ênfase: Never have I... What I love is... It was Sam who... Having finished,... I had my hair cut."
+     ],
+     "q": "O que terias feito de outra forma este ano, e o que terás conseguido até ao próximo ano?",
+     "c": "Escreve cinco frases pessoais: um third conditional, um future perfect, uma inversão, uma clivada e uma participial."
+    },
+    "pt_BR": {
+     "t": "Review: advanced grammar",
+     "g": "Revise condicionais, futuros, inversão e frases clivadas com exemplos pessoais.",
+     "p": [
+      "O passado que não aconteceu: If I had..., I would have... I wish I had... I should have... I was going to..., but...",
+      "Futuros: This time tomorrow I'll be... By June I'll have... The train is about to leave. It's due to arrive at six.",
+      "Estilo e ênfase: Never have I... What I love is... It was Sam who... Having finished,... I had my hair cut."
+     ],
+     "q": "O que você teria feito diferente este ano, e o que terá conquistado até o ano que vem?",
+     "c": "Escreva cinco frases pessoais: um third conditional, um future perfect, uma inversão, uma clivada e uma participial."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "If I had known",
+      "ex": "If I had known, I would have helped."
+     },
+     {
+      "w": "I'll have finished",
+      "ex": "By Friday, I'll have finished the project."
+     },
+     {
+      "w": "Never have I",
+      "ex": "Never have I laughed so much."
+     },
+     {
+      "w": "What I need is",
+      "ex": "What I need is a good night's sleep."
+     },
+     {
+      "w": "Having finished",
+      "ex": "Having finished the course, I felt proud."
+     },
+     {
+      "w": "I wish I had",
+      "ex": "I wish I had started learning English earlier."
+     }
+    ],
+    "gram": "Review: third/mixed conditionals, wishes, future continuous/perfect, passive reporting, causatives, inversion, clefts, participle clauses."
+   }
+  },
+  {
+   "d": 300,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Discourse markers: on the other hand",
+     "g": "Structure what you say with discourse markers like on the other hand and nevertheless.",
+     "p": [
+      "Adding and contrasting: Moreover, furthermore, what's more... On the other hand, nevertheless, having said that...",
+      "Correcting or surprising: As a matter of fact, actually, in fact. As a matter of fact, I've never tried sushi.",
+      "Summing up: On the whole, all in all, overall. They work in speech and writing and make you sound fluent and organised."
+     ],
+     "q": "Is it better to live in a big city or a small town? Answer using moreover, on the other hand and on the whole.",
+     "c": "Give a 30-second spoken opinion on any topic using four markers: moreover, nevertheless, as a matter of fact and on the whole."
+    },
+    "de": {
+     "t": "Discourse markers: on the other hand",
+     "g": "Mit Diskursmarkern wie on the other hand und nevertheless strukturierst du, was du sagst.",
+     "p": [
+      "Hinzufügen und kontrastieren: Moreover, furthermore, what's more... On the other hand, nevertheless, having said that...",
+      "Korrigieren oder überraschen: As a matter of fact, actually, in fact. As a matter of fact, I've never tried sushi.",
+      "Zusammenfassen: On the whole, all in all, overall. Sie wirken in Rede und Text und lassen dich flüssig und klar klingen."
+     ],
+     "q": "Lebt man besser in einer Großstadt oder in einer Kleinstadt? Antworte mit moreover, on the other hand und on the whole.",
+     "c": "Sprich 30 Sekunden lang deine Meinung zu einem Thema mit vier Markern: moreover, nevertheless, as a matter of fact und on the whole."
+    },
+    "es": {
+     "t": "Discourse markers: on the other hand",
+     "g": "Estructura lo que dices con marcadores del discurso como on the other hand y nevertheless.",
+     "p": [
+      "Añadir y contrastar: Moreover, furthermore, what's more... On the other hand, nevertheless, having said that...",
+      "Corregir o sorprender: As a matter of fact, actually, in fact. As a matter of fact, I've never tried sushi.",
+      "Resumir: On the whole, all in all, overall. Sirven al hablar y al escribir, y te hacen sonar fluido y organizado."
+     ],
+     "q": "¿Es mejor vivir en una gran ciudad o en un pueblo? Responde con moreover, on the other hand y on the whole.",
+     "c": "Da tu opinión en voz alta durante 30 segundos con cuatro marcadores: moreover, nevertheless, as a matter of fact y on the whole."
+    },
+    "fr": {
+     "t": "Discourse markers: on the other hand",
+     "g": "Structure ton discours avec des marqueurs comme on the other hand et nevertheless.",
+     "p": [
+      "Ajouter et opposer : Moreover, furthermore, what's more... On the other hand, nevertheless, having said that...",
+      "Corriger ou surprendre : As a matter of fact, actually, in fact. As a matter of fact, I've never tried sushi.",
+      "Conclure : On the whole, all in all, overall. Ils marchent à l'oral comme à l'écrit et te font paraître fluide et organisé."
+     ],
+     "q": "Vaut-il mieux vivre dans une grande ville ou une petite ville ? Réponds avec moreover, on the other hand et on the whole.",
+     "c": "Donne ton avis à l'oral pendant 30 secondes avec quatre marqueurs : moreover, nevertheless, as a matter of fact et on the whole."
+    },
+    "it": {
+     "t": "Discourse markers: on the other hand",
+     "g": "Struttura il tuo discorso con segnali discorsivi come on the other hand e nevertheless.",
+     "p": [
+      "Aggiungere e contrapporre: Moreover, furthermore, what's more... On the other hand, nevertheless, having said that...",
+      "Correggere o sorprendere: As a matter of fact, actually, in fact. As a matter of fact, I've never tried sushi.",
+      "Riassumere: On the whole, all in all, overall. Funzionano nel parlato e nello scritto e ti fanno sembrare fluente e ordinato."
+     ],
+     "q": "È meglio vivere in una grande città o in un piccolo paese? Rispondi con moreover, on the other hand e on the whole.",
+     "c": "Esprimi a voce la tua opinione per 30 secondi con quattro segnali: moreover, nevertheless, as a matter of fact e on the whole."
+    },
+    "pt": {
+     "t": "Discourse markers: on the other hand",
+     "g": "Estrutura o que dizes com marcadores discursivos como on the other hand e nevertheless.",
+     "p": [
+      "Acrescentar e contrastar: Moreover, furthermore, what's more... On the other hand, nevertheless, having said that...",
+      "Corrigir ou surpreender: As a matter of fact, actually, in fact. As a matter of fact, I've never tried sushi.",
+      "Resumir: On the whole, all in all, overall. Funcionam na fala e na escrita e fazem-te soar fluente e organizado."
+     ],
+     "q": "É melhor viver numa cidade grande ou numa vila? Responde com moreover, on the other hand e on the whole.",
+     "c": "Dá a tua opinião em voz alta durante 30 segundos com quatro marcadores: moreover, nevertheless, as a matter of fact e on the whole."
+    },
+    "pt_BR": {
+     "t": "Discourse markers: on the other hand",
+     "g": "Estruture o que você diz com marcadores do discurso como on the other hand e nevertheless.",
+     "p": [
+      "Acrescentar e contrastar: Moreover, furthermore, what's more... On the other hand, nevertheless, having said that...",
+      "Corrigir ou surpreender: As a matter of fact, actually, in fact. As a matter of fact, I've never tried sushi.",
+      "Resumir: On the whole, all in all, overall. Funcionam na fala e na escrita e fazem você soar fluente e organizado."
+     ],
+     "q": "É melhor morar numa cidade grande ou numa cidade pequena? Responda com moreover, on the other hand e on the whole.",
+     "c": "Dê sua opinião em voz alta por 30 segundos com quatro marcadores: moreover, nevertheless, as a matter of fact e on the whole."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "moreover",
+      "ex": "The flat is cheap. Moreover, it's close to the station."
+     },
+     {
+      "w": "nevertheless",
+      "ex": "It was raining. Nevertheless, we went for a walk."
+     },
+     {
+      "w": "as a matter of fact",
+      "ex": "As a matter of fact, I've never been to Paris."
+     },
+     {
+      "w": "on the whole",
+      "ex": "On the whole, the trip was a success."
+     },
+     {
+      "w": "on the other hand",
+      "ex": "On the other hand, it's quite far from the centre."
+     },
+     {
+      "w": "having said that",
+      "ex": "It's expensive. Having said that, it's worth it."
+     }
+    ],
+    "gram": "Discourse markers: adding (moreover), contrasting (nevertheless), correcting (as a matter of fact), summing up (on the whole)."
+   }
+  }
+ ]
+}

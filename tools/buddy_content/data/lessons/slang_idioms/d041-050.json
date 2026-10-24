@@ -1,0 +1,835 @@
+{
+ "topic": "slang_idioms",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Wishing well before a show",
+     "g": "Learn why performers wish each other luck in strange ways.",
+     "p": [
+      "In theatre, saying “good luck” is traditionally thought to bring bad luck, so actors say “break a leg!” instead.",
+      "German has a similar wish: “Hals- und Beinbruch!” (break your neck and leg!); it sounds wild but means good luck.",
+      "One popular theory links it to a Yiddish blessing for success; either way, it is always meant kindly."
+     ],
+     "q": "Do you have a little ritual or lucky habit before an important moment?",
+     "c": "Wish someone “break a leg!” or “Hals- und Beinbruch!” before their next big moment."
+    },
+    "de": {
+     "t": "Glückwünsche vor dem Auftritt",
+     "g": "Lernen, warum sich Künstler auf seltsame Weise Glück wünschen.",
+     "p": [
+      "Im Theater gilt „viel Glück“ traditionell als Unglücksbringer, deshalb sagen englische Schauspieler „break a leg!“.",
+      "Im Deutschen gibt es das Gegenstück „Hals- und Beinbruch!“; klingt wild, heißt aber einfach viel Glück.",
+      "Eine verbreitete Theorie führt es auf einen jiddischen Segenswunsch zurück; gemeint ist es immer herzlich."
+     ],
+     "q": "Hast du ein kleines Ritual oder eine Glücksgewohnheit vor wichtigen Momenten?",
+     "c": "Wünsch jemandem vor seinem nächsten großen Moment „break a leg!“ oder „Hals- und Beinbruch!“."
+    },
+    "es": {
+     "t": "Desear suerte antes de actuar",
+     "g": "Aprender por qué los artistas se desean suerte de formas curiosas.",
+     "p": [
+      "En el teatro se cree que decir «buena suerte» trae mala suerte, así que los actores ingleses dicen «break a leg!».",
+      "El alemán tiene algo parecido: «Hals- und Beinbruch!» (¡rómpete el cuello y la pierna!); suena fuerte pero es buena suerte.",
+      "Una teoría popular lo relaciona con una bendición en yidis; sea como sea, siempre se dice con cariño."
+     ],
+     "q": "¿Tienes algún pequeño ritual o costumbre de la suerte antes de un momento importante?",
+     "c": "Desea a alguien «break a leg!» o «Hals- und Beinbruch!» antes de su próximo gran momento."
+    },
+    "fr": {
+     "t": "Souhaiter bonne chance avant un spectacle",
+     "g": "Découvrir pourquoi les artistes se souhaitent bonne chance de façon étrange.",
+     "p": [
+      "Au théâtre, dire « bonne chance » est censé porter malheur, alors les acteurs anglophones disent « break a leg! ».",
+      "L'allemand a son équivalent : « Hals- und Beinbruch ! » (fracture du cou et de la jambe !), qui veut dire bonne chance.",
+      "Une théorie populaire le relie à une bénédiction yiddish ; dans tous les cas, c'est toujours bienveillant."
+     ],
+     "q": "As-tu un petit rituel ou une habitude porte-bonheur avant un moment important ?",
+     "c": "Souhaite « break a leg! » ou « Hals- und Beinbruch ! » à quelqu'un avant son prochain grand moment."
+    },
+    "it": {
+     "t": "Auguri prima dello spettacolo",
+     "g": "Scoprire perché gli artisti si augurano fortuna in modi curiosi.",
+     "p": [
+      "A teatro dire «buona fortuna» porterebbe sfortuna, così gli attori anglofoni dicono «break a leg!».",
+      "Il tedesco ha l'equivalente «Hals- und Beinbruch!» (rottura di collo e gamba!): sembra terribile, ma vuol dire in bocca al lupo.",
+      "Una teoria diffusa lo collega a una benedizione in yiddish; in ogni caso è sempre un augurio affettuoso."
+     ],
+     "q": "Hai un piccolo rito o un'abitudine portafortuna prima di un momento importante?",
+     "c": "Augura «break a leg!» o «Hals- und Beinbruch!» a qualcuno prima del suo prossimo grande momento."
+    },
+    "pt": {
+     "t": "Desejar sorte antes do espetáculo",
+     "g": "Perceber porque é que os artistas desejam sorte de formas estranhas.",
+     "p": [
+      "No teatro, dizer «boa sorte» dá azar, segundo a tradição, por isso os atores ingleses dizem «break a leg!».",
+      "O alemão tem o equivalente «Hals- und Beinbruch!» (parte o pescoço e a perna!); soa mal, mas quer dizer boa sorte.",
+      "Uma teoria popular liga-o a uma bênção em iídiche; seja como for, diz-se sempre com carinho."
+     ],
+     "q": "Tens algum pequeno ritual ou hábito de sorte antes de um momento importante?",
+     "c": "Deseja «break a leg!» ou «Hals- und Beinbruch!» a alguém antes do seu próximo grande momento."
+    },
+    "pt_BR": {
+     "t": "Desejar sorte antes do show",
+     "g": "Entender por que artistas desejam sorte de jeitos estranhos.",
+     "p": [
+      "No teatro, dizer “boa sorte” dá azar, segundo a tradição, por isso atores de língua inglesa dizem “break a leg!”.",
+      "O alemão tem o equivalente “Hals- und Beinbruch!” (quebre o pescoço e a perna!); soa pesado, mas quer dizer boa sorte.",
+      "Uma teoria popular liga isso a uma bênção em iídiche; de todo jeito, sempre se diz com carinho."
+     ],
+     "q": "Você tem algum ritualzinho ou mania de sorte antes de um momento importante?",
+     "c": "Deseje “break a leg!” ou “Hals- und Beinbruch!” a alguém antes do próximo grande momento dele."
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Happiness idioms",
+     "g": "Express big happiness with idioms from several languages.",
+     "p": [
+      "“Over the moon” and “on top of the world” both mean extremely happy: “I'm over the moon about the trip!”",
+      "French “être aux anges” (to be with the angels) means to be overjoyed and delighted.",
+      "European Portuguese “estar nas suas sete quintas” (to be on your seven farms) means feeling completely happy and at ease."
+     ],
+     "q": "What was the last thing that made you feel over the moon?",
+     "c": "Tell someone today about something that makes you feel on top of the world."
+    },
+    "de": {
+     "t": "Glücks-Redewendungen",
+     "g": "Großes Glück mit Redewendungen aus mehreren Sprachen ausdrücken.",
+     "p": [
+      "„Over the moon“ und „on top of the world“ heißen überglücklich, wie „im siebten Himmel“: „I'm over the moon about the trip!“",
+      "Französisch „être aux anges“ (bei den Engeln sein) heißt, vor Freude strahlen.",
+      "Europäisches Portugiesisch „estar nas suas sete quintas“ (auf seinen sieben Höfen sein) heißt, sich pudelwohl fühlen."
+     ],
+     "q": "Was hat dich zuletzt überglücklich gemacht?",
+     "c": "Erzähl heute jemandem von etwas, bei dem du dich „on top of the world“ fühlst."
+    },
+    "es": {
+     "t": "Expresiones de felicidad",
+     "g": "Expresar mucha felicidad con expresiones de varios idiomas.",
+     "p": [
+      "«Over the moon» (sobre la luna) y «on top of the world» significan estar feliz como una perdiz: «I'm over the moon about the trip!».",
+      "El francés «être aux anges» (estar con los ángeles) es estar encantado, loco de alegría.",
+      "El portugués europeo «estar nas suas sete quintas» (estar en sus siete fincas) es estar a gusto y feliz del todo."
+     ],
+     "q": "¿Qué fue lo último que te hizo sentir en las nubes?",
+     "c": "Cuéntale hoy a alguien algo que te hace sentir «on top of the world»."
+    },
+    "fr": {
+     "t": "Expressions du bonheur",
+     "g": "Exprimer un grand bonheur avec des expressions de plusieurs langues.",
+     "p": [
+      "« Over the moon » (au-dessus de la lune) et « on top of the world » veulent dire être fou de joie : « I'm over the moon about the trip! »",
+      "« Être aux anges » veut dire être ravi, nager dans le bonheur.",
+      "Le portugais européen « estar nas suas sete quintas » (être dans ses sept fermes) veut dire être parfaitement heureux et à l'aise."
+     ],
+     "q": "Quelle est la dernière chose qui t'a mis aux anges ?",
+     "c": "Raconte aujourd'hui à quelqu'un une chose qui te fait sentir « on top of the world »."
+    },
+    "it": {
+     "t": "Modi di dire sulla felicità",
+     "g": "Esprimere grande felicità con espressioni di varie lingue.",
+     "p": [
+      "«Over the moon» (sopra la luna) e «on top of the world» vogliono dire essere al settimo cielo: «I'm over the moon about the trip!».",
+      "Il francese «être aux anges» (essere con gli angeli) vuol dire essere felicissimi, al settimo cielo.",
+      "Il portoghese europeo «estar nas suas sete quintas» (stare nelle sue sette fattorie) vuol dire sentirsi felici e a proprio agio."
+     ],
+     "q": "Qual è l'ultima cosa che ti ha fatto sentire al settimo cielo?",
+     "c": "Oggi racconta a qualcuno una cosa che ti fa sentire «on top of the world»."
+    },
+    "pt": {
+     "t": "Expressões de felicidade",
+     "g": "Exprimir muita felicidade com expressões de várias línguas.",
+     "p": [
+      "«Over the moon» (por cima da lua) e «on top of the world» querem dizer estar felicíssimo: «I'm over the moon about the trip!».",
+      "O francês «être aux anges» (estar com os anjos) é estar radiante, nas nuvens.",
+      "«Estar nas suas sete quintas» é sentir-se completamente feliz e à vontade, como peixe na água."
+     ],
+     "q": "Qual foi a última coisa que te pôs nas tuas sete quintas?",
+     "c": "Conta hoje a alguém uma coisa que te faz sentir «on top of the world»."
+    },
+    "pt_BR": {
+     "t": "Expressões de felicidade",
+     "g": "Expressar muita felicidade com expressões de várias línguas.",
+     "p": [
+      "“Over the moon” (acima da lua) e “on top of the world” querem dizer estar felicíssimo: “I'm over the moon about the trip!”.",
+      "O francês “être aux anges” (estar com os anjos) é estar radiante, nas nuvens.",
+      "O português europeu “estar nas suas sete quintas” (estar nas suas sete chácaras) é estar totalmente feliz e à vontade."
+     ],
+     "q": "Qual foi a última coisa que deixou você nas nuvens?",
+     "c": "Conte hoje para alguém algo que faz você se sentir “on top of the world”."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Feeling down",
+     "g": "Talk about a low mood lightly with everyday expressions.",
+     "p": [
+      "“Down in the dumps” and “feeling blue” mean feeling a bit sad or low for a while.",
+      "French “avoir le cafard” (to have the cockroach) means feeling gloomy; Spanish “estar de bajón” means being in a slump.",
+      "These expressions are for ordinary low days; a friendly reply is “Want to grab a coffee and talk?”"
+     ],
+     "q": "What small thing cheers you up when you feel a bit down in the dumps?",
+     "c": "Ask a friend how they are today, and if they feel blue, offer a small kind gesture."
+    },
+    "de": {
+     "t": "Niedergeschlagen sein",
+     "g": "Mit Alltagsausdrücken leicht über eine gedrückte Stimmung sprechen.",
+     "p": [
+      "„Down in the dumps“ und „feeling blue“ heißen, eine Weile niedergeschlagen oder bedrückt sein.",
+      "Französisch „avoir le cafard“ (die Küchenschabe haben) heißt Trübsal blasen; Spanisch „estar de bajón“ heißt, einen Durchhänger haben.",
+      "Diese Ausdrücke passen zu normalen trüben Tagen; eine nette Antwort ist „Lust auf einen Kaffee und ein Gespräch?“."
+     ],
+     "q": "Welche Kleinigkeit muntert dich auf, wenn du etwas niedergeschlagen bist?",
+     "c": "Frag heute einen Freund, wie es ihm geht, und biete eine kleine nette Geste an, falls er traurig ist."
+    },
+    "es": {
+     "t": "Estar de bajón",
+     "g": "Hablar de un mal día con ligereza usando expresiones cotidianas.",
+     "p": [
+      "«Down in the dumps» y «feeling blue» significan estar algo triste o con el ánimo bajo un tiempo.",
+      "El francés «avoir le cafard» (tener la cucaracha) es estar triste, con morriña; en español decimos «estar de bajón».",
+      "Son expresiones para días bajos normales; una respuesta amable es «¿Te apetece un café y charlamos?»."
+     ],
+     "q": "¿Qué cosa pequeña te anima cuando estás de bajón?",
+     "c": "Pregunta hoy a un amigo cómo está y, si anda de bajón, ofrécele un pequeño gesto amable."
+    },
+    "fr": {
+     "t": "Avoir le cafard",
+     "g": "Parler d'un petit coup de moins bien avec des expressions du quotidien.",
+     "p": [
+      "« Down in the dumps » et « feeling blue » veulent dire avoir le moral à zéro pendant un moment.",
+      "« Avoir le cafard » veut dire avoir des idées grises ; l'espagnol « estar de bajón » veut dire avoir un coup de mou.",
+      "Ces expressions servent pour les petits jours gris ; une réponse sympa : « On va prendre un café et en parler ? »"
+     ],
+     "q": "Quelle petite chose te remonte le moral quand tu as le cafard ?",
+     "c": "Demande aujourd'hui à un ami comment il va et, s'il a le cafard, propose-lui un petit geste gentil."
+    },
+    "it": {
+     "t": "Essere giù di morale",
+     "g": "Parlare con leggerezza di una giornata no con espressioni quotidiane.",
+     "p": [
+      "«Down in the dumps» e «feeling blue» vogliono dire essere un po' giù di morale per un po'.",
+      "Il francese «avoir le cafard» (avere lo scarafaggio) vuol dire avere la malinconia; lo spagnolo «estar de bajón» essere giù di corda.",
+      "Sono espressioni per le normali giornate no; una risposta gentile è «Ti va un caffè e due chiacchiere?»."
+     ],
+     "q": "Quale piccola cosa ti tira su quando sei giù di corda?",
+     "c": "Oggi chiedi a un amico come sta e, se è giù, offrigli un piccolo gesto gentile."
+    },
+    "pt": {
+     "t": "Estar em baixo",
+     "g": "Falar com leveza de um dia menos bom com expressões do dia a dia.",
+     "p": [
+      "«Down in the dumps» e «feeling blue» querem dizer estar um pouco em baixo durante algum tempo.",
+      "O francês «avoir le cafard» (ter a barata) é estar melancólico; o espanhol «estar de bajón» é estar numa fase em baixo.",
+      "São expressões para dias cinzentos normais; uma resposta simpática é «Vamos tomar um café e conversar?»."
+     ],
+     "q": "Que coisa pequena te anima quando estás em baixo?",
+     "c": "Pergunta hoje a um amigo como está e, se andar em baixo, oferece-lhe um pequeno gesto simpático."
+    },
+    "pt_BR": {
+     "t": "Estar pra baixo",
+     "g": "Falar com leveza de um dia meio cinza usando expressões do dia a dia.",
+     "p": [
+      "“Down in the dumps” e “feeling blue” querem dizer estar meio pra baixo, meio jururu, por um tempo.",
+      "O francês “avoir le cafard” (ter a barata) é estar na fossa; o espanhol “estar de bajón” é estar numa baixa.",
+      "São expressões para dias cinzentos normais; uma resposta legal é “Bora tomar um café e conversar?”."
+     ],
+     "q": "Que coisinha anima você quando está meio pra baixo?",
+     "c": "Pergunte hoje a um amigo como ele está e, se estiver pra baixo, ofereça um pequeno gesto de carinho."
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Anger idioms",
+     "g": "Recognise idioms that describe getting angry, often with humour.",
+     "p": [
+      "“Blow a fuse” and “hit the roof” mean to suddenly get very angry, like an electrical fuse or a jump to the ceiling.",
+      "“See red” means to become angry, perhaps from the idea of a red cape provoking a bull.",
+      "French “être soupe au lait” (to be milk soup) describes someone quick-tempered, like milk that boils over fast."
+     ],
+     "q": "What usually helps you calm down when you feel like blowing a fuse?",
+     "c": "Next time something annoys you, describe it with one of these idioms and take a deep breath."
+    },
+    "de": {
+     "t": "Redewendungen über Wut",
+     "g": "Redewendungen erkennen, die Wut beschreiben, oft mit Humor.",
+     "p": [
+      "„Blow a fuse“ (eine Sicherung durchbrennen lassen) und „hit the roof“ (an die Decke gehen) heißen, plötzlich wütend werden.",
+      "„See red“ heißt, rotsehen, also wütend werden, vielleicht wegen des roten Tuchs vor dem Stier.",
+      "Französisch „être soupe au lait“ (Milchsuppe sein) beschreibt jemanden, der schnell hochgeht, wie überkochende Milch."
+     ],
+     "q": "Was hilft dir, dich zu beruhigen, wenn dir fast die Sicherung durchbrennt?",
+     "c": "Wenn dich das nächste Mal etwas ärgert, beschreib es mit einer dieser Wendungen und atme tief durch."
+    },
+    "es": {
+     "t": "Expresiones de enfado",
+     "g": "Reconocer expresiones que describen el enfado, a menudo con humor.",
+     "p": [
+      "«Blow a fuse» (fundir un fusible) y «hit the roof» (dar en el techo) son ponerse hecho una furia, subirse por las paredes.",
+      "«See red» (ver rojo) es enfadarse mucho, quizá por la imagen del capote rojo ante el toro.",
+      "El francés «être soupe au lait» (ser sopa de leche) describe a alguien de mecha corta, como la leche que hierve rápido."
+     ],
+     "q": "¿Qué te ayuda a calmarte cuando estás a punto de fundir los plomos?",
+     "c": "La próxima vez que algo te moleste, descríbelo con una de estas expresiones y respira hondo."
+    },
+    "fr": {
+     "t": "Expressions de la colère",
+     "g": "Reconnaître les expressions qui décrivent la colère, souvent avec humour.",
+     "p": [
+      "« Blow a fuse » (faire sauter un fusible) et « hit the roof » (toucher le plafond) veulent dire sortir de ses gonds.",
+      "« See red » (voir rouge) veut dire voir rouge, se mettre en colère, peut-être à cause de la cape rouge du taureau.",
+      "« Être soupe au lait » décrit quelqu'un qui s'emporte vite, comme le lait qui déborde d'un coup."
+     ],
+     "q": "Qu'est-ce qui t'aide à te calmer quand tu es prêt à sortir de tes gonds ?",
+     "c": "La prochaine fois que quelque chose t'agace, décris-le avec une de ces expressions et respire profondément."
+    },
+    "it": {
+     "t": "Modi di dire sulla rabbia",
+     "g": "Riconoscere i modi di dire che descrivono la rabbia, spesso con umorismo.",
+     "p": [
+      "«Blow a fuse» (far saltare un fusibile) e «hit the roof» (toccare il soffitto) vogliono dire andare su tutte le furie.",
+      "«See red» (vedere rosso) vuol dire arrabbiarsi molto, forse dall'immagine del drappo rosso davanti al toro.",
+      "Il francese «être soupe au lait» (essere zuppa di latte) descrive chi si arrabbia subito, come il latte che trabocca."
+     ],
+     "q": "Che cosa ti aiuta a calmarti quando stai per andare su tutte le furie?",
+     "c": "La prossima volta che qualcosa ti irrita, descrivilo con uno di questi modi di dire e fai un bel respiro."
+    },
+    "pt": {
+     "t": "Expressões de zanga",
+     "g": "Reconhecer expressões que descrevem a zanga, muitas vezes com humor.",
+     "p": [
+      "«Blow a fuse» (rebentar um fusível) e «hit the roof» (bater no teto) é passar-se, ficar fulo.",
+      "«See red» (ver vermelho) é ficar furioso, talvez pela imagem da capa vermelha diante do touro.",
+      "O francês «être soupe au lait» (ser sopa de leite) descreve quem se irrita depressa, como o leite que transborda."
+     ],
+     "q": "O que te ajuda a acalmar quando estás quase a passar-te?",
+     "c": "Da próxima vez que algo te irritar, descreve-o com uma destas expressões e respira fundo."
+    },
+    "pt_BR": {
+     "t": "Expressões de raiva",
+     "g": "Reconhecer expressões que descrevem a raiva, muitas vezes com humor.",
+     "p": [
+      "“Blow a fuse” (queimar um fusível) e “hit the roof” (bater no teto) é perder as estribeiras, subir nas tamancas.",
+      "“See red” (ver vermelho) é ficar furioso, talvez pela imagem da capa vermelha diante do touro.",
+      "O francês “être soupe au lait” (ser sopa de leite) descreve quem tem pavio curto, como o leite que derrama rápido."
+     ],
+     "q": "O que ajuda você a se acalmar quando está quase perdendo as estribeiras?",
+     "c": "Da próxima vez que algo te irritar, descreva com uma dessas expressões e respire fundo."
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Being tired",
+     "g": "Say you are tired in casual ways across languages.",
+     "p": [
+      "“Worn out” and “beat” mean very tired: “I'm beat, I'm going to bed early.”",
+      "“Knackered” is very common informal British English for exhausted; use it with friends, not in formal emails.",
+      "French “crevé” and Spanish “estar hecho polvo” (to be made dust) both mean totally exhausted."
+     ],
+     "q": "What activity leaves you completely worn out but happy?",
+     "c": "Tonight, tell someone how tired you are using a new expression from this lesson."
+    },
+    "de": {
+     "t": "Müde sein",
+     "g": "Locker sagen, dass man müde ist, in mehreren Sprachen.",
+     "p": [
+      "„Worn out“ und „beat“ heißen sehr müde: „I'm beat, I'm going to bed early.“",
+      "„Knackered“ ist sehr gängiges, lockeres britisches Englisch für fix und fertig; gut unter Freunden, nicht in formellen Mails.",
+      "Französisch „crevé“ und Spanisch „estar hecho polvo“ (zu Staub gemacht sein) heißen beide völlig erledigt."
+     ],
+     "q": "Welche Aktivität macht dich völlig fertig, aber glücklich?",
+     "c": "Sag heute Abend jemandem mit einem neuen Ausdruck aus der Lektion, wie müde du bist."
+    },
+    "es": {
+     "t": "Estar cansado",
+     "g": "Decir que estás cansado de forma informal en varios idiomas.",
+     "p": [
+      "«Worn out» y «beat» significan muy cansado: «I'm beat, I'm going to bed early».",
+      "«Knackered» es inglés británico informal muy común para reventado; úsalo con amigos, no en correos formales.",
+      "El francés «crevé» y el español «estar hecho polvo» significan estar agotadísimo."
+     ],
+     "q": "¿Qué actividad te deja hecho polvo pero feliz?",
+     "c": "Esta noche, dile a alguien lo cansado que estás con una expresión nueva de esta lección."
+    },
+    "fr": {
+     "t": "Être fatigué",
+     "g": "Dire qu'on est fatigué de façon familière dans plusieurs langues.",
+     "p": [
+      "« Worn out » et « beat » veulent dire très fatigué : « I'm beat, I'm going to bed early. »",
+      "« Knackered » est un mot britannique familier très courant pour épuisé ; entre amis, pas dans un mail formel.",
+      "« Être crevé » et l'espagnol « estar hecho polvo » (être réduit en poussière) veulent dire être lessivé."
+     ],
+     "q": "Quelle activité te laisse crevé mais heureux ?",
+     "c": "Ce soir, dis à quelqu'un à quel point tu es fatigué avec une nouvelle expression de la leçon."
+    },
+    "it": {
+     "t": "Essere stanchi",
+     "g": "Dire che sei stanco in modo informale in varie lingue.",
+     "p": [
+      "«Worn out» e «beat» vogliono dire stanchissimo: «I'm beat, I'm going to bed early».",
+      "«Knackered» è inglese britannico informale molto comune per distrutto; va bene con gli amici, non nelle email formali.",
+      "Il francese «crevé» e lo spagnolo «estar hecho polvo» (essere ridotto in polvere) vogliono dire essere a pezzi."
+     ],
+     "q": "Quale attività ti lascia a pezzi ma felice?",
+     "c": "Stasera di' a qualcuno quanto sei stanco con un'espressione nuova di questa lezione."
+    },
+    "pt": {
+     "t": "Estar cansado",
+     "g": "Dizer que estás cansado de forma informal em várias línguas.",
+     "p": [
+      "«Worn out» e «beat» querem dizer muito cansado: «I'm beat, I'm going to bed early».",
+      "«Knackered» é inglês britânico informal muito comum para estafado; usa-se com amigos, não em emails formais.",
+      "O francês «crevé» e o espanhol «estar hecho polvo» (estar feito em pó) querem dizer estar de rastos."
+     ],
+     "q": "Que atividade te deixa de rastos mas feliz?",
+     "c": "Hoje à noite, diz a alguém quão cansado estás com uma expressão nova desta lição."
+    },
+    "pt_BR": {
+     "t": "Estar cansado",
+     "g": "Dizer que você está cansado de um jeito informal em várias línguas.",
+     "p": [
+      "“Worn out” e “beat” querem dizer muito cansado: “I'm beat, I'm going to bed early”.",
+      "“Knackered” é inglês britânico informal muito comum para exausto; use com amigos, não em e-mails formais.",
+      "O francês “crevé” e o espanhol “estar hecho polvo” (estar feito pó) querem dizer estar só o pó, um caco."
+     ],
+     "q": "Que atividade deixa você um caco, mas feliz?",
+     "c": "Hoje à noite, diga para alguém o quanto está cansado com uma expressão nova desta lição."
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Being busy",
+     "g": "Say you are very busy with casual expressions.",
+     "p": [
+      "“Up to my ears” (in work) means I have a huge amount to do: “I'm up to my ears in emails.”",
+      "“Snowed under” and “swamped” both mean having too much work, buried like under snow or water.",
+      "In Spain people say “estoy liado” (I'm tied up) when they are busy: “Hoy estoy muy liado.”"
+     ],
+     "q": "How do you relax after a week when you were snowed under?",
+     "c": "Next time someone invites you while you are busy, reply with one of these expressions plus a friendly “another time?”."
+    },
+    "de": {
+     "t": "Viel zu tun haben",
+     "g": "Mit lockeren Ausdrücken sagen, dass man sehr beschäftigt ist.",
+     "p": [
+      "„Up to my ears“ (bis zu den Ohren) heißt, bis über beide Ohren in Arbeit stecken: „I'm up to my ears in emails.“",
+      "„Snowed under“ (eingeschneit) und „swamped“ (überschwemmt) heißen beide, mit Arbeit zugeschüttet sein.",
+      "In Spanien sagt man „estoy liado“ (ich bin eingewickelt), wenn man viel zu tun hat: „Hoy estoy muy liado.“"
+     ],
+     "q": "Wie entspannst du nach einer Woche, in der du mit Arbeit zugeschüttet warst?",
+     "c": "Wenn dich das nächste Mal jemand einlädt, während du viel zu tun hast, antworte mit einem dieser Ausdrücke plus „ein andermal?“."
+    },
+    "es": {
+     "t": "Estar liado",
+     "g": "Decir que estás muy ocupado con expresiones informales.",
+     "p": [
+      "«Up to my ears» (hasta las orejas) es estar hasta arriba de trabajo: «I'm up to my ears in emails».",
+      "«Snowed under» (enterrado en nieve) y «swamped» (inundado) significan tener muchísimo trabajo.",
+      "En España decimos «estoy liado» cuando no paramos: «Hoy estoy muy liado»."
+     ],
+     "q": "¿Cómo te relajas después de una semana en la que estabas hasta arriba?",
+     "c": "La próxima vez que te inviten estando liado, responde con una de estas expresiones y un amable «¿otro día?»."
+    },
+    "fr": {
+     "t": "Être débordé",
+     "g": "Dire qu'on est très occupé avec des expressions familières.",
+     "p": [
+      "« Up to my ears » (jusqu'aux oreilles) veut dire avoir du travail par-dessus la tête : « I'm up to my ears in emails. »",
+      "« Snowed under » (enseveli sous la neige) et « swamped » (submergé) veulent dire être débordé.",
+      "En Espagne on dit « estoy liado » (je suis empêtré) quand on est occupé : « Hoy estoy muy liado. »"
+     ],
+     "q": "Comment te détends-tu après une semaine où tu étais débordé ?",
+     "c": "La prochaine fois qu'on t'invite alors que tu es débordé, réponds avec une de ces expressions et un sympathique « une autre fois ? »."
+    },
+    "it": {
+     "t": "Essere impegnatissimi",
+     "g": "Dire che sei molto impegnato con espressioni informali.",
+     "p": [
+      "«Up to my ears» (fino alle orecchie) vuol dire essere sommerso di lavoro: «I'm up to my ears in emails».",
+      "«Snowed under» (sepolto dalla neve) e «swamped» (sommerso) vogliono dire avere troppo da fare.",
+      "In Spagna si dice «estoy liado» (sono incasinato) quando si è impegnati: «Hoy estoy muy liado»."
+     ],
+     "q": "Come ti rilassi dopo una settimana in cui eri sommerso di lavoro?",
+     "c": "La prossima volta che ti invitano mentre sei impegnato, rispondi con una di queste espressioni e un gentile «un'altra volta?»."
+    },
+    "pt": {
+     "t": "Estar atolado",
+     "g": "Dizer que estás muito ocupado com expressões informais.",
+     "p": [
+      "«Up to my ears» (até às orelhas) é estar atolado em trabalho: «I'm up to my ears in emails».",
+      "«Snowed under» (soterrado em neve) e «swamped» (inundado) querem dizer ter trabalho até dizer chega.",
+      "Em Espanha diz-se «estoy liado» (estou enrolado) quando se está ocupado: «Hoy estoy muy liado»."
+     ],
+     "q": "Como descontrais depois de uma semana em que estiveste atolado?",
+     "c": "Da próxima vez que te convidarem quando estás ocupado, responde com uma destas expressões e um simpático «fica para outra vez?»."
+    },
+    "pt_BR": {
+     "t": "Estar atolado",
+     "g": "Dizer que você está muito ocupado com expressões informais.",
+     "p": [
+      "“Up to my ears” (até as orelhas) é estar atolado de trabalho: “I'm up to my ears in emails”.",
+      "“Snowed under” (soterrado na neve) e “swamped” (inundado) querem dizer estar até o pescoço de trabalho.",
+      "Na Espanha se diz “estoy liado” (estou enrolado) quando a pessoa está ocupada: “Hoy estoy muy liado”."
+     ],
+     "q": "Como você relaxa depois de uma semana em que ficou até o pescoço?",
+     "c": "Da próxima vez que te convidarem num dia corrido, responda com uma dessas expressões e um simpático “fica pra próxima?”."
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Being lazy",
+     "g": "Talk about laziness with funny, friendly expressions.",
+     "p": [
+      "A “couch potato” spends lots of time on the sofa watching TV; a “lazybones” is a playful word for a lazy person.",
+      "French “avoir un poil dans la main” (to have a hair in your hand) means to be very lazy, as if your hand never touched work.",
+      "Portuguese “fazer cera” (to make wax) means to drag your feet or waste time on purpose, also used in football."
+     ],
+     "q": "Are you ever a couch potato? What is your favourite lazy-day activity?",
+     "c": "Call yourself a happy couch potato for ten minutes today, then do one small useful task."
+    },
+    "de": {
+     "t": "Faul sein",
+     "g": "Mit lustigen, freundlichen Ausdrücken über Faulheit sprechen.",
+     "p": [
+      "Ein „couch potato“ ist ein Sofahocker, der viel fernsieht; „lazybones“ ist ein liebevolles Wort für Faulpelz.",
+      "Französisch „avoir un poil dans la main“ (ein Haar in der Hand haben) heißt sehr faul sein, als hätte die Hand nie gearbeitet.",
+      "Portugiesisch „fazer cera“ (Wachs machen) heißt, absichtlich trödeln oder Zeit schinden, auch im Fußball."
+     ],
+     "q": "Bist du manchmal ein Sofahocker? Was machst du am liebsten an faulen Tagen?",
+     "c": "Sei heute zehn Minuten ein glücklicher „couch potato“ und erledige danach eine kleine nützliche Aufgabe."
+    },
+    "es": {
+     "t": "Ser vago",
+     "g": "Hablar de la pereza con expresiones divertidas y amables.",
+     "p": [
+      "Un «couch potato» (patata de sofá) pasa horas en el sofá viendo la tele; «lazybones» es un vago, en tono cariñoso.",
+      "El francés «avoir un poil dans la main» (tener un pelo en la mano) es ser un vago de cuidado, como si la mano nunca trabajara.",
+      "El portugués «fazer cera» (hacer cera) es remolonear o perder tiempo a propósito, también en el fútbol."
+     ],
+     "q": "¿Eres a veces una patata de sofá? ¿Qué te gusta hacer en un día de pereza?",
+     "c": "Sé hoy una feliz patata de sofá durante diez minutos y luego haz una tarea pequeña y útil."
+    },
+    "fr": {
+     "t": "Être paresseux",
+     "g": "Parler de la paresse avec des expressions drôles et sympathiques.",
+     "p": [
+      "Un « couch potato » (patate de canapé) passe ses heures devant la télé ; « lazybones » est un petit nom pour un flemmard.",
+      "« Avoir un poil dans la main » veut dire être très paresseux, comme si la main n'avait jamais travaillé.",
+      "Le portugais « fazer cera » (faire de la cire) veut dire traîner exprès, gagner du temps, même au football."
+     ],
+     "q": "Es-tu parfois une patate de canapé ? Que fais-tu les jours de flemme ?",
+     "c": "Sois aujourd'hui un « couch potato » heureux pendant dix minutes, puis fais une petite tâche utile."
+    },
+    "it": {
+     "t": "Essere pigri",
+     "g": "Parlare di pigrizia con espressioni buffe e simpatiche.",
+     "p": [
+      "Un «couch potato» (patata da divano) passa ore sul divano davanti alla TV; «lazybones» è un affettuoso pigrone.",
+      "Il francese «avoir un poil dans la main» (avere un pelo in mano) vuol dire essere pigrissimi, come se la mano non lavorasse mai.",
+      "Il portoghese «fazer cera» (fare cera) vuol dire tirarla per le lunghe apposta, anche nel calcio, come fare melina."
+     ],
+     "q": "Sei mai una patata da divano? Che cosa ami fare nei giorni pigri?",
+     "c": "Oggi sii una felice patata da divano per dieci minuti, poi fai un piccolo compito utile."
+    },
+    "pt": {
+     "t": "Ser preguiçoso",
+     "g": "Falar de preguiça com expressões divertidas e simpáticas.",
+     "p": [
+      "Um «couch potato» (batata de sofá) passa horas no sofá a ver televisão; «lazybones» é um preguiçoso, em tom carinhoso.",
+      "O francês «avoir un poil dans la main» (ter um pelo na mão) é ser um grande preguiçoso, como se a mão nunca trabalhasse.",
+      "«Fazer cera» é arrastar as coisas de propósito ou empatar tempo, também no futebol."
+     ],
+     "q": "És às vezes uma batata de sofá? O que gostas de fazer num dia de preguiça?",
+     "c": "Sê hoje uma feliz batata de sofá durante dez minutos e depois faz uma pequena tarefa útil."
+    },
+    "pt_BR": {
+     "t": "Ter preguiça",
+     "g": "Falar de preguiça com expressões divertidas e simpáticas.",
+     "p": [
+      "Um “couch potato” (batata de sofá) passa horas no sofá vendo TV; “lazybones” é um preguiçoso, em tom carinhoso.",
+      "O francês “avoir un poil dans la main” (ter um pelo na mão) é ser muito preguiçoso, como se a mão nunca trabalhasse.",
+      "“Fazer cera” é enrolar de propósito e ganhar tempo, como o time que faz cera no fim do jogo."
+     ],
+     "q": "Você às vezes vira uma batata de sofá? O que curte fazer num dia de preguiça?",
+     "c": "Seja hoje uma batata de sofá feliz por dez minutos e depois faça uma tarefinha útil."
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Being surprised",
+     "g": "React to surprises with lively expressions in several languages.",
+     "p": [
+      "“Jaw-dropping” describes something so amazing your mouth falls open; “I was blown away” means I was deeply impressed.",
+      "“No way!” shows happy disbelief: “You got the job? No way!” It is friendly, not a refusal here.",
+      "Spanish says “¡no me digas!” (don't tell me!) and French says “sans blague !” (no joke!) for the same reaction."
+     ],
+     "q": "What was the last jaw-dropping thing you saw or heard?",
+     "c": "React to a friend's news today with “no way!”, “¡no me digas!” or “sans blague !”."
+    },
+    "de": {
+     "t": "Überrascht sein",
+     "g": "Mit lebendigen Ausdrücken in mehreren Sprachen auf Überraschungen reagieren.",
+     "p": [
+      "„Jaw-dropping“ beschreibt etwas so Tolles, dass einem die Kinnlade runterfällt; „I was blown away“ heißt, ich war hin und weg.",
+      "„No way!“ zeigt freudiges Staunen, wie „echt jetzt?!“: „You got the job? No way!“ Hier keine Ablehnung.",
+      "Spanisch sagt dafür „¡no me digas!“ (sag bloß!) und Französisch „sans blague !“ (ohne Witz!)."
+     ],
+     "q": "Was war das Letzte, bei dem dir die Kinnlade runtergefallen ist?",
+     "c": "Reagiere heute auf die Neuigkeit eines Freundes mit „no way!“, „¡no me digas!“ oder „sans blague !“."
+    },
+    "es": {
+     "t": "Estar sorprendido",
+     "g": "Reaccionar a las sorpresas con expresiones vivas en varios idiomas.",
+     "p": [
+      "«Jaw-dropping» (que hace caer la mandíbula) es algo tan increíble que te deja boquiabierto; «I was blown away» es me dejó alucinado.",
+      "«No way!» muestra incredulidad alegre: «You got the job? No way!». Aquí es amistoso, no una negativa.",
+      "En español decimos «¡no me digas!» y en francés «sans blague !» (¡sin broma!) para la misma reacción."
+     ],
+     "q": "¿Qué fue lo último que te dejó con la boca abierta?",
+     "c": "Reacciona hoy a la noticia de un amigo con «no way!», «¡no me digas!» o «sans blague !»."
+    },
+    "fr": {
+     "t": "Être surpris",
+     "g": "Réagir aux surprises avec des expressions vivantes dans plusieurs langues.",
+     "p": [
+      "« Jaw-dropping » (à faire tomber la mâchoire) décrit un truc bluffant ; « I was blown away » veut dire j'ai été soufflé.",
+      "« No way! » montre une joyeuse incrédulité, comme « sérieux ?! » : « You got the job? No way! » Ce n'est pas un refus ici.",
+      "L'espagnol dit « ¡no me digas! » (ne me dis pas !) et le français « sans blague ! » pour la même réaction."
+     ],
+     "q": "Quelle est la dernière chose qui t'a laissé bouche bée ?",
+     "c": "Réagis aujourd'hui à la nouvelle d'un ami avec « no way! », « ¡no me digas! » ou « sans blague ! »."
+    },
+    "it": {
+     "t": "Essere sorpresi",
+     "g": "Reagire alle sorprese con espressioni vivaci in varie lingue.",
+     "p": [
+      "«Jaw-dropping» (da far cadere la mascella) è qualcosa che ti lascia a bocca aperta; «I was blown away» vuol dire sono rimasto senza parole.",
+      "«No way!» mostra incredulità felice, come «ma dai!»: «You got the job? No way!». Qui non è un rifiuto.",
+      "Lo spagnolo dice «¡no me digas!» (non dirmi!) e il francese «sans blague !» (senza scherzi!) per la stessa reazione."
+     ],
+     "q": "Qual è l'ultima cosa che ti ha lasciato a bocca aperta?",
+     "c": "Oggi reagisci alla notizia di un amico con «no way!», «¡no me digas!» o «sans blague !»."
+    },
+    "pt": {
+     "t": "Ficar surpreendido",
+     "g": "Reagir a surpresas com expressões vivas em várias línguas.",
+     "p": [
+      "«Jaw-dropping» (de cair o queixo) é algo de ficar de boca aberta; «I was blown away» é fiquei impressionadíssimo.",
+      "«No way!» mostra descrença alegre, como «a sério?!»: «You got the job? No way!». Aqui não é uma recusa.",
+      "O espanhol diz «¡no me digas!» (não me digas!) e o francês «sans blague !» (sem brincadeira!) para a mesma reação."
+     ],
+     "q": "Qual foi a última coisa que te deixou de queixo caído?",
+     "c": "Reage hoje à notícia de um amigo com «no way!», «¡no me digas!» ou «sans blague !»."
+    },
+    "pt_BR": {
+     "t": "Ficar surpreso",
+     "g": "Reagir a surpresas com expressões animadas em várias línguas.",
+     "p": [
+      "“Jaw-dropping” (de cair o queixo) é algo de deixar de boca aberta; “I was blown away” é fiquei de cara.",
+      "“No way!” mostra descrença alegre, como “sério?!” ou “não acredito!”: “You got the job? No way!”. Aqui não é recusa.",
+      "O espanhol diz “¡no me digas!” (não me diga!) e o francês “sans blague !” (sem brincadeira!) para a mesma reação."
+     ],
+     "q": "Qual foi a última coisa que deixou você de queixo caído?",
+     "c": "Reaja hoje à notícia de um amigo com “no way!”, “¡no me digas!” ou “sans blague !”."
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Excuses, the casual way",
+     "g": "Turn down or postpone plans politely with casual phrases.",
+     "p": [
+      "“Something came up” is a short, polite way to cancel without long explanations.",
+      "“I'm tied up” means I'm busy right now: “I'm tied up until five, can I call you after?”",
+      "“Can I take a rain check?” means not now, but I'd love to another time; it began with rained-off baseball games."
+     ],
+     "q": "How do you usually say no to an invitation without hurting anyone's feelings?",
+     "c": "If you need to postpone a plan this week, use “can I take a rain check?” and suggest a new date."
+    },
+    "de": {
+     "t": "Ausreden, ganz locker",
+     "g": "Pläne mit lockeren Sätzen höflich absagen oder verschieben.",
+     "p": [
+      "„Something came up“ (mir ist etwas dazwischengekommen) ist eine kurze, höfliche Absage ohne lange Erklärung.",
+      "„I'm tied up“ heißt, ich bin gerade eingespannt: „I'm tied up until five, can I call you after?“",
+      "„Can I take a rain check?“ heißt, jetzt nicht, aber gern ein andermal; es stammt von verregneten Baseballspielen."
+     ],
+     "q": "Wie sagst du normalerweise eine Einladung ab, ohne jemanden zu kränken?",
+     "c": "Wenn du diese Woche einen Plan verschieben musst, sag „can I take a rain check?“ und schlag einen neuen Termin vor."
+    },
+    "es": {
+     "t": "Excusas, en plan informal",
+     "g": "Rechazar o aplazar planes con educación usando frases informales.",
+     "p": [
+      "«Something came up» (me ha surgido algo) es una forma corta y educada de cancelar sin dar explicaciones largas.",
+      "«I'm tied up» (estoy atado) es estoy liado ahora mismo: «I'm tied up until five, can I call you after?».",
+      "«Can I take a rain check?» es ahora no, pero otro día encantado; viene de partidos de béisbol suspendidos por lluvia."
+     ],
+     "q": "¿Cómo sueles decir que no a una invitación sin herir a nadie?",
+     "c": "Si esta semana tienes que aplazar un plan, usa «can I take a rain check?» y propón otra fecha."
+    },
+    "fr": {
+     "t": "Les excuses, version familière",
+     "g": "Refuser ou reporter des projets poliment avec des phrases familières.",
+     "p": [
+      "« Something came up » (j'ai eu un empêchement) est une façon courte et polie d'annuler sans longue explication.",
+      "« I'm tied up » (je suis attaché) veut dire je suis pris : « I'm tied up until five, can I call you after? »",
+      "« Can I take a rain check? » veut dire pas maintenant, mais volontiers une autre fois ; ça vient de matchs de baseball annulés pour pluie."
+     ],
+     "q": "Comment refuses-tu d'habitude une invitation sans vexer personne ?",
+     "c": "Si tu dois reporter un projet cette semaine, dis « can I take a rain check? » et propose une nouvelle date."
+    },
+    "it": {
+     "t": "Scuse, in modo informale",
+     "g": "Rifiutare o rimandare dei piani con gentilezza usando frasi informali.",
+     "p": [
+      "«Something came up» (mi è capitato un imprevisto) è un modo breve ed educato per disdire senza lunghe spiegazioni.",
+      "«I'm tied up» (sono legato) vuol dire sono impegnato: «I'm tied up until five, can I call you after?».",
+      "«Can I take a rain check?» vuol dire ora no, ma volentieri un'altra volta; viene dalle partite di baseball rinviate per pioggia."
+     ],
+     "q": "Come dici di solito di no a un invito senza offendere nessuno?",
+     "c": "Se questa settimana devi rimandare un impegno, usa «can I take a rain check?» e proponi un'altra data."
+    },
+    "pt": {
+     "t": "Desculpas, à maneira informal",
+     "g": "Recusar ou adiar planos com educação usando frases informais.",
+     "p": [
+      "«Something came up» (surgiu-me uma coisa) é uma maneira curta e educada de cancelar sem grandes explicações.",
+      "«I'm tied up» (estou amarrado) é estou ocupado agora: «I'm tied up until five, can I call you after?».",
+      "«Can I take a rain check?» é agora não, mas noutra altura com gosto; vem dos jogos de basebol adiados pela chuva."
+     ],
+     "q": "Como costumas dizer que não a um convite sem magoar ninguém?",
+     "c": "Se tiveres de adiar um plano esta semana, usa «can I take a rain check?» e sugere outra data."
+    },
+    "pt_BR": {
+     "t": "Desculpas, no estilo informal",
+     "g": "Recusar ou adiar planos com educação usando frases informais.",
+     "p": [
+      "“Something came up” (surgiu um imprevisto) é um jeito curto e educado de cancelar sem grandes explicações.",
+      "“I'm tied up” (estou amarrado) é estou enrolado agora: “I'm tied up until five, can I call you after?”.",
+      "“Can I take a rain check?” é agora não, mas outro dia com certeza; vem de jogos de beisebol adiados pela chuva."
+     ],
+     "q": "Como você costuma recusar um convite sem magoar ninguém?",
+     "c": "Se precisar adiar um programa esta semana, use “can I take a rain check?” e sugira outra data."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Not my cup of tea",
+     "g": "Talk about likes and dislikes politely and casually.",
+     "p": [
+      "“Not my cup of tea” means I don't really like it, said gently: “Horror films aren't my cup of tea.”",
+      "“Not my thing” is the casual version; Spanish says “no es lo mío” and French says “c'est pas mon truc”.",
+      "These phrases are polite because they talk about your taste, not about whether the thing is good or bad."
+     ],
+     "q": "What is something popular that is just not your cup of tea?",
+     "c": "Tell someone about one thing that is your cup of tea and one that is not, using today's phrases."
+    },
+    "de": {
+     "t": "Nicht mein Ding",
+     "g": "Höflich und locker über Vorlieben und Abneigungen sprechen.",
+     "p": [
+      "„Not my cup of tea“ (nicht meine Tasse Tee) heißt, das ist nicht so meins, sanft gesagt: „Horror films aren't my cup of tea.“",
+      "„Not my thing“ ist die lockere Version, wie „nicht mein Ding“; Spanisch sagt „no es lo mío“, Französisch „c'est pas mon truc“.",
+      "Diese Sätze sind höflich, weil sie über deinen Geschmack sprechen, nicht darüber, ob etwas gut oder schlecht ist."
+     ],
+     "q": "Was ist sehr beliebt, aber einfach nicht dein Ding?",
+     "c": "Erzähl jemandem von einer Sache, die dein Ding ist, und einer, die es nicht ist, mit den heutigen Sätzen."
+    },
+    "es": {
+     "t": "No es lo mío",
+     "g": "Hablar de gustos con educación y de forma informal.",
+     "p": [
+      "«Not my cup of tea» (no es mi taza de té) es no me va mucho, dicho con suavidad: «Horror films aren't my cup of tea».",
+      "«Not my thing» es la versión informal; en español decimos «no es lo mío» y en francés «c'est pas mon truc».",
+      "Son frases educadas porque hablan de tu gusto, no de si algo es bueno o malo."
+     ],
+     "q": "¿Qué cosa muy popular simplemente no es lo tuyo?",
+     "c": "Cuéntale a alguien una cosa que es lo tuyo y otra que no, con las frases de hoy."
+    },
+    "fr": {
+     "t": "Pas mon truc",
+     "g": "Parler de ses goûts poliment et de façon familière.",
+     "p": [
+      "« Not my cup of tea » (pas ma tasse de thé) veut dire ce n'est pas trop mon genre, dit gentiment : « Horror films aren't my cup of tea. »",
+      "« Not my thing » est la version familière ; l'espagnol dit « no es lo mío » et le français « c'est pas mon truc ».",
+      "Ces phrases sont polies car elles parlent de tes goûts, pas de la qualité de la chose."
+     ],
+     "q": "Qu'est-ce qui est très populaire mais vraiment pas ton truc ?",
+     "c": "Parle à quelqu'un d'une chose qui est ton truc et d'une qui ne l'est pas, avec les phrases du jour."
+    },
+    "it": {
+     "t": "Non fa per me",
+     "g": "Parlare di gusti in modo educato e informale.",
+     "p": [
+      "«Not my cup of tea» (non è la mia tazza di tè) vuol dire non fa per me, detto con garbo: «Horror films aren't my cup of tea».",
+      "«Not my thing» è la versione informale; lo spagnolo dice «no es lo mío» e il francese «c'est pas mon truc».",
+      "Sono frasi educate perché parlano dei tuoi gusti, non del valore della cosa."
+     ],
+     "q": "Che cosa piace a tutti ma proprio non fa per te?",
+     "c": "Racconta a qualcuno una cosa che fa per te e una che no, con le frasi di oggi."
+    },
+    "pt": {
+     "t": "Não é a minha praia",
+     "g": "Falar de gostos com educação e de forma informal.",
+     "p": [
+      "«Not my cup of tea» (não é a minha chávena de chá) é não é bem a minha praia, dito com delicadeza: «Horror films aren't my cup of tea».",
+      "«Not my thing» é a versão informal; o espanhol diz «no es lo mío» e o francês «c'est pas mon truc».",
+      "São frases educadas porque falam do teu gosto, não de a coisa ser boa ou má."
+     ],
+     "q": "Que coisa muito popular simplesmente não é a tua praia?",
+     "c": "Conta a alguém uma coisa que é a tua praia e outra que não é, com as frases de hoje."
+    },
+    "pt_BR": {
+     "t": "Não é a minha praia",
+     "g": "Falar de gostos com educação e de um jeito informal.",
+     "p": [
+      "“Not my cup of tea” (não é a minha xícara de chá) é não é muito a minha praia, dito com delicadeza: “Horror films aren't my cup of tea”.",
+      "“Not my thing” é a versão informal; o espanhol diz “no es lo mío” e o francês “c'est pas mon truc”.",
+      "São frases educadas porque falam do seu gosto, não de a coisa ser boa ou ruim."
+     ],
+     "q": "Que coisa superpopular simplesmente não é a sua praia?",
+     "c": "Conte para alguém uma coisa que é a sua praia e outra que não é, com as frases de hoje."
+    }
+   }
+  }
+ ]
+}

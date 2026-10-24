@@ -1,0 +1,2195 @@
+{
+"topic": "sleep_habits",
+"days": [
+{
+"d": 1,
+"lv": "beginner",
+"t": "Welcome to your sleep journey",
+"f": "What this 365-day path covers, why small sleep habits add up and how one tiny step a day works"
+},
+{
+"d": 2,
+"lv": "beginner",
+"t": "Your sleep snapshot",
+"f": "Noting when you usually go to bed, wake up and how rested you feel, without judging yourself"
+},
+{
+"d": 3,
+"lv": "beginner",
+"t": "Why sleep matters",
+"f": "How rest supports energy, mood, focus and everyday wellbeing in simple terms"
+},
+{
+"d": 4,
+"lv": "beginner",
+"t": "How much sleep adults need",
+"f": "The commonly cited 7 to 9 hours for adults and why needs vary from person to person"
+},
+{
+"d": 5,
+"lv": "beginner",
+"t": "What happens when we sleep",
+"f": "A friendly tour of the night: falling asleep, light sleep, deep sleep and dreaming sleep"
+},
+{
+"d": 6,
+"lv": "beginner",
+"t": "Sleep cycles explained",
+"f": "How the night repeats cycles of roughly 90 minutes and why waking between them feels easier"
+},
+{
+"d": 7,
+"lv": "beginner",
+"t": "Deep sleep in plain words",
+"f": "The slow, heavy stage of sleep that often comes early in the night and helps the body rest"
+},
+{
+"d": 8,
+"lv": "beginner",
+"t": "Dreaming sleep",
+"f": "What REM sleep is, why dreams feel vivid and why this stage grows longer towards morning"
+},
+{
+"d": 9,
+"lv": "beginner",
+"t": "Your body clock",
+"f": "The circadian rhythm: an inner 24-hour clock that nudges you to feel alert or sleepy"
+},
+{
+"d": 10,
+"lv": "beginner",
+"t": "Sleep pressure",
+"f": "How the urge to sleep builds the longer you stay awake and resets when you rest"
+},
+{
+"d": 11,
+"lv": "beginner",
+"t": "Two forces, one night",
+"f": "How sleep pressure and the body clock work together to open your best sleep window"
+},
+{
+"d": 12,
+"lv": "beginner",
+"t": "Larks, owls and in-betweens",
+"f": "Chronotypes: why some people love early mornings and others come alive in the evening"
+},
+{
+"d": 13,
+"lv": "beginner",
+"t": "Finding your chronotype",
+"f": "Simple clues from free days and holidays that hint at your natural timing"
+},
+{
+"d": 14,
+"lv": "beginner",
+"t": "Light is the master signal",
+"f": "Why daylight and darkness are the strongest cues for setting your body clock"
+},
+{
+"d": 15,
+"lv": "beginner",
+"t": "The sleepy hormone",
+"f": "Melatonin in simple terms: how darkness signals the body that night has arrived"
+},
+{
+"d": 16,
+"lv": "beginner",
+"t": "Feeling rested vs feeling tired",
+"f": "Telling the difference between sleepiness, tiredness and low energy during the day"
+},
+{
+"d": 17,
+"lv": "beginner",
+"t": "Myths about sleep",
+"f": "Common beliefs like 'you can fully catch up at weekends' and what is actually known"
+},
+{
+"d": 18,
+"lv": "beginner",
+"t": "Sleep and mood",
+"f": "How a good night often makes us calmer, kinder and more patient the next day"
+},
+{
+"d": 19,
+"lv": "beginner",
+"t": "Sleep and focus",
+"f": "Why attention, reaction time and problem-solving tend to work better after good rest"
+},
+{
+"d": 20,
+"lv": "beginner",
+"t": "Sleep and the body",
+"f": "General ways rest supports recovery, appetite balance and feeling well"
+},
+{
+"d": 21,
+"lv": "beginner",
+"t": "Starting a sleep diary",
+"f": "A simple daily log of bedtime, wake time and how you feel, to learn your own patterns"
+},
+{
+"d": 22,
+"lv": "beginner",
+"t": "Reading your first week",
+"f": "Spotting patterns in your diary such as late nights, early alarms or restless evenings"
+},
+{
+"d": 23,
+"lv": "beginner",
+"t": "Setting a gentle goal",
+"f": "Choosing one realistic, kind sleep goal for the coming month"
+},
+{
+"d": 24,
+"lv": "beginner",
+"t": "Small changes, big effect",
+"f": "Why tiny adjustments like 15 minutes earlier are easier to keep than big overhauls"
+},
+{
+"d": 25,
+"lv": "beginner",
+"t": "When to talk to a doctor",
+"f": "Signs that deserve a professional's view, like loud snoring or long-lasting poor sleep"
+},
+{
+"d": 26,
+"lv": "beginner",
+"t": "Sleep around the world",
+"f": "A first look at how bedtimes and sleep customs differ between cultures"
+},
+{
+"d": 27,
+"lv": "beginner",
+"t": "Words for sleep",
+"f": "Fun expressions about sleep in different languages and what they reveal"
+},
+{
+"d": 28,
+"lv": "beginner",
+"t": "Your ideal day of rest",
+"f": "Imagining a day with great sleep and what it would change for you"
+},
+{
+"d": 29,
+"lv": "beginner",
+"t": "Rest is not laziness",
+"f": "Seeing sleep as a skill and an investment, not wasted time"
+},
+{
+"d": 30,
+"lv": "beginner",
+"t": "Month one review",
+"f": "Looking back at the basics: cycles, body clock, sleep pressure and your diary"
+},
+{
+"d": 31,
+"lv": "beginner",
+"t": "The bedroom as a sleep space",
+"f": "Why your bedroom works best when it mostly signals rest and calm"
+},
+{
+"d": 32,
+"lv": "beginner",
+"t": "Darkness matters",
+"f": "How even small amounts of light at night can make sleep lighter"
+},
+{
+"d": 33,
+"lv": "beginner",
+"t": "Blackout tricks",
+"f": "Curtains, blinds, eye masks and covering little standby lights"
+},
+{
+"d": 34,
+"lv": "beginner",
+"t": "The right temperature",
+"f": "Why a cool room, often around 16 to 19 C, tends to help many people sleep"
+},
+{
+"d": 35,
+"lv": "beginner",
+"t": "Bedding that suits you",
+"f": "Choosing covers and layers that keep you comfortable through the night"
+},
+{
+"d": 36,
+"lv": "beginner",
+"t": "Your pillow and your posture",
+"f": "How pillow height and firmness relate to comfort in different sleeping positions"
+},
+{
+"d": 37,
+"lv": "beginner",
+"t": "Mattress comfort basics",
+"f": "What to notice about support and comfort when judging a mattress"
+},
+{
+"d": 38,
+"lv": "beginner",
+"t": "Sleeping positions",
+"f": "Back, side and front sleeping: general comfort tips for each"
+},
+{
+"d": 39,
+"lv": "beginner",
+"t": "Quiet please",
+"f": "How noise disturbs sleep and why sudden sounds bother us more than steady ones"
+},
+{
+"d": 40,
+"lv": "beginner",
+"t": "Earplugs and white noise",
+"f": "Simple tools that soften or mask background noise"
+},
+{
+"d": 41,
+"lv": "beginner",
+"t": "Fresh air and airflow",
+"f": "Why a well-aired room often feels more pleasant for sleep"
+},
+{
+"d": 42,
+"lv": "beginner",
+"t": "Humidity and comfort",
+"f": "How very dry or very damp air can affect comfort at night"
+},
+{
+"d": 43,
+"lv": "beginner",
+"t": "Clutter and calm",
+"f": "How a tidy, simple bedroom can feel more restful to the mind"
+},
+{
+"d": 44,
+"lv": "beginner",
+"t": "Colours and atmosphere",
+"f": "Soft colours, warm lighting and textures that feel cosy in the evening"
+},
+{
+"d": 45,
+"lv": "beginner",
+"t": "Scents for relaxation",
+"f": "Gentle, pleasant scents like lavender that many people find calming"
+},
+{
+"d": 46,
+"lv": "beginner",
+"t": "Screens in the bedroom",
+"f": "Why phones, tablets and TVs in bed can keep the mind switched on"
+},
+{
+"d": 47,
+"lv": "beginner",
+"t": "Charging outside the bedroom",
+"f": "Trying to park your phone in another room overnight"
+},
+{
+"d": 48,
+"lv": "beginner",
+"t": "The alarm clock question",
+"f": "Choosing a wake-up method that does not invite late-night scrolling"
+},
+{
+"d": 49,
+"lv": "beginner",
+"t": "Pets and sleep",
+"f": "Sharing a room with pets: cosy for some, disruptive for others"
+},
+{
+"d": 50,
+"lv": "beginner",
+"t": "Sharing a bed",
+"f": "Different schedules, snoring and blanket battles: friendly tips for couples and siblings"
+},
+{
+"d": 51,
+"lv": "beginner",
+"t": "Sleeping in a shared room",
+"f": "Making rest work in dorms, hostels or family rooms"
+},
+{
+"d": 52,
+"lv": "beginner",
+"t": "Sleep on a budget",
+"f": "Low-cost bedroom upgrades that make a real difference"
+},
+{
+"d": 53,
+"lv": "beginner",
+"t": "Bed is for sleep",
+"f": "Keeping work, studying and long scrolling out of bed to strengthen the bed-sleep link"
+},
+{
+"d": 54,
+"lv": "beginner",
+"t": "Making your bed in the morning",
+"f": "How a small morning ritual makes the evening bedroom more inviting"
+},
+{
+"d": 55,
+"lv": "beginner",
+"t": "Changing seasons in the bedroom",
+"f": "Adjusting bedding and airflow for hot summers and cold winters"
+},
+{
+"d": 56,
+"lv": "beginner",
+"t": "Sleeping in hot weather",
+"f": "Practical ways to stay cool on warm nights"
+},
+{
+"d": 57,
+"lv": "beginner",
+"t": "Sleeping in cold weather",
+"f": "Staying cosy without overheating when it is cold outside"
+},
+{
+"d": 58,
+"lv": "beginner",
+"t": "Your bedroom audit",
+"f": "Walking through your room checking light, noise, temperature and comfort"
+},
+{
+"d": 59,
+"lv": "beginner",
+"t": "One upgrade this week",
+"f": "Picking the single bedroom change that could help you most"
+},
+{
+"d": 60,
+"lv": "beginner",
+"t": "Month two review",
+"f": "Recapping the sleep-friendly bedroom and the change you made"
+},
+{
+"d": 61,
+"lv": "beginner",
+"t": "Why a wind-down helps",
+"f": "How the mind and body need a gentle runway before sleep"
+},
+{
+"d": 62,
+"lv": "beginner",
+"t": "Your wind-down window",
+"f": "Setting aside 30 to 60 minutes before bed for calmer activities"
+},
+{
+"d": 63,
+"lv": "beginner",
+"t": "Dimming the lights",
+"f": "Using softer, warmer light in the evening to support your body clock"
+},
+{
+"d": 64,
+"lv": "beginner",
+"t": "Evening screens and light",
+"f": "How bright screens late at night can delay sleepiness and how to soften their effect"
+},
+{
+"d": 65,
+"lv": "beginner",
+"t": "Night mode and filters",
+"f": "What warm screen settings can and cannot do"
+},
+{
+"d": 66,
+"lv": "beginner",
+"t": "A warm shower or bath",
+"f": "Why a warm shower an hour or two before bed often helps people feel sleepy"
+},
+{
+"d": 67,
+"lv": "beginner",
+"t": "Gentle stretching",
+"f": "Simple, slow stretches that release the day's tension"
+},
+{
+"d": 68,
+"lv": "beginner",
+"t": "Reading before bed",
+"f": "Choosing calm, paper-based reading to drift towards sleep"
+},
+{
+"d": 69,
+"lv": "beginner",
+"t": "Soft music and sounds",
+"f": "Using quiet music, rain sounds or nature sounds to unwind"
+},
+{
+"d": 70,
+"lv": "beginner",
+"t": "Tidying tomorrow away",
+"f": "Preparing clothes, bag and lunch so the morning feels lighter"
+},
+{
+"d": 71,
+"lv": "beginner",
+"t": "The to-do list dump",
+"f": "Writing tomorrow's tasks down so your mind can let go of them"
+},
+{
+"d": 72,
+"lv": "beginner",
+"t": "A gratitude moment",
+"f": "Noting three good things from the day to end on a positive note"
+},
+{
+"d": 73,
+"lv": "beginner",
+"t": "Breathing slowly",
+"f": "An easy slow-breathing pattern that helps many people relax"
+},
+{
+"d": 74,
+"lv": "beginner",
+"t": "The 4-7-8 breath",
+"f": "A popular counted breathing exercise and how to try it gently"
+},
+{
+"d": 75,
+"lv": "beginner",
+"t": "Body scan basics",
+"f": "Moving attention slowly through the body to relax each part"
+},
+{
+"d": 76,
+"lv": "beginner",
+"t": "Calm conversations",
+"f": "Keeping late-evening chats light and saving heavy topics for daytime"
+},
+{
+"d": 77,
+"lv": "beginner",
+"t": "Herbal teas",
+"f": "Caffeine-free evening drinks many people enjoy as part of a routine"
+},
+{
+"d": 78,
+"lv": "beginner",
+"t": "Evening hobbies that relax",
+"f": "Puzzles, drawing, knitting and other calm activities for the wind-down"
+},
+{
+"d": 79,
+"lv": "beginner",
+"t": "Avoiding the second wind",
+"f": "Why staying up past your sleepy moment can make falling asleep harder"
+},
+{
+"d": 80,
+"lv": "beginner",
+"t": "Your bedtime signal",
+"f": "Creating one repeatable cue that tells your brain sleep is coming"
+},
+{
+"d": 81,
+"lv": "beginner",
+"t": "Building your routine",
+"f": "Putting three or four calm steps together into your own wind-down"
+},
+{
+"d": 82,
+"lv": "beginner",
+"t": "Routine on busy nights",
+"f": "A short five-minute version for evenings when time is tight"
+},
+{
+"d": 83,
+"lv": "beginner",
+"t": "Routine when away",
+"f": "Keeping a few familiar steps when sleeping somewhere new"
+},
+{
+"d": 84,
+"lv": "beginner",
+"t": "Children's bedtime ideas",
+"f": "What adults can learn from the calm, predictable bedtime stories of childhood"
+},
+{
+"d": 85,
+"lv": "beginner",
+"t": "Wind-down mistakes",
+"f": "Common traps like late emails, bright lights and exciting shows"
+},
+{
+"d": 86,
+"lv": "beginner",
+"t": "Test your routine for a week",
+"f": "Trying your wind-down every night and noting what changes"
+},
+{
+"d": 87,
+"lv": "beginner",
+"t": "Adjusting your routine",
+"f": "Keeping what works, dropping what does not and fine-tuning timing"
+},
+{
+"d": 88,
+"lv": "beginner",
+"t": "Your favourite calming ritual",
+"f": "Choosing the one evening ritual you enjoy most and making it yours"
+},
+{
+"d": 89,
+"lv": "beginner",
+"t": "Evening routine at weekends",
+"f": "Keeping your wind-down relaxed but steady on Friday and Saturday nights"
+},
+{
+"d": 90,
+"lv": "beginner",
+"t": "Month three review",
+"f": "Looking back at your wind-down and how your evenings feel now"
+},
+{
+"d": 91,
+"lv": "beginner",
+"t": "Mornings shape nights",
+"f": "How what you do after waking affects how you sleep that evening"
+},
+{
+"d": 92,
+"lv": "beginner",
+"t": "A fixed wake-up time",
+"f": "Why a steady wake time is one of the strongest habits for better sleep"
+},
+{
+"d": 93,
+"lv": "beginner",
+"t": "Morning light",
+"f": "Getting daylight soon after waking to set your body clock for the day"
+},
+{
+"d": 94,
+"lv": "beginner",
+"t": "Light on cloudy days",
+"f": "Why outdoor light still helps even when the sky is grey"
+},
+{
+"d": 95,
+"lv": "beginner",
+"t": "The snooze button",
+"f": "Why repeated snoozing can leave you groggier and gentler alternatives"
+},
+{
+"d": 96,
+"lv": "beginner",
+"t": "Sleep inertia",
+"f": "That foggy feeling after waking, why it happens and how it fades"
+},
+{
+"d": 97,
+"lv": "beginner",
+"t": "A gentle wake-up routine",
+"f": "Water, light, movement and a calm start to the day"
+},
+{
+"d": 98,
+"lv": "beginner",
+"t": "Breakfast and rhythm",
+"f": "How regular mealtimes can support a steady daily rhythm"
+},
+{
+"d": 99,
+"lv": "beginner",
+"t": "Movement and sleep",
+"f": "How regular physical activity is linked with deeper, better sleep"
+},
+{
+"d": 100,
+"lv": "beginner",
+"t": "Best times to exercise",
+"f": "General tips on timing workouts so they help rather than keep you wired"
+},
+{
+"d": 101,
+"lv": "beginner",
+"t": "Walking for better rest",
+"f": "Why a daily walk, especially outdoors, is a simple sleep-friendly habit"
+},
+{
+"d": 102,
+"lv": "beginner",
+"t": "Time outdoors",
+"f": "The benefits of spending part of your day outside in natural light"
+},
+{
+"d": 103,
+"lv": "beginner",
+"t": "The afternoon dip",
+"f": "Why many people feel sleepy after lunch and what to do about it"
+},
+{
+"d": 104,
+"lv": "beginner",
+"t": "Staying alert without crashing",
+"f": "Natural ways to boost daytime energy: light, movement, water and breaks"
+},
+{
+"d": 105,
+"lv": "beginner",
+"t": "Daytime breaks",
+"f": "How short rest breaks during work or study can lower evening tension"
+},
+{
+"d": 106,
+"lv": "beginner",
+"t": "Indoor light during the day",
+"f": "Bright, natural light at your desk to support daytime alertness"
+},
+{
+"d": 107,
+"lv": "beginner",
+"t": "Evening light vs morning light",
+"f": "Why light helps in the morning but can delay sleep at night"
+},
+{
+"d": 108,
+"lv": "beginner",
+"t": "A balanced day plan",
+"f": "Mapping light, movement, meals and wind-down across your day"
+},
+{
+"d": 109,
+"lv": "beginner",
+"t": "Weekend mornings",
+"f": "Keeping wake time close to weekdays while still enjoying a relaxed start"
+},
+{
+"d": 110,
+"lv": "beginner",
+"t": "Morning people tips",
+"f": "Making the most of early energy without going to bed too early"
+},
+{
+"d": 111,
+"lv": "beginner",
+"t": "Night owl tips",
+"f": "Gentle ways for evening types to fit their rhythm into daytime life"
+},
+{
+"d": 112,
+"lv": "beginner",
+"t": "Your energy map",
+"f": "Noting when you feel most and least energetic during the day"
+},
+{
+"d": 113,
+"lv": "beginner",
+"t": "Matching tasks to energy",
+"f": "Planning demanding tasks for your peak hours and easy ones for dips"
+},
+{
+"d": 114,
+"lv": "beginner",
+"t": "Sunlight and mood",
+"f": "How bright days often lift mood and energy"
+},
+{
+"d": 115,
+"lv": "beginner",
+"t": "Screen breaks in the day",
+"f": "Resting your eyes and mind with short breaks away from screens"
+},
+{
+"d": 116,
+"lv": "beginner",
+"t": "Daytime calm, easier nights",
+"f": "How a calmer day often leads to an easier evening"
+},
+{
+"d": 117,
+"lv": "beginner",
+"t": "Sitting less",
+"f": "Breaking up long sitting periods with small movements during the day"
+},
+{
+"d": 118,
+"lv": "beginner",
+"t": "Your daytime checklist",
+"f": "Pulling light, movement, meals and breaks into one simple daily checklist"
+},
+{
+"d": 119,
+"lv": "beginner",
+"t": "Beginner stage review",
+"f": "Recapping your snapshot, bedroom, wind-down and daytime habits so far"
+},
+{
+"d": 120,
+"lv": "beginner",
+"t": "Celebrating progress",
+"f": "Noticing the improvements you have made in your first four months"
+},
+{
+"d": 121,
+"lv": "intermediate",
+"t": "Welcome to the intermediate stage",
+"f": "What the next months add: food, mind, schedules and real-life situations"
+},
+{
+"d": 122,
+"lv": "intermediate",
+"t": "Caffeine and your night",
+"f": "How caffeine blocks sleepiness signals and why its effect lasts for hours"
+},
+{
+"d": 123,
+"lv": "intermediate",
+"t": "Your caffeine curfew",
+"f": "Choosing a personal cut-off time for coffee, tea, cola and energy drinks"
+},
+{
+"d": 124,
+"lv": "intermediate",
+"t": "Hidden caffeine",
+"f": "Spotting caffeine in chocolate, some teas, sodas and pre-workout drinks"
+},
+{
+"d": 125,
+"lv": "intermediate",
+"t": "Swapping the afternoon coffee",
+"f": "Caffeine-free alternatives for the mid-afternoon slump"
+},
+{
+"d": 126,
+"lv": "intermediate",
+"t": "Late heavy meals",
+"f": "Why a big, rich dinner right before bed can make sleep less comfortable"
+},
+{
+"d": 127,
+"lv": "intermediate",
+"t": "Dinner timing",
+"f": "Leaving a gap of a few hours between your main meal and bedtime"
+},
+{
+"d": 128,
+"lv": "intermediate",
+"t": "Light evening snacks",
+"f": "Small, easy snacks for evenings when you feel hungry before bed"
+},
+{
+"d": 129,
+"lv": "intermediate",
+"t": "Spicy and rich foods at night",
+"f": "How some foods can cause discomfort when eaten late"
+},
+{
+"d": 130,
+"lv": "intermediate",
+"t": "Drinking enough during the day",
+"f": "Staying hydrated early so you are not thirsty at night"
+},
+{
+"d": 131,
+"lv": "intermediate",
+"t": "Fewer night-time bathroom trips",
+"f": "Easing off large drinks in the last hour or two before bed"
+},
+{
+"d": 132,
+"lv": "intermediate",
+"t": "Sugar and evening energy",
+"f": "How very sugary evening treats can leave some people feeling restless"
+},
+{
+"d": 133,
+"lv": "intermediate",
+"t": "Foods often linked with sleep",
+"f": "Milk, oats, bananas, nuts and other foods in traditional bedtime lore"
+},
+{
+"d": 134,
+"lv": "intermediate",
+"t": "Kitchen rituals for evening",
+"f": "Turning the end of dinner into a calm transition towards rest"
+},
+{
+"d": 135,
+"lv": "intermediate",
+"t": "Regular mealtimes",
+"f": "How eating at steady times supports a steady body clock"
+},
+{
+"d": 136,
+"lv": "intermediate",
+"t": "Eating out and late dinners",
+"f": "Enjoying late social meals while protecting your sleep the next nights"
+},
+{
+"d": 137,
+"lv": "intermediate",
+"t": "Food culture and bedtime",
+"f": "How late dinners in Spain or early dinners in Northern Europe shape bedtimes"
+},
+{
+"d": 138,
+"lv": "intermediate",
+"t": "Reading your food and sleep diary",
+"f": "Linking what and when you ate with how you slept"
+},
+{
+"d": 139,
+"lv": "intermediate",
+"t": "Your evening drink menu",
+"f": "Building a list of calming drinks you enjoy at night"
+},
+{
+"d": 140,
+"lv": "intermediate",
+"t": "Food and sleep recap",
+"f": "Pulling together caffeine, meal timing and hydration into simple rules"
+},
+{
+"d": 141,
+"lv": "intermediate",
+"t": "Racing thoughts at bedtime",
+"f": "Why the mind often gets busy as soon as the lights go out"
+},
+{
+"d": 142,
+"lv": "intermediate",
+"t": "The worry window",
+"f": "Setting a daytime slot to think about concerns so they crowd the night less"
+},
+{
+"d": 143,
+"lv": "intermediate",
+"t": "Journaling before bed",
+"f": "Writing a few lines to empty your head before sleep"
+},
+{
+"d": 144,
+"lv": "intermediate",
+"t": "Cognitive shuffle",
+"f": "A playful mental game of imagining random objects that helps some people drift off"
+},
+{
+"d": 145,
+"lv": "intermediate",
+"t": "Counting and visualising",
+"f": "Calm imagery like a favourite beach or walk instead of counting sheep"
+},
+{
+"d": 146,
+"lv": "intermediate",
+"t": "Progressive muscle relaxation",
+"f": "Tensing and releasing muscle groups one by one to let go of tension"
+},
+{
+"d": 147,
+"lv": "intermediate",
+"t": "Not trying too hard",
+"f": "Why chasing sleep can push it away and how to let it come"
+},
+{
+"d": 148,
+"lv": "intermediate",
+"t": "Clock watching",
+"f": "Why checking the time at night adds pressure and how to turn the clock away"
+},
+{
+"d": 149,
+"lv": "intermediate",
+"t": "If you cannot fall asleep",
+"f": "The common tip of getting up for a calm activity and returning when sleepy"
+},
+{
+"d": 150,
+"lv": "intermediate",
+"t": "Mid-month review",
+"f": "Recapping food, drinks and the first tools for a calm mind at night"
+},
+{
+"d": 151,
+"lv": "intermediate",
+"t": "Waking in the night",
+"f": "Why brief night wakings are normal and how to settle back calmly"
+},
+{
+"d": 152,
+"lv": "intermediate",
+"t": "Early morning waking",
+"f": "General ideas for when you wake earlier than you want"
+},
+{
+"d": 153,
+"lv": "intermediate",
+"t": "Calm self-talk at night",
+"f": "Kind, reassuring phrases to use instead of frustrated thoughts"
+},
+{
+"d": 154,
+"lv": "intermediate",
+"t": "Excitement and sleep",
+"f": "Why happy events, trips or big days can also keep us awake"
+},
+{
+"d": 155,
+"lv": "intermediate",
+"t": "A busy mind after screens",
+"f": "How gripping content late at night keeps the brain alert"
+},
+{
+"d": 156,
+"lv": "intermediate",
+"t": "Mindful moments in bed",
+"f": "Noticing breath and sensations without trying to change anything"
+},
+{
+"d": 157,
+"lv": "intermediate",
+"t": "Calming routines from cultures",
+"f": "Evening rituals from around the world that help people unwind"
+},
+{
+"d": 158,
+"lv": "intermediate",
+"t": "Your night toolbox",
+"f": "Choosing your three favourite techniques for restless nights"
+},
+{
+"d": 159,
+"lv": "intermediate",
+"t": "Practising when calm",
+"f": "Why rehearsing relaxation in the day makes it work better at night"
+},
+{
+"d": 160,
+"lv": "intermediate",
+"t": "When poor sleep lasts",
+"f": "Why ongoing trouble sleeping is worth discussing with a doctor"
+},
+{
+"d": 161,
+"lv": "intermediate",
+"t": "Mind and sleep recap",
+"f": "Reviewing journaling, relaxation, letting go and your night toolbox"
+},
+{
+"d": 162,
+"lv": "intermediate",
+"t": "Why consistency is king",
+"f": "How regular sleep and wake times strengthen your body clock"
+},
+{
+"d": 163,
+"lv": "intermediate",
+"t": "Your target bedtime",
+"f": "Working backwards from your wake time to find a realistic bedtime"
+},
+{
+"d": 164,
+"lv": "intermediate",
+"t": "Moving bedtime gradually",
+"f": "Shifting your schedule in 15-minute steps instead of big jumps"
+},
+{
+"d": 165,
+"lv": "intermediate",
+"t": "Social jet lag",
+"f": "How late weekends followed by early Mondays feel like crossing time zones"
+},
+{
+"d": 166,
+"lv": "intermediate",
+"t": "Weekend sleep strategy",
+"f": "Allowing a little extra rest without throwing your rhythm off"
+},
+{
+"d": 167,
+"lv": "intermediate",
+"t": "Sleeping in vs staying regular",
+"f": "Finding a balance between rest and routine on free days"
+},
+{
+"d": 168,
+"lv": "intermediate",
+"t": "Power naps",
+"f": "How a short 10 to 20 minute nap can refresh you"
+},
+{
+"d": 169,
+"lv": "intermediate",
+"t": "Nap timing",
+"f": "Why early afternoon naps tend to interfere least with night sleep"
+},
+{
+"d": 170,
+"lv": "intermediate",
+"t": "Longer naps",
+"f": "When a 90-minute nap might fit and when it may get in the way"
+},
+{
+"d": 171,
+"lv": "intermediate",
+"t": "Naps around the world",
+"f": "Siesta and other midday rest traditions in different cultures"
+},
+{
+"d": 172,
+"lv": "intermediate",
+"t": "Napping at work or school",
+"f": "Short rest ideas when a full nap is not possible"
+},
+{
+"d": 173,
+"lv": "intermediate",
+"t": "The coffee nap",
+"f": "A popular trick of a quick coffee then a short nap, and its limits"
+},
+{
+"d": 174,
+"lv": "intermediate",
+"t": "To nap or not to nap",
+"f": "Deciding whether naps help or hurt your own nights"
+},
+{
+"d": 175,
+"lv": "intermediate",
+"t": "Your sleep window",
+"f": "Finding the time span when you naturally fall asleep and wake best"
+},
+{
+"d": 176,
+"lv": "intermediate",
+"t": "Late nights out",
+"f": "Enjoying an occasional late evening and getting back on track afterwards"
+},
+{
+"d": 177,
+"lv": "intermediate",
+"t": "Holidays and routine",
+"f": "Keeping some rhythm on holidays while still having fun"
+},
+{
+"d": 178,
+"lv": "intermediate",
+"t": "Back to routine after a break",
+"f": "Gently resetting your schedule after holidays"
+},
+{
+"d": 179,
+"lv": "intermediate",
+"t": "Daylight saving time",
+"f": "Tips for handling the clock change in spring and autumn"
+},
+{
+"d": 180,
+"lv": "intermediate",
+"t": "Schedule recap",
+"f": "Reviewing consistency, naps, weekends and your personal sleep window"
+},
+{
+"d": 181,
+"lv": "intermediate",
+"t": "Monthly check-in",
+"f": "Comparing your diary now with your first weeks"
+},
+{
+"d": 182,
+"lv": "intermediate",
+"t": "Jet lag basics",
+"f": "Why crossing time zones leaves your body clock out of step"
+},
+{
+"d": 183,
+"lv": "intermediate",
+"t": "Flying east vs west",
+"f": "Why travelling east usually feels harder than travelling west"
+},
+{
+"d": 184,
+"lv": "intermediate",
+"t": "Before a long trip",
+"f": "Adjusting your sleep a few days before departure"
+},
+{
+"d": 185,
+"lv": "intermediate",
+"t": "Sleep on planes and trains",
+"f": "Practical comfort tips for resting while travelling"
+},
+{
+"d": 186,
+"lv": "intermediate",
+"t": "Arriving in a new time zone",
+"f": "Using daylight, meals and activity to adapt faster"
+},
+{
+"d": 187,
+"lv": "intermediate",
+"t": "Sleeping in hotels and hostels",
+"f": "Making unfamiliar rooms feel more sleep-friendly"
+},
+{
+"d": 188,
+"lv": "intermediate",
+"t": "First night in a new place",
+"f": "Why we often sleep lighter on the first night away"
+},
+{
+"d": 189,
+"lv": "intermediate",
+"t": "A travel sleep kit",
+"f": "Mask, earplugs, a scarf and other small items that help on the road"
+},
+{
+"d": 190,
+"lv": "intermediate",
+"t": "Camping and sleeping outdoors",
+"f": "Staying warm and comfortable when sleeping in a tent"
+},
+{
+"d": 191,
+"lv": "intermediate",
+"t": "Long work days and sleep",
+"f": "Protecting rest when days are long and demanding"
+},
+{
+"d": 192,
+"lv": "intermediate",
+"t": "Irregular work hours",
+"f": "General tips for people whose hours change from week to week"
+},
+{
+"d": 193,
+"lv": "intermediate",
+"t": "Night work in general terms",
+"f": "Light, darkness and routine ideas for people who work at night"
+},
+{
+"d": 194,
+"lv": "intermediate",
+"t": "Students and sleep",
+"f": "Balancing study, social life and rest during school or university"
+},
+{
+"d": 195,
+"lv": "intermediate",
+"t": "Exam season sleep",
+"f": "Why sleep helps memory during exams and how to protect it"
+},
+{
+"d": 196,
+"lv": "intermediate",
+"t": "Sleep for new parents",
+"f": "Gentle ideas for grabbing rest when nights are broken"
+},
+{
+"d": 197,
+"lv": "intermediate",
+"t": "Sleeping with a busy household",
+"f": "Finding calm when family members keep different hours"
+},
+{
+"d": 198,
+"lv": "intermediate",
+"t": "City noise and light",
+"f": "Sleeping well in a busy, bright city"
+},
+{
+"d": 199,
+"lv": "intermediate",
+"t": "Sleeping in the countryside",
+"f": "Silence, darkness and the surprising sounds of nature"
+},
+{
+"d": 200,
+"lv": "intermediate",
+"t": "Moving home",
+"f": "Settling into a new bedroom and new routine"
+},
+{
+"d": 201,
+"lv": "intermediate",
+"t": "Seasons and sleep",
+"f": "How long summer days and dark winter mornings affect our rhythm"
+},
+{
+"d": 202,
+"lv": "intermediate",
+"t": "Winter mornings",
+"f": "Getting up when it is still dark outside"
+},
+{
+"d": 203,
+"lv": "intermediate",
+"t": "Summer evenings",
+"f": "Winding down when it is still light late into the evening"
+},
+{
+"d": 204,
+"lv": "intermediate",
+"t": "Sleeping at high latitudes",
+"f": "How people in places with midnight sun or polar night manage sleep"
+},
+{
+"d": 205,
+"lv": "intermediate",
+"t": "Life events and sleep",
+"f": "Why busy or changing times often affect sleep for a while"
+},
+{
+"d": 206,
+"lv": "intermediate",
+"t": "Staying with friends or family",
+"f": "Feeling at home and resting well in someone else's house"
+},
+{
+"d": 207,
+"lv": "intermediate",
+"t": "Festivals and late events",
+"f": "Enjoying concerts and festivals and recovering your rhythm afterwards"
+},
+{
+"d": 208,
+"lv": "intermediate",
+"t": "Working from home and sleep",
+"f": "Keeping clear boundaries between your desk, your evening and your bed"
+},
+{
+"d": 209,
+"lv": "intermediate",
+"t": "Early flights and early starts",
+"f": "Handling an occasional very early morning without losing the whole week"
+},
+{
+"d": 210,
+"lv": "intermediate",
+"t": "Travel and life recap",
+"f": "Reviewing jet lag, travel, work, study and seasonal tips"
+},
+{
+"d": 211,
+"lv": "intermediate",
+"t": "Sharing your learning",
+"f": "Explaining one sleep tip to a friend or family member"
+},
+{
+"d": 212,
+"lv": "intermediate",
+"t": "Sleep and friendships",
+"f": "Balancing social plans with rest without missing out"
+},
+{
+"d": 213,
+"lv": "intermediate",
+"t": "Video calls across time zones",
+"f": "Scheduling chats with faraway friends without losing sleep"
+},
+{
+"d": 214,
+"lv": "intermediate",
+"t": "Gaming and late nights",
+"f": "Enjoying games while keeping an eye on bedtime"
+},
+{
+"d": 215,
+"lv": "intermediate",
+"t": "Streaming and binge-watching",
+"f": "The 'one more episode' trap and how to end the night on time"
+},
+{
+"d": 216,
+"lv": "intermediate",
+"t": "Social media at night",
+"f": "Why endless feeds keep us up and ways to set limits"
+},
+{
+"d": 217,
+"lv": "intermediate",
+"t": "Phone-free hour",
+"f": "Experimenting with one hour without the phone before bed"
+},
+{
+"d": 218,
+"lv": "intermediate",
+"t": "Do not disturb settings",
+"f": "Using phone settings to keep night-time notifications quiet"
+},
+{
+"d": 219,
+"lv": "intermediate",
+"t": "Tech that helps sleep",
+"f": "Sunrise alarms, timers and smart lights used in a sleep-friendly way"
+},
+{
+"d": 220,
+"lv": "intermediate",
+"t": "Morning screen habits",
+"f": "Why checking the phone first thing can set a rushed tone for the day"
+},
+{
+"d": 221,
+"lv": "intermediate",
+"t": "E-readers and tablets",
+"f": "How e-ink readers and bright tablets differ for evening reading"
+},
+{
+"d": 222,
+"lv": "intermediate",
+"t": "Podcasts and audiobooks at night",
+"f": "Using calm audio with a sleep timer to drift off"
+},
+{
+"d": 223,
+"lv": "intermediate",
+"t": "Mid-stage review",
+"f": "Looking back on the intermediate path so far"
+},
+{
+"d": 224,
+"lv": "intermediate",
+"t": "Weekly rhythm planning",
+"f": "Planning your week with sleep as a fixed appointment"
+},
+{
+"d": 225,
+"lv": "intermediate",
+"t": "Saying no to protect sleep",
+"f": "Polite ways to decline late plans when you need rest"
+},
+{
+"d": 226,
+"lv": "intermediate",
+"t": "Sleep and productivity myths",
+"f": "Why sleeping less rarely means getting more done"
+},
+{
+"d": 227,
+"lv": "intermediate",
+"t": "Short sleep and judgement",
+"f": "Why tired people often underestimate how tired they are"
+},
+{
+"d": 228,
+"lv": "intermediate",
+"t": "Drowsy driving awareness",
+"f": "Why driving while very sleepy is risky and what to do instead"
+},
+{
+"d": 229,
+"lv": "intermediate",
+"t": "Sleep and workouts",
+"f": "How rest supports performance and recovery in sport"
+},
+{
+"d": 230,
+"lv": "intermediate",
+"t": "Sleep and appetite",
+"f": "How tiredness can change cravings and food choices"
+},
+{
+"d": 231,
+"lv": "intermediate",
+"t": "Sleep and skin",
+"f": "Why people talk about 'beauty sleep' and what rest does for how we look and feel"
+},
+{
+"d": 232,
+"lv": "intermediate",
+"t": "Sleep and immunity basics",
+"f": "General links between regular rest and feeling well"
+},
+{
+"d": 233,
+"lv": "intermediate",
+"t": "Sleep and learning new skills",
+"f": "How sleep helps the brain store what we practise"
+},
+{
+"d": 234,
+"lv": "intermediate",
+"t": "Sleep and creativity",
+"f": "How rest and dreams can feed new ideas"
+},
+{
+"d": 235,
+"lv": "intermediate",
+"t": "Sleep and emotions",
+"f": "Why tired days can feel more emotional and how rest helps balance"
+},
+{
+"d": 236,
+"lv": "intermediate",
+"t": "Sleep and relationships",
+"f": "How being well-rested can make us better company"
+},
+{
+"d": 237,
+"lv": "intermediate",
+"t": "Sleep and language learning",
+"f": "Why reviewing new words before sleep can help them stick"
+},
+{
+"d": 238,
+"lv": "intermediate",
+"t": "Your personal sleep rules",
+"f": "Writing five simple rules that work for your life"
+},
+{
+"d": 239,
+"lv": "intermediate",
+"t": "Troubleshooting common problems",
+"f": "A friendly checklist for bad nights: light, noise, caffeine, worries, timing"
+},
+{
+"d": 240,
+"lv": "intermediate",
+"t": "Hard nights happen",
+"f": "Being kind to yourself after a poor night and keeping your routine"
+},
+{
+"d": 241,
+"lv": "intermediate",
+"t": "The day after a bad night",
+"f": "Smart ways to get through the day without spiralling"
+},
+{
+"d": 242,
+"lv": "intermediate",
+"t": "Building resilience",
+"f": "Why one bad night matters less than your overall habits"
+},
+{
+"d": 243,
+"lv": "intermediate",
+"t": "Sleep habit stacking",
+"f": "Linking new sleep habits to things you already do every day"
+},
+{
+"d": 244,
+"lv": "intermediate",
+"t": "Rewards and motivation",
+"f": "Celebrating small sleep wins to keep going"
+},
+{
+"d": 245,
+"lv": "intermediate",
+"t": "Tracking streaks",
+"f": "Using a simple calendar to see your consistency grow"
+},
+{
+"d": 246,
+"lv": "intermediate",
+"t": "Habits that slipped",
+"f": "Noticing which sleep habits faded and restarting them gently"
+},
+{
+"d": 247,
+"lv": "intermediate",
+"t": "Your best night recipe",
+"f": "Writing down everything that went into your best recent night"
+},
+{
+"d": 248,
+"lv": "intermediate",
+"t": "Planning the advanced stage",
+"f": "Choosing what you want to explore in the final part of the path"
+},
+{
+"d": 249,
+"lv": "intermediate",
+"t": "Intermediate stage review",
+"f": "Recapping food, mind, schedules, travel, tech and real-life tips"
+},
+{
+"d": 250,
+"lv": "intermediate",
+"t": "Celebrating your consistency",
+"f": "Recognising how far your sleep habits have come"
+},
+{
+"d": 251,
+"lv": "advanced",
+"t": "Welcome to the advanced stage",
+"f": "What the final months cover: experiments, science, cultures and a lifelong sleep system"
+},
+{
+"d": 252,
+"lv": "advanced",
+"t": "Advanced sleep diary",
+"f": "Adding energy, mood, caffeine, light and activity to your daily log"
+},
+{
+"d": 253,
+"lv": "advanced",
+"t": "Finding patterns in data",
+"f": "Looking at weeks of notes to spot what truly helps you"
+},
+{
+"d": 254,
+"lv": "advanced",
+"t": "Sleep trackers explained",
+"f": "What wearables and apps measure and what they only estimate"
+},
+{
+"d": 255,
+"lv": "advanced",
+"t": "Using trackers wisely",
+"f": "Treating tracker numbers as hints, not verdicts, and avoiding sleep anxiety"
+},
+{
+"d": 256,
+"lv": "advanced",
+"t": "How you feel beats the numbers",
+"f": "Why your daytime energy is the best measure of good sleep"
+},
+{
+"d": 257,
+"lv": "advanced",
+"t": "Sleep efficiency",
+"f": "The share of time in bed actually spent asleep and why it matters"
+},
+{
+"d": 258,
+"lv": "advanced",
+"t": "Time in bed vs sleep time",
+"f": "Why lying in bed longer does not always mean more sleep"
+},
+{
+"d": 259,
+"lv": "advanced",
+"t": "Designing a sleep experiment",
+"f": "Changing one thing at a time and observing for one or two weeks"
+},
+{
+"d": 260,
+"lv": "advanced",
+"t": "Experiment: earlier light",
+"f": "Testing more morning daylight and noting how evenings change"
+},
+{
+"d": 261,
+"lv": "advanced",
+"t": "Experiment: caffeine cut-off",
+"f": "Moving your last caffeine earlier and comparing your nights"
+},
+{
+"d": 262,
+"lv": "advanced",
+"t": "Experiment: screen sunset",
+"f": "Trying a firm screen-off time and tracking the effect"
+},
+{
+"d": 263,
+"lv": "advanced",
+"t": "Experiment: cooler bedroom",
+"f": "Lowering room temperature slightly and noticing sleep quality"
+},
+{
+"d": 264,
+"lv": "advanced",
+"t": "Experiment: steady weekends",
+"f": "Keeping weekend wake times close to weekdays for two weeks"
+},
+{
+"d": 265,
+"lv": "advanced",
+"t": "Experiment: evening walk",
+"f": "Adding a relaxed walk after dinner and noting results"
+},
+{
+"d": 266,
+"lv": "advanced",
+"t": "Reviewing your experiments",
+"f": "Comparing results and keeping the changes that worked best"
+},
+{
+"d": 267,
+"lv": "advanced",
+"t": "Fine-tuning bedtime",
+"f": "Using your data to find the bedtime that leaves you most rested"
+},
+{
+"d": 268,
+"lv": "advanced",
+"t": "Fine-tuning wake time",
+"f": "Adjusting your alarm to wake closer to the end of a cycle"
+},
+{
+"d": 269,
+"lv": "advanced",
+"t": "Light hygiene mastery",
+"f": "A full day plan for bright days and dark nights"
+},
+{
+"d": 270,
+"lv": "advanced",
+"t": "Your personal light schedule",
+"f": "Writing when you seek light and when you avoid it"
+},
+{
+"d": 271,
+"lv": "advanced",
+"t": "Temperature rhythm",
+"f": "How body temperature falls at night and rises in the morning"
+},
+{
+"d": 272,
+"lv": "advanced",
+"t": "Using warmth and coolness",
+"f": "Warm hands and feet, cool room: working with your temperature rhythm"
+},
+{
+"d": 273,
+"lv": "advanced",
+"t": "Sound design for sleep",
+"f": "Choosing the right steady sound or silence for your environment"
+},
+{
+"d": 274,
+"lv": "advanced",
+"t": "Comfort upgrades",
+"f": "Advanced tweaks for pillows, layers and sleepwear"
+},
+{
+"d": 275,
+"lv": "advanced",
+"t": "Sleep and the senses",
+"f": "How smell, touch and sound shape how relaxed we feel at night"
+},
+{
+"d": 276,
+"lv": "advanced",
+"t": "Sleep and posture habits",
+"f": "Daytime posture, desk setup and how comfortable you feel in bed"
+},
+{
+"d": 277,
+"lv": "advanced",
+"t": "Evening routine 2.0",
+"f": "Redesigning your wind-down with everything you have learned"
+},
+{
+"d": 278,
+"lv": "advanced",
+"t": "Morning routine 2.0",
+"f": "Redesigning your morning to support the whole day and night"
+},
+{
+"d": 279,
+"lv": "advanced",
+"t": "Weekly sleep review ritual",
+"f": "A short weekly check of what went well and what to adjust"
+},
+{
+"d": 280,
+"lv": "advanced",
+"t": "Advanced stage check-in",
+"f": "Reviewing your experiments and what you learned about yourself"
+},
+{
+"d": 281,
+"lv": "advanced",
+"t": "Sharing results with a professional",
+"f": "How a sleep diary can help a doctor if you ever need advice"
+},
+{
+"d": 282,
+"lv": "advanced",
+"t": "The history of sleep",
+"f": "How people slept before electric light and alarm clocks"
+},
+{
+"d": 283,
+"lv": "advanced",
+"t": "Segmented sleep",
+"f": "Historical records of 'first sleep' and 'second sleep' in pre-industrial Europe"
+},
+{
+"d": 284,
+"lv": "advanced",
+"t": "Sleep in ancient cultures",
+"f": "How ancient Egyptians, Greeks and others thought about sleep and dreams"
+},
+{
+"d": 285,
+"lv": "advanced",
+"t": "The invention of the alarm clock",
+"f": "From roosters and water clocks to modern alarms"
+},
+{
+"d": 286,
+"lv": "advanced",
+"t": "Electric light and sleep",
+"f": "How artificial light changed bedtimes around the world"
+},
+{
+"d": 287,
+"lv": "advanced",
+"t": "The siesta tradition",
+"f": "Midday rest in Spain, Latin America and other warm regions"
+},
+{
+"d": 288,
+"lv": "advanced",
+"t": "Inemuri in Japan",
+"f": "The custom of napping in public as a sign of hard work"
+},
+{
+"d": 289,
+"lv": "advanced",
+"t": "Nordic sleep habits",
+"f": "Babies napping outdoors and other Scandinavian customs"
+},
+{
+"d": 290,
+"lv": "advanced",
+"t": "Beds around the world",
+"f": "Futons, hammocks, mats and bed styles across cultures"
+},
+{
+"d": 291,
+"lv": "advanced",
+"t": "Bedtime rituals of the world",
+"f": "Lullabies, stories and evening customs from different countries"
+},
+{
+"d": 292,
+"lv": "advanced",
+"t": "Sleep in different climates",
+"f": "How heat, cold and daylight shape sleep customs"
+},
+{
+"d": 293,
+"lv": "advanced",
+"t": "Sleep and holidays worldwide",
+"f": "Late nights at festivals and how cultures rest afterwards"
+},
+{
+"d": 294,
+"lv": "advanced",
+"t": "Famous sleepers",
+"f": "Well-known people and their famous sleep or nap habits"
+},
+{
+"d": 295,
+"lv": "advanced",
+"t": "Sleep in art and literature",
+"f": "How painters and writers have pictured sleep and dreams"
+},
+{
+"d": 296,
+"lv": "advanced",
+"t": "Lullabies across languages",
+"f": "The calming power of lullabies in many cultures"
+},
+{
+"d": 297,
+"lv": "advanced",
+"t": "Dreams and cultures",
+"f": "How different cultures have explained the meaning of dreams"
+},
+{
+"d": 298,
+"lv": "advanced",
+"t": "Remembering your dreams",
+"f": "Simple ways to recall dreams and keep a dream journal"
+},
+{
+"d": 299,
+"lv": "advanced",
+"t": "Lucid dreaming basics",
+"f": "What lucid dreaming is and why it fascinates people"
+},
+{
+"d": 300,
+"lv": "advanced",
+"t": "Sleep across the lifespan",
+"f": "How sleep needs change from babies to older adults in general terms"
+},
+{
+"d": 301,
+"lv": "advanced",
+"t": "Teen sleep timing",
+"f": "Why teenagers often naturally shift to later sleep times"
+},
+{
+"d": 302,
+"lv": "advanced",
+"t": "Sleep and older adults",
+"f": "General changes in sleep with age and healthy habits for later life"
+},
+{
+"d": 303,
+"lv": "advanced",
+"t": "Animal sleep",
+"f": "Fun facts: dolphins, giraffes, cats and how other animals rest"
+},
+{
+"d": 304,
+"lv": "advanced",
+"t": "Sleep in space",
+"f": "How astronauts sleep in orbit, where they see about sixteen sunrises a day"
+},
+{
+"d": 305,
+"lv": "advanced",
+"t": "Culture and sleep recap",
+"f": "Reviewing history, traditions and sleep around the world"
+},
+{
+"d": 306,
+"lv": "advanced",
+"t": "Your cultural sleep mix",
+"f": "Borrowing the best ideas from other cultures for your own routine"
+},
+{
+"d": 307,
+"lv": "advanced",
+"t": "Sleep and memory",
+"f": "How sleep helps turn the day's experiences into lasting memories"
+},
+{
+"d": 308,
+"lv": "advanced",
+"t": "Sleep before learning",
+"f": "Why a rested brain is ready to absorb new information"
+},
+{
+"d": 309,
+"lv": "advanced",
+"t": "Sleep after learning",
+"f": "Why sleeping after practice helps skills settle"
+},
+{
+"d": 310,
+"lv": "advanced",
+"t": "Smart study schedules",
+"f": "Combining study sessions and sleep for better results"
+},
+{
+"d": 311,
+"lv": "advanced",
+"t": "Sleep and sport performance",
+"f": "Why athletes treat sleep as part of their training"
+},
+{
+"d": 312,
+"lv": "advanced",
+"t": "Recovery days",
+"f": "Using rest and sleep to bounce back after hard effort"
+},
+{
+"d": 313,
+"lv": "advanced",
+"t": "Sleep and decision making",
+"f": "Why big choices are often clearer after a good night"
+},
+{
+"d": 314,
+"lv": "advanced",
+"t": "Sleep and focus at work",
+"f": "Protecting rest during demanding projects"
+},
+{
+"d": 315,
+"lv": "advanced",
+"t": "Sleep and emotional balance",
+"f": "How regular rest supports a steadier mood"
+},
+{
+"d": 316,
+"lv": "advanced",
+"t": "Sleep and social life",
+"f": "Why rested people often feel more open and connected"
+},
+{
+"d": 317,
+"lv": "advanced",
+"t": "Sleep and music practice",
+"f": "How rest helps musicians lock in what they practised"
+},
+{
+"d": 318,
+"lv": "advanced",
+"t": "Performance review",
+"f": "Reviewing memory, learning, sport and work links with sleep"
+},
+{
+"d": 319,
+"lv": "advanced",
+"t": "Big days and sleep",
+"f": "Preparing for interviews, exams, competitions or trips"
+},
+{
+"d": 320,
+"lv": "advanced",
+"t": "The night before a big day",
+"f": "Calm strategies when excitement or nerves keep you up"
+},
+{
+"d": 321,
+"lv": "advanced",
+"t": "Recovering after a big event",
+"f": "Getting back to normal sleep after an intense day"
+},
+{
+"d": 322,
+"lv": "advanced",
+"t": "Sleep during busy seasons",
+"f": "Keeping core habits when life gets hectic"
+},
+{
+"d": 323,
+"lv": "advanced",
+"t": "Minimum viable routine",
+"f": "The smallest set of habits you keep no matter what"
+},
+{
+"d": 324,
+"lv": "advanced",
+"t": "Sleep and long-term goals",
+"f": "How steady rest supports the goals you care about"
+},
+{
+"d": 325,
+"lv": "advanced",
+"t": "Advanced troubleshooting",
+"f": "Working through stubborn sleep issues step by step"
+},
+{
+"d": 326,
+"lv": "advanced",
+"t": "Recognising limits of self-help",
+"f": "Knowing when habits are not enough and a doctor should be consulted"
+},
+{
+"d": 327,
+"lv": "advanced",
+"t": "Supporting others' sleep",
+"f": "Kind ways to help family or housemates sleep better"
+},
+{
+"d": 328,
+"lv": "advanced",
+"t": "Creating a sleep-friendly home",
+"f": "Shared quiet hours, lighting and routines for everyone"
+},
+{
+"d": 329,
+"lv": "advanced",
+"t": "Sleep-friendly workplaces",
+"f": "Ideas like flexible hours and breaks that support rest"
+},
+{
+"d": 330,
+"lv": "advanced",
+"t": "Talking about sleep",
+"f": "Making sleep a normal, positive topic with friends"
+},
+{
+"d": 331,
+"lv": "advanced",
+"t": "Sleep-friendly gifts",
+"f": "Thoughtful presents like eye masks, books or cosy socks for loved ones"
+},
+{
+"d": 332,
+"lv": "advanced",
+"t": "Teaching a sleep habit",
+"f": "Explaining one technique clearly to someone else"
+},
+{
+"d": 333,
+"lv": "advanced",
+"t": "Myth-busting round two",
+"f": "Revisiting sleep myths with everything you know now"
+},
+{
+"d": 334,
+"lv": "advanced",
+"t": "Your sleep philosophy",
+"f": "Putting into words what good sleep means for you"
+},
+{
+"d": 335,
+"lv": "advanced",
+"t": "Third-quarter review",
+"f": "Looking back on experiments, history, cultures and performance"
+},
+{
+"d": 336,
+"lv": "advanced",
+"t": "Seasonal plan for the year",
+"f": "Planning your sleep habits for each season ahead"
+},
+{
+"d": 337,
+"lv": "advanced",
+"t": "Travel plan for the year",
+"f": "Preparing a jet lag and travel routine you can reuse"
+},
+{
+"d": 338,
+"lv": "advanced",
+"t": "Your sleep emergency kit",
+"f": "What to do after a run of bad nights to get back on track"
+},
+{
+"d": 339,
+"lv": "advanced",
+"t": "Re-reading your first diary",
+"f": "Comparing your very first sleep notes with today"
+},
+{
+"d": 340,
+"lv": "advanced",
+"t": "Strengths in your sleep habits",
+"f": "Listing the habits that now come naturally"
+},
+{
+"d": 341,
+"lv": "advanced",
+"t": "Next areas to grow",
+"f": "Choosing one or two habits to keep improving"
+},
+{
+"d": 342,
+"lv": "advanced",
+"t": "Designing your lifelong system",
+"f": "Combining bedroom, routines, schedule and mind tools into one plan"
+},
+{
+"d": 343,
+"lv": "advanced",
+"t": "Your personal sleep manual",
+"f": "Writing a short guide to how you sleep best"
+},
+{
+"d": 344,
+"lv": "advanced",
+"t": "Maintenance habits",
+"f": "The few daily actions that keep your sleep on track for years"
+},
+{
+"d": 345,
+"lv": "advanced",
+"t": "Checking in every month",
+"f": "A monthly ritual to review and adjust your sleep"
+},
+{
+"d": 346,
+"lv": "advanced",
+"t": "Adapting to life changes",
+"f": "Updating your system for new jobs, homes or family changes"
+},
+{
+"d": 347,
+"lv": "advanced",
+"t": "Flexible but steady",
+"f": "Balancing spontaneity and fun with a reliable rhythm"
+},
+{
+"d": 348,
+"lv": "advanced",
+"t": "Sleep and joy",
+"f": "Seeing rest as a source of energy for the things you love"
+},
+{
+"d": 349,
+"lv": "advanced",
+"t": "Inspiring others",
+"f": "Sharing your journey in a positive, non-preachy way"
+},
+{
+"d": 350,
+"lv": "advanced",
+"t": "Gratitude for rest",
+"f": "Appreciating the good nights and the progress behind them"
+},
+{
+"d": 351,
+"lv": "advanced",
+"t": "Final stretch planning",
+"f": "Choosing how to spend the last weeks of the path"
+},
+{
+"d": 352,
+"lv": "advanced",
+"t": "Your top ten sleep tips",
+"f": "Writing your personal top ten from the whole year"
+},
+{
+"d": 353,
+"lv": "advanced",
+"t": "Favourite lesson replay",
+"f": "Revisiting the lesson that helped you most and practising it again"
+},
+{
+"d": 354,
+"lv": "advanced",
+"t": "Bedroom check revisited",
+"f": "Doing a final audit of your sleep space"
+},
+{
+"d": 355,
+"lv": "advanced",
+"t": "Wind-down check revisited",
+"f": "Refreshing your evening routine for the months ahead"
+},
+{
+"d": 356,
+"lv": "advanced",
+"t": "Morning check revisited",
+"f": "Refreshing your morning routine for the months ahead"
+},
+{
+"d": 357,
+"lv": "advanced",
+"t": "Mind tools revisited",
+"f": "Reviewing your favourite techniques for calm nights"
+},
+{
+"d": 358,
+"lv": "advanced",
+"t": "Schedule check revisited",
+"f": "Confirming your ideal bedtime, wake time and nap rules"
+},
+{
+"d": 359,
+"lv": "advanced",
+"t": "Tech balance revisited",
+"f": "Setting your long-term rules for screens and devices"
+},
+{
+"d": 360,
+"lv": "advanced",
+"t": "Year in review: beginner",
+"f": "Looking back on the foundations you built"
+},
+{
+"d": 361,
+"lv": "advanced",
+"t": "Year in review: intermediate",
+"f": "Looking back on food, mind, schedules and travel"
+},
+{
+"d": 362,
+"lv": "advanced",
+"t": "Year in review: advanced",
+"f": "Looking back on experiments, cultures and performance"
+},
+{
+"d": 363,
+"lv": "advanced",
+"t": "Your sleep story",
+"f": "Telling the story of how your sleep changed this year"
+},
+{
+"d": 364,
+"lv": "advanced",
+"t": "Setting next year's intention",
+"f": "One kind, simple sleep intention for the year ahead"
+},
+{
+"d": 365,
+"lv": "advanced",
+"t": "Celebrating 365 days",
+"f": "Celebrating a full year of learning and caring for your sleep"
+}
+]
+}

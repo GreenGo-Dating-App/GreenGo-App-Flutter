@@ -1,0 +1,565 @@
+{
+ "topic": "practice_french",
+ "lessons": [
+  {
+   "d": 361,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Preparing a B2-style exam",
+     "g": "Get to know the four parts of a B2-style French exam and how to prepare for each.",
+     "p": [
+      "Listening and reading: answer questions on audio and articles. Read the questions first and look for synonyms, not identical words.",
+      "Writing: an argued text such as an opinion letter or article. Plan first, use connectors and keep time to reread.",
+      "Speaking: present and defend a point of view from a short document, then discuss it with the examiner."
+     ],
+     "q": "Which part of an exam would be easiest for you, and which would be the biggest challenge?",
+     "c": "Make a weekly French study plan in French with one task for each of the four skills."
+    },
+    "de": {
+     "t": "Vorbereitung auf eine Prüfung im B2-Stil",
+     "g": "Du lernst die vier Teile einer französischen Prüfung im B2-Stil kennen und wie du dich darauf vorbereitest.",
+     "p": [
+      "Hören und Lesen: Fragen zu Audios und Artikeln beantworten. Erst die Fragen lesen und nach Synonymen suchen, nicht nach gleichen Wörtern.",
+      "Schreiben: ein argumentativer Text wie ein Leserbrief oder Artikel. Erst planen, Konnektoren nutzen, Zeit zum Korrekturlesen lassen.",
+      "Sprechen: Anhand eines kurzen Dokuments einen Standpunkt vorstellen und verteidigen, dann mit dem Prüfer diskutieren."
+     ],
+     "q": "Welcher Prüfungsteil wäre für dich am leichtesten, und welcher die größte Herausforderung?",
+     "c": "Mach einen französischen Wochenlernplan auf Französisch mit einer Aufgabe für jede der vier Fertigkeiten."
+    },
+    "es": {
+     "t": "Preparar un examen tipo B2",
+     "g": "Conoce las cuatro partes de un examen de francés tipo B2 y cómo prepararte para cada una.",
+     "p": [
+      "Comprensión oral y escrita: responde a preguntas sobre audios y artículos. Lee antes las preguntas y busca sinónimos, no palabras idénticas.",
+      "Expresión escrita: un texto argumentativo como una carta de opinión o un artículo. Planifica, usa conectores y guarda tiempo para releer.",
+      "Expresión oral: presenta y defiende un punto de vista a partir de un documento breve y luego debate con el examinador."
+     ],
+     "q": "¿Qué parte del examen te resultaría más fácil y cuál sería el mayor reto?",
+     "c": "Haz un plan semanal de estudio en francés con una tarea para cada una de las cuatro destrezas."
+    },
+    "fr": {
+     "t": "Préparer un examen de type B2",
+     "g": "Connaître les quatre épreuves d'un examen de type B2 et savoir comment s'y préparer.",
+     "p": [
+      "Compréhension orale et écrite : des questions sur des audios et des articles. Lire d'abord les questions et chercher des synonymes.",
+      "Production écrite : un texte argumenté comme une lettre d'opinion ou un article. Faire un plan, utiliser des connecteurs, se relire.",
+      "Production orale : présenter et défendre un point de vue à partir d'un court document, puis en débattre avec l'examinateur."
+     ],
+     "q": "Quelle épreuve serait la plus facile pour toi, et laquelle serait le plus grand défi ?",
+     "c": "Fais un planning de révision hebdomadaire avec une tâche pour chacune des quatre compétences."
+    },
+    "it": {
+     "t": "Prepararsi a un esame tipo B2",
+     "g": "Conosci le quattro parti di un esame di francese tipo B2 e come prepararti a ciascuna.",
+     "p": [
+      "Ascolto e lettura: rispondi a domande su audio e articoli. Leggi prima le domande e cerca sinonimi, non parole identiche.",
+      "Scrittura: un testo argomentativo come una lettera d'opinione o un articolo. Pianifica, usa connettivi e tieni tempo per rileggere.",
+      "Orale: presenta e difendi un punto di vista partendo da un breve documento, poi discutine con l'esaminatore."
+     ],
+     "q": "Quale parte dell'esame sarebbe più facile per te, e quale la sfida più grande?",
+     "c": "Prepara un piano di studio settimanale in francese con un compito per ciascuna delle quattro abilità."
+    },
+    "pt": {
+     "t": "Preparar um exame tipo B2",
+     "g": "Conhece as quatro partes de um exame de francês tipo B2 e como te preparares para cada uma.",
+     "p": [
+      "Compreensão oral e escrita: responde a perguntas sobre áudios e artigos. Lê primeiro as perguntas e procura sinónimos, não palavras iguais.",
+      "Produção escrita: um texto argumentativo como uma carta de opinião ou um artigo. Planeia, usa conectores e guarda tempo para reler.",
+      "Produção oral: apresenta e defende um ponto de vista a partir de um documento curto e depois debate com o examinador."
+     ],
+     "q": "Que parte do exame seria mais fácil para ti, e qual seria o maior desafio?",
+     "c": "Faz um plano de estudo semanal em francês com uma tarefa para cada uma das quatro competências."
+    },
+    "pt_BR": {
+     "t": "Preparando um exame tipo B2",
+     "g": "Conheça as quatro partes de um exame de francês tipo B2 e como se preparar para cada uma.",
+     "p": [
+      "Compreensão oral e escrita: responda a perguntas sobre áudios e artigos. Leia antes as perguntas e procure sinônimos, não palavras iguais.",
+      "Produção escrita: um texto argumentativo como uma carta de opinião ou um artigo. Planeje, use conectores e reserve tempo para reler.",
+      "Produção oral: apresente e defenda um ponto de vista a partir de um documento curto e depois debata com o examinador."
+     ],
+     "q": "Qual parte do exame seria mais fácil para você, e qual seria o maior desafio?",
+     "c": "Faça um plano de estudo semanal em francês com uma tarefa para cada uma das quatro competências."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "une épreuve",
+      "ex": "L'épreuve écrite dure deux heures et demie."
+     },
+     {
+      "w": "la compréhension orale",
+      "ex": "Pour la compréhension orale, on écoute chaque document deux fois."
+     },
+     {
+      "w": "la production écrite",
+      "ex": "En production écrite, on rédige un texte argumenté."
+     },
+     {
+      "w": "l'examinateur",
+      "ex": "L'examinateur pose des questions après la présentation."
+     },
+     {
+      "w": "se relire",
+      "ex": "Garde dix minutes pour te relire."
+     },
+     {
+      "w": "réviser",
+      "ex": "Je révise un peu chaque jour au lieu de tout faire la veille."
+     }
+    ],
+    "gram": "Conseils avec l'impératif et il vaut mieux + infinitif : lis les questions d'abord ; il vaut mieux faire un plan avant d'écrire."
+   }
+  },
+  {
+   "d": 362,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Mock oral exam",
+     "g": "Present and defend a point of view in French for ten minutes, as in a real oral exam.",
+     "p": [
+      "Structure your talk: introduce the topic and your question, give two or three arguments with examples, then conclude.",
+      "Defend your view: Je maintiens que... / Je comprends votre point de vue, mais... / C'est justement pour cette raison que...",
+      "Stay calm: if you don't understand, ask: Pourriez-vous reformuler la question ? Breathe, smile and take your time."
+     ],
+     "q": "Ready for a mock exam? Topic: Faut-il apprendre une langue étrangère dès l'école primaire ? What is your position?",
+     "c": "Prepare a 10-minute talk in French on that topic: notes only, no full sentences, then present it to me."
+    },
+    "de": {
+     "t": "Probeprüfung mündlich",
+     "g": "Du stellst auf Französisch zehn Minuten lang einen Standpunkt vor und verteidigst ihn, wie in einer echten Prüfung.",
+     "p": [
+      "Gliedere den Vortrag: Thema und Fragestellung einführen, zwei, drei Argumente mit Beispielen, dann ein Fazit.",
+      "Standpunkt verteidigen: Je maintiens que... / Je comprends votre point de vue, mais... / C'est justement pour cette raison que...",
+      "Ruhig bleiben: Wenn du etwas nicht verstehst, frag: Pourriez-vous reformuler la question ? Atmen, lächeln, Zeit lassen."
+     ],
+     "q": "Bereit für eine Probeprüfung? Thema: Faut-il apprendre une langue étrangère dès l'école primaire ? Wie ist deine Position?",
+     "c": "Bereite einen zehnminütigen Vortrag auf Französisch zu diesem Thema vor: nur Stichpunkte, dann präsentiere ihn mir."
+    },
+    "es": {
+     "t": "Simulacro de examen oral",
+     "g": "Presenta y defiende un punto de vista en francés durante diez minutos, como en un examen real.",
+     "p": [
+      "Estructura tu intervención: presenta el tema y tu pregunta, da dos o tres argumentos con ejemplos y concluye.",
+      "Defiende tu postura: Je maintiens que... / Je comprends votre point de vue, mais... / C'est justement pour cette raison que...",
+      "Mantén la calma: si no entiendes, pide: Pourriez-vous reformuler la question ? Respira, sonríe y tómate tu tiempo."
+     ],
+     "q": "¿Listo para un simulacro? Tema: Faut-il apprendre une langue étrangère dès l'école primaire ? ¿Cuál es tu postura?",
+     "c": "Prepara una intervención de diez minutos en francés sobre ese tema: solo notas, sin frases completas, y preséntamela."
+    },
+    "fr": {
+     "t": "Examen oral blanc",
+     "g": "Présenter et défendre un point de vue pendant dix minutes, comme à un vrai examen oral.",
+     "p": [
+      "Structurer son exposé : présenter le thème et la problématique, deux ou trois arguments avec des exemples, puis conclure.",
+      "Défendre son avis : Je maintiens que... / Je comprends votre point de vue, mais... / C'est justement pour cette raison que...",
+      "Rester calme : si on ne comprend pas, on demande : Pourriez-vous reformuler la question ? Respirer, sourire, prendre son temps."
+     ],
+     "q": "Prêt pour un oral blanc ? Sujet : Faut-il apprendre une langue étrangère dès l'école primaire ? Quelle est ta position ?",
+     "c": "Prépare un exposé de dix minutes sur ce sujet : des notes seulement, pas de phrases rédigées, puis présente-le-moi."
+    },
+    "it": {
+     "t": "Simulazione d'esame orale",
+     "g": "Presenta e difendi un punto di vista in francese per dieci minuti, come in un vero esame orale.",
+     "p": [
+      "Struttura l'esposizione: presenta il tema e la domanda, dai due o tre argomenti con esempi, poi concludi.",
+      "Difendi la tua posizione: Je maintiens que... / Je comprends votre point de vue, mais... / C'est justement pour cette raison que...",
+      "Resta calmo: se non capisci, chiedi: Pourriez-vous reformuler la question ? Respira, sorridi e prenditi il tuo tempo."
+     ],
+     "q": "Pronto per una simulazione? Tema: Faut-il apprendre une langue étrangère dès l'école primaire ? Qual è la tua posizione?",
+     "c": "Prepara un'esposizione di dieci minuti in francese su questo tema: solo appunti, niente frasi complete, poi presentamela."
+    },
+    "pt": {
+     "t": "Simulação de exame oral",
+     "g": "Apresenta e defende um ponto de vista em francês durante dez minutos, como num exame oral real.",
+     "p": [
+      "Estrutura a apresentação: apresenta o tema e a questão, dá dois ou três argumentos com exemplos e conclui.",
+      "Defende a tua posição: Je maintiens que... / Je comprends votre point de vue, mais... / C'est justement pour cette raison que...",
+      "Mantém a calma: se não perceberes, pede: Pourriez-vous reformuler la question ? Respira, sorri e não te apresses."
+     ],
+     "q": "Pronto para uma simulação? Tema: Faut-il apprendre une langue étrangère dès l'école primaire ? Qual é a tua posição?",
+     "c": "Prepara uma apresentação de dez minutos em francês sobre esse tema: só notas, sem frases completas, e apresenta-ma."
+    },
+    "pt_BR": {
+     "t": "Simulado de prova oral",
+     "g": "Apresente e defenda um ponto de vista em francês por dez minutos, como numa prova oral de verdade.",
+     "p": [
+      "Estruture a fala: apresente o tema e a questão, dê dois ou três argumentos com exemplos e conclua.",
+      "Defenda sua posição: Je maintiens que... / Je comprends votre point de vue, mais... / C'est justement pour cette raison que...",
+      "Fique calmo: se não entender, peça: Pourriez-vous reformuler la question ? Respire, sorria e vá com calma."
+     ],
+     "q": "Pronto para um simulado? Tema: Faut-il apprendre une langue étrangère dès l'école primaire ? Qual é a sua posição?",
+     "c": "Prepare uma fala de dez minutos em francês sobre esse tema: só anotações, sem frases completas, e apresente para mim."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "un oral blanc",
+      "ex": "Nous avons fait un oral blanc avant le vrai examen."
+     },
+     {
+      "w": "je maintiens que",
+      "ex": "Je maintiens que cette mesure est utile."
+     },
+     {
+      "w": "c'est justement pour cette raison que",
+      "ex": "C'est justement pour cette raison que j'ai choisi ce sujet."
+     },
+     {
+      "w": "pourriez-vous reformuler",
+      "ex": "Pourriez-vous reformuler la question, s'il vous plaît ?"
+     },
+     {
+      "w": "défendre son point de vue",
+      "ex": "Il a défendu son point de vue avec calme."
+     },
+     {
+      "w": "un argument de poids",
+      "ex": "Le coût est un argument de poids."
+     }
+    ],
+    "gram": "Mise en relief avec c'est... que / c'est... qui : c'est justement pour cette raison que je propose cette solution."
+   }
+  },
+  {
+   "d": 363,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Your French journey",
+     "g": "Reflect on your year of French using past, present and future tenses.",
+     "p": [
+      "The past: Au début, je ne savais dire que bonjour. J'ai appris..., j'ai eu du mal à..., je me souviens du jour où...",
+      "The present: Maintenant, je suis capable de..., je comprends..., ce qui me plaît le plus, c'est...",
+      "The future: L'année prochaine, je lirai..., j'aimerais..., si je continue, je pourrai... All the tenses you learned in one story!"
+     ],
+     "q": "What was your biggest victory in French this year, and what do you want to achieve next?",
+     "c": "Write your French journey in three short paragraphs: au début, maintenant, à l'avenir."
+    },
+    "de": {
+     "t": "Deine Französischreise",
+     "g": "Du blickst mit Vergangenheit, Gegenwart und Zukunft auf dein Jahr Französisch zurück.",
+     "p": [
+      "Vergangenheit: Au début, je ne savais dire que bonjour. J'ai appris..., j'ai eu du mal à..., je me souviens du jour où...",
+      "Gegenwart: Maintenant, je suis capable de..., je comprends..., ce qui me plaît le plus, c'est...",
+      "Zukunft: L'année prochaine, je lirai..., j'aimerais..., si je continue, je pourrai... Alle gelernten Zeiten in einer Geschichte!"
+     ],
+     "q": "Was war dein größter Erfolg im Französischen dieses Jahr, und was willst du als Nächstes erreichen?",
+     "c": "Schreib deine Französischreise in drei kurzen Absätzen: au début, maintenant, à l'avenir."
+    },
+    "es": {
+     "t": "Tu viaje con el francés",
+     "g": "Reflexiona sobre tu año de francés usando pasado, presente y futuro.",
+     "p": [
+      "El pasado: Au début, je ne savais dire que bonjour. J'ai appris..., j'ai eu du mal à..., je me souviens du jour où...",
+      "El presente: Maintenant, je suis capable de..., je comprends..., ce qui me plaît le plus, c'est...",
+      "El futuro: L'année prochaine, je lirai..., j'aimerais..., si je continue, je pourrai... ¡Todos los tiempos aprendidos en una historia!"
+     ],
+     "q": "¿Cuál fue tu mayor logro en francés este año y qué quieres conseguir ahora?",
+     "c": "Escribe tu viaje con el francés en tres párrafos breves: au début, maintenant, à l'avenir."
+    },
+    "fr": {
+     "t": "Ton parcours en français",
+     "g": "Faire le bilan de ton année de français avec le passé, le présent et le futur.",
+     "p": [
+      "Le passé : Au début, je ne savais dire que bonjour. J'ai appris..., j'ai eu du mal à..., je me souviens du jour où...",
+      "Le présent : Maintenant, je suis capable de..., je comprends..., ce qui me plaît le plus, c'est...",
+      "Le futur : L'année prochaine, je lirai..., j'aimerais..., si je continue, je pourrai... Tous les temps appris dans un seul récit !"
+     ],
+     "q": "Quelle a été ta plus grande victoire en français cette année, et quel est ton prochain objectif ?",
+     "c": "Raconte ton parcours en trois courts paragraphes : au début, maintenant, à l'avenir."
+    },
+    "it": {
+     "t": "Il tuo viaggio nel francese",
+     "g": "Rifletti sul tuo anno di francese usando passato, presente e futuro.",
+     "p": [
+      "Il passato: Au début, je ne savais dire que bonjour. J'ai appris..., j'ai eu du mal à..., je me souviens du jour où...",
+      "Il presente: Maintenant, je suis capable de..., je comprends..., ce qui me plaît le plus, c'est...",
+      "Il futuro: L'année prochaine, je lirai..., j'aimerais..., si je continue, je pourrai... Tutti i tempi imparati in un solo racconto!"
+     ],
+     "q": "Qual è stata la tua più grande vittoria in francese quest'anno, e cosa vuoi raggiungere ora?",
+     "c": "Scrivi il tuo viaggio nel francese in tre brevi paragrafi: au début, maintenant, à l'avenir."
+    },
+    "pt": {
+     "t": "O teu percurso em francês",
+     "g": "Reflete sobre o teu ano de francês usando passado, presente e futuro.",
+     "p": [
+      "O passado: Au début, je ne savais dire que bonjour. J'ai appris..., j'ai eu du mal à..., je me souviens du jour où...",
+      "O presente: Maintenant, je suis capable de..., je comprends..., ce qui me plaît le plus, c'est...",
+      "O futuro: L'année prochaine, je lirai..., j'aimerais..., si je continue, je pourrai... Todos os tempos aprendidos numa só história!"
+     ],
+     "q": "Qual foi a tua maior vitória em francês este ano, e o que queres alcançar a seguir?",
+     "c": "Escreve o teu percurso em francês em três parágrafos curtos: au début, maintenant, à l'avenir."
+    },
+    "pt_BR": {
+     "t": "Sua jornada no francês",
+     "g": "Reflita sobre seu ano de francês usando passado, presente e futuro.",
+     "p": [
+      "O passado: Au début, je ne savais dire que bonjour. J'ai appris..., j'ai eu du mal à..., je me souviens du jour où...",
+      "O presente: Maintenant, je suis capable de..., je comprends..., ce qui me plaît le plus, c'est...",
+      "O futuro: L'année prochaine, je lirai..., j'aimerais..., si je continue, je pourrai... Todos os tempos aprendidos numa só história!"
+     ],
+     "q": "Qual foi sua maior vitória no francês este ano, e o que você quer conquistar agora?",
+     "c": "Escreva sua jornada no francês em três parágrafos curtos: au début, maintenant, à l'avenir."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "au début",
+      "ex": "Au début, j'avais peur de parler."
+     },
+     {
+      "w": "je me souviens du jour où",
+      "ex": "Je me souviens du jour où j'ai compris ma première chanson en français."
+     },
+     {
+      "w": "être capable de",
+      "ex": "Maintenant, je suis capable de suivre un film sans sous-titres."
+     },
+     {
+      "w": "progresser",
+      "ex": "J'ai beaucoup progressé grâce aux conversations."
+     },
+     {
+      "w": "un objectif",
+      "ex": "Mon prochain objectif est de lire un roman en français."
+     },
+     {
+      "w": "à l'avenir",
+      "ex": "À l'avenir, j'aimerais travailler en français."
+     }
+    ],
+    "gram": "Les trois époques : imparfait et passé composé pour le passé, présent pour aujourd'hui, futur simple et conditionnel pour demain."
+   }
+  },
+  {
+   "d": 364,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Keeping French alive",
+     "g": "Build habits with books, series, friends and routines to keep improving your French.",
+     "p": [
+      "Daily habits: 15 minutes a day beats 3 hours once a week. Switch your phone to French and think aloud in French.",
+      "Input: read novels or BD, watch French series with French subtitles, follow podcasts and francophone creators.",
+      "People: find a conversation partner, join a club or a language café, and keep chatting with your Buddy!"
+     ],
+     "q": "Which French habit will you keep after this year? Be specific: when, where and how long?",
+     "c": "Write your French habit plan with three resolutions using the future: Chaque matin, je..."
+    },
+    "de": {
+     "t": "Französisch lebendig halten",
+     "g": "Du baust Gewohnheiten mit Büchern, Serien, Freunden und Routinen auf, um dein Französisch weiter zu verbessern.",
+     "p": [
+      "Täglich: 15 Minuten am Tag sind besser als 3 Stunden einmal pro Woche. Stell dein Handy auf Französisch und denk laut auf Französisch.",
+      "Input: Romane oder BD lesen, französische Serien mit französischen Untertiteln schauen, Podcasts und frankophonen Creators folgen.",
+      "Menschen: Such dir einen Gesprächspartner, tritt einem Club oder Sprachcafé bei und plaudere weiter mit deinem Buddy!"
+     ],
+     "q": "Welche Französisch-Gewohnheit behältst du nach diesem Jahr? Sei konkret: wann, wo und wie lange?",
+     "c": "Schreib deinen Gewohnheitsplan auf Französisch mit drei Vorsätzen im Futur: Chaque matin, je..."
+    },
+    "es": {
+     "t": "Mantener vivo el francés",
+     "g": "Crea hábitos con libros, series, amigos y rutinas para seguir mejorando tu francés.",
+     "p": [
+      "Hábitos diarios: 15 minutos al día valen más que 3 horas una vez por semana. Pon el móvil en francés y piensa en voz alta en francés.",
+      "Exposición: lee novelas o BD, mira series francesas con subtítulos en francés, sigue pódcast y creadores francófonos.",
+      "Personas: busca un compañero de conversación, únete a un club o un café de idiomas, ¡y sigue charlando con tu Buddy!"
+     ],
+     "q": "¿Qué hábito de francés mantendrás después de este año? Sé concreto: ¿cuándo, dónde y cuánto tiempo?",
+     "c": "Escribe tu plan de hábitos en francés con tres propósitos en futuro: Chaque matin, je..."
+    },
+    "fr": {
+     "t": "Faire vivre son français",
+     "g": "Prendre des habitudes avec des livres, des séries, des amis et des routines pour continuer à progresser.",
+     "p": [
+      "Au quotidien : 15 minutes par jour valent mieux que 3 heures une fois par semaine. Mets ton téléphone en français, pense à voix haute.",
+      "S'exposer : lire des romans ou des BD, regarder des séries françaises sous-titrées en français, suivre des podcasts.",
+      "Les autres : trouver un partenaire de conversation, rejoindre un club ou un café des langues, et continuer à discuter avec ton Buddy !"
+     ],
+     "q": "Quelle habitude en français vas-tu garder après cette année ? Sois précis : quand, où et combien de temps ?",
+     "c": "Écris ton plan d'habitudes avec trois bonnes résolutions au futur : Chaque matin, je..."
+    },
+    "it": {
+     "t": "Tenere vivo il francese",
+     "g": "Crea abitudini con libri, serie, amici e routine per continuare a migliorare il tuo francese.",
+     "p": [
+      "Ogni giorno: 15 minuti al giorno valgono più di 3 ore una volta a settimana. Imposta il telefono in francese e pensa ad alta voce.",
+      "Input: leggi romanzi o BD, guarda serie francesi con sottotitoli in francese, segui podcast e creator francofoni.",
+      "Persone: trova un partner di conversazione, entra in un club o in un caffè linguistico, e continua a chiacchierare con il tuo Buddy!"
+     ],
+     "q": "Quale abitudine in francese manterrai dopo quest'anno? Sii concreto: quando, dove e per quanto?",
+     "c": "Scrivi il tuo piano di abitudini in francese con tre propositi al futuro: Chaque matin, je..."
+    },
+    "pt": {
+     "t": "Manter o francês vivo",
+     "g": "Cria hábitos com livros, séries, amigos e rotinas para continuares a melhorar o teu francês.",
+     "p": [
+      "Hábitos diários: 15 minutos por dia valem mais do que 3 horas uma vez por semana. Põe o telemóvel em francês e pensa em voz alta em francês.",
+      "Exposição: lê romances ou BD, vê séries francesas com legendas em francês, segue podcasts e criadores francófonos.",
+      "Pessoas: encontra um parceiro de conversa, junta-te a um clube ou café de línguas, e continua a conversar com o teu Buddy!"
+     ],
+     "q": "Que hábito de francês vais manter depois deste ano? Sê concreto: quando, onde e quanto tempo?",
+     "c": "Escreve o teu plano de hábitos em francês com três resoluções no futuro: Chaque matin, je..."
+    },
+    "pt_BR": {
+     "t": "Mantendo o francês vivo",
+     "g": "Crie hábitos com livros, séries, amigos e rotinas para continuar melhorando seu francês.",
+     "p": [
+      "Hábitos diários: 15 minutos por dia valem mais que 3 horas uma vez por semana. Coloque o celular em francês e pense em voz alta em francês.",
+      "Exposição: leia romances ou BD, assista a séries francesas com legendas em francês, siga podcasts e criadores francófonos.",
+      "Pessoas: encontre um parceiro de conversa, entre num clube ou café de idiomas, e continue conversando com seu Buddy!"
+     ],
+     "q": "Qual hábito de francês você vai manter depois deste ano? Seja concreto: quando, onde e por quanto tempo?",
+     "c": "Escreva seu plano de hábitos em francês com três resoluções no futuro: Chaque matin, je..."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "une habitude",
+      "ex": "Lire dix pages par jour est devenu une habitude."
+     },
+     {
+      "w": "une bonne résolution",
+      "ex": "Ma bonne résolution : parler français chaque jour."
+     },
+     {
+      "w": "les sous-titres",
+      "ex": "Je regarde les séries avec les sous-titres en français."
+     },
+     {
+      "w": "un partenaire de conversation",
+      "ex": "J'ai trouvé un partenaire de conversation à Montréal."
+     },
+     {
+      "w": "s'entraîner",
+      "ex": "Je m'entraîne à parler en cuisinant."
+     },
+     {
+      "w": "garder le contact",
+      "ex": "Je garde le contact avec mes amis francophones."
+     }
+    ],
+    "gram": "Futur simple pour les résolutions : je lirai, j'écouterai, je parlerai ; aller + infinitif pour un projet proche : je vais m'inscrire."
+   }
+  },
+  {
+   "d": 365,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Final review: B2 celebration",
+     "g": "Celebrate your year of French with a full conversation on any topic you love. Félicitations !",
+     "p": [
+      "One year, 365 lessons: from bonjour to essays, debates, idioms and poetry. You have come a very long way!",
+      "Today, just talk: choose any topic and use everything: tenses, connectors, idioms, nuance and humour.",
+      "Celebrate in French: Je suis fier / fière de moi ! / On a réussi ! / Chapeau ! And remember: petit à petit, l'oiseau fait son nid."
+     ],
+     "q": "Let's celebrate! Choose any topic you love and tell me about it in French. Where shall we start?",
+     "c": "Write a French thank-you message to yourself for this year, with one idiom and one wish for the future."
+    },
+    "de": {
+     "t": "Große Abschlusswiederholung: B2-Feier",
+     "g": "Feiere dein Jahr Französisch mit einem ausführlichen Gespräch über ein Thema, das du liebst. Félicitations !",
+     "p": [
+      "Ein Jahr, 365 Lektionen: von bonjour bis zu Aufsätzen, Debatten, Redewendungen und Poesie. Du hast einen weiten Weg zurückgelegt!",
+      "Heute einfach sprechen: Wähle ein Thema und nutze alles: Zeiten, Konnektoren, Redewendungen, Nuancen und Humor.",
+      "Auf Französisch feiern: Je suis fier / fière de moi ! / On a réussi ! / Chapeau ! Und denk daran: petit à petit, l'oiseau fait son nid."
+     ],
+     "q": "Lass uns feiern! Wähle ein Thema, das du liebst, und erzähl mir auf Französisch davon. Womit fangen wir an?",
+     "c": "Schreib dir selbst eine französische Dankesnachricht für dieses Jahr, mit einer Redewendung und einem Wunsch für die Zukunft."
+    },
+    "es": {
+     "t": "Repaso final: celebración B2",
+     "g": "Celebra tu año de francés con una conversación completa sobre el tema que más te guste. Félicitations !",
+     "p": [
+      "Un año, 365 lecciones: de bonjour a ensayos, debates, expresiones y poesía. ¡Has recorrido un camino enorme!",
+      "Hoy solo habla: elige cualquier tema y úsalo todo: tiempos, conectores, expresiones, matices y humor.",
+      "Celebra en francés: Je suis fier / fière de moi ! / On a réussi ! / Chapeau ! Y recuerda: petit à petit, l'oiseau fait son nid."
+     ],
+     "q": "¡Celebrémoslo! Elige un tema que te encante y háblame de él en francés. ¿Por dónde empezamos?",
+     "c": "Escríbete un mensaje de agradecimiento en francés por este año, con una expresión y un deseo para el futuro."
+    },
+    "fr": {
+     "t": "Bilan final : la fête du B2",
+     "g": "Fêter ton année de français avec une vraie conversation sur le sujet de ton choix. Félicitations !",
+     "p": [
+      "Une année, 365 leçons : de bonjour aux dissertations, aux débats, aux expressions et à la poésie. Quel chemin parcouru !",
+      "Aujourd'hui, on parle, c'est tout : choisis un sujet et utilise tout : les temps, les connecteurs, les expressions, la nuance, l'humour.",
+      "Fêter en français : Je suis fier / fière de moi ! / On a réussi ! / Chapeau ! Et n'oublie pas : petit à petit, l'oiseau fait son nid."
+     ],
+     "q": "Faisons la fête ! Choisis un sujet que tu adores et parle-m'en en français. Par quoi commençons-nous ?",
+     "c": "Écris-toi un message de remerciement pour cette année, avec une expression et un vœu pour l'avenir."
+    },
+    "it": {
+     "t": "Ripasso finale: festa del B2",
+     "g": "Festeggia il tuo anno di francese con una conversazione completa sul tema che preferisci. Félicitations !",
+     "p": [
+      "Un anno, 365 lezioni: da bonjour ai temi, ai dibattiti, ai modi di dire e alla poesia. Hai fatto tantissima strada!",
+      "Oggi parla e basta: scegli un argomento e usa tutto: tempi, connettivi, modi di dire, sfumature e umorismo.",
+      "Festeggia in francese: Je suis fier / fière de moi ! / On a réussi ! / Chapeau ! E ricorda: petit à petit, l'oiseau fait son nid."
+     ],
+     "q": "Festeggiamo! Scegli un argomento che ami e raccontamelo in francese. Da dove cominciamo?",
+     "c": "Scriviti un messaggio di ringraziamento in francese per quest'anno, con un modo di dire e un augurio per il futuro."
+    },
+    "pt": {
+     "t": "Revisão final: festa do B2",
+     "g": "Celebra o teu ano de francês com uma conversa completa sobre o tema de que mais gostas. Félicitations !",
+     "p": [
+      "Um ano, 365 lições: de bonjour a dissertações, debates, expressões e poesia. Percorreste um caminho enorme!",
+      "Hoje é só falar: escolhe um tema e usa tudo: tempos, conectores, expressões, nuances e humor.",
+      "Celebra em francês: Je suis fier / fière de moi ! / On a réussi ! / Chapeau ! E lembra-te: petit à petit, l'oiseau fait son nid."
+     ],
+     "q": "Vamos celebrar! Escolhe um tema de que gostes muito e fala-me dele em francês. Por onde começamos?",
+     "c": "Escreve a ti mesmo uma mensagem de agradecimento em francês por este ano, com uma expressão e um desejo para o futuro."
+    },
+    "pt_BR": {
+     "t": "Revisão final: festa do B2",
+     "g": "Comemore seu ano de francês com uma conversa completa sobre o tema que você mais ama. Félicitations !",
+     "p": [
+      "Um ano, 365 lições: de bonjour a redações, debates, expressões e poesia. Você percorreu um caminho enorme!",
+      "Hoje é só conversar: escolha um tema e use tudo: tempos, conectores, expressões, nuances e humor.",
+      "Comemore em francês: Je suis fier / fière de moi ! / On a réussi ! / Chapeau ! E lembre-se: petit à petit, l'oiseau fait son nid."
+     ],
+     "q": "Vamos comemorar! Escolha um tema que você ama e me conte sobre ele em francês. Por onde começamos?",
+     "c": "Escreva para si mesmo uma mensagem de agradecimento em francês por este ano, com uma expressão e um desejo para o futuro."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "félicitations",
+      "ex": "Félicitations pour cette belle année de travail !"
+     },
+     {
+      "w": "être fier de soi",
+      "ex": "Tu peux être fier de toi."
+     },
+     {
+      "w": "on a réussi",
+      "ex": "On a réussi : une année entière en français !"
+     },
+     {
+      "w": "chapeau",
+      "ex": "Chapeau ! Tu parles vraiment bien maintenant."
+     },
+     {
+      "w": "le chemin parcouru",
+      "ex": "Regarde tout le chemin parcouru depuis le premier jour."
+     },
+     {
+      "w": "fêter",
+      "ex": "Ce soir, on fête la fin de l'année avec un bon repas."
+     }
+    ],
+    "gram": "Exclamation avec quel et que : Quel chemin parcouru ! Que de progrès ! Qu'est-ce que je suis content(e) !"
+   }
+  }
+ ]
+}

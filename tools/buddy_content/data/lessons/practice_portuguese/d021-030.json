@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_portuguese",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Adjectives and agreement",
+     "g": "Place adjectives after the noun and match their gender and number.",
+     "p": [
+      "Adjectives usually follow the noun: uma casa pequena, um carro novo.",
+      "They agree: -o becomes -a for feminine (novo, nova) and everything adds -s in plural (novos, novas).",
+      "Adjectives in -e don't change for gender (grande, inteligente); -l becomes -is: fácil, fáceis."
+     ],
+     "q": "Can you describe your street with three adjectives that agree correctly?",
+     "c": "Describe your home in three short sentences, checking that every adjective agrees with its noun."
+    },
+    "de": {
+     "t": "Adjektive und Angleichung",
+     "g": "Du stellst Adjektive hinter das Nomen und passt Geschlecht und Zahl an.",
+     "p": [
+      "Adjektive stehen meist nach dem Nomen: uma casa pequena, um carro novo.",
+      "Sie passen sich an: -o wird weiblich -a (novo, nova), im Plural kommt -s dazu (novos, novas).",
+      "Adjektive auf -e ändern sich nicht nach Geschlecht (grande); -l wird zu -is: fácil, fáceis."
+     ],
+     "q": "Kannst du deine Straße mit drei richtig angeglichenen Adjektiven beschreiben?",
+     "c": "Beschreibe dein Zuhause in drei kurzen Sätzen und prüf, ob jedes Adjektiv passt."
+    },
+    "es": {
+     "t": "Adjetivos y concordancia",
+     "g": "Colocar los adjetivos detrás del nombre y concordarlos en género y número.",
+     "p": [
+      "Como en español, el adjetivo suele ir detrás: uma casa pequena, um carro novo.",
+      "Concuerda: -o pasa a -a en femenino (novo, nova) y añade -s en plural (novos, novas).",
+      "Los adjetivos en -e no cambian de género (grande); -l pasa a -is: fácil, fáceis."
+     ],
+     "q": "¿Puedes describir tu calle con tres adjetivos bien concordados?",
+     "c": "Describe tu casa en tres frases cortas comprobando la concordancia de cada adjetivo."
+    },
+    "fr": {
+     "t": "Adjectifs et accord",
+     "g": "Placer les adjectifs après le nom et les accorder en genre et en nombre.",
+     "p": [
+      "L'adjectif suit généralement le nom : uma casa pequena, um carro novo.",
+      "Il s'accorde : -o devient -a au féminin (novo, nova) et prend -s au pluriel (novos, novas).",
+      "Les adjectifs en -e ne changent pas de genre (grande) ; -l devient -is : fácil, fáceis."
+     ],
+     "q": "Peux-tu décrire ta rue avec trois adjectifs bien accordés ?",
+     "c": "Décris ton logement en trois phrases courtes en vérifiant l'accord de chaque adjectif."
+    },
+    "it": {
+     "t": "Aggettivi e concordanza",
+     "g": "Metti gli aggettivi dopo il nome e accordali in genere e numero.",
+     "p": [
+      "Come in italiano, l'aggettivo va di solito dopo il nome: uma casa pequena, um carro novo.",
+      "Si accorda: -o diventa -a al femminile (novo, nova) e prende -s al plurale (novos, novas).",
+      "Gli aggettivi in -e non cambiano genere (grande); -l diventa -is: fácil, fáceis."
+     ],
+     "q": "Riesci a descrivere la tua strada con tre aggettivi accordati bene?",
+     "c": "Descrivi casa tua in tre frasi brevi controllando l'accordo di ogni aggettivo."
+    },
+    "pt": {
+     "t": "Adjetivos e concordância",
+     "g": "Revê a posição e a concordância dos adjetivos, um ponto difícil para quem fala inglês.",
+     "p": [
+      "Normalmente o adjetivo vem depois do nome: um dia bonito, umas férias ótimas.",
+      "Antes do nome pode mudar o sentido: um grande homem não é o mesmo que um homem grande.",
+      "Os em -e não mudam de género (alegre), os em -l fazem -is (fáceis) e os em -ês fazem -esa."
+     ],
+     "q": "Que três adjetivos usarias para descrever a tua rua?",
+     "c": "Escreve três frases em que o mesmo adjetivo aparece no masculino, no feminino e no plural."
+    },
+    "pt_BR": {
+     "t": "Adjetivos e concordância",
+     "g": "Revise posição e concordância dos adjetivos e alguns adjetivos típicos de Portugal.",
+     "p": [
+      "A gramática é igual: o adjetivo vem depois e concorda, como em uma casa pequena.",
+      "Em Portugal ouve-se muito giro para bonito ou legal: Que giro! é muito comum.",
+      "Fixe também é uma gíria portuguesa para legal: O teu amigo é fixe."
+     ],
+     "q": "Qual adjetivo você mais usa para elogiar algo? Como seria em Portugal?",
+     "c": "Descreva três coisas de que você gosta usando giro ou fixe, como um português."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "bonito / bonita",
+      "ex": "Que praia bonita!"
+     },
+     {
+      "w": "grande",
+      "ex": "Lisboa é uma cidade grande."
+     },
+     {
+      "w": "pequeno / pequena",
+      "ex": "Tenho um apartamento pequeno."
+     },
+     {
+      "w": "novo / nova",
+      "ex": "A loja nova abre amanhã."
+     },
+     {
+      "w": "fácil / fáceis",
+      "ex": "Estes exercícios são fáceis."
+     },
+     {
+      "w": "inteligente",
+      "ex": "A tua irmã é muito inteligente."
+     }
+    ],
+    "gram": "O adjetivo vem normalmente depois do nome e concorda: uma casa pequena, dois livros novos, frases fáceis."
+   }
+  },
+  {
+   "d": 22,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Describing people",
+     "g": "Describe what people look like and what they are like.",
+     "p": [
+      "Use ser for build and character: É alto, é magra, é simpático, é divertida.",
+      "Use ter for hair and eyes: Tem cabelo castanho, tem olhos azuis. Usa óculos means wears glasses.",
+      "Always say something kind: simpático (nice, friendly) is the classic compliment in Portuguese."
+     ],
+     "q": "How would you describe your best friend in three sentences?",
+     "c": "Describe a famous person in Portuguese without saying the name, and see if someone can guess."
+    },
+    "de": {
+     "t": "Menschen beschreiben",
+     "g": "Du beschreibst, wie Menschen aussehen und wie sie sind.",
+     "p": [
+      "Ser für Statur und Charakter: É alto, é magra, é simpático, é divertida.",
+      "Ter für Haare und Augen: Tem cabelo castanho, tem olhos azuis. Usa óculos heißt trägt eine Brille.",
+      "Simpático (nett, freundlich) ist das klassische portugiesische Kompliment."
+     ],
+     "q": "Wie würdest du deine beste Freundin oder deinen besten Freund in drei Sätzen beschreiben?",
+     "c": "Beschreibe eine bekannte Person auf Portugiesisch, ohne den Namen zu sagen, und lass raten."
+    },
+    "es": {
+     "t": "Describir personas",
+     "g": "Describir cómo son las personas física y personalmente.",
+     "p": [
+      "Ser para el físico y el carácter: É alto, é magra, é simpático, é divertida.",
+      "Ter para pelo y ojos: Tem cabelo castanho, tem olhos azuis. Usa óculos significa lleva gafas.",
+      "Ojo: cabelo es pelo, y en Portugal rubio se dice louro; ruivo es pelirrojo."
+     ],
+     "q": "¿Cómo describirías a tu mejor amigo o amiga en tres frases?",
+     "c": "Describe en portugués a una persona famosa sin decir su nombre y que alguien adivine quién es."
+    },
+    "fr": {
+     "t": "Décrire des personnes",
+     "g": "Décrire l'apparence et le caractère des gens.",
+     "p": [
+      "Ser pour la silhouette et le caractère : É alto, é magra, é simpático, é divertida.",
+      "Ter pour les cheveux et les yeux : Tem cabelo castanho, tem olhos azuis. Usa óculos : porte des lunettes.",
+      "Simpático (gentil, sympa) est le compliment classique en portugais."
+     ],
+     "q": "Comment décrirais-tu ton meilleur ami ou ta meilleure amie en trois phrases ?",
+     "c": "Décris en portugais une personne célèbre sans dire son nom et fais deviner qui c'est."
+    },
+    "it": {
+     "t": "Descrivere le persone",
+     "g": "Descrivi l'aspetto e il carattere delle persone.",
+     "p": [
+      "Ser per la figura e il carattere: É alto, é magra, é simpático, é divertida.",
+      "Ter per capelli e occhi: Tem cabelo castanho, tem olhos azuis. Usa óculos significa porta gli occhiali.",
+      "Attenzione: cabelo è al singolare per tutti i capelli, e biondo in Portogallo si dice louro."
+     ],
+     "q": "Come descriveresti il tuo migliore amico o la tua migliore amiga in tre frasi?",
+     "c": "Descrivi in portoghese una persona famosa senza dirne il nome e fai indovinare chi è."
+    },
+    "pt": {
+     "t": "Descrever pessoas",
+     "g": "Revê como descrever pessoas e as palavras que mudam entre Portugal e o Brasil.",
+     "p": [
+      "Ser para a figura e o caráter (é alta, é simpática), ter para cabelo e olhos (tem olhos verdes).",
+      "Em Portugal diz-se louro e o bebé; no Brasil é mais comum loiro e o bebê.",
+      "Simpático é um elogio muito usado; em Portugal acrescenta-se muitas vezes porreiro, mais informal."
+     ],
+     "q": "Como descreverias a pessoa mais simpática que conheceste este mês?",
+     "c": "Descreve alguém da tua família em quatro frases, duas sobre a figura e duas sobre o caráter."
+    },
+    "pt_BR": {
+     "t": "Descrever pessoas",
+     "g": "Revise como descrever pessoas e as variantes usadas em Portugal.",
+     "p": [
+      "Em Portugal: louro (loiro), o bebé (bebê) e cabelo comprido, mais comum que cabelo longo.",
+      "Porreiro é uma gíria portuguesa para gente boa: O teu primo é porreiro!",
+      "Ser para a figura e o caráter, ter para cabelo e olhos: é igual nos dois países."
+     ],
+     "q": "Como você descreveria seu melhor amigo para alguém de Portugal?",
+     "c": "Descreva duas pessoas usando cabelo comprido, louro e porreiro."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "alto / alta",
+      "ex": "O meu pai é alto."
+     },
+     {
+      "w": "baixo / baixa",
+      "ex": "A Marta é baixa e morena."
+     },
+     {
+      "w": "o cabelo",
+      "ex": "Ela tem o cabelo comprido e louro."
+     },
+     {
+      "w": "os olhos",
+      "ex": "O bebé tem olhos azuis."
+     },
+     {
+      "w": "simpático / simpática",
+      "ex": "O teu vizinho é muito simpático."
+     },
+     {
+      "w": "usar óculos",
+      "ex": "O professor usa óculos."
+     }
+    ],
+    "gram": "Usa-se ser para a figura (é alto), ter para o cabelo e os olhos (tem olhos verdes) e usar para óculos ou barba."
+   }
+  },
+  {
+   "d": 23,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Days of the week",
+     "g": "Name the days of the week and say when you do things.",
+     "p": [
+      "Monday to Friday are numbered: segunda-feira (second), terça (third), quarta, quinta, sexta.",
+      "The weekend is sábado and domingo. Days are written in lowercase and feira is often dropped.",
+      "Na segunda means on Monday; in Portugal, ao sábado or às segundas means on Saturdays, every week."
+     ],
+     "q": "What is your favourite day of the week, and what do you usually do then?",
+     "c": "Say in Portuguese one thing you do on each day of the week, from segunda to domingo."
+    },
+    "de": {
+     "t": "Die Wochentage",
+     "g": "Du nennst die Wochentage und sagst, wann du etwas machst.",
+     "p": [
+      "Montag bis Freitag sind nummeriert: segunda-feira (zweiter), terça (dritter), quarta, quinta, sexta.",
+      "Am Wochenende: sábado und domingo. Man schreibt sie klein und lässt feira oft weg.",
+      "Na segunda heißt am Montag; in Portugal heißt ao sábado oder às segundas jeden Samstag bzw. montags."
+     ],
+     "q": "Was ist dein Lieblingswochentag und was machst du da meistens?",
+     "c": "Sag auf Portugiesisch für jeden Wochentag eine Sache, die du machst, von segunda bis domingo."
+    },
+    "es": {
+     "t": "Los días de la semana",
+     "g": "Decir los días de la semana y cuándo haces las cosas.",
+     "p": [
+      "De lunes a viernes van numerados: segunda-feira (segunda), terça, quarta, quinta, sexta.",
+      "El fin de semana es sábado y domingo. Se escriben en minúscula y feira suele omitirse.",
+      "Na segunda es el lunes; en Portugal, ao sábado o às segundas indica costumbre: los sábados."
+     ],
+     "q": "¿Cuál es tu día favorito de la semana y qué sueles hacer ese día?",
+     "c": "Di en portugués algo que haces cada día de la semana, de segunda a domingo."
+    },
+    "fr": {
+     "t": "Les jours de la semaine",
+     "g": "Nommer les jours de la semaine et dire quand tu fais les choses.",
+     "p": [
+      "Du lundi au vendredi, les jours sont numérotés : segunda-feira (deuxième), terça, quarta, quinta, sexta.",
+      "Le week-end : sábado et domingo. On les écrit en minuscule et on omet souvent feira.",
+      "Na segunda veut dire lundi (ce lundi) ; au Portugal, ao sábado ou às segundas signifie le samedi, chaque semaine."
+     ],
+     "q": "Quel est ton jour préféré de la semaine et que fais-tu ce jour-là ?",
+     "c": "Dis en portugais une chose que tu fais chaque jour de la semaine, de segunda à domingo."
+    },
+    "it": {
+     "t": "I giorni della settimana",
+     "g": "Dici i giorni della settimana e quando fai le cose.",
+     "p": [
+      "Da lunedì a venerdì sono numerati: segunda-feira (seconda), terça, quarta, quinta, sexta.",
+      "Il fine settimana è sábado e domingo. Si scrivono minuscoli e feira spesso si omette.",
+      "Na segunda significa lunedì; in Portogallo ao sábado o às segundas indica abitudine: il sabato."
+     ],
+     "q": "Qual è il tuo giorno preferito della settimana e cosa fai di solito?",
+     "c": "Di' in portoghese una cosa che fai in ogni giorno della settimana, da segunda a domingo."
+    },
+    "pt": {
+     "t": "Os dias da semana",
+     "g": "Revê os dias da semana e as preposições que mais confundem quem aprende.",
+     "p": [
+      "O português é das poucas línguas que numera os dias úteis: segunda, terça, quarta, quinta, sexta.",
+      "Em Portugal, ao sábado e às sextas indicam hábito; no sábado aponta para um sábado concreto.",
+      "No Brasil diz-se quase sempre no sábado ou aos sábados para hábitos."
+     ],
+     "q": "Qual é o teu dia preferido da semana e o que o torna especial?",
+     "c": "Escreve a tua semana ideal com uma atividade por dia, usando ao ou às para os hábitos."
+    },
+    "pt_BR": {
+     "t": "Os dias da semana",
+     "g": "Revise os dias da semana e a preposição ao, típica de Portugal.",
+     "p": [
+      "Os nomes são os mesmos nos dois países: segunda-feira a sexta-feira, sábado e domingo.",
+      "Para hábitos, em Portugal diz-se ao domingo almoço com a família, onde no Brasil se diz aos domingos.",
+      "Às segundas e às terças também é bem comum em Portugal para falar de rotina."
+     ],
+     "q": "Qual dia da semana você acha mais produtivo, e por quê?",
+     "c": "Fale três hábitos seus à portuguesa: Ao sábado..., Às segundas..., Ao domingo..."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "segunda-feira",
+      "ex": "Na segunda-feira começo o curso."
+     },
+     {
+      "w": "terça-feira",
+      "ex": "A reunião é na terça-feira."
+     },
+     {
+      "w": "quarta-feira",
+      "ex": "Quarta-feira vou ao ginásio."
+     },
+     {
+      "w": "sexta-feira",
+      "ex": "Sexta-feira à noite vamos jantar fora."
+     },
+     {
+      "w": "o sábado",
+      "ex": "Ao sábado durmo até tarde."
+     },
+     {
+      "w": "o domingo",
+      "ex": "No domingo almoço com a família."
+     }
+    ],
+    "gram": "Os dias escrevem-se com minúscula. Para hábitos, em Portugal diz-se ao sábado ou às segundas; para um dia concreto, no sábado."
+   }
+  },
+  {
+   "d": 24,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Months and seasons",
+     "g": "Name the months and seasons and say dates in Portuguese.",
+     "p": [
+      "Months are lowercase: janeiro, fevereiro, março, abril, maio, junho, julho, agosto, setembro, outubro, novembro, dezembro.",
+      "Seasons: a primavera, o verão, o outono, o inverno. Use em: em maio, no verão.",
+      "Dates: dia 5 de maio. Remember that in Brazil the seasons are reversed: summer is from December."
+     ],
+     "q": "When is your birthday, and what is your favourite season?",
+     "c": "Say today's date and the dates of three birthdays you know, in Portuguese."
+    },
+    "de": {
+     "t": "Monate und Jahreszeiten",
+     "g": "Du nennst Monate und Jahreszeiten und sagst Daten auf Portugiesisch.",
+     "p": [
+      "Monate klein geschrieben: janeiro, fevereiro, março, abril, maio, junho, julho, agosto, setembro, outubro, novembro, dezembro.",
+      "Jahreszeiten: a primavera, o verão, o outono, o inverno. Mit em: em maio, no verão.",
+      "Daten: dia 5 de maio. In Brasilien sind die Jahreszeiten umgekehrt: Sommer beginnt im Dezember."
+     ],
+     "q": "Wann hast du Geburtstag und welche Jahreszeit magst du am liebsten?",
+     "c": "Sag das heutige Datum und drei Geburtstage, die du kennst, auf Portugiesisch."
+    },
+    "es": {
+     "t": "Meses y estaciones",
+     "g": "Decir los meses, las estaciones y las fechas en portugués.",
+     "p": [
+      "Los meses se parecen mucho al español: janeiro, fevereiro, março, abril, maio, junho, julho...",
+      "Estaciones: a primavera, o verão, o outono, o inverno. Con em: em maio, no verão.",
+      "Fechas: dia 5 de maio. En Brasil las estaciones van al revés: el verano empieza en diciembre."
+     ],
+     "q": "¿Cuándo es tu cumpleaños y cuál es tu estación favorita?",
+     "c": "Di la fecha de hoy y tres cumpleaños que conozcas, en portugués."
+    },
+    "fr": {
+     "t": "Mois et saisons",
+     "g": "Nommer les mois, les saisons et dire une date en portugais.",
+     "p": [
+      "Les mois s'écrivent en minuscule : janeiro, fevereiro, março, abril, maio, junho, julho, agosto...",
+      "Saisons : a primavera, o verão, o outono, o inverno. Avec em : em maio, no verão.",
+      "Dates : dia 5 de maio. Au Brésil, les saisons sont inversées : l'été commence en décembre."
+     ],
+     "q": "Quand est ton anniversaire et quelle est ta saison préférée ?",
+     "c": "Dis la date d'aujourd'hui et trois anniversaires que tu connais, en portugais."
+    },
+    "it": {
+     "t": "Mesi e stagioni",
+     "g": "Dici mesi, stagioni e date in portoghese.",
+     "p": [
+      "I mesi si scrivono minuscoli: janeiro, fevereiro, março, abril, maio, junho, julho, agosto...",
+      "Stagioni: a primavera, o verão, o outono, o inverno. Con em: em maio, no verão.",
+      "Date: dia 5 de maio. In Brasile le stagioni sono invertite: l'estate comincia a dicembre."
+     ],
+     "q": "Quando è il tuo compleanno e qual è la tua stagione preferita?",
+     "c": "Di' la data di oggi e tre compleanni che conosci, in portoghese."
+    },
+    "pt": {
+     "t": "Meses e estações",
+     "g": "Revê meses, estações e datas, com atenção à minúscula e às preposições.",
+     "p": [
+      "Desde o Acordo Ortográfico, meses e estações escrevem-se com minúscula: janeiro, verão.",
+      "Em Portugal diz-se faço anos a 3 de março; no Brasil, faço aniversário em 3 de março.",
+      "Para um brasileiro, o Natal é no verão: as estações estão invertidas no hemisfério sul."
+     ],
+     "q": "Qual é o mês do ano de que mais gostas e porquê?",
+     "c": "Escreve as datas de anos de cinco pessoas importantes para ti, com a preposição a."
+    },
+    "pt_BR": {
+     "t": "Meses e estações",
+     "g": "Revise meses, estações e datas, e a expressão portuguesa fazer anos.",
+     "p": [
+      "Em Portugal, aniversário diz-se muitas vezes fazer anos: Amanhã faço anos!",
+      "As datas usam a: O concerto é a 10 de junho, onde no Brasil se diz em 10 de junho ou no dia 10.",
+      "Em Portugal o verão vai de junho a setembro, ao contrário do Brasil."
+     ],
+     "q": "Em que mês você faz anos, como diriam em Portugal?",
+     "c": "Diga em voz alta à portuguesa: Faço anos a..., com a sua data."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "janeiro",
+      "ex": "Em janeiro está frio."
+     },
+     {
+      "w": "agosto",
+      "ex": "Vou de férias em agosto."
+     },
+     {
+      "w": "a primavera",
+      "ex": "Na primavera há muitas flores."
+     },
+     {
+      "w": "o verão",
+      "ex": "No verão vamos à praia."
+     },
+     {
+      "w": "o outono",
+      "ex": "O outono em Lisboa é suave."
+     },
+     {
+      "w": "o inverno",
+      "ex": "No inverno chove muito no Norte."
+     }
+    ],
+    "gram": "Meses e estações escrevem-se com minúscula. As datas dizem-se assim: dia cinco de maio, a cinco de maio."
+   }
+  },
+  {
+   "d": 25,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "What time is it?",
+     "g": "Ask and tell the time in Portuguese.",
+     "p": [
+      "Ask Que horas são? Answer with é for one o'clock, noon and midnight: É uma hora, é meio-dia.",
+      "For all other hours use são: São duas, são três e meia, são nove e um quarto.",
+      "At what time: às oito. Portugal says cinco menos um quarto; Brazil says quinze para as cinco."
+     ],
+     "q": "What time do you usually get up, and what time do you go to bed?",
+     "c": "Each time you check the clock today, say the time aloud in Portuguese."
+    },
+    "de": {
+     "t": "Wie spät ist es?",
+     "g": "Du fragst nach der Uhrzeit und sagst sie auf Portugiesisch.",
+     "p": [
+      "Frag Que horas são? Mit é bei ein Uhr, Mittag und Mitternacht: É uma hora, é meio-dia.",
+      "Sonst mit são: São duas, são três e meia, são nove e um quarto.",
+      "Um acht: às oito. Portugal sagt cinco menos um quarto (Viertel vor fünf); Brasilien quinze para as cinco."
+     ],
+     "q": "Wann stehst du normalerweise auf und wann gehst du schlafen?",
+     "c": "Sag heute jedes Mal, wenn du auf die Uhr schaust, die Zeit laut auf Portugiesisch."
+    },
+    "es": {
+     "t": "¿Qué hora es?",
+     "g": "Preguntar y decir la hora en portugués.",
+     "p": [
+      "Pregunta Que horas são? Con é para la una, mediodía y medianoche: É uma hora, é meio-dia.",
+      "Para el resto usa são: São duas, são três e meia, são nove e um quarto.",
+      "A las ocho: às oito. Portugal dice cinco menos um quarto, como en español; Brasil, quinze para as cinco."
+     ],
+     "q": "¿A qué hora te levantas normalmente y a qué hora te acuestas?",
+     "c": "Cada vez que mires el reloj hoy, di la hora en voz alta en portugués."
+    },
+    "fr": {
+     "t": "Quelle heure est-il ?",
+     "g": "Demander et dire l'heure en portugais.",
+     "p": [
+      "Demande Que horas são? On dit é pour une heure, midi et minuit : É uma hora, é meio-dia.",
+      "Pour les autres heures, são : São duas, são três e meia, são nove e um quarto.",
+      "À huit heures : às oito. Le Portugal dit cinco menos um quarto ; le Brésil quinze para as cinco."
+     ],
+     "q": "À quelle heure te lèves-tu d'habitude, et à quelle heure te couches-tu ?",
+     "c": "Chaque fois que tu regardes l'heure aujourd'hui, dis-la à voix haute en portugais."
+    },
+    "it": {
+     "t": "Che ore sono?",
+     "g": "Chiedi e dici l'ora in portoghese.",
+     "p": [
+      "Chiedi Que horas são? Con é per l'una, mezzogiorno e mezzanotte: É uma hora, é meio-dia.",
+      "Per le altre ore usa são, come in italiano: São duas, são três e meia, são nove e um quarto.",
+      "Alle otto: às oito. Il Portogallo dice cinco menos um quarto; il Brasile quinze para as cinco."
+     ],
+     "q": "A che ora ti alzi di solito e a che ora vai a dormire?",
+     "c": "Ogni volta che guardi l'orologio oggi, di' l'ora ad alta voce in portoghese."
+    },
+    "pt": {
+     "t": "Que horas são?",
+     "g": "Revê como dizer as horas e as diferenças entre Portugal e o Brasil.",
+     "p": [
+      "É uma hora, é meio-dia, é meia-noite; para as restantes, são: são duas e um quarto.",
+      "Em Portugal: são cinco menos um quarto ou um quarto para as cinco; no Brasil: quinze para as cinco.",
+      "Em contextos oficiais usa-se as 24 horas: o comboio parte às dezassete e quarenta."
+     ],
+     "q": "A que horas te sentes com mais energia durante o dia?",
+     "c": "Diz em voz alta a hora de cinco momentos do teu dia, uma vez à portuguesa e outra à brasileira."
+    },
+    "pt_BR": {
+     "t": "Que horas são?",
+     "g": "Revise as horas e as formas típicas de Portugal.",
+     "p": [
+      "Em Portugal: são cinco menos um quarto ou um quarto para as cinco, em vez de quinze para as cinco.",
+      "Meio-dia e meia é igual nos dois países; e o seis nunca vira meia nas horas.",
+      "Em Portugal diz-se muito o comboio parte às... para os horários de trem."
+     ],
+     "q": "A que horas você costuma almoçar? Diga à portuguesa.",
+     "c": "Diga três horários do seu dia com menos um quarto, como em Portugal."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "que horas são?",
+      "ex": "Desculpe, que horas são?"
+     },
+     {
+      "w": "é uma hora",
+      "ex": "É uma hora em ponto."
+     },
+     {
+      "w": "são três e meia",
+      "ex": "São três e meia da tarde."
+     },
+     {
+      "w": "o meio-dia",
+      "ex": "Almoçamos ao meio-dia."
+     },
+     {
+      "w": "a meia-noite",
+      "ex": "A festa acaba à meia-noite."
+     },
+     {
+      "w": "um quarto",
+      "ex": "São nove e um quarto."
+     }
+    ],
+    "gram": "Diz-se é uma hora, é meio-dia, é meia-noite, mas são duas, são três e meia. A que horas? Às oito."
+   }
+  },
+  {
+   "d": 26,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Regular -ar verbs",
+     "g": "Conjugate regular -ar verbs like falar, morar and trabalhar in the present.",
+     "p": [
+      "Take off -ar and add: -o, -as, -a, -amos, -am. Falar: falo, falas, fala, falamos, falam.",
+      "Most Portuguese verbs end in -ar, so this one pattern unlocks hundreds of verbs.",
+      "Subject pronouns are often dropped because the ending shows who: Moro em Lisboa."
+     ],
+     "q": "Where do you live and work or study? Answer with moro, trabalho or estudo.",
+     "c": "Write five sentences about your life with -ar verbs: falo, moro, trabalho, estudo, janto."
+    },
+    "de": {
+     "t": "Regelmäßige Verben auf -ar",
+     "g": "Du konjugierst regelmäßige -ar-Verben wie falar, morar und trabalhar im Präsens.",
+     "p": [
+      "-ar weg und -o, -as, -a, -amos, -am dran. Falar: falo, falas, fala, falamos, falam.",
+      "Die meisten Verben enden auf -ar, also öffnet dieses Muster Hunderte Verben.",
+      "Personalpronomen fallen oft weg, weil die Endung zeigt, wer: Moro em Lisboa."
+     ],
+     "q": "Wo wohnst du und wo arbeitest oder studierst du? Antworte mit moro, trabalho oder estudo.",
+     "c": "Schreib fünf Sätze über dein Leben mit -ar-Verben: falo, moro, trabalho, estudo, janto."
+    },
+    "es": {
+     "t": "Verbos regulares en -ar",
+     "g": "Conjugar verbos regulares en -ar como falar, morar y trabajar en presente.",
+     "p": [
+      "Quita -ar y añade -o, -as, -a, -amos, -am. Falar: falo, falas, fala, falamos, falam.",
+      "Es casi igual que en español (hablo, hablas...), pero la forma ellos acaba en -am.",
+      "Los pronombres se omiten a menudo porque la terminación indica la persona: Moro em Lisboa."
+     ],
+     "q": "¿Dónde vives y dónde trabajas o estudias? Responde con moro, trabalho o estudo.",
+     "c": "Escribe cinco frases sobre tu vida con verbos en -ar: falo, moro, trabalho, estudo, janto."
+    },
+    "fr": {
+     "t": "Verbes réguliers en -ar",
+     "g": "Conjuguer les verbes réguliers en -ar comme falar, morar et trabalhar au présent.",
+     "p": [
+      "On enlève -ar et on ajoute -o, -as, -a, -amos, -am. Falar : falo, falas, fala, falamos, falam.",
+      "La plupart des verbes portugais finissent en -ar : ce modèle en débloque des centaines.",
+      "On omet souvent le pronom, car la terminaison indique la personne : Moro em Lisboa."
+     ],
+     "q": "Où habites-tu, et où travailles-tu ou étudies-tu ? Réponds avec moro, trabalho ou estudo.",
+     "c": "Écris cinq phrases sur ta vie avec des verbes en -ar : falo, moro, trabalho, estudo, janto."
+    },
+    "it": {
+     "t": "Verbi regolari in -ar",
+     "g": "Coniughi i verbi regolari in -ar come falar, morar e trabalhar al presente.",
+     "p": [
+      "Togli -ar e aggiungi -o, -as, -a, -amos, -am. Falar: falo, falas, fala, falamos, falam.",
+      "Come i verbi italiani in -are: parlo, parli... con terminazioni molto simili.",
+      "Il pronome si omette spesso perché la desinenza indica la persona: Moro em Lisboa."
+     ],
+     "q": "Dove abiti e dove lavori o studi? Rispondi con moro, trabalho o estudo.",
+     "c": "Scrivi cinque frasi sulla tua vita con verbi in -ar: falo, moro, trabalho, estudo, janto."
+    },
+    "pt": {
+     "t": "Verbos regulares em -ar",
+     "g": "Revê o presente dos verbos em -ar e um detalhe ortográfico muito português.",
+     "p": [
+      "Falo, falas, fala, falamos, falam: o modelo que serve para a maioria dos verbos da língua.",
+      "Em Portugal distingue-se falamos (presente) de falámos (passado); no Brasil escreve-se falamos nos dois.",
+      "Para estrangeiros, o mais difícil é ouvir a terminação: em Lisboa, falas e fala soam muito parecidos."
+     ],
+     "q": "Que verbo em -ar usas mais no teu dia a dia?",
+     "c": "Escreve cinco frases no presente com verbos em -ar sobre a tua rotina e sublinha as terminações."
+    },
+    "pt_BR": {
+     "t": "Verbos regulares em -ar",
+     "g": "Revise o presente dos verbos em -ar, incluindo a forma tu e um acento português.",
+     "p": [
+      "Em Portugal a forma tu é viva: tu falas, tu moras, tu trabalhas.",
+      "Lá, falámos com acento é o passado e falamos sem acento é o presente; no Brasil escreve-se igual.",
+      "Morar e viver são usados nos dois países: Moro em Lisboa, vivo no Porto."
+     ],
+     "q": "Onde você mora e há quanto tempo? Responda com moro... há...",
+     "c": "Escreva cinco perguntas com tu e verbos em -ar: Tu falas inglês? Onde moras?"
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "falar",
+      "ex": "Falo português e inglês."
+     },
+     {
+      "w": "morar",
+      "ex": "Moro em Lisboa há dois anos."
+     },
+     {
+      "w": "trabalhar",
+      "ex": "Trabalhas aos fins de semana?"
+     },
+     {
+      "w": "estudar",
+      "ex": "Estudamos à noite."
+     },
+     {
+      "w": "gostar",
+      "ex": "Gosto muito desta música."
+     },
+     {
+      "w": "jantar",
+      "ex": "Eles jantam às oito."
+     }
+    ],
+    "gram": "Verbos em -ar no presente: falo, falas, fala, falamos, falam. Tira-se -ar e junta-se a terminação."
+   }
+  },
+  {
+   "d": 27,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Regular -er verbs",
+     "g": "Conjugate regular -er verbs like comer, beber and viver in the present.",
+     "p": [
+      "Take off -er and add: -o, -es, -e, -emos, -em. Comer: como, comes, come, comemos, comem.",
+      "Useful -er verbs: beber (drink), viver (live), aprender (learn), escrever (write), vender (sell).",
+      "Ler (read) is slightly irregular: leio, lês, lê, lemos, leem. Learn it apart."
+     ],
+     "q": "What do you usually eat and drink for breakfast? Use como and bebo.",
+     "c": "Tell someone, or yourself, what you eat, drink, read and learn on a normal day, using -er verbs."
+    },
+    "de": {
+     "t": "Regelmäßige Verben auf -er",
+     "g": "Du konjugierst regelmäßige -er-Verben wie comer, beber und viver im Präsens.",
+     "p": [
+      "-er weg und -o, -es, -e, -emos, -em dran. Comer: como, comes, come, comemos, comem.",
+      "Nützlich: beber (trinken), viver (leben), aprender (lernen), escrever (schreiben), vender (verkaufen).",
+      "Ler (lesen) ist leicht unregelmäßig: leio, lês, lê, lemos, leem. Lern es extra."
+     ],
+     "q": "Was isst und trinkst du meistens zum Frühstück? Benutze como und bebo.",
+     "c": "Erzähl, was du an einem normalen Tag isst, trinkst, liest und lernst, mit -er-Verben."
+    },
+    "es": {
+     "t": "Verbos regulares en -er",
+     "g": "Conjugar verbos regulares en -er como comer, beber y vivir en presente.",
+     "p": [
+      "Quita -er y añade -o, -es, -e, -emos, -em. Comer: como, comes, come, comemos, comem.",
+      "Igual que en español salvo la forma ellos: comen se dice comem, con una m nasal.",
+      "Ler (leer) es algo irregular: leio, lês, lê, lemos, leem. Apréndelo aparte."
+     ],
+     "q": "¿Qué sueles comer y beber en el desayuno? Usa como y bebo.",
+     "c": "Cuenta qué comes, bebes, lees y aprendes en un día normal usando verbos en -er."
+    },
+    "fr": {
+     "t": "Verbes réguliers en -er",
+     "g": "Conjuguer les verbes réguliers en -er comme comer, beber et viver au présent.",
+     "p": [
+      "On enlève -er et on ajoute -o, -es, -e, -emos, -em. Comer : como, comes, come, comemos, comem.",
+      "Verbes utiles : beber (boire), viver (vivre), aprender (apprendre), escrever (écrire), vender (vendre).",
+      "Ler (lire) est un peu irrégulier : leio, lês, lê, lemos, leem. Apprends-le à part."
+     ],
+     "q": "Que manges-tu et que bois-tu d'habitude au petit-déjeuner ? Utilise como et bebo.",
+     "c": "Raconte ce que tu manges, bois, lis et apprends un jour normal, avec des verbes en -er."
+    },
+    "it": {
+     "t": "Verbi regolari in -er",
+     "g": "Coniughi i verbi regolari in -er come comer, beber e viver al presente.",
+     "p": [
+      "Togli -er e aggiungi -o, -es, -e, -emos, -em. Comer: como, comes, come, comemos, comem.",
+      "Verbi utili: beber (bere), viver (vivere), aprender (imparare), escrever (scrivere), vender.",
+      "Ler (leggere) è un po' irregolare: leio, lês, lê, lemos, leem. Imparalo a parte."
+     ],
+     "q": "Cosa mangi e bevi di solito a colazione? Usa como e bebo.",
+     "c": "Racconta cosa mangi, bevi, leggi e impari in una giornata normale, con verbi in -er."
+    },
+    "pt": {
+     "t": "Verbos regulares em -er",
+     "g": "Revê o presente dos verbos em -er e o pequeno grupo irregular de ler e crer.",
+     "p": [
+      "Como, comes, come, comemos, comem: o mesmo esquema serve para beber, viver, aprender e escrever.",
+      "Ler faz leio, lês, lê, lemos, leem; desde o Acordo Ortográfico já não se escreve lêem.",
+      "Beber um copo é a forma portuguesa de convidar alguém para uma bebida: Vamos beber um copo?"
+     ],
+     "q": "O que estás a aprender neste momento, além de coisas no trabalho?",
+     "c": "Escreve cinco frases com verbos em -er sobre o que fazes ao fim de semana."
+    },
+    "pt_BR": {
+     "t": "Verbos regulares em -er",
+     "g": "Revise o presente dos verbos em -er, com a forma tu usada em Portugal.",
+     "p": [
+      "Tu comes, tu bebes, tu vives: em Portugal são as perguntas normais entre amigos.",
+      "Beber um copo é a forma portuguesa de dizer tomar uma bebida com amigos.",
+      "Leem já se escreve sem acento nos dois países: eles leem muito."
+     ],
+     "q": "O que você costuma beber quando sai com amigos?",
+     "c": "Convide alguém, mesmo de mentira, à portuguesa: Vamos beber um copo?"
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "comer",
+      "ex": "Comemos peixe ao domingo."
+     },
+     {
+      "w": "beber",
+      "ex": "Bebes café ou chá?"
+     },
+     {
+      "w": "viver",
+      "ex": "Vivo perto do rio."
+     },
+     {
+      "w": "aprender",
+      "ex": "Aprendo português todos os dias."
+     },
+     {
+      "w": "escrever",
+      "ex": "Ela escreve muitas mensagens."
+     },
+     {
+      "w": "ler",
+      "ex": "Leio o jornal de manhã."
+     }
+    ],
+    "gram": "Verbos em -er no presente: como, comes, come, comemos, comem. Ler é irregular: leio, lês, lê, lemos, leem."
+   }
+  },
+  {
+   "d": 28,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Regular -ir verbs",
+     "g": "Conjugate regular -ir verbs like partir, abrir and decidir in the present.",
+     "p": [
+      "Take off -ir and add: -o, -es, -e, -imos, -em. Partir: parto, partes, parte, partimos, partem.",
+      "They are almost like -er verbs; only nós is different: comemos but partimos.",
+      "Fun fact: in Portugal partir also means to break: parti o copo. In Brazil they say quebrar."
+     ],
+     "q": "What time does your favourite shop or café open? Answer with abre às...",
+     "c": "Write four sentences with -ir verbs: when the shop opens, when you leave, what you decide and share."
+    },
+    "de": {
+     "t": "Regelmäßige Verben auf -ir",
+     "g": "Du konjugierst regelmäßige -ir-Verben wie partir, abrir und decidir im Präsens.",
+     "p": [
+      "-ir weg und -o, -es, -e, -imos, -em dran. Partir: parto, partes, parte, partimos, partem.",
+      "Fast wie die -er-Verben; nur nós ist anders: comemos, aber partimos.",
+      "Lustig: In Portugal heißt partir auch zerbrechen: parti o copo. In Brasilien sagt man quebrar."
+     ],
+     "q": "Wann öffnet dein Lieblingsladen oder -café? Antworte mit abre às...",
+     "c": "Schreib vier Sätze mit -ir-Verben: wann der Laden öffnet, wann du gehst, was du entscheidest."
+    },
+    "es": {
+     "t": "Verbos regulares en -ir",
+     "g": "Conjugar verbos regulares en -ir como partir, abrir y decidir en presente.",
+     "p": [
+      "Quita -ir y añade -o, -es, -e, -imos, -em. Partir: parto, partes, parte, partimos, partem.",
+      "Son casi como los verbos en -er; solo cambia nós: comemos pero partimos.",
+      "Curiosidad: en Portugal partir también significa romper: parti o copo. En Brasil se dice quebrar."
+     ],
+     "q": "¿A qué hora abre tu tienda o cafetería favorita? Responde con abre às...",
+     "c": "Escribe cuatro frases con verbos en -ir: cuándo abre la tienda, cuándo sales, qué decides."
+    },
+    "fr": {
+     "t": "Verbes réguliers en -ir",
+     "g": "Conjuguer les verbes réguliers en -ir comme partir, abrir et decidir au présent.",
+     "p": [
+      "On enlève -ir et on ajoute -o, -es, -e, -imos, -em. Partir : parto, partes, parte, partimos, partem.",
+      "Presque comme les verbes en -er ; seul nós change : comemos mais partimos.",
+      "Amusant : au Portugal, partir veut aussi dire casser : parti o copo. Au Brésil, on dit quebrar."
+     ],
+     "q": "À quelle heure ouvre ta boutique ou ton café préféré ? Réponds avec abre às...",
+     "c": "Écris quatre phrases avec des verbes en -ir : quand la boutique ouvre, quand tu pars, ce que tu décides."
+    },
+    "it": {
+     "t": "Verbi regolari in -ir",
+     "g": "Coniughi i verbi regolari in -ir come partir, abrir e decidir al presente.",
+     "p": [
+      "Togli -ir e aggiungi -o, -es, -e, -imos, -em. Partir: parto, partes, parte, partimos, partem.",
+      "Sono quasi come i verbi in -er; cambia solo nós: comemos ma partimos.",
+      "Curiosità: in Portogallo partir significa anche rompere: parti o copo. In Brasile si dice quebrar."
+     ],
+     "q": "A che ora apre il tuo negozio o bar preferito? Rispondi con abre às...",
+     "c": "Scrivi quattro frasi con verbi in -ir: quando apre il negozio, quando parti, cosa decidi."
+    },
+    "pt": {
+     "t": "Verbos regulares em -ir",
+     "g": "Revê o presente dos verbos em -ir e um falso amigo entre Portugal e o Brasil.",
+     "p": [
+      "Parto, partes, parte, partimos, partem: só o nós distingue estes verbos dos verbos em -er.",
+      "Em Portugal, partir é também quebrar: parti um prato. Um brasileiro pode pensar que o prato foi viajar!",
+      "Assistir a (uma aula, um jogo) pede a preposição a na norma; na fala muitos dizem assistir o jogo."
+     ],
+     "q": "Qual foi a última decisão importante que tomaste?",
+     "c": "Escreve três frases com partir no sentido de ir embora e três no sentido de quebrar."
+    },
+    "pt_BR": {
+     "t": "Verbos regulares em -ir",
+     "g": "Revise o presente dos verbos em -ir e um uso surpreendente de partir em Portugal.",
+     "p": [
+      "Em Portugal, partir significa também quebrar: Parti o telemóvel! quer dizer quebrei o celular.",
+      "O telemóvel é o celular em Portugal, e o ecrã é a tela.",
+      "A conjugação é igual nos dois países: parto, partes, parte, partimos, partem."
+     ],
+     "q": "Qual é a última coisa que você quebrou? Conte como um português contaria.",
+     "c": "Escreva três frases com partir no sentido português de quebrar."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "partir",
+      "ex": "O comboio parte às nove."
+     },
+     {
+      "w": "abrir",
+      "ex": "A loja abre às dez."
+     },
+     {
+      "w": "decidir",
+      "ex": "Decidimos amanhã, está bem?"
+     },
+     {
+      "w": "dividir",
+      "ex": "Vamos dividir a conta?"
+     },
+     {
+      "w": "assistir",
+      "ex": "Assisto à aula de manhã."
+     },
+     {
+      "w": "partir (quebrar)",
+      "ex": "Cuidado, não partas o copo!"
+     }
+    ],
+    "gram": "Verbos em -ir no presente: parto, partes, parte, partimos, partem. Só nós muda em relação aos verbos em -er."
+   }
+  },
+  {
+   "d": 29,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Asking questions",
+     "g": "Use the main question words to ask simple questions.",
+     "p": [
+      "O que (what), quem (who), onde (where), quando (when), como (how), porquê (why).",
+      "In Portugal people often add é que: O que é que fazes? Onde é que moras? It sounds very natural.",
+      "Porque means because, and porquê means why when it stands alone: Porquê? Porque sim!"
+     ],
+     "q": "Which question would you ask first to get to know someone new?",
+     "c": "Write six questions for a new friend, one with each question word."
+    },
+    "de": {
+     "t": "Fragen stellen",
+     "g": "Du nutzt die wichtigsten Fragewörter für einfache Fragen.",
+     "p": [
+      "O que (was), quem (wer), onde (wo), quando (wann), como (wie), porquê (warum).",
+      "In Portugal fügt man oft é que ein: O que é que fazes? Onde é que moras? Das klingt sehr natürlich.",
+      "Porque heißt weil, porquê allein heißt warum: Porquê? Porque sim!"
+     ],
+     "q": "Welche Frage würdest du zuerst stellen, um jemanden kennenzulernen?",
+     "c": "Schreib sechs Fragen für eine neue Bekanntschaft, mit jedem Fragewort eine."
+    },
+    "es": {
+     "t": "Hacer preguntas",
+     "g": "Usar las principales palabras interrogativas para hacer preguntas sencillas.",
+     "p": [
+      "O que (qué), quem (quién), onde (dónde), quando (cuándo), como (cómo), porquê (por qué).",
+      "En Portugal se añade mucho é que: O que é que fazes? Onde é que moras? Suena muy natural.",
+      "Porque es porque y porquê, sola, es por qué: Porquê? Porque sim!"
+     ],
+     "q": "¿Qué pregunta harías primero para conocer a alguien nuevo?",
+     "c": "Escribe seis preguntas para un nuevo amigo, una con cada palabra interrogativa."
+    },
+    "fr": {
+     "t": "Poser des questions",
+     "g": "Utiliser les principaux mots interrogatifs pour poser des questions simples.",
+     "p": [
+      "O que (quoi), quem (qui), onde (où), quando (quand), como (comment), porquê (pourquoi).",
+      "Au Portugal, on ajoute souvent é que, comme « est-ce que » : O que é que fazes? Onde é que moras?",
+      "Porque veut dire parce que et porquê, seul, veut dire pourquoi : Porquê? Porque sim!"
+     ],
+     "q": "Quelle question poserais-tu en premier pour faire connaissance ?",
+     "c": "Écris six questions pour un nouvel ami, une avec chaque mot interrogatif."
+    },
+    "it": {
+     "t": "Fare domande",
+     "g": "Usi le principali parole interrogative per fare domande semplici.",
+     "p": [
+      "O que (che cosa), quem (chi), onde (dove), quando, como (come), porquê (perché).",
+      "In Portogallo si aggiunge spesso é que: O que é que fazes? Onde é que moras? Suona molto naturale.",
+      "Porque significa perché nelle risposte; porquê da solo è la domanda: Porquê? Porque sim!"
+     ],
+     "q": "Quale domanda faresti per prima per conoscere qualcuno?",
+     "c": "Scrivi sei domande per un nuovo amico, una con ogni parola interrogativa."
+    },
+    "pt": {
+     "t": "Fazer perguntas",
+     "g": "Revê as palavras interrogativas e a construção com é que, tão portuguesa.",
+     "p": [
+      "O que, quem, onde, quando, como e porquê: com é que soam mais naturais em Portugal.",
+      "Em Portugal escreve-se porque nas perguntas (Porque vens?) e porquê no fim: Vens porquê?",
+      "No Brasil distingue-se por que, por quê, porque e porquê, o que confunde muita gente."
+     ],
+     "q": "Qual é a pergunta que mais gostas que te façam?",
+     "c": "Grava ou escreve cinco perguntas com é que e repara em como soam mais naturais."
+    },
+    "pt_BR": {
+     "t": "Fazer perguntas",
+     "g": "Revise as palavras interrogativas e a estrutura é que, muito comum em Portugal.",
+     "p": [
+      "Em Portugal: O que é que fazes? Onde é que moras? soa mais natural do que a pergunta direta.",
+      "Por que, em Portugal, escreve-se porque nas perguntas: Porque não vens?",
+      "No fim da frase, usa-se o quê e porquê com acento, igual ao Brasil: Fazes o quê?"
+     ],
+     "q": "Qual pergunta você faria a um português para começar uma conversa?",
+     "c": "Escreva cinco perguntas com é que, como um português faria."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "o que",
+      "ex": "O que fazes amanhã?"
+     },
+     {
+      "w": "quem",
+      "ex": "Quem é aquela senhora?"
+     },
+     {
+      "w": "onde",
+      "ex": "Onde moras?"
+     },
+     {
+      "w": "quando",
+      "ex": "Quando começa o filme?"
+     },
+     {
+      "w": "como",
+      "ex": "Como vais para o trabalho?"
+     },
+     {
+      "w": "porquê",
+      "ex": "Porquê? Porque está a chover."
+     }
+    ],
+    "gram": "Em Portugal usa-se muito é que nas perguntas: O que é que fazes? Onde é que moras? Porque é que não vens?"
+   }
+  },
+  {
+   "d": 30,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Review: your first month",
+     "g": "Bring together everything from your first month in a short self-introduction.",
+     "p": [
+      "Greet, introduce yourself and say where you are from: Olá, chamo-me..., sou de...",
+      "Talk about your family and age with ter, and describe people with ser and adjectives.",
+      "Tell the time and your routine with -ar, -er and -ir verbs. You have learned a lot!"
+     ],
+     "q": "Can you introduce yourself in Portuguese in five sentences, as if meeting me for the first time?",
+     "c": "Record or write a 30-second self-introduction in Portuguese: name, origin, family, age and routine."
+    },
+    "de": {
+     "t": "Wiederholung: dein erster Monat",
+     "g": "Du bringst alles aus dem ersten Monat in einer kurzen Selbstvorstellung zusammen.",
+     "p": [
+      "Grüßen, dich vorstellen, Herkunft nennen: Olá, chamo-me..., sou de...",
+      "Familie und Alter mit ter, Menschen beschreiben mit ser und Adjektiven.",
+      "Uhrzeit und Alltag mit -ar-, -er- und -ir-Verben. Du hast schon viel gelernt!"
+     ],
+     "q": "Kannst du dich in fünf Sätzen auf Portugiesisch vorstellen, als würden wir uns gerade kennenlernen?",
+     "c": "Nimm eine 30-Sekunden-Vorstellung auf oder schreib sie: Name, Herkunft, Familie, Alter, Alltag."
+    },
+    "es": {
+     "t": "Repaso: tu primer mes",
+     "g": "Reunir todo lo aprendido en el primer mes en una breve presentación.",
+     "p": [
+      "Saluda, preséntate y di de dónde eres: Olá, chamo-me..., sou de...",
+      "Habla de tu familia y edad con ter, y describe a personas con ser y adjetivos.",
+      "Di la hora y tu rutina con verbos en -ar, -er e -ir. ¡Ya sabes muchísimo!"
+     ],
+     "q": "¿Puedes presentarte en portugués en cinco frases, como si nos conociéramos ahora?",
+     "c": "Graba o escribe una presentación de 30 segundos: nombre, origen, familia, edad y rutina."
+    },
+    "fr": {
+     "t": "Révision : ton premier mois",
+     "g": "Réunir tout ce que tu as appris ce mois-ci dans une courte présentation.",
+     "p": [
+      "Salue, présente-toi et dis d'où tu viens : Olá, chamo-me..., sou de...",
+      "Parle de ta famille et de ton âge avec ter, décris des gens avec ser et des adjectifs.",
+      "Dis l'heure et ta routine avec des verbes en -ar, -er et -ir. Tu as déjà beaucoup appris !"
+     ],
+     "q": "Peux-tu te présenter en portugais en cinq phrases, comme si on se rencontrait ?",
+     "c": "Enregistre ou écris une présentation de 30 secondes : prénom, origine, famille, âge et routine."
+    },
+    "it": {
+     "t": "Ripasso: il tuo primo mese",
+     "g": "Metti insieme tutto il primo mese in una breve presentazione.",
+     "p": [
+      "Saluta, presentati e di' da dove vieni: Olá, chamo-me..., sou de...",
+      "Parla della tua famiglia e dell'età con ter, e descrivi le persone con ser e aggettivi.",
+      "Di' l'ora e la tua routine con verbi in -ar, -er e -ir. Hai già imparato tantissimo!"
+     ],
+     "q": "Riesci a presentarti in portoghese in cinque frasi, come se ci conoscessimo adesso?",
+     "c": "Registra o scrivi una presentazione di 30 secondi: nome, origine, famiglia, età e routine."
+    },
+    "pt": {
+     "t": "Revisão: o primeiro mês",
+     "g": "Junta o que reviste neste mês numa apresentação curta e natural.",
+     "p": [
+      "Cumprimentos, apresentações e tratamento: tu, você ou o senhor, conforme a pessoa.",
+      "Família, idade, descrições com ser e estar e as horas, com as diferenças entre Portugal e o Brasil.",
+      "Verbos regulares no presente, artigos antes de nomes e perguntas com é que."
+     ],
+     "q": "Se tivesses de te apresentar em trinta segundos, o que dirias?",
+     "c": "Escreve uma apresentação tua de cinco frases e verifica artigos, concordâncias e terminações."
+    },
+    "pt_BR": {
+     "t": "Revisão: o primeiro mês",
+     "g": "Junte o que você revisou neste mês numa apresentação à portuguesa.",
+     "p": [
+      "Olá, chamo-me..., sou de..., tenho ... anos: a ordem e as formas típicas de Portugal.",
+      "Tu com amigos, o senhor com desconhecidos, artigo antes de nomes e possessivos.",
+      "Vocabulário português: o comboio, o telemóvel, giro, fixe, fazer anos."
+     ],
+     "q": "Como você se apresentaria a um grupo de portugueses numa festa?",
+     "c": "Grave ou escreva uma apresentação de 30 segundos com pelo menos três formas de Portugal."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "olá, tudo bem?",
+      "ex": "Olá, tudo bem? Chamo-me Rita."
+     },
+     {
+      "w": "tenho ... anos",
+      "ex": "Tenho trinta e dois anos."
+     },
+     {
+      "w": "a minha família",
+      "ex": "A minha família é pequena."
+     },
+     {
+      "w": "são ... horas",
+      "ex": "São seis e meia."
+     },
+     {
+      "w": "moro em",
+      "ex": "Moro em Faro, no Algarve."
+     },
+     {
+      "w": "até amanhã",
+      "ex": "Obrigada e até amanhã!"
+     }
+    ],
+    "gram": "Revisão: ser e estar, ter, artigos, possessivos, números, horas e verbos regulares em -ar, -er e -ir no presente."
+   }
+  }
+ ]
+}

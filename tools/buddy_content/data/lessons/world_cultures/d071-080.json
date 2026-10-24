@@ -1,0 +1,835 @@
+{
+ "topic": "world_cultures",
+ "lessons": [
+  {
+   "d": 71,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "India's regional foods",
+     "g": "Taste your way across India, from the south to the north.",
+     "p": [
+      "In the south, meals often feature dosa, a thin crispy rice and lentil pancake, served with sambar and coconut chutney.",
+      "In the north, wheat breads like naan and roti go with rich, creamy dishes such as dal makhani and paneer curries.",
+      "A thali is a round plate with many small bowls, letting you taste sweet, salty, sour and spicy flavours in one meal."
+     ],
+     "q": "Which Indian dish have you tried, or which would you like to try first?",
+     "c": "Find one Indian recipe today that uses lentils and read through how it is made."
+    },
+    "de": {
+     "t": "Indiens regionale Küchen",
+     "g": "Iss dich durch Indien, vom Süden bis in den Norden.",
+     "p": [
+      "Im Süden gibt es oft Dosa, einen dünnen, knusprigen Pfannkuchen aus Reis und Linsen, mit Sambar und Kokos-Chutney.",
+      "Im Norden passen Weizenbrote wie Naan und Roti zu reichhaltigen, cremigen Gerichten wie Dal Makhani und Paneer-Currys.",
+      "Ein Thali ist ein runder Teller mit vielen kleinen Schalen, auf dem man süß, salzig, sauer und scharf in einem Essen probiert."
+     ],
+     "q": "Welches indische Gericht hast du schon probiert, oder welches möchtest du zuerst kosten?",
+     "c": "Suche dir heute ein indisches Rezept mit Linsen und lies nach, wie es zubereitet wird."
+    },
+    "es": {
+     "t": "Las cocinas regionales de la India",
+     "g": "Recorre la India a través de su comida, del sur al norte.",
+     "p": [
+      "En el sur abunda el dosa, una crep fina y crujiente de arroz y lentejas, servida con sambar y chutney de coco.",
+      "En el norte, panes de trigo como el naan y el roti acompañan platos ricos y cremosos como el dal makhani o el curry de paneer.",
+      "Un thali es una bandeja redonda con muchos cuencos pequeños para probar sabores dulces, salados, ácidos y picantes en una comida."
+     ],
+     "q": "¿Qué plato indio has probado o cuál te gustaría probar primero?",
+     "c": "Busca hoy una receta india con lentejas y lee cómo se prepara."
+    },
+    "fr": {
+     "t": "Les cuisines régionales de l'Inde",
+     "g": "Parcours l'Inde par ses saveurs, du sud au nord.",
+     "p": [
+      "Au sud, on mange souvent la dosa, une fine crêpe croustillante de riz et de lentilles, servie avec sambar et chutney de coco.",
+      "Au nord, des pains de blé comme le naan et le roti accompagnent des plats riches et crémeux, comme le dal makhani ou le paneer.",
+      "Un thali est un plateau rond garni de petits bols pour goûter le sucré, le salé, l'acide et l'épicé en un seul repas."
+     ],
+     "q": "Quel plat indien as-tu déjà goûté, ou lequel aimerais-tu essayer en premier ?",
+     "c": "Trouve aujourd'hui une recette indienne aux lentilles et lis comment elle se prépare."
+    },
+    "it": {
+     "t": "Le cucine regionali dell'India",
+     "g": "Attraversa l'India assaggiandola, dal sud al nord.",
+     "p": [
+      "Al sud si mangia spesso la dosa, una crêpe sottile e croccante di riso e lenticchie, servita con sambar e chutney al cocco.",
+      "Al nord pani di grano come naan e roti accompagnano piatti ricchi e cremosi come il dal makhani e i curry di paneer.",
+      "Il thali è un vassoio rotondo con tante ciotoline per assaggiare dolce, salato, acido e piccante in un solo pasto."
+     ],
+     "q": "Quale piatto indiano hai già provato, o quale vorresti assaggiare per primo?",
+     "c": "Cerca oggi una ricetta indiana con le lenticchie e leggi come si prepara."
+    },
+    "pt": {
+     "t": "As cozinhas regionais da Índia",
+     "g": "Percorre a Índia pelos sabores, do sul ao norte.",
+     "p": [
+      "No sul come-se muito dosa, uma panqueca fina e estaladiça de arroz e lentilhas, servida com sambar e chutney de coco.",
+      "No norte, pães de trigo como o naan e o roti acompanham pratos ricos e cremosos como o dal makhani e o caril de paneer.",
+      "Um thali é um tabuleiro redondo com muitas taças pequenas para provar doce, salgado, ácido e picante numa só refeição."
+     ],
+     "q": "Que prato indiano já provaste, ou qual gostavas de provar primeiro?",
+     "c": "Procura hoje uma receita indiana com lentilhas e lê como se prepara."
+    },
+    "pt_BR": {
+     "t": "As cozinhas regionais da Índia",
+     "g": "Percorra a Índia pelos sabores, do sul ao norte.",
+     "p": [
+      "No sul é comum o dosa, uma panqueca fina e crocante de arroz e lentilha, servida com sambar e chutney de coco.",
+      "No norte, pães de trigo como o naan e o roti acompanham pratos ricos e cremosos como o dal makhani e o curry de paneer.",
+      "Um thali é uma bandeja redonda com várias tigelinhas para provar doce, salgado, azedo e picante numa só refeição."
+     ],
+     "q": "Que prato indiano você já provou, ou qual gostaria de provar primeiro?",
+     "c": "Procure hoje uma receita indiana com lentilha e leia como ela é preparada."
+    }
+   }
+  },
+  {
+   "d": 72,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "A tour of the Middle East",
+     "g": "Discover the region's warm hospitality, coffee culture and ancient cities.",
+     "p": [
+      "Guests are often welcomed with small cups of coffee flavoured with cardamom, served with dates.",
+      "Family is at the centre of social life, and weekend meals can bring several generations around one table.",
+      "The region has some of the oldest cities in the world, like Damascus and Byblos, and wonders such as Petra in Jordan."
+     ],
+     "q": "What does a warm welcome look like in your home or culture?",
+     "c": "Offer someone a drink or a small snack today the way a generous host would."
+    },
+    "de": {
+     "t": "Rundreise durch den Nahen Osten",
+     "g": "Entdecke die herzliche Gastfreundschaft, die Kaffeekultur und die alten Städte der Region.",
+     "p": [
+      "Gäste werden oft mit kleinen Tassen Kaffee mit Kardamom begrüßt, dazu gibt es Datteln.",
+      "Die Familie steht im Mittelpunkt des sozialen Lebens, und am Wochenende sitzen oft mehrere Generationen an einem Tisch.",
+      "Die Region hat einige der ältesten Städte der Welt, wie Damaskus und Byblos, und Wunder wie Petra in Jordanien."
+     ],
+     "q": "Wie sieht ein herzlicher Empfang bei dir zu Hause oder in deiner Kultur aus?",
+     "c": "Biete heute jemandem ein Getränk oder einen kleinen Snack an, wie es ein großzügiger Gastgeber tun würde."
+    },
+    "es": {
+     "t": "Un recorrido por Oriente Medio",
+     "g": "Descubre la cálida hospitalidad, la cultura del café y las ciudades antiguas de la región.",
+     "p": [
+      "A los invitados se les suele recibir con tacitas de café con cardamomo, servidas con dátiles.",
+      "La familia está en el centro de la vida social, y las comidas del fin de semana reúnen a varias generaciones en una mesa.",
+      "La región tiene algunas de las ciudades más antiguas del mundo, como Damasco y Biblos, y maravillas como Petra en Jordania."
+     ],
+     "q": "¿Cómo es una bienvenida cálida en tu casa o en tu cultura?",
+     "c": "Ofrece hoy a alguien una bebida o un pequeño tentempié como lo haría un anfitrión generoso."
+    },
+    "fr": {
+     "t": "Tour du Moyen-Orient",
+     "g": "Découvre l'hospitalité chaleureuse, la culture du café et les villes anciennes de la région.",
+     "p": [
+      "On accueille souvent les invités avec de petites tasses de café parfumé à la cardamome, servies avec des dattes.",
+      "La famille est au cœur de la vie sociale, et les repas du week-end réunissent parfois plusieurs générations autour d'une table.",
+      "La région abrite certaines des plus vieilles villes du monde, comme Damas et Byblos, et des merveilles comme Pétra en Jordanie."
+     ],
+     "q": "À quoi ressemble un accueil chaleureux chez toi ou dans ta culture ?",
+     "c": "Offre aujourd'hui une boisson ou une petite collation à quelqu'un, comme le ferait un hôte généreux."
+    },
+    "it": {
+     "t": "Un giro nel Medio Oriente",
+     "g": "Scopri l'ospitalità calorosa, la cultura del caffè e le città antiche della regione.",
+     "p": [
+      "Gli ospiti vengono spesso accolti con tazzine di caffè al cardamomo, servite con i datteri.",
+      "La famiglia è al centro della vita sociale, e i pranzi del fine settimana riuniscono spesso più generazioni a un solo tavolo.",
+      "La regione ha alcune delle città più antiche del mondo, come Damasco e Biblo, e meraviglie come Petra in Giordania."
+     ],
+     "q": "Com'è un'accoglienza calorosa a casa tua o nella tua cultura?",
+     "c": "Offri oggi a qualcuno una bevanda o uno spuntino, come farebbe un padrone di casa generoso."
+    },
+    "pt": {
+     "t": "Uma volta pelo Médio Oriente",
+     "g": "Descobre a hospitalidade calorosa, a cultura do café e as cidades antigas da região.",
+     "p": [
+      "Os convidados são muitas vezes recebidos com chávenas pequenas de café com cardamomo, servidas com tâmaras.",
+      "A família está no centro da vida social, e as refeições de fim de semana juntam várias gerações à mesma mesa.",
+      "A região tem algumas das cidades mais antigas do mundo, como Damasco e Biblos, e maravilhas como Petra, na Jordânia."
+     ],
+     "q": "Como é uma receção calorosa em tua casa ou na tua cultura?",
+     "c": "Oferece hoje a alguém uma bebida ou um pequeno petisco, como faria um anfitrião generoso."
+    },
+    "pt_BR": {
+     "t": "Um passeio pelo Oriente Médio",
+     "g": "Descubra a hospitalidade calorosa, a cultura do café e as cidades antigas da região.",
+     "p": [
+      "Os convidados costumam ser recebidos com xicrinhas de café com cardamomo, servidas com tâmaras.",
+      "A família está no centro da vida social, e as refeições de fim de semana reúnem várias gerações na mesma mesa.",
+      "A região tem algumas das cidades mais antigas do mundo, como Damasco e Biblos, e maravilhas como Petra, na Jordânia."
+     ],
+     "q": "Como é uma recepção calorosa na sua casa ou na sua cultura?",
+     "c": "Ofereça hoje a alguém uma bebida ou um petisco, como faria um anfitrião generoso."
+    }
+   }
+  },
+  {
+   "d": 73,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Everyday life in Turkey",
+     "g": "Explore daily life in Turkey, a country that spans two continents.",
+     "p": [
+      "Tea is served all day in small tulip-shaped glasses, at home, at work and even in shops while you browse.",
+      "A Turkish breakfast is a feast of cheeses, olives, tomatoes, cucumbers, eggs, honey, jams and fresh bread.",
+      "Istanbul sits on both sides of the Bosphorus strait, so you can cross from Europe to Asia by ferry in minutes."
+     ],
+     "q": "Would you enjoy a long, shared breakfast like a Turkish kahvaltı? What would be on your table?",
+     "c": "Prepare a breakfast plate today with a few small items to share, Turkish style."
+    },
+    "de": {
+     "t": "Alltag in der Türkei",
+     "g": "Erkunde den Alltag in der Türkei, einem Land auf zwei Kontinenten.",
+     "p": [
+      "Tee wird den ganzen Tag in kleinen, tulpenförmigen Gläsern serviert, zu Hause, bei der Arbeit und sogar beim Stöbern im Laden.",
+      "Ein türkisches Frühstück ist ein Festmahl aus Käse, Oliven, Tomaten, Gurken, Eiern, Honig, Marmelade und frischem Brot.",
+      "Istanbul liegt auf beiden Seiten des Bosporus, sodass man mit der Fähre in wenigen Minuten von Europa nach Asien fährt."
+     ],
+     "q": "Würde dir ein langes, gemeinsames Frühstück wie das türkische Kahvaltı gefallen? Was stünde auf deinem Tisch?",
+     "c": "Stell dir heute einen Frühstücksteller mit ein paar kleinen Dingen zum Teilen zusammen, auf türkische Art."
+    },
+    "es": {
+     "t": "La vida diaria en Turquía",
+     "g": "Explora la vida diaria en Turquía, un país entre dos continentes.",
+     "p": [
+      "El té se sirve todo el día en vasitos con forma de tulipán, en casa, en el trabajo e incluso en las tiendas mientras miras.",
+      "El desayuno turco es un festín de quesos, aceitunas, tomates, pepinos, huevos, miel, mermeladas y pan recién hecho.",
+      "Estambul está a ambos lados del estrecho del Bósforo, así que en ferri se cruza de Europa a Asia en minutos."
+     ],
+     "q": "¿Te gustaría un desayuno largo y compartido como el kahvaltı turco? ¿Qué pondrías en tu mesa?",
+     "c": "Prepara hoy un plato de desayuno con varias cositas para compartir, al estilo turco."
+    },
+    "fr": {
+     "t": "La vie quotidienne en Turquie",
+     "g": "Explore la vie quotidienne en Turquie, un pays à cheval sur deux continents.",
+     "p": [
+      "Le thé se sert toute la journée dans de petits verres en forme de tulipe, à la maison, au travail et même en boutique.",
+      "Le petit-déjeuner turc est un festin de fromages, olives, tomates, concombres, œufs, miel, confitures et pain frais.",
+      "Istanbul s'étend des deux côtés du Bosphore : en ferry, on passe d'Europe en Asie en quelques minutes."
+     ],
+     "q": "Aimerais-tu un long petit-déjeuner partagé comme le kahvaltı turc ? Que mettrais-tu sur ta table ?",
+     "c": "Prépare aujourd'hui une assiette de petit-déjeuner avec quelques petites choses à partager, à la turque."
+    },
+    "it": {
+     "t": "La vita quotidiana in Turchia",
+     "g": "Esplora la vita quotidiana in Turchia, un paese a cavallo di due continenti.",
+     "p": [
+      "Il tè si serve tutto il giorno in bicchierini a forma di tulipano, a casa, al lavoro e persino nei negozi mentre curiosi.",
+      "La colazione turca è un banchetto di formaggi, olive, pomodori, cetrioli, uova, miele, marmellate e pane fresco.",
+      "Istanbul si trova su entrambe le sponde del Bosforo, quindi in traghetto si passa dall'Europa all'Asia in pochi minuti."
+     ],
+     "q": "Ti piacerebbe una colazione lunga e condivisa come il kahvaltı turco? Cosa metteresti in tavola?",
+     "c": "Prepara oggi un piatto per la colazione con qualche piccola cosa da condividere, alla turca."
+    },
+    "pt": {
+     "t": "O dia a dia na Turquia",
+     "g": "Explora o dia a dia na Turquia, um país entre dois continentes.",
+     "p": [
+      "O chá serve-se todo o dia em copinhos em forma de tulipa, em casa, no trabalho e até nas lojas enquanto se vê.",
+      "O pequeno-almoço turco é um banquete de queijos, azeitonas, tomate, pepino, ovos, mel, compotas e pão fresco.",
+      "Istambul fica dos dois lados do estreito do Bósforo, por isso de ferry passa-se da Europa para a Ásia em minutos."
+     ],
+     "q": "Gostavas de um pequeno-almoço longo e partilhado como o kahvaltı turco? O que poria na tua mesa?",
+     "c": "Prepara hoje um prato de pequeno-almoço com várias coisinhas para partilhar, à turca."
+    },
+    "pt_BR": {
+     "t": "O dia a dia na Turquia",
+     "g": "Explore o dia a dia na Turquia, um país entre dois continentes.",
+     "p": [
+      "O chá é servido o dia todo em copinhos em forma de tulipa, em casa, no trabalho e até nas lojas enquanto você olha.",
+      "O café da manhã turco é um banquete de queijos, azeitonas, tomate, pepino, ovos, mel, geleias e pão fresquinho.",
+      "Istambul fica dos dois lados do estreito de Bósforo, então de balsa você vai da Europa para a Ásia em minutos."
+     ],
+     "q": "Você curtiria um café da manhã longo e compartilhado como o kahvaltı turco? O que teria na sua mesa?",
+     "c": "Monte hoje um prato de café da manhã com várias coisinhas para compartilhar, ao estilo turco."
+    }
+   }
+  },
+  {
+   "d": 74,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "A tour of North Africa",
+     "g": "Visit Morocco, Egypt, Tunisia and Algeria, with their markets, mint tea and couscous.",
+     "p": [
+      "Busy markets called souks are full of spices, lanterns, leather and carpets, and friendly bargaining is part of the fun.",
+      "Sweet green tea with fresh mint is a sign of welcome, often poured from high above the glass to create foam.",
+      "Couscous is a shared dish across the region, and Amazigh, also called Berber, culture is part of its deep roots."
+     ],
+     "q": "Which North African market or dish would you most like to discover?",
+     "c": "Make a glass of fresh mint tea today and enjoy it slowly."
+    },
+    "de": {
+     "t": "Rundreise durch Nordafrika",
+     "g": "Besuche Marokko, Ägypten, Tunesien und Algerien mit ihren Märkten, Minztee und Couscous.",
+     "p": [
+      "Lebhafte Märkte, Souks genannt, sind voller Gewürze, Laternen, Leder und Teppiche, und freundliches Feilschen gehört dazu.",
+      "Süßer grüner Tee mit frischer Minze ist ein Zeichen des Willkommens und wird oft von hoch oben eingeschenkt, damit er schäumt.",
+      "Couscous ist ein gemeinsames Gericht der ganzen Region, und die Kultur der Amazigh, auch Berber genannt, gehört zu ihren tiefen Wurzeln."
+     ],
+     "q": "Welchen nordafrikanischen Markt oder welches Gericht würdest du am liebsten entdecken?",
+     "c": "Bereite dir heute ein Glas frischen Minztee zu und genieße ihn in Ruhe."
+    },
+    "es": {
+     "t": "Un recorrido por el norte de África",
+     "g": "Visita Marruecos, Egipto, Túnez y Argelia, con sus mercados, el té de menta y el cuscús.",
+     "p": [
+      "Los zocos, mercados animados, están llenos de especias, faroles, cuero y alfombras, y regatear con simpatía es parte de la diversión.",
+      "El té verde dulce con menta fresca es una señal de bienvenida y suele servirse desde lo alto para crear espuma.",
+      "El cuscús es un plato compartido en toda la región, y la cultura amazigh, también llamada bereber, forma parte de sus raíces."
+     ],
+     "q": "¿Qué mercado o plato del norte de África te gustaría más descubrir?",
+     "c": "Prepárate hoy un vaso de té con menta fresca y disfrútalo sin prisa."
+    },
+    "fr": {
+     "t": "Tour d'Afrique du Nord",
+     "g": "Visite le Maroc, l'Égypte, la Tunisie et l'Algérie, avec leurs marchés, leur thé à la menthe et leur couscous.",
+     "p": [
+      "Les souks sont pleins d'épices, de lanternes, de cuir et de tapis, et le marchandage aimable fait partie du plaisir.",
+      "Le thé vert sucré à la menthe fraîche est un signe de bienvenue, souvent versé de haut pour faire de la mousse.",
+      "Le couscous est un plat partagé dans toute la région, et la culture amazighe, aussi appelée berbère, en est une racine profonde."
+     ],
+     "q": "Quel marché ou quel plat d'Afrique du Nord aimerais-tu le plus découvrir ?",
+     "c": "Prépare-toi aujourd'hui un verre de thé à la menthe fraîche et savoure-le tranquillement."
+    },
+    "it": {
+     "t": "Un giro nel Nord Africa",
+     "g": "Visita Marocco, Egitto, Tunisia e Algeria, con i loro mercati, il tè alla menta e il cuscus.",
+     "p": [
+      "I souk sono mercati vivaci pieni di spezie, lanterne, pelle e tappeti, e contrattare con il sorriso fa parte del divertimento.",
+      "Il tè verde zuccherato con menta fresca è un segno di benvenuto, spesso versato dall'alto per creare la schiuma.",
+      "Il cuscus è un piatto condiviso in tutta la regione, e la cultura amazigh, detta anche berbera, è una delle sue radici profonde."
+     ],
+     "q": "Quale mercato o piatto del Nord Africa ti piacerebbe di più scoprire?",
+     "c": "Preparati oggi un bicchiere di tè alla menta fresca e gustalo con calma."
+    },
+    "pt": {
+     "t": "Uma volta pelo Norte de África",
+     "g": "Visita Marrocos, o Egito, a Tunísia e a Argélia, com os seus mercados, o chá de hortelã e o cuscuz.",
+     "p": [
+      "Os souks, mercados animados, estão cheios de especiarias, lanternas, couro e tapetes, e regatear com simpatia faz parte da graça.",
+      "O chá verde doce com hortelã fresca é sinal de boas-vindas e é muitas vezes servido de alto para fazer espuma.",
+      "O cuscuz é um prato partilhado em toda a região, e a cultura amazigh, também chamada berbere, faz parte das suas raízes."
+     ],
+     "q": "Que mercado ou prato do Norte de África gostavas mais de descobrir?",
+     "c": "Prepara hoje um copo de chá de hortelã fresca e saboreia-o com calma."
+    },
+    "pt_BR": {
+     "t": "Um passeio pelo Norte da África",
+     "g": "Visite Marrocos, Egito, Tunísia e Argélia, com seus mercados, o chá de hortelã e o cuscuz.",
+     "p": [
+      "Os souks, mercados movimentados, são cheios de especiarias, lanternas, couro e tapetes, e pechinchar com simpatia faz parte da graça.",
+      "O chá verde doce com hortelã fresca é sinal de boas-vindas e costuma ser servido do alto para formar espuma.",
+      "O cuscuz é um prato compartilhado em toda a região, e a cultura amazigh, também chamada berbere, faz parte de suas raízes."
+     ],
+     "q": "Que mercado ou prato do Norte da África você mais gostaria de descobrir?",
+     "c": "Prepare hoje um copo de chá de hortelã fresca e saboreie com calma."
+    }
+   }
+  },
+  {
+   "d": 75,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "A tour of West Africa",
+     "g": "Meet Ghana, Nigeria and Senegal through their music, textiles and lively markets.",
+     "p": [
+      "West African music is loved worldwide, from Ghanaian highlife to Nigerian Afrobeats and Senegalese mbalax.",
+      "In Senegal hospitality has its own word, teranga, meaning a generous welcome for every guest.",
+      "Griots are traditional storytellers and musicians who keep history and family stories alive through song."
+     ],
+     "q": "Which West African song, dish or tradition would you like to explore?",
+     "c": "Listen to one highlife, Afrobeats or mbalax song today."
+    },
+    "de": {
+     "t": "Rundreise durch Westafrika",
+     "g": "Lerne Ghana, Nigeria und Senegal durch ihre Musik, Stoffe und lebhaften Märkte kennen.",
+     "p": [
+      "Westafrikanische Musik wird weltweit geliebt, vom ghanaischen Highlife über nigerianische Afrobeats bis zum senegalesischen Mbalax.",
+      "Im Senegal hat Gastfreundschaft ein eigenes Wort, Teranga: ein großzügiger Empfang für jeden Gast.",
+      "Griots sind traditionelle Erzähler und Musiker, die Geschichte und Familiengeschichten durch ihre Lieder lebendig halten."
+     ],
+     "q": "Welches westafrikanische Lied, Gericht oder welche Tradition würdest du gern erkunden?",
+     "c": "Hör dir heute einen Highlife-, Afrobeats- oder Mbalax-Song an."
+    },
+    "es": {
+     "t": "Un recorrido por África Occidental",
+     "g": "Conoce Ghana, Nigeria y Senegal a través de su música, sus telas y sus mercados animados.",
+     "p": [
+      "La música de África Occidental se ama en todo el mundo, del highlife de Ghana a los afrobeats nigerianos y el mbalax senegalés.",
+      "En Senegal la hospitalidad tiene su propia palabra, teranga, que significa una acogida generosa para cada invitado.",
+      "Los griots son narradores y músicos tradicionales que mantienen viva la historia y las historias familiares a través del canto."
+     ],
+     "q": "¿Qué canción, plato o tradición de África Occidental te gustaría explorar?",
+     "c": "Escucha hoy una canción de highlife, afrobeats o mbalax."
+    },
+    "fr": {
+     "t": "Tour d'Afrique de l'Ouest",
+     "g": "Découvre le Ghana, le Nigeria et le Sénégal à travers leur musique, leurs tissus et leurs marchés animés.",
+     "p": [
+      "La musique ouest-africaine est aimée partout, du highlife ghanéen aux afrobeats nigérians et au mbalax sénégalais.",
+      "Au Sénégal, l'hospitalité a son propre mot, la teranga : un accueil généreux pour chaque invité.",
+      "Les griots sont des conteurs et musiciens traditionnels qui font vivre l'histoire et les récits de familles par le chant."
+     ],
+     "q": "Quelle chanson, quel plat ou quelle tradition d'Afrique de l'Ouest aimerais-tu explorer ?",
+     "c": "Écoute aujourd'hui une chanson de highlife, d'afrobeats ou de mbalax."
+    },
+    "it": {
+     "t": "Un giro nell'Africa occidentale",
+     "g": "Conosci Ghana, Nigeria e Senegal attraverso la musica, i tessuti e i mercati vivaci.",
+     "p": [
+      "La musica dell'Africa occidentale è amata ovunque, dall'highlife ghanese agli afrobeats nigeriani e al mbalax senegalese.",
+      "In Senegal l'ospitalità ha una parola tutta sua, teranga, che indica un'accoglienza generosa per ogni ospite.",
+      "I griot sono cantastorie e musicisti tradizionali che mantengono viva la storia e i racconti di famiglia con il canto."
+     ],
+     "q": "Quale canzone, piatto o tradizione dell'Africa occidentale ti piacerebbe esplorare?",
+     "c": "Ascolta oggi una canzone highlife, afrobeats o mbalax."
+    },
+    "pt": {
+     "t": "Uma volta pela África Ocidental",
+     "g": "Conhece o Gana, a Nigéria e o Senegal através da música, dos tecidos e dos mercados animados.",
+     "p": [
+      "A música da África Ocidental é adorada em todo o mundo, do highlife do Gana aos afrobeats nigerianos e ao mbalax senegalês.",
+      "No Senegal a hospitalidade tem uma palavra própria, teranga, que significa um acolhimento generoso para cada convidado.",
+      "Os griots são contadores de histórias e músicos tradicionais que mantêm viva a história e as memórias de família através do canto."
+     ],
+     "q": "Que canção, prato ou tradição da África Ocidental gostavas de explorar?",
+     "c": "Ouve hoje uma canção de highlife, afrobeats ou mbalax."
+    },
+    "pt_BR": {
+     "t": "Um passeio pela África Ocidental",
+     "g": "Conheça Gana, Nigéria e Senegal pela música, pelos tecidos e pelos mercados animados.",
+     "p": [
+      "A música da África Ocidental é adorada no mundo todo, do highlife de Gana aos afrobeats nigerianos e ao mbalax senegalês.",
+      "No Senegal a hospitalidade tem uma palavra própria, teranga, que significa um acolhimento generoso para cada convidado.",
+      "Os griôs são contadores de histórias e músicos tradicionais que mantêm viva a história e as memórias de família pelo canto."
+     ],
+     "q": "Que música, prato ou tradição da África Ocidental você gostaria de explorar?",
+     "c": "Ouça hoje uma música de highlife, afrobeats ou mbalax."
+    }
+   }
+  },
+  {
+   "d": 76,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Kente and African textiles",
+     "g": "Learn what the patterns of kente, mud cloth and wax prints express.",
+     "p": [
+      "Kente from Ghana is woven in narrow strips, and its colours and patterns carry names and meanings, often worn for special days.",
+      "Bògòlanfini, or mud cloth from Mali, is dyed with fermented mud and plants to create bold earthy symbols.",
+      "Colourful wax prints are worn across West and Central Africa, and many designs have popular names or sayings."
+     ],
+     "q": "Do you have a fabric, pattern or piece of clothing with special meaning for you?",
+     "c": "Look closely at a pattern on your clothes or at home today and think about what it could express."
+    },
+    "de": {
+     "t": "Kente und afrikanische Stoffe",
+     "g": "Erfahre, was die Muster von Kente, Schlammstoff und Wachsdrucken ausdrücken.",
+     "p": [
+      "Kente aus Ghana wird in schmalen Streifen gewebt, Farben und Muster haben Namen und Bedeutungen und werden oft an besonderen Tagen getragen.",
+      "Bògòlanfini, der Schlammstoff aus Mali, wird mit vergorenem Schlamm und Pflanzen gefärbt und zeigt kräftige, erdige Symbole.",
+      "Bunte Wachsdrucke werden in ganz West- und Zentralafrika getragen, und viele Muster haben beliebte Namen oder Sprüche."
+     ],
+     "q": "Hast du einen Stoff, ein Muster oder ein Kleidungsstück mit besonderer Bedeutung für dich?",
+     "c": "Schau dir heute ein Muster an deiner Kleidung oder zu Hause genau an und überlege, was es ausdrücken könnte."
+    },
+    "es": {
+     "t": "El kente y los tejidos africanos",
+     "g": "Aprende lo que expresan los dibujos del kente, la tela de barro y los estampados de cera.",
+     "p": [
+      "El kente de Ghana se teje en tiras estrechas, sus colores y dibujos tienen nombres y significados, y se luce en días especiales.",
+      "El bògòlanfini o tela de barro de Mali se tiñe con barro fermentado y plantas para crear símbolos de tonos tierra.",
+      "Los coloridos estampados de cera se visten en toda África Occidental y Central, y muchos diseños tienen nombres o dichos populares."
+     ],
+     "q": "¿Tienes alguna tela, dibujo o prenda con un significado especial para ti?",
+     "c": "Fíjate hoy en un estampado de tu ropa o de tu casa y piensa qué podría expresar."
+    },
+    "fr": {
+     "t": "Le kente et les textiles africains",
+     "g": "Découvre ce qu'expriment les motifs du kente, du bogolan et des wax.",
+     "p": [
+      "Le kente du Ghana est tissé en bandes étroites, ses couleurs et motifs ont des noms et des sens, et on le porte pour les grands jours.",
+      "Le bogolan du Mali est teint avec de la boue fermentée et des plantes, ce qui donne des symboles forts aux tons de terre.",
+      "Les wax colorés se portent dans toute l'Afrique de l'Ouest et centrale, et beaucoup de motifs ont un nom ou un dicton populaire."
+     ],
+     "q": "As-tu un tissu, un motif ou un vêtement qui a un sens particulier pour toi ?",
+     "c": "Observe aujourd'hui un motif sur tes vêtements ou chez toi et imagine ce qu'il pourrait exprimer."
+    },
+    "it": {
+     "t": "Il kente e i tessuti africani",
+     "g": "Scopri cosa esprimono i motivi del kente, del tessuto di fango e delle stampe wax.",
+     "p": [
+      "Il kente del Ghana è tessuto in strisce strette, colori e motivi hanno nomi e significati, e si indossa nei giorni speciali.",
+      "Il bògòlanfini, il tessuto di fango del Mali, è tinto con fango fermentato e piante e mostra forti simboli color terra.",
+      "Le coloratissime stampe wax si indossano in tutta l'Africa occidentale e centrale, e molti motivi hanno nomi o detti popolari."
+     ],
+     "q": "Hai un tessuto, un motivo o un capo con un significato speciale per te?",
+     "c": "Osserva oggi un motivo sui tuoi vestiti o in casa e pensa a cosa potrebbe esprimere."
+    },
+    "pt": {
+     "t": "O kente e os tecidos africanos",
+     "g": "Aprende o que exprimem os padrões do kente, do tecido de lama e dos tecidos de cera.",
+     "p": [
+      "O kente do Gana é tecido em tiras estreitas, as suas cores e padrões têm nomes e significados, e é usado em dias especiais.",
+      "O bògòlanfini, tecido de lama do Mali, é tingido com lama fermentada e plantas, criando símbolos fortes em tons de terra.",
+      "Os coloridos tecidos de cera usam-se em toda a África Ocidental e Central, e muitos padrões têm nomes ou ditos populares."
+     ],
+     "q": "Tens algum tecido, padrão ou peça de roupa com um significado especial para ti?",
+     "c": "Observa hoje um padrão na tua roupa ou em casa e pensa no que poderia exprimir."
+    },
+    "pt_BR": {
+     "t": "O kente e os tecidos africanos",
+     "g": "Aprenda o que expressam as estampas do kente, do tecido de lama e dos tecidos de cera.",
+     "p": [
+      "O kente de Gana é tecido em tiras estreitas, suas cores e padrões têm nomes e significados, e ele é usado em dias especiais.",
+      "O bògòlanfini, tecido de lama do Mali, é tingido com lama fermentada e plantas, criando símbolos fortes em tons de terra.",
+      "Os coloridos tecidos de cera são usados em toda a África Ocidental e Central, e muitas estampas têm nomes ou ditados populares."
+     ],
+     "q": "Você tem algum tecido, estampa ou roupa com um significado especial para você?",
+     "c": "Observe hoje uma estampa na sua roupa ou em casa e pense no que ela poderia expressar."
+    }
+   }
+  },
+  {
+   "d": 77,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "A tour of East Africa",
+     "g": "Explore Kenya, Tanzania and Ethiopia through Swahili culture, coffee and running.",
+     "p": [
+      "Swahili, or Kiswahili, is spoken by tens of millions of people and connects communities across East Africa.",
+      "Ethiopia is widely seen as the homeland of coffee, and coffee is still a big part of daily life in the region.",
+      "Runners from Kenya and Ethiopia are famous worldwide, and many train at high altitude in the hills."
+     ],
+     "q": "Which East African tradition would you like to learn more about?",
+     "c": "Learn one Swahili word today, like jambo for hello or asante for thank you."
+    },
+    "de": {
+     "t": "Rundreise durch Ostafrika",
+     "g": "Erkunde Kenia, Tansania und Äthiopien durch Swahili-Kultur, Kaffee und Laufsport.",
+     "p": [
+      "Swahili, auch Kiswahili, wird von zig Millionen Menschen gesprochen und verbindet Gemeinschaften in ganz Ostafrika.",
+      "Äthiopien gilt weithin als Heimat des Kaffees, und Kaffee ist bis heute ein großer Teil des Alltags in der Region.",
+      "Läuferinnen und Läufer aus Kenia und Äthiopien sind weltberühmt, und viele trainieren hoch oben in den Bergen."
+     ],
+     "q": "Über welche ostafrikanische Tradition möchtest du mehr erfahren?",
+     "c": "Lerne heute ein Swahili-Wort, etwa jambo für Hallo oder asante für Danke."
+    },
+    "es": {
+     "t": "Un recorrido por África Oriental",
+     "g": "Explora Kenia, Tanzania y Etiopía a través de la cultura suajili, el café y el atletismo.",
+     "p": [
+      "El suajili, o kiswahili, lo hablan decenas de millones de personas y une a comunidades de toda África Oriental.",
+      "Etiopía se considera la cuna del café, y el café sigue siendo una gran parte de la vida diaria en la región.",
+      "Los corredores de Kenia y Etiopía son famosos en todo el mundo, y muchos entrenan en las alturas de sus montañas."
+     ],
+     "q": "¿Sobre qué tradición de África Oriental te gustaría saber más?",
+     "c": "Aprende hoy una palabra en suajili, como jambo para hola o asante para gracias."
+    },
+    "fr": {
+     "t": "Tour d'Afrique de l'Est",
+     "g": "Explore le Kenya, la Tanzanie et l'Éthiopie à travers la culture swahilie, le café et la course à pied.",
+     "p": [
+      "Le swahili, ou kiswahili, est parlé par des dizaines de millions de personnes et relie les communautés de l'Afrique de l'Est.",
+      "L'Éthiopie est souvent vue comme le berceau du café, qui reste une grande part de la vie quotidienne dans la région.",
+      "Les coureurs du Kenya et d'Éthiopie sont célèbres dans le monde entier, et beaucoup s'entraînent en altitude."
+     ],
+     "q": "Sur quelle tradition d'Afrique de l'Est aimerais-tu en savoir plus ?",
+     "c": "Apprends aujourd'hui un mot de swahili, comme jambo pour bonjour ou asante pour merci."
+    },
+    "it": {
+     "t": "Un giro nell'Africa orientale",
+     "g": "Esplora Kenya, Tanzania ed Etiopia attraverso la cultura swahili, il caffè e la corsa.",
+     "p": [
+      "Lo swahili, o kiswahili, è parlato da decine di milioni di persone e collega le comunità di tutta l'Africa orientale.",
+      "L'Etiopia è considerata la patria del caffè, che ancora oggi è una parte importante della vita quotidiana nella regione.",
+      "I corridori di Kenya ed Etiopia sono famosi in tutto il mondo, e molti si allenano in alta quota."
+     ],
+     "q": "Su quale tradizione dell'Africa orientale vorresti saperne di più?",
+     "c": "Impara oggi una parola swahili, come jambo per ciao o asante per grazie."
+    },
+    "pt": {
+     "t": "Uma volta pela África Oriental",
+     "g": "Explora o Quénia, a Tanzânia e a Etiópia através da cultura suaíli, do café e da corrida.",
+     "p": [
+      "O suaíli, ou kiswahili, é falado por dezenas de milhões de pessoas e liga comunidades de toda a África Oriental.",
+      "A Etiópia é vista como a terra natal do café, que continua a ser uma grande parte do dia a dia na região.",
+      "Os corredores do Quénia e da Etiópia são famosos em todo o mundo, e muitos treinam em altitude."
+     ],
+     "q": "Sobre que tradição da África Oriental gostavas de saber mais?",
+     "c": "Aprende hoje uma palavra em suaíli, como jambo para olá ou asante para obrigado."
+    },
+    "pt_BR": {
+     "t": "Um passeio pela África Oriental",
+     "g": "Explore Quênia, Tanzânia e Etiópia pela cultura suaíli, pelo café e pela corrida.",
+     "p": [
+      "O suaíli, ou kiswahili, é falado por dezenas de milhões de pessoas e conecta comunidades de toda a África Oriental.",
+      "A Etiópia é vista como a terra natal do café, que continua sendo uma grande parte do dia a dia na região.",
+      "Os corredores do Quênia e da Etiópia são famosos no mundo todo, e muitos treinam em grandes altitudes."
+     ],
+     "q": "Sobre qual tradição da África Oriental você gostaria de saber mais?",
+     "c": "Aprenda hoje uma palavra em suaíli, como jambo para olá ou asante para obrigado."
+    }
+   }
+  },
+  {
+   "d": 78,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Ethiopia's unique traditions",
+     "g": "Discover Ethiopia's own calendar, its famous flatbread and the coffee ceremony.",
+     "p": [
+      "Ethiopia uses its own calendar with 13 months, and New Year, called Enkutatash, falls in September.",
+      "Injera is a soft, slightly sour flatbread made from teff grain, used as plate and spoon for shared stews.",
+      "In the coffee ceremony, beans are roasted, ground and brewed in a clay pot, and guests often stay for three rounds."
+     ],
+     "q": "Would you enjoy a slow coffee ceremony with friends? Who would you invite?",
+     "c": "Make coffee or tea slowly today and share it with someone, like a small ceremony."
+    },
+    "de": {
+     "t": "Äthiopiens besondere Traditionen",
+     "g": "Entdecke Äthiopiens eigenen Kalender, sein berühmtes Fladenbrot und die Kaffeezeremonie.",
+     "p": [
+      "Äthiopien nutzt einen eigenen Kalender mit 13 Monaten, und Neujahr, Enkutatash genannt, fällt in den September.",
+      "Injera ist ein weiches, leicht säuerliches Fladenbrot aus Teff, das als Teller und Löffel für gemeinsame Eintöpfe dient.",
+      "Bei der Kaffeezeremonie werden Bohnen geröstet, gemahlen und in einem Tonkrug aufgebrüht, und Gäste bleiben oft für drei Runden."
+     ],
+     "q": "Würde dir eine ruhige Kaffeezeremonie mit Freunden gefallen? Wen würdest du einladen?",
+     "c": "Bereite heute in Ruhe Kaffee oder Tee zu und teile ihn mit jemandem, wie eine kleine Zeremonie."
+    },
+    "es": {
+     "t": "Las tradiciones únicas de Etiopía",
+     "g": "Descubre el calendario propio de Etiopía, su famoso pan plano y la ceremonia del café.",
+     "p": [
+      "Etiopía usa su propio calendario de 13 meses, y el Año Nuevo, llamado Enkutatash, cae en septiembre.",
+      "La injera es un pan plano, blando y algo ácido hecho de teff, que sirve de plato y cuchara para guisos compartidos.",
+      "En la ceremonia del café se tuestan, muelen y preparan los granos en una jarra de barro, y los invitados suelen quedarse tres rondas."
+     ],
+     "q": "¿Te gustaría una ceremonia del café tranquila con amigos? ¿A quién invitarías?",
+     "c": "Prepara hoy café o té con calma y compártelo con alguien, como una pequeña ceremonia."
+    },
+    "fr": {
+     "t": "Les traditions uniques de l'Éthiopie",
+     "g": "Découvre le calendrier propre à l'Éthiopie, son célèbre pain plat et la cérémonie du café.",
+     "p": [
+      "L'Éthiopie a son propre calendrier de 13 mois, et le Nouvel An, appelé Enkutatash, tombe en septembre.",
+      "L'injera est une galette souple et légèrement acidulée à base de teff, qui sert d'assiette et de cuillère pour les ragoûts partagés.",
+      "Lors de la cérémonie du café, on torréfie, moud et infuse les grains dans une cruche en terre, et on reste souvent trois tournées."
+     ],
+     "q": "Aimerais-tu une cérémonie du café tranquille entre amis ? Qui inviterais-tu ?",
+     "c": "Prépare aujourd'hui un café ou un thé sans te presser et partage-le, comme une petite cérémonie."
+    },
+    "it": {
+     "t": "Le tradizioni uniche dell'Etiopia",
+     "g": "Scopri il calendario tutto etiope, il suo famoso pane piatto e la cerimonia del caffè.",
+     "p": [
+      "L'Etiopia usa un proprio calendario di 13 mesi, e il Capodanno, chiamato Enkutatash, cade a settembre.",
+      "L'injera è un pane piatto morbido e un po' acidulo fatto di teff, che fa da piatto e da cucchiaio per gli stufati condivisi.",
+      "Nella cerimonia del caffè i chicchi si tostano, si macinano e si preparano in una brocca di terracotta, e spesso si resta per tre giri."
+     ],
+     "q": "Ti piacerebbe una cerimonia del caffè tranquilla con gli amici? Chi inviteresti?",
+     "c": "Prepara oggi caffè o tè con calma e condividilo con qualcuno, come una piccola cerimonia."
+    },
+    "pt": {
+     "t": "As tradições únicas da Etiópia",
+     "g": "Descobre o calendário próprio da Etiópia, o seu famoso pão achatado e a cerimónia do café.",
+     "p": [
+      "A Etiópia usa um calendário próprio com 13 meses, e o Ano Novo, chamado Enkutatash, calha em setembro.",
+      "A injera é um pão achatado, macio e ligeiramente ácido feito de teff, que serve de prato e de colher para guisados partilhados.",
+      "Na cerimónia do café, os grãos são torrados, moídos e preparados num jarro de barro, e os convidados ficam muitas vezes três rodadas."
+     ],
+     "q": "Gostavas de uma cerimónia do café tranquila com amigos? Quem convidavas?",
+     "c": "Prepara hoje café ou chá com calma e partilha-o com alguém, como uma pequena cerimónia."
+    },
+    "pt_BR": {
+     "t": "As tradições únicas da Etiópia",
+     "g": "Descubra o calendário próprio da Etiópia, seu famoso pão achatado e a cerimônia do café.",
+     "p": [
+      "A Etiópia usa um calendário próprio com 13 meses, e o Ano-Novo, chamado Enkutatash, cai em setembro.",
+      "A injera é um pão achatado, macio e levemente azedo feito de teff, que serve de prato e de colher para ensopados compartilhados.",
+      "Na cerimônia do café, os grãos são torrados, moídos e preparados num jarro de barro, e os convidados costumam ficar três rodadas."
+     ],
+     "q": "Você curtiria uma cerimônia do café tranquila com amigos? Quem você convidaria?",
+     "c": "Prepare hoje café ou chá com calma e compartilhe com alguém, como uma pequena cerimônia."
+    }
+   }
+  },
+  {
+   "d": 79,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "A tour of Southern Africa",
+     "g": "Meet South Africa, Botswana and Namibia, their many languages and the idea of ubuntu.",
+     "p": [
+      "South Africa has many official languages, including isiZulu, isiXhosa, Afrikaans, Sesotho, Setswana and English.",
+      "Cooking meat outdoors over wood or charcoal, called a braai, is a favourite way for friends and families to gather.",
+      "The region has wide landscapes, from the Okavango Delta in Botswana to the red dunes of the Namib Desert."
+     ],
+     "q": "How many languages can you hear in your city or region?",
+     "c": "Learn one word today in isiZulu, isiXhosa or Setswana, such as a greeting."
+    },
+    "de": {
+     "t": "Rundreise durch das südliche Afrika",
+     "g": "Lerne Südafrika, Botswana und Namibia kennen, ihre vielen Sprachen und die Idee von Ubuntu.",
+     "p": [
+      "Südafrika hat viele Amtssprachen, darunter isiZulu, isiXhosa, Afrikaans, Sesotho, Setswana und Englisch.",
+      "Fleisch draußen über Holz oder Kohle zu grillen, Braai genannt, ist ein beliebter Anlass für Treffen mit Freunden und Familie.",
+      "Die Region hat weite Landschaften, vom Okavango-Delta in Botswana bis zu den roten Dünen der Namib-Wüste."
+     ],
+     "q": "Wie viele Sprachen hörst du in deiner Stadt oder Region?",
+     "c": "Lerne heute ein Wort auf isiZulu, isiXhosa oder Setswana, zum Beispiel einen Gruß."
+    },
+    "es": {
+     "t": "Un recorrido por África Austral",
+     "g": "Conoce Sudáfrica, Botsuana y Namibia, sus muchas lenguas y la idea del ubuntu.",
+     "p": [
+      "Sudáfrica tiene muchas lenguas oficiales, entre ellas el isiZulu, el isiXhosa, el afrikáans, el sesotho, el setswana y el inglés.",
+      "Asar carne al aire libre sobre leña o carbón, el llamado braai, es una forma favorita de reunir a amigos y familia.",
+      "La región tiene paisajes inmensos, del delta del Okavango en Botsuana a las dunas rojas del desierto del Namib."
+     ],
+     "q": "¿Cuántas lenguas puedes oír en tu ciudad o región?",
+     "c": "Aprende hoy una palabra en isiZulu, isiXhosa o setswana, como un saludo."
+    },
+    "fr": {
+     "t": "Tour d'Afrique australe",
+     "g": "Découvre l'Afrique du Sud, le Botswana et la Namibie, leurs nombreuses langues et l'idée d'ubuntu.",
+     "p": [
+      "L'Afrique du Sud a de nombreuses langues officielles, dont l'isiZulu, l'isiXhosa, l'afrikaans, le sesotho, le setswana et l'anglais.",
+      "Faire griller de la viande dehors au bois ou au charbon, le braai, est un moment favori pour réunir amis et famille.",
+      "La région offre de vastes paysages, du delta de l'Okavango au Botswana aux dunes rouges du désert du Namib."
+     ],
+     "q": "Combien de langues peux-tu entendre dans ta ville ou ta région ?",
+     "c": "Apprends aujourd'hui un mot en isiZulu, isiXhosa ou setswana, par exemple une salutation."
+    },
+    "it": {
+     "t": "Un giro nell'Africa australe",
+     "g": "Conosci Sudafrica, Botswana e Namibia, le loro tante lingue e l'idea di ubuntu.",
+     "p": [
+      "Il Sudafrica ha molte lingue ufficiali, tra cui isiZulu, isiXhosa, afrikaans, sesotho, setswana e inglese.",
+      "Cuocere la carne all'aperto su legna o carbone, il braai, è uno dei modi preferiti per riunire amici e famiglia.",
+      "La regione ha paesaggi immensi, dal delta dell'Okavango in Botswana alle dune rosse del deserto del Namib."
+     ],
+     "q": "Quante lingue puoi sentire nella tua città o regione?",
+     "c": "Impara oggi una parola in isiZulu, isiXhosa o setswana, per esempio un saluto."
+    },
+    "pt": {
+     "t": "Uma volta pela África Austral",
+     "g": "Conhece a África do Sul, o Botsuana e a Namíbia, as suas muitas línguas e a ideia de ubuntu.",
+     "p": [
+      "A África do Sul tem muitas línguas oficiais, entre elas isiZulu, isiXhosa, africânder, sesotho, setswana e inglês.",
+      "Grelhar carne ao ar livre sobre lenha ou carvão, o chamado braai, é uma forma preferida de juntar amigos e família.",
+      "A região tem paisagens imensas, do delta do Okavango, no Botsuana, às dunas vermelhas do deserto do Namibe."
+     ],
+     "q": "Quantas línguas consegues ouvir na tua cidade ou região?",
+     "c": "Aprende hoje uma palavra em isiZulu, isiXhosa ou setswana, como um cumprimento."
+    },
+    "pt_BR": {
+     "t": "Um passeio pela África Austral",
+     "g": "Conheça África do Sul, Botsuana e Namíbia, suas muitas línguas e a ideia de ubuntu.",
+     "p": [
+      "A África do Sul tem muitas línguas oficiais, entre elas isiZulu, isiXhosa, africâner, sesotho, setswana e inglês.",
+      "Assar carne ao ar livre na lenha ou no carvão, o chamado braai, é um jeito querido de reunir amigos e família.",
+      "A região tem paisagens imensas, do delta do Okavango, em Botsuana, às dunas vermelhas do deserto do Namibe."
+     ],
+     "q": "Quantas línguas você consegue ouvir na sua cidade ou região?",
+     "c": "Aprenda hoje uma palavra em isiZulu, isiXhosa ou setswana, como um cumprimento."
+    }
+   }
+  },
+  {
+   "d": 80,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Ubuntu: I am because we are",
+     "g": "Understand ubuntu, the Southern African idea of shared humanity and community.",
+     "p": [
+      "Ubuntu comes from Nguni languages and is often summed up as I am because we are.",
+      "A well-known isiZulu saying, umuntu ngumuntu ngabantu, means a person is a person through other people.",
+      "In daily life ubuntu shows up as sharing, helping neighbours, welcoming visitors and caring for the whole community."
+     ],
+     "q": "When did someone's kindness make you feel part of a community?",
+     "c": "Do one small thing for your community today, like helping a neighbour or thanking someone who helps others."
+    },
+    "de": {
+     "t": "Ubuntu: Ich bin, weil wir sind",
+     "g": "Verstehe Ubuntu, die Idee des südlichen Afrikas von gemeinsamer Menschlichkeit und Gemeinschaft.",
+     "p": [
+      "Ubuntu stammt aus den Nguni-Sprachen und wird oft mit Ich bin, weil wir sind zusammengefasst.",
+      "Ein bekannter Spruch auf isiZulu, umuntu ngumuntu ngabantu, bedeutet: Ein Mensch ist ein Mensch durch andere Menschen.",
+      "Im Alltag zeigt sich Ubuntu im Teilen, in der Nachbarschaftshilfe, im Willkommen für Gäste und in der Sorge um alle."
+     ],
+     "q": "Wann hat dir die Freundlichkeit eines anderen das Gefühl gegeben, zu einer Gemeinschaft zu gehören?",
+     "c": "Tu heute etwas Kleines für deine Gemeinschaft, etwa einem Nachbarn helfen oder jemandem danken, der anderen hilft."
+    },
+    "es": {
+     "t": "Ubuntu: soy porque somos",
+     "g": "Comprende el ubuntu, la idea sudafricana de humanidad compartida y comunidad.",
+     "p": [
+      "Ubuntu viene de las lenguas nguni y suele resumirse como soy porque somos.",
+      "Un conocido dicho en isiZulu, umuntu ngumuntu ngabantu, significa una persona es persona a través de las demás.",
+      "En el día a día, el ubuntu se ve al compartir, ayudar a los vecinos, recibir visitas y cuidar de toda la comunidad."
+     ],
+     "q": "¿Cuándo te hizo sentir parte de una comunidad la amabilidad de alguien?",
+     "c": "Haz hoy algo pequeño por tu comunidad, como ayudar a un vecino o agradecer a alguien que ayuda a otros."
+    },
+    "fr": {
+     "t": "Ubuntu : je suis parce que nous sommes",
+     "g": "Comprends l'ubuntu, l'idée sud-africaine d'humanité partagée et de communauté.",
+     "p": [
+      "Ubuntu vient des langues nguni et se résume souvent par je suis parce que nous sommes.",
+      "Un dicton zoulou connu, umuntu ngumuntu ngabantu, signifie une personne est une personne grâce aux autres.",
+      "Au quotidien, l'ubuntu se voit dans le partage, l'aide aux voisins, l'accueil des visiteurs et le soin de toute la communauté."
+     ],
+     "q": "Quand la gentillesse de quelqu'un t'a-t-elle fait sentir membre d'une communauté ?",
+     "c": "Fais aujourd'hui un petit geste pour ta communauté, comme aider un voisin ou remercier quelqu'un qui aide les autres."
+    },
+    "it": {
+     "t": "Ubuntu: io sono perché noi siamo",
+     "g": "Comprendi l'ubuntu, l'idea dell'Africa australe di umanità condivisa e comunità.",
+     "p": [
+      "Ubuntu viene dalle lingue nguni e si riassume spesso con io sono perché noi siamo.",
+      "Un noto detto in isiZulu, umuntu ngumuntu ngabantu, significa una persona è una persona attraverso gli altri.",
+      "Nella vita quotidiana l'ubuntu si vede nel condividere, aiutare i vicini, accogliere chi arriva e prendersi cura di tutti."
+     ],
+     "q": "Quando la gentilezza di qualcuno ti ha fatto sentire parte di una comunità?",
+     "c": "Fai oggi un piccolo gesto per la tua comunità, come aiutare un vicino o ringraziare chi aiuta gli altri."
+    },
+    "pt": {
+     "t": "Ubuntu: eu sou porque nós somos",
+     "g": "Compreende o ubuntu, a ideia sul-africana de humanidade partilhada e de comunidade.",
+     "p": [
+      "Ubuntu vem das línguas nguni e costuma resumir-se como eu sou porque nós somos.",
+      "Um conhecido ditado em isiZulu, umuntu ngumuntu ngabantu, significa uma pessoa é pessoa através das outras.",
+      "No dia a dia, o ubuntu vê-se na partilha, na ajuda aos vizinhos, no acolhimento de visitas e no cuidado com todos."
+     ],
+     "q": "Quando é que a bondade de alguém te fez sentir parte de uma comunidade?",
+     "c": "Faz hoje algo pequeno pela tua comunidade, como ajudar um vizinho ou agradecer a quem ajuda os outros."
+    },
+    "pt_BR": {
+     "t": "Ubuntu: eu sou porque nós somos",
+     "g": "Entenda o ubuntu, a ideia sul-africana de humanidade compartilhada e de comunidade.",
+     "p": [
+      "Ubuntu vem das línguas nguni e costuma ser resumido como eu sou porque nós somos.",
+      "Um conhecido ditado em isiZulu, umuntu ngumuntu ngabantu, significa uma pessoa é pessoa por meio das outras.",
+      "No dia a dia, o ubuntu aparece no ato de compartilhar, de ajudar os vizinhos, receber visitas e cuidar de toda a comunidade."
+     ],
+     "q": "Quando a gentileza de alguém fez você se sentir parte de uma comunidade?",
+     "c": "Faça hoje algo pequeno pela sua comunidade, como ajudar um vizinho ou agradecer a quem ajuda os outros."
+    }
+   }
+  }
+ ]
+}

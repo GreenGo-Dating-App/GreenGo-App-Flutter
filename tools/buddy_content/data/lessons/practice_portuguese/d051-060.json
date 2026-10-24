@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_portuguese",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Shopping basics",
+     "g": "Ask about prices, sizes and fitting rooms in a shop.",
+     "p": [
+      "Quanto custa? asks the price of one thing; quanto custam? of several. Quanto é? works at the till.",
+      "Ask Tem outro tamanho? (another size?) and Posso experimentar? (can I try it on?). O provador is the fitting room.",
+      "When you decide, say Vou levar (I'll take it). If not: Obrigado, vou pensar."
+     ],
+     "q": "What was the last thing you bought, and did you try it on first?",
+     "c": "Act out a short shop dialogue in Portuguese: ask the price, a different size and say vou levar."
+    },
+    "de": {
+     "t": "Einkaufen: die Basics",
+     "g": "Du fragst im Laden nach Preis, Größe und Umkleide.",
+     "p": [
+      "Quanto custa? fragt nach dem Preis eines Artikels, quanto custam? bei mehreren. An der Kasse: Quanto é?",
+      "Frag Tem outro tamanho? (andere Größe?) und Posso experimentar? (anprobieren?). O provador ist die Umkleide.",
+      "Wenn du dich entscheidest: Vou levar (Ich nehme es). Wenn nicht: Obrigado, vou pensar."
+     ],
+     "q": "Was hast du zuletzt gekauft und hast du es vorher anprobiert?",
+     "c": "Spiel einen kurzen Dialog im Laden auf Portugiesisch: Preis, andere Größe und vou levar."
+    },
+    "es": {
+     "t": "Compras básicas",
+     "g": "Preguntar precios, tallas y probadores en una tienda.",
+     "p": [
+      "Quanto custa? pregunta el precio de una cosa; quanto custam?, de varias. En caja: Quanto é?",
+      "Pregunta Tem outro tamanho? (¿otra talla?) y Posso experimentar? (¿puedo probármelo?). O provador es el probador.",
+      "Cuando decidas, di Vou levar (me lo llevo). Si no: Obrigado, vou pensar."
+     ],
+     "q": "¿Qué fue lo último que compraste y te lo probaste antes?",
+     "c": "Representa un pequeño diálogo en una tienda: pregunta el precio, otra talla y di vou levar."
+    },
+    "fr": {
+     "t": "Faire du shopping",
+     "g": "Demander les prix, les tailles et la cabine d'essayage.",
+     "p": [
+      "Quanto custa? demande le prix d'un article ; quanto custam?, de plusieurs. À la caisse : Quanto é?",
+      "Demande Tem outro tamanho? (une autre taille ?) et Posso experimentar? (je peux essayer ?). O provador : la cabine.",
+      "Quand tu te décides : Vou levar (je le prends). Sinon : Obrigado, vou pensar."
+     ],
+     "q": "Quelle est la dernière chose que tu as achetée, et l'as-tu essayée avant ?",
+     "c": "Joue un petit dialogue en magasin en portugais : prix, autre taille et vou levar."
+    },
+    "it": {
+     "t": "Fare acquisti",
+     "g": "Chiedi prezzi, taglie e camerini in un negozio.",
+     "p": [
+      "Quanto custa? chiede il prezzo di una cosa; quanto custam? di più cose. Alla cassa: Quanto é?",
+      "Chiedi Tem outro tamanho? (un'altra taglia?) e Posso experimentar? (posso provarlo?). O provador è il camerino.",
+      "Quando decidi, di' Vou levar (lo prendo). Altrimenti: Obrigado, vou pensar."
+     ],
+     "q": "Qual è l'ultima cosa che hai comprato e l'hai provata prima?",
+     "c": "Recita un breve dialogo in negozio in portoghese: prezzo, altra taglia e vou levar."
+    },
+    "pt": {
+     "t": "Fazer compras",
+     "g": "Revê as frases básicas de uma loja e como soam a quem está a aprender.",
+     "p": [
+      "Quanto custa?, Tem outro tamanho? e Posso experimentar? são as três perguntas essenciais.",
+      "Em Portugal diz-se o provador e o talão; no Brasil, o provador e a nota ou o cupom.",
+      "Vou levar e Vou pensar são formas simpáticas de decidir sem complicações."
+     ],
+     "q": "Preferes fazer compras numa loja ou online? Porquê?",
+     "c": "Repara na próxima ida a uma loja nas perguntas que fazes e escreve-as como frases-modelo para um estrangeiro."
+    },
+    "pt_BR": {
+     "t": "Fazer compras",
+     "g": "Revise as frases de loja usadas em Portugal.",
+     "p": [
+      "Quanto custa?, Tem outro tamanho? e Posso experimentar? funcionam igual nos dois países.",
+      "Em Portugal o comprovante da compra é o talão, e o caixa é muitas vezes a caixa.",
+      "Vou levar é igual; em Portugal também se ouve Fico com este."
+     ],
+     "q": "Qual foi a melhor compra que você fez nos últimos meses?",
+     "c": "Simule uma compra em Lisboa: pergunte o tamanho, experimente e diga Fico com este."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "quanto custa?",
+      "ex": "Desculpe, quanto custa esta camisola?"
+     },
+     {
+      "w": "o tamanho",
+      "ex": "Tem este casaco num tamanho maior?"
+     },
+     {
+      "w": "posso experimentar?",
+      "ex": "Posso experimentar estas calças?"
+     },
+     {
+      "w": "o provador",
+      "ex": "O provador é ao fundo, à direita."
+     },
+     {
+      "w": "mais barato",
+      "ex": "Tem alguma coisa mais barata?"
+     },
+     {
+      "w": "vou levar",
+      "ex": "Gosto muito, vou levar."
+     }
+    ],
+    "gram": "Quanto custa? para uma coisa, quanto custam? para várias. Tem...? é a forma educada de perguntar se a loja tem algo."
+   }
+  },
+  {
+   "d": 52,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Numbers above 100",
+     "g": "Count beyond 100 and read prices in euros.",
+     "p": [
+      "Cem is exactly 100; from 101 it becomes cento: cento e um, cento e cinquenta.",
+      "Hundreds agree in gender: duzentos euros, duzentas pessoas. Mil (1000) does not change: dois mil.",
+      "Prices: três euros e vinte (cêntimos). In Portugal cents are cêntimos; in Brazil, centavos."
+     ],
+     "q": "What is a number that is important to you, like a house number or a year? Say it in Portuguese.",
+     "c": "Read aloud in Portuguese five numbers you see today above 100: prices, pages or house numbers."
+    },
+    "de": {
+     "t": "Zahlen über 100",
+     "g": "Du zählst über 100 hinaus und liest Preise in Euro.",
+     "p": [
+      "Cem ist genau 100; ab 101 heißt es cento: cento e um, cento e cinquenta.",
+      "Hunderter richten sich nach dem Geschlecht: duzentos euros, duzentas pessoas. Mil (1000) bleibt gleich: dois mil.",
+      "Preise: três euros e vinte (cêntimos). Cent heißt in Portugal cêntimos, in Brasilien centavos."
+     ],
+     "q": "Welche Zahl ist dir wichtig, etwa eine Hausnummer oder ein Jahr? Sag sie auf Portugiesisch.",
+     "c": "Lies heute fünf Zahlen über 100 laut auf Portugiesisch: Preise, Seiten oder Hausnummern."
+    },
+    "es": {
+     "t": "Números a partir de 100",
+     "g": "Contar más allá de 100 y leer precios en euros.",
+     "p": [
+      "Cem es exactamente 100, como cien; desde 101 se dice cento: cento e um, cento e cinquenta.",
+      "Las centenas concuerdan: duzentos euros, duzentas pessoas. Mil no cambia: dois mil.",
+      "Precios: três euros e vinte (cêntimos). En Portugal, cêntimos; en Brasil, centavos."
+     ],
+     "q": "¿Qué número es importante para ti, como un número de casa o un año? Dilo en portugués.",
+     "c": "Lee hoy en voz alta cinco números de más de 100 que veas: precios, páginas o portales."
+    },
+    "fr": {
+     "t": "Les nombres au-delà de 100",
+     "g": "Compter au-delà de 100 et lire des prix en euros.",
+     "p": [
+      "Cem vaut exactement 100 ; à partir de 101, on dit cento : cento e um, cento e cinquenta.",
+      "Les centaines s'accordent : duzentos euros, duzentas pessoas. Mil (1000) est invariable : dois mil.",
+      "Prix : três euros e vinte (cêntimos). Au Portugal, cêntimos ; au Brésil, centavos."
+     ],
+     "q": "Quel nombre compte pour toi, comme un numéro de rue ou une année ? Dis-le en portugais.",
+     "c": "Lis à voix haute en portugais cinq nombres de plus de 100 que tu vois aujourd'hui."
+    },
+    "it": {
+     "t": "Numeri oltre il 100",
+     "g": "Conti oltre il 100 e leggi i prezzi in euro.",
+     "p": [
+      "Cem è esattamente 100; da 101 si dice cento: cento e um, cento e cinquenta.",
+      "Le centinaia si accordano: duzentos euros, duzentas pessoas. Mil (1000) non cambia: dois mil.",
+      "Prezzi: três euros e vinte (cêntimos). In Portogallo cêntimos; in Brasile centavos."
+     ],
+     "q": "Qual è un numero importante per te, come un civico o un anno? Dillo in portoghese.",
+     "c": "Leggi ad alta voce in portoghese cinque numeri sopra il 100 che vedi oggi: prezzi, pagine o civici."
+    },
+    "pt": {
+     "t": "Números acima de 100",
+     "g": "Revê as centenas, os milhares e a leitura de preços.",
+     "p": [
+      "Cem só para 100 exato; depois cento e: cento e vinte. Duzentas e trezentas concordam com nomes femininos.",
+      "Em Portugal diz-se cêntimos; no Brasil, centavos. Os preços leem-se igual: dois euros e cinquenta.",
+      "Atenção a um milhão de pessoas, que leva de, ao contrário de mil pessoas."
+     ],
+     "q": "Qual é o número mais alto que já tiveste de dizer em voz alta numa conversa?",
+     "c": "Lê em voz alta os números de cinco páginas de um livro acima de 100, depressa e sem hesitar."
+    },
+    "pt_BR": {
+     "t": "Números acima de 100",
+     "g": "Revise centenas e milhares e a leitura de preços em euros.",
+     "p": [
+      "Os números são iguais: cem, cento e um, duzentos, quinhentos, mil.",
+      "Em Portugal a moeda é o euro, e os centavos chamam-se cêntimos: um euro e vinte cêntimos.",
+      "As centenas concordam igual ao Brasil: duzentas pessoas, trezentas casas."
+     ],
+     "q": "Que número você mais usa no trabalho ou nos estudos?",
+     "c": "Leia cinco números acima de 100 em voz alta imitando o ritmo do português europeu."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "cem",
+      "ex": "Cem pessoas vêm à festa."
+     },
+     {
+      "w": "cento e um",
+      "ex": "O quarto é o cento e um."
+     },
+     {
+      "w": "duzentos / duzentas",
+      "ex": "Há duzentas pessoas na sala."
+     },
+     {
+      "w": "quinhentos",
+      "ex": "A ponte tem quinhentos metros."
+     },
+     {
+      "w": "mil",
+      "ex": "Mil obrigados!"
+     },
+     {
+      "w": "o euro / o cêntimo",
+      "ex": "Custa dois euros e cinquenta cêntimos."
+     }
+    ],
+    "gram": "Cem é só 100; a partir de 101 diz-se cento e: cento e dez. As centenas concordam: duzentos livros, duzentas casas. Mil não muda."
+   }
+  },
+  {
+   "d": 53,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Demonstratives",
+     "g": "Point to things near and far with este, esse and aquele.",
+     "p": [
+      "Este/esta (this, near me, aqui), esse/essa (that, near you, aí), aquele/aquela (that over there, ali).",
+      "Isto, isso and aquilo are neutral, for things without naming them: O que é isto?",
+      "They combine with de and em: deste, nessa, daquele. In everyday Brazilian, este and esse often merge into esse."
+     ],
+     "q": "Look around: what is near you, what is near someone else, what is far away?",
+     "c": "Point at three objects today and name them in Portuguese with este, esse and aquele."
+    },
+    "de": {
+     "t": "Demonstrativa",
+     "g": "Du zeigst mit este, esse und aquele auf Nahes und Fernes.",
+     "p": [
+      "Este/esta (dies hier, bei mir, aqui), esse/essa (das da, bei dir, aí), aquele/aquela (das dort, ali).",
+      "Isto, isso und aquilo sind neutral, für Dinge ohne Namen: O que é isto? (Was ist das?)",
+      "Sie verbinden sich mit de und em: deste, nessa, daquele. Im brasilianischen Alltag verschmelzen este und esse oft zu esse."
+     ],
+     "q": "Schau dich um: Was ist bei dir, was bei jemand anderem, was weit weg?",
+     "c": "Zeig heute auf drei Dinge und benenne sie auf Portugiesisch mit este, esse und aquele."
+    },
+    "es": {
+     "t": "Demostrativos",
+     "g": "Señalar cosas cercanas y lejanas con este, esse y aquele.",
+     "p": [
+      "Este/esta (este, aquí), esse/essa (ese, ahí), aquele/aquela (aquel, allí). Como en español.",
+      "Isto, isso y aquilo son neutros, como esto, eso y aquello: O que é isto?",
+      "Se combinan con de y em: deste, nessa, daquele. En el habla de Brasil este y esse se suelen confundir en esse."
+     ],
+     "q": "Mira a tu alrededor: ¿qué está cerca de ti, cerca de otra persona y lejos?",
+     "c": "Señala hoy tres objetos y nómbralos en portugués con este, esse y aquele."
+    },
+    "fr": {
+     "t": "Les démonstratifs",
+     "g": "Montrer ce qui est proche ou loin avec este, esse et aquele.",
+     "p": [
+      "Este/esta (ceci, près de moi, aqui), esse/essa (cela, près de toi, aí), aquele/aquela (là-bas, ali).",
+      "Isto, isso et aquilo sont neutres, comme ceci, cela : O que é isto? (Qu'est-ce que c'est ?)",
+      "Ils se combinent avec de et em : deste, nessa, daquele. Au Brésil, à l'oral, este et esse se confondent souvent en esse."
+     ],
+     "q": "Regarde autour de toi : qu'est-ce qui est près de toi, près d'un autre, loin ?",
+     "c": "Montre trois objets aujourd'hui et nomme-les en portugais avec este, esse et aquele."
+    },
+    "it": {
+     "t": "Dimostrativi",
+     "g": "Indichi cose vicine e lontane con este, esse e aquele.",
+     "p": [
+      "Este/esta (questo, vicino a me, aqui), esse/essa (codesto, vicino a te, aí), aquele/aquela (quello, ali).",
+      "Isto, isso e aquilo sono neutri, per cose senza nome: O que é isto? (Cos'è questo?)",
+      "Si uniscono a de ed em: deste, nessa, daquele. Nel parlato brasiliano este ed esse spesso diventano solo esse."
+     ],
+     "q": "Guardati intorno: cosa è vicino a te, vicino a qualcun altro e lontano?",
+     "c": "Indica oggi tre oggetti e nominali in portoghese con este, esse e aquele."
+    },
+    "pt": {
+     "t": "Demonstrativos",
+     "g": "Revê os três graus dos demonstrativos e as contrações com de e em.",
+     "p": [
+      "Este (aqui), esse (aí), aquele (ali): em Portugal a distinção entre este e esse mantém-se viva.",
+      "No Brasil, na fala, esse substitui muitas vezes este: essa casa aqui.",
+      "Isto, isso e aquilo não variam; contraem-se: disto, nisso, daquilo. Disso não percebo nada!"
+     ],
+     "q": "Há algum objeto em tua casa com uma história curiosa? O que é aquilo?",
+     "c": "Escreve três frases sobre objetos à tua volta, uma com cada grau de distância."
+    },
+    "pt_BR": {
+     "t": "Demonstrativos",
+     "g": "Revise os demonstrativos e a distinção forte entre este e esse em Portugal.",
+     "p": [
+      "Em Portugal, este é para o que está perto de quem fala e esse para o que está perto de quem ouve.",
+      "Lá, essa mesa aqui soa estranho: diz-se esta mesa aqui.",
+      "Isto, isso e aquilo são iguais; os portugueses dizem muito Isto é giro!"
+     ],
+     "q": "Que objeto perto de você teria uma boa história para contar?",
+     "c": "Fale três frases à portuguesa com este aqui, esse aí e aquele ali."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "este / esta",
+      "ex": "Este livro aqui é meu."
+     },
+     {
+      "w": "esse / essa",
+      "ex": "Essa mala aí é tua?"
+     },
+     {
+      "w": "aquele / aquela",
+      "ex": "Aquela casa lá ao fundo é do meu avô."
+     },
+     {
+      "w": "isto",
+      "ex": "O que é isto?"
+     },
+     {
+      "w": "isso",
+      "ex": "Isso é muito interessante."
+     },
+     {
+      "w": "aquilo",
+      "ex": "Aquilo ali é o castelo."
+     }
+    ],
+    "gram": "Este (aqui, perto de mim), esse (aí, perto de ti), aquele (ali, longe dos dois). Isto, isso e aquilo não mudam."
+   }
+  },
+  {
+   "d": 54,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Poder, querer, saber",
+     "g": "Use three key irregular verbs: can, want and know.",
+     "p": [
+      "Poder (can, may): posso, podes, pode, podemos, podem. Posso entrar? = May I come in?",
+      "Querer (want): quero, queres, quer, queremos, querem. Saber (know): sei, sabes, sabe, sabemos, sabem.",
+      "Saber + verb means know how to: Sei nadar (I can swim). Poder is about permission or possibility."
+     ],
+     "q": "What can you do well, and what would you like to learn to do?",
+     "c": "Write three sentences each with posso, quero and sei about your real life."
+    },
+    "de": {
+     "t": "Poder, querer, saber",
+     "g": "Du benutzt drei wichtige unregelmäßige Verben: können, wollen, wissen.",
+     "p": [
+      "Poder (können, dürfen): posso, podes, pode, podemos, podem. Posso entrar? = Darf ich reinkommen?",
+      "Querer (wollen): quero, queres, quer, queremos, querem. Saber (wissen): sei, sabes, sabe, sabemos, sabem.",
+      "Saber + Verb heißt etwas können (gelernt): Sei nadar. Poder geht um Erlaubnis oder Möglichkeit."
+     ],
+     "q": "Was kannst du gut und was möchtest du gern lernen?",
+     "c": "Schreib je drei Sätze mit posso, quero und sei über dein echtes Leben."
+    },
+    "es": {
+     "t": "Poder, querer, saber",
+     "g": "Usar tres verbos irregulares clave: poder, querer y saber.",
+     "p": [
+      "Poder: posso, podes, pode, podemos, podem. Posso entrar? = ¿Puedo pasar?",
+      "Querer: quero, queres, quer, queremos, querem. Saber: sei, sabes, sabe, sabemos, sabem.",
+      "Saber + verbo es saber hacer algo: Sei nadar. Poder habla de permiso o posibilidad, como en español."
+     ],
+     "q": "¿Qué sabes hacer bien y qué te gustaría aprender?",
+     "c": "Escribe tres frases con posso, tres con quero y tres con sei sobre tu vida real."
+    },
+    "fr": {
+     "t": "Poder, querer, saber",
+     "g": "Utiliser trois verbes irréguliers clés : pouvoir, vouloir et savoir.",
+     "p": [
+      "Poder (pouvoir) : posso, podes, pode, podemos, podem. Posso entrar? = Je peux entrer ?",
+      "Querer (vouloir) : quero, queres, quer, queremos, querem. Saber : sei, sabes, sabe, sabemos, sabem.",
+      "Saber + verbe = savoir faire : Sei nadar (je sais nager). Poder parle de permission ou de possibilité."
+     ],
+     "q": "Que sais-tu bien faire, et qu'aimerais-tu apprendre ?",
+     "c": "Écris trois phrases avec posso, trois avec quero et trois avec sei sur ta vraie vie."
+    },
+    "it": {
+     "t": "Poder, querer, saber",
+     "g": "Usi tre verbi irregolari chiave: potere, volere e sapere.",
+     "p": [
+      "Poder (potere): posso, podes, pode, podemos, podem. Posso entrar? = Posso entrare?",
+      "Querer (volere): quero, queres, quer, queremos, querem. Saber: sei, sabes, sabe, sabemos, sabem.",
+      "Saber + verbo significa saper fare: Sei nadar (so nuotare). Poder riguarda permesso o possibilità."
+     ],
+     "q": "Cosa sai fare bene e cosa ti piacerebbe imparare?",
+     "c": "Scrivi tre frasi con posso, tre con quero e tre con sei sulla tua vita reale."
+    },
+    "pt": {
+     "t": "Poder, querer, saber",
+     "g": "Revê três verbos irregulares essenciais e a diferença entre saber e poder.",
+     "p": [
+      "Posso, quero e sei são irregulares na primeira pessoa; as outras formas seguem quase o padrão.",
+      "Sei nadar fala de uma capacidade aprendida; posso nadar fala de permissão ou possibilidade.",
+      "Pode ser é uma resposta muito portuguesa para aceitar uma proposta sem grande entusiasmo."
+     ],
+     "q": "Que coisa sabes fazer que poucas pessoas à tua volta sabem?",
+     "c": "Escreve três frases em que saber e poder mudariam o sentido se os trocasses."
+    },
+    "pt_BR": {
+     "t": "Poder, querer, saber",
+     "g": "Revise poder, querer e saber com as formas de tu usadas em Portugal.",
+     "p": [
+      "Podes, queres e sabes são as formas normais entre amigos em Portugal: Queres um café?",
+      "Connosco é a grafia portuguesa de conosco: Queres vir connosco?",
+      "Pode ser! é muito usado em Portugal para aceitar um convite."
+     ],
+     "q": "O que você sabe fazer que gostaria de ensinar a alguém?",
+     "c": "Faça três convites à portuguesa com queres e responda com pode ser."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "poder",
+      "ex": "Posso abrir a janela?"
+     },
+     {
+      "w": "querer",
+      "ex": "Queres vir jantar connosco?"
+     },
+     {
+      "w": "saber",
+      "ex": "Sabes onde fica o correio?"
+     },
+     {
+      "w": "sei nadar",
+      "ex": "Sei nadar, mas não muito bem."
+     },
+     {
+      "w": "não sei",
+      "ex": "Não sei a resposta."
+     },
+     {
+      "w": "pode ser",
+      "ex": "Amanhã? Pode ser!"
+     }
+    ],
+    "gram": "Posso, podes, pode, podemos, podem. Quero, queres, quer, queremos, querem. Sei, sabes, sabe, sabemos, sabem."
+   }
+  },
+  {
+   "d": 55,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Estar a + infinitive",
+     "g": "Say what is happening right now with the European present continuous.",
+     "p": [
+      "In Portugal: estar + a + infinitive. Estou a ler (I am reading). O que estás a fazer?",
+      "In Brazil: estar + gerund in -ndo. Estou lendo, está fazendo. Both are understood everywhere.",
+      "Use it for actions in progress now: Neste momento estou a estudar português."
+     ],
+     "q": "What are you doing right now, apart from talking to me?",
+     "c": "Five times today, stop and say in Portuguese what you are doing: Estou a..."
+    },
+    "de": {
+     "t": "Estar a + Infinitiv",
+     "g": "Du sagst mit der europäischen Verlaufsform, was gerade passiert.",
+     "p": [
+      "In Portugal: estar + a + Infinitiv. Estou a ler (Ich lese gerade). O que estás a fazer?",
+      "In Brasilien: estar + Gerundium auf -ndo. Estou lendo, está fazendo. Beides versteht man überall.",
+      "Für Handlungen, die gerade laufen: Neste momento estou a estudar português."
+     ],
+     "q": "Was machst du gerade, außer mit mir zu reden?",
+     "c": "Halte heute fünfmal inne und sag auf Portugiesisch, was du gerade tust: Estou a..."
+    },
+    "es": {
+     "t": "Estar a + infinitivo",
+     "g": "Decir lo que está pasando ahora con el presente continuo europeo.",
+     "p": [
+      "En Portugal: estar + a + infinitivo. Estou a ler (estoy leyendo). O que estás a fazer?",
+      "En Brasil: estar + gerundio en -ndo, como en español: estou lendo. Ambas se entienden en todas partes.",
+      "Se usa para acciones en curso: Neste momento estou a estudar português."
+     ],
+     "q": "¿Qué estás haciendo ahora mismo, además de hablar conmigo?",
+     "c": "Cinco veces hoy, para y di en portugués lo que estás haciendo: Estou a..."
+    },
+    "fr": {
+     "t": "Estar a + infinitif",
+     "g": "Dire ce qui se passe en ce moment avec la forme progressive européenne.",
+     "p": [
+      "Au Portugal : estar + a + infinitif. Estou a ler (je suis en train de lire). O que estás a fazer?",
+      "Au Brésil : estar + gérondif en -ndo. Estou lendo. Les deux sont compris partout.",
+      "Ça ressemble à « être en train de » : Neste momento estou a estudar português."
+     ],
+     "q": "Que fais-tu en ce moment, à part me parler ?",
+     "c": "Cinq fois aujourd'hui, arrête-toi et dis en portugais ce que tu es en train de faire : Estou a..."
+    },
+    "it": {
+     "t": "Estar a + infinito",
+     "g": "Dici cosa sta succedendo adesso con il presente progressivo europeo.",
+     "p": [
+      "In Portogallo: estar + a + infinito. Estou a ler (sto leggendo). O que estás a fazer?",
+      "In Brasile: estar + gerundio in -ndo, come in italiano: estou lendo. Si capiscono entrambe ovunque.",
+      "Si usa per azioni in corso: Neste momento estou a estudar português."
+     ],
+     "q": "Cosa stai facendo adesso, oltre a parlare con me?",
+     "c": "Cinque volte oggi fermati e di' in portoghese cosa stai facendo: Estou a..."
+    },
+    "pt": {
+     "t": "Estar a + infinitivo",
+     "g": "Revê a perífrase estar a + infinitivo, uma marca clara do português europeu.",
+     "p": [
+      "Estou a ler é europeu; estou lendo é brasileiro, mas também se ouve no Alentejo e no Algarve.",
+      "Esta construção serve para ações em curso: O que estás a fazer? Estou a cozinhar.",
+      "Para quem aprende, é útil saber as duas formas e escolher uma de forma coerente."
+     ],
+     "q": "O que costumas estar a fazer às oito da noite?",
+     "c": "Envia a um amigo uma mensagem a contar o que estás a fazer, com estar a + infinitivo."
+    },
+    "pt_BR": {
+     "t": "Estar a + infinitivo",
+     "g": "Aprenda a forma portuguesa do gerúndio: estar a + infinitivo.",
+     "p": [
+      "Em Portugal: estou a ler, estás a fazer, está a chover. No Brasil: estou lendo, está fazendo, está chovendo.",
+      "O sentido é o mesmo: uma ação em andamento agora.",
+      "Usar o gerúndio em Portugal não é erro e todos entendem, mas soa claramente brasileiro."
+     ],
+     "q": "O que você está fazendo agora? Responda à portuguesa.",
+     "c": "Transforme cinco frases suas com gerúndio em frases com estar a + infinitivo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "estou a ler",
+      "ex": "Estou a ler um livro muito bom."
+     },
+     {
+      "w": "estás a fazer",
+      "ex": "O que estás a fazer?"
+     },
+     {
+      "w": "está a trabalhar",
+      "ex": "O Rui está a trabalhar agora."
+     },
+     {
+      "w": "estamos a ver",
+      "ex": "Estamos a ver um filme."
+     },
+     {
+      "w": "estão a jogar",
+      "ex": "As crianças estão a jogar no parque."
+     },
+     {
+      "w": "neste momento",
+      "ex": "Neste momento estou a cozinhar."
+     }
+    ],
+    "gram": "Em Portugal a ação em curso é estar a + infinitivo: estou a ler. No Brasil usa-se estar + gerúndio: estou lendo."
+   }
+  },
+  {
+   "d": 56,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Hobbies and free time",
+     "g": "Talk about what you do in your free time and at the weekend.",
+     "p": [
+      "Os tempos livres means free time: Nos tempos livres gosto de ler, ouvir música e passear.",
+      "Sport is o desporto in Portugal and o esporte in Brazil: faço desporto, jogo ténis.",
+      "Ask O que fazes ao fim de semana? (Portugal) or no fim de semana (Brazil)."
+     ],
+     "q": "What is your favourite thing to do at the weekend?",
+     "c": "Write five sentences about your free time with gosto de, faço, ouço and passeio."
+    },
+    "de": {
+     "t": "Hobbys und Freizeit",
+     "g": "Du sprichst über deine Freizeit und dein Wochenende.",
+     "p": [
+      "Os tempos livres heißt Freizeit: Nos tempos livres gosto de ler, ouvir música e passear.",
+      "Sport heißt in Portugal o desporto, in Brasilien o esporte: faço desporto, jogo ténis.",
+      "Frag O que fazes ao fim de semana? (Portugal) oder no fim de semana (Brasilien)."
+     ],
+     "q": "Was machst du am Wochenende am liebsten?",
+     "c": "Schreib fünf Sätze über deine Freizeit mit gosto de, faço, ouço und passeio."
+    },
+    "es": {
+     "t": "Aficiones y tiempo libre",
+     "g": "Hablar de lo que haces en tu tiempo libre y el fin de semana.",
+     "p": [
+      "Os tempos livres es el tiempo libre: Nos tempos livres gosto de ler, ouvir música e passear.",
+      "Deporte es o desporto en Portugal y o esporte en Brasil: faço desporto, jogo ténis.",
+      "Pregunta O que fazes ao fim de semana? (Portugal) o no fim de semana (Brasil)."
+     ],
+     "q": "¿Qué es lo que más te gusta hacer el fin de semana?",
+     "c": "Escribe cinco frases sobre tu tiempo libre con gosto de, faço, ouço y passeio."
+    },
+    "fr": {
+     "t": "Loisirs et temps libre",
+     "g": "Parler de ce que tu fais pendant ton temps libre et le week-end.",
+     "p": [
+      "Os tempos livres, c'est le temps libre : Nos tempos livres gosto de ler, ouvir música e passear.",
+      "Le sport se dit o desporto au Portugal et o esporte au Brésil : faço desporto, jogo ténis.",
+      "Demande O que fazes ao fim de semana? (Portugal) ou no fim de semana (Brésil)."
+     ],
+     "q": "Qu'est-ce que tu préfères faire le week-end ?",
+     "c": "Écris cinq phrases sur tes loisirs avec gosto de, faço, ouço et passeio."
+    },
+    "it": {
+     "t": "Hobby e tempo libero",
+     "g": "Parli di cosa fai nel tempo libero e nel fine settimana.",
+     "p": [
+      "Os tempos livres è il tempo libero: Nos tempos livres gosto de ler, ouvir música e passear.",
+      "Lo sport è o desporto in Portogallo e o esporte in Brasile: faço desporto, jogo ténis.",
+      "Chiedi O que fazes ao fim de semana? (Portogallo) o no fim de semana (Brasile)."
+     ],
+     "q": "Qual è la cosa che preferisci fare nel fine settimana?",
+     "c": "Scrivi cinque frasi sul tuo tempo libero con gosto de, faço, ouço e passeio."
+    },
+    "pt": {
+     "t": "Passatempos e tempos livres",
+     "g": "Revê o vocabulário dos tempos livres e as variantes europeias e brasileiras.",
+     "p": [
+      "Desporto, ténis e ao fim de semana são portugueses; no Brasil: esporte, tênis e no fim de semana.",
+      "Ouvir faz ouço no presente: ouço música, ouço podcasts no carro.",
+      "Passear e dar uma volta são muito usados em Portugal para sair sem destino certo."
+     ],
+     "q": "Qual é o passatempo que gostavas de ter mais tempo para fazer?",
+     "c": "Escreve um pequeno parágrafo sobre o teu fim de semana ideal com cinco atividades."
+    },
+    "pt_BR": {
+     "t": "Passatempos e tempos livres",
+     "g": "Revise o vocabulário de lazer como se diz em Portugal.",
+     "p": [
+      "Em Portugal: o desporto é o esporte, o ténis (com acento agudo) é o tênis, e lazer é tempos livres.",
+      "Ao fim de semana é a forma portuguesa de no fim de semana.",
+      "Dar uma volta é muito comum para passear: Vamos dar uma volta à beira-rio?"
+     ],
+     "q": "O que você mais gosta de fazer nos tempos livres, como diria um português?",
+     "c": "Descreva seu fim de semana com desporto, tempos livres e dar uma volta."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "os tempos livres",
+      "ex": "Nos tempos livres gosto de ler."
+     },
+     {
+      "w": "fazer desporto",
+      "ex": "Faço desporto três vezes por semana."
+     },
+     {
+      "w": "ouvir música",
+      "ex": "Ouço música no comboio."
+     },
+     {
+      "w": "passear",
+      "ex": "Ao domingo passeamos à beira-mar."
+     },
+     {
+      "w": "cozinhar",
+      "ex": "Adoro cozinhar para os amigos."
+     },
+     {
+      "w": "o fim de semana",
+      "ex": "O que fazes ao fim de semana?"
+     }
+    ],
+    "gram": "Em Portugal diz-se desporto e ao fim de semana; no Brasil, esporte e no fim de semana. Ouvir é irregular: ouço."
+   }
+  },
+  {
+   "d": 57,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Jogar or tocar?",
+     "g": "Choose the right verb for games, sports and musical instruments.",
+     "p": [
+      "Jogar is for games and sports: jogar futebol, jogar ténis, jogar xadrez, jogar às cartas.",
+      "Tocar is for instruments: tocar piano, tocar guitarra, tocar bateria (drums). No article needed.",
+      "In Portugal guitarra is any guitar; in Brazil violão is acoustic and guitarra is electric."
+     ],
+     "q": "Do you play a sport or an instrument? Answer with jogo or toco.",
+     "c": "Make a list of three games and three instruments and say if you play them: jogo..., não toco..."
+    },
+    "de": {
+     "t": "Jogar oder tocar?",
+     "g": "Du wählst das richtige Verb für Spiele, Sport und Instrumente.",
+     "p": [
+      "Jogar für Spiele und Sport: jogar futebol, jogar ténis, jogar xadrez, jogar às cartas.",
+      "Tocar für Instrumente: tocar piano, tocar guitarra, tocar bateria (Schlagzeug). Ohne Artikel.",
+      "In Portugal ist guitarra jede Gitarre; in Brasilien ist violão akustisch und guitarra elektrisch."
+     ],
+     "q": "Spielst du einen Sport oder ein Instrument? Antworte mit jogo oder toco.",
+     "c": "Notiere drei Spiele und drei Instrumente und sag, ob du sie spielst: jogo..., não toco..."
+    },
+    "es": {
+     "t": "¿Jogar o tocar?",
+     "g": "Elegir el verbo correcto para juegos, deportes e instrumentos.",
+     "p": [
+      "Jogar es jugar, para juegos y deportes: jogar futebol, jogar ténis, jogar xadrez (ajedrez).",
+      "Tocar es para instrumentos, como en español: tocar piano, tocar guitarra, tocar bateria.",
+      "En Portugal guitarra es cualquier guitarra; en Brasil violão es la acústica y guitarra la eléctrica."
+     ],
+     "q": "¿Practicas algún deporte o tocas un instrumento? Responde con jogo o toco.",
+     "c": "Haz una lista de tres juegos y tres instrumentos y di si los practicas: jogo..., não toco..."
+    },
+    "fr": {
+     "t": "Jogar ou tocar ?",
+     "g": "Choisir le bon verbe pour les jeux, les sports et les instruments.",
+     "p": [
+      "Jogar sert pour les jeux et les sports : jogar futebol, jogar ténis, jogar xadrez (échecs).",
+      "Tocar sert pour les instruments : tocar piano, tocar guitarra, tocar bateria. Sans article, contrairement au français.",
+      "Au Portugal, guitarra désigne toute guitare ; au Brésil, violão est acoustique et guitarra électrique."
+     ],
+     "q": "Fais-tu un sport ou joues-tu d'un instrument ? Réponds avec jogo ou toco.",
+     "c": "Liste trois jeux et trois instruments et dis si tu les pratiques : jogo..., não toco..."
+    },
+    "it": {
+     "t": "Jogar o tocar?",
+     "g": "Scegli il verbo giusto per giochi, sport e strumenti musicali.",
+     "p": [
+      "Jogar è per giochi e sport: jogar futebol, jogar ténis, jogar xadrez (scacchi), jogar às cartas.",
+      "Tocar è per gli strumenti, come suonare: tocar piano, tocar guitarra, tocar bateria. Senza articolo.",
+      "In Portogallo guitarra è qualsiasi chitarra; in Brasile violão è acustica e guitarra elettrica."
+     ],
+     "q": "Pratichi uno sport o suoni uno strumento? Rispondi con jogo o toco.",
+     "c": "Fai una lista di tre giochi e tre strumenti e di' se li pratichi: jogo..., não toco..."
+    },
+    "pt": {
+     "t": "Jogar ou tocar?",
+     "g": "Revê a escolha entre jogar e tocar e uma diferença curiosa entre os dois países.",
+     "p": [
+      "Jogar para jogos e desportos, tocar para instrumentos: um erro comum de quem fala inglês é dizer jogar piano.",
+      "Em Portugal joga-se às cartas; no Brasil, joga-se cartas ou baralho.",
+      "Guitarra em Portugal é qualquer guitarra; a guitarra portuguesa é também o instrumento típico do fado."
+     ],
+     "q": "Há algum instrumento que gostavas de saber tocar?",
+     "c": "Pergunta a três pessoas se jogam algum desporto ou tocam algum instrumento e anota as respostas."
+    },
+    "pt_BR": {
+     "t": "Jogar ou tocar?",
+     "g": "Revise jogar e tocar e o nome dos instrumentos em Portugal.",
+     "p": [
+      "Em Portugal, guitarra é o seu violão; a elétrica é a guitarra elétrica.",
+      "A guitarra portuguesa, de doze cordas, é o instrumento que acompanha o fado.",
+      "Jogar às cartas é a forma portuguesa de jogar baralho."
+     ],
+     "q": "Você toca algum instrumento ou joga algum desporto?",
+     "c": "Escreva três frases sobre música e jogos usando guitarra e jogar às cartas à portuguesa."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "jogar futebol",
+      "ex": "Ao sábado jogo futebol com os amigos."
+     },
+     {
+      "w": "jogar às cartas",
+      "ex": "Os meus avós jogam às cartas."
+     },
+     {
+      "w": "jogar xadrez",
+      "ex": "Sabes jogar xadrez?"
+     },
+     {
+      "w": "tocar guitarra",
+      "ex": "O meu irmão toca guitarra."
+     },
+     {
+      "w": "tocar piano",
+      "ex": "Ela toca piano desde criança."
+     },
+     {
+      "w": "tocar bateria",
+      "ex": "Quero aprender a tocar bateria."
+     }
+    ],
+    "gram": "Jogar para jogos e desportos (jogar ténis, jogar às cartas); tocar para instrumentos (tocar piano). Não há artigo antes do instrumento."
+   }
+  },
+  {
+   "d": 58,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "The body",
+     "g": "Name parts of the body and say what hurts.",
+     "p": [
+      "A cabeça (head), a garganta (throat), as costas (back), o braço (arm), a perna (leg), o pé (foot).",
+      "To say what hurts, Portugal makes the body part the subject of doer: Dói-me a cabeça (my head hurts me).",
+      "With plural body parts the verb is plural: Doem-me os pés. In Brazil: Estou com dor de cabeça."
+     ],
+     "q": "After a long walk, what hurts first: your feet, your legs or your back?",
+     "c": "Touch and name ten parts of your body in Portuguese, then say one sentence with dói-me."
+    },
+    "de": {
+     "t": "Der Körper",
+     "g": "Du benennst Körperteile und sagst, was weh tut.",
+     "p": [
+      "A cabeça (Kopf), a garganta (Hals), as costas (Rücken), o braço (Arm), a perna (Bein), o pé (Fuß).",
+      "Für Schmerzen nimmt man in Portugal doer wie im Deutschen: Dói-me a cabeça (Mir tut der Kopf weh).",
+      "Bei mehreren Teilen steht das Verb im Plural: Doem-me os pés. In Brasilien: Estou com dor de cabeça."
+     ],
+     "q": "Was tut nach einem langen Spaziergang zuerst weh: Füße, Beine oder Rücken?",
+     "c": "Berühre und benenne zehn Körperteile auf Portugiesisch und sag dann einen Satz mit dói-me."
+    },
+    "es": {
+     "t": "El cuerpo",
+     "g": "Nombrar partes del cuerpo y decir qué te duele.",
+     "p": [
+      "A cabeça (cabeza), a garganta, as costas (espalda), o braço (brazo), a perna (pierna), o pé (pie).",
+      "Para el dolor, en Portugal doer funciona como doler: Dói-me a cabeça (me duele la cabeza).",
+      "En plural: Doem-me os pés (me duelen los pies). En Brasil: Estou com dor de cabeça."
+     ],
+     "q": "Después de una larga caminata, ¿qué te duele primero: los pies, las piernas o la espalda?",
+     "c": "Toca y nombra diez partes de tu cuerpo en portugués y luego di una frase con dói-me."
+    },
+    "fr": {
+     "t": "Le corps",
+     "g": "Nommer les parties du corps et dire où tu as mal.",
+     "p": [
+      "A cabeça (tête), a garganta (gorge), as costas (dos), o braço (bras), a perna (jambe), o pé (pied).",
+      "Pour la douleur, au Portugal on dit Dói-me a cabeça, littéralement « me fait mal la tête ».",
+      "Au pluriel, le verbe s'accorde : Doem-me os pés. Au Brésil : Estou com dor de cabeça."
+     ],
+     "q": "Après une longue marche, qu'est-ce qui te fait mal en premier : les pieds, les jambes ou le dos ?",
+     "c": "Touche et nomme dix parties de ton corps en portugais, puis dis une phrase avec dói-me."
+    },
+    "it": {
+     "t": "Il corpo",
+     "g": "Nomini le parti del corpo e dici cosa ti fa male.",
+     "p": [
+      "A cabeça (testa), a garganta (gola), as costas (schiena), o braço (braccio), a perna (gamba), o pé (piede).",
+      "Per il dolore, in Portogallo si usa doer come in italiano: Dói-me a cabeça (mi fa male la testa).",
+      "Al plurale: Doem-me os pés (mi fanno male i piedi). In Brasile: Estou com dor de cabeça."
+     ],
+     "q": "Dopo una lunga camminata, cosa ti fa male per primo: piedi, gambe o schiena?",
+     "c": "Tocca e nomina dieci parti del corpo in portoghese, poi di' una frase con dói-me."
+    },
+    "pt": {
+     "t": "O corpo",
+     "g": "Revê o vocabulário do corpo e as formas de dizer que algo dói.",
+     "p": [
+      "Dói-me a cabeça e doem-me as costas são muito europeus; o verbo concorda com a parte do corpo.",
+      "No Brasil diz-se mais estou com dor de cabeça ou minha cabeça está doendo.",
+      "As costas é sempre plural; muitos estrangeiros dizem a costa, que é a zona junto ao mar."
+     ],
+     "q": "Que parte do corpo te cansa mais depois de um dia de trabalho?",
+     "c": "Escreve três frases com dói-me e três com doem-me, verificando a concordância."
+    },
+    "pt_BR": {
+     "t": "O corpo",
+     "g": "Revise as partes do corpo e a forma portuguesa de dizer que algo dói.",
+     "p": [
+      "Em Portugal: Dói-me a cabeça, em vez de Estou com dor de cabeça ou Minha cabeça dói.",
+      "No plural o verbo também vai para o plural: Doem-me os pés.",
+      "Em Portugal, partir o braço é quebrar o braço."
+     ],
+     "q": "Qual parte do corpo dói depois de um dia longo? Responda à portuguesa.",
+     "c": "Fale três frases com dói-me e doem-me sobre um dia cansativo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "a cabeça",
+      "ex": "Dói-me a cabeça."
+     },
+     {
+      "w": "a garganta",
+      "ex": "Dói-me a garganta desde ontem."
+     },
+     {
+      "w": "as costas",
+      "ex": "Doem-me as costas depois do ginásio."
+     },
+     {
+      "w": "o braço",
+      "ex": "Parti o braço quando era criança."
+     },
+     {
+      "w": "a perna",
+      "ex": "Tenho as pernas cansadas."
+     },
+     {
+      "w": "o pé",
+      "ex": "Doem-me os pés destes sapatos."
+     }
+    ],
+    "gram": "Em Portugal diz-se dói-me a cabeça (uma coisa) e doem-me os pés (várias). No Brasil é comum estou com dor de cabeça."
+   }
+  },
+  {
+   "d": 59,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "At the pharmacy",
+     "g": "Use simple phrases for a visit to the pharmacy.",
+     "p": [
+      "Precisar always needs de: Preciso de alguma coisa para a garganta (I need something for my throat).",
+      "Useful words: o comprimido (tablet), o xarope (syrup), a receita (prescription), o farmacêutico.",
+      "Ask Tem algo para a tosse? and follow the pharmacist's advice; for anything serious, see a doctor."
+     ],
+     "q": "How would you ask for something for a sore throat in a pharmacy in Lisbon?",
+     "c": "Write a short pharmacy dialogue: greet, say what hurts with dói-me and ask for something with preciso de."
+    },
+    "de": {
+     "t": "In der Apotheke",
+     "g": "Du nutzt einfache Sätze für einen Besuch in der Apotheke.",
+     "p": [
+      "Precisar braucht immer de: Preciso de alguma coisa para a garganta (Ich brauche etwas für den Hals).",
+      "Nützlich: o comprimido (Tablette), o xarope (Sirup), a receita (Rezept), o farmacêutico (Apotheker).",
+      "Frag Tem algo para a tosse? und folge dem Rat in der Apotheke; bei Ernstem geh zum Arzt."
+     ],
+     "q": "Wie fragst du in einer Apotheke in Lissabon nach etwas gegen Halsschmerzen?",
+     "c": "Schreib einen kurzen Apothekendialog: Gruß, mit dói-me sagen, was weh tut, und mit preciso de bitten."
+    },
+    "es": {
+     "t": "En la farmacia",
+     "g": "Usar frases sencillas para una visita a la farmacia.",
+     "p": [
+      "Precisar siempre lleva de: Preciso de alguma coisa para a garganta (necesito algo para la garganta).",
+      "Palabras útiles: o comprimido, o xarope (jarabe), a receita (receta), o farmacêutico.",
+      "Pregunta Tem algo para a tosse? y sigue el consejo del farmacéutico; si es algo serio, ve al médico."
+     ],
+     "q": "¿Cómo pedirías algo para el dolor de garganta en una farmacia de Lisboa?",
+     "c": "Escribe un diálogo corto en la farmacia: saluda, di qué te duele con dói-me y pide con preciso de."
+    },
+    "fr": {
+     "t": "À la pharmacie",
+     "g": "Utiliser des phrases simples pour une visite à la pharmacie.",
+     "p": [
+      "Precisar demande toujours de : Preciso de alguma coisa para a garganta (j'ai besoin de quelque chose pour la gorge).",
+      "Mots utiles : o comprimido (comprimé), o xarope (sirop), a receita (ordonnance), o farmacêutico.",
+      "Demande Tem algo para a tosse? et suis les conseils du pharmacien ; pour un souci sérieux, consulte un médecin."
+     ],
+     "q": "Comment demanderais-tu quelque chose pour un mal de gorge dans une pharmacie à Lisbonne ?",
+     "c": "Écris un court dialogue à la pharmacie : salue, dis où tu as mal avec dói-me et demande avec preciso de."
+    },
+    "it": {
+     "t": "In farmacia",
+     "g": "Usi frasi semplici per una visita in farmacia.",
+     "p": [
+      "Precisar vuole sempre de: Preciso de alguma coisa para a garganta (ho bisogno di qualcosa per la gola).",
+      "Parole utili: o comprimido (compressa), o xarope (sciroppo), a receita (ricetta), o farmacêutico.",
+      "Chiedi Tem algo para a tosse? e segui il consiglio del farmacista; per cose serie, vai dal medico."
+     ],
+     "q": "Come chiederesti qualcosa per il mal di gola in una farmacia di Lisbona?",
+     "c": "Scrivi un breve dialogo in farmacia: saluta, di' cosa ti fa male con dói-me e chiedi con preciso de."
+    },
+    "pt": {
+     "t": "Na farmácia",
+     "g": "Revê as frases úteis numa farmácia e como ajudar um estrangeiro a fazer-se entender.",
+     "p": [
+      "Precisar de: preciso de alguma coisa para a garganta. Muitos estrangeiros esquecem o de.",
+      "Comprimido, xarope, receita e pomada são palavras iguais nos dois países; no Brasil diz-se também remédio.",
+      "Em Portugal, as farmácias de serviço garantem que há sempre uma aberta; o farmacêutico aconselha, o médico diagnostica."
+     ],
+     "q": "Que frase achas mais útil ensinar a um turista para uma ida à farmácia?",
+     "c": "Escreve um pequeno diálogo modelo de farmácia para um amigo estrangeiro, com cinco falas."
+    },
+    "pt_BR": {
+     "t": "Na farmácia",
+     "g": "Revise as frases de farmácia e algumas palavras de Portugal.",
+     "p": [
+      "Em Portugal diz-se medicamento mais do que remédio, e a receita médica é igual.",
+      "Lá há sempre uma farmácia de serviço aberta à noite, indicada na porta das outras farmácias.",
+      "Precisar de é igual: Preciso de alguma coisa para a garganta. Para algo sério, consulte um médico."
+     ],
+     "q": "Como você pediria algo para a tosse numa farmácia em Lisboa?",
+     "c": "Escreva um diálogo curto de farmácia à portuguesa, com dói-me e preciso de."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "a farmácia",
+      "ex": "Há uma farmácia aberta perto daqui?"
+     },
+     {
+      "w": "preciso de",
+      "ex": "Preciso de alguma coisa para a garganta."
+     },
+     {
+      "w": "o comprimido",
+      "ex": "Tome um comprimido depois do almoço."
+     },
+     {
+      "w": "o xarope",
+      "ex": "Tem um xarope para a tosse?"
+     },
+     {
+      "w": "a receita",
+      "ex": "Este medicamento precisa de receita?"
+     },
+     {
+      "w": "o farmacêutico",
+      "ex": "O farmacêutico explica tudo muito bem."
+     }
+    ],
+    "gram": "Precisar pede de: preciso de ajuda, preciso de um xarope. Para pedir, diz-se Queria alguma coisa para... ou Tem algo para...?"
+   }
+  },
+  {
+   "d": 60,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Review: everyday life",
+     "g": "Put your second month together in real everyday situations.",
+     "p": [
+      "At the café and in shops: queria, se faz favor, quanto custa?, posso experimentar?",
+      "Around town and at home: onde fica?, vire à esquerda, há, em cima de, vou ao, vou para.",
+      "Your day: levanto-me, faço, estou a ler, sempre, às vezes, está sol, dói-me. Two months done!"
+     ],
+     "q": "Can you describe your perfect Saturday in Portugal, from breakfast to bedtime?",
+     "c": "Describe yesterday as a short story in the present tense: café, transport, weather, shopping and evening."
+    },
+    "de": {
+     "t": "Wiederholung: Alltag",
+     "g": "Du bringst deinen zweiten Monat in echten Alltagssituationen zusammen.",
+     "p": [
+      "Im Café und Laden: queria, se faz favor, quanto custa?, posso experimentar?",
+      "In der Stadt und zu Hause: onde fica?, vire à esquerda, há, em cima de, vou ao, vou para.",
+      "Dein Tag: levanto-me, faço, estou a ler, sempre, às vezes, está sol, dói-me. Zwei Monate geschafft!"
+     ],
+     "q": "Kannst du deinen perfekten Samstag in Portugal beschreiben, vom Frühstück bis zum Schlafengehen?",
+     "c": "Erzähl den gestrigen Tag als kleine Geschichte im Präsens: Café, Verkehr, Wetter, Einkauf und Abend."
+    },
+    "es": {
+     "t": "Repaso: la vida diaria",
+     "g": "Reunir tu segundo mes en situaciones cotidianas reales.",
+     "p": [
+      "En el café y en las tiendas: queria, se faz favor, quanto custa?, posso experimentar?",
+      "Por la ciudad y en casa: onde fica?, vire à esquerda, há, em cima de, vou ao, vou para.",
+      "Tu día: levanto-me, faço, estou a ler, sempre, às vezes, está sol, dói-me. ¡Dos meses completados!"
+     ],
+     "q": "¿Puedes describir tu sábado perfecto en Portugal, del desayuno a la hora de dormir?",
+     "c": "Cuenta el día de ayer como una pequeña historia en presente: café, transporte, tiempo, compras y noche."
+    },
+    "fr": {
+     "t": "Révision : la vie quotidienne",
+     "g": "Rassembler ton deuxième mois dans des situations concrètes du quotidien.",
+     "p": [
+      "Au café et en magasin : queria, se faz favor, quanto custa?, posso experimentar?",
+      "En ville et à la maison : onde fica?, vire à esquerda, há, em cima de, vou ao, vou para.",
+      "Ta journée : levanto-me, faço, estou a ler, sempre, às vezes, está sol, dói-me. Deux mois déjà !"
+     ],
+     "q": "Peux-tu décrire ton samedi parfait au Portugal, du petit-déjeuner au coucher ?",
+     "c": "Raconte ta journée d'hier comme une petite histoire au présent : café, transport, météo, achats et soirée."
+    },
+    "it": {
+     "t": "Ripasso: la vita quotidiana",
+     "g": "Metti insieme il secondo mese in situazioni reali di tutti i giorni.",
+     "p": [
+      "Al bar e nei negozi: queria, se faz favor, quanto custa?, posso experimentar?",
+      "In città e a casa: onde fica?, vire à esquerda, há, em cima de, vou ao, vou para.",
+      "La tua giornata: levanto-me, faço, estou a ler, sempre, às vezes, está sol, dói-me. Due mesi fatti!"
+     ],
+     "q": "Riesci a descrivere il tuo sabato perfetto in Portogallo, dalla colazione a quando vai a dormire?",
+     "c": "Racconta la giornata di ieri come una breve storia al presente: bar, trasporti, tempo, acquisti e sera."
+    },
+    "pt": {
+     "t": "Revisão: o dia a dia",
+     "g": "Junta o que reviste no segundo mês em situações reais do quotidiano.",
+     "p": [
+      "No café e nas lojas: bica, galão, queria, se faz favor, quanto custa?, posso experimentar?",
+      "Na cidade e em casa: onde fica?, siga em frente, há, à frente de, ao pé de, ir a e ir para.",
+      "No dia a dia: levanto-me, não me levanto, estou a ler, dói-me, e as diferenças com o Brasil."
+     ],
+     "q": "Como seria um sábado perfeito para ti, do pequeno-almoço ao jantar?",
+     "c": "Conta o teu dia de ontem em oito frases no presente, como se o estivesses a narrar a um estrangeiro."
+    },
+    "pt_BR": {
+     "t": "Revisão: o dia a dia",
+     "g": "Junte o segundo mês num dia completo vivido à portuguesa.",
+     "p": [
+      "No café e nas lojas: bica, galão, pequeno-almoço, se faz favor, Fico com este.",
+      "Na cidade: autocarro, comboio, apanhar, siga em frente, rotunda, ao pé de.",
+      "No dia a dia: levanto-me, estou a ler, está a chover, dói-me, camisola e casa de banho."
+     ],
+     "q": "Como seria seu sábado perfeito em Lisboa, contado com palavras de Portugal?",
+     "c": "Conte seu dia de ontem em oito frases usando pelo menos cinco palavras de Portugal."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "uma bica, se faz favor",
+      "ex": "Uma bica e um pastel de nata, se faz favor."
+     },
+     {
+      "w": "onde fica...?",
+      "ex": "Onde fica a paragem do autocarro?"
+     },
+     {
+      "w": "levanto-me",
+      "ex": "Levanto-me cedo durante a semana."
+     },
+     {
+      "w": "está a chover",
+      "ex": "Leva o guarda-chuva, está a chover."
+     },
+     {
+      "w": "posso experimentar?",
+      "ex": "Posso experimentar este casaco?"
+     },
+     {
+      "w": "dói-me",
+      "ex": "Dói-me um pouco a cabeça."
+     }
+    ],
+    "gram": "Revisão: pedidos com queria, há, preposições e contrações, ir, fazer, verbos reflexos, estar a + infinitivo e poder, querer e saber."
+   }
+  }
+ ]
+}

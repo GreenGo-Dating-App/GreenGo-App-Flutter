@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_portuguese",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Estar: the other to be",
+     "g": "Conjugate estar and use it for where you are and how you feel.",
+     "p": [
+      "Eu estou, tu estás, ele/ela/você está, nós estamos, eles/elas/vocês estão.",
+      "Estar tells where someone is right now: Estou em casa. Estamos no café.",
+      "It also tells how you feel at the moment: Estou cansado, estou contente, está doente."
+     ],
+     "q": "Where are you right now, and how are you feeling? Answer with estou.",
+     "c": "Three times today, stop and describe in Portuguese where you are and how you feel: Estou no... Estou..."
+    },
+    "de": {
+     "t": "Estar: das andere sein",
+     "g": "Du konjugierst estar und sagst damit, wo du bist und wie du dich fühlst.",
+     "p": [
+      "Eu estou, tu estás, ele/ela/você está, nós estamos, eles/elas/vocês estão.",
+      "Estar sagt, wo jemand gerade ist: Estou em casa. Estamos no café.",
+      "Es beschreibt auch Gefühle und Zustände im Moment: Estou cansado, estou contente."
+     ],
+     "q": "Wo bist du gerade und wie fühlst du dich? Antworte mit estou.",
+     "c": "Halte heute dreimal inne und beschreibe auf Portugiesisch, wo du bist und wie es dir geht."
+    },
+    "es": {
+     "t": "Estar: el otro verbo ser",
+     "g": "Conjugar estar y usarlo para decir dónde estás y cómo te sientes.",
+     "p": [
+      "Eu estou, tu estás, ele/ela/você está, nós estamos, eles/elas/vocês estão. Casi como en español.",
+      "Estar dice dónde está alguien ahora: Estou em casa. Estamos no café.",
+      "También expresa estados y emociones del momento: Estou cansado, estou contente."
+     ],
+     "q": "¿Dónde estás ahora mismo y cómo te sientes? Responde con estou.",
+     "c": "Tres veces hoy, para y describe en portugués dónde estás y cómo te sientes."
+    },
+    "fr": {
+     "t": "Estar : l'autre verbe être",
+     "g": "Conjuguer estar et dire où tu es et comment tu te sens.",
+     "p": [
+      "Eu estou, tu estás, ele/ela/você está, nós estamos, eles/elas/vocês estão.",
+      "Estar indique où l'on se trouve maintenant : Estou em casa. Estamos no café.",
+      "Il exprime aussi l'état du moment : Estou cansado (fatigué), estou contente."
+     ],
+     "q": "Où es-tu en ce moment et comment te sens-tu ? Réponds avec estou.",
+     "c": "Trois fois aujourd'hui, arrête-toi et décris en portugais où tu es et comment tu te sens."
+    },
+    "it": {
+     "t": "Estar: l'altro essere",
+     "g": "Coniughi estar e lo usi per dire dove sei e come ti senti.",
+     "p": [
+      "Eu estou, tu estás, ele/ela/você está, nós estamos, eles/elas/vocês estão. Ricorda il verbo stare.",
+      "Estar dice dove si trova qualcuno adesso: Estou em casa. Estamos no café.",
+      "Esprime anche stati d'animo del momento: Estou cansado (stanco), estou contente."
+     ],
+     "q": "Dove sei adesso e come ti senti? Rispondi con estou.",
+     "c": "Tre volte oggi fermati e descrivi in portoghese dove sei e come ti senti."
+    },
+    "pt": {
+     "t": "Estar: o outro verbo ser",
+     "g": "Revê o presente de estar e os seus usos para lugar e estados passageiros.",
+     "p": [
+      "Eu estou, tu estás, ele/ela/você está, nós estamos, eles/elas/vocês estão.",
+      "Estar diz onde alguém se encontra e como se sente agora: Estou no comboio, estou cansada.",
+      "No Brasil é comum encurtar na fala: tô, tá, tamos. Em Portugal ouve-se tá bem, mas menos."
+     ],
+     "q": "Como estás hoje, numa palavra? E onde costumas estar a esta hora?",
+     "c": "Envia hoje uma mensagem a alguém a contar onde estás e como estás, só com o verbo estar."
+    },
+    "pt_BR": {
+     "t": "Estar: o outro verbo ser",
+     "g": "Revise o presente de estar, incluindo a forma tu estás, comum em Portugal.",
+     "p": [
+      "Eu estou, tu estás, ele/ela/você está, nós estamos, eles/elas/vocês estão.",
+      "Na fala brasileira o tô e o tá são muito comuns; em Portugal diz-se mais estou e está, completos.",
+      "Os usos são os mesmos: lugar e estado do momento, como Estou em casa, estou cansado."
+     ],
+     "q": "Onde você está agora e como está se sentindo? Responda com frases completas.",
+     "c": "Fale hoje três frases com estou bem pronunciado, sem encurtar para tô."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "estou",
+      "ex": "Estou em casa agora."
+     },
+     {
+      "w": "estás",
+      "ex": "Estás cansado hoje?"
+     },
+     {
+      "w": "está",
+      "ex": "A Sofia está no escritório."
+     },
+     {
+      "w": "estamos",
+      "ex": "Estamos muito contentes!"
+     },
+     {
+      "w": "estão",
+      "ex": "Os miúdos estão na escola."
+     },
+     {
+      "w": "cansado / cansada",
+      "ex": "Estou cansada depois do trabalho."
+     }
+    ],
+    "gram": "Estar no presente: eu estou, tu estás, ele/ela/você está, nós estamos, eles/elas/vocês estão."
+   }
+  },
+  {
+   "d": 12,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Ser or estar?",
+     "g": "Choose between ser and estar with clear everyday examples.",
+     "p": [
+      "Ser describes what something is: identity, origin, character, profession. O Rui é simpático.",
+      "Estar describes a state or where someone is now: Estou doente, está no Porto.",
+      "For fixed places like buildings, Portuguese often uses ficar: Onde fica o museu?"
+     ],
+     "q": "What is the difference between A Ana é calma and A Ana está calma?",
+     "c": "Write two sentences about a friend: one with é for character and one with está for today."
+    },
+    "de": {
+     "t": "Ser oder estar?",
+     "g": "Du entscheidest zwischen ser und estar anhand klarer Alltagsbeispiele.",
+     "p": [
+      "Ser beschreibt, was etwas ist: Identität, Herkunft, Charakter, Beruf. O Rui é simpático.",
+      "Estar beschreibt einen Zustand oder den Ort jetzt: Estou doente, está no Porto.",
+      "Für feste Orte wie Gebäude nimmt man oft ficar: Onde fica o museu?"
+     ],
+     "q": "Was ist der Unterschied zwischen A Ana é calma und A Ana está calma?",
+     "c": "Schreib zwei Sätze über einen Freund: einen mit é für den Charakter, einen mit está für heute."
+    },
+    "es": {
+     "t": "¿Ser o estar?",
+     "g": "Elegir entre ser y estar con ejemplos cotidianos claros.",
+     "p": [
+      "Como en español, ser describe identidad, origen, carácter y profesión: O Rui é simpático.",
+      "Estar describe estados y dónde está alguien: Estou doente, está no Porto.",
+      "Para lugares fijos como edificios se usa mucho ficar: Onde fica o museu? (¿dónde queda?)."
+     ],
+     "q": "¿Qué diferencia hay entre A Ana é calma y A Ana está calma?",
+     "c": "Escribe dos frases sobre un amigo: una con é sobre su carácter y otra con está sobre hoy."
+    },
+    "fr": {
+     "t": "Ser ou estar ?",
+     "g": "Choisir entre ser et estar avec des exemples simples du quotidien.",
+     "p": [
+      "Ser décrit ce qu'est une chose : identité, origine, caractère, métier. O Rui é simpático.",
+      "Estar décrit un état ou l'endroit où l'on est : Estou doente, está no Porto.",
+      "Pour les lieux fixes comme les bâtiments, on dit souvent ficar : Onde fica o museu?"
+     ],
+     "q": "Quelle différence entre A Ana é calma et A Ana está calma ?",
+     "c": "Écris deux phrases sur un ami : une avec é pour son caractère, une avec está pour aujourd'hui."
+    },
+    "it": {
+     "t": "Ser o estar?",
+     "g": "Scegli tra ser e estar con esempi chiari di tutti i giorni.",
+     "p": [
+      "Ser descrive cosa è qualcosa: identità, origine, carattere, professione. O Rui é simpático.",
+      "Estar descrive uno stato o dove si trova qualcuno ora: Estou doente, está no Porto.",
+      "Per luoghi fissi come gli edifici si usa spesso ficar: Onde fica o museu?"
+     ],
+     "q": "Che differenza c'è tra A Ana é calma e A Ana está calma?",
+     "c": "Scrivi due frasi su un amico: una con é per il carattere e una con está per oggi."
+    },
+    "pt": {
+     "t": "Ser ou estar?",
+     "g": "Revê a escolha entre ser e estar e os casos que mais confundem quem aprende.",
+     "p": [
+      "Ser para o que é próprio de alguém (é alta, é do Porto); estar para o momento (está cansada).",
+      "Para lugares fixos usa-se ficar: Onde fica a estação? Para eventos usa-se ser: A festa é em casa da Ana.",
+      "Ser feliz e estar feliz dizem coisas diferentes: um traço de caráter ou um momento bom."
+     ],
+     "q": "Que adjetivo usas muitas vezes com ser e com estar, mudando o sentido?",
+     "c": "Escreve um par de frases com o mesmo adjetivo, uma com ser e outra com estar, e compara."
+    },
+    "pt_BR": {
+     "t": "Ser ou estar?",
+     "g": "Revise ser e estar e veja o uso de ficar, muito frequente em Portugal.",
+     "p": [
+      "A regra é a mesma do Brasil: ser para características, estar para estados e lugar no momento.",
+      "Para prédios e lugares fixos, os portugueses usam muito ficar: Onde fica a estação?",
+      "Em Portugal, em casa de é comum: A festa é em casa da Ana, onde no Brasil se diz na casa da Ana."
+     ],
+     "q": "Qual é a diferença entre O café é bom e O café está bom?",
+     "c": "Pergunte a localização de três lugares da sua cidade com Onde fica...?"
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "ser simpático",
+      "ex": "O Rui é simpático."
+     },
+     {
+      "w": "estar contente",
+      "ex": "Hoje estou muito contente."
+     },
+     {
+      "w": "ser alto",
+      "ex": "O meu irmão é alto."
+     },
+     {
+      "w": "estar doente",
+      "ex": "A Ana está doente, não vem."
+     },
+     {
+      "w": "ficar",
+      "ex": "Onde fica o museu?"
+     },
+     {
+      "w": "a festa",
+      "ex": "A festa é em casa da Joana."
+     }
+    ],
+    "gram": "Ser para características e identidade (sou calmo); estar para estados e lugar (estou nervoso, estou no Porto)."
+   }
+  },
+  {
+   "d": 13,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Nouns: masculine and feminine",
+     "g": "Recognise the gender of Portuguese nouns from their endings and learn key exceptions.",
+     "p": [
+      "Every noun is masculine or feminine. Most -o nouns are masculine (o livro), most -a nouns feminine (a casa).",
+      "Exceptions to remember: o dia, o mapa, o problema, o sofá are masculine; a mão and a foto are feminine.",
+      "Nouns ending in -agem, -ção and -dade are feminine: a viagem, a estação, a cidade."
+     ],
+     "q": "Can you guess the gender of a canção, o idioma and a liberdade? Why?",
+     "c": "Label five objects around you in Portuguese with o or a in front of each word."
+    },
+    "de": {
+     "t": "Nomen: männlich und weiblich",
+     "g": "Du erkennst das Geschlecht portugiesischer Nomen an der Endung und lernst wichtige Ausnahmen.",
+     "p": [
+      "Jedes Nomen ist männlich oder weiblich. Meist sind -o männlich (o livro), -a weiblich (a casa).",
+      "Ausnahmen: o dia, o mapa, o problema, o sofá sind männlich; a mão und a foto weiblich.",
+      "Nomen auf -agem, -ção und -dade sind weiblich: a viagem, a estação, a cidade."
+     ],
+     "q": "Rätst du das Geschlecht von canção, idioma und liberdade? Warum?",
+     "c": "Benenne fünf Dinge um dich herum auf Portugiesisch, jeweils mit o oder a davor."
+    },
+    "es": {
+     "t": "Sustantivos: masculino y femenino",
+     "g": "Reconocer el género de los sustantivos portugueses por su terminación y sus excepciones.",
+     "p": [
+      "Casi como en español: -o suele ser masculino (o livro) y -a femenino (a casa).",
+      "Excepciones: o dia, o mapa, o problema; a mão. Ojo: a viagem, a ordem y o leite difieren del español.",
+      "Las palabras en -agem, -ção y -dade son femeninas: a viagem, a estação, a cidade."
+     ],
+     "q": "¿Sabes el género de canção, idioma y liberdade? ¿Por qué?",
+     "c": "Pon nombre en portugués a cinco objetos de tu alrededor, con o o a delante."
+    },
+    "fr": {
+     "t": "Noms : masculin et féminin",
+     "g": "Reconnaître le genre des noms portugais grâce à leur terminaison, avec les exceptions clés.",
+     "p": [
+      "Chaque nom est masculin ou féminin. En -o, souvent masculin (o livro) ; en -a, féminin (a casa).",
+      "Exceptions : o dia, o mapa, o problema, o sofá sont masculins ; a mão et a foto féminins.",
+      "Les noms en -agem, -ção et -dade sont féminins, attention : a viagem (le voyage), a cidade."
+     ],
+     "q": "Peux-tu deviner le genre de canção, idioma et liberdade ? Pourquoi ?",
+     "c": "Nomme cinq objets autour de toi en portugais, avec o ou a devant chaque mot."
+    },
+    "it": {
+     "t": "Nomi: maschile e femminile",
+     "g": "Riconosci il genere dei nomi portoghesi dalla desinenza e impari le eccezioni principali.",
+     "p": [
+      "Come in italiano, i nomi in -o sono quasi sempre maschili (o livro) e in -a femminili (a casa).",
+      "Eccezioni: o dia, o mapa, o problema sono maschili; a mão e a foto femminili.",
+      "I nomi in -agem, -ção e -dade sono femminili: a viagem (il viaggio), a estação, a cidade."
+     ],
+     "q": "Sai indovinare il genere di canção, idioma e liberdade? Perché?",
+     "c": "Dai un nome in portoghese a cinque oggetti intorno a te, con o o a davanti."
+    },
+    "pt": {
+     "t": "Nomes: masculino e feminino",
+     "g": "Revê as regras de género e as exceções que mais enganam quem aprende português.",
+     "p": [
+      "Regra geral: -o masculino, -a feminino. Mas o dia, o mapa, o problema e o clima fogem à regra.",
+      "A mão, a foto e a tribo são femininos apesar do -o; -agem, -ção e -dade dão sempre feminino.",
+      "Para espanhóis e italianos, a viagem e a ordem confundem: nas línguas deles são masculinos."
+     ],
+     "q": "Que palavra portuguesa já viste um estrangeiro usar com o género errado?",
+     "c": "Faz uma lista de cinco nomes masculinos acabados em -a e verifica se estão certos."
+    },
+    "pt_BR": {
+     "t": "Nomes: masculino e feminino",
+     "g": "Revise o gênero dos nomes e algumas palavras que mudam entre Portugal e Brasil.",
+     "p": [
+      "As regras são iguais: -o masculino, -a feminino, com exceções como o dia, o mapa e a mão.",
+      "Algumas palavras do dia a dia mudam de nome em Portugal: o ecrã é a tela, o rato é o mouse.",
+      "-agem, -ção e -dade são sempre femininos dos dois lados: a viagem, a estação, a cidade."
+     ],
+     "q": "Você conhece outra palavra que muda de nome entre Portugal e Brasil?",
+     "c": "Escreva cinco nomes que fogem à regra do -o e -a, com o artigo certo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "o livro",
+      "ex": "O livro está em cima da mesa."
+     },
+     {
+      "w": "a casa",
+      "ex": "A casa é muito bonita."
+     },
+     {
+      "w": "o dia",
+      "ex": "Hoje é um dia bonito."
+     },
+     {
+      "w": "a mão",
+      "ex": "Lavo as mãos antes de comer."
+     },
+     {
+      "w": "o problema",
+      "ex": "Não há problema!"
+     },
+     {
+      "w": "a viagem",
+      "ex": "A viagem a Lisboa foi ótima."
+     }
+    ],
+    "gram": "Nomes em -o são quase sempre masculinos e em -a femininos, mas há exceções: o dia, o mapa, o problema, a mão."
+   }
+  },
+  {
+   "d": 14,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Plurals made easy",
+     "g": "Form Portuguese plurals and meet the three plurals of -ão words.",
+     "p": [
+      "Words ending in a vowel add -s: livro, livros. Words in -r, -s or -z add -es: flor, flores; luz, luzes.",
+      "Words in -l change to -is (animal, animais) and words in -m change to -ns (homem, homens).",
+      "Words in -ão take -ões, -ães or -ãos: limões, pães, mãos. Learn each one with its plural."
+     ],
+     "q": "Can you make the plural of hotel, mulher, irmão and jardim?",
+     "c": "Pick ten objects at home and say their plural out loud in Portuguese."
+    },
+    "de": {
+     "t": "Plural leicht gemacht",
+     "g": "Du bildest den Plural im Portugiesischen und lernst die drei Plurale der -ão-Wörter.",
+     "p": [
+      "Auf Vokal: -s anhängen: livro, livros. Auf -r, -s oder -z: -es: flor, flores; luz, luzes.",
+      "-l wird zu -is (animal, animais), -m wird zu -ns (homem, homens).",
+      "Wörter auf -ão haben -ões, -ães oder -ãos: limões, pães, mãos. Lern jedes mit seinem Plural."
+     ],
+     "q": "Wie lautet der Plural von hotel, mulher, irmão und jardim?",
+     "c": "Such dir zehn Dinge zu Hause aus und sag laut ihren Plural auf Portugiesisch."
+    },
+    "es": {
+     "t": "Plurales fáciles",
+     "g": "Formar el plural en portugués y conocer los tres plurales de las palabras en -ão.",
+     "p": [
+      "Vocal final: añade -s, livro, livros. En -r, -s o -z: añade -es, flor, flores; luz, luzes.",
+      "-l cambia a -is (animal, animais) y -m cambia a -ns (homem, homens).",
+      "Las palabras en -ão hacen -ões, -ães o -ãos: limões, pães, mãos. Apréndelas con su plural."
+     ],
+     "q": "¿Sabes el plural de hotel, mulher, irmão y jardim?",
+     "c": "Elige diez objetos de casa y di su plural en portugués en voz alta."
+    },
+    "fr": {
+     "t": "Le pluriel facile",
+     "g": "Former le pluriel en portugais et découvrir les trois pluriels des mots en -ão.",
+     "p": [
+      "Après une voyelle, on ajoute -s : livro, livros. Après -r, -s ou -z : -es, flor, flores.",
+      "-l devient -is (animal, animais) et -m devient -ns (homem, homens).",
+      "Les mots en -ão font -ões, -ães ou -ãos : limões, pães, mãos. Apprends chacun avec son pluriel."
+     ],
+     "q": "Sais-tu former le pluriel de hotel, mulher, irmão et jardim ?",
+     "c": "Choisis dix objets chez toi et dis leur pluriel en portugais à voix haute."
+    },
+    "it": {
+     "t": "Plurali facili",
+     "g": "Formi il plurale in portoghese e conosci i tre plurali delle parole in -ão.",
+     "p": [
+      "Dopo vocale si aggiunge -s: livro, livros. Dopo -r, -s o -z si aggiunge -es: flor, flores.",
+      "-l diventa -is (animal, animais) e -m diventa -ns (homem, homens).",
+      "Le parole in -ão fanno -ões, -ães o -ãos: limões, pães, mãos. Imparale con il loro plurale."
+     ],
+     "q": "Sai fare il plurale di hotel, mulher, irmão e jardim?",
+     "c": "Scegli dieci oggetti in casa e di' il loro plurale in portoghese ad alta voce."
+    },
+    "pt": {
+     "t": "Plurais sem complicações",
+     "g": "Revê as regras do plural e o famoso trio de plurais em -ão.",
+     "p": [
+      "Vogal + -s (livros), -r/-s/-z + -es (flores, luzes), -l passa a -is (papéis) e -m a -ns (homens).",
+      "O -ão tem três plurais: -ões (limões), -ães (pães) e -ãos (mãos). Alguns aceitam dois: vulcões ou vulcãos.",
+      "Para quem aprende, o melhor é decorar cada palavra em -ão junto com o seu plural."
+     ],
+     "q": "Qual é o plural em -ão que te parece mais estranho?",
+     "c": "Escreve o plural de cinco palavras em -ão e confirma num dicionário as que te deixarem dúvidas."
+    },
+    "pt_BR": {
+     "t": "Plurais sem complicações",
+     "g": "Revise as regras do plural, que são iguais em Portugal e no Brasil.",
+     "p": [
+      "Vogal + -s, -r/-s/-z + -es, -l vira -is e -m vira -ns: livros, flores, animais, homens.",
+      "Os plurais em -ão são os mesmos: limões, pães, mãos. Não há diferença entre os países.",
+      "O que muda é a pronúncia: em Lisboa o -s final soa como um ch chiado, como no Rio de Janeiro."
+     ],
+     "q": "Você conhece uma palavra em -ão com dois plurais aceitos?",
+     "c": "Leia em voz alta dez plurais chiando o -s final, à moda de Lisboa."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "os livros",
+      "ex": "Os livros estão na estante."
+     },
+     {
+      "w": "as flores",
+      "ex": "As flores do jardim são lindas."
+     },
+     {
+      "w": "os animais",
+      "ex": "Gosto muito de animais."
+     },
+     {
+      "w": "os homens",
+      "ex": "Os homens estão no café."
+     },
+     {
+      "w": "os pães",
+      "ex": "Quero dois pães, se faz favor."
+     },
+     {
+      "w": "as mãos",
+      "ex": "Tenho as mãos frias."
+     }
+    ],
+    "gram": "Junta-se -s às vogais (livros), -es a -r, -s e -z (flores), -l passa a -is (animais), -m a -ns (homens)."
+   }
+  },
+  {
+   "d": 15,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Articles: o, a, um, uma",
+     "g": "Use definite and indefinite articles in singular and plural.",
+     "p": [
+      "The: o, a, os, as. A or some: um, uma, uns, umas. They agree with the noun: os livros, umas casas.",
+      "In Portugal, first names usually take an article: O Pedro chegou. A Ana é minha amiga.",
+      "Possessives also take one: o meu carro, a minha casa. In Brazil the article is often dropped there."
+     ],
+     "q": "How would you say in Portuguese: Ana has a dog and the dog is called Max?",
+     "c": "Write three sentences about friends using o or a before each name, the Portuguese way."
+    },
+    "de": {
+     "t": "Artikel: o, a, um, uma",
+     "g": "Du verwendest bestimmte und unbestimmte Artikel in Einzahl und Mehrzahl.",
+     "p": [
+      "Der/die/das: o, a, os, as. Ein/eine: um, uma; Plural uns, umas (einige).",
+      "In Portugal stehen Vornamen meist mit Artikel: O Pedro chegou. A Ana é minha amiga.",
+      "Auch Possessive bekommen einen: o meu carro, a minha casa. In Brasilien fällt er dort oft weg."
+     ],
+     "q": "Wie sagst du: Ana hat einen Hund und der Hund heißt Max?",
+     "c": "Schreib drei Sätze über Freunde mit o oder a vor jedem Namen, auf portugiesische Art."
+    },
+    "es": {
+     "t": "Artículos: o, a, um, uma",
+     "g": "Usar los artículos definidos e indefinidos en singular y plural.",
+     "p": [
+      "El, la, los, las: o, a, os, as. Un, una, unos, unas: um, uma, uns, umas.",
+      "En Portugal, los nombres de pila suelen llevar artículo: O Pedro chegou. A Ana é minha amiga.",
+      "Los posesivos también: o meu carro, a minha casa. En Brasil a menudo se omite."
+     ],
+     "q": "¿Cómo dirías: Ana tiene un perro y el perro se llama Max?",
+     "c": "Escribe tres frases sobre amigos poniendo o o a delante de cada nombre, a la portuguesa."
+    },
+    "fr": {
+     "t": "Articles : o, a, um, uma",
+     "g": "Utiliser les articles définis et indéfinis au singulier et au pluriel.",
+     "p": [
+      "Le, la, les : o, a, os, as. Un, une, des : um, uma, uns, umas.",
+      "Au Portugal, les prénoms prennent souvent l'article : O Pedro chegou. A Ana é minha amiga.",
+      "Les possessifs aussi : o meu carro, a minha casa. Au Brésil, on l'omet souvent."
+     ],
+     "q": "Comment dirais-tu : Ana a un chien et le chien s'appelle Max ?",
+     "c": "Écris trois phrases sur des amis avec o ou a devant chaque prénom, à la portugaise."
+    },
+    "it": {
+     "t": "Articoli: o, a, um, uma",
+     "g": "Usi gli articoli determinativi e indeterminativi al singolare e al plurale.",
+     "p": [
+      "Il, la, i, le: o, a, os, as. Un, una, dei, delle: um, uma, uns, umas.",
+      "In Portogallo i nomi propri prendono spesso l'articolo, come al Nord Italia: O Pedro, a Ana.",
+      "Anche i possessivi: o meu carro, a minha casa, come il mio, la mia. In Brasile spesso si omette."
+     ],
+     "q": "Come diresti: Ana ha un cane e il cane si chiama Max?",
+     "c": "Scrivi tre frasi sugli amici con o o a davanti a ogni nome, alla portoghese."
+    },
+    "pt": {
+     "t": "Artigos: o, a, um, uma",
+     "g": "Revê os artigos e os usos tipicamente europeus que soam estranhos a outros falantes.",
+     "p": [
+      "Definidos: o, a, os, as. Indefinidos: um, uma, uns, umas. Concordam sempre com o nome.",
+      "Em Portugal diz-se o Pedro e a minha casa; no Brasil é comum Pedro chegou e minha casa.",
+      "Para quem aprende, usar o artigo antes de nomes e possessivos é uma forma rápida de soar português."
+     ],
+     "q": "Achas estranho ouvir Ana chegou sem artigo? Porquê?",
+     "c": "Repara hoje nas conversas à tua volta e conta quantas vezes ouves o ou a antes de um nome."
+    },
+    "pt_BR": {
+     "t": "Artigos: o, a, um, uma",
+     "g": "Revise os artigos e o uso português antes de nomes e possessivos.",
+     "p": [
+      "Em Portugal quase sempre se diz o Pedro, a Ana e o meu carro, com artigo.",
+      "No Brasil isso varia por região; sem artigo soa brasileiro, com artigo soa mais português.",
+      "O resto é igual: o, a, os, as, um, uma, uns, umas, sempre concordando com o nome."
+     ],
+     "q": "Na sua região, as pessoas dizem a Ana chegou ou Ana chegou?",
+     "c": "Escreva três frases sobre amigos com artigo antes do nome, como em Lisboa."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "o / a",
+      "ex": "O carro é do Pedro e a bicicleta é da Ana."
+     },
+     {
+      "w": "os / as",
+      "ex": "Os copos estão na cozinha."
+     },
+     {
+      "w": "um / uma",
+      "ex": "Queria um café e uma água."
+     },
+     {
+      "w": "uns / umas",
+      "ex": "Tenho umas perguntas."
+     },
+     {
+      "w": "o Pedro",
+      "ex": "O Pedro chega às cinco."
+     },
+     {
+      "w": "o meu carro",
+      "ex": "O meu carro é azul."
+     }
+    ],
+    "gram": "Artigos definidos: o, a, os, as. Indefinidos: um, uma, uns, umas. Em Portugal usa-se artigo antes de nomes: o Pedro."
+   }
+  },
+  {
+   "d": 16,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "My family",
+     "g": "Name the members of your family and describe it simply.",
+     "p": [
+      "Pai and mãe are father and mother; together they are os pais (the parents).",
+      "Irmão/irmã, avô/avó, tio/tia, primo/prima: a masculine plural covers both: os irmãos, os avós.",
+      "Careful: parentes means relatives, not parents. Your parents are os pais."
+     ],
+     "q": "Who is in your family? Tell me about one person you like spending time with.",
+     "c": "Draw a mini family tree and label everyone in Portuguese: o meu pai, a minha avó..."
+    },
+    "de": {
+     "t": "Meine Familie",
+     "g": "Du benennst deine Familienmitglieder und beschreibst deine Familie einfach.",
+     "p": [
+      "Pai und mãe sind Vater und Mutter; zusammen sind sie os pais (die Eltern).",
+      "Irmão/irmã, avô/avó, tio/tia, primo/prima: der männliche Plural umfasst beide: os irmãos, os avós.",
+      "Achtung: parentes heißt Verwandte, nicht Eltern. Deine Eltern sind os pais."
+     ],
+     "q": "Wer gehört zu deiner Familie? Erzähl von jemandem, mit dem du gern Zeit verbringst.",
+     "c": "Zeichne einen Mini-Stammbaum und beschrifte alle auf Portugiesisch: o meu pai, a minha avó..."
+    },
+    "es": {
+     "t": "Mi familia",
+     "g": "Nombrar a los miembros de tu familia y describirla de forma sencilla.",
+     "p": [
+      "Pai y mãe son padre y madre; juntos son os pais (los padres), como en español.",
+      "Irmão/irmã, avô/avó, tio/tia, primo/prima: el masculino plural incluye a ambos: os irmãos, os avós.",
+      "Ojo: parentes son los parientes, y o neto es el nieto, no algo limpio."
+     ],
+     "q": "¿Quién forma tu familia? Háblame de alguien con quien te gusta pasar tiempo.",
+     "c": "Dibuja un mini árbol genealógico y escribe todos los nombres en portugués: o meu pai, a minha avó..."
+    },
+    "fr": {
+     "t": "Ma famille",
+     "g": "Nommer les membres de ta famille et la décrire simplement.",
+     "p": [
+      "Pai et mãe sont le père et la mère ; ensemble, ce sont os pais (les parents).",
+      "Irmão/irmã, avô/avó, tio/tia, primo/prima : le masculin pluriel inclut les deux : os irmãos, os avós.",
+      "Attention : parentes veut dire membres de la famille au sens large, pas tes parents (os pais)."
+     ],
+     "q": "Qui compose ta famille ? Parle-moi de quelqu'un avec qui tu aimes passer du temps.",
+     "c": "Dessine un mini arbre généalogique et légende-le en portugais : o meu pai, a minha avó..."
+    },
+    "it": {
+     "t": "La mia famiglia",
+     "g": "Nomini i membri della tua famiglia e la descrivi in modo semplice.",
+     "p": [
+      "Pai e mãe sono padre e madre; insieme sono os pais (i genitori).",
+      "Irmão/irmã, avô/avó, tio/tia, primo/prima: il maschile plurale include entrambi: os irmãos, os avós.",
+      "Attenzione: parentes sono i parenti, non i genitori, proprio come in italiano."
+     ],
+     "q": "Chi fa parte della tua famiglia? Parlami di qualcuno con cui ti piace passare il tempo.",
+     "c": "Disegna un mini albero genealogico e scrivi tutti i nomi in portoghese: o meu pai, a minha avó..."
+    },
+    "pt": {
+     "t": "A minha família",
+     "g": "Revê o vocabulário da família e pratica descrevê-la de forma simples e clara.",
+     "p": [
+      "Pais, irmãos, avós: o masculino plural junta os dois géneros, o que surpreende muitos estrangeiros.",
+      "Parentes são familiares em geral; para ingleses e franceses, parents engana muito.",
+      "Em Portugal diz-se muitas vezes os miúdos para as crianças; no Brasil, as crianças ou a molecada."
+     ],
+     "q": "Quem na tua família te ensinou mais coisas?",
+     "c": "Descreve a tua família em cinco frases simples, como farias para um amigo estrangeiro."
+    },
+    "pt_BR": {
+     "t": "A minha família",
+     "g": "Revise o vocabulário da família e algumas palavras típicas de Portugal.",
+     "p": [
+      "Pai, mãe, irmãos, avós, tios e primos são iguais nos dois países.",
+      "Em Portugal, crianças são muitas vezes os miúdos; padrasto, madrasta e enteado são iguais nos dois países.",
+      "Em Portugal o possessivo leva artigo: a minha mãe, o meu irmão."
+     ],
+     "q": "Quem é a pessoa mais divertida da sua família?",
+     "c": "Descreva sua família em cinco frases à portuguesa, com artigo antes do possessivo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "o pai",
+      "ex": "O meu pai chama-se Jorge."
+     },
+     {
+      "w": "a mãe",
+      "ex": "A minha mãe é professora."
+     },
+     {
+      "w": "o irmão / a irmã",
+      "ex": "Tenho um irmão e uma irmã."
+     },
+     {
+      "w": "o avô / a avó",
+      "ex": "Os meus avós moram no Algarve."
+     },
+     {
+      "w": "os filhos",
+      "ex": "Eles têm três filhos."
+     },
+     {
+      "w": "o primo / a prima",
+      "ex": "A minha prima mora em Paris."
+     }
+    ],
+    "gram": "O masculino plural junta os dois géneros: os pais (pai e mãe), os irmãos (irmãos e irmãs), os avós."
+   }
+  },
+  {
+   "d": 17,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Ter: to have",
+     "g": "Conjugate ter and use it for things, family and age.",
+     "p": [
+      "Eu tenho, tu tens, ele/ela/você tem, nós temos, eles/elas/vocês têm.",
+      "Ter is for things and people you have: Tenho um carro. Tens irmãos?",
+      "Age always uses ter: Tenho trinta anos (I have thirty years). Ask Quantos anos tens?"
+     ],
+     "q": "What three things do you have that you could not live without?",
+     "c": "Write five sentences with tenho: your age, your family, a pet or object and something you love."
+    },
+    "de": {
+     "t": "Ter: haben",
+     "g": "Du konjugierst ter und nutzt es für Besitz, Familie und Alter.",
+     "p": [
+      "Eu tenho, tu tens, ele/ela/você tem, nós temos, eles/elas/vocês têm.",
+      "Ter steht für Dinge und Menschen, die du hast: Tenho um carro. Tens irmãos?",
+      "Das Alter sagt man immer mit ter: Tenho trinta anos (Ich habe dreißig Jahre)."
+     ],
+     "q": "Welche drei Dinge hast du, ohne die du nicht leben könntest?",
+     "c": "Schreib fünf Sätze mit tenho: Alter, Familie, ein Haustier oder Gegenstand und etwas, das du liebst."
+    },
+    "es": {
+     "t": "Ter: tener",
+     "g": "Conjugar ter y usarlo para cosas, familia y edad.",
+     "p": [
+      "Eu tenho, tu tens, ele/ela/você tem, nós temos, eles/elas/vocês têm.",
+      "Ter equivale a tener: Tenho um carro. Tens irmãos?",
+      "La edad también va con ter, como en español: Tenho trinta anos. Pregunta Quantos anos tens?"
+     ],
+     "q": "¿Qué tres cosas tienes sin las que no podrías vivir?",
+     "c": "Escribe cinco frases con tenho: tu edad, tu familia, una mascota u objeto y algo que te encanta."
+    },
+    "fr": {
+     "t": "Ter : avoir",
+     "g": "Conjuguer ter et l'utiliser pour les objets, la famille et l'âge.",
+     "p": [
+      "Eu tenho, tu tens, ele/ela/você tem, nós temos, eles/elas/vocês têm.",
+      "Ter, c'est avoir : Tenho um carro. Tens irmãos?",
+      "L'âge se dit avec ter, comme en français : Tenho trinta anos. Demande Quantos anos tens?"
+     ],
+     "q": "Quelles sont les trois choses que tu as et sans lesquelles tu ne pourrais pas vivre ?",
+     "c": "Écris cinq phrases avec tenho : ton âge, ta famille, un animal ou objet et quelque chose que tu adores."
+    },
+    "it": {
+     "t": "Ter: avere",
+     "g": "Coniughi ter e lo usi per oggetti, famiglia ed età.",
+     "p": [
+      "Eu tenho, tu tens, ele/ela/você tem, nós temos, eles/elas/vocês têm.",
+      "Ter significa avere: Tenho um carro. Tens irmãos?",
+      "L'età si dice con ter, come in italiano: Tenho trinta anos. Chiedi Quantos anos tens?"
+     ],
+     "q": "Quali tre cose hai senza le quali non potresti vivere?",
+     "c": "Scrivi cinque frasi con tenho: età, famiglia, un animale o un oggetto e qualcosa che ami."
+    },
+    "pt": {
+     "t": "Ter: o verbo ter",
+     "g": "Revê o presente de ter e os seus usos mais frequentes.",
+     "p": [
+      "Tenho, tens, tem, temos, têm: o acento de têm distingue o plural de tem, embora soem quase iguais.",
+      "Ter serve para posse, família e idade: tenho dois filhos, tenho quarenta anos.",
+      "Em Portugal diz-se muito ter de (tenho de sair); no Brasil é mais comum ter que."
+     ],
+     "q": "Que coisa tens há mais tempo e ainda usas todos os dias?",
+     "c": "Escreve três frases com tem e três com têm e lê-as em voz alta prestando atenção ao acento."
+    },
+    "pt_BR": {
+     "t": "Ter: o verbo ter",
+     "g": "Revise o presente de ter e a forma tu tens, comum em Portugal.",
+     "p": [
+      "Tenho, tens, tem, temos, têm: em Portugal tu tens é a pergunta normal entre amigos.",
+      "Em Portugal, têm (eles) soa diferente de tem: algo como tãe-ãe, com o nasal dobrado.",
+      "Lá se diz mais tenho de sair do que tenho que sair, mas as duas formas são corretas."
+     ],
+     "q": "Quantos anos você tinha quando teve seu primeiro celular?",
+     "c": "Escreva três perguntas com tens, como um português perguntaria a um amigo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "tenho",
+      "ex": "Tenho dois irmãos."
+     },
+     {
+      "w": "tens",
+      "ex": "Tens um cão?"
+     },
+     {
+      "w": "tem",
+      "ex": "A Clara tem trinta anos."
+     },
+     {
+      "w": "temos",
+      "ex": "Temos uma casa pequena."
+     },
+     {
+      "w": "têm",
+      "ex": "Eles têm muitos amigos."
+     },
+     {
+      "w": "os anos",
+      "ex": "Quantos anos tens?"
+     }
+    ],
+    "gram": "Ter no presente: tenho, tens, tem, temos, têm. A idade diz-se com ter: tenho vinte e cinco anos."
+   }
+  },
+  {
+   "d": 18,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Possessives: meu, teu, seu",
+     "g": "Use possessives and make them agree with the thing owned.",
+     "p": [
+      "Meu/minha (my), teu/tua (your, tu), seu/sua (your, polite), nosso/nossa (our).",
+      "They agree with the thing owned, not the owner: a minha casa, even if you are a man.",
+      "For his and her, Portuguese prefers dele and dela after the noun: o carro dele, a casa dela."
+     ],
+     "q": "How would you describe your favourite room with possessives: o meu..., a minha...?",
+     "c": "Name five things you own in Portuguese with o meu or a minha, checking each gender."
+    },
+    "de": {
+     "t": "Possessive: meu, teu, seu",
+     "g": "Du verwendest Possessivpronomen und passt sie an das Besessene an.",
+     "p": [
+      "Meu/minha (mein), teu/tua (dein), seu/sua (Ihr, höflich), nosso/nossa (unser).",
+      "Sie richten sich nach dem Besitz, nicht nach dem Besitzer: a minha casa, auch wenn du ein Mann bist.",
+      "Für sein und ihr nimmt man lieber dele und dela nach dem Nomen: o carro dele, a casa dela."
+     ],
+     "q": "Wie beschreibst du dein Lieblingszimmer mit Possessiven: o meu..., a minha...?",
+     "c": "Nenne fünf Dinge, die dir gehören, mit o meu oder a minha und prüf jeweils das Geschlecht."
+    },
+    "es": {
+     "t": "Posesivos: meu, teu, seu",
+     "g": "Usar los posesivos y hacerlos concordar con lo poseído.",
+     "p": [
+      "Meu/minha (mi), teu/tua (tu), seu/sua (su, formal), nosso/nossa (nuestro).",
+      "Concuerdan con lo poseído, como nuestro/nuestra, y en Portugal llevan artículo: a minha casa.",
+      "Para de él y de ella se usa dele y dela detrás: o carro dele, a casa dela."
+     ],
+     "q": "¿Cómo describirías tu habitación favorita con posesivos: o meu..., a minha...?",
+     "c": "Nombra cinco cosas tuyas en portugués con o meu o a minha, revisando el género de cada una."
+    },
+    "fr": {
+     "t": "Possessifs : meu, teu, seu",
+     "g": "Utiliser les possessifs et les accorder avec l'objet possédé.",
+     "p": [
+      "Meu/minha (mon/ma), teu/tua (ton/ta), seu/sua (votre, poli), nosso/nossa (notre).",
+      "Ils s'accordent avec l'objet, comme en français, et prennent l'article au Portugal : a minha casa.",
+      "Pour son/sa à lui ou à elle, on dit dele ou dela après le nom : o carro dele, a casa dela."
+     ],
+     "q": "Comment décrirais-tu ta pièce préférée avec des possessifs : o meu..., a minha... ?",
+     "c": "Nomme cinq choses à toi en portugais avec o meu ou a minha, en vérifiant chaque genre."
+    },
+    "it": {
+     "t": "Possessivi: meu, teu, seu",
+     "g": "Usi i possessivi e li accordi con la cosa posseduta.",
+     "p": [
+      "Meu/minha (mio), teu/tua (tuo), seu/sua (suo, cortese), nosso/nossa (nostro).",
+      "Si accordano con la cosa posseduta e in Portogallo vogliono l'articolo, come in italiano: a minha casa.",
+      "Per suo di lui e di lei si usa dele e dela dopo il nome: o carro dele, a casa dela."
+     ],
+     "q": "Come descriveresti la tua stanza preferita con i possessivi: o meu..., a minha...?",
+     "c": "Nomina cinque cose tue in portoghese con o meu o a minha, controllando il genere."
+    },
+    "pt": {
+     "t": "Possessivos: meu, teu, seu",
+     "g": "Revê os possessivos e a ambiguidade do seu, que confunde até falantes nativos.",
+     "p": [
+      "Concordam com a coisa possuída: o meu livro, as minhas chaves. Em Portugal levam artigo.",
+      "Seu pode querer dizer do senhor, dele ou dela; por isso diz-se muito o carro dele ou o livro dela.",
+      "No Brasil seu é sobretudo de você, porque teu se ouve menos em muitas regiões."
+     ],
+     "q": "Qual é o teu objeto preferido e porquê?",
+     "c": "Escreve três frases trocando seu por dele ou dela e vê qual soa mais clara."
+    },
+    "pt_BR": {
+     "t": "Possessivos: meu, teu, seu",
+     "g": "Revise os possessivos e o uso de teu, muito comum em Portugal.",
+     "p": [
+      "Em Portugal, com quem se trata por tu, o possessivo é teu/tua: a tua casa, o teu carro.",
+      "Seu fica para o senhor ou a senhora, ou para dele e dela: O senhor tem o seu bilhete?",
+      "O artigo antes do possessivo é quase obrigatório lá: o meu pai, a nossa casa."
+     ],
+     "q": "Como você perguntaria a um amigo português pelo carro dele, usando teu?",
+     "c": "Reescreva três frases suas trocando seu por teu e acrescentando o artigo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "meu / minha",
+      "ex": "O meu irmão e a minha irmã."
+     },
+     {
+      "w": "teu / tua",
+      "ex": "A tua casa é bonita."
+     },
+     {
+      "w": "seu / sua",
+      "ex": "O senhor tem o seu bilhete?"
+     },
+     {
+      "w": "nosso / nossa",
+      "ex": "A nossa cidade é pequena."
+     },
+     {
+      "w": "dele / dela",
+      "ex": "O carro dele é preto."
+     },
+     {
+      "w": "os meus amigos",
+      "ex": "Os meus amigos são do Porto."
+     }
+    ],
+    "gram": "O possessivo concorda com a coisa possuída, não com o dono: a minha casa, os meus livros. Em Portugal leva artigo."
+   }
+  },
+  {
+   "d": 19,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Numbers 21 to 100",
+     "g": "Count from 21 to 100 and say ages and amounts.",
+     "p": [
+      "Tens: vinte, trinta, quarenta, cinquenta, sessenta, setenta, oitenta, noventa, cem.",
+      "Link tens and units with e (and): vinte e um, trinta e cinco, noventa e nove.",
+      "Remember um/uma and dois/duas: vinte e uma pessoas, trinta e duas casas."
+     ],
+     "q": "How old are three people in your family? Say their ages in Portuguese.",
+     "c": "Count from 20 to 100 in tens aloud, then say the ages of three people you know."
+    },
+    "de": {
+     "t": "Zahlen von 21 bis 100",
+     "g": "Du zählst von 21 bis 100 und sagst Alter und Mengen.",
+     "p": [
+      "Zehner: vinte, trinta, quarenta, cinquenta, sessenta, setenta, oitenta, noventa, cem.",
+      "Zehner und Einer verbindest du mit e (und), aber in deutscher Reihenfolge umgekehrt: vinte e um = 21.",
+      "Denk an um/uma und dois/duas: vinte e uma pessoas, trinta e duas casas."
+     ],
+     "q": "Wie alt sind drei Menschen in deiner Familie? Sag es auf Portugiesisch.",
+     "c": "Zähl laut in Zehnerschritten bis 100 und sag dann das Alter von drei Bekannten."
+    },
+    "es": {
+     "t": "Números del 21 al 100",
+     "g": "Contar del 21 al 100 y decir edades y cantidades.",
+     "p": [
+      "Decenas: vinte, trinta, quarenta, cinquenta, sessenta, setenta, oitenta, noventa, cem.",
+      "Une decenas y unidades con e, como en español: vinte e um, trinta e cinco, noventa e nove.",
+      "Recuerda um/uma y dois/duas: vinte e uma pessoas, trinta e duas casas."
+     ],
+     "q": "¿Cuántos años tienen tres personas de tu familia? Dilo en portugués.",
+     "c": "Cuenta de diez en diez hasta 100 en voz alta y luego di la edad de tres conocidos."
+    },
+    "fr": {
+     "t": "Les nombres de 21 à 100",
+     "g": "Compter de 21 à 100 et dire des âges et des quantités.",
+     "p": [
+      "Dizaines : vinte, trinta, quarenta, cinquenta, sessenta, setenta, oitenta, noventa, cem.",
+      "Pas de soixante-dix ni de quatre-vingts : setenta (70), oitenta (80), noventa (90), tout simplement.",
+      "On relie dizaines et unités avec e : vinte e um, trinta e cinco, noventa e nove."
+     ],
+     "q": "Quel âge ont trois personnes de ta famille ? Dis-le en portugais.",
+     "c": "Compte de dix en dix jusqu'à 100 à voix haute, puis dis l'âge de trois personnes que tu connais."
+    },
+    "it": {
+     "t": "Numeri da 21 a 100",
+     "g": "Conti da 21 a 100 e dici età e quantità.",
+     "p": [
+      "Decine: vinte, trinta, quarenta, cinquenta, sessenta, setenta, oitenta, noventa, cem.",
+      "Decine e unità si uniscono con e: vinte e um, trinta e cinco, noventa e nove.",
+      "Ricorda um/uma e dois/duas: vinte e uma pessoas, trinta e duas casas."
+     ],
+     "q": "Quanti anni hanno tre persone della tua famiglia? Dillo in portoghese.",
+     "c": "Conta di dieci in dieci fino a 100 ad alta voce, poi di' l'età di tre persone che conosci."
+    },
+    "pt": {
+     "t": "Números de 21 a 100",
+     "g": "Revê as dezenas e a forma de ligar dezenas e unidades.",
+     "p": [
+      "As dezenas: vinte, trinta, quarenta, cinquenta, sessenta, setenta, oitenta, noventa, cem.",
+      "Liga-se sempre com e: trinta e três. E não esquecer o feminino: vinte e duas pessoas.",
+      "Hoje também no Brasil se escreve cinquenta sem trema; antes do acordo escrevia-se lá cinqüenta."
+     ],
+     "q": "Que idade tinhas quando fizeste a tua primeira viagem sozinho ou sozinha?",
+     "c": "Lê em voz alta todas as matrículas ou números de porta que vires hoje."
+    },
+    "pt_BR": {
+     "t": "Números de 21 a 100",
+     "g": "Revise as dezenas, que são iguais em Portugal e no Brasil.",
+     "p": [
+      "Vinte, trinta, quarenta, cinquenta, sessenta, setenta, oitenta, noventa, cem: nada muda.",
+      "O que muda é o som: em Lisboa sessenta soa quase s'senta, porque a vogal átona some.",
+      "Liga-se sempre com e: vinte e um, trinta e duas pessoas."
+     ],
+     "q": "Qual é o número de 21 a 100 que você mais usa no dia a dia?",
+     "c": "Conte de dez em dez até cem imitando o ritmo rápido do português europeu."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "vinte e um",
+      "ex": "O meu primo tem vinte e um anos."
+     },
+     {
+      "w": "trinta",
+      "ex": "O mês tem trinta dias."
+     },
+     {
+      "w": "cinquenta",
+      "ex": "Há cinquenta pessoas na sala."
+     },
+     {
+      "w": "setenta",
+      "ex": "O meu avô tem setenta e dois anos."
+     },
+     {
+      "w": "noventa",
+      "ex": "O jogo dura noventa minutos."
+     },
+     {
+      "w": "cem",
+      "ex": "Cem por cento!"
+     }
+    ],
+    "gram": "Entre dezenas e unidades usa-se e: vinte e um, trinta e cinco, noventa e nove. Cem é o número 100 exato."
+   }
+  },
+  {
+   "d": 20,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Colours",
+     "g": "Learn the basic colours and make them agree with the noun.",
+     "p": [
+      "Vermelho (red), azul (blue), verde (green), amarelo (yellow), branco (white), preto (black).",
+      "Colours come after the noun and agree: o carro vermelho, as casas brancas, os olhos azuis.",
+      "Brown is castanho in Portugal and marrom in Brazil; grey is cinzento in Portugal, cinza in Brazil."
+     ],
+     "q": "What colour is your favourite piece of clothing, and what colour is your front door?",
+     "c": "Describe five things around you with their colour, making each one agree: a mesa branca..."
+    },
+    "de": {
+     "t": "Farben",
+     "g": "Du lernst die Grundfarben und passt sie an das Nomen an.",
+     "p": [
+      "Vermelho (rot), azul (blau), verde (grün), amarelo (gelb), branco (weiß), preto (schwarz).",
+      "Farben stehen nach dem Nomen und passen sich an: o carro vermelho, as casas brancas.",
+      "Braun ist in Portugal castanho, in Brasilien marrom; grau ist cinzento bzw. cinza."
+     ],
+     "q": "Welche Farbe hat dein Lieblingskleidungsstück und welche deine Haustür?",
+     "c": "Beschreibe fünf Dinge um dich herum mit ihrer Farbe und achte auf die Endung: a mesa branca..."
+    },
+    "es": {
+     "t": "Colores",
+     "g": "Aprender los colores básicos y hacerlos concordar con el sustantivo.",
+     "p": [
+      "Vermelho (rojo), azul, verde, amarelo (amarillo), branco (blanco), preto (negro).",
+      "Van detrás del nombre y concuerdan: o carro vermelho, as casas brancas, os olhos azuis.",
+      "Ojo: rojo es vermelho, no roxo, que significa morado. Marrón es castanho en Portugal y marrom en Brasil."
+     ],
+     "q": "¿De qué color es tu prenda favorita y de qué color es la puerta de tu casa?",
+     "c": "Describe cinco cosas a tu alrededor con su color, haciendo la concordancia: a mesa branca..."
+    },
+    "fr": {
+     "t": "Les couleurs",
+     "g": "Apprendre les couleurs de base et les accorder avec le nom.",
+     "p": [
+      "Vermelho (rouge), azul (bleu), verde (vert), amarelo (jaune), branco (blanc), preto (noir).",
+      "Elles se placent après le nom et s'accordent : o carro vermelho, as casas brancas.",
+      "Marron se dit castanho au Portugal et marrom au Brésil ; gris, cinzento ou cinza."
+     ],
+     "q": "De quelle couleur est ton vêtement préféré et ta porte d'entrée ?",
+     "c": "Décris cinq objets autour de toi avec leur couleur, en faisant l'accord : a mesa branca..."
+    },
+    "it": {
+     "t": "I colori",
+     "g": "Impari i colori di base e li accordi con il nome.",
+     "p": [
+      "Vermelho (rosso), azul (blu), verde, amarelo (giallo), branco (bianco), preto (nero).",
+      "Vanno dopo il nome e si accordano: o carro vermelho, as casas brancas, os olhos azuis.",
+      "Marrone è castanho in Portogallo e marrom in Brasile; grigio è cinzento o cinza."
+     ],
+     "q": "Di che colore è il tuo capo preferito e di che colore è la porta di casa tua?",
+     "c": "Descrivi cinque cose intorno a te con il loro colore, facendo l'accordo: a mesa branca..."
+    },
+    "pt": {
+     "t": "As cores",
+     "g": "Revê as cores e as diferenças de vocabulário entre Portugal e o Brasil.",
+     "p": [
+      "As cores vêm depois do nome e concordam: o vestido branco, as camisolas brancas.",
+      "Castanho e cinzento são portugueses; no Brasil diz-se marrom e cinza. Para olhos, castanhos nos dois.",
+      "Laranja e cor-de-rosa não mudam: as saias cor-de-rosa, os casacos laranja."
+     ],
+     "q": "Que cor associas à tua cidade e porquê?",
+     "c": "Descreve a roupa que tens vestida hoje, peça a peça, com a cor certa."
+    },
+    "pt_BR": {
+     "t": "As cores",
+     "g": "Revise as cores e aprenda os nomes usados em Portugal.",
+     "p": [
+      "Em Portugal, marrom é castanho e cinza é cinzento: um casaco castanho, um céu cinzento.",
+      "Rosa diz-se mais cor-de-rosa em Portugal, e não muda no plural: as camisolas cor-de-rosa.",
+      "A concordância é a mesma: o carro branco, as casas brancas, os olhos azuis."
+     ],
+     "q": "Que cor você mais usa na roupa e por quê?",
+     "c": "Descreva cinco objetos marrons ou cinza à sua volta usando castanho e cinzento."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "vermelho",
+      "ex": "O carro vermelho é do Luís."
+     },
+     {
+      "w": "azul",
+      "ex": "Tenho uma camisola azul."
+     },
+     {
+      "w": "verde",
+      "ex": "As árvores estão verdes."
+     },
+     {
+      "w": "amarelo",
+      "ex": "A casa amarela é a minha."
+     },
+     {
+      "w": "branco",
+      "ex": "As casas brancas do Alentejo são bonitas."
+     },
+     {
+      "w": "castanho",
+      "ex": "Ela tem olhos castanhos."
+     }
+    ],
+    "gram": "As cores concordam com o nome: o carro branco, as casas brancas. Azul e verde só mudam no plural: azuis, verdes."
+   }
+  }
+ ]
+}

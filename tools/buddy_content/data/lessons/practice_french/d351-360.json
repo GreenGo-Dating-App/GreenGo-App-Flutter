@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_french",
+ "lessons": [
+  {
+   "d": 351,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Debate: technology",
+     "g": "Argue with nuance in French about screens, AI and privacy.",
+     "p": [
+      "Screens: useful for learning and staying in touch, but they can harm sleep and attention if we overuse them.",
+      "AI: it saves time and helps creativity, yet it raises questions about jobs, errors and trust.",
+      "Nuance: Ce n'est ni tout blanc ni tout noir. / Encore faut-il que... / À condition d'en faire bon usage."
+     ],
+     "q": "How does technology make your life better, and when does it get in the way?",
+     "c": "Write a nuanced French opinion on AI in four sentences, ending with à condition de."
+    },
+    "de": {
+     "t": "Debatte: Technologie",
+     "g": "Du argumentierst differenziert auf Französisch über Bildschirme, KI und Privatsphäre.",
+     "p": [
+      "Bildschirme: nützlich zum Lernen und um in Kontakt zu bleiben, aber bei zu viel Nutzung leiden Schlaf und Konzentration.",
+      "KI: spart Zeit und hilft der Kreativität, wirft aber Fragen zu Jobs, Fehlern und Vertrauen auf.",
+      "Nuancen: Ce n'est ni tout blanc ni tout noir. / Encore faut-il que... / À condition d'en faire bon usage."
+     ],
+     "q": "Wie macht Technik dein Leben besser, und wann steht sie dir im Weg?",
+     "c": "Schreib eine differenzierte Meinung zur KI in vier französischen Sätzen, am Ende mit à condition de."
+    },
+    "es": {
+     "t": "Debate: tecnología",
+     "g": "Argumenta con matices en francés sobre pantallas, IA y privacidad.",
+     "p": [
+      "Pantallas: útiles para aprender y mantener el contacto, pero su abuso perjudica el sueño y la atención.",
+      "IA: ahorra tiempo y ayuda a la creatividad, pero plantea preguntas sobre empleo, errores y confianza.",
+      "Matices: Ce n'est ni tout blanc ni tout noir. / Encore faut-il que... / À condition d'en faire bon usage."
+     ],
+     "q": "¿Cómo mejora la tecnología tu vida y cuándo te estorba?",
+     "c": "Escribe una opinión matizada en francés sobre la IA en cuatro frases, terminando con à condition de."
+    },
+    "fr": {
+     "t": "Débat : la technologie",
+     "g": "Argumenter avec nuance sur les écrans, l'IA et la vie privée.",
+     "p": [
+      "Les écrans : utiles pour apprendre et garder le contact, mais leur abus nuit au sommeil et à l'attention.",
+      "L'IA : elle fait gagner du temps et aide la créativité, mais pose des questions sur l'emploi, les erreurs et la confiance.",
+      "Nuancer : Ce n'est ni tout blanc ni tout noir. / Encore faut-il que... / À condition d'en faire bon usage."
+     ],
+     "q": "Comment la technologie améliore-t-elle ta vie, et quand te gêne-t-elle ?",
+     "c": "Écris un avis nuancé sur l'IA en quatre phrases, en terminant par à condition de."
+    },
+    "it": {
+     "t": "Dibattito: tecnologia",
+     "g": "Argomenta con sfumature in francese su schermi, IA e privacy.",
+     "p": [
+      "Schermi: utili per imparare e restare in contatto, ma il loro abuso danneggia sonno e attenzione.",
+      "IA: fa risparmiare tempo e aiuta la creatività, ma solleva domande su lavoro, errori e fiducia.",
+      "Sfumature: Ce n'est ni tout blanc ni tout noir. / Encore faut-il que... / À condition d'en faire bon usage."
+     ],
+     "q": "Come migliora la tua vita la tecnologia, e quando ti è d'intralcio?",
+     "c": "Scrivi un'opinione sfumata in francese sull'IA in quattro frasi, chiudendo con à condition de."
+    },
+    "pt": {
+     "t": "Debate: tecnologia",
+     "g": "Argumenta com nuance em francês sobre ecrãs, IA e privacidade.",
+     "p": [
+      "Ecrãs: úteis para aprender e manter o contacto, mas o abuso prejudica o sono e a atenção.",
+      "IA: poupa tempo e ajuda a criatividade, mas levanta questões sobre emprego, erros e confiança.",
+      "Nuances: Ce n'est ni tout blanc ni tout noir. / Encore faut-il que... / À condition d'en faire bon usage."
+     ],
+     "q": "Como é que a tecnologia melhora a tua vida, e quando é que atrapalha?",
+     "c": "Escreve uma opinião com nuance em francês sobre a IA em quatro frases, terminando com à condition de."
+    },
+    "pt_BR": {
+     "t": "Debate: tecnologia",
+     "g": "Argumente com nuance em francês sobre telas, IA e privacidade.",
+     "p": [
+      "Telas: úteis para aprender e manter contato, mas o excesso prejudica o sono e a atenção.",
+      "IA: economiza tempo e ajuda a criatividade, mas levanta questões sobre emprego, erros e confiança.",
+      "Nuances: Ce n'est ni tout blanc ni tout noir. / Encore faut-il que... / À condition d'en faire bon usage."
+     ],
+     "q": "Como a tecnologia melhora a sua vida, e quando ela atrapalha?",
+     "c": "Escreva uma opinião com nuance em francês sobre a IA em quatro frases, terminando com à condition de."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "l'intelligence artificielle",
+      "ex": "L'intelligence artificielle transforme de nombreux métiers."
+     },
+     {
+      "w": "le temps d'écran",
+      "ex": "Je limite mon temps d'écran le soir."
+     },
+     {
+      "w": "nuire à",
+      "ex": "Les écrans le soir nuisent au sommeil."
+     },
+     {
+      "w": "ni tout blanc ni tout noir",
+      "ex": "Le problème n'est ni tout blanc ni tout noir."
+     },
+     {
+      "w": "encore faut-il que",
+      "ex": "C'est utile, encore faut-il que l'outil soit fiable."
+     },
+     {
+      "w": "à condition de",
+      "ex": "La technologie aide, à condition d'en faire bon usage."
+     }
+    ],
+    "gram": "Encore faut-il que + subjonctif (en début de phrase, inversion) pour poser une réserve : encore faut-il qu'on sache l'utiliser."
+   }
+  },
+  {
+   "d": 352,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Storytelling with style",
+     "g": "Tell a vivid personal story in French with rhythm, suspense and dialogue.",
+     "p": [
+      "Rhythm: alternate long descriptive sentences in the imparfait with short punchy actions in the passé composé.",
+      "Suspense: Soudain..., Tout à coup..., C'est alors que..., Je n'en croyais pas mes yeux. Delay the key moment.",
+      "Dialogue: bring characters to life with quotes and verbs like s'écrier, murmurer, répondre."
+     ],
+     "q": "What is a funny or surprising thing that happened to you on a trip?",
+     "c": "Tell that story in French in six sentences with soudain, a line of dialogue and a twist."
+    },
+    "de": {
+     "t": "Stilvoll erzählen",
+     "g": "Du erzählst auf Französisch eine lebendige persönliche Geschichte mit Rhythmus, Spannung und Dialog.",
+     "p": [
+      "Rhythmus: Wechsle lange beschreibende Sätze im imparfait mit kurzen, knackigen Handlungen im passé composé ab.",
+      "Spannung: Soudain..., Tout à coup..., C'est alors que..., Je n'en croyais pas mes yeux. Den Höhepunkt hinauszögern.",
+      "Dialog: Figuren lebendig machen mit wörtlicher Rede und Verben wie s'écrier, murmurer, répondre."
+     ],
+     "q": "Was ist dir auf einer Reise Lustiges oder Überraschendes passiert?",
+     "c": "Erzähl diese Geschichte auf Französisch in sechs Sätzen mit soudain, einer Dialogzeile und einer Wendung."
+    },
+    "es": {
+     "t": "Narrar con estilo",
+     "g": "Cuenta en francés una historia personal viva con ritmo, suspense y diálogo.",
+     "p": [
+      "Ritmo: alterna frases largas descriptivas en imparfait con acciones breves e intensas en passé composé.",
+      "Suspense: Soudain..., Tout à coup..., C'est alors que..., Je n'en croyais pas mes yeux. Retrasa el momento clave.",
+      "Diálogo: da vida a los personajes con citas y verbos como s'écrier, murmurer, répondre."
+     ],
+     "q": "¿Qué cosa divertida o sorprendente te pasó en un viaje?",
+     "c": "Cuenta esa historia en francés en seis frases con soudain, una línea de diálogo y un giro."
+    },
+    "fr": {
+     "t": "Raconter avec style",
+     "g": "Raconter une histoire personnelle vivante avec du rythme, du suspense et des dialogues.",
+     "p": [
+      "Le rythme : alterner de longues phrases descriptives à l'imparfait et des actions brèves au passé composé.",
+      "Le suspense : Soudain..., Tout à coup..., C'est alors que..., Je n'en croyais pas mes yeux. On retarde le moment clé.",
+      "Le dialogue : faire parler les personnages avec des verbes comme s'écrier, murmurer, répondre."
+     ],
+     "q": "Quelle chose drôle ou surprenante t'est arrivée pendant un voyage ?",
+     "c": "Raconte cette histoire en six phrases avec soudain, une réplique de dialogue et un rebondissement."
+    },
+    "it": {
+     "t": "Raccontare con stile",
+     "g": "Racconta in francese una storia personale vivace con ritmo, suspense e dialoghi.",
+     "p": [
+      "Ritmo: alterna frasi lunghe descrittive all'imparfait con azioni brevi e incisive al passé composé.",
+      "Suspense: Soudain..., Tout à coup..., C'est alors que..., Je n'en croyais pas mes yeux. Ritarda il momento chiave.",
+      "Dialogo: dai vita ai personaggi con battute e verbi come s'écrier, murmurer, répondre."
+     ],
+     "q": "Qual è una cosa buffa o sorprendente che ti è successa in viaggio?",
+     "c": "Racconta quella storia in francese in sei frasi con soudain, una battuta di dialogo e un colpo di scena."
+    },
+    "pt": {
+     "t": "Contar com estilo",
+     "g": "Conta em francês uma história pessoal viva, com ritmo, suspense e diálogo.",
+     "p": [
+      "Ritmo: alterna frases longas descritivas no imparfait com ações curtas e fortes no passé composé.",
+      "Suspense: Soudain..., Tout à coup..., C'est alors que..., Je n'en croyais pas mes yeux. Adia o momento-chave.",
+      "Diálogo: dá vida às personagens com falas e verbos como s'écrier, murmurer, répondre."
+     ],
+     "q": "Que coisa engraçada ou surpreendente te aconteceu numa viagem?",
+     "c": "Conta essa história em francês em seis frases com soudain, uma fala de diálogo e uma reviravolta."
+    },
+    "pt_BR": {
+     "t": "Contando com estilo",
+     "g": "Conte em francês uma história pessoal viva, com ritmo, suspense e diálogo.",
+     "p": [
+      "Ritmo: alterne frases longas descritivas no imparfait com ações curtas e fortes no passé composé.",
+      "Suspense: Soudain..., Tout à coup..., C'est alors que..., Je n'en croyais pas mes yeux. Adie o momento-chave.",
+      "Diálogo: dê vida aos personagens com falas e verbos como s'écrier, murmurer, répondre."
+     ],
+     "q": "Que coisa engraçada ou surpreendente aconteceu com você numa viagem?",
+     "c": "Conte essa história em francês em seis frases com soudain, uma fala de diálogo e uma reviravolta."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "soudain",
+      "ex": "Soudain, la lumière s'est éteinte."
+     },
+     {
+      "w": "c'est alors que",
+      "ex": "C'est alors que j'ai vu mon vieil ami sur le quai."
+     },
+     {
+      "w": "je n'en croyais pas mes yeux",
+      "ex": "Je n'en croyais pas mes yeux : la mer était rose."
+     },
+     {
+      "w": "s'écrier",
+      "ex": "Regarde ! s'est écriée ma sœur."
+     },
+     {
+      "w": "murmurer",
+      "ex": "Il a murmuré quelques mots en souriant."
+     },
+     {
+      "w": "un rebondissement",
+      "ex": "L'histoire a connu un rebondissement inattendu."
+     }
+    ],
+    "gram": "Récit : imparfait pour le décor (il faisait nuit), passé composé pour les actions soudaines (soudain, j'ai entendu un bruit)."
+   }
+  },
+  {
+   "d": 353,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Paraphrasing",
+     "g": "Say things another way in French with autrement dit, c'est-à-dire and other reformulations.",
+     "p": [
+      "Signal a rephrase: autrement dit, c'est-à-dire, en d'autres termes, cela revient à dire que, bref.",
+      "Techniques: use a synonym, turn a verb into a noun (il a décidé, sa décision), or change active to passive.",
+      "Check understanding: Si je comprends bien, tu veux dire que...? / Tu veux dire par là que...?"
+     ],
+     "q": "Can you explain a word from your language that has no direct French translation?",
+     "c": "Take a French proverb and paraphrase it in two different ways using autrement dit and c'est-à-dire."
+    },
+    "de": {
+     "t": "Umschreiben",
+     "g": "Du sagst Dinge auf Französisch anders, mit autrement dit, c'est-à-dire und anderen Umformulierungen.",
+     "p": [
+      "Umformulierung ankündigen: autrement dit, c'est-à-dire, en d'autres termes, cela revient à dire que, bref.",
+      "Techniken: Synonym nutzen, Verb in Nomen verwandeln (il a décidé, sa décision) oder Aktiv in Passiv umwandeln.",
+      "Verständnis prüfen: Si je comprends bien, tu veux dire que...? / Tu veux dire par là que...?"
+     ],
+     "q": "Kannst du ein Wort aus deiner Sprache erklären, das keine direkte französische Übersetzung hat?",
+     "c": "Nimm ein französisches Sprichwort und formuliere es auf zwei Arten um, mit autrement dit und c'est-à-dire."
+    },
+    "es": {
+     "t": "Parafrasear",
+     "g": "Di las cosas de otra manera en francés con autrement dit, c'est-à-dire y otras reformulaciones.",
+     "p": [
+      "Señala la reformulación: autrement dit, c'est-à-dire, en d'autres termes, cela revient à dire que, bref.",
+      "Técnicas: usa un sinónimo, convierte un verbo en sustantivo (il a décidé, sa décision) o pasa de activa a pasiva.",
+      "Comprueba: Si je comprends bien, tu veux dire que...? / Tu veux dire par là que...?"
+     ],
+     "q": "¿Puedes explicar una palabra de tu idioma que no tiene traducción directa al francés?",
+     "c": "Toma un refrán francés y parafraséalo de dos maneras con autrement dit y c'est-à-dire."
+    },
+    "fr": {
+     "t": "La reformulation",
+     "g": "Dire les choses autrement avec autrement dit, c'est-à-dire et d'autres reformulations.",
+     "p": [
+      "Annoncer une reformulation : autrement dit, c'est-à-dire, en d'autres termes, cela revient à dire que, bref.",
+      "Les techniques : un synonyme, la nominalisation (il a décidé, sa décision) ou le passage de l'actif au passif.",
+      "Vérifier la compréhension : Si je comprends bien, tu veux dire que... ? / Tu veux dire par là que... ?"
+     ],
+     "q": "Peux-tu expliquer un mot de ta langue qui n'a pas de traduction directe en français ?",
+     "c": "Prends un proverbe et reformule-le de deux façons avec autrement dit et c'est-à-dire."
+    },
+    "it": {
+     "t": "Riformulare",
+     "g": "Di' le cose in un altro modo in francese con autrement dit, c'est-à-dire e altre riformulazioni.",
+     "p": [
+      "Annuncia la riformulazione: autrement dit, c'est-à-dire, en d'autres termes, cela revient à dire que, bref.",
+      "Tecniche: usa un sinonimo, trasforma un verbo in nome (il a décidé, sa décision) o passa dall'attivo al passivo.",
+      "Verifica: Si je comprends bien, tu veux dire que...? / Tu veux dire par là que...?"
+     ],
+     "q": "Sai spiegare una parola della tua lingua che non ha una traduzione diretta in francese?",
+     "c": "Prendi un proverbio francese e riformulalo in due modi con autrement dit e c'est-à-dire."
+    },
+    "pt": {
+     "t": "Parafrasear",
+     "g": "Diz as coisas de outra forma em francês com autrement dit, c'est-à-dire e outras reformulações.",
+     "p": [
+      "Anuncia a reformulação: autrement dit, c'est-à-dire, en d'autres termes, cela revient à dire que, bref.",
+      "Técnicas: usa um sinónimo, transforma um verbo em nome (il a décidé, sa décision) ou passa da ativa à passiva.",
+      "Verifica: Si je comprends bien, tu veux dire que...? / Tu veux dire par là que...?"
+     ],
+     "q": "Consegues explicar uma palavra da tua língua que não tem tradução direta em francês?",
+     "c": "Pega num provérbio francês e parafraseia-o de duas formas com autrement dit e c'est-à-dire."
+    },
+    "pt_BR": {
+     "t": "Parafraseando",
+     "g": "Diga as coisas de outro jeito em francês com autrement dit, c'est-à-dire e outras reformulações.",
+     "p": [
+      "Anuncie a reformulação: autrement dit, c'est-à-dire, en d'autres termes, cela revient à dire que, bref.",
+      "Técnicas: use um sinônimo, transforme um verbo em substantivo (il a décidé, sa décision) ou passe da ativa para a passiva.",
+      "Confira: Si je comprends bien, tu veux dire que...? / Tu veux dire par là que...?"
+     ],
+     "q": "Você consegue explicar uma palavra do seu idioma que não tem tradução direta em francês?",
+     "c": "Pegue um provérbio francês e parafraseie de duas formas com autrement dit e c'est-à-dire."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "autrement dit",
+      "ex": "Il est parti sans payer, autrement dit, il nous a oubliés."
+     },
+     {
+      "w": "c'est-à-dire",
+      "ex": "Je viendrai en fin de journée, c'est-à-dire vers dix-huit heures."
+     },
+     {
+      "w": "en d'autres termes",
+      "ex": "En d'autres termes, le projet est reporté."
+     },
+     {
+      "w": "cela revient à dire que",
+      "ex": "Cela revient à dire que tout le monde est d'accord."
+     },
+     {
+      "w": "reformuler",
+      "ex": "Peux-tu reformuler ta question ?"
+     },
+     {
+      "w": "tu veux dire par là que",
+      "ex": "Tu veux dire par là que c'est trop tard ?"
+     }
+    ],
+    "gram": "Nominalisation pour reformuler : ils ont décidé de partir devient leur décision de partir ; on a construit le pont, la construction du pont."
+   }
+  },
+  {
+   "d": 354,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Summarising long texts",
+     "g": "Summarise a long French text: keep the essentials, reformulate and connect the ideas.",
+     "p": [
+      "Read twice: first for the general idea, then underline the key idea of each paragraph. Ignore examples and details.",
+      "Reformulate: never copy whole sentences. Use your own words and nominalisations to be concise.",
+      "Connect: link ideas with d'abord, ensuite, cependant, en effet, ainsi. A summary is about a quarter of the original."
+     ],
+     "q": "What is the last long article or book chapter you read? Can you summarise it in two sentences?",
+     "c": "Summarise a French article of your choice in 60 to 80 words, using at least three connectors."
+    },
+    "de": {
+     "t": "Lange Texte zusammenfassen",
+     "g": "Du fasst einen langen französischen Text zusammen: Wesentliches behalten, umformulieren und Ideen verbinden.",
+     "p": [
+      "Zweimal lesen: zuerst für die Grundidee, dann die Kernaussage jedes Absatzes unterstreichen. Beispiele und Details weglassen.",
+      "Umformulieren: nie ganze Sätze kopieren. Eigene Worte und Nominalisierungen machen es knapp.",
+      "Verbinden: d'abord, ensuite, cependant, en effet, ainsi. Eine Zusammenfassung hat etwa ein Viertel der Länge."
+     ],
+     "q": "Was ist der letzte lange Artikel oder das letzte Buchkapitel, das du gelesen hast? Fass es in zwei Sätzen zusammen.",
+     "c": "Fass einen französischen Artikel deiner Wahl in 60 bis 80 Wörtern zusammen, mit mindestens drei Konnektoren."
+    },
+    "es": {
+     "t": "Resumir textos largos",
+     "g": "Resume un texto francés largo: conserva lo esencial, reformula y conecta las ideas.",
+     "p": [
+      "Lee dos veces: primero para la idea general, luego subraya la idea clave de cada párrafo. Ignora ejemplos y detalles.",
+      "Reformula: nunca copies frases enteras. Usa tus palabras y nominalizaciones para ser conciso.",
+      "Conecta: une ideas con d'abord, ensuite, cependant, en effet, ainsi. Un resumen ocupa un cuarto del original."
+     ],
+     "q": "¿Cuál es el último artículo largo o capítulo que leíste? ¿Puedes resumirlo en dos frases?",
+     "c": "Resume un artículo francés que elijas en 60 a 80 palabras, con al menos tres conectores."
+    },
+    "fr": {
+     "t": "Résumer un texte long",
+     "g": "Résumer un texte long : garder l'essentiel, reformuler et relier les idées.",
+     "p": [
+      "Lire deux fois : d'abord pour l'idée générale, puis souligner l'idée clé de chaque paragraphe. On laisse les exemples.",
+      "Reformuler : ne jamais recopier de phrases entières. Ses propres mots et la nominalisation aident à être concis.",
+      "Relier : d'abord, ensuite, cependant, en effet, ainsi. Un résumé fait environ le quart du texte."
+     ],
+     "q": "Quel est le dernier long article ou chapitre que tu as lu ? Peux-tu le résumer en deux phrases ?",
+     "c": "Résume un article de ton choix en 60 à 80 mots, avec au moins trois connecteurs."
+    },
+    "it": {
+     "t": "Riassumere testi lunghi",
+     "g": "Riassumi un lungo testo francese: tieni l'essenziale, riformula e collega le idee.",
+     "p": [
+      "Leggi due volte: prima per l'idea generale, poi sottolinea l'idea chiave di ogni paragrafo. Tralascia esempi e dettagli.",
+      "Riformula: mai copiare frasi intere. Usa parole tue e nominalizzazioni per essere conciso.",
+      "Collega: d'abord, ensuite, cependant, en effet, ainsi. Un riassunto è circa un quarto dell'originale."
+     ],
+     "q": "Qual è l'ultimo articolo lungo o capitolo che hai letto? Sai riassumerlo in due frasi?",
+     "c": "Riassumi un articolo francese a tua scelta in 60-80 parole, con almeno tre connettivi."
+    },
+    "pt": {
+     "t": "Resumir textos longos",
+     "g": "Resume um texto francês longo: mantém o essencial, reformula e liga as ideias.",
+     "p": [
+      "Lê duas vezes: primeiro para a ideia geral, depois sublinha a ideia-chave de cada parágrafo. Ignora exemplos e detalhes.",
+      "Reformula: nunca copies frases inteiras. Usa as tuas palavras e nominalizações para seres conciso.",
+      "Liga: d'abord, ensuite, cependant, en effet, ainsi. Um resumo tem cerca de um quarto do original."
+     ],
+     "q": "Qual foi o último artigo longo ou capítulo que leste? Consegues resumi-lo em duas frases?",
+     "c": "Resume um artigo francês à tua escolha em 60 a 80 palavras, com pelo menos três conectores."
+    },
+    "pt_BR": {
+     "t": "Resumindo textos longos",
+     "g": "Resuma um texto francês longo: mantenha o essencial, reformule e ligue as ideias.",
+     "p": [
+      "Leia duas vezes: primeiro para a ideia geral, depois sublinhe a ideia-chave de cada parágrafo. Ignore exemplos e detalhes.",
+      "Reformule: nunca copie frases inteiras. Use suas palavras e nominalizações para ser conciso.",
+      "Ligue: d'abord, ensuite, cependant, en effet, ainsi. Um resumo tem cerca de um quarto do original."
+     ],
+     "q": "Qual foi o último artigo longo ou capítulo que você leu? Consegue resumi-lo em duas frases?",
+     "c": "Resuma um artigo francês à sua escolha em 60 a 80 palavras, com pelo menos três conectores."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "un résumé",
+      "ex": "Rédigez un résumé de cent mots environ."
+     },
+     {
+      "w": "l'idée principale",
+      "ex": "L'idée principale apparaît dès le premier paragraphe."
+     },
+     {
+      "w": "l'essentiel",
+      "ex": "Garde l'essentiel et supprime les exemples."
+     },
+     {
+      "w": "souligner",
+      "ex": "Souligne la phrase clé de chaque partie."
+     },
+     {
+      "w": "en effet",
+      "ex": "Le projet est utile ; en effet, il crée des emplois."
+     },
+     {
+      "w": "concis",
+      "ex": "Ton résumé est clair et concis."
+     }
+    ],
+    "gram": "Dans un résumé, on garde le système d'énonciation de l'auteur sans écrire l'auteur dit que... ; on reformule au présent."
+   }
+  },
+  {
+   "d": 355,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Synthesis of documents",
+     "g": "Combine several French sources into one clear, organised text.",
+     "p": [
+      "Compare the documents: find common points (tous les documents s'accordent sur...) and differences (contrairement à...).",
+      "Organise by idea, not by document: each part covers one theme drawing on all sources. Do not add your opinion.",
+      "Cite sources neutrally: selon le document 1, l'auteur du document 2 souligne que..., tandis que..."
+     ],
+     "q": "When you research a topic, how many sources do you usually check?",
+     "c": "Read two short French texts on the same topic and write a 5-sentence synthesis with contrairement à."
+    },
+    "de": {
+     "t": "Synthese von Dokumenten",
+     "g": "Du fasst mehrere französische Quellen zu einem klaren, gegliederten Text zusammen.",
+     "p": [
+      "Dokumente vergleichen: Gemeinsamkeiten finden (tous les documents s'accordent sur...) und Unterschiede (contrairement à...).",
+      "Nach Ideen gliedern, nicht nach Dokumenten: jeder Teil behandelt ein Thema mit allen Quellen. Keine eigene Meinung.",
+      "Neutral zitieren: selon le document 1, l'auteur du document 2 souligne que..., tandis que..."
+     ],
+     "q": "Wenn du ein Thema recherchierst, wie viele Quellen prüfst du normalerweise?",
+     "c": "Lies zwei kurze französische Texte zum selben Thema und schreib eine Synthese in fünf Sätzen mit contrairement à."
+    },
+    "es": {
+     "t": "Síntesis de documentos",
+     "g": "Combina varias fuentes francesas en un texto claro y organizado.",
+     "p": [
+      "Compara los documentos: busca puntos comunes (tous les documents s'accordent sur...) y diferencias (contrairement à...).",
+      "Organiza por ideas, no por documentos: cada parte trata un tema con todas las fuentes. No añadas tu opinión.",
+      "Cita con neutralidad: selon le document 1, l'auteur du document 2 souligne que..., tandis que..."
+     ],
+     "q": "Cuando investigas un tema, ¿cuántas fuentes sueles consultar?",
+     "c": "Lee dos textos breves en francés sobre el mismo tema y escribe una síntesis de cinco frases con contrairement à."
+    },
+    "fr": {
+     "t": "La synthèse de documents",
+     "g": "Réunir plusieurs sources en un texte clair et organisé.",
+     "p": [
+      "Comparer les documents : points communs (tous les documents s'accordent sur...) et différences (contrairement à...).",
+      "Organiser par idée, pas par document : chaque partie traite un thème à partir de toutes les sources. Pas d'avis personnel.",
+      "Citer avec neutralité : selon le document 1, l'auteur du document 2 souligne que..., tandis que..."
+     ],
+     "q": "Quand tu te renseignes sur un sujet, combien de sources consultes-tu en général ?",
+     "c": "Lis deux textes courts sur un même thème et rédige une synthèse de cinq phrases avec contrairement à."
+    },
+    "it": {
+     "t": "Sintesi di documenti",
+     "g": "Unisci più fonti francesi in un testo chiaro e organizzato.",
+     "p": [
+      "Confronta i documenti: trova punti comuni (tous les documents s'accordent sur...) e differenze (contrairement à...).",
+      "Organizza per idee, non per documenti: ogni parte tratta un tema con tutte le fonti. Niente opinione personale.",
+      "Cita in modo neutro: selon le document 1, l'auteur du document 2 souligne que..., tandis que..."
+     ],
+     "q": "Quando fai ricerche su un tema, quante fonti consulti di solito?",
+     "c": "Leggi due brevi testi francesi sullo stesso tema e scrivi una sintesi di cinque frasi con contrairement à."
+    },
+    "pt": {
+     "t": "Síntese de documentos",
+     "g": "Junta várias fontes francesas num texto claro e organizado.",
+     "p": [
+      "Compara os documentos: encontra pontos comuns (tous les documents s'accordent sur...) e diferenças (contrairement à...).",
+      "Organiza por ideias, não por documentos: cada parte trata um tema com todas as fontes. Sem opinião pessoal.",
+      "Cita com neutralidade: selon le document 1, l'auteur du document 2 souligne que..., tandis que..."
+     ],
+     "q": "Quando pesquisas um tema, quantas fontes costumas consultar?",
+     "c": "Lê dois textos curtos em francês sobre o mesmo tema e escreve uma síntese de cinco frases com contrairement à."
+    },
+    "pt_BR": {
+     "t": "Síntese de documentos",
+     "g": "Junte várias fontes francesas num texto claro e organizado.",
+     "p": [
+      "Compare os documentos: encontre pontos comuns (tous les documents s'accordent sur...) e diferenças (contrairement à...).",
+      "Organize por ideias, não por documentos: cada parte trata um tema com todas as fontes. Sem opinião pessoal.",
+      "Cite com neutralidade: selon le document 1, l'auteur du document 2 souligne que..., tandis que..."
+     ],
+     "q": "Quando você pesquisa um tema, quantas fontes costuma consultar?",
+     "c": "Leia dois textos curtos em francês sobre o mesmo tema e escreva uma síntese de cinco frases com contrairement à."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "une synthèse",
+      "ex": "La synthèse doit rester objective."
+     },
+     {
+      "w": "s'accorder sur",
+      "ex": "Les deux auteurs s'accordent sur l'importance du sommeil."
+     },
+     {
+      "w": "contrairement à",
+      "ex": "Contrairement au premier texte, le second est optimiste."
+     },
+     {
+      "w": "souligner",
+      "ex": "L'article souligne le rôle des parents."
+     },
+     {
+      "w": "tandis que",
+      "ex": "Le document 1 parle des villes, tandis que le document 2 parle des campagnes."
+     },
+     {
+      "w": "une source",
+      "ex": "Il faut toujours citer ses sources."
+     }
+    ],
+    "gram": "Verbes introducteurs neutres pour rapporter : l'auteur souligne, constate, rappelle, affirme que + indicatif."
+   }
+  },
+  {
+   "d": 356,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Spontaneous speaking",
+     "g": "React quickly in French, gain time and fill gaps with style.",
+     "p": [
+      "Gain time: Bonne question ! / Voyons voir... / Comment dire... / Laissez-moi réfléchir un instant.",
+      "Fillers the French use: euh, bon, ben, en fait, du coup, tu vois. Use them lightly so you sound natural, not hesitant.",
+      "Missing word? Describe it: C'est un truc qui sert à... / C'est le contraire de... / Je ne trouve pas le mot, mais..."
+     ],
+     "q": "What do you do when you forget a word in the middle of a sentence?",
+     "c": "Answer three random questions aloud in French for 30 seconds each, without stopping."
+    },
+    "de": {
+     "t": "Spontan sprechen",
+     "g": "Du reagierst schnell auf Französisch, gewinnst Zeit und überbrückst Lücken mit Stil.",
+     "p": [
+      "Zeit gewinnen: Bonne question ! / Voyons voir... / Comment dire... / Laissez-moi réfléchir un instant.",
+      "Füllwörter der Franzosen: euh, bon, ben, en fait, du coup, tu vois. Sparsam benutzen, damit du natürlich klingst, nicht unsicher.",
+      "Wort fehlt? Umschreib es: C'est un truc qui sert à... / C'est le contraire de... / Je ne trouve pas le mot, mais..."
+     ],
+     "q": "Was tust du, wenn dir mitten im Satz ein Wort fehlt?",
+     "c": "Beantworte drei zufällige Fragen laut auf Französisch, je 30 Sekunden, ohne anzuhalten."
+    },
+    "es": {
+     "t": "Hablar con espontaneidad",
+     "g": "Reacciona rápido en francés, gana tiempo y rellena huecos con estilo.",
+     "p": [
+      "Ganar tiempo: Bonne question ! / Voyons voir... / Comment dire... / Laissez-moi réfléchir un instant.",
+      "Muletillas francesas: euh, bon, ben, en fait, du coup, tu vois. Úsalas con moderación para sonar natural, no inseguro.",
+      "¿Te falta una palabra? Descríbela: C'est un truc qui sert à... / C'est le contraire de... / Je ne trouve pas le mot, mais..."
+     ],
+     "q": "¿Qué haces cuando olvidas una palabra en medio de una frase?",
+     "c": "Responde en voz alta a tres preguntas al azar en francés, 30 segundos cada una, sin parar."
+    },
+    "fr": {
+     "t": "Parler spontanément",
+     "g": "Réagir vite, gagner du temps et combler les silences avec style.",
+     "p": [
+      "Gagner du temps : Bonne question ! / Voyons voir... / Comment dire... / Laissez-moi réfléchir un instant.",
+      "Les mots de remplissage : euh, bon, ben, en fait, du coup, tu vois. Avec modération, pour paraître naturel et pas hésitant.",
+      "Un mot manque ? On le décrit : C'est un truc qui sert à... / C'est le contraire de... / Je ne trouve pas le mot, mais..."
+     ],
+     "q": "Que fais-tu quand tu oublies un mot au milieu d'une phrase ?",
+     "c": "Réponds à voix haute à trois questions au hasard, 30 secondes chacune, sans t'arrêter."
+    },
+    "it": {
+     "t": "Parlare in modo spontaneo",
+     "g": "Reagisci in fretta in francese, guadagna tempo e riempi i vuoti con stile.",
+     "p": [
+      "Guadagnare tempo: Bonne question ! / Voyons voir... / Comment dire... / Laissez-moi réfléchir un instant.",
+      "Riempitivi francesi: euh, bon, ben, en fait, du coup, tu vois. Usali con misura per sembrare naturale, non incerto.",
+      "Ti manca una parola? Descrivila: C'est un truc qui sert à... / C'est le contraire de... / Je ne trouve pas le mot, mais..."
+     ],
+     "q": "Cosa fai quando dimentichi una parola a metà frase?",
+     "c": "Rispondi ad alta voce a tre domande a caso in francese, 30 secondi ciascuna, senza fermarti."
+    },
+    "pt": {
+     "t": "Falar com espontaneidade",
+     "g": "Reage depressa em francês, ganha tempo e preenche as pausas com estilo.",
+     "p": [
+      "Ganhar tempo: Bonne question ! / Voyons voir... / Comment dire... / Laissez-moi réfléchir un instant.",
+      "Bordões franceses: euh, bon, ben, en fait, du coup, tu vois. Usa-os com moderação para soares natural, não hesitante.",
+      "Falta-te uma palavra? Descreve-a: C'est un truc qui sert à... / C'est le contraire de... / Je ne trouve pas le mot, mais..."
+     ],
+     "q": "O que fazes quando te esqueces de uma palavra a meio de uma frase?",
+     "c": "Responde em voz alta a três perguntas ao acaso em francês, 30 segundos cada, sem parar."
+    },
+    "pt_BR": {
+     "t": "Falando com espontaneidade",
+     "g": "Reaja rápido em francês, ganhe tempo e preencha as pausas com estilo.",
+     "p": [
+      "Ganhar tempo: Bonne question ! / Voyons voir... / Comment dire... / Laissez-moi réfléchir un instant.",
+      "Muletas francesas: euh, bon, ben, en fait, du coup, tu vois. Use com moderação para soar natural, não hesitante.",
+      "Faltou uma palavra? Descreva: C'est un truc qui sert à... / C'est le contraire de... / Je ne trouve pas le mot, mais..."
+     ],
+     "q": "O que você faz quando esquece uma palavra no meio de uma frase?",
+     "c": "Responda em voz alta a três perguntas aleatórias em francês, 30 segundos cada, sem parar."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "voyons voir",
+      "ex": "Voyons voir... je dirais plutôt la montagne."
+     },
+     {
+      "w": "comment dire",
+      "ex": "C'est, comment dire, un peu compliqué."
+     },
+     {
+      "w": "en fait",
+      "ex": "En fait, je n'avais jamais essayé avant."
+     },
+     {
+      "w": "du coup",
+      "ex": "Il pleuvait, du coup on est restés à la maison."
+     },
+     {
+      "w": "un truc qui sert à",
+      "ex": "C'est un truc qui sert à ouvrir les bouteilles."
+     },
+     {
+      "w": "laissez-moi réfléchir",
+      "ex": "Laissez-moi réfléchir un instant avant de répondre."
+     }
+    ],
+    "gram": "Décrire un mot oublié avec une relative : c'est une chose qui..., c'est un endroit où..., c'est quelqu'un dont..."
+   }
+  },
+  {
+   "d": 357,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Phone and video calls like a pro",
+     "g": "Handle glitches, interrupt and clarify politely in French phone and video calls.",
+     "p": [
+      "Glitches: Je ne vous entends plus. / Vous êtes coupé(e). / Votre micro est désactivé. / Je vous rappelle tout de suite.",
+      "Interrupting politely: Pardon de vous interrompre, mais... / Si je peux me permettre... / Juste une précision.",
+      "Clarifying: Pourriez-vous répéter ? / Vous pouvez épeler ? / Je résume pour être sûr(e) : ..."
+     ],
+     "q": "Do you prefer phone calls, video calls or messages? Why?",
+     "c": "Write a short French dialogue for a video call where the connection drops and someone clarifies a date."
+    },
+    "de": {
+     "t": "Telefon- und Videoanrufe wie ein Profi",
+     "g": "Du meisterst Störungen, unterbrichst höflich und klärst Dinge bei französischen Telefon- und Videoanrufen.",
+     "p": [
+      "Störungen: Je ne vous entends plus. / Vous êtes coupé(e). / Votre micro est désactivé. / Je vous rappelle tout de suite.",
+      "Höflich unterbrechen: Pardon de vous interrompre, mais... / Si je peux me permettre... / Juste une précision.",
+      "Klären: Pourriez-vous répéter ? / Vous pouvez épeler ? / Je résume pour être sûr(e) : ..."
+     ],
+     "q": "Telefonierst du lieber, machst Videoanrufe oder schreibst Nachrichten? Warum?",
+     "c": "Schreib einen kurzen französischen Dialog für einen Videoanruf, bei dem die Verbindung abbricht und jemand ein Datum klärt."
+    },
+    "es": {
+     "t": "Llamadas y videollamadas como un profesional",
+     "g": "Gestiona fallos, interrumpe y aclara con cortesía en llamadas y videollamadas en francés.",
+     "p": [
+      "Fallos: Je ne vous entends plus. / Vous êtes coupé(e). / Votre micro est désactivé. / Je vous rappelle tout de suite.",
+      "Interrumpir con cortesía: Pardon de vous interrompre, mais... / Si je peux me permettre... / Juste une précision.",
+      "Aclarar: Pourriez-vous répéter ? / Vous pouvez épeler ? / Je résume pour être sûr(e) : ..."
+     ],
+     "q": "¿Prefieres llamadas, videollamadas o mensajes? ¿Por qué?",
+     "c": "Escribe un breve diálogo en francés en una videollamada donde se corta la conexión y alguien aclara una fecha."
+    },
+    "fr": {
+     "t": "Le téléphone et la visio en pro",
+     "g": "Gérer les problèmes techniques, interrompre et clarifier poliment au téléphone et en visio.",
+     "p": [
+      "Les soucis techniques : Je ne vous entends plus. / Vous êtes coupé(e). / Votre micro est désactivé. / Je vous rappelle tout de suite.",
+      "Interrompre poliment : Pardon de vous interrompre, mais... / Si je peux me permettre... / Juste une précision.",
+      "Clarifier : Pourriez-vous répéter ? / Vous pouvez épeler ? / Je résume pour être sûr(e) : ..."
+     ],
+     "q": "Préfères-tu le téléphone, la visio ou les messages ? Pourquoi ?",
+     "c": "Écris un court dialogue en visio où la connexion coupe et où quelqu'un vérifie une date."
+    },
+    "it": {
+     "t": "Telefonate e videochiamate da professionista",
+     "g": "Gestisci problemi tecnici, interrompi e chiarisci con garbo in telefonate e videochiamate in francese.",
+     "p": [
+      "Problemi: Je ne vous entends plus. / Vous êtes coupé(e). / Votre micro est désactivé. / Je vous rappelle tout de suite.",
+      "Interrompere con garbo: Pardon de vous interrompre, mais... / Si je peux me permettre... / Juste une précision.",
+      "Chiarire: Pourriez-vous répéter ? / Vous pouvez épeler ? / Je résume pour être sûr(e) : ..."
+     ],
+     "q": "Preferisci telefonate, videochiamate o messaggi? Perché?",
+     "c": "Scrivi un breve dialogo in francese in videochiamata in cui la connessione cade e qualcuno chiarisce una data."
+    },
+    "pt": {
+     "t": "Chamadas e videochamadas como um profissional",
+     "g": "Lida com falhas, interrompe e esclarece com educação em chamadas e videochamadas em francês.",
+     "p": [
+      "Falhas: Je ne vous entends plus. / Vous êtes coupé(e). / Votre micro est désactivé. / Je vous rappelle tout de suite.",
+      "Interromper com educação: Pardon de vous interrompre, mais... / Si je peux me permettre... / Juste une précision.",
+      "Esclarecer: Pourriez-vous répéter ? / Vous pouvez épeler ? / Je résume pour être sûr(e) : ..."
+     ],
+     "q": "Preferes chamadas, videochamadas ou mensagens? Porquê?",
+     "c": "Escreve um breve diálogo em francês numa videochamada em que a ligação cai e alguém esclarece uma data."
+    },
+    "pt_BR": {
+     "t": "Ligações e videochamadas como um profissional",
+     "g": "Lide com falhas, interrompa e esclareça com educação em ligações e videochamadas em francês.",
+     "p": [
+      "Falhas: Je ne vous entends plus. / Vous êtes coupé(e). / Votre micro est désactivé. / Je vous rappelle tout de suite.",
+      "Interromper com educação: Pardon de vous interrompre, mais... / Si je peux me permettre... / Juste une précision.",
+      "Esclarecer: Pourriez-vous répéter ? / Vous pouvez épeler ? / Je résume pour être sûr(e) : ..."
+     ],
+     "q": "Você prefere ligações, videochamadas ou mensagens? Por quê?",
+     "c": "Escreva um breve diálogo em francês numa videochamada em que a conexão cai e alguém esclarece uma data."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la visio",
+      "ex": "On fait la réunion en visio demain matin."
+     },
+     {
+      "w": "être coupé",
+      "ex": "Désolé, j'ai été coupé, vous pouvez répéter ?"
+     },
+     {
+      "w": "le micro",
+      "ex": "Attention, ton micro est encore activé."
+     },
+     {
+      "w": "rappeler",
+      "ex": "Je vous rappelle dans cinq minutes."
+     },
+     {
+      "w": "pardon de vous interrompre",
+      "ex": "Pardon de vous interrompre, mais l'heure tourne."
+     },
+     {
+      "w": "épeler",
+      "ex": "Pourriez-vous épeler votre nom de famille ?"
+     }
+    ],
+    "gram": "Rappeler quelqu'un (COD) : je vous rappelle ; se rappeler quelque chose sans de : je me rappelle cette date."
+   }
+  },
+  {
+   "d": 358,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Mediation",
+     "g": "Explain a French text to someone else in simple words, adapting to your listener.",
+     "p": [
+      "Mediation means passing on information: you read or hear something in French and explain it simply to someone else.",
+      "Simplify: short sentences, everyday words, one idea at a time. En gros, ça veut dire que... / L'idée principale, c'est que...",
+      "Adapt to the listener: a child, a colleague or a tourist. Check: Tu vois ce que je veux dire ? / C'est plus clair ?"
+     ],
+     "q": "Have you ever helped someone understand a text or instructions in another language?",
+     "c": "Take a French notice or rule and explain it in simple French as if to a 10-year-old."
+    },
+    "de": {
+     "t": "Sprachmittlung",
+     "g": "Du erklärst einen französischen Text jemand anderem in einfachen Worten und passt dich deinem Zuhörer an.",
+     "p": [
+      "Sprachmittlung heißt Informationen weitergeben: Du liest oder hörst etwas auf Französisch und erklärst es einfach weiter.",
+      "Vereinfachen: kurze Sätze, Alltagswörter, eine Idee nach der anderen. En gros, ça veut dire que... / L'idée principale, c'est que...",
+      "An den Zuhörer anpassen: Kind, Kollegin oder Tourist. Nachfragen: Tu vois ce que je veux dire ? / C'est plus clair ?"
+     ],
+     "q": "Hast du schon einmal jemandem geholfen, einen Text oder eine Anleitung in einer anderen Sprache zu verstehen?",
+     "c": "Nimm einen französischen Aushang oder eine Regel und erkläre sie in einfachem Französisch wie für ein zehnjähriges Kind."
+    },
+    "es": {
+     "t": "Mediación",
+     "g": "Explica un texto francés a otra persona con palabras sencillas, adaptándote a quien escucha.",
+     "p": [
+      "La mediación consiste en transmitir información: lees u oyes algo en francés y se lo explicas de forma sencilla a otra persona.",
+      "Simplifica: frases cortas, palabras cotidianas, una idea cada vez. En gros, ça veut dire que... / L'idée principale, c'est que...",
+      "Adáptate al oyente: un niño, un colega o un turista. Comprueba: Tu vois ce que je veux dire ? / C'est plus clair ?"
+     ],
+     "q": "¿Alguna vez ayudaste a alguien a entender un texto o unas instrucciones en otro idioma?",
+     "c": "Toma un aviso o una norma en francés y explícala en francés sencillo como a un niño de diez años."
+    },
+    "fr": {
+     "t": "La médiation",
+     "g": "Expliquer un texte à quelqu'un d'autre avec des mots simples, en s'adaptant à son interlocuteur.",
+     "p": [
+      "La médiation, c'est transmettre une information : on lit ou on entend un texte et on l'explique simplement à quelqu'un.",
+      "Simplifier : phrases courtes, mots courants, une idée à la fois. En gros, ça veut dire que... / L'idée principale, c'est que...",
+      "S'adapter : un enfant, un collègue, un touriste. Vérifier : Tu vois ce que je veux dire ? / C'est plus clair ?"
+     ],
+     "q": "As-tu déjà aidé quelqu'un à comprendre un texte ou des consignes dans une autre langue ?",
+     "c": "Prends un panneau ou un règlement et explique-le simplement, comme à un enfant de dix ans."
+    },
+    "it": {
+     "t": "Mediazione",
+     "g": "Spiega un testo francese a qualcun altro con parole semplici, adattandoti a chi ascolta.",
+     "p": [
+      "La mediazione è trasmettere informazioni: leggi o senti qualcosa in francese e lo spieghi in modo semplice a un'altra persona.",
+      "Semplifica: frasi brevi, parole comuni, un'idea alla volta. En gros, ça veut dire que... / L'idée principale, c'est que...",
+      "Adattati a chi ascolta: un bambino, un collega o un turista. Verifica: Tu vois ce que je veux dire ? / C'est plus clair ?"
+     ],
+     "q": "Hai mai aiutato qualcuno a capire un testo o delle istruzioni in un'altra lingua?",
+     "c": "Prendi un avviso o una regola in francese e spiegala in francese semplice come a un bambino di dieci anni."
+    },
+    "pt": {
+     "t": "Mediação",
+     "g": "Explica um texto francês a outra pessoa com palavras simples, adaptando-te a quem ouve.",
+     "p": [
+      "A mediação é transmitir informação: lês ou ouves algo em francês e explicas de forma simples a outra pessoa.",
+      "Simplifica: frases curtas, palavras do dia a dia, uma ideia de cada vez. En gros, ça veut dire que... / L'idée principale, c'est que...",
+      "Adapta-te a quem ouve: uma criança, um colega ou um turista. Verifica: Tu vois ce que je veux dire ? / C'est plus clair ?"
+     ],
+     "q": "Já ajudaste alguém a perceber um texto ou instruções noutra língua?",
+     "c": "Pega num aviso ou regra em francês e explica-o em francês simples como a uma criança de dez anos."
+    },
+    "pt_BR": {
+     "t": "Mediação",
+     "g": "Explique um texto francês a outra pessoa com palavras simples, adaptando-se a quem ouve.",
+     "p": [
+      "A mediação é transmitir informação: você lê ou ouve algo em francês e explica de forma simples a outra pessoa.",
+      "Simplifique: frases curtas, palavras do dia a dia, uma ideia por vez. En gros, ça veut dire que... / L'idée principale, c'est que...",
+      "Adapte-se a quem ouve: uma criança, um colega ou um turista. Confira: Tu vois ce que je veux dire ? / C'est plus clair ?"
+     ],
+     "q": "Você já ajudou alguém a entender um texto ou instruções em outro idioma?",
+     "c": "Pegue um aviso ou regra em francês e explique em francês simples como para uma criança de dez anos."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "en gros",
+      "ex": "En gros, ça veut dire qu'on doit attendre."
+     },
+     {
+      "w": "l'idée principale",
+      "ex": "L'idée principale, c'est qu'il faut réserver à l'avance."
+     },
+     {
+      "w": "transmettre",
+      "ex": "Peux-tu transmettre le message à ton équipe ?"
+     },
+     {
+      "w": "expliquer simplement",
+      "ex": "Elle sait expliquer simplement les choses compliquées."
+     },
+     {
+      "w": "une consigne",
+      "ex": "Lis bien la consigne avant de commencer."
+     },
+     {
+      "w": "tu vois ce que je veux dire",
+      "ex": "C'est un peu comme un jeu, tu vois ce que je veux dire ?"
+     }
+    ],
+    "gram": "Discours indirect pour transmettre : le texte dit qu'il faut..., ils demandent si..., ils veulent savoir quand..."
+   }
+  },
+  {
+   "d": 359,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Error clinic: common B2 mistakes",
+     "g": "Fix the most frequent mistakes of advanced French learners.",
+     "p": [
+      "False friends: actuellement means currently, not actually (en fait); librairie is a bookshop; assister à means to attend.",
+      "Grammar: depuis + present (J'habite ici depuis deux ans), si + imparfait never with the conditional, après que + indicative.",
+      "Agreement: past participle with avoir agrees with a preceding direct object: les photos que j'ai prises."
+     ],
+     "q": "Which mistake do you make most often in French? Let's fix it together!",
+     "c": "Write five French sentences that use depuis, actuellement, assister à, après que and les fleurs que j'ai achetées."
+    },
+    "de": {
+     "t": "Fehlerklinik: typische B2-Fehler",
+     "g": "Du korrigierst die häufigsten Fehler fortgeschrittener Französischlernender.",
+     "p": [
+      "Falsche Freunde: actuellement heißt derzeit, nicht eigentlich (en fait); assister à heißt teilnehmen; librairie ist eine Buchhandlung.",
+      "Grammatik: depuis + Präsens (J'habite ici depuis deux ans), si + imparfait nie mit Konditional, après que + Indikativ.",
+      "Angleichung: Partizip mit avoir richtet sich nach vorangehendem direktem Objekt: les photos que j'ai prises."
+     ],
+     "q": "Welchen Fehler machst du im Französischen am häufigsten? Lass ihn uns gemeinsam beheben!",
+     "c": "Schreib fünf französische Sätze mit depuis, actuellement, assister à, après que und les fleurs que j'ai achetées."
+    },
+    "es": {
+     "t": "Clínica de errores: fallos típicos de B2",
+     "g": "Corrige los errores más frecuentes de los estudiantes avanzados de francés.",
+     "p": [
+      "Falsos amigos: actuellement significa actualmente (no realmente: en fait); librairie es librería; assister à es asistir a.",
+      "Gramática: depuis + presente (J'habite ici depuis deux ans), nunca si + condicional, après que + indicativo.",
+      "Concordancia: el participio con avoir concuerda con un complemento directo anterior: les photos que j'ai prises."
+     ],
+     "q": "¿Qué error cometes más a menudo en francés? ¡Vamos a corregirlo juntos!",
+     "c": "Escribe cinco frases en francés con depuis, actuellement, assister à, après que y les fleurs que j'ai achetées."
+    },
+    "fr": {
+     "t": "Atelier d'erreurs : les fautes fréquentes au B2",
+     "g": "Corriger les erreurs les plus fréquentes des apprenants avancés.",
+     "p": [
+      "Les faux amis : actuellement veut dire en ce moment ; une librairie vend des livres ; assister à signifie être présent à.",
+      "La grammaire : depuis + présent (j'habite ici depuis deux ans), jamais de conditionnel après si, après que + indicatif.",
+      "L'accord : le participe passé avec avoir s'accorde avec le COD placé avant : les photos que j'ai prises."
+     ],
+     "q": "Quelle erreur fais-tu le plus souvent en français ? Corrigeons-la ensemble !",
+     "c": "Écris cinq phrases avec depuis, actuellement, assister à, après que et les fleurs que j'ai achetées."
+    },
+    "it": {
+     "t": "Clinica degli errori: sbagli tipici del B2",
+     "g": "Correggi gli errori più frequenti di chi studia il francese a livello avanzato.",
+     "p": [
+      "Falsi amici: actuellement significa attualmente, non in realtà (en fait); librairie è libreria; assister à vuol dire assistere a.",
+      "Grammatica: depuis + presente (J'habite ici depuis deux ans), mai si + condizionale, après que + indicativo.",
+      "Accordo: il participio con avoir si accorda con il complemento oggetto che precede: les photos que j'ai prises."
+     ],
+     "q": "Quale errore fai più spesso in francese? Correggiamolo insieme!",
+     "c": "Scrivi cinque frasi in francese con depuis, actuellement, assister à, après que e les fleurs que j'ai achetées."
+    },
+    "pt": {
+     "t": "Clínica de erros: falhas típicas do B2",
+     "g": "Corrige os erros mais frequentes de quem aprende francês a nível avançado.",
+     "p": [
+      "Falsos amigos: actuellement quer dizer atualmente, não na verdade (en fait); librairie é livraria; assister à é assistir a.",
+      "Gramática: depuis + presente (J'habite ici depuis deux ans), nunca si + condicional, après que + indicativo.",
+      "Concordância: o particípio com avoir concorda com o complemento direto anterior: les photos que j'ai prises."
+     ],
+     "q": "Que erro dás mais vezes em francês? Vamos corrigi-lo juntos!",
+     "c": "Escreve cinco frases em francês com depuis, actuellement, assister à, après que e les fleurs que j'ai achetées."
+    },
+    "pt_BR": {
+     "t": "Clínica de erros: falhas típicas do B2",
+     "g": "Corrija os erros mais frequentes de quem aprende francês em nível avançado.",
+     "p": [
+      "Falsos amigos: actuellement quer dizer atualmente, não na verdade (en fait); librairie é livraria; assister à é assistir a.",
+      "Gramática: depuis + presente (J'habite ici depuis deux ans), nunca si + condicional, après que + indicativo.",
+      "Concordância: o particípio com avoir concorda com o objeto direto anterior: les photos que j'ai prises."
+     ],
+     "q": "Qual erro você comete com mais frequência em francês? Vamos corrigi-lo juntos!",
+     "c": "Escreva cinco frases em francês com depuis, actuellement, assister à, après que e les fleurs que j'ai achetées."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "actuellement",
+      "ex": "Actuellement, je travaille dans une banque."
+     },
+     {
+      "w": "en fait",
+      "ex": "En fait, je préfère le thé au café."
+     },
+     {
+      "w": "assister à",
+      "ex": "J'ai assisté à une conférence passionnante."
+     },
+     {
+      "w": "depuis",
+      "ex": "J'apprends le français depuis un an."
+     },
+     {
+      "w": "après que",
+      "ex": "Après qu'il est parti, nous avons rangé."
+     },
+     {
+      "w": "les photos que j'ai prises",
+      "ex": "Regarde les photos que j'ai prises à Lyon."
+     }
+    ],
+    "gram": "Accord du participe passé avec avoir : il s'accorde avec le COD seulement s'il est placé avant le verbe : la lettre que j'ai écrite."
+   }
+  },
+  {
+   "d": 360,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Pronunciation polish",
+     "g": "Polish your French pronunciation: nasal vowels, the French r, u versus ou and intonation.",
+     "p": [
+      "Nasal vowels: an/en (temps), on (bon), in (vin). Don't pronounce an n: un bon vin blanc is four nasal sounds.",
+      "The r comes from the back of the throat, like a soft gargle. U (tu) has lips rounded and tongue forward; ou (tout) is further back.",
+      "Intonation: the voice rises at the end of each group of words and falls at the end of a statement."
+     ],
+     "q": "Which French sound is the hardest for you? Let's practise it together.",
+     "c": "Record yourself reading Un bon vin blanc and Tu as vu tout le roux ? and listen for the difference."
+    },
+    "de": {
+     "t": "Feinschliff der Aussprache",
+     "g": "Du verfeinerst deine französische Aussprache: Nasalvokale, das französische r, u gegen ou und Intonation.",
+     "p": [
+      "Nasalvokale: an/en (temps), on (bon), in (vin). Kein n aussprechen: un bon vin blanc hat vier Nasale.",
+      "Das r kommt hinten aus dem Rachen, wie ein sanftes Gurgeln. U (tu): Lippen rund, Zunge vorn; ou (tout) liegt weiter hinten.",
+      "Intonation: Die Stimme steigt am Ende jeder Wortgruppe und fällt am Ende einer Aussage."
+     ],
+     "q": "Welcher französische Laut ist für dich am schwierigsten? Üben wir ihn zusammen.",
+     "c": "Nimm dich auf, wie du Un bon vin blanc und Tu as vu tout le roux ? liest, und hör auf den Unterschied."
+    },
+    "es": {
+     "t": "Pulir la pronunciación",
+     "g": "Pule tu pronunciación francesa: vocales nasales, la r francesa, u frente a ou y la entonación.",
+     "p": [
+      "Vocales nasales: an/en (temps), on (bon), in (vin). No pronuncies la n: un bon vin blanc tiene cuatro nasales.",
+      "La r sale del fondo de la garganta, como una gárgara suave. U (tu): labios redondos y lengua delante; ou (tout) va más atrás.",
+      "Entonación: la voz sube al final de cada grupo de palabras y baja al final de una afirmación."
+     ],
+     "q": "¿Qué sonido francés te cuesta más? Practiquémoslo juntos.",
+     "c": "Grábate leyendo Un bon vin blanc y Tu as vu tout le roux ? y escucha la diferencia."
+    },
+    "fr": {
+     "t": "Peaufiner sa prononciation",
+     "g": "Peaufiner sa prononciation : voyelles nasales, le r français, u et ou, l'intonation.",
+     "p": [
+      "Les nasales : an/en (temps), on (bon), in (vin). On ne prononce pas le n : un bon vin blanc contient quatre nasales.",
+      "Le r se forme au fond de la gorge, comme un léger gargarisme. U (tu) : lèvres arrondies, langue en avant ; ou (tout) : plus en arrière.",
+      "L'intonation : la voix monte à la fin de chaque groupe de mots et descend à la fin d'une affirmation."
+     ],
+     "q": "Quel son du français est le plus difficile pour toi ? Entraînons-nous ensemble.",
+     "c": "Enregistre-toi en lisant Un bon vin blanc et Tu as vu tout le roux ? et écoute la différence."
+    },
+    "it": {
+     "t": "Rifinire la pronuncia",
+     "g": "Rifinisci la tua pronuncia francese: vocali nasali, la r francese, u contro ou e intonazione.",
+     "p": [
+      "Vocali nasali: an/en (temps), on (bon), in (vin). Non pronunciare la n: un bon vin blanc ha quattro nasali.",
+      "La r nasce in fondo alla gola, come un leggero gargarismo. U (tu): labbra arrotondate e lingua avanti; ou (tout) è più indietro.",
+      "Intonazione: la voce sale alla fine di ogni gruppo di parole e scende alla fine di un'affermazione."
+     ],
+     "q": "Quale suono francese è il più difficile per te? Esercitiamoci insieme.",
+     "c": "Registrati mentre leggi Un bon vin blanc e Tu as vu tout le roux ? e ascolta la differenza."
+    },
+    "pt": {
+     "t": "Aperfeiçoar a pronúncia",
+     "g": "Aperfeiçoa a tua pronúncia francesa: vogais nasais, o r francês, u versus ou e a entoação.",
+     "p": [
+      "Vogais nasais: an/en (temps), on (bon), in (vin). Não pronuncies o n: un bon vin blanc tem quatro nasais.",
+      "O r vem do fundo da garganta, como um gargarejo suave. U (tu): lábios arredondados e língua à frente; ou (tout) fica mais atrás.",
+      "Entoação: a voz sobe no fim de cada grupo de palavras e desce no fim de uma afirmação."
+     ],
+     "q": "Que som francês é o mais difícil para ti? Vamos praticá-lo juntos.",
+     "c": "Grava-te a ler Un bon vin blanc e Tu as vu tout le roux ? e ouve a diferença."
+    },
+    "pt_BR": {
+     "t": "Aperfeiçoando a pronúncia",
+     "g": "Aperfeiçoe sua pronúncia francesa: vogais nasais, o r francês, u versus ou e a entonação.",
+     "p": [
+      "Vogais nasais: an/en (temps), on (bon), in (vin). Não pronuncie o n: un bon vin blanc tem quatro nasais.",
+      "O r vem do fundo da garganta, como um gargarejo suave. U (tu): lábios arredondados e língua para a frente; ou (tout) fica mais atrás.",
+      "Entonação: a voz sobe no fim de cada grupo de palavras e desce no fim de uma afirmação."
+     ],
+     "q": "Qual som francês é o mais difícil para você? Vamos praticar juntos.",
+     "c": "Grave-se lendo Un bon vin blanc e Tu as vu tout le roux ? e ouça a diferença."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "une voyelle nasale",
+      "ex": "Le mot pain contient une voyelle nasale."
+     },
+     {
+      "w": "un bon vin blanc",
+      "ex": "Un bon vin blanc accompagne bien le poisson."
+     },
+     {
+      "w": "la roue / la rue",
+      "ex": "La roue du vélo est restée dans la rue."
+     },
+     {
+      "w": "dessus / dessous",
+      "ex": "Le chat dort dessus, pas dessous."
+     },
+     {
+      "w": "l'intonation",
+      "ex": "L'intonation change le sens d'une question."
+     },
+     {
+      "w": "articuler",
+      "ex": "Articule bien chaque syllabe."
+     }
+    ],
+    "gram": "Opposition u / ou : rue / roue, dessus / dessous, vu / vous. Les lèvres sont arrondies dans les deux cas ; seule la langue change."
+   }
+  }
+ ]
+}

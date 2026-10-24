@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_portuguese",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "At the café",
+     "g": "Order coffee and a pastry in a Portuguese café and ask for the bill.",
+     "p": [
+      "Um café in Portugal is a small espresso; in Lisbon many people call it uma bica.",
+      "Um galão is milky coffee in a tall glass; uma meia de leite is half coffee, half milk in a cup.",
+      "Pair it with um pastel de nata, the famous custard tart, and finish with A conta, se faz favor."
+     ],
+     "q": "What would you order in a Lisbon café, and would you sit inside or on the esplanada?",
+     "c": "Order your next coffee in Portuguese, even just in your head, from greeting to asking for the bill."
+    },
+    "de": {
+     "t": "Im Café",
+     "g": "Du bestellst Kaffee und Gebäck in einem portugiesischen Café und fragst nach der Rechnung.",
+     "p": [
+      "Um café ist in Portugal ein kleiner Espresso; in Lissabon sagen viele uma bica.",
+      "Um galão ist Milchkaffee im hohen Glas; uma meia de leite ist halb Kaffee, halb Milch in der Tasse.",
+      "Dazu um pastel de nata, das berühmte Puddingtörtchen, und am Ende: A conta, se faz favor."
+     ],
+     "q": "Was würdest du in einem Café in Lissabon bestellen, und drinnen oder auf der esplanada sitzen?",
+     "c": "Bestell deinen nächsten Kaffee auf Portugiesisch, notfalls im Kopf, vom Gruß bis zur Rechnung."
+    },
+    "es": {
+     "t": "En la cafetería",
+     "g": "Pedir café y un dulce en una cafetería portuguesa y pedir la cuenta.",
+     "p": [
+      "Um café en Portugal es un expreso pequeño; en Lisboa muchos lo llaman uma bica.",
+      "Um galão es café con mucha leche en vaso alto; uma meia de leite, mitad café y mitad leche en taza.",
+      "Acompáñalo con um pastel de nata, la famosa tartaleta de crema, y termina con A conta, se faz favor."
+     ],
+     "q": "¿Qué pedirías en un café de Lisboa? ¿Te sentarías dentro o en la esplanada (terraza)?",
+     "c": "Pide tu próximo café en portugués, aunque sea mentalmente, desde el saludo hasta la cuenta."
+    },
+    "fr": {
+     "t": "Au café",
+     "g": "Commander un café et une pâtisserie dans un café portugais et demander l'addition.",
+     "p": [
+      "Um café, au Portugal, c'est un petit expresso ; à Lisbonne, on dit souvent uma bica.",
+      "Um galão est un café au lait servi dans un grand verre ; uma meia de leite, moitié café, moitié lait, en tasse.",
+      "Ajoute um pastel de nata, le célèbre flan pâtissier, et termine par A conta, se faz favor."
+     ],
+     "q": "Que commanderais-tu dans un café de Lisbonne, et t'assiérais-tu dedans ou en esplanada (terrasse) ?",
+     "c": "Commande ton prochain café en portugais, même dans ta tête, de la salutation à l'addition."
+    },
+    "it": {
+     "t": "Al bar",
+     "g": "Ordini un caffè e un dolce in un bar portoghese e chiedi il conto.",
+     "p": [
+      "Um café in Portogallo è un espresso; a Lisbona molti lo chiamano uma bica.",
+      "Um galão è un caffellatte in bicchiere alto; uma meia de leite è metà caffè e metà latte in tazza.",
+      "Abbinalo a um pastel de nata, la famosa tortina alla crema, e chiudi con A conta, se faz favor."
+     ],
+     "q": "Cosa ordineresti in un bar di Lisbona? Ti siederesti dentro o in esplanada (dehors)?",
+     "c": "Ordina il tuo prossimo caffè in portoghese, anche solo nella testa, dal saluto al conto."
+    },
+    "pt": {
+     "t": "No café",
+     "g": "Revê o vocabulário do café português e as diferenças em relação ao Brasil.",
+     "p": [
+      "Bica, galão, meia de leite, abatanado, pingado: o café português tem um vocabulário muito próprio.",
+      "No Brasil, o expresso pequeno é um cafezinho e um café com leite vem numa xícara, não num copo.",
+      "Pastel de nata, torrada e tosta mista são clássicos da esplanada portuguesa."
+     ],
+     "q": "Qual é o teu pedido habitual no café e a que horas o fazes?",
+     "c": "Explica a um amigo estrangeiro, em três frases, a diferença entre uma bica, um galão e uma meia de leite."
+    },
+    "pt_BR": {
+     "t": "No café",
+     "g": "Aprenda a pedir café em Portugal, onde os nomes mudam bastante.",
+     "p": [
+      "Um café em Portugal é o expresso pequeno, o seu cafezinho; em Lisboa também se diz uma bica.",
+      "Um galão é café com muito leite num copo alto; uma meia de leite vem na chávena, a xícara portuguesa.",
+      "A esplanada é a área de mesas ao ar livre; a conta pede-se com A conta, se faz favor."
+     ],
+     "q": "Qual seria seu pedido numa pastelaria de Lisboa?",
+     "c": "Faça seu próximo pedido de café imaginando que está em Lisboa: bica, galão ou meia de leite?"
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "um café / uma bica",
+      "ex": "Uma bica e um copo de água, se faz favor."
+     },
+     {
+      "w": "um galão",
+      "ex": "Queria um galão e uma torrada."
+     },
+     {
+      "w": "uma meia de leite",
+      "ex": "Para mim, uma meia de leite."
+     },
+     {
+      "w": "um pastel de nata",
+      "ex": "Dois pastéis de nata, por favor."
+     },
+     {
+      "w": "a esplanada",
+      "ex": "Vamos sentar-nos na esplanada?"
+     },
+     {
+      "w": "a conta",
+      "ex": "A conta, se faz favor."
+     }
+    ],
+    "gram": "Em Portugal, um café é um expresso; em Lisboa chama-se também bica. O galão leva muito leite e vem num copo alto."
+   }
+  },
+  {
+   "d": 32,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Queria... polite requests",
+     "g": "Ask for things politely with queria, pode dar-me and se faz favor.",
+     "p": [
+      "Queria (I would like) is softer than quero (I want) and is what Portuguese people say in shops and cafés.",
+      "Pode dar-me...? means Could you give me...? In Brazil you hear Pode me dar...?",
+      "Add se faz favor (Portugal) or por favor (both countries), and say Só isso when you have finished ordering."
+     ],
+     "q": "How would you politely ask for water and the menu in a restaurant?",
+     "c": "Make three polite requests today, real or imagined, using queria and pode dar-me."
+    },
+    "de": {
+     "t": "Queria... höfliche Bitten",
+     "g": "Du bittest höflich mit queria, pode dar-me und se faz favor.",
+     "p": [
+      "Queria (ich hätte gern) ist weicher als quero (ich will) und typisch in Läden und Cafés.",
+      "Pode dar-me...? heißt Können Sie mir ... geben? In Brasilien hört man Pode me dar...?",
+      "Dazu se faz favor (Portugal) oder por favor (beide Länder); am Ende der Bestellung: Só isso."
+     ],
+     "q": "Wie bittest du im Restaurant höflich um Wasser und die Speisekarte?",
+     "c": "Formuliere heute drei höfliche Bitten, echt oder ausgedacht, mit queria und pode dar-me."
+    },
+    "es": {
+     "t": "Queria... peticiones educadas",
+     "g": "Pedir cosas con educación usando queria, pode dar-me y se faz favor.",
+     "p": [
+      "Queria (quería) es más suave que quero (quiero), como en español, y es lo habitual en tiendas y cafés.",
+      "Pode dar-me...? significa ¿Me puede dar...? En Brasil se oye Pode me dar...?",
+      "Añade se faz favor (Portugal) o por favor, y di Só isso al terminar de pedir."
+     ],
+     "q": "¿Cómo pedirías con educación agua y la carta en un restaurante?",
+     "c": "Haz hoy tres peticiones educadas, reales o imaginadas, con queria y pode dar-me."
+    },
+    "fr": {
+     "t": "Queria... demander poliment",
+     "g": "Demander poliment avec queria, pode dar-me et se faz favor.",
+     "p": [
+      "Queria (je voudrais) est plus doux que quero (je veux) : c'est la formule des magasins et des cafés.",
+      "Pode dar-me...? veut dire Pourriez-vous me donner... ? Au Brésil, on entend Pode me dar...?",
+      "Ajoute se faz favor (Portugal) ou por favor, et dis Só isso quand ta commande est finie."
+     ],
+     "q": "Comment demanderais-tu poliment de l'eau et la carte au restaurant ?",
+     "c": "Fais aujourd'hui trois demandes polies, réelles ou imaginaires, avec queria et pode dar-me."
+    },
+    "it": {
+     "t": "Queria... richieste gentili",
+     "g": "Chiedi le cose con gentilezza usando queria, pode dar-me e se faz favor.",
+     "p": [
+      "Queria (vorrei) è più gentile di quero (voglio) ed è la formula tipica di negozi e bar.",
+      "Pode dar-me...? significa Mi può dare...? In Brasile si sente Pode me dar...?",
+      "Aggiungi se faz favor (Portogallo) o por favor, e di' Só isso quando hai finito di ordinare."
+     ],
+     "q": "Come chiederesti gentilmente acqua e menù al ristorante?",
+     "c": "Fai oggi tre richieste gentili, vere o immaginate, con queria e pode dar-me."
+    },
+    "pt": {
+     "t": "Queria... pedidos delicados",
+     "g": "Revê as fórmulas de cortesia e como o imperfeito suaviza um pedido.",
+     "p": [
+      "Queria um café soa mais delicado do que quero um café, embora o pedido seja para agora.",
+      "Pode dar-me e se faz favor são muito portugueses; no Brasil diz-se pode me dar e por favor.",
+      "Com licença serve para passar ou interromper; desculpe para chamar a atenção de alguém."
+     ],
+     "q": "Que fórmula de cortesia usas mais quando entras numa loja?",
+     "c": "Repara hoje nas fórmulas de cortesia que ouves num café ou numa loja e anota três."
+    },
+    "pt_BR": {
+     "t": "Queria... pedidos educados",
+     "g": "Revise os pedidos educados e as fórmulas típicas de Portugal.",
+     "p": [
+      "Em Portugal o pronome vem depois do verbo: pode dar-me, pode trazer-me, diga-me.",
+      "Se faz favor é o por favor português, tanto para pedir como para chamar o empregado.",
+      "Queria é usado igual nos dois países; no Brasil também se ouve muito me vê um café."
+     ],
+     "q": "Como você pediria a conta num restaurante em Lisboa?",
+     "c": "Treine três pedidos com se faz favor e o pronome depois do verbo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "queria",
+      "ex": "Queria um sumo de laranja."
+     },
+     {
+      "w": "pode dar-me",
+      "ex": "Pode dar-me um guardanapo?"
+     },
+     {
+      "w": "se faz favor",
+      "ex": "Um copo de água, se faz favor."
+     },
+     {
+      "w": "mais um",
+      "ex": "Mais um café, por favor."
+     },
+     {
+      "w": "só isso",
+      "ex": "É só isso, obrigado."
+     },
+     {
+      "w": "com licença",
+      "ex": "Com licença, posso passar?"
+     }
+    ],
+    "gram": "Queria é mais delicado do que quero. Em Portugal o pronome vem depois: pode dar-me?; no Brasil, antes: pode me dar?"
+   }
+  },
+  {
+   "d": 33,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Food and drinks",
+     "g": "Learn basic food and drink words for everyday meals.",
+     "p": [
+      "O pão (bread), o queijo (cheese), a fruta (fruit), a água (water), o leite (milk).",
+      "Juice is o sumo in Portugal and o suco in Brazil; breakfast is o pequeno-almoço vs o café da manhã.",
+      "Meals: o pequeno-almoço, o almoço (lunch), o lanche (afternoon snack) and o jantar (dinner)."
+     ],
+     "q": "What do you usually have for breakfast? Answer with five food or drink words.",
+     "c": "Name in Portuguese everything you eat and drink today, meal by meal."
+    },
+    "de": {
+     "t": "Essen und Getränke",
+     "g": "Du lernst grundlegende Wörter für Essen und Trinken im Alltag.",
+     "p": [
+      "O pão (Brot), o queijo (Käse), a fruta (Obst), a água (Wasser), o leite (Milch).",
+      "Saft heißt in Portugal o sumo, in Brasilien o suco; Frühstück o pequeno-almoço bzw. o café da manhã.",
+      "Mahlzeiten: o pequeno-almoço, o almoço (Mittagessen), o lanche (Nachmittagssnack), o jantar."
+     ],
+     "q": "Was isst du meistens zum Frühstück? Antworte mit fünf Wörtern.",
+     "c": "Benenne heute auf Portugiesisch alles, was du isst und trinkst, Mahlzeit für Mahlzeit."
+    },
+    "es": {
+     "t": "Comida y bebida",
+     "g": "Aprender palabras básicas de comida y bebida para el día a día.",
+     "p": [
+      "O pão (pan), o queijo (queso), a fruta, a água, o leite (leche).",
+      "Zumo es o sumo en Portugal y o suco en Brasil; desayuno es o pequeno-almoço o o café da manhã.",
+      "Comidas: o pequeno-almoço, o almoço (comida), o lanche (merienda) y o jantar (cena). Ojo: almoço no es el almuerzo matinal."
+     ],
+     "q": "¿Qué sueles desayunar? Responde con cinco palabras de comida o bebida.",
+     "c": "Di en portugués todo lo que comes y bebes hoy, comida por comida."
+    },
+    "fr": {
+     "t": "Nourriture et boissons",
+     "g": "Apprendre les mots de base pour les repas de tous les jours.",
+     "p": [
+      "O pão (pain), o queijo (fromage), a fruta (fruits), a água (eau), o leite (lait).",
+      "Le jus se dit o sumo au Portugal et o suco au Brésil ; le petit-déjeuner, o pequeno-almoço ou o café da manhã.",
+      "Repas : o pequeno-almoço, o almoço (déjeuner), o lanche (goûter) et o jantar (dîner)."
+     ],
+     "q": "Que prends-tu d'habitude au petit-déjeuner ? Réponds avec cinq mots.",
+     "c": "Nomme en portugais tout ce que tu manges et bois aujourd'hui, repas par repas."
+    },
+    "it": {
+     "t": "Cibo e bevande",
+     "g": "Impari le parole base di cibo e bevande per i pasti di ogni giorno.",
+     "p": [
+      "O pão (pane), o queijo (formaggio), a fruta (frutta), a água (acqua), o leite (latte).",
+      "Il succo è o sumo in Portogallo e o suco in Brasile; la colazione o pequeno-almoço o o café da manhã.",
+      "Pasti: o pequeno-almoço, o almoço (pranzo), o lanche (merenda) e o jantar (cena)."
+     ],
+     "q": "Cosa mangi di solito a colazione? Rispondi con cinque parole.",
+     "c": "Di' in portoghese tutto ciò che mangi e bevi oggi, pasto per pasto."
+    },
+    "pt": {
+     "t": "Comida e bebida",
+     "g": "Revê o vocabulário básico da comida e as diferenças mais visíveis com o Brasil.",
+     "p": [
+      "Pequeno-almoço, sumo, fiambre e natas são portugueses; no Brasil: café da manhã, suco, presunto e creme de leite.",
+      "Atenção: presunto em Portugal é o presunto curado; no Brasil, presunto é o fiambre português.",
+      "O lanche português é a refeição leve da tarde, muitas vezes com pão, queijo e um galão."
+     ],
+     "q": "Qual é a refeição do dia de que mais gostas?",
+     "c": "Escreve a lista de compras desta semana e marca as palavras que um brasileiro diria de outra forma."
+    },
+    "pt_BR": {
+     "t": "Comida e bebida",
+     "g": "Aprenda os nomes de comida que mudam em Portugal.",
+     "p": [
+      "Em Portugal: pequeno-almoço é café da manhã, sumo é suco e natas é creme de leite.",
+      "Fiambre é o presunto cozido brasileiro; presunto em Portugal é o presunto cru curado.",
+      "Uma sandes ou uma sandocha é um sanduíche, e uma tosta mista é um misto-quente."
+     ],
+     "q": "Qual comida portuguesa você gostaria de provar primeiro?",
+     "c": "Escreva seu café da manhã de hoje com as palavras de Portugal."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "o pão",
+      "ex": "Compro pão fresco todas as manhãs."
+     },
+     {
+      "w": "o queijo",
+      "ex": "Este queijo da serra é delicioso."
+     },
+     {
+      "w": "a fruta",
+      "ex": "Como fruta depois do almoço."
+     },
+     {
+      "w": "a água",
+      "ex": "Uma garrafa de água, por favor."
+     },
+     {
+      "w": "o sumo",
+      "ex": "Queria um sumo de laranja natural."
+     },
+     {
+      "w": "o leite",
+      "ex": "Bebo leite com café de manhã."
+     }
+    ],
+    "gram": "Em Portugal diz-se sumo e pequeno-almoço; no Brasil, suco e café da manhã. A palavra água é feminina: a água fresca."
+   }
+  },
+  {
+   "d": 34,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Gostar de: likes and dislikes",
+     "g": "Say what you like and dislike with gostar de.",
+     "p": [
+      "Gostar always needs de: Gosto de café. Gosto de dançar.",
+      "De merges with articles: gosto do Porto (de + o), gosto da praia (de + a), gosto dos livros.",
+      "For strong feelings use adoro (I love) or detesto (I hate); prefiro means I prefer."
+     ],
+     "q": "What food do you love and what food do you not like at all?",
+     "c": "Write three things you love, three you like and three you don't like, with gostar de."
+    },
+    "de": {
+     "t": "Gostar de: mögen und nicht mögen",
+     "g": "Du sagst mit gostar de, was du magst und was nicht.",
+     "p": [
+      "Gostar braucht immer de: Gosto de café. Gosto de dançar.",
+      "De verschmilzt mit dem Artikel: gosto do Porto (de + o), gosto da praia (de + a).",
+      "Für starke Gefühle: adoro (ich liebe) oder detesto (ich hasse); prefiro heißt ich bevorzuge."
+     ],
+     "q": "Welches Essen liebst du und welches magst du gar nicht?",
+     "c": "Schreib drei Dinge, die du liebst, drei, die du magst, und drei, die du nicht magst, mit gostar de."
+    },
+    "es": {
+     "t": "Gostar de: gustos",
+     "g": "Decir lo que te gusta y lo que no con gostar de.",
+     "p": [
+      "Gostar funciona distinto que gustar: la persona es el sujeto y siempre lleva de: Gosto de café.",
+      "De se une al artículo: gosto do Porto (de + o), gosto da praia (de + a).",
+      "Para sentimientos fuertes: adoro o detesto; prefiro significa prefiero."
+     ],
+     "q": "¿Qué comida te encanta y cuál no te gusta nada?",
+     "c": "Escribe tres cosas que te encantan, tres que te gustan y tres que no, con gostar de."
+    },
+    "fr": {
+     "t": "Gostar de : goûts et dégoûts",
+     "g": "Dire ce que tu aimes ou non avec gostar de.",
+     "p": [
+      "Gostar demande toujours de : Gosto de café. Gosto de dançar.",
+      "De se contracte avec l'article : gosto do Porto (de + o), gosto da praia (de + a).",
+      "Pour les sentiments forts : adoro (j'adore) ou detesto (je déteste) ; prefiro veut dire je préfère."
+     ],
+     "q": "Quel plat adores-tu et lequel n'aimes-tu pas du tout ?",
+     "c": "Écris trois choses que tu adores, trois que tu aimes et trois que tu n'aimes pas, avec gostar de."
+    },
+    "it": {
+     "t": "Gostar de: gusti",
+     "g": "Dici cosa ti piace e cosa no con gostar de.",
+     "p": [
+      "Gostar funziona al contrario di piacere: la persona è il soggetto e c'è sempre de: Gosto de café.",
+      "De si unisce all'articolo: gosto do Porto (de + o), gosto da praia (de + a).",
+      "Per sentimenti forti: adoro o detesto; prefiro significa preferisco."
+     ],
+     "q": "Quale cibo adori e quale non ti piace per niente?",
+     "c": "Scrivi tre cose che adori, tre che ti piacciono e tre che non ti piacciono, con gostar de."
+    },
+    "pt": {
+     "t": "Gostar de: gostos",
+     "g": "Revê a construção gostar de e os erros típicos de quem aprende.",
+     "p": [
+      "Gostar leva sempre de, com contração: gosto do Algarve, gosto das tuas ideias.",
+      "Espanhóis e italianos tendem a dizer me gosta; em português quem gosta é o sujeito: eu gosto.",
+      "Em Portugal, para responder, basta o verbo: Gostas de peixe? — Gosto!"
+     ],
+     "q": "De que coisa simples gostas muito no teu dia a dia?",
+     "c": "Responde a cinco perguntas com gostas de... usando só o verbo, à portuguesa: Gosto! ou Não gosto."
+    },
+    "pt_BR": {
+     "t": "Gostar de: gostos",
+     "g": "Revise gostar de e o jeito português de responder.",
+     "p": [
+      "A regra é igual: gosto de, gosto do, gosto da. Em Portugal com tu: Gostas de futebol?",
+      "Para responder, os portugueses repetem o verbo: Gostas? — Gosto muito!",
+      "Adoro e detesto funcionam igual; curtir é brasileiro, em Portugal diz-se gostar ou adorar."
+     ],
+     "q": "De que você gosta mais em Portugal, ou o que gostaria de conhecer lá?",
+     "c": "Responda à portuguesa a três perguntas com Gostas de...?, repetindo o verbo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "gosto de",
+      "ex": "Gosto de café sem açúcar."
+     },
+     {
+      "w": "não gosto de",
+      "ex": "Não gosto de acordar cedo."
+     },
+     {
+      "w": "adoro",
+      "ex": "Adoro o mar!"
+     },
+     {
+      "w": "gosto muito de",
+      "ex": "Gosto muito da tua casa."
+     },
+     {
+      "w": "detesto",
+      "ex": "Detesto filas grandes."
+     },
+     {
+      "w": "preferir",
+      "ex": "Prefiro chá a café."
+     }
+    ],
+    "gram": "Gostar pede sempre de: gosto de música, gosto do Porto, gosto da praia. Preferir não leva de: prefiro chá."
+   }
+  },
+  {
+   "d": 35,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Negation",
+     "g": "Make sentences negative with não, nada, nunca and ninguém.",
+     "p": [
+      "Put não before the verb: Não falo alemão. Não gosto de chá.",
+      "Double negatives are correct: Não sei nada (I know nothing). Não está ninguém (nobody is here).",
+      "Nunca can go before the verb alone: Nunca como carne. Me neither is eu também não."
+     ],
+     "q": "What is something you never do? Answer with nunca.",
+     "c": "Write five true negative sentences about yourself with não, nada, nunca, ninguém and nenhum."
+    },
+    "de": {
+     "t": "Verneinung",
+     "g": "Du verneinst Sätze mit não, nada, nunca und ninguém.",
+     "p": [
+      "Não steht vor dem Verb: Não falo alemão. Não gosto de chá.",
+      "Doppelte Verneinung ist richtig: Não sei nada (Ich weiß nichts). Não está ninguém (Niemand ist da).",
+      "Nunca kann allein vor dem Verb stehen: Nunca como carne. Ich auch nicht: eu também não."
+     ],
+     "q": "Was machst du nie? Antworte mit nunca.",
+     "c": "Schreib fünf wahre verneinte Sätze über dich mit não, nada, nunca, ninguém und nenhum."
+    },
+    "es": {
+     "t": "La negación",
+     "g": "Hacer frases negativas con não, nada, nunca y ninguém.",
+     "p": [
+      "Não va delante del verbo: Não falo alemão. Não gosto de chá.",
+      "La doble negación es correcta, como en español: Não sei nada. Não está ninguém.",
+      "Nunca puede ir solo delante del verbo: Nunca como carne. Yo tampoco es eu também não."
+     ],
+     "q": "¿Qué es algo que nunca haces? Responde con nunca.",
+     "c": "Escribe cinco frases negativas verdaderas sobre ti con não, nada, nunca, ninguém y nenhum."
+    },
+    "fr": {
+     "t": "La négation",
+     "g": "Rendre une phrase négative avec não, nada, nunca et ninguém.",
+     "p": [
+      "Não se place avant le verbe : Não falo alemão. Não gosto de chá.",
+      "La double négation est correcte : Não sei nada (je ne sais rien), Não está ninguém (il n'y a personne).",
+      "Nunca peut aller seul avant le verbe : Nunca como carne. Moi non plus : eu também não."
+     ],
+     "q": "Qu'est-ce que tu ne fais jamais ? Réponds avec nunca.",
+     "c": "Écris cinq phrases négatives vraies sur toi avec não, nada, nunca, ninguém et nenhum."
+    },
+    "it": {
+     "t": "La negazione",
+     "g": "Rendi le frasi negative con não, nada, nunca e ninguém.",
+     "p": [
+      "Não va prima del verbo: Não falo alemão. Não gosto de chá.",
+      "La doppia negazione è corretta, come in italiano: Não sei nada. Não está ninguém.",
+      "Nunca può stare da solo prima del verbo: Nunca como carne. Neanch'io si dice eu também não."
+     ],
+     "q": "Qual è una cosa che non fai mai? Rispondi con nunca.",
+     "c": "Scrivi cinque frasi negative vere su di te con não, nada, nunca, ninguém e nenhum."
+    },
+    "pt": {
+     "t": "Negação",
+     "g": "Revê a negação e a dupla negação, natural em português.",
+     "p": [
+      "Não antes do verbo; com nada, ninguém ou nenhum depois do verbo mantém-se o não: não vi ninguém.",
+      "Se a palavra negativa vem antes, o não desaparece: Ninguém sabe. Nunca vou lá.",
+      "Em Portugal responde-se muitas vezes repetindo o verbo: Vens? — Não vou."
+     ],
+     "q": "O que é que nunca farias, mesmo que te pagassem bem?",
+     "c": "Escreve três frases com dupla negação e três com a palavra negativa no início, sem não."
+    },
+    "pt_BR": {
+     "t": "Negação",
+     "g": "Revise a negação e algumas respostas típicas de Portugal.",
+     "p": [
+      "A gramática é a mesma: não sei nada, ninguém veio, nunca vou lá.",
+      "No Brasil é comum o não no fim (Sei não); em Portugal isso quase não se ouve.",
+      "Em Portugal, para responder, repete-se o verbo: Vens? — Não vou. Gostas? — Não gosto."
+     ],
+     "q": "Qual é uma coisa que você nunca faz no fim de semana?",
+     "c": "Responda a três perguntas à portuguesa, repetindo o verbo na negação."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "não",
+      "ex": "Não falo alemão."
+     },
+     {
+      "w": "nada",
+      "ex": "Não comi nada hoje."
+     },
+     {
+      "w": "nunca",
+      "ex": "Nunca bebo café à noite."
+     },
+     {
+      "w": "ninguém",
+      "ex": "Não está ninguém em casa."
+     },
+     {
+      "w": "nenhum / nenhuma",
+      "ex": "Não tenho nenhuma pergunta."
+     },
+     {
+      "w": "também não",
+      "ex": "Não gosto de chá. — Eu também não."
+     }
+    ],
+    "gram": "Não vai antes do verbo. Com nada, ninguém e nenhum depois do verbo, mantém-se o não: não sei nada."
+   }
+  },
+  {
+   "d": 36,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "My home",
+     "g": "Name the rooms and basic furniture in a home.",
+     "p": [
+      "Rooms: a sala (living room), a cozinha (kitchen), o quarto (bedroom), a casa de banho (bathroom).",
+      "Bathroom is a casa de banho in Portugal and o banheiro in Brazil. Ask Onde fica a casa de banho?",
+      "Portuguese flat ads use T1, T2, T3: the number of bedrooms. A T2 has two bedrooms and a living room."
+     ],
+     "q": "How many rooms does your home have, and which one is your favourite?",
+     "c": "Walk through your home and name each room and one piece of furniture in Portuguese."
+    },
+    "de": {
+     "t": "Mein Zuhause",
+     "g": "Du benennst die Zimmer und einfache Möbel einer Wohnung.",
+     "p": [
+      "Zimmer: a sala (Wohnzimmer), a cozinha (Küche), o quarto (Schlafzimmer), a casa de banho (Bad).",
+      "Bad heißt in Portugal a casa de banho, in Brasilien o banheiro. Frag: Onde fica a casa de banho?",
+      "Wohnungsanzeigen in Portugal nutzen T1, T2, T3 für die Zahl der Schlafzimmer."
+     ],
+     "q": "Wie viele Zimmer hat dein Zuhause und welches ist dein Lieblingszimmer?",
+     "c": "Geh durch deine Wohnung und benenne jedes Zimmer und ein Möbelstück auf Portugiesisch."
+    },
+    "es": {
+     "t": "Mi casa",
+     "g": "Nombrar las habitaciones y los muebles básicos de una casa.",
+     "p": [
+      "Estancias: a sala (salón), a cozinha (cocina), o quarto (dormitorio), a casa de banho (baño).",
+      "El baño es a casa de banho en Portugal y o banheiro en Brasil. Pregunta: Onde fica a casa de banho?",
+      "Los anuncios de pisos en Portugal usan T1, T2, T3: el número de dormitorios."
+     ],
+     "q": "¿Cuántas habitaciones tiene tu casa y cuál es tu favorita?",
+     "c": "Recorre tu casa y di en portugués el nombre de cada estancia y de un mueble."
+    },
+    "fr": {
+     "t": "Mon logement",
+     "g": "Nommer les pièces et les meubles de base d'un logement.",
+     "p": [
+      "Pièces : a sala (salon), a cozinha (cuisine), o quarto (chambre), a casa de banho (salle de bain).",
+      "La salle de bain est a casa de banho au Portugal et o banheiro au Brésil. Demande : Onde fica a casa de banho?",
+      "Les annonces au Portugal utilisent T1, T2, T3 : le nombre de chambres, un peu comme F2, F3."
+     ],
+     "q": "Combien de pièces a ton logement et laquelle préfères-tu ?",
+     "c": "Fais le tour de chez toi et nomme chaque pièce et un meuble en portugais."
+    },
+    "it": {
+     "t": "La mia casa",
+     "g": "Nomini le stanze e i mobili di base di una casa.",
+     "p": [
+      "Stanze: a sala (soggiorno), a cozinha (cucina), o quarto (camera), a casa de banho (bagno).",
+      "Il bagno è a casa de banho in Portogallo e o banheiro in Brasile. Chiedi: Onde fica a casa de banho?",
+      "Gli annunci in Portogallo usano T1, T2, T3: il numero di camere da letto."
+     ],
+     "q": "Quante stanze ha casa tua e qual è la tua preferita?",
+     "c": "Fai il giro di casa e nomina ogni stanza e un mobile in portoghese."
+    },
+    "pt": {
+     "t": "A minha casa",
+     "g": "Revê o vocabulário da casa e as palavras que mudam no Brasil.",
+     "p": [
+      "Casa de banho, frigorífico e autoclismo são portugueses; no Brasil: banheiro, geladeira e descarga.",
+      "A tipologia T0, T1, T2 é muito portuguesa; no Brasil diz-se apartamento de um quarto, de dois quartos.",
+      "Varanda serve nos dois países, mas em Portugal ouve-se também marquise para a varanda fechada."
+     ],
+     "q": "Qual é o teu canto preferido em casa e o que fazes lá?",
+     "c": "Descreve a tua casa como num anúncio imobiliário português: tipologia, divisões e uma vantagem."
+    },
+    "pt_BR": {
+     "t": "A minha casa",
+     "g": "Aprenda os nomes da casa usados em Portugal.",
+     "p": [
+      "Em Portugal: casa de banho é banheiro, frigorífico é geladeira e o rés-do-chão é o térreo.",
+      "Os anúncios usam T1, T2, T3 para o número de quartos: um T2 tem dois quartos e sala.",
+      "Divisão é o nome português para cômodo: uma casa com cinco divisões."
+     ],
+     "q": "Como seria o anúncio da sua casa num site português?",
+     "c": "Descreva sua casa com T1, T2 ou T3, casa de banho e frigorífico."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "a sala",
+      "ex": "A sala tem uma janela grande."
+     },
+     {
+      "w": "a cozinha",
+      "ex": "Tomamos o pequeno-almoço na cozinha."
+     },
+     {
+      "w": "o quarto",
+      "ex": "O meu quarto é pequeno mas bonito."
+     },
+     {
+      "w": "a casa de banho",
+      "ex": "Onde fica a casa de banho?"
+     },
+     {
+      "w": "a varanda",
+      "ex": "Temos plantas na varanda."
+     },
+     {
+      "w": "o sofá",
+      "ex": "O gato dorme no sofá."
+     }
+    ],
+    "gram": "Em Portugal o banheiro chama-se casa de banho. Um apartamento T2 tem dois quartos e uma sala."
+   }
+  },
+  {
+   "d": 37,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Há: there is, there are",
+     "g": "Describe places with há (there is, there are).",
+     "p": [
+      "Há works for singular and plural: Há um parque. Há muitas lojas. It never changes.",
+      "Negative: Não há leite (there is no milk). Question: Há uma farmácia perto daqui?",
+      "In everyday Brazilian Portuguese people often say tem instead of há: Tem um café ali."
+     ],
+     "q": "What is there near your home? Tell me three places using há.",
+     "c": "Describe your street in four sentences with há and não há."
+    },
+    "de": {
+     "t": "Há: es gibt",
+     "g": "Du beschreibst Orte mit há (es gibt).",
+     "p": [
+      "Há gilt für Einzahl und Mehrzahl: Há um parque. Há muitas lojas. Es ändert sich nie.",
+      "Verneint: Não há leite (es gibt keine Milch). Frage: Há uma farmácia perto daqui?",
+      "Im brasilianischen Alltag sagt man oft tem statt há: Tem um café ali."
+     ],
+     "q": "Was gibt es in der Nähe deiner Wohnung? Nenne drei Orte mit há.",
+     "c": "Beschreibe deine Straße in vier Sätzen mit há und não há."
+    },
+    "es": {
+     "t": "Há: hay",
+     "g": "Describir lugares con há (hay).",
+     "p": [
+      "Há sirve para singular y plural, como hay: Há um parque. Há muitas lojas.",
+      "Negativa: Não há leite. Pregunta: Há uma farmácia perto daqui?",
+      "En el habla de Brasil se usa mucho tem en lugar de há: Tem um café ali."
+     ],
+     "q": "¿Qué hay cerca de tu casa? Dime tres lugares usando há.",
+     "c": "Describe tu calle en cuatro frases con há y não há."
+    },
+    "fr": {
+     "t": "Há : il y a",
+     "g": "Décrire des lieux avec há (il y a).",
+     "p": [
+      "Há sert au singulier comme au pluriel : Há um parque. Há muitas lojas. Il ne change jamais.",
+      "Négation : Não há leite (il n'y a pas de lait). Question : Há uma farmácia perto daqui?",
+      "Au Brésil, à l'oral, on dit souvent tem à la place de há : Tem um café ali."
+     ],
+     "q": "Qu'y a-t-il près de chez toi ? Cite trois lieux avec há.",
+     "c": "Décris ta rue en quatre phrases avec há et não há."
+    },
+    "it": {
+     "t": "Há: c'è, ci sono",
+     "g": "Descrivi i luoghi con há (c'è, ci sono).",
+     "p": [
+      "Há vale per singolare e plurale: Há um parque. Há muitas lojas. Non cambia mai.",
+      "Negativo: Não há leite (non c'è latte). Domanda: Há uma farmácia perto daqui?",
+      "Nel parlato brasiliano si dice spesso tem invece di há: Tem um café ali."
+     ],
+     "q": "Cosa c'è vicino a casa tua? Dimmi tre luoghi usando há.",
+     "c": "Descrivi la tua strada in quattro frasi con há e não há."
+    },
+    "pt": {
+     "t": "Há: existir num lugar",
+     "g": "Revê o uso de há e a diferença entre a norma europeia e a fala brasileira.",
+     "p": [
+      "Há é invariável: há um problema, há dois problemas. Nunca se diz hão dois problemas.",
+      "Em Portugal usa-se quase sempre há; no Brasil, na fala, tem é muito mais comum.",
+      "Atenção à escrita: há (verbo) e à (preposição + artigo) soam igual, mas não se confundem."
+     ],
+     "q": "O que há no teu bairro que gostarias de mostrar a um visitante?",
+     "c": "Escreve cinco frases sobre o teu bairro com há e verifica que não confundiste há com à."
+    },
+    "pt_BR": {
+     "t": "Há: haver e ter",
+     "g": "Revise o uso de há, que em Portugal é o normal também na fala.",
+     "p": [
+      "Em Portugal diz-se Há um café ali, e não Tem um café ali, que soa brasileiro.",
+      "Há é invariável nos dois países: há um parque, há muitos parques.",
+      "Há também indica tempo: Moro aqui há dois anos, igual ao Brasil."
+     ],
+     "q": "O que há perto da sua casa que você recomendaria a um turista?",
+     "c": "Descreva seu bairro em quatro frases usando só há, sem tem."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "há",
+      "ex": "Há um parque perto de casa."
+     },
+     {
+      "w": "não há",
+      "ex": "Não há leite no frigorífico."
+     },
+     {
+      "w": "há muitos / muitas",
+      "ex": "Há muitas lojas nesta rua."
+     },
+     {
+      "w": "perto de",
+      "ex": "Há uma farmácia perto daqui?"
+     },
+     {
+      "w": "o parque",
+      "ex": "O parque tem um lago."
+     },
+     {
+      "w": "a loja",
+      "ex": "Há uma loja nova na esquina."
+     }
+    ],
+    "gram": "Há não muda: há um café, há três cafés. Na fala brasileira diz-se muitas vezes tem: tem um café ali."
+   }
+  },
+  {
+   "d": 38,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Prepositions of place",
+     "g": "Say where things are with em, em cima de, debaixo de, ao lado de, entre and atrás de.",
+     "p": [
+      "Em cima de (on top of), debaixo de (under), ao lado de (next to), atrás de (behind), entre (between).",
+      "De contracts with the article: em cima da mesa, ao lado do banco.",
+      "In front of is à frente de in Portugal and often na frente de in Brazil."
+     ],
+     "q": "Where is your phone right now? Describe it with a preposition of place.",
+     "c": "Hide an object at home and describe its position in Portuguese with two prepositions."
+    },
+    "de": {
+     "t": "Präpositionen des Ortes",
+     "g": "Du sagst, wo etwas ist, mit em, em cima de, debaixo de, ao lado de, entre und atrás de.",
+     "p": [
+      "Em cima de (auf), debaixo de (unter), ao lado de (neben), atrás de (hinter), entre (zwischen).",
+      "De verschmilzt mit dem Artikel: em cima da mesa, ao lado do banco.",
+      "Vor heißt in Portugal à frente de, in Brasilien oft na frente de."
+     ],
+     "q": "Wo ist dein Handy gerade? Beschreib es mit einer Ortspräposition.",
+     "c": "Versteck einen Gegenstand und beschreib seine Lage auf Portugiesisch mit zwei Präpositionen."
+    },
+    "es": {
+     "t": "Preposiciones de lugar",
+     "g": "Decir dónde están las cosas con em, em cima de, debaixo de, ao lado de, entre y atrás de.",
+     "p": [
+      "Em cima de (encima de), debaixo de (debajo de), ao lado de (al lado de), atrás de (detrás de), entre.",
+      "De se contrae con el artículo: em cima da mesa, ao lado do banco.",
+      "Delante de es à frente de en Portugal y a menudo na frente de en Brasil."
+     ],
+     "q": "¿Dónde está tu móvil ahora mismo? Descríbelo con una preposición de lugar.",
+     "c": "Esconde un objeto en casa y describe dónde está en portugués con dos preposiciones."
+    },
+    "fr": {
+     "t": "Prépositions de lieu",
+     "g": "Dire où sont les choses avec em, em cima de, debaixo de, ao lado de, entre et atrás de.",
+     "p": [
+      "Em cima de (sur), debaixo de (sous), ao lado de (à côté de), atrás de (derrière), entre (entre).",
+      "De se contracte avec l'article : em cima da mesa, ao lado do banco.",
+      "Devant se dit à frente de au Portugal et souvent na frente de au Brésil."
+     ],
+     "q": "Où est ton téléphone en ce moment ? Décris-le avec une préposition de lieu.",
+     "c": "Cache un objet chez toi et décris sa position en portugais avec deux prépositions."
+    },
+    "it": {
+     "t": "Preposizioni di luogo",
+     "g": "Dici dove sono le cose con em, em cima de, debaixo de, ao lado de, entre e atrás de.",
+     "p": [
+      "Em cima de (sopra), debaixo de (sotto), ao lado de (accanto a), atrás de (dietro), entre (tra).",
+      "De si unisce all'articolo: em cima da mesa, ao lado do banco.",
+      "Davanti a è à frente de in Portogallo e spesso na frente de in Brasile."
+     ],
+     "q": "Dov'è il tuo telefono adesso? Descrivilo con una preposizione di luogo.",
+     "c": "Nascondi un oggetto in casa e descrivi dov'è in portoghese con due preposizioni."
+    },
+    "pt": {
+     "t": "Preposições de lugar",
+     "g": "Revê as locuções de lugar e as pequenas diferenças entre Portugal e o Brasil.",
+     "p": [
+      "Em cima de, debaixo de, ao lado de, atrás de, entre: todas pedem contração com o artigo.",
+      "Em Portugal diz-se à frente de; no Brasil, na frente de ou em frente a.",
+      "Ao pé de é uma forma muito portuguesa de dizer perto de: moro ao pé da escola."
+     ],
+     "q": "Como descreverias o caminho da tua casa até ao café mais próximo?",
+     "c": "Descreve a tua secretária ou mesa de trabalho em cinco frases com preposições de lugar."
+    },
+    "pt_BR": {
+     "t": "Preposições de lugar",
+     "g": "Revise as preposições de lugar e as formas típicas de Portugal.",
+     "p": [
+      "Em Portugal: à frente de em vez de na frente de: Espero-te à frente do cinema.",
+      "Ao pé de é muito usado em Portugal para perto de ou ao lado de: Moro ao pé do metro.",
+      "Repare também em espero-te, com o pronome depois do verbo."
+     ],
+     "q": "Onde fica seu café preferido em relação à sua casa?",
+     "c": "Descreva três lugares do seu bairro com à frente de e ao pé de."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "em cima de",
+      "ex": "O livro está em cima da mesa."
+     },
+     {
+      "w": "debaixo de",
+      "ex": "O gato está debaixo da cama."
+     },
+     {
+      "w": "ao lado de",
+      "ex": "A farmácia fica ao lado do banco."
+     },
+     {
+      "w": "entre",
+      "ex": "O café fica entre a escola e o parque."
+     },
+     {
+      "w": "atrás de",
+      "ex": "O carro está atrás da casa."
+     },
+     {
+      "w": "à frente de",
+      "ex": "Espero-te à frente do cinema."
+     }
+    ],
+    "gram": "Estas locuções terminam em de, que se contrai com o artigo: em cima da mesa, ao lado do banco, atrás das casas."
+   }
+  },
+  {
+   "d": 39,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Contractions: no, na, do, da",
+     "g": "See how em, de and a merge with articles.",
+     "p": [
+      "Em + o/a = no/na: no café, na praia. De + o/a = do/da: do Porto, da praia.",
+      "A + o = ao, a + a = à: vou ao cinema, vou à praia. Em + um = num: numa casa.",
+      "These contractions are compulsory: never say em o café, always no café."
+     ],
+     "q": "Where are you now and where are you from? Answer with no, na, do or da.",
+     "c": "Write six sentences about places in your life using no, na, do, da, ao and à."
+    },
+    "de": {
+     "t": "Zusammenziehungen: no, na, do, da",
+     "g": "Du siehst, wie em, de und a mit Artikeln verschmelzen.",
+     "p": [
+      "Em + o/a = no/na: no café, na praia. De + o/a = do/da: do Porto, da praia.",
+      "A + o = ao, a + a = à: vou ao cinema, vou à praia. Em + um = num: numa casa.",
+      "Diese Formen sind Pflicht: nie em o café, immer no café, wie im Deutschen im statt in dem."
+     ],
+     "q": "Wo bist du gerade und woher kommst du? Antworte mit no, na, do oder da.",
+     "c": "Schreib sechs Sätze über Orte in deinem Leben mit no, na, do, da, ao und à."
+    },
+    "es": {
+     "t": "Contracciones: no, na, do, da",
+     "g": "Ver cómo em, de y a se unen con los artículos.",
+     "p": [
+      "Em + o/a = no/na: no café (en el café), na praia. De + o/a = do/da: do Porto, da praia.",
+      "A + o = ao, a + a = à: vou ao cinema, vou à praia. Em + um = num: numa casa.",
+      "Son obligatorias, como del y al en español, pero en portugués hay muchas más."
+     ],
+     "q": "¿Dónde estás ahora y de dónde eres? Responde con no, na, do o da.",
+     "c": "Escribe seis frases sobre lugares de tu vida con no, na, do, da, ao y à."
+    },
+    "fr": {
+     "t": "Contractions : no, na, do, da",
+     "g": "Voir comment em, de et a fusionnent avec les articles.",
+     "p": [
+      "Em + o/a = no/na : no café, na praia. De + o/a = do/da : do Porto, da praia.",
+      "A + o = ao, a + a = à : vou ao cinema, vou à praia. Em + um = num : numa casa.",
+      "Elles sont obligatoires, comme du et au en français, mais le portugais en a beaucoup plus."
+     ],
+     "q": "Où es-tu maintenant et d'où viens-tu ? Réponds avec no, na, do ou da.",
+     "c": "Écris six phrases sur des lieux de ta vie avec no, na, do, da, ao et à."
+    },
+    "it": {
+     "t": "Preposizioni articolate: no, na, do, da",
+     "g": "Vedi come em, de e a si uniscono agli articoli.",
+     "p": [
+      "Em + o/a = no/na: no café (nel bar), na praia. De + o/a = do/da: do Porto, da praia.",
+      "A + o = ao, a + a = à: vou ao cinema, vou à praia. Em + um = num: numa casa.",
+      "Sono obbligatorie, proprio come nel, della e al in italiano."
+     ],
+     "q": "Dove sei adesso e di dove sei? Rispondi con no, na, do o da.",
+     "c": "Scrivi sei frasi sui luoghi della tua vita con no, na, do, da, ao e à."
+    },
+    "pt": {
+     "t": "Contrações: no, na, do, da",
+     "g": "Revê as contrações obrigatórias e a crase, que causa dúvidas até a nativos.",
+     "p": [
+      "Em, de, a e por juntam-se ao artigo: no, na, do, da, ao, à, pelo, pela.",
+      "O à com acento grave é a + a: vou à praia. Mas vou a Lisboa não leva acento, porque não há artigo.",
+      "Num e numa são correntes em Portugal; no Brasil, na escrita formal, prefere-se em um."
+     ],
+     "q": "Que lugares visitas mais vezes durante a semana?",
+     "c": "Escreve cinco frases com à e confirma que em cada uma há mesmo a + a."
+    },
+    "pt_BR": {
+     "t": "Contrações: no, na, do, da",
+     "g": "Revise as contrações e o uso frequente de num e numa em Portugal.",
+     "p": [
+      "As contrações são as mesmas: no, na, do, da, ao, à, pelo, pela.",
+      "Em Portugal, num e numa são normais até na escrita: moro numa casa antiga.",
+      "Para cidades, Portugal usa ir a: vou a Lisboa; no Brasil é comum vou para Lisboa."
+     ],
+     "q": "Onde você está agora e onde gostaria de estar? Responda com contrações.",
+     "c": "Escreva quatro frases com num e numa, à portuguesa."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "no / na",
+      "ex": "Estou no café, a Ana está na praia."
+     },
+     {
+      "w": "do / da",
+      "ex": "Sou do Porto e ela é da Madeira."
+     },
+     {
+      "w": "num / numa",
+      "ex": "Moro numa casa antiga."
+     },
+     {
+      "w": "ao / à",
+      "ex": "Vou ao cinema e depois à praia."
+     },
+     {
+      "w": "nos / nas",
+      "ex": "Há flores nas janelas."
+     },
+     {
+      "w": "pelo / pela",
+      "ex": "Passeamos pela cidade."
+     }
+    ],
+    "gram": "Em + o = no, em + a = na, de + o = do, de + a = da, a + o = ao, a + a = à, por + o = pelo. A contração é obrigatória."
+   }
+  },
+  {
+   "d": 40,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Ir: to go",
+     "g": "Conjugate ir and choose between ir a and ir para.",
+     "p": [
+      "Eu vou, tu vais, ele/ela/você vai, nós vamos, eles/elas/vocês vão.",
+      "Ir a is for short visits: Vou ao café. Ir para suggests a stay or a return: Vou para casa.",
+      "Vamos! means Let's go! and Vamos ao cinema? is a friendly invitation."
+     ],
+     "q": "Where are you going this weekend? Answer with vou a or vou para.",
+     "c": "Plan your week aloud in Portuguese: where you go each day, using vou ao, vou à or vou para."
+    },
+    "de": {
+     "t": "Ir: gehen, fahren",
+     "g": "Du konjugierst ir und wählst zwischen ir a und ir para.",
+     "p": [
+      "Eu vou, tu vais, ele/ela/você vai, nós vamos, eles/elas/vocês vão.",
+      "Ir a für kurze Besuche: Vou ao café. Ir para für einen Aufenthalt oder die Rückkehr: Vou para casa.",
+      "Vamos! heißt Los geht's! und Vamos ao cinema? ist eine freundliche Einladung."
+     ],
+     "q": "Wohin gehst du am Wochenende? Antworte mit vou a oder vou para.",
+     "c": "Plane laut deine Woche auf Portugiesisch: wohin du jeden Tag gehst, mit vou ao, vou à oder vou para."
+    },
+    "es": {
+     "t": "Ir: el verbo ir",
+     "g": "Conjugar ir y elegir entre ir a e ir para.",
+     "p": [
+      "Eu vou, tu vais, ele/ela/você vai, nós vamos, eles/elas/vocês vão. Casi como en español.",
+      "Ir a para visitas cortas: Vou ao café. Ir para sugiere quedarse o volver: Vou para casa.",
+      "Vamos! es ¡vamos!, y Vamos ao cinema? es una invitación amable."
+     ],
+     "q": "¿Adónde vas este fin de semana? Responde con vou a o vou para.",
+     "c": "Planifica tu semana en voz alta: adónde vas cada día, con vou ao, vou à o vou para."
+    },
+    "fr": {
+     "t": "Ir : aller",
+     "g": "Conjuguer ir et choisir entre ir a et ir para.",
+     "p": [
+      "Eu vou, tu vais, ele/ela/você vai, nós vamos, eles/elas/vocês vão.",
+      "Ir a pour une courte visite : Vou ao café. Ir para pour un séjour ou un retour : Vou para casa.",
+      "Vamos! veut dire On y va ! et Vamos ao cinema? est une invitation sympa."
+     ],
+     "q": "Où vas-tu ce week-end ? Réponds avec vou a ou vou para.",
+     "c": "Planifie ta semaine à voix haute en portugais : où tu vas chaque jour, avec vou ao, vou à ou vou para."
+    },
+    "it": {
+     "t": "Ir: andare",
+     "g": "Coniughi ir e scegli tra ir a e ir para.",
+     "p": [
+      "Eu vou, tu vais, ele/ela/você vai, nós vamos, eles/elas/vocês vão.",
+      "Ir a per visite brevi: Vou ao café. Ir para per restare o tornare: Vou para casa.",
+      "Vamos! significa Andiamo! e Vamos ao cinema? è un invito simpatico."
+     ],
+     "q": "Dove vai questo fine settimana? Rispondi con vou a o vou para.",
+     "c": "Pianifica la tua settimana ad alta voce: dove vai ogni giorno, con vou ao, vou à o vou para."
+    },
+    "pt": {
+     "t": "Ir: o verbo ir",
+     "g": "Revê o presente de ir e a diferença subtil entre ir a e ir para.",
+     "p": [
+      "Vou, vais, vai, vamos, vão. Em Portugal ir a e ir para ainda marcam a duração da ida.",
+      "Vou ao Porto (passar o dia) não é o mesmo que vou para o Porto (para ficar ou viver).",
+      "No Brasil diz-se muito ir em na fala (vou no mercado); em Portugal usa-se ir a: vou ao mercado."
+     ],
+     "q": "Qual é o sítio onde vais com mais prazer durante a semana?",
+     "c": "Escreve três pares de frases com ir a e ir para e explica a diferença de sentido."
+    },
+    "pt_BR": {
+     "t": "Ir: o verbo ir",
+     "g": "Revise o presente de ir e as preposições usadas em Portugal.",
+     "p": [
+      "Em Portugal não se diz vou no mercado: diz-se vou ao mercado, com a preposição a.",
+      "Ir a é para ir e voltar; ir para sugere ficar: Vou para casa, vou para o Brasil no verão.",
+      "Vais? com tu é a forma normal entre amigos: Vais à praia hoje?"
+     ],
+     "q": "Aonde você vai amanhã? Responda com vou ao ou vou à.",
+     "c": "Fale cinco frases sobre seus planos usando ao e à em vez de no e na."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "vou",
+      "ex": "Vou ao supermercado."
+     },
+     {
+      "w": "vais",
+      "ex": "Vais à festa amanhã?"
+     },
+     {
+      "w": "vai",
+      "ex": "Ela vai para casa às seis."
+     },
+     {
+      "w": "vamos",
+      "ex": "Vamos ao cinema?"
+     },
+     {
+      "w": "vão",
+      "ex": "Eles vão a Lisboa no sábado."
+     },
+     {
+      "w": "ir a pé",
+      "ex": "Vou a pé para o trabalho."
+     }
+    ],
+    "gram": "Ir no presente: vou, vais, vai, vamos, vão. Ir a para visitas curtas; ir para quando se fica ou se volta: vou para casa."
+   }
+  }
+ ]
+}

@@ -59,8 +59,11 @@ def pending(state):
             continue
         for s, en in CHUNKS:
             if not chunk_done(tid, s, en):
-                lessons.append(f'lessons:{tid}:{s}-{en}')
+                lessons.append((s, f'lessons:{tid}:{s}-{en}'))
                 break
+    # Breadth-first: every topic gets days 1-60 before any topic gets 61-120,
+    # so a new Buddy in any category has its first lessons early.
+    lessons = [j for _, j in sorted(lessons, key=lambda x: x[0])]
     # Plans, two topics per job.
     todo = [t['id'] for t in V.TOPICS if t['id'] not in plan_busy and not plan_done(t['id'])]
     plans = ['plan:' + ','.join(todo[i:i + 2]) for i in range(0, len(todo), 2)]

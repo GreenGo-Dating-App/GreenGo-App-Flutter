@@ -1,0 +1,2195 @@
+{
+"topic": "theatre",
+"days": [
+{
+"d": 1,
+"lv": "beginner",
+"t": "What makes theatre theatre",
+"f": "Live performers, a live audience and a shared moment in one room: the simple magic that no screen can copy"
+},
+{
+"d": 2,
+"lv": "beginner",
+"t": "Theatre around the world",
+"f": "From Greek amphitheatres to Japanese Noh and Indian Kathakali: people everywhere have always told stories on stage"
+},
+{
+"d": 3,
+"lv": "beginner",
+"t": "Plays, musicals and other live shows",
+"f": "The main families of live performance: spoken drama, musicals, opera, dance, comedy and physical theatre"
+},
+{
+"d": 4,
+"lv": "beginner",
+"t": "Your first memory of a show",
+"f": "Thinking back to a school play, a pantomime or a concert and why early live shows stay with us"
+},
+{
+"d": 5,
+"lv": "beginner",
+"t": "Parts of a stage",
+"f": "Upstage, downstage, stage left and right, wings and apron: the basic map of a stage from the actor's view"
+},
+{
+"d": 6,
+"lv": "beginner",
+"t": "Types of stages",
+"f": "Proscenium arch, thrust, in-the-round and black box: how the shape of a stage changes the experience"
+},
+{
+"d": 7,
+"lv": "beginner",
+"t": "The people behind a show",
+"f": "Playwright, director, actors, designers, stage manager and crew: who does what in a production"
+},
+{
+"d": 8,
+"lv": "beginner",
+"t": "Reading a theatre programme",
+"f": "Cast list, creative team, running time and notes: how to get the most from the printed programme"
+},
+{
+"d": 9,
+"lv": "beginner",
+"t": "Booking your first ticket",
+"f": "Stalls, circle, balcony and boxes: choosing seats by view, budget and the kind of show"
+},
+{
+"d": 10,
+"lv": "beginner",
+"t": "Theatre etiquette basics",
+"f": "Phones off, arrive on time, unwrap sweets early and enjoy: simple habits that keep the magic alive for everyone"
+},
+{
+"d": 11,
+"lv": "beginner",
+"t": "When to clap",
+"f": "Applause after songs, at the interval and at the curtain call, plus how customs differ between countries"
+},
+{
+"d": 12,
+"lv": "beginner",
+"t": "The interval",
+"f": "What happens in the break, why it exists and how to use it to chat about the first half"
+},
+{
+"d": 13,
+"lv": "beginner",
+"t": "Tragedy and comedy",
+"f": "The two oldest dramatic genres and their famous masks: one aims to move us, the other to make us laugh"
+},
+{
+"d": 14,
+"lv": "beginner",
+"t": "What a script looks like",
+"f": "Character names, dialogue and stage directions: how to read the page a play is written on"
+},
+{
+"d": 15,
+"lv": "beginner",
+"t": "Acts and scenes",
+"f": "How plays are divided into acts and scenes, and why a scene change can shift time or place"
+},
+{
+"d": 16,
+"lv": "beginner",
+"t": "Stage directions",
+"f": "The italic notes that tell actors where to move and how to speak, and how directors interpret them"
+},
+{
+"d": 17,
+"lv": "beginner",
+"t": "Monologue, dialogue, soliloquy",
+"f": "Speaking alone, speaking together and thinking aloud: three basic ways characters talk on stage"
+},
+{
+"d": 18,
+"lv": "beginner",
+"t": "The fourth wall",
+"f": "The invisible wall between stage and audience, and the fun moments when actors break it"
+},
+{
+"d": 19,
+"lv": "beginner",
+"t": "Ancient Greek theatre",
+"f": "Festivals in Athens, the outdoor theatre, masks and the chorus: where Western drama began"
+},
+{
+"d": 20,
+"lv": "beginner",
+"t": "The Greek chorus",
+"f": "A group that sings, dances and comments on the action: an ancient idea still used today"
+},
+{
+"d": 21,
+"lv": "beginner",
+"t": "Aeschylus, Sophocles, Euripides",
+"f": "The three great Greek tragedians and the big human questions their plays still raise"
+},
+{
+"d": 22,
+"lv": "beginner",
+"t": "Aristophanes and Greek comedy",
+"f": "Bold, cheeky comedies with fantastical plots, like birds building a city in the clouds"
+},
+{
+"d": 23,
+"lv": "beginner",
+"t": "Roman theatre",
+"f": "Plautus and Terence, stock characters and big stone theatres across the Roman world"
+},
+{
+"d": 24,
+"lv": "beginner",
+"t": "Mini review: first steps on stage",
+"f": "A light look back at stage parts, genres and the Greeks, with a quick quiz to make it stick"
+},
+{
+"d": 25,
+"lv": "beginner",
+"t": "Commedia dell'arte",
+"f": "Italian street theatre with masks, improvisation and lively stock characters touring Europe"
+},
+{
+"d": 26,
+"lv": "beginner",
+"t": "Meet Arlecchino and friends",
+"f": "Harlequin, Pantalone, Colombina and the Doctor: commedia characters that live on in modern comedy"
+},
+{
+"d": 27,
+"lv": "beginner",
+"t": "Shakespeare's Globe",
+"f": "The open-air wooden theatre in London, groundlings in the yard and shows in daylight"
+},
+{
+"d": 28,
+"lv": "beginner",
+"t": "Who was Shakespeare",
+"f": "A glove-maker's son from Stratford who wrote around 37 plays and gave English many everyday phrases"
+},
+{
+"d": 29,
+"lv": "beginner",
+"t": "Shakespeare's comedies",
+"f": "Mistaken identity, disguises and happy endings in plays like Twelfth Night and A Midsummer Night's Dream"
+},
+{
+"d": 30,
+"lv": "beginner",
+"t": "Shakespeare's famous lines",
+"f": "Phrases like 'all the world's a stage' and what they mean in their scenes"
+},
+{
+"d": 31,
+"lv": "beginner",
+"t": "Noh theatre of Japan",
+"f": "Slow, elegant movement, masks and music in one of the world's oldest living theatre forms"
+},
+{
+"d": 32,
+"lv": "beginner",
+"t": "Kabuki",
+"f": "Bold make-up, spectacular costumes, quick changes and the hanamichi walkway through the audience"
+},
+{
+"d": 33,
+"lv": "beginner",
+"t": "Kyogen comic plays",
+"f": "The short, playful comedies performed between Noh pieces, full of clever servants"
+},
+{
+"d": 34,
+"lv": "beginner",
+"t": "Peking opera",
+"f": "Singing, acrobatics, painted faces and symbolic gestures in China's famous stage art"
+},
+{
+"d": 35,
+"lv": "beginner",
+"t": "Kathakali and Indian theatre",
+"f": "Dance-drama from Kerala with elaborate make-up, plus Sanskrit drama and the Natya Shastra"
+},
+{
+"d": 36,
+"lv": "beginner",
+"t": "Puppet theatre traditions",
+"f": "Bunraku in Japan, shadow puppets in Indonesia and marionettes in Europe"
+},
+{
+"d": 37,
+"lv": "beginner",
+"t": "What is a musical",
+"f": "Story told through songs, dialogue and dance, and how a song moves the plot forward"
+},
+{
+"d": 38,
+"lv": "beginner",
+"t": "Anatomy of a musical number",
+"f": "Verse, chorus, build and button: how show tunes are shaped to earn applause"
+},
+{
+"d": 39,
+"lv": "beginner",
+"t": "The overture",
+"f": "The instrumental opening that previews the melodies and sets the mood before the curtain rises"
+},
+{
+"d": 40,
+"lv": "beginner",
+"t": "The 'I want' song",
+"f": "The early number where the hero sings their dream, a classic tool of musical storytelling"
+},
+{
+"d": 41,
+"lv": "beginner",
+"t": "The showstopper",
+"f": "The big number that makes the audience cheer so long the show pauses"
+},
+{
+"d": 42,
+"lv": "beginner",
+"t": "Broadway and the West End",
+"f": "New York's and London's famous theatre districts and why they are linked to musicals"
+},
+{
+"d": 43,
+"lv": "beginner",
+"t": "Opera versus musical",
+"f": "Sung-through classical music versus a mix of speech and song: similarities and differences"
+},
+{
+"d": 44,
+"lv": "beginner",
+"t": "Operetta",
+"f": "The light, witty ancestor of the musical, from Offenbach in Paris to Strauss in Vienna"
+},
+{
+"d": 45,
+"lv": "beginner",
+"t": "Pantomime traditions",
+"f": "British family pantomime: dames, villains to boo and the famous 'he's behind you!'"
+},
+{
+"d": 46,
+"lv": "beginner",
+"t": "Cabaret and revue",
+"f": "Short songs, sketches and dances in an intimate setting, without one single story"
+},
+{
+"d": 47,
+"lv": "beginner",
+"t": "Mini review: songs and traditions",
+"f": "Recap of world traditions and musical basics, plus picking your favourite so far"
+},
+{
+"d": 48,
+"lv": "beginner",
+"t": "Why we love live shows",
+"f": "Shared laughter, suspense and the thrill of something that can never happen exactly the same way twice"
+},
+{
+"d": 49,
+"lv": "beginner",
+"t": "Watching actively",
+"f": "Noticing acting choices, design and pacing while still enjoying the story"
+},
+{
+"d": 50,
+"lv": "beginner",
+"t": "Talking about a show afterwards",
+"f": "Simple questions to share impressions: what moved you, what surprised you, what stayed with you"
+},
+{
+"d": 51,
+"lv": "beginner",
+"t": "Writing a mini review",
+"f": "A three-line review: what the show was, one thing that worked, one thing you would change"
+},
+{
+"d": 52,
+"lv": "beginner",
+"t": "Your voice as an instrument",
+"f": "Breath, pitch, volume and pace: the four simple controls every performer works with"
+},
+{
+"d": 53,
+"lv": "beginner",
+"t": "Breathing like a performer",
+"f": "Belly breathing for calm and power, with an easy exercise to try at home"
+},
+{
+"d": 54,
+"lv": "beginner",
+"t": "Warming up the body",
+"f": "Shaking out, stretching and rolling the shoulders: why actors warm up before every show"
+},
+{
+"d": 55,
+"lv": "beginner",
+"t": "Tongue twisters for clarity",
+"f": "Fun phrases that train clear speech, in your language and others"
+},
+{
+"d": 56,
+"lv": "beginner",
+"t": "Projection without shouting",
+"f": "How actors reach the back row by using breath and resonance instead of strain"
+},
+{
+"d": 57,
+"lv": "beginner",
+"t": "Facial expression",
+"f": "Showing joy, surprise and curiosity with the face, and how much is enough for a big room"
+},
+{
+"d": 58,
+"lv": "beginner",
+"t": "Body language on stage",
+"f": "Posture, gestures and stillness: how the body tells the audience what a character feels"
+},
+{
+"d": 59,
+"lv": "beginner",
+"t": "Using the space",
+"f": "Moving with purpose, levels and distance between characters to tell the story"
+},
+{
+"d": 60,
+"lv": "beginner",
+"t": "Mini review: voice and body",
+"f": "A gentle recap of breathing, voice and movement with a 2-minute warm-up routine"
+},
+{
+"d": 61,
+"lv": "beginner",
+"t": "Stage fright is normal",
+"f": "Why nerves come even to famous actors and simple ways to turn them into energy"
+},
+{
+"d": 62,
+"lv": "beginner",
+"t": "Learning lines",
+"f": "Chunking, repeating aloud and linking words to moves: practical ways to memorise text"
+},
+{
+"d": 63,
+"lv": "beginner",
+"t": "Listening on stage",
+"f": "Why reacting to your scene partner matters as much as saying your own lines"
+},
+{
+"d": 64,
+"lv": "beginner",
+"t": "Objectives: what does the character want",
+"f": "The key acting question that turns words into action and gives every scene a drive"
+},
+{
+"d": 65,
+"lv": "beginner",
+"t": "Obstacles and stakes",
+"f": "What stands in the character's way and what they could lose: the fuel of drama"
+},
+{
+"d": 66,
+"lv": "beginner",
+"t": "Status games",
+"f": "High and low status in posture and speech, a playful tool from improvisation teachers"
+},
+{
+"d": 67,
+"lv": "beginner",
+"t": "Improv basics: yes, and",
+"f": "Accepting an idea and adding to it, the golden rule of improvisation"
+},
+{
+"d": 68,
+"lv": "beginner",
+"t": "Improv games to try",
+"f": "Simple games like one-word story and freeze that anyone can play with friends"
+},
+{
+"d": 69,
+"lv": "beginner",
+"t": "Creating a character from an object",
+"f": "Building a character from a hat, a cup or a walk: a fun beginner exercise"
+},
+{
+"d": 70,
+"lv": "beginner",
+"t": "Mime and gesture",
+"f": "Telling a story without words through clear, precise movement"
+},
+{
+"d": 71,
+"lv": "beginner",
+"t": "Clowning",
+"f": "The joy of failure, the red nose and the honest connection between clown and audience"
+},
+{
+"d": 72,
+"lv": "beginner",
+"t": "Mini review: playing and improvising",
+"f": "Recap of objectives, status and improv, plus your favourite game so far"
+},
+{
+"d": 73,
+"lv": "beginner",
+"t": "Lighting basics",
+"f": "Why light guides our eyes, sets the time of day and creates mood on stage"
+},
+{
+"d": 74,
+"lv": "beginner",
+"t": "Colour and mood in light",
+"f": "Warm, cool and saturated colours and the feelings they create in an audience"
+},
+{
+"d": 75,
+"lv": "beginner",
+"t": "Spotlights and follow spots",
+"f": "How a single beam isolates a performer and why musicals love the follow spot"
+},
+{
+"d": 76,
+"lv": "beginner",
+"t": "Sound design",
+"f": "Music, effects and amplification: how sound builds the world of a play"
+},
+{
+"d": 77,
+"lv": "beginner",
+"t": "Set design basics",
+"f": "From a bare stage to a full house on stage: how sets show place, era and style"
+},
+{
+"d": 78,
+"lv": "beginner",
+"t": "Props",
+"f": "Personal props, set props and the prop table: the small objects that make a scene real"
+},
+{
+"d": 79,
+"lv": "beginner",
+"t": "Costume basics",
+"f": "How clothes reveal character, period and status at a glance"
+},
+{
+"d": 80,
+"lv": "beginner",
+"t": "Make-up and wigs",
+"f": "Stage make-up to read under bright lights and the art of theatrical wigs"
+},
+{
+"d": 81,
+"lv": "beginner",
+"t": "Scene changes",
+"f": "Blackouts, revolving stages and crew in black: how one place becomes another"
+},
+{
+"d": 82,
+"lv": "beginner",
+"t": "Backstage tour",
+"f": "Green room, dressing rooms, fly tower and prompt corner: a walk behind the scenes"
+},
+{
+"d": 83,
+"lv": "beginner",
+"t": "The stage manager",
+"f": "The calm organiser who calls the cues and keeps every show running on time"
+},
+{
+"d": 84,
+"lv": "beginner",
+"t": "Mini review: behind the scenes",
+"f": "A recap of light, sound, set and costume, with a backstage vocabulary quiz"
+},
+{
+"d": 85,
+"lv": "beginner",
+"t": "Theatre superstitions",
+"f": "Saying 'break a leg', the ghost light and other playful backstage traditions"
+},
+{
+"d": 86,
+"lv": "beginner",
+"t": "Famous theatres of the world",
+"f": "The Globe, the Comédie-Française, La Scala, the Bolshoi and Sydney Opera House"
+},
+{
+"d": 87,
+"lv": "beginner",
+"t": "Theatre architecture",
+"f": "Horseshoe auditoriums, galleries and modern halls: how buildings shape the sound and the view"
+},
+{
+"d": 88,
+"lv": "beginner",
+"t": "Children's theatre",
+"f": "Shows made for young audiences and why they are often the most inventive"
+},
+{
+"d": 89,
+"lv": "beginner",
+"t": "Family musicals",
+"f": "Musicals made from beloved stories that bring generations together in one audience"
+},
+{
+"d": 90,
+"lv": "beginner",
+"t": "Street theatre",
+"f": "Performers in squares and markets, from medieval fairs to modern festivals"
+},
+{
+"d": 91,
+"lv": "beginner",
+"t": "Theatre festivals",
+"f": "Edinburgh Fringe, Avignon and others where whole cities turn into stages"
+},
+{
+"d": 92,
+"lv": "beginner",
+"t": "Amateur and community theatre",
+"f": "Local groups where neighbours put on shows for the joy of it"
+},
+{
+"d": 93,
+"lv": "beginner",
+"t": "School plays",
+"f": "Why school productions build confidence, teamwork and lifelong memories"
+},
+{
+"d": 94,
+"lv": "beginner",
+"t": "Mini review: theatre in everyday life",
+"f": "Recap of festivals, community and family theatre, and the ones near you"
+},
+{
+"d": 95,
+"lv": "beginner",
+"t": "Molière's comedies",
+"f": "The French master of comedy who poked gentle fun at snobs, misers and hypocrites"
+},
+{
+"d": 96,
+"lv": "beginner",
+"t": "Goldoni and Italian comedy",
+"f": "Carlo Goldoni turned commedia masks into real characters, as in The Servant of Two Masters"
+},
+{
+"d": 97,
+"lv": "beginner",
+"t": "Lope de Vega and the Spanish Golden Age",
+"f": "Hundreds of lively plays full of honour, wit and clever plot twists"
+},
+{
+"d": 98,
+"lv": "beginner",
+"t": "Calderón's 'Life is a Dream'",
+"f": "A famous Spanish play about reality, dreams and choosing to act well"
+},
+{
+"d": 99,
+"lv": "beginner",
+"t": "Restoration comedy",
+"f": "Witty English comedies with fans, wigs and sharp dialogue after theatres reopened in 1660"
+},
+{
+"d": 100,
+"lv": "beginner",
+"t": "Oscar Wilde's wit",
+"f": "The Importance of Being Earnest and the art of the perfectly polished one-liner"
+},
+{
+"d": 101,
+"lv": "beginner",
+"t": "Musical theatre in film",
+"f": "How stage musicals become movies and what changes on the way"
+},
+{
+"d": 102,
+"lv": "beginner",
+"t": "Favourite show tunes",
+"f": "Exploring songs that became famous outside their shows"
+},
+{
+"d": 103,
+"lv": "beginner",
+"t": "Mini review: classic comedies",
+"f": "A look back at Molière, Goldoni, Lope de Vega and Wilde"
+},
+{
+"d": 104,
+"lv": "beginner",
+"t": "Watching theatre on screen",
+"f": "Recorded live performances and broadcasts that bring the stage to cinemas and homes"
+},
+{
+"d": 105,
+"lv": "beginner",
+"t": "Audio drama",
+"f": "Plays on radio and podcasts, where sound alone builds the whole world"
+},
+{
+"d": 106,
+"lv": "beginner",
+"t": "Reading a play for pleasure",
+"f": "Tips for reading plays like novels: casting it in your head and reading aloud"
+},
+{
+"d": 107,
+"lv": "beginner",
+"t": "Choosing a play to read",
+"f": "Short, fun classics that are easy to start with"
+},
+{
+"d": 108,
+"lv": "beginner",
+"t": "Reading aloud with friends",
+"f": "Hosting a casual play reading, sharing roles around a table"
+},
+{
+"d": 109,
+"lv": "beginner",
+"t": "Theatre words in everyday speech",
+"f": "Expressions like 'stealing the show', 'waiting in the wings' and 'upstaging'"
+},
+{
+"d": 110,
+"lv": "beginner",
+"t": "Theatre vocabulary across languages",
+"f": "Stage words that travel: encore, bravo, foyer, finale and more"
+},
+{
+"d": 111,
+"lv": "beginner",
+"t": "Planning a theatre outing",
+"f": "Choosing a show, booking, getting there and making an evening of it"
+},
+{
+"d": 112,
+"lv": "beginner",
+"t": "Going to the theatre while travelling",
+"f": "Finding shows in other cities and enjoying them even in another language"
+},
+{
+"d": 113,
+"lv": "beginner",
+"t": "Surtitles and accessibility",
+"f": "Captioned, audio-described and relaxed performances that open theatre to everyone"
+},
+{
+"d": 114,
+"lv": "beginner",
+"t": "Cheap and last-minute tickets",
+"f": "Day seats, lotteries, standing tickets and previews in general terms"
+},
+{
+"d": 115,
+"lv": "beginner",
+"t": "Dressing for the theatre",
+"f": "From evening wear to jeans: how dress codes vary by venue and country, and why comfort is fine"
+},
+{
+"d": 116,
+"lv": "beginner",
+"t": "Stage door culture",
+"f": "Meeting performers after the show politely, asking for autographs and respecting their time"
+},
+{
+"d": 117,
+"lv": "beginner",
+"t": "Keeping a theatre journal",
+"f": "Noting shows you saw, favourite moments and ticket stubs to remember your theatre life"
+},
+{
+"d": 118,
+"lv": "beginner",
+"t": "Theatre with kids",
+"f": "Picking age-appropriate shows, preparing children and making their first visit a joy"
+},
+{
+"d": 119,
+"lv": "beginner",
+"t": "Your personal theatre wishlist",
+"f": "Listing the shows, theatres and festivals you dream of seeing one day"
+},
+{
+"d": 120,
+"lv": "beginner",
+"t": "Mini review: beginner stage complete",
+"f": "Celebrating 120 days: recap of the beginner path and your favourite discoveries"
+},
+{
+"d": 121,
+"lv": "intermediate",
+"t": "Welcome to intermediate theatre",
+"f": "Moving from enjoying shows to understanding how they are built, with deeper craft and history"
+},
+{
+"d": 122,
+"lv": "intermediate",
+"t": "Dramatic structure",
+"f": "Exposition, rising action, climax and resolution: the classic shape of a play"
+},
+{
+"d": 123,
+"lv": "intermediate",
+"t": "Aristotle's Poetics",
+"f": "The first book on drama, with ideas on plot, character and catharsis still debated today"
+},
+{
+"d": 124,
+"lv": "intermediate",
+"t": "The three unities",
+"f": "Unity of time, place and action: an old rule that writers both followed and broke"
+},
+{
+"d": 125,
+"lv": "intermediate",
+"t": "The well-made play",
+"f": "Tight plots, secrets revealed at the right moment and neat endings of 19th-century drama"
+},
+{
+"d": 126,
+"lv": "intermediate",
+"t": "Subtext",
+"f": "What characters mean but do not say, and how actors play the words beneath the words"
+},
+{
+"d": 127,
+"lv": "intermediate",
+"t": "Dramatic irony",
+"f": "When the audience knows something the characters do not, creating suspense and laughter"
+},
+{
+"d": 128,
+"lv": "intermediate",
+"t": "Henrik Ibsen",
+"f": "The Norwegian playwright who brought real, modern problems to the stage, as in A Doll's House"
+},
+{
+"d": 129,
+"lv": "intermediate",
+"t": "Anton Chekhov",
+"f": "Quiet, funny and tender plays like The Seagull and The Cherry Orchard about everyday life"
+},
+{
+"d": 130,
+"lv": "intermediate",
+"t": "Chekhov's gun",
+"f": "The idea that every detail introduced on stage should matter later in the story"
+},
+{
+"d": 131,
+"lv": "intermediate",
+"t": "August Strindberg",
+"f": "The Swedish dramatist who moved from naturalism to dreamlike plays"
+},
+{
+"d": 132,
+"lv": "intermediate",
+"t": "George Bernard Shaw",
+"f": "Witty plays of ideas like Pygmalion, the source of the musical My Fair Lady"
+},
+{
+"d": 133,
+"lv": "intermediate",
+"t": "Mini review: modern drama begins",
+"f": "Recap of structure, subtext, Ibsen, Chekhov and Shaw"
+},
+{
+"d": 134,
+"lv": "intermediate",
+"t": "Konstantin Stanislavski",
+"f": "The Russian actor-director who created a system for truthful acting"
+},
+{
+"d": 135,
+"lv": "intermediate",
+"t": "Given circumstances",
+"f": "Who, where, when and why: the facts of the play an actor builds a role on"
+},
+{
+"d": 136,
+"lv": "intermediate",
+"t": "The magic if",
+"f": "Asking 'what would I do if I were in this situation?' to make acting believable"
+},
+{
+"d": 137,
+"lv": "intermediate",
+"t": "Units and objectives",
+"f": "Breaking a scene into beats, each with its own goal for the character"
+},
+{
+"d": 138,
+"lv": "intermediate",
+"t": "Sense memory",
+"f": "Recalling real sensations like warmth or taste to bring detail to a performance"
+},
+{
+"d": 139,
+"lv": "intermediate",
+"t": "Meisner technique",
+"f": "Repetition exercises that train actors to listen and respond truthfully in the moment"
+},
+{
+"d": 140,
+"lv": "intermediate",
+"t": "Michael Chekhov's psychological gesture",
+"f": "A physical gesture that captures a character's inner drive"
+},
+{
+"d": 141,
+"lv": "intermediate",
+"t": "Physical theatre and Lecoq",
+"f": "Movement-based training from Jacques Lecoq's school in Paris"
+},
+{
+"d": 142,
+"lv": "intermediate",
+"t": "Laban movement",
+"f": "Weight, time, space and flow: a vocabulary for how bodies move"
+},
+{
+"d": 143,
+"lv": "intermediate",
+"t": "Viewpoints",
+"f": "An ensemble method for exploring time and space through tempo, shape and repetition"
+},
+{
+"d": 144,
+"lv": "intermediate",
+"t": "Building a character",
+"f": "Combining voice, body, history and objectives into a full, living role"
+},
+{
+"d": 145,
+"lv": "intermediate",
+"t": "Character backstory",
+"f": "Inventing what happened before the play begins to make choices richer"
+},
+{
+"d": 146,
+"lv": "intermediate",
+"t": "Mini review: acting methods",
+"f": "Comparing Stanislavski, Meisner, Lecoq and Viewpoints, and which appeals to you"
+},
+{
+"d": 147,
+"lv": "intermediate",
+"t": "Scene study",
+"f": "How actors rehearse a short scene in depth before working on a whole play"
+},
+{
+"d": 148,
+"lv": "intermediate",
+"t": "Cold reading",
+"f": "Reading a script aloud for the first time with confidence and clear choices"
+},
+{
+"d": 149,
+"lv": "intermediate",
+"t": "Audition basics",
+"f": "Choosing a piece, preparing and walking into the room with a friendly attitude"
+},
+{
+"d": 150,
+"lv": "intermediate",
+"t": "Choosing a monologue",
+"f": "Finding a speech that suits your age, energy and the kind of role you want"
+},
+{
+"d": 151,
+"lv": "intermediate",
+"t": "Comic timing",
+"f": "The pause, the take and the rhythm that turn a line into a laugh"
+},
+{
+"d": 152,
+"lv": "intermediate",
+"t": "Playing in an ensemble",
+"f": "Generosity, awareness and shared rhythm when many actors share the stage"
+},
+{
+"d": 153,
+"lv": "intermediate",
+"t": "Stage combat as choreography",
+"f": "How fight scenes are rehearsed like dances with total safety and no real contact"
+},
+{
+"d": 154,
+"lv": "intermediate",
+"t": "Accents and dialects",
+"f": "How actors research and practise accents respectfully for a role"
+},
+{
+"d": 155,
+"lv": "intermediate",
+"t": "Singing actors",
+"f": "Acting through song: why musical performers think about objectives in every lyric"
+},
+{
+"d": 156,
+"lv": "intermediate",
+"t": "Dance in musicals",
+"f": "From tap to jazz to ballet: dance styles that tell stories on stage"
+},
+{
+"d": 157,
+"lv": "intermediate",
+"t": "Mini review: skills in rehearsal",
+"f": "Recap of auditions, timing, ensemble and accents"
+},
+{
+"d": 158,
+"lv": "intermediate",
+"t": "Gilbert and Sullivan",
+"f": "Victorian comic operas like The Pirates of Penzance with tongue-twisting patter songs"
+},
+{
+"d": 159,
+"lv": "intermediate",
+"t": "Early Broadway",
+"f": "Vaudeville, revues and the first musical comedies in New York"
+},
+{
+"d": 160,
+"lv": "intermediate",
+"t": "Show Boat",
+"f": "The 1927 musical that tied songs closely to a serious story and changed the form"
+},
+{
+"d": 161,
+"lv": "intermediate",
+"t": "Rodgers and Hammerstein",
+"f": "Oklahoma!, The Sound of Music and the golden age of the book musical"
+},
+{
+"d": 162,
+"lv": "intermediate",
+"t": "Cole Porter and Irving Berlin",
+"f": "Sparkling songwriters behind Anything Goes and Annie Get Your Gun"
+},
+{
+"d": 163,
+"lv": "intermediate",
+"t": "West Side Story",
+"f": "Bernstein, Sondheim and Robbins bring dance and music together in a modern retelling of Romeo and Juliet"
+},
+{
+"d": 164,
+"lv": "intermediate",
+"t": "My Fair Lady",
+"f": "From Shaw's Pygmalion to a classic musical about language and accents"
+},
+{
+"d": 165,
+"lv": "intermediate",
+"t": "Fiddler on the Roof",
+"f": "Tradition, family and change in one of the most loved musicals ever written"
+},
+{
+"d": 166,
+"lv": "intermediate",
+"t": "Choreographers who shaped musicals",
+"f": "Agnes de Mille, Jerome Robbins and Bob Fosse and their unmistakable styles"
+},
+{
+"d": 167,
+"lv": "intermediate",
+"t": "The concept musical",
+"f": "Shows built around a theme rather than a linear plot, like Company and A Chorus Line"
+},
+{
+"d": 168,
+"lv": "intermediate",
+"t": "Stephen Sondheim",
+"f": "Clever lyrics and complex music in Into the Woods and Sunday in the Park with George"
+},
+{
+"d": 169,
+"lv": "intermediate",
+"t": "Andrew Lloyd Webber",
+"f": "The Phantom of the Opera, Cats and the age of the mega-musical"
+},
+{
+"d": 170,
+"lv": "intermediate",
+"t": "Les Misérables",
+"f": "From Victor Hugo's novel to a sung-through musical seen by audiences worldwide"
+},
+{
+"d": 171,
+"lv": "intermediate",
+"t": "Mini review: golden age to mega-musical",
+"f": "Recap of musical history from Gilbert and Sullivan to Les Misérables"
+},
+{
+"d": 172,
+"lv": "intermediate",
+"t": "Rock musicals",
+"f": "Hair, Jesus Christ Superstar and Rent bring rock and pop to the stage"
+},
+{
+"d": 173,
+"lv": "intermediate",
+"t": "Jukebox musicals",
+"f": "Shows built from existing hit songs, like Mamma Mia! with ABBA's music"
+},
+{
+"d": 174,
+"lv": "intermediate",
+"t": "Disney on stage",
+"f": "The Lion King's puppets and masks by Julie Taymor and other screen-to-stage hits"
+},
+{
+"d": 175,
+"lv": "intermediate",
+"t": "Hamilton",
+"f": "Hip-hop, history and a diverse cast in Lin-Manuel Miranda's record-breaking musical"
+},
+{
+"d": 176,
+"lv": "intermediate",
+"t": "Musicals from novels",
+"f": "How books like The Wizard of Oz and Matilda are adapted into songs and scenes"
+},
+{
+"d": 177,
+"lv": "intermediate",
+"t": "Musicals beyond English",
+"f": "French musicals like Notre-Dame de Paris, German and Spanish productions and touring hits"
+},
+{
+"d": 178,
+"lv": "intermediate",
+"t": "How a musical is written",
+"f": "Book, music and lyrics: how the three writers work together"
+},
+{
+"d": 179,
+"lv": "intermediate",
+"t": "Orchestras and the pit",
+"f": "Musicians under the stage, the conductor and how sound reaches the audience"
+},
+{
+"d": 180,
+"lv": "intermediate",
+"t": "Swings, understudies and covers",
+"f": "The performers who learn many roles and save the show when someone is ill"
+},
+{
+"d": 181,
+"lv": "intermediate",
+"t": "Long-running shows",
+"f": "Why some shows run for decades and how casts stay fresh night after night"
+},
+{
+"d": 182,
+"lv": "intermediate",
+"t": "Mini review: modern musicals",
+"f": "Recap of rock, jukebox, Disney and Hamilton, and your favourite style"
+},
+{
+"d": 183,
+"lv": "intermediate",
+"t": "Luigi Pirandello",
+"f": "Six Characters in Search of an Author and plays that question what is real on stage"
+},
+{
+"d": 184,
+"lv": "intermediate",
+"t": "Federico García Lorca",
+"f": "Poetic Spanish plays full of music, colour and rural life, like Blood Wedding"
+},
+{
+"d": 185,
+"lv": "intermediate",
+"t": "Bertolt Brecht's epic theatre",
+"f": "Signs, songs and breaking the illusion so the audience thinks while watching"
+},
+{
+"d": 186,
+"lv": "intermediate",
+"t": "The alienation effect",
+"f": "Brecht's techniques to make the familiar look strange, still used by directors"
+},
+{
+"d": 187,
+"lv": "intermediate",
+"t": "Samuel Beckett",
+"f": "Waiting for Godot and the funny, puzzling world of two tramps who wait"
+},
+{
+"d": 188,
+"lv": "intermediate",
+"t": "Theatre of the Absurd",
+"f": "Ionesco's The Bald Soprano and comedies of nonsense that reveal everyday habits"
+},
+{
+"d": 189,
+"lv": "intermediate",
+"t": "Eugene O'Neill and Tennessee Williams",
+"f": "Great American dramas like The Glass Menagerie and their memorable characters"
+},
+{
+"d": 190,
+"lv": "intermediate",
+"t": "Arthur Miller",
+"f": "Plays like All My Sons that explore family, work and responsibility"
+},
+{
+"d": 191,
+"lv": "intermediate",
+"t": "Lorraine Hansberry",
+"f": "A Raisin in the Sun and a family's dreams for a better home"
+},
+{
+"d": 192,
+"lv": "intermediate",
+"t": "Harold Pinter's pauses",
+"f": "Silence and quiet tension: how a pause can say more than a speech"
+},
+{
+"d": 193,
+"lv": "intermediate",
+"t": "Tom Stoppard",
+"f": "Witty, playful plays full of ideas like Arcadia and Rosencrantz and Guildenstern Are Dead"
+},
+{
+"d": 194,
+"lv": "intermediate",
+"t": "Mini review: 20th-century playwrights",
+"f": "Recap of Pirandello, Lorca, Brecht, Beckett and American drama"
+},
+{
+"d": 195,
+"lv": "intermediate",
+"t": "Dario Fo and Franca Rame",
+"f": "Italian comic theatre that mixed commedia, clowning and sharp satire"
+},
+{
+"d": 196,
+"lv": "intermediate",
+"t": "Wole Soyinka and African theatre",
+"f": "The Nigerian Nobel laureate and the rich traditions of theatre across Africa"
+},
+{
+"d": 197,
+"lv": "intermediate",
+"t": "Latin American theatre",
+"f": "From Augusto Boal's forum theatre to vibrant stages in Buenos Aires and Mexico City"
+},
+{
+"d": 198,
+"lv": "intermediate",
+"t": "Brazilian theatre",
+"f": "Nelson Rodrigues, Ariano Suassuna's Auto da Compadecida and the street troupes of Brazil"
+},
+{
+"d": 199,
+"lv": "intermediate",
+"t": "Portuguese theatre",
+"f": "Gil Vicente, the father of Portuguese drama, and theatre life in Lisbon and Porto"
+},
+{
+"d": 200,
+"lv": "intermediate",
+"t": "German-speaking theatre",
+"f": "Goethe, Schiller and today's repertory theatres with ensembles and huge repertoires"
+},
+{
+"d": 201,
+"lv": "intermediate",
+"t": "French theatre today",
+"f": "The Comédie-Française, Avignon and the love of text in French staging"
+},
+{
+"d": 202,
+"lv": "intermediate",
+"t": "Italian theatre today",
+"f": "Teatro Piccolo in Milan, Eduardo De Filippo's Naples and the opera houses"
+},
+{
+"d": 203,
+"lv": "intermediate",
+"t": "Spanish theatre today",
+"f": "Classical festivals like Almagro and lively stages in Madrid and Barcelona"
+},
+{
+"d": 204,
+"lv": "intermediate",
+"t": "Theatre in Asia today",
+"f": "Contemporary companies in Japan, Korea, China and India mixing tradition and innovation"
+},
+{
+"d": 205,
+"lv": "intermediate",
+"t": "Augusto Boal and forum theatre",
+"f": "Audience members step in to try new solutions on stage, theatre as rehearsal for life"
+},
+{
+"d": 206,
+"lv": "intermediate",
+"t": "Mini review: theatre world tour",
+"f": "Recap of theatre across continents and the tradition you want to explore"
+},
+{
+"d": 207,
+"lv": "intermediate",
+"t": "Lighting design in depth",
+"f": "Angles, washes, gobos and cues: how designers paint with light"
+},
+{
+"d": 208,
+"lv": "intermediate",
+"t": "Sound design in depth",
+"f": "Microphones, speakers, cue lists and silence used as a tool"
+},
+{
+"d": 209,
+"lv": "intermediate",
+"t": "Set design in depth",
+"f": "Model boxes, sketches and building sets that move, fly and transform"
+},
+{
+"d": 210,
+"lv": "intermediate",
+"t": "Costume design in depth",
+"f": "Research, fabric choice, fittings and costumes that survive eight shows a week"
+},
+{
+"d": 211,
+"lv": "intermediate",
+"t": "Projection and video on stage",
+"f": "How projections create worlds, from simple images to full digital sets"
+},
+{
+"d": 212,
+"lv": "intermediate",
+"t": "Stage machinery",
+"f": "Trapdoors, flying systems and revolves: the engineering behind stage magic"
+},
+{
+"d": 213,
+"lv": "intermediate",
+"t": "Theatre magic and illusions",
+"f": "Quick changes, vanishing tricks and flying actors safely done"
+},
+{
+"d": 214,
+"lv": "intermediate",
+"t": "Puppetry in modern theatre",
+"f": "War Horse-style puppets and object theatre that bring the inanimate to life"
+},
+{
+"d": 215,
+"lv": "intermediate",
+"t": "Masks in modern theatre",
+"f": "How masks change the actor's body and why companies still use them"
+},
+{
+"d": 216,
+"lv": "intermediate",
+"t": "Mini review: design deep dive",
+"f": "Recap of light, sound, set, costume and machinery"
+},
+{
+"d": 217,
+"lv": "intermediate",
+"t": "Rehearsal process",
+"f": "From read-through to blocking, run-throughs, tech week and dress rehearsals"
+},
+{
+"d": 218,
+"lv": "intermediate",
+"t": "The read-through",
+"f": "The first day when the cast reads the whole script together around a table"
+},
+{
+"d": 219,
+"lv": "intermediate",
+"t": "Blocking",
+"f": "Planning where actors move and when, and how it serves the story"
+},
+{
+"d": 220,
+"lv": "intermediate",
+"t": "Tech rehearsal",
+"f": "Long days where lights, sound and scene changes are added step by step"
+},
+{
+"d": 221,
+"lv": "intermediate",
+"t": "Previews and opening night",
+"f": "Shows that change after test audiences and the excitement of the premiere"
+},
+{
+"d": 222,
+"lv": "intermediate",
+"t": "The prompt book",
+"f": "The stage manager's master copy with every cue, move and note"
+},
+{
+"d": 223,
+"lv": "intermediate",
+"t": "Theatre jobs you might not know",
+"f": "Dramaturg, movement director, voice coach, dialect coach and more"
+},
+{
+"d": 224,
+"lv": "intermediate",
+"t": "Front of house",
+"f": "Ushers, box office and bar staff who welcome audiences and keep them safe"
+},
+{
+"d": 225,
+"lv": "intermediate",
+"t": "Mini review: how a show gets made",
+"f": "Recap of the rehearsal journey from first read to opening night"
+},
+{
+"d": 226,
+"lv": "intermediate",
+"t": "Shakespeare's histories",
+"f": "Plays about English kings like Henry V and their famous rousing speeches"
+},
+{
+"d": 227,
+"lv": "intermediate",
+"t": "Shakespeare's late plays",
+"f": "The Tempest and The Winter's Tale: magic, forgiveness and second chances"
+},
+{
+"d": 228,
+"lv": "intermediate",
+"t": "Hamlet as a character",
+"f": "Why Hamlet's doubts and questions fascinate actors and audiences"
+},
+{
+"d": 229,
+"lv": "intermediate",
+"t": "Macbeth in the theatre",
+"f": "The 'Scottish play' superstition and how directors stage its witches"
+},
+{
+"d": 230,
+"lv": "intermediate",
+"t": "Shakespeare around the world",
+"f": "Productions in Japanese, Hindi, Portuguese and many more languages"
+},
+{
+"d": 231,
+"lv": "intermediate",
+"t": "Modern Shakespeare staging",
+"f": "Setting the plays in new eras and places while keeping the text"
+},
+{
+"d": 232,
+"lv": "intermediate",
+"t": "Speaking verse",
+"f": "Iambic pentameter and how its heartbeat rhythm helps actors"
+},
+{
+"d": 233,
+"lv": "intermediate",
+"t": "Mini review: Shakespeare deep dive",
+"f": "Recap of histories, late plays and modern staging"
+},
+{
+"d": 234,
+"lv": "intermediate",
+"t": "Children's classics on stage",
+"f": "Peter Pan, The Wizard of Oz and timeless stories made for the stage"
+},
+{
+"d": 235,
+"lv": "intermediate",
+"t": "Comedy styles on stage",
+"f": "Farce, satire, comedy of manners and slapstick compared"
+},
+{
+"d": 236,
+"lv": "intermediate",
+"t": "Farce",
+"f": "Doors slamming, mistaken identities and perfect timing, as in Noises Off"
+},
+{
+"d": 237,
+"lv": "intermediate",
+"t": "Melodrama",
+"f": "Clear heroes and villains, big emotions and music that underlines every moment"
+},
+{
+"d": 238,
+"lv": "intermediate",
+"t": "Physical comedy",
+"f": "Pratfalls, double takes and the precise craft of making falls look easy"
+},
+{
+"d": 239,
+"lv": "intermediate",
+"t": "One-person shows",
+"f": "A single performer playing many roles and holding a whole audience"
+},
+{
+"d": 240,
+"lv": "intermediate",
+"t": "Storytelling performance",
+"f": "The art of telling a story live, from ancient bards to modern storytelling nights"
+},
+{
+"d": 241,
+"lv": "intermediate",
+"t": "Mini review: comedy and solo forms",
+"f": "Recap of farce, melodrama, physical comedy and solo shows"
+},
+{
+"d": 242,
+"lv": "intermediate",
+"t": "Opera basics for theatre fans",
+"f": "Arias, recitatives, librettos and why opera is theatre in song"
+},
+{
+"d": 243,
+"lv": "intermediate",
+"t": "Ballet as theatre",
+"f": "How dance tells stories in Swan Lake, The Nutcracker and modern pieces"
+},
+{
+"d": 244,
+"lv": "intermediate",
+"t": "Circus and new circus",
+"f": "Cirque du Soleil and contemporary circus that blend acrobatics with story"
+},
+{
+"d": 245,
+"lv": "intermediate",
+"t": "Dance theatre",
+"f": "Pina Bausch and performances where movement and emotion lead the story"
+},
+{
+"d": 246,
+"lv": "intermediate",
+"t": "Musical theatre in your language",
+"f": "Translated musicals and how lyricists keep rhyme and meaning"
+},
+{
+"d": 247,
+"lv": "intermediate",
+"t": "Translating plays",
+"f": "Why translation is an art: humour, rhythm and culture in a new language"
+},
+{
+"d": 248,
+"lv": "intermediate",
+"t": "Women who shaped the stage",
+"f": "Pioneers like Aphra Behn, Sarah Bernhardt, Ellen Terry and Caryl Churchill who changed theatre history"
+},
+{
+"d": 249,
+"lv": "intermediate",
+"t": "Theatre and cultural exchange",
+"f": "How touring productions and festivals connect cultures through stories"
+},
+{
+"d": 250,
+"lv": "intermediate",
+"t": "Mini review: intermediate path complete",
+"f": "Celebrating 250 days: recap of the intermediate stage and your highlights"
+},
+{
+"d": 251,
+"lv": "advanced",
+"t": "Welcome to advanced theatre",
+"f": "From audience member to theatre maker: directing, writing, criticism and creating your own work"
+},
+{
+"d": 252,
+"lv": "advanced",
+"t": "What a director does",
+"f": "Vision, casting, rehearsal and the final picture: how a director shapes a production"
+},
+{
+"d": 253,
+"lv": "advanced",
+"t": "Finding a concept",
+"f": "The central idea that guides every choice in a production, from set to tempo"
+},
+{
+"d": 254,
+"lv": "advanced",
+"t": "Directorial styles",
+"f": "Comparing directors who serve the text, reinvent it or build images first"
+},
+{
+"d": 255,
+"lv": "advanced",
+"t": "Peter Brook's empty space",
+"f": "The idea that any empty space can be a stage when someone walks across it and someone watches"
+},
+{
+"d": 256,
+"lv": "advanced",
+"t": "Ariane Mnouchkine and ensemble creation",
+"f": "Théâtre du Soleil and shows created collectively over months"
+},
+{
+"d": 257,
+"lv": "advanced",
+"t": "Robert Wilson's visual theatre",
+"f": "Slow motion, striking light and images that tell stories without words"
+},
+{
+"d": 258,
+"lv": "advanced",
+"t": "Directing actors",
+"f": "Giving clear, actable notes about wants and actions instead of results"
+},
+{
+"d": 259,
+"lv": "advanced",
+"t": "Composition on stage",
+"f": "Creating stage pictures with balance, focus and contrast"
+},
+{
+"d": 260,
+"lv": "advanced",
+"t": "Tempo and rhythm in staging",
+"f": "Varying pace so a show breathes, builds and surprises"
+},
+{
+"d": 261,
+"lv": "advanced",
+"t": "Casting choices",
+"f": "How casting shapes meaning, including colour-conscious and gender-flexible casting"
+},
+{
+"d": 262,
+"lv": "advanced",
+"t": "Working with designers",
+"f": "Sharing references, mood boards and model boxes in early design meetings"
+},
+{
+"d": 263,
+"lv": "advanced",
+"t": "Mini review: the director's chair",
+"f": "Recap of concept, composition, rhythm and working with actors"
+},
+{
+"d": 264,
+"lv": "advanced",
+"t": "Dramaturgy",
+"f": "The research and story advice that help a production make sense in its time and place"
+},
+{
+"d": 265,
+"lv": "advanced",
+"t": "Script analysis",
+"f": "Breaking down a play by events, turning points and character journeys"
+},
+{
+"d": 266,
+"lv": "advanced",
+"t": "Adapting a novel for the stage",
+"f": "Choosing scenes, voice and point of view when moving from page to stage"
+},
+{
+"d": 267,
+"lv": "advanced",
+"t": "Updating a classic",
+"f": "Deciding what to keep, cut or change when staging an old play for today"
+},
+{
+"d": 268,
+"lv": "advanced",
+"t": "Writing your first scene",
+"f": "A two-character scene with a clear want, an obstacle and a change"
+},
+{
+"d": 269,
+"lv": "advanced",
+"t": "Writing dialogue that sounds real",
+"f": "Interruptions, short lines and people not saying what they mean"
+},
+{
+"d": 270,
+"lv": "advanced",
+"t": "Creating conflict without violence",
+"f": "Opposing wants, misunderstandings and dilemmas that drive drama gently"
+},
+{
+"d": 271,
+"lv": "advanced",
+"t": "Writing stage directions well",
+"f": "Brief, useful directions that inspire rather than control"
+},
+{
+"d": 272,
+"lv": "advanced",
+"t": "Writing comedy scenes",
+"f": "Escalation, running gags and callbacks in a short comic scene"
+},
+{
+"d": 273,
+"lv": "advanced",
+"t": "Writing a monologue",
+"f": "A character speaking with a purpose, to someone, about something that matters"
+},
+{
+"d": 274,
+"lv": "advanced",
+"t": "The ten-minute play",
+"f": "A popular short format with a full story arc in just a few pages"
+},
+{
+"d": 275,
+"lv": "advanced",
+"t": "Structure of a full-length play",
+"f": "Planning acts, turning points and a satisfying ending"
+},
+{
+"d": 276,
+"lv": "advanced",
+"t": "Mini review: writing for the stage",
+"f": "Recap of scenes, dialogue, monologues and short plays"
+},
+{
+"d": 277,
+"lv": "advanced",
+"t": "Writing a musical: the book",
+"f": "How the story and dialogue leave space for songs to take over"
+},
+{
+"d": 278,
+"lv": "advanced",
+"t": "Writing lyrics",
+"f": "Rhyme, character voice and lyrics that move the story forward"
+},
+{
+"d": 279,
+"lv": "advanced",
+"t": "Song spotting",
+"f": "Deciding where songs should go: moments too big for speech"
+},
+{
+"d": 280,
+"lv": "advanced",
+"t": "Workshops and readings",
+"f": "How new plays and musicals are tested in readings before full productions"
+},
+{
+"d": 281,
+"lv": "advanced",
+"t": "Giving and receiving feedback",
+"f": "Kind, specific and useful feedback for actors, writers and directors"
+},
+{
+"d": 282,
+"lv": "advanced",
+"t": "Devised theatre",
+"f": "Creating a show from scratch as a group through improvisation and research"
+},
+{
+"d": 283,
+"lv": "advanced",
+"t": "Devising exercises",
+"f": "Image work, story circles and group tableaux to generate material"
+},
+{
+"d": 284,
+"lv": "advanced",
+"t": "Verbatim theatre",
+"f": "Plays built from real interviews, using people's own words"
+},
+{
+"d": 285,
+"lv": "advanced",
+"t": "Site-specific theatre",
+"f": "Performances in factories, gardens, trains and other unusual places"
+},
+{
+"d": 286,
+"lv": "advanced",
+"t": "Immersive theatre",
+"f": "Audiences walking through a world and choosing what to follow, as in Punchdrunk shows"
+},
+{
+"d": 287,
+"lv": "advanced",
+"t": "Interactive and participatory theatre",
+"f": "Shows where the audience helps shape the story"
+},
+{
+"d": 288,
+"lv": "advanced",
+"t": "Mini review: new ways to make theatre",
+"f": "Recap of devising, verbatim, site-specific and immersive work"
+},
+{
+"d": 289,
+"lv": "advanced",
+"t": "Theatre criticism",
+"f": "How critics describe, analyse and evaluate a performance fairly"
+},
+{
+"d": 290,
+"lv": "advanced",
+"t": "Writing a full review",
+"f": "Context, description, analysis and judgement in a balanced review"
+},
+{
+"d": 291,
+"lv": "advanced",
+"t": "Kind but honest critique",
+"f": "Talking about what did not work without unkindness to the artists"
+},
+{
+"d": 292,
+"lv": "advanced",
+"t": "Comparing productions",
+"f": "How the same play changes completely in the hands of different companies"
+},
+{
+"d": 293,
+"lv": "advanced",
+"t": "Theatre awards",
+"f": "The Tonys, the Oliviers, the Molières and what they celebrate"
+},
+{
+"d": 294,
+"lv": "advanced",
+"t": "Theatre and memory",
+"f": "Why some performances become legendary and how theatre history is recorded"
+},
+{
+"d": 295,
+"lv": "advanced",
+"t": "Archives and recordings",
+"f": "How theatre is preserved in photos, scripts, programmes and recordings"
+},
+{
+"d": 296,
+"lv": "advanced",
+"t": "Writing programme notes",
+"f": "Crafting a short, inviting note that helps an audience enter a production"
+},
+{
+"d": 297,
+"lv": "advanced",
+"t": "Mini review: thinking like a critic",
+"f": "Recap of criticism, awards and comparing productions"
+},
+{
+"d": 298,
+"lv": "advanced",
+"t": "Producing a show",
+"f": "Budget, venue, team and schedule: the producer's role in general terms"
+},
+{
+"d": 299,
+"lv": "advanced",
+"t": "Theatre funding models",
+"f": "Commercial theatre, subsidised theatre and non-profit companies compared"
+},
+{
+"d": 300,
+"lv": "advanced",
+"t": "Choosing a venue",
+"f": "Size, stage type, access and atmosphere when picking a space"
+},
+{
+"d": 301,
+"lv": "advanced",
+"t": "Marketing a show",
+"f": "Posters, trailers, word of mouth and reaching new audiences"
+},
+{
+"d": 302,
+"lv": "advanced",
+"t": "Touring productions",
+"f": "How shows travel, adapt to new stages and meet new audiences"
+},
+{
+"d": 303,
+"lv": "advanced",
+"t": "Repertory systems",
+"f": "Companies that perform several plays in rotation with one ensemble"
+},
+{
+"d": 304,
+"lv": "advanced",
+"t": "Fringe theatre",
+"f": "Small venues, new writing and the creative freedom of the fringe"
+},
+{
+"d": 305,
+"lv": "advanced",
+"t": "The Edinburgh Fringe",
+"f": "The world's largest arts festival, where anyone can bring a show"
+},
+{
+"d": 306,
+"lv": "advanced",
+"t": "Festival d'Avignon",
+"f": "The great French summer festival in the Palace of the Popes and across the city"
+},
+{
+"d": 307,
+"lv": "advanced",
+"t": "Other great festivals",
+"f": "Adelaide, Santiago a Mil and festivals around the world"
+},
+{
+"d": 308,
+"lv": "advanced",
+"t": "Mini review: producing and festivals",
+"f": "Recap of producing, touring and the festival circuit"
+},
+{
+"d": 309,
+"lv": "advanced",
+"t": "Theatre for young audiences in depth",
+"f": "Creating work for babies, children and teens with respect and imagination"
+},
+{
+"d": 310,
+"lv": "advanced",
+"t": "Applied theatre",
+"f": "Theatre used in schools, communities and workplaces to build confidence and dialogue"
+},
+{
+"d": 311,
+"lv": "advanced",
+"t": "Drama games for groups",
+"f": "Warm-ups and games you can lead with friends, students or colleagues"
+},
+{
+"d": 312,
+"lv": "advanced",
+"t": "Leading a workshop",
+"f": "Planning a fun, safe drama session with a clear start, middle and end"
+},
+{
+"d": 313,
+"lv": "advanced",
+"t": "Theatre and language learning",
+"f": "Using scenes and role-play to practise a new language with confidence"
+},
+{
+"d": 314,
+"lv": "advanced",
+"t": "Theatre for public speaking",
+"f": "Actor techniques for presentations: breath, presence and eye contact"
+},
+{
+"d": 315,
+"lv": "advanced",
+"t": "Accessibility in depth",
+"f": "Sign-language interpreted shows, touch tours and inclusive casting"
+},
+{
+"d": 316,
+"lv": "advanced",
+"t": "Sustainable theatre",
+"f": "Reusing sets, greener lighting and eco-friendly productions"
+},
+{
+"d": 317,
+"lv": "advanced",
+"t": "Theatre and wellbeing",
+"f": "How drama groups build confidence, friendship and joy, described in general terms"
+},
+{
+"d": 318,
+"lv": "advanced",
+"t": "Mini review: theatre in society",
+"f": "Recap of applied theatre, accessibility and workshops"
+},
+{
+"d": 319,
+"lv": "advanced",
+"t": "Advanced voice work",
+"f": "Resonance, range and keeping the voice healthy over a long run"
+},
+{
+"d": 320,
+"lv": "advanced",
+"t": "Advanced movement",
+"f": "Animal work, tempo-rhythm and transforming the body for a role"
+},
+{
+"d": 321,
+"lv": "advanced",
+"t": "Playing period styles",
+"f": "Restoration manners, Greek chorus work and commedia physicality"
+},
+{
+"d": 322,
+"lv": "advanced",
+"t": "Playing Shakespeare's language",
+"f": "Breathing with the verse, using antithesis and finding the operative words"
+},
+{
+"d": 323,
+"lv": "advanced",
+"t": "Musical theatre performance",
+"f": "Acting a song, finding the story in each verse and building the climax"
+},
+{
+"d": 324,
+"lv": "advanced",
+"t": "Camera versus stage acting",
+"f": "Scale, energy and how actors adjust between screen and stage"
+},
+{
+"d": 325,
+"lv": "advanced",
+"t": "Sustaining a long run",
+"f": "Keeping a performance fresh, healthy and alive after hundreds of shows"
+},
+{
+"d": 326,
+"lv": "advanced",
+"t": "Mini review: performer mastery",
+"f": "Recap of advanced voice, movement and style work"
+},
+{
+"d": 327,
+"lv": "advanced",
+"t": "Contemporary playwrights",
+"f": "Living writers shaping today's stages around the world"
+},
+{
+"d": 328,
+"lv": "advanced",
+"t": "New writing theatres",
+"f": "Theatres like the Royal Court that champion first plays"
+},
+{
+"d": 329,
+"lv": "advanced",
+"t": "Postdramatic theatre",
+"f": "Performances where image, body and sound matter as much as text"
+},
+{
+"d": 330,
+"lv": "advanced",
+"t": "Multimedia performance",
+"f": "Live video, cameras on stage and digital worlds in today's theatre"
+},
+{
+"d": 331,
+"lv": "advanced",
+"t": "Theatre and technology",
+"f": "Motion capture, livestreams and virtual reality experiments"
+},
+{
+"d": 332,
+"lv": "advanced",
+"t": "Theatre streaming",
+"f": "How streaming changed audiences and what makes a live stream feel live"
+},
+{
+"d": 333,
+"lv": "advanced",
+"t": "Theatre in a small space",
+"f": "Creative staging in living rooms, cafés and tiny studios"
+},
+{
+"d": 334,
+"lv": "advanced",
+"t": "Mini review: theatre today",
+"f": "Recap of contemporary writing, technology and new forms"
+},
+{
+"d": 335,
+"lv": "advanced",
+"t": "Analysing a musical score",
+"f": "How tempo, key changes and reprises shape emotion in a musical"
+},
+{
+"d": 336,
+"lv": "advanced",
+"t": "Reprises and leitmotifs",
+"f": "Returning melodies that show how characters have changed"
+},
+{
+"d": 337,
+"lv": "advanced",
+"t": "Orchestration",
+"f": "How the choice of instruments gives a musical its colour"
+},
+{
+"d": 338,
+"lv": "advanced",
+"t": "Staging a musical number",
+"f": "Combining choreography, blocking and lighting into one moment"
+},
+{
+"d": 339,
+"lv": "advanced",
+"t": "Revivals and reinventions",
+"f": "How musicals are reimagined decades after their premieres"
+},
+{
+"d": 340,
+"lv": "advanced",
+"t": "The future of the musical",
+"f": "New voices, new sounds and global musicals in many languages"
+},
+{
+"d": 341,
+"lv": "advanced",
+"t": "Mini review: musical mastery",
+"f": "Recap of score, orchestration and staging musical numbers"
+},
+{
+"d": 342,
+"lv": "advanced",
+"t": "Planning your own short piece",
+"f": "Choosing a form, length and theme for a small performance of your own"
+},
+{
+"d": 343,
+"lv": "advanced",
+"t": "Finding collaborators",
+"f": "Bringing together friends, a local group or classmates for a project"
+},
+{
+"d": 344,
+"lv": "advanced",
+"t": "Rehearsal schedule for a small show",
+"f": "Organising time, goals and runs for a short production"
+},
+{
+"d": 345,
+"lv": "advanced",
+"t": "Simple design on a tiny budget",
+"f": "Creative lighting, found props and costumes from what you have"
+},
+{
+"d": 346,
+"lv": "advanced",
+"t": "Lighting your own scene",
+"f": "Using lamps, daylight and simple coloured filters to design light for a short scene"
+},
+{
+"d": 347,
+"lv": "advanced",
+"t": "Rehearsing your piece",
+"f": "Running scenes, giving notes and polishing transitions"
+},
+{
+"d": 348,
+"lv": "advanced",
+"t": "Inviting an audience",
+"f": "Hosting a small showing for friends and making them feel welcome"
+},
+{
+"d": 349,
+"lv": "advanced",
+"t": "Performing your piece",
+"f": "Warming up, trusting the work and enjoying the moment on stage"
+},
+{
+"d": 350,
+"lv": "advanced",
+"t": "Reflecting after a performance",
+"f": "What went well, what you learned and what you would try next"
+},
+{
+"d": 351,
+"lv": "advanced",
+"t": "Interviewing a theatre maker",
+"f": "Preparing curious questions to learn from an actor, designer or director"
+},
+{
+"d": 352,
+"lv": "advanced",
+"t": "Mini review: your own creation",
+"f": "Recap of planning, rehearsing and sharing your short piece"
+},
+{
+"d": 353,
+"lv": "advanced",
+"t": "Theatre as a lifelong hobby",
+"f": "Ways to stay involved: watching, joining a group, writing or volunteering"
+},
+{
+"d": 354,
+"lv": "advanced",
+"t": "Volunteering in theatre",
+"f": "Ushering, backstage help and festival volunteering in general terms"
+},
+{
+"d": 355,
+"lv": "advanced",
+"t": "Building a theatre community",
+"f": "Starting a play-reading club or a theatre outings group"
+},
+{
+"d": 356,
+"lv": "advanced",
+"t": "Theatre travel bucket list",
+"f": "Iconic theatres and festivals to visit around the world one day"
+},
+{
+"d": 357,
+"lv": "advanced",
+"t": "Seeing theatre in another language",
+"f": "Enjoying shows through physicality, music and surtitles abroad"
+},
+{
+"d": 358,
+"lv": "advanced",
+"t": "Comparing theatre cultures",
+"f": "How audiences behave differently in London, Tokyo, Naples or São Paulo"
+},
+{
+"d": 359,
+"lv": "advanced",
+"t": "Your theatre philosophy",
+"f": "Putting into words what theatre means to you and why it matters"
+},
+{
+"d": 360,
+"lv": "advanced",
+"t": "Favourite moments of the path",
+"f": "Looking back at the lessons, shows and ideas that inspired you most"
+},
+{
+"d": 361,
+"lv": "advanced",
+"t": "Your next theatre goals",
+"f": "Setting goals for the year ahead: shows to see, skills to learn, works to make"
+},
+{
+"d": 362,
+"lv": "advanced",
+"t": "Sharing theatre with others",
+"f": "Inviting a friend to their first show and passing on your passion"
+},
+{
+"d": 363,
+"lv": "advanced",
+"t": "Theatre across generations",
+"f": "How grandparents, parents and kids can enjoy theatre together"
+},
+{
+"d": 364,
+"lv": "advanced",
+"t": "The magic of the curtain call",
+"f": "Why bowing together at the end celebrates the whole team and the audience"
+},
+{
+"d": 365,
+"lv": "advanced",
+"t": "Final review: a year on stage",
+"f": "Celebrating 365 days: recap of the whole path and a final bow"
+}
+]
+}

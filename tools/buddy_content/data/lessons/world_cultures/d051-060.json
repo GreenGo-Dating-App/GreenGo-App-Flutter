@@ -1,0 +1,835 @@
+{
+ "topic": "world_cultures",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Personal space",
+     "g": "Learn how the comfortable distance between people in conversation changes across cultures.",
+     "p": [
+      "Everyone carries an invisible bubble of personal space, and its size is shaped by culture and by the situation.",
+      "In many Latin American and Mediterranean conversations people often stand closer and touch an arm while talking.",
+      "In places like Finland or Japan a little more distance is common, and it signals respect, not coldness."
+     ],
+     "q": "How close do you like to stand when talking to someone you have just met?",
+     "c": "In your next conversation, notice the distance between you and the other person and whether it feels comfortable."
+    },
+    "de": {
+     "t": "Persönlicher Raum",
+     "g": "Erfahre, wie sich der angenehme Abstand im Gespräch von Kultur zu Kultur ändert.",
+     "p": [
+      "Jeder Mensch hat eine unsichtbare Blase persönlichen Raums, deren Größe von Kultur und Situation abhängt.",
+      "In vielen Gesprächen in Lateinamerika und am Mittelmeer steht man oft näher und berührt beim Reden kurz den Arm.",
+      "In Ländern wie Finnland oder Japan ist etwas mehr Abstand üblich, und das zeigt Respekt, nicht Kälte."
+     ],
+     "q": "Wie nah stehst du gern bei jemandem, den du gerade kennengelernt hast?",
+     "c": "Achte im nächsten Gespräch auf den Abstand zwischen dir und deinem Gegenüber und ob er sich angenehm anfühlt."
+    },
+    "es": {
+     "t": "El espacio personal",
+     "g": "Aprende cómo la distancia cómoda al conversar cambia de una cultura a otra.",
+     "p": [
+      "Todos llevamos una burbuja invisible de espacio personal, y su tamaño depende de la cultura y de la situación.",
+      "En muchas conversaciones en Latinoamérica y el Mediterráneo la gente suele acercarse más y tocar el brazo al hablar.",
+      "En lugares como Finlandia o Japón es habitual algo más de distancia, y eso indica respeto, no frialdad."
+     ],
+     "q": "¿A qué distancia te gusta estar cuando hablas con alguien que acabas de conocer?",
+     "c": "En tu próxima conversación, fíjate en la distancia entre tú y la otra persona y en si te resulta cómoda."
+    },
+    "fr": {
+     "t": "L'espace personnel",
+     "g": "Découvre comment la distance confortable pendant une conversation change selon les cultures.",
+     "p": [
+      "Chacun porte une bulle invisible d'espace personnel, dont la taille dépend de la culture et de la situation.",
+      "Dans beaucoup de conversations en Amérique latine et autour de la Méditerranée, on se tient souvent plus près et on touche le bras.",
+      "Dans des pays comme la Finlande ou le Japon, un peu plus de distance est courante : c'est du respect, pas de la froideur."
+     ],
+     "q": "À quelle distance aimes-tu te tenir quand tu parles avec quelqu'un que tu viens de rencontrer ?",
+     "c": "Lors de ta prochaine conversation, observe la distance entre toi et l'autre et si elle te semble confortable."
+    },
+    "it": {
+     "t": "Lo spazio personale",
+     "g": "Scopri come la distanza confortevole durante una conversazione cambia da cultura a cultura.",
+     "p": [
+      "Ognuno porta con sé una bolla invisibile di spazio personale, la cui grandezza dipende da cultura e situazione.",
+      "In molte conversazioni in America Latina e nel Mediterraneo ci si avvicina spesso di più e ci si tocca il braccio parlando.",
+      "In paesi come la Finlandia o il Giappone è normale un po' più di distanza, ed è segno di rispetto, non di freddezza."
+     ],
+     "q": "Quanto ti piace stare vicino a qualcuno che hai appena conosciuto mentre parli?",
+     "c": "Nella prossima conversazione nota la distanza tra te e l'altra persona e se ti sembra comoda."
+    },
+    "pt": {
+     "t": "O espaço pessoal",
+     "g": "Aprende como a distância confortável numa conversa muda de cultura para cultura.",
+     "p": [
+      "Todos levamos uma bolha invisível de espaço pessoal, e o seu tamanho depende da cultura e da situação.",
+      "Em muitas conversas na América Latina e no Mediterrâneo as pessoas costumam ficar mais perto e tocar no braço ao falar.",
+      "Em países como a Finlândia ou o Japão é comum um pouco mais de distância, e isso mostra respeito, não frieza."
+     ],
+     "q": "A que distância gostas de ficar quando falas com alguém que acabaste de conhecer?",
+     "c": "Na tua próxima conversa, repara na distância entre ti e a outra pessoa e se te parece confortável."
+    },
+    "pt_BR": {
+     "t": "O espaço pessoal",
+     "g": "Aprenda como a distância confortável numa conversa muda de cultura para cultura.",
+     "p": [
+      "Todo mundo carrega uma bolha invisível de espaço pessoal, e o tamanho dela depende da cultura e da situação.",
+      "Em muitas conversas na América Latina e no Mediterrâneo as pessoas costumam ficar mais perto e tocar no braço ao falar.",
+      "Em países como Finlândia ou Japão é comum um pouco mais de distância, e isso mostra respeito, não frieza."
+     ],
+     "q": "A que distância você gosta de ficar quando conversa com alguém que acabou de conhecer?",
+     "c": "Na sua próxima conversa, repare na distância entre você e a outra pessoa e se ela parece confortável."
+    }
+   }
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Eye contact",
+     "g": "Discover when direct eye contact shows honesty and when it can feel too strong.",
+     "p": [
+      "In many Western countries steady eye contact signals attention, confidence and honesty.",
+      "In parts of East Asia and in some African and Indigenous cultures, lowering the eyes with elders shows respect.",
+      "A balanced approach works well abroad: look at people warmly, take natural breaks and mirror what they do."
+     ],
+     "q": "Is direct eye contact expected where you live, and does it change with older people?",
+     "c": "In your next conversation, notice how often you and the other person make and break eye contact."
+    },
+    "de": {
+     "t": "Blickkontakt",
+     "g": "Entdecke, wann direkter Blickkontakt Ehrlichkeit zeigt und wann er zu intensiv wirken kann.",
+     "p": [
+      "In vielen westlichen Ländern signalisiert fester Blickkontakt Aufmerksamkeit, Selbstvertrauen und Ehrlichkeit.",
+      "In Teilen Ostasiens und in manchen afrikanischen und indigenen Kulturen zeigt ein gesenkter Blick vor Älteren Respekt.",
+      "Im Ausland hilft ein Mittelweg: Menschen freundlich ansehen, natürliche Pausen machen und ihr Verhalten spiegeln."
+     ],
+     "q": "Wird bei dir direkter Blickkontakt erwartet, und ist das bei älteren Menschen anders?",
+     "c": "Achte im nächsten Gespräch darauf, wie oft du und dein Gegenüber Blickkontakt aufnehmt und wieder löst."
+    },
+    "es": {
+     "t": "El contacto visual",
+     "g": "Descubre cuándo mirar a los ojos muestra sinceridad y cuándo puede resultar demasiado intenso.",
+     "p": [
+      "En muchos países occidentales mantener la mirada indica atención, seguridad y sinceridad.",
+      "En partes de Asia oriental y en algunas culturas africanas e indígenas, bajar la mirada ante los mayores muestra respeto.",
+      "En el extranjero funciona un equilibrio: mira con calidez, haz pausas naturales e imita lo que hacen los demás."
+     ],
+     "q": "¿Donde vives se espera mirar a los ojos y cambia con las personas mayores?",
+     "c": "En tu próxima conversación, fíjate en cuántas veces tú y la otra persona os miráis a los ojos y apartáis la mirada."
+    },
+    "fr": {
+     "t": "Le contact visuel",
+     "g": "Découvre quand regarder dans les yeux montre la sincérité et quand cela peut sembler trop intense.",
+     "p": [
+      "Dans beaucoup de pays occidentaux, un regard soutenu signale l'attention, la confiance et l'honnêteté.",
+      "Dans une partie de l'Asie de l'Est et dans certaines cultures africaines et autochtones, baisser les yeux devant les aînés est respectueux.",
+      "À l'étranger, un juste milieu fonctionne : regarde avec chaleur, fais des pauses naturelles et imite les autres."
+     ],
+     "q": "Chez toi, attend-on un regard direct, et est-ce différent avec les personnes âgées ?",
+     "c": "Lors de ta prochaine conversation, observe combien de fois toi et l'autre établissez puis rompez le contact visuel."
+    },
+    "it": {
+     "t": "Il contatto visivo",
+     "g": "Scopri quando guardare negli occhi mostra sincerità e quando può sembrare troppo intenso.",
+     "p": [
+      "In molti paesi occidentali uno sguardo fermo indica attenzione, sicurezza e onestà.",
+      "In parte dell'Asia orientale e in alcune culture africane e indigene, abbassare lo sguardo davanti agli anziani è segno di rispetto.",
+      "All'estero funziona un equilibrio: guarda con calore, fai pause naturali e imita ciò che fanno gli altri."
+     ],
+     "q": "Dove vivi ci si aspetta di guardare negli occhi, e cambia con le persone anziane?",
+     "c": "Nella prossima conversazione nota quante volte tu e l'altra persona vi guardate negli occhi e distogliete lo sguardo."
+    },
+    "pt": {
+     "t": "O contacto visual",
+     "g": "Descobre quando olhar nos olhos mostra sinceridade e quando pode parecer demasiado intenso.",
+     "p": [
+      "Em muitos países ocidentais manter o olhar indica atenção, confiança e honestidade.",
+      "Em partes da Ásia Oriental e em algumas culturas africanas e indígenas, baixar os olhos perante os mais velhos mostra respeito.",
+      "No estrangeiro resulta um equilíbrio: olha com simpatia, faz pausas naturais e imita o que os outros fazem."
+     ],
+     "q": "Onde vives espera-se que se olhe nos olhos, e muda com as pessoas mais velhas?",
+     "c": "Na tua próxima conversa, repara quantas vezes tu e a outra pessoa se olham nos olhos e desviam o olhar."
+    },
+    "pt_BR": {
+     "t": "O contato visual",
+     "g": "Descubra quando olhar nos olhos mostra sinceridade e quando pode parecer intenso demais.",
+     "p": [
+      "Em muitos países ocidentais manter o olhar indica atenção, confiança e honestidade.",
+      "Em partes da Ásia Oriental e em algumas culturas africanas e indígenas, baixar os olhos diante dos mais velhos mostra respeito.",
+      "No exterior funciona um equilíbrio: olhe com simpatia, faça pausas naturais e imite o que os outros fazem."
+     ],
+     "q": "Onde você mora se espera olhar nos olhos, e isso muda com pessoas mais velhas?",
+     "c": "Na sua próxima conversa, repare quantas vezes você e a outra pessoa se olham nos olhos e desviam o olhar."
+    }
+   }
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Smiling across cultures",
+     "g": "Find out why smiles signal friendliness in some places and politeness in others.",
+     "p": [
+      "In many countries smiling at strangers is a normal, friendly habit, for example in shops or on the street.",
+      "In some cultures a smile is kept more for people you know, so a neutral face with strangers is simply polite.",
+      "Thailand is called the land of smiles and has many kinds of smiles, from joy to gentle politeness in awkward moments."
+     ],
+     "q": "When do you smile at people you do not know, and when would it feel strange?",
+     "c": "Smile at three people today, like a cashier or a neighbour, and notice how they respond."
+    },
+    "de": {
+     "t": "Lächeln in verschiedenen Kulturen",
+     "g": "Finde heraus, warum ein Lächeln mancherorts Freundlichkeit und anderswo Höflichkeit signalisiert.",
+     "p": [
+      "In vielen Ländern ist es normal und freundlich, Fremde anzulächeln, etwa im Geschäft oder auf der Straße.",
+      "In manchen Kulturen schenkt man das Lächeln eher Bekannten; ein neutrales Gesicht bei Fremden ist dort einfach höflich.",
+      "Thailand heißt Land des Lächelns und kennt viele Arten davon, von Freude bis zu sanfter Höflichkeit in heiklen Momenten."
+     ],
+     "q": "Wann lächelst du Menschen an, die du nicht kennst, und wann würde es sich seltsam anfühlen?",
+     "c": "Lächle heute drei Menschen an, etwa an der Kasse oder im Treppenhaus, und achte auf ihre Reaktion."
+    },
+    "es": {
+     "t": "La sonrisa en distintas culturas",
+     "g": "Descubre por qué la sonrisa indica simpatía en unos lugares y cortesía en otros.",
+     "p": [
+      "En muchos países sonreír a desconocidos es un hábito normal y amable, por ejemplo en tiendas o por la calle.",
+      "En algunas culturas la sonrisa se reserva más para conocidos, así que una cara neutra con extraños es simplemente educada.",
+      "A Tailandia la llaman la tierra de las sonrisas y tiene muchos tipos, de la alegría a la cortesía suave en momentos incómodos."
+     ],
+     "q": "¿Cuándo sonríes a personas que no conoces y cuándo te resultaría raro?",
+     "c": "Sonríe hoy a tres personas, como un cajero o un vecino, y fíjate en cómo responden."
+    },
+    "fr": {
+     "t": "Le sourire selon les cultures",
+     "g": "Découvre pourquoi le sourire exprime la sympathie dans certains pays et la politesse dans d'autres.",
+     "p": [
+      "Dans beaucoup de pays, sourire aux inconnus est une habitude normale et aimable, dans les magasins ou dans la rue.",
+      "Dans certaines cultures, on garde plutôt le sourire pour ses proches : un visage neutre face aux inconnus est simplement poli.",
+      "On surnomme la Thaïlande le pays du sourire, qui y a mille nuances, de la joie à la politesse douce dans les moments gênants."
+     ],
+     "q": "Quand souris-tu à des inconnus, et quand cela te semblerait-il étrange ?",
+     "c": "Souris aujourd'hui à trois personnes, comme un caissier ou un voisin, et observe leur réaction."
+    },
+    "it": {
+     "t": "Il sorriso nelle diverse culture",
+     "g": "Scopri perché il sorriso indica simpatia in alcuni luoghi e cortesia in altri.",
+     "p": [
+      "In molti paesi sorridere agli sconosciuti è un'abitudine normale e gentile, per esempio nei negozi o per strada.",
+      "In alcune culture il sorriso si riserva di più a chi si conosce, quindi un viso neutro con gli estranei è semplicemente educato.",
+      "La Thailandia è detta terra dei sorrisi e ne conosce tanti tipi, dalla gioia alla cortesia gentile nei momenti imbarazzanti."
+     ],
+     "q": "Quando sorridi a persone che non conosci, e quando ti sembrerebbe strano?",
+     "c": "Sorridi oggi a tre persone, come un cassiere o un vicino, e nota come rispondono."
+    },
+    "pt": {
+     "t": "O sorriso nas várias culturas",
+     "g": "Descobre porque é que o sorriso indica simpatia nuns sítios e cortesia noutros.",
+     "p": [
+      "Em muitos países sorrir a desconhecidos é um hábito normal e simpático, por exemplo nas lojas ou na rua.",
+      "Em algumas culturas o sorriso guarda-se mais para quem se conhece, por isso uma cara neutra com estranhos é apenas educação.",
+      "A Tailândia é chamada a terra dos sorrisos e tem muitos tipos, da alegria à cortesia suave em momentos embaraçosos."
+     ],
+     "q": "Quando sorris a pessoas que não conheces, e quando te pareceria estranho?",
+     "c": "Sorri hoje a três pessoas, como um empregado de caixa ou um vizinho, e repara em como reagem."
+    },
+    "pt_BR": {
+     "t": "O sorriso nas diferentes culturas",
+     "g": "Descubra por que o sorriso indica simpatia em alguns lugares e cortesia em outros.",
+     "p": [
+      "Em muitos países sorrir para desconhecidos é um hábito normal e simpático, por exemplo em lojas ou na rua.",
+      "Em algumas culturas o sorriso fica mais para quem a gente conhece, então um rosto neutro com estranhos é só educação.",
+      "A Tailândia é chamada de terra dos sorrisos e tem muitos tipos, da alegria à cortesia suave em momentos constrangedores."
+     ],
+     "q": "Quando você sorri para pessoas que não conhece, e quando isso pareceria estranho?",
+     "c": "Sorria hoje para três pessoas, como um caixa ou um vizinho, e repare em como elas reagem."
+    }
+   }
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Punctuality basics",
+     "g": "Understand clock time and event time, and when on time really means on time.",
+     "p": [
+      "In clock-time cultures, like Germany, Switzerland or Japan, meetings and trains start exactly as planned.",
+      "In event-time cultures, common in parts of Latin America, Africa and the Middle East, the people and the moment matter more than the minute.",
+      "The same person can switch: many are exact at work but relaxed at a family party, so it is fine to ask what time really means."
+     ],
+     "q": "Are you usually early, exactly on time or a bit late, and how is it where you live?",
+     "c": "For your next appointment, arrive five minutes early and notice how it changes your mood."
+    },
+    "de": {
+     "t": "Grundlagen der Pünktlichkeit",
+     "g": "Verstehe Uhrzeit und Ereigniszeit und wann pünktlich wirklich pünktlich heißt.",
+     "p": [
+      "In Kulturen der Uhrzeit, wie Deutschland, der Schweiz oder Japan, beginnen Termine und Züge genau wie geplant.",
+      "In Kulturen der Ereigniszeit, häufig in Teilen Lateinamerikas, Afrikas und des Nahen Ostens, zählen Menschen und Moment mehr als die Minute.",
+      "Viele wechseln: Bei der Arbeit genau, auf einem Familienfest entspannt, also darf man ruhig fragen, wie genau die Uhrzeit gemeint ist."
+     ],
+     "q": "Bist du meist früh, pünktlich oder etwas spät, und wie ist es bei dir üblich?",
+     "c": "Komm zu deinem nächsten Termin fünf Minuten früher und achte darauf, wie sich deine Stimmung verändert."
+    },
+    "es": {
+     "t": "Puntualidad básica",
+     "g": "Entiende el tiempo del reloj y el tiempo del evento, y cuándo a la hora significa de verdad a la hora.",
+     "p": [
+      "En culturas del reloj, como Alemania, Suiza o Japón, las reuniones y los trenes empiezan exactamente a la hora prevista.",
+      "En culturas del evento, comunes en partes de Latinoamérica, África y Oriente Medio, las personas y el momento importan más que el minuto.",
+      "La misma persona puede cambiar: muchos son exactos en el trabajo y relajados en una fiesta familiar, así que puedes preguntar sin problema."
+     ],
+     "q": "¿Sueles llegar pronto, puntual o un poco tarde, y cómo es donde vives?",
+     "c": "Para tu próxima cita, llega cinco minutos antes y fíjate en cómo cambia tu estado de ánimo."
+    },
+    "fr": {
+     "t": "Les bases de la ponctualité",
+     "g": "Comprends le temps de l'horloge et le temps de l'événement, et quand à l'heure veut vraiment dire à l'heure.",
+     "p": [
+      "Dans les cultures de l'horloge, comme l'Allemagne, la Suisse ou le Japon, réunions et trains partent exactement à l'heure prévue.",
+      "Dans les cultures de l'événement, courantes en Amérique latine, en Afrique ou au Moyen-Orient, les gens et l'instant priment sur la minute.",
+      "Une même personne peut changer : précise au travail, détendue à une fête de famille ; on peut donc demander si l'heure est exacte."
+     ],
+     "q": "Es-tu plutôt en avance, pile à l'heure ou un peu en retard, et comment est-ce chez toi ?",
+     "c": "À ton prochain rendez-vous, arrive cinq minutes en avance et observe comment cela change ton humeur."
+    },
+    "it": {
+     "t": "Le basi della puntualità",
+     "g": "Capisci il tempo dell'orologio e il tempo dell'evento, e quando in orario significa davvero in orario.",
+     "p": [
+      "Nelle culture dell'orologio, come Germania, Svizzera o Giappone, riunioni e treni partono esattamente all'ora prevista.",
+      "Nelle culture dell'evento, diffuse in parte dell'America Latina, dell'Africa e del Medio Oriente, persone e momento contano più del minuto.",
+      "La stessa persona può cambiare: precisa al lavoro, rilassata a una festa di famiglia, quindi va benissimo chiedere cosa significa l'orario."
+     ],
+     "q": "Di solito arrivi in anticipo, puntuale o un po' in ritardo, e com'è dove vivi?",
+     "c": "Al tuo prossimo appuntamento arriva cinque minuti prima e nota come cambia il tuo umore."
+    },
+    "pt": {
+     "t": "Noções de pontualidade",
+     "g": "Percebe o tempo do relógio e o tempo do acontecimento, e quando a horas quer mesmo dizer a horas.",
+     "p": [
+      "Nas culturas do relógio, como a Alemanha, a Suíça ou o Japão, reuniões e comboios começam exatamente à hora marcada.",
+      "Nas culturas do acontecimento, comuns na América Latina, em África e no Médio Oriente, as pessoas e o momento contam mais do que o minuto.",
+      "A mesma pessoa pode mudar: rigorosa no trabalho, descontraída numa festa de família, por isso podes perguntar o que a hora significa."
+     ],
+     "q": "Costumas chegar cedo, a horas ou um pouco atrasado, e como é onde vives?",
+     "c": "Na tua próxima marcação, chega cinco minutos mais cedo e repara em como muda o teu humor."
+    },
+    "pt_BR": {
+     "t": "Noções de pontualidade",
+     "g": "Entenda o tempo do relógio e o tempo do evento, e quando na hora significa mesmo na hora.",
+     "p": [
+      "Em culturas do relógio, como Alemanha, Suíça ou Japão, reuniões e trens começam exatamente no horário marcado.",
+      "Em culturas do evento, comuns em partes da América Latina, da África e do Oriente Médio, as pessoas e o momento contam mais que o minuto.",
+      "A mesma pessoa pode mudar: pontual no trabalho, tranquila numa festa de família, então tudo bem perguntar se o horário é para valer."
+     ],
+     "q": "Você costuma chegar cedo, na hora ou um pouco atrasado, e como é onde você mora?",
+     "c": "No seu próximo compromisso, chegue cinco minutos antes e repare em como isso muda seu humor."
+    }
+   }
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Gift giving basics",
+     "g": "Learn what makes a good gift and what to avoid in different cultures.",
+     "p": [
+      "In Japan presentation matters: gifts are beautifully wrapped and offered and received with both hands.",
+      "In China clocks and sharp objects are usually avoided as gifts, and a gift may be politely declined once before it is accepted.",
+      "In Germany or Brazil people often open gifts right away, while in parts of Asia they are opened later in private."
+     ],
+     "q": "What is the best gift you have ever received, and what made it special?",
+     "c": "Think of someone you appreciate and plan a small, thoughtful gift or note for them this week."
+    },
+    "de": {
+     "t": "Grundlagen des Schenkens",
+     "g": "Erfahre, was ein gutes Geschenk ausmacht und was man in verschiedenen Kulturen meiden sollte.",
+     "p": [
+      "In Japan zählt die Präsentation: Geschenke sind schön verpackt und werden mit beiden Händen überreicht und angenommen.",
+      "In China meidet man meist Uhren und scharfe Gegenstände als Geschenk, und ein Geschenk wird oft erst einmal höflich abgelehnt.",
+      "In Deutschland oder Brasilien öffnet man Geschenke oft sofort, in Teilen Asiens dagegen später und privat."
+     ],
+     "q": "Was war das schönste Geschenk, das du je bekommen hast, und was machte es besonders?",
+     "c": "Denk an jemanden, den du schätzt, und plane diese Woche ein kleines, durchdachtes Geschenk oder eine Notiz."
+    },
+    "es": {
+     "t": "Lo básico de los regalos",
+     "g": "Aprende qué hace un buen regalo y qué evitar en distintas culturas.",
+     "p": [
+      "En Japón la presentación importa: los regalos se envuelven con esmero y se dan y reciben con las dos manos.",
+      "En China se evitan los relojes y los objetos cortantes como regalo, y un regalo puede rechazarse una vez por cortesía antes de aceptarse.",
+      "En Alemania o Brasil se suelen abrir los regalos en el momento, mientras que en partes de Asia se abren después, en privado."
+     ],
+     "q": "¿Cuál es el mejor regalo que has recibido y qué lo hizo especial?",
+     "c": "Piensa en alguien a quien aprecias y prepara esta semana un pequeño regalo o una nota con cariño."
+    },
+    "fr": {
+     "t": "Les bases du cadeau",
+     "g": "Découvre ce qui fait un bon cadeau et ce qu'il vaut mieux éviter selon les cultures.",
+     "p": [
+      "Au Japon, la présentation compte : les cadeaux sont joliment emballés, offerts et reçus à deux mains.",
+      "En Chine, on évite d'offrir des horloges ou des objets tranchants, et un cadeau peut être poliment refusé une fois avant d'être accepté.",
+      "En Allemagne ou au Brésil, on ouvre souvent les cadeaux tout de suite, alors qu'en Asie on les ouvre parfois plus tard, en privé."
+     ],
+     "q": "Quel est le plus beau cadeau que tu aies reçu, et qu'est-ce qui le rendait spécial ?",
+     "c": "Pense à quelqu'un que tu apprécies et prépare cette semaine un petit cadeau ou un mot attentionné."
+    },
+    "it": {
+     "t": "Le basi del regalo",
+     "g": "Scopri cosa rende un regalo azzeccato e cosa evitare nelle diverse culture.",
+     "p": [
+      "In Giappone conta la presentazione: i regali sono incartati con cura e si offrono e si ricevono con entrambe le mani.",
+      "In Cina si evitano orologi e oggetti taglienti come regalo, e un dono può essere rifiutato per cortesia una volta prima di accettarlo.",
+      "In Germania o in Brasile i regali si aprono spesso subito, mentre in parte dell'Asia si aprono più tardi, in privato."
+     ],
+     "q": "Qual è il regalo più bello che hai ricevuto, e cosa lo rendeva speciale?",
+     "c": "Pensa a qualcuno che apprezzi e prepara questa settimana un piccolo regalo o un biglietto pensato per lui."
+    },
+    "pt": {
+     "t": "Noções sobre presentes",
+     "g": "Aprende o que faz um bom presente e o que evitar em diferentes culturas.",
+     "p": [
+      "No Japão a apresentação conta: os presentes são embrulhados com cuidado e oferecidos e recebidos com as duas mãos.",
+      "Na China evitam-se relógios e objetos cortantes como presente, e um presente pode ser recusado uma vez por cortesia antes de ser aceite.",
+      "Na Alemanha ou no Brasil os presentes abrem-se muitas vezes logo, enquanto em partes da Ásia se abrem mais tarde, em privado."
+     ],
+     "q": "Qual foi o melhor presente que já recebeste, e o que o tornou especial?",
+     "c": "Pensa em alguém de quem gostas e prepara esta semana um pequeno presente ou um bilhete com carinho."
+    },
+    "pt_BR": {
+     "t": "Noções sobre presentes",
+     "g": "Aprenda o que faz um bom presente e o que evitar em diferentes culturas.",
+     "p": [
+      "No Japão a apresentação importa: os presentes vêm bem embrulhados e são oferecidos e recebidos com as duas mãos.",
+      "Na China se evitam relógios e objetos cortantes como presente, e um presente pode ser recusado uma vez por educação antes de ser aceito.",
+      "Na Alemanha ou no Brasil os presentes costumam ser abertos na hora, enquanto em partes da Ásia são abertos depois, em particular."
+     ],
+     "q": "Qual foi o melhor presente que você já ganhou, e o que o tornou especial?",
+     "c": "Pense em alguém de quem você gosta e prepare nesta semana um pequeno presente ou bilhete com carinho."
+    }
+   }
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Hospitality traditions",
+     "g": "Discover how hosts welcome guests, from Bedouin coffee to the Georgian supra.",
+     "p": [
+      "Bedouin hosts serve cardamom coffee in small cups; gently shaking the empty cup signals you have had enough.",
+      "At a Georgian supra, a lavish feast, a toastmaster called the tamada leads heartfelt toasts to family, friends and guests.",
+      "In Japan, omotenashi means wholehearted hospitality that anticipates a guest's needs before they ask."
+     ],
+     "q": "How do people in your culture make a guest feel welcome?",
+     "c": "Welcome someone today with a small gesture of hospitality, like offering a drink or a warm word."
+    },
+    "de": {
+     "t": "Traditionen der Gastfreundschaft",
+     "g": "Entdecke, wie Gastgeber ihre Gäste empfangen, vom Beduinenkaffee bis zur georgischen Supra.",
+     "p": [
+      "Beduinische Gastgeber servieren Kardamomkaffee in kleinen Tassen; leichtes Schwenken der leeren Tasse heißt, man hat genug.",
+      "Bei der georgischen Supra, einem üppigen Festmahl, leitet der Tamada als Tischmeister herzliche Toasts auf Familie, Freunde und Gäste.",
+      "In Japan bedeutet omotenashi Gastfreundschaft von Herzen, die die Wünsche des Gastes erahnt, bevor er fragt."
+     ],
+     "q": "Wie sorgt man in deiner Kultur dafür, dass sich ein Gast willkommen fühlt?",
+     "c": "Heiße heute jemanden mit einer kleinen gastfreundlichen Geste willkommen, etwa einem Getränk oder einem warmen Wort."
+    },
+    "es": {
+     "t": "Tradiciones de hospitalidad",
+     "g": "Descubre cómo los anfitriones reciben a sus invitados, del café beduino a la supra georgiana.",
+     "p": [
+      "Los anfitriones beduinos sirven café con cardamomo en tacitas; agitar suavemente la taza vacía indica que ya es suficiente.",
+      "En la supra georgiana, un gran banquete, el maestro de brindis o tamada guía brindis emotivos por la familia, los amigos y los invitados.",
+      "En Japón, omotenashi es una hospitalidad sincera que se anticipa a lo que necesita el invitado antes de que lo pida."
+     ],
+     "q": "¿Cómo se hace sentir bienvenido a un invitado en tu cultura?",
+     "c": "Recibe hoy a alguien con un pequeño gesto de hospitalidad, como ofrecer algo de beber o una palabra cálida."
+    },
+    "fr": {
+     "t": "Les traditions d'hospitalité",
+     "g": "Découvre comment les hôtes accueillent leurs invités, du café bédouin à la supra géorgienne.",
+     "p": [
+      "Les hôtes bédouins servent un café à la cardamome dans de petites tasses ; agiter doucement la tasse vide signifie qu'on en a assez.",
+      "Lors d'une supra géorgienne, grand festin, le maître des toasts ou tamada lève son verre à la famille, aux amis et aux invités.",
+      "Au Japon, l'omotenashi est une hospitalité sincère qui devance les besoins de l'invité avant même qu'il les exprime."
+     ],
+     "q": "Dans ta culture, comment fait-on sentir à un invité qu'il est le bienvenu ?",
+     "c": "Accueille aujourd'hui quelqu'un avec un petit geste d'hospitalité, comme offrir une boisson ou un mot chaleureux."
+    },
+    "it": {
+     "t": "Tradizioni di ospitalità",
+     "g": "Scopri come i padroni di casa accolgono gli ospiti, dal caffè beduino alla supra georgiana.",
+     "p": [
+      "I padroni di casa beduini servono caffè al cardamomo in tazzine; scuotere piano la tazza vuota indica che basta così.",
+      "In una supra georgiana, un ricco banchetto, un maestro dei brindisi chiamato tamada guida brindisi sentiti a famiglia, amici e ospiti.",
+      "In Giappone l'omotenashi è un'ospitalità sincera che anticipa i bisogni dell'ospite prima che li esprima."
+     ],
+     "q": "Nella tua cultura, come si fa sentire benvenuto un ospite?",
+     "c": "Accogli oggi qualcuno con un piccolo gesto di ospitalità, come offrire da bere o una parola gentile."
+    },
+    "pt": {
+     "t": "Tradições de hospitalidade",
+     "g": "Descobre como os anfitriões recebem os convidados, do café beduíno à supra georgiana.",
+     "p": [
+      "Os anfitriões beduínos servem café com cardamomo em chávenas pequenas; abanar levemente a chávena vazia indica que já chega.",
+      "Numa supra georgiana, grande banquete, um mestre dos brindes chamado tamada conduz brindes sentidos à família, aos amigos e aos convidados.",
+      "No Japão, omotenashi é uma hospitalidade sincera que se antecipa às necessidades do convidado antes de ele pedir."
+     ],
+     "q": "Como se faz um convidado sentir-se bem-vindo na tua cultura?",
+     "c": "Recebe hoje alguém com um pequeno gesto de hospitalidade, como oferecer uma bebida ou uma palavra calorosa."
+    },
+    "pt_BR": {
+     "t": "Tradições de hospitalidade",
+     "g": "Descubra como os anfitriões recebem os convidados, do café beduíno à supra georgiana.",
+     "p": [
+      "Os anfitriões beduínos servem café com cardamomo em xicrinhas; balançar de leve a xícara vazia indica que já está bom.",
+      "Numa supra georgiana, grande banquete, o mestre dos brindes, chamado tamada, faz brindes emocionados à família, aos amigos e aos convidados.",
+      "No Japão, omotenashi é uma hospitalidade sincera que antecipa as necessidades do convidado antes que ele peça."
+     ],
+     "q": "Como sua cultura faz um convidado se sentir bem-vindo?",
+     "c": "Receba hoje alguém com um pequeno gesto de hospitalidade, como oferecer uma bebida ou uma palavra carinhosa."
+    }
+   }
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Bathing cultures",
+     "g": "Explore Japanese onsen, Finnish sauna, Turkish hammam and Korean jjimjilbang.",
+     "p": [
+      "At a Japanese onsen, a natural hot spring, guests wash thoroughly before quietly entering the shared bath.",
+      "The Turkish hammam offers warm marble rooms and a vigorous scrub with a textured mitt called a kese.",
+      "Korean jjimjilbang are bathhouses with saunas and rest areas, where families relax, snack on eggs and even nap."
+     ],
+     "q": "Have you ever tried a public bath or sauna, and which tradition would you like to experience?",
+     "c": "Turn your shower or bath today into a small ritual: slow down, use warm water and enjoy the calm."
+    },
+    "de": {
+     "t": "Badekulturen",
+     "g": "Entdecke japanische Onsen, finnische Sauna, türkischen Hamam und koreanische Jjimjilbang.",
+     "p": [
+      "Im japanischen Onsen, einer heißen Naturquelle, waschen sich die Gäste gründlich, bevor sie leise ins gemeinsame Bad steigen.",
+      "Der türkische Hamam bietet warme Marmorräume und ein kräftiges Peeling mit einem rauen Handschuh, dem kese.",
+      "Koreanische Jjimjilbang sind Badehäuser mit Saunen und Ruhezonen, wo Familien entspannen, Eier essen und sogar schlafen."
+     ],
+     "q": "Hast du schon einmal ein öffentliches Bad oder eine Sauna ausprobiert, und welche Tradition würde dich reizen?",
+     "c": "Mach heute aus deiner Dusche oder deinem Bad ein kleines Ritual: langsam, mit warmem Wasser und in Ruhe."
+    },
+    "es": {
+     "t": "Culturas del baño",
+     "g": "Explora el onsen japonés, la sauna finlandesa, el hammam turco y el jjimjilbang coreano.",
+     "p": [
+      "En un onsen japonés, una fuente termal natural, los bañistas se lavan a fondo antes de entrar en silencio al baño común.",
+      "El hammam turco ofrece salas cálidas de mármol y una exfoliación enérgica con un guante rugoso llamado kese.",
+      "Los jjimjilbang coreanos son baños con saunas y zonas de descanso donde las familias se relajan, comen huevos e incluso duermen."
+     ],
+     "q": "¿Alguna vez has probado un baño público o una sauna y qué tradición te gustaría vivir?",
+     "c": "Convierte hoy tu ducha o baño en un pequeño ritual: ve despacio, usa agua tibia y disfruta de la calma."
+    },
+    "fr": {
+     "t": "Les cultures du bain",
+     "g": "Explore l'onsen japonais, le sauna finlandais, le hammam turc et le jjimjilbang coréen.",
+     "p": [
+      "Dans un onsen japonais, source chaude naturelle, on se lave soigneusement avant d'entrer calmement dans le bain commun.",
+      "Le hammam turc offre des salles de marbre chaudes et un gommage énergique avec un gant rugueux appelé kese.",
+      "Les jjimjilbang coréens sont des bains avec saunas et espaces de repos, où les familles se détendent, mangent des œufs et font la sieste."
+     ],
+     "q": "As-tu déjà essayé un bain public ou un sauna, et quelle tradition aimerais-tu découvrir ?",
+     "c": "Fais aujourd'hui de ta douche ou de ton bain un petit rituel : ralentis, profite de l'eau chaude et du calme."
+    },
+    "it": {
+     "t": "Le culture del bagno",
+     "g": "Esplora l'onsen giapponese, la sauna finlandese, l'hammam turco e il jjimjilbang coreano.",
+     "p": [
+      "In un onsen giapponese, una sorgente termale naturale, ci si lava con cura prima di entrare in silenzio nella vasca comune.",
+      "L'hammam turco offre sale calde di marmo e uno scrub energico con un guanto ruvido chiamato kese.",
+      "I jjimjilbang coreani sono stabilimenti con saune e zone relax, dove le famiglie si riposano, mangiano uova e persino dormono."
+     ],
+     "q": "Hai mai provato un bagno pubblico o una sauna, e quale tradizione ti piacerebbe vivere?",
+     "c": "Trasforma oggi la doccia o il bagno in un piccolo rito: rallenta, goditi l'acqua calda e la calma."
+    },
+    "pt": {
+     "t": "Culturas do banho",
+     "g": "Explora o onsen japonês, a sauna finlandesa, o hammam turco e o jjimjilbang coreano.",
+     "p": [
+      "Num onsen japonês, uma fonte termal natural, as pessoas lavam-se bem antes de entrar em silêncio no banho comum.",
+      "O hammam turco oferece salas quentes de mármore e uma esfoliação vigorosa com uma luva áspera chamada kese.",
+      "Os jjimjilbang coreanos são casas de banho com saunas e zonas de descanso, onde as famílias relaxam, comem ovos e até dormem."
+     ],
+     "q": "Já experimentaste um banho público ou uma sauna, e que tradição gostavas de viver?",
+     "c": "Transforma hoje o teu duche ou banho num pequeno ritual: abranda, aproveita a água quente e a calma."
+    },
+    "pt_BR": {
+     "t": "Culturas do banho",
+     "g": "Explore o onsen japonês, a sauna finlandesa, o hammam turco e o jjimjilbang coreano.",
+     "p": [
+      "Num onsen japonês, uma fonte termal natural, as pessoas se lavam bem antes de entrar em silêncio no banho coletivo.",
+      "O hammam turco oferece salas quentes de mármore e uma esfoliação vigorosa com uma luva áspera chamada kese.",
+      "Os jjimjilbang coreanos são casas de banho com saunas e áreas de descanso, onde as famílias relaxam, comem ovos e até cochilam."
+     ],
+     "q": "Você já experimentou um banho público ou uma sauna, e qual tradição gostaria de viver?",
+     "c": "Transforme hoje seu banho num pequeno ritual: vá devagar, aproveite a água quente e a calma."
+    }
+   }
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The Finnish sauna",
+     "g": "Discover why the sauna is a cornerstone of Finnish life and friendship.",
+     "p": [
+      "Finland has millions of saunas, in homes, apartment blocks, lakeside cabins and even offices.",
+      "Water thrown on hot stones creates löyly, the soft steam, and many people cool off in a lake or even in snow.",
+      "The sauna is a place of calm and equality where people talk openly, and Finnish sauna culture is on UNESCO's heritage list."
+     ],
+     "q": "Where do you go or what do you do to relax deeply and talk openly with friends?",
+     "c": "Create a five-minute calm break today, with no screens, and simply breathe slowly as if in a sauna."
+    },
+    "de": {
+     "t": "Die finnische Sauna",
+     "g": "Entdecke, warum die Sauna ein Grundpfeiler des finnischen Lebens und der Freundschaft ist.",
+     "p": [
+      "Finnland hat Millionen Saunen, in Häusern, Wohnblocks, Hütten am See und sogar in Büros.",
+      "Wasser auf heißen Steinen erzeugt löyly, den sanften Dampf, und viele kühlen sich danach im See oder sogar im Schnee ab.",
+      "Die Sauna ist ein Ort der Ruhe und Gleichheit, an dem man offen redet; die finnische Saunakultur ist UNESCO-Kulturerbe."
+     ],
+     "q": "Wo oder wie entspannst du dich richtig und sprichst offen mit Freunden?",
+     "c": "Gönn dir heute fünf ruhige Minuten ohne Bildschirm und atme einfach langsam, wie in einer Sauna."
+    },
+    "es": {
+     "t": "La sauna finlandesa",
+     "g": "Descubre por qué la sauna es un pilar de la vida y la amistad en Finlandia.",
+     "p": [
+      "Finlandia tiene millones de saunas, en casas, bloques de pisos, cabañas junto al lago e incluso oficinas.",
+      "El agua sobre las piedras calientes crea el löyly, un vapor suave, y mucha gente se refresca en un lago o incluso en la nieve.",
+      "La sauna es un lugar de calma e igualdad donde se habla con franqueza, y la cultura finlandesa de la sauna es patrimonio de la UNESCO."
+     ],
+     "q": "¿Dónde vas o qué haces para relajarte de verdad y hablar abiertamente con amigos?",
+     "c": "Regálate hoy cinco minutos de calma sin pantallas y respira despacio, como en una sauna."
+    },
+    "fr": {
+     "t": "Le sauna finlandais",
+     "g": "Découvre pourquoi le sauna est un pilier de la vie et de l'amitié en Finlande.",
+     "p": [
+      "La Finlande compte des millions de saunas, dans les maisons, les immeubles, les chalets au bord des lacs et même les bureaux.",
+      "L'eau versée sur les pierres chaudes crée le löyly, une douce vapeur, et beaucoup se rafraîchissent dans un lac ou même dans la neige.",
+      "Le sauna est un lieu de calme et d'égalité où l'on parle librement ; la culture finlandaise du sauna est inscrite au patrimoine de l'UNESCO."
+     ],
+     "q": "Où vas-tu ou que fais-tu pour te détendre vraiment et parler librement avec des amis ?",
+     "c": "Offre-toi aujourd'hui cinq minutes de calme sans écran et respire lentement, comme dans un sauna."
+    },
+    "it": {
+     "t": "La sauna finlandese",
+     "g": "Scopri perché la sauna è un pilastro della vita e dell'amicizia in Finlandia.",
+     "p": [
+      "La Finlandia ha milioni di saune, nelle case, nei condomini, nelle casette sul lago e perfino negli uffici.",
+      "L'acqua versata sulle pietre calde crea il löyly, un vapore morbido, e molti si rinfrescano in un lago o persino nella neve.",
+      "La sauna è un luogo di calma e uguaglianza dove si parla apertamente, e la cultura finlandese della sauna è patrimonio UNESCO."
+     ],
+     "q": "Dove vai o cosa fai per rilassarti davvero e parlare apertamente con gli amici?",
+     "c": "Concediti oggi cinque minuti di calma senza schermi e respira lentamente, come in una sauna."
+    },
+    "pt": {
+     "t": "A sauna finlandesa",
+     "g": "Descobre porque é que a sauna é um pilar da vida e da amizade na Finlândia.",
+     "p": [
+      "A Finlândia tem milhões de saunas, em casas, prédios, cabanas junto aos lagos e até em escritórios.",
+      "A água atirada às pedras quentes cria o löyly, um vapor suave, e muitas pessoas refrescam-se num lago ou até na neve.",
+      "A sauna é um lugar de calma e igualdade onde se fala abertamente, e a cultura finlandesa da sauna é património da UNESCO."
+     ],
+     "q": "Onde vais ou o que fazes para relaxar a sério e falar abertamente com amigos?",
+     "c": "Oferece-te hoje cinco minutos de calma sem ecrãs e respira devagar, como numa sauna."
+    },
+    "pt_BR": {
+     "t": "A sauna finlandesa",
+     "g": "Descubra por que a sauna é um pilar da vida e da amizade na Finlândia.",
+     "p": [
+      "A Finlândia tem milhões de saunas, em casas, prédios, cabanas à beira de lagos e até em escritórios.",
+      "A água jogada nas pedras quentes cria o löyly, um vapor suave, e muita gente se refresca num lago ou até na neve.",
+      "A sauna é um lugar de calma e igualdade onde se conversa abertamente, e a cultura finlandesa da sauna é patrimônio da UNESCO."
+     ],
+     "q": "Aonde você vai ou o que faz para relaxar de verdade e conversar abertamente com amigos?",
+     "c": "Dê a si mesmo hoje cinco minutos de calma sem telas e respire devagar, como numa sauna."
+    }
+   }
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Pets and animals in daily life",
+     "g": "See how attitudes to pets and animals differ around the world.",
+     "p": [
+      "In Istanbul street cats are cared for by whole neighbourhoods, with food and water bowls left out on pavements.",
+      "In many homes in Europe and the Americas dogs and cats are treated as members of the family.",
+      "In Mongolia horses are central to daily life and culture, and children often learn to ride very young."
+     ],
+     "q": "What role do animals play in your life or in your culture?",
+     "c": "Learn one fact today about an animal that is especially loved or respected in another culture."
+    },
+    "de": {
+     "t": "Haustiere und Tiere im Alltag",
+     "g": "Sieh, wie unterschiedlich Menschen weltweit mit Haustieren und Tieren umgehen.",
+     "p": [
+      "In Istanbul kümmern sich ganze Viertel um Straßenkatzen, mit Futter- und Wassernäpfen auf den Gehwegen.",
+      "In vielen Haushalten in Europa und Amerika gelten Hunde und Katzen als Familienmitglieder.",
+      "In der Mongolei stehen Pferde im Zentrum von Alltag und Kultur, und Kinder lernen oft schon sehr früh reiten."
+     ],
+     "q": "Welche Rolle spielen Tiere in deinem Leben oder in deiner Kultur?",
+     "c": "Lerne heute eine Tatsache über ein Tier, das in einer anderen Kultur besonders geliebt oder geachtet wird."
+    },
+    "es": {
+     "t": "Las mascotas y los animales en la vida diaria",
+     "g": "Descubre cómo cambia la relación con las mascotas y los animales en el mundo.",
+     "p": [
+      "En Estambul barrios enteros cuidan de los gatos callejeros, con cuencos de comida y agua en las aceras.",
+      "En muchos hogares de Europa y América los perros y gatos se consideran parte de la familia.",
+      "En Mongolia los caballos son centrales en la vida diaria y la cultura, y los niños suelen aprender a montar muy pequeños."
+     ],
+     "q": "¿Qué papel tienen los animales en tu vida o en tu cultura?",
+     "c": "Aprende hoy un dato sobre un animal especialmente querido o respetado en otra cultura."
+    },
+    "fr": {
+     "t": "Animaux de compagnie et vie quotidienne",
+     "g": "Vois comment le rapport aux animaux de compagnie et aux animaux change à travers le monde.",
+     "p": [
+      "À Istanbul, des quartiers entiers prennent soin des chats des rues, avec des gamelles d'eau et de nourriture sur les trottoirs.",
+      "Dans beaucoup de foyers d'Europe et des Amériques, chiens et chats sont considérés comme des membres de la famille.",
+      "En Mongolie, les chevaux sont au cœur de la vie et de la culture, et les enfants apprennent souvent à monter très jeunes."
+     ],
+     "q": "Quelle place les animaux ont-ils dans ta vie ou dans ta culture ?",
+     "c": "Apprends aujourd'hui un fait sur un animal particulièrement aimé ou respecté dans une autre culture."
+    },
+    "it": {
+     "t": "Animali domestici e vita quotidiana",
+     "g": "Scopri come cambia il rapporto con gli animali domestici e gli animali nel mondo.",
+     "p": [
+      "A Istanbul interi quartieri si prendono cura dei gatti di strada, con ciotole di cibo e acqua sui marciapiedi.",
+      "In molte case d'Europa e delle Americhe cani e gatti sono considerati membri della famiglia.",
+      "In Mongolia i cavalli sono al centro della vita quotidiana e della cultura, e i bambini imparano spesso a cavalcare da piccolissimi."
+     ],
+     "q": "Che ruolo hanno gli animali nella tua vita o nella tua cultura?",
+     "c": "Impara oggi una curiosità su un animale particolarmente amato o rispettato in un'altra cultura."
+    },
+    "pt": {
+     "t": "Animais de estimação e vida diária",
+     "g": "Vê como a relação com os animais de estimação e os animais muda pelo mundo.",
+     "p": [
+      "Em Istambul bairros inteiros cuidam dos gatos de rua, com taças de comida e água deixadas nos passeios.",
+      "Em muitas casas da Europa e das Américas, cães e gatos são tratados como membros da família.",
+      "Na Mongólia os cavalos estão no centro da vida diária e da cultura, e as crianças aprendem muitas vezes a montar muito novas."
+     ],
+     "q": "Que papel têm os animais na tua vida ou na tua cultura?",
+     "c": "Aprende hoje uma curiosidade sobre um animal especialmente querido ou respeitado noutra cultura."
+    },
+    "pt_BR": {
+     "t": "Bichos de estimação e animais no dia a dia",
+     "g": "Veja como a relação com bichos de estimação e animais muda pelo mundo.",
+     "p": [
+      "Em Istambul bairros inteiros cuidam dos gatos de rua, com potes de comida e água nas calçadas.",
+      "Em muitas casas da Europa e das Américas, cães e gatos são tratados como membros da família.",
+      "Na Mongólia os cavalos estão no centro da vida diária e da cultura, e as crianças muitas vezes aprendem a montar bem pequenas."
+     ],
+     "q": "Que papel os animais têm na sua vida ou na sua cultura?",
+     "c": "Aprenda hoje uma curiosidade sobre um animal especialmente querido ou respeitado em outra cultura."
+    }
+   }
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: celebrations and daily life",
+     "g": "Revisit the festivals, music, markets and everyday customs of your second month.",
+     "p": [
+      "You explored festivals of light, New Year traditions, carnival, harvest festivals, Holi and Midsummer.",
+      "You heard samba, flamenco and the haka, met folk heroes and proverbs, and visited markets, games and football.",
+      "You compared rest days, personal space, eye contact, smiles, punctuality, gifts, hospitality, baths and pets."
+     ],
+     "q": "Which celebration or custom from this month would you most like to experience in person?",
+     "c": "Choose your favourite lesson from this month and share what you learned with someone today."
+    },
+    "de": {
+     "t": "Rückblick: Feste und Alltag",
+     "g": "Wiederhole die Feste, Musik, Märkte und Alltagsbräuche deines zweiten Monats.",
+     "p": [
+      "Du hast Lichterfeste, Neujahrsbräuche, Karneval, Erntefeste, Holi und Mittsommer erkundet.",
+      "Du hast Samba, Flamenco und den Haka gehört, Volkshelden und Sprichwörter kennengelernt und Märkte, Spiele und Fußball besucht.",
+      "Du hast Ruhetage, persönlichen Raum, Blickkontakt, Lächeln, Pünktlichkeit, Geschenke, Gastfreundschaft, Bäder und Haustiere verglichen."
+     ],
+     "q": "Welches Fest oder welchen Brauch aus diesem Monat würdest du am liebsten selbst erleben?",
+     "c": "Wähle deine Lieblingslektion aus diesem Monat und erzähle heute jemandem, was du gelernt hast."
+    },
+    "es": {
+     "t": "Repaso: celebraciones y vida diaria",
+     "g": "Repasa las fiestas, la música, los mercados y las costumbres cotidianas de tu segundo mes.",
+     "p": [
+      "Exploraste las fiestas de la luz, el Año Nuevo, el carnaval, las fiestas de la cosecha, Holi y el Midsommar.",
+      "Escuchaste samba, flamenco y el haka, conociste héroes populares y refranes, y visitaste mercados, juegos y fútbol.",
+      "Comparaste días de descanso, espacio personal, mirada, sonrisas, puntualidad, regalos, hospitalidad, baños y mascotas."
+     ],
+     "q": "¿Qué fiesta o costumbre de este mes te gustaría más vivir en persona?",
+     "c": "Elige tu lección favorita de este mes y comparte hoy con alguien lo que aprendiste."
+    },
+    "fr": {
+     "t": "Révision : fêtes et vie quotidienne",
+     "g": "Revois les fêtes, la musique, les marchés et les coutumes du quotidien de ton deuxième mois.",
+     "p": [
+      "Tu as exploré les fêtes de la lumière, le Nouvel An, le carnaval, les fêtes des récoltes, Holi et la Saint-Jean nordique.",
+      "Tu as écouté samba, flamenco et haka, rencontré héros de contes et proverbes, et visité marchés, jeux et football.",
+      "Tu as comparé jours de repos, espace personnel, regard, sourires, ponctualité, cadeaux, hospitalité, bains et animaux."
+     ],
+     "q": "Quelle fête ou coutume de ce mois aimerais-tu le plus vivre en vrai ?",
+     "c": "Choisis ta leçon préférée de ce mois et partage aujourd'hui ce que tu as appris avec quelqu'un."
+    },
+    "it": {
+     "t": "Ripasso: feste e vita quotidiana",
+     "g": "Ripassa le feste, la musica, i mercati e le usanze quotidiane del tuo secondo mese.",
+     "p": [
+      "Hai esplorato le feste della luce, il Capodanno, il carnevale, le feste del raccolto, l'Holi e il Midsommar.",
+      "Hai ascoltato samba, flamenco e haka, conosciuto eroi delle fiabe e proverbi, e visitato mercati, giochi e calcio.",
+      "Hai confrontato giorni di riposo, spazio personale, sguardo, sorrisi, puntualità, regali, ospitalità, bagni e animali."
+     ],
+     "q": "Quale festa o usanza di questo mese ti piacerebbe di più vivere di persona?",
+     "c": "Scegli la tua lezione preferita di questo mese e condividi oggi con qualcuno ciò che hai imparato."
+    },
+    "pt": {
+     "t": "Revisão: celebrações e dia a dia",
+     "g": "Revê as festas, a música, os mercados e os costumes do dia a dia do teu segundo mês.",
+     "p": [
+      "Exploraste as festas da luz, o Ano Novo, o Carnaval, as festas das colheitas, o Holi e o Midsommar.",
+      "Ouviste samba, flamenco e o haka, conheceste heróis populares e provérbios, e visitaste mercados, jogos e futebol.",
+      "Comparaste dias de descanso, espaço pessoal, olhar, sorrisos, pontualidade, presentes, hospitalidade, banhos e animais."
+     ],
+     "q": "Que festa ou costume deste mês gostavas mais de viver ao vivo?",
+     "c": "Escolhe a tua lição preferida deste mês e partilha hoje com alguém o que aprendeste."
+    },
+    "pt_BR": {
+     "t": "Revisão: celebrações e dia a dia",
+     "g": "Relembre as festas, a música, os mercados e os costumes do dia a dia do seu segundo mês.",
+     "p": [
+      "Você explorou as festas da luz, o Ano-Novo, o Carnaval, as festas da colheita, o Holi e o Midsommar.",
+      "Você ouviu samba, flamenco e o haka, conheceu heróis populares e ditados, e visitou mercados, jogos e futebol.",
+      "Você comparou dias de descanso, espaço pessoal, olhar, sorrisos, pontualidade, presentes, hospitalidade, banhos e bichos."
+     ],
+     "q": "Que festa ou costume deste mês você mais gostaria de viver pessoalmente?",
+     "c": "Escolha sua lição favorita deste mês e compartilhe hoje com alguém o que aprendeu."
+    }
+   }
+  }
+ ]
+}

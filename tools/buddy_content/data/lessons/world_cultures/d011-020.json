@@ -1,0 +1,835 @@
+{
+ "topic": "world_cultures",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Spanish and Portuguese surnames",
+     "g": "Understand why many people in Spain, Portugal and Latin America carry two surnames.",
+     "p": [
+      "In Spain a person traditionally takes the father's first surname followed by the mother's first surname.",
+      "In Portugal and Brazil the order is often reversed: the mother's surname first, the father's last.",
+      "Women in Spain usually keep their own surnames after marriage, so the whole family history stays visible."
+     ],
+     "q": "How are surnames passed on in your family, and do you know where yours comes from?",
+     "c": "Write your full name the Spanish way, with your father's and mother's surnames, and see how it sounds."
+    },
+    "de": {
+     "t": "Spanische und portugiesische Nachnamen",
+     "g": "Verstehe, warum viele Menschen in Spanien, Portugal und Lateinamerika zwei Nachnamen tragen.",
+     "p": [
+      "In Spanien trägt man traditionell den ersten Nachnamen des Vaters, gefolgt vom ersten der Mutter.",
+      "In Portugal und Brasilien ist es oft umgekehrt: zuerst der Name der Mutter, zuletzt der des Vaters.",
+      "Frauen in Spanien behalten nach der Heirat meist ihre Nachnamen, so bleibt die Familiengeschichte sichtbar."
+     ],
+     "q": "Wie werden Nachnamen in deiner Familie weitergegeben, und weißt du, woher deiner stammt?",
+     "c": "Schreib deinen Namen auf spanische Art mit den Nachnamen von Vater und Mutter und hör, wie er klingt."
+    },
+    "es": {
+     "t": "Apellidos españoles y portugueses",
+     "g": "Entiende por qué muchas personas en España, Portugal y Latinoamérica llevan dos apellidos.",
+     "p": [
+      "En España, tradicionalmente se lleva el primer apellido del padre seguido del primer apellido de la madre.",
+      "En Portugal y Brasil el orden suele invertirse: primero el apellido de la madre y al final el del padre.",
+      "En España las mujeres suelen conservar sus apellidos al casarse, así la historia familiar sigue visible."
+     ],
+     "q": "¿Cómo se transmiten los apellidos en tu familia y sabes de dónde viene el tuyo?",
+     "c": "Escribe tu nombre al estilo español, con los apellidos de tu padre y tu madre, y mira cómo suena."
+    },
+    "fr": {
+     "t": "Les noms espagnols et portugais",
+     "g": "Comprends pourquoi beaucoup de gens en Espagne, au Portugal et en Amérique latine ont deux noms de famille.",
+     "p": [
+      "En Espagne, on porte traditionnellement le premier nom du père suivi du premier nom de la mère.",
+      "Au Portugal et au Brésil, l'ordre est souvent inversé : le nom de la mère d'abord, celui du père à la fin.",
+      "En Espagne, les femmes gardent en général leurs noms après le mariage : l'histoire familiale reste visible."
+     ],
+     "q": "Comment les noms de famille se transmettent-ils chez toi, et sais-tu d'où vient le tien ?",
+     "c": "Écris ton nom à l'espagnole, avec les noms de ton père et de ta mère, et écoute comment il sonne."
+    },
+    "it": {
+     "t": "Cognomi spagnoli e portoghesi",
+     "g": "Capisci perché molte persone in Spagna, Portogallo e America Latina hanno due cognomi.",
+     "p": [
+      "In Spagna, per tradizione, si porta il primo cognome del padre seguito dal primo cognome della madre.",
+      "In Portogallo e in Brasile l'ordine è spesso invertito: prima il cognome della madre, per ultimo quello del padre.",
+      "In Spagna le donne di solito mantengono i propri cognomi dopo il matrimonio: la storia familiare resta visibile."
+     ],
+     "q": "Come si tramandano i cognomi nella tua famiglia, e sai da dove viene il tuo?",
+     "c": "Scrivi il tuo nome alla spagnola, con i cognomi di tuo padre e di tua madre, e senti come suona."
+    },
+    "pt": {
+     "t": "Apelidos espanhóis e portugueses",
+     "g": "Percebe porque é que muitas pessoas em Espanha, Portugal e América Latina têm dois apelidos.",
+     "p": [
+      "Em Espanha usa-se tradicionalmente o primeiro apelido do pai seguido do primeiro apelido da mãe.",
+      "Em Portugal e no Brasil a ordem costuma ser inversa: primeiro o apelido da mãe e no fim o do pai.",
+      "Em Espanha as mulheres costumam manter os seus apelidos depois de casar, e a história da família fica visível."
+     ],
+     "q": "Como se passam os apelidos na tua família, e sabes de onde vem o teu?",
+     "c": "Escreve o teu nome à maneira espanhola, com os apelidos do teu pai e da tua mãe, e vê como soa."
+    },
+    "pt_BR": {
+     "t": "Sobrenomes espanhóis e portugueses",
+     "g": "Entenda por que muitas pessoas na Espanha, em Portugal e na América Latina têm dois sobrenomes.",
+     "p": [
+      "Na Espanha, tradicionalmente se usa o primeiro sobrenome do pai seguido do primeiro sobrenome da mãe.",
+      "Em Portugal e no Brasil a ordem costuma ser inversa: primeiro o sobrenome da mãe e por último o do pai.",
+      "Na Espanha as mulheres costumam manter os próprios sobrenomes depois de casar, e a história da família fica visível."
+     ],
+     "q": "Como os sobrenomes passam de geração em geração na sua família, e você sabe de onde vem o seu?",
+     "c": "Escreva seu nome do jeito espanhol, com os sobrenomes do seu pai e da sua mãe, e veja como soa."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Icelandic patronymics",
+     "g": "Discover how most Icelanders build their surname from a parent's first name.",
+     "p": [
+      "A son of a man named Jón becomes Jónsson, and a daughter becomes Jónsdóttir.",
+      "Some people use their mother's name instead, such as Helgudóttir, daughter of Helga.",
+      "Because surnames differ within a family, Icelanders address each other by first name, even formally."
+     ],
+     "q": "If your surname were built from a parent's first name, what would it be?",
+     "c": "Create your own Icelandic-style surname with -son or -dóttir and say it out loud."
+    },
+    "de": {
+     "t": "Isländische Vatersnamen",
+     "g": "Entdecke, wie die meisten Isländer ihren Nachnamen aus dem Vornamen eines Elternteils bilden.",
+     "p": [
+      "Der Sohn eines Mannes namens Jón heißt Jónsson, die Tochter Jónsdóttir.",
+      "Manche nutzen stattdessen den Namen der Mutter, etwa Helgudóttir, Tochter von Helga.",
+      "Da Nachnamen in einer Familie verschieden sind, sprechen sich Isländer mit Vornamen an, auch förmlich."
+     ],
+     "q": "Wie würde dein Nachname lauten, wenn er aus dem Vornamen eines Elternteils gebildet würde?",
+     "c": "Bilde deinen eigenen isländischen Nachnamen mit -son oder -dóttir und sprich ihn laut aus."
+    },
+    "es": {
+     "t": "Los patronímicos islandeses",
+     "g": "Descubre cómo la mayoría de los islandeses forman su apellido a partir del nombre de pila de un progenitor.",
+     "p": [
+      "El hijo de un hombre llamado Jón se apellida Jónsson, y la hija, Jónsdóttir.",
+      "Algunas personas usan el nombre de la madre, como Helgudóttir, hija de Helga.",
+      "Como los apellidos cambian dentro de una familia, los islandeses se llaman por el nombre de pila, incluso en lo formal."
+     ],
+     "q": "Si tu apellido se formara con el nombre de tu madre o tu padre, ¿cuál sería?",
+     "c": "Crea tu propio apellido al estilo islandés con -son o -dóttir y dilo en voz alta."
+    },
+    "fr": {
+     "t": "Les patronymes islandais",
+     "g": "Découvre comment la plupart des Islandais forment leur nom à partir du prénom d'un parent.",
+     "p": [
+      "Le fils d'un homme appelé Jón s'appelle Jónsson, et sa fille Jónsdóttir.",
+      "Certains utilisent plutôt le prénom de leur mère, comme Helgudóttir, fille de Helga.",
+      "Comme les noms diffèrent dans une même famille, les Islandais s'appellent par leur prénom, même en contexte formel."
+     ],
+     "q": "Si ton nom de famille venait du prénom d'un parent, quel serait-il ?",
+     "c": "Crée ton propre nom à l'islandaise avec -son ou -dóttir et prononce-le à voix haute."
+    },
+    "it": {
+     "t": "I patronimici islandesi",
+     "g": "Scopri come la maggior parte degli islandesi forma il cognome dal nome di un genitore.",
+     "p": [
+      "Il figlio di un uomo di nome Jón si chiama Jónsson, la figlia Jónsdóttir.",
+      "Alcune persone usano invece il nome della madre, come Helgudóttir, figlia di Helga.",
+      "Poiché i cognomi cambiano nella stessa famiglia, gli islandesi si chiamano per nome, anche in contesti formali."
+     ],
+     "q": "Se il tuo cognome venisse dal nome di un genitore, quale sarebbe?",
+     "c": "Crea il tuo cognome in stile islandese con -son o -dóttir e pronuncialo ad alta voce."
+    },
+    "pt": {
+     "t": "Os patronímicos islandeses",
+     "g": "Descobre como a maioria dos islandeses forma o apelido a partir do nome próprio de um dos pais.",
+     "p": [
+      "O filho de um homem chamado Jón chama-se Jónsson, e a filha Jónsdóttir.",
+      "Algumas pessoas usam o nome da mãe, como Helgudóttir, filha de Helga.",
+      "Como os apelidos mudam dentro da família, os islandeses tratam-se pelo nome próprio, mesmo em contexto formal."
+     ],
+     "q": "Se o teu apelido viesse do nome de um dos teus pais, qual seria?",
+     "c": "Cria o teu próprio apelido ao estilo islandês com -son ou -dóttir e diz em voz alta."
+    },
+    "pt_BR": {
+     "t": "Os patronímicos islandeses",
+     "g": "Descubra como a maioria dos islandeses forma o sobrenome a partir do nome de um dos pais.",
+     "p": [
+      "O filho de um homem chamado Jón se chama Jónsson, e a filha, Jónsdóttir.",
+      "Algumas pessoas usam o nome da mãe, como Helgudóttir, filha de Helga.",
+      "Como os sobrenomes mudam dentro da família, os islandeses se chamam pelo primeiro nome, mesmo em situações formais."
+     ],
+     "q": "Se o seu sobrenome viesse do nome de um dos seus pais, qual seria?",
+     "c": "Crie seu próprio sobrenome no estilo islandês com -son ou -dóttir e fale em voz alta."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Breakfast around the world",
+     "g": "Explore how the first meal of the day changes from country to country.",
+     "p": [
+      "A traditional Japanese breakfast can include rice, miso soup, grilled fish and pickles.",
+      "A full English breakfast brings eggs, bacon, sausages, beans and toast, while Italians often have a cappuccino and a pastry.",
+      "In Brazil, pão de queijo, small cheese breads, often appear with coffee and fresh fruit."
+     ],
+     "q": "What does a typical breakfast look like for you, and has it changed since childhood?",
+     "c": "Tomorrow, add one element from another country's breakfast to your own, like miso soup or fresh fruit."
+    },
+    "de": {
+     "t": "Frühstück rund um die Welt",
+     "g": "Entdecke, wie sich die erste Mahlzeit des Tages von Land zu Land unterscheidet.",
+     "p": [
+      "Ein traditionelles japanisches Frühstück kann Reis, Misosuppe, gegrillten Fisch und eingelegtes Gemüse enthalten.",
+      "Das Full English Breakfast bietet Eier, Speck, Würstchen, Bohnen und Toast; Italiener nehmen oft Cappuccino und Gebäck.",
+      "In Brasilien gibt es oft pão de queijo, kleine Käsebrötchen, mit Kaffee und frischem Obst."
+     ],
+     "q": "Wie sieht ein typisches Frühstück bei dir aus, und hat es sich seit deiner Kindheit verändert?",
+     "c": "Füge morgen deinem Frühstück etwas aus einem anderen Land hinzu, zum Beispiel Misosuppe oder frisches Obst."
+    },
+    "es": {
+     "t": "Desayunos del mundo",
+     "g": "Explora cómo cambia la primera comida del día de un país a otro.",
+     "p": [
+      "Un desayuno japonés tradicional puede incluir arroz, sopa de miso, pescado a la parrilla y encurtidos.",
+      "El desayuno inglés completo trae huevos, bacon, salchichas, alubias y tostadas; en Italia, capuchino y un bollo.",
+      "En Brasil suele haber pão de queijo, pequeños panes de queso, con café y fruta fresca."
+     ],
+     "q": "¿Cómo es tu desayuno típico y ha cambiado desde que eras niño?",
+     "c": "Mañana añade a tu desayuno algo de otro país, como sopa de miso o fruta fresca."
+    },
+    "fr": {
+     "t": "Le petit-déjeuner dans le monde",
+     "g": "Explore comment le premier repas de la journée change d'un pays à l'autre.",
+     "p": [
+      "Un petit-déjeuner japonais traditionnel peut comporter riz, soupe miso, poisson grillé et légumes marinés.",
+      "L'English breakfast propose œufs, bacon, saucisses, haricots et toasts ; en Italie, souvent un cappuccino et une viennoiserie.",
+      "Au Brésil, le pão de queijo, petit pain au fromage, accompagne souvent le café et les fruits frais."
+     ],
+     "q": "À quoi ressemble ton petit-déjeuner typique, et a-t-il changé depuis ton enfance ?",
+     "c": "Demain, ajoute à ton petit-déjeuner un élément venu d'un autre pays, comme une soupe miso ou des fruits."
+    },
+    "it": {
+     "t": "Colazioni nel mondo",
+     "g": "Esplora come il primo pasto della giornata cambia da un paese all'altro.",
+     "p": [
+      "Una colazione giapponese tradizionale può includere riso, zuppa di miso, pesce alla griglia e verdure in salamoia.",
+      "La colazione inglese completa offre uova, bacon, salsicce, fagioli e toast; in Italia spesso cappuccino e cornetto.",
+      "In Brasile si trova spesso il pão de queijo, piccoli panini al formaggio, con caffè e frutta fresca."
+     ],
+     "q": "Com'è la tua colazione tipica, ed è cambiata da quando eri piccolo?",
+     "c": "Domani aggiungi alla tua colazione un elemento di un altro paese, come la zuppa di miso o la frutta fresca."
+    },
+    "pt": {
+     "t": "O pequeno-almoço pelo mundo",
+     "g": "Explora como a primeira refeição do dia muda de país para país.",
+     "p": [
+      "Um pequeno-almoço japonês tradicional pode ter arroz, sopa de miso, peixe grelhado e legumes em conserva.",
+      "O pequeno-almoço inglês completo traz ovos, bacon, salsichas, feijão e torradas; em Itália, um cappuccino e um bolo.",
+      "No Brasil aparece muitas vezes o pão de queijo, pequenos pães de queijo, com café e fruta fresca."
+     ],
+     "q": "Como é o teu pequeno-almoço típico, e mudou desde a infância?",
+     "c": "Amanhã junta ao teu pequeno-almoço algo de outro país, como sopa de miso ou fruta fresca."
+    },
+    "pt_BR": {
+     "t": "Café da manhã pelo mundo",
+     "g": "Explore como a primeira refeição do dia muda de país para país.",
+     "p": [
+      "Um café da manhã japonês tradicional pode ter arroz, sopa de missô, peixe grelhado e conservas.",
+      "O café da manhã inglês completo traz ovos, bacon, salsichas, feijão e torradas; na Itália, cappuccino e um doce.",
+      "No Brasil, o pão de queijo aparece muito ao lado do cafezinho e de frutas frescas."
+     ],
+     "q": "Como é o seu café da manhã típico, e ele mudou desde a infância?",
+     "c": "Amanhã acrescente ao seu café da manhã algo de outro país, como sopa de missô ou fruta fresca."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Lunch as the main meal",
+     "g": "Discover cultures where lunch is the long, warm and shared heart of the day.",
+     "p": [
+      "In Spain lunch is often eaten around two in the afternoon and can last well over an hour.",
+      "In Mexico the main meal, la comida, is traditionally served in the afternoon with soup, a main dish and dessert.",
+      "Where lunch is the main meal, dinner is usually lighter and the afternoon pace a little slower."
+     ],
+     "q": "Is lunch or dinner the main meal where you live, and which do you prefer?",
+     "c": "Today, give your lunch a little extra time: sit down, put your phone away and enjoy it slowly."
+    },
+    "de": {
+     "t": "Das Mittagessen als Hauptmahlzeit",
+     "g": "Entdecke Kulturen, in denen das Mittagessen das lange, warme und gemeinsame Herz des Tages ist.",
+     "p": [
+      "In Spanien isst man oft gegen zwei Uhr nachmittags zu Mittag, und das kann deutlich über eine Stunde dauern.",
+      "In Mexiko wird die Hauptmahlzeit, la comida, traditionell am Nachmittag mit Suppe, Hauptgang und Dessert serviert.",
+      "Wo mittags die Hauptmahlzeit ist, fällt das Abendessen meist leichter aus und der Nachmittag ruhiger."
+     ],
+     "q": "Ist bei dir das Mittag- oder das Abendessen die Hauptmahlzeit, und was ist dir lieber?",
+     "c": "Nimm dir heute etwas mehr Zeit fürs Mittagessen: hinsetzen, Handy weg und langsam genießen."
+    },
+    "es": {
+     "t": "La comida del mediodía como plato fuerte",
+     "g": "Descubre culturas donde la comida del mediodía es el corazón largo, cálido y compartido del día.",
+     "p": [
+      "En España se suele comer hacia las dos de la tarde y la comida puede durar bastante más de una hora.",
+      "En México, la comida principal se sirve tradicionalmente por la tarde, con sopa, plato fuerte y postre.",
+      "Donde la comida es la principal, la cena suele ser más ligera y la tarde, algo más tranquila."
+     ],
+     "q": "¿Dónde vives es más importante la comida del mediodía o la cena, y cuál prefieres?",
+     "c": "Hoy dedica un poco más de tiempo a comer: siéntate, deja el móvil y disfruta sin prisa."
+    },
+    "fr": {
+     "t": "Le déjeuner, repas principal",
+     "g": "Découvre des cultures où le déjeuner est le cœur long, chaleureux et partagé de la journée.",
+     "p": [
+      "En Espagne, on déjeune souvent vers quatorze heures et le repas peut durer bien plus d'une heure.",
+      "Au Mexique, le repas principal, la comida, est servi l'après-midi avec soupe, plat et dessert.",
+      "Là où le déjeuner est le repas principal, le dîner est souvent plus léger et l'après-midi plus calme."
+     ],
+     "q": "Chez toi, le repas principal est-il le déjeuner ou le dîner, et lequel préfères-tu ?",
+     "c": "Aujourd'hui, accorde un peu plus de temps à ton déjeuner : assieds-toi, range ton téléphone et savoure."
+    },
+    "it": {
+     "t": "Il pranzo come pasto principale",
+     "g": "Scopri le culture in cui il pranzo è il cuore lungo, caldo e condiviso della giornata.",
+     "p": [
+      "In Spagna si pranza spesso verso le due del pomeriggio e il pasto può durare ben più di un'ora.",
+      "In Messico il pasto principale, la comida, si serve tradizionalmente nel pomeriggio con zuppa, secondo e dolce.",
+      "Dove il pranzo è il pasto principale, la cena è di solito più leggera e il pomeriggio più tranquillo."
+     ],
+     "q": "Dove vivi il pasto principale è il pranzo o la cena, e quale preferisci?",
+     "c": "Oggi dedica al pranzo un po' più di tempo: siediti, metti via il telefono e goditelo con calma."
+    },
+    "pt": {
+     "t": "O almoço como refeição principal",
+     "g": "Descobre culturas onde o almoço é o coração longo, caloroso e partilhado do dia.",
+     "p": [
+      "Em Espanha almoça-se muitas vezes por volta das duas da tarde e a refeição pode durar bem mais de uma hora.",
+      "No México a refeição principal, la comida, é tradicionalmente servida à tarde, com sopa, prato principal e sobremesa.",
+      "Onde o almoço é a refeição principal, o jantar costuma ser mais leve e a tarde mais calma."
+     ],
+     "q": "Onde vives, a refeição principal é o almoço ou o jantar, e qual preferes?",
+     "c": "Hoje dá um pouco mais de tempo ao almoço: senta-te, guarda o telemóvel e saboreia com calma."
+    },
+    "pt_BR": {
+     "t": "O almoço como refeição principal",
+     "g": "Descubra culturas em que o almoço é o coração longo, caloroso e compartilhado do dia.",
+     "p": [
+      "Na Espanha, almoça-se muitas vezes por volta das duas da tarde e a refeição pode durar bem mais de uma hora.",
+      "No México, a refeição principal, la comida, é tradicionalmente servida à tarde, com sopa, prato principal e sobremesa.",
+      "Onde o almoço é a refeição principal, o jantar costuma ser mais leve e a tarde mais tranquila."
+     ],
+     "q": "Onde você mora, a refeição principal é o almoço ou o jantar, e qual você prefere?",
+     "c": "Hoje dê um pouco mais de tempo ao almoço: sente-se, guarde o celular e saboreie com calma."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Dinner times compared",
+     "g": "Find out why dinner can be early evening in Norway and after nine at night in Spain.",
+     "p": [
+      "In Norway and other Nordic countries many families eat dinner around five or six in the evening.",
+      "In Spain dinner often starts at nine or even ten, after a late lunch and an afternoon snack.",
+      "Meal times follow work hours, daylight and climate, so neither early nor late is the right way."
+     ],
+     "q": "What time is dinner usually served in your home, and would you enjoy a much earlier or later one?",
+     "c": "Find out the usual dinner time in a country you would love to visit and imagine your day there."
+    },
+    "de": {
+     "t": "Abendessenszeiten im Vergleich",
+     "g": "Finde heraus, warum man in Norwegen früh am Abend und in Spanien erst nach neun zu Abend isst.",
+     "p": [
+      "In Norwegen und anderen nordischen Ländern essen viele Familien gegen fünf oder sechs Uhr zu Abend.",
+      "In Spanien beginnt das Abendessen oft um neun oder sogar zehn, nach spätem Mittagessen und Nachmittagssnack.",
+      "Essenszeiten folgen Arbeitszeiten, Tageslicht und Klima, deshalb ist weder früh noch spät der richtige Weg."
+     ],
+     "q": "Wann gibt es bei dir meist Abendessen, und würde dir eine viel frühere oder spätere Zeit gefallen?",
+     "c": "Finde die übliche Abendessenszeit in einem Land heraus, das du gern besuchen würdest, und stell dir deinen Tag dort vor."
+    },
+    "es": {
+     "t": "Horarios de cena comparados",
+     "g": "Descubre por qué se cena al atardecer en Noruega y después de las nueve en España.",
+     "p": [
+      "En Noruega y otros países nórdicos muchas familias cenan hacia las cinco o las seis de la tarde.",
+      "En España la cena suele empezar a las nueve o incluso a las diez, tras una comida tardía y una merienda.",
+      "Los horarios siguen el trabajo, la luz del día y el clima, así que ni temprano ni tarde es la forma correcta."
+     ],
+     "q": "¿A qué hora se cena normalmente en tu casa? ¿Te gustaría cenar mucho antes o mucho después?",
+     "c": "Averigua a qué hora se cena en un país que te encantaría visitar e imagina tu día allí."
+    },
+    "fr": {
+     "t": "Les heures du dîner comparées",
+     "g": "Découvre pourquoi on dîne en début de soirée en Norvège et après vingt et une heures en Espagne.",
+     "p": [
+      "En Norvège et dans d'autres pays nordiques, beaucoup de familles dînent vers dix-sept ou dix-huit heures.",
+      "En Espagne, le dîner commence souvent à vingt et une heures, voire vingt-deux, après un déjeuner tardif et un goûter.",
+      "Les horaires suivent le travail, la lumière du jour et le climat : ni tôt ni tard n'est la bonne façon."
+     ],
+     "q": "À quelle heure dîne-t-on chez toi, et aimerais-tu dîner beaucoup plus tôt ou plus tard ?",
+     "c": "Cherche l'heure habituelle du dîner dans un pays que tu rêves de visiter et imagine ta journée là-bas."
+    },
+    "it": {
+     "t": "Gli orari della cena a confronto",
+     "g": "Scopri perché in Norvegia si cena nel tardo pomeriggio e in Spagna dopo le nove di sera.",
+     "p": [
+      "In Norvegia e negli altri paesi nordici molte famiglie cenano verso le cinque o le sei.",
+      "In Spagna la cena inizia spesso alle nove o persino alle dieci, dopo un pranzo tardi e una merenda.",
+      "Gli orari seguono il lavoro, la luce del giorno e il clima, quindi né presto né tardi è il modo giusto."
+     ],
+     "q": "A che ora si cena di solito a casa tua, e ti piacerebbe cenare molto prima o molto dopo?",
+     "c": "Scopri l'orario abituale della cena in un paese che sogni di visitare e immagina la tua giornata lì."
+    },
+    "pt": {
+     "t": "Horários de jantar comparados",
+     "g": "Descobre porque é que se janta ao fim da tarde na Noruega e depois das nove em Espanha.",
+     "p": [
+      "Na Noruega e noutros países nórdicos muitas famílias jantam por volta das cinco ou seis da tarde.",
+      "Em Espanha o jantar começa muitas vezes às nove ou até às dez, depois de um almoço tardio e de um lanche.",
+      "Os horários seguem o trabalho, a luz do dia e o clima, por isso nem cedo nem tarde é a forma certa."
+     ],
+     "q": "A que horas se janta normalmente em tua casa, e gostavas de jantar muito mais cedo ou mais tarde?",
+     "c": "Descobre a hora habitual do jantar num país que adoravas visitar e imagina o teu dia lá."
+    },
+    "pt_BR": {
+     "t": "Horários de jantar comparados",
+     "g": "Descubra por que se janta no fim da tarde na Noruega e depois das nove na Espanha.",
+     "p": [
+      "Na Noruega e em outros países nórdicos muitas famílias jantam por volta das cinco ou seis da tarde.",
+      "Na Espanha o jantar começa muitas vezes às nove ou até às dez, depois de um almoço tardio e de um lanche.",
+      "Os horários seguem o trabalho, a luz do dia e o clima, então nem cedo nem tarde é o jeito certo."
+     ],
+     "q": "Que horas costuma sair o jantar na sua casa, e você gostaria de jantar bem mais cedo ou mais tarde?",
+     "c": "Descubra o horário habitual do jantar em um país que você adoraria visitar e imagine seu dia lá."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Hands, chopsticks or cutlery",
+     "g": "Meet the three great eating traditions and where each one is used.",
+     "p": [
+      "Eating with the hand is common in India, the Middle East and East Africa, usually with the right hand only.",
+      "Chopsticks are used in China, Japan, Korea and Vietnam; resting them upright in rice is seen as impolite in Japan.",
+      "Knife and fork are standard across Europe and the Americas, though the way people hold them differs."
+     ],
+     "q": "Which way of eating feels most natural to you, and have you tried the other two?",
+     "c": "At your next suitable meal, try eating with chopsticks or with your right hand, with respect and curiosity."
+    },
+    "de": {
+     "t": "Hände, Stäbchen oder Besteck",
+     "g": "Lerne die drei großen Esstraditionen kennen und wo sie jeweils üblich sind.",
+     "p": [
+      "Mit der Hand isst man häufig in Indien, im Nahen Osten und in Ostafrika, meist nur mit der rechten Hand.",
+      "Stäbchen nutzt man in China, Japan, Korea und Vietnam; sie senkrecht in den Reis zu stecken gilt in Japan als unhöflich.",
+      "Messer und Gabel sind in Europa und Amerika Standard, doch man hält sie unterschiedlich."
+     ],
+     "q": "Welche Art zu essen fühlt sich für dich am natürlichsten an, und hast du die anderen beiden probiert?",
+     "c": "Versuch bei einer passenden Mahlzeit, mit Stäbchen oder der rechten Hand zu essen, mit Respekt und Neugier."
+    },
+    "es": {
+     "t": "Manos, palillos o cubiertos",
+     "g": "Conoce las tres grandes tradiciones para comer y dónde se usa cada una.",
+     "p": [
+      "Comer con la mano es habitual en India, Oriente Medio y África oriental, normalmente solo con la derecha.",
+      "Los palillos se usan en China, Japón, Corea y Vietnam; clavarlos de pie en el arroz se considera descortés en Japón.",
+      "Cuchillo y tenedor son lo normal en Europa y América, aunque la forma de sujetarlos varía."
+     ],
+     "q": "¿Qué forma de comer te resulta más natural y has probado las otras dos?",
+     "c": "En tu próxima comida adecuada, prueba a comer con palillos o con la mano derecha, con respeto y curiosidad."
+    },
+    "fr": {
+     "t": "Mains, baguettes ou couverts",
+     "g": "Découvre les trois grandes traditions pour manger et où chacune est utilisée.",
+     "p": [
+      "Manger avec la main est courant en Inde, au Moyen-Orient et en Afrique de l'Est, en général avec la main droite.",
+      "Les baguettes servent en Chine, au Japon, en Corée et au Vietnam ; les planter dans le riz est impoli au Japon.",
+      "Couteau et fourchette sont la norme en Europe et dans les Amériques, mais on ne les tient pas partout pareil."
+     ],
+     "q": "Quelle façon de manger te semble la plus naturelle, et as-tu essayé les deux autres ?",
+     "c": "À ton prochain repas adapté, essaie de manger avec des baguettes ou la main droite, avec respect et curiosité."
+    },
+    "it": {
+     "t": "Mani, bacchette o posate",
+     "g": "Conosci le tre grandi tradizioni per mangiare e dove si usa ciascuna.",
+     "p": [
+      "Mangiare con la mano è comune in India, Medio Oriente e Africa orientale, di solito solo con la destra.",
+      "Le bacchette si usano in Cina, Giappone, Corea e Vietnam; piantarle dritte nel riso è scortese in Giappone.",
+      "Coltello e forchetta sono la norma in Europa e nelle Americhe, anche se si impugnano in modi diversi."
+     ],
+     "q": "Quale modo di mangiare ti sembra più naturale, e hai provato gli altri due?",
+     "c": "Al prossimo pasto adatto, prova a mangiare con le bacchette o con la mano destra, con rispetto e curiosità."
+    },
+    "pt": {
+     "t": "Mãos, pauzinhos ou talheres",
+     "g": "Conhece as três grandes tradições à mesa e onde cada uma se usa.",
+     "p": [
+      "Comer com a mão é comum na Índia, no Médio Oriente e na África Oriental, normalmente só com a direita.",
+      "Os pauzinhos usam-se na China, no Japão, na Coreia e no Vietname; espetá-los no arroz é indelicado no Japão.",
+      "Faca e garfo são a norma na Europa e nas Américas, embora a forma de os segurar varie."
+     ],
+     "q": "Que forma de comer te parece mais natural, e já experimentaste as outras duas?",
+     "c": "Na próxima refeição adequada, experimenta comer com pauzinhos ou com a mão direita, com respeito e curiosidade."
+    },
+    "pt_BR": {
+     "t": "Mãos, hashis ou talheres",
+     "g": "Conheça as três grandes tradições à mesa e onde cada uma é usada.",
+     "p": [
+      "Comer com a mão é comum na Índia, no Oriente Médio e na África Oriental, normalmente só com a direita.",
+      "Os hashis são usados na China, no Japão, na Coreia e no Vietnã; espetá-los em pé no arroz é falta de educação no Japão.",
+      "Garfo e faca são o padrão na Europa e nas Américas, embora o jeito de segurar varie."
+     ],
+     "q": "Qual forma de comer parece mais natural para você, e já experimentou as outras duas?",
+     "c": "Na próxima refeição adequada, experimente comer de hashi ou com a mão direita, com respeito e curiosidade."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Bread around the world",
+     "g": "See how bread, in many shapes, is a cultural symbol almost everywhere.",
+     "p": [
+      "The French baguette, Indian naan and Middle Eastern pita are daily companions at many tables.",
+      "In Mexico the corn tortilla has fed people for thousands of years, and in Ethiopia injera is made from teff.",
+      "Injera works as plate and spoon at once: you tear a piece and use it to pick up the food."
+     ],
+     "q": "Which bread do you eat most often, and which one from abroad would you love to try?",
+     "c": "Try a bread you have never eaten before, or look up how one traditional bread is made."
+    },
+    "de": {
+     "t": "Brot rund um die Welt",
+     "g": "Sieh, wie Brot in vielen Formen fast überall ein kulturelles Symbol ist.",
+     "p": [
+      "Französisches Baguette, indisches Naan und Fladenbrot aus dem Nahen Osten begleiten viele Tische täglich.",
+      "In Mexiko ernährt die Maistortilla die Menschen seit Jahrtausenden, in Äthiopien wird Injera aus Teff gemacht.",
+      "Injera ist Teller und Löffel zugleich: Man reißt ein Stück ab und greift damit das Essen."
+     ],
+     "q": "Welches Brot isst du am häufigsten, und welches aus dem Ausland würdest du gern probieren?",
+     "c": "Probiere ein Brot, das du noch nie gegessen hast, oder lies nach, wie ein traditionelles Brot gemacht wird."
+    },
+    "es": {
+     "t": "El pan en el mundo",
+     "g": "Descubre cómo el pan, en muchas formas, es un símbolo cultural casi en todas partes.",
+     "p": [
+      "La baguette francesa, el naan indio y el pan de pita de Oriente Medio acompañan a diario muchas mesas.",
+      "En México la tortilla de maíz alimenta desde hace miles de años, y en Etiopía la injera se hace con teff.",
+      "La injera es plato y cuchara a la vez: se corta un trozo con la mano y se usa para tomar la comida."
+     ],
+     "q": "¿Qué pan comes más a menudo y cuál de otro país te encantaría probar?",
+     "c": "Prueba un pan que nunca hayas comido o busca cómo se prepara un pan tradicional."
+    },
+    "fr": {
+     "t": "Le pain dans le monde",
+     "g": "Vois comment le pain, sous mille formes, est presque partout un symbole culturel.",
+     "p": [
+      "La baguette française, le naan indien et la pita du Moyen-Orient accompagnent chaque jour de nombreuses tables.",
+      "Au Mexique, la tortilla de maïs nourrit les gens depuis des millénaires, en Éthiopie l'injera est faite de teff.",
+      "L'injera sert à la fois d'assiette et de cuillère : on en déchire un morceau pour saisir la nourriture."
+     ],
+     "q": "Quel pain manges-tu le plus souvent, et lequel venu d'ailleurs aimerais-tu goûter ?",
+     "c": "Goûte un pain que tu n'as jamais mangé ou renseigne-toi sur la fabrication d'un pain traditionnel."
+    },
+    "it": {
+     "t": "Il pane nel mondo",
+     "g": "Scopri come il pane, in tante forme, è quasi ovunque un simbolo culturale.",
+     "p": [
+      "La baguette francese, il naan indiano e la pita mediorientale accompagnano ogni giorno molte tavole.",
+      "In Messico la tortilla di mais nutre le persone da millenni, in Etiopia l'injera si prepara con il teff.",
+      "L'injera è piatto e cucchiaio insieme: se ne strappa un pezzo e lo si usa per prendere il cibo."
+     ],
+     "q": "Quale pane mangi più spesso, e quale di un altro paese ti piacerebbe assaggiare?",
+     "c": "Assaggia un pane che non hai mai mangiato o informati su come si prepara un pane tradizionale."
+    },
+    "pt": {
+     "t": "O pão pelo mundo",
+     "g": "Vê como o pão, em muitas formas, é um símbolo cultural em quase todo o lado.",
+     "p": [
+      "A baguete francesa, o naan indiano e o pão pita do Médio Oriente acompanham todos os dias muitas mesas.",
+      "No México a tortilha de milho alimenta as pessoas há milhares de anos, e na Etiópia a injera faz-se com teff.",
+      "A injera é prato e colher ao mesmo tempo: rasga-se um pedaço e usa-se para apanhar a comida."
+     ],
+     "q": "Que pão comes mais vezes, e qual de outro país adoravas provar?",
+     "c": "Prova um pão que nunca comeste ou pesquisa como se faz um pão tradicional."
+    },
+    "pt_BR": {
+     "t": "O pão pelo mundo",
+     "g": "Veja como o pão, em muitas formas, é um símbolo cultural em quase todo lugar.",
+     "p": [
+      "A baguete francesa, o naan indiano e o pão sírio do Oriente Médio acompanham todos os dias muitas mesas.",
+      "No México a tortilha de milho alimenta as pessoas há milhares de anos, e na Etiópia a injera é feita de teff.",
+      "A injera é prato e colher ao mesmo tempo: você rasga um pedaço e usa para pegar a comida."
+     ],
+     "q": "Que pão você come com mais frequência, e qual de outro país adoraria provar?",
+     "c": "Prove um pão que você nunca comeu ou pesquise como se faz um pão tradicional."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Rice cultures",
+     "g": "Learn how rice shapes meals, language and farming across much of Asia.",
+     "p": [
+      "In Japanese the word gohan means both cooked rice and a meal, showing how central rice is.",
+      "Terraced rice fields in places like Bali and the northern Philippines are shared works of many generations.",
+      "From Indian biryani to Korean bibimbap and Thai sticky rice, each region gives rice its own character."
+     ],
+     "q": "How often do you eat rice, and what is your favourite rice dish?",
+     "c": "Cook or order a rice dish from a culture you know little about and find out where it comes from."
+    },
+    "de": {
+     "t": "Reiskulturen",
+     "g": "Erfahre, wie Reis in weiten Teilen Asiens Mahlzeiten, Sprache und Landwirtschaft prägt.",
+     "p": [
+      "Im Japanischen bedeutet gohan sowohl gekochter Reis als auch Mahlzeit, so zentral ist Reis.",
+      "Reisterrassen etwa auf Bali und im Norden der Philippinen sind das gemeinsame Werk vieler Generationen.",
+      "Von indischem Biryani über koreanisches Bibimbap bis zu thailändischem Klebreis: Jede Region prägt den Reis anders."
+     ],
+     "q": "Wie oft isst du Reis, und was ist dein liebstes Reisgericht?",
+     "c": "Koche oder bestelle ein Reisgericht aus einer Kultur, die du kaum kennst, und finde seine Herkunft heraus."
+    },
+    "es": {
+     "t": "Culturas del arroz",
+     "g": "Aprende cómo el arroz da forma a las comidas, al idioma y a la agricultura en gran parte de Asia.",
+     "p": [
+      "En japonés la palabra gohan significa a la vez arroz cocido y comida, lo que muestra su importancia.",
+      "Las terrazas de arroz de lugares como Bali o el norte de Filipinas son obra compartida de muchas generaciones.",
+      "Del biryani indio al bibimbap coreano y el arroz glutinoso tailandés, cada región le da su carácter."
+     ],
+     "q": "¿Con qué frecuencia comes arroz y cuál es tu plato de arroz favorito?",
+     "c": "Cocina o pide un plato de arroz de una cultura que conozcas poco y averigua de dónde viene."
+    },
+    "fr": {
+     "t": "Les cultures du riz",
+     "g": "Découvre comment le riz façonne les repas, la langue et l'agriculture dans une grande partie de l'Asie.",
+     "p": [
+      "En japonais, le mot gohan désigne à la fois le riz cuit et le repas, preuve de sa place centrale.",
+      "Les rizières en terrasses de Bali ou du nord des Philippines sont l'œuvre commune de nombreuses générations.",
+      "Du biryani indien au bibimbap coréen et au riz gluant thaï, chaque région donne au riz son caractère."
+     ],
+     "q": "À quelle fréquence manges-tu du riz, et quel est ton plat de riz préféré ?",
+     "c": "Cuisine ou commande un plat de riz d'une culture que tu connais peu et découvre son origine."
+    },
+    "it": {
+     "t": "Le culture del riso",
+     "g": "Scopri come il riso plasma pasti, lingua e agricoltura in gran parte dell'Asia.",
+     "p": [
+      "In giapponese la parola gohan significa sia riso cotto sia pasto, segno di quanto sia centrale.",
+      "Le risaie a terrazza di luoghi come Bali e il nord delle Filippine sono opera comune di tante generazioni.",
+      "Dal biryani indiano al bibimbap coreano fino al riso glutinoso thailandese, ogni regione gli dà il suo carattere."
+     ],
+     "q": "Quanto spesso mangi riso, e qual è il tuo piatto di riso preferito?",
+     "c": "Cucina o ordina un piatto di riso di una cultura che conosci poco e scopri da dove viene."
+    },
+    "pt": {
+     "t": "Culturas do arroz",
+     "g": "Aprende como o arroz molda as refeições, a língua e a agricultura em grande parte da Ásia.",
+     "p": [
+      "Em japonês a palavra gohan quer dizer ao mesmo tempo arroz cozido e refeição, o que mostra a sua importância.",
+      "Os socalcos de arroz em sítios como Bali ou o norte das Filipinas são obra partilhada de muitas gerações.",
+      "Do biryani indiano ao bibimbap coreano e ao arroz glutinoso tailandês, cada região dá-lhe o seu carácter."
+     ],
+     "q": "Com que frequência comes arroz, e qual é o teu prato de arroz preferido?",
+     "c": "Cozinha ou pede um prato de arroz de uma cultura que conheces pouco e descobre de onde vem."
+    },
+    "pt_BR": {
+     "t": "Culturas do arroz",
+     "g": "Aprenda como o arroz molda as refeições, a língua e a agricultura em grande parte da Ásia.",
+     "p": [
+      "Em japonês a palavra gohan significa ao mesmo tempo arroz cozido e refeição, o que mostra sua importância.",
+      "Os terraços de arroz em lugares como Bali e o norte das Filipinas são obra compartilhada de muitas gerações.",
+      "Do biryani indiano ao bibimbap coreano e ao arroz glutinoso tailandês, cada região dá ao arroz seu jeito."
+     ],
+     "q": "Com que frequência você come arroz, e qual é o seu prato de arroz favorito?",
+     "c": "Cozinhe ou peça um prato de arroz de uma cultura que você conhece pouco e descubra de onde ele vem."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Tea traditions",
+     "g": "Discover four famous tea traditions and the hospitality behind each cup.",
+     "p": [
+      "British afternoon tea brings tea with sandwiches, scones and cakes, a custom from the nineteenth century.",
+      "In Morocco sweet mint tea is poured from high above the glass, creating foam and welcoming guests.",
+      "Chinese gongfu tea uses small pots and many short infusions, and Russian samovars keep water hot for long talks."
+     ],
+     "q": "How do people drink tea where you live, and is it linked to any special moment?",
+     "c": "Brew a cup of tea slowly today, paying full attention to the smell, colour and taste."
+    },
+    "de": {
+     "t": "Teetraditionen",
+     "g": "Entdecke vier berühmte Teetraditionen und die Gastfreundschaft hinter jeder Tasse.",
+     "p": [
+      "Der britische Afternoon Tea verbindet Tee mit Sandwiches, Scones und Kuchen, ein Brauch aus dem 19. Jahrhundert.",
+      "In Marokko gießt man süßen Minztee aus großer Höhe ins Glas, es schäumt, und Gäste fühlen sich willkommen.",
+      "Chinesischer Gongfu-Tee nutzt kleine Kannen und viele kurze Aufgüsse; der russische Samowar hält Wasser für lange Gespräche heiß."
+     ],
+     "q": "Wie trinkt man bei dir Tee, und ist er mit einem besonderen Moment verbunden?",
+     "c": "Bereite heute ganz langsam eine Tasse Tee zu und achte genau auf Duft, Farbe und Geschmack."
+    },
+    "es": {
+     "t": "Tradiciones del té",
+     "g": "Descubre cuatro famosas tradiciones del té y la hospitalidad que hay detrás de cada taza.",
+     "p": [
+      "El afternoon tea británico combina té con sándwiches, scones y pasteles, una costumbre del siglo XIX.",
+      "En Marruecos el té dulce con menta se sirve desde muy alto, haciendo espuma y dando la bienvenida.",
+      "El té gongfu chino usa teteras pequeñas y muchas infusiones cortas, y el samovar ruso mantiene el agua caliente para charlas largas."
+     ],
+     "q": "¿Cómo se toma el té donde vives y está ligado a algún momento especial?",
+     "c": "Prepara hoy una taza de té con calma, prestando atención a su aroma, color y sabor."
+    },
+    "fr": {
+     "t": "Les traditions du thé",
+     "g": "Découvre quatre célèbres traditions du thé et l'hospitalité derrière chaque tasse.",
+     "p": [
+      "L'afternoon tea britannique associe thé, sandwichs, scones et gâteaux, une coutume du XIXe siècle.",
+      "Au Maroc, le thé sucré à la menthe est versé de haut dans le verre pour le faire mousser et accueillir l'invité.",
+      "Le thé gongfu chinois enchaîne de courtes infusions en petite théière ; le samovar russe garde l'eau chaude pour de longues causeries."
+     ],
+     "q": "Comment boit-on le thé chez toi, et est-il lié à un moment particulier ?",
+     "c": "Prépare aujourd'hui une tasse de thé tranquillement en prêtant attention à son parfum, sa couleur et son goût."
+    },
+    "it": {
+     "t": "Le tradizioni del tè",
+     "g": "Scopri quattro celebri tradizioni del tè e l'ospitalità dietro ogni tazza.",
+     "p": [
+      "L'afternoon tea britannico unisce tè, tramezzini, scone e dolci, un'usanza nata nell'Ottocento.",
+      "In Marocco il tè dolce alla menta si versa dall'alto nel bicchiere, per fare schiuma e accogliere l'ospite.",
+      "Il tè gongfu cinese usa teiere piccole e molte infusioni brevi; il samovar russo tiene l'acqua calda per lunghe chiacchierate."
+     ],
+     "q": "Come si beve il tè dove vivi, ed è legato a qualche momento speciale?",
+     "c": "Prepara oggi una tazza di tè con calma, facendo attenzione a profumo, colore e sapore."
+    },
+    "pt": {
+     "t": "Tradições do chá",
+     "g": "Descobre quatro famosas tradições do chá e a hospitalidade por trás de cada chávena.",
+     "p": [
+      "O afternoon tea britânico junta chá, sanduíches, scones e bolos, um costume do século XIX.",
+      "Em Marrocos o chá doce de hortelã é servido de muito alto para o copo, fazendo espuma e acolhendo o convidado.",
+      "O chá gongfu chinês usa bules pequenos e muitas infusões curtas; o samovar russo mantém a água quente para longas conversas."
+     ],
+     "q": "Como se bebe chá onde vives, e está ligado a algum momento especial?",
+     "c": "Prepara hoje uma chávena de chá com calma, com atenção ao aroma, à cor e ao sabor."
+    },
+    "pt_BR": {
+     "t": "Tradições do chá",
+     "g": "Descubra quatro famosas tradições do chá e a hospitalidade por trás de cada xícara.",
+     "p": [
+      "O afternoon tea britânico junta chá, sanduíches, scones e bolos, um costume do século XIX.",
+      "No Marrocos o chá doce de hortelã é servido do alto no copo, formando espuma e recebendo bem o convidado.",
+      "O chá gongfu chinês usa bules pequenos e muitas infusões curtas; o samovar russo mantém a água quente para longas conversas."
+     ],
+     "q": "Como se toma chá onde você mora, e ele está ligado a algum momento especial?",
+     "c": "Prepare hoje uma xícara de chá com calma, prestando atenção ao aroma, à cor e ao sabor."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Coffee cultures",
+     "g": "Explore how coffee becomes a ritual in Italy, Turkey, Ethiopia and Brazil.",
+     "p": [
+      "In Italy an espresso is often drunk standing at the bar in a few sips, and cappuccino is mostly a morning drink.",
+      "Turkish coffee is boiled with very fine grounds in a small pot, and the Ethiopian ceremony roasts beans in front of guests.",
+      "In Brazil a cafezinho, a small strong coffee, is offered to visitors as a simple sign of welcome."
+     ],
+     "q": "How do you like your coffee, or what drink plays that role in your day?",
+     "c": "Make or order coffee in a style from another country today and notice how the ritual feels."
+    },
+    "de": {
+     "t": "Kaffeekulturen",
+     "g": "Entdecke, wie Kaffee in Italien, der Türkei, Äthiopien und Brasilien zum Ritual wird.",
+     "p": [
+      "In Italien trinkt man den Espresso oft im Stehen an der Bar in wenigen Schlucken; Cappuccino gibt es vor allem morgens.",
+      "Türkischer Kaffee wird mit sehr feinem Pulver im Kännchen aufgekocht; bei der äthiopischen Zeremonie röstet man Bohnen vor den Gästen.",
+      "In Brasilien bietet man Besuchern einen cafezinho an, einen kleinen starken Kaffee als einfaches Willkommen."
+     ],
+     "q": "Wie magst du deinen Kaffee, oder welches Getränk spielt diese Rolle in deinem Tag?",
+     "c": "Bereite oder bestelle heute einen Kaffee nach Art eines anderen Landes und achte darauf, wie sich das Ritual anfühlt."
+    },
+    "es": {
+     "t": "Culturas del café",
+     "g": "Explora cómo el café se convierte en ritual en Italia, Turquía, Etiopía y Brasil.",
+     "p": [
+      "En Italia el espresso se toma a menudo de pie en la barra en pocos sorbos, y el capuchino es sobre todo de mañana.",
+      "El café turco se hierve con molienda muy fina en un cazo pequeño, y en la ceremonia etíope se tuestan los granos ante los invitados.",
+      "En Brasil se ofrece a las visitas un cafezinho, un café pequeño y fuerte, como sencilla señal de bienvenida."
+     ],
+     "q": "¿Cómo te gusta el café o qué bebida cumple ese papel en tu día?",
+     "c": "Prepara o pide hoy un café al estilo de otro país y fíjate en cómo se siente el ritual."
+    },
+    "fr": {
+     "t": "Les cultures du café",
+     "g": "Explore comment le café devient un rituel en Italie, en Turquie, en Éthiopie et au Brésil.",
+     "p": [
+      "En Italie, l'espresso se boit souvent debout au comptoir en quelques gorgées, et le cappuccino surtout le matin.",
+      "Le café turc bout avec une mouture très fine dans une petite cafetière ; la cérémonie éthiopienne torréfie les grains devant les invités.",
+      "Au Brésil, on offre aux visiteurs un cafezinho, petit café fort, simple signe de bienvenue."
+     ],
+     "q": "Comment aimes-tu ton café, ou quelle boisson joue ce rôle dans ta journée ?",
+     "c": "Prépare ou commande aujourd'hui un café à la manière d'un autre pays et observe ce que ce rituel te fait."
+    },
+    "it": {
+     "t": "Le culture del caffè",
+     "g": "Esplora come il caffè diventa un rito in Italia, Turchia, Etiopia e Brasile.",
+     "p": [
+      "In Italia l'espresso si beve spesso in piedi al bancone in pochi sorsi, e il cappuccino soprattutto al mattino.",
+      "Il caffè turco si fa bollire con una macinatura finissima in un pentolino; nella cerimonia etiope i chicchi si tostano davanti agli ospiti.",
+      "In Brasile si offre agli ospiti un cafezinho, un caffè piccolo e forte, come semplice segno di benvenuto."
+     ],
+     "q": "Come ti piace il caffè, o quale bevanda ha questo ruolo nella tua giornata?",
+     "c": "Prepara o ordina oggi un caffè nello stile di un altro paese e nota come ti fa sentire il rito."
+    },
+    "pt": {
+     "t": "Culturas do café",
+     "g": "Explora como o café se torna um ritual em Itália, na Turquia, na Etiópia e no Brasil.",
+     "p": [
+      "Em Itália o espresso bebe-se muitas vezes de pé ao balcão em poucos goles, e o cappuccino é sobretudo de manhã.",
+      "O café turco ferve com moagem muito fina num pequeno bule; na cerimónia etíope os grãos são torrados à frente dos convidados.",
+      "No Brasil oferece-se às visitas um cafezinho, um café pequeno e forte, como simples sinal de boas-vindas."
+     ],
+     "q": "Como gostas do teu café, ou que bebida tem esse papel no teu dia?",
+     "c": "Prepara ou pede hoje um café ao estilo de outro país e repara em como te sentes com o ritual."
+    },
+    "pt_BR": {
+     "t": "Culturas do café",
+     "g": "Explore como o café vira ritual na Itália, na Turquia, na Etiópia e no Brasil.",
+     "p": [
+      "Na Itália o espresso costuma ser tomado em pé no balcão em poucos goles, e o cappuccino é mais coisa da manhã.",
+      "O café turco é fervido com pó bem fino numa pequena panelinha; na cerimônia etíope os grãos são torrados na frente dos convidados.",
+      "No Brasil, oferecer um cafezinho à visita é um gesto simples e carinhoso de boas-vindas."
+     ],
+     "q": "Como você gosta do seu café, ou que bebida tem esse papel no seu dia?",
+     "c": "Prepare ou peça hoje um café no estilo de outro país e repare em como você se sente com o ritual."
+    }
+   }
+  }
+ ]
+}

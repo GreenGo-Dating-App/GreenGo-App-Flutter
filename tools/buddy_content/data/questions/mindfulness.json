@@ -1,0 +1,1305 @@
+{
+"topic": "mindfulness",
+"questions": [
+{
+"id": "mindfulness-001",
+"lv": "any",
+"i18n": {
+"en": "When do you feel most calm and present during your day?",
+"de": "Wann fühlst du dich im Laufe des Tages am ruhigsten und präsentesten?",
+"es": "¿En qué momento del día te sientes más tranquilo y presente?",
+"fr": "À quel moment de la journée te sens-tu le plus calme et présent ?",
+"it": "In quale momento della giornata ti senti più calmo e presente?",
+"pt": "Em que momento do dia te sentes mais calmo e presente?",
+"pt_BR": "Em que momento do dia você se sente mais calmo e presente?"
+}
+},
+{
+"id": "mindfulness-002",
+"lv": "any",
+"i18n": {
+"en": "What usually pulls your attention away when you try to focus?",
+"de": "Was lenkt dich meistens ab, wenn du dich konzentrieren möchtest?",
+"es": "¿Qué suele distraerte cuando intentas concentrarte?",
+"fr": "Qu'est-ce qui détourne le plus souvent ton attention quand tu essaies de te concentrer ?",
+"it": "Cosa ti distrae di solito quando cerchi di concentrarti?",
+"pt": "O que costuma desviar a tua atenção quando tentas concentrar-te?",
+"pt_BR": "O que costuma tirar sua atenção quando você tenta se concentrar?"
+}
+},
+{
+"id": "mindfulness-003",
+"lv": "any",
+"i18n": {
+"en": "Which place makes you feel instantly relaxed, and why?",
+"de": "An welchem Ort fühlst du dich sofort entspannt, und warum?",
+"es": "¿Qué lugar te hace sentir relajado al instante, y por qué?",
+"fr": "Quel endroit te détend instantanément, et pourquoi ?",
+"it": "Quale posto ti fa sentire subito rilassato, e perché?",
+"pt": "Que lugar te faz sentir logo descontraído, e porquê?",
+"pt_BR": "Qual lugar faz você se sentir relaxado na hora, e por quê?"
+}
+},
+{
+"id": "mindfulness-004",
+"lv": "any",
+"i18n": {
+"en": "How do you usually spend the first ten minutes after waking up?",
+"de": "Wie verbringst du normalerweise die ersten zehn Minuten nach dem Aufwachen?",
+"es": "¿Cómo sueles pasar los primeros diez minutos después de despertarte?",
+"fr": "Comment passes-tu d'habitude les dix premières minutes après ton réveil ?",
+"it": "Come passi di solito i primi dieci minuti dopo il risveglio?",
+"pt": "Como costumas passar os primeiros dez minutos depois de acordar?",
+"pt_BR": "Como você costuma passar os primeiros dez minutos depois de acordar?"
+}
+},
+{
+"id": "mindfulness-005",
+"lv": "any",
+"i18n": {
+"en": "Which small everyday activity do you enjoy doing slowly?",
+"de": "Welche kleine Alltagstätigkeit machst du gern ganz langsam?",
+"es": "¿Qué pequeña actividad cotidiana disfrutas haciendo despacio?",
+"fr": "Quelle petite activité du quotidien aimes-tu faire lentement ?",
+"it": "Quale piccola attività quotidiana ti piace fare con calma?",
+"pt": "Que pequena atividade do dia a dia gostas de fazer devagar?",
+"pt_BR": "Qual pequena atividade do dia a dia você gosta de fazer devagar?"
+}
+},
+{
+"id": "mindfulness-006",
+"lv": "any",
+"i18n": {
+"en": "Which sound do you find most soothing?",
+"de": "Welches Geräusch findest du am beruhigendsten?",
+"es": "¿Qué sonido te resulta más relajante?",
+"fr": "Quel son trouves-tu le plus apaisant ?",
+"it": "Quale suono trovi più rilassante?",
+"pt": "Que som achas mais tranquilizante?",
+"pt_BR": "Qual som você acha mais relaxante?"
+}
+},
+{
+"id": "mindfulness-007",
+"lv": "any",
+"i18n": {
+"en": "How do you like to unwind at the end of a long day?",
+"de": "Wie entspannst du dich am liebsten nach einem langen Tag?",
+"es": "¿Cómo te gusta desconectar al final de un día largo?",
+"fr": "Comment aimes-tu décompresser après une longue journée ?",
+"it": "Come ti piace rilassarti alla fine di una lunga giornata?",
+"pt": "Como gostas de descontrair no fim de um dia longo?",
+"pt_BR": "Como você gosta de relaxar no fim de um dia longo?"
+}
+},
+{
+"id": "mindfulness-008",
+"lv": "any",
+"i18n": {
+"en": "When did you last fully enjoy a meal without any distractions?",
+"de": "Wann hast du zuletzt ein Essen ganz ohne Ablenkung genossen?",
+"es": "¿Cuándo fue la última vez que disfrutaste de una comida sin ninguna distracción?",
+"fr": "Quand as-tu savouré un repas sans aucune distraction pour la dernière fois ?",
+"it": "Quando è stata l'ultima volta che ti sei goduto un pasto senza distrazioni?",
+"pt": "Quando foi a última vez que saboreaste uma refeição sem distrações?",
+"pt_BR": "Quando foi a última vez que você curtiu uma refeição sem nenhuma distração?"
+}
+},
+{
+"id": "mindfulness-009",
+"lv": "any",
+"i18n": {
+"en": "What does a perfectly peaceful afternoon look like for you?",
+"de": "Wie sieht für dich ein perfekt friedlicher Nachmittag aus?",
+"es": "¿Cómo es para ti una tarde perfectamente tranquila?",
+"fr": "À quoi ressemble pour toi un après-midi parfaitement paisible ?",
+"it": "Com'è per te un pomeriggio perfettamente tranquillo?",
+"pt": "Como é para ti uma tarde perfeitamente tranquila?",
+"pt_BR": "Como é para você uma tarde perfeitamente tranquila?"
+}
+},
+{
+"id": "mindfulness-010",
+"lv": "any",
+"i18n": {
+"en": "Which season makes you feel most awake to the world around you?",
+"de": "In welcher Jahreszeit nimmst du die Welt um dich herum am wachsten wahr?",
+"es": "¿En qué estación del año te sientes más atento al mundo que te rodea?",
+"fr": "Quelle saison te rend le plus attentif au monde qui t'entoure ?",
+"it": "In quale stagione ti senti più attento al mondo che ti circonda?",
+"pt": "Em que estação do ano te sentes mais desperto para o mundo à tua volta?",
+"pt_BR": "Em qual estação do ano você se sente mais atento ao mundo ao seu redor?"
+}
+},
+{
+"id": "mindfulness-011",
+"lv": "any",
+"i18n": {
+"en": "How often do you pick up your phone without really meaning to?",
+"de": "Wie oft greifst du zum Handy, ohne es eigentlich zu wollen?",
+"es": "¿Con qué frecuencia coges el móvil sin querer realmente?",
+"fr": "À quelle fréquence prends-tu ton téléphone sans vraiment le vouloir ?",
+"it": "Quanto spesso prendi in mano il telefono senza volerlo davvero?",
+"pt": "Com que frequência pegas no telemóvel sem querer mesmo?",
+"pt_BR": "Com que frequência você pega o celular sem realmente querer?"
+}
+},
+{
+"id": "mindfulness-012",
+"lv": "any",
+"i18n": {
+"en": "What helps you feel grounded when your day gets hectic?",
+"de": "Was hilft dir, geerdet zu bleiben, wenn dein Tag hektisch wird?",
+"es": "¿Qué te ayuda a sentirte con los pies en la tierra cuando tu día se vuelve frenético?",
+"fr": "Qu'est-ce qui t'aide à rester ancré quand ta journée devient agitée ?",
+"it": "Cosa ti aiuta a restare con i piedi per terra quando la giornata diventa frenetica?",
+"pt": "O que te ajuda a manter os pés no chão quando o dia fica agitado?",
+"pt_BR": "O que te ajuda a manter os pés no chão quando o dia fica corrido?"
+}
+},
+{
+"id": "mindfulness-013",
+"lv": "any",
+"i18n": {
+"en": "Do you prefer quiet time alone or calm time with others? Why?",
+"de": "Verbringst du ruhige Zeit lieber allein oder mit anderen? Warum?",
+"es": "¿Prefieres los momentos tranquilos a solas o en compañía? ¿Por qué?",
+"fr": "Préfères-tu les moments calmes seul ou avec d'autres ? Pourquoi ?",
+"it": "Preferisci i momenti tranquilli da solo o in compagnia? Perché?",
+"pt": "Preferes momentos tranquilos sozinho ou com outras pessoas? Porquê?",
+"pt_BR": "Você prefere momentos tranquilos sozinho ou com outras pessoas? Por quê?"
+}
+},
+{
+"id": "mindfulness-014",
+"lv": "any",
+"i18n": {
+"en": "Which smell instantly brings back a good memory for you?",
+"de": "Welcher Duft weckt bei dir sofort eine schöne Erinnerung?",
+"es": "¿Qué olor te trae al instante un buen recuerdo?",
+"fr": "Quelle odeur te rappelle instantanément un bon souvenir ?",
+"it": "Quale profumo ti riporta subito alla mente un bel ricordo?",
+"pt": "Que cheiro te traz logo uma boa recordação?",
+"pt_BR": "Qual cheiro traz na hora uma boa lembrança para você?"
+}
+},
+{
+"id": "mindfulness-015",
+"lv": "any",
+"i18n": {
+"en": "Which outdoor spot near you would be lovely for a slow, mindful walk?",
+"de": "Welcher Ort in deiner Nähe wäre schön für einen langsamen, achtsamen Spaziergang?",
+"es": "¿Qué lugar al aire libre cerca de ti sería ideal para un paseo lento y consciente?",
+"fr": "Quel endroit près de chez toi serait idéal pour une promenade lente et attentive ?",
+"it": "Quale posto all'aperto vicino a te sarebbe perfetto per una passeggiata lenta e consapevole?",
+"pt": "Que sítio ao ar livre perto de ti seria ótimo para um passeio lento e consciente?",
+"pt_BR": "Qual lugar ao ar livre perto de você seria ótimo para uma caminhada lenta e consciente?"
+}
+},
+{
+"id": "mindfulness-016",
+"lv": "any",
+"i18n": {
+"en": "What do you notice first when you step outside in the morning?",
+"de": "Was nimmst du als Erstes wahr, wenn du morgens nach draußen gehst?",
+"es": "¿Qué es lo primero que notas cuando sales a la calle por la mañana?",
+"fr": "Que remarques-tu en premier quand tu sors le matin ?",
+"it": "Qual è la prima cosa che noti quando esci la mattina?",
+"pt": "Qual é a primeira coisa que notas quando sais de casa de manhã?",
+"pt_BR": "Qual é a primeira coisa que você nota quando sai de casa de manhã?"
+}
+},
+{
+"id": "mindfulness-017",
+"lv": "any",
+"i18n": {
+"en": "How would your friends describe your pace of life?",
+"de": "Wie würden deine Freunde dein Lebenstempo beschreiben?",
+"es": "¿Cómo describirían tus amigos tu ritmo de vida?",
+"fr": "Comment tes amis décriraient-ils ton rythme de vie ?",
+"it": "Come descriverebbero i tuoi amici il tuo ritmo di vita?",
+"pt": "Como é que os teus amigos descreveriam o teu ritmo de vida?",
+"pt_BR": "Como seus amigos descreveriam o seu ritmo de vida?"
+}
+},
+{
+"id": "mindfulness-018",
+"lv": "any",
+"i18n": {
+"en": "Which hobby makes you completely forget about time?",
+"de": "Bei welchem Hobby vergisst du die Zeit völlig?",
+"es": "¿Qué afición te hace olvidarte por completo del tiempo?",
+"fr": "Quel loisir te fait complètement oublier le temps ?",
+"it": "Quale hobby ti fa dimenticare completamente il tempo?",
+"pt": "Que passatempo te faz esquecer completamente o tempo?",
+"pt_BR": "Qual hobby faz você esquecer completamente do tempo?"
+}
+},
+{
+"id": "mindfulness-019",
+"lv": "any",
+"i18n": {
+"en": "Which part of your daily routine would you like to make calmer?",
+"de": "Welchen Teil deiner Tagesroutine würdest du gern ruhiger gestalten?",
+"es": "¿Qué parte de tu rutina diaria te gustaría hacer más tranquila?",
+"fr": "Quelle partie de ta routine quotidienne aimerais-tu rendre plus calme ?",
+"it": "Quale parte della tua routine quotidiana vorresti rendere più tranquilla?",
+"pt": "Que parte da tua rotina diária gostavas de tornar mais calma?",
+"pt_BR": "Qual parte da sua rotina diária você gostaria de deixar mais calma?"
+}
+},
+{
+"id": "mindfulness-020",
+"lv": "any",
+"i18n": {
+"en": "What does slowing down mean to you?",
+"de": "Was bedeutet Entschleunigung für dich?",
+"es": "¿Qué significa para ti bajar el ritmo?",
+"fr": "Que signifie ralentir pour toi ?",
+"it": "Cosa significa per te rallentare?",
+"pt": "O que significa para ti abrandar?",
+"pt_BR": "O que significa desacelerar para você?"
+}
+},
+{
+"id": "mindfulness-021",
+"lv": "any",
+"i18n": {
+"en": "When did you last watch the sky just for the fun of it?",
+"de": "Wann hast du zuletzt einfach so in den Himmel geschaut?",
+"es": "¿Cuándo fue la última vez que miraste el cielo solo por placer?",
+"fr": "Quand as-tu regardé le ciel juste pour le plaisir pour la dernière fois ?",
+"it": "Quando è stata l'ultima volta che hai guardato il cielo solo per piacere?",
+"pt": "Quando foi a última vez que olhaste para o céu só por prazer?",
+"pt_BR": "Quando foi a última vez que você olhou para o céu só por prazer?"
+}
+},
+{
+"id": "mindfulness-022",
+"lv": "any",
+"i18n": {
+"en": "What is your favourite way to take a short break?",
+"de": "Wie machst du am liebsten eine kurze Pause?",
+"es": "¿Cuál es tu forma favorita de hacer una pausa corta?",
+"fr": "Quelle est ta façon préférée de faire une petite pause ?",
+"it": "Qual è il tuo modo preferito di fare una breve pausa?",
+"pt": "Qual é a tua maneira preferida de fazer uma pequena pausa?",
+"pt_BR": "Qual é o seu jeito favorito de fazer uma pausa rápida?"
+}
+},
+{
+"id": "mindfulness-023",
+"lv": "any",
+"i18n": {
+"en": "Which drink do you like to enjoy slowly, and when?",
+"de": "Welches Getränk genießt du gern langsam, und wann?",
+"es": "¿Qué bebida te gusta disfrutar despacio, y cuándo?",
+"fr": "Quelle boisson aimes-tu savourer lentement, et à quel moment ?",
+"it": "Quale bevanda ti piace gustare con calma, e quando?",
+"pt": "Que bebida gostas de saborear devagar, e quando?",
+"pt_BR": "Qual bebida você gosta de saborear devagar, e quando?"
+}
+},
+{
+"id": "mindfulness-024",
+"lv": "any",
+"i18n": {
+"en": "How does your body tell you that you need a rest?",
+"de": "Woran merkst du an deinem Körper, dass du eine Pause brauchst?",
+"es": "¿Cómo te avisa tu cuerpo de que necesitas descansar?",
+"fr": "Comment ton corps te signale-t-il que tu as besoin de repos ?",
+"it": "In che modo il tuo corpo ti dice che hai bisogno di riposare?",
+"pt": "Como é que o teu corpo te avisa que precisas de descansar?",
+"pt_BR": "Como o seu corpo avisa que você precisa descansar?"
+}
+},
+{
+"id": "mindfulness-025",
+"lv": "any",
+"i18n": {
+"en": "What makes a day feel balanced for you?",
+"de": "Was macht einen Tag für dich ausgeglichen?",
+"es": "¿Qué hace que un día te parezca equilibrado?",
+"fr": "Qu'est-ce qui rend une journée équilibrée pour toi ?",
+"it": "Cosa rende per te una giornata equilibrata?",
+"pt": "O que torna um dia equilibrado para ti?",
+"pt_BR": "O que faz um dia parecer equilibrado para você?"
+}
+},
+{
+"id": "mindfulness-026",
+"lv": "any",
+"i18n": {
+"en": "Which music helps you relax or focus?",
+"de": "Welche Musik hilft dir, dich zu entspannen oder zu konzentrieren?",
+"es": "¿Qué música te ayuda a relajarte o a concentrarte?",
+"fr": "Quelle musique t'aide à te détendre ou à te concentrer ?",
+"it": "Quale musica ti aiuta a rilassarti o a concentrarti?",
+"pt": "Que música te ajuda a relaxar ou a concentrar-te?",
+"pt_BR": "Qual música te ajuda a relaxar ou a se concentrar?"
+}
+},
+{
+"id": "mindfulness-027",
+"lv": "any",
+"i18n": {
+"en": "What would you do with one completely free, screen-free hour?",
+"de": "Was würdest du mit einer völlig freien Stunde ohne Bildschirm anfangen?",
+"es": "¿Qué harías con una hora totalmente libre y sin pantallas?",
+"fr": "Que ferais-tu d'une heure entièrement libre et sans écran ?",
+"it": "Cosa faresti con un'ora completamente libera e senza schermi?",
+"pt": "O que farias com uma hora totalmente livre e sem ecrãs?",
+"pt_BR": "O que você faria com uma hora totalmente livre e sem telas?"
+}
+},
+{
+"id": "mindfulness-028",
+"lv": "any",
+"i18n": {
+"en": "Where do you feel most at home in nature: sea, forest, mountains or a city park?",
+"de": "Wo in der Natur fühlst du dich am wohlsten: am Meer, im Wald, in den Bergen oder im Stadtpark?",
+"es": "¿Dónde te sientes más a gusto en la naturaleza: el mar, el bosque, la montaña o un parque?",
+"fr": "Où te sens-tu le mieux dans la nature : la mer, la forêt, la montagne ou un parc en ville ?",
+"it": "Dove ti senti più a casa nella natura: mare, bosco, montagna o parco cittadino?",
+"pt": "Onde te sentes mais em casa na natureza: mar, floresta, montanha ou um jardim na cidade?",
+"pt_BR": "Onde você se sente mais em casa na natureza: mar, floresta, montanha ou um parque na cidade?"
+}
+},
+{
+"id": "mindfulness-029",
+"lv": "any",
+"i18n": {
+"en": "What small thing made you smile today?",
+"de": "Welche Kleinigkeit hat dich heute zum Lächeln gebracht?",
+"es": "¿Qué pequeña cosa te hizo sonreír hoy?",
+"fr": "Quelle petite chose t'a fait sourire aujourd'hui ?",
+"it": "Quale piccola cosa ti ha fatto sorridere oggi?",
+"pt": "Que pequena coisa te fez sorrir hoje?",
+"pt_BR": "Que coisinha fez você sorrir hoje?"
+}
+},
+{
+"id": "mindfulness-030",
+"lv": "any",
+"i18n": {
+"en": "How do you usually handle waiting in a long queue?",
+"de": "Wie gehst du normalerweise mit langem Warten in einer Schlange um?",
+"es": "¿Cómo sueles llevar las esperas en una cola larga?",
+"fr": "Comment vis-tu d'habitude l'attente dans une longue file ?",
+"it": "Come affronti di solito l'attesa in una lunga fila?",
+"pt": "Como costumas lidar com a espera numa fila longa?",
+"pt_BR": "Como você costuma lidar com a espera numa fila longa?"
+}
+},
+{
+"id": "mindfulness-031",
+"lv": "any",
+"i18n": {
+"en": "What have you noticed recently that you had never seen before?",
+"de": "Was ist dir kürzlich aufgefallen, das du vorher nie bemerkt hattest?",
+"es": "¿Qué has notado últimamente que nunca antes habías visto?",
+"fr": "Qu'as-tu remarqué récemment que tu n'avais jamais vu avant ?",
+"it": "Cosa hai notato di recente che non avevi mai visto prima?",
+"pt": "O que reparaste recentemente que nunca tinhas visto antes?",
+"pt_BR": "O que você reparou recentemente que nunca tinha visto antes?"
+}
+},
+{
+"id": "mindfulness-032",
+"lv": "any",
+"i18n": {
+"en": "Who in your life seems really calm, and what do you admire about them?",
+"de": "Wer in deinem Leben wirkt richtig gelassen, und was bewunderst du an dieser Person?",
+"es": "¿Quién en tu vida parece muy tranquilo y qué admiras de esa persona?",
+"fr": "Qui dans ta vie semble vraiment serein, et qu'admires-tu chez cette personne ?",
+"it": "Chi nella tua vita sembra davvero calmo, e cosa ammiri di quella persona?",
+"pt": "Quem na tua vida parece mesmo calmo, e o que admiras nessa pessoa?",
+"pt_BR": "Quem na sua vida parece bem calmo, e o que você admira nessa pessoa?"
+}
+},
+{
+"id": "mindfulness-033",
+"lv": "any",
+"i18n": {
+"en": "Which daily chore could you turn into a peaceful moment?",
+"de": "Welche tägliche Hausarbeit könntest du in einen friedlichen Moment verwandeln?",
+"es": "¿Qué tarea diaria podrías convertir en un momento de paz?",
+"fr": "Quelle tâche quotidienne pourrais-tu transformer en moment paisible ?",
+"it": "Quale faccenda quotidiana potresti trasformare in un momento di pace?",
+"pt": "Que tarefa diária podias transformar num momento de paz?",
+"pt_BR": "Qual tarefa diária você poderia transformar num momento de paz?"
+}
+},
+{
+"id": "mindfulness-034",
+"lv": "any",
+"i18n": {
+"en": "How do people in your culture usually relax?",
+"de": "Wie entspannen sich die Menschen in deiner Kultur normalerweise?",
+"es": "¿Cómo suele relajarse la gente en tu cultura?",
+"fr": "Comment les gens se détendent-ils généralement dans ta culture ?",
+"it": "Come si rilassano di solito le persone nella tua cultura?",
+"pt": "Como é que as pessoas costumam relaxar na tua cultura?",
+"pt_BR": "Como as pessoas costumam relaxar na sua cultura?"
+}
+},
+{
+"id": "mindfulness-035",
+"lv": "any",
+"i18n": {
+"en": "What helps you slip into a calm evening mood?",
+"de": "Was hilft dir, in eine ruhige Abendstimmung zu kommen?",
+"es": "¿Qué te ayuda a entrar en un ambiente tranquilo por la noche?",
+"fr": "Qu'est-ce qui t'aide à trouver une ambiance calme le soir ?",
+"it": "Cosa ti aiuta a entrare in un'atmosfera serale tranquilla?",
+"pt": "O que te ajuda a entrar num ambiente calmo à noite?",
+"pt_BR": "O que te ajuda a entrar num clima tranquilo à noite?"
+}
+},
+{
+"id": "mindfulness-036",
+"lv": "any",
+"i18n": {
+"en": "Do you prefer mornings or evenings for quiet time? Why?",
+"de": "Ist dir morgens oder abends ruhige Zeit lieber? Warum?",
+"es": "¿Prefieres la mañana o la noche para tener un rato tranquilo? ¿Por qué?",
+"fr": "Préfères-tu le matin ou le soir pour un moment calme ? Pourquoi ?",
+"it": "Preferisci la mattina o la sera per un momento di quiete? Perché?",
+"pt": "Preferes as manhãs ou as noites para um momento de sossego? Porquê?",
+"pt_BR": "Você prefere as manhãs ou as noites para um momento de sossego? Por quê?"
+}
+},
+{
+"id": "mindfulness-037",
+"lv": "any",
+"i18n": {
+"en": "What does a really good conversation feel like to you?",
+"de": "Wie fühlt sich für dich ein wirklich gutes Gespräch an?",
+"es": "¿Qué se siente para ti en una conversación realmente buena?",
+"fr": "Quelle sensation te laisse une très bonne conversation ?",
+"it": "Che sensazione ti dà una conversazione davvero bella?",
+"pt": "Como é que te sentes numa conversa realmente boa?",
+"pt_BR": "Como você se sente numa conversa realmente boa?"
+}
+},
+{
+"id": "mindfulness-038",
+"lv": "any",
+"i18n": {
+"en": "Which simple pleasure do you never get tired of?",
+"de": "Von welchem einfachen Vergnügen bekommst du nie genug?",
+"es": "¿De qué placer sencillo nunca te cansas?",
+"fr": "De quel plaisir simple ne te lasses-tu jamais ?",
+"it": "Di quale piacere semplice non ti stanchi mai?",
+"pt": "De que prazer simples nunca te cansas?",
+"pt_BR": "De qual prazer simples você nunca se cansa?"
+}
+},
+{
+"id": "mindfulness-039",
+"lv": "any",
+"i18n": {
+"en": "What would you like to feel more of in your everyday life?",
+"de": "Wovon würdest du in deinem Alltag gern mehr spüren?",
+"es": "¿Qué te gustaría sentir más a menudo en tu día a día?",
+"fr": "Qu'aimerais-tu ressentir davantage dans ta vie de tous les jours ?",
+"it": "Cosa ti piacerebbe provare più spesso nella vita di tutti i giorni?",
+"pt": "O que gostavas de sentir mais no teu dia a dia?",
+"pt_BR": "O que você gostaria de sentir mais no seu dia a dia?"
+}
+},
+{
+"id": "mindfulness-040",
+"lv": "any",
+"i18n": {
+"en": "How do you like to celebrate small moments of joy?",
+"de": "Wie feierst du gern kleine Momente der Freude?",
+"es": "¿Cómo te gusta celebrar los pequeños momentos de alegría?",
+"fr": "Comment aimes-tu célébrer les petits moments de joie ?",
+"it": "Come ti piace celebrare i piccoli momenti di gioia?",
+"pt": "Como gostas de celebrar os pequenos momentos de alegria?",
+"pt_BR": "Como você gosta de comemorar os pequenos momentos de alegria?"
+}
+},
+{
+"id": "mindfulness-041",
+"lv": "beginner",
+"i18n": {
+"en": "Have you ever tried a breathing exercise? How did it feel?",
+"de": "Hast du schon einmal eine Atemübung ausprobiert? Wie hat es sich angefühlt?",
+"es": "¿Has probado alguna vez un ejercicio de respiración? ¿Qué tal te sentó?",
+"fr": "As-tu déjà essayé un exercice de respiration ? Qu'as-tu ressenti ?",
+"it": "Hai mai provato un esercizio di respirazione? Come ti sei sentito?",
+"pt": "Já experimentaste algum exercício de respiração? Como te sentiste?",
+"pt_BR": "Você já experimentou algum exercício de respiração? Como se sentiu?"
+}
+},
+{
+"id": "mindfulness-042",
+"lv": "beginner",
+"i18n": {
+"en": "Where do you feel your breath most clearly: nose, chest or belly?",
+"de": "Wo spürst du deinen Atem am deutlichsten: an der Nase, in der Brust oder im Bauch?",
+"es": "¿Dónde notas tu respiración con más claridad: en la nariz, el pecho o el vientre?",
+"fr": "Où sens-tu ta respiration le plus clairement : au nez, dans la poitrine ou dans le ventre ?",
+"it": "Dove senti il respiro più chiaramente: naso, petto o pancia?",
+"pt": "Onde sentes a tua respiração com mais clareza: no nariz, no peito ou na barriga?",
+"pt_BR": "Onde você sente sua respiração com mais clareza: no nariz, no peito ou na barriga?"
+}
+},
+{
+"id": "mindfulness-043",
+"lv": "beginner",
+"i18n": {
+"en": "What made you curious about mindfulness?",
+"de": "Was hat dich neugierig auf Achtsamkeit gemacht?",
+"es": "¿Qué te despertó la curiosidad por el mindfulness?",
+"fr": "Qu'est-ce qui t'a rendu curieux de la pleine conscience ?",
+"it": "Cosa ti ha incuriosito della mindfulness?",
+"pt": "O que te despertou a curiosidade pelo mindfulness?",
+"pt_BR": "O que despertou sua curiosidade pelo mindfulness?"
+}
+},
+{
+"id": "mindfulness-044",
+"lv": "beginner",
+"i18n": {
+"en": "How do you imagine mindfulness could look in your daily life?",
+"de": "Wie stellst du dir Achtsamkeit in deinem Alltag vor?",
+"es": "¿Cómo te imaginas el mindfulness en tu vida diaria?",
+"fr": "Comment imagines-tu la pleine conscience dans ta vie quotidienne ?",
+"it": "Come immagini la mindfulness nella tua vita quotidiana?",
+"pt": "Como imaginas o mindfulness no teu dia a dia?",
+"pt_BR": "Como você imagina o mindfulness no seu dia a dia?"
+}
+},
+{
+"id": "mindfulness-045",
+"lv": "beginner",
+"i18n": {
+"en": "At what time of day could you set aside one quiet minute?",
+"de": "Zu welcher Tageszeit könntest du dir eine ruhige Minute nehmen?",
+"es": "¿En qué momento del día podrías reservar un minuto de calma?",
+"fr": "À quel moment de la journée pourrais-tu t'accorder une minute de calme ?",
+"it": "In quale momento della giornata potresti ritagliarti un minuto di quiete?",
+"pt": "A que hora do dia podias reservar um minuto de sossego?",
+"pt_BR": "Em que hora do dia você poderia reservar um minuto de sossego?"
+}
+},
+{
+"id": "mindfulness-046",
+"lv": "beginner",
+"i18n": {
+"en": "How did it feel to sit still for a minute without doing anything?",
+"de": "Wie hat es sich angefühlt, eine Minute still zu sitzen, ohne etwas zu tun?",
+"es": "¿Qué sentiste al quedarte quieto un minuto sin hacer nada?",
+"fr": "Qu'as-tu ressenti en restant immobile une minute sans rien faire ?",
+"it": "Come ti sei sentito a stare fermo un minuto senza fare nulla?",
+"pt": "Como te sentiste ao ficar parado um minuto sem fazer nada?",
+"pt_BR": "Como você se sentiu ao ficar parado um minuto sem fazer nada?"
+}
+},
+{
+"id": "mindfulness-047",
+"lv": "beginner",
+"i18n": {
+"en": "Where in your body do you usually hold tension?",
+"de": "Wo in deinem Körper sitzt bei dir meistens die Anspannung?",
+"es": "¿En qué parte del cuerpo sueles acumular tensión?",
+"fr": "Où ton corps garde-t-il le plus souvent les tensions ?",
+"it": "In quale parte del corpo accumuli di solito tensione?",
+"pt": "Em que parte do corpo costumas acumular tensão?",
+"pt_BR": "Em que parte do corpo você costuma acumular tensão?"
+}
+},
+{
+"id": "mindfulness-048",
+"lv": "beginner",
+"i18n": {
+"en": "If you pause and listen right now, what can you hear?",
+"de": "Was hörst du, wenn du jetzt kurz innehältst und lauschst?",
+"es": "Si te detienes a escuchar ahora mismo, ¿qué oyes?",
+"fr": "Si tu t'arrêtes pour écouter maintenant, qu'entends-tu ?",
+"it": "Se ti fermi ad ascoltare adesso, cosa senti?",
+"pt": "Se parares agora para escutar, o que consegues ouvir?",
+"pt_BR": "Se você parar agora para escutar, o que consegue ouvir?"
+}
+},
+{
+"id": "mindfulness-049",
+"lv": "beginner",
+"i18n": {
+"en": "Which of your five senses do you notice most during the day?",
+"de": "Welchen deiner fünf Sinne nimmst du im Alltag am stärksten wahr?",
+"es": "¿Cuál de tus cinco sentidos notas más durante el día?",
+"fr": "Lequel de tes cinq sens remarques-tu le plus dans la journée ?",
+"it": "Quale dei tuoi cinque sensi noti di più durante il giorno?",
+"pt": "Qual dos teus cinco sentidos notas mais durante o dia?",
+"pt_BR": "Qual dos seus cinco sentidos você mais percebe durante o dia?"
+}
+},
+{
+"id": "mindfulness-050",
+"lv": "beginner",
+"i18n": {
+"en": "How easy or hard is it for you to eat slowly?",
+"de": "Wie leicht oder schwer fällt es dir, langsam zu essen?",
+"es": "¿Te resulta fácil o difícil comer despacio?",
+"fr": "Est-ce facile ou difficile pour toi de manger lentement ?",
+"it": "Per te è facile o difficile mangiare lentamente?",
+"pt": "É fácil ou difícil para ti comer devagar?",
+"pt_BR": "É fácil ou difícil para você comer devagar?"
+}
+},
+{
+"id": "mindfulness-051",
+"lv": "beginner",
+"i18n": {
+"en": "What kinds of thoughts pop up when you try to sit quietly?",
+"de": "Welche Gedanken tauchen auf, wenn du versuchst, ruhig dazusitzen?",
+"es": "¿Qué tipo de pensamientos aparecen cuando intentas sentarte en silencio?",
+"fr": "Quelles pensées surgissent quand tu essaies de t'asseoir en silence ?",
+"it": "Che tipo di pensieri spuntano quando provi a stare seduto in silenzio?",
+"pt": "Que tipo de pensamentos surgem quando tentas ficar sentado em silêncio?",
+"pt_BR": "Que tipo de pensamento aparece quando você tenta ficar sentado em silêncio?"
+}
+},
+{
+"id": "mindfulness-052",
+"lv": "beginner",
+"i18n": {
+"en": "Which everyday habit could remind you to take a mindful breath?",
+"de": "Welche Alltagsgewohnheit könnte dich an einen bewussten Atemzug erinnern?",
+"es": "¿Qué hábito diario podría recordarte hacer una respiración consciente?",
+"fr": "Quelle habitude du quotidien pourrait te rappeler de prendre une respiration consciente ?",
+"it": "Quale abitudine quotidiana potrebbe ricordarti di fare un respiro consapevole?",
+"pt": "Que hábito diário te podia lembrar de fazer uma respiração consciente?",
+"pt_BR": "Qual hábito diário poderia te lembrar de fazer uma respiração consciente?"
+}
+},
+{
+"id": "mindfulness-053",
+"lv": "beginner",
+"i18n": {
+"en": "Would you rather practise sitting, walking or lying down? Why?",
+"de": "Übst du lieber im Sitzen, im Gehen oder im Liegen? Warum?",
+"es": "¿Prefieres practicar sentado, caminando o tumbado? ¿Por qué?",
+"fr": "Préfères-tu pratiquer assis, en marchant ou allongé ? Pourquoi ?",
+"it": "Preferisci praticare da seduto, camminando o sdraiato? Perché?",
+"pt": "Preferes praticar sentado, a caminhar ou deitado? Porquê?",
+"pt_BR": "Você prefere praticar sentado, caminhando ou deitado? Por quê?"
+}
+},
+{
+"id": "mindfulness-054",
+"lv": "beginner",
+"i18n": {
+"en": "How do you feel after a short walk outside?",
+"de": "Wie fühlst du dich nach einem kurzen Spaziergang draußen?",
+"es": "¿Cómo te sientes después de un paseo corto al aire libre?",
+"fr": "Comment te sens-tu après une courte promenade dehors ?",
+"it": "Come ti senti dopo una breve passeggiata all'aperto?",
+"pt": "Como te sentes depois de um pequeno passeio lá fora?",
+"pt_BR": "Como você se sente depois de uma caminhada curta ao ar livre?"
+}
+},
+{
+"id": "mindfulness-055",
+"lv": "beginner",
+"i18n": {
+"en": "What would make a cosy spot for your daily practice?",
+"de": "Was würde einen gemütlichen Platz für deine tägliche Übung ausmachen?",
+"es": "¿Qué haría de un rincón un lugar acogedor para tu práctica diaria?",
+"fr": "Qu'est-ce qui ferait un coin douillet pour ta pratique quotidienne ?",
+"it": "Cosa renderebbe accogliente un angolo per la tua pratica quotidiana?",
+"pt": "O que tornaria um cantinho acolhedor para a tua prática diária?",
+"pt_BR": "O que deixaria um cantinho aconchegante para a sua prática diária?"
+}
+},
+{
+"id": "mindfulness-056",
+"lv": "beginner",
+"i18n": {
+"en": "Do you prefer guided audio or quiet practice on your own?",
+"de": "Magst du lieber angeleitete Audios oder stille Übung für dich allein?",
+"es": "¿Prefieres audios guiados o practicar en silencio por tu cuenta?",
+"fr": "Préfères-tu les audios guidés ou la pratique silencieuse en solo ?",
+"it": "Preferisci gli audio guidati o la pratica in silenzio da solo?",
+"pt": "Preferes áudios guiados ou praticar em silêncio sozinho?",
+"pt_BR": "Você prefere áudios guiados ou praticar em silêncio sozinho?"
+}
+},
+{
+"id": "mindfulness-057",
+"lv": "beginner",
+"i18n": {
+"en": "What did you notice about your hands today?",
+"de": "Was ist dir heute an deinen Händen aufgefallen?",
+"es": "¿Qué notaste hoy en tus manos?",
+"fr": "Qu'as-tu remarqué aujourd'hui en observant tes mains ?",
+"it": "Cosa hai notato oggi nelle tue mani?",
+"pt": "O que reparaste hoje nas tuas mãos?",
+"pt_BR": "O que você reparou hoje nas suas mãos?"
+}
+},
+{
+"id": "mindfulness-058",
+"lv": "beginner",
+"i18n": {
+"en": "How do you react when your mind wanders off during a task?",
+"de": "Wie reagierst du, wenn deine Gedanken bei einer Aufgabe abschweifen?",
+"es": "¿Cómo reaccionas cuando tu mente se distrae durante una tarea?",
+"fr": "Comment réagis-tu quand ton esprit vagabonde pendant une tâche ?",
+"it": "Come reagisci quando la mente si distrae durante un compito?",
+"pt": "Como reages quando a tua mente se distrai durante uma tarefa?",
+"pt_BR": "Como você reage quando sua mente se distrai durante uma tarefa?"
+}
+},
+{
+"id": "mindfulness-059",
+"lv": "beginner",
+"i18n": {
+"en": "What does a comfortable sitting posture feel like for you?",
+"de": "Wie fühlt sich für dich eine bequeme Sitzhaltung an?",
+"es": "¿Cómo es para ti una postura cómoda para sentarte?",
+"fr": "À quoi ressemble pour toi une posture assise confortable ?",
+"it": "Com'è per te una posizione seduta comoda?",
+"pt": "Como é para ti uma postura sentada confortável?",
+"pt_BR": "Como é para você uma postura sentada confortável?"
+}
+},
+{
+"id": "mindfulness-060",
+"lv": "beginner",
+"i18n": {
+"en": "Which pleasant moment from today could you describe in detail?",
+"de": "Welchen schönen Moment von heute könntest du ganz genau beschreiben?",
+"es": "¿Qué momento agradable de hoy podrías describir con detalle?",
+"fr": "Quel moment agréable d'aujourd'hui pourrais-tu décrire en détail ?",
+"it": "Quale momento piacevole di oggi potresti descrivere nei dettagli?",
+"pt": "Que momento agradável de hoje podias descrever em pormenor?",
+"pt_BR": "Qual momento agradável de hoje você poderia descrever em detalhes?"
+}
+},
+{
+"id": "mindfulness-061",
+"lv": "beginner",
+"i18n": {
+"en": "How would you describe your mind right now in one word?",
+"de": "Wie würdest du deinen Geist gerade mit einem Wort beschreiben?",
+"es": "¿Cómo describirías tu mente ahora mismo con una sola palabra?",
+"fr": "Comment décrirais-tu ton esprit en un seul mot, là, maintenant ?",
+"it": "Come descriveresti la tua mente in questo momento con una sola parola?",
+"pt": "Como descreverias a tua mente neste momento numa só palavra?",
+"pt_BR": "Como você descreveria sua mente agora numa só palavra?"
+}
+},
+{
+"id": "mindfulness-062",
+"lv": "beginner",
+"i18n": {
+"en": "What helps you stay patient when you are learning something new?",
+"de": "Was hilft dir, geduldig zu bleiben, wenn du etwas Neues lernst?",
+"es": "¿Qué te ayuda a tener paciencia cuando aprendes algo nuevo?",
+"fr": "Qu'est-ce qui t'aide à rester patient quand tu apprends quelque chose de nouveau ?",
+"it": "Cosa ti aiuta a restare paziente quando impari qualcosa di nuovo?",
+"pt": "O que te ajuda a ter paciência quando aprendes algo novo?",
+"pt_BR": "O que te ajuda a ter paciência quando você aprende algo novo?"
+}
+},
+{
+"id": "mindfulness-063",
+"lv": "beginner",
+"i18n": {
+"en": "What do you notice about your breathing when you are in a hurry?",
+"de": "Was fällt dir an deinem Atem auf, wenn du es eilig hast?",
+"es": "¿Qué notas en tu respiración cuando vas con prisa?",
+"fr": "Que remarques-tu dans ta respiration quand tu es pressé ?",
+"it": "Cosa noti nel tuo respiro quando vai di fretta?",
+"pt": "O que notas na tua respiração quando estás com pressa?",
+"pt_BR": "O que você nota na sua respiração quando está com pressa?"
+}
+},
+{
+"id": "mindfulness-064",
+"lv": "beginner",
+"i18n": {
+"en": "What small goal would you like to set for your first month of practice?",
+"de": "Welches kleine Ziel möchtest du dir für deinen ersten Übungsmonat setzen?",
+"es": "¿Qué pequeña meta te gustaría ponerte para tu primer mes de práctica?",
+"fr": "Quel petit objectif aimerais-tu te fixer pour ton premier mois de pratique ?",
+"it": "Quale piccolo obiettivo vorresti porti per il tuo primo mese di pratica?",
+"pt": "Que pequeno objetivo gostavas de definir para o teu primeiro mês de prática?",
+"pt_BR": "Qual pequena meta você gostaria de definir para o seu primeiro mês de prática?"
+}
+},
+{
+"id": "mindfulness-065",
+"lv": "beginner",
+"i18n": {
+"en": "What did you notice the last time you drank something really slowly?",
+"de": "Was ist dir aufgefallen, als du zuletzt etwas ganz langsam getrunken hast?",
+"es": "¿Qué notaste la última vez que bebiste algo muy despacio?",
+"fr": "Qu'as-tu remarqué la dernière fois que tu as bu quelque chose très lentement ?",
+"it": "Cosa hai notato l'ultima volta che hai bevuto qualcosa molto lentamente?",
+"pt": "O que notaste da última vez que bebeste algo mesmo devagar?",
+"pt_BR": "O que você notou da última vez que bebeu algo bem devagar?"
+}
+},
+{
+"id": "mindfulness-066",
+"lv": "intermediate",
+"i18n": {
+"en": "Which mindfulness practice has felt most natural to you so far?",
+"de": "Welche Achtsamkeitsübung hat sich für dich bisher am natürlichsten angefühlt?",
+"es": "¿Qué práctica de mindfulness te ha resultado más natural hasta ahora?",
+"fr": "Quelle pratique de pleine conscience t'a semblé la plus naturelle jusqu'ici ?",
+"it": "Quale pratica di mindfulness ti è sembrata più naturale finora?",
+"pt": "Que prática de mindfulness te pareceu mais natural até agora?",
+"pt_BR": "Qual prática de mindfulness pareceu mais natural para você até agora?"
+}
+},
+{
+"id": "mindfulness-067",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you bring a calm mind into conversations with others?",
+"de": "Wie bringst du einen ruhigen Geist in Gespräche mit anderen ein?",
+"es": "¿Cómo llevas una mente tranquila a tus conversaciones con los demás?",
+"fr": "Comment gardes-tu un esprit calme dans tes conversations avec les autres ?",
+"it": "Come porti una mente calma nelle conversazioni con gli altri?",
+"pt": "Como levas uma mente calma para as conversas com os outros?",
+"pt_BR": "Como você leva uma mente calma para as conversas com os outros?"
+}
+},
+{
+"id": "mindfulness-068",
+"lv": "intermediate",
+"i18n": {
+"en": "What changes have you noticed since you started practising?",
+"de": "Welche Veränderungen hast du bemerkt, seit du übst?",
+"es": "¿Qué cambios has notado desde que empezaste a practicar?",
+"fr": "Quels changements as-tu remarqués depuis que tu pratiques ?",
+"it": "Quali cambiamenti hai notato da quando hai iniziato a praticare?",
+"pt": "Que mudanças notaste desde que começaste a praticar?",
+"pt_BR": "Que mudanças você notou desde que começou a praticar?"
+}
+},
+{
+"id": "mindfulness-069",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you handle days when you do not feel like practising?",
+"de": "Wie gehst du mit Tagen um, an denen du keine Lust zum Üben hast?",
+"es": "¿Qué haces los días en que no te apetece practicar?",
+"fr": "Comment gères-tu les jours où tu n'as pas envie de pratiquer ?",
+"it": "Come gestisci i giorni in cui non hai voglia di praticare?",
+"pt": "Como lidas com os dias em que não te apetece praticar?",
+"pt_BR": "Como você lida com os dias em que não está com vontade de praticar?"
+}
+},
+{
+"id": "mindfulness-070",
+"lv": "intermediate",
+"i18n": {
+"en": "What helps you listen to someone without planning your reply?",
+"de": "Was hilft dir, jemandem zuzuhören, ohne schon deine Antwort zu planen?",
+"es": "¿Qué te ayuda a escuchar a alguien sin estar preparando tu respuesta?",
+"fr": "Qu'est-ce qui t'aide à écouter quelqu'un sans préparer ta réponse ?",
+"it": "Cosa ti aiuta ad ascoltare qualcuno senza preparare già la tua risposta?",
+"pt": "O que te ajuda a ouvir alguém sem estar já a preparar a resposta?",
+"pt_BR": "O que te ajuda a ouvir alguém sem ficar planejando a sua resposta?"
+}
+},
+{
+"id": "mindfulness-071",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you use mindfulness while you work or study?",
+"de": "Wie nutzt du Achtsamkeit beim Arbeiten oder Lernen?",
+"es": "¿Cómo usas el mindfulness cuando trabajas o estudias?",
+"fr": "Comment utilises-tu la pleine conscience quand tu travailles ou étudies ?",
+"it": "Come usi la mindfulness mentre lavori o studi?",
+"pt": "Como usas o mindfulness quando trabalhas ou estudas?",
+"pt_BR": "Como você usa o mindfulness quando trabalha ou estuda?"
+}
+},
+{
+"id": "mindfulness-072",
+"lv": "intermediate",
+"i18n": {
+"en": "Which notifications could you switch off to protect your attention?",
+"de": "Welche Benachrichtigungen könntest du ausschalten, um deine Aufmerksamkeit zu schützen?",
+"es": "¿Qué notificaciones podrías desactivar para proteger tu atención?",
+"fr": "Quelles notifications pourrais-tu désactiver pour protéger ton attention ?",
+"it": "Quali notifiche potresti disattivare per proteggere la tua attenzione?",
+"pt": "Que notificações podias desligar para proteger a tua atenção?",
+"pt_BR": "Quais notificações você poderia desligar para proteger sua atenção?"
+}
+},
+{
+"id": "mindfulness-073",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you notice that you are starting to feel stressed?",
+"de": "Woran merkst du, dass Stress in dir aufkommt?",
+"es": "¿Cómo te das cuenta de que empiezas a sentirte estresado?",
+"fr": "Comment remarques-tu que tu commences à être stressé ?",
+"it": "Come ti accorgi che stai iniziando a sentirti stressato?",
+"pt": "Como percebes que estás a começar a ficar stressado?",
+"pt_BR": "Como você percebe que está começando a ficar estressado?"
+}
+},
+{
+"id": "mindfulness-074",
+"lv": "intermediate",
+"i18n": {
+"en": "Which kind wish would you like to send to a friend today?",
+"de": "Welchen freundlichen Wunsch möchtest du heute einem Freund schicken?",
+"es": "¿Qué buen deseo te gustaría enviarle hoy a un amigo?",
+"fr": "Quel souhait bienveillant aimerais-tu adresser à un ami aujourd'hui ?",
+"it": "Quale augurio gentile vorresti mandare oggi a un amico?",
+"pt": "Que desejo carinhoso gostavas de enviar hoje a um amigo?",
+"pt_BR": "Qual desejo carinhoso você gostaria de mandar hoje para um amigo?"
+}
+},
+{
+"id": "mindfulness-075",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you treat yourself after making a mistake?",
+"de": "Wie gehst du mit dir selbst um, nachdem du einen Fehler gemacht hast?",
+"es": "¿Cómo te tratas a ti mismo después de cometer un error?",
+"fr": "Comment te traites-tu après avoir fait une erreur ?",
+"it": "Come ti tratti dopo aver commesso un errore?",
+"pt": "Como te tratas depois de cometer um erro?",
+"pt_BR": "Como você se trata depois de cometer um erro?"
+}
+},
+{
+"id": "mindfulness-076",
+"lv": "intermediate",
+"i18n": {
+"en": "For open awareness, what do you enjoy resting in: sounds, the sky or the whole body?",
+"de": "Worin ruhst du bei offener Achtsamkeit am liebsten: in Klängen, im Himmel oder im ganzen Körper?",
+"es": "En la atención abierta, ¿en qué te gusta descansar: los sonidos, el cielo o todo el cuerpo?",
+"fr": "En conscience ouverte, sur quoi aimes-tu te poser : les sons, le ciel ou tout le corps ?",
+"it": "Nella consapevolezza aperta, dove ti piace riposare: nei suoni, nel cielo o in tutto il corpo?",
+"pt": "Na atenção aberta, onde gostas de repousar: nos sons, no céu ou no corpo inteiro?",
+"pt_BR": "Na atenção aberta, onde você gosta de repousar: nos sons, no céu ou no corpo inteiro?"
+}
+},
+{
+"id": "mindfulness-077",
+"lv": "intermediate",
+"i18n": {
+"en": "How has mindful eating changed the way you enjoy food?",
+"de": "Wie hat achtsames Essen deinen Genuss beim Essen verändert?",
+"es": "¿Cómo ha cambiado el comer con atención tu forma de disfrutar la comida?",
+"fr": "Comment manger en pleine conscience a-t-il changé ta façon d'apprécier la nourriture ?",
+"it": "Come ha cambiato il mangiare consapevole il tuo modo di gustare il cibo?",
+"pt": "Como é que comer com atenção mudou a forma como saboreias a comida?",
+"pt_BR": "Como comer com atenção mudou o jeito que você aproveita a comida?"
+}
+},
+{
+"id": "mindfulness-078",
+"lv": "intermediate",
+"i18n": {
+"en": "What helps you pause before replying to a tricky message?",
+"de": "Was hilft dir, kurz innezuhalten, bevor du auf eine heikle Nachricht antwortest?",
+"es": "¿Qué te ayuda a hacer una pausa antes de responder a un mensaje delicado?",
+"fr": "Qu'est-ce qui t'aide à faire une pause avant de répondre à un message délicat ?",
+"it": "Cosa ti aiuta a fermarti prima di rispondere a un messaggio delicato?",
+"pt": "O que te ajuda a fazer uma pausa antes de responder a uma mensagem delicada?",
+"pt_BR": "O que te ajuda a fazer uma pausa antes de responder a uma mensagem delicada?"
+}
+},
+{
+"id": "mindfulness-079",
+"lv": "intermediate",
+"i18n": {
+"en": "Which activity puts you into a state of flow most easily?",
+"de": "Bei welcher Tätigkeit kommst du am leichtesten in einen Flow-Zustand?",
+"es": "¿Qué actividad te lleva con más facilidad a un estado de flujo?",
+"fr": "Quelle activité te plonge le plus facilement dans un état de flow ?",
+"it": "Quale attività ti porta più facilmente in uno stato di flow?",
+"pt": "Que atividade te leva mais facilmente a um estado de fluxo?",
+"pt_BR": "Qual atividade te leva mais facilmente a um estado de fluxo?"
+}
+},
+{
+"id": "mindfulness-080",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you balance screen time and offline time?",
+"de": "Wie bringst du Bildschirmzeit und Offline-Zeit ins Gleichgewicht?",
+"es": "¿Cómo equilibras el tiempo de pantalla y el tiempo desconectado?",
+"fr": "Comment équilibres-tu le temps d'écran et le temps hors ligne ?",
+"it": "Come bilanci il tempo davanti agli schermi e il tempo offline?",
+"pt": "Como equilibras o tempo de ecrã e o tempo offline?",
+"pt_BR": "Como você equilibra o tempo de tela e o tempo offline?"
+}
+},
+{
+"id": "mindfulness-081",
+"lv": "intermediate",
+"i18n": {
+"en": "What does kindness toward yourself look like on a busy day?",
+"de": "Wie sieht Freundlichkeit dir selbst gegenüber an einem vollen Tag aus?",
+"es": "¿Cómo es ser amable contigo mismo en un día ajetreado?",
+"fr": "À quoi ressemble la bienveillance envers toi-même lors d'une journée chargée ?",
+"it": "Com'è la gentilezza verso te stesso in una giornata piena?",
+"pt": "Como é ser gentil contigo próprio num dia cheio?",
+"pt_BR": "Como é ser gentil com você mesmo num dia corrido?"
+}
+},
+{
+"id": "mindfulness-082",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you stay curious when you meet people from different cultures?",
+"de": "Wie bleibst du neugierig, wenn du Menschen aus anderen Kulturen begegnest?",
+"es": "¿Cómo mantienes la curiosidad cuando conoces a personas de otras culturas?",
+"fr": "Comment restes-tu curieux quand tu rencontres des personnes d'autres cultures ?",
+"it": "Come resti curioso quando incontri persone di altre culture?",
+"pt": "Como manténs a curiosidade quando conheces pessoas de outras culturas?",
+"pt_BR": "Como você mantém a curiosidade quando conhece pessoas de outras culturas?"
+}
+},
+{
+"id": "mindfulness-083",
+"lv": "intermediate",
+"i18n": {
+"en": "What would your ideal mini retreat at home include?",
+"de": "Was gehört für dich zu einem idealen Mini-Retreat zu Hause?",
+"es": "¿Qué incluiría tu mini retiro ideal en casa?",
+"fr": "Que comprendrait ta mini-retraite idéale à la maison ?",
+"it": "Cosa includerebbe il tuo mini ritiro ideale a casa?",
+"pt": "O que incluiria o teu mini retiro ideal em casa?",
+"pt_BR": "O que incluiria o seu mini retiro ideal em casa?"
+}
+},
+{
+"id": "mindfulness-084",
+"lv": "intermediate",
+"i18n": {
+"en": "Which practice helps you most when your mind is racing?",
+"de": "Welche Übung hilft dir am meisten, wenn deine Gedanken rasen?",
+"es": "¿Qué práctica te ayuda más cuando tu mente va a mil?",
+"fr": "Quelle pratique t'aide le plus quand ton esprit s'emballe ?",
+"it": "Quale pratica ti aiuta di più quando la mente corre?",
+"pt": "Que prática te ajuda mais quando a tua cabeça está a mil?",
+"pt_BR": "Qual prática mais te ajuda quando sua cabeça está a mil?"
+}
+},
+{
+"id": "mindfulness-085",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you close your workday so you can truly switch off?",
+"de": "Wie beendest du deinen Arbeitstag, um wirklich abschalten zu können?",
+"es": "¿Cómo cierras tu jornada para poder desconectar de verdad?",
+"fr": "Comment clôtures-tu ta journée de travail pour vraiment décrocher ?",
+"it": "Come chiudi la giornata di lavoro per staccare davvero?",
+"pt": "Como fechas o teu dia de trabalho para conseguires desligar a sério?",
+"pt_BR": "Como você encerra o seu dia de trabalho para conseguir desligar de verdade?"
+}
+},
+{
+"id": "mindfulness-086",
+"lv": "advanced",
+"i18n": {
+"en": "How has your relationship with your own thoughts changed over time?",
+"de": "Wie hat sich deine Beziehung zu deinen eigenen Gedanken mit der Zeit verändert?",
+"es": "¿Cómo ha cambiado con el tiempo tu relación con tus propios pensamientos?",
+"fr": "Comment ta relation à tes propres pensées a-t-elle évolué avec le temps ?",
+"it": "Come è cambiato nel tempo il tuo rapporto con i tuoi pensieri?",
+"pt": "Como mudou com o tempo a tua relação com os teus próprios pensamentos?",
+"pt_BR": "Como a sua relação com os seus próprios pensamentos mudou com o tempo?"
+}
+},
+{
+"id": "mindfulness-087",
+"lv": "advanced",
+"i18n": {
+"en": "What have longer sits taught you about patience?",
+"de": "Was haben dich längere Sitzungen über Geduld gelehrt?",
+"es": "¿Qué te han enseñado las sesiones más largas sobre la paciencia?",
+"fr": "Qu'est-ce que les séances plus longues t'ont appris sur la patience ?",
+"it": "Cosa ti hanno insegnato le sedute più lunghe sulla pazienza?",
+"pt": "O que é que as sessões mais longas te ensinaram sobre a paciência?",
+"pt_BR": "O que as sessões mais longas te ensinaram sobre paciência?"
+}
+},
+{
+"id": "mindfulness-088",
+"lv": "advanced",
+"i18n": {
+"en": "Which personal values guide your practice and your choices?",
+"de": "Welche persönlichen Werte leiten deine Praxis und deine Entscheidungen?",
+"es": "¿Qué valores personales guían tu práctica y tus decisiones?",
+"fr": "Quelles valeurs personnelles guident ta pratique et tes choix ?",
+"it": "Quali valori personali guidano la tua pratica e le tue scelte?",
+"pt": "Que valores pessoais orientam a tua prática e as tuas escolhas?",
+"pt_BR": "Quais valores pessoais orientam a sua prática e as suas escolhas?"
+}
+},
+{
+"id": "mindfulness-089",
+"lv": "advanced",
+"i18n": {
+"en": "How do you keep your practice fresh after many months?",
+"de": "Wie hältst du deine Praxis nach vielen Monaten lebendig?",
+"es": "¿Cómo mantienes viva tu práctica después de tantos meses?",
+"fr": "Comment gardes-tu ta pratique vivante après de nombreux mois ?",
+"it": "Come mantieni viva la tua pratica dopo tanti mesi?",
+"pt": "Como manténs a tua prática viva depois de muitos meses?",
+"pt_BR": "Como você mantém sua prática viva depois de tantos meses?"
+}
+},
+{
+"id": "mindfulness-090",
+"lv": "advanced",
+"i18n": {
+"en": "What does equanimity mean to you in everyday life?",
+"de": "Was bedeutet Gleichmut für dich im Alltag?",
+"es": "¿Qué significa para ti la ecuanimidad en el día a día?",
+"fr": "Que signifie pour toi l'équanimité au quotidien ?",
+"it": "Cosa significa per te l'equanimità nella vita di tutti i giorni?",
+"pt": "O que significa para ti a equanimidade no dia a dia?",
+"pt_BR": "O que significa equanimidade para você no dia a dia?"
+}
+},
+{
+"id": "mindfulness-091",
+"lv": "advanced",
+"i18n": {
+"en": "How would you introduce mindfulness to a friend in one minute?",
+"de": "Wie würdest du einem Freund Achtsamkeit in einer Minute vorstellen?",
+"es": "¿Cómo le presentarías el mindfulness a un amigo en un minuto?",
+"fr": "Comment présenterais-tu la pleine conscience à un ami en une minute ?",
+"it": "Come presenteresti la mindfulness a un amico in un minuto?",
+"pt": "Como apresentarias o mindfulness a um amigo em um minuto?",
+"pt_BR": "Como você apresentaria o mindfulness a um amigo em um minuto?"
+}
+},
+{
+"id": "mindfulness-092",
+"lv": "advanced",
+"i18n": {
+"en": "Which reaction habits have you learned to notice early?",
+"de": "Welche Reaktionsmuster hast du gelernt, früh zu bemerken?",
+"es": "¿Qué hábitos de reacción has aprendido a detectar a tiempo?",
+"fr": "Quels réflexes de réaction as-tu appris à repérer tôt ?",
+"it": "Quali abitudini di reazione hai imparato a notare in anticipo?",
+"pt": "Que hábitos de reação aprendeste a reconhecer cedo?",
+"pt_BR": "Quais hábitos de reação você aprendeu a perceber cedo?"
+}
+},
+{
+"id": "mindfulness-093",
+"lv": "advanced",
+"i18n": {
+"en": "How do you stay present during big changes in your life?",
+"de": "Wie bleibst du bei großen Veränderungen in deinem Leben präsent?",
+"es": "¿Cómo te mantienes presente durante los grandes cambios de tu vida?",
+"fr": "Comment restes-tu présent pendant les grands changements de ta vie ?",
+"it": "Come resti presente durante i grandi cambiamenti della tua vita?",
+"pt": "Como te manténs presente durante as grandes mudanças da tua vida?",
+"pt_BR": "Como você se mantém presente durante as grandes mudanças da sua vida?"
+}
+},
+{
+"id": "mindfulness-094",
+"lv": "advanced",
+"i18n": {
+"en": "What would your personal practice plan for next year look like?",
+"de": "Wie würde dein persönlicher Übungsplan für das nächste Jahr aussehen?",
+"es": "¿Cómo sería tu plan personal de práctica para el próximo año?",
+"fr": "À quoi ressemblerait ton plan de pratique personnel pour l'année prochaine ?",
+"it": "Come sarebbe il tuo piano di pratica personale per il prossimo anno?",
+"pt": "Como seria o teu plano pessoal de prática para o próximo ano?",
+"pt_BR": "Como seria o seu plano pessoal de prática para o próximo ano?"
+}
+},
+{
+"id": "mindfulness-095",
+"lv": "advanced",
+"i18n": {
+"en": "Which myth about mindfulness did you once believe?",
+"de": "An welchen Mythos über Achtsamkeit hast du früher geglaubt?",
+"es": "¿Qué mito sobre el mindfulness creías antes?",
+"fr": "À quel mythe sur la pleine conscience croyais-tu autrefois ?",
+"it": "Quale mito sulla mindfulness credevi un tempo?",
+"pt": "Em que mito sobre o mindfulness já acreditaste?",
+"pt_BR": "Em qual mito sobre o mindfulness você já acreditou?"
+}
+},
+{
+"id": "mindfulness-096",
+"lv": "advanced",
+"i18n": {
+"en": "How do you combine mindfulness with rest, movement and connection?",
+"de": "Wie verbindest du Achtsamkeit mit Erholung, Bewegung und Gemeinschaft?",
+"es": "¿Cómo combinas el mindfulness con el descanso, el movimiento y la conexión con otros?",
+"fr": "Comment combines-tu pleine conscience, repos, mouvement et lien avec les autres ?",
+"it": "Come unisci la mindfulness a riposo, movimento e relazioni?",
+"pt": "Como combinas o mindfulness com descanso, movimento e ligação aos outros?",
+"pt_BR": "Como você combina o mindfulness com descanso, movimento e conexão com os outros?"
+}
+},
+{
+"id": "mindfulness-097",
+"lv": "advanced",
+"i18n": {
+"en": "What is the most surprising thing you have discovered through practice?",
+"de": "Was ist das Überraschendste, das du durch die Praxis entdeckt hast?",
+"es": "¿Qué es lo más sorprendente que has descubierto gracias a la práctica?",
+"fr": "Quelle est la chose la plus surprenante que tu as découverte grâce à la pratique ?",
+"it": "Qual è la cosa più sorprendente che hai scoperto grazie alla pratica?",
+"pt": "Qual é a coisa mais surpreendente que descobriste com a prática?",
+"pt_BR": "Qual é a coisa mais surpreendente que você descobriu com a prática?"
+}
+},
+{
+"id": "mindfulness-098",
+"lv": "advanced",
+"i18n": {
+"en": "How has mindfulness changed the way you treat other people?",
+"de": "Wie hat Achtsamkeit deinen Umgang mit anderen Menschen verändert?",
+"es": "¿Cómo ha cambiado el mindfulness tu manera de tratar a los demás?",
+"fr": "Comment la pleine conscience a-t-elle changé ta façon de traiter les autres ?",
+"it": "Come ha cambiato la mindfulness il tuo modo di trattare gli altri?",
+"pt": "Como é que o mindfulness mudou a forma como tratas os outros?",
+"pt_BR": "Como o mindfulness mudou o jeito como você trata as outras pessoas?"
+}
+},
+{
+"id": "mindfulness-099",
+"lv": "advanced",
+"i18n": {
+"en": "Which practices do you want to keep for the rest of your life?",
+"de": "Welche Übungen möchtest du für den Rest deines Lebens beibehalten?",
+"es": "¿Qué prácticas quieres conservar para toda la vida?",
+"fr": "Quelles pratiques veux-tu garder toute ta vie ?",
+"it": "Quali pratiche vuoi mantenere per tutta la vita?",
+"pt": "Que práticas queres manter para o resto da vida?",
+"pt_BR": "Quais práticas você quer manter pelo resto da vida?"
+}
+},
+{
+"id": "mindfulness-100",
+"lv": "advanced",
+"i18n": {
+"en": "If you wrote a note to your future self about your practice, what would it say?",
+"de": "Wenn du deinem zukünftigen Ich eine Notiz über deine Praxis schreiben würdest, was stünde darin?",
+"es": "Si escribieras una nota a tu yo del futuro sobre tu práctica, ¿qué diría?",
+"fr": "Si tu écrivais un mot à ton futur toi sur ta pratique, que dirait-il ?",
+"it": "Se scrivessi un biglietto al te stesso del futuro sulla tua pratica, cosa direbbe?",
+"pt": "Se escrevesses um bilhete ao teu eu do futuro sobre a tua prática, o que diria?",
+"pt_BR": "Se você escrevesse um bilhete para o seu eu do futuro sobre a sua prática, o que ele diria?"
+}
+}
+]
+}

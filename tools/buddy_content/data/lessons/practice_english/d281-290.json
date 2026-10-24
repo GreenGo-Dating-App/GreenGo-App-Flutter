@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_english",
+ "lessons": [
+  {
+   "d": 281,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Third conditional: If I had known",
+     "g": "Welcome to B2! Imagine a different past with the third conditional.",
+     "p": [
+      "Form: If + had + past participle, would have + past participle: If I had left earlier, I wouldn't have missed the train.",
+      "It's about the past and it didn't happen: If we had booked (we didn't), we would have got a table (we didn't).",
+      "Swap would for could or might for less certainty: If she had studied, she might have passed. Spoken: I'd've, wouldn't've."
+     ],
+     "q": "Think of a small moment that changed your life. What would have happened if things had gone differently?",
+     "c": "Write three third conditional sentences about your past: one lucky moment, one mistake and one surprise."
+    },
+    "de": {
+     "t": "Third conditional: If I had known",
+     "g": "Willkommen bei B2! Mit dem third conditional stellst du dir eine andere Vergangenheit vor.",
+     "p": [
+      "Form: If + had + Partizip, would have + Partizip: If I had left earlier, I wouldn't have missed the train.",
+      "Es geht um die Vergangenheit, und es ist nicht passiert: If we had booked (haben wir nicht), we would have got a table.",
+      "Could oder might statt would für weniger Sicherheit: If she had studied, she might have passed. Gesprochen: I'd've."
+     ],
+     "q": "Denk an einen kleinen Moment, der dein Leben verändert hat. Was wäre passiert, wenn es anders gelaufen wäre?",
+     "c": "Schreib drei Sätze im third conditional über deine Vergangenheit: ein Glücksmoment, ein Fehler und eine Überraschung."
+    },
+    "es": {
+     "t": "Third conditional: If I had known",
+     "g": "¡Bienvenido al B2! Imagina un pasado distinto con el third conditional.",
+     "p": [
+      "Forma: If + had + participio, would have + participio: If I had left earlier, I wouldn't have missed the train.",
+      "Habla del pasado y de algo que no pasó: If we had booked (no reservamos), we would have got a table (no la tuvimos).",
+      "Cambia would por could o might para expresar menos certeza: If she had studied, she might have passed. Oral: I'd've."
+     ],
+     "q": "Piensa en un pequeño momento que cambió tu vida. ¿Qué habría pasado si las cosas hubieran ido de otra manera?",
+     "c": "Escribe tres frases en third conditional sobre tu pasado: un momento de suerte, un error y una sorpresa."
+    },
+    "fr": {
+     "t": "Third conditional: If I had known",
+     "g": "Bienvenue au B2 ! Imagine un passé différent avec le third conditional.",
+     "p": [
+      "Forme : If + had + participe, would have + participe : If I had left earlier, I wouldn't have missed the train.",
+      "C'est le passé et ça n'est pas arrivé : If we had booked (on ne l'a pas fait), we would have got a table.",
+      "Could ou might à la place de would pour moins de certitude : If she had studied, she might have passed. À l'oral : I'd've."
+     ],
+     "q": "Pense à un petit moment qui a changé ta vie. Que se serait-il passé si les choses avaient tourné autrement ?",
+     "c": "Écris trois phrases au third conditional sur ton passé : un coup de chance, une erreur et une surprise."
+    },
+    "it": {
+     "t": "Third conditional: If I had known",
+     "g": "Benvenuto al B2! Immagina un passato diverso con il third conditional.",
+     "p": [
+      "Forma: If + had + participio, would have + participio: If I had left earlier, I wouldn't have missed the train.",
+      "Parla del passato e di qualcosa che non è successo: If we had booked (non l'abbiamo fatto), we would have got a table.",
+      "Usa could o might al posto di would per meno certezza: If she had studied, she might have passed. Parlato: I'd've."
+     ],
+     "q": "Pensa a un piccolo momento che ti ha cambiato la vita. Cosa sarebbe successo se fosse andata diversamente?",
+     "c": "Scrivi tre frasi al third conditional sul tuo passato: un colpo di fortuna, un errore e una sorpresa."
+    },
+    "pt": {
+     "t": "Third conditional: If I had known",
+     "g": "Bem-vindo ao B2! Imagina um passado diferente com o third conditional.",
+     "p": [
+      "Forma: If + had + particípio, would have + particípio: If I had left earlier, I wouldn't have missed the train.",
+      "Fala do passado e de algo que não aconteceu: If we had booked (não reservámos), we would have got a table.",
+      "Troca would por could ou might para menos certeza: If she had studied, she might have passed. Na fala: I'd've."
+     ],
+     "q": "Pensa num pequeno momento que mudou a tua vida. O que teria acontecido se as coisas tivessem corrido de outra forma?",
+     "c": "Escreve três frases no third conditional sobre o teu passado: um momento de sorte, um erro e uma surpresa."
+    },
+    "pt_BR": {
+     "t": "Third conditional: If I had known",
+     "g": "Bem-vindo ao B2! Imagine um passado diferente com o third conditional.",
+     "p": [
+      "Forma: If + had + particípio, would have + particípio: If I had left earlier, I wouldn't have missed the train.",
+      "Fala do passado e de algo que não aconteceu: If we had booked (não reservamos), we would have got a table.",
+      "Troque would por could ou might para menos certeza: If she had studied, she might have passed. Na fala: I'd've."
+     ],
+     "q": "Pense num pequeno momento que mudou sua vida. O que teria acontecido se as coisas tivessem sido diferentes?",
+     "c": "Escreva três frases no third conditional sobre o seu passado: um momento de sorte, um erro e uma surpresa."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "If I had known",
+      "ex": "If I had known about the party, I would have come."
+     },
+     {
+      "w": "would have + past participle",
+      "ex": "We would have won if we had trained harder."
+     },
+     {
+      "w": "wouldn't have",
+      "ex": "If you hadn't helped me, I wouldn't have finished."
+     },
+     {
+      "w": "could have",
+      "ex": "If we had left earlier, we could have caught the train."
+     },
+     {
+      "w": "might have",
+      "ex": "If she had asked, he might have said yes."
+     },
+     {
+      "w": "had I known",
+      "ex": "Had I known it was your birthday, I'd have bought a cake."
+     }
+    ],
+    "gram": "Third conditional: If + past perfect, would/could/might have + past participle. It imagines an unreal past: If I had left, I'd have..."
+   }
+  },
+  {
+   "d": 282,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Mixed conditionals",
+     "g": "Mix past and present in one sentence with mixed conditionals.",
+     "p": [
+      "Past cause, present result: If I had studied medicine (past), I would be a doctor now (present).",
+      "Present cause, past result: If I were taller (always true), I would have joined the team (past).",
+      "Time words help: now, today, still, by now. If I hadn't met her, I wouldn't be so happy today."
+     ],
+     "q": "What's one past decision that shapes your life today? Make a mixed conditional about it.",
+     "c": "Write two mixed conditionals about yourself: one past → present and one present → past."
+    },
+    "de": {
+     "t": "Mixed conditionals",
+     "g": "Mit gemischten Bedingungssätzen verbindest du Vergangenheit und Gegenwart in einem Satz.",
+     "p": [
+      "Ursache in der Vergangenheit, Folge jetzt: If I had studied medicine (damals), I would be a doctor now (heute).",
+      "Ursache in der Gegenwart, Folge damals: If I were taller (immer wahr), I would have joined the team (damals).",
+      "Zeitwörter helfen: now, today, still, by now. If I hadn't met her, I wouldn't be so happy today."
+     ],
+     "q": "Welche frühere Entscheidung prägt dein Leben heute? Bilde einen gemischten Bedingungssatz dazu.",
+     "c": "Schreib zwei gemischte Bedingungssätze über dich: einen Vergangenheit → Gegenwart und einen Gegenwart → Vergangenheit."
+    },
+    "es": {
+     "t": "Mixed conditionals",
+     "g": "Mezcla pasado y presente en una frase con los condicionales mixtos.",
+     "p": [
+      "Causa pasada, resultado presente: If I had studied medicine (pasado), I would be a doctor now (presente).",
+      "Causa presente, resultado pasado: If I were taller (siempre cierto), I would have joined the team (pasado).",
+      "Las palabras de tiempo ayudan: now, today, still, by now. If I hadn't met her, I wouldn't be so happy today."
+     ],
+     "q": "¿Qué decisión pasada marca tu vida hoy? Haz un condicional mixto sobre ella.",
+     "c": "Escribe dos condicionales mixtos sobre ti: uno pasado → presente y otro presente → pasado."
+    },
+    "fr": {
+     "t": "Mixed conditionals",
+     "g": "Mélange passé et présent dans une même phrase avec les conditionnelles mixtes.",
+     "p": [
+      "Cause passée, résultat présent : If I had studied medicine (passé), I would be a doctor now (présent).",
+      "Cause présente, résultat passé : If I were taller (toujours vrai), I would have joined the team (passé).",
+      "Les mots de temps aident : now, today, still, by now. If I hadn't met her, I wouldn't be so happy today."
+     ],
+     "q": "Quelle décision passée influence ta vie aujourd'hui ? Fais une conditionnelle mixte à ce sujet.",
+     "c": "Écris deux conditionnelles mixtes sur toi : une passé → présent et une présent → passé."
+    },
+    "it": {
+     "t": "Mixed conditionals",
+     "g": "Mescola passato e presente in una frase con i periodi ipotetici misti.",
+     "p": [
+      "Causa passata, risultato presente: If I had studied medicine (passato), I would be a doctor now (presente).",
+      "Causa presente, risultato passato: If I were taller (sempre vero), I would have joined the team (passato).",
+      "Le parole di tempo aiutano: now, today, still, by now. If I hadn't met her, I wouldn't be so happy today."
+     ],
+     "q": "Quale decisione del passato influenza la tua vita di oggi? Crea un periodo ipotetico misto.",
+     "c": "Scrivi due periodi ipotetici misti su di te: uno passato → presente e uno presente → passato."
+    },
+    "pt": {
+     "t": "Mixed conditionals",
+     "g": "Mistura passado e presente numa só frase com as condicionais mistas.",
+     "p": [
+      "Causa passada, resultado presente: If I had studied medicine (passado), I would be a doctor now (presente).",
+      "Causa presente, resultado passado: If I were taller (sempre verdade), I would have joined the team (passado).",
+      "As palavras de tempo ajudam: now, today, still, by now. If I hadn't met her, I wouldn't be so happy today."
+     ],
+     "q": "Que decisão do passado marca a tua vida hoje? Faz uma condicional mista sobre ela.",
+     "c": "Escreve duas condicionais mistas sobre ti: uma passado → presente e outra presente → passado."
+    },
+    "pt_BR": {
+     "t": "Mixed conditionals",
+     "g": "Misture passado e presente numa só frase com as condicionais mistas.",
+     "p": [
+      "Causa passada, resultado presente: If I had studied medicine (passado), I would be a doctor now (presente).",
+      "Causa presente, resultado passado: If I were taller (sempre verdade), I would have joined the team (passado).",
+      "Palavras de tempo ajudam: now, today, still, by now. If I hadn't met her, I wouldn't be so happy today."
+     ],
+     "q": "Que decisão do passado marca a sua vida hoje? Faça uma condicional mista sobre ela.",
+     "c": "Escreva duas condicionais mistas sobre você: uma passado → presente e outra presente → passado."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "If I had studied..., I would be",
+      "ex": "If I had studied medicine, I would be a doctor now."
+     },
+     {
+      "w": "If I were..., I would have",
+      "ex": "If I were braver, I would have said something."
+     },
+     {
+      "w": "now",
+      "ex": "If I hadn't moved, I wouldn't know you now."
+     },
+     {
+      "w": "today",
+      "ex": "If we had saved more, we'd be on holiday today."
+     },
+     {
+      "w": "still",
+      "ex": "If he hadn't stopped training, he'd still be playing."
+     },
+     {
+      "w": "by now",
+      "ex": "If they had left on time, they'd be here by now."
+     }
+    ],
+    "gram": "Mixed: past cause → present result: If + past perfect, would + verb. Present fact → past result: If + past simple, would have + pp."
+   }
+  },
+  {
+   "d": 283,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Regrets: I wish I had, if only",
+     "g": "Talk about past regrets with I wish I had and If only I had.",
+     "p": [
+      "Past regret: I wish + past perfect: I wish I had studied harder. I wish I hadn't said that.",
+      "If only is stronger and more emotional: If only I had listened to you! If only we had left earlier!",
+      "Compare: I wish I knew (present: I don't know now) vs I wish I had known (past: I didn't know then)."
+     ],
+     "q": "Is there something small you wish you had done differently? What would you do now?",
+     "c": "Write three wishes: one past regret with I wish I had, one with If only and one about the present with I wish I knew/were."
+    },
+    "de": {
+     "t": "Regrets: I wish I had, if only",
+     "g": "Du sprichst über Bedauern in der Vergangenheit mit I wish I had und If only I had.",
+     "p": [
+      "Bedauern über Vergangenes: I wish + past perfect: I wish I had studied harder. I wish I hadn't said that.",
+      "If only ist stärker und emotionaler: If only I had listened to you! If only we had left earlier!",
+      "Vergleich: I wish I knew (jetzt weiß ich es nicht) vs. I wish I had known (damals wusste ich es nicht)."
+     ],
+     "q": "Gibt es etwas Kleines, das du gern anders gemacht hättest? Was würdest du heute tun?",
+     "c": "Schreib drei Wünsche: ein Bedauern mit I wish I had, einen Satz mit If only und einen zur Gegenwart mit I wish I knew/were."
+    },
+    "es": {
+     "t": "Regrets: I wish I had, if only",
+     "g": "Habla de arrepentimientos del pasado con I wish I had e If only I had.",
+     "p": [
+      "Lamento del pasado: I wish + past perfect: I wish I had studied harder. I wish I hadn't said that.",
+      "If only es más fuerte y emotivo: If only I had listened to you! If only we had left earlier!",
+      "Compara: I wish I knew (ahora no lo sé) con I wish I had known (entonces no lo sabía)."
+     ],
+     "q": "¿Hay algo pequeño que te gustaría haber hecho de otra manera? ¿Qué harías ahora?",
+     "c": "Escribe tres deseos: un lamento con I wish I had, uno con If only y uno sobre el presente con I wish I knew/were."
+    },
+    "fr": {
+     "t": "Regrets: I wish I had, if only",
+     "g": "Parle de tes regrets avec I wish I had et If only I had.",
+     "p": [
+      "Regret passé : I wish + past perfect : I wish I had studied harder. I wish I hadn't said that.",
+      "If only est plus fort et plus émotionnel : If only I had listened to you! If only we had left earlier!",
+      "Compare : I wish I knew (présent : je ne sais pas) et I wish I had known (passé : je ne savais pas)."
+     ],
+     "q": "Y a-t-il une petite chose que tu aurais aimé faire autrement ? Que ferais-tu maintenant ?",
+     "c": "Écris trois souhaits : un regret avec I wish I had, un avec If only et un sur le présent avec I wish I knew/were."
+    },
+    "it": {
+     "t": "Regrets: I wish I had, if only",
+     "g": "Parla dei rimpianti con I wish I had e If only I had.",
+     "p": [
+      "Rimpianto passato: I wish + past perfect: I wish I had studied harder. I wish I hadn't said that.",
+      "If only è più forte ed emotivo: If only I had listened to you! If only we had left earlier!",
+      "Confronta: I wish I knew (presente: ora non lo so) e I wish I had known (passato: allora non lo sapevo)."
+     ],
+     "q": "C'è una piccola cosa che avresti voluto fare diversamente? Cosa faresti adesso?",
+     "c": "Scrivi tre desideri: un rimpianto con I wish I had, uno con If only e uno sul presente con I wish I knew/were."
+    },
+    "pt": {
+     "t": "Regrets: I wish I had, if only",
+     "g": "Fala de arrependimentos com I wish I had e If only I had.",
+     "p": [
+      "Arrependimento passado: I wish + past perfect: I wish I had studied harder. I wish I hadn't said that.",
+      "If only é mais forte e emotivo: If only I had listened to you! If only we had left earlier!",
+      "Compara: I wish I knew (presente: agora não sei) e I wish I had known (passado: na altura não sabia)."
+     ],
+     "q": "Há alguma coisa pequena que gostavas de ter feito de outra maneira? O que farias agora?",
+     "c": "Escreve três desejos: um arrependimento com I wish I had, um com If only e um sobre o presente com I wish I knew/were."
+    },
+    "pt_BR": {
+     "t": "Regrets: I wish I had, if only",
+     "g": "Fale de arrependimentos com I wish I had e If only I had.",
+     "p": [
+      "Arrependimento passado: I wish + past perfect: I wish I had studied harder. I wish I hadn't said that.",
+      "If only é mais forte e emotivo: If only I had listened to you! If only we had left earlier!",
+      "Compare: I wish I knew (presente: agora não sei) e I wish I had known (passado: na época não sabia)."
+     ],
+     "q": "Tem alguma coisa pequena que você gostaria de ter feito diferente? O que faria agora?",
+     "c": "Escreva três desejos: um arrependimento com I wish I had, um com If only e um sobre o presente com I wish I knew/were."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "I wish I had",
+      "ex": "I wish I had learned to swim as a child."
+     },
+     {
+      "w": "I wish I hadn't",
+      "ex": "I wish I hadn't eaten so much cake."
+     },
+     {
+      "w": "If only I had",
+      "ex": "If only I had brought an umbrella!"
+     },
+     {
+      "w": "I wish I were",
+      "ex": "I wish I were on the beach right now."
+     },
+     {
+      "w": "I wish you would",
+      "ex": "I wish you would call more often."
+     },
+     {
+      "w": "in hindsight",
+      "ex": "In hindsight, I should have asked for help."
+     }
+    ],
+    "gram": "Wishes: I wish / If only + past perfect for past regrets (I wish I had gone); + past simple for present (I wish I knew)."
+   }
+  },
+  {
+   "d": 284,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Should have and ought to have",
+     "g": "Criticise or regret past actions with should have and ought to have.",
+     "p": [
+      "Regret: I should have left earlier (I didn't). Criticism: You shouldn't have shouted (you did).",
+      "Ought to have means the same but is more formal: We ought to have booked in advance.",
+      "Could have for missed chances or mild complaints: You could have asked me! Also the polite thanks: Oh, you shouldn't have!"
+     ],
+     "q": "Think of a time something went wrong. What should you have done differently?",
+     "c": "Write about a small disaster (late, lost, forgotten) in four sentences with should have, shouldn't have and could have."
+    },
+    "de": {
+     "t": "Should have and ought to have",
+     "g": "Du kritisierst oder bedauerst vergangene Handlungen mit should have und ought to have.",
+     "p": [
+      "Bedauern: I should have left earlier (habe ich nicht). Kritik: You shouldn't have shouted (hast du aber).",
+      "Ought to have bedeutet dasselbe, klingt aber formeller: We ought to have booked in advance.",
+      "Could have für verpasste Chancen oder sanfte Vorwürfe: You could have asked me! Und als Dank: Oh, you shouldn't have!"
+     ],
+     "q": "Denk an eine Situation, in der etwas schiefging. Was hättest du anders machen sollen?",
+     "c": "Schreib über ein kleines Missgeschick (zu spät, verloren, vergessen) in vier Sätzen mit should have, shouldn't have und could have."
+    },
+    "es": {
+     "t": "Should have and ought to have",
+     "g": "Critica o lamenta acciones pasadas con should have y ought to have.",
+     "p": [
+      "Lamento: I should have left earlier (no lo hice). Crítica: You shouldn't have shouted (lo hiciste).",
+      "Ought to have significa lo mismo pero es más formal: We ought to have booked in advance.",
+      "Could have para oportunidades perdidas o quejas suaves: You could have asked me! Y para agradecer: Oh, you shouldn't have!"
+     ],
+     "q": "Piensa en una vez en que algo salió mal. ¿Qué deberías haber hecho de otra manera?",
+     "c": "Escribe sobre un pequeño desastre (llegar tarde, perder, olvidar) en cuatro frases con should have, shouldn't have y could have."
+    },
+    "fr": {
+     "t": "Should have and ought to have",
+     "g": "Critique ou regrette des actions passées avec should have et ought to have.",
+     "p": [
+      "Regret : I should have left earlier (je ne l'ai pas fait). Critique : You shouldn't have shouted (tu l'as fait).",
+      "Ought to have veut dire la même chose, en plus formel : We ought to have booked in advance.",
+      "Could have pour une occasion manquée ou un reproche léger : You could have asked me! Et pour remercier : Oh, you shouldn't have!"
+     ],
+     "q": "Pense à une fois où quelque chose a mal tourné. Qu'aurais-tu dû faire autrement ?",
+     "c": "Raconte un petit désastre (retard, perte, oubli) en quatre phrases avec should have, shouldn't have et could have."
+    },
+    "it": {
+     "t": "Should have and ought to have",
+     "g": "Critica o rimpiangi azioni passate con should have e ought to have.",
+     "p": [
+      "Rimpianto: I should have left earlier (non l'ho fatto). Critica: You shouldn't have shouted (l'hai fatto).",
+      "Ought to have significa lo stesso ma è più formale: We ought to have booked in advance.",
+      "Could have per occasioni perse o lievi rimproveri: You could have asked me! E per ringraziare: Oh, you shouldn't have!"
+     ],
+     "q": "Pensa a una volta in cui qualcosa è andato storto. Cosa avresti dovuto fare diversamente?",
+     "c": "Racconta un piccolo disastro (ritardo, perdita, dimenticanza) in quattro frasi con should have, shouldn't have e could have."
+    },
+    "pt": {
+     "t": "Should have and ought to have",
+     "g": "Critica ou lamenta ações passadas com should have e ought to have.",
+     "p": [
+      "Arrependimento: I should have left earlier (não saí). Crítica: You shouldn't have shouted (gritaste).",
+      "Ought to have quer dizer o mesmo, mas é mais formal: We ought to have booked in advance.",
+      "Could have para oportunidades perdidas ou queixas leves: You could have asked me! E para agradecer: Oh, you shouldn't have!"
+     ],
+     "q": "Pensa numa vez em que algo correu mal. O que devias ter feito de outra forma?",
+     "c": "Escreve sobre um pequeno desastre (atraso, perda, esquecimento) em quatro frases com should have, shouldn't have e could have."
+    },
+    "pt_BR": {
+     "t": "Should have and ought to have",
+     "g": "Critique ou lamente ações passadas com should have e ought to have.",
+     "p": [
+      "Arrependimento: I should have left earlier (não saí). Crítica: You shouldn't have shouted (você gritou).",
+      "Ought to have significa o mesmo, mas é mais formal: We ought to have booked in advance.",
+      "Could have para chances perdidas ou queixas leves: You could have asked me! E para agradecer: Oh, you shouldn't have!"
+     ],
+     "q": "Pense numa vez em que algo deu errado. O que você deveria ter feito diferente?",
+     "c": "Escreva sobre um pequeno desastre (atraso, perda, esquecimento) em quatro frases com should have, shouldn't have e could have."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "should have",
+      "ex": "I should have called you yesterday."
+     },
+     {
+      "w": "shouldn't have",
+      "ex": "You shouldn't have worried so much."
+     },
+     {
+      "w": "ought to have",
+      "ex": "We ought to have checked the weather."
+     },
+     {
+      "w": "could have",
+      "ex": "You could have told me earlier!"
+     },
+     {
+      "w": "needn't have worried",
+      "ex": "You needn't have worried: it all went well."
+     },
+     {
+      "w": "You shouldn't have!",
+      "ex": "Flowers for me? Oh, you shouldn't have!"
+     }
+    ],
+    "gram": "Should/ought to have + past participle: criticism or regret about the past. Should have = it was a good idea but didn't happen."
+   }
+  },
+  {
+   "d": 285,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Future continuous: I'll be working",
+     "g": "Describe actions in progress at a future time with the future continuous.",
+     "p": [
+      "Form: will be + -ing: This time tomorrow, I'll be lying on the beach. At nine, I'll be sitting my exam.",
+      "It shows the middle of an action, not the start: When you arrive, we'll be eating (we'll have started before).",
+      "Polite questions about plans: Will you be using the printer later? Will you be coming to the meeting?"
+     ],
+     "q": "What will you be doing this time next week? And this time next year?",
+     "c": "Write four sentences about tomorrow at different times, e.g. At 7 a.m. I'll be having breakfast, with will be + -ing."
+    },
+    "de": {
+     "t": "Future continuous: I'll be working",
+     "g": "Du beschreibst mit dem future continuous Handlungen, die zu einem Zeitpunkt in der Zukunft laufen.",
+     "p": [
+      "Form: will be + -ing: This time tomorrow, I'll be lying on the beach. At nine, I'll be sitting my exam.",
+      "Es zeigt die Mitte einer Handlung, nicht den Anfang: When you arrive, we'll be eating (wir haben schon angefangen).",
+      "Höfliche Fragen nach Plänen: Will you be using the printer later? Will you be coming to the meeting?"
+     ],
+     "q": "Was wirst du genau eine Woche von jetzt gerade tun? Und in einem Jahr?",
+     "c": "Schreib vier Sätze über morgen zu verschiedenen Uhrzeiten, z. B. At 7 a.m. I'll be having breakfast, mit will be + -ing."
+    },
+    "es": {
+     "t": "Future continuous: I'll be working",
+     "g": "Describe acciones en curso en un momento futuro con el future continuous.",
+     "p": [
+      "Forma: will be + -ing: This time tomorrow, I'll be lying on the beach. At nine, I'll be sitting my exam.",
+      "Muestra la acción a medias, no el comienzo: When you arrive, we'll be eating (ya habremos empezado).",
+      "Preguntas educadas sobre planes: Will you be using the printer later? Will you be coming to the meeting?"
+     ],
+     "q": "¿Qué estarás haciendo a esta hora la semana que viene? ¿Y dentro de un año?",
+     "c": "Escribe cuatro frases sobre mañana a distintas horas, p. ej. At 7 a.m. I'll be having breakfast, con will be + -ing."
+    },
+    "fr": {
+     "t": "Future continuous: I'll be working",
+     "g": "Décris des actions en cours à un moment futur avec le future continuous.",
+     "p": [
+      "Forme : will be + -ing : This time tomorrow, I'll be lying on the beach. At nine, I'll be sitting my exam.",
+      "Il montre l'action en cours, pas son début : When you arrive, we'll be eating (on aura déjà commencé).",
+      "Questions polies sur les projets : Will you be using the printer later? Will you be coming to the meeting?"
+     ],
+     "q": "Que seras-tu en train de faire à cette heure-ci la semaine prochaine ? Et dans un an ?",
+     "c": "Écris quatre phrases sur demain à différentes heures, par ex. At 7 a.m. I'll be having breakfast, avec will be + -ing."
+    },
+    "it": {
+     "t": "Future continuous: I'll be working",
+     "g": "Descrivi azioni in corso in un momento futuro con il future continuous.",
+     "p": [
+      "Forma: will be + -ing: This time tomorrow, I'll be lying on the beach. At nine, I'll be sitting my exam.",
+      "Mostra l'azione nel mezzo, non l'inizio: When you arrive, we'll be eating (avremo già iniziato).",
+      "Domande gentili sui programmi: Will you be using the printer later? Will you be coming to the meeting?"
+     ],
+     "q": "Cosa starai facendo a quest'ora la settimana prossima? E tra un anno?",
+     "c": "Scrivi quattro frasi su domani a orari diversi, ad es. At 7 a.m. I'll be having breakfast, con will be + -ing."
+    },
+    "pt": {
+     "t": "Future continuous: I'll be working",
+     "g": "Descreve ações em curso num momento futuro com o future continuous.",
+     "p": [
+      "Forma: will be + -ing: This time tomorrow, I'll be lying on the beach. At nine, I'll be sitting my exam.",
+      "Mostra a ação a decorrer, não o início: When you arrive, we'll be eating (já teremos começado).",
+      "Perguntas educadas sobre planos: Will you be using the printer later? Will you be coming to the meeting?"
+     ],
+     "q": "O que vais estar a fazer a esta hora na próxima semana? E daqui a um ano?",
+     "c": "Escreve quatro frases sobre amanhã a horas diferentes, p. ex. At 7 a.m. I'll be having breakfast, com will be + -ing."
+    },
+    "pt_BR": {
+     "t": "Future continuous: I'll be working",
+     "g": "Descreva ações em andamento num momento futuro com o future continuous.",
+     "p": [
+      "Forma: will be + -ing: This time tomorrow, I'll be lying on the beach. At nine, I'll be sitting my exam.",
+      "Mostra a ação no meio, não o começo: When you arrive, we'll be eating (já teremos começado).",
+      "Perguntas educadas sobre planos: Will you be using the printer later? Will you be coming to the meeting?"
+     ],
+     "q": "O que você vai estar fazendo a esta hora na semana que vem? E daqui a um ano?",
+     "c": "Escreva quatro frases sobre amanhã em horários diferentes, ex.: At 7 a.m. I'll be having breakfast, com will be + -ing."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "this time tomorrow",
+      "ex": "This time tomorrow, I'll be flying to Rome."
+     },
+     {
+      "w": "I'll be working",
+      "ex": "Don't call at ten: I'll be working."
+     },
+     {
+      "w": "Will you be using...?",
+      "ex": "Will you be using the car tonight?"
+     },
+     {
+      "w": "at eight o'clock tonight",
+      "ex": "At eight o'clock tonight, we'll be having dinner."
+     },
+     {
+      "w": "in ten years' time",
+      "ex": "In ten years' time, I'll be living by the sea."
+     },
+     {
+      "w": "I'll be passing",
+      "ex": "I'll be passing the bakery, so I can get bread."
+     }
+    ],
+    "gram": "Future continuous: will be + -ing for an action in progress at a future time, or a routine/polite question: Will you be joining us?"
+   }
+  },
+  {
+   "d": 286,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Future perfect: I'll have finished",
+     "g": "Talk about actions completed before a future point with the future perfect.",
+     "p": [
+      "Form: will have + past participle: By June, I'll have finished the course. By 2030, we'll have paid off the flat.",
+      "By means not later than: by Friday, by then, by the time you get here. By the time you wake up, I'll have left.",
+      "Compare: At six I'll be cooking (in progress) vs By six I'll have cooked dinner (finished)."
+     ],
+     "q": "What will you have achieved by the end of this course? And by this time next year?",
+     "c": "Write three goals with the future perfect and by: one for next month, one for next year and one for five years' time."
+    },
+    "de": {
+     "t": "Future perfect: I'll have finished",
+     "g": "Du sprichst mit dem future perfect über Handlungen, die vor einem Zeitpunkt in der Zukunft abgeschlossen sind.",
+     "p": [
+      "Form: will have + Partizip: By June, I'll have finished the course. By 2030, we'll have paid off the flat.",
+      "By heißt spätestens: by Friday, by then, by the time you get here. By the time you wake up, I'll have left.",
+      "Vergleich: At six I'll be cooking (läuft gerade) vs. By six I'll have cooked dinner (fertig)."
+     ],
+     "q": "Was wirst du bis zum Ende dieses Kurses erreicht haben? Und bis nächstes Jahr um diese Zeit?",
+     "c": "Schreib drei Ziele mit future perfect und by: eins für nächsten Monat, eins für nächstes Jahr und eins für in fünf Jahren."
+    },
+    "es": {
+     "t": "Future perfect: I'll have finished",
+     "g": "Habla de acciones terminadas antes de un momento futuro con el future perfect.",
+     "p": [
+      "Forma: will have + participio: By June, I'll have finished the course. By 2030, we'll have paid off the flat.",
+      "By significa como muy tarde: by Friday, by then, by the time you get here. By the time you wake up, I'll have left.",
+      "Compara: At six I'll be cooking (en curso) con By six I'll have cooked dinner (terminado)."
+     ],
+     "q": "¿Qué habrás conseguido al final de este curso? ¿Y dentro de un año por estas fechas?",
+     "c": "Escribe tres metas con el future perfect y by: una para el mes que viene, otra para el año que viene y otra para dentro de cinco años."
+    },
+    "fr": {
+     "t": "Future perfect: I'll have finished",
+     "g": "Parle d'actions terminées avant un moment futur avec le future perfect.",
+     "p": [
+      "Forme : will have + participe : By June, I'll have finished the course. By 2030, we'll have paid off the flat.",
+      "By veut dire au plus tard : by Friday, by then, by the time you get here. By the time you wake up, I'll have left.",
+      "Compare : At six I'll be cooking (en cours) et By six I'll have cooked dinner (terminé)."
+     ],
+     "q": "Qu'auras-tu accompli à la fin de ce cours ? Et l'an prochain à la même époque ?",
+     "c": "Écris trois objectifs au future perfect avec by : un pour le mois prochain, un pour l'an prochain et un pour dans cinq ans."
+    },
+    "it": {
+     "t": "Future perfect: I'll have finished",
+     "g": "Parla di azioni concluse prima di un momento futuro con il future perfect.",
+     "p": [
+      "Forma: will have + participio: By June, I'll have finished the course. By 2030, we'll have paid off the flat.",
+      "By significa entro: by Friday, by then, by the time you get here. By the time you wake up, I'll have left.",
+      "Confronta: At six I'll be cooking (in corso) e By six I'll have cooked dinner (concluso)."
+     ],
+     "q": "Cosa avrai ottenuto alla fine di questo corso? E l'anno prossimo di questi tempi?",
+     "c": "Scrivi tre obiettivi con il future perfect e by: uno per il mese prossimo, uno per l'anno prossimo e uno tra cinque anni."
+    },
+    "pt": {
+     "t": "Future perfect: I'll have finished",
+     "g": "Fala de ações concluídas antes de um momento futuro com o future perfect.",
+     "p": [
+      "Forma: will have + particípio: By June, I'll have finished the course. By 2030, we'll have paid off the flat.",
+      "By quer dizer até, o mais tardar: by Friday, by then, by the time you get here. By the time you wake up, I'll have left.",
+      "Compara: At six I'll be cooking (a decorrer) e By six I'll have cooked dinner (terminado)."
+     ],
+     "q": "O que terás conseguido no fim deste curso? E daqui a um ano?",
+     "c": "Escreve três objetivos com o future perfect e by: um para o próximo mês, um para o próximo ano e um para daqui a cinco anos."
+    },
+    "pt_BR": {
+     "t": "Future perfect: I'll have finished",
+     "g": "Fale de ações concluídas antes de um momento futuro com o future perfect.",
+     "p": [
+      "Forma: will have + particípio: By June, I'll have finished the course. By 2030, we'll have paid off the flat.",
+      "By significa até, no máximo: by Friday, by then, by the time you get here. By the time you wake up, I'll have left.",
+      "Compare: At six I'll be cooking (em andamento) e By six I'll have cooked dinner (concluído)."
+     ],
+     "q": "O que você terá conquistado no fim deste curso? E daqui a um ano?",
+     "c": "Escreva três metas com o future perfect e by: uma para o mês que vem, uma para o ano que vem e uma para daqui a cinco anos."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "by June",
+      "ex": "By June, I'll have finished the course."
+     },
+     {
+      "w": "I'll have finished",
+      "ex": "Call me at six: I'll have finished work by then."
+     },
+     {
+      "w": "by the time",
+      "ex": "By the time you arrive, we'll have eaten."
+     },
+     {
+      "w": "won't have",
+      "ex": "I won't have read the book by Monday."
+     },
+     {
+      "w": "Will you have...?",
+      "ex": "Will you have finished the report by Friday?"
+     },
+     {
+      "w": "by the end of the year",
+      "ex": "By the end of the year, I'll have saved enough."
+     }
+    ],
+    "gram": "Future perfect: will have + past participle for actions completed before a future point. Often with by (by Friday, by the time...)."
+   }
+  },
+  {
+   "d": 287,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Future in the past: was going to",
+     "g": "Talk about plans that changed with was going to and other futures in the past.",
+     "p": [
+      "Was/were going to + verb, often followed by but: I was going to call you, but my phone died.",
+      "Was supposed to for expectations that didn't happen: The parcel was supposed to arrive yesterday.",
+      "Would after past reporting verbs: She said she would help. I knew it would be a great day."
+     ],
+     "q": "Tell me about a plan that didn't work out as expected. What were you going to do, and what happened instead?",
+     "c": "Write three sentences about changed plans: one with was going to... but, one with was supposed to and one with said... would."
+    },
+    "de": {
+     "t": "Future in the past: was going to",
+     "g": "Du sprichst über geänderte Pläne mit was going to und anderen Zukunftsformen in der Vergangenheit.",
+     "p": [
+      "Was/were going to + Verb, oft mit but: I was going to call you, but my phone died.",
+      "Was supposed to für Erwartungen, die nicht eintraten: The parcel was supposed to arrive yesterday.",
+      "Would nach Verben des Sagens in der Vergangenheit: She said she would help. I knew it would be a great day."
+     ],
+     "q": "Erzähl mir von einem Plan, der anders lief als gedacht. Was wolltest du tun, und was ist stattdessen passiert?",
+     "c": "Schreib drei Sätze über geänderte Pläne: mit was going to... but, mit was supposed to und mit said... would."
+    },
+    "es": {
+     "t": "Future in the past: was going to",
+     "g": "Habla de planes que cambiaron con was going to y otros futuros en pasado.",
+     "p": [
+      "Was/were going to + verbo, a menudo con but: I was going to call you, but my phone died.",
+      "Was supposed to para lo que se esperaba y no pasó: The parcel was supposed to arrive yesterday.",
+      "Would después de verbos de decir en pasado: She said she would help. I knew it would be a great day."
+     ],
+     "q": "Cuéntame un plan que no salió como esperabas. ¿Qué ibas a hacer y qué pasó en su lugar?",
+     "c": "Escribe tres frases sobre planes que cambiaron: con was going to... but, con was supposed to y con said... would."
+    },
+    "fr": {
+     "t": "Future in the past: was going to",
+     "g": "Parle de projets qui ont changé avec was going to et d'autres futurs dans le passé.",
+     "p": [
+      "Was/were going to + verbe, souvent suivi de but : I was going to call you, but my phone died.",
+      "Was supposed to pour ce qui était prévu mais n'a pas eu lieu : The parcel was supposed to arrive yesterday.",
+      "Would après un verbe de parole au passé : She said she would help. I knew it would be a great day."
+     ],
+     "q": "Raconte-moi un projet qui ne s'est pas passé comme prévu. Qu'allais-tu faire et que s'est-il passé à la place ?",
+     "c": "Écris trois phrases sur des projets modifiés : avec was going to... but, avec was supposed to et avec said... would."
+    },
+    "it": {
+     "t": "Future in the past: was going to",
+     "g": "Parla di piani cambiati con was going to e altri futuri nel passato.",
+     "p": [
+      "Was/were going to + verbo, spesso seguito da but: I was going to call you, but my phone died.",
+      "Was supposed to per ciò che era previsto e non è successo: The parcel was supposed to arrive yesterday.",
+      "Would dopo verbi del dire al passato: She said she would help. I knew it would be a great day."
+     ],
+     "q": "Raccontami un piano che non è andato come previsto. Cosa stavi per fare e cosa è successo invece?",
+     "c": "Scrivi tre frasi su piani cambiati: con was going to... but, con was supposed to e con said... would."
+    },
+    "pt": {
+     "t": "Future in the past: was going to",
+     "g": "Fala de planos que mudaram com was going to e outros futuros no passado.",
+     "p": [
+      "Was/were going to + verbo, muitas vezes com but: I was going to call you, but my phone died.",
+      "Was supposed to para o que era esperado e não aconteceu: The parcel was supposed to arrive yesterday.",
+      "Would depois de verbos de dizer no passado: She said she would help. I knew it would be a great day."
+     ],
+     "q": "Conta-me um plano que não correu como esperavas. O que ias fazer e o que aconteceu em vez disso?",
+     "c": "Escreve três frases sobre planos que mudaram: com was going to... but, com was supposed to e com said... would."
+    },
+    "pt_BR": {
+     "t": "Future in the past: was going to",
+     "g": "Fale de planos que mudaram com was going to e outros futuros no passado.",
+     "p": [
+      "Was/were going to + verbo, muitas vezes com but: I was going to call you, but my phone died.",
+      "Was supposed to para o que era esperado e não aconteceu: The parcel was supposed to arrive yesterday.",
+      "Would depois de verbos de dizer no passado: She said she would help. I knew it would be a great day."
+     ],
+     "q": "Me conte um plano que não saiu como você esperava. O que ia fazer e o que aconteceu no lugar?",
+     "c": "Escreva três frases sobre planos que mudaram: com was going to... but, com was supposed to e com said... would."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "was going to",
+      "ex": "I was going to call you, but my phone died."
+     },
+     {
+      "w": "were going to",
+      "ex": "We were going to go camping, but it rained."
+     },
+     {
+      "w": "was about to",
+      "ex": "I was about to leave when you arrived."
+     },
+     {
+      "w": "was supposed to",
+      "ex": "The train was supposed to arrive at six."
+     },
+     {
+      "w": "would (future in the past)",
+      "ex": "She promised she would help me."
+     },
+     {
+      "w": "was planning to",
+      "ex": "I was planning to cook, but we ordered pizza."
+     }
+    ],
+    "gram": "Future in the past: was/were going to + verb for plans that changed; would for reported promises: He said he would come. Often + but."
+   }
+  },
+  {
+   "d": 288,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Be about to, be due to",
+     "g": "Talk about very near and scheduled futures with be about to and be due to.",
+     "p": [
+      "Be about to = any moment now: The train is about to leave. I was just about to call you!",
+      "Be due to = scheduled or expected: The plane is due to land at 6:15. The report is due on Friday.",
+      "Be on the point of + -ing is even nearer and more formal: She was on the point of leaving when he arrived."
+     ],
+     "q": "What is something you are about to do this week, and something that is due soon?",
+     "c": "Write four sentences: one with is about to, one with was about to... when, one with is due to and one with is due on."
+    },
+    "de": {
+     "t": "Be about to, be due to",
+     "g": "Du sprichst über die ganz nahe und die geplante Zukunft mit be about to und be due to.",
+     "p": [
+      "Be about to = jeden Moment: The train is about to leave. I was just about to call you!",
+      "Be due to = geplant oder erwartet: The plane is due to land at 6:15. The report is due on Friday.",
+      "Be on the point of + -ing ist noch näher und formeller: She was on the point of leaving when he arrived."
+     ],
+     "q": "Was hast du diese Woche gleich vor, und was ist bald fällig?",
+     "c": "Schreib vier Sätze: mit is about to, mit was about to... when, mit is due to und mit is due on."
+    },
+    "es": {
+     "t": "Be about to, be due to",
+     "g": "Habla del futuro inmediato y programado con be about to y be due to.",
+     "p": [
+      "Be about to = en cualquier momento: The train is about to leave. I was just about to call you!",
+      "Be due to = programado o previsto: The plane is due to land at 6:15. The report is due on Friday.",
+      "Be on the point of + -ing es aún más inminente y formal: She was on the point of leaving when he arrived."
+     ],
+     "q": "¿Qué estás a punto de hacer esta semana y qué tienes que entregar pronto?",
+     "c": "Escribe cuatro frases: con is about to, con was about to... when, con is due to y con is due on."
+    },
+    "fr": {
+     "t": "Be about to, be due to",
+     "g": "Parle du futur imminent et prévu avec be about to et be due to.",
+     "p": [
+      "Be about to = d'un instant à l'autre : The train is about to leave. I was just about to call you!",
+      "Be due to = prévu ou attendu : The plane is due to land at 6:15. The report is due on Friday.",
+      "Be on the point of + -ing est encore plus proche et plus formel : She was on the point of leaving when he arrived."
+     ],
+     "q": "Qu'es-tu sur le point de faire cette semaine, et qu'as-tu à rendre bientôt ?",
+     "c": "Écris quatre phrases : avec is about to, avec was about to... when, avec is due to et avec is due on."
+    },
+    "it": {
+     "t": "Be about to, be due to",
+     "g": "Parla del futuro imminente e programmato con be about to e be due to.",
+     "p": [
+      "Be about to = da un momento all'altro: The train is about to leave. I was just about to call you!",
+      "Be due to = programmato o previsto: The plane is due to land at 6:15. The report is due on Friday.",
+      "Be on the point of + -ing è ancora più vicino e formale: She was on the point of leaving when he arrived."
+     ],
+     "q": "Cosa stai per fare questa settimana e cosa devi consegnare a breve?",
+     "c": "Scrivi quattro frasi: con is about to, con was about to... when, con is due to e con is due on."
+    },
+    "pt": {
+     "t": "Be about to, be due to",
+     "g": "Fala do futuro imediato e programado com be about to e be due to.",
+     "p": [
+      "Be about to = a qualquer momento: The train is about to leave. I was just about to call you!",
+      "Be due to = programado ou previsto: The plane is due to land at 6:15. The report is due on Friday.",
+      "Be on the point of + -ing é ainda mais próximo e formal: She was on the point of leaving when he arrived."
+     ],
+     "q": "O que estás prestes a fazer esta semana e o que tens de entregar em breve?",
+     "c": "Escreve quatro frases: com is about to, com was about to... when, com is due to e com is due on."
+    },
+    "pt_BR": {
+     "t": "Be about to, be due to",
+     "g": "Fale do futuro imediato e programado com be about to e be due to.",
+     "p": [
+      "Be about to = a qualquer momento: The train is about to leave. I was just about to call you!",
+      "Be due to = programado ou previsto: The plane is due to land at 6:15. The report is due on Friday.",
+      "Be on the point of + -ing é ainda mais próximo e formal: She was on the point of leaving when he arrived."
+     ],
+     "q": "O que você está prestes a fazer esta semana e o que precisa entregar em breve?",
+     "c": "Escreva quatro frases: com is about to, com was about to... when, com is due to e com is due on."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "be about to",
+      "ex": "Hurry up! The film is about to start."
+     },
+     {
+      "w": "be on the point of",
+      "ex": "I was on the point of giving up when it worked."
+     },
+     {
+      "w": "be due to",
+      "ex": "The train is due to arrive at six."
+     },
+     {
+      "w": "be due (baby/rent)",
+      "ex": "The rent is due on the first of the month."
+     },
+     {
+      "w": "be set to",
+      "ex": "The new bridge is set to open next spring."
+     },
+     {
+      "w": "be just about to",
+      "ex": "I was just about to text you!"
+     }
+    ],
+    "gram": "Be about to + verb = very near future; be due to + verb = scheduled; be on the point of + -ing = extremely near. All use be in any tense."
+   }
+  },
+  {
+   "d": 289,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Advanced passive: It is said that",
+     "g": "Report general opinions formally with It is said that and he is said to be.",
+     "p": [
+      "Pattern 1: It is + said/believed/thought/expected + that: It is believed that the bridge is 800 years old.",
+      "Pattern 2: subject + is said to + verb: The bridge is believed to be 800 years old. He is said to speak six languages.",
+      "Past: to have + past participle: The pyramid is thought to have been built in twenty years."
+     ],
+     "q": "What is something that is said about your city or country? Do you think it's true?",
+     "c": "Write three sentences about a local legend or famous place using It is said that, is believed to be and is thought to have."
+    },
+    "de": {
+     "t": "Advanced passive: It is said that",
+     "g": "Du gibst allgemeine Meinungen formell wieder mit It is said that und he is said to be.",
+     "p": [
+      "Muster 1: It is + said/believed/thought/expected + that: It is believed that the bridge is 800 years old.",
+      "Muster 2: Subjekt + is said to + Verb: The bridge is believed to be 800 years old. He is said to speak six languages.",
+      "Vergangenheit: to have + Partizip: The pyramid is thought to have been built in twenty years."
+     ],
+     "q": "Was sagt man über deine Stadt oder dein Land? Glaubst du, dass es stimmt?",
+     "c": "Schreib drei Sätze über eine lokale Legende oder einen berühmten Ort mit It is said that, is believed to be und is thought to have."
+    },
+    "es": {
+     "t": "Advanced passive: It is said that",
+     "g": "Transmite opiniones generales de forma formal con It is said that y he is said to be.",
+     "p": [
+      "Estructura 1: It is + said/believed/thought/expected + that: It is believed that the bridge is 800 years old.",
+      "Estructura 2: sujeto + is said to + verbo: The bridge is believed to be 800 years old. He is said to speak six languages.",
+      "Pasado: to have + participio: The pyramid is thought to have been built in twenty years."
+     ],
+     "q": "¿Qué se dice de tu ciudad o de tu país? ¿Crees que es verdad?",
+     "c": "Escribe tres frases sobre una leyenda o un lugar famoso con It is said that, is believed to be e is thought to have."
+    },
+    "fr": {
+     "t": "Advanced passive: It is said that",
+     "g": "Rapporte des opinions générales de façon formelle avec It is said that et he is said to be.",
+     "p": [
+      "Structure 1 : It is + said/believed/thought/expected + that : It is believed that the bridge is 800 years old.",
+      "Structure 2 : sujet + is said to + verbe : The bridge is believed to be 800 years old. He is said to speak six languages.",
+      "Au passé : to have + participe : The pyramid is thought to have been built in twenty years."
+     ],
+     "q": "Que dit-on de ta ville ou de ton pays ? Penses-tu que c'est vrai ?",
+     "c": "Écris trois phrases sur une légende locale ou un lieu célèbre avec It is said that, is believed to be et is thought to have."
+    },
+    "it": {
+     "t": "Advanced passive: It is said that",
+     "g": "Riporta opinioni generali in modo formale con It is said that e he is said to be.",
+     "p": [
+      "Struttura 1: It is + said/believed/thought/expected + that: It is believed that the bridge is 800 years old.",
+      "Struttura 2: soggetto + is said to + verbo: The bridge is believed to be 800 years old. He is said to speak six languages.",
+      "Passato: to have + participio: The pyramid is thought to have been built in twenty years."
+     ],
+     "q": "Cosa si dice della tua città o del tuo paese? Pensi che sia vero?",
+     "c": "Scrivi tre frasi su una leggenda locale o un luogo famoso con It is said that, is believed to be e is thought to have."
+    },
+    "pt": {
+     "t": "Advanced passive: It is said that",
+     "g": "Relata opiniões gerais de forma formal com It is said that e he is said to be.",
+     "p": [
+      "Estrutura 1: It is + said/believed/thought/expected + that: It is believed that the bridge is 800 years old.",
+      "Estrutura 2: sujeito + is said to + verbo: The bridge is believed to be 800 years old. He is said to speak six languages.",
+      "Passado: to have + particípio: The pyramid is thought to have been built in twenty years."
+     ],
+     "q": "O que se diz sobre a tua cidade ou o teu país? Achas que é verdade?",
+     "c": "Escreve três frases sobre uma lenda local ou um lugar famoso com It is said that, is believed to be e is thought to have."
+    },
+    "pt_BR": {
+     "t": "Advanced passive: It is said that",
+     "g": "Relate opiniões gerais de forma formal com It is said that e he is said to be.",
+     "p": [
+      "Estrutura 1: It is + said/believed/thought/expected + that: It is believed that the bridge is 800 years old.",
+      "Estrutura 2: sujeito + is said to + verbo: The bridge is believed to be 800 years old. He is said to speak six languages.",
+      "Passado: to have + particípio: The pyramid is thought to have been built in twenty years."
+     ],
+     "q": "O que se diz sobre a sua cidade ou o seu país? Você acha que é verdade?",
+     "c": "Escreva três frases sobre uma lenda local ou um lugar famoso com It is said that, is believed to be e is thought to have."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "It is said that",
+      "ex": "It is said that the castle is haunted by a friendly cat."
+     },
+     {
+      "w": "It is believed that",
+      "ex": "It is believed that the city was founded by fishermen."
+     },
+     {
+      "w": "is said to be",
+      "ex": "She is said to be the best chef in town."
+     },
+     {
+      "w": "is thought to have",
+      "ex": "The painting is thought to have been lost for years."
+     },
+     {
+      "w": "It is expected that",
+      "ex": "It is expected that prices will rise."
+     },
+     {
+      "w": "is reported to",
+      "ex": "The singer is reported to be writing a new album."
+     }
+    ],
+    "gram": "Impersonal passive: It is said/believed that + clause, or subject + is said/believed to + verb (to have + pp for the past)."
+   }
+  },
+  {
+   "d": 290,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Causatives: get someone to",
+     "g": "Say who causes an action with get, have, make and let.",
+     "p": [
+      "Get someone to do (persuade): I got Sam to fix it. Have someone do (arrange): I'll have the hotel call a taxi.",
+      "Make = force, let = allow, both with the bare verb: She made me apologise. They let us leave early.",
+      "Services: have/get + object + past participle: I had my car repaired. She's getting her nails done."
+     ],
+     "q": "What is something you usually have done for you instead of doing it yourself?",
+     "c": "Write four sentences about your life: one with get someone to, one with make, one with let and one with have something done."
+    },
+    "de": {
+     "t": "Causatives: get someone to",
+     "g": "Du sagst mit get, have, make und let, wer eine Handlung veranlasst.",
+     "p": [
+      "Get someone to do (überreden): I got Sam to fix it. Have someone do (veranlassen): I'll have the hotel call a taxi.",
+      "Make = zwingen, let = erlauben, beide mit Grundform: She made me apologise. They let us leave early.",
+      "Dienstleistungen: have/get + Objekt + Partizip: I had my car repaired. She's getting her nails done."
+     ],
+     "q": "Was lässt du normalerweise machen, statt es selbst zu tun?",
+     "c": "Schreib vier Sätze über dein Leben: mit get someone to, mit make, mit let und mit have something done."
+    },
+    "es": {
+     "t": "Causatives: get someone to",
+     "g": "Di quién provoca una acción con get, have, make y let.",
+     "p": [
+      "Get someone to do (convencer): I got Sam to fix it. Have someone do (encargar): I'll have the hotel call a taxi.",
+      "Make = obligar, let = permitir, ambos con el verbo base: She made me apologise. They let us leave early.",
+      "Servicios: have/get + objeto + participio: I had my car repaired. She's getting her nails done."
+     ],
+     "q": "¿Qué cosa sueles mandar hacer en lugar de hacerla tú mismo?",
+     "c": "Escribe cuatro frases sobre tu vida: con get someone to, con make, con let y con have something done."
+    },
+    "fr": {
+     "t": "Causatives: get someone to",
+     "g": "Dis qui provoque une action avec get, have, make et let.",
+     "p": [
+      "Get someone to do (convaincre) : I got Sam to fix it. Have someone do (faire faire) : I'll have the hotel call a taxi.",
+      "Make = obliger, let = permettre, avec la base verbale : She made me apologise. They let us leave early.",
+      "Les services : have/get + objet + participe : I had my car repaired. She's getting her nails done."
+     ],
+     "q": "Qu'est-ce que tu fais faire d'habitude au lieu de le faire toi-même ?",
+     "c": "Écris quatre phrases sur ta vie : avec get someone to, avec make, avec let et avec have something done."
+    },
+    "it": {
+     "t": "Causatives: get someone to",
+     "g": "Di' chi causa un'azione con get, have, make e let.",
+     "p": [
+      "Get someone to do (convincere): I got Sam to fix it. Have someone do (far fare): I'll have the hotel call a taxi.",
+      "Make = obbligare, let = permettere, entrambi col verbo base: She made me apologise. They let us leave early.",
+      "Servizi: have/get + oggetto + participio: I had my car repaired. She's getting her nails done."
+     ],
+     "q": "Cosa fai fare di solito ad altri invece di farlo tu?",
+     "c": "Scrivi quattro frasi sulla tua vita: con get someone to, con make, con let e con have something done."
+    },
+    "pt": {
+     "t": "Causatives: get someone to",
+     "g": "Diz quem provoca uma ação com get, have, make e let.",
+     "p": [
+      "Get someone to do (convencer): I got Sam to fix it. Have someone do (mandar fazer): I'll have the hotel call a taxi.",
+      "Make = obrigar, let = deixar, ambos com o verbo base: She made me apologise. They let us leave early.",
+      "Serviços: have/get + objeto + particípio: I had my car repaired. She's getting her nails done."
+     ],
+     "q": "O que costumas mandar fazer em vez de fazeres tu?",
+     "c": "Escreve quatro frases sobre a tua vida: com get someone to, com make, com let e com have something done."
+    },
+    "pt_BR": {
+     "t": "Causatives: get someone to",
+     "g": "Diga quem provoca uma ação com get, have, make e let.",
+     "p": [
+      "Get someone to do (convencer): I got Sam to fix it. Have someone do (mandar fazer): I'll have the hotel call a taxi.",
+      "Make = obrigar, let = deixar, ambos com o verbo base: She made me apologise. They let us leave early.",
+      "Serviços: have/get + objeto + particípio: I had my car repaired. She's getting her nails done."
+     ],
+     "q": "O que você costuma mandar fazer em vez de fazer você mesmo?",
+     "c": "Escreva quatro frases sobre a sua vida: com get someone to, com make, com let e com have something done."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "get someone to do",
+      "ex": "I got my brother to help me move."
+     },
+     {
+      "w": "have someone do",
+      "ex": "I'll have the mechanic check the brakes."
+     },
+     {
+      "w": "have something done",
+      "ex": "I'm having my hair cut on Saturday."
+     },
+     {
+      "w": "get something done",
+      "ex": "We got the kitchen painted last month."
+     },
+     {
+      "w": "make someone do",
+      "ex": "My teacher made us rewrite the essay."
+     },
+     {
+      "w": "let someone do",
+      "ex": "My parents let me stay up late at weekends."
+     }
+    ],
+    "gram": "Causatives: get sb to + verb, have sb + verb, make sb + verb, let sb + verb; have/get + object + past participle for services."
+   }
+  }
+ ]
+}

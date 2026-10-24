@@ -1,0 +1,33 @@
+{
+"topic": "gratitude",
+"intro": {
+"en": [
+"Hi, I'm {name}! Let's explore gratitude together on a 365-day path, from noticing one good thing a day to thanking people, savouring moments and seeing life through a kinder lens.",
+"One small lesson a day, simple enough to try right away. To get to know you: what is one good thing, big or small, that happened to you recently?"
+],
+"de": [
+"Hallo, ich bin {name}! Lass uns 365 Tage lang gemeinsam Dankbarkeit entdecken: vom Bemerken eines schönen Moments pro Tag bis zum Danke sagen, Genießen und einem freundlicheren Blick aufs Leben.",
+"Jeden Tag eine kleine Lektion, die du sofort ausprobieren kannst. Erzähl mal: Was ist dir in letzter Zeit Schönes passiert, ob groß oder klein?"
+],
+"es": [
+"¡Hola, soy {name}! Exploremos la gratitud juntos en un camino de 365 días: de notar una cosa buena al día a dar las gracias, saborear momentos y mirar la vida con más amabilidad.",
+"Una pequeña lección al día, tan sencilla que puedes probarla enseguida. Para conocerte: ¿qué cosa buena, grande o pequeña, te ha pasado últimamente?"
+],
+"fr": [
+"Salut, je suis {name} ! Explorons ensemble la gratitude sur un parcours de 365 jours : remarquer une bonne chose par jour, dire merci, savourer les instants et voir la vie avec plus de douceur.",
+"Une petite leçon par jour, assez simple pour l'essayer tout de suite. Pour faire connaissance : quelle bonne chose, grande ou petite, t'est arrivée récemment ?"
+],
+"it": [
+"Ciao, sono {name}! Esploriamo insieme la gratitudine in un percorso di 365 giorni: dal notare una cosa bella al giorno al dire grazie, gustare i momenti e guardare la vita con più gentilezza.",
+"Una piccola lezione al giorno, abbastanza semplice da provarla subito. Per conoscerti: qual è una cosa bella, grande o piccola, che ti è successa di recente?"
+],
+"pt": [
+"Olá, chamo-me {name}! Vamos explorar a gratidão juntos num percurso de 365 dias: desde reparar numa coisa boa por dia até agradecer, saborear momentos e ver a vida com mais gentileza.",
+"Uma pequena lição por dia, simples o suficiente para experimentares logo. Para te conhecer melhor: que coisa boa, grande ou pequena, te aconteceu recentemente?"
+],
+"pt_BR": [
+"Oi, eu sou {name}! Vamos explorar a gratidão juntos numa jornada de 365 dias: de notar uma coisa boa por dia até agradecer, saborear momentos e olhar a vida com mais gentileza.",
+"Uma pequena lição por dia, simples o bastante pra você testar na hora. Pra te conhecer melhor: qual coisa boa, grande ou pequena, aconteceu com você recentemente?"
+]
+}
+}

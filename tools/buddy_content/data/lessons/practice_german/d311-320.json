@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_german",
+ "lessons": [
+  {
+   "d": 311,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Health and society",
+     "g": "Discuss health as a social topic: the health system, insurance and prevention.",
+     "p": [
+      "Key words: das Gesundheitssystem, die Krankenversicherung, die Vorsorge, die Arztpraxis, die Krankenkasse.",
+      "In Germany health insurance is compulsory; most people are in a gesetzliche Krankenkasse, some are privately insured.",
+      "Prevention: Vorsorge ist besser als Nachsorge. Talk about habits: Ich achte auf..., Ich gehe regelmäßig zur Vorsorge."
+     ],
+     "q": "What do you do in everyday life to stay healthy? Answer with Ich achte darauf, dass...",
+     "c": "Write four sentences comparing how people get health insurance in your country and in Germany."
+    },
+    "de": {
+     "t": "Gesundheit und Gesellschaft",
+     "g": "Du diskutierst Gesundheit als Gesellschaftsthema: System, Versicherung, Vorsorge.",
+     "p": [
+      "Wichtige Wörter: das Gesundheitssystem, die Krankenversicherung, die Vorsorge, die Arztpraxis, die Krankenkasse.",
+      "In Deutschland ist die Krankenversicherung Pflicht; die meisten sind in einer gesetzlichen Krankenkasse, manche privat versichert.",
+      "Vorsorge: Vorsorge ist besser als Nachsorge. Über Gewohnheiten sprechen: Ich achte auf..., Ich gehe regelmäßig zur Vorsorge."
+     ],
+     "q": "Was machst du im Alltag, um gesund zu bleiben? Antworte mit Ich achte darauf, dass...",
+     "c": "Schreib vier Sätze: Wie ist man in deinem Land krankenversichert, wie in Deutschland?"
+    },
+    "es": {
+     "t": "Salud y sociedad",
+     "g": "Habla de la salud como tema social: sistema sanitario, seguro y prevención.",
+     "p": [
+      "Palabras clave: das Gesundheitssystem, die Krankenversicherung, die Vorsorge, die Arztpraxis, die Krankenkasse.",
+      "En Alemania el seguro médico es obligatorio; la mayoría está en una gesetzliche Krankenkasse, algunos en uno privado.",
+      "Prevención: Vorsorge ist besser als Nachsorge. Habla de hábitos: Ich achte auf..., Ich gehe regelmäßig zur Vorsorge."
+     ],
+     "q": "¿Qué haces en el día a día para mantenerte sano? Responde con Ich achte darauf, dass...",
+     "c": "Escribe cuatro frases comparando el seguro médico en tu país y en Alemania."
+    },
+    "fr": {
+     "t": "Santé et société",
+     "g": "Parler de la santé comme sujet de société : système, assurance et prévention.",
+     "p": [
+      "Mots clés : das Gesundheitssystem, die Krankenversicherung, die Vorsorge, die Arztpraxis, die Krankenkasse.",
+      "En Allemagne, l'assurance maladie est obligatoire ; la plupart sont dans une gesetzliche Krankenkasse, certains au privé.",
+      "Prévention : Vorsorge ist besser als Nachsorge. Parle de tes habitudes : Ich achte auf..., Ich gehe regelmäßig zur Vorsorge."
+     ],
+     "q": "Que fais-tu au quotidien pour rester en bonne santé ? Réponds avec Ich achte darauf, dass...",
+     "c": "Écris quatre phrases comparant l'assurance maladie dans ton pays et en Allemagne."
+    },
+    "it": {
+     "t": "Salute e società",
+     "g": "Parla della salute come tema sociale: sistema sanitario, assicurazione e prevenzione.",
+     "p": [
+      "Parole chiave: das Gesundheitssystem, die Krankenversicherung, die Vorsorge, die Arztpraxis, die Krankenkasse.",
+      "In Germania l'assicurazione sanitaria è obbligatoria; i più sono in una gesetzliche Krankenkasse, alcuni in una privata.",
+      "Prevenzione: Vorsorge ist besser als Nachsorge. Parla di abitudini: Ich achte auf..., Ich gehe regelmäßig zur Vorsorge."
+     ],
+     "q": "Che cosa fai ogni giorno per restare in salute? Rispondi con Ich achte darauf, dass...",
+     "c": "Scrivi quattro frasi che confrontano l'assicurazione sanitaria nel tuo paese e in Germania."
+    },
+    "pt": {
+     "t": "Saúde e sociedade",
+     "g": "Falar da saúde como tema social: sistema de saúde, seguro e prevenção.",
+     "p": [
+      "Palavras-chave: das Gesundheitssystem, die Krankenversicherung, die Vorsorge, die Arztpraxis, die Krankenkasse.",
+      "Na Alemanha o seguro de saúde é obrigatório; a maioria está numa gesetzliche Krankenkasse, alguns num seguro privado.",
+      "Prevenção: Vorsorge ist besser als Nachsorge. Fala de hábitos: Ich achte auf..., Ich gehe regelmäßig zur Vorsorge."
+     ],
+     "q": "O que fazes no dia a dia para te manteres saudável? Responde com Ich achte darauf, dass...",
+     "c": "Escreve quatro frases a comparar o seguro de saúde no teu país e na Alemanha."
+    },
+    "pt_BR": {
+     "t": "Saúde e sociedade",
+     "g": "Falar da saúde como tema social: sistema de saúde, plano e prevenção.",
+     "p": [
+      "Palavras-chave: das Gesundheitssystem, die Krankenversicherung, die Vorsorge, die Arztpraxis, die Krankenkasse.",
+      "Na Alemanha o seguro de saúde é obrigatório; a maioria está numa gesetzliche Krankenkasse, alguns num seguro privado.",
+      "Prevenção: Vorsorge ist besser als Nachsorge. Fale de hábitos: Ich achte auf..., Ich gehe regelmäßig zur Vorsorge."
+     ],
+     "q": "O que você faz no dia a dia para se manter saudável? Responda com Ich achte darauf, dass...",
+     "c": "Escreva quatro frases comparando o seguro de saúde no seu país e na Alemanha."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "das Gesundheitssystem",
+      "ex": "Das Gesundheitssystem wird von allen Versicherten finanziert."
+     },
+     {
+      "w": "die Krankenversicherung",
+      "ex": "In Deutschland braucht jeder eine Krankenversicherung."
+     },
+     {
+      "w": "die Krankenkasse",
+      "ex": "Meine Krankenkasse bezahlt die Vorsorgeuntersuchung."
+     },
+     {
+      "w": "die Vorsorge",
+      "ex": "Regelmäßige Vorsorge kann viel bewirken."
+     },
+     {
+      "w": "versichert sein",
+      "ex": "Ich bin gesetzlich versichert."
+     },
+     {
+      "w": "achten auf",
+      "ex": "Ich achte auf genug Schlaf und Bewegung."
+     }
+    ],
+    "gram": "achten auf + Akkusativ; als Satz: Ich achte darauf, dass ich genug schlafe. Partizip als Adjektiv: gesetzlich versichert."
+   }
+  },
+  {
+   "d": 312,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Cities and urban planning",
+     "g": "Talk about how cities are planned: public transport, green spaces and housing.",
+     "p": [
+      "Key words: die Stadtplanung, der öffentliche Nahverkehr, die Grünfläche, der Radweg, die Fußgängerzone.",
+      "Describing problems: Es fehlt an bezahlbarem Wohnraum. / Der Verkehr belastet die Innenstadt.",
+      "Proposals: Man sollte mehr Radwege bauen. / Es wäre sinnvoll, die Grünflächen zu erweitern."
+     ],
+     "q": "What would you change in your city if you were the city planner?",
+     "c": "Write a short proposal of five sentences to improve one street or square in your town."
+    },
+    "de": {
+     "t": "Städte und Stadtplanung",
+     "g": "Du sprichst über Stadtplanung: Nahverkehr, Grünflächen und Wohnen.",
+     "p": [
+      "Wichtige Wörter: die Stadtplanung, der öffentliche Nahverkehr, die Grünfläche, der Radweg, die Fußgängerzone.",
+      "Probleme beschreiben: Es fehlt an bezahlbarem Wohnraum. / Der Verkehr belastet die Innenstadt.",
+      "Vorschläge: Man sollte mehr Radwege bauen. / Es wäre sinnvoll, die Grünflächen zu erweitern."
+     ],
+     "q": "Was würdest du in deiner Stadt ändern, wenn du Stadtplaner wärst?",
+     "c": "Schreib einen kurzen Vorschlag mit fünf Sätzen, wie man eine Straße oder einen Platz in deiner Stadt verbessern kann."
+    },
+    "es": {
+     "t": "Ciudades y urbanismo",
+     "g": "Habla de cómo se planifican las ciudades: transporte público, zonas verdes y vivienda.",
+     "p": [
+      "Palabras clave: die Stadtplanung, der öffentliche Nahverkehr, die Grünfläche, der Radweg, die Fußgängerzone.",
+      "Describir problemas: Es fehlt an bezahlbarem Wohnraum. / Der Verkehr belastet die Innenstadt.",
+      "Propuestas: Man sollte mehr Radwege bauen. / Es wäre sinnvoll, die Grünflächen zu erweitern."
+     ],
+     "q": "¿Qué cambiarías en tu ciudad si fueras urbanista?",
+     "c": "Escribe una propuesta breve de cinco frases para mejorar una calle o plaza de tu ciudad."
+    },
+    "fr": {
+     "t": "Villes et urbanisme",
+     "g": "Parler de l'aménagement urbain : transports en commun, espaces verts, logement.",
+     "p": [
+      "Mots clés : die Stadtplanung, der öffentliche Nahverkehr, die Grünfläche, der Radweg, die Fußgängerzone.",
+      "Décrire les problèmes : Es fehlt an bezahlbarem Wohnraum. / Der Verkehr belastet die Innenstadt.",
+      "Propositions : Man sollte mehr Radwege bauen. / Es wäre sinnvoll, die Grünflächen zu erweitern."
+     ],
+     "q": "Que changerais-tu dans ta ville si tu étais urbaniste ?",
+     "c": "Écris une courte proposition de cinq phrases pour améliorer une rue ou une place de ta ville."
+    },
+    "it": {
+     "t": "Città e urbanistica",
+     "g": "Parla di come si pianificano le città: trasporto pubblico, aree verdi e abitazioni.",
+     "p": [
+      "Parole chiave: die Stadtplanung, der öffentliche Nahverkehr, die Grünfläche, der Radweg, die Fußgängerzone.",
+      "Descrivere i problemi: Es fehlt an bezahlbarem Wohnraum. / Der Verkehr belastet die Innenstadt.",
+      "Proposte: Man sollte mehr Radwege bauen. / Es wäre sinnvoll, die Grünflächen zu erweitern."
+     ],
+     "q": "Che cosa cambieresti nella tua città se fossi l'urbanista?",
+     "c": "Scrivi una breve proposta di cinque frasi per migliorare una via o una piazza della tua città."
+    },
+    "pt": {
+     "t": "Cidades e urbanismo",
+     "g": "Falar de planeamento urbano: transportes públicos, espaços verdes e habitação.",
+     "p": [
+      "Palavras-chave: die Stadtplanung, der öffentliche Nahverkehr, die Grünfläche, der Radweg, die Fußgängerzone.",
+      "Descrever problemas: Es fehlt an bezahlbarem Wohnraum. / Der Verkehr belastet die Innenstadt.",
+      "Propostas: Man sollte mehr Radwege bauen. / Es wäre sinnvoll, die Grünflächen zu erweitern."
+     ],
+     "q": "O que mudarias na tua cidade se fosses urbanista?",
+     "c": "Escreve uma proposta curta de cinco frases para melhorar uma rua ou praça da tua cidade."
+    },
+    "pt_BR": {
+     "t": "Cidades e urbanismo",
+     "g": "Falar de planejamento urbano: transporte público, áreas verdes e moradia.",
+     "p": [
+      "Palavras-chave: die Stadtplanung, der öffentliche Nahverkehr, die Grünfläche, der Radweg, die Fußgängerzone.",
+      "Descrever problemas: Es fehlt an bezahlbarem Wohnraum. / Der Verkehr belastet die Innenstadt.",
+      "Propostas: Man sollte mehr Radwege bauen. / Es wäre sinnvoll, die Grünflächen zu erweitern."
+     ],
+     "q": "O que você mudaria na sua cidade se fosse urbanista?",
+     "c": "Escreva uma proposta curta de cinco frases para melhorar uma rua ou praça da sua cidade."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "die Stadtplanung",
+      "ex": "Gute Stadtplanung denkt an alle Generationen."
+     },
+     {
+      "w": "der öffentliche Nahverkehr",
+      "ex": "Der öffentliche Nahverkehr in Wien ist sehr gut ausgebaut."
+     },
+     {
+      "w": "die Grünfläche",
+      "ex": "Neue Grünflächen machen die Stadt lebenswerter."
+     },
+     {
+      "w": "bezahlbarer Wohnraum",
+      "ex": "In vielen Städten fehlt es an bezahlbarem Wohnraum."
+     },
+     {
+      "w": "die Fußgängerzone",
+      "ex": "Am Samstag ist die Fußgängerzone voller Menschen."
+     },
+     {
+      "w": "erweitern",
+      "ex": "Die Stadt will das Radwegenetz erweitern."
+     }
+    ],
+    "gram": "Es fehlt an + Dativ: Es fehlt an Wohnraum. Adjektiv ohne Artikel im Dativ: an bezahlbarem Wohnraum, mit öffentlichem Verkehr."
+   }
+  },
+  {
+   "d": 313,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Media literacy",
+     "g": "Check sources, judge objectivity and form your own opinion about news.",
+     "p": [
+      "Checking sources: Wer steckt hinter der Nachricht? Ist die Quelle seriös? Berichten auch andere Medien darüber?",
+      "Fact or opinion: Laut Angaben der Polizei... (fact) versus Der Autor ist der Meinung, dass... (opinion).",
+      "Forming opinions: Ich bilde mir erst eine Meinung, wenn ich mehrere Quellen verglichen habe."
+     ],
+     "q": "How do you check if a piece of news is true before sharing it?",
+     "c": "Take one headline you saw today and write three questions you would ask to check it, in German."
+    },
+    "de": {
+     "t": "Medienkompetenz",
+     "g": "Du prüfst Quellen, beurteilst Objektivität und bildest dir eine eigene Meinung.",
+     "p": [
+      "Quellen prüfen: Wer steckt hinter der Nachricht? Ist die Quelle seriös? Berichten auch andere Medien darüber?",
+      "Fakt oder Meinung: Laut Angaben der Polizei... (Fakt) gegenüber Der Autor ist der Meinung, dass... (Meinung).",
+      "Meinungsbildung: Ich bilde mir erst eine Meinung, wenn ich mehrere Quellen verglichen habe."
+     ],
+     "q": "Wie prüfst du, ob eine Nachricht stimmt, bevor du sie teilst?",
+     "c": "Nimm eine Schlagzeile von heute und schreib drei Fragen, mit denen du sie prüfen würdest."
+    },
+    "es": {
+     "t": "Alfabetización mediática",
+     "g": "Comprueba fuentes, valora la objetividad y fórmate tu propia opinión.",
+     "p": [
+      "Comprobar fuentes: Wer steckt hinter der Nachricht? Ist die Quelle seriös? Berichten auch andere Medien darüber?",
+      "Hecho u opinión: Laut Angaben der Polizei... (hecho) frente a Der Autor ist der Meinung, dass... (opinión).",
+      "Formarse una opinión: Ich bilde mir erst eine Meinung, wenn ich mehrere Quellen verglichen habe."
+     ],
+     "q": "¿Cómo compruebas si una noticia es cierta antes de compartirla?",
+     "c": "Toma un titular de hoy y escribe en alemán tres preguntas que harías para comprobarlo."
+    },
+    "fr": {
+     "t": "Éducation aux médias",
+     "g": "Vérifier les sources, juger l'objectivité et se forger sa propre opinion.",
+     "p": [
+      "Vérifier les sources : Wer steckt hinter der Nachricht? Ist die Quelle seriös? Berichten auch andere Medien darüber?",
+      "Fait ou opinion : Laut Angaben der Polizei... (fait) contre Der Autor ist der Meinung, dass... (opinion).",
+      "Se forger un avis : Ich bilde mir erst eine Meinung, wenn ich mehrere Quellen verglichen habe."
+     ],
+     "q": "Comment vérifies-tu qu'une info est vraie avant de la partager ?",
+     "c": "Prends un titre vu aujourd'hui et écris en allemand trois questions pour le vérifier."
+    },
+    "it": {
+     "t": "Educazione ai media",
+     "g": "Verifica le fonti, valuta l'oggettività e fatti un'opinione tua.",
+     "p": [
+      "Verificare le fonti: Wer steckt hinter der Nachricht? Ist die Quelle seriös? Berichten auch andere Medien darüber?",
+      "Fatto o opinione: Laut Angaben der Polizei... (fatto) contro Der Autor ist der Meinung, dass... (opinione).",
+      "Farsi un'opinione: Ich bilde mir erst eine Meinung, wenn ich mehrere Quellen verglichen habe."
+     ],
+     "q": "Come controlli se una notizia è vera prima di condividerla?",
+     "c": "Prendi un titolo visto oggi e scrivi in tedesco tre domande per verificarlo."
+    },
+    "pt": {
+     "t": "Literacia mediática",
+     "g": "Verificar fontes, avaliar a objetividade e formar a tua própria opinião.",
+     "p": [
+      "Verificar fontes: Wer steckt hinter der Nachricht? Ist die Quelle seriös? Berichten auch andere Medien darüber?",
+      "Facto ou opinião: Laut Angaben der Polizei... (facto) versus Der Autor ist der Meinung, dass... (opinião).",
+      "Formar opinião: Ich bilde mir erst eine Meinung, wenn ich mehrere Quellen verglichen habe."
+     ],
+     "q": "Como verificas se uma notícia é verdadeira antes de a partilhar?",
+     "c": "Pega num título que viste hoje e escreve em alemão três perguntas para o verificar."
+    },
+    "pt_BR": {
+     "t": "Educação midiática",
+     "g": "Verificar fontes, avaliar a objetividade e formar sua própria opinião.",
+     "p": [
+      "Verificar fontes: Wer steckt hinter der Nachricht? Ist die Quelle seriös? Berichten auch andere Medien darüber?",
+      "Fato ou opinião: Laut Angaben der Polizei... (fato) versus Der Autor ist der Meinung, dass... (opinião).",
+      "Formar opinião: Ich bilde mir erst eine Meinung, wenn ich mehrere Quellen verglichen habe."
+     ],
+     "q": "Como você verifica se uma notícia é verdadeira antes de compartilhar?",
+     "c": "Pegue uma manchete que você viu hoje e escreva em alemão três perguntas para checá-la."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "die Quelle",
+      "ex": "Ist diese Quelle wirklich seriös?"
+     },
+     {
+      "w": "seriös",
+      "ex": "Seriöse Zeitungen nennen ihre Quellen."
+     },
+     {
+      "w": "die Objektivität",
+      "ex": "Objektivität ist im Journalismus sehr wichtig."
+     },
+     {
+      "w": "die Meinungsbildung",
+      "ex": "Gute Informationen helfen bei der Meinungsbildung."
+     },
+     {
+      "w": "überprüfen",
+      "ex": "Bevor ich etwas teile, überprüfe ich es."
+     },
+     {
+      "w": "sich eine Meinung bilden",
+      "ex": "Ich bilde mir gern selbst eine Meinung."
+     }
+    ],
+    "gram": "Temporalsatz mit Perfekt: erst..., wenn ich verglichen habe. Indirekte Frage: Ich prüfe, ob die Quelle seriös ist."
+   }
+  },
+  {
+   "d": 314,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Ethics of technology",
+     "g": "Discuss data protection, privacy and algorithms with nuance.",
+     "p": [
+      "Key words: der Datenschutz, die Privatsphäre, der Algorithmus, die Daten, die künstliche Intelligenz.",
+      "Raising concerns: Es ist bedenklich, dass... / Wer hat Zugriff auf meine Daten?",
+      "Balanced view: Einerseits erleichtern Algorithmen den Alltag, andererseits... Germany takes Datenschutz very seriously."
+     ],
+     "q": "Do you read privacy settings when you install a new app? Why or why not?",
+     "c": "Write four sentences about one app you use: what data it needs and how you feel about it."
+    },
+    "de": {
+     "t": "Ethik der Technik",
+     "g": "Du diskutierst differenziert über Datenschutz, Privatsphäre und Algorithmen.",
+     "p": [
+      "Wichtige Wörter: der Datenschutz, die Privatsphäre, der Algorithmus, die Daten, die künstliche Intelligenz.",
+      "Bedenken äußern: Es ist bedenklich, dass... / Wer hat Zugriff auf meine Daten?",
+      "Ausgewogen: Einerseits erleichtern Algorithmen den Alltag, andererseits... In Deutschland nimmt man Datenschutz sehr ernst."
+     ],
+     "q": "Liest du die Datenschutzeinstellungen, wenn du eine neue App installierst? Warum (nicht)?",
+     "c": "Schreib vier Sätze über eine App, die du nutzt: Welche Daten braucht sie und was hältst du davon?"
+    },
+    "es": {
+     "t": "Ética de la tecnología",
+     "g": "Debate con matices sobre protección de datos, privacidad y algoritmos.",
+     "p": [
+      "Palabras clave: der Datenschutz, die Privatsphäre, der Algorithmus, die Daten, die künstliche Intelligenz.",
+      "Expresar dudas: Es ist bedenklich, dass... / Wer hat Zugriff auf meine Daten?",
+      "Visión equilibrada: Einerseits erleichtern Algorithmen den Alltag, andererseits... En Alemania el Datenschutz se toma muy en serio."
+     ],
+     "q": "¿Lees los ajustes de privacidad al instalar una app nueva? ¿Por qué sí o no?",
+     "c": "Escribe cuatro frases sobre una app que uses: qué datos necesita y qué opinas de ello."
+    },
+    "fr": {
+     "t": "Éthique de la technologie",
+     "g": "Débattre avec nuance de protection des données, vie privée et algorithmes.",
+     "p": [
+      "Mots clés : der Datenschutz, die Privatsphäre, der Algorithmus, die Daten, die künstliche Intelligenz.",
+      "Exprimer une inquiétude : Es ist bedenklich, dass... / Wer hat Zugriff auf meine Daten?",
+      "Avis équilibré : Einerseits erleichtern Algorithmen den Alltag, andererseits... En Allemagne, le Datenschutz est pris très au sérieux."
+     ],
+     "q": "Lis-tu les paramètres de confidentialité quand tu installes une appli ? Pourquoi ?",
+     "c": "Écris quatre phrases sur une appli que tu utilises : quelles données elle demande et ce que tu en penses."
+    },
+    "it": {
+     "t": "Etica della tecnologia",
+     "g": "Discuti con sfumature di protezione dei dati, privacy e algoritmi.",
+     "p": [
+      "Parole chiave: der Datenschutz, die Privatsphäre, der Algorithmus, die Daten, die künstliche Intelligenz.",
+      "Esprimere dubbi: Es ist bedenklich, dass... / Wer hat Zugriff auf meine Daten?",
+      "Visione equilibrata: Einerseits erleichtern Algorithmen den Alltag, andererseits... In Germania il Datenschutz è preso molto sul serio."
+     ],
+     "q": "Leggi le impostazioni della privacy quando installi una nuova app? Perché sì o no?",
+     "c": "Scrivi quattro frasi su un'app che usi: quali dati richiede e cosa ne pensi."
+    },
+    "pt": {
+     "t": "Ética da tecnologia",
+     "g": "Debater com nuance a proteção de dados, a privacidade e os algoritmos.",
+     "p": [
+      "Palavras-chave: der Datenschutz, die Privatsphäre, der Algorithmus, die Daten, die künstliche Intelligenz.",
+      "Exprimir preocupação: Es ist bedenklich, dass... / Wer hat Zugriff auf meine Daten?",
+      "Visão equilibrada: Einerseits erleichtern Algorithmen den Alltag, andererseits... Na Alemanha o Datenschutz é levado muito a sério."
+     ],
+     "q": "Lês as definições de privacidade quando instalas uma aplicação nova? Porquê?",
+     "c": "Escreve quatro frases sobre uma aplicação que usas: que dados pede e o que achas disso."
+    },
+    "pt_BR": {
+     "t": "Ética da tecnologia",
+     "g": "Debater com nuance proteção de dados, privacidade e algoritmos.",
+     "p": [
+      "Palavras-chave: der Datenschutz, die Privatsphäre, der Algorithmus, die Daten, die künstliche Intelligenz.",
+      "Expressar preocupação: Es ist bedenklich, dass... / Wer hat Zugriff auf meine Daten?",
+      "Visão equilibrada: Einerseits erleichtern Algorithmen den Alltag, andererseits... Na Alemanha o Datenschutz é levado muito a sério."
+     ],
+     "q": "Você lê as configurações de privacidade ao instalar um aplicativo novo? Por quê?",
+     "c": "Escreva quatro frases sobre um aplicativo que você usa: que dados ele pede e o que você acha disso."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "der Datenschutz",
+      "ex": "Datenschutz ist in der EU streng geregelt."
+     },
+     {
+      "w": "die Privatsphäre",
+      "ex": "Jeder Mensch hat ein Recht auf Privatsphäre."
+     },
+     {
+      "w": "der Algorithmus",
+      "ex": "Der Algorithmus schlägt mir neue Lieder vor."
+     },
+     {
+      "w": "der Zugriff auf",
+      "ex": "Wer hat Zugriff auf meine Fotos?"
+     },
+     {
+      "w": "bedenklich",
+      "ex": "Ich finde es bedenklich, dass die App meinen Standort kennt."
+     },
+     {
+      "w": "einerseits ... andererseits",
+      "ex": "Einerseits ist die App praktisch, andererseits sammelt sie viele Daten."
+     }
+    ],
+    "gram": "Zweiteilige Konnektoren: einerseits..., andererseits... (Verb direkt danach). Es ist + Adjektiv, dass...: Es ist bedenklich, dass..."
+   }
+  },
+  {
+   "d": 315,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Review: argumentation and work",
+     "g": "Recap essays, formal letters and professional talk from the last two weeks.",
+     "p": [
+      "Essays: introduction with hook and question, body with arguments and examples, conclusion with Zusammenfassend...",
+      "Formal writing: complaint and cover letter: Betreff, Sehr geehrte..., clear demand or motivation, Mit freundlichen Grüßen.",
+      "Work talk: interviews (Zu meinen Stärken zählt...), negotiating (Wie wäre es, wenn...), meetings (Halten wir fest)."
+     ],
+     "q": "Which was more useful for you: essay writing, formal letters or work conversations? Why?",
+     "c": "Write a 100-word mini essay on Homeoffice using an argument, an example, hingegen and Zusammenfassend."
+    },
+    "de": {
+     "t": "Wiederholung: Argumentation und Beruf",
+     "g": "Du wiederholst Aufsatz, formelle Briefe und Gespräche im Beruf.",
+     "p": [
+      "Aufsatz: Einleitung mit Aufhänger und Frage, Hauptteil mit Argumenten und Beispielen, Schluss mit Zusammenfassend...",
+      "Formelles Schreiben: Beschwerde und Anschreiben: Betreff, Sehr geehrte..., klare Forderung oder Motivation, Mit freundlichen Grüßen.",
+      "Beruf: Vorstellungsgespräch (Zu meinen Stärken zählt...), Verhandeln (Wie wäre es, wenn...), Besprechung (Halten wir fest)."
+     ],
+     "q": "Was war für dich nützlicher: Aufsätze, formelle Briefe oder Gespräche im Beruf? Warum?",
+     "c": "Schreib einen Mini-Aufsatz von 100 Wörtern zum Homeoffice mit Argument, Beispiel, hingegen und Zusammenfassend."
+    },
+    "es": {
+     "t": "Repaso: argumentación y trabajo",
+     "g": "Repasa ensayos, cartas formales y conversaciones profesionales.",
+     "p": [
+      "Ensayo: introducción con gancho y pregunta, desarrollo con argumentos y ejemplos, conclusión con Zusammenfassend...",
+      "Escritura formal: queja y carta de presentación: Betreff, Sehr geehrte..., petición o motivación clara, Mit freundlichen Grüßen.",
+      "Trabajo: entrevista (Zu meinen Stärken zählt...), negociación (Wie wäre es, wenn...), reunión (Halten wir fest)."
+     ],
+     "q": "¿Qué te resultó más útil: ensayos, cartas formales o conversaciones de trabajo? ¿Por qué?",
+     "c": "Escribe un miniensayo de 100 palabras sobre el Homeoffice con argumento, ejemplo, hingegen y Zusammenfassend."
+    },
+    "fr": {
+     "t": "Révision : argumentation et travail",
+     "g": "Réviser dissertation, lettres formelles et échanges professionnels.",
+     "p": [
+      "Dissertation : introduction avec accroche et question, développement argumenté et illustré, conclusion avec Zusammenfassend...",
+      "Écrit formel : réclamation et lettre de motivation : Betreff, Sehr geehrte..., demande ou motivation claire, Mit freundlichen Grüßen.",
+      "Travail : entretien (Zu meinen Stärken zählt...), négociation (Wie wäre es, wenn...), réunion (Halten wir fest)."
+     ],
+     "q": "Qu'est-ce qui t'a le plus servi : dissertations, lettres formelles ou échanges au travail ? Pourquoi ?",
+     "c": "Écris une mini-dissertation de 100 mots sur le Homeoffice avec argument, exemple, hingegen et Zusammenfassend."
+    },
+    "it": {
+     "t": "Ripasso: argomentazione e lavoro",
+     "g": "Ripassa saggi, lettere formali e conversazioni di lavoro.",
+     "p": [
+      "Saggio: introduzione con aggancio e domanda, svolgimento con argomenti ed esempi, conclusione con Zusammenfassend...",
+      "Scrittura formale: reclamo e lettera di presentazione: Betreff, Sehr geehrte..., richiesta o motivazione chiara, Mit freundlichen Grüßen.",
+      "Lavoro: colloquio (Zu meinen Stärken zählt...), trattativa (Wie wäre es, wenn...), riunione (Halten wir fest)."
+     ],
+     "q": "Che cosa ti è stato più utile: saggi, lettere formali o conversazioni di lavoro? Perché?",
+     "c": "Scrivi un mini saggio di 100 parole sull'Homeoffice con argomento, esempio, hingegen e Zusammenfassend."
+    },
+    "pt": {
+     "t": "Revisão: argumentação e trabalho",
+     "g": "Rever ensaios, cartas formais e conversas profissionais.",
+     "p": [
+      "Ensaio: introdução com gancho e questão, desenvolvimento com argumentos e exemplos, conclusão com Zusammenfassend...",
+      "Escrita formal: reclamação e carta de apresentação: Betreff, Sehr geehrte..., pedido ou motivação clara, Mit freundlichen Grüßen.",
+      "Trabalho: entrevista (Zu meinen Stärken zählt...), negociação (Wie wäre es, wenn...), reunião (Halten wir fest)."
+     ],
+     "q": "O que te foi mais útil: ensaios, cartas formais ou conversas de trabalho? Porquê?",
+     "c": "Escreve um miniensaio de 100 palavras sobre o Homeoffice com argumento, exemplo, hingegen e Zusammenfassend."
+    },
+    "pt_BR": {
+     "t": "Revisão: argumentação e trabalho",
+     "g": "Revisar redações, cartas formais e conversas profissionais.",
+     "p": [
+      "Redação: introdução com gancho e questão, desenvolvimento com argumentos e exemplos, conclusão com Zusammenfassend...",
+      "Escrita formal: reclamação e carta de apresentação: Betreff, Sehr geehrte..., pedido ou motivação clara, Mit freundlichen Grüßen.",
+      "Trabalho: entrevista (Zu meinen Stärken zählt...), negociação (Wie wäre es, wenn...), reunião (Halten wir fest)."
+     ],
+     "q": "O que foi mais útil para você: redações, cartas formais ou conversas de trabalho? Por quê?",
+     "c": "Escreva uma minirredação de 100 palavras sobre o home office com argumento, exemplo, hingegen e Zusammenfassend."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "die Argumentation",
+      "ex": "Deine Argumentation ist klar und logisch."
+     },
+     {
+      "w": "die Gliederung",
+      "ex": "Eine gute Gliederung hilft dem Leser."
+     },
+     {
+      "w": "das Gegenargument",
+      "ex": "Ein starkes Gegenargument ist die Einsamkeit."
+     },
+     {
+      "w": "formell",
+      "ex": "In einem formellen Brief siezt man den Empfänger."
+     },
+     {
+      "w": "der Lebenslauf",
+      "ex": "Bitte schicken Sie uns Ihren Lebenslauf."
+     },
+     {
+      "w": "zusammenfassen",
+      "ex": "Kannst du die Besprechung kurz zusammenfassen?"
+     }
+    ],
+    "gram": "Wiederholung: lässt sich + Infinitiv, Konjunktiv II für Vorschläge, indem für die Methode, Imperativ wir-Form (Halten wir fest)."
+   }
+  },
+  {
+   "d": 316,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Idioms: everyday life",
+     "g": "Learn colourful everyday idioms like Tomaten auf den Augen haben.",
+     "p": [
+      "Tomaten auf den Augen haben = not to see something obvious. Hast du Tomaten auf den Augen? Der Schlüssel liegt doch da!",
+      "Ins Fettnäpfchen treten = to put your foot in it, say something awkward. Ich bin mal wieder ins Fettnäpfchen getreten.",
+      "More: Das ist nicht mein Bier (not my business), Ich verstehe nur Bahnhof (I understand nothing)."
+     ],
+     "q": "Tell me about a time you stepped ins Fettnäpfchen, in German or in your own words.",
+     "c": "Use two of today's idioms in a short dialogue of four lines about a funny everyday situation."
+    },
+    "de": {
+     "t": "Redewendungen: Alltag",
+     "g": "Du lernst bildhafte Alltagsredewendungen wie Tomaten auf den Augen haben.",
+     "p": [
+      "Tomaten auf den Augen haben = etwas Offensichtliches nicht sehen. Hast du Tomaten auf den Augen? Der Schlüssel liegt doch da!",
+      "Ins Fettnäpfchen treten = etwas Peinliches sagen oder tun. Ich bin mal wieder ins Fettnäpfchen getreten.",
+      "Mehr: Das ist nicht mein Bier (nicht meine Sache), Ich verstehe nur Bahnhof (ich verstehe nichts)."
+     ],
+     "q": "Erzähl mir von einem Moment, in dem du ins Fettnäpfchen getreten bist.",
+     "c": "Benutze zwei Redewendungen von heute in einem kurzen Dialog mit vier Zeilen über eine lustige Alltagssituation."
+    },
+    "es": {
+     "t": "Modismos: vida cotidiana",
+     "g": "Aprende expresiones coloridas como Tomaten auf den Augen haben.",
+     "p": [
+      "Tomaten auf den Augen haben = no ver algo evidente. Hast du Tomaten auf den Augen? Der Schlüssel liegt doch da!",
+      "Ins Fettnäpfchen treten = meter la pata. Ich bin mal wieder ins Fettnäpfchen getreten.",
+      "Más: Das ist nicht mein Bier (no es asunto mío), Ich verstehe nur Bahnhof (no entiendo nada, me suena a chino)."
+     ],
+     "q": "Cuéntame una vez que metiste la pata (ins Fettnäpfchen treten), en alemán o con tus palabras.",
+     "c": "Usa dos modismos de hoy en un diálogo corto de cuatro líneas sobre una situación cotidiana divertida."
+    },
+    "fr": {
+     "t": "Expressions : vie quotidienne",
+     "g": "Apprendre des expressions imagées comme Tomaten auf den Augen haben.",
+     "p": [
+      "Tomaten auf den Augen haben = ne pas voir l'évidence. Hast du Tomaten auf den Augen? Der Schlüssel liegt doch da!",
+      "Ins Fettnäpfchen treten = mettre les pieds dans le plat, faire une gaffe. Ich bin mal wieder ins Fettnäpfchen getreten.",
+      "Encore : Das ist nicht mein Bier (pas mes oignons), Ich verstehe nur Bahnhof (c'est de l'hébreu pour moi)."
+     ],
+     "q": "Raconte-moi une gaffe que tu as faite (ins Fettnäpfchen treten), en allemand ou avec tes mots.",
+     "c": "Utilise deux expressions du jour dans un court dialogue de quatre répliques sur une scène drôle du quotidien."
+    },
+    "it": {
+     "t": "Modi di dire: vita quotidiana",
+     "g": "Impara espressioni colorite come Tomaten auf den Augen haben.",
+     "p": [
+      "Tomaten auf den Augen haben = non vedere l'ovvio. Hast du Tomaten auf den Augen? Der Schlüssel liegt doch da!",
+      "Ins Fettnäpfchen treten = fare una gaffe. Ich bin mal wieder ins Fettnäpfchen getreten.",
+      "Altri: Das ist nicht mein Bier (non sono affari miei), Ich verstehe nur Bahnhof (per me è arabo)."
+     ],
+     "q": "Raccontami una volta in cui hai fatto una gaffe (ins Fettnäpfchen treten), in tedesco o a parole tue.",
+     "c": "Usa due modi di dire di oggi in un breve dialogo di quattro battute su una scena buffa quotidiana."
+    },
+    "pt": {
+     "t": "Expressões: dia a dia",
+     "g": "Aprender expressões coloridas como Tomaten auf den Augen haben.",
+     "p": [
+      "Tomaten auf den Augen haben = não ver o óbvio. Hast du Tomaten auf den Augen? Der Schlüssel liegt doch da!",
+      "Ins Fettnäpfchen treten = meter o pé na argola, fazer uma gafe. Ich bin mal wieder ins Fettnäpfchen getreten.",
+      "Mais: Das ist nicht mein Bier (não é da minha conta), Ich verstehe nur Bahnhof (não percebo nada)."
+     ],
+     "q": "Conta-me uma vez em que fizeste uma gafe (ins Fettnäpfchen treten), em alemão ou por palavras tuas.",
+     "c": "Usa duas expressões de hoje num diálogo curto de quatro falas sobre uma situação engraçada do dia a dia."
+    },
+    "pt_BR": {
+     "t": "Expressões: dia a dia",
+     "g": "Aprender expressões coloridas como Tomaten auf den Augen haben.",
+     "p": [
+      "Tomaten auf den Augen haben = não ver o óbvio. Hast du Tomaten auf den Augen? Der Schlüssel liegt doch da!",
+      "Ins Fettnäpfchen treten = pisar na bola, dar uma gafe. Ich bin mal wieder ins Fettnäpfchen getreten.",
+      "Mais: Das ist nicht mein Bier (não é problema meu), Ich verstehe nur Bahnhof (não entendo nada, é grego)."
+     ],
+     "q": "Me conte uma vez em que você deu uma gafe (ins Fettnäpfchen treten), em alemão ou com suas palavras.",
+     "c": "Use duas expressões de hoje num diálogo curto de quatro falas sobre uma situação engraçada do dia a dia."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "Tomaten auf den Augen haben",
+      "ex": "Hast du Tomaten auf den Augen? Das Schild ist doch riesig!"
+     },
+     {
+      "w": "ins Fettnäpfchen treten",
+      "ex": "Mit dieser Frage bin ich voll ins Fettnäpfchen getreten."
+     },
+     {
+      "w": "Das ist nicht mein Bier.",
+      "ex": "Wie die beiden das lösen, ist nicht mein Bier."
+     },
+     {
+      "w": "nur Bahnhof verstehen",
+      "ex": "Bei dem Fachvortrag habe ich nur Bahnhof verstanden."
+     },
+     {
+      "w": "die Daumen drücken",
+      "ex": "Morgen ist deine Prüfung? Ich drücke dir die Daumen!"
+     },
+     {
+      "w": "Schwein haben",
+      "ex": "Ich habe den letzten Zug erwischt. Schwein gehabt!"
+     }
+    ],
+    "gram": "Redewendungen sind feste Ausdrücke: nicht wörtlich übersetzen. Das Verb wird konjugiert: Ich habe Schwein gehabt, du drückst die Daumen."
+   }
+  },
+  {
+   "d": 317,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Idioms: work and effort",
+     "g": "Talk about effort and work with idioms like sich ins Zeug legen.",
+     "p": [
+      "Sich ins Zeug legen = to put in a lot of effort. Für das Projekt hat sie sich richtig ins Zeug gelegt.",
+      "Auf der Matte stehen = to show up, ready to go. Um acht Uhr stand er schon auf der Matte.",
+      "Feierabend machen = to finish work for the day. Also: eine ruhige Kugel schieben (to take it easy at work)."
+     ],
+     "q": "When did you last really legen dich ins Zeug for something? Tell me!",
+     "c": "Describe your ideal workday in five sentences using auf der Matte stehen, sich ins Zeug legen and Feierabend machen."
+    },
+    "de": {
+     "t": "Redewendungen: Arbeit und Einsatz",
+     "g": "Du sprichst über Einsatz und Arbeit mit Wendungen wie sich ins Zeug legen.",
+     "p": [
+      "Sich ins Zeug legen = sich sehr anstrengen. Für das Projekt hat sie sich richtig ins Zeug gelegt.",
+      "Auf der Matte stehen = da sein, bereit. Um acht Uhr stand er schon auf der Matte.",
+      "Feierabend machen = den Arbeitstag beenden. Auch: eine ruhige Kugel schieben (bei der Arbeit wenig tun)."
+     ],
+     "q": "Wann hast du dich zuletzt richtig für etwas ins Zeug gelegt? Erzähl mal!",
+     "c": "Beschreib deinen idealen Arbeitstag in fünf Sätzen mit auf der Matte stehen, sich ins Zeug legen und Feierabend machen."
+    },
+    "es": {
+     "t": "Modismos: trabajo y esfuerzo",
+     "g": "Habla del esfuerzo y el trabajo con expresiones como sich ins Zeug legen.",
+     "p": [
+      "Sich ins Zeug legen = esforzarse mucho, darlo todo. Für das Projekt hat sie sich richtig ins Zeug gelegt.",
+      "Auf der Matte stehen = presentarse, estar listo. Um acht Uhr stand er schon auf der Matte.",
+      "Feierabend machen = terminar la jornada. También: eine ruhige Kugel schieben (tomárselo con calma en el trabajo)."
+     ],
+     "q": "¿Cuándo fue la última vez que te esforzaste de verdad (dich ins Zeug gelegt) por algo? ¡Cuéntame!",
+     "c": "Describe tu día de trabajo ideal en cinco frases con auf der Matte stehen, sich ins Zeug legen y Feierabend machen."
+    },
+    "fr": {
+     "t": "Expressions : travail et effort",
+     "g": "Parler d'effort et de travail avec des expressions comme sich ins Zeug legen.",
+     "p": [
+      "Sich ins Zeug legen = se donner à fond. Für das Projekt hat sie sich richtig ins Zeug gelegt.",
+      "Auf der Matte stehen = être là, prêt. Um acht Uhr stand er schon auf der Matte.",
+      "Feierabend machen = finir sa journée. Aussi : eine ruhige Kugel schieben (se la couler douce au travail)."
+     ],
+     "q": "Quand t'es-tu donné à fond (dich ins Zeug gelegt) pour la dernière fois ? Raconte !",
+     "c": "Décris ta journée de travail idéale en cinq phrases avec auf der Matte stehen, sich ins Zeug legen et Feierabend machen."
+    },
+    "it": {
+     "t": "Modi di dire: lavoro e impegno",
+     "g": "Parla di impegno e lavoro con espressioni come sich ins Zeug legen.",
+     "p": [
+      "Sich ins Zeug legen = darsi da fare, impegnarsi molto. Für das Projekt hat sie sich richtig ins Zeug gelegt.",
+      "Auf der Matte stehen = presentarsi, essere pronto. Um acht Uhr stand er schon auf der Matte.",
+      "Feierabend machen = staccare dal lavoro. Anche: eine ruhige Kugel schieben (prendersela comoda al lavoro)."
+     ],
+     "q": "Quando ti sei dato da fare davvero (dich ins Zeug gelegt) per qualcosa l'ultima volta? Racconta!",
+     "c": "Descrivi la tua giornata di lavoro ideale in cinque frasi con auf der Matte stehen, sich ins Zeug legen e Feierabend machen."
+    },
+    "pt": {
+     "t": "Expressões: trabalho e esforço",
+     "g": "Falar de esforço e trabalho com expressões como sich ins Zeug legen.",
+     "p": [
+      "Sich ins Zeug legen = esforçar-se a sério. Für das Projekt hat sie sich richtig ins Zeug gelegt.",
+      "Auf der Matte stehen = aparecer, estar pronto. Um acht Uhr stand er schon auf der Matte.",
+      "Feierabend machen = acabar o dia de trabalho. Também: eine ruhige Kugel schieben (levar o trabalho com calma)."
+     ],
+     "q": "Quando foi a última vez que te esforçaste a sério (dich ins Zeug gelegt) por algo? Conta!",
+     "c": "Descreve o teu dia de trabalho ideal em cinco frases com auf der Matte stehen, sich ins Zeug legen e Feierabend machen."
+    },
+    "pt_BR": {
+     "t": "Expressões: trabalho e esforço",
+     "g": "Falar de esforço e trabalho com expressões como sich ins Zeug legen.",
+     "p": [
+      "Sich ins Zeug legen = se esforçar de verdade, ralar. Für das Projekt hat sie sich richtig ins Zeug gelegt.",
+      "Auf der Matte stehen = aparecer, estar pronto. Um acht Uhr stand er schon auf der Matte.",
+      "Feierabend machen = encerrar o expediente. Também: eine ruhige Kugel schieben (pegar leve no trabalho)."
+     ],
+     "q": "Quando foi a última vez que você se esforçou de verdade (dich ins Zeug gelegt) por algo? Conte!",
+     "c": "Descreva seu dia de trabalho ideal em cinco frases com auf der Matte stehen, sich ins Zeug legen e Feierabend machen."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "sich ins Zeug legen",
+      "ex": "Vor der Messe haben wir uns alle ins Zeug gelegt."
+     },
+     {
+      "w": "auf der Matte stehen",
+      "ex": "Pünktlich um sieben stand das Team auf der Matte."
+     },
+     {
+      "w": "Feierabend machen",
+      "ex": "Heute mache ich früh Feierabend."
+     },
+     {
+      "w": "eine ruhige Kugel schieben",
+      "ex": "Im August schieben viele eine ruhige Kugel."
+     },
+     {
+      "w": "am Ball bleiben",
+      "ex": "Beim Deutschlernen muss man am Ball bleiben."
+     },
+     {
+      "w": "unter Dach und Fach",
+      "ex": "Der Vertrag ist endlich unter Dach und Fach."
+     }
+    ],
+    "gram": "Reflexive Wendungen: Ich lege mich ins Zeug, wir haben uns ins Zeug gelegt. Feste Präpositionen nicht ändern: auf der Matte, am Ball."
+   }
+  },
+  {
+   "d": 318,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Idioms: talking and thinking",
+     "g": "Use idioms about talking and thinking: um den heißen Brei reden, auf dem Schlauch stehen.",
+     "p": [
+      "Um den heißen Brei reden = to beat around the bush. Red nicht um den heißen Brei, sag einfach, was los ist!",
+      "Auf dem Schlauch stehen = to not get it for a moment. Sorry, ich stehe gerade auf dem Schlauch.",
+      "More: kein Blatt vor den Mund nehmen (speak frankly), sich den Kopf zerbrechen (rack your brain)."
+     ],
+     "q": "Do you prefer people who nehmen kein Blatt vor den Mund or who speak more diplomatically?",
+     "c": "Write three sentences about your week using three idioms from today."
+    },
+    "de": {
+     "t": "Redewendungen: Reden und Denken",
+     "g": "Du nutzt Wendungen rund ums Reden und Denken: um den heißen Brei reden, auf dem Schlauch stehen.",
+     "p": [
+      "Um den heißen Brei reden = nicht direkt zur Sache kommen. Red nicht um den heißen Brei, sag einfach, was los ist!",
+      "Auf dem Schlauch stehen = etwas gerade nicht verstehen. Sorry, ich stehe gerade auf dem Schlauch.",
+      "Mehr: kein Blatt vor den Mund nehmen (offen sprechen), sich den Kopf zerbrechen (lange nachdenken)."
+     ],
+     "q": "Magst du lieber Menschen, die kein Blatt vor den Mund nehmen, oder diplomatische?",
+     "c": "Schreib drei Sätze über deine Woche mit drei Redewendungen von heute."
+    },
+    "es": {
+     "t": "Modismos: hablar y pensar",
+     "g": "Usa expresiones sobre hablar y pensar: um den heißen Brei reden, auf dem Schlauch stehen.",
+     "p": [
+      "Um den heißen Brei reden = andarse por las ramas. Red nicht um den heißen Brei, sag einfach, was los ist!",
+      "Auf dem Schlauch stehen = no pillar algo en ese momento. Sorry, ich stehe gerade auf dem Schlauch.",
+      "Más: kein Blatt vor den Mund nehmen (no tener pelos en la lengua), sich den Kopf zerbrechen (romperse la cabeza)."
+     ],
+     "q": "¿Prefieres a la gente que no tiene pelos en la lengua (kein Blatt vor den Mund) o a la más diplomática?",
+     "c": "Escribe tres frases sobre tu semana con tres modismos de hoy."
+    },
+    "fr": {
+     "t": "Expressions : parler et penser",
+     "g": "Employer des expressions sur la parole et la pensée : um den heißen Brei reden, auf dem Schlauch stehen.",
+     "p": [
+      "Um den heißen Brei reden = tourner autour du pot. Red nicht um den heißen Brei, sag einfach, was los ist!",
+      "Auf dem Schlauch stehen = ne pas piger sur le moment. Sorry, ich stehe gerade auf dem Schlauch.",
+      "Encore : kein Blatt vor den Mund nehmen (ne pas mâcher ses mots), sich den Kopf zerbrechen (se creuser la tête)."
+     ],
+     "q": "Préfères-tu les gens qui ne mâchent pas leurs mots (kein Blatt vor den Mund) ou les diplomates ?",
+     "c": "Écris trois phrases sur ta semaine avec trois expressions du jour."
+    },
+    "it": {
+     "t": "Modi di dire: parlare e pensare",
+     "g": "Usa espressioni su parlare e pensare: um den heißen Brei reden, auf dem Schlauch stehen.",
+     "p": [
+      "Um den heißen Brei reden = girarci intorno, menare il can per l'aia. Red nicht um den heißen Brei, sag einfach, was los ist!",
+      "Auf dem Schlauch stehen = non arrivarci sul momento. Sorry, ich stehe gerade auf dem Schlauch.",
+      "Altri: kein Blatt vor den Mund nehmen (non avere peli sulla lingua), sich den Kopf zerbrechen (scervellarsi)."
+     ],
+     "q": "Preferisci chi non ha peli sulla lingua (kein Blatt vor den Mund) o chi parla in modo diplomatico?",
+     "c": "Scrivi tre frasi sulla tua settimana con tre modi di dire di oggi."
+    },
+    "pt": {
+     "t": "Expressões: falar e pensar",
+     "g": "Usar expressões sobre falar e pensar: um den heißen Brei reden, auf dem Schlauch stehen.",
+     "p": [
+      "Um den heißen Brei reden = andar com rodeios. Red nicht um den heißen Brei, sag einfach, was los ist!",
+      "Auf dem Schlauch stehen = não perceber algo no momento. Sorry, ich stehe gerade auf dem Schlauch.",
+      "Mais: kein Blatt vor den Mund nehmen (não ter papas na língua), sich den Kopf zerbrechen (dar voltas à cabeça)."
+     ],
+     "q": "Preferes pessoas que não têm papas na língua (kein Blatt vor den Mund) ou mais diplomáticas?",
+     "c": "Escreve três frases sobre a tua semana com três expressões de hoje."
+    },
+    "pt_BR": {
+     "t": "Expressões: falar e pensar",
+     "g": "Usar expressões sobre falar e pensar: um den heißen Brei reden, auf dem Schlauch stehen.",
+     "p": [
+      "Um den heißen Brei reden = enrolar, fazer rodeios. Red nicht um den heißen Brei, sag einfach, was los ist!",
+      "Auf dem Schlauch stehen = não sacar algo na hora. Sorry, ich stehe gerade auf dem Schlauch.",
+      "Mais: kein Blatt vor den Mund nehmen (não ter papas na língua), sich den Kopf zerbrechen (quebrar a cabeça)."
+     ],
+     "q": "Você prefere pessoas sem papas na língua (kein Blatt vor den Mund) ou mais diplomáticas?",
+     "c": "Escreva três frases sobre sua semana com três expressões de hoje."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "um den heißen Brei reden",
+      "ex": "Er redet immer um den heißen Brei herum."
+     },
+     {
+      "w": "auf dem Schlauch stehen",
+      "ex": "Moment, ich stehe gerade auf dem Schlauch."
+     },
+     {
+      "w": "kein Blatt vor den Mund nehmen",
+      "ex": "Meine Oma nimmt kein Blatt vor den Mund."
+     },
+     {
+      "w": "sich den Kopf zerbrechen",
+      "ex": "Ich zerbreche mir den Kopf über die Lösung."
+     },
+     {
+      "w": "auf den Punkt bringen",
+      "ex": "Kannst du es kurz auf den Punkt bringen?"
+     },
+     {
+      "w": "der Groschen ist gefallen",
+      "ex": "Ach so! Jetzt ist der Groschen gefallen."
+     }
+    ],
+    "gram": "Dativ bei Körperteilen: Ich zerbreche mir den Kopf. Trennbares herum: Er redet um den heißen Brei herum."
+   }
+  },
+  {
+   "d": 319,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Proverbs",
+     "g": "Learn famous German proverbs and when to use them.",
+     "p": [
+      "Übung macht den Meister = practice makes perfect. The perfect motto for a language learner!",
+      "Ende gut, alles gut = all's well that ends well. Aller Anfang ist schwer = every beginning is hard.",
+      "More: Morgenstund hat Gold im Mund (the early bird...), Wer A sagt, muss auch B sagen (finish what you start)."
+     ],
+     "q": "Which German proverb fits your language journey best, and why?",
+     "c": "Find a proverb from your own language and try to explain it in German in two sentences."
+    },
+    "de": {
+     "t": "Sprichwörter",
+     "g": "Du lernst bekannte deutsche Sprichwörter und wann man sie benutzt.",
+     "p": [
+      "Übung macht den Meister: Wer viel übt, wird gut. Das perfekte Motto für Sprachlernende!",
+      "Ende gut, alles gut: Wenn das Ende gut ist, ist alles gut. Aller Anfang ist schwer: Am Anfang ist alles mühsam.",
+      "Mehr: Morgenstund hat Gold im Mund (früh aufstehen lohnt sich), Wer A sagt, muss auch B sagen (zu Ende bringen)."
+     ],
+     "q": "Welches deutsche Sprichwort passt am besten zu deinem Lernweg und warum?",
+     "c": "Nimm ein Sprichwort aus deiner Sprache und erkläre es auf Deutsch in zwei Sätzen."
+    },
+    "es": {
+     "t": "Refranes",
+     "g": "Aprende refranes alemanes famosos y cuándo usarlos.",
+     "p": [
+      "Übung macht den Meister = la práctica hace al maestro. ¡El lema perfecto para quien aprende idiomas!",
+      "Ende gut, alles gut = bien está lo que bien acaba. Aller Anfang ist schwer = todo comienzo es difícil.",
+      "Más: Morgenstund hat Gold im Mund (a quien madruga...), Wer A sagt, muss auch B sagen (lo empezado hay que acabarlo)."
+     ],
+     "q": "¿Qué refrán alemán describe mejor tu camino con el idioma y por qué?",
+     "c": "Elige un refrán de tu idioma e intenta explicarlo en alemán en dos frases."
+    },
+    "fr": {
+     "t": "Proverbes",
+     "g": "Apprendre des proverbes allemands célèbres et savoir quand les utiliser.",
+     "p": [
+      "Übung macht den Meister = c'est en forgeant qu'on devient forgeron. La devise idéale pour apprendre une langue !",
+      "Ende gut, alles gut = tout est bien qui finit bien. Aller Anfang ist schwer = il n'y a que le premier pas qui coûte.",
+      "Encore : Morgenstund hat Gold im Mund (l'avenir appartient à ceux qui se lèvent tôt), Wer A sagt, muss auch B sagen."
+     ],
+     "q": "Quel proverbe allemand décrit le mieux ton parcours linguistique, et pourquoi ?",
+     "c": "Choisis un proverbe de ta langue et essaie de l'expliquer en allemand en deux phrases."
+    },
+    "it": {
+     "t": "Proverbi",
+     "g": "Impara proverbi tedeschi famosi e quando usarli.",
+     "p": [
+      "Übung macht den Meister = la pratica rende perfetti. Il motto ideale per chi studia una lingua!",
+      "Ende gut, alles gut = tutto è bene quel che finisce bene. Aller Anfang ist schwer = ogni inizio è difficile.",
+      "Altri: Morgenstund hat Gold im Mund (il mattino ha l'oro in bocca), Wer A sagt, muss auch B sagen (finire ciò che si inizia)."
+     ],
+     "q": "Quale proverbio tedesco descrive meglio il tuo percorso con la lingua e perché?",
+     "c": "Scegli un proverbio della tua lingua e prova a spiegarlo in tedesco in due frasi."
+    },
+    "pt": {
+     "t": "Provérbios",
+     "g": "Aprender provérbios alemães famosos e quando usá-los.",
+     "p": [
+      "Übung macht den Meister = a prática leva à perfeição. O lema perfeito para quem aprende línguas!",
+      "Ende gut, alles gut = bem está o que bem acaba. Aller Anfang ist schwer = todo o começo é difícil.",
+      "Mais: Morgenstund hat Gold im Mund (Deus ajuda quem cedo madruga), Wer A sagt, muss auch B sagen (acabar o que se começa)."
+     ],
+     "q": "Que provérbio alemão descreve melhor o teu percurso com a língua e porquê?",
+     "c": "Escolhe um provérbio da tua língua e tenta explicá-lo em alemão em duas frases."
+    },
+    "pt_BR": {
+     "t": "Provérbios",
+     "g": "Aprender provérbios alemães famosos e quando usá-los.",
+     "p": [
+      "Übung macht den Meister = a prática leva à perfeição. O lema perfeito para quem aprende idiomas!",
+      "Ende gut, alles gut = tudo está bem quando termina bem. Aller Anfang ist schwer = todo começo é difícil.",
+      "Mais: Morgenstund hat Gold im Mund (Deus ajuda quem cedo madruga), Wer A sagt, muss auch B sagen (terminar o que começou)."
+     ],
+     "q": "Qual provérbio alemão descreve melhor sua jornada com o idioma e por quê?",
+     "c": "Escolha um provérbio da sua língua e tente explicá-lo em alemão em duas frases."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "Übung macht den Meister.",
+      "ex": "Ich lerne jeden Tag zehn Wörter, denn Übung macht den Meister."
+     },
+     {
+      "w": "Ende gut, alles gut.",
+      "ex": "Der Zug war spät, aber wir kamen pünktlich an. Ende gut, alles gut!"
+     },
+     {
+      "w": "Aller Anfang ist schwer.",
+      "ex": "Keine Sorge, aller Anfang ist schwer."
+     },
+     {
+      "w": "Morgenstund hat Gold im Mund.",
+      "ex": "Ich lerne früh am Morgen, denn Morgenstund hat Gold im Mund."
+     },
+     {
+      "w": "Wer A sagt, muss auch B sagen.",
+      "ex": "Du hast den Kurs begonnen. Wer A sagt, muss auch B sagen!"
+     },
+     {
+      "w": "das Sprichwort",
+      "ex": "Kennst du ein Sprichwort über das Lernen?"
+     }
+    ],
+    "gram": "Sprichwörter mit wer...: Wer A sagt, (der) muss auch B sagen. Relativsatz ohne Bezugswort, Verb am Ende."
+   }
+  },
+  {
+   "d": 320,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Youth language",
+     "g": "Understand how young German speakers talk: Digga, lost, cringe, Ehrenmann.",
+     "p": [
+      "Digga (from Dicker) = mate, bro. Digga, was geht? Very informal, only among friends.",
+      "Lost = clueless, confused; cringe = embarrassing. Ich war total lost in der Matheklausur. Das Video ist so cringe!",
+      "Ehrenmann / Ehrenfrau = a really decent person. Du hast mir geholfen? Ehrenmann! Youth words change fast."
+     ],
+     "q": "Which slang words from your language would be hard to translate into German?",
+     "c": "Rewrite the sentence Das ist sehr peinlich und ich verstehe nichts in youth language, then in formal German."
+    },
+    "de": {
+     "t": "Jugendsprache",
+     "g": "Du verstehst, wie junge Leute sprechen: Digga, lost, cringe, Ehrenmann.",
+     "p": [
+      "Digga (von Dicker) = Kumpel. Digga, was geht? Sehr locker, nur unter Freunden.",
+      "Lost = ahnungslos, verwirrt; cringe = peinlich. Ich war total lost in der Matheklausur. Das Video ist so cringe!",
+      "Ehrenmann / Ehrenfrau = ein wirklich anständiger Mensch. Du hast mir geholfen? Ehrenmann! Jugendwörter ändern sich schnell."
+     ],
+     "q": "Welche Slangwörter aus deiner Sprache wären schwer ins Deutsche zu übersetzen?",
+     "c": "Schreib den Satz Das ist sehr peinlich und ich verstehe nichts in Jugendsprache, dann in formellem Deutsch."
+    },
+    "es": {
+     "t": "Lenguaje juvenil",
+     "g": "Entiende cómo hablan los jóvenes: Digga, lost, cringe, Ehrenmann.",
+     "p": [
+      "Digga (de Dicker) = tío, colega. Digga, was geht? Muy informal, solo entre amigos.",
+      "Lost = despistado, perdido; cringe = vergonzoso. Ich war total lost in der Matheklausur. Das Video ist so cringe!",
+      "Ehrenmann / Ehrenfrau = una persona muy legal. Du hast mir geholfen? Ehrenmann! Estas palabras cambian rápido."
+     ],
+     "q": "¿Qué palabras de argot de tu idioma serían difíciles de traducir al alemán?",
+     "c": "Reescribe la frase Das ist sehr peinlich und ich verstehe nichts en lenguaje juvenil y luego en alemán formal."
+    },
+    "fr": {
+     "t": "Langage des jeunes",
+     "g": "Comprendre comment parlent les jeunes : Digga, lost, cringe, Ehrenmann.",
+     "p": [
+      "Digga (de Dicker) = mec, frérot. Digga, was geht? Très familier, seulement entre amis.",
+      "Lost = paumé ; cringe = gênant. Ich war total lost in der Matheklausur. Das Video ist so cringe!",
+      "Ehrenmann / Ehrenfrau = une personne vraiment réglo. Du hast mir geholfen? Ehrenmann! Ces mots changent vite."
+     ],
+     "q": "Quels mots d'argot de ta langue seraient difficiles à traduire en allemand ?",
+     "c": "Réécris la phrase Das ist sehr peinlich und ich verstehe nichts en langage jeune, puis en allemand soutenu."
+    },
+    "it": {
+     "t": "Linguaggio giovanile",
+     "g": "Capisci come parlano i giovani: Digga, lost, cringe, Ehrenmann.",
+     "p": [
+      "Digga (da Dicker) = fra, amico. Digga, was geht? Molto informale, solo tra amici.",
+      "Lost = perso, confuso; cringe = imbarazzante. Ich war total lost in der Matheklausur. Das Video ist so cringe!",
+      "Ehrenmann / Ehrenfrau = una persona davvero corretta. Du hast mir geholfen? Ehrenmann! Queste parole cambiano in fretta."
+     ],
+     "q": "Quali parole gergali della tua lingua sarebbero difficili da tradurre in tedesco?",
+     "c": "Riscrivi la frase Das ist sehr peinlich und ich verstehe nichts in linguaggio giovanile e poi in tedesco formale."
+    },
+    "pt": {
+     "t": "Linguagem jovem",
+     "g": "Perceber como falam os jovens: Digga, lost, cringe, Ehrenmann.",
+     "p": [
+      "Digga (de Dicker) = pá, mano. Digga, was geht? Muito informal, só entre amigos.",
+      "Lost = perdido, à nora; cringe = embaraçoso. Ich war total lost in der Matheklausur. Das Video ist so cringe!",
+      "Ehrenmann / Ehrenfrau = uma pessoa mesmo porreira. Du hast mir geholfen? Ehrenmann! Estas palavras mudam depressa."
+     ],
+     "q": "Que palavras de calão da tua língua seriam difíceis de traduzir para alemão?",
+     "c": "Reescreve a frase Das ist sehr peinlich und ich verstehe nichts em linguagem jovem e depois em alemão formal."
+    },
+    "pt_BR": {
+     "t": "Gíria jovem",
+     "g": "Entender como os jovens falam: Digga, lost, cringe, Ehrenmann.",
+     "p": [
+      "Digga (de Dicker) = mano, parça. Digga, was geht? Bem informal, só entre amigos.",
+      "Lost = perdido, boiando; cringe = vergonhoso. Ich war total lost in der Matheklausur. Das Video ist so cringe!",
+      "Ehrenmann / Ehrenfrau = uma pessoa muito gente boa. Du hast mir geholfen? Ehrenmann! Essas gírias mudam rápido."
+     ],
+     "q": "Quais gírias da sua língua seriam difíceis de traduzir para o alemão?",
+     "c": "Reescreva a frase Das ist sehr peinlich und ich verstehe nichts em gíria jovem e depois em alemão formal."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "Digga",
+      "ex": "Digga, kommst du heute mit ins Kino?"
+     },
+     {
+      "w": "lost",
+      "ex": "Ohne Navi bin ich in der Stadt total lost."
+     },
+     {
+      "w": "cringe",
+      "ex": "Sein Tanz auf der Party war echt cringe."
+     },
+     {
+      "w": "der Ehrenmann",
+      "ex": "Er hat mir beim Umzug geholfen, ein echter Ehrenmann."
+     },
+     {
+      "w": "Was geht?",
+      "ex": "Hey, was geht? Lange nicht gesehen!"
+     },
+     {
+      "w": "chillen",
+      "ex": "Am Wochenende will ich einfach nur chillen."
+     }
+    ],
+    "gram": "Jugendsprache: viele Anglizismen werden nicht dekliniert (total lost, so cringe); im formellen Deutsch vermeiden."
+   }
+  }
+ ]
+}

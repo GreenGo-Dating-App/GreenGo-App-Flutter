@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_german",
+ "lessons": [
+  {
+   "d": 351,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Debate: technology",
+     "g": "Argue with nuance about screens, AI and privacy.",
+     "p": [
+      "Screens: Bildschirme erleichtern das Lernen, doch zu viel Bildschirmzeit kann den Schlaf stören.",
+      "AI: Künstliche Intelligenz kann Routinearbeit übernehmen. Die Frage ist, wie wir sie verantwortungsvoll einsetzen.",
+      "Nuance: Zwar..., aber... / Es wäre zu einfach zu sagen, dass... / Entscheidend ist, wie..."
+     ],
+     "q": "Is AI more of a help or a challenge in your daily life? Answer with zwar... aber.",
+     "c": "Write a nuanced paragraph of six sentences on screen time, using zwar... aber and Entscheidend ist."
+    },
+    "de": {
+     "t": "Debatte: Technologie",
+     "g": "Du argumentierst differenziert über Bildschirme, KI und Privatsphäre.",
+     "p": [
+      "Bildschirme: Sie erleichtern das Lernen, doch zu viel Bildschirmzeit kann den Schlaf stören.",
+      "KI: Künstliche Intelligenz kann Routinearbeit übernehmen. Die Frage ist, wie wir sie verantwortungsvoll einsetzen.",
+      "Differenzieren: Zwar..., aber... / Es wäre zu einfach zu sagen, dass... / Entscheidend ist, wie..."
+     ],
+     "q": "Ist KI in deinem Alltag eher Hilfe oder Herausforderung? Antworte mit zwar... aber.",
+     "c": "Schreib einen differenzierten Absatz mit sechs Sätzen zur Bildschirmzeit mit zwar... aber und Entscheidend ist."
+    },
+    "es": {
+     "t": "Debate: tecnología",
+     "g": "Argumenta con matices sobre pantallas, IA y privacidad.",
+     "p": [
+      "Pantallas: Bildschirme erleichtern das Lernen, doch zu viel Bildschirmzeit kann den Schlaf stören.",
+      "IA: Künstliche Intelligenz kann Routinearbeit übernehmen. Die Frage ist, wie wir sie verantwortungsvoll einsetzen.",
+      "Matizar: Zwar..., aber... / Es wäre zu einfach zu sagen, dass... / Entscheidend ist, wie..."
+     ],
+     "q": "¿La IA es más una ayuda o un reto en tu día a día? Responde con zwar... aber.",
+     "c": "Escribe un párrafo matizado de seis frases sobre el tiempo de pantalla, con zwar... aber y Entscheidend ist."
+    },
+    "fr": {
+     "t": "Débat : technologie",
+     "g": "Argumenter avec nuance sur les écrans, l'IA et la vie privée.",
+     "p": [
+      "Écrans : Bildschirme erleichtern das Lernen, doch zu viel Bildschirmzeit kann den Schlaf stören.",
+      "IA : Künstliche Intelligenz kann Routinearbeit übernehmen. Die Frage ist, wie wir sie verantwortungsvoll einsetzen.",
+      "Nuancer : Zwar..., aber... / Es wäre zu einfach zu sagen, dass... / Entscheidend ist, wie..."
+     ],
+     "q": "L'IA est-elle plutôt une aide ou un défi dans ton quotidien ? Réponds avec zwar... aber.",
+     "c": "Écris un paragraphe nuancé de six phrases sur le temps d'écran, avec zwar... aber et Entscheidend ist."
+    },
+    "it": {
+     "t": "Dibattito: tecnologia",
+     "g": "Argomenta con sfumature su schermi, IA e privacy.",
+     "p": [
+      "Schermi: Bildschirme erleichtern das Lernen, doch zu viel Bildschirmzeit kann den Schlaf stören.",
+      "IA: Künstliche Intelligenz kann Routinearbeit übernehmen. Die Frage ist, wie wir sie verantwortungsvoll einsetzen.",
+      "Sfumare: Zwar..., aber... / Es wäre zu einfach zu sagen, dass... / Entscheidend ist, wie..."
+     ],
+     "q": "Nella tua vita quotidiana l'IA è più un aiuto o una sfida? Rispondi con zwar... aber.",
+     "c": "Scrivi un paragrafo sfumato di sei frasi sul tempo davanti agli schermi, con zwar... aber e Entscheidend ist."
+    },
+    "pt": {
+     "t": "Debate: tecnologia",
+     "g": "Argumentar com nuance sobre ecrãs, IA e privacidade.",
+     "p": [
+      "Ecrãs: Bildschirme erleichtern das Lernen, doch zu viel Bildschirmzeit kann den Schlaf stören.",
+      "IA: Künstliche Intelligenz kann Routinearbeit übernehmen. Die Frage ist, wie wir sie verantwortungsvoll einsetzen.",
+      "Matizar: Zwar..., aber... / Es wäre zu einfach zu sagen, dass... / Entscheidend ist, wie..."
+     ],
+     "q": "No teu dia a dia, a IA é mais uma ajuda ou um desafio? Responde com zwar... aber.",
+     "c": "Escreve um parágrafo com nuance de seis frases sobre o tempo de ecrã, com zwar... aber e Entscheidend ist."
+    },
+    "pt_BR": {
+     "t": "Debate: tecnologia",
+     "g": "Argumentar com nuance sobre telas, IA e privacidade.",
+     "p": [
+      "Telas: Bildschirme erleichtern das Lernen, doch zu viel Bildschirmzeit kann den Schlaf stören.",
+      "IA: Künstliche Intelligenz kann Routinearbeit übernehmen. Die Frage ist, wie wir sie verantwortungsvoll einsetzen.",
+      "Matizar: Zwar..., aber... / Es wäre zu einfach zu sagen, dass... / Entscheidend ist, wie..."
+     ],
+     "q": "No seu dia a dia, a IA é mais uma ajuda ou um desafio? Responda com zwar... aber.",
+     "c": "Escreva um parágrafo com nuance de seis frases sobre tempo de tela, com zwar... aber e Entscheidend ist."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "die Bildschirmzeit",
+      "ex": "Ich versuche, meine Bildschirmzeit zu reduzieren."
+     },
+     {
+      "w": "die künstliche Intelligenz",
+      "ex": "Künstliche Intelligenz übersetzt Texte in Sekunden."
+     },
+     {
+      "w": "verantwortungsvoll",
+      "ex": "Wir müssen neue Technik verantwortungsvoll nutzen."
+     },
+     {
+      "w": "zwar ... aber",
+      "ex": "Das Handy ist zwar praktisch, aber es lenkt ab."
+     },
+     {
+      "w": "entscheidend",
+      "ex": "Entscheidend ist, wie man die App nutzt."
+     },
+     {
+      "w": "ablenken",
+      "ex": "Nachrichten auf dem Handy lenken mich beim Lernen ab."
+     }
+    ],
+    "gram": "zwar..., aber...: zwar steht im Mittelfeld, aber leitet den Gegensatz ein. Es wäre zu einfach zu + Infinitiv."
+   }
+  },
+  {
+   "d": 352,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Storytelling with style",
+     "g": "Tell a vivid story with rhythm, suspense and dialogue.",
+     "p": [
+      "Rhythm: mix long and short sentences. Es war still. Viel zu still. Short sentences create tension.",
+      "Suspense: Plötzlich..., Auf einmal..., In diesem Moment... Hold back information: Was ich nicht wusste:...",
+      "Dialogue: let people speak: Wo warst du?, fragte sie leise. Use precise verbs: flüstern, rufen, murmeln."
+     ],
+     "q": "Tell me the beginning of a story that happened to you, with one short dramatic sentence and Plötzlich.",
+     "c": "Write a mini story of eight sentences about a lost key with two lines of dialogue and a surprise at the end."
+    },
+    "de": {
+     "t": "Erzählen mit Stil",
+     "g": "Du erzählst lebendig mit Rhythmus, Spannung und Dialog.",
+     "p": [
+      "Rhythmus: lange und kurze Sätze mischen. Es war still. Viel zu still. Kurze Sätze erzeugen Spannung.",
+      "Spannung: Plötzlich..., Auf einmal..., In diesem Moment... Informationen zurückhalten: Was ich nicht wusste:...",
+      "Dialog: Figuren sprechen lassen: Wo warst du?, fragte sie leise. Genaue Verben: flüstern, rufen, murmeln."
+     ],
+     "q": "Erzähl mir den Anfang einer Geschichte, die dir passiert ist, mit einem kurzen, dramatischen Satz und Plötzlich.",
+     "c": "Schreib eine Mini-Geschichte mit acht Sätzen über einen verlorenen Schlüssel, mit zwei Dialogzeilen und Überraschung am Ende."
+    },
+    "es": {
+     "t": "Narrar con estilo",
+     "g": "Cuenta una historia viva con ritmo, suspense y diálogo.",
+     "p": [
+      "Ritmo: mezcla frases largas y cortas. Es war still. Viel zu still. Las frases cortas crean tensión.",
+      "Suspense: Plötzlich..., Auf einmal..., In diesem Moment... Guarda información: Was ich nicht wusste:...",
+      "Diálogo: deja hablar a los personajes: Wo warst du?, fragte sie leise. Verbos precisos: flüstern, rufen, murmeln."
+     ],
+     "q": "Cuéntame el inicio de una historia que te pasó, con una frase corta y dramática y Plötzlich.",
+     "c": "Escribe un minicuento de ocho frases sobre una llave perdida, con dos líneas de diálogo y una sorpresa final."
+    },
+    "fr": {
+     "t": "Raconter avec style",
+     "g": "Raconter une histoire vivante avec rythme, suspense et dialogue.",
+     "p": [
+      "Rythme : mêle phrases longues et courtes. Es war still. Viel zu still. Les phrases courtes créent la tension.",
+      "Suspense : Plötzlich..., Auf einmal..., In diesem Moment... Retiens l'information : Was ich nicht wusste:...",
+      "Dialogue : fais parler les personnages : Wo warst du?, fragte sie leise. Verbes précis : flüstern, rufen, murmeln."
+     ],
+     "q": "Raconte-moi le début d'une histoire vécue, avec une phrase courte et dramatique et Plötzlich.",
+     "c": "Écris une mini-histoire de huit phrases sur une clé perdue, avec deux répliques et une surprise finale."
+    },
+    "it": {
+     "t": "Raccontare con stile",
+     "g": "Racconta una storia vivace con ritmo, suspense e dialoghi.",
+     "p": [
+      "Ritmo: alterna frasi lunghe e brevi. Es war still. Viel zu still. Le frasi brevi creano tensione.",
+      "Suspense: Plötzlich..., Auf einmal..., In diesem Moment... Trattieni informazioni: Was ich nicht wusste:...",
+      "Dialogo: fai parlare i personaggi: Wo warst du?, fragte sie leise. Verbi precisi: flüstern, rufen, murmeln."
+     ],
+     "q": "Raccontami l'inizio di una storia che ti è successa, con una frase breve e drammatica e Plötzlich.",
+     "c": "Scrivi una mini storia di otto frasi su una chiave persa, con due battute di dialogo e una sorpresa finale."
+    },
+    "pt": {
+     "t": "Contar com estilo",
+     "g": "Contar uma história viva com ritmo, suspense e diálogo.",
+     "p": [
+      "Ritmo: mistura frases longas e curtas. Es war still. Viel zu still. As frases curtas criam tensão.",
+      "Suspense: Plötzlich..., Auf einmal..., In diesem Moment... Guarda informação: Was ich nicht wusste:...",
+      "Diálogo: deixa as personagens falar: Wo warst du?, fragte sie leise. Verbos precisos: flüstern, rufen, murmeln."
+     ],
+     "q": "Conta-me o início de uma história que te aconteceu, com uma frase curta e dramática e Plötzlich.",
+     "c": "Escreve um miniconto de oito frases sobre uma chave perdida, com duas falas de diálogo e uma surpresa no fim."
+    },
+    "pt_BR": {
+     "t": "Contar com estilo",
+     "g": "Contar uma história viva com ritmo, suspense e diálogo.",
+     "p": [
+      "Ritmo: misture frases longas e curtas. Es war still. Viel zu still. Frases curtas criam tensão.",
+      "Suspense: Plötzlich..., Auf einmal..., In diesem Moment... Segure informação: Was ich nicht wusste:...",
+      "Diálogo: deixe os personagens falarem: Wo warst du?, fragte sie leise. Verbos precisos: flüstern, rufen, murmeln."
+     ],
+     "q": "Me conte o começo de uma história que aconteceu com você, com uma frase curta e dramática e Plötzlich.",
+     "c": "Escreva um miniconto de oito frases sobre uma chave perdida, com duas falas de diálogo e uma surpresa no final."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "plötzlich",
+      "ex": "Plötzlich ging das Licht aus."
+     },
+     {
+      "w": "die Spannung",
+      "ex": "Die Spannung stieg von Seite zu Seite."
+     },
+     {
+      "w": "flüstern",
+      "ex": "Komm her, flüsterte er."
+     },
+     {
+      "w": "auf einmal",
+      "ex": "Auf einmal stand meine Schwester vor der Tür."
+     },
+     {
+      "w": "in diesem Moment",
+      "ex": "In diesem Moment klingelte das Telefon."
+     },
+     {
+      "w": "die Überraschung",
+      "ex": "Was für eine schöne Überraschung!"
+     }
+    ],
+    "gram": "Inversion nach Zeitangabe: Plötzlich hörte ich... Redebegleitsatz nach direkter Rede: Wo warst du?, fragte sie."
+   }
+  },
+  {
+   "d": 353,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Paraphrasing",
+     "g": "Say things another way: mit anderen Worten, das heißt.",
+     "p": [
+      "Signal phrases: Mit anderen Worten:... / Das heißt,... / Anders gesagt:... / Damit ist gemeint, dass...",
+      "Techniques: use synonyms (beginnen = anfangen), change the word type (entscheiden = eine Entscheidung treffen), or active to passive.",
+      "Paraphrasing helps when you don't know a word: Das ist so ein Gerät, mit dem man... / Das ist jemand, der..."
+     ],
+     "q": "Explain the word Kühlschrank to me without saying it, using Das ist ein Gerät, mit dem man...",
+     "c": "Paraphrase three sentences from a German text you have read, using a synonym, a word type change and das heißt."
+    },
+    "de": {
+     "t": "Umschreiben",
+     "g": "Du sagst Dinge anders: mit anderen Worten, das heißt.",
+     "p": [
+      "Signalwörter: Mit anderen Worten:... / Das heißt,... / Anders gesagt:... / Damit ist gemeint, dass...",
+      "Techniken: Synonyme (beginnen = anfangen), Wortart ändern (entscheiden = eine Entscheidung treffen), Aktiv in Passiv.",
+      "Umschreiben hilft, wenn dir ein Wort fehlt: Das ist so ein Gerät, mit dem man... / Das ist jemand, der..."
+     ],
+     "q": "Erklär mir das Wort Kühlschrank, ohne es zu sagen, mit Das ist ein Gerät, mit dem man...",
+     "c": "Formuliere drei Sätze aus einem deutschen Text um, mit Synonym, Wortartwechsel und das heißt."
+    },
+    "es": {
+     "t": "Parafrasear",
+     "g": "Di las cosas de otra manera: mit anderen Worten, das heißt.",
+     "p": [
+      "Frases señal: Mit anderen Worten:... / Das heißt,... / Anders gesagt:... / Damit ist gemeint, dass...",
+      "Técnicas: sinónimos (beginnen = anfangen), cambiar la clase de palabra (entscheiden = eine Entscheidung treffen), activa a pasiva.",
+      "Parafrasear ayuda si te falta una palabra: Das ist so ein Gerät, mit dem man... / Das ist jemand, der..."
+     ],
+     "q": "Explícame la palabra Kühlschrank sin decirla, con Das ist ein Gerät, mit dem man...",
+     "c": "Parafrasea tres frases de un texto alemán que hayas leído, con un sinónimo, un cambio de clase de palabra y das heißt."
+    },
+    "fr": {
+     "t": "Paraphraser",
+     "g": "Dire les choses autrement : mit anderen Worten, das heißt.",
+     "p": [
+      "Expressions clés : Mit anderen Worten:... / Das heißt,... / Anders gesagt:... / Damit ist gemeint, dass...",
+      "Techniques : synonymes (beginnen = anfangen), changer la nature du mot (entscheiden = eine Entscheidung treffen), actif en passif.",
+      "Paraphraser aide quand un mot manque : Das ist so ein Gerät, mit dem man... / Das ist jemand, der..."
+     ],
+     "q": "Explique-moi le mot Kühlschrank sans le dire, avec Das ist ein Gerät, mit dem man...",
+     "c": "Reformule trois phrases d'un texte allemand lu, avec un synonyme, un changement de nature et das heißt."
+    },
+    "it": {
+     "t": "Parafrasare",
+     "g": "Dire le cose in un altro modo: mit anderen Worten, das heißt.",
+     "p": [
+      "Frasi segnale: Mit anderen Worten:... / Das heißt,... / Anders gesagt:... / Damit ist gemeint, dass...",
+      "Tecniche: sinonimi (beginnen = anfangen), cambiare categoria (entscheiden = eine Entscheidung treffen), da attivo a passivo.",
+      "Parafrasare aiuta se ti manca una parola: Das ist so ein Gerät, mit dem man... / Das ist jemand, der..."
+     ],
+     "q": "Spiegami la parola Kühlschrank senza dirla, con Das ist ein Gerät, mit dem man...",
+     "c": "Riformula tre frasi di un testo tedesco letto, con un sinonimo, un cambio di categoria e das heißt."
+    },
+    "pt": {
+     "t": "Parafrasear",
+     "g": "Dizer as coisas de outra forma: mit anderen Worten, das heißt.",
+     "p": [
+      "Expressões-sinal: Mit anderen Worten:... / Das heißt,... / Anders gesagt:... / Damit ist gemeint, dass...",
+      "Técnicas: sinónimos (beginnen = anfangen), mudar a classe da palavra (entscheiden = eine Entscheidung treffen), ativa para passiva.",
+      "Parafrasear ajuda quando falta uma palavra: Das ist so ein Gerät, mit dem man... / Das ist jemand, der..."
+     ],
+     "q": "Explica-me a palavra Kühlschrank sem a dizer, com Das ist ein Gerät, mit dem man...",
+     "c": "Reformula três frases de um texto alemão que leste, com um sinónimo, uma mudança de classe e das heißt."
+    },
+    "pt_BR": {
+     "t": "Parafrasear",
+     "g": "Dizer as coisas de outro jeito: mit anderen Worten, das heißt.",
+     "p": [
+      "Expressões-sinal: Mit anderen Worten:... / Das heißt,... / Anders gesagt:... / Damit ist gemeint, dass...",
+      "Técnicas: sinônimos (beginnen = anfangen), mudar a classe da palavra (entscheiden = eine Entscheidung treffen), ativa para passiva.",
+      "Parafrasear ajuda quando falta uma palavra: Das ist so ein Gerät, mit dem man... / Das ist jemand, der..."
+     ],
+     "q": "Me explique a palavra Kühlschrank sem dizê-la, com Das ist ein Gerät, mit dem man...",
+     "c": "Reformule três frases de um texto alemão que você leu, com um sinônimo, uma mudança de classe e das heißt."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "mit anderen Worten",
+      "ex": "Mit anderen Worten: Wir brauchen mehr Zeit."
+     },
+     {
+      "w": "das heißt",
+      "ex": "Der Kurs ist intensiv, das heißt, jeden Tag vier Stunden."
+     },
+     {
+      "w": "anders gesagt",
+      "ex": "Anders gesagt: Es hat nicht geklappt."
+     },
+     {
+      "w": "Damit ist gemeint, dass ...",
+      "ex": "Damit ist gemeint, dass jeder mithelfen soll."
+     },
+     {
+      "w": "umschreiben",
+      "ex": "Wenn dir ein Wort fehlt, umschreib es einfach."
+     },
+     {
+      "w": "das Synonym",
+      "ex": "Anfangen ist ein Synonym für beginnen."
+     }
+    ],
+    "gram": "Relativsatz mit Präposition zum Umschreiben: ein Gerät, mit dem man kocht; jemand, der Brot backt; ein Ort, an dem..."
+   }
+  },
+  {
+   "d": 354,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Summarising long texts",
+     "g": "Keep the essentials, reformulate and connect ideas in a summary.",
+     "p": [
+      "Step 1: find the main idea of each paragraph. Ask: Worum geht es? Was ist die Kernaussage?",
+      "Step 2: reformulate in your own words, without examples or details. Use the present tense and no direct quotes.",
+      "Step 3: connect: Der Text behandelt... Zunächst wird erklärt, dass... Außerdem... Abschließend betont der Autor..."
+     ],
+     "q": "What was the last long article or book chapter you read? Summarise it for me in two sentences.",
+     "c": "Summarise a German article of your choice in 60 to 80 words using Der Text behandelt, zunächst and abschließend."
+    },
+    "de": {
+     "t": "Lange Texte zusammenfassen",
+     "g": "Du behältst das Wesentliche, formulierst um und verbindest Ideen.",
+     "p": [
+      "Schritt 1: die Hauptidee jedes Absatzes finden. Frag dich: Worum geht es? Was ist die Kernaussage?",
+      "Schritt 2: mit eigenen Worten umformulieren, ohne Beispiele und Details. Präsens, keine wörtlichen Zitate.",
+      "Schritt 3: verbinden: Der Text behandelt... Zunächst wird erklärt, dass... Außerdem... Abschließend betont der Autor..."
+     ],
+     "q": "Was war der letzte lange Artikel oder das letzte Buchkapitel, das du gelesen hast? Fass es in zwei Sätzen zusammen.",
+     "c": "Fass einen deutschen Artikel deiner Wahl in 60 bis 80 Wörtern zusammen, mit Der Text behandelt, zunächst und abschließend."
+    },
+    "es": {
+     "t": "Resumir textos largos",
+     "g": "Quédate con lo esencial, reformula y conecta las ideas en un resumen.",
+     "p": [
+      "Paso 1: encuentra la idea principal de cada párrafo. Pregúntate: Worum geht es? Was ist die Kernaussage?",
+      "Paso 2: reformula con tus palabras, sin ejemplos ni detalles. Usa el presente y nada de citas literales.",
+      "Paso 3: conecta: Der Text behandelt... Zunächst wird erklärt, dass... Außerdem... Abschließend betont der Autor..."
+     ],
+     "q": "¿Cuál fue el último artículo largo o capítulo que leíste? Resúmemelo en dos frases.",
+     "c": "Resume un artículo alemán que elijas en 60 a 80 palabras con Der Text behandelt, zunächst y abschließend."
+    },
+    "fr": {
+     "t": "Résumer des textes longs",
+     "g": "Garder l'essentiel, reformuler et relier les idées dans un résumé.",
+     "p": [
+      "Étape 1 : trouve l'idée principale de chaque paragraphe. Demande-toi : Worum geht es? Was ist die Kernaussage?",
+      "Étape 2 : reformule avec tes mots, sans exemples ni détails. Au présent, sans citations directes.",
+      "Étape 3 : relie : Der Text behandelt... Zunächst wird erklärt, dass... Außerdem... Abschließend betont der Autor..."
+     ],
+     "q": "Quel est le dernier long article ou chapitre que tu as lu ? Résume-le-moi en deux phrases.",
+     "c": "Résume un article allemand de ton choix en 60 à 80 mots avec Der Text behandelt, zunächst et abschließend."
+    },
+    "it": {
+     "t": "Riassumere testi lunghi",
+     "g": "Tieni l'essenziale, riformula e collega le idee in un riassunto.",
+     "p": [
+      "Passo 1: trova l'idea principale di ogni paragrafo. Chiediti: Worum geht es? Was ist die Kernaussage?",
+      "Passo 2: riformula con parole tue, senza esempi né dettagli. Usa il presente e nessuna citazione diretta.",
+      "Passo 3: collega: Der Text behandelt... Zunächst wird erklärt, dass... Außerdem... Abschließend betont der Autor..."
+     ],
+     "q": "Qual è l'ultimo articolo lungo o capitolo che hai letto? Riassumilo in due frasi.",
+     "c": "Riassumi un articolo tedesco a scelta in 60-80 parole con Der Text behandelt, zunächst e abschließend."
+    },
+    "pt": {
+     "t": "Resumir textos longos",
+     "g": "Manter o essencial, reformular e ligar as ideias num resumo.",
+     "p": [
+      "Passo 1: encontra a ideia principal de cada parágrafo. Pergunta: Worum geht es? Was ist die Kernaussage?",
+      "Passo 2: reformula por palavras tuas, sem exemplos nem pormenores. Usa o presente e nada de citações diretas.",
+      "Passo 3: liga: Der Text behandelt... Zunächst wird erklärt, dass... Außerdem... Abschließend betont der Autor..."
+     ],
+     "q": "Qual foi o último artigo longo ou capítulo que leste? Resume-mo em duas frases.",
+     "c": "Resume um artigo alemão à tua escolha em 60 a 80 palavras com Der Text behandelt, zunächst e abschließend."
+    },
+    "pt_BR": {
+     "t": "Resumir textos longos",
+     "g": "Manter o essencial, reformular e conectar as ideias num resumo.",
+     "p": [
+      "Passo 1: encontre a ideia principal de cada parágrafo. Pergunte: Worum geht es? Was ist die Kernaussage?",
+      "Passo 2: reformule com suas palavras, sem exemplos nem detalhes. Use o presente e nada de citações diretas.",
+      "Passo 3: conecte: Der Text behandelt... Zunächst wird erklärt, dass... Außerdem... Abschließend betont der Autor..."
+     ],
+     "q": "Qual foi o último artigo longo ou capítulo que você leu? Resuma para mim em duas frases.",
+     "c": "Resuma um artigo alemão à sua escolha em 60 a 80 palavras com Der Text behandelt, zunächst e abschließend."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "die Zusammenfassung",
+      "ex": "Schreib bitte eine kurze Zusammenfassung des Artikels."
+     },
+     {
+      "w": "die Kernaussage",
+      "ex": "Die Kernaussage des Textes ist einfach."
+     },
+     {
+      "w": "behandeln",
+      "ex": "Der Artikel behandelt das Thema Wohnen."
+     },
+     {
+      "w": "wesentlich",
+      "ex": "Konzentrier dich auf das Wesentliche."
+     },
+     {
+      "w": "umformulieren",
+      "ex": "Formuliere die Sätze mit eigenen Worten um."
+     },
+     {
+      "w": "der Absatz",
+      "ex": "Jeder Absatz hat eine Hauptidee."
+     }
+    ],
+    "gram": "Zusammenfassung im Präsens, oft Passiv: Zunächst wird erklärt, dass... Nominalisierung: das Wesentliche (= das, was wesentlich ist)."
+   }
+  },
+  {
+   "d": 355,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Synthesis of sources",
+     "g": "Combine several texts into one clear summary.",
+     "p": [
+      "Name your sources: Laut Text A... / Text B zufolge... / Beide Autoren sind sich einig, dass...",
+      "Compare: Während Text A betont, dass..., hebt Text B hervor, dass... / Im Gegensatz zu... / Ähnlich wie...",
+      "Bring it together: Insgesamt zeigen beide Texte, dass... Keep your own opinion separate, at the end."
+     ],
+     "q": "Imagine two friends recommend different holidays. How would you compare their views using während?",
+     "c": "Find two short texts on the same topic and write a 70-word synthesis using laut, während and insgesamt."
+    },
+    "de": {
+     "t": "Quellen zusammenführen",
+     "g": "Du fasst mehrere Texte zu einer klaren Zusammenfassung zusammen.",
+     "p": [
+      "Quellen nennen: Laut Text A... / Text B zufolge... / Beide Autoren sind sich einig, dass...",
+      "Vergleichen: Während Text A betont, dass..., hebt Text B hervor, dass... / Im Gegensatz zu... / Ähnlich wie...",
+      "Zusammenführen: Insgesamt zeigen beide Texte, dass... Die eigene Meinung getrennt halten, am Ende."
+     ],
+     "q": "Stell dir vor, zwei Freunde empfehlen verschiedene Urlaube. Wie vergleichst du ihre Sicht mit während?",
+     "c": "Such zwei kurze Texte zum selben Thema und schreib eine Synthese von 70 Wörtern mit laut, während und insgesamt."
+    },
+    "es": {
+     "t": "Síntesis de fuentes",
+     "g": "Combina varios textos en un resumen claro.",
+     "p": [
+      "Nombra las fuentes: Laut Text A... / Text B zufolge... / Beide Autoren sind sich einig, dass...",
+      "Compara: Während Text A betont, dass..., hebt Text B hervor, dass... / Im Gegensatz zu... / Ähnlich wie...",
+      "Une todo: Insgesamt zeigen beide Texte, dass... Deja tu opinión aparte, al final."
+     ],
+     "q": "Imagina que dos amigos te recomiendan viajes distintos. ¿Cómo compararías sus opiniones con während?",
+     "c": "Busca dos textos cortos del mismo tema y escribe una síntesis de 70 palabras con laut, während e insgesamt."
+    },
+    "fr": {
+     "t": "Synthèse de documents",
+     "g": "Combiner plusieurs textes en une synthèse claire.",
+     "p": [
+      "Cite les sources : Laut Text A... / Text B zufolge... / Beide Autoren sind sich einig, dass...",
+      "Compare : Während Text A betont, dass..., hebt Text B hervor, dass... / Im Gegensatz zu... / Ähnlich wie...",
+      "Rassemble : Insgesamt zeigen beide Texte, dass... Garde ton avis à part, à la fin."
+     ],
+     "q": "Imagine que deux amis te conseillent des vacances différentes. Comment comparer leurs avis avec während ?",
+     "c": "Trouve deux textes courts sur le même thème et écris une synthèse de 70 mots avec laut, während et insgesamt."
+    },
+    "it": {
+     "t": "Sintesi di fonti",
+     "g": "Unisci più testi in un riassunto chiaro.",
+     "p": [
+      "Cita le fonti: Laut Text A... / Text B zufolge... / Beide Autoren sind sich einig, dass...",
+      "Confronta: Während Text A betont, dass..., hebt Text B hervor, dass... / Im Gegensatz zu... / Ähnlich wie...",
+      "Metti insieme: Insgesamt zeigen beide Texte, dass... Tieni la tua opinione separata, alla fine."
+     ],
+     "q": "Immagina che due amici ti consiglino vacanze diverse. Come confronteresti le loro opinioni con während?",
+     "c": "Trova due brevi testi sullo stesso tema e scrivi una sintesi di 70 parole con laut, während e insgesamt."
+    },
+    "pt": {
+     "t": "Síntese de fontes",
+     "g": "Juntar vários textos num resumo claro.",
+     "p": [
+      "Indica as fontes: Laut Text A... / Text B zufolge... / Beide Autoren sind sich einig, dass...",
+      "Compara: Während Text A betont, dass..., hebt Text B hervor, dass... / Im Gegensatz zu... / Ähnlich wie...",
+      "Junta tudo: Insgesamt zeigen beide Texte, dass... Mantém a tua opinião à parte, no fim."
+     ],
+     "q": "Imagina que dois amigos te recomendam férias diferentes. Como comparavas as opiniões deles com während?",
+     "c": "Procura dois textos curtos sobre o mesmo tema e escreve uma síntese de 70 palavras com laut, während e insgesamt."
+    },
+    "pt_BR": {
+     "t": "Síntese de fontes",
+     "g": "Juntar vários textos num resumo claro.",
+     "p": [
+      "Cite as fontes: Laut Text A... / Text B zufolge... / Beide Autoren sind sich einig, dass...",
+      "Compare: Während Text A betont, dass..., hebt Text B hervor, dass... / Im Gegensatz zu... / Ähnlich wie...",
+      "Junte tudo: Insgesamt zeigen beide Texte, dass... Deixe sua opinião separada, no final."
+     ],
+     "q": "Imagine que dois amigos recomendam viagens diferentes. Como você compararia as opiniões deles com während?",
+     "c": "Procure dois textos curtos sobre o mesmo tema e escreva uma síntese de 70 palavras com laut, während e insgesamt."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "die Synthese",
+      "ex": "Die Synthese verbindet die Aussagen beider Texte."
+     },
+     {
+      "w": "zufolge",
+      "ex": "Dem Bericht zufolge wächst die Stadt weiter."
+     },
+     {
+      "w": "sich einig sein",
+      "ex": "Beide Autoren sind sich einig, dass Bewegung wichtig ist."
+     },
+     {
+      "w": "hervorheben",
+      "ex": "Der zweite Text hebt die Vorteile hervor."
+     },
+     {
+      "w": "im Gegensatz zu",
+      "ex": "Im Gegensatz zu Text A ist Text B eher skeptisch."
+     },
+     {
+      "w": "insgesamt",
+      "ex": "Insgesamt zeigen die Texte ein ähnliches Bild."
+     }
+    ],
+    "gram": "zufolge steht nach dem Nomen + Dativ: dem Bericht zufolge. während als Konjunktion für Gegensatz: Während A..., betont B..."
+   }
+  },
+  {
+   "d": 356,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Spontaneous speaking",
+     "g": "React fast, gain time and fill gaps with style.",
+     "p": [
+      "Gaining time: Gute Frage, lass mich kurz überlegen. / Wie soll ich sagen... / Also, im Grunde...",
+      "Filling gaps: Wie heißt das noch mal? / Mir fällt das Wort gerade nicht ein. / So ein Ding zum... Keep talking!",
+      "Reacting: Echt? / Das kann ich gut verstehen. / Ach, wirklich? Und dann? Short reactions keep a conversation alive."
+     ],
+     "q": "Quick! What would you do with a free day tomorrow? Use a time-gaining phrase before you answer.",
+     "c": "Set a timer for one minute and talk non-stop about your favourite place, using at least two filler phrases."
+    },
+    "de": {
+     "t": "Spontan sprechen",
+     "g": "Du reagierst schnell, gewinnst Zeit und füllst Lücken mit Stil.",
+     "p": [
+      "Zeit gewinnen: Gute Frage, lass mich kurz überlegen. / Wie soll ich sagen... / Also, im Grunde...",
+      "Lücken füllen: Wie heißt das noch mal? / Mir fällt das Wort gerade nicht ein. / So ein Ding zum... Weiterreden!",
+      "Reagieren: Echt? / Das kann ich gut verstehen. / Ach, wirklich? Und dann? Kurze Reaktionen halten das Gespräch lebendig."
+     ],
+     "q": "Schnell! Was würdest du morgen mit einem freien Tag machen? Nutz zuerst eine Wendung, um Zeit zu gewinnen.",
+     "c": "Stell einen Timer auf eine Minute und sprich ohne Pause über deinen Lieblingsort, mit mindestens zwei Füllwendungen."
+    },
+    "es": {
+     "t": "Hablar con espontaneidad",
+     "g": "Reacciona rápido, gana tiempo y rellena huecos con estilo.",
+     "p": [
+      "Ganar tiempo: Gute Frage, lass mich kurz überlegen. / Wie soll ich sagen... / Also, im Grunde...",
+      "Rellenar huecos: Wie heißt das noch mal? / Mir fällt das Wort gerade nicht ein. / So ein Ding zum... ¡Sigue hablando!",
+      "Reaccionar: Echt? / Das kann ich gut verstehen. / Ach, wirklich? Und dann? Las reacciones cortas mantienen viva la charla."
+     ],
+     "q": "¡Rápido! ¿Qué harías mañana con un día libre? Usa antes una frase para ganar tiempo.",
+     "c": "Pon un temporizador de un minuto y habla sin parar de tu lugar favorito, con al menos dos frases de relleno."
+    },
+    "fr": {
+     "t": "Parler spontanément",
+     "g": "Réagir vite, gagner du temps et combler les trous avec style.",
+     "p": [
+      "Gagner du temps : Gute Frage, lass mich kurz überlegen. / Wie soll ich sagen... / Also, im Grunde...",
+      "Combler : Wie heißt das noch mal? / Mir fällt das Wort gerade nicht ein. / So ein Ding zum... Continue à parler !",
+      "Réagir : Echt? / Das kann ich gut verstehen. / Ach, wirklich? Und dann? Les petites réactions font vivre la conversation."
+     ],
+     "q": "Vite ! Que ferais-tu demain d'une journée libre ? Utilise d'abord une formule pour gagner du temps.",
+     "c": "Mets un minuteur d'une minute et parle sans t'arrêter de ton lieu préféré, avec au moins deux formules de remplissage."
+    },
+    "it": {
+     "t": "Parlare in modo spontaneo",
+     "g": "Reagisci in fretta, prendi tempo e riempi i vuoti con stile.",
+     "p": [
+      "Prendere tempo: Gute Frage, lass mich kurz überlegen. / Wie soll ich sagen... / Also, im Grunde...",
+      "Riempire i vuoti: Wie heißt das noch mal? / Mir fällt das Wort gerade nicht ein. / So ein Ding zum... Continua a parlare!",
+      "Reagire: Echt? / Das kann ich gut verstehen. / Ach, wirklich? Und dann? Le reazioni brevi tengono viva la conversazione."
+     ],
+     "q": "Veloce! Che cosa faresti domani con un giorno libero? Usa prima una frase per prendere tempo.",
+     "c": "Imposta un timer di un minuto e parla senza sosta del tuo posto preferito, con almeno due frasi riempitive."
+    },
+    "pt": {
+     "t": "Falar espontaneamente",
+     "g": "Reagir depressa, ganhar tempo e preencher lacunas com estilo.",
+     "p": [
+      "Ganhar tempo: Gute Frage, lass mich kurz überlegen. / Wie soll ich sagen... / Also, im Grunde...",
+      "Preencher lacunas: Wie heißt das noch mal? / Mir fällt das Wort gerade nicht ein. / So ein Ding zum... Continua a falar!",
+      "Reagir: Echt? / Das kann ich gut verstehen. / Ach, wirklich? Und dann? Reações curtas mantêm a conversa viva."
+     ],
+     "q": "Rápido! O que farias amanhã com um dia livre? Usa primeiro uma expressão para ganhar tempo.",
+     "c": "Põe um temporizador de um minuto e fala sem parar sobre o teu lugar favorito, com pelo menos duas expressões de enchimento."
+    },
+    "pt_BR": {
+     "t": "Falar com espontaneidade",
+     "g": "Reagir rápido, ganhar tempo e preencher lacunas com estilo.",
+     "p": [
+      "Ganhar tempo: Gute Frage, lass mich kurz überlegen. / Wie soll ich sagen... / Also, im Grunde...",
+      "Preencher lacunas: Wie heißt das noch mal? / Mir fällt das Wort gerade nicht ein. / So ein Ding zum... Continue falando!",
+      "Reagir: Echt? / Das kann ich gut verstehen. / Ach, wirklich? Und dann? Reações curtas mantêm a conversa viva."
+     ],
+     "q": "Rápido! O que você faria amanhã com um dia livre? Use antes uma expressão para ganhar tempo.",
+     "c": "Coloque um timer de um minuto e fale sem parar sobre seu lugar favorito, com pelo menos duas expressões de preenchimento."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "überlegen",
+      "ex": "Lass mich kurz überlegen."
+     },
+     {
+      "w": "Wie soll ich sagen ...",
+      "ex": "Wie soll ich sagen, es war ein bisschen chaotisch."
+     },
+     {
+      "w": "Mir fällt ... nicht ein.",
+      "ex": "Mir fällt der Name gerade nicht ein."
+     },
+     {
+      "w": "im Grunde",
+      "ex": "Im Grunde hast du recht."
+     },
+     {
+      "w": "Echt?",
+      "ex": "Echt? Das wusste ich gar nicht!"
+     },
+     {
+      "w": "Das kann ich gut verstehen.",
+      "ex": "Du bist müde? Das kann ich gut verstehen."
+     }
+    ],
+    "gram": "einfallen + Dativ: Mir fällt das Wort nicht ein (das Wort = Subjekt). Partikeln noch mal, eigentlich machen Fragen weicher."
+   }
+  },
+  {
+   "d": 357,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Phone and video calls pro",
+     "g": "Handle glitches, interrupt politely and clarify on calls.",
+     "p": [
+      "Glitches: Sie sind gerade eingefroren. / Ich höre Sie leider nur abgehackt. / Können Sie Ihre Kamera einschalten?",
+      "Interrupting: Entschuldigung, darf ich kurz unterbrechen? / Darf ich da kurz einhaken?",
+      "Clarifying: Habe ich Sie richtig verstanden, dass...? / Könnten Sie das bitte wiederholen? Sie sind stummgeschaltet."
+     ],
+     "q": "Your colleague is on mute and doesn't notice. What do you say politely?",
+     "c": "Write five sentences you might need in a video call: a glitch, an interruption, a clarification and a goodbye."
+    },
+    "de": {
+     "t": "Telefon- und Videocalls für Profis",
+     "g": "Du meisterst Störungen, unterbrichst höflich und klärst Missverständnisse.",
+     "p": [
+      "Störungen: Sie sind gerade eingefroren. / Ich höre Sie leider nur abgehackt. / Können Sie Ihre Kamera einschalten?",
+      "Unterbrechen: Entschuldigung, darf ich kurz unterbrechen? / Darf ich da kurz einhaken?",
+      "Klären: Habe ich Sie richtig verstanden, dass...? / Könnten Sie das bitte wiederholen? Sie sind stummgeschaltet."
+     ],
+     "q": "Deine Kollegin ist stummgeschaltet und merkt es nicht. Was sagst du höflich?",
+     "c": "Schreib fünf Sätze für einen Videocall: eine Störung, eine Unterbrechung, eine Rückfrage und eine Verabschiedung."
+    },
+    "es": {
+     "t": "Llamadas y videollamadas pro",
+     "g": "Gestiona fallos, interrumpe con cortesía y aclara en las llamadas.",
+     "p": [
+      "Fallos: Sie sind gerade eingefroren. / Ich höre Sie leider nur abgehackt. / Können Sie Ihre Kamera einschalten?",
+      "Interrumpir: Entschuldigung, darf ich kurz unterbrechen? / Darf ich da kurz einhaken?",
+      "Aclarar: Habe ich Sie richtig verstanden, dass...? / Könnten Sie das bitte wiederholen? Sie sind stummgeschaltet."
+     ],
+     "q": "Tu colega tiene el micro silenciado y no se da cuenta. ¿Qué le dices con cortesía?",
+     "c": "Escribe cinco frases útiles en una videollamada: un fallo, una interrupción, una aclaración y una despedida."
+    },
+    "fr": {
+     "t": "Appels et visios comme un pro",
+     "g": "Gérer les bugs, interrompre poliment et clarifier lors des appels.",
+     "p": [
+      "Bugs : Sie sind gerade eingefroren. / Ich höre Sie leider nur abgehackt. / Können Sie Ihre Kamera einschalten?",
+      "Interrompre : Entschuldigung, darf ich kurz unterbrechen? / Darf ich da kurz einhaken?",
+      "Clarifier : Habe ich Sie richtig verstanden, dass...? / Könnten Sie das bitte wiederholen? Sie sind stummgeschaltet."
+     ],
+     "q": "Ta collègue a le micro coupé sans s'en rendre compte. Que lui dis-tu poliment ?",
+     "c": "Écris cinq phrases utiles en visio : un bug, une interruption, une demande de précision et un au revoir."
+    },
+    "it": {
+     "t": "Telefonate e videochiamate pro",
+     "g": "Gestisci problemi tecnici, interrompi con garbo e chiarisci.",
+     "p": [
+      "Problemi: Sie sind gerade eingefroren. / Ich höre Sie leider nur abgehackt. / Können Sie Ihre Kamera einschalten?",
+      "Interrompere: Entschuldigung, darf ich kurz unterbrechen? / Darf ich da kurz einhaken?",
+      "Chiarire: Habe ich Sie richtig verstanden, dass...? / Könnten Sie das bitte wiederholen? Sie sind stummgeschaltet."
+     ],
+     "q": "La tua collega ha il microfono disattivato e non se ne accorge. Che cosa le dici con garbo?",
+     "c": "Scrivi cinque frasi utili in videochiamata: un problema tecnico, un'interruzione, un chiarimento e un saluto."
+    },
+    "pt": {
+     "t": "Chamadas e videochamadas pro",
+     "g": "Lidar com falhas, interromper com educação e esclarecer nas chamadas.",
+     "p": [
+      "Falhas: Sie sind gerade eingefroren. / Ich höre Sie leider nur abgehackt. / Können Sie Ihre Kamera einschalten?",
+      "Interromper: Entschuldigung, darf ich kurz unterbrechen? / Darf ich da kurz einhaken?",
+      "Esclarecer: Habe ich Sie richtig verstanden, dass...? / Könnten Sie das bitte wiederholen? Sie sind stummgeschaltet."
+     ],
+     "q": "A tua colega está com o microfone desligado e não repara. O que lhe dizes com educação?",
+     "c": "Escreve cinco frases úteis numa videochamada: uma falha, uma interrupção, um esclarecimento e uma despedida."
+    },
+    "pt_BR": {
+     "t": "Ligações e videochamadas pro",
+     "g": "Lidar com falhas, interromper com educação e esclarecer nas chamadas.",
+     "p": [
+      "Falhas: Sie sind gerade eingefroren. / Ich höre Sie leider nur abgehackt. / Können Sie Ihre Kamera einschalten?",
+      "Interromper: Entschuldigung, darf ich kurz unterbrechen? / Darf ich da kurz einhaken?",
+      "Esclarecer: Habe ich Sie richtig verstanden, dass...? / Könnten Sie das bitte wiederholen? Sie sind stummgeschaltet."
+     ],
+     "q": "Sua colega está no mudo e não percebe. O que você diz com educação?",
+     "c": "Escreva cinco frases úteis numa videochamada: uma falha, uma interrupção, um esclarecimento e uma despedida."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "einfrieren",
+      "ex": "Das Bild ist eingefroren, ich sehe Sie nicht mehr."
+     },
+     {
+      "w": "stummgeschaltet",
+      "ex": "Herr Lange, Sie sind noch stummgeschaltet."
+     },
+     {
+      "w": "abgehackt",
+      "ex": "Die Verbindung ist schlecht, ich höre Sie nur abgehackt."
+     },
+     {
+      "w": "unterbrechen",
+      "ex": "Darf ich Sie kurz unterbrechen?"
+     },
+     {
+      "w": "einhaken",
+      "ex": "Darf ich da kurz einhaken?"
+     },
+     {
+      "w": "die Verbindung",
+      "ex": "Die Verbindung ist leider sehr schlecht."
+     }
+    ],
+    "gram": "Höfliche Fragen: Darf ich...? Könnten Sie...? Rückfrage mit dass: Habe ich Sie richtig verstanden, dass Sie morgen kommen?"
+   }
+  },
+  {
+   "d": 358,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Mediation",
+     "g": "Explain a text to someone else in simple words.",
+     "p": [
+      "Mediation means passing on information, not translating word for word: Hier steht, dass... / Es geht darum, dass...",
+      "Simplify: short sentences, everyday words, examples. Instead of Die Benutzung ist untersagt: Man darf das nicht benutzen.",
+      "Check understanding: Ist das klar? / Soll ich das noch mal anders erklären? Adapt to your listener."
+     ],
+     "q": "A friend can't read a German sign: Rauchen auf dem gesamten Gelände untersagt. Explain it to them simply.",
+     "c": "Take a complicated German text (a rule, a form, instructions) and explain it in three simple sentences."
+    },
+    "de": {
+     "t": "Sprachmittlung",
+     "g": "Du erklärst einen Text jemand anderem in einfachen Worten.",
+     "p": [
+      "Sprachmittlung heißt Informationen weitergeben, nicht Wort für Wort übersetzen: Hier steht, dass... / Es geht darum, dass...",
+      "Vereinfachen: kurze Sätze, Alltagswörter, Beispiele. Statt Die Benutzung ist untersagt: Man darf das nicht benutzen.",
+      "Verständnis prüfen: Ist das klar? / Soll ich das noch mal anders erklären? Pass dich deinem Gegenüber an."
+     ],
+     "q": "Ein Freund versteht ein Schild nicht: Rauchen auf dem gesamten Gelände untersagt. Erklär es ihm einfach.",
+     "c": "Nimm einen komplizierten deutschen Text (Regel, Formular, Anleitung) und erklär ihn in drei einfachen Sätzen."
+    },
+    "es": {
+     "t": "Mediación",
+     "g": "Explica un texto a otra persona con palabras sencillas.",
+     "p": [
+      "Mediar es transmitir información, no traducir palabra por palabra: Hier steht, dass... / Es geht darum, dass...",
+      "Simplifica: frases cortas, palabras cotidianas, ejemplos. En vez de Die Benutzung ist untersagt: Man darf das nicht benutzen.",
+      "Comprueba: Ist das klar? / Soll ich das noch mal anders erklären? Adáptate a quien te escucha."
+     ],
+     "q": "Un amigo no entiende un cartel: Rauchen auf dem gesamten Gelände untersagt. Explícaselo de forma sencilla.",
+     "c": "Toma un texto alemán complicado (una norma, un formulario, instrucciones) y explícalo en tres frases sencillas."
+    },
+    "fr": {
+     "t": "Médiation",
+     "g": "Expliquer un texte à quelqu'un d'autre avec des mots simples.",
+     "p": [
+      "La médiation, c'est transmettre l'info, pas traduire mot à mot : Hier steht, dass... / Es geht darum, dass...",
+      "Simplifier : phrases courtes, mots courants, exemples. Au lieu de Die Benutzung ist untersagt : Man darf das nicht benutzen.",
+      "Vérifier : Ist das klar? / Soll ich das noch mal anders erklären? Adapte-toi à ton interlocuteur."
+     ],
+     "q": "Un ami ne comprend pas un panneau : Rauchen auf dem gesamten Gelände untersagt. Explique-le-lui simplement.",
+     "c": "Prends un texte allemand compliqué (règlement, formulaire, notice) et explique-le en trois phrases simples."
+    },
+    "it": {
+     "t": "Mediazione",
+     "g": "Spiega un testo a qualcun altro con parole semplici.",
+     "p": [
+      "Mediare significa trasmettere informazioni, non tradurre parola per parola: Hier steht, dass... / Es geht darum, dass...",
+      "Semplifica: frasi brevi, parole quotidiane, esempi. Invece di Die Benutzung ist untersagt: Man darf das nicht benutzen.",
+      "Verifica: Ist das klar? / Soll ich das noch mal anders erklären? Adattati a chi ascolta."
+     ],
+     "q": "Un amico non capisce un cartello: Rauchen auf dem gesamten Gelände untersagt. Spiegaglielo in modo semplice.",
+     "c": "Prendi un testo tedesco complicato (regola, modulo, istruzioni) e spiegalo in tre frasi semplici."
+    },
+    "pt": {
+     "t": "Mediação",
+     "g": "Explicar um texto a outra pessoa com palavras simples.",
+     "p": [
+      "Mediar é transmitir informação, não traduzir palavra a palavra: Hier steht, dass... / Es geht darum, dass...",
+      "Simplifica: frases curtas, palavras do dia a dia, exemplos. Em vez de Die Benutzung ist untersagt: Man darf das nicht benutzen.",
+      "Verifica: Ist das klar? / Soll ich das noch mal anders erklären? Adapta-te a quem te ouve."
+     ],
+     "q": "Um amigo não percebe uma placa: Rauchen auf dem gesamten Gelände untersagt. Explica-lhe de forma simples.",
+     "c": "Pega num texto alemão complicado (regra, formulário, instruções) e explica-o em três frases simples."
+    },
+    "pt_BR": {
+     "t": "Mediação",
+     "g": "Explicar um texto para outra pessoa com palavras simples.",
+     "p": [
+      "Mediar é passar a informação, não traduzir palavra por palavra: Hier steht, dass... / Es geht darum, dass...",
+      "Simplifique: frases curtas, palavras do dia a dia, exemplos. Em vez de Die Benutzung ist untersagt: Man darf das nicht benutzen.",
+      "Confira: Ist das klar? / Soll ich das noch mal anders erklären? Adapte-se a quem está ouvindo."
+     ],
+     "q": "Um amigo não entende uma placa: Rauchen auf dem gesamten Gelände untersagt. Explique para ele de forma simples.",
+     "c": "Pegue um texto alemão complicado (regra, formulário, instruções) e explique em três frases simples."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "die Sprachmittlung",
+      "ex": "Bei der Sprachmittlung gibt man den Inhalt sinngemäß wieder."
+     },
+     {
+      "w": "Hier steht, dass ...",
+      "ex": "Hier steht, dass das Museum montags geschlossen ist."
+     },
+     {
+      "w": "untersagt",
+      "ex": "Das Fotografieren ist im Museum untersagt."
+     },
+     {
+      "w": "vereinfachen",
+      "ex": "Kannst du den Text für meine Oma vereinfachen?"
+     },
+     {
+      "w": "sinngemäß",
+      "ex": "Gib den Text bitte sinngemäß wieder."
+     },
+     {
+      "w": "das Gegenüber",
+      "ex": "Achte darauf, ob dein Gegenüber dich versteht."
+     }
+    ],
+    "gram": "Behördensprache vereinfachen: Nominalstil (Die Benutzung ist untersagt) in Verbalstil (Man darf es nicht benutzen) umformen."
+   }
+  },
+  {
+   "d": 359,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Error clinic: common B2 mistakes",
+     "g": "Fix the most frequent mistakes of advanced learners.",
+     "p": [
+      "Word order: in subordinate clauses the verb goes last: ..., weil ich keine Zeit hatte (not weil ich hatte keine Zeit).",
+      "Prepositions and cases: warten auf + Akk, sich interessieren für + Akk, teilnehmen an + Dat. Learn verbs with their preposition.",
+      "False friends and mix-ups: bekommen means to get, not to become (werden). wenn vs als: als for one event in the past."
+     ],
+     "q": "Which mistake do you make most often in German? Let's fix it together!",
+     "c": "Write five sentences with weil, als, wenn, warten auf and teilnehmen an, then check each one carefully."
+    },
+    "de": {
+     "t": "Fehlerklinik: typische B2-Fehler",
+     "g": "Du korrigierst die häufigsten Fehler fortgeschrittener Lernender.",
+     "p": [
+      "Wortstellung: Im Nebensatz steht das Verb am Ende: ..., weil ich keine Zeit hatte (nicht: weil ich hatte keine Zeit).",
+      "Präpositionen und Kasus: warten auf + Akk, sich interessieren für + Akk, teilnehmen an + Dat. Verben mit Präposition lernen.",
+      "Falsche Freunde und Verwechslungen: bekommen heißt erhalten, nicht werden. wenn oder als: als für ein Ereignis in der Vergangenheit."
+     ],
+     "q": "Welchen Fehler machst du im Deutschen am häufigsten? Lass ihn uns gemeinsam beheben!",
+     "c": "Schreib fünf Sätze mit weil, als, wenn, warten auf und teilnehmen an und prüf jeden genau."
+    },
+    "es": {
+     "t": "Clínica de errores: fallos típicos de B2",
+     "g": "Corrige los errores más frecuentes de los estudiantes avanzados.",
+     "p": [
+      "Orden: en la subordinada el verbo va al final: ..., weil ich keine Zeit hatte (no weil ich hatte keine Zeit).",
+      "Preposiciones y casos: warten auf + Akk, sich interessieren für + Akk, teilnehmen an + Dat. Aprende el verbo con su preposición.",
+      "Falsos amigos: bekommen significa recibir, no convertirse (werden). wenn o als: als para un hecho único en el pasado."
+     ],
+     "q": "¿Qué error cometes más a menudo en alemán? ¡Vamos a corregirlo juntos!",
+     "c": "Escribe cinco frases con weil, als, wenn, warten auf y teilnehmen an, y revisa cada una con cuidado."
+    },
+    "fr": {
+     "t": "Clinique des fautes : erreurs B2 courantes",
+     "g": "Corriger les fautes les plus fréquentes des apprenants avancés.",
+     "p": [
+      "Ordre des mots : dans la subordonnée, le verbe est à la fin : ..., weil ich keine Zeit hatte (pas weil ich hatte keine Zeit).",
+      "Prépositions et cas : warten auf + Akk, sich interessieren für + Akk, teilnehmen an + Dat. Apprends le verbe avec sa préposition.",
+      "Faux amis : bekommen veut dire recevoir, pas devenir (werden). wenn ou als : als pour un fait unique au passé."
+     ],
+     "q": "Quelle faute fais-tu le plus souvent en allemand ? Corrigeons-la ensemble !",
+     "c": "Écris cinq phrases avec weil, als, wenn, warten auf et teilnehmen an, puis vérifie chacune avec soin."
+    },
+    "it": {
+     "t": "Clinica degli errori: sbagli tipici B2",
+     "g": "Correggi gli errori più frequenti di chi è avanzato.",
+     "p": [
+      "Ordine: nella subordinata il verbo va in fondo: ..., weil ich keine Zeit hatte (non weil ich hatte keine Zeit).",
+      "Preposizioni e casi: warten auf + Akk, sich interessieren für + Akk, teilnehmen an + Dat. Impara il verbo con la sua preposizione.",
+      "Falsi amici: bekommen significa ricevere, non diventare (werden). wenn o als: als per un fatto unico nel passato."
+     ],
+     "q": "Qual è l'errore che fai più spesso in tedesco? Correggiamolo insieme!",
+     "c": "Scrivi cinque frasi con weil, als, wenn, warten auf e teilnehmen an, poi controllale con attenzione."
+    },
+    "pt": {
+     "t": "Clínica de erros: falhas típicas de B2",
+     "g": "Corrigir os erros mais frequentes dos alunos avançados.",
+     "p": [
+      "Ordem: na subordinada o verbo vai para o fim: ..., weil ich keine Zeit hatte (não weil ich hatte keine Zeit).",
+      "Preposições e casos: warten auf + Akk, sich interessieren für + Akk, teilnehmen an + Dat. Aprende o verbo com a preposição.",
+      "Falsos amigos: bekommen significa receber, não tornar-se (werden). wenn ou als: als para um facto único no passado."
+     ],
+     "q": "Que erro cometes mais vezes em alemão? Vamos corrigi-lo juntos!",
+     "c": "Escreve cinco frases com weil, als, wenn, warten auf e teilnehmen an e revê cada uma com cuidado."
+    },
+    "pt_BR": {
+     "t": "Clínica de erros: falhas típicas de B2",
+     "g": "Corrigir os erros mais frequentes de alunos avançados.",
+     "p": [
+      "Ordem: na subordinada o verbo vai para o fim: ..., weil ich keine Zeit hatte (não weil ich hatte keine Zeit).",
+      "Preposições e casos: warten auf + Akk, sich interessieren für + Akk, teilnehmen an + Dat. Aprenda o verbo com a preposição.",
+      "Falsos amigos: bekommen significa receber, não tornar-se (werden). wenn ou als: als para um fato único no passado."
+     ],
+     "q": "Qual erro você comete com mais frequência em alemão? Vamos corrigi-lo juntos!",
+     "c": "Escreva cinco frases com weil, als, wenn, warten auf e teilnehmen an e revise cada uma com cuidado."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "warten auf",
+      "ex": "Ich warte schon seit einer Stunde auf den Bus."
+     },
+     {
+      "w": "teilnehmen an",
+      "ex": "Nächste Woche nehme ich an einem Workshop teil."
+     },
+     {
+      "w": "sich interessieren für",
+      "ex": "Sie interessiert sich sehr für Geschichte."
+     },
+     {
+      "w": "bekommen",
+      "ex": "Ich habe gestern einen Brief bekommen."
+     },
+     {
+      "w": "als",
+      "ex": "Als ich zehn war, zogen wir nach Graz."
+     },
+     {
+      "w": "wenn",
+      "ex": "Wenn ich Zeit habe, lese ich gern."
+     }
+    ],
+    "gram": "als = einmalig in der Vergangenheit; wenn = Gegenwart, Zukunft oder wiederholt (immer wenn). Nebensatz: Verb ans Ende."
+   }
+  },
+  {
+   "d": 360,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Pronunciation polish",
+     "g": "Polish ü and ö, the r sounds, word stress and melody.",
+     "p": [
+      "Ü and ö: say i or e and round your lips: Tür, müde, schön, hören. Practise pairs: Tier / Tür, lesen / lösen.",
+      "R sounds: at the start a soft throaty r (rot, Reise); at the end it often sounds like a short a: Lehrer, besser, hier.",
+      "Stress: usually the first syllable (Arbeit), but not with be-, ver-, ge- (Besuch, verstehen) or many loanwords (Musik)."
+     ],
+     "q": "Say Über allen Gipfeln ist Ruh out loud. Which sound is hardest for you?",
+     "c": "Record yourself reading five lines of German, listen back and practise the two words that sound least natural."
+    },
+    "de": {
+     "t": "Aussprache verfeinern",
+     "g": "Du verfeinerst ü und ö, die r-Laute, Wortbetonung und Satzmelodie.",
+     "p": [
+      "Ü und ö: i oder e sagen und die Lippen runden: Tür, müde, schön, hören. Übe Paare: Tier / Tür, lesen / lösen.",
+      "R-Laute: am Anfang ein weiches Rachen-r (rot, Reise); am Ende klingt es oft wie ein kurzes a: Lehrer, besser, hier.",
+      "Betonung: meist auf der ersten Silbe (Arbeit), aber nicht bei be-, ver-, ge- (Besuch, verstehen) oder vielen Fremdwörtern (Musik)."
+     ],
+     "q": "Sag laut: Über allen Gipfeln ist Ruh. Welcher Laut ist für dich am schwierigsten?",
+     "c": "Nimm dich beim Lesen von fünf Zeilen Deutsch auf, hör zu und übe die zwei Wörter, die am wenigsten natürlich klingen."
+    },
+    "es": {
+     "t": "Pulir la pronunciación",
+     "g": "Pule la ü y la ö, los sonidos de la r, el acento y la entonación.",
+     "p": [
+      "Ü y ö: di i o e y redondea los labios: Tür, müde, schön, hören. Practica pares: Tier / Tür, lesen / lösen.",
+      "La r: al inicio, una r suave de garganta (rot, Reise); al final suena a menudo como una a breve: Lehrer, besser, hier.",
+      "Acento: casi siempre en la primera sílaba (Arbeit), pero no con be-, ver-, ge- (Besuch, verstehen) ni muchos préstamos (Musik)."
+     ],
+     "q": "Di en voz alta: Über allen Gipfeln ist Ruh. ¿Qué sonido te cuesta más?",
+     "c": "Grábate leyendo cinco líneas en alemán, escúchate y practica las dos palabras que suenen menos naturales."
+    },
+    "fr": {
+     "t": "Peaufiner la prononciation",
+     "g": "Peaufiner ü et ö, les sons r, l'accent tonique et la mélodie.",
+     "p": [
+      "Ü et ö : dis i ou é en arrondissant les lèvres : Tür, müde, schön, hören. Paires : Tier / Tür, lesen / lösen.",
+      "Le r : au début, un r doux de gorge (rot, Reise) ; à la fin, il sonne souvent comme un a bref : Lehrer, besser, hier.",
+      "Accent : souvent sur la première syllabe (Arbeit), sauf avec be-, ver-, ge- (Besuch, verstehen) et beaucoup d'emprunts (Musik)."
+     ],
+     "q": "Dis à voix haute : Über allen Gipfeln ist Ruh. Quel son est le plus difficile pour toi ?",
+     "c": "Enregistre-toi en lisant cinq lignes d'allemand, réécoute et travaille les deux mots les moins naturels."
+    },
+    "it": {
+     "t": "Rifinire la pronuncia",
+     "g": "Rifinisci ü e ö, i suoni della r, l'accento e la melodia.",
+     "p": [
+      "Ü e ö: di' i o e arrotondando le labbra: Tür, müde, schön, hören. Esercita coppie: Tier / Tür, lesen / lösen.",
+      "La r: all'inizio una r morbida di gola (rot, Reise); alla fine spesso suona come una a breve: Lehrer, besser, hier.",
+      "Accento: di solito sulla prima sillaba (Arbeit), ma non con be-, ver-, ge- (Besuch, verstehen) né molti prestiti (Musik)."
+     ],
+     "q": "Di' ad alta voce: Über allen Gipfeln ist Ruh. Quale suono è più difficile per te?",
+     "c": "Registrati mentre leggi cinque righe in tedesco, riascoltati ed esercita le due parole meno naturali."
+    },
+    "pt": {
+     "t": "Afinar a pronúncia",
+     "g": "Afinar o ü e o ö, os sons do r, a acentuação e a melodia.",
+     "p": [
+      "Ü e ö: diz i ou e e arredonda os lábios: Tür, müde, schön, hören. Pratica pares: Tier / Tür, lesen / lösen.",
+      "O r: no início, um r suave de garganta (rot, Reise); no fim soa muitas vezes como um a breve: Lehrer, besser, hier.",
+      "Acento: quase sempre na primeira sílaba (Arbeit), mas não com be-, ver-, ge- (Besuch, verstehen) nem muitos estrangeirismos (Musik)."
+     ],
+     "q": "Diz em voz alta: Über allen Gipfeln ist Ruh. Que som é mais difícil para ti?",
+     "c": "Grava-te a ler cinco linhas em alemão, ouve e pratica as duas palavras que soam menos naturais."
+    },
+    "pt_BR": {
+     "t": "Aperfeiçoar a pronúncia",
+     "g": "Aperfeiçoar o ü e o ö, os sons do r, a sílaba tônica e a melodia.",
+     "p": [
+      "Ü e ö: diga i ou ê e arredonde os lábios: Tür, müde, schön, hören. Pratique pares: Tier / Tür, lesen / lösen.",
+      "O r: no início, um r suave de garganta (rot, Reise); no fim soa muitas vezes como um a curto: Lehrer, besser, hier.",
+      "Tônica: quase sempre na primeira sílaba (Arbeit), mas não com be-, ver-, ge- (Besuch, verstehen) nem muitos estrangeirismos (Musik)."
+     ],
+     "q": "Diga em voz alta: Über allen Gipfeln ist Ruh. Qual som é mais difícil para você?",
+     "c": "Grave-se lendo cinco linhas em alemão, ouça e pratique as duas palavras que soam menos naturais."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "die Aussprache",
+      "ex": "Deine Aussprache ist schon sehr gut."
+     },
+     {
+      "w": "die Betonung",
+      "ex": "Die Betonung liegt auf der ersten Silbe."
+     },
+     {
+      "w": "müde",
+      "ex": "Nach der Wanderung war ich sehr müde."
+     },
+     {
+      "w": "schön",
+      "ex": "Was für ein schöner Tag!"
+     },
+     {
+      "w": "die Silbe",
+      "ex": "Das Wort Verstehen hat drei Silben."
+     },
+     {
+      "w": "die Satzmelodie",
+      "ex": "Bei Fragen geht die Satzmelodie oft nach oben."
+     }
+    ],
+    "gram": "Wortakzent: Stammsilbe betont (ARbeit), untrennbare Präfixe be-, ver-, ge- unbetont (verSTEhen), trennbare betont (ANrufen)."
+   }
+  }
+ ]
+}

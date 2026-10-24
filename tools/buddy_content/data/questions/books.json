@@ -1,0 +1,1305 @@
+{
+"topic": "books",
+"questions": [
+{
+"id": "books-001",
+"lv": "any",
+"i18n": {
+"en": "What's the book you're reading right now, and how is it going?",
+"de": "Welches Buch liest du gerade, und wie gefällt es dir bisher?",
+"es": "¿Qué libro estás leyendo ahora y qué tal te está pareciendo?",
+"fr": "Quel livre lis-tu en ce moment, et qu'en penses-tu jusqu'ici ?",
+"it": "Che libro stai leggendo in questo momento, e come ti sembra finora?",
+"pt": "Que livro estás a ler neste momento e o que estás a achar?",
+"pt_BR": "Que livro você está lendo agora e o que está achando?"
+}
+},
+{
+"id": "books-002",
+"lv": "any",
+"i18n": {
+"en": "Which book has stayed with you the longest after you finished it?",
+"de": "Welches Buch ist dir nach dem Lesen am längsten im Kopf geblieben?",
+"es": "¿Qué libro se te quedó en la cabeza durante más tiempo después de terminarlo?",
+"fr": "Quel livre est resté le plus longtemps avec toi après l'avoir terminé ?",
+"it": "Quale libro ti è rimasto in testa più a lungo dopo averlo finito?",
+"pt": "Que livro ficou contigo durante mais tempo depois de o terminares?",
+"pt_BR": "Qual livro ficou com você por mais tempo depois que terminou de ler?"
+}
+},
+{
+"id": "books-003",
+"lv": "any",
+"i18n": {
+"en": "Do you prefer paper books, e-books or audiobooks, and why?",
+"de": "Magst du lieber gedruckte Bücher, E-Books oder Hörbücher, und warum?",
+"es": "¿Prefieres libros en papel, libros electrónicos o audiolibros? ¿Por qué?",
+"fr": "Tu préfères les livres papier, les livres numériques ou les livres audio, et pourquoi ?",
+"it": "Preferisci i libri di carta, gli e-book o gli audiolibri, e perché?",
+"pt": "Preferes livros em papel, e-books ou audiolivros, e porquê?",
+"pt_BR": "Você prefere livros de papel, e-books ou audiolivros? Por quê?"
+}
+},
+{
+"id": "books-004",
+"lv": "any",
+"i18n": {
+"en": "Where is your favourite place to read?",
+"de": "Wo liest du am liebsten?",
+"es": "¿Cuál es tu lugar favorito para leer?",
+"fr": "Quel est ton endroit préféré pour lire ?",
+"it": "Qual è il tuo posto preferito per leggere?",
+"pt": "Qual é o teu sítio preferido para ler?",
+"pt_BR": "Qual é o seu lugar favorito para ler?"
+}
+},
+{
+"id": "books-005",
+"lv": "any",
+"i18n": {
+"en": "What kind of stories do you always come back to?",
+"de": "Zu welcher Art von Geschichten kehrst du immer wieder zurück?",
+"es": "¿A qué tipo de historias vuelves siempre?",
+"fr": "Vers quel genre d'histoires reviens-tu toujours ?",
+"it": "A quale tipo di storie torni sempre?",
+"pt": "A que tipo de histórias voltas sempre?",
+"pt_BR": "A que tipo de história você sempre volta?"
+}
+},
+{
+"id": "books-006",
+"lv": "any",
+"i18n": {
+"en": "Which book from your childhood do you still remember fondly?",
+"de": "An welches Buch aus deiner Kindheit erinnerst du dich noch gern?",
+"es": "¿Qué libro de tu infancia todavía recuerdas con cariño?",
+"fr": "De quel livre de ton enfance te souviens-tu encore avec tendresse ?",
+"it": "Quale libro della tua infanzia ricordi ancora con affetto?",
+"pt": "De que livro da tua infância ainda te lembras com carinho?",
+"pt_BR": "De qual livro da sua infância você ainda se lembra com carinho?"
+}
+},
+{
+"id": "books-007",
+"lv": "any",
+"i18n": {
+"en": "If you could step into any book's world for a day, which would you choose?",
+"de": "Wenn du einen Tag lang in die Welt eines Buches eintauchen könntest, welche wäre es?",
+"es": "Si pudieras entrar un día en el mundo de cualquier libro, ¿cuál elegirías?",
+"fr": "Si tu pouvais entrer dans l'univers d'un livre pendant une journée, lequel choisirais-tu ?",
+"it": "Se potessi entrare per un giorno nel mondo di un libro, quale sceglieresti?",
+"pt": "Se pudesses entrar no mundo de um livro durante um dia, qual escolherias?",
+"pt_BR": "Se você pudesse entrar no mundo de um livro por um dia, qual escolheria?"
+}
+},
+{
+"id": "books-008",
+"lv": "any",
+"i18n": {
+"en": "Which fictional character would you love to have as a friend?",
+"de": "Welche Romanfigur hättest du gern als Freund oder Freundin?",
+"es": "¿Qué personaje de ficción te encantaría tener como amigo?",
+"fr": "Quel personnage de fiction aimerais-tu avoir comme ami ?",
+"it": "Quale personaggio di un libro ti piacerebbe avere come amico?",
+"pt": "Que personagem de ficção gostavas de ter como amigo?",
+"pt_BR": "Qual personagem de ficção você adoraria ter como amigo?"
+}
+},
+{
+"id": "books-009",
+"lv": "any",
+"i18n": {
+"en": "How do you usually choose your next book?",
+"de": "Wie suchst du normalerweise dein nächstes Buch aus?",
+"es": "¿Cómo sueles elegir tu próximo libro?",
+"fr": "Comment choisis-tu d'habitude ton prochain livre ?",
+"it": "Come scegli di solito il tuo prossimo libro?",
+"pt": "Como costumas escolher o teu próximo livro?",
+"pt_BR": "Como você costuma escolher o seu próximo livro?"
+}
+},
+{
+"id": "books-010",
+"lv": "any",
+"i18n": {
+"en": "What time of day do you enjoy reading the most?",
+"de": "Zu welcher Tageszeit liest du am liebsten?",
+"es": "¿En qué momento del día disfrutas más leyendo?",
+"fr": "À quel moment de la journée aimes-tu le plus lire ?",
+"it": "In quale momento della giornata ti piace di più leggere?",
+"pt": "Em que altura do dia gostas mais de ler?",
+"pt_BR": "Em que momento do dia você mais gosta de ler?"
+}
+},
+{
+"id": "books-011",
+"lv": "any",
+"i18n": {
+"en": "Is there a book you've read more than once? What brings you back to it?",
+"de": "Gibt es ein Buch, das du mehrmals gelesen hast? Was zieht dich immer wieder hin?",
+"es": "¿Hay algún libro que hayas leído más de una vez? ¿Qué te hace volver a él?",
+"fr": "Y a-t-il un livre que tu as lu plusieurs fois ? Qu'est-ce qui t'y ramène ?",
+"it": "C'è un libro che hai letto più di una volta? Cosa ti spinge a tornarci?",
+"pt": "Há algum livro que tenhas lido mais do que uma vez? O que te faz voltar a ele?",
+"pt_BR": "Tem algum livro que você leu mais de uma vez? O que faz você voltar a ele?"
+}
+},
+{
+"id": "books-012",
+"lv": "any",
+"i18n": {
+"en": "What book would you recommend to someone who says they don't like reading?",
+"de": "Welches Buch würdest du jemandem empfehlen, der sagt, er lese nicht gern?",
+"es": "¿Qué libro le recomendarías a alguien que dice que no le gusta leer?",
+"fr": "Quel livre recommanderais-tu à quelqu'un qui dit ne pas aimer lire ?",
+"it": "Che libro consiglieresti a qualcuno che dice di non amare la lettura?",
+"pt": "Que livro recomendarias a alguém que diz não gostar de ler?",
+"pt_BR": "Que livro você recomendaria para alguém que diz não gostar de ler?"
+}
+},
+{
+"id": "books-013",
+"lv": "any",
+"i18n": {
+"en": "Do you like reading one book at a time or several at once?",
+"de": "Liest du lieber ein Buch nach dem anderen oder mehrere gleichzeitig?",
+"es": "¿Te gusta leer un libro cada vez o varios a la vez?",
+"fr": "Tu aimes lire un seul livre à la fois ou plusieurs en même temps ?",
+"it": "Ti piace leggere un libro alla volta o più libri insieme?",
+"pt": "Gostas de ler um livro de cada vez ou vários ao mesmo tempo?",
+"pt_BR": "Você gosta de ler um livro por vez ou vários ao mesmo tempo?"
+}
+},
+{
+"id": "books-014",
+"lv": "any",
+"i18n": {
+"en": "Which author would you love to have a coffee with, and what would you ask?",
+"de": "Mit welchem Autor würdest du gern einen Kaffee trinken, und was würdest du fragen?",
+"es": "¿Con qué autor te encantaría tomar un café y qué le preguntarías?",
+"fr": "Avec quel auteur aimerais-tu prendre un café, et que lui demanderais-tu ?",
+"it": "Con quale autore ti piacerebbe prendere un caffè, e cosa gli chiederesti?",
+"pt": "Com que autor gostavas de tomar um café e o que lhe perguntarias?",
+"pt_BR": "Com qual autor você adoraria tomar um café, e o que perguntaria?"
+}
+},
+{
+"id": "books-015",
+"lv": "any",
+"i18n": {
+"en": "What's a book that made you laugh out loud?",
+"de": "Bei welchem Buch musstest du laut lachen?",
+"es": "¿Qué libro te ha hecho reír a carcajadas?",
+"fr": "Quel livre t'a fait rire aux éclats ?",
+"it": "Qual è un libro che ti ha fatto ridere a crepapelle?",
+"pt": "Que livro te fez rir às gargalhadas?",
+"pt_BR": "Qual livro fez você rir alto?"
+}
+},
+{
+"id": "books-016",
+"lv": "any",
+"i18n": {
+"en": "Do you prefer long novels or short books you can finish quickly?",
+"de": "Magst du lieber dicke Romane oder kurze Bücher, die man schnell durchhat?",
+"es": "¿Prefieres novelas largas o libros cortos que se terminan rápido?",
+"fr": "Tu préfères les longs romans ou les livres courts qu'on finit vite ?",
+"it": "Preferisci i romanzi lunghi o i libri brevi che si finiscono in fretta?",
+"pt": "Preferes romances longos ou livros curtos que se acabam depressa?",
+"pt_BR": "Você prefere romances longos ou livros curtos que dá para terminar rápido?"
+}
+},
+{
+"id": "books-017",
+"lv": "any",
+"i18n": {
+"en": "Which book cover has ever made you buy a book right away?",
+"de": "Welches Buchcover hat dich schon einmal sofort zum Kauf verleitet?",
+"es": "¿Alguna portada te ha hecho comprar un libro al instante? ¿Cuál?",
+"fr": "Quelle couverture t'a déjà donné envie d'acheter un livre sur-le-champ ?",
+"it": "Quale copertina ti ha convinto a comprare un libro all'istante?",
+"pt": "Que capa já te fez comprar um livro logo ali?",
+"pt_BR": "Qual capa já fez você comprar um livro na hora?"
+}
+},
+{
+"id": "books-018",
+"lv": "any",
+"i18n": {
+"en": "What does a perfect reading afternoon look like for you?",
+"de": "Wie sieht für dich ein perfekter Lesenachmittag aus?",
+"es": "¿Cómo sería para ti una tarde de lectura perfecta?",
+"fr": "À quoi ressemble pour toi un après-midi de lecture parfait ?",
+"it": "Com'è per te un pomeriggio di lettura perfetto?",
+"pt": "Como é para ti uma tarde de leitura perfeita?",
+"pt_BR": "Como é para você uma tarde de leitura perfeita?"
+}
+},
+{
+"id": "books-019",
+"lv": "any",
+"i18n": {
+"en": "Which book do you think everyone should read at least once?",
+"de": "Welches Buch sollte deiner Meinung nach jeder einmal gelesen haben?",
+"es": "¿Qué libro crees que todo el mundo debería leer al menos una vez?",
+"fr": "Selon toi, quel livre tout le monde devrait-il lire au moins une fois ?",
+"it": "Secondo te, quale libro dovrebbero leggere tutti almeno una volta?",
+"pt": "Que livro achas que toda a gente devia ler pelo menos uma vez?",
+"pt_BR": "Qual livro você acha que todo mundo deveria ler pelo menos uma vez?"
+}
+},
+{
+"id": "books-020",
+"lv": "any",
+"i18n": {
+"en": "Have you ever loved a movie adaptation more than the book?",
+"de": "Hat dir schon einmal eine Verfilmung besser gefallen als das Buch?",
+"es": "¿Alguna vez te ha gustado más la película que el libro?",
+"fr": "As-tu déjà préféré une adaptation au cinéma au livre lui-même ?",
+"it": "Ti è mai piaciuto un film più del libro da cui era tratto?",
+"pt": "Já gostaste mais de uma adaptação ao cinema do que do livro?",
+"pt_BR": "Você já gostou mais de uma adaptação para o cinema do que do livro?"
+}
+},
+{
+"id": "books-021",
+"lv": "any",
+"i18n": {
+"en": "Which book genre would you like to try but haven't yet?",
+"de": "Welches Genre würdest du gern einmal ausprobieren?",
+"es": "¿Qué género literario te gustaría probar y todavía no has probado?",
+"fr": "Quel genre littéraire aimerais-tu essayer mais n'as pas encore tenté ?",
+"it": "Quale genere letterario vorresti provare ma non hai ancora provato?",
+"pt": "Que género literário gostavas de experimentar e ainda não experimentaste?",
+"pt_BR": "Qual gênero literário você gostaria de experimentar e ainda não experimentou?"
+}
+},
+{
+"id": "books-022",
+"lv": "any",
+"i18n": {
+"en": "Do you keep the books you've read or pass them on to others?",
+"de": "Behältst du gelesene Bücher oder gibst du sie weiter?",
+"es": "¿Guardas los libros que has leído o se los pasas a otras personas?",
+"fr": "Gardes-tu les livres que tu as lus ou les donnes-tu à d'autres ?",
+"it": "Tieni i libri che hai letto o li passi ad altri?",
+"pt": "Guardas os livros que leste ou passa-los a outras pessoas?",
+"pt_BR": "Você guarda os livros que leu ou passa para outras pessoas?"
+}
+},
+{
+"id": "books-023",
+"lv": "any",
+"i18n": {
+"en": "What's a book from another country that surprised you?",
+"de": "Welches Buch aus einem anderen Land hat dich überrascht?",
+"es": "¿Qué libro de otro país te ha sorprendido?",
+"fr": "Quel livre venu d'un autre pays t'a surpris ?",
+"it": "Quale libro di un altro paese ti ha sorpreso?",
+"pt": "Que livro de outro país te surpreendeu?",
+"pt_BR": "Qual livro de outro país surpreendeu você?"
+}
+},
+{
+"id": "books-024",
+"lv": "any",
+"i18n": {
+"en": "Is there a book that changed the way you see something?",
+"de": "Gibt es ein Buch, das deinen Blick auf etwas verändert hat?",
+"es": "¿Hay algún libro que haya cambiado tu forma de ver algo?",
+"fr": "Y a-t-il un livre qui a changé ta façon de voir quelque chose ?",
+"it": "C'è un libro che ha cambiato il tuo modo di vedere qualcosa?",
+"pt": "Há algum livro que tenha mudado a tua forma de ver alguma coisa?",
+"pt_BR": "Tem algum livro que mudou o seu jeito de ver alguma coisa?"
+}
+},
+{
+"id": "books-025",
+"lv": "any",
+"i18n": {
+"en": "What do you snack on or drink while you read, if anything?",
+"de": "Was isst oder trinkst du beim Lesen, falls überhaupt?",
+"es": "¿Comes o bebes algo mientras lees? ¿Qué?",
+"fr": "Que grignotes-tu ou bois-tu pendant que tu lis, s'il y a quelque chose ?",
+"it": "Mangi o bevi qualcosa mentre leggi? Cosa?",
+"pt": "Comes ou bebes alguma coisa enquanto lês? O quê?",
+"pt_BR": "Você come ou bebe alguma coisa enquanto lê? O quê?"
+}
+},
+{
+"id": "books-026",
+"lv": "any",
+"i18n": {
+"en": "Which book world would make the best holiday destination?",
+"de": "Welche Buchwelt wäre das beste Urlaubsziel?",
+"es": "¿Qué mundo literario sería el mejor destino de vacaciones?",
+"fr": "Quel univers de livre ferait la meilleure destination de vacances ?",
+"it": "Quale mondo letterario sarebbe la meta perfetta per una vacanza?",
+"pt": "Que mundo de livro seria o melhor destino de férias?",
+"pt_BR": "Qual mundo de livro seria o melhor destino de férias?"
+}
+},
+{
+"id": "books-027",
+"lv": "any",
+"i18n": {
+"en": "Do you read in more than one language? How does it feel?",
+"de": "Liest du in mehr als einer Sprache? Wie fühlt sich das an?",
+"es": "¿Lees en más de un idioma? ¿Qué se siente?",
+"fr": "Lis-tu dans plus d'une langue ? Qu'est-ce que ça te fait ?",
+"it": "Leggi in più di una lingua? Che effetto ti fa?",
+"pt": "Lês em mais do que uma língua? Como te sentes?",
+"pt_BR": "Você lê em mais de um idioma? Como é essa experiência?"
+}
+},
+{
+"id": "books-028",
+"lv": "any",
+"i18n": {
+"en": "Who in your life shares your love of books?",
+"de": "Wer in deinem Leben teilt deine Liebe zu Büchern?",
+"es": "¿Quién en tu vida comparte tu amor por los libros?",
+"fr": "Qui, dans ta vie, partage ton amour des livres ?",
+"it": "Chi nella tua vita condivide la tua passione per i libri?",
+"pt": "Quem na tua vida partilha o teu gosto pelos livros?",
+"pt_BR": "Quem na sua vida compartilha o seu amor pelos livros?"
+}
+},
+{
+"id": "books-029",
+"lv": "any",
+"i18n": {
+"en": "What's a quote from a book that you really like?",
+"de": "Welches Zitat aus einem Buch magst du besonders?",
+"es": "¿Qué cita de un libro te gusta mucho?",
+"fr": "Quelle citation tirée d'un livre aimes-tu particulièrement ?",
+"it": "Qual è una citazione da un libro che ami molto?",
+"pt": "Qual é uma frase de um livro de que gostas muito?",
+"pt_BR": "Qual é uma frase de livro de que você gosta muito?"
+}
+},
+{
+"id": "books-030",
+"lv": "any",
+"i18n": {
+"en": "Do you prefer happy endings or endings that leave you thinking?",
+"de": "Magst du lieber Happy Ends oder Enden, die dich nachdenklich machen?",
+"es": "¿Prefieres los finales felices o los que te dejan pensando?",
+"fr": "Tu préfères les fins heureuses ou celles qui te font réfléchir ?",
+"it": "Preferisci i lieto fine o i finali che ti lasciano pensare?",
+"pt": "Preferes finais felizes ou finais que te deixam a pensar?",
+"pt_BR": "Você prefere finais felizes ou finais que deixam você pensando?"
+}
+},
+{
+"id": "books-031",
+"lv": "any",
+"i18n": {
+"en": "Which book series would you happily read all over again?",
+"de": "Welche Buchreihe würdest du gern noch einmal ganz lesen?",
+"es": "¿Qué saga leerías de nuevo con mucho gusto?",
+"fr": "Quelle série de livres relirais-tu volontiers en entier ?",
+"it": "Quale saga rileggeresti volentieri da capo?",
+"pt": "Que série de livros voltavas a ler toda com gosto?",
+"pt_BR": "Qual série de livros você leria de novo com prazer?"
+}
+},
+{
+"id": "books-032",
+"lv": "any",
+"i18n": {
+"en": "What's the most beautiful bookshop or library you've ever visited?",
+"de": "Was ist die schönste Buchhandlung oder Bibliothek, die du je besucht hast?",
+"es": "¿Cuál es la librería o biblioteca más bonita que has visitado?",
+"fr": "Quelle est la plus belle librairie ou bibliothèque que tu aies visitée ?",
+"it": "Qual è la libreria o biblioteca più bella che tu abbia mai visitato?",
+"pt": "Qual é a livraria ou biblioteca mais bonita que já visitaste?",
+"pt_BR": "Qual é a livraria ou biblioteca mais bonita que você já visitou?"
+}
+},
+{
+"id": "books-033",
+"lv": "any",
+"i18n": {
+"en": "If you wrote a book, what would it be about?",
+"de": "Wenn du ein Buch schreiben würdest, worum ginge es?",
+"es": "Si escribieras un libro, ¿de qué trataría?",
+"fr": "Si tu écrivais un livre, de quoi parlerait-il ?",
+"it": "Se scrivessi un libro, di cosa parlerebbe?",
+"pt": "Se escrevesses um livro, sobre o que seria?",
+"pt_BR": "Se você escrevesse um livro, sobre o que seria?"
+}
+},
+{
+"id": "books-034",
+"lv": "any",
+"i18n": {
+"en": "Which book would you give as a gift to a good friend?",
+"de": "Welches Buch würdest du einem guten Freund schenken?",
+"es": "¿Qué libro le regalarías a un buen amigo?",
+"fr": "Quel livre offrirais-tu à un bon ami ?",
+"it": "Quale libro regaleresti a un buon amico?",
+"pt": "Que livro oferecerias a um bom amigo?",
+"pt_BR": "Qual livro você daria de presente para um bom amigo?"
+}
+},
+{
+"id": "books-035",
+"lv": "any",
+"i18n": {
+"en": "How does reading help you relax after a long day?",
+"de": "Wie hilft dir Lesen, nach einem langen Tag abzuschalten?",
+"es": "¿Cómo te ayuda la lectura a relajarte después de un día largo?",
+"fr": "Comment la lecture t'aide-t-elle à te détendre après une longue journée ?",
+"it": "In che modo leggere ti aiuta a rilassarti dopo una lunga giornata?",
+"pt": "De que forma a leitura te ajuda a relaxar depois de um dia longo?",
+"pt_BR": "Como a leitura ajuda você a relaxar depois de um dia longo?"
+}
+},
+{
+"id": "books-036",
+"lv": "any",
+"i18n": {
+"en": "Which famous classic are you curious about but haven't opened yet?",
+"de": "Auf welchen berühmten Klassiker bist du neugierig, hast ihn aber noch nicht aufgeschlagen?",
+"es": "¿Qué clásico famoso te da curiosidad pero aún no has abierto?",
+"fr": "Quel grand classique te rend curieux sans que tu l'aies encore ouvert ?",
+"it": "Quale grande classico ti incuriosisce ma non hai ancora aperto?",
+"pt": "Que clássico famoso te desperta curiosidade mas ainda não abriste?",
+"pt_BR": "Qual clássico famoso desperta sua curiosidade, mas você ainda não abriu?"
+}
+},
+{
+"id": "books-037",
+"lv": "any",
+"i18n": {
+"en": "Do you like to read reviews before picking a book, or go in blind?",
+"de": "Liest du vorher gern Rezensionen, oder lässt du dich lieber überraschen?",
+"es": "¿Te gusta leer reseñas antes de elegir un libro o prefieres ir a ciegas?",
+"fr": "Aimes-tu lire des critiques avant de choisir un livre, ou préfères-tu te laisser surprendre ?",
+"it": "Ti piace leggere recensioni prima di scegliere un libro o preferisci andare alla cieca?",
+"pt": "Gostas de ler críticas antes de escolher um livro ou preferes ir às cegas?",
+"pt_BR": "Você gosta de ler resenhas antes de escolher um livro ou prefere ir no escuro?"
+}
+},
+{
+"id": "books-038",
+"lv": "any",
+"i18n": {
+"en": "Which book would you love to discuss with someone from another country?",
+"de": "Über welches Buch würdest du gern mit jemandem aus einem anderen Land sprechen?",
+"es": "¿Sobre qué libro te encantaría hablar con alguien de otro país?",
+"fr": "De quel livre aimerais-tu discuter avec quelqu'un d'un autre pays ?",
+"it": "Di quale libro ti piacerebbe parlare con qualcuno di un altro paese?",
+"pt": "Sobre que livro gostavas de conversar com alguém de outro país?",
+"pt_BR": "Sobre qual livro você adoraria conversar com alguém de outro país?"
+}
+},
+{
+"id": "books-039",
+"lv": "any",
+"i18n": {
+"en": "What reading goal would make you proud in the coming months?",
+"de": "Welches Leseziel würde dich in den nächsten Monaten stolz machen?",
+"es": "¿Qué meta de lectura te haría sentir orgulloso en los próximos meses?",
+"fr": "Quel objectif de lecture te rendrait fier dans les prochains mois ?",
+"it": "Quale obiettivo di lettura ti renderebbe orgoglioso nei prossimi mesi?",
+"pt": "Que objetivo de leitura te deixaria orgulhoso nos próximos meses?",
+"pt_BR": "Qual meta de leitura deixaria você orgulhoso nos próximos meses?"
+}
+},
+{
+"id": "books-040",
+"lv": "beginner",
+"i18n": {
+"en": "How often do you manage to read at the moment?",
+"de": "Wie oft kommst du im Moment zum Lesen?",
+"es": "¿Con qué frecuencia consigues leer en este momento?",
+"fr": "À quelle fréquence arrives-tu à lire en ce moment ?",
+"it": "Quanto spesso riesci a leggere in questo periodo?",
+"pt": "Com que frequência consegues ler neste momento?",
+"pt_BR": "Com que frequência você consegue ler hoje em dia?"
+}
+},
+{
+"id": "books-041",
+"lv": "beginner",
+"i18n": {
+"en": "What usually stops you from reading more?",
+"de": "Was hält dich normalerweise davon ab, mehr zu lesen?",
+"es": "¿Qué te impide normalmente leer más?",
+"fr": "Qu'est-ce qui t'empêche d'habitude de lire davantage ?",
+"it": "Che cosa di solito ti impedisce di leggere di più?",
+"pt": "O que costuma impedir-te de ler mais?",
+"pt_BR": "O que normalmente impede você de ler mais?"
+}
+},
+{
+"id": "books-042",
+"lv": "beginner",
+"i18n": {
+"en": "Do you have a library card? How do you use your local library?",
+"de": "Hast du einen Bibliotheksausweis? Wie nutzt du deine Bücherei?",
+"es": "¿Tienes carné de biblioteca? ¿Cómo usas la biblioteca de tu zona?",
+"fr": "As-tu une carte de bibliothèque ? Comment utilises-tu ta bibliothèque ?",
+"it": "Hai la tessera della biblioteca? Come usi la biblioteca della tua zona?",
+"pt": "Tens cartão de biblioteca? Como usas a biblioteca da tua zona?",
+"pt_BR": "Você tem carteirinha de biblioteca? Como usa a biblioteca do seu bairro?"
+}
+},
+{
+"id": "books-043",
+"lv": "beginner",
+"i18n": {
+"en": "Do you prefer fiction or nonfiction? What draws you to it?",
+"de": "Liest du lieber Romane oder Sachbücher? Was reizt dich daran?",
+"es": "¿Prefieres ficción o no ficción? ¿Qué te atrae?",
+"fr": "Tu préfères la fiction ou les essais et documents ? Qu'est-ce qui t'attire ?",
+"it": "Preferisci la narrativa o la saggistica? Cosa ti attira?",
+"pt": "Preferes ficção ou não ficção? O que te atrai?",
+"pt_BR": "Você prefere ficção ou não ficção? O que atrai você?"
+}
+},
+{
+"id": "books-044",
+"lv": "beginner",
+"i18n": {
+"en": "What was the last book you finished, and how would you rate it?",
+"de": "Welches Buch hast du zuletzt beendet, und wie würdest du es bewerten?",
+"es": "¿Cuál fue el último libro que terminaste y qué nota le darías?",
+"fr": "Quel est le dernier livre que tu as terminé, et quelle note lui donnerais-tu ?",
+"it": "Qual è l'ultimo libro che hai finito e che voto gli daresti?",
+"pt": "Qual foi o último livro que acabaste e que nota lhe davas?",
+"pt_BR": "Qual foi o último livro que você terminou e que nota daria?"
+}
+},
+{
+"id": "books-045",
+"lv": "beginner",
+"i18n": {
+"en": "Do you read the first page before buying a book? What do you look for?",
+"de": "Liest du vor dem Kauf die erste Seite? Worauf achtest du?",
+"es": "¿Lees la primera página antes de comprar un libro? ¿Qué buscas?",
+"fr": "Lis-tu la première page avant d'acheter un livre ? Que cherches-tu ?",
+"it": "Leggi la prima pagina prima di comprare un libro? Cosa cerchi?",
+"pt": "Lês a primeira página antes de comprar um livro? O que procuras?",
+"pt_BR": "Você lê a primeira página antes de comprar um livro? O que procura?"
+}
+},
+{
+"id": "books-046",
+"lv": "beginner",
+"i18n": {
+"en": "Have you ever tried an audiobook? What did you think?",
+"de": "Hast du schon einmal ein Hörbuch ausprobiert? Wie fandest du es?",
+"es": "¿Has probado alguna vez un audiolibro? ¿Qué te pareció?",
+"fr": "As-tu déjà essayé un livre audio ? Qu'en as-tu pensé ?",
+"it": "Hai mai provato un audiolibro? Che ne pensi?",
+"pt": "Já experimentaste um audiolivro? O que achaste?",
+"pt_BR": "Você já experimentou um audiolivro? O que achou?"
+}
+},
+{
+"id": "books-047",
+"lv": "beginner",
+"i18n": {
+"en": "Which short story or very short book would you suggest to a busy friend?",
+"de": "Welche Kurzgeschichte oder welches kurze Buch würdest du einem vielbeschäftigten Freund empfehlen?",
+"es": "¿Qué cuento o libro muy corto le sugerirías a un amigo con poco tiempo?",
+"fr": "Quelle nouvelle ou quel livre très court suggérerais-tu à un ami débordé ?",
+"it": "Quale racconto o libro brevissimo suggeriresti a un amico sempre di corsa?",
+"pt": "Que conto ou livro muito curto sugerias a um amigo com pouco tempo?",
+"pt_BR": "Qual conto ou livro bem curto você sugeriria para um amigo sem tempo?"
+}
+},
+{
+"id": "books-048",
+"lv": "beginner",
+"i18n": {
+"en": "What's your favourite fairy tale or fable, and what does it teach?",
+"de": "Was ist dein Lieblingsmärchen oder deine Lieblingsfabel, und was lehrt sie?",
+"es": "¿Cuál es tu cuento de hadas o fábula favorita y qué enseña?",
+"fr": "Quel est ton conte ou ta fable préférée, et que nous apprend-elle ?",
+"it": "Qual è la tua fiaba o favola preferita e che cosa insegna?",
+"pt": "Qual é o teu conto de fadas ou fábula preferida e o que ensina?",
+"pt_BR": "Qual é o seu conto de fadas ou fábula favorita e o que ela ensina?"
+}
+},
+{
+"id": "books-049",
+"lv": "beginner",
+"i18n": {
+"en": "Do you enjoy mysteries? Do you try to guess the ending?",
+"de": "Magst du Krimirätsel? Versuchst du, das Ende zu erraten?",
+"es": "¿Te gustan los misterios? ¿Intentas adivinar el final?",
+"fr": "Aimes-tu les romans à énigme ? Essaies-tu de deviner la fin ?",
+"it": "Ti piacciono i gialli a enigma? Provi a indovinare il finale?",
+"pt": "Gostas de mistérios? Tentas adivinhar o final?",
+"pt_BR": "Você gosta de mistérios? Tenta adivinhar o final?"
+}
+},
+{
+"id": "books-050",
+"lv": "beginner",
+"i18n": {
+"en": "Would you rather explore a fantasy world or a future in space?",
+"de": "Würdest du lieber eine Fantasywelt oder eine Zukunft im Weltall erkunden?",
+"es": "¿Preferirías explorar un mundo de fantasía o un futuro en el espacio?",
+"fr": "Préférerais-tu explorer un monde de fantasy ou un futur dans l'espace ?",
+"it": "Preferiresti esplorare un mondo fantasy o un futuro nello spazio?",
+"pt": "Preferias explorar um mundo de fantasia ou um futuro no espaço?",
+"pt_BR": "Você preferiria explorar um mundo de fantasia ou um futuro no espaço?"
+}
+},
+{
+"id": "books-051",
+"lv": "beginner",
+"i18n": {
+"en": "Have you read any graphic novels or comics you'd recommend?",
+"de": "Hast du Graphic Novels oder Comics gelesen, die du empfehlen würdest?",
+"es": "¿Has leído alguna novela gráfica o cómic que recomendarías?",
+"fr": "As-tu lu des romans graphiques ou des BD que tu recommanderais ?",
+"it": "Hai letto graphic novel o fumetti che consiglieresti?",
+"pt": "Leste alguma novela gráfica ou banda desenhada que recomendarias?",
+"pt_BR": "Você leu alguma graphic novel ou quadrinho que recomendaria?"
+}
+},
+{
+"id": "books-052",
+"lv": "beginner",
+"i18n": {
+"en": "Do you enjoy poetry? Is there a poem you remember?",
+"de": "Magst du Gedichte? Gibt es eines, an das du dich erinnerst?",
+"es": "¿Te gusta la poesía? ¿Recuerdas algún poema?",
+"fr": "Aimes-tu la poésie ? Y a-t-il un poème dont tu te souviens ?",
+"it": "Ti piace la poesia? C'è una poesia che ricordi?",
+"pt": "Gostas de poesia? Há algum poema de que te lembres?",
+"pt_BR": "Você gosta de poesia? Tem algum poema de que se lembra?"
+}
+},
+{
+"id": "books-053",
+"lv": "beginner",
+"i18n": {
+"en": "Who do you usually ask for book recommendations?",
+"de": "Wen fragst du normalerweise nach Buchempfehlungen?",
+"es": "¿A quién sueles pedir recomendaciones de libros?",
+"fr": "À qui demandes-tu d'habitude des conseils de lecture ?",
+"it": "A chi chiedi di solito consigli sui libri?",
+"pt": "A quem costumas pedir sugestões de livros?",
+"pt_BR": "Para quem você costuma pedir indicações de livros?"
+}
+},
+{
+"id": "books-054",
+"lv": "beginner",
+"i18n": {
+"en": "Do you ever stop reading a book you don't enjoy, or always finish it?",
+"de": "Brichst du ein Buch ab, das dir nicht gefällt, oder liest du immer zu Ende?",
+"es": "¿Dejas a veces un libro que no te gusta o siempre lo terminas?",
+"fr": "T'arrive-t-il d'abandonner un livre qui ne te plaît pas, ou le finis-tu toujours ?",
+"it": "Ti capita di abbandonare un libro che non ti piace o lo finisci sempre?",
+"pt": "Costumas desistir de um livro de que não gostas ou acabas sempre?",
+"pt_BR": "Você costuma largar um livro de que não gosta ou sempre termina?"
+}
+},
+{
+"id": "books-055",
+"lv": "beginner",
+"i18n": {
+"en": "What small habit could help you read a few more pages each day?",
+"de": "Welche kleine Gewohnheit könnte dir helfen, täglich ein paar Seiten mehr zu lesen?",
+"es": "¿Qué pequeño hábito te ayudaría a leer unas páginas más cada día?",
+"fr": "Quelle petite habitude pourrait t'aider à lire quelques pages de plus chaque jour ?",
+"it": "Quale piccola abitudine ti aiuterebbe a leggere qualche pagina in più ogni giorno?",
+"pt": "Que pequeno hábito te podia ajudar a ler mais umas páginas por dia?",
+"pt_BR": "Que pequeno hábito poderia ajudar você a ler mais algumas páginas por dia?"
+}
+},
+{
+"id": "books-056",
+"lv": "beginner",
+"i18n": {
+"en": "Do you like reading on your phone, or does it distract you?",
+"de": "Liest du gern auf dem Handy, oder lenkt es dich ab?",
+"es": "¿Te gusta leer en el móvil o te distrae?",
+"fr": "Aimes-tu lire sur ton téléphone, ou est-ce que ça te distrait ?",
+"it": "Ti piace leggere sul telefono o ti distrae?",
+"pt": "Gostas de ler no telemóvel ou distrai-te?",
+"pt_BR": "Você gosta de ler no celular ou ele distrai você?"
+}
+},
+{
+"id": "books-057",
+"lv": "beginner",
+"i18n": {
+"en": "Which classic children's book would you read to a young child?",
+"de": "Welchen Kinderbuchklassiker würdest du einem kleinen Kind vorlesen?",
+"es": "¿Qué clásico infantil le leerías a un niño pequeño?",
+"fr": "Quel classique pour enfants lirais-tu à un petit enfant ?",
+"it": "Quale classico per bambini leggeresti a un bimbo piccolo?",
+"pt": "Que clássico infantil lerias a uma criança pequena?",
+"pt_BR": "Qual clássico infantil você leria para uma criança pequena?"
+}
+},
+{
+"id": "books-058",
+"lv": "beginner",
+"i18n": {
+"en": "Do you take notes or highlight lines when you read?",
+"de": "Machst du dir beim Lesen Notizen oder markierst du Stellen?",
+"es": "¿Tomas notas o subrayas frases cuando lees?",
+"fr": "Prends-tu des notes ou soulignes-tu des passages quand tu lis ?",
+"it": "Prendi appunti o sottolinei frasi quando leggi?",
+"pt": "Tomas notas ou sublinhas frases quando lês?",
+"pt_BR": "Você faz anotações ou grifa frases quando lê?"
+}
+},
+{
+"id": "books-059",
+"lv": "beginner",
+"i18n": {
+"en": "Would you like to join a book club? What would you hope to get from it?",
+"de": "Würdest du gern einem Lesekreis beitreten? Was würdest du dir davon erhoffen?",
+"es": "¿Te gustaría unirte a un club de lectura? ¿Qué esperarías de él?",
+"fr": "Aimerais-tu rejoindre un club de lecture ? Qu'en attendrais-tu ?",
+"it": "Ti piacerebbe entrare in un club del libro? Cosa ti aspetteresti?",
+"pt": "Gostavas de entrar num clube de leitura? O que esperarias dele?",
+"pt_BR": "Você gostaria de entrar num clube do livro? O que esperaria dele?"
+}
+},
+{
+"id": "books-060",
+"lv": "beginner",
+"i18n": {
+"en": "Is there a book you started many times but never finished?",
+"de": "Gibt es ein Buch, das du oft angefangen, aber nie beendet hast?",
+"es": "¿Hay algún libro que empezaste muchas veces y nunca terminaste?",
+"fr": "Y a-t-il un livre que tu as commencé plusieurs fois sans jamais le finir ?",
+"it": "C'è un libro che hai iniziato tante volte senza mai finirlo?",
+"pt": "Há algum livro que começaste muitas vezes e nunca acabaste?",
+"pt_BR": "Tem algum livro que você começou várias vezes e nunca terminou?"
+}
+},
+{
+"id": "books-061",
+"lv": "beginner",
+"i18n": {
+"en": "What kind of main character do you enjoy following the most?",
+"de": "Welche Art von Hauptfigur begleitest du am liebsten?",
+"es": "¿Qué tipo de protagonista te gusta más seguir?",
+"fr": "Quel genre de personnage principal aimes-tu le plus suivre ?",
+"it": "Che tipo di protagonista ti piace di più seguire?",
+"pt": "Que tipo de protagonista gostas mais de acompanhar?",
+"pt_BR": "Que tipo de protagonista você mais gosta de acompanhar?"
+}
+},
+{
+"id": "books-062",
+"lv": "beginner",
+"i18n": {
+"en": "Do you read the blurb on the back before choosing a book?",
+"de": "Liest du den Klappentext, bevor du dich für ein Buch entscheidest?",
+"es": "¿Lees la contraportada antes de elegir un libro?",
+"fr": "Lis-tu la quatrième de couverture avant de choisir un livre ?",
+"it": "Leggi la quarta di copertina prima di scegliere un libro?",
+"pt": "Lês a sinopse na contracapa antes de escolher um livro?",
+"pt_BR": "Você lê a sinopse da contracapa antes de escolher um livro?"
+}
+},
+{
+"id": "books-063",
+"lv": "beginner",
+"i18n": {
+"en": "Which true story or memoir would you like to read?",
+"de": "Welche wahre Geschichte oder welche Memoiren würdest du gern lesen?",
+"es": "¿Qué historia real o memorias te gustaría leer?",
+"fr": "Quelle histoire vraie ou quels mémoires aimerais-tu lire ?",
+"it": "Quale storia vera o memoir ti piacerebbe leggere?",
+"pt": "Que história verdadeira ou livro de memórias gostavas de ler?",
+"pt_BR": "Qual história real ou livro de memórias você gostaria de ler?"
+}
+},
+{
+"id": "books-064",
+"lv": "beginner",
+"i18n": {
+"en": "How do you feel about reading aloud to others?",
+"de": "Wie findest du es, anderen vorzulesen?",
+"es": "¿Qué te parece leer en voz alta para otras personas?",
+"fr": "Que penses-tu de la lecture à voix haute pour les autres ?",
+"it": "Cosa pensi del leggere ad alta voce per gli altri?",
+"pt": "O que achas de ler em voz alta para outras pessoas?",
+"pt_BR": "O que você acha de ler em voz alta para outras pessoas?"
+}
+},
+{
+"id": "books-065",
+"lv": "intermediate",
+"i18n": {
+"en": "Which character changed the most from the start to the end of a book you read?",
+"de": "Welche Figur hat sich in einem deiner Bücher vom Anfang bis zum Ende am meisten verändert?",
+"es": "¿Qué personaje cambió más del principio al final en un libro que leíste?",
+"fr": "Quel personnage a le plus changé du début à la fin dans un livre que tu as lu ?",
+"it": "Quale personaggio è cambiato di più dall'inizio alla fine in un libro che hai letto?",
+"pt": "Que personagem mudou mais do início ao fim num livro que leste?",
+"pt_BR": "Qual personagem mudou mais do começo ao fim num livro que você leu?"
+}
+},
+{
+"id": "books-066",
+"lv": "intermediate",
+"i18n": {
+"en": "Have you ever read a book with a narrator you couldn't fully trust?",
+"de": "Hast du schon einmal ein Buch mit einem Erzähler gelesen, dem du nicht ganz trauen konntest?",
+"es": "¿Has leído algún libro con un narrador en el que no podías confiar del todo?",
+"fr": "As-tu déjà lu un livre avec un narrateur auquel tu ne pouvais pas te fier ?",
+"it": "Hai mai letto un libro con un narratore di cui non potevi fidarti del tutto?",
+"pt": "Já leste algum livro com um narrador em quem não podias confiar totalmente?",
+"pt_BR": "Você já leu um livro com um narrador em quem não dava para confiar totalmente?"
+}
+},
+{
+"id": "books-067",
+"lv": "intermediate",
+"i18n": {
+"en": "Which first line of a book has hooked you immediately?",
+"de": "Welcher erste Satz eines Buches hat dich sofort gepackt?",
+"es": "¿Qué primera frase de un libro te enganchó al instante?",
+"fr": "Quelle première phrase d'un livre t'a accroché tout de suite ?",
+"it": "Quale incipit di un libro ti ha catturato subito?",
+"pt": "Que primeira frase de um livro te agarrou logo?",
+"pt_BR": "Qual primeira frase de livro prendeu você na hora?"
+}
+},
+{
+"id": "books-068",
+"lv": "intermediate",
+"i18n": {
+"en": "Do you prefer open endings or ones where everything is resolved?",
+"de": "Magst du lieber offene Enden oder solche, bei denen alles aufgelöst wird?",
+"es": "¿Prefieres finales abiertos o aquellos en los que todo se resuelve?",
+"fr": "Tu préfères les fins ouvertes ou celles où tout est résolu ?",
+"it": "Preferisci i finali aperti o quelli in cui tutto si risolve?",
+"pt": "Preferes finais em aberto ou aqueles em que tudo se resolve?",
+"pt_BR": "Você prefere finais abertos ou aqueles em que tudo se resolve?"
+}
+},
+{
+"id": "books-069",
+"lv": "intermediate",
+"i18n": {
+"en": "Which literary period or movement would you like to explore more?",
+"de": "Welche Literaturepoche oder Strömung würdest du gern näher kennenlernen?",
+"es": "¿Qué época o movimiento literario te gustaría explorar más?",
+"fr": "Quelle époque ou quel mouvement littéraire aimerais-tu explorer davantage ?",
+"it": "Quale periodo o movimento letterario vorresti esplorare di più?",
+"pt": "Que época ou movimento literário gostavas de explorar mais?",
+"pt_BR": "Qual época ou movimento literário você gostaria de explorar mais?"
+}
+},
+{
+"id": "books-070",
+"lv": "intermediate",
+"i18n": {
+"en": "Is there a book you understood differently when you reread it?",
+"de": "Gibt es ein Buch, das du beim zweiten Lesen anders verstanden hast?",
+"es": "¿Hay algún libro que entendiste de otra manera al releerlo?",
+"fr": "Y a-t-il un livre que tu as compris autrement en le relisant ?",
+"it": "C'è un libro che hai capito in modo diverso rileggendolo?",
+"pt": "Há algum livro que entendeste de outra forma quando o releste?",
+"pt_BR": "Tem algum livro que você entendeu de outro jeito ao reler?"
+}
+},
+{
+"id": "books-071",
+"lv": "intermediate",
+"i18n": {
+"en": "What symbol or image from a book has stuck with you?",
+"de": "Welches Symbol oder Bild aus einem Buch ist dir im Gedächtnis geblieben?",
+"es": "¿Qué símbolo o imagen de un libro se te ha quedado grabado?",
+"fr": "Quel symbole ou quelle image d'un livre t'est resté en mémoire ?",
+"it": "Quale simbolo o immagine di un libro ti è rimasto impresso?",
+"pt": "Que símbolo ou imagem de um livro te ficou na memória?",
+"pt_BR": "Qual símbolo ou imagem de um livro ficou marcado em você?"
+}
+},
+{
+"id": "books-072",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you feel about long classics like Les Misérables or Middlemarch?",
+"de": "Was hältst du von langen Klassikern wie Die Elenden oder Middlemarch?",
+"es": "¿Qué opinas de los clásicos largos como Los miserables o Middlemarch?",
+"fr": "Que penses-tu des longs classiques comme Les Misérables ou Middlemarch ?",
+"it": "Cosa pensi dei classici lunghi come I miserabili o Middlemarch?",
+"pt": "O que achas de clássicos longos como Os Miseráveis ou Middlemarch?",
+"pt_BR": "O que você acha de clássicos longos como Os Miseráveis ou Middlemarch?"
+}
+},
+{
+"id": "books-073",
+"lv": "intermediate",
+"i18n": {
+"en": "Which translated book read so naturally that you forgot it was translated?",
+"de": "Welches übersetzte Buch las sich so natürlich, dass du die Übersetzung vergessen hast?",
+"es": "¿Qué libro traducido se leía tan natural que olvidaste que era una traducción?",
+"fr": "Quel livre traduit se lisait si naturellement que tu as oublié la traduction ?",
+"it": "Quale libro tradotto scorreva così bene da farti dimenticare la traduzione?",
+"pt": "Que livro traduzido se lia de forma tão natural que te esqueceste da tradução?",
+"pt_BR": "Qual livro traduzido era tão natural que você esqueceu que era tradução?"
+}
+},
+{
+"id": "books-074",
+"lv": "intermediate",
+"i18n": {
+"en": "Have you read a book that tells its story out of order? Did it work for you?",
+"de": "Hast du ein Buch gelesen, das nicht chronologisch erzählt? Hat es für dich funktioniert?",
+"es": "¿Has leído algún libro que cuente la historia desordenada? ¿Te funcionó?",
+"fr": "As-tu lu un livre qui raconte son histoire dans le désordre ? Ça a marché pour toi ?",
+"it": "Hai letto un libro che racconta la storia fuori ordine? Ha funzionato per te?",
+"pt": "Já leste um livro que conta a história fora de ordem? Resultou para ti?",
+"pt_BR": "Você já leu um livro que conta a história fora de ordem? Funcionou para você?"
+}
+},
+{
+"id": "books-075",
+"lv": "intermediate",
+"i18n": {
+"en": "Which author's writing style do you recognise immediately?",
+"de": "Den Schreibstil welches Autors erkennst du sofort?",
+"es": "¿El estilo de qué autor reconoces al instante?",
+"fr": "Le style de quel auteur reconnais-tu immédiatement ?",
+"it": "Lo stile di quale autore riconosci subito?",
+"pt": "O estilo de que autor reconheces logo?",
+"pt_BR": "O estilo de qual autor você reconhece na hora?"
+}
+},
+{
+"id": "books-076",
+"lv": "intermediate",
+"i18n": {
+"en": "What's a satire or funny book that also made you think?",
+"de": "Welche Satire oder welches lustige Buch hat dich auch zum Nachdenken gebracht?",
+"es": "¿Qué sátira o libro divertido también te hizo pensar?",
+"fr": "Quelle satire ou quel livre drôle t'a aussi fait réfléchir ?",
+"it": "Quale satira o libro divertente ti ha anche fatto riflettere?",
+"pt": "Que sátira ou livro divertido também te fez pensar?",
+"pt_BR": "Qual sátira ou livro engraçado também fez você pensar?"
+}
+},
+{
+"id": "books-077",
+"lv": "intermediate",
+"i18n": {
+"en": "Which poet or poem would you introduce to a friend?",
+"de": "Welchen Dichter oder welches Gedicht würdest du einem Freund vorstellen?",
+"es": "¿Qué poeta o poema le presentarías a un amigo?",
+"fr": "Quel poète ou quel poème ferais-tu découvrir à un ami ?",
+"it": "Quale poeta o poesia faresti conoscere a un amico?",
+"pt": "Que poeta ou poema darias a conhecer a um amigo?",
+"pt_BR": "Qual poeta ou poema você apresentaria a um amigo?"
+}
+},
+{
+"id": "books-078",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you feel when a favourite book becomes a film or series?",
+"de": "Wie fühlst du dich, wenn ein Lieblingsbuch verfilmt wird?",
+"es": "¿Qué sientes cuando un libro favorito se convierte en película o serie?",
+"fr": "Que ressens-tu quand un livre préféré devient un film ou une série ?",
+"it": "Come ti senti quando un libro che ami diventa un film o una serie?",
+"pt": "O que sentes quando um livro preferido passa a filme ou série?",
+"pt_BR": "Como você se sente quando um livro favorito vira filme ou série?"
+}
+},
+{
+"id": "books-079",
+"lv": "intermediate",
+"i18n": {
+"en": "Which nonfiction book taught you something you use in daily life?",
+"de": "Welches Sachbuch hat dir etwas beigebracht, das du im Alltag nutzt?",
+"es": "¿Qué libro de no ficción te enseñó algo que usas en tu día a día?",
+"fr": "Quel livre documentaire t'a appris quelque chose que tu utilises au quotidien ?",
+"it": "Quale saggio ti ha insegnato qualcosa che usi ogni giorno?",
+"pt": "Que livro de não ficção te ensinou algo que usas no dia a dia?",
+"pt_BR": "Qual livro de não ficção ensinou algo que você usa no dia a dia?"
+}
+},
+{
+"id": "books-080",
+"lv": "intermediate",
+"i18n": {
+"en": "Do you follow any book communities online? What do you enjoy there?",
+"de": "Folgst du Buch-Communitys im Internet? Was gefällt dir dort?",
+"es": "¿Sigues alguna comunidad lectora en internet? ¿Qué disfrutas allí?",
+"fr": "Suis-tu des communautés de lecteurs en ligne ? Qu'est-ce qui te plaît ?",
+"it": "Segui qualche community di lettori online? Cosa ti piace lì?",
+"pt": "Segues alguma comunidade de leitores online? De que gostas lá?",
+"pt_BR": "Você segue alguma comunidade de leitores na internet? Do que gosta lá?"
+}
+},
+{
+"id": "books-081",
+"lv": "intermediate",
+"i18n": {
+"en": "Which book would you choose for a book club, and why?",
+"de": "Welches Buch würdest du für einen Lesekreis auswählen, und warum?",
+"es": "¿Qué libro elegirías para un club de lectura y por qué?",
+"fr": "Quel livre choisirais-tu pour un club de lecture, et pourquoi ?",
+"it": "Quale libro sceglieresti per un club del libro, e perché?",
+"pt": "Que livro escolherias para um clube de leitura e porquê?",
+"pt_BR": "Qual livro você escolheria para um clube do livro, e por quê?"
+}
+},
+{
+"id": "books-082",
+"lv": "intermediate",
+"i18n": {
+"en": "What do you think makes a great book title?",
+"de": "Was macht deiner Meinung nach einen guten Buchtitel aus?",
+"es": "¿Qué crees que hace bueno a un título de libro?",
+"fr": "Selon toi, qu'est-ce qui fait un bon titre de livre ?",
+"it": "Secondo te, cosa rende ottimo il titolo di un libro?",
+"pt": "Na tua opinião, o que faz um bom título de livro?",
+"pt_BR": "Na sua opinião, o que faz um bom título de livro?"
+}
+},
+{
+"id": "books-083",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you organise your bookshelves at home?",
+"de": "Wie ordnest du deine Bücherregale zu Hause?",
+"es": "¿Cómo organizas las estanterías de libros en casa?",
+"fr": "Comment ranges-tu tes étagères de livres chez toi ?",
+"it": "Come organizzi le librerie di casa tua?",
+"pt": "Como organizas as estantes de livros em casa?",
+"pt_BR": "Como você organiza as estantes de livros em casa?"
+}
+},
+{
+"id": "books-084",
+"lv": "intermediate",
+"i18n": {
+"en": "Which book helped you understand another culture better?",
+"de": "Welches Buch hat dir geholfen, eine andere Kultur besser zu verstehen?",
+"es": "¿Qué libro te ayudó a entender mejor otra cultura?",
+"fr": "Quel livre t'a aidé à mieux comprendre une autre culture ?",
+"it": "Quale libro ti ha aiutato a capire meglio un'altra cultura?",
+"pt": "Que livro te ajudou a perceber melhor outra cultura?",
+"pt_BR": "Qual livro ajudou você a entender melhor outra cultura?"
+}
+},
+{
+"id": "books-085",
+"lv": "advanced",
+"i18n": {
+"en": "Do you think a book can be enjoyed fully without knowing its historical context?",
+"de": "Kann man ein Buch ganz genießen, ohne seinen historischen Hintergrund zu kennen?",
+"es": "¿Crees que se puede disfrutar del todo un libro sin conocer su contexto histórico?",
+"fr": "Penses-tu qu'on puisse apprécier pleinement un livre sans connaître son contexte historique ?",
+"it": "Pensi che si possa gustare appieno un libro senza conoscerne il contesto storico?",
+"pt": "Achas que se pode apreciar totalmente um livro sem conhecer o seu contexto histórico?",
+"pt_BR": "Você acha que dá para aproveitar um livro por completo sem conhecer o contexto histórico?"
+}
+},
+{
+"id": "books-086",
+"lv": "advanced",
+"i18n": {
+"en": "What makes a translation feel faithful to you: the words or the spirit?",
+"de": "Was macht eine Übersetzung für dich treu: die Worte oder der Geist?",
+"es": "¿Qué hace que una traducción te parezca fiel: las palabras o el espíritu?",
+"fr": "Qu'est-ce qui rend une traduction fidèle selon toi : les mots ou l'esprit ?",
+"it": "Cosa rende fedele una traduzione per te: le parole o lo spirito?",
+"pt": "O que torna uma tradução fiel para ti: as palavras ou o espírito?",
+"pt_BR": "O que torna uma tradução fiel para você: as palavras ou o espírito?"
+}
+},
+{
+"id": "books-087",
+"lv": "advanced",
+"i18n": {
+"en": "Which books would you put in your personal canon of essential reads?",
+"de": "Welche Bücher gehören in deinen persönlichen Kanon der wichtigsten Lektüren?",
+"es": "¿Qué libros pondrías en tu canon personal de lecturas esenciales?",
+"fr": "Quels livres mettrais-tu dans ton canon personnel de lectures essentielles ?",
+"it": "Quali libri metteresti nel tuo canone personale di letture essenziali?",
+"pt": "Que livros porias no teu cânone pessoal de leituras essenciais?",
+"pt_BR": "Quais livros você colocaria no seu cânone pessoal de leituras essenciais?"
+}
+},
+{
+"id": "books-088",
+"lv": "advanced",
+"i18n": {
+"en": "How has your taste in books changed over the years?",
+"de": "Wie hat sich dein Buchgeschmack im Laufe der Jahre verändert?",
+"es": "¿Cómo ha cambiado tu gusto por los libros con los años?",
+"fr": "Comment tes goûts en lecture ont-ils évolué au fil des années ?",
+"it": "Come sono cambiati i tuoi gusti in fatto di libri nel corso degli anni?",
+"pt": "Como mudou o teu gosto por livros ao longo dos anos?",
+"pt_BR": "Como o seu gosto por livros mudou ao longo dos anos?"
+}
+},
+{
+"id": "books-089",
+"lv": "advanced",
+"i18n": {
+"en": "Which two books from different countries would make an interesting pair?",
+"de": "Welche zwei Bücher aus verschiedenen Ländern würden ein spannendes Paar bilden?",
+"es": "¿Qué dos libros de países distintos formarían una pareja interesante?",
+"fr": "Quels deux livres de pays différents formeraient une paire intéressante ?",
+"it": "Quali due libri di paesi diversi formerebbero una coppia interessante?",
+"pt": "Que dois livros de países diferentes formariam um par interessante?",
+"pt_BR": "Quais dois livros de países diferentes formariam uma dupla interessante?"
+}
+},
+{
+"id": "books-090",
+"lv": "advanced",
+"i18n": {
+"en": "Do you prefer minimalist prose or rich, detailed writing? Why?",
+"de": "Magst du lieber knappe Prosa oder reiche, detaillierte Sprache? Warum?",
+"es": "¿Prefieres la prosa minimalista o una escritura rica y detallada? ¿Por qué?",
+"fr": "Tu préfères une prose minimaliste ou une écriture riche et détaillée ? Pourquoi ?",
+"it": "Preferisci una prosa essenziale o una scrittura ricca e dettagliata? Perché?",
+"pt": "Preferes prosa minimalista ou uma escrita rica e detalhada? Porquê?",
+"pt_BR": "Você prefere prosa minimalista ou uma escrita rica e detalhada? Por quê?"
+}
+},
+{
+"id": "books-091",
+"lv": "advanced",
+"i18n": {
+"en": "Which classic do you think deserves more readers today?",
+"de": "Welcher Klassiker verdient deiner Meinung nach heute mehr Leser?",
+"es": "¿Qué clásico crees que merece más lectores hoy en día?",
+"fr": "Quel classique mérite selon toi plus de lecteurs aujourd'hui ?",
+"it": "Quale classico secondo te meriterebbe più lettori oggi?",
+"pt": "Que clássico achas que merece mais leitores hoje em dia?",
+"pt_BR": "Qual clássico você acha que merece mais leitores hoje em dia?"
+}
+},
+{
+"id": "books-092",
+"lv": "advanced",
+"i18n": {
+"en": "If you planned a reading project around one theme, what would it be?",
+"de": "Wenn du ein Leseprojekt zu einem Thema planen würdest, welches wäre es?",
+"es": "Si planearas un proyecto de lectura sobre un tema, ¿cuál sería?",
+"fr": "Si tu préparais un projet de lecture autour d'un thème, lequel choisirais-tu ?",
+"it": "Se pianificassi un progetto di lettura su un tema, quale sarebbe?",
+"pt": "Se planeasses um projeto de leitura à volta de um tema, qual seria?",
+"pt_BR": "Se você planejasse um projeto de leitura sobre um tema, qual seria?"
+}
+},
+{
+"id": "books-093",
+"lv": "advanced",
+"i18n": {
+"en": "Which author would you like to read in chronological order, book by book?",
+"de": "Welchen Autor würdest du gern chronologisch lesen, Buch für Buch?",
+"es": "¿A qué autor te gustaría leer en orden cronológico, libro a libro?",
+"fr": "Quel auteur aimerais-tu lire dans l'ordre chronologique, livre après livre ?",
+"it": "Quale autore ti piacerebbe leggere in ordine cronologico, libro dopo libro?",
+"pt": "Que autor gostavas de ler por ordem cronológica, livro a livro?",
+"pt_BR": "Qual autor você gostaria de ler em ordem cronológica, livro por livro?"
+}
+},
+{
+"id": "books-094",
+"lv": "advanced",
+"i18n": {
+"en": "How has reading shaped the way you write or speak?",
+"de": "Wie hat das Lesen deine Art zu schreiben oder zu sprechen geprägt?",
+"es": "¿Cómo ha influido la lectura en tu forma de escribir o de hablar?",
+"fr": "Comment la lecture a-t-elle influencé ta façon d'écrire ou de parler ?",
+"it": "In che modo la lettura ha influenzato il tuo modo di scrivere o di parlare?",
+"pt": "De que forma a leitura influenciou a tua maneira de escrever ou falar?",
+"pt_BR": "Como a leitura influenciou o seu jeito de escrever ou de falar?"
+}
+},
+{
+"id": "books-095",
+"lv": "advanced",
+"i18n": {
+"en": "Which book would you love to read in its original language one day?",
+"de": "Welches Buch würdest du eines Tages gern in der Originalsprache lesen?",
+"es": "¿Qué libro te encantaría leer algún día en su idioma original?",
+"fr": "Quel livre aimerais-tu lire un jour dans sa langue originale ?",
+"it": "Quale libro ti piacerebbe leggere un giorno in lingua originale?",
+"pt": "Que livro gostavas de ler um dia na língua original?",
+"pt_BR": "Qual livro você adoraria ler um dia no idioma original?"
+}
+},
+{
+"id": "books-096",
+"lv": "advanced",
+"i18n": {
+"en": "What would your list of ten desert island books include?",
+"de": "Welche zehn Bücher würdest du auf eine einsame Insel mitnehmen?",
+"es": "¿Qué diez libros te llevarías a una isla desierta?",
+"fr": "Quels dix livres emporterais-tu sur une île déserte ?",
+"it": "Quali dieci libri porteresti su un'isola deserta?",
+"pt": "Que dez livros levarias para uma ilha deserta?",
+"pt_BR": "Quais dez livros você levaria para uma ilha deserta?"
+}
+},
+{
+"id": "books-097",
+"lv": "advanced",
+"i18n": {
+"en": "Which book do you think will still be read in a hundred years?",
+"de": "Welches Buch wird deiner Meinung nach in hundert Jahren noch gelesen?",
+"es": "¿Qué libro crees que se seguirá leyendo dentro de cien años?",
+"fr": "Quel livre sera encore lu dans cent ans, selon toi ?",
+"it": "Quale libro secondo te verrà ancora letto tra cento anni?",
+"pt": "Que livro achas que ainda vai ser lido daqui a cem anos?",
+"pt_BR": "Qual livro você acha que ainda vai ser lido daqui a cem anos?"
+}
+},
+{
+"id": "books-098",
+"lv": "advanced",
+"i18n": {
+"en": "How would you describe yourself as a reader in three words?",
+"de": "Wie würdest du dich als Leser mit drei Worten beschreiben?",
+"es": "¿Cómo te describirías como lector en tres palabras?",
+"fr": "Comment te décrirais-tu comme lecteur en trois mots ?",
+"it": "Come ti descriveresti come lettore in tre parole?",
+"pt": "Como te descreverias como leitor em três palavras?",
+"pt_BR": "Como você se descreveria como leitor em três palavras?"
+}
+},
+{
+"id": "books-099",
+"lv": "advanced",
+"i18n": {
+"en": "Should we read a book separately from what we know about its author's life?",
+"de": "Sollte man ein Buch unabhängig vom Leben seines Autors lesen?",
+"es": "¿Deberíamos leer un libro sin pensar en lo que sabemos de la vida de su autor?",
+"fr": "Faut-il lire un livre indépendamment de ce que l'on sait de la vie de son auteur ?",
+"it": "Dovremmo leggere un libro separandolo da ciò che sappiamo della vita del suo autore?",
+"pt": "Devemos ler um livro separado do que sabemos sobre a vida do autor?",
+"pt_BR": "A gente deve ler um livro separado do que sabe sobre a vida do autor?"
+}
+},
+{
+"id": "books-100",
+"lv": "any",
+"i18n": {
+"en": "Which book would you love to see translated into more languages?",
+"de": "Welches Buch würdest du gern in viel mehr Sprachen übersetzt sehen?",
+"es": "¿Qué libro te encantaría ver traducido a más idiomas?",
+"fr": "Quel livre aimerais-tu voir traduit dans davantage de langues ?",
+"it": "Quale libro ti piacerebbe vedere tradotto in più lingue?",
+"pt": "Que livro gostavas de ver traduzido para mais línguas?",
+"pt_BR": "Qual livro você adoraria ver traduzido para mais idiomas?"
+}
+}
+]
+}

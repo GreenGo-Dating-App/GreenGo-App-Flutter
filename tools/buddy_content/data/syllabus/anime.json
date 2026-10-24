@@ -1,0 +1,2195 @@
+{
+"topic": "anime",
+"days": [
+{
+"d": 1,
+"lv": "beginner",
+"t": "Welcome to anime",
+"f": "What anime is, where it comes from and why fans around the world love it"
+},
+{
+"d": 2,
+"lv": "beginner",
+"t": "Anime vs Western cartoons",
+"f": "How Japanese animation differs in style, storytelling and audience"
+},
+{
+"d": 3,
+"lv": "beginner",
+"t": "Manga: the source of many anime",
+"f": "Japanese comics, how they relate to anime and why they matter"
+},
+{
+"d": 4,
+"lv": "beginner",
+"t": "Your anime profile",
+"f": "Discovering which moods, stories and art styles you enjoy most"
+},
+{
+"d": 5,
+"lv": "beginner",
+"t": "Watching anime legally",
+"f": "Streaming services, TV and cinemas, and why supporting creators matters"
+},
+{
+"d": 6,
+"lv": "beginner",
+"t": "Subtitles or dubbing?",
+"f": "Comparing original Japanese audio with dubbed versions in your language"
+},
+{
+"d": 7,
+"lv": "beginner",
+"t": "Series, films and specials",
+"f": "TV series, movies, OVAs and web anime explained"
+},
+{
+"d": 8,
+"lv": "beginner",
+"t": "Episodes and seasons",
+"f": "Cours of about 12 episodes and how anime seasons are scheduled"
+},
+{
+"d": 9,
+"lv": "beginner",
+"t": "Opening and ending songs",
+"f": "Why anime openings and endings are loved and how they set the mood"
+},
+{
+"d": 10,
+"lv": "beginner",
+"t": "Recognising the anime art style",
+"f": "Big expressive eyes, colourful hair and other visual signatures"
+},
+{
+"d": 11,
+"lv": "beginner",
+"t": "Expressions and visual symbols",
+"f": "Sweat drops, blushing lines and other shorthand for emotions"
+},
+{
+"d": 12,
+"lv": "beginner",
+"t": "Chibi and super-deformed style",
+"f": "Cute, tiny versions of characters used for comedy"
+},
+{
+"d": 13,
+"lv": "beginner",
+"t": "Reading manga right to left",
+"f": "Page order, panels and speech bubbles in Japanese comics"
+},
+{
+"d": 14,
+"lv": "beginner",
+"t": "Manga volumes and magazines",
+"f": "Weekly magazines, chapters and collected tankōbon volumes"
+},
+{
+"d": 15,
+"lv": "beginner",
+"t": "Who reads what: demographics",
+"f": "Kodomo, shōnen, shōjo, seinen and josei target audiences"
+},
+{
+"d": 16,
+"lv": "beginner",
+"t": "Kodomo: anime for kids",
+"f": "Gentle shows like Doraemon and Anpanman made for young viewers"
+},
+{
+"d": 17,
+"lv": "beginner",
+"t": "Shōnen: adventure and friendship",
+"f": "Stories for teens about growth, teamwork and big dreams"
+},
+{
+"d": 18,
+"lv": "beginner",
+"t": "Shōjo: feelings and growth",
+"f": "Stories focused on emotions, friendships and personal growth"
+},
+{
+"d": 19,
+"lv": "beginner",
+"t": "Seinen and josei",
+"f": "Anime and manga aimed at adults, often about work and everyday life"
+},
+{
+"d": 20,
+"lv": "beginner",
+"t": "Doraemon, the robot cat",
+"f": "Fujiko F. Fujio's beloved gadget-filled classic"
+},
+{
+"d": 21,
+"lv": "beginner",
+"t": "Pokémon around the world",
+"f": "How a game became a global anime and a story about friendship"
+},
+{
+"d": 22,
+"lv": "beginner",
+"t": "Sazae-san: a TV record holder",
+"f": "The family anime that has aired weekly since 1969"
+},
+{
+"d": 23,
+"lv": "beginner",
+"t": "Anpanman and kindness",
+"f": "Japan's bread-headed hero who shares his own face with the hungry"
+},
+{
+"d": 24,
+"lv": "beginner",
+"t": "Chibi Maruko-chan",
+"f": "Everyday childhood comedy set in 1970s Japan"
+},
+{
+"d": 25,
+"lv": "beginner",
+"t": "Hamtaro and cute pet anime",
+"f": "Little hamsters, big adventures and the charm of cuteness"
+},
+{
+"d": 26,
+"lv": "beginner",
+"t": "Kawaii culture",
+"f": "Cuteness as a Japanese aesthetic in anime and design"
+},
+{
+"d": 27,
+"lv": "beginner",
+"t": "Talking about anime: key words",
+"f": "Otaku, seiyū, mangaka, sakuga and other fan terms"
+},
+{
+"d": 28,
+"lv": "beginner",
+"t": "Japanese honorifics in anime",
+"f": "What -san, -kun, -chan, -senpai and -sensei tell you"
+},
+{
+"d": 29,
+"lv": "beginner",
+"t": "Common Japanese phrases in anime",
+"f": "Itadakimasu, ganbatte, tadaima and what they mean"
+},
+{
+"d": 30,
+"lv": "beginner",
+"t": "Review: first steps in anime",
+"f": "Recap of formats, styles and audiences from days 1 to 29"
+},
+{
+"d": 31,
+"lv": "beginner",
+"t": "Studio Ghibli: an introduction",
+"f": "The studio founded in 1985 and its world-famous films"
+},
+{
+"d": 32,
+"lv": "beginner",
+"t": "Hayao Miyazaki",
+"f": "The director and his love of flight, nature and brave young heroines"
+},
+{
+"d": 33,
+"lv": "beginner",
+"t": "My Neighbor Totoro",
+"f": "Forest spirits, two sisters and the magic of the countryside"
+},
+{
+"d": 34,
+"lv": "beginner",
+"t": "Kiki's Delivery Service",
+"f": "A young witch, independence and finding confidence"
+},
+{
+"d": 35,
+"lv": "beginner",
+"t": "Castle in the Sky",
+"f": "Floating islands, airships and Ghibli's first official film"
+},
+{
+"d": 36,
+"lv": "beginner",
+"t": "Spirited Away",
+"f": "Chihiro's journey in a bathhouse of spirits and its Oscar win"
+},
+{
+"d": 37,
+"lv": "beginner",
+"t": "Ponyo",
+"f": "A goldfish girl, the sea and a story for young children"
+},
+{
+"d": 38,
+"lv": "beginner",
+"t": "Howl's Moving Castle",
+"f": "A walking castle, a spell and courage at any age"
+},
+{
+"d": 39,
+"lv": "beginner",
+"t": "Nausicaä of the Valley of the Wind",
+"f": "The 1984 film that led to Ghibli's creation and its ecological themes"
+},
+{
+"d": 40,
+"lv": "beginner",
+"t": "Isao Takahata",
+"f": "Ghibli's co-founder and his realistic, poetic films"
+},
+{
+"d": 41,
+"lv": "beginner",
+"t": "Only Yesterday and Pom Poko",
+"f": "Takahata's childhood memories and playful raccoon dogs"
+},
+{
+"d": 42,
+"lv": "beginner",
+"t": "The Tale of the Princess Kaguya",
+"f": "A watercolour-style retelling of Japan's oldest surviving tale"
+},
+{
+"d": 43,
+"lv": "beginner",
+"t": "Whisper of the Heart",
+"f": "Following dreams, writing stories and violin making in Tokyo"
+},
+{
+"d": 44,
+"lv": "beginner",
+"t": "The Secret World of Arrietty",
+"f": "Tiny borrowers living under the floor of a house"
+},
+{
+"d": 45,
+"lv": "beginner",
+"t": "Joe Hisaishi's music",
+"f": "The composer behind Miyazaki's unforgettable soundtracks"
+},
+{
+"d": 46,
+"lv": "beginner",
+"t": "Ghibli food scenes",
+"f": "Why food in Ghibli films looks so delicious"
+},
+{
+"d": 47,
+"lv": "beginner",
+"t": "Nature and environment in Ghibli",
+"f": "Forests, skies and respect for the natural world"
+},
+{
+"d": 48,
+"lv": "beginner",
+"t": "Flying machines in Miyazaki films",
+"f": "Airships, gliders and the dream of flight"
+},
+{
+"d": 49,
+"lv": "beginner",
+"t": "Ghibli Museum and Ghibli Park",
+"f": "Places in Japan where fans can step into Ghibli worlds"
+},
+{
+"d": 50,
+"lv": "beginner",
+"t": "Ghibli for the whole family",
+"f": "Choosing the right Ghibli film for different ages"
+},
+{
+"d": 51,
+"lv": "beginner",
+"t": "Makoto Shinkai",
+"f": "Stunning skies and light in Your Name and Weathering with You"
+},
+{
+"d": 52,
+"lv": "beginner",
+"t": "Your Name",
+"f": "Two strangers, a comet and a box-office phenomenon"
+},
+{
+"d": 53,
+"lv": "beginner",
+"t": "Mamoru Hosoda",
+"f": "Family themes in Wolf Children, Summer Wars and Mirai"
+},
+{
+"d": 54,
+"lv": "beginner",
+"t": "Summer Wars",
+"f": "A virtual world, a big family and the power of teamwork"
+},
+{
+"d": 55,
+"lv": "beginner",
+"t": "The Girl Who Leapt Through Time",
+"f": "Time travel and choices in a summer of youth"
+},
+{
+"d": 56,
+"lv": "beginner",
+"t": "Studio Ponoc",
+"f": "Mary and the Witch's Flower and artists who came from Ghibli"
+},
+{
+"d": 57,
+"lv": "beginner",
+"t": "Anime films at international awards",
+"f": "Oscar wins for Spirited Away and The Boy and the Heron"
+},
+{
+"d": 58,
+"lv": "beginner",
+"t": "Watching an anime film like a critic",
+"f": "Noticing story, visuals, music and themes"
+},
+{
+"d": 59,
+"lv": "beginner",
+"t": "Movie night: picking an anime film",
+"f": "Matching a film to your mood and company"
+},
+{
+"d": 60,
+"lv": "beginner",
+"t": "Review: Ghibli and anime cinema",
+"f": "Recap of directors and films from days 31 to 59"
+},
+{
+"d": 61,
+"lv": "beginner",
+"t": "Before anime: early Japanese art",
+"f": "The Chōjū-giga scrolls and picture storytelling in old Japan"
+},
+{
+"d": 62,
+"lv": "beginner",
+"t": "Ukiyo-e and Hokusai's sketches",
+"f": "Woodblock prints and the Hokusai Manga sketchbooks"
+},
+{
+"d": 63,
+"lv": "beginner",
+"t": "Kamishibai: paper theatre",
+"f": "Street storytellers with picture cards and their influence"
+},
+{
+"d": 64,
+"lv": "beginner",
+"t": "The first Japanese animations",
+"f": "Short films from 1917 and the early pioneers"
+},
+{
+"d": 65,
+"lv": "beginner",
+"t": "Toei's first colour feature",
+"f": "The Tale of the White Serpent (1958) and the birth of feature anime"
+},
+{
+"d": 66,
+"lv": "beginner",
+"t": "Osamu Tezuka, the god of manga",
+"f": "The artist who shaped modern manga and anime"
+},
+{
+"d": 67,
+"lv": "beginner",
+"t": "Astro Boy and TV anime",
+"f": "The 1963 series that started weekly anime on television"
+},
+{
+"d": 68,
+"lv": "beginner",
+"t": "Limited animation",
+"f": "How fewer drawings per second made weekly TV anime possible"
+},
+{
+"d": 69,
+"lv": "beginner",
+"t": "Kimba the White Lion",
+"f": "Tezuka's 1965 series, Japan's first colour TV anime"
+},
+{
+"d": 70,
+"lv": "beginner",
+"t": "Magical girls begin",
+"f": "Sally the Witch (1966) and the start of the magical girl genre"
+},
+{
+"d": 71,
+"lv": "beginner",
+"t": "Giant robots arrive",
+"f": "Tetsujin 28-go, Mazinger Z and the beginning of mecha anime"
+},
+{
+"d": 72,
+"lv": "beginner",
+"t": "Space Battleship Yamato",
+"f": "The 1974 space saga that brought anime to older teens"
+},
+{
+"d": 73,
+"lv": "beginner",
+"t": "Mobile Suit Gundam",
+"f": "Realistic robots and the model-kit culture they inspired"
+},
+{
+"d": 74,
+"lv": "beginner",
+"t": "Heidi, Girl of the Alps",
+"f": "The 1974 series by Takahata and Miyazaki loved across Europe"
+},
+{
+"d": 75,
+"lv": "beginner",
+"t": "World Masterpiece Theater",
+"f": "Anime adaptations of classic books like Anne of Green Gables"
+},
+{
+"d": 76,
+"lv": "beginner",
+"t": "Anime arrives in Europe",
+"f": "Goldorak in France and Captain Tsubasa in Italy and Spain"
+},
+{
+"d": 77,
+"lv": "beginner",
+"t": "Anime in Latin America",
+"f": "Saint Seiya, Captain Tsubasa and childhood TV memories in Brazil"
+},
+{
+"d": 78,
+"lv": "beginner",
+"t": "The 1980s anime boom",
+"f": "Home video, OVAs and new creative freedom"
+},
+{
+"d": 79,
+"lv": "beginner",
+"t": "Dragon Ball and Akira Toriyama",
+"f": "Humour, adventure and the series that went global"
+},
+{
+"d": 80,
+"lv": "beginner",
+"t": "The 1990s: the Sailor Moon era",
+"f": "Naoko Takeuchi's heroines and a worldwide shōjo hit"
+},
+{
+"d": 81,
+"lv": "beginner",
+"t": "Pokémon, Digimon and monster collecting",
+"f": "Games, cards and anime that conquered the late 1990s"
+},
+{
+"d": 82,
+"lv": "beginner",
+"t": "Detective Conan",
+"f": "A young detective and decades of clever mystery puzzles"
+},
+{
+"d": 83,
+"lv": "beginner",
+"t": "One Piece",
+"f": "Eiichiro Oda's pirate adventure about friendship and dreams"
+},
+{
+"d": 84,
+"lv": "beginner",
+"t": "From cels to digital",
+"f": "How anime moved from hand-painted cels to computer colouring"
+},
+{
+"d": 85,
+"lv": "beginner",
+"t": "The streaming shift",
+"f": "From fan subtitles to legal streaming and global simultaneous releases"
+},
+{
+"d": 86,
+"lv": "beginner",
+"t": "Anime today",
+"f": "Global audiences, international co-productions and streaming originals"
+},
+{
+"d": 87,
+"lv": "beginner",
+"t": "Timeline of anime history",
+"f": "Putting key decades and works in order"
+},
+{
+"d": 88,
+"lv": "beginner",
+"t": "Anime history quiz day",
+"f": "Testing your knowledge of eras, studios and pioneers in a fun way"
+},
+{
+"d": 89,
+"lv": "beginner",
+"t": "Your favourite anime era",
+"f": "Comparing classic and modern anime styles"
+},
+{
+"d": 90,
+"lv": "beginner",
+"t": "Review: a century of anime",
+"f": "Recap of anime history from days 61 to 89"
+},
+{
+"d": 91,
+"lv": "beginner",
+"t": "How an anime is made",
+"f": "From idea to screen: the main stages of production"
+},
+{
+"d": 92,
+"lv": "beginner",
+"t": "The production committee",
+"f": "How publishers, studios and sponsors fund anime together"
+},
+{
+"d": 93,
+"lv": "beginner",
+"t": "The director's role",
+"f": "Guiding the creative vision of a series or film"
+},
+{
+"d": 94,
+"lv": "beginner",
+"t": "Series composition and scripts",
+"f": "Planning the story across all episodes"
+},
+{
+"d": 95,
+"lv": "beginner",
+"t": "Storyboards",
+"f": "Ekonte: sketching every shot before animation begins"
+},
+{
+"d": 96,
+"lv": "beginner",
+"t": "Character design",
+"f": "Shapes, colours and silhouettes that make characters memorable"
+},
+{
+"d": 97,
+"lv": "beginner",
+"t": "Key animation",
+"f": "Genga: the main drawings that define movement"
+},
+{
+"d": 98,
+"lv": "beginner",
+"t": "In-between animation",
+"f": "Douga: the drawings that make motion smooth"
+},
+{
+"d": 99,
+"lv": "beginner",
+"t": "Background art",
+"f": "Painted worlds and artists like Kazuo Oga"
+},
+{
+"d": 100,
+"lv": "beginner",
+"t": "Colour design",
+"f": "Choosing palettes for characters, times of day and scenes"
+},
+{
+"d": 101,
+"lv": "beginner",
+"t": "Compositing and photography",
+"f": "Combining layers, light and effects into final shots"
+},
+{
+"d": 102,
+"lv": "beginner",
+"t": "3D CG in anime",
+"f": "How computer graphics blend with hand-drawn styles"
+},
+{
+"d": 103,
+"lv": "beginner",
+"t": "Sakuga: animation highlights",
+"f": "Moments of exceptional animation that fans love to share"
+},
+{
+"d": 104,
+"lv": "beginner",
+"t": "Voice actors: the seiyū",
+"f": "How Japanese voice actors work and become stars"
+},
+{
+"d": 105,
+"lv": "beginner",
+"t": "Sound design",
+"f": "Footsteps, wind and effects that bring scenes to life"
+},
+{
+"d": 106,
+"lv": "beginner",
+"t": "Anime soundtracks",
+"f": "Composers like Yoko Kanno and Joe Hisaishi"
+},
+{
+"d": 107,
+"lv": "beginner",
+"t": "Anisong culture",
+"f": "Anime songs, their singers and big live concerts"
+},
+{
+"d": 108,
+"lv": "beginner",
+"t": "Shirobako: anime about anime",
+"f": "A series showing the real daily work of an anime studio"
+},
+{
+"d": 109,
+"lv": "beginner",
+"t": "Bakuman: making manga",
+"f": "Two teens chasing their dream of becoming mangaka"
+},
+{
+"d": 110,
+"lv": "beginner",
+"t": "A day in a mangaka's life",
+"f": "Deadlines, assistants and editors in manga creation"
+},
+{
+"d": 111,
+"lv": "beginner",
+"t": "Manga editors",
+"f": "How editors help shape stories and series"
+},
+{
+"d": 112,
+"lv": "beginner",
+"t": "Weekly Shōnen Jump",
+"f": "The famous magazine and its reader surveys"
+},
+{
+"d": 113,
+"lv": "beginner",
+"t": "From manga to anime",
+"f": "How adaptations are chosen and what changes on screen"
+},
+{
+"d": 114,
+"lv": "beginner",
+"t": "Original anime vs adaptations",
+"f": "Stories made directly for the screen"
+},
+{
+"d": 115,
+"lv": "beginner",
+"t": "Light novels",
+"f": "Illustrated novels that inspire many anime"
+},
+{
+"d": 116,
+"lv": "beginner",
+"t": "Visual novels and games",
+"f": "Story-driven games and their anime adaptations"
+},
+{
+"d": 117,
+"lv": "beginner",
+"t": "Webtoons and web manga",
+"f": "Vertical scrolling comics and new digital formats"
+},
+{
+"d": 118,
+"lv": "beginner",
+"t": "Anime and video games",
+"f": "Shared worlds between games and animation"
+},
+{
+"d": 119,
+"lv": "beginner",
+"t": "Building your watchlist",
+"f": "Organising what to watch next without feeling overwhelmed"
+},
+{
+"d": 120,
+"lv": "beginner",
+"t": "Review: behind the scenes",
+"f": "Recap of production and manga creation from days 91 to 119"
+},
+{
+"d": 121,
+"lv": "intermediate",
+"t": "Anime genres: a map",
+"f": "How genres and demographics combine in anime"
+},
+{
+"d": 122,
+"lv": "intermediate",
+"t": "Slice of life",
+"f": "Everyday moments made special: school, work and friends"
+},
+{
+"d": 123,
+"lv": "intermediate",
+"t": "Iyashikei: healing anime",
+"f": "Calm, soothing shows like Aria and Laid-Back Camp"
+},
+{
+"d": 124,
+"lv": "intermediate",
+"t": "Laid-Back Camp",
+"f": "Camping, nature and friendship in a cosy series"
+},
+{
+"d": 125,
+"lv": "intermediate",
+"t": "Natsume's Book of Friends",
+"f": "Gentle stories about spirits, memories and kindness"
+},
+{
+"d": 126,
+"lv": "intermediate",
+"t": "Mushishi",
+"f": "Quiet nature tales and mysterious tiny life forms"
+},
+{
+"d": 127,
+"lv": "intermediate",
+"t": "School life anime",
+"f": "Clubs, festivals and classrooms in Japanese schools"
+},
+{
+"d": 128,
+"lv": "intermediate",
+"t": "Club activities in anime",
+"f": "Bukatsu: why school clubs matter so much in stories"
+},
+{
+"d": 129,
+"lv": "intermediate",
+"t": "Comedy anime",
+"f": "Gags, timing and running jokes in anime humour"
+},
+{
+"d": 130,
+"lv": "intermediate",
+"t": "Manzai: boke and tsukkomi",
+"f": "The comedy duo pattern behind many anime jokes"
+},
+{
+"d": 131,
+"lv": "intermediate",
+"t": "Sports anime",
+"f": "Teamwork, training and big matches"
+},
+{
+"d": 132,
+"lv": "intermediate",
+"t": "Captain Tsubasa",
+"f": "The football anime that inspired real players"
+},
+{
+"d": 133,
+"lv": "intermediate",
+"t": "Slam Dunk",
+"f": "Basketball and the series that boosted the sport in Japan"
+},
+{
+"d": 134,
+"lv": "intermediate",
+"t": "Haikyu!!",
+"f": "Volleyball, teamwork and overcoming your limits"
+},
+{
+"d": 135,
+"lv": "intermediate",
+"t": "Unusual sports and games",
+"f": "Karuta in Chihayafuru, go in Hikaru no Go and shogi"
+},
+{
+"d": 136,
+"lv": "intermediate",
+"t": "Music anime",
+"f": "K-On!, Kids on the Slope and the joy of playing music"
+},
+{
+"d": 137,
+"lv": "intermediate",
+"t": "Cooking and food anime",
+"f": "Dishes, recipes and food as storytelling"
+},
+{
+"d": 138,
+"lv": "intermediate",
+"t": "Hobby anime",
+"f": "Anime about camping, fishing, model building and more"
+},
+{
+"d": 139,
+"lv": "intermediate",
+"t": "Science and learning anime",
+"f": "Dr. Stone, Cells at Work! and learning through stories"
+},
+{
+"d": 140,
+"lv": "intermediate",
+"t": "Cells at Work!",
+"f": "The human body explained as a busy workplace comedy"
+},
+{
+"d": 141,
+"lv": "intermediate",
+"t": "Silver Spoon",
+"f": "Life at an agricultural school by Hiromu Arakawa"
+},
+{
+"d": 142,
+"lv": "intermediate",
+"t": "Barakamon",
+"f": "A calligrapher finds new inspiration on a small island"
+},
+{
+"d": 143,
+"lv": "intermediate",
+"t": "Space anime",
+"f": "Space Brothers, Planetes and dreams of the stars"
+},
+{
+"d": 144,
+"lv": "intermediate",
+"t": "Magical girls evolve",
+"f": "From Sally the Witch to Cardcaptor Sakura and Pretty Cure"
+},
+{
+"d": 145,
+"lv": "intermediate",
+"t": "Cardcaptor Sakura and CLAMP",
+"f": "Magic cards and the influential artist group CLAMP"
+},
+{
+"d": 146,
+"lv": "intermediate",
+"t": "Mecha deep dive",
+"f": "Super robots vs real robots and their designs"
+},
+{
+"d": 147,
+"lv": "intermediate",
+"t": "Fantasy anime",
+"f": "Magic worlds, guilds and grand adventures"
+},
+{
+"d": 148,
+"lv": "intermediate",
+"t": "Isekai: another world",
+"f": "Stories where characters travel to fantasy worlds"
+},
+{
+"d": 149,
+"lv": "intermediate",
+"t": "Science fiction anime",
+"f": "Future cities, robots and space travel themes"
+},
+{
+"d": 150,
+"lv": "intermediate",
+"t": "Review: genres part one",
+"f": "Recap of genres from days 121 to 149"
+},
+{
+"d": 151,
+"lv": "intermediate",
+"t": "Mystery anime",
+"f": "Puzzles, detectives and clever twists"
+},
+{
+"d": 152,
+"lv": "intermediate",
+"t": "Adventure and quests",
+"f": "Journeys, maps and treasure in anime"
+},
+{
+"d": 153,
+"lv": "intermediate",
+"t": "Historical anime",
+"f": "Edo-period settings and stories from Japan's past"
+},
+{
+"d": 154,
+"lv": "intermediate",
+"t": "Folklore and yōkai",
+"f": "Japanese folk creatures in gentle stories"
+},
+{
+"d": 155,
+"lv": "intermediate",
+"t": "Kitsune, tanuki and animal spirits",
+"f": "Foxes, raccoon dogs and folklore animals in anime"
+},
+{
+"d": 156,
+"lv": "intermediate",
+"t": "Friendship stories",
+"f": "How anime celebrate loyalty, support and shared dreams"
+},
+{
+"d": 157,
+"lv": "intermediate",
+"t": "Rivals who make you better",
+"f": "Why rivals push heroes to grow"
+},
+{
+"d": 158,
+"lv": "intermediate",
+"t": "Found family in anime",
+"f": "Groups of friends who become like family"
+},
+{
+"d": 159,
+"lv": "intermediate",
+"t": "Coming-of-age anime",
+"f": "Growing up, choices and self-discovery"
+},
+{
+"d": 160,
+"lv": "intermediate",
+"t": "Mentors in anime",
+"f": "Teachers and guides who shape young heroes"
+},
+{
+"d": 161,
+"lv": "intermediate",
+"t": "Dreams and perseverance",
+"f": "The spirit of ganbaru and never giving up"
+},
+{
+"d": 162,
+"lv": "intermediate",
+"t": "Anime for the youngest",
+"f": "Choosing shows for small children"
+},
+{
+"d": 163,
+"lv": "intermediate",
+"t": "Anime for families",
+"f": "Series and films to enjoy together"
+},
+{
+"d": 164,
+"lv": "intermediate",
+"t": "Age ratings and choosing well",
+"f": "How to check ratings and pick suitable titles"
+},
+{
+"d": 165,
+"lv": "intermediate",
+"t": "Short anime",
+"f": "Short-format series perfect for busy days"
+},
+{
+"d": 166,
+"lv": "intermediate",
+"t": "Chi's Sweet Home",
+"f": "A kitten's everyday adventures in short episodes"
+},
+{
+"d": 167,
+"lv": "intermediate",
+"t": "Aggretsuko",
+"f": "Office life, karaoke and a red panda's humour"
+},
+{
+"d": 168,
+"lv": "intermediate",
+"t": "Animals in anime",
+"f": "Pets, wildlife and animal heroes"
+},
+{
+"d": 169,
+"lv": "intermediate",
+"t": "Yotsuba&!",
+"f": "A curious girl discovers the world in a cheerful manga"
+},
+{
+"d": 170,
+"lv": "intermediate",
+"t": "Manga without an anime",
+"f": "Great manga that never got an anime or differ from it"
+},
+{
+"d": 171,
+"lv": "intermediate",
+"t": "Studio spotlight: Toei Animation",
+"f": "One of the oldest studios, from Hakujaden to Pretty Cure"
+},
+{
+"d": 172,
+"lv": "intermediate",
+"t": "Studio spotlight: Sunrise",
+"f": "Gundam, Love Live! and original robot shows"
+},
+{
+"d": 173,
+"lv": "intermediate",
+"t": "Studio spotlight: Kyoto Animation",
+"f": "Detailed everyday beauty in K-On! and Sound! Euphonium"
+},
+{
+"d": 174,
+"lv": "intermediate",
+"t": "Studio spotlight: Production I.G",
+"f": "Haikyu!! and high-quality animation"
+},
+{
+"d": 175,
+"lv": "intermediate",
+"t": "Studio spotlight: Madhouse",
+"f": "Varied hits including Cardcaptor Sakura and Summer Wars"
+},
+{
+"d": 176,
+"lv": "intermediate",
+"t": "Studio spotlight: Bones",
+"f": "A studio known for dynamic movement in hero and adventure series"
+},
+{
+"d": 177,
+"lv": "intermediate",
+"t": "Studio spotlight: Science SARU",
+"f": "Masaaki Yuasa's playful, experimental style in Lu Over the Wall"
+},
+{
+"d": 178,
+"lv": "intermediate",
+"t": "Studio spotlight: Nippon Animation",
+"f": "Classic literary adaptations and Chibi Maruko-chan"
+},
+{
+"d": 179,
+"lv": "intermediate",
+"t": "Comparing studio styles",
+"f": "Spotting a studio by its animation and colour choices"
+},
+{
+"d": 180,
+"lv": "intermediate",
+"t": "Review: genres and studios",
+"f": "Recap of days 151 to 179"
+},
+{
+"d": 181,
+"lv": "intermediate",
+"t": "Japanese culture through anime",
+"f": "What anime can teach about daily life in Japan"
+},
+{
+"d": 182,
+"lv": "intermediate",
+"t": "Food culture: bento and more",
+"f": "Lunch boxes, onigiri and meals seen in anime"
+},
+{
+"d": 183,
+"lv": "intermediate",
+"t": "Festivals: matsuri",
+"f": "Yukata, fireworks and festival stalls"
+},
+{
+"d": 184,
+"lv": "intermediate",
+"t": "Seasons in anime",
+"f": "Cherry blossoms, summer cicadas, autumn leaves and snow"
+},
+{
+"d": 185,
+"lv": "intermediate",
+"t": "Hanami and cherry blossoms",
+"f": "Why sakura appear so often in anime"
+},
+{
+"d": 186,
+"lv": "intermediate",
+"t": "New Year in Japan",
+"f": "Osechi food, first visits and family traditions"
+},
+{
+"d": 187,
+"lv": "intermediate",
+"t": "Onsen and public baths",
+"f": "Hot spring culture and its etiquette"
+},
+{
+"d": 188,
+"lv": "intermediate",
+"t": "Japanese homes",
+"f": "Tatami, genkan, kotatsu and sliding doors"
+},
+{
+"d": 189,
+"lv": "intermediate",
+"t": "Trains and commuting",
+"f": "Train culture and station scenes in anime"
+},
+{
+"d": 190,
+"lv": "intermediate",
+"t": "Convenience stores",
+"f": "The konbini as an everyday anime setting"
+},
+{
+"d": 191,
+"lv": "intermediate",
+"t": "The Japanese school system",
+"f": "Uniforms, entrance ceremonies and cleaning duties"
+},
+{
+"d": 192,
+"lv": "intermediate",
+"t": "Shrines and temples as settings",
+"f": "Cultural places, omikuji fortunes and ema plaques in anime"
+},
+{
+"d": 193,
+"lv": "intermediate",
+"t": "Traditional arts in anime",
+"f": "Calligraphy, tea ceremony and ikebana"
+},
+{
+"d": 194,
+"lv": "intermediate",
+"t": "Japanese writing systems",
+"f": "Hiragana, katakana and kanji seen on screen"
+},
+{
+"d": 195,
+"lv": "intermediate",
+"t": "Learning Japanese with anime",
+"f": "Useful phrases and smart ways to practise"
+},
+{
+"d": 196,
+"lv": "intermediate",
+"t": "Politeness and bowing",
+"f": "Keigo, bowing and everyday manners"
+},
+{
+"d": 197,
+"lv": "intermediate",
+"t": "Gift culture: omiyage",
+"f": "Souvenirs and gift-giving traditions"
+},
+{
+"d": 198,
+"lv": "intermediate",
+"t": "Real places in anime",
+"f": "Towns and landscapes that inspired famous scenes"
+},
+{
+"d": 199,
+"lv": "intermediate",
+"t": "Anime pilgrimage",
+"f": "Seichi junrei: visiting real anime locations respectfully"
+},
+{
+"d": 200,
+"lv": "intermediate",
+"t": "Day 200: your anime journey",
+"f": "Reflecting on what you have learned so far"
+},
+{
+"d": 201,
+"lv": "intermediate",
+"t": "Akihabara",
+"f": "Tokyo's electric town and centre of anime shops"
+},
+{
+"d": 202,
+"lv": "intermediate",
+"t": "Nakano Broadway and Ikebukuro",
+"f": "Other fan districts in Tokyo"
+},
+{
+"d": 203,
+"lv": "intermediate",
+"t": "Comiket",
+"f": "The huge fan market for self-published dōjinshi"
+},
+{
+"d": 204,
+"lv": "intermediate",
+"t": "Anime conventions worldwide",
+"f": "Japan Expo, Anime Expo, Lucca Comics and more"
+},
+{
+"d": 205,
+"lv": "intermediate",
+"t": "Cosplay",
+"f": "Costume play: crafting, wearing and respectful photography"
+},
+{
+"d": 206,
+"lv": "intermediate",
+"t": "Cosplay crafting basics",
+"f": "Materials, wigs and props for beginners"
+},
+{
+"d": 207,
+"lv": "intermediate",
+"t": "Figures and merchandise",
+"f": "Collecting figures, keychains and goods wisely"
+},
+{
+"d": 208,
+"lv": "intermediate",
+"t": "Gunpla: Gundam model kits",
+"f": "Building plastic models as a relaxing hobby"
+},
+{
+"d": 209,
+"lv": "intermediate",
+"t": "Fan art and creativity",
+"f": "Drawing fan art and respecting original creators"
+},
+{
+"d": 210,
+"lv": "intermediate",
+"t": "Review: culture and fandom",
+"f": "Recap of days 181 to 209"
+},
+{
+"d": 211,
+"lv": "intermediate",
+"t": "Drawing in anime style",
+"f": "Basic shapes for anime faces and proportions"
+},
+{
+"d": 212,
+"lv": "intermediate",
+"t": "Drawing anime eyes",
+"f": "How eye shapes express personality and emotion"
+},
+{
+"d": 213,
+"lv": "intermediate",
+"t": "Drawing anime hair",
+"f": "Clumps, shine and movement"
+},
+{
+"d": 214,
+"lv": "intermediate",
+"t": "Manga panel layout",
+"f": "Pacing a page with panel sizes"
+},
+{
+"d": 215,
+"lv": "intermediate",
+"t": "Screentones and inking",
+"f": "Black and white techniques in manga"
+},
+{
+"d": 216,
+"lv": "intermediate",
+"t": "Creating your own character",
+"f": "Personality, design and backstory"
+},
+{
+"d": 217,
+"lv": "intermediate",
+"t": "Writing a short manga story",
+"f": "Planning a tiny story from idea to last panel"
+},
+{
+"d": 218,
+"lv": "intermediate",
+"t": "Yonkoma comics",
+"f": "Four-panel comic strips and their rhythm"
+},
+{
+"d": 219,
+"lv": "intermediate",
+"t": "Animating a simple loop",
+"f": "Flipbooks and simple digital animation"
+},
+{
+"d": 220,
+"lv": "intermediate",
+"t": "Colour and light in illustration",
+"f": "Using light to set the mood in anime-style art"
+},
+{
+"d": 221,
+"lv": "intermediate",
+"t": "Hatsune Miku and Vocaloid",
+"f": "Virtual singers and fan creativity"
+},
+{
+"d": 222,
+"lv": "intermediate",
+"t": "Virtual YouTubers",
+"f": "Animated avatars and online entertainment"
+},
+{
+"d": 223,
+"lv": "intermediate",
+"t": "Anime and fashion",
+"f": "Street fashion and anime collaborations"
+},
+{
+"d": 224,
+"lv": "intermediate",
+"t": "Anime and theme parks",
+"f": "Attractions based on anime worlds"
+},
+{
+"d": 225,
+"lv": "intermediate",
+"t": "Anime cafés and collaborations",
+"f": "Themed cafés and limited-time events"
+},
+{
+"d": 226,
+"lv": "intermediate",
+"t": "Anime in advertising",
+"f": "Anime-style commercials and mascots"
+},
+{
+"d": 227,
+"lv": "intermediate",
+"t": "Mascot characters: yuru-kyara",
+"f": "Local mascots and Japanese character culture"
+},
+{
+"d": 228,
+"lv": "intermediate",
+"t": "Anime and tourism",
+"f": "How anime brings visitors to towns and regions"
+},
+{
+"d": 229,
+"lv": "intermediate",
+"t": "Anime soundtracks in concert",
+"f": "Orchestral concerts of anime music"
+},
+{
+"d": 230,
+"lv": "intermediate",
+"t": "Anime and world literature",
+"f": "Adaptations of novels like Anne of Green Gables and Heidi"
+},
+{
+"d": 231,
+"lv": "intermediate",
+"t": "Anime inspired by Europe",
+"f": "European-style towns in Kiki's Delivery Service and Howl's world"
+},
+{
+"d": 232,
+"lv": "intermediate",
+"t": "Western animation inspired by anime",
+"f": "Avatar: The Last Airbender and anime influence abroad"
+},
+{
+"d": 233,
+"lv": "intermediate",
+"t": "Anime co-productions",
+"f": "Japan working with studios and partners abroad"
+},
+{
+"d": 234,
+"lv": "intermediate",
+"t": "Anime in your country",
+"f": "How anime is dubbed, broadcast and loved locally"
+},
+{
+"d": 235,
+"lv": "intermediate",
+"t": "Dubbing as an art",
+"f": "How dub actors adapt jokes and match lip movements"
+},
+{
+"d": 236,
+"lv": "intermediate",
+"t": "Translation challenges",
+"f": "Puns, honorifics and cultural references"
+},
+{
+"d": 237,
+"lv": "intermediate",
+"t": "From fansubs to official subtitles",
+"f": "How anime translation changed over time"
+},
+{
+"d": 238,
+"lv": "intermediate",
+"t": "Studying Japanese with subtitles",
+"f": "Watching with Japanese subtitles to learn faster"
+},
+{
+"d": 239,
+"lv": "intermediate",
+"t": "Recommending anime to friends",
+"f": "Gateway titles for beginners"
+},
+{
+"d": 240,
+"lv": "intermediate",
+"t": "Review: creating and global anime",
+"f": "Recap of days 211 to 239"
+},
+{
+"d": 241,
+"lv": "intermediate",
+"t": "Director spotlight: Naoko Yamada",
+"f": "Gentle character studies in K-On! and Liz and the Blue Bird"
+},
+{
+"d": 242,
+"lv": "intermediate",
+"t": "Director spotlight: Masaaki Yuasa",
+"f": "Bold, colourful experimental animation"
+},
+{
+"d": 243,
+"lv": "intermediate",
+"t": "Director spotlight: Sunao Katabuchi",
+"f": "Mai Mai Miracle and childhood imagination"
+},
+{
+"d": 244,
+"lv": "intermediate",
+"t": "Creator spotlight: Rumiko Takahashi",
+"f": "Ranma ½ and decades of comedy manga"
+},
+{
+"d": 245,
+"lv": "intermediate",
+"t": "Creator spotlight: Naoko Takeuchi",
+"f": "Sailor Moon and its lasting legacy"
+},
+{
+"d": 246,
+"lv": "intermediate",
+"t": "Creator spotlight: Eiichiro Oda",
+"f": "Worldbuilding on a grand scale in One Piece"
+},
+{
+"d": 247,
+"lv": "intermediate",
+"t": "Creator spotlight: Hiromu Arakawa",
+"f": "Silver Spoon and her farming background"
+},
+{
+"d": 248,
+"lv": "intermediate",
+"t": "Creator spotlight: Fujiko F. Fujio",
+"f": "Doraemon and other gentle sci-fi comedies"
+},
+{
+"d": 249,
+"lv": "intermediate",
+"t": "Creator spotlight: CLAMP",
+"f": "The all-women manga group and their varied works"
+},
+{
+"d": 250,
+"lv": "intermediate",
+"t": "Mid-path celebration",
+"f": "Looking back on 250 days of anime discovery"
+},
+{
+"d": 251,
+"lv": "advanced",
+"t": "Anime analysis basics",
+"f": "How to discuss anime beyond simply liking it"
+},
+{
+"d": 252,
+"lv": "advanced",
+"t": "Visual storytelling",
+"f": "Telling a story through images rather than dialogue"
+},
+{
+"d": 253,
+"lv": "advanced",
+"t": "Framing and composition",
+"f": "How shots are arranged to guide the eye"
+},
+{
+"d": 254,
+"lv": "advanced",
+"t": "Camera movement in animation",
+"f": "Pans, zooms and simulated camera work"
+},
+{
+"d": 255,
+"lv": "advanced",
+"t": "Colour symbolism",
+"f": "How colour carries emotion and meaning"
+},
+{
+"d": 256,
+"lv": "advanced",
+"t": "Silence and pauses",
+"f": "Ma: the Japanese sense of meaningful space"
+},
+{
+"d": 257,
+"lv": "advanced",
+"t": "Pacing an episode",
+"f": "Cold opens, eyecatches and next-episode previews"
+},
+{
+"d": 258,
+"lv": "advanced",
+"t": "Character arcs in anime",
+"f": "How heroes grow over a whole series"
+},
+{
+"d": 259,
+"lv": "advanced",
+"t": "Ensemble casts",
+"f": "Balancing many characters in one story"
+},
+{
+"d": 260,
+"lv": "advanced",
+"t": "Worldbuilding in anime",
+"f": "Creating believable fantasy and sci-fi settings"
+},
+{
+"d": 261,
+"lv": "advanced",
+"t": "Themes in anime",
+"f": "Common big ideas: friendship, nature and growing up"
+},
+{
+"d": 262,
+"lv": "advanced",
+"t": "Symbolism in Ghibli",
+"f": "Recurring images like wind, food and transformation"
+},
+{
+"d": 263,
+"lv": "advanced",
+"t": "Sound and music analysis",
+"f": "How music cues shape emotion"
+},
+{
+"d": 264,
+"lv": "advanced",
+"t": "Opening sequence analysis",
+"f": "How openings preview themes and characters"
+},
+{
+"d": 265,
+"lv": "advanced",
+"t": "Animation styles compared",
+"f": "Realistic, stylised and experimental approaches"
+},
+{
+"d": 266,
+"lv": "advanced",
+"t": "Movement and timing",
+"f": "Why some characters feel heavy and others light"
+},
+{
+"d": 267,
+"lv": "advanced",
+"t": "Acting through animation",
+"f": "Gestures and body language in animated performance"
+},
+{
+"d": 268,
+"lv": "advanced",
+"t": "Background as storytelling",
+"f": "How environments tell us about characters"
+},
+{
+"d": 269,
+"lv": "advanced",
+"t": "Adaptation analysis",
+"f": "Comparing a manga chapter with its anime episode"
+},
+{
+"d": 270,
+"lv": "advanced",
+"t": "Review: analysing anime",
+"f": "Recap of days 251 to 269"
+},
+{
+"d": 271,
+"lv": "advanced",
+"t": "Manga art evolution",
+"f": "How manga art styles changed over the decades"
+},
+{
+"d": 272,
+"lv": "advanced",
+"t": "Gekiga",
+"f": "The realistic manga movement of the 1950s and 60s"
+},
+{
+"d": 273,
+"lv": "advanced",
+"t": "The shōjo manga revolution",
+"f": "The Year 24 Group and new storytelling in the 1970s"
+},
+{
+"d": 274,
+"lv": "advanced",
+"t": "The Rose of Versailles",
+"f": "Riyoko Ikeda's historical manga set in 18th-century France"
+},
+{
+"d": 275,
+"lv": "advanced",
+"t": "Manga as literature",
+"f": "Award-winning manga and serious graphic storytelling"
+},
+{
+"d": 276,
+"lv": "advanced",
+"t": "Educational manga",
+"f": "Manga that teach history, science and business"
+},
+{
+"d": 277,
+"lv": "advanced",
+"t": "Manga in museums",
+"f": "Exhibitions and the Kyoto International Manga Museum"
+},
+{
+"d": 278,
+"lv": "advanced",
+"t": "Manga awards",
+"f": "The Tezuka Osamu Cultural Prize and the Shogakukan Manga Award"
+},
+{
+"d": 279,
+"lv": "advanced",
+"t": "Animation festivals",
+"f": "Annecy, the Tokyo Anime Award Festival and more"
+},
+{
+"d": 280,
+"lv": "advanced",
+"t": "The Annecy festival",
+"f": "The world's leading animation festival, held in France"
+},
+{
+"d": 281,
+"lv": "advanced",
+"t": "Anime business basics",
+"f": "How anime earns money from merchandise, streaming and licences"
+},
+{
+"d": 282,
+"lv": "advanced",
+"t": "Working life in the industry",
+"f": "Jobs, schedules and challenges in anime studios"
+},
+{
+"d": 283,
+"lv": "advanced",
+"t": "Becoming an animator",
+"f": "How people start as animators and grow in the industry"
+},
+{
+"d": 284,
+"lv": "advanced",
+"t": "International collaboration",
+"f": "Studios around the world contributing to anime production"
+},
+{
+"d": 285,
+"lv": "advanced",
+"t": "Streaming and global reach",
+"f": "How platforms changed anime production"
+},
+{
+"d": 286,
+"lv": "advanced",
+"t": "Simulcasts",
+"f": "Watching new episodes at the same time as Japan"
+},
+{
+"d": 287,
+"lv": "advanced",
+"t": "Seasonal line-ups",
+"f": "How fans follow each season's new anime"
+},
+{
+"d": 288,
+"lv": "advanced",
+"t": "Fan communities online",
+"f": "Forums, reviews and respectful discussion"
+},
+{
+"d": 289,
+"lv": "advanced",
+"t": "Spoiler etiquette",
+"f": "Discussing anime without ruining it for others"
+},
+{
+"d": 290,
+"lv": "advanced",
+"t": "Writing an anime review",
+"f": "Structure, opinion and fair critique"
+},
+{
+"d": 291,
+"lv": "advanced",
+"t": "Anime clubs",
+"f": "Starting or joining a club to watch together"
+},
+{
+"d": 292,
+"lv": "advanced",
+"t": "Hosting an anime watch party",
+"f": "Choosing titles, snacks and discussion topics"
+},
+{
+"d": 293,
+"lv": "advanced",
+"t": "Anime in education",
+"f": "Using anime to teach culture and language"
+},
+{
+"d": 294,
+"lv": "advanced",
+"t": "Anime and mindfulness",
+"f": "Calm shows for relaxation and reflection"
+},
+{
+"d": 295,
+"lv": "advanced",
+"t": "Anime and creativity",
+"f": "How anime inspires drawing, writing and music"
+},
+{
+"d": 296,
+"lv": "advanced",
+"t": "Anime and friendship across borders",
+"f": "How anime connects people worldwide"
+},
+{
+"d": 297,
+"lv": "advanced",
+"t": "Strong heroines in anime",
+"f": "Nausicaä, Kiki, Sakura and girls who lead their stories"
+},
+{
+"d": 298,
+"lv": "advanced",
+"t": "Generations in anime",
+"f": "Grandparents, parents and bonds across ages"
+},
+{
+"d": 299,
+"lv": "advanced",
+"t": "Work life in anime",
+"f": "Office and job anime about passion and teamwork"
+},
+{
+"d": 300,
+"lv": "advanced",
+"t": "Day 300 review",
+"f": "Recap of days 271 to 299"
+},
+{
+"d": 301,
+"lv": "advanced",
+"t": "Deep dive: Spirited Away",
+"f": "Themes of growth, identity and hard work in Chihiro's journey"
+},
+{
+"d": 302,
+"lv": "advanced",
+"t": "Deep dive: Totoro's countryside",
+"f": "Rural Japan of the 1950s and childhood wonder"
+},
+{
+"d": 303,
+"lv": "advanced",
+"t": "Deep dive: Kiki and creativity",
+"f": "Losing and finding inspiration as a theme"
+},
+{
+"d": 304,
+"lv": "advanced",
+"t": "Deep dive: Your Name",
+"f": "Connection, distance and Shinkai's landscapes"
+},
+{
+"d": 305,
+"lv": "advanced",
+"t": "Deep dive: Wolf Children",
+"f": "Parenthood and choosing one's own path"
+},
+{
+"d": 306,
+"lv": "advanced",
+"t": "Deep dive: Laid-Back Camp's realism",
+"f": "Real campsites and practical camping knowledge"
+},
+{
+"d": 307,
+"lv": "advanced",
+"t": "Deep dive: Haikyu!! teamwork",
+"f": "How every role on a team matters"
+},
+{
+"d": 308,
+"lv": "advanced",
+"t": "Deep dive: One Piece's long story",
+"f": "Sustaining one story over decades"
+},
+{
+"d": 309,
+"lv": "advanced",
+"t": "Deep dive: Sailor Moon's legacy",
+"f": "Its influence on magical girl stories worldwide"
+},
+{
+"d": 310,
+"lv": "advanced",
+"t": "Deep dive: Doraemon's gadgets",
+"f": "Imagination meets everyday problems"
+},
+{
+"d": 311,
+"lv": "advanced",
+"t": "Deep dive: Pokémon's world design",
+"f": "Regions inspired by real places"
+},
+{
+"d": 312,
+"lv": "advanced",
+"t": "Deep dive: Mushishi's atmosphere",
+"f": "Sound, silence and nature"
+},
+{
+"d": 313,
+"lv": "advanced",
+"t": "Deep dive: Cardcaptor Sakura's design",
+"f": "Costumes, colours and kindness"
+},
+{
+"d": 314,
+"lv": "advanced",
+"t": "Deep dive: Shirobako's industry view",
+"f": "What the series teaches about teamwork"
+},
+{
+"d": 315,
+"lv": "advanced",
+"t": "Deep dive: Chihayafuru and karuta",
+"f": "The poetry card game and its culture"
+},
+{
+"d": 316,
+"lv": "advanced",
+"t": "Hyakunin Isshu",
+"f": "The classical poem collection behind competitive karuta"
+},
+{
+"d": 317,
+"lv": "advanced",
+"t": "Classics on screen",
+"f": "Anime versions of Japanese and world literary classics"
+},
+{
+"d": 318,
+"lv": "advanced",
+"t": "Folk tales in anime",
+"f": "Momotarō, Urashima Tarō and Kaguya-hime"
+},
+{
+"d": 319,
+"lv": "advanced",
+"t": "Anime and Japanese history",
+"f": "Edo, Meiji and Taishō settings"
+},
+{
+"d": 320,
+"lv": "advanced",
+"t": "Taishō-era style",
+"f": "The retro fashion and design of the Taishō period in anime"
+},
+{
+"d": 321,
+"lv": "advanced",
+"t": "Shōwa nostalgia",
+"f": "Japan from the 1950s to the 80s in anime and its appeal"
+},
+{
+"d": 322,
+"lv": "advanced",
+"t": "Futuristic Tokyo",
+"f": "How anime imagines the city of tomorrow"
+},
+{
+"d": 323,
+"lv": "advanced",
+"t": "Anime and architecture",
+"f": "Buildings and cities designed for animation"
+},
+{
+"d": 324,
+"lv": "advanced",
+"t": "Technology themes in anime",
+"f": "Robots, AI and the internet in anime stories"
+},
+{
+"d": 325,
+"lv": "advanced",
+"t": "Anime and the environment",
+"f": "Ecology messages in modern anime"
+},
+{
+"d": 326,
+"lv": "advanced",
+"t": "Anime and food tourism",
+"f": "Visiting places to taste dishes seen in anime"
+},
+{
+"d": 327,
+"lv": "advanced",
+"t": "Anime and traditional crafts",
+"f": "Pottery, weaving and craftsmanship in stories"
+},
+{
+"d": 328,
+"lv": "advanced",
+"t": "Anime and music education",
+"f": "Brass bands and orchestras in Sound! Euphonium"
+},
+{
+"d": 329,
+"lv": "advanced",
+"t": "Anime and real sports",
+"f": "How anime inspired real athletes"
+},
+{
+"d": 330,
+"lv": "advanced",
+"t": "Review: deep dives",
+"f": "Recap of days 301 to 329"
+},
+{
+"d": 331,
+"lv": "advanced",
+"t": "Building an anime canon",
+"f": "Choosing essential titles for newcomers"
+},
+{
+"d": 332,
+"lv": "advanced",
+"t": "Your personal top ten",
+"f": "Ranking your favourite anime and explaining why"
+},
+{
+"d": 333,
+"lv": "advanced",
+"t": "Gateway anime by taste",
+"f": "Recommending based on the movies, books or games people love"
+},
+{
+"d": 334,
+"lv": "advanced",
+"t": "Rewatching anime",
+"f": "What changes when you watch a series again"
+},
+{
+"d": 335,
+"lv": "advanced",
+"t": "Reading the manga after the anime",
+"f": "Discovering extra details in the original"
+},
+{
+"d": 336,
+"lv": "advanced",
+"t": "Collecting artbooks",
+"f": "Art books and what they reveal about production"
+},
+{
+"d": 337,
+"lv": "advanced",
+"t": "Soundtrack listening",
+"f": "Listening to anime scores without the images"
+},
+{
+"d": 338,
+"lv": "advanced",
+"t": "Learning a song in Japanese",
+"f": "Singing an anime opening to practise pronunciation"
+},
+{
+"d": 339,
+"lv": "advanced",
+"t": "Anime and travel planning",
+"f": "Planning a trip around anime places"
+},
+{
+"d": 340,
+"lv": "advanced",
+"t": "Japan trip etiquette for fans",
+"f": "Respectful behaviour at shops and locations"
+},
+{
+"d": 341,
+"lv": "advanced",
+"t": "Making an anime-inspired dish",
+"f": "Cooking food seen on screen"
+},
+{
+"d": 342,
+"lv": "advanced",
+"t": "Creating a fan zine",
+"f": "Making a small self-published fan magazine"
+},
+{
+"d": 343,
+"lv": "advanced",
+"t": "Making a short animation",
+"f": "Tools and steps for your own first animation"
+},
+{
+"d": 344,
+"lv": "advanced",
+"t": "Voice acting practice",
+"f": "Trying to dub a short scene just for fun"
+},
+{
+"d": 345,
+"lv": "advanced",
+"t": "Pitching an original story",
+"f": "Shaping your own anime concept in a few lines"
+},
+{
+"d": 346,
+"lv": "advanced",
+"t": "Worldbuilding your own setting",
+"f": "Maps, cultures and rules for your story"
+},
+{
+"d": 347,
+"lv": "advanced",
+"t": "Character relationship charts",
+"f": "Planning friendships and rivalries"
+},
+{
+"d": 348,
+"lv": "advanced",
+"t": "Designing an opening sequence",
+"f": "Storyboarding the opening of your dream anime"
+},
+{
+"d": 349,
+"lv": "advanced",
+"t": "Presenting anime to others",
+"f": "Giving a short talk about a favourite title"
+},
+{
+"d": 350,
+"lv": "advanced",
+"t": "Future trends in anime",
+"f": "New technology and global storytelling"
+},
+{
+"d": 351,
+"lv": "advanced",
+"t": "Global anime creators",
+"f": "Artists from many countries making anime-inspired works"
+},
+{
+"d": 352,
+"lv": "advanced",
+"t": "Anime and virtual reality",
+"f": "Immersive experiences and new formats"
+},
+{
+"d": 353,
+"lv": "advanced",
+"t": "Preserving anime history",
+"f": "Archives and restoring classic films"
+},
+{
+"d": 354,
+"lv": "advanced",
+"t": "Restored classics",
+"f": "Watching remastered versions of older anime"
+},
+{
+"d": 355,
+"lv": "advanced",
+"t": "Anime that changed the industry",
+"f": "Titles that shifted styles and business"
+},
+{
+"d": 356,
+"lv": "advanced",
+"t": "Anime that changed you",
+"f": "Reflecting on shows that shaped your thinking"
+},
+{
+"d": 357,
+"lv": "advanced",
+"t": "Your watch plan for next year",
+"f": "Balancing classics, new shows and genres"
+},
+{
+"d": 358,
+"lv": "advanced",
+"t": "Exploring an unfamiliar genre",
+"f": "Picking one new genre to try"
+},
+{
+"d": 359,
+"lv": "advanced",
+"t": "Sharing anime across generations",
+"f": "Watching with parents, kids or grandparents"
+},
+{
+"d": 360,
+"lv": "advanced",
+"t": "Review: your anime toolbox",
+"f": "Recap of days 331 to 359"
+},
+{
+"d": 361,
+"lv": "advanced",
+"t": "Your anime story so far",
+"f": "How your tastes changed over the whole path"
+},
+{
+"d": 362,
+"lv": "advanced",
+"t": "Top moments of the year",
+"f": "Favourite scenes, songs and characters"
+},
+{
+"d": 363,
+"lv": "advanced",
+"t": "Your recommendation list",
+"f": "Creating a list of anime for friends"
+},
+{
+"d": 364,
+"lv": "advanced",
+"t": "Lifelong fan habits",
+"f": "Staying curious and supporting creators"
+},
+{
+"d": 365,
+"lv": "advanced",
+"t": "The next episode",
+"f": "Celebrating 365 days and choosing what comes next"
+}
+]
+}

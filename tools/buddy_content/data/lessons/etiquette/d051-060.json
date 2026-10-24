@@ -1,0 +1,835 @@
+{
+ "topic": "etiquette",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Café and bar etiquette",
+     "g": "Learn about ordering at the counter, table service and standing at the bar.",
+     "p": [
+      "In Italy, many people drink a quick espresso standing at the counter, and some bars ask you to pay at the till first.",
+      "In British and Irish pubs, you usually order and pay at the bar, as there is often no table service.",
+      "In France and Spain, sitting at a café table means a waiter will come to you, so there is no need to order inside."
+     ],
+     "q": "What is the café or bar culture like where you live?",
+     "c": "Next time you visit a café, watch for one minute how locals order before you join the queue or sit down."
+    },
+    "de": {
+     "t": "Etikette in Café und Bar",
+     "g": "Lerne, wann man an der Theke bestellt, wann am Tisch bedient wird und wann man an der Bar steht.",
+     "p": [
+      "In Italien trinken viele ihren Espresso schnell im Stehen an der Theke, und manche Bars verlangen, zuerst an der Kasse zu zahlen.",
+      "In britischen und irischen Pubs bestellt und zahlt man meist an der Bar, denn oft gibt es keine Bedienung am Tisch.",
+      "In Frankreich und Spanien kommt an einem Cafétisch die Bedienung zu dir, du musst also nicht drinnen bestellen."
+     ],
+     "q": "Wie ist die Café- oder Barkultur dort, wo du lebst?",
+     "c": "Beobachte beim nächsten Cafébesuch eine Minute lang, wie Einheimische bestellen, bevor du dich anstellst oder setzt."
+    },
+    "es": {
+     "t": "Etiqueta en cafés y bares",
+     "g": "Aprende cuándo pedir en la barra, cuándo hay servicio de mesa y cuándo se toma algo de pie.",
+     "p": [
+      "En Italia mucha gente toma un espresso rápido de pie en la barra, y en algunos bares se paga primero en caja.",
+      "En los pubs británicos e irlandeses se suele pedir y pagar en la barra, porque a menudo no hay servicio de mesa.",
+      "En Francia y España, si te sientas en la terraza, el camarero vendrá a ti, así que no hace falta pedir dentro."
+     ],
+     "q": "¿Cómo es la cultura de cafés o bares donde vives?",
+     "c": "La próxima vez que vayas a un café, observa un minuto cómo piden los locales antes de hacer cola o sentarte."
+    },
+    "fr": {
+     "t": "Le savoir-vivre au café et au bar",
+     "g": "Apprends quand commander au comptoir, quand attendre le service à table et quand rester debout au bar.",
+     "p": [
+      "En Italie, beaucoup boivent un espresso rapide debout au comptoir, et certains bars demandent de payer d'abord à la caisse.",
+      "Dans les pubs britanniques et irlandais, on commande et paie en général au bar, car il n'y a souvent pas de service à table.",
+      "En France et en Espagne, en terrasse, le serveur vient à toi, inutile donc d'aller commander à l'intérieur."
+     ],
+     "q": "Comment est la culture des cafés ou des bars là où tu vis ?",
+     "c": "La prochaine fois que tu vas au café, observe une minute comment les habitués commandent avant de faire la queue ou de t'asseoir."
+    },
+    "it": {
+     "t": "Il galateo al bar e al caffè",
+     "g": "Impara quando ordinare al banco, quando c'è il servizio al tavolo e quando si sta in piedi al bancone.",
+     "p": [
+      "In Italia molti bevono un espresso veloce in piedi al banco, e in alcuni bar si paga prima alla cassa con lo scontrino.",
+      "Nei pub britannici e irlandesi di solito si ordina e si paga al bancone, perché spesso non c'è servizio al tavolo.",
+      "In Francia e in Spagna, se ti siedi a un tavolino all'aperto, il cameriere viene da te, quindi non serve ordinare dentro."
+     ],
+     "q": "Com'è la cultura del bar o del caffè dove vivi?",
+     "c": "La prossima volta che entri in un bar osserva per un minuto come ordinano i clienti abituali prima di metterti in fila o sederti."
+    },
+    "pt": {
+     "t": "A etiqueta no café e no bar",
+     "g": "Aprende quando pedir ao balcão, quando há serviço à mesa e quando se bebe de pé ao balcão.",
+     "p": [
+      "Em Itália, muita gente bebe um espresso rápido de pé ao balcão, e alguns bares pedem para pagar primeiro na caixa.",
+      "Nos pubs britânicos e irlandeses costuma-se pedir e pagar ao balcão, porque muitas vezes não há serviço à mesa.",
+      "Em França e em Espanha, numa esplanada, o empregado vem ter contigo, por isso não é preciso ir pedir lá dentro."
+     ],
+     "q": "Como é a cultura de cafés ou bares onde vives?",
+     "c": "Da próxima vez que fores a um café, observa durante um minuto como os clientes habituais pedem antes de entrares na fila ou te sentares."
+    },
+    "pt_BR": {
+     "t": "A etiqueta em cafés e bares",
+     "g": "Aprenda quando pedir no balcão, quando há serviço à mesa e quando se bebe em pé no balcão.",
+     "p": [
+      "Na Itália, muita gente toma um espresso rápido em pé no balcão, e alguns bares pedem para pagar primeiro no caixa.",
+      "Nos pubs britânicos e irlandeses, costuma-se pedir e pagar no balcão, porque muitas vezes não há serviço de mesa.",
+      "Na França e na Espanha, ao sentar numa mesa na calçada, o garçom vem até você, então não precisa pedir lá dentro."
+     ],
+     "q": "Como é a cultura de cafés ou bares onde você mora?",
+     "c": "Da próxima vez que for a um café, observe por um minuto como os clientes pedem antes de entrar na fila ou se sentar."
+    }
+   }
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Street food etiquette",
+     "g": "Learn to queue, pay and eat street food respectfully while on the go.",
+     "p": [
+      "Join the queue, even if it seems informal, and watch how locals order, pay and collect their food.",
+      "Have small change ready and keep your order simple; pointing politely with an open hand at a dish is fine.",
+      "Eat near the stall if others do, and always put your rubbish in the bin or return plates and bowls."
+     ],
+     "q": "What is your favourite street food, and where did you first try it?",
+     "c": "Next time you buy street food, notice how the line works and return any plate or bowl to the vendor."
+    },
+    "de": {
+     "t": "Etikette beim Streetfood",
+     "g": "Lerne, beim Streetfood respektvoll anzustehen, zu bezahlen und unterwegs zu essen.",
+     "p": [
+      "Stell dich an, auch wenn die Schlange locker wirkt, und schau, wie Einheimische bestellen, zahlen und abholen.",
+      "Halte Kleingeld bereit und bestell einfach; auf ein Gericht höflich mit der offenen Hand zu zeigen, ist in Ordnung.",
+      "Iss in der Nähe des Stands, wenn andere es tun, und wirf Müll immer in den Eimer oder bring Teller und Schalen zurück."
+     ],
+     "q": "Was ist dein liebstes Streetfood, und wo hast du es zum ersten Mal probiert?",
+     "c": "Achte beim nächsten Streetfood-Kauf darauf, wie die Schlange funktioniert, und bring Teller oder Schale zurück."
+    },
+    "es": {
+     "t": "Etiqueta de la comida callejera",
+     "g": "Aprende a hacer cola, pagar y comer comida callejera con respeto sobre la marcha.",
+     "p": [
+      "Ponte en la cola aunque parezca informal, y observa cómo piden, pagan y recogen la comida los locales.",
+      "Ten cambio a mano y haz un pedido sencillo; señalar un plato con educación con la mano abierta está bien.",
+      "Come cerca del puesto si los demás lo hacen, y tira siempre la basura a la papelera o devuelve platos y cuencos."
+     ],
+     "q": "¿Cuál es tu comida callejera favorita, y dónde la probaste por primera vez?",
+     "c": "La próxima vez que compres comida callejera, fíjate cómo funciona la cola y devuelve el plato o el cuenco al vendedor."
+    },
+    "fr": {
+     "t": "La street food avec savoir-vivre",
+     "g": "Apprends à faire la queue, payer et manger dans la rue avec respect.",
+     "p": [
+      "Fais la queue même si elle semble informelle, et regarde comment les gens du coin commandent, paient et récupèrent leur plat.",
+      "Prépare de la monnaie et commande simplement ; montrer poliment un plat de la main ouverte est tout à fait correct.",
+      "Mange près du stand si les autres le font, et jette toujours tes déchets à la poubelle ou rapporte assiettes et bols."
+     ],
+     "q": "Quelle est ta street food préférée, et où l'as-tu goûtée pour la première fois ?",
+     "c": "La prochaine fois que tu achètes à manger dans la rue, observe la file et rapporte l'assiette ou le bol au vendeur."
+    },
+    "it": {
+     "t": "Il galateo del cibo di strada",
+     "g": "Impara a fare la fila, pagare e mangiare cibo di strada con rispetto mentre sei in giro.",
+     "p": [
+      "Mettiti in fila anche se sembra informale, e osserva come la gente del posto ordina, paga e ritira il cibo.",
+      "Tieni pronti gli spiccioli e ordina in modo semplice; indicare un piatto con garbo a mano aperta va benissimo.",
+      "Mangia vicino al banco se lo fanno gli altri, e butta sempre i rifiuti nel cestino o restituisci piatti e ciotole."
+     ],
+     "q": "Qual è il tuo cibo di strada preferito, e dove l'hai assaggiato per la prima volta?",
+     "c": "La prossima volta che compri cibo di strada osserva come funziona la fila e restituisci piatto o ciotola al venditore."
+    },
+    "pt": {
+     "t": "A etiqueta da comida de rua",
+     "g": "Aprende a fazer fila, pagar e comer comida de rua com respeito, mesmo em andamento.",
+     "p": [
+      "Entra na fila, mesmo que pareça informal, e observa como as pessoas do local pedem, pagam e recolhem a comida.",
+      "Tem trocos à mão e faz um pedido simples; indicar um prato com educação, de mão aberta, está bem.",
+      "Come perto da banca se os outros o fizerem, e põe sempre o lixo no caixote ou devolve pratos e taças."
+     ],
+     "q": "Qual é a tua comida de rua preferida, e onde a provaste pela primeira vez?",
+     "c": "Da próxima vez que comprares comida de rua, repara como funciona a fila e devolve o prato ou a taça ao vendedor."
+    },
+    "pt_BR": {
+     "t": "A etiqueta da comida de rua",
+     "g": "Aprenda a fazer fila, pagar e comer comida de rua com respeito, mesmo andando por aí.",
+     "p": [
+      "Entre na fila, mesmo que pareça informal, e observe como as pessoas do lugar pedem, pagam e retiram a comida.",
+      "Tenha trocado em mãos e faça um pedido simples; indicar um prato com educação, de mão aberta, é tranquilo.",
+      "Coma perto da barraca se os outros fazem isso, e jogue sempre o lixo na lixeira ou devolva pratos e tigelas."
+     ],
+     "q": "Qual é a sua comida de rua favorita, e onde você provou pela primeira vez?",
+     "c": "Da próxima vez que comprar comida de rua, repare como funciona a fila e devolva o prato ou a tigela ao vendedor."
+    }
+   }
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Eating while walking",
+     "g": "Understand why eating while walking is frowned upon in Japan and perfectly normal elsewhere.",
+     "p": [
+      "In Japan, people usually eat street snacks standing near the stall instead of walking, to avoid mess and show respect for the food.",
+      "In many cities in the US, Mexico or Thailand, eating while walking is completely normal and nobody minds.",
+      "A good rule anywhere: be careful not to drip on people, and avoid eating in places of worship or crowded trains."
+     ],
+     "q": "Do people eat while walking where you live, and do you?",
+     "c": "Next time you buy a snack, try enjoying it standing still or sitting down, and notice the difference."
+    },
+    "de": {
+     "t": "Essen im Gehen",
+     "g": "Verstehe, warum Essen im Gehen in Japan verpönt und anderswo völlig normal ist.",
+     "p": [
+      "In Japan isst man Streetfood meist im Stehen am Stand statt im Gehen, um nicht zu kleckern und das Essen zu achten.",
+      "In vielen Städten der USA, Mexikos oder Thailands ist Essen im Gehen ganz normal, und niemanden stört es.",
+      "Eine gute Regel überall: Pass auf, niemanden zu bekleckern, und iss nicht in Gotteshäusern oder vollen Zügen."
+     ],
+     "q": "Isst man dort, wo du lebst, im Gehen, und tust du es selbst?",
+     "c": "Genieße deinen nächsten Snack im Stehen oder Sitzen und achte auf den Unterschied."
+    },
+    "es": {
+     "t": "Comer mientras caminas",
+     "g": "Entiende por qué comer caminando está mal visto en Japón y es totalmente normal en otros lugares.",
+     "p": [
+      "En Japón la gente suele comer los tentempiés de pie junto al puesto en vez de caminando, para no ensuciar y respetar la comida.",
+      "En muchas ciudades de Estados Unidos, México o Tailandia, comer caminando es totalmente normal y a nadie le importa.",
+      "Una buena regla en cualquier sitio: cuida de no manchar a nadie y evita comer en lugares de culto o trenes llenos."
+     ],
+     "q": "¿La gente come caminando donde vives, y tú lo haces?",
+     "c": "La próxima vez que compres algo para picar, disfrútalo de pie o sentado y fíjate en la diferencia."
+    },
+    "fr": {
+     "t": "Manger en marchant",
+     "g": "Comprends pourquoi manger en marchant est mal vu au Japon et tout à fait normal ailleurs.",
+     "p": [
+      "Au Japon, on mange souvent ses en-cas debout près du stand plutôt qu'en marchant, pour éviter les taches et respecter la nourriture.",
+      "Dans beaucoup de villes des États-Unis, du Mexique ou de Thaïlande, manger en marchant est parfaitement normal.",
+      "Une bonne règle partout : fais attention à ne tacher personne et évite de manger dans les lieux de culte ou les trains bondés."
+     ],
+     "q": "Les gens mangent-ils en marchant là où tu vis, et le fais-tu ?",
+     "c": "La prochaine fois que tu achètes un en-cas, savoure-le debout immobile ou assis, et observe la différence."
+    },
+    "it": {
+     "t": "Mangiare camminando",
+     "g": "Capisci perché mangiare camminando è malvisto in Giappone e del tutto normale altrove.",
+     "p": [
+      "In Giappone di solito si mangia lo spuntino in piedi vicino al chiosco invece che camminando, per non sporcare e rispettare il cibo.",
+      "In molte città degli Stati Uniti, del Messico o della Thailandia mangiare camminando è normalissimo e nessuno ci fa caso.",
+      "Una buona regola ovunque: attento a non sporcare nessuno ed evita di mangiare nei luoghi di culto o sui treni affollati."
+     ],
+     "q": "Dove vivi la gente mangia camminando, e tu lo fai?",
+     "c": "La prossima volta che compri uno spuntino gustalo fermo in piedi o seduto, e nota la differenza."
+    },
+    "pt": {
+     "t": "Comer a andar",
+     "g": "Percebe porque comer a andar é malvisto no Japão e perfeitamente normal noutros sítios.",
+     "p": [
+      "No Japão, as pessoas costumam comer os petiscos de pé junto à banca em vez de a andar, para não sujar e respeitar a comida.",
+      "Em muitas cidades dos Estados Unidos, do México ou da Tailândia, comer a andar é totalmente normal e ninguém se importa.",
+      "Uma boa regra em todo o lado: cuidado para não sujar ninguém e evita comer em locais de culto ou comboios cheios."
+     ],
+     "q": "As pessoas comem a andar onde vives, e tu fazes isso?",
+     "c": "Da próxima vez que comprares um petisco, saboreia-o parado de pé ou sentado e repara na diferença."
+    },
+    "pt_BR": {
+     "t": "Comer andando",
+     "g": "Entenda por que comer andando é malvisto no Japão e perfeitamente normal em outros lugares.",
+     "p": [
+      "No Japão, as pessoas costumam comer os lanches em pé perto da barraca em vez de andando, para não sujar e respeitar a comida.",
+      "Em muitas cidades dos Estados Unidos, do México ou da Tailândia, comer andando é totalmente normal e ninguém liga.",
+      "Uma boa regra em qualquer lugar: cuidado para não sujar ninguém e evite comer em locais de culto ou em trens lotados."
+     ],
+     "q": "As pessoas comem andando onde você mora, e você faz isso?",
+     "c": "Da próxima vez que comprar um lanche, aproveite parado em pé ou sentado e repare na diferença."
+    }
+   }
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Buffet etiquette",
+     "g": "Learn to use fresh plates, take fair portions and not linger at the food.",
+     "p": [
+      "Take a clean plate each time you return to the buffet, and always use the serving utensils, never your own.",
+      "Take small portions you will finish; you can always go back, and it leaves enough for others.",
+      "Serve yourself efficiently and step aside to chat, so the line keeps moving."
+     ],
+     "q": "Do you enjoy buffets, and what is your strategy when you see so much choice?",
+     "c": "At your next buffet, start with small tasting portions and go back only for what you really enjoyed."
+    },
+    "de": {
+     "t": "Etikette am Buffet",
+     "g": "Lerne, frische Teller zu nehmen, faire Portionen zu wählen und nicht am Buffet zu verweilen.",
+     "p": [
+      "Nimm bei jedem Gang zum Buffet einen sauberen Teller und benutze immer das Vorlegebesteck, nie dein eigenes.",
+      "Nimm kleine Portionen, die du aufisst; du kannst jederzeit nachholen, und für andere bleibt genug.",
+      "Bedien dich zügig und tritt zum Plaudern zur Seite, damit die Schlange weitergeht."
+     ],
+     "q": "Magst du Buffets, und welche Strategie hast du bei so viel Auswahl?",
+     "c": "Beginne beim nächsten Buffet mit kleinen Probierportionen und hol nur nach, was dir wirklich geschmeckt hat."
+    },
+    "es": {
+     "t": "Etiqueta del bufé",
+     "g": "Aprende a usar platos limpios, servirte raciones justas y no quedarte junto a la comida.",
+     "p": [
+      "Coge un plato limpio cada vez que vuelvas al bufé y usa siempre los cubiertos de servir, nunca los tuyos.",
+      "Sírvete raciones pequeñas que vayas a terminar; siempre puedes volver, y así queda suficiente para los demás.",
+      "Sírvete con agilidad y apártate para charlar, así la fila sigue avanzando."
+     ],
+     "q": "¿Te gustan los bufés, y qué estrategia sigues cuando ves tanta variedad?",
+     "c": "En tu próximo bufé, empieza con raciones pequeñas para probar y vuelve solo por lo que más te haya gustado."
+    },
+    "fr": {
+     "t": "Le savoir-vivre au buffet",
+     "g": "Apprends à prendre des assiettes propres, à te servir raisonnablement et à ne pas t'attarder devant les plats.",
+     "p": [
+      "Prends une assiette propre à chaque passage au buffet et utilise toujours les couverts de service, jamais les tiens.",
+      "Sers-toi de petites portions que tu finiras ; tu peux toujours revenir, et il en reste assez pour les autres.",
+      "Sers-toi rapidement et écarte-toi pour bavarder, afin que la file continue d'avancer."
+     ],
+     "q": "Aimes-tu les buffets, et quelle est ta stratégie face à tant de choix ?",
+     "c": "À ton prochain buffet, commence par de petites portions de dégustation et ne reviens que pour ce que tu as vraiment aimé."
+    },
+    "it": {
+     "t": "Il galateo del buffet",
+     "g": "Impara a usare piatti puliti, prendere porzioni giuste e non fermarti davanti al cibo.",
+     "p": [
+      "Prendi un piatto pulito ogni volta che torni al buffet e usa sempre le posate di servizio, mai le tue.",
+      "Prendi porzioni piccole che finirai; puoi sempre tornare, e così ne resta abbastanza per gli altri.",
+      "Servi in fretta e spostati di lato per chiacchierare, così la fila continua a scorrere."
+     ],
+     "q": "Ti piacciono i buffet, e qual è la tua strategia davanti a tanta scelta?",
+     "c": "Al prossimo buffet inizia con piccoli assaggi e torna solo per ciò che ti è piaciuto davvero."
+    },
+    "pt": {
+     "t": "A etiqueta do bufete",
+     "g": "Aprende a usar pratos limpos, servir-te de porções justas e não ficar parado junto à comida.",
+     "p": [
+      "Tira um prato limpo sempre que voltares ao bufete e usa sempre os talheres de servir, nunca os teus.",
+      "Serve-te de porções pequenas que vais acabar; podes sempre voltar, e assim fica o suficiente para os outros.",
+      "Serve-te com rapidez e afasta-te para conversar, para que a fila continue a andar."
+     ],
+     "q": "Gostas de bufetes, e qual é a tua estratégia quando vês tanta escolha?",
+     "c": "No próximo bufete, começa com pequenas porções para provar e volta só pelo que gostaste mesmo."
+    },
+    "pt_BR": {
+     "t": "A etiqueta do bufê",
+     "g": "Aprenda a usar pratos limpos, servir porções justas e não ficar parado junto à comida.",
+     "p": [
+      "Pegue um prato limpo toda vez que voltar ao bufê e use sempre os talheres de servir, nunca os seus.",
+      "Sirva porções pequenas que você vai terminar; você sempre pode voltar, e assim sobra o suficiente para os outros.",
+      "Sirva-se com agilidade e saia para o lado para conversar, assim a fila continua andando."
+     ],
+     "q": "Você gosta de bufês, e qual é a sua estratégia diante de tanta opção?",
+     "c": "No próximo bufê, comece com porções pequenas para provar e volte só para o que você realmente gostou."
+    }
+   }
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Picnic and barbecue etiquette",
+     "g": "Learn to bring something, help out and clean up at picnics and barbecues.",
+     "p": [
+      "Ask the host what to bring; a dish, drinks or a dessert to share are welcome almost everywhere.",
+      "At a barbecue, let the person at the grill lead, offer help and do not take food off the grill without asking.",
+      "Leave the place cleaner than you found it: help collect rubbish and carry things back."
+     ],
+     "q": "What is your favourite outdoor meal, and what do you like to bring?",
+     "c": "For your next outdoor meal or gathering, offer to bring one dish and to help with the clean-up."
+    },
+    "de": {
+     "t": "Etikette bei Picknick und Grillen",
+     "g": "Lerne, etwas mitzubringen, mitzuhelfen und aufzuräumen, wenn gepicknickt oder gegrillt wird.",
+     "p": [
+      "Frag den Gastgeber, was du mitbringen sollst; ein Gericht, Getränke oder ein Dessert zum Teilen sind fast überall willkommen.",
+      "Beim Grillen hat die Person am Grill das Sagen; biete Hilfe an und nimm nichts ungefragt vom Rost.",
+      "Hinterlass den Ort sauberer, als du ihn vorgefunden hast: Hilf beim Müllsammeln und Zurücktragen."
+     ],
+     "q": "Was ist deine liebste Mahlzeit im Freien, und was bringst du gern mit?",
+     "c": "Biete beim nächsten Essen im Freien an, ein Gericht mitzubringen und beim Aufräumen zu helfen."
+    },
+    "es": {
+     "t": "Etiqueta de pícnics y barbacoas",
+     "g": "Aprende a llevar algo, ayudar y recoger en pícnics y barbacoas.",
+     "p": [
+      "Pregunta al anfitrión qué llevar; un plato, bebidas o un postre para compartir se agradecen casi en cualquier lugar.",
+      "En una barbacoa, deja que quien está en la parrilla dirija, ofrece ayuda y no cojas comida de la parrilla sin preguntar.",
+      "Deja el lugar más limpio de como lo encontraste: ayuda a recoger la basura y a llevar las cosas de vuelta."
+     ],
+     "q": "¿Cuál es tu comida al aire libre favorita, y qué te gusta llevar?",
+     "c": "Para tu próxima comida al aire libre, ofrécete a llevar un plato y a ayudar a recoger."
+    },
+    "fr": {
+     "t": "Pique-nique et barbecue avec savoir-vivre",
+     "g": "Apprends à apporter quelque chose, à aider et à ranger lors des pique-niques et barbecues.",
+     "p": [
+      "Demande à l'hôte quoi apporter ; un plat, des boissons ou un dessert à partager sont bienvenus presque partout.",
+      "Au barbecue, laisse la personne au gril mener, propose ton aide et ne prends rien sur la grille sans demander.",
+      "Laisse l'endroit plus propre que tu ne l'as trouvé : aide à ramasser les déchets et à rapporter les affaires."
+     ],
+     "q": "Quel est ton repas en plein air préféré, et qu'aimes-tu apporter ?",
+     "c": "Pour ton prochain repas en plein air, propose d'apporter un plat et d'aider au rangement."
+    },
+    "it": {
+     "t": "Il galateo di picnic e grigliate",
+     "g": "Impara a portare qualcosa, dare una mano e riordinare a picnic e grigliate.",
+     "p": [
+      "Chiedi a chi organizza cosa portare; un piatto, bevande o un dolce da condividere sono graditi quasi ovunque.",
+      "Alla grigliata lascia che sia chi sta alla griglia a dirigere, offri aiuto e non prendere cibo dalla griglia senza chiedere.",
+      "Lascia il posto più pulito di come l'hai trovato: aiuta a raccogliere i rifiuti e a riportare le cose."
+     ],
+     "q": "Qual è il tuo pasto all'aperto preferito, e cosa ti piace portare?",
+     "c": "Per il prossimo pasto all'aperto offriti di portare un piatto e di aiutare a riordinare."
+    },
+    "pt": {
+     "t": "A etiqueta de piqueniques e churrascos",
+     "g": "Aprende a levar algo, ajudar e arrumar em piqueniques e churrascos.",
+     "p": [
+      "Pergunta ao anfitrião o que levar; um prato, bebidas ou uma sobremesa para partilhar são bem-vindos quase em todo o lado.",
+      "Num churrasco, deixa quem está na grelha conduzir, oferece ajuda e não tires comida da grelha sem perguntar.",
+      "Deixa o sítio mais limpo do que o encontraste: ajuda a apanhar o lixo e a levar as coisas de volta."
+     ],
+     "q": "Qual é a tua refeição ao ar livre preferida, e o que gostas de levar?",
+     "c": "Para a próxima refeição ao ar livre, oferece-te para levar um prato e ajudar a arrumar."
+    },
+    "pt_BR": {
+     "t": "A etiqueta de piqueniques e churrascos",
+     "g": "Aprenda a levar algo, ajudar e arrumar em piqueniques e churrascos.",
+     "p": [
+      "Pergunte ao anfitrião o que levar; um prato, bebidas ou uma sobremesa para dividir são bem-vindos em quase todo lugar.",
+      "No churrasco, deixe o churrasqueiro comandar, ofereça ajuda e não tire carne da grelha sem perguntar.",
+      "Deixe o lugar mais limpo do que encontrou: ajude a recolher o lixo e a levar as coisas de volta."
+     ],
+     "q": "Qual é a sua refeição ao ar livre favorita, e o que você gosta de levar?",
+     "c": "No próximo encontro ao ar livre, ofereça-se para levar um prato e ajudar na arrumação."
+    }
+   }
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Family-style meals",
+     "g": "Learn the etiquette of sharing dishes placed at the centre of the table.",
+     "p": [
+      "In China, Korea, Ethiopia and across the Middle East, many dishes are shared from the centre of the table.",
+      "Use serving spoons or chopsticks when provided, and take food from the side of the dish nearest to you.",
+      "Try a little of everything, leave enough for others and offer the best pieces to guests or elders."
+     ],
+     "q": "Do you prefer shared dishes or your own plate, and why?",
+     "c": "At your next shared meal, take food from the side nearest you and offer a dish to someone else first."
+    },
+    "de": {
+     "t": "Gemeinsam aus der Mitte essen",
+     "g": "Lerne die Etikette für Gerichte, die in der Tischmitte geteilt werden.",
+     "p": [
+      "In China, Korea, Äthiopien und im Nahen Osten teilt man viele Gerichte aus der Mitte des Tisches.",
+      "Benutze Vorlegelöffel oder -stäbchen, wenn es sie gibt, und nimm von der dir zugewandten Seite der Schüssel.",
+      "Probier von allem ein wenig, lass genug für andere übrig und biete Gästen oder Älteren die besten Stücke an."
+     ],
+     "q": "Magst du lieber geteilte Gerichte oder deinen eigenen Teller, und warum?",
+     "c": "Nimm bei der nächsten geteilten Mahlzeit von der Seite, die dir am nächsten ist, und biete ein Gericht zuerst jemand anderem an."
+    },
+    "es": {
+     "t": "Comidas para compartir",
+     "g": "Aprende la etiqueta de compartir platos colocados en el centro de la mesa.",
+     "p": [
+      "En China, Corea, Etiopía y en Oriente Medio, muchos platos se comparten desde el centro de la mesa.",
+      "Usa cucharas o palillos de servir cuando los haya, y toma la comida del lado de la fuente más cercano a ti.",
+      "Prueba un poco de todo, deja suficiente para los demás y ofrece los mejores trozos a invitados o mayores."
+     ],
+     "q": "¿Prefieres platos para compartir o tu propio plato, y por qué?",
+     "c": "En tu próxima comida compartida, toma comida del lado más cercano a ti y ofrece primero un plato a otra persona."
+    },
+    "fr": {
+     "t": "Les repas à partager",
+     "g": "Apprends le savoir-vivre des plats partagés au centre de la table.",
+     "p": [
+      "En Chine, en Corée, en Éthiopie et au Moyen-Orient, beaucoup de plats se partagent au centre de la table.",
+      "Utilise les cuillères ou baguettes de service quand il y en a, et sers-toi du côté du plat le plus proche de toi.",
+      "Goûte un peu de tout, laisses-en assez pour les autres et offre les meilleurs morceaux aux invités ou aux aînés."
+     ],
+     "q": "Préfères-tu les plats partagés ou ta propre assiette, et pourquoi ?",
+     "c": "À ton prochain repas partagé, sers-toi du côté le plus proche et propose d'abord un plat à quelqu'un d'autre."
+    },
+    "it": {
+     "t": "I pasti da condividere",
+     "g": "Impara il galateo dei piatti condivisi al centro della tavola.",
+     "p": [
+      "In Cina, in Corea, in Etiopia e in Medio Oriente molti piatti si condividono dal centro della tavola.",
+      "Usa cucchiai o bacchette di servizio quando ci sono, e prendi il cibo dal lato del piatto più vicino a te.",
+      "Assaggia un po' di tutto, lasciane abbastanza per gli altri e offri i pezzi migliori agli ospiti o agli anziani."
+     ],
+     "q": "Preferisci piatti da condividere o un piatto tutto tuo, e perché?",
+     "c": "Al prossimo pasto condiviso prendi il cibo dal lato più vicino a te e offri prima un piatto a qualcun altro."
+    },
+    "pt": {
+     "t": "Refeições partilhadas",
+     "g": "Aprende a etiqueta de partilhar pratos colocados no centro da mesa.",
+     "p": [
+      "Na China, na Coreia, na Etiópia e no Médio Oriente, muitos pratos partilham-se a partir do centro da mesa.",
+      "Usa colheres ou pauzinhos de servir quando os houver, e tira a comida do lado da travessa mais perto de ti.",
+      "Prova um pouco de tudo, deixa o suficiente para os outros e oferece os melhores pedaços aos convidados ou aos mais velhos."
+     ],
+     "q": "Preferes pratos partilhados ou o teu próprio prato, e porquê?",
+     "c": "Na próxima refeição partilhada, tira comida do lado mais perto de ti e oferece primeiro uma travessa a outra pessoa."
+    },
+    "pt_BR": {
+     "t": "Refeições compartilhadas",
+     "g": "Aprenda a etiqueta de dividir pratos colocados no centro da mesa.",
+     "p": [
+      "Na China, na Coreia, na Etiópia e no Oriente Médio, muitos pratos são compartilhados a partir do centro da mesa.",
+      "Use colheres ou hashis de servir quando houver, e pegue comida do lado da travessa mais perto de você.",
+      "Prove um pouco de tudo, deixe o suficiente para os outros e ofereça os melhores pedaços aos convidados ou aos mais velhos."
+     ],
+     "q": "Você prefere pratos compartilhados ou o seu próprio prato, e por quê?",
+     "c": "Na próxima refeição compartilhada, pegue comida do lado mais perto de você e ofereça primeiro uma travessa a outra pessoa."
+    }
+   }
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Dining in Japan",
+     "g": "Discover oshibori towels, soy sauce and the rhythm of a Japanese meal.",
+     "p": [
+      "The oshibori, a warm or cool towel, is for cleaning your hands before eating; fold it neatly afterwards.",
+      "Pour a little soy sauce into the small dish, dip lightly and avoid pouring it directly over your rice.",
+      "It is polite to lift small bowls of rice or soup close to your mouth, and to say gochisousama deshita at the end."
+     ],
+     "q": "Have you ever eaten a Japanese meal, and what did you enjoy most?",
+     "c": "Try lifting your bowl closer to your mouth for a rice or soup dish at your next meal."
+    },
+    "de": {
+     "t": "Essen in Japan",
+     "g": "Entdecke Oshibori-Tücher, Sojasoße und den Rhythmus einer japanischen Mahlzeit.",
+     "p": [
+      "Das Oshibori, ein warmes oder kühles Tuch, dient zum Reinigen der Hände vor dem Essen; falte es danach ordentlich.",
+      "Gib wenig Sojasoße in das kleine Schälchen, tunke leicht ein und gieß sie nicht direkt über den Reis.",
+      "Es ist höflich, kleine Reis- oder Suppenschalen zum Mund zu heben und am Ende gochisousama deshita zu sagen."
+     ],
+     "q": "Hast du schon einmal japanisch gegessen, und was hat dir am besten gefallen?",
+     "c": "Hebe bei deiner nächsten Mahlzeit die Schale mit Reis oder Suppe näher an den Mund."
+    },
+    "es": {
+     "t": "Comer en Japón",
+     "g": "Descubre las toallitas oshibori, la salsa de soja y el ritmo de una comida japonesa.",
+     "p": [
+      "El oshibori, una toallita templada o fresca, sirve para limpiarse las manos antes de comer; dóblalo con cuidado después.",
+      "Echa un poco de salsa de soja en el platito, moja ligeramente y evita verterla directamente sobre el arroz.",
+      "Es educado acercar a la boca los cuencos pequeños de arroz o sopa, y decir gochisousama deshita al terminar."
+     ],
+     "q": "¿Has probado alguna vez una comida japonesa, y qué es lo que más te gustó?",
+     "c": "En tu próxima comida, prueba a acercar a la boca el cuenco de arroz o sopa."
+    },
+    "fr": {
+     "t": "Manger au Japon",
+     "g": "Découvre les serviettes oshibori, la sauce soja et le rythme d'un repas japonais.",
+     "p": [
+      "L'oshibori, une serviette chaude ou fraîche, sert à se nettoyer les mains avant de manger ; plie-la soigneusement ensuite.",
+      "Verse un peu de sauce soja dans la coupelle, trempe légèrement et évite d'en verser directement sur le riz.",
+      "Il est poli de porter les petits bols de riz ou de soupe près de la bouche, et de dire gochisousama deshita à la fin."
+     ],
+     "q": "As-tu déjà goûté un repas japonais, et qu'as-tu préféré ?",
+     "c": "À ton prochain repas, essaie de porter ton bol de riz ou de soupe plus près de ta bouche."
+    },
+    "it": {
+     "t": "A tavola in Giappone",
+     "g": "Scopri gli asciugamani oshibori, la salsa di soia e il ritmo di un pasto giapponese.",
+     "p": [
+      "L'oshibori, un panno caldo o fresco, serve a pulirsi le mani prima di mangiare; dopo ripiegalo con cura.",
+      "Versa poca salsa di soia nella ciotolina, intingi leggermente ed evita di versarla direttamente sul riso.",
+      "È educato portare vicino alla bocca le ciotoline di riso o zuppa, e dire gochisousama deshita alla fine."
+     ],
+     "q": "Hai mai mangiato un pasto giapponese, e cosa ti è piaciuto di più?",
+     "c": "Al prossimo pasto prova ad avvicinare alla bocca la ciotola di riso o di zuppa."
+    },
+    "pt": {
+     "t": "Comer no Japão",
+     "g": "Descobre as toalhas oshibori, o molho de soja e o ritmo de uma refeição japonesa.",
+     "p": [
+      "O oshibori, uma toalha morna ou fresca, serve para limpar as mãos antes de comer; dobra-o com cuidado depois.",
+      "Deita um pouco de molho de soja no pratinho, molha levemente e evita despejá-lo diretamente sobre o arroz.",
+      "É educado levar as taças pequenas de arroz ou sopa para perto da boca, e dizer gochisousama deshita no fim."
+     ],
+     "q": "Já comeste uma refeição japonesa, e de que gostaste mais?",
+     "c": "Na próxima refeição, experimenta levar a taça de arroz ou sopa para mais perto da boca."
+    },
+    "pt_BR": {
+     "t": "Comer no Japão",
+     "g": "Descubra as toalhinhas oshibori, o shoyu e o ritmo de uma refeição japonesa.",
+     "p": [
+      "O oshibori, uma toalhinha morna ou fria, serve para limpar as mãos antes de comer; dobre-o com cuidado depois.",
+      "Coloque um pouco de shoyu no pratinho, molhe de leve e evite despejar o shoyu direto sobre o arroz.",
+      "É educado levar as tigelinhas de arroz ou sopa para perto da boca, e dizer gochisousama deshita no final."
+     ],
+     "q": "Você já comeu uma refeição japonesa, e do que mais gostou?",
+     "c": "Na próxima refeição, experimente levar a tigela de arroz ou sopa para mais perto da boca."
+    }
+   }
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Dining in China",
+     "g": "Learn about round tables, lazy Susans and serving your guests in China.",
+     "p": [
+      "Round tables let everyone share; the guest of honour often sits facing the door, beside or opposite the host.",
+      "On a lazy Susan, turn it gently, usually clockwise, and wait if someone is serving themselves.",
+      "Hosts often place food on guests' plates as a warm gesture; try a little and thank them."
+     ],
+     "q": "Have you ever eaten at a round table with a turntable, and how did it feel?",
+     "c": "At your next shared meal, offer a dish to the person beside you before taking any yourself."
+    },
+    "de": {
+     "t": "Essen in China",
+     "g": "Lerne mehr über runde Tische, Drehscheiben und das Bedienen von Gästen in China.",
+     "p": [
+      "Runde Tische laden zum Teilen ein; der Ehrengast sitzt oft mit Blick zur Tür, neben oder gegenüber dem Gastgeber.",
+      "Dreh die Drehscheibe sanft, meist im Uhrzeigersinn, und warte, wenn sich gerade jemand bedient.",
+      "Gastgeber legen Gästen oft als herzliche Geste Essen auf den Teller; probier ein wenig und bedanke dich."
+     ],
+     "q": "Hast du schon einmal an einem runden Tisch mit Drehscheibe gegessen, und wie war das?",
+     "c": "Biete bei deiner nächsten gemeinsamen Mahlzeit deinem Nachbarn ein Gericht an, bevor du dich selbst bedienst."
+    },
+    "es": {
+     "t": "Comer en China",
+     "g": "Aprende sobre las mesas redondas, la bandeja giratoria y cómo atender a los invitados en China.",
+     "p": [
+      "Las mesas redondas permiten compartir; el invitado de honor suele sentarse frente a la puerta, junto al anfitrión o enfrente.",
+      "Gira la bandeja con suavidad, normalmente en el sentido de las agujas del reloj, y espera si alguien se está sirviendo.",
+      "Los anfitriones suelen poner comida en el plato de los invitados como gesto cálido; prueba un poco y da las gracias."
+     ],
+     "q": "¿Has comido alguna vez en una mesa redonda con bandeja giratoria, y qué tal fue?",
+     "c": "En tu próxima comida compartida, ofrece un plato a quien tienes al lado antes de servirte."
+    },
+    "fr": {
+     "t": "Manger en Chine",
+     "g": "Découvre les tables rondes, les plateaux tournants et l'art de servir ses invités en Chine.",
+     "p": [
+      "Les tables rondes favorisent le partage ; l'invité d'honneur est souvent assis face à la porte, près de l'hôte ou en face.",
+      "Tourne le plateau doucement, en général dans le sens des aiguilles d'une montre, et attends si quelqu'un se sert.",
+      "Les hôtes déposent souvent de la nourriture dans l'assiette des invités en signe d'affection ; goûte un peu et remercie."
+     ],
+     "q": "As-tu déjà mangé à une table ronde avec un plateau tournant, et comment c'était ?",
+     "c": "À ton prochain repas partagé, propose un plat à ton voisin avant de te servir."
+    },
+    "it": {
+     "t": "A tavola in Cina",
+     "g": "Scopri i tavoli rotondi, i vassoi girevoli e l'arte di servire gli ospiti in Cina.",
+     "p": [
+      "I tavoli rotondi favoriscono la condivisione; l'ospite d'onore siede spesso di fronte alla porta, accanto o davanti a chi ospita.",
+      "Gira il vassoio con delicatezza, di solito in senso orario, e aspetta se qualcuno si sta servendo.",
+      "Chi ospita mette spesso del cibo nel piatto degli ospiti come gesto affettuoso; assaggia un po' e ringrazia."
+     ],
+     "q": "Hai mai mangiato a un tavolo rotondo con il vassoio girevole, e com'è stato?",
+     "c": "Al prossimo pasto condiviso offri un piatto a chi ti siede accanto prima di servirti."
+    },
+    "pt": {
+     "t": "Comer na China",
+     "g": "Aprende sobre as mesas redondas, os tabuleiros giratórios e como servir os convidados na China.",
+     "p": [
+      "As mesas redondas permitem partilhar; o convidado de honra costuma sentar-se virado para a porta, ao lado ou em frente ao anfitrião.",
+      "Roda o tabuleiro com cuidado, normalmente no sentido dos ponteiros do relógio, e espera se alguém se estiver a servir.",
+      "Os anfitriões costumam pôr comida no prato dos convidados como gesto caloroso; prova um pouco e agradece."
+     ],
+     "q": "Já comeste numa mesa redonda com tabuleiro giratório, e como foi?",
+     "c": "Na próxima refeição partilhada, oferece um prato a quem está ao teu lado antes de te servires."
+    },
+    "pt_BR": {
+     "t": "Comer na China",
+     "g": "Aprenda sobre as mesas redondas, as bandejas giratórias e como servir os convidados na China.",
+     "p": [
+      "As mesas redondas facilitam a partilha; o convidado de honra costuma sentar de frente para a porta, ao lado ou diante do anfitrião.",
+      "Gire a bandeja com cuidado, normalmente no sentido horário, e espere se alguém estiver se servindo.",
+      "Os anfitriões costumam colocar comida no prato dos convidados como gesto carinhoso; prove um pouco e agradeça."
+     ],
+     "q": "Você já comeu numa mesa redonda com bandeja giratória, e como foi?",
+     "c": "Na próxima refeição compartilhada, ofereça um prato a quem está ao seu lado antes de se servir."
+    }
+   }
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Dining in France",
+     "g": "Discover courses, bread on the tablecloth and the joy of good conversation in France.",
+     "p": [
+      "A French meal often flows from apéritif to starter, main course, cheese and dessert, enjoyed slowly.",
+      "Bread sits on the tablecloth beside your plate, hands stay visible on the table and wine is poured by the host.",
+      "Meals are a time for conversation, so phones away and lively, friendly talk are part of good manners."
+     ],
+     "q": "Which part of a long, relaxed meal do you enjoy most?",
+     "c": "Have one meal this week without your phone and enjoy unhurried conversation with someone."
+    },
+    "de": {
+     "t": "Essen in Frankreich",
+     "g": "Entdecke die Gänge, das Brot auf der Tischdecke und die Freude an guten Gesprächen in Frankreich.",
+     "p": [
+      "Ein französisches Essen führt oft vom Aperitif über Vorspeise und Hauptgang zu Käse und Dessert, in aller Ruhe genossen.",
+      "Das Brot liegt neben dem Teller auf der Tischdecke, die Hände bleiben sichtbar und der Gastgeber schenkt den Wein ein.",
+      "Mahlzeiten sind Zeit für Gespräche: Handy weg und lebhafte, freundliche Unterhaltung gehören zu guten Manieren."
+     ],
+     "q": "Welchen Teil eines langen, entspannten Essens genießt du am meisten?",
+     "c": "Iss diese Woche eine Mahlzeit ohne Handy und genieße ein ungestörtes Gespräch mit jemandem."
+    },
+    "es": {
+     "t": "Comer en Francia",
+     "g": "Descubre los platos, el pan sobre el mantel y el placer de una buena conversación en Francia.",
+     "p": [
+      "Una comida francesa suele ir del aperitivo al entrante, el plato principal, el queso y el postre, sin prisas.",
+      "El pan va sobre el mantel junto al plato, las manos quedan a la vista y el vino lo sirve el anfitrión.",
+      "Las comidas son para conversar, así que dejar el móvil y charlar con alegría forma parte de los buenos modales."
+     ],
+     "q": "¿Qué parte de una comida larga y relajada disfrutas más?",
+     "c": "Haz esta semana una comida sin el móvil y disfruta de una conversación tranquila con alguien."
+    },
+    "fr": {
+     "t": "Manger en France",
+     "g": "Découvre l'enchaînement des plats, le pain sur la nappe et le plaisir de la conversation en France.",
+     "p": [
+      "Un repas français va souvent de l'apéritif à l'entrée, au plat, au fromage puis au dessert, en prenant son temps.",
+      "Le pain se pose sur la nappe à côté de l'assiette, les mains restent visibles sur la table et l'hôte sert le vin.",
+      "Le repas est un moment d'échange : ranger son téléphone et converser avec entrain font partie des bonnes manières."
+     ],
+     "q": "Quelle partie d'un long repas détendu préfères-tu ?",
+     "c": "Prends cette semaine un repas sans téléphone et savoure une conversation tranquille avec quelqu'un."
+    },
+    "it": {
+     "t": "A tavola in Francia",
+     "g": "Scopri le portate, il pane sulla tovaglia e il piacere della buona conversazione in Francia.",
+     "p": [
+      "Un pasto francese passa spesso dall'aperitivo all'antipasto, al piatto principale, ai formaggi e al dolce, con calma.",
+      "Il pane sta sulla tovaglia accanto al piatto, le mani restano in vista sul tavolo e il vino lo versa chi ospita.",
+      "I pasti sono un momento per parlare: telefono via e conversazione vivace e cordiale fanno parte delle buone maniere."
+     ],
+     "q": "Quale parte di un pasto lungo e rilassato ti piace di più?",
+     "c": "Questa settimana fai un pasto senza telefono e goditi una conversazione tranquilla con qualcuno."
+    },
+    "pt": {
+     "t": "Comer em França",
+     "g": "Descobre os pratos, o pão na toalha e o prazer de uma boa conversa em França.",
+     "p": [
+      "Uma refeição francesa passa muitas vezes do aperitivo à entrada, ao prato principal, ao queijo e à sobremesa, com calma.",
+      "O pão fica na toalha ao lado do prato, as mãos ficam à vista na mesa e o vinho é servido pelo anfitrião.",
+      "As refeições são para conversar, por isso pôr o telemóvel de lado e conversar com alegria faz parte das boas maneiras."
+     ],
+     "q": "De que parte de uma refeição longa e descontraída gostas mais?",
+     "c": "Faz esta semana uma refeição sem telemóvel e aproveita uma conversa calma com alguém."
+    },
+    "pt_BR": {
+     "t": "Comer na França",
+     "g": "Descubra a sequência de pratos, o pão na toalha e o prazer de uma boa conversa na França.",
+     "p": [
+      "Uma refeição francesa costuma ir do aperitivo à entrada, ao prato principal, ao queijo e à sobremesa, sem pressa.",
+      "O pão fica na toalha ao lado do prato, as mãos ficam à vista sobre a mesa e o vinho é servido pelo anfitrião.",
+      "As refeições são para conversar, então deixar o celular de lado e bater um papo animado faz parte das boas maneiras."
+     ],
+     "q": "De qual parte de uma refeição longa e tranquila você mais gosta?",
+     "c": "Faça esta semana uma refeição sem celular e aproveite uma conversa calma com alguém."
+    }
+   }
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: at the table",
+     "g": "Recap table manners, toasts, tipping and paying from the past month.",
+     "p": [
+      "Wait for the host, taste before seasoning, pace yourself with others and share dishes fairly.",
+      "Know local customs for chopsticks, hands, bread, slurping and finishing your plate.",
+      "Toast warmly, check tipping customs before you go and agree early on how the bill will be paid."
+     ],
+     "q": "Which table custom from this month surprised you the most?",
+     "c": "At your next meal, use three things you learned this month and notice how the meal feels."
+    },
+    "de": {
+     "t": "Rückblick: bei Tisch",
+     "g": "Wiederhole Tischmanieren, Anstoßen, Trinkgeld und Bezahlen aus dem letzten Monat.",
+     "p": [
+      "Warte auf den Gastgeber, probiere vor dem Würzen, iss im Tempo der anderen und teile Gerichte fair.",
+      "Kenne die örtlichen Bräuche zu Stäbchen, Händen, Brot, Schlürfen und leeren Tellern.",
+      "Stoß herzlich an, informiere dich vorab über Trinkgeld und kläre früh, wie die Rechnung bezahlt wird."
+     ],
+     "q": "Welcher Tischbrauch aus diesem Monat hat dich am meisten überrascht?",
+     "c": "Nutze bei deiner nächsten Mahlzeit drei Dinge, die du diesen Monat gelernt hast, und achte darauf, wie sie sich anfühlt."
+    },
+    "es": {
+     "t": "Repaso: en la mesa",
+     "g": "Repasa los modales en la mesa, los brindis, las propinas y el pago del último mes.",
+     "p": [
+      "Espera al anfitrión, prueba antes de condimentar, sigue el ritmo de los demás y comparte los platos con justicia.",
+      "Conoce las costumbres locales sobre palillos, manos, pan, sorber y terminar el plato.",
+      "Brinda con calidez, infórmate de las propinas antes de ir y acordad pronto cómo se pagará la cuenta."
+     ],
+     "q": "¿Qué costumbre en la mesa de este mes te sorprendió más?",
+     "c": "En tu próxima comida, usa tres cosas que aprendiste este mes y fíjate en cómo se vive la comida."
+    },
+    "fr": {
+     "t": "Révision : à table",
+     "g": "Révise les manières de table, les toasts, le pourboire et l'addition vus ce mois-ci.",
+     "p": [
+      "Attends l'hôte, goûte avant d'assaisonner, mange au rythme des autres et partage les plats équitablement.",
+      "Connais les usages locaux pour les baguettes, les mains, le pain, les bruits de table et l'assiette finie.",
+      "Trinque avec chaleur, renseigne-toi sur le pourboire avant de partir et convenez tôt de la façon de payer."
+     ],
+     "q": "Quelle coutume de table de ce mois t'a le plus surpris ?",
+     "c": "À ton prochain repas, applique trois choses apprises ce mois-ci et observe comment se passe le repas."
+    },
+    "it": {
+     "t": "Ripasso: a tavola",
+     "g": "Ripassa buone maniere a tavola, brindisi, mance e pagamento dell'ultimo mese.",
+     "p": [
+      "Aspetta chi ospita, assaggia prima di condire, segui il ritmo degli altri e condividi i piatti in modo giusto.",
+      "Conosci le usanze locali su bacchette, mani, pane, risucchi e piatto finito.",
+      "Brinda con calore, informati sulle mance prima di andare e decidete presto come pagare il conto."
+     ],
+     "q": "Quale usanza a tavola di questo mese ti ha sorpreso di più?",
+     "c": "Al prossimo pasto usa tre cose che hai imparato questo mese e osserva come cambia il pasto."
+    },
+    "pt": {
+     "t": "Revisão: à mesa",
+     "g": "Revê as boas maneiras à mesa, os brindes, as gorjetas e o pagamento do último mês.",
+     "p": [
+      "Espera pelo anfitrião, prova antes de temperar, acompanha o ritmo dos outros e partilha os pratos com justiça.",
+      "Conhece os costumes locais sobre pauzinhos, mãos, pão, sorver e acabar o prato.",
+      "Brinda com calor, informa-te sobre gorjetas antes de ires e combinem cedo como a conta será paga."
+     ],
+     "q": "Que costume à mesa deste mês te surpreendeu mais?",
+     "c": "Na próxima refeição, usa três coisas que aprendeste este mês e repara como corre a refeição."
+    },
+    "pt_BR": {
+     "t": "Revisão: à mesa",
+     "g": "Revise as boas maneiras à mesa, os brindes, as gorjetas e o pagamento do último mês.",
+     "p": [
+      "Espere o anfitrião, prove antes de temperar, acompanhe o ritmo dos outros e divida os pratos com justiça.",
+      "Conheça os costumes locais sobre hashis, mãos, pão, sorver e raspar o prato.",
+      "Brinde com carinho, pesquise as gorjetas antes de ir e combinem cedo como a conta será paga."
+     ],
+     "q": "Qual costume à mesa deste mês mais surpreendeu você?",
+     "c": "Na próxima refeição, use três coisas que você aprendeu este mês e repare em como a refeição flui."
+    }
+   }
+  }
+ ]
+}

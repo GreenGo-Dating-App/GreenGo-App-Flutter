@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_english",
+ "lessons": [
+  {
+   "d": 341,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Ethics in technology",
+     "g": "Discuss big questions about technology: privacy, fairness and responsibility.",
+     "p": [
+      "Key words: privacy (keeping personal data safe), consent (permission), fairness, transparency, accountability.",
+      "Raise questions: Who should be responsible if...? Is it fair that...? To what extent should companies...?",
+      "Balance views: On the one hand, apps make life easier; on the other hand, they collect a lot of data."
+     ],
+     "q": "How much personal information are you comfortable sharing online, and where do you draw the line?",
+     "c": "Write three balanced sentences about smartphones using privacy, consent and on the other hand."
+    },
+    "de": {
+     "t": "Ethik in der Technologie",
+     "g": "Du diskutierst große Fragen der Technik: Privatsphäre, Fairness und Verantwortung.",
+     "p": [
+      "Schlüsselwörter: privacy (Datenschutz), consent (Einwilligung), fairness, transparency, accountability.",
+      "Fragen stellen: Who should be responsible if...? Is it fair that...? To what extent should companies...?",
+      "Abwägen: On the one hand, apps make life easier; on the other hand, they collect a lot of data."
+     ],
+     "q": "Wie viele persönliche Infos teilst du online, und wo ziehst du die Grenze?",
+     "c": "Schreib drei ausgewogene Sätze über Smartphones mit privacy, consent und on the other hand."
+    },
+    "es": {
+     "t": "Ética en la tecnología",
+     "g": "Debate grandes preguntas sobre tecnología: privacidad, justicia y responsabilidad.",
+     "p": [
+      "Palabras clave: privacy (proteger datos personales), consent (permiso), fairness, transparency, accountability.",
+      "Plantea preguntas: Who should be responsible if...? Is it fair that...? To what extent should companies...?",
+      "Equilibra: On the one hand, apps make life easier; on the other hand, they collect a lot of data."
+     ],
+     "q": "¿Cuánta información personal te parece bien compartir en internet y dónde pones el límite?",
+     "c": "Escribe tres frases equilibradas sobre los móviles con privacy, consent y on the other hand."
+    },
+    "fr": {
+     "t": "L'éthique des technologies",
+     "g": "Discute des grandes questions technologiques : vie privée, équité et responsabilité.",
+     "p": [
+      "Mots clés : privacy (protection des données), consent (accord), fairness, transparency, accountability.",
+      "Pose des questions : Who should be responsible if...? Is it fair that...? To what extent should companies...?",
+      "Nuance : On the one hand, apps make life easier; on the other hand, they collect a lot of data."
+     ],
+     "q": "Quelle quantité d'informations personnelles acceptes-tu de partager en ligne, et où places-tu la limite ?",
+     "c": "Écris trois phrases nuancées sur les smartphones avec privacy, consent et on the other hand."
+    },
+    "it": {
+     "t": "Etica e tecnologia",
+     "g": "Discuti grandi domande sulla tecnologia: privacy, equità e responsabilità.",
+     "p": [
+      "Parole chiave: privacy (protezione dei dati), consent (consenso), fairness, transparency, accountability.",
+      "Poni domande: Who should be responsible if...? Is it fair that...? To what extent should companies...?",
+      "Bilancia: On the one hand, apps make life easier; on the other hand, they collect a lot of data."
+     ],
+     "q": "Quante informazioni personali ti senti a tuo agio a condividere online, e dove metti il limite?",
+     "c": "Scrivi tre frasi equilibrate sugli smartphone con privacy, consent e on the other hand."
+    },
+    "pt": {
+     "t": "Ética na tecnologia",
+     "g": "Discute grandes questões sobre tecnologia: privacidade, justiça e responsabilidade.",
+     "p": [
+      "Palavras-chave: privacy (proteger dados pessoais), consent (consentimento), fairness, transparency, accountability.",
+      "Faz perguntas: Who should be responsible if...? Is it fair that...? To what extent should companies...?",
+      "Equilibra: On the one hand, apps make life easier; on the other hand, they collect a lot of data."
+     ],
+     "q": "Quanta informação pessoal te sentes à vontade para partilhar online, e onde pões o limite?",
+     "c": "Escreve três frases equilibradas sobre smartphones com privacy, consent e on the other hand."
+    },
+    "pt_BR": {
+     "t": "Ética na tecnologia",
+     "g": "Discuta grandes questões sobre tecnologia: privacidade, justiça e responsabilidade.",
+     "p": [
+      "Palavras-chave: privacy (proteger dados pessoais), consent (consentimento), fairness, transparency, accountability.",
+      "Faça perguntas: Who should be responsible if...? Is it fair that...? To what extent should companies...?",
+      "Equilibre: On the one hand, apps make life easier; on the other hand, they collect a lot of data."
+     ],
+     "q": "Quanta informação pessoal você se sente à vontade para compartilhar online, e onde coloca o limite?",
+     "c": "Escreva três frases equilibradas sobre smartphones com privacy, consent e on the other hand."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "privacy",
+      "ex": "Many people worry about their online privacy."
+     },
+     {
+      "w": "consent",
+      "ex": "Apps should ask for your consent before using data."
+     },
+     {
+      "w": "fairness",
+      "ex": "Fairness matters when computers make decisions."
+     },
+     {
+      "w": "transparency",
+      "ex": "Users want more transparency about how data is used."
+     },
+     {
+      "w": "accountability",
+      "ex": "There must be accountability when things go wrong."
+     },
+     {
+      "w": "to what extent",
+      "ex": "To what extent should technology shape our lives?"
+     }
+    ],
+    "gram": "Discussion language: To what extent...? Who should be responsible if...? Balanced views with on the one hand / on the other hand."
+   }
+  },
+  {
+   "d": 342,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Artificial intelligence and the future",
+     "g": "Talk about AI: automation, algorithms, benefits and challenges.",
+     "p": [
+      "Key words: artificial intelligence, an algorithm (a set of rules a computer follows), automation, data, machine learning.",
+      "Benefits: AI can help doctors analyse scans, translate languages and save time on repetitive tasks.",
+      "Challenges: jobs may change, systems can make mistakes, and people need new skills. Use will, may and might."
+     ],
+     "q": "How do you already use AI in daily life, and what would you like it to help you with in the future?",
+     "c": "Write two predictions about AI: one positive with will, one cautious with might."
+    },
+    "de": {
+     "t": "Künstliche Intelligenz und Zukunft",
+     "g": "Du sprichst über KI: Automatisierung, Algorithmen, Chancen und Herausforderungen.",
+     "p": [
+      "Schlüsselwörter: artificial intelligence, an algorithm (Regeln, denen ein Computer folgt), automation, data, machine learning.",
+      "Chancen: KI kann Ärzten bei der Auswertung von Bildern helfen, Sprachen übersetzen und Routinearbeit sparen.",
+      "Herausforderungen: Jobs verändern sich, Systeme machen Fehler, Menschen brauchen neue Fähigkeiten. Nutze will, may und might."
+     ],
+     "q": "Wie nutzt du KI schon im Alltag, und wobei soll sie dir in Zukunft helfen?",
+     "c": "Schreib zwei Vorhersagen über KI: eine positive mit will, eine vorsichtige mit might."
+    },
+    "es": {
+     "t": "La inteligencia artificial y el futuro",
+     "g": "Habla de la IA: automatización, algoritmos, ventajas y retos.",
+     "p": [
+      "Palabras clave: artificial intelligence, an algorithm (reglas que sigue un ordenador), automation, data, machine learning.",
+      "Ventajas: la IA puede ayudar a los médicos a analizar imágenes, traducir idiomas y ahorrar tareas repetitivas.",
+      "Retos: los empleos cambiarán, los sistemas pueden equivocarse y hacen falta nuevas habilidades. Usa will, may y might."
+     ],
+     "q": "¿Cómo usas ya la IA en tu día a día y en qué te gustaría que te ayudara en el futuro?",
+     "c": "Escribe dos predicciones sobre la IA: una positiva con will y otra prudente con might."
+    },
+    "fr": {
+     "t": "L'intelligence artificielle et l'avenir",
+     "g": "Parle de l'IA : automatisation, algorithmes, avantages et défis.",
+     "p": [
+      "Mots clés : artificial intelligence, an algorithm (règles suivies par un ordinateur), automation, data, machine learning.",
+      "Avantages : l'IA peut aider les médecins à analyser des images, traduire des langues et éviter les tâches répétitives.",
+      "Défis : les métiers vont évoluer, les systèmes peuvent se tromper, il faut de nouvelles compétences. Utilise will, may, might."
+     ],
+     "q": "Comment utilises-tu déjà l'IA au quotidien, et en quoi aimerais-tu qu'elle t'aide à l'avenir ?",
+     "c": "Écris deux prédictions sur l'IA : une positive avec will, une prudente avec might."
+    },
+    "it": {
+     "t": "Intelligenza artificiale e futuro",
+     "g": "Parla dell'IA: automazione, algoritmi, vantaggi e sfide.",
+     "p": [
+      "Parole chiave: artificial intelligence, an algorithm (regole che un computer segue), automation, data, machine learning.",
+      "Vantaggi: l'IA può aiutare i medici ad analizzare immagini, tradurre lingue e risparmiare lavori ripetitivi.",
+      "Sfide: i lavori cambieranno, i sistemi possono sbagliare e servono nuove competenze. Usa will, may e might."
+     ],
+     "q": "Come usi già l'IA nella vita quotidiana, e in cosa vorresti che ti aiutasse in futuro?",
+     "c": "Scrivi due previsioni sull'IA: una positiva con will e una prudente con might."
+    },
+    "pt": {
+     "t": "A inteligência artificial e o futuro",
+     "g": "Fala de IA: automação, algoritmos, vantagens e desafios.",
+     "p": [
+      "Palavras-chave: artificial intelligence, an algorithm (regras que um computador segue), automation, data, machine learning.",
+      "Vantagens: a IA pode ajudar os médicos a analisar exames, traduzir línguas e poupar tarefas repetitivas.",
+      "Desafios: os empregos vão mudar, os sistemas podem errar e são precisas novas competências. Usa will, may e might."
+     ],
+     "q": "Como já usas a IA no dia a dia, e em que gostavas que te ajudasse no futuro?",
+     "c": "Escreve duas previsões sobre a IA: uma positiva com will e uma prudente com might."
+    },
+    "pt_BR": {
+     "t": "A inteligência artificial e o futuro",
+     "g": "Fale de IA: automação, algoritmos, vantagens e desafios.",
+     "p": [
+      "Palavras-chave: artificial intelligence, an algorithm (regras que um computador segue), automation, data, machine learning.",
+      "Vantagens: a IA pode ajudar médicos a analisar exames, traduzir idiomas e poupar tarefas repetitivas.",
+      "Desafios: empregos vão mudar, sistemas podem errar e serão necessárias novas habilidades. Use will, may e might."
+     ],
+     "q": "Como você já usa IA no dia a dia, e em que gostaria que ela te ajudasse no futuro?",
+     "c": "Escreva duas previsões sobre IA: uma positiva com will e uma cautelosa com might."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "artificial intelligence",
+      "ex": "Artificial intelligence is changing many industries."
+     },
+     {
+      "w": "algorithm",
+      "ex": "The algorithm suggests songs I might like."
+     },
+     {
+      "w": "automation",
+      "ex": "Automation has made factories much faster."
+     },
+     {
+      "w": "machine learning",
+      "ex": "Machine learning helps apps improve over time."
+     },
+     {
+      "w": "repetitive tasks",
+      "ex": "AI can take over boring, repetitive tasks."
+     },
+     {
+      "w": "in the long run",
+      "ex": "In the long run, we'll all need digital skills."
+     }
+    ],
+    "gram": "Predictions: will (certain), may/might (possible), is likely to (probable); future continuous for ongoing change (we'll be working with AI)."
+   }
+  },
+  {
+   "d": 343,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Urban planning and cities",
+     "g": "Discuss how cities could improve: green spaces, public transport and smart cities.",
+     "p": [
+      "Key words: green spaces, pedestrian zones, cycle lanes, public transport, affordable housing, a smart city.",
+      "Suggest changes with second conditional: If my city had more cycle lanes, more people would cycle.",
+      "Use should and could: The council should plant more trees. They could turn car parks into parks."
+     ],
+     "q": "What would you change in your city or town if you were the mayor for one day?",
+     "c": "Write three suggestions for your city using should, could and a second conditional sentence."
+    },
+    "de": {
+     "t": "Stadtplanung und Städte",
+     "g": "Du diskutierst, wie Städte besser werden könnten: Grünflächen, Nahverkehr und Smart Cities.",
+     "p": [
+      "Schlüsselwörter: green spaces, pedestrian zones, cycle lanes, public transport, affordable housing, a smart city.",
+      "Veränderungen mit dem second conditional: If my city had more cycle lanes, more people would cycle.",
+      "Mit should und could: The council should plant more trees. They could turn car parks into parks."
+     ],
+     "q": "Was würdest du in deiner Stadt ändern, wenn du für einen Tag Bürgermeister wärst?",
+     "c": "Schreib drei Vorschläge für deine Stadt mit should, could und einem second conditional."
+    },
+    "es": {
+     "t": "Urbanismo y ciudades",
+     "g": "Debate cómo podrían mejorar las ciudades: zonas verdes, transporte público y ciudades inteligentes.",
+     "p": [
+      "Palabras clave: green spaces, pedestrian zones, cycle lanes, public transport, affordable housing, a smart city.",
+      "Propón cambios con el second conditional: If my city had more cycle lanes, more people would cycle.",
+      "Usa should y could: The council should plant more trees. They could turn car parks into parks."
+     ],
+     "q": "¿Qué cambiarías en tu ciudad o pueblo si fueras alcalde por un día?",
+     "c": "Escribe tres propuestas para tu ciudad con should, could y una frase de second conditional."
+    },
+    "fr": {
+     "t": "Urbanisme et villes",
+     "g": "Discute de l'amélioration des villes : espaces verts, transports en commun et villes intelligentes.",
+     "p": [
+      "Mots clés : green spaces, pedestrian zones, cycle lanes, public transport, affordable housing, a smart city.",
+      "Propose des changements avec le second conditional : If my city had more cycle lanes, more people would cycle.",
+      "Utilise should et could : The council should plant more trees. They could turn car parks into parks."
+     ],
+     "q": "Que changerais-tu dans ta ville si tu étais maire pendant une journée ?",
+     "c": "Écris trois propositions pour ta ville avec should, could et une phrase au second conditional."
+    },
+    "it": {
+     "t": "Urbanistica e città",
+     "g": "Discuti come potrebbero migliorare le città: spazi verdi, trasporti pubblici e smart city.",
+     "p": [
+      "Parole chiave: green spaces, pedestrian zones, cycle lanes, public transport, affordable housing, a smart city.",
+      "Proponi cambiamenti con il second conditional: If my city had more cycle lanes, more people would cycle.",
+      "Usa should e could: The council should plant more trees. They could turn car parks into parks."
+     ],
+     "q": "Cosa cambieresti nella tua città se fossi sindaco per un giorno?",
+     "c": "Scrivi tre proposte per la tua città con should, could e una frase al second conditional."
+    },
+    "pt": {
+     "t": "Urbanismo e cidades",
+     "g": "Discute como as cidades podiam melhorar: espaços verdes, transportes públicos e cidades inteligentes.",
+     "p": [
+      "Palavras-chave: green spaces, pedestrian zones, cycle lanes, public transport, affordable housing, a smart city.",
+      "Propõe mudanças com o second conditional: If my city had more cycle lanes, more people would cycle.",
+      "Usa should e could: The council should plant more trees. They could turn car parks into parks."
+     ],
+     "q": "O que mudarias na tua cidade ou vila se fosses presidente da câmara por um dia?",
+     "c": "Escreve três propostas para a tua cidade com should, could e uma frase de second conditional."
+    },
+    "pt_BR": {
+     "t": "Urbanismo e cidades",
+     "g": "Discuta como as cidades poderiam melhorar: áreas verdes, transporte público e cidades inteligentes.",
+     "p": [
+      "Palavras-chave: green spaces, pedestrian zones, cycle lanes, public transport, affordable housing, a smart city.",
+      "Proponha mudanças com o second conditional: If my city had more cycle lanes, more people would cycle.",
+      "Use should e could: The council should plant more trees. They could turn car parks into parks."
+     ],
+     "q": "O que você mudaria na sua cidade se fosse prefeito por um dia?",
+     "c": "Escreva três propostas para sua cidade com should, could e uma frase de second conditional."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "green spaces",
+      "ex": "Our city needs more green spaces for families."
+     },
+     {
+      "w": "pedestrian zone",
+      "ex": "The old town is now a pedestrian zone."
+     },
+     {
+      "w": "cycle lane",
+      "ex": "A new cycle lane runs along the river."
+     },
+     {
+      "w": "public transport",
+      "ex": "Public transport here is cheap and reliable."
+     },
+     {
+      "w": "affordable housing",
+      "ex": "Young people need more affordable housing."
+     },
+     {
+      "w": "smart city",
+      "ex": "In a smart city, traffic lights adapt to traffic."
+     }
+    ],
+    "gram": "Suggestions: should/could + base verb; second conditional (If we had..., we would...) for imagined improvements."
+   }
+  },
+  {
+   "d": 344,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Space exploration",
+     "g": "Talk about space: astronaut, orbit, mission, telescope and the Moon landing.",
+     "p": [
+      "Key words: an astronaut, a mission, a rocket, to orbit the Earth, a space station, a telescope, a planet.",
+      "History: In 1969, Neil Armstrong became the first person to walk on the Moon during the Apollo 11 mission.",
+      "Future and wonder: Scientists hope to send people to Mars. Would you like to travel into space one day?"
+     ],
+     "q": "If you could join a space mission, where would you go and what would you take with you?",
+     "c": "Write a short paragraph about a famous space event using past simple and two words from today."
+    },
+    "de": {
+     "t": "Raumfahrt",
+     "g": "Du sprichst über das All: astronaut, orbit, mission, telescope und die Mondlandung.",
+     "p": [
+      "Schlüsselwörter: an astronaut, a mission, a rocket, to orbit the Earth, a space station, a telescope, a planet.",
+      "Geschichte: 1969 betrat Neil Armstrong bei der Mission Apollo 11 als erster Mensch den Mond.",
+      "Zukunft und Staunen: Scientists hope to send people to Mars. Would you like to travel into space one day?"
+     ],
+     "q": "Wenn du an einer Weltraummission teilnehmen könntest: Wohin würdest du fliegen, und was nähmst du mit?",
+     "c": "Schreib einen kurzen Absatz über ein berühmtes Weltraumereignis im past simple mit zwei Wörtern von heute."
+    },
+    "es": {
+     "t": "La exploración espacial",
+     "g": "Habla del espacio: astronaut, orbit, mission, telescope y la llegada a la Luna.",
+     "p": [
+      "Palabras clave: an astronaut, a mission, a rocket, to orbit the Earth, a space station, a telescope, a planet.",
+      "Historia: en 1969, Neil Armstrong fue la primera persona en pisar la Luna durante la misión Apolo 11.",
+      "Futuro y asombro: Scientists hope to send people to Mars. Would you like to travel into space one day?"
+     ],
+     "q": "Si pudieras unirte a una misión espacial, ¿adónde irías y qué te llevarías?",
+     "c": "Escribe un párrafo corto sobre un hecho espacial famoso en past simple con dos palabras de hoy."
+    },
+    "fr": {
+     "t": "L'exploration spatiale",
+     "g": "Parle de l'espace : astronaut, orbit, mission, telescope et les premiers pas sur la Lune.",
+     "p": [
+      "Mots clés : an astronaut, a mission, a rocket, to orbit the Earth, a space station, a telescope, a planet.",
+      "Histoire : en 1969, Neil Armstrong est devenu le premier homme à marcher sur la Lune lors de la mission Apollo 11.",
+      "Avenir et émerveillement : Scientists hope to send people to Mars. Would you like to travel into space one day?"
+     ],
+     "q": "Si tu pouvais participer à une mission spatiale, où irais-tu et qu'emporterais-tu ?",
+     "c": "Écris un court paragraphe sur un événement spatial célèbre au past simple avec deux mots du jour."
+    },
+    "it": {
+     "t": "L'esplorazione spaziale",
+     "g": "Parla dello spazio: astronaut, orbit, mission, telescope e lo sbarco sulla Luna.",
+     "p": [
+      "Parole chiave: an astronaut, a mission, a rocket, to orbit the Earth, a space station, a telescope, a planet.",
+      "Storia: nel 1969 Neil Armstrong fu il primo uomo a camminare sulla Luna durante la missione Apollo 11.",
+      "Futuro e meraviglia: Scientists hope to send people to Mars. Would you like to travel into space one day?"
+     ],
+     "q": "Se potessi partecipare a una missione spaziale, dove andresti e cosa porteresti con te?",
+     "c": "Scrivi un breve paragrafo su un evento spaziale famoso al past simple con due parole di oggi."
+    },
+    "pt": {
+     "t": "A exploração espacial",
+     "g": "Fala do espaço: astronaut, orbit, mission, telescope e a chegada à Lua.",
+     "p": [
+      "Palavras-chave: an astronaut, a mission, a rocket, to orbit the Earth, a space station, a telescope, a planet.",
+      "História: em 1969, Neil Armstrong foi a primeira pessoa a andar na Lua, durante a missão Apollo 11.",
+      "Futuro e fascínio: Scientists hope to send people to Mars. Would you like to travel into space one day?"
+     ],
+     "q": "Se pudesses participar numa missão espacial, para onde irias e o que levarias?",
+     "c": "Escreve um parágrafo curto sobre um acontecimento espacial famoso no past simple com duas palavras de hoje."
+    },
+    "pt_BR": {
+     "t": "A exploração espacial",
+     "g": "Fale do espaço: astronaut, orbit, mission, telescope e a chegada à Lua.",
+     "p": [
+      "Palavras-chave: an astronaut, a mission, a rocket, to orbit the Earth, a space station, a telescope, a planet.",
+      "História: em 1969, Neil Armstrong foi a primeira pessoa a andar na Lua, durante a missão Apollo 11.",
+      "Futuro e fascínio: Scientists hope to send people to Mars. Would you like to travel into space one day?"
+     ],
+     "q": "Se você pudesse participar de uma missão espacial, para onde iria e o que levaria?",
+     "c": "Escreva um parágrafo curto sobre um evento espacial famoso no past simple com duas palavras de hoje."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "astronaut",
+      "ex": "The astronaut spent six months in space."
+     },
+     {
+      "w": "orbit",
+      "ex": "The space station orbits the Earth every 90 minutes."
+     },
+     {
+      "w": "mission",
+      "ex": "The mission to the Moon was a huge success."
+     },
+     {
+      "w": "telescope",
+      "ex": "We looked at Saturn through a telescope."
+     },
+     {
+      "w": "the Moon landing",
+      "ex": "The Moon landing took place in 1969."
+     },
+     {
+      "w": "launch",
+      "ex": "The rocket will launch early tomorrow morning."
+     }
+    ],
+    "gram": "Past simple for historical events (Armstrong walked on the Moon in 1969); hope to / plan to + verb for future missions."
+   }
+  },
+  {
+   "d": 345,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Health and modern lifestyles",
+     "g": "Discuss modern habits in general terms: screen time, balance and an active lifestyle.",
+     "p": [
+      "Key words: screen time, a sedentary lifestyle, work-life balance, an active lifestyle, wellbeing, a healthy routine.",
+      "Talk about habits: I tend to spend too long on my phone. I've started walking to work. I try to switch off at night.",
+      "Give general tips, not medical advice: It's often a good idea to take regular breaks. Many people find walking helps."
+     ],
+     "q": "What is one healthy habit you have, and one modern habit you would like to change?",
+     "c": "Write about your daily routine in four sentences using screen time, balance, tend to and I've started."
+    },
+    "de": {
+     "t": "Gesundheit und moderner Lebensstil",
+     "g": "Du sprichst allgemein über moderne Gewohnheiten: Bildschirmzeit, Ausgleich und aktiver Lebensstil.",
+     "p": [
+      "Schlüsselwörter: screen time, a sedentary lifestyle, work-life balance, an active lifestyle, wellbeing, a healthy routine.",
+      "Über Gewohnheiten reden: I tend to spend too long on my phone. I've started walking to work. I try to switch off at night.",
+      "Allgemeine Tipps, keine medizinischen Ratschläge: It's often a good idea to take regular breaks. Many people find walking helps."
+     ],
+     "q": "Welche gesunde Gewohnheit hast du, und welche moderne Angewohnheit würdest du gern ändern?",
+     "c": "Beschreibe deinen Tagesablauf in vier Sätzen mit screen time, balance, tend to und I've started."
+    },
+    "es": {
+     "t": "Salud y estilos de vida modernos",
+     "g": "Habla en términos generales de hábitos modernos: tiempo de pantalla, equilibrio y vida activa.",
+     "p": [
+      "Palabras clave: screen time, a sedentary lifestyle, work-life balance, an active lifestyle, wellbeing, a healthy routine.",
+      "Habla de hábitos: I tend to spend too long on my phone. I've started walking to work. I try to switch off at night.",
+      "Da consejos generales, no médicos: It's often a good idea to take regular breaks. Many people find walking helps."
+     ],
+     "q": "¿Qué hábito saludable tienes y qué hábito moderno te gustaría cambiar?",
+     "c": "Describe tu rutina diaria en cuatro frases con screen time, balance, tend to y I've started."
+    },
+    "fr": {
+     "t": "Santé et modes de vie modernes",
+     "g": "Parle de façon générale des habitudes modernes : temps d'écran, équilibre et vie active.",
+     "p": [
+      "Mots clés : screen time, a sedentary lifestyle, work-life balance, an active lifestyle, wellbeing, a healthy routine.",
+      "Parle d'habitudes : I tend to spend too long on my phone. I've started walking to work. I try to switch off at night.",
+      "Des conseils généraux, pas médicaux : It's often a good idea to take regular breaks. Many people find walking helps."
+     ],
+     "q": "Quelle bonne habitude as-tu, et quelle habitude moderne aimerais-tu changer ?",
+     "c": "Décris ta routine quotidienne en quatre phrases avec screen time, balance, tend to et I've started."
+    },
+    "it": {
+     "t": "Salute e stili di vita moderni",
+     "g": "Parla in termini generali di abitudini moderne: tempo davanti allo schermo, equilibrio e vita attiva.",
+     "p": [
+      "Parole chiave: screen time, a sedentary lifestyle, work-life balance, an active lifestyle, wellbeing, a healthy routine.",
+      "Parla di abitudini: I tend to spend too long on my phone. I've started walking to work. I try to switch off at night.",
+      "Consigli generali, non medici: It's often a good idea to take regular breaks. Many people find walking helps."
+     ],
+     "q": "Qual è una tua abitudine sana, e quale abitudine moderna vorresti cambiare?",
+     "c": "Descrivi la tua routine in quattro frasi con screen time, balance, tend to e I've started."
+    },
+    "pt": {
+     "t": "Saúde e estilos de vida modernos",
+     "g": "Fala em termos gerais de hábitos modernos: tempo de ecrã, equilíbrio e vida ativa.",
+     "p": [
+      "Palavras-chave: screen time, a sedentary lifestyle, work-life balance, an active lifestyle, wellbeing, a healthy routine.",
+      "Fala de hábitos: I tend to spend too long on my phone. I've started walking to work. I try to switch off at night.",
+      "Dá dicas gerais, não médicas: It's often a good idea to take regular breaks. Many people find walking helps."
+     ],
+     "q": "Que hábito saudável tens, e que hábito moderno gostavas de mudar?",
+     "c": "Descreve a tua rotina diária em quatro frases com screen time, balance, tend to e I've started."
+    },
+    "pt_BR": {
+     "t": "Saúde e estilos de vida modernos",
+     "g": "Fale em termos gerais de hábitos modernos: tempo de tela, equilíbrio e vida ativa.",
+     "p": [
+      "Palavras-chave: screen time, a sedentary lifestyle, work-life balance, an active lifestyle, wellbeing, a healthy routine.",
+      "Fale de hábitos: I tend to spend too long on my phone. I've started walking to work. I try to switch off at night.",
+      "Dê dicas gerais, não médicas: It's often a good idea to take regular breaks. Many people find walking helps."
+     ],
+     "q": "Que hábito saudável você tem, e que hábito moderno gostaria de mudar?",
+     "c": "Descreva sua rotina diária em quatro frases com screen time, balance, tend to e I've started."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "screen time",
+      "ex": "I'm trying to reduce my screen time in the evening."
+     },
+     {
+      "w": "work-life balance",
+      "ex": "A good work-life balance makes people happier."
+     },
+     {
+      "w": "an active lifestyle",
+      "ex": "Cycling to work is part of my active lifestyle."
+     },
+     {
+      "w": "sedentary",
+      "ex": "Office jobs can be quite sedentary."
+     },
+     {
+      "w": "wellbeing",
+      "ex": "Spending time outdoors is good for wellbeing."
+     },
+     {
+      "w": "switch off",
+      "ex": "I switch off my phone an hour before bed."
+     }
+    ],
+    "gram": "Habits: tend to + verb (general tendency), I've started + -ing (new habit), try to + verb (effort); give tips with It's a good idea to."
+   }
+  },
+  {
+   "d": 346,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Global travel and tourism",
+     "g": "Discuss travel trends: overtourism, eco-friendly travel and hidden gems.",
+     "p": [
+      "Key words: overtourism (too many visitors), a hidden gem, off the beaten track, eco-friendly travel, the local economy.",
+      "Compare: Travelling by train is more eco-friendly than flying. Visiting in low season is less crowded.",
+      "Recommend: If you get the chance, visit... It's well worth a visit. Try to support local businesses."
+     ],
+     "q": "What is a hidden gem you know, a place few tourists visit but everyone should see?",
+     "c": "Write a short travel tip about a place you love using off the beaten track and well worth a visit."
+    },
+    "de": {
+     "t": "Reisen und Tourismus weltweit",
+     "g": "Du diskutierst Reisetrends: Overtourism, umweltfreundliches Reisen und Geheimtipps.",
+     "p": [
+      "Schlüsselwörter: overtourism (zu viele Besucher), a hidden gem, off the beaten track, eco-friendly travel, the local economy.",
+      "Vergleichen: Travelling by train is more eco-friendly than flying. Visiting in low season is less crowded.",
+      "Empfehlen: If you get the chance, visit... It's well worth a visit. Try to support local businesses."
+     ],
+     "q": "Welchen Geheimtipp kennst du, einen Ort mit wenigen Touristen, den jeder sehen sollte?",
+     "c": "Schreib einen kurzen Reisetipp zu einem Lieblingsort mit off the beaten track und well worth a visit."
+    },
+    "es": {
+     "t": "Viajes y turismo global",
+     "g": "Debate tendencias de viaje: turismo masivo, viajes sostenibles y joyas escondidas.",
+     "p": [
+      "Palabras clave: overtourism (exceso de visitantes), a hidden gem, off the beaten track, eco-friendly travel, the local economy.",
+      "Compara: Travelling by train is more eco-friendly than flying. Visiting in low season is less crowded.",
+      "Recomienda: If you get the chance, visit... It's well worth a visit. Try to support local businesses."
+     ],
+     "q": "¿Qué joya escondida conoces, un lugar con pocos turistas que todo el mundo debería ver?",
+     "c": "Escribe un consejo de viaje sobre un lugar que te encanta con off the beaten track y well worth a visit."
+    },
+    "fr": {
+     "t": "Voyages et tourisme dans le monde",
+     "g": "Discute des tendances du voyage : surtourisme, voyage écoresponsable et pépites cachées.",
+     "p": [
+      "Mots clés : overtourism (trop de visiteurs), a hidden gem, off the beaten track, eco-friendly travel, the local economy.",
+      "Compare : Travelling by train is more eco-friendly than flying. Visiting in low season is less crowded.",
+      "Recommande : If you get the chance, visit... It's well worth a visit. Try to support local businesses."
+     ],
+     "q": "Quelle pépite cachée connais-tu, un lieu peu touristique que tout le monde devrait voir ?",
+     "c": "Écris un petit conseil de voyage sur un lieu que tu aimes avec off the beaten track et well worth a visit."
+    },
+    "it": {
+     "t": "Viaggi e turismo nel mondo",
+     "g": "Discuti le tendenze di viaggio: overtourism, viaggi sostenibili e gioielli nascosti.",
+     "p": [
+      "Parole chiave: overtourism (troppi visitatori), a hidden gem, off the beaten track, eco-friendly travel, the local economy.",
+      "Confronta: Travelling by train is more eco-friendly than flying. Visiting in low season is less crowded.",
+      "Consiglia: If you get the chance, visit... It's well worth a visit. Try to support local businesses."
+     ],
+     "q": "Quale gioiello nascosto conosci, un posto con pochi turisti che tutti dovrebbero vedere?",
+     "c": "Scrivi un breve consiglio di viaggio su un posto che ami con off the beaten track e well worth a visit."
+    },
+    "pt": {
+     "t": "Viagens e turismo global",
+     "g": "Discute tendências de viagem: turismo excessivo, viagens sustentáveis e tesouros escondidos.",
+     "p": [
+      "Palavras-chave: overtourism (visitantes a mais), a hidden gem, off the beaten track, eco-friendly travel, the local economy.",
+      "Compara: Travelling by train is more eco-friendly than flying. Visiting in low season is less crowded.",
+      "Recomenda: If you get the chance, visit... It's well worth a visit. Try to support local businesses."
+     ],
+     "q": "Que tesouro escondido conheces, um lugar com poucos turistas que toda a gente devia ver?",
+     "c": "Escreve uma dica de viagem sobre um lugar de que gostas com off the beaten track e well worth a visit."
+    },
+    "pt_BR": {
+     "t": "Viagens e turismo global",
+     "g": "Discuta tendências de viagem: turismo excessivo, viagens sustentáveis e joias escondidas.",
+     "p": [
+      "Palavras-chave: overtourism (turistas demais), a hidden gem, off the beaten track, eco-friendly travel, the local economy.",
+      "Compare: Travelling by train is more eco-friendly than flying. Visiting in low season is less crowded.",
+      "Recomende: If you get the chance, visit... It's well worth a visit. Try to support local businesses."
+     ],
+     "q": "Que joia escondida você conhece, um lugar com poucos turistas que todo mundo deveria ver?",
+     "c": "Escreva uma dica de viagem sobre um lugar que você ama com off the beaten track e well worth a visit."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "overtourism",
+      "ex": "Some famous cities suffer from overtourism."
+     },
+     {
+      "w": "a hidden gem",
+      "ex": "This little beach is a real hidden gem."
+     },
+     {
+      "w": "off the beaten track",
+      "ex": "We stayed in a village off the beaten track."
+     },
+     {
+      "w": "eco-friendly",
+      "ex": "We chose an eco-friendly hotel with solar panels."
+     },
+     {
+      "w": "low season",
+      "ex": "Prices are lower in the low season."
+     },
+     {
+      "w": "well worth a visit",
+      "ex": "The old market is well worth a visit."
+     }
+    ],
+    "gram": "Comparatives for travel choices (more eco-friendly than, less crowded); recommendations with If you get the chance + imperative."
+   }
+  },
+  {
+   "d": 347,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Creativity and innovation",
+     "g": "Talk about new ideas: brainstorm, think outside the box, prototype.",
+     "p": [
+      "Process words: brainstorm ideas, think outside the box, come up with a concept, build a prototype, test and improve.",
+      "Describe ideas: It's innovative, original, groundbreaking. It's a game-changer. The idea was inspired by...",
+      "Encourage creativity: There are no bad ideas. What if we...? Let's build on that idea."
+     ],
+     "q": "When do you have your best ideas: in the shower, on a walk, or late at night? Tell me about one.",
+     "c": "Brainstorm five uses for an old umbrella, then pick the best one and describe it using innovative and prototype."
+    },
+    "de": {
+     "t": "Kreativität und Innovation",
+     "g": "Du sprichst über neue Ideen: brainstorm, think outside the box, prototype.",
+     "p": [
+      "Prozesswörter: brainstorm ideas, think outside the box, come up with a concept, build a prototype, test and improve.",
+      "Ideen beschreiben: It's innovative, original, groundbreaking. It's a game-changer. The idea was inspired by...",
+      "Kreativität fördern: There are no bad ideas. What if we...? Let's build on that idea."
+     ],
+     "q": "Wann hast du deine besten Ideen: unter der Dusche, beim Spazieren oder spät nachts? Erzähl von einer.",
+     "c": "Sammle fünf Verwendungen für einen alten Regenschirm, wähle die beste und beschreibe sie mit innovative und prototype."
+    },
+    "es": {
+     "t": "Creatividad e innovación",
+     "g": "Habla de nuevas ideas: brainstorm, think outside the box, prototype.",
+     "p": [
+      "Palabras del proceso: brainstorm ideas, think outside the box, come up with a concept, build a prototype, test and improve.",
+      "Describe ideas: It's innovative, original, groundbreaking. It's a game-changer. The idea was inspired by...",
+      "Fomenta la creatividad: There are no bad ideas. What if we...? Let's build on that idea."
+     ],
+     "q": "¿Cuándo tienes tus mejores ideas: en la ducha, paseando o de noche? Cuéntame una.",
+     "c": "Piensa cinco usos para un paraguas viejo, elige el mejor y descríbelo con innovative y prototype."
+    },
+    "fr": {
+     "t": "Créativité et innovation",
+     "g": "Parle de nouvelles idées : brainstorm, think outside the box, prototype.",
+     "p": [
+      "Mots du processus : brainstorm ideas, think outside the box, come up with a concept, build a prototype, test and improve.",
+      "Décrire des idées : It's innovative, original, groundbreaking. It's a game-changer. The idea was inspired by...",
+      "Encourager la créativité : There are no bad ideas. What if we...? Let's build on that idea."
+     ],
+     "q": "Quand as-tu tes meilleures idées : sous la douche, en marchant ou tard le soir ? Raconte-m'en une.",
+     "c": "Trouve cinq usages pour un vieux parapluie, choisis le meilleur et décris-le avec innovative et prototype."
+    },
+    "it": {
+     "t": "Creatività e innovazione",
+     "g": "Parla di nuove idee: brainstorm, think outside the box, prototype.",
+     "p": [
+      "Parole del processo: brainstorm ideas, think outside the box, come up with a concept, build a prototype, test and improve.",
+      "Descrivere idee: It's innovative, original, groundbreaking. It's a game-changer. The idea was inspired by...",
+      "Incoraggiare la creatività: There are no bad ideas. What if we...? Let's build on that idea."
+     ],
+     "q": "Quando ti vengono le idee migliori: sotto la doccia, passeggiando o a tarda notte? Raccontamene una.",
+     "c": "Trova cinque usi per un vecchio ombrello, scegli il migliore e descrivilo con innovative e prototype."
+    },
+    "pt": {
+     "t": "Criatividade e inovação",
+     "g": "Fala de novas ideias: brainstorm, think outside the box, prototype.",
+     "p": [
+      "Palavras do processo: brainstorm ideas, think outside the box, come up with a concept, build a prototype, test and improve.",
+      "Descrever ideias: It's innovative, original, groundbreaking. It's a game-changer. The idea was inspired by...",
+      "Incentivar a criatividade: There are no bad ideas. What if we...? Let's build on that idea."
+     ],
+     "q": "Quando tens as melhores ideias: no duche, a passear ou à noite? Conta-me uma.",
+     "c": "Pensa em cinco usos para um guarda-chuva velho, escolhe o melhor e descreve-o com innovative e prototype."
+    },
+    "pt_BR": {
+     "t": "Criatividade e inovação",
+     "g": "Fale de novas ideias: brainstorm, think outside the box, prototype.",
+     "p": [
+      "Palavras do processo: brainstorm ideas, think outside the box, come up with a concept, build a prototype, test and improve.",
+      "Descrever ideias: It's innovative, original, groundbreaking. It's a game-changer. The idea was inspired by...",
+      "Incentivar a criatividade: There are no bad ideas. What if we...? Let's build on that idea."
+     ],
+     "q": "Quando você tem as melhores ideias: no banho, caminhando ou tarde da noite? Conte uma.",
+     "c": "Pense em cinco usos para um guarda-chuva velho, escolha o melhor e descreva com innovative e prototype."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "brainstorm",
+      "ex": "Let's brainstorm ideas for the party."
+     },
+     {
+      "w": "think outside the box",
+      "ex": "To solve this, we need to think outside the box."
+     },
+     {
+      "w": "prototype",
+      "ex": "They built a simple prototype in a week."
+     },
+     {
+      "w": "innovative",
+      "ex": "It's an innovative way to recycle plastic."
+     },
+     {
+      "w": "a game-changer",
+      "ex": "The smartphone was a real game-changer."
+     },
+     {
+      "w": "build on",
+      "ex": "Great idea! Let's build on that."
+     }
+    ],
+    "gram": "Idea language: What if we + past or present? (What if we tried...?); let's + verb; passive for origins (was inspired by)."
+   }
+  },
+  {
+   "d": 348,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "The future of work",
+     "g": "Discuss how work is changing: hybrid work, new skills and flexible careers.",
+     "p": [
+      "Key words: hybrid work, remote work, a flexible career, freelance, upskilling, lifelong learning, a portfolio career.",
+      "Predict with future forms: More people will work from home. By 2040, many jobs will have changed.",
+      "Skills that matter: adaptability, digital skills, communication, creativity. Be likely to: Robots are likely to..."
+     ],
+     "q": "Would you prefer to work fully remotely, in an office, or hybrid? Why?",
+     "c": "Write three predictions about your field of work using will, will have and be likely to."
+    },
+    "de": {
+     "t": "Die Zukunft der Arbeit",
+     "g": "Du diskutierst, wie sich Arbeit verändert: hybrides Arbeiten, neue Fähigkeiten, flexible Karrieren.",
+     "p": [
+      "Schlüsselwörter: hybrid work, remote work, a flexible career, freelance, upskilling, lifelong learning, a portfolio career.",
+      "Vorhersagen mit Zukunftsformen: More people will work from home. By 2040, many jobs will have changed.",
+      "Wichtige Fähigkeiten: adaptability, digital skills, communication, creativity. Be likely to: Robots are likely to..."
+     ],
+     "q": "Würdest du lieber komplett remote, im Büro oder hybrid arbeiten? Warum?",
+     "c": "Schreib drei Vorhersagen über dein Berufsfeld mit will, will have und be likely to."
+    },
+    "es": {
+     "t": "El futuro del trabajo",
+     "g": "Debate cómo está cambiando el trabajo: modelo híbrido, nuevas habilidades y carreras flexibles.",
+     "p": [
+      "Palabras clave: hybrid work, remote work, a flexible career, freelance, upskilling, lifelong learning, a portfolio career.",
+      "Predice con formas de futuro: More people will work from home. By 2040, many jobs will have changed.",
+      "Habilidades clave: adaptability, digital skills, communication, creativity. Be likely to: Robots are likely to..."
+     ],
+     "q": "¿Preferirías trabajar en remoto, en una oficina o en modo híbrido? ¿Por qué?",
+     "c": "Escribe tres predicciones sobre tu sector con will, will have y be likely to."
+    },
+    "fr": {
+     "t": "L'avenir du travail",
+     "g": "Discute de l'évolution du travail : travail hybride, nouvelles compétences et carrières flexibles.",
+     "p": [
+      "Mots clés : hybrid work, remote work, a flexible career, freelance, upskilling, lifelong learning, a portfolio career.",
+      "Prédis avec les formes du futur : More people will work from home. By 2040, many jobs will have changed.",
+      "Compétences clés : adaptability, digital skills, communication, creativity. Be likely to : Robots are likely to..."
+     ],
+     "q": "Préférerais-tu travailler entièrement à distance, au bureau ou en hybride ? Pourquoi ?",
+     "c": "Écris trois prédictions sur ton domaine avec will, will have et be likely to."
+    },
+    "it": {
+     "t": "Il futuro del lavoro",
+     "g": "Discuti come sta cambiando il lavoro: lavoro ibrido, nuove competenze e carriere flessibili.",
+     "p": [
+      "Parole chiave: hybrid work, remote work, a flexible career, freelance, upskilling, lifelong learning, a portfolio career.",
+      "Fai previsioni con i futuri: More people will work from home. By 2040, many jobs will have changed.",
+      "Competenze chiave: adaptability, digital skills, communication, creativity. Be likely to: Robots are likely to..."
+     ],
+     "q": "Preferiresti lavorare completamente da remoto, in ufficio o in modo ibrido? Perché?",
+     "c": "Scrivi tre previsioni sul tuo settore con will, will have e be likely to."
+    },
+    "pt": {
+     "t": "O futuro do trabalho",
+     "g": "Discute como o trabalho está a mudar: trabalho híbrido, novas competências e carreiras flexíveis.",
+     "p": [
+      "Palavras-chave: hybrid work, remote work, a flexible career, freelance, upskilling, lifelong learning, a portfolio career.",
+      "Prevê com formas de futuro: More people will work from home. By 2040, many jobs will have changed.",
+      "Competências-chave: adaptability, digital skills, communication, creativity. Be likely to: Robots are likely to..."
+     ],
+     "q": "Preferias trabalhar totalmente à distância, num escritório ou em regime híbrido? Porquê?",
+     "c": "Escreve três previsões sobre a tua área com will, will have e be likely to."
+    },
+    "pt_BR": {
+     "t": "O futuro do trabalho",
+     "g": "Discuta como o trabalho está mudando: trabalho híbrido, novas habilidades e carreiras flexíveis.",
+     "p": [
+      "Palavras-chave: hybrid work, remote work, a flexible career, freelance, upskilling, lifelong learning, a portfolio career.",
+      "Faça previsões com formas de futuro: More people will work from home. By 2040, many jobs will have changed.",
+      "Habilidades-chave: adaptability, digital skills, communication, creativity. Be likely to: Robots are likely to..."
+     ],
+     "q": "Você preferiria trabalhar totalmente remoto, no escritório ou no modelo híbrido? Por quê?",
+     "c": "Escreva três previsões sobre sua área com will, will have e be likely to."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "hybrid work",
+      "ex": "Our company offers hybrid work: three days at home."
+     },
+     {
+      "w": "freelance",
+      "ex": "She works freelance as a translator."
+     },
+     {
+      "w": "upskilling",
+      "ex": "Upskilling helps workers keep up with technology."
+     },
+     {
+      "w": "lifelong learning",
+      "ex": "Lifelong learning is part of modern careers."
+     },
+     {
+      "w": "adaptability",
+      "ex": "Adaptability is one of the most valued skills."
+     },
+     {
+      "w": "be likely to",
+      "ex": "Remote jobs are likely to keep growing."
+     }
+    ],
+    "gram": "Future forms: will (prediction), will have + past participle (completed by a time), be likely to (probability), may (possibility)."
+   }
+  },
+  {
+   "d": 349,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Storytelling with style",
+     "g": "Tell stories that hook the listener, build suspense, use dialogue and end well.",
+     "p": [
+      "Hook: You'll never guess what happened to me last week... It all started when... Picture this:",
+      "Build suspense: Suddenly... Just as I was about to..., Little did I know that... Use past continuous for background.",
+      "Dialogue and ending: She looked at me and said, Are you serious? In the end... Looking back, I'm glad that..."
+     ],
+     "q": "What is a funny or surprising thing that happened to you? Tell it as a story with a hook.",
+     "c": "Tell a 90-second story about a small adventure using a hook, suddenly, little did I know and in the end."
+    },
+    "de": {
+     "t": "Stilvoll erzählen",
+     "g": "Du erzählst Geschichten mit Aufhänger, Spannung, Dialog und gelungenem Ende.",
+     "p": [
+      "Aufhänger: You'll never guess what happened to me last week... It all started when... Picture this:",
+      "Spannung: Suddenly... Just as I was about to..., Little did I know that... Past continuous für den Hintergrund.",
+      "Dialog und Ende: She looked at me and said, Are you serious? In the end... Looking back, I'm glad that..."
+     ],
+     "q": "Was Lustiges oder Überraschendes ist dir passiert? Erzähl es als Geschichte mit Aufhänger.",
+     "c": "Erzähl in 90 Sekunden ein kleines Abenteuer mit Aufhänger, suddenly, little did I know und in the end."
+    },
+    "es": {
+     "t": "Contar historias con estilo",
+     "g": "Cuenta historias que enganchen, creen suspense, usen diálogo y terminen bien.",
+     "p": [
+      "Gancho: You'll never guess what happened to me last week... It all started when... Picture this:",
+      "Suspense: Suddenly... Just as I was about to..., Little did I know that... Usa past continuous para el contexto.",
+      "Diálogo y final: She looked at me and said, Are you serious? In the end... Looking back, I'm glad that..."
+     ],
+     "q": "¿Qué te ha pasado de divertido o sorprendente? Cuéntalo como una historia con gancho.",
+     "c": "Cuenta en 90 segundos una pequeña aventura con un gancho, suddenly, little did I know e in the end."
+    },
+    "fr": {
+     "t": "Raconter avec style",
+     "g": "Raconte des histoires qui accrochent, créent du suspense, utilisent le dialogue et finissent bien.",
+     "p": [
+      "Accroche : You'll never guess what happened to me last week... It all started when... Picture this:",
+      "Suspense : Suddenly... Just as I was about to..., Little did I know that... Le past continuous pose le décor.",
+      "Dialogue et fin : She looked at me and said, Are you serious? In the end... Looking back, I'm glad that..."
+     ],
+     "q": "Que t'est-il arrivé de drôle ou de surprenant ? Raconte-le comme une histoire avec une accroche.",
+     "c": "Raconte en 90 secondes une petite aventure avec une accroche, suddenly, little did I know et in the end."
+    },
+    "it": {
+     "t": "Raccontare con stile",
+     "g": "Racconta storie che catturano, creano suspense, usano dialoghi e finiscono bene.",
+     "p": [
+      "Aggancio: You'll never guess what happened to me last week... It all started when... Picture this:",
+      "Suspense: Suddenly... Just as I was about to..., Little did I know that... Il past continuous crea lo sfondo.",
+      "Dialogo e finale: She looked at me and said, Are you serious? In the end... Looking back, I'm glad that..."
+     ],
+     "q": "Cosa ti è successo di divertente o sorprendente? Raccontalo come una storia con un aggancio.",
+     "c": "Racconta in 90 secondi una piccola avventura con un aggancio, suddenly, little did I know e in the end."
+    },
+    "pt": {
+     "t": "Contar histórias com estilo",
+     "g": "Conta histórias que prendem, criam suspense, usam diálogo e acabam bem.",
+     "p": [
+      "Gancho: You'll never guess what happened to me last week... It all started when... Picture this:",
+      "Suspense: Suddenly... Just as I was about to..., Little did I know that... Usa o past continuous para o cenário.",
+      "Diálogo e final: She looked at me and said, Are you serious? In the end... Looking back, I'm glad that..."
+     ],
+     "q": "Que coisa engraçada ou surpreendente te aconteceu? Conta-a como uma história com gancho.",
+     "c": "Conta em 90 segundos uma pequena aventura com gancho, suddenly, little did I know e in the end."
+    },
+    "pt_BR": {
+     "t": "Contar histórias com estilo",
+     "g": "Conte histórias que prendem, criam suspense, usam diálogo e terminam bem.",
+     "p": [
+      "Gancho: You'll never guess what happened to me last week... It all started when... Picture this:",
+      "Suspense: Suddenly... Just as I was about to..., Little did I know that... Use o past continuous para o cenário.",
+      "Diálogo e final: She looked at me and said, Are you serious? In the end... Looking back, I'm glad that..."
+     ],
+     "q": "Que coisa engraçada ou surpreendente aconteceu com você? Conte como uma história com gancho.",
+     "c": "Conte em 90 segundos uma pequena aventura com gancho, suddenly, little did I know e in the end."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "you'll never guess",
+      "ex": "You'll never guess who I met at the station!"
+     },
+     {
+      "w": "it all started when",
+      "ex": "It all started when I missed the last bus."
+     },
+     {
+      "w": "just as I was about to",
+      "ex": "Just as I was about to leave, the phone rang."
+     },
+     {
+      "w": "little did I know",
+      "ex": "Little did I know that it would change my life."
+     },
+     {
+      "w": "in the end",
+      "ex": "In the end, everything worked out fine."
+     },
+     {
+      "w": "looking back",
+      "ex": "Looking back, it was the best trip ever."
+     }
+    ],
+    "gram": "Narrative tenses: past continuous for background, past simple for events, past perfect for earlier events; inversion: Little did I know."
+   }
+  },
+  {
+   "d": 350,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Describing graphs and trends",
+     "g": "Describe data clearly: rise sharply, fall slightly, remain stable, peak.",
+     "p": [
+      "Up: rise, increase, grow, go up. Down: fall, decrease, drop, decline. No change: remain stable, level off.",
+      "Add degree and speed: rise sharply, increase dramatically, fall slightly, decline gradually, peak at 80%.",
+      "Nouns too: There was a sharp rise in... a slight fall in... Prepositions: rise by 10% (change), rise to 50% (final)."
+     ],
+     "q": "How has something in your life changed over the years, like your screen time or coffee habit? Describe it like a graph.",
+     "c": "Describe an imaginary graph of ice cream sales over a year in four sentences using peak, rise sharply and fall."
+    },
+    "de": {
+     "t": "Grafiken und Trends beschreiben",
+     "g": "Du beschreibst Daten klar: rise sharply, fall slightly, remain stable, peak.",
+     "p": [
+      "Nach oben: rise, increase, grow, go up. Nach unten: fall, decrease, drop, decline. Keine Änderung: remain stable, level off.",
+      "Ausmaß und Tempo: rise sharply, increase dramatically, fall slightly, decline gradually, peak at 80%.",
+      "Auch Nomen: There was a sharp rise in... a slight fall in... Präpositionen: rise by 10% (Änderung), rise to 50% (Endwert)."
+     ],
+     "q": "Wie hat sich etwas in deinem Leben über die Jahre verändert, etwa Bildschirmzeit oder Kaffeekonsum? Beschreib es wie eine Grafik.",
+     "c": "Beschreibe eine erfundene Grafik zum Eisverkauf über ein Jahr in vier Sätzen mit peak, rise sharply und fall."
+    },
+    "es": {
+     "t": "Describir gráficos y tendencias",
+     "g": "Describe datos con claridad: rise sharply, fall slightly, remain stable, peak.",
+     "p": [
+      "Subir: rise, increase, grow, go up. Bajar: fall, decrease, drop, decline. Sin cambios: remain stable, level off.",
+      "Añade grado y velocidad: rise sharply, increase dramatically, fall slightly, decline gradually, peak at 80%.",
+      "También sustantivos: There was a sharp rise in... a slight fall in... Preposiciones: rise by 10% (cambio), rise to 50% (final)."
+     ],
+     "q": "¿Cómo ha cambiado algo en tu vida con los años, como el tiempo de pantalla o el café? Descríbelo como un gráfico.",
+     "c": "Describe un gráfico imaginario de ventas de helado durante un año en cuatro frases con peak, rise sharply y fall."
+    },
+    "fr": {
+     "t": "Décrire graphiques et tendances",
+     "g": "Décris des données clairement : rise sharply, fall slightly, remain stable, peak.",
+     "p": [
+      "Hausse : rise, increase, grow, go up. Baisse : fall, decrease, drop, decline. Stabilité : remain stable, level off.",
+      "Ajoute degré et vitesse : rise sharply, increase dramatically, fall slightly, decline gradually, peak at 80%.",
+      "Avec des noms : There was a sharp rise in... a slight fall in... Prépositions : rise by 10% (écart), rise to 50% (valeur finale)."
+     ],
+     "q": "Comment quelque chose a-t-il évolué dans ta vie, comme ton temps d'écran ou ton café ? Décris-le comme un graphique.",
+     "c": "Décris un graphique imaginaire des ventes de glaces sur un an en quatre phrases avec peak, rise sharply et fall."
+    },
+    "it": {
+     "t": "Descrivere grafici e tendenze",
+     "g": "Descrivi dati con chiarezza: rise sharply, fall slightly, remain stable, peak.",
+     "p": [
+      "Su: rise, increase, grow, go up. Giù: fall, decrease, drop, decline. Nessun cambiamento: remain stable, level off.",
+      "Aggiungi intensità e velocità: rise sharply, increase dramatically, fall slightly, decline gradually, peak at 80%.",
+      "Anche nomi: There was a sharp rise in... a slight fall in... Preposizioni: rise by 10% (variazione), rise to 50% (valore finale)."
+     ],
+     "q": "Com'è cambiato qualcosa nella tua vita negli anni, come il tempo allo schermo o il caffè? Descrivilo come un grafico.",
+     "c": "Descrivi un grafico immaginario delle vendite di gelato in un anno in quattro frasi con peak, rise sharply e fall."
+    },
+    "pt": {
+     "t": "Descrever gráficos e tendências",
+     "g": "Descreve dados com clareza: rise sharply, fall slightly, remain stable, peak.",
+     "p": [
+      "Subir: rise, increase, grow, go up. Descer: fall, decrease, drop, decline. Sem mudança: remain stable, level off.",
+      "Junta grau e velocidade: rise sharply, increase dramatically, fall slightly, decline gradually, peak at 80%.",
+      "Também nomes: There was a sharp rise in... a slight fall in... Preposições: rise by 10% (variação), rise to 50% (valor final)."
+     ],
+     "q": "Como mudou algo na tua vida ao longo dos anos, como o tempo de ecrã ou o café? Descreve-o como um gráfico.",
+     "c": "Descreve um gráfico imaginário de vendas de gelados ao longo de um ano em quatro frases com peak, rise sharply e fall."
+    },
+    "pt_BR": {
+     "t": "Descrever gráficos e tendências",
+     "g": "Descreva dados com clareza: rise sharply, fall slightly, remain stable, peak.",
+     "p": [
+      "Subir: rise, increase, grow, go up. Cair: fall, decrease, drop, decline. Sem mudança: remain stable, level off.",
+      "Acrescente grau e velocidade: rise sharply, increase dramatically, fall slightly, decline gradually, peak at 80%.",
+      "Também substantivos: There was a sharp rise in... a slight fall in... Preposições: rise by 10% (variação), rise to 50% (valor final)."
+     ],
+     "q": "Como algo na sua vida mudou ao longo dos anos, como tempo de tela ou café? Descreva como um gráfico.",
+     "c": "Descreva um gráfico imaginário de vendas de sorvete ao longo de um ano em quatro frases com peak, rise sharply e fall."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "rise sharply",
+      "ex": "Sales rose sharply in December."
+     },
+     {
+      "w": "fall slightly",
+      "ex": "The temperature fell slightly overnight."
+     },
+     {
+      "w": "remain stable",
+      "ex": "Prices remained stable throughout the year."
+     },
+     {
+      "w": "peak",
+      "ex": "Visitor numbers peaked in August."
+     },
+     {
+      "w": "a gradual decline",
+      "ex": "There was a gradual decline in paper use."
+     },
+     {
+      "w": "level off",
+      "ex": "After a fast rise, growth levelled off."
+     }
+    ],
+    "gram": "Trends: verb + adverb (rose sharply) or adjective + noun (a sharp rise); by = amount of change, to = final value, at = peak value."
+   }
+  }
+ ]
+}

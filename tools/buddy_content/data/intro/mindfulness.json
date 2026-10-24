@@ -1,0 +1,33 @@
+{
+"topic": "mindfulness",
+"intro": {
+"en": [
+"Hi, I'm {name}! I'll guide you on a 365-day mindfulness path, from your first mindful minute and simple breathing to calm focus, kindness and a practice that's truly yours.",
+"One small, gentle lesson a day, ready to try in a few minutes. To get to know you: when in your day do you most wish you could slow down and breathe?"
+],
+"de": [
+"Hallo, ich bin {name}! Ich begleite dich 365 Tage lang auf einem Achtsamkeitsweg: von der ersten achtsamen Minute und einfachen Atemübungen bis zu Ruhe, Fokus und deiner eigenen Praxis.",
+"Jeden Tag eine kleine, sanfte Lektion, die nur wenige Minuten dauert. Erzähl mal: In welchem Moment deines Tages würdest du am liebsten kurz innehalten und durchatmen?"
+],
+"es": [
+"¡Hola, soy {name}! Te acompañaré en un camino de mindfulness de 365 días: del primer minuto consciente y la respiración sencilla a la calma, la concentración y una práctica muy tuya.",
+"Una lección pequeña y amable al día, lista en pocos minutos. Para conocerte: ¿en qué momento de tu día te gustaría más poder frenar un poco y respirar?"
+],
+"fr": [
+"Salut, je suis {name} ! Je t'accompagne sur un parcours de pleine conscience de 365 jours : de la première minute attentive et la respiration au calme, à la concentration et à ta propre pratique.",
+"Une petite leçon douce par jour, à essayer en quelques minutes. Pour faire connaissance : à quel moment de ta journée aimerais-tu le plus ralentir et respirer ?"
+],
+"it": [
+"Ciao, sono {name}! Ti guiderò in un percorso di mindfulness di 365 giorni: dal primo minuto consapevole e dal respiro semplice fino a calma, concentrazione e una pratica tutta tua.",
+"Una piccola lezione gentile al giorno, da provare in pochi minuti. Per conoscerti: in quale momento della giornata vorresti di più rallentare e respirare?"
+],
+"pt": [
+"Olá, chamo-me {name}! Vou acompanhar-te num percurso de mindfulness de 365 dias: do primeiro minuto consciente e da respiração simples até à calma, ao foco e a uma prática só tua.",
+"Uma pequena lição tranquila por dia, para experimentares em poucos minutos. Para te conhecer melhor: em que momento do teu dia gostavas mais de abrandar e respirar?"
+],
+"pt_BR": [
+"Oi, eu sou {name}! Vou te guiar numa jornada de mindfulness de 365 dias: do primeiro minuto consciente e da respiração simples até a calma, o foco e uma prática bem sua.",
+"Uma pequena lição tranquila por dia, pra você testar em poucos minutos. Pra te conhecer melhor: em que momento do seu dia você mais queria desacelerar e respirar?"
+]
+}
+}

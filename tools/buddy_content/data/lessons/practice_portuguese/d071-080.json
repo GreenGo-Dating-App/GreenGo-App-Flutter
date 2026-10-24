@@ -1,0 +1,1125 @@
+{
+  "topic": "practice_portuguese",
+  "lessons": [
+    {
+      "d": 71,
+      "lv": "A1",
+      "i18n": {
+        "en": {
+          "t": "Object pronouns: o, a, os, as",
+          "g": "Replace direct objects with o, a, os, as.",
+          "p": [
+            "O, a, os, as replace things or people: Vejo o João becomes Vejo-o. Conheço a Ana becomes Conheço-a.",
+            "In Portugal the pronoun usually goes after the verb with a hyphen. After não, it moves before: Não o vejo.",
+            "In Brazil it often goes before the verb, eu o vejo, and in speech people simply say eu vejo ele."
+          ],
+          "q": "Do you know any Portuguese singers? Answer with conheço-o or não o conheço.",
+          "c": "Rewrite four sentences replacing the object: Compro o pão, Leio a revista, Vejo os amigos, Faço as malas."
+        },
+        "de": {
+          "t": "Objektpronomen: o, a, os, as",
+          "g": "Du ersetzt direkte Objekte durch o, a, os, as.",
+          "p": [
+            "O, a, os, as ersetzen Dinge oder Personen: Vejo o João wird Vejo-o. Conheço a Ana wird Conheço-a.",
+            "In Portugal steht das Pronomen meist mit Bindestrich nach dem Verb. Nach não rückt es vor: Não o vejo.",
+            "In Brasilien steht es oft vor dem Verb, eu o vejo, und umgangssprachlich sagt man eu vejo ele."
+          ],
+          "q": "Kennst du portugiesische Sänger? Antworte mit conheço-o oder não o conheço.",
+          "c": "Ersetze in vier Sätzen das Objekt: Compro o pão, Leio a revista, Vejo os amigos, Faço as malas."
+        },
+        "es": {
+          "t": "Pronombres de objeto: o, a, os, as",
+          "g": "Sustituir el objeto directo por o, a, os, as.",
+          "p": [
+            "O, a, os, as son lo, la, los, las: Vejo o João pasa a Vejo-o. Conheço a Ana pasa a Conheço-a.",
+            "En Portugal el pronombre suele ir detrás del verbo con guion. Tras não va delante: Não o vejo.",
+            "En Brasil suele ir delante, eu o vejo, y al hablar se dice simplemente eu vejo ele."
+          ],
+          "q": "¿Conoces algún cantante portugués? Responde con conheço-o o não o conheço.",
+          "c": "Reescribe cuatro frases con pronombre: Compro o pão, Leio a revista, Vejo os amigos, Faço as malas."
+        },
+        "fr": {
+          "t": "Pronoms COD : o, a, os, as",
+          "g": "Remplacer le complément direct par o, a, os, as.",
+          "p": [
+            "O, a, os, as = le, la, les : Vejo o João devient Vejo-o. Conheço a Ana devient Conheço-a.",
+            "Au Portugal le pronom se place souvent après le verbe avec un trait d'union. Après não, il passe devant : Não o vejo.",
+            "Au Brésil il va souvent devant, eu o vejo, et à l'oral on dit simplement eu vejo ele."
+          ],
+          "q": "Connais-tu des chanteurs portugais ? Réponds avec conheço-o ou não o conheço.",
+          "c": "Réécris quatre phrases avec le pronom : Compro o pão, Leio a revista, Vejo os amigos, Faço as malas."
+        },
+        "it": {
+          "t": "Pronomi diretti: o, a, os, as",
+          "g": "Sostituisci il complemento oggetto con o, a, os, as.",
+          "p": [
+            "O, a, os, as = lo, la, li, le: Vejo o João diventa Vejo-o. Conheço a Ana diventa Conheço-a.",
+            "In Portogallo il pronome va di solito dopo il verbo col trattino. Dopo não va prima: Não o vejo.",
+            "In Brasile spesso va prima, eu o vejo, e parlando si dice semplicemente eu vejo ele."
+          ],
+          "q": "Conosci qualche cantante portoghese? Rispondi con conheço-o o não o conheço.",
+          "c": "Riscrivi quattro frasi col pronome: Compro o pão, Leio a revista, Vejo os amigos, Faço as malas."
+        },
+        "pt": {
+          "t": "Pronomes diretos: o, a, os, as",
+          "g": "Revê os pronomes de complemento direto e as regras de colocação.",
+          "p": [
+            "Ênclise é a regra em Portugal: vejo-o, conheço-a. A próclise surge com não, que, já, também e advérbios.",
+            "Em Portugal, vejo ele soa muito brasileiro; no Brasil é comum na fala informal.",
+            "Depois de -r, -s, -z o pronome muda: comprá-lo, fi-lo, fá-lo. Fica para outra lição, mas vale a pena notar."
+          ],
+          "q": "Que regra de colocação dos pronomes achas mais difícil de explicar?",
+          "c": "Escreve três frases com ênclise e três com próclise, e assinala a palavra que puxa o pronome."
+        },
+        "pt_BR": {
+          "t": "Pronomes diretos: o, a, os, as",
+          "g": "Revise a colocação dos pronomes à portuguesa.",
+          "p": [
+            "Em Portugal o pronome vem depois do verbo: Vejo-o amanhã. Conheço-a bem. Eu o vejo soa estranho lá.",
+            "Com não, já, também, quem e que, o pronome vem antes: Não o conheço. Já a vi.",
+            "Vejo ele, comum na fala brasileira, não se usa em Portugal; é uma marca clara de sotaque brasileiro."
+          ],
+          "q": "Como um português diria Eu a conheço há muito tempo?",
+          "c": "Reescreva cinco frases brasileiras com o pronome à portuguesa: depois do verbo, com hífen."
+        }
+      },
+      "target": {
+        "vocab": [
+          {
+            "w": "vejo-o",
+            "ex": "O João? Vejo-o todos os dias."
+          },
+          {
+            "w": "conheço-a",
+            "ex": "A Marta? Conheço-a da escola."
+          },
+          {
+            "w": "não o conheço",
+            "ex": "Esse cantor? Não o conheço."
+          },
+          {
+            "w": "compro-os",
+            "ex": "Os bilhetes? Compro-os amanhã."
+          },
+          {
+            "w": "leio-as",
+            "ex": "As notícias? Leio-as de manhã."
+          },
+          {
+            "w": "já a vi",
+            "ex": "A exposição? Já a vi."
+          }
+        ],
+        "gram": "Pronomes diretos o, a, os, as: em Portugal depois do verbo (vejo-o); antes com não, já, também, que (não o vejo)."
+      }
+    },
+    {
+      "d": 72,
+      "lv": "A1",
+      "i18n": {
+        "en": {
+          "t": "Indirect pronouns: me, te, lhe",
+          "g": "Use me, te, lhe to say to or for someone.",
+          "p": [
+            "Me, te, lhe, nos, lhes mean to me, to you, to him/her: Dá-me o livro (Give me the book).",
+            "Lhe is for ele, ela and você: Escrevo-lhe uma mensagem (I write him/her/you a message).",
+            "Like o and a, they follow the verb in Portugal and move before it after não: Não me dês isso."
+          ],
+          "q": "Who do you write messages to most often? Answer with escrevo-lhe or envio-lhe.",
+          "c": "Write four sentences with dá-me, diz-me, telefono-te and escrevo-lhe."
+        },
+        "de": {
+          "t": "Indirekte Pronomen: me, te, lhe",
+          "g": "Du verwendest me, te, lhe für mir, dir, ihm/ihr.",
+          "p": [
+            "Me, te, lhe, nos, lhes = mir, dir, ihm/ihr: Dá-me o livro (Gib mir das Buch).",
+            "Lhe steht für ele, ela und você: Escrevo-lhe uma mensagem (Ich schreibe ihm/ihr/Ihnen eine Nachricht).",
+            "Wie o und a stehen sie in Portugal nach dem Verb, nach não davor: Não me dês isso."
+          ],
+          "q": "Wem schreibst du am häufigsten Nachrichten? Antworte mit escrevo-lhe oder envio-lhe.",
+          "c": "Schreib vier Sätze mit dá-me, diz-me, telefono-te und escrevo-lhe."
+        },
+        "es": {
+          "t": "Pronombres indirectos: me, te, lhe",
+          "g": "Usar me, te, lhe para decir a mí, a ti, a él/ella.",
+          "p": [
+            "Me, te, lhe, nos, lhes = me, te, le, nos, les: Dá-me o livro (dame el libro).",
+            "Lhe sirve para ele, ela y você: Escrevo-lhe uma mensagem (le escribo un mensaje).",
+            "Como o y a, en Portugal van detrás del verbo y delante tras não: Não me dês isso."
+          ],
+          "q": "¿A quién escribes mensajes más a menudo? Responde con escrevo-lhe o envio-lhe.",
+          "c": "Escribe cuatro frases con dá-me, diz-me, telefono-te y escrevo-lhe."
+        },
+        "fr": {
+          "t": "Pronoms COI : me, te, lhe",
+          "g": "Utiliser me, te, lhe pour dire à moi, à toi, à lui/elle.",
+          "p": [
+            "Me, te, lhe, nos, lhes = me, te, lui, nous, leur : Dá-me o livro (Donne-moi le livre).",
+            "Lhe vaut pour ele, ela et você : Escrevo-lhe uma mensagem (Je lui écris un message).",
+            "Comme o et a, ils suivent le verbe au Portugal et passent devant après não : Não me dês isso."
+          ],
+          "q": "À qui écris-tu le plus souvent des messages ? Réponds avec escrevo-lhe ou envio-lhe.",
+          "c": "Écris quatre phrases avec dá-me, diz-me, telefono-te et escrevo-lhe."
+        },
+        "it": {
+          "t": "Pronomi indiretti: me, te, lhe",
+          "g": "Usi me, te, lhe per dire a me, a te, a lui/lei.",
+          "p": [
+            "Me, te, lhe, nos, lhes = mi, ti, gli/le, ci, gli: Dá-me o livro (Dammi il libro).",
+            "Lhe vale per ele, ela e você: Escrevo-lhe uma mensagem (Gli/Le scrivo un messaggio).",
+            "Come o e a, in Portogallo seguono il verbo e dopo não vanno prima: Não me dês isso."
+          ],
+          "q": "A chi scrivi messaggi più spesso? Rispondi con escrevo-lhe o envio-lhe.",
+          "c": "Scrivi quattro frasi con dá-me, diz-me, telefono-te e escrevo-lhe."
+        },
+        "pt": {
+          "t": "Pronomes indiretos: me, te, lhe",
+          "g": "Revê os pronomes indiretos e as contrações com os diretos.",
+          "p": [
+            "Lhe é indireto: Dou-lhe o livro. Usar lhe como direto (vi-lhe) é um erro regional que convém evitar.",
+            "Em Portugal contraem-se: dá-mo, dou-to, dei-lho. Soa formal a muitos falantes, mas é correto.",
+            "Com você, lhe é a forma de cortesia: Posso ajudá-lo? Já lhe envio o documento."
+          ],
+          "q": "Usas contrações como dá-mo no dia a dia, ou preferes dá-me isso?",
+          "c": "Escreve quatro frases com lhe e explica a um estrangeiro porque lhe também serve para você."
+        },
+        "pt_BR": {
+          "t": "Pronomes indiretos: me, te, lhe",
+          "g": "Revise me, te, lhe à portuguesa.",
+          "p": [
+            "Em Portugal diz-se Dá-me o livro, não Me dá o livro. O pronome no início da frase soa brasileiro.",
+            "Lhe é muito usado com você e com o senhor: Já lhe ligo. No Brasil a fala prefere ligo para você.",
+            "Contrações como dá-mo (dá-me + o) existem em Portugal e ouvem-se na fala de muitas pessoas."
+          ],
+          "q": "Como você pediria a um empregado de café em Lisboa: Me traz a conta?",
+          "c": "Reescreva quatro pedidos brasileiros à portuguesa: Me dá, Me diz, Te ligo, Lhe mando."
+        }
+      },
+      "target": {
+        "vocab": [
+          {
+            "w": "dá-me",
+            "ex": "Dá-me o sal, se faz favor."
+          },
+          {
+            "w": "diz-me",
+            "ex": "Diz-me a verdade."
+          },
+          {
+            "w": "escrevo-lhe",
+            "ex": "Escrevo-lhe um email amanhã."
+          },
+          {
+            "w": "telefono-te",
+            "ex": "Telefono-te logo à noite."
+          },
+          {
+            "w": "não me digas!",
+            "ex": "Ganhaste o prémio? Não me digas!"
+          },
+          {
+            "w": "mostra-nos",
+            "ex": "Mostra-nos as fotografias da viagem."
+          }
+        ],
+        "gram": "Pronomes indiretos: me, te, lhe, nos, lhes (a mim, a ti, a ele/você). Em Portugal: dá-me; com não: não me dês."
+      }
+    },
+    {
+      "d": 73,
+      "lv": "A1",
+      "i18n": {
+        "en": {
+          "t": "At the restaurant",
+          "g": "Book a table, read the menu and order a full meal.",
+          "p": [
+            "Book: Queria reservar uma mesa para duas pessoas às oito. Arriving: Tem mesa para dois?",
+            "The menu is a ementa in Portugal (cardápio in Brazil): a entrada, o prato principal, a sobremesa.",
+            "Order with Para mim, ... and ask A conta, se faz favor. In Portugal bread and olives may be charged if eaten."
+          ],
+          "q": "What would you order for a starter, main course and dessert in a Portuguese restaurant?",
+          "c": "Write a restaurant dialogue: book a table, order three courses and ask for the bill."
+        },
+        "de": {
+          "t": "Im Restaurant",
+          "g": "Du reservierst einen Tisch, liest die Karte und bestellst ein Menü.",
+          "p": [
+            "Reservieren: Queria reservar uma mesa para duas pessoas às oito. Beim Ankommen: Tem mesa para dois?",
+            "Die Karte heißt in Portugal a ementa (in Brasilien cardápio): a entrada, o prato principal, a sobremesa.",
+            "Bestellen mit Para mim, ... und A conta, se faz favor. Brot und Oliven kosten oft extra, wenn man sie isst."
+          ],
+          "q": "Was würdest du in einem portugiesischen Restaurant als Vorspeise, Hauptgang und Dessert bestellen?",
+          "c": "Schreib einen Restaurantdialog: Tisch reservieren, drei Gänge bestellen und um die Rechnung bitten."
+        },
+        "es": {
+          "t": "En el restaurante",
+          "g": "Reservar mesa, leer la carta y pedir una comida completa.",
+          "p": [
+            "Reserva: Queria reservar uma mesa para duas pessoas às oito. Al llegar: Tem mesa para dois?",
+            "La carta es a ementa en Portugal (cardápio en Brasil): a entrada, o prato principal, a sobremesa.",
+            "Pide con Para mim, ... y A conta, se faz favor. En Portugal el pan y las aceitunas se pagan si los comes."
+          ],
+          "q": "¿Qué pedirías de entrante, plato principal y postre en un restaurante portugués?",
+          "c": "Escribe un diálogo: reserva mesa, pide tres platos y pide la cuenta."
+        },
+        "fr": {
+          "t": "Au restaurant",
+          "g": "Réserver une table, lire la carte et commander un repas complet.",
+          "p": [
+            "Réserver : Queria reservar uma mesa para duas pessoas às oito. En arrivant : Tem mesa para dois?",
+            "La carte se dit a ementa au Portugal (cardápio au Brésil) : a entrada, o prato principal, a sobremesa.",
+            "Commande avec Para mim, ... et demande A conta, se faz favor. Au Portugal, pain et olives se paient si on les mange."
+          ],
+          "q": "Que commanderais-tu en entrée, plat et dessert dans un restaurant portugais ?",
+          "c": "Écris un dialogue : réserve une table, commande trois plats et demande l'addition."
+        },
+        "it": {
+          "t": "Al ristorante",
+          "g": "Prenoti un tavolo, leggi il menù e ordini un pasto completo.",
+          "p": [
+            "Prenotare: Queria reservar uma mesa para duas pessoas às oito. Arrivando: Tem mesa para dois?",
+            "Il menù in Portogallo è a ementa (in Brasile cardápio): a entrada, o prato principal, a sobremesa.",
+            "Ordina con Para mim, ... e chiedi A conta, se faz favor. In Portogallo pane e olive si pagano se li mangi."
+          ],
+          "q": "Cosa ordineresti come antipasto, piatto principale e dolce in un ristorante portoghese?",
+          "c": "Scrivi un dialogo: prenota, ordina tre portate e chiedi il conto."
+        },
+        "pt": {
+          "t": "No restaurante",
+          "g": "Revê o vocabulário do restaurante e os costumes que surpreendem os turistas.",
+          "p": [
+            "Os couverts (pão, manteiga, azeitonas) pagam-se se forem consumidos; convém explicar isto aos visitantes.",
+            "Prato do dia, meia dose e dose são expressões muito portuguesas que ajudam a poupar e a não desperdiçar.",
+            "Ementa em Portugal, cardápio no Brasil; empregado de mesa em Portugal, garçom no Brasil."
+          ],
+          "q": "Que costume dos restaurantes portugueses explicarias primeiro a um turista?",
+          "c": "Escreve um pequeno guia de cinco frases para um estrangeiro pedir num restaurante português."
+        },
+        "pt_BR": {
+          "t": "No restaurante",
+          "g": "Revise o vocabulário de restaurante usado em Portugal.",
+          "p": [
+            "Ementa é o cardápio, empregado de mesa é o garçom e a conta pede-se com se faz favor.",
+            "Meia dose é meia porção, e o prato do dia costuma ser uma opção económica ao almoço.",
+            "O couvert (pão, azeitonas, queijo) chega à mesa sem pedir; paga-se só se for consumido."
+          ],
+          "q": "O que você pediria num restaurante típico do Porto?",
+          "c": "Escreva um diálogo de restaurante com ementa, meia dose, empregado e se faz favor."
+        }
+      },
+      "target": {
+        "vocab": [
+          {
+            "w": "reservar uma mesa",
+            "ex": "Queria reservar uma mesa para quatro."
+          },
+          {
+            "w": "a ementa",
+            "ex": "Pode trazer a ementa, por favor?"
+          },
+          {
+            "w": "a entrada",
+            "ex": "De entrada, queria uma sopa."
+          },
+          {
+            "w": "o prato principal",
+            "ex": "Para prato principal, peixe grelhado."
+          },
+          {
+            "w": "a sobremesa",
+            "ex": "De sobremesa, um arroz-doce."
+          },
+          {
+            "w": "a conta",
+            "ex": "A conta, se faz favor."
+          }
+        ],
+        "gram": "No restaurante: Queria + nome (Queria uma sopa), Para mim + prato, De entrada/sobremesa. Pedido final: A conta, se faz favor."
+      }
+    },
+    {
+      "d": 74,
+      "lv": "A1",
+      "i18n": {
+        "en": {
+          "t": "Typical dishes",
+          "g": "Learn famous dishes and say what is in them.",
+          "p": [
+            "Bacalhau is dried salted cod, cooked in hundreds of ways, such as bacalhau à Brás with eggs and fries.",
+            "Caldo verde is a soup of kale and potato with chouriço; the francesinha is a big sandwich from Porto.",
+            "Feijoada is a bean stew, eaten in both countries; Brazil's version uses black beans. Say Leva carne?"
+          ],
+          "q": "Which dish would you like to try first, and why?",
+          "c": "Describe your favourite dish in Portuguese: Tem..., leva..., é feito com..."
+        },
+        "de": {
+          "t": "Typische Gerichte",
+          "g": "Du lernst bekannte Gerichte und sagst, was darin ist.",
+          "p": [
+            "Bacalhau ist getrockneter Salzkabeljau, auf hundert Arten gekocht, etwa bacalhau à Brás mit Ei und Pommes.",
+            "Caldo verde ist eine Suppe aus Grünkohl und Kartoffeln mit chouriço; die francesinha ist ein großes Sandwich aus Porto.",
+            "Feijoada ist ein Bohneneintopf aus beiden Ländern; in Brasilien mit schwarzen Bohnen. Frag: Leva carne?"
+          ],
+          "q": "Welches Gericht möchtest du zuerst probieren, und warum?",
+          "c": "Beschreib dein Lieblingsgericht auf Portugiesisch: Tem..., leva..., é feito com..."
+        },
+        "es": {
+          "t": "Platos típicos",
+          "g": "Conocer platos famosos y decir qué llevan.",
+          "p": [
+            "El bacalhau es bacalao seco y salado, cocinado de mil maneras, como el bacalhau à Brás con huevo y patatas.",
+            "El caldo verde es una sopa de col y patata con chouriço; la francesinha es un gran sándwich de Oporto.",
+            "La feijoada es un guiso de alubias de los dos países; en Brasil con frijoles negros. Pregunta: Leva carne?"
+          ],
+          "q": "¿Qué plato te gustaría probar primero y por qué?",
+          "c": "Describe tu plato favorito en portugués: Tem..., leva..., é feito com..."
+        },
+        "fr": {
+          "t": "Plats typiques",
+          "g": "Découvrir des plats célèbres et dire ce qu'ils contiennent.",
+          "p": [
+            "Le bacalhau est de la morue séchée et salée, cuisinée de cent façons, comme le bacalhau à Brás aux œufs et frites.",
+            "Le caldo verde est une soupe de chou et pomme de terre avec du chouriço ; la francesinha est un gros sandwich de Porto.",
+            "La feijoada est un ragoût de haricots des deux pays ; au Brésil avec des haricots noirs. Demande : Leva carne?"
+          ],
+          "q": "Quel plat aimerais-tu goûter en premier, et pourquoi ?",
+          "c": "Décris ton plat préféré en portugais : Tem..., leva..., é feito com..."
+        },
+        "it": {
+          "t": "Piatti tipici",
+          "g": "Conosci piatti famosi e dici cosa contengono.",
+          "p": [
+            "Il bacalhau è baccalà secco e salato, cucinato in cento modi, come il bacalhau à Brás con uova e patatine.",
+            "Il caldo verde è una zuppa di cavolo e patate con chouriço; la francesinha è un grande panino di Porto.",
+            "La feijoada è uno stufato di fagioli dei due paesi; in Brasile con fagioli neri. Chiedi: Leva carne?"
+          ],
+          "q": "Quale piatto vorresti assaggiare per primo, e perché?",
+          "c": "Descrivi il tuo piatto preferito in portoghese: Tem..., leva..., é feito com..."
+        },
+        "pt": {
+          "t": "Pratos típicos",
+          "g": "Revê como descrever pratos típicos a quem não os conhece.",
+          "p": [
+            "Leva e é feito com são as fórmulas mais úteis: O caldo verde leva couve, batata e chouriço.",
+            "Cada região tem o seu prato: francesinha no Porto, alheira em Mirandela, cataplana no Algarve.",
+            "A feijoada portuguesa usa feijão branco ou vermelho; a brasileira, feijão preto. Boa conversa à mesa!"
+          ],
+          "q": "Que prato português escolherias para apresentar a cozinha do país a um estrangeiro?",
+          "c": "Descreve três pratos regionais em duas frases cada, como se fosse para um menu turístico."
+        },
+        "pt_BR": {
+          "t": "Pratos típicos",
+          "g": "Conheça pratos portugueses e compare com os brasileiros.",
+          "p": [
+            "O bacalhau é o grande clássico: à Brás, com natas, à Gomes de Sá. Dizem que há mais de mil receitas.",
+            "O caldo verde leva couve, batata e chouriço; a francesinha do Porto é um sanduíche com molho especial.",
+            "A feijoada portuguesa leva feijão branco ou vermelho, e não preto. A sobremesa clássica é o arroz-doce."
+          ],
+          "q": "Qual prato português você tem mais curiosidade de provar?",
+          "c": "Compare a feijoada portuguesa e a brasileira em quatro frases."
+        }
+      },
+      "target": {
+        "vocab": [
+          {
+            "w": "o bacalhau",
+            "ex": "O bacalhau à Brás é o meu prato preferido."
+          },
+          {
+            "w": "o caldo verde",
+            "ex": "No inverno sabe bem um caldo verde."
+          },
+          {
+            "w": "a francesinha",
+            "ex": "A francesinha é típica do Porto."
+          },
+          {
+            "w": "leva",
+            "ex": "A sopa leva batata e couve."
+          },
+          {
+            "w": "é feito com",
+            "ex": "O arroz-doce é feito com leite e canela."
+          },
+          {
+            "w": "provar",
+            "ex": "Queres provar este queijo?"
+          }
+        ],
+        "gram": "Descrever pratos: leva + ingredientes, é feito com, tem. Pergunta útil: O que leva? Leva carne?"
+      }
+    },
+    {
+      "d": 75,
+      "lv": "A1",
+      "i18n": {
+        "en": {
+          "t": "Dar, dizer, trazer",
+          "g": "Learn the present tense of three common irregular verbs.",
+          "p": [
+            "Dar (to give): dou, dás, dá, damos, dão. Dou uma ajuda means I give a hand.",
+            "Dizer (to say): digo, dizes, diz, dizemos, dizem. Trazer (to bring): trago, trazes, traz, trazemos, trazem.",
+            "Notice the eu forms dou, digo, trago are the irregular ones. Como se diz...? means How do you say...?"
+          ],
+          "q": "What do you usually bring when you visit a friend's home? Answer with trago.",
+          "c": "Write one sentence for each verb with eu and one with eles: dou/dão, digo/dizem, trago/trazem."
+        },
+        "de": {
+          "t": "Dar, dizer, trazer",
+          "g": "Du lernst das Präsens von drei häufigen unregelmäßigen Verben.",
+          "p": [
+            "Dar (geben): dou, dás, dá, damos, dão. Dou uma ajuda heißt Ich helfe mit.",
+            "Dizer (sagen): digo, dizes, diz, dizemos, dizem. Trazer (bringen): trago, trazes, traz, trazemos, trazem.",
+            "Vor allem die eu-Formen dou, digo, trago sind unregelmäßig. Como se diz...? heißt Wie sagt man...?"
+          ],
+          "q": "Was bringst du normalerweise mit, wenn du Freunde besuchst? Antworte mit trago.",
+          "c": "Schreib zu jedem Verb einen Satz mit eu und einen mit eles: dou/dão, digo/dizem, trago/trazem."
+        },
+        "es": {
+          "t": "Dar, dizer, trazer",
+          "g": "Aprender el presente de tres verbos irregulares muy comunes.",
+          "p": [
+            "Dar: dou, dás, dá, damos, dão. Dou uma ajuda es echo una mano.",
+            "Dizer (decir): digo, dizes, diz, dizemos, dizem. Trazer (traer): trago, trazes, traz, trazemos, trazem.",
+            "Las formas de eu, dou, digo, trago, son las irregulares; se parecen a doy, digo, traigo."
+          ],
+          "q": "¿Qué sueles llevar cuando visitas a un amigo en su casa? Responde con trago.",
+          "c": "Escribe una frase por verbo con eu y otra con eles: dou/dão, digo/dizem, trago/trazem."
+        },
+        "fr": {
+          "t": "Dar, dizer, trazer",
+          "g": "Apprendre le présent de trois verbes irréguliers courants.",
+          "p": [
+            "Dar (donner) : dou, dás, dá, damos, dão. Dou uma ajuda veut dire je donne un coup de main.",
+            "Dizer (dire) : digo, dizes, diz, dizemos, dizem. Trazer (apporter) : trago, trazes, traz, trazemos, trazem.",
+            "Ce sont surtout les formes de eu, dou, digo, trago, qui sont irrégulières. Como se diz...? = Comment dit-on... ?"
+          ],
+          "q": "Qu'apportes-tu d'habitude quand tu vas chez un ami ? Réponds avec trago.",
+          "c": "Écris une phrase par verbe avec eu et une avec eles : dou/dão, digo/dizem, trago/trazem."
+        },
+        "it": {
+          "t": "Dar, dizer, trazer",
+          "g": "Impari il presente di tre verbi irregolari molto comuni.",
+          "p": [
+            "Dar (dare): dou, dás, dá, damos, dão. Dou uma ajuda vuol dire do una mano.",
+            "Dizer (dire): digo, dizes, diz, dizemos, dizem. Trazer (portare): trago, trazes, traz, trazemos, trazem.",
+            "Sono soprattutto le forme di eu, dou, digo, trago, a essere irregolari. Como se diz...? = Come si dice...?"
+          ],
+          "q": "Cosa porti di solito quando vai a casa di un amico? Rispondi con trago.",
+          "c": "Scrivi una frase per verbo con eu e una con eles: dou/dão, digo/dizem, trago/trazem."
+        },
+        "pt": {
+          "t": "Dar, dizer, trazer",
+          "g": "Revê três verbos irregulares e as expressões em que aparecem.",
+          "p": [
+            "Dar entra em muitas expressões: dar um passeio, dar jeito, dar-se bem com alguém, não dá.",
+            "Dizer bem/mal de alguém e trazer à memória são usos que enriquecem o discurso de quem aprende.",
+            "Erros frequentes de aprendentes: trazo em vez de trago, dizo em vez de digo. Vale a pena treinar."
+          ],
+          "q": "Qual é a tua expressão com dar preferida no dia a dia?",
+          "c": "Escreve cinco frases com expressões idiomáticas com dar e explica-as em linguagem simples."
+        },
+        "pt_BR": {
+          "t": "Dar, dizer, trazer",
+          "g": "Revise três verbos irregulares e usos portugueses.",
+          "p": [
+            "Os presentes são iguais: dou, digo, trago. Em Portugal, com tu: dás, dizes, trazes.",
+            "Dar jeito, em Portugal, é ser útil: Dava-me jeito uma ajuda. Não tem o sentido de dar um jeitinho.",
+            "Como se diz? é igual; em Portugal ouve-se também Como é que se diz? com o típico é que."
+          ],
+          "q": "Como você pediria ajuda a um português usando dar jeito?",
+          "c": "Escreva três frases com tu (dás, dizes, trazes) e uma com dar jeito."
+        }
+      },
+      "target": {
+        "vocab": [
+          {
+            "w": "dou",
+            "ex": "Dou-te uma ajuda com as malas."
+          },
+          {
+            "w": "dizes",
+            "ex": "O que dizes de irmos ao cinema?"
+          },
+          {
+            "w": "trago",
+            "ex": "Trago o vinho para o jantar."
+          },
+          {
+            "w": "como se diz...?",
+            "ex": "Como se diz isto em português?"
+          },
+          {
+            "w": "dar um passeio",
+            "ex": "Vamos dar um passeio pela praia?"
+          },
+          {
+            "w": "trazem",
+            "ex": "Os meus amigos trazem sobremesa."
+          }
+        ],
+        "gram": "Irregulares no presente: dar (dou, dás, dá), dizer (digo, dizes, diz), trazer (trago, trazes, traz). Plural: dão, dizem, trazem."
+      }
+    },
+    {
+      "d": 76,
+      "lv": "A1",
+      "i18n": {
+        "en": {
+          "t": "Feelings and moods",
+          "g": "Say how you feel today.",
+          "p": [
+            "With estar: Estou contente, triste, nervoso, cansado. Adjectives agree: ela está contente, eles estão cansados.",
+            "With ter or estar com: tenho fome / estou com fome (I am hungry), tenho sono, tenho frio.",
+            "Tenho saudades means I miss someone or something: Tenho saudades da minha família."
+          ],
+          "q": "How are you feeling today, and why? Use estou or tenho.",
+          "c": "Write four sentences about your feelings this week, using estou, tenho and estou com."
+        },
+        "de": {
+          "t": "Gefühle und Stimmungen",
+          "g": "Du sagst, wie du dich heute fühlst.",
+          "p": [
+            "Mit estar: Estou contente, triste, nervoso, cansado. Adjektive passen sich an: ela está contente, eles estão cansados.",
+            "Mit ter oder estar com: tenho fome / estou com fome (ich habe Hunger), tenho sono, tenho frio.",
+            "Tenho saudades heißt Ich vermisse: Tenho saudades da minha família."
+          ],
+          "q": "Wie fühlst du dich heute, und warum? Nutze estou oder tenho.",
+          "c": "Schreib vier Sätze über deine Gefühle diese Woche mit estou, tenho und estou com."
+        },
+        "es": {
+          "t": "Sentimientos y estados de ánimo",
+          "g": "Decir cómo te sientes hoy.",
+          "p": [
+            "Con estar: Estou contente, triste, nervoso, cansado. Concuerdan: ela está contente, eles estão cansados.",
+            "Con ter o estar com: tenho fome / estou com fome (tengo hambre), tenho sono, tenho frio.",
+            "Tenho saudades es echar de menos: Tenho saudades da minha família (echo de menos a mi familia)."
+          ],
+          "q": "¿Cómo te sientes hoy y por qué? Usa estou o tenho.",
+          "c": "Escribe cuatro frases sobre tus sentimientos esta semana, con estou, tenho y estou com."
+        },
+        "fr": {
+          "t": "Sentiments et humeurs",
+          "g": "Dire comment tu te sens aujourd'hui.",
+          "p": [
+            "Avec estar : Estou contente, triste, nervoso, cansado. Accord : ela está contente, eles estão cansados.",
+            "Avec ter ou estar com : tenho fome / estou com fome (j'ai faim), tenho sono, tenho frio.",
+            "Tenho saudades veut dire tu me manques, il me manque : Tenho saudades da minha família."
+          ],
+          "q": "Comment te sens-tu aujourd'hui, et pourquoi ? Utilise estou ou tenho.",
+          "c": "Écris quatre phrases sur tes sentiments cette semaine, avec estou, tenho et estou com."
+        },
+        "it": {
+          "t": "Sentimenti e stati d'animo",
+          "g": "Dici come ti senti oggi.",
+          "p": [
+            "Con estar: Estou contente, triste, nervoso, cansado. Si accordano: ela está contente, eles estão cansados.",
+            "Con ter o estar com: tenho fome / estou com fome (ho fame), tenho sono, tenho frio.",
+            "Tenho saudades vuol dire mi manca: Tenho saudades da minha família (mi manca la mia famiglia)."
+          ],
+          "q": "Come ti senti oggi, e perché? Usa estou o tenho.",
+          "c": "Scrivi quattro frasi sui tuoi sentimenti di questa settimana, con estou, tenho e estou com."
+        },
+        "pt": {
+          "t": "Sentimentos e estados de espírito",
+          "g": "Revê como exprimir emoções com nuance.",
+          "p": [
+            "Ter e estar com alternam: tenho fome é mais comum em Portugal, estou com fome é muito brasileiro.",
+            "Para dar nuance: um bocado nervoso, nada cansado, mesmo contente, todo contente.",
+            "Estar ansioso pode ser estar com muita vontade: Estou ansioso por te ver. Explica isto a quem aprende."
+          ],
+          "q": "Que palavra usas mais para descrever um dia bom?",
+          "c": "Escreve um pequeno diário de três dias, com um sentimento diferente em cada dia."
+        },
+        "pt_BR": {
+          "t": "Sentimentos e humor",
+          "g": "Revise como falar de emoções em Portugal.",
+          "p": [
+            "Em Portugal prefere-se tenho fome, tenho sono; estou com fome também se diz, mas é menos típico.",
+            "Estar chateado em Portugal é estar aborrecido ou irritado, não necessariamente triste.",
+            "Um bocado é um pouco: Estou um bocado cansado. É muito usado no dia a dia português."
+          ],
+          "q": "Como você está hoje, dito à portuguesa?",
+          "c": "Escreva quatro frases sobre seu humor com tenho, um bocado e chateado."
+        }
+      },
+      "target": {
+        "vocab": [
+          {
+            "w": "estou contente",
+            "ex": "Estou contente com o resultado."
+          },
+          {
+            "w": "estou cansado",
+            "ex": "Hoje estou muito cansado."
+          },
+          {
+            "w": "tenho fome",
+            "ex": "Tenho fome, vamos almoçar?"
+          },
+          {
+            "w": "tenho sono",
+            "ex": "Tenho sono, vou deitar-me."
+          },
+          {
+            "w": "nervoso",
+            "ex": "Estou nervoso antes do exame."
+          },
+          {
+            "w": "tenho saudades",
+            "ex": "Tenho saudades dos meus amigos."
+          }
+        ],
+        "gram": "Estados: estar + adjetivo (estou triste); ter + nome (tenho fome, sono, frio, saudades); também estar com fome."
+      }
+    },
+    {
+      "d": 77,
+      "lv": "A1",
+      "i18n": {
+        "en": {
+          "t": "Saudade",
+          "g": "Understand the famous word saudade and how people use it.",
+          "p": [
+            "Saudade is a warm, bittersweet feeling of missing someone, a place or a time you love.",
+            "Everyday use: Tenho saudades tuas (I miss you), Que saudades! (I miss it so much!), Mata saudades.",
+            "Brazilians often say Estou com saudade or Sinto saudade, usually in the singular."
+          ],
+          "q": "What or who do you feel saudade for? Tell me with tenho saudades de.",
+          "c": "Write three sentences with saudade: a person, a place and a food you miss."
+        },
+        "de": {
+          "t": "Saudade",
+          "g": "Du verstehst das berühmte Wort saudade und wie man es benutzt.",
+          "p": [
+            "Saudade ist ein warmes, bittersüßes Gefühl, jemanden, einen Ort oder eine Zeit zu vermissen, die man liebt.",
+            "Im Alltag: Tenho saudades tuas (Ich vermisse dich), Que saudades! (Wie sehr ich das vermisse!).",
+            "In Brasilien sagt man oft Estou com saudade oder Sinto saudade, meist im Singular."
+          ],
+          "q": "Wonach oder nach wem hast du saudade? Sag es mit tenho saudades de.",
+          "c": "Schreib drei Sätze mit saudade: eine Person, ein Ort und ein Essen, das du vermisst."
+        },
+        "es": {
+          "t": "Saudade",
+          "g": "Entender la famosa palabra saudade y cómo se usa.",
+          "p": [
+            "La saudade es un sentimiento cálido y agridulce de echar de menos a alguien, un lugar o una época querida.",
+            "En el día a día: Tenho saudades tuas (te echo de menos), Que saudades! (¡cuánto lo echo de menos!).",
+            "En Brasil se dice a menudo Estou com saudade o Sinto saudade, normalmente en singular."
+          ],
+          "q": "¿De qué o de quién sientes saudade? Dímelo con tenho saudades de.",
+          "c": "Escribe tres frases con saudade: una persona, un lugar y una comida que echas de menos."
+        },
+        "fr": {
+          "t": "Saudade",
+          "g": "Comprendre le célèbre mot saudade et son usage.",
+          "p": [
+            "La saudade est un sentiment doux-amer de manque d'une personne, d'un lieu ou d'une époque qu'on aime.",
+            "Au quotidien : Tenho saudades tuas (tu me manques), Que saudades! (Ça me manque tellement !).",
+            "Au Brésil on dit souvent Estou com saudade ou Sinto saudade, en général au singulier."
+          ],
+          "q": "De quoi ou de qui as-tu saudade ? Dis-le avec tenho saudades de.",
+          "c": "Écris trois phrases avec saudade : une personne, un lieu et un plat qui te manquent."
+        },
+        "it": {
+          "t": "Saudade",
+          "g": "Capisci la famosa parola saudade e come si usa.",
+          "p": [
+            "La saudade è un sentimento dolce-amaro di mancanza di una persona, un luogo o un tempo che ami.",
+            "Nella vita di tutti i giorni: Tenho saudades tuas (mi manchi), Que saudades! (Quanto mi manca!).",
+            "In Brasile si dice spesso Estou com saudade o Sinto saudade, di solito al singolare."
+          ],
+          "q": "Di cosa o di chi senti saudade? Dimmelo con tenho saudades de.",
+          "c": "Scrivi tre frasi con saudade: una persona, un luogo e un cibo che ti mancano."
+        },
+        "pt": {
+          "t": "Saudade",
+          "g": "Reflete sobre a palavra saudade e como a explicar a quem não a tem na língua.",
+          "p": [
+            "Saudade não é só tristeza: tem carinho, memória e muitas vezes a esperança de voltar a ver.",
+            "Usos do dia a dia: matar saudades, deixar saudades, Que saudades!, saudades tuas. O fado canta-a muito.",
+            "Em Portugal usa-se mais o plural (tenho saudades); no Brasil é frequente o singular (estou com saudade)."
+          ],
+          "q": "Como explicarias a palavra saudade a alguém que nunca a ouviu?",
+          "c": "Escreve uma explicação de saudade em três frases simples, com um exemplo da tua vida."
+        },
+        "pt_BR": {
+          "t": "Saudade",
+          "g": "Compare o uso de saudade em Portugal e no Brasil.",
+          "p": [
+            "Em Portugal o plural é mais comum: Tenho saudades tuas. No Brasil: Estou com saudade de você.",
+            "Matar saudades e Que saudades! são iguais nos dois países, assim como deixar saudades.",
+            "O fado português canta muito a saudade, tal como muitas canções brasileiras de bossa nova."
+          ],
+          "q": "De que lugar ou pessoa você tem mais saudade?",
+          "c": "Escreva três frases com saudades à portuguesa, usando o plural e tuas."
+        }
+      },
+      "target": {
+        "vocab": [
+          {
+            "w": "a saudade",
+            "ex": "A saudade faz parte da cultura portuguesa."
+          },
+          {
+            "w": "tenho saudades tuas",
+            "ex": "Tenho saudades tuas, quando voltas?"
+          },
+          {
+            "w": "que saudades!",
+            "ex": "Que saudades do verão!"
+          },
+          {
+            "w": "matar saudades",
+            "ex": "Fui à minha terra matar saudades."
+          },
+          {
+            "w": "deixar saudades",
+            "ex": "Estas férias vão deixar saudades."
+          },
+          {
+            "w": "sentir falta de",
+            "ex": "Sinto falta do pão da minha avó."
+          }
+        ],
+        "gram": "Saudade: ter saudades de + nome (tenho saudades do mar), saudades tuas, matar saudades. No Brasil: estar com saudade."
+      }
+    },
+    {
+      "d": 78,
+      "lv": "A1",
+      "i18n": {
+        "en": {
+          "t": "Ter de and precisar de",
+          "g": "Express obligation and need.",
+          "p": [
+            "Ter de + infinitive means to have to: Tenho de estudar (I have to study). Brazil prefers ter que.",
+            "Precisar de + noun means to need: Preciso de ajuda. Before a verb, de usually drops: Preciso estudar.",
+            "Negative: Não tens de vir means you do not have to come, not that you must not."
+          ],
+          "q": "What do you have to do tomorrow? Tell me two things with tenho de.",
+          "c": "Write a to-do list of five sentences with tenho de and preciso de."
+        },
+        "de": {
+          "t": "Ter de und precisar de",
+          "g": "Du drückst Pflicht und Bedarf aus.",
+          "p": [
+            "Ter de + Infinitiv heißt müssen: Tenho de estudar (Ich muss lernen). Brasilien bevorzugt ter que.",
+            "Precisar de + Nomen heißt brauchen: Preciso de ajuda. Vor einem Verb fällt de meist weg: Preciso estudar.",
+            "Verneint: Não tens de vir heißt du musst nicht kommen, nicht du darfst nicht kommen."
+          ],
+          "q": "Was musst du morgen tun? Sag mir zwei Dinge mit tenho de.",
+          "c": "Schreib eine To-do-Liste mit fünf Sätzen mit tenho de und preciso de."
+        },
+        "es": {
+          "t": "Ter de y precisar de",
+          "g": "Expresar obligación y necesidad.",
+          "p": [
+            "Ter de + infinitivo es tener que: Tenho de estudar (tengo que estudiar). En Brasil se prefiere ter que.",
+            "Precisar de + sustantivo es necesitar: Preciso de ajuda. Ante un verbo, el de suele caer: Preciso estudar.",
+            "Negativo: Não tens de vir es no tienes que venir, igual que en español."
+          ],
+          "q": "¿Qué tienes que hacer mañana? Dime dos cosas con tenho de.",
+          "c": "Escribe una lista de tareas de cinco frases con tenho de y preciso de."
+        },
+        "fr": {
+          "t": "Ter de et precisar de",
+          "g": "Exprimer l'obligation et le besoin.",
+          "p": [
+            "Ter de + infinitif veut dire devoir : Tenho de estudar (je dois étudier). Le Brésil préfère ter que.",
+            "Precisar de + nom veut dire avoir besoin de : Preciso de ajuda. Devant un verbe, de tombe souvent : Preciso estudar.",
+            "Négation : Não tens de vir veut dire tu n'es pas obligé de venir, pas tu ne dois pas venir."
+          ],
+          "q": "Qu'est-ce que tu dois faire demain ? Dis-moi deux choses avec tenho de.",
+          "c": "Écris une liste de tâches de cinq phrases avec tenho de et preciso de."
+        },
+        "it": {
+          "t": "Ter de e precisar de",
+          "g": "Esprimi obbligo e bisogno.",
+          "p": [
+            "Ter de + infinito vuol dire dovere: Tenho de estudar (devo studiare). Il Brasile preferisce ter que.",
+            "Precisar de + nome vuol dire avere bisogno di: Preciso de ajuda. Davanti a un verbo, il de spesso cade: Preciso estudar.",
+            "Al negativo: Não tens de vir vuol dire non sei obbligato a venire, non che non devi venire."
+          ],
+          "q": "Cosa devi fare domani? Dimmi due cose con tenho de.",
+          "c": "Scrivi una lista di cose da fare in cinque frasi con tenho de e preciso de."
+        },
+        "pt": {
+          "t": "Ter de e precisar de",
+          "g": "Revê a obrigação e a necessidade, e a escolha entre ter de e ter que.",
+          "p": [
+            "Ter de é a forma tradicional em Portugal; ter que é muito usado, sobretudo no Brasil, e é aceite.",
+            "Precisar de + nome é obrigatório; antes de infinitivo, preciso de estudar e preciso estudar coexistem.",
+            "Não ter de é ausência de obrigação; para proibir usa-se não poder: Aqui não podes fumar."
+          ],
+          "q": "Dizes mais tenho de ou tenho que? Já reparaste nisso?",
+          "c": "Explica a um estrangeiro, com dois exemplos, a diferença entre não tens de e não podes."
+        },
+        "pt_BR": {
+          "t": "Ter de e precisar de",
+          "g": "Revise ter de, a forma preferida em Portugal.",
+          "p": [
+            "Em Portugal ouve-se mais Tenho de ir do que Tenho que ir; ambas estão corretas.",
+            "Precisar pede de antes de nome: Preciso de um táxi. Em Portugal, também antes de verbo: Preciso de sair.",
+            "Não tens de vir quer dizer que não é obrigatório, tal como no Brasil."
+          ],
+          "q": "O que você tem de fazer esta semana, dito com tens ou tenho de?",
+          "c": "Escreva cinco obrigações suas com tenho de e preciso de, à portuguesa."
+        }
+      },
+      "target": {
+        "vocab": [
+          {
+            "w": "tenho de",
+            "ex": "Tenho de acordar cedo amanhã."
+          },
+          {
+            "w": "preciso de",
+            "ex": "Preciso de um café."
+          },
+          {
+            "w": "precisas de ajuda?",
+            "ex": "Precisas de ajuda com as malas?"
+          },
+          {
+            "w": "não tens de",
+            "ex": "Não tens de pagar, eu convido."
+          },
+          {
+            "w": "temos de ir",
+            "ex": "Está tarde, temos de ir."
+          },
+          {
+            "w": "a obrigação",
+            "ex": "Estudar não é só uma obrigação, é um prazer."
+          }
+        ],
+        "gram": "Obrigação: ter de + infinitivo (tenho de sair); no Brasil ter que. Necessidade: precisar de + nome (preciso de ajuda)."
+      }
+    },
+    {
+      "d": 79,
+      "lv": "A1",
+      "i18n": {
+        "en": {
+          "t": "Hotels and accommodation",
+          "g": "Book a room, check in and ask about breakfast and wi-fi.",
+          "p": [
+            "Book: Queria reservar um quarto duplo / individual para três noites. Tem quartos livres?",
+            "Check in: Tenho uma reserva em nome de... The key is a chave; the reception is a receção.",
+            "Ask: O pequeno-almoço está incluído? A que horas é? Qual é a palavra-passe do wi-fi?"
+          ],
+          "q": "What is most important to you in a hotel: location, breakfast or a quiet room?",
+          "c": "Write a check-in dialogue: your reservation, breakfast time and the wi-fi password."
+        },
+        "de": {
+          "t": "Hotels und Unterkunft",
+          "g": "Du buchst ein Zimmer, checkst ein und fragst nach Frühstück und WLAN.",
+          "p": [
+            "Buchen: Queria reservar um quarto duplo / individual para três noites. Tem quartos livres?",
+            "Einchecken: Tenho uma reserva em nome de... Der Schlüssel ist a chave, die Rezeption a receção.",
+            "Fragen: O pequeno-almoço está incluído? A que horas é? Qual é a palavra-passe do wi-fi?"
+          ],
+          "q": "Was ist dir in einem Hotel am wichtigsten: Lage, Frühstück oder ein ruhiges Zimmer?",
+          "c": "Schreib einen Check-in-Dialog: Reservierung, Frühstückszeit und WLAN-Passwort."
+        },
+        "es": {
+          "t": "Hoteles y alojamiento",
+          "g": "Reservar habitación, hacer el check-in y preguntar por el desayuno y el wifi.",
+          "p": [
+            "Reservar: Queria reservar um quarto duplo / individual para três noites. Tem quartos livres?",
+            "Llegada: Tenho uma reserva em nome de... La llave es a chave; la recepción, a receção.",
+            "Pregunta: O pequeno-almoço está incluído? A que horas é? Qual é a palavra-passe do wi-fi?"
+          ],
+          "q": "¿Qué es lo más importante para ti en un hotel: la ubicación, el desayuno o una habitación tranquila?",
+          "c": "Escribe un diálogo de llegada: tu reserva, la hora del desayuno y la contraseña del wifi."
+        },
+        "fr": {
+          "t": "Hôtels et hébergement",
+          "g": "Réserver une chambre, faire le check-in et demander le petit-déjeuner et le wi-fi.",
+          "p": [
+            "Réserver : Queria reservar um quarto duplo / individual para três noites. Tem quartos livres?",
+            "Arrivée : Tenho uma reserva em nome de... La clé, c'est a chave ; la réception, a receção.",
+            "Demander : O pequeno-almoço está incluído? A que horas é? Qual é a palavra-passe do wi-fi?"
+          ],
+          "q": "Qu'est-ce qui compte le plus pour toi à l'hôtel : l'emplacement, le petit-déjeuner ou le calme ?",
+          "c": "Écris un dialogue d'arrivée : ta réservation, l'heure du petit-déjeuner et le mot de passe wi-fi."
+        },
+        "it": {
+          "t": "Hotel e alloggio",
+          "g": "Prenoti una camera, fai il check-in e chiedi di colazione e wi-fi.",
+          "p": [
+            "Prenotare: Queria reservar um quarto duplo / individual para três noites. Tem quartos livres?",
+            "All'arrivo: Tenho uma reserva em nome de... La chiave è a chave; la reception è a receção.",
+            "Chiedi: O pequeno-almoço está incluído? A que horas é? Qual é a palavra-passe do wi-fi?"
+          ],
+          "q": "Cosa conta di più per te in un hotel: la posizione, la colazione o una camera tranquilla?",
+          "c": "Scrivi un dialogo di check-in: prenotazione, orario della colazione e password del wi-fi."
+        },
+        "pt": {
+          "t": "Hotéis e alojamento",
+          "g": "Revê o vocabulário do alojamento e as diferenças entre Portugal e Brasil.",
+          "p": [
+            "Alojamento local é muito comum em Portugal; pousada pode ser um hotel histórico, como as Pousadas de Portugal.",
+            "Palavra-passe em Portugal, senha no Brasil; receção em Portugal, recepção no Brasil.",
+            "Pequeno-almoço incluído, meia pensão e pensão completa são termos úteis para quem reserva."
+          ],
+          "q": "Que tipo de alojamento recomendarias a um estrangeiro que visita Portugal pela primeira vez?",
+          "c": "Escreve um email curto e educado para reservar um quarto, com datas e um pedido especial."
+        },
+        "pt_BR": {
+          "t": "Hotéis e hospedagem",
+          "g": "Revise o vocabulário de hotel usado em Portugal.",
+          "p": [
+            "Pequeno-almoço é o café da manhã, palavra-passe é a senha e a receção é a recepção.",
+            "Alojamento local corresponde às casas e apartamentos de temporada; quarto individual é quarto de solteiro.",
+            "Uma frase típica: O pequeno-almoço é servido das sete às dez. A casa de banho é privativa."
+          ],
+          "q": "Que pergunta você faria primeiro ao chegar a um hotel em Lisboa?",
+          "c": "Escreva um diálogo de check-in com pequeno-almoço, palavra-passe e casa de banho."
+        }
+      },
+      "target": {
+        "vocab": [
+          {
+            "w": "reservar um quarto",
+            "ex": "Queria reservar um quarto para duas noites."
+          },
+          {
+            "w": "o quarto duplo",
+            "ex": "Tem um quarto duplo com vista para o mar?"
+          },
+          {
+            "w": "a reserva",
+            "ex": "Tenho uma reserva em nome de Silva."
+          },
+          {
+            "w": "o pequeno-almoço",
+            "ex": "O pequeno-almoço está incluído?"
+          },
+          {
+            "w": "a chave",
+            "ex": "Aqui está a chave do quarto."
+          },
+          {
+            "w": "a palavra-passe",
+            "ex": "Qual é a palavra-passe do wi-fi?"
+          }
+        ],
+        "gram": "No hotel: Queria reservar + quarto; Tenho uma reserva em nome de...; perguntas com está incluído? e a que horas é?"
+      }
+    },
+    {
+      "d": 80,
+      "lv": "A1",
+      "i18n": {
+        "en": {
+          "t": "Dates and birthdays",
+          "g": "Say dates, ask about birthdays and wish happy birthday.",
+          "p": [
+            "Dates: o dia + number + de + month: 5 de maio. The first is often o dia 1 or primeiro de janeiro.",
+            "Ask Quando fazes anos? (When is your birthday?) Answer Faço anos a 3 de junho. Brazil: Quando é seu aniversário?",
+            "Wish Parabéns! or Feliz aniversário! People sing Parabéns a você at the party."
+          ],
+          "q": "When is your birthday, and how do you like to celebrate it?",
+          "c": "Write the birthdays of three people you know, in full: O meu pai faz anos a..."
+        },
+        "de": {
+          "t": "Daten und Geburtstage",
+          "g": "Du sagst Daten, fragst nach Geburtstagen und gratulierst.",
+          "p": [
+            "Daten: o dia + Zahl + de + Monat: 5 de maio. Der Erste ist oft o dia 1 oder primeiro de janeiro.",
+            "Frag Quando fazes anos? (Wann hast du Geburtstag?) Antwort: Faço anos a 3 de junho. Brasilien: Quando é seu aniversário?",
+            "Gratulieren: Parabéns! oder Feliz aniversário! Auf der Feier singt man Parabéns a você."
+          ],
+          "q": "Wann hast du Geburtstag, und wie feierst du am liebsten?",
+          "c": "Schreib die Geburtstage von drei Personen voll aus: O meu pai faz anos a..."
+        },
+        "es": {
+          "t": "Fechas y cumpleaños",
+          "g": "Decir fechas, preguntar por cumpleaños y felicitar.",
+          "p": [
+            "Fechas: o dia + número + de + mes: 5 de maio. Los meses van en minúscula, como en español.",
+            "Pregunta Quando fazes anos? (¿cuándo es tu cumpleaños?) Respuesta: Faço anos a 3 de junho. Brasil: Quando é seu aniversário?",
+            "Felicita con Parabéns! o Feliz aniversário! En la fiesta se canta Parabéns a você."
+          ],
+          "q": "¿Cuándo es tu cumpleaños y cómo te gusta celebrarlo?",
+          "c": "Escribe los cumpleaños de tres personas que conoces: O meu pai faz anos a..."
+        },
+        "fr": {
+          "t": "Dates et anniversaires",
+          "g": "Dire les dates, demander un anniversaire et souhaiter bon anniversaire.",
+          "p": [
+            "Dates : o dia + nombre + de + mois : 5 de maio. Les mois s'écrivent en minuscule, comme en français.",
+            "Demande Quando fazes anos? (C'est quand ton anniversaire ?) Réponse : Faço anos a 3 de junho. Brésil : Quando é seu aniversário?",
+            "Souhaite Parabéns! ou Feliz aniversário! À la fête on chante Parabéns a você."
+          ],
+          "q": "Quand est ton anniversaire, et comment aimes-tu le fêter ?",
+          "c": "Écris les anniversaires de trois personnes que tu connais : O meu pai faz anos a..."
+        },
+        "it": {
+          "t": "Date e compleanni",
+          "g": "Dici le date, chiedi i compleanni e fai gli auguri.",
+          "p": [
+            "Date: o dia + numero + de + mese: 5 de maio. I mesi si scrivono minuscoli, come in italiano.",
+            "Chiedi Quando fazes anos? (Quando compi gli anni?) Risposta: Faço anos a 3 de junho. Brasile: Quando é seu aniversário?",
+            "Auguri: Parabéns! o Feliz aniversário! Alla festa si canta Parabéns a você."
+          ],
+          "q": "Quando è il tuo compleanno, e come ti piace festeggiarlo?",
+          "c": "Scrivi i compleanni di tre persone che conosci: O meu pai faz anos a..."
+        },
+        "pt": {
+          "t": "Datas e aniversários",
+          "g": "Revê como dizer datas e as fórmulas de aniversário.",
+          "p": [
+            "Fazer anos é muito português; no Brasil diz-se fazer aniversário. Ambos se entendem.",
+            "Com o novo Acordo Ortográfico, os meses escrevem-se com minúscula: 25 de abril, 10 de junho.",
+            "Parabéns serve para aniversários e conquistas: Parabéns pelo novo emprego! Muitos parabéns!"
+          ],
+          "q": "Como se costuma festejar um aniversário na tua família?",
+          "c": "Escreve uma mensagem de parabéns calorosa para um amigo, com uma data e um desejo."
+        },
+        "pt_BR": {
+          "t": "Datas e aniversários",
+          "g": "Revise como os portugueses falam de aniversários.",
+          "p": [
+            "Em Portugal pergunta-se Quando fazes anos? e responde-se Faço anos a 10 de maio, com a.",
+            "Parabéns a você é cantado nos dois países, com letras um pouco diferentes.",
+            "O dia 10 de junho é o Dia de Portugal, e o 25 de abril também é feriado nacional."
+          ],
+          "q": "Quando você faz anos, e o que gosta de fazer nesse dia?",
+          "c": "Escreva três frases com fazer anos e a + data, à portuguesa."
+        }
+      },
+      "target": {
+        "vocab": [
+          {
+            "w": "quando fazes anos?",
+            "ex": "Quando fazes anos? Em março."
+          },
+          {
+            "w": "faço anos a...",
+            "ex": "Faço anos a 12 de outubro."
+          },
+          {
+            "w": "parabéns!",
+            "ex": "Parabéns! Muitas felicidades!"
+          },
+          {
+            "w": "o aniversário",
+            "ex": "A festa de aniversário é no sábado."
+          },
+          {
+            "w": "o dia 1 de janeiro",
+            "ex": "O dia 1 de janeiro é feriado."
+          },
+          {
+            "w": "a data",
+            "ex": "Qual é a data de hoje?"
+          }
+        ],
+        "gram": "Datas: dia + de + mês (25 de abril), meses com minúscula. Fazer anos a + data: faço anos a 3 de maio."
+      }
+    }
+  ]
+}

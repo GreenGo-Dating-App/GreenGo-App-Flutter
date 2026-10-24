@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_english",
+ "lessons": [
+  {
+   "d": 271,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Sounding natural: fillers",
+     "g": "Sound more natural by using fillers to buy time like a native speaker.",
+     "p": [
+      "Start an answer: Well, ... Let me think... That's a good question. Hmm, let me see...",
+      "Explain or correct yourself: I mean, ... What I'm trying to say is... It's kind of like...",
+      "Use them lightly: one or two fillers sound natural, but too many make you sound unsure."
+     ],
+     "q": "What's something you find hard to describe in English? Try answering with a filler like Well or Let me think.",
+     "c": "Answer three tricky questions out loud today, starting each one with a different filler: Well, Let me think, I mean."
+    },
+    "de": {
+     "t": "Sounding natural: fillers",
+     "g": "Du klingst natürlicher, weil du mit Füllwörtern Zeit gewinnst wie Muttersprachler.",
+     "p": [
+      "Eine Antwort beginnen: Well, ... Let me think... That's a good question. Hmm, let me see...",
+      "Erklären oder korrigieren: I mean, ... What I'm trying to say is... It's kind of like...",
+      "Sparsam einsetzen: Ein oder zwei Füllwörter klingen natürlich, zu viele wirken unsicher."
+     ],
+     "q": "Was findest du auf Englisch schwer zu beschreiben? Versuch zu antworten und beginne mit Well oder Let me think.",
+     "c": "Beantworte heute drei knifflige Fragen laut und beginne jede mit einem anderen Füllwort: Well, Let me think, I mean."
+    },
+    "es": {
+     "t": "Sounding natural: fillers",
+     "g": "Suena más natural usando muletillas para ganar tiempo como un nativo.",
+     "p": [
+      "Para empezar una respuesta: Well, ... Let me think... That's a good question. Hmm, let me see...",
+      "Para explicar o corregirte: I mean, ... What I'm trying to say is... It's kind of like...",
+      "Úsalas con moderación: una o dos suenan naturales, pero demasiadas te hacen sonar inseguro."
+     ],
+     "q": "¿Qué te cuesta describir en inglés? Intenta responder empezando con Well o Let me think.",
+     "c": "Responde hoy en voz alta a tres preguntas difíciles, empezando cada una con una muletilla distinta: Well, Let me think, I mean."
+    },
+    "fr": {
+     "t": "Sounding natural: fillers",
+     "g": "Parle plus naturellement en utilisant des mots de remplissage pour gagner du temps, comme un natif.",
+     "p": [
+      "Commencer une réponse : Well, ... Let me think... That's a good question. Hmm, let me see...",
+      "Expliquer ou te corriger : I mean, ... What I'm trying to say is... It's kind of like...",
+      "Avec modération : un ou deux sonnent naturel, mais trop te font paraître hésitant."
+     ],
+     "q": "Qu'est-ce que tu trouves difficile à décrire en anglais ? Essaie de répondre en commençant par Well ou Let me think.",
+     "c": "Réponds à voix haute à trois questions difficiles aujourd'hui, chacune avec un mot différent : Well, Let me think, I mean."
+    },
+    "it": {
+     "t": "Sounding natural: fillers",
+     "g": "Suona più naturale usando i riempitivi per prendere tempo come un madrelingua.",
+     "p": [
+      "Per iniziare una risposta: Well, ... Let me think... That's a good question. Hmm, let me see...",
+      "Per spiegare o correggerti: I mean, ... What I'm trying to say is... It's kind of like...",
+      "Con moderazione: uno o due suonano naturali, troppi ti fanno sembrare insicuro."
+     ],
+     "q": "Cosa trovi difficile da descrivere in inglese? Prova a rispondere iniziando con Well o Let me think.",
+     "c": "Rispondi oggi ad alta voce a tre domande difficili, iniziando ognuna con un riempitivo diverso: Well, Let me think, I mean."
+    },
+    "pt": {
+     "t": "Sounding natural: fillers",
+     "g": "Soa mais natural ao usar bordões para ganhar tempo como um nativo.",
+     "p": [
+      "Para começar uma resposta: Well, ... Let me think... That's a good question. Hmm, let me see...",
+      "Para explicar ou corrigir-te: I mean, ... What I'm trying to say is... It's kind of like...",
+      "Usa-os com moderação: um ou dois soam naturais, demasiados fazem-te parecer inseguro."
+     ],
+     "q": "O que achas difícil de descrever em inglês? Tenta responder começando com Well ou Let me think.",
+     "c": "Responde hoje em voz alta a três perguntas difíceis, começando cada uma com um bordão diferente: Well, Let me think, I mean."
+    },
+    "pt_BR": {
+     "t": "Sounding natural: fillers",
+     "g": "Soe mais natural usando expressões de preenchimento para ganhar tempo como um nativo.",
+     "p": [
+      "Para começar uma resposta: Well, ... Let me think... That's a good question. Hmm, let me see...",
+      "Para explicar ou se corrigir: I mean, ... What I'm trying to say is... It's kind of like...",
+      "Use com moderação: uma ou duas soam naturais, mas muitas fazem você parecer inseguro."
+     ],
+     "q": "O que você acha difícil de descrever em inglês? Tente responder começando com Well ou Let me think.",
+     "c": "Responda hoje em voz alta a três perguntas difíceis, começando cada uma com uma expressão diferente: Well, Let me think, I mean."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "well",
+      "ex": "Well, it depends on the weather."
+     },
+     {
+      "w": "you know",
+      "ex": "It was, you know, a really long day."
+     },
+     {
+      "w": "I mean",
+      "ex": "It's expensive. I mean, it's worth it, but still."
+     },
+     {
+      "w": "let me think",
+      "ex": "Let me think... I'd say about twenty people."
+     },
+     {
+      "w": "kind of like",
+      "ex": "It's kind of like a pancake, but thinner."
+     },
+     {
+      "w": "how can I put it",
+      "ex": "He's, how can I put it, very confident."
+     }
+    ],
+    "gram": "Fillers buy time and soften: Well (start or hesitate), I mean (correct or explain), you know (shared idea), Let me think. Use them lightly."
+   }
+  },
+  {
+   "d": 272,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Softening language: a bit, kind of",
+     "g": "Sound polite and less direct by softening what you say.",
+     "p": [
+      "Soften adjectives: It's a bit expensive. I'm kind of busy. It's sort of complicated.",
+      "Use not very + a positive word instead of a strong negative: It wasn't very good is softer than It was terrible.",
+      "Soften opinions: I'm not sure that's right. I don't really agree. Maybe we could try another way?"
+     ],
+     "q": "How would you politely tell a friend that their new haircut isn't your favourite?",
+     "c": "Make three direct sentences softer, e.g. This is boring → This is a bit boring or This isn't very exciting."
+    },
+    "de": {
+     "t": "Softening language: a bit, kind of",
+     "g": "Du klingst höflicher und weniger direkt, weil du deine Aussagen abschwächst.",
+     "p": [
+      "Adjektive abschwächen: It's a bit expensive. I'm kind of busy. It's sort of complicated.",
+      "Not very + positives Wort statt eines harten Negativs: It wasn't very good klingt sanfter als It was terrible.",
+      "Meinungen abschwächen: I'm not sure that's right. I don't really agree. Maybe we could try another way?"
+     ],
+     "q": "Wie würdest du einem Freund höflich sagen, dass dir seine neue Frisur nicht so gefällt?",
+     "c": "Mach drei direkte Sätze weicher, z. B. This is boring → This is a bit boring oder This isn't very exciting."
+    },
+    "es": {
+     "t": "Softening language: a bit, kind of",
+     "g": "Suena educado y menos directo suavizando lo que dices.",
+     "p": [
+      "Suaviza adjetivos: It's a bit expensive. I'm kind of busy. It's sort of complicated.",
+      "Usa not very + palabra positiva en lugar de algo negativo fuerte: It wasn't very good suena más suave que It was terrible.",
+      "Suaviza opiniones: I'm not sure that's right. I don't really agree. Maybe we could try another way?"
+     ],
+     "q": "¿Cómo le dirías con tacto a un amigo que su nuevo corte de pelo no es tu favorito?",
+     "c": "Suaviza tres frases directas, p. ej. This is boring → This is a bit boring o This isn't very exciting."
+    },
+    "fr": {
+     "t": "Softening language: a bit, kind of",
+     "g": "Sois poli et moins direct en atténuant ce que tu dis.",
+     "p": [
+      "Atténue les adjectifs : It's a bit expensive. I'm kind of busy. It's sort of complicated.",
+      "Not very + mot positif au lieu d'un négatif fort : It wasn't very good est plus doux que It was terrible.",
+      "Atténue tes opinions : I'm not sure that's right. I don't really agree. Maybe we could try another way?"
+     ],
+     "q": "Comment dirais-tu poliment à un ami que sa nouvelle coupe n'est pas ta préférée ?",
+     "c": "Adoucis trois phrases directes, par ex. This is boring → This is a bit boring ou This isn't very exciting."
+    },
+    "it": {
+     "t": "Softening language: a bit, kind of",
+     "g": "Suona educato e meno diretto attenuando quello che dici.",
+     "p": [
+      "Attenua gli aggettivi: It's a bit expensive. I'm kind of busy. It's sort of complicated.",
+      "Usa not very + parola positiva invece di un negativo forte: It wasn't very good è più morbido di It was terrible.",
+      "Attenua le opinioni: I'm not sure that's right. I don't really agree. Maybe we could try another way?"
+     ],
+     "q": "Come diresti con garbo a un amico che il suo nuovo taglio di capelli non è il tuo preferito?",
+     "c": "Ammorbidisci tre frasi dirette, ad es. This is boring → This is a bit boring o This isn't very exciting."
+    },
+    "pt": {
+     "t": "Softening language: a bit, kind of",
+     "g": "Soa educado e menos direto ao suavizar o que dizes.",
+     "p": [
+      "Suaviza adjetivos: It's a bit expensive. I'm kind of busy. It's sort of complicated.",
+      "Usa not very + palavra positiva em vez de um negativo forte: It wasn't very good soa mais suave do que It was terrible.",
+      "Suaviza opiniões: I'm not sure that's right. I don't really agree. Maybe we could try another way?"
+     ],
+     "q": "Como dirias com jeito a um amigo que o novo corte de cabelo dele não é o teu preferido?",
+     "c": "Suaviza três frases diretas, p. ex. This is boring → This is a bit boring ou This isn't very exciting."
+    },
+    "pt_BR": {
+     "t": "Softening language: a bit, kind of",
+     "g": "Soe educado e menos direto suavizando o que você diz.",
+     "p": [
+      "Suavize adjetivos: It's a bit expensive. I'm kind of busy. It's sort of complicated.",
+      "Use not very + palavra positiva em vez de um negativo forte: It wasn't very good soa mais suave que It was terrible.",
+      "Suavize opiniões: I'm not sure that's right. I don't really agree. Maybe we could try another way?"
+     ],
+     "q": "Como você diria com jeito a um amigo que o novo corte de cabelo dele não é o seu favorito?",
+     "c": "Suavize três frases diretas, ex.: This is boring → This is a bit boring ou This isn't very exciting."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "a bit",
+      "ex": "The soup is a bit salty."
+     },
+     {
+      "w": "kind of",
+      "ex": "I'm kind of tired, to be honest."
+     },
+     {
+      "w": "sort of",
+      "ex": "It's sort of a mix between jazz and pop."
+     },
+     {
+      "w": "not really",
+      "ex": "I'm not really a fan of horror films."
+     },
+     {
+      "w": "not very",
+      "ex": "The hotel wasn't very clean."
+     },
+     {
+      "w": "I'm not sure that",
+      "ex": "I'm not sure that's the best idea."
+     }
+    ],
+    "gram": "Softening: a bit / kind of / sort of + adjective; not very + positive adjective instead of a negative one: It's not very good (= bad)."
+   }
+  },
+  {
+   "d": 273,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Showing interest: Really? No way!",
+     "g": "React in conversation to show you're listening and interested.",
+     "p": [
+      "Surprise: Really? No way! You're kidding! Good news: That's amazing! Congratulations! Bad news: Oh no! That's a shame.",
+      "Echo questions copy the auxiliary: I've just moved. Have you? / He didn't come. Didn't he? / I can drive. Can you?",
+      "Understanding: Oh, I see. That makes sense. Fair enough. Your tone matters as much as the words!"
+     ],
+     "q": "Tell me something surprising that happened to you. I'll react, and then you react to my story!",
+     "c": "Write three short exchanges: one surprise, one good news and one bad news, each with a reaction and an echo question."
+    },
+    "de": {
+     "t": "Showing interest: Really? No way!",
+     "g": "Du reagierst im Gespräch und zeigst, dass du zuhörst und interessiert bist.",
+     "p": [
+      "Überraschung: Really? No way! You're kidding! Gute Nachricht: That's amazing! Congratulations! Schlechte: Oh no! That's a shame.",
+      "Echo-Fragen übernehmen das Hilfsverb: I've just moved. Have you? / He didn't come. Didn't he? / I can drive. Can you?",
+      "Verstehen: Oh, I see. That makes sense. Fair enough. Der Tonfall zählt genauso wie die Worte!"
+     ],
+     "q": "Erzähl mir etwas Überraschendes, das dir passiert ist. Ich reagiere, und dann reagierst du auf meine Geschichte!",
+     "c": "Schreib drei kurze Dialoge: Überraschung, gute und schlechte Nachricht, jeweils mit Reaktion und Echo-Frage."
+    },
+    "es": {
+     "t": "Showing interest: Really? No way!",
+     "g": "Reacciona en la conversación para mostrar que escuchas y te interesa.",
+     "p": [
+      "Sorpresa: Really? No way! You're kidding! Buenas noticias: That's amazing! Congratulations! Malas: Oh no! That's a shame.",
+      "Las preguntas eco copian el auxiliar: I've just moved. Have you? / He didn't come. Didn't he? / I can drive. Can you?",
+      "Comprensión: Oh, I see. That makes sense. Fair enough. ¡El tono importa tanto como las palabras!"
+     ],
+     "q": "Cuéntame algo sorprendente que te pasó. Yo reacciono y luego tú reaccionas a mi historia.",
+     "c": "Escribe tres diálogos cortos: sorpresa, buena noticia y mala noticia, cada uno con reacción y pregunta eco."
+    },
+    "fr": {
+     "t": "Showing interest: Really? No way!",
+     "g": "Réagis dans la conversation pour montrer que tu écoutes et que ça t'intéresse.",
+     "p": [
+      "Surprise : Really? No way! You're kidding! Bonne nouvelle : That's amazing! Congratulations! Mauvaise : Oh no! That's a shame.",
+      "Les questions écho reprennent l'auxiliaire : I've just moved. Have you? / He didn't come. Didn't he? / I can drive. Can you?",
+      "Compréhension : Oh, I see. That makes sense. Fair enough. Le ton compte autant que les mots !"
+     ],
+     "q": "Raconte-moi quelque chose de surprenant qui t'est arrivé. Je réagis, puis tu réagis à mon histoire !",
+     "c": "Écris trois petits échanges : surprise, bonne et mauvaise nouvelle, chacun avec une réaction et une question écho."
+    },
+    "it": {
+     "t": "Showing interest: Really? No way!",
+     "g": "Reagisci nella conversazione per mostrare che ascolti e sei interessato.",
+     "p": [
+      "Sorpresa: Really? No way! You're kidding! Buone notizie: That's amazing! Congratulations! Cattive: Oh no! That's a shame.",
+      "Le domande eco riprendono l'ausiliare: I've just moved. Have you? / He didn't come. Didn't he? / I can drive. Can you?",
+      "Capire: Oh, I see. That makes sense. Fair enough. Il tono conta quanto le parole!"
+     ],
+     "q": "Raccontami qualcosa di sorprendente che ti è successo. Io reagisco e poi tu reagisci alla mia storia!",
+     "c": "Scrivi tre brevi scambi: sorpresa, buona e cattiva notizia, ognuno con una reazione e una domanda eco."
+    },
+    "pt": {
+     "t": "Showing interest: Really? No way!",
+     "g": "Reage na conversa para mostrar que estás a ouvir e interessado.",
+     "p": [
+      "Surpresa: Really? No way! You're kidding! Boas notícias: That's amazing! Congratulations! Más: Oh no! That's a shame.",
+      "As perguntas eco copiam o auxiliar: I've just moved. Have you? / He didn't come. Didn't he? / I can drive. Can you?",
+      "Compreensão: Oh, I see. That makes sense. Fair enough. O tom conta tanto como as palavras!"
+     ],
+     "q": "Conta-me algo surpreendente que te aconteceu. Eu reajo e depois reages tu à minha história!",
+     "c": "Escreve três diálogos curtos: surpresa, boa e má notícia, cada um com uma reação e uma pergunta eco."
+    },
+    "pt_BR": {
+     "t": "Showing interest: Really? No way!",
+     "g": "Reaja na conversa para mostrar que você está ouvindo e interessado.",
+     "p": [
+      "Surpresa: Really? No way! You're kidding! Boas notícias: That's amazing! Congratulations! Ruins: Oh no! That's a shame.",
+      "As perguntas eco copiam o auxiliar: I've just moved. Have you? / He didn't come. Didn't he? / I can drive. Can you?",
+      "Compreensão: Oh, I see. That makes sense. Fair enough. O tom conta tanto quanto as palavras!"
+     ],
+     "q": "Me conte algo surpreendente que aconteceu com você. Eu reajo e depois você reage à minha história!",
+     "c": "Escreva três diálogos curtos: surpresa, boa e má notícia, cada um com uma reação e uma pergunta eco."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "Really?",
+      "ex": "Really? I had no idea!"
+     },
+     {
+      "w": "No way!",
+      "ex": "No way! You met her in person?"
+     },
+     {
+      "w": "That's amazing!",
+      "ex": "You got the job? That's amazing!"
+     },
+     {
+      "w": "Oh, I see.",
+      "ex": "Oh, I see. That makes sense now."
+     },
+     {
+      "w": "You're kidding!",
+      "ex": "You're kidding! It snowed in May?"
+     },
+     {
+      "w": "That's a shame.",
+      "ex": "Your trip was cancelled? That's a shame."
+     }
+    ],
+    "gram": "Echo questions show interest: I've been to Peru. Have you? / She can't swim. Can't she? Match the auxiliary and tense of the speaker."
+   }
+  },
+  {
+   "d": 274,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Asking follow-up questions",
+     "g": "Keep conversations flowing by asking good follow-up questions.",
+     "p": [
+      "Open questions get longer answers: What happened next? How did you feel? Why was that? What was it like?",
+      "What was it like? asks for a description: What was the concert like? It was loud but amazing!",
+      "Listen for a detail and ask about it: I went to Japan. → Oh, which city did you visit? Did you try the food?"
+     ],
+     "q": "Tell me about something you did recently, and then ask me two follow-up questions about my week.",
+     "c": "Today, in a real or imagined chat, ask three follow-up questions starting with What, How and Why."
+    },
+    "de": {
+     "t": "Asking follow-up questions",
+     "g": "Du hältst Gespräche am Laufen, indem du gute Nachfragen stellst.",
+     "p": [
+      "Offene Fragen bringen längere Antworten: What happened next? How did you feel? Why was that? What was it like?",
+      "What was it like? fragt nach einer Beschreibung: What was the concert like? It was loud but amazing!",
+      "Achte auf ein Detail und frag nach: I went to Japan. → Oh, which city did you visit? Did you try the food?"
+     ],
+     "q": "Erzähl mir von etwas, das du neulich gemacht hast, und stell mir dann zwei Nachfragen zu meiner Woche.",
+     "c": "Stell heute in einem echten oder ausgedachten Chat drei Nachfragen mit What, How und Why."
+    },
+    "es": {
+     "t": "Asking follow-up questions",
+     "g": "Mantén viva la conversación con buenas preguntas de seguimiento.",
+     "p": [
+      "Las preguntas abiertas dan respuestas largas: What happened next? How did you feel? Why was that? What was it like?",
+      "What was it like? pide una descripción: What was the concert like? It was loud but amazing!",
+      "Fíjate en un detalle y pregunta: I went to Japan. → Oh, which city did you visit? Did you try the food?"
+     ],
+     "q": "Cuéntame algo que hiciste hace poco y luego hazme dos preguntas de seguimiento sobre mi semana.",
+     "c": "Hoy, en un chat real o imaginario, haz tres preguntas de seguimiento que empiecen por What, How y Why."
+    },
+    "fr": {
+     "t": "Asking follow-up questions",
+     "g": "Fais vivre la conversation en posant de bonnes questions de relance.",
+     "p": [
+      "Les questions ouvertes donnent des réponses longues : What happened next? How did you feel? Why was that? What was it like?",
+      "What was it like? demande une description : What was the concert like? It was loud but amazing!",
+      "Repère un détail et rebondis : I went to Japan. → Oh, which city did you visit? Did you try the food?"
+     ],
+     "q": "Raconte-moi quelque chose que tu as fait récemment, puis pose-moi deux questions de relance sur ma semaine.",
+     "c": "Aujourd'hui, dans un vrai chat ou un chat imaginaire, pose trois questions de relance avec What, How et Why."
+    },
+    "it": {
+     "t": "Asking follow-up questions",
+     "g": "Mantieni viva la conversazione con buone domande di approfondimento.",
+     "p": [
+      "Le domande aperte portano risposte lunghe: What happened next? How did you feel? Why was that? What was it like?",
+      "What was it like? chiede una descrizione: What was the concert like? It was loud but amazing!",
+      "Cogli un dettaglio e chiedi: I went to Japan. → Oh, which city did you visit? Did you try the food?"
+     ],
+     "q": "Raccontami qualcosa che hai fatto di recente e poi fammi due domande di approfondimento sulla mia settimana.",
+     "c": "Oggi, in una chat vera o immaginaria, fai tre domande di approfondimento con What, How e Why."
+    },
+    "pt": {
+     "t": "Asking follow-up questions",
+     "g": "Mantém a conversa a fluir com boas perguntas de seguimento.",
+     "p": [
+      "As perguntas abertas dão respostas longas: What happened next? How did you feel? Why was that? What was it like?",
+      "What was it like? pede uma descrição: What was the concert like? It was loud but amazing!",
+      "Repara num detalhe e pergunta: I went to Japan. → Oh, which city did you visit? Did you try the food?"
+     ],
+     "q": "Conta-me algo que fizeste há pouco e depois faz-me duas perguntas de seguimento sobre a minha semana.",
+     "c": "Hoje, num chat real ou imaginário, faz três perguntas de seguimento começadas por What, How e Why."
+    },
+    "pt_BR": {
+     "t": "Asking follow-up questions",
+     "g": "Mantenha a conversa fluindo com boas perguntas de acompanhamento.",
+     "p": [
+      "Perguntas abertas geram respostas longas: What happened next? How did you feel? Why was that? What was it like?",
+      "What was it like? pede uma descrição: What was the concert like? It was loud but amazing!",
+      "Repare num detalhe e pergunte: I went to Japan. → Oh, which city did you visit? Did you try the food?"
+     ],
+     "q": "Me conte algo que você fez há pouco e depois me faça duas perguntas de acompanhamento sobre a minha semana.",
+     "c": "Hoje, num chat real ou imaginário, faça três perguntas de acompanhamento começando com What, How e Why."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "What happened next?",
+      "ex": "What happened next? Did you find your bag?"
+     },
+     {
+      "w": "How did you feel?",
+      "ex": "How did you feel when you heard the news?"
+     },
+     {
+      "w": "What was it like?",
+      "ex": "What was it like living in Canada?"
+     },
+     {
+      "w": "Why was that?",
+      "ex": "You left early? Why was that?"
+     },
+     {
+      "w": "Did you manage to...?",
+      "ex": "Did you manage to get tickets in the end?"
+     },
+     {
+      "w": "Tell me more about",
+      "ex": "Tell me more about your new job."
+     }
+    ],
+    "gram": "Follow-up questions: open wh- questions (What, How, Why) keep people talking; What was it like? asks for a description, not a preference."
+   }
+  },
+  {
+   "d": 275,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Telling jokes and puns",
+     "g": "Enjoy simple English jokes and puns, and understand why they're funny.",
+     "p": [
+      "Many puns use one word with two meanings: Why did the bicycle fall over? Because it was two tired. (too / two)",
+      "Knock-knock jokes play with sounds: Knock knock. Who's there? Lettuce. Lettuce who? Lettuce in, it's cold! (Let us)",
+      "Telling jokes: Have you heard the one about...? Did you get it? I'm just joking! That's so bad it's good!"
+     ],
+     "q": "Do you know a joke in your language? Could you try to explain it in English?",
+     "c": "Learn one English pun or knock-knock joke by heart and tell it to someone today, then explain why it's funny."
+    },
+    "de": {
+     "t": "Telling jokes and puns",
+     "g": "Du hast Spaß an einfachen englischen Witzen und Wortspielen und verstehst, warum sie lustig sind.",
+     "p": [
+      "Viele Wortspiele nutzen ein Wort mit zwei Bedeutungen: Why did the bicycle fall over? Because it was two tired. (too / two)",
+      "Knock-knock-Witze spielen mit Klängen: Knock knock. Who's there? Lettuce. Lettuce who? Lettuce in, it's cold! (Let us)",
+      "Witze erzählen: Have you heard the one about...? Did you get it? I'm just joking! That's so bad it's good!"
+     ],
+     "q": "Kennst du einen Witz in deiner Sprache? Könntest du versuchen, ihn auf Englisch zu erklären?",
+     "c": "Lern ein englisches Wortspiel oder einen Knock-knock-Witz auswendig, erzähl ihn heute jemandem und erklär die Pointe."
+    },
+    "es": {
+     "t": "Telling jokes and puns",
+     "g": "Disfruta de chistes y juegos de palabras sencillos en inglés y entiende por qué tienen gracia.",
+     "p": [
+      "Muchos juegos de palabras usan una palabra con dos sentidos: Why did the bicycle fall over? Because it was two tired. (too / two)",
+      "Los chistes knock-knock juegan con sonidos: Knock knock. Who's there? Lettuce. Lettuce who? Lettuce in, it's cold! (Let us)",
+      "Contar chistes: Have you heard the one about...? Did you get it? I'm just joking! That's so bad it's good!"
+     ],
+     "q": "¿Conoces algún chiste en tu idioma? ¿Podrías intentar explicarlo en inglés?",
+     "c": "Apréndete un juego de palabras o un chiste knock-knock en inglés, cuéntaselo hoy a alguien y explica la gracia."
+    },
+    "fr": {
+     "t": "Telling jokes and puns",
+     "g": "Amuse-toi avec des blagues et des jeux de mots simples en anglais, et comprends pourquoi ils sont drôles.",
+     "p": [
+      "Beaucoup de jeux de mots utilisent un mot à double sens : Why did the bicycle fall over? Because it was two tired. (too / two)",
+      "Les blagues knock-knock jouent sur les sons : Knock knock. Who's there? Lettuce. Lettuce who? Lettuce in, it's cold! (Let us)",
+      "Raconter une blague : Have you heard the one about...? Did you get it? I'm just joking! That's so bad it's good!"
+     ],
+     "q": "Connais-tu une blague dans ta langue ? Pourrais-tu essayer de l'expliquer en anglais ?",
+     "c": "Apprends par cœur un jeu de mots ou une blague knock-knock en anglais, raconte-la aujourd'hui et explique pourquoi c'est drôle."
+    },
+    "it": {
+     "t": "Telling jokes and puns",
+     "g": "Divertiti con barzellette e giochi di parole semplici in inglese e capisci perché fanno ridere.",
+     "p": [
+      "Molti giochi di parole usano una parola con due significati: Why did the bicycle fall over? Because it was two tired. (too / two)",
+      "Le barzellette knock-knock giocano coi suoni: Knock knock. Who's there? Lettuce. Lettuce who? Lettuce in, it's cold! (Let us)",
+      "Raccontare barzellette: Have you heard the one about...? Did you get it? I'm just joking! That's so bad it's good!"
+     ],
+     "q": "Conosci una barzelletta nella tua lingua? Proveresti a spiegarla in inglese?",
+     "c": "Impara a memoria un gioco di parole o una barzelletta knock-knock, raccontala oggi a qualcuno e spiega perché fa ridere."
+    },
+    "pt": {
+     "t": "Telling jokes and puns",
+     "g": "Diverte-te com piadas e trocadilhos simples em inglês e percebe porque têm graça.",
+     "p": [
+      "Muitos trocadilhos usam uma palavra com dois sentidos: Why did the bicycle fall over? Because it was two tired. (too / two)",
+      "As piadas knock-knock brincam com sons: Knock knock. Who's there? Lettuce. Lettuce who? Lettuce in, it's cold! (Let us)",
+      "Contar piadas: Have you heard the one about...? Did you get it? I'm just joking! That's so bad it's good!"
+     ],
+     "q": "Conheces alguma piada na tua língua? Conseguias tentar explicá-la em inglês?",
+     "c": "Decora um trocadilho ou uma piada knock-knock em inglês, conta-a hoje a alguém e explica porque tem graça."
+    },
+    "pt_BR": {
+     "t": "Telling jokes and puns",
+     "g": "Divirta-se com piadas e trocadilhos simples em inglês e entenda por que eles têm graça.",
+     "p": [
+      "Muitos trocadilhos usam uma palavra com dois sentidos: Why did the bicycle fall over? Because it was two tired. (too / two)",
+      "As piadas knock-knock brincam com sons: Knock knock. Who's there? Lettuce. Lettuce who? Lettuce in, it's cold! (Let us)",
+      "Contar piadas: Have you heard the one about...? Did you get it? I'm just joking! That's so bad it's good!"
+     ],
+     "q": "Você conhece alguma piada na sua língua? Conseguiria tentar explicá-la em inglês?",
+     "c": "Decore um trocadilho ou uma piada knock-knock em inglês, conte para alguém hoje e explique por que tem graça."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "pun",
+      "ex": "A pun is a joke that plays with a word's two meanings."
+     },
+     {
+      "w": "punchline",
+      "ex": "I always forget the punchline!"
+     },
+     {
+      "w": "get the joke",
+      "ex": "It took me a minute to get the joke."
+     },
+     {
+      "w": "knock knock",
+      "ex": "Knock knock. Who's there? Lettuce. Lettuce who? Lettuce in!"
+     },
+     {
+      "w": "That's hilarious!",
+      "ex": "That's hilarious! Tell it again."
+     },
+     {
+      "w": "I'm just joking",
+      "ex": "Don't worry, I'm just joking!"
+     }
+    ],
+    "gram": "Puns play on two meanings or similar sounds: A book about gravity? It's impossible to put down. (put down = stop reading / drop)"
+   }
+  },
+  {
+   "d": 276,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Pronunciation: intonation",
+     "g": "Use rising and falling intonation in questions, lists and surprise.",
+     "p": [
+      "Yes/no questions usually rise: Do you like coffee? ↗ Wh- questions usually fall: What time is it? ↘",
+      "Lists rise, rise, then fall at the end: I need eggs ↗, milk ↗ and bread ↘.",
+      "Surprise jumps high: Really?! You did what?! Question tags fall when you're sure, rise when you really ask."
+     ],
+     "q": "Say this out loud: Are you hungry? What do you want to eat? Which one goes up and which one goes down?",
+     "c": "Record yourself saying a yes/no question, a wh- question and a list of three things, then check your voice moves."
+    },
+    "de": {
+     "t": "Pronunciation: intonation",
+     "g": "Du nutzt steigende und fallende Intonation bei Fragen, Aufzählungen und Überraschung.",
+     "p": [
+      "Ja/Nein-Fragen steigen meist: Do you like coffee? ↗ W-Fragen fallen meist: What time is it? ↘",
+      "Aufzählungen steigen, steigen und fallen am Ende: I need eggs ↗, milk ↗ and bread ↘.",
+      "Überraschung springt hoch: Really?! You did what?! Question tags fallen, wenn du sicher bist, und steigen bei echten Fragen."
+     ],
+     "q": "Sag laut: Are you hungry? What do you want to eat? Welche Frage geht nach oben, welche nach unten?",
+     "c": "Nimm dich auf: eine Ja/Nein-Frage, eine W-Frage und eine Aufzählung mit drei Dingen. Hör, ob deine Stimme sich bewegt."
+    },
+    "es": {
+     "t": "Pronunciation: intonation",
+     "g": "Usa la entonación ascendente y descendente en preguntas, listas y sorpresa.",
+     "p": [
+      "Las preguntas de sí/no suelen subir: Do you like coffee? ↗ Las de wh- suelen bajar: What time is it? ↘",
+      "Las listas suben, suben y bajan al final: I need eggs ↗, milk ↗ and bread ↘.",
+      "La sorpresa sube mucho: Really?! You did what?! Las question tags bajan si estás seguro y suben si preguntas de verdad."
+     ],
+     "q": "Dilo en voz alta: Are you hungry? What do you want to eat? ¿Cuál sube y cuál baja?",
+     "c": "Grábate diciendo una pregunta de sí/no, una de wh- y una lista de tres cosas, y comprueba que tu voz se mueve."
+    },
+    "fr": {
+     "t": "Pronunciation: intonation",
+     "g": "Utilise l'intonation montante et descendante dans les questions, les listes et la surprise.",
+     "p": [
+      "Les questions fermées montent souvent : Do you like coffee? ↗ Les questions en wh- descendent : What time is it? ↘",
+      "Les listes montent, montent puis descendent à la fin : I need eggs ↗, milk ↗ and bread ↘.",
+      "La surprise monte haut : Really?! You did what?! Les question tags descendent si tu es sûr, montent si tu demandes vraiment."
+     ],
+     "q": "Dis à voix haute : Are you hungry? What do you want to eat? Laquelle monte et laquelle descend ?",
+     "c": "Enregistre-toi : une question fermée, une question en wh- et une liste de trois choses. Vérifie que ta voix bouge."
+    },
+    "it": {
+     "t": "Pronunciation: intonation",
+     "g": "Usa l'intonazione ascendente e discendente in domande, elenchi e sorpresa.",
+     "p": [
+      "Le domande sì/no di solito salgono: Do you like coffee? ↗ Quelle con wh- di solito scendono: What time is it? ↘",
+      "Gli elenchi salgono, salgono e scendono alla fine: I need eggs ↗, milk ↗ and bread ↘.",
+      "La sorpresa sale molto: Really?! You did what?! Le question tag scendono se sei sicuro, salgono se chiedi davvero."
+     ],
+     "q": "Dillo ad alta voce: Are you hungry? What do you want to eat? Quale sale e quale scende?",
+     "c": "Registrati mentre dici una domanda sì/no, una con wh- e un elenco di tre cose, poi controlla che la voce si muova."
+    },
+    "pt": {
+     "t": "Pronunciation: intonation",
+     "g": "Usa a entoação ascendente e descendente em perguntas, listas e surpresa.",
+     "p": [
+      "As perguntas de sim/não costumam subir: Do you like coffee? ↗ As de wh- costumam descer: What time is it? ↘",
+      "As listas sobem, sobem e descem no fim: I need eggs ↗, milk ↗ and bread ↘.",
+      "A surpresa sobe muito: Really?! You did what?! As question tags descem se tens a certeza e sobem se perguntas mesmo."
+     ],
+     "q": "Diz em voz alta: Are you hungry? What do you want to eat? Qual sobe e qual desce?",
+     "c": "Grava-te a dizer uma pergunta de sim/não, uma de wh- e uma lista de três coisas, e confirma que a voz se mexe."
+    },
+    "pt_BR": {
+     "t": "Pronunciation: intonation",
+     "g": "Use a entonação ascendente e descendente em perguntas, listas e surpresa.",
+     "p": [
+      "Perguntas de sim/não costumam subir: Do you like coffee? ↗ As de wh- costumam descer: What time is it? ↘",
+      "Listas sobem, sobem e descem no final: I need eggs ↗, milk ↗ and bread ↘.",
+      "A surpresa sobe bastante: Really?! You did what?! As question tags descem se você tem certeza e sobem se pergunta de verdade."
+     ],
+     "q": "Fale em voz alta: Are you hungry? What do you want to eat? Qual sobe e qual desce?",
+     "c": "Grave-se dizendo uma pergunta de sim/não, uma de wh- e uma lista de três coisas, e confira se a voz se move."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "rising intonation",
+      "ex": "Are you ready? (voice goes up)"
+     },
+     {
+      "w": "falling intonation",
+      "ex": "Where do you live? (voice goes down)"
+     },
+     {
+      "w": "list intonation",
+      "ex": "I bought apples, bananas and pears."
+     },
+     {
+      "w": "surprise",
+      "ex": "You did WHAT? (voice jumps up)"
+     },
+     {
+      "w": "question tag (checking)",
+      "ex": "It's cold today, isn't it? (voice falls)"
+     },
+     {
+      "w": "question tag (asking)",
+      "ex": "You're coming, aren't you? (voice rises)"
+     }
+    ],
+    "gram": "Intonation: yes/no questions usually rise, wh- questions usually fall; in lists, voice rises on each item and falls on the last."
+   }
+  },
+  {
+   "d": 277,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Pronunciation: weak forms",
+     "g": "Hear and use weak forms of little words like to, for, can and was in fast speech.",
+     "p": [
+      "In natural speech, small words lose stress and become /ə/: I want to go sounds like I wanna go. A cup of tea → a cuppa tea.",
+      "Strong forms come back at the end or for emphasis: Can you swim? Yes, I can! /kæn/. Who's it for? /fɔː/",
+      "Stress the important words and let the small ones go quick: I WENT to the SHOP for some BREAD."
+     ],
+     "q": "Listen to a short English song or video today. Can you hear the weak forms of to, for or and?",
+     "c": "Practise saying I was going to call you and fish and chips for two quickly, with weak forms, five times each."
+    },
+    "de": {
+     "t": "Pronunciation: weak forms",
+     "g": "Du hörst und nutzt schwache Formen kleiner Wörter wie to, for, can und was im schnellen Sprechen.",
+     "p": [
+      "Kleine Wörter verlieren die Betonung und werden zu /ə/: I want to go klingt wie I wanna go. A cup of tea → a cuppa tea.",
+      "Starke Formen kommen am Ende oder bei Betonung zurück: Can you swim? Yes, I can! /kæn/. Who's it for? /fɔː/",
+      "Betone die wichtigen Wörter, die kleinen gehen schnell: I WENT to the SHOP for some BREAD."
+     ],
+     "q": "Hör dir heute ein kurzes englisches Lied oder Video an. Erkennst du die schwachen Formen von to, for oder and?",
+     "c": "Sag I was going to call you und fish and chips for two schnell mit schwachen Formen, jeweils fünfmal."
+    },
+    "es": {
+     "t": "Pronunciation: weak forms",
+     "g": "Escucha y usa las formas débiles de palabras pequeñas como to, for, can y was al hablar rápido.",
+     "p": [
+      "Al hablar, las palabras pequeñas pierden fuerza y suenan /ə/: I want to go suena como I wanna go. A cup of tea → a cuppa tea.",
+      "La forma fuerte vuelve al final o al enfatizar: Can you swim? Yes, I can! /kæn/. Who's it for? /fɔː/",
+      "Acentúa las palabras importantes y pasa rápido por las pequeñas: I WENT to the SHOP for some BREAD."
+     ],
+     "q": "Escucha hoy una canción o un vídeo corto en inglés. ¿Oyes las formas débiles de to, for o and?",
+     "c": "Practica decir rápido I was going to call you y fish and chips for two con formas débiles, cinco veces cada una."
+    },
+    "fr": {
+     "t": "Pronunciation: weak forms",
+     "g": "Entends et utilise les formes faibles des petits mots comme to, for, can et was à l'oral rapide.",
+     "p": [
+      "À l'oral, les petits mots perdent l'accent et deviennent /ə/ : I want to go sonne comme I wanna go. A cup of tea → a cuppa tea.",
+      "La forme forte revient en fin de phrase ou pour insister : Can you swim? Yes, I can! /kæn/. Who's it for? /fɔː/",
+      "Accentue les mots importants et passe vite sur les petits : I WENT to the SHOP for some BREAD."
+     ],
+     "q": "Écoute aujourd'hui une chanson ou une courte vidéo en anglais. Entends-tu les formes faibles de to, for ou and ?",
+     "c": "Entraîne-toi à dire vite I was going to call you et fish and chips for two avec les formes faibles, cinq fois chacune."
+    },
+    "it": {
+     "t": "Pronunciation: weak forms",
+     "g": "Riconosci e usa le forme deboli di parole piccole come to, for, can e was nel parlato veloce.",
+     "p": [
+      "Nel parlato le parole piccole perdono l'accento e diventano /ə/: I want to go suona come I wanna go. A cup of tea → a cuppa tea.",
+      "La forma forte torna alla fine o per enfasi: Can you swim? Yes, I can! /kæn/. Who's it for? /fɔː/",
+      "Accentua le parole importanti e passa veloce su quelle piccole: I WENT to the SHOP for some BREAD."
+     ],
+     "q": "Ascolta oggi una canzone o un breve video in inglese. Senti le forme deboli di to, for o and?",
+     "c": "Esercitati a dire velocemente I was going to call you e fish and chips for two con le forme deboli, cinque volte ciascuna."
+    },
+    "pt": {
+     "t": "Pronunciation: weak forms",
+     "g": "Ouve e usa as formas fracas de palavras pequenas como to, for, can e was na fala rápida.",
+     "p": [
+      "Na fala, as palavras pequenas perdem o acento e soam /ə/: I want to go soa como I wanna go. A cup of tea → a cuppa tea.",
+      "A forma forte volta no fim ou para dar ênfase: Can you swim? Yes, I can! /kæn/. Who's it for? /fɔː/",
+      "Acentua as palavras importantes e passa depressa pelas pequenas: I WENT to the SHOP for some BREAD."
+     ],
+     "q": "Ouve hoje uma canção ou um vídeo curto em inglês. Consegues ouvir as formas fracas de to, for ou and?",
+     "c": "Pratica dizer depressa I was going to call you e fish and chips for two com formas fracas, cinco vezes cada."
+    },
+    "pt_BR": {
+     "t": "Pronunciation: weak forms",
+     "g": "Ouça e use as formas fracas de palavras pequenas como to, for, can e was na fala rápida.",
+     "p": [
+      "Na fala, as palavras pequenas perdem a força e soam /ə/: I want to go soa como I wanna go. A cup of tea → a cuppa tea.",
+      "A forma forte volta no final ou para dar ênfase: Can you swim? Yes, I can! /kæn/. Who's it for? /fɔː/",
+      "Acentue as palavras importantes e passe rápido pelas pequenas: I WENT to the SHOP for some BREAD."
+     ],
+     "q": "Ouça hoje uma música ou um vídeo curto em inglês. Você consegue ouvir as formas fracas de to, for ou and?",
+     "c": "Pratique dizer rápido I was going to call you e fish and chips for two com formas fracas, cinco vezes cada."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "to /tə/",
+      "ex": "I want to go home. (want-tə-go)"
+     },
+     {
+      "w": "for /fə/",
+      "ex": "This is for you. (this-is-fə-you)"
+     },
+     {
+      "w": "can /kən/",
+      "ex": "I can swim. (I-kən-swim)"
+     },
+     {
+      "w": "was /wəz/",
+      "ex": "He was late. (he-wəz-late)"
+     },
+     {
+      "w": "and /ən/",
+      "ex": "fish and chips (fish-ən-chips)"
+     },
+     {
+      "w": "of /əv/",
+      "ex": "a cup of tea (a-cup-ə-tea)"
+     }
+    ],
+    "gram": "Weak forms: small grammar words are unstressed with schwa /ə/ in fast speech; strong only when stressed or at the end: Yes, I can."
+   }
+  },
+  {
+   "d": 278,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Spelling rules that help",
+     "g": "Learn useful spelling patterns so you make fewer mistakes when writing.",
+     "p": [
+      "Doubling: one short vowel + one consonant → double it: stop → stopped, run → running, big → bigger. But: rain → raining.",
+      "Silent e drops before a vowel ending: make → making, hope → hoped. Consonant + y → i: happy → happier, carry → carried.",
+      "I before e except after c: believe, friend, piece, but receive, ceiling. Watch out: weird is an exception!"
+     ],
+     "q": "Which English words do you always find hard to spell? Is there a pattern behind them?",
+     "c": "Add -ing and -ed to five verbs (stop, plan, hope, try, open) and check which spelling rule each one follows."
+    },
+    "de": {
+     "t": "Spelling rules that help",
+     "g": "Du lernst nützliche Rechtschreibmuster, damit du beim Schreiben weniger Fehler machst.",
+     "p": [
+      "Verdoppeln: kurzer Vokal + ein Konsonant → doppelt: stop → stopped, run → running, big → bigger. Aber: rain → raining.",
+      "Stummes e fällt vor Vokal-Endungen weg: make → making, hope → hoped. Konsonant + y → i: happy → happier, carry → carried.",
+      "I vor e, außer nach c: believe, friend, piece, aber receive, ceiling. Achtung: weird ist eine Ausnahme!"
+     ],
+     "q": "Welche englischen Wörter findest du immer schwer zu schreiben? Steckt ein Muster dahinter?",
+     "c": "Häng -ing und -ed an fünf Verben (stop, plan, hope, try, open) und prüfe, welcher Regel jedes folgt."
+    },
+    "es": {
+     "t": "Spelling rules that help",
+     "g": "Aprende patrones de ortografía útiles para cometer menos errores al escribir.",
+     "p": [
+      "Doblar: vocal corta + una consonante → se dobla: stop → stopped, run → running, big → bigger. Pero: rain → raining.",
+      "La e muda desaparece ante una terminación vocálica: make → making, hope → hoped. Consonante + y → i: happy → happier, carry → carried.",
+      "I antes de e, salvo después de c: believe, friend, piece, pero receive, ceiling. Ojo: weird es una excepción."
+     ],
+     "q": "¿Qué palabras en inglés te cuesta siempre escribir? ¿Hay algún patrón detrás?",
+     "c": "Añade -ing y -ed a cinco verbos (stop, plan, hope, try, open) y comprueba qué regla sigue cada uno."
+    },
+    "fr": {
+     "t": "Spelling rules that help",
+     "g": "Apprends des règles d'orthographe utiles pour faire moins de fautes à l'écrit.",
+     "p": [
+      "Doubler : voyelle courte + une consonne → on double : stop → stopped, run → running, big → bigger. Mais : rain → raining.",
+      "Le e muet tombe devant une terminaison voyelle : make → making, hope → hoped. Consonne + y → i : happy → happier, carry → carried.",
+      "I avant e sauf après c : believe, friend, piece, mais receive, ceiling. Attention : weird est une exception !"
+     ],
+     "q": "Quels mots anglais as-tu toujours du mal à écrire ? Y a-t-il une règle derrière ?",
+     "c": "Ajoute -ing et -ed à cinq verbes (stop, plan, hope, try, open) et vérifie quelle règle chacun suit."
+    },
+    "it": {
+     "t": "Spelling rules that help",
+     "g": "Impara schemi ortografici utili per fare meno errori quando scrivi.",
+     "p": [
+      "Raddoppio: vocale breve + una consonante → raddoppia: stop → stopped, run → running, big → bigger. Ma: rain → raining.",
+      "La e muta cade davanti a una desinenza vocalica: make → making, hope → hoped. Consonante + y → i: happy → happier, carry → carried.",
+      "I prima di e, tranne dopo c: believe, friend, piece, ma receive, ceiling. Attenzione: weird è un'eccezione!"
+     ],
+     "q": "Quali parole inglesi trovi sempre difficili da scrivere? C'è uno schema dietro?",
+     "c": "Aggiungi -ing e -ed a cinque verbi (stop, plan, hope, try, open) e controlla quale regola segue ciascuno."
+    },
+    "pt": {
+     "t": "Spelling rules that help",
+     "g": "Aprende padrões de ortografia úteis para dares menos erros ao escrever.",
+     "p": [
+      "Dobrar: vogal curta + uma consoante → dobra: stop → stopped, run → running, big → bigger. Mas: rain → raining.",
+      "O e mudo cai antes de terminação em vogal: make → making, hope → hoped. Consoante + y → i: happy → happier, carry → carried.",
+      "I antes de e, exceto depois de c: believe, friend, piece, mas receive, ceiling. Atenção: weird é uma exceção!"
+     ],
+     "q": "Que palavras inglesas achas sempre difíceis de escrever? Há algum padrão por trás?",
+     "c": "Junta -ing e -ed a cinco verbos (stop, plan, hope, try, open) e verifica que regra cada um segue."
+    },
+    "pt_BR": {
+     "t": "Spelling rules that help",
+     "g": "Aprenda padrões de ortografia úteis para errar menos ao escrever.",
+     "p": [
+      "Dobrar: vogal curta + uma consoante → dobra: stop → stopped, run → running, big → bigger. Mas: rain → raining.",
+      "O e mudo cai antes de terminação com vogal: make → making, hope → hoped. Consoante + y → i: happy → happier, carry → carried.",
+      "I antes de e, exceto depois de c: believe, friend, piece, mas receive, ceiling. Atenção: weird é uma exceção!"
+     ],
+     "q": "Quais palavras em inglês você sempre acha difíceis de escrever? Existe algum padrão por trás?",
+     "c": "Acrescente -ing e -ed a cinco verbos (stop, plan, hope, try, open) e confira qual regra cada um segue."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "stop → stopped",
+      "ex": "The bus stopped right outside my house."
+     },
+     {
+      "w": "big → bigger",
+      "ex": "My new flat is bigger than the old one."
+     },
+     {
+      "w": "make → making",
+      "ex": "I'm making dinner for my friends."
+     },
+     {
+      "w": "happy → happiness",
+      "ex": "Happiness is spending time with family."
+     },
+     {
+      "w": "believe (i before e)",
+      "ex": "I believe you can do it."
+     },
+     {
+      "w": "receive (except after c)",
+      "ex": "Did you receive my message?"
+     }
+    ],
+    "gram": "Double the final consonant after a short stressed vowel (stop → stopped); drop silent e (make → making); y → i (happy → happier)."
+   }
+  },
+  {
+   "d": 279,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Common mistakes at B1",
+     "g": "Fix classic B1 mistakes so your English sounds more accurate.",
+     "p": [
+      "Verb errors: I agree (not I am agree). It depends on (not depend of). Listen to music (not listen music).",
+      "Word order and objects: Explain it to me (not explain me). Tell me / say to me: She told me, she said to me.",
+      "Countable or not: People are (plural). The news is, advice is, information is (uncountable, no -s)."
+     ],
+     "q": "Which of these mistakes do you make? Is there one that comes from your own language?",
+     "c": "Write five correct sentences using I agree, depends on, explain to me, people are and the news is."
+    },
+    "de": {
+     "t": "Common mistakes at B1",
+     "g": "Du korrigierst typische B1-Fehler, damit dein Englisch genauer klingt.",
+     "p": [
+      "Verbfehler: I agree (nicht I am agree). It depends on (nicht depend of). Listen to music (nicht listen music).",
+      "Satzbau und Objekte: Explain it to me (nicht explain me). Tell me / say to me: She told me, she said to me.",
+      "Zählbar oder nicht: People are (Plural). The news is, advice is, information is (unzählbar, ohne -s)."
+     ],
+     "q": "Welche dieser Fehler machst du? Kommt einer davon aus deiner Muttersprache?",
+     "c": "Schreib fünf korrekte Sätze mit I agree, depends on, explain to me, people are und the news is."
+    },
+    "es": {
+     "t": "Common mistakes at B1",
+     "g": "Corrige los errores típicos del B1 para que tu inglés suene más preciso.",
+     "p": [
+      "Errores de verbo: I agree (no I am agree). It depends on (no depend of). Listen to music (no listen music).",
+      "Orden y objetos: Explain it to me (no explain me). Tell me / say to me: She told me, she said to me.",
+      "Contable o no: People are (plural). The news is, advice is, information is (incontables, sin -s)."
+     ],
+     "q": "¿Cuáles de estos errores cometes tú? ¿Alguno viene de tu propio idioma?",
+     "c": "Escribe cinco frases correctas con I agree, depends on, explain to me, people are y the news is."
+    },
+    "fr": {
+     "t": "Common mistakes at B1",
+     "g": "Corrige les erreurs classiques du niveau B1 pour un anglais plus précis.",
+     "p": [
+      "Erreurs de verbe : I agree (pas I am agree). It depends on (pas depend of). Listen to music (pas listen music).",
+      "Ordre et compléments : Explain it to me (pas explain me). Tell me / say to me : She told me, she said to me.",
+      "Dénombrable ou non : People are (pluriel). The news is, advice is, information is (indénombrables, sans -s)."
+     ],
+     "q": "Laquelle de ces erreurs fais-tu ? L'une d'elles vient-elle de ta langue ?",
+     "c": "Écris cinq phrases correctes avec I agree, depends on, explain to me, people are et the news is."
+    },
+    "it": {
+     "t": "Common mistakes at B1",
+     "g": "Correggi gli errori classici del livello B1 per un inglese più preciso.",
+     "p": [
+      "Errori di verbo: I agree (non I am agree). It depends on (non depend of). Listen to music (non listen music).",
+      "Ordine e complementi: Explain it to me (non explain me). Tell me / say to me: She told me, she said to me.",
+      "Numerabile o no: People are (plurale). The news is, advice is, information is (non numerabili, senza -s)."
+     ],
+     "q": "Quali di questi errori fai? Ce n'è uno che viene dalla tua lingua?",
+     "c": "Scrivi cinque frasi corrette con I agree, depends on, explain to me, people are e the news is."
+    },
+    "pt": {
+     "t": "Common mistakes at B1",
+     "g": "Corrige os erros clássicos do B1 para o teu inglês soar mais preciso.",
+     "p": [
+      "Erros de verbo: I agree (não I am agree). It depends on (não depend of). Listen to music (não listen music).",
+      "Ordem e complementos: Explain it to me (não explain me). Tell me / say to me: She told me, she said to me.",
+      "Contável ou não: People are (plural). The news is, advice is, information is (incontáveis, sem -s)."
+     ],
+     "q": "Quais destes erros dás? Há algum que venha da tua língua?",
+     "c": "Escreve cinco frases corretas com I agree, depends on, explain to me, people are e the news is."
+    },
+    "pt_BR": {
+     "t": "Common mistakes at B1",
+     "g": "Corrija os erros clássicos do B1 para o seu inglês soar mais preciso.",
+     "p": [
+      "Erros de verbo: I agree (não I am agree). It depends on (não depend of). Listen to music (não listen music).",
+      "Ordem e complementos: Explain it to me (não explain me). Tell me / say to me: She told me, she said to me.",
+      "Contável ou não: People are (plural). The news is, advice is, information is (incontáveis, sem -s)."
+     ],
+     "q": "Quais desses erros você comete? Algum vem da sua própria língua?",
+     "c": "Escreva cinco frases corretas com I agree, depends on, explain to me, people are e the news is."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "I agree",
+      "ex": "I agree with you. (not: I am agree)"
+     },
+     {
+      "w": "people are",
+      "ex": "People are very friendly here. (not: people is)"
+     },
+     {
+      "w": "explain to me",
+      "ex": "Can you explain it to me? (not: explain me)"
+     },
+     {
+      "w": "depend on",
+      "ex": "It depends on the weather. (not: depend of)"
+     },
+     {
+      "w": "listen to",
+      "ex": "I listen to music every day. (not: listen music)"
+     },
+     {
+      "w": "the news is",
+      "ex": "The news is good today. (not: the news are)"
+     }
+    ],
+    "gram": "Common B1 errors: agree is a verb (I agree), people is plural (people are), explain something TO someone, depend ON, news is singular."
+   }
+  },
+  {
+   "d": 280,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Review: B1 complete!",
+     "g": "Celebrate finishing B1 with a recap of linking, register, conditionals and natural conversation.",
+     "p": [
+      "Linking and writing: although, however, because of, so that, as soon as, for example. Paragraphs, reviews and essays.",
+      "Register and conditionals: I'm writing to... vs Hi! Quick question. If it rains, we'll... If I were you, I'd...",
+      "Natural talk: fillers (Well, I mean), softeners (a bit), reactions (No way!), follow-ups (What was it like?)."
+     ],
+     "q": "Congratulations on B1! What can you do in English now that you couldn't do a year ago?",
+     "c": "Write a short message to your future B2 self: what you've achieved, using although, a conditional and I've been learning."
+    },
+    "de": {
+     "t": "Review: B1 complete!",
+     "g": "Du feierst den Abschluss von B1 mit einer Wiederholung von Konnektoren, Register, Bedingungssätzen und natürlichem Gespräch.",
+     "p": [
+      "Verbinden und Schreiben: although, however, because of, so that, as soon as, for example. Absätze, Kritiken und Essays.",
+      "Register und Bedingungssätze: I'm writing to... vs. Hi! Quick question. If it rains, we'll... If I were you, I'd...",
+      "Natürlich sprechen: Füllwörter (Well, I mean), Abschwächer (a bit), Reaktionen (No way!), Nachfragen (What was it like?)."
+     ],
+     "q": "Glückwunsch zu B1! Was kannst du jetzt auf Englisch, das du vor einem Jahr noch nicht konntest?",
+     "c": "Schreib deinem zukünftigen B2-Ich eine kurze Nachricht über deine Erfolge, mit although, einem Bedingungssatz und I've been learning."
+    },
+    "es": {
+     "t": "Review: B1 complete!",
+     "g": "Celebra que terminas el B1 repasando conectores, registro, condicionales y conversación natural.",
+     "p": [
+      "Conectar y escribir: although, however, because of, so that, as soon as, for example. Párrafos, reseñas y redacciones.",
+      "Registro y condicionales: I'm writing to... frente a Hi! Quick question. If it rains, we'll... If I were you, I'd...",
+      "Hablar con naturalidad: muletillas (Well, I mean), suavizadores (a bit), reacciones (No way!), seguimiento (What was it like?)."
+     ],
+     "q": "¡Enhorabuena por el B1! ¿Qué puedes hacer ahora en inglés que hace un año no podías?",
+     "c": "Escribe un mensaje corto a tu yo del B2 sobre tus logros, con although, un condicional e I've been learning."
+    },
+    "fr": {
+     "t": "Review: B1 complete!",
+     "g": "Fête la fin du B1 avec une révision des connecteurs, du registre, des conditionnelles et de la conversation naturelle.",
+     "p": [
+      "Relier et écrire : although, however, because of, so that, as soon as, for example. Paragraphes, critiques et essais.",
+      "Registre et conditionnelles : I'm writing to... ou Hi! Quick question. If it rains, we'll... If I were you, I'd...",
+      "Parler naturellement : mots de remplissage (Well, I mean), atténuateurs (a bit), réactions (No way!), relances (What was it like?)."
+     ],
+     "q": "Bravo pour le B1 ! Que sais-tu faire en anglais maintenant que tu ne savais pas faire il y a un an ?",
+     "c": "Écris un court message à ton futur toi du B2 sur tes réussites, avec although, une conditionnelle et I've been learning."
+    },
+    "it": {
+     "t": "Review: B1 complete!",
+     "g": "Festeggia la fine del B1 ripassando connettivi, registro, periodi ipotetici e conversazione naturale.",
+     "p": [
+      "Collegare e scrivere: although, however, because of, so that, as soon as, for example. Paragrafi, recensioni e saggi.",
+      "Registro e periodi ipotetici: I'm writing to... o Hi! Quick question. If it rains, we'll... If I were you, I'd...",
+      "Parlare in modo naturale: riempitivi (Well, I mean), attenuatori (a bit), reazioni (No way!), domande (What was it like?)."
+     ],
+     "q": "Complimenti per il B1! Cosa sai fare ora in inglese che un anno fa non sapevi fare?",
+     "c": "Scrivi un breve messaggio al te stesso del B2 sui tuoi traguardi, con although, un periodo ipotetico e I've been learning."
+    },
+    "pt": {
+     "t": "Review: B1 complete!",
+     "g": "Celebra o fim do B1 com uma revisão de conectores, registo, condicionais e conversa natural.",
+     "p": [
+      "Ligar e escrever: although, however, because of, so that, as soon as, for example. Parágrafos, críticas e textos de opinião.",
+      "Registo e condicionais: I'm writing to... vs Hi! Quick question. If it rains, we'll... If I were you, I'd...",
+      "Falar com naturalidade: bordões (Well, I mean), suavizadores (a bit), reações (No way!), perguntas (What was it like?)."
+     ],
+     "q": "Parabéns pelo B1! O que consegues fazer agora em inglês que não conseguias há um ano?",
+     "c": "Escreve uma mensagem curta ao teu eu do B2 sobre as tuas conquistas, com although, uma condicional e I've been learning."
+    },
+    "pt_BR": {
+     "t": "Review: B1 complete!",
+     "g": "Comemore o fim do B1 com uma revisão de conectores, registro, condicionais e conversa natural.",
+     "p": [
+      "Conectar e escrever: although, however, because of, so that, as soon as, for example. Parágrafos, resenhas e redações.",
+      "Registro e condicionais: I'm writing to... vs Hi! Quick question. If it rains, we'll... If I were you, I'd...",
+      "Falar com naturalidade: expressões (Well, I mean), suavizadores (a bit), reações (No way!), perguntas (What was it like?)."
+     ],
+     "q": "Parabéns pelo B1! O que você consegue fazer agora em inglês que não conseguia há um ano?",
+     "c": "Escreva uma mensagem curta para o seu eu do B2 sobre suas conquistas, com although, uma condicional e I've been learning."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "although",
+      "ex": "Although it was hard, I kept going."
+     },
+     {
+      "w": "If I were you",
+      "ex": "If I were you, I'd keep practising every day."
+     },
+     {
+      "w": "I'm writing to",
+      "ex": "I'm writing to ask about the course."
+     },
+     {
+      "w": "Really? No way!",
+      "ex": "You passed B1? No way! That's amazing!"
+     },
+     {
+      "w": "I've been learning",
+      "ex": "I've been learning English for months now."
+     },
+     {
+      "w": "looking forward to",
+      "ex": "I'm looking forward to starting B2!"
+     }
+    ],
+    "gram": "B1 recap: linkers (although, so that), formal vs informal register, conditionals (If I were you, I'd...), present perfect continuous."
+   }
+  }
+ ]
+}

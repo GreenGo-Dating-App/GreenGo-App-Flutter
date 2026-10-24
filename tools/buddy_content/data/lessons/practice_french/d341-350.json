@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_french",
+ "lessons": [
+  {
+   "d": 341,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Interpreting statistics",
+     "g": "Read and explain statistics in French: fractions, percentages and changes.",
+     "p": [
+      "Fractions: la moitié (half), un tiers (a third), un quart (a quarter), les trois quarts. La majorité des sondés...",
+      "Percentages: 40 % des Français, soit près de la moitié... Note the space before % in French.",
+      "Changes: augmenter de 10 % (by), passer de 20 à 30 % (from... to), une baisse de 5 %."
+     ],
+     "q": "What share of your day do you spend on screens? Answer with a fraction in French.",
+     "c": "Invent a small survey of your friends and describe the results in French with la moitié, un tiers and soit."
+    },
+    "de": {
+     "t": "Statistiken deuten",
+     "g": "Du liest und erklärst Statistiken auf Französisch: Brüche, Prozente und Veränderungen.",
+     "p": [
+      "Brüche: la moitié (Hälfte), un tiers (Drittel), un quart (Viertel), les trois quarts. La majorité des sondés...",
+      "Prozente: 40 % des Français, soit près de la moitié... Im Französischen steht ein Leerzeichen vor %.",
+      "Veränderungen: augmenter de 10 % (um), passer de 20 à 30 % (von... auf), une baisse de 5 %."
+     ],
+     "q": "Welchen Anteil deines Tages verbringst du vor Bildschirmen? Antworte mit einem Bruch auf Französisch.",
+     "c": "Erfinde eine kleine Umfrage unter Freunden und beschreib die Ergebnisse auf Französisch mit la moitié, un tiers und soit."
+    },
+    "es": {
+     "t": "Interpretar estadísticas",
+     "g": "Lee y explica estadísticas en francés: fracciones, porcentajes y cambios.",
+     "p": [
+      "Fracciones: la moitié (la mitad), un tiers (un tercio), un quart (un cuarto), les trois quarts. La majorité des sondés...",
+      "Porcentajes: 40 % des Français, soit près de la moitié... En francés va un espacio antes de %.",
+      "Cambios: augmenter de 10 % (en), passer de 20 à 30 % (de... a), une baisse de 5 %."
+     ],
+     "q": "¿Qué parte de tu día pasas frente a pantallas? Responde con una fracción en francés.",
+     "c": "Inventa una pequeña encuesta entre amigos y describe los resultados en francés con la moitié, un tiers y soit."
+    },
+    "fr": {
+     "t": "Interpréter des statistiques",
+     "g": "Lire et commenter des statistiques : fractions, pourcentages et évolutions.",
+     "p": [
+      "Les fractions : la moitié, un tiers, un quart, les trois quarts. La majorité des personnes interrogées...",
+      "Les pourcentages : 40 % des Français, soit près de la moitié... On met une espace avant le signe %.",
+      "Les évolutions : augmenter de 10 %, passer de 20 à 30 %, une baisse de 5 %."
+     ],
+     "q": "Quelle part de ta journée passes-tu devant les écrans ? Réponds avec une fraction.",
+     "c": "Invente un petit sondage auprès de tes amis et décris les résultats avec la moitié, un tiers et soit."
+    },
+    "it": {
+     "t": "Interpretare le statistiche",
+     "g": "Leggi e spiega statistiche in francese: frazioni, percentuali e variazioni.",
+     "p": [
+      "Frazioni: la moitié (la metà), un tiers (un terzo), un quart (un quarto), les trois quarts. La majorité des sondés...",
+      "Percentuali: 40 % des Français, soit près de la moitié... In francese c'è uno spazio prima di %.",
+      "Variazioni: augmenter de 10 % (di), passer de 20 à 30 % (da... a), une baisse de 5 %."
+     ],
+     "q": "Che parte della tua giornata passi davanti agli schermi? Rispondi con una frazione in francese.",
+     "c": "Inventa un piccolo sondaggio tra amici e descrivi i risultati in francese con la moitié, un tiers e soit."
+    },
+    "pt": {
+     "t": "Interpretar estatísticas",
+     "g": "Lê e explica estatísticas em francês: frações, percentagens e variações.",
+     "p": [
+      "Frações: la moitié (metade), un tiers (um terço), un quart (um quarto), les trois quarts. La majorité des sondés...",
+      "Percentagens: 40 % des Français, soit près de la moitié... Em francês há um espaço antes de %.",
+      "Variações: augmenter de 10 % (em), passer de 20 à 30 % (de... para), une baisse de 5 %."
+     ],
+     "q": "Que parte do teu dia passas em frente a ecrãs? Responde com uma fração em francês.",
+     "c": "Inventa um pequeno inquérito aos teus amigos e descreve os resultados em francês com la moitié, un tiers e soit."
+    },
+    "pt_BR": {
+     "t": "Interpretando estatísticas",
+     "g": "Leia e explique estatísticas em francês: frações, porcentagens e variações.",
+     "p": [
+      "Frações: la moitié (metade), un tiers (um terço), un quart (um quarto), les trois quarts. La majorité des sondés...",
+      "Porcentagens: 40 % des Français, soit près de la moitié... Em francês há um espaço antes de %.",
+      "Variações: augmenter de 10 % (em), passer de 20 à 30 % (de... para), une baisse de 5 %."
+     ],
+     "q": "Que parte do seu dia você passa diante de telas? Responda com uma fração em francês.",
+     "c": "Invente uma pequena pesquisa entre amigos e descreva os resultados em francês com la moitié, un tiers e soit."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la moitié",
+      "ex": "La moitié des élèves viennent à vélo."
+     },
+     {
+      "w": "un tiers",
+      "ex": "Un tiers des personnes interrogées lisent tous les jours."
+     },
+     {
+      "w": "soit",
+      "ex": "300 personnes ont répondu, soit un quart du groupe."
+     },
+     {
+      "w": "augmenter de",
+      "ex": "Le nombre d'abonnés a augmenté de 15 %."
+     },
+     {
+      "w": "une baisse de",
+      "ex": "On observe une baisse de 8 % des ventes."
+     },
+     {
+      "w": "la majorité",
+      "ex": "La majorité des sondés préfèrent le train."
+     }
+    ],
+    "gram": "Accord avec une fraction : la moitié des élèves vient ou viennent ; l'accord avec le complément pluriel est le plus courant."
+   }
+  },
+  {
+   "d": 342,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Describing trends",
+     "g": "Describe trends in French: rises, falls, stability and progress.",
+     "p": [
+      "Going up: une hausse, augmenter, progresser, grimper, atteindre un record.",
+      "Going down: une baisse, diminuer, reculer, chuter (fall sharply). Staying level: se stabiliser, rester stable.",
+      "Adverbs add precision: légèrement, nettement, fortement, progressivement. La courbe chute brutalement en mars."
+     ],
+     "q": "What trend have you noticed in your life recently, like more sport or less social media?",
+     "c": "Describe an imaginary graph in French in four sentences with progresser, se stabiliser and chuter."
+    },
+    "de": {
+     "t": "Entwicklungen beschreiben",
+     "g": "Du beschreibst Entwicklungen auf Französisch: Anstieg, Rückgang, Stabilität und Fortschritt.",
+     "p": [
+      "Nach oben: une hausse, augmenter, progresser, grimper, atteindre un record.",
+      "Nach unten: une baisse, diminuer, reculer, chuter (stark fallen). Gleich bleiben: se stabiliser, rester stable.",
+      "Adverbien machen es präzise: légèrement, nettement, fortement, progressivement. La courbe chute brutalement en mars."
+     ],
+     "q": "Welche Entwicklung hast du zuletzt in deinem Leben bemerkt, etwa mehr Sport oder weniger soziale Medien?",
+     "c": "Beschreib ein erfundenes Diagramm in vier französischen Sätzen mit progresser, se stabiliser und chuter."
+    },
+    "es": {
+     "t": "Describir tendencias",
+     "g": "Describe tendencias en francés: subidas, bajadas, estabilidad y avances.",
+     "p": [
+      "Subir: une hausse, augmenter, progresser, grimper, atteindre un record.",
+      "Bajar: une baisse, diminuer, reculer, chuter (caer en picado). Mantenerse: se stabiliser, rester stable.",
+      "Los adverbios precisan: légèrement, nettement, fortement, progressivement. La courbe chute brutalement en mars."
+     ],
+     "q": "¿Qué tendencia has notado en tu vida últimamente, como más deporte o menos redes sociales?",
+     "c": "Describe un gráfico imaginario en cuatro frases en francés con progresser, se stabiliser y chuter."
+    },
+    "fr": {
+     "t": "Décrire des tendances",
+     "g": "Décrire une évolution : hausse, baisse, stabilité et progression.",
+     "p": [
+      "La hausse : une hausse, augmenter, progresser, grimper, atteindre un record.",
+      "La baisse : une baisse, diminuer, reculer, chuter. La stabilité : se stabiliser, rester stable, stagner.",
+      "Les adverbes précisent : légèrement, nettement, fortement, progressivement. La courbe chute brutalement en mars."
+     ],
+     "q": "Quelle tendance as-tu remarquée récemment dans ta vie, comme plus de sport ou moins de réseaux sociaux ?",
+     "c": "Décris un graphique imaginaire en quatre phrases avec progresser, se stabiliser et chuter."
+    },
+    "it": {
+     "t": "Descrivere tendenze",
+     "g": "Descrivi tendenze in francese: aumenti, cali, stabilità e progressi.",
+     "p": [
+      "In salita: une hausse, augmenter, progresser, grimper, atteindre un record.",
+      "In discesa: une baisse, diminuer, reculer, chuter (crollare). Stabile: se stabiliser, rester stable.",
+      "Gli avverbi precisano: légèrement, nettement, fortement, progressivement. La courbe chute brutalement en mars."
+     ],
+     "q": "Quale tendenza hai notato di recente nella tua vita, come più sport o meno social?",
+     "c": "Descrivi un grafico immaginario in quattro frasi in francese con progresser, se stabiliser e chuter."
+    },
+    "pt": {
+     "t": "Descrever tendências",
+     "g": "Descreve tendências em francês: subidas, descidas, estabilidade e progressos.",
+     "p": [
+      "A subir: une hausse, augmenter, progresser, grimper, atteindre un record.",
+      "A descer: une baisse, diminuer, reculer, chuter (cair a pique). Estável: se stabiliser, rester stable.",
+      "Os advérbios dão precisão: légèrement, nettement, fortement, progressivement. La courbe chute brutalement en mars."
+     ],
+     "q": "Que tendência notaste na tua vida ultimamente, como mais desporto ou menos redes sociais?",
+     "c": "Descreve um gráfico imaginário em quatro frases em francês com progresser, se stabiliser e chuter."
+    },
+    "pt_BR": {
+     "t": "Descrevendo tendências",
+     "g": "Descreva tendências em francês: altas, quedas, estabilidade e avanços.",
+     "p": [
+      "Subindo: une hausse, augmenter, progresser, grimper, atteindre un record.",
+      "Descendo: une baisse, diminuer, reculer, chuter (despencar). Estável: se stabiliser, rester stable.",
+      "Advérbios dão precisão: légèrement, nettement, fortement, progressivement. La courbe chute brutalement en mars."
+     ],
+     "q": "Que tendência você notou na sua vida ultimamente, como mais esporte ou menos redes sociais?",
+     "c": "Descreva um gráfico imaginário em quatro frases em francês com progresser, se stabiliser e chuter."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "une hausse",
+      "ex": "On constate une hausse du nombre de cyclistes."
+     },
+     {
+      "w": "se stabiliser",
+      "ex": "Après deux ans de croissance, les ventes se stabilisent."
+     },
+     {
+      "w": "chuter",
+      "ex": "Les températures ont chuté pendant la nuit."
+     },
+     {
+      "w": "progresser",
+      "ex": "Le tourisme vert progresse chaque année."
+     },
+     {
+      "w": "nettement",
+      "ex": "Les résultats sont nettement meilleurs qu'avant."
+     },
+     {
+      "w": "atteindre un record",
+      "ex": "La fréquentation du musée a atteint un record."
+     }
+    ],
+    "gram": "Adverbes en -ment pour nuancer une évolution : léger devient légèrement, net devient nettement, fort devient fortement."
+   }
+  },
+  {
+   "d": 343,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Cause and effect in depth",
+     "g": "Express cause and effect precisely in French with verbs like entraîner, provoquer and découler de.",
+     "p": [
+      "Cause to effect: entraîner, provoquer, causer, engendrer. La pluie a entraîné des retards.",
+      "Effect from cause: découler de, résulter de, être dû à. Les retards sont dus à la pluie. Note the agreement of dû.",
+      "Connectors: en raison de, à cause de (negative), grâce à (positive), par conséquent, c'est pourquoi."
+     ],
+     "q": "What caused you to start learning French? Answer with grâce à or en raison de.",
+     "c": "Write a cause-and-effect chain of three French sentences using entraîner, être dû à and par conséquent."
+    },
+    "de": {
+     "t": "Ursache und Wirkung vertieft",
+     "g": "Du drückst Ursache und Wirkung präzise auf Französisch aus, mit Verben wie entraîner, provoquer und découler de.",
+     "p": [
+      "Von der Ursache zur Wirkung: entraîner, provoquer, causer, engendrer. La pluie a entraîné des retards.",
+      "Von der Wirkung zur Ursache: découler de, résulter de, être dû à. Les retards sont dus à la pluie. Achte auf die Angleichung von dû.",
+      "Konnektoren: en raison de, à cause de (negativ), grâce à (positiv), par conséquent, c'est pourquoi."
+     ],
+     "q": "Was hat dich dazu gebracht, Französisch zu lernen? Antworte mit grâce à oder en raison de.",
+     "c": "Schreib eine Kette aus drei französischen Sätzen mit entraîner, être dû à und par conséquent."
+    },
+    "es": {
+     "t": "Causa y efecto a fondo",
+     "g": "Expresa causa y efecto con precisión en francés con verbos como entraîner, provoquer y découler de.",
+     "p": [
+      "De la causa al efecto: entraîner, provoquer, causer, engendrer. La pluie a entraîné des retards.",
+      "Del efecto a la causa: découler de, résulter de, être dû à. Les retards sont dus à la pluie. Ojo a la concordancia de dû.",
+      "Conectores: en raison de, à cause de (negativo), grâce à (positivo), par conséquent, c'est pourquoi."
+     ],
+     "q": "¿Qué te llevó a empezar a aprender francés? Responde con grâce à o en raison de.",
+     "c": "Escribe una cadena de tres frases en francés con entraîner, être dû à y par conséquent."
+    },
+    "fr": {
+     "t": "La cause et la conséquence",
+     "g": "Exprimer la cause et la conséquence avec précision : entraîner, provoquer, découler de.",
+     "p": [
+      "De la cause vers l'effet : entraîner, provoquer, causer, engendrer. La pluie a entraîné des retards.",
+      "De l'effet vers la cause : découler de, résulter de, être dû à. Les retards sont dus à la pluie. Attention à l'accord de dû.",
+      "Les connecteurs : en raison de, à cause de (négatif), grâce à (positif), par conséquent, c'est pourquoi."
+     ],
+     "q": "Qu'est-ce qui t'a poussé à apprendre le français ? Réponds avec grâce à ou en raison de.",
+     "c": "Écris une chaîne de trois phrases avec entraîner, être dû à et par conséquent."
+    },
+    "it": {
+     "t": "Causa ed effetto in profondità",
+     "g": "Esprimi causa ed effetto con precisione in francese con verbi come entraîner, provoquer e découler de.",
+     "p": [
+      "Dalla causa all'effetto: entraîner, provoquer, causer, engendrer. La pluie a entraîné des retards.",
+      "Dall'effetto alla causa: découler de, résulter de, être dû à. Les retards sont dus à la pluie. Attenzione all'accordo di dû.",
+      "Connettivi: en raison de, à cause de (negativo), grâce à (positivo), par conséquent, c'est pourquoi."
+     ],
+     "q": "Cosa ti ha spinto a imparare il francese? Rispondi con grâce à o en raison de.",
+     "c": "Scrivi una catena di tre frasi in francese con entraîner, être dû à e par conséquent."
+    },
+    "pt": {
+     "t": "Causa e efeito em profundidade",
+     "g": "Exprime causa e efeito com precisão em francês com verbos como entraîner, provoquer e découler de.",
+     "p": [
+      "Da causa ao efeito: entraîner, provoquer, causer, engendrer. La pluie a entraîné des retards.",
+      "Do efeito à causa: découler de, résulter de, être dû à. Les retards sont dus à la pluie. Atenção à concordância de dû.",
+      "Conectores: en raison de, à cause de (negativo), grâce à (positivo), par conséquent, c'est pourquoi."
+     ],
+     "q": "O que te levou a começar a aprender francês? Responde com grâce à ou en raison de.",
+     "c": "Escreve uma cadeia de três frases em francês com entraîner, être dû à e par conséquent."
+    },
+    "pt_BR": {
+     "t": "Causa e efeito a fundo",
+     "g": "Expresse causa e efeito com precisão em francês com verbos como entraîner, provoquer e découler de.",
+     "p": [
+      "Da causa ao efeito: entraîner, provoquer, causer, engendrer. La pluie a entraîné des retards.",
+      "Do efeito à causa: découler de, résulter de, être dû à. Les retards sont dus à la pluie. Atenção à concordância de dû.",
+      "Conectores: en raison de, à cause de (negativo), grâce à (positivo), par conséquent, c'est pourquoi."
+     ],
+     "q": "O que te levou a começar a aprender francês? Responda com grâce à ou en raison de.",
+     "c": "Escreva uma cadeia de três frases em francês com entraîner, être dû à e par conséquent."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "entraîner",
+      "ex": "La grève a entraîné de nombreuses annulations."
+     },
+     {
+      "w": "provoquer",
+      "ex": "Cette décision a provoqué une vive réaction."
+     },
+     {
+      "w": "découler de",
+      "ex": "Ce succès découle d'un long travail d'équipe."
+     },
+     {
+      "w": "être dû à",
+      "ex": "Le retard est dû à un problème technique."
+     },
+     {
+      "w": "en raison de",
+      "ex": "Le match est reporté en raison de la neige."
+     },
+     {
+      "w": "grâce à",
+      "ex": "J'ai progressé grâce à mes conversations quotidiennes."
+     }
+    ],
+    "gram": "Être dû à : dû s'accorde avec le sujet (dû, due, dus, dues). Les retards sont dus à la météo ; la panne est due au froid."
+   }
+  },
+  {
+   "d": 344,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Precise vocabulary",
+     "g": "Replace vague French words with precise, nuanced verbs and adjectives.",
+     "p": [
+      "Avoid faire, dire, avoir, il y a and chose: faire un gâteau becomes préparer, dire becomes affirmer, expliquer, suggérer.",
+      "Il y a un problème becomes un problème se pose. Une chose becomes un élément, un aspect, un objet.",
+      "Replace bien and intéressant with nuanced adjectives: remarquable, passionnant, pertinent, enrichissant."
+     ],
+     "q": "Describe your last weekend in French without using faire, il y a or bien.",
+     "c": "Take a short French paragraph you wrote before and upgrade five vague words to precise ones."
+    },
+    "de": {
+     "t": "Präziser Wortschatz",
+     "g": "Du ersetzt vage französische Wörter durch präzise, nuancierte Verben und Adjektive.",
+     "p": [
+      "Vermeide faire, dire, avoir, il y a und chose: faire un gâteau wird préparer, dire wird affirmer, expliquer, suggérer.",
+      "Il y a un problème wird un problème se pose. Une chose wird un élément, un aspect, un objet.",
+      "Ersetze bien und intéressant durch nuancierte Adjektive: remarquable, passionnant, pertinent, enrichissant."
+     ],
+     "q": "Beschreib dein letztes Wochenende auf Französisch, ohne faire, il y a oder bien zu benutzen.",
+     "c": "Nimm einen kurzen französischen Absatz von dir und ersetze fünf vage Wörter durch präzise."
+    },
+    "es": {
+     "t": "Vocabulario preciso",
+     "g": "Sustituye palabras francesas vagas por verbos y adjetivos precisos y con matices.",
+     "p": [
+      "Evita faire, dire, avoir, il y a y chose: faire un gâteau pasa a préparer; dire, a affirmer, expliquer, suggérer.",
+      "Il y a un problème pasa a un problème se pose. Une chose pasa a un élément, un aspect, un objet.",
+      "Cambia bien e intéressant por adjetivos con matices: remarquable, passionnant, pertinent, enrichissant."
+     ],
+     "q": "Describe tu último fin de semana en francés sin usar faire, il y a ni bien.",
+     "c": "Toma un párrafo breve que escribiste en francés y mejora cinco palabras vagas."
+    },
+    "fr": {
+     "t": "Un vocabulaire précis",
+     "g": "Remplacer les mots vagues par des verbes et des adjectifs précis et nuancés.",
+     "p": [
+      "Évite faire, dire, avoir, il y a et chose : faire un gâteau devient préparer ; dire devient affirmer, expliquer, suggérer.",
+      "Il y a un problème devient un problème se pose. Une chose devient un élément, un aspect, un objet.",
+      "Remplace bien et intéressant par des adjectifs nuancés : remarquable, passionnant, pertinent, enrichissant."
+     ],
+     "q": "Décris ton dernier week-end sans utiliser faire, il y a ni bien.",
+     "c": "Reprends un court paragraphe que tu as écrit et remplace cinq mots vagues par des mots précis."
+    },
+    "it": {
+     "t": "Lessico preciso",
+     "g": "Sostituisci le parole francesi vaghe con verbi e aggettivi precisi e sfumati.",
+     "p": [
+      "Evita faire, dire, avoir, il y a e chose: faire un gâteau diventa préparer; dire diventa affirmer, expliquer, suggérer.",
+      "Il y a un problème diventa un problème se pose. Une chose diventa un élément, un aspect, un objet.",
+      "Sostituisci bien e intéressant con aggettivi sfumati: remarquable, passionnant, pertinent, enrichissant."
+     ],
+     "q": "Descrivi il tuo ultimo fine settimana in francese senza usare faire, il y a o bien.",
+     "c": "Riprendi un breve paragrafo che hai scritto in francese e migliora cinque parole vaghe."
+    },
+    "pt": {
+     "t": "Vocabulário preciso",
+     "g": "Substitui palavras francesas vagas por verbos e adjetivos precisos e com nuances.",
+     "p": [
+      "Evita faire, dire, avoir, il y a e chose: faire un gâteau passa a préparer; dire passa a affirmer, expliquer, suggérer.",
+      "Il y a un problème passa a un problème se pose. Une chose passa a un élément, un aspect, un objet.",
+      "Troca bien e intéressant por adjetivos com nuance: remarquable, passionnant, pertinent, enrichissant."
+     ],
+     "q": "Descreve o teu último fim de semana em francês sem usar faire, il y a nem bien.",
+     "c": "Pega num parágrafo curto que escreveste em francês e melhora cinco palavras vagas."
+    },
+    "pt_BR": {
+     "t": "Vocabulário preciso",
+     "g": "Substitua palavras francesas vagas por verbos e adjetivos precisos e cheios de nuance.",
+     "p": [
+      "Evite faire, dire, avoir, il y a e chose: faire un gâteau vira préparer; dire vira affirmer, expliquer, suggérer.",
+      "Il y a un problème vira un problème se pose. Une chose vira un élément, un aspect, un objet.",
+      "Troque bien e intéressant por adjetivos com nuance: remarquable, passionnant, pertinent, enrichissant."
+     ],
+     "q": "Descreva seu último fim de semana em francês sem usar faire, il y a nem bien.",
+     "c": "Pegue um parágrafo curto que você escreveu em francês e melhore cinco palavras vagas."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "affirmer",
+      "ex": "Le ministre affirme que le projet avance."
+     },
+     {
+      "w": "se poser",
+      "ex": "Une question importante se pose alors."
+     },
+     {
+      "w": "un aspect",
+      "ex": "Cet aspect du problème est souvent oublié."
+     },
+     {
+      "w": "pertinent",
+      "ex": "Ta remarque est très pertinente."
+     },
+     {
+      "w": "enrichissant",
+      "ex": "Ce séjour à l'étranger a été très enrichissant."
+     },
+     {
+      "w": "susciter",
+      "ex": "Ce film suscite beaucoup d'émotion."
+     }
+    ],
+    "gram": "Verbes précis à la place de faire : faire une erreur devient commettre, faire un effort devient fournir, faire un projet devient réaliser."
+   }
+  },
+  {
+   "d": 345,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Review: culture and analysis",
+     "g": "Review art, culture and data vocabulary from the last two weeks.",
+     "p": [
+      "Culture: philosophy (je me demande si), art (ce qui m'émeut, c'est), heritage (la cathédrale a été construite), poetry and theatre.",
+      "Society and customs: la BD, gastronomy, bonjour and la bise, cultural differences with alors que, settling in abroad.",
+      "Analysis: fractions and percentages, trends (une hausse, chuter), cause and effect, and precise vocabulary."
+     ],
+     "q": "Which lesson from the last two weeks would you like to talk about more? Why?",
+     "c": "Present a work of art, a custom or a statistic in French in five sentences, using precise vocabulary."
+    },
+    "de": {
+     "t": "Wiederholung: Kultur und Analyse",
+     "g": "Du wiederholst den Wortschatz zu Kunst, Kultur und Daten der letzten zwei Wochen.",
+     "p": [
+      "Kultur: Philosophie (je me demande si), Kunst (ce qui m'émeut, c'est), Kulturerbe (la cathédrale a été construite), Poesie und Theater.",
+      "Gesellschaft und Bräuche: la BD, Gastronomie, bonjour und la bise, kulturelle Unterschiede mit alors que, Ankommen im Ausland.",
+      "Analyse: Brüche und Prozente, Entwicklungen (une hausse, chuter), Ursache und Wirkung, präziser Wortschatz."
+     ],
+     "q": "Über welche Lektion der letzten zwei Wochen möchtest du mehr sprechen? Warum?",
+     "c": "Stell ein Kunstwerk, einen Brauch oder eine Statistik in fünf französischen Sätzen mit präzisem Wortschatz vor."
+    },
+    "es": {
+     "t": "Repaso: cultura y análisis",
+     "g": "Repasa el vocabulario de arte, cultura y datos de las dos últimas semanas.",
+     "p": [
+      "Cultura: filosofía (je me demande si), arte (ce qui m'émeut, c'est), patrimonio (la cathédrale a été construite), poesía y teatro.",
+      "Sociedad y costumbres: la BD, la gastronomía, bonjour y la bise, diferencias culturales con alors que, instalarse fuera.",
+      "Análisis: fracciones y porcentajes, tendencias (une hausse, chuter), causa y efecto, y vocabulario preciso."
+     ],
+     "q": "¿De qué lección de las dos últimas semanas te gustaría hablar más? ¿Por qué?",
+     "c": "Presenta una obra de arte, una costumbre o una estadística en francés en cinco frases, con vocabulario preciso."
+    },
+    "fr": {
+     "t": "Bilan : culture et analyse",
+     "g": "Réviser le vocabulaire de l'art, de la culture et des données des deux dernières semaines.",
+     "p": [
+      "La culture : philosophie (je me demande si), art (ce qui m'émeut, c'est), patrimoine (la cathédrale a été construite), poésie, théâtre.",
+      "Société et usages : la BD, la gastronomie, le bonjour et la bise, les différences culturelles avec alors que, l'installation.",
+      "L'analyse : fractions et pourcentages, tendances (une hausse, chuter), cause et conséquence, vocabulaire précis."
+     ],
+     "q": "De quelle leçon des deux dernières semaines aimerais-tu parler davantage ? Pourquoi ?",
+     "c": "Présente une œuvre, une coutume ou une statistique en cinq phrases, avec un vocabulaire précis."
+    },
+    "it": {
+     "t": "Ripasso: cultura e analisi",
+     "g": "Ripassa il lessico di arte, cultura e dati delle ultime due settimane.",
+     "p": [
+      "Cultura: filosofia (je me demande si), arte (ce qui m'émeut, c'est), patrimonio (la cathédrale a été construite), poesia e teatro.",
+      "Società e usanze: la BD, la gastronomia, bonjour e la bise, differenze culturali con alors que, trasferirsi all'estero.",
+      "Analisi: frazioni e percentuali, tendenze (une hausse, chuter), causa ed effetto, lessico preciso."
+     ],
+     "q": "Di quale lezione delle ultime due settimane vorresti parlare di più? Perché?",
+     "c": "Presenta un'opera d'arte, un'usanza o una statistica in francese in cinque frasi, con lessico preciso."
+    },
+    "pt": {
+     "t": "Revisão: cultura e análise",
+     "g": "Revê o vocabulário de arte, cultura e dados das duas últimas semanas.",
+     "p": [
+      "Cultura: filosofia (je me demande si), arte (ce qui m'émeut, c'est), património (la cathédrale a été construite), poesia e teatro.",
+      "Sociedade e costumes: la BD, a gastronomia, bonjour e la bise, diferenças culturais com alors que, instalar-se fora.",
+      "Análise: frações e percentagens, tendências (une hausse, chuter), causa e efeito, e vocabulário preciso."
+     ],
+     "q": "De que lição das duas últimas semanas gostarias de falar mais? Porquê?",
+     "c": "Apresenta uma obra de arte, um costume ou uma estatística em francês em cinco frases, com vocabulário preciso."
+    },
+    "pt_BR": {
+     "t": "Revisão: cultura e análise",
+     "g": "Revise o vocabulário de arte, cultura e dados das duas últimas semanas.",
+     "p": [
+      "Cultura: filosofia (je me demande si), arte (ce qui m'émeut, c'est), patrimônio (la cathédrale a été construite), poesia e teatro.",
+      "Sociedade e costumes: la BD, a gastronomia, bonjour e la bise, diferenças culturais com alors que, morar fora.",
+      "Análise: frações e porcentagens, tendências (une hausse, chuter), causa e efeito, e vocabulário preciso."
+     ],
+     "q": "Sobre qual lição das duas últimas semanas você gostaria de falar mais? Por quê?",
+     "c": "Apresente uma obra de arte, um costume ou uma estatística em francês em cinco frases, com vocabulário preciso."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "une œuvre",
+      "ex": "Cette œuvre m'a marqué pour toujours."
+     },
+     {
+      "w": "le patrimoine",
+      "ex": "Protéger le patrimoine est l'affaire de tous."
+     },
+     {
+      "w": "le savoir-vivre",
+      "ex": "Le savoir-vivre varie d'un pays à l'autre."
+     },
+     {
+      "w": "une tendance",
+      "ex": "Cette tendance se confirme depuis trois ans."
+     },
+     {
+      "w": "entraîner",
+      "ex": "Le tourisme entraîne aussi des problèmes."
+     },
+     {
+      "w": "pertinent",
+      "ex": "Ton analyse est claire et pertinente."
+     }
+    ],
+    "gram": "Révision : ce qui / ce que pour mettre en relief, voix passive, alors que pour opposer, être dû à pour la cause."
+   }
+  },
+  {
+   "d": 346,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Listening: radio and podcasts",
+     "g": "Learn strategies to follow long, fast French audio and take useful notes.",
+     "p": [
+      "Before: read the title, guess topic and words. During: listen for key words, numbers and connectors like mais, donc, en revanche.",
+      "Note-taking: use abbreviations and symbols: pb (problème), qqch (quelque chose), + / - / =, arrows for causes.",
+      "After: summarise in three sentences, then listen again at 0.75 speed and check what you missed."
+     ],
+     "q": "Do you listen to podcasts or radio? Which French programme could you try?",
+     "c": "Listen to five minutes of a French podcast, take notes with abbreviations and write a three-sentence summary."
+    },
+    "de": {
+     "t": "Hören: Radio und Podcasts",
+     "g": "Du lernst Strategien, um langen, schnellen französischen Audios zu folgen und gute Notizen zu machen.",
+     "p": [
+      "Davor: Titel lesen, Thema erraten. Währenddessen: auf Schlüsselwörter, Zahlen und Konnektoren wie mais, donc, en revanche achten.",
+      "Notizen: Abkürzungen und Symbole nutzen: pb (problème), qqch (quelque chose), + / - / =, Pfeile für Ursachen.",
+      "Danach: in drei Sätzen zusammenfassen, dann mit 0,75-facher Geschwindigkeit noch einmal hören und Lücken prüfen."
+     ],
+     "q": "Hörst du Podcasts oder Radio? Welche französische Sendung könntest du ausprobieren?",
+     "c": "Hör fünf Minuten eines französischen Podcasts, notiere mit Abkürzungen und schreib eine Zusammenfassung in drei Sätzen."
+    },
+    "es": {
+     "t": "Comprensión oral: radio y pódcast",
+     "g": "Aprende estrategias para seguir audios largos y rápidos en francés y tomar buenas notas.",
+     "p": [
+      "Antes: lee el título y adivina el tema y el vocabulario. Durante: busca palabras clave, cifras y conectores como mais, donc, en revanche.",
+      "Notas: usa abreviaturas y símbolos: pb (problème), qqch (quelque chose), + / - / =, flechas para las causas.",
+      "Después: resume en tres frases y vuelve a escuchar a 0,75 de velocidad para ver qué se te escapó."
+     ],
+     "q": "¿Escuchas pódcast o radio? ¿Qué programa francés podrías probar?",
+     "c": "Escucha cinco minutos de un pódcast francés, toma notas con abreviaturas y escribe un resumen de tres frases."
+    },
+    "fr": {
+     "t": "L'écoute : radio et podcasts",
+     "g": "Apprendre des stratégies pour suivre un document audio long et rapide et prendre des notes.",
+     "p": [
+      "Avant : lire le titre, deviner le thème. Pendant : repérer les mots clés, les chiffres et les connecteurs (mais, donc, en revanche).",
+      "La prise de notes : abréviations et symboles : pb (problème), qqch (quelque chose), + / - / =, des flèches pour les causes.",
+      "Après : résumer en trois phrases, puis réécouter en vitesse 0,75 pour vérifier ce qui a échappé."
+     ],
+     "q": "Écoutes-tu des podcasts ou la radio ? Quelle émission en français pourrais-tu essayer ?",
+     "c": "Écoute cinq minutes d'un podcast, prends des notes abrégées et écris un résumé de trois phrases."
+    },
+    "it": {
+     "t": "Ascolto: radio e podcast",
+     "g": "Impara strategie per seguire audio francesi lunghi e veloci e prendere appunti utili.",
+     "p": [
+      "Prima: leggi il titolo e indovina tema e lessico. Durante: cogli parole chiave, numeri e connettivi come mais, donc, en revanche.",
+      "Appunti: usa abbreviazioni e simboli: pb (problème), qqch (quelque chose), + / - / =, frecce per le cause.",
+      "Dopo: riassumi in tre frasi, poi riascolta a velocità 0,75 e verifica cosa ti è sfuggito."
+     ],
+     "q": "Ascolti podcast o radio? Quale programma francese potresti provare?",
+     "c": "Ascolta cinque minuti di un podcast francese, prendi appunti abbreviati e scrivi un riassunto di tre frasi."
+    },
+    "pt": {
+     "t": "Compreensão oral: rádio e podcasts",
+     "g": "Aprende estratégias para seguir áudios longos e rápidos em francês e tirar boas notas.",
+     "p": [
+      "Antes: lê o título e adivinha o tema e o vocabulário. Durante: procura palavras-chave, números e conectores como mais, donc, en revanche.",
+      "Notas: usa abreviaturas e símbolos: pb (problème), qqch (quelque chose), + / - / =, setas para as causas.",
+      "Depois: resume em três frases e volta a ouvir a velocidade 0,75 para ver o que te escapou."
+     ],
+     "q": "Ouves podcasts ou rádio? Que programa francês poderias experimentar?",
+     "c": "Ouve cinco minutos de um podcast francês, tira notas com abreviaturas e escreve um resumo de três frases."
+    },
+    "pt_BR": {
+     "t": "Compreensão oral: rádio e podcasts",
+     "g": "Aprenda estratégias para acompanhar áudios longos e rápidos em francês e fazer boas anotações.",
+     "p": [
+      "Antes: leia o título e adivinhe o tema e o vocabulário. Durante: pegue palavras-chave, números e conectores como mais, donc, en revanche.",
+      "Anotações: use abreviações e símbolos: pb (problème), qqch (quelque chose), + / - / =, setas para as causas.",
+      "Depois: resuma em três frases e ouça de novo em velocidade 0,75 para ver o que escapou."
+     ],
+     "q": "Você ouve podcasts ou rádio? Que programa francês poderia experimentar?",
+     "c": "Ouça cinco minutos de um podcast francês, faça anotações abreviadas e escreva um resumo de três frases."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "une émission",
+      "ex": "J'écoute une émission de science chaque matin."
+     },
+     {
+      "w": "un podcast",
+      "ex": "Ce podcast parle d'histoire en vingt minutes."
+     },
+     {
+      "w": "prendre des notes",
+      "ex": "Je prends des notes pendant la conférence."
+     },
+     {
+      "w": "repérer",
+      "ex": "Essaie de repérer les mots clés."
+     },
+     {
+      "w": "réécouter",
+      "ex": "J'ai dû réécouter le passage trois fois."
+     },
+     {
+      "w": "échapper à",
+      "ex": "Le dernier chiffre m'a échappé."
+     }
+    ],
+    "gram": "Le pronom relatif ce qui / ce que dans les résumés : ce que j'ai compris, c'est que... ; ce qui m'a échappé, c'est..."
+   }
+  },
+  {
+   "d": 347,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Reading the press",
+     "g": "Read French newspapers: headlines, editorials and the journalistic style.",
+     "p": [
+      "Headlines are short and often have no verb: Hausse des prix de l'énergie, Victoire des Bleus. Turn them into full sentences.",
+      "Types of articles: un éditorial (the paper's opinion), une chronique (column), un reportage, une brève (short news).",
+      "Journalistic style: the conditional for unconfirmed facts, the present for vivid news, and quotes with selon, d'après."
+     ],
+     "q": "Do you read the news? What sections interest you most?",
+     "c": "Write three French headlines without verbs about your week, then rewrite each as a full sentence."
+    },
+    "de": {
+     "t": "Die Presse lesen",
+     "g": "Du liest französische Zeitungen: Schlagzeilen, Leitartikel und journalistischen Stil.",
+     "p": [
+      "Schlagzeilen sind kurz und oft ohne Verb: Hausse des prix de l'énergie, Victoire des Bleus. Mach daraus ganze Sätze.",
+      "Artikeltypen: un éditorial (Leitartikel), une chronique (Kolumne), un reportage, une brève (Kurzmeldung).",
+      "Journalistischer Stil: Konditional für Unbestätigtes, Präsens für lebendige Nachrichten, Zitate mit selon, d'après."
+     ],
+     "q": "Liest du Nachrichten? Welche Rubriken interessieren dich am meisten?",
+     "c": "Schreib drei französische Schlagzeilen ohne Verb über deine Woche und forme jede in einen ganzen Satz um."
+    },
+    "es": {
+     "t": "Leer la prensa",
+     "g": "Lee periódicos franceses: titulares, editoriales y estilo periodístico.",
+     "p": [
+      "Los titulares son cortos y a menudo sin verbo: Hausse des prix de l'énergie, Victoire des Bleus. Conviértelos en frases completas.",
+      "Tipos de artículo: un éditorial (opinión del diario), une chronique (columna), un reportage, une brève (breve).",
+      "Estilo periodístico: condicional para hechos no confirmados, presente para noticias vivas y citas con selon, d'après."
+     ],
+     "q": "¿Lees las noticias? ¿Qué secciones te interesan más?",
+     "c": "Escribe tres titulares sin verbo en francés sobre tu semana y reescribe cada uno como frase completa."
+    },
+    "fr": {
+     "t": "Lire la presse",
+     "g": "Lire la presse : les titres, l'éditorial et le style journalistique.",
+     "p": [
+      "Les titres sont courts et souvent sans verbe : Hausse des prix de l'énergie, Victoire des Bleus. On peut les transformer en phrases.",
+      "Les types d'articles : l'éditorial (avis du journal), la chronique, le reportage, la brève (information courte).",
+      "Le style : conditionnel pour les faits non confirmés, présent pour l'actualité, citations avec selon, d'après."
+     ],
+     "q": "Lis-tu l'actualité ? Quelles rubriques t'intéressent le plus ?",
+     "c": "Écris trois titres sans verbe sur ta semaine, puis transforme chacun en phrase complète."
+    },
+    "it": {
+     "t": "Leggere la stampa",
+     "g": "Leggi i giornali francesi: titoli, editoriali e stile giornalistico.",
+     "p": [
+      "I titoli sono brevi e spesso senza verbo: Hausse des prix de l'énergie, Victoire des Bleus. Trasformali in frasi complete.",
+      "Tipi di articolo: un éditorial (opinione del giornale), une chronique (rubrica), un reportage, une brève (breve).",
+      "Stile giornalistico: condizionale per fatti non confermati, presente per notizie vivaci, citazioni con selon, d'après."
+     ],
+     "q": "Leggi le notizie? Quali sezioni ti interessano di più?",
+     "c": "Scrivi tre titoli senza verbo in francese sulla tua settimana, poi riscrivi ciascuno come frase completa."
+    },
+    "pt": {
+     "t": "Ler a imprensa",
+     "g": "Lê jornais franceses: títulos, editoriais e estilo jornalístico.",
+     "p": [
+      "Os títulos são curtos e muitas vezes sem verbo: Hausse des prix de l'énergie, Victoire des Bleus. Transforma-os em frases completas.",
+      "Tipos de artigo: un éditorial (opinião do jornal), une chronique (crónica), un reportage, une brève (notícia breve).",
+      "Estilo jornalístico: condicional para factos não confirmados, presente para notícias vivas e citações com selon, d'après."
+     ],
+     "q": "Lês as notícias? Que secções te interessam mais?",
+     "c": "Escreve três títulos sem verbo em francês sobre a tua semana e reescreve cada um como frase completa."
+    },
+    "pt_BR": {
+     "t": "Lendo a imprensa",
+     "g": "Leia jornais franceses: manchetes, editoriais e estilo jornalístico.",
+     "p": [
+      "As manchetes são curtas e muitas vezes sem verbo: Hausse des prix de l'énergie, Victoire des Bleus. Transforme-as em frases completas.",
+      "Tipos de matéria: un éditorial (opinião do jornal), une chronique (coluna), un reportage, une brève (nota curta).",
+      "Estilo jornalístico: condicional para fatos não confirmados, presente para notícias vivas e citações com selon, d'après."
+     ],
+     "q": "Você lê notícias? Quais seções mais te interessam?",
+     "c": "Escreva três manchetes sem verbo em francês sobre a sua semana e reescreva cada uma como frase completa."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "un titre",
+      "ex": "Le titre du journal annonce une bonne nouvelle."
+     },
+     {
+      "w": "un éditorial",
+      "ex": "L'éditorial défend une position claire."
+     },
+     {
+      "w": "une brève",
+      "ex": "J'ai lu une brève sur l'ouverture du musée."
+     },
+     {
+      "w": "un reportage",
+      "ex": "Ce reportage nous emmène au cœur de la forêt."
+     },
+     {
+      "w": "d'après",
+      "ex": "D'après le maire, les travaux seront finis en juin."
+     },
+     {
+      "w": "l'actualité",
+      "ex": "Je suis l'actualité sur mon téléphone."
+     }
+    ],
+    "gram": "Nominalisation des titres : le verbe devient nom. Les prix augmentent donne Hausse des prix ; l'équipe gagne donne Victoire de l'équipe."
+   }
+  },
+  {
+   "d": 348,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Debate: work and leisure",
+     "g": "Debate whether we should work less, with arguments and counter-arguments in French.",
+     "p": [
+      "For: more time for family and hobbies, less stress, sharing work. La semaine de quatre jours améliorerait le bien-être.",
+      "Against: costs for companies, more pressure in fewer days. Certes..., mais... lets you admit a point, then contradict it.",
+      "Nuance your view: Tout dépend de..., Dans une certaine mesure..., Il faudrait trouver un équilibre entre..."
+     ],
+     "q": "Would you prefer a four-day week with longer days? Why or why not?",
+     "c": "Write a French paragraph on the four-day week with one argument, one counter-argument using certes... mais and a conclusion."
+    },
+    "de": {
+     "t": "Debatte: Arbeit und Freizeit",
+     "g": "Du debattierst auf Französisch, ob wir weniger arbeiten sollten, mit Argumenten und Gegenargumenten.",
+     "p": [
+      "Dafür: mehr Zeit für Familie und Hobbys, weniger Stress, Arbeit teilen. La semaine de quatre jours améliorerait le bien-être.",
+      "Dagegen: Kosten für Firmen, mehr Druck an weniger Tagen. Certes..., mais... gibt einen Punkt zu und widerspricht dann.",
+      "Nuancieren: Tout dépend de..., Dans une certaine mesure..., Il faudrait trouver un équilibre entre..."
+     ],
+     "q": "Hättest du lieber eine Viertagewoche mit längeren Tagen? Warum oder warum nicht?",
+     "c": "Schreib einen französischen Absatz zur Viertagewoche mit Argument, Gegenargument mit certes... mais und Fazit."
+    },
+    "es": {
+     "t": "Debate: trabajo y ocio",
+     "g": "Debate en francés si deberíamos trabajar menos, con argumentos y contraargumentos.",
+     "p": [
+      "A favor: más tiempo para la familia y el ocio, menos estrés, repartir el trabajo. La semaine de quatre jours améliorerait le bien-être.",
+      "En contra: costes para las empresas, más presión en menos días. Certes..., mais... concede un punto y luego lo rebate.",
+      "Matiza: Tout dépend de..., Dans une certaine mesure..., Il faudrait trouver un équilibre entre..."
+     ],
+     "q": "¿Preferirías una semana de cuatro días con jornadas más largas? ¿Por qué?",
+     "c": "Escribe un párrafo en francés sobre la semana de cuatro días con un argumento, un contraargumento con certes... mais y una conclusión."
+    },
+    "fr": {
+     "t": "Débat : travail et loisirs",
+     "g": "Débattre : faut-il travailler moins ? Arguments et contre-arguments.",
+     "p": [
+      "Pour : plus de temps libre et pour la famille, moins de stress. La semaine de quatre jours améliorerait le bien-être.",
+      "Contre : le coût pour les entreprises, plus de pression sur moins de jours. Certes..., mais... permet de concéder puis de nuancer.",
+      "Nuancer : Tout dépend de..., Dans une certaine mesure..., Il faudrait trouver un équilibre entre..."
+     ],
+     "q": "Préférerais-tu une semaine de quatre jours avec des journées plus longues ? Pourquoi ?",
+     "c": "Écris un paragraphe sur la semaine de quatre jours : un argument, un contre-argument avec certes... mais, une conclusion."
+    },
+    "it": {
+     "t": "Dibattito: lavoro e tempo libero",
+     "g": "Discuti in francese se dovremmo lavorare meno, con argomenti e controargomenti.",
+     "p": [
+      "A favore: più tempo per famiglia e hobby, meno stress, condividere il lavoro. La semaine de quatre jours améliorerait le bien-être.",
+      "Contro: costi per le aziende, più pressione in meno giorni. Certes..., mais... concede un punto e poi lo contraddice.",
+      "Sfuma: Tout dépend de..., Dans une certaine mesure..., Il faudrait trouver un équilibre entre..."
+     ],
+     "q": "Preferiresti una settimana di quattro giorni con giornate più lunghe? Perché?",
+     "c": "Scrivi un paragrafo in francese sulla settimana corta con un argomento, un controargomento con certes... mais e una conclusione."
+    },
+    "pt": {
+     "t": "Debate: trabalho e lazer",
+     "g": "Debate em francês se devíamos trabalhar menos, com argumentos e contra-argumentos.",
+     "p": [
+      "A favor: mais tempo para a família e passatempos, menos stress, partilhar o trabalho. La semaine de quatre jours améliorerait le bien-être.",
+      "Contra: custos para as empresas, mais pressão em menos dias. Certes..., mais... concede um ponto e depois contraria-o.",
+      "Matiza: Tout dépend de..., Dans une certaine mesure..., Il faudrait trouver un équilibre entre..."
+     ],
+     "q": "Preferias uma semana de quatro dias com dias mais longos? Porquê?",
+     "c": "Escreve um parágrafo em francês sobre a semana de quatro dias com um argumento, um contra-argumento com certes... mais e uma conclusão."
+    },
+    "pt_BR": {
+     "t": "Debate: trabalho e lazer",
+     "g": "Debata em francês se deveríamos trabalhar menos, com argumentos e contra-argumentos.",
+     "p": [
+      "A favor: mais tempo para família e hobbies, menos estresse, dividir o trabalho. La semaine de quatre jours améliorerait le bien-être.",
+      "Contra: custos para as empresas, mais pressão em menos dias. Certes..., mais... admite um ponto e depois o contesta.",
+      "Nuance: Tout dépend de..., Dans une certaine mesure..., Il faudrait trouver un équilibre entre..."
+     ],
+     "q": "Você preferiria uma semana de quatro dias com jornadas mais longas? Por quê?",
+     "c": "Escreva um parágrafo em francês sobre a semana de quatro dias com um argumento, um contra-argumento com certes... mais e uma conclusão."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la semaine de quatre jours",
+      "ex": "Plusieurs entreprises testent la semaine de quatre jours."
+     },
+     {
+      "w": "le bien-être",
+      "ex": "Le bien-être des salariés est une priorité."
+     },
+     {
+      "w": "les loisirs",
+      "ex": "J'aimerais avoir plus de temps pour mes loisirs."
+     },
+     {
+      "w": "certes",
+      "ex": "Certes, c'est coûteux, mais les salariés sont plus motivés."
+     },
+     {
+      "w": "un équilibre",
+      "ex": "Il faut un équilibre entre vie pro et vie perso."
+     },
+     {
+      "w": "dans une certaine mesure",
+      "ex": "Dans une certaine mesure, je suis d'accord avec toi."
+     }
+    ],
+    "gram": "Concession : certes..., mais... ; il est vrai que..., cependant... On reconnaît un argument avant de le nuancer."
+   }
+  },
+  {
+   "d": 349,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Debate: city and environment",
+     "g": "Debate cars in city centres, green spaces and public transport in French.",
+     "p": [
+      "Cars in the centre: pour: fewer emissions, quieter streets, safer for children. Contre: harder for deliveries, elderly people and workers.",
+      "Green spaces and transport: more parks fight heat; better public transport makes cars less necessary.",
+      "Debate phrases: Je ne partage pas votre avis. / Vous marquez un point. / Permettez-moi de nuancer."
+     ],
+     "q": "Should cars be banned from city centres? Defend your view in French.",
+     "c": "Write a short French exchange of four lines between two people who disagree about cars in the city centre."
+    },
+    "de": {
+     "t": "Debatte: Stadt und Umwelt",
+     "g": "Du debattierst auf Französisch über Autos in Innenstädten, Grünflächen und öffentlichen Verkehr.",
+     "p": [
+      "Autos im Zentrum: pour: weniger Abgase, ruhigere Straßen, sicherer für Kinder. Contre: schwer für Lieferungen, Ältere und Pendler.",
+      "Grün und Verkehr: mehr Parks gegen Hitze; besserer Nahverkehr macht das Auto weniger nötig.",
+      "Debattensätze: Je ne partage pas votre avis. / Vous marquez un point. / Permettez-moi de nuancer."
+     ],
+     "q": "Sollten Autos aus Innenstädten verbannt werden? Verteidige deine Sicht auf Französisch.",
+     "c": "Schreib einen kurzen französischen Wortwechsel in vier Zeilen zwischen zwei Personen, die über Autos in der Innenstadt streiten."
+    },
+    "es": {
+     "t": "Debate: ciudad y medio ambiente",
+     "g": "Debate en francés sobre los coches en el centro, las zonas verdes y el transporte público.",
+     "p": [
+      "Coches en el centro: pour: menos emisiones, calles más tranquilas y seguras. Contre: más difícil para repartos, mayores y trabajadores.",
+      "Zonas verdes y transporte: más parques contra el calor; mejor transporte público hace el coche menos necesario.",
+      "Frases de debate: Je ne partage pas votre avis. / Vous marquez un point. / Permettez-moi de nuancer."
+     ],
+     "q": "¿Habría que prohibir los coches en el centro de las ciudades? Defiende tu opinión en francés.",
+     "c": "Escribe un breve intercambio en francés de cuatro líneas entre dos personas que discrepan sobre los coches en el centro."
+    },
+    "fr": {
+     "t": "Débat : ville et environnement",
+     "g": "Débattre de la voiture en centre-ville, des espaces verts et des transports en commun.",
+     "p": [
+      "La voiture en ville : pour l'interdire : moins de pollution, des rues calmes et sûres. Contre : livraisons, personnes âgées, travailleurs.",
+      "Espaces verts et transports : plus de parcs contre la chaleur ; de meilleurs transports rendent la voiture moins nécessaire.",
+      "Pour débattre : Je ne partage pas votre avis. / Vous marquez un point. / Permettez-moi de nuancer."
+     ],
+     "q": "Faut-il interdire la voiture en centre-ville ? Défends ton point de vue.",
+     "c": "Écris un court échange de quatre répliques entre deux personnes en désaccord sur la voiture en ville."
+    },
+    "it": {
+     "t": "Dibattito: città e ambiente",
+     "g": "Discuti in francese di auto nei centri storici, spazi verdi e trasporti pubblici.",
+     "p": [
+      "Auto in centro: pour: meno emissioni, strade più tranquille e sicure. Contre: più difficile per consegne, anziani e lavoratori.",
+      "Verde e trasporti: più parchi contro il caldo; trasporti pubblici migliori rendono l'auto meno necessaria.",
+      "Frasi da dibattito: Je ne partage pas votre avis. / Vous marquez un point. / Permettez-moi de nuancer."
+     ],
+     "q": "Bisognerebbe vietare le auto nei centri città? Difendi la tua opinione in francese.",
+     "c": "Scrivi un breve scambio in francese di quattro battute tra due persone in disaccordo sulle auto in centro."
+    },
+    "pt": {
+     "t": "Debate: cidade e ambiente",
+     "g": "Debate em francês os carros no centro das cidades, os espaços verdes e os transportes públicos.",
+     "p": [
+      "Carros no centro: pour: menos emissões, ruas mais calmas e seguras. Contre: mais difícil para entregas, idosos e trabalhadores.",
+      "Espaços verdes e transportes: mais parques contra o calor; melhores transportes públicos tornam o carro menos necessário.",
+      "Frases de debate: Je ne partage pas votre avis. / Vous marquez un point. / Permettez-moi de nuancer."
+     ],
+     "q": "Devíamos proibir os carros no centro das cidades? Defende a tua opinião em francês.",
+     "c": "Escreve uma breve troca em francês de quatro falas entre duas pessoas que discordam sobre carros no centro."
+    },
+    "pt_BR": {
+     "t": "Debate: cidade e meio ambiente",
+     "g": "Debata em francês os carros no centro das cidades, as áreas verdes e o transporte público.",
+     "p": [
+      "Carros no centro: pour: menos emissões, ruas mais calmas e seguras. Contre: mais difícil para entregas, idosos e trabalhadores.",
+      "Áreas verdes e transporte: mais parques contra o calor; um transporte público melhor torna o carro menos necessário.",
+      "Frases de debate: Je ne partage pas votre avis. / Vous marquez un point. / Permettez-moi de nuancer."
+     ],
+     "q": "Deveríamos proibir carros no centro das cidades? Defenda sua opinião em francês.",
+     "c": "Escreva uma breve troca em francês de quatro falas entre duas pessoas que discordam sobre carros no centro."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "le centre-ville",
+      "ex": "Le centre-ville est devenu piéton le week-end."
+     },
+     {
+      "w": "interdire",
+      "ex": "La mairie veut interdire les voitures le dimanche."
+     },
+     {
+      "w": "la pollution",
+      "ex": "La pollution de l'air a baissé depuis la réforme."
+     },
+     {
+      "w": "je ne partage pas votre avis",
+      "ex": "Je ne partage pas votre avis sur cette question."
+     },
+     {
+      "w": "vous marquez un point",
+      "ex": "Vous marquez un point, les livraisons posent problème."
+     },
+     {
+      "w": "permettez-moi de nuancer",
+      "ex": "Permettez-moi de nuancer : tout dépend de la ville."
+     }
+    ],
+    "gram": "Le subjonctif après il faut que, il est nécessaire que : il faut que la ville développe les transports en commun."
+   }
+  },
+  {
+   "d": 350,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Debate: education",
+     "g": "Argue both sides about school, homework and online learning in French.",
+     "p": [
+      "Homework: pour: it builds habits and autonomy. Contre: it increases inequality, since not every child gets help at home.",
+      "Online learning: flexible and accessible, but it can isolate students and requires discipline.",
+      "Arguing both sides: D'une part..., d'autre part... / Si l'on considère que..., on peut aussi penser que..."
+     ],
+     "q": "What did you think of homework when you were at school? Has your opinion changed?",
+     "c": "Write a balanced French paragraph about online learning with d'une part... d'autre part and your personal conclusion."
+    },
+    "de": {
+     "t": "Debatte: Bildung",
+     "g": "Du argumentierst auf Französisch für beide Seiten zu Schule, Hausaufgaben und Online-Lernen.",
+     "p": [
+      "Hausaufgaben: pour: sie fördern Routine und Selbstständigkeit. Contre: mehr Ungleichheit, denn nicht jedes Kind bekommt Hilfe.",
+      "Online-Lernen: flexibel und zugänglich, kann aber isolieren und verlangt Disziplin.",
+      "Beide Seiten zeigen: D'une part..., d'autre part... / Si l'on considère que..., on peut aussi penser que..."
+     ],
+     "q": "Was hieltest du in deiner Schulzeit von Hausaufgaben? Hat sich deine Meinung geändert?",
+     "c": "Schreib einen ausgewogenen französischen Absatz zum Online-Lernen mit d'une part... d'autre part und deinem Fazit."
+    },
+    "es": {
+     "t": "Debate: educación",
+     "g": "Argumenta en francés a favor y en contra sobre la escuela, los deberes y el aprendizaje en línea.",
+     "p": [
+      "Deberes: pour: crean hábitos y autonomía. Contre: aumentan la desigualdad, porque no todos los niños reciben ayuda en casa.",
+      "Aprendizaje en línea: flexible y accesible, pero puede aislar y exige disciplina.",
+      "Defender ambos lados: D'une part..., d'autre part... / Si l'on considère que..., on peut aussi penser que..."
+     ],
+     "q": "¿Qué pensabas de los deberes cuando ibas al colegio? ¿Ha cambiado tu opinión?",
+     "c": "Escribe un párrafo equilibrado en francés sobre el aprendizaje en línea con d'une part... d'autre part y tu conclusión."
+    },
+    "fr": {
+     "t": "Débat : l'éducation",
+     "g": "Défendre les deux côtés : école, devoirs et apprentissage en ligne.",
+     "p": [
+      "Les devoirs : pour : ils créent des habitudes et de l'autonomie. Contre : ils creusent les inégalités, tous les enfants n'étant pas aidés.",
+      "L'apprentissage en ligne : souple et accessible, mais il peut isoler et demande de la discipline.",
+      "Défendre les deux côtés : D'une part..., d'autre part... / Si l'on considère que..., on peut aussi penser que..."
+     ],
+     "q": "Que pensais-tu des devoirs quand tu étais à l'école ? Ton avis a-t-il changé ?",
+     "c": "Écris un paragraphe équilibré sur l'apprentissage en ligne avec d'une part... d'autre part et ta conclusion."
+    },
+    "it": {
+     "t": "Dibattito: istruzione",
+     "g": "Argomenta in francese i pro e i contro su scuola, compiti e apprendimento online.",
+     "p": [
+      "Compiti: pour: creano abitudini e autonomia. Contre: aumentano le disuguaglianze, perché non tutti i bambini sono aiutati a casa.",
+      "Apprendimento online: flessibile e accessibile, ma può isolare e richiede disciplina.",
+      "Sostenere entrambe le parti: D'une part..., d'autre part... / Si l'on considère que..., on peut aussi penser que..."
+     ],
+     "q": "Cosa pensavi dei compiti quando andavi a scuola? La tua opinione è cambiata?",
+     "c": "Scrivi un paragrafo equilibrato in francese sull'apprendimento online con d'une part... d'autre part e la tua conclusione."
+    },
+    "pt": {
+     "t": "Debate: educação",
+     "g": "Argumenta em francês os dois lados sobre a escola, os trabalhos de casa e o ensino online.",
+     "p": [
+      "Trabalhos de casa: pour: criam hábitos e autonomia. Contre: aumentam as desigualdades, pois nem todas as crianças têm ajuda em casa.",
+      "Ensino online: flexível e acessível, mas pode isolar e exige disciplina.",
+      "Defender os dois lados: D'une part..., d'autre part... / Si l'on considère que..., on peut aussi penser que..."
+     ],
+     "q": "O que pensavas dos trabalhos de casa quando andavas na escola? A tua opinião mudou?",
+     "c": "Escreve um parágrafo equilibrado em francês sobre o ensino online com d'une part... d'autre part e a tua conclusão."
+    },
+    "pt_BR": {
+     "t": "Debate: educação",
+     "g": "Argumente em francês os dois lados sobre escola, lição de casa e ensino on-line.",
+     "p": [
+      "Lição de casa: pour: cria hábitos e autonomia. Contre: aumenta a desigualdade, já que nem toda criança tem ajuda em casa.",
+      "Ensino on-line: flexível e acessível, mas pode isolar e exige disciplina.",
+      "Defender os dois lados: D'une part..., d'autre part... / Si l'on considère que..., on peut aussi penser que..."
+     ],
+     "q": "O que você achava da lição de casa na época da escola? Sua opinião mudou?",
+     "c": "Escreva um parágrafo equilibrado em francês sobre o ensino on-line com d'une part... d'autre part e a sua conclusão."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "les devoirs",
+      "ex": "Les devoirs du soir prennent souvent une heure."
+     },
+     {
+      "w": "l'apprentissage en ligne",
+      "ex": "L'apprentissage en ligne permet d'étudier à son rythme."
+     },
+     {
+      "w": "l'autonomie",
+      "ex": "Ce projet développe l'autonomie des élèves."
+     },
+     {
+      "w": "les inégalités",
+      "ex": "L'école doit réduire les inégalités."
+     },
+     {
+      "w": "d'une part... d'autre part",
+      "ex": "D'une part c'est pratique, d'autre part c'est isolant."
+     },
+     {
+      "w": "un enseignant",
+      "ex": "Un bon enseignant sait motiver sa classe."
+     }
+    ],
+    "gram": "Participe présent pour la cause : tous les enfants n'étant pas aidés, les devoirs creusent les inégalités."
+   }
+  }
+ ]
+}

@@ -1,0 +1,33 @@
+{
+ "topic": "home_organisation",
+ "intro": {
+  "en": [
+   "Hi, I'm {name}! I'll guide you on a 365-day path to a calmer, more organised home, with one small, practical lesson every day.",
+   "We'll start with drawers and daily routines, then move on to kitchens, wardrobes, smart storage and systems that last. Which spot in your home gets messy the fastest?"
+  ],
+  "de": [
+   "Hallo, ich bin {name}! Ich begleite dich auf einem 365-Tage-Weg zu einem ruhigeren, besser organisierten Zuhause, mit einer kleinen, praktischen Lektion pro Tag.",
+   "Wir starten mit Schubladen und Alltagsroutinen, dann geht es um Küche, Kleiderschrank, clevere Aufbewahrung und Systeme, die halten. Welche Ecke bei dir wird am schnellsten unordentlich?"
+  ],
+  "es": [
+   "¡Hola, soy {name}! Te acompañaré en un camino de 365 días hacia un hogar más tranquilo y ordenado, con una pequeña lección práctica cada día.",
+   "Empezaremos con cajones y rutinas diarias, y luego veremos la cocina, el armario, el almacenaje inteligente y sistemas que duran. ¿Qué rincón de tu casa se desordena más rápido?"
+  ],
+  "fr": [
+   "Salut, je suis {name} ! Je vais t'accompagner sur un parcours de 365 jours vers un intérieur plus calme et mieux rangé, avec une petite leçon pratique par jour.",
+   "On commencera par les tiroirs et les routines du quotidien, puis la cuisine, la garde-robe, les rangements malins et des systèmes durables. Quel coin de chez toi se dérange le plus vite ?"
+  ],
+  "it": [
+   "Ciao, sono {name}! Ti guiderò in un percorso di 365 giorni verso una casa più serena e ordinata, con una piccola lezione pratica ogni giorno.",
+   "Partiremo da cassetti e routine quotidiane, poi passeremo a cucina, armadio, contenitori intelligenti e sistemi che durano. Qual è l'angolo di casa tua che si riempie di disordine più in fretta?"
+  ],
+  "pt": [
+   "Olá, eu sou {name}! Vou acompanhar-te num percurso de 365 dias rumo a uma casa mais calma e arrumada, com uma pequena lição prática por dia.",
+   "Começamos pelas gavetas e rotinas diárias e depois passamos à cozinha, ao roupeiro, à arrumação inteligente e a sistemas que duram. Que canto da tua casa se desarruma mais depressa?"
+  ],
+  "pt_BR": [
+   "Oi, eu sou {name}! Vou te guiar numa jornada de 365 dias rumo a uma casa mais tranquila e organizada, com uma pequena lição prática por dia.",
+   "A gente começa pelas gavetas e rotinas do dia a dia e depois passa pela cozinha, pelo guarda-roupa, por soluções de armazenamento e sistemas que duram. Qual canto da sua casa bagunça mais rápido?"
+  ]
+ }
+}

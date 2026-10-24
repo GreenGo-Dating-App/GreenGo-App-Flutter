@@ -1,0 +1,1125 @@
+{
+  "topic": "practice_portuguese",
+  "lessons": [
+    {
+      "d": 101,
+      "lv": "A2",
+      "i18n": {
+        "en": {
+          "t": "Perfeito or imperfeito?",
+          "g": "Choose between finished actions and background in the past.",
+          "p": [
+            "Perfeito for finished events: Cheguei às oito. Imperfeito for the scene around them: Estava a chover.",
+            "Together: Estava a chover quando cheguei (It was raining when I arrived). The imperfeito sets the stage.",
+            "Ask yourself: is it a single event (perfeito) or a habit, description or ongoing action (imperfeito)?"
+          ],
+          "q": "What was happening when you woke up this morning? Use estava a + verb and one perfeito.",
+          "c": "Write three sentences that mix both tenses: Estava a ... quando ..."
+        },
+        "de": {
+          "t": "Perfeito oder imperfeito?",
+          "g": "Du wählst zwischen abgeschlossenen Handlungen und Hintergrund in der Vergangenheit.",
+          "p": [
+            "Perfeito für abgeschlossene Ereignisse: Cheguei às oito. Imperfeito für die Szene drumherum: Estava a chover.",
+            "Zusammen: Estava a chover quando cheguei (Es regnete, als ich ankam). Das imperfeito baut die Bühne.",
+            "Frag dich: Einzelereignis (perfeito) oder Gewohnheit, Beschreibung, laufende Handlung (imperfeito)?"
+          ],
+          "q": "Was passierte gerade, als du heute Morgen aufgewacht bist? Nutze estava a + Verb und ein perfeito.",
+          "c": "Schreib drei Sätze mit beiden Zeiten: Estava a ... quando ..."
+        },
+        "es": {
+          "t": "¿Perfeito o imperfeito?",
+          "g": "Elegir entre acciones terminadas y el fondo de la escena en el pasado.",
+          "p": [
+            "Como en español: perfeito = indefinido (Cheguei às oito); imperfeito = imperfecto (Estava a chover).",
+            "Juntos: Estava a chover quando cheguei (estaba lloviendo cuando llegué). El imperfeito pinta el escenario.",
+            "Pregúntate: ¿hecho puntual (perfeito) o costumbre, descripción o acción en curso (imperfeito)?"
+          ],
+          "q": "¿Qué estaba pasando cuando te despertaste esta mañana? Usa estava a + verbo y un perfeito.",
+          "c": "Escribe tres frases que mezclen los dos tiempos: Estava a ... quando ..."
+        },
+        "fr": {
+          "t": "Perfeito ou imperfeito ?",
+          "g": "Choisir entre actions terminées et arrière-plan au passé.",
+          "p": [
+            "Le perfeito pour les événements (Cheguei às oito) ; l'imperfeito pour le décor (Estava a chover), comme l'imparfait.",
+            "Ensemble : Estava a chover quando cheguei (Il pleuvait quand je suis arrivé). L'imperfeito plante le décor.",
+            "Demande-toi : événement unique (perfeito) ou habitude, description, action en cours (imperfeito) ?"
+          ],
+          "q": "Que se passait-il quand tu t'es réveillé ce matin ? Utilise estava a + verbe et un perfeito.",
+          "c": "Écris trois phrases qui mélangent les deux temps : Estava a ... quando ..."
+        },
+        "it": {
+          "t": "Perfeito o imperfeito?",
+          "g": "Scegli tra azioni concluse e sfondo nel passato.",
+          "p": [
+            "Il perfeito per gli eventi (Cheguei às oito); l'imperfeito per la scena (Estava a chover), come l'imperfetto.",
+            "Insieme: Estava a chover quando cheguei (Pioveva quando sono arrivato). L'imperfeito prepara la scena.",
+            "Chiediti: evento unico (perfeito) o abitudine, descrizione, azione in corso (imperfeito)?"
+          ],
+          "q": "Cosa stava succedendo quando ti sei svegliato stamattina? Usa estava a + verbo e un perfeito.",
+          "c": "Scrivi tre frasi che mescolano i due tempi: Estava a ... quando ..."
+        },
+        "pt": {
+          "t": "Perfeito ou imperfeito?",
+          "g": "Revê como explicar a escolha entre perfeito e imperfeito.",
+          "p": [
+            "Uma imagem ajuda: o imperfeito é o cenário de um filme, o perfeito são as ações que acontecem em cena.",
+            "Estava a chover quando cheguei: duas ações, uma em curso e outra pontual. Em Portugal com estar a.",
+            "Alguns verbos mudam de sentido: conheci (fiquei a conhecer) e conhecia (já conhecia). Confunde muitos."
+          ],
+          "q": "Que exemplo usarias para explicar estes dois tempos a um estrangeiro?",
+          "c": "Escreve um pequeno episódio em cinco frases e marca cada verbo como cenário ou ação."
+        },
+        "pt_BR": {
+          "t": "Perfeito ou imperfeito?",
+          "g": "Revise a escolha entre perfeito e imperfeito com a forma portuguesa estava a.",
+          "p": [
+            "O uso dos tempos é igual; muda a ação em curso: em Portugal, estava a chover; no Brasil, estava chovendo.",
+            "Estava a jantar quando o telefone tocou: o cenário com estar a e a interrupção no perfeito.",
+            "Com tu: O que estavas a fazer quando te liguei? é uma pergunta muito portuguesa."
+          ],
+          "q": "O que você estava a fazer ontem às oito da noite?",
+          "c": "Reescreva três frases brasileiras com estava + gerúndio na forma portuguesa estava a + infinitivo."
+        }
+      },
+      "target": {
+        "vocab": [
+          {
+            "w": "estava a chover",
+            "ex": "Estava a chover quando saí de casa."
+          },
+          {
+            "w": "quando cheguei",
+            "ex": "Quando cheguei, já estavam todos à mesa."
+          },
+          {
+            "w": "de repente",
+            "ex": "Estava a ler e, de repente, a luz foi abaixo."
+          },
+          {
+            "w": "enquanto",
+            "ex": "Enquanto cozinhava, ouvia música."
+          },
+          {
+            "w": "conheci",
+            "ex": "Conheci a Joana numa festa."
+          },
+          {
+            "w": "conhecia",
+            "ex": "Já conhecia aquela cidade."
+          }
+        ],
+        "gram": "Perfeito: ação pontual (cheguei). Imperfeito: cenário, hábito, ação em curso (estava a chover). Juntos: Estava a ... quando ..."
+      }
+    },
+    {
+      "d": 102,
+      "lv": "A2",
+      "i18n": {
+        "en": {
+          "t": "Irregular imperfect: ser, ter, vir, pôr",
+          "g": "Learn era, tinha, vinha, punha: the four irregular imperfects.",
+          "p": [
+            "Ser: era, eras, era, éramos, eram. Era uma vez... means Once upon a time...",
+            "Ter: tinha, tinhas, tinha, tínhamos, tinham. Vir: vinha, vinhas, vinha, vínhamos, vinham.",
+            "Pôr (to put): punha, punhas, punha, púnhamos, punham. Every other verb is regular in the imperfeito!"
+          ],
+          "q": "What was your first school like? Use era and tinha.",
+          "c": "Describe an old photo in four sentences with era, tinha, vinha and punha."
+        },
+        "de": {
+          "t": "Unregelmäßiges imperfeito: ser, ter, vir, pôr",
+          "g": "Du lernst era, tinha, vinha, punha: die vier unregelmäßigen Formen.",
+          "p": [
+            "Ser: era, eras, era, éramos, eram. Era uma vez... heißt Es war einmal...",
+            "Ter: tinha, tinhas, tinha, tínhamos, tinham. Vir: vinha, vinhas, vinha, vínhamos, vinham.",
+            "Pôr (stellen, legen): punha, punhas, punha, púnhamos, punham. Alle anderen Verben sind im imperfeito regelmäßig!"
+          ],
+          "q": "Wie war deine erste Schule? Nutze era und tinha.",
+          "c": "Beschreib ein altes Foto in vier Sätzen mit era, tinha, vinha und punha."
+        },
+        "es": {
+          "t": "Imperfeito irregular: ser, ter, vir, pôr",
+          "g": "Aprender era, tinha, vinha, punha: los cuatro imperfectos irregulares.",
+          "p": [
+            "Ser: era, eras, era, éramos, eram. Era uma vez... es Érase una vez...",
+            "Ter: tinha, tinhas, tinha, tínhamos, tinham. Vir: vinha, vinhas, vinha, vínhamos, vinham.",
+            "Pôr (poner): punha, punhas, punha, púnhamos, punham. ¡Todos los demás verbos son regulares en imperfeito!"
+          ],
+          "q": "¿Cómo era tu primera escuela? Usa era y tinha.",
+          "c": "Describe una foto antigua en cuatro frases con era, tinha, vinha y punha."
+        },
+        "fr": {
+          "t": "Imperfeito irrégulier : ser, ter, vir, pôr",
+          "g": "Apprendre era, tinha, vinha, punha : les quatre imparfaits irréguliers.",
+          "p": [
+            "Ser : era, eras, era, éramos, eram. Era uma vez... veut dire Il était une fois...",
+            "Ter : tinha, tinhas, tinha, tínhamos, tinham. Vir : vinha, vinhas, vinha, vínhamos, vinham.",
+            "Pôr (mettre) : punha, punhas, punha, púnhamos, punham. Tous les autres verbes sont réguliers à l'imperfeito !"
+          ],
+          "q": "Comment était ta première école ? Utilise era et tinha.",
+          "c": "Décris une vieille photo en quatre phrases avec era, tinha, vinha et punha."
+        },
+        "it": {
+          "t": "Imperfeito irregolare: ser, ter, vir, pôr",
+          "g": "Impari era, tinha, vinha, punha: i quattro imperfetti irregolari.",
+          "p": [
+            "Ser: era, eras, era, éramos, eram. Era uma vez... vuol dire C'era una volta...",
+            "Ter: tinha, tinhas, tinha, tínhamos, tinham. Vir: vinha, vinhas, vinha, vínhamos, vinham.",
+            "Pôr (mettere): punha, punhas, punha, púnhamos, punham. Tutti gli altri verbi sono regolari all'imperfeito!"
+          ],
+          "q": "Com'era la tua prima scuola? Usa era e tinha.",
+          "c": "Descrivi una vecchia foto in quattro frasi con era, tinha, vinha e punha."
+        },
+        "pt": {
+          "t": "Imperfeito irregular: ser, ter, vir, pôr",
+          "g": "Revê os quatro imperfeitos irregulares e as dúvidas de acentuação.",
+          "p": [
+            "Éramos, tínhamos, vínhamos, púnhamos levam acento; é um detalhe que muitos nativos também esquecem.",
+            "Pôr mantém o acento no infinitivo para se distinguir da preposição por; punha não tem acento.",
+            "Era uma vez abre os contos tradicionais; uma boa porta para trabalhar o imperfeito com estrangeiros."
+          ],
+          "q": "Que conto tradicional português contarias a um estrangeiro para treinar o imperfeito?",
+          "c": "Escreve o início de um conto com Era uma vez e cinco verbos no imperfeito, incluindo os irregulares."
+        },
+        "pt_BR": {
+          "t": "Imperfeito irregular: ser, ter, vir, pôr",
+          "g": "Revise era, tinha, vinha, punha com tu e usos portugueses.",
+          "p": [
+            "Com tu: eras, tinhas, vinhas, punhas. Como eras em criança? é uma pergunta comum.",
+            "Pôr é muito usado em Portugal onde o Brasil diz colocar: Punha a mesa todos os dias.",
+            "Era uma vez abre as histórias nos dois países. Os quatro irregulares são iguais."
+          ],
+          "q": "Como era a sua casa de infância? Use era e tinha.",
+          "c": "Escreva quatro frases com eras, tinhas, vinhas e punhas, à portuguesa."
+        }
+      },
+      "target": {
+        "vocab": [
+          {
+            "w": "era",
+            "ex": "A minha primeira casa era pequena."
+          },
+          {
+            "w": "tinha",
+            "ex": "Eu tinha um cão chamado Bobi."
+          },
+          {
+            "w": "vinha",
+            "ex": "O meu avô vinha buscar-me à escola."
+          },
+          {
+            "w": "punha",
+            "ex": "A minha mãe punha a mesa às sete."
+          },
+          {
+            "w": "era uma vez",
+            "ex": "Era uma vez uma menina muito curiosa."
+          },
+          {
+            "w": "tínhamos",
+            "ex": "Tínhamos uma horta atrás de casa."
+          }
+        ],
+        "gram": "Imperfeitos irregulares: ser (era), ter (tinha), vir (vinha), pôr (punha). Nós: éramos, tínhamos, vínhamos, púnhamos."
+      }
+    },
+    {
+      "d": 103,
+      "lv": "A2",
+      "i18n": {
+        "en": {
+          "t": "Travel stories",
+          "g": "Tell the story of a trip in the past.",
+          "p": [
+            "Set the scene with the imperfeito: Era verão, estava calor, o hotel era perto da praia.",
+            "Tell events with the perfeito: Fomos de comboio, visitámos o castelo, comemos peixe grelhado.",
+            "Add a funny moment: O mais engraçado foi quando... and finish with an opinion: Foi inesquecível!"
+          ],
+          "q": "Tell me about a trip you remember well: where, how, what you ate and one funny moment.",
+          "c": "Write a travel story of eight sentences mixing perfeito and imperfeito, with a funny moment."
+        },
+        "de": {
+          "t": "Reisegeschichten",
+          "g": "Du erzählst eine Reise in der Vergangenheit.",
+          "p": [
+            "Szene mit dem imperfeito: Era verão, estava calor, o hotel era perto da praia.",
+            "Ereignisse mit dem perfeito: Fomos de comboio, visitámos o castelo, comemos peixe grelhado.",
+            "Ein lustiger Moment: O mais engraçado foi quando... und eine Meinung zum Schluss: Foi inesquecível!"
+          ],
+          "q": "Erzähl mir von einer Reise, an die du dich gut erinnerst: wohin, wie, was du gegessen hast und ein lustiger Moment.",
+          "c": "Schreib eine Reisegeschichte mit acht Sätzen, perfeito und imperfeito gemischt, mit einem lustigen Moment."
+        },
+        "es": {
+          "t": "Historias de viaje",
+          "g": "Contar un viaje en pasado.",
+          "p": [
+            "Pinta la escena con el imperfeito: Era verão, estava calor, o hotel era perto da praia.",
+            "Cuenta los hechos con el perfeito: Fomos de comboio, visitámos o castelo, comemos peixe grelhado.",
+            "Añade un momento gracioso: O mais engraçado foi quando... y termina con una opinión: Foi inesquecível!"
+          ],
+          "q": "Háblame de un viaje que recuerdes bien: adónde, cómo, qué comiste y un momento gracioso.",
+          "c": "Escribe una historia de viaje de ocho frases mezclando perfeito e imperfeito, con un momento gracioso."
+        },
+        "fr": {
+          "t": "Récits de voyage",
+          "g": "Raconter un voyage au passé.",
+          "p": [
+            "Plante le décor avec l'imperfeito : Era verão, estava calor, o hotel era perto da praia.",
+            "Raconte les événements au perfeito : Fomos de comboio, visitámos o castelo, comemos peixe grelhado.",
+            "Ajoute un moment drôle : O mais engraçado foi quando... et conclus avec un avis : Foi inesquecível!"
+          ],
+          "q": "Raconte-moi un voyage dont tu te souviens bien : où, comment, ce que tu as mangé et un moment drôle.",
+          "c": "Écris un récit de voyage de huit phrases mêlant perfeito et imperfeito, avec un moment drôle."
+        },
+        "it": {
+          "t": "Racconti di viaggio",
+          "g": "Racconti un viaggio al passato.",
+          "p": [
+            "Prepara la scena con l'imperfeito: Era verão, estava calor, o hotel era perto da praia.",
+            "Racconta i fatti con il perfeito: Fomos de comboio, visitámos o castelo, comemos peixe grelhado.",
+            "Aggiungi un momento buffo: O mais engraçado foi quando... e chiudi con un'opinione: Foi inesquecível!"
+          ],
+          "q": "Raccontami un viaggio che ricordi bene: dove, come, cosa hai mangiato e un momento buffo.",
+          "c": "Scrivi un racconto di viaggio di otto frasi mescolando perfeito e imperfeito, con un momento buffo."
+        },
+        "pt": {
+          "t": "Histórias de viagem",
+          "g": "Revê como contar uma viagem de forma envolvente.",
+          "p": [
+            "Uma boa história de viagem começa no cenário (imperfeito) e avança com ações (perfeito).",
+            "Expressões que dão vida: O mais engraçado foi..., Nunca me vou esquecer de..., Para nossa surpresa...",
+            "Pergunta pormenores a quem aprende: E depois? O que comeste? Quem conheceste? Faz a conversa avançar."
+          ],
+          "q": "Qual foi a viagem mais divertida que fizeste em Portugal?",
+          "c": "Conta uma viagem em oito frases, com um início no imperfeito e uma surpresa no perfeito."
+        },
+        "pt_BR": {
+          "t": "Histórias de viagem",
+          "g": "Conte uma viagem com o sabor do português de Portugal.",
+          "p": [
+            "Cenário no imperfeito: Estava imenso calor, o comboio ia cheio. Ações no perfeito: Apanhámos o autocarro.",
+            "Apanhar é pegar (transporte): Apanhámos o barco para Cacilhas. Ir de comboio é ir de trem.",
+            "O mais engraçado foi quando... e Foi espetacular! fecham bem uma história em Portugal."
+          ],
+          "q": "Conte uma viagem que fez, como se estivesse a falar com um português.",
+          "c": "Escreva uma história de viagem de oito frases com apanhar, comboio, imenso e estava a."
+        }
+      },
+      "target": {
+        "vocab": [
+          {
+            "w": "a viagem",
+            "ex": "A viagem ao Algarve foi inesquecível."
+          },
+          {
+            "w": "visitámos",
+            "ex": "Visitámos o castelo de Guimarães."
+          },
+          {
+            "w": "o mais engraçado",
+            "ex": "O mais engraçado foi perdermos o comboio."
+          },
+          {
+            "w": "apanhámos",
+            "ex": "Apanhámos o barco para a outra margem."
+          },
+          {
+            "w": "inesquecível",
+            "ex": "Foi uma semana inesquecível."
+          },
+          {
+            "w": "a mala",
+            "ex": "Fiz a mala na noite anterior."
+          }
+        ],
+        "gram": "Histórias: imperfeito para o cenário (era verão, estava calor) e perfeito para as ações (fomos, visitámos, comemos)."
+      }
+    },
+    {
+      "d": 104,
+      "lv": "A2",
+      "i18n": {
+        "en": {
+          "t": "At the airport",
+          "g": "Handle check-in, gates, luggage and delays.",
+          "p": [
+            "Check-in: Onde é o check-in da TAP? O meu voo é para Paris. Queria despachar esta mala.",
+            "A porta de embarque is the gate, o cartão de embarque the boarding pass, a bagagem de mão hand luggage.",
+            "Delays: O voo está atrasado. O voo foi cancelado. A que horas é o embarque?"
+          ],
+          "q": "Tell me about your last flight: was it on time or atrasado?",
+          "c": "Write a short airport dialogue: check in a bag, ask for the gate and hear that the flight is delayed."
+        },
+        "de": {
+          "t": "Am Flughafen",
+          "g": "Du meisterst Check-in, Gate, Gepäck und Verspätungen.",
+          "p": [
+            "Check-in: Onde é o check-in da TAP? O meu voo é para Paris. Queria despachar esta mala.",
+            "A porta de embarque ist das Gate, o cartão de embarque die Bordkarte, a bagagem de mão das Handgepäck.",
+            "Verspätungen: O voo está atrasado. O voo foi cancelado. A que horas é o embarque?"
+          ],
+          "q": "Erzähl mir von deinem letzten Flug: War er pünktlich oder atrasado?",
+          "c": "Schreib einen kurzen Flughafendialog: Koffer aufgeben, nach dem Gate fragen und von einer Verspätung hören."
+        },
+        "es": {
+          "t": "En el aeropuerto",
+          "g": "Manejarte en facturación, puertas, equipaje y retrasos.",
+          "p": [
+            "Facturación: Onde é o check-in da TAP? O meu voo é para Paris. Queria despachar esta mala.",
+            "A porta de embarque es la puerta, o cartão de embarque la tarjeta de embarque, a bagagem de mão el equipaje de mano.",
+            "Retrasos: O voo está atrasado. O voo foi cancelado. A que horas é o embarque?"
+          ],
+          "q": "Cuéntame tu último vuelo: ¿fue puntual o atrasado?",
+          "c": "Escribe un diálogo corto: facturar una maleta, preguntar la puerta y oír que el vuelo se retrasa."
+        },
+        "fr": {
+          "t": "À l'aéroport",
+          "g": "Gérer l'enregistrement, les portes, les bagages et les retards.",
+          "p": [
+            "Enregistrement : Onde é o check-in da TAP? O meu voo é para Paris. Queria despachar esta mala.",
+            "A porta de embarque est la porte, o cartão de embarque la carte d'embarquement, a bagagem de mão le bagage cabine.",
+            "Retards : O voo está atrasado. O voo foi cancelado. A que horas é o embarque?"
+          ],
+          "q": "Raconte-moi ton dernier vol : il était à l'heure ou atrasado ?",
+          "c": "Écris un court dialogue : enregistrer une valise, demander la porte et apprendre que le vol a du retard."
+        },
+        "it": {
+          "t": "In aeroporto",
+          "g": "Te la cavi con check-in, gate, bagagli e ritardi.",
+          "p": [
+            "Check-in: Onde é o check-in da TAP? O meu voo é para Paris. Queria despachar esta mala.",
+            "A porta de embarque è il gate, o cartão de embarque la carta d'imbarco, a bagagem de mão il bagaglio a mano.",
+            "Ritardi: O voo está atrasado. O voo foi cancelado. A que horas é o embarque?"
+          ],
+          "q": "Raccontami il tuo ultimo volo: era puntuale o atrasado?",
+          "c": "Scrivi un breve dialogo: imbarcare una valigia, chiedere il gate e sentire che il volo è in ritardo."
+        },
+        "pt": {
+          "t": "No aeroporto",
+          "g": "Revê o vocabulário de aeroporto e ajuda um viajante estrangeiro.",
+          "p": [
+            "Despachar a mala é entregar a bagagem no balcão; em Portugal também se diz fazer o check-in.",
+            "Partidas e chegadas aparecem nos painéis; as portas de embarque mudam por vezes à última hora.",
+            "Frases úteis para ajudar alguém: A porta é ali à direita. O seu voo está atrasado meia hora."
+          ],
+          "q": "Que dica darias a um estrangeiro que chega pela primeira vez a um aeroporto português?",
+          "c": "Escreve cinco frases que um funcionário de aeroporto diria a um passageiro, de forma clara e simpática."
+        },
+        "pt_BR": {
+          "t": "No aeroporto",
+          "g": "Revise o vocabulário de aeroporto usado em Portugal.",
+          "p": [
+            "Despachar a mala é igual; a porta de embarque é o portão de embarque no Brasil.",
+            "Bagagem de mão, cartão de embarque e voo atrasado são iguais nos dois países.",
+            "Em Lisboa, o aeroporto Humberto Delgado fica perto do centro e liga-se ao metro."
+          ],
+          "q": "Como você pediria informações sobre um voo atrasado em Lisboa?",
+          "c": "Escreva um diálogo de check-in com despachar, porta de embarque e cartão de embarque."
+        }
+      },
+      "target": {
+        "vocab": [
+          {
+            "w": "o voo",
+            "ex": "O meu voo sai às dez."
+          },
+          {
+            "w": "despachar a mala",
+            "ex": "Queria despachar esta mala, por favor."
+          },
+          {
+            "w": "a porta de embarque",
+            "ex": "A porta de embarque é a número doze."
+          },
+          {
+            "w": "o cartão de embarque",
+            "ex": "Aqui tem o seu cartão de embarque."
+          },
+          {
+            "w": "está atrasado",
+            "ex": "O voo está atrasado uma hora."
+          },
+          {
+            "w": "a bagagem de mão",
+            "ex": "Só levo bagagem de mão."
+          }
+        ],
+        "gram": "No aeroporto: O voo está atrasado / foi cancelado. Queria despachar... A que horas é o embarque? Onde é a porta...?"
+      }
+    },
+    {
+      "d": 105,
+      "lv": "A2",
+      "i18n": {
+        "en": {
+          "t": "At the train station",
+          "g": "Buy a ticket, ask about platforms and delays.",
+          "p": [
+            "Buy: Queria um bilhete para Coimbra. Só ida ou ida e volta? (One way or return?)",
+            "Ask: De que linha parte o comboio? A linha is the platform. Este comboio para em Aveiro?",
+            "Delays: O comboio está atrasado dez minutos. Brazilians say trem and plataforma."
+          ],
+          "q": "Have you ever taken a train in Portugal or Brazil? Where would you like to go by train?",
+          "c": "Write a ticket-office dialogue: destination, ida e volta, time, platform and price question."
+        },
+        "de": {
+          "t": "Am Bahnhof",
+          "g": "Du kaufst eine Fahrkarte und fragst nach Gleis und Verspätung.",
+          "p": [
+            "Kaufen: Queria um bilhete para Coimbra. Só ida ou ida e volta? (Einfach oder hin und zurück?)",
+            "Fragen: De que linha parte o comboio? A linha ist das Gleis. Este comboio para em Aveiro?",
+            "Verspätung: O comboio está atrasado dez minutos. In Brasilien sagt man trem und plataforma."
+          ],
+          "q": "Bist du schon in Portugal oder Brasilien Zug gefahren? Wohin würdest du gern fahren?",
+          "c": "Schreib einen Dialog am Schalter: Ziel, ida e volta, Uhrzeit, Gleis und Frage nach dem Preis."
+        },
+        "es": {
+          "t": "En la estación de tren",
+          "g": "Comprar un billete y preguntar por andenes y retrasos.",
+          "p": [
+            "Comprar: Queria um bilhete para Coimbra. Só ida ou ida e volta? (¿Solo ida o ida y vuelta?)",
+            "Preguntar: De que linha parte o comboio? A linha es el andén. Este comboio para em Aveiro?",
+            "Retrasos: O comboio está atrasado dez minutos. En Brasil se dice trem y plataforma."
+          ],
+          "q": "¿Has viajado en tren en Portugal o Brasil? ¿Adónde te gustaría ir en tren?",
+          "c": "Escribe un diálogo en la taquilla: destino, ida e volta, hora, andén y precio."
+        },
+        "fr": {
+          "t": "À la gare",
+          "g": "Acheter un billet et demander le quai et les retards.",
+          "p": [
+            "Acheter : Queria um bilhete para Coimbra. Só ida ou ida e volta? (Aller simple ou aller-retour ?)",
+            "Demander : De que linha parte o comboio? A linha, c'est la voie. Este comboio para em Aveiro?",
+            "Retards : O comboio está atrasado dez minutos. Au Brésil on dit trem et plataforma."
+          ],
+          "q": "As-tu déjà pris le train au Portugal ou au Brésil ? Où aimerais-tu aller en train ?",
+          "c": "Écris un dialogue au guichet : destination, ida e volta, horaire, voie et prix."
+        },
+        "it": {
+          "t": "Alla stazione",
+          "g": "Compri un biglietto e chiedi di binari e ritardi.",
+          "p": [
+            "Comprare: Queria um bilhete para Coimbra. Só ida ou ida e volta? (Solo andata o andata e ritorno?)",
+            "Chiedere: De que linha parte o comboio? A linha è il binario. Este comboio para em Aveiro?",
+            "Ritardi: O comboio está atrasado dez minutos. In Brasile si dice trem e plataforma."
+          ],
+          "q": "Hai mai preso il treno in Portogallo o in Brasile? Dove vorresti andare in treno?",
+          "c": "Scrivi un dialogo in biglietteria: destinazione, ida e volta, orario, binario e prezzo."
+        },
+        "pt": {
+          "t": "Na estação de comboios",
+          "g": "Revê o vocabulário ferroviário e ajuda um viajante a orientar-se.",
+          "p": [
+            "Linha é a plataforma de onde parte o comboio; muitos estrangeiros procuram a palavra plataforma.",
+            "Alfa Pendular, Intercidades, Regional e Urbano são os tipos de comboio que convém explicar a quem visita.",
+            "Validar o bilhete antes de entrar é obrigatório em muitos comboios urbanos. Um detalhe que poupa multas."
+          ],
+          "q": "Que viagem de comboio em Portugal recomendarias a um turista e porquê?",
+          "c": "Escreve instruções simples, em cinco frases, para um estrangeiro apanhar um comboio de Lisboa para o Porto."
+        },
+        "pt_BR": {
+          "t": "Na estação de comboios",
+          "g": "Revise o vocabulário de trem usado em Portugal.",
+          "p": [
+            "O trem é o comboio, a plataforma é a linha e a passagem é o bilhete. Ida e volta é igual.",
+            "O Alfa Pendular liga Lisboa ao Porto em cerca de três horas; o Intercidades é mais económico.",
+            "Revisor é o funcionário que verifica os bilhetes; apanhar o comboio é pegar o trem."
+          ],
+          "q": "Que viagem de comboio você gostaria de fazer em Portugal?",
+          "c": "Escreva um diálogo de bilheteira com comboio, linha, bilhete e ida e volta."
+        }
+      },
+      "target": {
+        "vocab": [
+          {
+            "w": "o bilhete",
+            "ex": "Queria um bilhete para Braga."
+          },
+          {
+            "w": "ida e volta",
+            "ex": "Ida e volta, por favor."
+          },
+          {
+            "w": "a linha",
+            "ex": "O comboio parte da linha três."
+          },
+          {
+            "w": "para em",
+            "ex": "Este comboio para em Coimbra?"
+          },
+          {
+            "w": "a bilheteira",
+            "ex": "A bilheteira fica à entrada da estação."
+          },
+          {
+            "w": "o revisor",
+            "ex": "O revisor pediu os bilhetes."
+          }
+        ],
+        "gram": "Na estação: Queria um bilhete para... Só ida ou ida e volta? De que linha parte? Parar em: Este comboio para em...?"
+      }
+    },
+    {
+      "d": 106,
+      "lv": "A2",
+      "i18n": {
+        "en": {
+          "t": "Renting a place to stay",
+          "g": "Talk about flats, renting a room and house rules.",
+          "p": [
+            "Words: o apartamento, o T2 (two-bedroom flat in Portugal), o quarto, a renda (rent), o senhorio (landlord).",
+            "Ask: A renda inclui as despesas? (Are bills included?) Tem mobília? Quando posso mudar-me?",
+            "House rules: É proibido fumar. Não se pode fazer barulho depois das dez. Brazil says aluguel for rent."
+          ],
+          "q": "What is important for you in a flat: light, location, space or price?",
+          "c": "Write five questions you would ask before renting a room in Lisbon."
+        },
+        "de": {
+          "t": "Eine Unterkunft mieten",
+          "g": "Du sprichst über Wohnungen, Zimmermiete und Hausregeln.",
+          "p": [
+            "Wörter: o apartamento, o T2 (Zweizimmerwohnung in Portugal), o quarto, a renda (Miete), o senhorio (Vermieter).",
+            "Fragen: A renda inclui as despesas? (Sind Nebenkosten inklusive?) Tem mobília? Quando posso mudar-me?",
+            "Hausregeln: É proibido fumar. Não se pode fazer barulho depois das dez. In Brasilien heißt Miete aluguel."
+          ],
+          "q": "Was ist dir bei einer Wohnung wichtig: Licht, Lage, Platz oder Preis?",
+          "c": "Schreib fünf Fragen, die du stellen würdest, bevor du ein Zimmer in Lissabon mietest."
+        },
+        "es": {
+          "t": "Alquilar un alojamiento",
+          "g": "Hablar de pisos, alquilar una habitación y normas de la casa.",
+          "p": [
+            "Palabras: o apartamento, o T2 (piso de dos dormitorios en Portugal), o quarto, a renda (alquiler), o senhorio (casero).",
+            "Pregunta: A renda inclui as despesas? (¿Incluye los gastos?) Tem mobília? Quando posso mudar-me?",
+            "Normas: É proibido fumar. Não se pode fazer barulho depois das dez. En Brasil alquiler es aluguel."
+          ],
+          "q": "¿Qué es importante para ti en un piso: luz, ubicación, espacio o precio?",
+          "c": "Escribe cinco preguntas que harías antes de alquilar una habitación en Lisboa."
+        },
+        "fr": {
+          "t": "Louer un logement",
+          "g": "Parler d'appartements, de location de chambre et de règles de la maison.",
+          "p": [
+            "Mots : o apartamento, o T2 (deux chambres au Portugal), o quarto, a renda (loyer), o senhorio (propriétaire).",
+            "Demander : A renda inclui as despesas? (Charges comprises ?) Tem mobília? Quando posso mudar-me?",
+            "Règles : É proibido fumar. Não se pode fazer barulho depois das dez. Au Brésil, loyer se dit aluguel."
+          ],
+          "q": "Qu'est-ce qui compte pour toi dans un appartement : lumière, quartier, espace ou prix ?",
+          "c": "Écris cinq questions que tu poserais avant de louer une chambre à Lisbonne."
+        },
+        "it": {
+          "t": "Affittare un alloggio",
+          "g": "Parli di appartamenti, affitto di una stanza e regole della casa.",
+          "p": [
+            "Parole: o apartamento, o T2 (bilocale con due camere in Portogallo), o quarto, a renda (affitto), o senhorio (padrone di casa).",
+            "Chiedi: A renda inclui as despesas? (Spese incluse?) Tem mobília? Quando posso mudar-me?",
+            "Regole: É proibido fumar. Não se pode fazer barulho depois das dez. In Brasile affitto è aluguel."
+          ],
+          "q": "Cosa conta per te in un appartamento: luce, posizione, spazio o prezzo?",
+          "c": "Scrivi cinque domande che faresti prima di affittare una stanza a Lisbona."
+        },
+        "pt": {
+          "t": "Arrendar casa",
+          "g": "Revê o vocabulário do arrendamento e ajuda um estrangeiro a perceber os anúncios.",
+          "p": [
+            "T0, T1, T2 indicam o número de quartos; um estrangeiro raramente percebe isto à primeira vista.",
+            "Renda, caução, fiador e contrato de arrendamento são termos essenciais para quem procura casa.",
+            "Despesas incluídas significa água, luz e internet pagas; convém confirmar sempre o que está incluído."
+          ],
+          "q": "Que conselho darias a um estrangeiro que procura quarto numa cidade portuguesa?",
+          "c": "Explica em cinco frases simples o que significa um anúncio como T2, mobilado, despesas incluídas."
+        },
+        "pt_BR": {
+          "t": "Arrendar casa",
+          "g": "Revise o vocabulário de aluguel usado em Portugal.",
+          "p": [
+            "Em Portugal, aluguel é renda, alugar casa é arrendar, e o dono do imóvel é o senhorio.",
+            "T1, T2, T3 indicam o número de quartos: um T2 tem dois quartos e uma sala.",
+            "Mobilado é mobiliado, e caução é o depósito de garantia. Despesas são as contas de casa."
+          ],
+          "q": "Que tipo de casa você procuraria em Portugal: um T1 ou um T2?",
+          "c": "Escreva um anúncio de casa à portuguesa com T2, renda, mobilado e despesas incluídas."
+        }
+      },
+      "target": {
+        "vocab": [
+          {
+            "w": "a renda",
+            "ex": "A renda é paga no início do mês."
+          },
+          {
+            "w": "o senhorio",
+            "ex": "O senhorio é muito simpático."
+          },
+          {
+            "w": "o T2",
+            "ex": "Procuramos um T2 perto do metro."
+          },
+          {
+            "w": "mobilado",
+            "ex": "O apartamento é mobilado."
+          },
+          {
+            "w": "as despesas",
+            "ex": "As despesas estão incluídas na renda?"
+          },
+          {
+            "w": "mudar-se",
+            "ex": "Quando posso mudar-me?"
+          }
+        ],
+        "gram": "Arrendar: a renda, o senhorio, T1/T2, mobilado. Regras com se impessoal: Não se pode fumar. É proibido fazer barulho."
+      }
+    },
+    {
+      "d": 107,
+      "lv": "A2",
+      "i18n": {
+        "en": {
+          "t": "Directions in detail",
+          "g": "Give longer directions with landmarks and distances.",
+          "p": [
+            "Sequence: Siga em frente até à rotunda, depois vire à direita e continue durante duzentos metros.",
+            "Landmarks: ao lado da farmácia, em frente à igreja, depois do semáforo, na esquina.",
+            "Distances: Fica a cinco minutos a pé. É já ali. É um bocado longe, é melhor apanhar o autocarro."
+          ],
+          "q": "Can you give me directions from your home to your favourite café?",
+          "c": "Write directions from a station to a museum in five steps, with two landmarks and one distance."
+        },
+        "de": {
+          "t": "Ausführliche Wegbeschreibungen",
+          "g": "Du gibst längere Wegbeschreibungen mit Orientierungspunkten und Entfernungen.",
+          "p": [
+            "Abfolge: Siga em frente até à rotunda, depois vire à direita e continue durante duzentos metros.",
+            "Orientierung: ao lado da farmácia, em frente à igreja, depois do semáforo, na esquina.",
+            "Entfernungen: Fica a cinco minutos a pé. É já ali. É um bocado longe, é melhor apanhar o autocarro."
+          ],
+          "q": "Kannst du mir den Weg von deinem Zuhause zu deinem Lieblingscafé beschreiben?",
+          "c": "Schreib in fünf Schritten den Weg vom Bahnhof zum Museum, mit zwei Orientierungspunkten und einer Entfernung."
+        },
+        "es": {
+          "t": "Indicaciones detalladas",
+          "g": "Dar indicaciones largas con puntos de referencia y distancias.",
+          "p": [
+            "Secuencia: Siga em frente até à rotunda, depois vire à direita e continue durante duzentos metros.",
+            "Referencias: ao lado da farmácia, em frente à igreja, depois do semáforo, na esquina.",
+            "Distancias: Fica a cinco minutos a pé. É já ali. É um bocado longe, é melhor apanhar o autocarro."
+          ],
+          "q": "¿Puedes indicarme el camino de tu casa a tu café favorito?",
+          "c": "Escribe en cinco pasos cómo ir de una estación a un museo, con dos referencias y una distancia."
+        },
+        "fr": {
+          "t": "Itinéraires détaillés",
+          "g": "Donner des indications longues avec repères et distances.",
+          "p": [
+            "Enchaînement : Siga em frente até à rotunda, depois vire à direita e continue durante duzentos metros.",
+            "Repères : ao lado da farmácia, em frente à igreja, depois do semáforo, na esquina.",
+            "Distances : Fica a cinco minutos a pé. É já ali. É um bocado longe, é melhor apanhar o autocarro."
+          ],
+          "q": "Peux-tu m'indiquer le chemin de chez toi à ton café préféré ?",
+          "c": "Écris en cinq étapes le chemin d'une gare à un musée, avec deux repères et une distance."
+        },
+        "it": {
+          "t": "Indicazioni dettagliate",
+          "g": "Dai indicazioni lunghe con punti di riferimento e distanze.",
+          "p": [
+            "Sequenza: Siga em frente até à rotunda, depois vire à direita e continue durante duzentos metros.",
+            "Riferimenti: ao lado da farmácia, em frente à igreja, depois do semáforo, na esquina.",
+            "Distanze: Fica a cinco minutos a pé. É já ali. É um bocado longe, é melhor apanhar o autocarro."
+          ],
+          "q": "Sai indicarmi la strada da casa tua al tuo caffè preferito?",
+          "c": "Scrivi in cinque passi la strada da una stazione a un museo, con due riferimenti e una distanza."
+        },
+        "pt": {
+          "t": "Indicações detalhadas",
+          "g": "Revê como dar indicações claras e completas a um estrangeiro.",
+          "p": [
+            "Pontos de referência ajudam mais do que nomes de ruas: a pastelaria, a igreja, a rotunda, o semáforo.",
+            "É já ali pode ser enganador para um estrangeiro; é melhor dizer a distância: uns cinco minutos a pé.",
+            "Em Portugal diz-se até à rotunda (com crase); no Brasil, até a rotatória. Pequenas diferenças úteis."
+          ],
+          "q": "Qual é o ponto de referência que usarias para explicar como chegar a tua casa?",
+          "c": "Escreve indicações de um ponto turístico da tua cidade até outro, em seis passos claros."
+        },
+        "pt_BR": {
+          "t": "Indicações detalhadas",
+          "g": "Revise como dar e entender direções em Portugal.",
+          "p": [
+            "A rotatória é a rotunda e o farol é o semáforo. Siga em frente é siga reto.",
+            "É já ali significa que é muito perto; a cinco minutos a pé indica a distância exata.",
+            "Em Portugal, até à com crase é comum: Vá até à praça e vire à esquerda."
+          ],
+          "q": "Como você explicaria o caminho até a sua casa usando palavras de Portugal?",
+          "c": "Escreva indicações em cinco passos com rotunda, semáforo, siga em frente e é já ali."
+        }
+      },
+      "target": {
+        "vocab": [
+          {
+            "w": "até à rotunda",
+            "ex": "Siga em frente até à rotunda."
+          },
+          {
+            "w": "o semáforo",
+            "ex": "Vire à esquerda no semáforo."
+          },
+          {
+            "w": "em frente a",
+            "ex": "O museu fica em frente à igreja."
+          },
+          {
+            "w": "a cinco minutos a pé",
+            "ex": "A estação fica a cinco minutos a pé."
+          },
+          {
+            "w": "na esquina",
+            "ex": "Há um café na esquina."
+          },
+          {
+            "w": "é já ali",
+            "ex": "A farmácia? É já ali, ao fundo da rua."
+          }
+        ],
+        "gram": "Indicações: siga em frente até à..., vire à direita/esquerda, depois de, em frente a. Distância: fica a + tempo/metros."
+      }
+    },
+    {
+      "d": 108,
+      "lv": "A2",
+      "i18n": {
+        "en": {
+          "t": "The imperative: tu forms",
+          "g": "Give instructions to friends with fala, come, abre, vem cá.",
+          "p": [
+            "For tu, use the ele form of the present: fala!, come!, abre!, lê! (Speak! Eat! Open! Read!)",
+            "Common irregulars: vem cá! (come here), vai! (go), faz! (do), diz! (say), põe! (put).",
+            "Negative uses a different form: não fales!, não comas!, não abras! You will practise it more later."
+          ],
+          "q": "What instructions would you give a friend visiting your city? Use three tu commands.",
+          "c": "Write five friendly instructions for a flatmate: abre a janela, fecha a porta, vem jantar..."
+        },
+        "de": {
+          "t": "Der Imperativ: tu-Formen",
+          "g": "Du gibst Freunden Anweisungen mit fala, come, abre, vem cá.",
+          "p": [
+            "Für tu nimmst du die ele-Form des Präsens: fala!, come!, abre!, lê! (Sprich! Iss! Öffne! Lies!)",
+            "Häufige Unregelmäßige: vem cá! (komm her), vai! (geh), faz! (mach), diz! (sag), põe! (stell).",
+            "Die Verneinung hat eine andere Form: não fales!, não comas!, não abras! Das übst du später mehr."
+          ],
+          "q": "Welche Tipps würdest du einem Freund geben, der deine Stadt besucht? Nutze drei tu-Befehle.",
+          "c": "Schreib fünf freundliche Anweisungen für einen Mitbewohner: abre a janela, fecha a porta, vem jantar..."
+        },
+        "es": {
+          "t": "El imperativo: formas de tu",
+          "g": "Dar instrucciones a amigos con fala, come, abre, vem cá.",
+          "p": [
+            "Para tu, usa la forma ele del presente: fala!, come!, abre!, lê! Igual que en español: ¡habla!, ¡come!",
+            "Irregulares comunes: vem cá! (ven aquí), vai! (ve), faz! (haz), diz! (di), põe! (pon).",
+            "El negativo usa otra forma: não fales!, não comas!, não abras! Como en español: ¡no hables!"
+          ],
+          "q": "¿Qué indicaciones darías a un amigo que visita tu ciudad? Usa tres imperativos con tu.",
+          "c": "Escribe cinco instrucciones amables para un compañero de piso: abre a janela, fecha a porta, vem jantar..."
+        },
+        "fr": {
+          "t": "L'impératif : formes de tu",
+          "g": "Donner des consignes à des amis avec fala, come, abre, vem cá.",
+          "p": [
+            "Pour tu, on prend la forme ele du présent : fala!, come!, abre!, lê! (Parle ! Mange ! Ouvre ! Lis !)",
+            "Irréguliers courants : vem cá! (viens ici), vai! (va), faz! (fais), diz! (dis), põe! (mets).",
+            "Le négatif a une autre forme : não fales!, não comas!, não abras! Tu le pratiqueras plus tard."
+          ],
+          "q": "Quels conseils donnerais-tu à un ami qui visite ta ville ? Utilise trois impératifs avec tu.",
+          "c": "Écris cinq consignes sympas pour un colocataire : abre a janela, fecha a porta, vem jantar..."
+        },
+        "it": {
+          "t": "L'imperativo: forme di tu",
+          "g": "Dai istruzioni agli amici con fala, come, abre, vem cá.",
+          "p": [
+            "Per tu usa la forma ele del presente: fala!, come!, abre!, lê! (Parla! Mangia! Apri! Leggi!)",
+            "Irregolari comuni: vem cá! (vieni qui), vai! (vai), faz! (fai), diz! (di'), põe! (metti).",
+            "Il negativo ha un'altra forma: não fales!, não comas!, não abras! La praticherai di più in seguito."
+          ],
+          "q": "Quali consigli daresti a un amico che visita la tua città? Usa tre imperativi con tu.",
+          "c": "Scrivi cinque istruzioni amichevoli per un coinquilino: abre a janela, fecha a porta, vem jantar..."
+        },
+        "pt": {
+          "t": "O imperativo: formas de tu",
+          "g": "Revê o imperativo com tu e os erros mais comuns.",
+          "p": [
+            "Afirmativo com tu = 3.ª pessoa do presente: fala, come, abre. Negativo = conjuntivo: não fales, não comas.",
+            "Erro frequente, até entre nativos: não fala! em vez de não fales!. Na escrita cuidada usa-se o conjuntivo.",
+            "Com pronomes, a ênclise é obrigatória no afirmativo: Diz-me! Dá-lhe! Senta-te! Explica isto com calma."
+          ],
+          "q": "Que instruções darias a um amigo estrangeiro no primeiro dia em Lisboa?",
+          "c": "Escreve cinco pares afirmativo/negativo com tu: fala/não fales, come/não comas, e mais três."
+        },
+        "pt_BR": {
+          "t": "O imperativo: formas de tu",
+          "g": "Revise o imperativo com tu, muito usado em Portugal.",
+          "p": [
+            "Em Portugal, com amigos: Fala mais alto! Vem cá! Senta-te! O pronome vem depois do verbo.",
+            "O negativo usa o conjuntivo (subjuntivo): Não fales! Não te preocupes! No Brasil é comum Não fala!",
+            "Põe, diz, faz e vem são os irregulares mais ouvidos: Põe a mesa! Diz-me uma coisa."
+          ],
+          "q": "Que conselho você daria a um amigo que vai a Lisboa, usando o imperativo com tu?",
+          "c": "Escreva cinco ordens amigáveis à portuguesa: vem cá, senta-te, diz-me, põe, não te preocupes."
+        }
+      },
+      "target": {
+        "vocab": [
+          {
+            "w": "fala",
+            "ex": "Fala mais devagar, por favor."
+          },
+          {
+            "w": "vem cá",
+            "ex": "Vem cá ver isto!"
+          },
+          {
+            "w": "abre",
+            "ex": "Abre a janela, está calor."
+          },
+          {
+            "w": "senta-te",
+            "ex": "Senta-te, o jantar está pronto."
+          },
+          {
+            "w": "diz-me",
+            "ex": "Diz-me o que preferes."
+          },
+          {
+            "w": "não te preocupes",
+            "ex": "Não te preocupes, eu ajudo-te."
+          }
+        ],
+        "gram": "Imperativo tu: afirmativo = 3.ª pessoa do presente (fala, come, abre); irregulares: vem, vai, faz, diz, põe. Negativo: não fales."
+      }
+    },
+    {
+      "d": 109,
+      "lv": "A2",
+      "i18n": {
+        "en": {
+          "t": "The imperative: você forms",
+          "g": "Give polite commands: fale, coma, abra, siga em frente.",
+          "p": [
+            "For você and o senhor, -ar verbs change to -e and -er/-ir verbs to -a: fale, coma, abra.",
+            "Start from the eu form: faço becomes faça, tenho becomes tenha, digo becomes diga. Irregular: seja, vá, esteja.",
+            "Very common: Siga em frente, Desculpe!, Diga!, Espere um momento. Plural: falem, comam, sigam."
+          ],
+          "q": "How would you politely tell a tourist to go straight and turn left?",
+          "c": "Write five polite instructions for a hotel guest using você forms: entre, suba, siga, tenha, aproveite."
+        },
+        "de": {
+          "t": "Der Imperativ: você-Formen",
+          "g": "Du gibst höfliche Anweisungen: fale, coma, abra, siga em frente.",
+          "p": [
+            "Für você und o senhor: -ar wird zu -e, -er/-ir zu -a: fale, coma, abra.",
+            "Ausgangspunkt ist die eu-Form: faço wird faça, tenho wird tenha, digo wird diga. Unregelmäßig: seja, vá, esteja.",
+            "Sehr häufig: Siga em frente, Desculpe!, Diga!, Espere um momento. Plural: falem, comam, sigam."
+          ],
+          "q": "Wie würdest du einem Touristen höflich sagen, er soll geradeaus gehen und links abbiegen?",
+          "c": "Schreib fünf höfliche Anweisungen für einen Hotelgast mit você: entre, suba, siga, tenha, aproveite."
+        },
+        "es": {
+          "t": "El imperativo: formas de você",
+          "g": "Dar órdenes educadas: fale, coma, abra, siga em frente.",
+          "p": [
+            "Para você y o senhor, -ar pasa a -e y -er/-ir a -a, como usted en español: fale, coma, abra.",
+            "Parte de la forma eu: faço da faça, tenho da tenha, digo da diga. Irregulares: seja, vá, esteja.",
+            "Muy comunes: Siga em frente, Desculpe!, Diga!, Espere um momento. Plural: falem, comam, sigam."
+          ],
+          "q": "¿Cómo le dirías con educación a un turista que siga recto y gire a la izquierda?",
+          "c": "Escribe cinco instrucciones educadas para un huésped con você: entre, suba, siga, tenha, aproveite."
+        },
+        "fr": {
+          "t": "L'impératif : formes de você",
+          "g": "Donner des consignes polies : fale, coma, abra, siga em frente.",
+          "p": [
+            "Pour você et o senhor, -ar devient -e et -er/-ir devient -a : fale, coma, abra.",
+            "On part de la forme eu : faço donne faça, tenho donne tenha, digo donne diga. Irréguliers : seja, vá, esteja.",
+            "Très courants : Siga em frente, Desculpe!, Diga!, Espere um momento. Pluriel : falem, comam, sigam."
+          ],
+          "q": "Comment dirais-tu poliment à un touriste d'aller tout droit puis de tourner à gauche ?",
+          "c": "Écris cinq consignes polies pour un client d'hôtel avec você : entre, suba, siga, tenha, aproveite."
+        },
+        "it": {
+          "t": "L'imperativo: forme di você",
+          "g": "Dai ordini cortesi: fale, coma, abra, siga em frente.",
+          "p": [
+            "Per você e o senhor, -ar diventa -e e -er/-ir diventa -a, come il Lei: fale, coma, abra.",
+            "Parti dalla forma eu: faço dà faça, tenho dà tenha, digo dà diga. Irregolari: seja, vá, esteja.",
+            "Comunissimi: Siga em frente, Desculpe!, Diga!, Espere um momento. Plurale: falem, comam, sigam."
+          ],
+          "q": "Come diresti con cortesia a un turista di andare dritto e girare a sinistra?",
+          "c": "Scrivi cinque istruzioni cortesi per un ospite d'albergo con você: entre, suba, siga, tenha, aproveite."
+        },
+        "pt": {
+          "t": "O imperativo: formas de você",
+          "g": "Revê o imperativo de cortesia e o seu uso em Portugal.",
+          "p": [
+            "Em Portugal, o você direto pode soar frio; prefere-se o senhor ou a senhora, ou omitir o pronome: Siga em frente.",
+            "O imperativo de cortesia vem do conjuntivo: fale, coma, abra, faça, diga, venha, vá, seja.",
+            "Para suavizar, junta-se se faz favor ou por favor: Espere um momento, se faz favor."
+          ],
+          "q": "Como pedirias educadamente a um desconhecido que te deixasse passar?",
+          "c": "Escreve cinco instruções educadas para um visitante de um museu, usando o imperativo de cortesia."
+        },
+        "pt_BR": {
+          "t": "O imperativo: formas de você",
+          "g": "Revise o imperativo de cortesia como se usa em Portugal.",
+          "p": [
+            "As formas são iguais: fale, coma, siga. Em Portugal, evita-se dizer você diretamente; usa-se o senhor.",
+            "Desculpe!, Diga! e Faça favor! são muito comuns no comércio português.",
+            "Faça favor de entrar e Esteja à vontade são fórmulas simpáticas para receber alguém."
+          ],
+          "q": "Como um empregado português convidaria você a sentar-se?",
+          "c": "Escreva cinco frases de cortesia com o senhor, faça favor, diga, esteja à vontade e siga."
+        }
+      },
+      "target": {
+        "vocab": [
+          {
+            "w": "siga em frente",
+            "ex": "Siga em frente e vire na segunda à direita."
+          },
+          {
+            "w": "desculpe",
+            "ex": "Desculpe, pode ajudar-me?"
+          },
+          {
+            "w": "diga",
+            "ex": "Diga, em que posso ajudar?"
+          },
+          {
+            "w": "espere um momento",
+            "ex": "Espere um momento, se faz favor."
+          },
+          {
+            "w": "faça favor",
+            "ex": "Faça favor de entrar."
+          },
+          {
+            "w": "esteja à vontade",
+            "ex": "Esteja à vontade, a casa é sua."
+          }
+        ],
+        "gram": "Imperativo de cortesia: forma do eu sem -o + -e/-a (falo > fale, como > coma, faço > faça). Irregulares: seja, vá, esteja."
+      }
+    },
+    {
+      "d": 110,
+      "lv": "A2",
+      "i18n": {
+        "en": {
+          "t": "Recipes and cooking",
+          "g": "Learn cooking verbs and read recipes in the imperative.",
+          "p": [
+            "Verbs: cortar (cut), juntar (add), mexer (stir), cozer (boil), fritar (fry), assar (roast), deixar (let).",
+            "Recipes use the polite imperative: Corte a cebola, junte o azeite e mexa bem.",
+            "Quantities: uma colher de sopa, uma pitada de sal, q.b. (quanto baste, to taste), um fio de azeite."
+          ],
+          "q": "What is a simple dish you know how to cook? Tell me three steps.",
+          "c": "Write a five-step recipe for a dish you like, using corte, junte, mexa, deixe and sirva."
+        },
+        "de": {
+          "t": "Rezepte und Kochen",
+          "g": "Du lernst Kochverben und liest Rezepte im Imperativ.",
+          "p": [
+            "Verben: cortar (schneiden), juntar (hinzufügen), mexer (rühren), cozer (kochen), fritar (braten), assar, deixar.",
+            "Rezepte nutzen den höflichen Imperativ: Corte a cebola, junte o azeite e mexa bem.",
+            "Mengen: uma colher de sopa, uma pitada de sal, q.b. (quanto baste, nach Geschmack), um fio de azeite."
+          ],
+          "q": "Welches einfache Gericht kannst du kochen? Nenn mir drei Schritte.",
+          "c": "Schreib ein Rezept in fünf Schritten mit corte, junte, mexa, deixe und sirva."
+        },
+        "es": {
+          "t": "Recetas y cocina",
+          "g": "Aprender verbos de cocina y leer recetas en imperativo.",
+          "p": [
+            "Verbos: cortar, juntar (añadir), mexer (remover), cozer (cocer), fritar (freír), assar (asar), deixar (dejar).",
+            "Las recetas usan el imperativo de cortesía: Corte a cebola, junte o azeite e mexa bem.",
+            "Cantidades: uma colher de sopa, uma pitada de sal, q.b. (quanto baste, al gusto), um fio de azeite."
+          ],
+          "q": "¿Qué plato sencillo sabes cocinar? Dime tres pasos.",
+          "c": "Escribe una receta en cinco pasos con corte, junte, mexa, deixe y sirva."
+        },
+        "fr": {
+          "t": "Recettes et cuisine",
+          "g": "Apprendre des verbes de cuisine et lire des recettes à l'impératif.",
+          "p": [
+            "Verbes : cortar (couper), juntar (ajouter), mexer (remuer), cozer (cuire), fritar (frire), assar (rôtir), deixar.",
+            "Les recettes utilisent l'impératif poli : Corte a cebola, junte o azeite e mexa bem.",
+            "Quantités : uma colher de sopa, uma pitada de sal, q.b. (quanto baste, selon le goût), um fio de azeite."
+          ],
+          "q": "Quel plat simple sais-tu cuisiner ? Donne-moi trois étapes.",
+          "c": "Écris une recette en cinq étapes avec corte, junte, mexa, deixe et sirva."
+        },
+        "it": {
+          "t": "Ricette e cucina",
+          "g": "Impari i verbi di cucina e leggi ricette all'imperativo.",
+          "p": [
+            "Verbi: cortar (tagliare), juntar (aggiungere), mexer (mescolare), cozer (cuocere), fritar (friggere), assar, deixar.",
+            "Le ricette usano l'imperativo di cortesia: Corte a cebola, junte o azeite e mexa bem.",
+            "Quantità: uma colher de sopa, uma pitada de sal, q.b. (quanto baste), um fio de azeite."
+          ],
+          "q": "Quale piatto semplice sai cucinare? Dimmi tre passaggi.",
+          "c": "Scrivi una ricetta in cinque passaggi con corte, junte, mexa, deixe e sirva."
+        },
+        "pt": {
+          "t": "Receitas e culinária",
+          "g": "Revê a linguagem das receitas e o imperativo que nelas se usa.",
+          "p": [
+            "As receitas portuguesas usam o imperativo de cortesia (corte, junte) ou o infinitivo (cortar, juntar).",
+            "Q.b. (quanto baste) é uma abreviatura que intriga os estrangeiros; vale a pena explicá-la.",
+            "Cozer e coser soam igual: cozer é cozinhar em água, coser é costurar. Um erro clássico de ortografia."
+          ],
+          "q": "Que receita de família gostarias de ensinar a um estrangeiro?",
+          "c": "Escreve uma receita portuguesa simples em seis passos, com imperativo e pelo menos um q.b."
+        },
+        "pt_BR": {
+          "t": "Receitas e culinária",
+          "g": "Revise a linguagem de receitas usada em Portugal.",
+          "p": [
+            "Cozer é cozinhar em água: Coza as batatas. Natas é creme de leite e fiambre é presunto cozido.",
+            "Q.b., quanto baste, aparece em muitas receitas portuguesas: sal e pimenta q.b.",
+            "Um fio de azeite é essencial na cozinha portuguesa; o azeite é usado em quase tudo."
+          ],
+          "q": "Que prato português você gostaria de aprender a cozinhar?",
+          "c": "Escreva uma receita curta à portuguesa com coza, junte, mexa, natas e q.b."
+        }
+      },
+      "target": {
+        "vocab": [
+          {
+            "w": "corte",
+            "ex": "Corte a cebola em pedaços pequenos."
+          },
+          {
+            "w": "junte",
+            "ex": "Junte o alho e o azeite."
+          },
+          {
+            "w": "mexa",
+            "ex": "Mexa bem durante dois minutos."
+          },
+          {
+            "w": "coza",
+            "ex": "Coza as batatas em água com sal."
+          },
+          {
+            "w": "q.b.",
+            "ex": "Sal e pimenta q.b."
+          },
+          {
+            "w": "deixe arrefecer",
+            "ex": "Deixe arrefecer antes de servir."
+          }
+        ],
+        "gram": "Receitas: imperativo de cortesia (corte, junte, mexa, coza, sirva) ou infinitivo (cortar, juntar). Q.b. = quanto baste."
+      }
+    }
+  ]
+}

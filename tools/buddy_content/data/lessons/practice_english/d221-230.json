@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_english",
+ "lessons": [
+  {
+   "d": 221,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Health and fitness habits",
+     "g": "Talk about staying active with everyday fitness vocabulary.",
+     "p": [
+      "Activities: work out at the gym, go for a run, stretch, do yoga, go cycling, take the stairs.",
+      "Phrasal verbs: cut down on sugar, take up swimming, keep up a routine, warm up before exercise.",
+      "Habits: I try to walk 30 minutes a day. I've been going to the gym twice a week. I'm trying to stay in shape."
+     ],
+     "q": "What do you do to stay active, and is there a sport or activity you'd like to take up?",
+     "c": "Write five sentences about your activity habits: one with try to, one with take up, one with cut down on and two with how often."
+    },
+    "de": {
+     "t": "Health and fitness habits",
+     "g": "Du sprichst mit Alltagswortschatz darüber, wie du aktiv bleibst.",
+     "p": [
+      "Aktivitäten: work out at the gym, go for a run, stretch, do yoga, go cycling, take the stairs.",
+      "Phrasal Verbs: cut down on sugar, take up swimming, keep up a routine, warm up before exercise.",
+      "Gewohnheiten: I try to walk 30 minutes a day. I've been going to the gym twice a week. I'm trying to stay in shape."
+     ],
+     "q": "Was machst du, um aktiv zu bleiben, und gibt es einen Sport, mit dem du gern anfangen würdest?",
+     "c": "Schreib fünf Sätze über deine Bewegung: einen mit try to, einen mit take up, einen mit cut down on und zwei mit how often."
+    },
+    "es": {
+     "t": "Health and fitness habits",
+     "g": "Habla de cómo te mantienes activo con vocabulario de fitness cotidiano.",
+     "p": [
+      "Actividades: work out at the gym, go for a run, stretch, do yoga, go cycling, take the stairs.",
+      "Phrasal verbs: cut down on sugar, take up swimming, keep up a routine, warm up before exercise.",
+      "Hábitos: I try to walk 30 minutes a day. I've been going to the gym twice a week. I'm trying to stay in shape."
+     ],
+     "q": "¿Qué haces para mantenerte activo, y hay algún deporte o actividad que te gustaría empezar?",
+     "c": "Escribe cinco frases sobre tu actividad: una con try to, una con take up, una con cut down on y dos sobre la frecuencia."
+    },
+    "fr": {
+     "t": "Health and fitness habits",
+     "g": "Parle de ta façon de rester actif avec un vocabulaire du quotidien.",
+     "p": [
+      "Activités : work out at the gym, go for a run, stretch, do yoga, go cycling, take the stairs.",
+      "Phrasal verbs : cut down on sugar, take up swimming, keep up a routine, warm up before exercise.",
+      "Habitudes : I try to walk 30 minutes a day. I've been going to the gym twice a week. I'm trying to stay in shape."
+     ],
+     "q": "Que fais-tu pour rester actif, et y a-t-il un sport ou une activité que tu aimerais commencer ?",
+     "c": "Écris cinq phrases sur tes habitudes : une avec try to, une avec take up, une avec cut down on et deux sur la fréquence."
+    },
+    "it": {
+     "t": "Health and fitness habits",
+     "g": "Parla di come restare attivo con il lessico quotidiano del fitness.",
+     "p": [
+      "Attività: work out at the gym, go for a run, stretch, do yoga, go cycling, take the stairs.",
+      "Phrasal verbs: cut down on sugar, take up swimming, keep up a routine, warm up before exercise.",
+      "Abitudini: I try to walk 30 minutes a day. I've been going to the gym twice a week. I'm trying to stay in shape."
+     ],
+     "q": "Cosa fai per restare attivo, e c'è uno sport o un'attività che vorresti iniziare?",
+     "c": "Scrivi cinque frasi sulle tue abitudini: una con try to, una con take up, una con cut down on e due sulla frequenza."
+    },
+    "pt": {
+     "t": "Health and fitness habits",
+     "g": "Fala de como te manténs ativo com vocabulário de fitness do dia a dia.",
+     "p": [
+      "Atividades: work out at the gym, go for a run, stretch, do yoga, go cycling, take the stairs.",
+      "Phrasal verbs: cut down on sugar, take up swimming, keep up a routine, warm up before exercise.",
+      "Hábitos: I try to walk 30 minutes a day. I've been going to the gym twice a week. I'm trying to stay in shape."
+     ],
+     "q": "O que fazes para te manteres ativo, e há algum desporto ou atividade que gostavas de começar?",
+     "c": "Escreve cinco frases sobre a tua atividade: uma com try to, uma com take up, uma com cut down on e duas sobre frequência."
+    },
+    "pt_BR": {
+     "t": "Health and fitness habits",
+     "g": "Fale de como você se mantém ativo com vocabulário de academia do dia a dia.",
+     "p": [
+      "Atividades: work out at the gym, go for a run, stretch, do yoga, go cycling, take the stairs.",
+      "Phrasal verbs: cut down on sugar, take up swimming, keep up a routine, warm up before exercise.",
+      "Hábitos: I try to walk 30 minutes a day. I've been going to the gym twice a week. I'm trying to stay in shape."
+     ],
+     "q": "O que você faz para se manter ativo, e tem algum esporte ou atividade que gostaria de começar?",
+     "c": "Escreva cinco frases sobre sua atividade: uma com try to, uma com take up, uma com cut down on e duas sobre frequência."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "work out",
+      "ex": "I work out three times a week."
+     },
+     {
+      "w": "stretch",
+      "ex": "Always stretch after a long run."
+     },
+     {
+      "w": "stay in shape",
+      "ex": "Cycling to work helps me stay in shape."
+     },
+     {
+      "w": "cut down on",
+      "ex": "I'm trying to cut down on fizzy drinks."
+     },
+     {
+      "w": "take up",
+      "ex": "I'd like to take up tennis this summer."
+     },
+     {
+      "w": "warm up",
+      "ex": "Let's warm up for five minutes first."
+     }
+    ],
+    "gram": "Fitness habits: present simple + frequency (twice a week), try to + verb, and phrasal verbs like take up, cut down on, warm up."
+   }
+  },
+  {
+   "d": 222,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Describing how you feel to a doctor",
+     "g": "Explain simple symptoms clearly in English. General language only, not medical advice.",
+     "p": [
+      "Describing: I've got a headache. I have a sore throat. My back hurts. I feel dizzy. I've got a temperature.",
+      "Duration: I've had a cough for three days. It started on Monday. It gets worse at night.",
+      "Questions you may hear: Where does it hurt? How long have you felt like this? Are you taking anything?"
+     ],
+     "q": "Let's practise a role play: imagine you have a cold. How would you describe it to a doctor in two or three sentences?",
+     "c": "Write a short dialogue at a doctor's reception: say how you feel, since when, and ask one polite question."
+    },
+    "de": {
+     "t": "Describing how you feel to a doctor",
+     "g": "Du beschreibst einfache Beschwerden klar auf Englisch. Nur Sprache, keine medizinische Beratung.",
+     "p": [
+      "Beschreiben: I've got a headache. I have a sore throat. My back hurts. I feel dizzy. I've got a temperature.",
+      "Dauer: I've had a cough for three days. It started on Monday. It gets worse at night.",
+      "Mögliche Fragen: Where does it hurt? How long have you felt like this? Are you taking anything?"
+     ],
+     "q": "Lass uns ein Rollenspiel üben: Stell dir vor, du bist erkältet. Wie beschreibst du das einem Arzt in zwei, drei Sätzen?",
+     "c": "Schreib einen kurzen Dialog an der Praxisanmeldung: wie du dich fühlst, seit wann, und eine höfliche Frage."
+    },
+    "es": {
+     "t": "Describing how you feel to a doctor",
+     "g": "Explica síntomas sencillos con claridad en inglés. Solo lenguaje, no consejo médico.",
+     "p": [
+      "Describir: I've got a headache. I have a sore throat. My back hurts. I feel dizzy. I've got a temperature.",
+      "Duración: I've had a cough for three days. It started on Monday. It gets worse at night.",
+      "Preguntas que puedes oír: Where does it hurt? How long have you felt like this? Are you taking anything?"
+     ],
+     "q": "Practiquemos un juego de rol: imagina que estás resfriado. ¿Cómo se lo describirías a un médico en dos o tres frases?",
+     "c": "Escribe un diálogo corto en la recepción de una consulta: cómo te sientes, desde cuándo y una pregunta educada."
+    },
+    "fr": {
+     "t": "Describing how you feel to a doctor",
+     "g": "Explique des symptômes simples en anglais. Vocabulaire uniquement, pas de conseil médical.",
+     "p": [
+      "Décrire : I've got a headache. I have a sore throat. My back hurts. I feel dizzy. I've got a temperature.",
+      "Durée : I've had a cough for three days. It started on Monday. It gets worse at night.",
+      "Questions possibles : Where does it hurt? How long have you felt like this? Are you taking anything?"
+     ],
+     "q": "Faisons un jeu de rôle : imagine que tu es enrhumé. Comment le décrirais-tu à un médecin en deux ou trois phrases ?",
+     "c": "Écris un court dialogue à l'accueil d'un cabinet : comment tu te sens, depuis quand, et une question polie."
+    },
+    "it": {
+     "t": "Describing how you feel to a doctor",
+     "g": "Spiega sintomi semplici in inglese con chiarezza. Solo lingua, nessun consiglio medico.",
+     "p": [
+      "Descrivere: I've got a headache. I have a sore throat. My back hurts. I feel dizzy. I've got a temperature.",
+      "Durata: I've had a cough for three days. It started on Monday. It gets worse at night.",
+      "Domande che puoi sentire: Where does it hurt? How long have you felt like this? Are you taking anything?"
+     ],
+     "q": "Facciamo un gioco di ruolo: immagina di avere il raffreddore. Come lo descriveresti a un medico in due o tre frasi?",
+     "c": "Scrivi un breve dialogo alla reception di uno studio medico: come ti senti, da quando e una domanda cortese."
+    },
+    "pt": {
+     "t": "Describing how you feel to a doctor",
+     "g": "Explica sintomas simples com clareza em inglês. Só linguagem, não é conselho médico.",
+     "p": [
+      "Descrever: I've got a headache. I have a sore throat. My back hurts. I feel dizzy. I've got a temperature.",
+      "Duração: I've had a cough for three days. It started on Monday. It gets worse at night.",
+      "Perguntas que podes ouvir: Where does it hurt? How long have you felt like this? Are you taking anything?"
+     ],
+     "q": "Vamos fazer um role play: imagina que estás constipado. Como o descreverias a um médico em duas ou três frases?",
+     "c": "Escreve um diálogo curto na receção de um consultório: como te sentes, desde quando e uma pergunta educada."
+    },
+    "pt_BR": {
+     "t": "Describing how you feel to a doctor",
+     "g": "Explique sintomas simples com clareza em inglês. Só linguagem, não é orientação médica.",
+     "p": [
+      "Descrever: I've got a headache. I have a sore throat. My back hurts. I feel dizzy. I've got a temperature.",
+      "Duração: I've had a cough for three days. It started on Monday. It gets worse at night.",
+      "Perguntas que você pode ouvir: Where does it hurt? How long have you felt like this? Are you taking anything?"
+     ],
+     "q": "Vamos fazer um role play: imagine que você está resfriado. Como descreveria isso a um médico em duas ou três frases?",
+     "c": "Escreva um diálogo curto na recepção de um consultório: como você se sente, desde quando e uma pergunta educada."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "I've got a headache",
+      "ex": "I've got a headache, so I'll rest a bit."
+     },
+     {
+      "w": "sore throat",
+      "ex": "I've had a sore throat since yesterday."
+     },
+     {
+      "w": "it hurts",
+      "ex": "My knee hurts when I walk upstairs."
+     },
+     {
+      "w": "I feel dizzy",
+      "ex": "I feel a little dizzy when I stand up."
+     },
+     {
+      "w": "a temperature",
+      "ex": "She stayed home because she had a temperature."
+     },
+     {
+      "w": "for three days",
+      "ex": "I've had this cough for three days."
+     }
+    ],
+    "gram": "Symptoms: I've got / I have + a headache, a sore throat; my back hurts; present perfect + for/since for how long: I've had it for two days."
+   }
+  },
+  {
+   "d": 223,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Sleep and wellbeing",
+     "g": "Talk about rest, stress and feeling good in a positive way.",
+     "p": [
+      "Sleep: get enough sleep, go to bed early, have a good night's sleep, have a lie-in, take a nap.",
+      "Stress and relaxing: feel stressed, unwind after work, switch off, relax with a book, take some time for yourself.",
+      "Tips: It helps me to... I find that a walk clears my head. I've stopped checking my phone in bed."
+     ],
+     "q": "How do you usually unwind after a long day, and what helps you get a good night's sleep?",
+     "c": "Write five sentences about your wellbeing routine with It helps me to..., I find that... and I've started / I've stopped..."
+    },
+    "de": {
+     "t": "Sleep and wellbeing",
+     "g": "Du sprichst positiv über Erholung, Stress und Wohlbefinden.",
+     "p": [
+      "Schlaf: get enough sleep, go to bed early, have a good night's sleep, have a lie-in, take a nap.",
+      "Stress und Entspannung: feel stressed, unwind after work, switch off, relax with a book, take some time for yourself.",
+      "Tipps: It helps me to... I find that a walk clears my head. I've stopped checking my phone in bed."
+     ],
+     "q": "Wie entspannst du dich nach einem langen Tag, und was hilft dir, gut zu schlafen?",
+     "c": "Schreib fünf Sätze über deine Wohlfühl-Routine mit It helps me to..., I find that... und I've started / I've stopped..."
+    },
+    "es": {
+     "t": "Sleep and wellbeing",
+     "g": "Habla del descanso, el estrés y el bienestar de forma positiva.",
+     "p": [
+      "Sueño: get enough sleep, go to bed early, have a good night's sleep, have a lie-in, take a nap.",
+      "Estrés y relax: feel stressed, unwind after work, switch off, relax with a book, take some time for yourself.",
+      "Consejos: It helps me to... I find that a walk clears my head. I've stopped checking my phone in bed."
+     ],
+     "q": "¿Cómo sueles desconectar después de un día largo, y qué te ayuda a dormir bien?",
+     "c": "Escribe cinco frases sobre tu rutina de bienestar con It helps me to..., I find that... y I've started / I've stopped..."
+    },
+    "fr": {
+     "t": "Sleep and wellbeing",
+     "g": "Parle du repos, du stress et du bien-être de façon positive.",
+     "p": [
+      "Sommeil : get enough sleep, go to bed early, have a good night's sleep, have a lie-in, take a nap.",
+      "Stress et détente : feel stressed, unwind after work, switch off, relax with a book, take some time for yourself.",
+      "Astuces : It helps me to... I find that a walk clears my head. I've stopped checking my phone in bed."
+     ],
+     "q": "Comment décompresses-tu après une longue journée, et qu'est-ce qui t'aide à bien dormir ?",
+     "c": "Écris cinq phrases sur ta routine bien-être avec It helps me to..., I find that... et I've started / I've stopped..."
+    },
+    "it": {
+     "t": "Sleep and wellbeing",
+     "g": "Parla di riposo, stress e benessere in modo positivo.",
+     "p": [
+      "Sonno: get enough sleep, go to bed early, have a good night's sleep, have a lie-in, take a nap.",
+      "Stress e relax: feel stressed, unwind after work, switch off, relax with a book, take some time for yourself.",
+      "Consigli: It helps me to... I find that a walk clears my head. I've stopped checking my phone in bed."
+     ],
+     "q": "Come ti rilassi di solito dopo una lunga giornata, e cosa ti aiuta a dormire bene?",
+     "c": "Scrivi cinque frasi sulla tua routine di benessere con It helps me to..., I find that... e I've started / I've stopped..."
+    },
+    "pt": {
+     "t": "Sleep and wellbeing",
+     "g": "Fala de descanso, stress e bem-estar de forma positiva.",
+     "p": [
+      "Sono: get enough sleep, go to bed early, have a good night's sleep, have a lie-in, take a nap.",
+      "Stress e descontração: feel stressed, unwind after work, switch off, relax with a book, take some time for yourself.",
+      "Dicas: It helps me to... I find that a walk clears my head. I've stopped checking my phone in bed."
+     ],
+     "q": "Como costumas descontrair depois de um dia longo, e o que te ajuda a dormir bem?",
+     "c": "Escreve cinco frases sobre a tua rotina de bem-estar com It helps me to..., I find that... e I've started / I've stopped..."
+    },
+    "pt_BR": {
+     "t": "Sleep and wellbeing",
+     "g": "Fale de descanso, estresse e bem-estar de forma positiva.",
+     "p": [
+      "Sono: get enough sleep, go to bed early, have a good night's sleep, have a lie-in, take a nap.",
+      "Estresse e relaxamento: feel stressed, unwind after work, switch off, relax with a book, take some time for yourself.",
+      "Dicas: It helps me to... I find that a walk clears my head. I've stopped checking my phone in bed."
+     ],
+     "q": "Como você costuma relaxar depois de um dia longo, e o que te ajuda a dormir bem?",
+     "c": "Escreva cinco frases sobre sua rotina de bem-estar com It helps me to..., I find that... e I've started / I've stopped..."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "get enough sleep",
+      "ex": "I feel better when I get enough sleep."
+     },
+     {
+      "w": "a good night's sleep",
+      "ex": "A good night's sleep makes everything easier."
+     },
+     {
+      "w": "unwind",
+      "ex": "I unwind by listening to music."
+     },
+     {
+      "w": "switch off",
+      "ex": "On holiday, I really switch off."
+     },
+     {
+      "w": "have a lie-in",
+      "ex": "On Sundays I love to have a lie-in."
+     },
+     {
+      "w": "take a nap",
+      "ex": "My grandad takes a nap after lunch."
+     }
+    ],
+    "gram": "Wellbeing: It helps me to + verb, I find that + clause; present perfect for recent changes: I've started going to bed earlier."
+   }
+  },
+  {
+   "d": 224,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Food trends and eating habits",
+     "g": "Talk about how people eat today and your own food habits.",
+     "p": [
+      "Diets and styles: vegetarian, vegan, plant-based, home-cooked, organic, fast food, street food.",
+      "Habits: I tend to snack in the afternoon. I usually cook at home. I'm eating more vegetables these days.",
+      "Trends: More and more people are... It's become popular to... A lot of people have switched to oat milk."
+     ],
+     "q": "How have your eating habits changed in the last few years, and what food trend have you noticed?",
+     "c": "Write five sentences: two about your habits (tend to, usually), two about trends (more and more people...) and one opinion."
+    },
+    "de": {
+     "t": "Food trends and eating habits",
+     "g": "Du sprichst darüber, wie Menschen heute essen, und über deine eigenen Gewohnheiten.",
+     "p": [
+      "Ernährungsstile: vegetarian, vegan, plant-based, home-cooked, organic, fast food, street food.",
+      "Gewohnheiten: I tend to snack in the afternoon. I usually cook at home. I'm eating more vegetables these days.",
+      "Trends: More and more people are... It's become popular to... A lot of people have switched to oat milk."
+     ],
+     "q": "Wie haben sich deine Essgewohnheiten in den letzten Jahren verändert, und welchen Trend hast du bemerkt?",
+     "c": "Schreib fünf Sätze: zwei über deine Gewohnheiten (tend to, usually), zwei über Trends (more and more people...) und eine Meinung."
+    },
+    "es": {
+     "t": "Food trends and eating habits",
+     "g": "Habla de cómo come la gente hoy y de tus propios hábitos.",
+     "p": [
+      "Estilos: vegetarian, vegan, plant-based, home-cooked, organic, fast food, street food.",
+      "Hábitos: I tend to snack in the afternoon. I usually cook at home. I'm eating more vegetables these days.",
+      "Tendencias: More and more people are... It's become popular to... A lot of people have switched to oat milk."
+     ],
+     "q": "¿Cómo han cambiado tus hábitos alimentarios en los últimos años, y qué tendencia has notado?",
+     "c": "Escribe cinco frases: dos sobre tus hábitos (tend to, usually), dos sobre tendencias (more and more people...) y una opinión."
+    },
+    "fr": {
+     "t": "Food trends and eating habits",
+     "g": "Parle de la façon de manger aujourd'hui et de tes propres habitudes.",
+     "p": [
+      "Régimes et styles : vegetarian, vegan, plant-based, home-cooked, organic, fast food, street food.",
+      "Habitudes : I tend to snack in the afternoon. I usually cook at home. I'm eating more vegetables these days.",
+      "Tendances : More and more people are... It's become popular to... A lot of people have switched to oat milk."
+     ],
+     "q": "Comment tes habitudes alimentaires ont-elles changé ces dernières années, et quelle tendance as-tu remarquée ?",
+     "c": "Écris cinq phrases : deux sur tes habitudes (tend to, usually), deux sur des tendances (more and more people...) et un avis."
+    },
+    "it": {
+     "t": "Food trends and eating habits",
+     "g": "Parla di come si mangia oggi e delle tue abitudini.",
+     "p": [
+      "Stili alimentari: vegetarian, vegan, plant-based, home-cooked, organic, fast food, street food.",
+      "Abitudini: I tend to snack in the afternoon. I usually cook at home. I'm eating more vegetables these days.",
+      "Tendenze: More and more people are... It's become popular to... A lot of people have switched to oat milk."
+     ],
+     "q": "Come sono cambiate le tue abitudini alimentari negli ultimi anni, e quale tendenza hai notato?",
+     "c": "Scrivi cinque frasi: due sulle tue abitudini (tend to, usually), due sulle tendenze (more and more people...) e un'opinione."
+    },
+    "pt": {
+     "t": "Food trends and eating habits",
+     "g": "Fala de como as pessoas comem hoje e dos teus próprios hábitos.",
+     "p": [
+      "Estilos: vegetarian, vegan, plant-based, home-cooked, organic, fast food, street food.",
+      "Hábitos: I tend to snack in the afternoon. I usually cook at home. I'm eating more vegetables these days.",
+      "Tendências: More and more people are... It's become popular to... A lot of people have switched to oat milk."
+     ],
+     "q": "Como mudaram os teus hábitos alimentares nos últimos anos, e que tendência notaste?",
+     "c": "Escreve cinco frases: duas sobre os teus hábitos (tend to, usually), duas sobre tendências (more and more people...) e uma opinião."
+    },
+    "pt_BR": {
+     "t": "Food trends and eating habits",
+     "g": "Fale de como as pessoas comem hoje e dos seus próprios hábitos.",
+     "p": [
+      "Estilos: vegetarian, vegan, plant-based, home-cooked, organic, fast food, street food.",
+      "Hábitos: I tend to snack in the afternoon. I usually cook at home. I'm eating more vegetables these days.",
+      "Tendências: More and more people are... It's become popular to... A lot of people have switched to oat milk."
+     ],
+     "q": "Como seus hábitos alimentares mudaram nos últimos anos, e que tendência você notou?",
+     "c": "Escreva cinco frases: duas sobre seus hábitos (tend to, usually), duas sobre tendências (more and more people...) e uma opinião."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "plant-based",
+      "ex": "This café has lots of plant-based options."
+     },
+     {
+      "w": "home-cooked",
+      "ex": "Nothing beats a home-cooked meal."
+     },
+     {
+      "w": "snack",
+      "ex": "I try not to snack late at night."
+     },
+     {
+      "w": "tend to",
+      "ex": "We tend to eat dinner quite late."
+     },
+     {
+      "w": "more and more people",
+      "ex": "More and more people are buying local food."
+     },
+     {
+      "w": "switch to",
+      "ex": "I've switched to brown rice."
+     }
+    ],
+    "gram": "Habits and trends: tend to + verb for habits; present continuous for changing trends (More people are eating...); have switched to."
+   }
+  },
+  {
+   "d": 225,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Sustainable living",
+     "g": "Discuss greener lifestyles and small eco-friendly habits.",
+     "p": [
+      "Actions: reduce waste, recycle, reuse bags, buy second-hand, repair instead of replacing, save energy.",
+      "Food and travel: buy local food, eat seasonal fruit, walk or cycle, share rides, take the train.",
+      "Talking about it: I've started... I try not to... We could all... Every small change makes a difference."
+     ],
+     "q": "What is one green habit you already have, and one you'd like to start?",
+     "c": "Make a mini eco-plan for one week: five small actions with I'm going to..., I'll try to... and I won't..."
+    },
+    "de": {
+     "t": "Sustainable living",
+     "g": "Du sprichst über einen umweltfreundlichen Lebensstil und kleine grüne Gewohnheiten.",
+     "p": [
+      "Handlungen: reduce waste, recycle, reuse bags, buy second-hand, repair instead of replacing, save energy.",
+      "Essen und Reisen: buy local food, eat seasonal fruit, walk or cycle, share rides, take the train.",
+      "Darüber reden: I've started... I try not to... We could all... Every small change makes a difference."
+     ],
+     "q": "Welche grüne Gewohnheit hast du schon, und welche möchtest du anfangen?",
+     "c": "Mach einen Mini-Ökoplan für eine Woche: fünf kleine Aktionen mit I'm going to..., I'll try to... und I won't..."
+    },
+    "es": {
+     "t": "Sustainable living",
+     "g": "Habla de estilos de vida más verdes y pequeños hábitos ecológicos.",
+     "p": [
+      "Acciones: reduce waste, recycle, reuse bags, buy second-hand, repair instead of replacing, save energy.",
+      "Comida y transporte: buy local food, eat seasonal fruit, walk or cycle, share rides, take the train.",
+      "Para hablar de ello: I've started... I try not to... We could all... Every small change makes a difference."
+     ],
+     "q": "¿Qué hábito ecológico tienes ya, y cuál te gustaría empezar?",
+     "c": "Haz un mini plan ecológico para una semana: cinco acciones pequeñas con I'm going to..., I'll try to... e I won't..."
+    },
+    "fr": {
+     "t": "Sustainable living",
+     "g": "Parle de modes de vie plus verts et de petits gestes écologiques.",
+     "p": [
+      "Gestes : reduce waste, recycle, reuse bags, buy second-hand, repair instead of replacing, save energy.",
+      "Alimentation et transports : buy local food, eat seasonal fruit, walk or cycle, share rides, take the train.",
+      "En parler : I've started... I try not to... We could all... Every small change makes a difference."
+     ],
+     "q": "Quel geste écologique fais-tu déjà, et lequel aimerais-tu adopter ?",
+     "c": "Fais un mini plan écolo pour une semaine : cinq petites actions avec I'm going to..., I'll try to... et I won't..."
+    },
+    "it": {
+     "t": "Sustainable living",
+     "g": "Parla di stili di vita più verdi e di piccole abitudini ecologiche.",
+     "p": [
+      "Azioni: reduce waste, recycle, reuse bags, buy second-hand, repair instead of replacing, save energy.",
+      "Cibo e spostamenti: buy local food, eat seasonal fruit, walk or cycle, share rides, take the train.",
+      "Parlarne: I've started... I try not to... We could all... Every small change makes a difference."
+     ],
+     "q": "Quale abitudine ecologica hai già, e quale vorresti iniziare?",
+     "c": "Fai un mini piano ecologico per una settimana: cinque piccole azioni con I'm going to..., I'll try to... e I won't..."
+    },
+    "pt": {
+     "t": "Sustainable living",
+     "g": "Fala de estilos de vida mais verdes e de pequenos hábitos ecológicos.",
+     "p": [
+      "Ações: reduce waste, recycle, reuse bags, buy second-hand, repair instead of replacing, save energy.",
+      "Comida e transportes: buy local food, eat seasonal fruit, walk or cycle, share rides, take the train.",
+      "Falar disso: I've started... I try not to... We could all... Every small change makes a difference."
+     ],
+     "q": "Que hábito ecológico já tens, e qual gostavas de começar?",
+     "c": "Faz um mini plano ecológico para uma semana: cinco pequenas ações com I'm going to..., I'll try to... e I won't..."
+    },
+    "pt_BR": {
+     "t": "Sustainable living",
+     "g": "Fale de estilos de vida mais verdes e de pequenos hábitos sustentáveis.",
+     "p": [
+      "Ações: reduce waste, recycle, reuse bags, buy second-hand, repair instead of replacing, save energy.",
+      "Comida e transporte: buy local food, eat seasonal fruit, walk or cycle, share rides, take the train.",
+      "Falando disso: I've started... I try not to... We could all... Every small change makes a difference."
+     ],
+     "q": "Que hábito sustentável você já tem, e qual gostaria de começar?",
+     "c": "Faça um mini plano sustentável para uma semana: cinco pequenas ações com I'm going to..., I'll try to... e I won't..."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "reduce waste",
+      "ex": "We reduce waste by buying in bulk."
+     },
+     {
+      "w": "second-hand",
+      "ex": "Most of my furniture is second-hand."
+     },
+     {
+      "w": "recycle",
+      "ex": "Do you recycle glass and paper?"
+     },
+     {
+      "w": "energy-saving",
+      "ex": "We changed to energy-saving light bulbs."
+     },
+     {
+      "w": "local food",
+      "ex": "I buy local food at the Saturday market."
+     },
+     {
+      "w": "make a difference",
+      "ex": "Small changes can make a big difference."
+     }
+    ],
+    "gram": "Green habits: present perfect for changes (I've started recycling), try (not) to + verb, and could for suggestions: We could all walk more."
+   }
+  },
+  {
+   "d": 226,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Climate and extreme weather",
+     "g": "Talk about the climate and extreme weather with clear, factual vocabulary.",
+     "p": [
+      "Extreme weather: heatwave, flood, drought, storm, hurricane, wildfire, heavy snow.",
+      "Climate words: global warming, climate change, temperatures are rising, sea levels, greenhouse gases.",
+      "Describing: There was a terrible storm last winter. Summers are getting hotter. The river flooded the town."
+     ],
+     "q": "What kind of weather is typical where you live, and have you ever experienced a heatwave or a big storm?",
+     "c": "Write five sentences: three about weather in your region (past and present) and two about how people prepare for it."
+    },
+    "de": {
+     "t": "Climate and extreme weather",
+     "g": "Du sprichst sachlich über Klima und extremes Wetter.",
+     "p": [
+      "Extremwetter: heatwave, flood, drought, storm, hurricane, wildfire, heavy snow.",
+      "Klimawörter: global warming, climate change, temperatures are rising, sea levels, greenhouse gases.",
+      "Beschreiben: There was a terrible storm last winter. Summers are getting hotter. The river flooded the town."
+     ],
+     "q": "Welches Wetter ist typisch, wo du wohnst, und hast du schon mal eine Hitzewelle oder einen großen Sturm erlebt?",
+     "c": "Schreib fünf Sätze: drei über das Wetter in deiner Region (früher und heute) und zwei darüber, wie man sich vorbereitet."
+    },
+    "es": {
+     "t": "Climate and extreme weather",
+     "g": "Habla del clima y del tiempo extremo con vocabulario claro y objetivo.",
+     "p": [
+      "Tiempo extremo: heatwave, flood, drought, storm, hurricane, wildfire, heavy snow.",
+      "Palabras del clima: global warming, climate change, temperatures are rising, sea levels, greenhouse gases.",
+      "Describir: There was a terrible storm last winter. Summers are getting hotter. The river flooded the town."
+     ],
+     "q": "¿Qué tiempo es típico donde vives, y has vivido alguna vez una ola de calor o una gran tormenta?",
+     "c": "Escribe cinco frases: tres sobre el tiempo en tu región (antes y ahora) y dos sobre cómo se prepara la gente."
+    },
+    "fr": {
+     "t": "Climate and extreme weather",
+     "g": "Parle du climat et des phénomènes extrêmes avec un vocabulaire clair et factuel.",
+     "p": [
+      "Météo extrême : heatwave, flood, drought, storm, hurricane, wildfire, heavy snow.",
+      "Vocabulaire du climat : global warming, climate change, temperatures are rising, sea levels, greenhouse gases.",
+      "Décrire : There was a terrible storm last winter. Summers are getting hotter. The river flooded the town."
+     ],
+     "q": "Quel temps fait-il d'habitude chez toi, et as-tu déjà vécu une canicule ou une grosse tempête ?",
+     "c": "Écris cinq phrases : trois sur la météo de ta région (avant et maintenant) et deux sur la façon dont on s'y prépare."
+    },
+    "it": {
+     "t": "Climate and extreme weather",
+     "g": "Parla di clima e di eventi meteo estremi con un lessico chiaro e oggettivo.",
+     "p": [
+      "Meteo estremo: heatwave, flood, drought, storm, hurricane, wildfire, heavy snow.",
+      "Parole del clima: global warming, climate change, temperatures are rising, sea levels, greenhouse gases.",
+      "Descrivere: There was a terrible storm last winter. Summers are getting hotter. The river flooded the town."
+     ],
+     "q": "Che tempo è tipico dove vivi, e hai mai vissuto un'ondata di caldo o una grande tempesta?",
+     "c": "Scrivi cinque frasi: tre sul tempo nella tua regione (prima e ora) e due su come ci si prepara."
+    },
+    "pt": {
+     "t": "Climate and extreme weather",
+     "g": "Fala do clima e de fenómenos extremos com vocabulário claro e factual.",
+     "p": [
+      "Tempo extremo: heatwave, flood, drought, storm, hurricane, wildfire, heavy snow.",
+      "Palavras do clima: global warming, climate change, temperatures are rising, sea levels, greenhouse gases.",
+      "Descrever: There was a terrible storm last winter. Summers are getting hotter. The river flooded the town."
+     ],
+     "q": "Que tempo é típico onde vives, e já viveste uma onda de calor ou uma grande tempestade?",
+     "c": "Escreve cinco frases: três sobre o tempo na tua região (antes e agora) e duas sobre como as pessoas se preparam."
+    },
+    "pt_BR": {
+     "t": "Climate and extreme weather",
+     "g": "Fale do clima e de fenômenos extremos com vocabulário claro e objetivo.",
+     "p": [
+      "Tempo extremo: heatwave, flood, drought, storm, hurricane, wildfire, heavy snow.",
+      "Palavras do clima: global warming, climate change, temperatures are rising, sea levels, greenhouse gases.",
+      "Descrever: There was a terrible storm last winter. Summers are getting hotter. The river flooded the town."
+     ],
+     "q": "Que clima é típico onde você mora, e você já passou por uma onda de calor ou uma grande tempestade?",
+     "c": "Escreva cinco frases: três sobre o clima na sua região (antes e agora) e duas sobre como as pessoas se preparam."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "heatwave",
+      "ex": "During the heatwave, we stayed indoors at midday."
+     },
+     {
+      "w": "flood",
+      "ex": "Heavy rain caused a flood in the valley."
+     },
+     {
+      "w": "drought",
+      "ex": "The farmers had a difficult year because of the drought."
+     },
+     {
+      "w": "storm",
+      "ex": "The storm knocked down several trees."
+     },
+     {
+      "w": "global warming",
+      "ex": "Global warming is making summers hotter."
+     },
+     {
+      "w": "getting hotter",
+      "ex": "Summers here are getting hotter every decade."
+     }
+    ],
+    "gram": "Describing change: get + comparative (getting hotter), present continuous for trends (temperatures are rising), past simple for events."
+   }
+  },
+  {
+   "d": 227,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Animals and conservation",
+     "g": "Talk about wildlife and how people protect nature.",
+     "p": [
+      "Key words: wildlife, species, habitat, endangered, extinct, protect, nature reserve, national park.",
+      "Facts with the passive: Many species are protected by law. Pandas were once endangered, and numbers have grown.",
+      "Action: Volunteers help to clean beaches. We should protect forests. Zoos can help to save rare animals."
+     ],
+     "q": "What is your favourite wild animal, where does it live, and how can people help to protect it?",
+     "c": "Write a short fact file about an animal: habitat, what it eats, one surprising fact and how it is protected."
+    },
+    "de": {
+     "t": "Animals and conservation",
+     "g": "Du sprichst über Wildtiere und darüber, wie Menschen die Natur schützen.",
+     "p": [
+      "Schlüsselwörter: wildlife, species, habitat, endangered, extinct, protect, nature reserve, national park.",
+      "Fakten im Passiv: Many species are protected by law. Pandas were once endangered, and numbers have grown.",
+      "Handeln: Volunteers help to clean beaches. We should protect forests. Zoos can help to save rare animals."
+     ],
+     "q": "Was ist dein liebstes Wildtier, wo lebt es, und wie können Menschen helfen, es zu schützen?",
+     "c": "Schreib einen kurzen Steckbrief zu einem Tier: Lebensraum, Nahrung, eine überraschende Tatsache und wie es geschützt wird."
+    },
+    "es": {
+     "t": "Animals and conservation",
+     "g": "Habla de la fauna salvaje y de cómo la gente protege la naturaleza.",
+     "p": [
+      "Palabras clave: wildlife, species, habitat, endangered, extinct, protect, nature reserve, national park.",
+      "Datos en pasiva: Many species are protected by law. Pandas were once endangered, and numbers have grown.",
+      "Acción: Volunteers help to clean beaches. We should protect forests. Zoos can help to save rare animals."
+     ],
+     "q": "¿Cuál es tu animal salvaje favorito, dónde vive y cómo puede la gente ayudar a protegerlo?",
+     "c": "Escribe una ficha corta sobre un animal: hábitat, qué come, un dato sorprendente y cómo se protege."
+    },
+    "fr": {
+     "t": "Animals and conservation",
+     "g": "Parle de la faune sauvage et de la protection de la nature.",
+     "p": [
+      "Mots clés : wildlife, species, habitat, endangered, extinct, protect, nature reserve, national park.",
+      "Faits au passif : Many species are protected by law. Pandas were once endangered, and numbers have grown.",
+      "Agir : Volunteers help to clean beaches. We should protect forests. Zoos can help to save rare animals."
+     ],
+     "q": "Quel est ton animal sauvage préféré, où vit-il, et comment peut-on aider à le protéger ?",
+     "c": "Écris une petite fiche sur un animal : habitat, alimentation, un fait surprenant et comment il est protégé."
+    },
+    "it": {
+     "t": "Animals and conservation",
+     "g": "Parla della fauna selvatica e di come le persone proteggono la natura.",
+     "p": [
+      "Parole chiave: wildlife, species, habitat, endangered, extinct, protect, nature reserve, national park.",
+      "Fatti al passivo: Many species are protected by law. Pandas were once endangered, and numbers have grown.",
+      "Agire: Volunteers help to clean beaches. We should protect forests. Zoos can help to save rare animals."
+     ],
+     "q": "Qual è il tuo animale selvatico preferito, dove vive e come possiamo aiutare a proteggerlo?",
+     "c": "Scrivi una breve scheda su un animale: habitat, cosa mangia, un fatto sorprendente e come viene protetto."
+    },
+    "pt": {
+     "t": "Animals and conservation",
+     "g": "Fala da vida selvagem e de como as pessoas protegem a natureza.",
+     "p": [
+      "Palavras-chave: wildlife, species, habitat, endangered, extinct, protect, nature reserve, national park.",
+      "Factos na passiva: Many species are protected by law. Pandas were once endangered, and numbers have grown.",
+      "Ação: Volunteers help to clean beaches. We should protect forests. Zoos can help to save rare animals."
+     ],
+     "q": "Qual é o teu animal selvagem favorito, onde vive, e como podemos ajudar a protegê-lo?",
+     "c": "Escreve uma pequena ficha sobre um animal: habitat, o que come, um facto surpreendente e como é protegido."
+    },
+    "pt_BR": {
+     "t": "Animals and conservation",
+     "g": "Fale da vida selvagem e de como as pessoas protegem a natureza.",
+     "p": [
+      "Palavras-chave: wildlife, species, habitat, endangered, extinct, protect, nature reserve, national park.",
+      "Fatos na passiva: Many species are protected by law. Pandas were once endangered, and numbers have grown.",
+      "Ação: Volunteers help to clean beaches. We should protect forests. Zoos can help to save rare animals."
+     ],
+     "q": "Qual é seu animal selvagem favorito, onde ele vive, e como as pessoas podem ajudar a protegê-lo?",
+     "c": "Escreva uma pequena ficha sobre um animal: habitat, o que come, um fato surpreendente e como é protegido."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "endangered",
+      "ex": "The snow leopard is an endangered animal."
+     },
+     {
+      "w": "habitat",
+      "ex": "Forests are the natural habitat of many birds."
+     },
+     {
+      "w": "wildlife",
+      "ex": "The island is famous for its amazing wildlife."
+     },
+     {
+      "w": "species",
+      "ex": "Scientists discover new species every year."
+     },
+     {
+      "w": "protect",
+      "ex": "We must protect the coral reefs."
+     },
+     {
+      "w": "nature reserve",
+      "ex": "We saw flamingos at the nature reserve."
+     }
+    ],
+    "gram": "Nature facts often use the passive: are protected, were saved, has been reintroduced. Use should/can + verb for actions."
+   }
+  },
+  {
+   "d": 228,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Science in daily life",
+     "g": "Talk about science around you: research, discoveries and evidence.",
+     "p": [
+      "Key words: experiment, research, discovery, evidence, scientist, result, theory, data.",
+      "Everyday science: Why does bread rise? Yeast produces gas. Ice floats because it is less dense than water.",
+      "Talking about facts: Research shows that... Scientists have found that... There is evidence that..."
+     ],
+     "q": "What is a scientific fact that surprised you, or a discovery you think changed everyday life?",
+     "c": "Write three everyday science facts with because, and one sentence with Research shows that..."
+    },
+    "de": {
+     "t": "Science in daily life",
+     "g": "Du sprichst über Wissenschaft im Alltag: Forschung, Entdeckungen und Belege.",
+     "p": [
+      "Schlüsselwörter: experiment, research, discovery, evidence, scientist, result, theory, data.",
+      "Alltagswissenschaft: Why does bread rise? Yeast produces gas. Ice floats because it is less dense than water.",
+      "Über Fakten reden: Research shows that... Scientists have found that... There is evidence that..."
+     ],
+     "q": "Welche wissenschaftliche Tatsache hat dich überrascht, oder welche Entdeckung hat den Alltag verändert?",
+     "c": "Schreib drei Alltags-Wissenschaftsfakten mit because und einen Satz mit Research shows that..."
+    },
+    "es": {
+     "t": "Science in daily life",
+     "g": "Habla de la ciencia que te rodea: investigación, descubrimientos y pruebas.",
+     "p": [
+      "Palabras clave: experiment, research, discovery, evidence, scientist, result, theory, data.",
+      "Ciencia cotidiana: Why does bread rise? Yeast produces gas. Ice floats because it is less dense than water.",
+      "Hablar de datos: Research shows that... Scientists have found that... There is evidence that..."
+     ],
+     "q": "¿Qué dato científico te sorprendió, o qué descubrimiento crees que cambió la vida diaria?",
+     "c": "Escribe tres datos de ciencia cotidiana con because y una frase con Research shows that..."
+    },
+    "fr": {
+     "t": "Science in daily life",
+     "g": "Parle de la science autour de toi : recherche, découvertes et preuves.",
+     "p": [
+      "Mots clés : experiment, research, discovery, evidence, scientist, result, theory, data.",
+      "Science du quotidien : Why does bread rise? Yeast produces gas. Ice floats because it is less dense than water.",
+      "Parler des faits : Research shows that... Scientists have found that... There is evidence that..."
+     ],
+     "q": "Quel fait scientifique t'a surpris, ou quelle découverte a changé la vie de tous les jours selon toi ?",
+     "c": "Écris trois faits scientifiques du quotidien avec because et une phrase avec Research shows that..."
+    },
+    "it": {
+     "t": "Science in daily life",
+     "g": "Parla della scienza intorno a te: ricerca, scoperte e prove.",
+     "p": [
+      "Parole chiave: experiment, research, discovery, evidence, scientist, result, theory, data.",
+      "Scienza quotidiana: Why does bread rise? Yeast produces gas. Ice floats because it is less dense than water.",
+      "Parlare di fatti: Research shows that... Scientists have found that... There is evidence that..."
+     ],
+     "q": "Quale fatto scientifico ti ha sorpreso, o quale scoperta pensi abbia cambiato la vita di tutti i giorni?",
+     "c": "Scrivi tre fatti di scienza quotidiana con because e una frase con Research shows that..."
+    },
+    "pt": {
+     "t": "Science in daily life",
+     "g": "Fala da ciência à tua volta: investigação, descobertas e provas.",
+     "p": [
+      "Palavras-chave: experiment, research, discovery, evidence, scientist, result, theory, data.",
+      "Ciência do dia a dia: Why does bread rise? Yeast produces gas. Ice floats because it is less dense than water.",
+      "Falar de factos: Research shows that... Scientists have found that... There is evidence that..."
+     ],
+     "q": "Que facto científico te surpreendeu, ou que descoberta achas que mudou o dia a dia?",
+     "c": "Escreve três factos de ciência do dia a dia com because e uma frase com Research shows that..."
+    },
+    "pt_BR": {
+     "t": "Science in daily life",
+     "g": "Fale da ciência ao seu redor: pesquisa, descobertas e evidências.",
+     "p": [
+      "Palavras-chave: experiment, research, discovery, evidence, scientist, result, theory, data.",
+      "Ciência do dia a dia: Why does bread rise? Yeast produces gas. Ice floats because it is less dense than water.",
+      "Falar de fatos: Research shows that... Scientists have found that... There is evidence that..."
+     ],
+     "q": "Que fato científico te surpreendeu, ou que descoberta você acha que mudou o dia a dia?",
+     "c": "Escreva três fatos de ciência do dia a dia com because e uma frase com Research shows that..."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "experiment",
+      "ex": "We did a simple experiment with salt and ice."
+     },
+     {
+      "w": "research",
+      "ex": "Research shows that music can help us focus."
+     },
+     {
+      "w": "discovery",
+      "ex": "The discovery of penicillin saved many lives."
+     },
+     {
+      "w": "evidence",
+      "ex": "There is strong evidence that exercise improves mood."
+     },
+     {
+      "w": "scientist",
+      "ex": "Marie Curie was a brilliant scientist."
+     },
+     {
+      "w": "result",
+      "ex": "The results of the test were surprising."
+     }
+    ],
+    "gram": "Talking about science: present simple for general truths (Water boils at 100°C), and Research shows / Scientists have found + that-clause."
+   }
+  },
+  {
+   "d": 229,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Technology: pros and cons",
+     "g": "Discuss the benefits and drawbacks of technology in a balanced way.",
+     "p": [
+      "Structure: On the one hand, ... On the other hand, ... Overall, I think...",
+      "Pros: It saves time. It keeps us connected. It makes learning easier. One big advantage is...",
+      "Cons: It can be distracting. We spend too much time on screens. One drawback is... The downside is..."
+     ],
+     "q": "Pick one technology, like smartphones or online shopping. What are its biggest pros and cons for you?",
+     "c": "Write a short balanced paragraph about one technology with On the one hand, On the other hand and Overall."
+    },
+    "de": {
+     "t": "Technology: pros and cons",
+     "g": "Du sprichst ausgewogen über Vor- und Nachteile von Technik.",
+     "p": [
+      "Aufbau: On the one hand, ... On the other hand, ... Overall, I think...",
+      "Vorteile: It saves time. It keeps us connected. It makes learning easier. One big advantage is...",
+      "Nachteile: It can be distracting. We spend too much time on screens. One drawback is... The downside is..."
+     ],
+     "q": "Wähle eine Technik, etwa Smartphones oder Online-Shopping. Was sind für dich die größten Vor- und Nachteile?",
+     "c": "Schreib einen kurzen, ausgewogenen Absatz über eine Technik mit On the one hand, On the other hand und Overall."
+    },
+    "es": {
+     "t": "Technology: pros and cons",
+     "g": "Habla de las ventajas e inconvenientes de la tecnología de forma equilibrada.",
+     "p": [
+      "Estructura: On the one hand, ... On the other hand, ... Overall, I think...",
+      "Ventajas: It saves time. It keeps us connected. It makes learning easier. One big advantage is...",
+      "Inconvenientes: It can be distracting. We spend too much time on screens. One drawback is... The downside is..."
+     ],
+     "q": "Elige una tecnología, como el móvil o las compras online. ¿Cuáles son para ti sus mayores ventajas e inconvenientes?",
+     "c": "Escribe un párrafo corto y equilibrado sobre una tecnología con On the one hand, On the other hand y Overall."
+    },
+    "fr": {
+     "t": "Technology: pros and cons",
+     "g": "Discute des avantages et des inconvénients de la technologie de façon équilibrée.",
+     "p": [
+      "Structure : On the one hand, ... On the other hand, ... Overall, I think...",
+      "Avantages : It saves time. It keeps us connected. It makes learning easier. One big advantage is...",
+      "Inconvénients : It can be distracting. We spend too much time on screens. One drawback is... The downside is..."
+     ],
+     "q": "Choisis une technologie, comme le smartphone ou les achats en ligne. Quels sont pour toi ses plus grands pour et contre ?",
+     "c": "Écris un court paragraphe équilibré sur une technologie avec On the one hand, On the other hand et Overall."
+    },
+    "it": {
+     "t": "Technology: pros and cons",
+     "g": "Discuti in modo equilibrato i vantaggi e gli svantaggi della tecnologia.",
+     "p": [
+      "Struttura: On the one hand, ... On the other hand, ... Overall, I think...",
+      "Vantaggi: It saves time. It keeps us connected. It makes learning easier. One big advantage is...",
+      "Svantaggi: It can be distracting. We spend too much time on screens. One drawback is... The downside is..."
+     ],
+     "q": "Scegli una tecnologia, come lo smartphone o gli acquisti online. Quali sono per te i pro e i contro principali?",
+     "c": "Scrivi un breve paragrafo equilibrato su una tecnologia con On the one hand, On the other hand e Overall."
+    },
+    "pt": {
+     "t": "Technology: pros and cons",
+     "g": "Discute as vantagens e desvantagens da tecnologia de forma equilibrada.",
+     "p": [
+      "Estrutura: On the one hand, ... On the other hand, ... Overall, I think...",
+      "Vantagens: It saves time. It keeps us connected. It makes learning easier. One big advantage is...",
+      "Desvantagens: It can be distracting. We spend too much time on screens. One drawback is... The downside is..."
+     ],
+     "q": "Escolhe uma tecnologia, como o telemóvel ou as compras online. Quais são para ti os maiores prós e contras?",
+     "c": "Escreve um parágrafo curto e equilibrado sobre uma tecnologia com On the one hand, On the other hand e Overall."
+    },
+    "pt_BR": {
+     "t": "Technology: pros and cons",
+     "g": "Discuta as vantagens e desvantagens da tecnologia de forma equilibrada.",
+     "p": [
+      "Estrutura: On the one hand, ... On the other hand, ... Overall, I think...",
+      "Vantagens: It saves time. It keeps us connected. It makes learning easier. One big advantage is...",
+      "Desvantagens: It can be distracting. We spend too much time on screens. One drawback is... The downside is..."
+     ],
+     "q": "Escolha uma tecnologia, como o celular ou as compras online. Quais são para você os maiores prós e contras?",
+     "c": "Escreva um parágrafo curto e equilibrado sobre uma tecnologia com On the one hand, On the other hand e Overall."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "on the one hand",
+      "ex": "On the one hand, phones help us stay in touch."
+     },
+     {
+      "w": "on the other hand",
+      "ex": "On the other hand, they can be very distracting."
+     },
+     {
+      "w": "advantage",
+      "ex": "One big advantage of online banking is speed."
+     },
+     {
+      "w": "drawback",
+      "ex": "The main drawback is the screen time."
+     },
+     {
+      "w": "saves time",
+      "ex": "Online shopping saves time."
+     },
+     {
+      "w": "overall",
+      "ex": "Overall, I think technology makes life easier."
+     }
+    ],
+    "gram": "Balanced opinions: On the one hand... On the other hand...; One advantage/drawback is (that)...; finish with Overall, I think..."
+   }
+  },
+  {
+   "d": 230,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Social media habits",
+     "g": "Talk about how you use social media, with the key verbs.",
+     "p": [
+      "Actions: scroll, post, follow, like, share, comment, tag, block, mute, go viral.",
+      "Habits: I check my feed every morning. I mostly use it to keep in touch with friends. I rarely post.",
+      "Healthy use: I've turned off notifications. I try to limit my screen time. I only follow accounts that inspire me."
+     ],
+     "q": "Which social media apps do you use most, and what do you mostly use them for?",
+     "c": "Write five sentences about your social media habits: what, how often, why, and one change you've made or would like to make."
+    },
+    "de": {
+     "t": "Social media habits",
+     "g": "Du sprichst mit den wichtigsten Verben darüber, wie du soziale Medien nutzt.",
+     "p": [
+      "Aktionen: scroll, post, follow, like, share, comment, tag, block, mute, go viral.",
+      "Gewohnheiten: I check my feed every morning. I mostly use it to keep in touch with friends. I rarely post.",
+      "Gesunde Nutzung: I've turned off notifications. I try to limit my screen time. I only follow accounts that inspire me."
+     ],
+     "q": "Welche sozialen Netzwerke nutzt du am meisten, und wofür vor allem?",
+     "c": "Schreib fünf Sätze über deine Social-Media-Gewohnheiten: was, wie oft, warum und eine Änderung, die du gemacht hast oder möchtest."
+    },
+    "es": {
+     "t": "Social media habits",
+     "g": "Habla de cómo usas las redes sociales con los verbos clave.",
+     "p": [
+      "Acciones: scroll, post, follow, like, share, comment, tag, block, mute, go viral.",
+      "Hábitos: I check my feed every morning. I mostly use it to keep in touch with friends. I rarely post.",
+      "Uso sano: I've turned off notifications. I try to limit my screen time. I only follow accounts that inspire me."
+     ],
+     "q": "¿Qué redes sociales usas más, y para qué las usas sobre todo?",
+     "c": "Escribe cinco frases sobre tus hábitos en redes: qué, con qué frecuencia, por qué y un cambio que hiciste o te gustaría hacer."
+    },
+    "fr": {
+     "t": "Social media habits",
+     "g": "Parle de ton usage des réseaux sociaux avec les verbes essentiels.",
+     "p": [
+      "Actions : scroll, post, follow, like, share, comment, tag, block, mute, go viral.",
+      "Habitudes : I check my feed every morning. I mostly use it to keep in touch with friends. I rarely post.",
+      "Usage sain : I've turned off notifications. I try to limit my screen time. I only follow accounts that inspire me."
+     ],
+     "q": "Quels réseaux sociaux utilises-tu le plus, et surtout pour quoi faire ?",
+     "c": "Écris cinq phrases sur tes habitudes : quoi, à quelle fréquence, pourquoi, et un changement fait ou souhaité."
+    },
+    "it": {
+     "t": "Social media habits",
+     "g": "Parla di come usi i social con i verbi principali.",
+     "p": [
+      "Azioni: scroll, post, follow, like, share, comment, tag, block, mute, go viral.",
+      "Abitudini: I check my feed every morning. I mostly use it to keep in touch with friends. I rarely post.",
+      "Uso sano: I've turned off notifications. I try to limit my screen time. I only follow accounts that inspire me."
+     ],
+     "q": "Quali social usi di più, e soprattutto per cosa?",
+     "c": "Scrivi cinque frasi sulle tue abitudini social: cosa, quanto spesso, perché e un cambiamento fatto o che vorresti fare."
+    },
+    "pt": {
+     "t": "Social media habits",
+     "g": "Fala de como usas as redes sociais com os verbos essenciais.",
+     "p": [
+      "Ações: scroll, post, follow, like, share, comment, tag, block, mute, go viral.",
+      "Hábitos: I check my feed every morning. I mostly use it to keep in touch with friends. I rarely post.",
+      "Uso saudável: I've turned off notifications. I try to limit my screen time. I only follow accounts that inspire me."
+     ],
+     "q": "Que redes sociais usas mais, e para que as usas sobretudo?",
+     "c": "Escreve cinco frases sobre os teus hábitos nas redes: o quê, com que frequência, porquê e uma mudança feita ou desejada."
+    },
+    "pt_BR": {
+     "t": "Social media habits",
+     "g": "Fale de como você usa as redes sociais com os verbos essenciais.",
+     "p": [
+      "Ações: scroll, post, follow, like, share, comment, tag, block, mute, go viral.",
+      "Hábitos: I check my feed every morning. I mostly use it to keep in touch with friends. I rarely post.",
+      "Uso saudável: I've turned off notifications. I try to limit my screen time. I only follow accounts that inspire me."
+     ],
+     "q": "Quais redes sociais você usa mais, e para que usa principalmente?",
+     "c": "Escreva cinco frases sobre seus hábitos nas redes: o quê, com que frequência, por quê e uma mudança feita ou desejada."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "scroll",
+      "ex": "I sometimes scroll for too long before bed."
+     },
+     {
+      "w": "post",
+      "ex": "She posts photos of her travels."
+     },
+     {
+      "w": "follow",
+      "ex": "I follow a few English teachers online."
+     },
+     {
+      "w": "share",
+      "ex": "Can you share that video with me?"
+     },
+     {
+      "w": "go viral",
+      "ex": "His cooking video went viral overnight."
+     },
+     {
+      "w": "turn off notifications",
+      "ex": "I turned off notifications to focus better."
+     }
+    ],
+    "gram": "Social media habits: present simple + frequency adverbs (I rarely post); present perfect for changes (I've turned off notifications)."
+   }
+  }
+ ]
+}

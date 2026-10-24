@@ -1,0 +1,835 @@
+{
+ "topic": "world_cultures",
+ "lessons": [
+  {
+   "d": 61,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "A tour of East Asia",
+     "g": "Meet China, Japan, Korea and Mongolia and see what they share and what makes each unique.",
+     "p": [
+      "Chinese characters were historically used across the region and still appear in Japanese writing as kanji.",
+      "Lunar New Year is a major holiday in China, Korea and Mongolia, while Japan celebrates New Year on 1 January.",
+      "Mongolia has a long nomadic herding tradition, and many families still live in round felt tents called gers."
+     ],
+     "q": "Which East Asian country would you most like to visit first, and why?",
+     "c": "Learn how to say hello in Chinese, Japanese, Korean or Mongolian today."
+    },
+    "de": {
+     "t": "Rundreise durch Ostasien",
+     "g": "Lerne China, Japan, Korea und die Mongolei kennen: was sie teilen und was jedes Land einzigartig macht.",
+     "p": [
+      "Chinesische Schriftzeichen wurden in der ganzen Region genutzt und finden sich im Japanischen bis heute als Kanji.",
+      "Das Mondneujahr ist in China, Korea und der Mongolei ein großes Fest, Japan feiert Neujahr dagegen am 1. Januar.",
+      "Die Mongolei hat eine lange Tradition nomadischer Viehzucht, und viele Familien leben noch in runden Filzzelten, den Jurten."
+     ],
+     "q": "Welches Land Ostasiens würdest du am liebsten zuerst besuchen, und warum?",
+     "c": "Lerne heute, wie man auf Chinesisch, Japanisch, Koreanisch oder Mongolisch Hallo sagt."
+    },
+    "es": {
+     "t": "Un recorrido por Asia Oriental",
+     "g": "Conoce China, Japón, Corea y Mongolia: lo que comparten y lo que hace única a cada una.",
+     "p": [
+      "Los caracteres chinos se usaron históricamente en toda la región y aún aparecen en la escritura japonesa como kanji.",
+      "El Año Nuevo lunar es una gran fiesta en China, Corea y Mongolia, mientras que Japón celebra el Año Nuevo el 1 de enero.",
+      "Mongolia tiene una larga tradición de pastoreo nómada y muchas familias aún viven en tiendas redondas de fieltro llamadas ger."
+     ],
+     "q": "¿Qué país de Asia Oriental te gustaría visitar primero y por qué?",
+     "c": "Aprende hoy a decir hola en chino, japonés, coreano o mongol."
+    },
+    "fr": {
+     "t": "Tour d'Asie de l'Est",
+     "g": "Découvre la Chine, le Japon, la Corée et la Mongolie : ce qu'ils partagent et ce qui rend chacun unique.",
+     "p": [
+      "Les caractères chinois ont longtemps servi dans toute la région et figurent encore dans l'écriture japonaise sous le nom de kanji.",
+      "Le Nouvel An lunaire est une grande fête en Chine, en Corée et en Mongolie, alors que le Japon fête le Nouvel An le 1er janvier.",
+      "La Mongolie a une longue tradition d'élevage nomade, et beaucoup de familles vivent encore dans des yourtes en feutre, les gers."
+     ],
+     "q": "Quel pays d'Asie de l'Est aimerais-tu visiter en premier, et pourquoi ?",
+     "c": "Apprends aujourd'hui à dire bonjour en chinois, japonais, coréen ou mongol."
+    },
+    "it": {
+     "t": "Un giro nell'Asia orientale",
+     "g": "Scopri Cina, Giappone, Corea e Mongolia: cosa condividono e cosa rende unico ciascun paese.",
+     "p": [
+      "I caratteri cinesi sono stati usati a lungo in tutta la regione e compaiono ancora nella scrittura giapponese come kanji.",
+      "Il Capodanno lunare è una grande festa in Cina, Corea e Mongolia, mentre il Giappone festeggia il Capodanno il 1° gennaio.",
+      "La Mongolia ha una lunga tradizione di pastorizia nomade e molte famiglie vivono ancora in tende rotonde di feltro, le gher."
+     ],
+     "q": "Quale paese dell'Asia orientale ti piacerebbe visitare per primo, e perché?",
+     "c": "Impara oggi a dire ciao in cinese, giapponese, coreano o mongolo."
+    },
+    "pt": {
+     "t": "Uma volta pela Ásia Oriental",
+     "g": "Conhece a China, o Japão, a Coreia e a Mongólia: o que partilham e o que torna cada um único.",
+     "p": [
+      "Os caracteres chineses foram usados em toda a região e ainda aparecem na escrita japonesa como kanji.",
+      "O Ano Novo lunar é uma grande festa na China, na Coreia e na Mongólia, enquanto o Japão celebra o Ano Novo a 1 de janeiro.",
+      "A Mongólia tem uma longa tradição de pastorícia nómada e muitas famílias ainda vivem em tendas redondas de feltro, os ger."
+     ],
+     "q": "Que país da Ásia Oriental gostavas de visitar primeiro, e porquê?",
+     "c": "Aprende hoje a dizer olá em chinês, japonês, coreano ou mongol."
+    },
+    "pt_BR": {
+     "t": "Um passeio pelo Leste Asiático",
+     "g": "Conheça China, Japão, Coreia e Mongólia: o que eles compartilham e o que torna cada um único.",
+     "p": [
+      "Os caracteres chineses foram usados em toda a região e ainda aparecem na escrita japonesa como kanji.",
+      "O Ano-Novo lunar é uma grande festa na China, na Coreia e na Mongólia, já o Japão comemora o Ano-Novo em 1º de janeiro.",
+      "A Mongólia tem uma longa tradição de pastoreio nômade, e muitas famílias ainda vivem em tendas redondas de feltro, as ger."
+     ],
+     "q": "Qual país do Leste Asiático você gostaria de visitar primeiro, e por quê?",
+     "c": "Aprenda hoje a dizer olá em chinês, japonês, coreano ou mongol."
+    }
+   }
+  },
+  {
+   "d": 62,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Everyday life in Japan",
+     "g": "Discover the small daily habits that shape life in Japan.",
+     "p": [
+      "Japanese trains are famous for running on time, and passengers usually keep their voices low on board.",
+      "Convenience stores, called konbini, sell fresh rice balls, hot meals and even help you pay bills, often around the clock.",
+      "Food follows the seasons: cherry blossom sweets in spring, chilled noodles in summer and chestnuts in autumn."
+     ],
+     "q": "Which Japanese daily habit would you like to bring into your own life?",
+     "c": "Try one quiet courtesy today, like keeping your phone silent on public transport."
+    },
+    "de": {
+     "t": "Alltag in Japan",
+     "g": "Entdecke die kleinen Gewohnheiten, die das Leben in Japan prägen.",
+     "p": [
+      "Japanische Züge sind für ihre Pünktlichkeit berühmt, und im Zug spricht man meist leise.",
+      "Die Minimärkte, Konbini genannt, verkaufen frische Reisbällchen und warme Gerichte, oft rund um die Uhr, und nehmen sogar Rechnungen an.",
+      "Das Essen folgt den Jahreszeiten: Kirschblüten-Süßes im Frühling, kalte Nudeln im Sommer und Esskastanien im Herbst."
+     ],
+     "q": "Welche japanische Alltagsgewohnheit würdest du gern in dein eigenes Leben übernehmen?",
+     "c": "Probiere heute eine stille Höflichkeit aus, etwa das Handy in Bus und Bahn lautlos zu stellen."
+    },
+    "es": {
+     "t": "La vida diaria en Japón",
+     "g": "Descubre los pequeños hábitos diarios que dan forma a la vida en Japón.",
+     "p": [
+      "Los trenes japoneses son famosos por su puntualidad, y a bordo la gente suele hablar en voz baja.",
+      "Las tiendas de conveniencia, llamadas konbini, venden bolas de arroz, comidas calientes e incluso cobran facturas, a menudo las 24 horas.",
+      "La comida sigue las estaciones: dulces de flor de cerezo en primavera, fideos fríos en verano y castañas en otoño."
+     ],
+     "q": "¿Qué hábito diario japonés te gustaría incorporar a tu vida?",
+     "c": "Prueba hoy una cortesía silenciosa, como llevar el móvil en silencio en el transporte público."
+    },
+    "fr": {
+     "t": "La vie quotidienne au Japon",
+     "g": "Découvre les petites habitudes qui rythment la vie au Japon.",
+     "p": [
+      "Les trains japonais sont réputés pour leur ponctualité, et à bord on parle généralement à voix basse.",
+      "Les supérettes, appelées konbini, vendent boulettes de riz et plats chauds, souvent jour et nuit, et permettent même de payer des factures.",
+      "La cuisine suit les saisons : douceurs aux fleurs de cerisier au printemps, nouilles froides en été et châtaignes en automne."
+     ],
+     "q": "Quelle habitude japonaise aimerais-tu adopter dans ta propre vie ?",
+     "c": "Essaie aujourd'hui une courtoisie discrète, comme mettre ton téléphone en silencieux dans les transports."
+    },
+    "it": {
+     "t": "La vita quotidiana in Giappone",
+     "g": "Scopri le piccole abitudini quotidiane che danno forma alla vita in Giappone.",
+     "p": [
+      "I treni giapponesi sono famosi per la puntualità, e a bordo si parla di solito a bassa voce.",
+      "I minimarket, chiamati konbini, vendono polpette di riso e piatti caldi, spesso giorno e notte, e permettono persino di pagare le bollette.",
+      "Il cibo segue le stagioni: dolci ai fiori di ciliegio in primavera, noodles freddi d'estate e castagne in autunno."
+     ],
+     "q": "Quale abitudine quotidiana giapponese vorresti portare nella tua vita?",
+     "c": "Prova oggi una cortesia silenziosa, come tenere il telefono muto sui mezzi pubblici."
+    },
+    "pt": {
+     "t": "O dia a dia no Japão",
+     "g": "Descobre os pequenos hábitos diários que dão forma à vida no Japão.",
+     "p": [
+      "Os comboios japoneses são famosos pela pontualidade, e a bordo as pessoas costumam falar baixinho.",
+      "As lojas de conveniência, chamadas konbini, vendem bolinhas de arroz e refeições quentes, muitas vezes 24 horas, e até recebem contas.",
+      "A comida segue as estações: doces de flor de cerejeira na primavera, massas frias no verão e castanhas no outono."
+     ],
+     "q": "Que hábito diário japonês gostavas de trazer para a tua vida?",
+     "c": "Experimenta hoje uma cortesia silenciosa, como pôr o telemóvel em silêncio nos transportes públicos."
+    },
+    "pt_BR": {
+     "t": "O dia a dia no Japão",
+     "g": "Descubra os pequenos hábitos diários que dão forma à vida no Japão.",
+     "p": [
+      "Os trens japoneses são famosos pela pontualidade, e a bordo as pessoas costumam falar baixinho.",
+      "As lojas de conveniência, chamadas konbini, vendem bolinhos de arroz e refeições quentes, muitas vezes 24 horas, e até recebem contas.",
+      "A comida segue as estações: doces de flor de cerejeira na primavera, macarrão gelado no verão e castanhas no outono."
+     ],
+     "q": "Que hábito diário japonês você gostaria de trazer para a sua vida?",
+     "c": "Experimente hoje uma cortesia silenciosa, como deixar o celular no silencioso no transporte público."
+    }
+   }
+  },
+  {
+   "d": 63,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Everyday life in South Korea",
+     "g": "Explore daily life in South Korea, from shared side dishes to respect for elders.",
+     "p": [
+      "Korean meals come with many small shared side dishes called banchan, such as kimchi, seasoned vegetables and pancakes.",
+      "Respect for elders shows in daily gestures, like giving and receiving things with two hands and using polite speech.",
+      "Fast internet is part of everyday life, and K-pop, K-dramas and Korean food are now loved around the world."
+     ],
+     "q": "What have you already seen, heard or tasted from Korean culture?",
+     "c": "Try passing something to someone with two hands today as a small sign of respect."
+    },
+    "de": {
+     "t": "Alltag in Südkorea",
+     "g": "Erkunde den Alltag in Südkorea, von geteilten Beilagen bis zum Respekt vor Älteren.",
+     "p": [
+      "Zu koreanischen Mahlzeiten gehören viele kleine geteilte Beilagen, Banchan genannt, etwa Kimchi, gewürztes Gemüse und Pfannkuchen.",
+      "Respekt vor Älteren zeigt sich im Alltag, etwa wenn man Dinge mit beiden Händen gibt und annimmt und höflich spricht.",
+      "Schnelles Internet gehört zum Alltag, und K-Pop, K-Dramen und koreanisches Essen sind heute weltweit beliebt."
+     ],
+     "q": "Was hast du von der koreanischen Kultur schon gesehen, gehört oder probiert?",
+     "c": "Reiche heute jemandem etwas mit beiden Händen als kleines Zeichen des Respekts."
+    },
+    "es": {
+     "t": "La vida diaria en Corea del Sur",
+     "g": "Explora la vida diaria en Corea del Sur, desde los platos compartidos hasta el respeto a los mayores.",
+     "p": [
+      "Las comidas coreanas traen muchos platitos compartidos llamados banchan, como kimchi, verduras aliñadas y tortitas.",
+      "El respeto a los mayores se ve en gestos diarios, como dar y recibir cosas con las dos manos y hablar con cortesía.",
+      "El internet rápido forma parte del día a día, y el K-pop, los K-dramas y la comida coreana se aman en todo el mundo."
+     ],
+     "q": "¿Qué has visto, escuchado o probado ya de la cultura coreana?",
+     "c": "Prueba hoy a pasarle algo a alguien con las dos manos como pequeña señal de respeto."
+    },
+    "fr": {
+     "t": "La vie quotidienne en Corée du Sud",
+     "g": "Explore la vie quotidienne en Corée du Sud, des plats partagés au respect des aînés.",
+     "p": [
+      "Les repas coréens s'accompagnent de nombreux petits plats partagés, les banchan : kimchi, légumes assaisonnés, galettes.",
+      "Le respect des aînés se voit au quotidien : on donne et reçoit les objets à deux mains et on emploie un langage poli.",
+      "L'internet rapide fait partie du quotidien, et la K-pop, les K-dramas et la cuisine coréenne sont aimés dans le monde entier."
+     ],
+     "q": "Qu'as-tu déjà vu, entendu ou goûté de la culture coréenne ?",
+     "c": "Essaie aujourd'hui de tendre un objet à quelqu'un à deux mains, en petit signe de respect."
+    },
+    "it": {
+     "t": "La vita quotidiana in Corea del Sud",
+     "g": "Esplora la vita quotidiana in Corea del Sud, dai contorni condivisi al rispetto per gli anziani.",
+     "p": [
+      "I pasti coreani arrivano con tanti piattini condivisi chiamati banchan, come kimchi, verdure condite e frittelle.",
+      "Il rispetto per gli anziani si vede nei gesti quotidiani, come dare e ricevere oggetti con due mani e parlare con cortesia.",
+      "Internet veloce fa parte della vita di tutti i giorni, e K-pop, K-drama e cucina coreana sono amati in tutto il mondo."
+     ],
+     "q": "Che cosa hai già visto, ascoltato o assaggiato della cultura coreana?",
+     "c": "Prova oggi a porgere qualcosa a qualcuno con due mani, come piccolo segno di rispetto."
+    },
+    "pt": {
+     "t": "O dia a dia na Coreia do Sul",
+     "g": "Explora o dia a dia na Coreia do Sul, dos acompanhamentos partilhados ao respeito pelos mais velhos.",
+     "p": [
+      "As refeições coreanas trazem muitos pratinhos partilhados chamados banchan, como kimchi, legumes temperados e panquecas.",
+      "O respeito pelos mais velhos vê-se em gestos diários, como dar e receber coisas com as duas mãos e falar com cortesia.",
+      "A internet rápida faz parte do dia a dia, e o K-pop, os K-dramas e a comida coreana são adorados em todo o mundo."
+     ],
+     "q": "O que já viste, ouviste ou provaste da cultura coreana?",
+     "c": "Experimenta hoje passar algo a alguém com as duas mãos, como pequeno sinal de respeito."
+    },
+    "pt_BR": {
+     "t": "O dia a dia na Coreia do Sul",
+     "g": "Explore o dia a dia na Coreia do Sul, dos acompanhamentos compartilhados ao respeito pelos mais velhos.",
+     "p": [
+      "As refeições coreanas vêm com muitos pratinhos compartilhados chamados banchan, como kimchi, legumes temperados e panquecas.",
+      "O respeito pelos mais velhos aparece em gestos diários, como dar e receber coisas com as duas mãos e falar com cortesia.",
+      "A internet rápida faz parte do dia a dia, e o K-pop, os K-dramas e a comida coreana são adorados no mundo todo."
+     ],
+     "q": "O que você já viu, ouviu ou provou da cultura coreana?",
+     "c": "Experimente hoje entregar algo a alguém com as duas mãos, como um pequeno sinal de respeito."
+    }
+   }
+  },
+  {
+   "d": 64,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Everyday life in China",
+     "g": "Get to know daily life in China, from regional food to lively parks and tea houses.",
+     "p": [
+      "China's cuisines vary by region: spicy Sichuan dishes, delicate Cantonese dim sum and hearty noodles in the north.",
+      "Family meals are often shared from many dishes in the middle of the table, sometimes on a turning round tray.",
+      "In the mornings and evenings, parks fill with people doing tai chi, square dancing, singing or playing cards."
+     ],
+     "q": "Which Chinese regional dish would you most like to try?",
+     "c": "Find out the name of one Chinese tea today, such as jasmine, oolong or pu-erh."
+    },
+    "de": {
+     "t": "Alltag in China",
+     "g": "Lerne den Alltag in China kennen, von regionaler Küche bis zu lebhaften Parks und Teehäusern.",
+     "p": [
+      "Chinas Küchen sind je nach Region verschieden: scharfe Gerichte aus Sichuan, feines kantonesisches Dim Sum und kräftige Nudeln im Norden.",
+      "Familienessen werden oft von vielen Gerichten in der Tischmitte geteilt, manchmal auf einer drehbaren runden Platte.",
+      "Morgens und abends füllen sich die Parks mit Menschen, die Tai-Chi machen, tanzen, singen oder Karten spielen."
+     ],
+     "q": "Welches regionale chinesische Gericht würdest du am liebsten probieren?",
+     "c": "Finde heute den Namen eines chinesischen Tees heraus, etwa Jasmin, Oolong oder Pu-Erh."
+    },
+    "es": {
+     "t": "La vida diaria en China",
+     "g": "Conoce la vida diaria en China, de la cocina regional a los parques animados y las casas de té.",
+     "p": [
+      "Las cocinas chinas cambian según la región: platos picantes de Sichuan, delicado dim sum cantonés y fideos contundentes en el norte.",
+      "Las comidas en familia se comparten de muchos platos en el centro de la mesa, a veces sobre una bandeja giratoria.",
+      "Por la mañana y por la tarde los parques se llenan de gente que hace taichí, baila, canta o juega a las cartas."
+     ],
+     "q": "¿Qué plato regional chino te gustaría más probar?",
+     "c": "Averigua hoy el nombre de un té chino, como el de jazmín, el oolong o el pu-erh."
+    },
+    "fr": {
+     "t": "La vie quotidienne en Chine",
+     "g": "Découvre la vie quotidienne en Chine, de la cuisine régionale aux parcs animés et maisons de thé.",
+     "p": [
+      "Les cuisines chinoises varient selon les régions : plats épicés du Sichuan, fins dim sum cantonais et nouilles copieuses au nord.",
+      "Les repas en famille se partagent entre plusieurs plats au centre de la table, parfois sur un plateau tournant.",
+      "Matin et soir, les parcs se remplissent de gens qui font du tai-chi, dansent, chantent ou jouent aux cartes."
+     ],
+     "q": "Quel plat régional chinois aimerais-tu le plus goûter ?",
+     "c": "Cherche aujourd'hui le nom d'un thé chinois, comme le thé au jasmin, l'oolong ou le pu-erh."
+    },
+    "it": {
+     "t": "La vita quotidiana in Cina",
+     "g": "Conosci la vita quotidiana in Cina, dalla cucina regionale ai parchi animati e alle case da tè.",
+     "p": [
+      "Le cucine cinesi cambiano da regione a regione: piatti piccanti del Sichuan, delicati dim sum cantonesi e noodles sostanziosi al nord.",
+      "I pasti in famiglia si condividono da tanti piatti al centro del tavolo, a volte su un vassoio girevole.",
+      "Al mattino e alla sera i parchi si riempiono di persone che fanno tai chi, ballano, cantano o giocano a carte."
+     ],
+     "q": "Quale piatto regionale cinese ti piacerebbe di più assaggiare?",
+     "c": "Scopri oggi il nome di un tè cinese, come il gelsomino, l'oolong o il pu-erh."
+    },
+    "pt": {
+     "t": "O dia a dia na China",
+     "g": "Conhece o dia a dia na China, da cozinha regional aos parques animados e às casas de chá.",
+     "p": [
+      "As cozinhas chinesas variam por região: pratos picantes de Sichuan, delicado dim sum cantonês e massas fartas no norte.",
+      "As refeições em família partilham-se a partir de vários pratos no centro da mesa, às vezes num tabuleiro giratório.",
+      "De manhã e ao fim do dia, os parques enchem-se de gente a fazer tai chi, dançar, cantar ou jogar às cartas."
+     ],
+     "q": "Que prato regional chinês gostavas mais de provar?",
+     "c": "Descobre hoje o nome de um chá chinês, como o de jasmim, o oolong ou o pu-erh."
+    },
+    "pt_BR": {
+     "t": "O dia a dia na China",
+     "g": "Conheça o dia a dia na China, da culinária regional aos parques animados e às casas de chá.",
+     "p": [
+      "As cozinhas chinesas variam por região: pratos apimentados de Sichuan, delicado dim sum cantonês e macarrão farto no norte.",
+      "As refeições em família são compartilhadas a partir de vários pratos no centro da mesa, às vezes numa bandeja giratória.",
+      "De manhã e no fim da tarde, os parques ficam cheios de gente fazendo tai chi, dançando, cantando ou jogando cartas."
+     ],
+     "q": "Qual prato regional chinês você mais gostaria de provar?",
+     "c": "Descubra hoje o nome de um chá chinês, como o de jasmim, o oolong ou o pu-erh."
+    }
+   }
+  },
+  {
+   "d": 65,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "A tour of Southeast Asia",
+     "g": "Meet Thailand, Vietnam, Indonesia and the Philippines and their vibrant cultures.",
+     "p": [
+      "Rice is at the heart of most meals across the region, often with fresh herbs, chilli, lime and fish sauce.",
+      "In Thailand people greet with the wai, pressing palms together and bowing slightly.",
+      "Street food stalls and night markets are where many people meet, eat and catch up after work."
+     ],
+     "q": "Which Southeast Asian dish or greeting would you like to try?",
+     "c": "Try making a simple rice dish today with a fresh herb like mint, basil or coriander."
+    },
+    "de": {
+     "t": "Rundreise durch Südostasien",
+     "g": "Lerne Thailand, Vietnam, Indonesien und die Philippinen und ihre lebendigen Kulturen kennen.",
+     "p": [
+      "Reis steht im Mittelpunkt fast jeder Mahlzeit der Region, oft mit frischen Kräutern, Chili, Limette und Fischsauce.",
+      "In Thailand grüßt man mit dem Wai: Handflächen zusammen und eine leichte Verbeugung.",
+      "Garküchen und Nachtmärkte sind Orte, an denen viele sich nach der Arbeit treffen, essen und plaudern."
+     ],
+     "q": "Welches südostasiatische Gericht oder welchen Gruß würdest du gern ausprobieren?",
+     "c": "Koche heute ein einfaches Reisgericht mit einem frischen Kraut wie Minze, Basilikum oder Koriander."
+    },
+    "es": {
+     "t": "Un recorrido por el Sudeste Asiático",
+     "g": "Conoce Tailandia, Vietnam, Indonesia y Filipinas y sus culturas llenas de vida.",
+     "p": [
+      "El arroz es el centro de casi todas las comidas de la región, a menudo con hierbas frescas, chile, lima y salsa de pescado.",
+      "En Tailandia se saluda con el wai, juntando las palmas y haciendo una ligera reverencia.",
+      "Los puestos callejeros y los mercados nocturnos son donde mucha gente se reúne, come y charla tras el trabajo."
+     ],
+     "q": "¿Qué plato o saludo del Sudeste Asiático te gustaría probar?",
+     "c": "Prepara hoy un plato sencillo de arroz con una hierba fresca como menta, albahaca o cilantro."
+    },
+    "fr": {
+     "t": "Tour d'Asie du Sud-Est",
+     "g": "Découvre la Thaïlande, le Vietnam, l'Indonésie et les Philippines et leurs cultures pleines de vie.",
+     "p": [
+      "Le riz est au cœur de presque tous les repas de la région, souvent avec herbes fraîches, piment, citron vert et sauce de poisson.",
+      "En Thaïlande, on salue avec le wai : paumes jointes et légère inclinaison.",
+      "Les stands de rue et les marchés de nuit sont les lieux où l'on se retrouve pour manger et bavarder après le travail."
+     ],
+     "q": "Quel plat ou quelle salutation d'Asie du Sud-Est aimerais-tu essayer ?",
+     "c": "Prépare aujourd'hui un plat de riz simple avec une herbe fraîche comme la menthe, le basilic ou la coriandre."
+    },
+    "it": {
+     "t": "Un giro nel Sud-est asiatico",
+     "g": "Conosci Thailandia, Vietnam, Indonesia e Filippine e le loro culture vivaci.",
+     "p": [
+      "Il riso è al centro di quasi tutti i pasti della regione, spesso con erbe fresche, peperoncino, lime e salsa di pesce.",
+      "In Thailandia ci si saluta con il wai, unendo i palmi e facendo un leggero inchino.",
+      "Bancarelle di cibo di strada e mercati notturni sono i luoghi dove molti si incontrano, mangiano e chiacchierano dopo il lavoro."
+     ],
+     "q": "Quale piatto o saluto del Sud-est asiatico ti piacerebbe provare?",
+     "c": "Prepara oggi un semplice piatto di riso con un'erba fresca come menta, basilico o coriandolo."
+    },
+    "pt": {
+     "t": "Uma volta pelo Sudeste Asiático",
+     "g": "Conhece a Tailândia, o Vietname, a Indonésia e as Filipinas e as suas culturas cheias de vida.",
+     "p": [
+      "O arroz está no centro de quase todas as refeições da região, muitas vezes com ervas frescas, piri-piri, lima e molho de peixe.",
+      "Na Tailândia cumprimenta-se com o wai, juntando as palmas das mãos e fazendo uma ligeira vénia.",
+      "As bancas de comida de rua e os mercados noturnos são onde muita gente se encontra, come e conversa depois do trabalho."
+     ],
+     "q": "Que prato ou cumprimento do Sudeste Asiático gostavas de experimentar?",
+     "c": "Prepara hoje um prato simples de arroz com uma erva fresca como hortelã, manjericão ou coentros."
+    },
+    "pt_BR": {
+     "t": "Um passeio pelo Sudeste Asiático",
+     "g": "Conheça Tailândia, Vietnã, Indonésia e Filipinas e suas culturas cheias de vida.",
+     "p": [
+      "O arroz está no centro de quase todas as refeições da região, muitas vezes com ervas frescas, pimenta, limão e molho de peixe.",
+      "Na Tailândia as pessoas se cumprimentam com o wai, juntando as palmas das mãos e fazendo uma leve reverência.",
+      "As barracas de comida de rua e os mercados noturnos são onde muita gente se encontra, come e conversa depois do trabalho."
+     ],
+     "q": "Que prato ou cumprimento do Sudeste Asiático você gostaria de experimentar?",
+     "c": "Prepare hoje um prato simples de arroz com uma erva fresca como hortelã, manjericão ou coentro."
+    }
+   }
+  },
+  {
+   "d": 66,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Everyday life in Vietnam",
+     "g": "Step into daily life in Vietnam, from busy streets to a famous coffee.",
+     "p": [
+      "Millions of scooters fill the streets, carrying commuters, families and even goods to market.",
+      "Many people start the day with pho, a fragrant noodle soup with herbs, eaten at small stalls on low plastic stools.",
+      "Vietnamese coffee drips slowly through a small metal filter and is often served with sweet condensed milk over ice."
+     ],
+     "q": "Would you choose pho or a sweet iced coffee to start your day?",
+     "c": "Try sitting down for a slow breakfast today, the way many people in Vietnam enjoy their morning pho."
+    },
+    "de": {
+     "t": "Alltag in Vietnam",
+     "g": "Tauche in den Alltag in Vietnam ein, von belebten Straßen bis zu einem berühmten Kaffee.",
+     "p": [
+      "Millionen Motorroller füllen die Straßen und transportieren Pendler, Familien und sogar Waren zum Markt.",
+      "Viele beginnen den Tag mit Pho, einer duftenden Nudelsuppe mit Kräutern, gegessen an kleinen Ständen auf niedrigen Plastikhockern.",
+      "Vietnamesischer Kaffee tropft langsam durch einen kleinen Metallfilter und wird oft mit gesüßter Kondensmilch auf Eis serviert."
+     ],
+     "q": "Würdest du den Tag lieber mit Pho oder mit einem süßen Eiskaffee beginnen?",
+     "c": "Gönn dir heute ein ruhiges Frühstück im Sitzen, so wie viele Menschen in Vietnam ihre morgendliche Pho genießen."
+    },
+    "es": {
+     "t": "La vida diaria en Vietnam",
+     "g": "Entra en la vida diaria de Vietnam, de sus calles llenas de motos a un café muy famoso.",
+     "p": [
+      "Millones de motos llenan las calles y llevan a trabajadores, familias e incluso mercancías al mercado.",
+      "Mucha gente empieza el día con pho, una sopa aromática de fideos con hierbas, en puestos con taburetes bajos de plástico.",
+      "El café vietnamita gotea despacio por un pequeño filtro metálico y suele servirse con leche condensada sobre hielo."
+     ],
+     "q": "¿Elegirías un pho o un café helado y dulce para empezar el día?",
+     "c": "Prueba hoy a desayunar sentado y sin prisa, como muchos en Vietnam disfrutan su pho matinal."
+    },
+    "fr": {
+     "t": "La vie quotidienne au Vietnam",
+     "g": "Plonge dans la vie quotidienne au Vietnam, des rues animées à un café célèbre.",
+     "p": [
+      "Des millions de scooters remplissent les rues et transportent travailleurs, familles et même marchandises vers le marché.",
+      "Beaucoup commencent la journée par un pho, soupe de nouilles parfumée aux herbes, dégustée sur de petits tabourets en plastique.",
+      "Le café vietnamien coule lentement à travers un petit filtre en métal et se boit souvent avec du lait concentré sucré sur glace."
+     ],
+     "q": "Pour commencer ta journée, choisirais-tu un pho ou un café glacé bien sucré ?",
+     "c": "Prends aujourd'hui un petit-déjeuner assis et sans hâte, comme beaucoup de Vietnamiens savourent leur pho du matin."
+    },
+    "it": {
+     "t": "La vita quotidiana in Vietnam",
+     "g": "Entra nella vita quotidiana del Vietnam, dalle strade affollate a un caffè famoso.",
+     "p": [
+      "Milioni di motorini riempiono le strade e trasportano pendolari, famiglie e perfino merci al mercato.",
+      "Molti iniziano la giornata con il pho, una zuppa di noodles profumata alle erbe, mangiata su sgabelli di plastica bassi.",
+      "Il caffè vietnamita gocciola lentamente da un piccolo filtro di metallo e spesso si beve con latte condensato zuccherato e ghiaccio."
+     ],
+     "q": "Per iniziare la giornata sceglieresti un pho o un caffè freddo e dolce?",
+     "c": "Prova oggi a fare colazione seduto e con calma, come molti in Vietnam si godono il pho del mattino."
+    },
+    "pt": {
+     "t": "O dia a dia no Vietname",
+     "g": "Entra no dia a dia do Vietname, das ruas cheias de motas a um café famoso.",
+     "p": [
+      "Milhões de motas enchem as ruas e levam trabalhadores, famílias e até mercadorias para o mercado.",
+      "Muitos começam o dia com pho, uma sopa aromática de massa com ervas, comida em banquinhos baixos de plástico.",
+      "O café vietnamita pinga devagar por um pequeno filtro de metal e é muitas vezes servido com leite condensado e gelo."
+     ],
+     "q": "Para começar o dia, escolhias um pho ou um café gelado e doce?",
+     "c": "Experimenta hoje tomar o pequeno-almoço sentado e sem pressa, como muitos no Vietname saboreiam o pho da manhã."
+    },
+    "pt_BR": {
+     "t": "O dia a dia no Vietnã",
+     "g": "Entre no dia a dia do Vietnã, das ruas cheias de motos a um café famoso.",
+     "p": [
+      "Milhões de motos enchem as ruas e levam trabalhadores, famílias e até mercadorias para a feira.",
+      "Muitos começam o dia com pho, uma sopa aromática de macarrão com ervas, comida em banquinhos baixos de plástico.",
+      "O café vietnamita pinga devagar por um pequeno filtro de metal e muitas vezes é servido com leite condensado e gelo."
+     ],
+     "q": "Para começar o dia, você escolheria um pho ou um café gelado e docinho?",
+     "c": "Experimente hoje tomar o café da manhã sentado e sem pressa, como muitos no Vietnã curtem o pho matinal."
+    }
+   }
+  },
+  {
+   "d": 67,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Everyday life in the Philippines",
+     "g": "Discover the warmth of daily life in the Philippines.",
+     "p": [
+      "Every town has its own fiesta, with parades, music, dancing and open houses where neighbours share food.",
+      "Karaoke is a favourite pastime, and family gatherings often end with everyone taking turns at the microphone.",
+      "Filipino culture blends Malay, Spanish, Chinese and American influences, and both Filipino and English are official languages."
+     ],
+     "q": "What kind of family or neighbourhood gathering do you enjoy most?",
+     "c": "Sing one song you love today, even if only for yourself."
+    },
+    "de": {
+     "t": "Alltag auf den Philippinen",
+     "g": "Entdecke die Herzlichkeit des Alltags auf den Philippinen.",
+     "p": [
+      "Jede Stadt hat ihre eigene Fiesta mit Umzügen, Musik, Tanz und offenen Häusern, in denen Nachbarn Essen teilen.",
+      "Karaoke ist ein beliebter Zeitvertreib, und Familienfeste enden oft damit, dass alle abwechselnd zum Mikrofon greifen.",
+      "Die philippinische Kultur verbindet malaiische, spanische, chinesische und amerikanische Einflüsse, Amtssprachen sind Filipino und Englisch."
+     ],
+     "q": "Welche Art von Familien- oder Nachbarschaftstreffen magst du am liebsten?",
+     "c": "Sing heute ein Lied, das du liebst, und sei es nur für dich."
+    },
+    "es": {
+     "t": "La vida diaria en Filipinas",
+     "g": "Descubre la calidez de la vida diaria en Filipinas.",
+     "p": [
+      "Cada pueblo tiene su propia fiesta, con desfiles, música, baile y casas abiertas donde los vecinos comparten comida.",
+      "El karaoke es un pasatiempo favorito, y las reuniones familiares suelen terminar con todos turnándose el micrófono.",
+      "La cultura filipina mezcla influencias malayas, españolas, chinas y estadounidenses, y el filipino y el inglés son lenguas oficiales."
+     ],
+     "q": "¿Qué tipo de reunión familiar o de barrio disfrutas más?",
+     "c": "Canta hoy una canción que te encante, aunque sea solo para ti."
+    },
+    "fr": {
+     "t": "La vie quotidienne aux Philippines",
+     "g": "Découvre la chaleur de la vie quotidienne aux Philippines.",
+     "p": [
+      "Chaque ville a sa propre fiesta, avec défilés, musique, danse et maisons ouvertes où les voisins partagent un repas.",
+      "Le karaoké est un passe-temps adoré, et les réunions de famille finissent souvent avec chacun son tour au micro.",
+      "La culture philippine mêle influences malaises, espagnoles, chinoises et américaines, et le filipino et l'anglais sont langues officielles."
+     ],
+     "q": "Quel genre de réunion de famille ou de quartier préfères-tu ?",
+     "c": "Chante aujourd'hui une chanson que tu adores, même juste pour toi."
+    },
+    "it": {
+     "t": "La vita quotidiana nelle Filippine",
+     "g": "Scopri il calore della vita quotidiana nelle Filippine.",
+     "p": [
+      "Ogni città ha la sua fiesta, con sfilate, musica, danze e case aperte dove i vicini condividono il cibo.",
+      "Il karaoke è un passatempo amatissimo, e le riunioni di famiglia finiscono spesso con tutti che si alternano al microfono.",
+      "La cultura filippina unisce influenze malesi, spagnole, cinesi e americane, e filippino e inglese sono lingue ufficiali."
+     ],
+     "q": "Che tipo di ritrovo in famiglia o nel quartiere ti piace di più?",
+     "c": "Canta oggi una canzone che ami, anche solo per te."
+    },
+    "pt": {
+     "t": "O dia a dia nas Filipinas",
+     "g": "Descobre o calor humano do dia a dia nas Filipinas.",
+     "p": [
+      "Cada cidade tem a sua fiesta, com desfiles, música, dança e casas abertas onde os vizinhos partilham comida.",
+      "O karaoke é um passatempo adorado, e as reuniões de família acabam muitas vezes com todos a revezar-se ao microfone.",
+      "A cultura filipina mistura influências malaias, espanholas, chinesas e americanas, e o filipino e o inglês são línguas oficiais."
+     ],
+     "q": "Que tipo de encontro de família ou de bairro aprecias mais?",
+     "c": "Canta hoje uma canção de que gostes muito, nem que seja só para ti."
+    },
+    "pt_BR": {
+     "t": "O dia a dia nas Filipinas",
+     "g": "Descubra o calor humano do dia a dia nas Filipinas.",
+     "p": [
+      "Cada cidade tem sua fiesta, com desfiles, música, dança e casas abertas onde os vizinhos compartilham comida.",
+      "O karaokê é um passatempo adorado, e as reuniões de família costumam terminar com todo mundo revezando o microfone.",
+      "A cultura filipina mistura influências malaias, espanholas, chinesas e americanas, e o filipino e o inglês são línguas oficiais."
+     ],
+     "q": "Que tipo de encontro de família ou de bairro você mais curte?",
+     "c": "Cante hoje uma música que você adora, nem que seja só para você."
+    }
+   }
+  },
+  {
+   "d": 68,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Indonesia's many islands",
+     "g": "See how more than 17,000 islands create one of the world's most diverse countries.",
+     "p": [
+      "Indonesia has hundreds of local languages, and Bahasa Indonesia is the shared language that connects them.",
+      "The national motto, Bhinneka Tunggal Ika, means Unity in Diversity.",
+      "Each island has its own arts, like batik cloth from Java, gamelan music and the dances of Bali."
+     ],
+     "q": "How many languages are spoken where you live, and how do people understand each other?",
+     "c": "Look at a map of Indonesia today and pick one island you would like to learn more about."
+    },
+    "de": {
+     "t": "Indonesiens viele Inseln",
+     "g": "Sieh, wie mehr als 17.000 Inseln eines der vielfältigsten Länder der Welt bilden.",
+     "p": [
+      "In Indonesien gibt es Hunderte lokaler Sprachen, und Bahasa Indonesia ist die gemeinsame Sprache, die sie verbindet.",
+      "Der Wahlspruch des Landes, Bhinneka Tunggal Ika, bedeutet Einheit in der Vielfalt.",
+      "Jede Insel hat ihre eigene Kunst, etwa Batikstoffe aus Java, Gamelan-Musik und die Tänze Balis."
+     ],
+     "q": "Wie viele Sprachen werden dort gesprochen, wo du lebst, und wie verständigen sich die Menschen?",
+     "c": "Schau dir heute eine Karte Indonesiens an und wähle eine Insel, über die du mehr erfahren möchtest."
+    },
+    "es": {
+     "t": "Las muchas islas de Indonesia",
+     "g": "Mira cómo más de 17.000 islas forman uno de los países más diversos del mundo.",
+     "p": [
+      "Indonesia tiene cientos de lenguas locales, y el bahasa indonesio es la lengua común que las conecta.",
+      "El lema nacional, Bhinneka Tunggal Ika, significa Unidad en la Diversidad.",
+      "Cada isla tiene sus propias artes, como la tela batik de Java, la música gamelán y las danzas de Bali."
+     ],
+     "q": "¿Cuántas lenguas se hablan donde vives y cómo se entiende la gente?",
+     "c": "Mira hoy un mapa de Indonesia y elige una isla sobre la que te gustaría saber más."
+    },
+    "fr": {
+     "t": "Les nombreuses îles d'Indonésie",
+     "g": "Vois comment plus de 17 000 îles forment l'un des pays les plus divers du monde.",
+     "p": [
+      "L'Indonésie compte des centaines de langues locales, et le bahasa indonesia est la langue commune qui les relie.",
+      "La devise nationale, Bhinneka Tunggal Ika, signifie l'Unité dans la diversité.",
+      "Chaque île a ses arts : le batik de Java, la musique gamelan ou les danses de Bali."
+     ],
+     "q": "Combien de langues parle-t-on là où tu vis, et comment les gens se comprennent-ils ?",
+     "c": "Regarde aujourd'hui une carte de l'Indonésie et choisis une île que tu aimerais mieux connaître."
+    },
+    "it": {
+     "t": "Le tante isole dell'Indonesia",
+     "g": "Scopri come più di 17.000 isole formano uno dei paesi più vari del mondo.",
+     "p": [
+      "L'Indonesia ha centinaia di lingue locali, e il bahasa indonesia è la lingua comune che le collega.",
+      "Il motto nazionale, Bhinneka Tunggal Ika, significa Unità nella diversità.",
+      "Ogni isola ha le sue arti, come i tessuti batik di Giava, la musica gamelan e le danze di Bali."
+     ],
+     "q": "Quante lingue si parlano dove vivi, e come fanno le persone a capirsi?",
+     "c": "Guarda oggi una mappa dell'Indonesia e scegli un'isola che vorresti conoscere meglio."
+    },
+    "pt": {
+     "t": "As muitas ilhas da Indonésia",
+     "g": "Vê como mais de 17 000 ilhas formam um dos países mais diversos do mundo.",
+     "p": [
+      "A Indonésia tem centenas de línguas locais, e o bahasa indonésio é a língua comum que as liga.",
+      "O lema nacional, Bhinneka Tunggal Ika, significa Unidade na Diversidade.",
+      "Cada ilha tem as suas artes, como o tecido batik de Java, a música gamelão e as danças de Bali."
+     ],
+     "q": "Quantas línguas se falam onde vives, e como é que as pessoas se entendem?",
+     "c": "Olha hoje para um mapa da Indonésia e escolhe uma ilha sobre a qual gostavas de saber mais."
+    },
+    "pt_BR": {
+     "t": "As muitas ilhas da Indonésia",
+     "g": "Veja como mais de 17 mil ilhas formam um dos países mais diversos do mundo.",
+     "p": [
+      "A Indonésia tem centenas de línguas locais, e o bahasa indonésio é a língua comum que conecta todas elas.",
+      "O lema nacional, Bhinneka Tunggal Ika, significa Unidade na Diversidade.",
+      "Cada ilha tem suas próprias artes, como o tecido batik de Java, a música gamelão e as danças de Bali."
+     ],
+     "q": "Quantas línguas são faladas onde você mora, e como as pessoas se entendem?",
+     "c": "Olhe hoje um mapa da Indonésia e escolha uma ilha sobre a qual você gostaria de saber mais."
+    }
+   }
+  },
+  {
+   "d": 69,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "A tour of South Asia",
+     "g": "Meet India, Pakistan, Bangladesh, Sri Lanka and Nepal and the great diversity of the region.",
+     "p": [
+      "The region is home to dozens of major languages, from Hindi, Urdu and Bengali to Sinhala, Tamil and Nepali.",
+      "Cricket is a shared passion, and big matches can bring whole streets together around one screen.",
+      "Landscapes range from the Himalayas in Nepal to the tea hills of Sri Lanka and the river deltas of Bangladesh."
+     ],
+     "q": "Which South Asian country would you like to know more about, and why?",
+     "c": "Learn one greeting today, such as namaste, used in India and Nepal."
+    },
+    "de": {
+     "t": "Rundreise durch Südasien",
+     "g": "Lerne Indien, Pakistan, Bangladesch, Sri Lanka und Nepal und die große Vielfalt der Region kennen.",
+     "p": [
+      "In der Region spricht man Dutzende großer Sprachen, von Hindi, Urdu und Bengali bis Singhalesisch, Tamil und Nepali.",
+      "Cricket ist eine gemeinsame Leidenschaft, und große Spiele versammeln ganze Straßen vor einem Bildschirm.",
+      "Die Landschaften reichen vom Himalaya in Nepal über die Teehügel Sri Lankas bis zu den Flussdeltas Bangladeschs."
+     ],
+     "q": "Über welches Land Südasiens möchtest du mehr erfahren, und warum?",
+     "c": "Lerne heute einen Gruß, etwa Namaste, den man in Indien und Nepal verwendet."
+    },
+    "es": {
+     "t": "Un recorrido por el sur de Asia",
+     "g": "Conoce India, Pakistán, Bangladés, Sri Lanka y Nepal y la gran diversidad de la región.",
+     "p": [
+      "La región tiene decenas de grandes lenguas, del hindi, el urdu y el bengalí al cingalés, el tamil y el nepalí.",
+      "El críquet es una pasión compartida, y los grandes partidos reúnen a calles enteras frente a una pantalla.",
+      "Los paisajes van del Himalaya en Nepal a las colinas de té de Sri Lanka y los deltas de los ríos de Bangladés."
+     ],
+     "q": "¿Sobre qué país del sur de Asia te gustaría saber más y por qué?",
+     "c": "Aprende hoy un saludo, como namasté, que se usa en India y Nepal."
+    },
+    "fr": {
+     "t": "Tour d'Asie du Sud",
+     "g": "Découvre l'Inde, le Pakistan, le Bangladesh, le Sri Lanka et le Népal et la grande diversité de la région.",
+     "p": [
+      "La région compte des dizaines de grandes langues, de l'hindi, l'ourdou et le bengali au cingalais, au tamoul et au népalais.",
+      "Le cricket est une passion commune, et les grands matchs rassemblent des rues entières devant un seul écran.",
+      "Les paysages vont de l'Himalaya au Népal aux collines de thé du Sri Lanka et aux deltas du Bangladesh."
+     ],
+     "q": "Sur quel pays d'Asie du Sud aimerais-tu en savoir plus, et pourquoi ?",
+     "c": "Apprends aujourd'hui une salutation, comme namasté, utilisée en Inde et au Népal."
+    },
+    "it": {
+     "t": "Un giro nell'Asia meridionale",
+     "g": "Conosci India, Pakistan, Bangladesh, Sri Lanka e Nepal e la grande varietà della regione.",
+     "p": [
+      "La regione ospita decine di grandi lingue, da hindi, urdu e bengali a singalese, tamil e nepalese.",
+      "Il cricket è una passione comune, e le grandi partite riuniscono strade intere davanti a un solo schermo.",
+      "I paesaggi vanno dall'Himalaya in Nepal alle colline del tè dello Sri Lanka e ai delta fluviali del Bangladesh."
+     ],
+     "q": "Su quale paese dell'Asia meridionale vorresti saperne di più, e perché?",
+     "c": "Impara oggi un saluto, come namaste, usato in India e in Nepal."
+    },
+    "pt": {
+     "t": "Uma volta pelo Sul da Ásia",
+     "g": "Conhece a Índia, o Paquistão, o Bangladesh, o Sri Lanka e o Nepal e a grande diversidade da região.",
+     "p": [
+      "A região tem dezenas de grandes línguas, do hindi, urdu e bengali ao cingalês, tâmil e nepalês.",
+      "O críquete é uma paixão partilhada, e os grandes jogos juntam ruas inteiras à frente de um só ecrã.",
+      "As paisagens vão dos Himalaias no Nepal às colinas de chá do Sri Lanka e aos deltas dos rios do Bangladesh."
+     ],
+     "q": "Sobre que país do Sul da Ásia gostavas de saber mais, e porquê?",
+     "c": "Aprende hoje um cumprimento, como namaste, usado na Índia e no Nepal."
+    },
+    "pt_BR": {
+     "t": "Um passeio pelo Sul da Ásia",
+     "g": "Conheça Índia, Paquistão, Bangladesh, Sri Lanka e Nepal e a grande diversidade da região.",
+     "p": [
+      "A região tem dezenas de grandes línguas, do hindi, urdu e bengali ao cingalês, tâmil e nepalês.",
+      "O críquete é uma paixão compartilhada, e os grandes jogos reúnem ruas inteiras em frente a uma só tela.",
+      "As paisagens vão do Himalaia no Nepal às colinas de chá do Sri Lanka e aos deltas dos rios de Bangladesh."
+     ],
+     "q": "Sobre qual país do Sul da Ásia você gostaria de saber mais, e por quê?",
+     "c": "Aprenda hoje um cumprimento, como namastê, usado na Índia e no Nepal."
+    }
+   }
+  },
+  {
+   "d": 70,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Everyday life in India",
+     "g": "Explore daily life in India, from roadside chai to cricket and festivals.",
+     "p": [
+      "Small chai stalls serve sweet, spiced milky tea all day and are popular places to pause and chat.",
+      "India has 22 officially recognised languages, and many people speak two or three in daily life.",
+      "Cricket is followed with huge passion, and festivals like Diwali and Holi fill streets with light and colour."
+     ],
+     "q": "What would you most like to experience on a day in India?",
+     "c": "Make a cup of spiced tea today with ginger or cardamom, like a homemade chai."
+    },
+    "de": {
+     "t": "Alltag in Indien",
+     "g": "Erkunde den Alltag in Indien, vom Chai am Straßenrand bis zu Cricket und Festen.",
+     "p": [
+      "Kleine Chai-Stände servieren den ganzen Tag süßen, gewürzten Milchtee und sind beliebte Orte für eine Pause und ein Gespräch.",
+      "Indien hat 22 offiziell anerkannte Sprachen, und viele Menschen sprechen im Alltag zwei oder drei davon.",
+      "Cricket wird mit riesiger Leidenschaft verfolgt, und Feste wie Diwali und Holi füllen die Straßen mit Licht und Farbe."
+     ],
+     "q": "Was würdest du an einem Tag in Indien am liebsten erleben?",
+     "c": "Bereite dir heute einen Gewürztee mit Ingwer oder Kardamom zu, wie einen selbst gemachten Chai."
+    },
+    "es": {
+     "t": "La vida diaria en la India",
+     "g": "Explora la vida diaria en la India, del chai callejero al críquet y las fiestas.",
+     "p": [
+      "Los pequeños puestos de chai sirven todo el día té con leche dulce y especiado, y son lugares populares para parar y charlar.",
+      "La India tiene 22 lenguas reconocidas oficialmente, y mucha gente habla dos o tres en su vida diaria.",
+      "El críquet se sigue con enorme pasión, y fiestas como Diwali y Holi llenan las calles de luz y color."
+     ],
+     "q": "¿Qué te gustaría más vivir en un día en la India?",
+     "c": "Prepara hoy una taza de té especiado con jengibre o cardamomo, como un chai casero."
+    },
+    "fr": {
+     "t": "La vie quotidienne en Inde",
+     "g": "Explore la vie quotidienne en Inde, du chai de rue au cricket et aux fêtes.",
+     "p": [
+      "Les petits stands de chai servent toute la journée un thé au lait sucré et épicé, idéal pour faire une pause et bavarder.",
+      "L'Inde compte 22 langues officiellement reconnues, et beaucoup de gens en parlent deux ou trois au quotidien.",
+      "Le cricket est suivi avec une immense passion, et des fêtes comme Diwali et Holi remplissent les rues de lumière et de couleur."
+     ],
+     "q": "Que voudrais-tu le plus vivre lors d'une journée en Inde ?",
+     "c": "Prépare aujourd'hui un thé épicé au gingembre ou à la cardamome, comme un chai maison."
+    },
+    "it": {
+     "t": "La vita quotidiana in India",
+     "g": "Esplora la vita quotidiana in India, dal chai di strada al cricket e alle feste.",
+     "p": [
+      "Le piccole bancarelle di chai servono tutto il giorno tè al latte dolce e speziato, perfetto per una pausa e due chiacchiere.",
+      "L'India ha 22 lingue riconosciute ufficialmente, e molte persone ne parlano due o tre nella vita di tutti i giorni.",
+      "Il cricket è seguito con enorme passione, e feste come Diwali e Holi riempiono le strade di luce e colore."
+     ],
+     "q": "Che cosa ti piacerebbe di più vivere durante una giornata in India?",
+     "c": "Prepara oggi una tazza di tè speziato con zenzero o cardamomo, come un chai fatto in casa."
+    },
+    "pt": {
+     "t": "O dia a dia na Índia",
+     "g": "Explora o dia a dia na Índia, do chai de rua ao críquete e às festas.",
+     "p": [
+      "As pequenas bancas de chai servem todo o dia chá com leite doce e especiado, e são sítios populares para parar e conversar.",
+      "A Índia tem 22 línguas oficialmente reconhecidas, e muita gente fala duas ou três no dia a dia.",
+      "O críquete é seguido com enorme paixão, e festas como o Diwali e o Holi enchem as ruas de luz e cor."
+     ],
+     "q": "O que gostavas mais de viver num dia na Índia?",
+     "c": "Prepara hoje uma chávena de chá especiado com gengibre ou cardamomo, como um chai caseiro."
+    },
+    "pt_BR": {
+     "t": "O dia a dia na Índia",
+     "g": "Explore o dia a dia na Índia, do chai de rua ao críquete e às festas.",
+     "p": [
+      "As pequenas barracas de chai servem o dia todo chá com leite doce e temperado, e são lugares populares para parar e conversar.",
+      "A Índia tem 22 línguas oficialmente reconhecidas, e muita gente fala duas ou três no dia a dia.",
+      "O críquete é acompanhado com enorme paixão, e festas como o Diwali e o Holi enchem as ruas de luz e cor."
+     ],
+     "q": "O que você mais gostaria de viver num dia na Índia?",
+     "c": "Prepare hoje uma xícara de chá temperado com gengibre ou cardamomo, como um chai caseiro."
+    }
+   }
+  }
+ ]
+}

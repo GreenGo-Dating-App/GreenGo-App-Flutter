@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_english",
+ "lessons": [
+  {
+   "d": 251,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Art and museums",
+     "g": "Talk about art, museums and exhibitions with the right words.",
+     "p": [
+      "Places and works: museum, gallery, exhibition, painting, portrait, landscape, sculpture, masterpiece.",
+      "Use the passive for who made it: The Starry Night was painted by Van Gogh. The Thinker was made by Rodin.",
+      "Give opinions: It's really striking. The colours are so vivid. I'm not really into abstract art."
+     ],
+     "q": "Do you enjoy visiting museums or galleries? Which work of art has impressed you the most?",
+     "c": "Describe a painting or sculpture you like in four sentences: what it shows, who made it and why you like it."
+    },
+    "de": {
+     "t": "Art and museums",
+     "g": "Du sprichst mit den richtigen Wörtern über Kunst, Museen und Ausstellungen.",
+     "p": [
+      "Orte und Werke: museum, gallery, exhibition, painting, portrait, landscape, sculpture, masterpiece.",
+      "Wer es geschaffen hat, sagst du im Passiv: The Starry Night was painted by Van Gogh. The Thinker was made by Rodin.",
+      "Meinungen: It's really striking. The colours are so vivid. I'm not really into abstract art."
+     ],
+     "q": "Gehst du gern in Museen oder Galerien? Welches Kunstwerk hat dich am meisten beeindruckt?",
+     "c": "Beschreib ein Bild oder eine Skulptur, die du magst, in vier Sätzen: was man sieht, wer es schuf und warum du es magst."
+    },
+    "es": {
+     "t": "Art and museums",
+     "g": "Habla de arte, museos y exposiciones con las palabras adecuadas.",
+     "p": [
+      "Lugares y obras: museum, gallery, exhibition, painting, portrait, landscape, sculpture, masterpiece.",
+      "Usa la pasiva para el autor: The Starry Night was painted by Van Gogh. The Thinker was made by Rodin.",
+      "Da tu opinión: It's really striking. The colours are so vivid. I'm not really into abstract art."
+     ],
+     "q": "¿Te gusta visitar museos o galerías? ¿Qué obra de arte te ha impresionado más?",
+     "c": "Describe un cuadro o una escultura que te guste en cuatro frases: qué muestra, quién lo hizo y por qué te gusta."
+    },
+    "fr": {
+     "t": "Art and museums",
+     "g": "Parle d'art, de musées et d'expositions avec les bons mots.",
+     "p": [
+      "Lieux et œuvres : museum, gallery, exhibition, painting, portrait, landscape, sculpture, masterpiece.",
+      "Le passif pour l'auteur : The Starry Night was painted by Van Gogh. The Thinker was made by Rodin.",
+      "Donne ton avis : It's really striking. The colours are so vivid. I'm not really into abstract art."
+     ],
+     "q": "Aimes-tu visiter des musées ou des galeries ? Quelle œuvre d'art t'a le plus marqué ?",
+     "c": "Décris un tableau ou une sculpture que tu aimes en quatre phrases : ce qu'il montre, son auteur et pourquoi tu l'aimes."
+    },
+    "it": {
+     "t": "Art and museums",
+     "g": "Parla di arte, musei e mostre con le parole giuste.",
+     "p": [
+      "Luoghi e opere: museum, gallery, exhibition, painting, portrait, landscape, sculpture, masterpiece.",
+      "Usa il passivo per l'autore: The Starry Night was painted by Van Gogh. The Thinker was made by Rodin.",
+      "Esprimi opinioni: It's really striking. The colours are so vivid. I'm not really into abstract art."
+     ],
+     "q": "Ti piace visitare musei o gallerie? Quale opera d'arte ti ha colpito di più?",
+     "c": "Descrivi un quadro o una scultura che ami in quattro frasi: cosa mostra, chi l'ha fatto e perché ti piace."
+    },
+    "pt": {
+     "t": "Art and museums",
+     "g": "Fala de arte, museus e exposições com as palavras certas.",
+     "p": [
+      "Lugares e obras: museum, gallery, exhibition, painting, portrait, landscape, sculpture, masterpiece.",
+      "Usa a passiva para o autor: The Starry Night was painted by Van Gogh. The Thinker was made by Rodin.",
+      "Dá a tua opinião: It's really striking. The colours are so vivid. I'm not really into abstract art."
+     ],
+     "q": "Gostas de visitar museus ou galerias? Que obra de arte te impressionou mais?",
+     "c": "Descreve um quadro ou escultura de que gostes em quatro frases: o que mostra, quem o fez e porque gostas."
+    },
+    "pt_BR": {
+     "t": "Art and museums",
+     "g": "Fale de arte, museus e exposições com as palavras certas.",
+     "p": [
+      "Lugares e obras: museum, gallery, exhibition, painting, portrait, landscape, sculpture, masterpiece.",
+      "Use a passiva para o autor: The Starry Night was painted by Van Gogh. The Thinker was made by Rodin.",
+      "Dê sua opinião: It's really striking. The colours are so vivid. I'm not really into abstract art."
+     ],
+     "q": "Você gosta de visitar museus ou galerias? Qual obra de arte mais te impressionou?",
+     "c": "Descreva um quadro ou escultura de que você gosta em quatro frases: o que mostra, quem fez e por que você gosta."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "exhibition",
+      "ex": "There's a new photography exhibition at the city museum."
+     },
+     {
+      "w": "gallery",
+      "ex": "We spent the afternoon in a small art gallery."
+     },
+     {
+      "w": "sculpture",
+      "ex": "The garden is full of modern sculptures."
+     },
+     {
+      "w": "portrait",
+      "ex": "This portrait was painted in the sixteenth century."
+     },
+     {
+      "w": "masterpiece",
+      "ex": "Many people think the Mona Lisa is a masterpiece."
+     },
+     {
+      "w": "be on display",
+      "ex": "Her paintings are on display until the end of the month."
+     }
+    ],
+    "gram": "Passive for artworks: It was painted by Van Gogh. The statue was made in marble. Adjective order: a beautiful old Italian painting."
+   }
+  },
+  {
+   "d": 252,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Photography and visual words",
+     "g": "Describe photos clearly, saying where things are in the picture.",
+     "p": [
+      "Position phrases: in the foreground, in the background, in the middle, on the left, on the right, at the top, at the bottom.",
+      "There is/are + place: There's a lighthouse on the right. There are some boats in the foreground.",
+      "Present continuous for actions: In the middle, a woman is taking a selfie. Two dogs are running on the beach."
+     ],
+     "q": "Think of your favourite photo on your phone. What can you see in the foreground and in the background?",
+     "c": "Describe one of your photos in five sentences using at least four different position phrases."
+    },
+    "de": {
+     "t": "Photography and visual words",
+     "g": "Du beschreibst Fotos klar und sagst, wo sich was im Bild befindet.",
+     "p": [
+      "Ortsangaben: in the foreground, in the background, in the middle, on the left, on the right, at the top, at the bottom.",
+      "There is/are + Ort: There's a lighthouse on the right. There are some boats in the foreground.",
+      "Handlungen im present continuous: In the middle, a woman is taking a selfie. Two dogs are running on the beach."
+     ],
+     "q": "Denk an dein Lieblingsfoto auf dem Handy. Was siehst du im Vordergrund und im Hintergrund?",
+     "c": "Beschreib eines deiner Fotos in fünf Sätzen mit mindestens vier verschiedenen Ortsangaben."
+    },
+    "es": {
+     "t": "Photography and visual words",
+     "g": "Describe fotos con claridad diciendo dónde está cada cosa en la imagen.",
+     "p": [
+      "Posiciones: in the foreground, in the background, in the middle, on the left, on the right, at the top, at the bottom.",
+      "There is/are + lugar: There's a lighthouse on the right. There are some boats in the foreground.",
+      "Acciones en present continuous: In the middle, a woman is taking a selfie. Two dogs are running on the beach."
+     ],
+     "q": "Piensa en tu foto favorita del móvil. ¿Qué se ve en primer plano y qué al fondo?",
+     "c": "Describe una de tus fotos en cinco frases con al menos cuatro expresiones de posición distintas."
+    },
+    "fr": {
+     "t": "Photography and visual words",
+     "g": "Décris des photos clairement en disant où se trouvent les choses.",
+     "p": [
+      "Positions : in the foreground, in the background, in the middle, on the left, on the right, at the top, at the bottom.",
+      "There is/are + lieu : There's a lighthouse on the right. There are some boats in the foreground.",
+      "Les actions au present continuous : In the middle, a woman is taking a selfie. Two dogs are running on the beach."
+     ],
+     "q": "Pense à ta photo préférée sur ton téléphone. Que vois-tu au premier plan et à l'arrière-plan ?",
+     "c": "Décris une de tes photos en cinq phrases avec au moins quatre expressions de position différentes."
+    },
+    "it": {
+     "t": "Photography and visual words",
+     "g": "Descrivi le foto con chiarezza dicendo dove si trovano le cose.",
+     "p": [
+      "Posizioni: in the foreground, in the background, in the middle, on the left, on the right, at the top, at the bottom.",
+      "There is/are + luogo: There's a lighthouse on the right. There are some boats in the foreground.",
+      "Le azioni al present continuous: In the middle, a woman is taking a selfie. Two dogs are running on the beach."
+     ],
+     "q": "Pensa alla tua foto preferita sul telefono. Cosa vedi in primo piano e sullo sfondo?",
+     "c": "Descrivi una tua foto in cinque frasi con almeno quattro espressioni di posizione diverse."
+    },
+    "pt": {
+     "t": "Photography and visual words",
+     "g": "Descreve fotografias com clareza, dizendo onde está cada coisa.",
+     "p": [
+      "Posições: in the foreground, in the background, in the middle, on the left, on the right, at the top, at the bottom.",
+      "There is/are + lugar: There's a lighthouse on the right. There are some boats in the foreground.",
+      "Ações no present continuous: In the middle, a woman is taking a selfie. Two dogs are running on the beach."
+     ],
+     "q": "Pensa na tua fotografia preferida do telemóvel. O que vês em primeiro plano e ao fundo?",
+     "c": "Descreve uma das tuas fotografias em cinco frases com pelo menos quatro expressões de posição diferentes."
+    },
+    "pt_BR": {
+     "t": "Photography and visual words",
+     "g": "Descreva fotos com clareza, dizendo onde está cada coisa.",
+     "p": [
+      "Posições: in the foreground, in the background, in the middle, on the left, on the right, at the top, at the bottom.",
+      "There is/are + lugar: There's a lighthouse on the right. There are some boats in the foreground.",
+      "Ações no present continuous: In the middle, a woman is taking a selfie. Two dogs are running on the beach."
+     ],
+     "q": "Pense na sua foto favorita do celular. O que você vê em primeiro plano e ao fundo?",
+     "c": "Descreva uma das suas fotos em cinco frases com pelo menos quatro expressões de posição diferentes."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "in the foreground",
+      "ex": "In the foreground, there's a small red boat."
+     },
+     {
+      "w": "in the background",
+      "ex": "You can see mountains in the background."
+     },
+     {
+      "w": "on the left",
+      "ex": "On the left, two children are playing."
+     },
+     {
+      "w": "in the middle",
+      "ex": "In the middle of the photo there's a fountain."
+     },
+     {
+      "w": "at the top",
+      "ex": "At the top, the sky is full of clouds."
+     },
+     {
+      "w": "blurry",
+      "ex": "The people behind her are a bit blurry."
+     }
+    ],
+    "gram": "Describing photos: there is/are + place phrase, and present continuous for actions: In the background, a man is walking his dog."
+   }
+  },
+  {
+   "d": 253,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Describing a picture",
+     "g": "Speculate about a picture when you aren't sure what is happening.",
+     "p": [
+      "Possible: They might be on holiday. It could be a wedding. Almost sure: It must be winter. Impossible: It can't be summer.",
+      "Look like + noun vs look + adjective: It looks like a market. They look happy. It seems to be very early.",
+      "Give a reason: She must be tired because she's yawning. They might be tourists, as they're holding a map."
+     ],
+     "q": "Imagine a photo of people laughing at a table. Who might they be, and what could they be celebrating?",
+     "c": "Find any picture and write four guesses about it with might, must, can't and looks like, each with a reason."
+    },
+    "de": {
+     "t": "Describing a picture",
+     "g": "Du stellst Vermutungen über ein Bild an, wenn du nicht sicher bist, was passiert.",
+     "p": [
+      "Möglich: They might be on holiday. It could be a wedding. Fast sicher: It must be winter. Unmöglich: It can't be summer.",
+      "Look like + Nomen vs. look + Adjektiv: It looks like a market. They look happy. It seems to be very early.",
+      "Begründe: She must be tired because she's yawning. They might be tourists, as they're holding a map."
+     ],
+     "q": "Stell dir ein Foto von Leuten vor, die am Tisch lachen. Wer könnten sie sein, und was feiern sie vielleicht?",
+     "c": "Nimm ein beliebiges Bild und schreib vier Vermutungen mit might, must, can't und looks like, jeweils mit Grund."
+    },
+    "es": {
+     "t": "Describing a picture",
+     "g": "Haz suposiciones sobre una imagen cuando no sabes seguro qué pasa.",
+     "p": [
+      "Posible: They might be on holiday. It could be a wedding. Casi seguro: It must be winter. Imposible: It can't be summer.",
+      "Look like + sustantivo y look + adjetivo: It looks like a market. They look happy. It seems to be very early.",
+      "Da una razón: She must be tired because she's yawning. They might be tourists, as they're holding a map."
+     ],
+     "q": "Imagina una foto de gente riendo en una mesa. ¿Quiénes podrían ser y qué podrían estar celebrando?",
+     "c": "Busca una imagen y escribe cuatro hipótesis con might, must, can't y looks like, cada una con una razón."
+    },
+    "fr": {
+     "t": "Describing a picture",
+     "g": "Fais des hypothèses sur une image quand tu n'es pas sûr de ce qui se passe.",
+     "p": [
+      "Possible : They might be on holiday. It could be a wedding. Presque sûr : It must be winter. Impossible : It can't be summer.",
+      "Look like + nom ou look + adjectif : It looks like a market. They look happy. It seems to be very early.",
+      "Justifie : She must be tired because she's yawning. They might be tourists, as they're holding a map."
+     ],
+     "q": "Imagine une photo de gens qui rient autour d'une table. Qui pourraient-ils être et que fêtent-ils peut-être ?",
+     "c": "Prends une image et écris quatre hypothèses avec might, must, can't et looks like, chacune avec une raison."
+    },
+    "it": {
+     "t": "Describing a picture",
+     "g": "Fai ipotesi su un'immagine quando non sei sicuro di cosa succede.",
+     "p": [
+      "Possibile: They might be on holiday. It could be a wedding. Quasi certo: It must be winter. Impossibile: It can't be summer.",
+      "Look like + nome e look + aggettivo: It looks like a market. They look happy. It seems to be very early.",
+      "Motiva: She must be tired because she's yawning. They might be tourists, as they're holding a map."
+     ],
+     "q": "Immagina una foto di persone che ridono a tavola. Chi potrebbero essere e cosa potrebbero festeggiare?",
+     "c": "Prendi un'immagine e scrivi quattro ipotesi con might, must, can't e looks like, ognuna con un motivo."
+    },
+    "pt": {
+     "t": "Describing a picture",
+     "g": "Faz suposições sobre uma imagem quando não tens a certeza do que se passa.",
+     "p": [
+      "Possível: They might be on holiday. It could be a wedding. Quase certo: It must be winter. Impossível: It can't be summer.",
+      "Look like + nome e look + adjetivo: It looks like a market. They look happy. It seems to be very early.",
+      "Justifica: She must be tired because she's yawning. They might be tourists, as they're holding a map."
+     ],
+     "q": "Imagina uma fotografia de pessoas a rir à mesa. Quem poderão ser e o que poderão estar a celebrar?",
+     "c": "Escolhe uma imagem e escreve quatro hipóteses com might, must, can't e looks like, cada uma com uma razão."
+    },
+    "pt_BR": {
+     "t": "Describing a picture",
+     "g": "Faça suposições sobre uma imagem quando não tem certeza do que está acontecendo.",
+     "p": [
+      "Possível: They might be on holiday. It could be a wedding. Quase certo: It must be winter. Impossível: It can't be summer.",
+      "Look like + substantivo e look + adjetivo: It looks like a market. They look happy. It seems to be very early.",
+      "Justifique: She must be tired because she's yawning. They might be tourists, as they're holding a map."
+     ],
+     "q": "Imagine uma foto de pessoas rindo à mesa. Quem elas poderiam ser e o que poderiam estar comemorando?",
+     "c": "Escolha uma imagem e escreva quatro hipóteses com might, must, can't e looks like, cada uma com um motivo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "it looks like",
+      "ex": "It looks like a family celebration."
+     },
+     {
+      "w": "they might be",
+      "ex": "They might be friends on holiday."
+     },
+     {
+      "w": "it seems to be",
+      "ex": "It seems to be early in the morning."
+     },
+     {
+      "w": "probably",
+      "ex": "She's probably waiting for someone."
+     },
+     {
+      "w": "must be",
+      "ex": "It must be cold: they're wearing heavy coats."
+     },
+     {
+      "w": "can't be",
+      "ex": "It can't be summer: there's snow everywhere."
+     }
+    ],
+    "gram": "Speculating: might/could be (possible), must be (almost sure), can't be (impossible); look like + noun, look + adjective."
+   }
+  },
+  {
+   "d": 254,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Films: reviews and recommendations",
+     "g": "Talk about films, give short reviews and make recommendations.",
+     "p": [
+      "Describe the plot in the present simple: It's set in Tokyo. It's about a chef who loses his sense of taste.",
+      "Strong opinion words: gripping, moving, hilarious, predictable, overrated. The acting is superb. The ending is a letdown.",
+      "Recommend: It's well worth watching. I'd highly recommend it to anyone who likes sci-fi. Don't miss it!"
+     ],
+     "q": "What's the best film you've seen recently? What's it about, and would you recommend it?",
+     "c": "Recommend a film to me in four sentences: setting, plot without spoilers, one strong adjective and who would love it."
+    },
+    "de": {
+     "t": "Films: reviews and recommendations",
+     "g": "Du sprichst über Filme, gibst kurze Kritiken und Empfehlungen.",
+     "p": [
+      "Die Handlung im present simple: It's set in Tokyo. It's about a chef who loses his sense of taste.",
+      "Starke Meinungswörter: gripping, moving, hilarious, predictable, overrated. The acting is superb. The ending is a letdown.",
+      "Empfehlen: It's well worth watching. I'd highly recommend it to anyone who likes sci-fi. Don't miss it!"
+     ],
+     "q": "Was ist der beste Film, den du in letzter Zeit gesehen hast? Worum geht es, und würdest du ihn empfehlen?",
+     "c": "Empfiehl mir einen Film in vier Sätzen: Ort, Handlung ohne Spoiler, ein starkes Adjektiv und für wen er ideal ist."
+    },
+    "es": {
+     "t": "Films: reviews and recommendations",
+     "g": "Habla de películas, haz reseñas cortas y da recomendaciones.",
+     "p": [
+      "Cuenta el argumento en present simple: It's set in Tokyo. It's about a chef who loses his sense of taste.",
+      "Adjetivos de opinión: gripping, moving, hilarious, predictable, overrated. The acting is superb. The ending is a letdown.",
+      "Recomienda: It's well worth watching. I'd highly recommend it to anyone who likes sci-fi. Don't miss it!"
+     ],
+     "q": "¿Cuál es la mejor película que has visto últimamente? ¿De qué trata y la recomendarías?",
+     "c": "Recomiéndame una película en cuatro frases: lugar, trama sin spoilers, un adjetivo fuerte y a quién le encantaría."
+    },
+    "fr": {
+     "t": "Films: reviews and recommendations",
+     "g": "Parle de films, fais de courtes critiques et des recommandations.",
+     "p": [
+      "Raconte l'intrigue au present simple : It's set in Tokyo. It's about a chef who loses his sense of taste.",
+      "Mots d'opinion forts : gripping, moving, hilarious, predictable, overrated. The acting is superb. The ending is a letdown.",
+      "Recommande : It's well worth watching. I'd highly recommend it to anyone who likes sci-fi. Don't miss it!"
+     ],
+     "q": "Quel est le meilleur film que tu as vu récemment ? De quoi parle-t-il et le recommanderais-tu ?",
+     "c": "Recommande-moi un film en quatre phrases : le cadre, l'intrigue sans spoiler, un adjectif fort et à qui il plairait."
+    },
+    "it": {
+     "t": "Films: reviews and recommendations",
+     "g": "Parla di film, scrivi brevi recensioni e dai consigli.",
+     "p": [
+      "Racconta la trama al present simple: It's set in Tokyo. It's about a chef who loses his sense of taste.",
+      "Aggettivi forti: gripping, moving, hilarious, predictable, overrated. The acting is superb. The ending is a letdown.",
+      "Consiglia: It's well worth watching. I'd highly recommend it to anyone who likes sci-fi. Don't miss it!"
+     ],
+     "q": "Qual è il film più bello che hai visto di recente? Di cosa parla e lo consiglieresti?",
+     "c": "Consigliami un film in quattro frasi: ambientazione, trama senza spoiler, un aggettivo forte e a chi piacerebbe."
+    },
+    "pt": {
+     "t": "Films: reviews and recommendations",
+     "g": "Fala de filmes, faz críticas curtas e recomendações.",
+     "p": [
+      "Conta o enredo no present simple: It's set in Tokyo. It's about a chef who loses his sense of taste.",
+      "Palavras de opinião fortes: gripping, moving, hilarious, predictable, overrated. The acting is superb. The ending is a letdown.",
+      "Recomenda: It's well worth watching. I'd highly recommend it to anyone who likes sci-fi. Don't miss it!"
+     ],
+     "q": "Qual é o melhor filme que viste ultimamente? De que trata e recomendava-lo?",
+     "c": "Recomenda-me um filme em quatro frases: cenário, enredo sem spoilers, um adjetivo forte e a quem ia agradar."
+    },
+    "pt_BR": {
+     "t": "Films: reviews and recommendations",
+     "g": "Fale de filmes, faça resenhas curtas e dê recomendações.",
+     "p": [
+      "Conte a trama no present simple: It's set in Tokyo. It's about a chef who loses his sense of taste.",
+      "Palavras de opinião fortes: gripping, moving, hilarious, predictable, overrated. The acting is superb. The ending is a letdown.",
+      "Recomende: It's well worth watching. I'd highly recommend it to anyone who likes sci-fi. Don't miss it!"
+     ],
+     "q": "Qual é o melhor filme que você viu ultimamente? Sobre o que é e você recomendaria?",
+     "c": "Me recomende um filme em quatro frases: cenário, trama sem spoilers, um adjetivo forte e quem iria adorar."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "the plot",
+      "ex": "The plot is simple but very moving."
+     },
+     {
+      "w": "gripping",
+      "ex": "It's a gripping thriller: I couldn't stop watching."
+     },
+     {
+      "w": "the acting is superb",
+      "ex": "The acting is superb, especially the lead actress."
+     },
+     {
+      "w": "plot twist",
+      "ex": "I didn't see the plot twist coming at all."
+     },
+     {
+      "w": "highly recommend",
+      "ex": "I'd highly recommend it to anyone who likes comedies."
+     },
+     {
+      "w": "overrated",
+      "ex": "Honestly, I think that film is a bit overrated."
+     }
+    ],
+    "gram": "Film talk: present simple for the plot (It's about a girl who...), it's worth + -ing, I'd recommend it to anyone who likes..."
+   }
+  },
+  {
+   "d": 255,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Writing a review",
+     "g": "Write a short review of a film, book or restaurant with opinions and reasons.",
+     "p": [
+      "Structure: what it is, what you liked, what you didn't like, and a final verdict with a rating.",
+      "Balance with linkers from earlier days: The food was delicious. However, the service was slow. Although it's long, it's gripping.",
+      "End clearly: On the whole, it's well worth it. I'd give it four out of five. I'd recommend it to families."
+     ],
+     "q": "Which restaurant, book or film would you like to review? What was the highlight for you?",
+     "c": "Write a 60-word review of a place or book: one positive, one negative with however, and a verdict out of five."
+    },
+    "de": {
+     "t": "Writing a review",
+     "g": "Du schreibst eine kurze Kritik über einen Film, ein Buch oder ein Restaurant, mit Meinung und Gründen.",
+     "p": [
+      "Aufbau: Was es ist, was dir gefiel, was nicht, und ein Fazit mit Bewertung.",
+      "Ausgewogen mit Konnektoren: The food was delicious. However, the service was slow. Although it's long, it's gripping.",
+      "Klarer Schluss: On the whole, it's well worth it. I'd give it four out of five. I'd recommend it to families."
+     ],
+     "q": "Welches Restaurant, Buch oder welchen Film würdest du gern bewerten? Was war für dich das Highlight?",
+     "c": "Schreib eine Kritik mit 60 Wörtern: ein Plus, ein Minus mit however und ein Fazit mit Note von eins bis fünf."
+    },
+    "es": {
+     "t": "Writing a review",
+     "g": "Escribe una reseña corta de una película, un libro o un restaurante con opiniones y razones.",
+     "p": [
+      "Estructura: qué es, qué te gustó, qué no te gustó y un veredicto final con nota.",
+      "Equilibra con conectores: The food was delicious. However, the service was slow. Although it's long, it's gripping.",
+      "Cierra con claridad: On the whole, it's well worth it. I'd give it four out of five. I'd recommend it to families."
+     ],
+     "q": "¿Qué restaurante, libro o película te gustaría reseñar? ¿Qué fue lo mejor para ti?",
+     "c": "Escribe una reseña de 60 palabras: algo positivo, algo negativo con however y un veredicto sobre cinco."
+    },
+    "fr": {
+     "t": "Writing a review",
+     "g": "Écris une courte critique d'un film, d'un livre ou d'un restaurant avec des avis argumentés.",
+     "p": [
+      "Structure : ce que c'est, ce que tu as aimé, ce que tu n'as pas aimé, puis un verdict avec une note.",
+      "Équilibre avec des connecteurs : The food was delicious. However, the service was slow. Although it's long, it's gripping.",
+      "Conclus clairement : On the whole, it's well worth it. I'd give it four out of five. I'd recommend it to families."
+     ],
+     "q": "Quel restaurant, livre ou film aimerais-tu critiquer ? Quel a été le meilleur moment pour toi ?",
+     "c": "Écris une critique de 60 mots : un point positif, un négatif avec however et un verdict sur cinq."
+    },
+    "it": {
+     "t": "Writing a review",
+     "g": "Scrivi una breve recensione di un film, un libro o un ristorante con opinioni e motivi.",
+     "p": [
+      "Struttura: cos'è, cosa ti è piaciuto, cosa no e un giudizio finale con voto.",
+      "Equilibra con i connettivi: The food was delicious. However, the service was slow. Although it's long, it's gripping.",
+      "Chiudi con chiarezza: On the whole, it's well worth it. I'd give it four out of five. I'd recommend it to families."
+     ],
+     "q": "Quale ristorante, libro o film vorresti recensire? Qual è stato il momento migliore?",
+     "c": "Scrivi una recensione di 60 parole: un aspetto positivo, uno negativo con however e un voto su cinque."
+    },
+    "pt": {
+     "t": "Writing a review",
+     "g": "Escreve uma crítica curta de um filme, livro ou restaurante com opiniões e razões.",
+     "p": [
+      "Estrutura: o que é, o que gostaste, o que não gostaste e um veredicto final com nota.",
+      "Equilibra com conectores: The food was delicious. However, the service was slow. Although it's long, it's gripping.",
+      "Termina com clareza: On the whole, it's well worth it. I'd give it four out of five. I'd recommend it to families."
+     ],
+     "q": "Que restaurante, livro ou filme gostavas de criticar? Qual foi o ponto alto para ti?",
+     "c": "Escreve uma crítica de 60 palavras: um ponto positivo, um negativo com however e um veredicto de um a cinco."
+    },
+    "pt_BR": {
+     "t": "Writing a review",
+     "g": "Escreva uma resenha curta de um filme, livro ou restaurante com opiniões e motivos.",
+     "p": [
+      "Estrutura: o que é, do que você gostou, do que não gostou e um veredito final com nota.",
+      "Equilibre com conectores: The food was delicious. However, the service was slow. Although it's long, it's gripping.",
+      "Feche com clareza: On the whole, it's well worth it. I'd give it four out of five. I'd recommend it to families."
+     ],
+     "q": "Que restaurante, livro ou filme você gostaria de avaliar? Qual foi o ponto alto para você?",
+     "c": "Escreva uma resenha de 60 palavras: um ponto positivo, um negativo com however e um veredito de um a cinco."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "worth a visit",
+      "ex": "The new café is definitely worth a visit."
+     },
+     {
+      "w": "the highlight",
+      "ex": "The highlight of the meal was the chocolate dessert."
+     },
+     {
+      "w": "a bit disappointing",
+      "ex": "The service was a bit disappointing."
+     },
+     {
+      "w": "well written",
+      "ex": "The book is well written and easy to follow."
+     },
+     {
+      "w": "on the whole",
+      "ex": "On the whole, I really enjoyed it."
+     },
+     {
+      "w": "out of five",
+      "ex": "I'd give it four out of five."
+     }
+    ],
+    "gram": "Review structure: intro (what/where), positives, negatives with however or although, verdict: On the whole, I'd give it four stars."
+   }
+  },
+  {
+   "d": 256,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Famous people and achievements",
+     "g": "Talk about inspiring people and what they have achieved.",
+     "p": [
+      "Key verbs: achieve a goal, succeed in doing something, manage to do something, overcome a difficulty, win an award.",
+      "Be known for / be famous for: Pelé is known for his amazing goals. Malala is known for defending girls' education.",
+      "Present perfect for life achievements of living people: She has won three medals. He has written ten books."
+     ],
+     "q": "Who is someone you find inspiring, famous or not? What have they achieved?",
+     "c": "Write four sentences about a role model of yours using achieve, manage to, be known for and overcome."
+    },
+    "de": {
+     "t": "Famous people and achievements",
+     "g": "Du sprichst über inspirierende Menschen und das, was sie erreicht haben.",
+     "p": [
+      "Wichtige Verben: achieve a goal, succeed in doing something, manage to do something, overcome a difficulty, win an award.",
+      "Be known for / be famous for: Pelé is known for his amazing goals. Malala is known for defending girls' education.",
+      "Present perfect für Erfolge lebender Menschen: She has won three medals. He has written ten books."
+     ],
+     "q": "Wen findest du inspirierend, berühmt oder nicht? Was hat diese Person erreicht?",
+     "c": "Schreib vier Sätze über ein Vorbild von dir mit achieve, manage to, be known for und overcome."
+    },
+    "es": {
+     "t": "Famous people and achievements",
+     "g": "Habla de personas que inspiran y de lo que han logrado.",
+     "p": [
+      "Verbos clave: achieve a goal, succeed in doing something, manage to do something, overcome a difficulty, win an award.",
+      "Be known for / be famous for: Pelé is known for his amazing goals. Malala is known for defending girls' education.",
+      "Present perfect para logros de personas vivas: She has won three medals. He has written ten books."
+     ],
+     "q": "¿Quién es alguien que te inspira, famoso o no? ¿Qué ha conseguido?",
+     "c": "Escribe cuatro frases sobre un modelo a seguir con achieve, manage to, be known for y overcome."
+    },
+    "fr": {
+     "t": "Famous people and achievements",
+     "g": "Parle de personnes inspirantes et de ce qu'elles ont accompli.",
+     "p": [
+      "Verbes clés : achieve a goal, succeed in doing something, manage to do something, overcome a difficulty, win an award.",
+      "Be known for / be famous for : Pelé is known for his amazing goals. Malala is known for defending girls' education.",
+      "Present perfect pour les réussites de personnes vivantes : She has won three medals. He has written ten books."
+     ],
+     "q": "Qui t'inspire, célèbre ou non ? Qu'est-ce que cette personne a accompli ?",
+     "c": "Écris quatre phrases sur un modèle pour toi avec achieve, manage to, be known for et overcome."
+    },
+    "it": {
+     "t": "Famous people and achievements",
+     "g": "Parla di persone che ispirano e di ciò che hanno ottenuto.",
+     "p": [
+      "Verbi chiave: achieve a goal, succeed in doing something, manage to do something, overcome a difficulty, win an award.",
+      "Be known for / be famous for: Pelé is known for his amazing goals. Malala is known for defending girls' education.",
+      "Present perfect per i successi di persone viventi: She has won three medals. He has written ten books."
+     ],
+     "q": "Chi è una persona che ti ispira, famosa o no? Cosa ha ottenuto?",
+     "c": "Scrivi quattro frasi su un tuo modello con achieve, manage to, be known for e overcome."
+    },
+    "pt": {
+     "t": "Famous people and achievements",
+     "g": "Fala de pessoas inspiradoras e do que conseguiram alcançar.",
+     "p": [
+      "Verbos-chave: achieve a goal, succeed in doing something, manage to do something, overcome a difficulty, win an award.",
+      "Be known for / be famous for: Pelé is known for his amazing goals. Malala is known for defending girls' education.",
+      "Present perfect para conquistas de pessoas vivas: She has won three medals. He has written ten books."
+     ],
+     "q": "Quem é alguém que te inspira, famoso ou não? O que é que essa pessoa alcançou?",
+     "c": "Escreve quatro frases sobre um modelo teu com achieve, manage to, be known for e overcome."
+    },
+    "pt_BR": {
+     "t": "Famous people and achievements",
+     "g": "Fale de pessoas inspiradoras e do que elas conquistaram.",
+     "p": [
+      "Verbos-chave: achieve a goal, succeed in doing something, manage to do something, overcome a difficulty, win an award.",
+      "Be known for / be famous for: Pelé is known for his amazing goals. Malala is known for defending girls' education.",
+      "Present perfect para conquistas de pessoas vivas: She has won three medals. He has written ten books."
+     ],
+     "q": "Quem é alguém que te inspira, famoso ou não? O que essa pessoa conquistou?",
+     "c": "Escreva quatro frases sobre alguém que é exemplo para você com achieve, manage to, be known for e overcome."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "achieve",
+      "ex": "She achieved her dream of becoming a pilot."
+     },
+     {
+      "w": "succeed in",
+      "ex": "He succeeded in building his own company."
+     },
+     {
+      "w": "be known for",
+      "ex": "Frida Kahlo is known for her colourful self-portraits."
+     },
+     {
+      "w": "award",
+      "ex": "The scientist won an award for her research."
+     },
+     {
+      "w": "role model",
+      "ex": "My grandmother is my biggest role model."
+     },
+     {
+      "w": "overcome",
+      "ex": "He overcame many difficulties to reach the top."
+     }
+    ],
+    "gram": "Verb patterns for success: succeed in + -ing, manage to + verb, be known for + noun/-ing: She managed to finish the race."
+   }
+  },
+  {
+   "d": 257,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Biographies: life events",
+     "g": "Tell the story of someone's life with the main life events in order.",
+     "p": [
+      "Life events: was born, grew up, went to school, studied, got a job, moved abroad, became famous, retired.",
+      "Remember: I was born, never I born. Use the past simple for finished life events: She studied law in Paris.",
+      "Time markers: in 1985, at the age of twenty, a few years later, after that, eventually, later in life."
+     ],
+     "q": "Think of someone in your family. Where were they born, and what is one interesting event in their life?",
+     "c": "Write a mini biography of six sentences about a person you admire with was born, grew up, at the age of and later."
+    },
+    "de": {
+     "t": "Biographies: life events",
+     "g": "Du erzählst die Lebensgeschichte eines Menschen mit den wichtigsten Ereignissen in Reihenfolge.",
+     "p": [
+      "Lebensereignisse: was born, grew up, went to school, studied, got a job, moved abroad, became famous, retired.",
+      "Achtung: I was born, nie I born. Abgeschlossenes im past simple: She studied law in Paris.",
+      "Zeitangaben: in 1985, at the age of twenty, a few years later, after that, eventually, later in life."
+     ],
+     "q": "Denk an jemanden aus deiner Familie. Wo wurde die Person geboren, und was ist ein spannendes Ereignis in ihrem Leben?",
+     "c": "Schreib eine Mini-Biografie in sechs Sätzen über jemanden, den du bewunderst, mit was born, grew up, at the age of und later."
+    },
+    "es": {
+     "t": "Biographies: life events",
+     "g": "Cuenta la vida de alguien con sus acontecimientos principales en orden.",
+     "p": [
+      "Hechos de la vida: was born, grew up, went to school, studied, got a job, moved abroad, became famous, retired.",
+      "Ojo: I was born, nunca I born. Usa el past simple para hechos terminados: She studied law in Paris.",
+      "Marcadores de tiempo: in 1985, at the age of twenty, a few years later, after that, eventually, later in life."
+     ],
+     "q": "Piensa en alguien de tu familia. ¿Dónde nació y qué hecho interesante hay en su vida?",
+     "c": "Escribe una minibiografía de seis frases sobre alguien que admiras con was born, grew up, at the age of y later."
+    },
+    "fr": {
+     "t": "Biographies: life events",
+     "g": "Raconte la vie de quelqu'un avec les grands événements dans l'ordre.",
+     "p": [
+      "Événements : was born, grew up, went to school, studied, got a job, moved abroad, became famous, retired.",
+      "Attention : I was born, jamais I born. Le past simple pour les faits terminés : She studied law in Paris.",
+      "Repères temporels : in 1985, at the age of twenty, a few years later, after that, eventually, later in life."
+     ],
+     "q": "Pense à quelqu'un de ta famille. Où est-il né et quel est un événement marquant de sa vie ?",
+     "c": "Écris une mini-biographie de six phrases sur quelqu'un que tu admires avec was born, grew up, at the age of et later."
+    },
+    "it": {
+     "t": "Biographies: life events",
+     "g": "Racconta la vita di qualcuno con gli eventi principali in ordine.",
+     "p": [
+      "Eventi della vita: was born, grew up, went to school, studied, got a job, moved abroad, became famous, retired.",
+      "Attenzione: I was born, mai I born. Il past simple per i fatti conclusi: She studied law in Paris.",
+      "Indicatori di tempo: in 1985, at the age of twenty, a few years later, after that, eventually, later in life."
+     ],
+     "q": "Pensa a qualcuno della tua famiglia. Dove è nato e qual è un evento interessante della sua vita?",
+     "c": "Scrivi una mini biografia di sei frasi su una persona che ammiri con was born, grew up, at the age of e later."
+    },
+    "pt": {
+     "t": "Biographies: life events",
+     "g": "Conta a vida de alguém com os principais acontecimentos por ordem.",
+     "p": [
+      "Acontecimentos: was born, grew up, went to school, studied, got a job, moved abroad, became famous, retired.",
+      "Atenção: I was born, nunca I born. O past simple para factos terminados: She studied law in Paris.",
+      "Marcadores de tempo: in 1985, at the age of twenty, a few years later, after that, eventually, later in life."
+     ],
+     "q": "Pensa em alguém da tua família. Onde nasceu e qual é um acontecimento interessante da sua vida?",
+     "c": "Escreve uma minibiografia de seis frases sobre alguém que admiras com was born, grew up, at the age of e later."
+    },
+    "pt_BR": {
+     "t": "Biographies: life events",
+     "g": "Conte a vida de alguém com os principais acontecimentos em ordem.",
+     "p": [
+      "Fatos da vida: was born, grew up, went to school, studied, got a job, moved abroad, became famous, retired.",
+      "Atenção: I was born, nunca I born. O past simple para fatos encerrados: She studied law in Paris.",
+      "Marcadores de tempo: in 1985, at the age of twenty, a few years later, after that, eventually, later in life."
+     ],
+     "q": "Pense em alguém da sua família. Onde essa pessoa nasceu e qual é um fato interessante da vida dela?",
+     "c": "Escreva uma minibiografia de seis frases sobre alguém que você admira com was born, grew up, at the age of e later."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "was born",
+      "ex": "She was born in a small village in 1950."
+     },
+     {
+      "w": "grow up",
+      "ex": "He grew up by the sea with three brothers."
+     },
+     {
+      "w": "move to",
+      "ex": "At eighteen, she moved to the capital to study."
+     },
+     {
+      "w": "become famous",
+      "ex": "He became famous after his first album."
+     },
+     {
+      "w": "retire",
+      "ex": "She retired at sixty-five and started painting."
+     },
+     {
+      "w": "later in life",
+      "ex": "Later in life, he travelled all over the world."
+     }
+    ],
+    "gram": "Biographies: was born (passive), past simple for life events, time markers: in 1990, at the age of ten, after that, later, eventually."
+   }
+  },
+  {
+   "d": 258,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "History, told simply",
+     "g": "Talk about historical periods and events simply, with the passive and past tenses.",
+     "p": [
+      "Periods: ancient times, the Middle Ages, the Renaissance, the 20th century. Say it: the nineteen-sixties.",
+      "Passive when the action matters more than who: The Colosseum was built in Rome. Paper was invented in China.",
+      "Past simple for events, past continuous for background: People were living in small villages when the Romans arrived."
+     ],
+     "q": "Which period of history do you find the most interesting, and why?",
+     "c": "Write four sentences about a historical place in your country using was built, were used and in the ... century."
+    },
+    "de": {
+     "t": "History, told simply",
+     "g": "Du sprichst einfach über historische Epochen und Ereignisse, mit Passiv und Vergangenheitsformen.",
+     "p": [
+      "Epochen: ancient times, the Middle Ages, the Renaissance, the 20th century. Gesprochen: the nineteen-sixties.",
+      "Passiv, wenn die Handlung wichtiger ist als wer: The Colosseum was built in Rome. Paper was invented in China.",
+      "Ereignisse im past simple, Hintergrund im past continuous: People were living in small villages when the Romans arrived."
+     ],
+     "q": "Welche Epoche der Geschichte findest du am spannendsten, und warum?",
+     "c": "Schreib vier Sätze über einen historischen Ort in deinem Land mit was built, were used und in the ... century."
+    },
+    "es": {
+     "t": "History, told simply",
+     "g": "Habla de épocas y hechos históricos de forma sencilla, con la pasiva y los tiempos pasados.",
+     "p": [
+      "Épocas: ancient times, the Middle Ages, the Renaissance, the 20th century. Se dice: the nineteen-sixties.",
+      "Pasiva cuando importa la acción y no quién: The Colosseum was built in Rome. Paper was invented in China.",
+      "Past simple para hechos y past continuous para el contexto: People were living in small villages when the Romans arrived."
+     ],
+     "q": "¿Qué época de la historia te parece más interesante y por qué?",
+     "c": "Escribe cuatro frases sobre un lugar histórico de tu país con was built, were used e in the ... century."
+    },
+    "fr": {
+     "t": "History, told simply",
+     "g": "Parle simplement des grandes périodes et des événements historiques, avec le passif et les temps du passé.",
+     "p": [
+      "Périodes : ancient times, the Middle Ages, the Renaissance, the 20th century. On dit : the nineteen-sixties.",
+      "Le passif quand l'action compte plus que l'auteur : The Colosseum was built in Rome. Paper was invented in China.",
+      "Past simple pour les faits, past continuous pour le contexte : People were living in small villages when the Romans arrived."
+     ],
+     "q": "Quelle période de l'histoire trouves-tu la plus intéressante, et pourquoi ?",
+     "c": "Écris quatre phrases sur un lieu historique de ton pays avec was built, were used et in the ... century."
+    },
+    "it": {
+     "t": "History, told simply",
+     "g": "Parla in modo semplice di epoche ed eventi storici, con il passivo e i tempi passati.",
+     "p": [
+      "Epoche: ancient times, the Middle Ages, the Renaissance, the 20th century. Si dice: the nineteen-sixties.",
+      "Passivo quando conta l'azione e non chi la fa: The Colosseum was built in Rome. Paper was invented in China.",
+      "Past simple per i fatti, past continuous per lo sfondo: People were living in small villages when the Romans arrived."
+     ],
+     "q": "Quale periodo della storia trovi più interessante, e perché?",
+     "c": "Scrivi quattro frasi su un luogo storico del tuo paese con was built, were used e in the ... century."
+    },
+    "pt": {
+     "t": "History, told simply",
+     "g": "Fala de épocas e acontecimentos históricos de forma simples, com a passiva e os tempos do passado.",
+     "p": [
+      "Épocas: ancient times, the Middle Ages, the Renaissance, the 20th century. Diz-se: the nineteen-sixties.",
+      "Passiva quando a ação importa mais do que quem: The Colosseum was built in Rome. Paper was invented in China.",
+      "Past simple para factos, past continuous para o contexto: People were living in small villages when the Romans arrived."
+     ],
+     "q": "Que época da história achas mais interessante, e porquê?",
+     "c": "Escreve quatro frases sobre um lugar histórico do teu país com was built, were used e in the ... century."
+    },
+    "pt_BR": {
+     "t": "History, told simply",
+     "g": "Fale de épocas e fatos históricos de forma simples, com a passiva e os tempos do passado.",
+     "p": [
+      "Épocas: ancient times, the Middle Ages, the Renaissance, the 20th century. Fala-se: the nineteen-sixties.",
+      "Passiva quando a ação importa mais do que quem fez: The Colosseum was built in Rome. Paper was invented in China.",
+      "Past simple para fatos, past continuous para o contexto: People were living in small villages when the Romans arrived."
+     ],
+     "q": "Qual época da história você acha mais interessante, e por quê?",
+     "c": "Escreva quatro frases sobre um lugar histórico do seu país com was built, were used e in the ... century."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "century",
+      "ex": "The castle was built in the twelfth century."
+     },
+     {
+      "w": "ancient",
+      "ex": "The ancient Egyptians built the pyramids."
+     },
+     {
+      "w": "empire",
+      "ex": "The Roman Empire was huge."
+     },
+     {
+      "w": "was built",
+      "ex": "The Great Wall was built over many centuries."
+     },
+     {
+      "w": "was invented",
+      "ex": "Paper was invented in China."
+     },
+     {
+      "w": "for the first time",
+      "ex": "In 1969, people walked on the Moon for the first time."
+     }
+    ],
+    "gram": "Past simple passive for history: was/were + past participle: The pyramids were built about 4,500 years ago. Printing was developed..."
+   }
+  },
+  {
+   "d": 259,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Inventors and explorers",
+     "g": "Talk about famous inventors, explorers and their discoveries.",
+     "p": [
+      "Discover something that exists, invent something new: Curie discovered radium. The Wright brothers invented a plane.",
+      "Facts: Marie Curie won two Nobel Prizes. In 1903, the Wright brothers flew for the first time. Magellan's crew sailed around the world.",
+      "Passive for the result: The telephone was invented in the 1870s. Penicillin was discovered by Alexander Fleming."
+     ],
+     "q": "Which invention could you not live without, and who do you think we should thank for it?",
+     "c": "Write three sentences about an inventor or explorer using discover or invent, a date and one passive sentence."
+    },
+    "de": {
+     "t": "Inventors and explorers",
+     "g": "Du sprichst über berühmte Erfinder, Entdecker und ihre Entdeckungen.",
+     "p": [
+      "Discover für Vorhandenes, invent für Neues: Curie discovered radium. The Wright brothers invented a plane.",
+      "Fakten: Marie Curie won two Nobel Prizes. In 1903, the Wright brothers flew for the first time. Magellan's crew sailed around the world.",
+      "Passiv fürs Ergebnis: The telephone was invented in the 1870s. Penicillin was discovered by Alexander Fleming."
+     ],
+     "q": "Ohne welche Erfindung könntest du nicht leben, und wem sollten wir dafür danken?",
+     "c": "Schreib drei Sätze über einen Erfinder oder Entdecker mit discover oder invent, einem Datum und einem Passivsatz."
+    },
+    "es": {
+     "t": "Inventors and explorers",
+     "g": "Habla de inventores y exploradores famosos y de sus descubrimientos.",
+     "p": [
+      "Discover para lo que ya existe, invent para algo nuevo: Curie discovered radium. The Wright brothers invented a plane.",
+      "Datos: Marie Curie won two Nobel Prizes. In 1903, the Wright brothers flew for the first time. Magellan's crew sailed around the world.",
+      "Pasiva para el resultado: The telephone was invented in the 1870s. Penicillin was discovered by Alexander Fleming."
+     ],
+     "q": "¿Sin qué invento no podrías vivir y a quién crees que deberíamos agradecérselo?",
+     "c": "Escribe tres frases sobre un inventor o explorador con discover o invent, una fecha y una frase en pasiva."
+    },
+    "fr": {
+     "t": "Inventors and explorers",
+     "g": "Parle d'inventeurs et d'explorateurs célèbres et de leurs découvertes.",
+     "p": [
+      "Discover pour ce qui existe, invent pour du nouveau : Curie discovered radium. The Wright brothers invented a plane.",
+      "Faits : Marie Curie won two Nobel Prizes. In 1903, the Wright brothers flew for the first time. Magellan's crew sailed around the world.",
+      "Le passif pour le résultat : The telephone was invented in the 1870s. Penicillin was discovered by Alexander Fleming."
+     ],
+     "q": "Sans quelle invention ne pourrais-tu pas vivre, et qui faudrait-il remercier pour elle ?",
+     "c": "Écris trois phrases sur un inventeur ou un explorateur avec discover ou invent, une date et une phrase au passif."
+    },
+    "it": {
+     "t": "Inventors and explorers",
+     "g": "Parla di inventori ed esploratori famosi e delle loro scoperte.",
+     "p": [
+      "Discover per ciò che esiste, invent per qualcosa di nuovo: Curie discovered radium. The Wright brothers invented a plane.",
+      "Fatti: Marie Curie won two Nobel Prizes. In 1903, the Wright brothers flew for the first time. Magellan's crew sailed around the world.",
+      "Il passivo per il risultato: The telephone was invented in the 1870s. Penicillin was discovered by Alexander Fleming."
+     ],
+     "q": "Senza quale invenzione non potresti vivere, e chi dovremmo ringraziare per questo?",
+     "c": "Scrivi tre frasi su un inventore o esploratore con discover o invent, una data e una frase al passivo."
+    },
+    "pt": {
+     "t": "Inventors and explorers",
+     "g": "Fala de inventores e exploradores famosos e das suas descobertas.",
+     "p": [
+      "Discover para o que já existe, invent para algo novo: Curie discovered radium. The Wright brothers invented a plane.",
+      "Factos: Marie Curie won two Nobel Prizes. In 1903, the Wright brothers flew for the first time. Magellan's crew sailed around the world.",
+      "Passiva para o resultado: The telephone was invented in the 1870s. Penicillin was discovered by Alexander Fleming."
+     ],
+     "q": "Sem que invenção não conseguias viver, e a quem devíamos agradecer por ela?",
+     "c": "Escreve três frases sobre um inventor ou explorador com discover ou invent, uma data e uma frase na passiva."
+    },
+    "pt_BR": {
+     "t": "Inventors and explorers",
+     "g": "Fale de inventores e exploradores famosos e das suas descobertas.",
+     "p": [
+      "Discover para o que já existe, invent para algo novo: Curie discovered radium. The Wright brothers invented a plane.",
+      "Fatos: Marie Curie won two Nobel Prizes. In 1903, the Wright brothers flew for the first time. Magellan's crew sailed around the world.",
+      "Passiva para o resultado: The telephone was invented in the 1870s. Penicillin was discovered by Alexander Fleming."
+     ],
+     "q": "Sem qual invenção você não conseguiria viver, e a quem deveríamos agradecer por ela?",
+     "c": "Escreva três frases sobre um inventor ou explorador com discover ou invent, uma data e uma frase na passiva."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "discover",
+      "ex": "Marie Curie discovered two new elements."
+     },
+     {
+      "w": "invent",
+      "ex": "The Wright brothers invented the first successful aeroplane."
+     },
+     {
+      "w": "explorer",
+      "ex": "Magellan was a Portuguese explorer."
+     },
+     {
+      "w": "expedition",
+      "ex": "His expedition was the first to sail around the world."
+     },
+     {
+      "w": "breakthrough",
+      "ex": "The vaccine was a huge medical breakthrough."
+     },
+     {
+      "w": "set sail",
+      "ex": "The ships set sail from Spain in 1519."
+     }
+    ],
+    "gram": "Discover vs invent: you discover what already exists (a planet), you invent something new (a machine). Past simple and passive."
+   }
+  },
+  {
+   "d": 260,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Media and news vocabulary",
+     "g": "Talk about the news and the media with useful vocabulary.",
+     "p": [
+      "Media words: headline, article, journalist, reporter, broadcast, front page, breaking news, podcast.",
+      "Sources: according to the BBC, a reliable source, a trusted website. Ask: Where did you read that?",
+      "New news uses the present perfect: Scientists have discovered a new planet. Then details in the past: They found it last week."
+     ],
+     "q": "How do you keep up with the news: TV, podcasts, newspapers or social media? Which source do you trust most?",
+     "c": "Share a positive news story in three sentences: a present perfect headline, details in the past and your source."
+    },
+    "de": {
+     "t": "Media and news vocabulary",
+     "g": "Du sprichst mit nützlichem Wortschatz über Nachrichten und Medien.",
+     "p": [
+      "Medienwörter: headline, article, journalist, reporter, broadcast, front page, breaking news, podcast.",
+      "Quellen: according to the BBC, a reliable source, a trusted website. Frag: Where did you read that?",
+      "Neue Nachrichten im present perfect: Scientists have discovered a new planet. Details dann im past: They found it last week."
+     ],
+     "q": "Wie bleibst du auf dem Laufenden: TV, Podcasts, Zeitung oder soziale Medien? Welcher Quelle vertraust du am meisten?",
+     "c": "Erzähl eine positive Nachricht in drei Sätzen: Schlagzeile im present perfect, Details im past und deine Quelle."
+    },
+    "es": {
+     "t": "Media and news vocabulary",
+     "g": "Habla de las noticias y los medios con vocabulario útil.",
+     "p": [
+      "Palabras de medios: headline, article, journalist, reporter, broadcast, front page, breaking news, podcast.",
+      "Fuentes: according to the BBC, a reliable source, a trusted website. Pregunta: Where did you read that?",
+      "La noticia nueva va en present perfect: Scientists have discovered a new planet. Los detalles en pasado: They found it last week."
+     ],
+     "q": "¿Cómo te mantienes informado: tele, podcasts, periódicos o redes sociales? ¿En qué fuente confías más?",
+     "c": "Comparte una noticia positiva en tres frases: titular en present perfect, detalles en pasado y tu fuente."
+    },
+    "fr": {
+     "t": "Media and news vocabulary",
+     "g": "Parle de l'actualité et des médias avec un vocabulaire utile.",
+     "p": [
+      "Mots des médias : headline, article, journalist, reporter, broadcast, front page, breaking news, podcast.",
+      "Sources : according to the BBC, a reliable source, a trusted website. Demande : Where did you read that?",
+      "Une nouvelle info au present perfect : Scientists have discovered a new planet. Les détails au passé : They found it last week."
+     ],
+     "q": "Comment suis-tu l'actualité : télé, podcasts, journaux ou réseaux sociaux ? À quelle source fais-tu le plus confiance ?",
+     "c": "Partage une bonne nouvelle en trois phrases : un titre au present perfect, des détails au passé et ta source."
+    },
+    "it": {
+     "t": "Media and news vocabulary",
+     "g": "Parla di notizie e media con un lessico utile.",
+     "p": [
+      "Parole dei media: headline, article, journalist, reporter, broadcast, front page, breaking news, podcast.",
+      "Fonti: according to the BBC, a reliable source, a trusted website. Chiedi: Where did you read that?",
+      "Le notizie nuove al present perfect: Scientists have discovered a new planet. I dettagli al passato: They found it last week."
+     ],
+     "q": "Come ti tieni aggiornato: TV, podcast, giornali o social? Di quale fonte ti fidi di più?",
+     "c": "Racconta una notizia positiva in tre frasi: titolo al present perfect, dettagli al passato e la tua fonte."
+    },
+    "pt": {
+     "t": "Media and news vocabulary",
+     "g": "Fala das notícias e dos media com vocabulário útil.",
+     "p": [
+      "Palavras dos media: headline, article, journalist, reporter, broadcast, front page, breaking news, podcast.",
+      "Fontes: according to the BBC, a reliable source, a trusted website. Pergunta: Where did you read that?",
+      "A notícia nova vai no present perfect: Scientists have discovered a new planet. Os detalhes no passado: They found it last week."
+     ],
+     "q": "Como te manténs a par das notícias: televisão, podcasts, jornais ou redes sociais? Em que fonte confias mais?",
+     "c": "Partilha uma notícia positiva em três frases: título no present perfect, detalhes no passado e a tua fonte."
+    },
+    "pt_BR": {
+     "t": "Media and news vocabulary",
+     "g": "Fale de notícias e da mídia com vocabulário útil.",
+     "p": [
+      "Palavras da mídia: headline, article, journalist, reporter, broadcast, front page, breaking news, podcast.",
+      "Fontes: according to the BBC, a reliable source, a trusted website. Pergunte: Where did you read that?",
+      "A notícia nova vai no present perfect: Scientists have discovered a new planet. Os detalhes no passado: They found it last week."
+     ],
+     "q": "Como você se mantém informado: TV, podcasts, jornais ou redes sociais? Em qual fonte você mais confia?",
+     "c": "Compartilhe uma notícia positiva em três frases: manchete no present perfect, detalhes no passado e sua fonte."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "headline",
+      "ex": "The headline caught my attention immediately."
+     },
+     {
+      "w": "article",
+      "ex": "I read an interesting article about sleep."
+     },
+     {
+      "w": "journalist",
+      "ex": "The journalist interviewed people in the street."
+     },
+     {
+      "w": "broadcast",
+      "ex": "The match was broadcast live on TV."
+     },
+     {
+      "w": "reliable source",
+      "ex": "Always check if the news comes from a reliable source."
+     },
+     {
+      "w": "keep up with",
+      "ex": "I keep up with the news by listening to podcasts."
+     }
+    ],
+    "gram": "Reporting the news: according to + source, it was reported that, present perfect for new news: Scientists have found a new species."
+   }
+  }
+ ]
+}

@@ -1,0 +1,1305 @@
+{
+"topic": "podcasts",
+"questions": [
+{
+"id": "podcasts-001",
+"lv": "any",
+"i18n": {
+"en": "What is the podcast you have listened to the most, and why do you keep coming back?",
+"de": "Welchen Podcast hast du am meisten gehört, und warum kommst du immer wieder zurück?",
+"es": "¿Cuál es el pódcast que más has escuchado y por qué vuelves siempre a él?",
+"fr": "Quel est le podcast que tu as le plus écouté, et pourquoi y reviens-tu toujours ?",
+"it": "Qual è il podcast che hai ascoltato di più, e perché ci torni sempre?",
+"pt": "Qual é o podcast que mais ouviste, e porque voltas sempre a ele?",
+"pt_BR": "Qual é o podcast que você mais ouviu, e por que sempre volta para ele?"
+}
+},
+{
+"id": "podcasts-002",
+"lv": "any",
+"i18n": {
+"en": "When do you usually listen to podcasts during your day?",
+"de": "Wann hörst du im Lauf des Tages meistens Podcasts?",
+"es": "¿En qué momento del día sueles escuchar pódcasts?",
+"fr": "À quel moment de la journée écoutes-tu des podcasts en général ?",
+"it": "In quale momento della giornata ascolti di solito i podcast?",
+"pt": "Em que altura do dia costumas ouvir podcasts?",
+"pt_BR": "Em que momento do dia você costuma ouvir podcasts?"
+}
+},
+{
+"id": "podcasts-003",
+"lv": "any",
+"i18n": {
+"en": "How did you discover your very first podcast?",
+"de": "Wie hast du deinen allerersten Podcast entdeckt?",
+"es": "¿Cómo descubriste tu primer pódcast?",
+"fr": "Comment as-tu découvert ton tout premier podcast ?",
+"it": "Come hai scoperto il tuo primissimo podcast?",
+"pt": "Como descobriste o teu primeiro podcast?",
+"pt_BR": "Como você descobriu seu primeiro podcast?"
+}
+},
+{
+"id": "podcasts-004",
+"lv": "any",
+"i18n": {
+"en": "Do you prefer interview shows, storytelling or friendly chats? Why?",
+"de": "Magst du lieber Interviews, erzählende Formate oder lockere Gespräche? Warum?",
+"es": "¿Prefieres entrevistas, narraciones o charlas entre amigos? ¿Por qué?",
+"fr": "Tu préfères les interviews, les récits ou les discussions entre amis ? Pourquoi ?",
+"it": "Preferisci interviste, racconti o chiacchierate tra amici? Perché?",
+"pt": "Preferes entrevistas, narrativas ou conversas descontraídas? Porquê?",
+"pt_BR": "Você prefere entrevistas, narrativas ou bate-papos descontraídos? Por quê?"
+}
+},
+{
+"id": "podcasts-005",
+"lv": "any",
+"i18n": {
+"en": "Which podcast host would you love to have a coffee with?",
+"de": "Mit welcher Podcast-Moderatorin oder welchem Moderator würdest du gern einen Kaffee trinken?",
+"es": "¿Con qué presentador de pódcast te encantaría tomar un café?",
+"fr": "Avec quel animateur de podcast aimerais-tu prendre un café ?",
+"it": "Con quale conduttore di podcast ti piacerebbe prendere un caffè?",
+"pt": "Com que apresentador de podcast adorarias tomar um café?",
+"pt_BR": "Com qual apresentador de podcast você adoraria tomar um café?"
+}
+},
+{
+"id": "podcasts-006",
+"lv": "any",
+"i18n": {
+"en": "What topic could you listen to for hours without getting bored?",
+"de": "Bei welchem Thema könntest du stundenlang zuhören, ohne dich zu langweilen?",
+"es": "¿Sobre qué tema podrías escuchar durante horas sin aburrirte?",
+"fr": "Sur quel sujet pourrais-tu écouter pendant des heures sans t'ennuyer ?",
+"it": "Quale argomento potresti ascoltare per ore senza annoiarti?",
+"pt": "Sobre que tema conseguirias ouvir durante horas sem te aborreceres?",
+"pt_BR": "Sobre qual assunto você conseguiria ouvir por horas sem se cansar?"
+}
+},
+{
+"id": "podcasts-007",
+"lv": "any",
+"i18n": {
+"en": "What is an episode that changed how you think about something?",
+"de": "Welche Folge hat deine Sicht auf etwas verändert?",
+"es": "¿Qué episodio cambió tu forma de pensar sobre algo?",
+"fr": "Quel épisode a changé ta façon de voir quelque chose ?",
+"it": "Quale episodio ha cambiato il tuo modo di vedere qualcosa?",
+"pt": "Que episódio mudou a tua forma de pensar sobre algo?",
+"pt_BR": "Qual episódio mudou seu jeito de pensar sobre alguma coisa?"
+}
+},
+{
+"id": "podcasts-008",
+"lv": "any",
+"i18n": {
+"en": "Do you listen to podcasts at normal speed or faster?",
+"de": "Hörst du Podcasts in normaler Geschwindigkeit oder schneller?",
+"es": "¿Escuchas los pódcasts a velocidad normal o más rápido?",
+"fr": "Écoutes-tu les podcasts à vitesse normale ou en accéléré ?",
+"it": "Ascolti i podcast a velocità normale o più veloce?",
+"pt": "Ouves os podcasts à velocidade normal ou mais depressa?",
+"pt_BR": "Você ouve podcasts na velocidade normal ou acelerado?"
+}
+},
+{
+"id": "podcasts-009",
+"lv": "any",
+"i18n": {
+"en": "What makes you stop listening to a podcast?",
+"de": "Was bringt dich dazu, einen Podcast nicht mehr zu hören?",
+"es": "¿Qué hace que dejes de escuchar un pódcast?",
+"fr": "Qu'est-ce qui te fait arrêter d'écouter un podcast ?",
+"it": "Che cosa ti fa smettere di ascoltare un podcast?",
+"pt": "O que te faz deixar de ouvir um podcast?",
+"pt_BR": "O que faz você parar de ouvir um podcast?"
+}
+},
+{
+"id": "podcasts-010",
+"lv": "any",
+"i18n": {
+"en": "Have you ever recommended an episode to a friend? Which one?",
+"de": "Hast du schon einmal einer Freundin oder einem Freund eine Folge empfohlen? Welche?",
+"es": "¿Alguna vez le has recomendado un episodio a un amigo? ¿Cuál?",
+"fr": "As-tu déjà recommandé un épisode à un ami ? Lequel ?",
+"it": "Hai mai consigliato un episodio a un amico? Quale?",
+"pt": "Já recomendaste um episódio a um amigo? Qual?",
+"pt_BR": "Você já recomendou um episódio para um amigo? Qual?"
+}
+},
+{
+"id": "podcasts-011",
+"lv": "any",
+"i18n": {
+"en": "Do you listen to podcasts in more than one language?",
+"de": "Hörst du Podcasts in mehr als einer Sprache?",
+"es": "¿Escuchas pódcasts en más de un idioma?",
+"fr": "Écoutes-tu des podcasts dans plusieurs langues ?",
+"it": "Ascolti podcast in più di una lingua?",
+"pt": "Ouves podcasts em mais do que uma língua?",
+"pt_BR": "Você ouve podcasts em mais de um idioma?"
+}
+},
+{
+"id": "podcasts-012",
+"lv": "any",
+"i18n": {
+"en": "What kind of voice do you find most pleasant to listen to?",
+"de": "Welche Art von Stimme hörst du am liebsten?",
+"es": "¿Qué tipo de voz te resulta más agradable de escuchar?",
+"fr": "Quel type de voix trouves-tu le plus agréable à écouter ?",
+"it": "Che tipo di voce trovi più piacevole da ascoltare?",
+"pt": "Que tipo de voz achas mais agradável de ouvir?",
+"pt_BR": "Que tipo de voz você acha mais gostosa de ouvir?"
+}
+},
+{
+"id": "podcasts-013",
+"lv": "any",
+"i18n": {
+"en": "Do you prefer short episodes or long, deep conversations?",
+"de": "Magst du lieber kurze Folgen oder lange, tiefe Gespräche?",
+"es": "¿Prefieres episodios cortos o conversaciones largas y profundas?",
+"fr": "Préfères-tu les épisodes courts ou les longues conversations approfondies ?",
+"it": "Preferisci episodi brevi o conversazioni lunghe e approfondite?",
+"pt": "Preferes episódios curtos ou conversas longas e profundas?",
+"pt_BR": "Você prefere episódios curtos ou conversas longas e profundas?"
+}
+},
+{
+"id": "podcasts-014",
+"lv": "any",
+"i18n": {
+"en": "Which podcast has taught you something useful for daily life?",
+"de": "Welcher Podcast hat dir etwas Nützliches für den Alltag beigebracht?",
+"es": "¿Qué pódcast te ha enseñado algo útil para tu día a día?",
+"fr": "Quel podcast t'a appris quelque chose d'utile au quotidien ?",
+"it": "Quale podcast ti ha insegnato qualcosa di utile per la vita di tutti i giorni?",
+"pt": "Que podcast te ensinou algo útil para o dia a dia?",
+"pt_BR": "Qual podcast te ensinou algo útil para o dia a dia?"
+}
+},
+{
+"id": "podcasts-015",
+"lv": "any",
+"i18n": {
+"en": "What do you usually do with your hands while you listen?",
+"de": "Was machst du normalerweise nebenbei, während du zuhörst?",
+"es": "¿Qué sueles hacer mientras escuchas?",
+"fr": "Que fais-tu en général pendant que tu écoutes ?",
+"it": "Che cosa fai di solito mentre ascolti?",
+"pt": "O que costumas fazer enquanto ouves?",
+"pt_BR": "O que você costuma fazer enquanto escuta?"
+}
+},
+{
+"id": "podcasts-016",
+"lv": "any",
+"i18n": {
+"en": "Is there a podcast that makes you laugh out loud?",
+"de": "Gibt es einen Podcast, bei dem du laut lachen musst?",
+"es": "¿Hay algún pódcast que te haga reír a carcajadas?",
+"fr": "Y a-t-il un podcast qui te fait rire aux éclats ?",
+"it": "C'è un podcast che ti fa ridere a crepapelle?",
+"pt": "Há algum podcast que te faça rir às gargalhadas?",
+"pt_BR": "Tem algum podcast que faz você rir alto?"
+}
+},
+{
+"id": "podcasts-017",
+"lv": "any",
+"i18n": {
+"en": "If you started a podcast tomorrow, what would it be about?",
+"de": "Wenn du morgen einen Podcast starten würdest, worum ginge es?",
+"es": "Si empezaras un pódcast mañana, ¿de qué trataría?",
+"fr": "Si tu lançais un podcast demain, de quoi parlerait-il ?",
+"it": "Se iniziassi un podcast domani, di che cosa parlerebbe?",
+"pt": "Se começasses um podcast amanhã, sobre o que seria?",
+"pt_BR": "Se você começasse um podcast amanhã, sobre o que seria?"
+}
+},
+{
+"id": "podcasts-018",
+"lv": "any",
+"i18n": {
+"en": "Who would be your dream guest on a podcast, and what would you ask them?",
+"de": "Wer wäre dein Traumgast in einem Podcast, und was würdest du fragen?",
+"es": "¿Quién sería tu invitado soñado en un pódcast y qué le preguntarías?",
+"fr": "Qui serait ton invité de rêve dans un podcast, et que lui demanderais-tu ?",
+"it": "Chi sarebbe il tuo ospite dei sogni in un podcast, e che cosa gli chiederesti?",
+"pt": "Quem seria o teu convidado de sonho num podcast, e o que lhe perguntarias?",
+"pt_BR": "Quem seria seu convidado dos sonhos num podcast, e o que você perguntaria?"
+}
+},
+{
+"id": "podcasts-019",
+"lv": "any",
+"i18n": {
+"en": "Which podcast helps you learn about other cultures or countries?",
+"de": "Welcher Podcast hilft dir, andere Kulturen oder Länder kennenzulernen?",
+"es": "¿Qué pódcast te ayuda a conocer otras culturas o países?",
+"fr": "Quel podcast t'aide à découvrir d'autres cultures ou d'autres pays ?",
+"it": "Quale podcast ti aiuta a conoscere altre culture o paesi?",
+"pt": "Que podcast te ajuda a conhecer outras culturas ou países?",
+"pt_BR": "Qual podcast te ajuda a conhecer outras culturas ou países?"
+}
+},
+{
+"id": "podcasts-020",
+"lv": "any",
+"i18n": {
+"en": "Do you like podcasts with video, or do you prefer just audio?",
+"de": "Magst du Podcasts mit Video, oder hörst du lieber nur Audio?",
+"es": "¿Te gustan los pódcasts con vídeo o prefieres solo audio?",
+"fr": "Aimes-tu les podcasts vidéo, ou préfères-tu l'audio seul ?",
+"it": "Ti piacciono i podcast con video o preferisci solo l'audio?",
+"pt": "Gostas de podcasts com vídeo, ou preferes só áudio?",
+"pt_BR": "Você gosta de podcasts com vídeo, ou prefere só áudio?"
+}
+},
+{
+"id": "podcasts-021",
+"lv": "any",
+"i18n": {
+"en": "What is the strangest place you have ever listened to a podcast?",
+"de": "Was ist der ungewöhnlichste Ort, an dem du je einen Podcast gehört hast?",
+"es": "¿Cuál es el lugar más curioso donde has escuchado un pódcast?",
+"fr": "Quel est l'endroit le plus insolite où tu as écouté un podcast ?",
+"it": "Qual è il posto più strano in cui hai ascoltato un podcast?",
+"pt": "Qual é o sítio mais estranho onde já ouviste um podcast?",
+"pt_BR": "Qual é o lugar mais inusitado onde você já ouviu um podcast?"
+}
+},
+{
+"id": "podcasts-022",
+"lv": "any",
+"i18n": {
+"en": "How many podcasts do you follow, and how do you choose what to play next?",
+"de": "Wie vielen Podcasts folgst du, und wie entscheidest du, was du als Nächstes hörst?",
+"es": "¿Cuántos pódcasts sigues y cómo eliges qué escuchar después?",
+"fr": "Combien de podcasts suis-tu, et comment choisis-tu le prochain épisode ?",
+"it": "Quanti podcast segui, e come scegli che cosa ascoltare dopo?",
+"pt": "Quantos podcasts segues, e como escolhes o que ouvir a seguir?",
+"pt_BR": "Quantos podcasts você segue, e como escolhe o que ouvir em seguida?"
+}
+},
+{
+"id": "podcasts-023",
+"lv": "any",
+"i18n": {
+"en": "Have you ever been to a live podcast recording, or would you like to go?",
+"de": "Warst du schon einmal bei einer Live-Podcastaufnahme, oder würdest du gern hingehen?",
+"es": "¿Has ido alguna vez a la grabación en directo de un pódcast o te gustaría ir?",
+"fr": "As-tu déjà assisté à l'enregistrement public d'un podcast, ou aimerais-tu y aller ?",
+"it": "Sei mai stato alla registrazione dal vivo di un podcast, o ti piacerebbe andarci?",
+"pt": "Já foste à gravação ao vivo de um podcast, ou gostavas de ir?",
+"pt_BR": "Você já foi à gravação ao vivo de um podcast, ou gostaria de ir?"
+}
+},
+{
+"id": "podcasts-024",
+"lv": "any",
+"i18n": {
+"en": "Which podcast do you think deserves many more listeners?",
+"de": "Welcher Podcast hätte deiner Meinung nach viel mehr Hörer verdient?",
+"es": "¿Qué pódcast crees que merece muchos más oyentes?",
+"fr": "Quel podcast mériterait beaucoup plus d'auditeurs, selon toi ?",
+"it": "Quale podcast secondo te meriterebbe molti più ascoltatori?",
+"pt": "Que podcast achas que merecia muitos mais ouvintes?",
+"pt_BR": "Qual podcast você acha que merecia muito mais ouvintes?"
+}
+},
+{
+"id": "podcasts-025",
+"lv": "any",
+"i18n": {
+"en": "Do you remember the first time a podcast story really moved you?",
+"de": "Erinnerst du dich an das erste Mal, als dich eine Podcastgeschichte wirklich berührt hat?",
+"es": "¿Recuerdas la primera vez que una historia de un pódcast te emocionó de verdad?",
+"fr": "Te souviens-tu de la première fois qu'une histoire de podcast t'a vraiment ému ?",
+"it": "Ricordi la prima volta che una storia di un podcast ti ha davvero emozionato?",
+"pt": "Lembras-te da primeira vez que uma história de podcast te emocionou a sério?",
+"pt_BR": "Você lembra a primeira vez que uma história de podcast te emocionou de verdade?"
+}
+},
+{
+"id": "podcasts-026",
+"lv": "any",
+"i18n": {
+"en": "What podcast would you recommend to someone who has never listened to one?",
+"de": "Welchen Podcast würdest du jemandem empfehlen, der noch nie einen gehört hat?",
+"es": "¿Qué pódcast recomendarías a alguien que nunca ha escuchado uno?",
+"fr": "Quel podcast conseillerais-tu à quelqu'un qui n'en a jamais écouté ?",
+"it": "Quale podcast consiglieresti a chi non ne ha mai ascoltato uno?",
+"pt": "Que podcast recomendarias a alguém que nunca ouviu nenhum?",
+"pt_BR": "Qual podcast você recomendaria para alguém que nunca ouviu um?"
+}
+},
+{
+"id": "podcasts-027",
+"lv": "any",
+"i18n": {
+"en": "Do you prefer one host or a group of hosts talking together?",
+"de": "Magst du lieber eine einzelne Stimme oder mehrere Moderatoren im Gespräch?",
+"es": "¿Prefieres un solo presentador o un grupo conversando?",
+"fr": "Préfères-tu un seul animateur ou plusieurs qui discutent ensemble ?",
+"it": "Preferisci un solo conduttore o un gruppo che chiacchiera insieme?",
+"pt": "Preferes um só apresentador ou um grupo a conversar?",
+"pt_BR": "Você prefere um apresentador só ou um grupo conversando?"
+}
+},
+{
+"id": "podcasts-028",
+"lv": "any",
+"i18n": {
+"en": "What would the perfect podcast for your morning routine sound like?",
+"de": "Wie würde der perfekte Podcast für deine Morgenroutine klingen?",
+"es": "¿Cómo sonaría el pódcast perfecto para tu rutina de la mañana?",
+"fr": "À quoi ressemblerait le podcast parfait pour ta routine du matin ?",
+"it": "Come suonerebbe il podcast perfetto per la tua routine mattutina?",
+"pt": "Como seria o podcast perfeito para a tua rotina da manhã?",
+"pt_BR": "Como seria o podcast perfeito para a sua rotina da manhã?"
+}
+},
+{
+"id": "podcasts-029",
+"lv": "any",
+"i18n": {
+"en": "Which hobby of yours would make a fun podcast topic?",
+"de": "Welches deiner Hobbys wäre ein lustiges Podcast-Thema?",
+"es": "¿Qué afición tuya sería un tema divertido para un pódcast?",
+"fr": "Lequel de tes loisirs ferait un sujet de podcast amusant ?",
+"it": "Quale tuo hobby sarebbe un argomento divertente per un podcast?",
+"pt": "Que passatempo teu daria um tema de podcast divertido?",
+"pt_BR": "Qual hobby seu daria um tema divertido para um podcast?"
+}
+},
+{
+"id": "podcasts-030",
+"lv": "any",
+"i18n": {
+"en": "Do you like podcasts that feel like a friend talking, or more like a radio show?",
+"de": "Magst du Podcasts, die wie ein Gespräch unter Freunden wirken, oder eher wie eine Radiosendung?",
+"es": "¿Te gustan los pódcasts que parecen una charla con un amigo o más bien un programa de radio?",
+"fr": "Aimes-tu les podcasts qui ressemblent à une discussion entre amis, ou plutôt à une émission de radio ?",
+"it": "Ti piacciono i podcast che sembrano una chiacchierata tra amici o più un programma radio?",
+"pt": "Gostas de podcasts que parecem uma conversa com um amigo, ou mais um programa de rádio?",
+"pt_BR": "Você gosta de podcasts que parecem papo de amigo, ou mais um programa de rádio?"
+}
+},
+{
+"id": "podcasts-031",
+"lv": "any",
+"i18n": {
+"en": "Have you ever learned a language with the help of a podcast?",
+"de": "Hast du schon einmal mithilfe eines Podcasts eine Sprache gelernt?",
+"es": "¿Has aprendido algún idioma con ayuda de un pódcast?",
+"fr": "As-tu déjà appris une langue grâce à un podcast ?",
+"it": "Hai mai imparato una lingua con l'aiuto di un podcast?",
+"pt": "Já aprendeste uma língua com a ajuda de um podcast?",
+"pt_BR": "Você já aprendeu um idioma com a ajuda de um podcast?"
+}
+},
+{
+"id": "podcasts-032",
+"lv": "any",
+"i18n": {
+"en": "What sound or theme music from a podcast do you recognise instantly?",
+"de": "Welchen Sound oder welche Titelmusik aus einem Podcast erkennst du sofort?",
+"es": "¿Qué sonido o sintonía de un pódcast reconoces al instante?",
+"fr": "Quel son ou générique de podcast reconnais-tu immédiatement ?",
+"it": "Quale suono o sigla di un podcast riconosci all'istante?",
+"pt": "Que som ou genérico de um podcast reconheces logo?",
+"pt_BR": "Qual som ou vinheta de podcast você reconhece na hora?"
+}
+},
+{
+"id": "podcasts-033",
+"lv": "any",
+"i18n": {
+"en": "Which podcast would you take on a long flight?",
+"de": "Welchen Podcast würdest du auf einen langen Flug mitnehmen?",
+"es": "¿Qué pódcast te llevarías en un vuelo largo?",
+"fr": "Quel podcast emporterais-tu pour un long vol ?",
+"it": "Quale podcast porteresti con te in un volo lungo?",
+"pt": "Que podcast levarias numa viagem de avião longa?",
+"pt_BR": "Qual podcast você levaria num voo longo?"
+}
+},
+{
+"id": "podcasts-034",
+"lv": "any",
+"i18n": {
+"en": "Do you read show notes or just press play?",
+"de": "Liest du die Shownotes oder drückst du einfach auf Play?",
+"es": "¿Lees las notas del episodio o simplemente le das al play?",
+"fr": "Lis-tu les notes d'épisode ou appuies-tu directement sur lecture ?",
+"it": "Leggi le note dell'episodio o premi semplicemente play?",
+"pt": "Lês as notas do episódio ou carregas logo no play?",
+"pt_BR": "Você lê as notas do episódio ou só dá o play?"
+}
+},
+{
+"id": "podcasts-035",
+"lv": "any",
+"i18n": {
+"en": "What would you love to hear more podcasts talk about?",
+"de": "Worüber würdest du gern mehr Podcasts hören?",
+"es": "¿Sobre qué te gustaría que hablaran más pódcasts?",
+"fr": "De quoi aimerais-tu que davantage de podcasts parlent ?",
+"it": "Di che cosa ti piacerebbe che parlassero più podcast?",
+"pt": "Sobre o que gostavas que mais podcasts falassem?",
+"pt_BR": "Sobre o que você gostaria que mais podcasts falassem?"
+}
+},
+{
+"id": "podcasts-036",
+"lv": "any",
+"i18n": {
+"en": "Has a podcast ever inspired you to try something new?",
+"de": "Hat dich ein Podcast schon einmal dazu inspiriert, etwas Neues auszuprobieren?",
+"es": "¿Algún pódcast te ha animado a probar algo nuevo?",
+"fr": "Un podcast t'a-t-il déjà donné envie d'essayer quelque chose de nouveau ?",
+"it": "Un podcast ti ha mai spinto a provare qualcosa di nuovo?",
+"pt": "Algum podcast já te inspirou a experimentar algo novo?",
+"pt_BR": "Algum podcast já te inspirou a experimentar algo novo?"
+}
+},
+{
+"id": "podcasts-037",
+"lv": "any",
+"i18n": {
+"en": "Do you like to listen to a whole series at once or one episode at a time?",
+"de": "Hörst du gern eine ganze Staffel am Stück oder lieber eine Folge nach der anderen mit Pausen?",
+"es": "¿Te gusta escuchar una serie entera de golpe o un episodio cada vez?",
+"fr": "Aimes-tu écouter une série entière d'un coup ou un épisode à la fois ?",
+"it": "Ti piace ascoltare una serie tutta d'un fiato o un episodio alla volta?",
+"pt": "Gostas de ouvir uma série inteira de seguida ou um episódio de cada vez?",
+"pt_BR": "Você gosta de maratonar uma série inteira ou ouvir um episódio de cada vez?"
+}
+},
+{
+"id": "podcasts-038",
+"lv": "any",
+"i18n": {
+"en": "What makes a podcast intro grab your attention?",
+"de": "Was macht das Intro eines Podcasts für dich fesselnd?",
+"es": "¿Qué hace que la introducción de un pódcast te atrape?",
+"fr": "Qu'est-ce qui rend l'intro d'un podcast captivante pour toi ?",
+"it": "Che cosa rende accattivante per te l'introduzione di un podcast?",
+"pt": "O que faz a introdução de um podcast prender a tua atenção?",
+"pt_BR": "O que faz a abertura de um podcast prender sua atenção?"
+}
+},
+{
+"id": "podcasts-039",
+"lv": "any",
+"i18n": {
+"en": "Which podcast would you share with your family?",
+"de": "Welchen Podcast würdest du mit deiner Familie teilen?",
+"es": "¿Qué pódcast compartirías con tu familia?",
+"fr": "Quel podcast partagerais-tu avec ta famille ?",
+"it": "Quale podcast condivideresti con la tua famiglia?",
+"pt": "Que podcast partilharias com a tua família?",
+"pt_BR": "Qual podcast você compartilharia com sua família?"
+}
+},
+{
+"id": "podcasts-040",
+"lv": "any",
+"i18n": {
+"en": "If your life were a podcast, what would its title be?",
+"de": "Wenn dein Leben ein Podcast wäre, wie würde er heißen?",
+"es": "Si tu vida fuera un pódcast, ¿cómo se llamaría?",
+"fr": "Si ta vie était un podcast, quel serait son titre ?",
+"it": "Se la tua vita fosse un podcast, come si intitolerebbe?",
+"pt": "Se a tua vida fosse um podcast, qual seria o título?",
+"pt_BR": "Se a sua vida fosse um podcast, qual seria o título?"
+}
+},
+{
+"id": "podcasts-041",
+"lv": "beginner",
+"i18n": {
+"en": "Which podcast app do you use, and what do you like about it?",
+"de": "Welche Podcast-App nutzt du, und was gefällt dir daran?",
+"es": "¿Qué aplicación de pódcasts usas y qué te gusta de ella?",
+"fr": "Quelle application de podcasts utilises-tu, et qu'est-ce qui te plaît ?",
+"it": "Quale app per podcast usi, e che cosa ti piace?",
+"pt": "Que aplicação de podcasts usas, e de que gostas nela?",
+"pt_BR": "Qual app de podcast você usa, e do que gosta nele?"
+}
+},
+{
+"id": "podcasts-042",
+"lv": "beginner",
+"i18n": {
+"en": "Which podcast format from today's lesson would you like to try listening to?",
+"de": "Welches Podcastformat aus der heutigen Lektion würdest du gern einmal hören?",
+"es": "¿Qué formato de pódcast de la lección de hoy te gustaría probar?",
+"fr": "Quel format de podcast de la leçon d'aujourd'hui aimerais-tu essayer ?",
+"it": "Quale formato di podcast della lezione di oggi ti piacerebbe provare?",
+"pt": "Que formato de podcast da lição de hoje gostavas de experimentar?",
+"pt_BR": "Qual formato de podcast da lição de hoje você gostaria de experimentar?"
+}
+},
+{
+"id": "podcasts-043",
+"lv": "beginner",
+"i18n": {
+"en": "How do you decide if a new podcast is worth following?",
+"de": "Wie entscheidest du, ob es sich lohnt, einem neuen Podcast zu folgen?",
+"es": "¿Cómo decides si merece la pena seguir un pódcast nuevo?",
+"fr": "Comment décides-tu si un nouveau podcast vaut la peine d'être suivi ?",
+"it": "Come decidi se vale la pena seguire un nuovo podcast?",
+"pt": "Como decides se vale a pena seguir um podcast novo?",
+"pt_BR": "Como você decide se vale a pena seguir um podcast novo?"
+}
+},
+{
+"id": "podcasts-044",
+"lv": "beginner",
+"i18n": {
+"en": "Have you ever left a review or rating for a podcast?",
+"de": "Hast du schon einmal eine Bewertung für einen Podcast abgegeben?",
+"es": "¿Has dejado alguna vez una reseña o valoración a un pódcast?",
+"fr": "As-tu déjà laissé un avis ou une note à un podcast ?",
+"it": "Hai mai lasciato una recensione o un voto a un podcast?",
+"pt": "Já deixaste uma avaliação ou comentário a um podcast?",
+"pt_BR": "Você já deixou uma avaliação ou nota para um podcast?"
+}
+},
+{
+"id": "podcasts-045",
+"lv": "beginner",
+"i18n": {
+"en": "What is one thing a great host always does, in your opinion?",
+"de": "Was macht eine großartige Moderatorin oder ein großartiger Moderator deiner Meinung nach immer?",
+"es": "En tu opinión, ¿qué hace siempre un gran presentador?",
+"fr": "À ton avis, que fait toujours un excellent animateur ?",
+"it": "Secondo te, che cosa fa sempre un ottimo conduttore?",
+"pt": "Na tua opinião, o que faz sempre um ótimo apresentador?",
+"pt_BR": "Na sua opinião, o que um ótimo apresentador sempre faz?"
+}
+},
+{
+"id": "podcasts-046",
+"lv": "beginner",
+"i18n": {
+"en": "Do you notice when a podcast has poor sound? What bothers you most?",
+"de": "Merkst du, wenn ein Podcast schlechten Ton hat? Was stört dich am meisten?",
+"es": "¿Notas cuando un pódcast tiene mal sonido? ¿Qué te molesta más?",
+"fr": "Remarques-tu quand un podcast a un mauvais son ? Qu'est-ce qui te gêne le plus ?",
+"it": "Te ne accorgi quando un podcast ha un audio scadente? Che cosa ti dà più fastidio?",
+"pt": "Reparas quando um podcast tem mau som? O que te incomoda mais?",
+"pt_BR": "Você percebe quando um podcast tem som ruim? O que mais te incomoda?"
+}
+},
+{
+"id": "podcasts-047",
+"lv": "beginner",
+"i18n": {
+"en": "Which kind of podcast would you like to listen to with a friend?",
+"de": "Welche Art von Podcast würdest du gern mit einer Freundin oder einem Freund hören?",
+"es": "¿Qué tipo de pódcast te gustaría escuchar con un amigo?",
+"fr": "Quel genre de podcast aimerais-tu écouter avec un ami ?",
+"it": "Che tipo di podcast ti piacerebbe ascoltare con un amico?",
+"pt": "Que tipo de podcast gostavas de ouvir com um amigo?",
+"pt_BR": "Que tipo de podcast você gostaria de ouvir com um amigo?"
+}
+},
+{
+"id": "podcasts-048",
+"lv": "beginner",
+"i18n": {
+"en": "What would be the name of your dream podcast?",
+"de": "Wie würde dein Traumpodcast heißen?",
+"es": "¿Cómo se llamaría el pódcast de tus sueños?",
+"fr": "Comment s'appellerait le podcast de tes rêves ?",
+"it": "Come si chiamerebbe il podcast dei tuoi sogni?",
+"pt": "Como se chamaria o podcast dos teus sonhos?",
+"pt_BR": "Qual seria o nome do podcast dos seus sonhos?"
+}
+},
+{
+"id": "podcasts-049",
+"lv": "beginner",
+"i18n": {
+"en": "Who would your ideal listener be if you made a show?",
+"de": "Wer wäre deine ideale Hörerin oder dein idealer Hörer, wenn du eine Show machen würdest?",
+"es": "Si hicieras un programa, ¿quién sería tu oyente ideal?",
+"fr": "Si tu faisais une émission, qui serait ton auditeur idéal ?",
+"it": "Se facessi un programma, chi sarebbe il tuo ascoltatore ideale?",
+"pt": "Se fizesses um programa, quem seria o teu ouvinte ideal?",
+"pt_BR": "Se você fizesse um programa, quem seria seu ouvinte ideal?"
+}
+},
+{
+"id": "podcasts-050",
+"lv": "beginner",
+"i18n": {
+"en": "Would you rather make a podcast alone or with a co-host? Why?",
+"de": "Würdest du einen Podcast lieber allein oder mit jemandem zusammen machen? Warum?",
+"es": "¿Preferirías hacer un pódcast solo o con alguien? ¿Por qué?",
+"fr": "Préférerais-tu faire un podcast seul ou avec un coanimateur ? Pourquoi ?",
+"it": "Preferiresti fare un podcast da solo o con un co-conduttore? Perché?",
+"pt": "Preferias fazer um podcast sozinho ou com um coapresentador? Porquê?",
+"pt_BR": "Você preferiria fazer um podcast sozinho ou com um coapresentador? Por quê?"
+}
+},
+{
+"id": "podcasts-051",
+"lv": "beginner",
+"i18n": {
+"en": "Do you feel comfortable hearing your own recorded voice?",
+"de": "Fühlst du dich wohl, wenn du deine eigene aufgenommene Stimme hörst?",
+"es": "¿Te sientes cómodo al escuchar tu propia voz grabada?",
+"fr": "Es-tu à l'aise quand tu entends ta propre voix enregistrée ?",
+"it": "Ti senti a tuo agio quando senti la tua voce registrata?",
+"pt": "Sentes-te à vontade a ouvir a tua própria voz gravada?",
+"pt_BR": "Você se sente à vontade ouvindo sua própria voz gravada?"
+}
+},
+{
+"id": "podcasts-052",
+"lv": "beginner",
+"i18n": {
+"en": "Which room in your home do you think would sound best for recording?",
+"de": "Welcher Raum in deiner Wohnung würde sich deiner Meinung nach am besten zum Aufnehmen eignen?",
+"es": "¿Qué habitación de tu casa crees que sonaría mejor para grabar?",
+"fr": "Quelle pièce de chez toi sonnerait le mieux pour enregistrer, à ton avis ?",
+"it": "Quale stanza di casa tua pensi che suonerebbe meglio per registrare?",
+"pt": "Que divisão da tua casa achas que soaria melhor para gravar?",
+"pt_BR": "Qual cômodo da sua casa você acha que soaria melhor para gravar?"
+}
+},
+{
+"id": "podcasts-053",
+"lv": "beginner",
+"i18n": {
+"en": "Have you ever recorded yourself speaking, even just a voice message? How did it go?",
+"de": "Hast du dich schon einmal beim Sprechen aufgenommen, und sei es nur eine Sprachnachricht? Wie lief es?",
+"es": "¿Te has grabado alguna vez hablando, aunque sea un audio de mensaje? ¿Qué tal fue?",
+"fr": "T'es-tu déjà enregistré en train de parler, même juste un message vocal ? Comment ça s'est passé ?",
+"it": "Ti sei mai registrato mentre parlavi, anche solo un vocale? Com'è andata?",
+"pt": "Já te gravaste a falar, nem que seja uma mensagem de voz? Como correu?",
+"pt_BR": "Você já se gravou falando, nem que fosse um áudio? Como foi?"
+}
+},
+{
+"id": "podcasts-054",
+"lv": "beginner",
+"i18n": {
+"en": "What topic would your first episode be about?",
+"de": "Worum ginge es in deiner ersten Folge?",
+"es": "¿De qué trataría tu primer episodio?",
+"fr": "De quoi parlerait ton premier épisode ?",
+"it": "Di che cosa parlerebbe il tuo primo episodio?",
+"pt": "Sobre o que seria o teu primeiro episódio?",
+"pt_BR": "Sobre o que seria seu primeiro episódio?"
+}
+},
+{
+"id": "podcasts-055",
+"lv": "beginner",
+"i18n": {
+"en": "Which podcast intro would you like your own show to feel like?",
+"de": "Wie das Intro welches Podcasts soll sich deine eigene Show anfühlen?",
+"es": "¿A la introducción de qué pódcast te gustaría que se pareciera la de tu programa?",
+"fr": "À l'intro de quel podcast aimerais-tu que ta propre émission ressemble ?",
+"it": "A quale introduzione di podcast vorresti che somigliasse quella del tuo programma?",
+"pt": "Com a introdução de que podcast gostavas que o teu programa se parecesse?",
+"pt_BR": "Com a abertura de qual podcast você gostaria que seu programa se parecesse?"
+}
+},
+{
+"id": "podcasts-056",
+"lv": "beginner",
+"i18n": {
+"en": "How often do you think you could realistically publish an episode?",
+"de": "Wie oft könntest du realistisch gesehen eine Folge veröffentlichen?",
+"es": "¿Con qué frecuencia crees que podrías publicar un episodio de forma realista?",
+"fr": "À quelle fréquence pourrais-tu publier un épisode de façon réaliste ?",
+"it": "Con quale frequenza pensi di poter pubblicare un episodio in modo realistico?",
+"pt": "Com que frequência achas que conseguirias publicar um episódio de forma realista?",
+"pt_BR": "Com que frequência você acha que conseguiria publicar um episódio, sendo realista?"
+}
+},
+{
+"id": "podcasts-057",
+"lv": "beginner",
+"i18n": {
+"en": "What do you think listeners would enjoy most about your voice or style?",
+"de": "Was würde Hörern an deiner Stimme oder deinem Stil wohl am meisten gefallen?",
+"es": "¿Qué crees que más disfrutarían los oyentes de tu voz o de tu estilo?",
+"fr": "Qu'est-ce que les auditeurs aimeraient le plus dans ta voix ou ton style, selon toi ?",
+"it": "Che cosa pensi che piacerebbe di più agli ascoltatori della tua voce o del tuo stile?",
+"pt": "O que achas que os ouvintes mais iam gostar na tua voz ou no teu estilo?",
+"pt_BR": "O que você acha que os ouvintes mais iam curtir na sua voz ou no seu estilo?"
+}
+},
+{
+"id": "podcasts-058",
+"lv": "beginner",
+"i18n": {
+"en": "Which simple episode format would you try first: a list, a how-to or an interview?",
+"de": "Welches einfache Format würdest du zuerst ausprobieren: eine Liste, eine Anleitung oder ein Interview?",
+"es": "¿Qué formato sencillo probarías primero: una lista, un tutorial o una entrevista?",
+"fr": "Quel format simple essaierais-tu en premier : une liste, un tuto ou une interview ?",
+"it": "Quale formato semplice proveresti per primo: una classifica, un tutorial o un'intervista?",
+"pt": "Que formato simples experimentarias primeiro: uma lista, um tutorial ou uma entrevista?",
+"pt_BR": "Qual formato simples você testaria primeiro: uma lista, um tutorial ou uma entrevista?"
+}
+},
+{
+"id": "podcasts-059",
+"lv": "beginner",
+"i18n": {
+"en": "Who in your life would make a fascinating first interview guest?",
+"de": "Wer aus deinem Umfeld wäre ein faszinierender erster Interviewgast?",
+"es": "¿Qué persona de tu entorno sería un primer invitado fascinante?",
+"fr": "Qui, dans ton entourage, ferait un premier invité passionnant ?",
+"it": "Chi tra le persone che conosci sarebbe un primo ospite affascinante?",
+"pt": "Quem, na tua vida, seria um primeiro convidado fascinante?",
+"pt_BR": "Quem da sua vida seria um primeiro convidado fascinante?"
+}
+},
+{
+"id": "podcasts-060",
+"lv": "beginner",
+"i18n": {
+"en": "What would you want listeners to feel at the end of your episode?",
+"de": "Was sollen Hörer am Ende deiner Folge fühlen?",
+"es": "¿Qué te gustaría que sintieran los oyentes al final de tu episodio?",
+"fr": "Que voudrais-tu que les auditeurs ressentent à la fin de ton épisode ?",
+"it": "Che cosa vorresti che provassero gli ascoltatori alla fine del tuo episodio?",
+"pt": "O que gostavas que os ouvintes sentissem no fim do teu episódio?",
+"pt_BR": "O que você gostaria que os ouvintes sentissem no fim do seu episódio?"
+}
+},
+{
+"id": "podcasts-061",
+"lv": "beginner",
+"i18n": {
+"en": "Which filler words do you notice yourself using most when you talk?",
+"de": "Welche Füllwörter benutzt du beim Sprechen am häufigsten?",
+"es": "¿Qué muletillas notas que usas más al hablar?",
+"fr": "Quels mots de remplissage remarques-tu que tu utilises le plus en parlant ?",
+"it": "Quali intercalari ti accorgi di usare di più quando parli?",
+"pt": "Que bordões reparas que usas mais quando falas?",
+"pt_BR": "Quais muletas de linguagem você percebe que mais usa quando fala?"
+}
+},
+{
+"id": "podcasts-062",
+"lv": "beginner",
+"i18n": {
+"en": "What would your podcast cover art look like?",
+"de": "Wie würde das Cover deines Podcasts aussehen?",
+"es": "¿Cómo sería la portada de tu pódcast?",
+"fr": "À quoi ressemblerait la pochette de ton podcast ?",
+"it": "Come sarebbe la copertina del tuo podcast?",
+"pt": "Como seria a capa do teu podcast?",
+"pt_BR": "Como seria a capa do seu podcast?"
+}
+},
+{
+"id": "podcasts-063",
+"lv": "beginner",
+"i18n": {
+"en": "What part of making a podcast feels most exciting to you, and what feels hardest?",
+"de": "Was am Podcastmachen findest du am spannendsten, und was am schwierigsten?",
+"es": "¿Qué parte de hacer un pódcast te emociona más y cuál te parece más difícil?",
+"fr": "Quelle étape de la création d'un podcast t'enthousiasme le plus, et laquelle te semble la plus difficile ?",
+"it": "Quale parte del fare un podcast ti entusiasma di più, e quale ti sembra più difficile?",
+"pt": "Que parte de fazer um podcast te entusiasma mais, e qual te parece mais difícil?",
+"pt_BR": "Qual parte de fazer um podcast mais te empolga, e qual parece mais difícil?"
+}
+},
+{
+"id": "podcasts-064",
+"lv": "beginner",
+"i18n": {
+"en": "How would you describe your show in one sentence to a stranger?",
+"de": "Wie würdest du deine Show einer fremden Person in einem Satz beschreiben?",
+"es": "¿Cómo describirías tu programa en una frase a un desconocido?",
+"fr": "Comment décrirais-tu ton émission en une phrase à un inconnu ?",
+"it": "Come descriveresti il tuo programma in una frase a uno sconosciuto?",
+"pt": "Como descreverias o teu programa numa frase a um desconhecido?",
+"pt_BR": "Como você descreveria seu programa em uma frase para um desconhecido?"
+}
+},
+{
+"id": "podcasts-065",
+"lv": "beginner",
+"i18n": {
+"en": "What music or sound would you choose for your podcast theme?",
+"de": "Welche Musik oder welchen Klang würdest du für das Thema deines Podcasts wählen?",
+"es": "¿Qué música o sonido elegirías como sintonía de tu pódcast?",
+"fr": "Quelle musique ou quel son choisirais-tu comme générique de ton podcast ?",
+"it": "Che musica o suono sceglieresti come sigla del tuo podcast?",
+"pt": "Que música ou som escolherias para o genérico do teu podcast?",
+"pt_BR": "Que música ou som você escolheria para a vinheta do seu podcast?"
+}
+},
+{
+"id": "podcasts-066",
+"lv": "intermediate",
+"i18n": {
+"en": "Which podcast tells stories in a way you would love to learn from?",
+"de": "Von welchem Podcast würdest du gern lernen, wie man Geschichten erzählt?",
+"es": "¿De qué pódcast te gustaría aprender su forma de contar historias?",
+"fr": "De quel podcast aimerais-tu apprendre la façon de raconter des histoires ?",
+"it": "Da quale podcast ti piacerebbe imparare il modo di raccontare storie?",
+"pt": "Com que podcast gostavas de aprender a contar histórias?",
+"pt_BR": "Com qual podcast você gostaria de aprender a contar histórias?"
+}
+},
+{
+"id": "podcasts-067",
+"lv": "intermediate",
+"i18n": {
+"en": "What is a personal story you would feel comfortable sharing on air?",
+"de": "Welche persönliche Geschichte würdest du gern in einer Sendung erzählen?",
+"es": "¿Qué historia personal te sentirías cómodo compartiendo en antena?",
+"fr": "Quelle histoire personnelle serais-tu à l'aise de partager à l'antenne ?",
+"it": "Quale storia personale ti sentiresti a tuo agio a raccontare in onda?",
+"pt": "Que história pessoal te sentirias à vontade para partilhar no ar?",
+"pt_BR": "Qual história pessoal você se sentiria à vontade para contar no ar?"
+}
+},
+{
+"id": "podcasts-068",
+"lv": "intermediate",
+"i18n": {
+"en": "What makes you keep listening after the first minute of an episode?",
+"de": "Was bringt dich dazu, nach der ersten Minute einer Folge weiterzuhören?",
+"es": "¿Qué hace que sigas escuchando después del primer minuto de un episodio?",
+"fr": "Qu'est-ce qui te pousse à continuer d'écouter après la première minute d'un épisode ?",
+"it": "Che cosa ti fa continuare ad ascoltare dopo il primo minuto di un episodio?",
+"pt": "O que te faz continuar a ouvir depois do primeiro minuto de um episódio?",
+"pt_BR": "O que faz você continuar ouvindo depois do primeiro minuto de um episódio?"
+}
+},
+{
+"id": "podcasts-069",
+"lv": "intermediate",
+"i18n": {
+"en": "Which question do you think guests are tired of hearing, and what would you ask instead?",
+"de": "Welche Frage können Gäste wohl nicht mehr hören, und was würdest du stattdessen fragen?",
+"es": "¿Qué pregunta crees que los invitados están cansados de oír y qué preguntarías tú?",
+"fr": "Quelle question les invités en ont-ils assez d'entendre, et que demanderais-tu à la place ?",
+"it": "Quale domanda pensi che gli ospiti siano stanchi di sentire, e che cosa chiederesti invece?",
+"pt": "Que pergunta achas que os convidados estão fartos de ouvir, e o que perguntarias em vez disso?",
+"pt_BR": "Qual pergunta você acha que os convidados cansaram de ouvir, e o que perguntaria no lugar?"
+}
+},
+{
+"id": "podcasts-070",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you feel about editing: fun puzzle or necessary chore?",
+"de": "Wie siehst du das Schneiden: als spannendes Puzzle oder notwendige Pflicht?",
+"es": "¿Qué te parece la edición: un rompecabezas divertido o una tarea necesaria?",
+"fr": "Que penses-tu du montage : un puzzle amusant ou une corvée nécessaire ?",
+"it": "Che cosa pensi del montaggio: un puzzle divertente o un compito necessario?",
+"pt": "O que achas da edição: um puzzle divertido ou uma tarefa necessária?",
+"pt_BR": "O que você acha da edição: um quebra-cabeça divertido ou uma obrigação?"
+}
+},
+{
+"id": "podcasts-071",
+"lv": "intermediate",
+"i18n": {
+"en": "Which sounds from your daily life would you love to capture in a recording?",
+"de": "Welche Geräusche aus deinem Alltag würdest du gern aufnehmen?",
+"es": "¿Qué sonidos de tu día a día te encantaría grabar?",
+"fr": "Quels sons de ton quotidien aimerais-tu capturer dans un enregistrement ?",
+"it": "Quali suoni della tua vita quotidiana ti piacerebbe registrare?",
+"pt": "Que sons do teu dia a dia adorarias captar numa gravação?",
+"pt_BR": "Quais sons do seu dia a dia você adoraria capturar numa gravação?"
+}
+},
+{
+"id": "podcasts-072",
+"lv": "intermediate",
+"i18n": {
+"en": "When does background music help an episode, and when does it get in the way?",
+"de": "Wann hilft Hintergrundmusik einer Folge, und wann stört sie?",
+"es": "¿Cuándo ayuda la música de fondo a un episodio y cuándo estorba?",
+"fr": "Quand la musique de fond aide-t-elle un épisode, et quand gêne-t-elle ?",
+"it": "Quando la musica di sottofondo aiuta un episodio, e quando lo disturba?",
+"pt": "Quando é que a música de fundo ajuda um episódio, e quando atrapalha?",
+"pt_BR": "Quando a música de fundo ajuda um episódio, e quando atrapalha?"
+}
+},
+{
+"id": "podcasts-073",
+"lv": "intermediate",
+"i18n": {
+"en": "Which segment idea would make listeners look forward to every episode of your show?",
+"de": "Mit welcher Rubrik würden sich Hörer auf jede Folge deiner Show freuen?",
+"es": "¿Qué sección haría que los oyentes esperaran con ganas cada episodio de tu programa?",
+"fr": "Quelle rubrique donnerait aux auditeurs hâte d'écouter chaque épisode de ton émission ?",
+"it": "Quale rubrica farebbe aspettare agli ascoltatori ogni episodio del tuo programma?",
+"pt": "Que rubrica faria os ouvintes esperarem ansiosamente por cada episódio do teu programa?",
+"pt_BR": "Qual quadro faria os ouvintes esperarem ansiosos por cada episódio do seu programa?"
+}
+},
+{
+"id": "podcasts-074",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you think a host can make a nervous guest feel at ease?",
+"de": "Wie kann eine Moderatorin oder ein Moderator einem nervösen Gast die Anspannung nehmen?",
+"es": "¿Cómo crees que un presentador puede tranquilizar a un invitado nervioso?",
+"fr": "Comment un animateur peut-il mettre à l'aise un invité nerveux, selon toi ?",
+"it": "Come pensi che un conduttore possa mettere a proprio agio un ospite nervoso?",
+"pt": "Como achas que um apresentador pode pôr à vontade um convidado nervoso?",
+"pt_BR": "Como você acha que um apresentador pode deixar um convidado nervoso à vontade?"
+}
+},
+{
+"id": "podcasts-075",
+"lv": "intermediate",
+"i18n": {
+"en": "Which podcast do you think has the best sound quality, and what makes it special?",
+"de": "Welcher Podcast hat deiner Meinung nach den besten Klang, und was macht ihn besonders?",
+"es": "¿Qué pódcast crees que tiene la mejor calidad de sonido y qué lo hace especial?",
+"fr": "Quel podcast a selon toi la meilleure qualité sonore, et qu'est-ce qui le rend spécial ?",
+"it": "Quale podcast secondo te ha la migliore qualità audio, e che cosa lo rende speciale?",
+"pt": "Que podcast achas que tem a melhor qualidade de som, e o que o torna especial?",
+"pt_BR": "Qual podcast você acha que tem a melhor qualidade de som, e o que o torna especial?"
+}
+},
+{
+"id": "podcasts-076",
+"lv": "intermediate",
+"i18n": {
+"en": "Which open question would you ask to get a guest telling a real story?",
+"de": "Mit welcher offenen Frage würdest du einen Gast dazu bringen, eine echte Geschichte zu erzählen?",
+"es": "¿Qué pregunta abierta harías para que un invitado contara una historia de verdad?",
+"fr": "Quelle question ouverte poserais-tu pour qu'un invité raconte une vraie histoire ?",
+"it": "Quale domanda aperta faresti per spingere un ospite a raccontare una storia vera?",
+"pt": "Que pergunta aberta farias para levar um convidado a contar uma história verdadeira?",
+"pt_BR": "Que pergunta aberta você faria para um convidado contar uma história de verdade?"
+}
+},
+{
+"id": "podcasts-077",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you prefer to prepare: a full script, bullet points or total freedom?",
+"de": "Wie bereitest du dich lieber vor: mit vollem Skript, Stichpunkten oder ganz frei?",
+"es": "¿Cómo prefieres prepararte: con guion completo, con puntos clave o con total libertad?",
+"fr": "Comment préfères-tu te préparer : un script complet, des notes en points ou une liberté totale ?",
+"it": "Come preferisci prepararti: copione completo, punti chiave o totale libertà?",
+"pt": "Como preferes preparar-te: guião completo, tópicos ou liberdade total?",
+"pt_BR": "Como você prefere se preparar: roteiro completo, tópicos ou liberdade total?"
+}
+},
+{
+"id": "podcasts-078",
+"lv": "intermediate",
+"i18n": {
+"en": "What small detail can make a listener picture a place they have never been?",
+"de": "Welches kleine Detail kann Hörern einen Ort vor Augen führen, an dem sie nie waren?",
+"es": "¿Qué pequeño detalle puede hacer que un oyente imagine un lugar donde nunca ha estado?",
+"fr": "Quel petit détail peut faire imaginer à un auditeur un lieu où il n'est jamais allé ?",
+"it": "Quale piccolo dettaglio può far immaginare a un ascoltatore un posto in cui non è mai stato?",
+"pt": "Que pequeno pormenor pode fazer um ouvinte imaginar um lugar onde nunca esteve?",
+"pt_BR": "Que pequeno detalhe pode fazer um ouvinte imaginar um lugar onde nunca esteve?"
+}
+},
+{
+"id": "podcasts-079",
+"lv": "intermediate",
+"i18n": {
+"en": "Which short clip from your show would you share to attract new listeners?",
+"de": "Welchen kurzen Ausschnitt aus deiner Show würdest du teilen, um neue Hörer zu gewinnen?",
+"es": "¿Qué fragmento corto de tu programa compartirías para atraer nuevos oyentes?",
+"fr": "Quel court extrait de ton émission partagerais-tu pour attirer de nouveaux auditeurs ?",
+"it": "Quale breve estratto del tuo programma condivideresti per attirare nuovi ascoltatori?",
+"pt": "Que excerto curto do teu programa partilharias para atrair novos ouvintes?",
+"pt_BR": "Qual trecho curto do seu programa você compartilharia para atrair novos ouvintes?"
+}
+},
+{
+"id": "podcasts-080",
+"lv": "intermediate",
+"i18n": {
+"en": "Why do you think transcripts make podcasts better for more people?",
+"de": "Warum machen Transkripte Podcasts deiner Meinung nach für mehr Menschen besser?",
+"es": "¿Por qué crees que las transcripciones hacen los pódcasts mejores para más personas?",
+"fr": "Pourquoi les transcriptions rendent-elles les podcasts meilleurs pour plus de monde, selon toi ?",
+"it": "Perché pensi che le trascrizioni rendano i podcast migliori per più persone?",
+"pt": "Porque achas que as transcrições tornam os podcasts melhores para mais pessoas?",
+"pt_BR": "Por que você acha que as transcrições deixam os podcasts melhores para mais pessoas?"
+}
+},
+{
+"id": "podcasts-081",
+"lv": "advanced",
+"i18n": {
+"en": "Which celebrated episode would you take apart to study its structure, and why?",
+"de": "Welche gefeierte Folge würdest du auseinandernehmen, um ihren Aufbau zu studieren, und warum?",
+"es": "¿Qué episodio aclamado desmontarías para estudiar su estructura y por qué?",
+"fr": "Quel épisode célèbre décortiquerais-tu pour étudier sa structure, et pourquoi ?",
+"it": "Quale episodio celebre smonteresti per studiarne la struttura, e perché?",
+"pt": "Que episódio aclamado desmontarias para estudar a sua estrutura, e porquê?",
+"pt_BR": "Qual episódio aclamado você desmontaria para estudar a estrutura, e por quê?"
+}
+},
+{
+"id": "podcasts-082",
+"lv": "intermediate",
+"i18n": {
+"en": "How would you share your episodes without feeling pushy?",
+"de": "Wie würdest du deine Folgen teilen, ohne aufdringlich zu wirken?",
+"es": "¿Cómo compartirías tus episodios sin parecer insistente?",
+"fr": "Comment partagerais-tu tes épisodes sans paraître insistant ?",
+"it": "Come condivideresti i tuoi episodi senza sembrare invadente?",
+"pt": "Como partilharias os teus episódios sem pareceres insistente?",
+"pt_BR": "Como você divulgaria seus episódios sem parecer insistente?"
+}
+},
+{
+"id": "podcasts-083",
+"lv": "intermediate",
+"i18n": {
+"en": "What kind of listener feedback would make your day as a creator?",
+"de": "Welches Feedback von Hörern würde dir als Podcaster den Tag versüßen?",
+"es": "¿Qué comentario de un oyente te alegraría el día como creador?",
+"fr": "Quel retour d'auditeur illuminerait ta journée de créateur ?",
+"it": "Quale commento di un ascoltatore ti renderebbe felice come creatore?",
+"pt": "Que comentário de um ouvinte te alegraria o dia como criador?",
+"pt_BR": "Que comentário de ouvinte faria seu dia como criador?"
+}
+},
+{
+"id": "podcasts-084",
+"lv": "intermediate",
+"i18n": {
+"en": "Which would you rather make: a limited series with an ending or an ongoing weekly show?",
+"de": "Was würdest du lieber machen: eine abgeschlossene Serie oder eine wöchentliche Show ohne Ende?",
+"es": "¿Qué preferirías hacer: una serie limitada con final o un programa semanal continuo?",
+"fr": "Que préférerais-tu faire : une série limitée avec une fin ou une émission hebdomadaire continue ?",
+"it": "Che cosa preferiresti fare: una serie limitata con un finale o un programma settimanale continuo?",
+"pt": "O que preferias fazer: uma série limitada com fim ou um programa semanal contínuo?",
+"pt_BR": "O que você preferiria fazer: uma série limitada com final ou um programa semanal contínuo?"
+}
+},
+{
+"id": "podcasts-085",
+"lv": "intermediate",
+"i18n": {
+"en": "How would you plan a season so you never run out of ideas?",
+"de": "Wie würdest du eine Staffel planen, damit dir nie die Ideen ausgehen?",
+"es": "¿Cómo planificarías una temporada para no quedarte nunca sin ideas?",
+"fr": "Comment planifierais-tu une saison pour ne jamais manquer d'idées ?",
+"it": "Come pianificheresti una stagione per non restare mai senza idee?",
+"pt": "Como planearias uma temporada para nunca ficares sem ideias?",
+"pt_BR": "Como você planejaria uma temporada para nunca ficar sem ideias?"
+}
+},
+{
+"id": "podcasts-086",
+"lv": "intermediate",
+"i18n": {
+"en": "Which audio drama or fiction podcast would you love to hear more like?",
+"de": "Von welcher Art Hörspiel oder Fiction-Podcast würdest du gern mehr hören?",
+"es": "¿De qué ficción sonora o pódcast de ficción te gustaría escuchar más?",
+"fr": "De quel genre de fiction audio aimerais-tu entendre davantage ?",
+"it": "Di quale tipo di audiodramma o podcast di finzione vorresti sentire di più?",
+"pt": "De que tipo de ficção sonora gostavas de ouvir mais?",
+"pt_BR": "De que tipo de audiodrama ou podcast de ficção você gostaria de ouvir mais?"
+}
+},
+{
+"id": "podcasts-087",
+"lv": "advanced",
+"i18n": {
+"en": "What would make your podcast truly different from every other show on the same topic?",
+"de": "Was würde deinen Podcast wirklich von allen anderen Shows zum selben Thema unterscheiden?",
+"es": "¿Qué haría que tu pódcast fuera realmente distinto de los demás sobre el mismo tema?",
+"fr": "Qu'est-ce qui rendrait ton podcast vraiment différent de toutes les émissions sur le même sujet ?",
+"it": "Che cosa renderebbe il tuo podcast davvero diverso da tutti gli altri sullo stesso tema?",
+"pt": "O que tornaria o teu podcast realmente diferente de todos os outros sobre o mesmo tema?",
+"pt_BR": "O que tornaria seu podcast realmente diferente de todos os outros sobre o mesmo tema?"
+}
+},
+{
+"id": "podcasts-088",
+"lv": "advanced",
+"i18n": {
+"en": "How would you build a story that unfolds across several episodes?",
+"de": "Wie würdest du eine Geschichte aufbauen, die sich über mehrere Folgen entfaltet?",
+"es": "¿Cómo construirías una historia que se desarrolle a lo largo de varios episodios?",
+"fr": "Comment construirais-tu une histoire qui se déroule sur plusieurs épisodes ?",
+"it": "Come costruiresti una storia che si sviluppa in più episodi?",
+"pt": "Como construirias uma história que se desenrola ao longo de vários episódios?",
+"pt_BR": "Como você construiria uma história que se desenrola ao longo de vários episódios?"
+}
+},
+{
+"id": "podcasts-089",
+"lv": "advanced",
+"i18n": {
+"en": "Where do you draw the line between editing for clarity and changing what someone meant?",
+"de": "Wo ziehst du die Grenze zwischen Schneiden für mehr Klarheit und dem Verändern einer Aussage?",
+"es": "¿Dónde pones el límite entre editar para dar claridad y cambiar lo que alguien quiso decir?",
+"fr": "Où places-tu la limite entre monter pour clarifier et changer ce que quelqu'un voulait dire ?",
+"it": "Dove metti il confine tra montare per chiarezza e cambiare ciò che qualcuno intendeva dire?",
+"pt": "Onde traças a linha entre editar para dar clareza e mudar o que alguém quis dizer?",
+"pt_BR": "Onde você coloca o limite entre editar para dar clareza e mudar o que alguém quis dizer?"
+}
+},
+{
+"id": "podcasts-090",
+"lv": "advanced",
+"i18n": {
+"en": "How could a podcast connect listeners from two very different cultures?",
+"de": "Wie könnte ein Podcast Hörer aus zwei sehr unterschiedlichen Kulturen verbinden?",
+"es": "¿Cómo podría un pódcast unir a oyentes de dos culturas muy distintas?",
+"fr": "Comment un podcast pourrait-il relier des auditeurs de deux cultures très différentes ?",
+"it": "Come potrebbe un podcast unire ascoltatori di due culture molto diverse?",
+"pt": "Como poderia um podcast ligar ouvintes de duas culturas muito diferentes?",
+"pt_BR": "Como um podcast poderia conectar ouvintes de duas culturas bem diferentes?"
+}
+},
+{
+"id": "podcasts-091",
+"lv": "advanced",
+"i18n": {
+"en": "What would a bilingual episode of your dream show sound like?",
+"de": "Wie würde eine zweisprachige Folge deiner Traumshow klingen?",
+"es": "¿Cómo sonaría un episodio bilingüe del programa de tus sueños?",
+"fr": "À quoi ressemblerait un épisode bilingue de l'émission de tes rêves ?",
+"it": "Come suonerebbe un episodio bilingue del programma dei tuoi sogni?",
+"pt": "Como soaria um episódio bilingue do programa dos teus sonhos?",
+"pt_BR": "Como seria um episódio bilíngue do programa dos seus sonhos?"
+}
+},
+{
+"id": "podcasts-092",
+"lv": "advanced",
+"i18n": {
+"en": "Which sound design moment in a podcast has stayed with you, and why?",
+"de": "Welcher Sounddesign-Moment in einem Podcast ist dir im Gedächtnis geblieben, und warum?",
+"es": "¿Qué momento de diseño sonoro de un pódcast se te ha quedado grabado y por qué?",
+"fr": "Quel moment de design sonore dans un podcast t'est resté en mémoire, et pourquoi ?",
+"it": "Quale momento di sound design in un podcast ti è rimasto impresso, e perché?",
+"pt": "Que momento de design de som num podcast te ficou na memória, e porquê?",
+"pt_BR": "Qual momento de design de som num podcast ficou na sua memória, e por quê?"
+}
+},
+{
+"id": "podcasts-093",
+"lv": "advanced",
+"i18n": {
+"en": "How do you think hosts can stay honest with listeners when they have sponsors?",
+"de": "Wie können Moderatoren deiner Meinung nach ehrlich zu Hörern bleiben, wenn sie Sponsoren haben?",
+"es": "¿Cómo crees que los presentadores pueden ser honestos con los oyentes cuando tienen patrocinadores?",
+"fr": "Comment les animateurs peuvent-ils rester honnêtes avec leurs auditeurs quand ils ont des sponsors ?",
+"it": "Come pensi che i conduttori possano restare onesti con gli ascoltatori quando hanno degli sponsor?",
+"pt": "Como achas que os apresentadores podem ser honestos com os ouvintes quando têm patrocinadores?",
+"pt_BR": "Como você acha que os apresentadores podem ser honestos com os ouvintes quando têm patrocinadores?"
+}
+},
+{
+"id": "podcasts-094",
+"lv": "advanced",
+"i18n": {
+"en": "What goal would matter more to you than download numbers?",
+"de": "Welches Ziel wäre dir wichtiger als Downloadzahlen?",
+"es": "¿Qué objetivo te importaría más que el número de descargas?",
+"fr": "Quel objectif compterait plus pour toi que le nombre de téléchargements ?",
+"it": "Quale obiettivo conterebbe per te più del numero di download?",
+"pt": "Que objetivo te importaria mais do que o número de downloads?",
+"pt_BR": "Qual meta importaria mais para você do que o número de downloads?"
+}
+},
+{
+"id": "podcasts-095",
+"lv": "advanced",
+"i18n": {
+"en": "How would you keep a show going for years without burning out?",
+"de": "Wie würdest du eine Show jahrelang am Laufen halten, ohne auszubrennen?",
+"es": "¿Cómo mantendrías un programa durante años sin agotarte?",
+"fr": "Comment ferais-tu durer une émission pendant des années sans t'épuiser ?",
+"it": "Come porteresti avanti un programma per anni senza esaurirti?",
+"pt": "Como manterias um programa durante anos sem te esgotares?",
+"pt_BR": "Como você manteria um programa por anos sem se esgotar?"
+}
+},
+{
+"id": "podcasts-096",
+"lv": "advanced",
+"i18n": {
+"en": "Which people in your community have stories that deserve to be recorded?",
+"de": "Welche Menschen in deinem Umfeld haben Geschichten, die es verdienen, aufgenommen zu werden?",
+"es": "¿Qué personas de tu comunidad tienen historias que merecen ser grabadas?",
+"fr": "Quelles personnes de ton entourage ont des histoires qui mériteraient d'être enregistrées ?",
+"it": "Quali persone della tua comunità hanno storie che meritano di essere registrate?",
+"pt": "Que pessoas da tua comunidade têm histórias que merecem ser gravadas?",
+"pt_BR": "Quais pessoas da sua comunidade têm histórias que merecem ser gravadas?"
+}
+},
+{
+"id": "podcasts-097",
+"lv": "advanced",
+"i18n": {
+"en": "How do you think podcasts and audio stories will change in the future?",
+"de": "Wie werden sich Podcasts und Audiogeschichten deiner Meinung nach in Zukunft verändern?",
+"es": "¿Cómo crees que cambiarán los pódcasts y las historias en audio en el futuro?",
+"fr": "Comment les podcasts et les récits audio vont-ils évoluer à l'avenir, selon toi ?",
+"it": "Come pensi che cambieranno in futuro i podcast e le storie audio?",
+"pt": "Como achas que os podcasts e as histórias em áudio vão mudar no futuro?",
+"pt_BR": "Como você acha que os podcasts e as histórias em áudio vão mudar no futuro?"
+}
+},
+{
+"id": "podcasts-098",
+"lv": "advanced",
+"i18n": {
+"en": "What would you teach a friend who wants to start their first podcast?",
+"de": "Was würdest du einer Freundin oder einem Freund beibringen, die ihren ersten Podcast starten wollen?",
+"es": "¿Qué le enseñarías a un amigo que quiere empezar su primer pódcast?",
+"fr": "Qu'apprendrais-tu à un ami qui veut lancer son premier podcast ?",
+"it": "Che cosa insegneresti a un amico che vuole iniziare il suo primo podcast?",
+"pt": "O que ensinarias a um amigo que quer começar o seu primeiro podcast?",
+"pt_BR": "O que você ensinaria a um amigo que quer começar o primeiro podcast?"
+}
+},
+{
+"id": "podcasts-099",
+"lv": "advanced",
+"i18n": {
+"en": "If you made a final episode of a show, how would you want to say goodbye?",
+"de": "Wenn du die letzte Folge einer Show machen würdest, wie würdest du dich verabschieden?",
+"es": "Si hicieras el último episodio de un programa, ¿cómo te gustaría despedirte?",
+"fr": "Si tu faisais le dernier épisode d'une émission, comment aimerais-tu dire au revoir ?",
+"it": "Se facessi l'ultimo episodio di un programma, come vorresti salutare?",
+"pt": "Se fizesses o último episódio de um programa, como gostavas de te despedir?",
+"pt_BR": "Se você fizesse o último episódio de um programa, como gostaria de se despedir?"
+}
+},
+{
+"id": "podcasts-100",
+"lv": "advanced",
+"i18n": {
+"en": "Looking back on this journey, how has the way you listen to podcasts changed?",
+"de": "Wenn du auf diese Reise zurückblickst: Wie hat sich deine Art, Podcasts zu hören, verändert?",
+"es": "Mirando atrás en este camino, ¿cómo ha cambiado tu forma de escuchar pódcasts?",
+"fr": "En repensant à ce parcours, comment ta façon d'écouter les podcasts a-t-elle changé ?",
+"it": "Ripensando a questo percorso, come è cambiato il tuo modo di ascoltare i podcast?",
+"pt": "Olhando para trás neste percurso, como mudou a tua forma de ouvir podcasts?",
+"pt_BR": "Olhando para trás nessa jornada, como mudou o seu jeito de ouvir podcasts?"
+}
+}
+]
+}

@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_german",
+ "lessons": [
+  {
+   "d": 331,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Philosophy café",
+     "g": "Talk about big questions in German with Kant, Hegel and Hannah Arendt.",
+     "p": [
+      "Kant asked: Was kann ich wissen? Was soll ich tun? His motto: Habe Mut, dich deines eigenen Verstandes zu bedienen!",
+      "Hegel saw history as a development of ideas; Hannah Arendt wrote about thinking, acting and living together in a community.",
+      "Useful phrases: Ich frage mich, ob... / Das hängt davon ab, wie man... definiert. / Angenommen, dass..."
+     ],
+     "q": "Kant asked Was soll ich tun? What question would you put at the centre of your own philosophy?",
+     "c": "Choose one big question, like Was ist Glück?, and write three sentences with Ich frage mich, ob... and Angenommen..."
+    },
+    "de": {
+     "t": "Philosophisches Café",
+     "g": "Du sprichst über große Fragen mit Kant, Hegel und Hannah Arendt.",
+     "p": [
+      "Kant fragte: Was kann ich wissen? Was soll ich tun? Sein Motto: Habe Mut, dich deines eigenen Verstandes zu bedienen!",
+      "Hegel sah die Geschichte als Entwicklung von Ideen; Hannah Arendt schrieb über Denken, Handeln und das Zusammenleben.",
+      "Nützliche Wendungen: Ich frage mich, ob... / Das hängt davon ab, wie man... definiert. / Angenommen, dass..."
+     ],
+     "q": "Kant fragte: Was soll ich tun? Welche Frage stünde im Zentrum deiner eigenen Philosophie?",
+     "c": "Wähl eine große Frage wie Was ist Glück? und schreib drei Sätze mit Ich frage mich, ob... und Angenommen..."
+    },
+    "es": {
+     "t": "Café filosófico",
+     "g": "Habla de grandes preguntas en alemán con Kant, Hegel y Hannah Arendt.",
+     "p": [
+      "Kant preguntó: Was kann ich wissen? Was soll ich tun? Su lema: Habe Mut, dich deines eigenen Verstandes zu bedienen!",
+      "Hegel vio la historia como un desarrollo de ideas; Hannah Arendt escribió sobre pensar, actuar y la vida en común.",
+      "Frases útiles: Ich frage mich, ob... / Das hängt davon ab, wie man... definiert. / Angenommen, dass..."
+     ],
+     "q": "Kant preguntó Was soll ich tun? ¿Qué pregunta pondrías en el centro de tu propia filosofía?",
+     "c": "Elige una gran pregunta, como Was ist Glück?, y escribe tres frases con Ich frage mich, ob... y Angenommen..."
+    },
+    "fr": {
+     "t": "Café philo",
+     "g": "Parler des grandes questions en allemand avec Kant, Hegel et Hannah Arendt.",
+     "p": [
+      "Kant demandait : Was kann ich wissen? Was soll ich tun? Sa devise : Habe Mut, dich deines eigenen Verstandes zu bedienen!",
+      "Hegel voyait l'histoire comme un développement des idées ; Hannah Arendt a écrit sur penser, agir et vivre ensemble.",
+      "Formules utiles : Ich frage mich, ob... / Das hängt davon ab, wie man... definiert. / Angenommen, dass..."
+     ],
+     "q": "Kant demandait Was soll ich tun? Quelle question mettrais-tu au centre de ta propre philosophie ?",
+     "c": "Choisis une grande question, comme Was ist Glück?, et écris trois phrases avec Ich frage mich, ob... et Angenommen..."
+    },
+    "it": {
+     "t": "Caffè filosofico",
+     "g": "Parla di grandi domande in tedesco con Kant, Hegel e Hannah Arendt.",
+     "p": [
+      "Kant chiedeva: Was kann ich wissen? Was soll ich tun? Il suo motto: Habe Mut, dich deines eigenen Verstandes zu bedienen!",
+      "Hegel vedeva la storia come sviluppo delle idee; Hannah Arendt scrisse sul pensare, l'agire e il vivere insieme.",
+      "Frasi utili: Ich frage mich, ob... / Das hängt davon ab, wie man... definiert. / Angenommen, dass..."
+     ],
+     "q": "Kant chiedeva Was soll ich tun? Quale domanda metteresti al centro della tua filosofia?",
+     "c": "Scegli una grande domanda, come Was ist Glück?, e scrivi tre frasi con Ich frage mich, ob... e Angenommen..."
+    },
+    "pt": {
+     "t": "Café filosófico",
+     "g": "Falar de grandes questões em alemão com Kant, Hegel e Hannah Arendt.",
+     "p": [
+      "Kant perguntou: Was kann ich wissen? Was soll ich tun? O seu lema: Habe Mut, dich deines eigenen Verstandes zu bedienen!",
+      "Hegel via a história como desenvolvimento de ideias; Hannah Arendt escreveu sobre pensar, agir e viver em comum.",
+      "Frases úteis: Ich frage mich, ob... / Das hängt davon ab, wie man... definiert. / Angenommen, dass..."
+     ],
+     "q": "Kant perguntou Was soll ich tun? Que pergunta porias no centro da tua própria filosofia?",
+     "c": "Escolhe uma grande pergunta, como Was ist Glück?, e escreve três frases com Ich frage mich, ob... e Angenommen..."
+    },
+    "pt_BR": {
+     "t": "Café filosófico",
+     "g": "Falar de grandes questões em alemão com Kant, Hegel e Hannah Arendt.",
+     "p": [
+      "Kant perguntou: Was kann ich wissen? Was soll ich tun? Seu lema: Habe Mut, dich deines eigenen Verstandes zu bedienen!",
+      "Hegel via a história como desenvolvimento de ideias; Hannah Arendt escreveu sobre pensar, agir e viver em comum.",
+      "Frases úteis: Ich frage mich, ob... / Das hängt davon ab, wie man... definiert. / Angenommen, dass..."
+     ],
+     "q": "Kant perguntou Was soll ich tun? Que pergunta você colocaria no centro da sua própria filosofia?",
+     "c": "Escolha uma grande pergunta, como Was ist Glück?, e escreva três frases com Ich frage mich, ob... e Angenommen..."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "die Philosophie",
+      "ex": "Philosophie beginnt mit dem Staunen."
+     },
+     {
+      "w": "der Verstand",
+      "ex": "Kant wollte, dass wir unseren eigenen Verstand benutzen."
+     },
+     {
+      "w": "die Vernunft",
+      "ex": "Mit Vernunft kann man viele Probleme lösen."
+     },
+     {
+      "w": "das hängt davon ab",
+      "ex": "Ob das gerecht ist, hängt davon ab, wie man es betrachtet."
+     },
+     {
+      "w": "angenommen, dass ...",
+      "ex": "Angenommen, dass alle ehrlich wären, wie sähe die Welt aus?"
+     },
+     {
+      "w": "sich fragen, ob ...",
+      "ex": "Ich frage mich oft, ob Glück lernbar ist."
+     }
+    ],
+    "gram": "Genitivverb: sich + Genitiv bedienen (sich seines Verstandes bedienen). Indirekte Frage: Ich frage mich, ob..."
+   }
+  },
+  {
+   "d": 332,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Discussing art",
+     "g": "Talk about a work of art: the work, the period, the technique and what moves you.",
+     "p": [
+      "Describing: Das Werk stammt aus der Epoche der Romantik. Im Vordergrund sieht man..., im Hintergrund...",
+      "Technique: Der Maler arbeitet mit kräftigen Farben / mit Licht und Schatten. Caspar David Friedrich painted misty landscapes.",
+      "Personal reaction: Was mich besonders berührt, ist... / Das Bild wirkt auf mich ruhig und geheimnisvoll."
+     ],
+     "q": "Think of a painting or photo you love. What moves you about it?",
+     "c": "Describe a work of art you like in five sentences: period, what you see, technique and what touches you."
+    },
+    "de": {
+     "t": "Über Kunst sprechen",
+     "g": "Du sprichst über ein Kunstwerk: Werk, Epoche, Technik und was dich berührt.",
+     "p": [
+      "Beschreiben: Das Werk stammt aus der Epoche der Romantik. Im Vordergrund sieht man..., im Hintergrund...",
+      "Technik: Der Maler arbeitet mit kräftigen Farben / mit Licht und Schatten. Caspar David Friedrich malte neblige Landschaften.",
+      "Persönliche Wirkung: Was mich besonders berührt, ist... / Das Bild wirkt auf mich ruhig und geheimnisvoll."
+     ],
+     "q": "Denk an ein Bild oder Foto, das du liebst. Was berührt dich daran?",
+     "c": "Beschreib ein Kunstwerk, das dir gefällt, in fünf Sätzen: Epoche, was man sieht, Technik und was dich berührt."
+    },
+    "es": {
+     "t": "Hablar de arte",
+     "g": "Habla de una obra de arte: la obra, la época, la técnica y lo que te conmueve.",
+     "p": [
+      "Describir: Das Werk stammt aus der Epoche der Romantik. Im Vordergrund sieht man..., im Hintergrund...",
+      "Técnica: Der Maler arbeitet mit kräftigen Farben / mit Licht und Schatten. Caspar David Friedrich pintó paisajes con niebla.",
+      "Reacción personal: Was mich besonders berührt, ist... / Das Bild wirkt auf mich ruhig und geheimnisvoll."
+     ],
+     "q": "Piensa en un cuadro o foto que te encante. ¿Qué te conmueve de él?",
+     "c": "Describe una obra de arte que te guste en cinco frases: época, qué se ve, técnica y qué te emociona."
+    },
+    "fr": {
+     "t": "Parler d'art",
+     "g": "Parler d'une œuvre : l'œuvre, l'époque, la technique et ce qui te touche.",
+     "p": [
+      "Décrire : Das Werk stammt aus der Epoche der Romantik. Im Vordergrund sieht man..., im Hintergrund...",
+      "Technique : Der Maler arbeitet mit kräftigen Farben / mit Licht und Schatten. Caspar David Friedrich peignait des paysages brumeux.",
+      "Ressenti : Was mich besonders berührt, ist... / Das Bild wirkt auf mich ruhig und geheimnisvoll."
+     ],
+     "q": "Pense à un tableau ou une photo que tu aimes. Qu'est-ce qui te touche ?",
+     "c": "Décris une œuvre que tu aimes en cinq phrases : époque, ce qu'on voit, technique et ce qui te touche."
+    },
+    "it": {
+     "t": "Parlare d'arte",
+     "g": "Parla di un'opera d'arte: l'opera, l'epoca, la tecnica e ciò che ti emoziona.",
+     "p": [
+      "Descrivere: Das Werk stammt aus der Epoche der Romantik. Im Vordergrund sieht man..., im Hintergrund...",
+      "Tecnica: Der Maler arbeitet mit kräftigen Farben / mit Licht und Schatten. Caspar David Friedrich dipingeva paesaggi nebbiosi.",
+      "Reazione personale: Was mich besonders berührt, ist... / Das Bild wirkt auf mich ruhig und geheimnisvoll."
+     ],
+     "q": "Pensa a un quadro o una foto che ami. Che cosa ti emoziona?",
+     "c": "Descrivi un'opera che ti piace in cinque frasi: epoca, cosa si vede, tecnica e cosa ti tocca."
+    },
+    "pt": {
+     "t": "Falar de arte",
+     "g": "Falar de uma obra de arte: a obra, a época, a técnica e o que te emociona.",
+     "p": [
+      "Descrever: Das Werk stammt aus der Epoche der Romantik. Im Vordergrund sieht man..., im Hintergrund...",
+      "Técnica: Der Maler arbeitet mit kräftigen Farben / mit Licht und Schatten. Caspar David Friedrich pintou paisagens com nevoeiro.",
+      "Reação pessoal: Was mich besonders berührt, ist... / Das Bild wirkt auf mich ruhig und geheimnisvoll."
+     ],
+     "q": "Pensa num quadro ou foto de que gostes muito. O que te emociona nele?",
+     "c": "Descreve uma obra de arte de que gostes em cinco frases: época, o que se vê, técnica e o que te toca."
+    },
+    "pt_BR": {
+     "t": "Falar de arte",
+     "g": "Falar de uma obra de arte: a obra, a época, a técnica e o que te emociona.",
+     "p": [
+      "Descrever: Das Werk stammt aus der Epoche der Romantik. Im Vordergrund sieht man..., im Hintergrund...",
+      "Técnica: Der Maler arbeitet mit kräftigen Farben / mit Licht und Schatten. Caspar David Friedrich pintou paisagens com neblina.",
+      "Reação pessoal: Was mich besonders berührt, ist... / Das Bild wirkt auf mich ruhig und geheimnisvoll."
+     ],
+     "q": "Pense num quadro ou foto que você ama. O que te emociona nele?",
+     "c": "Descreva uma obra de arte de que você goste em cinco frases: época, o que se vê, técnica e o que te toca."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "das Werk",
+      "ex": "Dieses Werk gehört zu den bekanntesten des Künstlers."
+     },
+     {
+      "w": "die Epoche",
+      "ex": "Die Epoche der Romantik liebte die Natur."
+     },
+     {
+      "w": "die Technik",
+      "ex": "Die Künstlerin malt in einer besonderen Technik."
+     },
+     {
+      "w": "im Vordergrund",
+      "ex": "Im Vordergrund steht ein Mann auf einem Felsen."
+     },
+     {
+      "w": "berühren",
+      "ex": "Das Bild berührt mich jedes Mal."
+     },
+     {
+      "w": "wirken",
+      "ex": "Die Farben wirken warm und freundlich."
+     }
+    ],
+    "gram": "Wechselpräpositionen mit Dativ für Ort: im Vordergrund, im Hintergrund, in der Mitte. Was mich berührt, ist... (Relativsatz mit was)."
+   }
+  },
+  {
+   "d": 333,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Architecture and heritage",
+     "g": "Talk about castles, palaces, half-timbered houses and the Bauhaus.",
+     "p": [
+      "Die Burg is a medieval fortress; das Schloss is a palace, like Neuschwanstein in Bavaria or Schönbrunn in Vienna.",
+      "Das Fachwerkhaus has visible wooden beams; towns like Quedlinburg or Rothenburg ob der Tauber are full of them.",
+      "The Bauhaus, founded in Weimar in 1919, made design simple and functional: Die Form folgt der Funktion."
+     ],
+     "q": "Do you prefer old buildings like castles or modern design like the Bauhaus? Why?",
+     "c": "Describe a famous building from your country in German: when it was built, its style and why you like it."
+    },
+    "de": {
+     "t": "Architektur und Kulturerbe",
+     "g": "Du sprichst über Burgen, Schlösser, Fachwerk und das Bauhaus.",
+     "p": [
+      "Die Burg ist eine mittelalterliche Festung; das Schloss ist ein Palast, wie Neuschwanstein in Bayern oder Schönbrunn in Wien.",
+      "Das Fachwerkhaus hat sichtbare Holzbalken; Städte wie Quedlinburg oder Rothenburg ob der Tauber sind voll davon.",
+      "Das Bauhaus, 1919 in Weimar gegründet, machte Design schlicht und funktional: Die Form folgt der Funktion."
+     ],
+     "q": "Magst du lieber alte Gebäude wie Burgen oder modernes Design wie das Bauhaus? Warum?",
+     "c": "Beschreib ein berühmtes Gebäude aus deinem Land: wann es gebaut wurde, sein Stil und warum es dir gefällt."
+    },
+    "es": {
+     "t": "Arquitectura y patrimonio",
+     "g": "Habla de castillos, palacios, casas de entramado y la Bauhaus.",
+     "p": [
+      "Die Burg es una fortaleza medieval; das Schloss es un palacio, como Neuschwanstein en Baviera o Schönbrunn en Viena.",
+      "Das Fachwerkhaus tiene vigas de madera a la vista; ciudades como Quedlinburg o Rothenburg ob der Tauber están llenas.",
+      "La Bauhaus, fundada en Weimar en 1919, hizo el diseño sencillo y funcional: Die Form folgt der Funktion."
+     ],
+     "q": "¿Prefieres edificios antiguos como castillos o diseño moderno como la Bauhaus? ¿Por qué?",
+     "c": "Describe en alemán un edificio famoso de tu país: cuándo se construyó, su estilo y por qué te gusta."
+    },
+    "fr": {
+     "t": "Architecture et patrimoine",
+     "g": "Parler de châteaux forts, palais, maisons à colombages et du Bauhaus.",
+     "p": [
+      "Die Burg est un château fort médiéval ; das Schloss est un palais, comme Neuschwanstein en Bavière ou Schönbrunn à Vienne.",
+      "Das Fachwerkhaus a des poutres apparentes ; des villes comme Quedlinburg ou Rothenburg ob der Tauber en sont pleines.",
+      "Le Bauhaus, fondé à Weimar en 1919, a rendu le design sobre et fonctionnel : Die Form folgt der Funktion."
+     ],
+     "q": "Préfères-tu les bâtiments anciens comme les châteaux ou le design moderne du Bauhaus ? Pourquoi ?",
+     "c": "Décris en allemand un bâtiment célèbre de ton pays : date de construction, style et pourquoi tu l'aimes."
+    },
+    "it": {
+     "t": "Architettura e patrimonio",
+     "g": "Parla di castelli, palazzi, case a graticcio e del Bauhaus.",
+     "p": [
+      "Die Burg è una fortezza medievale; das Schloss è un palazzo, come Neuschwanstein in Baviera o Schönbrunn a Vienna.",
+      "Das Fachwerkhaus ha travi di legno a vista; città come Quedlinburg o Rothenburg ob der Tauber ne sono piene.",
+      "Il Bauhaus, fondato a Weimar nel 1919, rese il design semplice e funzionale: Die Form folgt der Funktion."
+     ],
+     "q": "Preferisci edifici antichi come i castelli o il design moderno del Bauhaus? Perché?",
+     "c": "Descrivi in tedesco un edificio famoso del tuo paese: quando fu costruito, lo stile e perché ti piace."
+    },
+    "pt": {
+     "t": "Arquitetura e património",
+     "g": "Falar de castelos, palácios, casas enxaimel e da Bauhaus.",
+     "p": [
+      "Die Burg é uma fortaleza medieval; das Schloss é um palácio, como Neuschwanstein na Baviera ou Schönbrunn em Viena.",
+      "Das Fachwerkhaus tem vigas de madeira à vista; cidades como Quedlinburg ou Rothenburg ob der Tauber estão cheias delas.",
+      "A Bauhaus, fundada em Weimar em 1919, tornou o design simples e funcional: Die Form folgt der Funktion."
+     ],
+     "q": "Preferes edifícios antigos como castelos ou design moderno como a Bauhaus? Porquê?",
+     "c": "Descreve em alemão um edifício famoso do teu país: quando foi construído, o estilo e porque gostas dele."
+    },
+    "pt_BR": {
+     "t": "Arquitetura e patrimônio",
+     "g": "Falar de castelos, palácios, casas enxaimel e da Bauhaus.",
+     "p": [
+      "Die Burg é uma fortaleza medieval; das Schloss é um palácio, como Neuschwanstein na Baviera ou Schönbrunn em Viena.",
+      "Das Fachwerkhaus tem vigas de madeira aparentes; o estilo enxaimel também chegou ao sul do Brasil, como em Blumenau.",
+      "A Bauhaus, fundada em Weimar em 1919, deixou o design simples e funcional: Die Form folgt der Funktion."
+     ],
+     "q": "Você prefere prédios antigos como castelos ou design moderno como a Bauhaus? Por quê?",
+     "c": "Descreva em alemão um prédio famoso do seu país: quando foi construído, o estilo e por que você gosta dele."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "die Burg",
+      "ex": "Auf dem Berg steht eine alte Burg."
+     },
+     {
+      "w": "das Schloss",
+      "ex": "Schloss Neuschwanstein wurde im 19. Jahrhundert gebaut."
+     },
+     {
+      "w": "das Fachwerkhaus",
+      "ex": "In der Altstadt stehen viele bunte Fachwerkhäuser."
+     },
+     {
+      "w": "das Kulturerbe",
+      "ex": "Die Altstadt gehört zum UNESCO-Weltkulturerbe."
+     },
+     {
+      "w": "schlicht",
+      "ex": "Bauhaus-Möbel sind schlicht und praktisch."
+     },
+     {
+      "w": "errichten",
+      "ex": "Die Kirche wurde im Mittelalter errichtet."
+     }
+    ],
+    "gram": "Passiv Präteritum für Geschichte: Das Schloss wurde 1869 begonnen. Partizip als Adjektiv: das 1919 gegründete Bauhaus."
+   }
+  },
+  {
+   "d": 334,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Poetry",
+     "g": "Read a short German poem by Goethe, Rilke or Heine and talk about it.",
+     "p": [
+      "Goethe's Wandrers Nachtlied begins: Über allen Gipfeln / Ist Ruh. Only eight short lines about evening calm.",
+      "Heine wrote the Lorelei poem: Ich weiß nicht, was soll es bedeuten. Rilke is known for musical, deep images.",
+      "Talking about a poem: Das Gedicht besteht aus zwei Strophen. Es reimt sich. Der Ton ist ruhig. Mir gefällt das Bild von..."
+     ],
+     "q": "Which line of a poem or song in any language has stayed with you?",
+     "c": "Read Goethe's Über allen Gipfeln aloud three times, then write two sentences about its mood."
+    },
+    "de": {
+     "t": "Lyrik",
+     "g": "Du liest ein kurzes Gedicht von Goethe, Rilke oder Heine und sprichst darüber.",
+     "p": [
+      "Goethes Wandrers Nachtlied beginnt: Über allen Gipfeln / Ist Ruh. Nur acht kurze Zeilen über die Abendstille.",
+      "Heine schrieb das Lorelei-Gedicht: Ich weiß nicht, was soll es bedeuten. Rilke ist für musikalische, tiefe Bilder bekannt.",
+      "Über ein Gedicht sprechen: Das Gedicht besteht aus zwei Strophen. Es reimt sich. Der Ton ist ruhig. Mir gefällt das Bild von..."
+     ],
+     "q": "Welche Zeile aus einem Gedicht oder Lied, egal in welcher Sprache, ist dir im Kopf geblieben?",
+     "c": "Lies Goethes Über allen Gipfeln dreimal laut und schreib zwei Sätze über seine Stimmung."
+    },
+    "es": {
+     "t": "Poesía",
+     "g": "Lee un breve poema alemán de Goethe, Rilke o Heine y habla de él.",
+     "p": [
+      "El Wandrers Nachtlied de Goethe empieza: Über allen Gipfeln / Ist Ruh. Solo ocho versos cortos sobre la calma del anochecer.",
+      "Heine escribió el poema de la Lorelei: Ich weiß nicht, was soll es bedeuten. Rilke es famoso por sus imágenes musicales.",
+      "Hablar de un poema: Das Gedicht besteht aus zwei Strophen. Es reimt sich. Der Ton ist ruhig. Mir gefällt das Bild von..."
+     ],
+     "q": "¿Qué verso de un poema o canción, en cualquier idioma, se te ha quedado grabado?",
+     "c": "Lee en voz alta tres veces Über allen Gipfeln de Goethe y escribe dos frases sobre su ambiente."
+    },
+    "fr": {
+     "t": "Poésie",
+     "g": "Lire un court poème allemand de Goethe, Rilke ou Heine et en parler.",
+     "p": [
+      "Le Wandrers Nachtlied de Goethe commence : Über allen Gipfeln / Ist Ruh. Huit vers courts sur le calme du soir.",
+      "Heine a écrit le poème de la Lorelei : Ich weiß nicht, was soll es bedeuten. Rilke est connu pour ses images musicales.",
+      "Parler d'un poème : Das Gedicht besteht aus zwei Strophen. Es reimt sich. Der Ton ist ruhig. Mir gefällt das Bild von..."
+     ],
+     "q": "Quel vers d'un poème ou d'une chanson, dans n'importe quelle langue, t'est resté en tête ?",
+     "c": "Lis trois fois à voix haute Über allen Gipfeln de Goethe, puis écris deux phrases sur son atmosphère."
+    },
+    "it": {
+     "t": "Poesia",
+     "g": "Leggi una breve poesia tedesca di Goethe, Rilke o Heine e parlane.",
+     "p": [
+      "Il Wandrers Nachtlied di Goethe inizia: Über allen Gipfeln / Ist Ruh. Solo otto versi brevi sulla quiete della sera.",
+      "Heine scrisse la poesia della Lorelei: Ich weiß nicht, was soll es bedeuten. Rilke è noto per immagini musicali e profonde.",
+      "Parlare di una poesia: Das Gedicht besteht aus zwei Strophen. Es reimt sich. Der Ton ist ruhig. Mir gefällt das Bild von..."
+     ],
+     "q": "Quale verso di una poesia o canzone, in qualsiasi lingua, ti è rimasto in mente?",
+     "c": "Leggi tre volte ad alta voce Über allen Gipfeln di Goethe e scrivi due frasi sulla sua atmosfera."
+    },
+    "pt": {
+     "t": "Poesia",
+     "g": "Ler um poema alemão curto de Goethe, Rilke ou Heine e falar sobre ele.",
+     "p": [
+      "O Wandrers Nachtlied de Goethe começa: Über allen Gipfeln / Ist Ruh. Apenas oito versos curtos sobre a calma do fim do dia.",
+      "Heine escreveu o poema da Lorelei: Ich weiß nicht, was soll es bedeuten. Rilke é conhecido pelas suas imagens musicais.",
+      "Falar de um poema: Das Gedicht besteht aus zwei Strophen. Es reimt sich. Der Ton ist ruhig. Mir gefällt das Bild von..."
+     ],
+     "q": "Que verso de um poema ou canção, em qualquer língua, te ficou na memória?",
+     "c": "Lê três vezes em voz alta Über allen Gipfeln de Goethe e escreve duas frases sobre o seu ambiente."
+    },
+    "pt_BR": {
+     "t": "Poesia",
+     "g": "Ler um poema alemão curto de Goethe, Rilke ou Heine e falar sobre ele.",
+     "p": [
+      "O Wandrers Nachtlied de Goethe começa: Über allen Gipfeln / Ist Ruh. Só oito versos curtos sobre a calma do anoitecer.",
+      "Heine escreveu o poema da Lorelei: Ich weiß nicht, was soll es bedeuten. Rilke é conhecido por imagens musicais e profundas.",
+      "Falar de um poema: Das Gedicht besteht aus zwei Strophen. Es reimt sich. Der Ton ist ruhig. Mir gefällt das Bild von..."
+     ],
+     "q": "Qual verso de um poema ou música, em qualquer língua, ficou na sua cabeça?",
+     "c": "Leia três vezes em voz alta Über allen Gipfeln de Goethe e escreva duas frases sobre o clima do poema."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "das Gedicht",
+      "ex": "Kannst du ein Gedicht auswendig?"
+     },
+     {
+      "w": "die Strophe",
+      "ex": "Das Gedicht hat drei Strophen."
+     },
+     {
+      "w": "der Vers",
+      "ex": "Der letzte Vers ist besonders schön."
+     },
+     {
+      "w": "sich reimen",
+      "ex": "Herz reimt sich auf Schmerz."
+     },
+     {
+      "w": "die Stimmung",
+      "ex": "Das Gedicht hat eine ruhige Stimmung."
+     },
+     {
+      "w": "der Dichter",
+      "ex": "Heinrich Heine war ein berühmter Dichter."
+     }
+    ],
+    "gram": "Poetische Wortstellung: Über allen Gipfeln ist Ruh (Ruh = Ruhe, verkürzt). bestehen aus + Dativ: Es besteht aus zwei Strophen."
+   }
+  },
+  {
+   "d": 335,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Theatre",
+     "g": "Talk about German theatre: Brecht, Schiller, the stage and the production.",
+     "p": [
+      "Schiller wrote classic dramas like Wilhelm Tell and Die Räuber; his Ode an die Freude is sung in Beethoven's Ninth.",
+      "Brecht wanted the audience to think, not just feel: his epic theatre breaks the illusion, as in Die Dreigroschenoper.",
+      "Theatre words: die Bühne, die Inszenierung, die Aufführung, der Schauspieler, die Premiere, der Applaus."
+     ],
+     "q": "Have you seen a play you remember? What was the production like?",
+     "c": "Write a short review of four sentences of a play, film or show you saw, using Inszenierung and Bühne."
+    },
+    "de": {
+     "t": "Theater",
+     "g": "Du sprichst über deutsches Theater: Brecht, Schiller, die Bühne, die Inszenierung.",
+     "p": [
+      "Schiller schrieb klassische Dramen wie Wilhelm Tell und Die Räuber; seine Ode an die Freude singt man in Beethovens Neunter.",
+      "Brecht wollte, dass das Publikum denkt, nicht nur fühlt: Sein episches Theater bricht die Illusion, etwa in der Dreigroschenoper.",
+      "Theaterwörter: die Bühne, die Inszenierung, die Aufführung, der Schauspieler, die Premiere, der Applaus."
+     ],
+     "q": "Hast du ein Theaterstück gesehen, an das du dich erinnerst? Wie war die Inszenierung?",
+     "c": "Schreib eine kurze Kritik mit vier Sätzen über ein Stück, einen Film oder eine Show, mit Inszenierung und Bühne."
+    },
+    "es": {
+     "t": "Teatro",
+     "g": "Habla del teatro alemán: Brecht, Schiller, el escenario y la puesta en escena.",
+     "p": [
+      "Schiller escribió dramas clásicos como Wilhelm Tell y Die Räuber; su Oda a la alegría se canta en la Novena de Beethoven.",
+      "Brecht quería que el público pensara, no solo sintiera: su teatro épico rompe la ilusión, como en La ópera de tres centavos.",
+      "Palabras del teatro: die Bühne, die Inszenierung, die Aufführung, der Schauspieler, die Premiere, der Applaus."
+     ],
+     "q": "¿Has visto alguna obra que recuerdes? ¿Cómo era la puesta en escena?",
+     "c": "Escribe una crítica breve de cuatro frases sobre una obra, película o espectáculo con Inszenierung y Bühne."
+    },
+    "fr": {
+     "t": "Théâtre",
+     "g": "Parler du théâtre allemand : Brecht, Schiller, la scène et la mise en scène.",
+     "p": [
+      "Schiller a écrit des drames classiques comme Wilhelm Tell et Die Räuber ; son Ode à la joie est chantée dans la 9e de Beethoven.",
+      "Brecht voulait que le public réfléchisse : son théâtre épique brise l'illusion, comme dans L'Opéra de quat'sous.",
+      "Mots du théâtre : die Bühne, die Inszenierung, die Aufführung, der Schauspieler, die Premiere, der Applaus."
+     ],
+     "q": "As-tu vu une pièce dont tu te souviens ? Comment était la mise en scène ?",
+     "c": "Écris une courte critique de quatre phrases sur une pièce, un film ou un spectacle avec Inszenierung et Bühne."
+    },
+    "it": {
+     "t": "Teatro",
+     "g": "Parla del teatro tedesco: Brecht, Schiller, il palcoscenico e la messa in scena.",
+     "p": [
+      "Schiller scrisse drammi classici come Wilhelm Tell e Die Räuber; la sua Ode alla gioia si canta nella Nona di Beethoven.",
+      "Brecht voleva che il pubblico pensasse: il suo teatro epico rompe l'illusione, come nell'Opera da tre soldi.",
+      "Parole del teatro: die Bühne, die Inszenierung, die Aufführung, der Schauspieler, die Premiere, der Applaus."
+     ],
+     "q": "Hai visto uno spettacolo teatrale che ricordi? Com'era la messa in scena?",
+     "c": "Scrivi una breve recensione di quattro frasi su uno spettacolo, film o show con Inszenierung e Bühne."
+    },
+    "pt": {
+     "t": "Teatro",
+     "g": "Falar do teatro alemão: Brecht, Schiller, o palco e a encenação.",
+     "p": [
+      "Schiller escreveu dramas clássicos como Wilhelm Tell e Die Räuber; a sua Ode à Alegria é cantada na Nona de Beethoven.",
+      "Brecht queria que o público pensasse, não só sentisse: o seu teatro épico quebra a ilusão, como na Ópera dos Três Vinténs.",
+      "Palavras do teatro: die Bühne, die Inszenierung, die Aufführung, der Schauspieler, die Premiere, der Applaus."
+     ],
+     "q": "Já viste uma peça de que te lembres? Como era a encenação?",
+     "c": "Escreve uma crítica curta de quatro frases sobre uma peça, filme ou espetáculo com Inszenierung e Bühne."
+    },
+    "pt_BR": {
+     "t": "Teatro",
+     "g": "Falar do teatro alemão: Brecht, Schiller, o palco e a encenação.",
+     "p": [
+      "Schiller escreveu dramas clássicos como Wilhelm Tell e Die Räuber; sua Ode à Alegria é cantada na Nona de Beethoven.",
+      "Brecht queria que o público pensasse, não só sentisse: seu teatro épico quebra a ilusão, como na Ópera dos Três Vinténs.",
+      "Palavras do teatro: die Bühne, die Inszenierung, die Aufführung, der Schauspieler, die Premiere, der Applaus."
+     ],
+     "q": "Você já viu uma peça de que se lembra? Como era a encenação?",
+     "c": "Escreva uma crítica curta de quatro frases sobre uma peça, filme ou show com Inszenierung e Bühne."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "die Bühne",
+      "ex": "Die Schauspieler stehen schon auf der Bühne."
+     },
+     {
+      "w": "die Inszenierung",
+      "ex": "Die neue Inszenierung ist sehr modern."
+     },
+     {
+      "w": "die Aufführung",
+      "ex": "Nach der Aufführung gab es langen Applaus."
+     },
+     {
+      "w": "das Theaterstück",
+      "ex": "Wir sehen heute ein Theaterstück von Schiller."
+     },
+     {
+      "w": "die Premiere",
+      "ex": "Die Premiere war sofort ausverkauft."
+     },
+     {
+      "w": "das Publikum",
+      "ex": "Das Publikum war begeistert."
+     }
+    ],
+    "gram": "wollen, dass + Nebensatz: Brecht wollte, dass das Publikum nachdenkt. Bei verschiedenen Subjekten dass-Satz, sonst Infinitiv."
+   }
+  },
+  {
+   "d": 336,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Fairy tales and legends",
+     "g": "Explore the Brothers Grimm, the Lorelei and the lessons in these stories.",
+     "p": [
+      "The Brothers Grimm collected tales like Hänsel und Gretel, Rotkäppchen and Aschenputtel. They start with Es war einmal...",
+      "The Lorelei is a legend of the Rhine: a maiden on a rock whose song distracted sailors. Heine made it a famous poem.",
+      "Many tales teach a lesson: Die Moral von der Geschicht... Fairy tales are told in the Präteritum: Sie ging in den Wald."
+     ],
+     "q": "Which fairy tale did you love as a child, and what lesson does it teach?",
+     "c": "Retell a short fairy tale you know in German in six sentences, starting with Es war einmal and using the Präteritum."
+    },
+    "de": {
+     "t": "Märchen und Sagen",
+     "g": "Du entdeckst die Brüder Grimm, die Loreley und die Lehren dieser Geschichten.",
+     "p": [
+      "Die Brüder Grimm sammelten Märchen wie Hänsel und Gretel, Rotkäppchen und Aschenputtel. Sie beginnen mit Es war einmal...",
+      "Die Loreley ist eine Sage vom Rhein: Eine junge Frau auf einem Felsen lenkte mit ihrem Gesang die Schiffer ab. Heine dichtete darüber.",
+      "Viele Märchen haben eine Moral. Märchen erzählt man im Präteritum: Sie ging in den Wald. Es lebte einmal ein König."
+     ],
+     "q": "Welches Märchen hast du als Kind geliebt, und welche Lehre steckt darin?",
+     "c": "Erzähl ein kurzes Märchen in sechs Sätzen nach, beginnend mit Es war einmal und im Präteritum."
+    },
+    "es": {
+     "t": "Cuentos y leyendas",
+     "g": "Descubre a los hermanos Grimm, la Lorelei y las enseñanzas de estas historias.",
+     "p": [
+      "Los hermanos Grimm recopilaron cuentos como Hänsel und Gretel, Rotkäppchen y Aschenputtel. Empiezan con Es war einmal...",
+      "La Lorelei es una leyenda del Rin: una joven en una roca cuyo canto distraía a los marineros. Heine la hizo poema.",
+      "Muchos cuentos tienen moraleja. Se narran en Präteritum: Sie ging in den Wald. Es lebte einmal ein König."
+     ],
+     "q": "¿Qué cuento te encantaba de niño y qué enseñanza tiene?",
+     "c": "Cuenta en alemán un cuento breve en seis frases, empezando con Es war einmal y en Präteritum."
+    },
+    "fr": {
+     "t": "Contes et légendes",
+     "g": "Découvrir les frères Grimm, la Lorelei et les leçons de ces histoires.",
+     "p": [
+      "Les frères Grimm ont recueilli des contes comme Hänsel und Gretel, Rotkäppchen et Aschenputtel. Ils commencent par Es war einmal...",
+      "La Lorelei est une légende du Rhin : une jeune femme sur un rocher dont le chant distrayait les bateliers. Heine en fit un poème.",
+      "Beaucoup de contes ont une morale. On les raconte au Präteritum : Sie ging in den Wald. Es lebte einmal ein König."
+     ],
+     "q": "Quel conte adorais-tu enfant, et quelle leçon donne-t-il ?",
+     "c": "Raconte en allemand un conte court en six phrases, en commençant par Es war einmal et au Präteritum."
+    },
+    "it": {
+     "t": "Fiabe e leggende",
+     "g": "Scopri i fratelli Grimm, la Lorelei e gli insegnamenti di queste storie.",
+     "p": [
+      "I fratelli Grimm raccolsero fiabe come Hänsel und Gretel, Rotkäppchen e Aschenputtel. Iniziano con Es war einmal...",
+      "La Lorelei è una leggenda del Reno: una fanciulla su una rupe il cui canto distraeva i barcaioli. Heine ne fece una poesia.",
+      "Molte fiabe hanno una morale. Si raccontano al Präteritum: Sie ging in den Wald. Es lebte einmal ein König."
+     ],
+     "q": "Quale fiaba amavi da bambino e quale insegnamento contiene?",
+     "c": "Racconta in tedesco una breve fiaba in sei frasi, iniziando con Es war einmal e al Präteritum."
+    },
+    "pt": {
+     "t": "Contos e lendas",
+     "g": "Descobrir os irmãos Grimm, a Lorelei e as lições destas histórias.",
+     "p": [
+      "Os irmãos Grimm recolheram contos como Hänsel und Gretel, Rotkäppchen e Aschenputtel. Começam com Es war einmal...",
+      "A Lorelei é uma lenda do Reno: uma jovem num rochedo cujo canto distraía os barqueiros. Heine fez dela um poema.",
+      "Muitos contos têm uma moral. Contam-se no Präteritum: Sie ging in den Wald. Es lebte einmal ein König."
+     ],
+     "q": "Que conto adoravas em criança e que lição ensina?",
+     "c": "Reconta em alemão um conto curto em seis frases, começando com Es war einmal e no Präteritum."
+    },
+    "pt_BR": {
+     "t": "Contos de fadas e lendas",
+     "g": "Descobrir os irmãos Grimm, a Lorelei e as lições dessas histórias.",
+     "p": [
+      "Os irmãos Grimm reuniram contos como Hänsel und Gretel, Rotkäppchen e Aschenputtel. Começam com Es war einmal...",
+      "A Lorelei é uma lenda do Reno: uma jovem num rochedo cujo canto distraía os barqueiros. Heine fez dela um poema.",
+      "Muitos contos têm uma moral. São contados no Präteritum: Sie ging in den Wald. Es lebte einmal ein König."
+     ],
+     "q": "Qual conto de fadas você amava na infância e que lição ele ensina?",
+     "c": "Reconte em alemão um conto curto em seis frases, começando com Es war einmal e no Präteritum."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "das Märchen",
+      "ex": "Meine Oma hat mir jeden Abend ein Märchen erzählt."
+     },
+     {
+      "w": "die Sage",
+      "ex": "Die Sage von der Loreley spielt am Rhein."
+     },
+     {
+      "w": "Es war einmal ...",
+      "ex": "Es war einmal ein kleines Mädchen mit einer roten Kappe."
+     },
+     {
+      "w": "die Moral",
+      "ex": "Die Moral der Geschichte: Sei nicht zu neugierig."
+     },
+     {
+      "w": "verzaubern",
+      "ex": "Die Hexe verzauberte den Prinzen in einen Frosch."
+     },
+     {
+      "w": "glücklich bis ans Ende ihrer Tage",
+      "ex": "Und sie lebten glücklich bis ans Ende ihrer Tage."
+     }
+    ],
+    "gram": "Erzähltempus Präteritum: ging, lebte, sprach, fand. Formelhafter Anfang: Es war einmal... mit Platzhalter-es."
+   }
+  },
+  {
+   "d": 337,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Advent and winter traditions",
+     "g": "Discover the Weihnachtsmarkt, the Adventskalender, Nikolaus and Plätzchen.",
+     "p": [
+      "Der Weihnachtsmarkt: stalls, lights, Glühwein or Kinderpunsch and gebrannte Mandeln. Nuremberg's is famous.",
+      "Der Adventskalender has 24 little doors, one for each day from 1 December. The Adventskranz has four candles.",
+      "On 6 December children put out their boots for Nikolaus. Families bake Plätzchen like Zimtsterne and Vanillekipferl."
+     ],
+     "q": "What winter traditions do you have where you live? Which German one would you like to try?",
+     "c": "Describe a winter or end-of-year tradition from your country in five German sentences."
+    },
+    "de": {
+     "t": "Advents- und Wintertraditionen",
+     "g": "Du entdeckst Weihnachtsmarkt, Adventskalender, Nikolaus und Plätzchen.",
+     "p": [
+      "Der Weihnachtsmarkt: Buden, Lichter, Glühwein oder Kinderpunsch und gebrannte Mandeln. Der Nürnberger ist berühmt.",
+      "Der Adventskalender hat 24 Türchen, eins für jeden Tag ab dem 1. Dezember. Der Adventskranz hat vier Kerzen.",
+      "Am 6. Dezember stellen Kinder ihre Stiefel für den Nikolaus raus. Familien backen Plätzchen wie Zimtsterne und Vanillekipferl."
+     ],
+     "q": "Welche Wintertraditionen gibt es dort, wo du lebst? Welche deutsche würdest du gern ausprobieren?",
+     "c": "Beschreib eine Winter- oder Jahresendtradition aus deinem Land in fünf deutschen Sätzen."
+    },
+    "es": {
+     "t": "Adviento y tradiciones de invierno",
+     "g": "Descubre el Weihnachtsmarkt, el Adventskalender, Nikolaus y las Plätzchen.",
+     "p": [
+      "Der Weihnachtsmarkt: puestos, luces, Glühwein o Kinderpunsch y almendras garrapiñadas. El de Núremberg es famoso.",
+      "Der Adventskalender tiene 24 puertecitas, una por día desde el 1 de diciembre. El Adventskranz tiene cuatro velas.",
+      "El 6 de diciembre los niños dejan sus botas para Nikolaus. Las familias hornean Plätzchen como Zimtsterne y Vanillekipferl."
+     ],
+     "q": "¿Qué tradiciones de invierno hay donde vives? ¿Qué tradición alemana te gustaría probar?",
+     "c": "Describe en cinco frases en alemán una tradición de invierno o de fin de año de tu país."
+    },
+    "fr": {
+     "t": "L'Avent et les traditions d'hiver",
+     "g": "Découvrir le Weihnachtsmarkt, l'Adventskalender, Nikolaus et les Plätzchen.",
+     "p": [
+      "Der Weihnachtsmarkt : chalets, lumières, Glühwein ou Kinderpunsch et amandes grillées. Celui de Nuremberg est célèbre.",
+      "Der Adventskalender a 24 petites portes, une par jour dès le 1er décembre. L'Adventskranz porte quatre bougies.",
+      "Le 6 décembre, les enfants déposent leurs bottes pour Nikolaus. On fait des Plätzchen comme les Zimtsterne et Vanillekipferl."
+     ],
+     "q": "Quelles traditions d'hiver y a-t-il chez toi ? Laquelle des traditions allemandes aimerais-tu essayer ?",
+     "c": "Décris en cinq phrases allemandes une tradition d'hiver ou de fin d'année de ton pays."
+    },
+    "it": {
+     "t": "Avvento e tradizioni invernali",
+     "g": "Scopri il Weihnachtsmarkt, l'Adventskalender, Nikolaus e i Plätzchen.",
+     "p": [
+      "Der Weihnachtsmarkt: bancarelle, luci, Glühwein o Kinderpunsch e mandorle tostate. Quello di Norimberga è famoso.",
+      "Der Adventskalender ha 24 finestrelle, una al giorno dal 1° dicembre. L'Adventskranz ha quattro candele.",
+      "Il 6 dicembre i bambini mettono fuori gli stivali per Nikolaus. Si sfornano Plätzchen come Zimtsterne e Vanillekipferl."
+     ],
+     "q": "Quali tradizioni invernali ci sono dove vivi? Quale tradizione tedesca vorresti provare?",
+     "c": "Descrivi in cinque frasi in tedesco una tradizione invernale o di fine anno del tuo paese."
+    },
+    "pt": {
+     "t": "Advento e tradições de inverno",
+     "g": "Descobrir o Weihnachtsmarkt, o Adventskalender, Nikolaus e as Plätzchen.",
+     "p": [
+      "Der Weihnachtsmarkt: barracas, luzes, Glühwein ou Kinderpunsch e amêndoas caramelizadas. O de Nuremberga é famoso.",
+      "Der Adventskalender tem 24 portinhas, uma por dia a partir de 1 de dezembro. O Adventskranz tem quatro velas.",
+      "A 6 de dezembro as crianças deixam as botas para o Nikolaus. As famílias fazem Plätzchen como Zimtsterne e Vanillekipferl."
+     ],
+     "q": "Que tradições de inverno há onde vives? Que tradição alemã gostarias de experimentar?",
+     "c": "Descreve em cinco frases em alemão uma tradição de inverno ou de fim de ano do teu país."
+    },
+    "pt_BR": {
+     "t": "Advento e tradições de fim de ano",
+     "g": "Descobrir o Weihnachtsmarkt, o Adventskalender, Nikolaus e os Plätzchen.",
+     "p": [
+      "Der Weihnachtsmarkt: barracas, luzes, Glühwein ou Kinderpunsch e amêndoas caramelizadas. O de Nuremberg é famoso.",
+      "Der Adventskalender tem 24 portinhas, uma por dia a partir de 1º de dezembro. O Adventskranz tem quatro velas.",
+      "Em 6 de dezembro as crianças deixam as botas para o Nikolaus. As famílias assam Plätzchen como Zimtsterne e Vanillekipferl."
+     ],
+     "q": "Que tradições de fim de ano existem onde você mora? Qual tradição alemã você gostaria de experimentar?",
+     "c": "Descreva em cinco frases em alemão uma tradição de fim de ano do seu país."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "der Weihnachtsmarkt",
+      "ex": "Am Abend gehen wir auf den Weihnachtsmarkt."
+     },
+     {
+      "w": "der Adventskalender",
+      "ex": "Heute öffne ich das dritte Türchen im Adventskalender."
+     },
+     {
+      "w": "der Adventskranz",
+      "ex": "Am ersten Advent zünden wir eine Kerze am Adventskranz an."
+     },
+     {
+      "w": "die Plätzchen",
+      "ex": "Am Wochenende backen wir Plätzchen."
+     },
+     {
+      "w": "der Nikolaus",
+      "ex": "Der Nikolaus hat mir Nüsse in den Stiefel gelegt."
+     },
+     {
+      "w": "gemütlich",
+      "ex": "Im Winter ist es zu Hause besonders gemütlich."
+     }
+    ],
+    "gram": "Datum mit am + Ordinalzahl: am 6. Dezember (am sechsten Dezember); ab dem 1. Dezember. Diminutiv: das Türchen, die Plätzchen."
+   }
+  },
+  {
+   "d": 338,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Everyday values and customs",
+     "g": "Understand everyday customs: Pünktlichkeit, Ruhezeiten, Ordnung and Mülltrennung.",
+     "p": [
+      "Pünktlichkeit: being on time matters. If you are late, call: Es tut mir leid, ich verspäte mich um zehn Minuten.",
+      "Ruhezeiten: quiet hours, often at night and on Sundays in many places. Many people avoid drilling or loud music then.",
+      "Mülltrennung: sorting waste into Papier, Bio, Restmüll, Gelber Sack. Pfand bottles go back to the shop."
+     ],
+     "q": "Which of these customs exists where you live too, and which one surprises you most?",
+     "c": "Explain to a new neighbour in four sentences how Mülltrennung and Ruhezeiten work, using man muss and man darf nicht."
+    },
+    "de": {
+     "t": "Alltagswerte und Bräuche",
+     "g": "Du verstehst Alltagsbräuche: Pünktlichkeit, Ruhezeiten, Ordnung, Mülltrennung.",
+     "p": [
+      "Pünktlichkeit ist wichtig. Wenn du zu spät kommst, ruf an: Es tut mir leid, ich verspäte mich um zehn Minuten.",
+      "Ruhezeiten: an vielen Orten nachts und sonntags. Dann verzichten viele auf Bohren oder laute Musik.",
+      "Mülltrennung: Papier, Bio, Restmüll, Gelber Sack. Pfandflaschen bringt man in den Laden zurück."
+     ],
+     "q": "Welche dieser Bräuche gibt es auch bei dir, und welcher überrascht dich am meisten?",
+     "c": "Erklär einem neuen Nachbarn in vier Sätzen Mülltrennung und Ruhezeiten, mit man muss und man darf nicht."
+    },
+    "es": {
+     "t": "Valores y costumbres cotidianas",
+     "g": "Entiende costumbres diarias: Pünktlichkeit, Ruhezeiten, Ordnung y Mülltrennung.",
+     "p": [
+      "Pünktlichkeit: llegar a tiempo importa. Si llegas tarde, avisa: Es tut mir leid, ich verspäte mich um zehn Minuten.",
+      "Ruhezeiten: horas de silencio, en muchos sitios de noche y los domingos. Entonces se evita taladrar o la música alta.",
+      "Mülltrennung: separar la basura en Papier, Bio, Restmüll, Gelber Sack. Las botellas con Pfand vuelven a la tienda."
+     ],
+     "q": "¿Cuál de estas costumbres existe también donde vives y cuál te sorprende más?",
+     "c": "Explica a un vecino nuevo en cuatro frases cómo funcionan Mülltrennung y Ruhezeiten, con man muss y man darf nicht."
+    },
+    "fr": {
+     "t": "Valeurs et coutumes du quotidien",
+     "g": "Comprendre les coutumes : Pünktlichkeit, Ruhezeiten, Ordnung et Mülltrennung.",
+     "p": [
+      "Pünktlichkeit : être à l'heure compte. En cas de retard, appelle : Es tut mir leid, ich verspäte mich um zehn Minuten.",
+      "Ruhezeiten : heures de calme, souvent la nuit et le dimanche. On évite alors la perceuse ou la musique forte.",
+      "Mülltrennung : trier en Papier, Bio, Restmüll, Gelber Sack. Les bouteilles consignées (Pfand) retournent au magasin."
+     ],
+     "q": "Laquelle de ces coutumes existe aussi chez toi, et laquelle te surprend le plus ?",
+     "c": "Explique à un nouveau voisin en quatre phrases le tri et les Ruhezeiten, avec man muss et man darf nicht."
+    },
+    "it": {
+     "t": "Valori e usanze quotidiane",
+     "g": "Capisci le usanze quotidiane: Pünktlichkeit, Ruhezeiten, Ordnung e Mülltrennung.",
+     "p": [
+      "Pünktlichkeit: la puntualità conta. Se sei in ritardo, chiama: Es tut mir leid, ich verspäte mich um zehn Minuten.",
+      "Ruhezeiten: ore di silenzio, in molti posti di notte e la domenica. Allora si evitano trapano e musica alta.",
+      "Mülltrennung: differenziare in Papier, Bio, Restmüll, Gelber Sack. Le bottiglie con Pfand tornano al negozio."
+     ],
+     "q": "Quale di queste usanze esiste anche dove vivi e quale ti sorprende di più?",
+     "c": "Spiega a un nuovo vicino in quattro frasi la differenziata e le Ruhezeiten, con man muss e man darf nicht."
+    },
+    "pt": {
+     "t": "Valores e costumes do dia a dia",
+     "g": "Perceber os costumes: Pünktlichkeit, Ruhezeiten, Ordnung e Mülltrennung.",
+     "p": [
+      "Pünktlichkeit: chegar a horas é importante. Se te atrasares, liga: Es tut mir leid, ich verspäte mich um zehn Minuten.",
+      "Ruhezeiten: horas de silêncio, em muitos sítios à noite e ao domingo. Evita-se então berbequins ou música alta.",
+      "Mülltrennung: separar o lixo em Papier, Bio, Restmüll, Gelber Sack. As garrafas com Pfand voltam à loja."
+     ],
+     "q": "Qual destes costumes também existe onde vives e qual te surpreende mais?",
+     "c": "Explica a um vizinho novo em quatro frases a separação do lixo e as Ruhezeiten, com man muss e man darf nicht."
+    },
+    "pt_BR": {
+     "t": "Valores e costumes do dia a dia",
+     "g": "Entender os costumes: Pünktlichkeit, Ruhezeiten, Ordnung e Mülltrennung.",
+     "p": [
+      "Pünktlichkeit: chegar na hora é importante. Se for se atrasar, ligue: Es tut mir leid, ich verspäte mich um zehn Minuten.",
+      "Ruhezeiten: horário de silêncio, em muitos lugares à noite e no domingo. Aí se evita furadeira ou música alta.",
+      "Mülltrennung: separar o lixo em Papier, Bio, Restmüll, Gelber Sack. As garrafas com Pfand voltam para a loja."
+     ],
+     "q": "Qual desses costumes também existe onde você mora e qual mais te surpreende?",
+     "c": "Explique a um vizinho novo em quatro frases a coleta seletiva e as Ruhezeiten, com man muss e man darf nicht."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "die Pünktlichkeit",
+      "ex": "Pünktlichkeit ist im Beruf sehr wichtig."
+     },
+     {
+      "w": "sich verspäten",
+      "ex": "Entschuldigung, ich verspäte mich ein paar Minuten."
+     },
+     {
+      "w": "die Ruhezeit",
+      "ex": "Während der Ruhezeit sollte man nicht bohren."
+     },
+     {
+      "w": "die Mülltrennung",
+      "ex": "Mülltrennung ist hier ganz normal."
+     },
+     {
+      "w": "das Pfand",
+      "ex": "Auf diese Flasche gibt es Pfand."
+     },
+     {
+      "w": "der Restmüll",
+      "ex": "Die Windeln kommen in den Restmüll."
+     }
+    ],
+    "gram": "man darf nicht = Verbot, man muss nicht = nicht nötig. Man darf sonntags nicht bohren. Man muss nicht immer bar zahlen."
+   }
+  },
+  {
+   "d": 339,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Cultural differences",
+     "g": "Talk about direct communication, Sie and du at work, and greetings.",
+     "p": [
+      "Directness: Germans often say things clearly: Das funktioniert so nicht. It is usually about the topic, not about you.",
+      "Sie or du: at work people often start with Sie; the senior person offers du: Wollen wir uns duzen? Start-ups often use du at once.",
+      "Greetings: a firm handshake, eye contact, and in the south Grüß Gott. Friends may hug; small talk is often short."
+     ],
+     "q": "What surprised you, or would surprise you, most about communication in German-speaking countries?",
+     "c": "Write a short dialogue where a colleague offers you the du, and you accept politely."
+    },
+    "de": {
+     "t": "Kulturelle Unterschiede",
+     "g": "Du sprichst über direkte Kommunikation, Sie und du im Beruf und Begrüßungen.",
+     "p": [
+      "Direktheit: Man sagt Dinge oft klar: Das funktioniert so nicht. Meist geht es um die Sache, nicht um dich.",
+      "Sie oder du: Im Beruf beginnt man oft mit Sie; Ältere oder Vorgesetzte bieten das Du an: Wollen wir uns duzen? Start-ups duzen oft sofort.",
+      "Begrüßung: fester Händedruck, Blickkontakt, im Süden Grüß Gott. Freunde umarmen sich; Smalltalk ist oft kurz."
+     ],
+     "q": "Was hat dich an der Kommunikation in deutschsprachigen Ländern am meisten überrascht oder würde es tun?",
+     "c": "Schreib einen kurzen Dialog, in dem dir eine Kollegin das Du anbietet und du höflich annimmst."
+    },
+    "es": {
+     "t": "Diferencias culturales",
+     "g": "Habla de comunicación directa, Sie y du en el trabajo y saludos.",
+     "p": [
+      "Franqueza: se dicen las cosas claro: Das funktioniert so nicht. Suele tratarse del tema, no de ti.",
+      "Sie o du: en el trabajo se suele empezar con Sie; el mayor o el jefe ofrece el du: Wollen wir uns duzen? En start-ups, du desde el inicio.",
+      "Saludos: apretón de manos firme, mirada a los ojos y, en el sur, Grüß Gott. Los amigos se abrazan; la charla trivial suele ser breve."
+     ],
+     "q": "¿Qué te sorprendió, o te sorprendería, más de la comunicación en países germanohablantes?",
+     "c": "Escribe un diálogo corto en el que una colega te ofrece el du y tú aceptas con amabilidad."
+    },
+    "fr": {
+     "t": "Différences culturelles",
+     "g": "Parler de communication directe, du Sie et du du au travail, et des salutations.",
+     "p": [
+      "Franchise : on dit souvent les choses clairement : Das funktioniert so nicht. Il s'agit du sujet, pas de toi.",
+      "Sie ou du : au travail on commence souvent par Sie ; l'aîné ou le chef propose le du : Wollen wir uns duzen? Les start-up tutoient vite.",
+      "Salutations : poignée de main ferme, regard direct et, au sud, Grüß Gott. Les amis s'étreignent ; le small talk est souvent court."
+     ],
+     "q": "Qu'est-ce qui t'a surpris, ou te surprendrait, le plus dans la communication des pays germanophones ?",
+     "c": "Écris un court dialogue où une collègue te propose le du et où tu acceptes poliment."
+    },
+    "it": {
+     "t": "Differenze culturali",
+     "g": "Parla di comunicazione diretta, Sie e du al lavoro e saluti.",
+     "p": [
+      "Franchezza: si dicono le cose chiaramente: Das funktioniert so nicht. Di solito riguarda il tema, non te.",
+      "Sie o du: al lavoro si parte spesso col Sie; il più anziano o il capo offre il du: Wollen wir uns duzen? Nelle start-up, tu da subito.",
+      "Saluti: stretta di mano decisa, contatto visivo e, al sud, Grüß Gott. Gli amici si abbracciano; il small talk è spesso breve."
+     ],
+     "q": "Che cosa ti ha sorpreso, o ti sorprenderebbe, di più nella comunicazione nei paesi di lingua tedesca?",
+     "c": "Scrivi un breve dialogo in cui una collega ti offre il du e tu accetti con cortesia."
+    },
+    "pt": {
+     "t": "Diferenças culturais",
+     "g": "Falar de comunicação direta, Sie e du no trabalho e cumprimentos.",
+     "p": [
+      "Franqueza: diz-se muitas vezes as coisas com clareza: Das funktioniert so nicht. Normalmente é sobre o assunto, não sobre ti.",
+      "Sie ou du: no trabalho começa-se com Sie; o mais velho ou o chefe propõe o du: Wollen wir uns duzen? Nas start-ups, tu desde o início.",
+      "Cumprimentos: aperto de mão firme, olhar nos olhos e, no sul, Grüß Gott. Amigos abraçam-se; a conversa de circunstância é curta."
+     ],
+     "q": "O que te surpreendeu, ou surpreenderia, mais na comunicação nos países de língua alemã?",
+     "c": "Escreve um diálogo curto em que uma colega te propõe o du e tu aceitas com simpatia."
+    },
+    "pt_BR": {
+     "t": "Diferenças culturais",
+     "g": "Falar de comunicação direta, Sie e du no trabalho e cumprimentos.",
+     "p": [
+      "Franqueza: as coisas costumam ser ditas com clareza: Das funktioniert so nicht. Em geral é sobre o assunto, não sobre você.",
+      "Sie ou du: no trabalho se começa com Sie; o mais velho ou o chefe oferece o du: Wollen wir uns duzen? Em start-ups, du desde o início.",
+      "Cumprimentos: aperto de mão firme, olho no olho e, no sul, Grüß Gott. Amigos se abraçam; o papo furado costuma ser curto."
+     ],
+     "q": "O que mais te surpreendeu, ou surpreenderia, na comunicação nos países de língua alemã?",
+     "c": "Escreva um diálogo curto em que uma colega te oferece o du e você aceita com simpatia."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "direkt",
+      "ex": "Sie ist sehr direkt, aber immer fair."
+     },
+     {
+      "w": "sich duzen",
+      "ex": "Wollen wir uns duzen? Ich bin Anna."
+     },
+     {
+      "w": "siezen",
+      "ex": "Am Anfang siezt man den Chef."
+     },
+     {
+      "w": "der Händedruck",
+      "ex": "Ein fester Händedruck gehört zur Begrüßung."
+     },
+     {
+      "w": "der Blickkontakt",
+      "ex": "Beim Gespräch ist Blickkontakt wichtig."
+     },
+     {
+      "w": "das Missverständnis",
+      "ex": "Das war nur ein kleines Missverständnis."
+     }
+    ],
+    "gram": "Reziproke Verben mit uns/euch/sich: Wir duzen uns. Wollen wir uns duzen? = Vorschlag mit wollen in der wir-Form."
+   }
+  },
+  {
+   "d": 340,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Living in a German-speaking country",
+     "g": "Talk about settling in, making friends and adapting to local habits.",
+     "p": [
+      "Settling in: sich anmelden (register your address), ein Konto eröffnen, sich einleben. Ich habe mich gut eingelebt.",
+      "Making friends: join a Verein (club), a choir or sports team. Friendships can take time but are often very loyal.",
+      "Adapting: Ich habe mich an... gewöhnt. Am Anfang war... ungewohnt, aber inzwischen... Be patient with yourself!"
+     ],
+     "q": "If you moved to a German-speaking city, which club or activity would you join to meet people?",
+     "c": "Write five sentences about adapting to a new place, using sich gewöhnen an, sich einleben and inzwischen."
+    },
+    "de": {
+     "t": "Leben in einem deutschsprachigen Land",
+     "g": "Du sprichst über Ankommen, Freundschaften und neue Gewohnheiten.",
+     "p": [
+      "Ankommen: sich anmelden, ein Konto eröffnen, sich einleben. Ich habe mich gut eingelebt.",
+      "Freunde finden: in einen Verein, einen Chor oder ein Sportteam gehen. Freundschaften brauchen Zeit, sind aber oft sehr treu.",
+      "Sich anpassen: Ich habe mich an... gewöhnt. Am Anfang war... ungewohnt, aber inzwischen... Hab Geduld mit dir!"
+     ],
+     "q": "Wenn du in eine deutschsprachige Stadt ziehen würdest, welchem Verein würdest du beitreten, um Leute kennenzulernen?",
+     "c": "Schreib fünf Sätze übers Einleben an einem neuen Ort mit sich gewöhnen an, sich einleben und inzwischen."
+    },
+    "es": {
+     "t": "Vivir en un país germanohablante",
+     "g": "Habla de instalarte, hacer amigos y adaptarte a las costumbres.",
+     "p": [
+      "Instalarse: sich anmelden (empadronarse), ein Konto eröffnen, sich einleben. Ich habe mich gut eingelebt.",
+      "Hacer amigos: únete a un Verein (club), un coro o un equipo. Las amistades tardan, pero suelen ser muy leales.",
+      "Adaptarse: Ich habe mich an... gewöhnt. Am Anfang war... ungewohnt, aber inzwischen... ¡Ten paciencia contigo!"
+     ],
+     "q": "Si te mudaras a una ciudad germanohablante, ¿a qué club o actividad te unirías para conocer gente?",
+     "c": "Escribe cinco frases sobre adaptarte a un lugar nuevo con sich gewöhnen an, sich einleben e inzwischen."
+    },
+    "fr": {
+     "t": "Vivre dans un pays germanophone",
+     "g": "Parler de son installation, se faire des amis et s'adapter aux habitudes.",
+     "p": [
+      "S'installer : sich anmelden (déclarer son adresse), ein Konto eröffnen, sich einleben. Ich habe mich gut eingelebt.",
+      "Se faire des amis : rejoindre un Verein (association), une chorale, un club de sport. Les amitiés prennent du temps mais sont fidèles.",
+      "S'adapter : Ich habe mich an... gewöhnt. Am Anfang war... ungewohnt, aber inzwischen... Sois patient avec toi !"
+     ],
+     "q": "Si tu t'installais dans une ville germanophone, quelle association rejoindrais-tu pour rencontrer des gens ?",
+     "c": "Écris cinq phrases sur l'adaptation à un nouveau lieu avec sich gewöhnen an, sich einleben et inzwischen."
+    },
+    "it": {
+     "t": "Vivere in un paese di lingua tedesca",
+     "g": "Parla di ambientarti, farti amici e adattarti alle abitudini.",
+     "p": [
+      "Sistemarsi: sich anmelden (registrare la residenza), ein Konto eröffnen, sich einleben. Ich habe mich gut eingelebt.",
+      "Farsi amici: entra in un Verein (associazione), un coro o una squadra. Le amicizie richiedono tempo ma sono spesso molto fedeli.",
+      "Adattarsi: Ich habe mich an... gewöhnt. Am Anfang war... ungewohnt, aber inzwischen... Abbi pazienza con te!"
+     ],
+     "q": "Se ti trasferissi in una città di lingua tedesca, a quale associazione ti iscriveresti per conoscere gente?",
+     "c": "Scrivi cinque frasi sull'ambientarti in un posto nuovo con sich gewöhnen an, sich einleben e inzwischen."
+    },
+    "pt": {
+     "t": "Viver num país de língua alemã",
+     "g": "Falar de te instalares, fazer amigos e adaptar-te aos hábitos.",
+     "p": [
+      "Instalar-se: sich anmelden (registar a morada), ein Konto eröffnen, sich einleben. Ich habe mich gut eingelebt.",
+      "Fazer amigos: entra num Verein (associação), num coro ou numa equipa. As amizades levam tempo, mas são muito leais.",
+      "Adaptar-se: Ich habe mich an... gewöhnt. Am Anfang war... ungewohnt, aber inzwischen... Tem paciência contigo!"
+     ],
+     "q": "Se te mudasses para uma cidade de língua alemã, a que associação te juntarias para conhecer pessoas?",
+     "c": "Escreve cinco frases sobre adaptar-te a um sítio novo com sich gewöhnen an, sich einleben e inzwischen."
+    },
+    "pt_BR": {
+     "t": "Morar num país de língua alemã",
+     "g": "Falar de se instalar, fazer amigos e se adaptar aos costumes.",
+     "p": [
+      "Instalar-se: sich anmelden (registrar o endereço), ein Konto eröffnen, sich einleben. Ich habe mich gut eingelebt.",
+      "Fazer amigos: entre num Verein (clube), num coral ou num time. As amizades demoram, mas costumam ser muito leais.",
+      "Adaptar-se: Ich habe mich an... gewöhnt. Am Anfang war... ungewohnt, aber inzwischen... Tenha paciência com você!"
+     ],
+     "q": "Se você se mudasse para uma cidade de língua alemã, em que clube entraria para conhecer gente?",
+     "c": "Escreva cinco frases sobre se adaptar a um lugar novo com sich gewöhnen an, sich einleben e inzwischen."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "sich anmelden",
+      "ex": "In der ersten Woche muss man sich beim Bürgeramt anmelden."
+     },
+     {
+      "w": "sich einleben",
+      "ex": "Nach drei Monaten habe ich mich gut eingelebt."
+     },
+     {
+      "w": "sich gewöhnen an",
+      "ex": "Ich habe mich an das frühe Abendessen gewöhnt."
+     },
+     {
+      "w": "der Verein",
+      "ex": "Im Sportverein habe ich viele Freunde gefunden."
+     },
+     {
+      "w": "ungewohnt",
+      "ex": "Am Anfang war die Stille am Sonntag ungewohnt."
+     },
+     {
+      "w": "inzwischen",
+      "ex": "Inzwischen fühle ich mich hier zu Hause."
+     }
+    ],
+    "gram": "sich gewöhnen an + Akkusativ: Ich gewöhne mich an das Wetter. Mit Verb: Ich habe mich daran gewöhnt, früh aufzustehen."
+   }
+  }
+ ]
+}

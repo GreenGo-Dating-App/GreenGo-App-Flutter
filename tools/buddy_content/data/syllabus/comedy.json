@@ -1,0 +1,2195 @@
+{
+"topic": "comedy",
+"days": [
+{
+"d": 1,
+"lv": "beginner",
+"t": "Why we laugh",
+"f": "Laughter as a social signal: we laugh far more with friends than alone, and it helps people feel close"
+},
+{
+"d": 2,
+"lv": "beginner",
+"t": "What makes something funny",
+"f": "Surprise, a harmless twist and a shared understanding: the three ingredients behind most jokes"
+},
+{
+"d": 3,
+"lv": "beginner",
+"t": "Kind humour versus mean humour",
+"f": "Laughing with people, never at them: why the best jokes leave everyone smiling"
+},
+{
+"d": 4,
+"lv": "beginner",
+"t": "The anatomy of a joke",
+"f": "Setup and punchline: how a joke builds an expectation and then flips it"
+},
+{
+"d": 5,
+"lv": "beginner",
+"t": "Your first joke to tell",
+"f": "Picking a short, clean joke you like and practising it until it feels natural"
+},
+{
+"d": 6,
+"lv": "beginner",
+"t": "Puns: playing with sounds",
+"f": "How words that sound alike or have two meanings create a little spark of fun"
+},
+{
+"d": 7,
+"lv": "beginner",
+"t": "Knock-knock jokes",
+"f": "The call-and-response format children love and why the listener becomes part of the joke"
+},
+{
+"d": 8,
+"lv": "beginner",
+"t": "Riddle jokes",
+"f": "Question-and-answer jokes like 'What has keys but can't open locks?' and how they tease the brain"
+},
+{
+"d": 9,
+"lv": "beginner",
+"t": "Dad jokes and groaners",
+"f": "Why a joke that makes people groan can still be a success and spread good mood"
+},
+{
+"d": 10,
+"lv": "beginner",
+"t": "The power of surprise",
+"f": "Misdirection basics: leading the listener one way and landing somewhere unexpected"
+},
+{
+"d": 11,
+"lv": "beginner",
+"t": "Comic timing: the pause",
+"f": "How a short silence before the punchline gives the listener time to expect and enjoy"
+},
+{
+"d": 12,
+"lv": "beginner",
+"t": "Speaking clearly and slowly",
+"f": "Why rushing kills a joke and how a calm pace lets every word land"
+},
+{
+"d": 13,
+"lv": "beginner",
+"t": "The rule of three",
+"f": "List two normal things and a third surprising one: the classic comic pattern"
+},
+{
+"d": 14,
+"lv": "beginner",
+"t": "Exaggeration",
+"f": "Making something much bigger, smaller or more extreme than real life for a playful effect"
+},
+{
+"d": 15,
+"lv": "beginner",
+"t": "Understatement",
+"f": "Saying much less than the situation deserves, a gentle humour loved in Britain and beyond"
+},
+{
+"d": 16,
+"lv": "beginner",
+"t": "Observational humour",
+"f": "Finding the funny side of everyday things everyone notices but rarely mentions"
+},
+{
+"d": 17,
+"lv": "beginner",
+"t": "Laughing at yourself kindly",
+"f": "Light self-mockery that shows confidence without putting yourself down"
+},
+{
+"d": 18,
+"lv": "beginner",
+"t": "Funny faces and gestures",
+"f": "How expressions, posture and small movements can make a story twice as funny"
+},
+{
+"d": 19,
+"lv": "beginner",
+"t": "Silly words",
+"f": "Why some words like 'wobble' or 'kerfuffle' sound funny on their own"
+},
+{
+"d": 20,
+"lv": "beginner",
+"t": "Animal jokes",
+"f": "A safe, universal favourite: jokes about penguins, cows and chickens across cultures"
+},
+{
+"d": 21,
+"lv": "beginner",
+"t": "Food jokes",
+"f": "Puns and gags about cheese, bread and vegetables that work at any family table"
+},
+{
+"d": 22,
+"lv": "beginner",
+"t": "Why did the chicken cross the road?",
+"f": "The famous anti-joke and how a plain answer can be funny by being unfunny"
+},
+{
+"d": 23,
+"lv": "beginner",
+"t": "Anti-jokes",
+"f": "Jokes that break the expected pattern by refusing to have a twist"
+},
+{
+"d": 24,
+"lv": "beginner",
+"t": "One-liners",
+"f": "Complete jokes in a single sentence and why brevity makes humour sharper"
+},
+{
+"d": 25,
+"lv": "beginner",
+"t": "Funny stories from daily life",
+"f": "Turning a small mishap, like a lost umbrella, into a short amusing anecdote"
+},
+{
+"d": 26,
+"lv": "beginner",
+"t": "Smiling while speaking",
+"f": "How a warm smile changes your voice and invites others to laugh with you"
+},
+{
+"d": 27,
+"lv": "beginner",
+"t": "Reading the room",
+"f": "Noticing the mood and the people around you before telling a joke"
+},
+{
+"d": 28,
+"lv": "beginner",
+"t": "When not to joke",
+"f": "Moments that call for kindness and calm instead of humour, and how to tell them apart"
+},
+{
+"d": 29,
+"lv": "beginner",
+"t": "Humour and friendship",
+"f": "How shared jokes and laughter build trust between new friends"
+},
+{
+"d": 30,
+"lv": "beginner",
+"t": "Review: your joke toolkit",
+"f": "A light look back at puns, timing, surprise and the rule of three with a mini quiz"
+},
+{
+"d": 31,
+"lv": "beginner",
+"t": "Humour around the world",
+"f": "Every culture laughs, but styles differ: a first tour of global humour"
+},
+{
+"d": 32,
+"lv": "beginner",
+"t": "British humour basics",
+"f": "Dry wit, irony and understatement, and why a straight face matters"
+},
+{
+"d": 33,
+"lv": "beginner",
+"t": "American humour basics",
+"f": "Energy, self-confidence and storytelling in classic American comedy"
+},
+{
+"d": 34,
+"lv": "beginner",
+"t": "German humour basics",
+"f": "Wordplay, precision and the joy of the Kalauer, the cheerful bad pun"
+},
+{
+"d": 35,
+"lv": "beginner",
+"t": "French humour basics",
+"f": "The esprit and the calembour: wit and word games in French conversation"
+},
+{
+"d": 36,
+"lv": "beginner",
+"t": "Italian humour basics",
+"f": "Lively gestures, barzellette and comic characters from the commedia tradition"
+},
+{
+"d": 37,
+"lv": "beginner",
+"t": "Spanish humour basics",
+"f": "Chistes, quick wit and the warm teasing of Spanish-speaking friends"
+},
+{
+"d": 38,
+"lv": "beginner",
+"t": "Portuguese humour basics",
+"f": "Trocadilhos and gentle irony in European Portuguese conversation"
+},
+{
+"d": 39,
+"lv": "beginner",
+"t": "Brazilian humour basics",
+"f": "Playful teasing, creative slang and the famous Brazilian lightness"
+},
+{
+"d": 40,
+"lv": "beginner",
+"t": "Japanese manzai",
+"f": "A comedy duo of the straight man and the funny man, a style with long roots in Japan"
+},
+{
+"d": 41,
+"lv": "beginner",
+"t": "Humour that travels well",
+"f": "Why visual gags and universal situations cross borders more easily than puns"
+},
+{
+"d": 42,
+"lv": "beginner",
+"t": "Humour that gets lost",
+"f": "How jokes based on local words or customs can confuse visitors, and how to explain them"
+},
+{
+"d": 43,
+"lv": "beginner",
+"t": "Laughing in another language",
+"f": "Why understanding a joke in a foreign language is a sign of real fluency"
+},
+{
+"d": 44,
+"lv": "beginner",
+"t": "Simple jokes in English",
+"f": "A few classic clean English jokes and the wordplay hidden inside them"
+},
+{
+"d": 45,
+"lv": "beginner",
+"t": "Explaining a joke kindly",
+"f": "How to help someone who missed the point without making them feel left out"
+},
+{
+"d": 46,
+"lv": "beginner",
+"t": "Tongue twisters",
+"f": "Fun phrases like 'She sells seashells' that make everyone laugh at their own mistakes"
+},
+{
+"d": 47,
+"lv": "beginner",
+"t": "Funny idioms",
+"f": "Expressions that sound strange when translated literally, like 'raining cats and dogs'"
+},
+{
+"d": 48,
+"lv": "beginner",
+"t": "False friends",
+"f": "Words that look alike in two languages but mean different things, a source of friendly mix-ups"
+},
+{
+"d": 49,
+"lv": "beginner",
+"t": "Mishearings",
+"f": "Funny misheard song lyrics and phrases, and why our brains fill in the gaps"
+},
+{
+"d": 50,
+"lv": "beginner",
+"t": "Spoonerisms",
+"f": "Swapping the first sounds of words, named after the absent-minded Reverend Spooner"
+},
+{
+"d": 51,
+"lv": "beginner",
+"t": "Malapropisms",
+"f": "Using a similar-sounding wrong word, named after Mrs Malaprop in a 1775 play"
+},
+{
+"d": 52,
+"lv": "beginner",
+"t": "Double meanings",
+"f": "Sentences that can be read two ways and how headlines sometimes do this by accident"
+},
+{
+"d": 53,
+"lv": "beginner",
+"t": "Homophones",
+"f": "Words that sound the same but differ in spelling and meaning: pear, pair and pare"
+},
+{
+"d": 54,
+"lv": "beginner",
+"t": "Homographs",
+"f": "Same spelling, different meaning: how 'bat' and 'bark' power many jokes"
+},
+{
+"d": 55,
+"lv": "beginner",
+"t": "Visual puns",
+"f": "Drawings and photos that play on words, from cartoons to shop signs"
+},
+{
+"d": 56,
+"lv": "beginner",
+"t": "Funny signs and labels",
+"f": "Amusing real-world signs and why unclear wording makes people smile"
+},
+{
+"d": 57,
+"lv": "beginner",
+"t": "Playful teasing",
+"f": "Friendly banter between people who know each other well, and its golden rules"
+},
+{
+"d": 58,
+"lv": "beginner",
+"t": "Compliments with a smile",
+"f": "Adding light humour to praise so it feels warm and memorable"
+},
+{
+"d": 59,
+"lv": "beginner",
+"t": "Humour in greetings",
+"f": "Breaking the ice with a gentle joke when meeting new people"
+},
+{
+"d": 60,
+"lv": "beginner",
+"t": "Review: humour across cultures",
+"f": "A cheerful recap of national styles and wordplay with a small challenge"
+},
+{
+"d": 61,
+"lv": "beginner",
+"t": "Slapstick basics",
+"f": "Pratfalls, slips and comic chases: physical humour where nobody really gets hurt"
+},
+{
+"d": 62,
+"lv": "beginner",
+"t": "Clowns through history",
+"f": "From court jesters to circus clowns: the people whose job was laughter"
+},
+{
+"d": 63,
+"lv": "beginner",
+"t": "Mime",
+"f": "Comedy without words, using only the body, like walking against an invisible wind"
+},
+{
+"d": 64,
+"lv": "beginner",
+"t": "The straight face",
+"f": "Deadpan delivery: telling something funny with total seriousness"
+},
+{
+"d": 65,
+"lv": "beginner",
+"t": "Funny voices",
+"f": "Using pitch, accent-free character voices and rhythm to bring a story to life"
+},
+{
+"d": 66,
+"lv": "beginner",
+"t": "The comic pause in stories",
+"f": "Where to stop for a beat when telling a funny anecdote"
+},
+{
+"d": 67,
+"lv": "beginner",
+"t": "Callbacks",
+"f": "Bringing back an earlier joke later on, which rewards people who were listening"
+},
+{
+"d": 68,
+"lv": "beginner",
+"t": "Running gags",
+"f": "A joke repeated in small variations that grows funnier each time"
+},
+{
+"d": 69,
+"lv": "beginner",
+"t": "Running out of words",
+"f": "Why nervous moments happen and how a light remark can save them"
+},
+{
+"d": 70,
+"lv": "beginner",
+"t": "Improv: yes, and",
+"f": "The first rule of improvised comedy: accept an idea and add something to it"
+},
+{
+"d": 71,
+"lv": "beginner",
+"t": "Improv games for friends",
+"f": "Simple word and story games anyone can play at a party or in a chat"
+},
+{
+"d": 72,
+"lv": "beginner",
+"t": "Funny what-if questions",
+"f": "Imagining absurd situations, like a cat running a bakery, to spark laughter"
+},
+{
+"d": 73,
+"lv": "beginner",
+"t": "Comic characters",
+"f": "Recognisable types like the clumsy hero or the know-it-all and why we enjoy them"
+},
+{
+"d": 74,
+"lv": "beginner",
+"t": "Cartoons and comic strips",
+"f": "Short drawn stories with a punchline in the last panel"
+},
+{
+"d": 75,
+"lv": "beginner",
+"t": "Peanuts and Charlie Brown",
+"f": "Charles Schulz's gentle strip and its mix of humour and warmth"
+},
+{
+"d": 76,
+"lv": "beginner",
+"t": "Asterix and Obelix",
+"f": "The French-Belgian comics full of puns, many cleverly rewritten for each language"
+},
+{
+"d": 77,
+"lv": "beginner",
+"t": "Mafalda",
+"f": "Quino's Argentine comic strip about a curious, thoughtful girl"
+},
+{
+"d": 78,
+"lv": "beginner",
+"t": "Turma da Mônica",
+"f": "Mauricio de Sousa's Brazilian comic gang, loved by generations of readers"
+},
+{
+"d": 79,
+"lv": "beginner",
+"t": "Tintin and comic adventure",
+"f": "Hergé's classic Belgian series and its comic sidekicks like Captain Haddock"
+},
+{
+"d": 80,
+"lv": "beginner",
+"t": "Animated comedy",
+"f": "How cartoons use speed, sound effects and stretchy bodies for laughs"
+},
+{
+"d": 81,
+"lv": "beginner",
+"t": "Sound effects in comedy",
+"f": "Boing, splat and whoosh: how noises underline a funny moment"
+},
+{
+"d": 82,
+"lv": "beginner",
+"t": "Funny animals on screen",
+"f": "Why animal characters are a universal source of comedy"
+},
+{
+"d": 83,
+"lv": "beginner",
+"t": "Children's humour",
+"f": "What makes kids laugh and what grown-ups can learn from it"
+},
+{
+"d": 84,
+"lv": "beginner",
+"t": "Humour in picture books",
+"f": "Simple visual surprises and repetition that delight young readers"
+},
+{
+"d": 85,
+"lv": "beginner",
+"t": "Nonsense words",
+"f": "Made-up words like Lewis Carroll's 'Jabberwocky' and the fun of pure sound"
+},
+{
+"d": 86,
+"lv": "beginner",
+"t": "Limericks",
+"f": "Five-line comic poems with a bouncy rhythm, made famous by Edward Lear"
+},
+{
+"d": 87,
+"lv": "beginner",
+"t": "Writing your first limerick",
+"f": "The AABBA rhyme scheme and a simple template to try"
+},
+{
+"d": 88,
+"lv": "beginner",
+"t": "Funny rhymes",
+"f": "Unexpected rhymes that make a short verse surprising and playful"
+},
+{
+"d": 89,
+"lv": "beginner",
+"t": "Comic exaggeration in tall tales",
+"f": "Folk stories like Baron Munchausen's impossible adventures"
+},
+{
+"d": 90,
+"lv": "beginner",
+"t": "Review: physical and visual comedy",
+"f": "A recap of slapstick, mime, cartoons and limericks with a fun quiz"
+},
+{
+"d": 91,
+"lv": "beginner",
+"t": "Telling a joke to a group",
+"f": "Speaking up, making eye contact and pausing for the laugh"
+},
+{
+"d": 92,
+"lv": "beginner",
+"t": "Handling a joke that falls flat",
+"f": "Smiling, moving on and maybe joking about the silence itself"
+},
+{
+"d": 93,
+"lv": "beginner",
+"t": "Laughing generously",
+"f": "Being a good audience: why laughing at others' jokes builds connection"
+},
+{
+"d": 94,
+"lv": "beginner",
+"t": "Humour in text messages",
+"f": "How tone can get lost in writing and how to keep jokes clear"
+},
+{
+"d": 95,
+"lv": "beginner",
+"t": "Emojis and humour",
+"f": "Using a single emoji to signal a joke without overloading the message"
+},
+{
+"d": 96,
+"lv": "beginner",
+"t": "Memes as modern humour",
+"f": "Pictures with captions as a shared joke format, and keeping them kind"
+},
+{
+"d": 97,
+"lv": "beginner",
+"t": "GIF reactions",
+"f": "Short looping clips as a way to laugh together online"
+},
+{
+"d": 98,
+"lv": "beginner",
+"t": "Funny photos",
+"f": "Composing a playful picture with perspective tricks and timing"
+},
+{
+"d": 99,
+"lv": "beginner",
+"t": "Puns on names of places",
+"f": "Lighthearted wordplay with city and country names, done respectfully"
+},
+{
+"d": 100,
+"lv": "beginner",
+"t": "Seasonal jokes",
+"f": "Gentle humour about weather, holidays and the changing seasons"
+},
+{
+"d": 101,
+"lv": "beginner",
+"t": "Jokes about technology",
+"f": "Laughing at autocorrect, frozen screens and forgotten passwords"
+},
+{
+"d": 102,
+"lv": "beginner",
+"t": "Jokes about school and work",
+"f": "Universal shared experiences like Monday mornings and long meetings"
+},
+{
+"d": 103,
+"lv": "beginner",
+"t": "Jokes about travel",
+"f": "Lost luggage, wrong turns and confusing maps as gentle comic material"
+},
+{
+"d": 104,
+"lv": "beginner",
+"t": "Humour and good mood",
+"f": "How a daily laugh can lift your mood and help you relax"
+},
+{
+"d": 105,
+"lv": "beginner",
+"t": "Humour and stress",
+"f": "Using lightness to cope with small daily annoyances"
+},
+{
+"d": 106,
+"lv": "beginner",
+"t": "Laughter yoga",
+"f": "A practice that starts with fake laughter that soon turns real"
+},
+{
+"d": 107,
+"lv": "beginner",
+"t": "Laughter is contagious",
+"f": "Why hearing others laugh makes us laugh too"
+},
+{
+"d": 108,
+"lv": "beginner",
+"t": "Sitcom laugh tracks",
+"f": "Why some TV shows added recorded laughter and how it affects viewers"
+},
+{
+"d": 109,
+"lv": "beginner",
+"t": "Your favourite funny film",
+"f": "Thinking about what makes a comedy film you love work so well"
+},
+{
+"d": 110,
+"lv": "beginner",
+"t": "Your favourite comedian",
+"f": "Exploring the style of a performer who makes you laugh"
+},
+{
+"d": 111,
+"lv": "beginner",
+"t": "Collecting jokes",
+"f": "Keeping a small notebook of jokes you hear and like"
+},
+{
+"d": 112,
+"lv": "beginner",
+"t": "Adapting a joke",
+"f": "Changing details of a joke so it fits your audience and your own voice"
+},
+{
+"d": 113,
+"lv": "beginner",
+"t": "Make it shorter",
+"f": "Cutting extra words so the punchline arrives faster"
+},
+{
+"d": 114,
+"lv": "beginner",
+"t": "Choosing the last word",
+"f": "Why the funniest word belongs at the very end of the punchline"
+},
+{
+"d": 115,
+"lv": "beginner",
+"t": "Practising out loud",
+"f": "Rehearsing a joke a few times so it sounds relaxed and natural"
+},
+{
+"d": 116,
+"lv": "beginner",
+"t": "Joke swap",
+"f": "Trading favourite clean jokes with a friend from another culture"
+},
+{
+"d": 117,
+"lv": "beginner",
+"t": "Humour in your language",
+"f": "Finding a joke from your own culture and explaining why it is funny"
+},
+{
+"d": 118,
+"lv": "beginner",
+"t": "Laughing at small mistakes",
+"f": "Turning your own little slip-ups into a shared smile instead of embarrassment"
+},
+{
+"d": 119,
+"lv": "beginner",
+"t": "Humour journal: week one",
+"f": "Writing down three things that made you smile this week and why"
+},
+{
+"d": 120,
+"lv": "beginner",
+"t": "Review: the beginner comedian",
+"f": "A cheerful look back at the first 120 days and your favourite discoveries"
+},
+{
+"d": 121,
+"lv": "intermediate",
+"t": "The oldest jokes",
+"f": "Humour appears in some of the oldest written texts, showing people have always loved a joke"
+},
+{
+"d": 122,
+"lv": "intermediate",
+"t": "Comedy in ancient Greece",
+"f": "How Greek theatre split drama into tragedy and comedy, with masks and choruses"
+},
+{
+"d": 123,
+"lv": "intermediate",
+"t": "Aristophanes",
+"f": "The Athenian playwright whose comedies like 'The Birds' imagined wild, fantastic worlds"
+},
+{
+"d": 124,
+"lv": "intermediate",
+"t": "Menander and everyday comedy",
+"f": "Greek plays about families, mix-ups and misunderstandings that shaped later sitcoms"
+},
+{
+"d": 125,
+"lv": "intermediate",
+"t": "Roman comedy: Plautus",
+"f": "Clever servants, mistaken identities and fast dialogue on the Roman stage"
+},
+{
+"d": 126,
+"lv": "intermediate",
+"t": "The Philogelos",
+"f": "An ancient Greek collection of jokes, many about absent-minded scholars"
+},
+{
+"d": 127,
+"lv": "intermediate",
+"t": "Court jesters",
+"f": "Fools at royal courts who could entertain and sometimes speak truths with a smile"
+},
+{
+"d": 128,
+"lv": "intermediate",
+"t": "Medieval farce",
+"f": "Short comic plays performed at fairs and in town squares across Europe"
+},
+{
+"d": 129,
+"lv": "intermediate",
+"t": "Commedia dell'arte",
+"f": "Italian improvised theatre with masks and stock characters from the 16th century"
+},
+{
+"d": 130,
+"lv": "intermediate",
+"t": "Arlecchino and friends",
+"f": "Harlequin, Pantalone, Colombina and the stock characters of commedia"
+},
+{
+"d": 131,
+"lv": "intermediate",
+"t": "Lazzi: comic routines",
+"f": "The rehearsed bits of business commedia actors could drop into any scene"
+},
+{
+"d": 132,
+"lv": "intermediate",
+"t": "Shakespeare's comedies",
+"f": "Mistaken identities and witty lovers' quarrels in plays like 'Twelfth Night'"
+},
+{
+"d": 133,
+"lv": "intermediate",
+"t": "Shakespeare's clowns and fools",
+"f": "Characters like Feste and Bottom who bring wordplay and silliness"
+},
+{
+"d": 134,
+"lv": "intermediate",
+"t": "Don Quixote",
+"f": "Cervantes' novel and its comic knight who mistakes windmills for giants"
+},
+{
+"d": 135,
+"lv": "intermediate",
+"t": "Molière",
+"f": "The French playwright who made audiences laugh at vanity and pretension"
+},
+{
+"d": 136,
+"lv": "intermediate",
+"t": "Goldoni",
+"f": "The Venetian writer who brought commedia characters into written, realistic comedy"
+},
+{
+"d": 137,
+"lv": "intermediate",
+"t": "Comedy of manners",
+"f": "Witty plays about social customs and polite society's little absurdities"
+},
+{
+"d": 138,
+"lv": "intermediate",
+"t": "Gil Vicente",
+"f": "The Portuguese playwright whose 16th-century plays mixed comedy and social portraits"
+},
+{
+"d": 139,
+"lv": "intermediate",
+"t": "Satire explained",
+"f": "Using humour and exaggeration to point out human foolishness in general"
+},
+{
+"d": 140,
+"lv": "intermediate",
+"t": "Gulliver's Travels",
+"f": "Jonathan Swift's fantastic voyages, a classic of comic exaggeration"
+},
+{
+"d": 141,
+"lv": "intermediate",
+"t": "Mark Twain's humour",
+"f": "The American writer's gift for dry wit and comic storytelling"
+},
+{
+"d": 142,
+"lv": "intermediate",
+"t": "Oscar Wilde's wit",
+"f": "Paradoxes and elegant one-liners from 'The Importance of Being Earnest'"
+},
+{
+"d": 143,
+"lv": "intermediate",
+"t": "Review: comedy from Athens to Wilde",
+"f": "A light recap of early comic theatre and writers with a mini quiz"
+},
+{
+"d": 144,
+"lv": "intermediate",
+"t": "Music hall",
+"f": "Popular British variety theatre with songs, sketches and comic performers"
+},
+{
+"d": 145,
+"lv": "intermediate",
+"t": "Vaudeville",
+"f": "American variety shows where many famous comedians started their careers"
+},
+{
+"d": 146,
+"lv": "intermediate",
+"t": "Cabaret humour",
+"f": "Small stages, songs and witty sketches in European cafés and theatres"
+},
+{
+"d": 147,
+"lv": "intermediate",
+"t": "The birth of film comedy",
+"f": "How early cinema discovered that chases and pratfalls make audiences roar"
+},
+{
+"d": 148,
+"lv": "intermediate",
+"t": "Charlie Chaplin",
+"f": "The Tramp, a character mixing comedy and tenderness in silent films"
+},
+{
+"d": 149,
+"lv": "intermediate",
+"t": "Buster Keaton",
+"f": "The 'Great Stone Face' and his daring, perfectly timed physical stunts"
+},
+{
+"d": 150,
+"lv": "intermediate",
+"t": "Harold Lloyd",
+"f": "The bespectacled everyman famous for hanging from a clock in 'Safety Last!'"
+},
+{
+"d": 151,
+"lv": "intermediate",
+"t": "Laurel and Hardy",
+"f": "The classic duo and the comic chemistry of a thin and a stout partner"
+},
+{
+"d": 152,
+"lv": "intermediate",
+"t": "The Marx Brothers",
+"f": "Fast wordplay, chaos and musical interludes in classic comedy films"
+},
+{
+"d": 153,
+"lv": "intermediate",
+"t": "Jacques Tati",
+"f": "The French director whose Monsieur Hulot films are full of quiet visual gags"
+},
+{
+"d": 154,
+"lv": "intermediate",
+"t": "Totò",
+"f": "The Italian comic actor famed for his expressive face and wordplay"
+},
+{
+"d": 155,
+"lv": "intermediate",
+"t": "Cantinflas",
+"f": "The Mexican star whose fast, tangled speech became a word in Spanish"
+},
+{
+"d": 156,
+"lv": "intermediate",
+"t": "Mazzaropi",
+"f": "The Brazilian actor and filmmaker beloved for his countryside comic character"
+},
+{
+"d": 157,
+"lv": "intermediate",
+"t": "Comic duos",
+"f": "Why two contrasting partners, the straight one and the silly one, work so well"
+},
+{
+"d": 158,
+"lv": "intermediate",
+"t": "Radio comedy",
+"f": "How comedians used only voices and sound effects to paint funny pictures"
+},
+{
+"d": 159,
+"lv": "intermediate",
+"t": "The sitcom is born",
+"f": "Situation comedy: same characters, same setting, a new funny problem each week"
+},
+{
+"d": 160,
+"lv": "intermediate",
+"t": "Classic sitcom structure",
+"f": "Problem, complications and a happy return to normal in about half an hour"
+},
+{
+"d": 161,
+"lv": "intermediate",
+"t": "Sitcom characters",
+"f": "The sensible one, the dreamer, the eccentric neighbour: a recurring ensemble"
+},
+{
+"d": 162,
+"lv": "intermediate",
+"t": "Sketch comedy",
+"f": "Short self-contained scenes, each built around one funny idea"
+},
+{
+"d": 163,
+"lv": "intermediate",
+"t": "Monty Python",
+"f": "The British troupe famous for absurd sketches and surreal humour"
+},
+{
+"d": 164,
+"lv": "intermediate",
+"t": "Mr. Bean",
+"f": "Rowan Atkinson's nearly silent character, loved worldwide without translation"
+},
+{
+"d": 165,
+"lv": "intermediate",
+"t": "Chespirito",
+"f": "The Mexican creator of El Chavo del Ocho, a hit across Latin America and Brazil"
+},
+{
+"d": 166,
+"lv": "intermediate",
+"t": "Os Trapalhões",
+"f": "The Brazilian comedy group whose TV shows and films delighted families"
+},
+{
+"d": 167,
+"lv": "intermediate",
+"t": "Review: stage, screen and radio",
+"f": "A recap of silent film stars, duos, sitcoms and sketches with a quiz"
+},
+{
+"d": 168,
+"lv": "intermediate",
+"t": "Stand-up comedy explained",
+"f": "One person, one microphone and a conversation with the audience"
+},
+{
+"d": 169,
+"lv": "intermediate",
+"t": "Clean stand-up",
+"f": "Comedians who make big audiences laugh without a single rude word"
+},
+{
+"d": 170,
+"lv": "intermediate",
+"t": "Observational stand-up",
+"f": "Turning shared everyday experiences into a comedy set"
+},
+{
+"d": 171,
+"lv": "intermediate",
+"t": "Storytelling comedy",
+"f": "Long funny stories told with rich detail and a satisfying ending"
+},
+{
+"d": 172,
+"lv": "intermediate",
+"t": "Character comedy",
+"f": "Performing as an invented persona with their own voice and view of the world"
+},
+{
+"d": 173,
+"lv": "intermediate",
+"t": "Musical comedy",
+"f": "Funny songs and parody lyrics, from music hall to modern performers"
+},
+{
+"d": 174,
+"lv": "intermediate",
+"t": "Parody",
+"f": "Imitating a famous style or work with exaggeration for comic effect"
+},
+{
+"d": 175,
+"lv": "intermediate",
+"t": "Spoofs in film",
+"f": "Movies that playfully copy the clichés of a whole genre"
+},
+{
+"d": 176,
+"lv": "intermediate",
+"t": "Absurd humour",
+"f": "Comedy that follows a strange logic to its silly conclusion"
+},
+{
+"d": 177,
+"lv": "intermediate",
+"t": "Surreal humour",
+"f": "Dreamlike images and impossible situations played completely straight"
+},
+{
+"d": 178,
+"lv": "intermediate",
+"t": "Edward Lear's nonsense",
+"f": "'The Owl and the Pussy-cat' and the gentle madness of Victorian nonsense"
+},
+{
+"d": 179,
+"lv": "intermediate",
+"t": "Lewis Carroll's wordplay",
+"f": "Puns, logic jokes and topsy-turvy reasoning in 'Alice in Wonderland'"
+},
+{
+"d": 180,
+"lv": "intermediate",
+"t": "Dr. Seuss",
+"f": "Playful rhymes and invented creatures that make reading a joy"
+},
+{
+"d": 181,
+"lv": "intermediate",
+"t": "Irony",
+"f": "Saying the opposite of what you mean, and how tone signals it"
+},
+{
+"d": 182,
+"lv": "intermediate",
+"t": "Sarcasm with care",
+"f": "Why sarcasm can hurt and how to keep it light among friends"
+},
+{
+"d": 183,
+"lv": "intermediate",
+"t": "Wit versus humour",
+"f": "Quick clever remarks versus warm funny observations"
+},
+{
+"d": 184,
+"lv": "intermediate",
+"t": "The comeback",
+"f": "A witty reply in the moment, and how to keep it friendly"
+},
+{
+"d": 185,
+"lv": "intermediate",
+"t": "L'esprit de l'escalier",
+"f": "The French idea of thinking of the perfect reply only on the staircase, too late"
+},
+{
+"d": 186,
+"lv": "intermediate",
+"t": "Review: styles of comedy",
+"f": "A recap of stand-up, parody, absurd humour and irony with a challenge"
+},
+{
+"d": 187,
+"lv": "intermediate",
+"t": "How jokes work in German",
+"f": "Compound words, the Kalauer and the joy of literal humour"
+},
+{
+"d": 188,
+"lv": "intermediate",
+"t": "How jokes work in French",
+"f": "Calembours, contrepèteries and the love of clever language games"
+},
+{
+"d": 189,
+"lv": "intermediate",
+"t": "How jokes work in Italian",
+"f": "Barzellette, regional characters and expressive storytelling"
+},
+{
+"d": 190,
+"lv": "intermediate",
+"t": "How jokes work in Spanish",
+"f": "Chistes cortos, wordplay and lively timing in Spanish"
+},
+{
+"d": 191,
+"lv": "intermediate",
+"t": "How jokes work in Portuguese",
+"f": "Trocadilhos, anedotas and gentle irony across Portugal"
+},
+{
+"d": 192,
+"lv": "intermediate",
+"t": "How jokes work in Brazil",
+"f": "Piadas, wordplay and the lively rhythm of Brazilian humour"
+},
+{
+"d": 193,
+"lv": "intermediate",
+"t": "Translating a pun",
+"f": "Why puns rarely survive translation and how translators invent new ones"
+},
+{
+"d": 194,
+"lv": "intermediate",
+"t": "Asterix in translation",
+"f": "How translators renamed characters to keep the jokes in each language"
+},
+{
+"d": 195,
+"lv": "intermediate",
+"t": "Subtitling comedy",
+"f": "Fitting a joke into a short subtitle and keeping the timing"
+},
+{
+"d": 196,
+"lv": "intermediate",
+"t": "Dubbing comedy",
+"f": "How voice actors adapt jokes so lips and laughs still match"
+},
+{
+"d": 197,
+"lv": "intermediate",
+"t": "Gestures that mean different things",
+"f": "How the same hand sign can be funny or confusing across countries"
+},
+{
+"d": 198,
+"lv": "intermediate",
+"t": "Humour and politeness",
+"f": "Cultures where humour is reserved for close friends and those where it opens doors"
+},
+{
+"d": 199,
+"lv": "intermediate",
+"t": "Teasing across cultures",
+"f": "Why playful teasing can feel friendly in one place and rude in another"
+},
+{
+"d": 200,
+"lv": "intermediate",
+"t": "Humour in Chinese crosstalk",
+"f": "Xiangsheng, a traditional comic dialogue built on wordplay and rhythm"
+},
+{
+"d": 201,
+"lv": "intermediate",
+"t": "Humour in Indian storytelling",
+"f": "Clever tales like those of Birbal and wise, witty court advisers"
+},
+{
+"d": 202,
+"lv": "intermediate",
+"t": "Nasreddin Hodja",
+"f": "The wise fool of folk tales told from Turkey to Central Asia"
+},
+{
+"d": 203,
+"lv": "intermediate",
+"t": "Tricksters in folk tales",
+"f": "Anansi, Reynard the Fox and clever characters who outwit the strong"
+},
+{
+"d": 204,
+"lv": "intermediate",
+"t": "Pedro Malasartes",
+"f": "The cunning trickster of Portuguese and Brazilian folk stories"
+},
+{
+"d": 205,
+"lv": "intermediate",
+"t": "Review: humour around the globe",
+"f": "A recap of jokes in seven languages and world folk humour with a quiz"
+},
+{
+"d": 206,
+"lv": "intermediate",
+"t": "Comedy and the brain",
+"f": "How the brain resolves a surprise and rewards us with a laugh"
+},
+{
+"d": 207,
+"lv": "intermediate",
+"t": "Incongruity theory",
+"f": "The idea that humour comes from noticing something that does not fit"
+},
+{
+"d": 208,
+"lv": "intermediate",
+"t": "Relief theory",
+"f": "The idea that laughter releases tension, like after a scare that turns out harmless"
+},
+{
+"d": 209,
+"lv": "intermediate",
+"t": "Benign violation",
+"f": "Humour as something a little wrong that is also clearly safe"
+},
+{
+"d": 210,
+"lv": "intermediate",
+"t": "Why tickling makes us laugh",
+"f": "And why you can't tickle yourself, as your brain predicts your own touch"
+},
+{
+"d": 211,
+"lv": "intermediate",
+"t": "Smiles and laughs in animals",
+"f": "Apes and rats make laugh-like sounds during play"
+},
+{
+"d": 212,
+"lv": "intermediate",
+"t": "Humour and memory",
+"f": "Why funny examples help people learn and remember"
+},
+{
+"d": 213,
+"lv": "intermediate",
+"t": "Humour in teaching",
+"f": "How good teachers use light humour to keep a class engaged"
+},
+{
+"d": 214,
+"lv": "intermediate",
+"t": "Humour at work",
+"f": "Friendly humour that eases meetings and builds team spirit"
+},
+{
+"d": 215,
+"lv": "intermediate",
+"t": "Humour in speeches",
+"f": "Opening a toast or a talk with a light, relevant joke"
+},
+{
+"d": 216,
+"lv": "intermediate",
+"t": "Wedding and party toasts",
+"f": "Warm stories and gentle jokes that honour the guests"
+},
+{
+"d": 217,
+"lv": "intermediate",
+"t": "Humour in customer service",
+"f": "A friendly smile and light remark that turn a problem into a good memory"
+},
+{
+"d": 218,
+"lv": "intermediate",
+"t": "Humour in advertising",
+"f": "Funny commercials and why a laugh helps people remember a brand"
+},
+{
+"d": 219,
+"lv": "intermediate",
+"t": "Humour in newspapers",
+"f": "Cartoons, funny columns and light pieces that brighten the page"
+},
+{
+"d": 220,
+"lv": "intermediate",
+"t": "Comic strips today",
+"f": "Webcomics and short strips shared online around the world"
+},
+{
+"d": 221,
+"lv": "intermediate",
+"t": "Comedy podcasts",
+"f": "Conversation-driven humour and the art of chatting on air"
+},
+{
+"d": 222,
+"lv": "intermediate",
+"t": "Short-video comedy",
+"f": "Sketches lasting seconds and the speed of online humour"
+},
+{
+"d": 223,
+"lv": "intermediate",
+"t": "Review: humour in daily life",
+"f": "A recap of humour at work, in speeches and online with a challenge"
+},
+{
+"d": 224,
+"lv": "intermediate",
+"t": "Wordplay deep dive: puns",
+"f": "Classifying puns by sound, spelling and double meaning"
+},
+{
+"d": 225,
+"lv": "intermediate",
+"t": "Portmanteau words",
+"f": "Blended words like 'brunch' and 'smog' and the fun of inventing new ones"
+},
+{
+"d": 226,
+"lv": "intermediate",
+"t": "Daffynitions",
+"f": "Silly made-up definitions, like defining 'pharmacist' as a helper on the farm"
+},
+{
+"d": 227,
+"lv": "intermediate",
+"t": "Tom Swifties",
+"f": "Puns where an adverb matches the sentence: 'I love camping,' said Tom intently"
+},
+{
+"d": 228,
+"lv": "intermediate",
+"t": "Knock-knock variations",
+"f": "Inventing new knock-knock jokes with names and everyday words"
+},
+{
+"d": 229,
+"lv": "intermediate",
+"t": "Riddles with a twist",
+"f": "Lateral riddles where the answer depends on a hidden double meaning"
+},
+{
+"d": 230,
+"lv": "intermediate",
+"t": "Funny proverbs",
+"f": "Twisting well-known sayings for a surprising new ending"
+},
+{
+"d": 231,
+"lv": "intermediate",
+"t": "Mixed metaphors",
+"f": "Combining two images by mistake, like 'we'll burn that bridge when we get to it'"
+},
+{
+"d": 232,
+"lv": "intermediate",
+"t": "Oxymorons",
+"f": "Funny contradictions like 'jumbo shrimp' and 'seriously funny'"
+},
+{
+"d": 233,
+"lv": "intermediate",
+"t": "Paraprosdokian",
+"f": "A sentence whose ending forces you to reinterpret the beginning"
+},
+{
+"d": 234,
+"lv": "intermediate",
+"t": "Garden path sentences",
+"f": "Sentences that lead the reader the wrong way, like 'The old man the boats'"
+},
+{
+"d": 235,
+"lv": "intermediate",
+"t": "Funny headlines",
+"f": "Real ambiguous headlines and the lessons they teach about clear writing"
+},
+{
+"d": 236,
+"lv": "intermediate",
+"t": "Review: advanced wordplay",
+"f": "A recap of portmanteaus, oxymorons and garden paths with a wordplay quiz"
+},
+{
+"d": 237,
+"lv": "intermediate",
+"t": "The comic hero",
+"f": "Characters who keep trying despite failure, and why we root for them"
+},
+{
+"d": 238,
+"lv": "intermediate",
+"t": "Fish out of water",
+"f": "Putting a character in an unfamiliar world, a classic engine of comedy"
+},
+{
+"d": 239,
+"lv": "intermediate",
+"t": "Mistaken identity",
+"f": "Twins, disguises and mix-ups from ancient Rome to modern film"
+},
+{
+"d": 240,
+"lv": "intermediate",
+"t": "The comedy of errors",
+"f": "One small misunderstanding snowballing into chaos"
+},
+{
+"d": 241,
+"lv": "intermediate",
+"t": "The straight man's role",
+"f": "Why the calm partner who reacts is as important as the funny one"
+},
+{
+"d": 242,
+"lv": "intermediate",
+"t": "Reaction comedy",
+"f": "How a well-timed look at the camera or the audience gets a laugh"
+},
+{
+"d": 243,
+"lv": "intermediate",
+"t": "Physical comedy deep dive",
+"f": "Balance, rhythm and control behind a 'clumsy' stunt"
+},
+{
+"d": 244,
+"lv": "intermediate",
+"t": "Comic props",
+"f": "Banana peels, umbrellas and ladders: everyday objects as comic tools"
+},
+{
+"d": 245,
+"lv": "intermediate",
+"t": "Clowning today",
+"f": "Hospital clowns and theatre clowns who bring joy with curiosity and play"
+},
+{
+"d": 246,
+"lv": "intermediate",
+"t": "Circus and street comedy",
+"f": "Buskers and street performers who gather crowds with humour"
+},
+{
+"d": 247,
+"lv": "intermediate",
+"t": "Puppet comedy",
+"f": "From Punch-style puppets to the Muppets: humour with felt and strings"
+},
+{
+"d": 248,
+"lv": "intermediate",
+"t": "Comedy in video games",
+"f": "Witty dialogue and funny moments that make games memorable"
+},
+{
+"d": 249,
+"lv": "intermediate",
+"t": "Comedy festivals",
+"f": "Big gatherings of comedians, like the Edinburgh Festival Fringe"
+},
+{
+"d": 250,
+"lv": "intermediate",
+"t": "Review: the intermediate comedian",
+"f": "A cheerful look back at days 121 to 250 and your favourite comedy styles"
+},
+{
+"d": 251,
+"lv": "advanced",
+"t": "Writing jokes: where ideas come from",
+"f": "Noticing small oddities in daily life and writing them down as joke seeds"
+},
+{
+"d": 252,
+"lv": "advanced",
+"t": "The premise",
+"f": "Finding the funny opinion or observation at the heart of a joke"
+},
+{
+"d": 253,
+"lv": "advanced",
+"t": "Building the setup",
+"f": "Giving just enough information so the listener forms a clear expectation"
+},
+{
+"d": 254,
+"lv": "advanced",
+"t": "Crafting the punchline",
+"f": "Finding the twist that reinterprets the setup in one surprising move"
+},
+{
+"d": 255,
+"lv": "advanced",
+"t": "Connectors and targets",
+"f": "Identifying the word with two meanings that links setup and punchline"
+},
+{
+"d": 256,
+"lv": "advanced",
+"t": "Misdirection in writing",
+"f": "Planting an assumption the audience will make, then overturning it"
+},
+{
+"d": 257,
+"lv": "advanced",
+"t": "Tags and toppers",
+"f": "Adding extra punchlines after the first laugh to keep it rolling"
+},
+{
+"d": 258,
+"lv": "advanced",
+"t": "Cutting words ruthlessly",
+"f": "Editing a joke to its shortest, sharpest version"
+},
+{
+"d": 259,
+"lv": "advanced",
+"t": "Specific is funnier",
+"f": "Why 'a soggy sandwich' beats 'some food' in a comic sentence"
+},
+{
+"d": 260,
+"lv": "advanced",
+"t": "Funny sounding words",
+"f": "Choosing words with hard consonant sounds, a trick many comedy writers mention"
+},
+{
+"d": 261,
+"lv": "advanced",
+"t": "The comic list",
+"f": "Building a list where each item escalates toward an absurd final one"
+},
+{
+"d": 262,
+"lv": "advanced",
+"t": "Escalation",
+"f": "Raising the stakes step by step until the situation becomes wonderfully silly"
+},
+{
+"d": 263,
+"lv": "advanced",
+"t": "Comparisons and similes",
+"f": "Funny comparisons that create a vivid, unexpected picture"
+},
+{
+"d": 264,
+"lv": "advanced",
+"t": "Act-outs",
+"f": "Performing a moment instead of describing it, with voices and movement"
+},
+{
+"d": 265,
+"lv": "advanced",
+"t": "Testing jokes on friends",
+"f": "Trying material in conversation and noticing what gets a smile"
+},
+{
+"d": 266,
+"lv": "advanced",
+"t": "Rewriting after feedback",
+"f": "Keeping what works, fixing what doesn't and trying again"
+},
+{
+"d": 267,
+"lv": "advanced",
+"t": "Review: the joke writer's toolkit",
+"f": "A recap of premise, setup, punchline, tags and editing with a writing challenge"
+},
+{
+"d": 268,
+"lv": "advanced",
+"t": "Structuring a short set",
+"f": "Opening strong, building in the middle and closing with your best joke"
+},
+{
+"d": 269,
+"lv": "advanced",
+"t": "The opener",
+"f": "A first joke that introduces you and earns trust within seconds"
+},
+{
+"d": 270,
+"lv": "advanced",
+"t": "The closer",
+"f": "Ending on a big laugh and leaving the audience wanting more"
+},
+{
+"d": 271,
+"lv": "advanced",
+"t": "Segues",
+"f": "Moving smoothly from one topic to the next in a comedy set"
+},
+{
+"d": 272,
+"lv": "advanced",
+"t": "Persona on stage",
+"f": "Discovering a comic identity that feels like a bigger version of you"
+},
+{
+"d": 273,
+"lv": "advanced",
+"t": "Stage presence",
+"f": "Posture, stillness and using the space with confidence"
+},
+{
+"d": 274,
+"lv": "advanced",
+"t": "Microphone skills",
+"f": "Holding a mic at the right distance and using it as part of the act"
+},
+{
+"d": 275,
+"lv": "advanced",
+"t": "Working with nerves",
+"f": "Breathing and preparation tricks that turn nerves into energy"
+},
+{
+"d": 276,
+"lv": "advanced",
+"t": "Talking with the audience",
+"f": "Friendly crowd work that includes people without embarrassing them"
+},
+{
+"d": 277,
+"lv": "advanced",
+"t": "Handling silence on stage",
+"f": "Staying calm and in control when a joke doesn't land"
+},
+{
+"d": 278,
+"lv": "advanced",
+"t": "Recording and reviewing",
+"f": "Watching yourself back to improve timing and delivery"
+},
+{
+"d": 279,
+"lv": "advanced",
+"t": "Open mic nights",
+"f": "How beginners try out material in friendly local venues"
+},
+{
+"d": 280,
+"lv": "advanced",
+"t": "Review: on stage",
+"f": "A recap of set structure, persona, nerves and crowd work with a challenge"
+},
+{
+"d": 281,
+"lv": "advanced",
+"t": "Writing a sketch",
+"f": "One funny idea, a clear setup and a strong ending in a few minutes"
+},
+{
+"d": 282,
+"lv": "advanced",
+"t": "The game of the scene",
+"f": "Finding the unusual thing and heightening it, an improv principle"
+},
+{
+"d": 283,
+"lv": "advanced",
+"t": "Sketch characters",
+"f": "Giving each character a clear want and a funny trait"
+},
+{
+"d": 284,
+"lv": "advanced",
+"t": "Sketch endings",
+"f": "Twists, callbacks and blackouts: ways to end a sketch on a laugh"
+},
+{
+"d": 285,
+"lv": "advanced",
+"t": "Writing dialogue that sparks",
+"f": "Short lines, interruptions and rhythm in comic conversation"
+},
+{
+"d": 286,
+"lv": "advanced",
+"t": "Writing a sitcom scene",
+"f": "Putting familiar characters into a fresh problem"
+},
+{
+"d": 287,
+"lv": "advanced",
+"t": "The comic B-story",
+"f": "A smaller side plot that mirrors or contrasts the main one"
+},
+{
+"d": 288,
+"lv": "advanced",
+"t": "Comic misunderstandings on the page",
+"f": "Planning information so characters and audience know different things"
+},
+{
+"d": 289,
+"lv": "advanced",
+"t": "Writing a funny monologue",
+"f": "One character speaking alone, revealing themselves with humour"
+},
+{
+"d": 290,
+"lv": "advanced",
+"t": "Writing comic letters",
+"f": "Funny formal letters and the humour of very polite complaints"
+},
+{
+"d": 291,
+"lv": "advanced",
+"t": "Humorous essays",
+"f": "Personal essays that mix real experience with light exaggeration"
+},
+{
+"d": 292,
+"lv": "advanced",
+"t": "Review: comedy writing",
+"f": "A recap of sketches, sitcom scenes and monologues with a writing challenge"
+},
+{
+"d": 293,
+"lv": "advanced",
+"t": "Improv advanced: status",
+"f": "Playing high and low status and the comedy of switching them"
+},
+{
+"d": 294,
+"lv": "advanced",
+"t": "Improv: character from a gesture",
+"f": "Starting a scene with a movement and letting a character grow"
+},
+{
+"d": 295,
+"lv": "advanced",
+"t": "Improv: object work",
+"f": "Miming objects clearly so the audience sees an invisible world"
+},
+{
+"d": 296,
+"lv": "advanced",
+"t": "Improv: listening",
+"f": "Building on exactly what a partner says instead of planning ahead"
+},
+{
+"d": 297,
+"lv": "advanced",
+"t": "Improv: making partners look good",
+"f": "Generosity as the secret of great group comedy"
+},
+{
+"d": 298,
+"lv": "advanced",
+"t": "Short-form improv games",
+"f": "Quick structured games like word-at-a-time stories"
+},
+{
+"d": 299,
+"lv": "advanced",
+"t": "Long-form improv",
+"f": "Longer improvised pieces where scenes connect and themes return"
+},
+{
+"d": 300,
+"lv": "advanced",
+"t": "Improv in daily life",
+"f": "Using 'yes, and' to make conversations more playful and creative"
+},
+{
+"d": 301,
+"lv": "advanced",
+"t": "Review: improv",
+"f": "A recap of status, listening and improv games with a playful challenge"
+},
+{
+"d": 302,
+"lv": "advanced",
+"t": "Humour in public speaking",
+"f": "Using light, relevant humour that supports your main message"
+},
+{
+"d": 303,
+"lv": "advanced",
+"t": "Self-deprecating humour at work",
+"f": "Showing humility with a smile without undermining your credibility"
+},
+{
+"d": 304,
+"lv": "advanced",
+"t": "Humour in presentations",
+"f": "Funny examples and visuals that keep an audience awake"
+},
+{
+"d": 305,
+"lv": "advanced",
+"t": "Humour in emails",
+"f": "When a light touch helps and when a neutral tone is wiser"
+},
+{
+"d": 306,
+"lv": "advanced",
+"t": "Humour in difficult conversations",
+"f": "Gentle lightness that eases tension without dismissing feelings"
+},
+{
+"d": 307,
+"lv": "advanced",
+"t": "Humour and leadership",
+"f": "How leaders use warmth and humour to build friendly teams"
+},
+{
+"d": 308,
+"lv": "advanced",
+"t": "Humour in negotiations",
+"f": "A shared laugh as a way to build rapport and trust"
+},
+{
+"d": 309,
+"lv": "advanced",
+"t": "Humour in interviews",
+"f": "Being yourself, smiling and keeping jokes light and brief"
+},
+{
+"d": 310,
+"lv": "advanced",
+"t": "Review: humour as a skill",
+"f": "A recap of humour at work, in talks and in tricky moments with a challenge"
+},
+{
+"d": 311,
+"lv": "advanced",
+"t": "Writing comic verse",
+"f": "Rhythm, rhyme and surprise in short funny poems"
+},
+{
+"d": 312,
+"lv": "advanced",
+"t": "Clerihews",
+"f": "Four-line comic verses about a famous person, invented by E. C. Bentley"
+},
+{
+"d": 313,
+"lv": "advanced",
+"t": "Comic songs",
+"f": "Writing new funny lyrics to a familiar tune"
+},
+{
+"d": 314,
+"lv": "advanced",
+"t": "Funny fables",
+"f": "Updating classic animal fables with a modern comic twist"
+},
+{
+"d": 315,
+"lv": "advanced",
+"t": "Writing a comic short story",
+"f": "A character, a goal, comic obstacles and a funny resolution"
+},
+{
+"d": 316,
+"lv": "advanced",
+"t": "Comic children's stories",
+"f": "Repetition, silly names and surprises for young listeners"
+},
+{
+"d": 317,
+"lv": "advanced",
+"t": "Writing captions",
+"f": "Finding a single funny line for a picture or cartoon"
+},
+{
+"d": 318,
+"lv": "advanced",
+"t": "Cartoon caption contests",
+"f": "The art of the perfect caption, famous from magazine competitions"
+},
+{
+"d": 319,
+"lv": "advanced",
+"t": "Drawing a simple comic strip",
+"f": "Planning three panels: setup, development and punchline"
+},
+{
+"d": 320,
+"lv": "advanced",
+"t": "Writing a funny review",
+"f": "Reviewing an everyday object as if it were a grand masterpiece"
+},
+{
+"d": 321,
+"lv": "advanced",
+"t": "Mock-heroic style",
+"f": "Describing small events in epic language, a style perfected by poets like Alexander Pope"
+},
+{
+"d": 322,
+"lv": "advanced",
+"t": "Review: comic writing forms",
+"f": "A recap of comic verse, captions, strips and mock-heroic style"
+},
+{
+"d": 323,
+"lv": "advanced",
+"t": "Translating your own jokes",
+"f": "Adapting a favourite joke into another language and culture"
+},
+{
+"d": 324,
+"lv": "advanced",
+"t": "Jokes for an international audience",
+"f": "Choosing humour that works for people from many countries"
+},
+{
+"d": 325,
+"lv": "advanced",
+"t": "Avoiding stereotypes",
+"f": "Why jokes about nationalities or groups hurt and what to do instead"
+},
+{
+"d": 326,
+"lv": "advanced",
+"t": "Inclusive humour",
+"f": "Making everyone in the room feel part of the laugh"
+},
+{
+"d": 327,
+"lv": "advanced",
+"t": "Humour and empathy",
+"f": "How understanding others makes your humour kinder and funnier"
+},
+{
+"d": 328,
+"lv": "advanced",
+"t": "Laughing at shared human quirks",
+"f": "Finding comedy in things everyone does, like losing keys"
+},
+{
+"d": 329,
+"lv": "advanced",
+"t": "Learning a joke in a new language",
+"f": "Practising pronunciation and timing of a joke in a language you study"
+},
+{
+"d": 330,
+"lv": "advanced",
+"t": "Comic misunderstandings while learning languages",
+"f": "Funny mix-ups learners make and how to laugh about them together"
+},
+{
+"d": 331,
+"lv": "advanced",
+"t": "Humour as a bridge between cultures",
+"f": "How sharing laughter helps strangers become friends"
+},
+{
+"d": 332,
+"lv": "advanced",
+"t": "Review: humour without borders",
+"f": "A recap of translating jokes and inclusive humour with a challenge"
+},
+{
+"d": 333,
+"lv": "advanced",
+"t": "Comedy and film language",
+"f": "How framing, editing and timing create laughs on screen"
+},
+{
+"d": 334,
+"lv": "advanced",
+"t": "The reaction shot",
+"f": "Cutting to a character's face to multiply the joke"
+},
+{
+"d": 335,
+"lv": "advanced",
+"t": "Comic timing in editing",
+"f": "Holding or cutting a shot at the perfect moment"
+},
+{
+"d": 336,
+"lv": "advanced",
+"t": "Animation timing",
+"f": "Anticipation, action and reaction: the rhythm of cartoon gags"
+},
+{
+"d": 337,
+"lv": "advanced",
+"t": "Comedy music and sound",
+"f": "How music cues and silence shape a funny scene"
+},
+{
+"d": 338,
+"lv": "advanced",
+"t": "The great comedy directors",
+"f": "Filmmakers known for comedy and the signature styles they developed"
+},
+{
+"d": 339,
+"lv": "advanced",
+"t": "Screwball comedy",
+"f": "Classic films built on rapid-fire dialogue, eccentric characters and comic chaos"
+},
+{
+"d": 340,
+"lv": "advanced",
+"t": "Comedy in world cinema",
+"f": "Comic films from Europe, Latin America and Asia worth discovering"
+},
+{
+"d": 341,
+"lv": "advanced",
+"t": "Studying a classic gag",
+"f": "Breaking down a famous silent film sequence beat by beat"
+},
+{
+"d": 342,
+"lv": "advanced",
+"t": "Review: comedy on screen",
+"f": "A recap of film language, timing and world comedy with a quiz"
+},
+{
+"d": 343,
+"lv": "advanced",
+"t": "Planning your comedy project",
+"f": "Choosing a final project: a short set, a sketch or a comic story"
+},
+{
+"d": 344,
+"lv": "advanced",
+"t": "Brainstorming for your project",
+"f": "Generating many ideas quickly without judging them"
+},
+{
+"d": 345,
+"lv": "advanced",
+"t": "Choosing your best material",
+"f": "Selecting the strongest jokes and ideas for your project"
+},
+{
+"d": 346,
+"lv": "advanced",
+"t": "Drafting your project",
+"f": "Writing the first full version of your set, sketch or story"
+},
+{
+"d": 347,
+"lv": "advanced",
+"t": "Polishing your timing",
+"f": "Rehearsing pauses, emphasis and rhythm in your project"
+},
+{
+"d": 348,
+"lv": "advanced",
+"t": "Getting friendly feedback",
+"f": "Sharing your draft and asking specific questions"
+},
+{
+"d": 349,
+"lv": "advanced",
+"t": "Final rewrite",
+"f": "Tightening every line and making the ending land"
+},
+{
+"d": 350,
+"lv": "advanced",
+"t": "Sharing your work",
+"f": "Performing or sharing your project with friends or online"
+},
+{
+"d": 351,
+"lv": "advanced",
+"t": "Reflecting on your project",
+"f": "What made you proud and what you would try next time"
+},
+{
+"d": 352,
+"lv": "advanced",
+"t": "Review: your comedy project",
+"f": "A recap of your project journey and what you learned along the way"
+},
+{
+"d": 353,
+"lv": "advanced",
+"t": "Your comic voice",
+"f": "Recognising the style of humour that feels most like you"
+},
+{
+"d": 354,
+"lv": "advanced",
+"t": "Humour as a daily habit",
+"f": "Spotting one funny thing every day and sharing it"
+},
+{
+"d": 355,
+"lv": "advanced",
+"t": "Keeping a comedy journal",
+"f": "Writing down observations to grow your own material"
+},
+{
+"d": 356,
+"lv": "advanced",
+"t": "Finding comedy communities",
+"f": "Clubs, workshops and online groups for people who love comedy"
+},
+{
+"d": 357,
+"lv": "advanced",
+"t": "Watching comedy actively",
+"f": "Noticing techniques while you laugh at a show or film"
+},
+{
+"d": 358,
+"lv": "advanced",
+"t": "Comedy and kindness",
+"f": "How the best humour makes the world a little lighter"
+},
+{
+"d": 359,
+"lv": "advanced",
+"t": "Humour for well-being",
+"f": "Using laughter to stay positive and connected with others"
+},
+{
+"d": 360,
+"lv": "advanced",
+"t": "Teaching someone a joke",
+"f": "Passing on your favourite joke and coaching their timing"
+},
+{
+"d": 361,
+"lv": "advanced",
+"t": "Your top ten jokes",
+"f": "Building a personal collection of clean jokes for any occasion"
+},
+{
+"d": 362,
+"lv": "advanced",
+"t": "Joke telling in your new language",
+"f": "Telling your favourite joke in a language you are learning"
+},
+{
+"d": 363,
+"lv": "advanced",
+"t": "Comedy legends recap",
+"f": "A light tour back through the comedians and writers you met this year"
+},
+{
+"d": 364,
+"lv": "advanced",
+"t": "Your favourite comic technique",
+"f": "Choosing the technique you enjoy most and using it in a new joke"
+},
+{
+"d": 365,
+"lv": "advanced",
+"t": "Final review: a year of laughter",
+"f": "A warm look back at the 365-day journey and the joy of sharing a laugh"
+}
+]
+}

@@ -1,0 +1,835 @@
+{
+ "topic": "etiquette",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Table manners basics",
+     "g": "Master the basics: napkins, posture and keeping pace with others at the table.",
+     "p": [
+      "Place your napkin on your lap when you sit down and use it to dab, not wipe, your mouth.",
+      "Sit upright, bring food to your mouth rather than your head to the plate, and chew with your mouth closed.",
+      "Try to eat at a similar pace to others so nobody is left eating alone at the end."
+     ],
+     "q": "Which table manner did your family care about most when you were growing up?",
+     "c": "At your next meal, focus on posture, napkin use and matching the pace of the people with you."
+    },
+    "de": {
+     "t": "Grundlagen der Tischmanieren",
+     "g": "Beherrsche die Grundlagen: Serviette, Haltung und das gemeinsame Tempo am Tisch.",
+     "p": [
+      "Leg die Serviette beim Hinsetzen auf den Schoß und tupfe dir damit den Mund ab, statt zu wischen.",
+      "Sitz aufrecht, führ das Essen zum Mund statt den Kopf zum Teller und kau mit geschlossenem Mund.",
+      "Versuche, ähnlich schnell wie die anderen zu essen, damit am Ende niemand allein isst."
+     ],
+     "q": "Auf welche Tischmanier hat deine Familie früher am meisten geachtet?",
+     "c": "Achte bei deiner nächsten Mahlzeit auf Haltung, Serviette und das Tempo der anderen."
+    },
+    "es": {
+     "t": "Lo básico de los modales en la mesa",
+     "g": "Domina lo básico: la servilleta, la postura y seguir el ritmo de los demás en la mesa.",
+     "p": [
+      "Coloca la servilleta en el regazo al sentarte y úsala para darte toquecitos en la boca, no para frotarla.",
+      "Siéntate erguido, lleva la comida a la boca en vez de la cabeza al plato y mastica con la boca cerrada.",
+      "Intenta comer a un ritmo parecido al de los demás para que nadie termine comiendo solo."
+     ],
+     "q": "¿Qué modal en la mesa le importaba más a tu familia cuando eras pequeño?",
+     "c": "En tu próxima comida, céntrate en la postura, la servilleta y el ritmo de quienes te acompañan."
+    },
+    "fr": {
+     "t": "Les bases des bonnes manières à table",
+     "g": "Maîtrise les bases : la serviette, la posture et le rythme partagé à table.",
+     "p": [
+      "Pose ta serviette sur tes genoux en t'asseyant et tamponne-toi la bouche au lieu de l'essuyer.",
+      "Tiens-toi droit, porte la nourriture à ta bouche plutôt que ta tête vers l'assiette, et mâche bouche fermée.",
+      "Essaie de manger au même rythme que les autres pour que personne ne finisse seul."
+     ],
+     "q": "Quelle règle de table comptait le plus pour ta famille quand tu étais petit ?",
+     "c": "Lors de ton prochain repas, concentre-toi sur ta posture, ta serviette et le rythme des autres."
+    },
+    "it": {
+     "t": "Le basi delle buone maniere a tavola",
+     "g": "Impara le basi: tovagliolo, postura e un ritmo condiviso a tavola.",
+     "p": [
+      "Appoggia il tovagliolo sulle gambe quando ti siedi e usalo per tamponare la bocca, non per strofinarla.",
+      "Stai seduto dritto, porta il cibo alla bocca invece della testa al piatto e mastica a bocca chiusa.",
+      "Cerca di mangiare a un ritmo simile agli altri, così nessuno resta a mangiare da solo alla fine."
+     ],
+     "q": "Quale regola a tavola contava di più nella tua famiglia quando eri piccolo?",
+     "c": "Al prossimo pasto concentrati su postura, tovagliolo e ritmo di chi mangia con te."
+    },
+    "pt": {
+     "t": "O básico das boas maneiras à mesa",
+     "g": "Domina o básico: guardanapo, postura e acompanhar o ritmo dos outros à mesa.",
+     "p": [
+      "Põe o guardanapo no colo quando te sentas e usa-o para dar toques leves na boca, não para a esfregar.",
+      "Senta-te direito, leva a comida à boca em vez de baixares a cabeça ao prato e mastiga de boca fechada.",
+      "Tenta comer a um ritmo parecido com o dos outros para que ninguém fique a comer sozinho no fim."
+     ],
+     "q": "Que regra à mesa era a mais importante para a tua família quando eras pequeno?",
+     "c": "Na próxima refeição, concentra-te na postura, no guardanapo e no ritmo de quem está contigo."
+    },
+    "pt_BR": {
+     "t": "O básico das boas maneiras à mesa",
+     "g": "Domine o básico: guardanapo, postura e acompanhar o ritmo dos outros à mesa.",
+     "p": [
+      "Coloque o guardanapo no colo ao se sentar e use-o para dar toquinhos na boca, não para esfregar.",
+      "Sente-se com a postura reta, leve a comida à boca em vez de abaixar a cabeça até o prato e mastigue de boca fechada.",
+      "Tente comer num ritmo parecido com o dos outros para que ninguém fique comendo sozinho no final."
+     ],
+     "q": "Qual regra à mesa era a mais importante para a sua família quando você era criança?",
+     "c": "Na próxima refeição, preste atenção à postura, ao guardanapo e ao ritmo de quem está com você."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Continental and American cutlery styles",
+     "g": "Discover two different ways of using a knife and fork.",
+     "p": [
+      "In the Continental style, common in Europe, the fork stays in the left hand and the knife in the right throughout.",
+      "In the American style, you cut, then put the knife down and switch the fork to your right hand to eat.",
+      "Both are correct; choose one and use it smoothly, resting cutlery on the plate between bites."
+     ],
+     "q": "Which cutlery style do you use, and did you know there were two?",
+     "c": "Try the style you do not normally use for one meal today and see how it feels."
+    },
+    "de": {
+     "t": "Kontinentaler und amerikanischer Besteckstil",
+     "g": "Entdecke zwei verschiedene Arten, Messer und Gabel zu benutzen.",
+     "p": [
+      "Beim kontinentalen Stil, verbreitet in Europa, bleibt die Gabel die ganze Zeit links und das Messer rechts.",
+      "Beim amerikanischen Stil schneidet man, legt das Messer ab und nimmt die Gabel zum Essen in die rechte Hand.",
+      "Beide sind korrekt; wähle einen und nutze ihn flüssig, das Besteck zwischen den Bissen auf dem Teller ablegend."
+     ],
+     "q": "Welchen Besteckstil benutzt du, und wusstest du, dass es zwei gibt?",
+     "c": "Probiere heute bei einer Mahlzeit den Stil aus, den du normalerweise nicht benutzt."
+    },
+    "es": {
+     "t": "Estilos de cubiertos continental y americano",
+     "g": "Descubre dos formas distintas de usar el cuchillo y el tenedor.",
+     "p": [
+      "En el estilo continental, habitual en Europa, el tenedor se queda en la mano izquierda y el cuchillo en la derecha todo el tiempo.",
+      "En el estilo americano se corta, se deja el cuchillo y se pasa el tenedor a la mano derecha para comer.",
+      "Ambos son correctos; elige uno y úsalo con soltura, apoyando los cubiertos en el plato entre bocados."
+     ],
+     "q": "¿Qué estilo de cubiertos usas, y sabías que había dos?",
+     "c": "Prueba hoy en una comida el estilo que no sueles usar y mira qué tal te sientes."
+    },
+    "fr": {
+     "t": "Les styles de couverts continental et américain",
+     "g": "Découvre deux façons différentes de tenir le couteau et la fourchette.",
+     "p": [
+      "Dans le style continental, courant en Europe, la fourchette reste à gauche et le couteau à droite tout au long du repas.",
+      "Dans le style américain, on coupe, on pose le couteau, puis on passe la fourchette dans la main droite pour manger.",
+      "Les deux sont corrects : choisis-en un et utilise-le avec aisance, en posant les couverts sur l'assiette entre les bouchées."
+     ],
+     "q": "Quel style de couverts utilises-tu, et savais-tu qu'il en existait deux ?",
+     "c": "Essaie aujourd'hui, le temps d'un repas, le style que tu n'utilises pas d'habitude."
+    },
+    "it": {
+     "t": "Stile continentale e americano delle posate",
+     "g": "Scopri due modi diversi di usare coltello e forchetta.",
+     "p": [
+      "Nello stile continentale, diffuso in Europa, la forchetta resta nella mano sinistra e il coltello nella destra per tutto il pasto.",
+      "Nello stile americano si taglia, si posa il coltello e si passa la forchetta nella mano destra per mangiare.",
+      "Sono entrambi corretti: scegline uno e usalo con naturalezza, appoggiando le posate nel piatto tra un boccone e l'altro."
+     ],
+     "q": "Quale stile di posate usi, e sapevi che ce n'erano due?",
+     "c": "Oggi prova per un pasto lo stile che di solito non usi e senti come ti trovi."
+    },
+    "pt": {
+     "t": "Os estilos de talheres continental e americano",
+     "g": "Descobre duas formas diferentes de usar a faca e o garfo.",
+     "p": [
+      "No estilo continental, comum na Europa, o garfo fica sempre na mão esquerda e a faca na direita.",
+      "No estilo americano, corta-se, pousa-se a faca e passa-se o garfo para a mão direita para comer.",
+      "Ambos estão corretos; escolhe um e usa-o com naturalidade, pousando os talheres no prato entre garfadas."
+     ],
+     "q": "Que estilo de talheres usas, e sabias que havia dois?",
+     "c": "Experimenta hoje numa refeição o estilo que não costumas usar e vê como te sentes."
+    },
+    "pt_BR": {
+     "t": "Os estilos de talheres continental e americano",
+     "g": "Descubra duas formas diferentes de usar a faca e o garfo.",
+     "p": [
+      "No estilo continental, comum na Europa, o garfo fica o tempo todo na mão esquerda e a faca na direita.",
+      "No estilo americano, você corta, apoia a faca e passa o garfo para a mão direita para comer.",
+      "Os dois estão corretos; escolha um e use com naturalidade, apoiando os talheres no prato entre as garfadas."
+     ],
+     "q": "Qual estilo de talheres você usa, e sabia que existiam dois?",
+     "c": "Experimente hoje em uma refeição o estilo que você não costuma usar e veja como se sente."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Chopstick etiquette",
+     "g": "Learn the key chopstick rules, starting with never standing them upright in rice.",
+     "p": [
+      "Sticking chopsticks upright in a bowl of rice recalls a ceremonial offering, so it is avoided at the table.",
+      "Do not pass food from your chopsticks to someone else's; place it on their plate instead.",
+      "When resting, lay them on the chopstick rest or across your bowl, and never use them to point or spear food."
+     ],
+     "q": "Are you comfortable using chopsticks, and who taught you or where did you learn?",
+     "c": "Practise picking up small items, like peanuts or beans, with chopsticks for five minutes."
+    },
+    "de": {
+     "t": "Etikette mit Essstäbchen",
+     "g": "Lerne die wichtigsten Regeln für Essstäbchen, angefangen damit, sie nie aufrecht in den Reis zu stecken.",
+     "p": [
+      "Senkrecht in den Reis gesteckte Stäbchen erinnern an eine zeremonielle Opfergabe und werden am Tisch gemieden.",
+      "Gib kein Essen von deinen Stäbchen an die Stäbchen anderer weiter; leg es lieber auf ihren Teller.",
+      "Leg sie in Pausen auf die Stäbchenablage oder quer über die Schale und zeig oder spieße nie mit ihnen."
+     ],
+     "q": "Kommst du gut mit Essstäbchen zurecht, und wer hat es dir beigebracht oder wo hast du es gelernt?",
+     "c": "Übe fünf Minuten lang, kleine Dinge wie Erdnüsse oder Bohnen mit Stäbchen aufzunehmen."
+    },
+    "es": {
+     "t": "Etiqueta de los palillos",
+     "g": "Aprende las normas clave de los palillos, empezando por no clavarlos nunca de pie en el arroz.",
+     "p": [
+      "Clavar los palillos en vertical en un cuenco de arroz recuerda a una ofrenda ceremonial, así que se evita en la mesa.",
+      "No pases comida de tus palillos a los de otra persona; déjala mejor en su plato.",
+      "Cuando descanses, apóyalos en el reposapalillos o sobre el cuenco, y nunca los uses para señalar ni pinchar."
+     ],
+     "q": "¿Te manejas bien con los palillos, y quién te enseñó o dónde aprendiste?",
+     "c": "Practica durante cinco minutos coger cosas pequeñas, como cacahuetes o judías, con palillos."
+    },
+    "fr": {
+     "t": "Les baguettes : savoir-vivre",
+     "g": "Apprends les règles essentielles des baguettes, à commencer par ne jamais les planter dans le riz.",
+     "p": [
+      "Planter ses baguettes debout dans un bol de riz évoque une offrande rituelle, on l'évite donc à table.",
+      "Ne passe pas de nourriture de tes baguettes à celles de quelqu'un ; dépose-la plutôt dans son assiette.",
+      "Au repos, pose-les sur le repose-baguettes ou en travers du bol, et ne t'en sers jamais pour montrer ou piquer."
+     ],
+     "q": "Es-tu à l'aise avec les baguettes, et qui te l'a appris ou où as-tu appris ?",
+     "c": "Entraîne-toi cinq minutes à attraper de petits aliments, comme des cacahuètes ou des haricots, avec des baguettes."
+    },
+    "it": {
+     "t": "Il galateo delle bacchette",
+     "g": "Impara le regole principali delle bacchette, a cominciare dal non piantarle mai dritte nel riso.",
+     "p": [
+      "Piantare le bacchette in verticale in una ciotola di riso ricorda un'offerta rituale, quindi a tavola si evita.",
+      "Non passare il cibo dalle tue bacchette a quelle di un altro; mettilo piuttosto nel suo piatto.",
+      "Quando le posi, appoggiale sul poggiabacchette o di traverso sulla ciotola, e non usarle mai per indicare o infilzare."
+     ],
+     "q": "Sei a tuo agio con le bacchette, e chi ti ha insegnato o dove hai imparato?",
+     "c": "Esercitati per cinque minuti a prendere piccoli oggetti, come arachidi o fagioli, con le bacchette."
+    },
+    "pt": {
+     "t": "A etiqueta dos pauzinhos",
+     "g": "Aprende as regras principais dos pauzinhos, a começar por nunca os espetar na vertical no arroz.",
+     "p": [
+      "Espetar os pauzinhos na vertical numa taça de arroz lembra uma oferenda cerimonial, por isso evita-se à mesa.",
+      "Não passes comida dos teus pauzinhos para os de outra pessoa; põe-na antes no prato dela.",
+      "Quando pousares, usa o descanso de pauzinhos ou a borda da taça, e nunca os uses para apontar ou espetar comida."
+     ],
+     "q": "Sentes-te à vontade com pauzinhos, e quem te ensinou ou onde aprendeste?",
+     "c": "Pratica durante cinco minutos apanhar coisas pequenas, como amendoins ou feijões, com pauzinhos."
+    },
+    "pt_BR": {
+     "t": "A etiqueta dos hashis",
+     "g": "Aprenda as regras principais dos hashis, começando por nunca espetá-los em pé no arroz.",
+     "p": [
+      "Espetar os hashis na vertical numa tigela de arroz lembra uma oferenda cerimonial, então é algo evitado à mesa.",
+      "Não passe comida dos seus hashis para os de outra pessoa; coloque no prato dela.",
+      "Ao descansar, apoie-os no descanso de hashi ou sobre a tigela, e nunca use para apontar ou espetar comida."
+     ],
+     "q": "Você se sente à vontade com hashis, e quem ensinou ou onde você aprendeu?",
+     "c": "Pratique por cinco minutos pegar coisas pequenas, como amendoins ou feijões, com hashis."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Eating with your hands",
+     "g": "Learn the graceful right-hand technique used in India, Ethiopia and beyond.",
+     "p": [
+      "Wash your hands before and after the meal; in many homes a basin or tap is offered to guests.",
+      "Use only your right hand, gathering food with your fingertips and keeping your palm as clean as possible.",
+      "In Ethiopia, injera bread is torn and used to scoop stews; in South India, rice and curry are gently mixed and lifted with the fingers."
+     ],
+     "q": "Have you ever eaten a whole meal with your hands, and how did it feel?",
+     "c": "Try eating a simple dish with your right hand today, using only your fingertips."
+    },
+    "de": {
+     "t": "Mit den Händen essen",
+     "g": "Lerne die elegante Technik mit der rechten Hand, die in Indien, Äthiopien und darüber hinaus üblich ist.",
+     "p": [
+      "Wasche vor und nach dem Essen die Hände; in vielen Häusern bekommen Gäste dafür eine Schale oder einen Wasserhahn angeboten.",
+      "Benutze nur die rechte Hand, nimm das Essen mit den Fingerspitzen auf und halte die Handfläche möglichst sauber.",
+      "In Äthiopien reißt man Injera-Fladen ab, um Eintöpfe zu greifen; in Südindien mischt man Reis und Curry sanft mit den Fingern."
+     ],
+     "q": "Hast du schon einmal eine ganze Mahlzeit mit den Händen gegessen, und wie war das?",
+     "c": "Iss heute ein einfaches Gericht mit der rechten Hand und benutze dabei nur die Fingerspitzen."
+    },
+    "es": {
+     "t": "Comer con las manos",
+     "g": "Aprende la elegante técnica con la mano derecha que se usa en la India, Etiopía y otros lugares.",
+     "p": [
+      "Lávate las manos antes y después de comer; en muchas casas se ofrece a los invitados un lavamanos o un grifo.",
+      "Usa solo la mano derecha, toma la comida con las yemas de los dedos y mantén la palma lo más limpia posible.",
+      "En Etiopía se arranca un trozo de injera para recoger los guisos; en el sur de la India se mezcla el arroz con el curry con los dedos."
+     ],
+     "q": "¿Alguna vez comiste una comida entera con las manos, y qué tal fue?",
+     "c": "Prueba hoy a comer un plato sencillo con la mano derecha, usando solo las yemas de los dedos."
+    },
+    "fr": {
+     "t": "Manger avec les mains",
+     "g": "Apprends l'élégante technique de la main droite pratiquée en Inde, en Éthiopie et ailleurs.",
+     "p": [
+      "Lave-toi les mains avant et après le repas ; dans beaucoup de foyers, on propose aux invités une bassine ou un robinet.",
+      "N'utilise que la main droite, prends la nourriture du bout des doigts et garde la paume aussi propre que possible.",
+      "En Éthiopie, on déchire l'injera pour saisir les ragoûts ; dans le sud de l'Inde, on mélange riz et curry du bout des doigts."
+     ],
+     "q": "As-tu déjà mangé tout un repas avec les mains, et qu'as-tu ressenti ?",
+     "c": "Essaie aujourd'hui de manger un plat simple de la main droite, du bout des doigts seulement."
+    },
+    "it": {
+     "t": "Mangiare con le mani",
+     "g": "Impara l'elegante tecnica con la mano destra usata in India, in Etiopia e altrove.",
+     "p": [
+      "Lavati le mani prima e dopo il pasto; in molte case agli ospiti si offre una bacinella o un rubinetto.",
+      "Usa solo la mano destra, prendi il cibo con la punta delle dita e tieni il palmo il più pulito possibile.",
+      "In Etiopia si strappa l'injera per raccogliere gli stufati; nel Sud dell'India si mescolano riso e curry con le dita."
+     ],
+     "q": "Hai mai mangiato un intero pasto con le mani, e come ti sei sentito?",
+     "c": "Oggi prova a mangiare un piatto semplice con la mano destra, usando solo la punta delle dita."
+    },
+    "pt": {
+     "t": "Comer com as mãos",
+     "g": "Aprende a elegante técnica da mão direita usada na Índia, na Etiópia e noutros sítios.",
+     "p": [
+      "Lava as mãos antes e depois da refeição; em muitas casas oferece-se aos convidados uma bacia ou uma torneira.",
+      "Usa só a mão direita, apanha a comida com as pontas dos dedos e mantém a palma o mais limpa possível.",
+      "Na Etiópia rasga-se a injera para apanhar os guisados; no Sul da Índia mistura-se o arroz com o caril com os dedos."
+     ],
+     "q": "Já comeste uma refeição inteira com as mãos, e como foi?",
+     "c": "Experimenta hoje comer um prato simples com a mão direita, usando só as pontas dos dedos."
+    },
+    "pt_BR": {
+     "t": "Comer com as mãos",
+     "g": "Aprenda a elegante técnica da mão direita usada na Índia, na Etiópia e em outros lugares.",
+     "p": [
+      "Lave as mãos antes e depois da refeição; em muitas casas os convidados recebem uma bacia ou uma torneira para isso.",
+      "Use só a mão direita, pegue a comida com as pontas dos dedos e mantenha a palma o mais limpa possível.",
+      "Na Etiópia, rasga-se a injera para pegar os ensopados; no sul da Índia, mistura-se o arroz com o curry usando os dedos."
+     ],
+     "q": "Você já comeu uma refeição inteira com as mãos, e como foi?",
+     "c": "Experimente hoje comer um prato simples com a mão direita, usando só as pontas dos dedos."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Bread etiquette",
+     "g": "Learn how to break bread, where to put it and when wiping up sauce is welcome.",
+     "p": [
+      "At a formal Western table, your bread plate is on the left; tear off a bite-sized piece rather than biting the roll.",
+      "In France, bread is often placed directly on the tablecloth next to your plate, which is perfectly polite.",
+      "Wiping your plate with bread is welcome in Italy, where it is called fare la scarpetta, but best saved for casual meals."
+     ],
+     "q": "How is bread eaten at your table, and is there a bread you love?",
+     "c": "At your next meal with bread, tear small pieces by hand instead of biting into the whole slice."
+    },
+    "de": {
+     "t": "Brot-Etikette",
+     "g": "Lerne, wie man Brot bricht, wohin man es legt und wann das Auftunken von Soße willkommen ist.",
+     "p": [
+      "Am förmlichen westlichen Tisch steht der Brotteller links; brich ein mundgerechtes Stück ab, statt ins Brötchen zu beißen.",
+      "In Frankreich legt man Brot oft direkt neben den Teller auf die Tischdecke, und das ist völlig höflich.",
+      "Soße mit Brot aufzutunken ist in Italien beliebt und heißt fare la scarpetta, passt aber besser zu lockeren Mahlzeiten."
+     ],
+     "q": "Wie isst man bei dir Brot, und gibt es eine Brotsorte, die du liebst?",
+     "c": "Brich bei deiner nächsten Mahlzeit mit Brot kleine Stücke mit der Hand ab, statt in die ganze Scheibe zu beißen."
+    },
+    "es": {
+     "t": "Etiqueta del pan",
+     "g": "Aprende a partir el pan, dónde colocarlo y cuándo está bien mojar en la salsa.",
+     "p": [
+      "En una mesa formal occidental, el plato del pan está a la izquierda; parte un trozo pequeño en vez de morder el panecillo.",
+      "En Francia el pan suele ponerse directamente sobre el mantel, junto al plato, y es totalmente correcto.",
+      "Mojar pan en la salsa es bien recibido en Italia, donde se llama fare la scarpetta, aunque mejor en comidas informales."
+     ],
+     "q": "¿Cómo se come el pan en tu mesa, y hay algún pan que te encante?",
+     "c": "En tu próxima comida con pan, pártelo en trozos pequeños con la mano en vez de morder la rebanada."
+    },
+    "fr": {
+     "t": "Le pain à table",
+     "g": "Apprends à rompre le pain, où le poser et quand saucer est bienvenu.",
+     "p": [
+      "À une table occidentale formelle, l'assiette à pain est à gauche ; romps une bouchée au lieu de croquer dans le petit pain.",
+      "En France, le pain se pose souvent directement sur la nappe à côté de l'assiette, et c'est tout à fait poli.",
+      "Saucer avec du pain est apprécié en Italie, où l'on dit fare la scarpetta, mais mieux vaut le garder pour les repas simples."
+     ],
+     "q": "Comment mange-t-on le pain chez toi, et y a-t-il un pain que tu adores ?",
+     "c": "À ton prochain repas avec du pain, romps de petits morceaux à la main au lieu de croquer dans la tranche."
+    },
+    "it": {
+     "t": "Il galateo del pane",
+     "g": "Impara come spezzare il pane, dove appoggiarlo e quando fare la scarpetta è ben accetto.",
+     "p": [
+      "A una tavola formale occidentale il piattino del pane è a sinistra; spezza un boccone invece di mordere il panino.",
+      "In Francia il pane si appoggia spesso direttamente sulla tovaglia accanto al piatto, ed è del tutto educato.",
+      "In Italia fare la scarpetta è molto amato, ma è meglio riservarla ai pasti informali e in famiglia."
+     ],
+     "q": "Come si mangia il pane a casa tua, e c'è un pane che adori?",
+     "c": "Al prossimo pasto con il pane spezzalo in piccoli pezzi con le mani invece di morderlo."
+    },
+    "pt": {
+     "t": "A etiqueta do pão",
+     "g": "Aprende a partir o pão, onde o pousar e quando é bem-vindo molhá-lo no molho.",
+     "p": [
+      "Numa mesa formal ocidental, o prato do pão fica à esquerda; parte um pedaço pequeno em vez de morderes o pão inteiro.",
+      "Em França, o pão costuma ficar diretamente na toalha, ao lado do prato, e isso é perfeitamente educado.",
+      "Limpar o prato com pão é apreciado em Itália, onde se diz fare la scarpetta, mas fica melhor em refeições informais."
+     ],
+     "q": "Como se come o pão à tua mesa, e há algum pão de que gostes muito?",
+     "c": "Na próxima refeição com pão, parte pedaços pequenos com a mão em vez de morderes a fatia inteira."
+    },
+    "pt_BR": {
+     "t": "A etiqueta do pão",
+     "g": "Aprenda a partir o pão, onde colocá-lo e quando passar o pão no molho é bem-vindo.",
+     "p": [
+      "Numa mesa formal ocidental, o pratinho de pão fica à esquerda; parta um pedaço pequeno em vez de morder o pão inteiro.",
+      "Na França, o pão costuma ficar direto na toalha, ao lado do prato, e isso é perfeitamente educado.",
+      "Limpar o prato com pão é apreciado na Itália, onde se diz fare la scarpetta, mas fica melhor em refeições informais."
+     ],
+     "q": "Como se come pão na sua mesa, e existe algum pão que você adora?",
+     "c": "Na próxima refeição com pão, parta pedaços pequenos com a mão em vez de morder a fatia inteira."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Starting the meal",
+     "g": "Learn to wait for the host and say something kind before eating.",
+     "p": [
+      "In many cultures, guests wait until the host sits down, invites everyone to start or begins eating.",
+      "In some homes a short blessing or thanks comes first; you can simply sit quietly and join in with respect.",
+      "If food is served individually, waiting until everyone has a plate is a simple, universal courtesy."
+     ],
+     "q": "How does a meal usually begin at your home or with your friends?",
+     "c": "At your next shared meal, wait until everyone is served and the host starts before you begin."
+    },
+    "de": {
+     "t": "Mit dem Essen beginnen",
+     "g": "Lerne, auf den Gastgeber zu warten und vor dem Essen etwas Freundliches zu sagen.",
+     "p": [
+      "In vielen Kulturen warten Gäste, bis der Gastgeber sitzt, alle zum Essen auffordert oder selbst anfängt.",
+      "In manchen Familien gibt es zuerst ein kurzes Tischgebet oder einen Dank; du kannst still dabei sein und respektvoll mitmachen.",
+      "Wird einzeln serviert, ist es eine einfache, universelle Höflichkeit zu warten, bis alle einen Teller haben."
+     ],
+     "q": "Wie beginnt bei dir zu Hause oder mit Freunden normalerweise eine Mahlzeit?",
+     "c": "Warte bei der nächsten gemeinsamen Mahlzeit, bis alle bedient sind und der Gastgeber anfängt."
+    },
+    "es": {
+     "t": "Empezar a comer",
+     "g": "Aprende a esperar al anfitrión y a decir algo amable antes de comer.",
+     "p": [
+      "En muchas culturas, los invitados esperan a que el anfitrión se siente, invite a empezar o comience a comer.",
+      "En algunas casas primero se bendice la mesa o se da las gracias; puedes quedarte en silencio y acompañar con respeto.",
+      "Si se sirve a cada uno por separado, esperar a que todos tengan su plato es una cortesía sencilla y universal."
+     ],
+     "q": "¿Cómo suele empezar una comida en tu casa o con tus amigos?",
+     "c": "En tu próxima comida compartida, espera a que todos estén servidos y a que empiece el anfitrión."
+    },
+    "fr": {
+     "t": "Commencer le repas",
+     "g": "Apprends à attendre l'hôte et à dire un mot aimable avant de manger.",
+     "p": [
+      "Dans beaucoup de cultures, les invités attendent que l'hôte s'asseye, invite à commencer ou commence lui-même.",
+      "Dans certaines familles, on fait d'abord une courte prière ou un remerciement ; tu peux rester silencieux et t'y associer avec respect.",
+      "Si chacun est servi à part, attendre que tout le monde ait son assiette est une politesse simple et universelle."
+     ],
+     "q": "Comment commence d'habitude un repas chez toi ou avec tes amis ?",
+     "c": "Lors de ton prochain repas partagé, attends que tout le monde soit servi et que l'hôte commence."
+    },
+    "it": {
+     "t": "Iniziare il pasto",
+     "g": "Impara ad aspettare chi ti ospita e a dire qualcosa di gentile prima di mangiare.",
+     "p": [
+      "In molte culture gli ospiti aspettano che il padrone di casa si sieda, inviti a cominciare o inizi a mangiare.",
+      "In alcune famiglie prima si dice una breve preghiera o un ringraziamento; puoi restare in silenzio e unirti con rispetto.",
+      "Se si serve ognuno a parte, aspettare che tutti abbiano il piatto è una cortesia semplice e universale."
+     ],
+     "q": "Come comincia di solito un pasto a casa tua o con i tuoi amici?",
+     "c": "Al prossimo pasto in compagnia aspetta che tutti siano serviti e che il padrone di casa inizi."
+    },
+    "pt": {
+     "t": "Começar a refeição",
+     "g": "Aprende a esperar pelo anfitrião e a dizer algo simpático antes de comer.",
+     "p": [
+      "Em muitas culturas, os convidados esperam que o anfitrião se sente, convide a começar ou comece a comer.",
+      "Em algumas casas faz-se primeiro uma breve oração ou agradecimento; podes ficar em silêncio e acompanhar com respeito.",
+      "Se cada um é servido à parte, esperar que todos tenham o prato é uma cortesia simples e universal."
+     ],
+     "q": "Como costuma começar uma refeição em tua casa ou com os teus amigos?",
+     "c": "Na próxima refeição partilhada, espera que todos estejam servidos e que o anfitrião comece."
+    },
+    "pt_BR": {
+     "t": "Começar a refeição",
+     "g": "Aprenda a esperar o anfitrião e a dizer algo gentil antes de comer.",
+     "p": [
+      "Em muitas culturas, os convidados esperam o anfitrião se sentar, convidar todos a começar ou começar a comer.",
+      "Em algumas casas há antes uma breve oração ou agradecimento; você pode ficar em silêncio e acompanhar com respeito.",
+      "Se cada um é servido separadamente, esperar todos terem seu prato é uma cortesia simples e universal."
+     ],
+     "q": "Como costuma começar uma refeição na sua casa ou com seus amigos?",
+     "c": "Na próxima refeição compartilhada, espere todos estarem servidos e o anfitrião começar."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Words before and after meals",
+     "g": "Explore itadakimasu, bon appétit and other mealtime phrases around the world.",
+     "p": [
+      "In Japan, people say itadakimasu before eating and gochisousama deshita afterwards to thank for the meal.",
+      "In France people say bon appétit, in Italy buon appetito, and in Germany guten Appetit or Mahlzeit.",
+      "In Portuguese, bom apetite is common, and many languages have a phrase to thank the cook after eating."
+     ],
+     "q": "What do you say before or after a meal, if anything?",
+     "c": "Learn one mealtime phrase from another language and say it at your next meal."
+    },
+    "de": {
+     "t": "Worte vor und nach dem Essen",
+     "g": "Entdecke Itadakimasu, Bon appétit und andere Tischsprüche aus aller Welt.",
+     "p": [
+      "In Japan sagt man vor dem Essen itadakimasu und danach gochisousama deshita, um sich für die Mahlzeit zu bedanken.",
+      "In Frankreich sagt man bon appétit, in Italien buon appetito und in Deutschland guten Appetit oder Mahlzeit.",
+      "Auf Portugiesisch ist bom apetite üblich, und viele Sprachen haben einen Satz, um nach dem Essen dem Koch zu danken."
+     ],
+     "q": "Was sagst du vor oder nach einer Mahlzeit, wenn überhaupt?",
+     "c": "Lerne einen Tischspruch aus einer anderen Sprache und sag ihn bei deiner nächsten Mahlzeit."
+    },
+    "es": {
+     "t": "Palabras antes y después de comer",
+     "g": "Explora itadakimasu, bon appétit y otras frases para la mesa de todo el mundo.",
+     "p": [
+      "En Japón se dice itadakimasu antes de comer y gochisousama deshita después, para agradecer la comida.",
+      "En Francia se dice bon appétit, en Italia buon appetito, en Alemania guten Appetit y en español buen provecho.",
+      "En portugués es común bom apetite, y muchos idiomas tienen una frase para agradecer al cocinero después de comer."
+     ],
+     "q": "¿Qué dices antes o después de comer, si dices algo?",
+     "c": "Aprende una frase para la mesa en otro idioma y dila en tu próxima comida."
+    },
+    "fr": {
+     "t": "Les mots avant et après le repas",
+     "g": "Découvre itadakimasu, bon appétit et d'autres formules de table du monde entier.",
+     "p": [
+      "Au Japon, on dit itadakimasu avant de manger et gochisousama deshita après, pour remercier du repas.",
+      "En France on dit bon appétit, en Italie buon appetito et en Allemagne guten Appetit ou Mahlzeit.",
+      "En portugais, bom apetite est courant, et beaucoup de langues ont une formule pour remercier le cuisinier après le repas."
+     ],
+     "q": "Que dis-tu avant ou après un repas, si tu dis quelque chose ?",
+     "c": "Apprends une formule de table dans une autre langue et dis-la à ton prochain repas."
+    },
+    "it": {
+     "t": "Parole prima e dopo i pasti",
+     "g": "Scopri itadakimasu, bon appétit e altre formule da tavola nel mondo.",
+     "p": [
+      "In Giappone si dice itadakimasu prima di mangiare e gochisousama deshita dopo, per ringraziare del pasto.",
+      "In Francia si dice bon appétit, in Italia buon appetito e in Germania guten Appetit o Mahlzeit.",
+      "In portoghese è comune bom apetite, e molte lingue hanno una frase per ringraziare chi ha cucinato dopo il pasto."
+     ],
+     "q": "Cosa dici prima o dopo un pasto, se dici qualcosa?",
+     "c": "Impara una formula da tavola in un'altra lingua e dilla al tuo prossimo pasto."
+    },
+    "pt": {
+     "t": "Palavras antes e depois das refeições",
+     "g": "Explora itadakimasu, bon appétit e outras expressões de mesa pelo mundo.",
+     "p": [
+      "No Japão diz-se itadakimasu antes de comer e gochisousama deshita depois, para agradecer a refeição.",
+      "Em França diz-se bon appétit, em Itália buon appetito e na Alemanha guten Appetit ou Mahlzeit.",
+      "Em português é comum bom apetite, e muitas línguas têm uma expressão para agradecer a quem cozinhou depois de comer."
+     ],
+     "q": "O que dizes antes ou depois de uma refeição, se dizes alguma coisa?",
+     "c": "Aprende uma expressão de mesa noutra língua e di-la na tua próxima refeição."
+    },
+    "pt_BR": {
+     "t": "Palavras antes e depois das refeições",
+     "g": "Explore itadakimasu, bon appétit e outras expressões de mesa pelo mundo.",
+     "p": [
+      "No Japão se diz itadakimasu antes de comer e gochisousama deshita depois, para agradecer a refeição.",
+      "Na França se diz bon appétit, na Itália buon appetito e na Alemanha guten Appetit ou Mahlzeit.",
+      "Em português é comum dizer bom apetite, e muitos idiomas têm uma frase para agradecer a quem cozinhou."
+     ],
+     "q": "O que você diz antes ou depois de uma refeição, se diz alguma coisa?",
+     "c": "Aprenda uma expressão de mesa em outro idioma e diga na sua próxima refeição."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Finishing your plate",
+     "g": "Learn when a clean plate pleases the host and when it signals you want more.",
+     "p": [
+      "In Japan and many Western homes, finishing everything shows you enjoyed the meal and respects the food.",
+      "In China and some other places, leaving a small amount can show the host gave you more than enough.",
+      "If you are full, say how delicious it was and decline more kindly rather than forcing yourself to eat."
+     ],
+     "q": "In your family, was it important to finish everything on your plate?",
+     "c": "At your next meal, serve yourself a modest portion so you can finish it and take more if you wish."
+    },
+    "de": {
+     "t": "Den Teller leer essen",
+     "g": "Lerne, wann ein leerer Teller den Gastgeber freut und wann er signalisiert, dass du mehr möchtest.",
+     "p": [
+      "In Japan und vielen westlichen Haushalten zeigt ein leerer Teller, dass es geschmeckt hat, und ehrt das Essen.",
+      "In China und einigen anderen Orten kann ein kleiner Rest zeigen, dass der Gastgeber mehr als genug aufgetischt hat.",
+      "Bist du satt, lobe das Essen und lehne freundlich ab, statt dich zum Weiteressen zu zwingen."
+     ],
+     "q": "War es in deiner Familie wichtig, den Teller leer zu essen?",
+     "c": "Nimm dir bei der nächsten Mahlzeit eine kleine Portion, damit du sie aufessen und bei Lust nachnehmen kannst."
+    },
+    "es": {
+     "t": "Terminar el plato",
+     "g": "Aprende cuándo un plato vacío agrada al anfitrión y cuándo indica que quieres más.",
+     "p": [
+      "En Japón y en muchos hogares occidentales, terminarlo todo muestra que disfrutaste y respeta la comida.",
+      "En China y otros lugares, dejar un poquito puede indicar que el anfitrión te sirvió más que suficiente.",
+      "Si estás lleno, di lo rico que estaba y rechaza más con amabilidad en lugar de forzarte a comer."
+     ],
+     "q": "En tu familia, ¿era importante dejar el plato vacío?",
+     "c": "En tu próxima comida, sírvete una ración moderada para poder terminarla y repetir si quieres."
+    },
+    "fr": {
+     "t": "Finir son assiette",
+     "g": "Apprends quand une assiette vide fait plaisir à l'hôte et quand elle signifie que tu en veux encore.",
+     "p": [
+      "Au Japon et dans beaucoup de foyers occidentaux, tout finir montre que tu as aimé le repas et respecte la nourriture.",
+      "En Chine et ailleurs, laisser un petit reste peut montrer que l'hôte t'a servi plus qu'assez.",
+      "Si tu n'as plus faim, dis combien c'était bon et refuse gentiment au lieu de te forcer."
+     ],
+     "q": "Dans ta famille, était-il important de finir son assiette ?",
+     "c": "À ton prochain repas, sers-toi une portion modeste pour pouvoir la finir et te resservir si tu veux."
+    },
+    "it": {
+     "t": "Finire il piatto",
+     "g": "Impara quando un piatto vuoto fa piacere a chi ti ospita e quando segnala che ne vuoi ancora.",
+     "p": [
+      "In Giappone e in molte case occidentali finire tutto mostra che hai gradito il pasto e rispetta il cibo.",
+      "In Cina e in altri luoghi lasciare un po' di cibo può indicare che il padrone di casa ti ha servito più che abbastanza.",
+      "Se sei sazio, di' quanto era buono e rifiuta con garbo invece di sforzarti a mangiare."
+     ],
+     "q": "Nella tua famiglia era importante finire tutto quello che c'era nel piatto?",
+     "c": "Al prossimo pasto servi una porzione moderata, così puoi finirla e prenderne ancora se vuoi."
+    },
+    "pt": {
+     "t": "Acabar o prato",
+     "g": "Aprende quando um prato vazio agrada ao anfitrião e quando indica que queres mais.",
+     "p": [
+      "No Japão e em muitas casas ocidentais, comer tudo mostra que gostaste da refeição e respeita a comida.",
+      "Na China e noutros sítios, deixar um pouco pode mostrar que o anfitrião te serviu mais do que o suficiente.",
+      "Se estiveres satisfeito, diz como estava delicioso e recusa mais com simpatia em vez de te forçares a comer."
+     ],
+     "q": "Na tua família era importante comer tudo o que estava no prato?",
+     "c": "Na próxima refeição, serve-te de uma porção moderada para a poderes acabar e repetir se quiseres."
+    },
+    "pt_BR": {
+     "t": "Raspar o prato",
+     "g": "Aprenda quando um prato vazio agrada ao anfitrião e quando indica que você quer mais.",
+     "p": [
+      "No Japão e em muitas casas ocidentais, comer tudo mostra que você gostou da refeição e respeita a comida.",
+      "Na China e em outros lugares, deixar um pouquinho pode mostrar que o anfitrião serviu mais do que o suficiente.",
+      "Se estiver satisfeito, diga como estava delicioso e recuse mais com gentileza em vez de se forçar a comer."
+     ],
+     "q": "Na sua família era importante comer tudo o que estava no prato?",
+     "c": "Na próxima refeição, sirva uma porção moderada para conseguir terminar e repetir se quiser."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Slurping and table noises",
+     "g": "Understand why slurping noodles is fine in Japan but frowned upon elsewhere.",
+     "p": [
+      "In Japan, slurping ramen or soba is normal; it cools the noodles and shows you are enjoying them.",
+      "In most of Europe and the Americas, eating quietly is expected, so slurping and loud chewing are avoided.",
+      "Wherever you are, chewing with your mouth closed and not talking with food in your mouth are welcome everywhere."
+     ],
+     "q": "Are there table noises that bother you, or that are normal in your home?",
+     "c": "Pay attention to the sounds you make while eating today and keep them suited to the place you are in."
+    },
+    "de": {
+     "t": "Schlürfen und Geräusche am Tisch",
+     "g": "Verstehe, warum Nudelschlürfen in Japan in Ordnung ist, anderswo aber verpönt.",
+     "p": [
+      "In Japan ist es normal, Ramen oder Soba zu schlürfen; das kühlt die Nudeln und zeigt, dass es schmeckt.",
+      "In den meisten Teilen Europas und Amerikas isst man leise, daher meidet man Schlürfen und lautes Kauen.",
+      "Überall gern gesehen: mit geschlossenem Mund kauen und nicht mit vollem Mund sprechen."
+     ],
+     "q": "Gibt es Geräusche am Tisch, die dich stören, oder die bei dir zu Hause normal sind?",
+     "c": "Achte heute beim Essen auf deine Geräusche und passe sie dem Ort an, an dem du bist."
+    },
+    "es": {
+     "t": "Sorber y ruidos en la mesa",
+     "g": "Entiende por qué sorber fideos está bien en Japón pero no en otros lugares.",
+     "p": [
+      "En Japón es normal sorber el ramen o la soba; enfría los fideos y muestra que los disfrutas.",
+      "En gran parte de Europa y América se espera comer en silencio, así que se evita sorber y masticar ruidosamente.",
+      "En cualquier lugar se agradece masticar con la boca cerrada y no hablar con la boca llena."
+     ],
+     "q": "¿Hay ruidos en la mesa que te molesten, o que sean normales en tu casa?",
+     "c": "Fíjate hoy en los sonidos que haces al comer y adáptalos al lugar donde estés."
+    },
+    "fr": {
+     "t": "Aspirer et bruits de table",
+     "g": "Comprends pourquoi aspirer bruyamment ses nouilles est normal au Japon mais mal vu ailleurs.",
+     "p": [
+      "Au Japon, aspirer ses ramen ou ses soba est normal : cela refroidit les nouilles et montre qu'on se régale.",
+      "Dans la plupart des pays d'Europe et des Amériques, on mange en silence, donc on évite d'aspirer et de mâcher bruyamment.",
+      "Partout, mâcher bouche fermée et ne pas parler la bouche pleine sont appréciés."
+     ],
+     "q": "Y a-t-il des bruits à table qui te dérangent, ou qui sont normaux chez toi ?",
+     "c": "Fais attention aujourd'hui aux bruits que tu fais en mangeant et adapte-les au lieu où tu te trouves."
+    },
+    "it": {
+     "t": "Risucchiare e rumori a tavola",
+     "g": "Capisci perché risucchiare i noodles va bene in Giappone ma altrove è malvisto.",
+     "p": [
+      "In Giappone risucchiare ramen o soba è normale: raffredda i noodles e mostra che li stai gustando.",
+      "In gran parte d'Europa e delle Americhe ci si aspetta di mangiare in silenzio, quindi si evita di risucchiare e masticare rumorosamente.",
+      "Ovunque è apprezzato masticare a bocca chiusa e non parlare con la bocca piena."
+     ],
+     "q": "Ci sono rumori a tavola che ti danno fastidio, o che a casa tua sono normali?",
+     "c": "Oggi fai attenzione ai suoni che fai mangiando e adattali al luogo in cui ti trovi."
+    },
+    "pt": {
+     "t": "Sorver e ruídos à mesa",
+     "g": "Percebe porque sorver massa é normal no Japão mas malvisto noutros sítios.",
+     "p": [
+      "No Japão é normal sorver ramen ou soba; arrefece a massa e mostra que estás a gostar.",
+      "Na maior parte da Europa e das Américas espera-se comer em silêncio, por isso evita-se sorver e mastigar ruidosamente.",
+      "Em todo o lado é apreciado mastigar de boca fechada e não falar com a boca cheia."
+     ],
+     "q": "Há ruídos à mesa que te incomodem, ou que sejam normais em tua casa?",
+     "c": "Repara hoje nos sons que fazes a comer e adapta-os ao sítio onde estás."
+    },
+    "pt_BR": {
+     "t": "Sorver e barulhos à mesa",
+     "g": "Entenda por que sorver macarrão é normal no Japão, mas malvisto em outros lugares.",
+     "p": [
+      "No Japão é normal sorver lámen ou soba; isso esfria o macarrão e mostra que você está gostando.",
+      "Na maior parte da Europa e das Américas espera-se comer em silêncio, então evita-se sorver e mastigar fazendo barulho.",
+      "Em qualquer lugar é bem-visto mastigar de boca fechada e não falar de boca cheia."
+     ],
+     "q": "Existem barulhos à mesa que incomodam você, ou que são normais na sua casa?",
+     "c": "Repare hoje nos sons que você faz ao comer e adapte ao lugar onde está."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Elbows and hands on the table",
+     "g": "Learn where your hands should rest during a meal in different countries.",
+     "p": [
+      "In the UK and the US, elbows on the table during the meal are traditionally avoided, though rules are relaxing.",
+      "In France and much of continental Europe, keep both hands visible, resting your wrists on the table edge.",
+      "Hands in your lap is polite in the US, while in Germany or France it can seem odd; follow the people around you."
+     ],
+     "q": "Where do you usually rest your hands while eating?",
+     "c": "At your next meal, notice where others rest their hands and try matching them."
+    },
+    "de": {
+     "t": "Ellbogen und Hände auf dem Tisch",
+     "g": "Lerne, wo die Hände in verschiedenen Ländern beim Essen ruhen sollten.",
+     "p": [
+      "In Großbritannien und den USA meidet man traditionell Ellbogen auf dem Tisch, auch wenn die Regeln lockerer werden.",
+      "In Frankreich und weiten Teilen Kontinentaleuropas bleiben beide Hände sichtbar, die Handgelenke an der Tischkante.",
+      "Hände im Schoß gelten in den USA als höflich, in Deutschland oder Frankreich eher als seltsam; richte dich nach den anderen."
+     ],
+     "q": "Wo legst du beim Essen normalerweise deine Hände ab?",
+     "c": "Achte bei deiner nächsten Mahlzeit darauf, wo andere ihre Hände ablegen, und passe dich an."
+    },
+    "es": {
+     "t": "Codos y manos sobre la mesa",
+     "g": "Aprende dónde deben descansar las manos durante la comida en distintos países.",
+     "p": [
+      "En el Reino Unido y Estados Unidos se evitan tradicionalmente los codos en la mesa al comer, aunque las normas se relajan.",
+      "En Francia y gran parte de Europa continental, ambas manos quedan a la vista, con las muñecas apoyadas en el borde.",
+      "Las manos en el regazo son correctas en Estados Unidos, pero en Alemania o Francia pueden extrañar; sigue a los demás."
+     ],
+     "q": "¿Dónde sueles apoyar las manos mientras comes?",
+     "c": "En tu próxima comida, fíjate dónde apoyan los demás las manos e intenta hacer lo mismo."
+    },
+    "fr": {
+     "t": "Coudes et mains sur la table",
+     "g": "Apprends où poser les mains pendant un repas selon les pays.",
+     "p": [
+      "Au Royaume-Uni et aux États-Unis, on évite traditionnellement les coudes sur la table pendant le repas, même si les règles s'assouplissent.",
+      "En France et dans une grande partie de l'Europe continentale, on garde les deux mains visibles, poignets posés au bord de la table.",
+      "Les mains sur les genoux sont polies aux États-Unis, mais semblent étranges en France ou en Allemagne ; suis les autres."
+     ],
+     "q": "Où poses-tu d'habitude tes mains pendant que tu manges ?",
+     "c": "À ton prochain repas, observe où les autres posent leurs mains et essaie de faire pareil."
+    },
+    "it": {
+     "t": "Gomiti e mani sul tavolo",
+     "g": "Impara dove tenere le mani durante un pasto nei diversi Paesi.",
+     "p": [
+      "Nel Regno Unito e negli Stati Uniti si evitano tradizionalmente i gomiti sul tavolo durante il pasto, anche se le regole si allentano.",
+      "In Francia, in Italia e in gran parte dell'Europa continentale si tengono entrambe le mani in vista, con i polsi sul bordo.",
+      "Le mani in grembo sono educate negli Stati Uniti, ma in Italia o in Francia possono sembrare strane; segui gli altri."
+     ],
+     "q": "Dove appoggi di solito le mani mentre mangi?",
+     "c": "Al prossimo pasto osserva dove gli altri tengono le mani e prova a fare lo stesso."
+    },
+    "pt": {
+     "t": "Cotovelos e mãos na mesa",
+     "g": "Aprende onde as mãos devem ficar durante uma refeição em diferentes países.",
+     "p": [
+      "No Reino Unido e nos Estados Unidos evitam-se tradicionalmente os cotovelos na mesa durante a refeição, embora as regras estejam a mudar.",
+      "Em França e em grande parte da Europa continental, mantêm-se as duas mãos à vista, com os pulsos na borda da mesa.",
+      "As mãos no colo são educadas nos Estados Unidos, mas em França ou na Alemanha podem parecer estranhas; segue os outros."
+     ],
+     "q": "Onde costumas pousar as mãos enquanto comes?",
+     "c": "Na próxima refeição, repara onde os outros pousam as mãos e tenta fazer igual."
+    },
+    "pt_BR": {
+     "t": "Cotovelos e mãos na mesa",
+     "g": "Aprenda onde as mãos devem ficar durante uma refeição em diferentes países.",
+     "p": [
+      "No Reino Unido e nos Estados Unidos, evita-se tradicionalmente o cotovelo na mesa durante a refeição, embora as regras estejam mais leves.",
+      "Na França e em boa parte da Europa continental, as duas mãos ficam à vista, com os pulsos apoiados na borda da mesa.",
+      "Mãos no colo são educadas nos Estados Unidos, mas na França ou na Alemanha podem parecer estranhas; siga os outros."
+     ],
+     "q": "Onde você costuma apoiar as mãos enquanto come?",
+     "c": "Na próxima refeição, repare onde os outros apoiam as mãos e tente fazer igual."
+    }
+   }
+  }
+ ]
+}

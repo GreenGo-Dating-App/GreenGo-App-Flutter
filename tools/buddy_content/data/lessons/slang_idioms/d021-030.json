@@ -1,0 +1,835 @@
+{
+ "topic": "slang_idioms",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Food idioms in Italian",
+     "g": "Learn three Italian food idioms and what they really mean.",
+     "p": [
+      "“Essere come il prezzemolo” (to be like parsley) describes someone who turns up everywhere, like parsley in Italian dishes.",
+      "“Rendere pan per focaccia” (to give bread for focaccia) means to pay someone back in the same way, tit for tat.",
+      "“Tutto fa brodo” (everything makes broth) means every little bit helps, so nothing is wasted."
+     ],
+     "q": "Do you know someone who is “come il prezzemolo”, at every party and event?",
+     "c": "Find one small thing today that “fa brodo”: a tiny step toward a goal of yours."
+    },
+    "de": {
+     "t": "Essens-Redewendungen auf Italienisch",
+     "g": "Drei italienische Essens-Redewendungen lernen und was sie wirklich bedeuten.",
+     "p": [
+      "„Essere come il prezzemolo“ (wie Petersilie sein) beschreibt jemanden, der überall auftaucht, wie Petersilie in italienischen Gerichten.",
+      "„Rendere pan per focaccia“ (Brot für Focaccia geben) heißt, Gleiches mit Gleichem vergelten.",
+      "„Tutto fa brodo“ (alles gibt Brühe) heißt, jede Kleinigkeit hilft, Kleinvieh macht auch Mist."
+     ],
+     "q": "Kennst du jemanden, der „come il prezzemolo“ ist, auf jeder Party und jedem Event?",
+     "c": "Finde heute eine Kleinigkeit, die „fa brodo“: einen winzigen Schritt zu einem deiner Ziele."
+    },
+    "es": {
+     "t": "Expresiones de comida en italiano",
+     "g": "Aprender tres expresiones italianas de comida y lo que significan de verdad.",
+     "p": [
+      "«Essere come il prezzemolo» (ser como el perejil) es alguien que aparece en todas partes, como el perejil en la cocina italiana.",
+      "«Rendere pan per focaccia» (devolver pan por focaccia) es pagar con la misma moneda.",
+      "«Tutto fa brodo» (todo hace caldo) significa que cualquier cosa suma, todo ayuda."
+     ],
+     "q": "¿Conoces a alguien que sea «come il prezzemolo», presente en todas las fiestas?",
+     "c": "Busca hoy algo pequeño que «fa brodo»: un pasito hacia una de tus metas."
+    },
+    "fr": {
+     "t": "Expressions culinaires en italien",
+     "g": "Apprendre trois expressions culinaires italiennes et leur vrai sens.",
+     "p": [
+      "« Essere come il prezzemolo » (être comme le persil) décrit quelqu'un qu'on voit partout, comme le persil dans les plats italiens.",
+      "« Rendere pan per focaccia » (rendre du pain pour de la focaccia) veut dire rendre la pareille, œil pour œil.",
+      "« Tutto fa brodo » (tout fait du bouillon) veut dire que tout est bon à prendre, chaque petit plus compte."
+     ],
+     "q": "Connais-tu quelqu'un qui est « come il prezzemolo », à toutes les fêtes ?",
+     "c": "Trouve aujourd'hui une petite chose qui « fa brodo » : un mini pas vers un de tes objectifs."
+    },
+    "it": {
+     "t": "Modi di dire sul cibo in italiano",
+     "g": "Ripassare tre modi di dire italiani sul cibo e il loro vero senso.",
+     "p": [
+      "«Essere come il prezzemolo» si dice di chi spunta dappertutto, come il prezzemolo nei piatti.",
+      "«Rendere pan per focaccia» vuol dire ripagare qualcuno con la stessa moneta.",
+      "«Tutto fa brodo» vuol dire che ogni piccola cosa è utile e niente va sprecato."
+     ],
+     "q": "Conosci qualcuno che è come il prezzemolo, presente a ogni festa?",
+     "c": "Trova oggi una piccola cosa che fa brodo: un passettino verso un tuo obiettivo."
+    },
+    "pt": {
+     "t": "Expressões de comida em italiano",
+     "g": "Aprender três expressões italianas de comida e o que querem dizer de verdade.",
+     "p": [
+      "«Essere come il prezzemolo» (ser como a salsa) é alguém que aparece em todo o lado, como a salsa nos pratos italianos.",
+      "«Rendere pan per focaccia» (devolver pão por focaccia) é pagar na mesma moeda.",
+      "«Tutto fa brodo» (tudo dá caldo) quer dizer que tudo ajuda, cada pouquinho conta."
+     ],
+     "q": "Conheces alguém que é «come il prezzemolo», presente em todas as festas?",
+     "c": "Encontra hoje uma coisa pequena que «fa brodo»: um passinho para um dos teus objetivos."
+    },
+    "pt_BR": {
+     "t": "Expressões de comida em italiano",
+     "g": "Aprender três expressões italianas de comida e o que elas querem dizer.",
+     "p": [
+      "“Essere come il prezzemolo” (ser como a salsinha) é alguém que aparece em todo lugar, como a salsinha nos pratos italianos.",
+      "“Rendere pan per focaccia” (devolver pão por focaccia) é pagar na mesma moeda.",
+      "“Tutto fa brodo” (tudo dá caldo) quer dizer que tudo ajuda, cada pouquinho conta."
+     ],
+     "q": "Você conhece alguém que é “come il prezzemolo”, presente em toda festa?",
+     "c": "Ache hoje uma coisinha que “fa brodo”: um passinho rumo a uma meta sua."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Food idioms in Portuguese",
+     "g": "Learn three Portuguese food idioms and how people use them.",
+     "p": [
+      "“Encher chouriços” (to fill sausages), heard in Portugal, means padding something with filler, like a long essay with little content.",
+      "“Pão pão, queijo queijo” (bread is bread, cheese is cheese) means saying things plainly, calling a spade a spade.",
+      "“É canja” (it's chicken soup) means it is very easy; in Brazil people also say “é moleza”."
+     ],
+     "q": "When do you prefer people to talk “pão pão, queijo queijo”, plain and direct?",
+     "c": "Write one sentence today “pão pão, queijo queijo”: say something clearly with no filler at all."
+    },
+    "de": {
+     "t": "Essens-Redewendungen auf Portugiesisch",
+     "g": "Drei portugiesische Essens-Redewendungen lernen und wie man sie benutzt.",
+     "p": [
+      "„Encher chouriços“ (Würste füllen), in Portugal üblich, heißt, etwas mit Füllstoff strecken, wie ein langer Text ohne Inhalt.",
+      "„Pão pão, queijo queijo“ (Brot ist Brot, Käse ist Käse) heißt, Klartext reden, das Kind beim Namen nennen.",
+      "„É canja“ (das ist Hühnersuppe) heißt, das ist kinderleicht; in Brasilien sagt man auch „é moleza“."
+     ],
+     "q": "Wann ist dir „pão pão, queijo queijo“ lieber, also klar und direkt?",
+     "c": "Schreib heute einen Satz „pão pão, queijo queijo“: sag etwas ganz klar, ohne jedes Füllwort."
+    },
+    "es": {
+     "t": "Expresiones de comida en portugués",
+     "g": "Aprender tres expresiones portuguesas de comida y cómo se usan.",
+     "p": [
+      "«Encher chouriços» (rellenar chorizos), típica de Portugal, es meter paja, como un texto largo con poco contenido.",
+      "«Pão pão, queijo queijo» (pan es pan, queso es queso) es hablar claro, como «al pan, pan y al vino, vino».",
+      "«É canja» (es caldo de gallina) significa que es facilísimo; en Brasil también dicen «é moleza»."
+     ],
+     "q": "¿Cuándo prefieres que te hablen «pão pão, queijo queijo», claro y directo?",
+     "c": "Escribe hoy una frase «pão pão, queijo queijo»: di algo con claridad y sin nada de paja."
+    },
+    "fr": {
+     "t": "Expressions culinaires en portugais",
+     "g": "Apprendre trois expressions culinaires portugaises et comment on les utilise.",
+     "p": [
+      "« Encher chouriços » (remplir des saucisses), courant au Portugal, veut dire faire du remplissage, comme un long texte creux.",
+      "« Pão pão, queijo queijo » (pain c'est pain, fromage c'est fromage) veut dire parler franchement, appeler un chat un chat.",
+      "« É canja » (c'est du bouillon de poule) veut dire c'est très facile ; au Brésil on dit aussi « é moleza »."
+     ],
+     "q": "Quand préfères-tu qu'on te parle « pão pão, queijo queijo », clair et direct ?",
+     "c": "Écris aujourd'hui une phrase « pão pão, queijo queijo » : dis quelque chose clairement, sans remplissage."
+    },
+    "it": {
+     "t": "Modi di dire sul cibo in portoghese",
+     "g": "Imparare tre modi di dire portoghesi sul cibo e come si usano.",
+     "p": [
+      "«Encher chouriços» (riempire salsicce), tipico del Portogallo, vuol dire allungare il brodo con riempitivi.",
+      "«Pão pão, queijo queijo» (pane è pane, formaggio è formaggio) vuol dire parlare chiaro, come il nostro «pane al pane, vino al vino».",
+      "«É canja» (è brodo di pollo) vuol dire che è facilissimo; in Brasile si dice anche «é moleza»."
+     ],
+     "q": "Quando preferisci che ti parlino «pão pão, queijo queijo», chiaro e diretto?",
+     "c": "Oggi scrivi una frase «pão pão, queijo queijo»: di' qualcosa con chiarezza, senza riempitivi."
+    },
+    "pt": {
+     "t": "Expressões de comida em português",
+     "g": "Rever três expressões portuguesas de comida e como as usamos.",
+     "p": [
+      "«Encher chouriços» é meter palha, encher um texto ou uma conversa com coisas sem importância.",
+      "«Pão pão, queijo queijo» é falar sem rodeios, dizer as coisas como elas são.",
+      "«É canja» quer dizer que é facílimo; no Brasil diz-se mais «é moleza»."
+     ],
+     "q": "Quando preferes que te falem pão pão, queijo queijo, sem rodeios?",
+     "c": "Escreve hoje uma frase pão pão, queijo queijo: diz algo com clareza, sem encher chouriços."
+    },
+    "pt_BR": {
+     "t": "Expressões de comida em português",
+     "g": "Conhecer três expressões portuguesas de comida e como são usadas.",
+     "p": [
+      "“Encher chouriços” (encher linguiças), comum em Portugal, é como o nosso “encher linguiça”: enrolar com coisas sem importância.",
+      "“Pão pão, queijo queijo” é falar sem rodeios, dizer as coisas como elas são.",
+      "“É canja” quer dizer que é facílimo; aqui a gente diz mais “é moleza”."
+     ],
+     "q": "Quando você prefere que falem com você “pão pão, queijo queijo”, sem rodeios?",
+     "c": "Escreva hoje uma frase “pão pão, queijo queijo”: diga algo com clareza, sem encher linguiça."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Food idioms in German",
+     "g": "Learn two famous German sausage idioms and how to use them.",
+     "p": [
+      "“Das ist mir Wurst” (that's sausage to me) means I don't mind either way; it is relaxed, not rude.",
+      "“Alles hat ein Ende, nur die Wurst hat zwei” means everything has an end, only the sausage has two; a playful line when something finishes.",
+      "Sausage idioms are everywhere in German; “es geht um die Wurst” means now it really counts, the decisive moment."
+     ],
+     "q": "What is something you honestly do not mind about, that is “Wurst” to you?",
+     "c": "Next time someone asks if you prefer this or that, answer “Das ist mir Wurst!” if you truly don't mind."
+    },
+    "de": {
+     "t": "Essens-Redewendungen auf Deutsch",
+     "g": "Zwei berühmte deutsche Wurst-Redewendungen genauer anschauen.",
+     "p": [
+      "„Das ist mir Wurst“ heißt, es ist mir egal; das klingt locker, nicht unhöflich.",
+      "„Alles hat ein Ende, nur die Wurst hat zwei“ ist ein verschmitzter Spruch, wenn etwas vorbei ist, auch als Lied bekannt.",
+      "Wurst steckt in vielen Wendungen; „es geht um die Wurst“ heißt, jetzt kommt es wirklich drauf an."
+     ],
+     "q": "Was ist dir ehrlich gesagt völlig Wurst?",
+     "c": "Wenn dich das nächste Mal jemand fragt, ob dies oder das, antworte „Das ist mir Wurst!“, falls es stimmt."
+    },
+    "es": {
+     "t": "Expresiones de comida en alemán",
+     "g": "Aprender dos famosas expresiones alemanas con salchicha y cómo usarlas.",
+     "p": [
+      "«Das ist mir Wurst» (eso me es salchicha) significa me da igual; suena relajado, no grosero.",
+      "«Alles hat ein Ende, nur die Wurst hat zwei» es todo tiene un final, solo la salchicha tiene dos; una frase pícara cuando algo termina.",
+      "La salchicha está en muchas expresiones; «es geht um die Wurst» es ahora sí que importa, el momento decisivo."
+     ],
+     "q": "¿Qué cosa te da sinceramente igual, que es «Wurst» para ti?",
+     "c": "La próxima vez que te pregunten si prefieres esto o aquello, responde «Das ist mir Wurst!» si de verdad te da igual."
+    },
+    "fr": {
+     "t": "Expressions culinaires en allemand",
+     "g": "Apprendre deux célèbres expressions allemandes avec la saucisse.",
+     "p": [
+      "« Das ist mir Wurst » (c'est saucisse pour moi) veut dire ça m'est égal ; c'est détendu, pas impoli.",
+      "« Alles hat ein Ende, nur die Wurst hat zwei » = tout a une fin, seule la saucisse en a deux ; pour rire quand quelque chose finit.",
+      "La saucisse est partout ; « es geht um die Wurst » veut dire c'est le moment décisif, ça compte vraiment."
+     ],
+     "q": "Qu'est-ce qui t'est franchement égal, qui est « Wurst » pour toi ?",
+     "c": "La prochaine fois qu'on te demande de choisir, réponds « Das ist mir Wurst ! » si ça t'est vraiment égal."
+    },
+    "it": {
+     "t": "Modi di dire sul cibo in tedesco",
+     "g": "Imparare due famosi modi di dire tedeschi con la salsiccia e come usarli.",
+     "p": [
+      "«Das ist mir Wurst» (per me è salsiccia) vuol dire per me è uguale; suona rilassato, non scortese.",
+      "«Alles hat ein Ende, nur die Wurst hat zwei» = tutto ha una fine, solo la salsiccia ne ha due; frase scherzosa quando qualcosa finisce.",
+      "La salsiccia è ovunque; «es geht um die Wurst» vuol dire ora conta davvero, è il momento decisivo."
+     ],
+     "q": "Che cosa ti è davvero indifferente, che per te è «Wurst»?",
+     "c": "La prossima volta che ti chiedono di scegliere, rispondi «Das ist mir Wurst!» se ti va bene tutto."
+    },
+    "pt": {
+     "t": "Expressões de comida em alemão",
+     "g": "Aprender duas famosas expressões alemãs com salsicha e como as usar.",
+     "p": [
+      "«Das ist mir Wurst» (isso para mim é salsicha) quer dizer tanto me faz; soa descontraído, não malcriado.",
+      "«Alles hat ein Ende, nur die Wurst hat zwei» é tudo tem um fim, só a salsicha tem dois; uma frase marota quando algo acaba.",
+      "A salsicha está em muitas expressões; «es geht um die Wurst» é agora é que conta, o momento decisivo."
+     ],
+     "q": "O que é que te é mesmo indiferente, que é «Wurst» para ti?",
+     "c": "Da próxima vez que te pedirem para escolher, responde «Das ist mir Wurst!» se te for mesmo igual."
+    },
+    "pt_BR": {
+     "t": "Expressões de comida em alemão",
+     "g": "Aprender duas famosas expressões alemãs com salsicha e como usar.",
+     "p": [
+      "“Das ist mir Wurst” (isso para mim é salsicha) quer dizer tanto faz; soa descontraído, não grosseiro.",
+      "“Alles hat ein Ende, nur die Wurst hat zwei” é tudo tem um fim, só a salsicha tem dois; uma frase brincalhona quando algo acaba.",
+      "A salsicha aparece em muitas expressões; “es geht um die Wurst” é agora é que vale, a hora decisiva."
+     ],
+     "q": "O que é que para você tanto faz de verdade, que é “Wurst”?",
+     "c": "Da próxima vez que pedirem para você escolher, responda “Das ist mir Wurst!” se tanto faz mesmo."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Animal idioms in English",
+     "g": "Learn three popular English animal idioms with clear examples.",
+     "p": [
+      "“Let the cat out of the bag” means to reveal a secret by accident: “Oops, I let the cat out of the bag about the party.”",
+      "“The elephant in the room” is an obvious issue everyone notices but nobody mentions.",
+      "“Busy as a bee” means very busy and active, usually in a positive, hard-working way."
+     ],
+     "q": "When were you last “busy as a bee”, and what were you doing?",
+     "c": "Use “busy as a bee” or “let the cat out of the bag” in a real sentence about your day."
+    },
+    "de": {
+     "t": "Tier-Redewendungen auf Englisch",
+     "g": "Drei beliebte englische Tier-Redewendungen mit klaren Beispielen lernen.",
+     "p": [
+      "„Let the cat out of the bag“ (die Katze aus dem Sack lassen) heißt, ein Geheimnis versehentlich verraten, genau wie bei uns.",
+      "„The elephant in the room“ ist ein offensichtliches Problem, das alle sehen, aber keiner anspricht.",
+      "„Busy as a bee“ heißt fleißig wie eine Biene, sehr beschäftigt und positiv aktiv."
+     ],
+     "q": "Wann warst du zuletzt „busy as a bee“, und was hast du gemacht?",
+     "c": "Benutze „busy as a bee“ oder „let the cat out of the bag“ in einem echten Satz über deinen Tag."
+    },
+    "es": {
+     "t": "Expresiones de animales en inglés",
+     "g": "Aprender tres expresiones inglesas de animales con ejemplos claros.",
+     "p": [
+      "«Let the cat out of the bag» (sacar al gato de la bolsa) es revelar un secreto sin querer, como «irse de la lengua».",
+      "«The elephant in the room» (el elefante en la habitación) es un problema evidente que todos ven y nadie menciona.",
+      "«Busy as a bee» (ocupado como una abeja) es estar muy ocupado y activo, en sentido positivo."
+     ],
+     "q": "¿Cuándo estuviste por última vez «busy as a bee», y haciendo qué?",
+     "c": "Usa «busy as a bee» o «let the cat out of the bag» en una frase real sobre tu día."
+    },
+    "fr": {
+     "t": "Expressions animales en anglais",
+     "g": "Apprendre trois expressions animales anglaises populaires avec des exemples clairs.",
+     "p": [
+      "« Let the cat out of the bag » (laisser le chat sortir du sac) veut dire révéler un secret par accident, vendre la mèche.",
+      "« The elephant in the room » (l'éléphant dans la pièce) est un sujet évident que tout le monde voit mais que personne n'aborde.",
+      "« Busy as a bee » (occupé comme une abeille) veut dire très occupé et actif, comme une fourmi travailleuse."
+     ],
+     "q": "Quand as-tu été « busy as a bee » pour la dernière fois, et à faire quoi ?",
+     "c": "Utilise « busy as a bee » ou « let the cat out of the bag » dans une vraie phrase sur ta journée."
+    },
+    "it": {
+     "t": "Modi di dire sugli animali in inglese",
+     "g": "Imparare tre famosi modi di dire inglesi sugli animali con esempi chiari.",
+     "p": [
+      "«Let the cat out of the bag» (far uscire il gatto dal sacco) vuol dire svelare un segreto per sbaglio, vuotare il sacco.",
+      "«The elephant in the room» (l'elefante nella stanza) è un problema evidente che tutti vedono ma nessuno nomina.",
+      "«Busy as a bee» (indaffarato come un'ape) vuol dire molto impegnato e attivo, in senso positivo."
+     ],
+     "q": "Quando sei stato «busy as a bee» l'ultima volta, e cosa facevi?",
+     "c": "Usa «busy as a bee» o «let the cat out of the bag» in una frase vera sulla tua giornata."
+    },
+    "pt": {
+     "t": "Expressões de animais em inglês",
+     "g": "Aprender três expressões inglesas de animais populares com exemplos claros.",
+     "p": [
+      "«Let the cat out of the bag» (deixar o gato sair do saco) é revelar um segredo sem querer, dar com a língua nos dentes.",
+      "«The elephant in the room» (o elefante na sala) é um problema óbvio que todos veem mas ninguém refere.",
+      "«Busy as a bee» (ocupado como uma abelha) é estar muito ocupado e ativo, num sentido positivo."
+     ],
+     "q": "Quando estiveste «busy as a bee» pela última vez, e a fazer o quê?",
+     "c": "Usa «busy as a bee» ou «let the cat out of the bag» numa frase verdadeira sobre o teu dia."
+    },
+    "pt_BR": {
+     "t": "Expressões de animais em inglês",
+     "g": "Aprender três expressões inglesas de animais populares com exemplos claros.",
+     "p": [
+      "“Let the cat out of the bag” (deixar o gato sair do saco) é contar um segredo sem querer, dar com a língua nos dentes.",
+      "“The elephant in the room” (o elefante na sala) é um problema óbvio que todo mundo vê mas ninguém comenta.",
+      "“Busy as a bee” (ocupado como uma abelha) é estar muito ocupado e ativo, num sentido positivo."
+     ],
+     "q": "Quando foi a última vez que você esteve “busy as a bee”, e fazendo o quê?",
+     "c": "Use “busy as a bee” ou “let the cat out of the bag” numa frase verdadeira sobre o seu dia."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Animal idioms abroad",
+     "g": "Discover animal idioms in French, Spanish and Italian.",
+     "p": [
+      "French “avoir un chat dans la gorge” (to have a cat in the throat) is the English “have a frog in your throat”: a hoarse voice.",
+      "Spanish “como pez en el agua” (like a fish in water) means feeling totally comfortable somewhere.",
+      "Italian “in bocca al lupo” (into the wolf's mouth) means good luck; the traditional reply is “crepi!” or “crepi il lupo!”."
+     ],
+     "q": "Where do you feel “como pez en el agua”, completely at ease?",
+     "c": "Wish someone luck today with “in bocca al lupo!” and teach them the reply “crepi!”."
+    },
+    "de": {
+     "t": "Tier-Redewendungen anderswo",
+     "g": "Tier-Redewendungen auf Französisch, Spanisch und Italienisch entdecken.",
+     "p": [
+      "Französisch „avoir un chat dans la gorge“ (eine Katze im Hals haben) ist unser „einen Frosch im Hals haben“.",
+      "Spanisch „como pez en el agua“ heißt, sich wohlfühlen wie ein Fisch im Wasser.",
+      "Italienisch „in bocca al lupo“ (ins Maul des Wolfes) heißt viel Glück; die übliche Antwort ist „crepi!“ oder „crepi il lupo!“."
+     ],
+     "q": "Wo fühlst du dich „como pez en el agua“, ganz in deinem Element?",
+     "c": "Wünsch heute jemandem Glück mit „in bocca al lupo!“ und bring ihm die Antwort „crepi!“ bei."
+    },
+    "es": {
+     "t": "Expresiones de animales en otros idiomas",
+     "g": "Descubrir expresiones de animales en francés, español e italiano.",
+     "p": [
+      "En francés «avoir un chat dans la gorge» (tener un gato en la garganta) es tener la voz tomada, carraspera.",
+      "En español «como pez en el agua» es sentirse totalmente cómodo en un sitio.",
+      "En italiano «in bocca al lupo» (en la boca del lobo) es buena suerte; se responde «crepi!» o «crepi il lupo!»."
+     ],
+     "q": "¿Dónde te sientes como pez en el agua?",
+     "c": "Desea suerte hoy a alguien con «in bocca al lupo!» y enséñale a responder «crepi!»."
+    },
+    "fr": {
+     "t": "Expressions animales ailleurs",
+     "g": "Découvrir des expressions animales en français, espagnol et italien.",
+     "p": [
+      "« Avoir un chat dans la gorge » veut dire avoir la voix enrouée ; les anglophones, eux, ont une grenouille : « a frog in your throat ».",
+      "L'espagnol « como pez en el agua » veut dire être comme un poisson dans l'eau, totalement à l'aise.",
+      "L'italien « in bocca al lupo » (dans la gueule du loup) veut dire bonne chance ; on répond « crepi ! » ou « crepi il lupo ! »."
+     ],
+     "q": "Où te sens-tu comme un poisson dans l'eau ?",
+     "c": "Souhaite bonne chance à quelqu'un aujourd'hui avec « in bocca al lupo ! » et apprends-lui à répondre « crepi ! »."
+    },
+    "it": {
+     "t": "Modi di dire sugli animali all'estero",
+     "g": "Scoprire modi di dire sugli animali in francese, spagnolo e italiano.",
+     "p": [
+      "Il francese «avoir un chat dans la gorge» (avere un gatto in gola) vuol dire avere la voce rauca, la raucedine.",
+      "Lo spagnolo «como pez en el agua» vuol dire sentirsi come un pesce nell'acqua, perfettamente a proprio agio.",
+      "«In bocca al lupo» è il nostro augurio di buona fortuna; si risponde «crepi!» o «crepi il lupo!»."
+     ],
+     "q": "Dove ti senti come un pesce nell'acqua?",
+     "c": "Oggi fai a qualcuno un «in bocca al lupo!» e, se non è italiano, insegnagli la risposta «crepi!»."
+    },
+    "pt": {
+     "t": "Expressões de animais lá fora",
+     "g": "Descobrir expressões de animais em francês, espanhol e italiano.",
+     "p": [
+      "O francês «avoir un chat dans la gorge» (ter um gato na garganta) é estar com a voz rouca, com pigarro.",
+      "O espanhol «como pez en el agua» é sentir-se como peixe na água, completamente à vontade.",
+      "O italiano «in bocca al lupo» (na boca do lobo) é boa sorte; responde-se «crepi!» ou «crepi il lupo!»."
+     ],
+     "q": "Onde te sentes como peixe na água?",
+     "c": "Deseja hoje boa sorte a alguém com «in bocca al lupo!» e ensina-lhe a resposta «crepi!»."
+    },
+    "pt_BR": {
+     "t": "Expressões de animais lá fora",
+     "g": "Descobrir expressões de animais em francês, espanhol e italiano.",
+     "p": [
+      "O francês “avoir un chat dans la gorge” (ter um gato na garganta) é estar com a voz rouca, com pigarro.",
+      "O espanhol “como pez en el agua” é se sentir como peixe na água, totalmente à vontade.",
+      "O italiano “in bocca al lupo” (na boca do lobo) é boa sorte; a resposta é “crepi!” ou “crepi il lupo!”."
+     ],
+     "q": "Onde você se sente como peixe na água?",
+     "c": "Deseje boa sorte a alguém hoje com “in bocca al lupo!” e ensine a resposta “crepi!”."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Cats in idioms",
+     "g": "Learn cat idioms in English and French and when to use them.",
+     "p": [
+      "“Cat got your tongue?” is a playful question to someone who is unusually quiet or has no answer.",
+      "“Like herding cats” describes trying to organise people who all go their own way, like planning a group trip.",
+      "French “avoir d'autres chats à fouetter” (to have other cats to whip) means to have more important things to do, like “other fish to fry”."
+     ],
+     "q": "When did organising something feel “like herding cats” for you?",
+     "c": "Next time you plan something with friends, notice if it feels like herding cats and say it with a smile."
+    },
+    "de": {
+     "t": "Katzen in Redewendungen",
+     "g": "Katzen-Redewendungen auf Englisch und Französisch lernen und richtig einsetzen.",
+     "p": [
+      "„Cat got your tongue?“ (hat die Katze deine Zunge?) fragt man scherzhaft, wenn jemand still ist, wie „hat es dir die Sprache verschlagen?“.",
+      "„Like herding cats“ (wie Katzen hüten) beschreibt, Leute zu organisieren, die alle ihr eigenes Ding machen, etwa bei einer Gruppenreise.",
+      "Französisch „avoir d'autres chats à fouetter“ (andere Katzen zu peitschen haben) heißt, Wichtigeres zu tun haben."
+     ],
+     "q": "Wann hat sich das Organisieren für dich wie „herding cats“ angefühlt?",
+     "c": "Wenn du das nächste Mal etwas mit Freunden planst, achte darauf, ob es wie Katzenhüten ist, und sag es mit einem Lächeln."
+    },
+    "es": {
+     "t": "Gatos en las expresiones",
+     "g": "Aprender expresiones con gatos en inglés y francés y cuándo usarlas.",
+     "p": [
+      "«Cat got your tongue?» (¿te ha comido la lengua el gato?) se dice en broma a quien está muy callado, igual que en español.",
+      "«Like herding cats» (como pastorear gatos) es intentar organizar a gente que va cada uno a su aire, como un viaje en grupo.",
+      "En francés «avoir d'autres chats à fouetter» (tener otros gatos que azotar) es tener cosas más importantes que hacer."
+     ],
+     "q": "¿Cuándo sentiste que organizar algo era «like herding cats»?",
+     "c": "La próxima vez que organices algo con amigos, fíjate si es como pastorear gatos y dilo con una sonrisa."
+    },
+    "fr": {
+     "t": "Les chats dans les expressions",
+     "g": "Apprendre des expressions avec des chats en anglais et en français.",
+     "p": [
+      "« Cat got your tongue? » (le chat t'a pris la langue ?) est une question taquine, comme « tu donnes ta langue au chat ? ».",
+      "« Like herding cats » (comme garder des chats) décrit le fait d'organiser des gens qui n'en font qu'à leur tête, comme un voyage de groupe.",
+      "« Avoir d'autres chats à fouetter » veut dire avoir des choses plus importantes à faire."
+     ],
+     "q": "Quand l'organisation d'un projet t'a-t-elle semblé « like herding cats » ?",
+     "c": "La prochaine fois que tu organises quelque chose entre amis, vois si c'est comme garder des chats et dis-le en souriant."
+    },
+    "it": {
+     "t": "I gatti nei modi di dire",
+     "g": "Imparare modi di dire con i gatti in inglese e francese e quando usarli.",
+     "p": [
+      "«Cat got your tongue?» (il gatto ti ha mangiato la lingua?) si chiede per scherzo a chi è stranamente zitto, come da noi.",
+      "«Like herding cats» (come radunare gatti) è organizzare persone che vanno ognuna per conto suo, come in una gita di gruppo.",
+      "Il francese «avoir d'autres chats à fouetter» (avere altri gatti da frustare) vuol dire avere cose più importanti da fare."
+     ],
+     "q": "Quando organizzare qualcosa ti è sembrato «like herding cats»?",
+     "c": "La prossima volta che organizzi qualcosa con gli amici, nota se è come radunare gatti e dillo con un sorriso."
+    },
+    "pt": {
+     "t": "Gatos nas expressões",
+     "g": "Aprender expressões com gatos em inglês e francês e quando as usar.",
+     "p": [
+      "«Cat got your tongue?» (o gato comeu-te a língua?) pergunta-se a brincar a quem está invulgarmente calado, tal como em português.",
+      "«Like herding cats» (como pastorear gatos) é tentar organizar pessoas que vão cada uma para seu lado, como numa viagem de grupo.",
+      "O francês «avoir d'autres chats à fouetter» (ter outros gatos para chicotear) é ter coisas mais importantes para fazer."
+     ],
+     "q": "Quando é que organizar algo te pareceu «like herding cats»?",
+     "c": "Da próxima vez que organizares algo com amigos, repara se parece pastorear gatos e di-lo com um sorriso."
+    },
+    "pt_BR": {
+     "t": "Gatos nas expressões",
+     "g": "Aprender expressões com gatos em inglês e francês e quando usar.",
+     "p": [
+      "“Cat got your tongue?” (o gato comeu sua língua?) se pergunta brincando a quem está calado demais, igualzinho ao português.",
+      "“Like herding cats” (como pastorear gatos) é tentar organizar gente que vai cada um para um lado, como numa viagem em grupo.",
+      "O francês “avoir d'autres chats à fouetter” (ter outros gatos para chicotear) é ter coisas mais importantes para fazer."
+     ],
+     "q": "Quando organizar algo pareceu “like herding cats” para você?",
+     "c": "Da próxima vez que organizar algo com amigos, repare se parece pastorear gatos e diga isso com um sorriso."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Dogs in idioms",
+     "g": "Learn dog idioms in English and German with clear meanings.",
+     "p": [
+      "“Dog-tired” means extremely tired; German has the same picture: „hundemüde“.",
+      "“Every dog has its day” means everyone gets a moment of success or luck sooner or later.",
+      "“A dog's breakfast” (British) means a complete mess: “He made a dog's breakfast of the report.”"
+     ],
+     "q": "Tell me about a day when you felt dog-tired but happy.",
+     "c": "Tonight, describe how tired you are using “dog-tired” or „hundemüde“."
+    },
+    "de": {
+     "t": "Hunde in Redewendungen",
+     "g": "Hunde-Redewendungen auf Englisch und Deutsch mit klaren Bedeutungen lernen.",
+     "p": [
+      "„Dog-tired“ heißt todmüde, genau wie unser „hundemüde“.",
+      "„Every dog has its day“ (jeder Hund hat seinen Tag) heißt, jeder hat irgendwann seinen Moment des Erfolgs.",
+      "„A dog's breakfast“ (britisch, ein Hundefrühstück) ist ein völliges Durcheinander: „He made a dog's breakfast of the report.“"
+     ],
+     "q": "Erzähl mir von einem Tag, an dem du hundemüde, aber glücklich warst.",
+     "c": "Beschreib heute Abend, wie müde du bist, mit „dog-tired“ oder „hundemüde“."
+    },
+    "es": {
+     "t": "Perros en las expresiones",
+     "g": "Aprender expresiones con perros en inglés y alemán con significados claros.",
+     "p": [
+      "«Dog-tired» (cansado como un perro) es estar agotado; el alemán usa la misma imagen: «hundemüde».",
+      "«Every dog has its day» (cada perro tiene su día) significa que a todos les llega su momento de éxito.",
+      "«A dog's breakfast» (británico, desayuno de perro) es un desastre total: «He made a dog's breakfast of the report»."
+     ],
+     "q": "Cuéntame un día en que acabaste cansadísimo pero feliz.",
+     "c": "Esta noche, describe lo cansado que estás con «dog-tired» o «hundemüde»."
+    },
+    "fr": {
+     "t": "Les chiens dans les expressions",
+     "g": "Apprendre des expressions avec des chiens en anglais et en allemand.",
+     "p": [
+      "« Dog-tired » (fatigué comme un chien) veut dire épuisé ; l'allemand a la même image : « hundemüde ».",
+      "« Every dog has its day » (chaque chien a son jour) veut dire que chacun a son heure de gloire.",
+      "« A dog's breakfast » (britannique, petit-déjeuner de chien) veut dire un vrai fouillis : « He made a dog's breakfast of the report. »"
+     ],
+     "q": "Raconte-moi une journée où tu étais crevé mais heureux.",
+     "c": "Ce soir, décris ta fatigue avec « dog-tired » ou « hundemüde »."
+    },
+    "it": {
+     "t": "I cani nei modi di dire",
+     "g": "Imparare modi di dire con i cani in inglese e tedesco con significati chiari.",
+     "p": [
+      "«Dog-tired» (stanco come un cane) vuol dire stanchissimo; il tedesco usa la stessa immagine: «hundemüde».",
+      "«Every dog has its day» (ogni cane ha il suo giorno) vuol dire che per tutti arriva il momento di gloria.",
+      "«A dog's breakfast» (britannico, colazione da cane) è un pasticcio totale: «He made a dog's breakfast of the report»."
+     ],
+     "q": "Raccontami di un giorno in cui eri stanco morto ma felice.",
+     "c": "Stasera descrivi quanto sei stanco con «dog-tired» o «hundemüde»."
+    },
+    "pt": {
+     "t": "Cães nas expressões",
+     "g": "Aprender expressões com cães em inglês e alemão com significados claros.",
+     "p": [
+      "«Dog-tired» (cansado como um cão) é estar estafado; o alemão usa a mesma imagem: «hundemüde».",
+      "«Every dog has its day» (cada cão tem o seu dia) quer dizer que a todos chega o seu momento de sucesso.",
+      "«A dog's breakfast» (britânico, pequeno-almoço de cão) é uma grande trapalhada: «He made a dog's breakfast of the report»."
+     ],
+     "q": "Conta-me um dia em que acabaste estafado mas feliz.",
+     "c": "Hoje à noite, descreve o teu cansaço com «dog-tired» ou «hundemüde»."
+    },
+    "pt_BR": {
+     "t": "Cachorros nas expressões",
+     "g": "Aprender expressões com cachorros em inglês e alemão com significados claros.",
+     "p": [
+      "“Dog-tired” (cansado como um cachorro) é estar morto de cansaço; o alemão usa a mesma imagem: “hundemüde”.",
+      "“Every dog has its day” (todo cachorro tem seu dia) quer dizer que todo mundo tem sua vez de brilhar.",
+      "“A dog's breakfast” (britânico, café da manhã de cachorro) é uma bagunça total: “He made a dog's breakfast of the report”."
+     ],
+     "q": "Me conte de um dia em que você terminou exausto, mas feliz.",
+     "c": "Hoje à noite, descreva seu cansaço com “dog-tired” ou “hundemüde”."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Birds in idioms",
+     "g": "Learn three classic English bird idioms and their meanings.",
+     "p": [
+      "“The early bird catches the worm” means people who start early get the best chances; an “early bird” is a morning person.",
+      "“Birds of a feather flock together” means people with similar tastes tend to spend time together.",
+      "“A little bird told me” is a playful way to say you heard something but won't say from whom."
+     ],
+     "q": "Are you an early bird or a night owl?",
+     "c": "Use “a little bird told me” today when you share a piece of (nice!) news."
+    },
+    "de": {
+     "t": "Vögel in Redewendungen",
+     "g": "Drei klassische englische Vogel-Redewendungen und ihre Bedeutung lernen.",
+     "p": [
+      "„The early bird catches the worm“ heißt „Der frühe Vogel fängt den Wurm“; ein „early bird“ ist ein Frühaufsteher.",
+      "„Birds of a feather flock together“ heißt „Gleich und Gleich gesellt sich gern“.",
+      "„A little bird told me“ heißt „Das hat mir ein Vögelchen gezwitschert“: Man verrät die Quelle nicht."
+     ],
+     "q": "Bist du eher Frühaufsteher oder Nachteule?",
+     "c": "Benutze heute „a little bird told me“, wenn du eine (schöne!) Neuigkeit erzählst."
+    },
+    "es": {
+     "t": "Pájaros en las expresiones",
+     "g": "Aprender tres expresiones inglesas clásicas con pájaros y su significado.",
+     "p": [
+      "«The early bird catches the worm» (el pájaro madrugador atrapa el gusano) es como «a quien madruga, Dios le ayuda».",
+      "«Birds of a feather flock together» (los pájaros de igual pluma vuelan juntos) es «Dios los cría y ellos se juntan».",
+      "«A little bird told me» (me lo dijo un pajarito) es decir que te has enterado de algo sin revelar quién te lo contó."
+     ],
+     "q": "¿Eres más madrugador o más ave nocturna?",
+     "c": "Usa hoy «a little bird told me» cuando cuentes una noticia (¡buena!)."
+    },
+    "fr": {
+     "t": "Les oiseaux dans les expressions",
+     "g": "Apprendre trois expressions anglaises classiques avec des oiseaux.",
+     "p": [
+      "« The early bird catches the worm » (l'oiseau matinal attrape le ver) correspond à « le monde appartient à ceux qui se lèvent tôt ».",
+      "« Birds of a feather flock together » (les oiseaux de même plumage volent ensemble) correspond à « qui se ressemble s'assemble ».",
+      "« A little bird told me » correspond à « mon petit doigt m'a dit » : on ne révèle pas sa source."
+     ],
+     "q": "Es-tu plutôt lève-tôt ou couche-tard ?",
+     "c": "Utilise aujourd'hui « a little bird told me » en annonçant une (bonne !) nouvelle."
+    },
+    "it": {
+     "t": "Gli uccelli nei modi di dire",
+     "g": "Imparare tre modi di dire inglesi classici con gli uccelli.",
+     "p": [
+      "«The early bird catches the worm» (l'uccello mattiniero prende il verme) è come «il mattino ha l'oro in bocca».",
+      "«Birds of a feather flock together» (uccelli dalle stesse piume volano insieme) è come «chi si somiglia si piglia».",
+      "«A little bird told me» è come «me l'ha detto un uccellino»: non si rivela la fonte."
+     ],
+     "q": "Sei più un tipo mattiniero o un nottambulo?",
+     "c": "Usa oggi «a little bird told me» quando racconti una notizia (bella!)."
+    },
+    "pt": {
+     "t": "Pássaros nas expressões",
+     "g": "Aprender três expressões inglesas clássicas com pássaros e o seu sentido.",
+     "p": [
+      "«The early bird catches the worm» (o pássaro madrugador apanha a minhoca) é como «Deus ajuda quem cedo madruga».",
+      "«Birds of a feather flock together» (aves da mesma pena voam juntas) é como «diz-me com quem andas, dir-te-ei quem és».",
+      "«A little bird told me» é como «um passarinho contou-me»: não se revela a fonte."
+     ],
+     "q": "És mais madrugador ou mais noctívago?",
+     "c": "Usa hoje «a little bird told me» quando contares uma notícia (boa!)."
+    },
+    "pt_BR": {
+     "t": "Pássaros nas expressões",
+     "g": "Aprender três expressões inglesas clássicas com pássaros e o sentido delas.",
+     "p": [
+      "“The early bird catches the worm” (o pássaro madrugador pega a minhoca) é como “Deus ajuda quem cedo madruga”.",
+      "“Birds of a feather flock together” (aves da mesma pena voam juntas) é como “diga-me com quem andas e te direi quem és”.",
+      "“A little bird told me” é como “um passarinho me contou”: a fonte fica em segredo."
+     ],
+     "q": "Você é mais madrugador ou mais coruja?",
+     "c": "Use hoje “a little bird told me” quando contar uma notícia (boa!)."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Head and face idioms",
+     "g": "Learn three English idioms about the head and face.",
+     "p": [
+      "“Keep your head” means to stay calm in a difficult moment; the opposite is “lose your head”.",
+      "“Lose face” means to lose respect or look foolish in front of others; “save face” means avoiding that.",
+      "“Give someone a heads-up” means to warn them in advance: “Thanks for the heads-up about the traffic!”"
+     ],
+     "q": "Who in your life always keeps their head when things get stressful?",
+     "c": "Give someone a friendly heads-up today about something useful, like a plan or a change."
+    },
+    "de": {
+     "t": "Redewendungen rund um Kopf und Gesicht",
+     "g": "Drei englische Redewendungen über Kopf und Gesicht lernen.",
+     "p": [
+      "„Keep your head“ heißt, einen kühlen Kopf bewahren; das Gegenteil ist „lose your head“, den Kopf verlieren.",
+      "„Lose face“ heißt, das Gesicht verlieren, also Ansehen einbüßen; „save face“ heißt, das Gesicht wahren.",
+      "„Give someone a heads-up“ heißt, jemanden vorwarnen: „Thanks for the heads-up about the traffic!“"
+     ],
+     "q": "Wer in deinem Leben bewahrt in stressigen Momenten immer einen kühlen Kopf?",
+     "c": "Gib heute jemandem einen freundlichen „heads-up“, einen Hinweis auf einen Plan oder eine Änderung."
+    },
+    "es": {
+     "t": "Expresiones de cabeza y cara",
+     "g": "Aprender tres expresiones inglesas sobre la cabeza y la cara.",
+     "p": [
+      "«Keep your head» es mantener la cabeza fría en un momento difícil; lo contrario es «lose your head», perder la cabeza.",
+      "«Lose face» es quedar mal o perder el respeto de los demás; «save face» es salvar las apariencias.",
+      "«Give someone a heads-up» es avisar a alguien con antelación: «Thanks for the heads-up about the traffic!»."
+     ],
+     "q": "¿Quién en tu vida mantiene siempre la cabeza fría cuando hay estrés?",
+     "c": "Dale hoy a alguien un «heads-up» amable sobre algo útil, como un plan o un cambio."
+    },
+    "fr": {
+     "t": "Expressions de la tête et du visage",
+     "g": "Apprendre trois expressions anglaises sur la tête et le visage.",
+     "p": [
+      "« Keep your head » veut dire garder la tête froide ; le contraire est « lose your head », perdre la tête.",
+      "« Lose face » veut dire perdre la face, être ridiculisé ; « save face » veut dire sauver la face.",
+      "« Give someone a heads-up » veut dire prévenir quelqu'un à l'avance : « Thanks for the heads-up about the traffic! »"
+     ],
+     "q": "Qui, dans ton entourage, garde toujours la tête froide quand ça stresse ?",
+     "c": "Donne aujourd'hui un « heads-up » sympa à quelqu'un sur quelque chose d'utile, un plan ou un changement."
+    },
+    "it": {
+     "t": "Modi di dire su testa e faccia",
+     "g": "Imparare tre modi di dire inglesi sulla testa e sulla faccia.",
+     "p": [
+      "«Keep your head» vuol dire mantenere la calma, non perdere la testa; il contrario è «lose your head».",
+      "«Lose face» vuol dire perdere la faccia, fare brutta figura; «save face» vuol dire salvare la faccia.",
+      "«Give someone a heads-up» vuol dire avvisare qualcuno in anticipo: «Thanks for the heads-up about the traffic!»."
+     ],
+     "q": "Chi nella tua vita mantiene sempre la calma quando c'è stress?",
+     "c": "Oggi dai a qualcuno un «heads-up» gentile su qualcosa di utile, come un piano o un cambiamento."
+    },
+    "pt": {
+     "t": "Expressões da cabeça e da cara",
+     "g": "Aprender três expressões inglesas sobre a cabeça e a cara.",
+     "p": [
+      "«Keep your head» é manter a cabeça fria; o contrário é «lose your head», perder a cabeça.",
+      "«Lose face» é perder a face, ficar mal visto; «save face» é salvar a face.",
+      "«Give someone a heads-up» é avisar alguém com antecedência: «Thanks for the heads-up about the traffic!»."
+     ],
+     "q": "Quem na tua vida mantém sempre a cabeça fria quando há stress?",
+     "c": "Dá hoje a alguém um «heads-up» simpático sobre algo útil, como um plano ou uma mudança."
+    },
+    "pt_BR": {
+     "t": "Expressões de cabeça e rosto",
+     "g": "Aprender três expressões inglesas sobre a cabeça e o rosto.",
+     "p": [
+      "“Keep your head” é manter a cabeça fria; o contrário é “lose your head”, perder a cabeça.",
+      "“Lose face” é perder o prestígio, ficar mal na fita; “save face” é salvar as aparências.",
+      "“Give someone a heads-up” é dar um toque com antecedência: “Thanks for the heads-up about the traffic!”."
+     ],
+     "q": "Quem na sua vida sempre mantém a cabeça fria quando bate o estresse?",
+     "c": "Dê hoje um “heads-up” simpático para alguém sobre algo útil, como um plano ou uma mudança."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: first month",
+     "g": "Look back at your first month of greetings, food, weather and animal expressions.",
+     "p": [
+      "Greetings: “hey, what's up?”, “¿qué onda?”, “e aí?”; goodbyes: “catch you later”, “tschüss”, “a presto”.",
+      "Food and weather: “piece of cake”, “spill the beans”, “das ist mir Wurst”, “il pleut des cordes”.",
+      "Animals: “let the cat out of the bag”, “in bocca al lupo”, “the early bird catches the worm”, “dog-tired”."
+     ],
+     "q": "Which expression from this month have you actually used, and how did people react?",
+     "c": "Write a mini story of three sentences using at least three expressions from this month."
+    },
+    "de": {
+     "t": "Rückblick: der erste Monat",
+     "g": "Auf den ersten Monat zurückblicken: Grüße, Essen, Wetter und Tiere.",
+     "p": [
+      "Grüße: „hey, what's up?“, „¿qué onda?“, „e aí?“; Abschiede: „catch you later“, „tschüss“, „a presto“.",
+      "Essen und Wetter: „piece of cake“, „spill the beans“, „das ist mir Wurst“, „il pleut des cordes“.",
+      "Tiere: „let the cat out of the bag“, „in bocca al lupo“, „the early bird catches the worm“, „hundemüde“."
+     ],
+     "q": "Welchen Ausdruck aus diesem Monat hast du wirklich benutzt, und wie haben die Leute reagiert?",
+     "c": "Schreib eine Mini-Geschichte aus drei Sätzen mit mindestens drei Ausdrücken aus diesem Monat."
+    },
+    "es": {
+     "t": "Repaso: el primer mes",
+     "g": "Repasar el primer mes de saludos, comida, tiempo y animales.",
+     "p": [
+      "Saludos: «hey, what's up?», «¿qué onda?», «e aí?»; despedidas: «catch you later», «tschüss», «a presto».",
+      "Comida y tiempo: «piece of cake», «spill the beans», «das ist mir Wurst», «llueve a cántaros».",
+      "Animales: «let the cat out of the bag», «in bocca al lupo», «como pez en el agua», «dog-tired»."
+     ],
+     "q": "¿Qué expresión de este mes has usado de verdad, y cómo reaccionó la gente?",
+     "c": "Escribe una minihistoria de tres frases con al menos tres expresiones de este mes."
+    },
+    "fr": {
+     "t": "Révision : le premier mois",
+     "g": "Revoir le premier mois : salutations, nourriture, météo et animaux.",
+     "p": [
+      "Salutations : « hey, what's up? », « ¿qué onda? », « e aí? » ; au revoir : « catch you later », « tschüss », « a presto ».",
+      "Nourriture et météo : « piece of cake », « avoir la pêche », « das ist mir Wurst », « il pleut des cordes ».",
+      "Animaux : « let the cat out of the bag », « in bocca al lupo », « avoir un chat dans la gorge », « dog-tired »."
+     ],
+     "q": "Quelle expression de ce mois as-tu vraiment utilisée, et comment les gens ont-ils réagi ?",
+     "c": "Écris une mini-histoire de trois phrases avec au moins trois expressions de ce mois."
+    },
+    "it": {
+     "t": "Ripasso: il primo mese",
+     "g": "Ripassare il primo mese di saluti, cibo, tempo e animali.",
+     "p": [
+      "Saluti: «hey, what's up?», «¿qué onda?», «e aí?»; congedi: «catch you later», «tschüss», «a presto».",
+      "Cibo e tempo: «piece of cake», «tutto fa brodo», «das ist mir Wurst», «piove a catinelle».",
+      "Animali: «let the cat out of the bag», «in bocca al lupo», «come un pesce nell'acqua», «dog-tired»."
+     ],
+     "q": "Quale espressione di questo mese hai usato davvero, e come ha reagito la gente?",
+     "c": "Scrivi una mini storia di tre frasi con almeno tre espressioni di questo mese."
+    },
+    "pt": {
+     "t": "Revisão: o primeiro mês",
+     "g": "Rever o primeiro mês de cumprimentos, comida, tempo e animais.",
+     "p": [
+      "Cumprimentos: «hey, what's up?», «¿qué onda?», «e aí?»; despedidas: «catch you later», «tschüss», «a presto».",
+      "Comida e tempo: «piece of cake», «é canja», «das ist mir Wurst», «chove a potes».",
+      "Animais: «let the cat out of the bag», «in bocca al lupo», «como peixe na água», «dog-tired»."
+     ],
+     "q": "Que expressão deste mês já usaste mesmo, e como reagiram as pessoas?",
+     "c": "Escreve uma mini-história de três frases com pelo menos três expressões deste mês."
+    },
+    "pt_BR": {
+     "t": "Revisão: o primeiro mês",
+     "g": "Revisar o primeiro mês de cumprimentos, comida, tempo e animais.",
+     "p": [
+      "Cumprimentos: “hey, what's up?”, “¿qué onda?”, “e aí?”; despedidas: “catch you later”, “tschüss”, “a presto”.",
+      "Comida e tempo: “piece of cake”, “é moleza”, “das ist mir Wurst”, “chover canivete”.",
+      "Animais: “let the cat out of the bag”, “in bocca al lupo”, “como peixe na água”, “dog-tired”."
+     ],
+     "q": "Que expressão deste mês você já usou de verdade, e como as pessoas reagiram?",
+     "c": "Escreva uma mini-história de três frases com pelo menos três expressões deste mês."
+    }
+   }
+  }
+ ]
+}

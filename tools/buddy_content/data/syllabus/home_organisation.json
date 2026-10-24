@@ -1,0 +1,2195 @@
+{
+ "topic": "home_organisation",
+ "days": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "t": "Why an organised home feels good",
+   "f": "How order saves time, lowers daily stress and makes a home easier and more pleasant to live in"
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "t": "Organised is not the same as perfect",
+   "f": "A tidy home is one that works for you, not a magazine photo with nothing out of place"
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "t": "Your home organisation goals",
+   "f": "Picking two or three concrete wishes, like finding keys fast or having a clear table for dinner"
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "t": "Start small: one drawer",
+   "f": "Why a single drawer is the perfect first project and how to finish it in fifteen minutes"
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "t": "The four-box sort",
+   "f": "Sorting items into keep, donate, recycle and bin so every decision has a clear destination"
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "t": "A home for everything",
+   "f": "The golden rule: each item gets one fixed place, so tidying becomes putting things back"
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "t": "Store by how often you use it",
+   "f": "Daily items at arm's reach, weekly items nearby, rare items up high or further away"
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "t": "Declutter before you buy boxes",
+   "f": "Why buying containers first often hides clutter instead of solving it"
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "t": "The one-in, one-out habit",
+   "f": "A simple rule that keeps belongings stable: something new comes in, something old goes out"
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "t": "Clear one flat surface",
+   "f": "Tables and counters attract clutter; clearing one surface gives a quick and visible win"
+  },
+  {
+   "d": 11,
+   "lv": "beginner",
+   "t": "The five-minute reset",
+   "f": "A short daily tidy that stops small messes from growing into big weekend chores"
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "t": "Making the bed in two minutes",
+   "f": "How a made bed instantly makes a bedroom look calmer and starts the day with a small win"
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "t": "The dishes rule",
+   "f": "Washing or loading dishes right after meals so the kitchen never starts the day full"
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "t": "A landing strip by the door",
+   "f": "One spot for keys, wallet, bags and post so they never get lost again"
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "t": "Taming shoes at the entrance",
+   "f": "Shoe racks, trays and limits so the doorway stays walkable and clean"
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "t": "Coats, bags and hooks",
+   "f": "Using hooks at the right height so everyone in the home actually hangs things up"
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "t": "Handling post and paper daily",
+   "f": "Open, sort and act on letters the day they arrive instead of building a paper pile"
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "t": "The evening tidy",
+   "f": "A ten-minute routine before bed: dishes, surfaces, tomorrow's things ready by the door"
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "t": "A calm morning setup",
+   "f": "Preparing clothes, bag and breakfast items the night before for a smoother start"
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "t": "Laundry basics without the pile",
+   "f": "Choosing laundry days, sorting by colour and folding straight from the dryer or line"
+  },
+  {
+   "d": 21,
+   "lv": "beginner",
+   "t": "The weekly reset",
+   "f": "One longer tidy each week to catch what daily routines missed and plan the days ahead"
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "t": "Labels made simple",
+   "f": "When labels help, what to write on them and why short, clear words work best"
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "t": "Clear or closed containers",
+   "f": "See-through boxes show contents fast; closed ones look calmer. When to choose which"
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "t": "Thinking vertically",
+   "f": "Using wall space, shelf risers and stacking to gain room without buying more furniture"
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "t": "The famous junk drawer",
+   "f": "Accepting one mixed drawer but giving it dividers so it stays useful, not chaotic"
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "t": "Cables and chargers",
+   "f": "Bundling, labelling and parking cables so devices charge without a tangled mess"
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "t": "Small trays, big difference",
+   "f": "How trays and bowls create mini homes for keys, jewellery, remotes and loose items"
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "t": "Clutter hot spots",
+   "f": "Spotting the places in your home where things always pile up, and why they attract mess"
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "t": "Two-minute decisions",
+   "f": "If putting something away takes under two minutes, doing it now saves time later"
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "t": "Review: your first month",
+   "f": "Looking back at drawers, routines and hot spots, and choosing the habit to keep strengthening"
+  },
+  {
+   "d": 31,
+   "lv": "beginner",
+   "t": "Kitchen zones",
+   "f": "Dividing the kitchen into cooking, prep, cleaning and storage zones that match how you move"
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "t": "Decluttering kitchen utensils",
+   "f": "Keeping the tools you really use and letting go of duplicates and single-use gadgets"
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "t": "Fridge organisation basics",
+   "f": "Which shelves suit dairy, leftovers, vegetables and drinks, and why grouping saves food"
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "t": "The pantry at a glance",
+   "f": "Grouping dry food by type so you see what you have and stop buying duplicates"
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "t": "Spices you can find",
+   "f": "Racks, drawers and alphabetical or cuisine order so every spice is easy to reach"
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "t": "Pots, pans and lids",
+   "f": "Nesting pans, standing lids upright and storing heavy pieces low and close to the stove"
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "t": "Food storage containers",
+   "f": "Matching lids to boxes, keeping a few good sizes and letting odd ones go"
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "t": "Under the sink",
+   "f": "Using caddies and small shelves to organise cleaning supplies in an awkward space"
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "t": "Clear kitchen counters",
+   "f": "Keeping only daily-use appliances out so cooking and cleaning feel easier"
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "t": "Drawer dividers in the kitchen",
+   "f": "Splitting cutlery and utensil drawers so every tool has its own slot"
+  },
+  {
+   "d": 41,
+   "lv": "beginner",
+   "t": "Plates and glasses within reach",
+   "f": "Placing everyday dishes near the dishwasher or sink to make unloading quick"
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "t": "First in, first out",
+   "f": "Putting new groceries behind older ones so food gets used before it expires"
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "t": "Dating leftovers",
+   "f": "A quick label with the date helps you know what to eat first and reduces waste"
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "t": "A simple recycling station",
+   "f": "Setting up clearly labelled bins so sorting waste becomes automatic for everyone"
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "t": "The meal planning board",
+   "f": "A visible weekly plan that cuts daily decisions and makes shopping lists easier"
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "t": "Baking and special tools",
+   "f": "Storing occasional equipment together, higher up, so it does not crowd daily items"
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "t": "Mugs and cups",
+   "f": "Choosing a sensible number of cups and storing the favourites where you reach first"
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "t": "Tea towels and cloths",
+   "f": "Keeping a fresh supply, a clear wash routine and a hook near the sink"
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "t": "The kitchen junk spots",
+   "f": "Fridge doors, window sills and corners that collect clutter, and how to reset them"
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "t": "A quick nightly kitchen close",
+   "f": "Wiping, loading and clearing so you wake up to a ready kitchen every morning"
+  },
+  {
+   "d": 51,
+   "lv": "beginner",
+   "t": "Shopping list systems",
+   "f": "Paper list on the fridge or shared phone list: capturing needs the moment you notice them"
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "t": "Organising the freezer",
+   "f": "Flat-freezing, labelling and grouping so frozen food stays visible and gets eaten"
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "t": "Snack station",
+   "f": "A shelf or basket with portioned snacks that is easy to grab and easy to refill"
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "t": "Lunch box and bottle corner",
+   "f": "Keeping lunch containers, bottles and lids together to speed up busy mornings"
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "t": "Small kitchen, smart storage",
+   "f": "Rails, magnetic strips and door racks that turn tiny kitchens into efficient ones"
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "t": "Kitchen cleaning caddy",
+   "f": "One portable kit with the basics so quick cleaning never needs a search"
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "t": "Cookbooks and recipes",
+   "f": "Organising books, printed recipes and saved favourites so you actually cook from them"
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "t": "Coffee and tea corner",
+   "f": "Grouping cups, beans, tea and tools into one tidy, inviting station"
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "t": "Kitchen maintenance minutes",
+   "f": "Small weekly tasks like checking the fridge and wiping handles to keep order effortless"
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "t": "Review: the organised kitchen",
+   "f": "Revisiting zones, fridge and pantry, and celebrating what now works better"
+  },
+  {
+   "d": 61,
+   "lv": "beginner",
+   "t": "Wardrobe decluttering basics",
+   "f": "Sorting clothes by what fits, feels good and gets worn, without guilt about the rest"
+  },
+  {
+   "d": 62,
+   "lv": "beginner",
+   "t": "The reverse hanger trick",
+   "f": "Turning hangers after wearing to discover which clothes you really use over time"
+  },
+  {
+   "d": 63,
+   "lv": "beginner",
+   "t": "Folding clothes upright",
+   "f": "File folding so every T-shirt is visible in a drawer like cards in a box"
+  },
+  {
+   "d": 64,
+   "lv": "beginner",
+   "t": "Hanging versus folding",
+   "f": "Which clothes keep their shape on hangers and which are happier folded"
+  },
+  {
+   "d": 65,
+   "lv": "beginner",
+   "t": "Matching hangers",
+   "f": "How one type of hanger makes a wardrobe look calmer and saves space"
+  },
+  {
+   "d": 66,
+   "lv": "beginner",
+   "t": "Seasonal clothing swap",
+   "f": "Storing off-season clothes so your daily wardrobe holds only what you need now"
+  },
+  {
+   "d": 67,
+   "lv": "beginner",
+   "t": "Shoes in the bedroom",
+   "f": "Racks, clear boxes and shelves that keep pairs together and easy to choose"
+  },
+  {
+   "d": 68,
+   "lv": "beginner",
+   "t": "Socks and underwear drawers",
+   "f": "Dividers and simple rolling so small items stop disappearing into a jumble"
+  },
+  {
+   "d": 69,
+   "lv": "beginner",
+   "t": "Accessories in order",
+   "f": "Belts, scarves and hats on hooks or rails so you remember to wear them"
+  },
+  {
+   "d": 70,
+   "lv": "beginner",
+   "t": "Jewellery without tangles",
+   "f": "Trays, small dishes and hanging organisers that keep pieces untangled and visible"
+  },
+  {
+   "d": 71,
+   "lv": "beginner",
+   "t": "The bedside table",
+   "f": "Keeping only night essentials close: lamp, book, water, perhaps a small tray"
+  },
+  {
+   "d": 72,
+   "lv": "beginner",
+   "t": "Under-bed storage",
+   "f": "Using the space under the bed for flat boxes of bedding or off-season items"
+  },
+  {
+   "d": 73,
+   "lv": "beginner",
+   "t": "A calming bedroom",
+   "f": "Why fewer visible items help a bedroom feel restful and ready for sleep"
+  },
+  {
+   "d": 74,
+   "lv": "beginner",
+   "t": "Bed linen system",
+   "f": "How many sets you need and storing each set folded inside its own pillowcase"
+  },
+  {
+   "d": 75,
+   "lv": "beginner",
+   "t": "The chair of clothes",
+   "f": "Why worn-once clothes pile on chairs, and creating a hook or rail just for them"
+  },
+  {
+   "d": 76,
+   "lv": "beginner",
+   "t": "Laundry baskets that work",
+   "f": "Placing hampers where clothes come off and sorting them as you go"
+  },
+  {
+   "d": 77,
+   "lv": "beginner",
+   "t": "Bathroom decluttering",
+   "f": "Clearing out old products, samples and duplicates to free up shelves"
+  },
+  {
+   "d": 78,
+   "lv": "beginner",
+   "t": "Organising toiletries",
+   "f": "Grouping by use: daily routine at hand, backups stored together nearby"
+  },
+  {
+   "d": 79,
+   "lv": "beginner",
+   "t": "Towels in order",
+   "f": "A clear number per person, simple folding and a fixed spot for each towel"
+  },
+  {
+   "d": 80,
+   "lv": "beginner",
+   "t": "Shower and bath caddies",
+   "f": "Keeping bottles off the floor and edges so cleaning is quick and easy"
+  },
+  {
+   "d": 81,
+   "lv": "beginner",
+   "t": "Makeup and grooming kits",
+   "f": "Dividing items by daily and occasional use, with small containers for each group"
+  },
+  {
+   "d": 82,
+   "lv": "beginner",
+   "t": "Hair tools and cords",
+   "f": "Storing hot tools safely with holders and cord wraps once they have cooled down"
+  },
+  {
+   "d": 83,
+   "lv": "beginner",
+   "t": "Medicine cabinet check",
+   "f": "Sorting medicines, checking dates and returning expired ones to a pharmacy safely"
+  },
+  {
+   "d": 84,
+   "lv": "beginner",
+   "t": "Bathroom cleaning routine",
+   "f": "Short daily wipes plus a weekly deeper clean so the bathroom stays fresh"
+  },
+  {
+   "d": 85,
+   "lv": "beginner",
+   "t": "Tiny bathroom storage",
+   "f": "Over-door racks, wall shelves and mirror cabinets for bathrooms with little space"
+  },
+  {
+   "d": 86,
+   "lv": "beginner",
+   "t": "Guest-ready bathroom",
+   "f": "A small stock of fresh towels and basics so hosting never causes a rush"
+  },
+  {
+   "d": 87,
+   "lv": "beginner",
+   "t": "Linen cupboard order",
+   "f": "Grouping sheets, towels and spare items by room and labelling shelves"
+  },
+  {
+   "d": 88,
+   "lv": "beginner",
+   "t": "Morning routine flow",
+   "f": "Arranging bedroom and bathroom items in the order you use them each morning"
+  },
+  {
+   "d": 89,
+   "lv": "beginner",
+   "t": "Bedroom and bathroom reset",
+   "f": "A quick checklist to bring both rooms back to calm in under fifteen minutes"
+  },
+  {
+   "d": 90,
+   "lv": "beginner",
+   "t": "Review: wardrobe and bathroom",
+   "f": "Looking back at clothes, bedrooms and bathrooms and noting what still needs love"
+  },
+  {
+   "d": 91,
+   "lv": "beginner",
+   "t": "The living room purpose",
+   "f": "Deciding what your living room is for: relaxing, playing, working or hosting"
+  },
+  {
+   "d": 92,
+   "lv": "beginner",
+   "t": "Remote controls and devices",
+   "f": "Giving remotes, consoles and controllers a tray or basket so they stop wandering"
+  },
+  {
+   "d": 93,
+   "lv": "beginner",
+   "t": "Books on display",
+   "f": "Organising books by colour, size, genre or reading status, whatever helps you find them"
+  },
+  {
+   "d": 94,
+   "lv": "beginner",
+   "t": "Magazines and newspapers",
+   "f": "Setting a limit and a basket so reading material does not pile up for months"
+  },
+  {
+   "d": 95,
+   "lv": "beginner",
+   "t": "Blankets and cushions",
+   "f": "A basket or chest for throws, and a sensible number of cushions on the sofa"
+  },
+  {
+   "d": 96,
+   "lv": "beginner",
+   "t": "Decorative items with care",
+   "f": "Showing fewer, loved objects so each one gets attention and dusting is easy"
+  },
+  {
+   "d": 97,
+   "lv": "beginner",
+   "t": "Plants in their places",
+   "f": "Grouping plants by light needs and using trays to keep surfaces clean"
+  },
+  {
+   "d": 98,
+   "lv": "beginner",
+   "t": "Toys in shared spaces",
+   "f": "Bins, baskets and a nightly tidy-up game so toys have homes in living areas"
+  },
+  {
+   "d": 99,
+   "lv": "beginner",
+   "t": "Board games and puzzles",
+   "f": "Storing boxes upright like books and keeping small pieces in bags inside"
+  },
+  {
+   "d": 100,
+   "lv": "beginner",
+   "t": "Media and entertainment shelf",
+   "f": "Organising consoles, games, music and films so the area looks neat"
+  },
+  {
+   "d": 101,
+   "lv": "beginner",
+   "t": "The coffee table reset",
+   "f": "Keeping the coffee table mostly clear with one tray for everyday items"
+  },
+  {
+   "d": 102,
+   "lv": "beginner",
+   "t": "Hobby supplies at home",
+   "f": "Giving each hobby a box or shelf so you can start and stop without a big mess"
+  },
+  {
+   "d": 103,
+   "lv": "beginner",
+   "t": "Home office basics",
+   "f": "Setting up a clear desk with only what you need for today's work"
+  },
+  {
+   "d": 104,
+   "lv": "beginner",
+   "t": "Desk drawers that help",
+   "f": "Dividing desk drawers into stationery, tech and paper sections"
+  },
+  {
+   "d": 105,
+   "lv": "beginner",
+   "t": "Paper filing system",
+   "f": "A simple system: to do, to file and archive, with folders that are easy to use"
+  },
+  {
+   "d": 106,
+   "lv": "beginner",
+   "t": "Important documents in one place",
+   "f": "Keeping key papers together in a safe, labelled folder you can grab quickly"
+  },
+  {
+   "d": 107,
+   "lv": "beginner",
+   "t": "Going paperless step by step",
+   "f": "Scanning or photographing papers you need and recycling the rest responsibly"
+  },
+  {
+   "d": 108,
+   "lv": "beginner",
+   "t": "A family calendar",
+   "f": "One shared calendar for activities, appointments and plans that everyone can see"
+  },
+  {
+   "d": 109,
+   "lv": "beginner",
+   "t": "Household notebook",
+   "f": "A notebook or digital note with key info: contacts, appliance details, routines"
+  },
+  {
+   "d": 110,
+   "lv": "beginner",
+   "t": "Cleaning schedule basics",
+   "f": "Spreading tasks across the week so cleaning never takes a whole day"
+  },
+  {
+   "d": 111,
+   "lv": "beginner",
+   "t": "Daily, weekly, monthly tasks",
+   "f": "Sorting chores by frequency to see what really needs doing and when"
+  },
+  {
+   "d": 112,
+   "lv": "beginner",
+   "t": "Living in a small space",
+   "f": "Furniture with storage, folding pieces and multipurpose rooms for compact homes"
+  },
+  {
+   "d": 113,
+   "lv": "beginner",
+   "t": "Hooks everywhere",
+   "f": "Why hooks are the fastest storage there is: no folding, no lids, just hang"
+  },
+  {
+   "d": 114,
+   "lv": "beginner",
+   "t": "Baskets and bins",
+   "f": "Choosing baskets by size and material so they match the room and the job"
+  },
+  {
+   "d": 115,
+   "lv": "beginner",
+   "t": "Organising digital photos",
+   "f": "Creating folders by year and event so your photos stay easy to find"
+  },
+  {
+   "d": 116,
+   "lv": "beginner",
+   "t": "Email inbox basics",
+   "f": "Simple folders and regular clearing so your inbox feels less overwhelming"
+  },
+  {
+   "d": 117,
+   "lv": "beginner",
+   "t": "Phone home screen tidy",
+   "f": "Grouping apps and removing unused ones for a calmer, faster phone"
+  },
+  {
+   "d": 118,
+   "lv": "beginner",
+   "t": "Keeping momentum",
+   "f": "Tips for staying motivated: small wins, before-and-after photos and kind self-talk"
+  },
+  {
+   "d": 119,
+   "lv": "beginner",
+   "t": "Your home, your rules",
+   "f": "Adapting tips to your space, culture and habits instead of following rules blindly"
+  },
+  {
+   "d": 120,
+   "lv": "beginner",
+   "t": "Review: beginner milestone",
+   "f": "Celebrating four months of new habits and choosing goals for the next stage"
+  },
+  {
+   "d": 121,
+   "lv": "intermediate",
+   "t": "Thinking in systems",
+   "f": "Moving from one-off tidying to systems: a place, a routine and a reset for each area"
+  },
+  {
+   "d": 122,
+   "lv": "intermediate",
+   "t": "Tidying by category",
+   "f": "Gathering all items of one kind, like all books, before deciding what to keep"
+  },
+  {
+   "d": 123,
+   "lv": "intermediate",
+   "t": "Room by room versus category",
+   "f": "Comparing both approaches and choosing the one that suits your energy and home"
+  },
+  {
+   "d": 124,
+   "lv": "intermediate",
+   "t": "The maybe box",
+   "f": "Boxing uncertain items with a date and checking later whether you missed them"
+  },
+  {
+   "d": 125,
+   "lv": "intermediate",
+   "t": "Decision fatigue and clutter",
+   "f": "Why many small choices feel tiring and how simple rules speed up decluttering"
+  },
+  {
+   "d": 126,
+   "lv": "intermediate",
+   "t": "Measuring before storing",
+   "f": "Measuring shelves, drawers and gaps before buying any storage product"
+  },
+  {
+   "d": 127,
+   "lv": "intermediate",
+   "t": "Choosing storage furniture",
+   "f": "What to look for in shelves, cabinets and dressers that will last and fit your needs"
+  },
+  {
+   "d": 128,
+   "lv": "intermediate",
+   "t": "Deep wardrobe edit",
+   "f": "A full wardrobe session: try on, assess fit and style, and build a capsule core"
+  },
+  {
+   "d": 129,
+   "lv": "intermediate",
+   "t": "Organising a walk-in or large closet",
+   "f": "Zones for hanging, folding, shoes and accessories in a bigger storage space"
+  },
+  {
+   "d": 130,
+   "lv": "intermediate",
+   "t": "Kids' wardrobes",
+   "f": "Low rails, picture labels and size boxes so children can help choose and tidy"
+  },
+  {
+   "d": 131,
+   "lv": "intermediate",
+   "t": "Sentimental items with care",
+   "f": "Keeping meaningful items in a memory box and honouring them without overflowing"
+  },
+  {
+   "d": 132,
+   "lv": "intermediate",
+   "t": "Gifts you do not use",
+   "f": "Letting go of unused gifts kindly, remembering the thought matters more than the object"
+  },
+  {
+   "d": 133,
+   "lv": "intermediate",
+   "t": "Photos and printed memories",
+   "f": "Sorting printed photos, choosing favourites and storing them safely in albums"
+  },
+  {
+   "d": 134,
+   "lv": "intermediate",
+   "t": "Children's artwork",
+   "f": "Displaying some, photographing many and keeping a small yearly selection"
+  },
+  {
+   "d": 135,
+   "lv": "intermediate",
+   "t": "Collections that bring joy",
+   "f": "Displaying and limiting collections so they stay special instead of becoming clutter"
+  },
+  {
+   "d": 136,
+   "lv": "intermediate",
+   "t": "The storage room or attic",
+   "f": "Zoning, labelling and using shelves so stored items stay accessible and safe"
+  },
+  {
+   "d": 137,
+   "lv": "intermediate",
+   "t": "Garage and shed basics",
+   "f": "Wall storage, zones and clear floors for tools, bikes and outdoor equipment"
+  },
+  {
+   "d": 138,
+   "lv": "intermediate",
+   "t": "Tools in order",
+   "f": "Pegboards, toolboxes and outline markings so tools always go back home"
+  },
+  {
+   "d": 139,
+   "lv": "intermediate",
+   "t": "Sports and outdoor gear",
+   "f": "Bins per activity, hooks for bikes and a drying spot for wet equipment"
+  },
+  {
+   "d": 140,
+   "lv": "intermediate",
+   "t": "Balcony and small outdoor spaces",
+   "f": "Storage benches, vertical planters and folding furniture for balconies"
+  },
+  {
+   "d": 141,
+   "lv": "intermediate",
+   "t": "Craft and sewing supplies",
+   "f": "Clear drawers and labelled boxes so creative projects are easy to start"
+  },
+  {
+   "d": 142,
+   "lv": "intermediate",
+   "t": "Seasonal decorations",
+   "f": "Storing festive decorations by occasion in labelled boxes with fragile items protected"
+  },
+  {
+   "d": 143,
+   "lv": "intermediate",
+   "t": "Suitcases and travel bags",
+   "f": "Nesting luggage and storing travel items inside so they are ready to go"
+  },
+  {
+   "d": 144,
+   "lv": "intermediate",
+   "t": "Cleaning supplies cupboard",
+   "f": "Keeping a lean set of products, safely stored and grouped by room or task"
+  },
+  {
+   "d": 145,
+   "lv": "intermediate",
+   "t": "Household emergency kit",
+   "f": "Gathering a torch, batteries, first-aid basics and water in one known spot"
+  },
+  {
+   "d": 146,
+   "lv": "intermediate",
+   "t": "Spare parts and manuals",
+   "f": "A box or digital folder for manuals, warranties, spare screws and buttons"
+  },
+  {
+   "d": 147,
+   "lv": "intermediate",
+   "t": "The family command centre",
+   "f": "A wall spot with calendar, notes, keys and school or work papers for everyone"
+  },
+  {
+   "d": 148,
+   "lv": "intermediate",
+   "t": "Chore charts that work",
+   "f": "Sharing tasks fairly with clear lists, rotation and simple ways to track them"
+  },
+  {
+   "d": 149,
+   "lv": "intermediate",
+   "t": "Review: systems and storage",
+   "f": "Revisiting categories, storage rooms and family systems built so far"
+  },
+  {
+   "d": 150,
+   "lv": "intermediate",
+   "t": "Organising with children",
+   "f": "Making tidying a game, using picture labels and setting age-friendly tasks"
+  },
+  {
+   "d": 151,
+   "lv": "intermediate",
+   "t": "Toy rotation",
+   "f": "Storing some toys away and rotating them so children enjoy fewer toys more"
+  },
+  {
+   "d": 152,
+   "lv": "intermediate",
+   "t": "Teen rooms",
+   "f": "Giving teenagers ownership of their space with flexible, easy storage"
+  },
+  {
+   "d": 153,
+   "lv": "intermediate",
+   "t": "Pet supplies in one place",
+   "f": "Food, leashes, toys and grooming items stored together near where they are used"
+  },
+  {
+   "d": 154,
+   "lv": "intermediate",
+   "t": "Living with roommates",
+   "f": "Shared rules, labelled shelves and cleaning rotas for peaceful shared homes"
+  },
+  {
+   "d": 155,
+   "lv": "intermediate",
+   "t": "Organising as a couple",
+   "f": "Respecting different tidying styles and agreeing on shared spaces together"
+  },
+  {
+   "d": 156,
+   "lv": "intermediate",
+   "t": "Multigenerational homes",
+   "f": "Creating private zones and shared systems for homes with several generations"
+  },
+  {
+   "d": 157,
+   "lv": "intermediate",
+   "t": "Renter-friendly organisation",
+   "f": "Removable hooks, freestanding shelves and tension rods that leave walls intact"
+  },
+  {
+   "d": 158,
+   "lv": "intermediate",
+   "t": "Wall storage ideas",
+   "f": "Shelves, rails and pegboards that turn empty walls into useful storage"
+  },
+  {
+   "d": 159,
+   "lv": "intermediate",
+   "t": "Over-the-door storage",
+   "f": "Using the backs of doors for shoes, cleaning supplies, pantry items and accessories"
+  },
+  {
+   "d": 160,
+   "lv": "intermediate",
+   "t": "Small-space furniture",
+   "f": "Beds with drawers, extendable tables and stools with storage for compact homes"
+  },
+  {
+   "d": 161,
+   "lv": "intermediate",
+   "t": "Hidden storage spots",
+   "f": "Using space above cabinets, inside furniture and behind doors wisely"
+  },
+  {
+   "d": 162,
+   "lv": "intermediate",
+   "t": "Corners and awkward spaces",
+   "f": "Corner shelves, carousels and custom solutions for spaces that are hard to use"
+  },
+  {
+   "d": 163,
+   "lv": "intermediate",
+   "t": "Lighting and organisation",
+   "f": "How good light inside cupboards and wardrobes helps you see and use your things"
+  },
+  {
+   "d": 164,
+   "lv": "intermediate",
+   "t": "Colour-coded systems",
+   "f": "Using colours for family members, categories or folders to find things faster"
+  },
+  {
+   "d": 165,
+   "lv": "intermediate",
+   "t": "Labelling systems in depth",
+   "f": "Choosing fonts, materials and words, and adding pictures or languages when useful"
+  },
+  {
+   "d": 166,
+   "lv": "intermediate",
+   "t": "Grocery shopping system",
+   "f": "A master list, weekly checks and a fixed shopping day to keep the kitchen stocked"
+  },
+  {
+   "d": 167,
+   "lv": "intermediate",
+   "t": "Meal prep organisation",
+   "f": "Planning, batch cooking and container systems that make the week easier"
+  },
+  {
+   "d": 168,
+   "lv": "intermediate",
+   "t": "Pantry deep dive",
+   "f": "Decanting, labelling and restocking routines for a pantry that runs itself"
+  },
+  {
+   "d": 169,
+   "lv": "intermediate",
+   "t": "Bulk buying wisely",
+   "f": "Buying in bulk only what you use and storing it so it stays fresh and visible"
+  },
+  {
+   "d": 170,
+   "lv": "intermediate",
+   "t": "Laundry room or corner",
+   "f": "Shelves, baskets and a folding surface to make laundry quicker and calmer"
+  },
+  {
+   "d": 171,
+   "lv": "intermediate",
+   "t": "Ironing and clothing care",
+   "f": "Keeping care tools together and handling ironing in small, regular batches"
+  },
+  {
+   "d": 172,
+   "lv": "intermediate",
+   "t": "Shoe care station",
+   "f": "A small kit for cleaning and protecting shoes so they last longer"
+  },
+  {
+   "d": 173,
+   "lv": "intermediate",
+   "t": "Clothes mending basket",
+   "f": "A basket for buttons and small repairs, with a regular slot to fix things"
+  },
+  {
+   "d": 174,
+   "lv": "intermediate",
+   "t": "Donating well",
+   "f": "Finding where items are truly useful and preparing them clean and sorted"
+  },
+  {
+   "d": 175,
+   "lv": "intermediate",
+   "t": "Selling unused items",
+   "f": "Photographing, pricing fairly and setting a deadline when selling things online"
+  },
+  {
+   "d": 176,
+   "lv": "intermediate",
+   "t": "Recycling the tricky stuff",
+   "f": "How to handle electronics, batteries and textiles responsibly in most places"
+  },
+  {
+   "d": 177,
+   "lv": "intermediate",
+   "t": "Digital files on the computer",
+   "f": "A clear folder structure, naming habits and regular clean-ups for files"
+  },
+  {
+   "d": 178,
+   "lv": "intermediate",
+   "t": "Passwords and accounts list",
+   "f": "Keeping a secure, organised record of accounts using a trusted password manager"
+  },
+  {
+   "d": 179,
+   "lv": "intermediate",
+   "t": "Review: shared homes and supplies",
+   "f": "Looking back at family systems, shared spaces and clever storage ideas"
+  },
+  {
+   "d": 180,
+   "lv": "intermediate",
+   "t": "Home inventory basics",
+   "f": "Listing major items with photos, useful for moving, insurance or simply knowing what you own"
+  },
+  {
+   "d": 181,
+   "lv": "intermediate",
+   "t": "Home maintenance calendar",
+   "f": "Scheduling filter changes, gutter checks and seasonal tasks so nothing is forgotten"
+  },
+  {
+   "d": 182,
+   "lv": "intermediate",
+   "t": "Seasonal deep cleaning",
+   "f": "A spring and autumn checklist for windows, behind furniture and forgotten corners"
+  },
+  {
+   "d": 183,
+   "lv": "intermediate",
+   "t": "Window sills and ledges",
+   "f": "Keeping sills clear and dust-free with minimal decor and quick weekly wipes"
+  },
+  {
+   "d": 184,
+   "lv": "intermediate",
+   "t": "Floors free of clutter",
+   "f": "Why clear floors make rooms feel bigger and cleaning faster"
+  },
+  {
+   "d": 185,
+   "lv": "intermediate",
+   "t": "Cleaning in the right order",
+   "f": "Top to bottom, dry before wet: the order that saves time when cleaning a room"
+  },
+  {
+   "d": 186,
+   "lv": "intermediate",
+   "t": "Speed cleaning techniques",
+   "f": "Timed sessions, a caddy and a set route to clean a home quickly"
+  },
+  {
+   "d": 187,
+   "lv": "intermediate",
+   "t": "Getting the family to help",
+   "f": "Clear expectations, praise and shared routines that make helping feel normal"
+  },
+  {
+   "d": 188,
+   "lv": "intermediate",
+   "t": "Organising for guests",
+   "f": "Preparing a guest corner with bedding, towels and a little welcome space"
+  },
+  {
+   "d": 189,
+   "lv": "intermediate",
+   "t": "Hosting a dinner calmly",
+   "f": "Planning, prepping and organising the kitchen so hosting feels relaxed"
+  },
+  {
+   "d": 190,
+   "lv": "intermediate",
+   "t": "After-party reset",
+   "f": "A quick, fair plan to tidy up after guests leave without exhaustion"
+  },
+  {
+   "d": 191,
+   "lv": "intermediate",
+   "t": "Organising holidays and celebrations",
+   "f": "Lists, timelines and storage for gifts, wrapping and festive items"
+  },
+  {
+   "d": 192,
+   "lv": "intermediate",
+   "t": "Gift wrap station",
+   "f": "Keeping paper, tape, ribbons and cards together so wrapping is quick and fun"
+  },
+  {
+   "d": 193,
+   "lv": "intermediate",
+   "t": "Back-to-school organisation",
+   "f": "Bags, supplies, uniforms and schedules ready for a smooth new school term"
+  },
+  {
+   "d": 194,
+   "lv": "intermediate",
+   "t": "Work-from-home routines",
+   "f": "Starting and ending the workday with a desk reset to separate work and rest"
+  },
+  {
+   "d": 195,
+   "lv": "intermediate",
+   "t": "Video call corner",
+   "f": "Arranging a tidy, well-lit spot for calls without reorganising the whole room"
+  },
+  {
+   "d": 196,
+   "lv": "intermediate",
+   "t": "Moving house: the plan",
+   "f": "Decluttering before packing and building a timeline for a smooth move"
+  },
+  {
+   "d": 197,
+   "lv": "intermediate",
+   "t": "Packing room by room",
+   "f": "Labelling boxes with room and contents so unpacking becomes fast and logical"
+  },
+  {
+   "d": 198,
+   "lv": "intermediate",
+   "t": "The first-night box",
+   "f": "Packing essentials for the first night in a new home in one clearly marked box"
+  },
+  {
+   "d": 199,
+   "lv": "intermediate",
+   "t": "Unpacking with intention",
+   "f": "Setting up systems as you unpack instead of filling cupboards randomly"
+  },
+  {
+   "d": 200,
+   "lv": "intermediate",
+   "t": "Downsizing gracefully",
+   "f": "Choosing what to keep when moving to a smaller home with patience and care"
+  },
+  {
+   "d": 201,
+   "lv": "intermediate",
+   "t": "Car organisation",
+   "f": "Trunk organisers, a small emergency kit and a quick weekly clear-out for the car"
+  },
+  {
+   "d": 202,
+   "lv": "intermediate",
+   "t": "Bags and backpacks",
+   "f": "Emptying and resetting your daily bag so it stays light and ready"
+  },
+  {
+   "d": 203,
+   "lv": "intermediate",
+   "t": "The travel-ready kit",
+   "f": "Keeping a pre-packed toiletry bag and travel essentials to make trips easier"
+  },
+  {
+   "d": 204,
+   "lv": "intermediate",
+   "t": "Habits that keep order",
+   "f": "Linking small tidy actions to existing habits, like wiping the sink after brushing teeth"
+  },
+  {
+   "d": 205,
+   "lv": "intermediate",
+   "t": "Clutter and mood",
+   "f": "How a calmer space can support focus and wellbeing, and why perfection is not the goal"
+  },
+  {
+   "d": 206,
+   "lv": "intermediate",
+   "t": "Organising when you are busy",
+   "f": "Micro-routines and good-enough systems for weeks with little free time"
+  },
+  {
+   "d": 207,
+   "lv": "intermediate",
+   "t": "Review: routines and life events",
+   "f": "Revisiting cleaning routines, hosting, moving and busy-week strategies"
+  },
+  {
+   "d": 208,
+   "lv": "intermediate",
+   "t": "Organising your study space",
+   "f": "Books, notes and supplies arranged so studying starts without searching"
+  },
+  {
+   "d": 209,
+   "lv": "intermediate",
+   "t": "Notebooks and stationery",
+   "f": "Choosing a lean set of pens and notebooks and storing them in one place"
+  },
+  {
+   "d": 210,
+   "lv": "intermediate",
+   "t": "Bills and household paperwork",
+   "f": "A simple monthly routine for handling bills, receipts and statements"
+  },
+  {
+   "d": 211,
+   "lv": "intermediate",
+   "t": "Receipts and warranties",
+   "f": "Keeping important receipts with warranties and recycling the rest regularly"
+  },
+  {
+   "d": 212,
+   "lv": "intermediate",
+   "t": "Subscriptions overview",
+   "f": "Listing subscriptions in one place so you see what you use and what you could cancel"
+  },
+  {
+   "d": 213,
+   "lv": "intermediate",
+   "t": "Digital calendar mastery",
+   "f": "Colours, reminders and shared calendars to organise family and personal time"
+  },
+  {
+   "d": 214,
+   "lv": "intermediate",
+   "t": "To-do lists that work",
+   "f": "Using one trusted list, clear next steps and daily priorities"
+  },
+  {
+   "d": 215,
+   "lv": "intermediate",
+   "t": "Notes and ideas capture",
+   "f": "One place to capture ideas, lists and plans so nothing gets lost"
+  },
+  {
+   "d": 216,
+   "lv": "intermediate",
+   "t": "Organising your phone photos",
+   "f": "Weekly deleting of duplicates and screenshots, and backing up favourites"
+  },
+  {
+   "d": 217,
+   "lv": "intermediate",
+   "t": "Smart home basics for order",
+   "f": "Using reminders, timers and simple automation to support routines"
+  },
+  {
+   "d": 218,
+   "lv": "intermediate",
+   "t": "Plants and garden supplies",
+   "f": "Storing pots, soil, tools and seeds tidily, inside or outside"
+  },
+  {
+   "d": 219,
+   "lv": "intermediate",
+   "t": "Bike and scooter parking",
+   "f": "Wall hooks, stands and entrance solutions for bikes and scooters"
+  },
+  {
+   "d": 220,
+   "lv": "intermediate",
+   "t": "Hobby rooms and corners",
+   "f": "Designing a dedicated space for music, art or gaming that stays tidy"
+  },
+  {
+   "d": 221,
+   "lv": "intermediate",
+   "t": "Music instruments at home",
+   "f": "Stands, cases and wall mounts that protect instruments and save floor space"
+  },
+  {
+   "d": 222,
+   "lv": "intermediate",
+   "t": "Book collection care",
+   "f": "Rotating, donating and organising books so shelves stay inviting"
+  },
+  {
+   "d": 223,
+   "lv": "intermediate",
+   "t": "Wine, drinks and bar cart",
+   "f": "Organising bottles, glasses and tools neatly in a small dedicated area"
+  },
+  {
+   "d": 224,
+   "lv": "intermediate",
+   "t": "Party supplies box",
+   "f": "Keeping candles, napkins, reusable decorations and extras ready for celebrations"
+  },
+  {
+   "d": 225,
+   "lv": "intermediate",
+   "t": "Batteries and bulbs",
+   "f": "A small labelled box for spare batteries and light bulbs, sorted by type"
+  },
+  {
+   "d": 226,
+   "lv": "intermediate",
+   "t": "Home repair kit",
+   "f": "Basic tools, tape, glue and spare parts gathered for quick small repairs"
+  },
+  {
+   "d": 227,
+   "lv": "intermediate",
+   "t": "Keys and spare keys",
+   "f": "Labelling keys, storing spares safely and keeping a simple key record"
+  },
+  {
+   "d": 228,
+   "lv": "intermediate",
+   "t": "Charging station",
+   "f": "One spot for phones, tablets and headphones to charge overnight"
+  },
+  {
+   "d": 229,
+   "lv": "intermediate",
+   "t": "Organising for accessibility",
+   "f": "Placing items at comfortable heights and keeping paths clear for everyone"
+  },
+  {
+   "d": 230,
+   "lv": "intermediate",
+   "t": "Helping older relatives organise",
+   "f": "Respectful, patient ways to support family members in simplifying their homes"
+  },
+  {
+   "d": 231,
+   "lv": "intermediate",
+   "t": "Organising with pets in mind",
+   "f": "Pet-safe storage, easy-clean zones and spots for beds and bowls"
+  },
+  {
+   "d": 232,
+   "lv": "intermediate",
+   "t": "Allergy-friendly organisation",
+   "f": "Fewer dust-catchers, closed storage and washable textiles for easier cleaning"
+  },
+  {
+   "d": 233,
+   "lv": "intermediate",
+   "t": "Sustainable storage choices",
+   "f": "Reusing jars, boxes and baskets instead of buying new plastic organisers"
+  },
+  {
+   "d": 234,
+   "lv": "intermediate",
+   "t": "Upcycling for storage",
+   "f": "Turning crates, tins and old furniture into useful organisers"
+  },
+  {
+   "d": 235,
+   "lv": "intermediate",
+   "t": "Review: paperwork and special areas",
+   "f": "Revisiting digital life, hobby spaces and care-focused organisation"
+  },
+  {
+   "d": 236,
+   "lv": "intermediate",
+   "t": "Budget-friendly organising",
+   "f": "Using what you already have and shopping second-hand for organisers"
+  },
+  {
+   "d": 237,
+   "lv": "intermediate",
+   "t": "DIY drawer dividers",
+   "f": "Making dividers from cardboard, shoeboxes or wood strips at little cost"
+  },
+  {
+   "d": 238,
+   "lv": "intermediate",
+   "t": "Shelf styling with purpose",
+   "f": "Balancing practical storage with a few decorative pieces on open shelves"
+  },
+  {
+   "d": 239,
+   "lv": "intermediate",
+   "t": "Open versus closed storage",
+   "f": "When open shelves work and when doors or boxes keep a room calmer"
+  },
+  {
+   "d": 240,
+   "lv": "intermediate",
+   "t": "Organising a shared bathroom",
+   "f": "Personal caddies, towel colours and shelf zones for families and roommates"
+  },
+  {
+   "d": 241,
+   "lv": "intermediate",
+   "t": "Organising a shared wardrobe",
+   "f": "Dividing space fairly and keeping both sides tidy and easy to use"
+  },
+  {
+   "d": 242,
+   "lv": "intermediate",
+   "t": "Visual calm with colour",
+   "f": "Using a limited colour palette for boxes and baskets for a calmer look"
+  },
+  {
+   "d": 243,
+   "lv": "intermediate",
+   "t": "Before-and-after photos",
+   "f": "Documenting progress to stay motivated and see how much you have achieved"
+  },
+  {
+   "d": 244,
+   "lv": "intermediate",
+   "t": "Weekend organising project",
+   "f": "Planning a satisfying one-day project from start to finish"
+  },
+  {
+   "d": 245,
+   "lv": "intermediate",
+   "t": "The 30-day declutter challenge",
+   "f": "Removing a growing number of items each day for a month, at your own pace"
+  },
+  {
+   "d": 246,
+   "lv": "intermediate",
+   "t": "Organising your mornings deeper",
+   "f": "Fine-tuning morning routines to remove friction and save minutes"
+  },
+  {
+   "d": 247,
+   "lv": "intermediate",
+   "t": "Evening wind-down routines",
+   "f": "Combining tidying with relaxing habits to end the day calmly"
+  },
+  {
+   "d": 248,
+   "lv": "intermediate",
+   "t": "Clutter-free habits for kids",
+   "f": "Teaching children to tidy with routines, songs and age-friendly jobs"
+  },
+  {
+   "d": 249,
+   "lv": "intermediate",
+   "t": "Organising one cupboard perfectly",
+   "f": "Applying every technique learned to one cupboard as a model for the rest of the home"
+  },
+  {
+   "d": 250,
+   "lv": "intermediate",
+   "t": "Mid-path review",
+   "f": "Looking back at the whole intermediate stage and listing your best new systems"
+  },
+  {
+   "d": 251,
+   "lv": "advanced",
+   "t": "Designing your own home system",
+   "f": "Combining everything learned into a personal organising method that fits your life"
+  },
+  {
+   "d": 252,
+   "lv": "advanced",
+   "t": "Auditing your home",
+   "f": "Walking through every room with fresh eyes to spot what works and what does not"
+  },
+  {
+   "d": 253,
+   "lv": "advanced",
+   "t": "Flow and movement at home",
+   "f": "Arranging furniture and storage around the paths you walk every day"
+  },
+  {
+   "d": 254,
+   "lv": "advanced",
+   "t": "Zoning a multipurpose room",
+   "f": "Defining clear zones with rugs, shelves and light in rooms that do many jobs"
+  },
+  {
+   "d": 255,
+   "lv": "advanced",
+   "t": "Behaviour-based organising",
+   "f": "Building systems around how people really behave, not how they should behave"
+  },
+  {
+   "d": 256,
+   "lv": "advanced",
+   "t": "Friction: the hidden key",
+   "f": "Making good habits easy and messy habits slightly harder through placement"
+  },
+  {
+   "d": 257,
+   "lv": "advanced",
+   "t": "Organising for different minds",
+   "f": "Visible storage, simple steps and reminders for people who get easily distracted"
+  },
+  {
+   "d": 258,
+   "lv": "advanced",
+   "t": "Visual reminders and cues",
+   "f": "Using clear bins, open shelves and notes so important things stay in sight"
+  },
+  {
+   "d": 259,
+   "lv": "advanced",
+   "t": "Reducing decision points",
+   "f": "Creating defaults, like fixed outfits or menus, to free up mental energy"
+  },
+  {
+   "d": 260,
+   "lv": "advanced",
+   "t": "Ideal storage heights",
+   "f": "Using the comfort zone between knee and shoulder for frequently used items"
+  },
+  {
+   "d": 261,
+   "lv": "advanced",
+   "t": "Japanese entrance traditions",
+   "f": "How the genkan separates outdoor and indoor life and keeps homes cleaner"
+  },
+  {
+   "d": 262,
+   "lv": "advanced",
+   "t": "Scandinavian simplicity",
+   "f": "Lessons from Nordic homes: light, function, natural materials and calm order"
+  },
+  {
+   "d": 263,
+   "lv": "advanced",
+   "t": "Mediterranean outdoor living",
+   "f": "Organising terraces and courtyards as extensions of the home"
+  },
+  {
+   "d": 264,
+   "lv": "advanced",
+   "t": "Small homes around the world",
+   "f": "Clever space-saving ideas from compact homes in big cities worldwide"
+  },
+  {
+   "d": 265,
+   "lv": "advanced",
+   "t": "The art of tidying by category",
+   "f": "Exploring Marie Kondo's well-known method and what you might borrow from it"
+  },
+  {
+   "d": 266,
+   "lv": "advanced",
+   "t": "Joy versus usefulness",
+   "f": "Balancing items that make you happy with items that simply do a job well"
+  },
+  {
+   "d": 267,
+   "lv": "advanced",
+   "t": "Mindful buying habits",
+   "f": "Pausing before purchases and asking where a new item will live at home"
+  },
+  {
+   "d": 268,
+   "lv": "advanced",
+   "t": "The 30-day wait rule",
+   "f": "Waiting a month before non-essential purchases to see if you still want them"
+  },
+  {
+   "d": 269,
+   "lv": "advanced",
+   "t": "Quality over quantity",
+   "f": "Choosing fewer, better-made items that last and are easier to maintain"
+  },
+  {
+   "d": 270,
+   "lv": "advanced",
+   "t": "Rethinking storage needs",
+   "f": "Asking whether you need more storage or simply fewer things"
+  },
+  {
+   "d": 271,
+   "lv": "advanced",
+   "t": "Organising a home library",
+   "f": "Cataloguing, zoning and caring for a larger book collection"
+  },
+  {
+   "d": 272,
+   "lv": "advanced",
+   "t": "Archive boxes done right",
+   "f": "Choosing sturdy boxes, labelling ends and keeping an index of what is stored"
+  },
+  {
+   "d": 273,
+   "lv": "advanced",
+   "t": "Long-term storage care",
+   "f": "Protecting stored items from damp, dust and pests with good materials"
+  },
+  {
+   "d": 274,
+   "lv": "advanced",
+   "t": "Keepsakes for the future",
+   "f": "Curating family memories into a small, meaningful collection for later"
+  },
+  {
+   "d": 275,
+   "lv": "advanced",
+   "t": "Digitising memories",
+   "f": "Scanning photos, letters and drawings so they are safe and easy to share"
+  },
+  {
+   "d": 276,
+   "lv": "advanced",
+   "t": "Digital decluttering deep dive",
+   "f": "Cleaning up cloud storage, old devices and duplicate files in one project"
+  },
+  {
+   "d": 277,
+   "lv": "advanced",
+   "t": "Backup routines",
+   "f": "Simple, regular backups of photos and documents so memories are protected"
+  },
+  {
+   "d": 278,
+   "lv": "advanced",
+   "t": "Home management binder",
+   "f": "A complete household guide with routines, contacts, schedules and key information"
+  },
+  {
+   "d": 279,
+   "lv": "advanced",
+   "t": "Annual home planning",
+   "f": "Mapping the year's big projects, seasonal tasks and organising goals"
+  },
+  {
+   "d": 280,
+   "lv": "advanced",
+   "t": "Review: advanced foundations",
+   "f": "Revisiting systems thinking, mindful buying and memory care"
+  },
+  {
+   "d": 281,
+   "lv": "advanced",
+   "t": "Project planning at home",
+   "f": "Breaking big home projects into steps, timelines and shopping lists"
+  },
+  {
+   "d": 282,
+   "lv": "advanced",
+   "t": "Renovation-ready organising",
+   "f": "Packing and protecting rooms before painting or renovation work"
+  },
+  {
+   "d": 283,
+   "lv": "advanced",
+   "t": "Kitchen redesign thinking",
+   "f": "Planning work zones and storage when updating or rearranging a kitchen"
+  },
+  {
+   "d": 284,
+   "lv": "advanced",
+   "t": "Wardrobe system design",
+   "f": "Planning rails, shelves and drawers to fit your real clothing collection"
+  },
+  {
+   "d": 285,
+   "lv": "advanced",
+   "t": "Custom shelving ideas",
+   "f": "When custom or built-in shelves make sense and how to plan them well"
+  },
+  {
+   "d": 286,
+   "lv": "advanced",
+   "t": "Garage makeover plan",
+   "f": "A step-by-step approach to turning a cluttered garage into an organised space"
+  },
+  {
+   "d": 287,
+   "lv": "advanced",
+   "t": "Organising for remote work long-term",
+   "f": "Building a sustainable, ergonomic home office that stays orderly"
+  },
+  {
+   "d": 288,
+   "lv": "advanced",
+   "t": "Seasonal home transitions",
+   "f": "Swapping clothes, bedding and decor as seasons change, with a routine"
+  },
+  {
+   "d": 289,
+   "lv": "advanced",
+   "t": "Holiday season planning",
+   "f": "Organising lists, budgets of time and storage for busy festive periods"
+  },
+  {
+   "d": 290,
+   "lv": "advanced",
+   "t": "Hosting overnight guests",
+   "f": "Planning sleeping space, storage and routines for guests staying a few days"
+  },
+  {
+   "d": 291,
+   "lv": "advanced",
+   "t": "Home organisation for newcomers",
+   "f": "Setting up a home efficiently after moving to a new city or country"
+  },
+  {
+   "d": 292,
+   "lv": "advanced",
+   "t": "Moving abroad: what to keep",
+   "f": "Choosing belongings to ship, store, sell or leave when moving internationally"
+  },
+  {
+   "d": 293,
+   "lv": "advanced",
+   "t": "Furnishing a new home slowly",
+   "f": "Living in a space before buying storage so choices match real needs"
+  },
+  {
+   "d": 294,
+   "lv": "advanced",
+   "t": "Temporary and rented rooms",
+   "f": "Organising a short-term room or student flat with portable solutions"
+  },
+  {
+   "d": 295,
+   "lv": "advanced",
+   "t": "Organising in a dorm or studio",
+   "f": "Smart zoning and vertical storage when one room does everything"
+  },
+  {
+   "d": 296,
+   "lv": "advanced",
+   "t": "Travel organisation pro tips",
+   "f": "Packing cubes, lists and routines for frequent travellers"
+  },
+  {
+   "d": 297,
+   "lv": "advanced",
+   "t": "Organising an event at home",
+   "f": "Timelines, task lists and supply boxes for birthdays or gatherings at home"
+  },
+  {
+   "d": 298,
+   "lv": "advanced",
+   "t": "Children growing up",
+   "f": "Adapting storage and rooms as children grow and their needs change"
+  },
+  {
+   "d": 299,
+   "lv": "advanced",
+   "t": "Preparing a nursery calmly",
+   "f": "Organising clothes, supplies and furniture for a new baby in simple zones"
+  },
+  {
+   "d": 300,
+   "lv": "advanced",
+   "t": "Organising school projects",
+   "f": "Supplies, deadlines and a project corner for school assignments"
+  },
+  {
+   "d": 301,
+   "lv": "advanced",
+   "t": "Teaching kids responsibility",
+   "f": "Age-appropriate chores and systems that build independence step by step"
+  },
+  {
+   "d": 302,
+   "lv": "advanced",
+   "t": "Household teamwork",
+   "f": "Family meetings, shared goals and fair task sharing for a smoother home"
+  },
+  {
+   "d": 303,
+   "lv": "advanced",
+   "t": "Keeping a home running smoothly",
+   "f": "The weekly rhythm of shopping, cleaning, laundry and planning combined"
+  },
+  {
+   "d": 304,
+   "lv": "advanced",
+   "t": "Energy-saving organisation",
+   "f": "How tidy spaces and good habits can help save energy and water at home"
+  },
+  {
+   "d": 305,
+   "lv": "advanced",
+   "t": "Zero-waste kitchen habits",
+   "f": "Reusable containers, bulk shopping and composting basics for less waste"
+  },
+  {
+   "d": 306,
+   "lv": "advanced",
+   "t": "Composting at home",
+   "f": "Simple ways to compost kitchen scraps on a balcony, garden or in a small bin"
+  },
+  {
+   "d": 307,
+   "lv": "advanced",
+   "t": "Repair before replace",
+   "f": "Building a habit of fixing items and keeping a simple repair kit ready"
+  },
+  {
+   "d": 308,
+   "lv": "advanced",
+   "t": "Sharing and borrowing",
+   "f": "Borrowing rarely used tools from neighbours or libraries instead of buying them"
+  },
+  {
+   "d": 309,
+   "lv": "advanced",
+   "t": "Review: projects and sustainability",
+   "f": "Looking back at big projects, moving, family systems and greener habits"
+  },
+  {
+   "d": 310,
+   "lv": "advanced",
+   "t": "Organising a creative studio",
+   "f": "Storing materials, works in progress and finished pieces in a practical way"
+  },
+  {
+   "d": 311,
+   "lv": "advanced",
+   "t": "Fabric and yarn stash",
+   "f": "Sorting, storing and limiting craft materials so they inspire, not overwhelm"
+  },
+  {
+   "d": 312,
+   "lv": "advanced",
+   "t": "Organising a home gym",
+   "f": "Racks, hooks and floor zones for equipment in a small home workout area"
+  },
+  {
+   "d": 313,
+   "lv": "advanced",
+   "t": "Organising a home workshop",
+   "f": "Benches, wall storage and safety habits for DIY workspaces"
+  },
+  {
+   "d": 314,
+   "lv": "advanced",
+   "t": "Photography and tech gear",
+   "f": "Protective cases, labels and charging routines for cameras and gadgets"
+  },
+  {
+   "d": 315,
+   "lv": "advanced",
+   "t": "Gaming setup organisation",
+   "f": "Managing consoles, cables, games and controllers in a neat setup"
+  },
+  {
+   "d": 316,
+   "lv": "advanced",
+   "t": "Organising a small business at home",
+   "f": "Separating stock, packaging and paperwork from family spaces"
+  },
+  {
+   "d": 317,
+   "lv": "advanced",
+   "t": "Inventory for hobbies",
+   "f": "Tracking supplies so you buy only what you need for your projects"
+  },
+  {
+   "d": 318,
+   "lv": "advanced",
+   "t": "Clutter-free kitchen counters advanced",
+   "f": "Appliance garages, rails and hidden storage for a sleek kitchen"
+  },
+  {
+   "d": 319,
+   "lv": "advanced",
+   "t": "Pantry systems for big families",
+   "f": "Bulk zones, rotation habits and shared shopping lists for larger households"
+  },
+  {
+   "d": 320,
+   "lv": "advanced",
+   "t": "Cooking for the week",
+   "f": "Organising batch cooking sessions with a plan, a timeline and containers"
+  },
+  {
+   "d": 321,
+   "lv": "advanced",
+   "t": "The perfect cleaning routine for you",
+   "f": "Building a routine that matches your energy, schedule and home size"
+  },
+  {
+   "d": 322,
+   "lv": "advanced",
+   "t": "Professional organiser techniques",
+   "f": "Methods organisers use: assess, sort, purge, assign homes, contain, maintain"
+  },
+  {
+   "d": 323,
+   "lv": "advanced",
+   "t": "Organising someone else's space",
+   "f": "Asking questions, respecting choices and helping without taking over"
+  },
+  {
+   "d": 324,
+   "lv": "advanced",
+   "t": "Helping a friend declutter",
+   "f": "Being a supportive helper: listening, encouraging and not judging"
+  },
+  {
+   "d": 325,
+   "lv": "advanced",
+   "t": "Talking about clutter kindly",
+   "f": "How to discuss mess with family members without blame or arguments"
+  },
+  {
+   "d": 326,
+   "lv": "advanced",
+   "t": "When others keep more than you",
+   "f": "Finding compromise when family members have different relationships with things"
+  },
+  {
+   "d": 327,
+   "lv": "advanced",
+   "t": "Respecting different cultures at home",
+   "f": "Understanding how habits around shoes, guests and storage vary across cultures"
+  },
+  {
+   "d": 328,
+   "lv": "advanced",
+   "t": "Organising for celebrations worldwide",
+   "f": "Inspiring ideas from how different cultures prepare homes for festivities"
+  },
+  {
+   "d": 329,
+   "lv": "advanced",
+   "t": "Spring cleaning traditions",
+   "f": "How many cultures welcome a new season or new year with a thorough clean"
+  },
+  {
+   "d": 330,
+   "lv": "advanced",
+   "t": "Hospitality and the home",
+   "f": "How different cultures prepare their homes to welcome guests"
+  },
+  {
+   "d": 331,
+   "lv": "advanced",
+   "t": "Lessons from tiny houses",
+   "f": "What tiny house living teaches about storage, priorities and design"
+  },
+  {
+   "d": 332,
+   "lv": "advanced",
+   "t": "Lessons from boat and van life",
+   "f": "Ultra-compact organising ideas from people who live on boats or in vans"
+  },
+  {
+   "d": 333,
+   "lv": "advanced",
+   "t": "Lessons from hotels",
+   "f": "How hotels keep rooms simple, clean and welcoming, and what to borrow at home"
+  },
+  {
+   "d": 334,
+   "lv": "advanced",
+   "t": "Review: special spaces and people",
+   "f": "Revisiting creative spaces, helping others and cultural inspirations"
+  },
+  {
+   "d": 335,
+   "lv": "advanced",
+   "t": "Maintenance over makeover",
+   "f": "Why small daily upkeep beats big occasional organising marathons"
+  },
+  {
+   "d": 336,
+   "lv": "advanced",
+   "t": "Spotting clutter creep",
+   "f": "Noticing early signs that clutter is returning and acting quickly"
+  },
+  {
+   "d": 337,
+   "lv": "advanced",
+   "t": "Seasonal system check",
+   "f": "Reviewing each area every season and adjusting what no longer fits"
+  },
+  {
+   "d": 338,
+   "lv": "advanced",
+   "t": "Life changes and your home",
+   "f": "Adapting your systems to new jobs, family members or routines"
+  },
+  {
+   "d": 339,
+   "lv": "advanced",
+   "t": "Organising after a busy period",
+   "f": "Restoring order calmly after holidays, illness or intense work weeks"
+  },
+  {
+   "d": 340,
+   "lv": "advanced",
+   "t": "Recovering from a messy week",
+   "f": "A gentle, step-by-step plan to reset a home without feeling overwhelmed"
+  },
+  {
+   "d": 341,
+   "lv": "advanced",
+   "t": "Gentle motivation",
+   "f": "Using music, timers, rewards and company to make organising enjoyable"
+  },
+  {
+   "d": 342,
+   "lv": "advanced",
+   "t": "Organising with music and podcasts",
+   "f": "Turning chores into pleasant time with playlists and audio"
+  },
+  {
+   "d": 343,
+   "lv": "advanced",
+   "t": "Gamifying tidying",
+   "f": "Challenges, timers and points to make organising fun for adults and kids"
+  },
+  {
+   "d": 344,
+   "lv": "advanced",
+   "t": "Tracking your habits",
+   "f": "Simple checklists and habit trackers to keep organising routines alive"
+  },
+  {
+   "d": 345,
+   "lv": "advanced",
+   "t": "Rewarding progress",
+   "f": "Celebrating milestones with small treats and enjoying your organised space"
+  },
+  {
+   "d": 346,
+   "lv": "advanced",
+   "t": "Your home as a support system",
+   "f": "Seeing your home as a tool that supports your goals, energy and relationships"
+  },
+  {
+   "d": 347,
+   "lv": "advanced",
+   "t": "Hosting a swap party",
+   "f": "Exchanging clothes, books or kitchen items with friends instead of buying new"
+  },
+  {
+   "d": 348,
+   "lv": "advanced",
+   "t": "Community decluttering",
+   "f": "Joining local swap shops, donation drives and repair cafes"
+  },
+  {
+   "d": 349,
+   "lv": "advanced",
+   "t": "Organising for the long term",
+   "f": "Building systems that will still work in five or ten years"
+  },
+  {
+   "d": 350,
+   "lv": "advanced",
+   "t": "Creating home rituals",
+   "f": "Weekly rituals, like a Sunday reset, that make order part of family life"
+  },
+  {
+   "d": 351,
+   "lv": "advanced",
+   "t": "Teaching what you learned",
+   "f": "Sharing your best tips with friends or family in a helpful, friendly way"
+  },
+  {
+   "d": 352,
+   "lv": "advanced",
+   "t": "Your personal organising style",
+   "f": "Recognising whether you prefer visible, hidden, detailed or simple systems"
+  },
+  {
+   "d": 353,
+   "lv": "advanced",
+   "t": "Writing your home manifesto",
+   "f": "Putting your values about home and belongings into a few simple sentences"
+  },
+  {
+   "d": 354,
+   "lv": "advanced",
+   "t": "Organising challenges you can repeat",
+   "f": "Designing your own monthly mini challenges for the future"
+  },
+  {
+   "d": 355,
+   "lv": "advanced",
+   "t": "Gratitude for your home",
+   "f": "Appreciating your space and the things that make daily life easier"
+  },
+  {
+   "d": 356,
+   "lv": "advanced",
+   "t": "Kitchen tools for life",
+   "f": "Choosing a lasting core set of kitchen tools and caring for them well"
+  },
+  {
+   "d": 357,
+   "lv": "advanced",
+   "t": "A calm bedroom deep dive",
+   "f": "Refining bedroom storage, textiles and light for a truly restful room"
+  },
+  {
+   "d": 358,
+   "lv": "advanced",
+   "t": "Entryway upgrades",
+   "f": "Improving the entrance with better seating, storage and a mirror for daily ease"
+  },
+  {
+   "d": 359,
+   "lv": "advanced",
+   "t": "Bathroom systems refined",
+   "f": "Fine-tuning bathroom storage so mornings run smoothly for every person at home"
+  },
+  {
+   "d": 360,
+   "lv": "advanced",
+   "t": "Paper-free home goals",
+   "f": "Reducing incoming paper with digital statements and smart filing"
+  },
+  {
+   "d": 361,
+   "lv": "advanced",
+   "t": "Your organising toolkit",
+   "f": "Listing the tools, products and habits that truly helped you this year"
+  },
+  {
+   "d": 362,
+   "lv": "advanced",
+   "t": "Room-by-room final check",
+   "f": "A complete walk-through using everything learned over the year"
+  },
+  {
+   "d": 363,
+   "lv": "advanced",
+   "t": "A year of progress",
+   "f": "Comparing your home now with day one and noting the biggest changes"
+  },
+  {
+   "d": 364,
+   "lv": "advanced",
+   "t": "Your next steps",
+   "f": "Choosing the next areas to improve and the habits you will keep"
+  },
+  {
+   "d": 365,
+   "lv": "advanced",
+   "t": "Review: your 365-day journey",
+   "f": "Celebrating a full year of organising and planning how to keep the calm going"
+  }
+ ]
+}

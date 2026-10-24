@@ -1,0 +1,2195 @@
+{
+"topic": "digital_detox",
+"days": [
+{
+"d": 1,
+"lv": "beginner",
+"t": "What a digital detox really means",
+"f": "Not quitting technology, but using it on purpose so it serves your life"
+},
+{
+"d": 2,
+"lv": "beginner",
+"t": "Your screen story",
+"f": "Looking back at how phones, computers and TV became part of your days"
+},
+{
+"d": 3,
+"lv": "beginner",
+"t": "Why balance matters",
+"f": "General benefits of less screen time for focus, rest, movement and connection"
+},
+{
+"d": 4,
+"lv": "beginner",
+"t": "Checking your screen time",
+"f": "Finding the built-in screen time report on your phone and reading it calmly"
+},
+{
+"d": 5,
+"lv": "beginner",
+"t": "Your most used apps",
+"f": "Noticing which apps take most of your time and how you feel after using them"
+},
+{
+"d": 6,
+"lv": "beginner",
+"t": "Counting pickups",
+"f": "How often you unlock your phone and what usually makes you reach for it"
+},
+{
+"d": 7,
+"lv": "beginner",
+"t": "Spotting your triggers",
+"f": "Boredom, waiting, notifications and stress as common reasons to grab the phone"
+},
+{
+"d": 8,
+"lv": "beginner",
+"t": "Autopilot scrolling",
+"f": "Recognising the moments when you scroll without really choosing to"
+},
+{
+"d": 9,
+"lv": "beginner",
+"t": "Intentional versus mindless use",
+"f": "The difference between opening an app for a reason and drifting into it"
+},
+{
+"d": 10,
+"lv": "beginner",
+"t": "Setting a gentle first goal",
+"f": "Choosing one small, realistic screen-time change for this week"
+},
+{
+"d": 11,
+"lv": "beginner",
+"t": "The pause before you tap",
+"f": "Taking one breath and asking what you want before opening an app"
+},
+{
+"d": 12,
+"lv": "beginner",
+"t": "Naming what you value",
+"f": "Listing activities and people you would love to give more time to"
+},
+{
+"d": 13,
+"lv": "beginner",
+"t": "Your ideal day on paper",
+"f": "Sketching a day where technology supports rather than fills your time"
+},
+{
+"d": 14,
+"lv": "beginner",
+"t": "Screens and the body",
+"f": "General effects of long screen sessions on eyes, posture and movement"
+},
+{
+"d": 15,
+"lv": "beginner",
+"t": "Eye breaks",
+"f": "Looking at something far away regularly to rest your eyes during screen work"
+},
+{
+"d": 16,
+"lv": "beginner",
+"t": "Posture and tech neck",
+"f": "Holding devices at eye level and changing position often"
+},
+{
+"d": 17,
+"lv": "beginner",
+"t": "Moving between screen sessions",
+"f": "Short stretches and walks to break up long periods of sitting"
+},
+{
+"d": 18,
+"lv": "beginner",
+"t": "Screens and sleep basics",
+"f": "Why bright screens and exciting content late at night can make rest harder"
+},
+{
+"d": 19,
+"lv": "beginner",
+"t": "Morning phone habits",
+"f": "Noticing whether the phone is the first thing you check after waking"
+},
+{
+"d": 20,
+"lv": "beginner",
+"t": "Evening phone habits",
+"f": "Noticing how screens fill the last hour before sleep"
+},
+{
+"d": 21,
+"lv": "beginner",
+"t": "Boredom is not an enemy",
+"f": "How small moments of boredom can spark ideas and calm"
+},
+{
+"d": 22,
+"lv": "beginner",
+"t": "Waiting without a phone",
+"f": "Trying a queue or a bus ride with eyes up and phone away"
+},
+{
+"d": 23,
+"lv": "beginner",
+"t": "Single-tasking with screens",
+"f": "Doing one thing at a time instead of switching between apps"
+},
+{
+"d": 24,
+"lv": "beginner",
+"t": "Kindness to yourself",
+"f": "Changing habits without guilt or harsh self-judgement"
+},
+{
+"d": 25,
+"lv": "beginner",
+"t": "Tracking feelings, not just minutes",
+"f": "Noting how different apps leave you feeling energised or drained"
+},
+{
+"d": 26,
+"lv": "beginner",
+"t": "Talking about your goal",
+"f": "Telling a friend or family member about your screen balance plan"
+},
+{
+"d": 27,
+"lv": "beginner",
+"t": "Celebrating small wins",
+"f": "Noticing progress, like one calmer evening or one longer walk"
+},
+{
+"d": 28,
+"lv": "beginner",
+"t": "Tech that helps you",
+"f": "Recognising the apps and tools that genuinely improve your life"
+},
+{
+"d": 29,
+"lv": "beginner",
+"t": "Your personal why",
+"f": "Writing one sentence about why you want a healthier relationship with screens"
+},
+{
+"d": 30,
+"lv": "beginner",
+"t": "Month one review",
+"f": "Looking back at your screen time insights and first small changes"
+},
+{
+"d": 31,
+"lv": "beginner",
+"t": "Taming notifications",
+"f": "Why constant alerts break attention and how to choose which ones matter"
+},
+{
+"d": 32,
+"lv": "beginner",
+"t": "Turning off non-essential alerts",
+"f": "Going through apps and switching off notifications you do not need"
+},
+{
+"d": 33,
+"lv": "beginner",
+"t": "Batching notifications",
+"f": "Using scheduled summaries so alerts arrive a few times a day"
+},
+{
+"d": 34,
+"lv": "beginner",
+"t": "Do Not Disturb mode",
+"f": "Setting quiet hours so your phone stays silent when you need calm"
+},
+{
+"d": 35,
+"lv": "beginner",
+"t": "Focus modes",
+"f": "Creating modes for work, family time or sleep that limit distractions"
+},
+{
+"d": 36,
+"lv": "beginner",
+"t": "Silencing group chats",
+"f": "Muting busy chats and checking them when it suits you"
+},
+{
+"d": 37,
+"lv": "beginner",
+"t": "Badges and red dots",
+"f": "Turning off app badges that create a feeling of urgency"
+},
+{
+"d": 38,
+"lv": "beginner",
+"t": "A calmer home screen",
+"f": "Moving tempting apps off the first screen to reduce impulse opening"
+},
+{
+"d": 39,
+"lv": "beginner",
+"t": "Folders and the second page",
+"f": "Hiding distracting apps in folders so opening them takes a decision"
+},
+{
+"d": 40,
+"lv": "beginner",
+"t": "Greyscale mode",
+"f": "Trying a black and white screen to make the phone less eye-catching"
+},
+{
+"d": 41,
+"lv": "beginner",
+"t": "App time limits",
+"f": "Setting gentle daily limits on the apps you overuse"
+},
+{
+"d": 42,
+"lv": "beginner",
+"t": "Logging out",
+"f": "Signing out of apps so each visit needs a moment of thought"
+},
+{
+"d": 43,
+"lv": "beginner",
+"t": "Deleting apps you do not need",
+"f": "Removing unused or draining apps and keeping only what serves you"
+},
+{
+"d": 44,
+"lv": "beginner",
+"t": "Using the browser instead of the app",
+"f": "Visiting some services in a browser to make use more deliberate"
+},
+{
+"d": 45,
+"lv": "beginner",
+"t": "A real alarm clock",
+"f": "Using a simple alarm clock so the phone can sleep outside the bedroom"
+},
+{
+"d": 46,
+"lv": "beginner",
+"t": "Charging station outside the bedroom",
+"f": "Choosing a charging spot away from where you sleep"
+},
+{
+"d": 47,
+"lv": "beginner",
+"t": "Wallpaper with a reminder",
+"f": "Setting a wallpaper that reminds you of your intention"
+},
+{
+"d": 48,
+"lv": "beginner",
+"t": "Turning off autoplay",
+"f": "Stopping videos from starting automatically on streaming and social apps"
+},
+{
+"d": 49,
+"lv": "beginner",
+"t": "Infinite scroll awareness",
+"f": "How endless feeds are designed and how to set your own stopping points"
+},
+{
+"d": 50,
+"lv": "beginner",
+"t": "Unsubscribing from emails",
+"f": "Clearing promotional emails so your inbox feels lighter"
+},
+{
+"d": 51,
+"lv": "beginner",
+"t": "Cleaning up your contacts and chats",
+"f": "Archiving old chats and reducing digital noise"
+},
+{
+"d": 52,
+"lv": "beginner",
+"t": "Smartwatch settings",
+"f": "Making a watch helpful instead of another source of interruptions"
+},
+{
+"d": 53,
+"lv": "beginner",
+"t": "Tablet and computer settings",
+"f": "Applying the same calm settings to your other devices"
+},
+{
+"d": 54,
+"lv": "beginner",
+"t": "Family device settings",
+"f": "Shared settings and screen-time tools for households"
+},
+{
+"d": 55,
+"lv": "beginner",
+"t": "Phone-free zones at home",
+"f": "Choosing places like the dining table where phones do not go"
+},
+{
+"d": 56,
+"lv": "beginner",
+"t": "Phone-free times of day",
+"f": "Picking one daily window for being fully offline"
+},
+{
+"d": 57,
+"lv": "beginner",
+"t": "Leaving the phone behind",
+"f": "Going for a short walk or errand without your phone"
+},
+{
+"d": 58,
+"lv": "beginner",
+"t": "Carrying the phone in a bag",
+"f": "Keeping the phone out of your pocket to reduce automatic checks"
+},
+{
+"d": 59,
+"lv": "beginner",
+"t": "Your calm-phone checklist",
+"f": "Putting all your new settings together into one personal checklist"
+},
+{
+"d": 60,
+"lv": "beginner",
+"t": "Phone setup review",
+"f": "Revisiting notifications, home screen and limits that worked for you"
+},
+{
+"d": 61,
+"lv": "beginner",
+"t": "A phone-free first half hour",
+"f": "Starting the morning with stretching, water or sunlight before screens"
+},
+{
+"d": 62,
+"lv": "beginner",
+"t": "Morning routines without screens",
+"f": "Building a short morning ritual that sets a calm tone"
+},
+{
+"d": 63,
+"lv": "beginner",
+"t": "Mindful breakfast",
+"f": "Eating breakfast without news or feeds and noticing the taste"
+},
+{
+"d": 64,
+"lv": "beginner",
+"t": "Commuting with eyes up",
+"f": "Using travel time to look around, think or chat"
+},
+{
+"d": 65,
+"lv": "beginner",
+"t": "Lunch away from the desk",
+"f": "Taking a proper screen-free lunch break"
+},
+{
+"d": 66,
+"lv": "beginner",
+"t": "Afternoon reset",
+"f": "A short offline break to recharge in the afternoon"
+},
+{
+"d": 67,
+"lv": "beginner",
+"t": "The evening wind-down",
+"f": "Creating a relaxing routine for the hour before bed"
+},
+{
+"d": 68,
+"lv": "beginner",
+"t": "A screen curfew",
+"f": "Choosing a time each evening when screens go off"
+},
+{
+"d": 69,
+"lv": "beginner",
+"t": "Night mode and warm light",
+"f": "Using warmer screen settings in the evening while cutting overall use"
+},
+{
+"d": 70,
+"lv": "beginner",
+"t": "Reading before sleep",
+"f": "Swapping late-night scrolling for a paper book or magazine"
+},
+{
+"d": 71,
+"lv": "beginner",
+"t": "Journaling at night",
+"f": "Writing a few lines about the day instead of checking the phone"
+},
+{
+"d": 72,
+"lv": "beginner",
+"t": "Weekend mornings offline",
+"f": "Enjoying a slow weekend morning without screens"
+},
+{
+"d": 73,
+"lv": "beginner",
+"t": "Phone-free meals",
+"f": "Making meals a time for food and conversation, not screens"
+},
+{
+"d": 74,
+"lv": "beginner",
+"t": "Walking without headphones",
+"f": "Enjoying the sounds around you on a short walk"
+},
+{
+"d": 75,
+"lv": "beginner",
+"t": "Mindful moments in the day",
+"f": "Short breathing pauses to replace quick phone checks"
+},
+{
+"d": 76,
+"lv": "beginner",
+"t": "Daily screen check-ins",
+"f": "A quick review each evening of how screen use felt today"
+},
+{
+"d": 77,
+"lv": "beginner",
+"t": "Planning tomorrow on paper",
+"f": "Using a notebook to plan the next day instead of an app"
+},
+{
+"d": 78,
+"lv": "beginner",
+"t": "Offline to-do lists",
+"f": "The satisfaction of writing and crossing off tasks by hand"
+},
+{
+"d": 79,
+"lv": "beginner",
+"t": "Paper calendar or planner",
+"f": "Trying an analogue planner to see your week at a glance"
+},
+{
+"d": 80,
+"lv": "beginner",
+"t": "The power of routines",
+"f": "Why linking new habits to existing routines makes them stick"
+},
+{
+"d": 81,
+"lv": "beginner",
+"t": "Handling slips",
+"f": "What to do when you fall back into scrolling, without guilt"
+},
+{
+"d": 82,
+"lv": "beginner",
+"t": "Screen use on sick days",
+"f": "Resting kindly while keeping some balance when unwell"
+},
+{
+"d": 83,
+"lv": "beginner",
+"t": "Screens and stress",
+"f": "Noticing when scrolling is a way to escape and trying other comforts"
+},
+{
+"d": 84,
+"lv": "beginner",
+"t": "A daily walk outdoors",
+"f": "Getting fresh air and daylight every day"
+},
+{
+"d": 85,
+"lv": "beginner",
+"t": "Sunlight and nature breaks",
+"f": "Spending a little time near trees, water or sky"
+},
+{
+"d": 86,
+"lv": "beginner",
+"t": "Stretching instead of scrolling",
+"f": "Short stretch routines for moments you would usually scroll"
+},
+{
+"d": 87,
+"lv": "beginner",
+"t": "Doing nothing on purpose",
+"f": "Sitting quietly for a few minutes and letting your mind wander"
+},
+{
+"d": 88,
+"lv": "beginner",
+"t": "Weekly reflection",
+"f": "Looking back at your week and noticing your new rhythms"
+},
+{
+"d": 89,
+"lv": "beginner",
+"t": "Small routines, big impact",
+"f": "How tiny daily habits add up over weeks and months"
+},
+{
+"d": 90,
+"lv": "beginner",
+"t": "Routines review",
+"f": "Celebrating the morning, evening and daily routines that feel good"
+},
+{
+"d": 91,
+"lv": "beginner",
+"t": "Rediscovering offline hobbies",
+"f": "Remembering activities you loved before screens took the time"
+},
+{
+"d": 92,
+"lv": "beginner",
+"t": "Reading for pleasure",
+"f": "Building a reading habit with books you truly enjoy"
+},
+{
+"d": 93,
+"lv": "beginner",
+"t": "Visiting a library",
+"f": "Exploring a local library as a calm, free space for discovery"
+},
+{
+"d": 94,
+"lv": "beginner",
+"t": "Drawing and doodling",
+"f": "Picking up a pencil just for fun, with no need for skill"
+},
+{
+"d": 95,
+"lv": "beginner",
+"t": "Writing by hand",
+"f": "Letters, journals and stories written on paper"
+},
+{
+"d": 96,
+"lv": "beginner",
+"t": "Music you make",
+"f": "Playing, singing or learning a simple instrument"
+},
+{
+"d": 97,
+"lv": "beginner",
+"t": "Cooking as an offline activity",
+"f": "Enjoying the hands-on pleasure of preparing a meal"
+},
+{
+"d": 98,
+"lv": "beginner",
+"t": "Gardening and plants",
+"f": "Caring for plants as a calm, screen-free routine"
+},
+{
+"d": 99,
+"lv": "beginner",
+"t": "Crafts and making things",
+"f": "Knitting, building, sewing or modelling with your hands"
+},
+{
+"d": 100,
+"lv": "beginner",
+"t": "Puzzles and brain games on paper",
+"f": "Crosswords, sudoku and jigsaw puzzles away from screens"
+},
+{
+"d": 101,
+"lv": "beginner",
+"t": "Board games and card games",
+"f": "Playing games face to face with family or friends"
+},
+{
+"d": 102,
+"lv": "beginner",
+"t": "Sport and movement",
+"f": "Finding a sport or activity that gets you moving and smiling"
+},
+{
+"d": 103,
+"lv": "beginner",
+"t": "Walking and hiking",
+"f": "Exploring paths and parks on foot"
+},
+{
+"d": 104,
+"lv": "beginner",
+"t": "Cycling and exploring",
+"f": "Discovering your area by bike"
+},
+{
+"d": 105,
+"lv": "beginner",
+"t": "Photography without sharing",
+"f": "Taking photos for yourself, not for posting"
+},
+{
+"d": 106,
+"lv": "beginner",
+"t": "Learning a skill offline",
+"f": "Taking a class or workshop in person"
+},
+{
+"d": 107,
+"lv": "beginner",
+"t": "Volunteering",
+"f": "Giving time to a local cause and meeting people face to face"
+},
+{
+"d": 108,
+"lv": "beginner",
+"t": "Local events and meetups",
+"f": "Joining in-person clubs, talks and community events"
+},
+{
+"d": 109,
+"lv": "beginner",
+"t": "Calling instead of texting",
+"f": "Hearing a friend's voice with a real phone call"
+},
+{
+"d": 110,
+"lv": "beginner",
+"t": "Meeting friends in person",
+"f": "Planning coffee, walks or meals with friends"
+},
+{
+"d": 111,
+"lv": "beginner",
+"t": "Family activities without screens",
+"f": "Simple games, outings and projects to share"
+},
+{
+"d": 112,
+"lv": "beginner",
+"t": "Creative boredom projects",
+"f": "Turning a free afternoon into a small creative project"
+},
+{
+"d": 113,
+"lv": "beginner",
+"t": "Building a hobby corner",
+"f": "Creating a space at home that invites offline activities"
+},
+{
+"d": 114,
+"lv": "beginner",
+"t": "Trying something new each week",
+"f": "Committing to small offline experiments"
+},
+{
+"d": 115,
+"lv": "beginner",
+"t": "Offline joy list",
+"f": "Writing a list of activities that make you happy without screens"
+},
+{
+"d": 116,
+"lv": "beginner",
+"t": "Learning from a slow day",
+"f": "Spending one day at a slower pace and noticing how it feels"
+},
+{
+"d": 117,
+"lv": "beginner",
+"t": "A screen-free afternoon",
+"f": "Planning and enjoying a full afternoon offline"
+},
+{
+"d": 118,
+"lv": "beginner",
+"t": "Sharing your offline wins",
+"f": "Telling others about the hobbies you have rediscovered"
+},
+{
+"d": 119,
+"lv": "beginner",
+"t": "Habits that last",
+"f": "Choosing the offline activities you want to keep long term"
+},
+{
+"d": 120,
+"lv": "beginner",
+"t": "Beginner stage review",
+"f": "Celebrating 120 days of awareness, settings, routines and hobbies"
+},
+{
+"d": 121,
+"lv": "intermediate",
+"t": "Social media with intention",
+"f": "Deciding why you use each platform before opening it"
+},
+{
+"d": 122,
+"lv": "intermediate",
+"t": "How feeds are designed",
+"f": "A general look at how feeds aim to keep people watching"
+},
+{
+"d": 123,
+"lv": "intermediate",
+"t": "Curating your feed",
+"f": "Unfollowing accounts that drain you and following ones that inspire"
+},
+{
+"d": 124,
+"lv": "intermediate",
+"t": "Muting without unfollowing",
+"f": "Using mute to reduce noise while keeping connections"
+},
+{
+"d": 125,
+"lv": "intermediate",
+"t": "Comparison and social media",
+"f": "Remembering that feeds show highlights, not whole lives"
+},
+{
+"d": 126,
+"lv": "intermediate",
+"t": "Positive accounts to follow",
+"f": "Finding creators who teach, inspire or make you laugh kindly"
+},
+{
+"d": 127,
+"lv": "intermediate",
+"t": "Time windows for social apps",
+"f": "Choosing set times of day for checking social media"
+},
+{
+"d": 128,
+"lv": "intermediate",
+"t": "Posting with purpose",
+"f": "Sharing because you want to, not because you feel you must"
+},
+{
+"d": 129,
+"lv": "intermediate",
+"t": "Likes and validation",
+"f": "Noticing how likes feel and finding worth beyond numbers"
+},
+{
+"d": 130,
+"lv": "intermediate",
+"t": "Reading comments mindfully",
+"f": "Choosing when to skip comment sections that stress you"
+},
+{
+"d": 131,
+"lv": "intermediate",
+"t": "Short video habits",
+"f": "Recognising how quickly short videos fill time and setting limits"
+},
+{
+"d": 132,
+"lv": "intermediate",
+"t": "Stories and disappearing content",
+"f": "Why temporary content can create a fear of missing out"
+},
+{
+"d": 133,
+"lv": "intermediate",
+"t": "Fear of missing out",
+"f": "Understanding FOMO and enjoying the joy of missing out"
+},
+{
+"d": 134,
+"lv": "intermediate",
+"t": "Taking a social media break",
+"f": "Planning a short break from one platform and noticing the effects"
+},
+{
+"d": 135,
+"lv": "intermediate",
+"t": "Deactivating temporarily",
+"f": "Pausing an account for a while without deleting it"
+},
+{
+"d": 136,
+"lv": "intermediate",
+"t": "Messaging apps and boundaries",
+"f": "Setting expectations about how fast you reply"
+},
+{
+"d": 137,
+"lv": "intermediate",
+"t": "Read receipts and typing signals",
+"f": "Turning off features that create pressure to reply quickly"
+},
+{
+"d": 138,
+"lv": "intermediate",
+"t": "Group chats in balance",
+"f": "Staying connected without being constantly pulled in"
+},
+{
+"d": 139,
+"lv": "intermediate",
+"t": "Online debates",
+"f": "Choosing calm and stepping away from heated online discussions"
+},
+{
+"d": 140,
+"lv": "intermediate",
+"t": "Sharing about others",
+"f": "Asking before posting photos of friends or family"
+},
+{
+"d": 141,
+"lv": "intermediate",
+"t": "Social media and self-esteem",
+"f": "Building confidence from real experiences and relationships"
+},
+{
+"d": 142,
+"lv": "intermediate",
+"t": "Creating instead of consuming",
+"f": "Using platforms to make something rather than only scroll"
+},
+{
+"d": 143,
+"lv": "intermediate",
+"t": "Social media for learning",
+"f": "Following educational accounts and using platforms with purpose"
+},
+{
+"d": 144,
+"lv": "intermediate",
+"t": "Keeping in touch across distances",
+"f": "Using messaging warmly to stay close to faraway friends"
+},
+{
+"d": 145,
+"lv": "intermediate",
+"t": "Digital friendships and real meetings",
+"f": "Turning online connections into calls or meetups safely"
+},
+{
+"d": 146,
+"lv": "intermediate",
+"t": "Cultural differences in online habits",
+"f": "How people in different countries use social media"
+},
+{
+"d": 147,
+"lv": "intermediate",
+"t": "Social media and travel",
+"f": "Enjoying trips in the moment and sharing later"
+},
+{
+"d": 148,
+"lv": "intermediate",
+"t": "A week of mindful social media",
+"f": "Trying a week of intentional, time-limited use"
+},
+{
+"d": 149,
+"lv": "intermediate",
+"t": "Your social media rules",
+"f": "Writing a short personal guideline for how you use social apps"
+},
+{
+"d": 150,
+"lv": "intermediate",
+"t": "Social media review",
+"f": "Revisiting feed curation, time windows and your personal rules"
+},
+{
+"d": 151,
+"lv": "intermediate",
+"t": "Focus in a distracted world",
+"f": "Why attention is valuable and how distractions add up"
+},
+{
+"d": 152,
+"lv": "intermediate",
+"t": "The cost of task switching",
+"f": "How switching between tasks and apps can drain focus"
+},
+{
+"d": 153,
+"lv": "intermediate",
+"t": "Deep work sessions",
+"f": "Setting aside blocks of time for focused, uninterrupted work"
+},
+{
+"d": 154,
+"lv": "intermediate",
+"t": "The focus timer method",
+"f": "Working in short focused rounds with breaks in between"
+},
+{
+"d": 155,
+"lv": "intermediate",
+"t": "Email at set times",
+"f": "Checking email a few times a day instead of constantly"
+},
+{
+"d": 156,
+"lv": "intermediate",
+"t": "Writing better emails",
+"f": "Clear, short emails that reduce back-and-forth messages"
+},
+{
+"d": 157,
+"lv": "intermediate",
+"t": "Inbox zero, gently",
+"f": "Simple ways to keep your inbox under control"
+},
+{
+"d": 158,
+"lv": "intermediate",
+"t": "Work chat boundaries",
+"f": "Setting status messages and response expectations at work"
+},
+{
+"d": 159,
+"lv": "intermediate",
+"t": "After-hours boundaries",
+"f": "Switching off work notifications outside working time"
+},
+{
+"d": 160,
+"lv": "intermediate",
+"t": "Meetings with fewer screens",
+"f": "Laptops closed and phones away for more present meetings"
+},
+{
+"d": 161,
+"lv": "intermediate",
+"t": "Tidy digital workspace",
+"f": "Closing tabs and organising your desktop for clarity"
+},
+{
+"d": 162,
+"lv": "intermediate",
+"t": "One tab at a time",
+"f": "Reducing browser tabs to stay on task"
+},
+{
+"d": 163,
+"lv": "intermediate",
+"t": "Website blockers",
+"f": "Using tools to block distracting sites during focus time"
+},
+{
+"d": 164,
+"lv": "intermediate",
+"t": "Studying with fewer distractions",
+"f": "Phone-free study sessions and paper notes"
+},
+{
+"d": 165,
+"lv": "intermediate",
+"t": "Note-taking by hand",
+"f": "How writing notes on paper can help you remember"
+},
+{
+"d": 166,
+"lv": "intermediate",
+"t": "Breaks that truly refresh",
+"f": "Choosing offline breaks instead of scrolling during pauses"
+},
+{
+"d": 167,
+"lv": "intermediate",
+"t": "Working from home boundaries",
+"f": "Separating work and home life when both happen in one place"
+},
+{
+"d": 168,
+"lv": "intermediate",
+"t": "The end-of-day shutdown",
+"f": "A small ritual that closes the workday and frees the evening"
+},
+{
+"d": 169,
+"lv": "intermediate",
+"t": "Planning focus for the week",
+"f": "Scheduling deep work blocks in advance"
+},
+{
+"d": 170,
+"lv": "intermediate",
+"t": "Monotasking in daily life",
+"f": "Doing chores, meals and walks with full attention"
+},
+{
+"d": 171,
+"lv": "intermediate",
+"t": "Attention and creativity",
+"f": "How quiet, unplugged time can spark new ideas"
+},
+{
+"d": 172,
+"lv": "intermediate",
+"t": "Daydreaming as a resource",
+"f": "Letting the mind wander to solve problems"
+},
+{
+"d": 173,
+"lv": "intermediate",
+"t": "Saying no to digital overload",
+"f": "Choosing fewer apps, tools and subscriptions"
+},
+{
+"d": 174,
+"lv": "intermediate",
+"t": "Digital tools that support focus",
+"f": "Simple apps that help you plan rather than distract"
+},
+{
+"d": 175,
+"lv": "intermediate",
+"t": "Your focus environment",
+"f": "Setting up a space with fewer temptations"
+},
+{
+"d": 176,
+"lv": "intermediate",
+"t": "Energy and attention",
+"f": "Noticing your best focus hours and protecting them"
+},
+{
+"d": 177,
+"lv": "intermediate",
+"t": "Teaching focus to others",
+"f": "Sharing focus habits with classmates or colleagues"
+},
+{
+"d": 178,
+"lv": "intermediate",
+"t": "Focus experiments",
+"f": "Trying different focus methods and keeping what works"
+},
+{
+"d": 179,
+"lv": "intermediate",
+"t": "Your focus plan",
+"f": "Writing a personal plan for calm, productive days"
+},
+{
+"d": 180,
+"lv": "intermediate",
+"t": "Focus and work review",
+"f": "Revisiting deep work, email habits and boundaries"
+},
+{
+"d": 181,
+"lv": "intermediate",
+"t": "Being present with people",
+"f": "How phones on the table can affect conversations"
+},
+{
+"d": 182,
+"lv": "intermediate",
+"t": "Phone stacking with friends",
+"f": "A fun game where everyone puts phones away during a meal"
+},
+{
+"d": 183,
+"lv": "intermediate",
+"t": "Active listening",
+"f": "Giving full attention when someone talks to you"
+},
+{
+"d": 184,
+"lv": "intermediate",
+"t": "Screens and family life",
+"f": "Creating shared family agreements about devices"
+},
+{
+"d": 185,
+"lv": "intermediate",
+"t": "Family media plan",
+"f": "Writing a simple plan with family members about screen use"
+},
+{
+"d": 186,
+"lv": "intermediate",
+"t": "Children and screens",
+"f": "General ideas for balanced screen habits and modelling them as adults"
+},
+{
+"d": 187,
+"lv": "intermediate",
+"t": "Teens and phones",
+"f": "Respectful conversations with teens about screen balance"
+},
+{
+"d": 188,
+"lv": "intermediate",
+"t": "Screen-free play ideas for kids",
+"f": "Simple games and activities children enjoy offline"
+},
+{
+"d": 189,
+"lv": "intermediate",
+"t": "Grandparents and technology",
+"f": "Using tech to connect generations, plus offline time together"
+},
+{
+"d": 190,
+"lv": "intermediate",
+"t": "Housemates and screen habits",
+"f": "Agreeing on shared spaces and quiet times"
+},
+{
+"d": 191,
+"lv": "intermediate",
+"t": "Friends who are always online",
+"f": "Kindly suggesting offline plans with friends"
+},
+{
+"d": 192,
+"lv": "intermediate",
+"t": "Being a good example",
+"f": "How your own habits influence those around you"
+},
+{
+"d": 193,
+"lv": "intermediate",
+"t": "Shared offline rituals",
+"f": "Family walks, game nights or Sunday breakfasts without screens"
+},
+{
+"d": 194,
+"lv": "intermediate",
+"t": "Conversation starters",
+"f": "Interesting questions to spark talk at meals"
+},
+{
+"d": 195,
+"lv": "intermediate",
+"t": "Rediscovering phone calls",
+"f": "Long calls with friends instead of short texts"
+},
+{
+"d": 196,
+"lv": "intermediate",
+"t": "Writing letters and postcards",
+"f": "The joy of sending and receiving handwritten mail"
+},
+{
+"d": 197,
+"lv": "intermediate",
+"t": "Celebrations without screens",
+"f": "Enjoying birthdays and holidays fully in the moment"
+},
+{
+"d": 198,
+"lv": "intermediate",
+"t": "Taking fewer photos at events",
+"f": "Capturing a few moments then putting the camera away"
+},
+{
+"d": 199,
+"lv": "intermediate",
+"t": "Screen balance at gatherings",
+"f": "Simple ways to keep group time phone-light"
+},
+{
+"d": 200,
+"lv": "intermediate",
+"t": "Respecting different habits",
+"f": "Understanding that everyone finds their own balance"
+},
+{
+"d": 201,
+"lv": "intermediate",
+"t": "Talking about screens without nagging",
+"f": "Kind ways to discuss habits with loved ones"
+},
+{
+"d": 202,
+"lv": "intermediate",
+"t": "Pets and offline time",
+"f": "Walking, playing and relaxing with animals"
+},
+{
+"d": 203,
+"lv": "intermediate",
+"t": "Neighbours and community",
+"f": "Getting to know people nearby face to face"
+},
+{
+"d": 204,
+"lv": "intermediate",
+"t": "Shared hobbies with friends",
+"f": "Starting an offline activity together"
+},
+{
+"d": 205,
+"lv": "intermediate",
+"t": "Hosting friends without screens",
+"f": "Planning a visit full of games, food and conversation"
+},
+{
+"d": 206,
+"lv": "intermediate",
+"t": "Being reachable without being on call",
+"f": "Letting loved ones know how and when to reach you"
+},
+{
+"d": 207,
+"lv": "intermediate",
+"t": "Tech-free walks with a friend",
+"f": "Walking and talking side by side without phones"
+},
+{
+"d": 208,
+"lv": "intermediate",
+"t": "Listening to music together",
+"f": "Sharing music out loud instead of separately on earbuds"
+},
+{
+"d": 209,
+"lv": "intermediate",
+"t": "Asking loved ones for support",
+"f": "Inviting family or friends to help you keep your screen goals"
+},
+{
+"d": 210,
+"lv": "intermediate",
+"t": "Relationships review",
+"f": "Revisiting presence, family plans and offline rituals"
+},
+{
+"d": 211,
+"lv": "intermediate",
+"t": "Planning a digital sabbath",
+"f": "Choosing one day or half-day a week to be mostly offline"
+},
+{
+"d": 212,
+"lv": "intermediate",
+"t": "Your first offline day",
+"f": "Preparing for and enjoying a full day with minimal screens"
+},
+{
+"d": 213,
+"lv": "intermediate",
+"t": "Weekend detox",
+"f": "Trying a full weekend with screens only for essentials"
+},
+{
+"d": 214,
+"lv": "intermediate",
+"t": "Letting people know you are offline",
+"f": "Setting an away message so you can relax"
+},
+{
+"d": 215,
+"lv": "intermediate",
+"t": "Coping with the urge to check",
+"f": "Gentle strategies when you miss your phone"
+},
+{
+"d": 216,
+"lv": "intermediate",
+"t": "Noticing the benefits",
+"f": "Recording how a day offline changes mood, sleep and focus"
+},
+{
+"d": 217,
+"lv": "intermediate",
+"t": "A screen-free evening each week",
+"f": "Making one evening a week fully offline"
+},
+{
+"d": 218,
+"lv": "intermediate",
+"t": "A dumb phone experiment",
+"f": "Trying a basic phone for a few days or a weekend"
+},
+{
+"d": 219,
+"lv": "intermediate",
+"t": "Travelling with less tech",
+"f": "Enjoying a trip with your phone mainly for maps and essentials"
+},
+{
+"d": 220,
+"lv": "intermediate",
+"t": "Unplugged holidays",
+"f": "Planning a holiday with clear limits on screens"
+},
+{
+"d": 221,
+"lv": "intermediate",
+"t": "Nature as a reset",
+"f": "Spending a day in nature without devices"
+},
+{
+"d": 222,
+"lv": "intermediate",
+"t": "Camping and outdoor trips",
+"f": "Enjoying sleeping outdoors and slow rhythms"
+},
+{
+"d": 223,
+"lv": "intermediate",
+"t": "Analog navigation",
+"f": "Using paper maps and asking locals for directions"
+},
+{
+"d": 224,
+"lv": "intermediate",
+"t": "Offline entertainment while travelling",
+"f": "Books, cards and journals for journeys"
+},
+{
+"d": 225,
+"lv": "intermediate",
+"t": "Silent mornings",
+"f": "Spending one morning in quiet without media"
+},
+{
+"d": 226,
+"lv": "intermediate",
+"t": "A media fast",
+"f": "Taking a short break from news, videos and podcasts"
+},
+{
+"d": 227,
+"lv": "intermediate",
+"t": "Embracing boredom on purpose",
+"f": "Letting yourself be bored and seeing what comes up"
+},
+{
+"d": 228,
+"lv": "intermediate",
+"t": "Creative output after unplugging",
+"f": "Using free time for writing, art or building"
+},
+{
+"d": 229,
+"lv": "intermediate",
+"t": "Returning online mindfully",
+"f": "Coming back after a detox without falling into old habits"
+},
+{
+"d": 230,
+"lv": "intermediate",
+"t": "Lessons from your detox",
+"f": "Writing down what you learned from time offline"
+},
+{
+"d": 231,
+"lv": "intermediate",
+"t": "Designing regular detox moments",
+"f": "Choosing daily, weekly and yearly offline times"
+},
+{
+"d": 232,
+"lv": "intermediate",
+"t": "Seasonal resets",
+"f": "Doing a digital spring clean a few times a year"
+},
+{
+"d": 233,
+"lv": "intermediate",
+"t": "Detox with a friend",
+"f": "Supporting each other through an offline challenge"
+},
+{
+"d": 234,
+"lv": "intermediate",
+"t": "Group offline challenges",
+"f": "Organising a phone-free activity with a group"
+},
+{
+"d": 235,
+"lv": "intermediate",
+"t": "Offline traditions around the world",
+"f": "Rest days and quiet customs in different cultures"
+},
+{
+"d": 236,
+"lv": "intermediate",
+"t": "Slow living ideas",
+"f": "Embracing a slower pace in everyday life"
+},
+{
+"d": 237,
+"lv": "intermediate",
+"t": "Silence and calm",
+"f": "Enjoying quiet spaces and noticing their effect"
+},
+{
+"d": 238,
+"lv": "intermediate",
+"t": "Digital detox myths",
+"f": "Why balance matters more than extreme rules"
+},
+{
+"d": 239,
+"lv": "intermediate",
+"t": "Making detox sustainable",
+"f": "Turning short experiments into lasting habits"
+},
+{
+"d": 240,
+"lv": "intermediate",
+"t": "A morning market without a phone",
+"f": "Exploring a local market with all your senses and no screen"
+},
+{
+"d": 241,
+"lv": "intermediate",
+"t": "A day of analogue tools",
+"f": "Using a watch, notebook, paper map and camera for one whole day"
+},
+{
+"d": 242,
+"lv": "intermediate",
+"t": "Cooking a slow meal offline",
+"f": "Spending an unhurried afternoon cooking without screens"
+},
+{
+"d": 243,
+"lv": "intermediate",
+"t": "Sunrise or sunset without screens",
+"f": "Watching the sky change colour with your phone left at home"
+},
+{
+"d": 244,
+"lv": "intermediate",
+"t": "A long walk with no destination",
+"f": "Wandering on foot and following your curiosity"
+},
+{
+"d": 245,
+"lv": "intermediate",
+"t": "Stargazing night",
+"f": "Looking at the night sky away from bright screens and city lights"
+},
+{
+"d": 246,
+"lv": "intermediate",
+"t": "A reading marathon",
+"f": "Spending a few uninterrupted hours with one good book"
+},
+{
+"d": 247,
+"lv": "intermediate",
+"t": "Journaling a detox day",
+"f": "Writing by hand about what you did and felt during a day offline"
+},
+{
+"d": 248,
+"lv": "intermediate",
+"t": "The phone in a drawer",
+"f": "Putting the phone in a drawer at home for a few hours at a time"
+},
+{
+"d": 249,
+"lv": "intermediate",
+"t": "An unplugged picnic",
+"f": "Enjoying food, games and conversation in a park without devices"
+},
+{
+"d": 250,
+"lv": "intermediate",
+"t": "Detox experiments review",
+"f": "Looking back at offline days, trips and resets"
+},
+{
+"d": 251,
+"lv": "advanced",
+"t": "The attention economy",
+"f": "How many free apps earn money from user attention"
+},
+{
+"d": 252,
+"lv": "advanced",
+"t": "Persuasive design",
+"f": "Design features like streaks, alerts and rewards that keep people engaged"
+},
+{
+"d": 253,
+"lv": "advanced",
+"t": "Variable rewards",
+"f": "Why unpredictable rewards like new likes keep us checking"
+},
+{
+"d": 254,
+"lv": "advanced",
+"t": "Streaks and gamification",
+"f": "How streaks motivate and how to choose ones that truly help"
+},
+{
+"d": 255,
+"lv": "advanced",
+"t": "Habit loops",
+"f": "Cue, routine and reward in your screen habits"
+},
+{
+"d": 256,
+"lv": "advanced",
+"t": "Changing a habit loop",
+"f": "Keeping the cue and reward but swapping the routine"
+},
+{
+"d": 257,
+"lv": "advanced",
+"t": "Willpower versus environment",
+"f": "Why changing your surroundings works better than willpower alone"
+},
+{
+"d": 258,
+"lv": "advanced",
+"t": "Friction as a tool",
+"f": "Making unwanted habits harder and good habits easier"
+},
+{
+"d": 259,
+"lv": "advanced",
+"t": "Implementation intentions",
+"f": "If-then plans like if I wake up, then I drink water first"
+},
+{
+"d": 260,
+"lv": "advanced",
+"t": "Habit stacking",
+"f": "Linking a new offline habit to an existing routine"
+},
+{
+"d": 261,
+"lv": "advanced",
+"t": "Identity-based habits",
+"f": "Seeing yourself as someone who uses tech with purpose"
+},
+{
+"d": 262,
+"lv": "advanced",
+"t": "Mind wandering and screens",
+"f": "How constant input reduces space for reflection"
+},
+{
+"d": 263,
+"lv": "advanced",
+"t": "Attention restoration",
+"f": "How nature and calm environments help restore attention"
+},
+{
+"d": 264,
+"lv": "advanced",
+"t": "Information overload",
+"f": "Why too much information makes decisions harder"
+},
+{
+"d": 265,
+"lv": "advanced",
+"t": "Decision fatigue and apps",
+"f": "How many small choices online can tire the mind"
+},
+{
+"d": 266,
+"lv": "advanced",
+"t": "The news diet",
+"f": "Choosing a few trusted sources and set times for news"
+},
+{
+"d": 267,
+"lv": "advanced",
+"t": "Doomscrolling",
+"f": "Recognising the loop of negative news and stepping out"
+},
+{
+"d": 268,
+"lv": "advanced",
+"t": "Checking facts calmly",
+"f": "Pausing before sharing and checking sources"
+},
+{
+"d": 269,
+"lv": "advanced",
+"t": "Podcasts and audio in balance",
+"f": "Enjoying audio content while keeping quiet time"
+},
+{
+"d": 270,
+"lv": "advanced",
+"t": "Streaming and binge-watching",
+"f": "Choosing episodes on purpose and avoiding autoplay marathons"
+},
+{
+"d": 271,
+"lv": "advanced",
+"t": "Gaming in balance",
+"f": "Enjoying games while keeping time for other activities"
+},
+{
+"d": 272,
+"lv": "advanced",
+"t": "Online shopping habits",
+"f": "Noticing impulse buying and using wish lists"
+},
+{
+"d": 273,
+"lv": "advanced",
+"t": "Digital minimalism",
+"f": "Keeping only the tools that strongly support your values"
+},
+{
+"d": 274,
+"lv": "advanced",
+"t": "Your technology values",
+"f": "Deciding which values your tech use should serve"
+},
+{
+"d": 275,
+"lv": "advanced",
+"t": "Auditing your digital life",
+"f": "Reviewing apps, accounts and subscriptions in one session"
+},
+{
+"d": 276,
+"lv": "advanced",
+"t": "Subscription clean-up",
+"f": "Cancelling services you no longer use"
+},
+{
+"d": 277,
+"lv": "advanced",
+"t": "Digital clutter at home",
+"f": "Organising devices, cables and chargers in one calm spot"
+},
+{
+"d": 278,
+"lv": "advanced",
+"t": "Photo library declutter",
+"f": "Deleting duplicates and keeping favourite memories organised"
+},
+{
+"d": 279,
+"lv": "advanced",
+"t": "File and cloud clean-up",
+"f": "Organising documents so finding things is easy"
+},
+{
+"d": 280,
+"lv": "advanced",
+"t": "Psychology of tech review",
+"f": "Revisiting attention design, habit loops and digital minimalism"
+},
+{
+"d": 281,
+"lv": "advanced",
+"t": "Privacy and calm",
+"f": "How reviewing app permissions reduces digital stress"
+},
+{
+"d": 282,
+"lv": "advanced",
+"t": "Managing app permissions",
+"f": "Checking which apps can access location, contacts and microphone"
+},
+{
+"d": 283,
+"lv": "advanced",
+"t": "Old accounts clean-up",
+"f": "Closing accounts you no longer use"
+},
+{
+"d": 284,
+"lv": "advanced",
+"t": "Password manager peace of mind",
+"f": "How organised passwords reduce stress"
+},
+{
+"d": 285,
+"lv": "advanced",
+"t": "Digital footprint awareness",
+"f": "Thinking about what you share and leave online"
+},
+{
+"d": 286,
+"lv": "advanced",
+"t": "Healthy tech for learning",
+"f": "Using apps and courses for real growth"
+},
+{
+"d": 287,
+"lv": "advanced",
+"t": "Video calls with presence",
+"f": "Making calls more focused and less tiring"
+},
+{
+"d": 288,
+"lv": "advanced",
+"t": "Online learning without overload",
+"f": "Taking courses with clear goals and breaks"
+},
+{
+"d": 289,
+"lv": "advanced",
+"t": "Tech for health and movement",
+"f": "Using apps that encourage walking or rest, in moderation"
+},
+{
+"d": 290,
+"lv": "advanced",
+"t": "Mindfulness apps in balance",
+"f": "Using calm apps as a bridge to offline practice"
+},
+{
+"d": 291,
+"lv": "advanced",
+"t": "Reading on screens versus paper",
+"f": "Choosing the format that helps you focus best"
+},
+{
+"d": 292,
+"lv": "advanced",
+"t": "E-readers for focus",
+"f": "Devices designed only for reading, without distractions"
+},
+{
+"d": 293,
+"lv": "advanced",
+"t": "Technology at the table of other cultures",
+"f": "How different cultures set rules for devices at meals"
+},
+{
+"d": 294,
+"lv": "advanced",
+"t": "Digital etiquette",
+"f": "Polite phone habits in public places and gatherings"
+},
+{
+"d": 295,
+"lv": "advanced",
+"t": "Phones in nature and museums",
+"f": "Enjoying places with your eyes before your camera"
+},
+{
+"d": 296,
+"lv": "advanced",
+"t": "Kind communication online",
+"f": "Writing messages with warmth and clarity"
+},
+{
+"d": 297,
+"lv": "advanced",
+"t": "Screen balance for remote workers",
+"f": "Extra strategies when work happens on screens all day"
+},
+{
+"d": 298,
+"lv": "advanced",
+"t": "Screen balance for students",
+"f": "Study, social life and rest in a digital world"
+},
+{
+"d": 299,
+"lv": "advanced",
+"t": "Screen balance for parents",
+"f": "Managing your own habits while guiding children"
+},
+{
+"d": 300,
+"lv": "advanced",
+"t": "Screen balance for creators",
+"f": "Staying healthy when your work is online content"
+},
+{
+"d": 301,
+"lv": "advanced",
+"t": "Screen balance later in life",
+"f": "Enjoying tech while staying active and social"
+},
+{
+"d": 302,
+"lv": "advanced",
+"t": "Tech-free spaces in the community",
+"f": "Parks, libraries and cafes that invite offline time"
+},
+{
+"d": 303,
+"lv": "advanced",
+"t": "Supporting a friend's detox",
+"f": "Encouraging someone without pressure"
+},
+{
+"d": 304,
+"lv": "advanced",
+"t": "Starting a small offline club",
+"f": "Inviting others to regular screen-free activities"
+},
+{
+"d": 305,
+"lv": "advanced",
+"t": "Smart home and calm",
+"f": "Using smart devices to simplify life rather than add more alerts"
+},
+{
+"d": 306,
+"lv": "advanced",
+"t": "A first phone in the family",
+"f": "General ideas for families deciding on a child's first phone"
+},
+{
+"d": 307,
+"lv": "advanced",
+"t": "Online safety and calm",
+"f": "Blocking, reporting and stepping away from unkind interactions"
+},
+{
+"d": 308,
+"lv": "advanced",
+"t": "Built-in wellbeing tools",
+"f": "Exploring the wellbeing features already on your phone and computer"
+},
+{
+"d": 309,
+"lv": "advanced",
+"t": "Driving without phone distractions",
+"f": "Using driving focus modes and keeping the phone out of reach"
+},
+{
+"d": 310,
+"lv": "advanced",
+"t": "Healthy tech life review",
+"f": "Revisiting privacy, etiquette and balance for different lives"
+},
+{
+"d": 311,
+"lv": "advanced",
+"t": "Mindfulness basics for screen habits",
+"f": "Noticing thoughts and urges without acting on them right away"
+},
+{
+"d": 312,
+"lv": "advanced",
+"t": "Urge surfing",
+"f": "Watching the urge to check your phone rise and fade like a wave"
+},
+{
+"d": 313,
+"lv": "advanced",
+"t": "Breathing for restless moments",
+"f": "Simple breathing exercises to use instead of reaching for the phone"
+},
+{
+"d": 314,
+"lv": "advanced",
+"t": "A body scan before sleep",
+"f": "A calm, screen-free way to relax the body at bedtime"
+},
+{
+"d": 315,
+"lv": "advanced",
+"t": "Walking meditation",
+"f": "Walking slowly and paying attention to each step and sound"
+},
+{
+"d": 316,
+"lv": "advanced",
+"t": "Gratitude journaling",
+"f": "Writing down three good things each day on paper"
+},
+{
+"d": 317,
+"lv": "advanced",
+"t": "Sitting with your thoughts",
+"f": "Spending ten quiet minutes without input and noticing what comes"
+},
+{
+"d": 318,
+"lv": "advanced",
+"t": "Deep reading practice",
+"f": "Reading long texts slowly to rebuild sustained attention"
+},
+{
+"d": 319,
+"lv": "advanced",
+"t": "Memorising a poem or song",
+"f": "Training memory and enjoying words by learning them by heart"
+},
+{
+"d": 320,
+"lv": "advanced",
+"t": "Remembering instead of searching",
+"f": "Recalling phone numbers, routes and facts without looking them up"
+},
+{
+"d": 321,
+"lv": "advanced",
+"t": "Mental maps",
+"f": "Finding your way by noticing landmarks instead of following a screen"
+},
+{
+"d": 322,
+"lv": "advanced",
+"t": "Long-form writing by hand",
+"f": "Writing a few pages by hand to clear the mind"
+},
+{
+"d": 323,
+"lv": "advanced",
+"t": "Slow hobbies",
+"f": "Pottery, woodwork, bread-making and other activities that reward patience"
+},
+{
+"d": 324,
+"lv": "advanced",
+"t": "Mastery over months",
+"f": "Choosing one offline skill to practise deeply over time"
+},
+{
+"d": 325,
+"lv": "advanced",
+"t": "Flow states",
+"f": "The deep enjoyment of being fully absorbed in an activity"
+},
+{
+"d": 326,
+"lv": "advanced",
+"t": "Play as an adult",
+"f": "Making room for games and fun without screens"
+},
+{
+"d": 327,
+"lv": "advanced",
+"t": "Adventures close to home",
+"f": "Discovering hidden places in your own town or region"
+},
+{
+"d": 328,
+"lv": "advanced",
+"t": "Nature watching through the seasons",
+"f": "Noticing changes in trees, birds and weather over time"
+},
+{
+"d": 329,
+"lv": "advanced",
+"t": "Birdwatching and nature journals",
+"f": "Observing birds and sketching or noting what you see"
+},
+{
+"d": 330,
+"lv": "advanced",
+"t": "Rest without screens",
+"f": "Different kinds of rest beyond watching something"
+},
+{
+"d": 331,
+"lv": "advanced",
+"t": "Sleep routines that last",
+"f": "Turning your screen-free evening into a long-term habit"
+},
+{
+"d": 332,
+"lv": "advanced",
+"t": "Morning pages",
+"f": "Writing freely each morning to start the day with a clear head"
+},
+{
+"d": 333,
+"lv": "advanced",
+"t": "A weekly planning ritual on paper",
+"f": "A calm weekly review done with pen and paper"
+},
+{
+"d": 334,
+"lv": "advanced",
+"t": "Measuring progress kindly",
+"f": "Comparing your habits with your first month, without judgement"
+},
+{
+"d": 335,
+"lv": "advanced",
+"t": "Rewarding yourself offline",
+"f": "Celebrating milestones with experiences instead of apps or purchases"
+},
+{
+"d": 336,
+"lv": "advanced",
+"t": "Belonging in offline communities",
+"f": "Finding groups where you feel at home in person"
+},
+{
+"d": 337,
+"lv": "advanced",
+"t": "Language exchange in person",
+"f": "Practising a new language face to face at cafes or meetups"
+},
+{
+"d": 338,
+"lv": "advanced",
+"t": "Culture enjoyed live",
+"f": "Concerts, festivals, theatre and exhibitions enjoyed with full attention"
+},
+{
+"d": 339,
+"lv": "advanced",
+"t": "Organising a skill swap",
+"f": "Teaching and learning simple skills with friends in person"
+},
+{
+"d": 340,
+"lv": "advanced",
+"t": "Deeper living review",
+"f": "Revisiting mindfulness, deep attention and offline mastery"
+},
+{
+"d": 341,
+"lv": "advanced",
+"t": "Your personal tech philosophy",
+"f": "Writing down how technology fits your values"
+},
+{
+"d": 342,
+"lv": "advanced",
+"t": "Designing your ideal digital week",
+"f": "Planning screen time, offline time and rest together"
+},
+{
+"d": 343,
+"lv": "advanced",
+"t": "Tech rules you will keep",
+"f": "Choosing the few rules that matter most to you"
+},
+{
+"d": 344,
+"lv": "advanced",
+"t": "Your phone as a tool",
+"f": "Final setup of a phone that serves your goals"
+},
+{
+"d": 345,
+"lv": "advanced",
+"t": "Handling new apps and devices",
+"f": "Deciding thoughtfully before adding new technology"
+},
+{
+"d": 346,
+"lv": "advanced",
+"t": "Staying balanced in busy seasons",
+"f": "Keeping habits during stressful or exciting times"
+},
+{
+"d": 347,
+"lv": "advanced",
+"t": "Getting back on track",
+"f": "A simple reset plan for when old habits return"
+},
+{
+"d": 348,
+"lv": "advanced",
+"t": "Regular screen time check-ups",
+"f": "Reviewing your habits every month"
+},
+{
+"d": 349,
+"lv": "advanced",
+"t": "Celebrating your offline life",
+"f": "Appreciating the time and attention you have reclaimed"
+},
+{
+"d": 350,
+"lv": "advanced",
+"t": "Gratitude for connection",
+"f": "Thankfulness for both online and offline relationships"
+},
+{
+"d": 351,
+"lv": "advanced",
+"t": "Mentoring others",
+"f": "Sharing your journey to help someone else find balance"
+},
+{
+"d": 352,
+"lv": "advanced",
+"t": "Teaching kids digital balance",
+"f": "Passing on healthy habits to the next generation"
+},
+{
+"d": 353,
+"lv": "advanced",
+"t": "Creating your own detox ritual",
+"f": "A personal ritual that signals offline time"
+},
+{
+"d": 354,
+"lv": "advanced",
+"t": "Long-term goals beyond screens",
+"f": "Dreams and projects you can pursue with freed time"
+},
+{
+"d": 355,
+"lv": "advanced",
+"t": "Your offline adventure list",
+"f": "Planning experiences to enjoy away from screens"
+},
+{
+"d": 356,
+"lv": "advanced",
+"t": "Mindful technology for the future",
+"f": "Thinking about how to use new technology wisely"
+},
+{
+"d": 357,
+"lv": "advanced",
+"t": "Balance as a lifelong practice",
+"f": "Seeing balance as something you adjust over time"
+},
+{
+"d": 358,
+"lv": "advanced",
+"t": "A screen-free celebration day",
+"f": "Marking your progress with a joyful day spent offline"
+},
+{
+"d": 359,
+"lv": "advanced",
+"t": "Your favourite discoveries this year",
+"f": "Looking back at the hobbies, habits and insights you loved"
+},
+{
+"d": 360,
+"lv": "advanced",
+"t": "Skills you have gained",
+"f": "Reviewing settings, routines, focus and social media skills"
+},
+{
+"d": 361,
+"lv": "advanced",
+"t": "Stories of change",
+"f": "Reflecting on moments when less screen time made a difference"
+},
+{
+"d": 362,
+"lv": "advanced",
+"t": "A letter to your future self",
+"f": "Writing about the digital habits you want to keep"
+},
+{
+"d": 363,
+"lv": "advanced",
+"t": "Sharing your journey",
+"f": "Telling a friend what has changed in your screen life"
+},
+{
+"d": 364,
+"lv": "advanced",
+"t": "Final review of the path",
+"f": "A full look back from awareness to your personal tech philosophy"
+},
+{
+"d": 365,
+"lv": "advanced",
+"t": "A balanced life ahead",
+"f": "Celebrating 365 days and the calm, intentional habits you carry forward"
+}
+]
+}

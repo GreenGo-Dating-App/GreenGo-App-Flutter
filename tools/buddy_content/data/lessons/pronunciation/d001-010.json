@@ -1,0 +1,835 @@
+{
+ "topic": "pronunciation",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Welcome to pronunciation",
+     "g": "Discover why being clear matters more than sounding perfect, and how our 365-day path works.",
+     "p": [
+      "Clear pronunciation helps people understand you easily, even if you keep your own accent.",
+      "Each day we explore one small idea: a sound, a mouth movement or a rhythm you can practise in minutes.",
+      "We start with the basics of how your mouth works, then move to sounds, stress, melody and real speech."
+     ],
+     "q": "Which language would you most like to pronounce more clearly, and why?",
+     "c": "Say your name and three favourite words out loud slowly, and notice how your mouth moves."
+    },
+    "de": {
+     "t": "Willkommen zur Aussprache",
+     "g": "Entdecke, warum Deutlichkeit wichtiger ist als Perfektion, und wie unser 365-Tage-Weg funktioniert.",
+     "p": [
+      "Eine klare Aussprache hilft anderen, dich leicht zu verstehen, auch mit deinem eigenen Akzent.",
+      "Jeden Tag geht es um eine kleine Idee: einen Laut, eine Mundbewegung oder einen Rhythmus zum Üben.",
+      "Wir beginnen damit, wie dein Mund arbeitet, und gehen dann zu Lauten, Betonung, Melodie und echter Rede."
+     ],
+     "q": "Welche Sprache möchtest du am liebsten deutlicher aussprechen, und warum?",
+     "c": "Sprich deinen Namen und drei Lieblingswörter langsam laut aus und achte darauf, wie sich dein Mund bewegt."
+    },
+    "es": {
+     "t": "Bienvenido a la pronunciación",
+     "g": "Descubre por qué ser claro importa más que sonar perfecto y cómo funciona nuestro camino de 365 días.",
+     "p": [
+      "Una pronunciación clara ayuda a que te entiendan con facilidad, aunque conserves tu propio acento.",
+      "Cada día vemos una idea pequeña: un sonido, un movimiento de la boca o un ritmo que practicas en minutos.",
+      "Empezamos por cómo funciona tu boca y luego pasamos a sonidos, acento, melodía y habla real."
+     ],
+     "q": "¿Qué idioma te gustaría pronunciar con más claridad y por qué?",
+     "c": "Di tu nombre y tres palabras favoritas en voz alta, despacio, y fíjate en cómo se mueve tu boca."
+    },
+    "fr": {
+     "t": "Bienvenue en prononciation",
+     "g": "Découvre pourquoi être clair compte plus que sonner parfait, et comment fonctionne notre parcours de 365 jours.",
+     "p": [
+      "Une prononciation claire aide les autres à te comprendre facilement, même avec ton propre accent.",
+      "Chaque jour, une petite idée : un son, un mouvement de la bouche ou un rythme à pratiquer en quelques minutes.",
+      "On commence par le fonctionnement de ta bouche, puis les sons, l'accent, la mélodie et la parole réelle."
+     ],
+     "q": "Quelle langue aimerais-tu prononcer plus clairement, et pourquoi ?",
+     "c": "Dis ton prénom et trois mots préférés à voix haute, lentement, en observant les mouvements de ta bouche."
+    },
+    "it": {
+     "t": "Benvenuto nella pronuncia",
+     "g": "Scopri perché essere chiari conta più che suonare perfetti e come funziona il nostro percorso di 365 giorni.",
+     "p": [
+      "Una pronuncia chiara aiuta gli altri a capirti facilmente, anche se mantieni il tuo accento.",
+      "Ogni giorno vediamo una piccola idea: un suono, un movimento della bocca o un ritmo da provare in pochi minuti.",
+      "Partiamo da come funziona la bocca, poi passiamo a suoni, accento, melodia e parlato reale."
+     ],
+     "q": "Quale lingua ti piacerebbe pronunciare in modo più chiaro, e perché?",
+     "c": "Di' ad alta voce il tuo nome e tre parole preferite, lentamente, osservando come si muove la bocca."
+    },
+    "pt": {
+     "t": "Bem-vindo à pronúncia",
+     "g": "Descobre porque ser claro importa mais do que soar perfeito e como funciona o nosso percurso de 365 dias.",
+     "p": [
+      "Uma pronúncia clara ajuda os outros a perceber-te facilmente, mesmo mantendo o teu sotaque.",
+      "Todos os dias vemos uma pequena ideia: um som, um movimento da boca ou um ritmo para praticar em minutos.",
+      "Começamos pelo funcionamento da boca e depois passamos aos sons, à acentuação, à melodia e à fala real."
+     ],
+     "q": "Que língua gostavas de pronunciar com mais clareza, e porquê?",
+     "c": "Diz o teu nome e três palavras favoritas em voz alta, devagar, e repara em como a tua boca se mexe."
+    },
+    "pt_BR": {
+     "t": "Bem-vindo à pronúncia",
+     "g": "Descubra por que ser claro importa mais do que soar perfeito e como funciona nosso caminho de 365 dias.",
+     "p": [
+      "Uma pronúncia clara ajuda as pessoas a entender você com facilidade, mesmo mantendo seu sotaque.",
+      "Todo dia vemos uma pequena ideia: um som, um movimento da boca ou um ritmo para treinar em minutos.",
+      "Começamos pelo funcionamento da boca e depois passamos para sons, acento, melodia e fala real."
+     ],
+     "q": "Qual idioma você mais gostaria de pronunciar com mais clareza, e por quê?",
+     "c": "Fale seu nome e três palavras favoritas em voz alta, devagar, e repare em como sua boca se mexe."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Accent or clarity?",
+     "g": "Understand that being understood is the real goal, and that your accent is part of who you are.",
+     "p": [
+      "Almost everyone speaks a second language with an accent, and that is completely normal and fine.",
+      "Clarity means the key sounds, stress and rhythm are close enough for listeners to follow you easily.",
+      "Your accent tells a story about where you come from, so there is no need to erase it."
+     ],
+     "q": "Have you ever been understood perfectly even though you felt your accent was strong?",
+     "c": "Listen to someone who speaks your target language with an accent and notice how well you still understand them."
+    },
+    "de": {
+     "t": "Akzent oder Deutlichkeit?",
+     "g": "Verstehe, dass Verstandenwerden das eigentliche Ziel ist und dein Akzent zu dir gehört.",
+     "p": [
+      "Fast jeder spricht eine Fremdsprache mit Akzent, und das ist völlig normal und in Ordnung.",
+      "Deutlich heißt: Wichtige Laute, Betonung und Rhythmus sind so nah dran, dass man dir leicht folgen kann.",
+      "Dein Akzent erzählt, woher du kommst, deshalb musst du ihn nicht auslöschen."
+     ],
+     "q": "Wurdest du schon einmal bestens verstanden, obwohl du deinen Akzent als stark empfunden hast?",
+     "c": "Hör jemandem zu, der deine Zielsprache mit Akzent spricht, und merke, wie gut du ihn trotzdem verstehst."
+    },
+    "es": {
+     "t": "¿Acento o claridad?",
+     "g": "Entiende que hacerte entender es la meta real y que tu acento forma parte de quién eres.",
+     "p": [
+      "Casi todo el mundo habla un segundo idioma con acento, y eso es totalmente normal.",
+      "Ser claro significa que los sonidos clave, el acento y el ritmo se acercan lo suficiente para seguirte bien.",
+      "Tu acento cuenta de dónde vienes, así que no hace falta borrarlo."
+     ],
+     "q": "¿Alguna vez te entendieron perfectamente aunque sentías que tu acento era fuerte?",
+     "c": "Escucha a alguien que habla tu idioma meta con acento y nota lo bien que aun así lo entiendes."
+    },
+    "fr": {
+     "t": "Accent ou clarté ?",
+     "g": "Comprendre qu'être compris est le vrai but, et que ton accent fait partie de toi.",
+     "p": [
+      "Presque tout le monde parle une langue étrangère avec un accent, et c'est tout à fait normal.",
+      "Être clair, c'est avoir des sons clés, un accent et un rythme assez proches pour qu'on te suive sans effort.",
+      "Ton accent raconte d'où tu viens, alors inutile de vouloir l'effacer."
+     ],
+     "q": "T'est-il déjà arrivé d'être parfaitement compris alors que ton accent te semblait fort ?",
+     "c": "Écoute quelqu'un qui parle ta langue cible avec un accent et remarque à quel point tu le comprends quand même."
+    },
+    "it": {
+     "t": "Accento o chiarezza?",
+     "g": "Capire che farsi capire è il vero obiettivo e che il tuo accento fa parte di te.",
+     "p": [
+      "Quasi tutti parlano una seconda lingua con un accento, ed è assolutamente normale.",
+      "Essere chiari vuol dire avere suoni chiave, accento e ritmo abbastanza vicini da farti seguire senza fatica.",
+      "Il tuo accento racconta da dove vieni, quindi non serve cancellarlo."
+     ],
+     "q": "Ti è mai capitato di essere capito benissimo anche se sentivi forte il tuo accento?",
+     "c": "Ascolta qualcuno che parla la tua lingua obiettivo con un accento e nota quanto lo capisci comunque."
+    },
+    "pt": {
+     "t": "Sotaque ou clareza?",
+     "g": "Perceber que ser compreendido é o verdadeiro objetivo e que o teu sotaque faz parte de ti.",
+     "p": [
+      "Quase toda a gente fala uma segunda língua com sotaque, e isso é perfeitamente normal.",
+      "Ser claro significa ter sons-chave, acentuação e ritmo suficientemente próximos para te seguirem bem.",
+      "O teu sotaque conta de onde vens, por isso não precisas de o apagar."
+     ],
+     "q": "Já foste perfeitamente compreendido mesmo achando que o teu sotaque era forte?",
+     "c": "Ouve alguém que fala a tua língua-alvo com sotaque e repara como o percebes bem na mesma."
+    },
+    "pt_BR": {
+     "t": "Sotaque ou clareza?",
+     "g": "Entender que ser compreendido é o objetivo real e que seu sotaque faz parte de quem você é.",
+     "p": [
+      "Quase todo mundo fala um segundo idioma com sotaque, e isso é totalmente normal.",
+      "Ser claro significa ter sons-chave, acento e ritmo próximos o bastante para as pessoas seguirem você.",
+      "Seu sotaque conta de onde você vem, então não precisa apagá-lo."
+     ],
+     "q": "Você já foi entendido perfeitamente mesmo achando que seu sotaque era forte?",
+     "c": "Ouça alguém que fala seu idioma-alvo com sotaque e repare como você entende bem mesmo assim."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "How we make sounds",
+     "g": "Learn how breath, voice box, tongue, lips and teeth work together to shape speech.",
+     "p": [
+      "Every sound starts with breath pushed up from your lungs, like air leaving a balloon.",
+      "In your throat, the voice box can buzz to add voice, or stay quiet and let air pass freely.",
+      "Your tongue, lips and teeth then shape the air, turning one stream of breath into many different sounds."
+     ],
+     "q": "Which part of your mouth do you think moves the most when you speak?",
+     "c": "Say 'ahhh', then slowly close your lips into 'mmm' and feel how one small move changes the sound."
+    },
+    "de": {
+     "t": "Wie wir Laute bilden",
+     "g": "Lerne, wie Atem, Kehlkopf, Zunge, Lippen und Zähne zusammen Sprache formen.",
+     "p": [
+      "Jeder Laut beginnt mit Atem aus der Lunge, ähnlich wie Luft, die aus einem Ballon strömt.",
+      "Im Hals kann der Kehlkopf summen und Stimme hinzufügen oder still bleiben und die Luft durchlassen.",
+      "Zunge, Lippen und Zähne formen dann die Luft und machen aus einem Atemstrom viele verschiedene Laute."
+     ],
+     "q": "Welcher Teil deines Mundes bewegt sich deiner Meinung nach beim Sprechen am meisten?",
+     "c": "Sag „aaa“, schließe dann langsam die Lippen zu „mmm“ und spür, wie eine kleine Bewegung den Laut verändert."
+    },
+    "es": {
+     "t": "Cómo producimos los sonidos",
+     "g": "Aprende cómo el aire, la laringe, la lengua, los labios y los dientes trabajan juntos para hablar.",
+     "p": [
+      "Todo sonido empieza con aire que sube de los pulmones, como el que sale de un globo.",
+      "En la garganta, la laringe puede vibrar y dar voz, o quedarse quieta y dejar pasar el aire libremente.",
+      "La lengua, los labios y los dientes moldean ese aire y convierten un solo soplo en muchos sonidos."
+     ],
+     "q": "¿Qué parte de tu boca crees que se mueve más cuando hablas?",
+     "c": "Di 'aaa' y luego cierra despacio los labios hasta 'mmm': nota cómo un pequeño gesto cambia el sonido."
+    },
+    "fr": {
+     "t": "Comment on produit les sons",
+     "g": "Apprends comment le souffle, le larynx, la langue, les lèvres et les dents s'unissent pour parler.",
+     "p": [
+      "Chaque son commence par de l'air venu des poumons, comme l'air qui s'échappe d'un ballon.",
+      "Dans la gorge, le larynx peut vibrer pour donner de la voix, ou rester calme et laisser passer l'air.",
+      "La langue, les lèvres et les dents façonnent ensuite l'air et créent une foule de sons différents."
+     ],
+     "q": "Selon toi, quelle partie de ta bouche bouge le plus quand tu parles ?",
+     "c": "Dis « aaa », puis ferme lentement les lèvres jusqu'à « mmm » et sens comme un petit geste change le son."
+    },
+    "it": {
+     "t": "Come produciamo i suoni",
+     "g": "Impara come fiato, laringe, lingua, labbra e denti lavorano insieme per formare la voce.",
+     "p": [
+      "Ogni suono nasce dall'aria che sale dai polmoni, come quella che esce da un palloncino.",
+      "Nella gola la laringe può vibrare e dare voce, oppure restare ferma e lasciar passare l'aria.",
+      "Lingua, labbra e denti modellano poi l'aria e trasformano un solo soffio in tanti suoni diversi."
+     ],
+     "q": "Secondo te, quale parte della bocca si muove di più quando parli?",
+     "c": "Di' 'aaa', poi chiudi piano le labbra fino a 'mmm' e senti come un piccolo gesto cambia il suono."
+    },
+    "pt": {
+     "t": "Como produzimos os sons",
+     "g": "Aprende como o ar, a laringe, a língua, os lábios e os dentes trabalham juntos para falar.",
+     "p": [
+      "Cada som começa com ar que sobe dos pulmões, como o ar que sai de um balão.",
+      "Na garganta, a laringe pode vibrar e dar voz, ou ficar quieta e deixar o ar passar livremente.",
+      "A língua, os lábios e os dentes moldam depois esse ar e transformam um só sopro em muitos sons."
+     ],
+     "q": "Que parte da boca achas que se mexe mais quando falas?",
+     "c": "Diz 'aaa' e depois fecha devagar os lábios até 'mmm': repara como um pequeno gesto muda o som."
+    },
+    "pt_BR": {
+     "t": "Como produzimos os sons",
+     "g": "Aprenda como o ar, a laringe, a língua, os lábios e os dentes trabalham juntos para falar.",
+     "p": [
+      "Todo som começa com o ar que sobe dos pulmões, como o ar que sai de uma bexiga de festa.",
+      "Na garganta, a laringe pode vibrar e dar voz, ou ficar parada e deixar o ar passar livre.",
+      "A língua, os lábios e os dentes moldam esse ar e transformam um único sopro em muitos sons."
+     ],
+     "q": "Qual parte da boca você acha que mais se mexe quando você fala?",
+     "c": "Diga 'aaa' e depois feche devagar os lábios até 'mmm': repare como um gesto pequeno muda o som."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Meet your mouth",
+     "g": "Find your lips, teeth, the ridge behind your teeth, the roof of your mouth and the soft palate.",
+     "p": [
+      "Run your tongue tip behind your upper front teeth: the small bump there is the ridge used for t, d and n.",
+      "Slide your tongue further back: the hard, smooth part is the roof of your mouth, called the hard palate.",
+      "Further back it turns soft: that is the soft palate, where k and g are made at the back of the mouth."
+     ],
+     "q": "Which of these mouth parts had you never really noticed before today?",
+     "c": "Use your tongue tip to trace a path from your teeth to the soft palate, naming each part as you go."
+    },
+    "de": {
+     "t": "Lerne deinen Mund kennen",
+     "g": "Finde Lippen, Zähne, den Zahndamm, den harten Gaumen und das Gaumensegel.",
+     "p": [
+      "Fahr mit der Zungenspitze hinter die oberen Schneidezähne: Der kleine Wulst dort ist der Zahndamm für t, d, n.",
+      "Weiter hinten ist der harte, glatte Teil der Mundhöhlendecke: der harte Gaumen.",
+      "Noch weiter hinten wird er weich: Das ist das Gaumensegel, wo k und g gebildet werden."
+     ],
+     "q": "Welchen dieser Mundteile hast du vor heute noch nie richtig bemerkt?",
+     "c": "Fahr mit der Zungenspitze von den Zähnen bis zum weichen Gaumen und benenne dabei jeden Teil."
+    },
+    "es": {
+     "t": "Conoce tu boca",
+     "g": "Localiza los labios, los dientes, los alvéolos, el paladar duro y el velo del paladar.",
+     "p": [
+      "Pasa la punta de la lengua detrás de los dientes de arriba: ese pequeño bulto son los alvéolos.",
+      "Si deslizas la lengua hacia atrás, la parte dura y lisa del techo de la boca es el paladar duro.",
+      "Más atrás se vuelve blanda: es el velo del paladar, donde se forman k y g, al fondo de la boca."
+     ],
+     "q": "¿Cuál de estas partes de la boca nunca habías notado antes de hoy?",
+     "c": "Recorre con la punta de la lengua el camino de los dientes al velo del paladar nombrando cada parte."
+    },
+    "fr": {
+     "t": "Fais connaissance avec ta bouche",
+     "g": "Repère tes lèvres, tes dents, les alvéoles, le palais dur et le voile du palais.",
+     "p": [
+      "Passe le bout de la langue derrière tes incisives du haut : la petite bosse, ce sont les alvéoles.",
+      "Recule la langue : la partie dure et lisse du plafond de la bouche s'appelle le palais dur.",
+      "Plus loin, il devient mou : c'est le voile du palais, où se forment k et g, au fond de la bouche."
+     ],
+     "q": "Quelle partie de ta bouche n'avais-tu jamais vraiment remarquée avant aujourd'hui ?",
+     "c": "Avec le bout de la langue, va des dents jusqu'au voile du palais en nommant chaque partie."
+    },
+    "it": {
+     "t": "Conosci la tua bocca",
+     "g": "Trova labbra, denti, alveoli, palato duro e palato molle.",
+     "p": [
+      "Passa la punta della lingua dietro gli incisivi superiori: quel piccolo rilievo sono gli alveoli.",
+      "Più indietro trovi la parte dura e liscia del soffitto della bocca: il palato duro.",
+      "Ancora più in fondo diventa morbido: è il palato molle, dove si formano k e g."
+     ],
+     "q": "Quale di queste parti della bocca non avevi mai notato prima di oggi?",
+     "c": "Con la punta della lingua percorri la strada dai denti al palato molle, nominando ogni parte."
+    },
+    "pt": {
+     "t": "Conhece a tua boca",
+     "g": "Encontra os lábios, os dentes, os alvéolos, o palato duro e o véu palatino.",
+     "p": [
+      "Passa a ponta da língua atrás dos dentes de cima: essa pequena saliência são os alvéolos.",
+      "Mais para trás, a parte dura e lisa do céu da boca chama-se palato duro.",
+      "Ainda mais atrás fica mole: é o véu palatino, onde se formam o k e o g, no fundo da boca."
+     ],
+     "q": "Qual destas partes da boca nunca tinhas notado antes de hoje?",
+     "c": "Com a ponta da língua, percorre o caminho dos dentes até ao véu palatino, dizendo o nome de cada parte."
+    },
+    "pt_BR": {
+     "t": "Conheça sua boca",
+     "g": "Encontre os lábios, os dentes, os alvéolos, o palato duro e o palato mole.",
+     "p": [
+      "Passe a ponta da língua atrás dos dentes de cima: essa saliência pequena são os alvéolos.",
+      "Mais para trás, a parte dura e lisa do céu da boca se chama palato duro.",
+      "Ainda mais atrás ela fica mole: é o palato mole, onde se formam o k e o g, no fundo da boca."
+     ],
+     "q": "Qual dessas partes da boca você nunca tinha notado antes de hoje?",
+     "c": "Com a ponta da língua, percorra o caminho dos dentes até o palato mole dizendo o nome de cada parte."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Voice on, voice off",
+     "g": "Feel the throat buzz that separates the voiced z from the voiceless s.",
+     "p": [
+      "Put your fingers on your throat and hiss 'sss': nothing buzzes, because the voice is off.",
+      "Now keep the same mouth position and say 'zzz': you feel a buzz, because the voice is on.",
+      "Many pairs work the same way: s and z, f and v, p and b, t and d, k and g."
+     ],
+     "q": "Did you feel the buzz clearly, or was it hard to notice at first?",
+     "c": "With fingers on your throat, switch slowly between 'sss' and 'zzz' ten times without stopping the air."
+    },
+    "de": {
+     "t": "Stimme an, Stimme aus",
+     "g": "Spüre das Summen im Hals, das das stimmhafte z vom stimmlosen s unterscheidet.",
+     "p": [
+      "Leg die Finger an den Hals und zische „sss“: Nichts vibriert, denn die Stimme ist aus.",
+      "Behalte die Mundstellung und summe wie eine Biene, wie das s in „Sonne“: Jetzt spürst du ein Vibrieren.",
+      "Viele Paare funktionieren so: s wie in „Bus“ und s wie in „Sonne“, f und w, p und b, t und d, k und g."
+     ],
+     "q": "Hast du das Vibrieren deutlich gespürt, oder war es anfangs schwer zu bemerken?",
+     "c": "Wechsle mit den Fingern am Hals zehnmal langsam zwischen stimmlosem und stimmhaftem s, ohne die Luft zu stoppen."
+    },
+    "es": {
+     "t": "Voz encendida, voz apagada",
+     "g": "Siente la vibración de la garganta que separa una z sonora de la s sorda.",
+     "p": [
+      "Pon los dedos en la garganta y sisea 'sss': no vibra nada, porque la voz está apagada.",
+      "Mantén la boca igual y zumba como una abeja, 'zzz': ahora notas la vibración, la voz está encendida.",
+      "Muchos pares funcionan así: s y z sonora, f y v inglesa, p y b, t y d, k y g."
+     ],
+     "q": "¿Sentiste la vibración con claridad o te costó notarla al principio?",
+     "c": "Con los dedos en la garganta, alterna despacio entre 'sss' y 'zzz' diez veces sin cortar el aire."
+    },
+    "fr": {
+     "t": "Voix allumée, voix éteinte",
+     "g": "Sens la vibration de la gorge qui sépare le z sonore du s sourd.",
+     "p": [
+      "Pose les doigts sur ta gorge et siffle « sss » : rien ne vibre, la voix est éteinte.",
+      "Garde la même bouche et dis « zzz » comme une abeille : ça vibre, la voix est allumée.",
+      "Beaucoup de paires fonctionnent ainsi : s et z, f et v, p et b, t et d, k et g, comme « poisson » et « poison »."
+     ],
+     "q": "As-tu bien senti la vibration, ou était-ce difficile à remarquer au début ?",
+     "c": "Les doigts sur la gorge, alterne lentement dix fois entre « sss » et « zzz » sans couper l'air."
+    },
+    "it": {
+     "t": "Voce accesa, voce spenta",
+     "g": "Senti la vibrazione in gola che distingue la s sonora da quella sorda.",
+     "p": [
+      "Metti le dita sulla gola e sibila 'sss': non vibra niente, perché la voce è spenta.",
+      "Tieni la bocca uguale e ronza come un'ape, 'zzz': ora senti vibrare, la voce è accesa.",
+      "Molte coppie funzionano così: s sorda e sonora, f e v, p e b, t e d, k e g."
+     ],
+     "q": "Hai sentito chiaramente la vibrazione o all'inizio era difficile notarla?",
+     "c": "Con le dita sulla gola alterna lentamente 'sss' e 'zzz' dieci volte, senza interrompere l'aria."
+    },
+    "pt": {
+     "t": "Voz ligada, voz desligada",
+     "g": "Sente a vibração da garganta que separa o z sonoro do s surdo.",
+     "p": [
+      "Põe os dedos na garganta e faz 'sss': nada vibra, porque a voz está desligada.",
+      "Mantém a boca igual e diz 'zzz' como uma abelha: agora sentes vibrar, a voz está ligada.",
+      "Muitos pares funcionam assim: s e z, f e v, p e b, t e d, k e g, como em 'caça' e 'casa'."
+     ],
+     "q": "Sentiste bem a vibração ou foi difícil notá-la no início?",
+     "c": "Com os dedos na garganta, alterna devagar entre 'sss' e 'zzz' dez vezes sem parar o ar."
+    },
+    "pt_BR": {
+     "t": "Voz ligada, voz desligada",
+     "g": "Sinta a vibração da garganta que separa o z sonoro do s surdo.",
+     "p": [
+      "Coloque os dedos na garganta e faça 'sss': nada vibra, porque a voz está desligada.",
+      "Mantenha a boca igual e diga 'zzz' como uma abelha: agora você sente vibrar, a voz está ligada.",
+      "Muitos pares funcionam assim: s e z, f e v, p e b, t e d, k e g, como em 'caça' e 'casa'."
+     ],
+     "q": "Você sentiu bem a vibração ou foi difícil perceber no começo?",
+     "c": "Com os dedos na garganta, alterne devagar entre 'sss' e 'zzz' dez vezes sem parar o ar."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Listening before speaking",
+     "g": "See why careful listening is the first and most important step to better pronunciation.",
+     "p": [
+      "Your mouth can only copy what your ears have noticed, so good pronunciation begins with listening.",
+      "Listen to short clips several times: first for the general melody, then for single sounds.",
+      "Focus on one thing per listen, such as where the voice rises or which syllable sounds strongest."
+     ],
+     "q": "What do you enjoy listening to in another language: songs, podcasts, films or something else?",
+     "c": "Play one short sentence in your target language five times, and each time notice one new detail."
+    },
+    "de": {
+     "t": "Erst hören, dann sprechen",
+     "g": "Erfahre, warum aufmerksames Zuhören der erste und wichtigste Schritt zu besserer Aussprache ist.",
+     "p": [
+      "Dein Mund kann nur nachmachen, was deine Ohren bemerkt haben, darum beginnt gute Aussprache mit Zuhören.",
+      "Hör kurze Ausschnitte mehrmals: zuerst auf die Melodie, dann auf einzelne Laute.",
+      "Achte pro Durchgang auf eine Sache, etwa wo die Stimme steigt oder welche Silbe am stärksten klingt."
+     ],
+     "q": "Was hörst du gern in einer anderen Sprache: Lieder, Podcasts, Filme oder etwas anderes?",
+     "c": "Spiel einen kurzen Satz in deiner Zielsprache fünfmal ab und bemerke jedes Mal ein neues Detail."
+    },
+    "es": {
+     "t": "Escuchar antes de hablar",
+     "g": "Descubre por qué escuchar con atención es el primer y más importante paso para pronunciar mejor.",
+     "p": [
+      "Tu boca solo puede imitar lo que tu oído ha notado, así que la buena pronunciación empieza escuchando.",
+      "Escucha fragmentos cortos varias veces: primero la melodía general, luego los sonidos sueltos.",
+      "Céntrate en una cosa cada vez, como dónde sube la voz o qué sílaba suena más fuerte."
+     ],
+     "q": "¿Qué te gusta escuchar en otro idioma: canciones, pódcasts, películas u otra cosa?",
+     "c": "Reproduce una frase corta en tu idioma meta cinco veces y en cada una fíjate en un detalle nuevo."
+    },
+    "fr": {
+     "t": "Écouter avant de parler",
+     "g": "Comprends pourquoi bien écouter est la première et la plus importante étape pour mieux prononcer.",
+     "p": [
+      "Ta bouche ne peut imiter que ce que ton oreille a remarqué : la bonne prononciation commence par l'écoute.",
+      "Écoute de courts extraits plusieurs fois : d'abord la mélodie générale, puis les sons isolés.",
+      "Concentre-toi sur une chose par écoute, par exemple où la voix monte ou quelle syllabe ressort."
+     ],
+     "q": "Qu'aimes-tu écouter dans une autre langue : chansons, podcasts, films ou autre chose ?",
+     "c": "Écoute une phrase courte dans ta langue cible cinq fois et remarque à chaque fois un nouveau détail."
+    },
+    "it": {
+     "t": "Ascoltare prima di parlare",
+     "g": "Scopri perché ascoltare con attenzione è il primo e più importante passo per pronunciare meglio.",
+     "p": [
+      "La bocca può imitare solo ciò che l'orecchio ha notato, quindi una buona pronuncia nasce dall'ascolto.",
+      "Ascolta brevi clip più volte: prima la melodia generale, poi i singoli suoni.",
+      "Concentrati su una cosa per ascolto, come dove sale la voce o quale sillaba si sente di più."
+     ],
+     "q": "Cosa ti piace ascoltare in un'altra lingua: canzoni, podcast, film o altro?",
+     "c": "Riascolta cinque volte una frase breve nella lingua che studi e ogni volta nota un dettaglio nuovo."
+    },
+    "pt": {
+     "t": "Ouvir antes de falar",
+     "g": "Descobre porque ouvir com atenção é o primeiro e mais importante passo para pronunciar melhor.",
+     "p": [
+      "A tua boca só imita o que os teus ouvidos notaram, por isso a boa pronúncia começa por ouvir.",
+      "Ouve excertos curtos várias vezes: primeiro a melodia geral, depois os sons isolados.",
+      "Concentra-te numa coisa de cada vez, como onde a voz sobe ou que sílaba soa mais forte."
+     ],
+     "q": "O que gostas de ouvir noutra língua: músicas, podcasts, filmes ou outra coisa?",
+     "c": "Ouve uma frase curta na tua língua-alvo cinco vezes e, em cada uma, repara num detalhe novo."
+    },
+    "pt_BR": {
+     "t": "Ouvir antes de falar",
+     "g": "Descubra por que ouvir com atenção é o primeiro e mais importante passo para pronunciar melhor.",
+     "p": [
+      "Sua boca só imita o que seus ouvidos perceberam, então a boa pronúncia começa ouvindo.",
+      "Ouça trechos curtos várias vezes: primeiro a melodia geral, depois os sons separados.",
+      "Foque em uma coisa por vez, como onde a voz sobe ou qual sílaba soa mais forte."
+     ],
+     "q": "O que você gosta de ouvir em outro idioma: músicas, podcasts, filmes ou outra coisa?",
+     "c": "Ouça uma frase curta no seu idioma-alvo cinco vezes e, a cada vez, repare em um detalhe novo."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Recording yourself",
+     "g": "Learn to record your voice, listen back and notice differences with kindness.",
+     "p": [
+      "Your phone's voice recorder is enough: record a short sentence, then play it back right away.",
+      "Most people dislike their recorded voice at first; that feeling fades quickly, so be patient with yourself.",
+      "Compare your recording with a native clip and pick just one difference to work on, not ten."
+     ],
+     "q": "How do you feel when you hear your own recorded voice?",
+     "c": "Record one sentence today, listen once, note one thing you like and one thing to improve."
+    },
+    "de": {
+     "t": "Sich selbst aufnehmen",
+     "g": "Lerne, deine Stimme aufzunehmen, anzuhören und Unterschiede freundlich wahrzunehmen.",
+     "p": [
+      "Die Sprachmemo-App deines Handys reicht: Nimm einen kurzen Satz auf und hör ihn sofort an.",
+      "Die meisten mögen ihre aufgenommene Stimme anfangs nicht; das legt sich schnell, also sei geduldig.",
+      "Vergleiche deine Aufnahme mit einem Muttersprachler und wähle nur einen Unterschied, nicht zehn."
+     ],
+     "q": "Wie fühlst du dich, wenn du deine eigene aufgenommene Stimme hörst?",
+     "c": "Nimm heute einen Satz auf, hör ihn einmal an und notiere etwas Gutes und etwas zum Verbessern."
+    },
+    "es": {
+     "t": "Grabarte a ti mismo",
+     "g": "Aprende a grabar tu voz, escucharla y notar las diferencias con amabilidad.",
+     "p": [
+      "La grabadora del móvil basta: graba una frase corta y escúchala enseguida.",
+      "A casi nadie le gusta su voz grabada al principio; esa sensación pasa pronto, ten paciencia contigo.",
+      "Compara tu grabación con un audio nativo y elige solo una diferencia para trabajar, no diez."
+     ],
+     "q": "¿Cómo te sientes cuando escuchas tu propia voz grabada?",
+     "c": "Graba hoy una frase, escúchala una vez y apunta algo que te guste y algo que mejorar."
+    },
+    "fr": {
+     "t": "T'enregistrer",
+     "g": "Apprends à enregistrer ta voix, à la réécouter et à repérer les différences avec bienveillance.",
+     "p": [
+      "Le dictaphone de ton téléphone suffit : enregistre une phrase courte et réécoute-la tout de suite.",
+      "Presque personne n'aime sa voix enregistrée au début ; ça passe vite, alors sois patient avec toi-même.",
+      "Compare ton enregistrement à un audio natif et choisis une seule différence à travailler, pas dix."
+     ],
+     "q": "Que ressens-tu quand tu entends ta propre voix enregistrée ?",
+     "c": "Enregistre une phrase aujourd'hui, écoute-la une fois et note un point positif et un point à améliorer."
+    },
+    "it": {
+     "t": "Registrarsi",
+     "g": "Impara a registrare la tua voce, riascoltarla e notare le differenze con gentilezza.",
+     "p": [
+      "Basta il registratore del telefono: registra una frase breve e riascoltala subito.",
+      "Quasi a nessuno piace la propria voce registrata all'inizio; passa in fretta, sii paziente con te stesso.",
+      "Confronta la registrazione con un audio madrelingua e scegli una sola differenza su cui lavorare."
+     ],
+     "q": "Come ti senti quando ascolti la tua voce registrata?",
+     "c": "Registra oggi una frase, ascoltala una volta e annota una cosa che ti piace e una da migliorare."
+    },
+    "pt": {
+     "t": "Gravar-te a ti próprio",
+     "g": "Aprende a gravar a tua voz, ouvi-la e notar as diferenças com gentileza.",
+     "p": [
+      "O gravador do telemóvel chega: grava uma frase curta e ouve-a logo a seguir.",
+      "Quase ninguém gosta da sua voz gravada ao início; essa sensação passa depressa, tem paciência.",
+      "Compara a gravação com um áudio nativo e escolhe só uma diferença para trabalhar, não dez."
+     ],
+     "q": "Como te sentes quando ouves a tua própria voz gravada?",
+     "c": "Grava hoje uma frase, ouve-a uma vez e anota uma coisa de que gostas e uma a melhorar."
+    },
+    "pt_BR": {
+     "t": "Gravando a si mesmo",
+     "g": "Aprenda a gravar sua voz, ouvir de novo e perceber as diferenças com gentileza.",
+     "p": [
+      "O gravador do celular basta: grave uma frase curta e ouça logo em seguida.",
+      "Quase ninguém gosta da própria voz gravada no começo; isso passa rápido, tenha paciência.",
+      "Compare sua gravação com um áudio nativo e escolha só uma diferença para trabalhar, não dez."
+     ],
+     "q": "Como você se sente quando ouve sua própria voz gravada?",
+     "c": "Grave hoje uma frase, ouça uma vez e anote uma coisa de que gostou e uma para melhorar."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Shadowing basics",
+     "g": "Try shadowing: repeating right after a speaker to copy their rhythm and melody.",
+     "p": [
+      "Shadowing means speaking along a recording with a tiny delay, like an echo following the voice.",
+      "Start with a short, slow clip and copy the rise and fall of the voice before worrying about sounds.",
+      "Read the text first if it helps, then try shadowing with your eyes closed to focus on your ears."
+     ],
+     "q": "Which speaker or voice would you enjoy copying for a few minutes a day?",
+     "c": "Shadow a ten-second clip three times today, aiming to match its rhythm a little better each time."
+    },
+    "de": {
+     "t": "Shadowing für Einsteiger",
+     "g": "Probiere Shadowing: direkt nach einem Sprecher nachsprechen, um Rhythmus und Melodie zu übernehmen.",
+     "p": [
+      "Beim Shadowing sprichst du mit kleiner Verzögerung mit einer Aufnahme mit, wie ein Echo der Stimme.",
+      "Beginne mit einem kurzen, langsamen Clip und übernimm das Auf und Ab der Stimme vor den Einzellauten.",
+      "Lies den Text zuerst, wenn es hilft, und versuch es dann mit geschlossenen Augen, um nur zu hören."
+     ],
+     "q": "Welche Stimme würdest du gern ein paar Minuten am Tag nachahmen?",
+     "c": "Shadowe heute dreimal einen Zehn-Sekunden-Clip und triff den Rhythmus jedes Mal etwas besser."
+    },
+    "es": {
+     "t": "Primeros pasos con el shadowing",
+     "g": "Prueba el shadowing: repetir justo detrás de un hablante para copiar su ritmo y su melodía.",
+     "p": [
+      "El shadowing consiste en hablar junto a una grabación con un pequeño retraso, como un eco de la voz.",
+      "Empieza con un audio corto y lento, y copia cómo sube y baja la voz antes de fijarte en los sonidos.",
+      "Lee antes el texto si te ayuda y luego prueba con los ojos cerrados para centrarte en el oído."
+     ],
+     "q": "¿A qué voz o hablante te gustaría imitar unos minutos al día?",
+     "c": "Haz shadowing tres veces hoy con un audio de diez segundos, ajustando un poco mejor el ritmo cada vez."
+    },
+    "fr": {
+     "t": "Les bases du shadowing",
+     "g": "Essaie le shadowing : répéter juste après quelqu'un pour copier son rythme et sa mélodie.",
+     "p": [
+      "Le shadowing, c'est parler en même temps qu'un enregistrement avec un léger décalage, comme un écho.",
+      "Commence par un extrait court et lent, et copie la montée et la descente de la voix avant les sons.",
+      "Lis d'abord le texte si ça t'aide, puis essaie les yeux fermés pour te concentrer sur ton oreille."
+     ],
+     "q": "Quelle voix aimerais-tu imiter quelques minutes par jour ?",
+     "c": "Fais trois fois du shadowing sur un extrait de dix secondes, en collant un peu mieux au rythme à chaque fois."
+    },
+    "it": {
+     "t": "Le basi dello shadowing",
+     "g": "Prova lo shadowing: ripetere subito dopo chi parla per copiare ritmo e melodia.",
+     "p": [
+      "Fare shadowing significa parlare insieme a una registrazione con un piccolo ritardo, come un'eco.",
+      "Inizia con una clip breve e lenta e copia come sale e scende la voce prima di pensare ai suoni.",
+      "Leggi prima il testo se ti aiuta, poi prova a occhi chiusi per concentrarti sull'ascolto."
+     ],
+     "q": "Quale voce ti piacerebbe imitare per qualche minuto al giorno?",
+     "c": "Fai shadowing tre volte oggi su una clip di dieci secondi, seguendo il ritmo un po' meglio ogni volta."
+    },
+    "pt": {
+     "t": "Introdução ao shadowing",
+     "g": "Experimenta o shadowing: repetir logo a seguir a quem fala para copiar o ritmo e a melodia.",
+     "p": [
+      "No shadowing falas por cima de uma gravação com um pequeno atraso, como um eco da voz.",
+      "Começa com um excerto curto e lento e copia a subida e descida da voz antes de pensares nos sons.",
+      "Lê primeiro o texto se ajudar e depois tenta de olhos fechados para te concentrares no ouvido."
+     ],
+     "q": "Que voz gostavas de imitar durante alguns minutos por dia?",
+     "c": "Faz shadowing três vezes hoje com um excerto de dez segundos, acertando um pouco mais no ritmo de cada vez."
+    },
+    "pt_BR": {
+     "t": "Primeiros passos no shadowing",
+     "g": "Experimente o shadowing: repetir logo depois de quem fala para copiar o ritmo e a melodia.",
+     "p": [
+      "No shadowing você fala junto com uma gravação, com um pequeno atraso, como um eco da voz.",
+      "Comece com um trecho curto e lento e copie a subida e a descida da voz antes de pensar nos sons.",
+      "Leia o texto antes se ajudar e depois tente de olhos fechados para focar no ouvido."
+     ],
+     "q": "Que voz você gostaria de imitar por alguns minutos por dia?",
+     "c": "Faça shadowing três vezes hoje com um trecho de dez segundos, acertando um pouco mais o ritmo a cada vez."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Letters are not sounds",
+     "g": "Notice that spelling and sound often disagree: one letter can stand for many sounds.",
+     "p": [
+      "In English the letter 'a' sounds different in 'cat', 'car', 'cake' and 'about'.",
+      "The opposite happens too: one sound can have many spellings, like the 'ee' in 'see', 'sea' and 'key'.",
+      "So trust your ears first and treat spelling as a helpful hint, not as a strict rule."
+     ],
+     "q": "Do you know a word whose spelling surprised you when you first heard it?",
+     "c": "Find three words in a language you know where the same letter is said in different ways."
+    },
+    "de": {
+     "t": "Buchstaben sind keine Laute",
+     "g": "Erkenne, dass Schrift und Klang oft auseinandergehen: Ein Buchstabe kann viele Laute haben.",
+     "p": [
+      "Im Deutschen klingt das „e“ in „leben“, „Bett“ und „bitte“ jeweils anders.",
+      "Umgekehrt hat ein Laut oft mehrere Schreibweisen, etwa das lange i in „Liebe“, „Igel“ und „ihn“.",
+      "Vertraue also zuerst deinen Ohren und sieh die Schreibung als Hinweis, nicht als strenge Regel."
+     ],
+     "q": "Kennst du ein Wort, dessen Schreibweise dich überrascht hat, als du es zum ersten Mal gehört hast?",
+     "c": "Finde in einer Sprache, die du kennst, drei Wörter, in denen derselbe Buchstabe verschieden klingt."
+    },
+    "es": {
+     "t": "Las letras no son sonidos",
+     "g": "Observa que escritura y sonido a menudo no coinciden: una letra puede tener muchos sonidos.",
+     "p": [
+      "En inglés, la letra 'a' suena distinta en 'cat', 'car', 'cake' y 'about'.",
+      "También ocurre al revés: un sonido puede escribirse de varias formas, como la 'c' y la 'z' en 'cielo' y 'zapato'.",
+      "Así que confía primero en tu oído y toma la ortografía como una pista útil, no como una regla estricta."
+     ],
+     "q": "¿Conoces alguna palabra cuya escritura te sorprendió la primera vez que la oíste?",
+     "c": "Busca tres palabras en un idioma que conozcas donde la misma letra se pronuncie de formas distintas."
+    },
+    "fr": {
+     "t": "Les lettres ne sont pas des sons",
+     "g": "Remarque qu'écriture et son ne s'accordent pas toujours : une lettre peut avoir plusieurs sons.",
+     "p": [
+      "En français, le « c » ne sonne pas pareil dans « car » et « cerise », ni le « s » dans « sol » et « rose ».",
+      "L'inverse existe aussi : le son « o » s'écrit « o », « au », « eau » ou « ô », comme dans « beau » et « hôtel ».",
+      "Fais donc d'abord confiance à ton oreille et vois l'orthographe comme un indice, pas une règle stricte."
+     ],
+     "q": "Connais-tu un mot dont l'orthographe t'a surpris la première fois que tu l'as entendu ?",
+     "c": "Trouve trois mots dans une langue que tu connais où la même lettre se prononce différemment."
+    },
+    "it": {
+     "t": "Le lettere non sono suoni",
+     "g": "Nota che scrittura e suono spesso non coincidono: una lettera può avere più suoni.",
+     "p": [
+      "In italiano la 'c' suona diversa in 'casa' e 'cena', e la 'g' in 'gatto' e 'gelato'.",
+      "Succede anche il contrario: in inglese lo stesso suono 'ii' si scrive in 'see', 'sea' e 'key'.",
+      "Quindi fidati prima dell'orecchio e considera l'ortografia un indizio utile, non una regola rigida."
+     ],
+     "q": "Conosci una parola la cui scrittura ti ha sorpreso la prima volta che l'hai sentita?",
+     "c": "Trova tre parole in una lingua che conosci in cui la stessa lettera si pronuncia in modi diversi."
+    },
+    "pt": {
+     "t": "Letras não são sons",
+     "g": "Repara que a escrita e o som nem sempre combinam: uma letra pode ter vários sons.",
+     "p": [
+      "Em português, o 'x' soa diferente em 'xadrez', 'táxi', 'exame' e 'próximo'.",
+      "Também acontece o contrário: o mesmo som escreve-se de várias formas, como em 'sapo', 'cedo' e 'caça'.",
+      "Por isso confia primeiro no ouvido e vê a ortografia como uma pista útil, não como regra rígida."
+     ],
+     "q": "Conheces alguma palavra cuja escrita te surpreendeu quando a ouviste pela primeira vez?",
+     "c": "Encontra três palavras numa língua que conheças em que a mesma letra se diz de maneiras diferentes."
+    },
+    "pt_BR": {
+     "t": "Letras não são sons",
+     "g": "Perceba que escrita e som nem sempre combinam: uma letra pode ter vários sons.",
+     "p": [
+      "Em português, o 'x' soa diferente em 'xadrez', 'táxi', 'exame' e 'próximo'.",
+      "O contrário também acontece: o mesmo som tem várias grafias, como em 'sapo', 'cedo' e 'caça'.",
+      "Então confie primeiro no ouvido e veja a ortografia como uma pista útil, não como regra rígida."
+     ],
+     "q": "Você conhece alguma palavra cuja escrita te surpreendeu quando ouviu pela primeira vez?",
+     "c": "Encontre três palavras em um idioma que você conhece em que a mesma letra é falada de jeitos diferentes."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Vowels and consonants",
+     "g": "Feel the difference between open, free-flowing vowels and blocked or narrowed consonants.",
+     "p": [
+      "For vowels the air flows freely through an open mouth; you can hold 'ahhh' as long as your breath lasts.",
+      "For consonants the air is blocked or squeezed somewhere, by the lips, the tongue or the teeth.",
+      "Vowels carry the voice and melody, while consonants give each word its clear edges."
+     ],
+     "q": "Which do you find harder in a new language, its vowels or its consonants?",
+     "c": "Say 'mama' slowly and feel your lips close for each m and open wide for each a."
+    },
+    "de": {
+     "t": "Vokale und Konsonanten",
+     "g": "Spüre den Unterschied zwischen offenen, frei fließenden Vokalen und gehemmten Konsonanten.",
+     "p": [
+      "Bei Vokalen strömt die Luft frei durch den offenen Mund; ein „aaa“ hältst du, solange dein Atem reicht.",
+      "Bei Konsonanten wird die Luft irgendwo gestoppt oder verengt, durch Lippen, Zunge oder Zähne.",
+      "Vokale tragen Stimme und Melodie, Konsonanten geben jedem Wort klare Ränder."
+     ],
+     "q": "Was findest du in einer neuen Sprache schwieriger, die Vokale oder die Konsonanten?",
+     "c": "Sag langsam „Mama“ und spür, wie sich die Lippen bei jedem m schließen und bei jedem a weit öffnen."
+    },
+    "es": {
+     "t": "Vocales y consonantes",
+     "g": "Siente la diferencia entre vocales abiertas, con aire libre, y consonantes que frenan el aire.",
+     "p": [
+      "En las vocales el aire sale libre por la boca abierta; puedes sostener 'aaa' mientras dure el aliento.",
+      "En las consonantes el aire se bloquea o se estrecha en algún punto: labios, lengua o dientes.",
+      "Las vocales llevan la voz y la melodía; las consonantes dan a cada palabra sus bordes claros."
+     ],
+     "q": "¿Qué te resulta más difícil en un idioma nuevo, las vocales o las consonantes?",
+     "c": "Di 'mamá' despacio y nota cómo los labios se cierran en cada m y se abren mucho en cada a."
+    },
+    "fr": {
+     "t": "Voyelles et consonnes",
+     "g": "Sens la différence entre les voyelles ouvertes où l'air passe librement et les consonnes qui le freinent.",
+     "p": [
+      "Pour une voyelle, l'air sort librement par la bouche ouverte : tu peux tenir « aaa » tout un souffle.",
+      "Pour une consonne, l'air est bloqué ou resserré quelque part : lèvres, langue ou dents.",
+      "Les voyelles portent la voix et la mélodie, les consonnes donnent aux mots leurs contours nets."
+     ],
+     "q": "Qu'est-ce qui est le plus difficile pour toi dans une nouvelle langue, les voyelles ou les consonnes ?",
+     "c": "Dis « maman » lentement et sens tes lèvres se fermer sur chaque m et s'ouvrir sur chaque a."
+    },
+    "it": {
+     "t": "Vocali e consonanti",
+     "g": "Senti la differenza tra vocali aperte, con l'aria libera, e consonanti che la bloccano o la stringono.",
+     "p": [
+      "Nelle vocali l'aria esce libera dalla bocca aperta: puoi tenere 'aaa' finché dura il fiato.",
+      "Nelle consonanti l'aria si blocca o si stringe da qualche parte: labbra, lingua o denti.",
+      "Le vocali portano voce e melodia, le consonanti danno a ogni parola contorni netti."
+     ],
+     "q": "In una lingua nuova trovi più difficili le vocali o le consonanti?",
+     "c": "Di' 'mamma' lentamente e senti le labbra chiudersi su ogni m e aprirsi bene su ogni a."
+    },
+    "pt": {
+     "t": "Vogais e consoantes",
+     "g": "Sente a diferença entre vogais abertas, com ar livre, e consoantes que travam ou apertam o ar.",
+     "p": [
+      "Nas vogais o ar sai livre pela boca aberta: consegues manter 'aaa' enquanto durar o fôlego.",
+      "Nas consoantes o ar é travado ou apertado em algum ponto: lábios, língua ou dentes.",
+      "As vogais levam a voz e a melodia; as consoantes dão a cada palavra contornos nítidos."
+     ],
+     "q": "O que achas mais difícil numa língua nova, as vogais ou as consoantes?",
+     "c": "Diz 'mamã' devagar e sente os lábios a fechar em cada m e a abrir bem em cada a."
+    },
+    "pt_BR": {
+     "t": "Vogais e consoantes",
+     "g": "Sinta a diferença entre vogais abertas, com ar livre, e consoantes que travam ou apertam o ar.",
+     "p": [
+      "Nas vogais o ar sai livre pela boca aberta: você consegue segurar 'aaa' enquanto durar o fôlego.",
+      "Nas consoantes o ar é travado ou apertado em algum ponto: lábios, língua ou dentes.",
+      "As vogais levam a voz e a melodia; as consoantes dão a cada palavra contornos nítidos."
+     ],
+     "q": "O que você acha mais difícil num idioma novo, as vogais ou as consoantes?",
+     "c": "Diga 'mamãe' devagar e sinta os lábios fechando em cada m e abrindo bem no a."
+    }
+   }
+  }
+ ]
+}

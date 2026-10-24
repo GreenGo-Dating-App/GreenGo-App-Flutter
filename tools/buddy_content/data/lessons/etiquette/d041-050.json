@@ -1,0 +1,835 @@
+{
+ "topic": "etiquette",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Passing dishes",
+     "g": "Learn to pass dishes in one direction, serve others first and share fairly.",
+     "p": [
+      "At Western tables, dishes are usually passed to the right, so everything moves smoothly in one direction.",
+      "Offer the dish to the person next to you before serving yourself, especially if they are older or a guest.",
+      "Take a fair portion so there is enough for everyone, and ask before taking the last piece."
+     ],
+     "q": "How are dishes shared at a typical family meal where you live?",
+     "c": "At your next shared meal, offer each dish to your neighbour before you serve yourself."
+    },
+    "de": {
+     "t": "Schüsseln weiterreichen",
+     "g": "Lerne, Schüsseln in eine Richtung weiterzugeben, andere zuerst zu bedienen und fair zu teilen.",
+     "p": [
+      "An westlichen Tischen reicht man Schüsseln meist nach rechts weiter, damit alles in einer Richtung läuft.",
+      "Biete die Schüssel deinem Nachbarn an, bevor du dich bedienst, besonders wenn er älter oder Gast ist.",
+      "Nimm eine faire Portion, damit alle genug bekommen, und frag, bevor du das letzte Stück nimmst."
+     ],
+     "q": "Wie werden Gerichte bei einem typischen Familienessen bei dir geteilt?",
+     "c": "Biete bei der nächsten gemeinsamen Mahlzeit jedes Gericht zuerst deinem Nachbarn an."
+    },
+    "es": {
+     "t": "Pasar los platos",
+     "g": "Aprende a pasar los platos en una dirección, a servir primero a los demás y a repartir con justicia.",
+     "p": [
+      "En las mesas occidentales, las fuentes suelen pasarse hacia la derecha para que todo circule en un solo sentido.",
+      "Ofrece la fuente a quien está a tu lado antes de servirte, sobre todo si es mayor o un invitado.",
+      "Sírvete una ración justa para que haya para todos, y pregunta antes de coger el último trozo."
+     ],
+     "q": "¿Cómo se comparten los platos en una comida familiar típica donde vives?",
+     "c": "En tu próxima comida compartida, ofrece cada plato a tu vecino de mesa antes de servirte."
+    },
+    "fr": {
+     "t": "Faire passer les plats",
+     "g": "Apprends à faire passer les plats dans un sens, à servir les autres d'abord et à partager équitablement.",
+     "p": [
+      "Aux tables occidentales, on fait généralement passer les plats vers la droite pour que tout circule dans un seul sens.",
+      "Propose le plat à ton voisin avant de te servir, surtout s'il est plus âgé ou invité.",
+      "Prends une part raisonnable pour qu'il y en ait pour tous, et demande avant de prendre le dernier morceau."
+     ],
+     "q": "Comment partage-t-on les plats lors d'un repas de famille typique chez toi ?",
+     "c": "À ton prochain repas partagé, propose chaque plat à ton voisin avant de te servir."
+    },
+    "it": {
+     "t": "Passare i piatti",
+     "g": "Impara a passare i piatti in una direzione, a servire prima gli altri e a dividere in modo giusto.",
+     "p": [
+      "Alle tavole occidentali i piatti di portata si passano di solito verso destra, così tutto gira in un solo senso.",
+      "Offri il piatto a chi ti siede accanto prima di servirti, soprattutto se è più anziano o un ospite.",
+      "Prendi una porzione giusta perché ce ne sia per tutti, e chiedi prima di prendere l'ultimo pezzo."
+     ],
+     "q": "Come si condividono i piatti in un tipico pasto di famiglia dove vivi?",
+     "c": "Al prossimo pasto in compagnia offri ogni piatto al tuo vicino prima di servirti."
+    },
+    "pt": {
+     "t": "Passar as travessas",
+     "g": "Aprende a passar as travessas num só sentido, servir os outros primeiro e partilhar com justiça.",
+     "p": [
+      "Nas mesas ocidentais, as travessas costumam passar para a direita, para que tudo circule num só sentido.",
+      "Oferece a travessa a quem está ao teu lado antes de te servires, sobretudo se for mais velho ou convidado.",
+      "Serve-te de uma porção justa para que haja para todos, e pergunta antes de tirar o último pedaço."
+     ],
+     "q": "Como se partilham os pratos numa refeição de família típica onde vives?",
+     "c": "Na próxima refeição partilhada, oferece cada travessa ao teu vizinho antes de te servires."
+    },
+    "pt_BR": {
+     "t": "Passar as travessas",
+     "g": "Aprenda a passar as travessas em um só sentido, servir os outros primeiro e dividir com justiça.",
+     "p": [
+      "Nas mesas ocidentais, as travessas costumam ser passadas para a direita, para que tudo circule em um só sentido.",
+      "Ofereça a travessa a quem está ao seu lado antes de se servir, principalmente se for mais velho ou convidado.",
+      "Sirva uma porção justa para que tenha para todos, e pergunte antes de pegar o último pedaço."
+     ],
+     "q": "Como os pratos são divididos numa refeição de família típica onde você mora?",
+     "c": "Na próxima refeição compartilhada, ofereça cada travessa ao seu vizinho antes de se servir."
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Salt, pepper and seasoning",
+     "g": "Understand why adding salt before tasting can disappoint a cook.",
+     "p": [
+      "Salting food before tasting it can suggest you doubt the cook's skill, so taste first.",
+      "At Western tables, salt and pepper are passed together as a pair, even if only one is requested.",
+      "In some places, like many restaurants in Italy, adding extra cheese or sauce to certain dishes can surprise the chef."
+     ],
+     "q": "Do you usually add salt or sauce to your food, and before or after tasting?",
+     "c": "At your next meal, taste every dish before adding any seasoning."
+    },
+    "de": {
+     "t": "Salz, Pfeffer und Würzen",
+     "g": "Verstehe, warum Salzen vor dem Probieren einen Koch enttäuschen kann.",
+     "p": [
+      "Wer salzt, bevor er probiert, scheint am Können des Kochs zu zweifeln, also zuerst probieren.",
+      "An westlichen Tischen reicht man Salz und Pfeffer als Paar weiter, auch wenn nur eins verlangt wird.",
+      "Mancherorts, etwa in vielen Restaurants in Italien, kann extra Käse oder Soße auf bestimmten Gerichten den Koch überraschen."
+     ],
+     "q": "Würzt du dein Essen normalerweise nach, und tust du es vor oder nach dem Probieren?",
+     "c": "Probiere bei deiner nächsten Mahlzeit jedes Gericht, bevor du nachwürzt."
+    },
+    "es": {
+     "t": "Sal, pimienta y condimentos",
+     "g": "Entiende por qué echar sal antes de probar puede decepcionar a quien cocina.",
+     "p": [
+      "Salar la comida antes de probarla puede dar a entender que dudas del cocinero, así que prueba primero.",
+      "En las mesas occidentales, la sal y la pimienta se pasan juntas, aunque solo pidan una de ellas.",
+      "En algunos lugares, como muchos restaurantes de Italia, añadir queso o salsa extra a ciertos platos puede sorprender al chef."
+     ],
+     "q": "¿Sueles añadir sal o salsa a tu comida, y antes o después de probarla?",
+     "c": "En tu próxima comida, prueba cada plato antes de añadir cualquier condimento."
+    },
+    "fr": {
+     "t": "Sel, poivre et assaisonnement",
+     "g": "Comprends pourquoi saler avant de goûter peut décevoir celui qui a cuisiné.",
+     "p": [
+      "Saler un plat avant d'y goûter peut laisser entendre que tu doutes du cuisinier : goûte d'abord.",
+      "Aux tables occidentales, on fait passer le sel et le poivre ensemble, même si on n'en demande qu'un.",
+      "Dans certains endroits, comme beaucoup de restaurants en Italie, ajouter du fromage ou de la sauce à certains plats peut surprendre le chef."
+     ],
+     "q": "Ajoutes-tu souvent du sel ou de la sauce, et avant ou après avoir goûté ?",
+     "c": "À ton prochain repas, goûte chaque plat avant d'ajouter le moindre assaisonnement."
+    },
+    "it": {
+     "t": "Sale, pepe e condimenti",
+     "g": "Capisci perché aggiungere sale prima di assaggiare può deludere chi ha cucinato.",
+     "p": [
+      "Salare un piatto prima di assaggiarlo può far pensare che dubiti del cuoco, quindi assaggia prima.",
+      "Alle tavole occidentali sale e pepe si passano insieme, anche se ne viene chiesto solo uno.",
+      "In alcuni luoghi, come molti ristoranti italiani, aggiungere formaggio o salsa a certi piatti può stupire lo chef."
+     ],
+     "q": "Di solito aggiungi sale o salsa al cibo, e prima o dopo averlo assaggiato?",
+     "c": "Al prossimo pasto assaggia ogni piatto prima di aggiungere qualsiasi condimento."
+    },
+    "pt": {
+     "t": "Sal, pimenta e temperos",
+     "g": "Percebe porque pôr sal antes de provar pode desiludir quem cozinhou.",
+     "p": [
+      "Salgar a comida antes de a provar pode sugerir que duvidas do cozinheiro, por isso prova primeiro.",
+      "Nas mesas ocidentais, o sal e a pimenta passam-se juntos, mesmo que só peçam um deles.",
+      "Em alguns sítios, como muitos restaurantes em Itália, juntar queijo ou molho extra a certos pratos pode surpreender o chef."
+     ],
+     "q": "Costumas pôr sal ou molho na comida, e antes ou depois de provar?",
+     "c": "Na próxima refeição, prova cada prato antes de acrescentares qualquer tempero."
+    },
+    "pt_BR": {
+     "t": "Sal, pimenta e temperos",
+     "g": "Entenda por que colocar sal antes de provar pode decepcionar quem cozinhou.",
+     "p": [
+      "Salgar a comida antes de provar pode dar a entender que você duvida do cozinheiro, então prove primeiro.",
+      "Nas mesas ocidentais, sal e pimenta são passados juntos, mesmo que peçam só um deles.",
+      "Em alguns lugares, como muitos restaurantes na Itália, colocar queijo ou molho extra em certos pratos pode surpreender o chef."
+     ],
+     "q": "Você costuma colocar sal ou molho na comida, e antes ou depois de provar?",
+     "c": "Na próxima refeição, prove cada prato antes de acrescentar qualquer tempero."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Drinks etiquette",
+     "g": "Learn about pouring for others, refilling glasses and declining a drink politely.",
+     "p": [
+      "In Korea, Japan and China, people often pour for others rather than themselves, and someone will refill your glass.",
+      "Hold your glass with both hands or support it when an elder pours for you in Korea, as a sign of respect.",
+      "To decline, leave your glass partly full or cover it lightly with your hand and say thank you with a smile."
+     ],
+     "q": "Is it common where you live to pour drinks for others at the table?",
+     "c": "At your next meal with others, offer to pour water or a drink for the people next to you first."
+    },
+    "de": {
+     "t": "Etikette bei Getränken",
+     "g": "Lerne, anderen einzuschenken, Gläser nachzufüllen und ein Getränk höflich abzulehnen.",
+     "p": [
+      "In Korea, Japan und China schenkt man oft anderen statt sich selbst ein, und jemand füllt auch dein Glas nach.",
+      "Halte in Korea dein Glas mit beiden Händen oder stütze es, wenn eine ältere Person einschenkt, als Zeichen von Respekt.",
+      "Zum Ablehnen lass dein Glas teilweise voll oder deck es leicht mit der Hand ab und bedanke dich lächelnd."
+     ],
+     "q": "Ist es bei dir üblich, am Tisch anderen Getränke einzuschenken?",
+     "c": "Biete bei deiner nächsten Mahlzeit in Gesellschaft an, zuerst deinen Nachbarn Wasser oder ein Getränk einzuschenken."
+    },
+    "es": {
+     "t": "Etiqueta de las bebidas",
+     "g": "Aprende a servir a los demás, rellenar copas y rechazar una bebida con educación.",
+     "p": [
+      "En Corea, Japón y China se suele servir a los demás en lugar de a uno mismo, y alguien rellenará tu vaso.",
+      "En Corea, sujeta el vaso con ambas manos o apóyalo cuando te sirva una persona mayor, como señal de respeto.",
+      "Para rechazar, deja el vaso algo lleno o cúbrelo suavemente con la mano y da las gracias con una sonrisa."
+     ],
+     "q": "¿Es habitual donde vives servir bebidas a los demás en la mesa?",
+     "c": "En tu próxima comida en compañía, ofrécete a servir agua o una bebida primero a quienes tienes al lado."
+    },
+    "fr": {
+     "t": "Les boissons à table",
+     "g": "Apprends à servir les autres, à remplir les verres et à refuser poliment un verre.",
+     "p": [
+      "En Corée, au Japon et en Chine, on sert souvent les autres plutôt que soi-même, et quelqu'un remplira ton verre.",
+      "En Corée, tiens ton verre à deux mains ou soutiens-le quand une personne plus âgée te sert, en signe de respect.",
+      "Pour refuser, laisse ton verre en partie plein ou couvre-le légèrement de la main en remerciant avec le sourire."
+     ],
+     "q": "Est-il courant chez toi de servir à boire aux autres à table ?",
+     "c": "À ton prochain repas en groupe, propose d'abord de servir de l'eau ou une boisson à tes voisins."
+    },
+    "it": {
+     "t": "Il galateo delle bevande",
+     "g": "Impara a versare da bere agli altri, riempire i bicchieri e rifiutare una bevanda con garbo.",
+     "p": [
+      "In Corea, Giappone e Cina spesso si versa da bere agli altri e non a sé stessi, e qualcuno riempirà il tuo bicchiere.",
+      "In Corea tieni il bicchiere con due mani o sostienilo quando una persona più anziana ti versa da bere, in segno di rispetto.",
+      "Per rifiutare lascia il bicchiere un po' pieno o coprilo leggermente con la mano e ringrazia con un sorriso."
+     ],
+     "q": "Dove vivi è comune versare da bere agli altri a tavola?",
+     "c": "Al prossimo pasto in compagnia offriti di versare prima acqua o una bevanda ai tuoi vicini."
+    },
+    "pt": {
+     "t": "A etiqueta das bebidas",
+     "g": "Aprende a servir os outros, encher os copos e recusar uma bebida com educação.",
+     "p": [
+      "Na Coreia, no Japão e na China, costuma-se servir os outros em vez de si próprio, e alguém vai encher o teu copo.",
+      "Na Coreia, segura o copo com as duas mãos ou apoia-o quando uma pessoa mais velha te serve, em sinal de respeito.",
+      "Para recusar, deixa o copo meio cheio ou tapa-o levemente com a mão e agradece com um sorriso."
+     ],
+     "q": "É comum onde vives servir bebidas aos outros à mesa?",
+     "c": "Na próxima refeição em grupo, oferece-te para servir primeiro água ou uma bebida aos teus vizinhos."
+    },
+    "pt_BR": {
+     "t": "A etiqueta das bebidas",
+     "g": "Aprenda a servir os outros, completar os copos e recusar uma bebida com educação.",
+     "p": [
+      "Na Coreia, no Japão e na China, costuma-se servir os outros em vez de si mesmo, e alguém vai encher o seu copo.",
+      "Na Coreia, segure o copo com as duas mãos ou apoie-o quando uma pessoa mais velha servir você, em sinal de respeito.",
+      "Para recusar, deixe o copo um pouco cheio ou cubra-o de leve com a mão e agradeça com um sorriso."
+     ],
+     "q": "É comum onde você mora servir bebidas aos outros à mesa?",
+     "c": "Na próxima refeição em grupo, ofereça-se para servir primeiro água ou uma bebida aos seus vizinhos."
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Toasting etiquette",
+     "g": "Learn about eye contact, clinking glasses and who raises a toast first.",
+     "p": [
+      "In Germany and much of Europe, look each person in the eye as you clink glasses; it is a sign of sincerity.",
+      "In Korea and Japan, a younger or junior person often holds their glass slightly lower than an elder's when clinking.",
+      "The host usually gives the first toast; any drink, including water or juice, is fine to raise."
+     ],
+     "q": "How do people say cheers in your language, and is there a toasting custom you like?",
+     "c": "Learn how to say cheers in two other languages and use one at your next shared meal."
+    },
+    "de": {
+     "t": "Etikette beim Anstoßen",
+     "g": "Lerne die Regeln zu Blickkontakt, Anstoßen und dazu, wer den ersten Toast ausspricht.",
+     "p": [
+      "In Deutschland und weiten Teilen Europas sieht man beim Anstoßen jedem in die Augen, als Zeichen der Aufrichtigkeit.",
+      "In Korea und Japan hält die jüngere oder rangniedrigere Person ihr Glas beim Anstoßen oft etwas tiefer.",
+      "Meist spricht der Gastgeber den ersten Toast; jedes Getränk ist in Ordnung, auch Wasser oder Saft."
+     ],
+     "q": "Wie sagt man Prost in deiner Sprache, und gibt es einen Trinkspruch-Brauch, den du magst?",
+     "c": "Lerne Prost in zwei anderen Sprachen und benutze eins bei deiner nächsten gemeinsamen Mahlzeit."
+    },
+    "es": {
+     "t": "Etiqueta del brindis",
+     "g": "Aprende sobre el contacto visual, el choque de copas y quién propone el primer brindis.",
+     "p": [
+      "En Alemania y gran parte de Europa se mira a los ojos a cada persona al chocar las copas, como señal de sinceridad.",
+      "En Corea y Japón, la persona más joven o de menor rango suele sostener su copa un poco más baja al brindar.",
+      "El anfitrión suele hacer el primer brindis; vale cualquier bebida, también agua o zumo."
+     ],
+     "q": "¿Cómo se dice salud en tu idioma, y hay alguna costumbre de brindis que te guste?",
+     "c": "Aprende a decir salud en otros dos idiomas y usa uno en tu próxima comida compartida."
+    },
+    "fr": {
+     "t": "Trinquer avec savoir-vivre",
+     "g": "Apprends les règles du regard, du verre que l'on choque et de qui porte le premier toast.",
+     "p": [
+      "En Allemagne et dans une grande partie de l'Europe, on regarde chacun dans les yeux en trinquant, signe de sincérité.",
+      "En Corée et au Japon, la personne plus jeune ou de rang inférieur tient souvent son verre un peu plus bas en trinquant.",
+      "L'hôte porte généralement le premier toast ; toute boisson convient, y compris l'eau ou le jus."
+     ],
+     "q": "Comment dit-on santé dans ta langue, et y a-t-il une coutume de toast que tu aimes ?",
+     "c": "Apprends à dire santé dans deux autres langues et utilise l'une d'elles à ton prochain repas partagé."
+    },
+    "it": {
+     "t": "Il galateo del brindisi",
+     "g": "Impara le regole su sguardo, tintinnio dei bicchieri e su chi propone il primo brindisi.",
+     "p": [
+      "In Germania e in gran parte d'Europa si guarda negli occhi ognuno mentre si brinda, come segno di sincerità.",
+      "In Corea e in Giappone la persona più giovane o di grado inferiore tiene spesso il bicchiere un po' più in basso.",
+      "Di solito il primo brindisi lo fa chi ospita; va bene qualsiasi bevanda, anche acqua o succo."
+     ],
+     "q": "Come si dice salute nella tua lingua, e c'è un'usanza di brindisi che ti piace?",
+     "c": "Impara a dire salute in altre due lingue e usane una al prossimo pasto in compagnia."
+    },
+    "pt": {
+     "t": "A etiqueta do brinde",
+     "g": "Aprende as regras do olhar, do tocar dos copos e de quem faz o primeiro brinde.",
+     "p": [
+      "Na Alemanha e em grande parte da Europa, olha-se cada pessoa nos olhos ao brindar, como sinal de sinceridade.",
+      "Na Coreia e no Japão, a pessoa mais nova ou de menor estatuto costuma segurar o copo um pouco mais abaixo ao brindar.",
+      "O anfitrião costuma fazer o primeiro brinde; qualquer bebida serve, incluindo água ou sumo."
+     ],
+     "q": "Como se diz saúde na tua língua, e há algum costume de brinde de que gostes?",
+     "c": "Aprende a dizer saúde em duas outras línguas e usa uma delas na próxima refeição partilhada."
+    },
+    "pt_BR": {
+     "t": "A etiqueta do brinde",
+     "g": "Aprenda as regras do olhar, do encostar dos copos e de quem faz o primeiro brinde.",
+     "p": [
+      "Na Alemanha e em boa parte da Europa, olha-se cada pessoa nos olhos ao brindar, como sinal de sinceridade.",
+      "Na Coreia e no Japão, a pessoa mais jovem ou de cargo menor costuma segurar o copo um pouco mais baixo ao brindar.",
+      "O anfitrião costuma fazer o primeiro brinde; qualquer bebida vale, inclusive água ou suco."
+     ],
+     "q": "Como se diz saúde no seu idioma, e existe algum costume de brinde de que você gosta?",
+     "c": "Aprenda a dizer saúde em dois outros idiomas e use um deles na próxima refeição compartilhada."
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Saying no to food politely",
+     "g": "Learn to decline extra helpings without hurting anyone's feelings.",
+     "p": [
+      "Praise the food first, then decline gently: It was delicious, but I could not eat another bite.",
+      "In some cultures, such as in Iran or China, hosts may offer several times; a polite refusal is part of a gracious ritual.",
+      "If you cannot eat something, take a very small portion or say kindly that you are full, without long explanations."
+     ],
+     "q": "Is it easy or hard to say no to more food where you come from?",
+     "c": "Prepare a warm phrase to decline food politely and use it the next time you are offered seconds."
+    },
+    "de": {
+     "t": "Höflich Nein zum Essen sagen",
+     "g": "Lerne, einen Nachschlag abzulehnen, ohne jemanden zu kränken.",
+     "p": [
+      "Lobe zuerst das Essen und lehne dann sanft ab: Es war köstlich, aber ich schaffe keinen Bissen mehr.",
+      "In manchen Kulturen, etwa im Iran oder in China, bieten Gastgeber mehrmals an; höfliches Ablehnen gehört zu einem freundlichen Ritual.",
+      "Kannst du etwas nicht essen, nimm eine sehr kleine Portion oder sag freundlich, dass du satt bist, ohne lange Erklärungen."
+     ],
+     "q": "Fällt es dort, wo du herkommst, leicht oder schwer, Nein zu mehr Essen zu sagen?",
+     "c": "Leg dir einen herzlichen Satz zum höflichen Ablehnen zurecht und nutze ihn beim nächsten Nachschlag."
+    },
+    "es": {
+     "t": "Decir que no a la comida con educación",
+     "g": "Aprende a rechazar otra ración sin herir los sentimientos de nadie.",
+     "p": [
+      "Elogia primero la comida y luego rechaza con suavidad: Estaba buenísimo, pero no puedo comer ni un bocado más.",
+      "En algunas culturas, como en Irán o China, el anfitrión puede ofrecer varias veces; rechazar con cortesía es parte de un ritual amable.",
+      "Si no puedes comer algo, sírvete muy poco o di con amabilidad que estás lleno, sin largas explicaciones."
+     ],
+     "q": "¿Es fácil o difícil decir que no a más comida en el lugar de donde vienes?",
+     "c": "Prepara una frase cálida para rechazar comida y úsala la próxima vez que te ofrezcan repetir."
+    },
+    "fr": {
+     "t": "Refuser poliment de la nourriture",
+     "g": "Apprends à refuser une portion supplémentaire sans vexer personne.",
+     "p": [
+      "Complimente d'abord le plat, puis refuse doucement : C'était délicieux, mais je ne peux plus avaler une bouchée.",
+      "Dans certaines cultures, comme en Iran ou en Chine, l'hôte peut proposer plusieurs fois ; refuser poliment fait partie d'un rituel courtois.",
+      "Si tu ne peux pas manger quelque chose, prends-en très peu ou dis gentiment que tu n'as plus faim, sans longues explications."
+     ],
+     "q": "Est-ce facile ou difficile de refuser de la nourriture là d'où tu viens ?",
+     "c": "Prépare une phrase chaleureuse pour refuser poliment et utilise-la la prochaine fois qu'on te ressert."
+    },
+    "it": {
+     "t": "Dire di no al cibo con garbo",
+     "g": "Impara a rifiutare un'altra porzione senza offendere nessuno.",
+     "p": [
+      "Prima loda il cibo, poi rifiuta con dolcezza: Era buonissimo, ma non riesco a mangiare un altro boccone.",
+      "In alcune culture, come in Iran o in Cina, chi ospita può offrire più volte; rifiutare con cortesia fa parte di un rituale gentile.",
+      "Se non puoi mangiare qualcosa, prendine pochissimo o di' gentilmente che sei sazio, senza lunghe spiegazioni."
+     ],
+     "q": "Da dove vieni è facile o difficile dire di no a altro cibo?",
+     "c": "Preparati una frase calorosa per rifiutare con garbo e usala la prossima volta che ti offrono il bis."
+    },
+    "pt": {
+     "t": "Recusar comida com educação",
+     "g": "Aprende a recusar mais comida sem magoar ninguém.",
+     "p": [
+      "Elogia primeiro a comida e depois recusa com suavidade: Estava delicioso, mas não consigo comer nem mais um bocadinho.",
+      "Em algumas culturas, como no Irão ou na China, o anfitrião pode oferecer várias vezes; recusar com cortesia faz parte do ritual.",
+      "Se não puderes comer algo, serve-te de muito pouco ou diz com simpatia que estás satisfeito, sem longas explicações."
+     ],
+     "q": "É fácil ou difícil dizer que não a mais comida no sítio de onde vens?",
+     "c": "Prepara uma frase calorosa para recusar comida e usa-a da próxima vez que te oferecerem mais."
+    },
+    "pt_BR": {
+     "t": "Recusar comida com educação",
+     "g": "Aprenda a recusar mais comida sem magoar ninguém.",
+     "p": [
+      "Elogie primeiro a comida e depois recuse com suavidade: Estava delicioso, mas não consigo comer nem mais um pedacinho.",
+      "Em algumas culturas, como no Irã ou na China, o anfitrião pode oferecer várias vezes; recusar com cortesia faz parte de um ritual gentil.",
+      "Se não puder comer algo, sirva bem pouco ou diga com gentileza que está satisfeito, sem longas explicações."
+     ],
+     "q": "É fácil ou difícil dizer não a mais comida no lugar de onde você vem?",
+     "c": "Prepare uma frase calorosa para recusar comida e use da próxima vez que oferecerem mais."
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Dining with dietary needs",
+     "g": "Learn to tell a host about allergies or preferences kindly and clearly.",
+     "p": [
+      "Tell your host about allergies or dietary needs when you accept the invitation, not when the food arrives.",
+      "Keep it simple and positive: I do not eat meat, but I love vegetables, so please do not go to any trouble.",
+      "Respect others' needs too: never pressure anyone to try something they have declined."
+     ],
+     "q": "Do you or people close to you have food preferences or needs, and how do you share them?",
+     "c": "Write a short, friendly message you could send a host to explain a food preference or allergy."
+    },
+    "de": {
+     "t": "Essen mit besonderen Ernährungsbedürfnissen",
+     "g": "Lerne, einem Gastgeber Allergien oder Vorlieben freundlich und klar mitzuteilen.",
+     "p": [
+      "Sag deinem Gastgeber bei der Zusage, nicht erst beim Servieren, welche Allergien oder Bedürfnisse du hast.",
+      "Halte es einfach und positiv: Ich esse kein Fleisch, liebe aber Gemüse, mach dir also bitte keine Umstände.",
+      "Respektiere auch die Bedürfnisse anderer: Dräng niemanden, etwas zu probieren, das er abgelehnt hat."
+     ],
+     "q": "Hast du oder haben Menschen in deiner Nähe Ernährungsvorlieben, und wie teilt ihr sie mit?",
+     "c": "Schreib eine kurze, freundliche Nachricht, mit der du einem Gastgeber eine Vorliebe oder Allergie erklären könntest."
+    },
+    "es": {
+     "t": "Comer con necesidades alimentarias",
+     "g": "Aprende a contar a un anfitrión tus alergias o preferencias con amabilidad y claridad.",
+     "p": [
+      "Cuéntale al anfitrión tus alergias o necesidades al aceptar la invitación, no cuando llegue la comida.",
+      "Hazlo simple y positivo: No como carne, pero me encantan las verduras, así que no te compliques por mí.",
+      "Respeta también las necesidades ajenas: nunca presiones a nadie para que pruebe algo que ha rechazado."
+     ],
+     "q": "¿Tienes tú o alguien cercano preferencias o necesidades alimentarias, y cómo las comunicáis?",
+     "c": "Escribe un mensaje breve y amable que podrías enviar a un anfitrión para explicar una preferencia o alergia."
+    },
+    "fr": {
+     "t": "Manger avec des besoins alimentaires",
+     "g": "Apprends à parler à ton hôte de tes allergies ou préférences avec gentillesse et clarté.",
+     "p": [
+      "Informe ton hôte de tes allergies ou besoins en acceptant l'invitation, pas au moment où le plat arrive.",
+      "Reste simple et positif : Je ne mange pas de viande, mais j'adore les légumes, alors ne te complique pas la vie.",
+      "Respecte aussi les besoins des autres : n'insiste jamais pour qu'on goûte ce qu'on a refusé."
+     ],
+     "q": "As-tu, toi ou tes proches, des préférences ou besoins alimentaires, et comment en parlez-vous ?",
+     "c": "Écris un court message aimable que tu pourrais envoyer à un hôte pour expliquer une préférence ou une allergie."
+    },
+    "it": {
+     "t": "A tavola con esigenze alimentari",
+     "g": "Impara a comunicare a chi ti ospita allergie o preferenze con gentilezza e chiarezza.",
+     "p": [
+      "Parla di allergie o esigenze quando accetti l'invito, non quando arriva il cibo in tavola.",
+      "Resta semplice e positivo: Non mangio carne, ma adoro le verdure, quindi non darti pena per me.",
+      "Rispetta anche le esigenze altrui: non insistere mai perché qualcuno assaggi ciò che ha rifiutato."
+     ],
+     "q": "Tu o le persone vicine a te avete preferenze o esigenze alimentari, e come le comunicate?",
+     "c": "Scrivi un breve messaggio cordiale che potresti mandare a chi ti ospita per spiegare una preferenza o un'allergia."
+    },
+    "pt": {
+     "t": "Refeições com necessidades alimentares",
+     "g": "Aprende a falar ao anfitrião de alergias ou preferências com simpatia e clareza.",
+     "p": [
+      "Conta ao anfitrião as tuas alergias ou necessidades quando aceitas o convite, não quando a comida chega.",
+      "Mantém a mensagem simples e positiva: Não como carne, mas adoro legumes, por isso não te preocupes comigo.",
+      "Respeita também as necessidades dos outros: nunca pressiones alguém a provar algo que recusou."
+     ],
+     "q": "Tu ou pessoas próximas têm preferências ou necessidades alimentares, e como as comunicam?",
+     "c": "Escreve uma mensagem curta e simpática que poderias enviar a um anfitrião para explicar uma preferência ou alergia."
+    },
+    "pt_BR": {
+     "t": "Refeições com restrições alimentares",
+     "g": "Aprenda a contar ao anfitrião sobre alergias ou preferências com gentileza e clareza.",
+     "p": [
+      "Conte ao anfitrião sobre suas alergias ou restrições ao aceitar o convite, não quando a comida chegar.",
+      "Seja simples e positivo: Não como carne, mas adoro legumes, então não precisa se preocupar comigo.",
+      "Respeite também as necessidades dos outros: nunca pressione alguém a provar algo que recusou."
+     ],
+     "q": "Você ou pessoas próximas têm preferências ou restrições alimentares, e como vocês comunicam isso?",
+     "c": "Escreva uma mensagem curta e simpática que você poderia mandar a um anfitrião explicando uma preferência ou alergia."
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Restaurant etiquette",
+     "g": "Learn how to call the waiter, order and ask for the bill in different places.",
+     "p": [
+      "A raised hand and eye contact work in most countries; snapping fingers or whistling is considered rude almost everywhere.",
+      "In Japan, a polite sumimasen or a call button at the table is normal to get staff attention.",
+      "In much of Europe the bill only comes when you ask for it, since rushing guests is seen as impolite."
+     ],
+     "q": "What do you do to get a waiter's attention where you live?",
+     "c": "Learn how to ask for the bill in one new language today."
+    },
+    "de": {
+     "t": "Etikette im Restaurant",
+     "g": "Lerne, wie man in verschiedenen Ländern die Bedienung ruft, bestellt und um die Rechnung bittet.",
+     "p": [
+      "Eine erhobene Hand und Blickkontakt funktionieren fast überall; Fingerschnippen oder Pfeifen gilt fast überall als unhöflich.",
+      "In Japan ist ein höfliches Sumimasen oder eine Rufklingel am Tisch normal, um das Personal zu rufen.",
+      "In weiten Teilen Europas kommt die Rechnung erst, wenn man danach fragt, denn Gäste zu drängen gilt als unhöflich."
+     ],
+     "q": "Wie machst du dort, wo du lebst, die Bedienung auf dich aufmerksam?",
+     "c": "Lerne heute, in einer neuen Sprache nach der Rechnung zu fragen."
+    },
+    "es": {
+     "t": "Etiqueta en el restaurante",
+     "g": "Aprende a llamar al camarero, pedir y solicitar la cuenta en distintos lugares.",
+     "p": [
+      "Levantar la mano y buscar la mirada funciona en casi todos los países; chasquear los dedos o silbar es grosero casi en todas partes.",
+      "En Japón es normal decir sumimasen con educación o usar el timbre de la mesa para llamar al personal.",
+      "En gran parte de Europa la cuenta solo llega cuando la pides, porque meter prisa al cliente se considera descortés."
+     ],
+     "q": "¿Qué haces para llamar la atención del camarero donde vives?",
+     "c": "Aprende hoy a pedir la cuenta en un idioma nuevo."
+    },
+    "fr": {
+     "t": "Le savoir-vivre au restaurant",
+     "g": "Apprends à appeler le serveur, commander et demander l'addition selon les pays.",
+     "p": [
+      "Une main levée et un regard fonctionnent presque partout ; claquer des doigts ou siffler est impoli quasiment partout.",
+      "Au Japon, un sumimasen poli ou un bouton d'appel sur la table sont normaux pour appeler le personnel.",
+      "Dans une grande partie de l'Europe, l'addition n'arrive que si on la demande, car presser les clients est jugé impoli."
+     ],
+     "q": "Que fais-tu pour attirer l'attention d'un serveur là où tu vis ?",
+     "c": "Apprends aujourd'hui à demander l'addition dans une nouvelle langue."
+    },
+    "it": {
+     "t": "Il galateo al ristorante",
+     "g": "Impara a chiamare il cameriere, ordinare e chiedere il conto in luoghi diversi.",
+     "p": [
+      "Una mano alzata e uno sguardo funzionano quasi ovunque; schioccare le dita o fischiare è scortese quasi dappertutto.",
+      "In Giappone è normale un cortese sumimasen o un campanello sul tavolo per chiamare il personale.",
+      "In gran parte d'Europa il conto arriva solo quando lo chiedi, perché mettere fretta ai clienti è considerato scortese."
+     ],
+     "q": "Cosa fai per attirare l'attenzione del cameriere dove vivi?",
+     "c": "Oggi impara a chiedere il conto in una lingua nuova."
+    },
+    "pt": {
+     "t": "A etiqueta no restaurante",
+     "g": "Aprende a chamar o empregado, fazer o pedido e pedir a conta em diferentes sítios.",
+     "p": [
+      "Levantar a mão e procurar o olhar funciona em quase todos os países; estalar os dedos ou assobiar é rude quase em todo o lado.",
+      "No Japão é normal um sumimasen educado ou um botão de chamada na mesa para chamar o pessoal.",
+      "Em grande parte da Europa a conta só chega quando a pedes, porque apressar os clientes é visto como indelicado."
+     ],
+     "q": "O que fazes para chamar a atenção do empregado onde vives?",
+     "c": "Aprende hoje a pedir a conta numa língua nova."
+    },
+    "pt_BR": {
+     "t": "A etiqueta no restaurante",
+     "g": "Aprenda a chamar o garçom, fazer o pedido e pedir a conta em diferentes lugares.",
+     "p": [
+      "Levantar a mão e buscar o olhar funciona em quase todos os países; estalar os dedos ou assobiar é grosseiro em quase todo lugar.",
+      "No Japão é normal um sumimasen educado ou um botão de chamada na mesa para chamar os atendentes.",
+      "Em boa parte da Europa a conta só chega quando você pede, porque apressar o cliente é visto como falta de educação."
+     ],
+     "q": "O que você faz para chamar a atenção do garçom onde mora?",
+     "c": "Aprenda hoje a pedir a conta em um idioma novo."
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Tipping around the world",
+     "g": "Find out where tipping is expected, included, optional or unusual.",
+     "p": [
+      "In the US and Canada, tipping in restaurants is expected and forms an important part of staff income.",
+      "In much of Europe, service is often included, and rounding up or leaving small change is a kind extra.",
+      "In Japan and South Korea, tipping is unusual and may even confuse staff; excellent service is simply part of the job."
+     ],
+     "q": "How does tipping work where you live, and do you find it easy to know what to do?",
+     "c": "Before your next trip or meal out, check the local tipping custom so you feel confident."
+    },
+    "de": {
+     "t": "Trinkgeld weltweit",
+     "g": "Finde heraus, wo Trinkgeld erwartet wird, inklusive, freiwillig oder unüblich ist.",
+     "p": [
+      "In den USA und Kanada wird im Restaurant Trinkgeld erwartet, es ist ein wichtiger Teil des Einkommens des Personals.",
+      "In weiten Teilen Europas ist der Service oft inklusive, und Aufrunden oder etwas Kleingeld ist eine nette Geste.",
+      "In Japan und Südkorea ist Trinkgeld unüblich und kann das Personal sogar verwirren; guter Service gehört einfach dazu."
+     ],
+     "q": "Wie funktioniert Trinkgeld bei dir, und findest du es leicht zu wissen, was angemessen ist?",
+     "c": "Informiere dich vor deiner nächsten Reise oder deinem nächsten Restaurantbesuch über den örtlichen Trinkgeldbrauch."
+    },
+    "es": {
+     "t": "Las propinas en el mundo",
+     "g": "Descubre dónde la propina es obligatoria en la práctica, está incluida, es opcional o resulta inusual.",
+     "p": [
+      "En Estados Unidos y Canadá se espera dejar propina en los restaurantes, y es una parte importante del ingreso del personal.",
+      "En gran parte de Europa el servicio suele estar incluido, y redondear o dejar unas monedas es un detalle amable.",
+      "En Japón y Corea del Sur la propina es inusual e incluso puede confundir al personal; el buen servicio forma parte del trabajo."
+     ],
+     "q": "¿Cómo funcionan las propinas donde vives, y te resulta fácil saber qué hacer?",
+     "c": "Antes de tu próximo viaje o comida fuera, infórmate de la costumbre local de propinas para ir con seguridad."
+    },
+    "fr": {
+     "t": "Le pourboire dans le monde",
+     "g": "Découvre où le pourboire est attendu, inclus, facultatif ou inhabituel.",
+     "p": [
+      "Aux États-Unis et au Canada, le pourboire au restaurant est attendu et représente une part importante du revenu du personnel.",
+      "Dans une grande partie de l'Europe, le service est souvent compris, et arrondir ou laisser la monnaie est une gentille attention.",
+      "Au Japon et en Corée du Sud, le pourboire est inhabituel et peut même gêner ; un excellent service fait simplement partie du métier."
+     ],
+     "q": "Comment fonctionne le pourboire chez toi, et est-ce facile de savoir quoi faire ?",
+     "c": "Avant ton prochain voyage ou restaurant, renseigne-toi sur l'usage local du pourboire pour être à l'aise."
+    },
+    "it": {
+     "t": "La mancia nel mondo",
+     "g": "Scopri dove la mancia è attesa, inclusa, facoltativa o insolita.",
+     "p": [
+      "Negli Stati Uniti e in Canada la mancia al ristorante è attesa ed è una parte importante del reddito del personale.",
+      "In gran parte d'Europa il servizio è spesso incluso, e arrotondare o lasciare qualche moneta è un gesto gentile.",
+      "In Giappone e in Corea del Sud la mancia è insolita e può persino confondere il personale; un ottimo servizio fa parte del lavoro."
+     ],
+     "q": "Come funziona la mancia dove vivi, e ti è facile capire cosa fare?",
+     "c": "Prima del prossimo viaggio o pasto fuori informati sull'usanza locale della mancia, così ti sentirai sicuro."
+    },
+    "pt": {
+     "t": "As gorjetas pelo mundo",
+     "g": "Descobre onde a gorjeta é esperada, incluída, opcional ou invulgar.",
+     "p": [
+      "Nos Estados Unidos e no Canadá espera-se gorjeta nos restaurantes, e ela é uma parte importante do rendimento do pessoal.",
+      "Em grande parte da Europa o serviço já vem muitas vezes incluído, e arredondar ou deixar umas moedas é um gesto simpático.",
+      "No Japão e na Coreia do Sul a gorjeta é invulgar e pode até confundir o pessoal; um ótimo serviço faz simplesmente parte do trabalho."
+     ],
+     "q": "Como funcionam as gorjetas onde vives, e é fácil saber o que fazer?",
+     "c": "Antes da próxima viagem ou refeição fora, informa-te sobre o costume local das gorjetas para te sentires seguro."
+    },
+    "pt_BR": {
+     "t": "As gorjetas pelo mundo",
+     "g": "Descubra onde a gorjeta é esperada, incluída, opcional ou incomum.",
+     "p": [
+      "Nos Estados Unidos e no Canadá, a gorjeta em restaurantes é esperada e é parte importante da renda dos atendentes.",
+      "Em boa parte da Europa o serviço muitas vezes já vem incluído, e arredondar ou deixar umas moedas é um gesto gentil.",
+      "No Japão e na Coreia do Sul a gorjeta é incomum e pode até confundir os atendentes; um ótimo serviço faz parte do trabalho."
+     ],
+     "q": "Como funcionam as gorjetas onde você mora, e é fácil saber o que fazer?",
+     "c": "Antes da próxima viagem ou refeição fora, pesquise o costume local de gorjetas para se sentir seguro."
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Splitting the bill",
+     "g": "Learn how people pay together, separately or treat each other in different cultures.",
+     "p": [
+      "In Germany and the Netherlands, paying separately is common; staff may simply ask: together or separate?",
+      "In China, Korea and much of the Arab world, one person often treats the group, and friends may kindly compete to pay.",
+      "If someone treats you, thank them warmly and offer to pay next time, so the kindness goes both ways."
+     ],
+     "q": "When you eat out with friends, how do you usually split the bill?",
+     "c": "Next time you eat out, ask early and lightly how the group would like to pay."
+    },
+    "de": {
+     "t": "Die Rechnung teilen",
+     "g": "Lerne, wie man in verschiedenen Kulturen zusammen, getrennt oder auf Einladung bezahlt.",
+     "p": [
+      "In Deutschland und den Niederlanden ist getrennt zahlen üblich; die Bedienung fragt oft einfach: zusammen oder getrennt?",
+      "In China, Korea und weiten Teilen der arabischen Welt lädt oft eine Person die Gruppe ein, und Freunde wetteifern freundlich ums Zahlen.",
+      "Lädt dich jemand ein, bedanke dich herzlich und biete an, nächstes Mal zu zahlen, damit die Freundlichkeit gegenseitig ist."
+     ],
+     "q": "Wie teilt ihr normalerweise die Rechnung, wenn du mit Freunden essen gehst?",
+     "c": "Frag beim nächsten Essen außer Haus früh und locker, wie die Gruppe bezahlen möchte."
+    },
+    "es": {
+     "t": "Dividir la cuenta",
+     "g": "Aprende cómo se paga junto, por separado o invitando según la cultura.",
+     "p": [
+      "En Alemania y los Países Bajos es común pagar por separado; el personal puede preguntar simplemente: ¿junto o separado?",
+      "En China, Corea y gran parte del mundo árabe, una persona suele invitar al grupo, y los amigos pueden competir con cariño por pagar.",
+      "Si alguien te invita, agradécelo de corazón y ofrécete a pagar la próxima vez, para que la generosidad sea mutua."
+     ],
+     "q": "Cuando comes fuera con amigos, ¿cómo soléis dividir la cuenta?",
+     "c": "La próxima vez que comas fuera, pregunta pronto y con naturalidad cómo quiere pagar el grupo."
+    },
+    "fr": {
+     "t": "Partager l'addition",
+     "g": "Apprends comment on paie ensemble, séparément ou en invitant selon les cultures.",
+     "p": [
+      "En Allemagne et aux Pays-Bas, payer séparément est courant ; le serveur demande souvent : ensemble ou séparément ?",
+      "En Chine, en Corée et dans une grande partie du monde arabe, une personne invite souvent tout le groupe, et chacun veut gentiment payer.",
+      "Si quelqu'un t'invite, remercie-le chaleureusement et propose de payer la prochaine fois, pour que la générosité soit réciproque."
+     ],
+     "q": "Quand tu manges dehors avec des amis, comment partagez-vous l'addition d'habitude ?",
+     "c": "La prochaine fois que tu manges dehors, demande tôt et simplement comment le groupe veut payer."
+    },
+    "it": {
+     "t": "Dividere il conto",
+     "g": "Impara come si paga insieme, separatamente o offrendo nelle diverse culture.",
+     "p": [
+      "In Germania e nei Paesi Bassi è comune pagare separatamente; il personale chiede spesso: insieme o separato?",
+      "In Cina, in Corea e in gran parte del mondo arabo spesso una persona offre a tutti, e gli amici fanno a gara con affetto per pagare.",
+      "Se qualcuno ti offre, ringrazialo di cuore e proponi di pagare la prossima volta, così la gentilezza è reciproca."
+     ],
+     "q": "Quando mangi fuori con gli amici, come dividete di solito il conto?",
+     "c": "La prossima volta che mangi fuori chiedi presto e con leggerezza come il gruppo vuole pagare."
+    },
+    "pt": {
+     "t": "Dividir a conta",
+     "g": "Aprende como se paga em conjunto, separadamente ou oferecendo, conforme a cultura.",
+     "p": [
+      "Na Alemanha e nos Países Baixos é comum pagar separadamente; o empregado pode perguntar simplesmente: junto ou separado?",
+      "Na China, na Coreia e em grande parte do mundo árabe, muitas vezes uma pessoa paga para o grupo, e os amigos disputam com carinho quem paga.",
+      "Se alguém te oferecer, agradece com calor e oferece-te para pagar da próxima vez, para que a generosidade seja mútua."
+     ],
+     "q": "Quando comes fora com amigos, como costumam dividir a conta?",
+     "c": "Da próxima vez que comeres fora, pergunta cedo e com naturalidade como o grupo quer pagar."
+    },
+    "pt_BR": {
+     "t": "Dividir a conta",
+     "g": "Aprenda como se paga junto, separado ou convidando, dependendo da cultura.",
+     "p": [
+      "Na Alemanha e nos Países Baixos é comum pagar separado; o garçom pode perguntar simplesmente: junto ou separado?",
+      "Na China, na Coreia e em boa parte do mundo árabe, muitas vezes uma pessoa paga para o grupo, e os amigos disputam com carinho a conta.",
+      "Se alguém convidar você, agradeça de coração e ofereça-se para pagar da próxima vez, para que a gentileza seja mútua."
+     ],
+     "q": "Quando você come fora com amigos, como vocês costumam dividir a conta?",
+     "c": "Da próxima vez que comer fora, pergunte cedo e com naturalidade como o grupo quer pagar."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Who pays?",
+     "g": "Understand when the host pays, the inviter pays or everyone shares.",
+     "p": [
+      "In many cultures, whoever extends the invitation, as in Let me take you to dinner, is expected to pay.",
+      "For business meals, the host company usually pays, and arguing over the bill can embarrass your host.",
+      "Among friends, take turns treating or share the cost, and always make a sincere offer to contribute."
+     ],
+     "q": "In your culture, who usually pays when friends or colleagues eat out together?",
+     "c": "Think of someone who treated you recently and plan a small way to return the kindness."
+    },
+    "de": {
+     "t": "Wer zahlt?",
+     "g": "Verstehe, wann der Gastgeber zahlt, wann der Einladende zahlt und wann alle teilen.",
+     "p": [
+      "In vielen Kulturen zahlt, wer einlädt, etwa mit den Worten: Ich lade dich zum Essen ein.",
+      "Bei Geschäftsessen zahlt meist das gastgebende Unternehmen, und Streit um die Rechnung kann den Gastgeber in Verlegenheit bringen.",
+      "Unter Freunden lädt man abwechselnd ein oder teilt die Kosten, und bietet immer ehrlich an, sich zu beteiligen."
+     ],
+     "q": "Wer zahlt in deiner Kultur normalerweise, wenn Freunde oder Kollegen zusammen essen gehen?",
+     "c": "Denk an jemanden, der dich kürzlich eingeladen hat, und plane eine kleine Geste, um dich zu revanchieren."
+    },
+    "es": {
+     "t": "¿Quién paga?",
+     "g": "Entiende cuándo paga el anfitrión, cuándo paga quien invita y cuándo se comparte.",
+     "p": [
+      "En muchas culturas, quien hace la invitación, como en Te invito a cenar, es quien suele pagar.",
+      "En las comidas de negocios suele pagar la empresa anfitriona, y discutir por la cuenta puede incomodar a tu anfitrión.",
+      "Entre amigos, turnaos para invitar o compartid el gasto, y ofrécete siempre con sinceridad a contribuir."
+     ],
+     "q": "En tu cultura, ¿quién suele pagar cuando amigos o compañeros comen fuera juntos?",
+     "c": "Piensa en alguien que te invitó hace poco y planea una forma sencilla de devolver el detalle."
+    },
+    "fr": {
+     "t": "Qui paie ?",
+     "g": "Comprends quand c'est l'hôte qui paie, celui qui invite, ou quand chacun partage.",
+     "p": [
+      "Dans beaucoup de cultures, celui qui lance l'invitation, comme dans Je t'invite à dîner, est censé payer.",
+      "Pour un repas d'affaires, l'entreprise hôte paie en général, et discuter de l'addition peut gêner ton hôte.",
+      "Entre amis, invitez-vous à tour de rôle ou partagez, et propose toujours sincèrement de participer."
+     ],
+     "q": "Dans ta culture, qui paie d'habitude quand des amis ou des collègues mangent dehors ensemble ?",
+     "c": "Pense à quelqu'un qui t'a invité récemment et prévois une petite façon de lui rendre la pareille."
+    },
+    "it": {
+     "t": "Chi paga?",
+     "g": "Capisci quando paga chi ospita, quando paga chi invita e quando si divide.",
+     "p": [
+      "In molte culture chi fa l'invito, come in Ti offro la cena, è chi di solito paga.",
+      "Nei pranzi di lavoro di solito paga l'azienda ospitante, e discutere sul conto può mettere in imbarazzo chi ti ospita.",
+      "Tra amici si offre a turno o si divide la spesa, proponendo sempre con sincerità di contribuire."
+     ],
+     "q": "Nella tua cultura chi paga di solito quando amici o colleghi mangiano fuori insieme?",
+     "c": "Pensa a qualcuno che ti ha offerto qualcosa di recente e organizza un piccolo modo per ricambiare."
+    },
+    "pt": {
+     "t": "Quem paga?",
+     "g": "Percebe quando paga o anfitrião, quando paga quem convida e quando todos dividem.",
+     "p": [
+      "Em muitas culturas, quem faz o convite, como em Deixa-me levar-te a jantar, é quem costuma pagar.",
+      "Nas refeições de negócios costuma pagar a empresa anfitriã, e discutir a conta pode embaraçar o teu anfitrião.",
+      "Entre amigos, revezem-se a pagar ou dividam, e oferece-te sempre com sinceridade para contribuir."
+     ],
+     "q": "Na tua cultura, quem costuma pagar quando amigos ou colegas comem fora juntos?",
+     "c": "Pensa em alguém que te ofereceu algo recentemente e planeia uma pequena forma de retribuir."
+    },
+    "pt_BR": {
+     "t": "Quem paga?",
+     "g": "Entenda quando paga o anfitrião, quando paga quem convidou e quando todos dividem.",
+     "p": [
+      "Em muitas culturas, quem faz o convite, como em Deixa que eu pago o jantar, é quem costuma pagar.",
+      "Em refeições de negócios, quem paga costuma ser a empresa anfitriã, e discutir a conta pode constranger o seu anfitrião.",
+      "Entre amigos, revezem quem paga ou dividam, e sempre se ofereça com sinceridade para contribuir."
+     ],
+     "q": "Na sua cultura, quem costuma pagar quando amigos ou colegas comem fora juntos?",
+     "c": "Pense em alguém que pagou algo para você recentemente e planeje um jeito simples de retribuir."
+    }
+   }
+  }
+ ]
+}

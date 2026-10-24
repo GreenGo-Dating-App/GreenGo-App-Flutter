@@ -1,0 +1,33 @@
+{
+ "topic": "fashion_basics",
+ "intro": {
+  "en": [
+   "Hi, I'm {name}! I'll guide you on a 365-day path through fashion basics and personal style, with one small, friendly lesson every day.",
+   "We'll begin with fit, fabrics and colour, then explore outfits, capsule wardrobes, style history and your signature look, for every body. What piece of clothing do you love wearing most?"
+  ],
+  "de": [
+   "Hallo, ich bin {name}! Ich begleite dich auf einem 365-Tage-Weg durch Mode-Basics und persönlichen Stil, mit einer kleinen, entspannten Lektion pro Tag.",
+   "Wir starten mit Passform, Stoffen und Farben, dann folgen Outfits, Capsule Wardrobes, Modegeschichte und dein eigener Look, für jeden Körper. Welches Kleidungsstück trägst du am liebsten?"
+  ],
+  "es": [
+   "¡Hola, soy {name}! Te acompañaré en un camino de 365 días por los básicos de la moda y el estilo personal, con una pequeña lección amable cada día.",
+   "Empezaremos con el ajuste, los tejidos y el color, y luego veremos conjuntos, armarios cápsula, historia de la moda y tu propio sello, para todos los cuerpos y estilos. ¿Qué prenda te encanta llevar?"
+  ],
+  "fr": [
+   "Salut, je suis {name} ! Je vais t'accompagner sur un parcours de 365 jours à travers les bases de la mode et le style personnel, avec une petite leçon par jour.",
+   "On commencera par la coupe, les tissus et les couleurs, puis les tenues, la garde-robe capsule, l'histoire de la mode et ton style signature, pour tous les corps. Quel vêtement adores-tu porter ?"
+  ],
+  "it": [
+   "Ciao, sono {name}! Ti guiderò in un percorso di 365 giorni tra le basi della moda e lo stile personale, con una piccola lezione leggera ogni giorno.",
+   "Partiremo da vestibilità, tessuti e colori, poi vedremo outfit, guardaroba capsule, storia della moda e il tuo look distintivo, per ogni corpo e ogni stile. Qual è il capo che ami indossare di più?"
+  ],
+  "pt": [
+   "Olá, eu sou {name}! Vou acompanhar-te num percurso de 365 dias pelos básicos da moda e pelo estilo pessoal, com uma pequena lição descontraída por dia.",
+   "Começamos pelo caimento, tecidos e cores e depois exploramos coordenados, roupeiros cápsula, história da moda e o teu estilo, para todos os corpos. Que peça de roupa mais gostas de usar?"
+  ],
+  "pt_BR": [
+   "Oi, eu sou {name}! Vou te guiar numa jornada de 365 dias pelo básico da moda e pelo estilo pessoal, com uma pequena lição tranquila por dia.",
+   "A gente começa pelo caimento, tecidos e cores e depois explora looks, guarda-roupa cápsula, história da moda e seu estilo, para todos os corpos. Qual peça de roupa você mais ama usar?"
+  ]
+ }
+}

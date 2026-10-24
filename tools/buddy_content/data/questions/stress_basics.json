@@ -1,0 +1,1305 @@
+{
+"topic": "stress_basics",
+"questions": [
+{
+"id": "stress_basics-001",
+"lv": "any",
+"i18n": {
+"en": "What is your favourite way to unwind after a long day?",
+"de": "Wie entspannst du dich am liebsten nach einem langen Tag?",
+"es": "¿Cuál es tu forma favorita de desconectar después de un día largo?",
+"fr": "Quelle est ta façon préférée de décompresser après une longue journée ?",
+"it": "Qual è il tuo modo preferito per staccare dopo una lunga giornata?",
+"pt": "Qual é a tua maneira preferida de descontrair depois de um dia longo?",
+"pt_BR": "Qual é o seu jeito favorito de relaxar depois de um dia longo?"
+}
+},
+{
+"id": "stress_basics-002",
+"lv": "any",
+"i18n": {
+"en": "Where do you feel most relaxed: at home, in nature or somewhere else?",
+"de": "Wo fühlst du dich am entspanntesten: zu Hause, in der Natur oder woanders?",
+"es": "¿Dónde te sientes más relajado: en casa, en la naturaleza o en otro sitio?",
+"fr": "Où te sens-tu le plus détendu : chez toi, dans la nature ou ailleurs ?",
+"it": "Dove ti senti più rilassato: a casa, nella natura o altrove?",
+"pt": "Onde te sentes mais descontraído: em casa, na natureza ou noutro sítio?",
+"pt_BR": "Onde você se sente mais relaxado: em casa, na natureza ou em outro lugar?"
+}
+},
+{
+"id": "stress_basics-003",
+"lv": "any",
+"i18n": {
+"en": "What song always helps you calm down or feel better?",
+"de": "Welches Lied hilft dir immer, ruhiger zu werden oder dich besser zu fühlen?",
+"es": "¿Qué canción siempre te ayuda a calmarte o a sentirte mejor?",
+"fr": "Quelle chanson t'aide toujours à te calmer ou à te sentir mieux ?",
+"it": "Quale canzone ti aiuta sempre a calmarti o a stare meglio?",
+"pt": "Que música te ajuda sempre a acalmar ou a sentir-te melhor?",
+"pt_BR": "Que música sempre te ajuda a se acalmar ou se sentir melhor?"
+}
+},
+{
+"id": "stress_basics-004",
+"lv": "any",
+"i18n": {
+"en": "Who is someone you love talking to when you need to relax?",
+"de": "Mit wem redest du am liebsten, wenn du abschalten möchtest?",
+"es": "¿Con quién te encanta hablar cuando necesitas relajarte?",
+"fr": "Avec qui aimes-tu parler quand tu as besoin de te détendre ?",
+"it": "Con chi ti piace parlare quando hai bisogno di rilassarti?",
+"pt": "Com quem gostas de falar quando precisas de relaxar?",
+"pt_BR": "Com quem você adora conversar quando precisa relaxar?"
+}
+},
+{
+"id": "stress_basics-005",
+"lv": "any",
+"i18n": {
+"en": "What does a perfectly calm day look like for you?",
+"de": "Wie sieht für dich ein vollkommen ruhiger Tag aus?",
+"es": "¿Cómo es para ti un día perfectamente tranquilo?",
+"fr": "À quoi ressemble pour toi une journée parfaitement sereine ?",
+"it": "Com'è per te una giornata perfettamente tranquilla?",
+"pt": "Como é para ti um dia perfeitamente tranquilo?",
+"pt_BR": "Como é pra você um dia perfeitamente tranquilo?"
+}
+},
+{
+"id": "stress_basics-006",
+"lv": "any",
+"i18n": {
+"en": "What small thing made you smile today?",
+"de": "Welche Kleinigkeit hat dich heute zum Lächeln gebracht?",
+"es": "¿Qué pequeña cosa te ha hecho sonreír hoy?",
+"fr": "Quelle petite chose t'a fait sourire aujourd'hui ?",
+"it": "Quale piccola cosa ti ha fatto sorridere oggi?",
+"pt": "Que pequena coisa te fez sorrir hoje?",
+"pt_BR": "Que coisinha te fez sorrir hoje?"
+}
+},
+{
+"id": "stress_basics-007",
+"lv": "any",
+"i18n": {
+"en": "Which hobby helps you forget about your worries for a while?",
+"de": "Bei welchem Hobby vergisst du deine Sorgen für eine Weile?",
+"es": "¿Qué afición te ayuda a olvidarte de tus preocupaciones un rato?",
+"fr": "Quel loisir t'aide à oublier tes soucis pendant un moment ?",
+"it": "Quale hobby ti aiuta a dimenticare le preoccupazioni per un po'?",
+"pt": "Que passatempo te ajuda a esquecer as preocupações por um bocado?",
+"pt_BR": "Qual hobby te ajuda a esquecer as preocupações por um tempo?"
+}
+},
+{
+"id": "stress_basics-008",
+"lv": "any",
+"i18n": {
+"en": "How do people in your culture usually relax at the weekend?",
+"de": "Wie entspannen sich die Menschen in deiner Kultur normalerweise am Wochenende?",
+"es": "¿Cómo suele relajarse la gente de tu cultura el fin de semana?",
+"fr": "Comment les gens de ta culture se détendent-ils d'habitude le week-end ?",
+"it": "Come si rilassano di solito le persone della tua cultura nel fine settimana?",
+"pt": "Como é que as pessoas da tua cultura costumam descontrair ao fim de semana?",
+"pt_BR": "Como as pessoas da sua cultura costumam relaxar no fim de semana?"
+}
+},
+{
+"id": "stress_basics-009",
+"lv": "any",
+"i18n": {
+"en": "Do you prefer relaxing alone or with other people?",
+"de": "Entspannst du lieber allein oder mit anderen?",
+"es": "¿Prefieres relajarte solo o con otras personas?",
+"fr": "Tu préfères te détendre seul ou avec d'autres personnes ?",
+"it": "Preferisci rilassarti da solo o in compagnia?",
+"pt": "Preferes relaxar sozinho ou com outras pessoas?",
+"pt_BR": "Você prefere relaxar sozinho ou com outras pessoas?"
+}
+},
+{
+"id": "stress_basics-010",
+"lv": "any",
+"i18n": {
+"en": "What is a place you go to in your mind when you need calm?",
+"de": "An welchen Ort denkst du, wenn du Ruhe brauchst?",
+"es": "¿A qué lugar viajas con la mente cuando necesitas calma?",
+"fr": "Quel endroit imagines-tu quand tu as besoin de calme ?",
+"it": "Qual è il posto in cui ti rifugi con la mente quando hai bisogno di calma?",
+"pt": "Que lugar imaginas quando precisas de calma?",
+"pt_BR": "Qual lugar você imagina quando precisa de calma?"
+}
+},
+{
+"id": "stress_basics-011",
+"lv": "any",
+"i18n": {
+"en": "What is your favourite drink to slow down and take a break?",
+"de": "Was trinkst du am liebsten, wenn du eine Pause machst und runterkommen willst?",
+"es": "¿Cuál es tu bebida favorita para hacer una pausa con calma?",
+"fr": "Quelle est ta boisson préférée pour faire une pause tranquille ?",
+"it": "Qual è la tua bevanda preferita per fare una pausa con calma?",
+"pt": "Qual é a tua bebida preferida para fazer uma pausa com calma?",
+"pt_BR": "Qual é a sua bebida favorita pra fazer uma pausa com calma?"
+}
+},
+{
+"id": "stress_basics-012",
+"lv": "any",
+"i18n": {
+"en": "How do you usually notice that you need a break?",
+"de": "Woran merkst du normalerweise, dass du eine Pause brauchst?",
+"es": "¿Cómo sueles darte cuenta de que necesitas un descanso?",
+"fr": "Comment remarques-tu d'habitude que tu as besoin d'une pause ?",
+"it": "Come ti accorgi di solito che hai bisogno di una pausa?",
+"pt": "Como costumas perceber que precisas de uma pausa?",
+"pt_BR": "Como você costuma perceber que precisa de uma pausa?"
+}
+},
+{
+"id": "stress_basics-013",
+"lv": "any",
+"i18n": {
+"en": "What made you laugh out loud recently?",
+"de": "Worüber hast du in letzter Zeit laut gelacht?",
+"es": "¿Qué te ha hecho reír a carcajadas últimamente?",
+"fr": "Qu'est-ce qui t'a fait rire aux éclats récemment ?",
+"it": "Cosa ti ha fatto ridere di gusto di recente?",
+"pt": "O que te fez rir às gargalhadas ultimamente?",
+"pt_BR": "O que te fez rir alto recentemente?"
+}
+},
+{
+"id": "stress_basics-014",
+"lv": "any",
+"i18n": {
+"en": "Do you enjoy walking? Where is your favourite place to walk?",
+"de": "Gehst du gern spazieren? Wo am liebsten?",
+"es": "¿Te gusta caminar? ¿Cuál es tu lugar favorito para pasear?",
+"fr": "Aimes-tu marcher ? Où préfères-tu te promener ?",
+"it": "Ti piace camminare? Qual è il tuo posto preferito per passeggiare?",
+"pt": "Gostas de caminhar? Qual é o teu sítio preferido para passear?",
+"pt_BR": "Você gosta de caminhar? Qual é o seu lugar favorito pra passear?"
+}
+},
+{
+"id": "stress_basics-015",
+"lv": "any",
+"i18n": {
+"en": "Which season makes you feel the most relaxed?",
+"de": "In welcher Jahreszeit fühlst du dich am entspanntesten?",
+"es": "¿Qué estación del año te hace sentir más relajado?",
+"fr": "Quelle saison te rend le plus détendu ?",
+"it": "Quale stagione ti fa sentire più rilassato?",
+"pt": "Que estação do ano te deixa mais descontraído?",
+"pt_BR": "Qual estação do ano te deixa mais relaxado?"
+}
+},
+{
+"id": "stress_basics-016",
+"lv": "any",
+"i18n": {
+"en": "Is there a phrase or saying that helps you keep calm?",
+"de": "Gibt es einen Spruch, der dir hilft, ruhig zu bleiben?",
+"es": "¿Hay alguna frase o dicho que te ayude a mantener la calma?",
+"fr": "Y a-t-il une phrase ou un dicton qui t'aide à garder ton calme ?",
+"it": "C'è una frase o un detto che ti aiuta a mantenere la calma?",
+"pt": "Há alguma frase ou ditado que te ajude a manter a calma?",
+"pt_BR": "Tem alguma frase ou ditado que te ajuda a manter a calma?"
+}
+},
+{
+"id": "stress_basics-017",
+"lv": "any",
+"i18n": {
+"en": "How do you like to spend a free afternoon with no plans?",
+"de": "Wie verbringst du am liebsten einen freien Nachmittag ohne Pläne?",
+"es": "¿Cómo te gusta pasar una tarde libre sin planes?",
+"fr": "Comment aimes-tu passer un après-midi libre sans projet ?",
+"it": "Come ti piace trascorrere un pomeriggio libero senza programmi?",
+"pt": "Como gostas de passar uma tarde livre sem planos?",
+"pt_BR": "Como você gosta de passar uma tarde livre sem planos?"
+}
+},
+{
+"id": "stress_basics-018",
+"lv": "any",
+"i18n": {
+"en": "What is something you are looking forward to this week?",
+"de": "Worauf freust du dich diese Woche?",
+"es": "¿Qué es algo que te hace ilusión esta semana?",
+"fr": "Qu'est-ce que tu attends avec impatience cette semaine ?",
+"it": "C'è qualcosa che aspetti con piacere questa settimana?",
+"pt": "O que é que esperas com entusiasmo esta semana?",
+"pt_BR": "O que você está esperando com animação esta semana?"
+}
+},
+{
+"id": "stress_basics-019",
+"lv": "any",
+"i18n": {
+"en": "Do you have a favourite spot at home to relax? What is it like?",
+"de": "Hast du zu Hause einen Lieblingsplatz zum Entspannen? Wie sieht er aus?",
+"es": "¿Tienes un rincón favorito en casa para relajarte? ¿Cómo es?",
+"fr": "As-tu un coin préféré chez toi pour te détendre ? Comment est-il ?",
+"it": "Hai un angolo preferito in casa per rilassarti? Com'è?",
+"pt": "Tens um cantinho preferido em casa para relaxar? Como é?",
+"pt_BR": "Você tem um cantinho favorito em casa pra relaxar? Como ele é?"
+}
+},
+{
+"id": "stress_basics-020",
+"lv": "any",
+"i18n": {
+"en": "What does the word 'calm' make you think of?",
+"de": "Woran denkst du beim Wort „Ruhe“?",
+"es": "¿Qué te viene a la mente con la palabra 'calma'?",
+"fr": "À quoi te fait penser le mot « calme » ?",
+"it": "A cosa ti fa pensare la parola 'calma'?",
+"pt": "Em que te faz pensar a palavra 'calma'?",
+"pt_BR": "O que a palavra 'calma' te faz lembrar?"
+}
+},
+{
+"id": "stress_basics-021",
+"lv": "any",
+"i18n": {
+"en": "How do you celebrate after finishing something difficult?",
+"de": "Wie feierst du, wenn du etwas Schwieriges geschafft hast?",
+"es": "¿Cómo lo celebras cuando terminas algo difícil?",
+"fr": "Comment fêtes-tu la fin de quelque chose de difficile ?",
+"it": "Come festeggi quando finisci qualcosa di difficile?",
+"pt": "Como celebras quando acabas algo difícil?",
+"pt_BR": "Como você comemora quando termina algo difícil?"
+}
+},
+{
+"id": "stress_basics-022",
+"lv": "any",
+"i18n": {
+"en": "Do you like animals? How does time with them make you feel?",
+"de": "Magst du Tiere? Wie fühlst du dich, wenn du Zeit mit ihnen verbringst?",
+"es": "¿Te gustan los animales? ¿Cómo te sientes cuando pasas tiempo con ellos?",
+"fr": "Aimes-tu les animaux ? Comment te sens-tu quand tu passes du temps avec eux ?",
+"it": "Ti piacciono gli animali? Come ti senti quando passi del tempo con loro?",
+"pt": "Gostas de animais? Como te sentes quando passas tempo com eles?",
+"pt_BR": "Você gosta de animais? Como se sente quando passa tempo com eles?"
+}
+},
+{
+"id": "stress_basics-023",
+"lv": "any",
+"i18n": {
+"en": "What sound do you find the most peaceful?",
+"de": "Welches Geräusch findest du am friedlichsten?",
+"es": "¿Qué sonido te parece el más relajante?",
+"fr": "Quel son trouves-tu le plus apaisant ?",
+"it": "Qual è il suono che trovi più rilassante?",
+"pt": "Que som achas mais tranquilizante?",
+"pt_BR": "Qual som você acha mais tranquilizante?"
+}
+},
+{
+"id": "stress_basics-024",
+"lv": "any",
+"i18n": {
+"en": "What is a small luxury that makes your day better?",
+"de": "Welcher kleine Luxus macht deinen Tag schöner?",
+"es": "¿Qué pequeño lujo hace que tu día sea mejor?",
+"fr": "Quel petit luxe rend ta journée plus belle ?",
+"it": "Qual è un piccolo lusso che ti migliora la giornata?",
+"pt": "Que pequeno luxo torna o teu dia melhor?",
+"pt_BR": "Qual pequeno luxo deixa o seu dia melhor?"
+}
+},
+{
+"id": "stress_basics-025",
+"lv": "any",
+"i18n": {
+"en": "How do you feel on a day when you have spent time outdoors?",
+"de": "Wie fühlst du dich an einem Tag, an dem du Zeit draußen verbracht hast?",
+"es": "¿Cómo te sientes un día en el que has pasado tiempo al aire libre?",
+"fr": "Comment te sens-tu un jour où tu as passé du temps dehors ?",
+"it": "Come ti senti in una giornata in cui hai passato del tempo all'aperto?",
+"pt": "Como te sentes num dia em que passaste tempo ao ar livre?",
+"pt_BR": "Como você se sente num dia em que passou um tempo ao ar livre?"
+}
+},
+{
+"id": "stress_basics-026",
+"lv": "any",
+"i18n": {
+"en": "What is a calming tradition or ritual from your culture?",
+"de": "Welche beruhigende Tradition oder welches Ritual gibt es in deiner Kultur?",
+"es": "¿Qué tradición o ritual tranquilizador hay en tu cultura?",
+"fr": "Quelle tradition ou quel rituel apaisant existe dans ta culture ?",
+"it": "Quale tradizione o rituale rilassante esiste nella tua cultura?",
+"pt": "Que tradição ou ritual tranquilizante existe na tua cultura?",
+"pt_BR": "Que tradição ou ritual tranquilizante existe na sua cultura?"
+}
+},
+{
+"id": "stress_basics-027",
+"lv": "any",
+"i18n": {
+"en": "What kind of movement or sport makes you feel lighter?",
+"de": "Bei welcher Bewegung oder welchem Sport fühlst du dich leichter?",
+"es": "¿Qué tipo de movimiento o deporte te hace sentir más ligero?",
+"fr": "Quel type de mouvement ou de sport te fait te sentir plus léger ?",
+"it": "Quale tipo di movimento o sport ti fa sentire più leggero?",
+"pt": "Que tipo de movimento ou desporto te faz sentir mais leve?",
+"pt_BR": "Que tipo de movimento ou esporte faz você se sentir mais leve?"
+}
+},
+{
+"id": "stress_basics-028",
+"lv": "any",
+"i18n": {
+"en": "Do you prefer a busy, full schedule or lots of free time?",
+"de": "Magst du lieber einen vollen Terminkalender oder viel freie Zeit?",
+"es": "¿Prefieres una agenda llena o mucho tiempo libre?",
+"fr": "Tu préfères un emploi du temps chargé ou beaucoup de temps libre ?",
+"it": "Preferisci un'agenda piena o tanto tempo libero?",
+"pt": "Preferes uma agenda cheia ou muito tempo livre?",
+"pt_BR": "Você prefere uma agenda cheia ou bastante tempo livre?"
+}
+},
+{
+"id": "stress_basics-029",
+"lv": "any",
+"i18n": {
+"en": "What is a book, film or series that always relaxes you?",
+"de": "Welches Buch, welcher Film oder welche Serie entspannt dich immer?",
+"es": "¿Qué libro, película o serie siempre te relaja?",
+"fr": "Quel livre, film ou série te détend toujours ?",
+"it": "Quale libro, film o serie ti rilassa sempre?",
+"pt": "Que livro, filme ou série te relaxa sempre?",
+"pt_BR": "Qual livro, filme ou série sempre te relaxa?"
+}
+},
+{
+"id": "stress_basics-030",
+"lv": "any",
+"i18n": {
+"en": "How do you spend your lunch break on a typical day?",
+"de": "Wie verbringst du an einem normalen Tag deine Mittagspause?",
+"es": "¿Cómo pasas tu pausa para comer un día normal?",
+"fr": "Comment passes-tu ta pause déjeuner un jour normal ?",
+"it": "Come passi la pausa pranzo in una giornata tipica?",
+"pt": "Como passas a tua hora de almoço num dia normal?",
+"pt_BR": "Como você passa sua hora de almoço num dia normal?"
+}
+},
+{
+"id": "stress_basics-031",
+"lv": "any",
+"i18n": {
+"en": "Which food feels comforting to you?",
+"de": "Welches Essen ist für dich Seelenfutter?",
+"es": "¿Qué comida te reconforta?",
+"fr": "Quel plat te réconforte ?",
+"it": "Quale cibo ti dà conforto?",
+"pt": "Que comida te reconforta?",
+"pt_BR": "Qual comida te conforta?"
+}
+},
+{
+"id": "stress_basics-032",
+"lv": "any",
+"i18n": {
+"en": "What makes a holiday truly restful for you?",
+"de": "Was macht einen Urlaub für dich wirklich erholsam?",
+"es": "¿Qué hace que unas vacaciones sean de verdad relajantes para ti?",
+"fr": "Qu'est-ce qui rend des vacances vraiment reposantes pour toi ?",
+"it": "Cosa rende una vacanza davvero rilassante per te?",
+"pt": "O que torna umas férias mesmo repousantes para ti?",
+"pt_BR": "O que faz umas férias serem realmente tranquilas pra você?"
+}
+},
+{
+"id": "stress_basics-033",
+"lv": "any",
+"i18n": {
+"en": "Have you ever tried a breathing exercise to relax? How was it?",
+"de": "Hast du schon mal eine Atemübung zum Entspannen ausprobiert? Wie war es?",
+"es": "¿Has probado alguna vez un ejercicio de respiración para relajarte? ¿Qué tal?",
+"fr": "As-tu déjà essayé un exercice de respiration pour te détendre ? C'était comment ?",
+"it": "Hai mai provato un esercizio di respirazione per rilassarti? Com'è andata?",
+"pt": "Já experimentaste um exercício de respiração para relaxar? Como foi?",
+"pt_BR": "Você já testou algum exercício de respiração pra relaxar? Como foi?"
+}
+},
+{
+"id": "stress_basics-034",
+"lv": "any",
+"i18n": {
+"en": "What is one thing you are grateful for right now?",
+"de": "Wofür bist du gerade dankbar?",
+"es": "¿Por qué cosa te sientes agradecido ahora mismo?",
+"fr": "Pour quoi es-tu reconnaissant en ce moment ?",
+"it": "Per cosa ti senti grato in questo momento?",
+"pt": "Pelo que te sentes grato neste momento?",
+"pt_BR": "Pelo que você se sente grato neste momento?"
+}
+},
+{
+"id": "stress_basics-035",
+"lv": "any",
+"i18n": {
+"en": "Do you enjoy cooking, gardening or making things with your hands?",
+"de": "Kochst, gärtnerst oder bastelst du gern?",
+"es": "¿Te gusta cocinar, cuidar plantas o hacer cosas con las manos?",
+"fr": "Aimes-tu cuisiner, jardiner ou fabriquer des choses de tes mains ?",
+"it": "Ti piace cucinare, fare giardinaggio o creare cose con le mani?",
+"pt": "Gostas de cozinhar, tratar do jardim ou fazer coisas com as mãos?",
+"pt_BR": "Você gosta de cozinhar, cuidar de plantas ou fazer coisas com as mãos?"
+}
+},
+{
+"id": "stress_basics-036",
+"lv": "any",
+"i18n": {
+"en": "How do you feel about quiet time without your phone?",
+"de": "Wie findest du ruhige Zeit ganz ohne Handy?",
+"es": "¿Qué te parece pasar un rato tranquilo sin móvil?",
+"fr": "Que penses-tu des moments calmes sans téléphone ?",
+"it": "Cosa pensi dei momenti tranquilli senza telefono?",
+"pt": "O que achas de passar um tempo tranquilo sem telemóvel?",
+"pt_BR": "O que você acha de passar um tempo tranquilo sem celular?"
+}
+},
+{
+"id": "stress_basics-037",
+"lv": "any",
+"i18n": {
+"en": "What advice about calm did someone in your family give you?",
+"de": "Welchen Rat zum Thema Gelassenheit hat dir jemand aus deiner Familie gegeben?",
+"es": "¿Qué consejo sobre la calma te dio alguien de tu familia?",
+"fr": "Quel conseil sur le calme quelqu'un de ta famille t'a-t-il donné ?",
+"it": "Quale consiglio sulla calma ti ha dato qualcuno della tua famiglia?",
+"pt": "Que conselho sobre a calma te deu alguém da tua família?",
+"pt_BR": "Que conselho sobre calma alguém da sua família já te deu?"
+}
+},
+{
+"id": "stress_basics-038",
+"lv": "any",
+"i18n": {
+"en": "What is your favourite way to start a relaxed morning?",
+"de": "Wie beginnst du am liebsten einen entspannten Morgen?",
+"es": "¿Cuál es tu forma favorita de empezar una mañana tranquila?",
+"fr": "Quelle est ta façon préférée de commencer une matinée tranquille ?",
+"it": "Qual è il tuo modo preferito di iniziare una mattina rilassata?",
+"pt": "Qual é a tua maneira preferida de começar uma manhã tranquila?",
+"pt_BR": "Qual é o seu jeito favorito de começar uma manhã tranquila?"
+}
+},
+{
+"id": "stress_basics-039",
+"lv": "any",
+"i18n": {
+"en": "How does tidying up or organising things make you feel?",
+"de": "Wie fühlst du dich, wenn du aufräumst oder Dinge ordnest?",
+"es": "¿Cómo te sientes cuando ordenas u organizas tus cosas?",
+"fr": "Comment te sens-tu quand tu ranges ou organises tes affaires ?",
+"it": "Come ti senti quando riordini o organizzi le tue cose?",
+"pt": "Como te sentes quando arrumas ou organizas as tuas coisas?",
+"pt_BR": "Como você se sente quando arruma ou organiza suas coisas?"
+}
+},
+{
+"id": "stress_basics-040",
+"lv": "any",
+"i18n": {
+"en": "What would you put on a list of things that always cheer you up?",
+"de": "Was würdest du auf eine Liste mit Dingen schreiben, die dich immer aufmuntern?",
+"es": "¿Qué pondrías en una lista de cosas que siempre te animan?",
+"fr": "Que mettrais-tu sur une liste de choses qui te remontent toujours le moral ?",
+"it": "Cosa metteresti in una lista di cose che ti tirano sempre su?",
+"pt": "O que porias numa lista de coisas que te animam sempre?",
+"pt_BR": "O que você colocaria numa lista de coisas que sempre te animam?"
+}
+},
+{
+"id": "stress_basics-041",
+"lv": "beginner",
+"i18n": {
+"en": "How would you describe stress in your own words?",
+"de": "Wie würdest du Stress mit deinen eigenen Worten beschreiben?",
+"es": "¿Cómo describirías el estrés con tus propias palabras?",
+"fr": "Comment décrirais-tu le stress avec tes propres mots ?",
+"it": "Come descriveresti lo stress con parole tue?",
+"pt": "Como descreverias o stress por palavras tuas?",
+"pt_BR": "Como você descreveria o estresse com suas próprias palavras?"
+}
+},
+{
+"id": "stress_basics-042",
+"lv": "beginner",
+"i18n": {
+"en": "Where in your body do you notice stress first?",
+"de": "Wo in deinem Körper bemerkst du Stress zuerst?",
+"es": "¿En qué parte del cuerpo notas primero el estrés?",
+"fr": "Dans quelle partie de ton corps remarques-tu le stress en premier ?",
+"it": "In quale parte del corpo noti prima lo stress?",
+"pt": "Em que parte do corpo notas primeiro o stress?",
+"pt_BR": "Em que parte do corpo você percebe o estresse primeiro?"
+}
+},
+{
+"id": "stress_basics-043",
+"lv": "beginner",
+"i18n": {
+"en": "What kinds of everyday situations tend to stress you a little?",
+"de": "Welche Alltagssituationen stressen dich meistens ein bisschen?",
+"es": "¿Qué situaciones cotidianas suelen estresarte un poco?",
+"fr": "Quelles situations du quotidien ont tendance à te stresser un peu ?",
+"it": "Quali situazioni quotidiane tendono a stressarti un po'?",
+"pt": "Que situações do dia a dia costumam stressar-te um pouco?",
+"pt_BR": "Que situações do dia a dia costumam te estressar um pouco?"
+}
+},
+{
+"id": "stress_basics-044",
+"lv": "beginner",
+"i18n": {
+"en": "Can you remember a time when a little pressure helped you do well?",
+"de": "Erinnerst du dich an eine Situation, in der dir etwas Druck geholfen hat, gut zu sein?",
+"es": "¿Recuerdas alguna vez en que un poco de presión te ayudó a hacerlo bien?",
+"fr": "Te souviens-tu d'un moment où un peu de pression t'a aidé à réussir ?",
+"it": "Ricordi una volta in cui un po' di pressione ti ha aiutato a fare bene?",
+"pt": "Lembras-te de uma vez em que um pouco de pressão te ajudou a sair-te bem?",
+"pt_BR": "Você lembra de alguma vez em que um pouco de pressão te ajudou a se sair bem?"
+}
+},
+{
+"id": "stress_basics-045",
+"lv": "beginner",
+"i18n": {
+"en": "On a scale from 1 to 10, how stressed do you feel today?",
+"de": "Auf einer Skala von 1 bis 10: Wie gestresst fühlst du dich heute?",
+"es": "En una escala del 1 al 10, ¿cuánto estrés sientes hoy?",
+"fr": "Sur une échelle de 1 à 10, à quel point te sens-tu stressé aujourd'hui ?",
+"it": "Su una scala da 1 a 10, quanto ti senti stressato oggi?",
+"pt": "Numa escala de 1 a 10, quão stressado te sentes hoje?",
+"pt_BR": "Numa escala de 1 a 10, quanto você se sente estressado hoje?"
+}
+},
+{
+"id": "stress_basics-046",
+"lv": "beginner",
+"i18n": {
+"en": "What do you usually do first when you start to feel stressed?",
+"de": "Was machst du normalerweise als Erstes, wenn du merkst, dass du gestresst bist?",
+"es": "¿Qué sueles hacer primero cuando empiezas a sentir estrés?",
+"fr": "Que fais-tu d'abord en général quand tu commences à te sentir stressé ?",
+"it": "Cosa fai di solito per prima cosa quando inizi a sentirti stressato?",
+"pt": "O que costumas fazer primeiro quando começas a sentir-te stressado?",
+"pt_BR": "O que você costuma fazer primeiro quando começa a se sentir estressado?"
+}
+},
+{
+"id": "stress_basics-047",
+"lv": "beginner",
+"i18n": {
+"en": "Would you like to try a short stress diary this week?",
+"de": "Hast du Lust, diese Woche ein kurzes Stresstagebuch zu führen?",
+"es": "¿Te gustaría probar un pequeño diario de estrés esta semana?",
+"fr": "Aimerais-tu essayer un petit journal du stress cette semaine ?",
+"it": "Ti andrebbe di provare un breve diario dello stress questa settimana?",
+"pt": "Gostavas de experimentar um pequeno diário de stress esta semana?",
+"pt_BR": "Você gostaria de testar um pequeno diário de estresse esta semana?"
+}
+},
+{
+"id": "stress_basics-048",
+"lv": "beginner",
+"i18n": {
+"en": "What small things are already on your personal 'calm menu'?",
+"de": "Welche kleinen Dinge stehen schon auf deinem persönlichen „Ruhe-Menü“?",
+"es": "¿Qué pequeñas cosas ya están en tu 'menú de calma' personal?",
+"fr": "Quelles petites choses figurent déjà sur ton « menu détente » personnel ?",
+"it": "Quali piccole cose ci sono già nel tuo 'menù della calma' personale?",
+"pt": "Que pequenas coisas já estão no teu 'menu da calma' pessoal?",
+"pt_BR": "Que coisinhas já estão no seu 'cardápio da calma' pessoal?"
+}
+},
+{
+"id": "stress_basics-049",
+"lv": "beginner",
+"i18n": {
+"en": "How does your breathing change when you feel tense?",
+"de": "Wie verändert sich deine Atmung, wenn du angespannt bist?",
+"es": "¿Cómo cambia tu respiración cuando te sientes tenso?",
+"fr": "Comment ta respiration change-t-elle quand tu es tendu ?",
+"it": "Come cambia il tuo respiro quando ti senti teso?",
+"pt": "Como muda a tua respiração quando te sentes tenso?",
+"pt_BR": "Como sua respiração muda quando você fica tenso?"
+}
+},
+{
+"id": "stress_basics-050",
+"lv": "beginner",
+"i18n": {
+"en": "Do you notice tension in your shoulders, jaw or hands during the day?",
+"de": "Bemerkst du tagsüber Anspannung in Schultern, Kiefer oder Händen?",
+"es": "¿Notas tensión en los hombros, la mandíbula o las manos durante el día?",
+"fr": "Remarques-tu des tensions dans tes épaules, ta mâchoire ou tes mains pendant la journée ?",
+"it": "Noti tensione a spalle, mascella o mani durante il giorno?",
+"pt": "Notas tensão nos ombros, no maxilar ou nas mãos durante o dia?",
+"pt_BR": "Você percebe tensão nos ombros, na mandíbula ou nas mãos durante o dia?"
+}
+},
+{
+"id": "stress_basics-051",
+"lv": "beginner",
+"i18n": {
+"en": "Which calm activity could you try for five minutes today?",
+"de": "Welche ruhige Aktivität könntest du heute fünf Minuten lang ausprobieren?",
+"es": "¿Qué actividad tranquila podrías probar hoy durante cinco minutos?",
+"fr": "Quelle activité calme pourrais-tu essayer cinq minutes aujourd'hui ?",
+"it": "Quale attività tranquilla potresti provare oggi per cinque minuti?",
+"pt": "Que atividade calma podias experimentar hoje durante cinco minutos?",
+"pt_BR": "Que atividade tranquila você poderia testar hoje por cinco minutos?"
+}
+},
+{
+"id": "stress_basics-052",
+"lv": "beginner",
+"i18n": {
+"en": "How often do you take short breaks during work or study?",
+"de": "Wie oft machst du bei der Arbeit oder beim Lernen kurze Pausen?",
+"es": "¿Con qué frecuencia haces pausas cortas mientras trabajas o estudias?",
+"fr": "À quelle fréquence fais-tu de courtes pauses quand tu travailles ou étudies ?",
+"it": "Quanto spesso fai brevi pause mentre lavori o studi?",
+"pt": "Com que frequência fazes pequenas pausas quando trabalhas ou estudas?",
+"pt_BR": "Com que frequência você faz pausas curtas quando trabalha ou estuda?"
+}
+},
+{
+"id": "stress_basics-053",
+"lv": "beginner",
+"i18n": {
+"en": "Do you use a to-do list or do you keep everything in your head?",
+"de": "Nutzt du eine To-do-Liste oder behältst du alles im Kopf?",
+"es": "¿Usas una lista de tareas o lo guardas todo en la cabeza?",
+"fr": "Utilises-tu une liste de choses à faire ou gardes-tu tout en tête ?",
+"it": "Usi una lista di cose da fare o tieni tutto a mente?",
+"pt": "Usas uma lista de tarefas ou guardas tudo na cabeça?",
+"pt_BR": "Você usa uma lista de tarefas ou guarda tudo na cabeça?"
+}
+},
+{
+"id": "stress_basics-054",
+"lv": "beginner",
+"i18n": {
+"en": "Which is easier for you: calming your body or calming your thoughts?",
+"de": "Was fällt dir leichter: den Körper oder die Gedanken zu beruhigen?",
+"es": "¿Qué te resulta más fácil: calmar el cuerpo o calmar los pensamientos?",
+"fr": "Qu'est-ce qui est le plus facile pour toi : calmer ton corps ou tes pensées ?",
+"it": "Cosa ti riesce più facile: calmare il corpo o calmare i pensieri?",
+"pt": "O que te é mais fácil: acalmar o corpo ou acalmar os pensamentos?",
+"pt_BR": "O que é mais fácil pra você: acalmar o corpo ou os pensamentos?"
+}
+},
+{
+"id": "stress_basics-055",
+"lv": "beginner",
+"i18n": {
+"en": "What would you say to a friend who feels stressed before an exam?",
+"de": "Was würdest du einem Freund sagen, der vor einer Prüfung gestresst ist?",
+"es": "¿Qué le dirías a un amigo que está estresado antes de un examen?",
+"fr": "Que dirais-tu à un ami stressé avant un examen ?",
+"it": "Cosa diresti a un amico stressato prima di un esame?",
+"pt": "O que dirias a um amigo stressado antes de um exame?",
+"pt_BR": "O que você diria pra um amigo estressado antes de uma prova?"
+}
+},
+{
+"id": "stress_basics-056",
+"lv": "beginner",
+"i18n": {
+"en": "How do you feel after a short walk outside?",
+"de": "Wie fühlst du dich nach einem kurzen Spaziergang draußen?",
+"es": "¿Cómo te sientes después de un paseo corto al aire libre?",
+"fr": "Comment te sens-tu après une petite promenade dehors ?",
+"it": "Come ti senti dopo una breve passeggiata all'aperto?",
+"pt": "Como te sentes depois de uma pequena caminhada lá fora?",
+"pt_BR": "Como você se sente depois de uma caminhada curta ao ar livre?"
+}
+},
+{
+"id": "stress_basics-057",
+"lv": "beginner",
+"i18n": {
+"en": "What is one stress trigger you would like to understand better?",
+"de": "Welchen Stressauslöser würdest du gern besser verstehen?",
+"es": "¿Qué desencadenante de estrés te gustaría entender mejor?",
+"fr": "Quel déclencheur de stress aimerais-tu mieux comprendre ?",
+"it": "Quale fattore di stress ti piacerebbe capire meglio?",
+"pt": "Que fator de stress gostavas de perceber melhor?",
+"pt_BR": "Qual gatilho de estresse você gostaria de entender melhor?"
+}
+},
+{
+"id": "stress_basics-058",
+"lv": "beginner",
+"i18n": {
+"en": "Do you have a moment in your day that is just for you?",
+"de": "Gibt es in deinem Tag einen Moment, der nur dir gehört?",
+"es": "¿Tienes algún momento del día que sea solo para ti?",
+"fr": "As-tu un moment dans ta journée rien que pour toi ?",
+"it": "C'è un momento della tua giornata che è solo per te?",
+"pt": "Tens algum momento do dia que seja só para ti?",
+"pt_BR": "Você tem algum momento do dia que seja só seu?"
+}
+},
+{
+"id": "stress_basics-059",
+"lv": "beginner",
+"i18n": {
+"en": "How do you usually talk to yourself when something goes wrong?",
+"de": "Wie redest du normalerweise mit dir selbst, wenn etwas schiefgeht?",
+"es": "¿Cómo te hablas a ti mismo cuando algo sale mal?",
+"fr": "Comment te parles-tu d'habitude quand quelque chose tourne mal ?",
+"it": "Come ti parli di solito quando qualcosa va storto?",
+"pt": "Como costumas falar contigo quando algo corre mal?",
+"pt_BR": "Como você costuma falar consigo mesmo quando algo dá errado?"
+}
+},
+{
+"id": "stress_basics-060",
+"lv": "beginner",
+"i18n": {
+"en": "What helps you feel calm when you are waiting in a queue?",
+"de": "Was hilft dir, ruhig zu bleiben, wenn du in einer Schlange wartest?",
+"es": "¿Qué te ayuda a mantener la calma cuando esperas en una cola?",
+"fr": "Qu'est-ce qui t'aide à rester calme quand tu fais la queue ?",
+"it": "Cosa ti aiuta a restare calmo quando aspetti in fila?",
+"pt": "O que te ajuda a manter a calma quando estás numa fila?",
+"pt_BR": "O que te ajuda a manter a calma quando você está numa fila?"
+}
+},
+{
+"id": "stress_basics-061",
+"lv": "beginner",
+"i18n": {
+"en": "What realistic calm goal would you like to set for this month?",
+"de": "Welches realistische Ziel für mehr Ruhe möchtest du dir für diesen Monat setzen?",
+"es": "¿Qué meta realista de calma te gustaría ponerte este mes?",
+"fr": "Quel objectif réaliste de sérénité aimerais-tu te fixer ce mois-ci ?",
+"it": "Quale obiettivo realistico di calma vorresti darti questo mese?",
+"pt": "Que objetivo realista de calma gostavas de definir para este mês?",
+"pt_BR": "Qual meta realista de calma você gostaria de definir para este mês?"
+}
+},
+{
+"id": "stress_basics-062",
+"lv": "beginner",
+"i18n": {
+"en": "How does your mood change on days when you sleep well?",
+"de": "Wie verändert sich deine Stimmung an Tagen, nach denen du gut geschlafen hast?",
+"es": "¿Cómo cambia tu ánimo los días en que has dormido bien?",
+"fr": "Comment ton humeur change-t-elle les jours où tu as bien dormi ?",
+"it": "Come cambia il tuo umore nei giorni in cui hai dormito bene?",
+"pt": "Como muda o teu humor nos dias em que dormiste bem?",
+"pt_BR": "Como o seu humor muda nos dias em que você dormiu bem?"
+}
+},
+{
+"id": "stress_basics-063",
+"lv": "beginner",
+"i18n": {
+"en": "Do you find it easy or hard to say no to extra tasks?",
+"de": "Fällt es dir leicht oder schwer, Nein zu zusätzlichen Aufgaben zu sagen?",
+"es": "¿Te resulta fácil o difícil decir que no a tareas extra?",
+"fr": "Trouves-tu facile ou difficile de dire non à des tâches en plus ?",
+"it": "Ti riesce facile o difficile dire di no a compiti extra?",
+"pt": "Achas fácil ou difícil dizer não a tarefas extra?",
+"pt_BR": "Você acha fácil ou difícil dizer não a tarefas extras?"
+}
+},
+{
+"id": "stress_basics-064",
+"lv": "beginner",
+"i18n": {
+"en": "How do notifications on your phone affect how you feel?",
+"de": "Wie beeinflussen die Benachrichtigungen auf deinem Handy, wie du dich fühlst?",
+"es": "¿Cómo influyen las notificaciones del móvil en cómo te sientes?",
+"fr": "Comment les notifications de ton téléphone influencent-elles ton humeur ?",
+"it": "Come influiscono le notifiche del telefono su come ti senti?",
+"pt": "Como é que as notificações do telemóvel influenciam a forma como te sentes?",
+"pt_BR": "Como as notificações do celular influenciam como você se sente?"
+}
+},
+{
+"id": "stress_basics-065",
+"lv": "beginner",
+"i18n": {
+"en": "What helps you switch off at the end of the day?",
+"de": "Was hilft dir, am Ende des Tages abzuschalten?",
+"es": "¿Qué te ayuda a desconectar al final del día?",
+"fr": "Qu'est-ce qui t'aide à décrocher en fin de journée ?",
+"it": "Cosa ti aiuta a staccare alla fine della giornata?",
+"pt": "O que te ajuda a desligar no final do dia?",
+"pt_BR": "O que te ajuda a desligar no fim do dia?"
+}
+},
+{
+"id": "stress_basics-066",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you handle a big deadline coming up?",
+"de": "Wie gehst du mit einer großen Deadline um, die näher rückt?",
+"es": "¿Cómo llevas una fecha límite importante que se acerca?",
+"fr": "Comment gères-tu une grosse échéance qui approche ?",
+"it": "Come gestisci una scadenza importante che si avvicina?",
+"pt": "Como lidas com um prazo importante que se aproxima?",
+"pt_BR": "Como você lida com um prazo importante chegando?"
+}
+},
+{
+"id": "stress_basics-067",
+"lv": "intermediate",
+"i18n": {
+"en": "Do you tend to aim for perfect results? How does that feel?",
+"de": "Neigst du dazu, perfekte Ergebnisse anzustreben? Wie fühlt sich das an?",
+"es": "¿Sueles buscar resultados perfectos? ¿Cómo te hace sentir eso?",
+"fr": "As-tu tendance à viser la perfection ? Comment le vis-tu ?",
+"it": "Tendi a puntare a risultati perfetti? Come ti fa sentire?",
+"pt": "Tens tendência para procurar resultados perfeitos? Como te sentes com isso?",
+"pt_BR": "Você costuma buscar resultados perfeitos? Como se sente com isso?"
+}
+},
+{
+"id": "stress_basics-068",
+"lv": "intermediate",
+"i18n": {
+"en": "What helps you stay calm before speaking in front of people?",
+"de": "Was hilft dir, ruhig zu bleiben, bevor du vor Leuten sprichst?",
+"es": "¿Qué te ayuda a mantener la calma antes de hablar en público?",
+"fr": "Qu'est-ce qui t'aide à rester calme avant de parler devant des gens ?",
+"it": "Cosa ti aiuta a restare calmo prima di parlare in pubblico?",
+"pt": "O que te ajuda a manter a calma antes de falar em público?",
+"pt_BR": "O que te ajuda a manter a calma antes de falar em público?"
+}
+},
+{
+"id": "stress_basics-069",
+"lv": "intermediate",
+"i18n": {
+"en": "Who are the people in your support network?",
+"de": "Wer gehört zu den Menschen, die dich unterstützen?",
+"es": "¿Quiénes forman tu red de apoyo?",
+"fr": "Qui sont les personnes de ton réseau de soutien ?",
+"it": "Chi sono le persone della tua rete di supporto?",
+"pt": "Quem são as pessoas da tua rede de apoio?",
+"pt_BR": "Quem são as pessoas da sua rede de apoio?"
+}
+},
+{
+"id": "stress_basics-070",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you calm down before a difficult conversation?",
+"de": "Wie beruhigst du dich vor einem schwierigen Gespräch?",
+"es": "¿Cómo te calmas antes de una conversación difícil?",
+"fr": "Comment te calmes-tu avant une conversation difficile ?",
+"it": "Come ti calmi prima di una conversazione difficile?",
+"pt": "Como te acalmas antes de uma conversa difícil?",
+"pt_BR": "Como você se acalma antes de uma conversa difícil?"
+}
+},
+{
+"id": "stress_basics-071",
+"lv": "intermediate",
+"i18n": {
+"en": "What is your experience with misunderstandings between cultures?",
+"de": "Welche Erfahrungen hast du mit Missverständnissen zwischen Kulturen gemacht?",
+"es": "¿Qué experiencia tienes con los malentendidos entre culturas?",
+"fr": "Quelle expérience as-tu des malentendus entre cultures ?",
+"it": "Che esperienza hai con i malintesi tra culture?",
+"pt": "Que experiência tens com mal-entendidos entre culturas?",
+"pt_BR": "Qual é a sua experiência com mal-entendidos entre culturas?"
+}
+},
+{
+"id": "stress_basics-072",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you feel when you compare yourself with others online?",
+"de": "Wie fühlst du dich, wenn du dich online mit anderen vergleichst?",
+"es": "¿Cómo te sientes cuando te comparas con otros en internet?",
+"fr": "Comment te sens-tu quand tu te compares aux autres en ligne ?",
+"it": "Come ti senti quando ti confronti con gli altri online?",
+"pt": "Como te sentes quando te comparas com os outros online?",
+"pt_BR": "Como você se sente quando se compara com os outros na internet?"
+}
+},
+{
+"id": "stress_basics-073",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you balance social plans with time to recharge alone?",
+"de": "Wie bringst du Verabredungen und Zeit für dich allein in Einklang?",
+"es": "¿Cómo equilibras los planes sociales con tiempo a solas para recargar energía?",
+"fr": "Comment équilibres-tu sorties et moments seul pour recharger tes batteries ?",
+"it": "Come bilanci gli impegni sociali con il tempo da solo per ricaricarti?",
+"pt": "Como equilibras os planos sociais com tempo sozinho para recarregar energias?",
+"pt_BR": "Como você equilibra programas com amigos e tempo sozinho pra recarregar?"
+}
+},
+{
+"id": "stress_basics-074",
+"lv": "intermediate",
+"i18n": {
+"en": "What has helped you feel at home in a new place?",
+"de": "Was hat dir geholfen, dich an einem neuen Ort zu Hause zu fühlen?",
+"es": "¿Qué te ha ayudado a sentirte como en casa en un lugar nuevo?",
+"fr": "Qu'est-ce qui t'a aidé à te sentir chez toi dans un nouvel endroit ?",
+"it": "Cosa ti ha aiutato a sentirti a casa in un posto nuovo?",
+"pt": "O que te ajudou a sentir-te em casa num sítio novo?",
+"pt_BR": "O que te ajudou a se sentir em casa num lugar novo?"
+}
+},
+{
+"id": "stress_basics-075",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you stay calm when travel plans go wrong?",
+"de": "Wie bleibst du ruhig, wenn Reisepläne schiefgehen?",
+"es": "¿Cómo mantienes la calma cuando los planes de viaje se tuercen?",
+"fr": "Comment restes-tu calme quand un voyage ne se passe pas comme prévu ?",
+"it": "Come mantieni la calma quando i piani di viaggio vanno storti?",
+"pt": "Como manténs a calma quando os planos de viagem correm mal?",
+"pt_BR": "Como você mantém a calma quando os planos de viagem dão errado?"
+}
+},
+{
+"id": "stress_basics-076",
+"lv": "intermediate",
+"i18n": {
+"en": "Which part of your daily routine feels most rushed, and why?",
+"de": "Welcher Teil deines Tagesablaufs fühlt sich am hektischsten an, und warum?",
+"es": "¿Qué parte de tu rutina diaria se siente más apresurada y por qué?",
+"fr": "Quelle partie de ta routine quotidienne te semble la plus pressée, et pourquoi ?",
+"it": "Quale parte della tua routine quotidiana ti sembra più di corsa, e perché?",
+"pt": "Que parte da tua rotina diária parece mais apressada, e porquê?",
+"pt_BR": "Qual parte da sua rotina diária parece mais corrida, e por quê?"
+}
+},
+{
+"id": "stress_basics-077",
+"lv": "intermediate",
+"i18n": {
+"en": "What hobby would you like to start to give your mind a break?",
+"de": "Mit welchem Hobby würdest du gern anfangen, um deinem Kopf eine Pause zu gönnen?",
+"es": "¿Qué afición te gustaría empezar para darle un respiro a tu mente?",
+"fr": "Quel loisir aimerais-tu commencer pour offrir une pause à ton esprit ?",
+"it": "Quale hobby ti piacerebbe iniziare per dare una pausa alla mente?",
+"pt": "Que passatempo gostavas de começar para dar uma pausa à tua mente?",
+"pt_BR": "Qual hobby você gostaria de começar pra dar um descanso à mente?"
+}
+},
+{
+"id": "stress_basics-078",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you handle having too many choices or decisions?",
+"de": "Wie gehst du damit um, wenn du zu viele Möglichkeiten oder Entscheidungen hast?",
+"es": "¿Cómo llevas tener demasiadas opciones o decisiones?",
+"fr": "Comment gères-tu le fait d'avoir trop de choix ou de décisions à prendre ?",
+"it": "Come gestisci il fatto di avere troppe scelte o decisioni da prendere?",
+"pt": "Como lidas com ter demasiadas opções ou decisões?",
+"pt_BR": "Como você lida com ter opções ou decisões demais?"
+}
+},
+{
+"id": "stress_basics-079",
+"lv": "intermediate",
+"i18n": {
+"en": "What does your ideal work-life balance look like?",
+"de": "Wie sieht für dich die ideale Balance zwischen Arbeit und Privatleben aus?",
+"es": "¿Cómo sería para ti el equilibrio ideal entre trabajo y vida personal?",
+"fr": "À quoi ressemble pour toi l'équilibre idéal entre travail et vie privée ?",
+"it": "Com'è per te l'equilibrio ideale tra lavoro e vita privata?",
+"pt": "Como seria para ti o equilíbrio ideal entre trabalho e vida pessoal?",
+"pt_BR": "Como seria pra você o equilíbrio ideal entre trabalho e vida pessoal?"
+}
+},
+{
+"id": "stress_basics-080",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you ask for help when you have too much on your plate?",
+"de": "Wie bittest du um Hilfe, wenn dir alles zu viel wird?",
+"es": "¿Cómo pides ayuda cuando tienes demasiadas cosas encima?",
+"fr": "Comment demandes-tu de l'aide quand tu as trop de choses à faire ?",
+"it": "Come chiedi aiuto quando hai troppe cose da fare?",
+"pt": "Como pedes ajuda quando tens demasiadas coisas em mãos?",
+"pt_BR": "Como você pede ajuda quando está com coisas demais nas mãos?"
+}
+},
+{
+"id": "stress_basics-081",
+"lv": "intermediate",
+"i18n": {
+"en": "Which thinking trap do you notice most often in yourself?",
+"de": "Welche Denkfalle bemerkst du bei dir am häufigsten?",
+"es": "¿Qué trampa mental notas con más frecuencia en ti?",
+"fr": "Quel piège de pensée remarques-tu le plus souvent chez toi ?",
+"it": "Quale trappola mentale noti più spesso in te stesso?",
+"pt": "Que armadilha de pensamento notas mais vezes em ti?",
+"pt_BR": "Qual armadilha de pensamento você percebe com mais frequência em si mesmo?"
+}
+},
+{
+"id": "stress_basics-082",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you feel when plans change at the last minute?",
+"de": "Wie fühlst du dich, wenn sich Pläne in letzter Minute ändern?",
+"es": "¿Cómo te sientes cuando los planes cambian a última hora?",
+"fr": "Comment te sens-tu quand les projets changent à la dernière minute ?",
+"it": "Come ti senti quando i programmi cambiano all'ultimo minuto?",
+"pt": "Como te sentes quando os planos mudam à última hora?",
+"pt_BR": "Como você se sente quando os planos mudam em cima da hora?"
+}
+},
+{
+"id": "stress_basics-083",
+"lv": "intermediate",
+"i18n": {
+"en": "What is your best tip for staying calm in noisy, crowded places?",
+"de": "Was ist dein bester Tipp, um an lauten, vollen Orten ruhig zu bleiben?",
+"es": "¿Cuál es tu mejor consejo para mantener la calma en sitios ruidosos y llenos de gente?",
+"fr": "Quelle est ta meilleure astuce pour rester calme dans les endroits bruyants et bondés ?",
+"it": "Qual è il tuo consiglio migliore per restare calmo in posti rumorosi e affollati?",
+"pt": "Qual é a tua melhor dica para manter a calma em sítios barulhentos e cheios de gente?",
+"pt_BR": "Qual é a sua melhor dica pra manter a calma em lugares barulhentos e lotados?"
+}
+},
+{
+"id": "stress_basics-084",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you make weekends feel truly restful?",
+"de": "Wie sorgst du dafür, dass sich Wochenenden wirklich erholsam anfühlen?",
+"es": "¿Cómo consigues que los fines de semana sean de verdad un descanso?",
+"fr": "Comment fais-tu pour que tes week-ends soient vraiment reposants ?",
+"it": "Come fai in modo che i fine settimana siano davvero riposanti?",
+"pt": "Como fazes para que os fins de semana sejam mesmo repousantes?",
+"pt_BR": "Como você faz pros fins de semana serem realmente descansados?"
+}
+},
+{
+"id": "stress_basics-085",
+"lv": "intermediate",
+"i18n": {
+"en": "Which calming tool from the past weeks has worked best for you?",
+"de": "Welches Entspannungswerkzeug der letzten Wochen hat bei dir am besten funktioniert?",
+"es": "¿Qué herramienta para calmarte de las últimas semanas te ha funcionado mejor?",
+"fr": "Quel outil de détente des dernières semaines a le mieux marché pour toi ?",
+"it": "Quale strumento per la calma delle ultime settimane ha funzionato meglio per te?",
+"pt": "Que ferramenta para acalmar das últimas semanas resultou melhor contigo?",
+"pt_BR": "Qual ferramenta pra se acalmar das últimas semanas funcionou melhor pra você?"
+}
+},
+{
+"id": "stress_basics-086",
+"lv": "advanced",
+"i18n": {
+"en": "Which of your personal values helps you most in stressful moments?",
+"de": "Welcher deiner Werte hilft dir in stressigen Momenten am meisten?",
+"es": "¿Cuál de tus valores personales te ayuda más en los momentos de estrés?",
+"fr": "Laquelle de tes valeurs t'aide le plus dans les moments de stress ?",
+"it": "Quale dei tuoi valori ti aiuta di più nei momenti di stress?",
+"pt": "Qual dos teus valores pessoais te ajuda mais nos momentos de stress?",
+"pt_BR": "Qual dos seus valores pessoais mais te ajuda nos momentos de estresse?"
+}
+},
+{
+"id": "stress_basics-087",
+"lv": "advanced",
+"i18n": {
+"en": "Tell me about a challenge you got through that made you stronger.",
+"de": "Erzähl mir von einer Herausforderung, die du gemeistert hast und die dich stärker gemacht hat.",
+"es": "Cuéntame un reto que superaste y que te hizo más fuerte.",
+"fr": "Parle-moi d'un défi que tu as surmonté et qui t'a rendu plus fort.",
+"it": "Raccontami una sfida che hai superato e che ti ha reso più forte.",
+"pt": "Conta-me um desafio que ultrapassaste e que te tornou mais forte.",
+"pt_BR": "Me conta sobre um desafio que você superou e que te deixou mais forte."
+}
+},
+{
+"id": "stress_basics-088",
+"lv": "advanced",
+"i18n": {
+"en": "Which calm tradition from another culture would you like to try?",
+"de": "Welche Ruhe-Tradition aus einer anderen Kultur würdest du gern ausprobieren?",
+"es": "¿Qué tradición de calma de otra cultura te gustaría probar?",
+"fr": "Quelle tradition apaisante d'une autre culture aimerais-tu essayer ?",
+"it": "Quale tradizione rilassante di un'altra cultura ti piacerebbe provare?",
+"pt": "Que tradição de calma de outra cultura gostavas de experimentar?",
+"pt_BR": "Qual tradição de calma de outra cultura você gostaria de experimentar?"
+}
+},
+{
+"id": "stress_basics-089",
+"lv": "advanced",
+"i18n": {
+"en": "What are your green, yellow and red signs of stress?",
+"de": "Was sind deine grünen, gelben und roten Stresssignale?",
+"es": "¿Cuáles son tus señales verdes, amarillas y rojas de estrés?",
+"fr": "Quels sont tes signaux de stress verts, jaunes et rouges ?",
+"it": "Quali sono i tuoi segnali di stress verdi, gialli e rossi?",
+"pt": "Quais são os teus sinais de stress verdes, amarelos e vermelhos?",
+"pt_BR": "Quais são os seus sinais de estresse verdes, amarelos e vermelhos?"
+}
+},
+{
+"id": "stress_basics-090",
+"lv": "advanced",
+"i18n": {
+"en": "What activities give you energy, and which ones drain it?",
+"de": "Welche Aktivitäten geben dir Energie, und welche rauben sie dir?",
+"es": "¿Qué actividades te dan energía y cuáles te la quitan?",
+"fr": "Quelles activités te donnent de l'énergie, et lesquelles t'en prennent ?",
+"it": "Quali attività ti danno energia e quali te la tolgono?",
+"pt": "Que atividades te dão energia e quais te tiram energia?",
+"pt_BR": "Quais atividades te dão energia e quais te esgotam?"
+}
+},
+{
+"id": "stress_basics-091",
+"lv": "advanced",
+"i18n": {
+"en": "When have you felt completely absorbed in something you love?",
+"de": "Wann warst du zuletzt völlig in etwas vertieft, das du liebst?",
+"es": "¿Cuándo te has sentido totalmente absorto en algo que te encanta?",
+"fr": "Quand t'es-tu senti complètement absorbé par quelque chose que tu aimes ?",
+"it": "Quando ti sei sentito completamente assorbito da qualcosa che ami?",
+"pt": "Quando te sentiste completamente absorvido por algo de que gostas muito?",
+"pt_BR": "Quando você se sentiu totalmente envolvido em algo que ama?"
+}
+},
+{
+"id": "stress_basics-092",
+"lv": "advanced",
+"i18n": {
+"en": "How would you support a friend who is going through a stressful time?",
+"de": "Wie würdest du einen Freund unterstützen, der gerade eine stressige Zeit durchmacht?",
+"es": "¿Cómo apoyarías a un amigo que está pasando por una época estresante?",
+"fr": "Comment soutiendrais-tu un ami qui traverse une période stressante ?",
+"it": "Come sosterresti un amico che sta attraversando un periodo stressante?",
+"pt": "Como apoiarias um amigo que está a passar por uma fase stressante?",
+"pt_BR": "Como você apoiaria um amigo que está passando por uma fase estressante?"
+}
+},
+{
+"id": "stress_basics-093",
+"lv": "advanced",
+"i18n": {
+"en": "What does a stress-friendly home or workplace look like to you?",
+"de": "Wie sieht für dich ein Zuhause oder Arbeitsplatz aus, der Stress vorbeugt?",
+"es": "¿Cómo sería para ti un hogar o un trabajo que ayude a reducir el estrés?",
+"fr": "À quoi ressemble pour toi un foyer ou un lieu de travail qui aide à réduire le stress ?",
+"it": "Com'è per te una casa o un posto di lavoro che aiuta a ridurre lo stress?",
+"pt": "Como seria para ti uma casa ou um local de trabalho que ajude a reduzir o stress?",
+"pt_BR": "Como seria pra você uma casa ou um trabalho que ajude a reduzir o estresse?"
+}
+},
+{
+"id": "stress_basics-094",
+"lv": "advanced",
+"i18n": {
+"en": "Which daily habits would you keep even in your busiest week?",
+"de": "Welche täglichen Gewohnheiten würdest du selbst in deiner vollsten Woche beibehalten?",
+"es": "¿Qué hábitos diarios mantendrías incluso en tu semana más ocupada?",
+"fr": "Quelles habitudes quotidiennes garderais-tu même pendant ta semaine la plus chargée ?",
+"it": "Quali abitudini quotidiane manterresti anche nella tua settimana più piena?",
+"pt": "Que hábitos diários manterias mesmo na tua semana mais cheia?",
+"pt_BR": "Quais hábitos diários você manteria até na sua semana mais corrida?"
+}
+},
+{
+"id": "stress_basics-095",
+"lv": "advanced",
+"i18n": {
+"en": "How do you balance big ambitions with staying calm?",
+"de": "Wie bringst du große Ziele und innere Ruhe unter einen Hut?",
+"es": "¿Cómo equilibras las grandes ambiciones con mantener la calma?",
+"fr": "Comment concilies-tu grandes ambitions et sérénité ?",
+"it": "Come concili grandi ambizioni e serenità?",
+"pt": "Como equilibras grandes ambições com manter a calma?",
+"pt_BR": "Como você equilibra grandes ambições com manter a calma?"
+}
+},
+{
+"id": "stress_basics-096",
+"lv": "advanced",
+"i18n": {
+"en": "What would your personal 'calm manual' say in three sentences?",
+"de": "Was würde in drei Sätzen in deinem persönlichen „Ruhe-Handbuch“ stehen?",
+"es": "¿Qué diría tu 'manual de la calma' personal en tres frases?",
+"fr": "Que dirait ton « manuel de la sérénité » personnel en trois phrases ?",
+"it": "Cosa direbbe in tre frasi il tuo 'manuale della calma' personale?",
+"pt": "O que diria em três frases o teu 'manual da calma' pessoal?",
+"pt_BR": "O que diria em três frases o seu 'manual da calma' pessoal?"
+}
+},
+{
+"id": "stress_basics-097",
+"lv": "advanced",
+"i18n": {
+"en": "How has the way you react to stress changed over the past months?",
+"de": "Wie hat sich dein Umgang mit Stress in den letzten Monaten verändert?",
+"es": "¿Cómo ha cambiado tu forma de reaccionar al estrés en los últimos meses?",
+"fr": "Comment ta façon de réagir au stress a-t-elle changé ces derniers mois ?",
+"it": "Come è cambiato il tuo modo di reagire allo stress negli ultimi mesi?",
+"pt": "Como mudou a tua forma de reagir ao stress nos últimos meses?",
+"pt_BR": "Como sua forma de reagir ao estresse mudou nos últimos meses?"
+}
+},
+{
+"id": "stress_basics-098",
+"lv": "advanced",
+"i18n": {
+"en": "How would you explain the 'circle of control' to someone in simple words?",
+"de": "Wie würdest du jemandem den „Einflusskreis“ in einfachen Worten erklären?",
+"es": "¿Cómo le explicarías a alguien el 'círculo de control' con palabras sencillas?",
+"fr": "Comment expliquerais-tu le « cercle de contrôle » à quelqu'un avec des mots simples ?",
+"it": "Come spiegheresti il 'cerchio del controllo' a qualcuno con parole semplici?",
+"pt": "Como explicarias o 'círculo de controlo' a alguém por palavras simples?",
+"pt_BR": "Como você explicaria o 'círculo de controle' pra alguém com palavras simples?"
+}
+},
+{
+"id": "stress_basics-099",
+"lv": "advanced",
+"i18n": {
+"en": "Which calm tip from this year would you pass on to someone you care about?",
+"de": "Welchen Tipp für mehr Ruhe aus diesem Jahr würdest du an jemanden weitergeben, der dir wichtig ist?",
+"es": "¿Qué consejo de calma de este año le pasarías a alguien que te importa?",
+"fr": "Quel conseil de sérénité de cette année transmettrais-tu à quelqu'un qui compte pour toi ?",
+"it": "Quale consiglio sulla calma di quest'anno passeresti a una persona a cui tieni?",
+"pt": "Que dica de calma deste ano passarias a alguém de quem gostas?",
+"pt_BR": "Qual dica de calma deste ano você passaria pra alguém de quem gosta?"
+}
+},
+{
+"id": "stress_basics-100",
+"lv": "advanced",
+"i18n": {
+"en": "What intention for a calmer life would you like to carry into next year?",
+"de": "Welchen Vorsatz für ein ruhigeres Leben möchtest du ins nächste Jahr mitnehmen?",
+"es": "¿Qué intención para una vida más tranquila te gustaría llevar al próximo año?",
+"fr": "Quelle intention pour une vie plus sereine aimerais-tu emporter dans l'année à venir ?",
+"it": "Quale intenzione per una vita più serena vorresti portare con te nel prossimo anno?",
+"pt": "Que intenção para uma vida mais calma gostavas de levar para o próximo ano?",
+"pt_BR": "Qual intenção para uma vida mais tranquila você gostaria de levar para o próximo ano?"
+}
+}
+]
+}

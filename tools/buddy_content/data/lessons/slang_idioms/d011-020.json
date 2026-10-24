@@ -1,0 +1,835 @@
+{
+ "topic": "slang_idioms",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Cool! Words of approval",
+     "g": "Show you like something with casual words of approval.",
+     "p": [
+      "“Cool”, “awesome” and “great” are the everyday English trio; “awesome” is extra common in the US.",
+      "In Spain people say “guay”; in France “génial”; in Italy “figo”; in Brazil “legal”.",
+      "Tone matters: a flat “cool.” can mean you are not impressed, while “so cool!” sounds excited."
+     ],
+     "q": "What word do you use when a friend shows you something you really like?",
+     "c": "React to three things today using a different word of approval each time, in any language."
+    },
+    "de": {
+     "t": "Cool! Wörter der Zustimmung",
+     "g": "Mit lockeren Wörtern zeigen, dass dir etwas gefällt.",
+     "p": [
+      "„Cool“, „awesome“ und „great“ sind das englische Alltagstrio; „awesome“ hört man besonders in den USA.",
+      "In Spanien sagt man „guay“, in Frankreich „génial“, in Italien „figo“, in Brasilien „legal“.",
+      "Der Ton zählt: ein flaches „cool.“ kann heißen, dass dich etwas kaltlässt, „so cool!“ klingt begeistert."
+     ],
+     "q": "Welches Wort benutzt du, wenn dir ein Freund etwas zeigt, das dir richtig gefällt?",
+     "c": "Reagiere heute auf drei Dinge mit jeweils einem anderen Wort der Zustimmung, in irgendeiner Sprache."
+    },
+    "es": {
+     "t": "¡Guay! Palabras de aprobación",
+     "g": "Mostrar que algo te gusta con palabras informales de aprobación.",
+     "p": [
+      "«Cool», «awesome» y «great» son el trío diario en inglés; «awesome» se oye muchísimo en EE. UU.",
+      "En España se dice «guay»; en Francia «génial»; en Italia «figo»; en Brasil «legal».",
+      "El tono importa: un «cool» seco puede indicar poco interés; «so cool!» suena entusiasmado."
+     ],
+     "q": "¿Qué palabra usas cuando un amigo te enseña algo que te encanta?",
+     "c": "Reacciona hoy a tres cosas con una palabra de aprobación distinta cada vez, en el idioma que quieras."
+    },
+    "fr": {
+     "t": "Génial ! Mots d'approbation",
+     "g": "Montrer qu'on aime quelque chose avec des mots familiers d'approbation.",
+     "p": [
+      "« Cool », « awesome » et « great » forment le trio anglais du quotidien ; « awesome » est très américain.",
+      "En Espagne on dit « guay », en France « génial », en Italie « figo », au Brésil « legal ».",
+      "Le ton compte : un « cool. » plat peut vouloir dire qu'on s'en fiche, « so cool! » sonne enthousiaste."
+     ],
+     "q": "Quel mot utilises-tu quand un ami te montre un truc qui te plaît vraiment ?",
+     "c": "Réagis aujourd'hui à trois choses avec un mot d'approbation différent à chaque fois, dans n'importe quelle langue."
+    },
+    "it": {
+     "t": "Figo! Parole di approvazione",
+     "g": "Mostrare che qualcosa ti piace con parole informali di approvazione.",
+     "p": [
+      "«Cool», «awesome» e «great» sono il trio inglese di tutti i giorni; «awesome» è molto americano.",
+      "In Spagna si dice «guay», in Francia «génial», in Italia «figo», in Brasile «legal».",
+      "Il tono conta: un «cool.» piatto può voler dire che non ti colpisce, «so cool!» suona entusiasta."
+     ],
+     "q": "Che parola usi quando un amico ti mostra una cosa che ti piace tanto?",
+     "c": "Oggi reagisci a tre cose con una parola di approvazione diversa ogni volta, in qualsiasi lingua."
+    },
+    "pt": {
+     "t": "Fixe! Palavras de aprovação",
+     "g": "Mostrar que gostas de algo com palavras informais de aprovação.",
+     "p": [
+      "«Cool», «awesome» e «great» são o trio inglês do dia a dia; «awesome» é muito americano.",
+      "Em Espanha diz-se «guay»; em França «génial»; em Itália «figo»; no Brasil «legal»; em Portugal «fixe».",
+      "O tom conta: um «cool.» seco pode querer dizer pouco interesse, «so cool!» soa entusiasmado."
+     ],
+     "q": "Que palavra usas quando um amigo te mostra algo de que gostas mesmo?",
+     "c": "Reage hoje a três coisas com uma palavra de aprovação diferente de cada vez, em qualquer língua."
+    },
+    "pt_BR": {
+     "t": "Legal! Palavras de aprovação",
+     "g": "Mostrar que você curtiu algo com palavras informais de aprovação.",
+     "p": [
+      "“Cool”, “awesome” e “great” são o trio do dia a dia em inglês; “awesome” é bem americano.",
+      "Na Espanha se diz “guay”; na França “génial”; na Itália “figo”; aqui no Brasil “legal”.",
+      "O tom importa: um “cool.” seco pode indicar pouco interesse, já “so cool!” soa empolgado."
+     ],
+     "q": "Que palavra você usa quando um amigo mostra algo que você curtiu muito?",
+     "c": "Reaja hoje a três coisas com uma palavra de aprovação diferente a cada vez, em qualquer língua."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "How are you, really?",
+     "g": "Answer “how are you?” in casual, honest and natural ways.",
+     "p": [
+      "“Not bad” and “can't complain” mean things are fine; they sound modest rather than negative.",
+      "“So-so” means average; in French “comme ci comme ça”, in Spanish “más o menos”.",
+      "In many English-speaking places “how are you?” is mostly a greeting, so a short answer plus “and you?” is enough."
+     ],
+     "q": "How do you honestly answer “how are you?” on a normal day?",
+     "c": "Answer “how are you?” today with “can't complain, and you?” and notice the reply you get."
+    },
+    "de": {
+     "t": "Wie geht's, wirklich?",
+     "g": "Auf „Wie geht's?“ locker, ehrlich und natürlich antworten.",
+     "p": [
+      "„Not bad“ und „can't complain“ heißen, es läuft gut; sie klingen bescheiden, nicht negativ.",
+      "„So-so“ heißt mittelmäßig, wie unser „geht so“; auf Französisch „comme ci comme ça“, auf Spanisch „más o menos“.",
+      "Vielerorts im Englischen ist „how are you?“ eher ein Gruß; eine kurze Antwort plus „and you?“ reicht."
+     ],
+     "q": "Wie antwortest du an einem normalen Tag ehrlich auf „Wie geht's?“?",
+     "c": "Antworte heute auf „Wie geht's?“ mit „can't complain, and you?“ und achte auf die Reaktion."
+    },
+    "es": {
+     "t": "¿Qué tal, de verdad?",
+     "g": "Responder a «¿qué tal?» de forma informal, sincera y natural.",
+     "p": [
+      "«Not bad» y «can't complain» significan que todo va bien; suenan modestos, no negativos.",
+      "«So-so» significa regular; en francés «comme ci comme ça», en español «más o menos».",
+      "En muchos lugares de habla inglesa «how are you?» es casi un saludo: basta una respuesta corta y «and you?»."
+     ],
+     "q": "¿Cómo respondes sinceramente a «¿qué tal?» un día normal?",
+     "c": "Responde hoy a «¿qué tal?» con «can't complain, and you?» y fíjate en la respuesta."
+    },
+    "fr": {
+     "t": "Ça va, vraiment ?",
+     "g": "Répondre à « ça va ? » de façon familière, honnête et naturelle.",
+     "p": [
+      "« Not bad » et « can't complain » veulent dire que tout va bien ; c'est modeste, pas négatif.",
+      "« So-so » veut dire moyen ; en français « comme ci comme ça », en espagnol « más o menos ».",
+      "Dans beaucoup de pays anglophones, « how are you? » est surtout un salut : une réponse courte et « and you? » suffisent."
+     ],
+     "q": "Comment réponds-tu honnêtement à « ça va ? » un jour normal ?",
+     "c": "Réponds aujourd'hui à « ça va ? » par « can't complain, and you? » et observe la réponse."
+    },
+    "it": {
+     "t": "Come stai, davvero?",
+     "g": "Rispondere a «come stai?» in modo informale, sincero e naturale.",
+     "p": [
+      "«Not bad» e «can't complain» vogliono dire che va bene; suonano modesti, non negativi.",
+      "«So-so» vuol dire così così; in francese «comme ci comme ça», in spagnolo «más o menos».",
+      "In molti paesi anglofoni «how are you?» è quasi un saluto: basta una risposta breve e «and you?»."
+     ],
+     "q": "Come rispondi sinceramente a «come stai?» in una giornata normale?",
+     "c": "Oggi rispondi a «come stai?» con «can't complain, and you?» e nota la reazione."
+    },
+    "pt": {
+     "t": "Como estás, a sério?",
+     "g": "Responder a «como estás?» de forma informal, sincera e natural.",
+     "p": [
+      "«Not bad» e «can't complain» querem dizer que está tudo bem; soam modestos, não negativos.",
+      "«So-so» quer dizer assim-assim; em francês «comme ci comme ça», em espanhol «más o menos».",
+      "Em muitos países de língua inglesa «how are you?» é quase um cumprimento: basta uma resposta curta e «and you?»."
+     ],
+     "q": "Como respondes sinceramente a «como estás?» num dia normal?",
+     "c": "Responde hoje a «como estás?» com «can't complain, and you?» e repara na resposta."
+    },
+    "pt_BR": {
+     "t": "Tudo bem, de verdade?",
+     "g": "Responder a “tudo bem?” de um jeito informal, sincero e natural.",
+     "p": [
+      "“Not bad” e “can't complain” querem dizer que está tudo certo; soam modestos, não negativos.",
+      "“So-so” é mais ou menos; em francês “comme ci comme ça”, em espanhol “más o menos”.",
+      "Em muitos países de língua inglesa “how are you?” é quase um oi: basta uma resposta curta e “and you?”."
+     ],
+     "q": "Como você responde de verdade a “tudo bem?” num dia normal?",
+     "c": "Responda hoje a “tudo bem?” com “can't complain, and you?” e repare na resposta."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Fillers: like, you know",
+     "g": "Understand filler words and why people use them in casual speech.",
+     "p": [
+      "Fillers like “like”, “you know” and “I mean” give the speaker a second to think and keep the conversation flowing.",
+      "Other languages have them too: Brazilian “tipo”, French “genre”, Italian “cioè”, German “halt” or „sozusagen“.",
+      "A few fillers sound natural; too many can distract, so in interviews or talks keep them light."
+     ],
+     "q": "Which filler word do you catch yourself saying most often?",
+     "c": "Listen to a casual conversation or video today and count the fillers you hear in one minute."
+    },
+    "de": {
+     "t": "Füllwörter: like, you know",
+     "g": "Füllwörter verstehen und warum Menschen sie beim lockeren Reden benutzen.",
+     "p": [
+      "Füllwörter wie „like“, „you know“ und „I mean“ geben Zeit zum Nachdenken und halten das Gespräch im Fluss.",
+      "Andere Sprachen haben sie auch: brasilianisch „tipo“, französisch „genre“, italienisch „cioè“, deutsch „halt“ oder „sozusagen“.",
+      "Ein paar Füllwörter klingen natürlich; zu viele lenken ab, also im Vorstellungsgespräch sparsam sein."
+     ],
+     "q": "Welches Füllwort ertappst du dich am häufigsten zu sagen?",
+     "c": "Hör dir heute ein lockeres Gespräch oder Video an und zähle die Füllwörter in einer Minute."
+    },
+    "es": {
+     "t": "Muletillas: like, you know",
+     "g": "Entender las muletillas y por qué se usan al hablar de manera informal.",
+     "p": [
+      "Muletillas como «like», «you know» e «I mean» dan un segundo para pensar y mantienen la charla fluida.",
+      "Otros idiomas también las tienen: en Brasil «tipo», en francés «genre», en italiano «cioè», en español «o sea» o «en plan».",
+      "Unas pocas suenan naturales; demasiadas distraen, así que en entrevistas o charlas úsalas poco."
+     ],
+     "q": "¿Qué muletilla te pillas diciendo más a menudo?",
+     "c": "Escucha hoy una conversación o un vídeo informal y cuenta las muletillas que oyes en un minuto."
+    },
+    "fr": {
+     "t": "Mots de remplissage : like, you know",
+     "g": "Comprendre les mots de remplissage et pourquoi on les utilise à l'oral.",
+     "p": [
+      "« Like », « you know » et « I mean » laissent une seconde pour réfléchir et font couler la conversation.",
+      "D'autres langues en ont : le brésilien « tipo », le français « genre » ou « du coup », l'italien « cioè ».",
+      "Quelques-uns paraissent naturels ; trop finissent par distraire, alors en entretien on les limite."
+     ],
+     "q": "Quel mot de remplissage te surprends-tu à dire le plus souvent ?",
+     "c": "Écoute aujourd'hui une conversation ou une vidéo familière et compte les mots de remplissage en une minute."
+    },
+    "it": {
+     "t": "Intercalari: like, you know",
+     "g": "Capire gli intercalari e perché si usano nel parlato informale.",
+     "p": [
+      "Intercalari come «like», «you know» e «I mean» danno un attimo per pensare e tengono viva la conversazione.",
+      "Ce li hanno anche altre lingue: il brasiliano «tipo», il francese «genre», l'italiano «cioè» o «tipo».",
+      "Qualcuno suona naturale; troppi distraggono, quindi a un colloquio meglio usarli poco."
+     ],
+     "q": "Quale intercalare ti sorprendi a dire più spesso?",
+     "c": "Oggi ascolta una conversazione o un video informale e conta gli intercalari in un minuto."
+    },
+    "pt": {
+     "t": "Bengalas: like, you know",
+     "g": "Perceber as palavras de enchimento e porque se usam na fala informal.",
+     "p": [
+      "Palavras como «like», «you know» e «I mean» dão um segundo para pensar e mantêm a conversa a fluir.",
+      "Outras línguas também as têm: «tipo» em português, «genre» em francês, «cioè» em italiano, «pronto» em Portugal.",
+      "Algumas soam naturais; demasiadas distraem, por isso numa entrevista usa-as pouco."
+     ],
+     "q": "Que palavra de enchimento te apanhas a dizer mais vezes?",
+     "c": "Ouve hoje uma conversa ou vídeo informal e conta as palavras de enchimento num minuto."
+    },
+    "pt_BR": {
+     "t": "Muletas: like, you know",
+     "g": "Entender as muletas de fala e por que a gente usa no papo informal.",
+     "p": [
+      "Palavras como “like”, “you know” e “I mean” dão um segundinho para pensar e mantêm o papo fluindo.",
+      "Outras línguas também têm: o nosso “tipo” e “né”, o francês “genre”, o italiano “cioè”.",
+      "Algumas soam naturais; muitas distraem, então numa entrevista ou palestra use pouco."
+     ],
+     "q": "Qual muleta de fala você se pega falando mais?",
+     "c": "Escute hoje uma conversa ou vídeo informal e conte as muletas que ouvir em um minuto."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Breaking the ice",
+     "g": "Learn what “break the ice” means and easy ways people do it.",
+     "p": [
+      "“Break the ice” means ending the awkward silence when people meet and starting a friendly chat.",
+      "Classic icebreakers: a light comment on the place, the weather or the food, or a simple question like “how do you know the host?”.",
+      "An “icebreaker” is also a game or question used at the start of a class or meeting to relax everyone."
+     ],
+     "q": "What is your favourite way to break the ice with someone new?",
+     "c": "Break the ice today with someone you do not know well, using one simple, friendly question."
+    },
+    "de": {
+     "t": "Das Eis brechen",
+     "g": "Lernen, was „break the ice“ heißt und wie man es einfach macht.",
+     "p": [
+      "„Break the ice“, also „das Eis brechen“, heißt, die peinliche Stille beim Kennenlernen zu beenden und locker zu plaudern.",
+      "Klassische Eisbrecher: eine leichte Bemerkung über den Ort, das Wetter oder das Essen, oder eine Frage wie „Woher kennst du den Gastgeber?“.",
+      "Ein „Icebreaker“ ist auch ein Spiel oder eine Frage zum Start eines Kurses oder Meetings."
+     ],
+     "q": "Wie brichst du am liebsten das Eis mit jemand Neuem?",
+     "c": "Brich heute das Eis mit jemandem, den du kaum kennst, mit einer einfachen, freundlichen Frage."
+    },
+    "es": {
+     "t": "Romper el hielo",
+     "g": "Aprender qué significa «break the ice» y formas fáciles de hacerlo.",
+     "p": [
+      "«Break the ice», igual que «romper el hielo», es acabar con el silencio incómodo al conocerse y empezar a charlar.",
+      "Rompehielos clásicos: un comentario ligero sobre el lugar, el tiempo o la comida, o una pregunta como «¿de qué conoces al anfitrión?».",
+      "Un «rompehielos» también es un juego o pregunta para empezar una clase o reunión con buen ambiente."
+     ],
+     "q": "¿Cuál es tu forma favorita de romper el hielo con alguien nuevo?",
+     "c": "Rompe hoy el hielo con alguien que apenas conozcas, con una pregunta sencilla y amable."
+    },
+    "fr": {
+     "t": "Briser la glace",
+     "g": "Apprendre ce que veut dire « break the ice » et des façons simples de le faire.",
+     "p": [
+      "« Break the ice », comme « briser la glace », c'est rompre le silence gênant d'une rencontre et lancer la discussion.",
+      "Brise-glaces classiques : une remarque légère sur le lieu, la météo ou le repas, ou une question comme « tu connais l'hôte comment ? ».",
+      "Un « brise-glace » est aussi un jeu ou une question pour détendre tout le monde au début d'un cours ou d'une réunion."
+     ],
+     "q": "Quelle est ta façon préférée de briser la glace avec quelqu'un de nouveau ?",
+     "c": "Brise la glace aujourd'hui avec quelqu'un que tu connais peu, grâce à une question simple et sympa."
+    },
+    "it": {
+     "t": "Rompere il ghiaccio",
+     "g": "Imparare che cosa vuol dire «break the ice» e modi facili per farlo.",
+     "p": [
+      "«Break the ice», come «rompere il ghiaccio», significa superare il silenzio imbarazzante e iniziare a chiacchierare.",
+      "Rompighiaccio classici: un commento leggero sul posto, sul tempo o sul cibo, o una domanda come «come conosci il padrone di casa?».",
+      "Un «rompighiaccio» è anche un gioco o una domanda per sciogliere l'atmosfera all'inizio di una lezione o riunione."
+     ],
+     "q": "Qual è il tuo modo preferito per rompere il ghiaccio con qualcuno di nuovo?",
+     "c": "Oggi rompi il ghiaccio con qualcuno che conosci poco, con una domanda semplice e gentile."
+    },
+    "pt": {
+     "t": "Quebrar o gelo",
+     "g": "Aprender o que significa «break the ice» e maneiras fáceis de o fazer.",
+     "p": [
+      "«Break the ice», tal como «quebrar o gelo», é acabar com o silêncio constrangedor e começar a conversar.",
+      "Quebra-gelos clássicos: um comentário leve sobre o sítio, o tempo ou a comida, ou uma pergunta como «de onde conheces o anfitrião?».",
+      "Um «quebra-gelo» é também um jogo ou pergunta para descontrair no início de uma aula ou reunião."
+     ],
+     "q": "Qual é a tua maneira preferida de quebrar o gelo com alguém novo?",
+     "c": "Quebra hoje o gelo com alguém que mal conheces, com uma pergunta simples e simpática."
+    },
+    "pt_BR": {
+     "t": "Quebrar o gelo",
+     "g": "Aprender o que significa “break the ice” e jeitos fáceis de fazer isso.",
+     "p": [
+      "“Break the ice”, assim como “quebrar o gelo”, é acabar com aquele silêncio sem graça e começar a conversar.",
+      "Quebra-gelos clássicos: um comentário leve sobre o lugar, o tempo ou a comida, ou uma pergunta como “de onde você conhece o anfitrião?”.",
+      "Um “quebra-gelo” também é uma brincadeira ou pergunta para descontrair no começo de uma aula ou reunião."
+     ],
+     "q": "Qual é o seu jeito favorito de quebrar o gelo com alguém novo?",
+     "c": "Quebre o gelo hoje com alguém que você mal conhece, com uma pergunta simples e simpática."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Piece of cake",
+     "g": "Say that something is very easy, in English and beyond.",
+     "p": [
+      "“It's a piece of cake” means it is very easy; “easy peasy” is the playful version, often with kids.",
+      "In French “c'est du gâteau” uses cake too; in Spanish “es pan comido” uses bread, eaten bread.",
+      "In Brazil “é moleza” means it is a breeze; in Italy “è un gioco da ragazzi”, a kids' game."
+     ],
+     "q": "What task is a piece of cake for you but hard for most people?",
+     "c": "Tell someone today that a task was “a piece of cake”, or say it in another language from this lesson."
+    },
+    "de": {
+     "t": "Ein Kinderspiel",
+     "g": "Sagen, dass etwas ganz leicht ist, auf Englisch und anderswo.",
+     "p": [
+      "„It's a piece of cake“ heißt, es ist kinderleicht; „easy peasy“ ist die verspielte Version, oft mit Kindern.",
+      "Auf Französisch nimmt man auch Kuchen: „c'est du gâteau“; auf Spanisch Brot: „es pan comido“.",
+      "In Brasilien sagt man „é moleza“; in Italien „è un gioco da ragazzi“, wie unser „Kinderspiel“."
+     ],
+     "q": "Welche Aufgabe ist für dich ein Kinderspiel, für die meisten aber schwer?",
+     "c": "Sag heute jemandem, eine Aufgabe sei „a piece of cake“ gewesen, oder benutze eine andere Version aus der Lektion."
+    },
+    "es": {
+     "t": "Pan comido",
+     "g": "Decir que algo es facilísimo, en inglés y en otros idiomas.",
+     "p": [
+      "«It's a piece of cake» (un trozo de pastel) significa que es muy fácil; «easy peasy» es la versión juguetona.",
+      "En francés también hay pastel: «c'est du gâteau»; en español usamos pan: «es pan comido».",
+      "En Brasil dicen «é moleza»; en Italia «è un gioco da ragazzi», un juego de niños."
+     ],
+     "q": "¿Qué tarea es pan comido para ti pero difícil para casi todos?",
+     "c": "Dile hoy a alguien que una tarea fue «a piece of cake» o dilo en otro idioma de esta lección."
+    },
+    "fr": {
+     "t": "C'est du gâteau",
+     "g": "Dire que quelque chose est très facile, en anglais et ailleurs.",
+     "p": [
+      "« It's a piece of cake » (un morceau de gâteau) veut dire que c'est très facile ; « easy peasy » est la version enfantine.",
+      "En français, on a aussi le gâteau : « c'est du gâteau » ; en espagnol, le pain : « es pan comido ».",
+      "Au Brésil on dit « é moleza » ; en Italie « è un gioco da ragazzi », un jeu d'enfant."
+     ],
+     "q": "Quelle tâche est du gâteau pour toi mais difficile pour la plupart des gens ?",
+     "c": "Dis aujourd'hui à quelqu'un qu'une tâche était « a piece of cake », ou dis-le dans une autre langue."
+    },
+    "it": {
+     "t": "Un gioco da ragazzi",
+     "g": "Dire che qualcosa è facilissimo, in inglese e in altre lingue.",
+     "p": [
+      "«It's a piece of cake» (una fetta di torta) vuol dire che è facilissimo; «easy peasy» è la versione giocosa.",
+      "In francese c'è la torta: «c'est du gâteau»; in spagnolo il pane: «es pan comido».",
+      "In Brasile si dice «é moleza»; da noi «è un gioco da ragazzi» o «è una passeggiata»."
+     ],
+     "q": "Quale compito è un gioco da ragazzi per te ma difficile per molti?",
+     "c": "Oggi di' a qualcuno che un compito è stato «a piece of cake», o dillo in un'altra lingua della lezione."
+    },
+    "pt": {
+     "t": "É canja",
+     "g": "Dizer que algo é facílimo, em inglês e noutras línguas.",
+     "p": [
+      "«It's a piece of cake» (uma fatia de bolo) quer dizer que é muito fácil; «easy peasy» é a versão brincalhona.",
+      "Em francês também há bolo: «c'est du gâteau»; em espanhol pão: «es pan comido».",
+      "No Brasil diz-se «é moleza»; em Portugal «é canja»; em Itália «è un gioco da ragazzi»."
+     ],
+     "q": "Que tarefa é canja para ti mas difícil para a maioria?",
+     "c": "Diz hoje a alguém que uma tarefa foi «a piece of cake», ou di-lo noutra língua desta lição."
+    },
+    "pt_BR": {
+     "t": "É moleza",
+     "g": "Dizer que algo é muito fácil, em inglês e em outras línguas.",
+     "p": [
+      "“It's a piece of cake” (um pedaço de bolo) quer dizer que é muito fácil; “easy peasy” é a versão brincalhona.",
+      "Em francês também tem bolo: “c'est du gâteau”; em espanhol, pão: “es pan comido”.",
+      "Aqui a gente diz “é moleza” ou “é mamão com açúcar”; na Itália “è un gioco da ragazzi”."
+     ],
+     "q": "Que tarefa é moleza para você mas difícil para a maioria?",
+     "c": "Diga hoje a alguém que uma tarefa foi “a piece of cake”, ou diga em outra língua desta lição."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Weather idioms in English",
+     "g": "Learn three classic English weather idioms and when to use them.",
+     "p": [
+      "“Under the weather” means feeling a bit unwell: “I'm under the weather, so I'll stay in tonight.”",
+      "“It's raining cats and dogs” means it is raining very heavily; it is playful and a bit old-fashioned.",
+      "“A storm in a teacup” means a lot of fuss about something small (in the US, “a tempest in a teapot”)."
+     ],
+     "q": "Have you ever seen a storm in a teacup, a big fuss over something tiny?",
+     "c": "Look outside today and describe the weather to someone using one idiom from this lesson."
+    },
+    "de": {
+     "t": "Wetter-Redewendungen auf Englisch",
+     "g": "Drei klassische englische Wetter-Redewendungen lernen und wann man sie nutzt.",
+     "p": [
+      "„Under the weather“ heißt, sich etwas angeschlagen fühlen: „I'm under the weather, so I'll stay in tonight.“",
+      "„It's raining cats and dogs“ heißt, es schüttet; das klingt verspielt und etwas altmodisch.",
+      "„A storm in a teacup“ ist viel Lärm um nichts, wie unser „Sturm im Wasserglas“."
+     ],
+     "q": "Hast du schon mal einen Sturm im Wasserglas erlebt, viel Aufregung um eine Kleinigkeit?",
+     "c": "Schau heute aus dem Fenster und beschreib jemandem das Wetter mit einer Redewendung aus der Lektion."
+    },
+    "es": {
+     "t": "Expresiones del tiempo en inglés",
+     "g": "Aprender tres expresiones clásicas del tiempo en inglés y cuándo usarlas.",
+     "p": [
+      "«Under the weather» es estar algo pachucho: «I'm under the weather, so I'll stay in tonight».",
+      "«It's raining cats and dogs» (llueven gatos y perros) es llover a cántaros; suena juguetón y algo anticuado.",
+      "«A storm in a teacup» es mucho revuelo por poca cosa, como «una tormenta en un vaso de agua»."
+     ],
+     "q": "¿Has vivido alguna vez una tormenta en un vaso de agua, mucho jaleo por nada?",
+     "c": "Mira hoy por la ventana y describe el tiempo a alguien con una expresión de esta lección."
+    },
+    "fr": {
+     "t": "Expressions météo en anglais",
+     "g": "Apprendre trois expressions météo anglaises classiques et quand les utiliser.",
+     "p": [
+      "« Under the weather » veut dire être un peu patraque : « I'm under the weather, so I'll stay in tonight. »",
+      "« It's raining cats and dogs » (il pleut des chats et des chiens) veut dire il pleut des cordes ; c'est joueur et un peu vieillot.",
+      "« A storm in a teacup » est beaucoup de bruit pour rien, comme « une tempête dans un verre d'eau »."
+     ],
+     "q": "As-tu déjà vu une tempête dans un verre d'eau, une grosse histoire pour un détail ?",
+     "c": "Regarde dehors aujourd'hui et décris la météo à quelqu'un avec une expression de la leçon."
+    },
+    "it": {
+     "t": "Modi di dire sul tempo in inglese",
+     "g": "Imparare tre classici modi di dire inglesi sul tempo e quando usarli.",
+     "p": [
+      "«Under the weather» vuol dire sentirsi un po' giù: «I'm under the weather, so I'll stay in tonight».",
+      "«It's raining cats and dogs» (piovono cani e gatti) vuol dire piovere a catinelle; è giocoso e un po' antiquato.",
+      "«A storm in a teacup» è molto rumore per nulla, come «una tempesta in un bicchier d'acqua»."
+     ],
+     "q": "Hai mai visto una tempesta in un bicchier d'acqua, tanto chiasso per una sciocchezza?",
+     "c": "Oggi guarda fuori e descrivi il tempo a qualcuno con un modo di dire di questa lezione."
+    },
+    "pt": {
+     "t": "Expressões do tempo em inglês",
+     "g": "Aprender três expressões clássicas do tempo em inglês e quando as usar.",
+     "p": [
+      "«Under the weather» é estar um bocado adoentado: «I'm under the weather, so I'll stay in tonight».",
+      "«It's raining cats and dogs» (chovem gatos e cães) é chover a potes; soa brincalhão e um pouco antiquado.",
+      "«A storm in a teacup» é muito barulho por nada, como «uma tempestade num copo de água»."
+     ],
+     "q": "Já viste alguma tempestade num copo de água, muito alarido por uma coisa pequena?",
+     "c": "Olha hoje lá para fora e descreve o tempo a alguém com uma expressão desta lição."
+    },
+    "pt_BR": {
+     "t": "Expressões do tempo em inglês",
+     "g": "Aprender três expressões clássicas do tempo em inglês e quando usar.",
+     "p": [
+      "“Under the weather” é estar meio indisposto: “I'm under the weather, so I'll stay in tonight”.",
+      "“It's raining cats and dogs” (chovem gatos e cachorros) é chover canivete; soa brincalhão e meio antigo.",
+      "“A storm in a teacup” é muito barulho por nada, como “tempestade em copo d'água”."
+     ],
+     "q": "Você já viu uma tempestade em copo d'água, um drama enorme por algo pequeno?",
+     "c": "Olhe lá fora hoje e descreva o tempo para alguém com uma expressão desta lição."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Weather idioms abroad",
+     "g": "Compare how other languages describe heavy rain with vivid pictures.",
+     "p": [
+      "French: “il pleut des cordes”, it rains ropes. Spanish: “llueve a cántaros”, it rains by the jugful.",
+      "Portuguese: “chove a potes”, it rains by the pots; Brazilians also say “chove canivete”, it rains penknives.",
+      "German: “es gießt in Strömen”, it pours in streams; Italian: “piove a catinelle”, it rains by the basin."
+     ],
+     "q": "Which rain idiom paints the funniest picture for you?",
+     "c": "Next time it rains, say it in one of today's languages, even if only to yourself."
+    },
+    "de": {
+     "t": "Wetter-Redewendungen anderswo",
+     "g": "Vergleichen, wie andere Sprachen Starkregen mit lebendigen Bildern beschreiben.",
+     "p": [
+      "Französisch: „il pleut des cordes“, es regnet Seile. Spanisch: „llueve a cántaros“, es regnet krugweise.",
+      "Portugiesisch: „chove a potes“, es regnet topfweise; in Brasilien auch „chove canivete“, es regnet Taschenmesser.",
+      "Deutsch: „es gießt in Strömen“ oder „es schüttet wie aus Eimern“; Italienisch: „piove a catinelle“, schüsselweise."
+     ],
+     "q": "Welche Regen-Redewendung malt für dich das lustigste Bild?",
+     "c": "Wenn es das nächste Mal regnet, sag es in einer der heutigen Sprachen, und sei es nur zu dir selbst."
+    },
+    "es": {
+     "t": "Expresiones del tiempo en otros idiomas",
+     "g": "Comparar cómo otros idiomas describen la lluvia fuerte con imágenes vivas.",
+     "p": [
+      "Francés: «il pleut des cordes», llueven cuerdas. Español: «llueve a cántaros».",
+      "Portugués: «chove a potes», llueve a ollas; en Brasil también «chove canivete», llueven navajas.",
+      "Alemán: «es gießt in Strömen», llueve a chorros; italiano: «piove a catinelle», llueve a palanganas."
+     ],
+     "q": "¿Qué expresión de lluvia te pinta la imagen más divertida?",
+     "c": "La próxima vez que llueva, dilo en uno de los idiomas de hoy, aunque sea para ti."
+    },
+    "fr": {
+     "t": "Expressions météo ailleurs",
+     "g": "Comparer comment d'autres langues décrivent une grosse pluie avec des images vivantes.",
+     "p": [
+      "Français : « il pleut des cordes ». Espagnol : « llueve a cántaros », il pleut des cruches.",
+      "Portugais : « chove a potes », il pleut des pots ; au Brésil aussi « chove canivete », il pleut des canifs.",
+      "Allemand : « es gießt in Strömen », ça verse à flots ; italien : « piove a catinelle », il pleut des bassines."
+     ],
+     "q": "Quelle expression de pluie te fait l'image la plus drôle ?",
+     "c": "La prochaine fois qu'il pleut, dis-le dans une des langues du jour, même juste pour toi."
+    },
+    "it": {
+     "t": "Modi di dire sul tempo all'estero",
+     "g": "Confrontare come altre lingue descrivono la pioggia forte con immagini vivaci.",
+     "p": [
+      "Francese: «il pleut des cordes», piovono corde. Spagnolo: «llueve a cántaros», piove a brocche.",
+      "Portoghese: «chove a potes», piove a vasi; in Brasile anche «chove canivete», piovono temperini.",
+      "Tedesco: «es gießt in Strömen», viene giù a fiumi; italiano: «piove a catinelle»."
+     ],
+     "q": "Quale modo di dire sulla pioggia ti fa venire in mente l'immagine più buffa?",
+     "c": "La prossima volta che piove, dillo in una delle lingue di oggi, anche solo a te stesso."
+    },
+    "pt": {
+     "t": "Expressões do tempo lá fora",
+     "g": "Comparar como outras línguas descrevem chuva forte com imagens vivas.",
+     "p": [
+      "Francês: «il pleut des cordes», chovem cordas. Espanhol: «llueve a cántaros», chove aos cântaros.",
+      "Português: «chove a potes»; no Brasil diz-se também «chove canivete».",
+      "Alemão: «es gießt in Strömen», chove a jorros; italiano: «piove a catinelle», chove às bacias."
+     ],
+     "q": "Que expressão de chuva te pinta a imagem mais engraçada?",
+     "c": "Da próxima vez que chover, di-lo numa das línguas de hoje, nem que seja só para ti."
+    },
+    "pt_BR": {
+     "t": "Expressões do tempo lá fora",
+     "g": "Comparar como outras línguas descrevem chuva forte com imagens divertidas.",
+     "p": [
+      "Francês: “il pleut des cordes”, chovem cordas. Espanhol: “llueve a cántaros”, chove aos cântaros.",
+      "Português: aqui “chove canivete”; em Portugal se diz “chove a potes”.",
+      "Alemão: “es gießt in Strömen”, chove aos jorros; italiano: “piove a catinelle”, chove de bacia."
+     ],
+     "q": "Qual expressão de chuva pinta a imagem mais engraçada para você?",
+     "c": "Da próxima vez que chover, diga numa das línguas de hoje, nem que seja só para você."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Food idioms in English",
+     "g": "Learn four tasty English food idioms and use them in context.",
+     "p": [
+      "“Spill the beans” means reveal a secret: “Come on, spill the beans, who's the surprise guest?”",
+      "“The big cheese” is the most important person in a group or company; it is jokey, not rude.",
+      "“Bread and butter” is your main source of income or basic work; “in a nutshell” means in a few words."
+     ],
+     "q": "What is your bread and butter, the thing you do most days?",
+     "c": "Explain your day to someone “in a nutshell” using one sentence only."
+    },
+    "de": {
+     "t": "Essens-Redewendungen auf Englisch",
+     "g": "Vier leckere englische Essens-Redewendungen lernen und im Kontext nutzen.",
+     "p": [
+      "„Spill the beans“ heißt, ein Geheimnis ausplaudern: „Come on, spill the beans, who's the surprise guest?“",
+      "„The big cheese“ ist die wichtigste Person in einer Gruppe oder Firma, scherzhaft gemeint, wie „das hohe Tier“.",
+      "„Bread and butter“ ist das Brot-und-Butter-Geschäft, die Haupteinnahme; „in a nutshell“ heißt kurz gesagt."
+     ],
+     "q": "Was ist dein Brot-und-Butter-Geschäft, das, was du an den meisten Tagen tust?",
+     "c": "Erklär heute jemandem deinen Tag „in a nutshell“, in nur einem Satz."
+    },
+    "es": {
+     "t": "Expresiones de comida en inglés",
+     "g": "Aprender cuatro sabrosas expresiones de comida en inglés y usarlas en contexto.",
+     "p": [
+      "«Spill the beans» (derramar las alubias) es soltar un secreto: «Come on, spill the beans, who's the surprise guest?».",
+      "«The big cheese» (el gran queso) es la persona más importante de un grupo o empresa; es en broma, como «el pez gordo».",
+      "«Bread and butter» es tu sustento o trabajo básico; «in a nutshell» (en una cáscara de nuez) es en pocas palabras."
+     ],
+     "q": "¿Cuál es tu «bread and butter», lo que haces casi todos los días?",
+     "c": "Explica hoy tu día a alguien «in a nutshell», en una sola frase."
+    },
+    "fr": {
+     "t": "Expressions culinaires en anglais",
+     "g": "Apprendre quatre savoureuses expressions culinaires anglaises et les utiliser.",
+     "p": [
+      "« Spill the beans » (renverser les haricots) veut dire vendre la mèche : « Come on, spill the beans, who's the surprise guest? »",
+      "« The big cheese » (le gros fromage) est la personne la plus importante d'un groupe, pour rire, comme « le gros bonnet ».",
+      "« Bread and butter » est le gagne-pain ; « in a nutshell » (dans une coquille de noix) veut dire en résumé."
+     ],
+     "q": "Quel est ton « bread and butter », ce que tu fais presque tous les jours ?",
+     "c": "Raconte aujourd'hui ta journée à quelqu'un « in a nutshell », en une seule phrase."
+    },
+    "it": {
+     "t": "Modi di dire sul cibo in inglese",
+     "g": "Imparare quattro gustosi modi di dire inglesi sul cibo e usarli nel contesto.",
+     "p": [
+      "«Spill the beans» (rovesciare i fagioli) vuol dire spifferare un segreto: «Come on, spill the beans, who's the surprise guest?».",
+      "«The big cheese» (il grande formaggio) è la persona più importante del gruppo, in tono scherzoso, come «il pezzo grosso».",
+      "«Bread and butter» è il pane quotidiano, il lavoro principale; «in a nutshell» (in un guscio di noce) vuol dire in breve."
+     ],
+     "q": "Qual è il tuo «bread and butter», ciò che fai quasi ogni giorno?",
+     "c": "Oggi racconta la tua giornata a qualcuno «in a nutshell», in una sola frase."
+    },
+    "pt": {
+     "t": "Expressões de comida em inglês",
+     "g": "Aprender quatro saborosas expressões de comida em inglês e usá-las no contexto.",
+     "p": [
+      "«Spill the beans» (entornar o feijão) é dar com a língua nos dentes: «Come on, spill the beans, who's the surprise guest?».",
+      "«The big cheese» (o grande queijo) é a pessoa mais importante de um grupo, em tom de brincadeira, como «o manda-chuva».",
+      "«Bread and butter» é o ganha-pão; «in a nutshell» (numa casca de noz) quer dizer em poucas palavras."
+     ],
+     "q": "Qual é o teu «bread and butter», aquilo que fazes quase todos os dias?",
+     "c": "Conta hoje o teu dia a alguém «in a nutshell», numa só frase."
+    },
+    "pt_BR": {
+     "t": "Expressões de comida em inglês",
+     "g": "Aprender quatro expressões gostosas de comida em inglês e usar no contexto.",
+     "p": [
+      "“Spill the beans” (derramar o feijão) é abrir o jogo: “Come on, spill the beans, who's the surprise guest?”.",
+      "“The big cheese” (o queijão) é a pessoa mais importante do grupo, em tom de brincadeira, como “o manda-chuva”.",
+      "“Bread and butter” é o ganha-pão; “in a nutshell” (numa casca de noz) quer dizer resumindo."
+     ],
+     "q": "Qual é o seu “bread and butter”, o que você faz quase todo dia?",
+     "c": "Conte hoje seu dia para alguém “in a nutshell”, numa frase só."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Food idioms in Spanish",
+     "g": "Learn three Spanish food idioms and what they really mean.",
+     "p": [
+      "“Ser pan comido” means to be very easy, just like “a piece of cake”, which you met a few days ago.",
+      "“Importar un pimiento” means not to care at all: “Me importa un pimiento” = I couldn't care less.",
+      "“Estar como una sopa” means to be soaked to the skin, like soup, usually after getting caught in the rain."
+     ],
+     "q": "Which of these Spanish idioms would you use first, and in what situation?",
+     "c": "Say one of today's Spanish idioms out loud three times so it sticks, then use it in a message."
+    },
+    "de": {
+     "t": "Essens-Redewendungen auf Spanisch",
+     "g": "Drei spanische Essens-Redewendungen lernen und was sie wirklich bedeuten.",
+     "p": [
+      "„Ser pan comido“ heißt, ganz leicht sein, genau wie „a piece of cake“, das du neulich gelernt hast.",
+      "„Importar un pimiento“ heißt, völlig egal sein: „Me importa un pimiento“ = das ist mir piepegal.",
+      "„Estar como una sopa“ heißt, klitschnass sein wie eine Suppe, meist nach einem Regenguss."
+     ],
+     "q": "Welche dieser spanischen Redewendungen würdest du zuerst benutzen, und wann?",
+     "c": "Sag eine der heutigen Redewendungen dreimal laut, damit sie hängen bleibt, und nutze sie dann in einer Nachricht."
+    },
+    "es": {
+     "t": "Expresiones de comida en español",
+     "g": "Aprender tres expresiones españolas de comida y lo que significan de verdad.",
+     "p": [
+      "«Ser pan comido» es ser facilísimo, igual que «a piece of cake», que viste hace unos días.",
+      "«Importar un pimiento» es no importar nada: «me importa un pimiento» = me da completamente igual.",
+      "«Estar como una sopa» es estar empapado hasta los huesos, normalmente tras pillar un chaparrón."
+     ],
+     "q": "¿Cuál de estas expresiones usarías primero, y en qué situación?",
+     "c": "Di una de las expresiones de hoy en voz alta tres veces para que se quede y luego úsala en un mensaje."
+    },
+    "fr": {
+     "t": "Expressions culinaires en espagnol",
+     "g": "Apprendre trois expressions culinaires espagnoles et leur vrai sens.",
+     "p": [
+      "« Ser pan comido » (être du pain mangé) veut dire être très facile, comme « c'est du gâteau » vu il y a quelques jours.",
+      "« Importar un pimiento » (importer un poivron) veut dire s'en moquer : « me importa un pimiento » = je m'en fiche.",
+      "« Estar como una sopa » (être comme une soupe) veut dire être trempé jusqu'aux os, souvent après une averse."
+     ],
+     "q": "Laquelle de ces expressions espagnoles utiliserais-tu en premier, et quand ?",
+     "c": "Dis une expression du jour trois fois à voix haute pour la retenir, puis glisse-la dans un message."
+    },
+    "it": {
+     "t": "Modi di dire sul cibo in spagnolo",
+     "g": "Imparare tre modi di dire spagnoli sul cibo e il loro vero significato.",
+     "p": [
+      "«Ser pan comido» (essere pane mangiato) vuol dire essere facilissimo, come «a piece of cake» visto qualche giorno fa.",
+      "«Importar un pimiento» (importare un peperone) vuol dire non importare affatto: «me importa un pimiento» = non me ne importa niente.",
+      "«Estar como una sopa» (essere come una zuppa) vuol dire essere bagnato fradicio, di solito dopo un acquazzone."
+     ],
+     "q": "Quale di questi modi di dire spagnoli useresti per primo, e in che situazione?",
+     "c": "Ripeti ad alta voce tre volte un modo di dire di oggi per ricordarlo, poi usalo in un messaggio."
+    },
+    "pt": {
+     "t": "Expressões de comida em espanhol",
+     "g": "Aprender três expressões espanholas de comida e o que querem dizer de verdade.",
+     "p": [
+      "«Ser pan comido» (ser pão comido) é ser facílimo, tal como «a piece of cake», que viste há uns dias.",
+      "«Importar un pimiento» (importar um pimento) é não ligar nenhuma: «me importa un pimiento» = estou-me nas tintas.",
+      "«Estar como una sopa» (estar como uma sopa) é estar encharcado, como um pinto, normalmente depois de uma chuvada."
+     ],
+     "q": "Qual destas expressões espanholas usarias primeiro, e em que situação?",
+     "c": "Diz uma das expressões de hoje em voz alta três vezes para a fixar e depois usa-a numa mensagem."
+    },
+    "pt_BR": {
+     "t": "Expressões de comida em espanhol",
+     "g": "Aprender três expressões espanholas de comida e o que elas querem dizer de verdade.",
+     "p": [
+      "“Ser pan comido” (ser pão comido) é ser moleza, igualzinho a “a piece of cake”, que você viu há uns dias.",
+      "“Importar un pimiento” (importar um pimentão) é não ligar nem um pouco: “me importa un pimiento” = tô nem aí.",
+      "“Estar como una sopa” (estar como uma sopa) é estar encharcado, como um pinto molhado, geralmente depois de uma chuva."
+     ],
+     "q": "Qual dessas expressões espanholas você usaria primeiro, e em que situação?",
+     "c": "Fale uma das expressões de hoje em voz alta três vezes para fixar e depois use numa mensagem."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Food idioms in French",
+     "g": "Learn three French food idioms and how the French use them.",
+     "p": [
+      "“Avoir la pêche” (to have the peach) means to be full of energy and in a great mood.",
+      "“Raconter des salades” (to tell salads) means to tell made-up stories or fibs: “Arrête de me raconter des salades!”",
+      "“En faire tout un fromage” (to make a whole cheese of it) means to make a big fuss about something small."
+     ],
+     "q": "Do you know someone who always has “la pêche”, full of energy?",
+     "c": "Tell a friend today which of these three French idioms describes your mood or your week."
+    },
+    "de": {
+     "t": "Essens-Redewendungen auf Französisch",
+     "g": "Drei französische Essens-Redewendungen lernen und wie Franzosen sie benutzen.",
+     "p": [
+      "„Avoir la pêche“ (den Pfirsich haben) heißt, voller Energie und bester Laune sein.",
+      "„Raconter des salades“ (Salate erzählen) heißt, Märchen auftischen: „Arrête de me raconter des salades !“",
+      "„En faire tout un fromage“ (einen ganzen Käse daraus machen) heißt, aus einer Mücke einen Elefanten machen."
+     ],
+     "q": "Kennst du jemanden, der immer „la pêche“ hat, also voller Energie ist?",
+     "c": "Erzähl heute einem Freund, welche der drei französischen Redewendungen zu deiner Laune oder Woche passt."
+    },
+    "es": {
+     "t": "Expresiones de comida en francés",
+     "g": "Aprender tres expresiones francesas de comida y cómo las usan los franceses.",
+     "p": [
+      "«Avoir la pêche» (tener el melocotón) significa estar lleno de energía y de buen humor.",
+      "«Raconter des salades» (contar ensaladas) es contar cuentos o trolas: «Arrête de me raconter des salades !».",
+      "«En faire tout un fromage» (hacer todo un queso) es montar un drama por algo pequeño."
+     ],
+     "q": "¿Conoces a alguien que siempre tiene «la pêche», lleno de energía?",
+     "c": "Cuéntale hoy a un amigo cuál de estas tres expresiones francesas describe tu ánimo o tu semana."
+    },
+    "fr": {
+     "t": "Expressions culinaires en français",
+     "g": "Apprendre trois expressions culinaires françaises et comment on les emploie.",
+     "p": [
+      "« Avoir la pêche » veut dire être plein d'énergie et de bonne humeur.",
+      "« Raconter des salades » veut dire raconter des histoires inventées : « Arrête de me raconter des salades ! »",
+      "« En faire tout un fromage » veut dire faire toute une histoire d'un petit rien."
+     ],
+     "q": "Connais-tu quelqu'un qui a toujours la pêche ?",
+     "c": "Dis aujourd'hui à un ami laquelle de ces trois expressions décrit ton humeur ou ta semaine."
+    },
+    "it": {
+     "t": "Modi di dire sul cibo in francese",
+     "g": "Imparare tre modi di dire francesi sul cibo e come li usano i francesi.",
+     "p": [
+      "«Avoir la pêche» (avere la pesca) vuol dire essere pieni di energia e di buon umore.",
+      "«Raconter des salades» (raccontare insalate) vuol dire raccontare frottole: «Arrête de me raconter des salades !».",
+      "«En faire tout un fromage» (farne tutto un formaggio) vuol dire fare un dramma per una sciocchezza."
+     ],
+     "q": "Conosci qualcuno che ha sempre «la pêche», pieno di energia?",
+     "c": "Oggi racconta a un amico quale di questi tre modi di dire francesi descrive il tuo umore o la tua settimana."
+    },
+    "pt": {
+     "t": "Expressões de comida em francês",
+     "g": "Aprender três expressões francesas de comida e como os franceses as usam.",
+     "p": [
+      "«Avoir la pêche» (ter o pêssego) quer dizer estar cheio de energia e bem-disposto.",
+      "«Raconter des salades» (contar saladas) é contar histórias inventadas: «Arrête de me raconter des salades !».",
+      "«En faire tout un fromage» (fazer disso um queijo inteiro) é fazer um drama por uma coisa pequena."
+     ],
+     "q": "Conheces alguém que tem sempre «la pêche», cheio de energia?",
+     "c": "Diz hoje a um amigo qual destas três expressões francesas descreve o teu humor ou a tua semana."
+    },
+    "pt_BR": {
+     "t": "Expressões de comida em francês",
+     "g": "Aprender três expressões francesas de comida e como os franceses usam.",
+     "p": [
+      "“Avoir la pêche” (ter o pêssego) quer dizer estar cheio de energia e de bom humor.",
+      "“Raconter des salades” (contar saladas) é contar lorota: “Arrête de me raconter des salades !”.",
+      "“En faire tout un fromage” (fazer disso um queijo inteiro) é fazer tempestade em copo d'água."
+     ],
+     "q": "Você conhece alguém que vive com “la pêche”, cheio de energia?",
+     "c": "Conte hoje a um amigo qual dessas três expressões francesas descreve seu humor ou sua semana."
+    }
+   }
+  }
+ ]
+}

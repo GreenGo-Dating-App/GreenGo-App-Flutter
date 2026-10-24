@@ -1,0 +1,1305 @@
+{
+"topic": "budgeting_basics",
+"questions": [
+{
+"id": "budgeting_basics-001",
+"lv": "any",
+"i18n": {
+"en": "What is one thing you would love to save up for this year?",
+"de": "Wofür würdest du in diesem Jahr am liebsten sparen?",
+"es": "¿Para qué te gustaría ahorrar este año?",
+"fr": "Pour quoi aimerais-tu le plus épargner cette année ?",
+"it": "Per cosa ti piacerebbe risparmiare quest'anno?",
+"pt": "Para que gostavas de poupar este ano?",
+"pt_BR": "Pra que você gostaria de juntar dinheiro este ano?"
+}
+},
+{
+"id": "budgeting_basics-002",
+"lv": "any",
+"i18n": {
+"en": "How did your family talk about money when you were growing up?",
+"de": "Wie wurde in deiner Familie über Geld gesprochen, als du klein warst?",
+"es": "¿Cómo se hablaba de dinero en tu familia cuando eras pequeño?",
+"fr": "Comment parlait-on d'argent dans ta famille quand tu étais petit ?",
+"it": "Come si parlava di soldi nella tua famiglia quando eri piccolo?",
+"pt": "Como se falava de dinheiro na tua família quando eras pequeno?",
+"pt_BR": "Como sua família falava sobre dinheiro quando você era criança?"
+}
+},
+{
+"id": "budgeting_basics-003",
+"lv": "any",
+"i18n": {
+"en": "Would you call yourself more of a saver or a spender? Why?",
+"de": "Bist du eher ein Spar-Typ oder ein Ausgabe-Typ? Warum?",
+"es": "¿Te consideras más ahorrador o más gastador? ¿Por qué?",
+"fr": "Tu te dirais plutôt économe ou dépensier ? Pourquoi ?",
+"it": "Ti definiresti più risparmiatore o spendaccione? Perché?",
+"pt": "Consideras-te mais poupado ou mais gastador? Porquê?",
+"pt_BR": "Você se considera mais econômico ou mais gastador? Por quê?"
+}
+},
+{
+"id": "budgeting_basics-004",
+"lv": "any",
+"i18n": {
+"en": "What small purchase always makes your day a little better?",
+"de": "Welcher kleine Kauf macht deinen Tag immer ein bisschen schöner?",
+"es": "¿Qué pequeña compra siempre te alegra un poco el día?",
+"fr": "Quel petit achat rend toujours ta journée un peu plus belle ?",
+"it": "Quale piccolo acquisto ti migliora sempre un po' la giornata?",
+"pt": "Que pequena compra torna sempre o teu dia um pouco melhor?",
+"pt_BR": "Que pequena compra sempre deixa seu dia um pouco melhor?"
+}
+},
+{
+"id": "budgeting_basics-005",
+"lv": "any",
+"i18n": {
+"en": "What is the best money tip anyone has ever given you?",
+"de": "Was ist der beste Geldtipp, den du je bekommen hast?",
+"es": "¿Cuál es el mejor consejo sobre dinero que te han dado?",
+"fr": "Quel est le meilleur conseil d'argent qu'on t'ait jamais donné ?",
+"it": "Qual è il miglior consiglio sui soldi che tu abbia mai ricevuto?",
+"pt": "Qual foi a melhor dica sobre dinheiro que alguém já te deu?",
+"pt_BR": "Qual foi a melhor dica sobre dinheiro que alguém já te deu?"
+}
+},
+{
+"id": "budgeting_basics-006",
+"lv": "any",
+"i18n": {
+"en": "Do you prefer paying with cash, card or your phone?",
+"de": "Bezahlst du lieber bar, mit Karte oder mit dem Handy?",
+"es": "¿Prefieres pagar en efectivo, con tarjeta o con el móvil?",
+"fr": "Tu préfères payer en espèces, par carte ou avec ton téléphone ?",
+"it": "Preferisci pagare in contanti, con la carta o con il telefono?",
+"pt": "Preferes pagar em dinheiro, com cartão ou com o telemóvel?",
+"pt_BR": "Você prefere pagar em dinheiro, no cartão ou pelo celular?"
+}
+},
+{
+"id": "budgeting_basics-007",
+"lv": "any",
+"i18n": {
+"en": "Which expense surprises you the most when you look back at a month?",
+"de": "Welche Ausgabe überrascht dich am meisten, wenn du auf einen Monat zurückblickst?",
+"es": "¿Qué gasto te sorprende más cuando repasas un mes?",
+"fr": "Quelle dépense te surprend le plus quand tu fais le bilan d'un mois ?",
+"it": "Quale spesa ti sorprende di più quando ripensi a un mese?",
+"pt": "Que despesa te surpreende mais quando olhas para trás num mês?",
+"pt_BR": "Qual gasto mais te surpreende quando você olha para o mês que passou?"
+}
+},
+{
+"id": "budgeting_basics-008",
+"lv": "any",
+"i18n": {
+"en": "What does feeling good about money mean to you?",
+"de": "Was bedeutet es für dich, sich mit Geld wohlzufühlen?",
+"es": "¿Qué significa para ti sentirte bien con el dinero?",
+"fr": "Que signifie pour toi être serein avec l'argent ?",
+"it": "Cosa significa per te sentirsi bene con i soldi?",
+"pt": "O que significa para ti sentires-te bem com o dinheiro?",
+"pt_BR": "O que significa pra você se sentir bem com dinheiro?"
+}
+},
+{
+"id": "budgeting_basics-009",
+"lv": "any",
+"i18n": {
+"en": "Which free activity do you enjoy the most?",
+"de": "Welche kostenlose Aktivität macht dir am meisten Spaß?",
+"es": "¿Qué actividad gratuita disfrutas más?",
+"fr": "Quelle activité gratuite préfères-tu ?",
+"it": "Quale attività gratuita ti piace di più?",
+"pt": "Qual é a atividade gratuita de que mais gostas?",
+"pt_BR": "Qual atividade gratuita você mais curte?"
+}
+},
+{
+"id": "budgeting_basics-010",
+"lv": "any",
+"i18n": {
+"en": "What is your favourite way to save money on food?",
+"de": "Wie sparst du am liebsten beim Essen?",
+"es": "¿Cuál es tu forma favorita de ahorrar en comida?",
+"fr": "Quelle est ta façon préférée d'économiser sur la nourriture ?",
+"it": "Qual è il tuo modo preferito per risparmiare sul cibo?",
+"pt": "Qual é a tua forma preferida de poupar na comida?",
+"pt_BR": "Qual é o seu jeito favorito de economizar com comida?"
+}
+},
+{
+"id": "budgeting_basics-011",
+"lv": "any",
+"i18n": {
+"en": "Have you ever bought something on impulse and loved it anyway?",
+"de": "Hast du schon einmal spontan etwas gekauft und es trotzdem geliebt?",
+"es": "¿Alguna vez compraste algo por impulso y aun así te encantó?",
+"fr": "As-tu déjà acheté quelque chose sur un coup de tête et adoré malgré tout ?",
+"it": "Ti è mai capitato di comprare qualcosa d'impulso e di amarlo comunque?",
+"pt": "Já compraste alguma coisa por impulso e adoraste na mesma?",
+"pt_BR": "Você já comprou algo por impulso e amou mesmo assim?"
+}
+},
+{
+"id": "budgeting_basics-012",
+"lv": "any",
+"i18n": {
+"en": "What is something you happily spend more money on?",
+"de": "Wofür gibst du gern etwas mehr Geld aus?",
+"es": "¿En qué cosas gastas más dinero con gusto?",
+"fr": "Pour quoi dépenses-tu volontiers un peu plus ?",
+"it": "Per cosa spendi volentieri qualche soldo in più?",
+"pt": "Em que é que gastas mais dinheiro com gosto?",
+"pt_BR": "Em que você gasta mais dinheiro com prazer?"
+}
+},
+{
+"id": "budgeting_basics-013",
+"lv": "any",
+"i18n": {
+"en": "And what is something you never like to spend money on?",
+"de": "Und wofür gibst du überhaupt nicht gern Geld aus?",
+"es": "¿Y en qué no te gusta nada gastar dinero?",
+"fr": "Et pour quoi n'aimes-tu pas du tout dépenser ?",
+"it": "E per cosa invece non ti piace proprio spendere?",
+"pt": "E em que é que não gostas nada de gastar dinheiro?",
+"pt_BR": "E em que você não gosta nada de gastar dinheiro?"
+}
+},
+{
+"id": "budgeting_basics-014",
+"lv": "any",
+"i18n": {
+"en": "How do you usually celebrate a small win without spending much?",
+"de": "Wie feierst du kleine Erfolge, ohne viel Geld auszugeben?",
+"es": "¿Cómo celebras un pequeño logro sin gastar mucho?",
+"fr": "Comment fêtes-tu une petite victoire sans trop dépenser ?",
+"it": "Come festeggi un piccolo traguardo senza spendere molto?",
+"pt": "Como celebras uma pequena conquista sem gastar muito?",
+"pt_BR": "Como você comemora uma pequena conquista sem gastar muito?"
+}
+},
+{
+"id": "budgeting_basics-015",
+"lv": "any",
+"i18n": {
+"en": "Which money habit from your parents or grandparents would you like to keep?",
+"de": "Welche Geldgewohnheit deiner Eltern oder Großeltern möchtest du beibehalten?",
+"es": "¿Qué hábito con el dinero de tus padres o abuelos te gustaría conservar?",
+"fr": "Quelle habitude d'argent de tes parents ou grands-parents aimerais-tu garder ?",
+"it": "Quale abitudine sui soldi dei tuoi genitori o nonni vorresti mantenere?",
+"pt": "Que hábito com dinheiro dos teus pais ou avós gostavas de manter?",
+"pt_BR": "Qual hábito com dinheiro dos seus pais ou avós você gostaria de manter?"
+}
+},
+{
+"id": "budgeting_basics-016",
+"lv": "any",
+"i18n": {
+"en": "Do you enjoy hunting for bargains, or does it stress you out?",
+"de": "Macht dir die Schnäppchenjagd Spaß oder stresst sie dich?",
+"es": "¿Te divierte buscar gangas o te estresa?",
+"fr": "Tu aimes chasser les bonnes affaires ou ça te stresse ?",
+"it": "Ti diverte cercare le offerte o ti stressa?",
+"pt": "Gostas de andar à procura de pechinchas ou isso stressa-te?",
+"pt_BR": "Você curte caçar promoções ou isso te estressa?"
+}
+},
+{
+"id": "budgeting_basics-017",
+"lv": "any",
+"i18n": {
+"en": "What do you think is the hardest part of sticking to a budget?",
+"de": "Was ist deiner Meinung nach das Schwierigste daran, ein Budget einzuhalten?",
+"es": "¿Qué crees que es lo más difícil de cumplir un presupuesto?",
+"fr": "Selon toi, qu'est-ce qui est le plus dur pour tenir un budget ?",
+"it": "Secondo te, qual è la parte più difficile nel rispettare un budget?",
+"pt": "Na tua opinião, qual é a parte mais difícil de cumprir um orçamento?",
+"pt_BR": "Pra você, qual é a parte mais difícil de seguir um orçamento?"
+}
+},
+{
+"id": "budgeting_basics-018",
+"lv": "any",
+"i18n": {
+"en": "Have you ever sold something you no longer needed? How did it go?",
+"de": "Hast du schon einmal etwas verkauft, das du nicht mehr brauchtest? Wie lief es?",
+"es": "¿Alguna vez vendiste algo que ya no necesitabas? ¿Cómo te fue?",
+"fr": "As-tu déjà vendu quelque chose dont tu n'avais plus besoin ? Comment ça s'est passé ?",
+"it": "Hai mai venduto qualcosa che non ti serviva più? Com'è andata?",
+"pt": "Já vendeste alguma coisa de que já não precisavas? Como correu?",
+"pt_BR": "Você já vendeu algo que não usava mais? Como foi?"
+}
+},
+{
+"id": "budgeting_basics-019",
+"lv": "any",
+"i18n": {
+"en": "What is your favourite second-hand find ever?",
+"de": "Was ist dein liebster Second-Hand-Fund aller Zeiten?",
+"es": "¿Cuál es tu mejor hallazgo de segunda mano?",
+"fr": "Quelle est ta plus belle trouvaille d'occasion ?",
+"it": "Qual è il tuo acquisto di seconda mano preferito?",
+"pt": "Qual foi o teu melhor achado em segunda mão?",
+"pt_BR": "Qual foi o seu melhor achado de segunda mão?"
+}
+},
+{
+"id": "budgeting_basics-020",
+"lv": "any",
+"i18n": {
+"en": "How do you feel when you check your bank balance?",
+"de": "Wie fühlst du dich, wenn du deinen Kontostand anschaust?",
+"es": "¿Cómo te sientes cuando miras el saldo de tu cuenta?",
+"fr": "Comment te sens-tu quand tu regardes ton solde bancaire ?",
+"it": "Come ti senti quando controlli il saldo del conto?",
+"pt": "Como te sentes quando vês o saldo da tua conta?",
+"pt_BR": "Como você se sente quando olha o saldo da sua conta?"
+}
+},
+{
+"id": "budgeting_basics-021",
+"lv": "any",
+"i18n": {
+"en": "What money goal have you already reached that you are proud of?",
+"de": "Welches Geldziel hast du schon erreicht, auf das du stolz bist?",
+"es": "¿Qué meta de dinero has alcanzado ya y te enorgullece?",
+"fr": "Quel objectif d'argent as-tu déjà atteint et qui te rend fier ?",
+"it": "Quale obiettivo economico hai già raggiunto e ti rende orgoglioso?",
+"pt": "Que objetivo financeiro já alcançaste e te deixa orgulhoso?",
+"pt_BR": "Qual meta financeira você já alcançou e te deixa orgulhoso?"
+}
+},
+{
+"id": "budgeting_basics-022",
+"lv": "any",
+"i18n": {
+"en": "Do you plan your meals for the week, or decide day by day?",
+"de": "Planst du deine Mahlzeiten für die Woche oder entscheidest du täglich?",
+"es": "¿Planificas las comidas de la semana o decides cada día?",
+"fr": "Tu planifies tes repas de la semaine ou tu décides au jour le jour ?",
+"it": "Pianifichi i pasti della settimana o decidi giorno per giorno?",
+"pt": "Planeias as refeições da semana ou decides dia a dia?",
+"pt_BR": "Você planeja as refeições da semana ou decide no dia?"
+}
+},
+{
+"id": "budgeting_basics-023",
+"lv": "any",
+"i18n": {
+"en": "Which subscription would you never give up, and why?",
+"de": "Auf welches Abo würdest du nie verzichten und warum?",
+"es": "¿A qué suscripción nunca renunciarías y por qué?",
+"fr": "À quel abonnement ne renoncerais-tu jamais, et pourquoi ?",
+"it": "A quale abbonamento non rinunceresti mai, e perché?",
+"pt": "A que subscrição nunca renunciarias, e porquê?",
+"pt_BR": "De qual assinatura você nunca abriria mão, e por quê?"
+}
+},
+{
+"id": "budgeting_basics-024",
+"lv": "any",
+"i18n": {
+"en": "What is a cheap hobby that brings you a lot of joy?",
+"de": "Welches günstige Hobby macht dir richtig viel Freude?",
+"es": "¿Qué afición barata te da muchísima alegría?",
+"fr": "Quel loisir bon marché t'apporte beaucoup de joie ?",
+"it": "Quale hobby economico ti dà tanta gioia?",
+"pt": "Que passatempo barato te dá muita alegria?",
+"pt_BR": "Qual hobby barato te traz muita alegria?"
+}
+},
+{
+"id": "budgeting_basics-025",
+"lv": "any",
+"i18n": {
+"en": "How do you usually decide whether something is worth the price?",
+"de": "Wie entscheidest du normalerweise, ob etwas seinen Preis wert ist?",
+"es": "¿Cómo decides normalmente si algo vale lo que cuesta?",
+"fr": "Comment décides-tu en général si quelque chose vaut son prix ?",
+"it": "Come decidi di solito se qualcosa vale il suo prezzo?",
+"pt": "Como decides normalmente se uma coisa vale o preço?",
+"pt_BR": "Como você costuma decidir se algo vale o preço?"
+}
+},
+{
+"id": "budgeting_basics-026",
+"lv": "any",
+"i18n": {
+"en": "What is one money habit you would like to build this month?",
+"de": "Welche Geldgewohnheit möchtest du dir diesen Monat aneignen?",
+"es": "¿Qué hábito con el dinero te gustaría crear este mes?",
+"fr": "Quelle habitude d'argent aimerais-tu prendre ce mois-ci ?",
+"it": "Quale abitudine con i soldi vorresti costruire questo mese?",
+"pt": "Que hábito com dinheiro gostavas de criar este mês?",
+"pt_BR": "Qual hábito com dinheiro você gostaria de criar este mês?"
+}
+},
+{
+"id": "budgeting_basics-027",
+"lv": "any",
+"i18n": {
+"en": "Do you prefer saving for one big thing or many small things?",
+"de": "Sparst du lieber für eine große Sache oder für viele kleine?",
+"es": "¿Prefieres ahorrar para una cosa grande o para muchas pequeñas?",
+"fr": "Tu préfères épargner pour une grosse chose ou pour plein de petites ?",
+"it": "Preferisci risparmiare per una cosa grande o per tante piccole?",
+"pt": "Preferes poupar para uma coisa grande ou para muitas pequenas?",
+"pt_BR": "Você prefere juntar dinheiro para uma coisa grande ou para várias pequenas?"
+}
+},
+{
+"id": "budgeting_basics-028",
+"lv": "any",
+"i18n": {
+"en": "What is your go-to cheap and tasty meal?",
+"de": "Was ist dein liebstes günstiges und leckeres Gericht?",
+"es": "¿Cuál es tu plato barato y rico de siempre?",
+"fr": "Quel est ton plat préféré, pas cher et délicieux ?",
+"it": "Qual è il tuo piatto economico e gustoso di sempre?",
+"pt": "Qual é o teu prato barato e saboroso de sempre?",
+"pt_BR": "Qual é o seu prato barato e gostoso de sempre?"
+}
+},
+{
+"id": "budgeting_basics-029",
+"lv": "any",
+"i18n": {
+"en": "How do you treat yourself when you are trying to spend less?",
+"de": "Wie gönnst du dir etwas, wenn du gerade weniger ausgeben willst?",
+"es": "¿Cómo te das un capricho cuando intentas gastar menos?",
+"fr": "Comment te fais-tu plaisir quand tu essaies de dépenser moins ?",
+"it": "Come ti concedi una coccola quando cerchi di spendere meno?",
+"pt": "Como te mimas quando estás a tentar gastar menos?",
+"pt_BR": "Como você se mima quando está tentando gastar menos?"
+}
+},
+{
+"id": "budgeting_basics-030",
+"lv": "any",
+"i18n": {
+"en": "What would you do first if you found some extra money this month?",
+"de": "Was würdest du als Erstes tun, wenn du diesen Monat etwas Geld übrig hättest?",
+"es": "¿Qué harías primero si este mes te sobrara algo de dinero?",
+"fr": "Que ferais-tu en premier s'il te restait un peu d'argent ce mois-ci ?",
+"it": "Cosa faresti per prima cosa se questo mese ti avanzassero dei soldi?",
+"pt": "O que farias primeiro se este mês te sobrasse algum dinheiro?",
+"pt_BR": "O que você faria primeiro se sobrasse um dinheiro extra este mês?"
+}
+},
+{
+"id": "budgeting_basics-031",
+"lv": "any",
+"i18n": {
+"en": "Is there a money saying from your culture that you like?",
+"de": "Gibt es ein Sprichwort über Geld aus deiner Kultur, das du magst?",
+"es": "¿Hay algún refrán sobre el dinero de tu cultura que te guste?",
+"fr": "Y a-t-il un proverbe sur l'argent de ta culture que tu aimes ?",
+"it": "C'è un proverbio sui soldi della tua cultura che ti piace?",
+"pt": "Há algum provérbio sobre dinheiro da tua cultura de que gostes?",
+"pt_BR": "Tem algum ditado sobre dinheiro da sua cultura de que você gosta?"
+}
+},
+{
+"id": "budgeting_basics-032",
+"lv": "any",
+"i18n": {
+"en": "What do you enjoy doing with friends that costs almost nothing?",
+"de": "Was machst du gern mit Freunden, das fast nichts kostet?",
+"es": "¿Qué te gusta hacer con amigos que no cuesta casi nada?",
+"fr": "Qu'aimes-tu faire avec tes amis qui ne coûte presque rien ?",
+"it": "Cosa ti piace fare con gli amici che non costa quasi niente?",
+"pt": "O que gostas de fazer com amigos que não custa quase nada?",
+"pt_BR": "O que você gosta de fazer com os amigos que quase não custa nada?"
+}
+},
+{
+"id": "budgeting_basics-033",
+"lv": "any",
+"i18n": {
+"en": "Do you keep receipts, or throw them away straight away?",
+"de": "Hebst du Kassenbons auf oder wirfst du sie sofort weg?",
+"es": "¿Guardas los tiques o los tiras enseguida?",
+"fr": "Tu gardes tes tickets de caisse ou tu les jettes tout de suite ?",
+"it": "Conservi gli scontrini o li butti subito?",
+"pt": "Guardas os talões ou deitas-os fora logo?",
+"pt_BR": "Você guarda as notinhas ou joga fora na hora?"
+}
+},
+{
+"id": "budgeting_basics-034",
+"lv": "any",
+"i18n": {
+"en": "What is one thing you always buy second-hand, and one you never do?",
+"de": "Was kaufst du immer gebraucht und was nie?",
+"es": "¿Qué compras siempre de segunda mano y qué nunca?",
+"fr": "Qu'achètes-tu toujours d'occasion, et que n'achètes-tu jamais ainsi ?",
+"it": "Cosa compri sempre di seconda mano e cosa mai?",
+"pt": "O que compras sempre em segunda mão e o que nunca compras?",
+"pt_BR": "O que você sempre compra usado e o que nunca compra?"
+}
+},
+{
+"id": "budgeting_basics-035",
+"lv": "any",
+"i18n": {
+"en": "How do you feel about talking openly about money with friends?",
+"de": "Wie findest du es, mit Freunden offen über Geld zu sprechen?",
+"es": "¿Qué te parece hablar abiertamente de dinero con amigos?",
+"fr": "Que penses-tu de parler ouvertement d'argent avec tes amis ?",
+"it": "Cosa pensi del parlare apertamente di soldi con gli amici?",
+"pt": "O que achas de falar abertamente sobre dinheiro com amigos?",
+"pt_BR": "O que você acha de falar abertamente sobre dinheiro com amigos?"
+}
+},
+{
+"id": "budgeting_basics-036",
+"lv": "any",
+"i18n": {
+"en": "What makes a gift special to you, whatever it costs?",
+"de": "Was macht ein Geschenk für dich besonders, egal was es kostet?",
+"es": "¿Qué hace especial un regalo para ti, cueste lo que cueste?",
+"fr": "Qu'est-ce qui rend un cadeau spécial pour toi, quel que soit son prix ?",
+"it": "Cosa rende speciale un regalo per te, a prescindere dal prezzo?",
+"pt": "O que torna um presente especial para ti, custe o que custar?",
+"pt_BR": "O que torna um presente especial pra você, independentemente do preço?"
+}
+},
+{
+"id": "budgeting_basics-037",
+"lv": "any",
+"i18n": {
+"en": "Which room in your home costs you the most, do you think?",
+"de": "Welcher Raum in deinem Zuhause kostet dich wohl am meisten?",
+"es": "¿Qué parte de tu casa crees que te cuesta más dinero?",
+"fr": "Quelle pièce de ton logement te coûte le plus, à ton avis ?",
+"it": "Quale stanza di casa tua pensi che ti costi di più?",
+"pt": "Que divisão da tua casa achas que te custa mais?",
+"pt_BR": "Qual cômodo da sua casa você acha que custa mais caro?"
+}
+},
+{
+"id": "budgeting_basics-038",
+"lv": "any",
+"i18n": {
+"en": "What did you learn about money from your very first job or pocket money?",
+"de": "Was hast du von deinem ersten Job oder Taschengeld über Geld gelernt?",
+"es": "¿Qué aprendiste sobre el dinero con tu primer trabajo o tu primera paga?",
+"fr": "Qu'as-tu appris sur l'argent avec ton premier job ou ton argent de poche ?",
+"it": "Cosa hai imparato sui soldi con il tuo primo lavoro o la paghetta?",
+"pt": "O que aprendeste sobre dinheiro com o teu primeiro trabalho ou a tua mesada?",
+"pt_BR": "O que você aprendeu sobre dinheiro com seu primeiro trabalho ou sua mesada?"
+}
+},
+{
+"id": "budgeting_basics-039",
+"lv": "any",
+"i18n": {
+"en": "If you had a no-spend weekend, how would you fill it?",
+"de": "Wie würdest du ein Wochenende ganz ohne Ausgaben verbringen?",
+"es": "Si tuvieras un fin de semana sin gastar nada, ¿cómo lo llenarías?",
+"fr": "Si tu passais un week-end sans rien dépenser, que ferais-tu ?",
+"it": "Se avessi un weekend senza spendere nulla, come lo passeresti?",
+"pt": "Se tivesses um fim de semana sem gastar nada, como o passarias?",
+"pt_BR": "Se você tivesse um fim de semana sem gastar nada, o que faria?"
+}
+},
+{
+"id": "budgeting_basics-040",
+"lv": "any",
+"i18n": {
+"en": "Which everyday item do you think is worth every penny you pay for it?",
+"de": "Welcher Alltagsgegenstand ist für dich jeden Cent wert?",
+"es": "¿Qué objeto cotidiano crees que vale cada céntimo que pagas?",
+"fr": "Quel objet du quotidien vaut selon toi chaque centime dépensé ?",
+"it": "Quale oggetto di uso quotidiano secondo te vale ogni centesimo?",
+"pt": "Que objeto do dia a dia achas que vale cada cêntimo que pagas?",
+"pt_BR": "Qual item do dia a dia você acha que vale cada centavo?"
+}
+},
+{
+"id": "budgeting_basics-041",
+"lv": "beginner",
+"i18n": {
+"en": "Have you ever tracked your spending? What did you notice?",
+"de": "Hast du schon einmal deine Ausgaben notiert? Was ist dir aufgefallen?",
+"es": "¿Alguna vez anotaste tus gastos? ¿Qué descubriste?",
+"fr": "As-tu déjà noté tes dépenses ? Qu'as-tu remarqué ?",
+"it": "Hai mai annotato le tue spese? Cosa hai notato?",
+"pt": "Já registaste os teus gastos? O que notaste?",
+"pt_BR": "Você já anotou seus gastos? O que percebeu?"
+}
+},
+{
+"id": "budgeting_basics-042",
+"lv": "beginner",
+"i18n": {
+"en": "Which tool would you like to use for budgeting: notebook, spreadsheet or app?",
+"de": "Womit würdest du gern budgetieren: Notizbuch, Tabelle oder App?",
+"es": "¿Qué herramienta te gustaría usar para tu presupuesto: libreta, hoja de cálculo o app?",
+"fr": "Quel outil aimerais-tu utiliser pour ton budget : carnet, tableur ou appli ?",
+"it": "Quale strumento vorresti usare per il budget: quaderno, foglio di calcolo o app?",
+"pt": "Que ferramenta gostavas de usar para o orçamento: caderno, folha de cálculo ou app?",
+"pt_BR": "Qual ferramenta você gostaria de usar pro orçamento: caderno, planilha ou app?"
+}
+},
+{
+"id": "budgeting_basics-043",
+"lv": "beginner",
+"i18n": {
+"en": "What are three things you consider true needs in your life?",
+"de": "Welche drei Dinge sind für dich echte Grundbedürfnisse?",
+"es": "¿Qué tres cosas consideras verdaderas necesidades en tu vida?",
+"fr": "Quelles sont trois choses que tu considères comme de vrais besoins ?",
+"it": "Quali sono tre cose che consideri vere necessità nella tua vita?",
+"pt": "Quais são três coisas que consideras verdadeiras necessidades na tua vida?",
+"pt_BR": "Quais são três coisas que você considera necessidades de verdade?"
+}
+},
+{
+"id": "budgeting_basics-044",
+"lv": "beginner",
+"i18n": {
+"en": "Which of your wants would be the easiest to cut back on?",
+"de": "Auf welchen deiner Wünsche könntest du am leichtesten verzichten?",
+"es": "¿Cuál de tus caprichos sería el más fácil de reducir?",
+"fr": "Lequel de tes petits plaisirs serait le plus facile à réduire ?",
+"it": "Quale dei tuoi sfizi sarebbe il più facile da ridurre?",
+"pt": "Qual dos teus desejos seria o mais fácil de reduzir?",
+"pt_BR": "Qual dos seus desejos seria o mais fácil de diminuir?"
+}
+},
+{
+"id": "budgeting_basics-045",
+"lv": "beginner",
+"i18n": {
+"en": "How many subscriptions do you think you have right now?",
+"de": "Wie viele Abos hast du deiner Meinung nach gerade?",
+"es": "¿Cuántas suscripciones crees que tienes ahora mismo?",
+"fr": "Combien d'abonnements penses-tu avoir en ce moment ?",
+"it": "Quanti abbonamenti pensi di avere in questo momento?",
+"pt": "Quantas subscrições achas que tens neste momento?",
+"pt_BR": "Quantas assinaturas você acha que tem agora?"
+}
+},
+{
+"id": "budgeting_basics-046",
+"lv": "beginner",
+"i18n": {
+"en": "Do you know which day of the month your biggest bill is due?",
+"de": "Weißt du, an welchem Tag im Monat deine größte Rechnung fällig ist?",
+"es": "¿Sabes qué día del mes vence tu factura más grande?",
+"fr": "Sais-tu quel jour du mois tombe ta plus grosse facture ?",
+"it": "Sai in che giorno del mese scade la tua bolletta più grande?",
+"pt": "Sabes em que dia do mês vence a tua maior conta?",
+"pt_BR": "Você sabe em que dia do mês vence sua maior conta?"
+}
+},
+{
+"id": "budgeting_basics-047",
+"lv": "beginner",
+"i18n": {
+"en": "What small daily cost could you reduce without missing it?",
+"de": "Welche kleine tägliche Ausgabe könntest du senken, ohne sie zu vermissen?",
+"es": "¿Qué pequeño gasto diario podrías reducir sin echarlo de menos?",
+"fr": "Quelle petite dépense quotidienne pourrais-tu réduire sans qu'elle te manque ?",
+"it": "Quale piccola spesa quotidiana potresti ridurre senza sentirne la mancanza?",
+"pt": "Que pequeno gasto diário podias reduzir sem sentir falta?",
+"pt_BR": "Qual pequeno gasto diário você poderia reduzir sem sentir falta?"
+}
+},
+{
+"id": "budgeting_basics-048",
+"lv": "beginner",
+"i18n": {
+"en": "How would you like to feel about money one year from now?",
+"de": "Wie möchtest du dich in einem Jahr in Bezug auf Geld fühlen?",
+"es": "¿Cómo te gustaría sentirte con el dinero dentro de un año?",
+"fr": "Comment aimerais-tu te sentir avec l'argent dans un an ?",
+"it": "Come vorresti sentirti con i soldi tra un anno?",
+"pt": "Como gostavas de te sentir em relação ao dinheiro daqui a um ano?",
+"pt_BR": "Como você gostaria de se sentir em relação ao dinheiro daqui a um ano?"
+}
+},
+{
+"id": "budgeting_basics-049",
+"lv": "beginner",
+"i18n": {
+"en": "Do you usually write a shopping list before going to the supermarket?",
+"de": "Schreibst du normalerweise eine Einkaufsliste, bevor du in den Supermarkt gehst?",
+"es": "¿Sueles hacer una lista antes de ir al supermercado?",
+"fr": "Fais-tu généralement une liste avant d'aller au supermarché ?",
+"it": "Di solito scrivi la lista della spesa prima di andare al supermercato?",
+"pt": "Costumas fazer uma lista antes de ir ao supermercado?",
+"pt_BR": "Você costuma fazer lista antes de ir ao supermercado?"
+}
+},
+{
+"id": "budgeting_basics-050",
+"lv": "beginner",
+"i18n": {
+"en": "What time of day or mood makes you most likely to buy something?",
+"de": "Zu welcher Tageszeit oder in welcher Stimmung kaufst du am ehesten etwas?",
+"es": "¿En qué momento del día o estado de ánimo es más probable que compres algo?",
+"fr": "À quel moment de la journée ou dans quelle humeur es-tu le plus tenté d'acheter ?",
+"it": "In quale momento della giornata o stato d'animo ti viene più voglia di comprare?",
+"pt": "Em que altura do dia ou estado de espírito tens mais tendência para comprar?",
+"pt_BR": "Em que hora do dia ou humor você tem mais vontade de comprar algo?"
+}
+},
+{
+"id": "budgeting_basics-051",
+"lv": "beginner",
+"i18n": {
+"en": "Have you ever tried the 24-hour rule before buying something? Would you?",
+"de": "Hast du schon einmal 24 Stunden gewartet, bevor du etwas gekauft hast? Würdest du es tun?",
+"es": "¿Has probado a esperar 24 horas antes de comprar algo? ¿Lo harías?",
+"fr": "As-tu déjà attendu 24 heures avant d'acheter quelque chose ? Le ferais-tu ?",
+"it": "Hai mai provato ad aspettare 24 ore prima di comprare qualcosa? Lo faresti?",
+"pt": "Já experimentaste esperar 24 horas antes de comprar alguma coisa? Farias isso?",
+"pt_BR": "Você já tentou esperar 24 horas antes de comprar algo? Faria isso?"
+}
+},
+{
+"id": "budgeting_basics-052",
+"lv": "beginner",
+"i18n": {
+"en": "What would be a good first savings target for you?",
+"de": "Was wäre ein gutes erstes Sparziel für dich?",
+"es": "¿Cuál sería una buena primera meta de ahorro para ti?",
+"fr": "Quel serait un bon premier objectif d'épargne pour toi ?",
+"it": "Quale sarebbe un buon primo obiettivo di risparmio per te?",
+"pt": "Qual seria um bom primeiro objetivo de poupança para ti?",
+"pt_BR": "Qual seria uma boa primeira meta de economia pra você?"
+}
+},
+{
+"id": "budgeting_basics-053",
+"lv": "beginner",
+"i18n": {
+"en": "Do you bring lunch from home or buy it out? What do you enjoy more?",
+"de": "Nimmst du Mittagessen von zu Hause mit oder kaufst du es? Was magst du lieber?",
+"es": "¿Llevas la comida de casa o la compras fuera? ¿Qué te gusta más?",
+"fr": "Tu apportes ton déjeuner de chez toi ou tu l'achètes ? Qu'est-ce que tu préfères ?",
+"it": "Porti il pranzo da casa o lo compri fuori? Cosa preferisci?",
+"pt": "Levas o almoço de casa ou compras fora? De que gostas mais?",
+"pt_BR": "Você leva marmita ou compra o almoço na rua? Do que gosta mais?"
+}
+},
+{
+"id": "budgeting_basics-054",
+"lv": "beginner",
+"i18n": {
+"en": "What is your favourite meal to make from leftovers?",
+"de": "Was kochst du am liebsten aus Resten?",
+"es": "¿Cuál es tu plato favorito hecho con sobras?",
+"fr": "Quel est ton plat préféré à faire avec des restes ?",
+"it": "Qual è il tuo piatto preferito da preparare con gli avanzi?",
+"pt": "Qual é o teu prato preferido feito com restos?",
+"pt_BR": "Qual é seu prato favorito feito com sobras?"
+}
+},
+{
+"id": "budgeting_basics-055",
+"lv": "beginner",
+"i18n": {
+"en": "Which bill at home would you most like to make smaller?",
+"de": "Welche Rechnung zu Hause würdest du am liebsten verkleinern?",
+"es": "¿Qué factura de casa te gustaría más reducir?",
+"fr": "Quelle facture de ton foyer aimerais-tu le plus réduire ?",
+"it": "Quale bolletta di casa vorresti di più ridurre?",
+"pt": "Que conta de casa mais gostavas de reduzir?",
+"pt_BR": "Qual conta da casa você mais gostaria de diminuir?"
+}
+},
+{
+"id": "budgeting_basics-056",
+"lv": "beginner",
+"i18n": {
+"en": "What is one energy-saving habit you already have at home?",
+"de": "Welche Energiespar-Gewohnheit hast du zu Hause schon?",
+"es": "¿Qué hábito de ahorro de energía ya tienes en casa?",
+"fr": "Quelle habitude pour économiser l'énergie as-tu déjà chez toi ?",
+"it": "Quale abitudine per risparmiare energia hai già in casa?",
+"pt": "Que hábito de poupança de energia já tens em casa?",
+"pt_BR": "Que hábito de economia de energia você já tem em casa?"
+}
+},
+{
+"id": "budgeting_basics-057",
+"lv": "beginner",
+"i18n": {
+"en": "How do you usually get around, and what does it cost you?",
+"de": "Wie bist du meistens unterwegs und was kostet dich das?",
+"es": "¿Cómo te desplazas normalmente y cuánto te cuesta?",
+"fr": "Comment te déplaces-tu d'habitude, et combien ça te coûte ?",
+"it": "Come ti sposti di solito e quanto ti costa?",
+"pt": "Como te deslocas normalmente e quanto te custa?",
+"pt_BR": "Como você costuma se locomover e quanto isso te custa?"
+}
+},
+{
+"id": "budgeting_basics-058",
+"lv": "beginner",
+"i18n": {
+"en": "What would you put in your fun budget each month?",
+"de": "Was würdest du jeden Monat in dein Spaß-Budget packen?",
+"es": "¿Qué incluirías cada mes en tu presupuesto para diversión?",
+"fr": "Que mettrais-tu chaque mois dans ton budget plaisir ?",
+"it": "Cosa metteresti ogni mese nel tuo budget per il divertimento?",
+"pt": "O que porias todos os meses no teu orçamento para diversão?",
+"pt_BR": "O que você colocaria todo mês no seu orçamento de lazer?"
+}
+},
+{
+"id": "budgeting_basics-059",
+"lv": "beginner",
+"i18n": {
+"en": "Have you ever compared prices per kilo or litre in a shop?",
+"de": "Hast du im Laden schon einmal Preise pro Kilo oder Liter verglichen?",
+"es": "¿Alguna vez has comparado precios por kilo o por litro en una tienda?",
+"fr": "As-tu déjà comparé les prix au kilo ou au litre en magasin ?",
+"it": "Ti è mai capitato di confrontare i prezzi al chilo o al litro?",
+"pt": "Já comparaste preços ao quilo ou ao litro numa loja?",
+"pt_BR": "Você já comparou preço por quilo ou por litro no mercado?"
+}
+},
+{
+"id": "budgeting_basics-060",
+"lv": "beginner",
+"i18n": {
+"en": "Which store-brand product surprised you by being really good?",
+"de": "Welches Eigenmarken-Produkt hat dich positiv überrascht?",
+"es": "¿Qué producto de marca blanca te sorprendió por ser muy bueno?",
+"fr": "Quel produit de marque distributeur t'a surpris par sa qualité ?",
+"it": "Quale prodotto a marchio del supermercato ti ha sorpreso in positivo?",
+"pt": "Que produto de marca branca te surpreendeu por ser mesmo bom?",
+"pt_BR": "Qual produto de marca própria do mercado te surpreendeu por ser muito bom?"
+}
+},
+{
+"id": "budgeting_basics-061",
+"lv": "beginner",
+"i18n": {
+"en": "How do you say no to a costly plan without feeling awkward?",
+"de": "Wie sagst du zu teuren Plänen nein, ohne dass es unangenehm wird?",
+"es": "¿Cómo dices que no a un plan caro sin sentirte incómodo?",
+"fr": "Comment dis-tu non à une sortie chère sans te sentir gêné ?",
+"it": "Come dici di no a un programma costoso senza sentirti a disagio?",
+"pt": "Como dizes que não a um programa caro sem te sentires constrangido?",
+"pt_BR": "Como você recusa um programa caro sem ficar sem graça?"
+}
+},
+{
+"id": "budgeting_basics-062",
+"lv": "beginner",
+"i18n": {
+"en": "What is one thing you could repair instead of replacing?",
+"de": "Was könntest du reparieren, statt es neu zu kaufen?",
+"es": "¿Qué podrías reparar en lugar de sustituir?",
+"fr": "Qu'est-ce que tu pourrais réparer au lieu de le remplacer ?",
+"it": "Cosa potresti riparare invece di sostituire?",
+"pt": "O que podias arranjar em vez de substituir?",
+"pt_BR": "O que você poderia consertar em vez de trocar?"
+}
+},
+{
+"id": "budgeting_basics-063",
+"lv": "beginner",
+"i18n": {
+"en": "Where do you keep your savings so you are not tempted to spend them?",
+"de": "Wo bewahrst du dein Erspartes auf, damit du nicht in Versuchung kommst?",
+"es": "¿Dónde guardas tus ahorros para no caer en la tentación de gastarlos?",
+"fr": "Où gardes-tu ton épargne pour ne pas être tenté de la dépenser ?",
+"it": "Dove tieni i risparmi per non essere tentato di spenderli?",
+"pt": "Onde guardas as tuas poupanças para não teres a tentação de as gastar?",
+"pt_BR": "Onde você guarda suas economias para não cair na tentação de gastar?"
+}
+},
+{
+"id": "budgeting_basics-064",
+"lv": "beginner",
+"i18n": {
+"en": "Which sale or discount once made you spend more than you planned?",
+"de": "Welcher Rabatt hat dich schon mal dazu gebracht, mehr auszugeben als geplant?",
+"es": "¿Qué oferta te hizo gastar alguna vez más de lo que pensabas?",
+"fr": "Quelle promo t'a déjà fait dépenser plus que prévu ?",
+"it": "Quale offerta ti ha fatto spendere più del previsto?",
+"pt": "Que promoção já te fez gastar mais do que planeavas?",
+"pt_BR": "Qual promoção já te fez gastar mais do que você planejava?"
+}
+},
+{
+"id": "budgeting_basics-065",
+"lv": "beginner",
+"i18n": {
+"en": "What would make tracking your money feel more fun?",
+"de": "Was würde das Notieren deiner Ausgaben spaßiger machen?",
+"es": "¿Qué haría más divertido llevar el control de tu dinero?",
+"fr": "Qu'est-ce qui rendrait le suivi de ton argent plus amusant ?",
+"it": "Cosa renderebbe più divertente tenere traccia dei tuoi soldi?",
+"pt": "O que tornaria mais divertido acompanhar o teu dinheiro?",
+"pt_BR": "O que deixaria mais divertido acompanhar seu dinheiro?"
+}
+},
+{
+"id": "budgeting_basics-066",
+"lv": "intermediate",
+"i18n": {
+"en": "Which budgeting method appeals to you most: 50/30/20, envelopes or zero-based?",
+"de": "Welche Budget-Methode spricht dich am meisten an: 50/30/20, Umschläge oder Nullbudget?",
+"es": "¿Qué método te atrae más: 50/30/20, sobres o presupuesto base cero?",
+"fr": "Quelle méthode te plaît le plus : 50/30/20, enveloppes ou budget base zéro ?",
+"it": "Quale metodo ti attira di più: 50/30/20, buste o budget a base zero?",
+"pt": "Que método te atrai mais: 50/30/20, envelopes ou orçamento base zero?",
+"pt_BR": "Qual método te atrai mais: 50/30/20, envelopes ou orçamento base zero?"
+}
+},
+{
+"id": "budgeting_basics-067",
+"lv": "intermediate",
+"i18n": {
+"en": "What expected cost next year would you like to start saving for now?",
+"de": "Für welche absehbare Ausgabe im nächsten Jahr möchtest du schon jetzt sparen?",
+"es": "¿Para qué gasto previsto del próximo año te gustaría empezar a ahorrar ya?",
+"fr": "Pour quelle dépense prévue l'an prochain aimerais-tu commencer à épargner dès maintenant ?",
+"it": "Per quale spesa prevista l'anno prossimo vorresti iniziare a risparmiare già adesso?",
+"pt": "Para que despesa prevista no próximo ano gostavas de começar já a poupar?",
+"pt_BR": "Para qual gasto previsto do ano que vem você gostaria de começar a guardar agora?"
+}
+},
+{
+"id": "budgeting_basics-068",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you handle festive seasons and gifts in your budget?",
+"de": "Wie planst du Feiertage und Geschenke in deinem Budget ein?",
+"es": "¿Cómo gestionas las fiestas y los regalos en tu presupuesto?",
+"fr": "Comment gères-tu les fêtes et les cadeaux dans ton budget ?",
+"it": "Come gestisci le feste e i regali nel tuo budget?",
+"pt": "Como geres as épocas festivas e os presentes no teu orçamento?",
+"pt_BR": "Como você encaixa as festas de fim de ano e os presentes no orçamento?"
+}
+},
+{
+"id": "budgeting_basics-069",
+"lv": "intermediate",
+"i18n": {
+"en": "Have you ever had a month with much less income? What helped you?",
+"de": "Hattest du schon einmal einen Monat mit viel weniger Einkommen? Was hat dir geholfen?",
+"es": "¿Has tenido alguna vez un mes con muchos menos ingresos? ¿Qué te ayudó?",
+"fr": "As-tu déjà eu un mois avec beaucoup moins de revenus ? Qu'est-ce qui t'a aidé ?",
+"it": "Ti è mai capitato un mese con molte meno entrate? Cosa ti ha aiutato?",
+"pt": "Já tiveste um mês com muito menos rendimento? O que te ajudou?",
+"pt_BR": "Você já teve um mês com bem menos renda? O que te ajudou?"
+}
+},
+{
+"id": "budgeting_basics-070",
+"lv": "intermediate",
+"i18n": {
+"en": "What do you think about buy now, pay later offers?",
+"de": "Was hältst du von Angeboten wie „jetzt kaufen, später bezahlen“?",
+"es": "¿Qué opinas de las ofertas de compra ahora y paga después?",
+"fr": "Que penses-tu des offres « achetez maintenant, payez plus tard » ?",
+"it": "Cosa pensi delle offerte « compra ora, paga dopo »?",
+"pt": "O que achas das ofertas « compre agora, pague depois »?",
+"pt_BR": "O que você acha das ofertas de « compre agora, pague depois »?"
+}
+},
+{
+"id": "budgeting_basics-071",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you protect yourself from scam messages about money?",
+"de": "Wie schützt du dich vor betrügerischen Nachrichten rund ums Geld?",
+"es": "¿Cómo te proteges de los mensajes fraudulentos sobre dinero?",
+"fr": "Comment te protèges-tu des messages frauduleux liés à l'argent ?",
+"it": "Come ti proteggi dai messaggi truffa che riguardano i soldi?",
+"pt": "Como te proteges de mensagens fraudulentas sobre dinheiro?",
+"pt_BR": "Como você se protege de mensagens de golpe envolvendo dinheiro?"
+}
+},
+{
+"id": "budgeting_basics-072",
+"lv": "intermediate",
+"i18n": {
+"en": "What would you change if your income went up a little tomorrow?",
+"de": "Was würdest du ändern, wenn dein Einkommen morgen etwas steigen würde?",
+"es": "¿Qué cambiarías si mañana tus ingresos subieran un poco?",
+"fr": "Que changerais-tu si tes revenus augmentaient un peu demain ?",
+"it": "Cosa cambieresti se domani le tue entrate aumentassero un po'?",
+"pt": "O que mudavas se amanhã o teu rendimento subisse um pouco?",
+"pt_BR": "O que você mudaria se sua renda subisse um pouco amanhã?"
+}
+},
+{
+"id": "budgeting_basics-073",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you split shared costs with people you live with or travel with?",
+"de": "Wie teilst du gemeinsame Kosten mit Mitbewohnern oder Reisebegleitern?",
+"es": "¿Cómo repartes los gastos comunes con quienes vives o viajas?",
+"fr": "Comment partages-tu les dépenses communes avec ceux avec qui tu vis ou voyages ?",
+"it": "Come dividi le spese comuni con chi vive o viaggia con te?",
+"pt": "Como divides as despesas comuns com quem vives ou viajas?",
+"pt_BR": "Como você divide os gastos com quem mora ou viaja com você?"
+}
+},
+{
+"id": "budgeting_basics-074",
+"lv": "intermediate",
+"i18n": {
+"en": "Have you ever asked a provider for a better price? How did it go?",
+"de": "Hast du schon einmal einen Anbieter um einen besseren Preis gebeten? Wie lief es?",
+"es": "¿Alguna vez has pedido un mejor precio a una compañía? ¿Qué tal fue?",
+"fr": "As-tu déjà demandé un meilleur tarif à un fournisseur ? Comment ça s'est passé ?",
+"it": "Hai mai chiesto un prezzo migliore a un fornitore? Com'è andata?",
+"pt": "Já pediste um preço melhor a um fornecedor? Como correu?",
+"pt_BR": "Você já pediu um preço melhor para alguma operadora ou empresa? Como foi?"
+}
+},
+{
+"id": "budgeting_basics-075",
+"lv": "intermediate",
+"i18n": {
+"en": "What did pocket money or your first earnings teach you about planning?",
+"de": "Was hat dir Taschengeld oder dein erstes Geld über Planung beigebracht?",
+"es": "¿Qué te enseñó tu paga o tu primer sueldo sobre planificar?",
+"fr": "Qu'est-ce que l'argent de poche ou ton premier salaire t'a appris sur l'organisation ?",
+"it": "Cosa ti hanno insegnato la paghetta o i primi guadagni sul pianificare?",
+"pt": "O que te ensinou a mesada ou o primeiro ordenado sobre planear?",
+"pt_BR": "O que a mesada ou o primeiro salário te ensinaram sobre planejamento?"
+}
+},
+{
+"id": "budgeting_basics-076",
+"lv": "intermediate",
+"i18n": {
+"en": "How would you budget for a trip you dream about?",
+"de": "Wie würdest du für deine Traumreise budgetieren?",
+"es": "¿Cómo harías el presupuesto para el viaje de tus sueños?",
+"fr": "Comment établirais-tu le budget du voyage de tes rêves ?",
+"it": "Come faresti il budget per il viaggio dei tuoi sogni?",
+"pt": "Como farias o orçamento para a viagem dos teus sonhos?",
+"pt_BR": "Como você faria o orçamento da viagem dos seus sonhos?"
+}
+},
+{
+"id": "budgeting_basics-077",
+"lv": "intermediate",
+"i18n": {
+"en": "Which side activity could bring you a little extra income?",
+"de": "Mit welcher Nebentätigkeit könntest du dir etwas dazuverdienen?",
+"es": "¿Qué actividad extra podría darte algún ingreso adicional?",
+"fr": "Quelle activité à côté pourrait te rapporter un petit revenu en plus ?",
+"it": "Quale attività extra potrebbe darti qualche entrata in più?",
+"pt": "Que atividade extra te poderia dar algum rendimento a mais?",
+"pt_BR": "Qual atividade extra poderia te trazer uma renda a mais?"
+}
+},
+{
+"id": "budgeting_basics-078",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you decide between quality that lasts and the cheaper option?",
+"de": "Wie entscheidest du zwischen langlebiger Qualität und der günstigeren Variante?",
+"es": "¿Cómo eliges entre calidad duradera y la opción más barata?",
+"fr": "Comment choisis-tu entre une qualité durable et l'option la moins chère ?",
+"it": "Come scegli tra qualità che dura e l'opzione più economica?",
+"pt": "Como escolhes entre qualidade que dura e a opção mais barata?",
+"pt_BR": "Como você escolhe entre qualidade que dura e a opção mais barata?"
+}
+},
+{
+"id": "budgeting_basics-079",
+"lv": "intermediate",
+"i18n": {
+"en": "Do you read the small print before signing up for something?",
+"de": "Liest du das Kleingedruckte, bevor du etwas abschließt?",
+"es": "¿Lees la letra pequeña antes de contratar algo?",
+"fr": "Lis-tu les petits caractères avant de souscrire à quelque chose ?",
+"it": "Leggi le clausole in piccolo prima di sottoscrivere qualcosa?",
+"pt": "Lês as letras pequenas antes de subscrever alguma coisa?",
+"pt_BR": "Você lê as letras miúdas antes de contratar algo?"
+}
+},
+{
+"id": "budgeting_basics-080",
+"lv": "intermediate",
+"i18n": {
+"en": "What money topic do you find hardest to talk about with family?",
+"de": "Über welches Geldthema fällt es dir mit der Familie am schwersten zu sprechen?",
+"es": "¿De qué tema de dinero te cuesta más hablar con tu familia?",
+"fr": "De quel sujet d'argent as-tu le plus de mal à parler en famille ?",
+"it": "Di quale argomento legato ai soldi ti è più difficile parlare in famiglia?",
+"pt": "De que tema de dinheiro te custa mais falar com a família?",
+"pt_BR": "Sobre qual assunto de dinheiro você acha mais difícil falar com a família?"
+}
+},
+{
+"id": "budgeting_basics-081",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you keep your financial paperwork organised?",
+"de": "Wie hältst du deine Finanzunterlagen in Ordnung?",
+"es": "¿Cómo mantienes organizados tus papeles de dinero?",
+"fr": "Comment gardes-tu tes papiers financiers bien rangés ?",
+"it": "Come tieni in ordine i documenti sulle tue finanze?",
+"pt": "Como manténs organizados os teus papéis financeiros?",
+"pt_BR": "Como você mantém seus papéis financeiros organizados?"
+}
+},
+{
+"id": "budgeting_basics-082",
+"lv": "intermediate",
+"i18n": {
+"en": "Which free trial have you forgotten to cancel, and what did you learn?",
+"de": "Welches Probeabo hast du schon vergessen zu kündigen und was hast du daraus gelernt?",
+"es": "¿Qué prueba gratuita olvidaste cancelar y qué aprendiste?",
+"fr": "Quel essai gratuit as-tu oublié de résilier, et qu'en as-tu appris ?",
+"it": "Quale prova gratuita hai dimenticato di disdire e cosa hai imparato?",
+"pt": "Que período experimental te esqueceste de cancelar e o que aprendeste?",
+"pt_BR": "Qual teste grátis você esqueceu de cancelar e o que aprendeu com isso?"
+}
+},
+{
+"id": "budgeting_basics-083",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you set a budget for a celebration you are hosting?",
+"de": "Wie legst du ein Budget für eine Feier fest, die du ausrichtest?",
+"es": "¿Cómo fijas un presupuesto para una celebración que organizas tú?",
+"fr": "Comment fixes-tu un budget pour une fête que tu organises ?",
+"it": "Come stabilisci un budget per una festa che organizzi tu?",
+"pt": "Como defines um orçamento para uma festa que organizas?",
+"pt_BR": "Como você define um orçamento para uma festa que vai organizar?"
+}
+},
+{
+"id": "budgeting_basics-084",
+"lv": "intermediate",
+"i18n": {
+"en": "Which category in your budget changes the most from month to month?",
+"de": "Welche Kategorie in deinem Budget schwankt am stärksten von Monat zu Monat?",
+"es": "¿Qué categoría de tu presupuesto cambia más de un mes a otro?",
+"fr": "Quelle catégorie de ton budget varie le plus d'un mois à l'autre ?",
+"it": "Quale categoria del tuo budget cambia di più da un mese all'altro?",
+"pt": "Que categoria do teu orçamento varia mais de mês para mês?",
+"pt_BR": "Qual categoria do seu orçamento muda mais de um mês para o outro?"
+}
+},
+{
+"id": "budgeting_basics-085",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you handle friends who have very different budgets from yours?",
+"de": "Wie gehst du mit Freunden um, die ein ganz anderes Budget haben als du?",
+"es": "¿Cómo llevas tener amigos con presupuestos muy distintos al tuyo?",
+"fr": "Comment fais-tu avec des amis qui ont un budget très différent du tien ?",
+"it": "Come gestisci gli amici che hanno un budget molto diverso dal tuo?",
+"pt": "Como lidas com amigos que têm orçamentos muito diferentes do teu?",
+"pt_BR": "Como você lida com amigos que têm um orçamento bem diferente do seu?"
+}
+},
+{
+"id": "budgeting_basics-086",
+"lv": "advanced",
+"i18n": {
+"en": "Looking back, which money habit has changed your life the most?",
+"de": "Welche Geldgewohnheit hat dein Leben im Rückblick am meisten verändert?",
+"es": "Mirando atrás, ¿qué hábito con el dinero ha cambiado más tu vida?",
+"fr": "Avec le recul, quelle habitude d'argent a le plus changé ta vie ?",
+"it": "Guardando indietro, quale abitudine con i soldi ti ha cambiato di più la vita?",
+"pt": "Olhando para trás, que hábito com dinheiro mais mudou a tua vida?",
+"pt_BR": "Olhando pra trás, qual hábito com dinheiro mais mudou sua vida?"
+}
+},
+{
+"id": "budgeting_basics-087",
+"lv": "advanced",
+"i18n": {
+"en": "What are your personal money values in three words?",
+"de": "Welche drei Wörter beschreiben deine persönlichen Werte rund ums Geld?",
+"es": "¿Cuáles son tus valores personales sobre el dinero en tres palabras?",
+"fr": "Quelles sont tes valeurs personnelles autour de l'argent, en trois mots ?",
+"it": "Quali sono i tuoi valori personali sui soldi in tre parole?",
+"pt": "Quais são os teus valores pessoais sobre dinheiro em três palavras?",
+"pt_BR": "Quais são seus valores pessoais sobre dinheiro em três palavras?"
+}
+},
+{
+"id": "budgeting_basics-088",
+"lv": "advanced",
+"i18n": {
+"en": "How would you explain budgeting to a friend who has never tried it?",
+"de": "Wie würdest du einem Freund, der es nie versucht hat, Budgetieren erklären?",
+"es": "¿Cómo le explicarías qué es un presupuesto a un amigo que nunca lo ha probado?",
+"fr": "Comment expliquerais-tu le budget à un ami qui n'a jamais essayé ?",
+"it": "Come spiegheresti il budget a un amico che non l'ha mai provato?",
+"pt": "Como explicarias o que é um orçamento a um amigo que nunca experimentou?",
+"pt_BR": "Como você explicaria orçamento para um amigo que nunca tentou?"
+}
+},
+{
+"id": "budgeting_basics-089",
+"lv": "advanced",
+"i18n": {
+"en": "Which long-term goal would you like to plan, perhaps with a professional's help?",
+"de": "Welches langfristige Ziel möchtest du planen, vielleicht mit Hilfe einer Fachperson?",
+"es": "¿Qué meta a largo plazo te gustaría planificar, quizá con ayuda de un profesional?",
+"fr": "Quel objectif à long terme aimerais-tu planifier, peut-être avec l'aide d'un professionnel ?",
+"it": "Quale obiettivo a lungo termine vorresti pianificare, magari con l'aiuto di un professionista?",
+"pt": "Que objetivo a longo prazo gostavas de planear, talvez com a ajuda de um profissional?",
+"pt_BR": "Qual meta de longo prazo você gostaria de planejar, talvez com ajuda de um profissional?"
+}
+},
+{
+"id": "budgeting_basics-090",
+"lv": "advanced",
+"i18n": {
+"en": "How have rising everyday prices changed the way you shop?",
+"de": "Wie haben steigende Alltagspreise deine Art einzukaufen verändert?",
+"es": "¿Cómo ha cambiado tu forma de comprar con la subida de los precios?",
+"fr": "Comment la hausse des prix du quotidien a-t-elle changé ta façon de faire les courses ?",
+"it": "Come è cambiato il tuo modo di fare acquisti con l'aumento dei prezzi?",
+"pt": "Como mudou a tua forma de fazer compras com a subida dos preços?",
+"pt_BR": "Como a alta dos preços do dia a dia mudou seu jeito de fazer compras?"
+}
+},
+{
+"id": "budgeting_basics-091",
+"lv": "advanced",
+"i18n": {
+"en": "What would financial calm look like for you in five years?",
+"de": "Wie würde finanzielle Gelassenheit für dich in fünf Jahren aussehen?",
+"es": "¿Cómo sería para ti la tranquilidad financiera dentro de cinco años?",
+"fr": "À quoi ressemblerait pour toi la sérénité financière dans cinq ans ?",
+"it": "Come sarebbe per te la serenità economica tra cinque anni?",
+"pt": "Como seria para ti a tranquilidade financeira daqui a cinco anos?",
+"pt_BR": "Como seria pra você a tranquilidade financeira daqui a cinco anos?"
+}
+},
+{
+"id": "budgeting_basics-092",
+"lv": "advanced",
+"i18n": {
+"en": "Have you ever noticed lifestyle creep in your own spending?",
+"de": "Hast du bei dir selbst schon bemerkt, dass die Ausgaben mit dem Einkommen mitwachsen?",
+"es": "¿Has notado alguna vez que tus gastos crecen a la par que tus ingresos?",
+"fr": "As-tu déjà remarqué que tes dépenses grimpaient avec tes revenus ?",
+"it": "Ti sei mai accorto che le tue spese crescevano insieme alle entrate?",
+"pt": "Já reparaste que os teus gastos aumentam à medida que ganhas mais?",
+"pt_BR": "Você já percebeu seus gastos crescendo junto com a sua renda?"
+}
+},
+{
+"id": "budgeting_basics-093",
+"lv": "advanced",
+"i18n": {
+"en": "Which marketing trick do you now spot easily that once fooled you?",
+"de": "Welchen Marketingtrick erkennst du heute sofort, der dich früher erwischt hat?",
+"es": "¿Qué truco de marketing detectas ahora fácilmente y antes te engañaba?",
+"fr": "Quelle astuce marketing repères-tu facilement aujourd'hui alors qu'elle t'avait eu ?",
+"it": "Quale trucco di marketing riconosci subito ora e prima ti fregava?",
+"pt": "Que truque de marketing reconheces agora facilmente e antes te enganava?",
+"pt_BR": "Qual truque de marketing você reconhece fácil hoje e que antes te pegava?"
+}
+},
+{
+"id": "budgeting_basics-094",
+"lv": "advanced",
+"i18n": {
+"en": "How do you keep your budget flexible without losing control?",
+"de": "Wie hältst du dein Budget flexibel, ohne die Kontrolle zu verlieren?",
+"es": "¿Cómo mantienes tu presupuesto flexible sin perder el control?",
+"fr": "Comment gardes-tu un budget souple sans perdre le contrôle ?",
+"it": "Come mantieni il budget flessibile senza perdere il controllo?",
+"pt": "Como manténs o teu orçamento flexível sem perder o controlo?",
+"pt_BR": "Como você mantém o orçamento flexível sem perder o controle?"
+}
+},
+{
+"id": "budgeting_basics-095",
+"lv": "advanced",
+"i18n": {
+"en": "What questions would you prepare before meeting a financial professional?",
+"de": "Welche Fragen würdest du vorbereiten, bevor du eine Finanzfachperson triffst?",
+"es": "¿Qué preguntas prepararías antes de reunirte con un profesional de finanzas?",
+"fr": "Quelles questions préparerais-tu avant de rencontrer un professionnel de la finance ?",
+"it": "Quali domande prepareresti prima di incontrare un professionista finanziario?",
+"pt": "Que perguntas prepararias antes de falar com um profissional de finanças?",
+"pt_BR": "Que perguntas você prepararia antes de conversar com um profissional de finanças?"
+}
+},
+{
+"id": "budgeting_basics-096",
+"lv": "advanced",
+"i18n": {
+"en": "Which money mistake taught you the most, and how did you bounce back?",
+"de": "Welcher Geldfehler hat dich am meisten gelehrt und wie bist du wieder auf die Beine gekommen?",
+"es": "¿Qué error con el dinero te enseñó más y cómo te recuperaste?",
+"fr": "Quelle erreur d'argent t'a le plus appris, et comment as-tu rebondi ?",
+"it": "Quale errore con i soldi ti ha insegnato di più e come ti sei rialzato?",
+"pt": "Que erro com dinheiro te ensinou mais e como deste a volta?",
+"pt_BR": "Qual erro com dinheiro mais te ensinou e como você deu a volta por cima?"
+}
+},
+{
+"id": "budgeting_basics-097",
+"lv": "advanced",
+"i18n": {
+"en": "How do you balance enjoying today with preparing for tomorrow?",
+"de": "Wie findest du das Gleichgewicht zwischen dem Genießen von heute und der Vorsorge für morgen?",
+"es": "¿Cómo equilibras disfrutar el presente y prepararte para el futuro?",
+"fr": "Comment équilibres-tu le plaisir d'aujourd'hui et la préparation de demain ?",
+"it": "Come bilanci il goderti l'oggi con il prepararti per il domani?",
+"pt": "Como equilibras aproveitar o hoje e preparar o amanhã?",
+"pt_BR": "Como você equilibra aproveitar o hoje e se preparar para o amanhã?"
+}
+},
+{
+"id": "budgeting_basics-098",
+"lv": "advanced",
+"i18n": {
+"en": "What money skill would you most like to pass on to someone younger?",
+"de": "Welche Geldkompetenz würdest du am liebsten an jemand Jüngeren weitergeben?",
+"es": "¿Qué habilidad con el dinero te gustaría transmitir a alguien más joven?",
+"fr": "Quelle compétence d'argent aimerais-tu transmettre à quelqu'un de plus jeune ?",
+"it": "Quale abilità con i soldi vorresti trasmettere a qualcuno più giovane?",
+"pt": "Que competência com dinheiro gostavas de passar a alguém mais novo?",
+"pt_BR": "Qual habilidade com dinheiro você gostaria de passar pra alguém mais novo?"
+}
+},
+{
+"id": "budgeting_basics-099",
+"lv": "advanced",
+"i18n": {
+"en": "If you designed your perfect budget system, what would it look like?",
+"de": "Wie sähe dein perfektes Budgetsystem aus, wenn du es selbst entwerfen könntest?",
+"es": "Si diseñaras tu sistema de presupuesto perfecto, ¿cómo sería?",
+"fr": "Si tu concevais ton système de budget idéal, à quoi ressemblerait-il ?",
+"it": "Se progettassi il tuo sistema di budget perfetto, come sarebbe?",
+"pt": "Se desenhasses o teu sistema de orçamento perfeito, como seria?",
+"pt_BR": "Se você criasse seu sistema de orçamento perfeito, como ele seria?"
+}
+},
+{
+"id": "budgeting_basics-100",
+"lv": "advanced",
+"i18n": {
+"en": "Which saving tradition from another culture would you like to try?",
+"de": "Welche Spartradition aus einer anderen Kultur würdest du gern ausprobieren?",
+"es": "¿Qué tradición de ahorro de otra cultura te gustaría probar?",
+"fr": "Quelle tradition d'épargne d'une autre culture aimerais-tu essayer ?",
+"it": "Quale tradizione di risparmio di un'altra cultura vorresti provare?",
+"pt": "Que tradição de poupança de outra cultura gostavas de experimentar?",
+"pt_BR": "Qual tradição de economia de outra cultura você gostaria de experimentar?"
+}
+}
+]
+}

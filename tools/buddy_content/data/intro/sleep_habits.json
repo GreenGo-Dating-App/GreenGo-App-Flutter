@@ -1,0 +1,33 @@
+{
+"topic": "sleep_habits",
+"intro": {
+"en": [
+"Hi, I'm {name}! Let's explore better sleep together on a 365-day path, from how sleep works and a cosy bedroom to evening routines, travel tips and your own sleep experiments.",
+"One small lesson a day, with friendly general tips (I'm no doctor, just a sleep fan). To get to know you: how do you usually feel when you wake up in the morning?"
+],
+"de": [
+"Hallo, ich bin {name}! Lass uns 365 Tage lang gemeinsam besseren Schlaf entdecken: von den Grundlagen und einem gemütlichen Schlafzimmer bis zu Abendritualen, Reisetipps und eigenen Experimenten.",
+"Jeden Tag eine kleine Lektion mit allgemeinen Tipps (kein ärztlicher Rat, ich bin einfach Schlaf-Fan). Erzähl mal: Wie fühlst du dich morgens normalerweise beim Aufwachen?"
+],
+"es": [
+"¡Hola, soy {name}! Descubramos juntos cómo dormir mejor en un camino de 365 días: desde cómo funciona el sueño y un dormitorio acogedor hasta rutinas nocturnas, viajes y tus propios experimentos.",
+"Una pequeña lección al día con consejos generales (no soy médico, solo un fan del buen dormir). Para conocerte: ¿cómo te sueles sentir al despertarte por la mañana?"
+],
+"fr": [
+"Salut, je suis {name} ! Explorons ensemble un meilleur sommeil sur un parcours de 365 jours : comment fonctionne le sommeil, une chambre douillette, rituels du soir, voyages et tes propres essais.",
+"Une petite leçon par jour, avec des conseils généraux (je ne suis pas médecin, juste fan de sommeil). Pour faire connaissance : comment te sens-tu d'habitude au réveil le matin ?"
+],
+"it": [
+"Ciao, sono {name}! Scopriamo insieme come dormire meglio in un percorso di 365 giorni: da come funziona il sonno e una camera accogliente fino a rituali serali, viaggi e i tuoi esperimenti.",
+"Una piccola lezione al giorno, con consigli generali (non sono un medico, solo un appassionato di sonno). Per conoscerti: come ti senti di solito quando ti svegli al mattino?"
+],
+"pt": [
+"Olá, chamo-me {name}! Vamos descobrir juntos como dormir melhor num percurso de 365 dias: como funciona o sono, um quarto acolhedor, rotinas da noite, viagens e as tuas próprias experiências.",
+"Uma pequena lição por dia, com dicas gerais (não sou médico, só um fã de dormir bem). Para te conhecer melhor: como te costumas sentir quando acordas de manhã?"
+],
+"pt_BR": [
+"Oi, eu sou {name}! Vamos descobrir juntos como dormir melhor numa jornada de 365 dias: como o sono funciona, um quarto aconchegante, rotinas da noite, viagens e seus próprios testes.",
+"Uma pequena lição por dia, com dicas gerais (não sou médico, só um fã de dormir bem). Pra te conhecer melhor: como você costuma se sentir quando acorda de manhã?"
+]
+}
+}

@@ -1,0 +1,1305 @@
+{
+"topic": "gratitude",
+"questions": [
+{
+"id": "gratitude-001",
+"lv": "any",
+"i18n": {
+"en": "What is one good thing that happened to you today?",
+"de": "Was ist dir heute Schönes passiert?",
+"es": "¿Qué cosa buena te ha pasado hoy?",
+"fr": "Quelle bonne chose t'est arrivée aujourd'hui ?",
+"it": "Qual è una cosa bella che ti è successa oggi?",
+"pt": "Que coisa boa te aconteceu hoje?",
+"pt_BR": "Que coisa boa aconteceu com você hoje?"
+}
+},
+{
+"id": "gratitude-002",
+"lv": "any",
+"i18n": {
+"en": "Who is someone you are really thankful to have in your life?",
+"de": "Für welchen Menschen in deinem Leben bist du besonders dankbar?",
+"es": "¿Quién es una persona a la que agradeces de verdad tener en tu vida?",
+"fr": "Qui est une personne que tu es vraiment reconnaissant d'avoir dans ta vie ?",
+"it": "Chi è una persona che sei davvero grato di avere nella tua vita?",
+"pt": "Quem é uma pessoa que estás mesmo grato por ter na tua vida?",
+"pt_BR": "Quem é uma pessoa que você é muito grato por ter na sua vida?"
+}
+},
+{
+"id": "gratitude-003",
+"lv": "any",
+"i18n": {
+"en": "Which small comfort do you enjoy most at home?",
+"de": "Welchen kleinen Komfort genießt du zu Hause am meisten?",
+"es": "¿Qué pequeña comodidad disfrutas más en casa?",
+"fr": "Quel petit confort apprécies-tu le plus chez toi ?",
+"it": "Quale piccola comodità ti godi di più a casa?",
+"pt": "Que pequeno conforto mais aprecias em casa?",
+"pt_BR": "Qual pequeno conforto você mais curte em casa?"
+}
+},
+{
+"id": "gratitude-004",
+"lv": "any",
+"i18n": {
+"en": "Which meal always puts you in a good mood?",
+"de": "Welches Essen bringt dich immer in gute Laune?",
+"es": "¿Qué comida siempre te pone de buen humor?",
+"fr": "Quel plat te met toujours de bonne humeur ?",
+"it": "Quale piatto ti mette sempre di buon umore?",
+"pt": "Que refeição te põe sempre bem-disposto?",
+"pt_BR": "Qual comida sempre deixa você de bom humor?"
+}
+},
+{
+"id": "gratitude-005",
+"lv": "any",
+"i18n": {
+"en": "What simple pleasure makes your day better?",
+"de": "Welches einfache Vergnügen macht deinen Tag besser?",
+"es": "¿Qué placer sencillo hace que tu día sea mejor?",
+"fr": "Quel plaisir simple rend ta journée meilleure ?",
+"it": "Quale piacere semplice rende migliore la tua giornata?",
+"pt": "Que prazer simples torna o teu dia melhor?",
+"pt_BR": "Qual prazer simples deixa o seu dia melhor?"
+}
+},
+{
+"id": "gratitude-006",
+"lv": "any",
+"i18n": {
+"en": "Which place are you most thankful for, and why?",
+"de": "Für welchen Ort bist du am dankbarsten, und warum?",
+"es": "¿Por qué lugar te sientes más agradecido, y por qué?",
+"fr": "Pour quel endroit es-tu le plus reconnaissant, et pourquoi ?",
+"it": "Per quale luogo sei più grato, e perché?",
+"pt": "Por que lugar estás mais grato, e porquê?",
+"pt_BR": "Por qual lugar você é mais grato, e por quê?"
+}
+},
+{
+"id": "gratitude-007",
+"lv": "any",
+"i18n": {
+"en": "What is the kindest thing a stranger has ever done for you?",
+"de": "Was ist das Freundlichste, das ein Fremder je für dich getan hat?",
+"es": "¿Qué es lo más amable que un desconocido ha hecho por ti?",
+"fr": "Quelle est la chose la plus gentille qu'un inconnu ait faite pour toi ?",
+"it": "Qual è la cosa più gentile che uno sconosciuto abbia mai fatto per te?",
+"pt": "Qual foi a coisa mais simpática que um desconhecido já fez por ti?",
+"pt_BR": "Qual foi a coisa mais gentil que um desconhecido já fez por você?"
+}
+},
+{
+"id": "gratitude-008",
+"lv": "any",
+"i18n": {
+"en": "Which friend always manages to make you laugh?",
+"de": "Welcher Freund schafft es immer, dich zum Lachen zu bringen?",
+"es": "¿Qué amigo siempre consigue hacerte reír?",
+"fr": "Quel ami réussit toujours à te faire rire ?",
+"it": "Quale amico riesce sempre a farti ridere?",
+"pt": "Que amigo consegue sempre fazer-te rir?",
+"pt_BR": "Qual amigo sempre consegue fazer você rir?"
+}
+},
+{
+"id": "gratitude-009",
+"lv": "any",
+"i18n": {
+"en": "What is something you own that you really love using?",
+"de": "Welchen Gegenstand besitzt du, den du richtig gern benutzt?",
+"es": "¿Qué objeto tuyo te encanta usar?",
+"fr": "Quel objet que tu possèdes adores-tu utiliser ?",
+"it": "Quale oggetto che possiedi ami davvero usare?",
+"pt": "Que objeto teu adoras mesmo usar?",
+"pt_BR": "Qual objeto seu você adora usar?"
+}
+},
+{
+"id": "gratitude-010",
+"lv": "any",
+"i18n": {
+"en": "Which skill are you glad you learned?",
+"de": "Über welche Fähigkeit, die du gelernt hast, freust du dich?",
+"es": "¿Qué habilidad te alegras de haber aprendido?",
+"fr": "Quelle compétence es-tu content d'avoir apprise ?",
+"it": "Quale abilità sei contento di aver imparato?",
+"pt": "Que competência estás contente por ter aprendido?",
+"pt_BR": "Qual habilidade você fica feliz de ter aprendido?"
+}
+},
+{
+"id": "gratitude-011",
+"lv": "any",
+"i18n": {
+"en": "Which part of your daily routine do you enjoy the most?",
+"de": "Welchen Teil deiner Tagesroutine genießt du am meisten?",
+"es": "¿Qué parte de tu rutina diaria disfrutas más?",
+"fr": "Quelle partie de ta routine quotidienne apprécies-tu le plus ?",
+"it": "Quale parte della tua routine quotidiana ti piace di più?",
+"pt": "Que parte da tua rotina diária mais aprecias?",
+"pt_BR": "Qual parte da sua rotina diária você mais curte?"
+}
+},
+{
+"id": "gratitude-012",
+"lv": "any",
+"i18n": {
+"en": "Which season do you appreciate most, and what do you love about it?",
+"de": "Welche Jahreszeit schätzt du am meisten, und was liebst du an ihr?",
+"es": "¿Qué estación del año aprecias más y qué te encanta de ella?",
+"fr": "Quelle saison apprécies-tu le plus, et qu'aimes-tu en elle ?",
+"it": "Quale stagione apprezzi di più, e cosa ami di lei?",
+"pt": "Que estação do ano mais aprecias, e o que adoras nela?",
+"pt_BR": "Qual estação do ano você mais aprecia, e o que você ama nela?"
+}
+},
+{
+"id": "gratitude-013",
+"lv": "any",
+"i18n": {
+"en": "What is a happy memory from your childhood?",
+"de": "Was ist eine schöne Erinnerung aus deiner Kindheit?",
+"es": "¿Cuál es un recuerdo feliz de tu infancia?",
+"fr": "Quel est un souvenir heureux de ton enfance ?",
+"it": "Qual è un ricordo felice della tua infanzia?",
+"pt": "Qual é uma recordação feliz da tua infância?",
+"pt_BR": "Qual é uma lembrança feliz da sua infância?"
+}
+},
+{
+"id": "gratitude-014",
+"lv": "any",
+"i18n": {
+"en": "Who taught you something important, and what was it?",
+"de": "Wer hat dir etwas Wichtiges beigebracht, und was war es?",
+"es": "¿Quién te enseñó algo importante y qué fue?",
+"fr": "Qui t'a appris quelque chose d'important, et quoi ?",
+"it": "Chi ti ha insegnato qualcosa di importante, e che cosa?",
+"pt": "Quem te ensinou algo importante, e o que foi?",
+"pt_BR": "Quem te ensinou algo importante, e o que foi?"
+}
+},
+{
+"id": "gratitude-015",
+"lv": "any",
+"i18n": {
+"en": "What is something beautiful you saw recently?",
+"de": "Was hast du in letzter Zeit Schönes gesehen?",
+"es": "¿Qué cosa bonita has visto últimamente?",
+"fr": "Quelle belle chose as-tu vue récemment ?",
+"it": "Qual è una cosa bella che hai visto di recente?",
+"pt": "Que coisa bonita viste recentemente?",
+"pt_BR": "Que coisa bonita você viu recentemente?"
+}
+},
+{
+"id": "gratitude-016",
+"lv": "any",
+"i18n": {
+"en": "Which song always lifts your mood?",
+"de": "Welches Lied hebt immer deine Stimmung?",
+"es": "¿Qué canción siempre te levanta el ánimo?",
+"fr": "Quelle chanson te remonte toujours le moral ?",
+"it": "Quale canzone ti tira sempre su il morale?",
+"pt": "Que música te anima sempre?",
+"pt_BR": "Qual música sempre levanta o seu astral?"
+}
+},
+{
+"id": "gratitude-017",
+"lv": "any",
+"i18n": {
+"en": "What do you appreciate most about the place where you live?",
+"de": "Was schätzt du am meisten an dem Ort, an dem du lebst?",
+"es": "¿Qué es lo que más aprecias del lugar donde vives?",
+"fr": "Qu'apprécies-tu le plus dans l'endroit où tu vis ?",
+"it": "Cosa apprezzi di più del posto in cui vivi?",
+"pt": "O que mais aprecias no sítio onde vives?",
+"pt_BR": "O que você mais aprecia no lugar onde mora?"
+}
+},
+{
+"id": "gratitude-018",
+"lv": "any",
+"i18n": {
+"en": "What is a recent small win you are proud of?",
+"de": "Auf welchen kleinen Erfolg der letzten Zeit bist du stolz?",
+"es": "¿De qué pequeño logro reciente te sientes orgulloso?",
+"fr": "De quelle petite réussite récente es-tu fier ?",
+"it": "Di quale piccolo successo recente sei orgoglioso?",
+"pt": "De que pequena conquista recente te orgulhas?",
+"pt_BR": "De qual pequena conquista recente você se orgulha?"
+}
+},
+{
+"id": "gratitude-019",
+"lv": "any",
+"i18n": {
+"en": "How do people in your culture usually say thank you?",
+"de": "Wie bedanken sich die Menschen in deiner Kultur normalerweise?",
+"es": "¿Cómo suele dar las gracias la gente en tu cultura?",
+"fr": "Comment les gens disent-ils merci d'habitude dans ta culture ?",
+"it": "Come ringraziano di solito le persone nella tua cultura?",
+"pt": "Como é que as pessoas costumam agradecer na tua cultura?",
+"pt_BR": "Como as pessoas costumam agradecer na sua cultura?"
+}
+},
+{
+"id": "gratitude-020",
+"lv": "any",
+"i18n": {
+"en": "Which tradition do you love celebrating?",
+"de": "Welche Tradition feierst du besonders gern?",
+"es": "¿Qué tradición te encanta celebrar?",
+"fr": "Quelle tradition adores-tu célébrer ?",
+"it": "Quale tradizione ami festeggiare?",
+"pt": "Que tradição adoras celebrar?",
+"pt_BR": "Qual tradição você adora comemorar?"
+}
+},
+{
+"id": "gratitude-021",
+"lv": "any",
+"i18n": {
+"en": "What is something free in life that you treasure?",
+"de": "Was ist etwas Kostenloses im Leben, das du sehr schätzt?",
+"es": "¿Qué cosa gratuita de la vida valoras muchísimo?",
+"fr": "Quelle chose gratuite dans la vie chéris-tu ?",
+"it": "Qual è una cosa gratuita della vita a cui tieni molto?",
+"pt": "Que coisa gratuita na vida valorizas muito?",
+"pt_BR": "Que coisa de graça na vida você valoriza muito?"
+}
+},
+{
+"id": "gratitude-022",
+"lv": "any",
+"i18n": {
+"en": "Which book, film or series are you glad you discovered?",
+"de": "Über welches Buch, welchen Film oder welche Serie bist du froh, sie entdeckt zu haben?",
+"es": "¿Qué libro, película o serie te alegras de haber descubierto?",
+"fr": "Quel livre, film ou série es-tu content d'avoir découvert ?",
+"it": "Quale libro, film o serie sei contento di aver scoperto?",
+"pt": "Que livro, filme ou série estás contente por ter descoberto?",
+"pt_BR": "Qual livro, filme ou série você ficou feliz de descobrir?"
+}
+},
+{
+"id": "gratitude-023",
+"lv": "any",
+"i18n": {
+"en": "What do you enjoy most about your work or studies?",
+"de": "Was gefällt dir an deiner Arbeit oder deinem Studium am meisten?",
+"es": "¿Qué es lo que más disfrutas de tu trabajo o tus estudios?",
+"fr": "Qu'est-ce qui te plaît le plus dans ton travail ou tes études ?",
+"it": "Cosa ti piace di più del tuo lavoro o dei tuoi studi?",
+"pt": "O que mais gostas no teu trabalho ou nos teus estudos?",
+"pt_BR": "O que você mais curte no seu trabalho ou nos seus estudos?"
+}
+},
+{
+"id": "gratitude-024",
+"lv": "any",
+"i18n": {
+"en": "What made you laugh recently?",
+"de": "Was hat dich in letzter Zeit zum Lachen gebracht?",
+"es": "¿Qué te hizo reír últimamente?",
+"fr": "Qu'est-ce qui t'a fait rire récemment ?",
+"it": "Cosa ti ha fatto ridere di recente?",
+"pt": "O que te fez rir recentemente?",
+"pt_BR": "O que fez você rir recentemente?"
+}
+},
+{
+"id": "gratitude-025",
+"lv": "any",
+"i18n": {
+"en": "Who do you feel you have never thanked enough?",
+"de": "Wem hast du deiner Meinung nach noch nie genug gedankt?",
+"es": "¿A quién sientes que nunca le has dado suficientemente las gracias?",
+"fr": "Qui as-tu l'impression de n'avoir jamais assez remercié ?",
+"it": "Chi senti di non aver mai ringraziato abbastanza?",
+"pt": "A quem sentes que nunca agradeceste o suficiente?",
+"pt_BR": "Para quem você sente que nunca agradeceu o suficiente?"
+}
+},
+{
+"id": "gratitude-026",
+"lv": "any",
+"i18n": {
+"en": "Which trip or outing are you most thankful for?",
+"de": "Für welche Reise oder welchen Ausflug bist du am dankbarsten?",
+"es": "¿Por qué viaje o excursión te sientes más agradecido?",
+"fr": "Pour quel voyage ou quelle sortie es-tu le plus reconnaissant ?",
+"it": "Per quale viaggio o gita sei più grato?",
+"pt": "Por que viagem ou passeio estás mais grato?",
+"pt_BR": "Por qual viagem ou passeio você é mais grato?"
+}
+},
+{
+"id": "gratitude-027",
+"lv": "any",
+"i18n": {
+"en": "What is your favourite way to spend a lazy Sunday?",
+"de": "Wie verbringst du am liebsten einen gemütlichen Sonntag?",
+"es": "¿Cuál es tu forma favorita de pasar un domingo tranquilo?",
+"fr": "Quelle est ta façon préférée de passer un dimanche tranquille ?",
+"it": "Qual è il tuo modo preferito di passare una domenica pigra?",
+"pt": "Qual é a tua maneira preferida de passar um domingo preguiçoso?",
+"pt_BR": "Qual é o seu jeito favorito de passar um domingo preguiçoso?"
+}
+},
+{
+"id": "gratitude-028",
+"lv": "any",
+"i18n": {
+"en": "Which food from another culture are you happy you tried?",
+"de": "Über welches Gericht aus einer anderen Kultur bist du froh, es probiert zu haben?",
+"es": "¿Qué comida de otra cultura te alegras de haber probado?",
+"fr": "Quel plat d'une autre culture es-tu heureux d'avoir goûté ?",
+"it": "Quale cibo di un'altra cultura sei felice di aver assaggiato?",
+"pt": "Que comida de outra cultura estás contente por ter provado?",
+"pt_BR": "Qual comida de outra cultura você ficou feliz de ter provado?"
+}
+},
+{
+"id": "gratitude-029",
+"lv": "any",
+"i18n": {
+"en": "What pleasant surprise did you have recently?",
+"de": "Welche angenehme Überraschung hast du kürzlich erlebt?",
+"es": "¿Qué sorpresa agradable has tenido últimamente?",
+"fr": "Quelle agréable surprise as-tu eue récemment ?",
+"it": "Quale piacevole sorpresa hai avuto di recente?",
+"pt": "Que surpresa agradável tiveste recentemente?",
+"pt_BR": "Qual surpresa agradável você teve recentemente?"
+}
+},
+{
+"id": "gratitude-030",
+"lv": "any",
+"i18n": {
+"en": "Which animal or pet has brought joy into your life?",
+"de": "Welches Tier hat Freude in dein Leben gebracht?",
+"es": "¿Qué animal o mascota ha traído alegría a tu vida?",
+"fr": "Quel animal a apporté de la joie dans ta vie ?",
+"it": "Quale animale ha portato gioia nella tua vita?",
+"pt": "Que animal trouxe alegria à tua vida?",
+"pt_BR": "Qual animal trouxe alegria para a sua vida?"
+}
+},
+{
+"id": "gratitude-031",
+"lv": "any",
+"i18n": {
+"en": "What do you appreciate about your body today?",
+"de": "Was schätzt du heute an deinem Körper?",
+"es": "¿Qué aprecias hoy de tu cuerpo?",
+"fr": "Qu'apprécies-tu chez ton corps aujourd'hui ?",
+"it": "Cosa apprezzi oggi del tuo corpo?",
+"pt": "O que aprecias hoje no teu corpo?",
+"pt_BR": "O que você aprecia hoje no seu corpo?"
+}
+},
+{
+"id": "gratitude-032",
+"lv": "any",
+"i18n": {
+"en": "Which hobby gives you the most joy?",
+"de": "Welches Hobby macht dir die meiste Freude?",
+"es": "¿Qué afición te da más alegría?",
+"fr": "Quel loisir te procure le plus de joie ?",
+"it": "Quale hobby ti dà più gioia?",
+"pt": "Que passatempo te dá mais alegria?",
+"pt_BR": "Qual hobby te dá mais alegria?"
+}
+},
+{
+"id": "gratitude-033",
+"lv": "any",
+"i18n": {
+"en": "What about today would you like to remember?",
+"de": "Woran von heute möchtest du dich gern erinnern?",
+"es": "¿Qué te gustaría recordar del día de hoy?",
+"fr": "De quoi aimerais-tu te souvenir aujourd'hui ?",
+"it": "Cosa di oggi ti piacerebbe ricordare?",
+"pt": "O que é que gostavas de recordar do dia de hoje?",
+"pt_BR": "O que você gostaria de lembrar do dia de hoje?"
+}
+},
+{
+"id": "gratitude-034",
+"lv": "any",
+"i18n": {
+"en": "Who in your family are you especially grateful for, and why?",
+"de": "Für wen in deiner Familie bist du besonders dankbar, und warum?",
+"es": "¿Por quién de tu familia te sientes especialmente agradecido, y por qué?",
+"fr": "Pour qui dans ta famille es-tu particulièrement reconnaissant, et pourquoi ?",
+"it": "Per chi nella tua famiglia sei particolarmente grato, e perché?",
+"pt": "Por quem na tua família estás especialmente grato, e porquê?",
+"pt_BR": "Por quem na sua família você é especialmente grato, e por quê?"
+}
+},
+{
+"id": "gratitude-035",
+"lv": "any",
+"i18n": {
+"en": "What piece of advice are you glad someone gave you?",
+"de": "Über welchen Rat, den dir jemand gegeben hat, bist du froh?",
+"es": "¿Qué consejo te alegras de que alguien te diera?",
+"fr": "Quel conseil es-tu content qu'on t'ait donné ?",
+"it": "Quale consiglio sei contento che qualcuno ti abbia dato?",
+"pt": "Que conselho estás contente por alguém te ter dado?",
+"pt_BR": "Qual conselho você fica feliz que alguém tenha te dado?"
+}
+},
+{
+"id": "gratitude-036",
+"lv": "any",
+"i18n": {
+"en": "Which view or landscape always makes you stop and smile?",
+"de": "Bei welchem Ausblick oder welcher Landschaft bleibst du immer stehen und lächelst?",
+"es": "¿Qué vista o paisaje siempre te hace detenerte y sonreír?",
+"fr": "Quelle vue ou quel paysage te fait toujours t'arrêter et sourire ?",
+"it": "Quale panorama ti fa sempre fermare e sorridere?",
+"pt": "Que vista ou paisagem te faz sempre parar e sorrir?",
+"pt_BR": "Qual vista ou paisagem sempre faz você parar e sorrir?"
+}
+},
+{
+"id": "gratitude-037",
+"lv": "any",
+"i18n": {
+"en": "What are you looking forward to this week?",
+"de": "Worauf freust du dich diese Woche?",
+"es": "¿Qué te hace ilusión esta semana?",
+"fr": "Qu'attends-tu avec impatience cette semaine ?",
+"it": "Cosa non vedi l'ora di fare questa settimana?",
+"pt": "De que estás à espera com entusiasmo esta semana?",
+"pt_BR": "O que você está ansioso para fazer esta semana?"
+}
+},
+{
+"id": "gratitude-038",
+"lv": "any",
+"i18n": {
+"en": "Which everyday technology are you most thankful for?",
+"de": "Für welche Alltagstechnik bist du am dankbarsten?",
+"es": "¿Por qué tecnología cotidiana te sientes más agradecido?",
+"fr": "Pour quelle technologie du quotidien es-tu le plus reconnaissant ?",
+"it": "Per quale tecnologia di tutti i giorni sei più grato?",
+"pt": "Por que tecnologia do dia a dia estás mais grato?",
+"pt_BR": "Por qual tecnologia do dia a dia você é mais grato?"
+}
+},
+{
+"id": "gratitude-039",
+"lv": "any",
+"i18n": {
+"en": "What quality in yourself do you appreciate?",
+"de": "Welche Eigenschaft schätzt du an dir selbst?",
+"es": "¿Qué cualidad aprecias de ti mismo?",
+"fr": "Quelle qualité apprécies-tu chez toi ?",
+"it": "Quale qualità apprezzi di te stesso?",
+"pt": "Que qualidade aprecias em ti próprio?",
+"pt_BR": "Qual qualidade você aprecia em si mesmo?"
+}
+},
+{
+"id": "gratitude-040",
+"lv": "any",
+"i18n": {
+"en": "How do you like to show people that you appreciate them?",
+"de": "Wie zeigst du Menschen gern, dass du sie schätzt?",
+"es": "¿Cómo te gusta demostrar a las personas que las aprecias?",
+"fr": "Comment aimes-tu montrer aux gens que tu les apprécies ?",
+"it": "Come ti piace dimostrare alle persone che le apprezzi?",
+"pt": "Como gostas de mostrar às pessoas que as aprecias?",
+"pt_BR": "Como você gosta de mostrar às pessoas que as valoriza?"
+}
+},
+{
+"id": "gratitude-041",
+"lv": "beginner",
+"i18n": {
+"en": "Have you ever kept a gratitude journal? How did it go?",
+"de": "Hast du schon einmal ein Dankbarkeitstagebuch geführt? Wie lief es?",
+"es": "¿Alguna vez has llevado un diario de gratitud? ¿Qué tal te fue?",
+"fr": "As-tu déjà tenu un journal de gratitude ? Comment ça s'est passé ?",
+"it": "Hai mai tenuto un diario della gratitudine? Com'è andata?",
+"pt": "Já alguma vez tiveste um diário de gratidão? Como correu?",
+"pt_BR": "Você já teve um diário da gratidão? Como foi?"
+}
+},
+{
+"id": "gratitude-042",
+"lv": "beginner",
+"i18n": {
+"en": "What three good things happened to you yesterday?",
+"de": "Welche drei schönen Dinge sind dir gestern passiert?",
+"es": "¿Qué tres cosas buenas te pasaron ayer?",
+"fr": "Quelles sont les trois bonnes choses qui te sont arrivées hier ?",
+"it": "Quali tre cose belle ti sono successe ieri?",
+"pt": "Que três coisas boas te aconteceram ontem?",
+"pt_BR": "Quais três coisas boas aconteceram com você ontem?"
+}
+},
+{
+"id": "gratitude-043",
+"lv": "beginner",
+"i18n": {
+"en": "At what moment of the day could you pause to notice something good?",
+"de": "In welchem Moment des Tages könntest du innehalten, um etwas Schönes zu bemerken?",
+"es": "¿En qué momento del día podrías parar para fijarte en algo bueno?",
+"fr": "À quel moment de la journée pourrais-tu t'arrêter pour remarquer quelque chose de bien ?",
+"it": "In quale momento della giornata potresti fermarti a notare qualcosa di bello?",
+"pt": "Em que momento do dia podias parar para reparar em algo bom?",
+"pt_BR": "Em que momento do dia você poderia parar para notar algo bom?"
+}
+},
+{
+"id": "gratitude-044",
+"lv": "beginner",
+"i18n": {
+"en": "What made you curious about practising gratitude?",
+"de": "Was hat dich neugierig darauf gemacht, Dankbarkeit zu üben?",
+"es": "¿Qué te despertó la curiosidad por practicar la gratitud?",
+"fr": "Qu'est-ce qui t'a donné envie de pratiquer la gratitude ?",
+"it": "Cosa ti ha incuriosito della pratica della gratitudine?",
+"pt": "O que te despertou a curiosidade de praticar a gratidão?",
+"pt_BR": "O que despertou sua curiosidade para praticar a gratidão?"
+}
+},
+{
+"id": "gratitude-045",
+"lv": "beginner",
+"i18n": {
+"en": "Who would you like to send a thank-you message to today?",
+"de": "Wem würdest du heute gern eine Dankesnachricht schicken?",
+"es": "¿A quién te gustaría enviarle hoy un mensaje de agradecimiento?",
+"fr": "À qui aimerais-tu envoyer un message de remerciement aujourd'hui ?",
+"it": "A chi vorresti mandare oggi un messaggio di ringraziamento?",
+"pt": "A quem gostavas de enviar hoje uma mensagem de agradecimento?",
+"pt_BR": "Para quem você gostaria de mandar hoje uma mensagem de agradecimento?"
+}
+},
+{
+"id": "gratitude-046",
+"lv": "beginner",
+"i18n": {
+"en": "What did you taste today that you really enjoyed?",
+"de": "Was hast du heute gegessen oder getrunken, das dir richtig geschmeckt hat?",
+"es": "¿Qué probaste hoy que te gustó mucho?",
+"fr": "Qu'as-tu goûté aujourd'hui que tu as vraiment aimé ?",
+"it": "Cosa hai assaggiato oggi che ti è piaciuto davvero?",
+"pt": "O que provaste hoje de que gostaste mesmo?",
+"pt_BR": "O que você provou hoje de que gostou muito?"
+}
+},
+{
+"id": "gratitude-047",
+"lv": "beginner",
+"i18n": {
+"en": "Which sound made your day a little nicer?",
+"de": "Welches Geräusch hat deinen Tag ein bisschen schöner gemacht?",
+"es": "¿Qué sonido hizo tu día un poco más bonito?",
+"fr": "Quel son a rendu ta journée un peu plus agréable ?",
+"it": "Quale suono ha reso la tua giornata un po' più bella?",
+"pt": "Que som tornou o teu dia um pouco mais bonito?",
+"pt_BR": "Qual som deixou o seu dia um pouco mais bonito?"
+}
+},
+{
+"id": "gratitude-048",
+"lv": "beginner",
+"i18n": {
+"en": "What good thing in your life do you often take for granted?",
+"de": "Welches Gute in deinem Leben nimmst du oft als selbstverständlich hin?",
+"es": "¿Qué cosa buena de tu vida sueles dar por sentada?",
+"fr": "Quelle bonne chose de ta vie considères-tu souvent comme acquise ?",
+"it": "Quale cosa bella della tua vita dai spesso per scontata?",
+"pt": "Que coisa boa na tua vida costumas dar como garantida?",
+"pt_BR": "Que coisa boa na sua vida você costuma achar normal demais para notar?"
+}
+},
+{
+"id": "gratitude-049",
+"lv": "beginner",
+"i18n": {
+"en": "Would you rather write down good things or share them out loud? Why?",
+"de": "Schreibst du schöne Dinge lieber auf oder erzählst du sie lieber? Warum?",
+"es": "¿Prefieres escribir las cosas buenas o contarlas en voz alta? ¿Por qué?",
+"fr": "Préfères-tu écrire les bonnes choses ou les partager à voix haute ? Pourquoi ?",
+"it": "Preferisci scrivere le cose belle o raccontarle ad alta voce? Perché?",
+"pt": "Preferes escrever as coisas boas ou partilhá-las em voz alta? Porquê?",
+"pt_BR": "Você prefere escrever as coisas boas ou compartilhá-las em voz alta? Por quê?"
+}
+},
+{
+"id": "gratitude-050",
+"lv": "beginner",
+"i18n": {
+"en": "What small thing at home makes you feel cosy?",
+"de": "Welche Kleinigkeit zu Hause sorgt bei dir für Gemütlichkeit?",
+"es": "¿Qué pequeño detalle de tu casa te hace sentir a gusto?",
+"fr": "Quel petit détail chez toi te fait te sentir bien au chaud ?",
+"it": "Quale piccola cosa a casa ti fa sentire a tuo agio?",
+"pt": "Que pequena coisa em casa te faz sentir aconchegado?",
+"pt_BR": "Que coisinha em casa faz você se sentir aconchegado?"
+}
+},
+{
+"id": "gratitude-051",
+"lv": "beginner",
+"i18n": {
+"en": "Who helped you recently, even in a small way?",
+"de": "Wer hat dir kürzlich geholfen, und sei es nur ein bisschen?",
+"es": "¿Quién te ayudó hace poco, aunque fuera en algo pequeño?",
+"fr": "Qui t'a aidé récemment, même un tout petit peu ?",
+"it": "Chi ti ha aiutato di recente, anche solo in piccolo?",
+"pt": "Quem te ajudou recentemente, mesmo que numa coisa pequena?",
+"pt_BR": "Quem te ajudou recentemente, mesmo que numa coisa pequena?"
+}
+},
+{
+"id": "gratitude-052",
+"lv": "beginner",
+"i18n": {
+"en": "What is one thing that went smoothly for you today?",
+"de": "Was ist heute bei dir reibungslos gelaufen?",
+"es": "¿Qué cosa te salió bien y sin complicaciones hoy?",
+"fr": "Qu'est-ce qui s'est bien passé pour toi aujourd'hui, sans accroc ?",
+"it": "Cosa ti è andato liscio oggi?",
+"pt": "O que é que te correu bem hoje, sem complicações?",
+"pt_BR": "O que deu certo para você hoje, sem complicação?"
+}
+},
+{
+"id": "gratitude-053",
+"lv": "beginner",
+"i18n": {
+"en": "What would you put in a gratitude jar this week?",
+"de": "Was würdest du diese Woche in ein Dankbarkeitsglas legen?",
+"es": "¿Qué meterías esta semana en un frasco de gratitud?",
+"fr": "Que mettrais-tu dans un bocal de gratitude cette semaine ?",
+"it": "Cosa metteresti questa settimana in un barattolo della gratitudine?",
+"pt": "O que colocarias esta semana num frasco da gratidão?",
+"pt_BR": "O que você colocaria esta semana num pote da gratidão?"
+}
+},
+{
+"id": "gratitude-054",
+"lv": "beginner",
+"i18n": {
+"en": "Which photo on your phone reminds you of a happy moment?",
+"de": "Welches Foto auf deinem Handy erinnert dich an einen glücklichen Moment?",
+"es": "¿Qué foto de tu móvil te recuerda un momento feliz?",
+"fr": "Quelle photo sur ton téléphone te rappelle un moment heureux ?",
+"it": "Quale foto sul tuo telefono ti ricorda un momento felice?",
+"pt": "Que fotografia no teu telemóvel te lembra um momento feliz?",
+"pt_BR": "Qual foto no seu celular te lembra um momento feliz?"
+}
+},
+{
+"id": "gratitude-055",
+"lv": "beginner",
+"i18n": {
+"en": "How do you feel when someone thanks you sincerely?",
+"de": "Wie fühlst du dich, wenn sich jemand aufrichtig bei dir bedankt?",
+"es": "¿Cómo te sientes cuando alguien te da las gracias de corazón?",
+"fr": "Que ressens-tu quand quelqu'un te remercie sincèrement ?",
+"it": "Come ti senti quando qualcuno ti ringrazia sinceramente?",
+"pt": "Como te sentes quando alguém te agradece com sinceridade?",
+"pt_BR": "Como você se sente quando alguém te agradece de coração?"
+}
+},
+{
+"id": "gratitude-056",
+"lv": "beginner",
+"i18n": {
+"en": "What is a good thing about your neighbourhood?",
+"de": "Was ist schön an deiner Nachbarschaft?",
+"es": "¿Qué tiene de bueno tu barrio?",
+"fr": "Qu'y a-t-il de bien dans ton quartier ?",
+"it": "Cosa c'è di bello nel tuo quartiere?",
+"pt": "O que há de bom no teu bairro?",
+"pt_BR": "O que tem de bom no seu bairro?"
+}
+},
+{
+"id": "gratitude-057",
+"lv": "beginner",
+"i18n": {
+"en": "Which moment of your morning do you appreciate most?",
+"de": "Welchen Moment deines Morgens schätzt du am meisten?",
+"es": "¿Qué momento de tu mañana aprecias más?",
+"fr": "Quel moment de ta matinée apprécies-tu le plus ?",
+"it": "Quale momento della tua mattina apprezzi di più?",
+"pt": "Que momento da tua manhã mais aprecias?",
+"pt_BR": "Qual momento da sua manhã você mais aprecia?"
+}
+},
+{
+"id": "gratitude-058",
+"lv": "beginner",
+"i18n": {
+"en": "What do you think makes a thank-you feel genuine?",
+"de": "Was macht deiner Meinung nach ein Dankeschön echt?",
+"es": "¿Qué crees que hace que un agradecimiento suene sincero?",
+"fr": "Selon toi, qu'est-ce qui rend un merci vraiment sincère ?",
+"it": "Secondo te, cosa rende sincero un grazie?",
+"pt": "Na tua opinião, o que torna um agradecimento sincero?",
+"pt_BR": "Na sua opinião, o que faz um agradecimento parecer sincero?"
+}
+},
+{
+"id": "gratitude-059",
+"lv": "beginner",
+"i18n": {
+"en": "Which person made you smile this week?",
+"de": "Wer hat dich diese Woche zum Lächeln gebracht?",
+"es": "¿Qué persona te hizo sonreír esta semana?",
+"fr": "Quelle personne t'a fait sourire cette semaine ?",
+"it": "Quale persona ti ha fatto sorridere questa settimana?",
+"pt": "Que pessoa te fez sorrir esta semana?",
+"pt_BR": "Qual pessoa fez você sorrir esta semana?"
+}
+},
+{
+"id": "gratitude-060",
+"lv": "beginner",
+"i18n": {
+"en": "What did you learn recently that you are glad about?",
+"de": "Was hast du kürzlich gelernt, worüber du dich freust?",
+"es": "¿Qué has aprendido últimamente que te alegra?",
+"fr": "Qu'as-tu appris récemment qui te rend content ?",
+"it": "Cosa hai imparato di recente che ti rende contento?",
+"pt": "O que aprendeste recentemente que te deixa contente?",
+"pt_BR": "O que você aprendeu recentemente que te deixa feliz?"
+}
+},
+{
+"id": "gratitude-061",
+"lv": "beginner",
+"i18n": {
+"en": "What good thing could you look out for on your next walk?",
+"de": "Auf welches schöne Detail könntest du bei deinem nächsten Spaziergang achten?",
+"es": "¿En qué cosa buena podrías fijarte en tu próximo paseo?",
+"fr": "Quelle bonne chose pourrais-tu guetter lors de ta prochaine promenade ?",
+"it": "A quale cosa bella potresti fare caso nella tua prossima passeggiata?",
+"pt": "Em que coisa boa podias reparar no teu próximo passeio?",
+"pt_BR": "Em que coisa boa você poderia reparar na sua próxima caminhada?"
+}
+},
+{
+"id": "gratitude-062",
+"lv": "beginner",
+"i18n": {
+"en": "Which everyday helper do you appreciate, like a bus driver or a baker?",
+"de": "Welchen Alltagshelfer schätzt du, zum Beispiel einen Busfahrer oder eine Bäckerin?",
+"es": "¿Qué persona que te ayuda a diario aprecias, como un conductor de autobús o una panadera?",
+"fr": "Quel aidant du quotidien apprécies-tu, comme un chauffeur de bus ou une boulangère ?",
+"it": "Quale persona che ti aiuta ogni giorno apprezzi, come un autista o una fornaia?",
+"pt": "Que pessoa do teu dia a dia aprecias, como um motorista de autocarro ou uma padeira?",
+"pt_BR": "Qual pessoa do seu dia a dia você valoriza, como um motorista de ônibus ou uma padeira?"
+}
+},
+{
+"id": "gratitude-063",
+"lv": "beginner",
+"i18n": {
+"en": "How easy is it for you to notice good things on busy days?",
+"de": "Wie leicht fällt es dir, an vollen Tagen schöne Dinge zu bemerken?",
+"es": "¿Te resulta fácil fijarte en las cosas buenas en los días ajetreados?",
+"fr": "Est-ce facile pour toi de remarquer les bonnes choses les jours chargés ?",
+"it": "Ti è facile notare le cose belle nelle giornate piene?",
+"pt": "É fácil para ti reparar nas coisas boas nos dias cheios?",
+"pt_BR": "É fácil para você notar as coisas boas nos dias corridos?"
+}
+},
+{
+"id": "gratitude-064",
+"lv": "beginner",
+"i18n": {
+"en": "What would you like gratitude to bring into your life?",
+"de": "Was soll Dankbarkeit in dein Leben bringen?",
+"es": "¿Qué te gustaría que la gratitud aportara a tu vida?",
+"fr": "Qu'aimerais-tu que la gratitude apporte dans ta vie ?",
+"it": "Cosa vorresti che la gratitudine portasse nella tua vita?",
+"pt": "O que gostavas que a gratidão trouxesse à tua vida?",
+"pt_BR": "O que você gostaria que a gratidão trouxesse para a sua vida?"
+}
+},
+{
+"id": "gratitude-065",
+"lv": "beginner",
+"i18n": {
+"en": "Which kind act did you see someone do recently?",
+"de": "Welche freundliche Geste hast du kürzlich bei jemandem beobachtet?",
+"es": "¿Qué gesto amable viste hacer a alguien hace poco?",
+"fr": "Quel geste gentil as-tu vu quelqu'un faire récemment ?",
+"it": "Quale gesto gentile hai visto fare a qualcuno di recente?",
+"pt": "Que gesto simpático viste alguém fazer recentemente?",
+"pt_BR": "Qual gesto gentil você viu alguém fazer recentemente?"
+}
+},
+{
+"id": "gratitude-066",
+"lv": "intermediate",
+"i18n": {
+"en": "How has noticing good things changed your mood lately?",
+"de": "Wie hat das Bemerken schöner Dinge deine Stimmung in letzter Zeit verändert?",
+"es": "¿Cómo ha cambiado tu ánimo últimamente fijarte en las cosas buenas?",
+"fr": "Comment le fait de remarquer les bonnes choses a-t-il changé ton humeur ces derniers temps ?",
+"it": "Come è cambiato il tuo umore da quando noti le cose belle?",
+"pt": "Como é que reparar nas coisas boas mudou o teu humor ultimamente?",
+"pt_BR": "Como notar as coisas boas mudou o seu humor ultimamente?"
+}
+},
+{
+"id": "gratitude-067",
+"lv": "intermediate",
+"i18n": {
+"en": "Who would you write a gratitude letter to, and what would you say?",
+"de": "Wem würdest du einen Dankesbrief schreiben, und was würdest du sagen?",
+"es": "¿A quién le escribirías una carta de gratitud y qué le dirías?",
+"fr": "À qui écrirais-tu une lettre de gratitude, et que dirais-tu ?",
+"it": "A chi scriveresti una lettera di gratitudine, e cosa diresti?",
+"pt": "A quem escreverias uma carta de gratidão, e o que dirias?",
+"pt_BR": "Para quem você escreveria uma carta de gratidão, e o que diria?"
+}
+},
+{
+"id": "gratitude-068",
+"lv": "intermediate",
+"i18n": {
+"en": "Which challenge taught you something you are grateful for now?",
+"de": "Welche Herausforderung hat dich etwas gelehrt, wofür du heute dankbar bist?",
+"es": "¿Qué reto te enseñó algo que hoy agradeces?",
+"fr": "Quel défi t'a appris quelque chose dont tu es reconnaissant aujourd'hui ?",
+"it": "Quale sfida ti ha insegnato qualcosa per cui oggi sei grato?",
+"pt": "Que desafio te ensinou algo pelo qual hoje estás grato?",
+"pt_BR": "Qual desafio te ensinou algo pelo qual você hoje é grato?"
+}
+},
+{
+"id": "gratitude-069",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you balance gratitude with admitting that some things are hard?",
+"de": "Wie verbindest du Dankbarkeit damit, dir einzugestehen, dass manches schwer ist?",
+"es": "¿Cómo equilibras la gratitud con reconocer que algunas cosas son difíciles?",
+"fr": "Comment concilies-tu gratitude et reconnaissance que certaines choses sont difficiles ?",
+"it": "Come bilanci la gratitudine con il riconoscere che alcune cose sono difficili?",
+"pt": "Como equilibras a gratidão com admitir que algumas coisas são difíceis?",
+"pt_BR": "Como você equilibra a gratidão com admitir que algumas coisas são difíceis?"
+}
+},
+{
+"id": "gratitude-070",
+"lv": "intermediate",
+"i18n": {
+"en": "What does your gratitude reveal about what you value most?",
+"de": "Was verrät deine Dankbarkeit darüber, was dir am wichtigsten ist?",
+"es": "¿Qué revela tu gratitud sobre lo que más valoras?",
+"fr": "Que révèle ta gratitude sur ce qui compte le plus pour toi ?",
+"it": "Cosa rivela la tua gratitudine su ciò a cui tieni di più?",
+"pt": "O que é que a tua gratidão revela sobre o que mais valorizas?",
+"pt_BR": "O que a sua gratidão revela sobre o que você mais valoriza?"
+}
+},
+{
+"id": "gratitude-071",
+"lv": "intermediate",
+"i18n": {
+"en": "Which turning point in your life are you thankful for?",
+"de": "Für welchen Wendepunkt in deinem Leben bist du dankbar?",
+"es": "¿Por qué punto de inflexión en tu vida te sientes agradecido?",
+"fr": "Pour quel tournant de ta vie es-tu reconnaissant ?",
+"it": "Per quale svolta della tua vita sei grato?",
+"pt": "Por que ponto de viragem na tua vida estás grato?",
+"pt_BR": "Por qual virada na sua vida você é grato?"
+}
+},
+{
+"id": "gratitude-072",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you thank people in a way that feels personal?",
+"de": "Wie bedankst du dich auf eine persönliche Art?",
+"es": "¿Cómo das las gracias de una forma que se sienta personal?",
+"fr": "Comment remercies-tu les gens d'une façon vraiment personnelle ?",
+"it": "Come ringrazi le persone in un modo che sia davvero personale?",
+"pt": "Como agradeces às pessoas de uma forma que pareça pessoal?",
+"pt_BR": "Como você agradece às pessoas de um jeito que pareça pessoal?"
+}
+},
+{
+"id": "gratitude-073",
+"lv": "intermediate",
+"i18n": {
+"en": "What do you appreciate about friends from other cultures?",
+"de": "Was schätzt du an Freunden aus anderen Kulturen?",
+"es": "¿Qué aprecias de tus amigos de otras culturas?",
+"fr": "Qu'apprécies-tu chez tes amis d'autres cultures ?",
+"it": "Cosa apprezzi degli amici di altre culture?",
+"pt": "O que aprecias nos amigos de outras culturas?",
+"pt_BR": "O que você valoriza nos amigos de outras culturas?"
+}
+},
+{
+"id": "gratitude-074",
+"lv": "intermediate",
+"i18n": {
+"en": "When do you catch yourself complaining, and how do you reframe it?",
+"de": "Wann ertappst du dich beim Jammern, und wie deutest du es um?",
+"es": "¿Cuándo te pillas quejándote y cómo le das la vuelta?",
+"fr": "Quand te surprends-tu à te plaindre, et comment changes-tu de regard ?",
+"it": "Quando ti sorprendi a lamentarti, e come cambi prospettiva?",
+"pt": "Quando te apanhas a queixar-te, e como mudas a perspetiva?",
+"pt_BR": "Quando você se pega reclamando, e como muda a perspectiva?"
+}
+},
+{
+"id": "gratitude-075",
+"lv": "intermediate",
+"i18n": {
+"en": "Which person from your past would you like to thank today?",
+"de": "Welcher Person aus deiner Vergangenheit würdest du heute gern danken?",
+"es": "¿A qué persona de tu pasado te gustaría darle las gracias hoy?",
+"fr": "Quelle personne de ton passé aimerais-tu remercier aujourd'hui ?",
+"it": "Quale persona del tuo passato vorresti ringraziare oggi?",
+"pt": "Que pessoa do teu passado gostavas de agradecer hoje?",
+"pt_BR": "Qual pessoa do seu passado você gostaria de agradecer hoje?"
+}
+},
+{
+"id": "gratitude-076",
+"lv": "intermediate",
+"i18n": {
+"en": "What would you miss most if it suddenly vanished from your daily life?",
+"de": "Was würdest du am meisten vermissen, wenn es plötzlich aus deinem Alltag verschwände?",
+"es": "¿Qué echarías más de menos si desapareciera de repente de tu día a día?",
+"fr": "Qu'est-ce qui te manquerait le plus si cela disparaissait soudain de ton quotidien ?",
+"it": "Cosa ti mancherebbe di più se sparisse all'improvviso dalla tua vita quotidiana?",
+"pt": "Do que sentirias mais falta se desaparecesse de repente do teu dia a dia?",
+"pt_BR": "Do que você sentiria mais falta se sumisse de repente do seu dia a dia?"
+}
+},
+{
+"id": "gratitude-077",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you show appreciation at work or school?",
+"de": "Wie zeigst du Wertschätzung bei der Arbeit oder in der Schule?",
+"es": "¿Cómo muestras aprecio en el trabajo o en clase?",
+"fr": "Comment montres-tu ta reconnaissance au travail ou à l'école ?",
+"it": "Come mostri apprezzamento al lavoro o a scuola?",
+"pt": "Como mostras apreço no trabalho ou na escola?",
+"pt_BR": "Como você demonstra apreço no trabalho ou na escola?"
+}
+},
+{
+"id": "gratitude-078",
+"lv": "intermediate",
+"i18n": {
+"en": "Which happy moment would you love to relive in detail?",
+"de": "Welchen glücklichen Moment würdest du gern noch einmal ganz genau erleben?",
+"es": "¿Qué momento feliz te encantaría revivir con todo detalle?",
+"fr": "Quel moment heureux aimerais-tu revivre dans les moindres détails ?",
+"it": "Quale momento felice ti piacerebbe rivivere nei minimi dettagli?",
+"pt": "Que momento feliz adoravas reviver ao pormenor?",
+"pt_BR": "Qual momento feliz você adoraria reviver em detalhes?"
+}
+},
+{
+"id": "gratitude-079",
+"lv": "intermediate",
+"i18n": {
+"en": "What are you looking forward to, and how does the anticipation feel?",
+"de": "Worauf freust du dich, und wie fühlt sich die Vorfreude an?",
+"es": "¿Qué esperas con ilusión y cómo se siente esa anticipación?",
+"fr": "Qu'attends-tu avec impatience, et que ressens-tu en y pensant ?",
+"it": "Cosa aspetti con gioia, e che sensazione ti dà l'attesa?",
+"pt": "De que estás à espera com entusiasmo, e como te sentes ao antecipar isso?",
+"pt_BR": "O que você está esperando com alegria, e como é sentir essa expectativa?"
+}
+},
+{
+"id": "gratitude-080",
+"lv": "intermediate",
+"i18n": {
+"en": "How does social media affect the way you see your own life?",
+"de": "Wie beeinflussen soziale Medien deinen Blick auf dein eigenes Leben?",
+"es": "¿Cómo influyen las redes sociales en la forma en que ves tu propia vida?",
+"fr": "Comment les réseaux sociaux influencent-ils ta façon de voir ta propre vie ?",
+"it": "In che modo i social influenzano il modo in cui vedi la tua vita?",
+"pt": "Como é que as redes sociais influenciam a forma como vês a tua vida?",
+"pt_BR": "Como as redes sociais influenciam o jeito que você vê a sua própria vida?"
+}
+},
+{
+"id": "gratitude-081",
+"lv": "intermediate",
+"i18n": {
+"en": "Which of your strengths grew out of a difficult period?",
+"de": "Welche deiner Stärken ist aus einer schwierigen Zeit gewachsen?",
+"es": "¿Qué fortaleza tuya creció a partir de una época difícil?",
+"fr": "Laquelle de tes forces est née d'une période difficile ?",
+"it": "Quale tuo punto di forza è nato da un periodo difficile?",
+"pt": "Que força tua nasceu de um período difícil?",
+"pt_BR": "Qual força sua nasceu de um período difícil?"
+}
+},
+{
+"id": "gratitude-082",
+"lv": "intermediate",
+"i18n": {
+"en": "Which tradition of giving thanks from another culture do you find beautiful?",
+"de": "Welchen Dankesbrauch aus einer anderen Kultur findest du schön?",
+"es": "¿Qué tradición de agradecimiento de otra cultura te parece bonita?",
+"fr": "Quelle tradition de remerciement d'une autre culture trouves-tu belle ?",
+"it": "Quale tradizione di ringraziamento di un'altra cultura trovi bella?",
+"pt": "Que tradição de agradecimento de outra cultura achas bonita?",
+"pt_BR": "Qual tradição de agradecimento de outra cultura você acha bonita?"
+}
+},
+{
+"id": "gratitude-083",
+"lv": "intermediate",
+"i18n": {
+"en": "What does having enough mean to you?",
+"de": "Was bedeutet es für dich, genug zu haben?",
+"es": "¿Qué significa para ti tener suficiente?",
+"fr": "Que signifie pour toi avoir assez ?",
+"it": "Cosa significa per te avere abbastanza?",
+"pt": "O que significa para ti ter o suficiente?",
+"pt_BR": "O que significa ter o suficiente para você?"
+}
+},
+{
+"id": "gratitude-084",
+"lv": "intermediate",
+"i18n": {
+"en": "How could you share a good-things moment with friends or family?",
+"de": "Wie könntest du mit Freunden oder Familie einen Moment für schöne Dinge teilen?",
+"es": "¿Cómo podrías compartir un momento de cosas buenas con amigos o familia?",
+"fr": "Comment pourrais-tu partager un moment des bonnes choses avec tes amis ou ta famille ?",
+"it": "Come potresti condividere un momento delle cose belle con amici o famiglia?",
+"pt": "Como podias partilhar um momento de coisas boas com amigos ou família?",
+"pt_BR": "Como você poderia compartilhar um momento de coisas boas com amigos ou família?"
+}
+},
+{
+"id": "gratitude-085",
+"lv": "intermediate",
+"i18n": {
+"en": "Which unseen helpers make your daily life easier?",
+"de": "Welche unsichtbaren Helfer machen deinen Alltag leichter?",
+"es": "¿Qué ayudantes invisibles te hacen la vida diaria más fácil?",
+"fr": "Quelles personnes de l'ombre te facilitent la vie au quotidien ?",
+"it": "Quali aiutanti invisibili ti rendono più facile la vita quotidiana?",
+"pt": "Que ajudantes invisíveis tornam o teu dia a dia mais fácil?",
+"pt_BR": "Quais ajudantes invisíveis deixam o seu dia a dia mais fácil?"
+}
+},
+{
+"id": "gratitude-086",
+"lv": "advanced",
+"i18n": {
+"en": "How has your way of seeing everyday life changed since you started?",
+"de": "Wie hat sich dein Blick auf den Alltag verändert, seit du angefangen hast?",
+"es": "¿Cómo ha cambiado tu forma de ver el día a día desde que empezaste?",
+"fr": "Comment ta façon de voir le quotidien a-t-elle changé depuis que tu as commencé ?",
+"it": "Come è cambiato il tuo modo di vedere la vita quotidiana da quando hai iniziato?",
+"pt": "Como mudou a tua forma de ver o dia a dia desde que começaste?",
+"pt_BR": "Como mudou o seu jeito de ver o dia a dia desde que você começou?"
+}
+},
+{
+"id": "gratitude-087",
+"lv": "advanced",
+"i18n": {
+"en": "Who quietly shaped who you are today without knowing it?",
+"de": "Wer hat dich, ohne es zu wissen, still zu dem Menschen gemacht, der du heute bist?",
+"es": "¿Quién te marcó en silencio, sin saberlo, para ser quien eres hoy?",
+"fr": "Qui a discrètement façonné la personne que tu es, sans le savoir ?",
+"it": "Chi ha contribuito in silenzio, senza saperlo, a farti diventare chi sei oggi?",
+"pt": "Quem ajudou em silêncio, sem saber, a fazer de ti quem és hoje?",
+"pt_BR": "Quem ajudou em silêncio, sem saber, a fazer de você quem é hoje?"
+}
+},
+{
+"id": "gratitude-088",
+"lv": "advanced",
+"i18n": {
+"en": "How do you turn gratitude into action for others?",
+"de": "Wie verwandelst du Dankbarkeit in Taten für andere?",
+"es": "¿Cómo conviertes la gratitud en acciones por los demás?",
+"fr": "Comment transformes-tu ta gratitude en actions pour les autres ?",
+"it": "Come trasformi la gratitudine in azioni per gli altri?",
+"pt": "Como transformas a gratidão em ações pelos outros?",
+"pt_BR": "Como você transforma a gratidão em ações pelos outros?"
+}
+},
+{
+"id": "gratitude-089",
+"lv": "advanced",
+"i18n": {
+"en": "What has gratitude taught you about humility?",
+"de": "Was hat dich Dankbarkeit über Bescheidenheit gelehrt?",
+"es": "¿Qué te ha enseñado la gratitud sobre la humildad?",
+"fr": "Qu'est-ce que la gratitude t'a appris sur l'humilité ?",
+"it": "Cosa ti ha insegnato la gratitudine sull'umiltà?",
+"pt": "O que é que a gratidão te ensinou sobre a humildade?",
+"pt_BR": "O que a gratidão te ensinou sobre humildade?"
+}
+},
+{
+"id": "gratitude-090",
+"lv": "advanced",
+"i18n": {
+"en": "How do you keep your practice honest and avoid forced positivity?",
+"de": "Wie hältst du deine Praxis ehrlich und vermeidest erzwungene Positivität?",
+"es": "¿Cómo mantienes tu práctica sincera y evitas la positividad forzada?",
+"fr": "Comment gardes-tu ta pratique sincère en évitant la positivité forcée ?",
+"it": "Come mantieni sincera la tua pratica ed eviti la positività forzata?",
+"pt": "Como manténs a tua prática honesta e evitas a positividade forçada?",
+"pt_BR": "Como você mantém sua prática honesta e evita a positividade forçada?"
+}
+},
+{
+"id": "gratitude-091",
+"lv": "advanced",
+"i18n": {
+"en": "Which people would you invite to a gratitude circle, and why?",
+"de": "Wen würdest du zu einem Dankbarkeitskreis einladen, und warum?",
+"es": "¿A quién invitarías a un círculo de gratitud y por qué?",
+"fr": "Qui inviterais-tu à un cercle de gratitude, et pourquoi ?",
+"it": "Chi inviteresti a un cerchio della gratitudine, e perché?",
+"pt": "Quem convidarias para um círculo de gratidão, e porquê?",
+"pt_BR": "Quem você convidaria para um círculo de gratidão, e por quê?"
+}
+},
+{
+"id": "gratitude-092",
+"lv": "advanced",
+"i18n": {
+"en": "How would you teach gratitude to a friend in a few minutes?",
+"de": "Wie würdest du einem Freund in wenigen Minuten Dankbarkeit beibringen?",
+"es": "¿Cómo le enseñarías la gratitud a un amigo en pocos minutos?",
+"fr": "Comment enseignerais-tu la gratitude à un ami en quelques minutes ?",
+"it": "Come insegneresti la gratitudine a un amico in pochi minuti?",
+"pt": "Como ensinarias a gratidão a um amigo em poucos minutos?",
+"pt_BR": "Como você ensinaria gratidão a um amigo em poucos minutos?"
+}
+},
+{
+"id": "gratitude-093",
+"lv": "advanced",
+"i18n": {
+"en": "Which lucky moments in your life are you most thankful for?",
+"de": "Für welche Glücksmomente in deinem Leben bist du am dankbarsten?",
+"es": "¿Por qué golpes de suerte en tu vida te sientes más agradecido?",
+"fr": "Pour quels coups de chance dans ta vie es-tu le plus reconnaissant ?",
+"it": "Per quali colpi di fortuna della tua vita sei più grato?",
+"pt": "Por que golpes de sorte na tua vida estás mais grato?",
+"pt_BR": "Por quais golpes de sorte na sua vida você é mais grato?"
+}
+},
+{
+"id": "gratitude-094",
+"lv": "advanced",
+"i18n": {
+"en": "How do you find something to appreciate on really tough days?",
+"de": "Wie findest du an richtig schweren Tagen etwas, das du schätzen kannst?",
+"es": "¿Cómo encuentras algo que apreciar en los días realmente duros?",
+"fr": "Comment trouves-tu quelque chose à apprécier les jours vraiment durs ?",
+"it": "Come trovi qualcosa da apprezzare nelle giornate davvero dure?",
+"pt": "Como encontras algo para apreciar nos dias mesmo difíceis?",
+"pt_BR": "Como você encontra algo para valorizar nos dias realmente difíceis?"
+}
+},
+{
+"id": "gratitude-095",
+"lv": "advanced",
+"i18n": {
+"en": "Which of your gratitude practices do you want to keep for life?",
+"de": "Welche deiner Dankbarkeitsübungen möchtest du ein Leben lang beibehalten?",
+"es": "¿Qué prácticas de gratitud quieres conservar toda la vida?",
+"fr": "Quelles pratiques de gratitude veux-tu garder toute ta vie ?",
+"it": "Quali pratiche di gratitudine vuoi mantenere per tutta la vita?",
+"pt": "Que práticas de gratidão queres manter para a vida toda?",
+"pt_BR": "Quais práticas de gratidão você quer manter para a vida toda?"
+}
+},
+{
+"id": "gratitude-096",
+"lv": "advanced",
+"i18n": {
+"en": "How has expressing thanks changed your relationships?",
+"de": "Wie hat das Danke sagen deine Beziehungen verändert?",
+"es": "¿Cómo han cambiado tus relaciones desde que expresas más tu agradecimiento?",
+"fr": "Comment le fait d'exprimer ta gratitude a-t-il changé tes relations ?",
+"it": "Come sono cambiate le tue relazioni da quando esprimi gratitudine?",
+"pt": "Como é que expressar gratidão mudou as tuas relações?",
+"pt_BR": "Como expressar gratidão mudou os seus relacionamentos?"
+}
+},
+{
+"id": "gratitude-097",
+"lv": "advanced",
+"i18n": {
+"en": "What role does gratitude play in how you set your goals?",
+"de": "Welche Rolle spielt Dankbarkeit dabei, wie du dir Ziele setzt?",
+"es": "¿Qué papel tiene la gratitud en la forma en que te fijas metas?",
+"fr": "Quel rôle joue la gratitude dans la façon dont tu fixes tes objectifs ?",
+"it": "Che ruolo ha la gratitudine nel modo in cui ti poni degli obiettivi?",
+"pt": "Que papel tem a gratidão na forma como defines os teus objetivos?",
+"pt_BR": "Que papel a gratidão tem no jeito como você define suas metas?"
+}
+},
+{
+"id": "gratitude-098",
+"lv": "advanced",
+"i18n": {
+"en": "If you could thank everyone who helped you get here, who would be first?",
+"de": "Wenn du allen danken könntest, die dir auf deinem Weg geholfen haben, wer wäre der Erste?",
+"es": "Si pudieras dar las gracias a todos los que te ayudaron a llegar aquí, ¿quién sería el primero?",
+"fr": "Si tu pouvais remercier tous ceux qui t'ont aidé à arriver ici, qui serait le premier ?",
+"it": "Se potessi ringraziare tutti quelli che ti hanno aiutato ad arrivare qui, chi sarebbe il primo?",
+"pt": "Se pudesses agradecer a todos os que te ajudaram a chegar aqui, quem seria o primeiro?",
+"pt_BR": "Se você pudesse agradecer a todos que te ajudaram a chegar aqui, quem seria o primeiro?"
+}
+},
+{
+"id": "gratitude-099",
+"lv": "advanced",
+"i18n": {
+"en": "What do you appreciate most about the journey you have been on?",
+"de": "Was schätzt du am meisten an dem Weg, den du gegangen bist?",
+"es": "¿Qué es lo que más aprecias del camino que has recorrido?",
+"fr": "Qu'apprécies-tu le plus dans le chemin que tu as parcouru ?",
+"it": "Cosa apprezzi di più del percorso che hai fatto?",
+"pt": "O que mais aprecias no caminho que percorreste?",
+"pt_BR": "O que você mais valoriza no caminho que percorreu?"
+}
+},
+{
+"id": "gratitude-100",
+"lv": "advanced",
+"i18n": {
+"en": "What would you like your future self to remember about gratitude?",
+"de": "Woran soll sich dein zukünftiges Ich in Sachen Dankbarkeit erinnern?",
+"es": "¿Qué te gustaría que tu yo del futuro recordara sobre la gratitud?",
+"fr": "De quoi aimerais-tu que ton futur toi se souvienne à propos de la gratitude ?",
+"it": "Cosa vorresti che il te stesso del futuro ricordasse sulla gratitudine?",
+"pt": "O que gostavas que o teu eu do futuro recordasse sobre a gratidão?",
+"pt_BR": "O que você gostaria que o seu eu do futuro lembrasse sobre a gratidão?"
+}
+}
+]
+}

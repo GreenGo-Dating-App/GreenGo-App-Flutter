@@ -1,0 +1,1305 @@
+{
+ "topic": "home_organisation",
+ "questions": [
+  {
+   "id": "home_organisation-001",
+   "lv": "any",
+   "i18n": {
+    "en": "What does an organised home mean to you personally?",
+    "de": "Was bedeutet ein ordentliches Zuhause für dich persönlich?",
+    "es": "¿Qué significa para ti un hogar ordenado?",
+    "fr": "Qu'est-ce qu'un intérieur bien rangé signifie pour toi ?",
+    "it": "Che cosa significa per te una casa ordinata?",
+    "pt": "O que significa para ti uma casa arrumada?",
+    "pt_BR": "O que significa uma casa organizada pra você?"
+   }
+  },
+  {
+   "id": "home_organisation-002",
+   "lv": "any",
+   "i18n": {
+    "en": "Which room in your home do you enjoy spending time in the most, and why?",
+    "de": "In welchem Raum deines Zuhauses verbringst du am liebsten Zeit, und warum?",
+    "es": "¿En qué habitación de tu casa te gusta más pasar tiempo y por qué?",
+    "fr": "Dans quelle pièce de chez toi aimes-tu le plus passer du temps, et pourquoi ?",
+    "it": "In quale stanza di casa tua ti piace di più stare, e perché?",
+    "pt": "Em que divisão da tua casa mais gostas de passar tempo, e porquê?",
+    "pt_BR": "Em qual cômodo da sua casa você mais gosta de ficar, e por quê?"
+   }
+  },
+  {
+   "id": "home_organisation-003",
+   "lv": "any",
+   "i18n": {
+    "en": "Are you naturally a tidy person, or does order take some effort for you?",
+    "de": "Bist du von Natur aus ordentlich, oder kostet dich Ordnung etwas Mühe?",
+    "es": "¿Eres una persona ordenada por naturaleza o te cuesta un poco mantener el orden?",
+    "fr": "Es-tu naturellement ordonné, ou le rangement te demande-t-il un effort ?",
+    "it": "Sei una persona ordinata di natura o l'ordine ti costa un po' di fatica?",
+    "pt": "És naturalmente uma pessoa arrumada, ou a arrumação custa-te algum esforço?",
+    "pt_BR": "Você é naturalmente uma pessoa organizada, ou manter a ordem dá trabalho?"
+   }
+  },
+  {
+   "id": "home_organisation-004",
+   "lv": "any",
+   "i18n": {
+    "en": "What is one thing you always seem to lose at home?",
+    "de": "Was verlierst du zu Hause scheinbar immer wieder?",
+    "es": "¿Qué cosa parece que siempre pierdes en casa?",
+    "fr": "Quel objet as-tu toujours l'impression de perdre à la maison ?",
+    "it": "Qual è l'oggetto che sembri perdere sempre in casa?",
+    "pt": "Qual é a coisa que parece que estás sempre a perder em casa?",
+    "pt_BR": "Qual é aquela coisa que você vive perdendo em casa?"
+   }
+  },
+  {
+   "id": "home_organisation-005",
+   "lv": "any",
+   "i18n": {
+    "en": "How did your family organise the home when you were a child?",
+    "de": "Wie hat deine Familie das Zuhause organisiert, als du ein Kind warst?",
+    "es": "¿Cómo organizaba tu familia la casa cuando eras pequeño?",
+    "fr": "Comment ta famille organisait-elle la maison quand tu étais enfant ?",
+    "it": "Come organizzava la casa la tua famiglia quando eri piccolo?",
+    "pt": "Como é que a tua família organizava a casa quando eras criança?",
+    "pt_BR": "Como sua família organizava a casa quando você era criança?"
+   }
+  },
+  {
+   "id": "home_organisation-006",
+   "lv": "any",
+   "i18n": {
+    "en": "Which household chore do you actually enjoy?",
+    "de": "Welche Hausarbeit machst du tatsächlich gern?",
+    "es": "¿Qué tarea de la casa disfrutas de verdad?",
+    "fr": "Quelle tâche ménagère aimes-tu vraiment faire ?",
+    "it": "Quale faccenda di casa ti piace davvero fare?",
+    "pt": "Que tarefa doméstica é que gostas mesmo de fazer?",
+    "pt_BR": "Qual tarefa de casa você realmente gosta de fazer?"
+   }
+  },
+  {
+   "id": "home_organisation-007",
+   "lv": "any",
+   "i18n": {
+    "en": "And which chore do you always try to put off?",
+    "de": "Und welche Hausarbeit schiebst du immer gern auf?",
+    "es": "¿Y qué tarea siempre intentas dejar para después?",
+    "fr": "Et quelle tâche essaies-tu toujours de repousser ?",
+    "it": "E quale faccenda cerchi sempre di rimandare?",
+    "pt": "E que tarefa estás sempre a tentar adiar?",
+    "pt_BR": "E qual tarefa você sempre tenta deixar pra depois?"
+   }
+  },
+  {
+   "id": "home_organisation-008",
+   "lv": "any",
+   "i18n": {
+    "en": "What does your home look like on a typical weekday evening?",
+    "de": "Wie sieht dein Zuhause an einem typischen Abend unter der Woche aus?",
+    "es": "¿Cómo está tu casa una tarde normal entre semana?",
+    "fr": "À quoi ressemble ton intérieur un soir de semaine typique ?",
+    "it": "Com'è casa tua in una tipica sera infrasettimanale?",
+    "pt": "Como está a tua casa numa noite normal durante a semana?",
+    "pt_BR": "Como fica sua casa numa noite comum de semana?"
+   }
+  },
+  {
+   "id": "home_organisation-009",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you prefer to tidy a little every day or do a big clean once a week?",
+    "de": "Räumst du lieber jeden Tag ein bisschen auf oder machst einmal pro Woche groß sauber?",
+    "es": "¿Prefieres ordenar un poco cada día o hacer una gran limpieza una vez por semana?",
+    "fr": "Préfères-tu ranger un peu chaque jour ou faire un grand ménage une fois par semaine ?",
+    "it": "Preferisci riordinare un po' ogni giorno o fare una grande pulizia una volta a settimana?",
+    "pt": "Preferes arrumar um pouco todos os dias ou fazer uma grande limpeza uma vez por semana?",
+    "pt_BR": "Você prefere arrumar um pouco todo dia ou fazer uma faxina grande uma vez por semana?"
+   }
+  },
+  {
+   "id": "home_organisation-010",
+   "lv": "any",
+   "i18n": {
+    "en": "What item in your home are you most attached to?",
+    "de": "An welchem Gegenstand in deinem Zuhause hängst du am meisten?",
+    "es": "¿A qué objeto de tu casa le tienes más cariño?",
+    "fr": "À quel objet de ton intérieur es-tu le plus attaché ?",
+    "it": "A quale oggetto di casa tua sei più affezionato?",
+    "pt": "A que objeto da tua casa tens mais apego?",
+    "pt_BR": "Qual objeto da sua casa tem mais valor sentimental pra você?"
+   }
+  },
+  {
+   "id": "home_organisation-011",
+   "lv": "any",
+   "i18n": {
+    "en": "How do you feel when you walk into a tidy room?",
+    "de": "Wie fühlst du dich, wenn du einen aufgeräumten Raum betrittst?",
+    "es": "¿Cómo te sientes cuando entras en una habitación ordenada?",
+    "fr": "Que ressens-tu quand tu entres dans une pièce bien rangée ?",
+    "it": "Come ti senti quando entri in una stanza in ordine?",
+    "pt": "Como te sentes quando entras numa divisão arrumada?",
+    "pt_BR": "Como você se sente quando entra num cômodo arrumado?"
+   }
+  },
+  {
+   "id": "home_organisation-012",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you listen to music or podcasts while you clean? What do you choose?",
+    "de": "Hörst du beim Putzen Musik oder Podcasts? Was wählst du?",
+    "es": "¿Escuchas música o pódcasts mientras limpias? ¿Qué eliges?",
+    "fr": "Écoutes-tu de la musique ou des podcasts en faisant le ménage ? Lesquels ?",
+    "it": "Ascolti musica o podcast mentre pulisci? Cosa scegli?",
+    "pt": "Ouves música ou podcasts enquanto limpas? O que escolhes?",
+    "pt_BR": "Você escuta música ou podcast enquanto limpa? O que você escolhe?"
+   }
+  },
+  {
+   "id": "home_organisation-013",
+   "lv": "any",
+   "i18n": {
+    "en": "What is the best organising tip anyone ever gave you?",
+    "de": "Was ist der beste Ordnungstipp, den dir je jemand gegeben hat?",
+    "es": "¿Cuál es el mejor consejo de organización que te han dado?",
+    "fr": "Quel est le meilleur conseil de rangement qu'on t'ait jamais donné ?",
+    "it": "Qual è il miglior consiglio sull'ordine che qualcuno ti abbia mai dato?",
+    "pt": "Qual foi a melhor dica de arrumação que alguém já te deu?",
+    "pt_BR": "Qual foi a melhor dica de organização que alguém já te deu?"
+   }
+  },
+  {
+   "id": "home_organisation-014",
+   "lv": "any",
+   "i18n": {
+    "en": "Who do you live with, and how do you share the household tasks?",
+    "de": "Mit wem lebst du zusammen, und wie teilt ihr euch die Hausarbeit?",
+    "es": "¿Con quién vives y cómo os repartís las tareas de casa?",
+    "fr": "Avec qui vis-tu, et comment partagez-vous les tâches ménagères ?",
+    "it": "Con chi vivi e come vi dividete le faccende di casa?",
+    "pt": "Com quem vives e como dividem as tarefas da casa?",
+    "pt_BR": "Com quem você mora e como vocês dividem as tarefas de casa?"
+   }
+  },
+  {
+   "id": "home_organisation-015",
+   "lv": "any",
+   "i18n": {
+    "en": "Which part of your home would you love to change if you had a free weekend?",
+    "de": "Welchen Teil deines Zuhauses würdest du an einem freien Wochenende gern verändern?",
+    "es": "¿Qué parte de tu casa te encantaría cambiar si tuvieras un fin de semana libre?",
+    "fr": "Quelle partie de chez toi aimerais-tu changer si tu avais un week-end libre ?",
+    "it": "Quale parte della casa ti piacerebbe cambiare se avessi un weekend libero?",
+    "pt": "Que parte da tua casa adorarias mudar se tivesses um fim de semana livre?",
+    "pt_BR": "Que parte da sua casa você adoraria mudar se tivesse um fim de semana livre?"
+   }
+  },
+  {
+   "id": "home_organisation-016",
+   "lv": "any",
+   "i18n": {
+    "en": "How do homes in your country usually handle shoes at the door?",
+    "de": "Wie geht man in deinem Land normalerweise mit Schuhen an der Tür um?",
+    "es": "¿Qué se suele hacer con los zapatos en la entrada en tu país?",
+    "fr": "Dans ton pays, que fait-on habituellement des chaussures à l'entrée ?",
+    "it": "Nel tuo paese come ci si comporta di solito con le scarpe all'ingresso?",
+    "pt": "No teu país, o que se costuma fazer com os sapatos à entrada?",
+    "pt_BR": "No seu país, o que as pessoas costumam fazer com os sapatos na entrada?"
+   }
+  },
+  {
+   "id": "home_organisation-017",
+   "lv": "any",
+   "i18n": {
+    "en": "What is your favourite storage item, like a box, basket or shelf?",
+    "de": "Was ist dein liebstes Aufbewahrungsstück, etwa eine Box, ein Korb oder ein Regal?",
+    "es": "¿Cuál es tu objeto de almacenaje favorito, como una caja, una cesta o una estantería?",
+    "fr": "Quel est ton rangement préféré : une boîte, un panier, une étagère ?",
+    "it": "Qual è il tuo contenitore preferito, come una scatola, un cesto o una mensola?",
+    "pt": "Qual é o teu objeto de arrumação favorito, como uma caixa, um cesto ou uma prateleira?",
+    "pt_BR": "Qual é seu item de organização favorito, tipo uma caixa, um cesto ou uma prateleira?"
+   }
+  },
+  {
+   "id": "home_organisation-018",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you find it easy or hard to let go of things? Why?",
+    "de": "Fällt es dir leicht oder schwer, Dinge loszulassen? Warum?",
+    "es": "¿Te resulta fácil o difícil desprenderte de las cosas? ¿Por qué?",
+    "fr": "Est-ce facile ou difficile pour toi de te séparer des objets ? Pourquoi ?",
+    "it": "Ti è facile o difficile separarti dalle cose? Perché?",
+    "pt": "É fácil ou difícil para ti desfazeres-te das coisas? Porquê?",
+    "pt_BR": "É fácil ou difícil pra você se desapegar das coisas? Por quê?"
+   }
+  },
+  {
+   "id": "home_organisation-019",
+   "lv": "any",
+   "i18n": {
+    "en": "What does your perfect Sunday at home look like?",
+    "de": "Wie sieht dein perfekter Sonntag zu Hause aus?",
+    "es": "¿Cómo sería tu domingo perfecto en casa?",
+    "fr": "À quoi ressemble ton dimanche idéal à la maison ?",
+    "it": "Com'è la tua domenica perfetta a casa?",
+    "pt": "Como é o teu domingo perfeito em casa?",
+    "pt_BR": "Como seria seu domingo perfeito em casa?"
+   }
+  },
+  {
+   "id": "home_organisation-020",
+   "lv": "any",
+   "i18n": {
+    "en": "Which organised space have you seen that really inspired you?",
+    "de": "Welcher ordentliche Raum, den du gesehen hast, hat dich richtig inspiriert?",
+    "es": "¿Qué espacio ordenado has visto que te haya inspirado de verdad?",
+    "fr": "Quel espace bien organisé t'a vraiment inspiré ?",
+    "it": "Quale spazio ordinato che hai visto ti ha davvero ispirato?",
+    "pt": "Que espaço arrumado já viste que te inspirou mesmo?",
+    "pt_BR": "Qual espaço organizado você já viu que te inspirou de verdade?"
+   }
+  },
+  {
+   "id": "home_organisation-021",
+   "lv": "any",
+   "i18n": {
+    "en": "How long does it usually take you to get ready to leave the house?",
+    "de": "Wie lange brauchst du normalerweise, um aus dem Haus zu gehen?",
+    "es": "¿Cuánto tardas normalmente en prepararte para salir de casa?",
+    "fr": "Combien de temps te faut-il en général pour être prêt à sortir ?",
+    "it": "Quanto tempo ci metti di solito per prepararti a uscire di casa?",
+    "pt": "Quanto tempo costumas demorar a preparar-te para sair de casa?",
+    "pt_BR": "Quanto tempo você costuma levar pra se arrumar e sair de casa?"
+   }
+  },
+  {
+   "id": "home_organisation-022",
+   "lv": "any",
+   "i18n": {
+    "en": "What small habit makes your home feel better every day?",
+    "de": "Welche kleine Gewohnheit macht dein Zuhause jeden Tag angenehmer?",
+    "es": "¿Qué pequeño hábito hace que tu casa se sienta mejor cada día?",
+    "fr": "Quelle petite habitude rend ton intérieur plus agréable chaque jour ?",
+    "it": "Quale piccola abitudine rende casa tua più piacevole ogni giorno?",
+    "pt": "Que pequeno hábito torna a tua casa mais agradável todos os dias?",
+    "pt_BR": "Qual pequeno hábito deixa sua casa mais gostosa todo dia?"
+   }
+  },
+  {
+   "id": "home_organisation-023",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you like your things visible on shelves or hidden behind doors?",
+    "de": "Magst du deine Sachen sichtbar in Regalen oder versteckt hinter Türen?",
+    "es": "¿Te gustan tus cosas a la vista en estanterías o escondidas tras puertas?",
+    "fr": "Préfères-tu tes affaires visibles sur des étagères ou cachées derrière des portes ?",
+    "it": "Ti piacciono le tue cose in vista sulle mensole o nascoste dietro le ante?",
+    "pt": "Gostas das tuas coisas à vista nas prateleiras ou escondidas atrás de portas?",
+    "pt_BR": "Você gosta das suas coisas à vista nas prateleiras ou escondidas atrás de portas?"
+   }
+  },
+  {
+   "id": "home_organisation-024",
+   "lv": "any",
+   "i18n": {
+    "en": "What would make your mornings at home smoother?",
+    "de": "Was würde deine Morgen zu Hause entspannter machen?",
+    "es": "¿Qué haría que tus mañanas en casa fueran más fluidas?",
+    "fr": "Qu'est-ce qui rendrait tes matins à la maison plus fluides ?",
+    "it": "Che cosa renderebbe le tue mattine a casa più scorrevoli?",
+    "pt": "O que tornaria as tuas manhãs em casa mais tranquilas?",
+    "pt_BR": "O que deixaria suas manhãs em casa mais tranquilas?"
+   }
+  },
+  {
+   "id": "home_organisation-025",
+   "lv": "any",
+   "i18n": {
+    "en": "How do you keep track of appointments and plans at home?",
+    "de": "Wie behältst du zu Hause Termine und Pläne im Blick?",
+    "es": "¿Cómo llevas el control de citas y planes en casa?",
+    "fr": "Comment gardes-tu une trace de tes rendez-vous et projets à la maison ?",
+    "it": "Come tieni traccia di appuntamenti e impegni a casa?",
+    "pt": "Como acompanhas as consultas e os planos em casa?",
+    "pt_BR": "Como você controla compromissos e planos em casa?"
+   }
+  },
+  {
+   "id": "home_organisation-026",
+   "lv": "any",
+   "i18n": {
+    "en": "What is the most useful thing you own for keeping your home in order?",
+    "de": "Was ist das nützlichste Ding, das du besitzt, um Ordnung zu halten?",
+    "es": "¿Qué es lo más útil que tienes para mantener tu casa en orden?",
+    "fr": "Quel est l'objet le plus utile que tu possèdes pour garder ta maison en ordre ?",
+    "it": "Qual è la cosa più utile che possiedi per tenere la casa in ordine?",
+    "pt": "Qual é a coisa mais útil que tens para manter a casa em ordem?",
+    "pt_BR": "Qual é a coisa mais útil que você tem pra manter a casa em ordem?"
+   }
+  },
+  {
+   "id": "home_organisation-027",
+   "lv": "any",
+   "i18n": {
+    "en": "How do you like to welcome guests into your home?",
+    "de": "Wie empfängst du gern Gäste bei dir zu Hause?",
+    "es": "¿Cómo te gusta recibir a los invitados en tu casa?",
+    "fr": "Comment aimes-tu accueillir des invités chez toi ?",
+    "it": "Come ti piace accogliere gli ospiti a casa tua?",
+    "pt": "Como gostas de receber visitas em tua casa?",
+    "pt_BR": "Como você gosta de receber visitas na sua casa?"
+   }
+  },
+  {
+   "id": "home_organisation-028",
+   "lv": "any",
+   "i18n": {
+    "en": "Which corner of your home is the coziest?",
+    "de": "Welche Ecke deines Zuhauses ist die gemütlichste?",
+    "es": "¿Cuál es el rincón más acogedor de tu casa?",
+    "fr": "Quel est le coin le plus douillet de chez toi ?",
+    "it": "Qual è l'angolo più accogliente di casa tua?",
+    "pt": "Qual é o canto mais aconchegante da tua casa?",
+    "pt_BR": "Qual é o cantinho mais aconchegante da sua casa?"
+   }
+  },
+  {
+   "id": "home_organisation-029",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you have a drawer that you would rather nobody opened?",
+    "de": "Hast du eine Schublade, die lieber niemand öffnen sollte?",
+    "es": "¿Tienes algún cajón que preferirías que nadie abriera?",
+    "fr": "As-tu un tiroir que tu préférerais que personne n'ouvre ?",
+    "it": "Hai un cassetto che preferiresti nessuno aprisse?",
+    "pt": "Tens alguma gaveta que preferias que ninguém abrisse?",
+    "pt_BR": "Você tem alguma gaveta que preferia que ninguém abrisse?"
+   }
+  },
+  {
+   "id": "home_organisation-030",
+   "lv": "any",
+   "i18n": {
+    "en": "What did you learn about organising when you first lived on your own or moved?",
+    "de": "Was hast du über Ordnung gelernt, als du allein gewohnt hast oder umgezogen bist?",
+    "es": "¿Qué aprendiste sobre organización al vivir solo por primera vez o al mudarte?",
+    "fr": "Qu'as-tu appris sur le rangement quand tu as vécu seul ou déménagé ?",
+    "it": "Che cosa hai imparato sull'ordine quando hai vissuto da solo o hai traslocato?",
+    "pt": "O que aprendeste sobre arrumação quando viveste sozinho ou mudaste de casa?",
+    "pt_BR": "O que você aprendeu sobre organização quando morou sozinho ou se mudou?"
+   }
+  },
+  {
+   "id": "home_organisation-031",
+   "lv": "any",
+   "i18n": {
+    "en": "How do you feel about labels on boxes and jars?",
+    "de": "Was hältst du von Etiketten auf Boxen und Gläsern?",
+    "es": "¿Qué opinas de las etiquetas en cajas y tarros?",
+    "fr": "Que penses-tu des étiquettes sur les boîtes et les bocaux ?",
+    "it": "Cosa pensi delle etichette su scatole e barattoli?",
+    "pt": "O que achas das etiquetas em caixas e frascos?",
+    "pt_BR": "O que você acha de etiquetas em caixas e potes?"
+   }
+  },
+  {
+   "id": "home_organisation-032",
+   "lv": "any",
+   "i18n": {
+    "en": "Is your home more minimal or full of things you love?",
+    "de": "Ist dein Zuhause eher minimalistisch oder voller Dinge, die du liebst?",
+    "es": "¿Tu casa es más minimalista o está llena de cosas que te encantan?",
+    "fr": "Ton intérieur est-il plutôt minimaliste ou rempli d'objets que tu aimes ?",
+    "it": "Casa tua è più minimalista o piena di cose che ami?",
+    "pt": "A tua casa é mais minimalista ou cheia de coisas de que gostas?",
+    "pt_BR": "Sua casa é mais minimalista ou cheia de coisas que você ama?"
+   }
+  },
+  {
+   "id": "home_organisation-033",
+   "lv": "any",
+   "i18n": {
+    "en": "What is one thing you would like to buy less of?",
+    "de": "Wovon möchtest du gern weniger kaufen?",
+    "es": "¿De qué te gustaría comprar menos?",
+    "fr": "De quoi aimerais-tu acheter moins ?",
+    "it": "Di cosa vorresti comprare di meno?",
+    "pt": "De que coisa gostavas de comprar menos?",
+    "pt_BR": "Do que você gostaria de comprar menos?"
+   }
+  },
+  {
+   "id": "home_organisation-034",
+   "lv": "any",
+   "i18n": {
+    "en": "Where do you usually put your keys when you come home?",
+    "de": "Wo legst du deine Schlüssel normalerweise ab, wenn du heimkommst?",
+    "es": "¿Dónde sueles dejar las llaves al llegar a casa?",
+    "fr": "Où poses-tu tes clés en rentrant à la maison ?",
+    "it": "Dove metti di solito le chiavi quando torni a casa?",
+    "pt": "Onde costumas pôr as chaves quando chegas a casa?",
+    "pt_BR": "Onde você costuma deixar as chaves quando chega em casa?"
+   }
+  },
+  {
+   "id": "home_organisation-035",
+   "lv": "any",
+   "i18n": {
+    "en": "Which season makes you want to clean and organise the most?",
+    "de": "In welcher Jahreszeit hast du am meisten Lust aufzuräumen?",
+    "es": "¿En qué estación te entran más ganas de limpiar y ordenar?",
+    "fr": "Quelle saison te donne le plus envie de ranger et nettoyer ?",
+    "it": "In quale stagione ti viene più voglia di pulire e riordinare?",
+    "pt": "Em que estação tens mais vontade de limpar e arrumar?",
+    "pt_BR": "Em qual estação do ano você tem mais vontade de limpar e organizar?"
+   }
+  },
+  {
+   "id": "home_organisation-036",
+   "lv": "any",
+   "i18n": {
+    "en": "How do you organise the photos on your phone?",
+    "de": "Wie organisierst du die Fotos auf deinem Handy?",
+    "es": "¿Cómo organizas las fotos de tu móvil?",
+    "fr": "Comment organises-tu les photos de ton téléphone ?",
+    "it": "Come organizzi le foto sul tuo telefono?",
+    "pt": "Como organizas as fotos do teu telemóvel?",
+    "pt_BR": "Como você organiza as fotos do seu celular?"
+   }
+  },
+  {
+   "id": "home_organisation-037",
+   "lv": "any",
+   "i18n": {
+    "en": "What does a calm home sound and smell like for you?",
+    "de": "Wie klingt und riecht ein ruhiges Zuhause für dich?",
+    "es": "¿A qué suena y huele para ti un hogar tranquilo?",
+    "fr": "Pour toi, quels sons et quelles odeurs a une maison paisible ?",
+    "it": "Per te, che suoni e profumi ha una casa serena?",
+    "pt": "Para ti, a que soa e cheira uma casa tranquila?",
+    "pt_BR": "Pra você, como é o som e o cheiro de uma casa tranquila?"
+   }
+  },
+  {
+   "id": "home_organisation-038",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you prefer organising alone or with someone helping you?",
+    "de": "Räumst du lieber allein auf oder mit jemandem, der dir hilft?",
+    "es": "¿Prefieres organizar solo o con alguien que te ayude?",
+    "fr": "Préfères-tu ranger seul ou avec quelqu'un qui t'aide ?",
+    "it": "Preferisci riordinare da solo o con qualcuno che ti aiuta?",
+    "pt": "Preferes arrumar sozinho ou com alguém a ajudar-te?",
+    "pt_BR": "Você prefere organizar sozinho ou com alguém te ajudando?"
+   }
+  },
+  {
+   "id": "home_organisation-039",
+   "lv": "any",
+   "i18n": {
+    "en": "Which plants or decorations make your home feel like yours?",
+    "de": "Welche Pflanzen oder Deko-Stücke machen dein Zuhause zu deinem?",
+    "es": "¿Qué plantas o adornos hacen que tu casa se sienta tuya?",
+    "fr": "Quelles plantes ou décorations rendent ton intérieur vraiment à toi ?",
+    "it": "Quali piante o decorazioni fanno sentire casa tua davvero tua?",
+    "pt": "Que plantas ou decorações fazem a tua casa parecer mesmo tua?",
+    "pt_BR": "Quais plantas ou enfeites deixam sua casa com a sua cara?"
+   }
+  },
+  {
+   "id": "home_organisation-040",
+   "lv": "any",
+   "i18n": {
+    "en": "If your home could organise itself in one area, which would you choose?",
+    "de": "Wenn sich dein Zuhause in einem Bereich selbst ordnen könnte, welcher wäre das?",
+    "es": "Si tu casa pudiera ordenarse sola en una zona, ¿cuál elegirías?",
+    "fr": "Si ta maison pouvait se ranger toute seule dans un coin, lequel choisirais-tu ?",
+    "it": "Se casa tua potesse riordinarsi da sola in una zona, quale sceglieresti?",
+    "pt": "Se a tua casa se arrumasse sozinha numa zona, qual escolherias?",
+    "pt_BR": "Se sua casa pudesse se organizar sozinha em uma área, qual você escolheria?"
+   }
+  },
+  {
+   "id": "home_organisation-041",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which drawer would be a good first project for you, and why?",
+    "de": "Welche Schublade wäre für dich ein gutes erstes Projekt, und warum?",
+    "es": "¿Qué cajón sería un buen primer proyecto para ti y por qué?",
+    "fr": "Quel tiroir serait un bon premier projet pour toi, et pourquoi ?",
+    "it": "Quale cassetto sarebbe un buon primo progetto per te, e perché?",
+    "pt": "Que gaveta seria um bom primeiro projeto para ti, e porquê?",
+    "pt_BR": "Qual gaveta seria um bom primeiro projeto pra você, e por quê?"
+   }
+  },
+  {
+   "id": "home_organisation-042",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What flat surface in your home collects the most clutter?",
+    "de": "Welche Ablagefläche bei dir sammelt am meisten Krimskrams?",
+    "es": "¿Qué superficie de tu casa acumula más trastos?",
+    "fr": "Quelle surface de chez toi accumule le plus de bazar ?",
+    "it": "Quale superficie di casa tua accumula più disordine?",
+    "pt": "Que superfície da tua casa acumula mais tralha?",
+    "pt_BR": "Qual superfície da sua casa junta mais bagunça?"
+   }
+  },
+  {
+   "id": "home_organisation-043",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Do you have a fixed place for your keys, wallet and phone?",
+    "de": "Hast du einen festen Platz für Schlüssel, Geldbeutel und Handy?",
+    "es": "¿Tienes un sitio fijo para las llaves, la cartera y el móvil?",
+    "fr": "As-tu une place fixe pour tes clés, ton portefeuille et ton téléphone ?",
+    "it": "Hai un posto fisso per chiavi, portafoglio e telefono?",
+    "pt": "Tens um sítio fixo para as chaves, a carteira e o telemóvel?",
+    "pt_BR": "Você tem um lugar fixo pras chaves, a carteira e o celular?"
+   }
+  },
+  {
+   "id": "home_organisation-044",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What could you do in five minutes tonight to make tomorrow easier?",
+    "de": "Was könntest du heute Abend in fünf Minuten tun, um dir morgen zu erleichtern?",
+    "es": "¿Qué podrías hacer esta noche en cinco minutos para que mañana sea más fácil?",
+    "fr": "Que pourrais-tu faire en cinq minutes ce soir pour faciliter ta journée de demain ?",
+    "it": "Cosa potresti fare stasera in cinque minuti per rendere più facile domani?",
+    "pt": "O que podias fazer esta noite em cinco minutos para facilitar o dia de amanhã?",
+    "pt_BR": "O que você poderia fazer hoje à noite em cinco minutos pra facilitar o dia de amanhã?"
+   }
+  },
+  {
+   "id": "home_organisation-045",
+   "lv": "beginner",
+   "i18n": {
+    "en": "How do you deal with letters and paper when they arrive?",
+    "de": "Wie gehst du mit Briefen und Papierkram um, wenn sie ankommen?",
+    "es": "¿Qué haces con las cartas y los papeles cuando llegan?",
+    "fr": "Que fais-tu du courrier et des papiers quand ils arrivent ?",
+    "it": "Come gestisci lettere e documenti quando arrivano?",
+    "pt": "O que fazes às cartas e aos papéis quando chegam?",
+    "pt_BR": "O que você faz com as cartas e papéis quando eles chegam?"
+   }
+  },
+  {
+   "id": "home_organisation-046",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Do you make your bed in the morning? How does it make you feel?",
+    "de": "Machst du morgens dein Bett? Wie fühlst du dich dabei?",
+    "es": "¿Haces la cama por la mañana? ¿Cómo te hace sentir?",
+    "fr": "Fais-tu ton lit le matin ? Qu'est-ce que ça te fait ?",
+    "it": "Rifai il letto la mattina? Come ti fa sentire?",
+    "pt": "Fazes a cama de manhã? Como te sentes com isso?",
+    "pt_BR": "Você arruma a cama de manhã? Como isso te faz sentir?"
+   }
+  },
+  {
+   "id": "home_organisation-047",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which items in your kitchen do you use every single day?",
+    "de": "Welche Dinge in deiner Küche benutzt du jeden Tag?",
+    "es": "¿Qué cosas de tu cocina usas todos los días?",
+    "fr": "Quels objets de ta cuisine utilises-tu tous les jours ?",
+    "it": "Quali oggetti della tua cucina usi ogni giorno?",
+    "pt": "Que coisas da tua cozinha usas todos os dias?",
+    "pt_BR": "Quais coisas da sua cozinha você usa todo santo dia?"
+   }
+  },
+  {
+   "id": "home_organisation-048",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What happens to the dishes after dinner in your home?",
+    "de": "Was passiert bei dir nach dem Abendessen mit dem Geschirr?",
+    "es": "¿Qué pasa con los platos después de cenar en tu casa?",
+    "fr": "Que deviennent les assiettes après le dîner chez toi ?",
+    "it": "Che fine fanno i piatti dopo cena a casa tua?",
+    "pt": "O que acontece à loiça depois do jantar em tua casa?",
+    "pt_BR": "O que acontece com a louça depois do jantar na sua casa?"
+   }
+  },
+  {
+   "id": "home_organisation-049",
+   "lv": "beginner",
+   "i18n": {
+    "en": "How many items of clothing are on a chair in your room right now?",
+    "de": "Wie viele Kleidungsstücke liegen gerade auf einem Stuhl in deinem Zimmer?",
+    "es": "¿Cuántas prendas hay ahora mismo sobre una silla de tu cuarto?",
+    "fr": "Combien de vêtements traînent sur une chaise de ta chambre en ce moment ?",
+    "it": "Quanti vestiti ci sono adesso su una sedia nella tua camera?",
+    "pt": "Quantas peças de roupa estão neste momento numa cadeira do teu quarto?",
+    "pt_BR": "Quantas peças de roupa estão numa cadeira do seu quarto agora?"
+   }
+  },
+  {
+   "id": "home_organisation-050",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which household item do you own too many of?",
+    "de": "Von welchem Haushaltsgegenstand hast du zu viele?",
+    "es": "¿De qué objeto de casa tienes demasiados?",
+    "fr": "De quel objet de la maison as-tu trop d'exemplaires ?",
+    "it": "Di quale oggetto di casa ne hai troppi?",
+    "pt": "De que objeto da casa tens demasiados?",
+    "pt_BR": "De qual objeto da casa você tem demais?"
+   }
+  },
+  {
+   "id": "home_organisation-051",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Where do your shoes usually end up when you come home?",
+    "de": "Wo landen deine Schuhe normalerweise, wenn du heimkommst?",
+    "es": "¿Dónde suelen acabar tus zapatos cuando llegas a casa?",
+    "fr": "Où finissent tes chaussures en général quand tu rentres ?",
+    "it": "Dove finiscono di solito le tue scarpe quando torni a casa?",
+    "pt": "Onde costumam ir parar os teus sapatos quando chegas a casa?",
+    "pt_BR": "Onde seus sapatos costumam parar quando você chega em casa?"
+   }
+  },
+  {
+   "id": "home_organisation-052",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What is in your fridge door right now, and is it organised?",
+    "de": "Was ist gerade in deiner Kühlschranktür, und ist sie ordentlich?",
+    "es": "¿Qué hay ahora en la puerta de tu nevera y está ordenada?",
+    "fr": "Qu'y a-t-il dans la porte de ton frigo en ce moment, et est-ce rangé ?",
+    "it": "Cosa c'è adesso nello sportello del tuo frigo, ed è in ordine?",
+    "pt": "O que tens agora na porta do frigorífico, e está arrumada?",
+    "pt_BR": "O que tem agora na porta da sua geladeira, e ela está organizada?"
+   }
+  },
+  {
+   "id": "home_organisation-053",
+   "lv": "beginner",
+   "i18n": {
+    "en": "How do you fold your T-shirts: stacked, rolled or upright?",
+    "de": "Wie faltest du deine T-Shirts: gestapelt, gerollt oder stehend?",
+    "es": "¿Cómo doblas tus camisetas: apiladas, enrolladas o en vertical?",
+    "fr": "Comment plies-tu tes t-shirts : empilés, roulés ou debout ?",
+    "it": "Come pieghi le tue magliette: impilate, arrotolate o in verticale?",
+    "pt": "Como dobras as tuas t-shirts: empilhadas, enroladas ou na vertical?",
+    "pt_BR": "Como você dobra suas camisetas: empilhadas, enroladas ou em pé?"
+   }
+  },
+  {
+   "id": "home_organisation-054",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which spot in your home needs a hook the most?",
+    "de": "Welche Stelle bei dir zu Hause bräuchte am dringendsten einen Haken?",
+    "es": "¿Qué sitio de tu casa necesita más un gancho?",
+    "fr": "Quel endroit de chez toi aurait le plus besoin d'un crochet ?",
+    "it": "Quale punto di casa tua avrebbe più bisogno di un gancio?",
+    "pt": "Que sítio da tua casa mais precisa de um gancho?",
+    "pt_BR": "Qual lugar da sua casa mais precisa de um gancho?"
+   }
+  },
+  {
+   "id": "home_organisation-055",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Do you have a junk drawer? What surprising things live in it?",
+    "de": "Hast du eine Krimskrams-Schublade? Was Überraschendes liegt darin?",
+    "es": "¿Tienes un cajón desastre? ¿Qué cosas curiosas guarda?",
+    "fr": "As-tu un tiroir fourre-tout ? Quels objets surprenants y vivent ?",
+    "it": "Hai un cassetto delle cianfrusaglie? Quali cose curiose contiene?",
+    "pt": "Tens uma gaveta da tralha? Que coisas surpreendentes vivem lá?",
+    "pt_BR": "Você tem aquela gaveta de bagunça? Que coisas curiosas moram lá?"
+   }
+  },
+  {
+   "id": "home_organisation-056",
+   "lv": "beginner",
+   "i18n": {
+    "en": "How do you store cables and chargers at the moment?",
+    "de": "Wie bewahrst du im Moment Kabel und Ladegeräte auf?",
+    "es": "¿Cómo guardas ahora mismo los cables y cargadores?",
+    "fr": "Comment ranges-tu tes câbles et chargeurs en ce moment ?",
+    "it": "Come conservi al momento cavi e caricabatterie?",
+    "pt": "Como guardas neste momento os cabos e carregadores?",
+    "pt_BR": "Como você guarda hoje os cabos e carregadores?"
+   }
+  },
+  {
+   "id": "home_organisation-057",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What would you put in a donate box from your home today?",
+    "de": "Was würdest du heute aus deinem Zuhause in eine Spendenkiste legen?",
+    "es": "¿Qué pondrías hoy en una caja para donar?",
+    "fr": "Que mettrais-tu aujourd'hui dans un carton de dons ?",
+    "it": "Cosa metteresti oggi in una scatola da donare?",
+    "pt": "O que porias hoje numa caixa para doar?",
+    "pt_BR": "O que você colocaria hoje numa caixa de doação?"
+   }
+  },
+  {
+   "id": "home_organisation-058",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which bathroom products do you have but never use?",
+    "de": "Welche Badprodukte hast du, benutzt sie aber nie?",
+    "es": "¿Qué productos de baño tienes pero nunca usas?",
+    "fr": "Quels produits de salle de bain as-tu sans jamais les utiliser ?",
+    "it": "Quali prodotti da bagno hai ma non usi mai?",
+    "pt": "Que produtos de casa de banho tens mas nunca usas?",
+    "pt_BR": "Quais produtos de banheiro você tem mas nunca usa?"
+   }
+  },
+  {
+   "id": "home_organisation-059",
+   "lv": "beginner",
+   "i18n": {
+    "en": "How do you keep track of what food you already have at home?",
+    "de": "Wie behältst du den Überblick, welche Lebensmittel du schon zu Hause hast?",
+    "es": "¿Cómo sabes qué comida tienes ya en casa?",
+    "fr": "Comment sais-tu quels aliments tu as déjà à la maison ?",
+    "it": "Come tieni traccia del cibo che hai già in casa?",
+    "pt": "Como sabes que comida já tens em casa?",
+    "pt_BR": "Como você controla a comida que já tem em casa?"
+   }
+  },
+  {
+   "id": "home_organisation-060",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What could your evening tidy-up routine look like?",
+    "de": "Wie könnte deine abendliche Aufräumroutine aussehen?",
+    "es": "¿Cómo podría ser tu rutina de orden por la noche?",
+    "fr": "À quoi pourrait ressembler ta routine de rangement du soir ?",
+    "it": "Come potrebbe essere la tua routine serale di riordino?",
+    "pt": "Como poderia ser a tua rotina de arrumação à noite?",
+    "pt_BR": "Como poderia ser sua rotina de arrumação à noite?"
+   }
+  },
+  {
+   "id": "home_organisation-061",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which room would you like to tackle first on this journey?",
+    "de": "Welchen Raum möchtest du auf dieser Reise zuerst angehen?",
+    "es": "¿Qué habitación te gustaría abordar primero en este camino?",
+    "fr": "Quelle pièce aimerais-tu attaquer en premier dans ce parcours ?",
+    "it": "Quale stanza vorresti affrontare per prima in questo percorso?",
+    "pt": "Que divisão gostavas de atacar primeiro neste percurso?",
+    "pt_BR": "Qual cômodo você gostaria de encarar primeiro nessa jornada?"
+   }
+  },
+  {
+   "id": "home_organisation-062",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Do you use a shopping list? Paper or phone?",
+    "de": "Benutzt du eine Einkaufsliste? Auf Papier oder am Handy?",
+    "es": "¿Usas lista de la compra? ¿En papel o en el móvil?",
+    "fr": "Utilises-tu une liste de courses ? Sur papier ou sur ton téléphone ?",
+    "it": "Usi una lista della spesa? Su carta o sul telefono?",
+    "pt": "Usas lista de compras? Em papel ou no telemóvel?",
+    "pt_BR": "Você usa lista de compras? No papel ou no celular?"
+   }
+  },
+  {
+   "id": "home_organisation-063",
+   "lv": "beginner",
+   "i18n": {
+    "en": "How often do you do laundry, and who folds it?",
+    "de": "Wie oft wäschst du Wäsche, und wer legt sie zusammen?",
+    "es": "¿Con qué frecuencia pones lavadoras y quién dobla la ropa?",
+    "fr": "À quelle fréquence fais-tu la lessive, et qui plie le linge ?",
+    "it": "Ogni quanto fai il bucato, e chi piega i panni?",
+    "pt": "Com que frequência lavas a roupa, e quem a dobra?",
+    "pt_BR": "Com que frequência você lava roupa, e quem dobra?"
+   }
+  },
+  {
+   "id": "home_organisation-064",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What is one tiny change that made your home easier to live in?",
+    "de": "Welche winzige Veränderung hat dein Zuhause alltagstauglicher gemacht?",
+    "es": "¿Qué pequeño cambio hizo que tu casa fuera más fácil de vivir?",
+    "fr": "Quel petit changement a rendu ton intérieur plus pratique à vivre ?",
+    "it": "Quale piccolo cambiamento ha reso casa tua più facile da vivere?",
+    "pt": "Que pequena mudança tornou a tua casa mais fácil de viver?",
+    "pt_BR": "Qual mudança pequenininha deixou sua casa mais fácil de viver?"
+   }
+  },
+  {
+   "id": "home_organisation-065",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which items do you use only once a year but keep close at hand?",
+    "de": "Welche Dinge benutzt du nur einmal im Jahr, hast sie aber griffbereit?",
+    "es": "¿Qué cosas usas solo una vez al año pero tienes a mano?",
+    "fr": "Quels objets utilises-tu une fois par an mais gardes à portée de main ?",
+    "it": "Quali oggetti usi solo una volta all'anno ma tieni a portata di mano?",
+    "pt": "Que coisas usas só uma vez por ano mas tens à mão?",
+    "pt_BR": "Quais coisas você usa só uma vez por ano mas deixa à mão?"
+   }
+  },
+  {
+   "id": "home_organisation-066",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Do you prefer to tidy room by room or category by category?",
+    "de": "Räumst du lieber Raum für Raum oder Kategorie für Kategorie auf?",
+    "es": "¿Prefieres ordenar habitación por habitación o por categorías?",
+    "fr": "Préfères-tu ranger pièce par pièce ou catégorie par catégorie ?",
+    "it": "Preferisci riordinare stanza per stanza o per categorie?",
+    "pt": "Preferes arrumar divisão a divisão ou por categorias?",
+    "pt_BR": "Você prefere organizar cômodo por cômodo ou por categoria?"
+   }
+  },
+  {
+   "id": "home_organisation-067",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How do you handle sentimental items you no longer use?",
+    "de": "Wie gehst du mit Erinnerungsstücken um, die du nicht mehr benutzt?",
+    "es": "¿Qué haces con los objetos sentimentales que ya no usas?",
+    "fr": "Que fais-tu des objets sentimentaux que tu n'utilises plus ?",
+    "it": "Come gestisci gli oggetti sentimentali che non usi più?",
+    "pt": "O que fazes aos objetos sentimentais que já não usas?",
+    "pt_BR": "O que você faz com objetos de valor sentimental que já não usa?"
+   }
+  },
+  {
+   "id": "home_organisation-068",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What system would help your household share chores more fairly?",
+    "de": "Welches System würde helfen, die Hausarbeit bei euch fairer zu verteilen?",
+    "es": "¿Qué sistema ayudaría a repartir las tareas de casa de forma más justa?",
+    "fr": "Quel système aiderait à mieux répartir les tâches chez toi ?",
+    "it": "Quale sistema aiuterebbe a dividere le faccende in modo più equo?",
+    "pt": "Que sistema ajudaria a dividir as tarefas da casa de forma mais justa?",
+    "pt_BR": "Que sistema ajudaria a dividir as tarefas de casa de um jeito mais justo?"
+   }
+  },
+  {
+   "id": "home_organisation-069",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which storage space in your home is hardest to use well?",
+    "de": "Welcher Stauraum bei dir ist am schwierigsten sinnvoll zu nutzen?",
+    "es": "¿Qué espacio de almacenaje de tu casa es el más difícil de aprovechar?",
+    "fr": "Quel rangement de chez toi est le plus difficile à bien utiliser ?",
+    "it": "Quale spazio di casa tua è il più difficile da sfruttare bene?",
+    "pt": "Que espaço de arrumação da tua casa é mais difícil de aproveitar?",
+    "pt_BR": "Qual espaço de armazenamento da sua casa é o mais difícil de aproveitar?"
+   }
+  },
+  {
+   "id": "home_organisation-070",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How do you decide what to keep when you have limited space?",
+    "de": "Wie entscheidest du, was du behältst, wenn der Platz begrenzt ist?",
+    "es": "¿Cómo decides qué conservar cuando tienes poco espacio?",
+    "fr": "Comment décides-tu quoi garder quand tu manques de place ?",
+    "it": "Come decidi cosa tenere quando hai poco spazio?",
+    "pt": "Como decides o que guardar quando tens pouco espaço?",
+    "pt_BR": "Como você decide o que manter quando o espaço é pequeno?"
+   }
+  },
+  {
+   "id": "home_organisation-071",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What would your ideal family command centre include?",
+    "de": "Was gehört für dich in eine ideale Familien-Kommandozentrale?",
+    "es": "¿Qué incluiría tu centro de mando familiar ideal?",
+    "fr": "Que contiendrait ton centre de commande familial idéal ?",
+    "it": "Cosa includerebbe la tua bacheca di famiglia ideale?",
+    "pt": "O que teria o teu centro de comando familiar ideal?",
+    "pt_BR": "O que teria a sua central de organização familiar ideal?"
+   }
+  },
+  {
+   "id": "home_organisation-072",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How do you organise your digital files and documents?",
+    "de": "Wie organisierst du deine digitalen Dateien und Dokumente?",
+    "es": "¿Cómo organizas tus archivos y documentos digitales?",
+    "fr": "Comment organises-tu tes fichiers et documents numériques ?",
+    "it": "Come organizzi i tuoi file e documenti digitali?",
+    "pt": "Como organizas os teus ficheiros e documentos digitais?",
+    "pt_BR": "Como você organiza seus arquivos e documentos digitais?"
+   }
+  },
+  {
+   "id": "home_organisation-073",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which item do you keep 'just in case', and has the case ever come?",
+    "de": "Was bewahrst du ‚für alle Fälle‘ auf, und ist der Fall je eingetreten?",
+    "es": "¿Qué guardas «por si acaso» y alguna vez ha llegado ese caso?",
+    "fr": "Que gardes-tu « au cas où », et ce cas est-il déjà arrivé ?",
+    "it": "Cosa conservi «per sicurezza», e ti è mai servito davvero?",
+    "pt": "O que guardas «para o caso de», e esse caso já chegou?",
+    "pt_BR": "O que você guarda «vai que precisa», e já precisou alguma vez?"
+   }
+  },
+  {
+   "id": "home_organisation-074",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What is your plan for the kitchen when you host friends?",
+    "de": "Wie planst du die Küche, wenn du Freunde einlädst?",
+    "es": "¿Cómo organizas la cocina cuando recibes a amigos?",
+    "fr": "Comment organises-tu la cuisine quand tu reçois des amis ?",
+    "it": "Come organizzi la cucina quando inviti degli amici?",
+    "pt": "Como organizas a cozinha quando recebes amigos?",
+    "pt_BR": "Como você organiza a cozinha quando recebe amigos?"
+   }
+  },
+  {
+   "id": "home_organisation-075",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How do you store seasonal clothes and decorations?",
+    "de": "Wie lagerst du saisonale Kleidung und Dekoration?",
+    "es": "¿Cómo guardas la ropa y la decoración de temporada?",
+    "fr": "Comment ranges-tu les vêtements et décorations de saison ?",
+    "it": "Come conservi i vestiti e le decorazioni di stagione?",
+    "pt": "Como guardas a roupa e as decorações sazonais?",
+    "pt_BR": "Como você guarda roupas e decorações de cada estação?"
+   }
+  },
+  {
+   "id": "home_organisation-076",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What would you need to change to make your home work better for guests?",
+    "de": "Was müsstest du ändern, damit dein Zuhause besser für Gäste funktioniert?",
+    "es": "¿Qué tendrías que cambiar para que tu casa funcionara mejor con invitados?",
+    "fr": "Que faudrait-il changer pour que ton intérieur soit plus accueillant pour des invités ?",
+    "it": "Cosa dovresti cambiare perché casa tua funzioni meglio con gli ospiti?",
+    "pt": "O que terias de mudar para a tua casa funcionar melhor com visitas?",
+    "pt_BR": "O que você precisaria mudar pra sua casa funcionar melhor com visitas?"
+   }
+  },
+  {
+   "id": "home_organisation-077",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How do you keep a shared space tidy when people have different habits?",
+    "de": "Wie haltet ihr einen gemeinsamen Raum ordentlich, wenn alle andere Gewohnheiten haben?",
+    "es": "¿Cómo mantienes ordenado un espacio compartido cuando cada uno tiene sus hábitos?",
+    "fr": "Comment garder un espace partagé rangé quand chacun a ses habitudes ?",
+    "it": "Come tenete in ordine uno spazio comune quando ognuno ha abitudini diverse?",
+    "pt": "Como manténs um espaço partilhado arrumado quando cada um tem hábitos diferentes?",
+    "pt_BR": "Como manter um espaço compartilhado arrumado quando cada um tem seus hábitos?"
+   }
+  },
+  {
+   "id": "home_organisation-078",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which unused wall in your home could become useful storage?",
+    "de": "Welche ungenutzte Wand bei dir könnte zu nützlichem Stauraum werden?",
+    "es": "¿Qué pared sin usar de tu casa podría convertirse en almacenaje útil?",
+    "fr": "Quel mur inutilisé de chez toi pourrait devenir un rangement utile ?",
+    "it": "Quale parete inutilizzata di casa tua potrebbe diventare spazio utile?",
+    "pt": "Que parede sem uso da tua casa poderia virar arrumação útil?",
+    "pt_BR": "Qual parede sem uso da sua casa poderia virar um espaço de armazenamento útil?"
+   }
+  },
+  {
+   "id": "home_organisation-079",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How do you decide where to donate or sell things you no longer need?",
+    "de": "Wie entscheidest du, wo du Dinge spendest oder verkaufst, die du nicht mehr brauchst?",
+    "es": "¿Cómo decides dónde donar o vender lo que ya no necesitas?",
+    "fr": "Comment choisis-tu où donner ou vendre ce dont tu n'as plus besoin ?",
+    "it": "Come decidi dove donare o vendere ciò che non ti serve più?",
+    "pt": "Como decides onde doar ou vender o que já não precisas?",
+    "pt_BR": "Como você decide onde doar ou vender o que não precisa mais?"
+   }
+  },
+  {
+   "id": "home_organisation-080",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What does your weekly cleaning plan look like right now?",
+    "de": "Wie sieht dein wöchentlicher Putzplan im Moment aus?",
+    "es": "¿Cómo es ahora mismo tu plan de limpieza semanal?",
+    "fr": "À quoi ressemble ton planning de ménage hebdomadaire en ce moment ?",
+    "it": "Com'è adesso il tuo piano di pulizie settimanale?",
+    "pt": "Como é neste momento o teu plano de limpeza semanal?",
+    "pt_BR": "Como está hoje seu cronograma semanal de limpeza?"
+   }
+  },
+  {
+   "id": "home_organisation-081",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "If you moved tomorrow, which things would you definitely not pack?",
+    "de": "Wenn du morgen umziehen würdest, was würdest du auf keinen Fall einpacken?",
+    "es": "Si te mudaras mañana, ¿qué cosas no empaquetarías seguro?",
+    "fr": "Si tu déménageais demain, quelles affaires ne mettrais-tu sûrement pas dans les cartons ?",
+    "it": "Se traslocassi domani, quali cose sicuramente non impacchetteresti?",
+    "pt": "Se mudasses de casa amanhã, que coisas de certeza não levavas?",
+    "pt_BR": "Se você se mudasse amanhã, quais coisas com certeza não levaria?"
+   }
+  },
+  {
+   "id": "home_organisation-082",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How do you keep children's toys or hobby supplies under control?",
+    "de": "Wie hältst du Spielzeug oder Hobbymaterial im Zaum?",
+    "es": "¿Cómo mantienes a raya los juguetes o el material de tus aficiones?",
+    "fr": "Comment gardes-tu les jouets ou le matériel de loisirs sous contrôle ?",
+    "it": "Come tieni sotto controllo giocattoli o materiale per i tuoi hobby?",
+    "pt": "Como manténs os brinquedos ou o material de passatempos sob controlo?",
+    "pt_BR": "Como você mantém brinquedos ou materiais de hobby sob controle?"
+   }
+  },
+  {
+   "id": "home_organisation-083",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What is your favourite trick for a small space?",
+    "de": "Was ist dein Lieblingstrick für wenig Platz?",
+    "es": "¿Cuál es tu truco favorito para un espacio pequeño?",
+    "fr": "Quelle est ton astuce préférée pour un petit espace ?",
+    "it": "Qual è il tuo trucco preferito per uno spazio piccolo?",
+    "pt": "Qual é o teu truque favorito para um espaço pequeno?",
+    "pt_BR": "Qual é seu truque favorito pra espaço pequeno?"
+   }
+  },
+  {
+   "id": "home_organisation-084",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How do you make tidying fun, for yourself or for others?",
+    "de": "Wie machst du Aufräumen spaßig, für dich oder für andere?",
+    "es": "¿Cómo haces que ordenar sea divertido, para ti o para otros?",
+    "fr": "Comment rends-tu le rangement amusant, pour toi ou pour les autres ?",
+    "it": "Come rendi divertente riordinare, per te o per gli altri?",
+    "pt": "Como tornas a arrumação divertida, para ti ou para os outros?",
+    "pt_BR": "Como você deixa a arrumação divertida, pra você ou pros outros?"
+   }
+  },
+  {
+   "id": "home_organisation-085",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which paper documents could you go paperless with?",
+    "de": "Bei welchen Papierdokumenten könntest du auf digital umsteigen?",
+    "es": "¿Con qué documentos en papel podrías pasarte a lo digital?",
+    "fr": "Pour quels documents papier pourrais-tu passer au numérique ?",
+    "it": "Per quali documenti cartacei potresti passare al digitale?",
+    "pt": "Que documentos em papel poderias passar para digital?",
+    "pt_BR": "Quais documentos em papel você poderia passar pro digital?"
+   }
+  },
+  {
+   "id": "home_organisation-086",
+   "lv": "advanced",
+   "i18n": {
+    "en": "If you designed your own organising method, what would its main rule be?",
+    "de": "Wenn du deine eigene Ordnungsmethode entwerfen würdest, was wäre die Hauptregel?",
+    "es": "Si diseñaras tu propio método de organización, ¿cuál sería su regla principal?",
+    "fr": "Si tu créais ta propre méthode de rangement, quelle serait sa règle principale ?",
+    "it": "Se creassi un tuo metodo per l'ordine, quale sarebbe la regola principale?",
+    "pt": "Se criasses o teu próprio método de arrumação, qual seria a regra principal?",
+    "pt_BR": "Se você criasse seu próprio método de organização, qual seria a regra principal?"
+   }
+  },
+  {
+   "id": "home_organisation-087",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How has the way you organise changed as your life has changed?",
+    "de": "Wie hat sich deine Art zu ordnen verändert, als sich dein Leben verändert hat?",
+    "es": "¿Cómo ha cambiado tu forma de organizar a medida que cambiaba tu vida?",
+    "fr": "Comment ta façon de ranger a-t-elle évolué avec ta vie ?",
+    "it": "Come è cambiato il tuo modo di organizzare man mano che cambiava la tua vita?",
+    "pt": "Como mudou a tua forma de arrumar à medida que a tua vida mudou?",
+    "pt_BR": "Como seu jeito de organizar mudou conforme sua vida mudou?"
+   }
+  },
+  {
+   "id": "home_organisation-088",
+   "lv": "advanced",
+   "i18n": {
+    "en": "What habit keeps clutter from coming back in your home?",
+    "de": "Welche Gewohnheit verhindert, dass bei dir das Chaos zurückkommt?",
+    "es": "¿Qué hábito evita que el desorden vuelva a tu casa?",
+    "fr": "Quelle habitude empêche le désordre de revenir chez toi ?",
+    "it": "Quale abitudine impedisce al disordine di tornare a casa tua?",
+    "pt": "Que hábito impede que a tralha volte à tua casa?",
+    "pt_BR": "Qual hábito impede que a bagunça volte pra sua casa?"
+   }
+  },
+  {
+   "id": "home_organisation-089",
+   "lv": "advanced",
+   "i18n": {
+    "en": "What could you learn from how homes are organised in other cultures?",
+    "de": "Was könntest du davon lernen, wie Wohnungen in anderen Kulturen organisiert sind?",
+    "es": "¿Qué podrías aprender de cómo se organizan las casas en otras culturas?",
+    "fr": "Qu'apprendrais-tu de la façon dont on range les maisons dans d'autres cultures ?",
+    "it": "Cosa potresti imparare da come si organizzano le case in altre culture?",
+    "pt": "O que poderias aprender com a forma como se arrumam as casas noutras culturas?",
+    "pt_BR": "O que você poderia aprender com o jeito como casas são organizadas em outras culturas?"
+   }
+  },
+  {
+   "id": "home_organisation-090",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How do you balance a beautiful home with a practical one?",
+    "de": "Wie bringst du ein schönes und ein praktisches Zuhause unter einen Hut?",
+    "es": "¿Cómo equilibras un hogar bonito con uno práctico?",
+    "fr": "Comment concilies-tu une maison belle et une maison pratique ?",
+    "it": "Come trovi l'equilibrio tra una casa bella e una pratica?",
+    "pt": "Como equilibras uma casa bonita com uma casa prática?",
+    "pt_BR": "Como você equilibra uma casa bonita com uma casa prática?"
+   }
+  },
+  {
+   "id": "home_organisation-091",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Which of your home systems would you teach to a friend first?",
+    "de": "Welches deiner Ordnungssysteme würdest du einer Freundin oder einem Freund zuerst beibringen?",
+    "es": "¿Cuál de tus sistemas de casa le enseñarías primero a un amigo?",
+    "fr": "Lequel de tes systèmes de rangement apprendrais-tu en premier à un ami ?",
+    "it": "Quale dei tuoi sistemi di casa insegneresti per primo a un amico?",
+    "pt": "Qual dos teus sistemas da casa ensinarias primeiro a um amigo?",
+    "pt_BR": "Qual dos seus sistemas da casa você ensinaria primeiro a um amigo?"
+   }
+  },
+  {
+   "id": "home_organisation-092",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How do you make sure new purchases fit into your home before buying?",
+    "de": "Wie stellst du vor dem Kauf sicher, dass Neues in dein Zuhause passt?",
+    "es": "¿Cómo te aseguras de que algo nuevo encaja en tu casa antes de comprarlo?",
+    "fr": "Comment t'assures-tu qu'un nouvel achat trouvera sa place chez toi ?",
+    "it": "Come ti assicuri che un nuovo acquisto trovi posto in casa prima di comprarlo?",
+    "pt": "Como garantes que uma compra nova cabe na tua casa antes de a fazer?",
+    "pt_BR": "Como você garante que uma compra nova vai ter lugar na sua casa antes de comprar?"
+   }
+  },
+  {
+   "id": "home_organisation-093",
+   "lv": "advanced",
+   "i18n": {
+    "en": "What would make your home easier to live in ten years from now?",
+    "de": "Was würde dein Zuhause in zehn Jahren alltagstauglicher machen?",
+    "es": "¿Qué haría tu casa más fácil de vivir dentro de diez años?",
+    "fr": "Qu'est-ce qui rendrait ton intérieur plus facile à vivre dans dix ans ?",
+    "it": "Cosa renderebbe casa tua più facile da vivere tra dieci anni?",
+    "pt": "O que tornaria a tua casa mais fácil de viver daqui a dez anos?",
+    "pt_BR": "O que deixaria sua casa mais fácil de viver daqui a dez anos?"
+   }
+  },
+  {
+   "id": "home_organisation-094",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How do you organise a home project, like painting or redecorating?",
+    "de": "Wie organisierst du ein Projekt zu Hause, etwa Streichen oder Umgestalten?",
+    "es": "¿Cómo organizas un proyecto en casa, como pintar o redecorar?",
+    "fr": "Comment organises-tu un projet à la maison, comme peindre ou redécorer ?",
+    "it": "Come organizzi un progetto in casa, come imbiancare o ridecorare?",
+    "pt": "Como organizas um projeto em casa, como pintar ou redecorar?",
+    "pt_BR": "Como você organiza um projeto em casa, tipo pintar ou redecorar?"
+   }
+  },
+  {
+   "id": "home_organisation-095",
+   "lv": "advanced",
+   "i18n": {
+    "en": "What sustainable habits have changed how you store and buy things?",
+    "de": "Welche nachhaltigen Gewohnheiten haben verändert, wie du Dinge kaufst und lagerst?",
+    "es": "¿Qué hábitos sostenibles han cambiado tu forma de comprar y guardar cosas?",
+    "fr": "Quelles habitudes durables ont changé ta façon d'acheter et de ranger ?",
+    "it": "Quali abitudini sostenibili hanno cambiato il tuo modo di comprare e conservare?",
+    "pt": "Que hábitos sustentáveis mudaram a forma como compras e guardas as coisas?",
+    "pt_BR": "Quais hábitos sustentáveis mudaram seu jeito de comprar e guardar as coisas?"
+   }
+  },
+  {
+   "id": "home_organisation-096",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How would you help a friend who feels overwhelmed by clutter?",
+    "de": "Wie würdest du einem Freund helfen, der sich von Unordnung überfordert fühlt?",
+    "es": "¿Cómo ayudarías a un amigo que se siente agobiado por el desorden?",
+    "fr": "Comment aiderais-tu un ami débordé par le désordre ?",
+    "it": "Come aiuteresti un amico che si sente sopraffatto dal disordine?",
+    "pt": "Como ajudarias um amigo que se sente sobrecarregado com a tralha?",
+    "pt_BR": "Como você ajudaria um amigo que se sente sobrecarregado pela bagunça?"
+   }
+  },
+  {
+   "id": "home_organisation-097",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Which part of your home best reflects who you are today?",
+    "de": "Welcher Teil deines Zuhauses spiegelt am besten wider, wer du heute bist?",
+    "es": "¿Qué parte de tu casa refleja mejor quién eres hoy?",
+    "fr": "Quelle partie de ton intérieur reflète le mieux qui tu es aujourd'hui ?",
+    "it": "Quale parte di casa tua riflette meglio chi sei oggi?",
+    "pt": "Que parte da tua casa reflete melhor quem és hoje?",
+    "pt_BR": "Qual parte da sua casa reflete melhor quem você é hoje?"
+   }
+  },
+  {
+   "id": "home_organisation-098",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How do you adapt your home routines during very busy weeks?",
+    "de": "Wie passt du deine Routinen zu Hause in sehr vollen Wochen an?",
+    "es": "¿Cómo adaptas tus rutinas de casa en semanas muy ocupadas?",
+    "fr": "Comment adaptes-tu tes routines à la maison pendant les semaines chargées ?",
+    "it": "Come adatti le tue routine di casa nelle settimane molto piene?",
+    "pt": "Como adaptas as tuas rotinas da casa em semanas muito ocupadas?",
+    "pt_BR": "Como você adapta suas rotinas da casa em semanas muito corridas?"
+   }
+  },
+  {
+   "id": "home_organisation-099",
+   "lv": "advanced",
+   "i18n": {
+    "en": "What would your home manifesto say in one sentence?",
+    "de": "Was würde dein Wohn-Manifest in einem Satz sagen?",
+    "es": "¿Qué diría tu manifiesto del hogar en una sola frase?",
+    "fr": "Que dirait ton manifeste de la maison en une phrase ?",
+    "it": "Cosa direbbe in una frase il tuo manifesto della casa?",
+    "pt": "O que diria o teu manifesto da casa numa só frase?",
+    "pt_BR": "O que diria o manifesto da sua casa em uma frase?"
+   }
+  },
+  {
+   "id": "home_organisation-100",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Looking back, which organising change made the biggest difference for you?",
+    "de": "Rückblickend: Welche Veränderung beim Ordnen hat für dich am meisten bewirkt?",
+    "es": "Mirando atrás, ¿qué cambio de organización marcó la mayor diferencia para ti?",
+    "fr": "Avec le recul, quel changement de rangement a fait la plus grande différence pour toi ?",
+    "it": "Guardando indietro, quale cambiamento nell'ordine ha fatto più differenza per te?",
+    "pt": "Olhando para trás, que mudança na arrumação fez mais diferença para ti?",
+    "pt_BR": "Olhando pra trás, qual mudança na organização fez mais diferença pra você?"
+   }
+  }
+ ]
+}

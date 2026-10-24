@@ -1,0 +1,2195 @@
+{
+"topic": "gratitude",
+"days": [
+{
+"d": 1,
+"lv": "beginner",
+"t": "Welcome to your gratitude path",
+"f": "What gratitude is and how noticing one good thing a day grows over 365 days"
+},
+{
+"d": 2,
+"lv": "beginner",
+"t": "What gratitude really means",
+"f": "Appreciating good things, people and moments, whether big or small"
+},
+{
+"d": 3,
+"lv": "beginner",
+"t": "Your gratitude starting point",
+"f": "Reflecting on how often you currently notice the good things in your day"
+},
+{
+"d": 4,
+"lv": "beginner",
+"t": "One good thing today",
+"f": "Naming one good thing that happened today, however small it was"
+},
+{
+"d": 5,
+"lv": "beginner",
+"t": "Three good things",
+"f": "Writing down three good things from your day and why they happened"
+},
+{
+"d": 6,
+"lv": "beginner",
+"t": "Starting a gratitude journal",
+"f": "Choosing a notebook or an app and a regular moment for writing"
+},
+{
+"d": 7,
+"lv": "beginner",
+"t": "Specific beats general",
+"f": "Why 'the warm bread at breakfast' feels richer than simply 'food'"
+},
+{
+"d": 8,
+"lv": "beginner",
+"t": "The why behind the good",
+"f": "Adding why something good happened to deepen your appreciation"
+},
+{
+"d": 9,
+"lv": "beginner",
+"t": "Small comforts",
+"f": "Noticing everyday comforts like a soft pillow or a hot shower"
+},
+{
+"d": 10,
+"lv": "beginner",
+"t": "Thanks to your senses",
+"f": "Appreciating something you saw, heard, tasted, smelled and touched today"
+},
+{
+"d": 11,
+"lv": "beginner",
+"t": "Morning gratitude",
+"f": "Starting the day by naming one thing you are looking forward to"
+},
+{
+"d": 12,
+"lv": "beginner",
+"t": "Evening gratitude",
+"f": "Ending the day by recalling three bright moments"
+},
+{
+"d": 13,
+"lv": "beginner",
+"t": "Gratitude anchors",
+"f": "Linking a grateful thought to a daily routine like brushing your teeth"
+},
+{
+"d": 14,
+"lv": "beginner",
+"t": "People who brightened your day",
+"f": "Thinking of one person who made your day a little better"
+},
+{
+"d": 15,
+"lv": "beginner",
+"t": "Saying a real thank you",
+"f": "Saying a sincere, specific thank you to someone today"
+},
+{
+"d": 16,
+"lv": "beginner",
+"t": "Nature's gifts",
+"f": "Appreciating the sky, trees, weather or animals you noticed today"
+},
+{
+"d": 17,
+"lv": "beginner",
+"t": "Gratitude for food",
+"f": "Pausing before a meal to appreciate its taste and where it came from"
+},
+{
+"d": 18,
+"lv": "beginner",
+"t": "Your home",
+"f": "Noticing what you like about the place where you live"
+},
+{
+"d": 19,
+"lv": "beginner",
+"t": "Thanking your body",
+"f": "Appreciating what your body allows you to do each day"
+},
+{
+"d": 20,
+"lv": "beginner",
+"t": "The gratitude walk",
+"f": "Taking a short walk and noticing things to appreciate along the way"
+},
+{
+"d": 21,
+"lv": "beginner",
+"t": "The gratitude jar",
+"f": "Writing good moments on slips of paper and collecting them in a jar"
+},
+{
+"d": 22,
+"lv": "beginner",
+"t": "Gratitude photos",
+"f": "Taking one photo a day of something you appreciate"
+},
+{
+"d": 23,
+"lv": "beginner",
+"t": "Savouring a good moment",
+"f": "Staying with a pleasant moment for a few extra breaths"
+},
+{
+"d": 24,
+"lv": "beginner",
+"t": "The negativity bias",
+"f": "Why the mind remembers problems more easily than good things"
+},
+{
+"d": 25,
+"lv": "beginner",
+"t": "Balancing the mental scale",
+"f": "Gently adding good moments to balance a day's worries"
+},
+{
+"d": 26,
+"lv": "beginner",
+"t": "Gratitude on busy days",
+"f": "A one-sentence gratitude practice for days with no free time"
+},
+{
+"d": 27,
+"lv": "beginner",
+"t": "Simple pleasures",
+"f": "Celebrating a favourite song, a good joke or a patch of sunshine"
+},
+{
+"d": 28,
+"lv": "beginner",
+"t": "Something new you learned",
+"f": "Appreciating something new you learned today"
+},
+{
+"d": 29,
+"lv": "beginner",
+"t": "Kindness you received",
+"f": "Recalling a kind act someone did for you recently"
+},
+{
+"d": 30,
+"lv": "beginner",
+"t": "Review: your first month",
+"f": "Reading back your journal and noticing patterns in your good things"
+},
+{
+"d": 31,
+"lv": "beginner",
+"t": "Your family",
+"f": "Appreciating a family member and something specific they do"
+},
+{
+"d": 32,
+"lv": "beginner",
+"t": "Your friends",
+"f": "Recalling a moment with a friend that made you smile"
+},
+{
+"d": 33,
+"lv": "beginner",
+"t": "Teachers who helped you",
+"f": "Remembering a teacher or mentor who helped you grow"
+},
+{
+"d": 34,
+"lv": "beginner",
+"t": "Everyday helpers",
+"f": "Noticing the people whose work makes your day easier"
+},
+{
+"d": 35,
+"lv": "beginner",
+"t": "Unseen helpers",
+"f": "Thinking of the farmers, drivers and makers behind everyday things"
+},
+{
+"d": 36,
+"lv": "beginner",
+"t": "Your neighbours",
+"f": "Appreciating the people who live or work near you"
+},
+{
+"d": 37,
+"lv": "beginner",
+"t": "Colleagues and classmates",
+"f": "Noticing support and good humour from people you work or study with"
+},
+{
+"d": 38,
+"lv": "beginner",
+"t": "Thanking with details",
+"f": "Making thanks memorable by naming exactly what you appreciated"
+},
+{
+"d": 39,
+"lv": "beginner",
+"t": "A gratitude message",
+"f": "Sending a short message to thank someone today"
+},
+{
+"d": 40,
+"lv": "beginner",
+"t": "The gratitude letter",
+"f": "Writing a letter to someone who made a difference in your life"
+},
+{
+"d": 41,
+"lv": "beginner",
+"t": "Sharing your letter",
+"f": "Deciding whether to send it, read it aloud or simply keep it"
+},
+{
+"d": 42,
+"lv": "beginner",
+"t": "Kind strangers",
+"f": "Appreciating a smile or a helping hand from someone you do not know"
+},
+{
+"d": 43,
+"lv": "beginner",
+"t": "Pets and animals",
+"f": "Noticing the joy animals bring into your life"
+},
+{
+"d": 44,
+"lv": "beginner",
+"t": "Happy childhood memories",
+"f": "Recalling a happy memory from when you were young"
+},
+{
+"d": 45,
+"lv": "beginner",
+"t": "Role models",
+"f": "Appreciating people whose example inspires you"
+},
+{
+"d": 46,
+"lv": "beginner",
+"t": "Good advice",
+"f": "Remembering helpful advice you received and how it helped"
+},
+{
+"d": 47,
+"lv": "beginner",
+"t": "Kindness around you",
+"f": "Spotting acts of kindness between other people"
+},
+{
+"d": 48,
+"lv": "beginner",
+"t": "Gratitude in conversation",
+"f": "Asking others what went well in their day"
+},
+{
+"d": 49,
+"lv": "beginner",
+"t": "Appreciating differences",
+"f": "Being grateful for people who see the world differently"
+},
+{
+"d": 50,
+"lv": "beginner",
+"t": "Thanks across cultures",
+"f": "How different cultures express thanks in words and gestures"
+},
+{
+"d": 51,
+"lv": "beginner",
+"t": "Thank you in new languages",
+"f": "Learning how to say thank you in the languages of people you meet"
+},
+{
+"d": 52,
+"lv": "beginner",
+"t": "Sharing good things at meals",
+"f": "Sharing one good thing each during a meal with family or friends"
+},
+{
+"d": 53,
+"lv": "beginner",
+"t": "Your community",
+"f": "Noticing the local places and groups you value"
+},
+{
+"d": 54,
+"lv": "beginner",
+"t": "Shared laughter",
+"f": "Recalling a recent moment of laughing together with others"
+},
+{
+"d": 55,
+"lv": "beginner",
+"t": "Receiving thanks gracefully",
+"f": "Accepting thanks and compliments with a simple smile"
+},
+{
+"d": 56,
+"lv": "beginner",
+"t": "Support in tough times",
+"f": "Remembering who was there for you when things were tough"
+},
+{
+"d": 57,
+"lv": "beginner",
+"t": "Gratitude and generosity",
+"f": "How feeling thankful can inspire you to give to others"
+},
+{
+"d": 58,
+"lv": "beginner",
+"t": "A random act of kindness",
+"f": "Doing something kind and noticing how it feels"
+},
+{
+"d": 59,
+"lv": "beginner",
+"t": "Online connections",
+"f": "Appreciating people you know through apps and messages"
+},
+{
+"d": 60,
+"lv": "beginner",
+"t": "Review: gratitude for people",
+"f": "Reflecting on the people you appreciated and thanked this month"
+},
+{
+"d": 61,
+"lv": "beginner",
+"t": "The gift of mornings",
+"f": "Noticing what is good about the start of a new day"
+},
+{
+"d": 62,
+"lv": "beginner",
+"t": "Rest and sleep",
+"f": "Appreciating sleep, naps and quiet moments"
+},
+{
+"d": 63,
+"lv": "beginner",
+"t": "Clean water",
+"f": "Reflecting on clean water for drinking, washing and cooking"
+},
+{
+"d": 64,
+"lv": "beginner",
+"t": "Light and colour",
+"f": "Noticing sunlight, lamps and the changing colours of the day"
+},
+{
+"d": 65,
+"lv": "beginner",
+"t": "Warmth and shelter",
+"f": "Appreciating a roof, warm clothes and comfortable spaces"
+},
+{
+"d": 66,
+"lv": "beginner",
+"t": "Helpful technology",
+"f": "Appreciating tools that help you learn, connect and create"
+},
+{
+"d": 67,
+"lv": "beginner",
+"t": "Getting around",
+"f": "Appreciating buses, bikes, trains and the freedom to move around"
+},
+{
+"d": 68,
+"lv": "beginner",
+"t": "Music that lifts you",
+"f": "Thanking the songs and sounds that lift your mood"
+},
+{
+"d": 69,
+"lv": "beginner",
+"t": "Books and stories",
+"f": "Appreciating stories that taught or entertained you"
+},
+{
+"d": 70,
+"lv": "beginner",
+"t": "Your hobbies",
+"f": "Noticing the joy your favourite activities bring"
+},
+{
+"d": 71,
+"lv": "beginner",
+"t": "The best things are free",
+"f": "Listing good things in life that cost nothing at all"
+},
+{
+"d": 72,
+"lv": "beginner",
+"t": "Your neighbourhood",
+"f": "Walking around and noticing the places you enjoy"
+},
+{
+"d": 73,
+"lv": "beginner",
+"t": "Public spaces",
+"f": "Appreciating parks, libraries and squares open to everyone"
+},
+{
+"d": 74,
+"lv": "beginner",
+"t": "Every kind of weather",
+"f": "Finding something to appreciate in sun, rain, wind or snow"
+},
+{
+"d": 75,
+"lv": "beginner",
+"t": "The current season",
+"f": "Noticing what you love about the season you are in"
+},
+{
+"d": 76,
+"lv": "beginner",
+"t": "Ordinary days",
+"f": "Seeing the value of a calm day where nothing special happened"
+},
+{
+"d": 77,
+"lv": "beginner",
+"t": "Things that went right",
+"f": "Noticing the many small things that worked smoothly today"
+},
+{
+"d": 78,
+"lv": "beginner",
+"t": "Your skills",
+"f": "Appreciating abilities you have developed over time"
+},
+{
+"d": 79,
+"lv": "beginner",
+"t": "Your work or studies",
+"f": "Finding one thing you value in what you do each day"
+},
+{
+"d": 80,
+"lv": "beginner",
+"t": "Things you love using",
+"f": "Appreciating a few objects you use often and love"
+},
+{
+"d": 81,
+"lv": "beginner",
+"t": "Caring for what you value",
+"f": "Showing gratitude by looking after your things"
+},
+{
+"d": 82,
+"lv": "beginner",
+"t": "Healthy habits",
+"f": "Appreciating the habits that help you feel good"
+},
+{
+"d": 83,
+"lv": "beginner",
+"t": "The joy of movement",
+"f": "Enjoying the ability to walk, stretch or dance"
+},
+{
+"d": 84,
+"lv": "beginner",
+"t": "Favourite flavours",
+"f": "Savouring a favourite flavour with full attention"
+},
+{
+"d": 85,
+"lv": "beginner",
+"t": "Comforting smells",
+"f": "Noticing scents that bring comfort or happy memories"
+},
+{
+"d": 86,
+"lv": "beginner",
+"t": "Colours that cheer you",
+"f": "Spotting colours that make you feel good"
+},
+{
+"d": 87,
+"lv": "beginner",
+"t": "Quiet moments",
+"f": "Appreciating moments of calm and silence"
+},
+{
+"d": 88,
+"lv": "beginner",
+"t": "Pleasant surprises",
+"f": "Remembering pleasant surprises that brightened a day"
+},
+{
+"d": 89,
+"lv": "beginner",
+"t": "A gratitude map",
+"f": "Drawing a map of the places in your life you feel thankful for"
+},
+{
+"d": 90,
+"lv": "beginner",
+"t": "Review: everyday gratitude",
+"f": "Choosing your favourite everyday things to appreciate regularly"
+},
+{
+"d": 91,
+"lv": "beginner",
+"t": "The gratitude habit loop",
+"f": "Using a cue, a short practice and a pleasant feeling to build a habit"
+},
+{
+"d": 92,
+"lv": "beginner",
+"t": "Daily or weekly journaling",
+"f": "Finding the journaling rhythm that feels fresh rather than forced"
+},
+{
+"d": 93,
+"lv": "beginner",
+"t": "Keeping gratitude fresh",
+"f": "Varying your prompts so the practice never becomes automatic"
+},
+{
+"d": 94,
+"lv": "beginner",
+"t": "Your own prompt list",
+"f": "Collecting your own list of prompts for days with no ideas"
+},
+{
+"d": 95,
+"lv": "beginner",
+"t": "One good thing in depth",
+"f": "Writing about one good thing in detail instead of listing many"
+},
+{
+"d": 96,
+"lv": "beginner",
+"t": "A senses journal",
+"f": "Recording a sight, sound, smell, taste and touch you enjoyed"
+},
+{
+"d": 97,
+"lv": "beginner",
+"t": "A gratitude playlist",
+"f": "Making a list of songs connected to happy memories"
+},
+{
+"d": 98,
+"lv": "beginner",
+"t": "Gratitude reminders",
+"f": "Using notes, phone wallpapers or objects to remember to appreciate"
+},
+{
+"d": 99,
+"lv": "beginner",
+"t": "A gratitude partner",
+"f": "Sharing daily good things with a friend or family member"
+},
+{
+"d": 100,
+"lv": "beginner",
+"t": "Day one hundred",
+"f": "Celebrating one hundred days and recalling your favourite entries"
+},
+{
+"d": 101,
+"lv": "beginner",
+"t": "Mental subtraction",
+"f": "Imagining life without something good to appreciate it even more"
+},
+{
+"d": 102,
+"lv": "beginner",
+"t": "Savouring the past",
+"f": "Reliving a happy memory in rich, colourful detail"
+},
+{
+"d": 103,
+"lv": "beginner",
+"t": "Savouring the present",
+"f": "Fully enjoying something good while it is happening"
+},
+{
+"d": 104,
+"lv": "beginner",
+"t": "Savouring the future",
+"f": "Looking forward to a pleasant plan with happy anticipation"
+},
+{
+"d": 105,
+"lv": "beginner",
+"t": "Your progress",
+"f": "Noticing how far you have come in a skill or goal"
+},
+{
+"d": 106,
+"lv": "beginner",
+"t": "Your effort",
+"f": "Appreciating your own hard work, not only the results"
+},
+{
+"d": 107,
+"lv": "beginner",
+"t": "Second chances",
+"f": "Remembering times you got the chance to try again"
+},
+{
+"d": 108,
+"lv": "beginner",
+"t": "Lessons learned",
+"f": "Finding value in experiences that taught you something"
+},
+{
+"d": 109,
+"lv": "beginner",
+"t": "Mistakes that helped",
+"f": "Seeing how small mistakes led to growth"
+},
+{
+"d": 110,
+"lv": "beginner",
+"t": "Your strengths",
+"f": "Naming personal qualities you are glad to have"
+},
+{
+"d": 111,
+"lv": "beginner",
+"t": "Thanking your past self",
+"f": "Thanking your younger self for choices that helped you"
+},
+{
+"d": 112,
+"lv": "beginner",
+"t": "Today's you",
+"f": "Appreciating the effort you made today"
+},
+{
+"d": 113,
+"lv": "beginner",
+"t": "Appreciative self-talk",
+"f": "Swapping complaints for balanced, appreciative thoughts"
+},
+{
+"d": 114,
+"lv": "beginner",
+"t": "Complaint awareness",
+"f": "Noticing how often you complain and gently reframing"
+},
+{
+"d": 115,
+"lv": "beginner",
+"t": "A complaint-free hour",
+"f": "Trying one hour of noticing positives instead of complaining"
+},
+{
+"d": 116,
+"lv": "beginner",
+"t": "Gratitude is not denial",
+"f": "Appreciating good things while still acknowledging what is hard"
+},
+{
+"d": 117,
+"lv": "beginner",
+"t": "Gratitude and wellbeing",
+"f": "What research generally suggests about gratitude and mood, in simple terms"
+},
+{
+"d": 118,
+"lv": "beginner",
+"t": "A grateful wind-down",
+"f": "Using a calm gratitude reflection as part of your evening routine"
+},
+{
+"d": 119,
+"lv": "beginner",
+"t": "Low-energy days",
+"f": "Finding one tiny good thing on flat, tired days"
+},
+{
+"d": 120,
+"lv": "beginner",
+"t": "Review: the beginner path",
+"f": "Reviewing four months of gratitude and your favourite techniques"
+},
+{
+"d": 121,
+"lv": "intermediate",
+"t": "Deeper journal entries",
+"f": "Writing a short paragraph about one good thing instead of a list"
+},
+{
+"d": 122,
+"lv": "intermediate",
+"t": "Why it mattered",
+"f": "Exploring the deeper reasons a good moment felt meaningful"
+},
+{
+"d": 123,
+"lv": "intermediate",
+"t": "Gratitude and your values",
+"f": "Seeing how the things you appreciate reveal what you value"
+},
+{
+"d": 124,
+"lv": "intermediate",
+"t": "Meaningful moments",
+"f": "Recalling moments that felt especially meaningful"
+},
+{
+"d": 125,
+"lv": "intermediate",
+"t": "Opportunities you have had",
+"f": "Appreciating chances you have had to learn, travel or grow"
+},
+{
+"d": 126,
+"lv": "intermediate",
+"t": "Everyday freedom of choice",
+"f": "Noticing the everyday choices you are free to make"
+},
+{
+"d": 127,
+"lv": "intermediate",
+"t": "The gift of learning",
+"f": "Appreciating what education and learning have opened up for you"
+},
+{
+"d": 128,
+"lv": "intermediate",
+"t": "Perfect timing",
+"f": "Remembering moments when things happened at just the right time"
+},
+{
+"d": 129,
+"lv": "intermediate",
+"t": "Chance encounters",
+"f": "Recalling meetings that changed something for you"
+},
+{
+"d": 130,
+"lv": "intermediate",
+"t": "Turning points",
+"f": "Reflecting on moments that set you on a good path"
+},
+{
+"d": 131,
+"lv": "intermediate",
+"t": "Your gratitude timeline",
+"f": "Drawing a timeline of the key good moments in your life"
+},
+{
+"d": 132,
+"lv": "intermediate",
+"t": "Every stage of life",
+"f": "Recalling something good from each stage of your life"
+},
+{
+"d": 133,
+"lv": "intermediate",
+"t": "Places you have lived",
+"f": "Appreciating what each home taught you"
+},
+{
+"d": 134,
+"lv": "intermediate",
+"t": "Journeys that changed you",
+"f": "Remembering trips that broadened your view of the world"
+},
+{
+"d": 135,
+"lv": "intermediate",
+"t": "Happy first times",
+"f": "Recalling happy firsts like a first bike ride or a first job"
+},
+{
+"d": 136,
+"lv": "intermediate",
+"t": "Traditions you enjoy",
+"f": "Appreciating family or cultural traditions you love"
+},
+{
+"d": 137,
+"lv": "intermediate",
+"t": "Joyful celebrations",
+"f": "Recalling joyful celebrations and the people who were there"
+},
+{
+"d": 138,
+"lv": "intermediate",
+"t": "Your heritage",
+"f": "Appreciating languages, foods and customs passed down to you"
+},
+{
+"d": 139,
+"lv": "intermediate",
+"t": "The story of your name",
+"f": "Reflecting on the story behind your name or your background"
+},
+{
+"d": 140,
+"lv": "intermediate",
+"t": "Earlier generations",
+"f": "Appreciating inventions and work from the people who came before us"
+},
+{
+"d": 141,
+"lv": "intermediate",
+"t": "Scientists and inventors",
+"f": "Thanking the discoveries that make daily life easier"
+},
+{
+"d": 142,
+"lv": "intermediate",
+"t": "Artists and creators",
+"f": "Appreciating art, films and music created by others"
+},
+{
+"d": 143,
+"lv": "intermediate",
+"t": "Writers who stayed with you",
+"f": "Thanking authors whose words stayed with you"
+},
+{
+"d": 144,
+"lv": "intermediate",
+"t": "Athletes and performers",
+"f": "Appreciating people whose talent inspires you"
+},
+{
+"d": 145,
+"lv": "intermediate",
+"t": "Caregivers",
+"f": "Thinking of nurses, carers and others who look after people"
+},
+{
+"d": 146,
+"lv": "intermediate",
+"t": "Everyday workers",
+"f": "Appreciating cleaners, cooks and delivery people"
+},
+{
+"d": 147,
+"lv": "intermediate",
+"t": "Volunteers",
+"f": "Recognising people who give their time for others"
+},
+{
+"d": 148,
+"lv": "intermediate",
+"t": "Gratitude in your own words",
+"f": "Writing your personal definition of gratitude"
+},
+{
+"d": 149,
+"lv": "intermediate",
+"t": "Deeper reflection questions",
+"f": "Using deeper questions to explore what you appreciate"
+},
+{
+"d": 150,
+"lv": "intermediate",
+"t": "Review: deeper reflection",
+"f": "Looking back on your timeline, values and meaningful moments"
+},
+{
+"d": 151,
+"lv": "intermediate",
+"t": "The art of a great thank you",
+"f": "What makes thanks feel sincere: specific, personal and timely"
+},
+{
+"d": 152,
+"lv": "intermediate",
+"t": "Thanking in person",
+"f": "Saying thank you face to face with a smile and real attention"
+},
+{
+"d": 153,
+"lv": "intermediate",
+"t": "Thanking in writing",
+"f": "Writing a heartfelt card or note"
+},
+{
+"d": 154,
+"lv": "intermediate",
+"t": "Thanking with actions",
+"f": "Showing appreciation through a helpful deed"
+},
+{
+"d": 155,
+"lv": "intermediate",
+"t": "Thanking with your time",
+"f": "Giving someone your full attention as a form of thanks"
+},
+{
+"d": 156,
+"lv": "intermediate",
+"t": "Small thoughtful gifts",
+"f": "Choosing simple, thoughtful gifts that say thank you"
+},
+{
+"d": 157,
+"lv": "intermediate",
+"t": "Public appreciation",
+"f": "Praising someone's effort in front of others with care"
+},
+{
+"d": 158,
+"lv": "intermediate",
+"t": "Appreciation at work",
+"f": "Recognising colleagues' contributions in a specific way"
+},
+{
+"d": 159,
+"lv": "intermediate",
+"t": "Appreciation in teams",
+"f": "Starting meetings with a quick round of appreciation"
+},
+{
+"d": 160,
+"lv": "intermediate",
+"t": "Appreciation at home",
+"f": "Creating a habit of thanking each other at home"
+},
+{
+"d": 161,
+"lv": "intermediate",
+"t": "Appreciation in friendships",
+"f": "Telling friends what you value about them"
+},
+{
+"d": 162,
+"lv": "intermediate",
+"t": "Thanking people from your past",
+"f": "Reconnecting with someone to thank them years later"
+},
+{
+"d": 163,
+"lv": "intermediate",
+"t": "A gratitude visit",
+"f": "Planning a visit to thank someone in person"
+},
+{
+"d": 164,
+"lv": "intermediate",
+"t": "A voice message of thanks",
+"f": "Recording a warm spoken thank you"
+},
+{
+"d": 165,
+"lv": "intermediate",
+"t": "Thanks in their language",
+"f": "Thanking someone in their own language"
+},
+{
+"d": 166,
+"lv": "intermediate",
+"t": "The etiquette of thanks",
+"f": "Understanding when and how thanks is expressed in different cultures"
+},
+{
+"d": 167,
+"lv": "intermediate",
+"t": "Thanks without expectations",
+"f": "Giving thanks without waiting for anything in return"
+},
+{
+"d": 168,
+"lv": "intermediate",
+"t": "Noticing thanks you receive",
+"f": "Seeing how people thank you and appreciating it"
+},
+{
+"d": 169,
+"lv": "intermediate",
+"t": "People you never thanked",
+"f": "Listing people you have never properly thanked"
+},
+{
+"d": 170,
+"lv": "intermediate",
+"t": "Thanking service staff",
+"f": "Showing appreciation to waiters, drivers and shop staff"
+},
+{
+"d": 171,
+"lv": "intermediate",
+"t": "Thanking yourself",
+"f": "Writing a note of appreciation to yourself"
+},
+{
+"d": 172,
+"lv": "intermediate",
+"t": "Gratitude for feedback",
+"f": "Thanking people who helped you improve"
+},
+{
+"d": 173,
+"lv": "intermediate",
+"t": "People who were patient with you",
+"f": "Thanking someone who was patient with you"
+},
+{
+"d": 174,
+"lv": "intermediate",
+"t": "People who trusted you",
+"f": "Appreciating people who believed in you"
+},
+{
+"d": 175,
+"lv": "intermediate",
+"t": "Gratitude rituals with friends",
+"f": "Starting a shared gratitude chat or a weekly sharing moment"
+},
+{
+"d": 176,
+"lv": "intermediate",
+"t": "Thanks on special days",
+"f": "Using birthdays and holidays to express appreciation"
+},
+{
+"d": 177,
+"lv": "intermediate",
+"t": "Starting tricky talks with thanks",
+"f": "Opening a difficult conversation by naming what you appreciate"
+},
+{
+"d": 178,
+"lv": "intermediate",
+"t": "The kindness chain",
+"f": "Passing kindness forward after receiving it"
+},
+{
+"d": 179,
+"lv": "intermediate",
+"t": "A week of thank-yous",
+"f": "Thanking one different person every day for a week"
+},
+{
+"d": 180,
+"lv": "intermediate",
+"t": "Review: expressing gratitude",
+"f": "Reflecting on how expressing thanks affected you and others"
+},
+{
+"d": 181,
+"lv": "intermediate",
+"t": "Gratitude on hard days",
+"f": "Finding small good things even when a day is difficult"
+},
+{
+"d": 182,
+"lv": "intermediate",
+"t": "Holding both",
+"f": "Making room for both struggle and appreciation at the same time"
+},
+{
+"d": 183,
+"lv": "intermediate",
+"t": "Gentle reframing",
+"f": "Looking for a helpful angle without dismissing real problems"
+},
+{
+"d": 184,
+"lv": "intermediate",
+"t": "Growth from challenges",
+"f": "Recognising strengths you built through difficult times"
+},
+{
+"d": 185,
+"lv": "intermediate",
+"t": "Your resilience",
+"f": "Appreciating your ability to keep going"
+},
+{
+"d": 186,
+"lv": "intermediate",
+"t": "Your support network",
+"f": "Noticing the people and resources you can lean on"
+},
+{
+"d": 187,
+"lv": "intermediate",
+"t": "Calm after a busy time",
+"f": "Appreciating the relief when a stressful period ends"
+},
+{
+"d": 188,
+"lv": "intermediate",
+"t": "Problems you solved",
+"f": "Celebrating problems you have handled well"
+},
+{
+"d": 189,
+"lv": "intermediate",
+"t": "Moments of patience",
+"f": "Noticing moments when you stayed patient and calm"
+},
+{
+"d": 190,
+"lv": "intermediate",
+"t": "Silver linings, with care",
+"f": "Finding unexpected benefits in plans that changed"
+},
+{
+"d": 191,
+"lv": "intermediate",
+"t": "Your flexibility",
+"f": "Appreciating your ability to adapt to change"
+},
+{
+"d": 192,
+"lv": "intermediate",
+"t": "Gratitude while waiting",
+"f": "Using waiting times to notice things to appreciate"
+},
+{
+"d": 193,
+"lv": "intermediate",
+"t": "Imperfect days",
+"f": "Finding beauty in days that were not perfect"
+},
+{
+"d": 194,
+"lv": "intermediate",
+"t": "Well-earned rest",
+"f": "Enjoying rest after real effort"
+},
+{
+"d": 195,
+"lv": "intermediate",
+"t": "Slow progress",
+"f": "Appreciating small steps toward bigger goals"
+},
+{
+"d": 196,
+"lv": "intermediate",
+"t": "Help you asked for",
+"f": "Recognising the courage of asking and the help you received"
+},
+{
+"d": 197,
+"lv": "intermediate",
+"t": "What still went right",
+"f": "Noticing what still went right in a frustrating moment"
+},
+{
+"d": 198,
+"lv": "intermediate",
+"t": "Wellbeing basics",
+"f": "Appreciating habits like rest, water and movement that support you"
+},
+{
+"d": 199,
+"lv": "intermediate",
+"t": "Perspective",
+"f": "How stepping back helps you see what really matters"
+},
+{
+"d": 200,
+"lv": "intermediate",
+"t": "Day two hundred",
+"f": "Celebrating two hundred days of noticing good things"
+},
+{
+"d": 201,
+"lv": "intermediate",
+"t": "Comparison awareness",
+"f": "Noticing comparisons with others and returning to your own good things"
+},
+{
+"d": 202,
+"lv": "intermediate",
+"t": "From envy to inspiration",
+"f": "Turning envy into appreciation and inspiration"
+},
+{
+"d": 203,
+"lv": "intermediate",
+"t": "Enough is a feast",
+"f": "Exploring the feeling of having enough right now"
+},
+{
+"d": 204,
+"lv": "intermediate",
+"t": "Gratitude and contentment",
+"f": "Finding peace in what you already have"
+},
+{
+"d": 205,
+"lv": "intermediate",
+"t": "Gratitude and simplicity",
+"f": "Appreciating a simpler life with fewer things"
+},
+{
+"d": 206,
+"lv": "intermediate",
+"t": "Mindful spending",
+"f": "Pausing before buying to appreciate what you already own"
+},
+{
+"d": 207,
+"lv": "intermediate",
+"t": "Sharing and borrowing",
+"f": "Appreciating libraries, lending and sharing with others"
+},
+{
+"d": 208,
+"lv": "intermediate",
+"t": "Gratitude and social media",
+"f": "Noticing how scrolling affects appreciation and choosing wisely"
+},
+{
+"d": 209,
+"lv": "intermediate",
+"t": "Real-life moments",
+"f": "Valuing offline moments over online highlights"
+},
+{
+"d": 210,
+"lv": "intermediate",
+"t": "Review: gratitude in harder moments",
+"f": "Reviewing how gratitude helped you through harder moments"
+},
+{
+"d": 211,
+"lv": "intermediate",
+"t": "Our planet",
+"f": "Appreciating the air, water and land that support life"
+},
+{
+"d": 212,
+"lv": "intermediate",
+"t": "Trees",
+"f": "Noticing the shade, fresh air and beauty that trees provide"
+},
+{
+"d": 213,
+"lv": "intermediate",
+"t": "Oceans and rivers",
+"f": "Appreciating seas, rivers and lakes and their role in life"
+},
+{
+"d": 214,
+"lv": "intermediate",
+"t": "The variety of animals",
+"f": "Appreciating the variety of animal life around you"
+},
+{
+"d": 215,
+"lv": "intermediate",
+"t": "The night sky",
+"f": "Looking up at the stars and the moon with wonder"
+},
+{
+"d": 216,
+"lv": "intermediate",
+"t": "Thanks through caring for nature",
+"f": "Turning appreciation into small eco-friendly actions"
+},
+{
+"d": 217,
+"lv": "intermediate",
+"t": "Where food comes from",
+"f": "Learning where your food comes from and thanking everyone involved"
+},
+{
+"d": 218,
+"lv": "intermediate",
+"t": "Local markets",
+"f": "Appreciating fresh produce and the people who sell it"
+},
+{
+"d": 219,
+"lv": "intermediate",
+"t": "Craftsmanship",
+"f": "Noticing well-made objects and the skill behind them"
+},
+{
+"d": 220,
+"lv": "intermediate",
+"t": "Buildings around you",
+"f": "Appreciating beautiful or useful buildings in your area"
+},
+{
+"d": 221,
+"lv": "intermediate",
+"t": "The gift of language",
+"f": "Appreciating the ability to talk, listen and learn languages"
+},
+{
+"d": 222,
+"lv": "intermediate",
+"t": "Cultural exchange",
+"f": "Valuing what you learn from people of other cultures"
+},
+{
+"d": 223,
+"lv": "intermediate",
+"t": "World foods",
+"f": "Appreciating dishes from other countries that you enjoy"
+},
+{
+"d": 224,
+"lv": "intermediate",
+"t": "Harvest festivals worldwide",
+"f": "Learning about harvest and thanksgiving festivals in different cultures"
+},
+{
+"d": 225,
+"lv": "intermediate",
+"t": "Gratitude traditions worldwide",
+"f": "Discovering how different cultures practise thankfulness"
+},
+{
+"d": 226,
+"lv": "intermediate",
+"t": "Travel memories",
+"f": "Recalling kind people and beautiful places from your trips"
+},
+{
+"d": 227,
+"lv": "intermediate",
+"t": "Welcoming hosts",
+"f": "Thanking people who welcomed you into their homes or cities"
+},
+{
+"d": 228,
+"lv": "intermediate",
+"t": "Being a grateful guest",
+"f": "Showing appreciation when visiting new places"
+},
+{
+"d": 229,
+"lv": "intermediate",
+"t": "Public services",
+"f": "Appreciating libraries, parks, transport and clean streets"
+},
+{
+"d": 230,
+"lv": "intermediate",
+"t": "Your city or town",
+"f": "Discovering what you love about where you live"
+},
+{
+"d": 231,
+"lv": "intermediate",
+"t": "Creative gratitude",
+"f": "Expressing appreciation through drawing, music or crafts"
+},
+{
+"d": 232,
+"lv": "intermediate",
+"t": "A gratitude poem",
+"f": "Writing a short poem about something you appreciate"
+},
+{
+"d": 233,
+"lv": "intermediate",
+"t": "A gratitude collage",
+"f": "Making a collage of images of things you are thankful for"
+},
+{
+"d": 234,
+"lv": "intermediate",
+"t": "A gratitude photo walk",
+"f": "Photographing ten things you appreciate on a walk"
+},
+{
+"d": 235,
+"lv": "intermediate",
+"t": "Gratitude stories",
+"f": "Telling a friend the story of a moment you are grateful for"
+},
+{
+"d": 236,
+"lv": "intermediate",
+"t": "Humour and laughter",
+"f": "Appreciating funny moments and the people who make you laugh"
+},
+{
+"d": 237,
+"lv": "intermediate",
+"t": "The joy of play",
+"f": "Appreciating games, sports and fun"
+},
+{
+"d": 238,
+"lv": "intermediate",
+"t": "Your curiosity",
+"f": "Valuing your desire to learn and explore"
+},
+{
+"d": 239,
+"lv": "intermediate",
+"t": "Moments of awe",
+"f": "Noticing moments of wonder at nature, art or ideas"
+},
+{
+"d": 240,
+"lv": "intermediate",
+"t": "The awe walk",
+"f": "Walking with attention to things that inspire wonder"
+},
+{
+"d": 241,
+"lv": "intermediate",
+"t": "Everyday beauty",
+"f": "Noticing beauty in ordinary places"
+},
+{
+"d": 242,
+"lv": "intermediate",
+"t": "Small wins",
+"f": "Celebrating tiny achievements throughout the day"
+},
+{
+"d": 243,
+"lv": "intermediate",
+"t": "Good routines",
+"f": "Appreciating routines that support your life"
+},
+{
+"d": 244,
+"lv": "intermediate",
+"t": "Your tools",
+"f": "Appreciating the tools that help you work and create"
+},
+{
+"d": 245,
+"lv": "intermediate",
+"t": "Access to knowledge",
+"f": "Appreciating access to information and learning"
+},
+{
+"d": 246,
+"lv": "intermediate",
+"t": "Kindness online",
+"f": "Noticing helpful and kind people on the internet"
+},
+{
+"d": 247,
+"lv": "intermediate",
+"t": "Doors that languages open",
+"f": "Appreciating the friendships and ideas other languages bring"
+},
+{
+"d": 248,
+"lv": "intermediate",
+"t": "Moments of peace",
+"f": "Recalling calm moments from your week"
+},
+{
+"d": 249,
+"lv": "intermediate",
+"t": "A joy mood board",
+"f": "Creating a visual board of things that bring you joy"
+},
+{
+"d": 250,
+"lv": "intermediate",
+"t": "Review: the intermediate path",
+"f": "Looking back on months of deeper gratitude practice"
+},
+{
+"d": 251,
+"lv": "advanced",
+"t": "Gratitude as a lens",
+"f": "Seeing a whole day through an appreciative lens"
+},
+{
+"d": 252,
+"lv": "advanced",
+"t": "Gratitude in real time",
+"f": "Noticing good things the moment they happen"
+},
+{
+"d": 253,
+"lv": "advanced",
+"t": "Gratitude without words",
+"f": "Feeling appreciation in the body without putting it into words"
+},
+{
+"d": 254,
+"lv": "advanced",
+"t": "Where gratitude lives in the body",
+"f": "Noticing warmth, softness or lightness when you feel thankful"
+},
+{
+"d": 255,
+"lv": "advanced",
+"t": "Gratitude breathing",
+"f": "Pairing slow breaths with silently naming things you appreciate"
+},
+{
+"d": 256,
+"lv": "advanced",
+"t": "A gratitude reflection",
+"f": "A quiet reflection moving from yourself to others to the whole world"
+},
+{
+"d": 257,
+"lv": "advanced",
+"t": "The present moment",
+"f": "Appreciating simply being here, right now"
+},
+{
+"d": 258,
+"lv": "advanced",
+"t": "The ordinary miracle",
+"f": "Seeing wonder in everyday things like breathing and seeing"
+},
+{
+"d": 259,
+"lv": "advanced",
+"t": "Interconnection",
+"f": "Reflecting on how many people support your daily life"
+},
+{
+"d": 260,
+"lv": "advanced",
+"t": "Tracing a single object",
+"f": "Following the journey of one object from its origin to your hands"
+},
+{
+"d": 261,
+"lv": "advanced",
+"t": "Invisible systems",
+"f": "Appreciating electricity, internet, roads and water networks"
+},
+{
+"d": 262,
+"lv": "advanced",
+"t": "The unnoticed",
+"f": "Spotting good things you usually overlook"
+},
+{
+"d": 263,
+"lv": "advanced",
+"t": "Problems that did not happen",
+"f": "Appreciating the things that did not go wrong today"
+},
+{
+"d": 264,
+"lv": "advanced",
+"t": "Possibility",
+"f": "Appreciating the options and paths still open to you"
+},
+{
+"d": 265,
+"lv": "advanced",
+"t": "Your ability to grow",
+"f": "Appreciating your capacity to learn and change"
+},
+{
+"d": 266,
+"lv": "advanced",
+"t": "Inner qualities",
+"f": "Valuing your kindness, curiosity and courage"
+},
+{
+"d": 267,
+"lv": "advanced",
+"t": "Big obstacles overcome",
+"f": "Recalling big obstacles you have moved past"
+},
+{
+"d": 268,
+"lv": "advanced",
+"t": "People who widened your view",
+"f": "Appreciating those whose different opinions broadened your perspective"
+},
+{
+"d": 269,
+"lv": "advanced",
+"t": "Quiet influences",
+"f": "Recognising people who shaped you without knowing it"
+},
+{
+"d": 270,
+"lv": "advanced",
+"t": "Luck and good fortune",
+"f": "Appreciating fortunate events beyond your control"
+},
+{
+"d": 271,
+"lv": "advanced",
+"t": "How things came together",
+"f": "Reflecting on how events in your life connected in good ways"
+},
+{
+"d": 272,
+"lv": "advanced",
+"t": "Humility and gratitude",
+"f": "Recognising that no one succeeds alone"
+},
+{
+"d": 273,
+"lv": "advanced",
+"t": "Regular generosity",
+"f": "Turning appreciation into a regular habit of giving"
+},
+{
+"d": 274,
+"lv": "advanced",
+"t": "Paying it forward",
+"f": "Passing on the help you received to someone else"
+},
+{
+"d": 275,
+"lv": "advanced",
+"t": "Mentoring as thanks",
+"f": "Sharing your skills to thank those who taught you"
+},
+{
+"d": 276,
+"lv": "advanced",
+"t": "Volunteering as thanks",
+"f": "Giving time to a good cause as a way of saying thank you"
+},
+{
+"d": 277,
+"lv": "advanced",
+"t": "Leading with appreciation",
+"f": "Leading teams and groups with regular appreciation"
+},
+{
+"d": 278,
+"lv": "advanced",
+"t": "A culture of thanks at home",
+"f": "Building a family culture of appreciation"
+},
+{
+"d": 279,
+"lv": "advanced",
+"t": "Gratitude in a balanced life",
+"f": "Combining gratitude with rest, movement and connection"
+},
+{
+"d": 280,
+"lv": "advanced",
+"t": "Review: a new way of seeing",
+"f": "Reflecting on how your view of the world has shifted"
+},
+{
+"d": 281,
+"lv": "advanced",
+"t": "Long friendships",
+"f": "Appreciating how friendships have grown over the years"
+},
+{
+"d": 282,
+"lv": "advanced",
+"t": "Family stories",
+"f": "Learning family stories and appreciating them"
+},
+{
+"d": 283,
+"lv": "advanced",
+"t": "Interviewing an elder",
+"f": "Asking an older person about the moments they are grateful for"
+},
+{
+"d": 284,
+"lv": "advanced",
+"t": "Across generations",
+"f": "Sharing appreciation between younger and older people"
+},
+{
+"d": 285,
+"lv": "advanced",
+"t": "New friends",
+"f": "Appreciating people who recently entered your life"
+},
+{
+"d": 286,
+"lv": "advanced",
+"t": "Friends from other worlds",
+"f": "Valuing friends who bring new ideas and cultures"
+},
+{
+"d": 287,
+"lv": "advanced",
+"t": "Good listeners",
+"f": "Thanking people who truly listen to you"
+},
+{
+"d": 288,
+"lv": "advanced",
+"t": "Honest friends",
+"f": "Appreciating friends who tell you the truth kindly"
+},
+{
+"d": 289,
+"lv": "advanced",
+"t": "Teammates",
+"f": "Appreciating the people you achieve goals with"
+},
+{
+"d": 290,
+"lv": "advanced",
+"t": "Groups you belong to",
+"f": "Valuing the clubs, classes and groups you are part of"
+},
+{
+"d": 291,
+"lv": "advanced",
+"t": "Starting a gratitude circle",
+"f": "Gathering friends to share good things regularly"
+},
+{
+"d": 292,
+"lv": "advanced",
+"t": "Good things in group chats",
+"f": "Starting a weekly good-things thread with friends"
+},
+{
+"d": 293,
+"lv": "advanced",
+"t": "A shared thank-you board",
+"f": "Creating a shared space at home or work for notes of thanks"
+},
+{
+"d": 294,
+"lv": "advanced",
+"t": "A gratitude challenge with friends",
+"f": "Running a fun thirty-day challenge together"
+},
+{
+"d": 295,
+"lv": "advanced",
+"t": "Celebrating good news",
+"f": "Responding to friends' good news with genuine enthusiasm"
+},
+{
+"d": 296,
+"lv": "advanced",
+"t": "Active constructive responding",
+"f": "Asking questions and showing joy when someone shares good news"
+},
+{
+"d": 297,
+"lv": "advanced",
+"t": "Gratitude and empathy",
+"f": "Appreciating what others carry and do for you"
+},
+{
+"d": 298,
+"lv": "advanced",
+"t": "Patience in relationships",
+"f": "Valuing people who give you time to grow"
+},
+{
+"d": 299,
+"lv": "advanced",
+"t": "Reconnecting through appreciation",
+"f": "Using appreciation to reconnect after a misunderstanding"
+},
+{
+"d": 300,
+"lv": "advanced",
+"t": "Day three hundred",
+"f": "Celebrating three hundred days and the people who joined your journey"
+},
+{
+"d": 301,
+"lv": "advanced",
+"t": "A letter to a mentor",
+"f": "Writing to a mentor about their lasting impact"
+},
+{
+"d": 302,
+"lv": "advanced",
+"t": "People who believed in your dreams",
+"f": "Thanking someone who supported a dream of yours"
+},
+{
+"d": 303,
+"lv": "advanced",
+"t": "Teachers in your life now",
+"f": "Appreciating the people teaching you something right now"
+},
+{
+"d": 304,
+"lv": "advanced",
+"t": "Your own kindness",
+"f": "Recognising kind things you have done for others"
+},
+{
+"d": 305,
+"lv": "advanced",
+"t": "Local heroes",
+"f": "Appreciating people who improve your neighbourhood"
+},
+{
+"d": 306,
+"lv": "advanced",
+"t": "A small gathering of thanks",
+"f": "Planning a small get-together to celebrate people you appreciate"
+},
+{
+"d": 307,
+"lv": "advanced",
+"t": "The gratitude letters project",
+"f": "Writing several letters over a week to important people"
+},
+{
+"d": 308,
+"lv": "advanced",
+"t": "A toast of appreciation",
+"f": "Preparing a short toast of thanks for a special occasion"
+},
+{
+"d": 309,
+"lv": "advanced",
+"t": "Friends from other cultures",
+"f": "Appreciating people from other cultures you have met and what they taught you"
+},
+{
+"d": 310,
+"lv": "advanced",
+"t": "Review: relationships and community",
+"f": "Reflecting on how gratitude strengthened your connections"
+},
+{
+"d": 311,
+"lv": "advanced",
+"t": "Your personal gratitude toolkit",
+"f": "Listing all the practices you have tried and choosing your favourites"
+},
+{
+"d": 312,
+"lv": "advanced",
+"t": "Practices for every mood",
+"f": "Choosing gratitude practices for calm, energy or comfort"
+},
+{
+"d": 313,
+"lv": "advanced",
+"t": "Quick gratitude moments",
+"f": "Building a set of ten-second appreciation moments"
+},
+{
+"d": 314,
+"lv": "advanced",
+"t": "Longer gratitude sessions",
+"f": "Planning a monthly deep reflection session"
+},
+{
+"d": 315,
+"lv": "advanced",
+"t": "A weekly gratitude rhythm",
+"f": "Designing a week of varied gratitude practices"
+},
+{
+"d": 316,
+"lv": "advanced",
+"t": "Monthly gratitude themes",
+"f": "Choosing a theme like people, nature or skills for each month"
+},
+{
+"d": 317,
+"lv": "advanced",
+"t": "Seasonal gratitude",
+"f": "Adapting your practice to the gifts of each season"
+},
+{
+"d": 318,
+"lv": "advanced",
+"t": "Reviewing your journal",
+"f": "Reading old entries to find recurring sources of joy"
+},
+{
+"d": 319,
+"lv": "advanced",
+"t": "Your top sources of joy",
+"f": "Identifying the things that appear most often in your journal"
+},
+{
+"d": 320,
+"lv": "advanced",
+"t": "Designing a joyful week",
+"f": "Planning more of what you appreciate into your schedule"
+},
+{
+"d": 321,
+"lv": "advanced",
+"t": "Gratitude and goals",
+"f": "Using appreciation to fuel progress toward your goals"
+},
+{
+"d": 322,
+"lv": "advanced",
+"t": "Gratitude and motivation",
+"f": "Remembering why you started when energy drops"
+},
+{
+"d": 323,
+"lv": "advanced",
+"t": "Gratitude myths",
+"f": "Clearing up misunderstandings like 'gratitude means ignoring problems'"
+},
+{
+"d": 324,
+"lv": "advanced",
+"t": "Avoiding forced positivity",
+"f": "Keeping gratitude honest and natural"
+},
+{
+"d": 325,
+"lv": "advanced",
+"t": "When gratitude feels hard",
+"f": "Gentle tips for days when appreciation does not come easily"
+},
+{
+"d": 326,
+"lv": "advanced",
+"t": "Gratitude and self-kindness",
+"f": "Treating yourself with the warmth you give others"
+},
+{
+"d": 327,
+"lv": "advanced",
+"t": "Rest days from practice",
+"f": "Appreciating breaks from practice too"
+},
+{
+"d": 328,
+"lv": "advanced",
+"t": "Restarting after a pause",
+"f": "Returning to gratitude without guilt"
+},
+{
+"d": 329,
+"lv": "advanced",
+"t": "Keeping it playful",
+"f": "Using games and surprises to keep the practice fun"
+},
+{
+"d": 330,
+"lv": "advanced",
+"t": "Gratitude with children",
+"f": "Playful ways to share gratitude with kids"
+},
+{
+"d": 331,
+"lv": "advanced",
+"t": "Closing a chapter with thanks",
+"f": "Appreciating what was good when a chapter of life ends"
+},
+{
+"d": 332,
+"lv": "advanced",
+"t": "New beginnings",
+"f": "Welcoming new chapters with appreciation"
+},
+{
+"d": 333,
+"lv": "advanced",
+"t": "A travel gratitude diary",
+"f": "Keeping a gratitude diary while travelling"
+},
+{
+"d": 334,
+"lv": "advanced",
+"t": "Long-term appreciation at work",
+"f": "Building lasting appreciation habits in your job or studies"
+},
+{
+"d": 335,
+"lv": "advanced",
+"t": "A personal gratitude day",
+"f": "Planning a full day dedicated to appreciation"
+},
+{
+"d": 336,
+"lv": "advanced",
+"t": "After your gratitude day",
+"f": "Reflecting on how a dedicated day of thanks felt"
+},
+{
+"d": 337,
+"lv": "advanced",
+"t": "Measuring change",
+"f": "Noticing how your outlook has changed since day one"
+},
+{
+"d": 338,
+"lv": "advanced",
+"t": "Your gratitude plan",
+"f": "Writing a simple plan to keep practising next year"
+},
+{
+"d": 339,
+"lv": "advanced",
+"t": "Teaching gratitude to others",
+"f": "Sharing a simple practice with a friend"
+},
+{
+"d": 340,
+"lv": "advanced",
+"t": "Review: your lifelong practice",
+"f": "Reviewing the personal gratitude toolkit you have built"
+},
+{
+"d": 341,
+"lv": "advanced",
+"t": "A day of full appreciation",
+"f": "Noticing good things from waking up to falling asleep"
+},
+{
+"d": 342,
+"lv": "advanced",
+"t": "Three good things revisited",
+"f": "Returning to your very first practice with fresh eyes"
+},
+{
+"d": 343,
+"lv": "advanced",
+"t": "A new gratitude letter",
+"f": "Writing a new letter to someone important to you"
+},
+{
+"d": 344,
+"lv": "advanced",
+"t": "The gratitude walk revisited",
+"f": "Taking a long walk full of appreciation"
+},
+{
+"d": 345,
+"lv": "advanced",
+"t": "Mental subtraction revisited",
+"f": "Imagining life without key good things once more"
+},
+{
+"d": 346,
+"lv": "advanced",
+"t": "Savouring revisited",
+"f": "Savouring a special moment using all your skills"
+},
+{
+"d": 347,
+"lv": "advanced",
+"t": "People of your journey",
+"f": "Listing the people who made the past months better"
+},
+{
+"d": 348,
+"lv": "advanced",
+"t": "Places of your journey",
+"f": "Recalling the places that gave you joy over the past months"
+},
+{
+"d": 349,
+"lv": "advanced",
+"t": "Lessons of your journey",
+"f": "Naming the lessons you learned along the way"
+},
+{
+"d": 350,
+"lv": "advanced",
+"t": "Surprises along the way",
+"f": "Remembering unexpected good moments from the past months"
+},
+{
+"d": 351,
+"lv": "advanced",
+"t": "How you have grown",
+"f": "Recognising how you have grown during this path"
+},
+{
+"d": 352,
+"lv": "advanced",
+"t": "Small joys you collected",
+"f": "Recalling tiny daily pleasures you noticed along the way"
+},
+{
+"d": 353,
+"lv": "advanced",
+"t": "Your journal as a treasure",
+"f": "Appreciating the record of good things you have built"
+},
+{
+"d": 354,
+"lv": "advanced",
+"t": "Your favourite entries",
+"f": "Choosing your top ten gratitude entries from the whole path"
+},
+{
+"d": 355,
+"lv": "advanced",
+"t": "Your biggest lessons",
+"f": "Writing down what gratitude has taught you"
+},
+{
+"d": 356,
+"lv": "advanced",
+"t": "Thanking your companions",
+"f": "Thanking the people who supported your practice"
+},
+{
+"d": 357,
+"lv": "advanced",
+"t": "Gratitude for yourself",
+"f": "Appreciating your own consistency and curiosity"
+},
+{
+"d": 358,
+"lv": "advanced",
+"t": "A letter to your future self",
+"f": "Writing a letter of appreciation to read again in a year"
+},
+{
+"d": 359,
+"lv": "advanced",
+"t": "Intentions for the next year",
+"f": "Choosing gentle intentions for continuing your gratitude practice"
+},
+{
+"d": 360,
+"lv": "advanced",
+"t": "Keeping gratitude alive",
+"f": "Ideas to keep appreciation fresh for years to come"
+},
+{
+"d": 361,
+"lv": "advanced",
+"t": "Gratitude as a way of living",
+"f": "Seeing appreciation as an everyday attitude"
+},
+{
+"d": 362,
+"lv": "advanced",
+"t": "A gratitude celebration",
+"f": "Celebrating with the people you appreciate"
+},
+{
+"d": 363,
+"lv": "advanced",
+"t": "Sharing your journey",
+"f": "Telling someone what this practice has meant to you"
+},
+{
+"d": 364,
+"lv": "advanced",
+"t": "Review: the full year",
+"f": "Looking back over all four seasons of gratitude"
+},
+{
+"d": 365,
+"lv": "advanced",
+"t": "Beginning again with thanks",
+"f": "Celebrating day 365 and starting a fresh page"
+}
+]
+}

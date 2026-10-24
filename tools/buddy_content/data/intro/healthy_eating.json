@@ -1,0 +1,33 @@
+{
+"topic": "healthy_eating",
+"intro": {
+"en": [
+"Hi, I'm {name}! Let's explore healthy eating together on a 365-day path, from the balanced plate and colourful produce to cooking skills, world food traditions and simple nutrition science.",
+"One small lesson a day, general ideas only and never a diet: for personal needs, a doctor or dietitian knows best. To get to know you: what's a dish you love that always makes you happy?"
+],
+"de": [
+"Hallo, ich bin {name}! Lass uns 365 Tage lang gesundes Essen entdecken: vom ausgewogenen Teller und buntem Gemüse bis zu Kochtechniken, Esskulturen der Welt und einfacher Ernährungswissenschaft.",
+"Jeden Tag eine kleine Lektion mit allgemeinen Ideen, nie eine Diät: Bei persönlichen Fragen helfen Ärztin, Arzt oder Ernährungsfachkraft. Erzähl mal: Welches Gericht macht dich immer glücklich?"
+],
+"es": [
+"¡Hola, soy {name}! Descubramos juntos la alimentación saludable en un camino de 365 días: del plato equilibrado y las frutas y verduras a la cocina, las tradiciones del mundo y la nutrición básica.",
+"Una pequeña lección al día, con ideas generales y nunca dietas: para necesidades personales, mejor un médico o un dietista. Para conocerte: ¿qué plato te encanta y siempre te alegra?"
+],
+"fr": [
+"Salut, je suis {name} ! Explorons ensemble l'alimentation saine sur un parcours de 365 jours : assiette équilibrée, fruits et légumes, cuisine, traditions du monde et bases de la nutrition.",
+"Une petite leçon par jour, des idées générales et jamais de régime : pour tes besoins personnels, un médecin ou un diététicien saura te conseiller. Dis-moi : quel plat te rend toujours heureux ?"
+],
+"it": [
+"Ciao, sono {name}! Esploriamo insieme l'alimentazione sana in un percorso di 365 giorni: dal piatto equilibrato a frutta e verdura, la cucina, le tradizioni del mondo e le basi della nutrizione.",
+"Una piccola lezione al giorno, solo idee generali e mai diete: per esigenze personali meglio un medico o un dietista. Per conoscerti: qual è un piatto che ami e che ti mette sempre di buonumore?"
+],
+"pt": [
+"Olá, eu sou {name}! Vamos explorar juntos a alimentação saudável num percurso de 365 dias: do prato equilibrado e da fruta e legumes à cozinha, às tradições do mundo e às bases da nutrição.",
+"Uma pequena lição por dia, com ideias gerais e nunca dietas: para necessidades pessoais, fala com um médico ou nutricionista. Para te conhecer: qual é o prato que adoras e que te deixa sempre feliz?"
+],
+"pt_BR": [
+"Oi, eu sou {name}! Vamos explorar juntos a alimentação saudável numa jornada de 365 dias: do prato equilibrado e frutas e verduras à cozinha, às tradições do mundo e ao básico da nutrição.",
+"Uma pequena lição por dia, com ideias gerais e nunca dietas: para necessidades pessoais, procure um médico ou nutricionista. Pra te conhecer: qual prato você ama e sempre te deixa feliz?"
+]
+}
+}

@@ -1,0 +1,33 @@
+{
+"topic": "casual_chat",
+"intro": {
+"en": [
+"Hey, I'm {name}! I'll be your chat buddy on a 365-day path of easy conversations: from greetings and everyday small talk to fun stories, cultures and deeper chats.",
+"One small chat theme a day, relaxed and fun, with a little tip to make talking easier. So tell me: what's something that made you smile recently?"
+],
+"de": [
+"Hey, ich bin {name}! Ich bin dein Plauderbuddy auf einem 365-Tage-Weg voller entspannter Gespräche: von Begrüßungen und Small Talk bis zu lustigen Geschichten, Kulturen und tieferen Themen.",
+"Jeden Tag ein kleines Gesprächsthema, locker und mit einem Tipp, der das Reden leichter macht. Erzähl mal: Was hat dich in letzter Zeit zum Lächeln gebracht?"
+],
+"es": [
+"¡Hola, soy {name}! Te acompaño en un camino de 365 días de charlas tranquilas: de saludos y conversación cotidiana a historias divertidas, culturas y temas más profundos.",
+"Un pequeño tema de charla al día, relajado y divertido, con un consejo para que hablar sea más fácil. Cuéntame: ¿qué te ha hecho sonreír últimamente?"
+],
+"fr": [
+"Salut, je suis {name} ! Je t'accompagne sur un parcours de 365 jours de conversations détendues : salutations, petites discussions, anecdotes, cultures et sujets plus profonds.",
+"Un petit thème de conversation par jour, léger et sympa, avec une astuce pour discuter plus facilement. Dis-moi : qu'est-ce qui t'a fait sourire récemment ?"
+],
+"it": [
+"Ciao, sono {name}! Ti accompagno in un percorso di 365 giorni di conversazioni rilassate: dai saluti alle chiacchiere quotidiane, fino a storie divertenti, culture e temi più profondi.",
+"Un piccolo tema di conversazione al giorno, leggero e divertente, con un consiglio per parlare con più facilità. Dimmi: cosa ti ha fatto sorridere di recente?"
+],
+"pt": [
+"Olá, chamo-me {name}! Vou acompanhar-te num percurso de 365 dias de conversas descontraídas: de cumprimentos e conversa do dia a dia a histórias divertidas, culturas e temas mais profundos.",
+"Um pequeno tema de conversa por dia, leve e divertido, com uma dica para conversar com mais facilidade. Conta-me: o que te fez sorrir ultimamente?"
+],
+"pt_BR": [
+"Oi, eu sou {name}! Vou te acompanhar numa jornada de 365 dias de conversas tranquilas: de cumprimentos e bate-papo do dia a dia a histórias divertidas, culturas e assuntos mais profundos.",
+"Um pequeno tema de conversa por dia, leve e divertido, com uma dica para facilitar o papo. Me conta: o que te fez sorrir nos últimos dias?"
+]
+}
+}

@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_english",
+ "lessons": [
+  {
+   "d": 321,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "False friends for learners",
+     "g": "Avoid false friends: words like actually, eventually, sensible and library.",
+     "p": [
+      "Actually = in fact, really (not currently). Eventually = in the end, finally (not possibly).",
+      "Sensible = practical, reasonable (sensitive = easily upset). Library = place to borrow books (bookshop = buy).",
+      "Others: a career is a profession, not a race; to assist means to help, not to attend; a lecture is a talk."
+     ],
+     "q": "Which false friends between English and your language have caught you out? Share a funny example.",
+     "c": "Make a list of five false friends between English and your language, with the correct meaning of each."
+    },
+    "de": {
+     "t": "Falsche Freunde",
+     "g": "Du vermeidest falsche Freunde wie actually, eventually, sensible und library.",
+     "p": [
+      "Actually = eigentlich, tatsächlich (nicht aktuell). Eventually = schließlich, am Ende (nicht eventuell).",
+      "Sensible = vernünftig (sensibel = sensitive). Library = Bibliothek (Buchhandlung = bookshop).",
+      "Weitere: become = werden (nicht bekommen = get), gift = Geschenk, chef = Koch (nicht Chef = boss)."
+     ],
+     "q": "Welche falschen Freunde zwischen Deutsch und Englisch haben dich schon reingelegt? Erzähl ein lustiges Beispiel.",
+     "c": "Notiere fünf falsche Freunde zwischen Deutsch und Englisch mit der richtigen Bedeutung."
+    },
+    "es": {
+     "t": "Falsos amigos",
+     "g": "Evita falsos amigos como actually, eventually, sensible y library.",
+     "p": [
+      "Actually = en realidad (no actualmente = currently). Eventually = al final (no eventualmente).",
+      "Sensible = sensato (sensible = sensitive). Library = biblioteca (librería = bookshop).",
+      "Otros: embarrassed = avergonzado (no embarazada = pregnant), carpet = alfombra, assist = ayudar (no asistir = attend)."
+     ],
+     "q": "¿Qué falsos amigos entre el español y el inglés te han jugado una mala pasada? Cuenta un ejemplo divertido.",
+     "c": "Haz una lista de cinco falsos amigos entre español e inglés con su significado correcto."
+    },
+    "fr": {
+     "t": "Les faux amis",
+     "g": "Évite les faux amis comme actually, eventually, sensible et library.",
+     "p": [
+      "Actually = en fait (pas actuellement = currently). Eventually = finalement (pas éventuellement).",
+      "Sensible = raisonnable (sensible = sensitive). Library = bibliothèque (librairie = bookshop).",
+      "Autres : to assist = aider (assister = attend), a lecture = un cours magistral, a journey = un voyage."
+     ],
+     "q": "Quels faux amis entre le français et l'anglais t'ont déjà piégé ? Raconte un exemple amusant.",
+     "c": "Fais une liste de cinq faux amis entre le français et l'anglais avec leur vrai sens."
+    },
+    "it": {
+     "t": "I falsi amici",
+     "g": "Evita i falsi amici come actually, eventually, sensible e library.",
+     "p": [
+      "Actually = in realtà (non attualmente = currently). Eventually = alla fine (non eventualmente).",
+      "Sensible = ragionevole (sensibile = sensitive). Library = biblioteca (libreria = bookshop).",
+      "Altri: a lecture = una lezione (lettura = reading), to pretend = fingere, a factory = una fabbrica."
+     ],
+     "q": "Quali falsi amici tra italiano e inglese ti hanno tratto in inganno? Racconta un esempio divertente.",
+     "c": "Fai una lista di cinque falsi amici tra italiano e inglese con il loro significato corretto."
+    },
+    "pt": {
+     "t": "Falsos amigos",
+     "g": "Evita falsos amigos como actually, eventually, sensible e library.",
+     "p": [
+      "Actually = na verdade (não atualmente = currently). Eventually = finalmente, por fim (não eventualmente).",
+      "Sensible = sensato (sensível = sensitive). Library = biblioteca (livraria = bookshop).",
+      "Outros: to pretend = fingir, a lecture = uma palestra (leitura = reading), push = empurrar (não puxar = pull)."
+     ],
+     "q": "Que falsos amigos entre português e inglês já te enganaram? Conta um exemplo engraçado.",
+     "c": "Faz uma lista de cinco falsos amigos entre português e inglês com o significado correto."
+    },
+    "pt_BR": {
+     "t": "Falsos cognatos",
+     "g": "Evite falsos cognatos como actually, eventually, sensible e library.",
+     "p": [
+      "Actually = na verdade (não atualmente = currently). Eventually = finalmente, no fim (não eventualmente).",
+      "Sensible = sensato (sensível = sensitive). Library = biblioteca (livraria = bookshop).",
+      "Outros: to pretend = fingir, a lecture = uma palestra (leitura = reading), push = empurrar (não puxar = pull)."
+     ],
+     "q": "Que falsos cognatos entre português e inglês já te pegaram? Conte um exemplo engraçado.",
+     "c": "Faça uma lista de cinco falsos cognatos entre português e inglês com o significado correto."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "actually",
+      "ex": "Actually, I've never been to London."
+     },
+     {
+      "w": "eventually",
+      "ex": "After two hours, we eventually found the hotel."
+     },
+     {
+      "w": "sensible",
+      "ex": "Wearing a coat in winter is sensible."
+     },
+     {
+      "w": "sensitive",
+      "ex": "She's very sensitive to criticism."
+     },
+     {
+      "w": "library",
+      "ex": "I borrowed this novel from the library."
+     },
+     {
+      "w": "pretend",
+      "ex": "The children pretended to be pirates."
+     }
+    ],
+    "gram": "False friends look like words in your language but differ in meaning: actually (in fact), eventually (finally), sensible (reasonable)."
+   }
+  },
+  {
+   "d": 322,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Word families",
+     "g": "Grow your vocabulary through word families: create, creation, creative, creatively.",
+     "p": [
+      "One root, many forms: create (verb), creation (noun), creative (adjective), creatively (adverb), creator (person).",
+      "Common endings: -tion, -ment, -ness for nouns; -ive, -ful, -able for adjectives; -ly for adverbs.",
+      "Prefixes change meaning: possible / impossible, agree / disagree, understand / misunderstand."
+     ],
+     "q": "Which word family would be useful for your job or hobby? Try building it with your Buddy.",
+     "c": "Build full families for decide, success and employ (verb, noun, adjective, adverb or person)."
+    },
+    "de": {
+     "t": "Wortfamilien",
+     "g": "Du erweiterst deinen Wortschatz mit Wortfamilien: create, creation, creative, creatively.",
+     "p": [
+      "Eine Wurzel, viele Formen: create (Verb), creation (Nomen), creative (Adjektiv), creatively (Adverb), creator (Person).",
+      "Typische Endungen: -tion, -ment, -ness für Nomen; -ive, -ful, -able für Adjektive; -ly für Adverbien.",
+      "Vorsilben ändern die Bedeutung: possible / impossible, agree / disagree, understand / misunderstand."
+     ],
+     "q": "Welche Wortfamilie wäre für deinen Job oder dein Hobby nützlich? Bau sie mit deinem Buddy auf.",
+     "c": "Bilde komplette Familien zu decide, success und employ (Verb, Nomen, Adjektiv, Adverb oder Person)."
+    },
+    "es": {
+     "t": "Familias de palabras",
+     "g": "Amplía tu vocabulario con familias de palabras: create, creation, creative, creatively.",
+     "p": [
+      "Una raíz, muchas formas: create (verbo), creation (sustantivo), creative (adjetivo), creatively (adverbio), creator (persona).",
+      "Terminaciones típicas: -tion, -ment, -ness para sustantivos; -ive, -ful, -able para adjetivos; -ly para adverbios.",
+      "Los prefijos cambian el sentido: possible / impossible, agree / disagree, understand / misunderstand."
+     ],
+     "q": "¿Qué familia de palabras te sería útil para tu trabajo o afición? Constrúyela con tu Buddy.",
+     "c": "Forma las familias completas de decide, success y employ (verbo, sustantivo, adjetivo, adverbio o persona)."
+    },
+    "fr": {
+     "t": "Familles de mots",
+     "g": "Enrichis ton vocabulaire avec les familles de mots : create, creation, creative, creatively.",
+     "p": [
+      "Une racine, plusieurs formes : create (verbe), creation (nom), creative (adjectif), creatively (adverbe), creator (personne).",
+      "Suffixes fréquents : -tion, -ment, -ness pour les noms ; -ive, -ful, -able pour les adjectifs ; -ly pour les adverbes.",
+      "Les préfixes changent le sens : possible / impossible, agree / disagree, understand / misunderstand."
+     ],
+     "q": "Quelle famille de mots te serait utile pour ton travail ou ton loisir ? Construis-la avec ton Buddy.",
+     "c": "Construis les familles complètes de decide, success et employ (verbe, nom, adjectif, adverbe ou personne)."
+    },
+    "it": {
+     "t": "Famiglie di parole",
+     "g": "Arricchisci il lessico con le famiglie di parole: create, creation, creative, creatively.",
+     "p": [
+      "Una radice, tante forme: create (verbo), creation (nome), creative (aggettivo), creatively (avverbio), creator (persona).",
+      "Suffissi comuni: -tion, -ment, -ness per i nomi; -ive, -ful, -able per gli aggettivi; -ly per gli avverbi.",
+      "I prefissi cambiano il senso: possible / impossible, agree / disagree, understand / misunderstand."
+     ],
+     "q": "Quale famiglia di parole ti sarebbe utile per il lavoro o un hobby? Costruiscila con il tuo Buddy.",
+     "c": "Costruisci le famiglie complete di decide, success ed employ (verbo, nome, aggettivo, avverbio o persona)."
+    },
+    "pt": {
+     "t": "Famílias de palavras",
+     "g": "Alarga o vocabulário com famílias de palavras: create, creation, creative, creatively.",
+     "p": [
+      "Uma raiz, muitas formas: create (verbo), creation (nome), creative (adjetivo), creatively (advérbio), creator (pessoa).",
+      "Terminações comuns: -tion, -ment, -ness para nomes; -ive, -ful, -able para adjetivos; -ly para advérbios.",
+      "Os prefixos mudam o sentido: possible / impossible, agree / disagree, understand / misunderstand."
+     ],
+     "q": "Que família de palavras te seria útil no trabalho ou num passatempo? Constrói-a com o teu Buddy.",
+     "c": "Forma as famílias completas de decide, success e employ (verbo, nome, adjetivo, advérbio ou pessoa)."
+    },
+    "pt_BR": {
+     "t": "Famílias de palavras",
+     "g": "Amplie o vocabulário com famílias de palavras: create, creation, creative, creatively.",
+     "p": [
+      "Uma raiz, muitas formas: create (verbo), creation (substantivo), creative (adjetivo), creatively (advérbio), creator (pessoa).",
+      "Terminações comuns: -tion, -ment, -ness para substantivos; -ive, -ful, -able para adjetivos; -ly para advérbios.",
+      "Prefixos mudam o sentido: possible / impossible, agree / disagree, understand / misunderstand."
+     ],
+     "q": "Que família de palavras seria útil no seu trabalho ou hobby? Monte-a com seu Buddy.",
+     "c": "Monte as famílias completas de decide, success e employ (verbo, substantivo, adjetivo, advérbio ou pessoa)."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "create",
+      "ex": "She wants to create her own website."
+     },
+     {
+      "w": "creation",
+      "ex": "The creation of the park took five years."
+     },
+     {
+      "w": "creative",
+      "ex": "He's a very creative cook."
+     },
+     {
+      "w": "creatively",
+      "ex": "The team solved the problem creatively."
+     },
+     {
+      "w": "successful",
+      "ex": "The launch was very successful."
+     },
+     {
+      "w": "decision",
+      "ex": "It was a difficult decision to make."
+     }
+    ],
+    "gram": "Word families: suffixes change word class (-tion/-ment noun, -ive/-ful adjective, -ly adverb); prefixes (un-, dis-, mis-) change meaning."
+   }
+  },
+  {
+   "d": 323,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Academic vocabulary",
+     "g": "Use academic words for study and work: analyse, significant, approach, evidence, factor.",
+     "p": [
+      "Analyse = examine in detail. Significant = important or large: a significant increase. Approach = a way of dealing with something.",
+      "Evidence is uncountable: There is evidence that... (not an evidence). Factor = one thing that influences a result.",
+      "More: assess, indicate, establish, consequently, a wide range of. They make writing precise and neutral."
+     ],
+     "q": "What factors influence how well people learn a language? Use three academic words in your answer.",
+     "c": "Rewrite this in academic style: Lots of people think the new rule is a big deal, and there's proof."
+    },
+    "de": {
+     "t": "Akademischer Wortschatz",
+     "g": "Du nutzt akademische Wörter für Studium und Beruf: analyse, significant, approach, evidence, factor.",
+     "p": [
+      "Analyse = genau untersuchen. Significant = bedeutend: a significant increase. Approach = Herangehensweise.",
+      "Evidence ist unzählbar: There is evidence that... (nicht an evidence). Factor = ein Einflussfaktor.",
+      "Mehr: assess, indicate, establish, consequently, a wide range of. Sie machen Texte präzise und sachlich."
+     ],
+     "q": "Welche Faktoren beeinflussen, wie gut man eine Sprache lernt? Nutze drei akademische Wörter.",
+     "c": "Formuliere akademisch um: Lots of people think the new rule is a big deal, and there's proof."
+    },
+    "es": {
+     "t": "Vocabulario académico",
+     "g": "Usa palabras académicas para estudiar y trabajar: analyse, significant, approach, evidence, factor.",
+     "p": [
+      "Analyse = examinar a fondo. Significant = importante o notable: a significant increase. Approach = enfoque.",
+      "Evidence es incontable: There is evidence that... (no an evidence). Factor = algo que influye en un resultado.",
+      "Más: assess, indicate, establish, consequently, a wide range of. Hacen la escritura precisa y neutral."
+     ],
+     "q": "¿Qué factores influyen en lo bien que se aprende un idioma? Usa tres palabras académicas.",
+     "c": "Reescribe en estilo académico: Lots of people think the new rule is a big deal, and there's proof."
+    },
+    "fr": {
+     "t": "Vocabulaire académique",
+     "g": "Utilise des mots académiques pour les études et le travail : analyse, significant, approach, evidence, factor.",
+     "p": [
+      "Analyse = examiner en détail. Significant = important, notable : a significant increase. Approach = une approche.",
+      "Evidence est indénombrable : There is evidence that... (pas an evidence). Factor = un facteur qui influence un résultat.",
+      "Plus : assess, indicate, establish, consequently, a wide range of. Ils rendent l'écrit précis et neutre."
+     ],
+     "q": "Quels facteurs influencent la réussite dans l'apprentissage d'une langue ? Utilise trois mots académiques.",
+     "c": "Réécris en style académique : Lots of people think the new rule is a big deal, and there's proof."
+    },
+    "it": {
+     "t": "Lessico accademico",
+     "g": "Usa parole accademiche per studio e lavoro: analyse, significant, approach, evidence, factor.",
+     "p": [
+      "Analyse = esaminare a fondo. Significant = rilevante: a significant increase. Approach = approccio.",
+      "Evidence è non numerabile: There is evidence that... (non an evidence). Factor = elemento che influisce su un risultato.",
+      "Altre: assess, indicate, establish, consequently, a wide range of. Rendono la scrittura precisa e neutra."
+     ],
+     "q": "Quali fattori influenzano quanto bene si impara una lingua? Usa tre parole accademiche.",
+     "c": "Riscrivi in stile accademico: Lots of people think the new rule is a big deal, and there's proof."
+    },
+    "pt": {
+     "t": "Vocabulário académico",
+     "g": "Usa palavras académicas para estudo e trabalho: analyse, significant, approach, evidence, factor.",
+     "p": [
+      "Analyse = examinar em detalhe. Significant = relevante: a significant increase. Approach = abordagem.",
+      "Evidence é incontável: There is evidence that... (não an evidence). Factor = algo que influencia um resultado.",
+      "Mais: assess, indicate, establish, consequently, a wide range of. Tornam a escrita precisa e neutra."
+     ],
+     "q": "Que fatores influenciam a forma como se aprende uma língua? Usa três palavras académicas.",
+     "c": "Reescreve em estilo académico: Lots of people think the new rule is a big deal, and there's proof."
+    },
+    "pt_BR": {
+     "t": "Vocabulário acadêmico",
+     "g": "Use palavras acadêmicas para estudo e trabalho: analyse, significant, approach, evidence, factor.",
+     "p": [
+      "Analyse = examinar em detalhe. Significant = relevante: a significant increase. Approach = abordagem.",
+      "Evidence é incontável: There is evidence that... (não an evidence). Factor = algo que influencia um resultado.",
+      "Mais: assess, indicate, establish, consequently, a wide range of. Deixam a escrita precisa e neutra."
+     ],
+     "q": "Que fatores influenciam o quanto alguém aprende bem uma língua? Use três palavras acadêmicas.",
+     "c": "Reescreva em estilo acadêmico: Lots of people think the new rule is a big deal, and there's proof."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "analyse",
+      "ex": "We need to analyse the results carefully."
+     },
+     {
+      "w": "significant",
+      "ex": "There was a significant rise in sales."
+     },
+     {
+      "w": "approach",
+      "ex": "This approach saves both time and money."
+     },
+     {
+      "w": "evidence",
+      "ex": "There is strong evidence that exercise helps memory."
+     },
+     {
+      "w": "factor",
+      "ex": "Cost is an important factor in our decision."
+     },
+     {
+      "w": "consequently",
+      "ex": "It rained all day; consequently, the match was cancelled."
+     }
+    ],
+    "gram": "Academic style: precise words (analyse, significant), uncountable evidence, linkers like consequently, and fewer phrasal verbs."
+   }
+  },
+  {
+   "d": 324,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Compound nouns and adjectives",
+     "g": "Build compounds like time-consuming, well-known, bus stop and user-friendly.",
+     "p": [
+      "Compound nouns: noun + noun, usually stress on the first part: a BUS stop, a TOOTHbrush, a phone charger.",
+      "Compound adjectives often use a hyphen before a noun: a well-known writer, a time-consuming task.",
+      "Numbers + noun stay singular: a ten-minute walk, a two-hour film. Other: user-friendly, eco-friendly."
+     ],
+     "q": "Describe your town or job using three compound adjectives. Is anything there user-friendly or time-consuming?",
+     "c": "Create six compounds: three nouns and three adjectives, and use each in a short sentence."
+    },
+    "de": {
+     "t": "Zusammengesetzte Nomen und Adjektive",
+     "g": "Du bildest Komposita wie time-consuming, well-known, bus stop und user-friendly.",
+     "p": [
+      "Zusammengesetzte Nomen: Nomen + Nomen, Betonung meist vorn: a BUS stop, a TOOTHbrush, a phone charger.",
+      "Zusammengesetzte Adjektive vor einem Nomen meist mit Bindestrich: a well-known writer, a time-consuming task.",
+      "Zahl + Nomen bleibt Singular: a ten-minute walk, a two-hour film. Weitere: user-friendly, eco-friendly."
+     ],
+     "q": "Beschreibe deine Stadt oder deinen Job mit drei zusammengesetzten Adjektiven. Ist etwas user-friendly oder time-consuming?",
+     "c": "Bilde sechs Komposita, drei Nomen und drei Adjektive, und nutze jedes in einem kurzen Satz."
+    },
+    "es": {
+     "t": "Sustantivos y adjetivos compuestos",
+     "g": "Forma compuestos como time-consuming, well-known, bus stop y user-friendly.",
+     "p": [
+      "Sustantivos compuestos: sustantivo + sustantivo, acento casi siempre en el primero: a BUS stop, a TOOTHbrush.",
+      "Los adjetivos compuestos llevan guion delante del sustantivo: a well-known writer, a time-consuming task.",
+      "Número + sustantivo va en singular: a ten-minute walk, a two-hour film. Otros: user-friendly, eco-friendly."
+     ],
+     "q": "Describe tu ciudad o tu trabajo con tres adjetivos compuestos. ¿Hay algo user-friendly o time-consuming?",
+     "c": "Crea seis compuestos, tres sustantivos y tres adjetivos, y usa cada uno en una frase corta."
+    },
+    "fr": {
+     "t": "Noms et adjectifs composés",
+     "g": "Forme des mots composés comme time-consuming, well-known, bus stop et user-friendly.",
+     "p": [
+      "Noms composés : nom + nom, accent souvent sur le premier : a BUS stop, a TOOTHbrush, a phone charger.",
+      "Les adjectifs composés prennent un trait d'union devant un nom : a well-known writer, a time-consuming task.",
+      "Nombre + nom reste au singulier : a ten-minute walk, a two-hour film. Autres : user-friendly, eco-friendly."
+     ],
+     "q": "Décris ta ville ou ton travail avec trois adjectifs composés. Y a-t-il quelque chose de user-friendly ou time-consuming ?",
+     "c": "Crée six mots composés, trois noms et trois adjectifs, et utilise chacun dans une phrase courte."
+    },
+    "it": {
+     "t": "Nomi e aggettivi composti",
+     "g": "Forma composti come time-consuming, well-known, bus stop e user-friendly.",
+     "p": [
+      "Nomi composti: nome + nome, accento di solito sul primo: a BUS stop, a TOOTHbrush, a phone charger.",
+      "Gli aggettivi composti prima di un nome hanno il trattino: a well-known writer, a time-consuming task.",
+      "Numero + nome resta singolare: a ten-minute walk, a two-hour film. Altri: user-friendly, eco-friendly."
+     ],
+     "q": "Descrivi la tua città o il tuo lavoro con tre aggettivi composti. C'è qualcosa di user-friendly o time-consuming?",
+     "c": "Crea sei composti, tre nomi e tre aggettivi, e usa ciascuno in una frase breve."
+    },
+    "pt": {
+     "t": "Nomes e adjetivos compostos",
+     "g": "Forma compostos como time-consuming, well-known, bus stop e user-friendly.",
+     "p": [
+      "Nomes compostos: nome + nome, acento normalmente no primeiro: a BUS stop, a TOOTHbrush, a phone charger.",
+      "Os adjetivos compostos levam hífen antes do nome: a well-known writer, a time-consuming task.",
+      "Número + nome fica no singular: a ten-minute walk, a two-hour film. Outros: user-friendly, eco-friendly."
+     ],
+     "q": "Descreve a tua cidade ou trabalho com três adjetivos compostos. Há algo user-friendly ou time-consuming?",
+     "c": "Cria seis compostos, três nomes e três adjetivos, e usa cada um numa frase curta."
+    },
+    "pt_BR": {
+     "t": "Substantivos e adjetivos compostos",
+     "g": "Forme compostos como time-consuming, well-known, bus stop e user-friendly.",
+     "p": [
+      "Substantivos compostos: substantivo + substantivo, tônica geralmente no primeiro: a BUS stop, a TOOTHbrush.",
+      "Adjetivos compostos levam hífen antes do substantivo: a well-known writer, a time-consuming task.",
+      "Número + substantivo fica no singular: a ten-minute walk, a two-hour film. Outros: user-friendly, eco-friendly."
+     ],
+     "q": "Descreva sua cidade ou trabalho com três adjetivos compostos. Tem algo user-friendly ou time-consuming?",
+     "c": "Crie seis compostos, três substantivos e três adjetivos, e use cada um numa frase curta."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "time-consuming",
+      "ex": "Filling in forms is really time-consuming."
+     },
+     {
+      "w": "well-known",
+      "ex": "She's a well-known singer in Brazil."
+     },
+     {
+      "w": "user-friendly",
+      "ex": "The new app is very user-friendly."
+     },
+     {
+      "w": "bus stop",
+      "ex": "I'll meet you at the bus stop."
+     },
+     {
+      "w": "a ten-minute walk",
+      "ex": "The beach is a ten-minute walk from here."
+     },
+     {
+      "w": "eco-friendly",
+      "ex": "We use eco-friendly cleaning products."
+     }
+    ],
+    "gram": "Compound adjectives take hyphens before nouns (a well-known actor); number + noun compounds stay singular (a five-day trip)."
+   }
+  },
+  {
+   "d": 325,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Review: vocabulary in depth",
+     "g": "Recap idioms, phrasal verbs, collocations and nuance in a word game chat.",
+     "p": [
+      "Idioms: once in a blue moon, cost an arm and a leg, in the nick of time. Phrasal: get over, put up with, run out of.",
+      "Collocations: pay attention, take part, meet a deadline. Nuance: big, large, huge, vast. Confusables: affect/effect.",
+      "Word building: false friends (actually), families (create, creative), academic words and compounds (well-known)."
+     ],
+     "q": "Which new word or idiom from the last two weeks do you like most, and where will you use it?",
+     "c": "Play a word game: describe five expressions from this unit without saying them, and let your Buddy guess."
+    },
+    "de": {
+     "t": "Review: Wortschatz in der Tiefe",
+     "g": "Du wiederholst Idiome, Phrasal Verbs, Kollokationen und Nuancen in einem Wortspiel-Chat.",
+     "p": [
+      "Idiome: once in a blue moon, cost an arm and a leg, in the nick of time. Phrasal: get over, put up with, run out of.",
+      "Kollokationen: pay attention, take part, meet a deadline. Nuancen: big, large, huge, vast. Verwechsler: affect/effect.",
+      "Wortbildung: falsche Freunde (actually), Familien (create, creative), akademische Wörter und Komposita (well-known)."
+     ],
+     "q": "Welches neue Wort oder Idiom der letzten zwei Wochen magst du am meisten, und wo wirst du es nutzen?",
+     "c": "Spiel ein Wortspiel: Umschreibe fünf Ausdrücke dieser Einheit, ohne sie zu nennen, und lass deinen Buddy raten."
+    },
+    "es": {
+     "t": "Repaso: vocabulario a fondo",
+     "g": "Repasa modismos, phrasal verbs, colocaciones y matices en un chat con juego de palabras.",
+     "p": [
+      "Modismos: once in a blue moon, cost an arm and a leg, in the nick of time. Phrasal: get over, put up with, run out of.",
+      "Colocaciones: pay attention, take part, meet a deadline. Matices: big, large, huge, vast. Confusiones: affect/effect.",
+      "Formación: falsos amigos (actually), familias (create, creative), palabras académicas y compuestos (well-known)."
+     ],
+     "q": "¿Qué palabra o modismo nuevo de estas dos semanas te gusta más y dónde lo vas a usar?",
+     "c": "Juega: describe cinco expresiones de esta unidad sin decirlas y deja que tu Buddy las adivine."
+    },
+    "fr": {
+     "t": "Révision : le vocabulaire en profondeur",
+     "g": "Révise expressions, phrasal verbs, collocations et nuances dans un jeu de mots.",
+     "p": [
+      "Expressions : once in a blue moon, cost an arm and a leg, in the nick of time. Phrasal : get over, put up with, run out of.",
+      "Collocations : pay attention, take part, meet a deadline. Nuances : big, large, huge, vast. Pièges : affect/effect.",
+      "Formation : faux amis (actually), familles (create, creative), mots académiques et composés (well-known)."
+     ],
+     "q": "Quel mot ou quelle expression de ces deux semaines préfères-tu, et où vas-tu l'utiliser ?",
+     "c": "Joue : décris cinq expressions de cette unité sans les dire et laisse ton Buddy deviner."
+    },
+    "it": {
+     "t": "Ripasso: il lessico in profondità",
+     "g": "Ripassa modi di dire, phrasal verbs, collocazioni e sfumature in un gioco di parole.",
+     "p": [
+      "Modi di dire: once in a blue moon, cost an arm and a leg, in the nick of time. Phrasal: get over, put up with, run out of.",
+      "Collocazioni: pay attention, take part, meet a deadline. Sfumature: big, large, huge, vast. Trappole: affect/effect.",
+      "Formazione: falsi amici (actually), famiglie (create, creative), parole accademiche e composti (well-known)."
+     ],
+     "q": "Quale parola o modo di dire nuovo di queste due settimane ti piace di più, e dove lo userai?",
+     "c": "Gioca: descrivi cinque espressioni di questa unità senza dirle e lascia indovinare il tuo Buddy."
+    },
+    "pt": {
+     "t": "Revisão: vocabulário a fundo",
+     "g": "Revê expressões, phrasal verbs, colocações e nuances num jogo de palavras.",
+     "p": [
+      "Expressões: once in a blue moon, cost an arm and a leg, in the nick of time. Phrasal: get over, put up with, run out of.",
+      "Colocações: pay attention, take part, meet a deadline. Nuances: big, large, huge, vast. Confusões: affect/effect.",
+      "Formação: falsos amigos (actually), famílias (create, creative), palavras académicas e compostos (well-known)."
+     ],
+     "q": "Que palavra ou expressão nova destas duas semanas preferes, e onde a vais usar?",
+     "c": "Joga: descreve cinco expressões desta unidade sem as dizer e deixa o teu Buddy adivinhar."
+    },
+    "pt_BR": {
+     "t": "Revisão: vocabulário a fundo",
+     "g": "Revise expressões, phrasal verbs, colocações e nuances num jogo de palavras.",
+     "p": [
+      "Expressões: once in a blue moon, cost an arm and a leg, in the nick of time. Phrasal: get over, put up with, run out of.",
+      "Colocações: pay attention, take part, meet a deadline. Nuances: big, large, huge, vast. Confusões: affect/effect.",
+      "Formação: falsos cognatos (actually), famílias (create, creative), palavras acadêmicas e compostos (well-known)."
+     ],
+     "q": "Qual palavra ou expressão nova destas duas semanas você mais curtiu, e onde vai usá-la?",
+     "c": "Jogue: descreva cinco expressões desta unidade sem dizê-las e deixe seu Buddy adivinhar."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "out of the blue",
+      "ex": "My cousin visited us out of the blue."
+     },
+     {
+      "w": "get cold feet",
+      "ex": "She almost got cold feet before the interview."
+     },
+     {
+      "w": "come up with",
+      "ex": "Can you come up with a better name?"
+     },
+     {
+      "w": "take advantage of",
+      "ex": "We took advantage of the free museum day."
+     },
+     {
+      "w": "the vast majority",
+      "ex": "The vast majority of people agreed."
+     },
+     {
+      "w": "well-known",
+      "ex": "It's a well-known fact that sleep matters."
+     }
+    ],
+    "gram": "Review: idioms are fixed, phrasal verbs may be separable or not, collocations are learned as chunks, synonyms differ in tone."
+   }
+  },
+  {
+   "d": 326,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Leading a meeting",
+     "g": "Run a meeting smoothly with phrases like Let's get started, Moving on to and To sum up.",
+     "p": [
+      "Open: Let's get started. Thanks for coming. The aim of today's meeting is to... We have three items on the agenda.",
+      "Manage: Moving on to the next point... Let's hear from Ana. Can we come back to that later? We're running short of time.",
+      "Close: To sum up, we agreed that... Action points: Tom will... by Friday. Thanks, everyone."
+     ],
+     "q": "Have you ever led a meeting or a group discussion? What was easy and what was difficult?",
+     "c": "Write a three-line script for opening, moving on and closing a short team meeting."
+    },
+    "de": {
+     "t": "Ein Meeting leiten",
+     "g": "Du leitest ein Meeting souverän mit Let's get started, Moving on to und To sum up.",
+     "p": [
+      "Eröffnen: Let's get started. Thanks for coming. The aim of today's meeting is to... We have three items on the agenda.",
+      "Steuern: Moving on to the next point... Let's hear from Ana. Can we come back to that later? We're running short of time.",
+      "Abschließen: To sum up, we agreed that... Action points: Tom will... by Friday. Thanks, everyone."
+     ],
+     "q": "Hast du schon einmal ein Meeting oder eine Gruppendiskussion geleitet? Was war leicht, was schwer?",
+     "c": "Schreib ein Drei-Zeilen-Skript: Eröffnung, Überleitung und Abschluss eines kurzen Team-Meetings."
+    },
+    "es": {
+     "t": "Dirigir una reunión",
+     "g": "Dirige una reunión con fluidez con frases como Let's get started, Moving on to y To sum up.",
+     "p": [
+      "Abrir: Let's get started. Thanks for coming. The aim of today's meeting is to... We have three items on the agenda.",
+      "Gestionar: Moving on to the next point... Let's hear from Ana. Can we come back to that later? We're running short of time.",
+      "Cerrar: To sum up, we agreed that... Action points: Tom will... by Friday. Thanks, everyone."
+     ],
+     "q": "¿Alguna vez has dirigido una reunión o un debate en grupo? ¿Qué fue fácil y qué difícil?",
+     "c": "Escribe un guion de tres líneas para abrir, pasar de punto y cerrar una reunión corta de equipo."
+    },
+    "fr": {
+     "t": "Animer une réunion",
+     "g": "Anime une réunion avec aisance grâce à Let's get started, Moving on to et To sum up.",
+     "p": [
+      "Ouvrir : Let's get started. Thanks for coming. The aim of today's meeting is to... We have three items on the agenda.",
+      "Gérer : Moving on to the next point... Let's hear from Ana. Can we come back to that later? We're running short of time.",
+      "Conclure : To sum up, we agreed that... Action points: Tom will... by Friday. Thanks, everyone."
+     ],
+     "q": "As-tu déjà animé une réunion ou une discussion de groupe ? Qu'est-ce qui était facile ou difficile ?",
+     "c": "Écris un script de trois lignes pour ouvrir, enchaîner et clore une courte réunion d'équipe."
+    },
+    "it": {
+     "t": "Condurre una riunione",
+     "g": "Conduci una riunione con scioltezza usando Let's get started, Moving on to e To sum up.",
+     "p": [
+      "Aprire: Let's get started. Thanks for coming. The aim of today's meeting is to... We have three items on the agenda.",
+      "Gestire: Moving on to the next point... Let's hear from Ana. Can we come back to that later? We're running short of time.",
+      "Chiudere: To sum up, we agreed that... Action points: Tom will... by Friday. Thanks, everyone."
+     ],
+     "q": "Hai mai condotto una riunione o una discussione di gruppo? Cosa è stato facile e cosa difficile?",
+     "c": "Scrivi un copione di tre righe per aprire, passare al punto successivo e chiudere una breve riunione."
+    },
+    "pt": {
+     "t": "Conduzir uma reunião",
+     "g": "Conduz uma reunião com fluidez com frases como Let's get started, Moving on to e To sum up.",
+     "p": [
+      "Abrir: Let's get started. Thanks for coming. The aim of today's meeting is to... We have three items on the agenda.",
+      "Gerir: Moving on to the next point... Let's hear from Ana. Can we come back to that later? We're running short of time.",
+      "Fechar: To sum up, we agreed that... Action points: Tom will... by Friday. Thanks, everyone."
+     ],
+     "q": "Já conduziste uma reunião ou discussão em grupo? O que foi fácil e o que foi difícil?",
+     "c": "Escreve um guião de três linhas para abrir, avançar e fechar uma reunião de equipa curta."
+    },
+    "pt_BR": {
+     "t": "Conduzir uma reunião",
+     "g": "Conduza uma reunião com fluidez com frases como Let's get started, Moving on to e To sum up.",
+     "p": [
+      "Abrir: Let's get started. Thanks for coming. The aim of today's meeting is to... We have three items on the agenda.",
+      "Conduzir: Moving on to the next point... Let's hear from Ana. Can we come back to that later? We're running short of time.",
+      "Fechar: To sum up, we agreed that... Action points: Tom will... by Friday. Thanks, everyone."
+     ],
+     "q": "Você já conduziu uma reunião ou discussão em grupo? O que foi fácil e o que foi difícil?",
+     "c": "Escreva um roteiro de três linhas para abrir, avançar e fechar uma reunião de equipe curta."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "let's get started",
+      "ex": "OK, everyone's here, so let's get started."
+     },
+     {
+      "w": "the agenda",
+      "ex": "There are four items on the agenda today."
+     },
+     {
+      "w": "moving on to",
+      "ex": "Moving on to the budget, let's look at the figures."
+     },
+     {
+      "w": "come back to that",
+      "ex": "Good question. Can we come back to that later?"
+     },
+     {
+      "w": "action points",
+      "ex": "Let's go through the action points before we finish."
+     },
+     {
+      "w": "to sum up",
+      "ex": "To sum up, we'll launch the campaign in May."
+     }
+    ],
+    "gram": "Meeting language: let's + verb for suggestions, will for action points (Tom will send the report), present continuous for time."
+   }
+  },
+  {
+   "d": 327,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Giving a presentation",
+     "g": "Use signposting phrases to guide your audience through a presentation.",
+     "p": [
+      "Introduce: Today I'd like to talk about... First, I'll talk about..., then... and finally...",
+      "Move on: Let's now turn to... This brings me to my next point. As you can see on this slide...",
+      "Conclude: To conclude... The key takeaway is... Thank you for listening. Signposts help listeners follow you."
+     ],
+     "q": "If you gave a five-minute presentation about your hobby, what would your three main points be?",
+     "c": "Plan a mini presentation: write your opening, two signposts and a closing sentence."
+    },
+    "de": {
+     "t": "Eine Präsentation halten",
+     "g": "Du führst dein Publikum mit Signalwendungen durch eine Präsentation.",
+     "p": [
+      "Einleiten: Today I'd like to talk about... First, I'll talk about..., then... and finally...",
+      "Überleiten: Let's now turn to... This brings me to my next point. As you can see on this slide...",
+      "Abschließen: To conclude... The key takeaway is... Thank you for listening. Signalwörter helfen beim Folgen."
+     ],
+     "q": "Wenn du fünf Minuten über dein Hobby präsentieren würdest: Was wären deine drei Hauptpunkte?",
+     "c": "Plane eine Mini-Präsentation: Schreib Einstieg, zwei Überleitungen und einen Schlusssatz."
+    },
+    "es": {
+     "t": "Hacer una presentación",
+     "g": "Usa frases de señalización para guiar a tu público en una presentación.",
+     "p": [
+      "Presentar: Today I'd like to talk about... First, I'll talk about..., then... and finally...",
+      "Avanzar: Let's now turn to... This brings me to my next point. As you can see on this slide...",
+      "Concluir: To conclude... The key takeaway is... Thank you for listening. Las señales ayudan a seguirte."
+     ],
+     "q": "Si hicieras una presentación de cinco minutos sobre tu afición, ¿cuáles serían tus tres puntos principales?",
+     "c": "Planifica una minipresentación: escribe la apertura, dos frases de transición y una frase de cierre."
+    },
+    "fr": {
+     "t": "Faire une présentation",
+     "g": "Utilise des phrases de transition pour guider ton public pendant une présentation.",
+     "p": [
+      "Introduire : Today I'd like to talk about... First, I'll talk about..., then... and finally...",
+      "Enchaîner : Let's now turn to... This brings me to my next point. As you can see on this slide...",
+      "Conclure : To conclude... The key takeaway is... Thank you for listening. Ces repères aident à te suivre."
+     ],
+     "q": "Si tu faisais une présentation de cinq minutes sur ton loisir, quels seraient tes trois points principaux ?",
+     "c": "Prépare une mini-présentation : écris ton ouverture, deux transitions et une phrase de conclusion."
+    },
+    "it": {
+     "t": "Fare una presentazione",
+     "g": "Usa frasi di collegamento per guidare il pubblico in una presentazione.",
+     "p": [
+      "Introdurre: Today I'd like to talk about... First, I'll talk about..., then... and finally...",
+      "Passare oltre: Let's now turn to... This brings me to my next point. As you can see on this slide...",
+      "Concludere: To conclude... The key takeaway is... Thank you for listening. I segnali aiutano a seguirti."
+     ],
+     "q": "Se facessi una presentazione di cinque minuti sul tuo hobby, quali sarebbero i tuoi tre punti principali?",
+     "c": "Prepara una mini presentazione: scrivi l'apertura, due passaggi e una frase finale."
+    },
+    "pt": {
+     "t": "Fazer uma apresentação",
+     "g": "Usa frases de sinalização para guiar o público numa apresentação.",
+     "p": [
+      "Introduzir: Today I'd like to talk about... First, I'll talk about..., then... and finally...",
+      "Avançar: Let's now turn to... This brings me to my next point. As you can see on this slide...",
+      "Concluir: To conclude... The key takeaway is... Thank you for listening. Os sinais ajudam a seguir-te."
+     ],
+     "q": "Se fizesses uma apresentação de cinco minutos sobre o teu passatempo, quais seriam os três pontos principais?",
+     "c": "Planeia uma miniapresentação: escreve a abertura, duas transições e uma frase final."
+    },
+    "pt_BR": {
+     "t": "Fazer uma apresentação",
+     "g": "Use frases de sinalização para guiar o público numa apresentação.",
+     "p": [
+      "Introduzir: Today I'd like to talk about... First, I'll talk about..., then... and finally...",
+      "Avançar: Let's now turn to... This brings me to my next point. As you can see on this slide...",
+      "Concluir: To conclude... The key takeaway is... Thank you for listening. Os sinais ajudam o público a te seguir."
+     ],
+     "q": "Se você fizesse uma apresentação de cinco minutos sobre seu hobby, quais seriam os três pontos principais?",
+     "c": "Planeje uma miniapresentação: escreva a abertura, duas transições e uma frase final."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "today I'd like to talk about",
+      "ex": "Today I'd like to talk about healthy cooking."
+     },
+     {
+      "w": "first, I'll",
+      "ex": "First, I'll explain how the app works."
+     },
+     {
+      "w": "let's now turn to",
+      "ex": "Let's now turn to the results."
+     },
+     {
+      "w": "this brings me to",
+      "ex": "This brings me to my final point."
+     },
+     {
+      "w": "as you can see",
+      "ex": "As you can see, sales doubled in May."
+     },
+     {
+      "w": "to conclude",
+      "ex": "To conclude, small habits make a big difference."
+     }
+    ],
+    "gram": "Signposting: future with will and I'd like to for the plan; present simple for slides (this shows); let's now turn to + noun."
+   }
+  },
+  {
+   "d": 328,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Handling questions after a talk",
+     "g": "Respond to questions with confidence: That's a great question, Let me come back to that.",
+     "p": [
+      "Welcome questions: Thanks for asking. That's a great question. I'm glad you raised that.",
+      "Buy time or clarify: Let me think about that for a second. Do you mean...? So, if I understand correctly...",
+      "If you don't know: I'm not sure, but I'll find out and get back to you. Let me come back to that after the talk."
+     ],
+     "q": "What kind of question would make you nervous after a talk, and how could you answer it calmly?",
+     "c": "Ask yourself three tricky questions about your job or studies and answer each with a phrase from today."
+    },
+    "de": {
+     "t": "Fragen nach einem Vortrag beantworten",
+     "g": "Du beantwortest Fragen souverän: That's a great question, Let me come back to that.",
+     "p": [
+      "Fragen begrüßen: Thanks for asking. That's a great question. I'm glad you raised that.",
+      "Zeit gewinnen oder klären: Let me think about that for a second. Do you mean...? So, if I understand correctly...",
+      "Wenn du es nicht weißt: I'm not sure, but I'll find out and get back to you. Let me come back to that after the talk."
+     ],
+     "q": "Welche Frage würde dich nach einem Vortrag nervös machen, und wie könntest du ruhig antworten?",
+     "c": "Stell dir drei knifflige Fragen zu Job oder Studium und beantworte jede mit einer Wendung von heute."
+    },
+    "es": {
+     "t": "Responder preguntas tras una charla",
+     "g": "Responde con seguridad: That's a great question, Let me come back to that.",
+     "p": [
+      "Acoge las preguntas: Thanks for asking. That's a great question. I'm glad you raised that.",
+      "Gana tiempo o aclara: Let me think about that for a second. Do you mean...? So, if I understand correctly...",
+      "Si no lo sabes: I'm not sure, but I'll find out and get back to you. Let me come back to that after the talk."
+     ],
+     "q": "¿Qué pregunta te pondría nervioso tras una charla y cómo podrías responderla con calma?",
+     "c": "Hazte tres preguntas difíciles sobre tu trabajo o estudios y responde cada una con una frase de hoy."
+    },
+    "fr": {
+     "t": "Répondre aux questions après un exposé",
+     "g": "Réponds avec assurance : That's a great question, Let me come back to that.",
+     "p": [
+      "Accueillir : Thanks for asking. That's a great question. I'm glad you raised that.",
+      "Gagner du temps ou clarifier : Let me think about that for a second. Do you mean...? So, if I understand correctly...",
+      "Si tu ne sais pas : I'm not sure, but I'll find out and get back to you. Let me come back to that after the talk."
+     ],
+     "q": "Quelle question te rendrait nerveux après un exposé, et comment y répondre calmement ?",
+     "c": "Pose-toi trois questions difficiles sur ton travail ou tes études et réponds avec une phrase du jour."
+    },
+    "it": {
+     "t": "Rispondere alle domande dopo un intervento",
+     "g": "Rispondi con sicurezza: That's a great question, Let me come back to that.",
+     "p": [
+      "Accogliere: Thanks for asking. That's a great question. I'm glad you raised that.",
+      "Prendere tempo o chiarire: Let me think about that for a second. Do you mean...? So, if I understand correctly...",
+      "Se non lo sai: I'm not sure, but I'll find out and get back to you. Let me come back to that after the talk."
+     ],
+     "q": "Quale domanda ti metterebbe in difficoltà dopo un intervento, e come potresti rispondere con calma?",
+     "c": "Fatti tre domande difficili sul tuo lavoro o studio e rispondi a ognuna con una frase di oggi."
+    },
+    "pt": {
+     "t": "Responder a perguntas após uma palestra",
+     "g": "Responde com confiança: That's a great question, Let me come back to that.",
+     "p": [
+      "Acolher: Thanks for asking. That's a great question. I'm glad you raised that.",
+      "Ganhar tempo ou esclarecer: Let me think about that for a second. Do you mean...? So, if I understand correctly...",
+      "Se não souberes: I'm not sure, but I'll find out and get back to you. Let me come back to that after the talk."
+     ],
+     "q": "Que pergunta te deixaria nervoso depois de uma palestra, e como poderias responder com calma?",
+     "c": "Faz a ti mesmo três perguntas difíceis sobre o trabalho ou estudos e responde com uma frase de hoje."
+    },
+    "pt_BR": {
+     "t": "Responder a perguntas após uma palestra",
+     "g": "Responda com confiança: That's a great question, Let me come back to that.",
+     "p": [
+      "Acolher: Thanks for asking. That's a great question. I'm glad you raised that.",
+      "Ganhar tempo ou esclarecer: Let me think about that for a second. Do you mean...? So, if I understand correctly...",
+      "Se não souber: I'm not sure, but I'll find out and get back to you. Let me come back to that after the talk."
+     ],
+     "q": "Que pergunta te deixaria nervoso depois de uma palestra, e como você poderia responder com calma?",
+     "c": "Faça a si mesmo três perguntas difíceis sobre trabalho ou estudo e responda com uma frase de hoje."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "that's a great question",
+      "ex": "That's a great question, thank you."
+     },
+     {
+      "w": "I'm glad you raised that",
+      "ex": "I'm glad you raised that point."
+     },
+     {
+      "w": "do you mean",
+      "ex": "Do you mean the cost or the time?"
+     },
+     {
+      "w": "if I understand correctly",
+      "ex": "So, if I understand correctly, you're asking about delivery."
+     },
+     {
+      "w": "get back to you",
+      "ex": "I'll check the numbers and get back to you."
+     },
+     {
+      "w": "let me come back to that",
+      "ex": "Let me come back to that at the end."
+     }
+    ],
+    "gram": "Q&A phrases: reformulate with So, if I understand correctly...; promise with will (I'll get back to you); delay with Let me + verb."
+   }
+  },
+  {
+   "d": 329,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Negotiating in depth",
+     "g": "Make offers, concessions and counter-offers: We could agree to that on condition that...",
+     "p": [
+      "Offer: We could offer... How about if we...? Counter-offer: That's a little high for us. Would you consider...?",
+      "Conditions: We could agree to that on condition that... / provided that / as long as you... Unless..., we can't...",
+      "Concede and close: I think we can meet you halfway. Let's shake on it. So, to confirm, we've agreed..."
+     ],
+     "q": "Have you ever negotiated something, like a price, a salary or a holiday plan? How did it go?",
+     "c": "Role-play buying a used bike with your Buddy: make an offer, a counter-offer and agree with a condition."
+    },
+    "de": {
+     "t": "Verhandeln für Fortgeschrittene",
+     "g": "Du machst Angebote, Zugeständnisse und Gegenangebote: We could agree to that on condition that...",
+     "p": [
+      "Angebot: We could offer... How about if we...? Gegenangebot: That's a little high for us. Would you consider...?",
+      "Bedingungen: We could agree to that on condition that... / provided that / as long as you... Unless..., we can't...",
+      "Entgegenkommen und abschließen: I think we can meet you halfway. Let's shake on it. So, to confirm, we've agreed..."
+     ],
+     "q": "Hast du schon einmal verhandelt, etwa über Preis, Gehalt oder Urlaubsplan? Wie lief es?",
+     "c": "Spiel mit deinem Buddy den Kauf eines gebrauchten Fahrrads: Angebot, Gegenangebot, Einigung mit Bedingung."
+    },
+    "es": {
+     "t": "Negociar a fondo",
+     "g": "Haz ofertas, concesiones y contraofertas: We could agree to that on condition that...",
+     "p": [
+      "Oferta: We could offer... How about if we...? Contraoferta: That's a little high for us. Would you consider...?",
+      "Condiciones: We could agree to that on condition that... / provided that / as long as you... Unless..., we can't...",
+      "Ceder y cerrar: I think we can meet you halfway. Let's shake on it. So, to confirm, we've agreed..."
+     ],
+     "q": "¿Has negociado alguna vez un precio, un sueldo o un plan de vacaciones? ¿Cómo fue?",
+     "c": "Haz un role-play con tu Buddy comprando una bici usada: oferta, contraoferta y acuerdo con una condición."
+    },
+    "fr": {
+     "t": "Négocier en profondeur",
+     "g": "Fais des offres, des concessions et des contre-offres : We could agree to that on condition that...",
+     "p": [
+      "Offre : We could offer... How about if we...? Contre-offre : That's a little high for us. Would you consider...?",
+      "Conditions : We could agree to that on condition that... / provided that / as long as you... Unless..., we can't...",
+      "Céder et conclure : I think we can meet you halfway. Let's shake on it. So, to confirm, we've agreed..."
+     ],
+     "q": "As-tu déjà négocié un prix, un salaire ou un projet de vacances ? Comment ça s'est passé ?",
+     "c": "Joue avec ton Buddy l'achat d'un vélo d'occasion : offre, contre-offre et accord sous condition."
+    },
+    "it": {
+     "t": "Negoziare a fondo",
+     "g": "Fai offerte, concessioni e controfferte: We could agree to that on condition that...",
+     "p": [
+      "Offerta: We could offer... How about if we...? Controfferta: That's a little high for us. Would you consider...?",
+      "Condizioni: We could agree to that on condition that... / provided that / as long as you... Unless..., we can't...",
+      "Cedere e chiudere: I think we can meet you halfway. Let's shake on it. So, to confirm, we've agreed..."
+     ],
+     "q": "Hai mai negoziato un prezzo, uno stipendio o un piano per le vacanze? Com'è andata?",
+     "c": "Fai un role-play con il tuo Buddy per comprare una bici usata: offerta, controfferta e accordo con una condizione."
+    },
+    "pt": {
+     "t": "Negociar a fundo",
+     "g": "Faz ofertas, concessões e contrapropostas: We could agree to that on condition that...",
+     "p": [
+      "Oferta: We could offer... How about if we...? Contraproposta: That's a little high for us. Would you consider...?",
+      "Condições: We could agree to that on condition that... / provided that / as long as you... Unless..., we can't...",
+      "Ceder e fechar: I think we can meet you halfway. Let's shake on it. So, to confirm, we've agreed..."
+     ],
+     "q": "Já negociaste um preço, um salário ou um plano de férias? Como correu?",
+     "c": "Faz um role-play com o teu Buddy a comprar uma bicicleta usada: oferta, contraproposta e acordo com condição."
+    },
+    "pt_BR": {
+     "t": "Negociar a fundo",
+     "g": "Faça ofertas, concessões e contrapropostas: We could agree to that on condition that...",
+     "p": [
+      "Oferta: We could offer... How about if we...? Contraproposta: That's a little high for us. Would you consider...?",
+      "Condições: We could agree to that on condition that... / provided that / as long as you... Unless..., we can't...",
+      "Ceder e fechar: I think we can meet you halfway. Let's shake on it. So, to confirm, we've agreed..."
+     ],
+     "q": "Você já negociou um preço, um salário ou um plano de férias? Como foi?",
+     "c": "Faça um role-play com seu Buddy comprando uma bicicleta usada: oferta, contraproposta e acordo com condição."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "on condition that",
+      "ex": "We'll sign on condition that delivery is free."
+     },
+     {
+      "w": "provided that",
+      "ex": "You can have a discount provided that you pay now."
+     },
+     {
+      "w": "as long as",
+      "ex": "That's fine as long as it arrives by Monday."
+     },
+     {
+      "w": "would you consider",
+      "ex": "Would you consider a two-year contract?"
+     },
+     {
+      "w": "meet you halfway",
+      "ex": "Let's meet you halfway on the price."
+     },
+     {
+      "w": "a counter-offer",
+      "ex": "They rejected our offer and made a counter-offer."
+     }
+    ],
+    "gram": "Conditional linkers: on condition that, provided that, as long as + present simple; unless = if not. Could and would soften offers."
+   }
+  },
+  {
+   "d": 330,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Giving feedback diplomatically",
+     "g": "Give feedback diplomatically: positive first, then suggestions like One thing you might consider is...",
+     "p": [
+      "Start positive and specific: I really liked how you... Your introduction was very clear.",
+      "Suggest, don't command: One thing you might consider is... It might be worth... Have you thought about...?",
+      "Soften: slightly, a bit, perhaps. Not It's bad, but It could be a little shorter. End with encouragement."
+     ],
+     "q": "How do you prefer to receive feedback: direct or diplomatic? Why?",
+     "c": "Write diplomatic feedback for a friend's imaginary presentation: one strength, two suggestions, one encouragement."
+    },
+    "de": {
+     "t": "Diplomatisch Feedback geben",
+     "g": "Du gibst diplomatisch Feedback: erst Positives, dann Vorschläge wie One thing you might consider is...",
+     "p": [
+      "Positiv und konkret beginnen: I really liked how you... Your introduction was very clear.",
+      "Vorschlagen statt befehlen: One thing you might consider is... It might be worth... Have you thought about...?",
+      "Abschwächen: slightly, a bit, perhaps. Nicht It's bad, sondern It could be a little shorter. Mit Ermutigung enden."
+     ],
+     "q": "Wie bekommst du lieber Feedback: direkt oder diplomatisch? Warum?",
+     "c": "Schreib diplomatisches Feedback zu einer erfundenen Präsentation: eine Stärke, zwei Vorschläge, eine Ermutigung."
+    },
+    "es": {
+     "t": "Dar feedback con diplomacia",
+     "g": "Da feedback con diplomacia: primero lo positivo, luego sugerencias como One thing you might consider is...",
+     "p": [
+      "Empieza en positivo y concreto: I really liked how you... Your introduction was very clear.",
+      "Sugiere, no ordenes: One thing you might consider is... It might be worth... Have you thought about...?",
+      "Suaviza: slightly, a bit, perhaps. No It's bad, sino It could be a little shorter. Termina animando."
+     ],
+     "q": "¿Cómo prefieres recibir feedback: directo o diplomático? ¿Por qué?",
+     "c": "Escribe feedback diplomático sobre una presentación imaginaria: un punto fuerte, dos sugerencias y un ánimo."
+    },
+    "fr": {
+     "t": "Donner un retour avec diplomatie",
+     "g": "Donne un retour avec tact : d'abord le positif, puis des suggestions comme One thing you might consider is...",
+     "p": [
+      "Commence par du positif et du concret : I really liked how you... Your introduction was very clear.",
+      "Suggère sans imposer : One thing you might consider is... It might be worth... Have you thought about...?",
+      "Adoucis : slightly, a bit, perhaps. Pas It's bad, mais It could be a little shorter. Termine par un encouragement."
+     ],
+     "q": "Comment préfères-tu recevoir un retour : direct ou diplomatique ? Pourquoi ?",
+     "c": "Écris un retour diplomatique sur une présentation imaginaire : un point fort, deux suggestions, un encouragement."
+    },
+    "it": {
+     "t": "Dare un feedback con diplomazia",
+     "g": "Dai feedback con diplomazia: prima il positivo, poi suggerimenti come One thing you might consider is...",
+     "p": [
+      "Inizia in positivo e in modo concreto: I really liked how you... Your introduction was very clear.",
+      "Suggerisci, non ordinare: One thing you might consider is... It might be worth... Have you thought about...?",
+      "Attenua: slightly, a bit, perhaps. Non It's bad, ma It could be a little shorter. Chiudi con un incoraggiamento."
+     ],
+     "q": "Come preferisci ricevere un feedback: diretto o diplomatico? Perché?",
+     "c": "Scrivi un feedback diplomatico su una presentazione immaginaria: un punto di forza, due suggerimenti, un incoraggiamento."
+    },
+    "pt": {
+     "t": "Dar feedback com diplomacia",
+     "g": "Dá feedback com diplomacia: primeiro o positivo, depois sugestões como One thing you might consider is...",
+     "p": [
+      "Começa pelo positivo e concreto: I really liked how you... Your introduction was very clear.",
+      "Sugere, não ordenes: One thing you might consider is... It might be worth... Have you thought about...?",
+      "Suaviza: slightly, a bit, perhaps. Não It's bad, mas It could be a little shorter. Termina com incentivo."
+     ],
+     "q": "Como preferes receber feedback: direto ou diplomático? Porquê?",
+     "c": "Escreve feedback diplomático sobre uma apresentação imaginária: um ponto forte, duas sugestões, um incentivo."
+    },
+    "pt_BR": {
+     "t": "Dar feedback com diplomacia",
+     "g": "Dê feedback com diplomacia: primeiro o positivo, depois sugestões como One thing you might consider is...",
+     "p": [
+      "Comece pelo positivo e concreto: I really liked how you... Your introduction was very clear.",
+      "Sugira, não mande: One thing you might consider is... It might be worth... Have you thought about...?",
+      "Suavize: slightly, a bit, perhaps. Não It's bad, mas It could be a little shorter. Termine incentivando."
+     ],
+     "q": "Como você prefere receber feedback: direto ou diplomático? Por quê?",
+     "c": "Escreva feedback diplomático sobre uma apresentação imaginária: um ponto forte, duas sugestões, um incentivo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "I really liked how you",
+      "ex": "I really liked how you explained the data."
+     },
+     {
+      "w": "one thing you might consider",
+      "ex": "One thing you might consider is adding examples."
+     },
+     {
+      "w": "it might be worth",
+      "ex": "It might be worth practising the ending."
+     },
+     {
+      "w": "have you thought about",
+      "ex": "Have you thought about using more pictures?"
+     },
+     {
+      "w": "a little",
+      "ex": "The slides could be a little less busy."
+     },
+     {
+      "w": "keep up the good work",
+      "ex": "Great progress. Keep up the good work!"
+     }
+    ],
+    "gram": "Diplomatic feedback: might, could and it might be worth + -ing soften suggestions; a little or slightly soften criticism."
+   }
+  }
+ ]
+}

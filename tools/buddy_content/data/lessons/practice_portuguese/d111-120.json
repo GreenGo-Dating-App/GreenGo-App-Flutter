@@ -1,0 +1,1125 @@
+{
+  "topic": "practice_portuguese",
+  "lessons": [
+    {
+      "d": 111,
+      "lv": "A2",
+      "i18n": {
+        "en": {
+          "t": "Health and the doctor",
+          "g": "Describe simple symptoms at the doctor's.",
+          "p": [
+            "Tenho febre (I have a fever), tenho tosse, estou constipado (I have a cold), sinto-me mal.",
+            "For pain, doer agrees with what hurts: dói-me a cabeça, but doem-me as costas (my back hurts).",
+            "Useful: Desde quando? Há dois dias. Marcar uma consulta means to book an appointment."
+          ],
+          "q": "How would you tell a doctor that you have had a sore throat for three days?",
+          "c": "Write a short doctor dialogue: book a consulta, describe two symptoms and say since when."
+        },
+        "de": {
+          "t": "Gesundheit und beim Arzt",
+          "g": "Du beschreibst einfache Symptome beim Arzt.",
+          "p": [
+            "Tenho febre (Ich habe Fieber), tenho tosse, estou constipado (Ich bin erkältet), sinto-me mal.",
+            "Bei Schmerzen passt sich doer an: dói-me a cabeça, aber doem-me as costas (mir tut der Rücken weh).",
+            "Nützlich: Desde quando? Há dois dias. Marcar uma consulta heißt einen Termin vereinbaren."
+          ],
+          "q": "Wie würdest du einem Arzt sagen, dass du seit drei Tagen Halsschmerzen hast?",
+          "c": "Schreib einen kurzen Arztdialog: Termin vereinbaren, zwei Symptome nennen und seit wann."
+        },
+        "es": {
+          "t": "La salud y el médico",
+          "g": "Describir síntomas sencillos en el médico.",
+          "p": [
+            "Tenho febre (tengo fiebre), tenho tosse, estou constipado (estoy resfriado), sinto-me mal.",
+            "Doer concuerda con lo que duele: dói-me a cabeça, pero doem-me as costas (me duele la espalda).",
+            "Útil: Desde quando? Há dois dias. Marcar uma consulta es pedir cita. Ojo: constipado no es estreñido."
+          ],
+          "q": "¿Cómo le dirías al médico que te duele la garganta desde hace tres días?",
+          "c": "Escribe un diálogo corto: pide cita, describe dos síntomas y di desde cuándo."
+        },
+        "fr": {
+          "t": "La santé et le médecin",
+          "g": "Décrire des symptômes simples chez le médecin.",
+          "p": [
+            "Tenho febre (j'ai de la fièvre), tenho tosse (je tousse), estou constipado (je suis enrhumé), sinto-me mal.",
+            "Doer s'accorde avec ce qui fait mal : dói-me a cabeça, mais doem-me as costas (j'ai mal au dos).",
+            "Utile : Desde quando? Há dois dias. Marcar uma consulta veut dire prendre rendez-vous."
+          ],
+          "q": "Comment dirais-tu au médecin que tu as mal à la gorge depuis trois jours ?",
+          "c": "Écris un court dialogue : prends rendez-vous, décris deux symptômes et dis depuis quand."
+        },
+        "it": {
+          "t": "Salute e medico",
+          "g": "Descrivi sintomi semplici dal medico.",
+          "p": [
+            "Tenho febre (ho la febbre), tenho tosse, estou constipado (sono raffreddato), sinto-me mal.",
+            "Doer si accorda con ciò che fa male: dói-me a cabeça, ma doem-me as costas (mi fa male la schiena).",
+            "Utile: Desde quando? Há dois dias. Marcar uma consulta vuol dire prendere un appuntamento."
+          ],
+          "q": "Come diresti al medico che hai mal di gola da tre giorni?",
+          "c": "Scrivi un breve dialogo dal medico: prendi appuntamento, descrivi due sintomi e da quando."
+        },
+        "pt": {
+          "t": "A saúde e o médico",
+          "g": "Revê como descrever sintomas e ajudar um estrangeiro numa consulta.",
+          "p": [
+            "Dói-me e doem-me: o verbo concorda com a parte do corpo. Muitos estrangeiros dizem sempre dói.",
+            "Estar constipado é ter uma constipação (resfriado); em espanhol significa outra coisa, o que gera mal-entendidos.",
+            "O centro de saúde e a linha SNS 24 são boas referências para orientar quem chega a Portugal."
+          ],
+          "q": "Que conselho darias a um estrangeiro que precisa de ir ao médico em Portugal pela primeira vez?",
+          "c": "Escreve um pequeno guia de cinco frases para descrever sintomas, em linguagem simples."
+        },
+        "pt_BR": {
+          "t": "A saúde e o médico",
+          "g": "Revise o vocabulário de saúde usado em Portugal.",
+          "p": [
+            "Estar constipado em Portugal é estar resfriado; uma constipação é um resfriado comum.",
+            "Dói-me a cabeça e doem-me as pernas: em Portugal o pronome vem depois do verbo.",
+            "O centro de saúde é o posto de saúde; para uma consulta, diz-se marcar uma consulta."
+          ],
+          "q": "Como você explicaria a um médico português que está constipado há três dias?",
+          "c": "Escreva um diálogo de consulta com constipado, dói-me, doem-me e há dois dias."
+        }
+      },
+      "target": {
+        "vocab": [
+          {
+            "w": "tenho febre",
+            "ex": "Tenho febre desde ontem."
+          },
+          {
+            "w": "estou constipado",
+            "ex": "Estou constipado, tenho o nariz entupido."
+          },
+          {
+            "w": "dói-me",
+            "ex": "Dói-me a garganta."
+          },
+          {
+            "w": "doem-me",
+            "ex": "Doem-me as costas."
+          },
+          {
+            "w": "marcar uma consulta",
+            "ex": "Queria marcar uma consulta, por favor."
+          },
+          {
+            "w": "desde quando?",
+            "ex": "Desde quando tem tosse?"
+          }
+        ],
+        "gram": "Doer concorda com a parte do corpo: dói-me a cabeça, doem-me os pés. Sintomas: tenho febre/tosse, estou constipado."
+      }
+    },
+    {
+      "d": 112,
+      "lv": "A2",
+      "i18n": {
+        "en": {
+          "t": "Healthy habits",
+          "g": "Talk about sleep, exercise and food with dever and costumar.",
+          "p": [
+            "Costumar + infinitive means to usually do: Costumo dormir oito horas. Costumas fazer desporto?",
+            "Dever + infinitive gives advice: Devias beber mais água (You should drink more water). Deves descansar.",
+            "Useful: fazer exercício, comer fruta e legumes, dormir bem, andar a pé, beber água."
+          ],
+          "q": "What healthy habit do you have, and which one would you like to start?",
+          "c": "Write three sentences with costumo about your habits and two pieces of advice with deves."
+        },
+        "de": {
+          "t": "Gesunde Gewohnheiten",
+          "g": "Du sprichst mit dever und costumar über Schlaf, Sport und Ernährung.",
+          "p": [
+            "Costumar + Infinitiv heißt normalerweise tun: Costumo dormir oito horas. Costumas fazer desporto?",
+            "Dever + Infinitiv gibt Rat: Devias beber mais água (Du solltest mehr Wasser trinken). Deves descansar.",
+            "Nützlich: fazer exercício, comer fruta e legumes, dormir bem, andar a pé, beber água."
+          ],
+          "q": "Welche gesunde Gewohnheit hast du, und welche möchtest du anfangen?",
+          "c": "Schreib drei Sätze mit costumo über deine Gewohnheiten und zwei Ratschläge mit deves."
+        },
+        "es": {
+          "t": "Hábitos saludables",
+          "g": "Hablar de sueño, ejercicio y comida con dever y costumar.",
+          "p": [
+            "Costumar + infinitivo es soler: Costumo dormir oito horas (suelo dormir ocho horas). Costumas fazer desporto?",
+            "Dever + infinitivo da consejos: Devias beber mais água (deberías beber más agua). Deves descansar.",
+            "Útil: fazer exercício, comer fruta e legumes, dormir bem, andar a pé, beber água."
+          ],
+          "q": "¿Qué hábito saludable tienes y cuál te gustaría empezar?",
+          "c": "Escribe tres frases con costumo sobre tus hábitos y dos consejos con deves."
+        },
+        "fr": {
+          "t": "Bonnes habitudes",
+          "g": "Parler du sommeil, du sport et de l'alimentation avec dever et costumar.",
+          "p": [
+            "Costumar + infinitif = avoir l'habitude de : Costumo dormir oito horas. Costumas fazer desporto?",
+            "Dever + infinitif donne un conseil : Devias beber mais água (Tu devrais boire plus d'eau). Deves descansar.",
+            "Utile : fazer exercício, comer fruta e legumes, dormir bem, andar a pé, beber água."
+          ],
+          "q": "Quelle bonne habitude as-tu, et laquelle aimerais-tu commencer ?",
+          "c": "Écris trois phrases avec costumo sur tes habitudes et deux conseils avec deves."
+        },
+        "it": {
+          "t": "Abitudini sane",
+          "g": "Parli di sonno, sport e alimentazione con dever e costumar.",
+          "p": [
+            "Costumar + infinito vuol dire essere solito: Costumo dormir oito horas. Costumas fazer desporto?",
+            "Dever + infinito dà consigli: Devias beber mais água (Dovresti bere più acqua). Deves descansar.",
+            "Utile: fazer exercício, comer fruta e legumes, dormir bem, andar a pé, beber água."
+          ],
+          "q": "Quale abitudine sana hai, e quale vorresti iniziare?",
+          "c": "Scrivi tre frasi con costumo sulle tue abitudini e due consigli con deves."
+        },
+        "pt": {
+          "t": "Hábitos saudáveis",
+          "g": "Revê como falar de hábitos e dar conselhos com delicadeza.",
+          "p": [
+            "Devias e deverias suavizam um conselho; deves soa mais direto. Em Portugal, devias é o mais comum na fala.",
+            "Costumar é um verbo que muitos estrangeiros não conhecem; ensiná-lo torna a conversa mais natural.",
+            "Desporto em Portugal, esporte no Brasil; ginásio em Portugal, academia no Brasil."
+          ],
+          "q": "Qual é o hábito saudável que mais te custa manter?",
+          "c": "Escreve três conselhos para um amigo estrangeiro, do mais direto (deves) ao mais suave (se calhar devias)."
+        },
+        "pt_BR": {
+          "t": "Hábitos saudáveis",
+          "g": "Revise como falar de hábitos à portuguesa.",
+          "p": [
+            "Em Portugal, esporte é desporto e academia é ginásio: Costumo ir ao ginásio três vezes por semana.",
+            "Devias, no imperfeito, é a forma comum de dar conselhos: Devias dormir mais.",
+            "Andar a pé é caminhar; fazer caminhadas também se diz, sobretudo no campo."
+          ],
+          "q": "Você costuma fazer desporto? Responda à portuguesa, com ginásio ou andar a pé.",
+          "c": "Escreva cinco frases sobre seus hábitos com costumo, devias, ginásio e desporto."
+        }
+      },
+      "target": {
+        "vocab": [
+          {
+            "w": "costumo",
+            "ex": "Costumo deitar-me às onze."
+          },
+          {
+            "w": "devias",
+            "ex": "Devias dormir mais."
+          },
+          {
+            "w": "fazer exercício",
+            "ex": "Faço exercício três vezes por semana."
+          },
+          {
+            "w": "o desporto",
+            "ex": "O meu desporto preferido é a natação."
+          },
+          {
+            "w": "andar a pé",
+            "ex": "Gosto de andar a pé pela cidade."
+          },
+          {
+            "w": "o ginásio",
+            "ex": "Vou ao ginásio depois do trabalho."
+          }
+        ],
+        "gram": "Costumar + infinitivo = hábito (costumo correr). Dever + infinitivo = conselho (deves descansar; devias, mais suave)."
+      }
+    },
+    {
+      "d": 113,
+      "lv": "A2",
+      "i18n": {
+        "en": {
+          "t": "Por and para",
+          "g": "Learn the main uses of two little words: por and para.",
+          "p": [
+            "Para: purpose and destination: Estudo para aprender. Vou para casa. Este presente é para ti.",
+            "Por: through, by, because of, per: Passei por Lisboa. Obrigado por tudo. Por causa da chuva.",
+            "Por + article contracts: pelo, pela: Andamos pela praia. Para mim means for me / in my opinion."
+          ],
+          "q": "What are you learning Portuguese for? Answer with para + infinitive.",
+          "c": "Write three sentences with para and three with por (or pelo/pela)."
+        },
+        "de": {
+          "t": "Por und para",
+          "g": "Du lernst die wichtigsten Verwendungen von por und para.",
+          "p": [
+            "Para: Zweck und Ziel: Estudo para aprender. Vou para casa. Este presente é para ti.",
+            "Por: durch, wegen, pro, für (Dank): Passei por Lisboa. Obrigado por tudo. Por causa da chuva.",
+            "Por + Artikel verschmilzt: pelo, pela: Andamos pela praia. Para mim heißt für mich / meiner Meinung nach."
+          ],
+          "q": "Wofür lernst du Portugiesisch? Antworte mit para + Infinitiv.",
+          "c": "Schreib drei Sätze mit para und drei mit por (oder pelo/pela)."
+        },
+        "es": {
+          "t": "Por y para",
+          "g": "Aprender los usos principales de por y para.",
+          "p": [
+            "Para: finalidad y destino: Estudo para aprender. Vou para casa. Este presente é para ti.",
+            "Por: a través de, causa, agradecimiento: Passei por Lisboa. Obrigado por tudo. Por causa da chuva.",
+            "Por + artículo se contrae: pelo, pela: Andamos pela praia (por la playa). Muy parecido al español."
+          ],
+          "q": "¿Para qué aprendes portugués? Responde con para + infinitivo.",
+          "c": "Escribe tres frases con para y tres con por (o pelo/pela)."
+        },
+        "fr": {
+          "t": "Por et para",
+          "g": "Apprendre les principaux usages de por et para.",
+          "p": [
+            "Para : but et destination : Estudo para aprender (pour apprendre). Vou para casa. Este presente é para ti.",
+            "Por : par, à travers, à cause de, merci pour : Passei por Lisboa. Obrigado por tudo. Por causa da chuva.",
+            "Por + article se contracte : pelo, pela : Andamos pela praia. Para mim = pour moi, à mon avis."
+          ],
+          "q": "Pourquoi apprends-tu le portugais ? Réponds avec para + infinitif.",
+          "c": "Écris trois phrases avec para et trois avec por (ou pelo/pela)."
+        },
+        "it": {
+          "t": "Por e para",
+          "g": "Impari gli usi principali di por e para.",
+          "p": [
+            "Para: scopo e destinazione: Estudo para aprender (per imparare). Vou para casa. Este presente é para ti.",
+            "Por: attraverso, per (causa), grazie per: Passei por Lisboa. Obrigado por tudo. Por causa da chuva.",
+            "Por + articolo si contrae: pelo, pela: Andamos pela praia. Para mim = per me, secondo me."
+          ],
+          "q": "Per cosa studi il portoghese? Rispondi con para + infinito.",
+          "c": "Scrivi tre frasi con para e tre con por (o pelo/pela)."
+        },
+        "pt": {
+          "t": "Por e para",
+          "g": "Revê por e para e como os explicar de forma simples.",
+          "p": [
+            "Regra prática: para olha para a frente (objetivo, destino); por olha para o caminho ou a causa.",
+            "Pelo e pela são contrações que confundem estrangeiros: Obrigado pela ajuda; Passámos pelo Porto.",
+            "Na fala portuguesa ouve-se pra e pró (para o); na escrita usa-se sempre para."
+          ],
+          "q": "Que exemplo usarias para mostrar a diferença entre por e para a um estrangeiro?",
+          "c": "Escreve três pares de frases com por e para que mudem de sentido, como Vou por ali / Vou para ali."
+        },
+        "pt_BR": {
+          "t": "Por e para",
+          "g": "Revise por e para, iguais nos dois países, com detalhes de Portugal.",
+          "p": [
+            "Os usos são iguais: Vou para casa. Obrigado por tudo. Passei pelo centro.",
+            "Em Portugal, na fala rápida, para o soa pró e para a soa prà; no Brasil ouve-se pro e pra.",
+            "Para mim é igual: Para mim, um galão, se faz favor. É muito usado ao pedir no café."
+          ],
+          "q": "Para que você está aprendendo o português de Portugal?",
+          "c": "Escreva quatro frases com por, pelo, pela e para, à portuguesa."
+        }
+      },
+      "target": {
+        "vocab": [
+          {
+            "w": "para",
+            "ex": "Este bolo é para a avó."
+          },
+          {
+            "w": "por",
+            "ex": "Obrigado por tudo!"
+          },
+          {
+            "w": "pelo",
+            "ex": "Passeámos pelo centro histórico."
+          },
+          {
+            "w": "pela",
+            "ex": "Obrigada pela ajuda."
+          },
+          {
+            "w": "por causa de",
+            "ex": "Ficámos em casa por causa da chuva."
+          },
+          {
+            "w": "para mim",
+            "ex": "Para mim, um café, se faz favor."
+          }
+        ],
+        "gram": "Para: objetivo, destino, destinatário (para ti). Por: caminho, causa, troca, agradecimento. Por + o/a = pelo/pela."
+      }
+    },
+    {
+      "d": 114,
+      "lv": "A2",
+      "i18n": {
+        "en": {
+          "t": "Prepositions of time",
+          "g": "Use em, a, de... a, desde, até and durante for time.",
+          "p": [
+            "Em for months, years and seasons: em maio, em 2010, no verão. Days: na segunda-feira, no sábado.",
+            "A for clock times and with ao fim de semana in Portugal: às três, à noite, ao domingo (on Sundays).",
+            "De... a (from... to): de segunda a sexta. Desde (since), até (until), durante (during, for)."
+          ],
+          "q": "What do you do de segunda a sexta, and what do you do ao fim de semana?",
+          "c": "Write five sentences about your timetable using em, às, de... a, desde and até."
+        },
+        "de": {
+          "t": "Präpositionen der Zeit",
+          "g": "Du verwendest em, a, de... a, desde, até und durante für Zeitangaben.",
+          "p": [
+            "Em für Monate, Jahre, Jahreszeiten: em maio, em 2010, no verão. Tage: na segunda-feira, no sábado.",
+            "A für Uhrzeiten und in Portugal mit Wochentagen: às três, à noite, ao domingo (sonntags).",
+            "De... a (von... bis): de segunda a sexta. Desde (seit), até (bis), durante (während)."
+          ],
+          "q": "Was machst du de segunda a sexta, und was ao fim de semana?",
+          "c": "Schreib fünf Sätze über deinen Zeitplan mit em, às, de... a, desde und até."
+        },
+        "es": {
+          "t": "Preposiciones de tiempo",
+          "g": "Usar em, a, de... a, desde, até y durante con el tiempo.",
+          "p": [
+            "Em para meses, años y estaciones: em maio, em 2010, no verão. Días: na segunda-feira, no sábado.",
+            "A para horas y, en Portugal, días habituales: às três, à noite, ao domingo (los domingos).",
+            "De... a (de... a): de segunda a sexta. Desde, até (hasta), durante. Muy parecido al español."
+          ],
+          "q": "¿Qué haces de segunda a sexta y qué haces ao fim de semana?",
+          "c": "Escribe cinco frases sobre tu horario con em, às, de... a, desde y até."
+        },
+        "fr": {
+          "t": "Prépositions de temps",
+          "g": "Utiliser em, a, de... a, desde, até et durante pour le temps.",
+          "p": [
+            "Em pour mois, années et saisons : em maio, em 2010, no verão. Jours : na segunda-feira, no sábado.",
+            "A pour l'heure et, au Portugal, les habitudes : às três, à noite, ao domingo (le dimanche).",
+            "De... a (de... à) : de segunda a sexta. Desde (depuis), até (jusqu'à), durante (pendant)."
+          ],
+          "q": "Que fais-tu de segunda a sexta, et que fais-tu ao fim de semana ?",
+          "c": "Écris cinq phrases sur ton emploi du temps avec em, às, de... a, desde et até."
+        },
+        "it": {
+          "t": "Preposizioni di tempo",
+          "g": "Usi em, a, de... a, desde, até e durante con il tempo.",
+          "p": [
+            "Em per mesi, anni e stagioni: em maio, em 2010, no verão. Giorni: na segunda-feira, no sábado.",
+            "A per l'ora e, in Portogallo, le abitudini: às três, à noite, ao domingo (la domenica).",
+            "De... a (da... a): de segunda a sexta. Desde (da, dal), até (fino a), durante."
+          ],
+          "q": "Cosa fai de segunda a sexta, e cosa fai ao fim de semana?",
+          "c": "Scrivi cinque frasi sul tuo orario con em, às, de... a, desde e até."
+        },
+        "pt": {
+          "t": "Preposições de tempo",
+          "g": "Revê as preposições de tempo e as diferenças entre Portugal e Brasil.",
+          "p": [
+            "Ao domingo (habitual) e no domingo (um domingo concreto) distinguem-se bem em Portugal.",
+            "No Brasil diz-se aos domingos ou no domingo; ao fim de semana é tipicamente português.",
+            "Desde e há: Moro aqui desde 2015 / há dez anos. Durante indica duração: durante o verão."
+          ],
+          "q": "Usas mais ao fim de semana ou no fim de semana? Já tinhas pensado nisso?",
+          "c": "Escreve quatro pares de frases que mostrem a diferença entre ao domingo e no domingo."
+        },
+        "pt_BR": {
+          "t": "Preposições de tempo",
+          "g": "Revise as preposições de tempo com o uso português de ao.",
+          "p": [
+            "Em Portugal, para hábitos, diz-se ao domingo, ao sábado, ao fim de semana: Ao domingo almoço com a família.",
+            "No domingo indica um domingo específico: No domingo vou ao Porto.",
+            "À noite e de manhã são iguais nos dois países; de segunda a sexta também."
+          ],
+          "q": "O que você faz ao domingo, dito à portuguesa?",
+          "c": "Escreva cinco frases sobre sua rotina com ao domingo, ao fim de semana, desde e até."
+        }
+      },
+      "target": {
+        "vocab": [
+          {
+            "w": "em maio",
+            "ex": "Faço anos em maio."
+          },
+          {
+            "w": "às três",
+            "ex": "A reunião é às três."
+          },
+          {
+            "w": "ao domingo",
+            "ex": "Ao domingo almoço com os meus pais."
+          },
+          {
+            "w": "de segunda a sexta",
+            "ex": "Trabalho de segunda a sexta."
+          },
+          {
+            "w": "desde",
+            "ex": "Vivo no Porto desde 2018."
+          },
+          {
+            "w": "durante",
+            "ex": "Durante o verão a cidade enche-se de turistas."
+          }
+        ],
+        "gram": "Tempo: em (meses, anos), a (horas: às três; hábito: ao domingo), de... a, desde, até, durante. No verão, na segunda."
+      }
+    },
+    {
+      "d": 115,
+      "lv": "A2",
+      "i18n": {
+        "en": {
+          "t": "Relative pronouns: que and onde",
+          "g": "Join sentences with que and onde.",
+          "p": [
+            "Que (that, which, who) works for people and things: o livro que li, a amiga que mora em Faro.",
+            "Onde (where) is for places: a cidade onde nasci (the city where I was born), o café onde trabalho.",
+            "Unlike English, you cannot drop que: O filme que vi ontem, never O filme vi ontem."
+          ],
+          "q": "What is the city where you were born like? Use onde nasci.",
+          "c": "Join pairs of sentences: Tenho um amigo. Ele fala chinês. / Esta é a casa. Eu cresci aqui."
+        },
+        "de": {
+          "t": "Relativpronomen: que und onde",
+          "g": "Du verbindest Sätze mit que und onde.",
+          "p": [
+            "Que (der, die, das) gilt für Personen und Dinge: o livro que li, a amiga que mora em Faro.",
+            "Onde (wo) steht für Orte: a cidade onde nasci (die Stadt, in der ich geboren bin), o café onde trabalho.",
+            "Que darf nie wegfallen: O filme que vi ontem, nie O filme vi ontem."
+          ],
+          "q": "Wie ist die Stadt, in der du geboren bist? Nutze onde nasci.",
+          "c": "Verbinde Satzpaare: Tenho um amigo. Ele fala chinês. / Esta é a casa. Eu cresci aqui."
+        },
+        "es": {
+          "t": "Pronombres relativos: que y onde",
+          "g": "Unir frases con que y onde.",
+          "p": [
+            "Que sirve para personas y cosas, como en español: o livro que li, a amiga que mora em Faro.",
+            "Onde (donde) es para lugares: a cidade onde nasci (la ciudad donde nací), o café onde trabalho.",
+            "No se puede omitir que: O filme que vi ontem. Nunca O filme vi ontem."
+          ],
+          "q": "¿Cómo es la ciudad donde naciste? Usa onde nasci.",
+          "c": "Une estos pares: Tenho um amigo. Ele fala chinês. / Esta é a casa. Eu cresci aqui."
+        },
+        "fr": {
+          "t": "Pronoms relatifs : que et onde",
+          "g": "Relier des phrases avec que et onde.",
+          "p": [
+            "Que remplace qui et que du français : o livro que li (le livre que j'ai lu), a amiga que mora em Faro (qui habite).",
+            "Onde (où) s'utilise pour les lieux : a cidade onde nasci (la ville où je suis né), o café onde trabalho.",
+            "Comme en français, on ne supprime jamais que : O filme que vi ontem."
+          ],
+          "q": "Comment est la ville où tu es né ? Utilise onde nasci.",
+          "c": "Relie ces paires : Tenho um amigo. Ele fala chinês. / Esta é a casa. Eu cresci aqui."
+        },
+        "it": {
+          "t": "Pronomi relativi: que e onde",
+          "g": "Unisci frasi con que e onde.",
+          "p": [
+            "Que è il che italiano, per persone e cose: o livro que li, a amiga que mora em Faro.",
+            "Onde (dove) è per i luoghi: a cidade onde nasci (la città dove sono nato), o café onde trabalho.",
+            "Come in italiano, que non si omette: O filme que vi ontem."
+          ],
+          "q": "Com'è la città dove sei nato? Usa onde nasci.",
+          "c": "Unisci queste coppie: Tenho um amigo. Ele fala chinês. / Esta é a casa. Eu cresci aqui."
+        },
+        "pt": {
+          "t": "Relativos: que e onde",
+          "g": "Revê os relativos que e onde e um uso a evitar na escrita.",
+          "p": [
+            "Onde deve referir-se a lugares; usar onde para tempo ou situações (o momento onde) é evitado na escrita cuidada.",
+            "Em vez de onde para tempo, usa-se em que: o dia em que nos conhecemos.",
+            "Falantes de inglês omitem o relativo; lembra-lhes que em português o que é obrigatório."
+          ],
+          "q": "Já reparaste que se usa onde em contextos que não são lugares? Soa-te bem?",
+          "c": "Corrige três frases com onde mal usado, substituindo-o por em que, e explica porquê."
+        },
+        "pt_BR": {
+          "t": "Relativos: que e onde",
+          "g": "Revise que e onde com exemplos portugueses.",
+          "p": [
+            "Os usos são iguais: a cidade onde nasci, o livro que comprei. Em Portugal com o possessivo: o meu livro.",
+            "Em que é preferido para tempo: o dia em que cheguei a Lisboa. Onde fica só para lugares.",
+            "O café onde costumo lanchar é uma frase bem portuguesa, com costumar e lanchar."
+          ],
+          "q": "Como é o bairro onde você mora? Descreva com onde e que.",
+          "c": "Escreva quatro frases sobre Portugal com que, onde e em que."
+        }
+      },
+      "target": {
+        "vocab": [
+          {
+            "w": "o livro que",
+            "ex": "Este é o livro que estou a ler."
+          },
+          {
+            "w": "a pessoa que",
+            "ex": "A pessoa que me ajudou era muito simpática."
+          },
+          {
+            "w": "a cidade onde",
+            "ex": "Braga é a cidade onde nasci."
+          },
+          {
+            "w": "o café onde",
+            "ex": "O café onde trabalho fica no centro."
+          },
+          {
+            "w": "o dia em que",
+            "ex": "Lembro-me do dia em que cheguei."
+          },
+          {
+            "w": "o que",
+            "ex": "O que eu quero é descansar."
+          }
+        ],
+        "gram": "Relativos: que (pessoas e coisas: o livro que li), onde (lugares: a casa onde vivo), em que (tempo: o dia em que)."
+      }
+    },
+    {
+      "d": 116,
+      "lv": "A2",
+      "i18n": {
+        "en": {
+          "t": "Quem and o que as relatives",
+          "g": "Use quem with prepositions and o que for whole ideas.",
+          "p": [
+            "After a preposition, quem refers to people: a pessoa com quem falei (the person I spoke with).",
+            "O que means what or which (idea): O que eu quero é... (What I want is...). Faz o que quiseres.",
+            "Also: a amiga de quem te falei (the friend I told you about), o colega para quem trabalho."
+          ],
+          "q": "Who is a person you love talking to? Describe them with com quem.",
+          "c": "Write four sentences: two with com/de/para quem and two starting O que eu mais gosto é..."
+        },
+        "de": {
+          "t": "Quem und o que als Relativpronomen",
+          "g": "Du verwendest quem nach Präpositionen und o que für ganze Ideen.",
+          "p": [
+            "Nach einer Präposition steht quem für Personen: a pessoa com quem falei (die Person, mit der ich sprach).",
+            "O que heißt was (Idee): O que eu quero é... (Was ich will, ist...). Faz o que quiseres.",
+            "Auch: a amiga de quem te falei (die Freundin, von der ich dir erzählt habe), o colega para quem trabalho."
+          ],
+          "q": "Mit wem sprichst du besonders gern? Beschreib die Person mit com quem.",
+          "c": "Schreib vier Sätze: zwei mit com/de/para quem und zwei, die mit O que eu mais gosto é... beginnen."
+        },
+        "es": {
+          "t": "Quem y o que como relativos",
+          "g": "Usar quem tras preposición y o que para ideas completas.",
+          "p": [
+            "Tras preposición, quem se refiere a personas: a pessoa com quem falei (la persona con quien hablé).",
+            "O que es lo que: O que eu quero é... (lo que quiero es...). Faz o que quiseres.",
+            "También: a amiga de quem te falei (la amiga de quien te hablé), o colega para quem trabalho."
+          ],
+          "q": "¿Con quién te encanta hablar? Descríbelo con com quem.",
+          "c": "Escribe cuatro frases: dos con com/de/para quem y dos que empiecen O que eu mais gosto é..."
+        },
+        "fr": {
+          "t": "Quem et o que comme relatifs",
+          "g": "Utiliser quem après une préposition et o que pour une idée entière.",
+          "p": [
+            "Après une préposition, quem désigne des personnes : a pessoa com quem falei (la personne avec qui j'ai parlé).",
+            "O que veut dire ce que : O que eu quero é... (Ce que je veux, c'est...). Faz o que quiseres.",
+            "Aussi : a amiga de quem te falei (l'amie dont je t'ai parlé), o colega para quem trabalho."
+          ],
+          "q": "Avec qui adores-tu parler ? Décris cette personne avec com quem.",
+          "c": "Écris quatre phrases : deux avec com/de/para quem et deux qui commencent par O que eu mais gosto é..."
+        },
+        "it": {
+          "t": "Quem e o que come relativi",
+          "g": "Usi quem dopo preposizione e o que per idee intere.",
+          "p": [
+            "Dopo una preposizione, quem indica persone: a pessoa com quem falei (la persona con cui ho parlato).",
+            "O que vuol dire quello che: O que eu quero é... (Quello che voglio è...). Faz o que quiseres.",
+            "Anche: a amiga de quem te falei (l'amica di cui ti ho parlato), o colega para quem trabalho."
+          ],
+          "q": "Con chi ami parlare? Descrivi quella persona con com quem.",
+          "c": "Scrivi quattro frasi: due con com/de/para quem e due che iniziano con O que eu mais gosto é..."
+        },
+        "pt": {
+          "t": "Quem e o que como relativos",
+          "g": "Revê quem com preposição e o que como relativo neutro.",
+          "p": [
+            "Na fala, muitos dizem a pessoa que falei com ela; na escrita cuidada, a pessoa com quem falei.",
+            "O que retoma uma ideia inteira: Chegou tarde, o que me irritou. Muitos estrangeiros usam que sozinho.",
+            "De quem pode ser relativo (a amiga de quem te falei) ou interrogativo (De quem é isto?)."
+          ],
+          "q": "Achas que a forma com quem ainda é comum na tua fala do dia a dia?",
+          "c": "Reescreve três frases coloquiais com relativos mal construídos na forma cuidada."
+        },
+        "pt_BR": {
+          "t": "Quem e o que como relativos",
+          "g": "Revise quem e o que, iguais nos dois países, com exemplos portugueses.",
+          "p": [
+            "A pessoa com quem falei e o colega de quem gosto são estruturas iguais no Brasil e em Portugal.",
+            "O que eu mais gosto em Lisboa é... é uma ótima frase para conversas com portugueses.",
+            "Em Portugal ouve-se muito O que é que tu queres?, com o típico é que nas perguntas."
+          ],
+          "q": "O que você mais gosta em Portugal, ou gostaria de conhecer?",
+          "c": "Escreva quatro frases com com quem, de quem e O que eu mais gosto é..."
+        }
+      },
+      "target": {
+        "vocab": [
+          {
+            "w": "com quem",
+            "ex": "A amiga com quem viajei é de Lisboa."
+          },
+          {
+            "w": "de quem",
+            "ex": "Este é o professor de quem te falei."
+          },
+          {
+            "w": "para quem",
+            "ex": "A empresa para quem trabalho é pequena."
+          },
+          {
+            "w": "o que eu quero",
+            "ex": "O que eu quero é ir à praia."
+          },
+          {
+            "w": "o que mais gosto",
+            "ex": "O que mais gosto em Lisboa é a luz."
+          },
+          {
+            "w": "faz o que quiseres",
+            "ex": "Faz o que quiseres, eu concordo."
+          }
+        ],
+        "gram": "Quem com preposição para pessoas: com quem, de quem, para quem. O que = aquilo que: O que eu quero é..."
+      }
+    },
+    {
+      "d": 117,
+      "lv": "A2",
+      "i18n": {
+        "en": {
+          "t": "Review: past stories",
+          "g": "Tell a story using both perfeito and imperfeito.",
+          "p": [
+            "Imperfeito for the background: Era sábado, estava sol e eu estava a passear na baixa.",
+            "Perfeito for the events: De repente, encontrei um amigo antigo. Fomos tomar um café.",
+            "Use connectors: quando, enquanto, de repente, depois, no fim. Add how you felt: Fiquei tão contente!"
+          ],
+          "q": "Tell me about a nice surprise you had. What was happening, and what happened?",
+          "c": "Write a story of eight sentences mixing perfeito and imperfeito, with quando, de repente and no fim."
+        },
+        "de": {
+          "t": "Wiederholung: Geschichten aus der Vergangenheit",
+          "g": "Du erzählst eine Geschichte mit perfeito und imperfeito.",
+          "p": [
+            "Imperfeito für den Hintergrund: Era sábado, estava sol e eu estava a passear na baixa.",
+            "Perfeito für die Ereignisse: De repente, encontrei um amigo antigo. Fomos tomar um café.",
+            "Konnektoren: quando, enquanto, de repente, depois, no fim. Gefühl dazu: Fiquei tão contente!"
+          ],
+          "q": "Erzähl mir von einer schönen Überraschung. Was war gerade los, und was ist passiert?",
+          "c": "Schreib eine Geschichte mit acht Sätzen, perfeito und imperfeito gemischt, mit quando, de repente und no fim."
+        },
+        "es": {
+          "t": "Repaso: historias en pasado",
+          "g": "Contar una historia con perfeito e imperfeito.",
+          "p": [
+            "Imperfeito para el fondo: Era sábado, estava sol e eu estava a passear na baixa.",
+            "Perfeito para los hechos: De repente, encontrei um amigo antigo. Fomos tomar um café.",
+            "Conectores: quando, enquanto, de repente, depois, no fim. Añade cómo te sentiste: Fiquei tão contente!"
+          ],
+          "q": "Cuéntame una sorpresa bonita. ¿Qué estaba pasando y qué pasó?",
+          "c": "Escribe una historia de ocho frases mezclando perfeito e imperfeito, con quando, de repente y no fim."
+        },
+        "fr": {
+          "t": "Révision : récits au passé",
+          "g": "Raconter une histoire avec perfeito et imperfeito.",
+          "p": [
+            "L'imperfeito pour le décor : Era sábado, estava sol e eu estava a passear na baixa.",
+            "Le perfeito pour les événements : De repente, encontrei um amigo antigo. Fomos tomar um café.",
+            "Connecteurs : quando, enquanto, de repente, depois, no fim. Ajoute ton ressenti : Fiquei tão contente!"
+          ],
+          "q": "Raconte-moi une belle surprise. Que se passait-il, et qu'est-il arrivé ?",
+          "c": "Écris une histoire de huit phrases mêlant perfeito et imperfeito, avec quando, de repente et no fim."
+        },
+        "it": {
+          "t": "Ripasso: storie al passato",
+          "g": "Racconti una storia con perfeito e imperfeito.",
+          "p": [
+            "Imperfeito per lo sfondo: Era sábado, estava sol e eu estava a passear na baixa.",
+            "Perfeito per gli eventi: De repente, encontrei um amigo antigo. Fomos tomar um café.",
+            "Connettivi: quando, enquanto, de repente, depois, no fim. Aggiungi cosa hai provato: Fiquei tão contente!"
+          ],
+          "q": "Raccontami una bella sorpresa. Cosa stava succedendo, e cosa è successo?",
+          "c": "Scrivi una storia di otto frasi mescolando perfeito e imperfeito, con quando, de repente e no fim."
+        },
+        "pt": {
+          "t": "Revisão: histórias no passado",
+          "g": "Revê como combinar perfeito e imperfeito numa narrativa viva.",
+          "p": [
+            "Uma história equilibrada alterna cenário (imperfeito) e ação (perfeito); demasiado de um só tempo cansa.",
+            "Ficar + adjetivo exprime reações: fiquei surpreendido, ficámos contentes. Muito útil para estrangeiros.",
+            "Ouvir é tão importante como contar: reage com A sério? E depois? Que giro! para incentivar quem aprende."
+          ],
+          "q": "Qual é a história engraçada que mais gostas de contar aos amigos?",
+          "c": "Conta uma história curta em oito frases e assinala com cores diferentes os verbos de cenário e de ação."
+        },
+        "pt_BR": {
+          "t": "Revisão: histórias no passado",
+          "g": "Conte uma história com perfeito, imperfeito e estar a.",
+          "p": [
+            "Cenário com estar a: Estava a passear na Baixa quando encontrei um amigo antigo.",
+            "Reações à portuguesa: A sério? Que giro! Fiquei mesmo contente! E depois?",
+            "A Baixa é o centro histórico de Lisboa; muitas histórias portuguesas começam lá."
+          ],
+          "q": "Que surpresa boa aconteceu com você recentemente? Conte com estava a e de repente.",
+          "c": "Escreva uma história de oito frases com estava a, de repente, fiquei e A sério?"
+        }
+      },
+      "target": {
+        "vocab": [
+          {
+            "w": "de repente",
+            "ex": "De repente, começou a chover."
+          },
+          {
+            "w": "enquanto",
+            "ex": "Enquanto esperava, li um livro."
+          },
+          {
+            "w": "fiquei contente",
+            "ex": "Fiquei tão contente com a notícia!"
+          },
+          {
+            "w": "no fim",
+            "ex": "No fim, correu tudo bem."
+          },
+          {
+            "w": "encontrei",
+            "ex": "Encontrei um amigo antigo na rua."
+          },
+          {
+            "w": "a sério?",
+            "ex": "A sério? Que coincidência!"
+          }
+        ],
+        "gram": "Narrar: imperfeito para o cenário (estava a passear), perfeito para os acontecimentos (encontrei). Ficar + adjetivo: fiquei contente."
+      }
+    },
+    {
+      "d": 118,
+      "lv": "A2",
+      "i18n": {
+        "en": {
+          "t": "Shopping for clothes",
+          "g": "Talk about sizes, fitting rooms, returns and opinions on clothes.",
+          "p": [
+            "Sizes: Que tamanho veste? Visto o M. Shoes: Que número calça? Calço o 40.",
+            "Fitting room is o provador: Posso experimentar? Fica-me bem? (Does it suit me?) É apertado / largo.",
+            "Returns: Posso trocar? Queria devolver isto. Tem o talão? (Do you have the receipt?)"
+          ],
+          "q": "What do you like to wear at the weekend? Describe your favourite outfit.",
+          "c": "Write a shop dialogue: ask for your size, try it on, give an opinion and ask about exchanges."
+        },
+        "de": {
+          "t": "Kleidung kaufen",
+          "g": "Du sprichst über Größen, Umkleiden, Umtausch und Meinungen zu Kleidung.",
+          "p": [
+            "Größen: Que tamanho veste? Visto o M. Schuhe: Que número calça? Calço o 40.",
+            "Die Umkleide ist o provador: Posso experimentar? Fica-me bem? (Steht es mir?) É apertado / largo.",
+            "Umtausch: Posso trocar? Queria devolver isto. Tem o talão? (Haben Sie den Kassenbon?)"
+          ],
+          "q": "Was trägst du am Wochenende gern? Beschreib dein Lieblingsoutfit.",
+          "c": "Schreib einen Ladendialog: nach Größe fragen, anprobieren, Meinung sagen und nach Umtausch fragen."
+        },
+        "es": {
+          "t": "Comprar ropa",
+          "g": "Hablar de tallas, probadores, devoluciones y opinar sobre la ropa.",
+          "p": [
+            "Tallas: Que tamanho veste? Visto o M. Zapatos: Que número calça? Calço o 40.",
+            "El probador es o provador: Posso experimentar? Fica-me bem? (¿Me queda bien?) É apertado / largo.",
+            "Devoluciones: Posso trocar? Queria devolver isto. Tem o talão? (¿Tiene el tique?)"
+          ],
+          "q": "¿Qué te gusta llevar el fin de semana? Describe tu ropa favorita.",
+          "c": "Escribe un diálogo en una tienda: pide tu talla, pruébatela, opina y pregunta por cambios."
+        },
+        "fr": {
+          "t": "Acheter des vêtements",
+          "g": "Parler de tailles, cabines d'essayage, retours et donner ton avis.",
+          "p": [
+            "Tailles : Que tamanho veste? Visto o M. Chaussures : Que número calça? Calço o 40.",
+            "La cabine, c'est o provador : Posso experimentar? Fica-me bem? (Ça me va ?) É apertado / largo.",
+            "Retours : Posso trocar? Queria devolver isto. Tem o talão? (Vous avez le ticket ?)"
+          ],
+          "q": "Qu'aimes-tu porter le week-end ? Décris ta tenue préférée.",
+          "c": "Écris un dialogue en boutique : demande ta taille, essaie, donne ton avis et demande un échange."
+        },
+        "it": {
+          "t": "Comprare vestiti",
+          "g": "Parli di taglie, camerini, resi e opinioni sui vestiti.",
+          "p": [
+            "Taglie: Que tamanho veste? Visto o M. Scarpe: Que número calça? Calço o 40.",
+            "Il camerino è o provador: Posso experimentar? Fica-me bem? (Mi sta bene?) É apertado / largo.",
+            "Resi: Posso trocar? Queria devolver isto. Tem o talão? (Ha lo scontrino?)"
+          ],
+          "q": "Cosa ti piace indossare nel fine settimana? Descrivi il tuo outfit preferito.",
+          "c": "Scrivi un dialogo in negozio: chiedi la taglia, prova, dai un parere e chiedi del cambio."
+        },
+        "pt": {
+          "t": "Comprar roupa",
+          "g": "Revê o vocabulário das compras de roupa e expressões de opinião.",
+          "p": [
+            "Vestir e calçar distinguem roupa e sapatos: Que tamanho veste? Que número calça? Útil para estrangeiros.",
+            "Fica-te a matar! e Assenta-te bem! são elogios portugueses que surpreendem quem aprende.",
+            "Talão em Portugal, nota fiscal ou recibo no Brasil; saldos em Portugal, liquidação no Brasil."
+          ],
+          "q": "Que elogio costumas fazer quando uma roupa fica bem a um amigo?",
+          "c": "Escreve cinco frases de opinião sobre roupa, do elogio à crítica gentil."
+        },
+        "pt_BR": {
+          "t": "Comprar roupa",
+          "g": "Revise o vocabulário de roupa usado em Portugal.",
+          "p": [
+            "Camisola é suéter ou camiseta, casaco é jaqueta, sapatilhas são tênis e fato é terno.",
+            "O provador é igual; Fica-me bem? é a forma portuguesa de perguntar Fica bem em mim?",
+            "Saldos são liquidações, e o talão é o comprovante de compra pedido para trocas."
+          ],
+          "q": "Que roupa você compraria primeiro numa loja em Lisboa, dita à portuguesa?",
+          "c": "Escreva um diálogo de loja com provador, fica-me bem?, talão e saldos."
+        }
+      },
+      "target": {
+        "vocab": [
+          {
+            "w": "que tamanho veste?",
+            "ex": "Que tamanho veste? O M."
+          },
+          {
+            "w": "o provador",
+            "ex": "O provador é ao fundo, à direita."
+          },
+          {
+            "w": "fica-me bem?",
+            "ex": "Este casaco fica-me bem?"
+          },
+          {
+            "w": "apertado",
+            "ex": "As calças estão um bocado apertadas."
+          },
+          {
+            "w": "trocar",
+            "ex": "Posso trocar este vestido?"
+          },
+          {
+            "w": "o talão",
+            "ex": "Guarde o talão para as trocas."
+          }
+        ],
+        "gram": "Roupa: vestir (tamanho), calçar (número). Opinião: Fica-me bem? Fica-te bem! Está apertado/largo. Trocar, devolver."
+      }
+    },
+    {
+      "d": 119,
+      "lv": "A2",
+      "i18n": {
+        "en": {
+          "t": "At the market",
+          "g": "Buy fruit and vegetables and ask about ripeness.",
+          "p": [
+            "Quantities: um quilo de tomates, meio quilo de cerejas, meia dúzia de ovos, um molho de coentros.",
+            "Ask: Está maduro? (Is it ripe?) São da época? (Are they in season?) Pode escolher-me uns bons?",
+            "Finish: Mais alguma coisa? Não, é tudo. Quanto é? Brazilians call the street market a feira."
+          ],
+          "q": "What fruit or vegetable do you always buy, and how much?",
+          "c": "Write a market dialogue: ask for three items with quantities, check ripeness and pay."
+        },
+        "de": {
+          "t": "Auf dem Markt",
+          "g": "Du kaufst Obst und Gemüse und fragst, ob es reif ist.",
+          "p": [
+            "Mengen: um quilo de tomates, meio quilo de cerejas, meia dúzia de ovos, um molho de coentros.",
+            "Fragen: Está maduro? (Ist es reif?) São da época? (Sind sie aus der Saison?) Pode escolher-me uns bons?",
+            "Abschluss: Mais alguma coisa? Não, é tudo. Quanto é? In Brasilien heißt der Straßenmarkt a feira."
+          ],
+          "q": "Welches Obst oder Gemüse kaufst du immer, und wie viel?",
+          "c": "Schreib einen Marktdialog: drei Dinge mit Mengen bestellen, Reife prüfen und bezahlen."
+        },
+        "es": {
+          "t": "En el mercado",
+          "g": "Comprar fruta y verdura y preguntar si está madura.",
+          "p": [
+            "Cantidades: um quilo de tomates, meio quilo de cerejas, meia dúzia de ovos, um molho de coentros.",
+            "Pregunta: Está maduro? São da época? (¿Son de temporada?) Pode escolher-me uns bons?",
+            "Al final: Mais alguma coisa? Não, é tudo. Quanto é? En Brasil el mercadillo es a feira."
+          ],
+          "q": "¿Qué fruta o verdura compras siempre y cuánta?",
+          "c": "Escribe un diálogo en el mercado: pide tres cosas con cantidades, pregunta si están maduras y paga."
+        },
+        "fr": {
+          "t": "Au marché",
+          "g": "Acheter fruits et légumes et demander s'ils sont mûrs.",
+          "p": [
+            "Quantités : um quilo de tomates, meio quilo de cerejas, meia dúzia de ovos, um molho de coentros.",
+            "Demande : Está maduro? (C'est mûr ?) São da época? (C'est de saison ?) Pode escolher-me uns bons?",
+            "Pour finir : Mais alguma coisa? Não, é tudo. Quanto é? Au Brésil, le marché de rue s'appelle a feira."
+          ],
+          "q": "Quel fruit ou légume achètes-tu toujours, et en quelle quantité ?",
+          "c": "Écris un dialogue au marché : demande trois produits avec quantités, vérifie s'ils sont mûrs et paie."
+        },
+        "it": {
+          "t": "Al mercato",
+          "g": "Compri frutta e verdura e chiedi se è matura.",
+          "p": [
+            "Quantità: um quilo de tomates, meio quilo de cerejas, meia dúzia de ovos, um molho de coentros.",
+            "Chiedi: Está maduro? São da época? (Sono di stagione?) Pode escolher-me uns bons?",
+            "Per finire: Mais alguma coisa? Não, é tudo. Quanto é? In Brasile il mercato rionale è a feira."
+          ],
+          "q": "Quale frutta o verdura compri sempre, e quanta?",
+          "c": "Scrivi un dialogo al mercato: chiedi tre prodotti con le quantità, controlla se sono maturi e paga."
+        },
+        "pt": {
+          "t": "No mercado",
+          "g": "Revê o vocabulário do mercado e as expressões dos vendedores.",
+          "p": [
+            "Os vendedores perguntam Mais alguma coisa? e dizem Vai levar? ou Está fresquinho! Linguagem viva para estrangeiros.",
+            "Um molho de coentros, uma cabeça de alho, um ramo de salsa: cada produto tem a sua medida.",
+            "Mercado municipal em Portugal, feira livre no Brasil; ambos são ótimos para praticar português real."
+          ],
+          "q": "Que mercado português recomendarias a um estrangeiro e porquê?",
+          "c": "Escreve um diálogo de mercado com seis falas, incluindo expressões típicas de um vendedor."
+        },
+        "pt_BR": {
+          "t": "No mercado",
+          "g": "Revise o vocabulário de mercado usado em Portugal.",
+          "p": [
+            "A feira livre é o mercado municipal em Portugal; o Mercado do Bolhão no Porto é famoso.",
+            "Um molho de coentros é um maço de coentro; os portugueses usam muito coentros na cozinha.",
+            "Mais alguma coisa? Não, é tudo, obrigado. Fiquem bem! é uma despedida simpática."
+          ],
+          "q": "O que você compraria primeiro num mercado português?",
+          "c": "Escreva um diálogo de mercado com meia dúzia, um molho de, está maduro? e é tudo."
+        }
+      },
+      "target": {
+        "vocab": [
+          {
+            "w": "um quilo de",
+            "ex": "Queria um quilo de laranjas."
+          },
+          {
+            "w": "meia dúzia de",
+            "ex": "Meia dúzia de ovos, por favor."
+          },
+          {
+            "w": "está maduro?",
+            "ex": "Este melão está maduro?"
+          },
+          {
+            "w": "da época",
+            "ex": "As cerejas já são da época?"
+          },
+          {
+            "w": "mais alguma coisa?",
+            "ex": "Mais alguma coisa? Não, é tudo."
+          },
+          {
+            "w": "um molho de",
+            "ex": "Dê-me também um molho de coentros."
+          }
+        ],
+        "gram": "Quantidades + de: um quilo de, meio quilo de, meia dúzia de, um molho de. Perguntas: Está maduro? Quanto é?"
+      }
+    },
+    {
+      "d": 120,
+      "lv": "A2",
+      "i18n": {
+        "en": {
+          "t": "Money and banks",
+          "g": "Withdraw money, pay by card and learn basic bank words.",
+          "p": [
+            "In Portugal the cash machine is the Multibanco; Brazil says caixa eletrônico. Levantar dinheiro means to withdraw cash.",
+            "Pay: Posso pagar com cartão? Só aceitamos dinheiro. Tem troco? (Do you have change?)",
+            "Bank words: a conta (account), o banco, transferir, o NIB/IBAN, a moeda, a nota."
+          ],
+          "q": "Do you prefer paying by card or in cash? Why?",
+          "c": "Write a dialogue: ask where the Multibanco is, then pay in a shop and ask for change."
+        },
+        "de": {
+          "t": "Geld und Banken",
+          "g": "Du hebst Geld ab, zahlst mit Karte und lernst Bankwörter.",
+          "p": [
+            "In Portugal heißt der Geldautomat Multibanco; in Brasilien caixa eletrônico. Levantar dinheiro heißt Geld abheben.",
+            "Bezahlen: Posso pagar com cartão? Só aceitamos dinheiro. Tem troco? (Haben Sie Wechselgeld?)",
+            "Bankwörter: a conta (Konto), o banco, transferir, o NIB/IBAN, a moeda (Münze), a nota (Schein)."
+          ],
+          "q": "Zahlst du lieber mit Karte oder bar? Warum?",
+          "c": "Schreib einen Dialog: nach dem Multibanco fragen, dann im Laden zahlen und nach Wechselgeld fragen."
+        },
+        "es": {
+          "t": "Dinero y bancos",
+          "g": "Sacar dinero, pagar con tarjeta y aprender palabras del banco.",
+          "p": [
+            "En Portugal el cajero es el Multibanco; en Brasil, caixa eletrônico. Levantar dinheiro es sacar dinero.",
+            "Pagar: Posso pagar com cartão? Só aceitamos dinheiro. Tem troco? (¿Tiene cambio?)",
+            "Palabras: a conta (cuenta), o banco, transferir, o NIB/IBAN, a moeda, a nota (billete)."
+          ],
+          "q": "¿Prefieres pagar con tarjeta o en efectivo? ¿Por qué?",
+          "c": "Escribe un diálogo: pregunta dónde está el Multibanco y luego paga en una tienda y pide cambio."
+        },
+        "fr": {
+          "t": "L'argent et la banque",
+          "g": "Retirer de l'argent, payer par carte et apprendre des mots de banque.",
+          "p": [
+            "Au Portugal, le distributeur est le Multibanco ; au Brésil, caixa eletrônico. Levantar dinheiro = retirer de l'argent.",
+            "Payer : Posso pagar com cartão? Só aceitamos dinheiro. Tem troco? (Vous avez de la monnaie ?)",
+            "Mots : a conta (compte), o banco, transferir, o NIB/IBAN, a moeda (pièce), a nota (billet)."
+          ],
+          "q": "Préfères-tu payer par carte ou en espèces ? Pourquoi ?",
+          "c": "Écris un dialogue : demande où est le Multibanco, puis paie dans un magasin et demande la monnaie."
+        },
+        "it": {
+          "t": "Soldi e banche",
+          "g": "Prelevi soldi, paghi con la carta e impari parole della banca.",
+          "p": [
+            "In Portogallo il bancomat è il Multibanco; in Brasile caixa eletrônico. Levantar dinheiro vuol dire prelevare.",
+            "Pagare: Posso pagar com cartão? Só aceitamos dinheiro. Tem troco? (Ha il resto?)",
+            "Parole: a conta (conto), o banco, transferir, o NIB/IBAN, a moeda, a nota (banconota)."
+          ],
+          "q": "Preferisci pagare con la carta o in contanti? Perché?",
+          "c": "Scrivi un dialogo: chiedi dov'è il Multibanco, poi paga in un negozio e chiedi il resto."
+        },
+        "pt": {
+          "t": "Dinheiro e bancos",
+          "g": "Revê o vocabulário bancário e o que explicar a quem chega a Portugal.",
+          "p": [
+            "O Multibanco é uma rede que faz muito mais do que levantar dinheiro: pagar contas, carregar o telemóvel.",
+            "Levantar dinheiro em Portugal, sacar dinheiro no Brasil; troco é igual nos dois países.",
+            "O NIF, número de identificação fiscal, é pedido em muitas compras e é essencial para quem vive cá."
+          ],
+          "q": "O que explicarias primeiro a um estrangeiro sobre pagamentos em Portugal?",
+          "c": "Escreve um pequeno guia de cinco frases sobre dinheiro em Portugal para um amigo estrangeiro."
+        },
+        "pt_BR": {
+          "t": "Dinheiro e bancos",
+          "g": "Revise o vocabulário de dinheiro usado em Portugal.",
+          "p": [
+            "O caixa eletrônico é o Multibanco, e sacar dinheiro é levantar dinheiro.",
+            "Com contribuinte? pergunta-se nas lojas: é o NIF, parecido com o CPF brasileiro.",
+            "O MB WAY é muito usado em Portugal para pagar e transferir pelo telemóvel."
+          ],
+          "q": "Como você pagaria um café em Lisboa: com cartão, MB WAY ou dinheiro?",
+          "c": "Escreva um diálogo com Multibanco, levantar dinheiro, troco e contribuinte."
+        }
+      },
+      "target": {
+        "vocab": [
+          {
+            "w": "o Multibanco",
+            "ex": "Há um Multibanco aqui perto?"
+          },
+          {
+            "w": "levantar dinheiro",
+            "ex": "Preciso de levantar dinheiro."
+          },
+          {
+            "w": "pagar com cartão",
+            "ex": "Posso pagar com cartão?"
+          },
+          {
+            "w": "o troco",
+            "ex": "Aqui tem o seu troco."
+          },
+          {
+            "w": "a conta",
+            "ex": "Abri uma conta no banco."
+          },
+          {
+            "w": "a nota",
+            "ex": "Só tenho uma nota de vinte euros."
+          }
+        ],
+        "gram": "Dinheiro: levantar dinheiro (Portugal) / sacar (Brasil); pagar com cartão ou em dinheiro; Tem troco? Com contribuinte?"
+      }
+    }
+  ]
+}

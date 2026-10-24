@@ -1,0 +1,1305 @@
+{
+"topic": "series",
+"questions": [
+{
+"id": "series-001",
+"lv": "any",
+"i18n": {
+"en": "What is your all-time favourite TV series, and why?",
+"de": "Was ist deine Lieblingsserie aller Zeiten, und warum?",
+"es": "¿Cuál es tu serie favorita de todos los tiempos y por qué?",
+"fr": "Quelle est ta série préférée de tous les temps, et pourquoi ?",
+"it": "Qual è la tua serie TV preferita di sempre, e perché?",
+"pt": "Qual é a tua série preferida de sempre, e porquê?",
+"pt_BR": "Qual é a sua série favorita de todos os tempos, e por quê?"
+}
+},
+{
+"id": "series-002",
+"lv": "any",
+"i18n": {
+"en": "Do you prefer binge-watching a whole season or one episode at a time?",
+"de": "Schaust du lieber eine ganze Staffel am Stück oder eine Folge nach der anderen?",
+"es": "¿Prefieres maratonear una temporada entera o ver un episodio cada vez?",
+"fr": "Préfères-tu enchaîner une saison entière ou regarder un épisode à la fois ?",
+"it": "Preferisci guardare un'intera stagione di fila o un episodio alla volta?",
+"pt": "Preferes ver uma temporada inteira de seguida ou um episódio de cada vez?",
+"pt_BR": "Você prefere maratonar uma temporada inteira ou ver um episódio por vez?"
+}
+},
+{
+"id": "series-003",
+"lv": "any",
+"i18n": {
+"en": "Which TV genre do you enjoy the most?",
+"de": "Welches Seriengenre magst du am liebsten?",
+"es": "¿Qué género de series disfrutas más?",
+"fr": "Quel genre de série préfères-tu ?",
+"it": "Quale genere di serie ti piace di più?",
+"pt": "Que género de séries gostas mais?",
+"pt_BR": "Qual gênero de série você mais curte?"
+}
+},
+{
+"id": "series-004",
+"lv": "any",
+"i18n": {
+"en": "What series did you love watching as a child?",
+"de": "Welche Serie hast du als Kind besonders gern geschaut?",
+"es": "¿Qué serie te encantaba ver de pequeño?",
+"fr": "Quelle série adorais-tu regarder quand tu étais enfant ?",
+"it": "Quale serie adoravi guardare da bambino?",
+"pt": "Que série adoravas ver quando eras criança?",
+"pt_BR": "Que série você amava assistir quando era criança?"
+}
+},
+{
+"id": "series-005",
+"lv": "any",
+"i18n": {
+"en": "Is there a series you have watched more than once? What brings you back?",
+"de": "Gibt es eine Serie, die du mehr als einmal gesehen hast? Was zieht dich zurück?",
+"es": "¿Hay alguna serie que hayas visto más de una vez? ¿Qué te hace volver?",
+"fr": "Y a-t-il une série que tu as vue plusieurs fois ? Qu'est-ce qui te fait revenir ?",
+"it": "C'è una serie che hai visto più di una volta? Cosa ti fa tornare?",
+"pt": "Há alguma série que já viste mais do que uma vez? O que te faz voltar?",
+"pt_BR": "Tem alguma série que você já viu mais de uma vez? O que te faz voltar?"
+}
+},
+{
+"id": "series-006",
+"lv": "any",
+"i18n": {
+"en": "Which TV character would you love to have as a friend?",
+"de": "Welche Serienfigur hättest du gern als Freund oder Freundin?",
+"es": "¿A qué personaje de serie te encantaría tener como amigo?",
+"fr": "Quel personnage de série aimerais-tu avoir comme ami ?",
+"it": "Quale personaggio di una serie vorresti avere come amico?",
+"pt": "Que personagem de série gostavas de ter como amigo?",
+"pt_BR": "Qual personagem de série você adoraria ter como amigo?"
+}
+},
+{
+"id": "series-007",
+"lv": "any",
+"i18n": {
+"en": "Do you watch foreign series with subtitles or dubbed?",
+"de": "Schaust du ausländische Serien mit Untertiteln oder synchronisiert?",
+"es": "¿Ves las series extranjeras con subtítulos o dobladas?",
+"fr": "Regardes-tu les séries étrangères en VO sous-titrée ou doublées ?",
+"it": "Guardi le serie straniere sottotitolate o doppiate?",
+"pt": "Vês séries estrangeiras com legendas ou dobradas?",
+"pt_BR": "Você assiste séries estrangeiras legendadas ou dubladas?"
+}
+},
+{
+"id": "series-008",
+"lv": "any",
+"i18n": {
+"en": "What theme song from a series do you still remember?",
+"de": "An welche Titelmelodie einer Serie erinnerst du dich noch?",
+"es": "¿Qué canción de cabecera de una serie todavía recuerdas?",
+"fr": "De quel générique de série te souviens-tu encore ?",
+"it": "Quale sigla di una serie ricordi ancora?",
+"pt": "De que genérico de série ainda te lembras?",
+"pt_BR": "De qual música de abertura de série você ainda se lembra?"
+}
+},
+{
+"id": "series-009",
+"lv": "any",
+"i18n": {
+"en": "Do you prefer comedies or dramas when you want to relax?",
+"de": "Magst du zum Entspannen lieber Comedys oder Dramen?",
+"es": "Para relajarte, ¿prefieres comedias o dramas?",
+"fr": "Pour te détendre, préfères-tu les comédies ou les drames ?",
+"it": "Per rilassarti preferisci le commedie o i drammi?",
+"pt": "Para relaxar, preferes comédias ou dramas?",
+"pt_BR": "Para relaxar, você prefere comédias ou dramas?"
+}
+},
+{
+"id": "series-010",
+"lv": "any",
+"i18n": {
+"en": "Who do you usually watch series with?",
+"de": "Mit wem schaust du normalerweise Serien?",
+"es": "¿Con quién sueles ver series?",
+"fr": "Avec qui regardes-tu les séries d'habitude ?",
+"it": "Con chi guardi di solito le serie?",
+"pt": "Com quem costumas ver séries?",
+"pt_BR": "Com quem você costuma assistir séries?"
+}
+},
+{
+"id": "series-011",
+"lv": "any",
+"i18n": {
+"en": "What is your favourite time of day to watch a series?",
+"de": "Zu welcher Tageszeit schaust du am liebsten Serien?",
+"es": "¿A qué hora del día prefieres ver una serie?",
+"fr": "À quel moment de la journée préfères-tu regarder une série ?",
+"it": "In quale momento della giornata preferisci guardare una serie?",
+"pt": "A que hora do dia preferes ver uma série?",
+"pt_BR": "Qual é o seu horário favorito para assistir uma série?"
+}
+},
+{
+"id": "series-012",
+"lv": "any",
+"i18n": {
+"en": "How do you usually decide which series to start next?",
+"de": "Wie entscheidest du normalerweise, welche Serie du als Nächstes anfängst?",
+"es": "¿Cómo sueles decidir qué serie empezar después?",
+"fr": "Comment choisis-tu en général ta prochaine série ?",
+"it": "Come decidi di solito quale serie iniziare dopo?",
+"pt": "Como costumas decidir que série começar a seguir?",
+"pt_BR": "Como você costuma decidir qual série começar depois?"
+}
+},
+{
+"id": "series-013",
+"lv": "any",
+"i18n": {
+"en": "Which series would you recommend to someone visiting your country?",
+"de": "Welche Serie würdest du jemandem empfehlen, der dein Land besucht?",
+"es": "¿Qué serie recomendarías a alguien que visita tu país?",
+"fr": "Quelle série recommanderais-tu à quelqu'un qui visite ton pays ?",
+"it": "Quale serie consiglieresti a chi visita il tuo paese?",
+"pt": "Que série recomendarias a alguém que visita o teu país?",
+"pt_BR": "Que série você recomendaria a alguém que visita o seu país?"
+}
+},
+{
+"id": "series-014",
+"lv": "any",
+"i18n": {
+"en": "Have you ever watched a series from a country you knew little about?",
+"de": "Hast du schon mal eine Serie aus einem Land geschaut, über das du wenig wusstest?",
+"es": "¿Alguna vez has visto una serie de un país que conocías poco?",
+"fr": "As-tu déjà regardé une série d'un pays que tu connaissais mal ?",
+"it": "Hai mai guardato una serie di un paese che conoscevi poco?",
+"pt": "Já viste uma série de um país que conhecias mal?",
+"pt_BR": "Você já assistiu uma série de um país que conhecia pouco?"
+}
+},
+{
+"id": "series-015",
+"lv": "any",
+"i18n": {
+"en": "What makes you stop watching a series halfway through?",
+"de": "Was bringt dich dazu, eine Serie mittendrin abzubrechen?",
+"es": "¿Qué te hace dejar una serie a la mitad?",
+"fr": "Qu'est-ce qui te fait abandonner une série en cours de route ?",
+"it": "Cosa ti fa abbandonare una serie a metà?",
+"pt": "O que te leva a desistir de uma série a meio?",
+"pt_BR": "O que faz você largar uma série no meio?"
+}
+},
+{
+"id": "series-016",
+"lv": "any",
+"i18n": {
+"en": "Which series has the most memorable ending for you?",
+"de": "Welche Serie hat für dich das unvergesslichste Ende?",
+"es": "¿Qué serie tiene para ti el final más memorable?",
+"fr": "Quelle série a pour toi la fin la plus mémorable ?",
+"it": "Quale serie ha per te il finale più memorabile?",
+"pt": "Que série tem, para ti, o final mais marcante?",
+"pt_BR": "Qual série tem, para você, o final mais marcante?"
+}
+},
+{
+"id": "series-017",
+"lv": "any",
+"i18n": {
+"en": "Do you enjoy cozy comfort series? Which one is yours?",
+"de": "Magst du gemütliche Wohlfühlserien? Welche ist deine?",
+"es": "¿Te gustan las series reconfortantes? ¿Cuál es la tuya?",
+"fr": "Aimes-tu les séries doudou ? Laquelle est la tienne ?",
+"it": "Ti piacciono le serie comfort? Qual è la tua?",
+"pt": "Gostas de séries reconfortantes? Qual é a tua?",
+"pt_BR": "Você curte séries aconchegantes? Qual é a sua?"
+}
+},
+{
+"id": "series-018",
+"lv": "any",
+"i18n": {
+"en": "Would you rather watch a long series or a short miniseries?",
+"de": "Schaust du lieber eine lange Serie oder eine kurze Miniserie?",
+"es": "¿Prefieres una serie larga o una miniserie corta?",
+"fr": "Préfères-tu une longue série ou une courte mini-série ?",
+"it": "Preferisci una serie lunga o una breve miniserie?",
+"pt": "Preferes uma série longa ou uma minissérie curta?",
+"pt_BR": "Você prefere uma série longa ou uma minissérie curta?"
+}
+},
+{
+"id": "series-019",
+"lv": "any",
+"i18n": {
+"en": "What is a funny scene from a series that still makes you laugh?",
+"de": "Welche lustige Serienszene bringt dich immer noch zum Lachen?",
+"es": "¿Qué escena divertida de una serie todavía te hace reír?",
+"fr": "Quelle scène drôle d'une série te fait encore rire ?",
+"it": "Quale scena divertente di una serie ti fa ancora ridere?",
+"pt": "Que cena engraçada de uma série ainda te faz rir?",
+"pt_BR": "Qual cena engraçada de uma série ainda te faz rir?"
+}
+},
+{
+"id": "series-020",
+"lv": "any",
+"i18n": {
+"en": "Do you like animated series? Which ones have you enjoyed?",
+"de": "Magst du Animationsserien? Welche haben dir gefallen?",
+"es": "¿Te gustan las series animadas? ¿Cuáles has disfrutado?",
+"fr": "Aimes-tu les séries animées ? Lesquelles as-tu appréciées ?",
+"it": "Ti piacciono le serie animate? Quali ti sono piaciute?",
+"pt": "Gostas de séries de animação? Quais é que te agradaram?",
+"pt_BR": "Você gosta de séries animadas? Quais você curtiu?"
+}
+},
+{
+"id": "series-021",
+"lv": "any",
+"i18n": {
+"en": "Which series do you think everyone should watch at least once?",
+"de": "Welche Serie sollte deiner Meinung nach jeder einmal gesehen haben?",
+"es": "¿Qué serie crees que todo el mundo debería ver al menos una vez?",
+"fr": "Quelle série tout le monde devrait-il voir au moins une fois, selon toi ?",
+"it": "Quale serie secondo te tutti dovrebbero vedere almeno una volta?",
+"pt": "Que série achas que toda a gente devia ver pelo menos uma vez?",
+"pt_BR": "Qual série você acha que todo mundo deveria ver pelo menos uma vez?"
+}
+},
+{
+"id": "series-022",
+"lv": "any",
+"i18n": {
+"en": "Have you ever learned something new from watching a series?",
+"de": "Hast du schon mal etwas Neues durch eine Serie gelernt?",
+"es": "¿Alguna vez has aprendido algo nuevo viendo una serie?",
+"fr": "As-tu déjà appris quelque chose de nouveau grâce à une série ?",
+"it": "Hai mai imparato qualcosa di nuovo guardando una serie?",
+"pt": "Já aprendeste algo novo a ver uma série?",
+"pt_BR": "Você já aprendeu algo novo assistindo uma série?"
+}
+},
+{
+"id": "series-023",
+"lv": "any",
+"i18n": {
+"en": "How do you feel about spoilers? Do they bother you?",
+"de": "Was hältst du von Spoilern? Stören sie dich?",
+"es": "¿Qué opinas de los spoilers? ¿Te molestan?",
+"fr": "Que penses-tu des spoilers ? Ils te dérangent ?",
+"it": "Cosa pensi degli spoiler? Ti danno fastidio?",
+"pt": "O que achas dos spoilers? Incomodam-te?",
+"pt_BR": "O que você acha de spoilers? Eles te incomodam?"
+}
+},
+{
+"id": "series-024",
+"lv": "any",
+"i18n": {
+"en": "Which series setting would you love to visit in real life?",
+"de": "Welchen Schauplatz einer Serie würdest du gern in echt besuchen?",
+"es": "¿Qué escenario de una serie te encantaría visitar en la vida real?",
+"fr": "Quel décor de série aimerais-tu visiter en vrai ?",
+"it": "Quale ambientazione di una serie vorresti visitare dal vivo?",
+"pt": "Que cenário de uma série gostavas de visitar na vida real?",
+"pt_BR": "Qual cenário de série você adoraria visitar na vida real?"
+}
+},
+{
+"id": "series-025",
+"lv": "any",
+"i18n": {
+"en": "Do you prefer series about everyday life or about other worlds?",
+"de": "Magst du lieber Serien über den Alltag oder über andere Welten?",
+"es": "¿Prefieres series sobre la vida cotidiana o sobre otros mundos?",
+"fr": "Préfères-tu les séries sur la vie quotidienne ou sur d'autres mondes ?",
+"it": "Preferisci serie sulla vita quotidiana o su altri mondi?",
+"pt": "Preferes séries sobre o dia a dia ou sobre outros mundos?",
+"pt_BR": "Você prefere séries sobre o dia a dia ou sobre outros mundos?"
+}
+},
+{
+"id": "series-026",
+"lv": "any",
+"i18n": {
+"en": "What do you usually snack on while watching a series?",
+"de": "Was knabberst du normalerweise beim Serienschauen?",
+"es": "¿Qué sueles picar mientras ves una serie?",
+"fr": "Que grignotes-tu d'habitude devant une série ?",
+"it": "Cosa sgranocchi di solito mentre guardi una serie?",
+"pt": "O que costumas petiscar enquanto vês uma série?",
+"pt_BR": "O que você costuma beliscar enquanto assiste uma série?"
+}
+},
+{
+"id": "series-027",
+"lv": "any",
+"i18n": {
+"en": "Is there a series you started because a friend recommended it?",
+"de": "Gibt es eine Serie, die du wegen einer Empfehlung von Freunden angefangen hast?",
+"es": "¿Hay alguna serie que empezaste porque te la recomendó un amigo?",
+"fr": "Y a-t-il une série que tu as commencée sur le conseil d'un ami ?",
+"it": "C'è una serie che hai iniziato perché un amico te l'ha consigliata?",
+"pt": "Há alguma série que começaste porque um amigo ta recomendou?",
+"pt_BR": "Tem alguma série que você começou porque um amigo recomendou?"
+}
+},
+{
+"id": "series-028",
+"lv": "any",
+"i18n": {
+"en": "Which TV family would you like to spend a holiday with?",
+"de": "Mit welcher Serienfamilie würdest du gern Urlaub machen?",
+"es": "¿Con qué familia de serie te gustaría pasar unas vacaciones?",
+"fr": "Avec quelle famille de série aimerais-tu passer des vacances ?",
+"it": "Con quale famiglia di una serie vorresti passare una vacanza?",
+"pt": "Com que família de série gostavas de passar umas férias?",
+"pt_BR": "Com qual família de série você gostaria de passar as férias?"
+}
+},
+{
+"id": "series-029",
+"lv": "any",
+"i18n": {
+"en": "Do you watch the opening credits or skip them?",
+"de": "Schaust du den Vorspann oder überspringst du ihn?",
+"es": "¿Ves la cabecera o te la saltas?",
+"fr": "Regardes-tu le générique ou le passes-tu ?",
+"it": "Guardi la sigla iniziale o la salti?",
+"pt": "Vês o genérico ou passas à frente?",
+"pt_BR": "Você assiste a abertura ou pula?"
+}
+},
+{
+"id": "series-030",
+"lv": "any",
+"i18n": {
+"en": "What kind of main character do you find most interesting?",
+"de": "Welche Art von Hauptfigur findest du am spannendsten?",
+"es": "¿Qué tipo de protagonista te parece más interesante?",
+"fr": "Quel genre de personnage principal trouves-tu le plus intéressant ?",
+"it": "Che tipo di protagonista trovi più interessante?",
+"pt": "Que tipo de protagonista achas mais interessante?",
+"pt_BR": "Que tipo de protagonista você acha mais interessante?"
+}
+},
+{
+"id": "series-031",
+"lv": "any",
+"i18n": {
+"en": "Have you ever watched a series to practise a foreign language?",
+"de": "Hast du schon mal eine Serie geschaut, um eine Fremdsprache zu üben?",
+"es": "¿Alguna vez has visto una serie para practicar un idioma?",
+"fr": "As-tu déjà regardé une série pour pratiquer une langue étrangère ?",
+"it": "Hai mai guardato una serie per esercitarti in una lingua straniera?",
+"pt": "Já viste uma série para praticar uma língua estrangeira?",
+"pt_BR": "Você já assistiu uma série para praticar um idioma?"
+}
+},
+{
+"id": "series-032",
+"lv": "any",
+"i18n": {
+"en": "Which series do you think has the best cast?",
+"de": "Welche Serie hat deiner Meinung nach die beste Besetzung?",
+"es": "¿Qué serie crees que tiene el mejor reparto?",
+"fr": "Quelle série a selon toi la meilleure distribution ?",
+"it": "Quale serie secondo te ha il cast migliore?",
+"pt": "Que série achas que tem o melhor elenco?",
+"pt_BR": "Qual série você acha que tem o melhor elenco?"
+}
+},
+{
+"id": "series-033",
+"lv": "any",
+"i18n": {
+"en": "Would you like to see a series made about your hometown? What would it be like?",
+"de": "Hättest du gern eine Serie über deine Heimatstadt? Wie wäre sie?",
+"es": "¿Te gustaría una serie sobre tu ciudad natal? ¿Cómo sería?",
+"fr": "Aimerais-tu une série sur ta ville natale ? À quoi ressemblerait-elle ?",
+"it": "Ti piacerebbe una serie sulla tua città natale? Come sarebbe?",
+"pt": "Gostavas de uma série sobre a tua terra natal? Como seria?",
+"pt_BR": "Você gostaria de uma série sobre a sua cidade natal? Como ela seria?"
+}
+},
+{
+"id": "series-034",
+"lv": "any",
+"i18n": {
+"en": "Do you enjoy reality or competition shows? Which ones?",
+"de": "Magst du Reality- oder Wettbewerbsshows? Welche?",
+"es": "¿Te gustan los realities o los concursos? ¿Cuáles?",
+"fr": "Aimes-tu la téléréalité ou les jeux de compétition ? Lesquels ?",
+"it": "Ti piacciono i reality o i talent? Quali?",
+"pt": "Gostas de reality shows ou programas de competição? Quais?",
+"pt_BR": "Você curte reality shows ou competições? Quais?"
+}
+},
+{
+"id": "series-035",
+"lv": "any",
+"i18n": {
+"en": "What series made you feel inspired or motivated?",
+"de": "Welche Serie hat dich inspiriert oder motiviert?",
+"es": "¿Qué serie te hizo sentir inspirado o motivado?",
+"fr": "Quelle série t'a inspiré ou motivé ?",
+"it": "Quale serie ti ha fatto sentire ispirato o motivato?",
+"pt": "Que série te fez sentir inspirado ou motivado?",
+"pt_BR": "Qual série fez você se sentir inspirado ou motivado?"
+}
+},
+{
+"id": "series-036",
+"lv": "any",
+"i18n": {
+"en": "Do you prefer watching on a big TV, a laptop or your phone?",
+"de": "Schaust du lieber auf einem großen Fernseher, dem Laptop oder dem Handy?",
+"es": "¿Prefieres ver series en una tele grande, en el portátil o en el móvil?",
+"fr": "Préfères-tu regarder sur une grande télé, un ordinateur ou ton téléphone ?",
+"it": "Preferisci guardare su una TV grande, sul portatile o sul telefono?",
+"pt": "Preferes ver numa televisão grande, no portátil ou no telemóvel?",
+"pt_BR": "Você prefere assistir numa TV grande, no notebook ou no celular?"
+}
+},
+{
+"id": "series-037",
+"lv": "any",
+"i18n": {
+"en": "Which series do you wish had one more season?",
+"de": "Welcher Serie hättest du gern noch eine Staffel gegönnt?",
+"es": "¿Qué serie te gustaría que tuviera una temporada más?",
+"fr": "Quelle série aurait mérité une saison de plus, selon toi ?",
+"it": "Quale serie vorresti avesse un'altra stagione?",
+"pt": "Que série gostavas que tivesse mais uma temporada?",
+"pt_BR": "Qual série você queria que tivesse mais uma temporada?"
+}
+},
+{
+"id": "series-038",
+"lv": "any",
+"i18n": {
+"en": "What is a series you would never get tired of talking about?",
+"de": "Über welche Serie könntest du endlos reden?",
+"es": "¿De qué serie nunca te cansarías de hablar?",
+"fr": "De quelle série ne te lasserais-tu jamais de parler ?",
+"it": "Di quale serie non ti stancheresti mai di parlare?",
+"pt": "De que série nunca te cansarias de falar?",
+"pt_BR": "Sobre qual série você nunca se cansaria de falar?"
+}
+},
+{
+"id": "series-039",
+"lv": "any",
+"i18n": {
+"en": "If you could be an extra in any series, which would you choose?",
+"de": "Wenn du Statist in einer Serie sein könntest, welche wäre es?",
+"es": "Si pudieras ser extra en cualquier serie, ¿cuál elegirías?",
+"fr": "Si tu pouvais être figurant dans une série, laquelle choisirais-tu ?",
+"it": "Se potessi fare la comparsa in una serie, quale sceglieresti?",
+"pt": "Se pudesses ser figurante numa série, qual escolherias?",
+"pt_BR": "Se você pudesse ser figurante em qualquer série, qual escolheria?"
+}
+},
+{
+"id": "series-040",
+"lv": "any",
+"i18n": {
+"en": "What does a series need for you to keep watching after the first episode?",
+"de": "Was braucht eine Serie, damit du nach der ersten Folge weiterschaust?",
+"es": "¿Qué necesita una serie para que sigas viéndola tras el primer episodio?",
+"fr": "De quoi une série a-t-elle besoin pour que tu continues après le premier épisode ?",
+"it": "Di cosa ha bisogno una serie perché tu continui dopo il primo episodio?",
+"pt": "O que precisa uma série para continuares a ver depois do primeiro episódio?",
+"pt_BR": "Do que uma série precisa para você continuar depois do primeiro episódio?"
+}
+},
+{
+"id": "series-041",
+"lv": "beginner",
+"i18n": {
+"en": "Do you know the difference between a sitcom and a drama? Which do you watch more?",
+"de": "Kennst du den Unterschied zwischen Sitcom und Drama? Was schaust du öfter?",
+"es": "¿Conoces la diferencia entre sitcom y drama? ¿Cuál ves más?",
+"fr": "Connais-tu la différence entre sitcom et drame ? Lequel regardes-tu le plus ?",
+"it": "Conosci la differenza tra sitcom e drama? Quale guardi di più?",
+"pt": "Sabes a diferença entre sitcom e drama? Qual vês mais?",
+"pt_BR": "Você sabe a diferença entre sitcom e drama? Qual você assiste mais?"
+}
+},
+{
+"id": "series-042",
+"lv": "beginner",
+"i18n": {
+"en": "Which classic series from before you were born have you watched?",
+"de": "Welche klassische Serie von vor deiner Geburt hast du gesehen?",
+"es": "¿Qué serie clásica de antes de que nacieras has visto?",
+"fr": "Quelle série classique d'avant ta naissance as-tu regardée ?",
+"it": "Quale serie classica di prima che nascessi hai visto?",
+"pt": "Que série clássica de antes de nasceres já viste?",
+"pt_BR": "Qual série clássica de antes de você nascer você já viu?"
+}
+},
+{
+"id": "series-043",
+"lv": "beginner",
+"i18n": {
+"en": "What was the first series you ever followed episode by episode?",
+"de": "Welche Serie hast du als erste Folge für Folge verfolgt?",
+"es": "¿Cuál fue la primera serie que seguiste episodio a episodio?",
+"fr": "Quelle a été la première série que tu as suivie épisode après épisode ?",
+"it": "Qual è stata la prima serie che hai seguito episodio dopo episodio?",
+"pt": "Qual foi a primeira série que acompanhaste episódio a episódio?",
+"pt_BR": "Qual foi a primeira série que você acompanhou episódio por episódio?"
+}
+},
+{
+"id": "series-044",
+"lv": "beginner",
+"i18n": {
+"en": "Do you like cliffhangers at the end of episodes, or do they make you impatient?",
+"de": "Magst du Cliffhanger am Ende einer Folge, oder machen sie dich ungeduldig?",
+"es": "¿Te gustan los finales en suspenso o te impacientan?",
+"fr": "Aimes-tu les cliffhangers en fin d'épisode, ou te rendent-ils impatient ?",
+"it": "Ti piacciono i cliffhanger a fine episodio o ti rendono impaziente?",
+"pt": "Gostas de cliffhangers no fim dos episódios ou deixam-te impaciente?",
+"pt_BR": "Você gosta de ganchos no fim dos episódios ou eles te deixam impaciente?"
+}
+},
+{
+"id": "series-045",
+"lv": "beginner",
+"i18n": {
+"en": "Which TV detective or puzzle-solver do you enjoy the most?",
+"de": "Welchen Seriendetektiv oder Rätsellöser magst du am liebsten?",
+"es": "¿Qué detective o resolvedor de enigmas de serie te gusta más?",
+"fr": "Quel détective ou résolveur d'énigmes de série préfères-tu ?",
+"it": "Quale detective o risolutore di enigmi delle serie ti piace di più?",
+"pt": "Que detetive ou solucionador de enigmas de série preferes?",
+"pt_BR": "Qual detetive ou solucionador de mistérios de série você mais curte?"
+}
+},
+{
+"id": "series-046",
+"lv": "beginner",
+"i18n": {
+"en": "What is your favourite workplace comedy, and what makes it funny?",
+"de": "Was ist deine liebste Büro-Comedy, und was macht sie lustig?",
+"es": "¿Cuál es tu comedia de oficina favorita y qué la hace divertida?",
+"fr": "Quelle est ta comédie de bureau préférée, et qu'est-ce qui la rend drôle ?",
+"it": "Qual è la tua commedia ambientata al lavoro preferita, e cosa la rende divertente?",
+"pt": "Qual é a tua comédia passada no trabalho preferida, e o que a torna engraçada?",
+"pt_BR": "Qual é a sua comédia de escritório favorita, e o que a torna engraçada?"
+}
+},
+{
+"id": "series-047",
+"lv": "beginner",
+"i18n": {
+"en": "Have you ever watched a telenovela or a soap opera? What did you think?",
+"de": "Hast du schon mal eine Telenovela oder Seifenoper geschaut? Wie fandest du sie?",
+"es": "¿Alguna vez has visto una telenovela? ¿Qué te pareció?",
+"fr": "As-tu déjà regardé une telenovela ou un feuilleton ? Qu'en as-tu pensé ?",
+"it": "Hai mai guardato una telenovela o una soap opera? Che ne pensi?",
+"pt": "Já viste uma telenovela? O que achaste?",
+"pt_BR": "Você já assistiu uma novela? O que achou?"
+}
+},
+{
+"id": "series-048",
+"lv": "beginner",
+"i18n": {
+"en": "Which spin-off do you know, and did you like it as much as the original?",
+"de": "Welches Spin-off kennst du, und hat es dir so gut gefallen wie das Original?",
+"es": "¿Qué spin-off conoces y te gustó tanto como la original?",
+"fr": "Quel spin-off connais-tu, et l'as-tu autant aimé que l'original ?",
+"it": "Quale spin-off conosci, e ti è piaciuto quanto l'originale?",
+"pt": "Que spin-off conheces, e gostaste tanto como do original?",
+"pt_BR": "Qual spin-off você conhece, e gostou tanto quanto do original?"
+}
+},
+{
+"id": "series-049",
+"lv": "beginner",
+"i18n": {
+"en": "Do you prefer series with one story per episode or one long story?",
+"de": "Magst du lieber Serien mit einer Geschichte pro Folge oder eine lange Geschichte?",
+"es": "¿Prefieres series con una historia por episodio o una sola historia larga?",
+"fr": "Préfères-tu les séries avec une histoire par épisode ou une longue histoire suivie ?",
+"it": "Preferisci serie con una storia per episodio o un'unica lunga storia?",
+"pt": "Preferes séries com uma história por episódio ou uma única história longa?",
+"pt_BR": "Você prefere séries com uma história por episódio ou uma história longa?"
+}
+},
+{
+"id": "series-050",
+"lv": "beginner",
+"i18n": {
+"en": "Which nature documentary series has amazed you the most?",
+"de": "Welche Naturdoku-Serie hat dich am meisten beeindruckt?",
+"es": "¿Qué serie documental de naturaleza te ha asombrado más?",
+"fr": "Quelle série documentaire animalière t'a le plus émerveillé ?",
+"it": "Quale serie documentaria sulla natura ti ha stupito di più?",
+"pt": "Que série documental sobre a natureza mais te impressionou?",
+"pt_BR": "Qual série documental sobre natureza mais te impressionou?"
+}
+},
+{
+"id": "series-051",
+"lv": "beginner",
+"i18n": {
+"en": "Do you enjoy cooking or baking shows? What do you like about them?",
+"de": "Magst du Koch- oder Backshows? Was gefällt dir daran?",
+"es": "¿Te gustan los programas de cocina o repostería? ¿Qué te gusta de ellos?",
+"fr": "Aimes-tu les émissions de cuisine ou de pâtisserie ? Qu'est-ce qui te plaît ?",
+"it": "Ti piacciono i programmi di cucina o di pasticceria? Cosa ti piace?",
+"pt": "Gostas de programas de culinária ou pastelaria? O que te agrada neles?",
+"pt_BR": "Você curte programas de culinária ou confeitaria? O que gosta neles?"
+}
+},
+{
+"id": "series-052",
+"lv": "beginner",
+"i18n": {
+"en": "Which series made you curious about another culture?",
+"de": "Welche Serie hat dich neugierig auf eine andere Kultur gemacht?",
+"es": "¿Qué serie te despertó curiosidad por otra cultura?",
+"fr": "Quelle série t'a rendu curieux d'une autre culture ?",
+"it": "Quale serie ti ha incuriosito su un'altra cultura?",
+"pt": "Que série te deixou curioso em relação a outra cultura?",
+"pt_BR": "Qual série te deixou curioso sobre outra cultura?"
+}
+},
+{
+"id": "series-053",
+"lv": "beginner",
+"i18n": {
+"en": "What is the best series based on a book that you have seen?",
+"de": "Was ist die beste Buchverfilmung als Serie, die du gesehen hast?",
+"es": "¿Cuál es la mejor serie basada en un libro que has visto?",
+"fr": "Quelle est la meilleure série adaptée d'un livre que tu as vue ?",
+"it": "Qual è la migliore serie tratta da un libro che hai visto?",
+"pt": "Qual é a melhor série baseada num livro que já viste?",
+"pt_BR": "Qual é a melhor série baseada em livro que você já viu?"
+}
+},
+{
+"id": "series-054",
+"lv": "beginner",
+"i18n": {
+"en": "Have you ever watched a K-drama? How did you find it?",
+"de": "Hast du schon mal ein K-Drama gesehen? Wie fandest du es?",
+"es": "¿Has visto alguna vez un K-drama? ¿Qué te pareció?",
+"fr": "As-tu déjà regardé un K-drama ? Comment l'as-tu trouvé ?",
+"it": "Hai mai visto un K-drama? Come ti è sembrato?",
+"pt": "Já viste algum K-drama? O que achaste?",
+"pt_BR": "Você já assistiu um dorama coreano? O que achou?"
+}
+},
+{
+"id": "series-055",
+"lv": "beginner",
+"i18n": {
+"en": "Which series do you watch to feel happy after a long day?",
+"de": "Welche Serie schaust du, um nach einem langen Tag gute Laune zu bekommen?",
+"es": "¿Qué serie ves para animarte después de un día largo?",
+"fr": "Quelle série regardes-tu pour te remonter le moral après une longue journée ?",
+"it": "Quale serie guardi per tirarti su dopo una lunga giornata?",
+"pt": "Que série vês para ficares bem-disposto depois de um dia longo?",
+"pt_BR": "Qual série você assiste para ficar feliz depois de um dia longo?"
+}
+},
+{
+"id": "series-056",
+"lv": "beginner",
+"i18n": {
+"en": "Do you remember a series your whole family watched together?",
+"de": "Erinnerst du dich an eine Serie, die deine ganze Familie zusammen geschaut hat?",
+"es": "¿Recuerdas una serie que veía toda tu familia junta?",
+"fr": "Te souviens-tu d'une série que toute ta famille regardait ensemble ?",
+"it": "Ricordi una serie che guardava tutta la tua famiglia insieme?",
+"pt": "Lembras-te de uma série que toda a família via junta?",
+"pt_BR": "Você lembra de uma série que a família toda assistia junta?"
+}
+},
+{
+"id": "series-057",
+"lv": "beginner",
+"i18n": {
+"en": "What science fiction or fantasy series has the most impressive world?",
+"de": "Welche Science-Fiction- oder Fantasy-Serie hat die beeindruckendste Welt?",
+"es": "¿Qué serie de ciencia ficción o fantasía tiene el mundo más impresionante?",
+"fr": "Quelle série de science-fiction ou de fantasy a l'univers le plus impressionnant ?",
+"it": "Quale serie di fantascienza o fantasy ha il mondo più impressionante?",
+"pt": "Que série de ficção científica ou fantasia tem o mundo mais impressionante?",
+"pt_BR": "Qual série de ficção científica ou fantasia tem o mundo mais impressionante?"
+}
+},
+{
+"id": "series-058",
+"lv": "beginner",
+"i18n": {
+"en": "Do you read reviews before starting a series, or just dive in?",
+"de": "Liest du Kritiken, bevor du eine Serie anfängst, oder legst du einfach los?",
+"es": "¿Lees críticas antes de empezar una serie o te lanzas sin más?",
+"fr": "Lis-tu des critiques avant de commencer une série, ou te lances-tu directement ?",
+"it": "Leggi le recensioni prima di iniziare una serie o ti butti e basta?",
+"pt": "Lês críticas antes de começar uma série ou mergulhas logo?",
+"pt_BR": "Você lê críticas antes de começar uma série ou já mergulha de cabeça?"
+}
+},
+{
+"id": "series-059",
+"lv": "beginner",
+"i18n": {
+"en": "Which supporting character is often your favourite in a series?",
+"de": "Welche Nebenfigur ist oft dein Liebling in einer Serie?",
+"es": "¿Qué personaje secundario suele ser tu favorito en una serie?",
+"fr": "Quel personnage secondaire est souvent ton préféré dans une série ?",
+"it": "Quale personaggio secondario è spesso il tuo preferito in una serie?",
+"pt": "Que personagem secundária é muitas vezes a tua preferida numa série?",
+"pt_BR": "Qual personagem coadjuvante costuma ser o seu favorito numa série?"
+}
+},
+{
+"id": "series-060",
+"lv": "beginner",
+"i18n": {
+"en": "How many series do you usually follow at the same time?",
+"de": "Wie viele Serien verfolgst du normalerweise gleichzeitig?",
+"es": "¿Cuántas series sueles seguir a la vez?",
+"fr": "Combien de séries suis-tu en même temps d'habitude ?",
+"it": "Quante serie segui di solito contemporaneamente?",
+"pt": "Quantas séries costumas acompanhar ao mesmo tempo?",
+"pt_BR": "Quantas séries você costuma acompanhar ao mesmo tempo?"
+}
+},
+{
+"id": "series-061",
+"lv": "beginner",
+"i18n": {
+"en": "Which series has the most beautiful look or photography for you?",
+"de": "Welche Serie hat für dich die schönste Optik?",
+"es": "¿Qué serie tiene para ti la imagen o la fotografía más bonita?",
+"fr": "Quelle série a pour toi la plus belle image ?",
+"it": "Quale serie ha per te la fotografia più bella?",
+"pt": "Que série tem, para ti, a imagem mais bonita?",
+"pt_BR": "Qual série tem, para você, a fotografia mais bonita?"
+}
+},
+{
+"id": "series-062",
+"lv": "beginner",
+"i18n": {
+"en": "Do you have a series you like to watch in a certain season, like winter?",
+"de": "Gibt es eine Serie, die du gern zu einer bestimmten Jahreszeit schaust, etwa im Winter?",
+"es": "¿Tienes una serie que te gusta ver en cierta época del año, como el invierno?",
+"fr": "As-tu une série que tu aimes regarder à une saison précise, comme l'hiver ?",
+"it": "Hai una serie che ti piace guardare in una certa stagione, come l'inverno?",
+"pt": "Tens uma série que gostas de ver numa certa altura do ano, como no inverno?",
+"pt_BR": "Você tem uma série que gosta de ver numa certa época do ano, como no inverno?"
+}
+},
+{
+"id": "series-063",
+"lv": "beginner",
+"i18n": {
+"en": "What is a holiday or Christmas episode you enjoy every year?",
+"de": "Welche Feiertags- oder Weihnachtsfolge schaust du jedes Jahr gern?",
+"es": "¿Qué episodio navideño o festivo disfrutas cada año?",
+"fr": "Quel épisode de fêtes ou de Noël aimes-tu revoir chaque année ?",
+"it": "Quale episodio natalizio o delle feste ti piace rivedere ogni anno?",
+"pt": "Que episódio de Natal ou de festas gostas de rever todos os anos?",
+"pt_BR": "Qual episódio de Natal ou de festas você curte todo ano?"
+}
+},
+{
+"id": "series-064",
+"lv": "beginner",
+"i18n": {
+"en": "Which series character are you most similar to?",
+"de": "Welcher Serienfigur ähnelst du am meisten?",
+"es": "¿A qué personaje de serie te pareces más?",
+"fr": "À quel personnage de série ressembles-tu le plus ?",
+"it": "A quale personaggio di una serie somigli di più?",
+"pt": "Com que personagem de série te pareces mais?",
+"pt_BR": "Com qual personagem de série você mais se parece?"
+}
+},
+{
+"id": "series-065",
+"lv": "beginner",
+"i18n": {
+"en": "Which series would you choose for a cozy evening with friends?",
+"de": "Welche Serie würdest du für einen gemütlichen Abend mit Freunden wählen?",
+"es": "¿Qué serie elegirías para una tarde acogedora con amigos?",
+"fr": "Quelle série choisirais-tu pour une soirée tranquille entre amis ?",
+"it": "Quale serie sceglieresti per una serata tranquilla con gli amici?",
+"pt": "Que série escolherias para um serão descontraído com amigos?",
+"pt_BR": "Qual série você escolheria para uma noite tranquila com amigos?"
+}
+},
+{
+"id": "series-066",
+"lv": "intermediate",
+"i18n": {
+"en": "What do you think makes a great pilot episode?",
+"de": "Was macht deiner Meinung nach eine großartige Pilotfolge aus?",
+"es": "¿Qué crees que hace grande a un episodio piloto?",
+"fr": "Qu'est-ce qui fait, selon toi, un excellent épisode pilote ?",
+"it": "Secondo te, cosa rende grande un episodio pilota?",
+"pt": "O que achas que faz um grande episódio piloto?",
+"pt_BR": "O que você acha que faz um ótimo episódio piloto?"
+}
+},
+{
+"id": "series-067",
+"lv": "intermediate",
+"i18n": {
+"en": "Which character in a series changed the most, and did you like how?",
+"de": "Welche Serienfigur hat sich am meisten verändert, und mochtest du die Entwicklung?",
+"es": "¿Qué personaje de una serie cambió más y te gustó cómo lo hizo?",
+"fr": "Quel personnage de série a le plus évolué, et as-tu aimé cette évolution ?",
+"it": "Quale personaggio di una serie è cambiato di più, e ti è piaciuto come?",
+"pt": "Que personagem de uma série mais mudou, e gostaste da forma como mudou?",
+"pt_BR": "Qual personagem de uma série mais mudou, e você gostou de como mudou?"
+}
+},
+{
+"id": "series-068",
+"lv": "intermediate",
+"i18n": {
+"en": "Do you prefer shows filmed with a live audience or without laughter?",
+"de": "Magst du lieber Shows mit Live-Publikum oder ohne Lacher?",
+"es": "¿Prefieres series grabadas con público en directo o sin risas?",
+"fr": "Préfères-tu les séries tournées devant un public ou sans rires ?",
+"it": "Preferisci serie girate con pubblico dal vivo o senza risate?",
+"pt": "Preferes séries gravadas com público ao vivo ou sem risos?",
+"pt_BR": "Você prefere séries gravadas com plateia ou sem risadas?"
+}
+},
+{
+"id": "series-069",
+"lv": "intermediate",
+"i18n": {
+"en": "Which series do you think has the best dialogue?",
+"de": "Welche Serie hat deiner Meinung nach die besten Dialoge?",
+"es": "¿Qué serie crees que tiene los mejores diálogos?",
+"fr": "Quelle série a selon toi les meilleurs dialogues ?",
+"it": "Quale serie secondo te ha i dialoghi migliori?",
+"pt": "Que série achas que tem os melhores diálogos?",
+"pt_BR": "Qual série você acha que tem os melhores diálogos?"
+}
+},
+{
+"id": "series-070",
+"lv": "intermediate",
+"i18n": {
+"en": "Have you noticed how music changes the mood of a scene? Any example?",
+"de": "Ist dir aufgefallen, wie Musik die Stimmung einer Szene verändert? Ein Beispiel?",
+"es": "¿Has notado cómo la música cambia el ambiente de una escena? ¿Algún ejemplo?",
+"fr": "As-tu remarqué comment la musique change l'ambiance d'une scène ? Un exemple ?",
+"it": "Hai notato come la musica cambia l'atmosfera di una scena? Un esempio?",
+"pt": "Já reparaste como a música muda o ambiente de uma cena? Algum exemplo?",
+"pt_BR": "Você já reparou como a música muda o clima de uma cena? Algum exemplo?"
+}
+},
+{
+"id": "series-071",
+"lv": "intermediate",
+"i18n": {
+"en": "Which remake or adaptation did you like more than the original?",
+"de": "Welches Remake oder welche Adaption fandest du besser als das Original?",
+"es": "¿Qué remake o adaptación te gustó más que la original?",
+"fr": "Quel remake ou quelle adaptation as-tu préféré à l'original ?",
+"it": "Quale remake o adattamento ti è piaciuto più dell'originale?",
+"pt": "Que remake ou adaptação gostaste mais do que o original?",
+"pt_BR": "Qual remake ou adaptação você gostou mais que o original?"
+}
+},
+{
+"id": "series-072",
+"lv": "intermediate",
+"i18n": {
+"en": "What do you think a series from your country does better than others?",
+"de": "Was machen Serien aus deinem Land deiner Meinung nach besser als andere?",
+"es": "¿Qué crees que hacen mejor las series de tu país que las de otros?",
+"fr": "Selon toi, que font mieux les séries de ton pays que les autres ?",
+"it": "Cosa fanno meglio, secondo te, le serie del tuo paese rispetto alle altre?",
+"pt": "O que achas que as séries do teu país fazem melhor do que as outras?",
+"pt_BR": "O que você acha que as séries do seu país fazem melhor que as outras?"
+}
+},
+{
+"id": "series-073",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you feel when a series you love is cancelled?",
+"de": "Wie fühlst du dich, wenn eine Serie, die du liebst, abgesetzt wird?",
+"es": "¿Cómo te sientes cuando cancelan una serie que te encanta?",
+"fr": "Que ressens-tu quand une série que tu adores est annulée ?",
+"it": "Come ti senti quando cancellano una serie che ami?",
+"pt": "Como te sentes quando cancelam uma série de que gostas muito?",
+"pt_BR": "Como você se sente quando cancelam uma série que você ama?"
+}
+},
+{
+"id": "series-074",
+"lv": "intermediate",
+"i18n": {
+"en": "Which series has a title sequence you think is a work of art?",
+"de": "Welche Serie hat einen Vorspann, den du für ein Kunstwerk hältst?",
+"es": "¿Qué serie tiene una cabecera que consideras una obra de arte?",
+"fr": "Quelle série a un générique que tu trouves être une œuvre d'art ?",
+"it": "Quale serie ha una sigla che consideri un'opera d'arte?",
+"pt": "Que série tem um genérico que consideras uma obra de arte?",
+"pt_BR": "Qual série tem uma abertura que você considera uma obra de arte?"
+}
+},
+{
+"id": "series-075",
+"lv": "intermediate",
+"i18n": {
+"en": "Do you like when a character talks directly to the camera?",
+"de": "Magst du es, wenn eine Figur direkt in die Kamera spricht?",
+"es": "¿Te gusta cuando un personaje habla directamente a la cámara?",
+"fr": "Aimes-tu quand un personnage s'adresse directement à la caméra ?",
+"it": "Ti piace quando un personaggio parla direttamente alla telecamera?",
+"pt": "Gostas quando uma personagem fala diretamente para a câmara?",
+"pt_BR": "Você gosta quando um personagem fala direto para a câmera?"
+}
+},
+{
+"id": "series-076",
+"lv": "intermediate",
+"i18n": {
+"en": "What running gag from a series do you find the funniest?",
+"de": "Welchen Running Gag aus einer Serie findest du am lustigsten?",
+"es": "¿Qué broma recurrente de una serie te parece la más graciosa?",
+"fr": "Quel gag récurrent d'une série trouves-tu le plus drôle ?",
+"it": "Quale gag ricorrente di una serie trovi più divertente?",
+"pt": "Que piada recorrente de uma série achas mais engraçada?",
+"pt_BR": "Qual piada recorrente de uma série você acha mais engraçada?"
+}
+},
+{
+"id": "series-077",
+"lv": "intermediate",
+"i18n": {
+"en": "Which series would you show someone to explain your sense of humour?",
+"de": "Mit welcher Serie würdest du jemandem deinen Humor erklären?",
+"es": "¿Qué serie mostrarías a alguien para explicar tu sentido del humor?",
+"fr": "Quelle série montrerais-tu à quelqu'un pour expliquer ton sens de l'humour ?",
+"it": "Quale serie mostreresti a qualcuno per spiegare il tuo senso dell'umorismo?",
+"pt": "Que série mostrarias a alguém para explicar o teu sentido de humor?",
+"pt_BR": "Qual série você mostraria a alguém para explicar o seu senso de humor?"
+}
+},
+{
+"id": "series-078",
+"lv": "intermediate",
+"i18n": {
+"en": "Have you ever joined a fan community or discussed theories online?",
+"de": "Warst du schon mal in einer Fan-Community oder hast online Theorien diskutiert?",
+"es": "¿Alguna vez te has unido a una comunidad de fans o debatido teorías en internet?",
+"fr": "As-tu déjà rejoint une communauté de fans ou discuté de théories en ligne ?",
+"it": "Hai mai fatto parte di una community di fan o discusso teorie online?",
+"pt": "Já entraste numa comunidade de fãs ou discutiste teorias online?",
+"pt_BR": "Você já entrou numa comunidade de fãs ou discutiu teorias na internet?"
+}
+},
+{
+"id": "series-079",
+"lv": "intermediate",
+"i18n": {
+"en": "Which TV decade do you find the most interesting, and why?",
+"de": "Welches Fernsehjahrzehnt findest du am spannendsten, und warum?",
+"es": "¿Qué década de la televisión te parece más interesante y por qué?",
+"fr": "Quelle décennie de la télé trouves-tu la plus intéressante, et pourquoi ?",
+"it": "Quale decennio della televisione trovi più interessante, e perché?",
+"pt": "Que década da televisão achas mais interessante, e porquê?",
+"pt_BR": "Qual década da TV você acha mais interessante, e por quê?"
+}
+},
+{
+"id": "series-080",
+"lv": "intermediate",
+"i18n": {
+"en": "Do you prefer short six-episode seasons or long seasons with many episodes?",
+"de": "Magst du lieber kurze Staffeln mit sechs Folgen oder lange mit vielen Folgen?",
+"es": "¿Prefieres temporadas cortas de seis episodios o largas con muchos?",
+"fr": "Préfères-tu les saisons courtes de six épisodes ou les longues saisons ?",
+"it": "Preferisci stagioni brevi da sei episodi o stagioni lunghe con tanti episodi?",
+"pt": "Preferes temporadas curtas de seis episódios ou longas com muitos episódios?",
+"pt_BR": "Você prefere temporadas curtas de seis episódios ou longas com muitos episódios?"
+}
+},
+{
+"id": "series-081",
+"lv": "intermediate",
+"i18n": {
+"en": "Which series do you think has the most satisfying final season?",
+"de": "Welche Serie hat deiner Meinung nach die befriedigendste letzte Staffel?",
+"es": "¿Qué serie crees que tiene la temporada final más satisfactoria?",
+"fr": "Quelle série a selon toi la dernière saison la plus réussie ?",
+"it": "Quale serie secondo te ha la stagione finale più soddisfacente?",
+"pt": "Que série achas que tem a temporada final mais satisfatória?",
+"pt_BR": "Qual série você acha que tem a temporada final mais satisfatória?"
+}
+},
+{
+"id": "series-082",
+"lv": "intermediate",
+"i18n": {
+"en": "How has the way you watch series changed over the years?",
+"de": "Wie hat sich deine Art, Serien zu schauen, über die Jahre verändert?",
+"es": "¿Cómo ha cambiado tu forma de ver series con los años?",
+"fr": "Comment ta façon de regarder les séries a-t-elle changé au fil des ans ?",
+"it": "Com'è cambiato negli anni il tuo modo di guardare le serie?",
+"pt": "Como mudou a tua forma de ver séries ao longo dos anos?",
+"pt_BR": "Como mudou o seu jeito de assistir séries ao longo dos anos?"
+}
+},
+{
+"id": "series-083",
+"lv": "intermediate",
+"i18n": {
+"en": "Which actor or actress do you follow from series to series?",
+"de": "Welchem Schauspieler oder welcher Schauspielerin folgst du von Serie zu Serie?",
+"es": "¿A qué actor o actriz sigues de serie en serie?",
+"fr": "Quel acteur ou quelle actrice suis-tu de série en série ?",
+"it": "Quale attore o attrice segui da una serie all'altra?",
+"pt": "Que ator ou atriz acompanhas de série em série?",
+"pt_BR": "Qual ator ou atriz você acompanha de série em série?"
+}
+},
+{
+"id": "series-084",
+"lv": "intermediate",
+"i18n": {
+"en": "What small detail in a series did you notice only on a second watch?",
+"de": "Welches kleine Detail einer Serie hast du erst beim zweiten Mal bemerkt?",
+"es": "¿Qué pequeño detalle de una serie notaste solo al volver a verla?",
+"fr": "Quel petit détail d'une série n'as-tu remarqué qu'au deuxième visionnage ?",
+"it": "Quale piccolo dettaglio di una serie hai notato solo rivedendola?",
+"pt": "Que pequeno pormenor de uma série só notaste ao revê-la?",
+"pt_BR": "Qual pequeno detalhe de uma série você só notou ao rever?"
+}
+},
+{
+"id": "series-085",
+"lv": "intermediate",
+"i18n": {
+"en": "Do you think series today are better than classic ones? Why?",
+"de": "Findest du heutige Serien besser als die Klassiker? Warum?",
+"es": "¿Crees que las series de hoy son mejores que las clásicas? ¿Por qué?",
+"fr": "Penses-tu que les séries d'aujourd'hui sont meilleures que les classiques ? Pourquoi ?",
+"it": "Pensi che le serie di oggi siano migliori di quelle classiche? Perché?",
+"pt": "Achas que as séries de hoje são melhores do que as clássicas? Porquê?",
+"pt_BR": "Você acha que as séries de hoje são melhores que as clássicas? Por quê?"
+}
+},
+{
+"id": "series-086",
+"lv": "advanced",
+"i18n": {
+"en": "If you could write one episode of any series, what would happen in it?",
+"de": "Wenn du eine Folge einer beliebigen Serie schreiben könntest, was würde passieren?",
+"es": "Si pudieras escribir un episodio de cualquier serie, ¿qué pasaría en él?",
+"fr": "Si tu pouvais écrire un épisode de n'importe quelle série, que s'y passerait-il ?",
+"it": "Se potessi scrivere un episodio di qualsiasi serie, cosa succederebbe?",
+"pt": "Se pudesses escrever um episódio de qualquer série, o que aconteceria nele?",
+"pt_BR": "Se você pudesse escrever um episódio de qualquer série, o que aconteceria nele?"
+}
+},
+{
+"id": "series-087",
+"lv": "advanced",
+"i18n": {
+"en": "What would the logline of a series about your life be?",
+"de": "Wie würde die Kurzbeschreibung einer Serie über dein Leben lauten?",
+"es": "¿Cuál sería la sinopsis en una frase de una serie sobre tu vida?",
+"fr": "Quel serait le pitch en une phrase d'une série sur ta vie ?",
+"it": "Quale sarebbe la logline di una serie sulla tua vita?",
+"pt": "Qual seria a sinopse numa frase de uma série sobre a tua vida?",
+"pt_BR": "Qual seria a sinopse em uma frase de uma série sobre a sua vida?"
+}
+},
+{
+"id": "series-088",
+"lv": "advanced",
+"i18n": {
+"en": "Which genre would you choose if you created your own series, and why?",
+"de": "Welches Genre würdest du für deine eigene Serie wählen, und warum?",
+"es": "¿Qué género elegirías si crearas tu propia serie y por qué?",
+"fr": "Quel genre choisirais-tu si tu créais ta propre série, et pourquoi ?",
+"it": "Quale genere sceglieresti se creassi una tua serie, e perché?",
+"pt": "Que género escolherias se criasses a tua própria série, e porquê?",
+"pt_BR": "Qual gênero você escolheria se criasse sua própria série, e por quê?"
+}
+},
+{
+"id": "series-089",
+"lv": "advanced",
+"i18n": {
+"en": "How do you think streaming has changed the stories series tell?",
+"de": "Wie hat Streaming deiner Meinung nach die Geschichten von Serien verändert?",
+"es": "¿Cómo crees que el streaming ha cambiado las historias que cuentan las series?",
+"fr": "Comment le streaming a-t-il changé, selon toi, les histoires que racontent les séries ?",
+"it": "Come pensi che lo streaming abbia cambiato le storie raccontate dalle serie?",
+"pt": "Como achas que o streaming mudou as histórias que as séries contam?",
+"pt_BR": "Como você acha que o streaming mudou as histórias que as séries contam?"
+}
+},
+{
+"id": "series-090",
+"lv": "advanced",
+"i18n": {
+"en": "What makes a series finale satisfying or disappointing for you?",
+"de": "Was macht ein Serienfinale für dich gelungen oder enttäuschend?",
+"es": "¿Qué hace que el final de una serie te parezca satisfactorio o decepcionante?",
+"fr": "Qu'est-ce qui rend un final de série réussi ou décevant pour toi ?",
+"it": "Cosa rende per te il finale di una serie soddisfacente o deludente?",
+"pt": "O que torna, para ti, o final de uma série satisfatório ou dececionante?",
+"pt_BR": "O que torna, para você, o final de uma série satisfatório ou decepcionante?"
+}
+},
+{
+"id": "series-091",
+"lv": "advanced",
+"i18n": {
+"en": "Which series do you think tells its story best through images rather than words?",
+"de": "Welche Serie erzählt deiner Meinung nach am besten durch Bilder statt Worte?",
+"es": "¿Qué serie crees que cuenta mejor su historia con imágenes que con palabras?",
+"fr": "Quelle série raconte selon toi le mieux son histoire par l'image plutôt que par les mots ?",
+"it": "Quale serie secondo te racconta meglio la sua storia con le immagini più che con le parole?",
+"pt": "Que série achas que conta melhor a história através de imagens do que de palavras?",
+"pt_BR": "Qual série você acha que conta melhor a história com imagens do que com palavras?"
+}
+},
+{
+"id": "series-092",
+"lv": "advanced",
+"i18n": {
+"en": "When a series is adapted for another country, what should stay the same?",
+"de": "Was sollte gleich bleiben, wenn eine Serie für ein anderes Land adaptiert wird?",
+"es": "Cuando una serie se adapta a otro país, ¿qué debería mantenerse igual?",
+"fr": "Quand une série est adaptée pour un autre pays, que faut-il garder ?",
+"it": "Quando una serie viene adattata per un altro paese, cosa dovrebbe restare uguale?",
+"pt": "Quando uma série é adaptada para outro país, o que deve ficar igual?",
+"pt_BR": "Quando uma série é adaptada para outro país, o que deveria continuar igual?"
+}
+},
+{
+"id": "series-093",
+"lv": "advanced",
+"i18n": {
+"en": "Which theme or idea do you wish more series explored?",
+"de": "Welches Thema würdest du dir in mehr Serien wünschen?",
+"es": "¿Qué tema o idea te gustaría que exploraran más series?",
+"fr": "Quel thème ou quelle idée aimerais-tu voir davantage dans les séries ?",
+"it": "Quale tema o idea vorresti che più serie esplorassero?",
+"pt": "Que tema ou ideia gostavas que mais séries explorassem?",
+"pt_BR": "Qual tema ou ideia você gostaria que mais séries explorassem?"
+}
+},
+{
+"id": "series-094",
+"lv": "advanced",
+"i18n": {
+"en": "Do you think humour translates well between cultures? Any example from a series?",
+"de": "Lässt sich Humor gut zwischen Kulturen übertragen? Ein Beispiel aus einer Serie?",
+"es": "¿Crees que el humor se traduce bien entre culturas? ¿Algún ejemplo de una serie?",
+"fr": "Penses-tu que l'humour passe bien d'une culture à l'autre ? Un exemple de série ?",
+"it": "Pensi che l'umorismo si traduca bene tra culture? Un esempio da una serie?",
+"pt": "Achas que o humor passa bem entre culturas? Algum exemplo de uma série?",
+"pt_BR": "Você acha que o humor funciona bem entre culturas? Algum exemplo de série?"
+}
+},
+{
+"id": "series-095",
+"lv": "advanced",
+"i18n": {
+"en": "If you ran a writers' room, what rule would you set for your team?",
+"de": "Wenn du einen Writers' Room leiten würdest, welche Regel würdest du aufstellen?",
+"es": "Si dirigieras una sala de guionistas, ¿qué regla pondrías a tu equipo?",
+"fr": "Si tu dirigeais une salle d'auteurs, quelle règle fixerais-tu à ton équipe ?",
+"it": "Se guidassi una writers' room, quale regola daresti al tuo team?",
+"pt": "Se liderasses uma sala de argumentistas, que regra definirias para a equipa?",
+"pt_BR": "Se você comandasse uma sala de roteiristas, que regra criaria para a equipe?"
+}
+},
+{
+"id": "series-096",
+"lv": "advanced",
+"i18n": {
+"en": "Which series do you think will still be loved in fifty years, and why?",
+"de": "Welche Serie wird deiner Meinung nach auch in fünfzig Jahren noch geliebt, und warum?",
+"es": "¿Qué serie crees que seguirá siendo querida dentro de cincuenta años y por qué?",
+"fr": "Quelle série sera encore aimée dans cinquante ans selon toi, et pourquoi ?",
+"it": "Quale serie secondo te sarà ancora amata tra cinquant'anni, e perché?",
+"pt": "Que série achas que ainda vai ser adorada daqui a cinquenta anos, e porquê?",
+"pt_BR": "Qual série você acha que ainda vai ser amada daqui a cinquenta anos, e por quê?"
+}
+},
+{
+"id": "series-097",
+"lv": "advanced",
+"i18n": {
+"en": "What has watching series taught you about storytelling in your own life?",
+"de": "Was hat dich das Serienschauen über das Erzählen im eigenen Leben gelehrt?",
+"es": "¿Qué te ha enseñado ver series sobre cómo contar historias en tu propia vida?",
+"fr": "Qu'est-ce que les séries t'ont appris sur l'art de raconter des histoires dans ta vie ?",
+"it": "Cosa ti ha insegnato guardare le serie sul raccontare storie nella tua vita?",
+"pt": "O que é que ver séries te ensinou sobre contar histórias na tua própria vida?",
+"pt_BR": "O que assistir séries te ensinou sobre contar histórias na sua própria vida?"
+}
+},
+{
+"id": "series-098",
+"lv": "advanced",
+"i18n": {
+"en": "How would you pitch your favourite series to someone in just one minute?",
+"de": "Wie würdest du deine Lieblingsserie jemandem in nur einer Minute vorstellen?",
+"es": "¿Cómo presentarías tu serie favorita a alguien en solo un minuto?",
+"fr": "Comment présenterais-tu ta série préférée à quelqu'un en une minute seulement ?",
+"it": "Come presenteresti la tua serie preferita a qualcuno in un solo minuto?",
+"pt": "Como apresentarias a tua série preferida a alguém em apenas um minuto?",
+"pt_BR": "Como você apresentaria sua série favorita a alguém em apenas um minuto?"
+}
+},
+{
+"id": "series-099",
+"lv": "advanced",
+"i18n": {
+"en": "Which series do you think shaped the history of television the most?",
+"de": "Welche Serie hat die Fernsehgeschichte deiner Meinung nach am meisten geprägt?",
+"es": "¿Qué serie crees que más ha marcado la historia de la televisión?",
+"fr": "Quelle série a, selon toi, le plus marqué l'histoire de la télévision ?",
+"it": "Quale serie secondo te ha segnato di più la storia della televisione?",
+"pt": "Que série achas que mais marcou a história da televisão?",
+"pt_BR": "Qual série você acha que mais marcou a história da televisão?"
+}
+},
+{
+"id": "series-100",
+"lv": "advanced",
+"i18n": {
+"en": "What would you include in a series bible for your own show idea?",
+"de": "Was würdest du in die Serienbibel deiner eigenen Serienidee schreiben?",
+"es": "¿Qué incluirías en la biblia de una serie basada en tu propia idea?",
+"fr": "Que mettrais-tu dans la bible de ta propre idée de série ?",
+"it": "Cosa metteresti nella bibbia di una serie nata da una tua idea?",
+"pt": "O que incluirias na bíblia de uma série baseada numa ideia tua?",
+"pt_BR": "O que você colocaria na bíblia de uma série baseada numa ideia sua?"
+}
+}
+]
+}

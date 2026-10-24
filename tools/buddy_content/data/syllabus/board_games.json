@@ -1,0 +1,2195 @@
+{
+"topic": "board_games",
+"days": [
+{
+"d": 1,
+"lv": "beginner",
+"t": "Welcome to the world of board games",
+"f": "What this path covers, from ancient classics to modern strategy and word games, one small step a day"
+},
+{
+"d": 2,
+"lv": "beginner",
+"t": "What makes a game a game",
+"f": "Rules, goals, choices and fun: the basic ingredients of every game"
+},
+{
+"d": 3,
+"lv": "beginner",
+"t": "The parts of a board game",
+"f": "Boards, dice, tokens, cards and tiles, and what each one does"
+},
+{
+"d": 4,
+"lv": "beginner",
+"t": "Your personal game profile",
+"f": "Exploring the games you already know and what you enjoy about them"
+},
+{
+"d": 5,
+"lv": "beginner",
+"t": "Word game: I spy",
+"f": "A simple guessing game with letters and colours to warm up your vocabulary"
+},
+{
+"d": 6,
+"lv": "beginner",
+"t": "Taking turns",
+"f": "Turn order, rounds and why fair turns keep a game flowing"
+},
+{
+"d": 7,
+"lv": "beginner",
+"t": "How to read a rulebook",
+"f": "Finding the goal, setup and turn structure quickly"
+},
+{
+"d": 8,
+"lv": "beginner",
+"t": "Setting up a game",
+"f": "Organizing components so play can start smoothly"
+},
+{
+"d": 9,
+"lv": "beginner",
+"t": "Winning conditions",
+"f": "Points, races, captures and other ways to win a game"
+},
+{
+"d": 10,
+"lv": "beginner",
+"t": "Word game: Twenty questions",
+"f": "Guessing a hidden thing with yes or no questions"
+},
+{
+"d": 11,
+"lv": "beginner",
+"t": "Luck and skill",
+"f": "How dice and cards mix with smart decisions in different games"
+},
+{
+"d": 12,
+"lv": "beginner",
+"t": "A first map of game families",
+"f": "Abstract, family, party, strategy, cooperative and word games"
+},
+{
+"d": 13,
+"lv": "beginner",
+"t": "Dice basics",
+"f": "Six-sided dice, special dice and what rolling adds to a game"
+},
+{
+"d": 14,
+"lv": "beginner",
+"t": "Cards in board games",
+"f": "Drawing, holding and playing cards as a game engine"
+},
+{
+"d": 15,
+"lv": "beginner",
+"t": "Word game: Word chain",
+"f": "Saying words that start with the last letter of the previous one"
+},
+{
+"d": 16,
+"lv": "beginner",
+"t": "The Royal Game of Ur",
+"f": "One of the oldest known board games, from ancient Mesopotamia"
+},
+{
+"d": 17,
+"lv": "beginner",
+"t": "Senet from ancient Egypt",
+"f": "A race game played thousands of years ago along the Nile"
+},
+{
+"d": 18,
+"lv": "beginner",
+"t": "Backgammon",
+"f": "An ancient race game mixing dice luck with clever decisions"
+},
+{
+"d": 19,
+"lv": "beginner",
+"t": "Mancala and Oware",
+"f": "Sowing seeds around pits in a counting game played across Africa and Asia"
+},
+{
+"d": 20,
+"lv": "beginner",
+"t": "Word game: Categories",
+"f": "Naming a fruit, a city and an animal that start with the same letter"
+},
+{
+"d": 21,
+"lv": "beginner",
+"t": "Go",
+"f": "Stones on a grid and the deep strategy of surrounding territory"
+},
+{
+"d": 22,
+"lv": "beginner",
+"t": "Chess: the pieces and their moves",
+"f": "How each chess piece moves and what it is worth"
+},
+{
+"d": 23,
+"lv": "beginner",
+"t": "Chess around the world",
+"f": "From chaturanga in India to xiangqi in China and shogi in Japan"
+},
+{
+"d": 24,
+"lv": "beginner",
+"t": "Checkers and draughts",
+"f": "Jumping pieces on a checkered board and its many national versions"
+},
+{
+"d": 25,
+"lv": "beginner",
+"t": "Word game: Anagrams",
+"f": "Rearranging letters to find new words hidden inside"
+},
+{
+"d": 26,
+"lv": "beginner",
+"t": "Nine Men's Morris",
+"f": "An old game of making rows of three, found carved in ancient stones"
+},
+{
+"d": 27,
+"lv": "beginner",
+"t": "Pachisi and Ludo",
+"f": "India's cross-and-circle race game and its family-friendly descendant"
+},
+{
+"d": 28,
+"lv": "beginner",
+"t": "Snakes and Ladders",
+"f": "A game from India about ups and downs that children love worldwide"
+},
+{
+"d": 29,
+"lv": "beginner",
+"t": "Dominoes",
+"f": "Matching spotted tiles in games played in many countries"
+},
+{
+"d": 30,
+"lv": "beginner",
+"t": "Review: ancient and classic games",
+"f": "Looking back at the oldest games and placing them on a world map"
+},
+{
+"d": 31,
+"lv": "beginner",
+"t": "Mahjong",
+"f": "Tiles, sets and patterns in a game with roots in China"
+},
+{
+"d": 32,
+"lv": "beginner",
+"t": "Chinese checkers",
+"f": "A star-shaped game that actually comes from a German version of Halma, not from China"
+},
+{
+"d": 33,
+"lv": "beginner",
+"t": "Reversi and Othello",
+"f": "Flipping discs to take over the board in a simple yet deep game"
+},
+{
+"d": 34,
+"lv": "beginner",
+"t": "Connect Four",
+"f": "Dropping discs to make a line of four, and the strategy behind it"
+},
+{
+"d": 35,
+"lv": "beginner",
+"t": "Word game: Rhymes",
+"f": "Finding words that rhyme and building playful little verses"
+},
+{
+"d": 36,
+"lv": "beginner",
+"t": "Tic-tac-toe and its variants",
+"f": "The simplest grid game and fun ways to make it richer"
+},
+{
+"d": 37,
+"lv": "beginner",
+"t": "Monopoly and its history",
+"f": "How a game called The Landlord's Game became a family classic"
+},
+{
+"d": 38,
+"lv": "beginner",
+"t": "Scrabble: the classic word game",
+"f": "Alfred Butts' tile game and how words score points on a board"
+},
+{
+"d": 39,
+"lv": "beginner",
+"t": "Trivial Pursuit and quiz games",
+"f": "Question cards, categories and the fun of knowing things"
+},
+{
+"d": 40,
+"lv": "beginner",
+"t": "Word game: Hangman",
+"f": "Guessing letters to reveal a hidden word before time runs out"
+},
+{
+"d": 41,
+"lv": "beginner",
+"t": "Pictionary and drawing games",
+"f": "Guessing words from quick sketches, no art skills needed"
+},
+{
+"d": 42,
+"lv": "beginner",
+"t": "Jenga and dexterity games",
+"f": "Steady hands, balance and suspense in physical games"
+},
+{
+"d": 43,
+"lv": "beginner",
+"t": "Card games that feel like board games",
+"f": "Uno and other simple games families play at the table"
+},
+{
+"d": 44,
+"lv": "beginner",
+"t": "Classic family games night",
+"f": "Choosing easy games that work for all ages"
+},
+{
+"d": 45,
+"lv": "beginner",
+"t": "Word game: Describe it without saying it",
+"f": "Explaining a word while avoiding the most obvious hints"
+},
+{
+"d": 46,
+"lv": "beginner",
+"t": "Good sportsmanship",
+"f": "Winning kindly, losing gracefully and having fun either way"
+},
+{
+"d": 47,
+"lv": "beginner",
+"t": "Teaching a game to friends",
+"f": "Explaining the goal first and the details later"
+},
+{
+"d": 48,
+"lv": "beginner",
+"t": "House rules",
+"f": "Small changes players invent and when they help or hurt"
+},
+{
+"d": 49,
+"lv": "beginner",
+"t": "Playing with children",
+"f": "Simple games, gentle rules and keeping everyone involved"
+},
+{
+"d": 50,
+"lv": "beginner",
+"t": "Word game: Alphabet journey",
+"f": "Taking turns naming things from A to Z on a theme"
+},
+{
+"d": 51,
+"lv": "beginner",
+"t": "Game vocabulary",
+"f": "Useful words like turn, round, move, score and tie"
+},
+{
+"d": 52,
+"lv": "beginner",
+"t": "Talking about games in small talk",
+"f": "Phrases to suggest, explain and comment on games"
+},
+{
+"d": 53,
+"lv": "beginner",
+"t": "Taking care of your games",
+"f": "Storing boxes, sleeving cards and keeping pieces together"
+},
+{
+"d": 54,
+"lv": "beginner",
+"t": "Choosing a game for a group",
+"f": "Player count, length, complexity and mood"
+},
+{
+"d": 55,
+"lv": "beginner",
+"t": "Word game: Word association",
+"f": "Saying the first word that comes to mind and seeing where it leads"
+},
+{
+"d": 56,
+"lv": "beginner",
+"t": "The modern board game boom",
+"f": "How new games since the 1990s brought many people back to the table"
+},
+{
+"d": 57,
+"lv": "beginner",
+"t": "Catan",
+"f": "Trading resources and building settlements on a hex-tile island"
+},
+{
+"d": 58,
+"lv": "beginner",
+"t": "Carcassonne",
+"f": "Placing tiles to build a medieval landscape of roads and cities"
+},
+{
+"d": 59,
+"lv": "beginner",
+"t": "Ticket to Ride",
+"f": "Collecting train cards to claim railway routes across a map"
+},
+{
+"d": 60,
+"lv": "beginner",
+"t": "Review: from classics to modern games",
+"f": "Comparing old and new favourites and what each offers"
+},
+{
+"d": 61,
+"lv": "beginner",
+"t": "Word game: Spelling bee",
+"f": "Spelling words aloud letter by letter, from easy to tricky"
+},
+{
+"d": 62,
+"lv": "beginner",
+"t": "Pandemic and cooperative play",
+"f": "Working together against the game instead of against each other"
+},
+{
+"d": 63,
+"lv": "beginner",
+"t": "Dixit and imaginative games",
+"f": "Dreamlike pictures, clever clues and guessing what others mean"
+},
+{
+"d": 64,
+"lv": "beginner",
+"t": "Codenames",
+"f": "Giving one-word clues to help your team find secret words"
+},
+{
+"d": 65,
+"lv": "beginner",
+"t": "Word game: Codenames-style clues",
+"f": "Finding one word that connects several others"
+},
+{
+"d": 66,
+"lv": "beginner",
+"t": "Azul",
+"f": "Drafting colourful tiles to decorate a palace wall"
+},
+{
+"d": 67,
+"lv": "beginner",
+"t": "Wingspan",
+"f": "Attracting birds to your wildlife preserves in an engine-building game"
+},
+{
+"d": 68,
+"lv": "beginner",
+"t": "Splendor",
+"f": "Collecting gems and cards to build a growing economy"
+},
+{
+"d": 69,
+"lv": "beginner",
+"t": "7 Wonders",
+"f": "Drafting cards at the same time to build an ancient civilization"
+},
+{
+"d": 70,
+"lv": "beginner",
+"t": "Word game: Opposites",
+"f": "Finding antonyms quickly in a friendly race"
+},
+{
+"d": 71,
+"lv": "beginner",
+"t": "Kingdomino and quick tile games",
+"f": "Fast, light games that are easy to learn"
+},
+{
+"d": 72,
+"lv": "beginner",
+"t": "Patchwork and two-player games",
+"f": "Games designed especially for two people"
+},
+{
+"d": 73,
+"lv": "beginner",
+"t": "Hanabi",
+"f": "A cooperative card game where you see everyone's cards but your own"
+},
+{
+"d": 74,
+"lv": "beginner",
+"t": "Spot It and speed games",
+"f": "Quick reflexes and pattern matching in fast party games"
+},
+{
+"d": 75,
+"lv": "beginner",
+"t": "Word game: Compound words",
+"f": "Joining two words into one, like sunflower or rainbow"
+},
+{
+"d": 76,
+"lv": "beginner",
+"t": "Party games",
+"f": "Big groups, laughter and simple rules"
+},
+{
+"d": 77,
+"lv": "beginner",
+"t": "Light strategy games",
+"f": "Games with real choices that still play in under an hour"
+},
+{
+"d": 78,
+"lv": "beginner",
+"t": "Gateway games",
+"f": "First modern games that open the door to the hobby"
+},
+{
+"d": 79,
+"lv": "beginner",
+"t": "Board game awards",
+"f": "The Spiel des Jahres and other prizes for great games"
+},
+{
+"d": 80,
+"lv": "beginner",
+"t": "Word game: Synonyms",
+"f": "Finding different words with similar meanings"
+},
+{
+"d": 81,
+"lv": "beginner",
+"t": "Germany and the rise of eurogames",
+"f": "Why Germany became a centre of modern board game design"
+},
+{
+"d": 82,
+"lv": "beginner",
+"t": "The Essen game fair",
+"f": "A huge yearly event in Germany where new games are presented"
+},
+{
+"d": 83,
+"lv": "beginner",
+"t": "Board game cafes",
+"f": "Places to play, learn new games and meet people"
+},
+{
+"d": 84,
+"lv": "beginner",
+"t": "Game designers as authors",
+"f": "Why designers' names appear on modern game boxes"
+},
+{
+"d": 85,
+"lv": "beginner",
+"t": "Review: modern classics",
+"f": "Choosing three modern games you would love to try and why"
+},
+{
+"d": 86,
+"lv": "beginner",
+"t": "Word game: Ghost",
+"f": "Adding letters one by one without being the one who completes a word"
+},
+{
+"d": 87,
+"lv": "beginner",
+"t": "Dice probability made simple",
+"f": "Why seven is the most common total with two dice"
+},
+{
+"d": 88,
+"lv": "beginner",
+"t": "Expected value in games",
+"f": "Thinking about what a choice gives you on average"
+},
+{
+"d": 89,
+"lv": "beginner",
+"t": "Thinking ahead",
+"f": "Planning a few moves in advance instead of only reacting"
+},
+{
+"d": 90,
+"lv": "beginner",
+"t": "Word game: Word ladder",
+"f": "Changing one letter at a time to turn one word into another"
+},
+{
+"d": 91,
+"lv": "beginner",
+"t": "Resource management",
+"f": "Using limited wood, coins or actions wisely"
+},
+{
+"d": 92,
+"lv": "beginner",
+"t": "Short-term versus long-term plans",
+"f": "When to grab points now and when to invest for later"
+},
+{
+"d": 93,
+"lv": "beginner",
+"t": "Reading the table",
+"f": "Watching what other players need and plan"
+},
+{
+"d": 94,
+"lv": "beginner",
+"t": "Bluffing basics",
+"f": "Making others believe something about your cards or plans, in a friendly way"
+},
+{
+"d": 95,
+"lv": "beginner",
+"t": "Word game: Palindromes",
+"f": "Words and phrases that read the same backwards"
+},
+{
+"d": 96,
+"lv": "beginner",
+"t": "Chess opening principles",
+"f": "Control the centre, develop pieces and keep your king safe"
+},
+{
+"d": 97,
+"lv": "beginner",
+"t": "Chess endgame basics",
+"f": "Simple winning techniques when few pieces remain"
+},
+{
+"d": 98,
+"lv": "beginner",
+"t": "Go opening ideas",
+"f": "Corners, sides and centre in the first moves of Go"
+},
+{
+"d": 99,
+"lv": "beginner",
+"t": "Backgammon strategy basics",
+"f": "Running, blocking and building a strong position"
+},
+{
+"d": 100,
+"lv": "beginner",
+"t": "Word game: Crossword basics",
+"f": "How crossword grids and clues work"
+},
+{
+"d": 101,
+"lv": "beginner",
+"t": "Mancala counting tricks",
+"f": "Planning sowing moves to capture more seeds"
+},
+{
+"d": 102,
+"lv": "beginner",
+"t": "Dominoes strategy",
+"f": "Tracking tiles and blocking your opponents"
+},
+{
+"d": 103,
+"lv": "beginner",
+"t": "Mahjong hands and patterns",
+"f": "Recognizing common sets and how to build them"
+},
+{
+"d": 104,
+"lv": "beginner",
+"t": "Scrabble strategy",
+"f": "Using premium squares, short words and keeping good tiles"
+},
+{
+"d": 105,
+"lv": "beginner",
+"t": "Word game: Two-letter words",
+"f": "Short words that help a lot in tile word games"
+},
+{
+"d": 106,
+"lv": "beginner",
+"t": "Strategy in Catan",
+"f": "Choosing good starting spots and trading well"
+},
+{
+"d": 107,
+"lv": "beginner",
+"t": "Strategy in Ticket to Ride",
+"f": "Planning routes and timing when to claim them"
+},
+{
+"d": 108,
+"lv": "beginner",
+"t": "Strategy in cooperative games",
+"f": "Communicating and sharing the load as a team"
+},
+{
+"d": 109,
+"lv": "beginner",
+"t": "Strategy in party games",
+"f": "Reading your group and being a good clue giver"
+},
+{
+"d": 110,
+"lv": "beginner",
+"t": "Word game: Hidden words",
+"f": "Finding small words inside longer ones"
+},
+{
+"d": 111,
+"lv": "beginner",
+"t": "Playing online and on apps",
+"f": "Digital versions of board games and playing with friends far away"
+},
+{
+"d": 112,
+"lv": "beginner",
+"t": "Solo board gaming",
+"f": "Games and modes you can enjoy on your own"
+},
+{
+"d": 113,
+"lv": "beginner",
+"t": "Games for travel",
+"f": "Small, portable games for trains, planes and cafes"
+},
+{
+"d": 114,
+"lv": "beginner",
+"t": "Building your game shelf",
+"f": "Choosing a varied collection without buying too much"
+},
+{
+"d": 115,
+"lv": "beginner",
+"t": "Word game: Tongue twisters",
+"f": "Saying tricky phrases fast and laughing at the mistakes"
+},
+{
+"d": 116,
+"lv": "beginner",
+"t": "Games from your childhood",
+"f": "Remembering the games you played growing up and what they taught you"
+},
+{
+"d": 117,
+"lv": "beginner",
+"t": "Games played in different countries",
+"f": "Favourite family games from around the world"
+},
+{
+"d": 118,
+"lv": "beginner",
+"t": "Word game: Story chain",
+"f": "Building a story together one sentence at a time"
+},
+{
+"d": 119,
+"lv": "beginner",
+"t": "Hosting your first game night",
+"f": "Snacks, seating, timing and picking the right games"
+},
+{
+"d": 120,
+"lv": "beginner",
+"t": "Review: the beginner player's toolkit",
+"f": "Revisiting rules, families, classics and strategy basics"
+},
+{
+"d": 121,
+"lv": "intermediate",
+"t": "What is a game mechanic",
+"f": "The building blocks of rules and how they create different experiences"
+},
+{
+"d": 122,
+"lv": "intermediate",
+"t": "Worker placement",
+"f": "Sending your pieces to action spaces before others take them"
+},
+{
+"d": 123,
+"lv": "intermediate",
+"t": "Deck-building",
+"f": "Starting with a small deck and improving it as you play"
+},
+{
+"d": 124,
+"lv": "intermediate",
+"t": "Tile placement",
+"f": "Laying tiles to build maps, patterns and landscapes"
+},
+{
+"d": 125,
+"lv": "intermediate",
+"t": "Word game: Boggle-style grids",
+"f": "Finding words in a grid of letters against the clock"
+},
+{
+"d": 126,
+"lv": "intermediate",
+"t": "Engine building",
+"f": "Creating combinations that produce more and more each turn"
+},
+{
+"d": 127,
+"lv": "intermediate",
+"t": "Area control",
+"f": "Competing for influence over regions of a map"
+},
+{
+"d": 128,
+"lv": "intermediate",
+"t": "Set collection",
+"f": "Gathering matching or related items for points"
+},
+{
+"d": 129,
+"lv": "intermediate",
+"t": "Card drafting",
+"f": "Picking a card and passing the rest to your neighbour"
+},
+{
+"d": 130,
+"lv": "intermediate",
+"t": "Word game: Letter tiles challenge",
+"f": "Making the longest word from seven random letters"
+},
+{
+"d": 131,
+"lv": "intermediate",
+"t": "Roll-and-write games",
+"f": "Rolling dice and marking choices on your own sheet"
+},
+{
+"d": 132,
+"lv": "intermediate",
+"t": "Push your luck",
+"f": "Deciding when to keep going and when to stop safely"
+},
+{
+"d": 133,
+"lv": "intermediate",
+"t": "Hidden roles and friendly deduction",
+"f": "Guessing who is on which team through talk and clues"
+},
+{
+"d": 134,
+"lv": "intermediate",
+"t": "Cooperative mechanics",
+"f": "How games create challenge when everyone plays together"
+},
+{
+"d": 135,
+"lv": "intermediate",
+"t": "Word game: Taboo-style",
+"f": "Describing a word while avoiding a list of forbidden words"
+},
+{
+"d": 136,
+"lv": "intermediate",
+"t": "Auctions and bidding",
+"f": "Deciding how much something is worth to you"
+},
+{
+"d": 137,
+"lv": "intermediate",
+"t": "Trading and negotiation",
+"f": "Making deals that help you without helping others too much"
+},
+{
+"d": 138,
+"lv": "intermediate",
+"t": "Pattern building",
+"f": "Arranging pieces or tiles into shapes for points"
+},
+{
+"d": 139,
+"lv": "intermediate",
+"t": "Route building",
+"f": "Connecting places on a map with tracks, roads or lines"
+},
+{
+"d": 140,
+"lv": "intermediate",
+"t": "Word game: Rhyming riddles",
+"f": "Guessing words from short rhyming clues"
+},
+{
+"d": 141,
+"lv": "intermediate",
+"t": "Real-time games",
+"f": "Playing simultaneously against a timer instead of taking turns"
+},
+{
+"d": 142,
+"lv": "intermediate",
+"t": "Dexterity games",
+"f": "Flicking, stacking and balancing as part of play"
+},
+{
+"d": 143,
+"lv": "intermediate",
+"t": "Abstract strategy games",
+"f": "Pure logic games with no luck and little theme"
+},
+{
+"d": 144,
+"lv": "intermediate",
+"t": "Legacy games",
+"f": "Games that change permanently as you play a campaign"
+},
+{
+"d": 145,
+"lv": "intermediate",
+"t": "Word game: Portmanteau words",
+"f": "Blending words together, like brunch from breakfast and lunch"
+},
+{
+"d": 146,
+"lv": "intermediate",
+"t": "Hand management",
+"f": "Deciding when to play, keep or discard your cards"
+},
+{
+"d": 147,
+"lv": "intermediate",
+"t": "Action points",
+"f": "Spending a limited budget of actions each turn"
+},
+{
+"d": 148,
+"lv": "intermediate",
+"t": "Variable player powers",
+"f": "Giving each player a special ability"
+},
+{
+"d": 149,
+"lv": "intermediate",
+"t": "Asymmetric games",
+"f": "Players with different goals, rules or pieces"
+},
+{
+"d": 150,
+"lv": "intermediate",
+"t": "Review: the mechanics toolbox",
+"f": "Matching games you know to the mechanics they use"
+},
+{
+"d": 151,
+"lv": "intermediate",
+"t": "Eurogames and thematic games",
+"f": "Two design traditions and what each emphasizes"
+},
+{
+"d": 152,
+"lv": "intermediate",
+"t": "Player elimination versus everyone to the end",
+"f": "Why many modern games keep all players involved"
+},
+{
+"d": 153,
+"lv": "intermediate",
+"t": "Catch-up mechanisms",
+"f": "Rules that help trailing players get back into the game"
+},
+{
+"d": 154,
+"lv": "intermediate",
+"t": "Downtime",
+"f": "Waiting between turns and how designers reduce it"
+},
+{
+"d": 155,
+"lv": "intermediate",
+"t": "Word game: Alliteration",
+"f": "Building phrases where every word starts with the same sound"
+},
+{
+"d": 156,
+"lv": "intermediate",
+"t": "Analysis paralysis",
+"f": "When players think too long, and friendly ways to speed up"
+},
+{
+"d": 157,
+"lv": "intermediate",
+"t": "Kingmaking",
+"f": "When a losing player decides who wins, and how games avoid it"
+},
+{
+"d": 158,
+"lv": "intermediate",
+"t": "Player count and scaling",
+"f": "Why some games shine with two players and others with six"
+},
+{
+"d": 159,
+"lv": "intermediate",
+"t": "Game length and complexity",
+"f": "Weight ratings and finding the right challenge level"
+},
+{
+"d": 160,
+"lv": "intermediate",
+"t": "Word game: Mystery word",
+"f": "Guessing a secret word from clues that get easier"
+},
+{
+"d": 161,
+"lv": "intermediate",
+"t": "Dominion and the deck-building revolution",
+"f": "The game that popularized deck-building in 2008"
+},
+{
+"d": 162,
+"lv": "intermediate",
+"t": "Agricola and worker placement classics",
+"f": "Farming, feeding your family and planning ahead"
+},
+{
+"d": 163,
+"lv": "intermediate",
+"t": "Role selection games",
+"f": "Choosing roles that help you and also your opponents"
+},
+{
+"d": 164,
+"lv": "intermediate",
+"t": "Power Grid and auction economics",
+"f": "Bidding for power plants and managing resources"
+},
+{
+"d": 165,
+"lv": "intermediate",
+"t": "Word game: Fill the gap",
+"f": "Completing common phrases and sayings with a missing word"
+},
+{
+"d": 166,
+"lv": "intermediate",
+"t": "Terraforming Mars and big engine games",
+"f": "Building a long-term engine over many generations"
+},
+{
+"d": 167,
+"lv": "intermediate",
+"t": "Pandemic Legacy and campaign play",
+"f": "How a campaign turns one game into a story over many sessions"
+},
+{
+"d": 168,
+"lv": "intermediate",
+"t": "Exploration and adventure games",
+"f": "Discovering maps, places and stories in games that grow over many sessions"
+},
+{
+"d": 169,
+"lv": "intermediate",
+"t": "Concordia and elegant design",
+"f": "A game with simple rules and deep choices"
+},
+{
+"d": 170,
+"lv": "intermediate",
+"t": "Word game: Wordplay puns",
+"f": "Gentle jokes based on words that sound alike"
+},
+{
+"d": 171,
+"lv": "intermediate",
+"t": "The Mind and communication limits",
+"f": "Cooperating without talking and why it feels magical"
+},
+{
+"d": 172,
+"lv": "intermediate",
+"t": "Just One and cooperative word games",
+"f": "Giving clues together and removing duplicates"
+},
+{
+"d": 173,
+"lv": "intermediate",
+"t": "Love Letter and micro games",
+"f": "Tiny games with very few cards and big decisions"
+},
+{
+"d": 174,
+"lv": "intermediate",
+"t": "Sushi Go and family drafting",
+"f": "A cute, fast introduction to card drafting"
+},
+{
+"d": 175,
+"lv": "intermediate",
+"t": "Word game: Category countdown",
+"f": "Listing as many items in a category as you can in one minute"
+},
+{
+"d": 176,
+"lv": "intermediate",
+"t": "Probability with cards",
+"f": "Counting what is left in the deck to make better choices"
+},
+{
+"d": 177,
+"lv": "intermediate",
+"t": "Tempo",
+"f": "Gaining time and making every turn count"
+},
+{
+"d": 178,
+"lv": "intermediate",
+"t": "Efficiency",
+"f": "Getting the most value out of each action"
+},
+{
+"d": 179,
+"lv": "intermediate",
+"t": "Flexibility versus focus",
+"f": "Keeping options open or committing to one strategy"
+},
+{
+"d": 180,
+"lv": "intermediate",
+"t": "Review: deeper mechanics and design traditions",
+"f": "Explaining your favourite game using the terms you have learned"
+},
+{
+"d": 181,
+"lv": "intermediate",
+"t": "Word game: Odd one out",
+"f": "Finding which word does not belong in a group and why"
+},
+{
+"d": 182,
+"lv": "intermediate",
+"t": "Opening moves in modern games",
+"f": "How the first turns set up the rest of the game"
+},
+{
+"d": 183,
+"lv": "intermediate",
+"t": "Midgame decisions",
+"f": "Adapting your plan as the board changes"
+},
+{
+"d": 184,
+"lv": "intermediate",
+"t": "Endgame timing",
+"f": "Knowing when the game will end and planning your last turns"
+},
+{
+"d": 185,
+"lv": "intermediate",
+"t": "Counting points as you play",
+"f": "Keeping track of scores to make smarter choices"
+},
+{
+"d": 186,
+"lv": "intermediate",
+"t": "Word game: Rebus puzzles",
+"f": "Reading words and phrases from pictures and their positions"
+},
+{
+"d": 187,
+"lv": "intermediate",
+"t": "Reading opponents in a friendly way",
+"f": "Noticing patterns in how others play"
+},
+{
+"d": 188,
+"lv": "intermediate",
+"t": "Denial",
+"f": "Taking what an opponent needs, and when it is worth it"
+},
+{
+"d": 189,
+"lv": "intermediate",
+"t": "Risk management",
+"f": "Balancing safe plays and bold moves"
+},
+{
+"d": 190,
+"lv": "intermediate",
+"t": "Learning from losses",
+"f": "Reviewing a game to understand what to try next time"
+},
+{
+"d": 191,
+"lv": "intermediate",
+"t": "Word game: Definitions bluff",
+"f": "Inventing a fake meaning for a rare word and guessing the real one"
+},
+{
+"d": 192,
+"lv": "intermediate",
+"t": "Chess tactics: forks and pins",
+"f": "Simple tactical patterns that win material"
+},
+{
+"d": 193,
+"lv": "intermediate",
+"t": "Chess: thinking in plans",
+"f": "Choosing goals for your pieces in the middlegame"
+},
+{
+"d": 194,
+"lv": "intermediate",
+"t": "The Elo rating system",
+"f": "How chess and other games measure player strength"
+},
+{
+"d": 195,
+"lv": "intermediate",
+"t": "Famous chess matches",
+"f": "Historic games and champions that inspired players"
+},
+{
+"d": 196,
+"lv": "intermediate",
+"t": "Word game: Chess words",
+"f": "Exploring words like checkmate, gambit and stalemate in everyday language"
+},
+{
+"d": 197,
+"lv": "intermediate",
+"t": "Go concepts: life and territory",
+"f": "Eyes, groups and the balance between attack and defence"
+},
+{
+"d": 198,
+"lv": "intermediate",
+"t": "Shogi and its captured pieces",
+"f": "Japanese chess where captured pieces return to play"
+},
+{
+"d": 199,
+"lv": "intermediate",
+"t": "Xiangqi",
+"f": "Chinese chess with a river, a palace and cannons"
+},
+{
+"d": 200,
+"lv": "intermediate",
+"t": "Mancala variants around the world",
+"f": "Different rules from Africa, Asia and the Caribbean"
+},
+{
+"d": 201,
+"lv": "intermediate",
+"t": "Word game: Secret word puzzles",
+"f": "Finding a hidden word by guessing letters and getting colour feedback"
+},
+{
+"d": 202,
+"lv": "intermediate",
+"t": "Card games with board game ideas",
+"f": "Rummy, trick-taking and their influence on modern design"
+},
+{
+"d": 203,
+"lv": "intermediate",
+"t": "Trick-taking games",
+"f": "Leading, following suit and winning tricks"
+},
+{
+"d": 204,
+"lv": "intermediate",
+"t": "Climbing card games",
+"f": "Playing higher combinations to get rid of your cards"
+},
+{
+"d": 205,
+"lv": "intermediate",
+"t": "Traditional games of Latin America",
+"f": "Popular table games from the region"
+},
+{
+"d": 206,
+"lv": "intermediate",
+"t": "Word game: Country and capital chain",
+"f": "Linking geography words in a fun memory game"
+},
+{
+"d": 207,
+"lv": "intermediate",
+"t": "Traditional games of Asia",
+"f": "From carrom to go and other well-loved table games"
+},
+{
+"d": 208,
+"lv": "intermediate",
+"t": "Traditional games of Africa",
+"f": "Mancala family games and strategy games across the continent"
+},
+{
+"d": 209,
+"lv": "intermediate",
+"t": "Traditional games of Europe",
+"f": "From tarot card games to Nine Men's Morris"
+},
+{
+"d": 210,
+"lv": "intermediate",
+"t": "Traditional games of the Middle East",
+"f": "Backgammon, ancient boards and coffee house culture"
+},
+{
+"d": 211,
+"lv": "intermediate",
+"t": "Review: strategy and traditions",
+"f": "Linking strategic ideas with games from different cultures"
+},
+{
+"d": 212,
+"lv": "intermediate",
+"t": "Word game: Crossword clues",
+"f": "Solving straightforward and playful crossword clues"
+},
+{
+"d": 213,
+"lv": "intermediate",
+"t": "The history of the crossword",
+"f": "From Arthur Wynne's first word cross puzzle in 1913 to today"
+},
+{
+"d": 214,
+"lv": "intermediate",
+"t": "The history of Scrabble",
+"f": "From Criss-Crosses to a worldwide word game with tournaments"
+},
+{
+"d": 215,
+"lv": "intermediate",
+"t": "Word games in other languages",
+"f": "How letter values change from one language to another"
+},
+{
+"d": 216,
+"lv": "intermediate",
+"t": "Lewis Carroll's word ladders",
+"f": "The author of Alice who invented the Doublets puzzle"
+},
+{
+"d": 217,
+"lv": "intermediate",
+"t": "Word game: Cryptic clues made easy",
+"f": "Simple wordplay clues with hidden meanings"
+},
+{
+"d": 218,
+"lv": "intermediate",
+"t": "Language learning with games",
+"f": "Using word and party games to practise a new language"
+},
+{
+"d": 219,
+"lv": "intermediate",
+"t": "Number games at the table",
+"f": "Games that make arithmetic fun and quick"
+},
+{
+"d": 220,
+"lv": "intermediate",
+"t": "Memory games",
+"f": "Matching pairs and remembering positions"
+},
+{
+"d": 221,
+"lv": "intermediate",
+"t": "Logic puzzles in games",
+"f": "Deduction grids and clue-based reasoning"
+},
+{
+"d": 222,
+"lv": "intermediate",
+"t": "Word game: Synonym chain",
+"f": "Linking words with similar meanings as far as you can"
+},
+{
+"d": 223,
+"lv": "intermediate",
+"t": "Deduction games",
+"f": "Using clues to work out hidden information"
+},
+{
+"d": 224,
+"lv": "intermediate",
+"t": "Social games and conversation",
+"f": "Games that are mainly about talking and laughing"
+},
+{
+"d": 225,
+"lv": "intermediate",
+"t": "Storytelling games",
+"f": "Building stories together with cards, dice and imagination"
+},
+{
+"d": 226,
+"lv": "intermediate",
+"t": "Drawing and creativity games",
+"f": "Games that reward imagination over skill"
+},
+{
+"d": 227,
+"lv": "intermediate",
+"t": "Word game: Make a story from five words",
+"f": "Using five random words in one short story"
+},
+{
+"d": 228,
+"lv": "intermediate",
+"t": "Game theme and mood",
+"f": "How art, story and setting make a game feel special"
+},
+{
+"d": 229,
+"lv": "intermediate",
+"t": "Board game art and illustration",
+"f": "How artists shape the first impression of a game"
+},
+{
+"d": 230,
+"lv": "intermediate",
+"t": "Components and quality",
+"f": "Wooden pieces, cards, inserts and why they matter"
+},
+{
+"d": 231,
+"lv": "intermediate",
+"t": "Rulebooks that teach well",
+"f": "Examples, diagrams and clear structure"
+},
+{
+"d": 232,
+"lv": "intermediate",
+"t": "Word game: Anagram names",
+"f": "Rearranging the letters of names into new words"
+},
+{
+"d": 233,
+"lv": "intermediate",
+"t": "Iconography",
+"f": "Symbols that explain rules at a glance"
+},
+{
+"d": 234,
+"lv": "intermediate",
+"t": "Colour-blind friendly design",
+"f": "Using shapes and patterns besides colour"
+},
+{
+"d": 235,
+"lv": "intermediate",
+"t": "Accessibility at the table",
+"f": "Making games welcoming for players with different needs"
+},
+{
+"d": 236,
+"lv": "intermediate",
+"t": "Family weight versus expert weight",
+"f": "How complexity changes who a game is for"
+},
+{
+"d": 237,
+"lv": "intermediate",
+"t": "Word game: Spoonerisms",
+"f": "Swapping the first sounds of words for funny results"
+},
+{
+"d": 238,
+"lv": "intermediate",
+"t": "Game clubs and meetups",
+"f": "Finding regular groups to play with"
+},
+{
+"d": 239,
+"lv": "intermediate",
+"t": "Board game conventions",
+"f": "Big events to play, learn and meet designers"
+},
+{
+"d": 240,
+"lv": "intermediate",
+"t": "Review: words, themes and the gaming community",
+"f": "Revisiting word games, design features and ways to meet players"
+},
+{
+"d": 241,
+"lv": "intermediate",
+"t": "Teaching complex games",
+"f": "Breaking long rules into steps and starting with a sample round"
+},
+{
+"d": 242,
+"lv": "intermediate",
+"t": "Hosting a themed game night",
+"f": "Building an evening around a theme or style of games"
+},
+{
+"d": 243,
+"lv": "intermediate",
+"t": "Word game: Word golf",
+"f": "Reaching a target word in as few letter changes as possible"
+},
+{
+"d": 244,
+"lv": "intermediate",
+"t": "Playing faster without rushing",
+"f": "Habits that keep games lively and turns short"
+},
+{
+"d": 245,
+"lv": "intermediate",
+"t": "Keeping score fairly",
+"f": "Score pads, scoring apps and checking totals together"
+},
+{
+"d": 246,
+"lv": "intermediate",
+"t": "Handling disagreements about rules",
+"f": "Looking it up calmly and agreeing on a ruling"
+},
+{
+"d": 247,
+"lv": "intermediate",
+"t": "Game night for mixed groups",
+"f": "Mixing new and experienced players happily"
+},
+{
+"d": 248,
+"lv": "intermediate",
+"t": "Word game: Acronym game",
+"f": "Inventing funny phrases from random letters"
+},
+{
+"d": 249,
+"lv": "intermediate",
+"t": "Your top five games so far",
+"f": "Ranking favourites and explaining what each does well"
+},
+{
+"d": 250,
+"lv": "intermediate",
+"t": "Planning your advanced journey",
+"f": "Choosing what to explore next: design, competition or culture"
+},
+{
+"d": 251,
+"lv": "advanced",
+"t": "Thinking like a game designer",
+"f": "Looking at games as systems of choices and feedback"
+},
+{
+"d": 252,
+"lv": "advanced",
+"t": "The core loop",
+"f": "The repeated cycle of actions at the heart of every game"
+},
+{
+"d": 253,
+"lv": "advanced",
+"t": "Meaningful choices",
+"f": "Why good games offer decisions with trade-offs"
+},
+{
+"d": 254,
+"lv": "advanced",
+"t": "Theme and mechanics working together",
+"f": "When the rules feel like the story they tell"
+},
+{
+"d": 255,
+"lv": "advanced",
+"t": "Word game: Invent a game name",
+"f": "Creating catchy titles for imaginary games"
+},
+{
+"d": 256,
+"lv": "advanced",
+"t": "Player interaction",
+"f": "Direct, indirect and cooperative ways players affect each other"
+},
+{
+"d": 257,
+"lv": "advanced",
+"t": "Balance",
+"f": "Making sure no single strategy always wins"
+},
+{
+"d": 258,
+"lv": "advanced",
+"t": "Randomness as a design tool",
+"f": "Using luck to create variety and surprise"
+},
+{
+"d": 259,
+"lv": "advanced",
+"t": "Information: open, hidden and secret",
+"f": "How what players know changes a game"
+},
+{
+"d": 260,
+"lv": "advanced",
+"t": "Word game: Rules in ten words",
+"f": "Summing up a game's rules in a tiny sentence"
+},
+{
+"d": 261,
+"lv": "advanced",
+"t": "Pacing and tension",
+"f": "How games build up to an exciting finish"
+},
+{
+"d": 262,
+"lv": "advanced",
+"t": "Endgame triggers",
+"f": "Ways a game knows when it is over"
+},
+{
+"d": 263,
+"lv": "advanced",
+"t": "Scoring systems",
+"f": "Victory points, majorities and multiplier ideas"
+},
+{
+"d": 264,
+"lv": "advanced",
+"t": "Replayability",
+"f": "Variable setups and options that make games feel new each time"
+},
+{
+"d": 265,
+"lv": "advanced",
+"t": "Word game: Game jargon quiz",
+"f": "Testing yourself on terms like meeple, engine and downtime"
+},
+{
+"d": 266,
+"lv": "advanced",
+"t": "Making a paper prototype",
+"f": "Using cards, paper and coins to test an idea quickly"
+},
+{
+"d": 267,
+"lv": "advanced",
+"t": "Your first game idea",
+"f": "Choosing a theme and a core mechanic for your own design"
+},
+{
+"d": 268,
+"lv": "advanced",
+"t": "Playtesting",
+"f": "Watching others play your game and learning from it"
+},
+{
+"d": 269,
+"lv": "advanced",
+"t": "Collecting feedback",
+"f": "Asking good questions after a test game"
+},
+{
+"d": 270,
+"lv": "advanced",
+"t": "Iterating a design",
+"f": "Changing one thing at a time and testing again"
+},
+{
+"d": 271,
+"lv": "advanced",
+"t": "Review: the designer's toolbox",
+"f": "Using design terms to explain how your favourite game works"
+},
+{
+"d": 272,
+"lv": "advanced",
+"t": "Writing clear rules",
+"f": "Structure, examples and simple language for rulebooks"
+},
+{
+"d": 273,
+"lv": "advanced",
+"t": "Word game: Instructions in rhyme",
+"f": "Turning simple rules into a fun rhyme"
+},
+{
+"d": 274,
+"lv": "advanced",
+"t": "Designing cards",
+"f": "Layout, text size and readability on a small surface"
+},
+{
+"d": 275,
+"lv": "advanced",
+"t": "Designing a board",
+"f": "Spaces, paths and clarity on the main game board"
+},
+{
+"d": 276,
+"lv": "advanced",
+"t": "Choosing components",
+"f": "When to use dice, tokens, tiles or cards"
+},
+{
+"d": 277,
+"lv": "advanced",
+"t": "Designing for two players",
+"f": "Keeping tension high with only two people"
+},
+{
+"d": 278,
+"lv": "advanced",
+"t": "Designing cooperative games",
+"f": "Creating a challenge that the game itself controls"
+},
+{
+"d": 279,
+"lv": "advanced",
+"t": "Word game: Clue writing",
+"f": "Writing your own one-word clues for a word-guessing game"
+},
+{
+"d": 280,
+"lv": "advanced",
+"t": "Designing party games",
+"f": "Simple rules that create laughter in big groups"
+},
+{
+"d": 281,
+"lv": "advanced",
+"t": "Designing word games",
+"f": "Using letters, meanings and sounds as game material"
+},
+{
+"d": 282,
+"lv": "advanced",
+"t": "Designing educational games",
+"f": "Learning goals that fit naturally into play"
+},
+{
+"d": 283,
+"lv": "advanced",
+"t": "Designing short games",
+"f": "Getting depth into fifteen minutes"
+},
+{
+"d": 284,
+"lv": "advanced",
+"t": "Solo modes and automated opponents",
+"f": "How designers simulate rival players"
+},
+{
+"d": 285,
+"lv": "advanced",
+"t": "Word game: Theme brainstorm",
+"f": "Listing as many possible game themes as you can"
+},
+{
+"d": 286,
+"lv": "advanced",
+"t": "How games get published",
+"f": "From prototype to publisher, in general terms"
+},
+{
+"d": 287,
+"lv": "advanced",
+"t": "Crowdfunding games in general",
+"f": "How some designers fund games with the help of players"
+},
+{
+"d": 288,
+"lv": "advanced",
+"t": "Self-publishing basics",
+"f": "What making a game on your own involves"
+},
+{
+"d": 289,
+"lv": "advanced",
+"t": "Localization of games",
+"f": "Translating rules and cards for other countries"
+},
+{
+"d": 290,
+"lv": "advanced",
+"t": "Review: from idea to box",
+"f": "Following one game from first idea to finished product"
+},
+{
+"d": 291,
+"lv": "advanced",
+"t": "Word game: Box blurb",
+"f": "Writing a short, exciting back-of-the-box description"
+},
+{
+"d": 292,
+"lv": "advanced",
+"t": "Competitive play",
+"f": "Tournaments, clubs and how serious play differs from casual"
+},
+{
+"d": 293,
+"lv": "advanced",
+"t": "Chess tournaments",
+"f": "Formats, time controls and the etiquette of competition"
+},
+{
+"d": 294,
+"lv": "advanced",
+"t": "Go professionals and ranks",
+"f": "Kyu, dan and the culture of professional Go"
+},
+{
+"d": 295,
+"lv": "advanced",
+"t": "Scrabble tournaments",
+"f": "Word lists, timers and expert play"
+},
+{
+"d": 296,
+"lv": "advanced",
+"t": "Word game: Seven-letter words",
+"f": "Spotting long words hidden in letter racks"
+},
+{
+"d": 297,
+"lv": "advanced",
+"t": "Deep Blue and chess computers",
+"f": "The 1997 match between Garry Kasparov and IBM's Deep Blue"
+},
+{
+"d": 298,
+"lv": "advanced",
+"t": "AlphaGo and Go",
+"f": "The 2016 match where an AI beat Go master Lee Sedol"
+},
+{
+"d": 299,
+"lv": "advanced",
+"t": "Computers as training partners",
+"f": "How players use software to learn and improve"
+},
+{
+"d": 300,
+"lv": "advanced",
+"t": "Puzzles and problems",
+"f": "Chess problems, Go problems and daily practice"
+},
+{
+"d": 301,
+"lv": "advanced",
+"t": "Word game: Daily word puzzles",
+"f": "How short daily puzzles became a shared habit worldwide"
+},
+{
+"d": 302,
+"lv": "advanced",
+"t": "Mind sports",
+"f": "Games recognized as sports of the mind and their competitions"
+},
+{
+"d": 303,
+"lv": "advanced",
+"t": "Speed chess and blitz",
+"f": "Fast games, quick thinking and their special excitement"
+},
+{
+"d": 304,
+"lv": "advanced",
+"t": "Correspondence games",
+"f": "Playing slowly by post or online over days and weeks"
+},
+{
+"d": 305,
+"lv": "advanced",
+"t": "Famous game players",
+"f": "Champions of chess, go and Scrabble and what we learn from them"
+},
+{
+"d": 306,
+"lv": "advanced",
+"t": "Word game: Famous names anagrams",
+"f": "Finding hidden words in names of famous games"
+},
+{
+"d": 307,
+"lv": "advanced",
+"t": "Review: competition and computers",
+"f": "Comparing human play and computer play in classic games"
+},
+{
+"d": 308,
+"lv": "advanced",
+"t": "Games and history",
+"f": "What old games tell us about the people who played them"
+},
+{
+"d": 309,
+"lv": "advanced",
+"t": "Archaeology of games",
+"f": "Boards found in tombs, temples and ancient streets"
+},
+{
+"d": 310,
+"lv": "advanced",
+"t": "Rules rediscovered",
+"f": "How historians reconstruct the rules of forgotten games"
+},
+{
+"d": 311,
+"lv": "advanced",
+"t": "Word game: Ancient words",
+"f": "Exploring game words that come from old languages"
+},
+{
+"d": 312,
+"lv": "advanced",
+"t": "Games in art and literature",
+"f": "Paintings, novels and films where games play a role"
+},
+{
+"d": 313,
+"lv": "advanced",
+"t": "Games and mathematics",
+"f": "Combinatorics, game theory and puzzles in play"
+},
+{
+"d": 314,
+"lv": "advanced",
+"t": "Game theory in simple terms",
+"f": "Choices, strategies and the idea of a best response"
+},
+{
+"d": 315,
+"lv": "advanced",
+"t": "Games and the brain",
+"f": "Memory, attention and planning skills used in play"
+},
+{
+"d": 316,
+"lv": "advanced",
+"t": "Word game: Brain teaser words",
+"f": "Riddles that play with the meaning of words"
+},
+{
+"d": 317,
+"lv": "advanced",
+"t": "Games and friendship",
+"f": "How playing together builds trust and connection"
+},
+{
+"d": 318,
+"lv": "advanced",
+"t": "Games across generations",
+"f": "Grandparents, parents and children at one table"
+},
+{
+"d": 319,
+"lv": "advanced",
+"t": "Games as a cultural bridge",
+"f": "Learning about other cultures by playing their games"
+},
+{
+"d": 320,
+"lv": "advanced",
+"t": "Games in schools",
+"f": "How teachers use board games to make learning fun"
+},
+{
+"d": 321,
+"lv": "advanced",
+"t": "Word game: Words from other languages",
+"f": "Guessing the meaning of fun words from around the world"
+},
+{
+"d": 322,
+"lv": "advanced",
+"t": "Games and wellbeing",
+"f": "Relaxation, focus and joy from a regular game night"
+},
+{
+"d": 323,
+"lv": "advanced",
+"t": "Games at work",
+"f": "Team-building through cooperative and party games"
+},
+{
+"d": 324,
+"lv": "advanced",
+"t": "Games for travellers",
+"f": "Learning local games when you visit a new country"
+},
+{
+"d": 325,
+"lv": "advanced",
+"t": "Game collecting",
+"f": "Collectors, rare editions and caring for old games"
+},
+{
+"d": 326,
+"lv": "advanced",
+"t": "Word game: Spot the made-up word",
+"f": "Finding the invented word among real ones"
+},
+{
+"d": 327,
+"lv": "advanced",
+"t": "Review: games and culture",
+"f": "Connecting history, science and society through games"
+},
+{
+"d": 328,
+"lv": "advanced",
+"t": "Advanced chess: pawn structure",
+"f": "How pawn chains and weaknesses shape long-term plans"
+},
+{
+"d": 329,
+"lv": "advanced",
+"t": "Advanced go: influence and thickness",
+"f": "Strong shapes that pay off later in the game"
+},
+{
+"d": 330,
+"lv": "advanced",
+"t": "Advanced Scrabble: rack balance",
+"f": "Keeping a healthy mix of vowels and consonants"
+},
+{
+"d": 331,
+"lv": "advanced",
+"t": "Advanced Catan: trade psychology",
+"f": "Making offers that others are happy to accept"
+},
+{
+"d": 332,
+"lv": "advanced",
+"t": "Advanced cooperative play: quarterbacking",
+"f": "Sharing decisions so no one player takes over"
+},
+{
+"d": 333,
+"lv": "advanced",
+"t": "Word game: Lipograms",
+"f": "Writing sentences without using a certain letter"
+},
+{
+"d": 334,
+"lv": "advanced",
+"t": "Advanced bluffing and reading tells",
+"f": "Staying unpredictable in hidden information games"
+},
+{
+"d": 335,
+"lv": "advanced",
+"t": "Advanced engine building",
+"f": "Timing when to switch from building to scoring"
+},
+{
+"d": 336,
+"lv": "advanced",
+"t": "Advanced endgame planning",
+"f": "Counting exact turns and points to finish strongly"
+},
+{
+"d": 337,
+"lv": "advanced",
+"t": "Building a game library for a group",
+"f": "Choosing titles that cover many moods and player counts"
+},
+{
+"d": 338,
+"lv": "advanced",
+"t": "Curating a game night menu",
+"f": "Planning an opener, a main game and a closer"
+},
+{
+"d": 339,
+"lv": "advanced",
+"t": "Being a great game host",
+"f": "Welcoming, explaining and keeping energy high"
+},
+{
+"d": 340,
+"lv": "advanced",
+"t": "Running a small tournament",
+"f": "Brackets, timing and fair pairing for friends"
+},
+{
+"d": 341,
+"lv": "advanced",
+"t": "Word game: Hosting phrases",
+"f": "Useful phrases for welcoming players and explaining rules"
+},
+{
+"d": 342,
+"lv": "advanced",
+"t": "Starting a game club",
+"f": "Finding members, places and a regular rhythm"
+},
+{
+"d": 343,
+"lv": "advanced",
+"t": "Reviewing a board game",
+"f": "Writing about rules, feel, components and who it is for"
+},
+{
+"d": 344,
+"lv": "advanced",
+"t": "Recording a game review video",
+"f": "Presenting a game clearly and with enthusiasm"
+},
+{
+"d": 345,
+"lv": "advanced",
+"t": "Making a game recommendation list",
+"f": "Tailoring suggestions to friends' tastes"
+},
+{
+"d": 346,
+"lv": "advanced",
+"t": "Word game: Review adjectives",
+"f": "Collecting words to describe how a game feels"
+},
+{
+"d": 347,
+"lv": "advanced",
+"t": "Your own game: theme and goal",
+"f": "Defining what your game is about and how to win"
+},
+{
+"d": 348,
+"lv": "advanced",
+"t": "Your own game: core mechanic",
+"f": "Choosing the main action players repeat"
+},
+{
+"d": 349,
+"lv": "advanced",
+"t": "Your own game: components",
+"f": "Listing the pieces, cards and board you need"
+},
+{
+"d": 350,
+"lv": "advanced",
+"t": "Your own game: first rules draft",
+"f": "Writing a one-page rule sheet"
+},
+{
+"d": 351,
+"lv": "advanced",
+"t": "Word game: Name your game",
+"f": "Brainstorming a title and tagline for your design"
+},
+{
+"d": 352,
+"lv": "advanced",
+"t": "Your own game: first playtest",
+"f": "Playing your prototype and noting what happens"
+},
+{
+"d": 353,
+"lv": "advanced",
+"t": "Your own game: fixing problems",
+"f": "Choosing the most important change after a test"
+},
+{
+"d": 354,
+"lv": "advanced",
+"t": "Your own game: second playtest",
+"f": "Testing again and comparing with the first version"
+},
+{
+"d": 355,
+"lv": "advanced",
+"t": "Your own game: presenting it",
+"f": "Explaining your game to others in a short pitch"
+},
+{
+"d": 356,
+"lv": "advanced",
+"t": "Review: the designer's journey",
+"f": "Looking back at your game from idea to playtest"
+},
+{
+"d": 357,
+"lv": "advanced",
+"t": "What you have learned about classics",
+"f": "Remembering the ancient and traditional games you met"
+},
+{
+"d": 358,
+"lv": "advanced",
+"t": "What you have learned about strategy",
+"f": "Summing up the key ideas that make you a better player"
+},
+{
+"d": 359,
+"lv": "advanced",
+"t": "What you have learned about design",
+"f": "The main tools designers use to create good games"
+},
+{
+"d": 360,
+"lv": "advanced",
+"t": "What you have learned about word games",
+"f": "Your favourite word games and how they grew your vocabulary"
+},
+{
+"d": 361,
+"lv": "advanced",
+"t": "Word game: Grand final challenge",
+"f": "A mix of anagrams, rhymes and clues to celebrate your progress"
+},
+{
+"d": 362,
+"lv": "advanced",
+"t": "Your next year of games",
+"f": "Planning new games, people and places to play"
+},
+{
+"d": 363,
+"lv": "advanced",
+"t": "Sharing games with new friends",
+"f": "Using games as a bridge to meet people from other cultures"
+},
+{
+"d": 364,
+"lv": "advanced",
+"t": "Your personal game philosophy",
+"f": "Writing what makes a game night great for you"
+},
+{
+"d": 365,
+"lv": "advanced",
+"t": "Celebrating 365 days of games",
+"f": "A final look back at your path and an invitation to keep playing"
+}
+]
+}

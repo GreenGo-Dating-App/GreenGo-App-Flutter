@@ -1,0 +1,2195 @@
+{
+"topic": "casual_chat",
+"days": [
+{
+"d": 1,
+"lv": "beginner",
+"t": "Saying hello",
+"f": "Friendly greetings and how to start a relaxed chat"
+},
+{
+"d": 2,
+"lv": "beginner",
+"t": "How was your day",
+"f": "Talking about the small moments that made your day"
+},
+{
+"d": 3,
+"lv": "beginner",
+"t": "Introducing yourself",
+"f": "Sharing your name, where you're from and one fun fact"
+},
+{
+"d": 4,
+"lv": "beginner",
+"t": "Where you live",
+"f": "Describing your town, neighbourhood or city"
+},
+{
+"d": 5,
+"lv": "beginner",
+"t": "The weather chat",
+"f": "Why weather is the classic small talk opener and how to go beyond it"
+},
+{
+"d": 6,
+"lv": "beginner",
+"t": "Favourite foods",
+"f": "Chatting about dishes you love and ones you'd rather skip"
+},
+{
+"d": 7,
+"lv": "beginner",
+"t": "Breakfast habits",
+"f": "Sweet, savoury, early, late: how people start the day"
+},
+{
+"d": 8,
+"lv": "beginner",
+"t": "Coffee or tea",
+"f": "Comparing drinks, little rituals and favourite spots"
+},
+{
+"d": 9,
+"lv": "beginner",
+"t": "Weekend plans",
+"f": "Talking about plans, big or tiny, for the weekend"
+},
+{
+"d": 10,
+"lv": "beginner",
+"t": "Asking follow-up questions",
+"f": "Keeping a chat going by asking one more question"
+},
+{
+"d": 11,
+"lv": "beginner",
+"t": "Hobbies and free time",
+"f": "Sharing what you enjoy doing when you're free"
+},
+{
+"d": 12,
+"lv": "beginner",
+"t": "Music you love",
+"f": "Favourite songs, artists and music for different moods"
+},
+{
+"d": 13,
+"lv": "beginner",
+"t": "Films and series",
+"f": "Recommending something you watched and enjoyed"
+},
+{
+"d": 14,
+"lv": "beginner",
+"t": "Books and reading",
+"f": "Chatting about stories you love or want to read"
+},
+{
+"d": 15,
+"lv": "beginner",
+"t": "Pets and animals",
+"f": "Pets you have, had or dream of"
+},
+{
+"d": 16,
+"lv": "beginner",
+"t": "Your favourite season",
+"f": "What you love about each time of year"
+},
+{
+"d": 17,
+"lv": "beginner",
+"t": "Sharing small news",
+"f": "Telling a friend about something new in your life"
+},
+{
+"d": 18,
+"lv": "beginner",
+"t": "Morning person or night owl",
+"f": "When you feel most awake and why"
+},
+{
+"d": 19,
+"lv": "beginner",
+"t": "Your daily routine",
+"f": "Walking through a typical day"
+},
+{
+"d": 20,
+"lv": "beginner",
+"t": "Getting around town",
+"f": "Bikes, buses, walking and favourite routes"
+},
+{
+"d": 21,
+"lv": "beginner",
+"t": "Showing interest",
+"f": "Small reactions like really and that's great that keep chats alive"
+},
+{
+"d": 22,
+"lv": "beginner",
+"t": "Your favourite place to relax",
+"f": "Parks, cafés, cosy corners at home and why they help"
+},
+{
+"d": 23,
+"lv": "beginner",
+"t": "Snacks and treats",
+"f": "Favourite snacks from around the world"
+},
+{
+"d": 24,
+"lv": "beginner",
+"t": "Cooking at home",
+"f": "Easy dishes you like to make"
+},
+{
+"d": 25,
+"lv": "beginner",
+"t": "Eating out",
+"f": "Favourite kinds of restaurants and memorable meals"
+},
+{
+"d": 26,
+"lv": "beginner",
+"t": "Games you enjoy",
+"f": "Board games, video games and playground classics"
+},
+{
+"d": 27,
+"lv": "beginner",
+"t": "Sports to watch or play",
+"f": "Sharing what sports you enjoy, if any"
+},
+{
+"d": 28,
+"lv": "beginner",
+"t": "Childhood favourites",
+"f": "Toys, cartoons and snacks you loved as a kid"
+},
+{
+"d": 29,
+"lv": "beginner",
+"t": "Funny little moments",
+"f": "Sharing something that made you laugh this week"
+},
+{
+"d": 30,
+"lv": "beginner",
+"t": "Review: easy openers",
+"f": "Practising greetings, follow-ups and everyday topics"
+},
+{
+"d": 31,
+"lv": "beginner",
+"t": "Travel dreams",
+"f": "Places you'd love to visit someday"
+},
+{
+"d": 32,
+"lv": "beginner",
+"t": "Trips you remember",
+"f": "A favourite trip and what made it special"
+},
+{
+"d": 33,
+"lv": "beginner",
+"t": "Holidays and celebrations",
+"f": "How you like to celebrate special days"
+},
+{
+"d": 34,
+"lv": "beginner",
+"t": "Festivals around the world",
+"f": "Fun festivals you know or would love to see"
+},
+{
+"d": 35,
+"lv": "beginner",
+"t": "Your hometown's specialities",
+"f": "Food, places and traditions from where you grew up"
+},
+{
+"d": 36,
+"lv": "beginner",
+"t": "Learning languages",
+"f": "Words you love and funny language mix-ups"
+},
+{
+"d": 37,
+"lv": "beginner",
+"t": "Favourite words",
+"f": "Words that sound beautiful or funny to you"
+},
+{
+"d": 38,
+"lv": "beginner",
+"t": "Small talk at a café",
+"f": "Easy phrases for chatting with people around you"
+},
+{
+"d": 39,
+"lv": "beginner",
+"t": "Talking with neighbours",
+"f": "Friendly chats in the hallway or on the street"
+},
+{
+"d": 40,
+"lv": "beginner",
+"t": "Remembering details",
+"f": "Using what someone told you before in a new chat"
+},
+{
+"d": 41,
+"lv": "beginner",
+"t": "Compliments that feel natural",
+"f": "Noticing something nice and saying it simply"
+},
+{
+"d": 42,
+"lv": "beginner",
+"t": "Talking about work or study",
+"f": "Sharing what you do without making it formal"
+},
+{
+"d": 43,
+"lv": "beginner",
+"t": "Dream jobs",
+"f": "Jobs you dreamed of as a kid or would try for fun"
+},
+{
+"d": 44,
+"lv": "beginner",
+"t": "Skills you'd like to learn",
+"f": "Things you'd love to be good at"
+},
+{
+"d": 45,
+"lv": "beginner",
+"t": "Your favourite apps",
+"f": "Apps that make life easier or more fun"
+},
+{
+"d": 46,
+"lv": "beginner",
+"t": "Gadgets you use every day",
+"f": "Everyday tech you use the most and why"
+},
+{
+"d": 47,
+"lv": "beginner",
+"t": "Phone habits",
+"f": "Photos, messages and how you use your phone"
+},
+{
+"d": 48,
+"lv": "beginner",
+"t": "Photos you love",
+"f": "The story behind a favourite photo"
+},
+{
+"d": 49,
+"lv": "beginner",
+"t": "Colours and style",
+"f": "Favourite colours and what you like to wear"
+},
+{
+"d": 50,
+"lv": "beginner",
+"t": "Shopping habits",
+"f": "Markets, malls or online: how you like to shop"
+},
+{
+"d": 51,
+"lv": "beginner",
+"t": "Your favourite markets",
+"f": "Street markets, food stalls and local finds"
+},
+{
+"d": 52,
+"lv": "beginner",
+"t": "Sharing a recommendation",
+"f": "Recommending something you love with a reason"
+},
+{
+"d": 53,
+"lv": "beginner",
+"t": "Asking for recommendations",
+"f": "How to ask others for their favourites"
+},
+{
+"d": 54,
+"lv": "beginner",
+"t": "Nature and the outdoors",
+"f": "Beaches, mountains, forests and favourite views"
+},
+{
+"d": 55,
+"lv": "beginner",
+"t": "Gardens and plants",
+"f": "Plants you grow or would like to grow"
+},
+{
+"d": 56,
+"lv": "beginner",
+"t": "Rainy day activities",
+"f": "What you like to do when it rains"
+},
+{
+"d": 57,
+"lv": "beginner",
+"t": "Sunny day activities",
+"f": "Favourite things to do on a sunny day"
+},
+{
+"d": 58,
+"lv": "beginner",
+"t": "The night sky",
+"f": "Stars, the moon and evening walks"
+},
+{
+"d": 59,
+"lv": "beginner",
+"t": "Keeping a chat light",
+"f": "Steering gently away from heavy topics"
+},
+{
+"d": 60,
+"lv": "beginner",
+"t": "Review: sharing and asking",
+"f": "Practising recommendations, details and light topics"
+},
+{
+"d": 61,
+"lv": "beginner",
+"t": "Would you rather",
+"f": "Fun choices that spark easy conversation"
+},
+{
+"d": 62,
+"lv": "beginner",
+"t": "This or that",
+"f": "Quick-fire questions like beach or mountains"
+},
+{
+"d": 63,
+"lv": "beginner",
+"t": "If you could",
+"f": "Imaginative questions about superpowers and dream days"
+},
+{
+"d": 64,
+"lv": "beginner",
+"t": "Your perfect day",
+"f": "Describing an ideal day from morning to night"
+},
+{
+"d": 65,
+"lv": "beginner",
+"t": "Your perfect meal",
+"f": "Building a dream menu from starter to dessert"
+},
+{
+"d": 66,
+"lv": "beginner",
+"t": "Your dream home",
+"f": "Where and how you'd love to live"
+},
+{
+"d": 67,
+"lv": "beginner",
+"t": "A day in another city",
+"f": "Picking a city to spend one day in"
+},
+{
+"d": 68,
+"lv": "beginner",
+"t": "Time travel for fun",
+"f": "Which era you'd visit just to look around"
+},
+{
+"d": 69,
+"lv": "beginner",
+"t": "Favourite inventions",
+"f": "Everyday inventions you're grateful for"
+},
+{
+"d": 70,
+"lv": "beginner",
+"t": "Animals you find amazing",
+"f": "Fascinating animal facts to share"
+},
+{
+"d": 71,
+"lv": "beginner",
+"t": "Fun facts",
+"f": "Sharing surprising, true facts in a chat"
+},
+{
+"d": 72,
+"lv": "beginner",
+"t": "Trivia time",
+"f": "Light quiz questions to play together"
+},
+{
+"d": 73,
+"lv": "beginner",
+"t": "Riddles and wordplay",
+"f": "Simple riddles and puns to enjoy"
+},
+{
+"d": 74,
+"lv": "beginner",
+"t": "Jokes that travel well",
+"f": "Gentle jokes that work across cultures"
+},
+{
+"d": 75,
+"lv": "beginner",
+"t": "Laughing together",
+"f": "Why shared laughter builds friendships"
+},
+{
+"d": 76,
+"lv": "beginner",
+"t": "Talking about the past week",
+"f": "Highlights and lowlights of your week"
+},
+{
+"d": 77,
+"lv": "beginner",
+"t": "Small wins to share",
+"f": "Celebrating little victories in conversation"
+},
+{
+"d": 78,
+"lv": "beginner",
+"t": "Things you're looking forward to",
+"f": "Upcoming plans that make you smile"
+},
+{
+"d": 79,
+"lv": "beginner",
+"t": "Sending a friendly check-in",
+"f": "Messages that show you're thinking of someone"
+},
+{
+"d": 80,
+"lv": "beginner",
+"t": "Replying to messages",
+"f": "Keeping text chats warm and natural"
+},
+{
+"d": 81,
+"lv": "beginner",
+"t": "Voice messages",
+"f": "When and how to send a friendly voice note"
+},
+{
+"d": 82,
+"lv": "beginner",
+"t": "Chatting online politely",
+"f": "Friendly habits for online conversations"
+},
+{
+"d": 83,
+"lv": "beginner",
+"t": "Emojis and tone",
+"f": "How emojis and punctuation change meaning"
+},
+{
+"d": 84,
+"lv": "beginner",
+"t": "Greetings around the world",
+"f": "Hello and goodbye in different cultures"
+},
+{
+"d": 85,
+"lv": "beginner",
+"t": "Small talk across cultures",
+"f": "Topics that are common or avoided in different places"
+},
+{
+"d": 86,
+"lv": "beginner",
+"t": "Personal space and politeness",
+"f": "How customs about space and manners differ"
+},
+{
+"d": 87,
+"lv": "beginner",
+"t": "Polite ways to say goodbye",
+"f": "Ending chats warmly in person and online"
+},
+{
+"d": 88,
+"lv": "beginner",
+"t": "When you don't understand",
+"f": "Asking someone to repeat or explain kindly"
+},
+{
+"d": 89,
+"lv": "beginner",
+"t": "Speaking slowly and clearly",
+"f": "Making chats easy for language learners"
+},
+{
+"d": 90,
+"lv": "beginner",
+"t": "Review: fun and culture",
+"f": "Practising fun questions, messaging and cultural manners"
+},
+{
+"d": 91,
+"lv": "beginner",
+"t": "Family traditions",
+"f": "Sharing customs and habits from home"
+},
+{
+"d": 92,
+"lv": "beginner",
+"t": "Family recipes",
+"f": "Dishes passed down in your family"
+},
+{
+"d": 93,
+"lv": "beginner",
+"t": "Your favourite room at home",
+"f": "The corner of home you like the most"
+},
+{
+"d": 94,
+"lv": "beginner",
+"t": "Collections and keepsakes",
+"f": "Things you collect or keep for memories"
+},
+{
+"d": 95,
+"lv": "beginner",
+"t": "Your favourite smell",
+"f": "Scents that bring back happy memories"
+},
+{
+"d": 96,
+"lv": "beginner",
+"t": "Sounds you love",
+"f": "Rain, waves, music or city noise"
+},
+{
+"d": 97,
+"lv": "beginner",
+"t": "Seasons and memories",
+"f": "Memories linked to each season"
+},
+{
+"d": 98,
+"lv": "beginner",
+"t": "First times",
+"f": "Fun firsts like a first bike ride or first concert"
+},
+{
+"d": 99,
+"lv": "beginner",
+"t": "Lucky charms and habits",
+"f": "Small rituals people do for good luck"
+},
+{
+"d": 100,
+"lv": "beginner",
+"t": "Day 100 chat party",
+"f": "Celebrating a hundred days of chatting together"
+},
+{
+"d": 101,
+"lv": "beginner",
+"t": "Describing people kindly",
+"f": "Talking about friends and their best qualities"
+},
+{
+"d": 102,
+"lv": "beginner",
+"t": "Friends who inspire you",
+"f": "Sharing what you admire in your friends"
+},
+{
+"d": 103,
+"lv": "beginner",
+"t": "Making new friends",
+"f": "Places and ways to meet new people"
+},
+{
+"d": 104,
+"lv": "beginner",
+"t": "Group chats",
+"f": "Keeping group conversations fun and inclusive"
+},
+{
+"d": 105,
+"lv": "beginner",
+"t": "Inviting someone out",
+"f": "Easy ways to suggest a coffee or a walk"
+},
+{
+"d": 106,
+"lv": "beginner",
+"t": "Planning a meetup",
+"f": "Choosing time, place and activity together"
+},
+{
+"d": 107,
+"lv": "beginner",
+"t": "Hosting friends",
+"f": "Simple ideas for hosting at home"
+},
+{
+"d": 108,
+"lv": "beginner",
+"t": "Being a good guest",
+"f": "Small gestures that hosts appreciate"
+},
+{
+"d": 109,
+"lv": "beginner",
+"t": "Gifts and surprises",
+"f": "Favourite gifts to give and receive"
+},
+{
+"d": 110,
+"lv": "beginner",
+"t": "Birthday traditions",
+"f": "How birthdays are celebrated in different places"
+},
+{
+"d": 111,
+"lv": "beginner",
+"t": "Pets and their personalities",
+"f": "Funny habits of pets you know"
+},
+{
+"d": 112,
+"lv": "beginner",
+"t": "Local characters and places",
+"f": "Friendly local faces and spots in your area"
+},
+{
+"d": 113,
+"lv": "beginner",
+"t": "Your favourite walk",
+"f": "A route you love and what you see on it"
+},
+{
+"d": 114,
+"lv": "beginner",
+"t": "Local hidden gems",
+"f": "Places in your area that few people know"
+},
+{
+"d": 115,
+"lv": "beginner",
+"t": "Telling a mini story",
+"f": "Sharing a short story with a beginning and an end"
+},
+{
+"d": 116,
+"lv": "beginner",
+"t": "Details that paint a picture",
+"f": "Using colours, sounds and feelings in stories"
+},
+{
+"d": 117,
+"lv": "beginner",
+"t": "Listening with curiosity",
+"f": "Showing real interest in someone's story"
+},
+{
+"d": 118,
+"lv": "beginner",
+"t": "Reacting to good news",
+"f": "Celebrating others' good news warmly"
+},
+{
+"d": 119,
+"lv": "beginner",
+"t": "Your easy chat toolkit",
+"f": "Your favourite openers and follow-ups so far"
+},
+{
+"d": 120,
+"lv": "beginner",
+"t": "Review: four months of chatting",
+"f": "Looking back at topics, skills and fun moments"
+},
+{
+"d": 121,
+"lv": "intermediate",
+"t": "Going beyond small talk",
+"f": "Moving from facts to feelings and stories"
+},
+{
+"d": 122,
+"lv": "intermediate",
+"t": "Questions that open up stories",
+"f": "Asking what was that like instead of yes-no questions"
+},
+{
+"d": 123,
+"lv": "intermediate",
+"t": "Sharing opinions lightly",
+"f": "Giving your view on light topics with a smile"
+},
+{
+"d": 124,
+"lv": "intermediate",
+"t": "Agreeing and adding",
+"f": "Building on someone's idea in a chat"
+},
+{
+"d": 125,
+"lv": "intermediate",
+"t": "Disagreeing in a friendly way",
+"f": "Offering a different view kindly"
+},
+{
+"d": 126,
+"lv": "intermediate",
+"t": "Playful debates",
+"f": "Pineapple on pizza and other harmless debates"
+},
+{
+"d": 127,
+"lv": "intermediate",
+"t": "Best films of all time",
+"f": "Sharing all-time favourites and why"
+},
+{
+"d": 128,
+"lv": "intermediate",
+"t": "Underrated gems",
+"f": "Songs, films or places more people should know"
+},
+{
+"d": 129,
+"lv": "intermediate",
+"t": "Secret favourites",
+"f": "Harmless favourites you love a little secretly"
+},
+{
+"d": 130,
+"lv": "intermediate",
+"t": "Comfort food",
+"f": "Dishes that make you feel cosy"
+},
+{
+"d": 131,
+"lv": "intermediate",
+"t": "Food from other countries",
+"f": "Dishes from other cultures you love"
+},
+{
+"d": 132,
+"lv": "intermediate",
+"t": "Street food adventures",
+"f": "Favourite street foods you tried or want to try"
+},
+{
+"d": 133,
+"lv": "intermediate",
+"t": "Cooking disasters",
+"f": "Funny kitchen mistakes and lessons learned"
+},
+{
+"d": 134,
+"lv": "intermediate",
+"t": "Kitchen tricks",
+"f": "Simple tips that make cooking easier"
+},
+{
+"d": 135,
+"lv": "intermediate",
+"t": "Desserts around the world",
+"f": "Sweet treats from different cultures"
+},
+{
+"d": 136,
+"lv": "intermediate",
+"t": "Drinks and refreshments",
+"f": "Juices, teas and local drinks you like"
+},
+{
+"d": 137,
+"lv": "intermediate",
+"t": "Café culture",
+"f": "How people enjoy cafés in different countries"
+},
+{
+"d": 138,
+"lv": "intermediate",
+"t": "Mealtimes around the world",
+"f": "When and how people eat in different places"
+},
+{
+"d": 139,
+"lv": "intermediate",
+"t": "Table manners",
+"f": "Fun differences in table customs"
+},
+{
+"d": 140,
+"lv": "intermediate",
+"t": "Talking about food without judging",
+"f": "Respecting different tastes and diets"
+},
+{
+"d": 141,
+"lv": "intermediate",
+"t": "Weekend adventures",
+"f": "Telling the story of a fun weekend"
+},
+{
+"d": 142,
+"lv": "intermediate",
+"t": "Day trips",
+"f": "Short trips worth taking near you"
+},
+{
+"d": 143,
+"lv": "intermediate",
+"t": "Packing habits",
+"f": "Light packer or bring-everything traveller"
+},
+{
+"d": 144,
+"lv": "intermediate",
+"t": "Travel mishaps",
+"f": "Funny travel mix-ups with happy endings"
+},
+{
+"d": 145,
+"lv": "intermediate",
+"t": "Getting lost and found",
+"f": "Stories of wandering and discovering new places"
+},
+{
+"d": 146,
+"lv": "intermediate",
+"t": "Local transport stories",
+"f": "Trains, buses and memorable rides"
+},
+{
+"d": 147,
+"lv": "intermediate",
+"t": "Souvenirs",
+"f": "Things you bring home from trips"
+},
+{
+"d": 148,
+"lv": "intermediate",
+"t": "Postcards and travel journals",
+"f": "Ways to remember your travels"
+},
+{
+"d": 149,
+"lv": "intermediate",
+"t": "Travel bucket list",
+"f": "Experiences you'd love to have someday"
+},
+{
+"d": 150,
+"lv": "intermediate",
+"t": "Review: food and travel chats",
+"f": "Practising stories, opinions and fun debates"
+},
+{
+"d": 151,
+"lv": "intermediate",
+"t": "Music memories",
+"f": "Songs linked to special moments"
+},
+{
+"d": 152,
+"lv": "intermediate",
+"t": "Concerts and live music",
+"f": "Shows you went to or dream of"
+},
+{
+"d": 153,
+"lv": "intermediate",
+"t": "Singing and karaoke",
+"f": "Favourite songs to sing along to"
+},
+{
+"d": 154,
+"lv": "intermediate",
+"t": "Dancing",
+"f": "Dance styles you like or want to try"
+},
+{
+"d": 155,
+"lv": "intermediate",
+"t": "Instruments",
+"f": "Instruments you play or would love to learn"
+},
+{
+"d": 156,
+"lv": "intermediate",
+"t": "Art you like",
+"f": "Paintings, murals or styles that catch your eye"
+},
+{
+"d": 157,
+"lv": "intermediate",
+"t": "Museums and galleries",
+"f": "Favourite museums or exhibitions"
+},
+{
+"d": 158,
+"lv": "intermediate",
+"t": "Photography",
+"f": "Taking photos and your favourite subjects"
+},
+{
+"d": 159,
+"lv": "intermediate",
+"t": "Creative hobbies",
+"f": "Drawing, writing, crafts and more"
+},
+{
+"d": 160,
+"lv": "intermediate",
+"t": "Things you've made",
+"f": "Proudly sharing something you created"
+},
+{
+"d": 161,
+"lv": "intermediate",
+"t": "Sports moments",
+"f": "Memorable matches or personal sports memories"
+},
+{
+"d": 162,
+"lv": "intermediate",
+"t": "Staying active",
+"f": "Favourite ways to move and stay fit"
+},
+{
+"d": 163,
+"lv": "intermediate",
+"t": "Outdoor adventures",
+"f": "Hikes, swims and picnics"
+},
+{
+"d": 164,
+"lv": "intermediate",
+"t": "Games night",
+"f": "Favourite games to play with friends"
+},
+{
+"d": 165,
+"lv": "intermediate",
+"t": "Puzzles and brain games",
+"f": "Crosswords, sudoku and riddles"
+},
+{
+"d": 166,
+"lv": "intermediate",
+"t": "Video games chat",
+"f": "Favourite games and gaming memories"
+},
+{
+"d": 167,
+"lv": "intermediate",
+"t": "Books that stayed with you",
+"f": "Stories you still think about"
+},
+{
+"d": 168,
+"lv": "intermediate",
+"t": "Characters you love",
+"f": "Favourite characters from books or films"
+},
+{
+"d": 169,
+"lv": "intermediate",
+"t": "Podcasts and audio",
+"f": "Shows you like to listen to"
+},
+{
+"d": 170,
+"lv": "intermediate",
+"t": "Good news to share",
+"f": "Light, positive stories worth passing on"
+},
+{
+"d": 171,
+"lv": "intermediate",
+"t": "Heartwarming animal stories",
+"f": "Sweet stories about animals and the people who care for them"
+},
+{
+"d": 172,
+"lv": "intermediate",
+"t": "Science that amazes you",
+"f": "Simple science facts that spark wonder"
+},
+{
+"d": 173,
+"lv": "intermediate",
+"t": "Space and the universe",
+"f": "Planets, stars and big questions"
+},
+{
+"d": 174,
+"lv": "intermediate",
+"t": "How technology changed life",
+"f": "How daily life has changed with technology"
+},
+{
+"d": 175,
+"lv": "intermediate",
+"t": "Robots and the future",
+"f": "Fun ideas about future gadgets"
+},
+{
+"d": 176,
+"lv": "intermediate",
+"t": "Inventions you wish existed",
+"f": "Imaginary gadgets to solve daily problems"
+},
+{
+"d": 177,
+"lv": "intermediate",
+"t": "Life hacks",
+"f": "Little tricks that make daily life easier"
+},
+{
+"d": 178,
+"lv": "intermediate",
+"t": "Tidy or creative chaos",
+"f": "Home organisation styles and favourite tricks"
+},
+{
+"d": 179,
+"lv": "intermediate",
+"t": "Daily joys",
+"f": "Small pleasures in an ordinary day"
+},
+{
+"d": 180,
+"lv": "intermediate",
+"t": "Review: hobbies and curiosity",
+"f": "Practising chats about culture, games and science"
+},
+{
+"d": 181,
+"lv": "intermediate",
+"t": "Telling funnier stories",
+"f": "Timing, surprise and a good ending"
+},
+{
+"d": 182,
+"lv": "intermediate",
+"t": "Laughing at yourself kindly",
+"f": "Light self-humour that puts people at ease"
+},
+{
+"d": 183,
+"lv": "intermediate",
+"t": "Inside jokes",
+"f": "How shared jokes build connection"
+},
+{
+"d": 184,
+"lv": "intermediate",
+"t": "Playful teasing done kindly",
+"f": "Friendly teasing that never hurts"
+},
+{
+"d": 185,
+"lv": "intermediate",
+"t": "Reading the mood",
+"f": "Noticing when someone wants to chat or not"
+},
+{
+"d": 186,
+"lv": "intermediate",
+"t": "Changing the subject smoothly",
+"f": "Gentle ways to move to a new topic"
+},
+{
+"d": 187,
+"lv": "intermediate",
+"t": "Handling awkward moments",
+"f": "Laughing off small social slips"
+},
+{
+"d": 188,
+"lv": "intermediate",
+"t": "Filling silences naturally",
+"f": "Simple ideas when a chat goes quiet"
+},
+{
+"d": 189,
+"lv": "intermediate",
+"t": "Ending conversations warmly",
+"f": "Leaving people feeling good after a chat"
+},
+{
+"d": 190,
+"lv": "intermediate",
+"t": "Talking with someone new",
+"f": "Easy ways to chat with a stranger at an event"
+},
+{
+"d": 191,
+"lv": "intermediate",
+"t": "Chatting with older people",
+"f": "Learning from their stories and experiences"
+},
+{
+"d": 192,
+"lv": "intermediate",
+"t": "Chatting with kids",
+"f": "Playful, simple ways to talk with children"
+},
+{
+"d": 193,
+"lv": "intermediate",
+"t": "Chatting with colleagues",
+"f": "Friendly small talk at work"
+},
+{
+"d": 194,
+"lv": "intermediate",
+"t": "Lunch break conversations",
+"f": "Easy topics to share over lunch"
+},
+{
+"d": 195,
+"lv": "intermediate",
+"t": "Talking about goals casually",
+"f": "Sharing plans without pressure"
+},
+{
+"d": 196,
+"lv": "intermediate",
+"t": "Talking about habits",
+"f": "Habits you're building or changing"
+},
+{
+"d": 197,
+"lv": "intermediate",
+"t": "Morning routines around the world",
+"f": "How people start their days in different cultures"
+},
+{
+"d": 198,
+"lv": "intermediate",
+"t": "Evening routines",
+"f": "Winding down after a long day"
+},
+{
+"d": 199,
+"lv": "intermediate",
+"t": "Sleep and dreams",
+"f": "Funny or strange dreams you remember"
+},
+{
+"d": 200,
+"lv": "intermediate",
+"t": "Day 200 celebration chat",
+"f": "Two hundred days of chats and favourite topics"
+},
+{
+"d": 201,
+"lv": "intermediate",
+"t": "Cultural curiosity",
+"f": "Asking about other cultures respectfully"
+},
+{
+"d": 202,
+"lv": "intermediate",
+"t": "Idioms and expressions",
+"f": "Funny sayings from different languages"
+},
+{
+"d": 203,
+"lv": "intermediate",
+"t": "Words without translation",
+"f": "Untranslatable words from around the world"
+},
+{
+"d": 204,
+"lv": "intermediate",
+"t": "Names and their meanings",
+"f": "The stories behind names"
+},
+{
+"d": 205,
+"lv": "intermediate",
+"t": "Language learning stories",
+"f": "Funny moments when learning a language"
+},
+{
+"d": 206,
+"lv": "intermediate",
+"t": "Accents and dialects",
+"f": "Celebrating different ways of speaking"
+},
+{
+"d": 207,
+"lv": "intermediate",
+"t": "Gestures around the world",
+"f": "How gestures mean different things in different places"
+},
+{
+"d": 208,
+"lv": "intermediate",
+"t": "Holidays in other cultures",
+"f": "Celebrations you'd love to experience"
+},
+{
+"d": 209,
+"lv": "intermediate",
+"t": "Traditional clothes",
+"f": "Beautiful traditional clothes from around the world"
+},
+{
+"d": 210,
+"lv": "intermediate",
+"t": "Folk tales and legends",
+"f": "Charming stories from different cultures"
+},
+{
+"d": 211,
+"lv": "intermediate",
+"t": "Fun customs",
+"f": "Surprising everyday customs from around the world"
+},
+{
+"d": 212,
+"lv": "intermediate",
+"t": "Superstitions for fun",
+"f": "Light superstitions and their stories"
+},
+{
+"d": 213,
+"lv": "intermediate",
+"t": "Weather in different places",
+"f": "What a normal day feels like in other climates"
+},
+{
+"d": 214,
+"lv": "intermediate",
+"t": "City life versus countryside",
+"f": "Pros and cons of each lifestyle"
+},
+{
+"d": 215,
+"lv": "intermediate",
+"t": "Living abroad stories",
+"f": "Experiences of moving to or visiting another country"
+},
+{
+"d": 216,
+"lv": "intermediate",
+"t": "Culture shock moments",
+"f": "Funny surprises when visiting somewhere new"
+},
+{
+"d": 217,
+"lv": "intermediate",
+"t": "Home away from home",
+"f": "What makes a new place feel like home"
+},
+{
+"d": 218,
+"lv": "intermediate",
+"t": "Hospitality around the world",
+"f": "How guests are welcomed in different places"
+},
+{
+"d": 219,
+"lv": "intermediate",
+"t": "Sharing your culture",
+"f": "Telling others about customs from your home"
+},
+{
+"d": 220,
+"lv": "intermediate",
+"t": "Learning from differences",
+"f": "What you've learned from other cultures"
+},
+{
+"d": 221,
+"lv": "intermediate",
+"t": "School day memories",
+"f": "Fun memories from school days"
+},
+{
+"d": 222,
+"lv": "intermediate",
+"t": "Teachers who inspired you",
+"f": "A teacher you remember fondly"
+},
+{
+"d": 223,
+"lv": "intermediate",
+"t": "Childhood games",
+"f": "Games you played outdoors and indoors"
+},
+{
+"d": 224,
+"lv": "intermediate",
+"t": "Old technology",
+"f": "Gadgets from the past and how they worked"
+},
+{
+"d": 225,
+"lv": "intermediate",
+"t": "How your town has changed",
+"f": "Changes in your town or neighbourhood over the years"
+},
+{
+"d": 226,
+"lv": "intermediate",
+"t": "Family stories",
+"f": "Fun stories told at family gatherings"
+},
+{
+"d": 227,
+"lv": "intermediate",
+"t": "Things you used to believe",
+"f": "Funny childhood beliefs"
+},
+{
+"d": 228,
+"lv": "intermediate",
+"t": "Your younger self",
+"f": "What you'd tell your younger self"
+},
+{
+"d": 229,
+"lv": "intermediate",
+"t": "Proud moments",
+"f": "Achievements you're happy to share"
+},
+{
+"d": 230,
+"lv": "intermediate",
+"t": "Review: culture and memories",
+"f": "Practising cultural curiosity and storytelling"
+},
+{
+"d": 231,
+"lv": "intermediate",
+"t": "Hypothetical questions",
+"f": "Fun what-if questions to explore ideas"
+},
+{
+"d": 232,
+"lv": "intermediate",
+"t": "Desert island picks",
+"f": "Three things, books or songs for a desert island"
+},
+{
+"d": 233,
+"lv": "intermediate",
+"t": "Your ideal weekend escape",
+"f": "Designing a perfect getaway"
+},
+{
+"d": 234,
+"lv": "intermediate",
+"t": "If you ran a café",
+"f": "Designing your dream café"
+},
+{
+"d": 235,
+"lv": "intermediate",
+"t": "If you wrote a book",
+"f": "What your book would be about"
+},
+{
+"d": 236,
+"lv": "intermediate",
+"t": "Your life as a film",
+"f": "Title, genre and soundtrack of your life"
+},
+{
+"d": 237,
+"lv": "intermediate",
+"t": "Everyday superpowers",
+"f": "Small magical powers that would help in daily life"
+},
+{
+"d": 238,
+"lv": "intermediate",
+"t": "Dream dinner guests",
+"f": "Famous historical figures you'd love to chat with"
+},
+{
+"d": 239,
+"lv": "intermediate",
+"t": "Future predictions for fun",
+"f": "Playful guesses about life in the future"
+},
+{
+"d": 240,
+"lv": "intermediate",
+"t": "Your bucket list",
+"f": "Big and small dreams for the future"
+},
+{
+"d": 241,
+"lv": "intermediate",
+"t": "Little luxuries",
+"f": "Small treats that feel special"
+},
+{
+"d": 242,
+"lv": "intermediate",
+"t": "Things that make you smile",
+"f": "Everyday sources of joy"
+},
+{
+"d": 243,
+"lv": "intermediate",
+"t": "Kindness stories",
+"f": "Moments when someone was kind to you"
+},
+{
+"d": 244,
+"lv": "intermediate",
+"t": "Random acts of kindness",
+"f": "Small kind actions you could do"
+},
+{
+"d": 245,
+"lv": "intermediate",
+"t": "Gratitude chats",
+"f": "Sharing what you're thankful for"
+},
+{
+"d": 246,
+"lv": "intermediate",
+"t": "Talking about moods lightly",
+"f": "Naming moods in a simple, friendly way"
+},
+{
+"d": 247,
+"lv": "intermediate",
+"t": "Cheering someone up",
+"f": "Kind words when a friend has a rough day"
+},
+{
+"d": 248,
+"lv": "intermediate",
+"t": "Being a good listener",
+"f": "Listening without rushing to give advice"
+},
+{
+"d": 249,
+"lv": "intermediate",
+"t": "Your intermediate chat toolkit",
+"f": "Your favourite skills from this phase"
+},
+{
+"d": 250,
+"lv": "intermediate",
+"t": "Review: the middle of the path",
+"f": "Celebrating your progress and setting goals ahead"
+},
+{
+"d": 251,
+"lv": "advanced",
+"t": "Deep conversations",
+"f": "Moving into meaningful topics with care"
+},
+{
+"d": 252,
+"lv": "advanced",
+"t": "Questions that matter",
+"f": "Thoughtful questions that help people open up"
+},
+{
+"d": 253,
+"lv": "advanced",
+"t": "Sharing values",
+"f": "Talking about what matters most to you"
+},
+{
+"d": 254,
+"lv": "advanced",
+"t": "What makes a good life",
+"f": "Exploring ideas of happiness and balance"
+},
+{
+"d": 255,
+"lv": "advanced",
+"t": "Defining success",
+"f": "Different views on what success means"
+},
+{
+"d": 256,
+"lv": "advanced",
+"t": "Dreams and ambitions",
+"f": "Sharing hopes for the future"
+},
+{
+"d": 257,
+"lv": "advanced",
+"t": "Learning from challenges",
+"f": "Talking lightly about lessons from difficult times"
+},
+{
+"d": 258,
+"lv": "advanced",
+"t": "Personal growth chats",
+"f": "Ways you've changed over the years"
+},
+{
+"d": 259,
+"lv": "advanced",
+"t": "Habits of happy people",
+"f": "Ideas about everyday happiness"
+},
+{
+"d": 260,
+"lv": "advanced",
+"t": "Balance and rest",
+"f": "How you recharge and slow down"
+},
+{
+"d": 261,
+"lv": "advanced",
+"t": "Work and rest around the world",
+"f": "How different cultures balance work and free time"
+},
+{
+"d": 262,
+"lv": "advanced",
+"t": "Slow living",
+"f": "Enjoying life at a gentler pace"
+},
+{
+"d": 263,
+"lv": "advanced",
+"t": "Minimalism or collections",
+"f": "Owning less or loving your collections"
+},
+{
+"d": 264,
+"lv": "advanced",
+"t": "Simple pleasures",
+"f": "Finding joy in ordinary moments"
+},
+{
+"d": 265,
+"lv": "advanced",
+"t": "Living sustainably",
+"f": "Small eco-friendly habits you enjoy"
+},
+{
+"d": 266,
+"lv": "advanced",
+"t": "Nature and wellbeing",
+"f": "How nature lifts your mood"
+},
+{
+"d": 267,
+"lv": "advanced",
+"t": "What animals teach us",
+"f": "What animals teach us about kindness and play"
+},
+{
+"d": 268,
+"lv": "advanced",
+"t": "Community life",
+"f": "What makes a neighbourhood feel friendly"
+},
+{
+"d": 269,
+"lv": "advanced",
+"t": "Volunteering stories",
+"f": "Ways people help their communities"
+},
+{
+"d": 270,
+"lv": "advanced",
+"t": "Friendship across distance",
+"f": "Staying close to friends far away"
+},
+{
+"d": 271,
+"lv": "advanced",
+"t": "Friendship across ages",
+"f": "Friends from different generations"
+},
+{
+"d": 272,
+"lv": "advanced",
+"t": "Friendship across cultures",
+"f": "What friends from other cultures taught you"
+},
+{
+"d": 273,
+"lv": "advanced",
+"t": "What makes a good friend",
+"f": "Qualities you value in friendship"
+},
+{
+"d": 274,
+"lv": "advanced",
+"t": "Reconnecting with old friends",
+"f": "Easy ways to get back in touch"
+},
+{
+"d": 275,
+"lv": "advanced",
+"t": "Advanced listening",
+"f": "Reflecting back what someone said"
+},
+{
+"d": 276,
+"lv": "advanced",
+"t": "Asking deeper follow-ups",
+"f": "Going one level deeper in a conversation"
+},
+{
+"d": 277,
+"lv": "advanced",
+"t": "Empathy in conversation",
+"f": "Understanding the feelings behind words"
+},
+{
+"d": 278,
+"lv": "advanced",
+"t": "Letting people share",
+"f": "Listening without trying to fix everything"
+},
+{
+"d": 279,
+"lv": "advanced",
+"t": "Different views, kind words",
+"f": "Discussing different views with curiosity and respect"
+},
+{
+"d": 280,
+"lv": "advanced",
+"t": "Review: deeper talks",
+"f": "Practising meaningful questions and active listening"
+},
+{
+"d": 281,
+"lv": "advanced",
+"t": "Light philosophy",
+"f": "Fun questions about time, memory and luck"
+},
+{
+"d": 282,
+"lv": "advanced",
+"t": "Know or wonder",
+"f": "Playful thought experiments to chat about"
+},
+{
+"d": 283,
+"lv": "advanced",
+"t": "Luck or effort",
+"f": "A friendly chat about how things happen"
+},
+{
+"d": 284,
+"lv": "advanced",
+"t": "The best age to be",
+"f": "Exploring what each age offers"
+},
+{
+"d": 285,
+"lv": "advanced",
+"t": "Memory and nostalgia",
+"f": "Why we love looking back"
+},
+{
+"d": 286,
+"lv": "advanced",
+"t": "Change and new beginnings",
+"f": "How you handle fresh starts"
+},
+{
+"d": 287,
+"lv": "advanced",
+"t": "Curiosity as a lifestyle",
+"f": "Staying curious at every age"
+},
+{
+"d": 288,
+"lv": "advanced",
+"t": "A daily discovery",
+"f": "Sharing something new you learned today"
+},
+{
+"d": 289,
+"lv": "advanced",
+"t": "Wonder about the universe",
+"f": "Stars, time and the feeling of wonder"
+},
+{
+"d": 290,
+"lv": "advanced",
+"t": "Art and beauty",
+"f": "What makes something beautiful to you"
+},
+{
+"d": 291,
+"lv": "advanced",
+"t": "Music that moves you",
+"f": "Songs that touch your heart"
+},
+{
+"d": 292,
+"lv": "advanced",
+"t": "Stories that changed you",
+"f": "Books or films that shifted your view"
+},
+{
+"d": 293,
+"lv": "advanced",
+"t": "Creativity in daily life",
+"f": "Being creative in ordinary tasks"
+},
+{
+"d": 294,
+"lv": "advanced",
+"t": "Humour across cultures",
+"f": "What makes people laugh in different places"
+},
+{
+"d": 295,
+"lv": "advanced",
+"t": "Wit and wordplay",
+"f": "Clever puns and playful language"
+},
+{
+"d": 296,
+"lv": "advanced",
+"t": "Storytelling level three",
+"f": "Building suspense and a satisfying ending"
+},
+{
+"d": 297,
+"lv": "advanced",
+"t": "Telling stories with feeling",
+"f": "Sharing emotions to make stories come alive"
+},
+{
+"d": 298,
+"lv": "advanced",
+"t": "Listening to stories well",
+"f": "Reacting, asking and remembering"
+},
+{
+"d": 299,
+"lv": "advanced",
+"t": "Sharing a lesson through a story",
+"f": "Using stories to share what you've learned"
+},
+{
+"d": 300,
+"lv": "advanced",
+"t": "Day 300 chat celebration",
+"f": "Three hundred days of conversations and growth"
+},
+{
+"d": 301,
+"lv": "advanced",
+"t": "Hosting a conversation",
+"f": "Guiding a group chat so everyone joins in"
+},
+{
+"d": 302,
+"lv": "advanced",
+"t": "Including quieter people",
+"f": "Gently inviting quiet voices into the chat"
+},
+{
+"d": 303,
+"lv": "advanced",
+"t": "Balancing talking and listening",
+"f": "Sharing airtime fairly"
+},
+{
+"d": 304,
+"lv": "advanced",
+"t": "Keeping debates friendly",
+"f": "Guiding playful debates so they stay fun"
+},
+{
+"d": 305,
+"lv": "advanced",
+"t": "Bringing people together",
+"f": "Introducing friends to each other"
+},
+{
+"d": 306,
+"lv": "advanced",
+"t": "Icebreakers for groups",
+"f": "Fun games to start group conversations"
+},
+{
+"d": 307,
+"lv": "advanced",
+"t": "Conversation games",
+"f": "Story chains, two truths and a wish, and more"
+},
+{
+"d": 308,
+"lv": "advanced",
+"t": "Planning a themed get-together",
+"f": "Food, music and chat topics for a theme night"
+},
+{
+"d": 309,
+"lv": "advanced",
+"t": "Cultural exchange evenings",
+"f": "Sharing food and stories from different places"
+},
+{
+"d": 310,
+"lv": "advanced",
+"t": "Language exchange chats",
+"f": "Helping each other practise languages"
+},
+{
+"d": 311,
+"lv": "advanced",
+"t": "Being a cultural bridge",
+"f": "Explaining your culture and learning about others"
+},
+{
+"d": 312,
+"lv": "advanced",
+"t": "Respectful curiosity",
+"f": "Asking about unfamiliar customs with care"
+},
+{
+"d": 313,
+"lv": "advanced",
+"t": "Seeing people as individuals",
+"f": "Avoiding stereotypes and enjoying each person's story"
+},
+{
+"d": 314,
+"lv": "advanced",
+"t": "Finding common ground",
+"f": "Discovering shared interests across differences"
+},
+{
+"d": 315,
+"lv": "advanced",
+"t": "Shared human experiences",
+"f": "Joys that people everywhere share"
+},
+{
+"d": 316,
+"lv": "advanced",
+"t": "What home means",
+"f": "What home means to different people"
+},
+{
+"d": 317,
+"lv": "advanced",
+"t": "Belonging",
+"f": "Feeling part of a group or place"
+},
+{
+"d": 318,
+"lv": "advanced",
+"t": "Chatting in a new language",
+"f": "Tips for relaxed chats in a language you're learning"
+},
+{
+"d": 319,
+"lv": "advanced",
+"t": "Mixing languages for fun",
+"f": "Playing with words from different languages in chats"
+},
+{
+"d": 320,
+"lv": "advanced",
+"t": "Online communities",
+"f": "Finding friendly groups around shared interests"
+},
+{
+"d": 321,
+"lv": "advanced",
+"t": "Digital friendships",
+"f": "Friendships that start online"
+},
+{
+"d": 322,
+"lv": "advanced",
+"t": "Online etiquette level two",
+"f": "Kind, thoughtful habits in online spaces"
+},
+{
+"d": 323,
+"lv": "advanced",
+"t": "Taking breaks from screens",
+"f": "Balancing online and offline chats"
+},
+{
+"d": 324,
+"lv": "advanced",
+"t": "Letters and handwritten notes",
+"f": "The charm of writing by hand"
+},
+{
+"d": 325,
+"lv": "advanced",
+"t": "Phone calls versus texts",
+"f": "When each one works best"
+},
+{
+"d": 326,
+"lv": "advanced",
+"t": "Video chats with friends",
+"f": "Fun ideas for video calls"
+},
+{
+"d": 327,
+"lv": "advanced",
+"t": "Long-distance traditions",
+"f": "Rituals to stay connected with friends far away"
+},
+{
+"d": 328,
+"lv": "advanced",
+"t": "Celebrating friends' milestones",
+"f": "Ways to make friends feel special"
+},
+{
+"d": 329,
+"lv": "advanced",
+"t": "Sharing your good news well",
+"f": "Telling your news without overshadowing others"
+},
+{
+"d": 330,
+"lv": "advanced",
+"t": "Review: hosting and connecting",
+"f": "Practising group chats and cultural bridges"
+},
+{
+"d": 331,
+"lv": "advanced",
+"t": "Your conversation style",
+"f": "Discovering how you like to chat"
+},
+{
+"d": 332,
+"lv": "advanced",
+"t": "Your strengths as a chatter",
+"f": "Recognising your conversation strengths"
+},
+{
+"d": 333,
+"lv": "advanced",
+"t": "Growing your chat skills",
+"f": "Choosing one skill to keep improving"
+},
+{
+"d": 334,
+"lv": "advanced",
+"t": "Warmth and presence",
+"f": "Warmth, attention and genuine interest in others"
+},
+{
+"d": 335,
+"lv": "advanced",
+"t": "Making people feel heard",
+"f": "Small habits that show you care"
+},
+{
+"d": 336,
+"lv": "advanced",
+"t": "Remembering what matters to people",
+"f": "Following up on important details"
+},
+{
+"d": 337,
+"lv": "advanced",
+"t": "Encouraging words",
+"f": "Phrases that lift others up"
+},
+{
+"d": 338,
+"lv": "advanced",
+"t": "Giving advice when asked",
+"f": "Sharing ideas kindly and briefly"
+},
+{
+"d": 339,
+"lv": "advanced",
+"t": "Saying thank you meaningfully",
+"f": "Specific, heartfelt thanks"
+},
+{
+"d": 340,
+"lv": "advanced",
+"t": "Apologising in everyday life",
+"f": "Simple, sincere apologies"
+},
+{
+"d": 341,
+"lv": "advanced",
+"t": "Clearing up misunderstandings",
+"f": "Sorting out mix-ups calmly"
+},
+{
+"d": 342,
+"lv": "advanced",
+"t": "Positive without faking it",
+"f": "Being honest and upbeat at the same time"
+},
+{
+"d": 343,
+"lv": "advanced",
+"t": "Talking about tough days kindly",
+"f": "Sharing a bad day without heaviness"
+},
+{
+"d": 344,
+"lv": "advanced",
+"t": "Supporting a friend's dream",
+"f": "Encouraging others' goals"
+},
+{
+"d": 345,
+"lv": "advanced",
+"t": "Different tastes, good friends",
+"f": "Enjoying friends with different favourites"
+},
+{
+"d": 346,
+"lv": "advanced",
+"t": "Favourite conversations ever",
+"f": "Chats you remember and why"
+},
+{
+"d": 347,
+"lv": "advanced",
+"t": "People who taught you to talk",
+"f": "Those who shaped how you communicate"
+},
+{
+"d": 348,
+"lv": "advanced",
+"t": "Conversation lessons from the year",
+"f": "What you learned about chatting"
+},
+{
+"d": 349,
+"lv": "advanced",
+"t": "Your favourite topics",
+"f": "Topics you never get tired of"
+},
+{
+"d": 350,
+"lv": "advanced",
+"t": "Topics you'd like to explore",
+"f": "New subjects for future chats"
+},
+{
+"d": 351,
+"lv": "advanced",
+"t": "Keeping chats fresh",
+"f": "Ideas to keep future conversations lively"
+},
+{
+"d": 352,
+"lv": "advanced",
+"t": "A gratitude round",
+"f": "Thanking people who make your chats fun"
+},
+{
+"d": 353,
+"lv": "advanced",
+"t": "Your chat superpowers",
+"f": "The skills you're proudest of"
+},
+{
+"d": 354,
+"lv": "advanced",
+"t": "Starting a chat anywhere",
+"f": "Confidently opening a chat in any setting"
+},
+{
+"d": 355,
+"lv": "advanced",
+"t": "The art of the question",
+"f": "Your best questions collected"
+},
+{
+"d": 356,
+"lv": "advanced",
+"t": "The art of the story",
+"f": "Your best stories collected"
+},
+{
+"d": 357,
+"lv": "advanced",
+"t": "The art of listening",
+"f": "Your listening habits reviewed"
+},
+{
+"d": 358,
+"lv": "advanced",
+"t": "Friendship goals",
+"f": "How you'd like your friendships to grow"
+},
+{
+"d": 359,
+"lv": "advanced",
+"t": "Spreading good vibes",
+"f": "Being a warm presence wherever you go"
+},
+{
+"d": 360,
+"lv": "advanced",
+"t": "Celebrating the whole year",
+"f": "Favourite moments from 360 days of chats"
+},
+{
+"d": 361,
+"lv": "advanced",
+"t": "Final review: openers",
+"f": "Revisiting greetings, small talk and follow-ups"
+},
+{
+"d": 362,
+"lv": "advanced",
+"t": "Final review: fun",
+"f": "Revisiting games, jokes and playful questions"
+},
+{
+"d": 363,
+"lv": "advanced",
+"t": "Final review: culture",
+"f": "Revisiting cultural curiosity and respect"
+},
+{
+"d": 364,
+"lv": "advanced",
+"t": "Final review: deep talks",
+"f": "Revisiting listening, empathy and meaningful chats"
+},
+{
+"d": 365,
+"lv": "advanced",
+"t": "Graduation chat",
+"f": "Celebrating 365 days and chatting on with joy"
+}
+]
+}

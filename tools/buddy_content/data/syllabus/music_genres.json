@@ -1,0 +1,2195 @@
+{
+"topic": "music_genres",
+"days": [
+{
+"d": 1,
+"lv": "beginner",
+"t": "What makes a music genre",
+"f": "How genres group songs by rhythm, instruments, mood, history and the people who make and love them"
+},
+{
+"d": 2,
+"lv": "beginner",
+"t": "Your personal listening map",
+"f": "List the songs you love and spot the patterns that already shape your taste"
+},
+{
+"d": 3,
+"lv": "beginner",
+"t": "Rhythm and tempo basics",
+"f": "Feel the beat, count it, and notice how fast or slow tempos change the energy of a song"
+},
+{
+"d": 4,
+"lv": "beginner",
+"t": "Melody, harmony and hooks",
+"f": "What a melody is, how chords support it, and why a catchy hook sticks in your head"
+},
+{
+"d": 5,
+"lv": "beginner",
+"t": "Instruments that define a sound",
+"f": "How guitars, drums, horns, strings and synths give each genre its signature colour"
+},
+{
+"d": 6,
+"lv": "beginner",
+"t": "Voices and singing styles",
+"f": "From crooning to belting to rapping: vocal style tells you a lot about a genre"
+},
+{
+"d": 7,
+"lv": "beginner",
+"t": "Song structure: verse and chorus",
+"f": "Spot the intro, verse, chorus and bridge in your favourite songs"
+},
+{
+"d": 8,
+"lv": "beginner",
+"t": "Active listening in five minutes",
+"f": "A simple routine to hear layers, instruments and changes you usually miss"
+},
+{
+"d": 9,
+"lv": "beginner",
+"t": "How genres are born and mix",
+"f": "Genres grow from migration, new technology and musicians borrowing from each other"
+},
+{
+"d": 10,
+"lv": "beginner",
+"t": "Blues: the foundation",
+"f": "Blues from the American South: call and response, expressive voices and guitar"
+},
+{
+"d": 11,
+"lv": "beginner",
+"t": "Blue notes and the twelve-bar form",
+"f": "Hear the bent notes and the three-chord pattern that so many later styles inherit"
+},
+{
+"d": 12,
+"lv": "beginner",
+"t": "Delta blues and Chicago blues",
+"f": "Acoustic Delta blues and the electric Chicago sound of artists like Muddy Waters"
+},
+{
+"d": 13,
+"lv": "beginner",
+"t": "Gospel choirs and spirituals",
+"f": "Powerful choir singing and call and response that shaped soul and pop vocals"
+},
+{
+"d": 14,
+"lv": "beginner",
+"t": "Early jazz in New Orleans",
+"f": "Brass bands, collective improvisation and Louis Armstrong's joyful trumpet and voice"
+},
+{
+"d": 15,
+"lv": "beginner",
+"t": "Swing and the big band era",
+"f": "Bands led by Duke Ellington and Count Basie made jazz the dance music of their day"
+},
+{
+"d": 16,
+"lv": "beginner",
+"t": "Bebop: jazz gets fast",
+"f": "Charlie Parker and Dizzy Gillespie turned jazz into fast, virtuosic listening music"
+},
+{
+"d": 17,
+"lv": "beginner",
+"t": "Cool jazz and modal jazz",
+"f": "Miles Davis's Kind of Blue and a relaxed, spacious way of playing jazz"
+},
+{
+"d": 18,
+"lv": "beginner",
+"t": "Great jazz vocalists",
+"f": "Ella Fitzgerald, Billie Holiday and Sarah Vaughan: phrasing, scat and storytelling"
+},
+{
+"d": 19,
+"lv": "beginner",
+"t": "Country music roots",
+"f": "Fiddles, steel guitar and story songs from rural America, from the Carter Family onward"
+},
+{
+"d": 20,
+"lv": "beginner",
+"t": "Bluegrass",
+"f": "Banjo, mandolin and fiddle played fast with tight harmonies, pioneered by Bill Monroe"
+},
+{
+"d": 21,
+"lv": "beginner",
+"t": "Rock and roll is born",
+"f": "Chuck Berry, Little Richard and Elvis Presley mix blues, country and gospel energy"
+},
+{
+"d": 22,
+"lv": "beginner",
+"t": "Doo-wop and vocal groups",
+"f": "Street-corner harmony groups and the sweet vocal sound of the 1950s"
+},
+{
+"d": 23,
+"lv": "beginner",
+"t": "Soul music",
+"f": "Ray Charles, Aretha Franklin and Otis Redding bring gospel feeling into popular song"
+},
+{
+"d": 24,
+"lv": "beginner",
+"t": "Motown, the hit factory",
+"f": "The Detroit label of The Supremes and Stevie Wonder and its polished pop-soul sound"
+},
+{
+"d": 25,
+"lv": "beginner",
+"t": "Funk and the power of the groove",
+"f": "James Brown puts the accent on the one and turns rhythm into the star"
+},
+{
+"d": 26,
+"lv": "beginner",
+"t": "The British Invasion",
+"f": "The Beatles, The Rolling Stones and how British bands reshaped rock in the 1960s"
+},
+{
+"d": 27,
+"lv": "beginner",
+"t": "Folk revival and singer-songwriters",
+"f": "Acoustic guitars and personal lyrics from Joan Baez, Bob Dylan and Joni Mitchell"
+},
+{
+"d": 28,
+"lv": "beginner",
+"t": "Sixties studio experiments",
+"f": "How bands used new studio tricks, sitars and tape effects to stretch the sound of rock"
+},
+{
+"d": 29,
+"lv": "beginner",
+"t": "Hard rock takes off",
+"f": "Loud riffs and big stages with Led Zeppelin, Deep Purple and AC/DC"
+},
+{
+"d": 30,
+"lv": "beginner",
+"t": "Review: roots of modern music",
+"f": "Look back on blues, jazz, country, soul and rock and draw your own family tree"
+},
+{
+"d": 31,
+"lv": "beginner",
+"t": "Heavy metal basics",
+"f": "Black Sabbath, Iron Maiden and the distorted riffs, speed and power of metal"
+},
+{
+"d": 32,
+"lv": "beginner",
+"t": "Progressive rock",
+"f": "Long songs, unusual time signatures and big concepts from Pink Floyd, Yes and Genesis"
+},
+{
+"d": 33,
+"lv": "beginner",
+"t": "Punk: fast, short and DIY",
+"f": "The Ramones and The Clash showed that anyone with three chords could start a band"
+},
+{
+"d": 34,
+"lv": "beginner",
+"t": "New wave and post-punk",
+"f": "Synths, angular guitars and style from Blondie, Talking Heads and The Cure"
+},
+{
+"d": 35,
+"lv": "beginner",
+"t": "Disco and the dance floor",
+"f": "Four-on-the-floor beats, lush strings and Donna Summer and Chic filling the clubs"
+},
+{
+"d": 36,
+"lv": "beginner",
+"t": "What makes pop music pop",
+"f": "Short songs, strong hooks and broad appeal: pop as a format more than a single sound"
+},
+{
+"d": 37,
+"lv": "beginner",
+"t": "Eighties pop icons",
+"f": "Michael Jackson, Madonna and Prince in the age of the music video"
+},
+{
+"d": 38,
+"lv": "beginner",
+"t": "Power ballads and arena sound",
+"f": "Big drums, soaring choruses and the stadium-sized ballad"
+},
+{
+"d": 39,
+"lv": "beginner",
+"t": "Hip hop and its four elements",
+"f": "DJing, MCing, breaking and graffiti, born at Bronx block parties in the 1970s"
+},
+{
+"d": 40,
+"lv": "beginner",
+"t": "Old-school hip hop",
+"f": "DJ Kool Herc's breaks, Grandmaster Flash and the first rap records"
+},
+{
+"d": 41,
+"lv": "beginner",
+"t": "Golden age hip hop",
+"f": "Rich sampling and clever rhymes from Run-DMC, De La Soul and A Tribe Called Quest"
+},
+{
+"d": 42,
+"lv": "beginner",
+"t": "How rap flow works",
+"f": "Rhythm, rhyme schemes and delivery: what makes a rapper's flow unique"
+},
+{
+"d": 43,
+"lv": "beginner",
+"t": "R&B evolves",
+"f": "From Whitney Houston's big voice to the smooth, beat-driven R&B of the 1990s"
+},
+{
+"d": 44,
+"lv": "beginner",
+"t": "Reggae and Jamaican music",
+"f": "Reggae's offbeat guitar skank and laid-back groove, with Bob Marley as its global voice"
+},
+{
+"d": 45,
+"lv": "beginner",
+"t": "Ska and rocksteady",
+"f": "The upbeat horns of ska slowing down into the sweet, relaxed rocksteady of the 1960s"
+},
+{
+"d": 46,
+"lv": "beginner",
+"t": "Dub and the sound system",
+"f": "Producers like King Tubby turned the mixing desk into an instrument of echo and bass"
+},
+{
+"d": 47,
+"lv": "beginner",
+"t": "Salsa",
+"f": "Born in New York from Cuban son and Caribbean rhythms, with Celia Cruz as its queen"
+},
+{
+"d": 48,
+"lv": "beginner",
+"t": "Cuban son and the clave",
+"f": "The two-bar clave pattern that holds together son, salsa and much Latin music"
+},
+{
+"d": 49,
+"lv": "beginner",
+"t": "Samba from Brazil",
+"f": "The rhythm of Rio's carnival schools, with surdo drums, cavaquinho and samba de roda"
+},
+{
+"d": 50,
+"lv": "beginner",
+"t": "Bossa nova",
+"f": "João Gilberto, Tom Jobim and a soft, sophisticated blend of samba and jazz"
+},
+{
+"d": 51,
+"lv": "beginner",
+"t": "Tango from the Río de la Plata",
+"f": "The bandoneón, Carlos Gardel's voice and Astor Piazzolla's nuevo tango"
+},
+{
+"d": 52,
+"lv": "beginner",
+"t": "Cumbia across Latin America",
+"f": "From Colombia's coast to Mexico and Argentina: one rhythm, many local flavours"
+},
+{
+"d": 53,
+"lv": "beginner",
+"t": "Mariachi and Mexican music",
+"f": "Trumpets, violins and guitarrón, plus ranchera and son jarocho traditions"
+},
+{
+"d": 54,
+"lv": "beginner",
+"t": "Reggaeton",
+"f": "The dembow rhythm from Puerto Rico and Panama that became a global pop force"
+},
+{
+"d": 55,
+"lv": "beginner",
+"t": "Flamenco",
+"f": "Guitar, cante and palmas from Andalusia, and the intense feeling called duende"
+},
+{
+"d": 56,
+"lv": "beginner",
+"t": "Fado from Portugal",
+"f": "The Portuguese guitar and songs of saudade, with Amália Rodrigues as its icon"
+},
+{
+"d": 57,
+"lv": "beginner",
+"t": "French chanson",
+"f": "Édith Piaf, Jacques Brel and Charles Aznavour: songs where the words come first"
+},
+{
+"d": 58,
+"lv": "beginner",
+"t": "Italian canzone and cantautori",
+"f": "From Neapolitan song to Lucio Battisti, Fabrizio De André and the Sanremo festival"
+},
+{
+"d": 59,
+"lv": "beginner",
+"t": "German Schlager and Krautrock",
+"f": "Cheerful Schlager and the hypnotic experiments of bands like Can and Neu!"
+},
+{
+"d": 60,
+"lv": "beginner",
+"t": "Review: a world tour so far",
+"f": "Revisit the styles from Kingston to Lisbon and pick three to explore more deeply"
+},
+{
+"d": 61,
+"lv": "beginner",
+"t": "West African highlife",
+"f": "Guitar bands and horns from Ghana and Nigeria with bright, joyful melodies"
+},
+{
+"d": 62,
+"lv": "beginner",
+"t": "Afrobeat and Fela Kuti",
+"f": "Long grooves mixing highlife, jazz and funk with big horn sections and drummer Tony Allen"
+},
+{
+"d": 63,
+"lv": "beginner",
+"t": "Afrobeats, a global pop sound",
+"f": "The modern sound of Nigeria and Ghana, with artists like Burna Boy and Wizkid"
+},
+{
+"d": 64,
+"lv": "beginner",
+"t": "Congolese rumba and soukous",
+"f": "Sweet, interlocking guitars from Franco to Papa Wemba that set Africa dancing"
+},
+{
+"d": 65,
+"lv": "beginner",
+"t": "Senegalese mbalax",
+"f": "Sabar drums, fast rhythms and Youssou N'Dour's soaring voice"
+},
+{
+"d": 66,
+"lv": "beginner",
+"t": "South African sounds",
+"f": "Mbaqanga, the choir of Ladysmith Black Mambazo and the deep grooves of amapiano"
+},
+{
+"d": 67,
+"lv": "beginner",
+"t": "Desert blues",
+"f": "Hypnotic guitars from Ali Farka Touré in Mali to Tuareg bands like Tinariwen"
+},
+{
+"d": 68,
+"lv": "beginner",
+"t": "Arabic classical and pop music",
+"f": "Maqam scales, Umm Kulthum's legendary concerts and modern Arabic pop"
+},
+{
+"d": 69,
+"lv": "beginner",
+"t": "Raï from Algeria",
+"f": "Khaled and a lively mix of folk, pop and electronic sounds from Oran"
+},
+{
+"d": 70,
+"lv": "beginner",
+"t": "Indian classical music",
+"f": "Ragas, talas, sitar and tabla in the Hindustani and Carnatic traditions"
+},
+{
+"d": 71,
+"lv": "beginner",
+"t": "Bollywood film music",
+"f": "Playback singers like Lata Mangeshkar and the soundtracks of A. R. Rahman"
+},
+{
+"d": 72,
+"lv": "beginner",
+"t": "Bhangra",
+"f": "Punjabi dhol drums turned into a dance-floor favourite in the UK and beyond"
+},
+{
+"d": 73,
+"lv": "beginner",
+"t": "K-pop",
+"f": "Idol groups, sharp choreography and genre-mixing tracks from South Korea"
+},
+{
+"d": 74,
+"lv": "beginner",
+"t": "J-pop and city pop",
+"f": "Japan's catchy pop and the smooth 1970s and 1980s city pop sound"
+},
+{
+"d": 75,
+"lv": "beginner",
+"t": "Chinese pop and traditional sounds",
+"f": "Mandopop, Cantopop and instruments like the erhu and the guzheng"
+},
+{
+"d": 76,
+"lv": "beginner",
+"t": "Indonesian gamelan",
+"f": "Bronze gongs and metallophones creating layered, shimmering patterns"
+},
+{
+"d": 77,
+"lv": "beginner",
+"t": "Celtic music",
+"f": "Fiddles, tin whistles, jigs and reels from Ireland, Scotland and Brittany"
+},
+{
+"d": 78,
+"lv": "beginner",
+"t": "Balkan brass and folk",
+"f": "Exuberant brass bands and odd meters like 7/8 from Serbia, Bulgaria and beyond"
+},
+{
+"d": 79,
+"lv": "beginner",
+"t": "Klezmer",
+"f": "Clarinet-led dance music from the Jewish communities of Eastern Europe"
+},
+{
+"d": 80,
+"lv": "beginner",
+"t": "Nordic folk and Sámi joik",
+"f": "Fiddle traditions of Scandinavia and the personal song style of the Sámi joik"
+},
+{
+"d": 81,
+"lv": "beginner",
+"t": "Classical music: an overview",
+"f": "From medieval to modern: how the main periods of Western classical music differ"
+},
+{
+"d": 82,
+"lv": "beginner",
+"t": "Baroque music",
+"f": "Bach, Vivaldi and Handel: ornaments, counterpoint and the harpsichord"
+},
+{
+"d": 83,
+"lv": "beginner",
+"t": "The Classical era",
+"f": "Mozart and Haydn: balance, clarity and the rise of the symphony"
+},
+{
+"d": 84,
+"lv": "beginner",
+"t": "Romantic music",
+"f": "Beethoven as a bridge, then Chopin, Tchaikovsky and big emotions"
+},
+{
+"d": 85,
+"lv": "beginner",
+"t": "Opera",
+"f": "Stories sung on stage, from Verdi and Puccini to arias everyone recognises"
+},
+{
+"d": 86,
+"lv": "beginner",
+"t": "Twentieth-century classical",
+"f": "Debussy's colours, Stravinsky's rhythms and minimalists like Steve Reich"
+},
+{
+"d": 87,
+"lv": "beginner",
+"t": "Film scores",
+"f": "How composers like John Williams and Ennio Morricone use music to tell stories"
+},
+{
+"d": 88,
+"lv": "beginner",
+"t": "Video game music",
+"f": "From chiptune bleeps to full orchestras: music that reacts to the player"
+},
+{
+"d": 89,
+"lv": "beginner",
+"t": "Musical theatre",
+"f": "Broadway and West End songs that move a story forward"
+},
+{
+"d": 90,
+"lv": "beginner",
+"t": "Review: classical and global roots",
+"f": "Compare an orchestra, a gamelan and a raga: what feels familiar and what is new?"
+},
+{
+"d": 91,
+"lv": "beginner",
+"t": "Electronic music begins",
+"f": "Theremins, tape loops and early synthesisers long before the dance floor"
+},
+{
+"d": 92,
+"lv": "beginner",
+"t": "Synth-pop",
+"f": "Depeche Mode, Pet Shop Boys and catchy songs built on synthesisers"
+},
+{
+"d": 93,
+"lv": "beginner",
+"t": "House music from Chicago",
+"f": "Frankie Knuckles, the steady 4/4 kick drum and soulful vocals in Chicago clubs"
+},
+{
+"d": 94,
+"lv": "beginner",
+"t": "Detroit techno",
+"f": "Juan Atkins, Derrick May and Kevin Saunderson's futuristic machine music"
+},
+{
+"d": 95,
+"lv": "beginner",
+"t": "Trance and euphoric builds",
+"f": "Long build-ups, big breakdowns and uplifting melodies"
+},
+{
+"d": 96,
+"lv": "beginner",
+"t": "Jungle and drum and bass",
+"f": "Fast breakbeats and deep basslines from the UK"
+},
+{
+"d": 97,
+"lv": "beginner",
+"t": "Ambient music",
+"f": "Brian Eno's music for spaces: calm textures you can focus on or let drift by"
+},
+{
+"d": 98,
+"lv": "beginner",
+"t": "Dubstep and UK bass",
+"f": "Half-time rhythms and heavy sub-bass that grew in South London"
+},
+{
+"d": 99,
+"lv": "beginner",
+"t": "EDM and the festival sound",
+"f": "Big drops, bright synths and the global festival main stage"
+},
+{
+"d": 100,
+"lv": "beginner",
+"t": "Lo-fi and chill beats",
+"f": "Dusty drums, jazzy chords and music for studying and relaxing"
+},
+{
+"d": 101,
+"lv": "beginner",
+"t": "Alternative rock",
+"f": "College radio, R.E.M. and the Pixies paved the way for the 1990s"
+},
+{
+"d": 102,
+"lv": "beginner",
+"t": "Grunge from Seattle",
+"f": "Nirvana, Pearl Jam and Soundgarden: heavy guitars and raw feeling"
+},
+{
+"d": 103,
+"lv": "beginner",
+"t": "Britpop",
+"f": "Oasis, Blur and Pulp and the British guitar pop revival of the 1990s"
+},
+{
+"d": 104,
+"lv": "beginner",
+"t": "Indie rock",
+"f": "Independent labels and a do-it-yourself spirit across many local scenes"
+},
+{
+"d": 105,
+"lv": "beginner",
+"t": "Pop punk and emo",
+"f": "Catchy, heartfelt guitar music from Green Day to Paramore"
+},
+{
+"d": 106,
+"lv": "beginner",
+"t": "Nineties hip hop",
+"f": "Different regional sounds with Nas, Lauryn Hill and OutKast"
+},
+{
+"d": 107,
+"lv": "beginner",
+"t": "Trap music",
+"f": "Atlanta's rolling hi-hats and booming 808 bass that shaped modern rap and pop"
+},
+{
+"d": 108,
+"lv": "beginner",
+"t": "Neo-soul",
+"f": "Erykah Badu, D'Angelo and a warm, organic return to soul"
+},
+{
+"d": 109,
+"lv": "beginner",
+"t": "Contemporary country",
+"f": "Modern country's mix of pop production and classic storytelling"
+},
+{
+"d": 110,
+"lv": "beginner",
+"t": "Americana and roots music",
+"f": "A blend of folk, country, blues and rock with an acoustic heart"
+},
+{
+"d": 111,
+"lv": "beginner",
+"t": "Modern singer-songwriters",
+"f": "Intimate songs built on one voice and a guitar or piano, a timeless format"
+},
+{
+"d": 112,
+"lv": "beginner",
+"t": "A cappella and vocal groups",
+"f": "Voices only: barbershop quartets, choirs and beatboxing groups"
+},
+{
+"d": 113,
+"lv": "beginner",
+"t": "Lullabies and children's songs",
+"f": "Simple melodies every culture shares, and why they stay with us for life"
+},
+{
+"d": 114,
+"lv": "beginner",
+"t": "Festive and seasonal songs",
+"f": "Seasonal songs around the world and why we love hearing them every year"
+},
+{
+"d": 115,
+"lv": "beginner",
+"t": "How streaming shapes genres",
+"f": "Playlists, short intros and mood labels changed how we find and make music"
+},
+{
+"d": 116,
+"lv": "beginner",
+"t": "How to read a genre tag",
+"f": "What labels like 'indie' or 'world music' really mean, and where they fall short"
+},
+{
+"d": 117,
+"lv": "beginner",
+"t": "Building your first playlist",
+"f": "Choose a theme, order songs for flow, and mix the familiar with the new"
+},
+{
+"d": 118,
+"lv": "beginner",
+"t": "Finding new music you love",
+"f": "Use similar-artist features, radio shows, friends and album credits to explore"
+},
+{
+"d": 119,
+"lv": "beginner",
+"t": "Talking about music with friends",
+"f": "Simple words to describe a song: mood, energy, texture and why you like it"
+},
+{
+"d": 120,
+"lv": "beginner",
+"t": "Review: your beginner soundtrack",
+"f": "Pick one song from each genre family you met and build a personal mixtape"
+},
+{
+"d": 121,
+"lv": "intermediate",
+"t": "Genre family trees",
+"f": "How styles branch: from the blues to rock, R&B, hip hop and beyond"
+},
+{
+"d": 122,
+"lv": "intermediate",
+"t": "Listening for the bassline",
+"f": "Focus on the bass and hear how it defines funk, reggae, house and more"
+},
+{
+"d": 123,
+"lv": "intermediate",
+"t": "Drum patterns that define genres",
+"f": "Backbeat, four-on-the-floor, breakbeat and dembow: rhythmic fingerprints"
+},
+{
+"d": 124,
+"lv": "intermediate",
+"t": "Swing feel versus straight feel",
+"f": "Why jazz and shuffle grooves bounce while rock and techno feel even"
+},
+{
+"d": 125,
+"lv": "intermediate",
+"t": "Syncopation explained",
+"f": "Accents off the beat that make music feel funky, Latin or groovy"
+},
+{
+"d": 126,
+"lv": "intermediate",
+"t": "Major and minor moods",
+"f": "How the choice of scale tilts a song towards bright or bittersweet in any style"
+},
+{
+"d": 127,
+"lv": "intermediate",
+"t": "Timbre and texture",
+"f": "Describing sound colour: warm, bright, gritty, airy or dense"
+},
+{
+"d": 128,
+"lv": "intermediate",
+"t": "Call and response across cultures",
+"f": "From West African songs to gospel, blues and stadium chants"
+},
+{
+"d": 129,
+"lv": "intermediate",
+"t": "Improvisation in different styles",
+"f": "Jazz solos, raga development, flamenco falsetas and freestyle rap"
+},
+{
+"d": 130,
+"lv": "intermediate",
+"t": "Lyrics and storytelling styles",
+"f": "Story songs in country, poetic chanson and wordplay in rap"
+},
+{
+"d": 131,
+"lv": "intermediate",
+"t": "Hard bop and soul jazz",
+"f": "Art Blakey, Horace Silver and a bluesy, gospel-flavoured jazz"
+},
+{
+"d": 132,
+"lv": "intermediate",
+"t": "Free jazz and the avant-garde",
+"f": "Ornette Coleman and John Coltrane's search beyond fixed chord changes"
+},
+{
+"d": 133,
+"lv": "intermediate",
+"t": "Jazz fusion",
+"f": "Electric Miles Davis, Weather Report and Herbie Hancock blending jazz with rock and funk"
+},
+{
+"d": 134,
+"lv": "intermediate",
+"t": "Latin jazz",
+"f": "Dizzy Gillespie and Chano Pozo bring Afro-Cuban rhythm into jazz"
+},
+{
+"d": 135,
+"lv": "intermediate",
+"t": "Jazz manouche",
+"f": "Django Reinhardt's swinging guitar and the Hot Club sound of 1930s Paris"
+},
+{
+"d": 136,
+"lv": "intermediate",
+"t": "Smooth jazz and jazz-pop",
+"f": "Polished, melodic jazz made for radio, and where it meets pop"
+},
+{
+"d": 137,
+"lv": "intermediate",
+"t": "Electric blues heroes",
+"f": "B.B. King, Buddy Guy and the guitar language they handed to rock"
+},
+{
+"d": 138,
+"lv": "intermediate",
+"t": "Blues rock",
+"f": "Eric Clapton, Jimi Hendrix and Stevie Ray Vaughan electrify the blues"
+},
+{
+"d": 139,
+"lv": "intermediate",
+"t": "Southern rock",
+"f": "The Allman Brothers Band and twin guitars blending blues, country and rock"
+},
+{
+"d": 140,
+"lv": "intermediate",
+"t": "Glam rock",
+"f": "David Bowie, T. Rex and Queen: theatrical costumes and big choruses"
+},
+{
+"d": 141,
+"lv": "intermediate",
+"t": "Soft rock and yacht rock",
+"f": "Smooth, polished production from Fleetwood Mac to Steely Dan"
+},
+{
+"d": 142,
+"lv": "intermediate",
+"t": "Thrash and speed metal",
+"f": "Metallica, Megadeth and Anthrax push metal faster and tighter"
+},
+{
+"d": 143,
+"lv": "intermediate",
+"t": "Power metal and symphonic metal",
+"f": "Epic melodies, choirs and orchestras with bands like Helloween and Nightwish"
+},
+{
+"d": 144,
+"lv": "intermediate",
+"t": "Metal around the world",
+"f": "Sepultura from Brazil, Nordic scenes and Japan's BABYMETAL"
+},
+{
+"d": 145,
+"lv": "intermediate",
+"t": "Hardcore punk and its legacy",
+"f": "Faster, shorter songs and the DIY networks of bands like Minor Threat"
+},
+{
+"d": 146,
+"lv": "intermediate",
+"t": "Shoegaze and dream pop",
+"f": "My Bloody Valentine and Cocteau Twins: walls of hazy, dreamy guitar"
+},
+{
+"d": 147,
+"lv": "intermediate",
+"t": "Post-rock",
+"f": "Instrumental builds and crescendos with Sigur Rós and Explosions in the Sky"
+},
+{
+"d": 148,
+"lv": "intermediate",
+"t": "Math rock",
+"f": "Tricky time signatures, tapped guitar lines and precise playing"
+},
+{
+"d": 149,
+"lv": "intermediate",
+"t": "Garage rock revival",
+"f": "The Strokes and The White Stripes bring back raw, simple rock"
+},
+{
+"d": 150,
+"lv": "intermediate",
+"t": "Review: rock's many branches",
+"f": "Map rock's sub-styles and decide which branch suits your taste best"
+},
+{
+"d": 151,
+"lv": "intermediate",
+"t": "Philly soul and smooth soul",
+"f": "Lush strings and sweet harmonies from Philadelphia studios"
+},
+{
+"d": 152,
+"lv": "intermediate",
+"t": "Southern soul and Stax",
+"f": "Gritty Memphis grooves from Stax Records and Booker T. & the M.G.'s"
+},
+{
+"d": 153,
+"lv": "intermediate",
+"t": "P-Funk and cosmic funk",
+"f": "George Clinton's Parliament-Funkadelic and their playful sci-fi groove"
+},
+{
+"d": 154,
+"lv": "intermediate",
+"t": "Boogie and post-disco",
+"f": "The slick, bass-heavy dance music that bridged disco and house"
+},
+{
+"d": 155,
+"lv": "intermediate",
+"t": "Go-go from Washington, D.C.",
+"f": "Chuck Brown's non-stop percussion grooves and live call and response"
+},
+{
+"d": 156,
+"lv": "intermediate",
+"t": "New jack swing",
+"f": "Teddy Riley mixes R&B singing with hard-hitting hip hop beats"
+},
+{
+"d": 157,
+"lv": "intermediate",
+"t": "Contemporary R&B production",
+"f": "Layered vocals, sparse beats and the airy sound of modern R&B"
+},
+{
+"d": 158,
+"lv": "intermediate",
+"t": "Sampling as an art",
+"f": "How producers flip old records into new songs, and why clearing samples matters"
+},
+{
+"d": 159,
+"lv": "intermediate",
+"t": "Turntablism and the DJ",
+"f": "Scratching, beat juggling and the DJ as a true instrumentalist"
+},
+{
+"d": 160,
+"lv": "intermediate",
+"t": "Beat-making basics",
+"f": "Drum machines, samplers and the classic MPC workflow"
+},
+{
+"d": 161,
+"lv": "intermediate",
+"t": "Jazz rap and reflective lyrics",
+"f": "Jazz samples and thoughtful lyrics from Gang Starr to Common"
+},
+{
+"d": 162,
+"lv": "intermediate",
+"t": "Southern hip hop",
+"f": "Atlanta, Houston and New Orleans scenes with their own slang and bounce"
+},
+{
+"d": 163,
+"lv": "intermediate",
+"t": "UK grime",
+"f": "Fast 140 bpm beats and sharp MCing from London with Dizzee Rascal and Skepta"
+},
+{
+"d": 164,
+"lv": "intermediate",
+"t": "UK garage and two-step",
+"f": "Shuffling beats and soulful vocals from late-1990s London"
+},
+{
+"d": 165,
+"lv": "intermediate",
+"t": "Hip hop around the world",
+"f": "Rap scenes from France, Brazil, Japan, Korea and Senegal"
+},
+{
+"d": 166,
+"lv": "intermediate",
+"t": "French rap",
+"f": "MC Solaar, IAM and a rich tradition of wordplay in French"
+},
+{
+"d": 167,
+"lv": "intermediate",
+"t": "German hip hop",
+"f": "From Die Fantastischen Vier to one of Europe's biggest rap scenes"
+},
+{
+"d": 168,
+"lv": "intermediate",
+"t": "Latin trap and urbano",
+"f": "Bad Bunny, J Balvin and the global rise of música urbana"
+},
+{
+"d": 169,
+"lv": "intermediate",
+"t": "Brazilian funk carioca",
+"f": "Baile funk from Rio's parties and its pounding tamborzão rhythm"
+},
+{
+"d": 170,
+"lv": "intermediate",
+"t": "MPB: Brazilian popular music",
+"f": "Caetano Veloso, Gilberto Gil, Elis Regina and the craft of songwriting"
+},
+{
+"d": 171,
+"lv": "intermediate",
+"t": "Tropicália",
+"f": "A bold 1960s Brazilian movement mixing rock, bossa nova and art"
+},
+{
+"d": 172,
+"lv": "intermediate",
+"t": "Forró and northeastern Brazil",
+"f": "Accordion, zabumba and triangle with Luiz Gonzaga, the king of baião"
+},
+{
+"d": 173,
+"lv": "intermediate",
+"t": "Sertanejo",
+"f": "Brazil's country music, from duos with violas to modern stadium hits"
+},
+{
+"d": 174,
+"lv": "intermediate",
+"t": "Axé and Bahian carnival",
+"f": "Percussion-driven pop from Salvador with blocos like Olodum"
+},
+{
+"d": 175,
+"lv": "intermediate",
+"t": "Andean music",
+"f": "Panpipes, charango and quena from the Andes mountains"
+},
+{
+"d": 176,
+"lv": "intermediate",
+"t": "Merengue and bachata",
+"f": "Dominican rhythms: fast, festive merengue and heartfelt guitar bachata"
+},
+{
+"d": 177,
+"lv": "intermediate",
+"t": "Vallenato",
+"f": "Accordion music from Colombia's Caribbean coast and its storytelling songs"
+},
+{
+"d": 178,
+"lv": "intermediate",
+"t": "Cuban trova and bolero",
+"f": "Guitar ballads and the elegant bolero from Cuba and Mexico"
+},
+{
+"d": 179,
+"lv": "intermediate",
+"t": "Latin pop crossovers",
+"f": "Gloria Estefan, Shakira and Ricky Martin take Spanish-language pop worldwide"
+},
+{
+"d": 180,
+"lv": "intermediate",
+"t": "Review: Latin and Brazilian sounds",
+"f": "Compare clave, samba and dembow grooves and pick your favourite"
+},
+{
+"d": 181,
+"lv": "intermediate",
+"t": "Calypso and soca",
+"f": "Trinidad's carnival music, from witty calypso to high-energy soca"
+},
+{
+"d": 182,
+"lv": "intermediate",
+"t": "The steelpan",
+"f": "The steel drum from Trinidad and Tobago, invented in the twentieth century"
+},
+{
+"d": 183,
+"lv": "intermediate",
+"t": "Dancehall",
+"f": "Digital riddims and deejays from Jamaica since the 1980s"
+},
+{
+"d": 184,
+"lv": "intermediate",
+"t": "Zouk and kompa",
+"f": "Caribbean dance music from the French Antilles and Haiti"
+},
+{
+"d": 185,
+"lv": "intermediate",
+"t": "From yé-yé to French pop",
+"f": "Yé-yé, Serge Gainsbourg and the many faces of French pop"
+},
+{
+"d": 186,
+"lv": "intermediate",
+"t": "French touch",
+"f": "Daft Punk, Air and Cassius and the filtered sound of French house"
+},
+{
+"d": 187,
+"lv": "intermediate",
+"t": "Italo disco and Italian pop",
+"f": "Synth-driven Italian dance hits and pop voices like Laura Pausini"
+},
+{
+"d": 188,
+"lv": "intermediate",
+"t": "Eurovision and Europop",
+"f": "ABBA's breakthrough and the colourful European song contest"
+},
+{
+"d": 189,
+"lv": "intermediate",
+"t": "Swedish pop songwriting",
+"f": "Why Sweden produces so many hit writers, from ABBA to Max Martin"
+},
+{
+"d": 190,
+"lv": "intermediate",
+"t": "Spanish pop and rock",
+"f": "La Movida, Mecano and the lively Spanish pop scene"
+},
+{
+"d": 191,
+"lv": "intermediate",
+"t": "Lusophone sounds in Lisbon",
+"f": "Portuguese pop and the Cape Verdean and Angolan rhythms heard in Lisbon"
+},
+{
+"d": 192,
+"lv": "intermediate",
+"t": "Morna from Cape Verde",
+"f": "Cesária Évora and the gentle, bittersweet morna"
+},
+{
+"d": 193,
+"lv": "intermediate",
+"t": "Kizomba and semba",
+"f": "Angolan rhythms that became a worldwide social dance"
+},
+{
+"d": 194,
+"lv": "intermediate",
+"t": "Turkish music",
+"f": "The saz, makam modes and the Anatolian rock of the 1970s"
+},
+{
+"d": 195,
+"lv": "intermediate",
+"t": "Persian classical music",
+"f": "Dastgah modes and instruments like the tar and the santur"
+},
+{
+"d": 196,
+"lv": "intermediate",
+"t": "Greek rebetiko and laïko",
+"f": "Bouzouki music from Greece's port towns to popular song"
+},
+{
+"d": 197,
+"lv": "intermediate",
+"t": "Carnatic music in depth",
+"f": "South India's kriti compositions, violin and mridangam"
+},
+{
+"d": 198,
+"lv": "intermediate",
+"t": "Indian film music eras",
+"f": "From golden-age melodies to modern Hindi and Tamil cinema songs"
+},
+{
+"d": 199,
+"lv": "intermediate",
+"t": "Southeast Asian pop and indie",
+"f": "Pop and indie scenes from Thailand, Indonesia and the Philippines"
+},
+{
+"d": 200,
+"lv": "intermediate",
+"t": "Japanese traditional music",
+"f": "Shamisen, koto, shakuhachi and powerful taiko drumming"
+},
+{
+"d": 201,
+"lv": "intermediate",
+"t": "Enka",
+"f": "Japanese ballads with rich vibrato singing and nostalgic themes"
+},
+{
+"d": 202,
+"lv": "intermediate",
+"t": "Anime music",
+"f": "Openings, endings and the J-rock and J-pop artists behind them"
+},
+{
+"d": 203,
+"lv": "intermediate",
+"t": "Korean traditional music",
+"f": "Pansori storytelling and the instruments of gugak"
+},
+{
+"d": 204,
+"lv": "intermediate",
+"t": "Mongolian throat singing",
+"f": "Khöömei overtone singing and the horsehead fiddle"
+},
+{
+"d": 205,
+"lv": "intermediate",
+"t": "Pacific and Australian sounds",
+"f": "Didgeridoo, Pacific Island harmonies and Australian rock bands"
+},
+{
+"d": 206,
+"lv": "intermediate",
+"t": "Hawaiian music",
+"f": "Slack-key guitar, ukulele and smooth falsetto singing"
+},
+{
+"d": 207,
+"lv": "intermediate",
+"t": "Indigenous music of North America",
+"f": "Powwow drums, flute traditions and contemporary Indigenous artists"
+},
+{
+"d": 208,
+"lv": "intermediate",
+"t": "Ethio-jazz",
+"f": "Mulatu Astatke and the distinctive scales of Ethiopian jazz"
+},
+{
+"d": 209,
+"lv": "intermediate",
+"t": "The kora of West Africa",
+"f": "Toumani Diabaté and the 21-string harp of the griot tradition"
+},
+{
+"d": 210,
+"lv": "intermediate",
+"t": "Review: global connections",
+"f": "Trace one rhythm or instrument across three continents"
+},
+{
+"d": 211,
+"lv": "intermediate",
+"t": "Trip hop and downtempo",
+"f": "Massive Attack, Portishead and moody, slow beats from Bristol"
+},
+{
+"d": 212,
+"lv": "intermediate",
+"t": "IDM and experimental electronics",
+"f": "Aphex Twin and Autechre's intricate, listening-focused electronic music"
+},
+{
+"d": 213,
+"lv": "intermediate",
+"t": "Minimal techno and Berlin",
+"f": "Stripped-down, hypnotic grooves and Berlin's club culture"
+},
+{
+"d": 214,
+"lv": "intermediate",
+"t": "Deep house and soulful house",
+"f": "Warm chords, soulful vocals and relaxed tempos"
+},
+{
+"d": 215,
+"lv": "intermediate",
+"t": "Nu-disco",
+"f": "Modern producers bring back strings, funk guitar and disco sparkle"
+},
+{
+"d": 216,
+"lv": "intermediate",
+"t": "Big beat and breakbeat",
+"f": "The Chemical Brothers, Fatboy Slim and chunky, rock-sized breaks"
+},
+{
+"d": 217,
+"lv": "intermediate",
+"t": "Hardstyle and hard dance",
+"f": "Distorted kicks and euphoric melodies from the Netherlands"
+},
+{
+"d": 218,
+"lv": "intermediate",
+"t": "Synthwave and retrowave",
+"f": "Eighties nostalgia made new with analog synth sounds"
+},
+{
+"d": 219,
+"lv": "intermediate",
+"t": "Vaporwave and internet genres",
+"f": "Genres born online: slowed samples and strong visual aesthetics"
+},
+{
+"d": 220,
+"lv": "intermediate",
+"t": "Hyperpop",
+"f": "Pitched-up vocals and maximal production pushing pop to its extremes"
+},
+{
+"d": 221,
+"lv": "intermediate",
+"t": "Afro house and amapiano",
+"f": "South African log drum basslines and deep, rolling grooves"
+},
+{
+"d": 222,
+"lv": "intermediate",
+"t": "How local club styles go global",
+"f": "How regional sounds like baile funk or gqom reach DJs worldwide"
+},
+{
+"d": 223,
+"lv": "intermediate",
+"t": "How DJs blend genres",
+"f": "Beatmatching, mixing in key and reading the room"
+},
+{
+"d": 224,
+"lv": "intermediate",
+"t": "Producing a track: an overview",
+"f": "From idea to demo, arrangement, mixing and mastering"
+},
+{
+"d": 225,
+"lv": "intermediate",
+"t": "Analog versus digital sound",
+"f": "Tape, vinyl and digital: what each format adds or takes away"
+},
+{
+"d": 226,
+"lv": "intermediate",
+"t": "The loudness war",
+"f": "Why many records got louder over time and what that does to dynamics"
+},
+{
+"d": 227,
+"lv": "intermediate",
+"t": "Mixing for different genres",
+"f": "Why jazz, rock and trap mixes put different elements up front"
+},
+{
+"d": 228,
+"lv": "intermediate",
+"t": "The role of the producer",
+"f": "Producers like George Martin and Quincy Jones as creative partners"
+},
+{
+"d": 229,
+"lv": "intermediate",
+"t": "Iconic recording studios",
+"f": "Abbey Road, Sun Studio and Muscle Shoals: how rooms shape a sound"
+},
+{
+"d": 230,
+"lv": "intermediate",
+"t": "Record labels that defined genres",
+"f": "Blue Note, Motown, Stax, Sub Pop and Def Jam as homes of a style"
+},
+{
+"d": 231,
+"lv": "intermediate",
+"t": "Album culture versus single culture",
+"f": "How formats from 45s to streaming shape song length and style"
+},
+{
+"d": 232,
+"lv": "intermediate",
+"t": "Concept albums",
+"f": "Albums built around one story or theme, from Sgt. Pepper's onward"
+},
+{
+"d": 233,
+"lv": "intermediate",
+"t": "Live music cultures",
+"f": "Jazz clubs, raves, festivals and rodas de samba: how each scene gathers"
+},
+{
+"d": 234,
+"lv": "intermediate",
+"t": "Music and dance partners",
+"f": "Salsa, tango, swing and breaking: how dances shape the music"
+},
+{
+"d": 235,
+"lv": "intermediate",
+"t": "Music and fashion",
+"f": "Punk, hip hop and mod style: how genres dress"
+},
+{
+"d": 236,
+"lv": "intermediate",
+"t": "Cover songs and reinterpretations",
+"f": "Same song, new genre: what covers reveal about style"
+},
+{
+"d": 237,
+"lv": "intermediate",
+"t": "Remixes and edits",
+"f": "How remixers transform a track for a new audience or dance floor"
+},
+{
+"d": 238,
+"lv": "intermediate",
+"t": "Crossovers between genres",
+"f": "Famous meetings like Run-DMC with Aerosmith and what they changed"
+},
+{
+"d": 239,
+"lv": "intermediate",
+"t": "One song, many genres",
+"f": "Follow a standard like 'Summertime' through jazz, soul and rock versions"
+},
+{
+"d": 240,
+"lv": "intermediate",
+"t": "Review: production and culture",
+"f": "Explain how studios, labels and dance shaped a genre you love"
+},
+{
+"d": 241,
+"lv": "intermediate",
+"t": "Writing a short music review",
+"f": "Describe, compare and judge a track in a few clear sentences"
+},
+{
+"d": 242,
+"lv": "intermediate",
+"t": "Describing sound in words",
+"f": "A vocabulary for mood, texture, energy and space in music"
+},
+{
+"d": 243,
+"lv": "intermediate",
+"t": "Comparing two artists in one genre",
+"f": "Spot what makes each artist unique within the same style"
+},
+{
+"d": 244,
+"lv": "intermediate",
+"t": "Spotting influences",
+"f": "Hear where an artist's sound comes from and who they learned from"
+},
+{
+"d": 245,
+"lv": "intermediate",
+"t": "Deep listening to an album",
+"f": "A focused session with one full album, from start to finish"
+},
+{
+"d": 246,
+"lv": "intermediate",
+"t": "Discovering local scenes",
+"f": "Find the music made in your own city or region"
+},
+{
+"d": 247,
+"lv": "intermediate",
+"t": "Record stores and crate digging",
+"f": "The joy of browsing vinyl and second-hand bins for hidden gems"
+},
+{
+"d": 248,
+"lv": "intermediate",
+"t": "Radio hosts and curators",
+"f": "DJs and radio presenters like John Peel who shaped what people heard"
+},
+{
+"d": 249,
+"lv": "intermediate",
+"t": "Music documentaries",
+"f": "Learning genre history through great films about musicians and scenes"
+},
+{
+"d": 250,
+"lv": "intermediate",
+"t": "Review: your intermediate journey",
+"f": "Write a mini-guide to your three favourite genres for a friend"
+},
+{
+"d": 251,
+"lv": "advanced",
+"t": "What is ethnomusicology?",
+"f": "Studying music as culture: how and why people around the world make music"
+},
+{
+"d": 252,
+"lv": "advanced",
+"t": "Genre as identity and community",
+"f": "How genres give fans belonging, shared codes and a sense of home"
+},
+{
+"d": 253,
+"lv": "advanced",
+"t": "Authenticity debates",
+"f": "Why fans argue about what is 'real' in a genre, and how to think about it calmly"
+},
+{
+"d": 254,
+"lv": "advanced",
+"t": "Cultural exchange with respect",
+"f": "Borrowing styles with credit, curiosity and respect for the source"
+},
+{
+"d": 255,
+"lv": "advanced",
+"t": "Migration and music",
+"f": "How travelling people carried music across oceans and created new styles"
+},
+{
+"d": 256,
+"lv": "advanced",
+"t": "Technology that created genres",
+"f": "Electric guitar, drum machine and sampler as inventors of new sounds"
+},
+{
+"d": 257,
+"lv": "advanced",
+"t": "The TR-808 and TR-909",
+"f": "Two Roland drum machines behind hip hop, house, techno and trap"
+},
+{
+"d": 258,
+"lv": "advanced",
+"t": "The electric guitar's evolution",
+"f": "Fender, Gibson and effects pedals that shaped rock and beyond"
+},
+{
+"d": 259,
+"lv": "advanced",
+"t": "The synthesizer revolution",
+"f": "From the Moog to the DX7 and software synths in every laptop"
+},
+{
+"d": 260,
+"lv": "advanced",
+"t": "Auto-Tune and vocal effects",
+"f": "From pitch correction to a creative sound in pop, trap and Afrobeats"
+},
+{
+"d": 261,
+"lv": "advanced",
+"t": "Microtones and non-Western scales",
+"f": "Maqam quarter tones, raga scales and gamelan tunings"
+},
+{
+"d": 262,
+"lv": "advanced",
+"t": "Polyrhythm in African music",
+"f": "Interlocking patterns like three against two and how they build a groove"
+},
+{
+"d": 263,
+"lv": "advanced",
+"t": "Odd meters across cultures",
+"f": "7/8, 9/8 and 11/8 in Balkan, Turkish and Indian music"
+},
+{
+"d": 264,
+"lv": "advanced",
+"t": "Groove and microtiming",
+"f": "Why tiny timing shifts make a groove feel good"
+},
+{
+"d": 265,
+"lv": "advanced",
+"t": "Harmony in jazz versus pop",
+"f": "Rich extended chords versus simple, repeating loops"
+},
+{
+"d": 266,
+"lv": "advanced",
+"t": "The four-chord song",
+"f": "Why so many hits share the same I-V-vi-IV progression"
+},
+{
+"d": 267,
+"lv": "advanced",
+"t": "Modes in popular music",
+"f": "Dorian funk, Mixolydian rock and Phrygian flamenco"
+},
+{
+"d": 268,
+"lv": "advanced",
+"t": "Song forms beyond verse-chorus",
+"f": "AABA standards, through-composed pieces and loop-based tracks"
+},
+{
+"d": 269,
+"lv": "advanced",
+"t": "Arrangement and orchestration",
+"f": "Which instrument plays what, and why it changes the feel"
+},
+{
+"d": 270,
+"lv": "advanced",
+"t": "Review: the craft behind genres",
+"f": "Analyse one song's rhythm, harmony and form in your own words"
+},
+{
+"d": 271,
+"lv": "advanced",
+"t": "A short history of the music business",
+"f": "Sheet music, records, radio, music TV, downloads and streaming"
+},
+{
+"d": 272,
+"lv": "advanced",
+"t": "How music charts work",
+"f": "What charts measure, how they changed and why they still matter"
+},
+{
+"d": 273,
+"lv": "advanced",
+"t": "How streaming pays artists",
+"f": "A simple, general look at plays, royalties and why live shows matter"
+},
+{
+"d": 274,
+"lv": "advanced",
+"t": "The rise of independent artists",
+"f": "DIY releases, direct fan support and online communities"
+},
+{
+"d": 275,
+"lv": "advanced",
+"t": "Music copyright basics",
+"f": "General information on what copyright covers, and how covers and samples differ"
+},
+{
+"d": 276,
+"lv": "advanced",
+"t": "Global hits in other languages",
+"f": "Songs like 'Gangnam Style' and 'Despacito' that crossed language barriers"
+},
+{
+"d": 277,
+"lv": "advanced",
+"t": "Algorithms and your taste",
+"f": "How recommendation systems learn your taste and how to step out of the bubble"
+},
+{
+"d": 278,
+"lv": "advanced",
+"t": "Micro-genres",
+"f": "Tiny niche styles named online and why they matter to fans"
+},
+{
+"d": 279,
+"lv": "advanced",
+"t": "Genre-fluid artists",
+"f": "Artists who refuse a single label, from Prince to Rosalía"
+},
+{
+"d": 280,
+"lv": "advanced",
+"t": "Every genre is a fusion",
+"f": "How jazz, rock, salsa and K-pop all grew from mixing older styles"
+},
+{
+"d": 281,
+"lv": "advanced",
+"t": "Deep dive: Duke Ellington",
+"f": "Composer and bandleader who made the jazz orchestra an art form"
+},
+{
+"d": 282,
+"lv": "advanced",
+"t": "Deep dive: Miles Davis",
+"f": "Five reinventions: bebop, cool, modal, fusion and beyond"
+},
+{
+"d": 283,
+"lv": "advanced",
+"t": "Deep dive: The Beatles in the studio",
+"f": "From simple pop songs to studio art in under ten years"
+},
+{
+"d": 284,
+"lv": "advanced",
+"t": "Deep dive: Bob Marley",
+"f": "How reggae became a language understood around the world"
+},
+{
+"d": 285,
+"lv": "advanced",
+"t": "Deep dive: Stevie Wonder",
+"f": "Songwriting genius, synths and self-produced 1970s albums"
+},
+{
+"d": 286,
+"lv": "advanced",
+"t": "Deep dive: Kraftwerk",
+"f": "The German band that drew the blueprint for synth-pop, techno and electro"
+},
+{
+"d": 287,
+"lv": "advanced",
+"t": "Deep dive: Afrobeat arrangements",
+"f": "How horns, guitars, bass and Tony Allen's drums lock together"
+},
+{
+"d": 288,
+"lv": "advanced",
+"t": "Deep dive: Caetano Veloso and Gilberto Gil",
+"f": "Two Brazilian innovators who opened MPB to the world"
+},
+{
+"d": 289,
+"lv": "advanced",
+"t": "Deep dive: Umm Kulthum",
+"f": "The voice of the Arab world and her famously long, improvised concerts"
+},
+{
+"d": 290,
+"lv": "advanced",
+"t": "Deep dive: Ravi Shankar",
+"f": "The sitar master who brought Indian classical music to global stages"
+},
+{
+"d": 291,
+"lv": "advanced",
+"t": "Deep dive: Björk",
+"f": "Iceland's explorer of electronics, orchestras and the human voice"
+},
+{
+"d": 292,
+"lv": "advanced",
+"t": "Deep dive: Daft Punk",
+"f": "From French house to their polished, disco-infused pop"
+},
+{
+"d": 293,
+"lv": "advanced",
+"t": "Deep dive: Missy Elliott and Timbaland",
+"f": "Futuristic beats and playful creativity in hip hop and R&B"
+},
+{
+"d": 294,
+"lv": "advanced",
+"t": "Deep dive: Rosalía",
+"f": "Flamenco roots meeting pop, reggaeton and electronic sounds"
+},
+{
+"d": 295,
+"lv": "advanced",
+"t": "Deep dive: the K-pop system",
+"f": "Training, teamwork, fandom and how BTS reached the world"
+},
+{
+"d": 296,
+"lv": "advanced",
+"t": "Deep dive: Nina Simone",
+"f": "A classically trained pianist who moved freely between jazz, soul and folk"
+},
+{
+"d": 297,
+"lv": "advanced",
+"t": "Deep dive: Johnny Cash",
+"f": "A deep voice that connected country, rock and gospel"
+},
+{
+"d": 298,
+"lv": "advanced",
+"t": "Deep dive: Celia Cruz",
+"f": "The queen of salsa and her famous joyful cry, ¡Azúcar!"
+},
+{
+"d": 299,
+"lv": "advanced",
+"t": "Deep dive: A. R. Rahman",
+"f": "A film composer blending Indian, electronic and orchestral sounds"
+},
+{
+"d": 300,
+"lv": "advanced",
+"t": "Review: artists who changed genres",
+"f": "Choose one pioneer and explain how they changed music"
+},
+{
+"d": 301,
+"lv": "advanced",
+"t": "Music cities: New Orleans",
+"f": "Brass bands, second lines and the birthplace of jazz"
+},
+{
+"d": 302,
+"lv": "advanced",
+"t": "Music cities: Kingston",
+"f": "Sound systems, studios and the home of ska, reggae and dancehall"
+},
+{
+"d": 303,
+"lv": "advanced",
+"t": "Music cities: Rio de Janeiro",
+"f": "Samba schools, bossa nova by the beach and baile funk"
+},
+{
+"d": 304,
+"lv": "advanced",
+"t": "Music cities: Salvador da Bahia",
+"f": "Afro-Brazilian drums, axé and the energy of Bahian carnival"
+},
+{
+"d": 305,
+"lv": "advanced",
+"t": "Music cities: Lagos",
+"f": "Highlife, Afrobeat and the engine room of Afrobeats"
+},
+{
+"d": 306,
+"lv": "advanced",
+"t": "Music cities: Berlin",
+"f": "Krautrock roots, techno clubs and a city of electronic music"
+},
+{
+"d": 307,
+"lv": "advanced",
+"t": "Music cities: London",
+"f": "From the British Invasion to punk, jungle, grime and beyond"
+},
+{
+"d": 308,
+"lv": "advanced",
+"t": "Music cities: Havana",
+"f": "Son, mambo, danzón and the Buena Vista Social Club sound"
+},
+{
+"d": 309,
+"lv": "advanced",
+"t": "Music cities: Nashville and Memphis",
+"f": "Country in Nashville and blues, soul and rock and roll in Memphis"
+},
+{
+"d": 310,
+"lv": "advanced",
+"t": "Music cities: Seoul and Tokyo",
+"f": "Idol pop, city pop, jazz kissa bars and huge live scenes"
+},
+{
+"d": 311,
+"lv": "advanced",
+"t": "Music for moods and moments",
+"f": "Curating music for focus, workouts, dinners and road trips"
+},
+{
+"d": 312,
+"lv": "advanced",
+"t": "Sequencing a great playlist",
+"f": "Energy arcs, tempo and key flow, strong openers and closers"
+},
+{
+"d": 313,
+"lv": "advanced",
+"t": "A ten-track genre crash course",
+"f": "Choose ten songs that teach a genre to someone new"
+},
+{
+"d": 314,
+"lv": "advanced",
+"t": "Hosting a listening session",
+"f": "Share music with friends through guided, relaxed listening"
+},
+{
+"d": 315,
+"lv": "advanced",
+"t": "Writing liner notes",
+"f": "Give context to a compilation with short, lively notes"
+},
+{
+"d": 316,
+"lv": "advanced",
+"t": "Explaining a genre to a beginner",
+"f": "Use simple images and comparisons to make any style easy to grasp"
+},
+{
+"d": 317,
+"lv": "advanced",
+"t": "Recommending music to others",
+"f": "Ask questions, match their taste and stretch it gently"
+},
+{
+"d": 318,
+"lv": "advanced",
+"t": "Discussing taste with kindness",
+"f": "How to disagree about music while staying curious and friendly"
+},
+{
+"d": 319,
+"lv": "advanced",
+"t": "Guilty pleasures and honest taste",
+"f": "Why there are no wrong songs to love"
+},
+{
+"d": 320,
+"lv": "advanced",
+"t": "Music and nostalgia",
+"f": "Why the songs from our teenage years stay with us so strongly"
+},
+{
+"d": 321,
+"lv": "advanced",
+"t": "Music and memory",
+"f": "How songs bring back places, people and moments"
+},
+{
+"d": 322,
+"lv": "advanced",
+"t": "Music psychology basics",
+"f": "Why music gives us chills: expectation, tension and surprise"
+},
+{
+"d": 323,
+"lv": "advanced",
+"t": "Earworms",
+"f": "Why some songs get stuck in your head and how to set them free"
+},
+{
+"d": 324,
+"lv": "advanced",
+"t": "Learning languages through songs",
+"f": "How songs in other languages build vocabulary, rhythm and accent"
+},
+{
+"d": 325,
+"lv": "advanced",
+"t": "Translating song lyrics",
+"f": "What gets lost and what gets found when lyrics change language"
+},
+{
+"d": 326,
+"lv": "advanced",
+"t": "Singing in another language",
+"f": "Using songs to practise pronunciation and natural rhythm of speech"
+},
+{
+"d": 327,
+"lv": "advanced",
+"t": "Folk songs everyone knows",
+"f": "Songs passed down for generations, like 'Cielito Lindo' or 'Sakura Sakura'"
+},
+{
+"d": 328,
+"lv": "advanced",
+"t": "Celebration music worldwide",
+"f": "Carnival, Lunar New Year and village festival soundtracks around the world"
+},
+{
+"d": 329,
+"lv": "advanced",
+"t": "Work songs and sea shanties",
+"f": "Songs that kept rhythm for rowing, harvesting and hauling"
+},
+{
+"d": 330,
+"lv": "advanced",
+"t": "Review: music in everyday life",
+"f": "Notice where music shows up in your day and what it does for you"
+},
+{
+"d": 331,
+"lv": "advanced",
+"t": "Revivals and retro cycles",
+"f": "Why styles come back around every few decades"
+},
+{
+"d": 332,
+"lv": "advanced",
+"t": "Local versions of global genres",
+"f": "How countries remake rock, rap and pop in their own language and style"
+},
+{
+"d": 333,
+"lv": "advanced",
+"t": "How genres keep evolving",
+"f": "Patterns from the past that hint at where music goes next"
+},
+{
+"d": 334,
+"lv": "advanced",
+"t": "Enjoying instrumental music",
+"f": "How to follow post-rock, jazz and classical pieces without words"
+},
+{
+"d": 335,
+"lv": "advanced",
+"t": "Classical crossovers",
+"f": "Orchestras playing pop and pop artists working with orchestras"
+},
+{
+"d": 336,
+"lv": "advanced",
+"t": "Chamber pop and orchestral pop",
+"f": "Strings, horns and careful arrangements inside pop songs"
+},
+{
+"d": 337,
+"lv": "advanced",
+"t": "Minimalism in music",
+"f": "Steve Reich, Philip Glass and Arvo Pärt: repetition and slow change"
+},
+{
+"d": 338,
+"lv": "advanced",
+"t": "Field recordings and sound art",
+"f": "Music made from birdsong, cities and everyday sounds"
+},
+{
+"d": 339,
+"lv": "advanced",
+"t": "Silence and space in music",
+"f": "John Cage's 4'33'' and the power of rests and pauses"
+},
+{
+"d": 340,
+"lv": "advanced",
+"t": "Building your genre map",
+"f": "Draw a visual map of every style you have explored so far"
+},
+{
+"d": 341,
+"lv": "advanced",
+"t": "Analysing your listening history",
+"f": "Discover how your taste has grown over time"
+},
+{
+"d": 342,
+"lv": "advanced",
+"t": "Leaving your comfort zone",
+"f": "Plan a month of listening to genres you have never tried"
+},
+{
+"d": 343,
+"lv": "advanced",
+"t": "Choosing an instrument by genre",
+"f": "Which instruments fit which genres, and how to start"
+},
+{
+"d": 344,
+"lv": "advanced",
+"t": "First steps in making music",
+"f": "Simple loops and free apps to start creating your own sounds"
+},
+{
+"d": 345,
+"lv": "advanced",
+"t": "Writing a song in a genre style",
+"f": "Pick a genre's key features and write a short song in that style"
+},
+{
+"d": 346,
+"lv": "advanced",
+"t": "Making a beat in one style",
+"f": "Build a simple beat with the drum pattern of a genre you love"
+},
+{
+"d": 347,
+"lv": "advanced",
+"t": "Remixing as a way to learn",
+"f": "Rework a track to understand how its parts fit together"
+},
+{
+"d": 348,
+"lv": "advanced",
+"t": "Joining a music community",
+"f": "Choirs, jam sessions, dance classes and online fan forums"
+},
+{
+"d": 349,
+"lv": "advanced",
+"t": "Live music when you travel",
+"f": "How to find local concerts and music spots in a new city"
+},
+{
+"d": 350,
+"lv": "advanced",
+"t": "Music festivals around the world",
+"f": "Montreux Jazz, Rock in Rio, Glastonbury and Fuji Rock"
+},
+{
+"d": 351,
+"lv": "advanced",
+"t": "Music awards and what they signal",
+"f": "What awards celebrate and the great artists they sometimes miss"
+},
+{
+"d": 352,
+"lv": "advanced",
+"t": "Music journalism and criticism",
+"f": "How critics write about music and how to read reviews wisely"
+},
+{
+"d": 353,
+"lv": "advanced",
+"t": "Building your personal canon",
+"f": "Start your own list of essential albums that shaped you"
+},
+{
+"d": 354,
+"lv": "advanced",
+"t": "Essential albums: jazz",
+"f": "Classic jazz records that make a great starting collection"
+},
+{
+"d": 355,
+"lv": "advanced",
+"t": "Essential albums: rock and pop",
+"f": "Landmark rock and pop albums across the decades"
+},
+{
+"d": 356,
+"lv": "advanced",
+"t": "Essential albums: hip hop and R&B",
+"f": "Records that defined rap and R&B through the years"
+},
+{
+"d": 357,
+"lv": "advanced",
+"t": "Essential albums: electronic",
+"f": "Albums that shaped house, techno, ambient and beyond"
+},
+{
+"d": 358,
+"lv": "advanced",
+"t": "Essential albums: global sounds",
+"f": "Must-hear albums from Africa, Latin America, Asia and Europe"
+},
+{
+"d": 359,
+"lv": "advanced",
+"t": "Teaching others what you learned",
+"f": "Share one thing from your journey with a friend in a fun way"
+},
+{
+"d": 360,
+"lv": "advanced",
+"t": "Review: your music identity",
+"f": "Describe your taste today and how it has changed this year"
+},
+{
+"d": 361,
+"lv": "advanced",
+"t": "Your 365-day genre playlist",
+"f": "Gather one favourite track from each stage of your path"
+},
+{
+"d": 362,
+"lv": "advanced",
+"t": "Planning your next year of listening",
+"f": "Set three listening goals and pick new genres to explore"
+},
+{
+"d": 363,
+"lv": "advanced",
+"t": "Sharing music across cultures",
+"f": "Swap songs with people from other countries and learn their stories"
+},
+{
+"d": 364,
+"lv": "advanced",
+"t": "Celebrating your journey",
+"f": "Look back at the genres you discovered and the songs you found"
+},
+{
+"d": 365,
+"lv": "advanced",
+"t": "Finale: music as a universal language",
+"f": "Why music connects people everywhere, even without shared words"
+}
+]
+}

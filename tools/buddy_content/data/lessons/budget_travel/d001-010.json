@@ -1,0 +1,835 @@
+{
+ "topic": "budget_travel",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Welcome to budget travel",
+     "g": "See why travelling on a budget means smart choices, not missing out, and how it opens the door to more trips.",
+     "p": [
+      "Budget travel is about spending on what you love and cutting what you barely notice.",
+      "Money saved on one trip can become the start of the next adventure.",
+      "Some of the best travel memories are free: a sunset, a market, a chat with a local."
+     ],
+     "q": "What kind of trip would you take right away if money were a little less of a worry?",
+     "c": "Write down one trip you dream of and one thing you would happily skip to afford it."
+    },
+    "de": {
+     "t": "Willkommen beim Budget-Reisen",
+     "g": "Erfahre, warum günstiges Reisen kluge Entscheidungen bedeutet, nicht Verzicht, und dir mehr Reisen ermöglicht.",
+     "p": [
+      "Beim Budget-Reisen gibst du Geld für das aus, was du liebst, und sparst an dem, was du kaum bemerkst.",
+      "Was du auf einer Reise sparst, kann der Anfang des nächsten Abenteuers werden.",
+      "Viele der schönsten Reiseerinnerungen kosten nichts: ein Sonnenuntergang, ein Markt, ein Gespräch."
+     ],
+     "q": "Welche Reise würdest du sofort machen, wenn Geld eine etwas kleinere Rolle spielte?",
+     "c": "Schreib eine Traumreise auf und eine Sache, auf die du dafür gern verzichten würdest."
+    },
+    "es": {
+     "t": "Bienvenido a viajar con poco dinero",
+     "g": "Descubre por qué viajar barato es elegir con cabeza, no renunciar a nada, y cómo te permite hacer más viajes.",
+     "p": [
+      "Viajar con presupuesto es gastar en lo que te encanta y recortar lo que apenas notas.",
+      "Lo que ahorras en un viaje puede ser el comienzo de la próxima aventura.",
+      "Muchos de los mejores recuerdos son gratis: un atardecer, un mercado, una charla con alguien local."
+     ],
+     "q": "¿Qué viaje harías ya mismo si el dinero te preocupara un poco menos?",
+     "c": "Apunta un viaje soñado y una cosa de la que prescindirías con gusto para pagarlo."
+    },
+    "fr": {
+     "t": "Bienvenue dans le voyage malin",
+     "g": "Découvre pourquoi voyager petit budget, c'est faire des choix malins sans se priver, et partir plus souvent.",
+     "p": [
+      "Voyager malin, c'est dépenser pour ce que tu aimes et couper ce que tu remarques à peine.",
+      "L'argent économisé sur un voyage peut devenir le début de la prochaine aventure.",
+      "Beaucoup des plus beaux souvenirs sont gratuits : un coucher de soleil, un marché, une discussion."
+     ],
+     "q": "Quel voyage ferais-tu tout de suite si l'argent te préoccupait un peu moins ?",
+     "c": "Note un voyage de rêve et une chose dont tu te passerais volontiers pour te l'offrir."
+    },
+    "it": {
+     "t": "Benvenuto nel viaggio low cost",
+     "g": "Scopri perché viaggiare con poco significa scegliere bene, non rinunciare, e ti permette di partire più spesso.",
+     "p": [
+      "Viaggiare low cost vuol dire spendere per ciò che ami e tagliare ciò che noti appena.",
+      "I soldi risparmiati in un viaggio possono diventare l'inizio della prossima avventura.",
+      "Molti dei ricordi più belli sono gratis: un tramonto, un mercato, due chiacchiere con la gente del posto."
+     ],
+     "q": "Quale viaggio faresti subito se i soldi ti preoccupassero un po' meno?",
+     "c": "Scrivi un viaggio dei sogni e una cosa a cui rinunceresti volentieri per permettertelo."
+    },
+    "pt": {
+     "t": "Bem-vindo às viagens económicas",
+     "g": "Descobre porque viajar com pouco dinheiro é fazer escolhas inteligentes, não abdicar, e permite viajar mais vezes.",
+     "p": [
+      "Viajar barato é gastar no que adoras e cortar naquilo que mal notas.",
+      "O dinheiro poupado numa viagem pode ser o início da próxima aventura.",
+      "Muitas das melhores memórias são grátis: um pôr do sol, um mercado, uma conversa com alguém local."
+     ],
+     "q": "Que viagem farias já se o dinheiro te preocupasse um pouco menos?",
+     "c": "Escreve uma viagem de sonho e uma coisa de que abdicarias com gosto para a pagar."
+    },
+    "pt_BR": {
+     "t": "Bem-vindo às viagens econômicas",
+     "g": "Descubra por que viajar barato é fazer escolhas inteligentes, não abrir mão de tudo, e permite viajar mais vezes.",
+     "p": [
+      "Viajar com orçamento é gastar no que você ama e cortar o que você mal percebe.",
+      "O dinheiro economizado numa viagem pode ser o começo da próxima aventura.",
+      "Muitas das melhores lembranças são de graça: um pôr do sol, uma feira, um papo com alguém local."
+     ],
+     "q": "Que viagem você faria agora mesmo se o dinheiro preocupasse um pouco menos?",
+     "c": "Anote uma viagem dos sonhos e uma coisa da qual você abriria mão com prazer para pagá-la."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your travel money mindset",
+     "g": "Learn to look at value instead of just price and decide what truly matters to you on a trip.",
+     "p": [
+      "Value means what you get for your money: the cheapest option is not always the best deal.",
+      "Pick one or two splurges you really care about and keep everything else simple.",
+      "Ask yourself: will I remember this expense in a year? If not, it is an easy cut."
+     ],
+     "q": "On a trip, what is worth paying more for to you: food, comfort, experiences or something else?",
+     "c": "List your top three travel priorities and one thing you never need to pay extra for."
+    },
+    "de": {
+     "t": "Deine Reisegeld-Einstellung",
+     "g": "Lerne, auf den Wert statt nur auf den Preis zu achten, und entscheide, was dir auf Reisen wirklich wichtig ist.",
+     "p": [
+      "Wert heißt, was du für dein Geld bekommst: Das Billigste ist nicht immer das beste Angebot.",
+      "Wähle ein, zwei Dinge, für die du gern mehr ausgibst, und halte alles andere einfach.",
+      "Frag dich: Werde ich mich in einem Jahr an diese Ausgabe erinnern? Wenn nicht, streich sie."
+     ],
+     "q": "Wofür zahlst du auf Reisen gern mehr: Essen, Komfort, Erlebnisse oder etwas anderes?",
+     "c": "Notiere deine drei wichtigsten Reiseprioritäten und eine Sache, für die du nie extra zahlen musst."
+    },
+    "es": {
+     "t": "Tu mentalidad con el dinero de viaje",
+     "g": "Aprende a fijarte en el valor y no solo en el precio, y decide qué te importa de verdad en un viaje.",
+     "p": [
+      "Valor es lo que obtienes por tu dinero: lo más barato no siempre es la mejor opción.",
+      "Elige uno o dos caprichos que de verdad te importen y mantén lo demás sencillo.",
+      "Pregúntate: ¿recordaré este gasto dentro de un año? Si no, es fácil recortarlo."
+     ],
+     "q": "En un viaje, ¿en qué vale la pena gastar más para ti: comida, comodidad, experiencias u otra cosa?",
+     "c": "Escribe tus tres prioridades de viaje y una cosa por la que nunca necesitas pagar extra."
+    },
+    "fr": {
+     "t": "Ton état d'esprit côté argent",
+     "g": "Apprends à regarder la valeur plutôt que le seul prix et décide ce qui compte vraiment pour toi en voyage.",
+     "p": [
+      "La valeur, c'est ce que tu obtiens pour ton argent : le moins cher n'est pas toujours la meilleure affaire.",
+      "Choisis une ou deux folies qui te tiennent à cœur et garde tout le reste simple.",
+      "Demande-toi : me souviendrai-je de cette dépense dans un an ? Sinon, c'est facile à couper."
+     ],
+     "q": "En voyage, pour quoi es-tu prêt à payer plus : la cuisine, le confort, les expériences ou autre chose ?",
+     "c": "Note tes trois priorités de voyage et une chose pour laquelle tu n'as jamais besoin de payer plus."
+    },
+    "it": {
+     "t": "La tua mentalità sui soldi in viaggio",
+     "g": "Impara a guardare il valore e non solo il prezzo, e decidi cosa conta davvero per te in viaggio.",
+     "p": [
+      "Valore è ciò che ottieni per i tuoi soldi: l'opzione più economica non è sempre l'affare migliore.",
+      "Scegli uno o due sfizi a cui tieni davvero e mantieni tutto il resto semplice.",
+      "Chiediti: ricorderò questa spesa tra un anno? Se no, è facile da tagliare."
+     ],
+     "q": "In viaggio, per cosa vale la pena spendere di più per te: cibo, comodità, esperienze o altro?",
+     "c": "Scrivi le tue tre priorità di viaggio e una cosa per cui non ti serve mai pagare di più."
+    },
+    "pt": {
+     "t": "A tua mentalidade com o dinheiro",
+     "g": "Aprende a olhar para o valor e não só para o preço, e decide o que realmente importa para ti numa viagem.",
+     "p": [
+      "Valor é o que recebes pelo teu dinheiro: a opção mais barata nem sempre é o melhor negócio.",
+      "Escolhe um ou dois mimos que te importam mesmo e mantém o resto simples.",
+      "Pergunta a ti mesmo: vou lembrar-me desta despesa daqui a um ano? Se não, é fácil cortar."
+     ],
+     "q": "Numa viagem, em que vale a pena gastar mais para ti: comida, conforto, experiências ou outra coisa?",
+     "c": "Escreve as tuas três prioridades de viagem e uma coisa pela qual nunca precisas de pagar mais."
+    },
+    "pt_BR": {
+     "t": "Sua mentalidade com o dinheiro",
+     "g": "Aprenda a olhar o valor, não só o preço, e decida o que realmente importa para você numa viagem.",
+     "p": [
+      "Valor é o que você recebe pelo seu dinheiro: a opção mais barata nem sempre é o melhor negócio.",
+      "Escolha um ou dois mimos que importam de verdade e mantenha o resto simples.",
+      "Pergunte-se: vou lembrar desse gasto daqui a um ano? Se não, é fácil cortar."
+     ],
+     "q": "Numa viagem, em que vale a pena gastar mais para você: comida, conforto, experiências ou outra coisa?",
+     "c": "Anote suas três prioridades de viagem e uma coisa pela qual você nunca precisa pagar a mais."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Setting a trip goal",
+     "g": "Decide where, when, how long and why before you even start thinking about the budget.",
+     "p": [
+      "A clear goal stops you from spending on things that do not fit the trip you want.",
+      "Where and when shape costs the most, so settle them early but keep some flexibility.",
+      "Your why matters: relaxing, exploring or meeting people each lead to different choices."
+     ],
+     "q": "If you planned a trip today, what would be your where, when, how long and why?",
+     "c": "Write a one-line trip goal, for example: five days, a coastal town, to relax and eat well."
+    },
+    "de": {
+     "t": "Ein Reiseziel festlegen",
+     "g": "Entscheide wohin, wann, wie lange und warum, bevor du überhaupt ans Budget denkst.",
+     "p": [
+      "Ein klares Ziel verhindert Ausgaben für Dinge, die nicht zu deiner Wunschreise passen.",
+      "Ort und Zeit bestimmen die Kosten am stärksten: Leg sie früh fest, bleib aber etwas flexibel.",
+      "Dein Warum zählt: Erholen, Entdecken oder Leute treffen führen zu ganz anderen Entscheidungen."
+     ],
+     "q": "Wenn du heute eine Reise planen würdest: Wohin, wann, wie lange und warum?",
+     "c": "Schreib dein Reiseziel in einen Satz, zum Beispiel: fünf Tage Küstenstadt, um zu entspannen und gut zu essen."
+    },
+    "es": {
+     "t": "Definir el objetivo del viaje",
+     "g": "Decide dónde, cuándo, cuánto tiempo y por qué antes de empezar a pensar en el presupuesto.",
+     "p": [
+      "Un objetivo claro evita gastar en cosas que no encajan con el viaje que quieres.",
+      "El dónde y el cuándo son lo que más influye en el coste: decídelos pronto, con algo de flexibilidad.",
+      "Tu porqué importa: descansar, explorar o conocer gente llevan a decisiones distintas."
+     ],
+     "q": "Si planearas un viaje hoy, ¿cuál sería tu dónde, cuándo, cuánto tiempo y por qué?",
+     "c": "Escribe tu objetivo en una frase, por ejemplo: cinco días en un pueblo costero para descansar y comer bien."
+    },
+    "fr": {
+     "t": "Fixer l'objectif du voyage",
+     "g": "Décide où, quand, combien de temps et pourquoi avant même de penser au budget.",
+     "p": [
+      "Un objectif clair t'évite de dépenser pour des choses qui ne collent pas au voyage voulu.",
+      "Le lieu et la date pèsent le plus sur les coûts : fixe-les tôt, mais garde un peu de souplesse.",
+      "Ton pourquoi compte : se reposer, explorer ou rencontrer des gens mènent à des choix différents."
+     ],
+     "q": "Si tu planifiais un voyage aujourd'hui, quels seraient ton où, ton quand, ta durée et ton pourquoi ?",
+     "c": "Écris ton objectif en une phrase, par exemple : cinq jours dans une ville côtière pour me reposer et bien manger."
+    },
+    "it": {
+     "t": "Fissare l'obiettivo del viaggio",
+     "g": "Decidi dove, quando, per quanto e perché prima ancora di pensare al budget.",
+     "p": [
+      "Un obiettivo chiaro ti evita spese per cose che non c'entrano con il viaggio che vuoi.",
+      "Dove e quando incidono di più sui costi: decidili presto, ma lascia un po' di flessibilità.",
+      "Il tuo perché conta: riposarsi, esplorare o conoscere gente portano a scelte diverse."
+     ],
+     "q": "Se pianificassi un viaggio oggi, quali sarebbero il tuo dove, quando, per quanto e perché?",
+     "c": "Scrivi il tuo obiettivo in una frase, per esempio: cinque giorni in una cittadina di mare per riposare e mangiare bene."
+    },
+    "pt": {
+     "t": "Definir o objetivo da viagem",
+     "g": "Decide para onde, quando, quanto tempo e porquê antes de começares a pensar no orçamento.",
+     "p": [
+      "Um objetivo claro evita gastos em coisas que não combinam com a viagem que queres.",
+      "O onde e o quando são o que mais pesa nos custos: decide-os cedo, com alguma flexibilidade.",
+      "O teu porquê conta: descansar, explorar ou conhecer pessoas levam a escolhas diferentes."
+     ],
+     "q": "Se planeasses uma viagem hoje, qual seria o teu onde, quando, quanto tempo e porquê?",
+     "c": "Escreve o teu objetivo numa frase, por exemplo: cinco dias numa vila costeira para descansar e comer bem."
+    },
+    "pt_BR": {
+     "t": "Definindo o objetivo da viagem",
+     "g": "Decida para onde, quando, por quanto tempo e por quê antes de começar a pensar no orçamento.",
+     "p": [
+      "Um objetivo claro evita gastar com coisas que não combinam com a viagem que você quer.",
+      "O onde e o quando são o que mais pesa no custo: decida cedo, mas com alguma flexibilidade.",
+      "Seu porquê importa: descansar, explorar ou conhecer gente levam a escolhas diferentes."
+     ],
+     "q": "Se você planejasse uma viagem hoje, qual seria o seu onde, quando, quanto tempo e por quê?",
+     "c": "Escreva seu objetivo numa frase, por exemplo: cinco dias numa cidade litorânea para descansar e comer bem."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The four big costs",
+     "g": "Get to know transport, accommodation, food and activities: the four places most travel money goes.",
+     "p": [
+      "Transport and accommodation are usually the biggest costs, so small wins there count most.",
+      "Food is a daily cost, so simple habits like one picnic a day add up fast.",
+      "Activities are where you can mix paid highlights with plenty of free fun."
+     ],
+     "q": "Thinking of your last trip, which of the four costs took the biggest share of your money?",
+     "c": "Split an imaginary trip into the four big costs and guess which one would be the largest."
+    },
+    "de": {
+     "t": "Die vier großen Kosten",
+     "g": "Lerne Transport, Unterkunft, Essen und Aktivitäten kennen: die vier Bereiche, in die das meiste Reisegeld fließt.",
+     "p": [
+      "Transport und Unterkunft sind meist am teuersten, deshalb zählen kleine Erfolge dort am meisten.",
+      "Essen kostet jeden Tag, darum summieren sich Gewohnheiten wie ein Picknick pro Tag schnell.",
+      "Bei Aktivitäten kannst du bezahlte Highlights mit viel kostenlosem Spaß mischen."
+     ],
+     "q": "Welcher der vier Bereiche hat auf deiner letzten Reise am meisten Geld gekostet?",
+     "c": "Teile eine erfundene Reise in die vier großen Kosten auf und schätze, welche am größten wäre."
+    },
+    "es": {
+     "t": "Los cuatro grandes gastos",
+     "g": "Conoce el transporte, el alojamiento, la comida y las actividades: donde se va casi todo el dinero de un viaje.",
+     "p": [
+      "Transporte y alojamiento suelen ser lo más caro, así que ahorrar un poco ahí es lo que más cuenta.",
+      "La comida es un gasto diario: hábitos simples como un pícnic al día suman rápido.",
+      "En las actividades puedes combinar algunos imprescindibles de pago con mucha diversión gratis."
+     ],
+     "q": "Pensando en tu último viaje, ¿cuál de los cuatro gastos se llevó la mayor parte de tu dinero?",
+     "c": "Divide un viaje imaginario en los cuatro grandes gastos y adivina cuál sería el mayor."
+    },
+    "fr": {
+     "t": "Les quatre gros postes",
+     "g": "Découvre le transport, le logement, la nourriture et les activités : là où part l'essentiel du budget voyage.",
+     "p": [
+      "Transport et logement coûtent souvent le plus : de petites économies y comptent le plus.",
+      "Manger est une dépense quotidienne : un pique-nique par jour fait vite la différence.",
+      "Pour les activités, mélange quelques temps forts payants et beaucoup de plaisirs gratuits."
+     ],
+     "q": "Lors de ton dernier voyage, lequel des quatre postes a pris la plus grosse part de ton argent ?",
+     "c": "Répartis un voyage imaginaire entre les quatre postes et devine lequel serait le plus gros."
+    },
+    "it": {
+     "t": "Le quattro grandi spese",
+     "g": "Conosci trasporti, alloggio, cibo e attività: le quattro voci dove finisce gran parte dei soldi di un viaggio.",
+     "p": [
+      "Trasporti e alloggio sono di solito le spese maggiori, quindi i piccoli risparmi lì contano di più.",
+      "Il cibo è una spesa quotidiana: abitudini semplici come un picnic al giorno si sommano in fretta.",
+      "Nelle attività puoi alternare qualche esperienza a pagamento a tanto divertimento gratuito."
+     ],
+     "q": "Nel tuo ultimo viaggio, quale delle quattro voci si è presa la fetta più grande dei tuoi soldi?",
+     "c": "Dividi un viaggio immaginario nelle quattro grandi spese e indovina quale sarebbe la più alta."
+    },
+    "pt": {
+     "t": "Os quatro grandes custos",
+     "g": "Conhece o transporte, o alojamento, a comida e as atividades: onde vai a maior parte do dinheiro de uma viagem.",
+     "p": [
+      "Transporte e alojamento costumam ser o mais caro, por isso pequenas poupanças aí contam mais.",
+      "A comida é um custo diário: hábitos simples como um piquenique por dia somam depressa.",
+      "Nas atividades podes juntar alguns pontos altos pagos a muita diversão gratuita."
+     ],
+     "q": "Na tua última viagem, qual dos quatro custos levou a maior fatia do teu dinheiro?",
+     "c": "Divide uma viagem imaginária pelos quatro grandes custos e adivinha qual seria o maior."
+    },
+    "pt_BR": {
+     "t": "Os quatro grandes custos",
+     "g": "Conheça transporte, hospedagem, comida e atividades: onde vai a maior parte do dinheiro de uma viagem.",
+     "p": [
+      "Transporte e hospedagem costumam ser o mais caro, então pequenas economias ali contam mais.",
+      "Comida é um gasto diário: hábitos simples como um piquenique por dia somam rápido.",
+      "Nas atividades dá para misturar alguns passeios pagos com muita diversão de graça."
+     ],
+     "q": "Na sua última viagem, qual dos quatro custos levou a maior parte do seu dinheiro?",
+     "c": "Divida uma viagem imaginária nos quatro grandes custos e chute qual seria o maior."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Building a simple trip budget",
+     "g": "List the expected costs for each category and add a small buffer for surprises.",
+     "p": [
+      "Write one line per category: transport, stay, food and activities, with a rough estimate.",
+      "Add a buffer of around ten percent for surprises like a taxi in the rain or a forgotten charger.",
+      "A rough budget you actually use beats a perfect spreadsheet you never open."
+     ],
+     "q": "When you plan, do you prefer quick rough numbers or detailed lists, and why?",
+     "c": "Make a four-line budget for a weekend trip, then add a ten percent buffer at the bottom."
+    },
+    "de": {
+     "t": "Ein einfaches Reisebudget",
+     "g": "Liste die erwarteten Kosten pro Bereich auf und plane einen kleinen Puffer für Überraschungen ein.",
+     "p": [
+      "Schreib eine Zeile pro Bereich: Transport, Unterkunft, Essen und Aktivitäten, mit grober Schätzung.",
+      "Rechne etwa zehn Prozent Puffer ein, etwa für ein Taxi im Regen oder ein vergessenes Ladekabel.",
+      "Ein grobes Budget, das du nutzt, ist besser als eine perfekte Tabelle, die du nie öffnest."
+     ],
+     "q": "Planst du lieber mit schnellen, groben Zahlen oder mit detaillierten Listen, und warum?",
+     "c": "Erstelle ein Vier-Zeilen-Budget für ein Wochenende und füge unten zehn Prozent Puffer hinzu."
+    },
+    "es": {
+     "t": "Hacer un presupuesto sencillo",
+     "g": "Haz una lista de los gastos previstos por categoría y añade un pequeño colchón para imprevistos.",
+     "p": [
+      "Escribe una línea por categoría: transporte, alojamiento, comida y actividades, con una estimación.",
+      "Suma un colchón de un diez por ciento para sorpresas, como un taxi bajo la lluvia o un cargador olvidado.",
+      "Un presupuesto aproximado que usas vale más que una hoja perfecta que nunca abres."
+     ],
+     "q": "Cuando planificas, ¿prefieres números rápidos y aproximados o listas detalladas? ¿Por qué?",
+     "c": "Haz un presupuesto de cuatro líneas para un fin de semana y añade abajo un diez por ciento extra."
+    },
+    "fr": {
+     "t": "Bâtir un budget simple",
+     "g": "Liste les dépenses prévues par poste et ajoute une petite marge pour les imprévus.",
+     "p": [
+      "Écris une ligne par poste : transport, logement, repas et activités, avec une estimation.",
+      "Ajoute une marge d'environ dix pour cent pour les surprises, comme un taxi sous la pluie ou un chargeur oublié.",
+      "Un budget approximatif que tu utilises vaut mieux qu'un tableur parfait jamais ouvert."
+     ],
+     "q": "Quand tu planifies, préfères-tu des chiffres rapides et approximatifs ou des listes détaillées ?",
+     "c": "Fais un budget en quatre lignes pour un week-end, puis ajoute dix pour cent de marge en bas."
+    },
+    "it": {
+     "t": "Creare un budget semplice",
+     "g": "Elenca i costi previsti per ogni voce e aggiungi un piccolo margine per gli imprevisti.",
+     "p": [
+      "Scrivi una riga per voce: trasporti, alloggio, cibo e attività, con una stima di massima.",
+      "Aggiungi un margine del dieci per cento circa per sorprese come un taxi sotto la pioggia o un caricatore dimenticato.",
+      "Un budget approssimativo che usi davvero batte un foglio perfetto che non apri mai."
+     ],
+     "q": "Quando pianifichi, preferisci numeri veloci e approssimativi o liste dettagliate? Perché?",
+     "c": "Fai un budget di quattro righe per un weekend, poi aggiungi in fondo un dieci per cento di margine."
+    },
+    "pt": {
+     "t": "Criar um orçamento simples",
+     "g": "Lista os custos previstos por categoria e junta uma pequena margem para imprevistos.",
+     "p": [
+      "Escreve uma linha por categoria: transporte, alojamento, comida e atividades, com uma estimativa.",
+      "Junta uma margem de cerca de dez por cento para surpresas, como um táxi à chuva ou um carregador esquecido.",
+      "Um orçamento aproximado que usas vale mais do que uma folha perfeita que nunca abres."
+     ],
+     "q": "Quando planeias, preferes números rápidos e aproximados ou listas detalhadas? Porquê?",
+     "c": "Faz um orçamento de quatro linhas para um fim de semana e acrescenta no fim dez por cento de margem."
+    },
+    "pt_BR": {
+     "t": "Montando um orçamento simples",
+     "g": "Liste os custos previstos por categoria e inclua uma pequena reserva para imprevistos.",
+     "p": [
+      "Escreva uma linha por categoria: transporte, hospedagem, comida e atividades, com uma estimativa.",
+      "Some uma reserva de uns dez por cento para surpresas, como um táxi na chuva ou um carregador esquecido.",
+      "Um orçamento aproximado que você usa vale mais que uma planilha perfeita que nunca abre."
+     ],
+     "q": "Quando planeja, você prefere números rápidos e aproximados ou listas detalhadas? Por quê?",
+     "c": "Monte um orçamento de quatro linhas para um fim de semana e some no fim uma reserva de dez por cento."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Daily budget vs total budget",
+     "g": "Learn why a spending target per day is easier to follow than one big number for the whole trip.",
+     "p": [
+      "Subtract transport and pre-booked stays from the total, then divide the rest by the number of days.",
+      "A daily number tells you each evening whether you are on track, without stress.",
+      "A cheap day lets you enjoy a bigger one later, so the balance can move around."
+     ],
+     "q": "Would a daily spending target help you relax on a trip, or would it feel like too much counting?",
+     "c": "Pick a trip length and a total, then work out your daily target for food and activities."
+    },
+    "de": {
+     "t": "Tagesbudget oder Gesamtbudget",
+     "g": "Erfahre, warum ein Ausgabenziel pro Tag leichter einzuhalten ist als eine große Zahl für die ganze Reise.",
+     "p": [
+      "Zieh Transport und vorab gebuchte Unterkünfte vom Gesamtbetrag ab und teile den Rest durch die Tage.",
+      "Eine Tageszahl zeigt dir jeden Abend ganz entspannt, ob du im Plan liegst.",
+      "Ein günstiger Tag erlaubt später einen teureren, das Gleichgewicht darf sich verschieben."
+     ],
+     "q": "Würde dir ein Tagesbudget auf Reisen Ruhe geben, oder wäre dir das zu viel Rechnerei?",
+     "c": "Wähle eine Reisedauer und einen Gesamtbetrag und berechne dein Tagesziel für Essen und Aktivitäten."
+    },
+    "es": {
+     "t": "Presupuesto diario o total",
+     "g": "Descubre por qué un objetivo de gasto por día es más fácil de seguir que una gran cifra para todo el viaje.",
+     "p": [
+      "Resta del total el transporte y el alojamiento ya reservado, y divide lo que queda entre los días.",
+      "Una cifra diaria te dice cada noche si vas bien, sin agobios.",
+      "Un día barato te permite disfrutar de uno más caro después: el equilibrio puede moverse."
+     ],
+     "q": "¿Un objetivo de gasto diario te ayudaría a relajarte en un viaje o te parecería demasiado cálculo?",
+     "c": "Elige una duración y un total, y calcula tu objetivo diario para comida y actividades."
+    },
+    "fr": {
+     "t": "Budget par jour ou budget total",
+     "g": "Comprends pourquoi un objectif de dépense par jour est plus facile à suivre qu'un gros chiffre global.",
+     "p": [
+      "Retire du total le transport et les nuits déjà réservées, puis divise le reste par le nombre de jours.",
+      "Un chiffre quotidien te dit chaque soir si tu es dans les clous, sans stress.",
+      "Une journée économe permet d'en savourer une plus chère ensuite : l'équilibre peut bouger."
+     ],
+     "q": "Un objectif quotidien t'aiderait-il à te détendre en voyage, ou serait-ce trop de calculs ?",
+     "c": "Choisis une durée et un total, puis calcule ton objectif quotidien pour les repas et les activités."
+    },
+    "it": {
+     "t": "Budget giornaliero o totale",
+     "g": "Scopri perché un obiettivo di spesa al giorno è più facile da seguire di una cifra unica per tutto il viaggio.",
+     "p": [
+      "Togli dal totale trasporti e notti già prenotate, poi dividi il resto per il numero di giorni.",
+      "Una cifra giornaliera ti dice ogni sera se sei in linea, senza stress.",
+      "Un giorno economico ti permette di goderne uno più ricco dopo: l'equilibrio può spostarsi."
+     ],
+     "q": "Un obiettivo di spesa giornaliero ti aiuterebbe a rilassarti in viaggio o sarebbero troppi conti?",
+     "c": "Scegli una durata e un totale, poi calcola il tuo obiettivo giornaliero per cibo e attività."
+    },
+    "pt": {
+     "t": "Orçamento diário ou total",
+     "g": "Percebe porque um objetivo de gasto por dia é mais fácil de seguir do que um grande número para a viagem toda.",
+     "p": [
+      "Tira ao total o transporte e o alojamento já reservado e divide o resto pelo número de dias.",
+      "Um número diário diz-te todas as noites se estás no bom caminho, sem stress.",
+      "Um dia barato permite aproveitar um mais caro depois: o equilíbrio pode variar."
+     ],
+     "q": "Um objetivo de gasto diário ajudava-te a relaxar numa viagem ou seriam contas a mais?",
+     "c": "Escolhe uma duração e um total e calcula o teu objetivo diário para comida e atividades."
+    },
+    "pt_BR": {
+     "t": "Orçamento diário ou total",
+     "g": "Entenda por que uma meta de gasto por dia é mais fácil de seguir do que um número grande para a viagem toda.",
+     "p": [
+      "Tire do total o transporte e a hospedagem já reservada e divida o resto pelo número de dias.",
+      "Um número diário mostra toda noite se você está no caminho certo, sem estresse.",
+      "Um dia barato deixa você curtir um dia mais caro depois: o equilíbrio pode variar."
+     ],
+     "q": "Uma meta de gasto diário ajudaria você a relaxar na viagem ou seria conta demais?",
+     "c": "Escolha uma duração e um total e calcule sua meta diária para comida e atividades."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Tracking spending on the road",
+     "g": "Build simple notebook or app habits to log what you spend each day while travelling.",
+     "p": [
+      "Log every expense the moment you pay, or at least once each evening, so nothing slips away.",
+      "Group entries by the four big costs to see quickly where your money is going.",
+      "Keep receipts in one pocket or snap a photo, then clear them out when logged."
+     ],
+     "q": "Do you usually know where your money went after a trip, or is it a bit of a mystery?",
+     "c": "Log everything you spend today, even small coffees, in one note on your phone or paper."
+    },
+    "de": {
+     "t": "Ausgaben unterwegs festhalten",
+     "g": "Entwickle einfache Gewohnheiten mit Notizbuch oder App, um täglich festzuhalten, was du ausgibst.",
+     "p": [
+      "Notiere jede Ausgabe sofort beim Bezahlen oder zumindest jeden Abend, damit nichts verloren geht.",
+      "Ordne Einträge den vier großen Kosten zu, dann siehst du schnell, wohin dein Geld fließt.",
+      "Sammle Belege in einer Tasche oder fotografiere sie und wirf sie nach dem Eintragen weg."
+     ],
+     "q": "Weißt du nach einer Reise meist, wohin dein Geld ging, oder bleibt es ein kleines Rätsel?",
+     "c": "Notiere heute alles, was du ausgibst, auch den kleinen Kaffee, in einer Notiz oder auf Papier."
+    },
+    "es": {
+     "t": "Controlar el gasto en ruta",
+     "g": "Crea hábitos sencillos con libreta o aplicación para apuntar lo que gastas cada día de viaje.",
+     "p": [
+      "Anota cada gasto al pagar, o al menos cada noche, para que no se te escape nada.",
+      "Agrupa las notas por los cuatro grandes gastos y verás enseguida adónde va tu dinero.",
+      "Guarda los tiques en un solo bolsillo o hazles una foto, y tíralos cuando los anotes."
+     ],
+     "q": "Después de un viaje, ¿sueles saber en qué se fue tu dinero o es un pequeño misterio?",
+     "c": "Apunta hoy todo lo que gastes, incluso el café más pequeño, en una nota del móvil o en papel."
+    },
+    "fr": {
+     "t": "Suivre ses dépenses en route",
+     "g": "Prends des habitudes simples, carnet ou appli, pour noter chaque jour ce que tu dépenses en voyage.",
+     "p": [
+      "Note chaque dépense au moment de payer, ou au moins chaque soir, pour ne rien oublier.",
+      "Classe les lignes selon les quatre gros postes pour voir vite où part ton argent.",
+      "Garde les tickets dans une seule poche ou prends-les en photo, puis jette-les une fois notés."
+     ],
+     "q": "Après un voyage, sais-tu en général où est passé ton argent, ou est-ce un petit mystère ?",
+     "c": "Note aujourd'hui tout ce que tu dépenses, même le petit café, dans une note sur ton téléphone ou sur papier."
+    },
+    "it": {
+     "t": "Tenere traccia delle spese",
+     "g": "Crea semplici abitudini con un taccuino o un'app per annotare quanto spendi ogni giorno in viaggio.",
+     "p": [
+      "Segna ogni spesa appena paghi, o almeno ogni sera, così non ti sfugge niente.",
+      "Raggruppa le voci per le quattro grandi spese e vedrai subito dove vanno i tuoi soldi.",
+      "Tieni gli scontrini in una sola tasca o fotografali, poi buttali dopo averli segnati."
+     ],
+     "q": "Dopo un viaggio di solito sai dove sono finiti i tuoi soldi, o resta un piccolo mistero?",
+     "c": "Segna oggi tutto ciò che spendi, anche il caffè, in una nota sul telefono o su carta."
+    },
+    "pt": {
+     "t": "Registar os gastos na estrada",
+     "g": "Cria hábitos simples com caderno ou app para registar o que gastas todos os dias em viagem.",
+     "p": [
+      "Regista cada gasto no momento em que pagas, ou pelo menos todas as noites, para nada escapar.",
+      "Agrupa os registos pelos quatro grandes custos e vês logo para onde vai o dinheiro.",
+      "Guarda os talões num só bolso ou tira-lhes uma foto e deita-os fora depois de registados."
+     ],
+     "q": "Depois de uma viagem costumas saber onde foi parar o dinheiro, ou é um pequeno mistério?",
+     "c": "Regista hoje tudo o que gastares, até o café mais pequeno, numa nota no telemóvel ou em papel."
+    },
+    "pt_BR": {
+     "t": "Anotando os gastos na estrada",
+     "g": "Crie hábitos simples com caderno ou app para anotar o que você gasta a cada dia de viagem.",
+     "p": [
+      "Anote cada gasto na hora de pagar, ou pelo menos toda noite, para nada escapar.",
+      "Agrupe as anotações pelos quatro grandes custos e veja rápido para onde vai o dinheiro.",
+      "Guarde os recibos num bolso só ou tire foto e jogue fora depois de anotar."
+     ],
+     "q": "Depois de uma viagem você costuma saber onde foi parar o dinheiro ou é um pequeno mistério?",
+     "c": "Anote hoje tudo o que gastar, até o cafezinho, numa nota no celular ou no papel."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Saving up for a trip",
+     "g": "Use small weekly savings, a dedicated travel fund and little celebrations to reach your trip money.",
+     "p": [
+      "A separate travel pot keeps trip money safe from everyday spending.",
+      "Small automatic weekly amounts grow faster than you expect and feel painless.",
+      "Celebrate milestones like a quarter of the goal, so saving feels like part of the adventure."
+     ],
+     "q": "What small everyday expense could you turn into travel savings for a few weeks?",
+     "c": "Choose a name for your travel fund and decide one small amount you could put in it each week."
+    },
+    "de": {
+     "t": "Für eine Reise sparen",
+     "g": "Erreiche dein Reisegeld mit kleinen Wochenbeträgen, einem eigenen Reisetopf und kleinen Feiern.",
+     "p": [
+      "Ein separater Reisetopf schützt das Reisegeld vor alltäglichen Ausgaben.",
+      "Kleine automatische Wochenbeträge wachsen schneller als gedacht und tun kaum weh.",
+      "Feiere Etappen wie ein Viertel des Ziels, dann fühlt sich Sparen wie ein Teil des Abenteuers an."
+     ],
+     "q": "Welche kleine Alltagsausgabe könntest du für ein paar Wochen in Reiseersparnisse verwandeln?",
+     "c": "Gib deinem Reisetopf einen Namen und leg einen kleinen Betrag fest, den du wöchentlich einzahlst."
+    },
+    "es": {
+     "t": "Ahorrar para un viaje",
+     "g": "Llega al dinero de tu viaje con pequeños ahorros semanales, un fondo propio y pequeñas celebraciones.",
+     "p": [
+      "Un fondo de viaje aparte protege ese dinero de los gastos del día a día.",
+      "Pequeñas cantidades automáticas cada semana crecen más rápido de lo que crees y casi no duelen.",
+      "Celebra hitos como llegar a un cuarto del objetivo: así ahorrar ya es parte de la aventura."
+     ],
+     "q": "¿Qué pequeño gasto diario podrías convertir en ahorro para viajar durante unas semanas?",
+     "c": "Ponle nombre a tu fondo de viaje y decide una pequeña cantidad que podrías meter cada semana."
+    },
+    "fr": {
+     "t": "Mettre de côté pour partir",
+     "g": "Atteins ton budget voyage avec de petites sommes chaque semaine, une cagnotte dédiée et de petites fêtes.",
+     "p": [
+      "Une cagnotte voyage séparée protège cet argent des dépenses du quotidien.",
+      "De petits virements automatiques chaque semaine grossissent plus vite que prévu, sans douleur.",
+      "Fête les étapes, comme le premier quart de l'objectif : épargner devient déjà une aventure."
+     ],
+     "q": "Quelle petite dépense quotidienne pourrais-tu transformer en épargne voyage pendant quelques semaines ?",
+     "c": "Donne un nom à ta cagnotte voyage et choisis une petite somme à y verser chaque semaine."
+    },
+    "it": {
+     "t": "Risparmiare per un viaggio",
+     "g": "Raggiungi la cifra del viaggio con piccoli risparmi settimanali, un fondo dedicato e piccole feste.",
+     "p": [
+      "Un fondo viaggi separato protegge quei soldi dalle spese di tutti i giorni.",
+      "Piccole somme automatiche ogni settimana crescono più in fretta del previsto e quasi non pesano.",
+      "Festeggia le tappe, come un quarto dell'obiettivo: così risparmiare diventa già parte dell'avventura."
+     ],
+     "q": "Quale piccola spesa quotidiana potresti trasformare in risparmio per viaggiare per qualche settimana?",
+     "c": "Dai un nome al tuo fondo viaggi e decidi una piccola somma da metterci ogni settimana."
+    },
+    "pt": {
+     "t": "Poupar para uma viagem",
+     "g": "Chega ao dinheiro da viagem com pequenas poupanças semanais, um fundo próprio e pequenas celebrações.",
+     "p": [
+      "Um fundo de viagem separado protege esse dinheiro dos gastos do dia a dia.",
+      "Pequenos valores automáticos todas as semanas crescem mais depressa do que pensas e quase não custam.",
+      "Celebra metas, como um quarto do objetivo: assim poupar já faz parte da aventura."
+     ],
+     "q": "Que pequeno gasto do dia a dia podias transformar em poupança para viajar durante umas semanas?",
+     "c": "Dá um nome ao teu fundo de viagem e decide um pequeno valor para lá pôr todas as semanas."
+    },
+    "pt_BR": {
+     "t": "Juntando dinheiro para viajar",
+     "g": "Chegue ao dinheiro da viagem com pequenas economias semanais, um fundo só para isso e pequenas comemorações.",
+     "p": [
+      "Um fundo de viagem separado protege esse dinheiro dos gastos do dia a dia.",
+      "Pequenos valores automáticos toda semana crescem mais rápido do que você imagina e quase não pesam.",
+      "Comemore metas, como um quarto do objetivo: assim juntar dinheiro já faz parte da aventura."
+     ],
+     "q": "Que pequeno gasto do dia a dia você poderia virar economia para viajar por algumas semanas?",
+     "c": "Dê um nome ao seu fundo de viagem e decida um valor pequeno para colocar nele toda semana."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Cheap places vs cheap habits",
+     "g": "See that living costs differ from place to place, but smart habits save money anywhere in the world.",
+     "p": [
+      "Some destinations are simply cheaper day to day, which stretches a budget further.",
+      "Even in an expensive city, habits like walking, picnics and free sights keep costs low.",
+      "The winning combo: an affordable place plus good habits, but habits alone already help a lot."
+     ],
+     "q": "Would you rather visit a cheaper place for longer or an expensive dream city for a few days?",
+     "c": "Name one expensive city you love and three free or cheap things you could do there."
+    },
+    "de": {
+     "t": "Günstige Orte, günstige Gewohnheiten",
+     "g": "Erkenne, dass Lebenshaltungskosten je nach Ort schwanken, kluge Gewohnheiten aber überall Geld sparen.",
+     "p": [
+      "Manche Reiseziele sind im Alltag einfach günstiger, so reicht das Budget länger.",
+      "Selbst in teuren Städten halten Gewohnheiten wie Laufen, Picknicks und Gratis-Sehenswürdigkeiten die Kosten niedrig.",
+      "Die beste Mischung: ein günstiger Ort plus gute Gewohnheiten, doch schon die Gewohnheiten helfen viel."
+     ],
+     "q": "Würdest du lieber länger an einen günstigen Ort reisen oder ein paar Tage in eine teure Traumstadt?",
+     "c": "Nenne eine teure Stadt, die du liebst, und drei kostenlose oder günstige Dinge, die man dort tun kann."
+    },
+    "es": {
+     "t": "Lugares baratos y hábitos baratos",
+     "g": "Comprueba que el coste de vida cambia según el lugar, pero los buenos hábitos ahorran dinero en cualquier parte.",
+     "p": [
+      "Algunos destinos son más baratos en el día a día, y el presupuesto rinde más.",
+      "Incluso en una ciudad cara, caminar, hacer pícnics y ver lo gratuito mantiene el gasto bajo.",
+      "La mejor combinación: un lugar asequible y buenos hábitos, aunque los hábitos solos ya ayudan mucho."
+     ],
+     "q": "¿Prefieres un lugar barato durante más tiempo o una ciudad cara de tus sueños unos pocos días?",
+     "c": "Nombra una ciudad cara que te encante y tres cosas gratis o baratas que podrías hacer allí."
+    },
+    "fr": {
+     "t": "Lieux bon marché, habitudes malines",
+     "g": "Constate que le coût de la vie varie selon le lieu, mais que de bonnes habitudes font économiser partout.",
+     "p": [
+      "Certaines destinations sont tout simplement moins chères au quotidien, et le budget dure plus longtemps.",
+      "Même dans une ville chère, marcher, pique-niquer et viser le gratuit gardent les dépenses basses.",
+      "Le combo gagnant : un lieu abordable et de bonnes habitudes, mais les habitudes seules aident déjà beaucoup."
+     ],
+     "q": "Préfères-tu un endroit bon marché plus longtemps ou une ville chère de tes rêves pendant quelques jours ?",
+     "c": "Cite une ville chère que tu adores et trois choses gratuites ou peu chères à y faire."
+    },
+    "it": {
+     "t": "Posti economici e abitudini furbe",
+     "g": "Scopri che il costo della vita cambia da posto a posto, ma le buone abitudini fanno risparmiare ovunque.",
+     "p": [
+      "Alcune mete sono semplicemente più economiche nella vita di tutti i giorni e il budget dura di più.",
+      "Anche in una città cara, camminare, fare picnic e scegliere ciò che è gratis tiene bassi i costi.",
+      "La combinazione vincente: un posto conveniente più buone abitudini, ma già le abitudini aiutano tanto."
+     ],
+     "q": "Preferiresti un posto economico più a lungo o una costosa città dei sogni per pochi giorni?",
+     "c": "Nomina una città cara che ami e tre cose gratis o economiche che potresti fare lì."
+    },
+    "pt": {
+     "t": "Sítios baratos e hábitos baratos",
+     "g": "Percebe que o custo de vida muda de lugar para lugar, mas bons hábitos poupam dinheiro em qualquer parte.",
+     "p": [
+      "Alguns destinos são mais baratos no dia a dia, e o orçamento rende mais.",
+      "Mesmo numa cidade cara, andar a pé, fazer piqueniques e ver o que é grátis mantém os gastos baixos.",
+      "A combinação vencedora: um lugar acessível e bons hábitos, mas só os hábitos já ajudam muito."
+     ],
+     "q": "Preferias um sítio barato durante mais tempo ou uma cidade cara de sonho por poucos dias?",
+     "c": "Diz uma cidade cara de que gostes muito e três coisas grátis ou baratas que podias fazer lá."
+    },
+    "pt_BR": {
+     "t": "Lugares baratos e hábitos baratos",
+     "g": "Perceba que o custo de vida muda de lugar para lugar, mas bons hábitos economizam em qualquer canto do mundo.",
+     "p": [
+      "Alguns destinos são mais baratos no dia a dia, e o orçamento rende mais.",
+      "Mesmo numa cidade cara, andar a pé, fazer piquenique e curtir o que é grátis mantém o gasto baixo.",
+      "A dupla vencedora: um lugar acessível e bons hábitos, mas só os hábitos já ajudam muito."
+     ],
+     "q": "Você prefere um lugar barato por mais tempo ou uma cidade cara dos sonhos por poucos dias?",
+     "c": "Cite uma cidade cara que você ama e três coisas grátis ou baratas para fazer lá."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Researching living costs",
+     "g": "Learn how to estimate meals, local transport and a bed in a place before you go.",
+     "p": [
+      "Check typical prices for a simple meal, a coffee, a local transit ticket and a dorm or basic room.",
+      "Travel forums, recent blogs and supermarket websites give realistic everyday price clues.",
+      "Compare with prices at home to sense whether a place will feel cheap, similar or pricey."
+     ],
+     "q": "What everyday item would you check first to guess how expensive a new place is?",
+     "c": "Pick a destination and estimate the cost of one simple meal, one transit ticket and one night."
+    },
+    "de": {
+     "t": "Lebenshaltungskosten recherchieren",
+     "g": "Lerne, vor der Reise Mahlzeiten, Nahverkehr und ein Bett vor Ort abzuschätzen.",
+     "p": [
+      "Prüfe typische Preise für ein einfaches Essen, einen Kaffee, ein Nahverkehrsticket und ein Bett.",
+      "Reiseforen, aktuelle Blogs und Supermarkt-Webseiten liefern realistische Hinweise auf Alltagspreise.",
+      "Vergleiche mit den Preisen zu Hause, um zu spüren, ob ein Ort günstig, ähnlich oder teuer wirkt."
+     ],
+     "q": "Welchen Alltagsartikel würdest du zuerst prüfen, um zu schätzen, wie teuer ein neuer Ort ist?",
+     "c": "Wähle ein Reiseziel und schätze die Kosten für ein einfaches Essen, ein Ticket und eine Nacht."
+    },
+    "es": {
+     "t": "Investigar el coste de vida",
+     "g": "Aprende a calcular comidas, transporte local y cama en un lugar antes de ir.",
+     "p": [
+      "Mira precios típicos de una comida sencilla, un café, un billete de transporte y una cama básica.",
+      "Foros de viaje, blogs recientes y webs de supermercados dan pistas realistas de precios diarios.",
+      "Compara con los precios de casa para intuir si un lugar te parecerá barato, parecido o caro."
+     ],
+     "q": "¿Qué producto cotidiano mirarías primero para adivinar lo caro que es un lugar nuevo?",
+     "c": "Elige un destino y calcula el coste de una comida sencilla, un billete de transporte y una noche."
+    },
+    "fr": {
+     "t": "Se renseigner sur le coût de la vie",
+     "g": "Apprends à estimer repas, transports locaux et lit sur place avant de partir.",
+     "p": [
+      "Regarde les prix typiques d'un repas simple, d'un café, d'un ticket de transport et d'un lit basique.",
+      "Forums de voyage, blogs récents et sites de supermarchés donnent des indices réalistes sur les prix.",
+      "Compare avec les prix chez toi pour sentir si un lieu paraîtra bon marché, semblable ou cher."
+     ],
+     "q": "Quel article du quotidien vérifierais-tu en premier pour deviner si un nouvel endroit est cher ?",
+     "c": "Choisis une destination et estime le coût d'un repas simple, d'un ticket de transport et d'une nuit."
+    },
+    "it": {
+     "t": "Informarsi sul costo della vita",
+     "g": "Impara a stimare pasti, trasporti locali e un letto in un posto prima di partire.",
+     "p": [
+      "Controlla i prezzi tipici di un pasto semplice, un caffè, un biglietto dei mezzi e un letto base.",
+      "Forum di viaggio, blog recenti e siti dei supermercati danno indizi realistici sui prezzi quotidiani.",
+      "Confronta con i prezzi di casa per capire se un posto ti sembrerà economico, simile o caro."
+     ],
+     "q": "Quale prodotto quotidiano controlleresti per primo per capire quanto è caro un posto nuovo?",
+     "c": "Scegli una meta e stima il costo di un pasto semplice, un biglietto dei mezzi e una notte."
+    },
+    "pt": {
+     "t": "Pesquisar o custo de vida",
+     "g": "Aprende a estimar refeições, transporte local e uma cama num lugar antes de ires.",
+     "p": [
+      "Vê preços típicos de uma refeição simples, um café, um bilhete de transporte e uma cama básica.",
+      "Fóruns de viagem, blogues recentes e sites de supermercados dão pistas realistas dos preços do dia a dia.",
+      "Compara com os preços de casa para perceber se um sítio vai parecer barato, parecido ou caro."
+     ],
+     "q": "Que produto do dia a dia verias primeiro para adivinhar se um sítio novo é caro?",
+     "c": "Escolhe um destino e estima o custo de uma refeição simples, um bilhete de transporte e uma noite."
+    },
+    "pt_BR": {
+     "t": "Pesquisando o custo de vida",
+     "g": "Aprenda a estimar refeições, transporte local e uma cama num lugar antes de ir.",
+     "p": [
+      "Veja preços típicos de uma refeição simples, um café, uma passagem de ônibus ou metrô e uma cama básica.",
+      "Fóruns de viagem, blogs recentes e sites de supermercado dão pistas realistas dos preços do dia a dia.",
+      "Compare com os preços de casa para sentir se o lugar vai parecer barato, parecido ou caro."
+     ],
+     "q": "Que item do dia a dia você checaria primeiro para adivinhar se um lugar novo é caro?",
+     "c": "Escolha um destino e estime o custo de uma refeição simples, uma passagem de transporte e uma noite."
+    }
+   }
+  }
+ ]
+}

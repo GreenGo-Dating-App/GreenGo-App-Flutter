@@ -1,0 +1,835 @@
+{
+ "topic": "etiquette",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Pointing and gestures",
+     "g": "Find out why pointing with one finger can be rude and which alternatives are safer.",
+     "p": [
+      "In many parts of Asia, Africa and the Middle East, pointing at people with one finger feels rude.",
+      "An open hand, palm up, is a polite way to indicate a person or a direction almost everywhere.",
+      "In some places, people point with the chin or the lips; it is fine to notice it and simply use your open hand."
+     ],
+     "q": "How do people point at things or show directions where you live?",
+     "c": "Today, try showing directions or objects with an open hand instead of one finger."
+    },
+    "de": {
+     "t": "Zeigen und Gesten",
+     "g": "Finde heraus, warum Zeigen mit einem Finger unhöflich sein kann und welche Alternativen sicherer sind.",
+     "p": [
+      "In vielen Teilen Asiens, Afrikas und des Nahen Ostens gilt es als unhöflich, mit einem Finger auf Menschen zu zeigen.",
+      "Eine offene Hand mit der Handfläche nach oben ist fast überall eine höfliche Art, auf jemanden oder eine Richtung zu deuten.",
+      "Mancherorts zeigt man mit dem Kinn oder den Lippen; du kannst es bemerken und einfach die offene Hand nutzen."
+     ],
+     "q": "Wie zeigt man bei dir auf Dinge oder beschreibt Wege?",
+     "c": "Zeige heute Richtungen oder Gegenstände mit der offenen Hand statt mit einem Finger."
+    },
+    "es": {
+     "t": "Señalar y gestos",
+     "g": "Descubre por qué señalar con un dedo puede ser grosero y qué alternativas son más seguras.",
+     "p": [
+      "En muchas partes de Asia, África y Oriente Medio, señalar a una persona con un dedo resulta grosero.",
+      "Una mano abierta, con la palma hacia arriba, es una forma educada de indicar a alguien o una dirección casi en todas partes.",
+      "En algunos lugares se señala con la barbilla o los labios; puedes notarlo y usar simplemente la mano abierta."
+     ],
+     "q": "¿Cómo se señalan las cosas o se indican direcciones donde vives?",
+     "c": "Hoy intenta indicar direcciones u objetos con la mano abierta en lugar de un dedo."
+    },
+    "fr": {
+     "t": "Montrer du doigt et gestes",
+     "g": "Découvre pourquoi montrer du doigt peut être impoli et quelles alternatives sont plus sûres.",
+     "p": [
+      "Dans bien des régions d'Asie, d'Afrique et du Moyen-Orient, désigner quelqu'un d'un seul doigt paraît impoli.",
+      "Une main ouverte, paume vers le haut, est presque partout une façon polie d'indiquer une personne ou une direction.",
+      "Dans certains endroits, on montre avec le menton ou les lèvres ; tu peux le remarquer et utiliser ta main ouverte."
+     ],
+     "q": "Comment montre-t-on les choses ou indique-t-on un chemin chez toi ?",
+     "c": "Aujourd'hui, indique les directions ou les objets avec la main ouverte plutôt qu'avec un doigt."
+    },
+    "it": {
+     "t": "Indicare e gesti",
+     "g": "Scopri perché indicare con un dito può essere scortese e quali alternative sono più sicure.",
+     "p": [
+      "In molte parti dell'Asia, dell'Africa e del Medio Oriente indicare una persona con un dito è considerato scortese.",
+      "Una mano aperta con il palmo in su è quasi ovunque un modo educato per indicare una persona o una direzione.",
+      "In alcuni luoghi si indica con il mento o con le labbra; puoi notarlo e usare semplicemente la mano aperta."
+     ],
+     "q": "Come si indicano le cose o le direzioni dove vivi?",
+     "c": "Oggi prova a indicare direzioni o oggetti con la mano aperta invece che con un dito."
+    },
+    "pt": {
+     "t": "Apontar e gestos",
+     "g": "Descobre porque é que apontar com um dedo pode ser indelicado e que alternativas são mais seguras.",
+     "p": [
+      "Em muitas partes da Ásia, de África e do Médio Oriente, apontar para alguém com um dedo é considerado indelicado.",
+      "Uma mão aberta, com a palma para cima, é quase em todo o lado uma forma educada de indicar alguém ou uma direção.",
+      "Em alguns sítios aponta-se com o queixo ou os lábios; podes reparar nisso e usar simplesmente a mão aberta."
+     ],
+     "q": "Como se aponta para as coisas ou se indicam caminhos onde vives?",
+     "c": "Hoje, experimenta indicar direções ou objetos com a mão aberta em vez de um dedo."
+    },
+    "pt_BR": {
+     "t": "Apontar e gestos",
+     "g": "Descubra por que apontar com um dedo pode ser falta de educação e quais alternativas são mais seguras.",
+     "p": [
+      "Em muitas partes da Ásia, da África e do Oriente Médio, apontar para alguém com um dedo é visto como grosseiro.",
+      "Uma mão aberta, com a palma para cima, é em quase todo lugar um jeito educado de indicar alguém ou uma direção.",
+      "Em alguns lugares as pessoas apontam com o queixo ou os lábios; você pode reparar e usar simplesmente a mão aberta."
+     ],
+     "q": "Como as pessoas apontam para coisas ou indicam caminhos onde você mora?",
+     "c": "Hoje, tente indicar direções ou objetos com a mão aberta em vez de um dedo."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Gestures to avoid abroad",
+     "g": "Get to know common hand signs that can offend in some countries.",
+     "p": [
+      "The thumbs-up is positive in many places but can be rude in parts of the Middle East and West Africa.",
+      "The OK sign with thumb and finger can be offensive in Brazil and parts of Europe and the Middle East.",
+      "Beckoning with a curled finger is impolite in the Philippines and much of Asia; a palm-down wave is safer."
+     ],
+     "q": "Have you ever used a gesture that meant something different to someone else?",
+     "c": "Pick one gesture you use often and find out what it means in two other countries."
+    },
+    "de": {
+     "t": "Gesten, die man im Ausland meiden sollte",
+     "g": "Lerne verbreitete Handzeichen kennen, die in manchen Ländern beleidigen können.",
+     "p": [
+      "Der erhobene Daumen ist vielerorts positiv, kann aber in Teilen des Nahen Ostens und Westafrikas unhöflich sein.",
+      "Das OK-Zeichen aus Daumen und Finger kann in Brasilien und Teilen Europas und des Nahen Ostens beleidigend wirken.",
+      "Heranwinken mit gekrümmtem Finger ist auf den Philippinen und in weiten Teilen Asiens unhöflich; besser mit der Handfläche nach unten."
+     ],
+     "q": "Hast du schon einmal eine Geste benutzt, die für jemand anderen etwas anderes bedeutete?",
+     "c": "Wähle eine Geste, die du oft nutzt, und finde heraus, was sie in zwei anderen Ländern bedeutet."
+    },
+    "es": {
+     "t": "Gestos que evitar en el extranjero",
+     "g": "Conoce gestos comunes con las manos que pueden ofender en algunos países.",
+     "p": [
+      "El pulgar hacia arriba es positivo en muchos sitios, pero puede ser grosero en partes de Oriente Medio y África occidental.",
+      "El gesto de OK con el pulgar y el índice puede ser ofensivo en Brasil y en partes de Europa y Oriente Medio.",
+      "Llamar a alguien con el dedo curvado es descortés en Filipinas y gran parte de Asia; mejor con la palma hacia abajo."
+     ],
+     "q": "¿Alguna vez usaste un gesto que significaba algo distinto para otra persona?",
+     "c": "Elige un gesto que usas a menudo y averigua qué significa en otros dos países."
+    },
+    "fr": {
+     "t": "Les gestes à éviter à l'étranger",
+     "g": "Découvre des gestes courants de la main qui peuvent choquer dans certains pays.",
+     "p": [
+      "Le pouce levé est positif dans bien des endroits mais peut être grossier dans certaines régions du Moyen-Orient et d'Afrique de l'Ouest.",
+      "Le signe OK avec le pouce et l'index peut être offensant au Brésil et dans des régions d'Europe et du Moyen-Orient.",
+      "Appeler quelqu'un en repliant l'index est impoli aux Philippines et dans une grande partie de l'Asie ; mieux vaut la paume vers le bas."
+     ],
+     "q": "As-tu déjà fait un geste qui voulait dire autre chose pour quelqu'un d'autre ?",
+     "c": "Choisis un geste que tu fais souvent et découvre ce qu'il signifie dans deux autres pays."
+    },
+    "it": {
+     "t": "Gesti da evitare all'estero",
+     "g": "Conosci alcuni gesti comuni con le mani che in certi Paesi possono offendere.",
+     "p": [
+      "Il pollice in su è positivo in molti luoghi, ma può essere scortese in parti del Medio Oriente e dell'Africa occidentale.",
+      "Il segno OK con pollice e indice può risultare offensivo in Brasile e in parti d'Europa e del Medio Oriente.",
+      "Chiamare qualcuno piegando l'indice è scortese nelle Filippine e in gran parte dell'Asia; meglio col palmo verso il basso."
+     ],
+     "q": "Ti è mai capitato di fare un gesto che per un'altra persona significava altro?",
+     "c": "Scegli un gesto che usi spesso e scopri cosa significa in altri due Paesi."
+    },
+    "pt": {
+     "t": "Gestos a evitar no estrangeiro",
+     "g": "Conhece gestos comuns com as mãos que podem ofender em alguns países.",
+     "p": [
+      "O polegar para cima é positivo em muitos sítios, mas pode ser rude em partes do Médio Oriente e da África Ocidental.",
+      "O sinal de OK com o polegar e o indicador pode ser ofensivo no Brasil e em partes da Europa e do Médio Oriente.",
+      "Chamar alguém com o dedo dobrado é indelicado nas Filipinas e em grande parte da Ásia; é melhor com a palma para baixo."
+     ],
+     "q": "Já usaste um gesto que significava outra coisa para outra pessoa?",
+     "c": "Escolhe um gesto que usas muito e descobre o que significa em dois outros países."
+    },
+    "pt_BR": {
+     "t": "Gestos para evitar no exterior",
+     "g": "Conheça gestos comuns com as mãos que podem ofender em alguns países.",
+     "p": [
+      "O joinha é positivo em muitos lugares, mas pode ser grosseiro em partes do Oriente Médio e da África Ocidental.",
+      "O sinal de OK com polegar e indicador é ofensivo no Brasil e em partes da Europa e do Oriente Médio.",
+      "Chamar alguém com o dedo dobrado é falta de educação nas Filipinas e em boa parte da Ásia; prefira a palma para baixo."
+     ],
+     "q": "Você já usou um gesto que significava outra coisa para outra pessoa?",
+     "c": "Escolha um gesto que você usa muito e descubra o que ele significa em dois outros países."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Using the right hand",
+     "g": "Understand why the right hand is preferred for eating and giving in many cultures.",
+     "p": [
+      "In India, much of Africa and the Middle East, the right hand is used for eating, greeting and passing things.",
+      "The left hand is traditionally linked to personal hygiene, so using it to offer food or gifts can feel impolite.",
+      "Left-handed visitors are understood; just make an effort to give, receive and eat with the right hand."
+     ],
+     "q": "Which hand do you use for most things, and have you ever had to switch for a custom?",
+     "c": "Practise passing objects and money with your right hand today, supporting it with the left if you like."
+    },
+    "de": {
+     "t": "Die rechte Hand benutzen",
+     "g": "Verstehe, warum in vielen Kulturen die rechte Hand zum Essen und Überreichen bevorzugt wird.",
+     "p": [
+      "In Indien, weiten Teilen Afrikas und im Nahen Osten isst, grüßt und reicht man Dinge mit der rechten Hand.",
+      "Die linke Hand wird traditionell mit Körperhygiene verbunden, daher wirkt es unhöflich, mit ihr Essen oder Geschenke zu reichen.",
+      "Linkshänder werden verstanden; bemühe dich einfach, mit rechts zu geben, zu nehmen und zu essen."
+     ],
+     "q": "Welche Hand benutzt du meistens, und musstest du schon einmal wegen eines Brauchs wechseln?",
+     "c": "Übe heute, Gegenstände und Geld mit der rechten Hand zu reichen, gern mit der linken stützend."
+    },
+    "es": {
+     "t": "Usar la mano derecha",
+     "g": "Entiende por qué en muchas culturas se prefiere la mano derecha para comer y dar cosas.",
+     "p": [
+      "En la India, gran parte de África y Oriente Medio, se usa la mano derecha para comer, saludar y pasar objetos.",
+      "La izquierda se asocia tradicionalmente a la higiene personal, por eso ofrecer comida o regalos con ella puede parecer descortés.",
+      "A los zurdos se les entiende; solo esfuérzate por dar, recibir y comer con la derecha."
+     ],
+     "q": "¿Qué mano usas para casi todo, y alguna vez tuviste que cambiar por una costumbre?",
+     "c": "Practica hoy pasar objetos y dinero con la mano derecha, apoyándola con la izquierda si quieres."
+    },
+    "fr": {
+     "t": "Utiliser la main droite",
+     "g": "Comprends pourquoi la main droite est préférée pour manger et donner dans de nombreuses cultures.",
+     "p": [
+      "En Inde, dans une grande partie de l'Afrique et au Moyen-Orient, on mange, salue et tend les objets de la main droite.",
+      "La main gauche est traditionnellement associée à l'hygiène intime : offrir de la nourriture ou un cadeau avec elle peut sembler impoli.",
+      "Les gauchers sont compris ; fais simplement l'effort de donner, recevoir et manger de la main droite."
+     ],
+     "q": "Quelle main utilises-tu pour presque tout, et as-tu déjà dû changer pour respecter une coutume ?",
+     "c": "Entraîne-toi aujourd'hui à tendre objets et argent de la main droite, en t'aidant de la gauche si tu veux."
+    },
+    "it": {
+     "t": "Usare la mano destra",
+     "g": "Capisci perché in molte culture si preferisce la mano destra per mangiare e porgere le cose.",
+     "p": [
+      "In India, in gran parte dell'Africa e in Medio Oriente si usa la destra per mangiare, salutare e passare oggetti.",
+      "La sinistra è tradizionalmente legata all'igiene personale, quindi offrire cibo o regali con essa può sembrare scortese.",
+      "I mancini vengono compresi; sforzati solo di dare, ricevere e mangiare con la destra."
+     ],
+     "q": "Quale mano usi per quasi tutto, e ti è mai capitato di cambiare per rispettare un'usanza?",
+     "c": "Oggi esercitati a passare oggetti e denaro con la destra, sostenendola con la sinistra se vuoi."
+    },
+    "pt": {
+     "t": "Usar a mão direita",
+     "g": "Percebe porque é que em muitas culturas se prefere a mão direita para comer e dar coisas.",
+     "p": [
+      "Na Índia, em grande parte de África e no Médio Oriente, usa-se a mão direita para comer, cumprimentar e passar objetos.",
+      "A esquerda está tradicionalmente ligada à higiene pessoal, por isso oferecer comida ou presentes com ela pode parecer indelicado.",
+      "Os canhotos são compreendidos; esforça-te apenas por dar, receber e comer com a direita."
+     ],
+     "q": "Que mão usas para quase tudo, e já tiveste de trocar por causa de um costume?",
+     "c": "Pratica hoje passar objetos e dinheiro com a mão direita, apoiando-a com a esquerda se quiseres."
+    },
+    "pt_BR": {
+     "t": "Usar a mão direita",
+     "g": "Entenda por que em muitas culturas se prefere a mão direita para comer e entregar coisas.",
+     "p": [
+      "Na Índia, em boa parte da África e no Oriente Médio, usa-se a mão direita para comer, cumprimentar e passar objetos.",
+      "A esquerda é tradicionalmente ligada à higiene pessoal, então oferecer comida ou presentes com ela pode parecer indelicado.",
+      "Canhotos são compreendidos; apenas se esforce para entregar, receber e comer com a direita."
+     ],
+     "q": "Qual mão você usa para quase tudo, e já precisou trocar por causa de um costume?",
+     "c": "Pratique hoje passar objetos e dinheiro com a mão direita, apoiando com a esquerda se quiser."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The soles of your feet",
+     "g": "Learn why showing the soles of your feet is impolite in parts of Asia and the Middle East.",
+     "p": [
+      "Feet are seen as the lowest and least clean part of the body in many cultures, from Thailand to the Arab world.",
+      "Avoid pointing your soles at people when you cross your legs or stretch out on the floor.",
+      "Never use your foot to move objects or point, and take care not to step over people sitting down."
+     ],
+     "q": "How do people usually sit at home where you live: on chairs, cushions or the floor?",
+     "c": "Notice how you sit today and practise keeping your soles flat on the floor or turned away from others."
+    },
+    "de": {
+     "t": "Die Fußsohlen",
+     "g": "Erfahre, warum es in Teilen Asiens und des Nahen Ostens unhöflich ist, die Fußsohlen zu zeigen.",
+     "p": [
+      "In vielen Kulturen, von Thailand bis zur arabischen Welt, gelten die Füße als niedrigster und unreinster Körperteil.",
+      "Richte beim Beineüberschlagen oder Ausstrecken auf dem Boden deine Sohlen nicht auf andere.",
+      "Verschiebe oder zeige nie etwas mit dem Fuß und steig nicht über sitzende Menschen hinweg."
+     ],
+     "q": "Wie sitzt man bei dir zu Hause meistens: auf Stühlen, Kissen oder auf dem Boden?",
+     "c": "Achte heute darauf, wie du sitzt, und übe, die Sohlen flach am Boden oder von anderen weg zu halten."
+    },
+    "es": {
+     "t": "Las plantas de los pies",
+     "g": "Aprende por qué mostrar las plantas de los pies es descortés en partes de Asia y Oriente Medio.",
+     "p": [
+      "En muchas culturas, de Tailandia al mundo árabe, los pies se consideran la parte más baja y menos limpia del cuerpo.",
+      "Evita dirigir las plantas hacia otras personas al cruzar las piernas o estirarte en el suelo.",
+      "Nunca muevas objetos ni señales con el pie, y procura no pasar por encima de personas sentadas."
+     ],
+     "q": "¿Cómo se suele sentar la gente en casa donde vives: en sillas, cojines o en el suelo?",
+     "c": "Observa hoy cómo te sientas y practica mantener las plantas en el suelo o apartadas de los demás."
+    },
+    "fr": {
+     "t": "La plante des pieds",
+     "g": "Apprends pourquoi montrer la plante de tes pieds est impoli dans certaines régions d'Asie et du Moyen-Orient.",
+     "p": [
+      "Dans beaucoup de cultures, de la Thaïlande au monde arabe, les pieds sont la partie la plus basse et la moins propre du corps.",
+      "Évite de diriger tes semelles vers quelqu'un quand tu croises les jambes ou t'étends au sol.",
+      "Ne déplace jamais un objet et ne montre rien avec le pied, et évite d'enjamber les personnes assises."
+     ],
+     "q": "Comment s'assoit-on d'habitude à la maison chez toi : sur des chaises, des coussins ou par terre ?",
+     "c": "Observe ta posture aujourd'hui et entraîne-toi à garder les pieds à plat ou tournés loin des autres."
+    },
+    "it": {
+     "t": "Le piante dei piedi",
+     "g": "Scopri perché mostrare le piante dei piedi è scortese in parti dell'Asia e del Medio Oriente.",
+     "p": [
+      "In molte culture, dalla Thailandia al mondo arabo, i piedi sono considerati la parte più bassa e meno pulita del corpo.",
+      "Evita di rivolgere le suole verso gli altri quando accavalli le gambe o ti stendi sul pavimento.",
+      "Non spostare mai oggetti né indicare con il piede, e fai attenzione a non scavalcare chi è seduto."
+     ],
+     "q": "Come ci si siede di solito in casa dove vivi: su sedie, cuscini o per terra?",
+     "c": "Oggi osserva come ti siedi ed esercitati a tenere le piante dei piedi a terra o lontane dagli altri."
+    },
+    "pt": {
+     "t": "As solas dos pés",
+     "g": "Aprende porque é que mostrar as solas dos pés é indelicado em partes da Ásia e do Médio Oriente.",
+     "p": [
+      "Em muitas culturas, da Tailândia ao mundo árabe, os pés são vistos como a parte mais baixa e menos limpa do corpo.",
+      "Evita virar as solas para as pessoas ao cruzar as pernas ou ao esticar-te no chão.",
+      "Nunca movas objetos nem apontes com o pé, e tem cuidado para não passar por cima de quem está sentado."
+     ],
+     "q": "Como é que as pessoas costumam sentar-se em casa onde vives: em cadeiras, almofadas ou no chão?",
+     "c": "Repara hoje em como te sentas e pratica manter as solas no chão ou viradas para longe dos outros."
+    },
+    "pt_BR": {
+     "t": "As solas dos pés",
+     "g": "Aprenda por que mostrar as solas dos pés é falta de educação em partes da Ásia e do Oriente Médio.",
+     "p": [
+      "Em muitas culturas, da Tailândia ao mundo árabe, os pés são vistos como a parte mais baixa e menos limpa do corpo.",
+      "Evite virar as solas para as pessoas ao cruzar as pernas ou se esticar no chão.",
+      "Nunca mova objetos nem aponte com o pé, e cuide para não passar por cima de quem está sentado."
+     ],
+     "q": "Como as pessoas costumam se sentar em casa onde você mora: em cadeiras, almofadas ou no chão?",
+     "c": "Repare hoje em como você se senta e pratique manter as solas no chão ou viradas para longe dos outros."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Touching heads",
+     "g": "Understand why touching someone's head is avoided in Thailand and nearby countries.",
+     "p": [
+      "In Thailand, Laos, Cambodia and other parts of Southeast Asia, the head is seen as the highest and most respected part of the body.",
+      "Patting someone on the head, even a child, can feel disrespectful there, so it is best avoided.",
+      "If you accidentally brush someone's head, a quick, sincere apology is enough."
+     ],
+     "q": "Are there parts of the body that people avoid touching in your culture?",
+     "c": "Find out one custom about the head or hair from a culture different from your own."
+    },
+    "de": {
+     "t": "Den Kopf berühren",
+     "g": "Verstehe, warum man in Thailand und Nachbarländern den Kopf anderer nicht berührt.",
+     "p": [
+      "In Thailand, Laos, Kambodscha und anderen Teilen Südostasiens gilt der Kopf als höchster und am meisten geachteter Körperteil.",
+      "Jemandem den Kopf zu tätscheln, selbst einem Kind, kann dort respektlos wirken, daher lässt man es besser.",
+      "Streifst du versehentlich jemandes Kopf, genügt eine kurze, ehrliche Entschuldigung."
+     ],
+     "q": "Gibt es in deiner Kultur Körperstellen, die man bei anderen nicht berührt?",
+     "c": "Finde einen Brauch rund um Kopf oder Haare aus einer anderen Kultur als deiner heraus."
+    },
+    "es": {
+     "t": "Tocar la cabeza",
+     "g": "Entiende por qué se evita tocar la cabeza de otra persona en Tailandia y países cercanos.",
+     "p": [
+      "En Tailandia, Laos, Camboya y otras partes del Sudeste Asiático, la cabeza es la parte más alta y respetada del cuerpo.",
+      "Dar palmaditas en la cabeza, incluso a un niño, puede parecer irrespetuoso allí, así que es mejor evitarlo.",
+      "Si rozas sin querer la cabeza de alguien, basta con una disculpa breve y sincera."
+     ],
+     "q": "¿Hay partes del cuerpo que la gente evita tocar en tu cultura?",
+     "c": "Averigua una costumbre sobre la cabeza o el cabello de una cultura distinta a la tuya."
+    },
+    "fr": {
+     "t": "Toucher la tête",
+     "g": "Comprends pourquoi on évite de toucher la tête des autres en Thaïlande et dans les pays voisins.",
+     "p": [
+      "En Thaïlande, au Laos, au Cambodge et ailleurs en Asie du Sud-Est, la tête est la partie la plus haute et la plus respectée du corps.",
+      "Tapoter la tête de quelqu'un, même d'un enfant, peut y sembler irrespectueux : mieux vaut l'éviter.",
+      "Si tu frôles la tête de quelqu'un par accident, de brèves excuses sincères suffisent."
+     ],
+     "q": "Y a-t-il des parties du corps qu'on évite de toucher dans ta culture ?",
+     "c": "Découvre une coutume liée à la tête ou aux cheveux dans une culture différente de la tienne."
+    },
+    "it": {
+     "t": "Toccare la testa",
+     "g": "Capisci perché in Thailandia e nei Paesi vicini si evita di toccare la testa degli altri.",
+     "p": [
+      "In Thailandia, Laos, Cambogia e in altre parti del Sud-est asiatico la testa è la parte più alta e rispettata del corpo.",
+      "Dare una carezza sulla testa, anche a un bambino, lì può sembrare irrispettoso, quindi è meglio evitarlo.",
+      "Se sfiori per sbaglio la testa di qualcuno, bastano scuse brevi e sincere."
+     ],
+     "q": "Ci sono parti del corpo che nella tua cultura si evita di toccare?",
+     "c": "Scopri un'usanza legata alla testa o ai capelli in una cultura diversa dalla tua."
+    },
+    "pt": {
+     "t": "Tocar na cabeça",
+     "g": "Percebe porque se evita tocar na cabeça de alguém na Tailândia e nos países vizinhos.",
+     "p": [
+      "Na Tailândia, no Laos, no Camboja e noutras partes do Sudeste Asiático, a cabeça é a parte mais alta e respeitada do corpo.",
+      "Dar palmadinhas na cabeça de alguém, mesmo de uma criança, pode parecer desrespeitoso lá, por isso é melhor evitar.",
+      "Se tocares sem querer na cabeça de alguém, basta um pedido de desculpa breve e sincero."
+     ],
+     "q": "Há partes do corpo que as pessoas evitam tocar na tua cultura?",
+     "c": "Descobre um costume ligado à cabeça ou ao cabelo numa cultura diferente da tua."
+    },
+    "pt_BR": {
+     "t": "Tocar na cabeça",
+     "g": "Entenda por que se evita tocar na cabeça de alguém na Tailândia e nos países vizinhos.",
+     "p": [
+      "Na Tailândia, no Laos, no Camboja e em outras partes do Sudeste Asiático, a cabeça é a parte mais alta e respeitada do corpo.",
+      "Fazer carinho na cabeça de alguém, mesmo de uma criança, pode parecer desrespeitoso lá, então é melhor evitar.",
+      "Se você encostar sem querer na cabeça de alguém, basta um pedido de desculpas curto e sincero."
+     ],
+     "q": "Existem partes do corpo que as pessoas evitam tocar na sua cultura?",
+     "c": "Descubra um costume ligado à cabeça ou ao cabelo em uma cultura diferente da sua."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Punctuality etiquette",
+     "g": "Learn when to be exactly on time and when arriving a little late is expected.",
+     "p": [
+      "In Germany, Switzerland and Japan, being on time, or even a few minutes early, is a strong sign of respect.",
+      "In many Latin American and Mediterranean social settings, arriving a bit after the stated time is normal.",
+      "For work meetings, trains and tours, aim to be punctual almost everywhere, and message ahead if you will be late."
+     ],
+     "q": "Are you usually early, on time or a little late, and how do people react?",
+     "c": "Plan your next appointment so you arrive five minutes early, and notice how it feels."
+    },
+    "de": {
+     "t": "Etikette der Pünktlichkeit",
+     "g": "Lerne, wann man genau pünktlich sein sollte und wann ein wenig Verspätung erwartet wird.",
+     "p": [
+      "In Deutschland, der Schweiz und Japan ist Pünktlichkeit oder sogar ein paar Minuten Vorsprung ein starkes Zeichen von Respekt.",
+      "In vielen geselligen Runden Lateinamerikas und des Mittelmeerraums ist es normal, etwas nach der genannten Zeit zu kommen.",
+      "Bei Arbeitsterminen, Zügen und Führungen sei fast überall pünktlich und gib Bescheid, wenn du dich verspätest."
+     ],
+     "q": "Bist du meist zu früh, pünktlich oder etwas spät, und wie reagieren andere darauf?",
+     "c": "Plane deinen nächsten Termin so, dass du fünf Minuten früher da bist, und achte darauf, wie es sich anfühlt."
+    },
+    "es": {
+     "t": "Etiqueta de la puntualidad",
+     "g": "Aprende cuándo llegar exactamente a la hora y cuándo se espera un poco de retraso.",
+     "p": [
+      "En Alemania, Suiza y Japón, llegar a tiempo, o incluso unos minutos antes, es una clara muestra de respeto.",
+      "En muchas reuniones sociales de Latinoamérica y el Mediterráneo es normal llegar un poco después de la hora indicada.",
+      "Para reuniones de trabajo, trenes y visitas guiadas, sé puntual casi en todas partes y avisa si vas a llegar tarde."
+     ],
+     "q": "¿Sueles llegar temprano, puntual o un poco tarde, y cómo reacciona la gente?",
+     "c": "Planea tu próxima cita para llegar cinco minutos antes y observa cómo te sientes."
+    },
+    "fr": {
+     "t": "La ponctualité",
+     "g": "Apprends quand être pile à l'heure et quand un léger retard est attendu.",
+     "p": [
+      "En Allemagne, en Suisse et au Japon, être à l'heure, voire quelques minutes en avance, est une vraie marque de respect.",
+      "Dans bien des soirées en Amérique latine et autour de la Méditerranée, arriver un peu après l'heure prévue est normal.",
+      "Pour les réunions de travail, les trains et les visites guidées, sois ponctuel presque partout et préviens en cas de retard."
+     ],
+     "q": "Es-tu plutôt en avance, à l'heure ou un peu en retard, et comment réagissent les autres ?",
+     "c": "Organise ton prochain rendez-vous pour arriver cinq minutes en avance et observe ce que tu ressens."
+    },
+    "it": {
+     "t": "Il galateo della puntualità",
+     "g": "Impara quando essere perfettamente puntuale e quando un leggero ritardo è previsto.",
+     "p": [
+      "In Germania, Svizzera e Giappone essere puntuali, o anche qualche minuto in anticipo, è un forte segno di rispetto.",
+      "In molte occasioni sociali in America Latina e nel Mediterraneo è normale arrivare un po' dopo l'orario indicato.",
+      "Per riunioni di lavoro, treni e visite guidate sii puntuale quasi ovunque e avvisa se farai tardi."
+     ],
+     "q": "Di solito arrivi in anticipo, puntuale o un po' in ritardo, e come reagiscono gli altri?",
+     "c": "Organizza il tuo prossimo appuntamento per arrivare cinque minuti prima e nota come ti senti."
+    },
+    "pt": {
+     "t": "A etiqueta da pontualidade",
+     "g": "Aprende quando chegar exatamente a horas e quando um pequeno atraso é esperado.",
+     "p": [
+      "Na Alemanha, na Suíça e no Japão, chegar a horas, ou até uns minutos antes, é um forte sinal de respeito.",
+      "Em muitos encontros sociais na América Latina e no Mediterrâneo é normal chegar um pouco depois da hora marcada.",
+      "Para reuniões de trabalho, comboios e visitas guiadas, sê pontual quase em todo o lado e avisa se te fores atrasar."
+     ],
+     "q": "Costumas chegar cedo, a horas ou um pouco atrasado, e como reagem as pessoas?",
+     "c": "Planeia o teu próximo compromisso para chegares cinco minutos antes e repara como te sentes."
+    },
+    "pt_BR": {
+     "t": "A etiqueta da pontualidade",
+     "g": "Aprenda quando chegar exatamente no horário e quando um pequeno atraso é esperado.",
+     "p": [
+      "Na Alemanha, na Suíça e no Japão, chegar no horário, ou até alguns minutos antes, é um forte sinal de respeito.",
+      "Em muitos encontros sociais na América Latina e no Mediterrâneo é normal chegar um pouco depois da hora marcada.",
+      "Para reuniões de trabalho, trens e passeios guiados, seja pontual em quase todo lugar e avise se for se atrasar."
+     ],
+     "q": "Você costuma chegar cedo, no horário ou um pouco atrasado, e como as pessoas reagem?",
+     "c": "Planeje seu próximo compromisso para chegar cinco minutos antes e repare em como você se sente."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Arriving at a party",
+     "g": "Decide whether to arrive right on time or a little later, depending on the place.",
+     "p": [
+      "At a dinner in Germany, Scandinavia or Japan, arrive at the stated time, as the meal may be planned to the minute.",
+      "At a house party in Brazil, Argentina or Spain, arriving 15 to 30 minutes late is often normal and even polite.",
+      "When in doubt, ask the host: What time should I really come? is a perfectly friendly question."
+     ],
+     "q": "What time do guests usually arrive at parties where you live?",
+     "c": "Next time you are invited, ask the host kindly what arrival time works best for them."
+    },
+    "de": {
+     "t": "Ankommen auf einer Feier",
+     "g": "Entscheide, ob du pünktlich oder etwas später kommst, je nachdem, wo du bist.",
+     "p": [
+      "Bei einem Abendessen in Deutschland, Skandinavien oder Japan komm zur genannten Zeit, das Essen kann minutengenau geplant sein.",
+      "Bei einer Hausparty in Brasilien, Argentinien oder Spanien ist es oft normal und sogar höflich, 15 bis 30 Minuten später zu kommen.",
+      "Im Zweifel frag den Gastgeber: Wann soll ich wirklich kommen? ist eine völlig freundliche Frage."
+     ],
+     "q": "Wann kommen Gäste bei dir normalerweise zu Feiern?",
+     "c": "Wenn du das nächste Mal eingeladen bist, frag den Gastgeber freundlich, welche Ankunftszeit ihm am besten passt."
+    },
+    "es": {
+     "t": "Llegar a una fiesta",
+     "g": "Decide si llegar puntual o un poco más tarde según el lugar.",
+     "p": [
+      "En una cena en Alemania, Escandinavia o Japón, llega a la hora indicada, porque la comida puede estar planeada al minuto.",
+      "En una fiesta en casa en Brasil, Argentina o España, llegar 15 o 30 minutos tarde suele ser normal e incluso educado.",
+      "Si dudas, pregunta al anfitrión: ¿A qué hora debo llegar de verdad? es una pregunta muy amable."
+     ],
+     "q": "¿A qué hora suelen llegar los invitados a las fiestas donde vives?",
+     "c": "La próxima vez que te inviten, pregunta con amabilidad a qué hora prefiere el anfitrión que llegues."
+    },
+    "fr": {
+     "t": "Arriver à une fête",
+     "g": "Décide d'arriver pile à l'heure ou un peu plus tard selon l'endroit.",
+     "p": [
+      "Pour un dîner en Allemagne, en Scandinavie ou au Japon, arrive à l'heure dite : le repas peut être prévu à la minute.",
+      "Pour une fête à la maison au Brésil, en Argentine ou en Espagne, arriver 15 à 30 minutes après est souvent normal, voire poli.",
+      "En cas de doute, demande à l'hôte : À quelle heure dois-je vraiment venir ? est une question tout à fait aimable."
+     ],
+     "q": "À quelle heure les invités arrivent-ils d'habitude aux fêtes chez toi ?",
+     "c": "La prochaine fois qu'on t'invite, demande gentiment à l'hôte quelle heure d'arrivée lui convient le mieux."
+    },
+    "it": {
+     "t": "Arrivare a una festa",
+     "g": "Decidi se arrivare puntuale o un po' più tardi a seconda del luogo.",
+     "p": [
+      "A una cena in Germania, Scandinavia o Giappone arriva all'ora indicata: il pasto può essere organizzato al minuto.",
+      "A una festa in casa in Brasile, Argentina o Spagna arrivare con 15 o 30 minuti di ritardo è spesso normale, persino educato.",
+      "Nel dubbio chiedi a chi ti ospita: A che ora devo arrivare davvero? è una domanda del tutto cordiale."
+     ],
+     "q": "A che ora arrivano di solito gli ospiti alle feste dove vivi?",
+     "c": "La prossima volta che ti invitano, chiedi con garbo a che ora preferisce che tu arrivi."
+    },
+    "pt": {
+     "t": "Chegar a uma festa",
+     "g": "Decide se chegas a horas ou um pouco mais tarde, conforme o sítio.",
+     "p": [
+      "Num jantar na Alemanha, na Escandinávia ou no Japão, chega à hora marcada, porque a refeição pode estar planeada ao minuto.",
+      "Numa festa em casa no Brasil, na Argentina ou em Espanha, chegar 15 a 30 minutos depois é muitas vezes normal e até educado.",
+      "Na dúvida, pergunta ao anfitrião: A que horas devo mesmo chegar? é uma pergunta perfeitamente simpática."
+     ],
+     "q": "A que horas costumam chegar os convidados às festas onde vives?",
+     "c": "Da próxima vez que fores convidado, pergunta com simpatia ao anfitrião a que horas prefere que chegues."
+    },
+    "pt_BR": {
+     "t": "Chegar a uma festa",
+     "g": "Decida se vai chegar no horário ou um pouco mais tarde, dependendo do lugar.",
+     "p": [
+      "Num jantar na Alemanha, na Escandinávia ou no Japão, chegue na hora marcada, pois a refeição pode estar planejada no minuto.",
+      "Numa festa em casa no Brasil, na Argentina ou na Espanha, chegar de 15 a 30 minutos depois costuma ser normal e até educado.",
+      "Na dúvida, pergunte ao anfitrião: Que horas devo chegar de verdade? é uma pergunta totalmente simpática."
+     ],
+     "q": "Que horas os convidados costumam chegar às festas onde você mora?",
+     "c": "Da próxima vez que for convidado, pergunte com simpatia ao anfitrião que horário ele prefere que você chegue."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "RSVP and invitations",
+     "g": "Learn to reply to invitations promptly and keep your word.",
+     "p": [
+      "RSVP comes from the French répondez s'il vous plaît, meaning please reply, so the host is counting on your answer.",
+      "Reply by the date given, say clearly yes or no, and mention if you will bring someone only if they were invited.",
+      "If plans change, tell the host as early as possible; not showing up without notice is hard on any host."
+     ],
+     "q": "How do you usually reply to invitations, and do people around you reply on time?",
+     "c": "Answer any open invitation or message you have been putting off today."
+    },
+    "de": {
+     "t": "Zusagen und Einladungen",
+     "g": "Lerne, schnell auf Einladungen zu antworten und dein Wort zu halten.",
+     "p": [
+      "U.A.w.g. bedeutet um Antwort wird gebeten, wie das französische RSVP: Der Gastgeber zählt auf deine Antwort.",
+      "Antworte bis zum genannten Datum klar mit Ja oder Nein und bring nur Begleitung mit, wenn sie eingeladen ist.",
+      "Ändern sich deine Pläne, sag so früh wie möglich Bescheid; unangekündigt wegzubleiben ist für jeden Gastgeber schwer."
+     ],
+     "q": "Wie antwortest du normalerweise auf Einladungen, und antworten die Menschen um dich herum rechtzeitig?",
+     "c": "Beantworte heute eine offene Einladung oder Nachricht, die du vor dir hergeschoben hast."
+    },
+    "es": {
+     "t": "Confirmar asistencia e invitaciones",
+     "g": "Aprende a responder pronto a las invitaciones y a cumplir tu palabra.",
+     "p": [
+      "RSVP viene del francés répondez s'il vous plaît, es decir, responda por favor: el anfitrión cuenta con tu respuesta.",
+      "Responde antes de la fecha indicada, di claramente sí o no y lleva acompañante solo si también está invitado.",
+      "Si cambian tus planes, avisa lo antes posible; no aparecer sin avisar es duro para cualquier anfitrión."
+     ],
+     "q": "¿Cómo sueles responder a las invitaciones, y la gente a tu alrededor contesta a tiempo?",
+     "c": "Responde hoy a alguna invitación o mensaje que llevas tiempo dejando para después."
+    },
+    "fr": {
+     "t": "RSVP et invitations",
+     "g": "Apprends à répondre vite aux invitations et à tenir parole.",
+     "p": [
+      "RSVP signifie répondez s'il vous plaît : l'hôte compte vraiment sur ta réponse pour s'organiser.",
+      "Réponds avant la date indiquée, par un oui ou un non clair, et ne viens accompagné que si l'autre personne est invitée.",
+      "Si tes plans changent, préviens l'hôte au plus tôt ; ne pas venir sans prévenir est difficile pour n'importe quel hôte."
+     ],
+     "q": "Comment réponds-tu d'habitude aux invitations, et les gens autour de toi répondent-ils à temps ?",
+     "c": "Réponds aujourd'hui à une invitation ou à un message que tu repoussais depuis un moment."
+    },
+    "it": {
+     "t": "RSVP e inviti",
+     "g": "Impara a rispondere presto agli inviti e a mantenere la parola data.",
+     "p": [
+      "RSVP viene dal francese répondez s'il vous plaît, cioè si prega di rispondere: chi invita conta sulla tua risposta.",
+      "Rispondi entro la data indicata con un sì o un no chiaro e porta un accompagnatore solo se è invitato anche lui.",
+      "Se cambi programma, avvisa il prima possibile; non presentarsi senza avvisare è difficile per qualsiasi padrone di casa."
+     ],
+     "q": "Come rispondi di solito agli inviti, e le persone intorno a te rispondono in tempo?",
+     "c": "Oggi rispondi a un invito o a un messaggio che stai rimandando da un po'."
+    },
+    "pt": {
+     "t": "Confirmar presença e convites",
+     "g": "Aprende a responder depressa aos convites e a cumprir a tua palavra.",
+     "p": [
+      "RSVP vem do francês répondez s'il vous plaît, ou seja, responda por favor: o anfitrião conta com a tua resposta.",
+      "Responde até à data indicada, diz claramente sim ou não e só leva acompanhante se também tiver sido convidado.",
+      "Se os planos mudarem, avisa o mais cedo possível; faltar sem avisar é difícil para qualquer anfitrião."
+     ],
+     "q": "Como costumas responder a convites, e as pessoas à tua volta respondem a tempo?",
+     "c": "Responde hoje a um convite ou mensagem que andas a adiar."
+    },
+    "pt_BR": {
+     "t": "Confirmar presença e convites",
+     "g": "Aprenda a responder rápido aos convites e a cumprir a sua palavra.",
+     "p": [
+      "RSVP vem do francês répondez s'il vous plaît, ou seja, responda por favor: o anfitrião conta com a sua resposta.",
+      "Responda até a data indicada, diga claramente sim ou não e só leve acompanhante se ele também tiver sido convidado.",
+      "Se seus planos mudarem, avise o quanto antes; faltar sem avisar é difícil para qualquer anfitrião."
+     ],
+     "q": "Como você costuma responder a convites, e as pessoas ao seu redor respondem a tempo?",
+     "c": "Responda hoje a um convite ou mensagem que você vem adiando."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Dress codes explained",
+     "g": "Understand casual, smart casual, business and formal dress codes.",
+     "p": [
+      "Casual means everyday clothes that are clean and neat; smart casual adds a collared shirt, blouse or tidy shoes.",
+      "Business usually means a suit or tailored outfit, while formal or black tie means evening wear like a tuxedo or long dress.",
+      "For places of worship, cover shoulders and knees, and bring a scarf in case a head covering is requested."
+     ],
+     "q": "Which dress code do you feel most comfortable in, and why?",
+     "c": "Look at your wardrobe and put together one smart casual outfit you could wear tomorrow."
+    },
+    "de": {
+     "t": "Dresscodes erklärt",
+     "g": "Verstehe die Dresscodes Casual, Smart Casual, Business und Formal.",
+     "p": [
+      "Casual heißt saubere, ordentliche Alltagskleidung; Smart Casual ergänzt Hemd mit Kragen, Bluse oder gepflegte Schuhe.",
+      "Business bedeutet meist Anzug oder Kostüm, Formal oder Black Tie verlangt Abendgarderobe wie Smoking oder langes Kleid.",
+      "Für Gotteshäuser bedecke Schultern und Knie und nimm ein Tuch mit, falls eine Kopfbedeckung erbeten wird."
+     ],
+     "q": "In welchem Dresscode fühlst du dich am wohlsten, und warum?",
+     "c": "Stell aus deinem Kleiderschrank ein Smart-Casual-Outfit zusammen, das du morgen tragen könntest."
+    },
+    "es": {
+     "t": "Los códigos de vestimenta",
+     "g": "Entiende los códigos de vestimenta informal, smart casual, de negocios y formal.",
+     "p": [
+      "Informal significa ropa diaria limpia y cuidada; smart casual añade una camisa con cuello, una blusa o zapatos arreglados.",
+      "De negocios suele ser traje o conjunto a medida, y formal o etiqueta exige ropa de noche como esmoquin o vestido largo.",
+      "En lugares de culto, cubre hombros y rodillas y lleva un pañuelo por si piden cubrirse la cabeza."
+     ],
+     "q": "¿Con qué código de vestimenta te sientes más cómodo, y por qué?",
+     "c": "Mira tu armario y arma un conjunto smart casual que podrías llevar mañana."
+    },
+    "fr": {
+     "t": "Les codes vestimentaires expliqués",
+     "g": "Comprends les tenues décontractée, casual chic, professionnelle et habillée.",
+     "p": [
+      "Décontracté : des vêtements du quotidien propres et soignés ; casual chic ajoute une chemise à col, un chemisier ou de jolies chaussures.",
+      "Professionnel signifie en général costume ou tailleur, tandis que tenue de soirée exige smoking ou robe longue.",
+      "Dans les lieux de culte, couvre épaules et genoux, et prends un foulard au cas où l'on demanderait de couvrir la tête."
+     ],
+     "q": "Dans quel code vestimentaire te sens-tu le plus à l'aise, et pourquoi ?",
+     "c": "Regarde ta garde-robe et compose une tenue casual chic que tu pourrais porter demain."
+    },
+    "it": {
+     "t": "I dress code spiegati",
+     "g": "Capisci i dress code casual, smart casual, business e formale.",
+     "p": [
+      "Casual significa abiti di tutti i giorni puliti e in ordine; smart casual aggiunge camicia con colletto, camicetta o scarpe curate.",
+      "Business di solito vuol dire completo o tailleur, mentre formale o black tie richiede abiti da sera come smoking o abito lungo.",
+      "Nei luoghi di culto copri spalle e ginocchia e porta un foulard nel caso venga chiesto di coprire il capo."
+     ],
+     "q": "In quale dress code ti senti più a tuo agio, e perché?",
+     "c": "Guarda nel tuo armadio e componi un outfit smart casual che potresti indossare domani."
+    },
+    "pt": {
+     "t": "Códigos de vestuário explicados",
+     "g": "Percebe os códigos de vestuário casual, smart casual, de negócios e formal.",
+     "p": [
+      "Casual significa roupa do dia a dia limpa e cuidada; smart casual junta uma camisa com colarinho, uma blusa ou sapatos arranjados.",
+      "De negócios costuma ser fato ou conjunto por medida, e formal ou black tie pede traje de cerimónia como smoking ou vestido comprido.",
+      "Em locais de culto, cobre ombros e joelhos e leva um lenço, caso peçam para cobrir a cabeça."
+     ],
+     "q": "Em que código de vestuário te sentes mais à vontade, e porquê?",
+     "c": "Olha para o teu roupeiro e monta um conjunto smart casual que podias usar amanhã."
+    },
+    "pt_BR": {
+     "t": "Códigos de vestimenta explicados",
+     "g": "Entenda os trajes casual, esporte fino, social e de gala.",
+     "p": [
+      "Casual é roupa do dia a dia limpa e bem cuidada; esporte fino acrescenta camisa com gola, blusa ou sapatos arrumados.",
+      "Social costuma ser terno ou tailleur, enquanto traje de gala ou black tie pede roupa de festa como smoking ou vestido longo.",
+      "Em locais de culto, cubra ombros e joelhos e leve um lenço caso peçam para cobrir a cabeça."
+     ],
+     "q": "Em qual código de vestimenta você se sente mais à vontade, e por quê?",
+     "c": "Olhe seu guarda-roupa e monte um look esporte fino que você poderia usar amanhã."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: first impressions",
+     "g": "Recap what you have learned about greetings, names, small talk and gestures.",
+     "p": [
+      "Greet with a smile, let the other person lead on touch, and use titles until invited to use first names.",
+      "Remember names, ask open questions, listen well and avoid overly personal topics.",
+      "Mind your gestures, hands, feet and personal space, and be on time when it matters."
+     ],
+     "q": "Which lesson from this first month has been the most useful for you so far?",
+     "c": "Use three things from this month in one real conversation today: a greeting, a name and an open question."
+    },
+    "de": {
+     "t": "Rückblick: der erste Eindruck",
+     "g": "Wiederhole, was du über Begrüßungen, Namen, Smalltalk und Gesten gelernt hast.",
+     "p": [
+      "Grüße mit einem Lächeln, lass den anderen bei Berührungen führen und nutze Titel, bis man dir den Vornamen anbietet.",
+      "Merke dir Namen, stelle offene Fragen, hör gut zu und meide zu persönliche Themen.",
+      "Achte auf Gesten, Hände, Füße und persönlichen Raum, und sei pünktlich, wenn es darauf ankommt."
+     ],
+     "q": "Welche Lektion aus diesem ersten Monat war bisher am nützlichsten für dich?",
+     "c": "Nutze heute drei Dinge aus diesem Monat in einem echten Gespräch: einen Gruß, einen Namen und eine offene Frage."
+    },
+    "es": {
+     "t": "Repaso: la primera impresión",
+     "g": "Repasa lo aprendido sobre saludos, nombres, charla trivial y gestos.",
+     "p": [
+      "Saluda con una sonrisa, deja que la otra persona decida el contacto y usa títulos hasta que te inviten a tutear.",
+      "Recuerda nombres, haz preguntas abiertas, escucha bien y evita temas demasiado personales.",
+      "Cuida tus gestos, manos, pies y el espacio personal, y sé puntual cuando importa."
+     ],
+     "q": "¿Qué lección de este primer mes te ha resultado más útil hasta ahora?",
+     "c": "Usa hoy tres cosas de este mes en una conversación real: un saludo, un nombre y una pregunta abierta."
+    },
+    "fr": {
+     "t": "Révision : la première impression",
+     "g": "Révise ce que tu as appris sur les salutations, les prénoms, la conversation légère et les gestes.",
+     "p": [
+      "Salue avec un sourire, laisse l'autre décider du contact et utilise les titres jusqu'à ce qu'on t'invite au prénom.",
+      "Retiens les prénoms, pose des questions ouvertes, écoute bien et évite les sujets trop personnels.",
+      "Fais attention à tes gestes, tes mains, tes pieds et à l'espace personnel, et sois ponctuel quand cela compte."
+     ],
+     "q": "Quelle leçon de ce premier mois t'a été la plus utile jusqu'ici ?",
+     "c": "Utilise aujourd'hui trois éléments de ce mois dans une vraie conversation : un salut, un prénom et une question ouverte."
+    },
+    "it": {
+     "t": "Ripasso: la prima impressione",
+     "g": "Ripassa ciò che hai imparato su saluti, nomi, chiacchiere e gesti.",
+     "p": [
+      "Saluta con un sorriso, lascia che sia l'altro a decidere il contatto e usa i titoli finché non ti propongono il nome.",
+      "Ricorda i nomi, fai domande aperte, ascolta bene ed evita argomenti troppo personali.",
+      "Fai attenzione a gesti, mani, piedi e spazio personale, e sii puntuale quando conta."
+     ],
+     "q": "Quale lezione di questo primo mese ti è stata più utile finora?",
+     "c": "Oggi usa tre cose di questo mese in una conversazione vera: un saluto, un nome e una domanda aperta."
+    },
+    "pt": {
+     "t": "Revisão: a primeira impressão",
+     "g": "Revê o que aprendeste sobre cumprimentos, nomes, conversa de circunstância e gestos.",
+     "p": [
+      "Cumprimenta com um sorriso, deixa a outra pessoa decidir o toque e usa títulos até te convidarem a usar o nome.",
+      "Lembra-te dos nomes, faz perguntas abertas, ouve bem e evita temas demasiado pessoais.",
+      "Cuida dos gestos, das mãos, dos pés e do espaço pessoal, e sê pontual quando importa."
+     ],
+     "q": "Que lição deste primeiro mês te foi mais útil até agora?",
+     "c": "Usa hoje três coisas deste mês numa conversa real: um cumprimento, um nome e uma pergunta aberta."
+    },
+    "pt_BR": {
+     "t": "Revisão: a primeira impressão",
+     "g": "Revise o que você aprendeu sobre cumprimentos, nomes, papo leve e gestos.",
+     "p": [
+      "Cumprimente com um sorriso, deixe a outra pessoa decidir o toque e use títulos até ser convidado a usar o nome.",
+      "Lembre os nomes, faça perguntas abertas, ouça bem e evite temas pessoais demais.",
+      "Cuide dos gestos, das mãos, dos pés e do espaço pessoal, e seja pontual quando importa."
+     ],
+     "q": "Qual lição deste primeiro mês foi a mais útil para você até agora?",
+     "c": "Use hoje três coisas deste mês em uma conversa real: um cumprimento, um nome e uma pergunta aberta."
+    }
+   }
+  }
+ ]
+}

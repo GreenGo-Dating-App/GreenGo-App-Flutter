@@ -1,0 +1,33 @@
+{
+ "topic": "books",
+ "intro": {
+  "en": [
+   "Hi, I'm {name}! Let's explore the wonderful world of books together on a 365-day path, with one small lesson a day. 📚",
+   "We'll go from reading habits and genres to the great classics, world literature and the art of reading deeply. What's a book you have loved recently?"
+  ],
+  "de": [
+   "Hallo, ich bin {name}! Lass uns 365 Tage lang gemeinsam die wunderbare Welt der Bücher entdecken, mit einer kleinen Lektion pro Tag. 📚",
+   "Wir gehen von Lesegewohnheiten und Genres über die großen Klassiker bis zur Weltliteratur und zum genauen Lesen. Welches Buch hat dir zuletzt richtig gefallen?"
+  ],
+  "es": [
+   "¡Hola, soy {name}! Exploremos juntos el maravilloso mundo de los libros en un camino de 365 días, con una pequeña lección diaria. 📚",
+   "Iremos de los hábitos de lectura y los géneros a los grandes clásicos, la literatura universal y el arte de leer a fondo. ¿Qué libro te ha encantado últimamente?"
+  ],
+  "fr": [
+   "Bonjour, je suis {name} ! Explorons ensemble le merveilleux monde des livres sur un parcours de 365 jours, avec une petite leçon par jour. 📚",
+   "Des habitudes de lecture et des genres aux grands classiques, en passant par la littérature du monde et l'art de lire en profondeur. Quel livre as-tu adoré récemment ?"
+  ],
+  "it": [
+   "Ciao, sono {name}! Esploriamo insieme il meraviglioso mondo dei libri in un percorso di 365 giorni, con una piccola lezione al giorno. 📚",
+   "Passeremo dalle abitudini di lettura e dai generi ai grandi classici, alla letteratura mondiale e all'arte di leggere in profondità. Qual è un libro che hai amato di recente?"
+  ],
+  "pt": [
+   "Olá, chamo-me {name}! Vamos explorar juntos o maravilhoso mundo dos livros num percurso de 365 dias, com uma pequena lição por dia. 📚",
+   "Vamos dos hábitos de leitura e dos géneros aos grandes clássicos, à literatura mundial e à arte de ler a fundo. Qual foi o último livro de que gostaste mesmo?"
+  ],
+  "pt_BR": [
+   "Oi, eu sou {name}! Vamos explorar juntos o maravilhoso mundo dos livros numa jornada de 365 dias, com uma pequena lição por dia. 📚",
+   "Vamos dos hábitos de leitura e dos gêneros aos grandes clássicos, à literatura mundial e à arte de ler com profundidade. Qual livro você amou ler recentemente?"
+  ]
+ }
+}

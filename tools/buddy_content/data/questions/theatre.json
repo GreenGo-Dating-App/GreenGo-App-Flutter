@@ -1,0 +1,1305 @@
+{
+"topic": "theatre",
+"questions": [
+{
+"id": "theatre-001",
+"lv": "any",
+"i18n": {
+"en": "What was the first live show you ever saw, and what do you remember about it?",
+"de": "Was war die erste Live-Show, die du je gesehen hast, und woran erinnerst du dich?",
+"es": "¿Cuál fue el primer espectáculo en vivo que viste y qué recuerdas de él?",
+"fr": "Quel a été ton tout premier spectacle vivant, et qu'est-ce que tu en retiens ?",
+"it": "Qual è stato il primo spettacolo dal vivo che hai visto, e cosa ricordi?",
+"pt": "Qual foi o primeiro espetáculo ao vivo que viste e de que te lembras?",
+"pt_BR": "Qual foi o primeiro espetáculo ao vivo que você viu e do que você se lembra?"
+}
+},
+{
+"id": "theatre-002",
+"lv": "any",
+"i18n": {
+"en": "Do you prefer plays, musicals, comedy shows or dance performances? Why?",
+"de": "Magst du lieber Theaterstücke, Musicals, Comedy-Shows oder Tanzaufführungen? Warum?",
+"es": "¿Prefieres obras de teatro, musicales, espectáculos de comedia o danza? ¿Por qué?",
+"fr": "Tu préfères les pièces, les comédies musicales, les spectacles comiques ou la danse ? Pourquoi ?",
+"it": "Preferisci la prosa, i musical, gli spettacoli comici o la danza? Perché?",
+"pt": "Preferes peças, musicais, espetáculos de comédia ou dança? Porquê?",
+"pt_BR": "Você prefere peças, musicais, shows de comédia ou dança? Por quê?"
+}
+},
+{
+"id": "theatre-003",
+"lv": "any",
+"i18n": {
+"en": "Which musical song could you sing along to right now?",
+"de": "Bei welchem Musicalsong könntest du jetzt sofort mitsingen?",
+"es": "¿Qué canción de musical podrías cantar ahora mismo?",
+"fr": "Quelle chanson de comédie musicale pourrais-tu chanter tout de suite ?",
+"it": "Quale canzone di un musical sapresti cantare subito?",
+"pt": "Que canção de um musical conseguias cantar agora mesmo?",
+"pt_BR": "Qual música de musical você conseguiria cantar agora mesmo?"
+}
+},
+{
+"id": "theatre-004",
+"lv": "any",
+"i18n": {
+"en": "Have you ever acted in a school play or show? What role did you have?",
+"de": "Hast du schon einmal in einem Schultheaterstück mitgespielt? Welche Rolle hattest du?",
+"es": "¿Has actuado alguna vez en una obra escolar? ¿Qué papel tenías?",
+"fr": "As-tu déjà joué dans un spectacle d'école ? Quel rôle avais-tu ?",
+"it": "Hai mai recitato in una recita scolastica? Che ruolo avevi?",
+"pt": "Já participaste numa peça da escola? Que papel tinhas?",
+"pt_BR": "Você já atuou em alguma peça da escola? Qual era o seu papel?"
+}
+},
+{
+"id": "theatre-005",
+"lv": "any",
+"i18n": {
+"en": "Is there a theatre near where you live? What kind of shows does it put on?",
+"de": "Gibt es ein Theater in deiner Nähe? Was für Stücke werden dort gespielt?",
+"es": "¿Hay un teatro cerca de donde vives? ¿Qué tipo de espectáculos ofrece?",
+"fr": "Y a-t-il un théâtre près de chez toi ? Quel genre de spectacles propose-t-il ?",
+"it": "C'è un teatro vicino a casa tua? Che tipo di spettacoli propone?",
+"pt": "Há um teatro perto de onde vives? Que tipo de espetáculos apresenta?",
+"pt_BR": "Tem algum teatro perto de onde você mora? Que tipo de espetáculo ele apresenta?"
+}
+},
+{
+"id": "theatre-006",
+"lv": "any",
+"i18n": {
+"en": "What do you enjoy most about watching something live instead of on a screen?",
+"de": "Was gefällt dir am meisten daran, etwas live statt auf einem Bildschirm zu sehen?",
+"es": "¿Qué es lo que más disfrutas de ver algo en vivo en lugar de en una pantalla?",
+"fr": "Qu'est-ce que tu aimes le plus dans le fait de voir un spectacle en vrai plutôt qu'à l'écran ?",
+"it": "Cosa ti piace di più nel vedere qualcosa dal vivo invece che su uno schermo?",
+"pt": "O que mais gostas em ver algo ao vivo em vez de num ecrã?",
+"pt_BR": "O que você mais curte em ver algo ao vivo em vez de numa tela?"
+}
+},
+{
+"id": "theatre-007",
+"lv": "any",
+"i18n": {
+"en": "If you could see any show in the world tonight, which would you choose?",
+"de": "Wenn du heute Abend jede Show der Welt sehen könntest, welche würdest du wählen?",
+"es": "Si pudieras ver cualquier espectáculo del mundo esta noche, ¿cuál elegirías?",
+"fr": "Si tu pouvais voir n'importe quel spectacle au monde ce soir, lequel choisirais-tu ?",
+"it": "Se stasera potessi vedere qualsiasi spettacolo al mondo, quale sceglieresti?",
+"pt": "Se pudesses ver qualquer espetáculo do mundo esta noite, qual escolherias?",
+"pt_BR": "Se você pudesse ver qualquer espetáculo do mundo hoje à noite, qual escolheria?"
+}
+},
+{
+"id": "theatre-008",
+"lv": "any",
+"i18n": {
+"en": "Who would you love to go to the theatre with, and why?",
+"de": "Mit wem würdest du gern ins Theater gehen, und warum?",
+"es": "¿Con quién te encantaría ir al teatro y por qué?",
+"fr": "Avec qui aimerais-tu aller au théâtre, et pourquoi ?",
+"it": "Con chi ti piacerebbe andare a teatro, e perché?",
+"pt": "Com quem adorarias ir ao teatro, e porquê?",
+"pt_BR": "Com quem você adoraria ir ao teatro, e por quê?"
+}
+},
+{
+"id": "theatre-009",
+"lv": "any",
+"i18n": {
+"en": "Do you remember a moment in a show that gave you goosebumps?",
+"de": "Erinnerst du dich an einen Moment in einer Show, bei dem du Gänsehaut bekommen hast?",
+"es": "¿Recuerdas un momento de un espectáculo que te puso la piel de gallina?",
+"fr": "Te souviens-tu d'un moment de spectacle qui t'a donné la chair de poule ?",
+"it": "Ricordi un momento di uno spettacolo che ti ha fatto venire la pelle d'oca?",
+"pt": "Lembras-te de um momento num espetáculo que te deu arrepios?",
+"pt_BR": "Você se lembra de um momento num espetáculo que te deu arrepios?"
+}
+},
+{
+"id": "theatre-010",
+"lv": "any",
+"i18n": {
+"en": "Which film or book would you love to see turned into a stage show?",
+"de": "Welchen Film oder welches Buch würdest du gern als Bühnenshow sehen?",
+"es": "¿Qué película o libro te encantaría ver convertido en obra de teatro?",
+"fr": "Quel film ou quel livre aimerais-tu voir adapté sur scène ?",
+"it": "Quale film o libro ti piacerebbe vedere trasformato in uno spettacolo teatrale?",
+"pt": "Que filme ou livro adorarias ver transformado num espetáculo de palco?",
+"pt_BR": "Qual filme ou livro você adoraria ver virar um espetáculo de teatro?"
+}
+},
+{
+"id": "theatre-011",
+"lv": "any",
+"i18n": {
+"en": "Would you rather be on stage, backstage or in the audience?",
+"de": "Wärst du lieber auf der Bühne, hinter den Kulissen oder im Publikum?",
+"es": "¿Preferirías estar en el escenario, entre bastidores o en el público?",
+"fr": "Tu préférerais être sur scène, en coulisses ou dans le public ?",
+"it": "Preferiresti stare sul palco, dietro le quinte o tra il pubblico?",
+"pt": "Preferias estar no palco, nos bastidores ou na plateia?",
+"pt_BR": "Você preferiria estar no palco, nos bastidores ou na plateia?"
+}
+},
+{
+"id": "theatre-012",
+"lv": "any",
+"i18n": {
+"en": "What kind of theatre is popular in your country or region?",
+"de": "Welche Art von Theater ist in deinem Land oder deiner Region beliebt?",
+"es": "¿Qué tipo de teatro es popular en tu país o región?",
+"fr": "Quel genre de théâtre est populaire dans ton pays ou ta région ?",
+"it": "Che tipo di teatro è popolare nel tuo paese o nella tua regione?",
+"pt": "Que tipo de teatro é popular no teu país ou região?",
+"pt_BR": "Que tipo de teatro é popular no seu país ou região?"
+}
+},
+{
+"id": "theatre-013",
+"lv": "any",
+"i18n": {
+"en": "Do you have a favourite actor or singer from the stage?",
+"de": "Hast du einen Lieblingsschauspieler oder eine Lieblingssängerin von der Bühne?",
+"es": "¿Tienes un actor o cantante de teatro favorito?",
+"fr": "As-tu un comédien ou une chanteuse de scène préféré ?",
+"it": "Hai un attore o una cantante di teatro preferito?",
+"pt": "Tens algum ator ou cantor de teatro favorito?",
+"pt_BR": "Você tem algum ator ou cantor de teatro favorito?"
+}
+},
+{
+"id": "theatre-014",
+"lv": "any",
+"i18n": {
+"en": "What makes a theatre evening perfect for you, from start to finish?",
+"de": "Was macht einen Theaterabend für dich perfekt, von Anfang bis Ende?",
+"es": "¿Qué hace que una noche de teatro sea perfecta para ti, de principio a fin?",
+"fr": "Qu'est-ce qui rend une soirée au théâtre parfaite pour toi, du début à la fin ?",
+"it": "Cosa rende perfetta per te una serata a teatro, dall'inizio alla fine?",
+"pt": "O que torna uma noite de teatro perfeita para ti, do início ao fim?",
+"pt_BR": "O que torna uma noite de teatro perfeita para você, do começo ao fim?"
+}
+},
+{
+"id": "theatre-015",
+"lv": "any",
+"i18n": {
+"en": "Have you ever seen a show in another country or another language? How was it?",
+"de": "Hast du schon einmal eine Show in einem anderen Land oder einer anderen Sprache gesehen? Wie war es?",
+"es": "¿Has visto alguna vez un espectáculo en otro país o en otro idioma? ¿Qué tal fue?",
+"fr": "As-tu déjà vu un spectacle dans un autre pays ou une autre langue ? C'était comment ?",
+"it": "Hai mai visto uno spettacolo in un altro paese o in un'altra lingua? Com'è stato?",
+"pt": "Já viste um espetáculo noutro país ou noutra língua? Como foi?",
+"pt_BR": "Você já viu um espetáculo em outro país ou em outro idioma? Como foi?"
+}
+},
+{
+"id": "theatre-016",
+"lv": "any",
+"i18n": {
+"en": "Which do you enjoy more: laughing out loud or being deeply moved by a show?",
+"de": "Was genießt du mehr: laut zu lachen oder von einer Show tief berührt zu werden?",
+"es": "¿Qué disfrutas más: reír a carcajadas o emocionarte profundamente con un espectáculo?",
+"fr": "Qu'est-ce que tu préfères : rire aux éclats ou être profondément ému par un spectacle ?",
+"it": "Cosa ti piace di più: ridere di gusto o commuoverti profondamente per uno spettacolo?",
+"pt": "O que gostas mais: rir às gargalhadas ou ficar profundamente comovido com um espetáculo?",
+"pt_BR": "O que você curte mais: rir alto ou se emocionar de verdade com um espetáculo?"
+}
+},
+{
+"id": "theatre-017",
+"lv": "any",
+"i18n": {
+"en": "What is a show you would happily watch again and again?",
+"de": "Welche Show würdest du dir immer wieder gern ansehen?",
+"es": "¿Qué espectáculo verías una y otra vez con gusto?",
+"fr": "Quel spectacle reverrais-tu avec plaisir encore et encore ?",
+"it": "Quale spettacolo rivedresti volentieri più e più volte?",
+"pt": "Que espetáculo verias com gosto vezes sem conta?",
+"pt_BR": "Qual espetáculo você veria de novo e de novo com prazer?"
+}
+},
+{
+"id": "theatre-018",
+"lv": "any",
+"i18n": {
+"en": "Do you like singing or dancing, even just at home?",
+"de": "Singst oder tanzt du gern, auch nur zu Hause?",
+"es": "¿Te gusta cantar o bailar, aunque sea solo en casa?",
+"fr": "Aimes-tu chanter ou danser, même juste chez toi ?",
+"it": "Ti piace cantare o ballare, anche solo a casa?",
+"pt": "Gostas de cantar ou dançar, nem que seja só em casa?",
+"pt_BR": "Você gosta de cantar ou dançar, nem que seja só em casa?"
+}
+},
+{
+"id": "theatre-019",
+"lv": "any",
+"i18n": {
+"en": "Which theatre in the world would you most love to visit?",
+"de": "Welches Theater der Welt würdest du am liebsten besuchen?",
+"es": "¿Qué teatro del mundo te encantaría visitar?",
+"fr": "Quel théâtre au monde aimerais-tu le plus visiter ?",
+"it": "Quale teatro del mondo ti piacerebbe di più visitare?",
+"pt": "Que teatro do mundo mais gostarias de visitar?",
+"pt_BR": "Qual teatro do mundo você mais gostaria de visitar?"
+}
+},
+{
+"id": "theatre-020",
+"lv": "any",
+"i18n": {
+"en": "What do you usually do during the interval of a show?",
+"de": "Was machst du normalerweise in der Pause einer Vorstellung?",
+"es": "¿Qué sueles hacer durante el entreacto de un espectáculo?",
+"fr": "Que fais-tu d'habitude pendant l'entracte ?",
+"it": "Cosa fai di solito durante l'intervallo di uno spettacolo?",
+"pt": "O que costumas fazer durante o intervalo de um espetáculo?",
+"pt_BR": "O que você costuma fazer durante o intervalo de um espetáculo?"
+}
+},
+{
+"id": "theatre-021",
+"lv": "beginner",
+"i18n": {
+"en": "Which part of a theatre would you most like to explore on a backstage tour?",
+"de": "Welchen Teil eines Theaters würdest du bei einer Führung hinter die Kulissen am liebsten erkunden?",
+"es": "¿Qué parte de un teatro te gustaría más explorar en una visita entre bastidores?",
+"fr": "Quelle partie d'un théâtre aimerais-tu le plus découvrir lors d'une visite des coulisses ?",
+"it": "Quale parte di un teatro ti piacerebbe di più esplorare in una visita dietro le quinte?",
+"pt": "Que parte de um teatro mais gostarias de explorar numa visita aos bastidores?",
+"pt_BR": "Qual parte de um teatro você mais gostaria de explorar numa visita aos bastidores?"
+}
+},
+{
+"id": "theatre-022",
+"lv": "beginner",
+"i18n": {
+"en": "Where do you like to sit in a theatre: close to the stage or further back?",
+"de": "Wo sitzt du im Theater am liebsten: nah an der Bühne oder weiter hinten?",
+"es": "¿Dónde te gusta sentarte en el teatro: cerca del escenario o más atrás?",
+"fr": "Où aimes-tu t'asseoir au théâtre : près de la scène ou plus loin ?",
+"it": "Dove ti piace sederti a teatro: vicino al palco o più indietro?",
+"pt": "Onde gostas de te sentar no teatro: perto do palco ou mais atrás?",
+"pt_BR": "Onde você gosta de sentar no teatro: perto do palco ou mais atrás?"
+}
+},
+{
+"id": "theatre-023",
+"lv": "beginner",
+"i18n": {
+"en": "Which Greek mask feels more like you today: comedy or tragedy?",
+"de": "Welche griechische Maske passt heute eher zu dir: Komödie oder Tragödie?",
+"es": "¿Qué máscara griega se parece más a ti hoy: la comedia o la tragedia?",
+"fr": "Quel masque grec te ressemble le plus aujourd'hui : la comédie ou la tragédie ?",
+"it": "Quale maschera greca ti somiglia di più oggi: la commedia o la tragedia?",
+"pt": "Que máscara grega se parece mais contigo hoje: a comédia ou a tragédia?",
+"pt_BR": "Qual máscara grega tem mais a ver com você hoje: a comédia ou a tragédia?"
+}
+},
+{
+"id": "theatre-024",
+"lv": "beginner",
+"i18n": {
+"en": "What do you think is the most important theatre etiquette rule?",
+"de": "Welche Benimmregel im Theater findest du am wichtigsten?",
+"es": "¿Cuál crees que es la regla de etiqueta más importante en el teatro?",
+"fr": "Selon toi, quelle est la règle de savoir-vivre la plus importante au théâtre ?",
+"it": "Secondo te, qual è la regola di galateo più importante a teatro?",
+"pt": "Na tua opinião, qual é a regra de etiqueta mais importante no teatro?",
+"pt_BR": "Na sua opinião, qual é a regra de etiqueta mais importante no teatro?"
+}
+},
+{
+"id": "theatre-025",
+"lv": "beginner",
+"i18n": {
+"en": "Do you ever read the programme before a show starts? What do you look for?",
+"de": "Liest du das Programmheft vor Beginn der Vorstellung? Worauf achtest du?",
+"es": "¿Lees el programa antes de que empiece la función? ¿Qué buscas en él?",
+"fr": "Lis-tu le programme avant le début du spectacle ? Qu'est-ce que tu y cherches ?",
+"it": "Leggi il programma di sala prima dello spettacolo? Cosa cerchi?",
+"pt": "Costumas ler o programa antes do espetáculo começar? O que procuras?",
+"pt_BR": "Você costuma ler o programa antes do espetáculo começar? O que você procura?"
+}
+},
+{
+"id": "theatre-026",
+"lv": "beginner",
+"i18n": {
+"en": "Which Shakespeare play or character have you heard of, and what do you know about it?",
+"de": "Von welchem Shakespeare-Stück oder welcher Figur hast du schon gehört, und was weißt du darüber?",
+"es": "¿De qué obra o personaje de Shakespeare has oído hablar y qué sabes de él?",
+"fr": "De quelle pièce ou quel personnage de Shakespeare as-tu entendu parler, et qu'en sais-tu ?",
+"it": "Di quale opera o personaggio di Shakespeare hai sentito parlare, e cosa ne sai?",
+"pt": "De que peça ou personagem de Shakespeare já ouviste falar, e o que sabes sobre ela?",
+"pt_BR": "De qual peça ou personagem de Shakespeare você já ouviu falar, e o que sabe sobre ela?"
+}
+},
+{
+"id": "theatre-027",
+"lv": "beginner",
+"i18n": {
+"en": "Would you like to try a tongue twister with me? Which one do you know in your language?",
+"de": "Hast du Lust auf einen Zungenbrecher? Welchen kennst du in deiner Sprache?",
+"es": "¿Te animas a probar un trabalenguas? ¿Cuál conoces en tu idioma?",
+"fr": "On essaie un virelangue ? Lequel connais-tu dans ta langue ?",
+"it": "Ti va di provare uno scioglilingua? Quale conosci nella tua lingua?",
+"pt": "Vamos experimentar um trava-línguas? Qual conheces na tua língua?",
+"pt_BR": "Vamos tentar um trava-língua? Qual você conhece no seu idioma?"
+}
+},
+{
+"id": "theatre-028",
+"lv": "beginner",
+"i18n": {
+"en": "How do you feel when you have to speak in front of a group?",
+"de": "Wie fühlst du dich, wenn du vor einer Gruppe sprechen musst?",
+"es": "¿Cómo te sientes cuando tienes que hablar delante de un grupo?",
+"fr": "Comment te sens-tu quand tu dois parler devant un groupe ?",
+"it": "Come ti senti quando devi parlare davanti a un gruppo?",
+"pt": "Como te sentes quando tens de falar em frente a um grupo?",
+"pt_BR": "Como você se sente quando precisa falar na frente de um grupo?"
+}
+},
+{
+"id": "theatre-029",
+"lv": "beginner",
+"i18n": {
+"en": "Which job behind the scenes sounds most interesting to you, and why?",
+"de": "Welcher Job hinter den Kulissen klingt für dich am spannendsten, und warum?",
+"es": "¿Qué trabajo entre bastidores te parece más interesante y por qué?",
+"fr": "Quel métier des coulisses te semble le plus intéressant, et pourquoi ?",
+"it": "Quale lavoro dietro le quinte ti sembra più interessante, e perché?",
+"pt": "Que trabalho nos bastidores te parece mais interessante, e porquê?",
+"pt_BR": "Qual trabalho nos bastidores parece mais interessante para você, e por quê?"
+}
+},
+{
+"id": "theatre-030",
+"lv": "beginner",
+"i18n": {
+"en": "Have you ever played an improv game, like making up a story one word at a time?",
+"de": "Hast du schon einmal ein Improspiel gespielt, zum Beispiel eine Geschichte Wort für Wort erfinden?",
+"es": "¿Has jugado alguna vez a un juego de improvisación, como inventar una historia palabra por palabra?",
+"fr": "As-tu déjà joué à un jeu d'impro, comme inventer une histoire un mot à la fois ?",
+"it": "Hai mai fatto un gioco di improvvisazione, come inventare una storia una parola alla volta?",
+"pt": "Já jogaste algum jogo de improviso, como inventar uma história palavra a palavra?",
+"pt_BR": "Você já brincou de algum jogo de improviso, como inventar uma história palavra por palavra?"
+}
+},
+{
+"id": "theatre-031",
+"lv": "any",
+"i18n": {
+"en": "Do you prefer big, spectacular productions or small, intimate shows?",
+"de": "Magst du lieber große, spektakuläre Produktionen oder kleine, intime Vorstellungen?",
+"es": "¿Prefieres las grandes producciones espectaculares o los espectáculos pequeños e íntimos?",
+"fr": "Tu préfères les grandes productions spectaculaires ou les petits spectacles intimes ?",
+"it": "Preferisci le grandi produzioni spettacolari o gli spettacoli piccoli e intimi?",
+"pt": "Preferes grandes produções espetaculares ou espetáculos pequenos e intimistas?",
+"pt_BR": "Você prefere grandes produções espetaculares ou espetáculos pequenos e intimistas?"
+}
+},
+{
+"id": "theatre-032",
+"lv": "any",
+"i18n": {
+"en": "What is your favourite musical, or one you would like to discover?",
+"de": "Was ist dein Lieblingsmusical, oder welches würdest du gern entdecken?",
+"es": "¿Cuál es tu musical favorito, o cuál te gustaría descubrir?",
+"fr": "Quelle est ta comédie musicale préférée, ou celle que tu aimerais découvrir ?",
+"it": "Qual è il tuo musical preferito, o quale ti piacerebbe scoprire?",
+"pt": "Qual é o teu musical favorito, ou qual gostavas de descobrir?",
+"pt_BR": "Qual é o seu musical favorito, ou qual você gostaria de conhecer?"
+}
+},
+{
+"id": "theatre-033",
+"lv": "any",
+"i18n": {
+"en": "Have you ever been to a theatre festival or a street performance you loved?",
+"de": "Warst du schon einmal auf einem Theaterfestival oder bei einer Straßenaufführung, die dir gefallen hat?",
+"es": "¿Has ido alguna vez a un festival de teatro o a un espectáculo callejero que te encantó?",
+"fr": "Es-tu déjà allé à un festival de théâtre ou à un spectacle de rue que tu as adoré ?",
+"it": "Sei mai stato a un festival teatrale o a uno spettacolo di strada che ti è piaciuto molto?",
+"pt": "Já foste a um festival de teatro ou a um espetáculo de rua de que gostaste muito?",
+"pt_BR": "Você já foi a um festival de teatro ou a um espetáculo de rua que adorou?"
+}
+},
+{
+"id": "theatre-034",
+"lv": "any",
+"i18n": {
+"en": "How do you like to dress when you go to the theatre?",
+"de": "Wie ziehst du dich gern an, wenn du ins Theater gehst?",
+"es": "¿Cómo te gusta vestirte cuando vas al teatro?",
+"fr": "Comment aimes-tu t'habiller pour aller au théâtre ?",
+"it": "Come ti piace vestirti quando vai a teatro?",
+"pt": "Como gostas de te vestir quando vais ao teatro?",
+"pt_BR": "Como você gosta de se vestir quando vai ao teatro?"
+}
+},
+{
+"id": "theatre-035",
+"lv": "any",
+"i18n": {
+"en": "Which stage character would you love to play for one night?",
+"de": "Welche Bühnenfigur würdest du gern für einen Abend spielen?",
+"es": "¿Qué personaje de teatro te encantaría interpretar por una noche?",
+"fr": "Quel personnage de théâtre aimerais-tu jouer le temps d'une soirée ?",
+"it": "Quale personaggio teatrale ti piacerebbe interpretare per una sera?",
+"pt": "Que personagem de teatro adorarias interpretar por uma noite?",
+"pt_BR": "Qual personagem de teatro você adoraria interpretar por uma noite?"
+}
+},
+{
+"id": "theatre-036",
+"lv": "any",
+"i18n": {
+"en": "What do you think makes a great actor?",
+"de": "Was macht deiner Meinung nach einen großartigen Schauspieler aus?",
+"es": "¿Qué crees que hace grande a un actor?",
+"fr": "Selon toi, qu'est-ce qui fait un grand comédien ?",
+"it": "Secondo te, cosa rende grande un attore?",
+"pt": "O que achas que faz um grande ator?",
+"pt_BR": "O que você acha que faz um grande ator?"
+}
+},
+{
+"id": "theatre-037",
+"lv": "any",
+"i18n": {
+"en": "Do you enjoy puppet shows, circus or magic shows?",
+"de": "Magst du Puppentheater, Zirkus oder Zaubershows?",
+"es": "¿Te gustan los espectáculos de títeres, el circo o la magia?",
+"fr": "Aimes-tu les spectacles de marionnettes, le cirque ou la magie ?",
+"it": "Ti piacciono gli spettacoli di marionette, il circo o la magia?",
+"pt": "Gostas de espetáculos de marionetas, circo ou magia?",
+"pt_BR": "Você gosta de teatro de bonecos, circo ou shows de mágica?"
+}
+},
+{
+"id": "theatre-038",
+"lv": "any",
+"i18n": {
+"en": "Which costume from a show would you love to wear?",
+"de": "Welches Kostüm aus einer Show würdest du gern tragen?",
+"es": "¿Qué vestuario de un espectáculo te encantaría llevar?",
+"fr": "Quel costume de spectacle aimerais-tu porter ?",
+"it": "Quale costume di scena ti piacerebbe indossare?",
+"pt": "Que figurino de um espetáculo adorarias usar?",
+"pt_BR": "Qual figurino de um espetáculo você adoraria usar?"
+}
+},
+{
+"id": "theatre-039",
+"lv": "any",
+"i18n": {
+"en": "How do you choose which show to see?",
+"de": "Wie entscheidest du, welche Show du dir ansiehst?",
+"es": "¿Cómo eliges qué espectáculo ver?",
+"fr": "Comment choisis-tu le spectacle que tu vas voir ?",
+"it": "Come scegli quale spettacolo andare a vedere?",
+"pt": "Como escolhes que espetáculo ir ver?",
+"pt_BR": "Como você escolhe qual espetáculo vai ver?"
+}
+},
+{
+"id": "theatre-040",
+"lv": "any",
+"i18n": {
+"en": "Is there a song from a show that always lifts your mood?",
+"de": "Gibt es einen Song aus einer Show, der dir immer gute Laune macht?",
+"es": "¿Hay alguna canción de un espectáculo que siempre te levanta el ánimo?",
+"fr": "Y a-t-il une chanson de spectacle qui te met toujours de bonne humeur ?",
+"it": "C'è una canzone di uno spettacolo che ti mette sempre di buon umore?",
+"pt": "Há alguma canção de um espetáculo que te anima sempre?",
+"pt_BR": "Tem alguma música de um espetáculo que sempre levanta o seu astral?"
+}
+},
+{
+"id": "theatre-041",
+"lv": "any",
+"i18n": {
+"en": "Do you like it when actors talk to the audience or bring someone on stage?",
+"de": "Magst du es, wenn Schauspieler das Publikum ansprechen oder jemanden auf die Bühne holen?",
+"es": "¿Te gusta cuando los actores hablan al público o suben a alguien al escenario?",
+"fr": "Aimes-tu quand les comédiens s'adressent au public ou font monter quelqu'un sur scène ?",
+"it": "Ti piace quando gli attori parlano al pubblico o fanno salire qualcuno sul palco?",
+"pt": "Gostas quando os atores falam com o público ou chamam alguém ao palco?",
+"pt_BR": "Você gosta quando os atores falam com a plateia ou chamam alguém ao palco?"
+}
+},
+{
+"id": "theatre-042",
+"lv": "any",
+"i18n": {
+"en": "What theatre traditions from your culture would you like to share with me?",
+"de": "Welche Theatertraditionen aus deiner Kultur möchtest du mir zeigen?",
+"es": "¿Qué tradiciones teatrales de tu cultura te gustaría compartir conmigo?",
+"fr": "Quelles traditions théâtrales de ta culture aimerais-tu me faire découvrir ?",
+"it": "Quali tradizioni teatrali della tua cultura ti piacerebbe condividere con me?",
+"pt": "Que tradições teatrais da tua cultura gostavas de partilhar comigo?",
+"pt_BR": "Quais tradições teatrais da sua cultura você gostaria de compartilhar comigo?"
+}
+},
+{
+"id": "theatre-043",
+"lv": "any",
+"i18n": {
+"en": "Would you rather watch a classic play or a brand-new one?",
+"de": "Würdest du lieber ein klassisches oder ein ganz neues Stück sehen?",
+"es": "¿Preferirías ver una obra clásica o una completamente nueva?",
+"fr": "Tu préférerais voir une pièce classique ou une toute nouvelle création ?",
+"it": "Preferiresti vedere un classico o un testo nuovissimo?",
+"pt": "Preferias ver uma peça clássica ou uma completamente nova?",
+"pt_BR": "Você preferiria ver uma peça clássica ou uma totalmente nova?"
+}
+},
+{
+"id": "theatre-044",
+"lv": "any",
+"i18n": {
+"en": "Have you ever watched a recorded stage show at home or in a cinema?",
+"de": "Hast du schon einmal eine aufgezeichnete Bühnenshow zu Hause oder im Kino gesehen?",
+"es": "¿Has visto alguna vez un espectáculo grabado en casa o en el cine?",
+"fr": "As-tu déjà regardé un spectacle filmé chez toi ou au cinéma ?",
+"it": "Hai mai visto uno spettacolo registrato a casa o al cinema?",
+"pt": "Já viste um espetáculo gravado em casa ou no cinema?",
+"pt_BR": "Você já assistiu a um espetáculo gravado em casa ou no cinema?"
+}
+},
+{
+"id": "theatre-045",
+"lv": "any",
+"i18n": {
+"en": "What is something you would love to learn: acting, singing, dancing or stage design?",
+"de": "Was würdest du gern lernen: Schauspiel, Gesang, Tanz oder Bühnenbild?",
+"es": "¿Qué te encantaría aprender: actuación, canto, baile o escenografía?",
+"fr": "Qu'aimerais-tu apprendre : le jeu, le chant, la danse ou la scénographie ?",
+"it": "Cosa ti piacerebbe imparare: recitazione, canto, danza o scenografia?",
+"pt": "O que adorarias aprender: representação, canto, dança ou cenografia?",
+"pt_BR": "O que você adoraria aprender: atuação, canto, dança ou cenografia?"
+}
+},
+{
+"id": "theatre-046",
+"lv": "any",
+"i18n": {
+"en": "Do you clap, cheer or stand up at the end of a show you loved?",
+"de": "Klatschst, jubelst oder stehst du am Ende einer Show auf, die dir gefallen hat?",
+"es": "¿Aplaudes, gritas bravo o te pones de pie al final de un espectáculo que te encantó?",
+"fr": "Applaudis-tu, cries-tu bravo ou te lèves-tu à la fin d'un spectacle que tu as adoré ?",
+"it": "Applaudi, gridi bravo o ti alzi in piedi alla fine di uno spettacolo che ti è piaciuto?",
+"pt": "Aplaudes, gritas bravo ou levantas-te no fim de um espetáculo de que gostaste?",
+"pt_BR": "Você aplaude, grita bravo ou fica de pé no fim de um espetáculo que adorou?"
+}
+},
+{
+"id": "theatre-047",
+"lv": "any",
+"i18n": {
+"en": "Which famous stage line or song lyric do you remember?",
+"de": "An welchen berühmten Bühnensatz oder Songtext erinnerst du dich?",
+"es": "¿Qué frase famosa de teatro o letra de canción recuerdas?",
+"fr": "De quelle réplique célèbre ou de quelles paroles de chanson te souviens-tu ?",
+"it": "Quale battuta famosa o verso di una canzone teatrale ricordi?",
+"pt": "De que fala famosa ou letra de canção de teatro te lembras?",
+"pt_BR": "De qual fala famosa ou letra de música de teatro você se lembra?"
+}
+},
+{
+"id": "theatre-048",
+"lv": "any",
+"i18n": {
+"en": "How would you describe your perfect theatre to someone who has never been to one?",
+"de": "Wie würdest du jemandem, der noch nie im Theater war, dein perfektes Theater beschreiben?",
+"es": "¿Cómo describirías tu teatro perfecto a alguien que nunca ha ido a uno?",
+"fr": "Comment décrirais-tu ton théâtre idéal à quelqu'un qui n'y est jamais allé ?",
+"it": "Come descriveresti il tuo teatro ideale a qualcuno che non ci è mai stato?",
+"pt": "Como descreverias o teu teatro ideal a alguém que nunca foi a um?",
+"pt_BR": "Como você descreveria o seu teatro ideal para alguém que nunca foi a um?"
+}
+},
+{
+"id": "theatre-049",
+"lv": "any",
+"i18n": {
+"en": "What would you name your own theatre company?",
+"de": "Wie würdest du deine eigene Theatergruppe nennen?",
+"es": "¿Cómo llamarías a tu propia compañía de teatro?",
+"fr": "Comment appellerais-tu ta propre troupe de théâtre ?",
+"it": "Come chiameresti la tua compagnia teatrale?",
+"pt": "Que nome darias à tua própria companhia de teatro?",
+"pt_BR": "Que nome você daria à sua própria companhia de teatro?"
+}
+},
+{
+"id": "theatre-050",
+"lv": "any",
+"i18n": {
+"en": "Who in your life would enjoy theatre the most, and which show would you pick for them?",
+"de": "Wer in deinem Umfeld würde Theater am meisten genießen, und welche Show würdest du für ihn aussuchen?",
+"es": "¿Quién de tu entorno disfrutaría más del teatro y qué espectáculo elegirías para esa persona?",
+"fr": "Qui dans ton entourage aimerait le plus le théâtre, et quel spectacle choisirais-tu pour lui ?",
+"it": "Chi tra le persone che conosci amerebbe di più il teatro, e che spettacolo sceglieresti per lei?",
+"pt": "Quem na tua vida gostaria mais de teatro, e que espetáculo escolherias para essa pessoa?",
+"pt_BR": "Quem na sua vida curtiria mais o teatro, e qual espetáculo você escolheria para essa pessoa?"
+}
+},
+{
+"id": "theatre-051",
+"lv": "beginner",
+"i18n": {
+"en": "Have you ever felt nervous before performing or presenting? How did you handle it?",
+"de": "Warst du schon einmal nervös vor einem Auftritt oder einer Präsentation? Wie bist du damit umgegangen?",
+"es": "¿Te has puesto nervioso alguna vez antes de actuar o presentar? ¿Cómo lo manejaste?",
+"fr": "As-tu déjà eu le trac avant de jouer ou de présenter ? Comment l'as-tu géré ?",
+"it": "Ti sei mai sentito nervoso prima di esibirti o presentare? Come l'hai gestito?",
+"pt": "Já ficaste nervoso antes de atuar ou apresentar algo? Como lidaste com isso?",
+"pt_BR": "Você já ficou nervoso antes de se apresentar? Como lidou com isso?"
+}
+},
+{
+"id": "theatre-052",
+"lv": "beginner",
+"i18n": {
+"en": "Which type of stage would you like to watch a show on: a classic one or in-the-round?",
+"de": "Auf welcher Bühnenform würdest du gern eine Show sehen: klassisch oder als Rundbühne?",
+"es": "¿En qué tipo de escenario te gustaría ver una obra: uno clásico o uno circular?",
+"fr": "Sur quel type de scène aimerais-tu voir un spectacle : classique ou en rond ?",
+"it": "Su che tipo di palco ti piacerebbe vedere uno spettacolo: classico o circolare?",
+"pt": "Em que tipo de palco gostavas de ver um espetáculo: clássico ou em arena?",
+"pt_BR": "Em que tipo de palco você gostaria de ver um espetáculo: clássico ou de arena?"
+}
+},
+{
+"id": "theatre-053",
+"lv": "beginner",
+"i18n": {
+"en": "What is your favourite way to learn something by heart?",
+"de": "Wie lernst du am liebsten etwas auswendig?",
+"es": "¿Cuál es tu forma favorita de aprender algo de memoria?",
+"fr": "Quelle est ta façon préférée d'apprendre quelque chose par cœur ?",
+"it": "Qual è il tuo modo preferito per imparare qualcosa a memoria?",
+"pt": "Qual é a tua forma preferida de decorar alguma coisa?",
+"pt_BR": "Qual é o seu jeito favorito de decorar alguma coisa?"
+}
+},
+{
+"id": "theatre-054",
+"lv": "beginner",
+"i18n": {
+"en": "Which commedia dell'arte character sounds the most fun to you?",
+"de": "Welche Figur der Commedia dell'arte findest du am lustigsten?",
+"es": "¿Qué personaje de la commedia dell'arte te parece más divertido?",
+"fr": "Quel personnage de la commedia dell'arte te semble le plus amusant ?",
+"it": "Quale maschera della commedia dell'arte ti sembra più divertente?",
+"pt": "Que personagem da commedia dell'arte te parece mais divertida?",
+"pt_BR": "Qual personagem da commedia dell'arte parece mais divertido para você?"
+}
+},
+{
+"id": "theatre-055",
+"lv": "beginner",
+"i18n": {
+"en": "Have you ever seen Japanese, Chinese or Indian traditional theatre? What caught your eye?",
+"de": "Hast du schon einmal traditionelles japanisches, chinesisches oder indisches Theater gesehen? Was ist dir aufgefallen?",
+"es": "¿Has visto alguna vez teatro tradicional japonés, chino o indio? ¿Qué te llamó la atención?",
+"fr": "As-tu déjà vu du théâtre traditionnel japonais, chinois ou indien ? Qu'est-ce qui t'a frappé ?",
+"it": "Hai mai visto teatro tradizionale giapponese, cinese o indiano? Cosa ti ha colpito?",
+"pt": "Já viste teatro tradicional japonês, chinês ou indiano? O que te chamou a atenção?",
+"pt_BR": "Você já viu teatro tradicional japonês, chinês ou indiano? O que chamou sua atenção?"
+}
+},
+{
+"id": "theatre-056",
+"lv": "beginner",
+"i18n": {
+"en": "What mood would you create with stage lighting if you were the designer?",
+"de": "Welche Stimmung würdest du als Lichtdesigner auf der Bühne erzeugen?",
+"es": "¿Qué ambiente crearías con la iluminación si fueras el diseñador?",
+"fr": "Quelle ambiance créerais-tu avec la lumière si tu étais l'éclairagiste ?",
+"it": "Che atmosfera creeresti con le luci se fossi tu il light designer?",
+"pt": "Que ambiente criarias com a luz se fosses o desenhador de luz?",
+"pt_BR": "Que clima você criaria com a iluminação se fosse o designer de luz?"
+}
+},
+{
+"id": "theatre-057",
+"lv": "beginner",
+"i18n": {
+"en": "If you could design a set, what place would you build on stage?",
+"de": "Wenn du ein Bühnenbild entwerfen könntest, welchen Ort würdest du auf die Bühne bauen?",
+"es": "Si pudieras diseñar un decorado, ¿qué lugar construirías en el escenario?",
+"fr": "Si tu pouvais créer un décor, quel lieu construirais-tu sur scène ?",
+"it": "Se potessi progettare una scenografia, quale luogo costruiresti sul palco?",
+"pt": "Se pudesses criar um cenário, que lugar construirias em palco?",
+"pt_BR": "Se você pudesse criar um cenário, que lugar construiria no palco?"
+}
+},
+{
+"id": "theatre-058",
+"lv": "beginner",
+"i18n": {
+"en": "Which theatre superstition do you find the most charming?",
+"de": "Welchen Theateraberglauben findest du am charmantesten?",
+"es": "¿Qué superstición teatral te parece más encantadora?",
+"fr": "Quelle superstition du théâtre trouves-tu la plus charmante ?",
+"it": "Quale superstizione teatrale trovi più simpatica?",
+"pt": "Que superstição do teatro achas mais encantadora?",
+"pt_BR": "Qual superstição do teatro você acha mais encantadora?"
+}
+},
+{
+"id": "theatre-059",
+"lv": "beginner",
+"i18n": {
+"en": "Would you enjoy reading a play aloud with friends? Which roles would you take?",
+"de": "Würde es dir Spaß machen, mit Freunden ein Stück laut zu lesen? Welche Rollen würdest du übernehmen?",
+"es": "¿Te gustaría leer una obra en voz alta con amigos? ¿Qué papeles elegirías?",
+"fr": "Aimerais-tu lire une pièce à voix haute avec des amis ? Quels rôles prendrais-tu ?",
+"it": "Ti piacerebbe leggere un testo ad alta voce con gli amici? Che ruoli sceglieresti?",
+"pt": "Gostavas de ler uma peça em voz alta com amigos? Que papéis escolherias?",
+"pt_BR": "Você gostaria de ler uma peça em voz alta com amigos? Quais papéis escolheria?"
+}
+},
+{
+"id": "theatre-060",
+"lv": "beginner",
+"i18n": {
+"en": "What do you think the stage manager does during a show?",
+"de": "Was macht deiner Meinung nach die Inspizienz während einer Vorstellung?",
+"es": "¿Qué crees que hace el regidor durante una función?",
+"fr": "Que fait le régisseur pendant un spectacle, à ton avis ?",
+"it": "Secondo te, cosa fa il direttore di scena durante uno spettacolo?",
+"pt": "O que achas que faz o diretor de cena durante um espetáculo?",
+"pt_BR": "O que você acha que o diretor de cena faz durante um espetáculo?"
+}
+},
+{
+"id": "theatre-061",
+"lv": "beginner",
+"i18n": {
+"en": "Have you ever been to a family pantomime or a children's show? What did you like?",
+"de": "Warst du schon einmal in einem Familienstück oder Kindertheater? Was hat dir gefallen?",
+"es": "¿Has ido alguna vez a un espectáculo familiar o infantil? ¿Qué te gustó?",
+"fr": "As-tu déjà vu un spectacle familial ou pour enfants ? Qu'est-ce qui t'a plu ?",
+"it": "Sei mai stato a uno spettacolo per famiglie o per bambini? Cosa ti è piaciuto?",
+"pt": "Já foste a um espetáculo familiar ou infantil? De que gostaste?",
+"pt_BR": "Você já foi a um espetáculo infantil ou para a família? Do que você gostou?"
+}
+},
+{
+"id": "theatre-062",
+"lv": "beginner",
+"i18n": {
+"en": "Which emotion would you find easiest to show on stage, and which the hardest?",
+"de": "Welches Gefühl könntest du auf der Bühne am leichtesten zeigen, und welches am schwersten?",
+"es": "¿Qué emoción te resultaría más fácil mostrar en escena y cuál la más difícil?",
+"fr": "Quelle émotion te semblerait la plus facile à jouer sur scène, et laquelle la plus difficile ?",
+"it": "Quale emozione ti sarebbe più facile mostrare in scena, e quale la più difficile?",
+"pt": "Que emoção seria mais fácil mostrares em palco, e qual a mais difícil?",
+"pt_BR": "Qual emoção seria mais fácil para você mostrar no palco, e qual a mais difícil?"
+}
+},
+{
+"id": "theatre-063",
+"lv": "beginner",
+"i18n": {
+"en": "Do you prefer musicals with lots of dancing or ones focused on the songs?",
+"de": "Magst du lieber Musicals mit viel Tanz oder solche, bei denen die Songs im Mittelpunkt stehen?",
+"es": "¿Prefieres los musicales con mucho baile o los que se centran en las canciones?",
+"fr": "Tu préfères les comédies musicales très dansées ou celles centrées sur les chansons ?",
+"it": "Preferisci i musical con tanta danza o quelli incentrati sulle canzoni?",
+"pt": "Preferes musicais com muita dança ou os centrados nas canções?",
+"pt_BR": "Você prefere musicais com muita dança ou os focados nas músicas?"
+}
+},
+{
+"id": "theatre-064",
+"lv": "beginner",
+"i18n": {
+"en": "What would make you feel welcome at a theatre for the first time?",
+"de": "Was würde dir beim ersten Theaterbesuch das Gefühl geben, willkommen zu sein?",
+"es": "¿Qué te haría sentir bienvenido en un teatro la primera vez?",
+"fr": "Qu'est-ce qui te ferait te sentir bienvenu lors d'une première fois au théâtre ?",
+"it": "Cosa ti farebbe sentire il benvenuto a teatro la prima volta?",
+"pt": "O que te faria sentir bem-vindo num teatro pela primeira vez?",
+"pt_BR": "O que faria você se sentir bem-vindo num teatro pela primeira vez?"
+}
+},
+{
+"id": "theatre-065",
+"lv": "beginner",
+"i18n": {
+"en": "Which theatre word in another language do you like the sound of, like encore or bravo?",
+"de": "Welches Theaterwort aus einer anderen Sprache klingt für dich schön, wie Zugabe oder Bravo?",
+"es": "¿Qué palabra de teatro en otro idioma te gusta cómo suena, como bis o bravo?",
+"fr": "Quel mot de théâtre dans une autre langue aimes-tu entendre, comme bis ou bravo ?",
+"it": "Quale parola del teatro in un'altra lingua ti piace come suona, come bis o bravo?",
+"pt": "Que palavra de teatro noutra língua gostas de ouvir, como bis ou bravo?",
+"pt_BR": "Qual palavra de teatro em outro idioma você gosta de ouvir, como bis ou bravo?"
+}
+},
+{
+"id": "theatre-066",
+"lv": "intermediate",
+"i18n": {
+"en": "Which playwright's style appeals to you more: Chekhov's quiet everyday life or Molière's sharp comedy?",
+"de": "Welcher Stil spricht dich mehr an: Tschechows stiller Alltag oder Molières scharfe Komödie?",
+"es": "¿Qué estilo te atrae más: la vida cotidiana tranquila de Chéjov o la comedia aguda de Molière?",
+"fr": "Quel style te parle le plus : le quotidien tranquille de Tchekhov ou la comédie mordante de Molière ?",
+"it": "Quale stile ti attira di più: la quotidianità tranquilla di Čechov o la commedia pungente di Molière?",
+"pt": "Que estilo te atrai mais: o quotidiano tranquilo de Tchékhov ou a comédia afiada de Molière?",
+"pt_BR": "Qual estilo te atrai mais: o cotidiano tranquilo de Tchekhov ou a comédia afiada de Molière?"
+}
+},
+{
+"id": "theatre-067",
+"lv": "intermediate",
+"i18n": {
+"en": "Have you ever noticed subtext in a scene, when a character meant more than they said?",
+"de": "Ist dir schon einmal Subtext in einer Szene aufgefallen, wenn eine Figur mehr meinte, als sie sagte?",
+"es": "¿Has notado alguna vez el subtexto en una escena, cuando un personaje quería decir más de lo que decía?",
+"fr": "As-tu déjà remarqué un sous-texte, quand un personnage voulait dire plus que ce qu'il disait ?",
+"it": "Hai mai notato un sottotesto in una scena, quando un personaggio intendeva più di quanto diceva?",
+"pt": "Já reparaste no subtexto de uma cena, quando uma personagem queria dizer mais do que dizia?",
+"pt_BR": "Você já percebeu o subtexto de uma cena, quando um personagem queria dizer mais do que dizia?"
+}
+},
+{
+"id": "theatre-068",
+"lv": "intermediate",
+"i18n": {
+"en": "Which acting idea sounds most useful to you: the magic if, objectives or listening exercises?",
+"de": "Welche Schauspielidee findest du am nützlichsten: das magische Wenn, Ziele oder Zuhörübungen?",
+"es": "¿Qué idea de actuación te parece más útil: el si mágico, los objetivos o los ejercicios de escucha?",
+"fr": "Quelle idée de jeu te semble la plus utile : le si magique, les objectifs ou l'écoute ?",
+"it": "Quale idea di recitazione ti sembra più utile: il se magico, gli obiettivi o gli esercizi di ascolto?",
+"pt": "Que ideia de representação te parece mais útil: o se mágico, os objetivos ou os exercícios de escuta?",
+"pt_BR": "Qual ideia de atuação parece mais útil para você: o se mágico, os objetivos ou os exercícios de escuta?"
+}
+},
+{
+"id": "theatre-069",
+"lv": "intermediate",
+"i18n": {
+"en": "Which era of musicals do you enjoy most: golden age classics, mega-musicals or modern hits?",
+"de": "Welche Musical-Ära magst du am meisten: Klassiker des Goldenen Zeitalters, Mega-Musicals oder moderne Hits?",
+"es": "¿Qué época de musicales disfrutas más: los clásicos de la edad de oro, los megamusicales o los éxitos modernos?",
+"fr": "Quelle époque de comédies musicales préfères-tu : l'âge d'or, les méga-productions ou les succès récents ?",
+"it": "Quale epoca del musical preferisci: i classici dell'età d'oro, i mega-musical o i successi moderni?",
+"pt": "Que época dos musicais preferes: os clássicos da idade de ouro, os megamusicais ou os êxitos modernos?",
+"pt_BR": "Qual época dos musicais você prefere: os clássicos da era de ouro, os megamusicais ou os sucessos modernos?"
+}
+},
+{
+"id": "theatre-070",
+"lv": "intermediate",
+"i18n": {
+"en": "What do you think about classic plays being set in modern times?",
+"de": "Was hältst du davon, klassische Stücke in die heutige Zeit zu verlegen?",
+"es": "¿Qué opinas de que las obras clásicas se ambienten en la época actual?",
+"fr": "Que penses-tu des pièces classiques transposées à l'époque moderne ?",
+"it": "Cosa pensi dei classici ambientati ai giorni nostri?",
+"pt": "O que achas de peças clássicas passadas nos tempos de hoje?",
+"pt_BR": "O que você acha de peças clássicas ambientadas nos dias de hoje?"
+}
+},
+{
+"id": "theatre-071",
+"lv": "intermediate",
+"i18n": {
+"en": "Which design element affects you most in a show: lighting, music, set or costumes?",
+"de": "Welches Gestaltungselement wirkt in einer Show am stärksten auf dich: Licht, Musik, Bühnenbild oder Kostüme?",
+"es": "¿Qué elemento de diseño te impacta más en un espectáculo: luz, música, decorado o vestuario?",
+"fr": "Quel élément te touche le plus dans un spectacle : la lumière, la musique, le décor ou les costumes ?",
+"it": "Quale elemento ti colpisce di più in uno spettacolo: luci, musica, scene o costumi?",
+"pt": "Que elemento te marca mais num espetáculo: luz, música, cenário ou figurinos?",
+"pt_BR": "Qual elemento mais te impacta num espetáculo: luz, música, cenário ou figurino?"
+}
+},
+{
+"id": "theatre-072",
+"lv": "intermediate",
+"i18n": {
+"en": "Have you ever seen a jukebox musical? Which band's songs would you build one around?",
+"de": "Hast du schon einmal ein Jukebox-Musical gesehen? Um welche Band würdest du eins bauen?",
+"es": "¿Has visto algún musical con canciones de éxitos? ¿Con las canciones de qué grupo harías uno?",
+"fr": "As-tu déjà vu une comédie musicale sur des tubes existants ? Avec les chansons de quel groupe en ferais-tu une ?",
+"it": "Hai mai visto un jukebox musical? Con le canzoni di quale band ne creeresti uno?",
+"pt": "Já viste um musical feito com êxitos conhecidos? Com as canções de que banda farias um?",
+"pt_BR": "Você já viu um musical feito com sucessos conhecidos? Com as músicas de qual banda você faria um?"
+}
+},
+{
+"id": "theatre-073",
+"lv": "intermediate",
+"i18n": {
+"en": "What do you find more fascinating: how a show is rehearsed or how it is designed?",
+"de": "Was findest du spannender: wie eine Show geprobt oder wie sie gestaltet wird?",
+"es": "¿Qué te fascina más: cómo se ensaya un espectáculo o cómo se diseña?",
+"fr": "Qu'est-ce qui te fascine le plus : la façon dont on répète un spectacle ou celle dont on le conçoit ?",
+"it": "Cosa trovi più affascinante: come si prova uno spettacolo o come lo si progetta?",
+"pt": "O que achas mais fascinante: como se ensaia um espetáculo ou como se desenha?",
+"pt_BR": "O que você acha mais fascinante: como um espetáculo é ensaiado ou como é criado?"
+}
+},
+{
+"id": "theatre-074",
+"lv": "intermediate",
+"i18n": {
+"en": "Which theatre tradition from another country would you love to experience in person?",
+"de": "Welche Theatertradition aus einem anderen Land würdest du gern live erleben?",
+"es": "¿Qué tradición teatral de otro país te encantaría vivir en persona?",
+"fr": "Quelle tradition théâtrale d'un autre pays aimerais-tu découvrir en vrai ?",
+"it": "Quale tradizione teatrale di un altro paese ti piacerebbe vivere di persona?",
+"pt": "Que tradição teatral de outro país adorarias viver ao vivo?",
+"pt_BR": "Qual tradição teatral de outro país você adoraria conhecer ao vivo?"
+}
+},
+{
+"id": "theatre-075",
+"lv": "intermediate",
+"i18n": {
+"en": "Do you enjoy absurd, puzzling plays, or do you prefer a clear story?",
+"de": "Magst du absurde, rätselhafte Stücke, oder ist dir eine klare Geschichte lieber?",
+"es": "¿Disfrutas de las obras absurdas y enigmáticas o prefieres una historia clara?",
+"fr": "Aimes-tu les pièces absurdes et déroutantes, ou préfères-tu une histoire claire ?",
+"it": "Ti piacciono i testi assurdi ed enigmatici, o preferisci una storia chiara?",
+"pt": "Gostas de peças absurdas e enigmáticas, ou preferes uma história clara?",
+"pt_BR": "Você curte peças absurdas e enigmáticas, ou prefere uma história clara?"
+}
+},
+{
+"id": "theatre-076",
+"lv": "intermediate",
+"i18n": {
+"en": "What is your opinion on surtitles: helpful or distracting?",
+"de": "Was hältst du von Übertiteln: hilfreich oder störend?",
+"es": "¿Qué opinas de los sobretítulos: útiles o una distracción?",
+"fr": "Que penses-tu des surtitres : utiles ou gênants ?",
+"it": "Cosa pensi dei sovratitoli: utili o fonte di distrazione?",
+"pt": "Qual é a tua opinião sobre as legendas no teatro: úteis ou uma distração?",
+"pt_BR": "O que você acha das legendas no teatro: úteis ou uma distração?"
+}
+},
+{
+"id": "theatre-077",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you think a song can tell a story better than a spoken scene?",
+"de": "Wie kann ein Song deiner Meinung nach eine Geschichte besser erzählen als eine gesprochene Szene?",
+"es": "¿Cómo crees que una canción puede contar una historia mejor que una escena hablada?",
+"fr": "Comment une chanson peut-elle, selon toi, raconter une histoire mieux qu'une scène parlée ?",
+"it": "Secondo te, come può una canzone raccontare una storia meglio di una scena recitata?",
+"pt": "Como achas que uma canção pode contar uma história melhor do que uma cena falada?",
+"pt_BR": "Como você acha que uma música pode contar uma história melhor do que uma cena falada?"
+}
+},
+{
+"id": "theatre-078",
+"lv": "intermediate",
+"i18n": {
+"en": "Which comic style makes you laugh most on stage: farce, wit or physical comedy?",
+"de": "Welcher Komikstil bringt dich auf der Bühne am meisten zum Lachen: Farce, Wortwitz oder Slapstick?",
+"es": "¿Qué estilo cómico te hace reír más en escena: la farsa, el ingenio o la comedia física?",
+"fr": "Quel style comique te fait le plus rire sur scène : la farce, l'esprit ou le comique physique ?",
+"it": "Quale stile comico ti fa ridere di più a teatro: la farsa, l'arguzia o la comicità fisica?",
+"pt": "Que estilo cómico te faz rir mais em palco: a farsa, o humor verbal ou a comédia física?",
+"pt_BR": "Qual estilo cômico mais te faz rir no palco: a farsa, o humor verbal ou a comédia física?"
+}
+},
+{
+"id": "theatre-079",
+"lv": "intermediate",
+"i18n": {
+"en": "If you joined a community theatre group, what would you hope to gain?",
+"de": "Wenn du einer Laientheatergruppe beitreten würdest, was würdest du dir davon erhoffen?",
+"es": "Si te unieras a un grupo de teatro aficionado, ¿qué esperarías ganar?",
+"fr": "Si tu rejoignais une troupe amateur, qu'aimerais-tu y gagner ?",
+"it": "Se entrassi in una compagnia amatoriale, cosa speri di ottenere?",
+"pt": "Se entrasses num grupo de teatro amador, o que esperavas ganhar?",
+"pt_BR": "Se você entrasse num grupo de teatro amador, o que esperaria ganhar?"
+}
+},
+{
+"id": "theatre-080",
+"lv": "intermediate",
+"i18n": {
+"en": "Which musical number would you love to see staged in a completely new way?",
+"de": "Welche Musicalnummer würdest du gern einmal völlig neu inszeniert sehen?",
+"es": "¿Qué número musical te encantaría ver montado de una forma completamente nueva?",
+"fr": "Quel numéro de comédie musicale aimerais-tu voir mis en scène d'une façon totalement nouvelle ?",
+"it": "Quale numero di un musical ti piacerebbe vedere messo in scena in modo del tutto nuovo?",
+"pt": "Que número musical adorarias ver encenado de uma forma completamente nova?",
+"pt_BR": "Qual número musical você adoraria ver encenado de um jeito totalmente novo?"
+}
+},
+{
+"id": "theatre-081",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you think theatre in your language differs from theatre in English?",
+"de": "Wie unterscheidet sich Theater in deiner Sprache deiner Meinung nach von Theater auf Englisch?",
+"es": "¿En qué crees que se diferencia el teatro en tu idioma del teatro en inglés?",
+"fr": "En quoi le théâtre dans ta langue diffère-t-il, selon toi, du théâtre en anglais ?",
+"it": "Secondo te, in cosa il teatro nella tua lingua è diverso da quello in inglese?",
+"pt": "Em que achas que o teatro na tua língua é diferente do teatro em inglês?",
+"pt_BR": "Em que você acha que o teatro no seu idioma é diferente do teatro em inglês?"
+}
+},
+{
+"id": "theatre-082",
+"lv": "intermediate",
+"i18n": {
+"en": "Would you rather see a dance piece, an opera or a play to discover something new?",
+"de": "Würdest du lieber ein Tanzstück, eine Oper oder ein Schauspiel sehen, um etwas Neues zu entdecken?",
+"es": "Para descubrir algo nuevo, ¿preferirías ver danza, ópera o teatro de texto?",
+"fr": "Pour découvrir quelque chose de nouveau, tu choisirais la danse, l'opéra ou une pièce ?",
+"it": "Per scoprire qualcosa di nuovo, sceglieresti danza, opera o prosa?",
+"pt": "Para descobrir algo novo, preferias ver dança, ópera ou uma peça de teatro?",
+"pt_BR": "Para descobrir algo novo, você preferiria ver dança, ópera ou uma peça de teatro?"
+}
+},
+{
+"id": "theatre-083",
+"lv": "intermediate",
+"i18n": {
+"en": "What do you think keeps a long-running show fresh for the actors?",
+"de": "Was hält eine Show, die jahrelang läuft, für die Schauspieler frisch?",
+"es": "¿Qué crees que mantiene fresco un espectáculo de larga duración para los actores?",
+"fr": "Selon toi, qu'est-ce qui garde un spectacle joué depuis des années vivant pour les comédiens ?",
+"it": "Secondo te, cosa mantiene fresco per gli attori uno spettacolo in scena da anni?",
+"pt": "O que achas que mantém um espetáculo em cena há anos fresco para os atores?",
+"pt_BR": "O que você acha que mantém um espetáculo em cartaz há anos fresco para os atores?"
+}
+},
+{
+"id": "theatre-084",
+"lv": "intermediate",
+"i18n": {
+"en": "Which Shakespeare play would you set in your own city, and how?",
+"de": "Welches Shakespeare-Stück würdest du in deiner Stadt spielen lassen, und wie?",
+"es": "¿Qué obra de Shakespeare ambientarías en tu ciudad y cómo?",
+"fr": "Quelle pièce de Shakespeare situerais-tu dans ta ville, et comment ?",
+"it": "Quale opera di Shakespeare ambienteresti nella tua città, e come?",
+"pt": "Que peça de Shakespeare passarias na tua cidade, e como?",
+"pt_BR": "Qual peça de Shakespeare você ambientaria na sua cidade, e como?"
+}
+},
+{
+"id": "theatre-085",
+"lv": "intermediate",
+"i18n": {
+"en": "Have you ever seen a show that used puppets or masks in a surprising way?",
+"de": "Hast du schon einmal eine Show gesehen, die Puppen oder Masken auf überraschende Weise einsetzte?",
+"es": "¿Has visto alguna vez un espectáculo que usara títeres o máscaras de forma sorprendente?",
+"fr": "As-tu déjà vu un spectacle utilisant des marionnettes ou des masques de façon surprenante ?",
+"it": "Hai mai visto uno spettacolo che usava marionette o maschere in modo sorprendente?",
+"pt": "Já viste um espetáculo que usasse marionetas ou máscaras de forma surpreendente?",
+"pt_BR": "Você já viu um espetáculo que usasse bonecos ou máscaras de um jeito surpreendente?"
+}
+},
+{
+"id": "theatre-086",
+"lv": "advanced",
+"i18n": {
+"en": "If you directed a play, what would your big concept be?",
+"de": "Wenn du Regie führen würdest, was wäre dein großes Konzept?",
+"es": "Si dirigieras una obra, ¿cuál sería tu gran concepto?",
+"fr": "Si tu mettais en scène une pièce, quel serait ton grand parti pris ?",
+"it": "Se dirigessi uno spettacolo, quale sarebbe la tua idea di regia?",
+"pt": "Se encenasses uma peça, qual seria o teu grande conceito?",
+"pt_BR": "Se você dirigisse uma peça, qual seria o seu grande conceito?"
+}
+},
+{
+"id": "theatre-087",
+"lv": "advanced",
+"i18n": {
+"en": "What would your own ten-minute play be about?",
+"de": "Worum würde es in deinem eigenen Zehn-Minuten-Stück gehen?",
+"es": "¿De qué trataría tu propia obra de diez minutos?",
+"fr": "De quoi parlerait ta propre pièce de dix minutes ?",
+"it": "Di cosa parlerebbe il tuo testo teatrale di dieci minuti?",
+"pt": "Sobre o que seria a tua própria peça de dez minutos?",
+"pt_BR": "Sobre o que seria a sua própria peça de dez minutos?"
+}
+},
+{
+"id": "theatre-088",
+"lv": "advanced",
+"i18n": {
+"en": "How would you write a short, kind but honest review of the last show you saw?",
+"de": "Wie würdest du eine kurze, freundliche, aber ehrliche Kritik zur letzten Show schreiben, die du gesehen hast?",
+"es": "¿Cómo escribirías una crítica breve, amable pero sincera del último espectáculo que viste?",
+"fr": "Comment écrirais-tu une critique courte, bienveillante mais honnête du dernier spectacle que tu as vu ?",
+"it": "Come scriveresti una recensione breve, gentile ma sincera dell'ultimo spettacolo che hai visto?",
+"pt": "Como escreverias uma crítica curta, gentil mas honesta do último espetáculo que viste?",
+"pt_BR": "Como você escreveria uma crítica curta, gentil mas sincera do último espetáculo que viu?"
+}
+},
+{
+"id": "theatre-089",
+"lv": "advanced",
+"i18n": {
+"en": "Which unusual place would you choose for a site-specific performance?",
+"de": "Welchen ungewöhnlichen Ort würdest du für eine ortsspezifische Aufführung wählen?",
+"es": "¿Qué lugar insólito elegirías para un espectáculo de sitio específico?",
+"fr": "Quel lieu insolite choisirais-tu pour un spectacle in situ ?",
+"it": "Quale luogo insolito sceglieresti per uno spettacolo site-specific?",
+"pt": "Que lugar invulgar escolherias para um espetáculo pensado para um espaço específico?",
+"pt_BR": "Qual lugar inusitado você escolheria para um espetáculo feito para um espaço específico?"
+}
+},
+{
+"id": "theatre-090",
+"lv": "advanced",
+"i18n": {
+"en": "What do you think about immersive theatre, where the audience walks through the story?",
+"de": "Was hältst du von immersivem Theater, bei dem das Publikum durch die Geschichte läuft?",
+"es": "¿Qué opinas del teatro inmersivo, en el que el público recorre la historia?",
+"fr": "Que penses-tu du théâtre immersif, où le public se déplace dans l'histoire ?",
+"it": "Cosa pensi del teatro immersivo, in cui il pubblico attraversa la storia?",
+"pt": "O que achas do teatro imersivo, em que o público percorre a história?",
+"pt_BR": "O que você acha do teatro imersivo, em que o público percorre a história?"
+}
+},
+{
+"id": "theatre-091",
+"lv": "advanced",
+"i18n": {
+"en": "If you adapted a novel for the stage, which scene would you keep no matter what?",
+"de": "Wenn du einen Roman für die Bühne adaptieren würdest, welche Szene würdest du auf jeden Fall behalten?",
+"es": "Si adaptaras una novela al teatro, ¿qué escena mantendrías pase lo que pase?",
+"fr": "Si tu adaptais un roman pour la scène, quelle scène garderais-tu à tout prix ?",
+"it": "Se adattassi un romanzo per il teatro, quale scena terresti a ogni costo?",
+"pt": "Se adaptasses um romance ao palco, que cena manterias de certeza?",
+"pt_BR": "Se você adaptasse um romance para o palco, qual cena manteria de qualquer jeito?"
+}
+},
+{
+"id": "theatre-092",
+"lv": "advanced",
+"i18n": {
+"en": "How would you cast a classic play to make it feel new?",
+"de": "Wie würdest du ein klassisches Stück besetzen, damit es sich neu anfühlt?",
+"es": "¿Cómo harías el reparto de una obra clásica para que se sintiera nueva?",
+"fr": "Comment distribuerais-tu les rôles d'une pièce classique pour la rendre neuve ?",
+"it": "Come sceglieresti il cast di un classico per farlo sembrare nuovo?",
+"pt": "Como escolherias o elenco de uma peça clássica para que parecesse nova?",
+"pt_BR": "Como você escolheria o elenco de uma peça clássica para ela parecer nova?"
+}
+},
+{
+"id": "theatre-093",
+"lv": "advanced",
+"i18n": {
+"en": "What is a theatre skill you would like to master over the next year?",
+"de": "Welche Theaterfähigkeit möchtest du im nächsten Jahr meistern?",
+"es": "¿Qué habilidad teatral te gustaría dominar el próximo año?",
+"fr": "Quelle compétence théâtrale aimerais-tu maîtriser dans l'année qui vient ?",
+"it": "Quale abilità teatrale ti piacerebbe padroneggiare nel prossimo anno?",
+"pt": "Que competência teatral gostavas de dominar no próximo ano?",
+"pt_BR": "Qual habilidade de teatro você gostaria de dominar no próximo ano?"
+}
+},
+{
+"id": "theatre-094",
+"lv": "advanced",
+"i18n": {
+"en": "How would you describe your personal theatre philosophy in one sentence?",
+"de": "Wie würdest du deine persönliche Theaterphilosophie in einem Satz beschreiben?",
+"es": "¿Cómo describirías tu filosofía teatral personal en una frase?",
+"fr": "Comment résumerais-tu ta philosophie du théâtre en une phrase ?",
+"it": "Come descriveresti la tua filosofia teatrale in una frase?",
+"pt": "Como descreverias a tua filosofia pessoal de teatro numa frase?",
+"pt_BR": "Como você descreveria a sua filosofia pessoal de teatro numa frase?"
+}
+},
+{
+"id": "theatre-095",
+"lv": "advanced",
+"i18n": {
+"en": "Which songs would you place at the key moments if you wrote a musical about your life?",
+"de": "Welche Songs würdest du an die Schlüsselmomente setzen, wenn du ein Musical über dein Leben schreiben würdest?",
+"es": "Si escribieras un musical sobre tu vida, ¿qué canciones pondrías en los momentos clave?",
+"fr": "Si tu écrivais une comédie musicale sur ta vie, quelles chansons mettrais-tu aux moments clés ?",
+"it": "Se scrivessi un musical sulla tua vita, quali canzoni metteresti nei momenti chiave?",
+"pt": "Se escrevesses um musical sobre a tua vida, que canções porias nos momentos-chave?",
+"pt_BR": "Se você escrevesse um musical sobre a sua vida, quais músicas colocaria nos momentos-chave?"
+}
+},
+{
+"id": "theatre-096",
+"lv": "advanced",
+"i18n": {
+"en": "How would you use theatre games to help a group feel more confident?",
+"de": "Wie würdest du Theaterspiele nutzen, um einer Gruppe mehr Selbstvertrauen zu geben?",
+"es": "¿Cómo usarías juegos teatrales para que un grupo ganara confianza?",
+"fr": "Comment utiliserais-tu des jeux de théâtre pour donner confiance à un groupe ?",
+"it": "Come useresti i giochi teatrali per dare più fiducia a un gruppo?",
+"pt": "Como usarias jogos de teatro para ajudar um grupo a ganhar confiança?",
+"pt_BR": "Como você usaria jogos de teatro para ajudar um grupo a ganhar confiança?"
+}
+},
+{
+"id": "theatre-097",
+"lv": "advanced",
+"i18n": {
+"en": "What would you change to make theatre more welcoming for everyone?",
+"de": "Was würdest du ändern, damit Theater für alle einladender wird?",
+"es": "¿Qué cambiarías para que el teatro fuera más acogedor para todos?",
+"fr": "Que changerais-tu pour rendre le théâtre plus accueillant pour tous ?",
+"it": "Cosa cambieresti per rendere il teatro più accogliente per tutti?",
+"pt": "O que mudarias para tornar o teatro mais acolhedor para todos?",
+"pt_BR": "O que você mudaria para tornar o teatro mais acolhedor para todos?"
+}
+},
+{
+"id": "theatre-098",
+"lv": "advanced",
+"i18n": {
+"en": "How do you imagine theatre will change in the future with new technology?",
+"de": "Wie wird sich das Theater deiner Meinung nach durch neue Technik in Zukunft verändern?",
+"es": "¿Cómo imaginas que cambiará el teatro en el futuro con las nuevas tecnologías?",
+"fr": "Comment imagines-tu que le théâtre évoluera avec les nouvelles technologies ?",
+"it": "Come immagini che cambierà il teatro in futuro con le nuove tecnologie?",
+"pt": "Como imaginas que o teatro vai mudar no futuro com as novas tecnologias?",
+"pt_BR": "Como você imagina que o teatro vai mudar no futuro com as novas tecnologias?"
+}
+},
+{
+"id": "theatre-099",
+"lv": "advanced",
+"i18n": {
+"en": "Which theatre experience from our path would you like to share with a friend, and why?",
+"de": "Welches Theatererlebnis aus deinem Weg möchtest du mit einem Freund teilen, und warum?",
+"es": "¿Qué experiencia teatral de este camino te gustaría compartir con un amigo y por qué?",
+"fr": "Quelle expérience de théâtre de ce parcours aimerais-tu partager avec un ami, et pourquoi ?",
+"it": "Quale esperienza teatrale di questo percorso ti piacerebbe condividere con un amico, e perché?",
+"pt": "Que experiência de teatro deste percurso gostavas de partilhar com um amigo, e porquê?",
+"pt_BR": "Qual experiência de teatro desta jornada você gostaria de compartilhar com um amigo, e por quê?"
+}
+},
+{
+"id": "theatre-100",
+"lv": "advanced",
+"i18n": {
+"en": "If you could interview one theatre maker, past or present, what would you ask them?",
+"de": "Wenn du eine Theaterpersönlichkeit von heute oder früher interviewen könntest, was würdest du sie fragen?",
+"es": "Si pudieras entrevistar a un creador de teatro, actual o del pasado, ¿qué le preguntarías?",
+"fr": "Si tu pouvais interviewer un artiste de théâtre, d'hier ou d'aujourd'hui, que lui demanderais-tu ?",
+"it": "Se potessi intervistare un artista di teatro, di oggi o del passato, cosa gli chiederesti?",
+"pt": "Se pudesses entrevistar um criador de teatro, atual ou do passado, o que lhe perguntarias?",
+"pt_BR": "Se você pudesse entrevistar um artista de teatro, atual ou do passado, o que perguntaria?"
+}
+}
+]
+}

@@ -1,0 +1,1305 @@
+{
+"topic": "board_games",
+"questions": [
+{
+"id": "board_games-001",
+"lv": "any",
+"i18n": {
+"en": "What is your all-time favourite board game, and why?",
+"de": "Was ist dein Lieblingsbrettspiel aller Zeiten, und warum?",
+"es": "¿Cuál es tu juego de mesa favorito de todos los tiempos y por qué?",
+"fr": "Quel est ton jeu de société préféré de tous les temps, et pourquoi ?",
+"it": "Qual è il tuo gioco da tavolo preferito di sempre, e perché?",
+"pt": "Qual é o teu jogo de tabuleiro preferido de sempre, e porquê?",
+"pt_BR": "Qual é o seu jogo de tabuleiro favorito de todos os tempos, e por quê?"
+}
+},
+{
+"id": "board_games-002",
+"lv": "any",
+"i18n": {
+"en": "Which board game did you play the most as a child?",
+"de": "Welches Brettspiel hast du als Kind am meisten gespielt?",
+"es": "¿A qué juego de mesa jugabas más de pequeño?",
+"fr": "À quel jeu de société jouais-tu le plus quand tu étais enfant ?",
+"it": "A quale gioco da tavolo giocavi di più da bambino?",
+"pt": "A que jogo de tabuleiro jogavas mais quando eras criança?",
+"pt_BR": "Qual jogo de tabuleiro você mais jogava quando era criança?"
+}
+},
+{
+"id": "board_games-003",
+"lv": "any",
+"i18n": {
+"en": "Do you prefer games of luck or games of strategy?",
+"de": "Magst du lieber Glücksspiele oder Strategiespiele?",
+"es": "¿Prefieres los juegos de azar o los de estrategia?",
+"fr": "Préfères-tu les jeux de hasard ou les jeux de stratégie ?",
+"it": "Preferisci i giochi di fortuna o quelli di strategia?",
+"pt": "Preferes jogos de sorte ou de estratégia?",
+"pt_BR": "Você prefere jogos de sorte ou de estratégia?"
+}
+},
+{
+"id": "board_games-004",
+"lv": "any",
+"i18n": {
+"en": "Who do you usually play board games with?",
+"de": "Mit wem spielst du normalerweise Brettspiele?",
+"es": "¿Con quién sueles jugar a juegos de mesa?",
+"fr": "Avec qui joues-tu aux jeux de société d'habitude ?",
+"it": "Con chi giochi di solito ai giochi da tavolo?",
+"pt": "Com quem costumas jogar jogos de tabuleiro?",
+"pt_BR": "Com quem você costuma jogar jogos de tabuleiro?"
+}
+},
+{
+"id": "board_games-005",
+"lv": "any",
+"i18n": {
+"en": "Do you like competitive games or cooperative games more?",
+"de": "Magst du kompetitive oder kooperative Spiele lieber?",
+"es": "¿Te gustan más los juegos competitivos o los cooperativos?",
+"fr": "Préfères-tu les jeux compétitifs ou les jeux coopératifs ?",
+"it": "Ti piacciono di più i giochi competitivi o quelli cooperativi?",
+"pt": "Gostas mais de jogos competitivos ou cooperativos?",
+"pt_BR": "Você gosta mais de jogos competitivos ou cooperativos?"
+}
+},
+{
+"id": "board_games-006",
+"lv": "any",
+"i18n": {
+"en": "What word game do you enjoy the most?",
+"de": "Welches Wortspiel macht dir am meisten Spaß?",
+"es": "¿Qué juego de palabras disfrutas más?",
+"fr": "Quel jeu de mots préfères-tu ?",
+"it": "Quale gioco di parole ti piace di più?",
+"pt": "Que jogo de palavras gostas mais?",
+"pt_BR": "Qual jogo de palavras você mais curte?"
+}
+},
+{
+"id": "board_games-007",
+"lv": "any",
+"i18n": {
+"en": "Are you a good winner and a good loser? Be honest!",
+"de": "Bist du ein guter Gewinner und ein guter Verlierer? Sei ehrlich!",
+"es": "¿Sabes ganar y perder con deportividad? ¡Sé sincero!",
+"fr": "Es-tu bon gagnant et bon perdant ? Sois honnête !",
+"it": "Sai vincere e perdere con stile? Sii sincero!",
+"pt": "Sabes ganhar e perder com desportivismo? Sê sincero!",
+"pt_BR": "Você sabe ganhar e perder com espírito esportivo? Seja sincero!"
+}
+},
+{
+"id": "board_games-008",
+"lv": "any",
+"i18n": {
+"en": "Which game always makes your group laugh?",
+"de": "Welches Spiel bringt deine Gruppe immer zum Lachen?",
+"es": "¿Qué juego siempre hace reír a tu grupo?",
+"fr": "Quel jeu fait toujours rire ton groupe ?",
+"it": "Quale gioco fa sempre ridere il tuo gruppo?",
+"pt": "Que jogo faz sempre o teu grupo rir?",
+"pt_BR": "Qual jogo sempre faz o seu grupo rir?"
+}
+},
+{
+"id": "board_games-009",
+"lv": "any",
+"i18n": {
+"en": "Do you know how to play chess? How did you learn?",
+"de": "Kannst du Schach spielen? Wie hast du es gelernt?",
+"es": "¿Sabes jugar al ajedrez? ¿Cómo aprendiste?",
+"fr": "Sais-tu jouer aux échecs ? Comment as-tu appris ?",
+"it": "Sai giocare a scacchi? Come hai imparato?",
+"pt": "Sabes jogar xadrez? Como aprendeste?",
+"pt_BR": "Você sabe jogar xadrez? Como aprendeu?"
+}
+},
+{
+"id": "board_games-010",
+"lv": "any",
+"i18n": {
+"en": "What is a traditional game that people play in your country?",
+"de": "Welches traditionelle Spiel spielt man in deinem Land?",
+"es": "¿Qué juego tradicional se juega en tu país?",
+"fr": "Quel jeu traditionnel joue-t-on dans ton pays ?",
+"it": "Qual è un gioco tradizionale che si gioca nel tuo paese?",
+"pt": "Que jogo tradicional se joga no teu país?",
+"pt_BR": "Qual jogo tradicional as pessoas jogam no seu país?"
+}
+},
+{
+"id": "board_games-011",
+"lv": "any",
+"i18n": {
+"en": "How often do you play board games?",
+"de": "Wie oft spielst du Brettspiele?",
+"es": "¿Con qué frecuencia juegas a juegos de mesa?",
+"fr": "À quelle fréquence joues-tu aux jeux de société ?",
+"it": "Quanto spesso giochi ai giochi da tavolo?",
+"pt": "Com que frequência jogas jogos de tabuleiro?",
+"pt_BR": "Com que frequência você joga jogos de tabuleiro?"
+}
+},
+{
+"id": "board_games-012",
+"lv": "any",
+"i18n": {
+"en": "Do you prefer short games or long games that take all evening?",
+"de": "Magst du lieber kurze Spiele oder lange, die den ganzen Abend dauern?",
+"es": "¿Prefieres partidas cortas o juegos largos que duran toda la noche?",
+"fr": "Préfères-tu les parties courtes ou les longs jeux qui durent toute la soirée ?",
+"it": "Preferisci partite brevi o giochi lunghi che durano tutta la sera?",
+"pt": "Preferes jogos curtos ou longos que duram a noite toda?",
+"pt_BR": "Você prefere jogos curtos ou longos que duram a noite toda?"
+}
+},
+{
+"id": "board_games-013",
+"lv": "any",
+"i18n": {
+"en": "Which game would you teach to a friend from another country?",
+"de": "Welches Spiel würdest du einem Freund aus einem anderen Land beibringen?",
+"es": "¿Qué juego enseñarías a un amigo de otro país?",
+"fr": "Quel jeu apprendrais-tu à un ami venu d'un autre pays ?",
+"it": "Quale gioco insegneresti a un amico di un altro paese?",
+"pt": "Que jogo ensinarias a um amigo de outro país?",
+"pt_BR": "Qual jogo você ensinaria a um amigo de outro país?"
+}
+},
+{
+"id": "board_games-014",
+"lv": "any",
+"i18n": {
+"en": "What is your favourite card game?",
+"de": "Was ist dein Lieblingskartenspiel?",
+"es": "¿Cuál es tu juego de cartas favorito?",
+"fr": "Quel est ton jeu de cartes préféré ?",
+"it": "Qual è il tuo gioco di carte preferito?",
+"pt": "Qual é o teu jogo de cartas preferido?",
+"pt_BR": "Qual é o seu jogo de cartas favorito?"
+}
+},
+{
+"id": "board_games-015",
+"lv": "any",
+"i18n": {
+"en": "Do you enjoy crosswords or other word puzzles?",
+"de": "Machst du gern Kreuzworträtsel oder andere Worträtsel?",
+"es": "¿Te gustan los crucigramas u otros pasatiempos de palabras?",
+"fr": "Aimes-tu les mots croisés ou d'autres jeux de lettres ?",
+"it": "Ti piacciono i cruciverba o altri giochi di parole?",
+"pt": "Gostas de palavras cruzadas ou de outros passatempos de palavras?",
+"pt_BR": "Você gosta de palavras cruzadas ou outros passatempos com palavras?"
+}
+},
+{
+"id": "board_games-016",
+"lv": "any",
+"i18n": {
+"en": "Which board game brings back the best memories for you?",
+"de": "Welches Brettspiel weckt bei dir die schönsten Erinnerungen?",
+"es": "¿Qué juego de mesa te trae los mejores recuerdos?",
+"fr": "Quel jeu de société te rappelle les meilleurs souvenirs ?",
+"it": "Quale gioco da tavolo ti riporta i ricordi più belli?",
+"pt": "Que jogo de tabuleiro te traz as melhores memórias?",
+"pt_BR": "Qual jogo de tabuleiro te traz as melhores lembranças?"
+}
+},
+{
+"id": "board_games-017",
+"lv": "any",
+"i18n": {
+"en": "What snacks are perfect for a game night?",
+"de": "Welche Snacks sind perfekt für einen Spieleabend?",
+"es": "¿Qué picoteo es perfecto para una noche de juegos?",
+"fr": "Quels en-cas sont parfaits pour une soirée jeux ?",
+"it": "Quali snack sono perfetti per una serata di giochi?",
+"pt": "Que petiscos são perfeitos para uma noite de jogos?",
+"pt_BR": "Quais petiscos são perfeitos para uma noite de jogos?"
+}
+},
+{
+"id": "board_games-018",
+"lv": "any",
+"i18n": {
+"en": "Do you like party games with big groups? Which ones?",
+"de": "Magst du Partyspiele in großen Gruppen? Welche?",
+"es": "¿Te gustan los juegos de grupo para fiestas? ¿Cuáles?",
+"fr": "Aimes-tu les jeux d'ambiance en grand groupe ? Lesquels ?",
+"it": "Ti piacciono i party game con tanti giocatori? Quali?",
+"pt": "Gostas de jogos de grupo para festas? Quais?",
+"pt_BR": "Você curte jogos de festa com grupos grandes? Quais?"
+}
+},
+{
+"id": "board_games-019",
+"lv": "any",
+"i18n": {
+"en": "Have you ever played a game online with friends who live far away?",
+"de": "Hast du schon mal online mit weit entfernten Freunden gespielt?",
+"es": "¿Alguna vez has jugado en línea con amigos que viven lejos?",
+"fr": "As-tu déjà joué en ligne avec des amis qui habitent loin ?",
+"it": "Hai mai giocato online con amici che vivono lontano?",
+"pt": "Já jogaste online com amigos que vivem longe?",
+"pt_BR": "Você já jogou online com amigos que moram longe?"
+}
+},
+{
+"id": "board_games-020",
+"lv": "any",
+"i18n": {
+"en": "Which game would you take with you on a long trip?",
+"de": "Welches Spiel würdest du auf eine lange Reise mitnehmen?",
+"es": "¿Qué juego llevarías en un viaje largo?",
+"fr": "Quel jeu emporterais-tu pour un long voyage ?",
+"it": "Quale gioco porteresti in un lungo viaggio?",
+"pt": "Que jogo levarias numa viagem longa?",
+"pt_BR": "Qual jogo você levaria numa viagem longa?"
+}
+},
+{
+"id": "board_games-021",
+"lv": "any",
+"i18n": {
+"en": "Do you like to read the rules yourself or have someone explain them?",
+"de": "Liest du die Regeln lieber selbst oder lässt du sie dir erklären?",
+"es": "¿Prefieres leer tú las reglas o que alguien te las explique?",
+"fr": "Préfères-tu lire les règles toi-même ou qu'on te les explique ?",
+"it": "Preferisci leggere tu le regole o fartele spiegare?",
+"pt": "Preferes ler as regras tu mesmo ou que alguém tas explique?",
+"pt_BR": "Você prefere ler as regras ou que alguém explique para você?"
+}
+},
+{
+"id": "board_games-022",
+"lv": "any",
+"i18n": {
+"en": "What is the best game you have played for just two people?",
+"de": "Was ist das beste Spiel für zwei Personen, das du gespielt hast?",
+"es": "¿Cuál es el mejor juego para dos personas que has jugado?",
+"fr": "Quel est le meilleur jeu à deux auquel tu as joué ?",
+"it": "Qual è il miglior gioco per due persone che hai provato?",
+"pt": "Qual é o melhor jogo para duas pessoas que já jogaste?",
+"pt_BR": "Qual é o melhor jogo para duas pessoas que você já jogou?"
+}
+},
+{
+"id": "board_games-023",
+"lv": "any",
+"i18n": {
+"en": "Do you have any house rules in your family's games?",
+"de": "Gibt es in deiner Familie eigene Hausregeln bei Spielen?",
+"es": "¿Tenéis reglas caseras en los juegos de tu familia?",
+"fr": "As-tu des règles maison dans les jeux de ta famille ?",
+"it": "Avete regole di casa nei giochi della tua famiglia?",
+"pt": "Têm regras da casa nos jogos da tua família?",
+"pt_BR": "Vocês têm regras da casa nos jogos da sua família?"
+}
+},
+{
+"id": "board_games-024",
+"lv": "any",
+"i18n": {
+"en": "Which game do you always want to win the most?",
+"de": "Bei welchem Spiel willst du immer am meisten gewinnen?",
+"es": "¿En qué juego siempre quieres ganar a toda costa?",
+"fr": "À quel jeu as-tu toujours le plus envie de gagner ?",
+"it": "In quale gioco vuoi sempre vincere più di tutto?",
+"pt": "Em que jogo queres sempre ganhar mais do que tudo?",
+"pt_BR": "Em qual jogo você sempre quer ganhar mais do que tudo?"
+}
+},
+{
+"id": "board_games-025",
+"lv": "any",
+"i18n": {
+"en": "How do you feel about games that use dice?",
+"de": "Was hältst du von Spielen mit Würfeln?",
+"es": "¿Qué opinas de los juegos que usan dados?",
+"fr": "Que penses-tu des jeux qui utilisent des dés ?",
+"it": "Cosa pensi dei giochi che usano i dadi?",
+"pt": "O que achas dos jogos com dados?",
+"pt_BR": "O que você acha de jogos com dados?"
+}
+},
+{
+"id": "board_games-026",
+"lv": "any",
+"i18n": {
+"en": "What is the most unusual game you have ever tried?",
+"de": "Was ist das ungewöhnlichste Spiel, das du je ausprobiert hast?",
+"es": "¿Cuál es el juego más curioso que has probado?",
+"fr": "Quel est le jeu le plus insolite que tu aies essayé ?",
+"it": "Qual è il gioco più insolito che tu abbia mai provato?",
+"pt": "Qual é o jogo mais invulgar que já experimentaste?",
+"pt_BR": "Qual é o jogo mais diferente que você já experimentou?"
+}
+},
+{
+"id": "board_games-027",
+"lv": "any",
+"i18n": {
+"en": "Do you prefer games with beautiful art or simple, clean designs?",
+"de": "Magst du lieber Spiele mit schönen Illustrationen oder schlichtem Design?",
+"es": "¿Prefieres juegos con ilustraciones bonitas o con un diseño sencillo y limpio?",
+"fr": "Préfères-tu les jeux aux belles illustrations ou au design simple et épuré ?",
+"it": "Preferisci giochi con belle illustrazioni o con un design semplice e pulito?",
+"pt": "Preferes jogos com ilustrações bonitas ou com um design simples e limpo?",
+"pt_BR": "Você prefere jogos com ilustrações bonitas ou com design simples e limpo?"
+}
+},
+{
+"id": "board_games-028",
+"lv": "any",
+"i18n": {
+"en": "Which game would be perfect for a rainy afternoon?",
+"de": "Welches Spiel wäre perfekt für einen verregneten Nachmittag?",
+"es": "¿Qué juego sería perfecto para una tarde de lluvia?",
+"fr": "Quel jeu serait parfait pour un après-midi pluvieux ?",
+"it": "Quale gioco sarebbe perfetto per un pomeriggio di pioggia?",
+"pt": "Que jogo seria perfeito para uma tarde de chuva?",
+"pt_BR": "Qual jogo seria perfeito para uma tarde chuvosa?"
+}
+},
+{
+"id": "board_games-029",
+"lv": "any",
+"i18n": {
+"en": "Do you enjoy guessing games like charades or twenty questions?",
+"de": "Magst du Ratespiele wie Scharade oder zwanzig Fragen?",
+"es": "¿Te gustan los juegos de adivinar, como las mímicas o las veinte preguntas?",
+"fr": "Aimes-tu les jeux de devinettes comme le mime ou les vingt questions ?",
+"it": "Ti piacciono i giochi di indovinelli come i mimi o le venti domande?",
+"pt": "Gostas de jogos de adivinhar, como mímica ou vinte perguntas?",
+"pt_BR": "Você curte jogos de adivinhação, como mímica ou vinte perguntas?"
+}
+},
+{
+"id": "board_games-030",
+"lv": "any",
+"i18n": {
+"en": "Have you ever visited a board game cafe? What was it like?",
+"de": "Warst du schon mal in einem Brettspielcafé? Wie war es?",
+"es": "¿Has ido alguna vez a un café de juegos de mesa? ¿Qué tal fue?",
+"fr": "Es-tu déjà allé dans un bar à jeux ? Comment c'était ?",
+"it": "Sei mai stato in un caffè ludico? Com'era?",
+"pt": "Já foste a um café de jogos de tabuleiro? Como foi?",
+"pt_BR": "Você já foi a um café de jogos de tabuleiro? Como foi?"
+}
+},
+{
+"id": "board_games-031",
+"lv": "any",
+"i18n": {
+"en": "What makes a game night really fun for you?",
+"de": "Was macht einen Spieleabend für dich richtig lustig?",
+"es": "¿Qué hace que una noche de juegos sea realmente divertida para ti?",
+"fr": "Qu'est-ce qui rend une soirée jeux vraiment amusante pour toi ?",
+"it": "Cosa rende davvero divertente una serata di giochi per te?",
+"pt": "O que torna uma noite de jogos mesmo divertida para ti?",
+"pt_BR": "O que torna uma noite de jogos realmente divertida para você?"
+}
+},
+{
+"id": "board_games-032",
+"lv": "any",
+"i18n": {
+"en": "Which game do you think is perfect for families with kids?",
+"de": "Welches Spiel ist deiner Meinung nach perfekt für Familien mit Kindern?",
+"es": "¿Qué juego crees que es perfecto para familias con niños?",
+"fr": "Quel jeu est parfait pour les familles avec enfants, selon toi ?",
+"it": "Quale gioco secondo te è perfetto per famiglie con bambini?",
+"pt": "Que jogo achas perfeito para famílias com crianças?",
+"pt_BR": "Qual jogo você acha perfeito para famílias com crianças?"
+}
+},
+{
+"id": "board_games-033",
+"lv": "any",
+"i18n": {
+"en": "Do you like puzzles where you must find a hidden word?",
+"de": "Magst du Rätsel, bei denen man ein verstecktes Wort finden muss?",
+"es": "¿Te gustan los acertijos en los que hay que encontrar una palabra oculta?",
+"fr": "Aimes-tu les énigmes où il faut trouver un mot caché ?",
+"it": "Ti piacciono gli enigmi in cui bisogna trovare una parola nascosta?",
+"pt": "Gostas de enigmas em que é preciso descobrir uma palavra escondida?",
+"pt_BR": "Você gosta de enigmas em que é preciso achar uma palavra escondida?"
+}
+},
+{
+"id": "board_games-034",
+"lv": "any",
+"i18n": {
+"en": "Which game piece or component do you love to hold?",
+"de": "Welche Spielfigur oder welches Spielmaterial hältst du am liebsten in der Hand?",
+"es": "¿Qué pieza o componente de un juego te encanta tener en la mano?",
+"fr": "Quel pion ou quel élément de jeu adores-tu tenir en main ?",
+"it": "Quale pedina o componente di gioco ti piace tenere in mano?",
+"pt": "Que peça ou componente de jogo adoras ter na mão?",
+"pt_BR": "Qual peça ou componente de jogo você adora segurar?"
+}
+},
+{
+"id": "board_games-035",
+"lv": "any",
+"i18n": {
+"en": "Would you rather play a classic game or try a brand-new one?",
+"de": "Spielst du lieber einen Klassiker oder probierst etwas ganz Neues?",
+"es": "¿Prefieres jugar a un clásico o probar uno totalmente nuevo?",
+"fr": "Préfères-tu jouer à un classique ou essayer un tout nouveau jeu ?",
+"it": "Preferisci giocare a un classico o provare un gioco nuovissimo?",
+"pt": "Preferes jogar um clássico ou experimentar um jogo novinho?",
+"pt_BR": "Você prefere jogar um clássico ou testar um jogo novinho?"
+}
+},
+{
+"id": "board_games-036",
+"lv": "any",
+"i18n": {
+"en": "What is a word you love because it is fun to say?",
+"de": "Welches Wort magst du, weil es Spaß macht, es auszusprechen?",
+"es": "¿Qué palabra te encanta porque es divertida de decir?",
+"fr": "Quel mot adores-tu parce qu'il est amusant à prononcer ?",
+"it": "Qual è una parola che ami perché è divertente da dire?",
+"pt": "Que palavra adoras porque é divertida de dizer?",
+"pt_BR": "Qual palavra você adora porque é divertida de falar?"
+}
+},
+{
+"id": "board_games-037",
+"lv": "any",
+"i18n": {
+"en": "Do you remember the first time you won a game against an adult?",
+"de": "Erinnerst du dich, wie du zum ersten Mal gegen einen Erwachsenen gewonnen hast?",
+"es": "¿Recuerdas la primera vez que le ganaste una partida a un adulto?",
+"fr": "Te souviens-tu de la première fois où tu as battu un adulte à un jeu ?",
+"it": "Ricordi la prima volta che hai battuto un adulto a un gioco?",
+"pt": "Lembras-te da primeira vez que ganhaste um jogo a um adulto?",
+"pt_BR": "Você lembra da primeira vez que ganhou um jogo de um adulto?"
+}
+},
+{
+"id": "board_games-038",
+"lv": "any",
+"i18n": {
+"en": "Which game would you love to play with your Buddy right now?",
+"de": "Welches Spiel würdest du jetzt gern mit deinem Buddy spielen?",
+"es": "¿A qué juego te encantaría jugar ahora mismo con tu Buddy?",
+"fr": "À quel jeu aimerais-tu jouer tout de suite avec ton Buddy ?",
+"it": "A quale gioco ti piacerebbe giocare adesso con il tuo Buddy?",
+"pt": "Que jogo gostavas de jogar agora mesmo com o teu Buddy?",
+"pt_BR": "Qual jogo você adoraria jogar agora mesmo com seu Buddy?"
+}
+},
+{
+"id": "board_games-039",
+"lv": "any",
+"i18n": {
+"en": "How do games help you relax or connect with people?",
+"de": "Wie helfen dir Spiele, dich zu entspannen oder mit Menschen in Kontakt zu kommen?",
+"es": "¿Cómo te ayudan los juegos a relajarte o a conectar con la gente?",
+"fr": "Comment les jeux t'aident-ils à te détendre ou à créer des liens ?",
+"it": "In che modo i giochi ti aiutano a rilassarti o a legare con le persone?",
+"pt": "De que forma os jogos te ajudam a relaxar ou a criar laços com as pessoas?",
+"pt_BR": "Como os jogos ajudam você a relaxar ou a se conectar com as pessoas?"
+}
+},
+{
+"id": "board_games-040",
+"lv": "any",
+"i18n": {
+"en": "Have you ever played Scrabble or a similar tile word game?",
+"de": "Hast du schon mal Scrabble oder ein ähnliches Buchstabenspiel gespielt?",
+"es": "¿Has jugado alguna vez al Scrabble o a un juego de letras parecido?",
+"fr": "As-tu déjà joué au Scrabble ou à un jeu de lettres similaire ?",
+"it": "Hai mai giocato a Scarabeo o a un gioco di lettere simile?",
+"pt": "Já jogaste Scrabble ou um jogo de letras parecido?",
+"pt_BR": "Você já jogou Scrabble ou algum jogo de letras parecido?"
+}
+},
+{
+"id": "board_games-041",
+"lv": "beginner",
+"i18n": {
+"en": "What game have you played that comes from another culture?",
+"de": "Welches Spiel aus einer anderen Kultur hast du schon gespielt?",
+"es": "¿Qué juego de otra cultura has jugado?",
+"fr": "À quel jeu venu d'une autre culture as-tu déjà joué ?",
+"it": "Quale gioco di un'altra cultura hai giocato?",
+"pt": "Que jogo de outra cultura já jogaste?",
+"pt_BR": "Qual jogo de outra cultura você já jogou?"
+}
+},
+{
+"id": "board_games-042",
+"lv": "beginner",
+"i18n": {
+"en": "Do you enjoy rhyming games or making up silly verses?",
+"de": "Magst du Reimspiele oder das Erfinden lustiger Verse?",
+"es": "¿Te gustan los juegos de rimas o inventar versos divertidos?",
+"fr": "Aimes-tu les jeux de rimes ou inventer des vers rigolos ?",
+"it": "Ti piacciono i giochi di rime o inventare versi buffi?",
+"pt": "Gostas de jogos de rimas ou de inventar versos engraçados?",
+"pt_BR": "Você curte jogos de rima ou inventar versinhos engraçados?"
+}
+},
+{
+"id": "board_games-043",
+"lv": "beginner",
+"i18n": {
+"en": "Which game do you find easiest to explain to new players?",
+"de": "Welches Spiel findest du am leichtesten, neuen Spielern zu erklären?",
+"es": "¿Qué juego te resulta más fácil de explicar a jugadores nuevos?",
+"fr": "Quel jeu trouves-tu le plus facile à expliquer aux débutants ?",
+"it": "Quale gioco trovi più facile da spiegare ai nuovi giocatori?",
+"pt": "Que jogo achas mais fácil de explicar a novos jogadores?",
+"pt_BR": "Qual jogo você acha mais fácil de explicar para novos jogadores?"
+}
+},
+{
+"id": "board_games-044",
+"lv": "beginner",
+"i18n": {
+"en": "Have you tried a cooperative game where everyone wins or loses together?",
+"de": "Hast du schon ein kooperatives Spiel probiert, bei dem alle gemeinsam gewinnen oder verlieren?",
+"es": "¿Has probado un juego cooperativo en el que todos ganan o pierden juntos?",
+"fr": "As-tu essayé un jeu coopératif où tout le monde gagne ou perd ensemble ?",
+"it": "Hai provato un gioco cooperativo in cui si vince o si perde tutti insieme?",
+"pt": "Já experimentaste um jogo cooperativo em que todos ganham ou perdem juntos?",
+"pt_BR": "Você já testou um jogo cooperativo em que todos ganham ou perdem juntos?"
+}
+},
+{
+"id": "board_games-045",
+"lv": "beginner",
+"i18n": {
+"en": "How do you usually choose which game to play in a group?",
+"de": "Wie wählt ihr in der Gruppe normalerweise das Spiel aus?",
+"es": "¿Cómo soléis elegir a qué jugar en grupo?",
+"fr": "Comment choisissez-vous d'habitude le jeu à faire en groupe ?",
+"it": "Come scegliete di solito a cosa giocare in gruppo?",
+"pt": "Como costumam escolher o jogo a jogar em grupo?",
+"pt_BR": "Como vocês costumam escolher o jogo para jogar em grupo?"
+}
+},
+{
+"id": "board_games-046",
+"lv": "beginner",
+"i18n": {
+"en": "Do you like games where you draw pictures for others to guess?",
+"de": "Magst du Spiele, bei denen man Bilder zeichnet, die andere erraten?",
+"es": "¿Te gustan los juegos en los que dibujas para que otros adivinen?",
+"fr": "Aimes-tu les jeux où l'on dessine pour faire deviner les autres ?",
+"it": "Ti piacciono i giochi in cui disegni per far indovinare gli altri?",
+"pt": "Gostas de jogos em que desenhas para os outros adivinharem?",
+"pt_BR": "Você gosta de jogos em que desenha para os outros adivinharem?"
+}
+},
+{
+"id": "board_games-047",
+"lv": "beginner",
+"i18n": {
+"en": "Which classic game do you think everyone should know?",
+"de": "Welchen Spieleklassiker sollte deiner Meinung nach jeder kennen?",
+"es": "¿Qué juego clásico crees que todo el mundo debería conocer?",
+"fr": "Quel jeu classique tout le monde devrait-il connaître, selon toi ?",
+"it": "Quale gioco classico secondo te dovrebbero conoscere tutti?",
+"pt": "Que jogo clássico achas que toda a gente devia conhecer?",
+"pt_BR": "Qual jogo clássico você acha que todo mundo deveria conhecer?"
+}
+},
+{
+"id": "board_games-048",
+"lv": "beginner",
+"i18n": {
+"en": "Do you prefer games with lots of talking or quiet thinking games?",
+"de": "Magst du lieber Spiele mit viel Reden oder ruhige Denkspiele?",
+"es": "¿Prefieres juegos con mucha conversación o juegos tranquilos de pensar?",
+"fr": "Préfères-tu les jeux où l'on parle beaucoup ou les jeux de réflexion calmes ?",
+"it": "Preferisci giochi in cui si parla tanto o giochi di riflessione silenziosi?",
+"pt": "Preferes jogos com muita conversa ou jogos calmos de raciocínio?",
+"pt_BR": "Você prefere jogos com muita conversa ou jogos tranquilos de raciocínio?"
+}
+},
+{
+"id": "board_games-049",
+"lv": "beginner",
+"i18n": {
+"en": "What is the oldest game you know of, and have you ever played it?",
+"de": "Welches ist das älteste Spiel, das du kennst, und hast du es je gespielt?",
+"es": "¿Cuál es el juego más antiguo que conoces? ¿Lo has jugado alguna vez?",
+"fr": "Quel est le plus vieux jeu que tu connaisses, et y as-tu déjà joué ?",
+"it": "Qual è il gioco più antico che conosci, e ci hai mai giocato?",
+"pt": "Qual é o jogo mais antigo que conheces, e já o jogaste?",
+"pt_BR": "Qual é o jogo mais antigo que você conhece, e já jogou?"
+}
+},
+{
+"id": "board_games-050",
+"lv": "beginner",
+"i18n": {
+"en": "Do you like games with a timer that make you hurry?",
+"de": "Magst du Spiele mit Zeitdruck, bei denen man sich beeilen muss?",
+"es": "¿Te gustan los juegos con temporizador que te obligan a darte prisa?",
+"fr": "Aimes-tu les jeux avec un sablier qui te pressent ?",
+"it": "Ti piacciono i giochi a tempo che ti mettono fretta?",
+"pt": "Gostas de jogos com temporizador que te obrigam a despachar-te?",
+"pt_BR": "Você gosta de jogos com cronômetro que fazem você correr?"
+}
+},
+{
+"id": "board_games-051",
+"lv": "beginner",
+"i18n": {
+"en": "Which board game do you own that you love the most?",
+"de": "Welches Brettspiel aus deiner Sammlung liebst du am meisten?",
+"es": "¿Qué juego de mesa que tienes en casa te gusta más?",
+"fr": "Quel jeu de société que tu possèdes préfères-tu ?",
+"it": "Quale gioco da tavolo che possiedi ami di più?",
+"pt": "Que jogo de tabuleiro que tens em casa adoras mais?",
+"pt_BR": "Qual jogo de tabuleiro que você tem em casa você mais ama?"
+}
+},
+{
+"id": "board_games-052",
+"lv": "beginner",
+"i18n": {
+"en": "How do you feel when a game is very close until the last turn?",
+"de": "Wie fühlst du dich, wenn ein Spiel bis zum letzten Zug knapp ist?",
+"es": "¿Cómo te sientes cuando una partida está muy reñida hasta el último turno?",
+"fr": "Que ressens-tu quand une partie reste serrée jusqu'au dernier tour ?",
+"it": "Come ti senti quando una partita resta in bilico fino all'ultimo turno?",
+"pt": "Como te sentes quando um jogo está renhido até à última jogada?",
+"pt_BR": "Como você se sente quando um jogo fica acirrado até a última rodada?"
+}
+},
+{
+"id": "board_games-053",
+"lv": "beginner",
+"i18n": {
+"en": "Have you ever played dominoes or mahjong? Where did you learn?",
+"de": "Hast du schon mal Domino oder Mahjong gespielt? Wo hast du es gelernt?",
+"es": "¿Has jugado alguna vez al dominó o al mahjong? ¿Dónde aprendiste?",
+"fr": "As-tu déjà joué aux dominos ou au mahjong ? Où as-tu appris ?",
+"it": "Hai mai giocato a domino o a mahjong? Dove hai imparato?",
+"pt": "Já jogaste dominó ou mahjong? Onde aprendeste?",
+"pt_BR": "Você já jogou dominó ou mahjong? Onde aprendeu?"
+}
+},
+{
+"id": "board_games-054",
+"lv": "beginner",
+"i18n": {
+"en": "Which game would you choose for a first meeting with new friends?",
+"de": "Welches Spiel würdest du für ein erstes Treffen mit neuen Freunden wählen?",
+"es": "¿Qué juego elegirías para un primer encuentro con nuevos amigos?",
+"fr": "Quel jeu choisirais-tu pour une première rencontre avec de nouveaux amis ?",
+"it": "Quale gioco sceglieresti per un primo incontro con nuovi amici?",
+"pt": "Que jogo escolherias para um primeiro encontro com novos amigos?",
+"pt_BR": "Qual jogo você escolheria para um primeiro encontro com novos amigos?"
+}
+},
+{
+"id": "board_games-055",
+"lv": "beginner",
+"i18n": {
+"en": "Do you enjoy anagrams? Can you find a word inside your own name?",
+"de": "Magst du Anagramme? Findest du ein Wort in deinem eigenen Namen?",
+"es": "¿Te gustan los anagramas? ¿Encuentras alguna palabra en tu nombre?",
+"fr": "Aimes-tu les anagrammes ? Trouves-tu un mot caché dans ton prénom ?",
+"it": "Ti piacciono gli anagrammi? Riesci a trovare una parola nel tuo nome?",
+"pt": "Gostas de anagramas? Consegues encontrar uma palavra no teu nome?",
+"pt_BR": "Você curte anagramas? Consegue achar uma palavra no seu nome?"
+}
+},
+{
+"id": "board_games-056",
+"lv": "beginner",
+"i18n": {
+"en": "What do you do when someone in the group is losing badly?",
+"de": "Was machst du, wenn jemand in der Gruppe stark zurückliegt?",
+"es": "¿Qué haces cuando alguien del grupo va perdiendo por mucho?",
+"fr": "Que fais-tu quand quelqu'un du groupe perd largement ?",
+"it": "Cosa fai quando qualcuno del gruppo sta perdendo di molto?",
+"pt": "O que fazes quando alguém do grupo está a perder por muito?",
+"pt_BR": "O que você faz quando alguém do grupo está perdendo feio?"
+}
+},
+{
+"id": "board_games-057",
+"lv": "beginner",
+"i18n": {
+"en": "Which game do you think is better with more players?",
+"de": "Welches Spiel ist deiner Meinung nach mit mehr Mitspielern besser?",
+"es": "¿Qué juego crees que mejora con más jugadores?",
+"fr": "Quel jeu est meilleur avec plus de joueurs, selon toi ?",
+"it": "Quale gioco secondo te è migliore con più giocatori?",
+"pt": "Que jogo achas que fica melhor com mais jogadores?",
+"pt_BR": "Qual jogo você acha que fica melhor com mais jogadores?"
+}
+},
+{
+"id": "board_games-058",
+"lv": "beginner",
+"i18n": {
+"en": "Do you like games about trains, farms, animals or space? Which theme wins?",
+"de": "Magst du Spiele über Züge, Bauernhöfe, Tiere oder das Weltall? Welches Thema gewinnt?",
+"es": "¿Te gustan los juegos de trenes, granjas, animales o el espacio? ¿Qué tema gana?",
+"fr": "Aimes-tu les jeux de trains, de fermes, d'animaux ou d'espace ? Quel thème l'emporte ?",
+"it": "Ti piacciono i giochi su treni, fattorie, animali o spazio? Quale tema vince?",
+"pt": "Gostas de jogos sobre comboios, quintas, animais ou espaço? Que tema ganha?",
+"pt_BR": "Você gosta de jogos sobre trens, fazendas, animais ou espaço? Qual tema ganha?"
+}
+},
+{
+"id": "board_games-059",
+"lv": "beginner",
+"i18n": {
+"en": "Have you ever invented your own simple game? What was it?",
+"de": "Hast du schon mal ein eigenes einfaches Spiel erfunden? Was war es?",
+"es": "¿Alguna vez has inventado un juego sencillo? ¿Cómo era?",
+"fr": "As-tu déjà inventé ton propre petit jeu ? C'était quoi ?",
+"it": "Hai mai inventato un tuo gioco semplice? Com'era?",
+"pt": "Já inventaste um jogo simples teu? Como era?",
+"pt_BR": "Você já inventou um joguinho próprio? Como era?"
+}
+},
+{
+"id": "board_games-060",
+"lv": "beginner",
+"i18n": {
+"en": "Which game is popular in your family during holidays?",
+"de": "Welches Spiel ist in deiner Familie an Feiertagen beliebt?",
+"es": "¿Qué juego es popular en tu familia durante las fiestas?",
+"fr": "Quel jeu est populaire dans ta famille pendant les fêtes ?",
+"it": "Quale gioco è popolare nella tua famiglia durante le feste?",
+"pt": "Que jogo é popular na tua família nas épocas festivas?",
+"pt_BR": "Qual jogo faz sucesso na sua família nas festas de fim de ano?"
+}
+},
+{
+"id": "board_games-061",
+"lv": "beginner",
+"i18n": {
+"en": "What is your favourite way to play a word game while travelling?",
+"de": "Wie spielst du unterwegs am liebsten Wortspiele?",
+"es": "¿Cuál es tu forma favorita de jugar a juegos de palabras cuando viajas?",
+"fr": "Quelle est ta façon préférée de jouer aux jeux de mots en voyage ?",
+"it": "Qual è il tuo modo preferito di fare giochi di parole in viaggio?",
+"pt": "Qual é a tua forma preferida de jogar jogos de palavras em viagem?",
+"pt_BR": "Qual é o seu jeito favorito de jogar jogos de palavras em viagem?"
+}
+},
+{
+"id": "board_games-062",
+"lv": "beginner",
+"i18n": {
+"en": "Do you prefer playing on a real table or in an app?",
+"de": "Spielst du lieber an einem echten Tisch oder in einer App?",
+"es": "¿Prefieres jugar en una mesa de verdad o en una aplicación?",
+"fr": "Préfères-tu jouer autour d'une vraie table ou sur une appli ?",
+"it": "Preferisci giocare a un tavolo vero o in un'app?",
+"pt": "Preferes jogar numa mesa a sério ou numa aplicação?",
+"pt_BR": "Você prefere jogar numa mesa de verdade ou num aplicativo?"
+}
+},
+{
+"id": "board_games-063",
+"lv": "beginner",
+"i18n": {
+"en": "Which game made you think the hardest the first time you played?",
+"de": "Bei welchem Spiel musstest du beim ersten Mal am meisten nachdenken?",
+"es": "¿Qué juego te hizo pensar más la primera vez que jugaste?",
+"fr": "Quel jeu t'a fait le plus réfléchir la première fois ?",
+"it": "Quale gioco ti ha fatto pensare di più la prima volta?",
+"pt": "Que jogo te fez pensar mais da primeira vez que jogaste?",
+"pt_BR": "Qual jogo te fez pensar mais na primeira vez que jogou?"
+}
+},
+{
+"id": "board_games-064",
+"lv": "beginner",
+"i18n": {
+"en": "What would your perfect game night look like?",
+"de": "Wie sähe dein perfekter Spieleabend aus?",
+"es": "¿Cómo sería tu noche de juegos perfecta?",
+"fr": "À quoi ressemblerait ta soirée jeux idéale ?",
+"it": "Come sarebbe la tua serata di giochi perfetta?",
+"pt": "Como seria a tua noite de jogos perfeita?",
+"pt_BR": "Como seria a sua noite de jogos perfeita?"
+}
+},
+{
+"id": "board_games-065",
+"lv": "beginner",
+"i18n": {
+"en": "Do you enjoy describing a word without saying it? Want to try one now?",
+"de": "Magst du es, ein Wort zu beschreiben, ohne es zu sagen? Wollen wir es probieren?",
+"es": "¿Te gusta describir una palabra sin decirla? ¿Probamos una ahora?",
+"fr": "Aimes-tu faire deviner un mot sans le dire ? On essaie maintenant ?",
+"it": "Ti piace descrivere una parola senza dirla? Ne proviamo una adesso?",
+"pt": "Gostas de descrever uma palavra sem a dizer? Experimentamos uma agora?",
+"pt_BR": "Você gosta de descrever uma palavra sem dizer qual é? Vamos tentar uma agora?"
+}
+},
+{
+"id": "board_games-066",
+"lv": "intermediate",
+"i18n": {
+"en": "Which mechanic do you enjoy most: building, trading, drafting or racing?",
+"de": "Welche Mechanik magst du am meisten: Bauen, Handeln, Draften oder Wettrennen?",
+"es": "¿Qué mecánica disfrutas más: construir, comerciar, draftear o competir en carreras?",
+"fr": "Quelle mécanique préfères-tu : construire, échanger, drafter ou faire la course ?",
+"it": "Quale meccanica ti piace di più: costruire, commerciare, draftare o correre?",
+"pt": "Que mecânica preferes: construir, negociar, draftar ou correr?",
+"pt_BR": "Qual mecânica você mais curte: construir, negociar, draftar ou correr?"
+}
+},
+{
+"id": "board_games-067",
+"lv": "intermediate",
+"i18n": {
+"en": "What strategy do you usually follow in your favourite game?",
+"de": "Welche Strategie verfolgst du meistens in deinem Lieblingsspiel?",
+"es": "¿Qué estrategia sueles seguir en tu juego favorito?",
+"fr": "Quelle stratégie suis-tu d'habitude dans ton jeu préféré ?",
+"it": "Quale strategia segui di solito nel tuo gioco preferito?",
+"pt": "Que estratégia costumas seguir no teu jogo preferido?",
+"pt_BR": "Qual estratégia você costuma seguir no seu jogo favorito?"
+}
+},
+{
+"id": "board_games-068",
+"lv": "intermediate",
+"i18n": {
+"en": "Do you think about probability when you roll dice or draw cards?",
+"de": "Denkst du an Wahrscheinlichkeiten, wenn du würfelst oder Karten ziehst?",
+"es": "¿Piensas en probabilidades cuando tiras los dados o robas cartas?",
+"fr": "Penses-tu aux probabilités quand tu lances les dés ou pioches une carte ?",
+"it": "Pensi alle probabilità quando tiri i dadi o peschi le carte?",
+"pt": "Pensas em probabilidades quando lanças os dados ou tiras cartas?",
+"pt_BR": "Você pensa em probabilidade quando joga os dados ou compra cartas?"
+}
+},
+{
+"id": "board_games-069",
+"lv": "intermediate",
+"i18n": {
+"en": "Which modern board game would you recommend to a beginner, and why?",
+"de": "Welches moderne Brettspiel würdest du Anfängern empfehlen, und warum?",
+"es": "¿Qué juego de mesa moderno recomendarías a un principiante y por qué?",
+"fr": "Quel jeu de société moderne conseillerais-tu à un débutant, et pourquoi ?",
+"it": "Quale gioco da tavolo moderno consiglieresti a un principiante, e perché?",
+"pt": "Que jogo de tabuleiro moderno recomendarias a um principiante, e porquê?",
+"pt_BR": "Qual jogo de tabuleiro moderno você recomendaria a um iniciante, e por quê?"
+}
+},
+{
+"id": "board_games-070",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you feel about bluffing in games? Are you good at it?",
+"de": "Was hältst du vom Bluffen in Spielen? Bist du gut darin?",
+"es": "¿Qué opinas de los faroles en los juegos? ¿Se te dan bien?",
+"fr": "Que penses-tu du bluff dans les jeux ? Es-tu doué pour ça ?",
+"it": "Cosa pensi del bluff nei giochi? Sei bravo?",
+"pt": "O que achas do bluff nos jogos? És bom nisso?",
+"pt_BR": "O que você acha de blefar nos jogos? Você é bom nisso?"
+}
+},
+{
+"id": "board_games-071",
+"lv": "intermediate",
+"i18n": {
+"en": "Have you ever lost a game because you planned too far ahead?",
+"de": "Hast du schon mal verloren, weil du zu weit vorausgeplant hast?",
+"es": "¿Alguna vez has perdido por planear demasiado a largo plazo?",
+"fr": "As-tu déjà perdu une partie parce que tu avais trop anticipé ?",
+"it": "Hai mai perso una partita perché avevi pianificato troppo in là?",
+"pt": "Já perdeste um jogo por planeares demasiado à frente?",
+"pt_BR": "Você já perdeu um jogo por planejar longe demais?"
+}
+},
+{
+"id": "board_games-072",
+"lv": "intermediate",
+"i18n": {
+"en": "Which game has the best rulebook you have ever read?",
+"de": "Welches Spiel hat die beste Spielanleitung, die du je gelesen hast?",
+"es": "¿Qué juego tiene el mejor reglamento que has leído?",
+"fr": "Quel jeu a la meilleure règle que tu aies jamais lue ?",
+"it": "Quale gioco ha il miglior regolamento che tu abbia mai letto?",
+"pt": "Que jogo tem o melhor livro de regras que já leste?",
+"pt_BR": "Qual jogo tem o melhor manual de regras que você já leu?"
+}
+},
+{
+"id": "board_games-073",
+"lv": "intermediate",
+"i18n": {
+"en": "Do you enjoy engine-building games where your turns get stronger over time?",
+"de": "Magst du Engine-Building-Spiele, in denen deine Züge immer stärker werden?",
+"es": "¿Te gustan los juegos de construir motores en los que tus turnos son cada vez más potentes?",
+"fr": "Aimes-tu les jeux de construction de moteur où tes tours deviennent plus puissants ?",
+"it": "Ti piacciono i giochi di engine building in cui i tuoi turni diventano sempre più forti?",
+"pt": "Gostas de jogos de construção de motor em que as tuas jogadas ficam mais fortes?",
+"pt_BR": "Você curte jogos de construção de motor em que suas jogadas ficam cada vez mais fortes?"
+}
+},
+{
+"id": "board_games-074",
+"lv": "intermediate",
+"i18n": {
+"en": "What is the hardest word puzzle you have ever solved?",
+"de": "Was war das schwierigste Worträtsel, das du je gelöst hast?",
+"es": "¿Cuál es el acertijo de palabras más difícil que has resuelto?",
+"fr": "Quelle est l'énigme de mots la plus difficile que tu aies résolue ?",
+"it": "Qual è il gioco di parole più difficile che tu abbia mai risolto?",
+"pt": "Qual foi o enigma de palavras mais difícil que já resolveste?",
+"pt_BR": "Qual foi o enigma de palavras mais difícil que você já resolveu?"
+}
+},
+{
+"id": "board_games-075",
+"lv": "intermediate",
+"i18n": {
+"en": "Which game do you think has the most meaningful choices?",
+"de": "Welches Spiel bietet deiner Meinung nach die bedeutsamsten Entscheidungen?",
+"es": "¿Qué juego crees que ofrece las decisiones más interesantes?",
+"fr": "Quel jeu offre selon toi les choix les plus intéressants ?",
+"it": "Quale gioco secondo te offre le scelte più significative?",
+"pt": "Que jogo achas que oferece as escolhas mais interessantes?",
+"pt_BR": "Qual jogo você acha que oferece as escolhas mais interessantes?"
+}
+},
+{
+"id": "board_games-076",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you keep everyone engaged when teaching a long game?",
+"de": "Wie hältst du alle bei Laune, wenn du ein langes Spiel erklärst?",
+"es": "¿Cómo mantienes a todos atentos cuando explicas un juego largo?",
+"fr": "Comment gardes-tu tout le monde attentif quand tu expliques un long jeu ?",
+"it": "Come tieni tutti coinvolti quando spieghi un gioco lungo?",
+"pt": "Como manténs todos interessados quando explicas um jogo longo?",
+"pt_BR": "Como você mantém todo mundo ligado quando explica um jogo longo?"
+}
+},
+{
+"id": "board_games-077",
+"lv": "intermediate",
+"i18n": {
+"en": "Do you like asymmetric games where every player has different powers?",
+"de": "Magst du asymmetrische Spiele, in denen jeder andere Fähigkeiten hat?",
+"es": "¿Te gustan los juegos asimétricos en los que cada jugador tiene poderes distintos?",
+"fr": "Aimes-tu les jeux asymétriques où chaque joueur a des pouvoirs différents ?",
+"it": "Ti piacciono i giochi asimmetrici in cui ogni giocatore ha poteri diversi?",
+"pt": "Gostas de jogos assimétricos em que cada jogador tem poderes diferentes?",
+"pt_BR": "Você gosta de jogos assimétricos em que cada jogador tem poderes diferentes?"
+}
+},
+{
+"id": "board_games-078",
+"lv": "intermediate",
+"i18n": {
+"en": "What do you think about games that change permanently as you play?",
+"de": "Was hältst du von Spielen, die sich beim Spielen dauerhaft verändern?",
+"es": "¿Qué opinas de los juegos que cambian para siempre a medida que juegas?",
+"fr": "Que penses-tu des jeux qui changent définitivement au fil des parties ?",
+"it": "Cosa pensi dei giochi che cambiano per sempre mentre giochi?",
+"pt": "O que achas dos jogos que mudam para sempre à medida que jogas?",
+"pt_BR": "O que você acha de jogos que mudam para sempre conforme você joga?"
+}
+},
+{
+"id": "board_games-079",
+"lv": "intermediate",
+"i18n": {
+"en": "Which game do you think is perfectly balanced, and why?",
+"de": "Welches Spiel ist deiner Meinung nach perfekt ausbalanciert, und warum?",
+"es": "¿Qué juego crees que está perfectamente equilibrado y por qué?",
+"fr": "Quel jeu est parfaitement équilibré selon toi, et pourquoi ?",
+"it": "Quale gioco secondo te è perfettamente bilanciato, e perché?",
+"pt": "Que jogo achas que está perfeitamente equilibrado, e porquê?",
+"pt_BR": "Qual jogo você acha perfeitamente equilibrado, e por quê?"
+}
+},
+{
+"id": "board_games-080",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you handle a disagreement about the rules during a game?",
+"de": "Wie gehst du mit Streit über die Regeln während eines Spiels um?",
+"es": "¿Cómo manejas un desacuerdo sobre las reglas durante una partida?",
+"fr": "Comment gères-tu un désaccord sur les règles pendant une partie ?",
+"it": "Come gestisci un disaccordo sulle regole durante una partita?",
+"pt": "Como lidas com um desacordo sobre as regras durante um jogo?",
+"pt_BR": "Como você lida com uma discordância sobre as regras durante o jogo?"
+}
+},
+{
+"id": "board_games-081",
+"lv": "intermediate",
+"i18n": {
+"en": "Which traditional game from another country would you like to learn?",
+"de": "Welches traditionelle Spiel aus einem anderen Land würdest du gern lernen?",
+"es": "¿Qué juego tradicional de otro país te gustaría aprender?",
+"fr": "Quel jeu traditionnel d'un autre pays aimerais-tu apprendre ?",
+"it": "Quale gioco tradizionale di un altro paese vorresti imparare?",
+"pt": "Que jogo tradicional de outro país gostavas de aprender?",
+"pt_BR": "Qual jogo tradicional de outro país você gostaria de aprender?"
+}
+},
+{
+"id": "board_games-082",
+"lv": "intermediate",
+"i18n": {
+"en": "Do you think word games help you learn a new language? How?",
+"de": "Helfen Wortspiele deiner Meinung nach beim Lernen einer neuen Sprache? Wie?",
+"es": "¿Crees que los juegos de palabras ayudan a aprender un idioma? ¿Cómo?",
+"fr": "Penses-tu que les jeux de mots aident à apprendre une langue ? Comment ?",
+"it": "Pensi che i giochi di parole aiutino a imparare una nuova lingua? Come?",
+"pt": "Achas que os jogos de palavras ajudam a aprender uma língua nova? Como?",
+"pt_BR": "Você acha que jogos de palavras ajudam a aprender um idioma novo? Como?"
+}
+},
+{
+"id": "board_games-083",
+"lv": "intermediate",
+"i18n": {
+"en": "What makes a game easy to learn but hard to master?",
+"de": "Was macht ein Spiel leicht zu lernen, aber schwer zu meistern?",
+"es": "¿Qué hace que un juego sea fácil de aprender pero difícil de dominar?",
+"fr": "Qu'est-ce qui rend un jeu facile à apprendre mais difficile à maîtriser ?",
+"it": "Cosa rende un gioco facile da imparare ma difficile da padroneggiare?",
+"pt": "O que torna um jogo fácil de aprender mas difícil de dominar?",
+"pt_BR": "O que torna um jogo fácil de aprender, mas difícil de dominar?"
+}
+},
+{
+"id": "board_games-084",
+"lv": "intermediate",
+"i18n": {
+"en": "Which game has a theme that fits its rules perfectly?",
+"de": "Bei welchem Spiel passt das Thema perfekt zu den Regeln?",
+"es": "¿Qué juego tiene una temática que encaja perfectamente con sus reglas?",
+"fr": "Quel jeu a un thème qui colle parfaitement à ses règles ?",
+"it": "Quale gioco ha un tema che si sposa perfettamente con le regole?",
+"pt": "Que jogo tem um tema que encaixa na perfeição nas regras?",
+"pt_BR": "Qual jogo tem um tema que combina perfeitamente com as regras?"
+}
+},
+{
+"id": "board_games-085",
+"lv": "intermediate",
+"i18n": {
+"en": "If you designed a board game, what would it be about?",
+"de": "Wenn du ein Brettspiel entwerfen würdest, worum ginge es?",
+"es": "Si diseñaras un juego de mesa, ¿de qué trataría?",
+"fr": "Si tu concevais un jeu de société, de quoi parlerait-il ?",
+"it": "Se progettassi un gioco da tavolo, di cosa parlerebbe?",
+"pt": "Se criasses um jogo de tabuleiro, sobre o que seria?",
+"pt_BR": "Se você criasse um jogo de tabuleiro, sobre o que ele seria?"
+}
+},
+{
+"id": "board_games-086",
+"lv": "advanced",
+"i18n": {
+"en": "Which core mechanic would you build your own game around, and why?",
+"de": "Um welche Kernmechanik würdest du dein eigenes Spiel bauen, und warum?",
+"es": "¿En torno a qué mecánica principal construirías tu propio juego y por qué?",
+"fr": "Autour de quelle mécanique principale construirais-tu ton jeu, et pourquoi ?",
+"it": "Attorno a quale meccanica principale costruiresti il tuo gioco, e perché?",
+"pt": "À volta de que mecânica principal construirias o teu jogo, e porquê?",
+"pt_BR": "Em torno de qual mecânica principal você construiria seu jogo, e por quê?"
+}
+},
+{
+"id": "board_games-087",
+"lv": "advanced",
+"i18n": {
+"en": "How would you make a game welcoming for players with different needs?",
+"de": "Wie würdest du ein Spiel für Menschen mit unterschiedlichen Bedürfnissen zugänglich machen?",
+"es": "¿Cómo harías un juego accesible para jugadores con necesidades distintas?",
+"fr": "Comment rendrais-tu un jeu accueillant pour des joueurs aux besoins différents ?",
+"it": "Come renderesti un gioco accogliente per giocatori con esigenze diverse?",
+"pt": "Como tornarias um jogo acolhedor para jogadores com necessidades diferentes?",
+"pt_BR": "Como você tornaria um jogo acolhedor para jogadores com necessidades diferentes?"
+}
+},
+{
+"id": "board_games-088",
+"lv": "advanced",
+"i18n": {
+"en": "What do you think computers like AlphaGo taught us about classic games?",
+"de": "Was haben uns Computer wie AlphaGo deiner Meinung nach über klassische Spiele gelehrt?",
+"es": "¿Qué crees que nos enseñaron ordenadores como AlphaGo sobre los juegos clásicos?",
+"fr": "Selon toi, qu'ont appris des programmes comme AlphaGo sur les jeux classiques ?",
+"it": "Cosa pensi che ci abbiano insegnato computer come AlphaGo sui giochi classici?",
+"pt": "O que achas que computadores como o AlphaGo nos ensinaram sobre os jogos clássicos?",
+"pt_BR": "O que você acha que computadores como o AlphaGo nos ensinaram sobre jogos clássicos?"
+}
+},
+{
+"id": "board_games-089",
+"lv": "advanced",
+"i18n": {
+"en": "Would you enjoy playing in a tournament, or do you prefer casual games? Why?",
+"de": "Würdest du gern an einem Turnier teilnehmen, oder spielst du lieber locker? Warum?",
+"es": "¿Te gustaría jugar un torneo o prefieres partidas informales? ¿Por qué?",
+"fr": "Aimerais-tu jouer en tournoi, ou préfères-tu les parties détendues ? Pourquoi ?",
+"it": "Ti piacerebbe giocare un torneo o preferisci le partite informali? Perché?",
+"pt": "Gostavas de jogar num torneio ou preferes jogos descontraídos? Porquê?",
+"pt_BR": "Você gostaria de jogar um torneio ou prefere partidas descontraídas? Por quê?"
+}
+},
+{
+"id": "board_games-090",
+"lv": "advanced",
+"i18n": {
+"en": "What do ancient games tell us about the people who played them?",
+"de": "Was erzählen uns uralte Spiele über die Menschen, die sie gespielt haben?",
+"es": "¿Qué nos dicen los juegos antiguos sobre las personas que los jugaban?",
+"fr": "Que nous apprennent les jeux anciens sur ceux qui y jouaient ?",
+"it": "Cosa ci dicono i giochi antichi sulle persone che li giocavano?",
+"pt": "O que nos dizem os jogos antigos sobre as pessoas que os jogavam?",
+"pt_BR": "O que os jogos antigos nos contam sobre as pessoas que os jogavam?"
+}
+},
+{
+"id": "board_games-091",
+"lv": "advanced",
+"i18n": {
+"en": "How would you playtest a new game idea with your friends?",
+"de": "Wie würdest du eine neue Spielidee mit Freunden testen?",
+"es": "¿Cómo probarías una nueva idea de juego con tus amigos?",
+"fr": "Comment testerais-tu une nouvelle idée de jeu avec tes amis ?",
+"it": "Come testeresti una nuova idea di gioco con i tuoi amici?",
+"pt": "Como testarias uma nova ideia de jogo com os teus amigos?",
+"pt_BR": "Como você testaria uma ideia nova de jogo com seus amigos?"
+}
+},
+{
+"id": "board_games-092",
+"lv": "advanced",
+"i18n": {
+"en": "Which game would you use to teach a skill like maths, language or planning?",
+"de": "Mit welchem Spiel würdest du eine Fähigkeit wie Mathe, Sprache oder Planung vermitteln?",
+"es": "¿Qué juego usarías para enseñar una habilidad como matemáticas, idiomas o planificación?",
+"fr": "Quel jeu utiliserais-tu pour enseigner les maths, une langue ou l'organisation ?",
+"it": "Quale gioco useresti per insegnare un'abilità come matematica, lingua o pianificazione?",
+"pt": "Que jogo usarias para ensinar uma competência como matemática, línguas ou planeamento?",
+"pt_BR": "Qual jogo você usaria para ensinar uma habilidade como matemática, idiomas ou planejamento?"
+}
+},
+{
+"id": "board_games-093",
+"lv": "advanced",
+"i18n": {
+"en": "How do luck and skill work together in the game you play most?",
+"de": "Wie wirken Glück und Können in dem Spiel zusammen, das du am meisten spielst?",
+"es": "¿Cómo se combinan la suerte y la habilidad en el juego que más juegas?",
+"fr": "Comment la chance et l'habileté se combinent-elles dans le jeu auquel tu joues le plus ?",
+"it": "Come si combinano fortuna e abilità nel gioco a cui giochi di più?",
+"pt": "Como se combinam a sorte e a habilidade no jogo que mais jogas?",
+"pt_BR": "Como sorte e habilidade se combinam no jogo que você mais joga?"
+}
+},
+{
+"id": "board_games-094",
+"lv": "advanced",
+"i18n": {
+"en": "What would you say in a one-minute pitch for your favourite game?",
+"de": "Was würdest du in einer Ein-Minuten-Präsentation über dein Lieblingsspiel sagen?",
+"es": "¿Qué dirías en una presentación de un minuto sobre tu juego favorito?",
+"fr": "Que dirais-tu en une minute pour présenter ton jeu préféré ?",
+"it": "Cosa diresti in una presentazione di un minuto del tuo gioco preferito?",
+"pt": "O que dirias numa apresentação de um minuto sobre o teu jogo preferido?",
+"pt_BR": "O que você diria numa apresentação de um minuto sobre o seu jogo favorito?"
+}
+},
+{
+"id": "board_games-095",
+"lv": "advanced",
+"i18n": {
+"en": "How have games helped you make friends or understand other cultures?",
+"de": "Wie haben dir Spiele geholfen, Freunde zu finden oder andere Kulturen zu verstehen?",
+"es": "¿Cómo te han ayudado los juegos a hacer amigos o entender otras culturas?",
+"fr": "Comment les jeux t'ont-ils aidé à te faire des amis ou à comprendre d'autres cultures ?",
+"it": "In che modo i giochi ti hanno aiutato a fare amicizia o a capire altre culture?",
+"pt": "De que forma os jogos te ajudaram a fazer amigos ou a compreender outras culturas?",
+"pt_BR": "Como os jogos ajudaram você a fazer amigos ou entender outras culturas?"
+}
+},
+{
+"id": "board_games-096",
+"lv": "advanced",
+"i18n": {
+"en": "If you could have dinner with a famous game designer or champion, who would it be?",
+"de": "Mit welchem berühmten Spieleautor oder Champion würdest du gern zu Abend essen?",
+"es": "Si pudieras cenar con un famoso diseñador de juegos o campeón, ¿quién sería?",
+"fr": "Si tu pouvais dîner avec un célèbre auteur de jeux ou un champion, qui choisirais-tu ?",
+"it": "Se potessi cenare con un famoso autore di giochi o un campione, chi sceglieresti?",
+"pt": "Se pudesses jantar com um famoso criador de jogos ou campeão, quem seria?",
+"pt_BR": "Se você pudesse jantar com um famoso criador de jogos ou campeão, quem seria?"
+}
+},
+{
+"id": "board_games-097",
+"lv": "advanced",
+"i18n": {
+"en": "How would you balance your game so no single strategy always wins?",
+"de": "Wie würdest du dein Spiel ausbalancieren, damit keine Strategie immer gewinnt?",
+"es": "¿Cómo equilibrarías tu juego para que ninguna estrategia gane siempre?",
+"fr": "Comment équilibrerais-tu ton jeu pour qu'aucune stratégie ne gagne à tous les coups ?",
+"it": "Come bilanceresti il tuo gioco perché nessuna strategia vinca sempre?",
+"pt": "Como equilibrarias o teu jogo para que nenhuma estratégia ganhe sempre?",
+"pt_BR": "Como você equilibraria seu jogo para que nenhuma estratégia vença sempre?"
+}
+},
+{
+"id": "board_games-098",
+"lv": "advanced",
+"i18n": {
+"en": "What makes a word game work well in many different languages?",
+"de": "Was macht ein Wortspiel in vielen verschiedenen Sprachen spielbar?",
+"es": "¿Qué hace que un juego de palabras funcione bien en muchos idiomas?",
+"fr": "Qu'est-ce qui fait qu'un jeu de mots fonctionne bien dans plusieurs langues ?",
+"it": "Cosa fa funzionare bene un gioco di parole in tante lingue diverse?",
+"pt": "O que faz um jogo de palavras funcionar bem em muitas línguas diferentes?",
+"pt_BR": "O que faz um jogo de palavras funcionar bem em vários idiomas diferentes?"
+}
+},
+{
+"id": "board_games-099",
+"lv": "advanced",
+"i18n": {
+"en": "How do you decide when to switch from building your position to scoring points?",
+"de": "Wie entscheidest du, wann du vom Aufbauen zum Punktesammeln wechselst?",
+"es": "¿Cómo decides cuándo pasar de desarrollar tu posición a sumar puntos?",
+"fr": "Comment décides-tu quand passer du développement à la course aux points ?",
+"it": "Come decidi quando passare dal costruire la tua posizione al fare punti?",
+"pt": "Como decides quando passar de desenvolver a tua posição para marcar pontos?",
+"pt_BR": "Como você decide a hora de parar de se desenvolver e começar a pontuar?"
+}
+},
+{
+"id": "board_games-100",
+"lv": "advanced",
+"i18n": {
+"en": "What would you change in a classic game to make it feel modern?",
+"de": "Was würdest du an einem Klassiker ändern, damit er sich modern anfühlt?",
+"es": "¿Qué cambiarías de un juego clásico para que pareciera moderno?",
+"fr": "Que changerais-tu dans un jeu classique pour le rendre moderne ?",
+"it": "Cosa cambieresti in un gioco classico per renderlo moderno?",
+"pt": "O que mudarias num jogo clássico para que parecesse moderno?",
+"pt_BR": "O que você mudaria num jogo clássico para deixá-lo moderno?"
+}
+}
+]
+}

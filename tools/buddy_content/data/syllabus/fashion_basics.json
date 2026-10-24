@@ -1,0 +1,2195 @@
+{
+ "topic": "fashion_basics",
+ "days": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "t": "What personal style really is",
+   "f": "Style as a way to express who you are, not a set of rules or a single ideal look"
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "t": "Fashion versus style",
+   "f": "Fashion changes with seasons; personal style is what you return to because it feels like you"
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "t": "Style for every body",
+   "f": "Every body deserves clothes that fit and feel good; the goal is comfort and confidence"
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "t": "Your style starting point",
+   "f": "Noticing which clothes you already reach for most and why they make you feel good"
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "t": "Words that describe you",
+   "f": "Choosing three words, like relaxed, bold or elegant, to guide your style choices"
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "t": "The wardrobe audit",
+   "f": "Looking at what you own, what you wear and what you never touch, without judgement"
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "t": "Wardrobe essentials explained",
+   "f": "The idea of versatile basics that combine easily and form the core of a wardrobe"
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "t": "Fit comes first",
+   "f": "Why good fit matters more than brand or price, and the signs of a garment that fits well"
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "t": "Checking the fit of a top",
+   "f": "Shoulder seams, sleeve length and ease of movement as key signs of a well-fitting top"
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "t": "Checking the fit of trousers",
+   "f": "Waist, rise, seat and length: what to check so trousers are comfortable and flattering"
+  },
+  {
+   "d": 11,
+   "lv": "beginner",
+   "t": "Sizes are just numbers",
+   "f": "Why sizes vary between brands and countries and why the right fit matters more than the label"
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "t": "Taking your measurements",
+   "f": "How to measure chest, waist, hips and inside leg to shop more confidently"
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "t": "Cotton: the everyday fabric",
+   "f": "Why cotton is breathable and comfortable, and how it behaves when washed"
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "t": "Linen for warm days",
+   "f": "Linen's lightness, natural creases and why it is loved in hot climates"
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "t": "Wool and warmth",
+   "f": "How wool keeps you warm, handles moisture and needs gentle care"
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "t": "Denim basics",
+   "f": "What denim is, how it ages with wear, and common jean washes and cuts"
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "t": "Silk and smooth fabrics",
+   "f": "The feel, drape and care of silk and silky alternatives"
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "t": "Synthetic fabrics",
+   "f": "Polyester, nylon and elastane: their strengths for stretch, durability and sportswear"
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "t": "Fabric blends",
+   "f": "Why many clothes mix fibres and what each fibre adds to the garment"
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "t": "Reading care labels",
+   "f": "Understanding washing, drying and ironing symbols so clothes last longer"
+  },
+  {
+   "d": 21,
+   "lv": "beginner",
+   "t": "Washing clothes the right way",
+   "f": "Sorting, temperature and turning garments inside out to protect them"
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "t": "Drying and storing clothes",
+   "f": "Air drying, folding knits and hanging the right pieces to keep their shape"
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "t": "Ironing and steaming basics",
+   "f": "When to iron, when to steam and simple tricks for a crisp look"
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "t": "Neutral colours",
+   "f": "Black, white, grey, navy, beige and brown as an easy base for combining outfits"
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "t": "The colour wheel",
+   "f": "How complementary, analogous and monochrome colour combinations work in outfits"
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "t": "Warm and cool colours",
+   "f": "How warm and cool shades create different moods in an outfit"
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "t": "Wearing one colour head to toe",
+   "f": "Monochrome outfits as a simple, elegant way to look put together"
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "t": "Adding a pop of colour",
+   "f": "Using one bright piece or accessory to lift a neutral outfit"
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "t": "Patterns for beginners",
+   "f": "Stripes, checks, dots and florals, and how to start wearing them with ease"
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "t": "Review: your first month of style",
+   "f": "Looking back at fit, fabrics and colour, and choosing one idea to explore further"
+  },
+  {
+   "d": 31,
+   "lv": "beginner",
+   "t": "The classic T-shirt",
+   "f": "Necklines, fabrics and fits that make a simple T-shirt look great"
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "t": "Shirts and blouses",
+   "f": "Collars, cuffs and fabrics, and how to wear shirts tucked, untucked or half-tucked"
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "t": "Knitwear essentials",
+   "f": "Crew necks, V-necks, cardigans and turtlenecks, and when each works best"
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "t": "Trousers of many shapes",
+   "f": "Straight, wide, tapered and cropped trousers, and what each brings to an outfit"
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "t": "Jeans that work for you",
+   "f": "Finding jeans by rise, cut and stretch that are comfortable for your body"
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "t": "Skirts explained",
+   "f": "A-line, pencil, pleated and wrap skirts, and how to style each one"
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "t": "Dresses for every day",
+   "f": "Easy everyday dresses and how to change their look with layers and shoes"
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "t": "Jumpsuits and one-piece outfits",
+   "f": "How one-piece outfits offer an effortless, complete look"
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "t": "Shorts with style",
+   "f": "Lengths and fabrics of shorts, and how to wear them smartly in warm weather"
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "t": "Suits and tailoring basics",
+   "f": "Jackets and matching trousers or skirts, and how tailoring shapes a look"
+  },
+  {
+   "d": 41,
+   "lv": "beginner",
+   "t": "The blazer as a hero piece",
+   "f": "How a blazer can make jeans, dresses or trousers look smarter instantly"
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "t": "Coats for cold days",
+   "f": "Wool coats, parkas, trench coats and puffers, and how to choose by climate"
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "t": "Light jackets",
+   "f": "Denim jackets, bomber jackets and light rain jackets for in-between weather"
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "t": "Layering basics",
+   "f": "Combining thin and thick layers so you stay comfortable as temperatures change"
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "t": "Sneakers and casual shoes",
+   "f": "Choosing comfortable trainers and casual shoes that go with many outfits"
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "t": "Smart shoes",
+   "f": "Loafers, brogues, flats and simple heels, and when each fits the occasion"
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "t": "Boots of all kinds",
+   "f": "Ankle boots, Chelsea boots, knee-high and work boots, and how to wear them"
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "t": "Sandals and summer shoes",
+   "f": "Comfortable sandals and summer shoes for walking, beaches and city days"
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "t": "Socks and hosiery",
+   "f": "How socks and tights can add colour, warmth or a smooth finishing touch"
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "t": "Bags for daily life",
+   "f": "Totes, backpacks, crossbody and shoulder bags, and what each is good for"
+  },
+  {
+   "d": 51,
+   "lv": "beginner",
+   "t": "Belts as finishers",
+   "f": "How belts define a waist, add colour and hold an outfit together"
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "t": "Scarves for warmth and style",
+   "f": "Fabrics and simple ways to tie scarves for warmth or decoration"
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "t": "Hats through the seasons",
+   "f": "Beanies, caps, sun hats and fedoras, and how to wear each with confidence"
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "t": "Simple jewellery",
+   "f": "Using a few everyday pieces to personalise outfits without overdoing it"
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "t": "Watches and small accessories",
+   "f": "How small details like a watch or pin can express personality"
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "t": "Glasses and sunglasses",
+   "f": "Frame shapes and colours as part of your style and protection from the sun"
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "t": "Underlayers that help",
+   "f": "Comfortable, well-fitting basics that make outer clothes sit and feel better"
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "t": "Comfort is stylish",
+   "f": "Why feeling comfortable helps you carry any outfit with confidence"
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "t": "Dressing for your day",
+   "f": "Planning outfits around your activities, weather and how you want to feel"
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "t": "Review: the clothing basics",
+   "f": "Looking back at key garments, shoes and accessories in your wardrobe"
+  },
+  {
+   "d": 61,
+   "lv": "beginner",
+   "t": "Understanding dress codes",
+   "f": "What casual, smart casual, business and formal usually mean around the world"
+  },
+  {
+   "d": 62,
+   "lv": "beginner",
+   "t": "Casual done well",
+   "f": "How clean, well-fitting basics make relaxed outfits look intentional"
+  },
+  {
+   "d": 63,
+   "lv": "beginner",
+   "t": "Smart casual explained",
+   "f": "Combining relaxed and tailored pieces for a polished yet easy look"
+  },
+  {
+   "d": 64,
+   "lv": "beginner",
+   "t": "Business attire basics",
+   "f": "Traditional office wear and how modern workplaces have relaxed some rules"
+  },
+  {
+   "d": 65,
+   "lv": "beginner",
+   "t": "Formal occasions",
+   "f": "What black tie and cocktail dress codes typically mean and how to prepare"
+  },
+  {
+   "d": 66,
+   "lv": "beginner",
+   "t": "Dressing for an interview",
+   "f": "Choosing clean, comfortable and slightly formal clothes that fit the company culture"
+  },
+  {
+   "d": 67,
+   "lv": "beginner",
+   "t": "Clothes for travel days",
+   "f": "Comfortable layers, easy shoes and wrinkle-resistant fabrics for long journeys"
+  },
+  {
+   "d": 68,
+   "lv": "beginner",
+   "t": "Outfits for outdoor activities",
+   "f": "Practical clothing for hiking, cycling or picnics that still feels like you"
+  },
+  {
+   "d": 69,
+   "lv": "beginner",
+   "t": "Sportswear basics",
+   "f": "Breathable, stretchy fabrics and supportive shoes for exercise"
+  },
+  {
+   "d": 70,
+   "lv": "beginner",
+   "t": "Loungewear and home clothes",
+   "f": "Comfortable clothes for home that still make you feel good about yourself"
+  },
+  {
+   "d": 71,
+   "lv": "beginner",
+   "t": "Rainy day dressing",
+   "f": "Waterproof layers, good shoes and colours that brighten grey days"
+  },
+  {
+   "d": 72,
+   "lv": "beginner",
+   "t": "Dressing for hot weather",
+   "f": "Light fabrics, loose fits and light colours that keep you cool"
+  },
+  {
+   "d": 73,
+   "lv": "beginner",
+   "t": "Dressing for cold weather",
+   "f": "Thermal layers, wool and wind protection for staying warm and stylish"
+  },
+  {
+   "d": 74,
+   "lv": "beginner",
+   "t": "In-between seasons",
+   "f": "Transition outfits that handle cool mornings and warmer afternoons"
+  },
+  {
+   "d": 75,
+   "lv": "beginner",
+   "t": "Planning outfits ahead",
+   "f": "Laying out or photographing outfits to make busy mornings easier"
+  },
+  {
+   "d": 76,
+   "lv": "beginner",
+   "t": "The outfit formula",
+   "f": "Simple formulas, like top plus bottom plus layer plus shoes, that always work"
+  },
+  {
+   "d": 77,
+   "lv": "beginner",
+   "t": "Mixing basics in new ways",
+   "f": "Creating many outfits from a few basics by changing combinations"
+  },
+  {
+   "d": 78,
+   "lv": "beginner",
+   "t": "Tucks and rolls",
+   "f": "How tucking shirts or rolling sleeves and hems changes the shape of an outfit"
+  },
+  {
+   "d": 79,
+   "lv": "beginner",
+   "t": "Proportions made simple",
+   "f": "Playing with loose and fitted pieces to create the silhouette you enjoy"
+  },
+  {
+   "d": 80,
+   "lv": "beginner",
+   "t": "Lengths and lines",
+   "f": "How hem lengths and vertical or horizontal lines shape the look of an outfit"
+  },
+  {
+   "d": 81,
+   "lv": "beginner",
+   "t": "Choosing what suits your mood",
+   "f": "Using clothes to feel energetic, calm or confident depending on the day"
+  },
+  {
+   "d": 82,
+   "lv": "beginner",
+   "t": "Necklines guide",
+   "f": "Round, V, square and boat necklines, and how they frame the face differently"
+  },
+  {
+   "d": 83,
+   "lv": "beginner",
+   "t": "Sleeve styles",
+   "f": "Short, long, puffed and rolled sleeves, and how they change an outfit's feel"
+  },
+  {
+   "d": 84,
+   "lv": "beginner",
+   "t": "Collar types",
+   "f": "Classic, button-down, mandarin and polo collars and where you see them"
+  },
+  {
+   "d": 85,
+   "lv": "beginner",
+   "t": "Waistlines and rises",
+   "f": "High, mid and low waists in skirts and trousers and how they feel to wear"
+  },
+  {
+   "d": 86,
+   "lv": "beginner",
+   "t": "Hemlines explained",
+   "f": "Mini, knee, midi and maxi lengths and how to pair them with shoes"
+  },
+  {
+   "d": 87,
+   "lv": "beginner",
+   "t": "Colour and skin tone basics",
+   "f": "Exploring which shades make you feel bright and fresh, with no strict rules"
+  },
+  {
+   "d": 88,
+   "lv": "beginner",
+   "t": "Mixing patterns carefully",
+   "f": "Combining two patterns by sharing a colour or varying the scale"
+  },
+  {
+   "d": 89,
+   "lv": "beginner",
+   "t": "Texture in outfits",
+   "f": "Mixing knit, leather, denim and silk for depth and interest"
+  },
+  {
+   "d": 90,
+   "lv": "beginner",
+   "t": "Review: dress codes and outfits",
+   "f": "Looking back at occasions, weather and outfit formulas you have tried"
+  },
+  {
+   "d": 91,
+   "lv": "beginner",
+   "t": "What makes a garment good quality",
+   "f": "Checking seams, stitching, fabric weight and finishing before you buy"
+  },
+  {
+   "d": 92,
+   "lv": "beginner",
+   "t": "Checking seams and stitches",
+   "f": "Signs of strong, even stitching and seams that will last"
+  },
+  {
+   "d": 93,
+   "lv": "beginner",
+   "t": "Buttons, zips and finishing",
+   "f": "Small details that reveal how carefully a garment was made"
+  },
+  {
+   "d": 94,
+   "lv": "beginner",
+   "t": "Shopping with a list",
+   "f": "Knowing what your wardrobe needs before going shopping to avoid impulse buys"
+  },
+  {
+   "d": 95,
+   "lv": "beginner",
+   "t": "Trying clothes on well",
+   "f": "Moving, sitting and stretching in the fitting room to test comfort and fit"
+  },
+  {
+   "d": 96,
+   "lv": "beginner",
+   "t": "Online shopping tips",
+   "f": "Using size charts, reading reviews and checking return policies when buying online"
+  },
+  {
+   "d": 97,
+   "lv": "beginner",
+   "t": "Second-hand treasures",
+   "f": "Finding quality clothes in charity shops, vintage stores and online resale"
+  },
+  {
+   "d": 98,
+   "lv": "beginner",
+   "t": "Cost per wear",
+   "f": "Thinking about how often you will wear something to judge its true value"
+  },
+  {
+   "d": 99,
+   "lv": "beginner",
+   "t": "Building a wardrobe slowly",
+   "f": "Adding pieces gradually so every item is chosen with care"
+  },
+  {
+   "d": 100,
+   "lv": "beginner",
+   "t": "Gender-neutral clothing",
+   "f": "Clothes designed for anyone, and how style can be free from strict categories"
+  },
+  {
+   "d": 101,
+   "lv": "beginner",
+   "t": "Adaptive fashion",
+   "f": "Clothes designed for people with disabilities, with easy closures and smart details"
+  },
+  {
+   "d": 102,
+   "lv": "beginner",
+   "t": "Fashion for all ages",
+   "f": "Style has no age limit: dressing in ways that feel right at every life stage"
+  },
+  {
+   "d": 103,
+   "lv": "beginner",
+   "t": "Kids and personal expression",
+   "f": "How children enjoy choosing clothes and expressing themselves through colour"
+  },
+  {
+   "d": 104,
+   "lv": "beginner",
+   "t": "Clothes and confidence",
+   "f": "How clothes that fit and feel good can support a confident mood"
+  },
+  {
+   "d": 105,
+   "lv": "beginner",
+   "t": "Grooming basics",
+   "f": "Clean hair, neat nails and cared-for clothes as simple foundations of a polished look"
+  },
+  {
+   "d": 106,
+   "lv": "beginner",
+   "t": "Fragrance basics",
+   "f": "Using a light scent with care and respecting shared spaces"
+  },
+  {
+   "d": 107,
+   "lv": "beginner",
+   "t": "Organising your wardrobe for style",
+   "f": "Arranging clothes by type and colour so outfits are easier to build"
+  },
+  {
+   "d": 108,
+   "lv": "beginner",
+   "t": "Caring for shoes",
+   "f": "Cleaning, protecting and resting shoes so they look good for years"
+  },
+  {
+   "d": 109,
+   "lv": "beginner",
+   "t": "Caring for knitwear",
+   "f": "Washing gently, drying flat and removing pilling from sweaters"
+  },
+  {
+   "d": 110,
+   "lv": "beginner",
+   "t": "Storing seasonal clothes",
+   "f": "Cleaning and storing off-season clothes properly to protect them"
+  },
+  {
+   "d": 111,
+   "lv": "beginner",
+   "t": "Small repairs anyone can do",
+   "f": "Sewing on a button and fixing a small hem with basic tools"
+  },
+  {
+   "d": 112,
+   "lv": "beginner",
+   "t": "Stain first aid",
+   "f": "Acting quickly, blotting gently and checking labels before treating stains"
+  },
+  {
+   "d": 113,
+   "lv": "beginner",
+   "t": "Packing clothes for a trip",
+   "f": "Choosing a few mix-and-match pieces and folding or rolling to save space"
+  },
+  {
+   "d": 114,
+   "lv": "beginner",
+   "t": "Your style mood board",
+   "f": "Collecting images of outfits you love to spot patterns in your taste"
+  },
+  {
+   "d": 115,
+   "lv": "beginner",
+   "t": "Style icons you admire",
+   "f": "Looking at people whose style you admire and what you could learn from them"
+  },
+  {
+   "d": 116,
+   "lv": "beginner",
+   "t": "Dressing for your local climate",
+   "f": "Choosing fabrics and layers that suit the weather where you live all year round"
+  },
+  {
+   "d": 117,
+   "lv": "beginner",
+   "t": "A five-piece outfit set",
+   "f": "Picking five pieces that combine into at least six different outfits"
+  },
+  {
+   "d": 118,
+   "lv": "beginner",
+   "t": "Clothes that work hard",
+   "f": "Spotting the pieces you wear most and understanding why they are so useful"
+  },
+  {
+   "d": 119,
+   "lv": "beginner",
+   "t": "Sorting your accessories",
+   "f": "Reviewing jewellery, belts and scarves to keep the ones you truly enjoy"
+  },
+  {
+   "d": 120,
+   "lv": "beginner",
+   "t": "Review: beginner milestone",
+   "f": "Celebrating four months of style basics and setting goals for the next stage"
+  },
+  {
+   "d": 121,
+   "lv": "intermediate",
+   "t": "The capsule wardrobe idea",
+   "f": "A small, coordinated collection of clothes that combine easily into many outfits"
+  },
+  {
+   "d": 122,
+   "lv": "intermediate",
+   "t": "Planning your capsule",
+   "f": "Choosing a colour base, key pieces and accents for your own capsule wardrobe"
+  },
+  {
+   "d": 123,
+   "lv": "intermediate",
+   "t": "A capsule for work",
+   "f": "Building a work wardrobe from a few versatile, comfortable pieces"
+  },
+  {
+   "d": 124,
+   "lv": "intermediate",
+   "t": "A capsule for weekends",
+   "f": "Relaxed pieces that mix well for free time, errands and meeting friends"
+  },
+  {
+   "d": 125,
+   "lv": "intermediate",
+   "t": "A capsule for travel",
+   "f": "Packing a small set of clothes that create outfits for a whole trip"
+  },
+  {
+   "d": 126,
+   "lv": "intermediate",
+   "t": "Your colour palette",
+   "f": "Choosing a set of main, neutral and accent colours that you love wearing"
+  },
+  {
+   "d": 127,
+   "lv": "intermediate",
+   "t": "Exploring colour seasons",
+   "f": "The popular seasonal colour theory and how to use it lightly, not as a rule"
+  },
+  {
+   "d": 128,
+   "lv": "intermediate",
+   "t": "Building outfits around one piece",
+   "f": "Starting with a favourite item and building complete looks around it"
+  },
+  {
+   "d": 129,
+   "lv": "intermediate",
+   "t": "Style archetypes overview",
+   "f": "Classic, minimal, bohemian, sporty, creative and more as starting points for style"
+  },
+  {
+   "d": 130,
+   "lv": "intermediate",
+   "t": "Classic style",
+   "f": "Timeless pieces like trench coats, crisp shirts and tailored trousers"
+  },
+  {
+   "d": 131,
+   "lv": "intermediate",
+   "t": "Minimal style",
+   "f": "Clean lines, neutral colours and simple shapes with thoughtful details"
+  },
+  {
+   "d": 132,
+   "lv": "intermediate",
+   "t": "Bohemian style",
+   "f": "Flowing fabrics, earthy colours, prints and handmade-looking details"
+  },
+  {
+   "d": 133,
+   "lv": "intermediate",
+   "t": "Sporty and athleisure style",
+   "f": "Combining sportswear comfort with everyday pieces in a neat way"
+  },
+  {
+   "d": 134,
+   "lv": "intermediate",
+   "t": "Streetwear style",
+   "f": "Sneakers, hoodies, graphic tees and urban layers inspired by street culture"
+  },
+  {
+   "d": 135,
+   "lv": "intermediate",
+   "t": "Soft and delicate style",
+   "f": "Gentle colours, flowing shapes, lace or ruffles for a soft look"
+  },
+  {
+   "d": 136,
+   "lv": "intermediate",
+   "t": "Edgy and rock style",
+   "f": "Leather jackets, boots, dark colours and bold details"
+  },
+  {
+   "d": 137,
+   "lv": "intermediate",
+   "t": "Preppy style",
+   "f": "Polo shirts, knit vests, loafers and neat, collegiate-inspired outfits"
+  },
+  {
+   "d": 138,
+   "lv": "intermediate",
+   "t": "Creative and eclectic style",
+   "f": "Mixing colours, eras and textures freely to create a unique look"
+  },
+  {
+   "d": 139,
+   "lv": "intermediate",
+   "t": "Mixing styles",
+   "f": "Combining two style types, like classic and sporty, for a personal twist"
+  },
+  {
+   "d": 140,
+   "lv": "intermediate",
+   "t": "Finding your signature piece",
+   "f": "Choosing an item or detail that people start to associate with you"
+  },
+  {
+   "d": 141,
+   "lv": "intermediate",
+   "t": "Review: capsules and style types",
+   "f": "Looking back at your capsule plan and the style types that inspire you"
+  },
+  {
+   "d": 142,
+   "lv": "intermediate",
+   "t": "Tailoring and alterations",
+   "f": "How small changes by a tailor can make clothes fit perfectly"
+  },
+  {
+   "d": 143,
+   "lv": "intermediate",
+   "t": "What can be altered",
+   "f": "Hems, waists and sleeves are easy; shoulders are harder. What to know before buying"
+  },
+  {
+   "d": 144,
+   "lv": "intermediate",
+   "t": "Finding a good tailor",
+   "f": "Asking for recommendations and starting with a small alteration"
+  },
+  {
+   "d": 145,
+   "lv": "intermediate",
+   "t": "Jeans hemming and fit tweaks",
+   "f": "Simple alterations that make jeans fit your legs and shoes better"
+  },
+  {
+   "d": 146,
+   "lv": "intermediate",
+   "t": "Making shirts fit better",
+   "f": "Taking in the sides or shortening sleeves for a cleaner shape"
+  },
+  {
+   "d": 147,
+   "lv": "intermediate",
+   "t": "Dresses and skirts adjusted",
+   "f": "Adjusting length and waist so dresses and skirts feel just right"
+  },
+  {
+   "d": 148,
+   "lv": "intermediate",
+   "t": "History of jeans",
+   "f": "How denim work trousers became a global everyday garment"
+  },
+  {
+   "d": 149,
+   "lv": "intermediate",
+   "t": "History of the T-shirt",
+   "f": "From underwear to a classic of casual style around the world"
+  },
+  {
+   "d": 150,
+   "lv": "intermediate",
+   "t": "The trench coat story",
+   "f": "How a practical coat for rain became a timeless classic"
+  },
+  {
+   "d": 151,
+   "lv": "intermediate",
+   "t": "The little black dress",
+   "f": "How Coco Chanel helped popularise a simple black dress as a classic"
+  },
+  {
+   "d": 152,
+   "lv": "intermediate",
+   "t": "The white shirt through time",
+   "f": "Why the white shirt remains a versatile staple across styles"
+  },
+  {
+   "d": 153,
+   "lv": "intermediate",
+   "t": "History of sneakers",
+   "f": "How sports shoes became everyday fashion and collector items"
+  },
+  {
+   "d": 154,
+   "lv": "intermediate",
+   "t": "The suit through history",
+   "f": "How tailoring developed over centuries into the modern suit"
+  },
+  {
+   "d": 155,
+   "lv": "intermediate",
+   "t": "Clothes around the world",
+   "f": "Introducing traditional garments from different cultures with respect"
+  },
+  {
+   "d": 156,
+   "lv": "intermediate",
+   "t": "The kimono",
+   "f": "The history, shape and occasions of Japan's traditional garment"
+  },
+  {
+   "d": 157,
+   "lv": "intermediate",
+   "t": "The sari",
+   "f": "How the sari is draped and worn across South Asia in many regional styles"
+  },
+  {
+   "d": 158,
+   "lv": "intermediate",
+   "t": "Kente cloth",
+   "f": "The colourful woven textile from Ghana and the meaning of its patterns"
+  },
+  {
+   "d": 159,
+   "lv": "intermediate",
+   "t": "Batik art",
+   "f": "The wax-resist dyeing technique famous in Indonesia and other regions"
+  },
+  {
+   "d": 160,
+   "lv": "intermediate",
+   "t": "Tartan and its patterns",
+   "f": "The Scottish woven pattern and its connection to places and families"
+  },
+  {
+   "d": 161,
+   "lv": "intermediate",
+   "t": "The hanbok",
+   "f": "Korea's traditional garment with its graceful lines and bright colours"
+  },
+  {
+   "d": 162,
+   "lv": "intermediate",
+   "t": "The poncho and Andean textiles",
+   "f": "Woven ponchos and colourful textiles from the Andes"
+  },
+  {
+   "d": 163,
+   "lv": "intermediate",
+   "t": "Appreciating cultural dress",
+   "f": "Learning about traditional garments respectfully and understanding their meaning"
+  },
+  {
+   "d": 164,
+   "lv": "intermediate",
+   "t": "Review: tailoring and heritage",
+   "f": "Looking back at alterations, garment histories and cultural clothing"
+  },
+  {
+   "d": 165,
+   "lv": "intermediate",
+   "t": "Shoes: building a small collection",
+   "f": "Choosing a few versatile pairs that cover most of your daily needs"
+  },
+  {
+   "d": 166,
+   "lv": "intermediate",
+   "t": "Matching shoes to outfits",
+   "f": "How shoe shape, colour and formality complete an outfit"
+  },
+  {
+   "d": 167,
+   "lv": "intermediate",
+   "t": "Comfortable shoes that look good",
+   "f": "Finding supportive shoes that you can walk in all day with style"
+  },
+  {
+   "d": 168,
+   "lv": "intermediate",
+   "t": "Bags for different occasions",
+   "f": "Choosing between everyday, work, travel and evening bags"
+  },
+  {
+   "d": 169,
+   "lv": "intermediate",
+   "t": "Caring for leather goods",
+   "f": "Cleaning, conditioning and storing leather bags, belts and shoes"
+  },
+  {
+   "d": 170,
+   "lv": "intermediate",
+   "t": "Jewellery styles",
+   "f": "Minimal, statement, vintage and handmade jewellery and how to mix them"
+  },
+  {
+   "d": 171,
+   "lv": "intermediate",
+   "t": "Layering necklaces and rings",
+   "f": "Combining pieces of different lengths and textures with balance"
+  },
+  {
+   "d": 172,
+   "lv": "intermediate",
+   "t": "Choosing earrings",
+   "f": "Studs, hoops and drops, and how earrings frame the face"
+  },
+  {
+   "d": 173,
+   "lv": "intermediate",
+   "t": "Scarves: ten ways to tie",
+   "f": "Practical and decorative ways to wear a scarf around the neck, hair or bag"
+  },
+  {
+   "d": 174,
+   "lv": "intermediate",
+   "t": "Hats with confidence",
+   "f": "Choosing a hat shape and wearing it with ease in different seasons"
+  },
+  {
+   "d": 175,
+   "lv": "intermediate",
+   "t": "Belts in depth",
+   "f": "Widths, buckles and materials, and placing a belt to shape an outfit"
+  },
+  {
+   "d": 176,
+   "lv": "intermediate",
+   "t": "Ties and pocket squares",
+   "f": "Tie knots, widths and pocket squares for a smart finishing touch"
+  },
+  {
+   "d": 177,
+   "lv": "intermediate",
+   "t": "Socks as a style statement",
+   "f": "Using patterned or coloured socks to add personality to an outfit"
+  },
+  {
+   "d": 178,
+   "lv": "intermediate",
+   "t": "Eyewear as an accessory",
+   "f": "Choosing frames that match your face, lifestyle and personal style"
+  },
+  {
+   "d": 179,
+   "lv": "intermediate",
+   "t": "Hair accessories",
+   "f": "Clips, bands and scarves that finish a look and keep hair practical"
+  },
+  {
+   "d": 180,
+   "lv": "intermediate",
+   "t": "Statement pieces",
+   "f": "Using one bold item to give an outfit a focal point"
+  },
+  {
+   "d": 181,
+   "lv": "intermediate",
+   "t": "Accessorising without overdoing",
+   "f": "Balancing accessories so each one has space to shine"
+  },
+  {
+   "d": 182,
+   "lv": "intermediate",
+   "t": "Review: shoes and accessories",
+   "f": "Looking back at shoes, bags and accessories that complete your style"
+  },
+  {
+   "d": 183,
+   "lv": "intermediate",
+   "t": "Smart shopping habits",
+   "f": "Waiting before buying, checking your wardrobe and asking if a piece adds value"
+  },
+  {
+   "d": 184,
+   "lv": "intermediate",
+   "t": "Spotting quality in shops",
+   "f": "Feeling fabric weight, checking pattern matching and reading fibre labels"
+  },
+  {
+   "d": 185,
+   "lv": "intermediate",
+   "t": "The fitting room checklist",
+   "f": "Questions to ask yourself in the fitting room before deciding to buy"
+  },
+  {
+   "d": 186,
+   "lv": "intermediate",
+   "t": "Shopping on a budget",
+   "f": "Planning, comparing and choosing versatile pieces to make a small budget work"
+  },
+  {
+   "d": 187,
+   "lv": "intermediate",
+   "t": "Vintage shopping guide",
+   "f": "Finding, checking and styling vintage clothes from past decades"
+  },
+  {
+   "d": 188,
+   "lv": "intermediate",
+   "t": "Clothing swaps",
+   "f": "Exchanging clothes with friends or community groups to refresh your wardrobe"
+  },
+  {
+   "d": 189,
+   "lv": "intermediate",
+   "t": "Renting clothes for occasions",
+   "f": "Renting outfits for special events instead of buying something worn once"
+  },
+  {
+   "d": 190,
+   "lv": "intermediate",
+   "t": "Returning and exchanging wisely",
+   "f": "Keeping receipts and tags until you are sure a piece is right for you"
+  },
+  {
+   "d": 191,
+   "lv": "intermediate",
+   "t": "Avoiding impulse buys",
+   "f": "Recognising sales pressure and pausing before buying on a whim"
+  },
+  {
+   "d": 192,
+   "lv": "intermediate",
+   "t": "Building a wish list",
+   "f": "Keeping a list of pieces you really need so shopping stays focused"
+  },
+  {
+   "d": 193,
+   "lv": "intermediate",
+   "t": "Smart shopping in practice",
+   "f": "Putting quality, budget and second-hand habits together on a real or imagined shopping trip"
+  },
+  {
+   "d": 194,
+   "lv": "intermediate",
+   "t": "Dressing for special events",
+   "f": "Planning outfits for birthdays, ceremonies and celebrations with joy"
+  },
+  {
+   "d": 195,
+   "lv": "intermediate",
+   "t": "Wedding guest dress basics",
+   "f": "Common etiquette like avoiding white in many cultures and checking the dress code"
+  },
+  {
+   "d": 196,
+   "lv": "intermediate",
+   "t": "Dressing for a party",
+   "f": "Choosing festive outfits that feel fun, comfortable and right for the venue"
+  },
+  {
+   "d": 197,
+   "lv": "intermediate",
+   "t": "Dressing for a celebration abroad",
+   "f": "Learning local customs and dress expectations before special events"
+  },
+  {
+   "d": 198,
+   "lv": "intermediate",
+   "t": "Business travel outfits",
+   "f": "Mixing a few smart pieces to look professional during work trips"
+  },
+  {
+   "d": 199,
+   "lv": "intermediate",
+   "t": "Dressing for presentations",
+   "f": "Choosing comfortable, polished clothes that let you move and speak freely"
+  },
+  {
+   "d": 200,
+   "lv": "intermediate",
+   "t": "Video call style",
+   "f": "Colours, necklines and simple details that look good on camera"
+  },
+  {
+   "d": 201,
+   "lv": "intermediate",
+   "t": "Creative workplace style",
+   "f": "Expressing personality at work while respecting the setting"
+  },
+  {
+   "d": 202,
+   "lv": "intermediate",
+   "t": "Uniforms with personality",
+   "f": "Adding small personal touches when you wear a uniform or dress code"
+  },
+  {
+   "d": 203,
+   "lv": "intermediate",
+   "t": "Dressing for the theatre or concert",
+   "f": "Smart casual choices for cultural evenings out"
+  },
+  {
+   "d": 204,
+   "lv": "intermediate",
+   "t": "Beach and pool style",
+   "f": "Swimwear, cover-ups and sandals for comfortable beach days"
+  },
+  {
+   "d": 205,
+   "lv": "intermediate",
+   "t": "Winter holiday outfits",
+   "f": "Warm, stylish layers for snowy trips and cold-weather adventures"
+  },
+  {
+   "d": 206,
+   "lv": "intermediate",
+   "t": "City break style",
+   "f": "Comfortable walking shoes and versatile outfits for exploring cities"
+  },
+  {
+   "d": 207,
+   "lv": "intermediate",
+   "t": "Festival and outdoor event style",
+   "f": "Practical, fun outfits for long days outdoors with changing weather"
+  },
+  {
+   "d": 208,
+   "lv": "intermediate",
+   "t": "Dressing for comfort while travelling",
+   "f": "Soft fabrics, layers and easy shoes for flights and train rides"
+  },
+  {
+   "d": 209,
+   "lv": "intermediate",
+   "t": "Cardigans styled many ways",
+   "f": "Wearing a cardigan open, buttoned, belted or over the shoulders for different looks"
+  },
+  {
+   "d": 210,
+   "lv": "intermediate",
+   "t": "The versatile midi skirt",
+   "f": "Styling a midi skirt with sneakers, boots, knits or shirts for any day"
+  },
+  {
+   "d": 211,
+   "lv": "intermediate",
+   "t": "Wide-leg trousers styled",
+   "f": "Balancing wide-leg trousers with fitted tops and the right shoes"
+  },
+  {
+   "d": 212,
+   "lv": "intermediate",
+   "t": "The power of a simple dress",
+   "f": "How one plain dress becomes many outfits with layers and accessories"
+  },
+  {
+   "d": 213,
+   "lv": "intermediate",
+   "t": "Styling a denim jacket",
+   "f": "Pairing a denim jacket with dresses, trousers and even other denim"
+  },
+  {
+   "d": 214,
+   "lv": "intermediate",
+   "t": "The hoodie dressed up",
+   "f": "Wearing a hoodie under a coat or blazer for a relaxed yet neat look"
+  },
+  {
+   "d": 215,
+   "lv": "intermediate",
+   "t": "Styling a turtleneck",
+   "f": "Wearing turtlenecks alone or layered under shirts, dresses and jackets"
+  },
+  {
+   "d": 216,
+   "lv": "intermediate",
+   "t": "Wearing light colours in winter",
+   "f": "How cream, white and pastels can look fresh and warm in cold months"
+  },
+  {
+   "d": 217,
+   "lv": "intermediate",
+   "t": "Wearing dark colours in summer",
+   "f": "Using light fabrics and loose shapes to enjoy dark colours in the heat"
+  },
+  {
+   "d": 218,
+   "lv": "intermediate",
+   "t": "Day to evening outfits",
+   "f": "Changing shoes, jewellery or a layer to take an outfit from day to night"
+  },
+  {
+   "d": 219,
+   "lv": "intermediate",
+   "t": "Review: occasions and events",
+   "f": "Looking back at outfits for work, events and travel"
+  },
+  {
+   "d": 220,
+   "lv": "intermediate",
+   "t": "Fabric deep dive: natural fibres",
+   "f": "Cotton, linen, wool, silk, hemp and cashmere: properties and care"
+  },
+  {
+   "d": 221,
+   "lv": "intermediate",
+   "t": "Fabric deep dive: man-made fibres",
+   "f": "Viscose, lyocell, modal and synthetics: how they are made and used"
+  },
+  {
+   "d": 222,
+   "lv": "intermediate",
+   "t": "Knits and wovens",
+   "f": "The difference between knitted and woven fabrics and how they behave"
+  },
+  {
+   "d": 223,
+   "lv": "intermediate",
+   "t": "Weaves you should know",
+   "f": "Twill, satin, plain weave and herringbone, and where you find them"
+  },
+  {
+   "d": 224,
+   "lv": "intermediate",
+   "t": "Fabric weight and drape",
+   "f": "How heavy or light fabrics fall and shape the look of a garment"
+  },
+  {
+   "d": 225,
+   "lv": "intermediate",
+   "t": "Breathability and comfort",
+   "f": "Choosing fabrics that keep you comfortable in different climates"
+  },
+  {
+   "d": 226,
+   "lv": "intermediate",
+   "t": "Prints and their origins",
+   "f": "Paisley, houndstooth, gingham and polka dots and where they come from"
+  },
+  {
+   "d": 227,
+   "lv": "intermediate",
+   "t": "Stripes through history",
+   "f": "How stripes moved from sailor uniforms to a classic of everyday fashion"
+  },
+  {
+   "d": 228,
+   "lv": "intermediate",
+   "t": "Checks and plaids",
+   "f": "Different check patterns and how to style them in modern outfits"
+  },
+  {
+   "d": 229,
+   "lv": "intermediate",
+   "t": "Florals beyond spring",
+   "f": "Wearing floral prints in every season with the right colours and layers"
+  },
+  {
+   "d": 230,
+   "lv": "intermediate",
+   "t": "Animal-inspired prints",
+   "f": "Leopard, zebra and snake-style prints as bold, playful neutrals"
+  },
+  {
+   "d": 231,
+   "lv": "intermediate",
+   "t": "Geometric and abstract prints",
+   "f": "Wearing graphic prints with confidence in modern outfits"
+  },
+  {
+   "d": 232,
+   "lv": "intermediate",
+   "t": "Choosing fabrics and prints together",
+   "f": "Combining what you know about fibres, weaves and patterns to pick a great garment"
+  },
+  {
+   "d": 233,
+   "lv": "intermediate",
+   "t": "Seasonless pieces",
+   "f": "Clothes that work all year round with simple layering changes"
+  },
+  {
+   "d": 234,
+   "lv": "intermediate",
+   "t": "Elevating basics with details",
+   "f": "Using rolled sleeves, a belt or good shoes to make basics look special"
+  },
+  {
+   "d": 235,
+   "lv": "intermediate",
+   "t": "Mixing high and low",
+   "f": "Combining affordable basics with a few special pieces in one outfit"
+  },
+  {
+   "d": 236,
+   "lv": "intermediate",
+   "t": "Repeating outfits proudly",
+   "f": "Why wearing favourite outfits often is smart, sustainable and stylish"
+  },
+  {
+   "d": 237,
+   "lv": "intermediate",
+   "t": "Outfits for long days",
+   "f": "Choosing comfortable pieces that still look neat from morning to night"
+  },
+  {
+   "d": 238,
+   "lv": "intermediate",
+   "t": "From weekend to work",
+   "f": "Switching a few pieces to turn a relaxed outfit into a work-ready one"
+  },
+  {
+   "d": 239,
+   "lv": "intermediate",
+   "t": "Smart and comfortable together",
+   "f": "Soft tailoring, stretch fabrics and easy shoes for polished comfort"
+  },
+  {
+   "d": 240,
+   "lv": "intermediate",
+   "t": "Packing for a weekend",
+   "f": "A small bag with a few coordinated pieces for a short trip"
+  },
+  {
+   "d": 241,
+   "lv": "intermediate",
+   "t": "Dressing in five minutes",
+   "f": "Simple systems and go-to outfits for fast, stress-free mornings"
+  },
+  {
+   "d": 242,
+   "lv": "intermediate",
+   "t": "Layering indoors and outdoors",
+   "f": "Planning layers for heated rooms and cold streets in one day"
+  },
+  {
+   "d": 243,
+   "lv": "intermediate",
+   "t": "Rain-ready style",
+   "f": "Stylish waterproof shoes, coats and umbrellas that make wet days easier"
+  },
+  {
+   "d": 244,
+   "lv": "intermediate",
+   "t": "Your style story so far",
+   "f": "Reflecting on how your style has changed since day one"
+  },
+  {
+   "d": 245,
+   "lv": "intermediate",
+   "t": "Refining your three words",
+   "f": "Updating the style words that guide your choices with new insights"
+  },
+  {
+   "d": 246,
+   "lv": "intermediate",
+   "t": "Editing your wardrobe again",
+   "f": "A second wardrobe review using everything learned about fit and style"
+  },
+  {
+   "d": 247,
+   "lv": "intermediate",
+   "t": "Filling wardrobe gaps",
+   "f": "Identifying the few pieces that would unlock many new outfits"
+  },
+  {
+   "d": 248,
+   "lv": "intermediate",
+   "t": "Outfit photos and notes",
+   "f": "Taking photos of favourite outfits to remember what works"
+  },
+  {
+   "d": 249,
+   "lv": "intermediate",
+   "t": "Planning a week of outfits",
+   "f": "Creating a week of looks from your wardrobe with variety and ease"
+  },
+  {
+   "d": 250,
+   "lv": "intermediate",
+   "t": "Mid-path review",
+   "f": "Celebrating the intermediate stage and choosing goals for the advanced path"
+  },
+  {
+   "d": 251,
+   "lv": "advanced",
+   "t": "Fashion history: early 1900s",
+   "f": "How corsets gave way to looser, more practical clothing in the early twentieth century"
+  },
+  {
+   "d": 252,
+   "lv": "advanced",
+   "t": "Fashion history: the 1920s",
+   "f": "Dropped waists, shorter hemlines and the energy of the Jazz Age"
+  },
+  {
+   "d": 253,
+   "lv": "advanced",
+   "t": "Fashion history: the 1930s and 1940s",
+   "f": "Bias-cut elegance, wartime practicality and the rise of utility clothing"
+  },
+  {
+   "d": 254,
+   "lv": "advanced",
+   "t": "Fashion history: the 1950s",
+   "f": "Full skirts, tailored suits and the first wave of teen fashion"
+  },
+  {
+   "d": 255,
+   "lv": "advanced",
+   "t": "Fashion history: the 1960s",
+   "f": "Mini skirts, mod style, bold colours and youth-led fashion"
+  },
+  {
+   "d": 256,
+   "lv": "advanced",
+   "t": "Fashion history: the 1970s",
+   "f": "Flares, earthy tones, disco shine and the rise of casual wear"
+  },
+  {
+   "d": 257,
+   "lv": "advanced",
+   "t": "Fashion history: the 1980s",
+   "f": "Power shoulders, bright colours and fitness-inspired clothing"
+  },
+  {
+   "d": 258,
+   "lv": "advanced",
+   "t": "Fashion history: the 1990s",
+   "f": "Minimalism, grunge and casual denim as new everyday codes"
+  },
+  {
+   "d": 259,
+   "lv": "advanced",
+   "t": "Fashion history: the 2000s",
+   "f": "Low-rise jeans, logos and the growth of fast fashion and online shopping"
+  },
+  {
+   "d": 260,
+   "lv": "advanced",
+   "t": "What history teaches about style",
+   "f": "How past decades inspire today's clothes and why classics keep returning"
+  },
+  {
+   "d": 261,
+   "lv": "advanced",
+   "t": "Famous designers and their ideas",
+   "f": "How designers like Coco Chanel and Yves Saint Laurent changed modern dress"
+  },
+  {
+   "d": 262,
+   "lv": "advanced",
+   "t": "Haute couture explained",
+   "f": "What couture means, how it is made by hand and why it matters to fashion"
+  },
+  {
+   "d": 263,
+   "lv": "advanced",
+   "t": "Ready-to-wear explained",
+   "f": "How standard sizes and collections brought designer ideas to more people"
+  },
+  {
+   "d": 264,
+   "lv": "advanced",
+   "t": "How a garment is made",
+   "f": "From design and pattern to cutting, sewing and finishing"
+  },
+  {
+   "d": 265,
+   "lv": "advanced",
+   "t": "From fibre to fabric",
+   "f": "How fibres are spun into yarn and woven or knitted into fabric"
+  },
+  {
+   "d": 266,
+   "lv": "advanced",
+   "t": "Dyeing and colour",
+   "f": "How fabrics get their colour, from natural dyes to modern methods"
+  },
+  {
+   "d": 267,
+   "lv": "advanced",
+   "t": "Review: fashion history",
+   "f": "Looking back at decades, designers and how clothes are made"
+  },
+  {
+   "d": 268,
+   "lv": "advanced",
+   "t": "Trends versus timeless",
+   "f": "How to enjoy a trend while keeping a wardrobe that lasts for years"
+  },
+  {
+   "d": 269,
+   "lv": "advanced",
+   "t": "Spotting a lasting classic",
+   "f": "Signs that a style will last: simple lines, good fabric and versatility"
+  },
+  {
+   "d": 270,
+   "lv": "advanced",
+   "t": "Adapting trends to your style",
+   "f": "Trying a trend through one accessory or colour that fits your style words"
+  },
+  {
+   "d": 271,
+   "lv": "advanced",
+   "t": "Fashion week explained",
+   "f": "What fashion weeks are and how collections influence what reaches shops"
+  },
+  {
+   "d": 272,
+   "lv": "advanced",
+   "t": "Reading fashion critically",
+   "f": "Thinking about images, advertising and editing when looking at fashion media"
+  },
+  {
+   "d": 273,
+   "lv": "advanced",
+   "t": "Body image and fashion media",
+   "f": "Remembering that all bodies are good bodies and media images are often edited"
+  },
+  {
+   "d": 274,
+   "lv": "advanced",
+   "t": "Dressing for yourself",
+   "f": "Choosing clothes for your own joy and comfort instead of outside expectations"
+  },
+  {
+   "d": 275,
+   "lv": "advanced",
+   "t": "Style confidence habits",
+   "f": "Small habits that help you feel confident in what you wear every day"
+  },
+  {
+   "d": 276,
+   "lv": "advanced",
+   "t": "Breaking your own style rules",
+   "f": "Trying something new that you once thought was not for you"
+  },
+  {
+   "d": 277,
+   "lv": "advanced",
+   "t": "Sustainable fashion basics",
+   "f": "How choices like buying less, better and second-hand can reduce waste"
+  },
+  {
+   "d": 278,
+   "lv": "advanced",
+   "t": "The life cycle of clothes",
+   "f": "From fibre to wardrobe to resale or recycling, and how to extend each stage"
+  },
+  {
+   "d": 279,
+   "lv": "advanced",
+   "t": "Caring for clothes to last",
+   "f": "Washing less, using gentle cycles and airing clothes to make them last longer"
+  },
+  {
+   "d": 280,
+   "lv": "advanced",
+   "t": "Mending as a skill",
+   "f": "Visible and invisible mending techniques to give clothes a longer life"
+  },
+  {
+   "d": 281,
+   "lv": "advanced",
+   "t": "Visible mending art",
+   "f": "Using decorative stitches and patches to make repairs a style statement"
+  },
+  {
+   "d": 282,
+   "lv": "advanced",
+   "t": "Upcycling old clothes",
+   "f": "Turning old garments into new pieces, accessories or home items"
+  },
+  {
+   "d": 283,
+   "lv": "advanced",
+   "t": "Natural dyeing at home",
+   "f": "Using simple plant-based dyes like onion skins to refresh faded fabric safely"
+  },
+  {
+   "d": 284,
+   "lv": "advanced",
+   "t": "Review: sustainability and care",
+   "f": "Looking back at trends, confidence and sustainable habits"
+  },
+  {
+   "d": 285,
+   "lv": "advanced",
+   "t": "Reading fibre labels deeply",
+   "f": "Understanding blends, certifications and what labels can tell you"
+  },
+  {
+   "d": 286,
+   "lv": "advanced",
+   "t": "Textile certifications",
+   "f": "What common organic and safety textile labels generally indicate"
+  },
+  {
+   "d": 287,
+   "lv": "advanced",
+   "t": "Slow fashion",
+   "f": "Choosing timeless pieces, small makers and thoughtful purchases"
+  },
+  {
+   "d": 288,
+   "lv": "advanced",
+   "t": "Supporting local makers",
+   "f": "Discovering local designers, tailors and artisans in your area"
+  },
+  {
+   "d": 289,
+   "lv": "advanced",
+   "t": "Handmade clothing",
+   "f": "Exploring knitting, sewing and crochet as ways to make your own clothes"
+  },
+  {
+   "d": 290,
+   "lv": "advanced",
+   "t": "Sewing basics for style",
+   "f": "Learning simple seams and hems to start making or adjusting clothes"
+  },
+  {
+   "d": 291,
+   "lv": "advanced",
+   "t": "Knitting and crochet style",
+   "f": "How handmade knits add warmth and personality to a wardrobe"
+  },
+  {
+   "d": 292,
+   "lv": "advanced",
+   "t": "Customising clothes",
+   "f": "Adding embroidery, patches or new buttons to make pieces your own"
+  },
+  {
+   "d": 293,
+   "lv": "advanced",
+   "t": "Embroidery basics",
+   "f": "Simple stitches to personalise shirts, jackets and bags"
+  },
+  {
+   "d": 294,
+   "lv": "advanced",
+   "t": "Your style signature",
+   "f": "Defining the colours, shapes and details that make your style recognisable"
+  },
+  {
+   "d": 295,
+   "lv": "advanced",
+   "t": "Building a long-term wardrobe plan",
+   "f": "Planning purchases over seasons to build a wardrobe that lasts"
+  },
+  {
+   "d": 296,
+   "lv": "advanced",
+   "t": "Seasonal wardrobe planning",
+   "f": "Reviewing needs at the start of each season and planning smart additions"
+  },
+  {
+   "d": 297,
+   "lv": "advanced",
+   "t": "Investment pieces",
+   "f": "Choosing a few high-quality items, like a coat or shoes, that you will wear for years"
+  },
+  {
+   "d": 298,
+   "lv": "advanced",
+   "t": "Travel capsule mastery",
+   "f": "Packing for two weeks with one small bag and many outfit options"
+  },
+  {
+   "d": 299,
+   "lv": "advanced",
+   "t": "Dressing for different climates",
+   "f": "Adapting your style to tropical, dry, temperate or cold places"
+  },
+  {
+   "d": 300,
+   "lv": "advanced",
+   "t": "Style across cultures",
+   "f": "How ideas of elegance and modesty differ around the world"
+  },
+  {
+   "d": 301,
+   "lv": "advanced",
+   "t": "Fashion capitals of the world",
+   "f": "Paris, Milan, London, New York, Tokyo and others as centres of fashion"
+  },
+  {
+   "d": 302,
+   "lv": "advanced",
+   "t": "Japanese street style",
+   "f": "The creativity and layering found in Tokyo's street fashion"
+  },
+  {
+   "d": 303,
+   "lv": "advanced",
+   "t": "Italian elegance",
+   "f": "Tailoring, quality fabrics and relaxed sophistication in Italian style"
+  },
+  {
+   "d": 304,
+   "lv": "advanced",
+   "t": "French effortless chic",
+   "f": "Simple basics, neutral colours and a relaxed, polished feel"
+  },
+  {
+   "d": 305,
+   "lv": "advanced",
+   "t": "Scandinavian style",
+   "f": "Clean lines, functional layers and calm colours from Nordic fashion"
+  },
+  {
+   "d": 306,
+   "lv": "advanced",
+   "t": "Brazilian colour and ease",
+   "f": "Light fabrics, bright colours and relaxed beachwear culture"
+  },
+  {
+   "d": 307,
+   "lv": "advanced",
+   "t": "West African fashion",
+   "f": "Bold wax prints, tailoring and creative craftsmanship from West Africa"
+  },
+  {
+   "d": 308,
+   "lv": "advanced",
+   "t": "Review: style around the world",
+   "f": "Looking back at global styles and the ideas you want to borrow"
+  },
+  {
+   "d": 309,
+   "lv": "advanced",
+   "t": "Styling for photos",
+   "f": "Choosing colours, fits and simple details that look great in pictures"
+  },
+  {
+   "d": 310,
+   "lv": "advanced",
+   "t": "Outfit flat lays",
+   "f": "Arranging outfits on a surface to plan looks and share ideas"
+  },
+  {
+   "d": 311,
+   "lv": "advanced",
+   "t": "Styling a friend",
+   "f": "Asking questions, listening and suggesting pieces that fit their personality"
+  },
+  {
+   "d": 312,
+   "lv": "advanced",
+   "t": "Personal shopping skills",
+   "f": "Helping someone shop by focusing on their needs, budget and style words"
+  },
+  {
+   "d": 313,
+   "lv": "advanced",
+   "t": "Building a lookbook",
+   "f": "Collecting your best outfits in a personal style guide for future inspiration"
+  },
+  {
+   "d": 314,
+   "lv": "advanced",
+   "t": "Dressing for confidence on big days",
+   "f": "Planning a comfortable outfit you love for important moments"
+  },
+  {
+   "d": 315,
+   "lv": "advanced",
+   "t": "The power of a good coat",
+   "f": "How one well-chosen coat can lift every outfit in colder months"
+  },
+  {
+   "d": 316,
+   "lv": "advanced",
+   "t": "The perfect white shirt",
+   "f": "Finding a white shirt that fits well and styling it in many ways"
+  },
+  {
+   "d": 317,
+   "lv": "advanced",
+   "t": "The ideal jeans wardrobe",
+   "f": "Choosing a few pairs of jeans in different washes and cuts"
+  },
+  {
+   "d": 318,
+   "lv": "advanced",
+   "t": "Knitwear wardrobe planning",
+   "f": "Building a small knitwear collection for comfort and style"
+  },
+  {
+   "d": 319,
+   "lv": "advanced",
+   "t": "Shoe wardrobe planning",
+   "f": "Choosing shoes for daily wear, smart occasions and outdoor activities"
+  },
+  {
+   "d": 320,
+   "lv": "advanced",
+   "t": "Outerwear wardrobe planning",
+   "f": "Coats and jackets for every season and occasion in your climate"
+  },
+  {
+   "d": 321,
+   "lv": "advanced",
+   "t": "Accessory wardrobe planning",
+   "f": "A small, versatile set of accessories that refreshes any outfit"
+  },
+  {
+   "d": 322,
+   "lv": "advanced",
+   "t": "Colour confidence advanced",
+   "f": "Mixing bold colours together with intention and balance"
+  },
+  {
+   "d": 323,
+   "lv": "advanced",
+   "t": "Tonal dressing",
+   "f": "Wearing different shades of one colour for a rich, refined look"
+  },
+  {
+   "d": 324,
+   "lv": "advanced",
+   "t": "Pattern mixing advanced",
+   "f": "Combining three patterns or more by scale, colour and rhythm"
+  },
+  {
+   "d": 325,
+   "lv": "advanced",
+   "t": "Texture mixing advanced",
+   "f": "Layering textures like knit, satin and suede for depth and interest"
+  },
+  {
+   "d": 326,
+   "lv": "advanced",
+   "t": "Silhouettes and shapes",
+   "f": "Playing with volume, structure and flow to create different outfit shapes"
+  },
+  {
+   "d": 327,
+   "lv": "advanced",
+   "t": "Oversized and fitted balance",
+   "f": "Combining relaxed and close-fitting pieces in a harmonious way"
+  },
+  {
+   "d": 328,
+   "lv": "advanced",
+   "t": "Review: advanced styling",
+   "f": "Looking back at styling skills, wardrobe planning and colour confidence"
+  },
+  {
+   "d": 329,
+   "lv": "advanced",
+   "t": "Fashion vocabulary",
+   "f": "Learning key fashion words, like silhouette, drape and hem, to describe clothes"
+  },
+  {
+   "d": 330,
+   "lv": "advanced",
+   "t": "Fashion words from other languages",
+   "f": "Words like chic, prêt-à-porter and sprezzatura and what they mean"
+  },
+  {
+   "d": 331,
+   "lv": "advanced",
+   "t": "Describing your style in words",
+   "f": "Explaining your style clearly to a shop assistant, tailor or friend"
+  },
+  {
+   "d": 332,
+   "lv": "advanced",
+   "t": "Talking about clothes across cultures",
+   "f": "Discussing clothing customs with curiosity and respect"
+  },
+  {
+   "d": 333,
+   "lv": "advanced",
+   "t": "Style and identity",
+   "f": "How clothing can show culture, community and personal values"
+  },
+  {
+   "d": 334,
+   "lv": "advanced",
+   "t": "Style at every life stage",
+   "f": "How style can evolve with new roles, places and experiences"
+  },
+  {
+   "d": 335,
+   "lv": "advanced",
+   "t": "Dressing for a new job",
+   "f": "Observing the workplace and adapting your wardrobe with confidence"
+  },
+  {
+   "d": 336,
+   "lv": "advanced",
+   "t": "Dressing after a move abroad",
+   "f": "Adapting your wardrobe to a new climate and local style"
+  },
+  {
+   "d": 337,
+   "lv": "advanced",
+   "t": "Wardrobe for a growing family",
+   "f": "Practical style tips for parents and children with busy lives"
+  },
+  {
+   "d": 338,
+   "lv": "advanced",
+   "t": "Style for students",
+   "f": "Building a fun, affordable wardrobe for classes, study and free time"
+  },
+  {
+   "d": 339,
+   "lv": "advanced",
+   "t": "Style on a tight budget advanced",
+   "f": "Making the most of few pieces with styling, swaps and care"
+  },
+  {
+   "d": 340,
+   "lv": "advanced",
+   "t": "Your fashion values",
+   "f": "Deciding what matters most to you: comfort, ethics, creativity or quality"
+  },
+  {
+   "d": 341,
+   "lv": "advanced",
+   "t": "Creating a style manifesto",
+   "f": "Writing a few sentences that describe your style and values"
+  },
+  {
+   "d": 342,
+   "lv": "advanced",
+   "t": "Style experiments",
+   "f": "Trying a new colour, shape or accessory for a week and noting how it feels"
+  },
+  {
+   "d": 343,
+   "lv": "advanced",
+   "t": "Dressing for the senses",
+   "f": "Choosing fabrics and fits that feel good to the touch and to move in"
+  },
+  {
+   "d": 344,
+   "lv": "advanced",
+   "t": "Fashion and art",
+   "f": "How art movements and artists have inspired clothing and textiles"
+  },
+  {
+   "d": 345,
+   "lv": "advanced",
+   "t": "Fashion and music",
+   "f": "How music scenes shaped styles like punk, hip hop and disco"
+  },
+  {
+   "d": 346,
+   "lv": "advanced",
+   "t": "Fashion and film",
+   "f": "Iconic costumes and how films can inspire timeless looks"
+  },
+  {
+   "d": 347,
+   "lv": "advanced",
+   "t": "Fashion and sport",
+   "f": "How sports clothing influenced everyday fashion over the decades"
+  },
+  {
+   "d": 348,
+   "lv": "advanced",
+   "t": "Fashion and technology",
+   "f": "Smart fabrics, 3D knitting and new materials shaping future clothes"
+  },
+  {
+   "d": 349,
+   "lv": "advanced",
+   "t": "The future of fashion",
+   "f": "Ideas like rental, resale, repair services and new fibres"
+  },
+  {
+   "d": 350,
+   "lv": "advanced",
+   "t": "Review: style and culture",
+   "f": "Looking back at vocabulary, identity and fashion's links to art and music"
+  },
+  {
+   "d": 351,
+   "lv": "advanced",
+   "t": "Clothes that tell stories",
+   "f": "Pieces with memories, origins or craft behind them and why we treasure them"
+  },
+  {
+   "d": 352,
+   "lv": "advanced",
+   "t": "Gifting clothes and accessories",
+   "f": "Choosing thoughtful clothing gifts by considering the other person's style"
+  },
+  {
+   "d": 353,
+   "lv": "advanced",
+   "t": "The joy of a personal uniform",
+   "f": "How a repeated go-to outfit can simplify life and become a signature"
+  },
+  {
+   "d": 354,
+   "lv": "advanced",
+   "t": "Dressing for wellbeing",
+   "f": "Choosing soft fabrics, colours you love and good fit for a pleasant day"
+  },
+  {
+   "d": 355,
+   "lv": "advanced",
+   "t": "Craft heritage in fashion",
+   "f": "How traditional crafts like weaving and lace-making live on in clothing today"
+  },
+  {
+   "d": 356,
+   "lv": "advanced",
+   "t": "Comfort and style at home",
+   "f": "Creating home outfits that feel relaxed and still make you smile"
+  },
+  {
+   "d": 357,
+   "lv": "advanced",
+   "t": "Your wardrobe one year later",
+   "f": "Comparing your wardrobe now with day one and noting the changes"
+  },
+  {
+   "d": 358,
+   "lv": "advanced",
+   "t": "Your favourite outfits of the year",
+   "f": "Choosing your top outfits and what makes them feel so right"
+  },
+  {
+   "d": 359,
+   "lv": "advanced",
+   "t": "Lessons from your style journey",
+   "f": "The biggest things you learned about clothes, fit and yourself"
+  },
+  {
+   "d": 360,
+   "lv": "advanced",
+   "t": "Updating your colour palette",
+   "f": "Refining your favourite colours based on what you loved wearing"
+  },
+  {
+   "d": 361,
+   "lv": "advanced",
+   "t": "Finalising your capsule",
+   "f": "Shaping a capsule wardrobe that reflects your style today"
+  },
+  {
+   "d": 362,
+   "lv": "advanced",
+   "t": "Planning next year's style",
+   "f": "Setting gentle style goals and a thoughtful shopping plan"
+  },
+  {
+   "d": 363,
+   "lv": "advanced",
+   "t": "Sharing your style knowledge",
+   "f": "Passing on fit, care and styling tips to friends and family"
+  },
+  {
+   "d": 364,
+   "lv": "advanced",
+   "t": "Celebrating your style",
+   "f": "Wearing a favourite outfit and enjoying how far you have come"
+  },
+  {
+   "d": 365,
+   "lv": "advanced",
+   "t": "Review: your 365-day style journey",
+   "f": "Celebrating a full year of style learning and planning the next chapter"
+  }
+ ]
+}

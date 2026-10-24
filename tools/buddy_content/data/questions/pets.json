@@ -1,0 +1,1305 @@
+{
+ "topic": "pets",
+ "questions": [
+  {
+   "id": "pets-001",
+   "lv": "any",
+   "i18n": {
+    "en": "What is your favourite animal, and what do you love most about it?",
+    "de": "Was ist dein Lieblingstier, und was magst du am meisten daran?",
+    "es": "¿Cuál es tu animal favorito y qué es lo que más te gusta de él?",
+    "fr": "Quel est ton animal préféré, et qu'est-ce que tu aimes le plus chez lui ?",
+    "it": "Qual è il tuo animale preferito e cosa ti piace di più di lui?",
+    "pt": "Qual é o teu animal preferido e o que é que mais gostas nele?",
+    "pt_BR": "Qual é o seu animal favorito e o que você mais gosta nele?"
+   }
+  },
+  {
+   "id": "pets-002",
+   "lv": "any",
+   "i18n": {
+    "en": "Did you grow up with pets? What do you remember about them?",
+    "de": "Bist du mit Haustieren aufgewachsen? Woran erinnerst du dich bei ihnen?",
+    "es": "¿Creciste con mascotas? ¿Qué recuerdas de ellas?",
+    "fr": "As-tu grandi avec des animaux ? Quels souvenirs en gardes-tu ?",
+    "it": "Sei cresciuto con degli animali? Cosa ricordi di loro?",
+    "pt": "Cresceste com animais de estimação? De que te lembras deles?",
+    "pt_BR": "Você cresceu com pets? Do que você se lembra deles?"
+   }
+  },
+  {
+   "id": "pets-003",
+   "lv": "any",
+   "i18n": {
+    "en": "Are you more of a dog person, a cat person, or something else entirely?",
+    "de": "Bist du eher ein Hundemensch, ein Katzenmensch oder etwas ganz anderes?",
+    "es": "¿Eres más de perros, de gatos o de algo totalmente distinto?",
+    "fr": "Es-tu plutôt chien, plutôt chat, ou tout autre chose ?",
+    "it": "Sei più tipo da cani, da gatti o da qualcosa di completamente diverso?",
+    "pt": "És mais de cães, de gatos ou de algo completamente diferente?",
+    "pt_BR": "Você é mais de cachorro, de gato ou de algo bem diferente?"
+   }
+  },
+  {
+   "id": "pets-004",
+   "lv": "any",
+   "i18n": {
+    "en": "If you have a pet, how did you choose its name?",
+    "de": "Wenn du ein Haustier hast: Wie hast du seinen Namen ausgesucht?",
+    "es": "Si tienes mascota, ¿cómo elegiste su nombre?",
+    "fr": "Si tu as un animal, comment as-tu choisi son nom ?",
+    "it": "Se hai un animale, come hai scelto il suo nome?",
+    "pt": "Se tens um animal, como escolheste o nome dele?",
+    "pt_BR": "Se você tem um pet, como escolheu o nome dele?"
+   }
+  },
+  {
+   "id": "pets-005",
+   "lv": "any",
+   "i18n": {
+    "en": "What is the funniest thing an animal has ever done in front of you?",
+    "de": "Was ist das Lustigste, das ein Tier je vor deinen Augen gemacht hat?",
+    "es": "¿Qué es lo más gracioso que ha hecho un animal delante de ti?",
+    "fr": "Quelle est la chose la plus drôle qu'un animal ait faite devant toi ?",
+    "it": "Qual è la cosa più buffa che un animale abbia mai fatto davanti a te?",
+    "pt": "Qual foi a coisa mais engraçada que um animal já fez à tua frente?",
+    "pt_BR": "Qual foi a coisa mais engraçada que um animal já fez na sua frente?"
+   }
+  },
+  {
+   "id": "pets-006",
+   "lv": "any",
+   "i18n": {
+    "en": "Which pet would you choose if you had unlimited space and time?",
+    "de": "Welches Haustier würdest du wählen, wenn du unbegrenzt Platz und Zeit hättest?",
+    "es": "¿Qué mascota elegirías si tuvieras espacio y tiempo ilimitados?",
+    "fr": "Quel animal choisirais-tu si tu avais un espace et un temps illimités ?",
+    "it": "Quale animale sceglieresti se avessi spazio e tempo illimitati?",
+    "pt": "Que animal escolherias se tivesses espaço e tempo ilimitados?",
+    "pt_BR": "Que pet você escolheria se tivesse espaço e tempo ilimitados?"
+   }
+  },
+  {
+   "id": "pets-007",
+   "lv": "any",
+   "i18n": {
+    "en": "How are pets usually kept where you live, in homes, gardens or on farms?",
+    "de": "Wie werden Haustiere bei dir in der Gegend meist gehalten: im Haus, im Garten oder auf dem Hof?",
+    "es": "¿Cómo se suelen tener las mascotas donde vives: en casa, en el jardín o en el campo?",
+    "fr": "Comment garde-t-on généralement les animaux chez toi : à la maison, au jardin ou à la ferme ?",
+    "it": "Come si tengono di solito gli animali dove vivi: in casa, in giardino o in campagna?",
+    "pt": "Como é que os animais costumam viver onde moras: em casa, no quintal ou no campo?",
+    "pt_BR": "Como os pets costumam viver onde você mora: dentro de casa, no quintal ou no sítio?"
+   }
+  },
+  {
+   "id": "pets-008",
+   "lv": "any",
+   "i18n": {
+    "en": "What does a perfect day with a pet look like for you?",
+    "de": "Wie sieht für dich ein perfekter Tag mit einem Haustier aus?",
+    "es": "¿Cómo sería para ti un día perfecto con una mascota?",
+    "fr": "À quoi ressemble pour toi une journée parfaite avec un animal ?",
+    "it": "Com'è per te una giornata perfetta con un animale?",
+    "pt": "Como seria para ti um dia perfeito com um animal?",
+    "pt_BR": "Como seria para você um dia perfeito com um pet?"
+   }
+  },
+  {
+   "id": "pets-009",
+   "lv": "any",
+   "i18n": {
+    "en": "Is there an animal you were once afraid of but now like?",
+    "de": "Gibt es ein Tier, vor dem du früher Angst hattest, das du jetzt aber magst?",
+    "es": "¿Hay algún animal que antes te daba miedo y ahora te gusta?",
+    "fr": "Y a-t-il un animal qui te faisait peur avant et que tu aimes maintenant ?",
+    "it": "C'è un animale di cui avevi paura e che ora ti piace?",
+    "pt": "Há algum animal de que tinhas medo e de que agora gostas?",
+    "pt_BR": "Tem algum animal de que você tinha medo e agora gosta?"
+   }
+  },
+  {
+   "id": "pets-010",
+   "lv": "any",
+   "i18n": {
+    "en": "Which famous animal from a film, book or cartoon do you like best?",
+    "de": "Welches berühmte Tier aus einem Film, Buch oder Zeichentrick magst du am liebsten?",
+    "es": "¿Qué animal famoso de una película, un libro o unos dibujos animados te gusta más?",
+    "fr": "Quel animal célèbre de film, de livre ou de dessin animé préfères-tu ?",
+    "it": "Quale animale famoso di un film, un libro o un cartone ti piace di più?",
+    "pt": "Que animal famoso de um filme, livro ou desenho animado preferes?",
+    "pt_BR": "Qual animal famoso de um filme, livro ou desenho você prefere?"
+   }
+  },
+  {
+   "id": "pets-011",
+   "lv": "any",
+   "i18n": {
+    "en": "What do you think pets teach children?",
+    "de": "Was können Kinder deiner Meinung nach von Haustieren lernen?",
+    "es": "¿Qué crees que las mascotas enseñan a los niños?",
+    "fr": "Selon toi, qu'est-ce que les animaux apprennent aux enfants ?",
+    "it": "Secondo te, cosa insegnano gli animali ai bambini?",
+    "pt": "O que achas que os animais ensinam às crianças?",
+    "pt_BR": "O que você acha que os pets ensinam às crianças?"
+   }
+  },
+  {
+   "id": "pets-012",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you know anyone with an unusual pet? What is it like?",
+    "de": "Kennst du jemanden mit einem ungewöhnlichen Haustier? Wie ist es so?",
+    "es": "¿Conoces a alguien con una mascota poco común? ¿Cómo es?",
+    "fr": "Connais-tu quelqu'un qui a un animal original ? Comment est-il ?",
+    "it": "Conosci qualcuno con un animale insolito? Com'è?",
+    "pt": "Conheces alguém com um animal invulgar? Como é?",
+    "pt_BR": "Você conhece alguém com um pet incomum? Como ele é?"
+   }
+  },
+  {
+   "id": "pets-013",
+   "lv": "any",
+   "i18n": {
+    "en": "What sound or habit of an animal instantly makes you smile?",
+    "de": "Welches Geräusch oder welche Angewohnheit eines Tieres bringt dich sofort zum Lächeln?",
+    "es": "¿Qué sonido o costumbre de un animal te hace sonreír al instante?",
+    "fr": "Quel bruit ou quelle habitude d'un animal te fait sourire tout de suite ?",
+    "it": "Quale verso o abitudine di un animale ti fa sorridere subito?",
+    "pt": "Que som ou hábito de um animal te faz sorrir logo?",
+    "pt_BR": "Que som ou mania de um animal te faz sorrir na hora?"
+   }
+  },
+  {
+   "id": "pets-014",
+   "lv": "any",
+   "i18n": {
+    "en": "How do people in your country usually feel about cats and dogs?",
+    "de": "Wie stehen die Menschen in deinem Land meist zu Katzen und Hunden?",
+    "es": "¿Qué suele pensar la gente de tu país sobre los gatos y los perros?",
+    "fr": "Que pensent généralement les gens de ton pays des chats et des chiens ?",
+    "it": "Cosa pensano di solito le persone nel tuo Paese di gatti e cani?",
+    "pt": "O que é que as pessoas no teu país costumam pensar de gatos e cães?",
+    "pt_BR": "O que as pessoas no seu país costumam achar de gatos e cachorros?"
+   }
+  },
+  {
+   "id": "pets-015",
+   "lv": "any",
+   "i18n": {
+    "en": "Would you rather adopt a playful young animal or a calm older one? Why?",
+    "de": "Würdest du lieber ein verspieltes junges Tier oder ein ruhiges älteres adoptieren? Warum?",
+    "es": "¿Preferirías adoptar un animal joven y juguetón o uno mayor y tranquilo? ¿Por qué?",
+    "fr": "Préférerais-tu adopter un jeune animal joueur ou un animal plus âgé et calme ? Pourquoi ?",
+    "it": "Preferiresti adottare un animale giovane e giocherellone o uno più anziano e tranquillo? Perché?",
+    "pt": "Preferias adotar um animal jovem e brincalhão ou um mais velho e calmo? Porquê?",
+    "pt_BR": "Você prefere adotar um bichinho jovem e brincalhão ou um mais velho e calmo? Por quê?"
+   }
+  },
+  {
+   "id": "pets-016",
+   "lv": "any",
+   "i18n": {
+    "en": "What is your favourite animal to watch in nature or at a sanctuary?",
+    "de": "Welches Tier beobachtest du am liebsten in der Natur oder in einem Tierschutzzentrum?",
+    "es": "¿Qué animal te gusta más observar en la naturaleza o en un santuario?",
+    "fr": "Quel animal préfères-tu observer dans la nature ou dans un refuge ?",
+    "it": "Quale animale ti piace di più osservare in natura o in un santuario?",
+    "pt": "Que animal mais gostas de observar na natureza ou num santuário?",
+    "pt_BR": "Qual animal você mais gosta de observar na natureza ou num santuário?"
+   }
+  },
+  {
+   "id": "pets-017",
+   "lv": "any",
+   "i18n": {
+    "en": "If your pet could talk for one day, what do you think it would say?",
+    "de": "Wenn dein Haustier einen Tag lang sprechen könnte, was würde es wohl sagen?",
+    "es": "Si tu mascota pudiera hablar un día, ¿qué crees que diría?",
+    "fr": "Si ton animal pouvait parler pendant une journée, que dirait-il à ton avis ?",
+    "it": "Se il tuo animale potesse parlare per un giorno, cosa pensi che direbbe?",
+    "pt": "Se o teu animal pudesse falar durante um dia, o que achas que diria?",
+    "pt_BR": "Se o seu pet pudesse falar por um dia, o que você acha que ele diria?"
+   }
+  },
+  {
+   "id": "pets-018",
+   "lv": "any",
+   "i18n": {
+    "en": "What is your favourite photo or video of an animal, and why?",
+    "de": "Was ist dein Lieblingsfoto oder -video von einem Tier, und warum?",
+    "es": "¿Cuál es tu foto o vídeo favorito de un animal y por qué?",
+    "fr": "Quelle est ta photo ou vidéo d'animal préférée, et pourquoi ?",
+    "it": "Qual è la tua foto o il tuo video preferito di un animale, e perché?",
+    "pt": "Qual é a tua foto ou vídeo preferido de um animal, e porquê?",
+    "pt_BR": "Qual é a sua foto ou vídeo favorito de um animal, e por quê?"
+   }
+  },
+  {
+   "id": "pets-019",
+   "lv": "any",
+   "i18n": {
+    "en": "Which pet do you think suits city life best?",
+    "de": "Welches Haustier passt deiner Meinung nach am besten zum Stadtleben?",
+    "es": "¿Qué mascota crees que se adapta mejor a la vida en la ciudad?",
+    "fr": "Selon toi, quel animal convient le mieux à la vie en ville ?",
+    "it": "Secondo te, quale animale si adatta meglio alla vita in città?",
+    "pt": "Que animal achas que se adapta melhor à vida na cidade?",
+    "pt_BR": "Qual pet você acha que combina mais com a vida na cidade?"
+   }
+  },
+  {
+   "id": "pets-020",
+   "lv": "any",
+   "i18n": {
+    "en": "Have you ever looked after a friend's pet? How did it go?",
+    "de": "Hast du schon mal auf das Haustier von Freunden aufgepasst? Wie lief es?",
+    "es": "¿Alguna vez has cuidado la mascota de un amigo? ¿Qué tal fue?",
+    "fr": "As-tu déjà gardé l'animal d'un ami ? Comment ça s'est passé ?",
+    "it": "Ti è mai capitato di badare all'animale di un amico? Com'è andata?",
+    "pt": "Já tomaste conta do animal de um amigo? Como correu?",
+    "pt_BR": "Você já cuidou do pet de um amigo? Como foi?"
+   }
+  },
+  {
+   "id": "pets-021",
+   "lv": "any",
+   "i18n": {
+    "en": "What do you think makes someone a great pet owner?",
+    "de": "Was macht deiner Meinung nach einen tollen Tierhalter aus?",
+    "es": "¿Qué crees que hace que alguien sea un gran dueño de mascotas?",
+    "fr": "Selon toi, qu'est-ce qui fait un excellent maître pour un animal ?",
+    "it": "Secondo te, cosa rende qualcuno un ottimo padrone di animali?",
+    "pt": "O que achas que faz de alguém um ótimo dono de animais?",
+    "pt_BR": "O que você acha que faz de alguém um ótimo tutor de pet?"
+   }
+  },
+  {
+   "id": "pets-022",
+   "lv": "any",
+   "i18n": {
+    "en": "Which animal do you think is the cleverest, and why?",
+    "de": "Welches Tier hältst du für das klügste, und warum?",
+    "es": "¿Qué animal crees que es el más inteligente y por qué?",
+    "fr": "Quel animal trouves-tu le plus intelligent, et pourquoi ?",
+    "it": "Quale animale pensi sia il più intelligente, e perché?",
+    "pt": "Que animal achas que é o mais inteligente, e porquê?",
+    "pt_BR": "Qual animal você acha que é o mais inteligente, e por quê?"
+   }
+  },
+  {
+   "id": "pets-023",
+   "lv": "any",
+   "i18n": {
+    "en": "Are there any traditional pet names that are popular in your language?",
+    "de": "Gibt es typische Tiernamen, die in deiner Sprache beliebt sind?",
+    "es": "¿Hay nombres de mascota típicos que sean populares en tu idioma?",
+    "fr": "Y a-t-il des noms d'animaux typiques qui sont populaires dans ta langue ?",
+    "it": "Ci sono nomi tipici per animali molto diffusi nella tua lingua?",
+    "pt": "Há nomes típicos de animais que sejam populares na tua língua?",
+    "pt_BR": "Tem nomes típicos de pets que são populares na sua língua?"
+   }
+  },
+  {
+   "id": "pets-024",
+   "lv": "any",
+   "i18n": {
+    "en": "What would be the hardest part of having a pet for you?",
+    "de": "Was wäre für dich das Schwierigste daran, ein Haustier zu haben?",
+    "es": "¿Qué sería para ti lo más difícil de tener una mascota?",
+    "fr": "Qu'est-ce qui serait le plus difficile pour toi dans le fait d'avoir un animal ?",
+    "it": "Quale sarebbe per te la parte più difficile dell'avere un animale?",
+    "pt": "O que seria para ti o mais difícil em ter um animal?",
+    "pt_BR": "O que seria para você a parte mais difícil de ter um pet?"
+   }
+  },
+  {
+   "id": "pets-025",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you prefer quiet pets or lively, noisy ones?",
+    "de": "Magst du lieber ruhige oder lebhafte, laute Haustiere?",
+    "es": "¿Prefieres mascotas tranquilas o animadas y ruidosas?",
+    "fr": "Préfères-tu les animaux calmes ou ceux qui sont vifs et bruyants ?",
+    "it": "Preferisci animali tranquilli o vivaci e rumorosi?",
+    "pt": "Preferes animais calmos ou animados e barulhentos?",
+    "pt_BR": "Você prefere pets tranquilos ou agitados e barulhentos?"
+   }
+  },
+  {
+   "id": "pets-026",
+   "lv": "any",
+   "i18n": {
+    "en": "What is one pet care habit you think more people should know about?",
+    "de": "Welche Gewohnheit in der Tierpflege sollten deiner Meinung nach mehr Menschen kennen?",
+    "es": "¿Qué hábito de cuidado de mascotas crees que más gente debería conocer?",
+    "fr": "Quelle habitude de soin des animaux devrait être mieux connue, selon toi ?",
+    "it": "Quale abitudine nella cura degli animali pensi che più persone dovrebbero conoscere?",
+    "pt": "Que hábito de cuidado com animais achas que mais pessoas deviam conhecer?",
+    "pt_BR": "Que hábito de cuidado com pets você acha que mais gente deveria conhecer?"
+   }
+  },
+  {
+   "id": "pets-027",
+   "lv": "any",
+   "i18n": {
+    "en": "Which animal would you love to see in the wild one day?",
+    "de": "Welches Tier würdest du gern einmal in freier Wildbahn sehen?",
+    "es": "¿Qué animal te encantaría ver algún día en libertad?",
+    "fr": "Quel animal aimerais-tu voir un jour dans la nature ?",
+    "it": "Quale animale ti piacerebbe vedere un giorno allo stato selvatico?",
+    "pt": "Que animal adorarias ver um dia em liberdade?",
+    "pt_BR": "Qual animal você adoraria ver um dia na natureza?"
+   }
+  },
+  {
+   "id": "pets-028",
+   "lv": "any",
+   "i18n": {
+    "en": "How do you think pets change the atmosphere of a home?",
+    "de": "Wie verändern Haustiere deiner Meinung nach die Stimmung in einem Zuhause?",
+    "es": "¿Cómo crees que las mascotas cambian el ambiente de un hogar?",
+    "fr": "Comment les animaux changent-ils l'ambiance d'une maison, selon toi ?",
+    "it": "Secondo te, come cambiano gli animali l'atmosfera di una casa?",
+    "pt": "Como é que achas que os animais mudam o ambiente de uma casa?",
+    "pt_BR": "Como você acha que os pets mudam o clima de uma casa?"
+   }
+  },
+  {
+   "id": "pets-029",
+   "lv": "any",
+   "i18n": {
+    "en": "What is a common myth about animals that you used to believe?",
+    "de": "Welchen verbreiteten Mythos über Tiere hast du früher geglaubt?",
+    "es": "¿Qué mito común sobre los animales creías antes?",
+    "fr": "Quel mythe courant sur les animaux croyais-tu autrefois ?",
+    "it": "Quale mito comune sugli animali credevi un tempo?",
+    "pt": "Que mito comum sobre animais é que acreditavas antes?",
+    "pt_BR": "Qual mito comum sobre animais você já acreditou?"
+   }
+  },
+  {
+   "id": "pets-030",
+   "lv": "any",
+   "i18n": {
+    "en": "Would you like a pet that you can train, or one that just does its own thing?",
+    "de": "Hättest du lieber ein Tier, das du trainieren kannst, oder eins, das sein eigenes Ding macht?",
+    "es": "¿Te gustaría una mascota que puedas adiestrar o una que vaya a su aire?",
+    "fr": "Aimerais-tu un animal que tu peux éduquer, ou un animal qui vit sa vie ?",
+    "it": "Vorresti un animale da addestrare o uno che fa di testa sua?",
+    "pt": "Gostavas de um animal que pudesses treinar ou de um que faz o que lhe apetece?",
+    "pt_BR": "Você gostaria de um pet que pudesse adestrar ou de um que faz o que quer?"
+   }
+  },
+  {
+   "id": "pets-031",
+   "lv": "any",
+   "i18n": {
+    "en": "What is the most beautiful animal you have ever seen up close?",
+    "de": "Was ist das schönste Tier, das du je aus der Nähe gesehen hast?",
+    "es": "¿Cuál es el animal más bonito que has visto de cerca?",
+    "fr": "Quel est le plus bel animal que tu aies vu de près ?",
+    "it": "Qual è l'animale più bello che tu abbia mai visto da vicino?",
+    "pt": "Qual é o animal mais bonito que já viste de perto?",
+    "pt_BR": "Qual é o animal mais bonito que você já viu de perto?"
+   }
+  },
+  {
+   "id": "pets-032",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you enjoy visiting animal shelters, farms or petting zoos?",
+    "de": "Besuchst du gern Tierheime, Bauernhöfe oder Streichelzoos?",
+    "es": "¿Te gusta visitar refugios de animales, granjas o granjas escuela?",
+    "fr": "Aimes-tu visiter des refuges, des fermes ou des mini-fermes ?",
+    "it": "Ti piace visitare rifugi, fattorie o fattorie didattiche?",
+    "pt": "Gostas de visitar abrigos de animais, quintas ou quintas pedagógicas?",
+    "pt_BR": "Você gosta de visitar abrigos de animais, fazendas ou minizoológicos?"
+   }
+  },
+  {
+   "id": "pets-033",
+   "lv": "any",
+   "i18n": {
+    "en": "What kind of pet would fit your daily routine right now?",
+    "de": "Welche Art Haustier würde gerade zu deinem Alltag passen?",
+    "es": "¿Qué tipo de mascota encajaría ahora mismo con tu rutina diaria?",
+    "fr": "Quel type d'animal irait avec ton quotidien en ce moment ?",
+    "it": "Che tipo di animale si adatterebbe alla tua routine in questo momento?",
+    "pt": "Que tipo de animal encaixaria agora na tua rotina diária?",
+    "pt_BR": "Que tipo de pet combinaria com a sua rotina hoje em dia?"
+   }
+  },
+  {
+   "id": "pets-034",
+   "lv": "any",
+   "i18n": {
+    "en": "Which animal-related job sounds the most fun to you?",
+    "de": "Welcher Beruf mit Tieren klingt für dich am spannendsten?",
+    "es": "¿Qué trabajo relacionado con animales te parece más divertido?",
+    "fr": "Quel métier lié aux animaux te semble le plus amusant ?",
+    "it": "Quale lavoro con gli animali ti sembra il più divertente?",
+    "pt": "Que profissão ligada aos animais te parece mais divertida?",
+    "pt_BR": "Qual profissão com animais parece mais divertida para você?"
+   }
+  },
+  {
+   "id": "pets-035",
+   "lv": "any",
+   "i18n": {
+    "en": "What do you think is the best way to welcome a new pet into a home?",
+    "de": "Wie heißt man ein neues Haustier deiner Meinung nach am besten willkommen?",
+    "es": "¿Cuál crees que es la mejor forma de recibir a una mascota nueva en casa?",
+    "fr": "Selon toi, quelle est la meilleure façon d'accueillir un nouvel animal ?",
+    "it": "Secondo te, qual è il modo migliore per accogliere un nuovo animale in casa?",
+    "pt": "Qual achas que é a melhor forma de receber um novo animal em casa?",
+    "pt_BR": "Qual você acha que é o melhor jeito de receber um pet novo em casa?"
+   }
+  },
+  {
+   "id": "pets-036",
+   "lv": "any",
+   "i18n": {
+    "en": "Are there special pet traditions or festivals in your culture?",
+    "de": "Gibt es in deiner Kultur besondere Traditionen oder Feste rund um Tiere?",
+    "es": "¿Hay tradiciones o fiestas especiales con animales en tu cultura?",
+    "fr": "Existe-t-il des traditions ou des fêtes autour des animaux dans ta culture ?",
+    "it": "Ci sono tradizioni o feste speciali legate agli animali nella tua cultura?",
+    "pt": "Há tradições ou festas especiais com animais na tua cultura?",
+    "pt_BR": "Existem tradições ou festas especiais com animais na sua cultura?"
+   }
+  },
+  {
+   "id": "pets-037",
+   "lv": "any",
+   "i18n": {
+    "en": "Which animal do you think has the most interesting personality?",
+    "de": "Welches Tier hat deiner Meinung nach die interessanteste Persönlichkeit?",
+    "es": "¿Qué animal crees que tiene la personalidad más interesante?",
+    "fr": "Quel animal a la personnalité la plus intéressante, selon toi ?",
+    "it": "Quale animale pensi che abbia la personalità più interessante?",
+    "pt": "Que animal achas que tem a personalidade mais interessante?",
+    "pt_BR": "Qual animal você acha que tem a personalidade mais interessante?"
+   }
+  },
+  {
+   "id": "pets-038",
+   "lv": "any",
+   "i18n": {
+    "en": "How would you describe your ideal pet in three words?",
+    "de": "Wie würdest du dein ideales Haustier in drei Worten beschreiben?",
+    "es": "¿Cómo describirías a tu mascota ideal en tres palabras?",
+    "fr": "Comment décrirais-tu ton animal idéal en trois mots ?",
+    "it": "Come descriveresti il tuo animale ideale in tre parole?",
+    "pt": "Como descreverias o teu animal ideal em três palavras?",
+    "pt_BR": "Como você descreveria seu pet ideal em três palavras?"
+   }
+  },
+  {
+   "id": "pets-039",
+   "lv": "any",
+   "i18n": {
+    "en": "What is something you would like to learn about animals this year?",
+    "de": "Was würdest du gern über Tiere lernen?",
+    "es": "¿Qué te gustaría aprender sobre los animales?",
+    "fr": "Qu'aimerais-tu apprendre sur les animaux ?",
+    "it": "Cosa ti piacerebbe imparare sugli animali?",
+    "pt": "O que gostavas de aprender sobre os animais?",
+    "pt_BR": "O que você gostaria de aprender sobre os animais?"
+   }
+  },
+  {
+   "id": "pets-040",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you have a favourite pet story from your family or friends?",
+    "de": "Gibt es eine Lieblingsgeschichte über ein Haustier aus deiner Familie oder deinem Freundeskreis?",
+    "es": "¿Tienes alguna historia favorita de mascotas de tu familia o tus amigos?",
+    "fr": "As-tu une histoire d'animal préférée dans ta famille ou chez tes amis ?",
+    "it": "Hai una storia preferita su un animale della tua famiglia o dei tuoi amici?",
+    "pt": "Tens alguma história preferida sobre um animal da tua família ou dos teus amigos?",
+    "pt_BR": "Você tem alguma história favorita de pet da sua família ou dos seus amigos?"
+   }
+  },
+  {
+   "id": "pets-041",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What would you put on your shopping list before bringing a new pet home?",
+    "de": "Was würdest du auf deine Einkaufsliste setzen, bevor ein neues Haustier einzieht?",
+    "es": "¿Qué pondrías en tu lista de compras antes de llevar una mascota nueva a casa?",
+    "fr": "Que mettrais-tu sur ta liste de courses avant l'arrivée d'un nouvel animal ?",
+    "it": "Cosa metteresti nella lista della spesa prima di portare a casa un nuovo animale?",
+    "pt": "O que porias na tua lista de compras antes de levar um novo animal para casa?",
+    "pt_BR": "O que você colocaria na lista de compras antes de levar um pet novo para casa?"
+   }
+  },
+  {
+   "id": "pets-042",
+   "lv": "beginner",
+   "i18n": {
+    "en": "How would you make your home safer for a curious puppy or kitten?",
+    "de": "Wie würdest du dein Zuhause für einen neugierigen Welpen oder ein Kätzchen sicherer machen?",
+    "es": "¿Cómo harías tu casa más segura para un cachorro o un gatito curioso?",
+    "fr": "Comment rendrais-tu ta maison plus sûre pour un chiot ou un chaton curieux ?",
+    "it": "Come renderesti la tua casa più sicura per un cucciolo o un gattino curioso?",
+    "pt": "Como tornarias a tua casa mais segura para um cachorrinho ou gatinho curioso?",
+    "pt_BR": "Como você deixaria sua casa mais segura para um filhote curioso?"
+   }
+  },
+  {
+   "id": "pets-043",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What questions would you ask a shelter before adopting an animal?",
+    "de": "Welche Fragen würdest du einem Tierheim stellen, bevor du ein Tier adoptierst?",
+    "es": "¿Qué preguntas harías en un refugio antes de adoptar un animal?",
+    "fr": "Quelles questions poserais-tu à un refuge avant d'adopter un animal ?",
+    "it": "Quali domande faresti a un rifugio prima di adottare un animale?",
+    "pt": "Que perguntas farias num abrigo antes de adotar um animal?",
+    "pt_BR": "Que perguntas você faria num abrigo antes de adotar um animal?"
+   }
+  },
+  {
+   "id": "pets-044",
+   "lv": "beginner",
+   "i18n": {
+    "en": "How much time each day do you think you could spend with a pet?",
+    "de": "Wie viel Zeit am Tag könntest du wohl mit einem Haustier verbringen?",
+    "es": "¿Cuánto tiempo al día crees que podrías dedicarle a una mascota?",
+    "fr": "Combien de temps par jour pourrais-tu consacrer à un animal, à ton avis ?",
+    "it": "Quanto tempo al giorno pensi di poter dedicare a un animale?",
+    "pt": "Quanto tempo por dia achas que poderias dedicar a um animal?",
+    "pt_BR": "Quanto tempo por dia você acha que poderia dedicar a um pet?"
+   }
+  },
+  {
+   "id": "pets-045",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which signs tell you that an animal is relaxed and happy?",
+    "de": "Woran erkennst du, dass ein Tier entspannt und zufrieden ist?",
+    "es": "¿Qué señales te indican que un animal está relajado y contento?",
+    "fr": "Quels signes te montrent qu'un animal est détendu et heureux ?",
+    "it": "Quali segnali ti dicono che un animale è rilassato e felice?",
+    "pt": "Que sinais te mostram que um animal está relaxado e feliz?",
+    "pt_BR": "Quais sinais mostram para você que um animal está relaxado e feliz?"
+   }
+  },
+  {
+   "id": "pets-046",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What kind of daily routine would you set up for a new dog?",
+    "de": "Welchen Tagesablauf würdest du für einen neuen Hund einführen?",
+    "es": "¿Qué rutina diaria organizarías para un perro nuevo?",
+    "fr": "Quelle routine quotidienne mettrais-tu en place pour un nouveau chien ?",
+    "it": "Che routine quotidiana imposteresti per un nuovo cane?",
+    "pt": "Que rotina diária criarias para um cão novo?",
+    "pt_BR": "Que rotina diária você criaria para um cachorro novo?"
+   }
+  },
+  {
+   "id": "pets-047",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Where in your home would you put a cat's litter box and bed?",
+    "de": "Wo in deinem Zuhause würdest du Katzenklo und Schlafplatz einer Katze hinstellen?",
+    "es": "¿En qué parte de tu casa pondrías el arenero y la cama de un gato?",
+    "fr": "Où placerais-tu la litière et le panier d'un chat chez toi ?",
+    "it": "In quale parte della casa metteresti la lettiera e la cuccia di un gatto?",
+    "pt": "Em que sítio da tua casa porias a caixa de areia e a cama de um gato?",
+    "pt_BR": "Em que lugar da sua casa você colocaria a caixa de areia e a caminha de um gato?"
+   }
+  },
+  {
+   "id": "pets-048",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What kind of toys do you think a pet would enjoy most?",
+    "de": "Welche Art Spielzeug würde einem Haustier wohl am meisten Spaß machen?",
+    "es": "¿Qué tipo de juguetes crees que más disfrutaría una mascota?",
+    "fr": "Quel genre de jouets plairait le plus à un animal, selon toi ?",
+    "it": "Che tipo di giochi pensi che piacerebbero di più a un animale?",
+    "pt": "Que tipo de brinquedos achas que um animal ia gostar mais?",
+    "pt_BR": "Que tipo de brinquedo você acha que um pet ia curtir mais?"
+   }
+  },
+  {
+   "id": "pets-049",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Did you know some human foods are unsafe for pets? Which ones surprised you?",
+    "de": "Wusstest du, dass manche Lebensmittel für Tiere gefährlich sind? Welche haben dich überrascht?",
+    "es": "¿Sabías que algunos alimentos humanos son peligrosos para las mascotas? ¿Cuáles te sorprendieron?",
+    "fr": "Savais-tu que certains aliments humains sont dangereux pour les animaux ? Lesquels t'ont surpris ?",
+    "it": "Sapevi che alcuni cibi umani sono pericolosi per gli animali? Quali ti hanno sorpreso?",
+    "pt": "Sabias que alguns alimentos humanos são perigosos para os animais? Quais te surpreenderam?",
+    "pt_BR": "Você sabia que alguns alimentos humanos são perigosos para os pets? Quais te surpreenderam?"
+   }
+  },
+  {
+   "id": "pets-050",
+   "lv": "beginner",
+   "i18n": {
+    "en": "How would you help a shy new pet feel at home in its first week?",
+    "de": "Wie würdest du einem schüchternen neuen Tier helfen, sich in der ersten Woche einzuleben?",
+    "es": "¿Cómo ayudarías a una mascota nueva y tímida a sentirse en casa la primera semana?",
+    "fr": "Comment aiderais-tu un nouvel animal timide à se sentir chez lui la première semaine ?",
+    "it": "Come aiuteresti un nuovo animale timido a sentirsi a casa nella prima settimana?",
+    "pt": "Como ajudarias um animal novo e tímido a sentir-se em casa na primeira semana?",
+    "pt_BR": "Como você ajudaria um pet novo e tímido a se sentir em casa na primeira semana?"
+   }
+  },
+  {
+   "id": "pets-051",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Would you prefer a small pet like a hamster or rabbit? What appeals to you?",
+    "de": "Hättest du lieber ein kleines Tier wie einen Hamster oder ein Kaninchen? Was reizt dich daran?",
+    "es": "¿Preferirías una mascota pequeña como un hámster o un conejo? ¿Qué te atrae?",
+    "fr": "Préférerais-tu un petit animal comme un hamster ou un lapin ? Qu'est-ce qui te plaît ?",
+    "it": "Preferiresti un piccolo animale come un criceto o un coniglio? Cosa ti attira?",
+    "pt": "Preferias um animal pequeno como um hamster ou um coelho? O que te atrai?",
+    "pt_BR": "Você preferiria um bichinho pequeno como hamster ou coelho? O que te atrai?"
+   }
+  },
+  {
+   "id": "pets-052",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Have you ever kept fish or thought about an aquarium? What would you want in it?",
+    "de": "Hattest du schon Fische oder hast du an ein Aquarium gedacht? Was würdest du gern darin haben?",
+    "es": "¿Has tenido peces o has pensado en un acuario? ¿Qué te gustaría tener en él?",
+    "fr": "As-tu déjà eu des poissons ou pensé à un aquarium ? Qu'aimerais-tu y mettre ?",
+    "it": "Hai mai avuto pesci o pensato a un acquario? Cosa vorresti metterci?",
+    "pt": "Já tiveste peixes ou pensaste num aquário? O que gostavas de ter lá dentro?",
+    "pt_BR": "Você já teve peixes ou pensou num aquário? O que gostaria de ter nele?"
+   }
+  },
+  {
+   "id": "pets-053",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What do you think is the most important thing when walking a dog?",
+    "de": "Was ist deiner Meinung nach beim Gassigehen am wichtigsten?",
+    "es": "¿Qué crees que es lo más importante al pasear a un perro?",
+    "fr": "Selon toi, qu'est-ce qui compte le plus quand on promène un chien ?",
+    "it": "Secondo te, qual è la cosa più importante quando si porta a spasso un cane?",
+    "pt": "O que achas que é mais importante quando se passeia um cão?",
+    "pt_BR": "O que você acha mais importante na hora de passear com um cachorro?"
+   }
+  },
+  {
+   "id": "pets-054",
+   "lv": "beginner",
+   "i18n": {
+    "en": "How would you explain gentle pet handling to a young child?",
+    "de": "Wie würdest du einem kleinen Kind erklären, wie man sanft mit Tieren umgeht?",
+    "es": "¿Cómo le explicarías a un niño pequeño cómo tratar con cuidado a una mascota?",
+    "fr": "Comment expliquerais-tu à un jeune enfant comment manipuler doucement un animal ?",
+    "it": "Come spiegheresti a un bambino piccolo come trattare con delicatezza un animale?",
+    "pt": "Como explicarias a uma criança pequena como tratar um animal com cuidado?",
+    "pt_BR": "Como você explicaria para uma criança pequena como tratar um pet com carinho?"
+   }
+  },
+  {
+   "id": "pets-055",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What would you look for when choosing a vet for your pet?",
+    "de": "Worauf würdest du bei der Wahl einer Tierarztpraxis achten?",
+    "es": "¿En qué te fijarías al elegir un veterinario para tu mascota?",
+    "fr": "Que regarderais-tu en choisissant un vétérinaire pour ton animal ?",
+    "it": "Cosa guarderesti nella scelta di un veterinario per il tuo animale?",
+    "pt": "O que procurarias ao escolher um veterinário para o teu animal?",
+    "pt_BR": "O que você procuraria na hora de escolher um veterinário para o seu pet?"
+   }
+  },
+  {
+   "id": "pets-056",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which pet do you think is easiest for a first-time owner, and why?",
+    "de": "Welches Haustier ist für Anfänger am einfachsten, und warum?",
+    "es": "¿Qué mascota crees que es más fácil para alguien primerizo y por qué?",
+    "fr": "Quel animal est le plus simple pour un premier propriétaire, et pourquoi ?",
+    "it": "Quale animale pensi sia il più facile per chi lo prende per la prima volta, e perché?",
+    "pt": "Que animal achas que é mais fácil para quem tem o primeiro, e porquê?",
+    "pt_BR": "Qual pet você acha mais fácil para quem é tutor de primeira viagem, e por quê?"
+   }
+  },
+  {
+   "id": "pets-057",
+   "lv": "beginner",
+   "i18n": {
+    "en": "How would you keep a pet busy and happy while you are at work?",
+    "de": "Wie würdest du ein Haustier beschäftigt und glücklich halten, während du arbeitest?",
+    "es": "¿Cómo mantendrías a una mascota entretenida y feliz mientras trabajas?",
+    "fr": "Comment occuperais-tu un animal pour qu'il soit heureux pendant que tu travailles ?",
+    "it": "Come terresti un animale occupato e felice mentre sei al lavoro?",
+    "pt": "Como manterias um animal ocupado e feliz enquanto estás a trabalhar?",
+    "pt_BR": "Como você manteria um pet ocupado e feliz enquanto está no trabalho?"
+   }
+  },
+  {
+   "id": "pets-058",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What would a cosy sleeping spot for a pet look like in your home?",
+    "de": "Wie sähe ein gemütlicher Schlafplatz für ein Haustier bei dir zu Hause aus?",
+    "es": "¿Cómo sería en tu casa un rincón acogedor para que duerma una mascota?",
+    "fr": "À quoi ressemblerait un coin douillet pour dormir pour un animal chez toi ?",
+    "it": "Come sarebbe a casa tua un angolino accogliente dove far dormire un animale?",
+    "pt": "Como seria na tua casa um cantinho aconchegante para um animal dormir?",
+    "pt_BR": "Como seria na sua casa um cantinho aconchegante para um pet dormir?"
+   }
+  },
+  {
+   "id": "pets-059",
+   "lv": "beginner",
+   "i18n": {
+    "en": "How would you introduce yourself to a dog you have never met?",
+    "de": "Wie würdest du dich einem Hund vorstellen, den du noch nie getroffen hast?",
+    "es": "¿Cómo te presentarías ante un perro que no conoces?",
+    "fr": "Comment te présenterais-tu à un chien que tu n'as jamais rencontré ?",
+    "it": "Come ti presenteresti a un cane che non hai mai incontrato?",
+    "pt": "Como te apresentarias a um cão que nunca viste?",
+    "pt_BR": "Como você se apresentaria para um cachorro que nunca viu?"
+   }
+  },
+  {
+   "id": "pets-060",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What pet care task do you think you would enjoy most, and which least?",
+    "de": "Welche Aufgabe in der Tierpflege würde dir wohl am meisten Spaß machen, und welche am wenigsten?",
+    "es": "¿Qué tarea de cuidado de mascotas crees que disfrutarías más y cuál menos?",
+    "fr": "Quelle tâche de soin aimerais-tu le plus, et laquelle le moins ?",
+    "it": "Quale compito nella cura di un animale ti piacerebbe di più, e quale di meno?",
+    "pt": "Que tarefa de cuidado com animais achas que ias gostar mais, e qual menos?",
+    "pt_BR": "Qual tarefa de cuidado com pets você acha que ia curtir mais, e qual menos?"
+   }
+  },
+  {
+   "id": "pets-061",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Why do you think fresh water and regular meals matter so much for pets?",
+    "de": "Warum sind frisches Wasser und regelmäßige Mahlzeiten deiner Meinung nach so wichtig für Tiere?",
+    "es": "¿Por qué crees que el agua fresca y las comidas regulares son tan importantes para las mascotas?",
+    "fr": "Pourquoi l'eau fraîche et des repas réguliers sont-ils si importants pour les animaux, selon toi ?",
+    "it": "Perché pensi che acqua fresca e pasti regolari siano così importanti per gli animali?",
+    "pt": "Porque achas que a água fresca e as refeições regulares são tão importantes para os animais?",
+    "pt_BR": "Por que você acha que água fresca e refeições regulares são tão importantes para os pets?"
+   }
+  },
+  {
+   "id": "pets-062",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Would you rather brush a fluffy long-haired pet or a sleek short-haired one?",
+    "de": "Würdest du lieber ein flauschiges Langhaartier oder ein glattes Kurzhaartier bürsten?",
+    "es": "¿Preferirías cepillar a una mascota de pelo largo y esponjoso o a una de pelo corto y liso?",
+    "fr": "Préférerais-tu brosser un animal à poils longs et touffus ou à poils courts et lisses ?",
+    "it": "Preferiresti spazzolare un animale a pelo lungo e soffice o uno a pelo corto e liscio?",
+    "pt": "Preferias escovar um animal de pelo comprido e fofo ou um de pelo curto e liso?",
+    "pt_BR": "Você preferiria escovar um pet de pelo longo e fofinho ou um de pelo curto e liso?"
+   }
+  },
+  {
+   "id": "pets-063",
+   "lv": "beginner",
+   "i18n": {
+    "en": "How would you plan pet care when you go away for a weekend?",
+    "de": "Wie würdest du die Betreuung deines Tieres planen, wenn du übers Wochenende verreist?",
+    "es": "¿Cómo organizarías el cuidado de tu mascota si te fueras un fin de semana?",
+    "fr": "Comment organiserais-tu la garde de ton animal pour un week-end d'absence ?",
+    "it": "Come organizzeresti la cura del tuo animale se partissi per un weekend?",
+    "pt": "Como organizarias os cuidados do teu animal se fosses passar um fim de semana fora?",
+    "pt_BR": "Como você organizaria os cuidados do seu pet se viajasse num fim de semana?"
+   }
+  },
+  {
+   "id": "pets-064",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What do you think a pet care diary could help you notice?",
+    "de": "Was könnte dir ein Pflegetagebuch für dein Haustier helfen zu bemerken?",
+    "es": "¿Qué crees que te ayudaría a notar un diario de cuidados de tu mascota?",
+    "fr": "Selon toi, qu'est-ce qu'un carnet de soins pour animal pourrait t'aider à remarquer ?",
+    "it": "Secondo te, cosa potrebbe aiutarti a notare un diario di cura dell'animale?",
+    "pt": "O que achas que um diário de cuidados do animal te poderia ajudar a perceber?",
+    "pt_BR": "O que você acha que um diário de cuidados do pet poderia te ajudar a perceber?"
+   }
+  },
+  {
+   "id": "pets-065",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which pet would you choose for a small apartment, and how would you make room?",
+    "de": "Welches Haustier würdest du für eine kleine Wohnung wählen, und wie würdest du Platz schaffen?",
+    "es": "¿Qué mascota elegirías para un piso pequeño y cómo le harías sitio?",
+    "fr": "Quel animal choisirais-tu pour un petit appartement, et comment lui ferais-tu de la place ?",
+    "it": "Quale animale sceglieresti per un piccolo appartamento e come gli faresti spazio?",
+    "pt": "Que animal escolherias para um apartamento pequeno e como lhe arranjarias espaço?",
+    "pt_BR": "Qual pet você escolheria para um apartamento pequeno e como abriria espaço para ele?"
+   }
+  },
+  {
+   "id": "pets-066",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Have you ever taught an animal a trick? How did you do it?",
+    "de": "Hast du einem Tier schon mal einen Trick beigebracht? Wie bist du vorgegangen?",
+    "es": "¿Le has enseñado alguna vez un truco a un animal? ¿Cómo lo hiciste?",
+    "fr": "As-tu déjà appris un tour à un animal ? Comment t'y es-tu pris ?",
+    "it": "Hai mai insegnato un trucco a un animale? Come hai fatto?",
+    "pt": "Já ensinaste um truque a um animal? Como fizeste?",
+    "pt_BR": "Você já ensinou um truque a um animal? Como fez?"
+   }
+  },
+  {
+   "id": "pets-067",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What do you think about positive reinforcement compared with stricter training styles?",
+    "de": "Was hältst du von positiver Verstärkung im Vergleich zu strengeren Trainingsmethoden?",
+    "es": "¿Qué opinas del refuerzo positivo frente a estilos de adiestramiento más estrictos?",
+    "fr": "Que penses-tu du renforcement positif par rapport à des méthodes plus strictes ?",
+    "it": "Cosa pensi del rinforzo positivo rispetto a metodi di addestramento più severi?",
+    "pt": "O que achas do reforço positivo em comparação com estilos de treino mais rígidos?",
+    "pt_BR": "O que você acha do reforço positivo comparado a estilos de adestramento mais rígidos?"
+   }
+  },
+  {
+   "id": "pets-068",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which treat or reward would work best for a pet you know?",
+    "de": "Welches Leckerli oder welche Belohnung würde bei einem Tier, das du kennst, am besten wirken?",
+    "es": "¿Qué premio o recompensa funcionaría mejor con una mascota que conozcas?",
+    "fr": "Quelle friandise ou récompense marcherait le mieux avec un animal que tu connais ?",
+    "it": "Quale premio o ricompensa funzionerebbe meglio con un animale che conosci?",
+    "pt": "Que guloseima ou recompensa resultaria melhor com um animal que conheças?",
+    "pt_BR": "Qual petisco ou recompensa funcionaria melhor com um pet que você conhece?"
+   }
+  },
+  {
+   "id": "pets-069",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How would you help a pet stay calm during fireworks or a thunderstorm?",
+    "de": "Wie würdest du einem Tier helfen, bei Feuerwerk oder Gewitter ruhig zu bleiben?",
+    "es": "¿Cómo ayudarías a una mascota a mantener la calma con fuegos artificiales o tormentas?",
+    "fr": "Comment aiderais-tu un animal à rester calme pendant un feu d'artifice ou un orage ?",
+    "it": "Come aiuteresti un animale a restare calmo durante i fuochi d'artificio o un temporale?",
+    "pt": "Como ajudarias um animal a manter a calma durante fogo de artifício ou trovoada?",
+    "pt_BR": "Como você ajudaria um pet a ficar calmo durante fogos de artifício ou uma tempestade?"
+   }
+  },
+  {
+   "id": "pets-070",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What enrichment ideas would you try to keep a clever pet from getting bored?",
+    "de": "Welche Beschäftigungsideen würdest du ausprobieren, damit sich ein kluges Tier nicht langweilt?",
+    "es": "¿Qué ideas de enriquecimiento probarías para que una mascota lista no se aburra?",
+    "fr": "Quelles idées d'enrichissement essaierais-tu pour qu'un animal malin ne s'ennuie pas ?",
+    "it": "Quali idee di arricchimento proveresti per evitare che un animale intelligente si annoi?",
+    "pt": "Que ideias de enriquecimento experimentarias para um animal esperto não se aborrecer?",
+    "pt_BR": "Que ideias de enriquecimento você testaria para um pet esperto não ficar entediado?"
+   }
+  },
+  {
+   "id": "pets-071",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How would you introduce a new pet to one that already lives with you?",
+    "de": "Wie würdest du ein neues Tier mit einem Tier bekannt machen, das schon bei dir lebt?",
+    "es": "¿Cómo presentarías una mascota nueva a otra que ya vive contigo?",
+    "fr": "Comment présenterais-tu un nouvel animal à celui qui vit déjà chez toi ?",
+    "it": "Come presenteresti un nuovo animale a quello che vive già con te?",
+    "pt": "Como apresentarias um animal novo a outro que já vive contigo?",
+    "pt_BR": "Como você apresentaria um pet novo a outro que já mora com você?"
+   }
+  },
+  {
+   "id": "pets-072",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which subtle body language signals in pets do you find easiest to miss?",
+    "de": "Welche feinen Körpersignale bei Tieren übersieht man deiner Meinung nach am leichtesten?",
+    "es": "¿Qué señales sutiles del lenguaje corporal de las mascotas crees que se pasan por alto más fácilmente?",
+    "fr": "Quels signaux corporels discrets des animaux passent le plus facilement inaperçus, selon toi ?",
+    "it": "Quali segnali sottili del linguaggio del corpo degli animali pensi che sfuggano più facilmente?",
+    "pt": "Que sinais subtis da linguagem corporal dos animais achas que passam mais despercebidos?",
+    "pt_BR": "Quais sinais sutis da linguagem corporal dos pets você acha que passam mais despercebidos?"
+   }
+  },
+  {
+   "id": "pets-073",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How would you prepare a pet for a long car trip or a flight?",
+    "de": "Wie würdest du ein Tier auf eine lange Autofahrt oder einen Flug vorbereiten?",
+    "es": "¿Cómo prepararías a una mascota para un viaje largo en coche o en avión?",
+    "fr": "Comment préparerais-tu un animal à un long trajet en voiture ou en avion ?",
+    "it": "Come prepareresti un animale a un lungo viaggio in auto o in aereo?",
+    "pt": "Como prepararias um animal para uma longa viagem de carro ou de avião?",
+    "pt_BR": "Como você prepararia um pet para uma viagem longa de carro ou de avião?"
+   }
+  },
+  {
+   "id": "pets-074",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What would you want to learn about reading pet food labels?",
+    "de": "Was würdest du gern darüber lernen, wie man Etiketten von Tierfutter liest?",
+    "es": "¿Qué te gustaría aprender sobre cómo leer las etiquetas de comida para mascotas?",
+    "fr": "Qu'aimerais-tu apprendre sur la lecture des étiquettes d'aliments pour animaux ?",
+    "it": "Cosa ti piacerebbe imparare sulla lettura delle etichette del cibo per animali?",
+    "pt": "O que gostavas de aprender sobre como ler os rótulos da comida para animais?",
+    "pt_BR": "O que você gostaria de aprender sobre como ler rótulos de ração?"
+   }
+  },
+  {
+   "id": "pets-075",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How do you think pet care changes as animals get older?",
+    "de": "Wie verändert sich die Pflege deiner Meinung nach, wenn Tiere älter werden?",
+    "es": "¿Cómo crees que cambia el cuidado de las mascotas cuando se hacen mayores?",
+    "fr": "Selon toi, comment les soins changent-ils quand les animaux vieillissent ?",
+    "it": "Secondo te, come cambia la cura degli animali quando invecchiano?",
+    "pt": "Como achas que os cuidados mudam quando os animais envelhecem?",
+    "pt_BR": "Como você acha que os cuidados mudam quando os pets envelhecem?"
+   }
+  },
+  {
+   "id": "pets-076",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What grooming routine would you set up for a dog or cat you know?",
+    "de": "Welche Pflegeroutine würdest du für einen Hund oder eine Katze einrichten, die du kennst?",
+    "es": "¿Qué rutina de higiene organizarías para un perro o un gato que conozcas?",
+    "fr": "Quelle routine de toilettage mettrais-tu en place pour un chien ou un chat que tu connais ?",
+    "it": "Che routine di toelettatura imposteresti per un cane o un gatto che conosci?",
+    "pt": "Que rotina de higiene criarias para um cão ou gato que conheças?",
+    "pt_BR": "Que rotina de higiene você criaria para um cachorro ou gato que conhece?"
+   }
+  },
+  {
+   "id": "pets-077",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which dog sport or activity would you love to try with a dog?",
+    "de": "Welchen Hundesport oder welche Aktivität würdest du gern mit einem Hund ausprobieren?",
+    "es": "¿Qué deporte o actividad canina te encantaría probar con un perro?",
+    "fr": "Quel sport ou quelle activité canine aimerais-tu essayer avec un chien ?",
+    "it": "Quale sport o attività cinofila ti piacerebbe provare con un cane?",
+    "pt": "Que desporto ou atividade canina adorarias experimentar com um cão?",
+    "pt_BR": "Qual esporte ou atividade com cães você adoraria experimentar?"
+   }
+  },
+  {
+   "id": "pets-078",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How would you make a vet visit less stressful for a nervous pet?",
+    "de": "Wie würdest du einen Tierarztbesuch für ein ängstliches Tier weniger stressig machen?",
+    "es": "¿Cómo harías que una visita al veterinario fuera menos estresante para una mascota nerviosa?",
+    "fr": "Comment rendrais-tu une visite chez le vétérinaire moins stressante pour un animal anxieux ?",
+    "it": "Come renderesti meno stressante una visita dal veterinario per un animale nervoso?",
+    "pt": "Como tornarias uma ida ao veterinário menos stressante para um animal nervoso?",
+    "pt_BR": "Como você deixaria uma ida ao veterinário menos estressante para um pet nervoso?"
+   }
+  },
+  {
+   "id": "pets-079",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What do you think about bringing pets to cafés, offices or public places?",
+    "de": "Was hältst du davon, Haustiere mit in Cafés, Büros oder an öffentliche Orte zu nehmen?",
+    "es": "¿Qué opinas de llevar mascotas a cafeterías, oficinas o lugares públicos?",
+    "fr": "Que penses-tu du fait d'emmener les animaux au café, au bureau ou dans les lieux publics ?",
+    "it": "Cosa pensi del portare gli animali nei bar, negli uffici o nei luoghi pubblici?",
+    "pt": "O que achas de levar animais para cafés, escritórios ou locais públicos?",
+    "pt_BR": "O que você acha de levar pets a cafés, escritórios ou lugares públicos?"
+   }
+  },
+  {
+   "id": "pets-080",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How would you teach a dog to come back reliably when called?",
+    "de": "Wie würdest du einem Hund beibringen, zuverlässig zurückzukommen, wenn du ihn rufst?",
+    "es": "¿Cómo le enseñarías a un perro a volver siempre que lo llames?",
+    "fr": "Comment apprendrais-tu à un chien à revenir à coup sûr quand on l'appelle ?",
+    "it": "Come insegneresti a un cane a tornare sempre quando lo chiami?",
+    "pt": "Como ensinarias um cão a voltar sempre que é chamado?",
+    "pt_BR": "Como você ensinaria um cachorro a voltar sempre que for chamado?"
+   }
+  },
+  {
+   "id": "pets-081",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What would help you decide between a sitter at home and boarding for your pet?",
+    "de": "Was würde dir bei der Entscheidung zwischen Tiersitter zu Hause und Tierpension helfen?",
+    "es": "¿Qué te ayudaría a decidir entre un cuidador en casa o una residencia para tu mascota?",
+    "fr": "Qu'est-ce qui t'aiderait à choisir entre une garde à domicile et une pension pour ton animal ?",
+    "it": "Cosa ti aiuterebbe a scegliere tra un pet sitter a casa e una pensione per il tuo animale?",
+    "pt": "O que te ajudaria a decidir entre alguém que cuide do animal em casa ou um hotel para animais?",
+    "pt_BR": "O que te ajudaria a decidir entre um pet sitter em casa ou um hotelzinho para o seu pet?"
+   }
+  },
+  {
+   "id": "pets-082",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How would you keep a pet comfortable during very hot or very cold weather?",
+    "de": "Wie würdest du ein Tier bei großer Hitze oder Kälte gut versorgen?",
+    "es": "¿Cómo mantendrías cómoda a una mascota cuando hace mucho calor o mucho frío?",
+    "fr": "Comment garderais-tu un animal à l'aise par grosse chaleur ou grand froid ?",
+    "it": "Come terresti un animale a suo agio con il gran caldo o il gran freddo?",
+    "pt": "Como manterias um animal confortável com muito calor ou muito frio?",
+    "pt_BR": "Como você deixaria um pet confortável no calor forte ou no frio intenso?"
+   }
+  },
+  {
+   "id": "pets-083",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "If you could volunteer at a shelter, which task would you pick and why?",
+    "de": "Wenn du im Tierheim helfen könntest, welche Aufgabe würdest du wählen, und warum?",
+    "es": "Si pudieras hacer voluntariado en un refugio, ¿qué tarea elegirías y por qué?",
+    "fr": "Si tu pouvais être bénévole dans un refuge, quelle tâche choisirais-tu, et pourquoi ?",
+    "it": "Se potessi fare volontariato in un rifugio, quale compito sceglieresti e perché?",
+    "pt": "Se pudesses ser voluntário num abrigo, que tarefa escolherias e porquê?",
+    "pt_BR": "Se pudesse ser voluntário num abrigo, que tarefa você escolheria e por quê?"
+   }
+  },
+  {
+   "id": "pets-084",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What does a well-designed pet-friendly home look like to you?",
+    "de": "Wie sieht für dich ein gut durchdachtes, tierfreundliches Zuhause aus?",
+    "es": "¿Cómo sería para ti un hogar bien pensado y adaptado a mascotas?",
+    "fr": "À quoi ressemble pour toi une maison bien pensée pour les animaux ?",
+    "it": "Com'è per te una casa ben progettata e a misura di animale?",
+    "pt": "Como seria para ti uma casa bem pensada e amiga dos animais?",
+    "pt_BR": "Como seria para você uma casa bem planejada e pet friendly?"
+   }
+  },
+  {
+   "id": "pets-085",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How would you share pet care tasks fairly in a family or shared flat?",
+    "de": "Wie würdest du die Tierpflege in einer Familie oder WG fair aufteilen?",
+    "es": "¿Cómo repartirías de forma justa el cuidado de una mascota en una familia o un piso compartido?",
+    "fr": "Comment répartirais-tu équitablement les soins d'un animal dans une famille ou une colocation ?",
+    "it": "Come divideresti in modo equo la cura di un animale in famiglia o in un appartamento condiviso?",
+    "pt": "Como dividirias de forma justa os cuidados com um animal numa família ou casa partilhada?",
+    "pt_BR": "Como você dividiria de forma justa os cuidados com um pet numa família ou república?"
+   }
+  },
+  {
+   "id": "pets-086",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Which idea from animal welfare science do you find most interesting?",
+    "de": "Welche Erkenntnis aus der Tierschutzforschung findest du am spannendsten?",
+    "es": "¿Qué idea de la ciencia del bienestar animal te parece más interesante?",
+    "fr": "Quelle idée issue de la science du bien-être animal trouves-tu la plus intéressante ?",
+    "it": "Quale idea della scienza del benessere animale trovi più interessante?",
+    "pt": "Que ideia da ciência do bem-estar animal achas mais interessante?",
+    "pt_BR": "Qual ideia da ciência do bem-estar animal você acha mais interessante?"
+   }
+  },
+  {
+   "id": "pets-087",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How much choice and control do you think pets should have in their daily lives?",
+    "de": "Wie viel Wahlfreiheit und Kontrolle sollten Haustiere deiner Meinung nach im Alltag haben?",
+    "es": "¿Cuánta capacidad de elección y control crees que deberían tener las mascotas en su día a día?",
+    "fr": "Selon toi, quelle part de choix et de contrôle les animaux devraient-ils avoir au quotidien ?",
+    "it": "Quanta libertà di scelta e controllo pensi che dovrebbero avere gli animali nella vita di tutti i giorni?",
+    "pt": "Quanta escolha e controlo achas que os animais deviam ter no dia a dia?",
+    "pt_BR": "Quanta escolha e controle você acha que os pets deveriam ter no dia a dia?"
+   }
+  },
+  {
+   "id": "pets-088",
+   "lv": "advanced",
+   "i18n": {
+    "en": "What do you think makes a breeder or shelter truly responsible?",
+    "de": "Was macht einen Züchter oder ein Tierheim deiner Meinung nach wirklich verantwortungsvoll?",
+    "es": "¿Qué crees que hace que un criador o un refugio sea realmente responsable?",
+    "fr": "Selon toi, qu'est-ce qui rend un éleveur ou un refuge vraiment responsable ?",
+    "it": "Secondo te, cosa rende un allevatore o un rifugio davvero responsabile?",
+    "pt": "O que achas que torna um criador ou abrigo verdadeiramente responsável?",
+    "pt_BR": "O que você acha que torna um criador ou abrigo realmente responsável?"
+   }
+  },
+  {
+   "id": "pets-089",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How would you design a full week of enrichment for a pet you know well?",
+    "de": "Wie würdest du eine ganze Woche Beschäftigung für ein Tier planen, das du gut kennst?",
+    "es": "¿Cómo diseñarías una semana completa de enriquecimiento para una mascota que conoces bien?",
+    "fr": "Comment concevrais-tu une semaine complète d'enrichissement pour un animal que tu connais bien ?",
+    "it": "Come progetteresti un'intera settimana di arricchimento per un animale che conosci bene?",
+    "pt": "Como planearias uma semana inteira de enriquecimento para um animal que conheces bem?",
+    "pt_BR": "Como você planejaria uma semana inteira de enriquecimento para um pet que conhece bem?"
+   }
+  },
+  {
+   "id": "pets-090",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Which specialised pet, like a parrot, reptile or horse, would you love to learn to care for?",
+    "de": "Für welches besondere Tier, etwa Papagei, Reptil oder Pferd, würdest du gern die Pflege lernen?",
+    "es": "¿Qué mascota especial, como un loro, un reptil o un caballo, te encantaría aprender a cuidar?",
+    "fr": "Quel animal particulier, comme un perroquet, un reptile ou un cheval, aimerais-tu apprendre à soigner ?",
+    "it": "Quale animale particolare, come un pappagallo, un rettile o un cavallo, ti piacerebbe imparare a curare?",
+    "pt": "Que animal especial, como um papagaio, um réptil ou um cavalo, adorarias aprender a cuidar?",
+    "pt_BR": "Qual animal especial, como papagaio, réptil ou cavalo, você adoraria aprender a cuidar?"
+   }
+  },
+  {
+   "id": "pets-091",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How would you work with a professional on a pet's tricky behaviour?",
+    "de": "Wie würdest du bei schwierigem Verhalten eines Tieres mit Fachleuten zusammenarbeiten?",
+    "es": "¿Cómo trabajarías con un profesional ante un comportamiento difícil de una mascota?",
+    "fr": "Comment travaillerais-tu avec un professionnel face à un comportement difficile chez un animal ?",
+    "it": "Come lavoreresti con un professionista su un comportamento difficile di un animale?",
+    "pt": "Como trabalharias com um profissional num comportamento difícil de um animal?",
+    "pt_BR": "Como você trabalharia com um profissional num comportamento difícil de um pet?"
+   }
+  },
+  {
+   "id": "pets-092",
+   "lv": "advanced",
+   "i18n": {
+    "en": "What do you think about smart pet gadgets like cameras and automatic feeders?",
+    "de": "Was hältst du von smarten Gadgets für Tiere wie Kameras und Futterautomaten?",
+    "es": "¿Qué opinas de los aparatos inteligentes para mascotas, como cámaras y comederos automáticos?",
+    "fr": "Que penses-tu des gadgets connectés pour animaux, comme les caméras et les distributeurs automatiques ?",
+    "it": "Cosa pensi dei dispositivi smart per animali, come telecamere e distributori automatici di cibo?",
+    "pt": "O que achas dos aparelhos inteligentes para animais, como câmaras e comedouros automáticos?",
+    "pt_BR": "O que você acha de aparelhos inteligentes para pets, como câmeras e comedouros automáticos?"
+   }
+  },
+  {
+   "id": "pets-093",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How would you prepare your home and pets for an emergency or evacuation?",
+    "de": "Wie würdest du dein Zuhause und deine Tiere auf einen Notfall oder eine Evakuierung vorbereiten?",
+    "es": "¿Cómo prepararías tu casa y a tus mascotas para una emergencia o una evacuación?",
+    "fr": "Comment préparerais-tu ta maison et tes animaux à une urgence ou une évacuation ?",
+    "it": "Come prepareresti la tua casa e i tuoi animali per un'emergenza o un'evacuazione?",
+    "pt": "Como prepararias a tua casa e os teus animais para uma emergência ou evacuação?",
+    "pt_BR": "Como você prepararia sua casa e seus pets para uma emergência ou evacuação?"
+   }
+  },
+  {
+   "id": "pets-094",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Which working animals, like guide or rescue dogs, impress you most?",
+    "de": "Welche Arbeitstiere, etwa Blinden- oder Rettungshunde, beeindrucken dich am meisten?",
+    "es": "¿Qué animales de trabajo, como perros guía o de rescate, te impresionan más?",
+    "fr": "Quels animaux de travail, comme les chiens guides ou de sauvetage, t'impressionnent le plus ?",
+    "it": "Quali animali da lavoro, come i cani guida o da soccorso, ti colpiscono di più?",
+    "pt": "Que animais de trabalho, como cães-guia ou de resgate, mais te impressionam?",
+    "pt_BR": "Quais animais de trabalho, como cães-guia ou de resgate, mais te impressionam?"
+   }
+  },
+  {
+   "id": "pets-095",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How would you help a friend decide whether they are ready for a pet?",
+    "de": "Wie würdest du einer Freundin oder einem Freund helfen zu entscheiden, ob sie bereit für ein Haustier sind?",
+    "es": "¿Cómo ayudarías a un amigo a decidir si está preparado para tener una mascota?",
+    "fr": "Comment aiderais-tu un ami à savoir s'il est prêt à avoir un animal ?",
+    "it": "Come aiuteresti un amico a capire se è pronto per avere un animale?",
+    "pt": "Como ajudarias um amigo a decidir se está preparado para ter um animal?",
+    "pt_BR": "Como você ajudaria um amigo a decidir se está pronto para ter um pet?"
+   }
+  },
+  {
+   "id": "pets-096",
+   "lv": "advanced",
+   "i18n": {
+    "en": "What changes would make your town or city friendlier for pets and their people?",
+    "de": "Welche Veränderungen würden deinen Ort tierfreundlicher machen, für Tiere und ihre Menschen?",
+    "es": "¿Qué cambios harían tu ciudad más amable con las mascotas y sus dueños?",
+    "fr": "Quels changements rendraient ta ville plus accueillante pour les animaux et leurs maîtres ?",
+    "it": "Quali cambiamenti renderebbero la tua città più accogliente per gli animali e i loro padroni?",
+    "pt": "Que mudanças tornariam a tua cidade mais amiga dos animais e dos seus donos?",
+    "pt_BR": "Que mudanças deixariam sua cidade mais amigável para os pets e seus tutores?"
+   }
+  },
+  {
+   "id": "pets-097",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How do you think a pet's care plan should adapt when your own life changes?",
+    "de": "Wie sollte sich der Pflegeplan eines Tieres anpassen, wenn sich dein eigenes Leben verändert?",
+    "es": "¿Cómo crees que debería adaptarse el plan de cuidados de una mascota cuando cambia tu vida?",
+    "fr": "Selon toi, comment le plan de soins d'un animal doit-il s'adapter quand ta vie change ?",
+    "it": "Secondo te, come dovrebbe adattarsi il piano di cura di un animale quando cambia la tua vita?",
+    "pt": "Como achas que o plano de cuidados de um animal se deve adaptar quando a tua vida muda?",
+    "pt_BR": "Como você acha que o plano de cuidados de um pet deve se adaptar quando sua vida muda?"
+   }
+  },
+  {
+   "id": "pets-098",
+   "lv": "advanced",
+   "i18n": {
+    "en": "What pet care knowledge would you most like to pass on to others?",
+    "de": "Welches Wissen über Tierpflege würdest du am liebsten an andere weitergeben?",
+    "es": "¿Qué conocimientos sobre el cuidado de mascotas te gustaría transmitir a otros?",
+    "fr": "Quelles connaissances sur les soins aux animaux aimerais-tu le plus transmettre ?",
+    "it": "Quali conoscenze sulla cura degli animali ti piacerebbe di più trasmettere agli altri?",
+    "pt": "Que conhecimentos sobre cuidados com animais mais gostavas de passar aos outros?",
+    "pt_BR": "Que conhecimento sobre cuidados com pets você mais gostaria de passar adiante?"
+   }
+  },
+  {
+   "id": "pets-099",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How has your idea of what animals need changed over time?",
+    "de": "Wie hat sich deine Vorstellung davon, was Tiere brauchen, mit der Zeit verändert?",
+    "es": "¿Cómo ha cambiado con el tiempo tu idea de lo que necesitan los animales?",
+    "fr": "Comment ton idée de ce dont les animaux ont besoin a-t-elle évolué avec le temps ?",
+    "it": "Come è cambiata nel tempo la tua idea di ciò di cui hanno bisogno gli animali?",
+    "pt": "Como mudou ao longo do tempo a tua ideia do que os animais precisam?",
+    "pt_BR": "Como sua ideia sobre o que os animais precisam mudou com o tempo?"
+   }
+  },
+  {
+   "id": "pets-100",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Which pet care career would you choose if you could start training tomorrow?",
+    "de": "Welchen Beruf rund um Tiere würdest du wählen, wenn du morgen eine Ausbildung beginnen könntest?",
+    "es": "¿Qué profesión relacionada con las mascotas elegirías si pudieras empezar a formarte mañana?",
+    "fr": "Quel métier lié aux animaux choisirais-tu si tu pouvais commencer une formation demain ?",
+    "it": "Quale professione legata agli animali sceglieresti se potessi iniziare a formarti domani?",
+    "pt": "Que profissão ligada aos animais escolherias se pudesses começar a formação amanhã?",
+    "pt_BR": "Que profissão ligada aos pets você escolheria se pudesse começar a se formar amanhã?"
+   }
+  }
+ ]
+}

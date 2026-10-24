@@ -1,0 +1,2195 @@
+{
+"topic": "puzzles",
+"days": [
+{
+"d": 1,
+"lv": "beginner",
+"t": "Why our brains love puzzles",
+"f": "The small reward of an 'aha!' moment and why solving feels so satisfying"
+},
+{
+"d": 2,
+"lv": "beginner",
+"t": "Kinds of puzzles",
+"f": "A first map: riddles, word puzzles, logic puzzles, number puzzles and visual puzzles"
+},
+{
+"d": 3,
+"lv": "beginner",
+"t": "How to approach any puzzle",
+"f": "Read carefully, list what you know, try something and check your result"
+},
+{
+"d": 4,
+"lv": "beginner",
+"t": "Your first riddle",
+"f": "Solving 'What has hands but cannot clap?' and noticing how riddles use double meanings"
+},
+{
+"d": 5,
+"lv": "beginner",
+"t": "Classic riddles",
+"f": "Timeless riddles about everyday objects and the clever wording behind them"
+},
+{
+"d": 6,
+"lv": "beginner",
+"t": "The riddle of the Sphinx",
+"f": "The famous Greek riddle about what walks on four, two and three legs"
+},
+{
+"d": 7,
+"lv": "beginner",
+"t": "Riddles across cultures",
+"f": "Riddles appear in folk traditions all over the world, from Africa to Scandinavia"
+},
+{
+"d": 8,
+"lv": "beginner",
+"t": "Making a simple riddle",
+"f": "Describing an object by its features in a surprising, poetic way"
+},
+{
+"d": 9,
+"lv": "beginner",
+"t": "Word puzzles basics",
+"f": "Puzzles built on letters, spelling and meaning"
+},
+{
+"d": 10,
+"lv": "beginner",
+"t": "Anagrams",
+"f": "Rearranging the letters of a word to make a new one, like 'listen' and 'silent'"
+},
+{
+"d": 11,
+"lv": "beginner",
+"t": "Solving anagrams",
+"f": "Tricks like spotting common endings and moving vowels and consonants apart"
+},
+{
+"d": 12,
+"lv": "beginner",
+"t": "Palindromes",
+"f": "Words and sentences that read the same backwards, like 'level' and 'racecar'"
+},
+{
+"d": 13,
+"lv": "beginner",
+"t": "Hidden words",
+"f": "Finding words concealed inside sentences, such as 'cat' inside 'educate'"
+},
+{
+"d": 14,
+"lv": "beginner",
+"t": "Word searches",
+"f": "Scanning a grid systematically to find words in every direction"
+},
+{
+"d": 15,
+"lv": "beginner",
+"t": "Word ladders",
+"f": "Changing one letter at a time to turn one word into another, invented as 'doublets' by Lewis Carroll"
+},
+{
+"d": 16,
+"lv": "beginner",
+"t": "Missing letters",
+"f": "Completing words with gaps by using patterns and common letter pairs"
+},
+{
+"d": 17,
+"lv": "beginner",
+"t": "Rebus puzzles",
+"f": "Pictures, letters and positions that represent words or phrases"
+},
+{
+"d": 18,
+"lv": "beginner",
+"t": "Solving a rebus",
+"f": "Reading position, size and repetition as clues, like 'MIND over MATTER'"
+},
+{
+"d": 19,
+"lv": "beginner",
+"t": "Crossword basics",
+"f": "How grids, numbered clues, across and down work together"
+},
+{
+"d": 20,
+"lv": "beginner",
+"t": "The first crossword",
+"f": "Arthur Wynne published a 'word-cross' in a New York newspaper in 1913"
+},
+{
+"d": 21,
+"lv": "beginner",
+"t": "Crossword strategy",
+"f": "Starting with easy clues, using crossings and filling in plurals and endings"
+},
+{
+"d": 22,
+"lv": "beginner",
+"t": "Fill-in-the-blank clues",
+"f": "The simplest crossword clue type and how to spot them"
+},
+{
+"d": 23,
+"lv": "beginner",
+"t": "Synonym clues",
+"f": "Clues that ask for a word with the same meaning, and checking the length"
+},
+{
+"d": 24,
+"lv": "beginner",
+"t": "Word association",
+"f": "Linking words by meaning in chains and categories"
+},
+{
+"d": 25,
+"lv": "beginner",
+"t": "Odd one out",
+"f": "Spotting the item that doesn't belong and explaining your reasoning"
+},
+{
+"d": 26,
+"lv": "beginner",
+"t": "Category puzzles",
+"f": "Naming items in a category that start with a given letter"
+},
+{
+"d": 27,
+"lv": "beginner",
+"t": "Word puzzles in other languages",
+"f": "How anagrams and crosswords look in German, French, Spanish, Italian and Portuguese"
+},
+{
+"d": 28,
+"lv": "beginner",
+"t": "Tongue-twisting puzzles",
+"f": "Word challenges that test speaking as well as thinking"
+},
+{
+"d": 29,
+"lv": "beginner",
+"t": "Puzzle habits",
+"f": "Building a small daily puzzle routine and enjoying steady progress"
+},
+{
+"d": 30,
+"lv": "beginner",
+"t": "Review: words and riddles",
+"f": "A light recap of riddles, anagrams, palindromes and crosswords with a mini quiz"
+},
+{
+"d": 31,
+"lv": "beginner",
+"t": "Logic puzzles basics",
+"f": "Puzzles solved purely by reasoning, using clear rules and clues"
+},
+{
+"d": 32,
+"lv": "beginner",
+"t": "Deduction",
+"f": "Moving from facts to certain conclusions, step by step"
+},
+{
+"d": 33,
+"lv": "beginner",
+"t": "True or false statements",
+"f": "Deciding whether simple statements must be true, false or unknown"
+},
+{
+"d": 34,
+"lv": "beginner",
+"t": "If-then reasoning",
+"f": "Understanding 'if A then B' and what it does and does not tell you"
+},
+{
+"d": 35,
+"lv": "beginner",
+"t": "Logic grid puzzles",
+"f": "Using a table of ticks and crosses to match people, pets and colours"
+},
+{
+"d": 36,
+"lv": "beginner",
+"t": "Solving a logic grid",
+"f": "Marking impossibilities first and spotting the only remaining option"
+},
+{
+"d": 37,
+"lv": "beginner",
+"t": "Ordering puzzles",
+"f": "Working out who is taller, faster or first from a set of clues"
+},
+{
+"d": 38,
+"lv": "beginner",
+"t": "Seating puzzles",
+"f": "Arranging people around a table using position clues"
+},
+{
+"d": 39,
+"lv": "beginner",
+"t": "Knights and knaves",
+"f": "Islands where some people always tell the truth and others always lie"
+},
+{
+"d": 40,
+"lv": "beginner",
+"t": "Classic truth-teller puzzles",
+"f": "Finding the right road by asking one clever question"
+},
+{
+"d": 41,
+"lv": "beginner",
+"t": "River crossing puzzles",
+"f": "The wolf, goat and cabbage puzzle and planning safe trips across a river"
+},
+{
+"d": 42,
+"lv": "beginner",
+"t": "The Tower of Hanoi",
+"f": "Moving discs between pegs, a puzzle invented by Édouard Lucas in 1883"
+},
+{
+"d": 43,
+"lv": "beginner",
+"t": "Weighing puzzles",
+"f": "Finding the odd coin with a balance scale in as few weighings as possible"
+},
+{
+"d": 44,
+"lv": "beginner",
+"t": "Measuring puzzles",
+"f": "Getting exactly 4 litres using only a 3-litre and a 5-litre jug"
+},
+{
+"d": 45,
+"lv": "beginner",
+"t": "Age puzzles",
+"f": "Gentle reasoning puzzles about how old people are now and later"
+},
+{
+"d": 46,
+"lv": "beginner",
+"t": "Calendar puzzles",
+"f": "Working out days of the week and dates with clever shortcuts"
+},
+{
+"d": 47,
+"lv": "beginner",
+"t": "Clock puzzles",
+"f": "Puzzles about clock hands, times and angles"
+},
+{
+"d": 48,
+"lv": "beginner",
+"t": "Logic in everyday life",
+"f": "Using careful reasoning to plan trips, solve problems and avoid mistakes"
+},
+{
+"d": 49,
+"lv": "beginner",
+"t": "Common reasoning traps",
+"f": "Jumping to conclusions and how puzzles teach us to slow down"
+},
+{
+"d": 50,
+"lv": "beginner",
+"t": "Making a simple logic puzzle",
+"f": "Writing three clues that lead to exactly one answer"
+},
+{
+"d": 51,
+"lv": "beginner",
+"t": "Number puzzles basics",
+"f": "Puzzles where numbers follow hidden rules"
+},
+{
+"d": 52,
+"lv": "beginner",
+"t": "Number sequences",
+"f": "Finding the next number by spotting adding, doubling or alternating patterns"
+},
+{
+"d": 53,
+"lv": "beginner",
+"t": "Famous sequences",
+"f": "Square numbers, triangular numbers and the Fibonacci sequence"
+},
+{
+"d": 54,
+"lv": "beginner",
+"t": "Missing number puzzles",
+"f": "Grids and circles where one number fits the pattern"
+},
+{
+"d": 55,
+"lv": "beginner",
+"t": "Magic squares",
+"f": "Grids where every row, column and diagonal add up to the same total"
+},
+{
+"d": 56,
+"lv": "beginner",
+"t": "The Lo Shu square",
+"f": "The ancient Chinese 3x3 magic square and the legend of the turtle shell"
+},
+{
+"d": 57,
+"lv": "beginner",
+"t": "Arithmetic puzzles",
+"f": "Using plus, minus, times and divide to reach a target number"
+},
+{
+"d": 58,
+"lv": "beginner",
+"t": "Make 24",
+"f": "The card game where four numbers must make exactly 24"
+},
+{
+"d": 59,
+"lv": "beginner",
+"t": "Mental maths tricks",
+"f": "Shortcuts that make number puzzles faster and more fun"
+},
+{
+"d": 60,
+"lv": "beginner",
+"t": "Review: logic and numbers",
+"f": "A recap of deduction, logic grids, sequences and magic squares with a quiz"
+},
+{
+"d": 61,
+"lv": "beginner",
+"t": "Sudoku basics",
+"f": "The 9x9 grid where each row, column and box holds the digits 1 to 9"
+},
+{
+"d": 62,
+"lv": "beginner",
+"t": "The story of Sudoku",
+"f": "A puzzle first published in the USA as 'Number Place' and named Sudoku in Japan by Nikoli"
+},
+{
+"d": 63,
+"lv": "beginner",
+"t": "Sudoku: scanning",
+"f": "Looking across rows and columns to place a digit with certainty"
+},
+{
+"d": 64,
+"lv": "beginner",
+"t": "Sudoku: pencil marks",
+"f": "Writing small candidate numbers to keep track of possibilities"
+},
+{
+"d": 65,
+"lv": "beginner",
+"t": "Sudoku: naked singles",
+"f": "Spotting a cell with only one possible digit"
+},
+{
+"d": 66,
+"lv": "beginner",
+"t": "Sudoku: hidden singles",
+"f": "Finding the only place in a row, column or box for a digit"
+},
+{
+"d": 67,
+"lv": "beginner",
+"t": "Mini Sudoku",
+"f": "4x4 and 6x6 grids as a gentle way to learn the rules"
+},
+{
+"d": 68,
+"lv": "beginner",
+"t": "Kakuro",
+"f": "Crossword-like grids filled with digits that add up to given sums"
+},
+{
+"d": 69,
+"lv": "beginner",
+"t": "KenKen",
+"f": "Grids combining Latin squares and arithmetic cages"
+},
+{
+"d": 70,
+"lv": "beginner",
+"t": "Latin squares",
+"f": "Grids where each symbol appears once per row and column, studied by Euler"
+},
+{
+"d": 71,
+"lv": "beginner",
+"t": "Nonograms",
+"f": "Picture logic puzzles where numbers reveal which cells to fill"
+},
+{
+"d": 72,
+"lv": "beginner",
+"t": "Solving a nonogram",
+"f": "Using overlaps in long rows to fill cells for certain"
+},
+{
+"d": 73,
+"lv": "beginner",
+"t": "Number-placement puzzles in Japan",
+"f": "Why so many popular pencil puzzles were developed or named in Japan"
+},
+{
+"d": 74,
+"lv": "beginner",
+"t": "Futoshiki",
+"f": "Latin square puzzles with greater-than and less-than signs"
+},
+{
+"d": 75,
+"lv": "beginner",
+"t": "Slitherlink",
+"f": "Drawing a single loop around numbered cells"
+},
+{
+"d": 76,
+"lv": "beginner",
+"t": "Review: pencil puzzles",
+"f": "A recap of Sudoku, Kakuro, KenKen and nonograms with a challenge"
+},
+{
+"d": 77,
+"lv": "beginner",
+"t": "Visual puzzles basics",
+"f": "Puzzles that use shapes, space and seeing differently"
+},
+{
+"d": 78,
+"lv": "beginner",
+"t": "Spot the difference",
+"f": "Training your eyes to compare two pictures systematically"
+},
+{
+"d": 79,
+"lv": "beginner",
+"t": "Optical illusions",
+"f": "Pictures that trick our perception, like lines that look different lengths"
+},
+{
+"d": 80,
+"lv": "beginner",
+"t": "Impossible figures",
+"f": "The Penrose triangle and other shapes that cannot exist in 3D"
+},
+{
+"d": 81,
+"lv": "beginner",
+"t": "Hidden pictures",
+"f": "Finding objects cleverly hidden inside an illustration"
+},
+{
+"d": 82,
+"lv": "beginner",
+"t": "Mazes",
+"f": "Finding your way through paths, and why mazes are among the oldest puzzles"
+},
+{
+"d": 83,
+"lv": "beginner",
+"t": "Maze strategies",
+"f": "The wall-follower rule and working backwards from the exit"
+},
+{
+"d": 84,
+"lv": "beginner",
+"t": "Labyrinths",
+"f": "The difference between a single-path labyrinth and a branching maze"
+},
+{
+"d": 85,
+"lv": "beginner",
+"t": "Tangram",
+"f": "The Chinese puzzle of seven shapes that form hundreds of figures"
+},
+{
+"d": 86,
+"lv": "beginner",
+"t": "Making tangram figures",
+"f": "Building animals and people from the seven tangram pieces"
+},
+{
+"d": 87,
+"lv": "beginner",
+"t": "Matchstick puzzles",
+"f": "Moving one or two matches to fix an equation or change a shape"
+},
+{
+"d": 88,
+"lv": "beginner",
+"t": "Dot and line puzzles",
+"f": "Connecting nine dots with four straight lines without lifting the pen"
+},
+{
+"d": 89,
+"lv": "beginner",
+"t": "Paper folding puzzles",
+"f": "Predicting what a sheet looks like after folding and cutting"
+},
+{
+"d": 90,
+"lv": "beginner",
+"t": "Jigsaw puzzles",
+"f": "Edges first, then colours and shapes: strategies for big jigsaws"
+},
+{
+"d": 91,
+"lv": "beginner",
+"t": "The history of jigsaws",
+"f": "Early jigsaws were wooden maps made in 18th-century London to teach geography"
+},
+{
+"d": 92,
+"lv": "beginner",
+"t": "Review: visual puzzles",
+"f": "A recap of illusions, mazes, tangrams and matchsticks with a quiz"
+},
+{
+"d": 93,
+"lv": "beginner",
+"t": "Mechanical puzzles",
+"f": "Physical puzzles you hold, twist, slide and take apart"
+},
+{
+"d": 94,
+"lv": "beginner",
+"t": "The Rubik's Cube",
+"f": "Invented by Ernő Rubik in 1974, it became one of the best-selling puzzles ever"
+},
+{
+"d": 95,
+"lv": "beginner",
+"t": "Cube notation",
+"f": "Letters like R, U and F that describe cube turns"
+},
+{
+"d": 96,
+"lv": "beginner",
+"t": "Solving the cube layer by layer",
+"f": "The beginner method: cross, first layer, middle layer and last layer"
+},
+{
+"d": 97,
+"lv": "beginner",
+"t": "Sliding puzzles",
+"f": "The 15 puzzle and moving tiles into order using the empty space"
+},
+{
+"d": 98,
+"lv": "beginner",
+"t": "Disentanglement puzzles",
+"f": "Wire and string puzzles where pieces must be separated"
+},
+{
+"d": 99,
+"lv": "beginner",
+"t": "Burr puzzles",
+"f": "Interlocking wooden pieces that come apart in a surprising order"
+},
+{
+"d": 100,
+"lv": "beginner",
+"t": "Puzzle boxes",
+"f": "Japanese himitsu-bako boxes that open only with a secret series of moves"
+},
+{
+"d": 101,
+"lv": "beginner",
+"t": "Lateral thinking",
+"f": "Solving problems by looking at them from an unexpected angle"
+},
+{
+"d": 102,
+"lv": "beginner",
+"t": "Lateral thinking puzzles",
+"f": "Yes-or-no question puzzles where you uncover a surprising story"
+},
+{
+"d": 103,
+"lv": "beginner",
+"t": "Thinking outside the box",
+"f": "Questioning hidden assumptions, as in the nine dots puzzle"
+},
+{
+"d": 104,
+"lv": "beginner",
+"t": "Trick questions",
+"f": "Questions designed to catch you out with wording, and how to read carefully"
+},
+{
+"d": 105,
+"lv": "beginner",
+"t": "Brain teasers for groups",
+"f": "Puzzles to solve together with friends or family"
+},
+{
+"d": 106,
+"lv": "beginner",
+"t": "Puzzles for children",
+"f": "Simple puzzles that grow logic, patience and confidence in kids"
+},
+{
+"d": 107,
+"lv": "beginner",
+"t": "Puzzles and memory",
+"f": "How memory games and puzzles keep the mind active"
+},
+{
+"d": 108,
+"lv": "beginner",
+"t": "Memory games",
+"f": "Matching pairs, sequences and remembering lists with clever techniques"
+},
+{
+"d": 109,
+"lv": "beginner",
+"t": "The memory palace",
+"f": "Placing items along a familiar route in your imagination to remember them"
+},
+{
+"d": 110,
+"lv": "beginner",
+"t": "Speed puzzles",
+"f": "Solving quickly versus solving carefully, and when each matters"
+},
+{
+"d": 111,
+"lv": "beginner",
+"t": "Getting unstuck",
+"f": "Taking a break, changing approach and coming back with fresh eyes"
+},
+{
+"d": 112,
+"lv": "beginner",
+"t": "Using hints well",
+"f": "How to ask for a small nudge rather than the full answer"
+},
+{
+"d": 113,
+"lv": "beginner",
+"t": "Checking your answer",
+"f": "Verifying a solution against every clue before celebrating"
+},
+{
+"d": 114,
+"lv": "beginner",
+"t": "Puzzle journal",
+"f": "Recording puzzles you solved, how long they took and what you learned"
+},
+{
+"d": 115,
+"lv": "beginner",
+"t": "Your favourite puzzle type",
+"f": "Reflecting on which puzzles you enjoy most and why"
+},
+{
+"d": 116,
+"lv": "beginner",
+"t": "Puzzles on the go",
+"f": "Simple puzzles you can play in your head while waiting or travelling"
+},
+{
+"d": 117,
+"lv": "beginner",
+"t": "Number riddles",
+"f": "Riddles with a numeric answer, like 'I am an odd number; take away a letter and I become even'"
+},
+{
+"d": 118,
+"lv": "beginner",
+"t": "Picture riddles",
+"f": "Riddles solved by looking closely at a drawing or photo"
+},
+{
+"d": 119,
+"lv": "beginner",
+"t": "Puzzle-solving with friends",
+"f": "Sharing a puzzle across languages and cultures in a chat"
+},
+{
+"d": 120,
+"lv": "beginner",
+"t": "Review: the beginner puzzler",
+"f": "A cheerful look back at the first 120 days and your favourite discoveries"
+},
+{
+"d": 121,
+"lv": "intermediate",
+"t": "Puzzles through history",
+"f": "From ancient riddles to newspaper puzzles: a quick tour of puzzle history"
+},
+{
+"d": 122,
+"lv": "intermediate",
+"t": "Ancient puzzle problems",
+"f": "Puzzle-like maths problems in the Egyptian Rhind papyrus"
+},
+{
+"d": 123,
+"lv": "intermediate",
+"t": "Alcuin's puzzles",
+"f": "An early medieval collection of problems, including a river crossing puzzle"
+},
+{
+"d": 124,
+"lv": "intermediate",
+"t": "Puzzles in the Islamic Golden Age",
+"f": "Mathematical recreations and clever problems in medieval scholarship"
+},
+{
+"d": 125,
+"lv": "intermediate",
+"t": "Euler and the bridges of Königsberg",
+"f": "The 1736 puzzle about crossing seven bridges once each that started graph theory"
+},
+{
+"d": 126,
+"lv": "intermediate",
+"t": "Drawing without lifting the pen",
+"f": "Using Euler's idea about odd and even meeting points to solve drawing puzzles"
+},
+{
+"d": 127,
+"lv": "intermediate",
+"t": "Sam Loyd",
+"f": "The American puzzle maker famous for inventive, illustrated puzzles"
+},
+{
+"d": 128,
+"lv": "intermediate",
+"t": "Henry Dudeney",
+"f": "The English puzzle master behind 'The Canterbury Puzzles'"
+},
+{
+"d": 129,
+"lv": "intermediate",
+"t": "Lewis Carroll's puzzles",
+"f": "The 'Alice' author's love of logic games, word puzzles and doublets"
+},
+{
+"d": 130,
+"lv": "intermediate",
+"t": "Martin Gardner",
+"f": "The writer whose long-running magazine column made recreational maths famous"
+},
+{
+"d": 131,
+"lv": "intermediate",
+"t": "Puzzles in newspapers",
+"f": "How crosswords, Sudoku and quizzes became daily rituals"
+},
+{
+"d": 132,
+"lv": "intermediate",
+"t": "Puzzle clubs and championships",
+"f": "Crossword tournaments, Sudoku championships and puzzle hunts"
+},
+{
+"d": 133,
+"lv": "intermediate",
+"t": "Puzzles in Japan: Nikoli",
+"f": "The Japanese publisher that popularised many pencil puzzles worldwide"
+},
+{
+"d": 134,
+"lv": "intermediate",
+"t": "Review: puzzle history",
+"f": "A recap of Euler, Loyd, Dudeney, Carroll and Gardner with a mini quiz"
+},
+{
+"d": 135,
+"lv": "intermediate",
+"t": "Cryptic crosswords",
+"f": "Clues with a definition and wordplay, a British favourite"
+},
+{
+"d": 136,
+"lv": "intermediate",
+"t": "Reading a cryptic clue",
+"f": "Finding the definition at the start or end and the wordplay in the rest"
+},
+{
+"d": 137,
+"lv": "intermediate",
+"t": "Anagram clues",
+"f": "Indicator words like 'mixed' or 'broken' that signal letters to rearrange"
+},
+{
+"d": 138,
+"lv": "intermediate",
+"t": "Hidden word clues",
+"f": "Answers concealed across the words of the clue itself"
+},
+{
+"d": 139,
+"lv": "intermediate",
+"t": "Charades clues",
+"f": "Building the answer from smaller parts joined together"
+},
+{
+"d": 140,
+"lv": "intermediate",
+"t": "Container clues",
+"f": "One word placed inside another, signalled by words like 'holding'"
+},
+{
+"d": 141,
+"lv": "intermediate",
+"t": "Homophone clues",
+"f": "Indicators like 'we hear' that point to a word sounding like another"
+},
+{
+"d": 142,
+"lv": "intermediate",
+"t": "Reversal clues",
+"f": "Words read backwards, signalled by 'back' or 'returning'"
+},
+{
+"d": 143,
+"lv": "intermediate",
+"t": "Double definition clues",
+"f": "Two different meanings of the same word side by side"
+},
+{
+"d": 144,
+"lv": "intermediate",
+"t": "Solving your first cryptic",
+"f": "Putting all clue types together in a beginner-friendly grid"
+},
+{
+"d": 145,
+"lv": "intermediate",
+"t": "Crosswords around the world",
+"f": "Arrow-word puzzles in Europe, crucigramas, mots croisés and palavras cruzadas"
+},
+{
+"d": 146,
+"lv": "intermediate",
+"t": "Review: cryptic clues",
+"f": "A recap of cryptic clue types with a set of practice clues"
+},
+{
+"d": 147,
+"lv": "intermediate",
+"t": "Codes and ciphers",
+"f": "Turning messages into secrets and back again, a classic puzzle form"
+},
+{
+"d": 148,
+"lv": "intermediate",
+"t": "The Caesar cipher",
+"f": "Shifting each letter by a fixed number, used by Julius Caesar"
+},
+{
+"d": 149,
+"lv": "intermediate",
+"t": "Breaking a Caesar cipher",
+"f": "Trying all shifts and spotting real words"
+},
+{
+"d": 150,
+"lv": "intermediate",
+"t": "Substitution ciphers",
+"f": "Replacing each letter with another symbol"
+},
+{
+"d": 151,
+"lv": "intermediate",
+"t": "Frequency analysis",
+"f": "Using the most common letters, like E in English, to crack codes"
+},
+{
+"d": 152,
+"lv": "intermediate",
+"t": "The pigpen cipher",
+"f": "A geometric cipher using grids and dots"
+},
+{
+"d": 153,
+"lv": "intermediate",
+"t": "Morse code",
+"f": "Dots and dashes as a code, and turning it into a puzzle"
+},
+{
+"d": 154,
+"lv": "intermediate",
+"t": "Book ciphers",
+"f": "Using page, line and word numbers from a shared book"
+},
+{
+"d": 155,
+"lv": "intermediate",
+"t": "Cryptograms",
+"f": "Newspaper quote puzzles solved by substitution"
+},
+{
+"d": 156,
+"lv": "intermediate",
+"t": "Acrostics",
+"f": "Words hidden in the first letters of lines in a poem or puzzle"
+},
+{
+"d": 157,
+"lv": "intermediate",
+"t": "Number codes",
+"f": "A=1, B=2 and other simple letter-to-number codes"
+},
+{
+"d": 158,
+"lv": "intermediate",
+"t": "Making a secret message",
+"f": "Designing a cipher for a friend and giving them a fair hint"
+},
+{
+"d": 159,
+"lv": "intermediate",
+"t": "The VigenÃ¨re cipher",
+"f": "A cipher using a keyword to shift letters by different amounts"
+},
+{
+"d": 160,
+"lv": "intermediate",
+"t": "Semaphore and flag codes",
+"f": "Spelling messages with flag positions, a visual code puzzle"
+},
+{
+"d": 161,
+"lv": "intermediate",
+"t": "Review: codes and ciphers",
+"f": "A recap of Caesar, substitution and Morse with a decoding challenge"
+},
+{
+"d": 162,
+"lv": "intermediate",
+"t": "Advanced logic grids",
+"f": "Larger grids with more categories and trickier clues"
+},
+{
+"d": 163,
+"lv": "intermediate",
+"t": "Negative clues",
+"f": "Using 'not' clues to eliminate many options at once"
+},
+{
+"d": 164,
+"lv": "intermediate",
+"t": "Chains of deduction",
+"f": "Linking several clues to reach a conclusion no single clue gives"
+},
+{
+"d": 165,
+"lv": "intermediate",
+"t": "Liars and truth-tellers advanced",
+"f": "Puzzles with three types of islanders and nested statements"
+},
+{
+"d": 166,
+"lv": "intermediate",
+"t": "Einstein's riddle",
+"f": "The zebra puzzle with five houses, often said to be by Einstein though no proof exists"
+},
+{
+"d": 167,
+"lv": "intermediate",
+"t": "Solving the zebra puzzle",
+"f": "Setting up the grid and working through the clues in order"
+},
+{
+"d": 168,
+"lv": "intermediate",
+"t": "Syllogisms",
+"f": "Classic two-premise logic like 'All cats are animals' and valid conclusions"
+},
+{
+"d": 169,
+"lv": "intermediate",
+"t": "Venn diagram puzzles",
+"f": "Using overlapping circles to solve grouping problems"
+},
+{
+"d": 170,
+"lv": "intermediate",
+"t": "Logic puzzles with hats",
+"f": "Players and coloured hats: reasoning about what others can see"
+},
+{
+"d": 171,
+"lv": "intermediate",
+"t": "Common knowledge puzzles",
+"f": "How 'I know that you know' changes the answer"
+},
+{
+"d": 172,
+"lv": "intermediate",
+"t": "Review: advanced logic",
+"f": "A recap of zebra puzzles, syllogisms and hat puzzles with a challenge"
+},
+{
+"d": 173,
+"lv": "intermediate",
+"t": "Sudoku: naked pairs",
+"f": "Two cells sharing the same two candidates eliminate them elsewhere"
+},
+{
+"d": 174,
+"lv": "intermediate",
+"t": "Sudoku: pointing pairs",
+"f": "Candidates confined to one line in a box remove options from that line"
+},
+{
+"d": 175,
+"lv": "intermediate",
+"t": "Sudoku: box-line reduction",
+"f": "Using a row or column to eliminate candidates in a box"
+},
+{
+"d": 176,
+"lv": "intermediate",
+"t": "Sudoku: X-Wing",
+"f": "A pattern of four cells that removes a candidate from two lines"
+},
+{
+"d": 177,
+"lv": "intermediate",
+"t": "Sudoku variants",
+"f": "Killer Sudoku, diagonal Sudoku and other twists on the classic"
+},
+{
+"d": 178,
+"lv": "intermediate",
+"t": "Killer Sudoku",
+"f": "Cages with sums combine Sudoku and Kakuro thinking"
+},
+{
+"d": 179,
+"lv": "intermediate",
+"t": "Sudoku without guessing",
+"f": "Why good puzzles can be solved by logic alone"
+},
+{
+"d": 180,
+"lv": "intermediate",
+"t": "Hitori",
+"f": "Shading numbers so no digit repeats in any row or column"
+},
+{
+"d": 181,
+"lv": "intermediate",
+"t": "Nurikabe",
+"f": "Building islands and a connected sea in a grid of numbers"
+},
+{
+"d": 182,
+"lv": "intermediate",
+"t": "Masyu",
+"f": "Drawing a loop through black and white circles with turning rules"
+},
+{
+"d": 183,
+"lv": "intermediate",
+"t": "Battleships puzzles",
+"f": "Locating a hidden fleet using row and column counts"
+},
+{
+"d": 184,
+"lv": "intermediate",
+"t": "Star Battle",
+"f": "Placing stars so none touch and each region has the right number"
+},
+{
+"d": 185,
+"lv": "intermediate",
+"t": "Review: advanced pencil puzzles",
+"f": "A recap of Sudoku techniques and new grid puzzles with a quiz"
+},
+{
+"d": 186,
+"lv": "intermediate",
+"t": "Probability puzzles",
+"f": "Puzzles about chance, coins, dice and surprising odds"
+},
+{
+"d": 187,
+"lv": "intermediate",
+"t": "Coin and dice puzzles",
+"f": "Working out likely outcomes with simple counting"
+},
+{
+"d": 188,
+"lv": "intermediate",
+"t": "The birthday problem",
+"f": "Why just 23 people make a shared birthday more likely than not"
+},
+{
+"d": 189,
+"lv": "intermediate",
+"t": "The Monty Hall problem",
+"f": "The famous game show puzzle where switching doors doubles your chances"
+},
+{
+"d": 190,
+"lv": "intermediate",
+"t": "Counting puzzles",
+"f": "Counting handshakes, paths and arrangements without listing them all"
+},
+{
+"d": 191,
+"lv": "intermediate",
+"t": "Handshake problems",
+"f": "How many handshakes happen when everyone greets everyone once"
+},
+{
+"d": 192,
+"lv": "intermediate",
+"t": "Pigeonhole principle",
+"f": "If there are more pigeons than holes, some hole holds two"
+},
+{
+"d": 193,
+"lv": "intermediate",
+"t": "Parity puzzles",
+"f": "Using odd and even to prove a puzzle is impossible"
+},
+{
+"d": 194,
+"lv": "intermediate",
+"t": "The mutilated chessboard",
+"f": "Why dominoes can't cover a board with two opposite corners removed"
+},
+{
+"d": 195,
+"lv": "intermediate",
+"t": "Chessboard puzzles",
+"f": "The eight queens puzzle and the knight's tour"
+},
+{
+"d": 196,
+"lv": "intermediate",
+"t": "The eight queens",
+"f": "Placing eight queens so none attacks another"
+},
+{
+"d": 197,
+"lv": "intermediate",
+"t": "The knight's tour",
+"f": "Visiting every square once with a chess knight, studied by Euler"
+},
+{
+"d": 198,
+"lv": "intermediate",
+"t": "Review: chance and counting",
+"f": "A recap of probability, counting and chessboard puzzles with a challenge"
+},
+{
+"d": 199,
+"lv": "intermediate",
+"t": "Geometry puzzles",
+"f": "Shapes, areas and angles in playful problems"
+},
+{
+"d": 200,
+"lv": "intermediate",
+"t": "Dissection puzzles",
+"f": "Cutting a shape into pieces that rearrange into another shape"
+},
+{
+"d": 201,
+"lv": "intermediate",
+"t": "Area puzzles",
+"f": "Finding missing areas with clever reasoning instead of long formulas"
+},
+{
+"d": 202,
+"lv": "intermediate",
+"t": "Polyominoes",
+"f": "Shapes made of squares, like the pentominoes used in many puzzles"
+},
+{
+"d": 203,
+"lv": "intermediate",
+"t": "Pentomino puzzles",
+"f": "Fitting twelve pentominoes into a rectangle"
+},
+{
+"d": 204,
+"lv": "intermediate",
+"t": "Tessellations",
+"f": "Shapes that tile a surface without gaps, as in M. C. Escher's art"
+},
+{
+"d": 205,
+"lv": "intermediate",
+"t": "Folding and origami puzzles",
+"f": "Using paper folds to solve geometric challenges"
+},
+{
+"d": 206,
+"lv": "intermediate",
+"t": "3D visualisation",
+"f": "Imagining cubes from their nets and rotated objects"
+},
+{
+"d": 207,
+"lv": "intermediate",
+"t": "Cube net puzzles",
+"f": "Which flat patterns fold into a cube"
+},
+{
+"d": 208,
+"lv": "intermediate",
+"t": "Counting shapes",
+"f": "How many triangles or squares hide in a figure"
+},
+{
+"d": 209,
+"lv": "intermediate",
+"t": "Spatial puzzles in daily life",
+"f": "Packing a suitcase or a car boot as a real-world puzzle"
+},
+{
+"d": 210,
+"lv": "intermediate",
+"t": "Symmetry puzzles",
+"f": "Completing pictures and patterns using mirror and rotational symmetry"
+},
+{
+"d": 211,
+"lv": "intermediate",
+"t": "Soma cube",
+"f": "Seven pieces that assemble into a 3x3x3 cube, invented by Piet Hein"
+},
+{
+"d": 212,
+"lv": "intermediate",
+"t": "Review: shapes and space",
+"f": "A recap of dissections, polyominoes and 3D puzzles with a quiz"
+},
+{
+"d": 213,
+"lv": "intermediate",
+"t": "Riddles in literature",
+"f": "Riddles in 'The Hobbit', the Exeter Book and other famous texts"
+},
+{
+"d": 214,
+"lv": "intermediate",
+"t": "Old English riddles",
+"f": "Anglo-Saxon riddles that describe everyday objects poetically"
+},
+{
+"d": 215,
+"lv": "intermediate",
+"t": "Riddle contests in folklore",
+"f": "Stories where heroes win by solving or asking riddles"
+},
+{
+"d": 216,
+"lv": "intermediate",
+"t": "Turandot's riddles",
+"f": "The three riddles in the famous opera by Puccini"
+},
+{
+"d": 217,
+"lv": "intermediate",
+"t": "Riddles in Spanish and Portuguese",
+"f": "Adivinanzas and adivinhas, folk riddles shared with children"
+},
+{
+"d": 218,
+"lv": "intermediate",
+"t": "Riddles in German, French and Italian",
+"f": "Rätsel, devinettes and indovinelli across European traditions"
+},
+{
+"d": 219,
+"lv": "intermediate",
+"t": "Proverb puzzles",
+"f": "Rebuilding proverbs from scrambled words or pictures"
+},
+{
+"d": 220,
+"lv": "intermediate",
+"t": "Charades",
+"f": "The party game of acting out words and titles without speaking"
+},
+{
+"d": 221,
+"lv": "intermediate",
+"t": "Twenty Questions",
+"f": "Finding the answer with yes-or-no questions, a lesson in clever questioning"
+},
+{
+"d": 222,
+"lv": "intermediate",
+"t": "Word chain games",
+"f": "Shiritori and other games where each word starts with the last letter of the previous"
+},
+{
+"d": 223,
+"lv": "intermediate",
+"t": "Board puzzles and games",
+"f": "Puzzle-like games such as solitaire boards and sliding blocks"
+},
+{
+"d": 224,
+"lv": "intermediate",
+"t": "Peg solitaire",
+"f": "Jumping pegs until only one remains, ideally in the centre"
+},
+{
+"d": 225,
+"lv": "intermediate",
+"t": "Mancala as a puzzle",
+"f": "Counting seeds and planning moves in one of the oldest board game families"
+},
+{
+"d": 226,
+"lv": "intermediate",
+"t": "Review: puzzles in culture",
+"f": "A recap of literary riddles, folk riddles and party puzzle games"
+},
+{
+"d": 227,
+"lv": "intermediate",
+"t": "Chess puzzles",
+"f": "Mate-in-one and mate-in-two problems for players of any level"
+},
+{
+"d": 228,
+"lv": "intermediate",
+"t": "Tactics: forks and pins",
+"f": "Spotting tactical patterns that win material in chess puzzles"
+},
+{
+"d": 229,
+"lv": "intermediate",
+"t": "Go problems",
+"f": "Tsumego, the life-and-death problems Go players solve to train"
+},
+{
+"d": 230,
+"lv": "intermediate",
+"t": "Draughts and other game puzzles",
+"f": "Puzzle positions in draughts, backgammon and card games"
+},
+{
+"d": 231,
+"lv": "intermediate",
+"t": "Bridge and card puzzles",
+"f": "Double-dummy problems where all cards are visible"
+},
+{
+"d": 232,
+"lv": "intermediate",
+"t": "Escape rooms",
+"f": "Teams solving linked puzzles to unlock a room within a time limit"
+},
+{
+"d": 233,
+"lv": "intermediate",
+"t": "Escape room skills",
+"f": "Searching thoroughly, sharing clues and dividing tasks"
+},
+{
+"d": 234,
+"lv": "intermediate",
+"t": "Puzzle hunts",
+"f": "Long events where answers to many puzzles combine into a final solution"
+},
+{
+"d": 235,
+"lv": "intermediate",
+"t": "Metapuzzles",
+"f": "A puzzle whose pieces are the answers to other puzzles"
+},
+{
+"d": 236,
+"lv": "intermediate",
+"t": "Video game puzzles",
+"f": "Puzzle games and the clever level design behind them"
+},
+{
+"d": 237,
+"lv": "intermediate",
+"t": "Physics puzzle games",
+"f": "Games using gravity, light and momentum as puzzle mechanics"
+},
+{
+"d": 238,
+"lv": "intermediate",
+"t": "Review: game and team puzzles",
+"f": "A recap of chess, Go, escape rooms and puzzle hunts with a challenge"
+},
+{
+"d": 239,
+"lv": "intermediate",
+"t": "Puzzle-solving mindset",
+"f": "Curiosity, patience and enjoying being stuck for a while"
+},
+{
+"d": 240,
+"lv": "intermediate",
+"t": "Working backwards",
+"f": "Starting from the goal and reversing the steps"
+},
+{
+"d": 241,
+"lv": "intermediate",
+"t": "Simplifying the problem",
+"f": "Solving a smaller version first to find the pattern"
+},
+{
+"d": 242,
+"lv": "intermediate",
+"t": "Drawing a diagram",
+"f": "Turning words into pictures to see the solution"
+},
+{
+"d": 243,
+"lv": "intermediate",
+"t": "Making a table",
+"f": "Organising information so patterns stand out"
+},
+{
+"d": 244,
+"lv": "intermediate",
+"t": "Looking for invariants",
+"f": "Finding something that never changes to prove what's possible"
+},
+{
+"d": 245,
+"lv": "intermediate",
+"t": "Trial and improvement",
+"f": "Making a sensible guess, checking and adjusting"
+},
+{
+"d": 246,
+"lv": "intermediate",
+"t": "Changing perspective",
+"f": "Rotating, reversing or reframing a puzzle to reveal a new path"
+},
+{
+"d": 247,
+"lv": "intermediate",
+"t": "Spotting patterns",
+"f": "Training your eye to recognise structures that repeat across puzzle types"
+},
+{
+"d": 248,
+"lv": "intermediate",
+"t": "Persistence and breaks",
+"f": "Balancing focus with rest so your mind can find the answer"
+},
+{
+"d": 249,
+"lv": "intermediate",
+"t": "Explaining your solution",
+"f": "Describing your reasoning clearly to check it and teach others"
+},
+{
+"d": 250,
+"lv": "intermediate",
+"t": "Review: the intermediate puzzler",
+"f": "A cheerful look back at days 121 to 250 and your favourite techniques"
+},
+{
+"d": 251,
+"lv": "advanced",
+"t": "Designing puzzles: why make your own",
+"f": "Creating puzzles deepens understanding and gives friends a gift of fun"
+},
+{
+"d": 252,
+"lv": "advanced",
+"t": "What makes a good puzzle",
+"f": "A fair challenge, a unique solution and a satisfying 'aha!' moment"
+},
+{
+"d": 253,
+"lv": "advanced",
+"t": "Fairness in puzzles",
+"f": "Giving solvers everything they need without making it too easy"
+},
+{
+"d": 254,
+"lv": "advanced",
+"t": "Unique solutions",
+"f": "Checking that your puzzle has exactly one correct answer"
+},
+{
+"d": 255,
+"lv": "advanced",
+"t": "Difficulty curves",
+"f": "Starting easy and adding challenge step by step"
+},
+{
+"d": 256,
+"lv": "advanced",
+"t": "Writing great riddles",
+"f": "Choosing an object, listing surprising features and hiding them in metaphor"
+},
+{
+"d": 257,
+"lv": "advanced",
+"t": "Riddles in rhyme",
+"f": "Writing riddles with rhythm and rhyme like the classic folk ones"
+},
+{
+"d": 258,
+"lv": "advanced",
+"t": "Designing anagram puzzles",
+"f": "Finding satisfying anagrams and themed sets"
+},
+{
+"d": 259,
+"lv": "advanced",
+"t": "Designing a word search",
+"f": "Choosing a theme, hiding words fairly and checking the grid"
+},
+{
+"d": 260,
+"lv": "advanced",
+"t": "Designing a word ladder",
+"f": "Finding word pairs connected in a satisfying number of steps"
+},
+{
+"d": 261,
+"lv": "advanced",
+"t": "Designing a rebus",
+"f": "Turning phrases into clever arrangements of words and pictures"
+},
+{
+"d": 262,
+"lv": "advanced",
+"t": "Review: designing word puzzles",
+"f": "A recap of puzzle design principles with a creation challenge"
+},
+{
+"d": 263,
+"lv": "advanced",
+"t": "Building a mini crossword",
+"f": "Filling a 5x5 grid with interlocking words"
+},
+{
+"d": 264,
+"lv": "advanced",
+"t": "Grid filling",
+"f": "Choosing words that cross well and avoiding awkward letter combinations"
+},
+{
+"d": 265,
+"lv": "advanced",
+"t": "Writing clues",
+"f": "Making clues accurate, fair and fun at different difficulty levels"
+},
+{
+"d": 266,
+"lv": "advanced",
+"t": "Writing cryptic clues",
+"f": "Combining a definition and wordplay into a smooth surface reading"
+},
+{
+"d": 267,
+"lv": "advanced",
+"t": "Surface readings",
+"f": "Making a cryptic clue read like a natural sentence"
+},
+{
+"d": 268,
+"lv": "advanced",
+"t": "Themed crosswords",
+"f": "Linking long answers by a theme and a final twist"
+},
+{
+"d": 269,
+"lv": "advanced",
+"t": "Designing a logic grid",
+"f": "Choosing categories and writing clues that lead to one solution"
+},
+{
+"d": 270,
+"lv": "advanced",
+"t": "Testing your logic puzzle",
+"f": "Solving your own puzzle from scratch to check every step"
+},
+{
+"d": 271,
+"lv": "advanced",
+"t": "Designing a Sudoku",
+"f": "Why making a Sudoku with a unique solution is harder than it looks"
+},
+{
+"d": 272,
+"lv": "advanced",
+"t": "Designing a nonogram",
+"f": "Drawing a pixel picture and checking it can be solved by logic"
+},
+{
+"d": 273,
+"lv": "advanced",
+"t": "Designing a maze",
+"f": "Drawing a maze with one solution and tempting dead ends"
+},
+{
+"d": 274,
+"lv": "advanced",
+"t": "Designing a cipher puzzle",
+"f": "Hiding a message with a fair key and a gentle hint"
+},
+{
+"d": 275,
+"lv": "advanced",
+"t": "Review: designing grid and logic puzzles",
+"f": "A recap of crossword, logic grid and maze design with a challenge"
+},
+{
+"d": 276,
+"lv": "advanced",
+"t": "Designing lateral thinking puzzles",
+"f": "Writing a puzzling situation with a surprising but fair explanation"
+},
+{
+"d": 277,
+"lv": "advanced",
+"t": "Designing a treasure hunt",
+"f": "Linking clues around a home or park into a fun trail"
+},
+{
+"d": 278,
+"lv": "advanced",
+"t": "Designing an escape room game",
+"f": "Planning a chain of puzzles with a story and a final lock"
+},
+{
+"d": 279,
+"lv": "advanced",
+"t": "Puzzle flow",
+"f": "Making sure each puzzle leads naturally to the next"
+},
+{
+"d": 280,
+"lv": "advanced",
+"t": "Playtesting",
+"f": "Watching others solve your puzzles and noticing where they get stuck"
+},
+{
+"d": 281,
+"lv": "advanced",
+"t": "Giving hints as a designer",
+"f": "Writing a ladder of hints from gentle to strong"
+},
+{
+"d": 282,
+"lv": "advanced",
+"t": "Puzzles for all ages",
+"f": "Adapting a puzzle so children and adults can enjoy it together"
+},
+{
+"d": 283,
+"lv": "advanced",
+"t": "Accessible puzzles",
+"f": "Designing puzzles that work for people with different needs"
+},
+{
+"d": 284,
+"lv": "advanced",
+"t": "Themed puzzle sets",
+"f": "Grouping puzzles around one theme, like travel or food"
+},
+{
+"d": 285,
+"lv": "advanced",
+"t": "Visual design of puzzles",
+"f": "Clear layout, readable fonts and helpful diagrams"
+},
+{
+"d": 286,
+"lv": "advanced",
+"t": "Review: designing experiences",
+"f": "A recap of treasure hunts, escape games and playtesting"
+},
+{
+"d": 287,
+"lv": "advanced",
+"t": "Advanced cryptic techniques",
+"f": "Combining several clue types in one cryptic clue"
+},
+{
+"d": 288,
+"lv": "advanced",
+"t": "Advanced cryptic: & lit clues",
+"f": "Clues where the whole sentence is both definition and wordplay"
+},
+{
+"d": 289,
+"lv": "advanced",
+"t": "Barred crosswords",
+"f": "Grids with thick bars instead of black squares"
+},
+{
+"d": 290,
+"lv": "advanced",
+"t": "Variety crosswords",
+"f": "Crosswords with twists, like answers entered backwards or in spirals"
+},
+{
+"d": 291,
+"lv": "advanced",
+"t": "Diagramless crosswords",
+"f": "Solving a crossword where you must also work out the grid"
+},
+{
+"d": 292,
+"lv": "advanced",
+"t": "Spelling Bee style puzzles",
+"f": "Making many words from seven letters with one required letter"
+},
+{
+"d": 293,
+"lv": "advanced",
+"t": "Five-letter word games",
+"f": "Guessing a hidden word with coloured feedback, and smart first guesses"
+},
+{
+"d": 294,
+"lv": "advanced",
+"t": "Wordplay with constraints",
+"f": "Lipograms, writing without a certain letter, as in Perec's French novel"
+},
+{
+"d": 295,
+"lv": "advanced",
+"t": "Pangrams",
+"f": "Sentences that use every letter of the alphabet, like 'The quick brown fox'"
+},
+{
+"d": 296,
+"lv": "advanced",
+"t": "Review: advanced word puzzles",
+"f": "A recap of advanced cryptics, variety grids and constraints with a quiz"
+},
+{
+"d": 297,
+"lv": "advanced",
+"t": "Advanced Sudoku: Swordfish",
+"f": "Extending X-Wing to three rows and three columns"
+},
+{
+"d": 298,
+"lv": "advanced",
+"t": "Advanced Sudoku: XY-Wing",
+"f": "A three-cell pattern that removes candidates"
+},
+{
+"d": 299,
+"lv": "advanced",
+"t": "Advanced Sudoku: chains",
+"f": "Following links between candidates to find contradictions"
+},
+{
+"d": 300,
+"lv": "advanced",
+"t": "Sudoku speed solving",
+"f": "How top solvers combine scanning and pattern recognition"
+},
+{
+"d": 301,
+"lv": "advanced",
+"t": "Large logic puzzles",
+"f": "Strategies for big, multi-step logic puzzles"
+},
+{
+"d": 302,
+"lv": "advanced",
+"t": "Puzzle notation",
+"f": "Keeping clear notes so you can retrace and check your reasoning"
+},
+{
+"d": 303,
+"lv": "advanced",
+"t": "Bifurcation and logic",
+"f": "Why expert solvers avoid guessing and look for forced moves"
+},
+{
+"d": 304,
+"lv": "advanced",
+"t": "Review: expert pencil puzzles",
+"f": "A recap of advanced Sudoku and big logic puzzles with a challenge"
+},
+{
+"d": 305,
+"lv": "advanced",
+"t": "Famous unsolved and solved puzzles",
+"f": "Puzzles that took years to solve and what they taught us"
+},
+{
+"d": 306,
+"lv": "advanced",
+"t": "The four colour theorem",
+"f": "Any map can be coloured with four colours so neighbours differ"
+},
+{
+"d": 307,
+"lv": "advanced",
+"t": "The Fifteen puzzle craze",
+"f": "The 1880 sliding-tile craze and the impossible version"
+},
+{
+"d": 308,
+"lv": "advanced",
+"t": "The Rubik's Cube and God's number",
+"f": "Any position can be solved in 20 moves or fewer"
+},
+{
+"d": 309,
+"lv": "advanced",
+"t": "Speedcubing",
+"f": "How solvers learn algorithms and look ahead to solve in seconds"
+},
+{
+"d": 310,
+"lv": "advanced",
+"t": "Advanced cube methods",
+"f": "Intermediate approaches like solving the last layer in fewer steps"
+},
+{
+"d": 311,
+"lv": "advanced",
+"t": "Other twisty puzzles",
+"f": "Pyraminx, Megaminx and bigger cubes"
+},
+{
+"d": 312,
+"lv": "advanced",
+"t": "Mechanical puzzle design",
+"f": "How designers create interlocking and sequential discovery puzzles"
+},
+{
+"d": 313,
+"lv": "advanced",
+"t": "Rubik's Cube variations",
+"f": "Mirror cubes, shape-shifting cubes and other cube variations"
+},
+{
+"d": 314,
+"lv": "advanced",
+"t": "Review: legendary puzzles",
+"f": "A recap of the four colour theorem, cube records and twisty puzzles"
+},
+{
+"d": 315,
+"lv": "advanced",
+"t": "Puzzles and mathematics",
+"f": "How recreational puzzles inspired real mathematics"
+},
+{
+"d": 316,
+"lv": "advanced",
+"t": "Graph puzzles",
+"f": "Networks of points and lines in route and colouring puzzles"
+},
+{
+"d": 317,
+"lv": "advanced",
+"t": "Shortest path puzzles",
+"f": "Finding the quickest route through a network"
+},
+{
+"d": 318,
+"lv": "advanced",
+"t": "Game theory puzzles",
+"f": "Simple strategy problems about choices and outcomes"
+},
+{
+"d": 319,
+"lv": "advanced",
+"t": "The game of Nim",
+"f": "Taking objects from piles and the winning strategy"
+},
+{
+"d": 320,
+"lv": "advanced",
+"t": "Winning strategies",
+"f": "Working backwards to find winning positions in simple games"
+},
+{
+"d": 321,
+"lv": "advanced",
+"t": "Recursion puzzles",
+"f": "Problems that contain smaller copies of themselves, like the Tower of Hanoi"
+},
+{
+"d": 322,
+"lv": "advanced",
+"t": "Fractal puzzles",
+"f": "Self-similar shapes like the Sierpinski triangle"
+},
+{
+"d": 323,
+"lv": "advanced",
+"t": "Infinity puzzles",
+"f": "Hilbert's Hotel and other gentle mind-benders about the infinite"
+},
+{
+"d": 324,
+"lv": "advanced",
+"t": "Paradoxes",
+"f": "Puzzling statements like the barber paradox and what they teach about logic"
+},
+{
+"d": 325,
+"lv": "advanced",
+"t": "Zeno's paradoxes",
+"f": "Achilles and the tortoise, and the puzzle of endless halves"
+},
+{
+"d": 326,
+"lv": "advanced",
+"t": "Magic squares advanced",
+"f": "Building larger magic squares with systematic methods"
+},
+{
+"d": 327,
+"lv": "advanced",
+"t": "The Collatz puzzle",
+"f": "A simple number game whose behaviour mathematicians still cannot fully prove"
+},
+{
+"d": 328,
+"lv": "advanced",
+"t": "Review: puzzles and maths",
+"f": "A recap of graph puzzles, Nim, infinity and paradoxes with a quiz"
+},
+{
+"d": 329,
+"lv": "advanced",
+"t": "Puzzles and computers",
+"f": "How computers solve Sudoku and other puzzles step by step"
+},
+{
+"d": 330,
+"lv": "advanced",
+"t": "Algorithms as puzzle strategies",
+"f": "Comparing brute force with clever reasoning"
+},
+{
+"d": 331,
+"lv": "advanced",
+"t": "Puzzles in programming",
+"f": "Coding challenges as modern puzzles"
+},
+{
+"d": 332,
+"lv": "advanced",
+"t": "Puzzles and learning",
+"f": "How puzzles help people learn languages, maths and science"
+},
+{
+"d": 333,
+"lv": "advanced",
+"t": "Puzzles in language learning",
+"f": "Using crosswords and anagrams to practise a new language"
+},
+{
+"d": 334,
+"lv": "advanced",
+"t": "Puzzles for teams at work",
+"f": "Puzzles that build communication and problem-solving skills"
+},
+{
+"d": 335,
+"lv": "advanced",
+"t": "Puzzles and well-being",
+"f": "Puzzles as a calming, focused activity"
+},
+{
+"d": 336,
+"lv": "advanced",
+"t": "Puzzles and lifelong learning",
+"f": "Keeping the mind curious at every age"
+},
+{
+"d": 337,
+"lv": "advanced",
+"t": "Puzzles in science",
+"f": "How scientists treat open questions like great puzzles"
+},
+{
+"d": 338,
+"lv": "advanced",
+"t": "Puzzles in art and design",
+"f": "Hidden images, mosaics and artists who loved visual puzzles"
+},
+{
+"d": 339,
+"lv": "advanced",
+"t": "Review: puzzles in life",
+"f": "A recap of puzzles in computing, learning and well-being"
+},
+{
+"d": 340,
+"lv": "advanced",
+"t": "Speed versus depth",
+"f": "Choosing between quick puzzles and long, deep challenges"
+},
+{
+"d": 341,
+"lv": "advanced",
+"t": "Competitive puzzling",
+"f": "How puzzle championships work and how people prepare"
+},
+{
+"d": 342,
+"lv": "advanced",
+"t": "Puzzle collaboration",
+"f": "Solving with a partner and combining strengths"
+},
+{
+"d": 343,
+"lv": "advanced",
+"t": "Teaching puzzles to others",
+"f": "Explaining a puzzle type clearly and patiently"
+},
+{
+"d": 344,
+"lv": "advanced",
+"t": "Hosting a puzzle night",
+"f": "Planning a mix of puzzles for friends or family"
+},
+{
+"d": 345,
+"lv": "advanced",
+"t": "Puzzles across cultures recap",
+"f": "A tour of puzzles from China, Japan, Europe, Africa and the Americas"
+},
+{
+"d": 346,
+"lv": "advanced",
+"t": "Your own puzzle collection",
+"f": "Building a personal set of favourite puzzles to share"
+},
+{
+"d": 347,
+"lv": "advanced",
+"t": "Planning your puzzle project",
+"f": "Choosing a final project: a puzzle booklet, a hunt or an escape game"
+},
+{
+"d": 348,
+"lv": "advanced",
+"t": "Brainstorming your project",
+"f": "Generating themes and puzzle ideas freely"
+},
+{
+"d": 349,
+"lv": "advanced",
+"t": "Building your puzzles",
+"f": "Creating the individual puzzles for your project"
+},
+{
+"d": 350,
+"lv": "advanced",
+"t": "Linking your puzzles",
+"f": "Connecting puzzles with a theme or final answer"
+},
+{
+"d": 351,
+"lv": "advanced",
+"t": "Testing your project",
+"f": "Playtesting with friends and fixing unclear points"
+},
+{
+"d": 352,
+"lv": "advanced",
+"t": "Final polish",
+"f": "Checking fairness, solutions and presentation"
+},
+{
+"d": 353,
+"lv": "advanced",
+"t": "Sharing your project",
+"f": "Giving your puzzles to friends or sharing them online"
+},
+{
+"d": 354,
+"lv": "advanced",
+"t": "Reflecting on your project",
+"f": "What worked, what surprised you and what you'd make next"
+},
+{
+"d": 355,
+"lv": "advanced",
+"t": "Review: your puzzle project",
+"f": "A recap of your project journey and what you learned"
+},
+{
+"d": 356,
+"lv": "advanced",
+"t": "Your puzzle strengths",
+"f": "Recognising the puzzle types and skills where you shine"
+},
+{
+"d": 357,
+"lv": "advanced",
+"t": "Your next puzzle challenge",
+"f": "Choosing a harder puzzle type to explore next"
+},
+{
+"d": 358,
+"lv": "advanced",
+"t": "Daily puzzle habit",
+"f": "Keeping puzzles in your routine after the path ends"
+},
+{
+"d": 359,
+"lv": "advanced",
+"t": "Puzzle communities",
+"f": "Clubs, forums and events for puzzle lovers"
+},
+{
+"d": 360,
+"lv": "advanced",
+"t": "Puzzles as gifts",
+"f": "Making a personalised puzzle for someone special"
+},
+{
+"d": 361,
+"lv": "advanced",
+"t": "Favourite puzzle moments",
+"f": "Remembering your best 'aha!' moments of the year"
+},
+{
+"d": 362,
+"lv": "advanced",
+"t": "The ultimate riddle challenge",
+"f": "A final set of riddles from across the whole path"
+},
+{
+"d": 363,
+"lv": "advanced",
+"t": "The ultimate logic challenge",
+"f": "A final mixed logic puzzle using techniques from the whole year"
+},
+{
+"d": 364,
+"lv": "advanced",
+"t": "The ultimate word challenge",
+"f": "A final set of anagrams, cryptic clues and word ladders"
+},
+{
+"d": 365,
+"lv": "advanced",
+"t": "Final review: a year of puzzles",
+"f": "A warm look back at the 365-day journey and the joy of solving"
+}
+]
+}

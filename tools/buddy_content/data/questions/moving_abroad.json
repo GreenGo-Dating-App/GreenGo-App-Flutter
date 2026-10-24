@@ -1,0 +1,1305 @@
+{
+"topic": "moving_abroad",
+"questions": [
+{
+"id": "moving_abroad-001",
+"lv": "any",
+"i18n": {
+"en": "Which country have you always been curious to live in, and why?",
+"de": "In welchem Land wolltest du schon immer einmal leben und warum?",
+"es": "¿En qué país siempre has tenido curiosidad por vivir y por qué?",
+"fr": "Dans quel pays as-tu toujours eu envie de vivre, et pourquoi ?",
+"it": "In quale paese ti è sempre piaciuta l'idea di vivere, e perché?",
+"pt": "Em que país sempre tiveste curiosidade de viver, e porquê?",
+"pt_BR": "Em qual país você sempre teve curiosidade de morar, e por quê?"
+}
+},
+{
+"id": "moving_abroad-002",
+"lv": "any",
+"i18n": {
+"en": "Have you ever lived away from your hometown? What was it like?",
+"de": "Hast du schon einmal weit weg von deiner Heimatstadt gelebt? Wie war das?",
+"es": "¿Has vivido alguna vez lejos de tu ciudad natal? ¿Cómo fue?",
+"fr": "As-tu déjà vécu loin de ta ville natale ? Comment c'était ?",
+"it": "Hai mai vissuto lontano dalla tua città natale? Com'è stato?",
+"pt": "Já viveste longe da tua terra natal? Como foi?",
+"pt_BR": "Você já morou longe da sua cidade natal? Como foi?"
+}
+},
+{
+"id": "moving_abroad-003",
+"lv": "any",
+"i18n": {
+"en": "What would you miss most about home if you moved abroad?",
+"de": "Was würdest du an deiner Heimat am meisten vermissen, wenn du ins Ausland ziehst?",
+"es": "¿Qué echarías más de menos de tu tierra si te mudaras al extranjero?",
+"fr": "Qu'est-ce qui te manquerait le plus de chez toi si tu partais à l'étranger ?",
+"it": "Cosa ti mancherebbe di più di casa se ti trasferissi all'estero?",
+"pt": "Do que terias mais saudades se fosses viver para o estrangeiro?",
+"pt_BR": "Do que você mais sentiria falta se fosse morar fora?"
+}
+},
+{
+"id": "moving_abroad-004",
+"lv": "any",
+"i18n": {
+"en": "Which food from your country would you pack in your suitcase?",
+"de": "Welches Essen aus deinem Land würdest du in deinen Koffer packen?",
+"es": "¿Qué comida de tu país meterías en la maleta?",
+"fr": "Quel aliment de ton pays mettrais-tu dans ta valise ?",
+"it": "Quale cibo del tuo paese metteresti in valigia?",
+"pt": "Que comida do teu país levarias na mala?",
+"pt_BR": "Qual comida do seu país você levaria na mala?"
+}
+},
+{
+"id": "moving_abroad-005",
+"lv": "any",
+"i18n": {
+"en": "Do you prefer big cities or small towns for everyday life?",
+"de": "Lebst du im Alltag lieber in großen Städten oder in kleinen Orten?",
+"es": "¿Prefieres las grandes ciudades o los pueblos para el día a día?",
+"fr": "Tu préfères les grandes villes ou les petites villes au quotidien ?",
+"it": "Per la vita di tutti i giorni preferisci le grandi città o i piccoli paesi?",
+"pt": "Preferes grandes cidades ou vilas pequenas para o dia a dia?",
+"pt_BR": "Você prefere cidade grande ou cidade pequena para o dia a dia?"
+}
+},
+{
+"id": "moving_abroad-006",
+"lv": "any",
+"i18n": {
+"en": "What kind of climate makes you feel your best?",
+"de": "In welchem Klima fühlst du dich am wohlsten?",
+"es": "¿Con qué clima te sientes mejor?",
+"fr": "Dans quel climat te sens-tu le mieux ?",
+"it": "Con quale clima ti senti meglio?",
+"pt": "Com que clima te sentes melhor?",
+"pt_BR": "Em que tipo de clima você se sente melhor?"
+}
+},
+{
+"id": "moving_abroad-007",
+"lv": "any",
+"i18n": {
+"en": "Which languages would you love to speak fluently one day?",
+"de": "Welche Sprachen würdest du gern eines Tages fließend sprechen?",
+"es": "¿Qué idiomas te encantaría hablar con fluidez algún día?",
+"fr": "Quelles langues aimerais-tu parler couramment un jour ?",
+"it": "Quali lingue ti piacerebbe parlare fluentemente un giorno?",
+"pt": "Que línguas adorarias falar fluentemente um dia?",
+"pt_BR": "Quais idiomas você adoraria falar fluentemente um dia?"
+}
+},
+{
+"id": "moving_abroad-008",
+"lv": "any",
+"i18n": {
+"en": "Do you know someone who moved abroad? What did they tell you?",
+"de": "Kennst du jemanden, der ins Ausland gezogen ist? Was hat er erzählt?",
+"es": "¿Conoces a alguien que se haya ido a vivir al extranjero? ¿Qué te contó?",
+"fr": "Connais-tu quelqu'un qui est parti vivre à l'étranger ? Que t'a-t-il raconté ?",
+"it": "Conosci qualcuno che si è trasferito all'estero? Cosa ti ha raccontato?",
+"pt": "Conheces alguém que foi viver para o estrangeiro? O que te contou?",
+"pt_BR": "Você conhece alguém que foi morar fora? O que essa pessoa te contou?"
+}
+},
+{
+"id": "moving_abroad-009",
+"lv": "any",
+"i18n": {
+"en": "What does the word home mean to you?",
+"de": "Was bedeutet das Wort Zuhause für dich?",
+"es": "¿Qué significa para ti la palabra hogar?",
+"fr": "Que signifie pour toi le mot « chez-soi » ?",
+"it": "Cosa significa per te la parola casa?",
+"pt": "O que significa para ti a palavra casa?",
+"pt_BR": "O que a palavra lar significa pra você?"
+}
+},
+{
+"id": "moving_abroad-010",
+"lv": "any",
+"i18n": {
+"en": "What is the most interesting cultural difference you have ever noticed?",
+"de": "Was ist der interessanteste kulturelle Unterschied, der dir je aufgefallen ist?",
+"es": "¿Cuál es la diferencia cultural más curiosa que has notado?",
+"fr": "Quelle est la différence culturelle la plus intéressante que tu aies remarquée ?",
+"it": "Qual è la differenza culturale più interessante che hai mai notato?",
+"pt": "Qual é a diferença cultural mais interessante que já notaste?",
+"pt_BR": "Qual é a diferença cultural mais interessante que você já percebeu?"
+}
+},
+{
+"id": "moving_abroad-011",
+"lv": "any",
+"i18n": {
+"en": "Would you rather move somewhere very different or similar to home?",
+"de": "Würdest du lieber an einen ganz anderen oder an einen ähnlichen Ort ziehen?",
+"es": "¿Preferirías mudarte a un lugar muy distinto o parecido a tu tierra?",
+"fr": "Tu préférerais t'installer dans un endroit très différent ou proche de chez toi ?",
+"it": "Preferiresti trasferirti in un posto molto diverso o simile a casa tua?",
+"pt": "Preferias mudar-te para um sítio muito diferente ou parecido com a tua terra?",
+"pt_BR": "Você preferiria se mudar para um lugar muito diferente ou parecido com o seu?"
+}
+},
+{
+"id": "moving_abroad-012",
+"lv": "any",
+"i18n": {
+"en": "What is one tradition from your culture you would share abroad?",
+"de": "Welche Tradition aus deiner Kultur würdest du im Ausland teilen?",
+"es": "¿Qué tradición de tu cultura compartirías en el extranjero?",
+"fr": "Quelle tradition de ta culture partagerais-tu à l'étranger ?",
+"it": "Quale tradizione della tua cultura condivideresti all'estero?",
+"pt": "Que tradição da tua cultura partilharias no estrangeiro?",
+"pt_BR": "Qual tradição da sua cultura você compartilharia lá fora?"
+}
+},
+{
+"id": "moving_abroad-013",
+"lv": "any",
+"i18n": {
+"en": "How do you usually feel when you arrive in a new place?",
+"de": "Wie fühlst du dich normalerweise, wenn du an einem neuen Ort ankommst?",
+"es": "¿Cómo te sueles sentir cuando llegas a un sitio nuevo?",
+"fr": "Comment te sens-tu d'habitude quand tu arrives dans un nouvel endroit ?",
+"it": "Come ti senti di solito quando arrivi in un posto nuovo?",
+"pt": "Como te costumas sentir quando chegas a um sítio novo?",
+"pt_BR": "Como você costuma se sentir quando chega a um lugar novo?"
+}
+},
+{
+"id": "moving_abroad-014",
+"lv": "any",
+"i18n": {
+"en": "What is the first thing you do to get to know a new city?",
+"de": "Was machst du als Erstes, um eine neue Stadt kennenzulernen?",
+"es": "¿Qué es lo primero que haces para conocer una ciudad nueva?",
+"fr": "Quelle est la première chose que tu fais pour découvrir une nouvelle ville ?",
+"it": "Qual è la prima cosa che fai per conoscere una città nuova?",
+"pt": "Qual é a primeira coisa que fazes para conhecer uma cidade nova?",
+"pt_BR": "Qual é a primeira coisa que você faz para conhecer uma cidade nova?"
+}
+},
+{
+"id": "moving_abroad-015",
+"lv": "any",
+"i18n": {
+"en": "Which dish from another country do you love the most?",
+"de": "Welches Gericht aus einem anderen Land liebst du am meisten?",
+"es": "¿Qué plato de otro país te encanta más?",
+"fr": "Quel plat d'un autre pays adores-tu le plus ?",
+"it": "Quale piatto di un altro paese ami di più?",
+"pt": "Que prato de outro país adoras mais?",
+"pt_BR": "Qual prato de outro país você mais ama?"
+}
+},
+{
+"id": "moving_abroad-016",
+"lv": "any",
+"i18n": {
+"en": "What makes you feel welcome in a new place?",
+"de": "Was gibt dir an einem neuen Ort das Gefühl, willkommen zu sein?",
+"es": "¿Qué te hace sentir bienvenido en un lugar nuevo?",
+"fr": "Qu'est-ce qui te fait te sentir bienvenu dans un nouvel endroit ?",
+"it": "Cosa ti fa sentire il benvenuto in un posto nuovo?",
+"pt": "O que te faz sentir bem-vindo num sítio novo?",
+"pt_BR": "O que faz você se sentir bem-vindo num lugar novo?"
+}
+},
+{
+"id": "moving_abroad-017",
+"lv": "any",
+"i18n": {
+"en": "Are you a planner or do you prefer to discover things as they come?",
+"de": "Planst du gern alles oder entdeckst du lieber, was kommt?",
+"es": "¿Eres de planificar o prefieres descubrir las cosas sobre la marcha?",
+"fr": "Tu es du genre à tout planifier ou à découvrir au fil de l'eau ?",
+"it": "Sei uno che pianifica o preferisci scoprire le cose strada facendo?",
+"pt": "És de planear tudo ou preferes descobrir as coisas à medida que surgem?",
+"pt_BR": "Você é de planejar tudo ou prefere descobrir as coisas no caminho?"
+}
+},
+{
+"id": "moving_abroad-018",
+"lv": "any",
+"i18n": {
+"en": "What would your dream neighbourhood abroad look like?",
+"de": "Wie würde dein Traumviertel im Ausland aussehen?",
+"es": "¿Cómo sería tu barrio ideal en el extranjero?",
+"fr": "À quoi ressemblerait ton quartier idéal à l'étranger ?",
+"it": "Come sarebbe il tuo quartiere ideale all'estero?",
+"pt": "Como seria o teu bairro de sonho no estrangeiro?",
+"pt_BR": "Como seria o seu bairro dos sonhos lá fora?"
+}
+},
+{
+"id": "moving_abroad-019",
+"lv": "any",
+"i18n": {
+"en": "Which word in another language do you find especially beautiful?",
+"de": "Welches Wort in einer anderen Sprache findest du besonders schön?",
+"es": "¿Qué palabra de otro idioma te parece especialmente bonita?",
+"fr": "Quel mot d'une autre langue trouves-tu particulièrement beau ?",
+"it": "Quale parola di un'altra lingua trovi particolarmente bella?",
+"pt": "Que palavra de outra língua achas especialmente bonita?",
+"pt_BR": "Qual palavra de outro idioma você acha especialmente bonita?"
+}
+},
+{
+"id": "moving_abroad-020",
+"lv": "any",
+"i18n": {
+"en": "How do you stay in touch with friends who live far away?",
+"de": "Wie hältst du Kontakt zu Freunden, die weit weg wohnen?",
+"es": "¿Cómo mantienes el contacto con amigos que viven lejos?",
+"fr": "Comment restes-tu en contact avec tes amis qui vivent loin ?",
+"it": "Come resti in contatto con gli amici che vivono lontano?",
+"pt": "Como manténs o contacto com amigos que vivem longe?",
+"pt_BR": "Como você mantém contato com amigos que moram longe?"
+}
+},
+{
+"id": "moving_abroad-021",
+"lv": "any",
+"i18n": {
+"en": "What is a custom from another culture you would love to adopt?",
+"de": "Welchen Brauch aus einer anderen Kultur würdest du gern übernehmen?",
+"es": "¿Qué costumbre de otra cultura te encantaría adoptar?",
+"fr": "Quelle coutume d'une autre culture aimerais-tu adopter ?",
+"it": "Quale usanza di un'altra cultura ti piacerebbe adottare?",
+"pt": "Que costume de outra cultura adorarias adotar?",
+"pt_BR": "Qual costume de outra cultura você adoraria adotar?"
+}
+},
+{
+"id": "moving_abroad-022",
+"lv": "any",
+"i18n": {
+"en": "Do you find it easy or hard to make new friends?",
+"de": "Fällt es dir leicht oder schwer, neue Freunde zu finden?",
+"es": "¿Te resulta fácil o difícil hacer nuevos amigos?",
+"fr": "Tu trouves facile ou difficile de te faire de nouveaux amis ?",
+"it": "Ti viene facile o difficile fare nuove amicizie?",
+"pt": "Achas fácil ou difícil fazer novos amigos?",
+"pt_BR": "Você acha fácil ou difícil fazer novos amigos?"
+}
+},
+{
+"id": "moving_abroad-023",
+"lv": "any",
+"i18n": {
+"en": "What is the best advice you have heard about living abroad?",
+"de": "Was ist der beste Rat, den du je über das Leben im Ausland gehört hast?",
+"es": "¿Cuál es el mejor consejo que has oído sobre vivir en el extranjero?",
+"fr": "Quel est le meilleur conseil que tu aies entendu sur la vie à l'étranger ?",
+"it": "Qual è il miglior consiglio che hai sentito sul vivere all'estero?",
+"pt": "Qual foi o melhor conselho que já ouviste sobre viver no estrangeiro?",
+"pt_BR": "Qual foi o melhor conselho que você já ouviu sobre morar fora?"
+}
+},
+{
+"id": "moving_abroad-024",
+"lv": "any",
+"i18n": {
+"en": "What three things make a place feel like home for you?",
+"de": "Welche drei Dinge sorgen dafür, dass sich ein Ort wie Zuhause anfühlt?",
+"es": "¿Qué tres cosas hacen que un lugar se sienta como tu casa?",
+"fr": "Quelles sont les trois choses qui font qu'un endroit devient ton chez-toi ?",
+"it": "Quali tre cose fanno sentire un posto come casa per te?",
+"pt": "Que três coisas fazem um sítio parecer a tua casa?",
+"pt_BR": "Quais três coisas fazem um lugar parecer a sua casa?"
+}
+},
+{
+"id": "moving_abroad-025",
+"lv": "any",
+"i18n": {
+"en": "Which famous traveller or explorer inspires you?",
+"de": "Welcher berühmte Reisende oder Entdecker inspiriert dich?",
+"es": "¿Qué viajero o explorador famoso te inspira?",
+"fr": "Quel voyageur ou explorateur célèbre t'inspire ?",
+"it": "Quale viaggiatore o esploratore famoso ti ispira?",
+"pt": "Que viajante ou explorador famoso te inspira?",
+"pt_BR": "Qual viajante ou explorador famoso te inspira?"
+}
+},
+{
+"id": "moving_abroad-026",
+"lv": "any",
+"i18n": {
+"en": "How do you cope with changes in your daily routine?",
+"de": "Wie gehst du mit Veränderungen in deinem Alltag um?",
+"es": "¿Cómo llevas los cambios en tu rutina diaria?",
+"fr": "Comment vis-tu les changements dans ta routine quotidienne ?",
+"it": "Come affronti i cambiamenti nella tua routine quotidiana?",
+"pt": "Como lidas com mudanças na tua rotina diária?",
+"pt_BR": "Como você lida com mudanças na sua rotina?"
+}
+},
+{
+"id": "moving_abroad-027",
+"lv": "any",
+"i18n": {
+"en": "What is something you learned about your own culture by meeting foreigners?",
+"de": "Was hast du über deine eigene Kultur gelernt, als du Menschen aus dem Ausland getroffen hast?",
+"es": "¿Qué aprendiste de tu propia cultura al conocer a gente de fuera?",
+"fr": "Qu'as-tu appris sur ta propre culture en rencontrant des étrangers ?",
+"it": "Cosa hai imparato sulla tua cultura incontrando persone straniere?",
+"pt": "O que aprendeste sobre a tua própria cultura ao conhecer estrangeiros?",
+"pt_BR": "O que você aprendeu sobre a sua própria cultura conhecendo estrangeiros?"
+}
+},
+{
+"id": "moving_abroad-028",
+"lv": "any",
+"i18n": {
+"en": "Which festival around the world would you love to experience in person?",
+"de": "Welches Fest auf der Welt würdest du gern einmal live erleben?",
+"es": "¿Qué fiesta del mundo te encantaría vivir en persona?",
+"fr": "Quelle fête dans le monde aimerais-tu vivre en vrai ?",
+"it": "Quale festa nel mondo ti piacerebbe vivere di persona?",
+"pt": "Que festa do mundo adorarias viver ao vivo?",
+"pt_BR": "Qual festa do mundo você adoraria viver pessoalmente?"
+}
+},
+{
+"id": "moving_abroad-029",
+"lv": "any",
+"i18n": {
+"en": "How do you like to explore: on foot, by bike or by public transport?",
+"de": "Wie erkundest du am liebsten: zu Fuß, mit dem Rad oder mit Bus und Bahn?",
+"es": "¿Cómo te gusta explorar: a pie, en bici o en transporte público?",
+"fr": "Comment aimes-tu explorer : à pied, à vélo ou en transports en commun ?",
+"it": "Come ti piace esplorare: a piedi, in bici o con i mezzi pubblici?",
+"pt": "Como gostas de explorar: a pé, de bicicleta ou de transportes públicos?",
+"pt_BR": "Como você gosta de explorar: a pé, de bicicleta ou de transporte público?"
+}
+},
+{
+"id": "moving_abroad-030",
+"lv": "any",
+"i18n": {
+"en": "What part of moving would excite you most, and what would worry you?",
+"de": "Was würde dich an einem Umzug am meisten begeistern und was beunruhigen?",
+"es": "¿Qué parte de mudarte te emocionaría más y cuál te preocuparía?",
+"fr": "Qu'est-ce qui t'enthousiasmerait le plus dans un départ, et qu'est-ce qui t'inquiéterait ?",
+"it": "Cosa ti entusiasmerebbe di più di un trasferimento, e cosa ti preoccuperebbe?",
+"pt": "Que parte da mudança te entusiasmaria mais e qual te preocuparia?",
+"pt_BR": "Que parte da mudança mais te animaria e qual te preocuparia?"
+}
+},
+{
+"id": "moving_abroad-031",
+"lv": "any",
+"i18n": {
+"en": "Which object from home makes you feel calm anywhere in the world?",
+"de": "Welcher Gegenstand von zu Hause beruhigt dich überall auf der Welt?",
+"es": "¿Qué objeto de casa te da calma en cualquier parte del mundo?",
+"fr": "Quel objet de chez toi t'apaise partout dans le monde ?",
+"it": "Quale oggetto di casa ti fa sentire tranquillo ovunque nel mondo?",
+"pt": "Que objeto de casa te dá calma em qualquer parte do mundo?",
+"pt_BR": "Qual objeto de casa te acalma em qualquer lugar do mundo?"
+}
+},
+{
+"id": "moving_abroad-032",
+"lv": "any",
+"i18n": {
+"en": "What would you like people abroad to know about where you come from?",
+"de": "Was sollen Menschen im Ausland über deine Herkunft wissen?",
+"es": "¿Qué te gustaría que la gente de fuera supiera de tu lugar de origen?",
+"fr": "Qu'aimerais-tu que les gens à l'étranger sachent sur ton pays d'origine ?",
+"it": "Cosa vorresti che le persone all'estero sapessero del posto da cui vieni?",
+"pt": "O que gostavas que as pessoas lá fora soubessem sobre a tua terra?",
+"pt_BR": "O que você gostaria que as pessoas lá fora soubessem sobre a sua terra?"
+}
+},
+{
+"id": "moving_abroad-033",
+"lv": "any",
+"i18n": {
+"en": "Have you ever felt like a tourist in your own city?",
+"de": "Hast du dich schon einmal wie ein Tourist in deiner eigenen Stadt gefühlt?",
+"es": "¿Alguna vez te has sentido turista en tu propia ciudad?",
+"fr": "T'es-tu déjà senti touriste dans ta propre ville ?",
+"it": "Ti sei mai sentito un turista nella tua città?",
+"pt": "Já te sentiste turista na tua própria cidade?",
+"pt_BR": "Você já se sentiu turista na sua própria cidade?"
+}
+},
+{
+"id": "moving_abroad-034",
+"lv": "any",
+"i18n": {
+"en": "How do you handle being misunderstood in a conversation?",
+"de": "Wie gehst du damit um, wenn du in einem Gespräch missverstanden wirst?",
+"es": "¿Cómo llevas que te malinterpreten en una conversación?",
+"fr": "Comment réagis-tu quand on te comprend mal dans une conversation ?",
+"it": "Come reagisci quando vieni frainteso in una conversazione?",
+"pt": "Como lidas com ser mal interpretado numa conversa?",
+"pt_BR": "Como você lida quando é mal interpretado numa conversa?"
+}
+},
+{
+"id": "moving_abroad-035",
+"lv": "any",
+"i18n": {
+"en": "Which kind of music reminds you most of home?",
+"de": "Welche Musik erinnert dich am meisten an zu Hause?",
+"es": "¿Qué tipo de música te recuerda más a tu tierra?",
+"fr": "Quelle musique te rappelle le plus ton chez-toi ?",
+"it": "Quale musica ti ricorda di più casa?",
+"pt": "Que tipo de música mais te lembra a tua terra?",
+"pt_BR": "Que tipo de música mais te lembra de casa?"
+}
+},
+{
+"id": "moving_abroad-036",
+"lv": "any",
+"i18n": {
+"en": "What do you think is the hardest thing about starting over somewhere new?",
+"de": "Was ist deiner Meinung nach das Schwierigste an einem Neuanfang woanders?",
+"es": "¿Qué crees que es lo más difícil de empezar de cero en otro lugar?",
+"fr": "Selon toi, qu'est-ce qui est le plus dur quand on recommence ailleurs ?",
+"it": "Secondo te, qual è la cosa più difficile nel ricominciare in un posto nuovo?",
+"pt": "Na tua opinião, qual é a coisa mais difícil de recomeçar noutro sítio?",
+"pt_BR": "Pra você, qual é a parte mais difícil de recomeçar em outro lugar?"
+}
+},
+{
+"id": "moving_abroad-037",
+"lv": "any",
+"i18n": {
+"en": "Do you enjoy trying unfamiliar food, or do you prefer what you know?",
+"de": "Probierst du gern unbekanntes Essen oder bleibst du lieber beim Vertrauten?",
+"es": "¿Te gusta probar comidas desconocidas o prefieres lo que ya conoces?",
+"fr": "Tu aimes goûter des plats inconnus ou tu préfères ce que tu connais ?",
+"it": "Ti piace assaggiare cibi sconosciuti o preferisci quello che conosci?",
+"pt": "Gostas de provar comida desconhecida ou preferes o que já conheces?",
+"pt_BR": "Você gosta de provar comidas diferentes ou prefere o que já conhece?"
+}
+},
+{
+"id": "moving_abroad-038",
+"lv": "any",
+"i18n": {
+"en": "What is your favourite way to relax after a busy, unfamiliar day?",
+"de": "Wie entspannst du dich am liebsten nach einem vollen, ungewohnten Tag?",
+"es": "¿Cuál es tu forma favorita de relajarte tras un día intenso y lleno de novedades?",
+"fr": "Quelle est ta façon préférée de te détendre après une journée chargée et dépaysante ?",
+"it": "Qual è il tuo modo preferito di rilassarti dopo una giornata piena di novità?",
+"pt": "Qual é a tua forma preferida de descontrair depois de um dia cheio de novidades?",
+"pt_BR": "Qual é o seu jeito favorito de relaxar depois de um dia cheio de novidades?"
+}
+},
+{
+"id": "moving_abroad-039",
+"lv": "any",
+"i18n": {
+"en": "If you could live in three countries in your lifetime, which would they be?",
+"de": "Wenn du im Leben in drei Ländern wohnen könntest, welche wären das?",
+"es": "Si pudieras vivir en tres países a lo largo de tu vida, ¿cuáles serían?",
+"fr": "Si tu pouvais vivre dans trois pays au cours de ta vie, lesquels choisirais-tu ?",
+"it": "Se potessi vivere in tre paesi nella tua vita, quali sceglieresti?",
+"pt": "Se pudesses viver em três países ao longo da vida, quais seriam?",
+"pt_BR": "Se você pudesse morar em três países ao longo da vida, quais seriam?"
+}
+},
+{
+"id": "moving_abroad-040",
+"lv": "any",
+"i18n": {
+"en": "Which city in the world do you think has the friendliest atmosphere?",
+"de": "Welche Stadt der Welt hat deiner Meinung nach die freundlichste Atmosphäre?",
+"es": "¿Qué ciudad del mundo crees que tiene el ambiente más acogedor?",
+"fr": "Selon toi, quelle ville du monde a l'ambiance la plus chaleureuse ?",
+"it": "Secondo te, quale città del mondo ha l'atmosfera più accogliente?",
+"pt": "Que cidade do mundo achas que tem o ambiente mais acolhedor?",
+"pt_BR": "Qual cidade do mundo você acha que tem o clima mais acolhedor?"
+}
+},
+{
+"id": "moving_abroad-041",
+"lv": "beginner",
+"i18n": {
+"en": "What first made you think about living in another country?",
+"de": "Was hat dich zum ersten Mal daran denken lassen, in einem anderen Land zu leben?",
+"es": "¿Qué te hizo pensar por primera vez en vivir en otro país?",
+"fr": "Qu'est-ce qui t'a donné l'idée de vivre dans un autre pays ?",
+"it": "Cosa ti ha fatto pensare per la prima volta di vivere in un altro paese?",
+"pt": "O que te fez pensar pela primeira vez em viver noutro país?",
+"pt_BR": "O que te fez pensar pela primeira vez em morar em outro país?"
+}
+},
+{
+"id": "moving_abroad-042",
+"lv": "beginner",
+"i18n": {
+"en": "What are your three main reasons for wanting to move?",
+"de": "Was sind deine drei wichtigsten Gründe für einen Umzug?",
+"es": "¿Cuáles son tus tres razones principales para querer mudarte?",
+"fr": "Quelles sont tes trois principales raisons de vouloir partir ?",
+"it": "Quali sono i tuoi tre motivi principali per volerti trasferire?",
+"pt": "Quais são as tuas três principais razões para querer mudar?",
+"pt_BR": "Quais são os seus três principais motivos para querer se mudar?"
+}
+},
+{
+"id": "moving_abroad-043",
+"lv": "beginner",
+"i18n": {
+"en": "Which words would you like to learn before you arrive somewhere new?",
+"de": "Welche Wörter möchtest du lernen, bevor du an einem neuen Ort ankommst?",
+"es": "¿Qué palabras te gustaría aprender antes de llegar a un lugar nuevo?",
+"fr": "Quels mots aimerais-tu apprendre avant d'arriver dans un nouveau pays ?",
+"it": "Quali parole vorresti imparare prima di arrivare in un posto nuovo?",
+"pt": "Que palavras gostavas de aprender antes de chegar a um sítio novo?",
+"pt_BR": "Quais palavras você gostaria de aprender antes de chegar a um lugar novo?"
+}
+},
+{
+"id": "moving_abroad-044",
+"lv": "beginner",
+"i18n": {
+"en": "Where do you look for reliable information about another country?",
+"de": "Wo suchst du nach verlässlichen Informationen über ein anderes Land?",
+"es": "¿Dónde buscas información fiable sobre otro país?",
+"fr": "Où cherches-tu des informations fiables sur un autre pays ?",
+"it": "Dove cerchi informazioni affidabili su un altro paese?",
+"pt": "Onde procuras informação fiável sobre outro país?",
+"pt_BR": "Onde você busca informações confiáveis sobre outro país?"
+}
+},
+{
+"id": "moving_abroad-045",
+"lv": "beginner",
+"i18n": {
+"en": "What would you put on your goodbye list before leaving home?",
+"de": "Was würdest du auf deine Abschiedsliste setzen, bevor du gehst?",
+"es": "¿Qué pondrías en tu lista de despedida antes de irte?",
+"fr": "Que mettrais-tu sur ta liste d'adieux avant de partir ?",
+"it": "Cosa metteresti nella tua lista di saluti prima di partire?",
+"pt": "O que porias na tua lista de despedida antes de partir?",
+"pt_BR": "O que você colocaria na sua lista de despedida antes de partir?"
+}
+},
+{
+"id": "moving_abroad-046",
+"lv": "beginner",
+"i18n": {
+"en": "Which three things would you pack first for a new life abroad?",
+"de": "Welche drei Dinge würdest du für ein neues Leben im Ausland zuerst einpacken?",
+"es": "¿Qué tres cosas meterías primero en la maleta para una nueva vida fuera?",
+"fr": "Quelles trois choses mettrais-tu en premier dans tes valises pour une nouvelle vie ?",
+"it": "Quali tre cose metteresti per prime in valigia per una nuova vita all'estero?",
+"pt": "Que três coisas porias primeiro na mala para uma vida nova lá fora?",
+"pt_BR": "Quais três coisas você colocaria primeiro na mala para uma vida nova lá fora?"
+}
+},
+{
+"id": "moving_abroad-047",
+"lv": "beginner",
+"i18n": {
+"en": "How do you think the people close to you would react to your move?",
+"de": "Wie würden die Menschen, die dir nahestehen, wohl auf deinen Umzug reagieren?",
+"es": "¿Cómo crees que reaccionarían tus seres queridos a tu mudanza?",
+"fr": "Comment penses-tu que tes proches réagiraient à ton départ ?",
+"it": "Come pensi che reagirebbero le persone a te care al tuo trasferimento?",
+"pt": "Como achas que as pessoas próximas reagiriam à tua mudança?",
+"pt_BR": "Como você acha que as pessoas próximas reagiriam à sua mudança?"
+}
+},
+{
+"id": "moving_abroad-048",
+"lv": "beginner",
+"i18n": {
+"en": "What would you like your first day in a new country to look like?",
+"de": "Wie sollte dein erster Tag in einem neuen Land aussehen?",
+"es": "¿Cómo te gustaría que fuera tu primer día en un país nuevo?",
+"fr": "À quoi aimerais-tu que ressemble ton premier jour dans un nouveau pays ?",
+"it": "Come vorresti che fosse il tuo primo giorno in un nuovo paese?",
+"pt": "Como gostavas que fosse o teu primeiro dia num país novo?",
+"pt_BR": "Como você gostaria que fosse seu primeiro dia num país novo?"
+}
+},
+{
+"id": "moving_abroad-049",
+"lv": "beginner",
+"i18n": {
+"en": "Which app do you think would help you most in your first week abroad?",
+"de": "Welche App würde dir in deiner ersten Woche im Ausland wohl am meisten helfen?",
+"es": "¿Qué app crees que te ayudaría más en tu primera semana fuera?",
+"fr": "Quelle appli t'aiderait le plus pendant ta première semaine à l'étranger ?",
+"it": "Quale app pensi che ti aiuterebbe di più nella prima settimana all'estero?",
+"pt": "Que app achas que te ajudaria mais na primeira semana lá fora?",
+"pt_BR": "Qual app você acha que mais te ajudaria na primeira semana fora?"
+}
+},
+{
+"id": "moving_abroad-050",
+"lv": "beginner",
+"i18n": {
+"en": "How would you prepare yourself for a very different climate?",
+"de": "Wie würdest du dich auf ein ganz anderes Klima vorbereiten?",
+"es": "¿Cómo te prepararías para un clima muy distinto?",
+"fr": "Comment te préparerais-tu à un climat très différent ?",
+"it": "Come ti prepareresti a un clima molto diverso?",
+"pt": "Como te prepararias para um clima muito diferente?",
+"pt_BR": "Como você se prepararia para um clima bem diferente?"
+}
+},
+{
+"id": "moving_abroad-051",
+"lv": "beginner",
+"i18n": {
+"en": "What kind of home would you look for in a new city?",
+"de": "Was für eine Wohnung würdest du in einer neuen Stadt suchen?",
+"es": "¿Qué tipo de vivienda buscarías en una ciudad nueva?",
+"fr": "Quel genre de logement chercherais-tu dans une nouvelle ville ?",
+"it": "Che tipo di casa cercheresti in una città nuova?",
+"pt": "Que tipo de casa procurarias numa cidade nova?",
+"pt_BR": "Que tipo de moradia você procuraria numa cidade nova?"
+}
+},
+{
+"id": "moving_abroad-052",
+"lv": "beginner",
+"i18n": {
+"en": "How would you introduce yourself to your new neighbours?",
+"de": "Wie würdest du dich deinen neuen Nachbarn vorstellen?",
+"es": "¿Cómo te presentarías a tus nuevos vecinos?",
+"fr": "Comment te présenterais-tu à tes nouveaux voisins ?",
+"it": "Come ti presenteresti ai tuoi nuovi vicini?",
+"pt": "Como te apresentarias aos teus novos vizinhos?",
+"pt_BR": "Como você se apresentaria aos novos vizinhos?"
+}
+},
+{
+"id": "moving_abroad-053",
+"lv": "beginner",
+"i18n": {
+"en": "What would you cook first in your new kitchen abroad?",
+"de": "Was würdest du als Erstes in deiner neuen Küche im Ausland kochen?",
+"es": "¿Qué cocinarías primero en tu nueva cocina en el extranjero?",
+"fr": "Que cuisinerais-tu en premier dans ta nouvelle cuisine à l'étranger ?",
+"it": "Cosa cucineresti per primo nella tua nuova cucina all'estero?",
+"pt": "O que cozinharias primeiro na tua nova cozinha no estrangeiro?",
+"pt_BR": "O que você cozinharia primeiro na sua cozinha nova lá fora?"
+}
+},
+{
+"id": "moving_abroad-054",
+"lv": "beginner",
+"i18n": {
+"en": "How do you feel about using public transport in a city you do not know?",
+"de": "Wie fühlst du dich dabei, in einer fremden Stadt Bus und Bahn zu nutzen?",
+"es": "¿Qué tal te sientes usando el transporte público en una ciudad que no conoces?",
+"fr": "Comment te sens-tu dans les transports en commun d'une ville inconnue ?",
+"it": "Come ti senti a usare i mezzi pubblici in una città che non conosci?",
+"pt": "Como te sentes a usar transportes públicos numa cidade que não conheces?",
+"pt_BR": "Como você se sente usando transporte público numa cidade que não conhece?"
+}
+},
+{
+"id": "moving_abroad-055",
+"lv": "beginner",
+"i18n": {
+"en": "Which local shop would you want to find first: bakery, market or café?",
+"de": "Was würdest du zuerst suchen: Bäckerei, Markt oder Café?",
+"es": "¿Qué buscarías primero: panadería, mercado o cafetería?",
+"fr": "Que chercherais-tu en premier : une boulangerie, un marché ou un café ?",
+"it": "Cosa cercheresti per primo: forno, mercato o bar?",
+"pt": "O que procurarias primeiro: padaria, mercado ou café?",
+"pt_BR": "O que você procuraria primeiro: padaria, feira ou café?"
+}
+},
+{
+"id": "moving_abroad-056",
+"lv": "beginner",
+"i18n": {
+"en": "How would you make a new flat feel cosy in the first week?",
+"de": "Wie würdest du eine neue Wohnung in der ersten Woche gemütlich machen?",
+"es": "¿Cómo harías acogedor un piso nuevo en la primera semana?",
+"fr": "Comment rendrais-tu un nouvel appartement accueillant dès la première semaine ?",
+"it": "Come renderesti accogliente un appartamento nuovo nella prima settimana?",
+"pt": "Como tornarias acolhedora uma casa nova na primeira semana?",
+"pt_BR": "Como você deixaria um apartamento novo aconchegante na primeira semana?"
+}
+},
+{
+"id": "moving_abroad-057",
+"lv": "beginner",
+"i18n": {
+"en": "Which local custom would you want to understand before arriving?",
+"de": "Welchen Brauch würdest du vor deiner Ankunft gern verstehen?",
+"es": "¿Qué costumbre local te gustaría entender antes de llegar?",
+"fr": "Quelle coutume locale aimerais-tu comprendre avant d'arriver ?",
+"it": "Quale usanza locale vorresti capire prima di arrivare?",
+"pt": "Que costume local gostavas de perceber antes de chegar?",
+"pt_BR": "Qual costume local você gostaria de entender antes de chegar?"
+}
+},
+{
+"id": "moving_abroad-058",
+"lv": "beginner",
+"i18n": {
+"en": "How would you keep important documents organised during a move?",
+"de": "Wie würdest du wichtige Dokumente während eines Umzugs ordnen?",
+"es": "¿Cómo mantendrías organizados tus documentos importantes durante una mudanza?",
+"fr": "Comment garderais-tu tes documents importants en ordre pendant un déménagement ?",
+"it": "Come terresti in ordine i documenti importanti durante un trasloco?",
+"pt": "Como manterias organizados os documentos importantes durante uma mudança?",
+"pt_BR": "Como você manteria seus documentos importantes organizados durante a mudança?"
+}
+},
+{
+"id": "moving_abroad-059",
+"lv": "beginner",
+"i18n": {
+"en": "What would help you sleep well during your first nights in a new place?",
+"de": "Was würde dir helfen, in den ersten Nächten an einem neuen Ort gut zu schlafen?",
+"es": "¿Qué te ayudaría a dormir bien las primeras noches en un sitio nuevo?",
+"fr": "Qu'est-ce qui t'aiderait à bien dormir les premières nuits dans un nouvel endroit ?",
+"it": "Cosa ti aiuterebbe a dormire bene le prime notti in un posto nuovo?",
+"pt": "O que te ajudaria a dormir bem nas primeiras noites num sítio novo?",
+"pt_BR": "O que te ajudaria a dormir bem nas primeiras noites num lugar novo?"
+}
+},
+{
+"id": "moving_abroad-060",
+"lv": "beginner",
+"i18n": {
+"en": "Which phrase would be most useful for you in your first week abroad?",
+"de": "Welcher Satz wäre in deiner ersten Woche im Ausland am nützlichsten?",
+"es": "¿Qué frase te sería más útil en tu primera semana en el extranjero?",
+"fr": "Quelle phrase te serait la plus utile pendant ta première semaine à l'étranger ?",
+"it": "Quale frase ti sarebbe più utile nella prima settimana all'estero?",
+"pt": "Que frase te seria mais útil na primeira semana no estrangeiro?",
+"pt_BR": "Qual frase seria mais útil pra você na primeira semana fora?"
+}
+},
+{
+"id": "moving_abroad-061",
+"lv": "beginner",
+"i18n": {
+"en": "How would you celebrate your first week in a new country?",
+"de": "Wie würdest du deine erste Woche in einem neuen Land feiern?",
+"es": "¿Cómo celebrarías tu primera semana en un país nuevo?",
+"fr": "Comment fêterais-tu ta première semaine dans un nouveau pays ?",
+"it": "Come festeggeresti la tua prima settimana in un nuovo paese?",
+"pt": "Como celebrarias a tua primeira semana num país novo?",
+"pt_BR": "Como você comemoraria sua primeira semana num país novo?"
+}
+},
+{
+"id": "moving_abroad-062",
+"lv": "beginner",
+"i18n": {
+"en": "What would you do on a quiet Sunday in a city you just moved to?",
+"de": "Was würdest du an einem ruhigen Sonntag in deiner neuen Stadt machen?",
+"es": "¿Qué harías un domingo tranquilo en la ciudad a la que acabas de mudarte?",
+"fr": "Que ferais-tu un dimanche tranquille dans ta nouvelle ville ?",
+"it": "Cosa faresti in una domenica tranquilla nella città dove ti sei appena trasferito?",
+"pt": "O que farias num domingo calmo na cidade para onde acabaste de te mudar?",
+"pt_BR": "O que você faria num domingo tranquilo na cidade para onde acabou de se mudar?"
+}
+},
+{
+"id": "moving_abroad-063",
+"lv": "beginner",
+"i18n": {
+"en": "How would you find out about tipping and paying customs in a new country?",
+"de": "Wie würdest du herausfinden, wie man in einem neuen Land Trinkgeld gibt und bezahlt?",
+"es": "¿Cómo te informarías sobre las propinas y las formas de pago en un país nuevo?",
+"fr": "Comment te renseignerais-tu sur les pourboires et les habitudes de paiement ?",
+"it": "Come ti informeresti su mance e abitudini di pagamento in un nuovo paese?",
+"pt": "Como te informarias sobre gorjetas e formas de pagamento num país novo?",
+"pt_BR": "Como você descobriria os costumes de gorjeta e pagamento num país novo?"
+}
+},
+{
+"id": "moving_abroad-064",
+"lv": "beginner",
+"i18n": {
+"en": "Who would you call first after landing in your new country?",
+"de": "Wen würdest du nach der Landung in deinem neuen Land zuerst anrufen?",
+"es": "¿A quién llamarías primero al aterrizar en tu nuevo país?",
+"fr": "Qui appellerais-tu en premier après avoir atterri dans ton nouveau pays ?",
+"it": "Chi chiameresti per primo dopo l'atterraggio nel tuo nuovo paese?",
+"pt": "A quem ligarias primeiro depois de aterrar no teu novo país?",
+"pt_BR": "Pra quem você ligaria primeiro ao chegar no seu novo país?"
+}
+},
+{
+"id": "moving_abroad-065",
+"lv": "beginner",
+"i18n": {
+"en": "What would you like to learn about the healthcare or school system first?",
+"de": "Was würdest du über das Gesundheits- oder Schulsystem zuerst wissen wollen?",
+"es": "¿Qué te gustaría saber primero sobre el sistema sanitario o escolar?",
+"fr": "Que voudrais-tu savoir en premier sur le système de santé ou scolaire ?",
+"it": "Cosa vorresti sapere per primo sul sistema sanitario o scolastico?",
+"pt": "O que gostavas de saber primeiro sobre o sistema de saúde ou de ensino?",
+"pt_BR": "O que você gostaria de saber primeiro sobre o sistema de saúde ou de ensino?"
+}
+},
+{
+"id": "moving_abroad-066",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you practise a new language in everyday life?",
+"de": "Wie übst du eine neue Sprache im Alltag?",
+"es": "¿Cómo practicas un idioma nuevo en tu día a día?",
+"fr": "Comment pratiques-tu une nouvelle langue au quotidien ?",
+"it": "Come pratichi una nuova lingua nella vita di tutti i giorni?",
+"pt": "Como praticas uma língua nova no dia a dia?",
+"pt_BR": "Como você pratica um idioma novo no dia a dia?"
+}
+},
+{
+"id": "moving_abroad-067",
+"lv": "intermediate",
+"i18n": {
+"en": "Which language mistake has made you laugh the most?",
+"de": "Welcher Sprachfehler hat dich am meisten zum Lachen gebracht?",
+"es": "¿Qué error de idioma te ha hecho reír más?",
+"fr": "Quelle erreur de langue t'a le plus fait rire ?",
+"it": "Quale errore di lingua ti ha fatto ridere di più?",
+"pt": "Que erro de língua te fez rir mais?",
+"pt_BR": "Qual erro de idioma mais te fez rir?"
+}
+},
+{
+"id": "moving_abroad-068",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you handle homesickness on difficult days?",
+"de": "Wie gehst du an schwierigen Tagen mit Heimweh um?",
+"es": "¿Cómo llevas la morriña en los días difíciles?",
+"fr": "Comment gères-tu le mal du pays les jours difficiles ?",
+"it": "Come affronti la nostalgia di casa nei giorni difficili?",
+"pt": "Como lidas com as saudades de casa nos dias difíceis?",
+"pt_BR": "Como você lida com a saudade de casa nos dias difíceis?"
+}
+},
+{
+"id": "moving_abroad-069",
+"lv": "intermediate",
+"i18n": {
+"en": "Where would you go to meet people in a new city?",
+"de": "Wohin würdest du gehen, um in einer neuen Stadt Leute kennenzulernen?",
+"es": "¿Adónde irías para conocer gente en una ciudad nueva?",
+"fr": "Où irais-tu pour rencontrer du monde dans une nouvelle ville ?",
+"it": "Dove andresti per conoscere gente in una città nuova?",
+"pt": "Onde irias para conhecer pessoas numa cidade nova?",
+"pt_BR": "Aonde você iria para conhecer gente numa cidade nova?"
+}
+},
+{
+"id": "moving_abroad-070",
+"lv": "intermediate",
+"i18n": {
+"en": "Which cultural difference would be the hardest for you to get used to?",
+"de": "An welchen kulturellen Unterschied könntest du dich am schwersten gewöhnen?",
+"es": "¿A qué diferencia cultural te costaría más acostumbrarte?",
+"fr": "À quelle différence culturelle aurais-tu le plus de mal à t'habituer ?",
+"it": "A quale differenza culturale faresti più fatica ad abituarti?",
+"pt": "A que diferença cultural terias mais dificuldade em habituar-te?",
+"pt_BR": "Com qual diferença cultural você teria mais dificuldade de se acostumar?"
+}
+},
+{
+"id": "moving_abroad-071",
+"lv": "intermediate",
+"i18n": {
+"en": "How do people in your culture feel about being on time?",
+"de": "Wie wichtig ist Pünktlichkeit in deiner Kultur?",
+"es": "¿Qué importancia tiene la puntualidad en tu cultura?",
+"fr": "Quelle importance accorde-t-on à la ponctualité dans ta culture ?",
+"it": "Che importanza ha la puntualità nella tua cultura?",
+"pt": "Que importância tem a pontualidade na tua cultura?",
+"pt_BR": "Qual é a importância da pontualidade na sua cultura?"
+}
+},
+{
+"id": "moving_abroad-072",
+"lv": "intermediate",
+"i18n": {
+"en": "Would you rather make friends with locals or with other newcomers first?",
+"de": "Würdest du dich zuerst lieber mit Einheimischen oder mit anderen Zugezogenen anfreunden?",
+"es": "¿Preferirías hacer amigos primero entre la gente local o entre otros recién llegados?",
+"fr": "Tu préférerais te lier d'abord avec des locaux ou avec d'autres nouveaux arrivants ?",
+"it": "Preferiresti fare amicizia prima con la gente del posto o con altri nuovi arrivati?",
+"pt": "Preferias fazer amigos primeiro com locais ou com outros recém-chegados?",
+"pt_BR": "Você preferiria fazer amizade primeiro com locais ou com outros recém-chegados?"
+}
+},
+{
+"id": "moving_abroad-073",
+"lv": "intermediate",
+"i18n": {
+"en": "How would you explain your job or studies in a new language?",
+"de": "Wie würdest du deinen Beruf oder dein Studium in einer neuen Sprache erklären?",
+"es": "¿Cómo explicarías tu trabajo o tus estudios en un idioma nuevo?",
+"fr": "Comment expliquerais-tu ton travail ou tes études dans une nouvelle langue ?",
+"it": "Come spiegheresti il tuo lavoro o i tuoi studi in una nuova lingua?",
+"pt": "Como explicarias o teu trabalho ou os teus estudos numa língua nova?",
+"pt_BR": "Como você explicaria seu trabalho ou seus estudos num idioma novo?"
+}
+},
+{
+"id": "moving_abroad-074",
+"lv": "intermediate",
+"i18n": {
+"en": "What do you think a newcomer should know about work culture in your country?",
+"de": "Was sollte ein Neuankömmling deiner Meinung nach über die Arbeitskultur in deinem Land wissen?",
+"es": "¿Qué debería saber un recién llegado sobre la cultura laboral de tu país?",
+"fr": "Que devrait savoir un nouvel arrivant sur la culture du travail dans ton pays ?",
+"it": "Cosa dovrebbe sapere un nuovo arrivato sulla cultura del lavoro nel tuo paese?",
+"pt": "O que deveria saber um recém-chegado sobre a cultura de trabalho no teu país?",
+"pt_BR": "O que um recém-chegado deveria saber sobre a cultura de trabalho no seu país?"
+}
+},
+{
+"id": "moving_abroad-075",
+"lv": "intermediate",
+"i18n": {
+"en": "Which club, class or group would you join first in a new city?",
+"de": "Welchem Verein, Kurs oder welcher Gruppe würdest du dich in einer neuen Stadt zuerst anschließen?",
+"es": "¿A qué club, clase o grupo te apuntarías primero en una ciudad nueva?",
+"fr": "À quel club, cours ou groupe t'inscrirais-tu en premier dans une nouvelle ville ?",
+"it": "A quale club, corso o gruppo ti iscriveresti per primo in una città nuova?",
+"pt": "A que clube, aula ou grupo te juntarias primeiro numa cidade nova?",
+"pt_BR": "Em qual clube, curso ou grupo você entraria primeiro numa cidade nova?"
+}
+},
+{
+"id": "moving_abroad-076",
+"lv": "intermediate",
+"i18n": {
+"en": "How would you spend a big holiday far away from your family?",
+"de": "Wie würdest du einen großen Feiertag weit weg von deiner Familie verbringen?",
+"es": "¿Cómo pasarías una fiesta importante lejos de tu familia?",
+"fr": "Comment passerais-tu une grande fête loin de ta famille ?",
+"it": "Come passeresti una festa importante lontano dalla tua famiglia?",
+"pt": "Como passarias uma grande festa longe da tua família?",
+"pt_BR": "Como você passaria uma data especial longe da família?"
+}
+},
+{
+"id": "moving_abroad-077",
+"lv": "intermediate",
+"i18n": {
+"en": "What would you bring when invited to a local family's home?",
+"de": "Was würdest du mitbringen, wenn dich eine einheimische Familie einlädt?",
+"es": "¿Qué llevarías si te invitara a casa una familia del lugar?",
+"fr": "Qu'apporterais-tu si une famille du coin t'invitait chez elle ?",
+"it": "Cosa porteresti se una famiglia del posto ti invitasse a casa?",
+"pt": "O que levarias se uma família local te convidasse para casa?",
+"pt_BR": "O que você levaria se uma família local te convidasse pra casa dela?"
+}
+},
+{
+"id": "moving_abroad-078",
+"lv": "intermediate",
+"i18n": {
+"en": "Which local dish would you most like to learn to cook abroad?",
+"de": "Welches einheimische Gericht würdest du im Ausland am liebsten kochen lernen?",
+"es": "¿Qué plato típico te gustaría más aprender a cocinar en el extranjero?",
+"fr": "Quel plat local aimerais-tu le plus apprendre à cuisiner à l'étranger ?",
+"it": "Quale piatto tipico ti piacerebbe di più imparare a cucinare all'estero?",
+"pt": "Que prato típico mais gostavas de aprender a cozinhar lá fora?",
+"pt_BR": "Qual prato típico você mais gostaria de aprender a cozinhar lá fora?"
+}
+},
+{
+"id": "moving_abroad-079",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you react when people are more direct or indirect than you?",
+"de": "Wie reagierst du, wenn Menschen direkter oder indirekter sind als du?",
+"es": "¿Cómo reaccionas cuando la gente es más directa o más indirecta que tú?",
+"fr": "Comment réagis-tu quand les gens sont plus directs ou plus indirects que toi ?",
+"it": "Come reagisci quando le persone sono più dirette o più indirette di te?",
+"pt": "Como reages quando as pessoas são mais diretas ou mais indiretas do que tu?",
+"pt_BR": "Como você reage quando as pessoas são mais diretas ou mais indiretas que você?"
+}
+},
+{
+"id": "moving_abroad-080",
+"lv": "intermediate",
+"i18n": {
+"en": "Which local TV show, film or song would you use to learn the language?",
+"de": "Mit welcher Serie, welchem Film oder Lied würdest du die Sprache lernen?",
+"es": "¿Qué serie, película o canción usarías para aprender el idioma?",
+"fr": "Quelle série, quel film ou quelle chanson utiliserais-tu pour apprendre la langue ?",
+"it": "Quale serie, film o canzone useresti per imparare la lingua?",
+"pt": "Que série, filme ou canção usarias para aprender a língua?",
+"pt_BR": "Qual série, filme ou música você usaria para aprender o idioma?"
+}
+},
+{
+"id": "moving_abroad-081",
+"lv": "intermediate",
+"i18n": {
+"en": "What small habit helps you feel grounded when everything is new?",
+"de": "Welche kleine Gewohnheit gibt dir Halt, wenn alles neu ist?",
+"es": "¿Qué pequeño hábito te ayuda a sentirte con los pies en la tierra cuando todo es nuevo?",
+"fr": "Quelle petite habitude t'aide à garder les pieds sur terre quand tout est nouveau ?",
+"it": "Quale piccola abitudine ti aiuta a sentirti con i piedi per terra quando tutto è nuovo?",
+"pt": "Que pequeno hábito te ajuda a sentir chão quando tudo é novo?",
+"pt_BR": "Qual pequeno hábito te ajuda a manter os pés no chão quando tudo é novo?"
+}
+},
+{
+"id": "moving_abroad-082",
+"lv": "intermediate",
+"i18n": {
+"en": "How would you show friends from home around your new city?",
+"de": "Wie würdest du Freunden von zu Hause deine neue Stadt zeigen?",
+"es": "¿Cómo les enseñarías tu nueva ciudad a amigos de tu tierra?",
+"fr": "Comment ferais-tu découvrir ta nouvelle ville à des amis de chez toi ?",
+"it": "Come faresti scoprire la tua nuova città agli amici di casa?",
+"pt": "Como mostrarias a tua nova cidade aos amigos da tua terra?",
+"pt_BR": "Como você mostraria sua nova cidade para amigos da sua terra?"
+}
+},
+{
+"id": "moving_abroad-083",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you think moving would change your daily routine?",
+"de": "Wie würde ein Umzug deinen Alltag wohl verändern?",
+"es": "¿Cómo crees que una mudanza cambiaría tu rutina diaria?",
+"fr": "Comment penses-tu qu'un départ changerait ta routine quotidienne ?",
+"it": "Come pensi che un trasferimento cambierebbe la tua routine quotidiana?",
+"pt": "Como achas que uma mudança alteraria a tua rotina diária?",
+"pt_BR": "Como você acha que uma mudança alteraria sua rotina?"
+}
+},
+{
+"id": "moving_abroad-084",
+"lv": "intermediate",
+"i18n": {
+"en": "How would you deal with paperwork and appointments in a language you are still learning?",
+"de": "Wie würdest du Behördengänge und Termine in einer Sprache meistern, die du noch lernst?",
+"es": "¿Cómo te las arreglarías con trámites y citas en un idioma que aún estás aprendiendo?",
+"fr": "Comment gérerais-tu les démarches et rendez-vous dans une langue que tu apprends encore ?",
+"it": "Come gestiresti pratiche e appuntamenti in una lingua che stai ancora imparando?",
+"pt": "Como lidarias com burocracias e marcações numa língua que ainda estás a aprender?",
+"pt_BR": "Como você lidaria com burocracia e agendamentos num idioma que ainda está aprendendo?"
+}
+},
+{
+"id": "moving_abroad-085",
+"lv": "intermediate",
+"i18n": {
+"en": "Which local festival or celebration would you join first, and why?",
+"de": "An welchem Fest oder welcher Feier vor Ort würdest du zuerst teilnehmen und warum?",
+"es": "¿En qué fiesta o celebración local participarías primero y por qué?",
+"fr": "À quelle fête ou célébration locale participerais-tu en premier, et pourquoi ?",
+"it": "A quale festa o celebrazione locale parteciperesti per prima, e perché?",
+"pt": "Em que festa ou celebração local participarias primeiro, e porquê?",
+"pt_BR": "De qual festa ou celebração local você participaria primeiro, e por quê?"
+}
+},
+{
+"id": "moving_abroad-086",
+"lv": "advanced",
+"i18n": {
+"en": "How has meeting people from other cultures changed the way you see the world?",
+"de": "Wie hat die Begegnung mit Menschen aus anderen Kulturen deinen Blick auf die Welt verändert?",
+"es": "¿Cómo ha cambiado tu forma de ver el mundo conocer a gente de otras culturas?",
+"fr": "En quoi rencontrer des gens d'autres cultures a-t-il changé ta vision du monde ?",
+"it": "In che modo conoscere persone di altre culture ha cambiato il tuo modo di vedere il mondo?",
+"pt": "Como mudou a tua forma de ver o mundo ao conheceres pessoas de outras culturas?",
+"pt_BR": "Como conhecer pessoas de outras culturas mudou seu jeito de ver o mundo?"
+}
+},
+{
+"id": "moving_abroad-087",
+"lv": "advanced",
+"i18n": {
+"en": "Can a person truly feel at home in more than one country? Why?",
+"de": "Kann man sich wirklich in mehr als einem Land zu Hause fühlen? Warum?",
+"es": "¿Se puede sentir uno de verdad en casa en más de un país? ¿Por qué?",
+"fr": "Peut-on vraiment se sentir chez soi dans plusieurs pays ? Pourquoi ?",
+"it": "Ci si può davvero sentire a casa in più di un paese? Perché?",
+"pt": "É possível sentirmo-nos realmente em casa em mais de um país? Porquê?",
+"pt_BR": "Dá pra se sentir em casa de verdade em mais de um país? Por quê?"
+}
+},
+{
+"id": "moving_abroad-088",
+"lv": "advanced",
+"i18n": {
+"en": "What would you tell someone who is about to move abroad tomorrow?",
+"de": "Was würdest du jemandem sagen, der morgen ins Ausland zieht?",
+"es": "¿Qué le dirías a alguien que se va a vivir al extranjero mañana?",
+"fr": "Que dirais-tu à quelqu'un qui part vivre à l'étranger demain ?",
+"it": "Cosa diresti a qualcuno che domani si trasferisce all'estero?",
+"pt": "O que dirias a alguém que vai viver para o estrangeiro amanhã?",
+"pt_BR": "O que você diria pra alguém que vai se mudar para o exterior amanhã?"
+}
+},
+{
+"id": "moving_abroad-089",
+"lv": "advanced",
+"i18n": {
+"en": "Which parts of your identity would stay the same wherever you live?",
+"de": "Welche Teile deiner Identität bleiben gleich, egal wo du lebst?",
+"es": "¿Qué partes de tu identidad seguirían igual vivieras donde vivieras?",
+"fr": "Quelles parties de ton identité resteraient les mêmes où que tu vives ?",
+"it": "Quali parti della tua identità resterebbero uguali ovunque tu viva?",
+"pt": "Que partes da tua identidade se manteriam iguais vivesses onde vivesses?",
+"pt_BR": "Quais partes da sua identidade continuariam iguais onde quer que você morasse?"
+}
+},
+{
+"id": "moving_abroad-090",
+"lv": "advanced",
+"i18n": {
+"en": "How do you think returning home after years abroad would feel?",
+"de": "Wie würde sich eine Rückkehr nach Jahren im Ausland wohl anfühlen?",
+"es": "¿Cómo crees que se sentiría volver a casa después de años fuera?",
+"fr": "Que ressentirais-tu, à ton avis, en rentrant chez toi après des années à l'étranger ?",
+"it": "Come pensi che ci si senta a tornare a casa dopo anni all'estero?",
+"pt": "Como achas que seria voltar para casa depois de anos lá fora?",
+"pt_BR": "Como você acha que seria voltar pra casa depois de anos fora?"
+}
+},
+{
+"id": "moving_abroad-091",
+"lv": "advanced",
+"i18n": {
+"en": "What can a newcomer bring to a community that locals might not see?",
+"de": "Was kann ein Neuankömmling in eine Gemeinschaft einbringen, das Einheimische vielleicht nicht sehen?",
+"es": "¿Qué puede aportar un recién llegado a una comunidad que quizá la gente local no ve?",
+"fr": "Qu'est-ce qu'un nouvel arrivant peut apporter à une communauté que les locaux ne voient pas ?",
+"it": "Cosa può portare un nuovo arrivato a una comunità che la gente del posto forse non vede?",
+"pt": "O que pode um recém-chegado trazer a uma comunidade que os locais talvez não vejam?",
+"pt_BR": "O que um recém-chegado pode trazer para uma comunidade que os locais talvez não percebam?"
+}
+},
+{
+"id": "moving_abroad-092",
+"lv": "advanced",
+"i18n": {
+"en": "How would you help a newcomer feel welcome in your own city?",
+"de": "Wie würdest du einem Neuankömmling helfen, sich in deiner Stadt willkommen zu fühlen?",
+"es": "¿Cómo ayudarías a un recién llegado a sentirse bienvenido en tu ciudad?",
+"fr": "Comment aiderais-tu un nouvel arrivant à se sentir bienvenu dans ta ville ?",
+"it": "Come aiuteresti un nuovo arrivato a sentirsi il benvenuto nella tua città?",
+"pt": "Como ajudarias um recém-chegado a sentir-se bem-vindo na tua cidade?",
+"pt_BR": "Como você ajudaria um recém-chegado a se sentir bem-vindo na sua cidade?"
+}
+},
+{
+"id": "moving_abroad-093",
+"lv": "advanced",
+"i18n": {
+"en": "Which traditions from two cultures would you love to blend at home?",
+"de": "Welche Traditionen aus zwei Kulturen würdest du zu Hause gern verbinden?",
+"es": "¿Qué tradiciones de dos culturas te encantaría mezclar en casa?",
+"fr": "Quelles traditions de deux cultures aimerais-tu mêler chez toi ?",
+"it": "Quali tradizioni di due culture ti piacerebbe mescolare a casa?",
+"pt": "Que tradições de duas culturas adorarias juntar em casa?",
+"pt_BR": "Quais tradições de duas culturas você adoraria misturar em casa?"
+}
+},
+{
+"id": "moving_abroad-094",
+"lv": "advanced",
+"i18n": {
+"en": "Does speaking another language change how you feel or express yourself?",
+"de": "Verändert eine andere Sprache, wie du fühlst oder dich ausdrückst?",
+"es": "¿Hablar otro idioma cambia cómo te sientes o te expresas?",
+"fr": "Parler une autre langue change-t-il ta façon de ressentir ou de t'exprimer ?",
+"it": "Parlare un'altra lingua cambia come ti senti o ti esprimi?",
+"pt": "Falar outra língua muda a forma como te sentes ou te expressas?",
+"pt_BR": "Falar outro idioma muda o jeito como você se sente ou se expressa?"
+}
+},
+{
+"id": "moving_abroad-095",
+"lv": "advanced",
+"i18n": {
+"en": "What skills do you think people gain from adapting to a new culture?",
+"de": "Welche Fähigkeiten gewinnt man deiner Meinung nach, wenn man sich an eine neue Kultur anpasst?",
+"es": "¿Qué habilidades crees que se ganan al adaptarse a una nueva cultura?",
+"fr": "Quelles compétences acquiert-on, selon toi, en s'adaptant à une nouvelle culture ?",
+"it": "Quali capacità pensi che si acquisiscano adattandosi a una nuova cultura?",
+"pt": "Que competências achas que se ganham ao adaptar-se a uma nova cultura?",
+"pt_BR": "Quais habilidades você acha que a gente ganha ao se adaptar a uma nova cultura?"
+}
+},
+{
+"id": "moving_abroad-096",
+"lv": "advanced",
+"i18n": {
+"en": "How would you answer the question « Where are you from? » after years abroad?",
+"de": "Wie würdest du nach Jahren im Ausland auf die Frage „Woher kommst du?“ antworten?",
+"es": "¿Cómo responderías a «¿De dónde eres?» después de años en el extranjero?",
+"fr": "Comment répondrais-tu à « Tu viens d'où ? » après des années à l'étranger ?",
+"it": "Come risponderesti a «Di dove sei?» dopo anni all'estero?",
+"pt": "Como responderias a «De onde és?» depois de anos no estrangeiro?",
+"pt_BR": "Como você responderia a «De onde você é?» depois de anos morando fora?"
+}
+},
+{
+"id": "moving_abroad-097",
+"lv": "advanced",
+"i18n": {
+"en": "Which unwritten social rule do you think surprises newcomers the most?",
+"de": "Welche ungeschriebene Regel überrascht Neuankömmlinge deiner Meinung nach am meisten?",
+"es": "¿Qué norma social no escrita crees que más sorprende a los recién llegados?",
+"fr": "Quelle règle sociale non écrite surprend le plus les nouveaux arrivants, selon toi ?",
+"it": "Quale regola sociale non scritta pensi che sorprenda di più i nuovi arrivati?",
+"pt": "Que regra social não escrita achas que mais surpreende os recém-chegados?",
+"pt_BR": "Qual regra social não escrita você acha que mais surpreende quem acabou de chegar?"
+}
+},
+{
+"id": "moving_abroad-098",
+"lv": "advanced",
+"i18n": {
+"en": "What would a letter to your future self abroad say?",
+"de": "Was würde in einem Brief an dein zukünftiges Ich im Ausland stehen?",
+"es": "¿Qué diría una carta a tu yo futuro en el extranjero?",
+"fr": "Que dirait une lettre à ton futur toi installé à l'étranger ?",
+"it": "Cosa direbbe una lettera al te stesso del futuro all'estero?",
+"pt": "O que diria uma carta ao teu eu futuro no estrangeiro?",
+"pt_BR": "O que diria uma carta para o seu eu do futuro morando fora?"
+}
+},
+{
+"id": "moving_abroad-099",
+"lv": "advanced",
+"i18n": {
+"en": "How do you keep curiosity alive once a new place starts to feel familiar?",
+"de": "Wie bleibst du neugierig, wenn sich ein neuer Ort langsam vertraut anfühlt?",
+"es": "¿Cómo mantienes viva la curiosidad cuando un lugar nuevo empieza a resultarte familiar?",
+"fr": "Comment restes-tu curieux quand un nouvel endroit commence à te sembler familier ?",
+"it": "Come mantieni viva la curiosità quando un posto nuovo inizia a sembrarti familiare?",
+"pt": "Como manténs a curiosidade viva quando um sítio novo começa a parecer familiar?",
+"pt_BR": "Como você mantém a curiosidade viva quando um lugar novo começa a ficar familiar?"
+}
+},
+{
+"id": "moving_abroad-100",
+"lv": "advanced",
+"i18n": {
+"en": "If you could build a bridge between two cultures you know, what would it be?",
+"de": "Wenn du eine Brücke zwischen zwei Kulturen bauen könntest, die du kennst, wie sähe sie aus?",
+"es": "Si pudieras tender un puente entre dos culturas que conoces, ¿cómo sería?",
+"fr": "Si tu pouvais construire un pont entre deux cultures que tu connais, quel serait-il ?",
+"it": "Se potessi costruire un ponte tra due culture che conosci, come sarebbe?",
+"pt": "Se pudesses construir uma ponte entre duas culturas que conheces, como seria?",
+"pt_BR": "Se você pudesse construir uma ponte entre duas culturas que conhece, como ela seria?"
+}
+}
+]
+}

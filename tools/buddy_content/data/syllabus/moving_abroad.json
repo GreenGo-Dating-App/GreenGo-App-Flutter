@@ -1,0 +1,2195 @@
+{
+"topic": "moving_abroad",
+"days": [
+{
+"d": 1,
+"lv": "beginner",
+"t": "Dreaming about life abroad",
+"f": "Exploring why living in another country appeals to you and what you hope to find"
+},
+{
+"d": 2,
+"lv": "beginner",
+"t": "Your reasons for moving",
+"f": "Naming your main reasons, from work and study to adventure and family"
+},
+{
+"d": 3,
+"lv": "beginner",
+"t": "Expectations versus reality",
+"f": "Separating holiday impressions from everyday life in a new country"
+},
+{
+"d": 4,
+"lv": "beginner",
+"t": "Choosing a destination",
+"f": "Comparing countries by climate, language, lifestyle and opportunities"
+},
+{
+"d": 5,
+"lv": "beginner",
+"t": "Researching from home",
+"f": "Using guidebooks, official sources and expat stories to learn about a place"
+},
+{
+"d": 6,
+"lv": "beginner",
+"t": "Official sources first",
+"f": "Why government and embassy websites are the place for rules and requirements"
+},
+{
+"d": 7,
+"lv": "beginner",
+"t": "Cost of living in general",
+"f": "Comparing everyday costs like rent, food and transport between places"
+},
+{
+"d": 8,
+"lv": "beginner",
+"t": "Climate and seasons",
+"f": "How weather and daylight shape daily routines and wellbeing"
+},
+{
+"d": 9,
+"lv": "beginner",
+"t": "Big city or small town",
+"f": "The everyday differences between living in a city and a smaller town"
+},
+{
+"d": 10,
+"lv": "beginner",
+"t": "Language: how much do you need?",
+"f": "Thinking about the language of your new home and starting early"
+},
+{
+"d": 11,
+"lv": "beginner",
+"t": "Your first words",
+"f": "Learning greetings, thank you and please before you even leave"
+},
+{
+"d": 12,
+"lv": "beginner",
+"t": "Culture at a glance",
+"f": "Learning the basics of customs, values and everyday etiquette"
+},
+{
+"d": 13,
+"lv": "beginner",
+"t": "Food culture preview",
+"f": "Discovering typical dishes, meal times and eating habits"
+},
+{
+"d": 14,
+"lv": "beginner",
+"t": "Talking to people who moved there",
+"f": "Learning from people who already live in your chosen country"
+},
+{
+"d": 15,
+"lv": "beginner",
+"t": "Visiting before moving",
+"f": "What to look at if you can visit your future home first"
+},
+{
+"d": 16,
+"lv": "beginner",
+"t": "Pros and cons list",
+"f": "Weighing what you gain and what you will miss"
+},
+{
+"d": 17,
+"lv": "beginner",
+"t": "Talking with your loved ones",
+"f": "Sharing your plans with family and friends kindly and clearly"
+},
+{
+"d": 18,
+"lv": "beginner",
+"t": "Moving alone or together",
+"f": "Different experiences of moving solo, as a couple or as a family"
+},
+{
+"d": 19,
+"lv": "beginner",
+"t": "Your skills that travel",
+"f": "Recognising skills and experience that are useful anywhere"
+},
+{
+"d": 20,
+"lv": "beginner",
+"t": "Work and study in general",
+"f": "Understanding that permits and rules vary and must be checked officially"
+},
+{
+"d": 21,
+"lv": "beginner",
+"t": "Timing your move",
+"f": "Choosing a good moment for work, school terms and seasons"
+},
+{
+"d": 22,
+"lv": "beginner",
+"t": "A move timeline",
+"f": "Building a simple timeline from decision to arrival"
+},
+{
+"d": 23,
+"lv": "beginner",
+"t": "Your moving budget",
+"f": "Estimating costs for travel, shipping, setup and a safety cushion"
+},
+{
+"d": 24,
+"lv": "beginner",
+"t": "Savings before you go",
+"f": "Why a financial cushion makes the first months calmer"
+},
+{
+"d": 25,
+"lv": "beginner",
+"t": "Your moving folder",
+"f": "Keeping notes, documents and checklists in one organised place"
+},
+{
+"d": 26,
+"lv": "beginner",
+"t": "Keeping documents safe",
+"f": "Copies, digital backups and safe storage for important papers"
+},
+{
+"d": 27,
+"lv": "beginner",
+"t": "Checking requirements officially",
+"f": "Using official sources and qualified advisers for visa and legal questions"
+},
+{
+"d": 28,
+"lv": "beginner",
+"t": "Staying motivated while planning",
+"f": "Keeping excitement alive through a long planning period"
+},
+{
+"d": 29,
+"lv": "beginner",
+"t": "Your mini-plan for next month",
+"f": "Picking three small steps to move your plans forward"
+},
+{
+"d": 30,
+"lv": "beginner",
+"t": "Review: dreaming and deciding",
+"f": "Light review of reasons, research and first planning steps"
+},
+{
+"d": 31,
+"lv": "beginner",
+"t": "Decluttering before a move",
+"f": "Deciding what to keep, sell, give away or store"
+},
+{
+"d": 32,
+"lv": "beginner",
+"t": "Selling and donating items",
+"f": "Simple ways to pass on things you will not take with you"
+},
+{
+"d": 33,
+"lv": "beginner",
+"t": "What to take with you",
+"f": "Choosing items that are practical, personal or hard to replace"
+},
+{
+"d": 34,
+"lv": "beginner",
+"t": "Packing for the first weeks",
+"f": "Packing essentials for the period before your things arrive"
+},
+{
+"d": 35,
+"lv": "beginner",
+"t": "Shipping or suitcase?",
+"f": "Comparing ways to move belongings in general terms"
+},
+{
+"d": 36,
+"lv": "beginner",
+"t": "Sentimental items",
+"f": "Choosing a few meaningful items that will make a new place feel like home"
+},
+{
+"d": 37,
+"lv": "beginner",
+"t": "Electronics and plugs",
+"f": "Checking plugs, voltage and adapters for your devices"
+},
+{
+"d": 38,
+"lv": "beginner",
+"t": "Clothes for a new climate",
+"f": "Packing for the weather and buying the rest locally"
+},
+{
+"d": 39,
+"lv": "beginner",
+"t": "Medicines and prescriptions",
+"f": "Planning ahead and checking official rules for bringing medicines"
+},
+{
+"d": 40,
+"lv": "beginner",
+"t": "Moving with pets in general",
+"f": "Why pet travel needs early planning and official requirements"
+},
+{
+"d": 41,
+"lv": "beginner",
+"t": "Notifying people and services",
+"f": "Letting banks, providers and contacts know about your move"
+},
+{
+"d": 42,
+"lv": "beginner",
+"t": "Mail and addresses",
+"f": "Planning how to receive important mail during the transition"
+},
+{
+"d": 43,
+"lv": "beginner",
+"t": "Phone and number plans",
+"f": "Deciding what to do with your current phone number"
+},
+{
+"d": 44,
+"lv": "beginner",
+"t": "Banking before you leave",
+"f": "Talking to your bank about using your account abroad"
+},
+{
+"d": 45,
+"lv": "beginner",
+"t": "Money for the first weeks",
+"f": "Having access to money in more than one way when you arrive"
+},
+{
+"d": 46,
+"lv": "beginner",
+"t": "Temporary accommodation",
+"f": "Booking a short-term place to stay while you search for a home"
+},
+{
+"d": 47,
+"lv": "beginner",
+"t": "Learning the neighbourhoods",
+"f": "Researching areas for transport, safety and atmosphere"
+},
+{
+"d": 48,
+"lv": "beginner",
+"t": "Your arrival plan",
+"f": "Planning the first day: transport from the airport, keys and food"
+},
+{
+"d": 49,
+"lv": "beginner",
+"t": "Saying goodbye well",
+"f": "Farewell gatherings and ways to stay close to people you love"
+},
+{
+"d": 50,
+"lv": "beginner",
+"t": "Keeping in touch plans",
+"f": "Choosing apps and routines to stay connected across time zones"
+},
+{
+"d": 51,
+"lv": "beginner",
+"t": "Your goodbye list",
+"f": "Places, foods and moments you want to enjoy before leaving"
+},
+{
+"d": 52,
+"lv": "beginner",
+"t": "Last-week checklist",
+"f": "Final tasks to finish calmly before departure"
+},
+{
+"d": 53,
+"lv": "beginner",
+"t": "Travel day tips",
+"f": "Staying calm and organised on the day of the move"
+},
+{
+"d": 54,
+"lv": "beginner",
+"t": "Emotions before departure",
+"f": "Excitement, nerves and sadness are all normal before a move"
+},
+{
+"d": 55,
+"lv": "beginner",
+"t": "Packing a comfort kit",
+"f": "Small things that make the first nights in a new place cosy"
+},
+{
+"d": 56,
+"lv": "beginner",
+"t": "Learning basic phrases for arrival",
+"f": "Phrases for transport, directions and checking in"
+},
+{
+"d": 57,
+"lv": "beginner",
+"t": "Downloading useful apps",
+"f": "Maps, translation, transport and messaging apps for your new home"
+},
+{
+"d": 58,
+"lv": "beginner",
+"t": "Understanding time zones",
+"f": "Planning calls and work with family across time differences"
+},
+{
+"d": 59,
+"lv": "beginner",
+"t": "A gratitude moment",
+"f": "Appreciating the people and places that shaped you before you go"
+},
+{
+"d": 60,
+"lv": "beginner",
+"t": "Review: preparing to go",
+"f": "Light review of decluttering, packing, goodbyes and arrival plans"
+},
+{
+"d": 61,
+"lv": "beginner",
+"t": "Your first day abroad",
+"f": "Arriving, settling in and giving yourself time to rest"
+},
+{
+"d": 62,
+"lv": "beginner",
+"t": "Jet lag and first nights",
+"f": "Gentle ways to adjust your sleep after a long journey"
+},
+{
+"d": 63,
+"lv": "beginner",
+"t": "Finding food on day one",
+"f": "Locating a supermarket, bakery or market near you"
+},
+{
+"d": 64,
+"lv": "beginner",
+"t": "Getting a local phone plan",
+"f": "Choosing a local SIM or plan to stay connected"
+},
+{
+"d": 65,
+"lv": "beginner",
+"t": "Learning local transport",
+"f": "Tickets, cards and routes for buses, trams and trains"
+},
+{
+"d": 66,
+"lv": "beginner",
+"t": "Walking your neighbourhood",
+"f": "Exploring nearby streets to feel oriented and at ease"
+},
+{
+"d": 67,
+"lv": "beginner",
+"t": "Local shops and markets",
+"f": "Discovering where locals buy food and household items"
+},
+{
+"d": 68,
+"lv": "beginner",
+"t": "Supermarket surprises",
+"f": "Finding familiar products and trying new local ones"
+},
+{
+"d": 69,
+"lv": "beginner",
+"t": "Paying for things",
+"f": "Cash, cards and payment apps in your new country"
+},
+{
+"d": 70,
+"lv": "beginner",
+"t": "Tipping customs",
+"f": "Learning if, when and how much people tip locally"
+},
+{
+"d": 71,
+"lv": "beginner",
+"t": "Opening hours and rhythms",
+"f": "Shop hours, lunch breaks and quiet days in your new home"
+},
+{
+"d": 72,
+"lv": "beginner",
+"t": "Registering where required",
+"f": "Checking official sources for any local registration steps"
+},
+{
+"d": 73,
+"lv": "beginner",
+"t": "Searching for a home",
+"f": "Common ways people find a flat or house to rent"
+},
+{
+"d": 74,
+"lv": "beginner",
+"t": "Viewing a flat",
+"f": "Questions to ask and things to check when visiting a home"
+},
+{
+"d": 75,
+"lv": "beginner",
+"t": "Rental contracts in general",
+"f": "Reading carefully and asking official or qualified help if unsure"
+},
+{
+"d": 76,
+"lv": "beginner",
+"t": "Moving into your new home",
+"f": "Setting up utilities, internet and basic furniture"
+},
+{
+"d": 77,
+"lv": "beginner",
+"t": "Furnishing on a budget",
+"f": "Second-hand shops and local groups for affordable furniture"
+},
+{
+"d": 78,
+"lv": "beginner",
+"t": "Making your place feel like home",
+"f": "Photos, plants and small rituals that make a space yours"
+},
+{
+"d": 79,
+"lv": "beginner",
+"t": "Meeting your neighbours",
+"f": "Friendly first steps to say hello in your building or street"
+},
+{
+"d": 80,
+"lv": "beginner",
+"t": "Recycling and waste rules",
+"f": "Learning local rules for sorting rubbish and recycling"
+},
+{
+"d": 81,
+"lv": "beginner",
+"t": "House rules and quiet hours",
+"f": "Respecting local norms about noise and shared spaces"
+},
+{
+"d": 82,
+"lv": "beginner",
+"t": "Finding the essentials nearby",
+"f": "Pharmacy, post office, doctor and other useful places"
+},
+{
+"d": 83,
+"lv": "beginner",
+"t": "Healthcare in general",
+"f": "Learning how the local health system works from official sources"
+},
+{
+"d": 84,
+"lv": "beginner",
+"t": "Emergency numbers",
+"f": "Knowing the local emergency number and how to describe your address"
+},
+{
+"d": 85,
+"lv": "beginner",
+"t": "Safety and common sense",
+"f": "Everyday awareness while you learn your new surroundings"
+},
+{
+"d": 86,
+"lv": "beginner",
+"t": "Weather and dressing locally",
+"f": "Adapting your wardrobe and routines to the local climate"
+},
+{
+"d": 87,
+"lv": "beginner",
+"t": "Your first weekend",
+"f": "Simple activities to enjoy your first free days"
+},
+{
+"d": 88,
+"lv": "beginner",
+"t": "Small wins of week one",
+"f": "Celebrating every small task you managed in a new country"
+},
+{
+"d": 89,
+"lv": "beginner",
+"t": "First-month routines",
+"f": "Building simple daily routines that create stability"
+},
+{
+"d": 90,
+"lv": "beginner",
+"t": "Review: the first weeks",
+"f": "Light review of arrival, home search and first everyday tasks"
+},
+{
+"d": 91,
+"lv": "beginner",
+"t": "Opening a local bank account",
+"f": "General steps and documents people often need, checked with the bank"
+},
+{
+"d": 92,
+"lv": "beginner",
+"t": "Budgeting in a new currency",
+"f": "Getting used to local prices and converting less over time"
+},
+{
+"d": 93,
+"lv": "beginner",
+"t": "Understanding local bills",
+"f": "Reading utility, phone and internet bills in a new language"
+},
+{
+"d": 94,
+"lv": "beginner",
+"t": "Local shopping habits",
+"f": "Weekly markets, discount stores and how locals shop"
+},
+{
+"d": 95,
+"lv": "beginner",
+"t": "Cooking with local ingredients",
+"f": "Trying recipes with what is fresh and available locally"
+},
+{
+"d": 96,
+"lv": "beginner",
+"t": "Finding familiar foods",
+"f": "Where to look for ingredients from home and how to adapt recipes"
+},
+{
+"d": 97,
+"lv": "beginner",
+"t": "Eating out like a local",
+"f": "Menus, ordering and dining customs in your new country"
+},
+{
+"d": 98,
+"lv": "beginner",
+"t": "Coffee and café culture",
+"f": "How people meet, sit and order in local cafés"
+},
+{
+"d": 99,
+"lv": "beginner",
+"t": "Getting around by bike or on foot",
+"f": "Exploring the city in active and affordable ways"
+},
+{
+"d": 100,
+"lv": "beginner",
+"t": "Driving in a new country",
+"f": "Checking official rules about licences and learning local road habits"
+},
+{
+"d": 101,
+"lv": "beginner",
+"t": "Public holidays",
+"f": "Learning which days shops close and how people spend them"
+},
+{
+"d": 102,
+"lv": "beginner",
+"t": "Seasons and local life",
+"f": "How seasons change festivals, food and daily rhythms"
+},
+{
+"d": 103,
+"lv": "beginner",
+"t": "Post and parcels",
+"f": "Sending and receiving post and understanding delivery habits"
+},
+{
+"d": 104,
+"lv": "beginner",
+"t": "Libraries and community centres",
+"f": "Free places to read, learn and meet people"
+},
+{
+"d": 105,
+"lv": "beginner",
+"t": "Local news in simple language",
+"f": "Following local news to understand your new home"
+},
+{
+"d": 106,
+"lv": "beginner",
+"t": "Paperwork without stress",
+"f": "Staying calm and organised with forms and appointments"
+},
+{
+"d": 107,
+"lv": "beginner",
+"t": "Making appointments",
+"f": "Booking and attending appointments in a new system"
+},
+{
+"d": 108,
+"lv": "beginner",
+"t": "Asking for help politely",
+"f": "Useful phrases for asking strangers and officials for help"
+},
+{
+"d": 109,
+"lv": "beginner",
+"t": "Dealing with mistakes",
+"f": "Laughing at small misunderstandings and learning from them"
+},
+{
+"d": 110,
+"lv": "beginner",
+"t": "Patience as a superpower",
+"f": "Why things take longer at first and how to stay patient"
+},
+{
+"d": 111,
+"lv": "beginner",
+"t": "Your new favourite places",
+"f": "Finding a café, park or spot that feels like yours"
+},
+{
+"d": 112,
+"lv": "beginner",
+"t": "Local parks and nature",
+"f": "Discovering green spaces for walks, rest and fresh air"
+},
+{
+"d": 113,
+"lv": "beginner",
+"t": "Staying healthy in a new place",
+"f": "Sleep, movement and food habits during big changes"
+},
+{
+"d": 114,
+"lv": "beginner",
+"t": "Keeping in touch with home",
+"f": "Balancing calls home with living fully in the present"
+},
+{
+"d": 115,
+"lv": "beginner",
+"t": "Sending news home",
+"f": "Sharing photos and stories that capture your new life"
+},
+{
+"d": 116,
+"lv": "beginner",
+"t": "A month in photos",
+"f": "Looking back on your first month through pictures"
+},
+{
+"d": 117,
+"lv": "beginner",
+"t": "What surprised you most",
+"f": "Reflecting on the biggest surprises so far"
+},
+{
+"d": 118,
+"lv": "beginner",
+"t": "Small cultural differences",
+"f": "Noticing everyday differences in greetings, queues and personal space"
+},
+{
+"d": 119,
+"lv": "beginner",
+"t": "Your settling-in checklist",
+"f": "Checking what is done and what still needs attention"
+},
+{
+"d": 120,
+"lv": "beginner",
+"t": "Review: everyday basics",
+"f": "Light review of money, food, transport and daily life in a new country"
+},
+{
+"d": 121,
+"lv": "intermediate",
+"t": "Why the local language matters",
+"f": "How language opens doors to friendships and confidence"
+},
+{
+"d": 122,
+"lv": "intermediate",
+"t": "Setting language goals",
+"f": "Choosing realistic language goals for the next months"
+},
+{
+"d": 123,
+"lv": "intermediate",
+"t": "Finding a language course",
+"f": "Comparing classes, apps, tutors and community options"
+},
+{
+"d": 124,
+"lv": "intermediate",
+"t": "Language exchange partners",
+"f": "Trading lessons with locals who want to learn your language"
+},
+{
+"d": 125,
+"lv": "intermediate",
+"t": "Learning through daily life",
+"f": "Practising at the market, bakery and bus stop"
+},
+{
+"d": 126,
+"lv": "intermediate",
+"t": "Labelling your home",
+"f": "Sticky notes and small tricks to learn everyday words"
+},
+{
+"d": 127,
+"lv": "intermediate",
+"t": "Listening practice",
+"f": "Radio, podcasts and songs in the local language"
+},
+{
+"d": 128,
+"lv": "intermediate",
+"t": "Watching local shows",
+"f": "Using series and films with subtitles to learn naturally"
+},
+{
+"d": 129,
+"lv": "intermediate",
+"t": "Speaking without fear",
+"f": "Accepting mistakes as part of learning to speak"
+},
+{
+"d": 130,
+"lv": "intermediate",
+"t": "Survival phrases",
+"f": "Phrases for when you do not understand or need someone to repeat"
+},
+{
+"d": 131,
+"lv": "intermediate",
+"t": "Phone calls in a new language",
+"f": "Preparing for calls with notes and key phrases"
+},
+{
+"d": 132,
+"lv": "intermediate",
+"t": "Writing simple messages",
+"f": "Writing polite emails and texts in the local language"
+},
+{
+"d": 133,
+"lv": "intermediate",
+"t": "Formal and informal speech",
+"f": "Understanding when to be formal and when to be relaxed"
+},
+{
+"d": 134,
+"lv": "intermediate",
+"t": "Body language and gestures",
+"f": "Gestures and expressions that mean different things across cultures"
+},
+{
+"d": 135,
+"lv": "intermediate",
+"t": "Humour across cultures",
+"f": "Why jokes do not always translate and how to enjoy local humour"
+},
+{
+"d": 136,
+"lv": "intermediate",
+"t": "Local slang and expressions",
+"f": "Learning common expressions people use every day"
+},
+{
+"d": 137,
+"lv": "intermediate",
+"t": "Accents and dialects",
+"f": "Understanding regional accents and varieties of the language"
+},
+{
+"d": 138,
+"lv": "intermediate",
+"t": "Translation apps wisely",
+"f": "Using translation tools as a helper, not a replacement"
+},
+{
+"d": 139,
+"lv": "intermediate",
+"t": "Reading signs and menus",
+"f": "Practising with the written language all around you"
+},
+{
+"d": 140,
+"lv": "intermediate",
+"t": "Language plateaus",
+"f": "Staying motivated when progress feels slow"
+},
+{
+"d": 141,
+"lv": "intermediate",
+"t": "Celebrating language wins",
+"f": "Noticing the first joke, call or chat you managed alone"
+},
+{
+"d": 142,
+"lv": "intermediate",
+"t": "Raising bilingual children",
+"f": "General ideas for families keeping two languages alive"
+},
+{
+"d": 143,
+"lv": "intermediate",
+"t": "Keeping your own language",
+"f": "Staying connected to your mother tongue"
+},
+{
+"d": 144,
+"lv": "intermediate",
+"t": "Small talk topics",
+"f": "What people usually chat about locally and what to avoid"
+},
+{
+"d": 145,
+"lv": "intermediate",
+"t": "Conversation starters",
+"f": "Easy ways to start chats with neighbours and colleagues"
+},
+{
+"d": 146,
+"lv": "intermediate",
+"t": "Listening and politeness",
+"f": "Turn-taking, directness and silence in conversations"
+},
+{
+"d": 147,
+"lv": "intermediate",
+"t": "Being misunderstood",
+"f": "Handling moments when your words land differently than intended"
+},
+{
+"d": 148,
+"lv": "intermediate",
+"t": "Asking about local customs",
+"f": "Showing curiosity respectfully when you are unsure"
+},
+{
+"d": 149,
+"lv": "intermediate",
+"t": "Your language journal",
+"f": "Writing down new words and phrases you heard each day"
+},
+{
+"d": 150,
+"lv": "intermediate",
+"t": "Review: language and communication",
+"f": "Light review of learning and using the local language"
+},
+{
+"d": 151,
+"lv": "intermediate",
+"t": "What culture shock is",
+"f": "Understanding the common stages of adjusting to a new culture"
+},
+{
+"d": 152,
+"lv": "intermediate",
+"t": "The honeymoon phase",
+"f": "Enjoying the excitement of everything being new"
+},
+{
+"d": 153,
+"lv": "intermediate",
+"t": "When frustration arrives",
+"f": "Recognising the frustration stage and why it is normal"
+},
+{
+"d": 154,
+"lv": "intermediate",
+"t": "Homesickness",
+"f": "Gentle ways to handle missing home, people and familiar things"
+},
+{
+"d": 155,
+"lv": "intermediate",
+"t": "Comfort foods and rituals",
+"f": "Small rituals from home that help on difficult days"
+},
+{
+"d": 156,
+"lv": "intermediate",
+"t": "Loneliness in a new place",
+"f": "Ideas for feeling less alone while building connections"
+},
+{
+"d": 157,
+"lv": "intermediate",
+"t": "Building resilience",
+"f": "Habits that help you bounce back from hard days"
+},
+{
+"d": 158,
+"lv": "intermediate",
+"t": "Self-care routines",
+"f": "Sleep, movement and calm moments during big changes"
+},
+{
+"d": 159,
+"lv": "intermediate",
+"t": "Talking about your feelings",
+"f": "Sharing your experience with friends, family or a professional"
+},
+{
+"d": 160,
+"lv": "intermediate",
+"t": "Keeping a reflection journal",
+"f": "Writing to understand your feelings and progress"
+},
+{
+"d": 161,
+"lv": "intermediate",
+"t": "Gratitude abroad",
+"f": "Noticing good things every day in your new home"
+},
+{
+"d": 162,
+"lv": "intermediate",
+"t": "Stereotypes and open minds",
+"f": "Moving beyond first impressions about people and places"
+},
+{
+"d": 163,
+"lv": "intermediate",
+"t": "Cultural values",
+"f": "Exploring values like time, privacy and community in your new culture"
+},
+{
+"d": 164,
+"lv": "intermediate",
+"t": "Time and punctuality",
+"f": "How cultures view being on time, early or late"
+},
+{
+"d": 165,
+"lv": "intermediate",
+"t": "Directness and politeness",
+"f": "Understanding direct and indirect communication styles"
+},
+{
+"d": 166,
+"lv": "intermediate",
+"t": "Personal space and touch",
+"f": "Greeting styles, distance and physical contact across cultures"
+},
+{
+"d": 167,
+"lv": "intermediate",
+"t": "Hospitality customs",
+"f": "What to bring and how to behave when invited to someone's home"
+},
+{
+"d": 168,
+"lv": "intermediate",
+"t": "Gift-giving customs",
+"f": "Local norms for giving and receiving gifts"
+},
+{
+"d": 169,
+"lv": "intermediate",
+"t": "Dining etiquette",
+"f": "Table manners and meal customs in your new country"
+},
+{
+"d": 170,
+"lv": "intermediate",
+"t": "Dress codes",
+"f": "Understanding what people wear for work, events and daily life"
+},
+{
+"d": 171,
+"lv": "intermediate",
+"t": "Respecting local traditions",
+"f": "Joining traditions with curiosity and respect"
+},
+{
+"d": 172,
+"lv": "intermediate",
+"t": "Your own culture as a gift",
+"f": "Sharing your traditions and food with new friends"
+},
+{
+"d": 173,
+"lv": "intermediate",
+"t": "Finding balance",
+"f": "Keeping your identity while adapting to new ways"
+},
+{
+"d": 174,
+"lv": "intermediate",
+"t": "Signs you are adapting",
+"f": "Noticing moments when the new place starts to feel normal"
+},
+{
+"d": 175,
+"lv": "intermediate",
+"t": "Celebrating three months",
+"f": "Looking back at what you have achieved so far"
+},
+{
+"d": 176,
+"lv": "intermediate",
+"t": "Bad days happen",
+"f": "Accepting difficult days without seeing them as failure"
+},
+{
+"d": 177,
+"lv": "intermediate",
+"t": "Asking for support",
+"f": "Knowing where to find help, from friends to professionals"
+},
+{
+"d": 178,
+"lv": "intermediate",
+"t": "Mentors and buddies",
+"f": "Finding someone who can guide you through local life"
+},
+{
+"d": 179,
+"lv": "intermediate",
+"t": "Mindset for adapting",
+"f": "Curiosity, humour and patience as everyday tools"
+},
+{
+"d": 180,
+"lv": "intermediate",
+"t": "Review: culture shock and adapting",
+"f": "Light review of feelings, values and adapting to a new culture"
+},
+{
+"d": 181,
+"lv": "intermediate",
+"t": "Making friends as an adult",
+"f": "Why friendships take time and how to start"
+},
+{
+"d": 182,
+"lv": "intermediate",
+"t": "Where to meet people",
+"f": "Clubs, classes, sports and volunteering as places to connect"
+},
+{
+"d": 183,
+"lv": "intermediate",
+"t": "Expat groups and locals",
+"f": "Balancing friendships with other newcomers and locals"
+},
+{
+"d": 184,
+"lv": "intermediate",
+"t": "Joining a club or team",
+"f": "Finding groups around your hobbies and interests"
+},
+{
+"d": 185,
+"lv": "intermediate",
+"t": "Volunteering locally",
+"f": "Meeting people while giving something back"
+},
+{
+"d": 186,
+"lv": "intermediate",
+"t": "Saying yes to invitations",
+"f": "Why accepting invitations helps you connect"
+},
+{
+"d": 187,
+"lv": "intermediate",
+"t": "Inviting people over",
+"f": "Hosting simple gatherings to deepen new friendships"
+},
+{
+"d": 188,
+"lv": "intermediate",
+"t": "Friendship customs",
+"f": "How friendships form and grow in different cultures"
+},
+{
+"d": 189,
+"lv": "intermediate",
+"t": "Online communities",
+"f": "Using local online groups to find events and advice"
+},
+{
+"d": 190,
+"lv": "intermediate",
+"t": "Neighbours as community",
+"f": "Building friendly relations where you live"
+},
+{
+"d": 191,
+"lv": "intermediate",
+"t": "Making friends at work or school",
+"f": "Connecting with colleagues and classmates"
+},
+{
+"d": 192,
+"lv": "intermediate",
+"t": "Keeping new friendships going",
+"f": "Small habits that keep connections alive"
+},
+{
+"d": 193,
+"lv": "intermediate",
+"t": "Friendship across languages",
+"f": "Building bonds even when language is a challenge"
+},
+{
+"d": 194,
+"lv": "intermediate",
+"t": "Shared meals and food culture",
+"f": "Cooking and eating together as a way to connect"
+},
+{
+"d": 195,
+"lv": "intermediate",
+"t": "Local festivals",
+"f": "Joining celebrations to experience community spirit"
+},
+{
+"d": 196,
+"lv": "intermediate",
+"t": "Sports and fan culture",
+"f": "Joining in local enthusiasm for sports"
+},
+{
+"d": 197,
+"lv": "intermediate",
+"t": "Music and arts scenes",
+"f": "Discovering concerts, galleries and local artists"
+},
+{
+"d": 198,
+"lv": "intermediate",
+"t": "Weekend trips nearby",
+"f": "Exploring towns and nature around your new home"
+},
+{
+"d": 199,
+"lv": "intermediate",
+"t": "Becoming a regular",
+"f": "Being a familiar face at a café, shop or market"
+},
+{
+"d": 200,
+"lv": "intermediate",
+"t": "Introverts abroad",
+"f": "Gentle ways to connect when big groups feel tiring"
+},
+{
+"d": 201,
+"lv": "intermediate",
+"t": "Long-distance friendships",
+"f": "Keeping old friendships strong across distance"
+},
+{
+"d": 202,
+"lv": "intermediate",
+"t": "Visitors from home",
+"f": "Hosting family and friends and showing them your new life"
+},
+{
+"d": 203,
+"lv": "intermediate",
+"t": "Being a good guest",
+"f": "Respecting customs when visiting local friends"
+},
+{
+"d": 204,
+"lv": "intermediate",
+"t": "Celebrating your birthday abroad",
+"f": "Creating new traditions on special days"
+},
+{
+"d": 205,
+"lv": "intermediate",
+"t": "Holidays far from home",
+"f": "Making festive seasons warm when you are far away"
+},
+{
+"d": 206,
+"lv": "intermediate",
+"t": "Creating your own traditions",
+"f": "Mixing traditions from home and your new country"
+},
+{
+"d": 207,
+"lv": "intermediate",
+"t": "Community events",
+"f": "Markets, fairs and gatherings that bring people together"
+},
+{
+"d": 208,
+"lv": "intermediate",
+"t": "Your social circle map",
+"f": "Reflecting on the people you have met so far"
+},
+{
+"d": 209,
+"lv": "intermediate",
+"t": "Being patient with friendship",
+"f": "Trusting that deep connections grow over time"
+},
+{
+"d": 210,
+"lv": "intermediate",
+"t": "Review: social life and community",
+"f": "Light review of making friends and joining local life"
+},
+{
+"d": 211,
+"lv": "intermediate",
+"t": "Work culture in general",
+"f": "How work culture can differ across countries"
+},
+{
+"d": 212,
+"lv": "intermediate",
+"t": "Looking for work in general",
+"f": "Common ways people find jobs and why permits must be checked officially"
+},
+{
+"d": 213,
+"lv": "intermediate",
+"t": "Adapting your CV",
+"f": "Common differences in CV formats between countries"
+},
+{
+"d": 214,
+"lv": "intermediate",
+"t": "Job interviews across cultures",
+"f": "Preparing for interview styles in a new culture"
+},
+{
+"d": 215,
+"lv": "intermediate",
+"t": "Workplace communication",
+"f": "Meetings, emails and feedback in a new work culture"
+},
+{
+"d": 216,
+"lv": "intermediate",
+"t": "Hierarchy at work",
+"f": "Understanding how decisions and titles work locally"
+},
+{
+"d": 217,
+"lv": "intermediate",
+"t": "Work-life balance customs",
+"f": "Working hours, breaks and holidays in your new country"
+},
+{
+"d": 218,
+"lv": "intermediate",
+"t": "Lunch and coffee breaks",
+"f": "Social customs around breaks at work"
+},
+{
+"d": 219,
+"lv": "intermediate",
+"t": "Remote work from abroad",
+"f": "General points and why rules should be checked with official sources"
+},
+{
+"d": 220,
+"lv": "intermediate",
+"t": "Freelancing in a new country",
+"f": "Why to research local rules and seek qualified advice"
+},
+{
+"d": 221,
+"lv": "intermediate",
+"t": "Recognising your qualifications",
+"f": "Checking official sources about recognition of diplomas"
+},
+{
+"d": 222,
+"lv": "intermediate",
+"t": "Studying abroad",
+"f": "Daily life as an international student"
+},
+{
+"d": 223,
+"lv": "intermediate",
+"t": "University culture",
+"f": "Classes, teachers and study habits in a new system"
+},
+{
+"d": 224,
+"lv": "intermediate",
+"t": "Student life on a budget",
+"f": "Affordable ways to enjoy student life abroad"
+},
+{
+"d": 225,
+"lv": "intermediate",
+"t": "Networking abroad",
+"f": "Building professional contacts in a new place"
+},
+{
+"d": 226,
+"lv": "intermediate",
+"t": "Professional associations",
+"f": "Joining groups in your field to learn and connect"
+},
+{
+"d": 227,
+"lv": "intermediate",
+"t": "Learning work vocabulary",
+"f": "Key words and phrases for your workplace"
+},
+{
+"d": 228,
+"lv": "intermediate",
+"t": "Giving and receiving feedback",
+"f": "Direct and indirect feedback styles across cultures"
+},
+{
+"d": 229,
+"lv": "intermediate",
+"t": "Celebrations at work",
+"f": "Birthdays, holidays and team events at work"
+},
+{
+"d": 230,
+"lv": "intermediate",
+"t": "Career setbacks abroad",
+"f": "Handling slow job searches with patience and support"
+},
+{
+"d": 231,
+"lv": "intermediate",
+"t": "New skills for a new market",
+"f": "Learning skills that are valued locally"
+},
+{
+"d": 232,
+"lv": "intermediate",
+"t": "Your strengths as a newcomer",
+"f": "How a different background brings fresh ideas"
+},
+{
+"d": 233,
+"lv": "intermediate",
+"t": "Starting a project or business",
+"f": "Researching official requirements before starting anything"
+},
+{
+"d": 234,
+"lv": "intermediate",
+"t": "Taxes in general",
+"f": "Why to use official sources or a qualified adviser for tax questions"
+},
+{
+"d": 235,
+"lv": "intermediate",
+"t": "Payslips and contracts in general",
+"f": "Reading carefully and asking for help when unsure"
+},
+{
+"d": 236,
+"lv": "intermediate",
+"t": "Commuting abroad",
+"f": "Finding the best way to travel to work or school"
+},
+{
+"d": 237,
+"lv": "intermediate",
+"t": "Workplace friendships",
+"f": "Turning colleagues into friends at your own pace"
+},
+{
+"d": 238,
+"lv": "intermediate",
+"t": "Balancing work and adapting",
+"f": "Making time for rest while learning a new job"
+},
+{
+"d": 239,
+"lv": "intermediate",
+"t": "Your work goals abroad",
+"f": "Setting goals for your career or studies in the new country"
+},
+{
+"d": 240,
+"lv": "intermediate",
+"t": "Review: work and study life",
+"f": "Light review of work, study and professional life abroad"
+},
+{
+"d": 241,
+"lv": "intermediate",
+"t": "Moving with children",
+"f": "Helping children adjust to a new home and school"
+},
+{
+"d": 242,
+"lv": "intermediate",
+"t": "Choosing a school in general",
+"f": "Questions families ask when looking at local schools"
+},
+{
+"d": 243,
+"lv": "intermediate",
+"t": "Kids and a new language",
+"f": "Supporting children as they learn a new language"
+},
+{
+"d": 244,
+"lv": "intermediate",
+"t": "Helping teens adjust",
+"f": "Understanding teenagers' feelings about moving"
+},
+{
+"d": 245,
+"lv": "intermediate",
+"t": "Family routines abroad",
+"f": "Building family rituals that create stability"
+},
+{
+"d": 246,
+"lv": "intermediate",
+"t": "Pets in a new country",
+"f": "Helping pets settle and finding local vets and parks"
+},
+{
+"d": 247,
+"lv": "intermediate",
+"t": "Partners and moving together",
+"f": "Supporting each other through big changes as a team"
+},
+{
+"d": 248,
+"lv": "intermediate",
+"t": "Elderly relatives far away",
+"f": "Staying close and involved from a distance"
+},
+{
+"d": 249,
+"lv": "intermediate",
+"t": "A family adventure list",
+"f": "Exploring your new country together as a family"
+},
+{
+"d": 250,
+"lv": "intermediate",
+"t": "Review: family life abroad",
+"f": "Light review of moving with children, pets and family"
+},
+{
+"d": 251,
+"lv": "advanced",
+"t": "Local traditions in depth",
+"f": "Learning the stories behind local celebrations"
+},
+{
+"d": 252,
+"lv": "advanced",
+"t": "Regional differences",
+"f": "How regions in your new country differ in food, accent and customs"
+},
+{
+"d": 253,
+"lv": "advanced",
+"t": "Local history basics",
+"f": "Understanding key moments that shaped your new home"
+},
+{
+"d": 254,
+"lv": "advanced",
+"t": "Famous local figures",
+"f": "Learning about well-known artists, writers and inventors from your new country"
+},
+{
+"d": 255,
+"lv": "advanced",
+"t": "Traditional crafts",
+"f": "Discovering local crafts and the people who keep them alive"
+},
+{
+"d": 256,
+"lv": "advanced",
+"t": "Mastering a local dish",
+"f": "Learning to cook a classic dish from your new home"
+},
+{
+"d": 257,
+"lv": "advanced",
+"t": "Markets like a local",
+"f": "Shopping seasonally and chatting with market vendors"
+},
+{
+"d": 258,
+"lv": "advanced",
+"t": "Food etiquette in depth",
+"f": "Subtle table customs that show respect"
+},
+{
+"d": 259,
+"lv": "advanced",
+"t": "Local sayings and proverbs",
+"f": "Understanding wisdom and humour in local expressions"
+},
+{
+"d": 260,
+"lv": "advanced",
+"t": "Understanding local humour",
+"f": "Recognising irony, wordplay and local comedy styles"
+},
+{
+"d": 261,
+"lv": "advanced",
+"t": "Reading local literature",
+"f": "Books and authors that open a window into the culture"
+},
+{
+"d": 262,
+"lv": "advanced",
+"t": "Local music and dance",
+"f": "Learning about traditional and modern music"
+},
+{
+"d": 263,
+"lv": "advanced",
+"t": "Cinema and TV culture",
+"f": "Films and shows that locals love and talk about"
+},
+{
+"d": 264,
+"lv": "advanced",
+"t": "Local sports traditions",
+"f": "Sports and games that are part of local identity"
+},
+{
+"d": 265,
+"lv": "advanced",
+"t": "Nature and outdoor culture",
+"f": "How locals enjoy parks, mountains, beaches or forests"
+},
+{
+"d": 266,
+"lv": "advanced",
+"t": "Holidays and travel habits",
+"f": "Where and how locals spend their holidays"
+},
+{
+"d": 267,
+"lv": "advanced",
+"t": "Unwritten rules",
+"f": "Social rules nobody explains but everyone follows"
+},
+{
+"d": 268,
+"lv": "advanced",
+"t": "Queuing and public behaviour",
+"f": "Lines, public transport manners and shared spaces"
+},
+{
+"d": 269,
+"lv": "advanced",
+"t": "Etiquette in shops and services",
+"f": "Greetings and politeness when shopping or ordering"
+},
+{
+"d": 270,
+"lv": "advanced",
+"t": "Invitations and RSVPs",
+"f": "How to respond to invitations in the local way"
+},
+{
+"d": 271,
+"lv": "advanced",
+"t": "Compliments and modesty",
+"f": "How people give and receive compliments locally"
+},
+{
+"d": 272,
+"lv": "advanced",
+"t": "Talking about money locally",
+"f": "Cultural norms around discussing prices and income"
+},
+{
+"d": 273,
+"lv": "advanced",
+"t": "Sensitive topics to avoid",
+"f": "Topics locals prefer not to discuss with new acquaintances"
+},
+{
+"d": 274,
+"lv": "advanced",
+"t": "Exploring your new country",
+"f": "Planning trips to discover different regions"
+},
+{
+"d": 275,
+"lv": "advanced",
+"t": "Local volunteering roles",
+"f": "Deeper community involvement through regular volunteering"
+},
+{
+"d": 276,
+"lv": "advanced",
+"t": "Learning a local skill",
+"f": "Taking a class in a skill your new home is known for"
+},
+{
+"d": 277,
+"lv": "advanced",
+"t": "Becoming a local guide",
+"f": "Showing visitors your favourite places with confidence"
+},
+{
+"d": 278,
+"lv": "advanced",
+"t": "Seeing your city through new eyes",
+"f": "Rediscovering places you now know well"
+},
+{
+"d": 279,
+"lv": "advanced",
+"t": "Your cultural highlights",
+"f": "Reflecting on the traditions you love most"
+},
+{
+"d": 280,
+"lv": "advanced",
+"t": "Review: deeper integration",
+"f": "Light review of traditions, unwritten rules and local culture"
+},
+{
+"d": 281,
+"lv": "advanced",
+"t": "Identity between two cultures",
+"f": "Exploring who you are when you belong to more than one place"
+},
+{
+"d": 282,
+"lv": "advanced",
+"t": "Third culture kids",
+"f": "Understanding people who grew up between cultures"
+},
+{
+"d": 283,
+"lv": "advanced",
+"t": "Belonging and home",
+"f": "What home means to you now"
+},
+{
+"d": 284,
+"lv": "advanced",
+"t": "Keeping traditions from home",
+"f": "Choosing which traditions to keep and share"
+},
+{
+"d": 285,
+"lv": "advanced",
+"t": "Blending cultures at home",
+"f": "Mixing food, music and habits from both worlds"
+},
+{
+"d": 286,
+"lv": "advanced",
+"t": "Feeling like an outsider",
+"f": "Handling moments when you do not feel you belong"
+},
+{
+"d": 287,
+"lv": "advanced",
+"t": "Feeling like a local",
+"f": "Recognising when you start to feel part of the place"
+},
+{
+"d": 288,
+"lv": "advanced",
+"t": "How you have changed",
+"f": "Noticing new habits and perspectives you have gained"
+},
+{
+"d": 289,
+"lv": "advanced",
+"t": "Visiting home",
+"f": "What to expect when you return for a visit"
+},
+{
+"d": 290,
+"lv": "advanced",
+"t": "Reverse culture shock",
+"f": "Why returning home can feel strange and how to cope"
+},
+{
+"d": 291,
+"lv": "advanced",
+"t": "Explaining your new life",
+"f": "Sharing your experiences with people back home"
+},
+{
+"d": 292,
+"lv": "advanced",
+"t": "Two sets of friends",
+"f": "Balancing friendships in two countries"
+},
+{
+"d": 293,
+"lv": "advanced",
+"t": "Celebrations in two cultures",
+"f": "Enjoying holidays from both your cultures"
+},
+{
+"d": 294,
+"lv": "advanced",
+"t": "Language and identity",
+"f": "How speaking two languages can shape how you feel and think"
+},
+{
+"d": 295,
+"lv": "advanced",
+"t": "Your multicultural strengths",
+"f": "Skills like adaptability and empathy gained abroad"
+},
+{
+"d": 296,
+"lv": "advanced",
+"t": "Cultural intelligence",
+"f": "Understanding and adapting to different cultural contexts"
+},
+{
+"d": 297,
+"lv": "advanced",
+"t": "Empathy for newcomers",
+"f": "Remembering your own first days and helping others"
+},
+{
+"d": 298,
+"lv": "advanced",
+"t": "Helping new arrivals",
+"f": "Sharing practical tips with people who just moved"
+},
+{
+"d": 299,
+"lv": "advanced",
+"t": "Being a cultural bridge",
+"f": "Helping people from different cultures understand each other"
+},
+{
+"d": 300,
+"lv": "advanced",
+"t": "Mixed families and cultures",
+"f": "Celebrating families with more than one cultural background"
+},
+{
+"d": 301,
+"lv": "advanced",
+"t": "Food as identity",
+"f": "How cooking connects you to both cultures"
+},
+{
+"d": 302,
+"lv": "advanced",
+"t": "Stories of famous travellers",
+"f": "Inspiration from well-known explorers and writers who lived abroad"
+},
+{
+"d": 303,
+"lv": "advanced",
+"t": "Writing your move story",
+"f": "Writing about your journey to understand it better"
+},
+{
+"d": 304,
+"lv": "advanced",
+"t": "Photography of your journey",
+"f": "Capturing your life abroad in pictures"
+},
+{
+"d": 305,
+"lv": "advanced",
+"t": "Your culture map",
+"f": "Mapping influences from all the places you have lived"
+},
+{
+"d": 306,
+"lv": "advanced",
+"t": "Gratitude for both homes",
+"f": "Appreciating what each place has given you"
+},
+{
+"d": 307,
+"lv": "advanced",
+"t": "Handling questions about origin",
+"f": "Answering friendly questions about where you are from"
+},
+{
+"d": 308,
+"lv": "advanced",
+"t": "Pride in your journey",
+"f": "Recognising the courage it took to move"
+},
+{
+"d": 309,
+"lv": "advanced",
+"t": "Your identity statement",
+"f": "Describing yourself in a way that feels true today"
+},
+{
+"d": 310,
+"lv": "advanced",
+"t": "Review: identity and belonging",
+"f": "Light review of identity, belonging and living between cultures"
+},
+{
+"d": 311,
+"lv": "advanced",
+"t": "Planning your long-term future",
+"f": "Thinking about the next years in your new country"
+},
+{
+"d": 312,
+"lv": "advanced",
+"t": "Staying informed about rules",
+"f": "Following official sources for changes that affect residents"
+},
+{
+"d": 313,
+"lv": "advanced",
+"t": "Renewals and deadlines",
+"f": "Keeping a calendar for documents and official renewals"
+},
+{
+"d": 314,
+"lv": "advanced",
+"t": "Long-term housing in general",
+"f": "Thinking about stability, location and lifestyle"
+},
+{
+"d": 315,
+"lv": "advanced",
+"t": "Building a career abroad",
+"f": "Growing professionally in your new country"
+},
+{
+"d": 316,
+"lv": "advanced",
+"t": "Lifelong language learning",
+"f": "Keeping your language skills growing"
+},
+{
+"d": 317,
+"lv": "advanced",
+"t": "Advanced language goals",
+"f": "Moving towards fluency, writing and professional language"
+},
+{
+"d": 318,
+"lv": "advanced",
+"t": "Local civic life",
+"f": "Learning how your community works and how residents take part"
+},
+{
+"d": 319,
+"lv": "advanced",
+"t": "Supporting local businesses",
+"f": "Shopping small and building community connections"
+},
+{
+"d": 320,
+"lv": "advanced",
+"t": "Environmental habits locally",
+"f": "Adopting local green habits and initiatives"
+},
+{
+"d": 321,
+"lv": "advanced",
+"t": "Becoming a community helper",
+"f": "Organising events or helping groups you belong to"
+},
+{
+"d": 322,
+"lv": "advanced",
+"t": "Mentoring newcomers",
+"f": "Sharing your experience as a mentor or buddy"
+},
+{
+"d": 323,
+"lv": "advanced",
+"t": "Creating a newcomers' guide",
+"f": "Writing tips for people who arrive after you"
+},
+{
+"d": 324,
+"lv": "advanced",
+"t": "Hosting a cultural evening",
+"f": "Sharing your culture through food and stories"
+},
+{
+"d": 325,
+"lv": "advanced",
+"t": "Long-term health routines",
+"f": "Keeping healthy habits in your new home"
+},
+{
+"d": 326,
+"lv": "advanced",
+"t": "Financial planning abroad in general",
+"f": "Why to speak with qualified professionals about long-term money matters"
+},
+{
+"d": 327,
+"lv": "advanced",
+"t": "Keeping ties with your home country",
+"f": "Staying connected in practical and emotional ways"
+},
+{
+"d": 328,
+"lv": "advanced",
+"t": "Moving again?",
+"f": "Thinking about whether you might move again someday"
+},
+{
+"d": 329,
+"lv": "advanced",
+"t": "Advice for future movers",
+"f": "What you would tell someone planning to move"
+},
+{
+"d": 330,
+"lv": "advanced",
+"t": "Living abroad and wellbeing",
+"f": "How your experience has shaped your wellbeing"
+},
+{
+"d": 331,
+"lv": "advanced",
+"t": "Travel from your new base",
+"f": "Exploring neighbouring countries and regions"
+},
+{
+"d": 332,
+"lv": "advanced",
+"t": "Learning a third language",
+"f": "Using your experience to learn even more languages"
+},
+{
+"d": 333,
+"lv": "advanced",
+"t": "Celebrating local milestones",
+"f": "Marking anniversaries of your arrival"
+},
+{
+"d": 334,
+"lv": "advanced",
+"t": "Your favourite local experiences",
+"f": "Listing experiences that made you love your new home"
+},
+{
+"d": 335,
+"lv": "advanced",
+"t": "Overcoming lingering challenges",
+"f": "Facing the things that are still hard"
+},
+{
+"d": 336,
+"lv": "advanced",
+"t": "Building routines that last",
+"f": "Long-term habits that support a happy life abroad"
+},
+{
+"d": 337,
+"lv": "advanced",
+"t": "Your support network",
+"f": "Reflecting on the people who support you"
+},
+{
+"d": 338,
+"lv": "advanced",
+"t": "Dreams for the next chapter",
+"f": "Imagining what is next for you"
+},
+{
+"d": 339,
+"lv": "advanced",
+"t": "Giving back to your new home",
+"f": "Ways to contribute to the community that welcomed you"
+},
+{
+"d": 340,
+"lv": "advanced",
+"t": "Review: building a long-term life",
+"f": "Light review of long-term plans, community and giving back"
+},
+{
+"d": 341,
+"lv": "advanced",
+"t": "Your journey in numbers",
+"f": "Counting new places, words and friends from your journey"
+},
+{
+"d": 342,
+"lv": "advanced",
+"t": "Lessons learned abroad",
+"f": "The biggest lessons from moving and adapting"
+},
+{
+"d": 343,
+"lv": "advanced",
+"t": "Funniest moments",
+"f": "Remembering the misunderstandings that made you laugh"
+},
+{
+"d": 344,
+"lv": "advanced",
+"t": "Proudest moments",
+"f": "Celebrating achievements in your new life"
+},
+{
+"d": 345,
+"lv": "advanced",
+"t": "Biggest surprises",
+"f": "Looking back at what you never expected"
+},
+{
+"d": 346,
+"lv": "advanced",
+"t": "Things you would do differently",
+"f": "Reflecting kindly on what you would change"
+},
+{
+"d": 347,
+"lv": "advanced",
+"t": "Skills you gained",
+"f": "Listing practical and personal skills you developed"
+},
+{
+"d": 348,
+"lv": "advanced",
+"t": "How your view of the world changed",
+"f": "Reflecting on new perspectives"
+},
+{
+"d": 349,
+"lv": "advanced",
+"t": "A letter to your past self",
+"f": "Writing to the person who was about to move"
+},
+{
+"d": 350,
+"lv": "advanced",
+"t": "A letter to a future newcomer",
+"f": "Writing encouragement for someone about to move"
+},
+{
+"d": 351,
+"lv": "advanced",
+"t": "Your favourite local words",
+"f": "Collecting words you love in the local language"
+},
+{
+"d": 352,
+"lv": "advanced",
+"t": "Your new traditions",
+"f": "Celebrating traditions you created abroad"
+},
+{
+"d": 353,
+"lv": "advanced",
+"t": "Your home today",
+"f": "Describing what home means to you now"
+},
+{
+"d": 354,
+"lv": "advanced",
+"t": "Sharing your story",
+"f": "Telling your journey to friends or a community"
+},
+{
+"d": 355,
+"lv": "advanced",
+"t": "Plans for the coming year",
+"f": "Choosing goals for your next year abroad"
+},
+{
+"d": 356,
+"lv": "advanced",
+"t": "Keeping curiosity alive",
+"f": "Staying curious even when everything feels familiar"
+},
+{
+"d": 357,
+"lv": "advanced",
+"t": "Staying open to change",
+"f": "Embracing new chapters with confidence"
+},
+{
+"d": 358,
+"lv": "advanced",
+"t": "Thank-you notes",
+"f": "Thanking people who helped you settle"
+},
+{
+"d": 359,
+"lv": "advanced",
+"t": "Celebrating your year",
+"f": "A small celebration of everything you lived"
+},
+{
+"d": 360,
+"lv": "advanced",
+"t": "Your next adventure",
+"f": "Choosing a new adventure to look forward to"
+},
+{
+"d": 361,
+"lv": "advanced",
+"t": "Your personal guide to adapting",
+"f": "Writing your own tips for adapting anywhere"
+},
+{
+"d": 362,
+"lv": "advanced",
+"t": "Living between worlds",
+"f": "Embracing the richness of more than one home"
+},
+{
+"d": 363,
+"lv": "advanced",
+"t": "Your favourite day of the journey",
+"f": "Remembering one perfect day abroad"
+},
+{
+"d": 364,
+"lv": "advanced",
+"t": "Looking ahead with confidence",
+"f": "Feeling ready for whatever comes next"
+},
+{
+"d": 365,
+"lv": "advanced",
+"t": "Review: your 365-day journey",
+"f": "A final review of the whole path and a celebration of your journey"
+}
+]
+}

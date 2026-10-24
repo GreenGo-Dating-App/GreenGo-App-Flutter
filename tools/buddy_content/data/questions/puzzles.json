@@ -1,0 +1,1305 @@
+{
+"topic": "puzzles",
+"questions": [
+{
+"id": "puzzles-001",
+"lv": "any",
+"i18n": {
+"en": "What kind of puzzle do you enjoy most, and why?",
+"de": "Welche Art von Rätsel magst du am liebsten, und warum?",
+"es": "¿Qué tipo de acertijo te gusta más y por qué?",
+"fr": "Quel genre de casse-tête préfères-tu, et pourquoi ?",
+"it": "Che tipo di rompicapo ti piace di più, e perché?",
+"pt": "De que tipo de quebra-cabeças gostas mais, e porquê?",
+"pt_BR": "Qual tipo de quebra-cabeça você mais gosta, e por quê?"
+}
+},
+{
+"id": "puzzles-002",
+"lv": "any",
+"i18n": {
+"en": "Do you remember the first puzzle you ever solved?",
+"de": "Erinnerst du dich an das erste Rätsel, das du je gelöst hast?",
+"es": "¿Recuerdas el primer acertijo que resolviste?",
+"fr": "Te souviens-tu de la première énigme que tu as résolue ?",
+"it": "Ti ricordi il primo rompicapo che hai risolto?",
+"pt": "Lembras-te do primeiro enigma que resolveste?",
+"pt_BR": "Você lembra do primeiro enigma que resolveu?"
+}
+},
+{
+"id": "puzzles-003",
+"lv": "any",
+"i18n": {
+"en": "Do you prefer word puzzles or number puzzles?",
+"de": "Magst du lieber Worträtsel oder Zahlenrätsel?",
+"es": "¿Prefieres los pasatiempos de palabras o los de números?",
+"fr": "Tu préfères les jeux de lettres ou les jeux de chiffres ?",
+"it": "Preferisci i giochi di parole o quelli con i numeri?",
+"pt": "Preferes enigmas de palavras ou de números?",
+"pt_BR": "Você prefere desafios de palavras ou de números?"
+}
+},
+{
+"id": "puzzles-004",
+"lv": "any",
+"i18n": {
+"en": "When do you usually have time for a puzzle during your day?",
+"de": "Wann hast du im Laufe des Tages normalerweise Zeit für ein Rätsel?",
+"es": "¿En qué momento del día sueles tener tiempo para un acertijo?",
+"fr": "À quel moment de la journée as-tu en général le temps pour une énigme ?",
+"it": "In quale momento della giornata di solito hai tempo per un rompicapo?",
+"pt": "Em que altura do dia costumas ter tempo para um enigma?",
+"pt_BR": "Em que momento do dia você costuma ter tempo para um desafio?"
+}
+},
+{
+"id": "puzzles-005",
+"lv": "any",
+"i18n": {
+"en": "Do you like solving puzzles alone or with other people?",
+"de": "Löst du Rätsel lieber allein oder mit anderen?",
+"es": "¿Te gusta resolver acertijos solo o con otras personas?",
+"fr": "Tu aimes résoudre des énigmes seul ou avec d'autres ?",
+"it": "Ti piace risolvere rompicapi da solo o con altre persone?",
+"pt": "Gostas de resolver enigmas sozinho ou com outras pessoas?",
+"pt_BR": "Você gosta de resolver desafios sozinho ou com outras pessoas?"
+}
+},
+{
+"id": "puzzles-006",
+"lv": "any",
+"i18n": {
+"en": "What is your favourite riddle of all time?",
+"de": "Was ist dein Lieblingsrätsel aller Zeiten?",
+"es": "¿Cuál es tu adivinanza favorita de todos los tiempos?",
+"fr": "Quelle est ta devinette préférée de tous les temps ?",
+"it": "Qual è il tuo indovinello preferito di sempre?",
+"pt": "Qual é a tua adivinha preferida de sempre?",
+"pt_BR": "Qual é a sua charada favorita de todos os tempos?"
+}
+},
+{
+"id": "puzzles-007",
+"lv": "any",
+"i18n": {
+"en": "How do you feel when you finally solve a hard puzzle?",
+"de": "Wie fühlst du dich, wenn du endlich ein schweres Rätsel gelöst hast?",
+"es": "¿Cómo te sientes cuando por fin resuelves un acertijo difícil?",
+"fr": "Que ressens-tu quand tu résous enfin une énigme difficile ?",
+"it": "Come ti senti quando finalmente risolvi un rompicapo difficile?",
+"pt": "Como te sentes quando finalmente resolves um enigma difícil?",
+"pt_BR": "Como você se sente quando finalmente resolve um desafio difícil?"
+}
+},
+{
+"id": "puzzles-008",
+"lv": "any",
+"i18n": {
+"en": "Which puzzles were popular in your family when you were growing up?",
+"de": "Welche Rätsel waren in deiner Familie beliebt, als du aufgewachsen bist?",
+"es": "¿Qué pasatiempos eran populares en tu familia cuando eras pequeño?",
+"fr": "Quels jeux d'esprit étaient populaires dans ta famille quand tu grandissais ?",
+"it": "Quali giochi enigmistici erano popolari nella tua famiglia quando eri piccolo?",
+"pt": "Que passatempos eram populares na tua família quando eras pequeno?",
+"pt_BR": "Quais passatempos eram populares na sua família quando você era criança?"
+}
+},
+{
+"id": "puzzles-009",
+"lv": "any",
+"i18n": {
+"en": "Do you enjoy crosswords? In which language do you solve them?",
+"de": "Löst du gern Kreuzworträtsel? In welcher Sprache?",
+"es": "¿Te gustan los crucigramas? ¿En qué idioma los haces?",
+"fr": "Aimes-tu les mots croisés ? Dans quelle langue les fais-tu ?",
+"it": "Ti piacciono le parole crociate? In che lingua le fai?",
+"pt": "Gostas de palavras cruzadas? Em que língua as fazes?",
+"pt_BR": "Você gosta de palavras cruzadas? Em qual língua você faz?"
+}
+},
+{
+"id": "puzzles-010",
+"lv": "any",
+"i18n": {
+"en": "Have you ever tried a Sudoku? How did it go?",
+"de": "Hast du schon mal ein Sudoku probiert? Wie lief es?",
+"es": "¿Has probado alguna vez un sudoku? ¿Qué tal te fue?",
+"fr": "As-tu déjà essayé un sudoku ? Comment ça s'est passé ?",
+"it": "Hai mai provato un sudoku? Com'è andata?",
+"pt": "Já experimentaste um sudoku? Como correu?",
+"pt_BR": "Você já tentou um sudoku? Como foi?"
+}
+},
+{
+"id": "puzzles-011",
+"lv": "any",
+"i18n": {
+"en": "What do you do when you get stuck on a puzzle?",
+"de": "Was machst du, wenn du bei einem Rätsel nicht weiterkommst?",
+"es": "¿Qué haces cuando te atascas con un acertijo?",
+"fr": "Que fais-tu quand tu bloques sur une énigme ?",
+"it": "Cosa fai quando ti blocchi su un rompicapo?",
+"pt": "O que fazes quando ficas preso num enigma?",
+"pt_BR": "O que você faz quando trava num desafio?"
+}
+},
+{
+"id": "puzzles-012",
+"lv": "any",
+"i18n": {
+"en": "Do you prefer quick puzzles or ones that take hours?",
+"de": "Magst du lieber schnelle Rätsel oder solche, die Stunden dauern?",
+"es": "¿Prefieres acertijos rápidos o los que llevan horas?",
+"fr": "Tu préfères les énigmes rapides ou celles qui prennent des heures ?",
+"it": "Preferisci rompicapi veloci o quelli che richiedono ore?",
+"pt": "Preferes enigmas rápidos ou os que levam horas?",
+"pt_BR": "Você prefere desafios rápidos ou os que levam horas?"
+}
+},
+{
+"id": "puzzles-013",
+"lv": "any",
+"i18n": {
+"en": "Have you ever tried a Rubik's Cube?",
+"de": "Hast du dich schon mal an einem Zauberwürfel versucht?",
+"es": "¿Has intentado alguna vez resolver un cubo de Rubik?",
+"fr": "As-tu déjà essayé le Rubik's Cube ?",
+"it": "Hai mai provato a risolvere il cubo di Rubik?",
+"pt": "Já tentaste resolver o cubo de Rubik?",
+"pt_BR": "Você já tentou montar o cubo mágico?"
+}
+},
+{
+"id": "puzzles-014",
+"lv": "any",
+"i18n": {
+"en": "Do you enjoy jigsaw puzzles? How many pieces is your record?",
+"de": "Machst du gern Puzzles? Wie viele Teile hatte dein größtes?",
+"es": "¿Te gustan los puzles? ¿Cuántas piezas tenía el más grande que has hecho?",
+"fr": "Aimes-tu les puzzles ? Combien de pièces avait ton plus grand ?",
+"it": "Ti piacciono i puzzle? Di quanti pezzi era il più grande che hai fatto?",
+"pt": "Gostas de puzzles? Quantas peças tinha o maior que já fizeste?",
+"pt_BR": "Você gosta de quebra-cabeças de montar? Quantas peças tinha o maior que já fez?"
+}
+},
+{
+"id": "puzzles-015",
+"lv": "any",
+"i18n": {
+"en": "Which puzzle apps or games do you play on your phone?",
+"de": "Welche Rätsel-Apps oder -Spiele spielst du auf dem Handy?",
+"es": "¿A qué apps o juegos de acertijos juegas en el móvil?",
+"fr": "À quelles applis ou jeux de réflexion joues-tu sur ton téléphone ?",
+"it": "A quali app o giochi di logica giochi sul telefono?",
+"pt": "Que apps ou jogos de enigmas jogas no telemóvel?",
+"pt_BR": "Quais apps ou jogos de desafios você joga no celular?"
+}
+},
+{
+"id": "puzzles-016",
+"lv": "any",
+"i18n": {
+"en": "Do you think puzzles help keep the mind sharp?",
+"de": "Glaubst du, dass Rätsel den Geist fit halten?",
+"es": "¿Crees que los acertijos ayudan a mantener la mente ágil?",
+"fr": "Penses-tu que les énigmes aident à garder l'esprit vif ?",
+"it": "Pensi che i rompicapi aiutino a mantenere la mente sveglia?",
+"pt": "Achas que os enigmas ajudam a manter a mente ágil?",
+"pt_BR": "Você acha que desafios ajudam a manter a mente afiada?"
+}
+},
+{
+"id": "puzzles-017",
+"lv": "any",
+"i18n": {
+"en": "What is a puzzle or riddle from your culture that you could share?",
+"de": "Welches Rätsel aus deiner Kultur könntest du teilen?",
+"es": "¿Qué adivinanza o acertijo de tu cultura podrías compartir?",
+"fr": "Quelle devinette ou énigme de ta culture pourrais-tu partager ?",
+"it": "Quale indovinello o rompicapo della tua cultura potresti condividere?",
+"pt": "Que adivinha ou enigma da tua cultura podias partilhar?",
+"pt_BR": "Qual charada ou enigma da sua cultura você poderia compartilhar?"
+}
+},
+{
+"id": "puzzles-018",
+"lv": "any",
+"i18n": {
+"en": "Do you like puzzles with a clear answer or open-ended ones?",
+"de": "Magst du Rätsel mit einer klaren Lösung oder offene?",
+"es": "¿Te gustan los acertijos con una respuesta clara o los abiertos?",
+"fr": "Aimes-tu les énigmes à réponse unique ou les plus ouvertes ?",
+"it": "Ti piacciono i rompicapi con una risposta precisa o quelli aperti?",
+"pt": "Gostas de enigmas com uma resposta clara ou dos mais abertos?",
+"pt_BR": "Você gosta de desafios com uma resposta clara ou dos mais abertos?"
+}
+},
+{
+"id": "puzzles-019",
+"lv": "any",
+"i18n": {
+"en": "Have you ever been to an escape room? What was it like?",
+"de": "Warst du schon mal in einem Escape Room? Wie war es?",
+"es": "¿Has estado alguna vez en una sala de escape? ¿Qué tal fue?",
+"fr": "As-tu déjà fait un escape game ? C'était comment ?",
+"it": "Sei mai stato in una escape room? Com'era?",
+"pt": "Já foste a uma sala de fuga? Como foi?",
+"pt_BR": "Você já foi a uma sala de escape? Como foi?"
+}
+},
+{
+"id": "puzzles-020",
+"lv": "any",
+"i18n": {
+"en": "Do you enjoy puzzles in video games?",
+"de": "Magst du Rätsel in Videospielen?",
+"es": "¿Te gustan los acertijos de los videojuegos?",
+"fr": "Aimes-tu les énigmes dans les jeux vidéo ?",
+"it": "Ti piacciono gli enigmi nei videogiochi?",
+"pt": "Gostas dos enigmas nos videojogos?",
+"pt_BR": "Você curte os enigmas dos videogames?"
+}
+},
+{
+"id": "puzzles-021",
+"lv": "any",
+"i18n": {
+"en": "Which do you like more: riddles, logic puzzles or visual puzzles?",
+"de": "Was magst du mehr: Rätselfragen, Logikrätsel oder Bilderrätsel?",
+"es": "¿Qué te gusta más: adivinanzas, acertijos lógicos o retos visuales?",
+"fr": "Que préfères-tu : les devinettes, les énigmes logiques ou les énigmes visuelles ?",
+"it": "Cosa preferisci: indovinelli, giochi di logica o rompicapi visivi?",
+"pt": "O que preferes: adivinhas, enigmas de lógica ou desafios visuais?",
+"pt_BR": "O que você prefere: charadas, desafios de lógica ou desafios visuais?"
+}
+},
+{
+"id": "puzzles-022",
+"lv": "any",
+"i18n": {
+"en": "Do you give up easily on a puzzle, or keep trying for a long time?",
+"de": "Gibst du bei einem Rätsel schnell auf oder versuchst du es lange weiter?",
+"es": "¿Te rindes fácilmente con un acertijo o sigues intentándolo mucho tiempo?",
+"fr": "Abandonnes-tu vite une énigme, ou continues-tu longtemps ?",
+"it": "Ti arrendi facilmente davanti a un rompicapo o continui a provare a lungo?",
+"pt": "Desistes facilmente de um enigma, ou continuas a tentar durante muito tempo?",
+"pt_BR": "Você desiste fácil de um desafio, ou continua tentando por muito tempo?"
+}
+},
+{
+"id": "puzzles-023",
+"lv": "any",
+"i18n": {
+"en": "Who is the best puzzle solver you know?",
+"de": "Wer ist der beste Rätsellöser, den du kennst?",
+"es": "¿Quién es la persona que mejor resuelve acertijos que conoces?",
+"fr": "Qui est le meilleur résolveur d'énigmes que tu connaisses ?",
+"it": "Chi è il miglior solutore di rompicapi che conosci?",
+"pt": "Quem é a pessoa que melhor resolve enigmas que conheces?",
+"pt_BR": "Quem é a pessoa que melhor resolve desafios que você conhece?"
+}
+},
+{
+"id": "puzzles-024",
+"lv": "any",
+"i18n": {
+"en": "Do you like board games that feel like puzzles?",
+"de": "Magst du Brettspiele, die sich wie Rätsel anfühlen?",
+"es": "¿Te gustan los juegos de mesa que parecen acertijos?",
+"fr": "Aimes-tu les jeux de société qui ressemblent à des casse-tête ?",
+"it": "Ti piacciono i giochi da tavolo che sembrano rompicapi?",
+"pt": "Gostas de jogos de tabuleiro que parecem quebra-cabeças?",
+"pt_BR": "Você curte jogos de tabuleiro que parecem quebra-cabeças?"
+}
+},
+{
+"id": "puzzles-025",
+"lv": "any",
+"i18n": {
+"en": "Would you rather solve a puzzle quickly or understand it deeply?",
+"de": "Würdest du ein Rätsel lieber schnell lösen oder es gründlich verstehen?",
+"es": "¿Prefieres resolver un acertijo rápido o entenderlo a fondo?",
+"fr": "Préfères-tu résoudre une énigme vite ou la comprendre en profondeur ?",
+"it": "Preferisci risolvere un rompicapo in fretta o capirlo a fondo?",
+"pt": "Preferes resolver um enigma depressa ou percebê-lo a fundo?",
+"pt_BR": "Você prefere resolver um desafio rápido ou entender a fundo?"
+}
+},
+{
+"id": "puzzles-026",
+"lv": "any",
+"i18n": {
+"en": "What is a puzzle you would love to give to a friend?",
+"de": "Welches Rätsel würdest du gern einem Freund stellen?",
+"es": "¿Qué acertijo te encantaría proponerle a un amigo?",
+"fr": "Quelle énigme aimerais-tu poser à un ami ?",
+"it": "Quale rompicapo ti piacerebbe proporre a un amico?",
+"pt": "Que enigma gostavas de propor a um amigo?",
+"pt_BR": "Qual desafio você adoraria propor a um amigo?"
+}
+},
+{
+"id": "puzzles-027",
+"lv": "any",
+"i18n": {
+"en": "Do you enjoy optical illusions? Which one surprised you most?",
+"de": "Magst du optische Täuschungen? Welche hat dich am meisten überrascht?",
+"es": "¿Te gustan las ilusiones ópticas? ¿Cuál te sorprendió más?",
+"fr": "Aimes-tu les illusions d'optique ? Laquelle t'a le plus surpris ?",
+"it": "Ti piacciono le illusioni ottiche? Quale ti ha sorpreso di più?",
+"pt": "Gostas de ilusões de ótica? Qual te surpreendeu mais?",
+"pt_BR": "Você curte ilusões de ótica? Qual te surpreendeu mais?"
+}
+},
+{
+"id": "puzzles-028",
+"lv": "any",
+"i18n": {
+"en": "Where do you like to sit when you solve a puzzle?",
+"de": "Wo sitzt du am liebsten, wenn du ein Rätsel löst?",
+"es": "¿Dónde te gusta sentarte para resolver un acertijo?",
+"fr": "Où aimes-tu t'installer pour résoudre une énigme ?",
+"it": "Dove ti piace sederti quando risolvi un rompicapo?",
+"pt": "Onde gostas de te sentar quando resolves um enigma?",
+"pt_BR": "Onde você gosta de sentar quando resolve um desafio?"
+}
+},
+{
+"id": "puzzles-029",
+"lv": "any",
+"i18n": {
+"en": "Do you solve puzzles on paper or on a screen?",
+"de": "Löst du Rätsel lieber auf Papier oder am Bildschirm?",
+"es": "¿Resuelves los acertijos en papel o en pantalla?",
+"fr": "Résous-tu les énigmes sur papier ou sur écran ?",
+"it": "Risolvi i rompicapi su carta o sullo schermo?",
+"pt": "Resolves enigmas em papel ou num ecrã?",
+"pt_BR": "Você resolve desafios no papel ou na tela?"
+}
+},
+{
+"id": "puzzles-030",
+"lv": "any",
+"i18n": {
+"en": "Have you ever solved a puzzle in your sleep or in the shower?",
+"de": "Ist dir die Lösung eines Rätsels schon mal im Schlaf oder unter der Dusche eingefallen?",
+"es": "¿Alguna vez se te ocurrió la solución de un acertijo dormido o en la ducha?",
+"fr": "As-tu déjà trouvé la solution d'une énigme en dormant ou sous la douche ?",
+"it": "Ti è mai venuta la soluzione di un rompicapo nel sonno o sotto la doccia?",
+"pt": "Já te surgiu a solução de um enigma a dormir ou no duche?",
+"pt_BR": "Você já teve a solução de um desafio dormindo ou no banho?"
+}
+},
+{
+"id": "puzzles-031",
+"lv": "any",
+"i18n": {
+"en": "Which puzzle would you take on a long train journey?",
+"de": "Welches Rätsel würdest du auf eine lange Zugfahrt mitnehmen?",
+"es": "¿Qué pasatiempo te llevarías a un largo viaje en tren?",
+"fr": "Quel casse-tête emporterais-tu pour un long trajet en train ?",
+"it": "Quale gioco enigmistico porteresti in un lungo viaggio in treno?",
+"pt": "Que passatempo levarias numa longa viagem de comboio?",
+"pt_BR": "Qual passatempo você levaria numa longa viagem de trem?"
+}
+},
+{
+"id": "puzzles-032",
+"lv": "any",
+"i18n": {
+"en": "Do you like making up your own riddles?",
+"de": "Denkst du dir gern eigene Rätsel aus?",
+"es": "¿Te gusta inventar tus propias adivinanzas?",
+"fr": "Aimes-tu inventer tes propres devinettes ?",
+"it": "Ti piace inventare i tuoi indovinelli?",
+"pt": "Gostas de inventar as tuas próprias adivinhas?",
+"pt_BR": "Você gosta de inventar suas próprias charadas?"
+}
+},
+{
+"id": "puzzles-033",
+"lv": "any",
+"i18n": {
+"en": "Have you ever solved a puzzle with someone from another country?",
+"de": "Hast du schon mal ein Rätsel mit jemandem aus einem anderen Land gelöst?",
+"es": "¿Has resuelto alguna vez un acertijo con alguien de otro país?",
+"fr": "As-tu déjà résolu une énigme avec quelqu'un d'un autre pays ?",
+"it": "Hai mai risolto un rompicapo con qualcuno di un altro paese?",
+"pt": "Já resolveste um enigma com alguém de outro país?",
+"pt_BR": "Você já resolveu um desafio com alguém de outro país?"
+}
+},
+{
+"id": "puzzles-034",
+"lv": "any",
+"i18n": {
+"en": "What makes a puzzle frustrating rather than fun for you?",
+"de": "Was macht ein Rätsel für dich eher frustrierend als lustig?",
+"es": "¿Qué hace que un acertijo te frustre en vez de divertirte?",
+"fr": "Qu'est-ce qui rend une énigme frustrante plutôt qu'amusante pour toi ?",
+"it": "Cosa rende un rompicapo frustrante invece che divertente per te?",
+"pt": "O que torna um enigma frustrante em vez de divertido para ti?",
+"pt_BR": "O que deixa um desafio frustrante em vez de divertido para você?"
+}
+},
+{
+"id": "puzzles-035",
+"lv": "any",
+"i18n": {
+"en": "Do you enjoy treasure hunts or scavenger hunts?",
+"de": "Magst du Schatzsuchen oder Schnitzeljagden?",
+"es": "¿Te gustan las búsquedas del tesoro o las yincanas?",
+"fr": "Aimes-tu les chasses au trésor ?",
+"it": "Ti piacciono le cacce al tesoro?",
+"pt": "Gostas de caças ao tesouro?",
+"pt_BR": "Você curte caças ao tesouro?"
+}
+},
+{
+"id": "puzzles-036",
+"lv": "any",
+"i18n": {
+"en": "Which puzzle would you choose to teach a child?",
+"de": "Welches Rätsel würdest du einem Kind beibringen?",
+"es": "¿Qué acertijo elegirías para enseñárselo a un niño?",
+"fr": "Quelle énigme choisirais-tu pour l'apprendre à un enfant ?",
+"it": "Quale rompicapo sceglieresti per insegnarlo a un bambino?",
+"pt": "Que enigma escolherias para ensinar a uma criança?",
+"pt_BR": "Qual desafio você escolheria para ensinar a uma criança?"
+}
+},
+{
+"id": "puzzles-037",
+"lv": "any",
+"i18n": {
+"en": "Do you like timing yourself when you solve puzzles?",
+"de": "Stoppst du gern die Zeit, wenn du Rätsel löst?",
+"es": "¿Te gusta cronometrarte cuando resuelves acertijos?",
+"fr": "Aimes-tu te chronométrer quand tu résous des énigmes ?",
+"it": "Ti piace cronometrarti quando risolvi i rompicapi?",
+"pt": "Gostas de te cronometrar quando resolves enigmas?",
+"pt_BR": "Você gosta de cronometrar o tempo quando resolve desafios?"
+}
+},
+{
+"id": "puzzles-038",
+"lv": "any",
+"i18n": {
+"en": "What puzzle have you always wanted to try but never have?",
+"de": "Welches Rätsel wolltest du schon immer probieren, hast es aber nie getan?",
+"es": "¿Qué acertijo siempre has querido probar y nunca lo has hecho?",
+"fr": "Quel casse-tête as-tu toujours voulu essayer sans jamais le faire ?",
+"it": "Quale rompicapo hai sempre voluto provare ma non hai mai fatto?",
+"pt": "Que quebra-cabeças sempre quiseste experimentar e nunca experimentaste?",
+"pt_BR": "Qual quebra-cabeça você sempre quis tentar e nunca tentou?"
+}
+},
+{
+"id": "puzzles-039",
+"lv": "any",
+"i18n": {
+"en": "Do puzzles relax you or make you feel energised?",
+"de": "Entspannen dich Rätsel oder geben sie dir Energie?",
+"es": "¿Los acertijos te relajan o te llenan de energía?",
+"fr": "Les énigmes te détendent-elles ou te donnent-elles de l'énergie ?",
+"it": "I rompicapi ti rilassano o ti danno energia?",
+"pt": "Os enigmas relaxam-te ou dão-te energia?",
+"pt_BR": "Os desafios relaxam você ou te deixam com energia?"
+}
+},
+{
+"id": "puzzles-040",
+"lv": "any",
+"i18n": {
+"en": "Would you enjoy a puzzle night with friends? What would you play?",
+"de": "Hättest du Spaß an einem Rätselabend mit Freunden? Was würdet ihr spielen?",
+"es": "¿Te gustaría una noche de acertijos con amigos? ¿A qué jugaríais?",
+"fr": "Aimerais-tu une soirée énigmes entre amis ? À quoi jouerais-tu ?",
+"it": "Ti piacerebbe una serata di rompicapi con gli amici? A cosa giochereste?",
+"pt": "Gostavas de uma noite de enigmas com amigos? A que jogariam?",
+"pt_BR": "Você curtiria uma noite de desafios com amigos? O que vocês jogariam?"
+}
+},
+{
+"id": "puzzles-041",
+"lv": "beginner",
+"i18n": {
+"en": "Can you think of a word that is a palindrome?",
+"de": "Fällt dir ein Wort ein, das ein Palindrom ist?",
+"es": "¿Se te ocurre alguna palabra que sea un palíndromo?",
+"fr": "Connais-tu un mot qui soit un palindrome ?",
+"it": "Ti viene in mente una parola palindroma?",
+"pt": "Consegues pensar numa palavra que seja um palíndromo?",
+"pt_BR": "Você consegue pensar numa palavra que seja um palíndromo?"
+}
+},
+{
+"id": "puzzles-042",
+"lv": "beginner",
+"i18n": {
+"en": "What anagram of your name or a favourite word can you find?",
+"de": "Welches Anagramm deines Namens oder eines Lieblingsworts findest du?",
+"es": "¿Qué anagrama puedes formar con tu nombre o tu palabra favorita?",
+"fr": "Quel anagramme de ton prénom ou d'un mot préféré peux-tu trouver ?",
+"it": "Quale anagramma del tuo nome o di una parola preferita riesci a trovare?",
+"pt": "Que anagrama do teu nome ou de uma palavra preferida consegues encontrar?",
+"pt_BR": "Qual anagrama do seu nome ou de uma palavra favorita você consegue achar?"
+}
+},
+{
+"id": "puzzles-043",
+"lv": "beginner",
+"i18n": {
+"en": "Do you prefer word searches or crosswords?",
+"de": "Magst du lieber Suchsel oder Kreuzworträtsel?",
+"es": "¿Prefieres las sopas de letras o los crucigramas?",
+"fr": "Tu préfères les mots mêlés ou les mots croisés ?",
+"it": "Preferisci i crucipuzzle o le parole crociate?",
+"pt": "Preferes sopas de letras ou palavras cruzadas?",
+"pt_BR": "Você prefere caça-palavras ou palavras cruzadas?"
+}
+},
+{
+"id": "puzzles-044",
+"lv": "beginner",
+"i18n": {
+"en": "Which riddle did you hear as a child that still makes you smile?",
+"de": "Welches Rätsel aus deiner Kindheit bringt dich heute noch zum Lächeln?",
+"es": "¿Qué adivinanza de tu infancia todavía te hace sonreír?",
+"fr": "Quelle devinette de ton enfance te fait encore sourire ?",
+"it": "Quale indovinello della tua infanzia ti fa ancora sorridere?",
+"pt": "Que adivinha da tua infância ainda te faz sorrir?",
+"pt_BR": "Qual charada da sua infância ainda faz você sorrir?"
+}
+},
+{
+"id": "puzzles-045",
+"lv": "beginner",
+"i18n": {
+"en": "How do you start a crossword: easy clues first or in order?",
+"de": "Wie beginnst du ein Kreuzworträtsel: zuerst die leichten Fragen oder der Reihe nach?",
+"es": "¿Cómo empiezas un crucigrama: primero las pistas fáciles o en orden?",
+"fr": "Comment commences-tu des mots croisés : par les définitions faciles ou dans l'ordre ?",
+"it": "Come inizi un cruciverba: prima le definizioni facili o in ordine?",
+"pt": "Como começas umas palavras cruzadas: pelas pistas fáceis ou por ordem?",
+"pt_BR": "Como você começa uma palavra cruzada: pelas dicas fáceis ou na ordem?"
+}
+},
+{
+"id": "puzzles-046",
+"lv": "beginner",
+"i18n": {
+"en": "Have you ever tried a rebus, where pictures stand for words?",
+"de": "Hast du schon mal ein Bilderrätsel gelöst, bei dem Bilder für Wörter stehen?",
+"es": "¿Has probado alguna vez un jeroglífico, donde los dibujos representan palabras?",
+"fr": "As-tu déjà essayé un rébus, où des images remplacent des mots ?",
+"it": "Hai mai provato un rebus, dove le immagini stanno per parole?",
+"pt": "Já experimentaste um rébus, em que imagens representam palavras?",
+"pt_BR": "Você já tentou um rébus, onde desenhos representam palavras?"
+}
+},
+{
+"id": "puzzles-047",
+"lv": "beginner",
+"i18n": {
+"en": "Do you enjoy spot-the-difference pictures?",
+"de": "Magst du Such-die-Unterschiede-Bilder?",
+"es": "¿Te gustan los juegos de encontrar las diferencias?",
+"fr": "Aimes-tu les jeux des sept erreurs ?",
+"it": "Ti piacciono i giochi «trova le differenze»?",
+"pt": "Gostas de jogos de descobrir as diferenças?",
+"pt_BR": "Você curte jogos dos sete erros?"
+}
+},
+{
+"id": "puzzles-048",
+"lv": "beginner",
+"i18n": {
+"en": "Which is easier for you: finding a pattern in numbers or in shapes?",
+"de": "Was fällt dir leichter: Muster in Zahlen oder in Formen zu finden?",
+"es": "¿Qué te resulta más fácil: encontrar un patrón en números o en formas?",
+"fr": "Qu'est-ce qui est plus facile pour toi : trouver une suite logique dans des nombres ou des formes ?",
+"it": "Cosa ti riesce più facile: trovare uno schema nei numeri o nelle forme?",
+"pt": "O que é mais fácil para ti: encontrar um padrão em números ou em formas?",
+"pt_BR": "O que é mais fácil para você: achar um padrão em números ou em formas?"
+}
+},
+{
+"id": "puzzles-049",
+"lv": "beginner",
+"i18n": {
+"en": "Have you ever found your way through a maze or labyrinth?",
+"de": "Hast du schon mal den Weg durch ein Labyrinth gefunden?",
+"es": "¿Has encontrado alguna vez la salida de un laberinto?",
+"fr": "As-tu déjà trouvé ton chemin dans un labyrinthe ?",
+"it": "Hai mai trovato la strada in un labirinto?",
+"pt": "Já encontraste a saída de um labirinto?",
+"pt_BR": "Você já encontrou a saída de um labirinto?"
+}
+},
+{
+"id": "puzzles-050",
+"lv": "beginner",
+"i18n": {
+"en": "Do you like the challenge of a word ladder, changing one letter at a time?",
+"de": "Magst du Wortleitern, bei denen man immer nur einen Buchstaben ändert?",
+"es": "¿Te gusta el reto de las escaleras de palabras, cambiando una letra cada vez?",
+"fr": "Aimes-tu le défi des échelles de mots, en changeant une lettre à la fois ?",
+"it": "Ti piace la sfida delle scale di parole, cambiando una lettera alla volta?",
+"pt": "Gostas do desafio das escadas de palavras, mudando uma letra de cada vez?",
+"pt_BR": "Você curte o desafio das escadas de palavras, trocando uma letra por vez?"
+}
+},
+{
+"id": "puzzles-051",
+"lv": "beginner",
+"i18n": {
+"en": "Have you ever tried a logic grid puzzle with ticks and crosses?",
+"de": "Hast du schon mal ein Logikrätsel mit Kreuzchen in einer Tabelle gelöst?",
+"es": "¿Has probado alguna vez un acertijo lógico con una tabla de marcas?",
+"fr": "As-tu déjà essayé une grille logique avec des croix et des coches ?",
+"it": "Hai mai provato un gioco di logica con una griglia di crocette?",
+"pt": "Já experimentaste um problema de lógica com uma grelha de cruzes?",
+"pt_BR": "Você já tentou um desafio de lógica com uma tabela de marcações?"
+}
+},
+{
+"id": "puzzles-052",
+"lv": "beginner",
+"i18n": {
+"en": "Can you solve the wolf, goat and cabbage river puzzle?",
+"de": "Kannst du das Rätsel mit Wolf, Ziege und Kohl am Fluss lösen?",
+"es": "¿Sabes resolver el acertijo del lobo, la cabra y la col en el río?",
+"fr": "Sais-tu résoudre l'énigme du loup, de la chèvre et du chou ?",
+"it": "Sai risolvere l'indovinello del lupo, della capra e del cavolo?",
+"pt": "Consegues resolver o enigma do lobo, da cabra e da couve?",
+"pt_BR": "Você consegue resolver o enigma do lobo, da cabra e do repolho?"
+}
+},
+{
+"id": "puzzles-053",
+"lv": "beginner",
+"i18n": {
+"en": "What number sequence puzzle have you enjoyed recently?",
+"de": "Welches Zahlenfolgen-Rätsel hat dir kürzlich Spaß gemacht?",
+"es": "¿Qué acertijo de series numéricas has disfrutado últimamente?",
+"fr": "Quelle suite de nombres t'a amusé récemment ?",
+"it": "Quale gioco di sequenze numeriche ti è piaciuto di recente?",
+"pt": "Que enigma de sequências numéricas te divertiu recentemente?",
+"pt_BR": "Qual desafio de sequência numérica você curtiu recentemente?"
+}
+},
+{
+"id": "puzzles-054",
+"lv": "beginner",
+"i18n": {
+"en": "Do you like tangrams or other shape puzzles?",
+"de": "Magst du Tangram oder andere Formenrätsel?",
+"es": "¿Te gusta el tangram u otros rompecabezas de formas?",
+"fr": "Aimes-tu le tangram ou d'autres casse-tête de formes ?",
+"it": "Ti piace il tangram o altri rompicapi con le forme?",
+"pt": "Gostas do tangram ou de outros quebra-cabeças de formas?",
+"pt_BR": "Você gosta do tangram ou de outros quebra-cabeças de formas?"
+}
+},
+{
+"id": "puzzles-055",
+"lv": "beginner",
+"i18n": {
+"en": "Have you ever tried a matchstick puzzle?",
+"de": "Hast du schon mal ein Streichholzrätsel probiert?",
+"es": "¿Has probado alguna vez un acertijo con cerillas?",
+"fr": "As-tu déjà essayé une énigme d'allumettes ?",
+"it": "Hai mai provato un rompicapo con i fiammiferi?",
+"pt": "Já experimentaste um enigma com fósforos?",
+"pt_BR": "Você já tentou um desafio com palitos de fósforo?"
+}
+},
+{
+"id": "puzzles-056",
+"lv": "beginner",
+"i18n": {
+"en": "Do you enjoy trick questions, or do they annoy you?",
+"de": "Magst du Fangfragen, oder ärgern sie dich?",
+"es": "¿Te gustan las preguntas trampa o te molestan?",
+"fr": "Aimes-tu les questions pièges, ou est-ce qu'elles t'agacent ?",
+"it": "Ti piacciono le domande trabocchetto, o ti danno fastidio?",
+"pt": "Gostas de perguntas com rasteira, ou irritam-te?",
+"pt_BR": "Você curte pegadinhas, ou elas te irritam?"
+}
+},
+{
+"id": "puzzles-057",
+"lv": "beginner",
+"i18n": {
+"en": "What memory trick do you use to remember things?",
+"de": "Welchen Gedächtnistrick benutzt du, um dir Dinge zu merken?",
+"es": "¿Qué truco de memoria usas para recordar cosas?",
+"fr": "Quelle astuce de mémoire utilises-tu pour retenir les choses ?",
+"it": "Quale trucco di memoria usi per ricordare le cose?",
+"pt": "Que truque de memória usas para te lembrares das coisas?",
+"pt_BR": "Qual truque de memória você usa para lembrar das coisas?"
+}
+},
+{
+"id": "puzzles-058",
+"lv": "beginner",
+"i18n": {
+"en": "Do you prefer easy puzzles to relax or hard ones to challenge yourself?",
+"de": "Magst du lieber leichte Rätsel zum Entspannen oder schwere als Herausforderung?",
+"es": "¿Prefieres acertijos fáciles para relajarte o difíciles para retarte?",
+"fr": "Tu préfères les énigmes faciles pour te détendre ou les difficiles pour te défier ?",
+"it": "Preferisci rompicapi facili per rilassarti o difficili per metterti alla prova?",
+"pt": "Preferes enigmas fáceis para relaxar ou difíceis para te desafiares?",
+"pt_BR": "Você prefere desafios fáceis para relaxar ou difíceis para se testar?"
+}
+},
+{
+"id": "puzzles-059",
+"lv": "beginner",
+"i18n": {
+"en": "Have you ever tried a 4x4 mini Sudoku?",
+"de": "Hast du schon mal ein kleines 4x4-Sudoku probiert?",
+"es": "¿Has probado alguna vez un minisudoku de 4x4?",
+"fr": "As-tu déjà essayé un mini sudoku de 4x4 ?",
+"it": "Hai mai provato un mini sudoku 4x4?",
+"pt": "Já experimentaste um minissudoku de 4x4?",
+"pt_BR": "Você já tentou um minissudoku 4x4?"
+}
+},
+{
+"id": "puzzles-060",
+"lv": "beginner",
+"i18n": {
+"en": "What hint would you give a friend who is stuck on a riddle?",
+"de": "Welchen Tipp würdest du einem Freund geben, der bei einem Rätsel feststeckt?",
+"es": "¿Qué pista le darías a un amigo atascado con una adivinanza?",
+"fr": "Quel indice donnerais-tu à un ami bloqué sur une devinette ?",
+"it": "Quale suggerimento daresti a un amico bloccato su un indovinello?",
+"pt": "Que pista darias a um amigo preso numa adivinha?",
+"pt_BR": "Qual dica você daria a um amigo travado numa charada?"
+}
+},
+{
+"id": "puzzles-061",
+"lv": "intermediate",
+"i18n": {
+"en": "Have you ever tried a cryptic crossword clue?",
+"de": "Hast du dich schon mal an einem kryptischen Kreuzworträtsel versucht?",
+"es": "¿Has probado alguna vez una pista de crucigrama críptico?",
+"fr": "As-tu déjà essayé une définition de mots croisés cryptiques ?",
+"it": "Hai mai provato una definizione di cruciverba criptico?",
+"pt": "Já experimentaste uma pista de palavras cruzadas crípticas?",
+"pt_BR": "Você já tentou uma dica de palavra cruzada críptica?"
+}
+},
+{
+"id": "puzzles-062",
+"lv": "intermediate",
+"i18n": {
+"en": "Would you enjoy cracking a secret code like a Caesar cipher?",
+"de": "Würde es dir Spaß machen, einen Geheimcode wie die Caesar-Verschlüsselung zu knacken?",
+"es": "¿Te divertiría descifrar un código secreto como el cifrado César?",
+"fr": "Aimerais-tu déchiffrer un code secret comme le chiffre de César ?",
+"it": "Ti divertirebbe decifrare un codice segreto come il cifrario di Cesare?",
+"pt": "Gostavas de decifrar um código secreto como a cifra de César?",
+"pt_BR": "Você curtiria decifrar um código secreto como a cifra de César?"
+}
+},
+{
+"id": "puzzles-063",
+"lv": "intermediate",
+"i18n": {
+"en": "Which puzzle maker or puzzle book has impressed you?",
+"de": "Welcher Rätselmacher oder welches Rätselbuch hat dich beeindruckt?",
+"es": "¿Qué creador o libro de acertijos te ha impresionado?",
+"fr": "Quel créateur ou livre d'énigmes t'a impressionné ?",
+"it": "Quale autore o libro di enigmistica ti ha colpito?",
+"pt": "Que autor ou livro de enigmas te impressionou?",
+"pt_BR": "Qual criador ou livro de desafios te impressionou?"
+}
+},
+{
+"id": "puzzles-064",
+"lv": "intermediate",
+"i18n": {
+"en": "Do you know any Sudoku techniques beyond the basics?",
+"de": "Kennst du Sudoku-Techniken, die über die Grundlagen hinausgehen?",
+"es": "¿Conoces técnicas de sudoku más allá de lo básico?",
+"fr": "Connais-tu des techniques de sudoku au-delà des bases ?",
+"it": "Conosci tecniche di sudoku oltre a quelle di base?",
+"pt": "Conheces técnicas de sudoku para além das básicas?",
+"pt_BR": "Você conhece técnicas de sudoku além das básicas?"
+}
+},
+{
+"id": "puzzles-065",
+"lv": "intermediate",
+"i18n": {
+"en": "Have you tried puzzles like Kakuro, KenKen or nonograms?",
+"de": "Hast du Rätsel wie Kakuro, KenKen oder Nonogramme ausprobiert?",
+"es": "¿Has probado pasatiempos como el kakuro, el KenKen o los nonogramas?",
+"fr": "As-tu essayé des jeux comme le kakuro, le KenKen ou les logimages ?",
+"it": "Hai provato giochi come il kakuro, il KenKen o i nonogrammi?",
+"pt": "Já experimentaste passatempos como kakuro, KenKen ou nonogramas?",
+"pt_BR": "Você já tentou passatempos como kakuro, KenKen ou nonogramas?"
+}
+},
+{
+"id": "puzzles-066",
+"lv": "intermediate",
+"i18n": {
+"en": "What do you think of the Monty Hall problem: would you switch doors?",
+"de": "Was hältst du vom Ziegenproblem: Würdest du die Tür wechseln?",
+"es": "¿Qué opinas del problema de Monty Hall: cambiarías de puerta?",
+"fr": "Que penses-tu du problème de Monty Hall : changerais-tu de porte ?",
+"it": "Cosa pensi del problema di Monty Hall: cambieresti porta?",
+"pt": "O que achas do problema de Monty Hall: trocarias de porta?",
+"pt_BR": "O que você acha do problema de Monty Hall: trocaria de porta?"
+}
+},
+{
+"id": "puzzles-067",
+"lv": "intermediate",
+"i18n": {
+"en": "Have you ever solved a puzzle by working backwards from the answer?",
+"de": "Hast du schon mal ein Rätsel gelöst, indem du vom Ziel aus rückwärts gedacht hast?",
+"es": "¿Has resuelto alguna vez un acertijo trabajando hacia atrás desde el final?",
+"fr": "As-tu déjà résolu une énigme en partant de la fin ?",
+"it": "Hai mai risolto un rompicapo partendo dalla fine e andando a ritroso?",
+"pt": "Já resolveste um enigma a partir do fim, de trás para a frente?",
+"pt_BR": "Você já resolveu um desafio pensando de trás para a frente?"
+}
+},
+{
+"id": "puzzles-068",
+"lv": "intermediate",
+"i18n": {
+"en": "Do you enjoy chess puzzles, like finding mate in two?",
+"de": "Magst du Schachaufgaben, etwa Matt in zwei Zügen?",
+"es": "¿Te gustan los problemas de ajedrez, como dar mate en dos?",
+"fr": "Aimes-tu les problèmes d'échecs, comme trouver un mat en deux coups ?",
+"it": "Ti piacciono i problemi di scacchi, come trovare il matto in due?",
+"pt": "Gostas de problemas de xadrez, como encontrar o mate em dois?",
+"pt_BR": "Você curte problemas de xadrez, como achar o mate em dois lances?"
+}
+},
+{
+"id": "puzzles-069",
+"lv": "intermediate",
+"i18n": {
+"en": "Which puzzle-solving strategy works best for you?",
+"de": "Welche Lösungsstrategie funktioniert bei dir am besten?",
+"es": "¿Qué estrategia para resolver acertijos te funciona mejor?",
+"fr": "Quelle stratégie de résolution marche le mieux pour toi ?",
+"it": "Quale strategia per risolvere i rompicapi funziona meglio per te?",
+"pt": "Que estratégia para resolver enigmas resulta melhor contigo?",
+"pt_BR": "Qual estratégia para resolver desafios funciona melhor para você?"
+}
+},
+{
+"id": "puzzles-070",
+"lv": "intermediate",
+"i18n": {
+"en": "Have you ever taken part in a puzzle hunt or quiz competition?",
+"de": "Hast du schon mal an einer Rätseljagd oder einem Quizwettbewerb teilgenommen?",
+"es": "¿Has participado alguna vez en una búsqueda de acertijos o un concurso de preguntas?",
+"fr": "As-tu déjà participé à une chasse aux énigmes ou à un concours de quiz ?",
+"it": "Hai mai partecipato a una caccia agli enigmi o a una gara di quiz?",
+"pt": "Já participaste numa caça aos enigmas ou num concurso de perguntas?",
+"pt_BR": "Você já participou de uma caça aos enigmas ou de uma competição de perguntas?"
+}
+},
+{
+"id": "puzzles-071",
+"lv": "intermediate",
+"i18n": {
+"en": "Do you like 3D puzzles, like imagining a cube from a flat net?",
+"de": "Magst du räumliche Rätsel, etwa einen Würfel aus einem Netz vorzustellen?",
+"es": "¿Te gustan los retos en 3D, como imaginar un cubo a partir de su desarrollo plano?",
+"fr": "Aimes-tu les énigmes en 3D, comme imaginer un cube à partir de son patron ?",
+"it": "Ti piacciono i rompicapi in 3D, come immaginare un cubo dal suo sviluppo piano?",
+"pt": "Gostas de desafios em 3D, como imaginar um cubo a partir da sua planificação?",
+"pt_BR": "Você curte desafios em 3D, como imaginar um cubo a partir da sua planificação?"
+}
+},
+{
+"id": "puzzles-072",
+"lv": "intermediate",
+"i18n": {
+"en": "Which riddles from books or films do you remember?",
+"de": "An welche Rätsel aus Büchern oder Filmen erinnerst du dich?",
+"es": "¿Qué adivinanzas de libros o películas recuerdas?",
+"fr": "De quelles énigmes de livres ou de films te souviens-tu ?",
+"it": "Quali indovinelli di libri o film ricordi?",
+"pt": "De que adivinhas de livros ou filmes te lembras?",
+"pt_BR": "De quais charadas de livros ou filmes você lembra?"
+}
+},
+{
+"id": "puzzles-073",
+"lv": "intermediate",
+"i18n": {
+"en": "Do you enjoy probability puzzles with coins and dice?",
+"de": "Magst du Wahrscheinlichkeitsrätsel mit Münzen und Würfeln?",
+"es": "¿Te gustan los acertijos de probabilidad con monedas y dados?",
+"fr": "Aimes-tu les énigmes de probabilité avec des pièces et des dés ?",
+"it": "Ti piacciono i rompicapi di probabilità con monete e dadi?",
+"pt": "Gostas de enigmas de probabilidades com moedas e dados?",
+"pt_BR": "Você curte desafios de probabilidade com moedas e dados?"
+}
+},
+{
+"id": "puzzles-074",
+"lv": "intermediate",
+"i18n": {
+"en": "What puzzle took you the longest time to solve?",
+"de": "Für welches Rätsel hast du am längsten gebraucht?",
+"es": "¿Qué acertijo te costó más tiempo resolver?",
+"fr": "Quelle énigme t'a pris le plus de temps à résoudre ?",
+"it": "Quale rompicapo ti ha richiesto più tempo per risolverlo?",
+"pt": "Que enigma te levou mais tempo a resolver?",
+"pt_BR": "Qual desafio levou mais tempo para você resolver?"
+}
+},
+{
+"id": "puzzles-075",
+"lv": "intermediate",
+"i18n": {
+"en": "Do you take notes or draw diagrams when you solve puzzles?",
+"de": "Machst du Notizen oder Skizzen, wenn du Rätsel löst?",
+"es": "¿Tomas notas o dibujas esquemas cuando resuelves acertijos?",
+"fr": "Prends-tu des notes ou fais-tu des schémas quand tu résous des énigmes ?",
+"it": "Prendi appunti o disegni schemi quando risolvi i rompicapi?",
+"pt": "Tomas notas ou desenhas esquemas quando resolves enigmas?",
+"pt_BR": "Você faz anotações ou desenha esquemas quando resolve desafios?"
+}
+},
+{
+"id": "puzzles-076",
+"lv": "beginner",
+"i18n": {
+"en": "Which part of a jigsaw do you always start with?",
+"de": "Mit welchem Teil eines Puzzles fängst du immer an?",
+"es": "¿Por qué parte de un puzle empiezas siempre?",
+"fr": "Par quelle partie d'un puzzle commences-tu toujours ?",
+"it": "Da quale parte di un puzzle inizi sempre?",
+"pt": "Por que parte de um puzzle começas sempre?",
+"pt_BR": "Por qual parte de um quebra-cabeça de montar você sempre começa?"
+}
+},
+{
+"id": "puzzles-077",
+"lv": "beginner",
+"i18n": {
+"en": "Do you like riddles that rhyme?",
+"de": "Magst du Rätsel, die sich reimen?",
+"es": "¿Te gustan las adivinanzas que riman?",
+"fr": "Aimes-tu les devinettes qui riment ?",
+"it": "Ti piacciono gli indovinelli in rima?",
+"pt": "Gostas de adivinhas que rimam?",
+"pt_BR": "Você gosta de charadas que rimam?"
+}
+},
+{
+"id": "puzzles-078",
+"lv": "beginner",
+"i18n": {
+"en": "Can you find a hidden word inside a longer word, like 'cat' in 'educate'?",
+"de": "Findest du ein verstecktes Wort in einem längeren, wie «Rat» in «Apparat»?",
+"es": "¿Encuentras una palabra escondida dentro de otra más larga, como «mar» en «amarillo»?",
+"fr": "Trouves-tu un mot caché dans un plus long, comme « rat » dans « pirate » ?",
+"it": "Trovi una parola nascosta dentro una più lunga, come «mare» in «amarena»?",
+"pt": "Encontras uma palavra escondida dentro de outra maior, como «mar» em «amarelo»?",
+"pt_BR": "Você acha uma palavra escondida dentro de outra maior, como «mar» em «amarelo»?"
+}
+},
+{
+"id": "puzzles-079",
+"lv": "beginner",
+"i18n": {
+"en": "Which brain teaser would you share at a family dinner?",
+"de": "Welche Denksportaufgabe würdest du beim Familienessen stellen?",
+"es": "¿Qué acertijo compartirías en una cena familiar?",
+"fr": "Quel casse-tête partagerais-tu lors d'un dîner en famille ?",
+"it": "Quale rompicapo proporresti a una cena in famiglia?",
+"pt": "Que enigma partilharias num jantar de família?",
+"pt_BR": "Qual desafio você compartilharia num jantar de família?"
+}
+},
+{
+"id": "puzzles-080",
+"lv": "beginner",
+"i18n": {
+"en": "Do you prefer puzzles with pictures or with words?",
+"de": "Magst du lieber Rätsel mit Bildern oder mit Wörtern?",
+"es": "¿Prefieres los acertijos con imágenes o con palabras?",
+"fr": "Tu préfères les énigmes avec des images ou avec des mots ?",
+"it": "Preferisci i rompicapi con le immagini o con le parole?",
+"pt": "Preferes enigmas com imagens ou com palavras?",
+"pt_BR": "Você prefere desafios com imagens ou com palavras?"
+}
+},
+{
+"id": "puzzles-081",
+"lv": "intermediate",
+"i18n": {
+"en": "Have you ever made a secret message for someone to decode?",
+"de": "Hast du schon mal eine Geheimbotschaft für jemanden zum Entschlüsseln geschrieben?",
+"es": "¿Has creado alguna vez un mensaje secreto para que alguien lo descifre?",
+"fr": "As-tu déjà écrit un message secret à faire déchiffrer à quelqu'un ?",
+"it": "Hai mai creato un messaggio segreto da far decifrare a qualcuno?",
+"pt": "Já criaste uma mensagem secreta para alguém decifrar?",
+"pt_BR": "Você já criou uma mensagem secreta para alguém decifrar?"
+}
+},
+{
+"id": "puzzles-082",
+"lv": "intermediate",
+"i18n": {
+"en": "Which puzzle tradition from another country would you like to learn?",
+"de": "Welche Rätseltradition aus einem anderen Land würdest du gern kennenlernen?",
+"es": "¿Qué tradición de acertijos de otro país te gustaría conocer?",
+"fr": "Quelle tradition d'énigmes d'un autre pays aimerais-tu découvrir ?",
+"it": "Quale tradizione enigmistica di un altro paese ti piacerebbe conoscere?",
+"pt": "Que tradição de enigmas de outro país gostavas de conhecer?",
+"pt_BR": "Qual tradição de desafios de outro país você gostaria de conhecer?"
+}
+},
+{
+"id": "puzzles-083",
+"lv": "intermediate",
+"i18n": {
+"en": "Do you think computers take the fun out of puzzles, or add to it?",
+"de": "Nehmen Computer Rätseln den Spaß, oder machen sie sie spannender?",
+"es": "¿Crees que los ordenadores le quitan la gracia a los acertijos o se la añaden?",
+"fr": "Penses-tu que les ordinateurs gâchent le plaisir des énigmes, ou l'enrichissent ?",
+"it": "Pensi che i computer tolgano il divertimento ai rompicapi o lo aumentino?",
+"pt": "Achas que os computadores tiram a graça aos enigmas ou a aumentam?",
+"pt_BR": "Você acha que os computadores tiram a graça dos desafios ou aumentam?"
+}
+},
+{
+"id": "puzzles-084",
+"lv": "intermediate",
+"i18n": {
+"en": "What makes an escape room puzzle feel clever rather than random?",
+"de": "Was lässt ein Escape-Room-Rätsel clever statt willkürlich wirken?",
+"es": "¿Qué hace que un reto de sala de escape parezca ingenioso y no aleatorio?",
+"fr": "Qu'est-ce qui rend une énigme d'escape game astucieuse plutôt qu'arbitraire ?",
+"it": "Cosa rende un enigma da escape room ingegnoso e non casuale?",
+"pt": "O que faz um enigma de sala de fuga parecer engenhoso em vez de aleatório?",
+"pt_BR": "O que faz um enigma de sala de escape parecer engenhoso e não aleatório?"
+}
+},
+{
+"id": "puzzles-085",
+"lv": "intermediate",
+"i18n": {
+"en": "Do you use puzzles to practise a language you are learning?",
+"de": "Nutzt du Rätsel, um eine Sprache zu üben, die du lernst?",
+"es": "¿Usas los acertijos para practicar un idioma que estás aprendiendo?",
+"fr": "Utilises-tu des énigmes pour pratiquer une langue que tu apprends ?",
+"it": "Usi i rompicapi per esercitarti in una lingua che stai imparando?",
+"pt": "Usas enigmas para praticar uma língua que estás a aprender?",
+"pt_BR": "Você usa desafios para praticar uma língua que está aprendendo?"
+}
+},
+{
+"id": "puzzles-086",
+"lv": "advanced",
+"i18n": {
+"en": "If you designed your own puzzle, what type would it be?",
+"de": "Wenn du ein eigenes Rätsel entwerfen würdest, welcher Art wäre es?",
+"es": "Si diseñaras tu propio acertijo, ¿de qué tipo sería?",
+"fr": "Si tu concevais ta propre énigme, de quel type serait-elle ?",
+"it": "Se progettassi un tuo rompicapo, di che tipo sarebbe?",
+"pt": "Se criasses o teu próprio enigma, de que tipo seria?",
+"pt_BR": "Se você criasse seu próprio desafio, de que tipo seria?"
+}
+},
+{
+"id": "puzzles-087",
+"lv": "advanced",
+"i18n": {
+"en": "What makes a puzzle fair, in your opinion?",
+"de": "Was macht ein Rätsel deiner Meinung nach fair?",
+"es": "En tu opinión, ¿qué hace que un acertijo sea justo?",
+"fr": "Selon toi, qu'est-ce qui rend une énigme équitable ?",
+"it": "Secondo te, cosa rende un rompicapo corretto?",
+"pt": "Na tua opinião, o que torna um enigma justo?",
+"pt_BR": "Na sua opinião, o que torna um desafio justo?"
+}
+},
+{
+"id": "puzzles-088",
+"lv": "advanced",
+"i18n": {
+"en": "How would you write a riddle about an everyday object you use?",
+"de": "Wie würdest du ein Rätsel über einen Alltagsgegenstand schreiben, den du benutzt?",
+"es": "¿Cómo escribirías una adivinanza sobre un objeto cotidiano que usas?",
+"fr": "Comment écrirais-tu une devinette sur un objet que tu utilises tous les jours ?",
+"it": "Come scriveresti un indovinello su un oggetto che usi ogni giorno?",
+"pt": "Como escreverias uma adivinha sobre um objeto que usas todos os dias?",
+"pt_BR": "Como você escreveria uma charada sobre um objeto que usa no dia a dia?"
+}
+},
+{
+"id": "puzzles-089",
+"lv": "advanced",
+"i18n": {
+"en": "What theme would you choose for a treasure hunt you organise?",
+"de": "Welches Thema würdest du für eine Schatzsuche wählen, die du organisierst?",
+"es": "¿Qué tema elegirías para una búsqueda del tesoro que organizaras tú?",
+"fr": "Quel thème choisirais-tu pour une chasse au trésor que tu organises ?",
+"it": "Quale tema sceglieresti per una caccia al tesoro organizzata da te?",
+"pt": "Que tema escolherias para uma caça ao tesouro organizada por ti?",
+"pt_BR": "Qual tema você escolheria para uma caça ao tesouro organizada por você?"
+}
+},
+{
+"id": "puzzles-090",
+"lv": "advanced",
+"i18n": {
+"en": "How do you check that a puzzle has only one solution?",
+"de": "Wie prüfst du, ob ein Rätsel nur eine einzige Lösung hat?",
+"es": "¿Cómo compruebas que un acertijo tiene una sola solución?",
+"fr": "Comment vérifies-tu qu'une énigme n'a qu'une seule solution ?",
+"it": "Come verifichi che un rompicapo abbia una sola soluzione?",
+"pt": "Como verificas que um enigma tem apenas uma solução?",
+"pt_BR": "Como você verifica se um desafio tem só uma solução?"
+}
+},
+{
+"id": "puzzles-091",
+"lv": "advanced",
+"i18n": {
+"en": "Which advanced Sudoku pattern do you find most satisfying to spot?",
+"de": "Welches fortgeschrittene Sudoku-Muster entdeckst du am liebsten?",
+"es": "¿Qué patrón avanzado de sudoku te resulta más satisfactorio de detectar?",
+"fr": "Quel motif avancé de sudoku trouves-tu le plus satisfaisant à repérer ?",
+"it": "Quale schema avanzato del sudoku ti dà più soddisfazione individuare?",
+"pt": "Que padrão avançado de sudoku te dá mais satisfação descobrir?",
+"pt_BR": "Qual padrão avançado de sudoku você acha mais gostoso de descobrir?"
+}
+},
+{
+"id": "puzzles-092",
+"lv": "advanced",
+"i18n": {
+"en": "How would you explain a paradox like Achilles and the tortoise to a friend?",
+"de": "Wie würdest du einem Freund ein Paradox wie Achilles und die Schildkröte erklären?",
+"es": "¿Cómo le explicarías a un amigo una paradoja como la de Aquiles y la tortuga?",
+"fr": "Comment expliquerais-tu à un ami un paradoxe comme Achille et la tortue ?",
+"it": "Come spiegheresti a un amico un paradosso come quello di Achille e la tartaruga?",
+"pt": "Como explicarias a um amigo um paradoxo como o de Aquiles e a tartaruga?",
+"pt_BR": "Como você explicaria a um amigo um paradoxo como o de Aquiles e a tartaruga?"
+}
+},
+{
+"id": "puzzles-093",
+"lv": "advanced",
+"i18n": {
+"en": "What would a perfect cryptic clue for your name look like?",
+"de": "Wie sähe ein perfekter kryptischer Hinweis auf deinen Namen aus?",
+"es": "¿Cómo sería una pista críptica perfecta para tu nombre?",
+"fr": "À quoi ressemblerait une définition cryptique parfaite pour ton prénom ?",
+"it": "Come sarebbe una definizione criptica perfetta per il tuo nome?",
+"pt": "Como seria uma pista críptica perfeita para o teu nome?",
+"pt_BR": "Como seria uma dica críptica perfeita para o seu nome?"
+}
+},
+{
+"id": "puzzles-094",
+"lv": "advanced",
+"i18n": {
+"en": "How would you give hints without spoiling a puzzle for someone?",
+"de": "Wie würdest du Tipps geben, ohne jemandem das Rätsel zu verderben?",
+"es": "¿Cómo darías pistas sin estropearle el acertijo a alguien?",
+"fr": "Comment donnerais-tu des indices sans gâcher l'énigme à quelqu'un ?",
+"it": "Come daresti suggerimenti senza rovinare il rompicapo a qualcuno?",
+"pt": "Como darias pistas sem estragar o enigma a alguém?",
+"pt_BR": "Como você daria dicas sem estragar o desafio para alguém?"
+}
+},
+{
+"id": "puzzles-095",
+"lv": "advanced",
+"i18n": {
+"en": "Which famous puzzle from history would you most like to have solved first?",
+"de": "Welches berühmte Rätsel der Geschichte hättest du am liebsten als Erster gelöst?",
+"es": "¿Qué acertijo famoso de la historia te habría gustado resolver el primero?",
+"fr": "Quelle énigme célèbre de l'histoire aurais-tu aimé résoudre en premier ?",
+"it": "Quale famoso rompicapo della storia ti sarebbe piaciuto risolvere per primo?",
+"pt": "Que enigma famoso da história gostavas de ter sido o primeiro a resolver?",
+"pt_BR": "Qual enigma famoso da história você gostaria de ter resolvido primeiro?"
+}
+},
+{
+"id": "puzzles-096",
+"lv": "advanced",
+"i18n": {
+"en": "How would you design an escape game for your friends at home?",
+"de": "Wie würdest du für deine Freunde ein Escape-Spiel zu Hause gestalten?",
+"es": "¿Cómo diseñarías un juego de escape para tus amigos en casa?",
+"fr": "Comment concevrais-tu un escape game pour tes amis à la maison ?",
+"it": "Come progetteresti un gioco di fuga per i tuoi amici a casa?",
+"pt": "Como criarias um jogo de fuga para os teus amigos em casa?",
+"pt_BR": "Como você criaria um jogo de fuga para seus amigos em casa?"
+}
+},
+{
+"id": "puzzles-097",
+"lv": "advanced",
+"i18n": {
+"en": "What have puzzles taught you about solving problems in real life?",
+"de": "Was haben dir Rätsel über das Lösen von Problemen im echten Leben beigebracht?",
+"es": "¿Qué te han enseñado los acertijos sobre resolver problemas en la vida real?",
+"fr": "Qu'est-ce que les énigmes t'ont appris sur la résolution de problèmes dans la vraie vie ?",
+"it": "Cosa ti hanno insegnato i rompicapi sul risolvere problemi nella vita reale?",
+"pt": "O que te ensinaram os enigmas sobre resolver problemas na vida real?",
+"pt_BR": "O que os desafios te ensinaram sobre resolver problemas na vida real?"
+}
+},
+{
+"id": "puzzles-098",
+"lv": "advanced",
+"i18n": {
+"en": "Would you enjoy a puzzle competition, or do you prefer solving just for fun?",
+"de": "Würde dir ein Rätselwettbewerb gefallen, oder löst du lieber nur zum Spaß?",
+"es": "¿Te gustaría una competición de acertijos o prefieres resolverlos solo por diversión?",
+"fr": "Aimerais-tu un concours d'énigmes, ou préfères-tu résoudre juste pour le plaisir ?",
+"it": "Ti piacerebbe una gara di rompicapi, o preferisci risolverli solo per divertimento?",
+"pt": "Gostavas de uma competição de enigmas, ou preferes resolver só por diversão?",
+"pt_BR": "Você curtiria uma competição de desafios, ou prefere resolver só por diversão?"
+}
+},
+{
+"id": "puzzles-099",
+"lv": "advanced",
+"i18n": {
+"en": "Which puzzle type would you like to master next, and how?",
+"de": "Welche Rätselart möchtest du als Nächstes meistern, und wie?",
+"es": "¿Qué tipo de acertijo te gustaría dominar a continuación y cómo?",
+"fr": "Quel type d'énigme aimerais-tu maîtriser ensuite, et comment ?",
+"it": "Quale tipo di rompicapo ti piacerebbe padroneggiare adesso, e come?",
+"pt": "Que tipo de enigma gostavas de dominar a seguir, e como?",
+"pt_BR": "Qual tipo de desafio você gostaria de dominar em seguida, e como?"
+}
+},
+{
+"id": "puzzles-100",
+"lv": "advanced",
+"i18n": {
+"en": "How would you build a puzzle booklet with a final answer that links everything?",
+"de": "Wie würdest du ein Rätselheft gestalten, dessen Schlusslösung alles verbindet?",
+"es": "¿Cómo crearías un cuadernillo de acertijos con una respuesta final que lo una todo?",
+"fr": "Comment créerais-tu un livret d'énigmes avec une réponse finale qui relie tout ?",
+"it": "Come creeresti un libretto di rompicapi con una soluzione finale che collega tutto?",
+"pt": "Como criarias um caderno de enigmas com uma resposta final que liga tudo?",
+"pt_BR": "Como você criaria um caderninho de desafios com uma resposta final que conecta tudo?"
+}
+}
+]
+}

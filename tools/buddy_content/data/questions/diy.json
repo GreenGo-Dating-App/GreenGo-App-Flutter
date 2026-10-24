@@ -1,0 +1,1305 @@
+{
+ "topic": "diy",
+ "questions": [
+  {
+   "id": "diy-001",
+   "lv": "any",
+   "i18n": {
+    "en": "What is the first thing you ever fixed or built yourself?",
+    "de": "Was war das Erste, das du je selbst repariert oder gebaut hast?",
+    "es": "¿Qué fue lo primero que arreglaste o construiste tú mismo?",
+    "fr": "Quelle est la première chose que tu as réparée ou fabriquée toi-même ?",
+    "it": "Qual è la prima cosa che hai riparato o costruito da solo?",
+    "pt": "Qual foi a primeira coisa que reparaste ou construíste sozinho?",
+    "pt_BR": "Qual foi a primeira coisa que você consertou ou construiu sozinho?"
+   }
+  },
+  {
+   "id": "diy-002",
+   "lv": "any",
+   "i18n": {
+    "en": "Who taught you to use tools, or who would you like to learn from?",
+    "de": "Wer hat dir den Umgang mit Werkzeug beigebracht, oder von wem würdest du gern lernen?",
+    "es": "¿Quién te enseñó a usar herramientas o de quién te gustaría aprender?",
+    "fr": "Qui t'a appris à utiliser des outils, ou de qui aimerais-tu apprendre ?",
+    "it": "Chi ti ha insegnato a usare gli attrezzi, o da chi ti piacerebbe imparare?",
+    "pt": "Quem te ensinou a usar ferramentas, ou com quem gostavas de aprender?",
+    "pt_BR": "Quem te ensinou a usar ferramentas, ou com quem você gostaria de aprender?"
+   }
+  },
+  {
+   "id": "diy-003",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you prefer fixing things yourself or calling someone to help? Why?",
+    "de": "Reparierst du lieber selbst oder holst du dir Hilfe? Warum?",
+    "es": "¿Prefieres arreglar las cosas tú mismo o llamar a alguien? ¿Por qué?",
+    "fr": "Préfères-tu réparer toi-même ou faire appel à quelqu'un ? Pourquoi ?",
+    "it": "Preferisci aggiustare le cose da solo o chiamare qualcuno? Perché?",
+    "pt": "Preferes reparar as coisas tu mesmo ou chamar alguém? Porquê?",
+    "pt_BR": "Você prefere consertar as coisas sozinho ou chamar alguém? Por quê?"
+   }
+  },
+  {
+   "id": "diy-004",
+   "lv": "any",
+   "i18n": {
+    "en": "Which room in your home would you most like to improve?",
+    "de": "Welchen Raum in deinem Zuhause würdest du am liebsten verschönern?",
+    "es": "¿Qué habitación de tu casa te gustaría mejorar más?",
+    "fr": "Quelle pièce de chez toi aimerais-tu le plus améliorer ?",
+    "it": "Quale stanza di casa tua ti piacerebbe di più migliorare?",
+    "pt": "Que divisão da tua casa mais gostavas de melhorar?",
+    "pt_BR": "Qual cômodo da sua casa você mais gostaria de melhorar?"
+   }
+  },
+  {
+   "id": "diy-005",
+   "lv": "any",
+   "i18n": {
+    "en": "What is your favourite tool, or the one you would buy first?",
+    "de": "Was ist dein Lieblingswerkzeug, oder welches würdest du als Erstes kaufen?",
+    "es": "¿Cuál es tu herramienta favorita o cuál comprarías primero?",
+    "fr": "Quel est ton outil préféré, ou celui que tu achèterais en premier ?",
+    "it": "Qual è il tuo attrezzo preferito, o quale compreresti per primo?",
+    "pt": "Qual é a tua ferramenta preferida, ou qual comprarias primeiro?",
+    "pt_BR": "Qual é a sua ferramenta favorita, ou qual você compraria primeiro?"
+   }
+  },
+  {
+   "id": "diy-006",
+   "lv": "any",
+   "i18n": {
+    "en": "What does a satisfying weekend project look like for you?",
+    "de": "Wie sieht für dich ein richtig befriedigendes Wochenendprojekt aus?",
+    "es": "¿Cómo sería para ti un proyecto de fin de semana que te deje satisfecho?",
+    "fr": "À quoi ressemble pour toi un projet du week-end vraiment satisfaisant ?",
+    "it": "Com'è per te un progetto del fine settimana che dà soddisfazione?",
+    "pt": "Como seria para ti um projeto de fim de semana que dá gosto fazer?",
+    "pt_BR": "Como seria para você um projeto de fim de semana bem gratificante?"
+   }
+  },
+  {
+   "id": "diy-007",
+   "lv": "any",
+   "i18n": {
+    "en": "Is DIY common where you live, or do people usually hire professionals?",
+    "de": "Ist Heimwerken bei dir verbreitet, oder beauftragen die Leute meist Fachleute?",
+    "es": "¿Es habitual el bricolaje donde vives o la gente suele contratar profesionales?",
+    "fr": "Le bricolage est-il courant chez toi, ou fait-on plutôt appel à des professionnels ?",
+    "it": "Il fai da te è diffuso dove vivi o di solito si chiamano i professionisti?",
+    "pt": "A bricolage é comum onde vives ou as pessoas costumam chamar profissionais?",
+    "pt_BR": "Fazer consertos por conta própria é comum onde você mora, ou o pessoal costuma chamar profissionais?"
+   }
+  },
+  {
+   "id": "diy-008",
+   "lv": "any",
+   "i18n": {
+    "en": "What is something in your home that you are proud of having made or fixed?",
+    "de": "Worauf in deinem Zuhause bist du stolz, weil du es selbst gemacht oder repariert hast?",
+    "es": "¿Qué hay en tu casa que te enorgullece haber hecho o arreglado?",
+    "fr": "Qu'y a-t-il chez toi que tu es fier d'avoir fabriqué ou réparé ?",
+    "it": "C'è qualcosa in casa tua che sei orgoglioso di aver fatto o riparato?",
+    "pt": "Há alguma coisa em tua casa que tenhas orgulho de ter feito ou reparado?",
+    "pt_BR": "Tem alguma coisa na sua casa que você tem orgulho de ter feito ou consertado?"
+   }
+  },
+  {
+   "id": "diy-009",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you enjoy the planning part of a project or the hands-on part more?",
+    "de": "Magst du bei einem Projekt lieber die Planung oder das praktische Arbeiten?",
+    "es": "¿Disfrutas más de la parte de planificar un proyecto o de la de ponerte manos a la obra?",
+    "fr": "Préfères-tu la phase de préparation d'un projet ou la partie pratique ?",
+    "it": "Ti piace di più la fase di progettazione o quella pratica di un lavoro?",
+    "pt": "Gostas mais da parte de planear um projeto ou da parte de pôr mãos à obra?",
+    "pt_BR": "Você curte mais a parte de planejar um projeto ou a de colocar a mão na massa?"
+   }
+  },
+  {
+   "id": "diy-010",
+   "lv": "any",
+   "i18n": {
+    "en": "What is the most useful DIY skill you think everyone should know?",
+    "de": "Welche Heimwerker-Fähigkeit sollte deiner Meinung nach jeder beherrschen?",
+    "es": "¿Qué habilidad de bricolaje crees que todo el mundo debería saber?",
+    "fr": "Quelle compétence de bricolage tout le monde devrait-il maîtriser, selon toi ?",
+    "it": "Quale abilità di fai da te pensi che tutti dovrebbero conoscere?",
+    "pt": "Que habilidade de bricolage achas que toda a gente devia saber?",
+    "pt_BR": "Qual habilidade de faça você mesmo você acha que todo mundo deveria saber?"
+   }
+  },
+  {
+   "id": "diy-011",
+   "lv": "any",
+   "i18n": {
+    "en": "Which DIY project have you always wanted to try but never started?",
+    "de": "Welches Heimwerkerprojekt wolltest du schon immer machen, hast es aber nie angefangen?",
+    "es": "¿Qué proyecto de bricolaje siempre has querido probar y nunca has empezado?",
+    "fr": "Quel projet de bricolage as-tu toujours voulu essayer sans jamais te lancer ?",
+    "it": "Quale progetto di fai da te hai sempre voluto provare senza mai iniziarlo?",
+    "pt": "Que projeto de bricolage sempre quiseste experimentar e nunca começaste?",
+    "pt_BR": "Qual projeto de faça você mesmo você sempre quis tentar e nunca começou?"
+   }
+  },
+  {
+   "id": "diy-012",
+   "lv": "any",
+   "i18n": {
+    "en": "How does it feel when a repair finally works after a few tries?",
+    "de": "Wie fühlt es sich an, wenn eine Reparatur nach ein paar Versuchen endlich klappt?",
+    "es": "¿Qué sientes cuando una reparación por fin funciona después de varios intentos?",
+    "fr": "Que ressens-tu quand une réparation fonctionne enfin après plusieurs essais ?",
+    "it": "Come ti senti quando una riparazione finalmente funziona dopo qualche tentativo?",
+    "pt": "O que sentes quando uma reparação finalmente resulta depois de várias tentativas?",
+    "pt_BR": "Como você se sente quando um conserto finalmente dá certo depois de algumas tentativas?"
+   }
+  },
+  {
+   "id": "diy-013",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you like working on projects alone or with friends and family?",
+    "de": "Arbeitest du lieber allein an Projekten oder mit Freunden und Familie?",
+    "es": "¿Te gusta trabajar en proyectos solo o con amigos y familia?",
+    "fr": "Aimes-tu travailler sur tes projets seul ou avec des amis et de la famille ?",
+    "it": "Ti piace lavorare ai progetti da solo o con amici e familiari?",
+    "pt": "Gostas de trabalhar em projetos sozinho ou com amigos e família?",
+    "pt_BR": "Você gosta de trabalhar em projetos sozinho ou com amigos e família?"
+   }
+  },
+  {
+   "id": "diy-014",
+   "lv": "any",
+   "i18n": {
+    "en": "What style of home decor do you love: rustic, modern, cosy or something else?",
+    "de": "Welchen Einrichtungsstil magst du: rustikal, modern, gemütlich oder etwas anderes?",
+    "es": "¿Qué estilo de decoración te encanta: rústico, moderno, acogedor u otro?",
+    "fr": "Quel style de déco adores-tu : rustique, moderne, cosy ou autre chose ?",
+    "it": "Quale stile d'arredo ami: rustico, moderno, accogliente o altro?",
+    "pt": "Que estilo de decoração adoras: rústico, moderno, aconchegante ou outro?",
+    "pt_BR": "Que estilo de decoração você adora: rústico, moderno, aconchegante ou outro?"
+   }
+  },
+  {
+   "id": "diy-015",
+   "lv": "any",
+   "i18n": {
+    "en": "Where do you usually find ideas for home projects?",
+    "de": "Wo findest du normalerweise Ideen für Projekte zu Hause?",
+    "es": "¿Dónde sueles encontrar ideas para proyectos en casa?",
+    "fr": "Où trouves-tu d'habitude des idées pour tes projets à la maison ?",
+    "it": "Dove trovi di solito le idee per i progetti di casa?",
+    "pt": "Onde costumas encontrar ideias para projetos em casa?",
+    "pt_BR": "Onde você costuma encontrar ideias para projetos em casa?"
+   }
+  },
+  {
+   "id": "diy-016",
+   "lv": "any",
+   "i18n": {
+    "en": "What is the funniest DIY mistake you or someone you know has made?",
+    "de": "Was ist der lustigste Heimwerker-Fehler, den du oder jemand, den du kennst, gemacht hat?",
+    "es": "¿Cuál es el error de bricolaje más gracioso que habéis cometido tú o alguien que conoces?",
+    "fr": "Quelle est la bourde de bricolage la plus drôle faite par toi ou quelqu'un que tu connais ?",
+    "it": "Qual è l'errore di fai da te più buffo che hai fatto tu o qualcuno che conosci?",
+    "pt": "Qual foi o erro de bricolage mais engraçado que tu ou alguém que conheces já fez?",
+    "pt_BR": "Qual foi o erro de faça você mesmo mais engraçado que você ou alguém que conhece já cometeu?"
+   }
+  },
+  {
+   "id": "diy-017",
+   "lv": "any",
+   "i18n": {
+    "en": "Would you rather repair an old item or buy a new one? Why?",
+    "de": "Reparierst du lieber etwas Altes oder kaufst du etwas Neues? Warum?",
+    "es": "¿Prefieres reparar algo viejo o comprar algo nuevo? ¿Por qué?",
+    "fr": "Préfères-tu réparer un vieil objet ou en acheter un neuf ? Pourquoi ?",
+    "it": "Preferisci riparare un oggetto vecchio o comprarne uno nuovo? Perché?",
+    "pt": "Preferes reparar uma coisa velha ou comprar uma nova? Porquê?",
+    "pt_BR": "Você prefere consertar algo velho ou comprar um novo? Por quê?"
+   }
+  },
+  {
+   "id": "diy-018",
+   "lv": "any",
+   "i18n": {
+    "en": "Which material do you enjoy working with most: wood, fabric, paint or something else?",
+    "de": "Mit welchem Material arbeitest du am liebsten: Holz, Stoff, Farbe oder etwas anderem?",
+    "es": "¿Con qué material disfrutas más trabajando: madera, tela, pintura u otro?",
+    "fr": "Avec quel matériau aimes-tu le plus travailler : bois, tissu, peinture ou autre ?",
+    "it": "Con quale materiale ti piace di più lavorare: legno, tessuto, vernice o altro?",
+    "pt": "Com que material gostas mais de trabalhar: madeira, tecido, tinta ou outro?",
+    "pt_BR": "Com qual material você mais gosta de trabalhar: madeira, tecido, tinta ou outro?"
+   }
+  },
+  {
+   "id": "diy-019",
+   "lv": "any",
+   "i18n": {
+    "en": "What does safety first mean to you when you start a project?",
+    "de": "Was bedeutet Sicherheit zuerst für dich, wenn du ein Projekt beginnst?",
+    "es": "¿Qué significa para ti la seguridad primero cuando empiezas un proyecto?",
+    "fr": "Que signifie pour toi la sécurité d'abord quand tu commences un projet ?",
+    "it": "Cosa significa per te la sicurezza prima di tutto quando inizi un progetto?",
+    "pt": "O que significa para ti a segurança em primeiro lugar quando começas um projeto?",
+    "pt_BR": "O que significa para você a segurança em primeiro lugar quando começa um projeto?"
+   }
+  },
+  {
+   "id": "diy-020",
+   "lv": "any",
+   "i18n": {
+    "en": "Which small change could make your home feel much more like you?",
+    "de": "Welche kleine Veränderung würde dein Zuhause viel persönlicher machen?",
+    "es": "¿Qué pequeño cambio haría que tu casa se pareciera mucho más a ti?",
+    "fr": "Quel petit changement rendrait ton chez-toi beaucoup plus à ton image ?",
+    "it": "Quale piccolo cambiamento renderebbe la tua casa molto più tua?",
+    "pt": "Que pequena mudança tornaria a tua casa muito mais a tua cara?",
+    "pt_BR": "Que pequena mudança deixaria sua casa muito mais com a sua cara?"
+   }
+  },
+  {
+   "id": "diy-021",
+   "lv": "any",
+   "i18n": {
+    "en": "Is there a traditional craft or building style from your region that you admire?",
+    "de": "Gibt es ein traditionelles Handwerk oder einen Baustil aus deiner Region, den du bewunderst?",
+    "es": "¿Hay algún oficio tradicional o estilo de construcción de tu región que admires?",
+    "fr": "Y a-t-il un artisanat traditionnel ou un style de construction de ta région que tu admires ?",
+    "it": "C'è un mestiere tradizionale o uno stile costruttivo della tua zona che ammiri?",
+    "pt": "Há algum ofício tradicional ou estilo de construção da tua região que admires?",
+    "pt_BR": "Tem algum ofício tradicional ou estilo de construção da sua região que você admira?"
+   }
+  },
+  {
+   "id": "diy-022",
+   "lv": "any",
+   "i18n": {
+    "en": "How do you usually feel before starting a job you have never done before?",
+    "de": "Wie fühlst du dich meistens, bevor du eine Arbeit anfängst, die du noch nie gemacht hast?",
+    "es": "¿Cómo te sueles sentir antes de empezar un trabajo que nunca has hecho?",
+    "fr": "Comment te sens-tu d'habitude avant de commencer un travail que tu n'as jamais fait ?",
+    "it": "Come ti senti di solito prima di iniziare un lavoro che non hai mai fatto?",
+    "pt": "Como costumas sentir-te antes de começar um trabalho que nunca fizeste?",
+    "pt_BR": "Como você costuma se sentir antes de começar um trabalho que nunca fez?"
+   }
+  },
+  {
+   "id": "diy-023",
+   "lv": "any",
+   "i18n": {
+    "en": "What is one thing at home that has been waiting for a fix for too long?",
+    "de": "Was wartet bei dir zu Hause schon viel zu lange auf eine Reparatur?",
+    "es": "¿Qué cosa de tu casa lleva demasiado tiempo esperando un arreglo?",
+    "fr": "Qu'est-ce qui attend une réparation depuis trop longtemps chez toi ?",
+    "it": "C'è qualcosa in casa che aspetta di essere aggiustato da troppo tempo?",
+    "pt": "Que coisa em tua casa está há tempo demais à espera de ser reparada?",
+    "pt_BR": "Que coisa na sua casa está esperando um conserto há tempo demais?"
+   }
+  },
+  {
+   "id": "diy-024",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you enjoy watching makeover or repair videos? What do you like about them?",
+    "de": "Schaust du gern Vorher-nachher- oder Reparaturvideos? Was gefällt dir daran?",
+    "es": "¿Te gusta ver vídeos de reformas o reparaciones? ¿Qué te gusta de ellos?",
+    "fr": "Aimes-tu regarder des vidéos de rénovation ou de réparation ? Qu'est-ce qui te plaît ?",
+    "it": "Ti piace guardare video di ristrutturazioni o riparazioni? Cosa ti piace?",
+    "pt": "Gostas de ver vídeos de remodelações ou reparações? De que é que gostas neles?",
+    "pt_BR": "Você gosta de ver vídeos de reforma ou de consertos? Do que você gosta neles?"
+   }
+  },
+  {
+   "id": "diy-025",
+   "lv": "any",
+   "i18n": {
+    "en": "What would you build if you had a fully equipped workshop for a day?",
+    "de": "Was würdest du bauen, wenn du einen Tag lang eine voll ausgestattete Werkstatt hättest?",
+    "es": "¿Qué construirías si tuvieras un taller totalmente equipado durante un día?",
+    "fr": "Que fabriquerais-tu si tu avais un atelier entièrement équipé pendant une journée ?",
+    "it": "Cosa costruiresti se avessi un laboratorio completamente attrezzato per un giorno?",
+    "pt": "O que construirias se tivesses uma oficina totalmente equipada durante um dia?",
+    "pt_BR": "O que você construiria se tivesse uma oficina totalmente equipada por um dia?"
+   }
+  },
+  {
+   "id": "diy-026",
+   "lv": "any",
+   "i18n": {
+    "en": "Which handmade piece of furniture would you love to have in your home?",
+    "de": "Welches handgemachte Möbelstück hättest du gern bei dir zu Hause?",
+    "es": "¿Qué mueble hecho a mano te encantaría tener en casa?",
+    "fr": "Quel meuble fait main aimerais-tu avoir chez toi ?",
+    "it": "Quale mobile fatto a mano ti piacerebbe avere in casa?",
+    "pt": "Que móvel feito à mão adorarias ter em casa?",
+    "pt_BR": "Qual móvel feito à mão você adoraria ter em casa?"
+   }
+  },
+  {
+   "id": "diy-027",
+   "lv": "any",
+   "i18n": {
+    "en": "How do you decide whether a job is right for DIY or needs a professional?",
+    "de": "Wie entscheidest du, ob eine Arbeit etwas für dich ist oder Fachleute braucht?",
+    "es": "¿Cómo decides si un trabajo es para hacerlo tú o necesita un profesional?",
+    "fr": "Comment décides-tu si un travail est faisable toi-même ou s'il faut un pro ?",
+    "it": "Come decidi se un lavoro puoi farlo da solo o serve un professionista?",
+    "pt": "Como decides se um trabalho é para fazeres tu ou precisa de um profissional?",
+    "pt_BR": "Como você decide se um trabalho dá para fazer sozinho ou precisa de um profissional?"
+   }
+  },
+  {
+   "id": "diy-028",
+   "lv": "any",
+   "i18n": {
+    "en": "What does a cosy, well-organised home mean to you?",
+    "de": "Was bedeutet für dich ein gemütliches, gut organisiertes Zuhause?",
+    "es": "¿Qué significa para ti un hogar acogedor y bien organizado?",
+    "fr": "Que représente pour toi une maison cosy et bien organisée ?",
+    "it": "Cosa significa per te una casa accogliente e ben organizzata?",
+    "pt": "O que significa para ti uma casa aconchegante e bem organizada?",
+    "pt_BR": "O que significa para você uma casa aconchegante e bem organizada?"
+   }
+  },
+  {
+   "id": "diy-029",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you have a favourite place to buy tools and materials?",
+    "de": "Hast du einen Lieblingsort, um Werkzeug und Material zu kaufen?",
+    "es": "¿Tienes algún sitio favorito para comprar herramientas y materiales?",
+    "fr": "As-tu un endroit préféré pour acheter outils et matériaux ?",
+    "it": "Hai un posto preferito dove comprare attrezzi e materiali?",
+    "pt": "Tens algum sítio preferido para comprar ferramentas e materiais?",
+    "pt_BR": "Você tem um lugar favorito para comprar ferramentas e materiais?"
+   }
+  },
+  {
+   "id": "diy-030",
+   "lv": "any",
+   "i18n": {
+    "en": "What is a home project you would love to do with a friend?",
+    "de": "Welches Projekt zu Hause würdest du gern mit einem Freund oder einer Freundin machen?",
+    "es": "¿Qué proyecto en casa te encantaría hacer con un amigo?",
+    "fr": "Quel projet à la maison aimerais-tu réaliser avec un ami ?",
+    "it": "Quale progetto di casa ti piacerebbe fare con un amico?",
+    "pt": "Que projeto em casa adorarias fazer com um amigo?",
+    "pt_BR": "Qual projeto em casa você adoraria fazer com um amigo?"
+   }
+  },
+  {
+   "id": "diy-031",
+   "lv": "any",
+   "i18n": {
+    "en": "Which colours would you choose if you repainted your bedroom?",
+    "de": "Welche Farben würdest du wählen, wenn du dein Schlafzimmer neu streichen würdest?",
+    "es": "¿Qué colores elegirías si volvieras a pintar tu dormitorio?",
+    "fr": "Quelles couleurs choisirais-tu si tu repeignais ta chambre ?",
+    "it": "Quali colori sceglieresti se ridipingessi la tua camera?",
+    "pt": "Que cores escolherias se voltasses a pintar o teu quarto?",
+    "pt_BR": "Quais cores você escolheria se pintasse seu quarto de novo?"
+   }
+  },
+  {
+   "id": "diy-032",
+   "lv": "any",
+   "i18n": {
+    "en": "What do you think DIY teaches people besides practical skills?",
+    "de": "Was lernt man beim Heimwerken deiner Meinung nach außer praktischen Fähigkeiten?",
+    "es": "¿Qué crees que enseña el bricolaje además de habilidades prácticas?",
+    "fr": "Selon toi, qu'est-ce que le bricolage apprend en plus des compétences pratiques ?",
+    "it": "Secondo te, cosa insegna il fai da te oltre alle abilità pratiche?",
+    "pt": "O que achas que a bricolage ensina além das competências práticas?",
+    "pt_BR": "O que você acha que fazer as coisas sozinho ensina além das habilidades práticas?"
+   }
+  },
+  {
+   "id": "diy-033",
+   "lv": "any",
+   "i18n": {
+    "en": "How do you feel about giving old furniture a second life?",
+    "de": "Was hältst du davon, alten Möbeln ein zweites Leben zu schenken?",
+    "es": "¿Qué te parece darles una segunda vida a los muebles viejos?",
+    "fr": "Que penses-tu de donner une seconde vie aux vieux meubles ?",
+    "it": "Cosa pensi del dare una seconda vita ai mobili vecchi?",
+    "pt": "O que achas de dar uma segunda vida a móveis antigos?",
+    "pt_BR": "O que você acha de dar uma segunda vida para móveis antigos?"
+   }
+  },
+  {
+   "id": "diy-034",
+   "lv": "any",
+   "i18n": {
+    "en": "Which project would make the biggest difference to your daily comfort?",
+    "de": "Welches Projekt würde deinen Alltag am meisten angenehmer machen?",
+    "es": "¿Qué proyecto marcaría la mayor diferencia en tu comodidad diaria?",
+    "fr": "Quel projet changerait le plus ton confort au quotidien ?",
+    "it": "Quale progetto farebbe la differenza più grande per il tuo comfort quotidiano?",
+    "pt": "Que projeto faria mais diferença no teu conforto do dia a dia?",
+    "pt_BR": "Qual projeto faria mais diferença no seu conforto do dia a dia?"
+   }
+  },
+  {
+   "id": "diy-035",
+   "lv": "any",
+   "i18n": {
+    "en": "Is there a skilled maker or craftsperson whose work inspires you?",
+    "de": "Gibt es einen Handwerker oder eine Handwerkerin, deren Arbeit dich inspiriert?",
+    "es": "¿Hay algún artesano o creador cuyo trabajo te inspire?",
+    "fr": "Y a-t-il un artisan ou un créateur dont le travail t'inspire ?",
+    "it": "C'è un artigiano o un creatore il cui lavoro ti ispira?",
+    "pt": "Há algum artesão ou criador cujo trabalho te inspire?",
+    "pt_BR": "Tem algum artesão ou criador cujo trabalho te inspira?"
+   }
+  },
+  {
+   "id": "diy-036",
+   "lv": "any",
+   "i18n": {
+    "en": "What would your dream workspace or hobby corner look like?",
+    "de": "Wie sähe deine Traumwerkstatt oder deine Hobbyecke aus?",
+    "es": "¿Cómo sería tu espacio de trabajo o tu rincón de manualidades soñado?",
+    "fr": "À quoi ressemblerait ton atelier ou ton coin bricolage de rêve ?",
+    "it": "Come sarebbe il tuo laboratorio o angolo hobby dei sogni?",
+    "pt": "Como seria a tua oficina ou cantinho de passatempos de sonho?",
+    "pt_BR": "Como seria a sua oficina ou cantinho de hobbies dos sonhos?"
+   }
+  },
+  {
+   "id": "diy-037",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you prefer quick fixes or long, detailed projects?",
+    "de": "Magst du lieber schnelle Reparaturen oder lange, detaillierte Projekte?",
+    "es": "¿Prefieres los arreglos rápidos o los proyectos largos y detallados?",
+    "fr": "Préfères-tu les réparations rapides ou les projets longs et minutieux ?",
+    "it": "Preferisci le riparazioni veloci o i progetti lunghi e dettagliati?",
+    "pt": "Preferes reparações rápidas ou projetos longos e detalhados?",
+    "pt_BR": "Você prefere consertos rápidos ou projetos longos e detalhados?"
+   }
+  },
+  {
+   "id": "diy-038",
+   "lv": "any",
+   "i18n": {
+    "en": "What item would you love to learn to repair instead of replacing?",
+    "de": "Welchen Gegenstand würdest du gern reparieren lernen, statt ihn zu ersetzen?",
+    "es": "¿Qué objeto te encantaría aprender a reparar en lugar de reemplazarlo?",
+    "fr": "Quel objet aimerais-tu apprendre à réparer au lieu de le remplacer ?",
+    "it": "Quale oggetto ti piacerebbe imparare a riparare invece di sostituirlo?",
+    "pt": "Que objeto adorarias aprender a reparar em vez de substituir?",
+    "pt_BR": "Que objeto você adoraria aprender a consertar em vez de trocar?"
+   }
+  },
+  {
+   "id": "diy-039",
+   "lv": "any",
+   "i18n": {
+    "en": "How do homes in your region usually differ from homes elsewhere?",
+    "de": "Wie unterscheiden sich Häuser in deiner Region meist von denen anderswo?",
+    "es": "¿En qué se suelen diferenciar las casas de tu región de las de otros lugares?",
+    "fr": "En quoi les maisons de ta région diffèrent-elles généralement d'ailleurs ?",
+    "it": "In cosa le case della tua zona sono di solito diverse da quelle altrove?",
+    "pt": "Em que é que as casas da tua região costumam ser diferentes das de outros sítios?",
+    "pt_BR": "Em que as casas da sua região costumam ser diferentes das de outros lugares?"
+   }
+  },
+  {
+   "id": "diy-040",
+   "lv": "any",
+   "i18n": {
+    "en": "What gift could you make by hand for someone you care about?",
+    "de": "Welches Geschenk könntest du für einen lieben Menschen selbst machen?",
+    "es": "¿Qué regalo podrías hacer a mano para alguien que te importa?",
+    "fr": "Quel cadeau pourrais-tu fabriquer toi-même pour quelqu'un qui t'est cher ?",
+    "it": "Quale regalo potresti fare a mano per una persona a cui tieni?",
+    "pt": "Que presente poderias fazer à mão para alguém de quem gostas?",
+    "pt_BR": "Que presente você poderia fazer à mão para alguém de quem gosta?"
+   }
+  },
+  {
+   "id": "diy-041",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which tools do you already have at home, and which do you feel you are missing?",
+    "de": "Welche Werkzeuge hast du schon zu Hause, und welche fehlen dir noch?",
+    "es": "¿Qué herramientas tienes ya en casa y cuáles crees que te faltan?",
+    "fr": "Quels outils as-tu déjà chez toi, et lesquels te manquent ?",
+    "it": "Quali attrezzi hai già a casa e quali senti che ti mancano?",
+    "pt": "Que ferramentas já tens em casa e quais achas que te faltam?",
+    "pt_BR": "Quais ferramentas você já tem em casa e quais acha que estão faltando?"
+   }
+  },
+  {
+   "id": "diy-042",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which safety gear would you always wear for drilling or sanding?",
+    "de": "Welche Schutzausrüstung würdest du beim Bohren oder Schleifen immer tragen?",
+    "es": "¿Qué equipo de protección usarías siempre al taladrar o lijar?",
+    "fr": "Quel équipement de protection porterais-tu toujours pour percer ou poncer ?",
+    "it": "Quali dispositivi di protezione indosseresti sempre per forare o carteggiare?",
+    "pt": "Que equipamento de proteção usarias sempre para furar ou lixar?",
+    "pt_BR": "Que equipamento de proteção você usaria sempre para furar ou lixar?"
+   }
+  },
+  {
+   "id": "diy-043",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Have you ever hung a picture or shelf? How did it go?",
+    "de": "Hast du schon mal ein Bild oder ein Regal aufgehängt? Wie lief es?",
+    "es": "¿Alguna vez has colgado un cuadro o una estantería? ¿Qué tal te fue?",
+    "fr": "As-tu déjà accroché un tableau ou posé une étagère ? Comment ça s'est passé ?",
+    "it": "Hai mai appeso un quadro o una mensola? Com'è andata?",
+    "pt": "Já penduraste um quadro ou uma prateleira? Como correu?",
+    "pt_BR": "Você já pendurou um quadro ou uma prateleira? Como foi?"
+   }
+  },
+  {
+   "id": "diy-044",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Do you know where the main water shut-off is in your home?",
+    "de": "Weißt du, wo bei dir zu Hause der Hauptwasserhahn ist?",
+    "es": "¿Sabes dónde está la llave de paso general del agua en tu casa?",
+    "fr": "Sais-tu où se trouve le robinet d'arrêt général de l'eau chez toi ?",
+    "it": "Sai dov'è il rubinetto generale dell'acqua in casa tua?",
+    "pt": "Sabes onde fica a torneira de segurança da água em tua casa?",
+    "pt_BR": "Você sabe onde fica o registro geral de água da sua casa?"
+   }
+  },
+  {
+   "id": "diy-045",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What would you check before drilling a hole in a wall?",
+    "de": "Was würdest du prüfen, bevor du ein Loch in eine Wand bohrst?",
+    "es": "¿Qué comprobarías antes de taladrar un agujero en una pared?",
+    "fr": "Que vérifierais-tu avant de percer un trou dans un mur ?",
+    "it": "Cosa controlleresti prima di fare un foro nel muro?",
+    "pt": "O que verificarias antes de fazer um furo numa parede?",
+    "pt_BR": "O que você verificaria antes de furar uma parede?"
+   }
+  },
+  {
+   "id": "diy-046",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which small repair would you like to learn first?",
+    "de": "Welche kleine Reparatur würdest du gern als Erstes lernen?",
+    "es": "¿Qué pequeña reparación te gustaría aprender primero?",
+    "fr": "Quelle petite réparation aimerais-tu apprendre en premier ?",
+    "it": "Quale piccola riparazione ti piacerebbe imparare per prima?",
+    "pt": "Que pequena reparação gostavas de aprender primeiro?",
+    "pt_BR": "Qual pequeno conserto você gostaria de aprender primeiro?"
+   }
+  },
+  {
+   "id": "diy-047",
+   "lv": "beginner",
+   "i18n": {
+    "en": "How do you feel about using a ladder, and what keeps you safe on one?",
+    "de": "Wie fühlst du dich auf einer Leiter, und was gibt dir dabei Sicherheit?",
+    "es": "¿Cómo te sientes al usar una escalera y qué haces para estar seguro en ella?",
+    "fr": "Comment te sens-tu sur une échelle, et qu'est-ce qui t'aide à rester en sécurité ?",
+    "it": "Come ti senti a usare una scala e cosa ti fa stare sicuro?",
+    "pt": "Como te sentes a usar um escadote e o que te mantém seguro?",
+    "pt_BR": "Como você se sente usando uma escada e o que te deixa seguro nela?"
+   }
+  },
+  {
+   "id": "diy-048",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Have you ever assembled flat-pack furniture? Any tips or stories?",
+    "de": "Hast du schon mal Möbel zum Selbstaufbauen montiert? Hast du Tipps oder Geschichten?",
+    "es": "¿Has montado alguna vez muebles en kit? ¿Tienes consejos o anécdotas?",
+    "fr": "As-tu déjà monté des meubles en kit ? Des astuces ou des anecdotes ?",
+    "it": "Hai mai montato mobili in kit? Hai consigli o aneddoti?",
+    "pt": "Já montaste móveis de kit? Tens dicas ou histórias?",
+    "pt_BR": "Você já montou móveis desmontáveis? Tem dicas ou histórias?"
+   }
+  },
+  {
+   "id": "diy-049",
+   "lv": "beginner",
+   "i18n": {
+    "en": "How would you plan a simple project before buying any materials?",
+    "de": "Wie würdest du ein einfaches Projekt planen, bevor du Material kaufst?",
+    "es": "¿Cómo planificarías un proyecto sencillo antes de comprar materiales?",
+    "fr": "Comment préparerais-tu un projet simple avant d'acheter du matériel ?",
+    "it": "Come pianificheresti un progetto semplice prima di comprare i materiali?",
+    "pt": "Como planearias um projeto simples antes de comprar materiais?",
+    "pt_BR": "Como você planejaria um projeto simples antes de comprar os materiais?"
+   }
+  },
+  {
+   "id": "diy-050",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What is the trickiest part of measuring for you?",
+    "de": "Was fällt dir beim Messen am schwersten?",
+    "es": "¿Qué es lo que más te cuesta a la hora de medir?",
+    "fr": "Qu'est-ce qui est le plus délicat pour toi quand tu prends des mesures ?",
+    "it": "Qual è per te la parte più difficile del prendere le misure?",
+    "pt": "Qual é para ti a parte mais difícil de medir?",
+    "pt_BR": "Qual é para você a parte mais difícil de tirar medidas?"
+   }
+  },
+  {
+   "id": "diy-051",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which do you find easier: using a hammer or a screwdriver? Why?",
+    "de": "Was fällt dir leichter: mit dem Hammer oder mit dem Schraubendreher zu arbeiten? Warum?",
+    "es": "¿Qué te resulta más fácil: usar un martillo o un destornillador? ¿Por qué?",
+    "fr": "Qu'est-ce qui est le plus facile pour toi : le marteau ou le tournevis ? Pourquoi ?",
+    "it": "Cosa trovi più facile: usare il martello o il cacciavite? Perché?",
+    "pt": "O que achas mais fácil: usar um martelo ou uma chave de fendas? Porquê?",
+    "pt_BR": "O que você acha mais fácil: usar um martelo ou uma chave de fenda? Por quê?"
+   }
+  },
+  {
+   "id": "diy-052",
+   "lv": "beginner",
+   "i18n": {
+    "en": "How would you fix a squeaky door or a wobbly chair at home?",
+    "de": "Wie würdest du eine quietschende Tür oder einen wackeligen Stuhl reparieren?",
+    "es": "¿Cómo arreglarías una puerta que chirría o una silla que cojea?",
+    "fr": "Comment réparerais-tu une porte qui grince ou une chaise bancale ?",
+    "it": "Come sistemeresti una porta che cigola o una sedia traballante?",
+    "pt": "Como resolverias uma porta que chia ou uma cadeira que abana?",
+    "pt_BR": "Como você resolveria uma porta que range ou uma cadeira bamba?"
+   }
+  },
+  {
+   "id": "diy-053",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What would you like to know before your first trip to a hardware store?",
+    "de": "Was würdest du gern wissen, bevor du zum ersten Mal in einen Baumarkt gehst?",
+    "es": "¿Qué te gustaría saber antes de tu primera visita a una ferretería?",
+    "fr": "Qu'aimerais-tu savoir avant ta première visite dans un magasin de bricolage ?",
+    "it": "Cosa ti piacerebbe sapere prima della tua prima visita in un negozio di ferramenta?",
+    "pt": "O que gostavas de saber antes da tua primeira ida a uma loja de bricolage?",
+    "pt_BR": "O que você gostaria de saber antes da sua primeira ida a uma loja de material de construção?"
+   }
+  },
+  {
+   "id": "diy-054",
+   "lv": "beginner",
+   "i18n": {
+    "en": "How do you usually clean up after a messy job at home?",
+    "de": "Wie räumst du normalerweise nach einer schmutzigen Arbeit zu Hause auf?",
+    "es": "¿Cómo sueles limpiar después de un trabajo sucio en casa?",
+    "fr": "Comment nettoies-tu d'habitude après un travail salissant à la maison ?",
+    "it": "Come pulisci di solito dopo un lavoro sporco in casa?",
+    "pt": "Como costumas limpar depois de um trabalho sujo em casa?",
+    "pt_BR": "Como você costuma limpar tudo depois de um trabalho sujo em casa?"
+   }
+  },
+  {
+   "id": "diy-055",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which beginner project would you like to finish in one afternoon?",
+    "de": "Welches Einsteigerprojekt würdest du gern an einem Nachmittag fertigstellen?",
+    "es": "¿Qué proyecto para principiantes te gustaría terminar en una tarde?",
+    "fr": "Quel projet pour débutant aimerais-tu terminer en un après-midi ?",
+    "it": "Quale progetto per principianti ti piacerebbe finire in un pomeriggio?",
+    "pt": "Que projeto para iniciantes gostavas de terminar numa tarde?",
+    "pt_BR": "Qual projeto para iniciantes você gostaria de terminar numa tarde?"
+   }
+  },
+  {
+   "id": "diy-056",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Would you like to paint a room yourself? Which room would you start with?",
+    "de": "Würdest du gern selbst ein Zimmer streichen? Mit welchem würdest du anfangen?",
+    "es": "¿Te gustaría pintar una habitación tú mismo? ¿Por cuál empezarías?",
+    "fr": "Aimerais-tu repeindre une pièce toi-même ? Par laquelle commencerais-tu ?",
+    "it": "Ti piacerebbe dipingere una stanza da solo? Da quale cominceresti?",
+    "pt": "Gostavas de pintar uma divisão sozinho? Por qual começarias?",
+    "pt_BR": "Você gostaria de pintar um cômodo sozinho? Por qual começaria?"
+   }
+  },
+  {
+   "id": "diy-057",
+   "lv": "beginner",
+   "i18n": {
+    "en": "How do you keep your tools and materials organised, or how would you like to?",
+    "de": "Wie hältst du Werkzeug und Material in Ordnung, oder wie würdest du es gern tun?",
+    "es": "¿Cómo organizas tus herramientas y materiales, o cómo te gustaría hacerlo?",
+    "fr": "Comment ranges-tu tes outils et ton matériel, ou comment aimerais-tu le faire ?",
+    "it": "Come tieni in ordine attrezzi e materiali, o come ti piacerebbe farlo?",
+    "pt": "Como organizas as tuas ferramentas e materiais, ou como gostavas de o fazer?",
+    "pt_BR": "Como você organiza suas ferramentas e materiais, ou como gostaria de organizar?"
+   }
+  },
+  {
+   "id": "diy-058",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Have you ever unblocked a sink or drain? What did you learn?",
+    "de": "Hast du schon mal ein Waschbecken oder einen Abfluss frei gemacht? Was hast du dabei gelernt?",
+    "es": "¿Has desatascado alguna vez un fregadero o un desagüe? ¿Qué aprendiste?",
+    "fr": "As-tu déjà débouché un évier ou une canalisation ? Qu'en as-tu appris ?",
+    "it": "Hai mai sturato un lavandino o uno scarico? Cosa hai imparato?",
+    "pt": "Já desentupiste um lava-loiça ou um ralo? O que aprendeste?",
+    "pt_BR": "Você já desentupiu uma pia ou um ralo? O que aprendeu?"
+   }
+  },
+  {
+   "id": "diy-059",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What would you put in a basic home emergency kit?",
+    "de": "Was würdest du in ein einfaches Notfallset für zu Hause packen?",
+    "es": "¿Qué pondrías en un kit básico de emergencias para casa?",
+    "fr": "Que mettrais-tu dans un kit d'urgence de base pour la maison ?",
+    "it": "Cosa metteresti in un kit base per le emergenze di casa?",
+    "pt": "O que porias num kit básico de emergência para casa?",
+    "pt_BR": "O que você colocaria num kit básico de emergência para casa?"
+   }
+  },
+  {
+   "id": "diy-060",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which jobs at home would you always leave to an electrician or gas engineer?",
+    "de": "Welche Arbeiten zu Hause würdest du immer Elektrikern oder Gasinstallateuren überlassen?",
+    "es": "¿Qué trabajos de casa dejarías siempre a un electricista o a un técnico de gas?",
+    "fr": "Quels travaux laisserais-tu toujours à un électricien ou à un technicien gaz ?",
+    "it": "Quali lavori in casa lasceresti sempre a un elettricista o a un tecnico del gas?",
+    "pt": "Que trabalhos em casa deixarias sempre para um eletricista ou técnico de gás?",
+    "pt_BR": "Quais serviços em casa você deixaria sempre para um eletricista ou técnico de gás?"
+   }
+  },
+  {
+   "id": "diy-061",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What do you think is the secret to a neat, even paint job?",
+    "de": "Was ist deiner Meinung nach das Geheimnis eines sauberen, gleichmäßigen Anstrichs?",
+    "es": "¿Cuál crees que es el secreto para pintar de forma limpia y uniforme?",
+    "fr": "Selon toi, quel est le secret d'une peinture nette et uniforme ?",
+    "it": "Secondo te, qual è il segreto di una tinteggiatura pulita e uniforme?",
+    "pt": "Qual achas que é o segredo para uma pintura limpa e uniforme?",
+    "pt_BR": "Qual você acha que é o segredo de uma pintura caprichada e uniforme?"
+   }
+  },
+  {
+   "id": "diy-062",
+   "lv": "beginner",
+   "i18n": {
+    "en": "How would you set up a safe, tidy space to work on a project?",
+    "de": "Wie würdest du einen sicheren, ordentlichen Arbeitsplatz für ein Projekt einrichten?",
+    "es": "¿Cómo prepararías un espacio seguro y ordenado para trabajar en un proyecto?",
+    "fr": "Comment installerais-tu un espace sûr et rangé pour travailler sur un projet ?",
+    "it": "Come allestiresti uno spazio sicuro e ordinato per lavorare a un progetto?",
+    "pt": "Como prepararias um espaço seguro e arrumado para trabalhar num projeto?",
+    "pt_BR": "Como você montaria um espaço seguro e organizado para trabalhar num projeto?"
+   }
+  },
+  {
+   "id": "diy-063",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which simple upgrade, like new handles or hooks, would you try first?",
+    "de": "Welches einfache Upgrade, etwa neue Griffe oder Haken, würdest du zuerst ausprobieren?",
+    "es": "¿Qué mejora sencilla, como tiradores o ganchos nuevos, probarías primero?",
+    "fr": "Quelle amélioration simple, comme de nouvelles poignées ou des crochets, essaierais-tu d'abord ?",
+    "it": "Quale miglioria semplice, come maniglie o ganci nuovi, proveresti per prima?",
+    "pt": "Que melhoria simples, como puxadores ou ganchos novos, experimentarias primeiro?",
+    "pt_BR": "Qual melhoria simples, como puxadores ou ganchos novos, você testaria primeiro?"
+   }
+  },
+  {
+   "id": "diy-064",
+   "lv": "beginner",
+   "i18n": {
+    "en": "How do you deal with frustration when a project goes wrong?",
+    "de": "Wie gehst du mit Frust um, wenn ein Projekt schiefgeht?",
+    "es": "¿Cómo llevas la frustración cuando un proyecto sale mal?",
+    "fr": "Comment gères-tu la frustration quand un projet tourne mal ?",
+    "it": "Come gestisci la frustrazione quando un progetto va storto?",
+    "pt": "Como lidas com a frustração quando um projeto corre mal?",
+    "pt_BR": "Como você lida com a frustração quando um projeto dá errado?"
+   }
+  },
+  {
+   "id": "diy-065",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What would make you feel confident using a cordless drill?",
+    "de": "Was würde dir Sicherheit im Umgang mit einem Akkuschrauber geben?",
+    "es": "¿Qué te haría sentir seguro al usar un taladro inalámbrico?",
+    "fr": "Qu'est-ce qui te donnerait confiance pour utiliser une perceuse sans fil ?",
+    "it": "Cosa ti farebbe sentire sicuro nell'usare un trapano a batteria?",
+    "pt": "O que te faria sentir confiante a usar um berbequim sem fios?",
+    "pt_BR": "O que te faria se sentir confiante usando uma furadeira sem fio?"
+   }
+  },
+  {
+   "id": "diy-066",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Would you enjoy building a piece of furniture from scratch? What would it be?",
+    "de": "Würdest du gern ein Möbelstück von Grund auf selbst bauen? Was wäre es?",
+    "es": "¿Te gustaría construir un mueble desde cero? ¿Cuál sería?",
+    "fr": "Aimerais-tu fabriquer un meuble de A à Z ? Lequel serait-ce ?",
+    "it": "Ti piacerebbe costruire un mobile da zero? Quale sarebbe?",
+    "pt": "Gostavas de construir um móvel de raiz? Qual seria?",
+    "pt_BR": "Você curtiria construir um móvel do zero? Qual seria?"
+   }
+  },
+  {
+   "id": "diy-067",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which kind of wood or material would you choose for your next project, and why?",
+    "de": "Welches Holz oder Material würdest du für dein nächstes Projekt wählen, und warum?",
+    "es": "¿Qué tipo de madera o material elegirías para tu próximo proyecto y por qué?",
+    "fr": "Quel bois ou matériau choisirais-tu pour ton prochain projet, et pourquoi ?",
+    "it": "Quale legno o materiale sceglieresti per il tuo prossimo progetto, e perché?",
+    "pt": "Que madeira ou material escolherias para o teu próximo projeto, e porquê?",
+    "pt_BR": "Qual madeira ou material você escolheria para o seu próximo projeto, e por quê?"
+   }
+  },
+  {
+   "id": "diy-068",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Have you ever restored or upcycled an old piece? How did it turn out?",
+    "de": "Hast du schon mal ein altes Stück restauriert oder aufgewertet? Wie ist es geworden?",
+    "es": "¿Has restaurado o reciclado alguna vez un mueble viejo? ¿Cómo quedó?",
+    "fr": "As-tu déjà restauré ou relooké un vieil objet ? Quel a été le résultat ?",
+    "it": "Hai mai restaurato o riciclato un vecchio oggetto? Com'è venuto?",
+    "pt": "Já restauraste ou reaproveitaste uma peça antiga? Como ficou?",
+    "pt_BR": "Você já restaurou ou repaginou uma peça antiga? Como ficou?"
+   }
+  },
+  {
+   "id": "diy-069",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What do you think about tiling a small wall yourself?",
+    "de": "Was hältst du davon, eine kleine Wand selbst zu fliesen?",
+    "es": "¿Qué te parece alicatar tú mismo una pared pequeña?",
+    "fr": "Que penses-tu de carreler toi-même un petit mur ?",
+    "it": "Cosa ne pensi di piastrellare da solo una piccola parete?",
+    "pt": "O que achas de assentar azulejos numa parede pequena sozinho?",
+    "pt_BR": "O que você acha de assentar azulejos numa parede pequena sozinho?"
+   }
+  },
+  {
+   "id": "diy-070",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which garden or balcony project would you love to build?",
+    "de": "Welches Projekt für Garten oder Balkon würdest du gern bauen?",
+    "es": "¿Qué proyecto para el jardín o el balcón te encantaría construir?",
+    "fr": "Quel projet pour le jardin ou le balcon aimerais-tu réaliser ?",
+    "it": "Quale progetto per il giardino o il balcone ti piacerebbe costruire?",
+    "pt": "Que projeto para o jardim ou a varanda adorarias construir?",
+    "pt_BR": "Qual projeto para o jardim ou a varanda você adoraria construir?"
+   }
+  },
+  {
+   "id": "diy-071",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How would you choose between screws, nails, glue or a proper joint?",
+    "de": "Wie würdest du zwischen Schrauben, Nägeln, Leim oder einer richtigen Holzverbindung wählen?",
+    "es": "¿Cómo elegirías entre tornillos, clavos, cola o un ensamble de verdad?",
+    "fr": "Comment choisirais-tu entre vis, clous, colle ou un vrai assemblage ?",
+    "it": "Come sceglieresti tra viti, chiodi, colla o un vero incastro?",
+    "pt": "Como escolherias entre parafusos, pregos, cola ou um encaixe a sério?",
+    "pt_BR": "Como você escolheria entre parafusos, pregos, cola ou um encaixe de verdade?"
+   }
+  },
+  {
+   "id": "diy-072",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What storage problem at home would you love to solve with a DIY idea?",
+    "de": "Welches Stauraumproblem zu Hause würdest du gern mit einer Selbstbau-Idee lösen?",
+    "es": "¿Qué problema de almacenaje de tu casa te gustaría resolver con una idea de bricolaje?",
+    "fr": "Quel problème de rangement aimerais-tu résoudre chez toi avec une idée de bricolage ?",
+    "it": "Quale problema di spazio in casa ti piacerebbe risolvere con un'idea fai da te?",
+    "pt": "Que problema de arrumação em casa gostavas de resolver com uma ideia de bricolage?",
+    "pt_BR": "Qual problema de espaço em casa você gostaria de resolver com uma ideia faça você mesmo?"
+   }
+  },
+  {
+   "id": "diy-073",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How do you decide how much to spend on a good tool versus a cheaper one?",
+    "de": "Wie entscheidest du, ob du mehr für gutes Werkzeug ausgibst oder ein günstigeres nimmst?",
+    "es": "¿Cómo decides cuánto gastar en una buena herramienta frente a una más barata?",
+    "fr": "Comment décides-tu de mettre le prix dans un bon outil plutôt qu'un modèle bon marché ?",
+    "it": "Come decidi quanto spendere per un buon attrezzo rispetto a uno più economico?",
+    "pt": "Como decides quanto gastar numa boa ferramenta em vez de uma mais barata?",
+    "pt_BR": "Como você decide quanto gastar numa ferramenta boa em vez de uma mais barata?"
+   }
+  },
+  {
+   "id": "diy-074",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which home maintenance task do you think people forget most often?",
+    "de": "Welche Wartungsarbeit im Haus vergessen die Leute deiner Meinung nach am häufigsten?",
+    "es": "¿Qué tarea de mantenimiento de la casa crees que la gente olvida más a menudo?",
+    "fr": "Selon toi, quel entretien de la maison oublie-t-on le plus souvent ?",
+    "it": "Secondo te, quale manutenzione di casa le persone dimenticano più spesso?",
+    "pt": "Que tarefa de manutenção da casa achas que as pessoas esquecem mais vezes?",
+    "pt_BR": "Qual tarefa de manutenção da casa você acha que as pessoas mais esquecem?"
+   }
+  },
+  {
+   "id": "diy-075",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How would you make your home warmer in winter without touching any wiring?",
+    "de": "Wie würdest du dein Zuhause im Winter wärmer machen, ohne an Leitungen zu arbeiten?",
+    "es": "¿Cómo harías tu casa más cálida en invierno sin tocar la instalación eléctrica?",
+    "fr": "Comment rendrais-tu ton logement plus chaud en hiver sans toucher à l'électricité ?",
+    "it": "Come renderesti la tua casa più calda d'inverno senza toccare l'impianto elettrico?",
+    "pt": "Como tornarias a tua casa mais quente no inverno sem mexer na instalação elétrica?",
+    "pt_BR": "Como você deixaria sua casa mais quentinha no inverno sem mexer na parte elétrica?"
+   }
+  },
+  {
+   "id": "diy-076",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which repair would you like to tackle in a kitchen or bathroom?",
+    "de": "Welche Reparatur in Küche oder Bad würdest du gern angehen?",
+    "es": "¿Qué reparación te gustaría hacer en la cocina o el baño?",
+    "fr": "Quelle réparation aimerais-tu entreprendre dans la cuisine ou la salle de bains ?",
+    "it": "Quale riparazione ti piacerebbe affrontare in cucina o in bagno?",
+    "pt": "Que reparação gostavas de fazer na cozinha ou na casa de banho?",
+    "pt_BR": "Qual conserto você gostaria de encarar na cozinha ou no banheiro?"
+   }
+  },
+  {
+   "id": "diy-077",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What would you need to learn before laying a new floor?",
+    "de": "Was müsstest du lernen, bevor du einen neuen Boden verlegst?",
+    "es": "¿Qué necesitarías aprender antes de colocar un suelo nuevo?",
+    "fr": "Que devrais-tu apprendre avant de poser un nouveau sol ?",
+    "it": "Cosa dovresti imparare prima di posare un nuovo pavimento?",
+    "pt": "O que precisarias de aprender antes de colocar um chão novo?",
+    "pt_BR": "O que você precisaria aprender antes de colocar um piso novo?"
+   }
+  },
+  {
+   "id": "diy-078",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How do you make sure a shelf or cabinet can safely hold its load?",
+    "de": "Wie stellst du sicher, dass ein Regal oder Schrank sein Gewicht sicher tragen kann?",
+    "es": "¿Cómo te aseguras de que una estantería o un armario aguante bien el peso?",
+    "fr": "Comment t'assures-tu qu'une étagère ou un meuble supporte bien sa charge ?",
+    "it": "Come ti assicuri che una mensola o un mobile reggano il peso in sicurezza?",
+    "pt": "Como garantes que uma prateleira ou armário aguenta bem o peso?",
+    "pt_BR": "Como você garante que uma prateleira ou armário aguenta o peso com segurança?"
+   }
+  },
+  {
+   "id": "diy-079",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which hand tool skill, like sawing or chiselling, would you like to master?",
+    "de": "Welche Fertigkeit mit Handwerkzeug, etwa Sägen oder Stemmen, würdest du gern beherrschen?",
+    "es": "¿Qué habilidad con herramientas manuales, como serrar o usar el formón, te gustaría dominar?",
+    "fr": "Quel savoir-faire à l'outil manuel, comme scier ou ciseler, aimerais-tu maîtriser ?",
+    "it": "Quale abilità con gli attrezzi manuali, come segare o usare lo scalpello, vorresti padroneggiare?",
+    "pt": "Que técnica com ferramentas manuais, como serrar ou usar o formão, gostavas de dominar?",
+    "pt_BR": "Qual técnica com ferramentas manuais, como serrar ou usar o formão, você gostaria de dominar?"
+   }
+  },
+  {
+   "id": "diy-080",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How would you protect a wooden project that will live outdoors?",
+    "de": "Wie würdest du ein Holzprojekt schützen, das draußen stehen soll?",
+    "es": "¿Cómo protegerías un proyecto de madera que va a estar al aire libre?",
+    "fr": "Comment protégerais-tu un projet en bois destiné à rester dehors ?",
+    "it": "Come proteggeresti un progetto in legno destinato a stare all'aperto?",
+    "pt": "Como protegerias um projeto de madeira que vai ficar ao ar livre?",
+    "pt_BR": "Como você protegeria um projeto de madeira que vai ficar ao ar livre?"
+   }
+  },
+  {
+   "id": "diy-081",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How would you refresh an old wooden table without replacing it?",
+    "de": "Wie würdest du einen alten Holztisch auffrischen, ohne ihn zu ersetzen?",
+    "es": "¿Cómo renovarías una mesa de madera vieja sin cambiarla?",
+    "fr": "Comment rafraîchirais-tu une vieille table en bois sans la remplacer ?",
+    "it": "Come rinnoveresti un vecchio tavolo di legno senza sostituirlo?",
+    "pt": "Como renovarias uma mesa de madeira antiga sem a substituir?",
+    "pt_BR": "Como você renovaria uma mesa de madeira antiga sem trocá-la?"
+   }
+  },
+  {
+   "id": "diy-082",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which outdoor repair, like a fence or gate, would you feel ready to try?",
+    "de": "Welche Reparatur draußen, etwa an Zaun oder Tor, würdest du dir zutrauen?",
+    "es": "¿Qué reparación exterior, como una valla o una puerta de jardín, te atreverías a intentar?",
+    "fr": "Quelle réparation extérieure, comme une clôture ou un portail, te sentirais-tu prêt à tenter ?",
+    "it": "Quale riparazione all'aperto, come una recinzione o un cancello, ti sentiresti pronto a provare?",
+    "pt": "Que reparação no exterior, como uma vedação ou um portão, te sentirias pronto para tentar?",
+    "pt_BR": "Qual conserto ao ar livre, como uma cerca ou um portão, você se sentiria pronto para tentar?"
+   }
+  },
+  {
+   "id": "diy-083",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What makes a repair café or tool library a good idea in your opinion?",
+    "de": "Was macht ein Repair-Café oder eine Werkzeugbibliothek deiner Meinung nach zu einer guten Idee?",
+    "es": "¿Por qué crees que un café de reparación o una biblioteca de herramientas es una buena idea?",
+    "fr": "Selon toi, qu'est-ce qui fait d'un repair café ou d'une outilthèque une bonne idée ?",
+    "it": "Secondo te, cosa rende un repair café o una biblioteca degli attrezzi una buona idea?",
+    "pt": "Na tua opinião, o que torna um repair café ou uma biblioteca de ferramentas uma boa ideia?",
+    "pt_BR": "Na sua opinião, o que faz de um café de conserto ou uma biblioteca de ferramentas uma boa ideia?"
+   }
+  },
+  {
+   "id": "diy-084",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How would you explain the importance of preparation before painting or tiling?",
+    "de": "Wie würdest du erklären, warum die Vorbereitung vor dem Streichen oder Fliesen so wichtig ist?",
+    "es": "¿Cómo explicarías la importancia de preparar bien antes de pintar o alicatar?",
+    "fr": "Comment expliquerais-tu l'importance de la préparation avant de peindre ou carreler ?",
+    "it": "Come spiegheresti l'importanza della preparazione prima di dipingere o piastrellare?",
+    "pt": "Como explicarias a importância da preparação antes de pintar ou assentar azulejos?",
+    "pt_BR": "Como você explicaria a importância da preparação antes de pintar ou assentar azulejos?"
+   }
+  },
+  {
+   "id": "diy-085",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which project would you like to do to make your home more eco-friendly?",
+    "de": "Welches Projekt würdest du gern umsetzen, um dein Zuhause umweltfreundlicher zu machen?",
+    "es": "¿Qué proyecto te gustaría hacer para que tu casa sea más ecológica?",
+    "fr": "Quel projet aimerais-tu réaliser pour rendre ta maison plus écologique ?",
+    "it": "Quale progetto ti piacerebbe realizzare per rendere la tua casa più ecologica?",
+    "pt": "Que projeto gostavas de fazer para tornar a tua casa mais ecológica?",
+    "pt_BR": "Qual projeto você gostaria de fazer para deixar sua casa mais sustentável?"
+   }
+  },
+  {
+   "id": "diy-086",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Which traditional joint, like a dovetail or mortise and tenon, would you love to cut?",
+    "de": "Welche traditionelle Holzverbindung, etwa Schwalbenschwanz oder Zapfen, würdest du gern herstellen?",
+    "es": "¿Qué ensamble tradicional, como la cola de milano o la caja y espiga, te encantaría hacer?",
+    "fr": "Quel assemblage traditionnel, comme la queue d'aronde ou le tenon-mortaise, aimerais-tu tailler ?",
+    "it": "Quale incastro tradizionale, come la coda di rondine o il tenone e mortasa, ti piacerebbe realizzare?",
+    "pt": "Que encaixe tradicional, como a cauda de andorinha ou a respiga e mecha, adorarias fazer?",
+    "pt_BR": "Qual encaixe tradicional, como rabo de andorinha ou espiga e furo, você adoraria fazer?"
+   }
+  },
+  {
+   "id": "diy-087",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How would you design a piece of furniture that fits your space perfectly?",
+    "de": "Wie würdest du ein Möbelstück entwerfen, das perfekt in deinen Raum passt?",
+    "es": "¿Cómo diseñarías un mueble que encaje perfectamente en tu espacio?",
+    "fr": "Comment concevrais-tu un meuble parfaitement adapté à ton espace ?",
+    "it": "Come progetteresti un mobile che si adatti perfettamente al tuo spazio?",
+    "pt": "Como desenharias um móvel que encaixasse na perfeição no teu espaço?",
+    "pt_BR": "Como você projetaria um móvel que encaixasse perfeitamente no seu espaço?"
+   }
+  },
+  {
+   "id": "diy-088",
+   "lv": "advanced",
+   "i18n": {
+    "en": "What do you consider when working with professionals on a bigger home project?",
+    "de": "Worauf achtest du, wenn du bei einem größeren Projekt mit Fachleuten zusammenarbeitest?",
+    "es": "¿Qué tienes en cuenta al trabajar con profesionales en un proyecto grande en casa?",
+    "fr": "À quoi fais-tu attention quand tu travailles avec des professionnels sur un gros projet ?",
+    "it": "A cosa fai attenzione quando lavori con dei professionisti a un progetto di casa più grande?",
+    "pt": "O que tens em conta quando trabalhas com profissionais num projeto maior em casa?",
+    "pt_BR": "O que você leva em conta ao trabalhar com profissionais num projeto maior em casa?"
+   }
+  },
+  {
+   "id": "diy-089",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How would you plan a room makeover from mood board to finished space?",
+    "de": "Wie würdest du eine Zimmerverschönerung vom Moodboard bis zum fertigen Raum planen?",
+    "es": "¿Cómo planificarías la renovación de una habitación, del tablero de inspiración al resultado final?",
+    "fr": "Comment organiserais-tu la transformation d'une pièce, de la planche d'inspiration au résultat final ?",
+    "it": "Come pianificheresti il restyling di una stanza, dalla moodboard al risultato finito?",
+    "pt": "Como planearias a renovação de uma divisão, do painel de inspiração ao espaço terminado?",
+    "pt_BR": "Como você planejaria a reforma de um cômodo, do painel de inspiração ao espaço pronto?"
+   }
+  },
+  {
+   "id": "diy-090",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Which woodworking tradition from another culture inspires you, and why?",
+    "de": "Welche Holzbautradition aus einer anderen Kultur inspiriert dich, und warum?",
+    "es": "¿Qué tradición de carpintería de otra cultura te inspira y por qué?",
+    "fr": "Quelle tradition du travail du bois d'une autre culture t'inspire, et pourquoi ?",
+    "it": "Quale tradizione di lavorazione del legno di un'altra cultura ti ispira, e perché?",
+    "pt": "Que tradição de carpintaria de outra cultura te inspira, e porquê?",
+    "pt_BR": "Qual tradição de marcenaria de outra cultura te inspira, e por quê?"
+   }
+  },
+  {
+   "id": "diy-091",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How do you think about risk before starting a big or unfamiliar project?",
+    "de": "Wie denkst du über Risiken nach, bevor du ein großes oder unbekanntes Projekt beginnst?",
+    "es": "¿Cómo valoras los riesgos antes de empezar un proyecto grande o desconocido?",
+    "fr": "Comment évalues-tu les risques avant de te lancer dans un projet ambitieux ou inconnu ?",
+    "it": "Come valuti i rischi prima di iniziare un progetto grande o sconosciuto?",
+    "pt": "Como pensas nos riscos antes de começar um projeto grande ou desconhecido?",
+    "pt_BR": "Como você pensa nos riscos antes de começar um projeto grande ou desconhecido?"
+   }
+  },
+  {
+   "id": "diy-092",
+   "lv": "advanced",
+   "i18n": {
+    "en": "What would your ideal home workshop layout include?",
+    "de": "Was würde der ideale Grundriss deiner Heimwerkstatt alles enthalten?",
+    "es": "¿Qué incluiría la distribución ideal de tu taller en casa?",
+    "fr": "Que comprendrait l'agencement idéal de ton atelier à la maison ?",
+    "it": "Cosa includerebbe la disposizione ideale del tuo laboratorio di casa?",
+    "pt": "O que incluiria a disposição ideal da tua oficina em casa?",
+    "pt_BR": "O que teria o layout ideal da sua oficina em casa?"
+   }
+  },
+  {
+   "id": "diy-093",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How would you teach a beginner friend their first DIY skills safely?",
+    "de": "Wie würdest du einem Freund ohne Erfahrung die ersten Heimwerker-Kenntnisse sicher beibringen?",
+    "es": "¿Cómo enseñarías a un amigo principiante sus primeras habilidades de bricolaje con seguridad?",
+    "fr": "Comment apprendrais-tu à un ami débutant ses premières bases du bricolage en toute sécurité ?",
+    "it": "Come insegneresti a un amico principiante le prime abilità di fai da te in sicurezza?",
+    "pt": "Como ensinarias a um amigo principiante as primeiras técnicas de bricolage em segurança?",
+    "pt_BR": "Como você ensinaria a um amigo iniciante as primeiras técnicas de faça você mesmo com segurança?"
+   }
+  },
+  {
+   "id": "diy-094",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Which finishing technique would you love to perfect, like varnish, oil or polish?",
+    "de": "Welche Oberflächentechnik würdest du gern perfektionieren, etwa Lack, Öl oder Politur?",
+    "es": "¿Qué técnica de acabado te encantaría perfeccionar, como el barniz, el aceite o el pulido?",
+    "fr": "Quelle technique de finition aimerais-tu perfectionner, comme le vernis, l'huile ou le polissage ?",
+    "it": "Quale tecnica di finitura ti piacerebbe perfezionare, come vernice, olio o lucidatura?",
+    "pt": "Que técnica de acabamento adorarias aperfeiçoar, como verniz, óleo ou polimento?",
+    "pt_BR": "Qual técnica de acabamento você adoraria aperfeiçoar, como verniz, óleo ou polimento?"
+   }
+  },
+  {
+   "id": "diy-095",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How do you balance beauty, durability and cost in a project?",
+    "de": "Wie bringst du bei einem Projekt Schönheit, Haltbarkeit und Kosten ins Gleichgewicht?",
+    "es": "¿Cómo equilibras belleza, durabilidad y coste en un proyecto?",
+    "fr": "Comment trouves-tu l'équilibre entre beauté, solidité et coût dans un projet ?",
+    "it": "Come bilanci bellezza, durata e costi in un progetto?",
+    "pt": "Como equilibras beleza, durabilidade e custo num projeto?",
+    "pt_BR": "Como você equilibra beleza, durabilidade e custo num projeto?"
+   }
+  },
+  {
+   "id": "diy-096",
+   "lv": "advanced",
+   "i18n": {
+    "en": "What would you love to make that could be passed down for generations?",
+    "de": "Was würdest du gern herstellen, das über Generationen weitergegeben werden könnte?",
+    "es": "¿Qué te encantaría hacer que pudiera pasar de generación en generación?",
+    "fr": "Qu'aimerais-tu fabriquer qui pourrait se transmettre de génération en génération ?",
+    "it": "Cosa ti piacerebbe creare che possa essere tramandato per generazioni?",
+    "pt": "O que adorarias fazer que pudesse passar de geração em geração?",
+    "pt_BR": "O que você adoraria fazer que pudesse passar de geração em geração?"
+   }
+  },
+  {
+   "id": "diy-097",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How would you use digital tools, like design apps, to plan your projects?",
+    "de": "Wie würdest du digitale Werkzeuge wie Design-Apps nutzen, um deine Projekte zu planen?",
+    "es": "¿Cómo usarías herramientas digitales, como apps de diseño, para planificar tus proyectos?",
+    "fr": "Comment utiliserais-tu des outils numériques, comme des applis de conception, pour tes projets ?",
+    "it": "Come useresti strumenti digitali, come app di progettazione, per pianificare i tuoi progetti?",
+    "pt": "Como usarias ferramentas digitais, como apps de design, para planear os teus projetos?",
+    "pt_BR": "Como você usaria ferramentas digitais, como apps de design, para planejar seus projetos?"
+   }
+  },
+  {
+   "id": "diy-098",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Which big project would be your proudest achievement in the next few years?",
+    "de": "Welches große Projekt wäre in den nächsten Jahren dein stolzester Erfolg?",
+    "es": "¿Qué gran proyecto sería tu mayor orgullo en los próximos años?",
+    "fr": "Quel grand projet serait ta plus belle fierté dans les prochaines années ?",
+    "it": "Quale grande progetto sarebbe il tuo più grande orgoglio nei prossimi anni?",
+    "pt": "Que grande projeto seria o teu maior orgulho nos próximos anos?",
+    "pt_BR": "Qual grande projeto seria o seu maior orgulho nos próximos anos?"
+   }
+  },
+  {
+   "id": "diy-099",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How has learning DIY changed the way you look at everyday objects?",
+    "de": "Wie hat das Heimwerken deinen Blick auf Alltagsgegenstände verändert?",
+    "es": "¿Cómo ha cambiado el bricolaje tu forma de ver los objetos cotidianos?",
+    "fr": "Comment le bricolage a-t-il changé ta façon de voir les objets du quotidien ?",
+    "it": "Come ha cambiato il fai da te il tuo modo di guardare gli oggetti di tutti i giorni?",
+    "pt": "Como é que a bricolage mudou a forma como olhas para os objetos do dia a dia?",
+    "pt_BR": "Como aprender a fazer as coisas sozinho mudou seu jeito de ver os objetos do dia a dia?"
+   }
+  },
+  {
+   "id": "diy-100",
+   "lv": "advanced",
+   "i18n": {
+    "en": "What skill would you combine with DIY to create something truly unique?",
+    "de": "Welche Fähigkeit würdest du mit dem Heimwerken kombinieren, um etwas wirklich Einzigartiges zu schaffen?",
+    "es": "¿Qué habilidad combinarías con el bricolaje para crear algo realmente único?",
+    "fr": "Quelle compétence associerais-tu au bricolage pour créer quelque chose de vraiment unique ?",
+    "it": "Quale abilità uniresti al fai da te per creare qualcosa di davvero unico?",
+    "pt": "Que habilidade combinarias com a bricolage para criar algo realmente único?",
+    "pt_BR": "Qual habilidade você combinaria com o faça você mesmo para criar algo realmente único?"
+   }
+  }
+ ]
+}

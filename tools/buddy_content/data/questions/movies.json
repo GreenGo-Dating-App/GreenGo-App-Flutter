@@ -1,0 +1,1305 @@
+{
+"topic": "movies",
+"questions": [
+{
+"id": "movies-001",
+"lv": "any",
+"i18n": {
+"en": "What is your all-time favourite movie, and why?",
+"de": "Was ist dein Lieblingsfilm aller Zeiten, und warum?",
+"es": "¿Cuál es tu película favorita de todos los tiempos y por qué?",
+"fr": "Quel est ton film préféré de tous les temps, et pourquoi ?",
+"it": "Qual è il tuo film preferito di sempre, e perché?",
+"pt": "Qual é o teu filme preferido de sempre, e porquê?",
+"pt_BR": "Qual é o seu filme favorito de todos os tempos, e por quê?"
+}
+},
+{
+"id": "movies-002",
+"lv": "any",
+"i18n": {
+"en": "Do you prefer watching movies at the cinema or at home?",
+"de": "Schaust du Filme lieber im Kino oder zu Hause?",
+"es": "¿Prefieres ver películas en el cine o en casa?",
+"fr": "Préfères-tu regarder des films au cinéma ou à la maison ?",
+"it": "Preferisci guardare i film al cinema o a casa?",
+"pt": "Preferes ver filmes no cinema ou em casa?",
+"pt_BR": "Você prefere assistir filmes no cinema ou em casa?"
+}
+},
+{
+"id": "movies-003",
+"lv": "any",
+"i18n": {
+"en": "Which movie genre do you enjoy the most?",
+"de": "Welches Filmgenre magst du am meisten?",
+"es": "¿Qué género de cine disfrutas más?",
+"fr": "Quel genre de film préfères-tu ?",
+"it": "Quale genere di film ti piace di più?",
+"pt": "Que género de filmes é que mais gostas?",
+"pt_BR": "Qual gênero de filme você mais curte?"
+}
+},
+{
+"id": "movies-004",
+"lv": "any",
+"i18n": {
+"en": "What is the first movie you remember seeing?",
+"de": "An welchen Film kannst du dich als ersten erinnern?",
+"es": "¿Cuál es la primera película que recuerdas haber visto?",
+"fr": "Quel est le premier film dont tu te souviens ?",
+"it": "Qual è il primo film che ricordi di aver visto?",
+"pt": "Qual é o primeiro filme de que te lembras de ter visto?",
+"pt_BR": "Qual é o primeiro filme de que você se lembra de ter assistido?"
+}
+},
+{
+"id": "movies-005",
+"lv": "any",
+"i18n": {
+"en": "Which movie could you watch again and again without getting bored?",
+"de": "Welchen Film könntest du immer wieder sehen, ohne dass er langweilig wird?",
+"es": "¿Qué película podrías ver una y otra vez sin aburrirte?",
+"fr": "Quel film pourrais-tu revoir encore et encore sans t'ennuyer ?",
+"it": "Quale film potresti rivedere all'infinito senza annoiarti?",
+"pt": "Que filme conseguias ver vezes sem conta sem te aborreceres?",
+"pt_BR": "Qual filme você poderia ver de novo e de novo sem enjoar?"
+}
+},
+{
+"id": "movies-006",
+"lv": "any",
+"i18n": {
+"en": "Who is an actor or actress you always enjoy watching?",
+"de": "Welchen Schauspieler oder welche Schauspielerin siehst du immer gern?",
+"es": "¿Qué actor o actriz siempre disfrutas viendo?",
+"fr": "Quel acteur ou quelle actrice aimes-tu toujours regarder ?",
+"it": "Quale attore o attrice guardi sempre con piacere?",
+"pt": "Que ator ou atriz gostas sempre de ver?",
+"pt_BR": "Qual ator ou atriz você sempre gosta de ver?"
+}
+},
+{
+"id": "movies-007",
+"lv": "any",
+"i18n": {
+"en": "What movie soundtrack do you love listening to?",
+"de": "Welchen Filmsoundtrack hörst du besonders gern?",
+"es": "¿Qué banda sonora de película te encanta escuchar?",
+"fr": "Quelle bande originale de film adores-tu écouter ?",
+"it": "Quale colonna sonora di un film ami ascoltare?",
+"pt": "Que banda sonora de filme adoras ouvir?",
+"pt_BR": "Qual trilha sonora de filme você adora ouvir?"
+}
+},
+{
+"id": "movies-008",
+"lv": "any",
+"i18n": {
+"en": "What is your perfect movie night snack?",
+"de": "Was ist dein perfekter Snack für einen Filmabend?",
+"es": "¿Cuál es tu picoteo perfecto para una noche de cine?",
+"fr": "Quel est ton grignotage idéal pour une soirée film ?",
+"it": "Qual è il tuo snack perfetto per una serata film?",
+"pt": "Qual é o teu petisco perfeito para uma noite de cinema?",
+"pt_BR": "Qual é o seu petisco perfeito para uma noite de filme?"
+}
+},
+{
+"id": "movies-009",
+"lv": "any",
+"i18n": {
+"en": "Which animated film do you love, whatever your age?",
+"de": "Welchen Animationsfilm liebst du, egal wie alt du bist?",
+"es": "¿Qué película de animación te encanta, tengas la edad que tengas?",
+"fr": "Quel film d'animation adores-tu, quel que soit ton âge ?",
+"it": "Quale film d'animazione ami, a prescindere dall'età?",
+"pt": "Que filme de animação adoras, seja qual for a tua idade?",
+"pt_BR": "Qual filme de animação você ama, não importa a idade?"
+}
+},
+{
+"id": "movies-010",
+"lv": "any",
+"i18n": {
+"en": "What movie made you laugh the hardest?",
+"de": "Bei welchem Film hast du am meisten gelacht?",
+"es": "¿Qué película te ha hecho reír más?",
+"fr": "Quel film t'a le plus fait rire ?",
+"it": "Quale film ti ha fatto ridere di più?",
+"pt": "Que filme te fez rir mais?",
+"pt_BR": "Qual filme te fez rir mais?"
+}
+},
+{
+"id": "movies-011",
+"lv": "any",
+"i18n": {
+"en": "Is there a film from your country you would recommend to a visitor?",
+"de": "Gibt es einen Film aus deinem Land, den du Besuchern empfehlen würdest?",
+"es": "¿Hay alguna película de tu país que recomendarías a un visitante?",
+"fr": "Y a-t-il un film de ton pays que tu recommanderais à un visiteur ?",
+"it": "C'è un film del tuo paese che consiglieresti a un visitatore?",
+"pt": "Há algum filme do teu país que recomendarias a um visitante?",
+"pt_BR": "Tem algum filme do seu país que você recomendaria para um visitante?"
+}
+},
+{
+"id": "movies-012",
+"lv": "any",
+"i18n": {
+"en": "Who do you usually watch movies with?",
+"de": "Mit wem schaust du normalerweise Filme?",
+"es": "¿Con quién sueles ver películas?",
+"fr": "Avec qui regardes-tu des films d'habitude ?",
+"it": "Con chi guardi di solito i film?",
+"pt": "Com quem costumas ver filmes?",
+"pt_BR": "Com quem você costuma assistir filmes?"
+}
+},
+{
+"id": "movies-013",
+"lv": "any",
+"i18n": {
+"en": "What movie world would you love to step into for a day?",
+"de": "In welche Filmwelt würdest du gern für einen Tag eintauchen?",
+"es": "¿En qué mundo de película te encantaría entrar por un día?",
+"fr": "Dans quel univers de film aimerais-tu entrer le temps d'une journée ?",
+"it": "In quale mondo cinematografico vorresti entrare per un giorno?",
+"pt": "Em que mundo de filme adorarias entrar por um dia?",
+"pt_BR": "Em qual mundo de filme você adoraria entrar por um dia?"
+}
+},
+{
+"id": "movies-014",
+"lv": "any",
+"i18n": {
+"en": "Which movie character do you relate to the most?",
+"de": "Mit welcher Filmfigur kannst du dich am meisten identifizieren?",
+"es": "¿Con qué personaje de película te identificas más?",
+"fr": "À quel personnage de film t'identifies-tu le plus ?",
+"it": "In quale personaggio di un film ti rivedi di più?",
+"pt": "Com que personagem de filme mais te identificas?",
+"pt_BR": "Com qual personagem de filme você mais se identifica?"
+}
+},
+{
+"id": "movies-015",
+"lv": "any",
+"i18n": {
+"en": "Do you prefer subtitles or dubbing for foreign films?",
+"de": "Bevorzugst du bei ausländischen Filmen Untertitel oder Synchronisation?",
+"es": "¿Prefieres subtítulos o doblaje en las películas extranjeras?",
+"fr": "Pour les films étrangers, préfères-tu les sous-titres ou le doublage ?",
+"it": "Per i film stranieri preferisci i sottotitoli o il doppiaggio?",
+"pt": "Nos filmes estrangeiros, preferes legendas ou dobragem?",
+"pt_BR": "Nos filmes estrangeiros, você prefere legenda ou dublagem?"
+}
+},
+{
+"id": "movies-016",
+"lv": "any",
+"i18n": {
+"en": "What is a movie that changed the way you see something?",
+"de": "Welcher Film hat deine Sicht auf etwas verändert?",
+"es": "¿Qué película cambió tu forma de ver algo?",
+"fr": "Quel film a changé ta façon de voir quelque chose ?",
+"it": "Quale film ha cambiato il tuo modo di vedere qualcosa?",
+"pt": "Que filme mudou a forma como vês alguma coisa?",
+"pt_BR": "Qual filme mudou o jeito como você enxerga alguma coisa?"
+}
+},
+{
+"id": "movies-017",
+"lv": "any",
+"i18n": {
+"en": "Which movie do you think everyone should see at least once?",
+"de": "Welchen Film sollte deiner Meinung nach jeder mindestens einmal sehen?",
+"es": "¿Qué película crees que todo el mundo debería ver al menos una vez?",
+"fr": "Quel film tout le monde devrait-il voir au moins une fois selon toi ?",
+"it": "Quale film secondo te tutti dovrebbero vedere almeno una volta?",
+"pt": "Que filme achas que toda a gente devia ver pelo menos uma vez?",
+"pt_BR": "Qual filme você acha que todo mundo deveria ver pelo menos uma vez?"
+}
+},
+{
+"id": "movies-018",
+"lv": "any",
+"i18n": {
+"en": "What is your favourite movie scene of all time?",
+"de": "Was ist deine liebste Filmszene aller Zeiten?",
+"es": "¿Cuál es tu escena de película favorita de todos los tiempos?",
+"fr": "Quelle est ta scène de film préférée de tous les temps ?",
+"it": "Qual è la tua scena di un film preferita di sempre?",
+"pt": "Qual é a tua cena de filme preferida de sempre?",
+"pt_BR": "Qual é a sua cena de filme favorita de todos os tempos?"
+}
+},
+{
+"id": "movies-019",
+"lv": "any",
+"i18n": {
+"en": "Do you like to read reviews before watching a film?",
+"de": "Liest du gern Kritiken, bevor du einen Film schaust?",
+"es": "¿Te gusta leer críticas antes de ver una película?",
+"fr": "Aimes-tu lire des critiques avant de voir un film ?",
+"it": "Ti piace leggere le recensioni prima di guardare un film?",
+"pt": "Gostas de ler críticas antes de ver um filme?",
+"pt_BR": "Você gosta de ler críticas antes de ver um filme?"
+}
+},
+{
+"id": "movies-020",
+"lv": "any",
+"i18n": {
+"en": "What movie would you recommend to cheer someone up?",
+"de": "Welchen Film würdest du empfehlen, um jemanden aufzuheitern?",
+"es": "¿Qué película recomendarías para animar a alguien?",
+"fr": "Quel film recommanderais-tu pour remonter le moral de quelqu'un ?",
+"it": "Quale film consiglieresti per tirare su il morale a qualcuno?",
+"pt": "Que filme recomendarias para animar alguém?",
+"pt_BR": "Qual filme você recomendaria para animar alguém?"
+}
+},
+{
+"id": "movies-021",
+"lv": "any",
+"i18n": {
+"en": "Which movie made you want to travel somewhere?",
+"de": "Welcher Film hat dir Lust gemacht, irgendwohin zu reisen?",
+"es": "¿Qué película te dio ganas de viajar a algún lugar?",
+"fr": "Quel film t'a donné envie de voyager quelque part ?",
+"it": "Quale film ti ha fatto venire voglia di viaggiare?",
+"pt": "Que filme te deu vontade de viajar para algum lado?",
+"pt_BR": "Qual filme te deu vontade de viajar para algum lugar?"
+}
+},
+{
+"id": "movies-022",
+"lv": "any",
+"i18n": {
+"en": "What is your favourite movie from your childhood?",
+"de": "Was ist dein Lieblingsfilm aus deiner Kindheit?",
+"es": "¿Cuál es tu película favorita de la infancia?",
+"fr": "Quel est ton film préféré de ton enfance ?",
+"it": "Qual è il tuo film preferito dell'infanzia?",
+"pt": "Qual é o teu filme preferido da infância?",
+"pt_BR": "Qual é o seu filme favorito da infância?"
+}
+},
+{
+"id": "movies-023",
+"lv": "any",
+"i18n": {
+"en": "Do you prefer new releases or older films?",
+"de": "Magst du lieber Neuerscheinungen oder ältere Filme?",
+"es": "¿Prefieres los estrenos o las películas antiguas?",
+"fr": "Préfères-tu les nouveautés ou les films plus anciens ?",
+"it": "Preferisci le novità o i film più vecchi?",
+"pt": "Preferes estreias ou filmes mais antigos?",
+"pt_BR": "Você prefere lançamentos ou filmes mais antigos?"
+}
+},
+{
+"id": "movies-024",
+"lv": "any",
+"i18n": {
+"en": "Which movie musical gets you singing along?",
+"de": "Bei welchem Filmmusical singst du mit?",
+"es": "¿Con qué musical de cine acabas cantando?",
+"fr": "Quelle comédie musicale te donne envie de chanter ?",
+"it": "Con quale musical al cinema ti ritrovi a cantare?",
+"pt": "Que musical de cinema te põe a cantar?",
+"pt_BR": "Com qual musical de cinema você se pega cantando junto?"
+}
+},
+{
+"id": "movies-025",
+"lv": "any",
+"i18n": {
+"en": "What is your favourite place to watch a movie?",
+"de": "Wo schaust du am liebsten einen Film?",
+"es": "¿Cuál es tu lugar favorito para ver una película?",
+"fr": "Quel est ton endroit préféré pour regarder un film ?",
+"it": "Qual è il tuo posto preferito per guardare un film?",
+"pt": "Qual é o teu sítio preferido para ver um filme?",
+"pt_BR": "Qual é o seu lugar favorito para assistir a um filme?"
+}
+},
+{
+"id": "movies-026",
+"lv": "any",
+"i18n": {
+"en": "Which director's films do you always look forward to?",
+"de": "Auf die Filme welches Regisseurs oder welcher Regisseurin freust du dich immer?",
+"es": "¿De qué director o directora esperas siempre las películas?",
+"fr": "De quel réalisateur ou réalisatrice attends-tu toujours les films ?",
+"it": "Di quale regista aspetti sempre i film?",
+"pt": "De que realizador ou realizadora esperas sempre os filmes?",
+"pt_BR": "De qual diretor ou diretora você sempre espera os filmes?"
+}
+},
+{
+"id": "movies-027",
+"lv": "any",
+"i18n": {
+"en": "What movie would you choose for a family movie night?",
+"de": "Welchen Film würdest du für einen Familienfilmabend wählen?",
+"es": "¿Qué película elegirías para una noche de cine en familia?",
+"fr": "Quel film choisirais-tu pour une soirée cinéma en famille ?",
+"it": "Quale film sceglieresti per una serata film in famiglia?",
+"pt": "Que filme escolherias para uma noite de cinema em família?",
+"pt_BR": "Qual filme você escolheria para uma noite de cinema em família?"
+}
+},
+{
+"id": "movies-028",
+"lv": "any",
+"i18n": {
+"en": "Is there a movie you liked more the second time you watched it?",
+"de": "Gibt es einen Film, der dir beim zweiten Mal besser gefallen hat?",
+"es": "¿Hay alguna película que te gustó más la segunda vez que la viste?",
+"fr": "Y a-t-il un film que tu as préféré en le revoyant ?",
+"it": "C'è un film che ti è piaciuto di più la seconda volta?",
+"pt": "Há algum filme de que gostaste mais na segunda vez que o viste?",
+"pt_BR": "Tem algum filme que você gostou mais na segunda vez que assistiu?"
+}
+},
+{
+"id": "movies-029",
+"lv": "any",
+"i18n": {
+"en": "What book would you love to see turned into a movie?",
+"de": "Welches Buch würdest du gern verfilmt sehen?",
+"es": "¿Qué libro te encantaría ver convertido en película?",
+"fr": "Quel livre aimerais-tu voir adapté au cinéma ?",
+"it": "Quale libro ti piacerebbe vedere trasformato in film?",
+"pt": "Que livro adorarias ver adaptado ao cinema?",
+"pt_BR": "Qual livro você adoraria ver virar filme?"
+}
+},
+{
+"id": "movies-030",
+"lv": "any",
+"i18n": {
+"en": "Which movie hero or heroine inspires you?",
+"de": "Welcher Filmheld oder welche Filmheldin inspiriert dich?",
+"es": "¿Qué héroe o heroína de cine te inspira?",
+"fr": "Quel héros ou quelle héroïne de cinéma t'inspire ?",
+"it": "Quale eroe o eroina del cinema ti ispira?",
+"pt": "Que herói ou heroína de cinema te inspira?",
+"pt_BR": "Qual herói ou heroína de cinema te inspira?"
+}
+},
+{
+"id": "movies-031",
+"lv": "any",
+"i18n": {
+"en": "What is a movie you discovered by chance and loved?",
+"de": "Welchen Film hast du zufällig entdeckt und geliebt?",
+"es": "¿Qué película descubriste por casualidad y te encantó?",
+"fr": "Quel film as-tu découvert par hasard et adoré ?",
+"it": "Quale film hai scoperto per caso e ti è piaciuto moltissimo?",
+"pt": "Que filme descobriste por acaso e adoraste?",
+"pt_BR": "Qual filme você descobriu por acaso e amou?"
+}
+},
+{
+"id": "movies-032",
+"lv": "any",
+"i18n": {
+"en": "How do you usually choose what to watch?",
+"de": "Wie entscheidest du normalerweise, was du schaust?",
+"es": "¿Cómo sueles elegir qué ver?",
+"fr": "Comment choisis-tu d'habitude ce que tu vas regarder ?",
+"it": "Come scegli di solito cosa guardare?",
+"pt": "Como costumas escolher o que ver?",
+"pt_BR": "Como você costuma escolher o que assistir?"
+}
+},
+{
+"id": "movies-033",
+"lv": "any",
+"i18n": {
+"en": "Which film from another country surprised you in a good way?",
+"de": "Welcher Film aus einem anderen Land hat dich positiv überrascht?",
+"es": "¿Qué película de otro país te sorprendió para bien?",
+"fr": "Quel film d'un autre pays t'a agréablement surpris ?",
+"it": "Quale film di un altro paese ti ha sorpreso piacevolmente?",
+"pt": "Que filme de outro país te surpreendeu pela positiva?",
+"pt_BR": "Qual filme de outro país te surpreendeu positivamente?"
+}
+},
+{
+"id": "movies-034",
+"lv": "any",
+"i18n": {
+"en": "What is a movie quote you use in everyday life?",
+"de": "Welches Filmzitat benutzt du im Alltag?",
+"es": "¿Qué frase de película usas en tu día a día?",
+"fr": "Quelle réplique de film utilises-tu dans la vie de tous les jours ?",
+"it": "Quale battuta di un film usi nella vita di tutti i giorni?",
+"pt": "Que frase de filme usas no dia a dia?",
+"pt_BR": "Qual frase de filme você usa no dia a dia?"
+}
+},
+{
+"id": "movies-035",
+"lv": "any",
+"i18n": {
+"en": "Would you rather watch a comedy or an adventure tonight?",
+"de": "Würdest du heute Abend lieber eine Komödie oder einen Abenteuerfilm sehen?",
+"es": "¿Esta noche preferirías ver una comedia o una película de aventuras?",
+"fr": "Ce soir, tu préférerais voir une comédie ou un film d'aventure ?",
+"it": "Stasera preferiresti guardare una commedia o un film d'avventura?",
+"pt": "Esta noite preferias ver uma comédia ou um filme de aventura?",
+"pt_BR": "Hoje à noite você preferiria ver uma comédia ou um filme de aventura?"
+}
+},
+{
+"id": "movies-036",
+"lv": "any",
+"i18n": {
+"en": "What movie has the most beautiful images you have ever seen?",
+"de": "Welcher Film hat die schönsten Bilder, die du je gesehen hast?",
+"es": "¿Qué película tiene las imágenes más bonitas que has visto?",
+"fr": "Quel film a les plus belles images que tu aies jamais vues ?",
+"it": "Quale film ha le immagini più belle che tu abbia mai visto?",
+"pt": "Que filme tem as imagens mais bonitas que já viste?",
+"pt_BR": "Qual filme tem as imagens mais lindas que você já viu?"
+}
+},
+{
+"id": "movies-037",
+"lv": "any",
+"i18n": {
+"en": "Do you enjoy documentaries? Which one stayed with you?",
+"de": "Magst du Dokumentarfilme? Welcher ist dir in Erinnerung geblieben?",
+"es": "¿Te gustan los documentales? ¿Cuál se te quedó grabado?",
+"fr": "Aimes-tu les documentaires ? Lequel t'a marqué ?",
+"it": "Ti piacciono i documentari? Quale ti è rimasto impresso?",
+"pt": "Gostas de documentários? Qual é que te ficou na memória?",
+"pt_BR": "Você curte documentários? Qual deles ficou na sua memória?"
+}
+},
+{
+"id": "movies-038",
+"lv": "any",
+"i18n": {
+"en": "What movie would you show to someone learning your language?",
+"de": "Welchen Film würdest du jemandem zeigen, der deine Sprache lernt?",
+"es": "¿Qué película le mostrarías a alguien que aprende tu idioma?",
+"fr": "Quel film montrerais-tu à quelqu'un qui apprend ta langue ?",
+"it": "Quale film mostreresti a chi sta imparando la tua lingua?",
+"pt": "Que filme mostrarias a alguém que está a aprender a tua língua?",
+"pt_BR": "Qual filme você mostraria para alguém que está aprendendo seu idioma?"
+}
+},
+{
+"id": "movies-039",
+"lv": "any",
+"i18n": {
+"en": "What is a movie you are excited to watch soon?",
+"de": "Auf welchen Film freust du dich, den du bald sehen willst?",
+"es": "¿Qué película tienes muchas ganas de ver pronto?",
+"fr": "Quel film as-tu hâte de voir bientôt ?",
+"it": "Quale film non vedi l'ora di guardare?",
+"pt": "Que filme estás com muita vontade de ver em breve?",
+"pt_BR": "Qual filme você está ansioso para assistir em breve?"
+}
+},
+{
+"id": "movies-040",
+"lv": "any",
+"i18n": {
+"en": "If your life were a movie, what genre would it be?",
+"de": "Wenn dein Leben ein Film wäre, welches Genre hätte er?",
+"es": "Si tu vida fuera una película, ¿de qué género sería?",
+"fr": "Si ta vie était un film, quel serait son genre ?",
+"it": "Se la tua vita fosse un film, di che genere sarebbe?",
+"pt": "Se a tua vida fosse um filme, de que género seria?",
+"pt_BR": "Se a sua vida fosse um filme, de qual gênero seria?"
+}
+},
+{
+"id": "movies-041",
+"lv": "beginner",
+"i18n": {
+"en": "How often do you watch movies in a typical week?",
+"de": "Wie oft schaust du in einer normalen Woche Filme?",
+"es": "¿Con qué frecuencia ves películas en una semana normal?",
+"fr": "À quelle fréquence regardes-tu des films dans une semaine normale ?",
+"it": "Quanto spesso guardi film in una settimana tipica?",
+"pt": "Com que frequência vês filmes numa semana normal?",
+"pt_BR": "Com que frequência você assiste filmes numa semana normal?"
+}
+},
+{
+"id": "movies-042",
+"lv": "beginner",
+"i18n": {
+"en": "Do you notice the music in films, or does it stay in the background for you?",
+"de": "Achtest du auf die Filmmusik, oder bleibt sie für dich im Hintergrund?",
+"es": "¿Te fijas en la música de las películas o se queda en segundo plano para ti?",
+"fr": "Remarques-tu la musique des films, ou reste-t-elle en arrière-plan pour toi ?",
+"it": "Fai caso alla musica nei film o per te resta in sottofondo?",
+"pt": "Reparas na música dos filmes ou fica em segundo plano para ti?",
+"pt_BR": "Você presta atenção na música dos filmes ou ela fica em segundo plano?"
+}
+},
+{
+"id": "movies-043",
+"lv": "beginner",
+"i18n": {
+"en": "Which genre have you never really tried but are curious about?",
+"de": "Welches Genre hast du noch nie richtig ausprobiert, bist aber neugierig darauf?",
+"es": "¿Qué género nunca has probado de verdad pero te da curiosidad?",
+"fr": "Quel genre n'as-tu jamais vraiment essayé mais qui te rend curieux ?",
+"it": "Quale genere non hai mai davvero provato ma ti incuriosisce?",
+"pt": "Que género nunca experimentaste a sério mas te desperta curiosidade?",
+"pt_BR": "Qual gênero você nunca experimentou de verdade, mas tem curiosidade?"
+}
+},
+{
+"id": "movies-044",
+"lv": "beginner",
+"i18n": {
+"en": "Have you ever watched a silent film? What did you think?",
+"de": "Hast du schon mal einen Stummfilm gesehen? Wie fandest du ihn?",
+"es": "¿Has visto alguna vez una película muda? ¿Qué te pareció?",
+"fr": "As-tu déjà vu un film muet ? Qu'en as-tu pensé ?",
+"it": "Hai mai visto un film muto? Cosa ne hai pensato?",
+"pt": "Já viste algum filme mudo? O que achaste?",
+"pt_BR": "Você já assistiu a um filme mudo? O que achou?"
+}
+},
+{
+"id": "movies-045",
+"lv": "beginner",
+"i18n": {
+"en": "Do you prefer long movies or shorter ones?",
+"de": "Magst du lieber lange oder kürzere Filme?",
+"es": "¿Prefieres las películas largas o las más cortas?",
+"fr": "Préfères-tu les films longs ou plus courts ?",
+"it": "Preferisci i film lunghi o quelli più brevi?",
+"pt": "Preferes filmes longos ou mais curtos?",
+"pt_BR": "Você prefere filmes longos ou mais curtos?"
+}
+},
+{
+"id": "movies-046",
+"lv": "beginner",
+"i18n": {
+"en": "Which movie poster would you hang on your wall?",
+"de": "Welches Filmplakat würdest du dir an die Wand hängen?",
+"es": "¿Qué cartel de película colgarías en tu pared?",
+"fr": "Quelle affiche de film accrocherais-tu à ton mur ?",
+"it": "Quale locandina di un film appenderesti alla parete?",
+"pt": "Que cartaz de filme pendurarias na tua parede?",
+"pt_BR": "Qual pôster de filme você penduraria na sua parede?"
+}
+},
+{
+"id": "movies-047",
+"lv": "beginner",
+"i18n": {
+"en": "Do you watch trailers before choosing a film?",
+"de": "Schaust du dir Trailer an, bevor du einen Film auswählst?",
+"es": "¿Ves tráileres antes de elegir una película?",
+"fr": "Regardes-tu les bandes-annonces avant de choisir un film ?",
+"it": "Guardi i trailer prima di scegliere un film?",
+"pt": "Vês trailers antes de escolher um filme?",
+"pt_BR": "Você assiste trailers antes de escolher um filme?"
+}
+},
+{
+"id": "movies-048",
+"lv": "beginner",
+"i18n": {
+"en": "What is a black and white film you enjoy?",
+"de": "Welchen Schwarz-Weiß-Film magst du?",
+"es": "¿Qué película en blanco y negro disfrutas?",
+"fr": "Quel film en noir et blanc aimes-tu ?",
+"it": "Quale film in bianco e nero ti piace?",
+"pt": "Que filme a preto e branco gostas de ver?",
+"pt_BR": "Qual filme em preto e branco você curte?"
+}
+},
+{
+"id": "movies-049",
+"lv": "beginner",
+"i18n": {
+"en": "Do you stay to watch the credits at the end of a film?",
+"de": "Bleibst du am Ende eines Films für den Abspann sitzen?",
+"es": "¿Te quedas a ver los créditos al final de una película?",
+"fr": "Restes-tu pour regarder le générique de fin ?",
+"it": "Resti a guardare i titoli di coda alla fine di un film?",
+"pt": "Ficas a ver os créditos no fim de um filme?",
+"pt_BR": "Você fica para ver os créditos no final de um filme?"
+}
+},
+{
+"id": "movies-050",
+"lv": "beginner",
+"i18n": {
+"en": "Which movie do you remember seeing at the cinema with friends?",
+"de": "An welchen Film im Kino mit Freunden erinnerst du dich?",
+"es": "¿Qué película recuerdas haber visto en el cine con amigos?",
+"fr": "De quel film vu au cinéma avec des amis te souviens-tu ?",
+"it": "Quale film ricordi di aver visto al cinema con gli amici?",
+"pt": "De que filme te lembras de ter visto no cinema com amigos?",
+"pt_BR": "De qual filme você se lembra de ter visto no cinema com amigos?"
+}
+},
+{
+"id": "movies-051",
+"lv": "beginner",
+"i18n": {
+"en": "Which movie snack or drink reminds you of a special cinema trip?",
+"de": "Welcher Kinosnack oder welches Getränk erinnert dich an einen besonderen Kinobesuch?",
+"es": "¿Qué picoteo o bebida de cine te recuerda una salida especial al cine?",
+"fr": "Quelle friandise ou boisson de cinéma te rappelle une sortie spéciale ?",
+"it": "Quale snack o bibita del cinema ti ricorda una serata speciale?",
+"pt": "Que petisco ou bebida de cinema te lembra uma ida especial ao cinema?",
+"pt_BR": "Qual petisco ou bebida de cinema te lembra uma ida especial ao cinema?"
+}
+},
+{
+"id": "movies-052",
+"lv": "beginner",
+"i18n": {
+"en": "Do you prefer watching films alone or with other people?",
+"de": "Schaust du Filme lieber allein oder mit anderen?",
+"es": "¿Prefieres ver películas solo o acompañado?",
+"fr": "Préfères-tu regarder des films seul ou avec d'autres ?",
+"it": "Preferisci guardare i film da solo o in compagnia?",
+"pt": "Preferes ver filmes sozinho ou acompanhado?",
+"pt_BR": "Você prefere assistir filmes sozinho ou acompanhado?"
+}
+},
+{
+"id": "movies-053",
+"lv": "beginner",
+"i18n": {
+"en": "What is a film you watched in a language you do not speak?",
+"de": "Welchen Film hast du in einer Sprache gesehen, die du nicht sprichst?",
+"es": "¿Qué película has visto en un idioma que no hablas?",
+"fr": "Quel film as-tu vu dans une langue que tu ne parles pas ?",
+"it": "Quale film hai visto in una lingua che non parli?",
+"pt": "Que filme viste numa língua que não falas?",
+"pt_BR": "Qual filme você assistiu num idioma que não fala?"
+}
+},
+{
+"id": "movies-054",
+"lv": "beginner",
+"i18n": {
+"en": "Which film taught you something new about a different culture?",
+"de": "Welcher Film hat dir etwas Neues über eine andere Kultur beigebracht?",
+"es": "¿Qué película te enseñó algo nuevo sobre otra cultura?",
+"fr": "Quel film t'a appris quelque chose de nouveau sur une autre culture ?",
+"it": "Quale film ti ha insegnato qualcosa di nuovo su un'altra cultura?",
+"pt": "Que filme te ensinou algo novo sobre outra cultura?",
+"pt_BR": "Qual filme te ensinou algo novo sobre outra cultura?"
+}
+},
+{
+"id": "movies-055",
+"lv": "beginner",
+"i18n": {
+"en": "Do you enjoy guessing what will happen next in a movie?",
+"de": "Rätst du gern, was als Nächstes in einem Film passiert?",
+"es": "¿Te gusta adivinar qué pasará después en una película?",
+"fr": "Aimes-tu deviner ce qui va se passer ensuite dans un film ?",
+"it": "Ti piace indovinare cosa succederà dopo in un film?",
+"pt": "Gostas de adivinhar o que vai acontecer a seguir num filme?",
+"pt_BR": "Você gosta de adivinhar o que vai acontecer em seguida num filme?"
+}
+},
+{
+"id": "movies-056",
+"lv": "beginner",
+"i18n": {
+"en": "What makes you stop watching a movie halfway through?",
+"de": "Was bringt dich dazu, einen Film mittendrin abzubrechen?",
+"es": "¿Qué hace que dejes una película a medias?",
+"fr": "Qu'est-ce qui te fait arrêter un film en plein milieu ?",
+"it": "Cosa ti spinge a interrompere un film a metà?",
+"pt": "O que te leva a deixar um filme a meio?",
+"pt_BR": "O que faz você parar um filme no meio?"
+}
+},
+{
+"id": "movies-057",
+"lv": "beginner",
+"i18n": {
+"en": "Which film character's costume would you love to wear?",
+"de": "Welches Kostüm einer Filmfigur würdest du gern tragen?",
+"es": "¿Qué vestuario de un personaje de cine te encantaría llevar?",
+"fr": "Quel costume de personnage de film aimerais-tu porter ?",
+"it": "Quale costume di un personaggio dei film ti piacerebbe indossare?",
+"pt": "Que figurino de uma personagem de filme adorarias usar?",
+"pt_BR": "Qual figurino de personagem de filme você adoraria usar?"
+}
+},
+{
+"id": "movies-058",
+"lv": "beginner",
+"i18n": {
+"en": "Do you like movies based on true stories?",
+"de": "Magst du Filme, die auf wahren Begebenheiten beruhen?",
+"es": "¿Te gustan las películas basadas en hechos reales?",
+"fr": "Aimes-tu les films inspirés d'histoires vraies ?",
+"it": "Ti piacciono i film tratti da storie vere?",
+"pt": "Gostas de filmes baseados em histórias verdadeiras?",
+"pt_BR": "Você gosta de filmes baseados em histórias reais?"
+}
+},
+{
+"id": "movies-059",
+"lv": "beginner",
+"i18n": {
+"en": "What is the funniest animated character you know?",
+"de": "Welche Animationsfigur findest du am lustigsten?",
+"es": "¿Cuál es el personaje animado más divertido que conoces?",
+"fr": "Quel est le personnage animé le plus drôle que tu connaisses ?",
+"it": "Qual è il personaggio animato più divertente che conosci?",
+"pt": "Qual é a personagem animada mais engraçada que conheces?",
+"pt_BR": "Qual é o personagem de animação mais engraçado que você conhece?"
+}
+},
+{
+"id": "movies-060",
+"lv": "beginner",
+"i18n": {
+"en": "Which movie made you curious about history?",
+"de": "Welcher Film hat dein Interesse an Geschichte geweckt?",
+"es": "¿Qué película despertó tu curiosidad por la historia?",
+"fr": "Quel film a éveillé ta curiosité pour l'histoire ?",
+"it": "Quale film ti ha incuriosito sulla storia?",
+"pt": "Que filme te despertou a curiosidade pela história?",
+"pt_BR": "Qual filme despertou sua curiosidade pela história?"
+}
+},
+{
+"id": "movies-061",
+"lv": "beginner",
+"i18n": {
+"en": "Have you ever kept a list of films you want to see?",
+"de": "Hast du schon mal eine Liste mit Filmen geführt, die du sehen willst?",
+"es": "¿Alguna vez has hecho una lista de películas que quieres ver?",
+"fr": "As-tu déjà tenu une liste de films à voir ?",
+"it": "Hai mai tenuto una lista di film da vedere?",
+"pt": "Já alguma vez fizeste uma lista de filmes que queres ver?",
+"pt_BR": "Você já fez uma lista de filmes que quer assistir?"
+}
+},
+{
+"id": "movies-062",
+"lv": "beginner",
+"i18n": {
+"en": "What is your favourite film about animals or nature?",
+"de": "Was ist dein Lieblingsfilm über Tiere oder Natur?",
+"es": "¿Cuál es tu película favorita sobre animales o naturaleza?",
+"fr": "Quel est ton film préféré sur les animaux ou la nature ?",
+"it": "Qual è il tuo film preferito su animali o natura?",
+"pt": "Qual é o teu filme preferido sobre animais ou natureza?",
+"pt_BR": "Qual é o seu filme favorito sobre animais ou natureza?"
+}
+},
+{
+"id": "movies-063",
+"lv": "beginner",
+"i18n": {
+"en": "Do you enjoy superhero movies? Who is your favourite hero?",
+"de": "Magst du Superheldenfilme? Wer ist dein Lieblingsheld?",
+"es": "¿Te gustan las películas de superhéroes? ¿Cuál es tu favorito?",
+"fr": "Aimes-tu les films de super-héros ? Quel est ton héros préféré ?",
+"it": "Ti piacciono i film di supereroi? Chi è il tuo preferito?",
+"pt": "Gostas de filmes de super-heróis? Qual é o teu preferido?",
+"pt_BR": "Você curte filmes de super-herói? Qual é o seu favorito?"
+}
+},
+{
+"id": "movies-064",
+"lv": "beginner",
+"i18n": {
+"en": "Which sports movie do you find inspiring?",
+"de": "Welchen Sportfilm findest du inspirierend?",
+"es": "¿Qué película deportiva te parece inspiradora?",
+"fr": "Quel film de sport trouves-tu inspirant ?",
+"it": "Quale film sportivo trovi stimolante?",
+"pt": "Que filme de desporto achas inspirador?",
+"pt_BR": "Qual filme de esporte você acha inspirador?"
+}
+},
+{
+"id": "movies-065",
+"lv": "beginner",
+"i18n": {
+"en": "What kind of film do you enjoy on a lazy Sunday?",
+"de": "Welche Art Film schaust du gern an einem gemütlichen Sonntag?",
+"es": "¿Qué tipo de película te gusta ver un domingo tranquilo?",
+"fr": "Quel genre de film aimes-tu regarder un dimanche tranquille ?",
+"it": "Che tipo di film ti piace vedere in una domenica pigra?",
+"pt": "Que tipo de filme gostas de ver num domingo preguiçoso?",
+"pt_BR": "Que tipo de filme você gosta de ver num domingo preguiçoso?"
+}
+},
+{
+"id": "movies-066",
+"lv": "intermediate",
+"i18n": {
+"en": "Which director has a style you could recognise instantly?",
+"de": "Welchen Regiestil würdest du sofort erkennen?",
+"es": "¿Qué director o directora tiene un estilo que reconocerías al instante?",
+"fr": "Quel réalisateur a un style que tu reconnaîtrais tout de suite ?",
+"it": "Quale regista ha uno stile che riconosceresti subito?",
+"pt": "Que realizador tem um estilo que reconhecerias de imediato?",
+"pt_BR": "Qual diretor tem um estilo que você reconheceria na hora?"
+}
+},
+{
+"id": "movies-067",
+"lv": "intermediate",
+"i18n": {
+"en": "What makes a film score memorable for you?",
+"de": "Was macht eine Filmmusik für dich unvergesslich?",
+"es": "¿Qué hace que una banda sonora sea memorable para ti?",
+"fr": "Qu'est-ce qui rend une musique de film mémorable pour toi ?",
+"it": "Cosa rende memorabile per te la colonna sonora di un film?",
+"pt": "O que torna uma banda sonora memorável para ti?",
+"pt_BR": "O que torna uma trilha sonora memorável para você?"
+}
+},
+{
+"id": "movies-068",
+"lv": "intermediate",
+"i18n": {
+"en": "Which classic Hollywood film would you recommend to a beginner?",
+"de": "Welchen klassischen Hollywoodfilm würdest du Einsteigern empfehlen?",
+"es": "¿Qué clásico de Hollywood recomendarías a alguien que empieza?",
+"fr": "Quel classique d'Hollywood recommanderais-tu à un débutant ?",
+"it": "Quale classico di Hollywood consiglieresti a un principiante?",
+"pt": "Que clássico de Hollywood recomendarias a quem está a começar?",
+"pt_BR": "Qual clássico de Hollywood você recomendaria para quem está começando?"
+}
+},
+{
+"id": "movies-069",
+"lv": "intermediate",
+"i18n": {
+"en": "Do you think a remake can ever be better than the original?",
+"de": "Kann ein Remake deiner Meinung nach besser sein als das Original?",
+"es": "¿Crees que un remake puede ser mejor que el original?",
+"fr": "Penses-tu qu'un remake puisse être meilleur que l'original ?",
+"it": "Pensi che un remake possa essere migliore dell'originale?",
+"pt": "Achas que um remake pode ser melhor do que o original?",
+"pt_BR": "Você acha que um remake pode ser melhor que o original?"
+}
+},
+{
+"id": "movies-070",
+"lv": "intermediate",
+"i18n": {
+"en": "Which book-to-film adaptation worked really well for you?",
+"de": "Welche Buchverfilmung hat dich richtig überzeugt?",
+"es": "¿Qué adaptación de un libro al cine te pareció muy lograda?",
+"fr": "Quelle adaptation de livre au cinéma t'a vraiment convaincu ?",
+"it": "Quale adattamento da libro a film ti ha davvero convinto?",
+"pt": "Que adaptação de um livro ao cinema te pareceu muito bem conseguida?",
+"pt_BR": "Qual adaptação de livro para o cinema funcionou muito bem para você?"
+}
+},
+{
+"id": "movies-071",
+"lv": "intermediate",
+"i18n": {
+"en": "What movie has a camera shot or scene you still think about?",
+"de": "Welcher Film hat eine Einstellung oder Szene, an die du noch oft denkst?",
+"es": "¿Qué película tiene un plano o escena en la que todavía piensas?",
+"fr": "Quel film a un plan ou une scène auquel tu penses encore ?",
+"it": "Quale film ha un'inquadratura o una scena a cui pensi ancora?",
+"pt": "Que filme tem um plano ou cena em que ainda pensas?",
+"pt_BR": "Qual filme tem um plano ou uma cena que você ainda lembra?"
+}
+},
+{
+"id": "movies-072",
+"lv": "intermediate",
+"i18n": {
+"en": "Which world cinema tradition would you like to explore more?",
+"de": "Welche Filmtradition aus der Welt möchtest du näher kennenlernen?",
+"es": "¿Qué tradición del cine mundial te gustaría explorar más?",
+"fr": "Quelle tradition du cinéma mondial aimerais-tu explorer davantage ?",
+"it": "Quale tradizione del cinema mondiale vorresti esplorare di più?",
+"pt": "Que tradição do cinema mundial gostarias de explorar mais?",
+"pt_BR": "Qual tradição do cinema mundial você gostaria de explorar mais?"
+}
+},
+{
+"id": "movies-073",
+"lv": "intermediate",
+"i18n": {
+"en": "How do colours in a film affect your mood while watching?",
+"de": "Wie beeinflussen die Farben eines Films deine Stimmung beim Schauen?",
+"es": "¿Cómo afectan los colores de una película a tu estado de ánimo?",
+"fr": "Comment les couleurs d'un film influencent-elles ton humeur ?",
+"it": "In che modo i colori di un film influenzano il tuo umore?",
+"pt": "Como é que as cores de um filme afetam o teu estado de espírito?",
+"pt_BR": "Como as cores de um filme afetam o seu humor enquanto assiste?"
+}
+},
+{
+"id": "movies-074",
+"lv": "intermediate",
+"i18n": {
+"en": "Which film character had the most satisfying change over the story?",
+"de": "Welche Filmfigur hat sich im Lauf der Geschichte am überzeugendsten verändert?",
+"es": "¿Qué personaje de cine tuvo la evolución más satisfactoria en la historia?",
+"fr": "Quel personnage de film a connu l'évolution la plus réussie ?",
+"it": "Quale personaggio di un film ha avuto l'evoluzione più soddisfacente?",
+"pt": "Que personagem de filme teve a evolução mais satisfatória ao longo da história?",
+"pt_BR": "Qual personagem de filme teve a evolução mais satisfatória ao longo da história?"
+}
+},
+{
+"id": "movies-075",
+"lv": "intermediate",
+"i18n": {
+"en": "What do you think makes a great opening scene?",
+"de": "Was macht für dich eine großartige Anfangsszene aus?",
+"es": "¿Qué crees que hace grande una escena de apertura?",
+"fr": "Selon toi, qu'est-ce qui fait une excellente scène d'ouverture ?",
+"it": "Secondo te, cosa rende grande una scena d'apertura?",
+"pt": "Na tua opinião, o que faz uma grande cena de abertura?",
+"pt_BR": "Na sua opinião, o que faz uma ótima cena de abertura?"
+}
+},
+{
+"id": "movies-076",
+"lv": "intermediate",
+"i18n": {
+"en": "Which actor transformed completely for a role and impressed you?",
+"de": "Welcher Schauspieler hat sich für eine Rolle völlig verwandelt und dich beeindruckt?",
+"es": "¿Qué actor o actriz se transformó por completo para un papel y te impresionó?",
+"fr": "Quel acteur s'est complètement transformé pour un rôle et t'a impressionné ?",
+"it": "Quale attore si è trasformato completamente per un ruolo e ti ha colpito?",
+"pt": "Que ator se transformou por completo para um papel e te impressionou?",
+"pt_BR": "Qual ator se transformou completamente para um papel e te impressionou?"
+}
+},
+{
+"id": "movies-077",
+"lv": "intermediate",
+"i18n": {
+"en": "Do you prefer practical effects or digital effects, and why?",
+"de": "Magst du lieber praktische oder digitale Effekte, und warum?",
+"es": "¿Prefieres los efectos prácticos o los digitales, y por qué?",
+"fr": "Préfères-tu les effets pratiques ou numériques, et pourquoi ?",
+"it": "Preferisci gli effetti pratici o quelli digitali, e perché?",
+"pt": "Preferes efeitos práticos ou digitais, e porquê?",
+"pt_BR": "Você prefere efeitos práticos ou digitais, e por quê?"
+}
+},
+{
+"id": "movies-078",
+"lv": "intermediate",
+"i18n": {
+"en": "Which animation studio's style do you enjoy most?",
+"de": "Den Stil welches Animationsstudios magst du am meisten?",
+"es": "¿Qué estilo de estudio de animación disfrutas más?",
+"fr": "Quel style de studio d'animation préfères-tu ?",
+"it": "Lo stile di quale studio d'animazione ti piace di più?",
+"pt": "De que estilo de estúdio de animação gostas mais?",
+"pt_BR": "De qual estilo de estúdio de animação você mais gosta?"
+}
+},
+{
+"id": "movies-079",
+"lv": "intermediate",
+"i18n": {
+"en": "What film festival would you love to attend one day?",
+"de": "Welches Filmfestival würdest du gern einmal besuchen?",
+"es": "¿A qué festival de cine te encantaría ir algún día?",
+"fr": "À quel festival de cinéma aimerais-tu assister un jour ?",
+"it": "A quale festival del cinema ti piacerebbe partecipare un giorno?",
+"pt": "A que festival de cinema adorarias ir um dia?",
+"pt_BR": "Qual festival de cinema você adoraria visitar um dia?"
+}
+},
+{
+"id": "movies-080",
+"lv": "intermediate",
+"i18n": {
+"en": "Which movie ending left you thinking for days?",
+"de": "Welches Filmende hat dich tagelang beschäftigt?",
+"es": "¿Qué final de película te dejó pensando durante días?",
+"fr": "Quelle fin de film t'a fait réfléchir pendant des jours ?",
+"it": "Quale finale di un film ti ha fatto pensare per giorni?",
+"pt": "Que final de filme te deixou a pensar durante dias?",
+"pt_BR": "Qual final de filme te deixou pensando por dias?"
+}
+},
+{
+"id": "movies-081",
+"lv": "intermediate",
+"i18n": {
+"en": "How has the way you watch movies changed over the years?",
+"de": "Wie hat sich die Art, wie du Filme schaust, über die Jahre verändert?",
+"es": "¿Cómo ha cambiado tu forma de ver películas con los años?",
+"fr": "Comment ta façon de regarder des films a-t-elle changé au fil des ans ?",
+"it": "Come è cambiato il tuo modo di guardare i film negli anni?",
+"pt": "Como mudou a tua forma de ver filmes ao longo dos anos?",
+"pt_BR": "Como seu jeito de assistir filmes mudou ao longo dos anos?"
+}
+},
+{
+"id": "movies-082",
+"lv": "intermediate",
+"i18n": {
+"en": "Which film made you notice editing for the first time?",
+"de": "Bei welchem Film ist dir zum ersten Mal der Schnitt aufgefallen?",
+"es": "¿Con qué película te fijaste por primera vez en el montaje?",
+"fr": "Avec quel film as-tu remarqué le montage pour la première fois ?",
+"it": "Con quale film hai notato per la prima volta il montaggio?",
+"pt": "Com que filme reparaste pela primeira vez na montagem?",
+"pt_BR": "Com qual filme você reparou na edição pela primeira vez?"
+}
+},
+{
+"id": "movies-083",
+"lv": "intermediate",
+"i18n": {
+"en": "What do you enjoy more: the story or the visual style of a film?",
+"de": "Was gefällt dir mehr: die Geschichte oder der visuelle Stil eines Films?",
+"es": "¿Qué disfrutas más: la historia o el estilo visual de una película?",
+"fr": "Qu'est-ce que tu apprécies le plus : l'histoire ou le style visuel d'un film ?",
+"it": "Cosa ti piace di più: la storia o lo stile visivo di un film?",
+"pt": "O que aprecias mais: a história ou o estilo visual de um filme?",
+"pt_BR": "Do que você gosta mais: da história ou do estilo visual de um filme?"
+}
+},
+{
+"id": "movies-084",
+"lv": "intermediate",
+"i18n": {
+"en": "Which country's films would you like to see more of in your cinemas?",
+"de": "Filme aus welchem Land würdest du gern öfter im Kino sehen?",
+"es": "¿De qué país te gustaría ver más películas en los cines?",
+"fr": "De quel pays aimerais-tu voir plus de films en salle ?",
+"it": "Di quale paese vorresti vedere più film nei cinema?",
+"pt": "De que país gostarias de ver mais filmes nos cinemas?",
+"pt_BR": "De qual país você gostaria de ver mais filmes nos cinemas?"
+}
+},
+{
+"id": "movies-085",
+"lv": "intermediate",
+"i18n": {
+"en": "What is a film you think is underrated?",
+"de": "Welcher Film wird deiner Meinung nach unterschätzt?",
+"es": "¿Qué película crees que está infravalorada?",
+"fr": "Quel film trouves-tu sous-estimé ?",
+"it": "Quale film secondo te è sottovalutato?",
+"pt": "Que filme achas que é subvalorizado?",
+"pt_BR": "Qual filme você acha subestimado?"
+}
+},
+{
+"id": "movies-086",
+"lv": "advanced",
+"i18n": {
+"en": "How would you describe the visual style of your favourite director?",
+"de": "Wie würdest du den visuellen Stil deines Lieblingsregisseurs beschreiben?",
+"es": "¿Cómo describirías el estilo visual de tu director favorito?",
+"fr": "Comment décrirais-tu le style visuel de ton réalisateur préféré ?",
+"it": "Come descriveresti lo stile visivo del tuo regista preferito?",
+"pt": "Como descreverias o estilo visual do teu realizador preferido?",
+"pt_BR": "Como você descreveria o estilo visual do seu diretor favorito?"
+}
+},
+{
+"id": "movies-087",
+"lv": "advanced",
+"i18n": {
+"en": "Which film movement, like neorealism or the New Wave, speaks to you most?",
+"de": "Welche Filmbewegung, etwa Neorealismus oder Nouvelle Vague, spricht dich am meisten an?",
+"es": "¿Qué movimiento cinematográfico, como el neorrealismo o la Nouvelle Vague, te llega más?",
+"fr": "Quel mouvement, comme le néoréalisme ou la Nouvelle Vague, te parle le plus ?",
+"it": "Quale movimento, come il neorealismo o la Nouvelle Vague, senti più vicino?",
+"pt": "Que movimento, como o neorrealismo ou a Nouvelle Vague, te diz mais?",
+"pt_BR": "Qual movimento, como o neorrealismo ou a Nouvelle Vague, mais fala com você?"
+}
+},
+{
+"id": "movies-088",
+"lv": "advanced",
+"i18n": {
+"en": "If you made a short film, what story would you tell?",
+"de": "Wenn du einen Kurzfilm drehen würdest, welche Geschichte würdest du erzählen?",
+"es": "Si hicieras un cortometraje, ¿qué historia contarías?",
+"fr": "Si tu réalisais un court métrage, quelle histoire raconterais-tu ?",
+"it": "Se girassi un cortometraggio, che storia racconteresti?",
+"pt": "Se fizesses uma curta-metragem, que história contarias?",
+"pt_BR": "Se você fizesse um curta-metragem, que história contaria?"
+}
+},
+{
+"id": "movies-089",
+"lv": "advanced",
+"i18n": {
+"en": "How do you think films reflect the culture they come from?",
+"de": "Wie spiegeln Filme deiner Meinung nach die Kultur wider, aus der sie stammen?",
+"es": "¿Cómo crees que las películas reflejan la cultura de la que vienen?",
+"fr": "Comment les films reflètent-ils selon toi la culture dont ils viennent ?",
+"it": "Secondo te, come riflettono i film la cultura da cui provengono?",
+"pt": "Como achas que os filmes refletem a cultura de onde vêm?",
+"pt_BR": "Como você acha que os filmes refletem a cultura de onde vêm?"
+}
+},
+{
+"id": "movies-090",
+"lv": "advanced",
+"i18n": {
+"en": "What would you write in a short review of the last film you saw?",
+"de": "Was würdest du in eine kurze Kritik zum letzten Film schreiben, den du gesehen hast?",
+"es": "¿Qué escribirías en una breve crítica de la última película que viste?",
+"fr": "Qu'écrirais-tu dans une courte critique du dernier film que tu as vu ?",
+"it": "Cosa scriveresti in una breve recensione dell'ultimo film che hai visto?",
+"pt": "O que escreverias numa crítica curta do último filme que viste?",
+"pt_BR": "O que você escreveria numa crítica curta do último filme que assistiu?"
+}
+},
+{
+"id": "movies-091",
+"lv": "advanced",
+"i18n": {
+"en": "Which use of silence or sound in a film impressed you most?",
+"de": "Welcher Einsatz von Stille oder Ton in einem Film hat dich am meisten beeindruckt?",
+"es": "¿Qué uso del silencio o del sonido en una película te impresionó más?",
+"fr": "Quelle utilisation du silence ou du son dans un film t'a le plus impressionné ?",
+"it": "Quale uso del silenzio o del suono in un film ti ha colpito di più?",
+"pt": "Que uso do silêncio ou do som num filme mais te impressionou?",
+"pt_BR": "Qual uso do silêncio ou do som em um filme mais te impressionou?"
+}
+},
+{
+"id": "movies-092",
+"lv": "advanced",
+"i18n": {
+"en": "How do you separate personal taste from a film's quality?",
+"de": "Wie trennst du deinen persönlichen Geschmack von der Qualität eines Films?",
+"es": "¿Cómo separas tu gusto personal de la calidad de una película?",
+"fr": "Comment distingues-tu ton goût personnel de la qualité d'un film ?",
+"it": "Come separi il tuo gusto personale dalla qualità di un film?",
+"pt": "Como separas o teu gosto pessoal da qualidade de um filme?",
+"pt_BR": "Como você separa seu gosto pessoal da qualidade de um filme?"
+}
+},
+{
+"id": "movies-093",
+"lv": "advanced",
+"i18n": {
+"en": "Which director's complete body of work would you like to watch?",
+"de": "Das Gesamtwerk welcher Regisseurin oder welches Regisseurs möchtest du sehen?",
+"es": "¿De qué director te gustaría ver toda su filmografía?",
+"fr": "De quel réalisateur aimerais-tu voir toute la filmographie ?",
+"it": "Di quale regista vorresti vedere l'intera filmografia?",
+"pt": "De que realizador gostarias de ver a filmografia completa?",
+"pt_BR": "De qual diretor você gostaria de ver a filmografia completa?"
+}
+},
+{
+"id": "movies-094",
+"lv": "advanced",
+"i18n": {
+"en": "What makes a plot twist feel earned rather than cheap?",
+"de": "Wann wirkt eine Wendung verdient statt billig?",
+"es": "¿Qué hace que un giro de guion parezca merecido y no tramposo?",
+"fr": "Qu'est-ce qui rend un rebondissement mérité plutôt que facile ?",
+"it": "Cosa rende un colpo di scena meritato e non forzato?",
+"pt": "O que faz uma reviravolta parecer merecida e não barata?",
+"pt_BR": "O que faz uma reviravolta parecer merecida e não forçada?"
+}
+},
+{
+"id": "movies-095",
+"lv": "advanced",
+"i18n": {
+"en": "How has streaming changed the kinds of films that get made?",
+"de": "Wie hat Streaming die Art von Filmen verändert, die gedreht werden?",
+"es": "¿Cómo ha cambiado el streaming el tipo de películas que se hacen?",
+"fr": "Comment le streaming a-t-il changé le type de films produits ?",
+"it": "Come ha cambiato lo streaming il tipo di film che vengono prodotti?",
+"pt": "Como é que o streaming mudou o tipo de filmes que se fazem?",
+"pt_BR": "Como o streaming mudou o tipo de filme que é produzido?"
+}
+},
+{
+"id": "movies-096",
+"lv": "advanced",
+"i18n": {
+"en": "Which film would you choose to open your own film club, and why?",
+"de": "Mit welchem Film würdest du deinen eigenen Filmclub eröffnen, und warum?",
+"es": "¿Con qué película inaugurarías tu propio cineclub, y por qué?",
+"fr": "Avec quel film ouvrirais-tu ton propre ciné-club, et pourquoi ?",
+"it": "Con quale film inaugureresti il tuo cineforum, e perché?",
+"pt": "Com que filme abririas o teu próprio cineclube, e porquê?",
+"pt_BR": "Com qual filme você abriria seu próprio cineclube, e por quê?"
+}
+},
+{
+"id": "movies-097",
+"lv": "advanced",
+"i18n": {
+"en": "What does a great screenplay need, in your opinion?",
+"de": "Was braucht ein großartiges Drehbuch deiner Meinung nach?",
+"es": "En tu opinión, ¿qué necesita un gran guion?",
+"fr": "Selon toi, de quoi un excellent scénario a-t-il besoin ?",
+"it": "Secondo te, di cosa ha bisogno una grande sceneggiatura?",
+"pt": "Na tua opinião, o que precisa um grande argumento?",
+"pt_BR": "Na sua opinião, o que um ótimo roteiro precisa ter?"
+}
+},
+{
+"id": "movies-098",
+"lv": "advanced",
+"i18n": {
+"en": "Which film would you restore and re-release if you could?",
+"de": "Welchen Film würdest du restaurieren und neu herausbringen, wenn du könntest?",
+"es": "¿Qué película restaurarías y volverías a estrenar si pudieras?",
+"fr": "Quel film restaurerais-tu et ressortirais-tu en salle si tu le pouvais ?",
+"it": "Quale film restaureresti e riporteresti in sala se potessi?",
+"pt": "Que filme restaurarias e voltarias a lançar se pudesses?",
+"pt_BR": "Qual filme você restauraria e relançaria se pudesse?"
+}
+},
+{
+"id": "movies-099",
+"lv": "advanced",
+"i18n": {
+"en": "How do you think cinema will change in the next generation?",
+"de": "Wie wird sich das Kino deiner Meinung nach in der nächsten Generation verändern?",
+"es": "¿Cómo crees que cambiará el cine en la próxima generación?",
+"fr": "Comment penses-tu que le cinéma va évoluer à la prochaine génération ?",
+"it": "Come pensi che cambierà il cinema nella prossima generazione?",
+"pt": "Como achas que o cinema vai mudar na próxima geração?",
+"pt_BR": "Como você acha que o cinema vai mudar na próxima geração?"
+}
+},
+{
+"id": "movies-100",
+"lv": "advanced",
+"i18n": {
+"en": "What would your personal top three films say about who you are?",
+"de": "Was würden deine persönlichen drei Lieblingsfilme über dich verraten?",
+"es": "¿Qué dirían de ti tus tres películas favoritas?",
+"fr": "Que diraient de toi tes trois films préférés ?",
+"it": "Cosa direbbero di te i tuoi tre film preferiti?",
+"pt": "O que diriam de ti os teus três filmes preferidos?",
+"pt_BR": "O que seus três filmes favoritos diriam sobre quem você é?"
+}
+}
+]
+}

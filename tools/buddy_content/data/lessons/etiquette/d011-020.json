@@ -1,0 +1,835 @@
+{
+ "topic": "etiquette",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Addressing people correctly",
+     "g": "Learn how to use titles, surnames and first names in the right moments.",
+     "p": [
+      "In Germany, Japan and Korea, using a title and surname is a safe start until invited to use a first name.",
+      "In Australia and the US, people often switch to first names quickly, even at work.",
+      "If unsure, start formal and let the other person invite you to be more casual."
+     ],
+     "q": "How do people usually address teachers, bosses or older neighbours where you live?",
+     "c": "Notice today how people around you address each other and whether they use titles."
+    },
+    "de": {
+     "t": "Menschen richtig ansprechen",
+     "g": "Lerne, wann Titel, Nachnamen und Vornamen angebracht sind.",
+     "p": [
+      "In Deutschland, Japan und Korea sind Titel und Nachname ein sicherer Start, bis man den Vornamen anbietet.",
+      "In Australien und den USA wechselt man oft schnell zum Vornamen, auch im Beruf.",
+      "Im Zweifel beginne förmlich und lass dir vom Gegenüber das Lockere anbieten."
+     ],
+     "q": "Wie spricht man bei dir Lehrkräfte, Vorgesetzte oder ältere Nachbarn an?",
+     "c": "Achte heute darauf, wie sich die Menschen um dich herum ansprechen und ob sie Titel verwenden."
+    },
+    "es": {
+     "t": "Dirigirse a las personas correctamente",
+     "g": "Aprende a usar títulos, apellidos y nombres de pila en el momento adecuado.",
+     "p": [
+      "En Alemania, Japón y Corea, el título y el apellido son un comienzo seguro hasta que te inviten a usar el nombre.",
+      "En Australia y Estados Unidos se pasa al nombre de pila rápidamente, incluso en el trabajo.",
+      "Si dudas, empieza de manera formal y deja que la otra persona te invite a la confianza."
+     ],
+     "q": "¿Cómo se suele llamar a profesores, jefes o vecinos mayores donde vives?",
+     "c": "Fíjate hoy en cómo se dirigen las personas entre sí y si usan títulos."
+    },
+    "fr": {
+     "t": "S'adresser correctement aux gens",
+     "g": "Apprends à utiliser titres, noms de famille et prénoms au bon moment.",
+     "p": [
+      "En Allemagne, au Japon et en Corée, titre et nom de famille sont un bon départ jusqu'à ce qu'on t'invite au prénom.",
+      "En Australie et aux États-Unis, on passe vite au prénom, même au travail.",
+      "En cas de doute, commence de façon formelle et laisse l'autre t'inviter à plus de familiarité."
+     ],
+     "q": "Comment s'adresse-t-on aux enseignants, aux chefs ou aux voisins âgés chez toi ?",
+     "c": "Remarque aujourd'hui comment les gens autour de toi s'adressent les uns aux autres et s'ils utilisent des titres."
+    },
+    "it": {
+     "t": "Rivolgersi alle persone nel modo giusto",
+     "g": "Impara a usare titoli, cognomi e nomi di battesimo al momento giusto.",
+     "p": [
+      "In Germania, Giappone e Corea titolo e cognome sono un inizio sicuro finché non ti invitano a usare il nome.",
+      "In Australia e negli Stati Uniti si passa presto al nome, anche al lavoro.",
+      "Nel dubbio inizia in modo formale e lascia che sia l'altro a proporti più confidenza."
+     ],
+     "q": "Come ci si rivolge di solito a insegnanti, capi o vicini anziani dove vivi?",
+     "c": "Oggi osserva come si rivolgono tra loro le persone intorno a te e se usano titoli."
+    },
+    "pt": {
+     "t": "Tratar as pessoas corretamente",
+     "g": "Aprende a usar títulos, apelidos e nomes próprios no momento certo.",
+     "p": [
+      "Na Alemanha, no Japão e na Coreia, título e apelido são um começo seguro até te convidarem a usar o nome.",
+      "Na Austrália e nos Estados Unidos passa-se depressa ao nome próprio, mesmo no trabalho.",
+      "Na dúvida, começa de forma formal e deixa a outra pessoa convidar-te a mais proximidade."
+     ],
+     "q": "Como se costuma tratar professores, chefes ou vizinhos mais velhos onde vives?",
+     "c": "Repara hoje como as pessoas à tua volta se tratam e se usam títulos como senhor doutor."
+    },
+    "pt_BR": {
+     "t": "Como se dirigir às pessoas",
+     "g": "Aprenda a usar títulos, sobrenomes e primeiros nomes no momento certo.",
+     "p": [
+      "Na Alemanha, no Japão e na Coreia, título e sobrenome são um começo seguro até convidarem você a usar o nome.",
+      "Na Austrália e nos Estados Unidos, as pessoas passam rápido para o primeiro nome, até no trabalho.",
+      "Na dúvida, comece de forma formal e deixe a outra pessoa convidar você a ter mais intimidade."
+     ],
+     "q": "Como as pessoas costumam chamar professores, chefes ou vizinhos mais velhos onde você mora?",
+     "c": "Repare hoje em como as pessoas ao seu redor se tratam e se usam títulos como senhor ou doutor."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Formal and informal you",
+     "g": "Understand when to switch from the formal you to the informal one in languages like French and German.",
+     "p": [
+      "French has tu and vous, German du and Sie, Spanish tú and usted: the formal form shows respect and distance.",
+      "Use the formal form with strangers, elders and in business until someone suggests otherwise.",
+      "Switching to the informal form is often a small milestone, usually offered by the older or senior person."
+     ],
+     "q": "Does a language you speak have a formal and an informal you, and how do you choose?",
+     "c": "Learn the formal and informal you in one language and write a short greeting with each."
+    },
+    "de": {
+     "t": "Siezen und Duzen",
+     "g": "Verstehe, wann man in Sprachen wie Französisch und Deutsch vom Sie zum Du wechselt.",
+     "p": [
+      "Französisch hat tu und vous, Deutsch du und Sie, Spanisch tú und usted: Die förmliche Form zeigt Respekt und Abstand.",
+      "Sieze Fremde, Ältere und Geschäftspartner, bis jemand etwas anderes vorschlägt.",
+      "Das Du anzubieten ist oft ein kleiner Meilenstein und kommt meist von der älteren oder ranghöheren Person."
+     ],
+     "q": "Gibt es in einer deiner Sprachen eine förmliche und eine vertraute Anrede, und wie entscheidest du?",
+     "c": "Lerne die förmliche und die vertraute Anrede in einer Sprache und schreibe mit beiden einen kurzen Gruß."
+    },
+    "es": {
+     "t": "Tú y usted",
+     "g": "Entiende cuándo pasar de la forma formal a la informal en idiomas como el francés o el alemán.",
+     "p": [
+      "El francés tiene tu y vous, el alemán du y Sie, el español tú y usted: la forma formal muestra respeto y distancia.",
+      "Usa la forma formal con desconocidos, personas mayores y en los negocios hasta que te sugieran lo contrario.",
+      "Pasar al tuteo suele ser un pequeño paso importante, que normalmente propone la persona mayor o de más rango."
+     ],
+     "q": "¿Tiene alguno de tus idiomas una forma formal y otra informal, y cómo eliges cuál usar?",
+     "c": "Aprende el tratamiento formal e informal en un idioma y escribe un saludo breve con cada uno."
+    },
+    "fr": {
+     "t": "Tutoyer ou vouvoyer",
+     "g": "Comprends quand passer du vouvoiement au tutoiement dans des langues comme le français ou l'allemand.",
+     "p": [
+      "Le français a tu et vous, l'allemand du et Sie, l'espagnol tú et usted : la forme polie marque respect et distance.",
+      "Vouvoie les inconnus, les aînés et les relations d'affaires jusqu'à ce qu'on te propose autre chose.",
+      "Passer au tutoiement est souvent une petite étape, proposée en général par la personne plus âgée ou plus haut placée."
+     ],
+     "q": "Une langue que tu parles a-t-elle une forme polie et une forme familière, et comment choisis-tu ?",
+     "c": "Apprends les deux formes dans une langue et écris une courte salutation avec chacune."
+    },
+    "it": {
+     "t": "Dare del tu o del Lei",
+     "g": "Capisci quando passare dalla forma di cortesia al tu in lingue come il francese o il tedesco.",
+     "p": [
+      "Il francese ha tu e vous, il tedesco du e Sie, l'italiano tu e Lei: la forma di cortesia esprime rispetto e distanza.",
+      "Usa il Lei con sconosciuti, persone anziane e nel lavoro finché qualcuno non ti propone il tu.",
+      "Passare al tu è spesso un piccolo traguardo, di solito proposto dalla persona più anziana o di grado più alto."
+     ],
+     "q": "Una lingua che parli ha una forma formale e una informale, e come scegli quale usare?",
+     "c": "Impara la forma formale e quella informale in una lingua e scrivi un breve saluto con ciascuna."
+    },
+    "pt": {
+     "t": "Tu, você e o senhor",
+     "g": "Percebe quando passar do tratamento formal ao informal em línguas como o francês ou o alemão.",
+     "p": [
+      "O francês tem tu e vous, o alemão du e Sie, o português tu e o senhor: a forma formal mostra respeito e distância.",
+      "Usa o tratamento formal com desconhecidos, pessoas mais velhas e nos negócios até te sugerirem o contrário.",
+      "Passar ao tu é muitas vezes um pequeno marco, geralmente proposto pela pessoa mais velha ou com mais estatuto."
+     ],
+     "q": "Alguma língua que falas tem uma forma formal e outra informal, e como escolhes?",
+     "c": "Aprende o tratamento formal e informal numa língua e escreve um cumprimento curto com cada um."
+    },
+    "pt_BR": {
+     "t": "Você, o senhor e a senhora",
+     "g": "Entenda quando passar do tratamento formal para o informal em idiomas como o francês ou o alemão.",
+     "p": [
+      "O francês tem tu e vous, o alemão du e Sie, o português você e o senhor: a forma formal mostra respeito e distância.",
+      "Use o tratamento formal com desconhecidos, pessoas mais velhas e nos negócios até sugerirem o contrário.",
+      "Passar para o informal costuma ser um pequeno marco, geralmente proposto pela pessoa mais velha ou de cargo mais alto."
+     ],
+     "q": "Algum idioma que você fala tem uma forma formal e outra informal, e como você escolhe?",
+     "c": "Aprenda o tratamento formal e o informal em um idioma e escreva um cumprimento curto com cada um."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Introducing people",
+     "g": "Learn who to introduce first and how to make introductions smooth and warm.",
+     "p": [
+      "A classic rule: introduce the younger or less senior person to the older or more senior one.",
+      "Say both names clearly and add a small detail they share, like a hobby or a hometown.",
+      "Never leave someone standing unintroduced; if you forget a name, admit it kindly and ask."
+     ],
+     "q": "When did someone introduce you in a way that made a conversation easy to start?",
+     "c": "Introduce two people you know to each other today, adding one thing they have in common."
+    },
+    "de": {
+     "t": "Menschen einander vorstellen",
+     "g": "Lerne, wen man zuerst vorstellt und wie Vorstellungen reibungslos und herzlich gelingen.",
+     "p": [
+      "Eine klassische Regel: Man stellt die jüngere oder rangniedere Person der älteren oder ranghöheren vor.",
+      "Nenne beide Namen deutlich und füge eine Gemeinsamkeit hinzu, etwa ein Hobby oder eine Heimatstadt.",
+      "Lass niemanden unvorgestellt stehen; hast du einen Namen vergessen, gib es freundlich zu und frag nach."
+     ],
+     "q": "Wann hat dich jemand so vorgestellt, dass das Gespräch ganz leicht begann?",
+     "c": "Stelle heute zwei Bekannte einander vor und nenne eine Gemeinsamkeit der beiden."
+    },
+    "es": {
+     "t": "Presentar a otras personas",
+     "g": "Aprende a quién presentar primero y cómo hacer presentaciones fluidas y cálidas.",
+     "p": [
+      "Una regla clásica: se presenta a la persona más joven o de menor rango a la mayor o de mayor rango.",
+      "Di ambos nombres con claridad y añade algo que compartan, como una afición o una ciudad de origen.",
+      "Nunca dejes a alguien sin presentar; si olvidas un nombre, admítelo con amabilidad y pregunta."
+     ],
+     "q": "¿Cuándo te presentó alguien de un modo que hizo fácil empezar a conversar?",
+     "c": "Presenta hoy a dos personas que conoces y menciona algo que tengan en común."
+    },
+    "fr": {
+     "t": "Faire les présentations",
+     "g": "Apprends qui présenter en premier et comment rendre les présentations fluides et chaleureuses.",
+     "p": [
+      "Règle classique : on présente la personne la plus jeune ou de rang inférieur à la plus âgée ou de rang supérieur.",
+      "Dis les deux prénoms clairement et ajoute un point commun, comme un loisir ou une ville d'origine.",
+      "Ne laisse jamais quelqu'un sans le présenter ; si tu as oublié un nom, avoue-le gentiment et demande."
+     ],
+     "q": "Quand quelqu'un t'a-t-il présenté d'une façon qui a rendu la conversation facile ?",
+     "c": "Présente aujourd'hui deux personnes que tu connais en citant un point commun entre elles."
+    },
+    "it": {
+     "t": "Fare le presentazioni",
+     "g": "Impara chi presentare per primo e come rendere le presentazioni fluide e cordiali.",
+     "p": [
+      "Una regola classica: si presenta la persona più giovane o di grado inferiore a quella più anziana o di grado superiore.",
+      "Pronuncia chiaramente entrambi i nomi e aggiungi qualcosa in comune, come un hobby o una città d'origine.",
+      "Non lasciare mai qualcuno senza presentarlo; se dimentichi un nome, ammettilo con garbo e chiedi."
+     ],
+     "q": "Quando qualcuno ti ha presentato in un modo che ha reso facile iniziare a parlare?",
+     "c": "Oggi presenta tra loro due persone che conosci e cita qualcosa che hanno in comune."
+    },
+    "pt": {
+     "t": "Apresentar pessoas",
+     "g": "Aprende quem apresentar primeiro e como tornar as apresentações fluidas e calorosas.",
+     "p": [
+      "Uma regra clássica: apresenta-se a pessoa mais nova ou de menor estatuto à mais velha ou de maior estatuto.",
+      "Diz os dois nomes com clareza e acrescenta algo em comum, como um passatempo ou uma terra de origem.",
+      "Nunca deixes alguém por apresentar; se te esqueceres de um nome, admite-o com simpatia e pergunta."
+     ],
+     "q": "Quando é que alguém te apresentou de uma forma que facilitou a conversa?",
+     "c": "Apresenta hoje duas pessoas que conheces e menciona algo que tenham em comum."
+    },
+    "pt_BR": {
+     "t": "Apresentar pessoas",
+     "g": "Aprenda quem apresentar primeiro e como deixar as apresentações fluidas e calorosas.",
+     "p": [
+      "Uma regra clássica: apresenta-se a pessoa mais jovem ou de cargo menor à mais velha ou de cargo maior.",
+      "Diga os dois nomes com clareza e acrescente algo em comum, como um hobby ou a cidade natal.",
+      "Nunca deixe alguém sem ser apresentado; se esquecer um nome, admita com gentileza e pergunte."
+     ],
+     "q": "Quando alguém apresentou você de um jeito que facilitou a conversa?",
+     "c": "Apresente hoje duas pessoas que você conhece e mencione algo que elas têm em comum."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Remembering names",
+     "g": "Pick up simple tricks to remember names and use them well.",
+     "p": [
+      "Repeat the name right away, as in: Nice to meet you, Amira, and use it once more before you part.",
+      "Link the name to an image, a person you know or a detail of the conversation.",
+      "Ask how to pronounce an unfamiliar name; people appreciate the effort far more than a guess."
+     ],
+     "q": "Do you find it easy to remember names, and what helps you the most?",
+     "c": "Use the name of each new person you meet today at least twice in the conversation."
+    },
+    "de": {
+     "t": "Namen merken",
+     "g": "Lerne einfache Tricks, um dir Namen zu merken und sie gut zu verwenden.",
+     "p": [
+      "Wiederhole den Namen sofort, etwa: Schön, dich kennenzulernen, Amira, und nutze ihn beim Abschied noch einmal.",
+      "Verknüpfe den Namen mit einem Bild, einer bekannten Person oder einem Detail aus dem Gespräch.",
+      "Frag nach, wie ein ungewohnter Name ausgesprochen wird; das schätzen Menschen mehr als ein Raten."
+     ],
+     "q": "Fällt es dir leicht, dir Namen zu merken, und was hilft dir am meisten?",
+     "c": "Nenne heute jede neue Person, die du triffst, mindestens zweimal im Gespräch beim Namen."
+    },
+    "es": {
+     "t": "Recordar nombres",
+     "g": "Aprende trucos sencillos para recordar nombres y usarlos bien.",
+     "p": [
+      "Repite el nombre enseguida, como en: Encantado de conocerte, Amira, y úsalo otra vez al despedirte.",
+      "Asocia el nombre con una imagen, con alguien que conoces o con un detalle de la conversación.",
+      "Pregunta cómo se pronuncia un nombre desconocido; se agradece mucho más que una suposición."
+     ],
+     "q": "¿Te resulta fácil recordar nombres, y qué es lo que más te ayuda?",
+     "c": "Usa hoy el nombre de cada persona nueva que conozcas al menos dos veces en la conversación."
+    },
+    "fr": {
+     "t": "Retenir les prénoms",
+     "g": "Découvre des astuces simples pour retenir les prénoms et bien les utiliser.",
+     "p": [
+      "Répète le prénom tout de suite, par exemple : Enchanté, Amira, et redis-le une fois au moment de partir.",
+      "Associe le prénom à une image, à une personne que tu connais ou à un détail de la conversation.",
+      "Demande comment se prononce un prénom inhabituel : l'effort est bien plus apprécié qu'une approximation."
+     ],
+     "q": "Retiens-tu facilement les prénoms, et qu'est-ce qui t'aide le plus ?",
+     "c": "Utilise aujourd'hui au moins deux fois le prénom de chaque nouvelle personne rencontrée."
+    },
+    "it": {
+     "t": "Ricordare i nomi",
+     "g": "Impara trucchi semplici per ricordare i nomi e usarli bene.",
+     "p": [
+      "Ripeti subito il nome, ad esempio: Piacere di conoscerti, Amira, e usalo ancora una volta quando vi salutate.",
+      "Collega il nome a un'immagine, a una persona che conosci o a un dettaglio della conversazione.",
+      "Chiedi come si pronuncia un nome poco familiare: lo sforzo è molto più apprezzato di un tentativo a caso."
+     ],
+     "q": "Ti viene facile ricordare i nomi, e cosa ti aiuta di più?",
+     "c": "Oggi usa almeno due volte nella conversazione il nome di ogni persona nuova che incontri."
+    },
+    "pt": {
+     "t": "Lembrar nomes",
+     "g": "Aprende truques simples para lembrar nomes e usá-los bem.",
+     "p": [
+      "Repete o nome logo, por exemplo: Muito prazer, Amira, e volta a usá-lo na despedida.",
+      "Associa o nome a uma imagem, a alguém que conheces ou a um pormenor da conversa.",
+      "Pergunta como se pronuncia um nome pouco familiar; o esforço é muito mais apreciado do que um palpite."
+     ],
+     "q": "Tens facilidade em lembrar nomes, e o que te ajuda mais?",
+     "c": "Usa hoje pelo menos duas vezes o nome de cada pessoa nova que conheceres."
+    },
+    "pt_BR": {
+     "t": "Lembrar nomes",
+     "g": "Aprenda truques simples para lembrar nomes e usá-los bem.",
+     "p": [
+      "Repita o nome na hora, por exemplo: Prazer em conhecer você, Amira, e use de novo na despedida.",
+      "Associe o nome a uma imagem, a alguém que você conhece ou a um detalhe da conversa.",
+      "Pergunte como se pronuncia um nome diferente; o esforço é muito mais apreciado do que um chute."
+     ],
+     "q": "Você tem facilidade para lembrar nomes, e o que mais ajuda?",
+     "c": "Use hoje pelo menos duas vezes o nome de cada pessoa nova que você conhecer."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Business card basics",
+     "g": "Learn to give and receive business cards with care, especially in East Asia.",
+     "p": [
+      "In Japan, China and Korea, offer and receive a card with both hands and a slight bow or nod.",
+      "Take a moment to read the card instead of putting it straight into your pocket.",
+      "Never write on someone's card in front of them; place it carefully on the table or in a card holder."
+     ],
+     "q": "Have you ever exchanged business cards or contact details in a formal way?",
+     "c": "Practise handing over a card or a piece of paper with both hands, text facing the receiver."
+    },
+    "de": {
+     "t": "Visitenkarten: die Grundlagen",
+     "g": "Lerne, Visitenkarten sorgfältig zu überreichen und anzunehmen, besonders in Ostasien.",
+     "p": [
+      "In Japan, China und Korea reicht und nimmt man Karten mit beiden Händen und einer leichten Verbeugung.",
+      "Nimm dir einen Moment, die Karte zu lesen, statt sie sofort einzustecken.",
+      "Schreib nie in Anwesenheit des Gebers auf seine Karte; lege sie sorgfältig auf den Tisch oder in ein Etui."
+     ],
+     "q": "Hast du schon einmal auf förmliche Weise Visitenkarten oder Kontaktdaten ausgetauscht?",
+     "c": "Übe, eine Karte oder einen Zettel mit beiden Händen zu überreichen, die Schrift zum Empfänger gedreht."
+    },
+    "es": {
+     "t": "Lo básico de las tarjetas de visita",
+     "g": "Aprende a dar y recibir tarjetas de visita con cuidado, sobre todo en Asia oriental.",
+     "p": [
+      "En Japón, China y Corea se ofrece y recibe la tarjeta con ambas manos y una leve reverencia.",
+      "Tómate un momento para leer la tarjeta en lugar de guardarla de inmediato en el bolsillo.",
+      "Nunca escribas en la tarjeta de alguien delante de esa persona; déjala con cuidado en la mesa o en un tarjetero."
+     ],
+     "q": "¿Alguna vez has intercambiado tarjetas o datos de contacto de manera formal?",
+     "c": "Practica entregar una tarjeta o un papel con ambas manos, con el texto hacia quien lo recibe."
+    },
+    "fr": {
+     "t": "Les cartes de visite : les bases",
+     "g": "Apprends à donner et recevoir une carte de visite avec soin, surtout en Asie de l'Est.",
+     "p": [
+      "Au Japon, en Chine et en Corée, on tend et reçoit la carte à deux mains avec une légère inclinaison.",
+      "Prends un instant pour lire la carte au lieu de la ranger aussitôt dans ta poche.",
+      "N'écris jamais sur la carte de quelqu'un devant lui ; pose-la soigneusement sur la table ou dans un porte-cartes."
+     ],
+     "q": "As-tu déjà échangé des cartes de visite ou des coordonnées de manière formelle ?",
+     "c": "Entraîne-toi à tendre une carte ou un papier à deux mains, le texte tourné vers la personne."
+    },
+    "it": {
+     "t": "Biglietti da visita: le basi",
+     "g": "Impara a dare e ricevere biglietti da visita con cura, soprattutto in Asia orientale.",
+     "p": [
+      "In Giappone, Cina e Corea il biglietto si porge e si riceve con due mani e un leggero inchino.",
+      "Prenditi un momento per leggere il biglietto invece di metterlo subito in tasca.",
+      "Non scrivere mai sul biglietto di qualcuno davanti a lui; appoggialo con cura sul tavolo o in un portabiglietti."
+     ],
+     "q": "Ti è mai capitato di scambiare biglietti da visita o contatti in modo formale?",
+     "c": "Esercitati a porgere un biglietto o un foglietto con due mani, con il testo rivolto a chi lo riceve."
+    },
+    "pt": {
+     "t": "Cartões de visita: o básico",
+     "g": "Aprende a dar e receber cartões de visita com cuidado, sobretudo na Ásia Oriental.",
+     "p": [
+      "No Japão, na China e na Coreia, o cartão entrega-se e recebe-se com as duas mãos e uma ligeira vénia.",
+      "Tira um momento para ler o cartão em vez de o guardar logo no bolso.",
+      "Nunca escrevas no cartão de alguém à frente dessa pessoa; pousa-o com cuidado na mesa ou numa carteira de cartões."
+     ],
+     "q": "Já trocaste cartões de visita ou contactos de forma formal?",
+     "c": "Pratica entregar um cartão ou um papel com as duas mãos, com o texto virado para quem o recebe."
+    },
+    "pt_BR": {
+     "t": "Cartões de visita: o básico",
+     "g": "Aprenda a entregar e receber cartões de visita com cuidado, principalmente no Leste Asiático.",
+     "p": [
+      "No Japão, na China e na Coreia, o cartão é entregue e recebido com as duas mãos e uma leve reverência.",
+      "Reserve um momento para ler o cartão em vez de guardá-lo direto no bolso.",
+      "Nunca escreva no cartão de alguém na frente da pessoa; coloque-o com cuidado na mesa ou em um porta-cartões."
+     ],
+     "q": "Você já trocou cartões de visita ou contatos de um jeito formal?",
+     "c": "Pratique entregar um cartão ou um papel com as duas mãos, com o texto virado para quem recebe."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Small talk etiquette",
+     "g": "Learn safe small talk topics, which ones to avoid and how to keep it light.",
+     "p": [
+      "Safe topics in most places include food, travel, local sights, hobbies, the weather and the event you are at.",
+      "Ask open questions like What brings you here? and show real interest in the answer.",
+      "Share a little about yourself too, so the conversation feels like a friendly exchange, not an interview."
+     ],
+     "q": "What is your favourite small talk topic when you meet someone new?",
+     "c": "Start one short, friendly conversation today using an open question about food or travel."
+    },
+    "de": {
+     "t": "Smalltalk-Etikette",
+     "g": "Lerne sichere Smalltalk-Themen kennen, welche man meidet und wie es leicht bleibt.",
+     "p": [
+      "Sichere Themen sind fast überall Essen, Reisen, Sehenswürdigkeiten, Hobbys, das Wetter und der Anlass selbst.",
+      "Stelle offene Fragen wie Was führt dich hierher? und zeige echtes Interesse an der Antwort.",
+      "Erzähl auch etwas von dir, damit es ein freundlicher Austausch wird und kein Verhör."
+     ],
+     "q": "Was ist dein liebstes Smalltalk-Thema, wenn du jemanden kennenlernst?",
+     "c": "Beginne heute ein kurzes, freundliches Gespräch mit einer offenen Frage zu Essen oder Reisen."
+    },
+    "es": {
+     "t": "Etiqueta de la charla trivial",
+     "g": "Aprende temas seguros para charlar, cuáles evitar y cómo mantener un tono ligero.",
+     "p": [
+      "Temas seguros casi en cualquier sitio: comida, viajes, lugares de interés, aficiones, el tiempo y el propio evento.",
+      "Haz preguntas abiertas como ¿Qué te trae por aquí? y muestra interés real por la respuesta.",
+      "Cuenta también algo de ti, para que sea un intercambio amistoso y no un interrogatorio."
+     ],
+     "q": "¿Cuál es tu tema favorito para charlar cuando conoces a alguien?",
+     "c": "Empieza hoy una conversación breve y amable con una pregunta abierta sobre comida o viajes."
+    },
+    "fr": {
+     "t": "L'art de la conversation légère",
+     "g": "Apprends les sujets sûrs pour papoter, ceux à éviter et comment garder un ton léger.",
+     "p": [
+      "Sujets sûrs presque partout : la cuisine, les voyages, les lieux à visiter, les loisirs, la météo et l'événement lui-même.",
+      "Pose des questions ouvertes comme Qu'est-ce qui t'amène ici ? et intéresse-toi vraiment à la réponse.",
+      "Parle un peu de toi aussi, pour que l'échange reste amical et ne ressemble pas à un interrogatoire."
+     ],
+     "q": "Quel est ton sujet préféré pour faire connaissance avec quelqu'un ?",
+     "c": "Lance aujourd'hui une courte conversation amicale avec une question ouverte sur la cuisine ou les voyages."
+    },
+    "it": {
+     "t": "Il galateo delle chiacchiere",
+     "g": "Impara gli argomenti sicuri per chiacchierare, quelli da evitare e come restare leggero.",
+     "p": [
+      "Argomenti sicuri quasi ovunque: cibo, viaggi, luoghi da visitare, hobby, il tempo e l'evento in cui vi trovate.",
+      "Fai domande aperte come Cosa ti porta qui? e mostra interesse sincero per la risposta.",
+      "Racconta anche qualcosa di te, così sembra uno scambio amichevole e non un interrogatorio."
+     ],
+     "q": "Qual è il tuo argomento preferito quando conosci qualcuno di nuovo?",
+     "c": "Oggi avvia una breve conversazione cordiale con una domanda aperta su cibo o viaggi."
+    },
+    "pt": {
+     "t": "A etiqueta da conversa de circunstância",
+     "g": "Aprende temas seguros para conversar, quais evitar e como manter um tom leve.",
+     "p": [
+      "Temas seguros quase em todo o lado: comida, viagens, sítios a visitar, passatempos, o tempo e o próprio evento.",
+      "Faz perguntas abertas como O que te traz por cá? e mostra interesse verdadeiro pela resposta.",
+      "Conta também algo sobre ti, para que seja uma troca simpática e não um interrogatório."
+     ],
+     "q": "Qual é o teu tema preferido quando conheces alguém?",
+     "c": "Começa hoje uma conversa curta e simpática com uma pergunta aberta sobre comida ou viagens."
+    },
+    "pt_BR": {
+     "t": "A etiqueta do papo leve",
+     "g": "Aprenda temas seguros para bater papo, quais evitar e como manter o clima leve.",
+     "p": [
+      "Temas seguros em quase todo lugar: comida, viagens, pontos turísticos, hobbies, o clima e o próprio evento.",
+      "Faça perguntas abertas como O que traz você aqui? e mostre interesse de verdade pela resposta.",
+      "Conte também algo sobre você, para virar uma troca simpática e não um interrogatório."
+     ],
+     "q": "Qual é o seu assunto favorito quando conhece alguém?",
+     "c": "Comece hoje uma conversa curta e simpática com uma pergunta aberta sobre comida ou viagens."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Questions to avoid",
+     "g": "Recognise questions about age, salary and similar topics that feel too personal in many places.",
+     "p": [
+      "Asking someone's salary, age or weight can feel intrusive in much of Europe and North America.",
+      "Questions about marriage, children or someone's body are best left until the person brings them up.",
+      "In some cultures, such questions are friendly; if asked, you may answer lightly or gently change the subject."
+     ],
+     "q": "Which question do you find too personal when a stranger asks it?",
+     "c": "Prepare one polite, smiling phrase you can use to change the subject when a question feels too personal."
+    },
+    "de": {
+     "t": "Fragen, die man meiden sollte",
+     "g": "Erkenne Fragen nach Alter, Gehalt und Ähnlichem, die vielerorts als zu persönlich gelten.",
+     "p": [
+      "Nach Gehalt, Alter oder Gewicht zu fragen, wirkt in weiten Teilen Europas und Nordamerikas aufdringlich.",
+      "Fragen zu Ehe, Kindern oder dem Körper überlässt man am besten der Person selbst.",
+      "In manchen Kulturen sind solche Fragen freundlich gemeint; du kannst locker antworten oder sanft das Thema wechseln."
+     ],
+     "q": "Welche Frage empfindest du als zu persönlich, wenn ein Fremder sie stellt?",
+     "c": "Lege dir einen höflichen, lächelnden Satz zurecht, um bei zu persönlichen Fragen das Thema zu wechseln."
+    },
+    "es": {
+     "t": "Preguntas que conviene evitar",
+     "g": "Reconoce preguntas sobre edad, sueldo y temas parecidos que en muchos lugares resultan demasiado personales.",
+     "p": [
+      "Preguntar el sueldo, la edad o el peso puede parecer indiscreto en gran parte de Europa y Norteamérica.",
+      "Las preguntas sobre matrimonio, hijos o el cuerpo es mejor dejarlas hasta que la persona saque el tema.",
+      "En algunas culturas estas preguntas son amistosas; si te las hacen, responde con ligereza o cambia de tema con tacto."
+     ],
+     "q": "¿Qué pregunta te parece demasiado personal cuando te la hace un desconocido?",
+     "c": "Prepara una frase amable y sonriente para cambiar de tema cuando una pregunta te parezca muy personal."
+    },
+    "fr": {
+     "t": "Les questions à éviter",
+     "g": "Repère les questions sur l'âge, le salaire et autres sujets jugés trop personnels dans bien des pays.",
+     "p": [
+      "Demander le salaire, l'âge ou le poids de quelqu'un peut sembler indiscret dans une grande partie de l'Europe et de l'Amérique du Nord.",
+      "Mieux vaut laisser la personne aborder elle-même le mariage, les enfants ou son corps.",
+      "Dans certaines cultures, ces questions sont amicales ; tu peux répondre avec légèreté ou changer de sujet en douceur."
+     ],
+     "q": "Quelle question trouves-tu trop personnelle venant d'un inconnu ?",
+     "c": "Prépare une phrase polie et souriante pour changer de sujet quand une question te semble trop personnelle."
+    },
+    "it": {
+     "t": "Domande da evitare",
+     "g": "Riconosci le domande su età, stipendio e simili che in molti luoghi sembrano troppo personali.",
+     "p": [
+      "Chiedere lo stipendio, l'età o il peso può sembrare invadente in gran parte d'Europa e del Nord America.",
+      "Domande su matrimonio, figli o aspetto fisico è meglio lasciarle a quando ne parla la persona stessa.",
+      "In alcune culture sono domande amichevoli; se te le fanno, rispondi con leggerezza o cambia argomento con garbo."
+     ],
+     "q": "Quale domanda trovi troppo personale quando te la fa uno sconosciuto?",
+     "c": "Preparati una frase cortese e sorridente per cambiare argomento quando una domanda ti sembra troppo personale."
+    },
+    "pt": {
+     "t": "Perguntas a evitar",
+     "g": "Reconhece perguntas sobre idade, salário e temas parecidos que em muitos sítios parecem demasiado pessoais.",
+     "p": [
+      "Perguntar o salário, a idade ou o peso pode parecer indiscreto em grande parte da Europa e da América do Norte.",
+      "Perguntas sobre casamento, filhos ou o corpo de alguém ficam melhor para quando a pessoa tocar no assunto.",
+      "Em algumas culturas estas perguntas são simpáticas; se tas fizerem, responde com leveza ou muda de assunto com tato."
+     ],
+     "q": "Que pergunta achas demasiado pessoal quando um desconhecido a faz?",
+     "c": "Prepara uma frase educada e sorridente para mudar de assunto quando uma pergunta te parecer pessoal demais."
+    },
+    "pt_BR": {
+     "t": "Perguntas que é melhor evitar",
+     "g": "Reconheça perguntas sobre idade, salário e temas parecidos que em muitos lugares parecem pessoais demais.",
+     "p": [
+      "Perguntar o salário, a idade ou o peso pode soar indiscreto em boa parte da Europa e da América do Norte.",
+      "Perguntas sobre casamento, filhos ou o corpo de alguém ficam para quando a própria pessoa tocar no assunto.",
+      "Em algumas culturas essas perguntas são simpáticas; se fizerem a você, responda com leveza ou mude de assunto com jeito."
+     ],
+     "q": "Que pergunta você acha pessoal demais quando um desconhecido faz?",
+     "c": "Prepare uma frase educada e sorridente para mudar de assunto quando uma pergunta parecer pessoal demais."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Listening politely",
+     "g": "Practise polite listening: no interrupting, gentle nodding and genuine interest.",
+     "p": [
+      "Let people finish their sentences, even when you already guess what they will say.",
+      "Short signals like nodding, hmm or I see show you are following, though their style varies by culture.",
+      "Ask a follow-up question about what they said before switching to your own story."
+     ],
+     "q": "Who in your life is a great listener, and what do they do that you like?",
+     "c": "In your next conversation, ask at least two follow-up questions before talking about yourself."
+    },
+    "de": {
+     "t": "Höflich zuhören",
+     "g": "Übe höfliches Zuhören: nicht unterbrechen, sanft nicken und echtes Interesse zeigen.",
+     "p": [
+      "Lass Menschen ausreden, auch wenn du schon ahnst, was sie sagen wollen.",
+      "Kurze Signale wie Nicken, hm oder verstehe zeigen, dass du folgst, ihr Stil ist aber je nach Kultur verschieden.",
+      "Stelle eine Nachfrage zum Gesagten, bevor du zu deiner eigenen Geschichte wechselst."
+     ],
+     "q": "Wer in deinem Leben hört besonders gut zu, und was magst du daran?",
+     "c": "Stelle im nächsten Gespräch mindestens zwei Nachfragen, bevor du von dir erzählst."
+    },
+    "es": {
+     "t": "Escuchar con educación",
+     "g": "Practica la escucha educada: sin interrumpir, asintiendo y mostrando interés real.",
+     "p": [
+      "Deja que la gente termine sus frases, aunque ya adivines lo que va a decir.",
+      "Señales breves como asentir, ajá o entiendo muestran que sigues la conversación, aunque su estilo cambia según la cultura.",
+      "Haz una pregunta sobre lo que te contaron antes de pasar a tu propia historia."
+     ],
+     "q": "¿Quién en tu vida sabe escuchar muy bien, y qué hace que te gusta?",
+     "c": "En tu próxima conversación, haz al menos dos preguntas de seguimiento antes de hablar de ti."
+    },
+    "fr": {
+     "t": "Écouter avec politesse",
+     "g": "Exerce-toi à écouter poliment : sans interrompre, en hochant la tête et avec un intérêt sincère.",
+     "p": [
+      "Laisse les gens finir leurs phrases, même si tu devines déjà ce qu'ils vont dire.",
+      "De petits signaux comme hocher la tête, hum ou je vois montrent que tu suis, même si leur style varie selon les cultures.",
+      "Pose une question sur ce qui vient d'être dit avant de passer à ta propre histoire."
+     ],
+     "q": "Qui, dans ta vie, sait vraiment bien écouter, et qu'apprécies-tu chez lui ?",
+     "c": "Lors de ta prochaine conversation, pose au moins deux questions de relance avant de parler de toi."
+    },
+    "it": {
+     "t": "Ascoltare con garbo",
+     "g": "Esercitati ad ascoltare con garbo: senza interrompere, annuendo e con interesse sincero.",
+     "p": [
+      "Lascia che le persone finiscano le frasi, anche se intuisci già cosa diranno.",
+      "Piccoli segnali come annuire, mm o capisco mostrano che segui, anche se il loro stile varia da cultura a cultura.",
+      "Fai una domanda su ciò che ti hanno raccontato prima di passare alla tua storia."
+     ],
+     "q": "Chi nella tua vita sa ascoltare davvero bene, e cosa fa che ti piace?",
+     "c": "Nella prossima conversazione fai almeno due domande di approfondimento prima di parlare di te."
+    },
+    "pt": {
+     "t": "Ouvir com educação",
+     "g": "Pratica a escuta educada: sem interromper, acenando com a cabeça e com interesse verdadeiro.",
+     "p": [
+      "Deixa as pessoas acabarem as frases, mesmo que já adivinhes o que vão dizer.",
+      "Pequenos sinais como acenar, hum ou estou a ver mostram que acompanhas, embora o estilo varie entre culturas.",
+      "Faz uma pergunta sobre o que te contaram antes de passares à tua própria história."
+     ],
+     "q": "Quem, na tua vida, sabe ouvir muito bem, e o que faz que tu aprecias?",
+     "c": "Na próxima conversa, faz pelo menos duas perguntas de seguimento antes de falares de ti."
+    },
+    "pt_BR": {
+     "t": "Ouvir com educação",
+     "g": "Pratique a escuta educada: sem interromper, acenando com a cabeça e com interesse de verdade.",
+     "p": [
+      "Deixe as pessoas terminarem as frases, mesmo que você já imagine o que vão dizer.",
+      "Pequenos sinais como acenar, hum ou entendi mostram que você acompanha, embora o estilo mude entre culturas.",
+      "Faça uma pergunta sobre o que contaram antes de passar para a sua própria história."
+     ],
+     "q": "Quem na sua vida sabe ouvir muito bem, e o que essa pessoa faz que você gosta?",
+     "c": "Na próxima conversa, faça pelo menos duas perguntas de acompanhamento antes de falar de você."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Personal space etiquette",
+     "g": "Learn how close to stand to others and when to give people more room.",
+     "p": [
+      "Comfortable distance varies: often closer in Latin America and the Mediterranean, wider in Northern Europe and Japan.",
+      "If someone steps back while you talk, they probably need more space, so do not close the gap.",
+      "In queues, lifts and public transport, keep as much room as the situation allows and avoid leaning on people."
+     ],
+     "q": "Do you like to stand close when you talk, or do you prefer a bit more space?",
+     "c": "Pay attention today to the distance people keep when they talk, and adjust yours to match."
+    },
+    "de": {
+     "t": "Etikette der persönlichen Distanz",
+     "g": "Lerne, wie nah man anderen kommt und wann man mehr Abstand lässt.",
+     "p": [
+      "Die angenehme Distanz variiert: oft enger in Lateinamerika und am Mittelmeer, größer in Nordeuropa und Japan.",
+      "Tritt jemand beim Reden einen Schritt zurück, braucht er wohl mehr Raum, also rück nicht nach.",
+      "In Schlangen, Aufzügen und Verkehrsmitteln halte so viel Abstand wie möglich und lehne dich nicht an andere."
+     ],
+     "q": "Stehst du beim Reden gern nah, oder magst du etwas mehr Abstand?",
+     "c": "Achte heute auf den Abstand, den Menschen beim Reden halten, und passe deinen daran an."
+    },
+    "es": {
+     "t": "Etiqueta del espacio personal",
+     "g": "Aprende a qué distancia ponerte de los demás y cuándo dejar más espacio.",
+     "p": [
+      "La distancia cómoda varía: suele ser menor en Latinoamérica y el Mediterráneo, y mayor en el norte de Europa y Japón.",
+      "Si alguien da un paso atrás mientras habláis, probablemente necesita más espacio, así que no lo acortes.",
+      "En colas, ascensores y transporte público, deja todo el espacio que permita la situación y no te apoyes en nadie."
+     ],
+     "q": "¿Te gusta hablar de cerca o prefieres un poco más de espacio?",
+     "c": "Observa hoy la distancia que guarda la gente al hablar y ajusta la tuya para que coincida."
+    },
+    "fr": {
+     "t": "L'espace personnel",
+     "g": "Apprends à quelle distance te tenir des autres et quand leur laisser plus de place.",
+     "p": [
+      "La distance confortable varie : souvent plus courte en Amérique latine et en Méditerranée, plus grande en Europe du Nord et au Japon.",
+      "Si quelqu'un recule pendant que vous parlez, il a sans doute besoin d'espace : ne comble pas l'écart.",
+      "Dans les files, les ascenseurs et les transports, garde autant d'espace que possible et ne t'appuie pas sur les autres."
+     ],
+     "q": "Aimes-tu parler de près, ou préfères-tu un peu plus d'espace ?",
+     "c": "Observe aujourd'hui la distance que les gens gardent en parlant et ajuste la tienne."
+    },
+    "it": {
+     "t": "Il galateo dello spazio personale",
+     "g": "Impara a quale distanza stare dagli altri e quando lasciare più spazio.",
+     "p": [
+      "La distanza giusta varia: spesso più ridotta in America Latina e nel Mediterraneo, più ampia nel Nord Europa e in Giappone.",
+      "Se qualcuno fa un passo indietro mentre parlate, probabilmente ha bisogno di spazio: non riavvicinarti.",
+      "In fila, in ascensore e sui mezzi pubblici lascia tutto lo spazio possibile ed evita di appoggiarti agli altri."
+     ],
+     "q": "Ti piace parlare da vicino o preferisci un po' più di spazio?",
+     "c": "Oggi osserva la distanza che le persone mantengono parlando e adegua la tua."
+    },
+    "pt": {
+     "t": "A etiqueta do espaço pessoal",
+     "g": "Aprende a que distância ficar dos outros e quando dar mais espaço.",
+     "p": [
+      "A distância confortável varia: muitas vezes menor na América Latina e no Mediterrâneo, maior no Norte da Europa e no Japão.",
+      "Se alguém recua enquanto falam, provavelmente precisa de mais espaço, por isso não voltes a aproximar-te.",
+      "Em filas, elevadores e transportes públicos, deixa todo o espaço possível e evita encostar-te às pessoas."
+     ],
+     "q": "Gostas de falar de perto ou preferes um pouco mais de espaço?",
+     "c": "Repara hoje na distância que as pessoas mantêm ao falar e ajusta a tua."
+    },
+    "pt_BR": {
+     "t": "A etiqueta do espaço pessoal",
+     "g": "Aprenda a que distância ficar dos outros e quando dar mais espaço.",
+     "p": [
+      "A distância confortável varia: costuma ser menor na América Latina e no Mediterrâneo, maior no norte da Europa e no Japão.",
+      "Se alguém dá um passo para trás enquanto vocês conversam, provavelmente precisa de espaço, então não se aproxime de novo.",
+      "Em filas, elevadores e no transporte público, deixe todo o espaço possível e evite se encostar nas pessoas."
+     ],
+     "q": "Você gosta de conversar de perto ou prefere um pouco mais de espaço?",
+     "c": "Repare hoje na distância que as pessoas mantêm ao conversar e ajuste a sua."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Eye contact etiquette",
+     "g": "Learn when to look people in the eye and when to soften your gaze.",
+     "p": [
+      "In the US, Germany and much of Europe, steady eye contact signals honesty and attention.",
+      "In Japan, Korea and some other cultures, softer or shorter eye contact, especially with elders, shows respect.",
+      "A natural balance is to meet someone's eyes, then glance away briefly, rather than stare."
+     ],
+     "q": "Is direct eye contact comfortable for you, and was it encouraged where you grew up?",
+     "c": "In your next chat, practise relaxed eye contact: look, smile, glance away, then look again."
+    },
+    "de": {
+     "t": "Etikette des Blickkontakts",
+     "g": "Lerne, wann man Menschen in die Augen sieht und wann man den Blick sanfter hält.",
+     "p": [
+      "In den USA, Deutschland und weiten Teilen Europas steht fester Blickkontakt für Ehrlichkeit und Aufmerksamkeit.",
+      "In Japan, Korea und einigen anderen Kulturen zeigt ein weicherer, kürzerer Blick, vor allem gegenüber Älteren, Respekt.",
+      "Natürlich wirkt es, jemandem in die Augen zu sehen und dann kurz wegzuschauen, statt zu starren."
+     ],
+     "q": "Ist dir direkter Blickkontakt angenehm, und wurde er dort gefördert, wo du aufgewachsen bist?",
+     "c": "Übe im nächsten Gespräch entspannten Blickkontakt: ansehen, lächeln, kurz wegschauen, wieder ansehen."
+    },
+    "es": {
+     "t": "Etiqueta del contacto visual",
+     "g": "Aprende cuándo mirar a los ojos y cuándo suavizar la mirada.",
+     "p": [
+      "En Estados Unidos, Alemania y gran parte de Europa, mirar a los ojos con firmeza indica sinceridad y atención.",
+      "En Japón, Corea y otras culturas, una mirada más suave o breve, sobre todo con mayores, muestra respeto.",
+      "Un equilibrio natural es mirar a los ojos y luego apartar la vista un momento, en lugar de fijarla."
+     ],
+     "q": "¿Te resulta cómodo el contacto visual directo, y se fomentaba donde creciste?",
+     "c": "En tu próxima charla, practica una mirada relajada: mira, sonríe, aparta la vista y vuelve a mirar."
+    },
+    "fr": {
+     "t": "Le regard et la politesse",
+     "g": "Apprends quand regarder les gens dans les yeux et quand adoucir ton regard.",
+     "p": [
+      "Aux États-Unis, en Allemagne et dans une grande partie de l'Europe, un regard franc signale honnêteté et attention.",
+      "Au Japon, en Corée et dans d'autres cultures, un regard plus doux ou plus bref, surtout envers les aînés, marque le respect.",
+      "Un bon équilibre consiste à croiser le regard puis à détourner brièvement les yeux, plutôt qu'à fixer."
+     ],
+     "q": "Le contact visuel direct est-il confortable pour toi, et était-il encouragé là où tu as grandi ?",
+     "c": "Lors de ta prochaine discussion, pratique un regard détendu : regarder, sourire, détourner un instant, revenir."
+    },
+    "it": {
+     "t": "Il galateo dello sguardo",
+     "g": "Impara quando guardare le persone negli occhi e quando addolcire lo sguardo.",
+     "p": [
+      "Negli Stati Uniti, in Germania e in gran parte d'Europa uno sguardo diretto comunica sincerità e attenzione.",
+      "In Giappone, in Corea e in altre culture uno sguardo più morbido o breve, soprattutto con gli anziani, esprime rispetto.",
+      "Un equilibrio naturale è guardare negli occhi e poi distogliere brevemente lo sguardo, invece di fissare."
+     ],
+     "q": "Il contatto visivo diretto ti mette a tuo agio, ed era incoraggiato dove sei cresciuto?",
+     "c": "Nella prossima chiacchierata esercitati a uno sguardo rilassato: guarda, sorridi, distogli un attimo, riguarda."
+    },
+    "pt": {
+     "t": "A etiqueta do olhar",
+     "g": "Aprende quando olhar as pessoas nos olhos e quando suavizar o olhar.",
+     "p": [
+      "Nos Estados Unidos, na Alemanha e em grande parte da Europa, olhar nos olhos com firmeza mostra honestidade e atenção.",
+      "No Japão, na Coreia e noutras culturas, um olhar mais suave ou breve, sobretudo com os mais velhos, mostra respeito.",
+      "Um equilíbrio natural é olhar nos olhos e depois desviar brevemente o olhar, em vez de fixar."
+     ],
+     "q": "Sentes-te à vontade com o contacto visual direto, e era incentivado onde cresceste?",
+     "c": "Na próxima conversa, pratica um olhar descontraído: olha, sorri, desvia por um instante e volta a olhar."
+    },
+    "pt_BR": {
+     "t": "A etiqueta do olhar",
+     "g": "Aprenda quando olhar as pessoas nos olhos e quando suavizar o olhar.",
+     "p": [
+      "Nos Estados Unidos, na Alemanha e em boa parte da Europa, olhar firme nos olhos indica honestidade e atenção.",
+      "No Japão, na Coreia e em outras culturas, um olhar mais suave ou breve, principalmente com os mais velhos, mostra respeito.",
+      "Um equilíbrio natural é olhar nos olhos e depois desviar rapidamente o olhar, em vez de encarar."
+     ],
+     "q": "Você se sente à vontade com contato visual direto, e isso era incentivado onde você cresceu?",
+     "c": "Na próxima conversa, pratique um olhar tranquilo: olhe, sorria, desvie por um instante e olhe de novo."
+    }
+   }
+  }
+ ]
+}

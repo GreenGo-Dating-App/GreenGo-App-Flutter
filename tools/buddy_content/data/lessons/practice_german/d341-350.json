@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_german",
+ "lessons": [
+  {
+   "d": 341,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Interpreting statistics",
+     "g": "Read and explain numbers: half, a third, rising by ten percent.",
+     "p": [
+      "Fractions: die Hälfte, ein Drittel, ein Viertel, drei Viertel. Fast die Hälfte der Befragten gibt an, dass...",
+      "Percentages: 40 Prozent der Jugendlichen... The verb is often plural: 40 Prozent lesen täglich.",
+      "Changes: um zehn Prozent steigen (by), auf 30 Prozent steigen (to). Die Zahl hat sich verdoppelt."
+     ],
+     "q": "Imagine a survey: how many people in your class or office drink coffee every day? Say it with a fraction.",
+     "c": "Find any simple statistic about your town or hobby and describe it in three sentences with Hälfte, Prozent and um."
+    },
+    "de": {
+     "t": "Statistiken auswerten",
+     "g": "Du liest und erklärst Zahlen: die Hälfte, ein Drittel, um zehn Prozent steigen.",
+     "p": [
+      "Brüche: die Hälfte, ein Drittel, ein Viertel, drei Viertel. Fast die Hälfte der Befragten gibt an, dass...",
+      "Prozente: 40 Prozent der Jugendlichen... Das Verb steht oft im Plural: 40 Prozent lesen täglich.",
+      "Veränderungen: um zehn Prozent steigen (Differenz), auf 30 Prozent steigen (Ergebnis). Die Zahl hat sich verdoppelt."
+     ],
+     "q": "Stell dir eine Umfrage vor: Wie viele Leute in deinem Kurs oder Büro trinken täglich Kaffee? Sag es mit einem Bruch.",
+     "c": "Such eine einfache Statistik zu deiner Stadt oder deinem Hobby und beschreib sie in drei Sätzen mit Hälfte, Prozent und um."
+    },
+    "es": {
+     "t": "Interpretar estadísticas",
+     "g": "Lee y explica cifras: la mitad, un tercio, subir un diez por ciento.",
+     "p": [
+      "Fracciones: die Hälfte, ein Drittel, ein Viertel, drei Viertel. Fast die Hälfte der Befragten gibt an, dass...",
+      "Porcentajes: 40 Prozent der Jugendlichen... El verbo suele ir en plural: 40 Prozent lesen täglich.",
+      "Cambios: um zehn Prozent steigen (en cuánto), auf 30 Prozent steigen (hasta cuánto). Die Zahl hat sich verdoppelt."
+     ],
+     "q": "Imagina una encuesta: ¿cuántas personas de tu clase u oficina toman café a diario? Dilo con una fracción.",
+     "c": "Busca una estadística sencilla sobre tu ciudad o afición y descríbela en tres frases con Hälfte, Prozent y um."
+    },
+    "fr": {
+     "t": "Interpréter des statistiques",
+     "g": "Lire et expliquer des chiffres : la moitié, un tiers, augmenter de dix pour cent.",
+     "p": [
+      "Fractions : die Hälfte, ein Drittel, ein Viertel, drei Viertel. Fast die Hälfte der Befragten gibt an, dass...",
+      "Pourcentages : 40 Prozent der Jugendlichen... Le verbe est souvent au pluriel : 40 Prozent lesen täglich.",
+      "Évolutions : um zehn Prozent steigen (de), auf 30 Prozent steigen (à). Die Zahl hat sich verdoppelt."
+     ],
+     "q": "Imagine un sondage : combien de personnes dans ton cours ou ton bureau boivent du café chaque jour ? Dis-le avec une fraction.",
+     "c": "Trouve une statistique simple sur ta ville ou ton loisir et décris-la en trois phrases avec Hälfte, Prozent et um."
+    },
+    "it": {
+     "t": "Interpretare statistiche",
+     "g": "Leggi e spiega numeri: la metà, un terzo, aumentare del dieci per cento.",
+     "p": [
+      "Frazioni: die Hälfte, ein Drittel, ein Viertel, drei Viertel. Fast die Hälfte der Befragten gibt an, dass...",
+      "Percentuali: 40 Prozent der Jugendlichen... Il verbo è spesso al plurale: 40 Prozent lesen täglich.",
+      "Variazioni: um zehn Prozent steigen (di quanto), auf 30 Prozent steigen (fino a). Die Zahl hat sich verdoppelt."
+     ],
+     "q": "Immagina un sondaggio: quante persone nel tuo corso o ufficio bevono caffè ogni giorno? Dillo con una frazione.",
+     "c": "Trova una statistica semplice sulla tua città o un hobby e descrivila in tre frasi con Hälfte, Prozent e um."
+    },
+    "pt": {
+     "t": "Interpretar estatísticas",
+     "g": "Ler e explicar números: metade, um terço, subir dez por cento.",
+     "p": [
+      "Frações: die Hälfte, ein Drittel, ein Viertel, drei Viertel. Fast die Hälfte der Befragten gibt an, dass...",
+      "Percentagens: 40 Prozent der Jugendlichen... O verbo vai muitas vezes no plural: 40 Prozent lesen täglich.",
+      "Variações: um zehn Prozent steigen (em quanto), auf 30 Prozent steigen (até quanto). Die Zahl hat sich verdoppelt."
+     ],
+     "q": "Imagina um inquérito: quantas pessoas da tua turma ou escritório bebem café todos os dias? Diz com uma fração.",
+     "c": "Procura uma estatística simples sobre a tua cidade ou passatempo e descreve-a em três frases com Hälfte, Prozent e um."
+    },
+    "pt_BR": {
+     "t": "Interpretar estatísticas",
+     "g": "Ler e explicar números: metade, um terço, subir dez por cento.",
+     "p": [
+      "Frações: die Hälfte, ein Drittel, ein Viertel, drei Viertel. Fast die Hälfte der Befragten gibt an, dass...",
+      "Porcentagens: 40 Prozent der Jugendlichen... O verbo costuma ir no plural: 40 Prozent lesen täglich.",
+      "Variações: um zehn Prozent steigen (em quanto), auf 30 Prozent steigen (até quanto). Die Zahl hat sich verdoppelt."
+     ],
+     "q": "Imagine uma pesquisa: quantas pessoas da sua turma ou escritório tomam café todo dia? Diga com uma fração.",
+     "c": "Procure uma estatística simples sobre sua cidade ou hobby e descreva em três frases com Hälfte, Prozent e um."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "die Hälfte",
+      "ex": "Die Hälfte der Teilnehmer kommt aus Europa."
+     },
+     {
+      "w": "ein Drittel",
+      "ex": "Ein Drittel der Befragten fährt mit dem Rad zur Arbeit."
+     },
+     {
+      "w": "der Befragte",
+      "ex": "Die meisten Befragten sind mit ihrer Wohnung zufrieden."
+     },
+     {
+      "w": "um ... Prozent steigen",
+      "ex": "Die Zahl der Besucher ist um zehn Prozent gestiegen."
+     },
+     {
+      "w": "sich verdoppeln",
+      "ex": "Die Zahl der Radfahrer hat sich verdoppelt."
+     },
+     {
+      "w": "angeben",
+      "ex": "Viele geben an, dass sie zu wenig Zeit haben."
+     }
+    ],
+    "gram": "um = Differenz (um 5 Prozent steigen), auf = Endwert (auf 20 Prozent steigen), von... auf (von 10 auf 15 Prozent)."
+   }
+  },
+  {
+   "d": 342,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Describing trends",
+     "g": "Describe how things develop: zunehmen, abnehmen, sinken, sich stabilisieren.",
+     "p": [
+      "Going up: steigen, zunehmen, wachsen. Die Zahl der Radfahrer nimmt stetig zu.",
+      "Going down: sinken, abnehmen, zurückgehen. Der Verbrauch ist deutlich gesunken. Staying: sich stabilisieren, gleich bleiben.",
+      "Intensity: leicht, deutlich, stark, stetig, sprunghaft. Seit 2015 ist die Zahl stark gestiegen."
+     ],
+     "q": "Describe a trend in your own life: what has increased or decreased over the last years?",
+     "c": "Draw a simple line graph of something in your week (sleep, steps, coffee) and describe it in four sentences."
+    },
+    "de": {
+     "t": "Entwicklungen beschreiben",
+     "g": "Du beschreibst Trends: zunehmen, abnehmen, sinken, sich stabilisieren.",
+     "p": [
+      "Nach oben: steigen, zunehmen, wachsen. Die Zahl der Radfahrer nimmt stetig zu.",
+      "Nach unten: sinken, abnehmen, zurückgehen. Der Verbrauch ist deutlich gesunken. Gleich: sich stabilisieren, gleich bleiben.",
+      "Stärke: leicht, deutlich, stark, stetig, sprunghaft. Seit 2015 ist die Zahl stark gestiegen."
+     ],
+     "q": "Beschreib eine Entwicklung in deinem Leben: Was hat in den letzten Jahren zu- oder abgenommen?",
+     "c": "Zeichne eine einfache Kurve zu etwas aus deiner Woche (Schlaf, Schritte, Kaffee) und beschreib sie in vier Sätzen."
+    },
+    "es": {
+     "t": "Describir tendencias",
+     "g": "Describe cómo evolucionan las cosas: zunehmen, abnehmen, sinken, sich stabilisieren.",
+     "p": [
+      "Subir: steigen, zunehmen, wachsen. Die Zahl der Radfahrer nimmt stetig zu.",
+      "Bajar: sinken, abnehmen, zurückgehen. Der Verbrauch ist deutlich gesunken. Mantenerse: sich stabilisieren, gleich bleiben.",
+      "Intensidad: leicht, deutlich, stark, stetig, sprunghaft. Seit 2015 ist die Zahl stark gestiegen."
+     ],
+     "q": "Describe una tendencia de tu vida: ¿qué ha aumentado o disminuido en los últimos años?",
+     "c": "Dibuja una gráfica sencilla de algo de tu semana (sueño, pasos, café) y descríbela en cuatro frases."
+    },
+    "fr": {
+     "t": "Décrire des tendances",
+     "g": "Décrire une évolution : zunehmen, abnehmen, sinken, sich stabilisieren.",
+     "p": [
+      "Hausse : steigen, zunehmen, wachsen. Die Zahl der Radfahrer nimmt stetig zu.",
+      "Baisse : sinken, abnehmen, zurückgehen. Der Verbrauch ist deutlich gesunken. Stabilité : sich stabilisieren, gleich bleiben.",
+      "Intensité : leicht, deutlich, stark, stetig, sprunghaft. Seit 2015 ist die Zahl stark gestiegen."
+     ],
+     "q": "Décris une tendance dans ta vie : qu'est-ce qui a augmenté ou diminué ces dernières années ?",
+     "c": "Dessine une courbe simple sur ta semaine (sommeil, pas, café) et décris-la en quatre phrases."
+    },
+    "it": {
+     "t": "Descrivere tendenze",
+     "g": "Descrivi come cambiano le cose: zunehmen, abnehmen, sinken, sich stabilisieren.",
+     "p": [
+      "Salire: steigen, zunehmen, wachsen. Die Zahl der Radfahrer nimmt stetig zu.",
+      "Scendere: sinken, abnehmen, zurückgehen. Der Verbrauch ist deutlich gesunken. Restare: sich stabilisieren, gleich bleiben.",
+      "Intensità: leicht, deutlich, stark, stetig, sprunghaft. Seit 2015 ist die Zahl stark gestiegen."
+     ],
+     "q": "Descrivi una tendenza della tua vita: che cosa è aumentato o diminuito negli ultimi anni?",
+     "c": "Disegna un grafico semplice su qualcosa della tua settimana (sonno, passi, caffè) e descrivilo in quattro frasi."
+    },
+    "pt": {
+     "t": "Descrever tendências",
+     "g": "Descrever como as coisas evoluem: zunehmen, abnehmen, sinken, sich stabilisieren.",
+     "p": [
+      "Subir: steigen, zunehmen, wachsen. Die Zahl der Radfahrer nimmt stetig zu.",
+      "Descer: sinken, abnehmen, zurückgehen. Der Verbrauch ist deutlich gesunken. Manter: sich stabilisieren, gleich bleiben.",
+      "Intensidade: leicht, deutlich, stark, stetig, sprunghaft. Seit 2015 ist die Zahl stark gestiegen."
+     ],
+     "q": "Descreve uma tendência na tua vida: o que aumentou ou diminuiu nos últimos anos?",
+     "c": "Desenha um gráfico simples sobre algo da tua semana (sono, passos, café) e descreve-o em quatro frases."
+    },
+    "pt_BR": {
+     "t": "Descrever tendências",
+     "g": "Descrever como as coisas evoluem: zunehmen, abnehmen, sinken, sich stabilisieren.",
+     "p": [
+      "Subir: steigen, zunehmen, wachsen. Die Zahl der Radfahrer nimmt stetig zu.",
+      "Descer: sinken, abnehmen, zurückgehen. Der Verbrauch ist deutlich gesunken. Manter: sich stabilisieren, gleich bleiben.",
+      "Intensidade: leicht, deutlich, stark, stetig, sprunghaft. Seit 2015 ist die Zahl stark gestiegen."
+     ],
+     "q": "Descreva uma tendência da sua vida: o que aumentou ou diminuiu nos últimos anos?",
+     "c": "Desenhe um gráfico simples sobre algo da sua semana (sono, passos, café) e descreva em quatro frases."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "zunehmen",
+      "ex": "Der Tourismus in der Region nimmt zu."
+     },
+     {
+      "w": "abnehmen",
+      "ex": "Die Zahl der Autos in der Innenstadt nimmt ab."
+     },
+     {
+      "w": "sinken",
+      "ex": "Die Temperaturen sinken in der Nacht stark."
+     },
+     {
+      "w": "sich stabilisieren",
+      "ex": "Nach dem Rückgang haben sich die Zahlen stabilisiert."
+     },
+     {
+      "w": "stetig",
+      "ex": "Das Interesse an Deutschkursen wächst stetig."
+     },
+     {
+      "w": "der Rückgang",
+      "ex": "Man beobachtet einen deutlichen Rückgang."
+     }
+    ],
+    "gram": "Perfekt mit sein bei Zustandsänderung: Die Zahl ist gestiegen / gesunken. Adverb vor dem Partizip: ist stark gestiegen."
+   }
+  },
+  {
+   "d": 343,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Cause and effect in depth",
+     "g": "Express causes and consequences precisely: führen zu, verursachen, zurückzuführen sein auf.",
+     "p": [
+      "Effect: Der Lärm führt zu Stress. / Das verursacht Probleme. / Das hat zur Folge, dass...",
+      "Cause: Der Erfolg ist auf gute Planung zurückzuführen. / Das liegt daran, dass... / Aufgrund des Wetters...",
+      "Connectors: deshalb, folglich, infolgedessen (consequence); da, weil, aufgrund + Genitiv (cause)."
+     ],
+     "q": "Why do you think so many people want to learn languages? Answer with Das liegt daran, dass...",
+     "c": "Write a chain of four sentences linking cause and effect about sleep, using führen zu, folglich and zurückzuführen auf."
+    },
+    "de": {
+     "t": "Ursache und Wirkung genauer",
+     "g": "Du drückst Ursachen und Folgen genau aus: führen zu, verursachen, zurückzuführen sein auf.",
+     "p": [
+      "Wirkung: Der Lärm führt zu Stress. / Das verursacht Probleme. / Das hat zur Folge, dass...",
+      "Ursache: Der Erfolg ist auf gute Planung zurückzuführen. / Das liegt daran, dass... / Aufgrund des Wetters...",
+      "Konnektoren: deshalb, folglich, infolgedessen (Folge); da, weil, aufgrund + Genitiv (Grund)."
+     ],
+     "q": "Warum wollen deiner Meinung nach so viele Menschen Sprachen lernen? Antworte mit Das liegt daran, dass...",
+     "c": "Schreib eine Kette aus vier Sätzen zu Ursache und Wirkung beim Schlaf mit führen zu, folglich und zurückzuführen auf."
+    },
+    "es": {
+     "t": "Causa y efecto a fondo",
+     "g": "Expresa causas y consecuencias con precisión: führen zu, verursachen, zurückzuführen sein auf.",
+     "p": [
+      "Efecto: Der Lärm führt zu Stress. / Das verursacht Probleme. / Das hat zur Folge, dass...",
+      "Causa: Der Erfolg ist auf gute Planung zurückzuführen. / Das liegt daran, dass... / Aufgrund des Wetters...",
+      "Conectores: deshalb, folglich, infolgedessen (consecuencia); da, weil, aufgrund + genitivo (causa)."
+     ],
+     "q": "¿Por qué crees que tanta gente quiere aprender idiomas? Responde con Das liegt daran, dass...",
+     "c": "Escribe una cadena de cuatro frases de causa y efecto sobre el sueño con führen zu, folglich y zurückzuführen auf."
+    },
+    "fr": {
+     "t": "Cause et conséquence en détail",
+     "g": "Exprimer causes et conséquences avec précision : führen zu, verursachen, zurückzuführen sein auf.",
+     "p": [
+      "Conséquence : Der Lärm führt zu Stress. / Das verursacht Probleme. / Das hat zur Folge, dass...",
+      "Cause : Der Erfolg ist auf gute Planung zurückzuführen. / Das liegt daran, dass... / Aufgrund des Wetters...",
+      "Connecteurs : deshalb, folglich, infolgedessen (conséquence) ; da, weil, aufgrund + génitif (cause)."
+     ],
+     "q": "Pourquoi tant de gens veulent-ils apprendre des langues selon toi ? Réponds avec Das liegt daran, dass...",
+     "c": "Écris une chaîne de quatre phrases cause-effet sur le sommeil avec führen zu, folglich et zurückzuführen auf."
+    },
+    "it": {
+     "t": "Causa ed effetto a fondo",
+     "g": "Esprimi cause e conseguenze con precisione: führen zu, verursachen, zurückzuführen sein auf.",
+     "p": [
+      "Effetto: Der Lärm führt zu Stress. / Das verursacht Probleme. / Das hat zur Folge, dass...",
+      "Causa: Der Erfolg ist auf gute Planung zurückzuführen. / Das liegt daran, dass... / Aufgrund des Wetters...",
+      "Connettivi: deshalb, folglich, infolgedessen (conseguenza); da, weil, aufgrund + genitivo (causa)."
+     ],
+     "q": "Secondo te perché tante persone vogliono imparare le lingue? Rispondi con Das liegt daran, dass...",
+     "c": "Scrivi una catena di quattro frasi causa-effetto sul sonno con führen zu, folglich e zurückzuführen auf."
+    },
+    "pt": {
+     "t": "Causa e efeito a fundo",
+     "g": "Exprimir causas e consequências com precisão: führen zu, verursachen, zurückzuführen sein auf.",
+     "p": [
+      "Efeito: Der Lärm führt zu Stress. / Das verursacht Probleme. / Das hat zur Folge, dass...",
+      "Causa: Der Erfolg ist auf gute Planung zurückzuführen. / Das liegt daran, dass... / Aufgrund des Wetters...",
+      "Conectores: deshalb, folglich, infolgedessen (consequência); da, weil, aufgrund + genitivo (causa)."
+     ],
+     "q": "Porque achas que tanta gente quer aprender línguas? Responde com Das liegt daran, dass...",
+     "c": "Escreve uma cadeia de quatro frases de causa e efeito sobre o sono com führen zu, folglich e zurückzuführen auf."
+    },
+    "pt_BR": {
+     "t": "Causa e efeito a fundo",
+     "g": "Expressar causas e consequências com precisão: führen zu, verursachen, zurückzuführen sein auf.",
+     "p": [
+      "Efeito: Der Lärm führt zu Stress. / Das verursacht Probleme. / Das hat zur Folge, dass...",
+      "Causa: Der Erfolg ist auf gute Planung zurückzuführen. / Das liegt daran, dass... / Aufgrund des Wetters...",
+      "Conectivos: deshalb, folglich, infolgedessen (consequência); da, weil, aufgrund + genitivo (causa)."
+     ],
+     "q": "Por que você acha que tanta gente quer aprender idiomas? Responda com Das liegt daran, dass...",
+     "c": "Escreva uma sequência de quatro frases de causa e efeito sobre o sono com führen zu, folglich e zurückzuführen auf."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "führen zu",
+      "ex": "Zu wenig Schlaf führt zu Konzentrationsproblemen."
+     },
+     {
+      "w": "verursachen",
+      "ex": "Der Stau wurde durch einen Unfall verursacht."
+     },
+     {
+      "w": "zurückzuführen sein auf",
+      "ex": "Der Erfolg ist auf harte Arbeit zurückzuführen."
+     },
+     {
+      "w": "die Folge",
+      "ex": "Die Folge war, dass alle zu spät kamen."
+     },
+     {
+      "w": "aufgrund",
+      "ex": "Aufgrund des Regens fiel das Konzert aus."
+     },
+     {
+      "w": "folglich",
+      "ex": "Er hat viel geübt, folglich hat er die Prüfung bestanden."
+     }
+    ],
+    "gram": "aufgrund + Genitiv (aufgrund des Wetters); führen zu + Dativ (zu Stress); sein + zu + Infinitiv: ist auf... zurückzuführen."
+   }
+  },
+  {
+   "d": 344,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Precise vocabulary",
+     "g": "Replace vague words like machen, sagen and Ding with precise ones.",
+     "p": [
+      "Instead of machen: eine Entscheidung treffen, einen Fehler begehen, Sport treiben, einen Vorschlag unterbreiten.",
+      "Instead of sagen: behaupten, erklären, betonen, erwähnen, zugeben. Er betonte, dass...",
+      "Instead of Ding: der Gegenstand, das Gerät, die Angelegenheit, der Aspekt. Precise words make you sound B2 and beyond."
+     ],
+     "q": "Improve this sentence: Er hat gesagt, dass er das Ding gemacht hat. How would you say it more precisely?",
+     "c": "Take a short text you wrote earlier and replace every machen, sagen and Ding with a more precise word."
+    },
+    "de": {
+     "t": "Präziser Wortschatz",
+     "g": "Du ersetzt vage Wörter wie machen, sagen und Ding durch präzise.",
+     "p": [
+      "Statt machen: eine Entscheidung treffen, einen Fehler begehen, Sport treiben, einen Vorschlag unterbreiten.",
+      "Statt sagen: behaupten, erklären, betonen, erwähnen, zugeben. Er betonte, dass...",
+      "Statt Ding: der Gegenstand, das Gerät, die Angelegenheit, der Aspekt. Präzise Wörter klingen nach B2 und mehr."
+     ],
+     "q": "Verbessere diesen Satz: Er hat gesagt, dass er das Ding gemacht hat. Wie sagst du es genauer?",
+     "c": "Nimm einen kurzen Text, den du früher geschrieben hast, und ersetze jedes machen, sagen und Ding durch ein genaueres Wort."
+    },
+    "es": {
+     "t": "Vocabulario preciso",
+     "g": "Sustituye palabras vagas como machen, sagen y Ding por otras precisas.",
+     "p": [
+      "En vez de machen: eine Entscheidung treffen, einen Fehler begehen, Sport treiben, einen Vorschlag unterbreiten.",
+      "En vez de sagen: behaupten, erklären, betonen, erwähnen, zugeben. Er betonte, dass...",
+      "En vez de Ding: der Gegenstand, das Gerät, die Angelegenheit, der Aspekt. Las palabras precisas suenan a B2 o más."
+     ],
+     "q": "Mejora esta frase: Er hat gesagt, dass er das Ding gemacht hat. ¿Cómo lo dirías con más precisión?",
+     "c": "Toma un texto corto que escribiste antes y cambia cada machen, sagen y Ding por una palabra más precisa."
+    },
+    "fr": {
+     "t": "Vocabulaire précis",
+     "g": "Remplacer des mots vagues comme machen, sagen et Ding par des mots précis.",
+     "p": [
+      "Au lieu de machen : eine Entscheidung treffen, einen Fehler begehen, Sport treiben, einen Vorschlag unterbreiten.",
+      "Au lieu de sagen : behaupten, erklären, betonen, erwähnen, zugeben. Er betonte, dass...",
+      "Au lieu de Ding : der Gegenstand, das Gerät, die Angelegenheit, der Aspekt. Des mots précis font B2 et plus."
+     ],
+     "q": "Améliore cette phrase : Er hat gesagt, dass er das Ding gemacht hat. Comment le dire plus précisément ?",
+     "c": "Prends un court texte écrit plus tôt et remplace chaque machen, sagen et Ding par un mot plus précis."
+    },
+    "it": {
+     "t": "Lessico preciso",
+     "g": "Sostituisci parole vaghe come machen, sagen e Ding con parole precise.",
+     "p": [
+      "Invece di machen: eine Entscheidung treffen, einen Fehler begehen, Sport treiben, einen Vorschlag unterbreiten.",
+      "Invece di sagen: behaupten, erklären, betonen, erwähnen, zugeben. Er betonte, dass...",
+      "Invece di Ding: der Gegenstand, das Gerät, die Angelegenheit, der Aspekt. Parole precise suonano da B2 in su."
+     ],
+     "q": "Migliora questa frase: Er hat gesagt, dass er das Ding gemacht hat. Come lo diresti in modo più preciso?",
+     "c": "Prendi un breve testo scritto in passato e sostituisci ogni machen, sagen e Ding con una parola più precisa."
+    },
+    "pt": {
+     "t": "Vocabulário preciso",
+     "g": "Substituir palavras vagas como machen, sagen e Ding por palavras precisas.",
+     "p": [
+      "Em vez de machen: eine Entscheidung treffen, einen Fehler begehen, Sport treiben, einen Vorschlag unterbreiten.",
+      "Em vez de sagen: behaupten, erklären, betonen, erwähnen, zugeben. Er betonte, dass...",
+      "Em vez de Ding: der Gegenstand, das Gerät, die Angelegenheit, der Aspekt. Palavras precisas soam a B2 ou mais."
+     ],
+     "q": "Melhora esta frase: Er hat gesagt, dass er das Ding gemacht hat. Como o dirias com mais precisão?",
+     "c": "Pega num texto curto que escreveste antes e troca cada machen, sagen e Ding por uma palavra mais precisa."
+    },
+    "pt_BR": {
+     "t": "Vocabulário preciso",
+     "g": "Substituir palavras vagas como machen, sagen e Ding por palavras precisas.",
+     "p": [
+      "Em vez de machen: eine Entscheidung treffen, einen Fehler begehen, Sport treiben, einen Vorschlag unterbreiten.",
+      "Em vez de sagen: behaupten, erklären, betonen, erwähnen, zugeben. Er betonte, dass...",
+      "Em vez de Ding: der Gegenstand, das Gerät, die Angelegenheit, der Aspekt. Palavras precisas soam como B2 ou mais."
+     ],
+     "q": "Melhore esta frase: Er hat gesagt, dass er das Ding gemacht hat. Como você diria com mais precisão?",
+     "c": "Pegue um texto curto que você escreveu antes e troque cada machen, sagen e Ding por uma palavra mais precisa."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "eine Entscheidung treffen",
+      "ex": "Nach langem Überlegen hat sie eine Entscheidung getroffen."
+     },
+     {
+      "w": "betonen",
+      "ex": "Der Chef betonte, wie wichtig das Projekt ist."
+     },
+     {
+      "w": "behaupten",
+      "ex": "Er behauptet, er habe nichts davon gewusst."
+     },
+     {
+      "w": "erwähnen",
+      "ex": "Sie hat ihren neuen Job gar nicht erwähnt."
+     },
+     {
+      "w": "der Gegenstand",
+      "ex": "Bitte lassen Sie keine Gegenstände im Zug liegen."
+     },
+     {
+      "w": "die Angelegenheit",
+      "ex": "Das ist eine wichtige Angelegenheit."
+     }
+    ],
+    "gram": "Funktionsverbgefüge: eine Entscheidung treffen, einen Vorschlag machen/unterbreiten, Kritik üben. Nomen + festes Verb."
+   }
+  },
+  {
+   "d": 345,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Review: culture and analysis",
+     "g": "Recap art, culture and data vocabulary from the last two weeks.",
+     "p": [
+      "Culture: philosophy (Kant, Arendt), art (das Werk, die Epoche), poetry, theatre, fairy tales and winter traditions.",
+      "Society: everyday customs (Pünktlichkeit, Mülltrennung), cultural differences (Sie and du) and settling in.",
+      "Analysis: statistics (die Hälfte, um 10 Prozent), trends (zunehmen, sinken), cause and effect, precise vocabulary."
+     ],
+     "q": "Which topic of these two weeks would you like to talk about more: art, customs or data?",
+     "c": "Prepare a two-minute talk about a cultural tradition, including one statistic and one cause-and-effect sentence."
+    },
+    "de": {
+     "t": "Wiederholung: Kultur und Analyse",
+     "g": "Du wiederholst Wortschatz zu Kunst, Kultur und Daten.",
+     "p": [
+      "Kultur: Philosophie (Kant, Arendt), Kunst (das Werk, die Epoche), Lyrik, Theater, Märchen und Wintertraditionen.",
+      "Gesellschaft: Alltagsbräuche (Pünktlichkeit, Mülltrennung), kulturelle Unterschiede (Sie und du) und Einleben.",
+      "Analyse: Statistiken (die Hälfte, um 10 Prozent), Trends (zunehmen, sinken), Ursache und Wirkung, präziser Wortschatz."
+     ],
+     "q": "Über welches Thema dieser zwei Wochen möchtest du mehr sprechen: Kunst, Bräuche oder Daten?",
+     "c": "Bereite einen Zwei-Minuten-Vortrag über eine Tradition vor, mit einer Statistik und einem Satz zu Ursache und Wirkung."
+    },
+    "es": {
+     "t": "Repaso: cultura y análisis",
+     "g": "Repasa el vocabulario de arte, cultura y datos de las dos últimas semanas.",
+     "p": [
+      "Cultura: filosofía (Kant, Arendt), arte (das Werk, die Epoche), poesía, teatro, cuentos y tradiciones de invierno.",
+      "Sociedad: costumbres (Pünktlichkeit, Mülltrennung), diferencias culturales (Sie y du) e instalarse.",
+      "Análisis: estadísticas (die Hälfte, um 10 Prozent), tendencias (zunehmen, sinken), causa y efecto, vocabulario preciso."
+     ],
+     "q": "¿De qué tema de estas dos semanas te gustaría hablar más: arte, costumbres o datos?",
+     "c": "Prepara una charla de dos minutos sobre una tradición, con una estadística y una frase de causa y efecto."
+    },
+    "fr": {
+     "t": "Révision : culture et analyse",
+     "g": "Réviser le vocabulaire de l'art, de la culture et des données.",
+     "p": [
+      "Culture : philosophie (Kant, Arendt), art (das Werk, die Epoche), poésie, théâtre, contes et traditions d'hiver.",
+      "Société : coutumes (Pünktlichkeit, Mülltrennung), différences culturelles (Sie et du) et installation.",
+      "Analyse : statistiques (die Hälfte, um 10 Prozent), tendances (zunehmen, sinken), cause et effet, vocabulaire précis."
+     ],
+     "q": "De quel thème de ces deux semaines aimerais-tu parler davantage : art, coutumes ou données ?",
+     "c": "Prépare un exposé de deux minutes sur une tradition, avec une statistique et une phrase de cause à effet."
+    },
+    "it": {
+     "t": "Ripasso: cultura e analisi",
+     "g": "Ripassa il lessico di arte, cultura e dati delle ultime due settimane.",
+     "p": [
+      "Cultura: filosofia (Kant, Arendt), arte (das Werk, die Epoche), poesia, teatro, fiabe e tradizioni invernali.",
+      "Società: usanze (Pünktlichkeit, Mülltrennung), differenze culturali (Sie e du) e ambientarsi.",
+      "Analisi: statistiche (die Hälfte, um 10 Prozent), tendenze (zunehmen, sinken), causa ed effetto, lessico preciso."
+     ],
+     "q": "Di quale tema di queste due settimane vorresti parlare di più: arte, usanze o dati?",
+     "c": "Prepara un intervento di due minuti su una tradizione, con una statistica e una frase di causa-effetto."
+    },
+    "pt": {
+     "t": "Revisão: cultura e análise",
+     "g": "Rever o vocabulário de arte, cultura e dados das duas últimas semanas.",
+     "p": [
+      "Cultura: filosofia (Kant, Arendt), arte (das Werk, die Epoche), poesia, teatro, contos e tradições de inverno.",
+      "Sociedade: costumes (Pünktlichkeit, Mülltrennung), diferenças culturais (Sie e du) e instalar-se.",
+      "Análise: estatísticas (die Hälfte, um 10 Prozent), tendências (zunehmen, sinken), causa e efeito, vocabulário preciso."
+     ],
+     "q": "De que tema destas duas semanas gostarias de falar mais: arte, costumes ou dados?",
+     "c": "Prepara uma apresentação de dois minutos sobre uma tradição, com uma estatística e uma frase de causa e efeito."
+    },
+    "pt_BR": {
+     "t": "Revisão: cultura e análise",
+     "g": "Revisar o vocabulário de arte, cultura e dados das duas últimas semanas.",
+     "p": [
+      "Cultura: filosofia (Kant, Arendt), arte (das Werk, die Epoche), poesia, teatro, contos e tradições de fim de ano.",
+      "Sociedade: costumes (Pünktlichkeit, Mülltrennung), diferenças culturais (Sie e du) e adaptação.",
+      "Análise: estatísticas (die Hälfte, um 10 Prozent), tendências (zunehmen, sinken), causa e efeito, vocabulário preciso."
+     ],
+     "q": "Sobre qual tema destas duas semanas você gostaria de falar mais: arte, costumes ou dados?",
+     "c": "Prepare uma fala de dois minutos sobre uma tradição, com uma estatística e uma frase de causa e efeito."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "die Kultur",
+      "ex": "Die Kultur eines Landes zeigt sich im Alltag."
+     },
+     {
+      "w": "die Tradition",
+      "ex": "Diese Tradition gibt es seit Jahrhunderten."
+     },
+     {
+      "w": "die Analyse",
+      "ex": "Die Analyse der Daten zeigt einen klaren Trend."
+     },
+     {
+      "w": "der Trend",
+      "ex": "Der Trend geht zu mehr Radverkehr."
+     },
+     {
+      "w": "der Brauch",
+      "ex": "Das ist ein alter Brauch aus dem Süden."
+     },
+     {
+      "w": "vergleichen",
+      "ex": "Vergleichen wir die Zahlen von heute und früher."
+     }
+    ],
+    "gram": "Wiederholung: um/auf bei Zahlen, Perfekt mit sein (ist gestiegen), aufgrund + Genitiv, Funktionsverbgefüge (eine Entscheidung treffen)."
+   }
+  },
+  {
+   "d": 346,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Listening: radio and podcasts",
+     "g": "Use strategies to follow long, fast audio and take good notes.",
+     "p": [
+      "Before: think about the topic and predict words. Während des Hörens: focus on key words, numbers and names, not every word.",
+      "Notes: use abbreviations and symbols: z. B., usw., arrow for consequence, plus and minus for pros and cons.",
+      "After: summarise in two sentences: In dem Podcast ging es um... Der Sprecher meint, dass..."
+     ],
+     "q": "What kind of podcasts or radio do you enjoy? Would you try one in German?",
+     "c": "Listen to five minutes of a German podcast or radio show and write a two-sentence summary starting with Es ging um."
+    },
+    "de": {
+     "t": "Hören: Radio und Podcasts",
+     "g": "Du nutzt Strategien, um langen, schnellen Audios zu folgen und Notizen zu machen.",
+     "p": [
+      "Vorher: ans Thema denken, Wörter vorhersagen. Während des Hörens: auf Schlüsselwörter, Zahlen, Namen achten, nicht auf jedes Wort.",
+      "Notizen: Abkürzungen und Symbole: z. B., usw., Pfeil für Folge, Plus und Minus für Pro und Contra.",
+      "Danach in zwei Sätzen zusammenfassen: In dem Podcast ging es um... Der Sprecher meint, dass..."
+     ],
+     "q": "Welche Podcasts oder Radiosendungen hörst du gern? Würdest du einen auf Deutsch ausprobieren?",
+     "c": "Hör fünf Minuten eines deutschen Podcasts oder Radios und schreib eine Zusammenfassung in zwei Sätzen, beginnend mit Es ging um."
+    },
+    "es": {
+     "t": "Comprensión auditiva: radio y pódcasts",
+     "g": "Usa estrategias para seguir audios largos y rápidos y tomar buenas notas.",
+     "p": [
+      "Antes: piensa en el tema y anticipa palabras. Durante: fíjate en palabras clave, cifras y nombres, no en cada palabra.",
+      "Notas: usa abreviaturas y símbolos: z. B., usw., una flecha para consecuencias, más y menos para pros y contras.",
+      "Después: resume en dos frases: In dem Podcast ging es um... Der Sprecher meint, dass..."
+     ],
+     "q": "¿Qué pódcasts o programas de radio te gustan? ¿Probarías uno en alemán?",
+     "c": "Escucha cinco minutos de un pódcast o radio en alemán y escribe un resumen de dos frases que empiece con Es ging um."
+    },
+    "fr": {
+     "t": "Écoute : radio et podcasts",
+     "g": "Utiliser des stratégies pour suivre un audio long et rapide et prendre des notes.",
+     "p": [
+      "Avant : pense au thème, anticipe des mots. Pendant : concentre-toi sur mots clés, chiffres et noms, pas sur chaque mot.",
+      "Notes : abréviations et symboles : z. B., usw., une flèche pour la conséquence, plus et moins pour le pour et le contre.",
+      "Après : résume en deux phrases : In dem Podcast ging es um... Der Sprecher meint, dass..."
+     ],
+     "q": "Quels podcasts ou émissions de radio aimes-tu ? En essaierais-tu un en allemand ?",
+     "c": "Écoute cinq minutes d'un podcast ou de la radio en allemand et écris un résumé de deux phrases commençant par Es ging um."
+    },
+    "it": {
+     "t": "Ascolto: radio e podcast",
+     "g": "Usa strategie per seguire audio lunghi e veloci e prendere buoni appunti.",
+     "p": [
+      "Prima: pensa al tema e prevedi parole. Durante: concentrati su parole chiave, numeri e nomi, non su ogni parola.",
+      "Appunti: abbreviazioni e simboli: z. B., usw., una freccia per la conseguenza, più e meno per pro e contro.",
+      "Dopo: riassumi in due frasi: In dem Podcast ging es um... Der Sprecher meint, dass..."
+     ],
+     "q": "Che podcast o programmi radio ti piacciono? Ne proveresti uno in tedesco?",
+     "c": "Ascolta cinque minuti di un podcast o radio tedesca e scrivi un riassunto di due frasi che inizi con Es ging um."
+    },
+    "pt": {
+     "t": "Compreensão oral: rádio e podcasts",
+     "g": "Usar estratégias para acompanhar áudios longos e rápidos e tirar boas notas.",
+     "p": [
+      "Antes: pensa no tema e prevê palavras. Durante: foca-te em palavras-chave, números e nomes, não em cada palavra.",
+      "Notas: usa abreviaturas e símbolos: z. B., usw., uma seta para consequências, mais e menos para prós e contras.",
+      "Depois: resume em duas frases: In dem Podcast ging es um... Der Sprecher meint, dass..."
+     ],
+     "q": "De que podcasts ou programas de rádio gostas? Experimentarias um em alemão?",
+     "c": "Ouve cinco minutos de um podcast ou rádio em alemão e escreve um resumo de duas frases a começar com Es ging um."
+    },
+    "pt_BR": {
+     "t": "Compreensão auditiva: rádio e podcasts",
+     "g": "Usar estratégias para acompanhar áudios longos e rápidos e fazer boas anotações.",
+     "p": [
+      "Antes: pense no tema e antecipe palavras. Durante: foque em palavras-chave, números e nomes, não em cada palavra.",
+      "Anotações: use abreviações e símbolos: z. B., usw., uma seta para consequências, mais e menos para prós e contras.",
+      "Depois: resuma em duas frases: In dem Podcast ging es um... Der Sprecher meint, dass..."
+     ],
+     "q": "De que podcasts ou programas de rádio você gosta? Você experimentaria um em alemão?",
+     "c": "Ouça cinco minutos de um podcast ou rádio em alemão e escreva um resumo de duas frases começando com Es ging um."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "die Sendung",
+      "ex": "Die Sendung läuft jeden Morgen um sieben."
+     },
+     {
+      "w": "das Schlüsselwort",
+      "ex": "Achte beim Hören auf die Schlüsselwörter."
+     },
+     {
+      "w": "sich Notizen machen",
+      "ex": "Während des Vortrags mache ich mir Notizen."
+     },
+     {
+      "w": "die Abkürzung",
+      "ex": "z. B. ist die Abkürzung für zum Beispiel."
+     },
+     {
+      "w": "Es ging um ...",
+      "ex": "In der Folge ging es um gesunde Ernährung."
+     },
+     {
+      "w": "der Sprecher",
+      "ex": "Der Sprecher spricht sehr schnell."
+     }
+    ],
+    "gram": "Es geht um + Akkusativ: Es ging um das Klima. während + Genitiv: während des Hörens, während der Sendung."
+   }
+  },
+  {
+   "d": 347,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Reading the press",
+     "g": "Understand headlines, commentaries and journalistic style.",
+     "p": [
+      "Headlines are short and often have no verb or article: Mieten in Großstädten weiter gestiegen. Add the missing words in your head.",
+      "News reports use reported speech: Der Minister sagte, er sei zufrieden. Commentaries give opinions: Es wäre klug, ...",
+      "Style: nominal style and passive are common: Die Eröffnung des Museums wurde verschoben."
+     ],
+     "q": "Do you read news? On paper, in an app or not at all? What kind of articles do you prefer?",
+     "c": "Read three German headlines and rewrite each one as a full sentence with article and verb."
+    },
+    "de": {
+     "t": "Zeitung lesen",
+     "g": "Du verstehst Schlagzeilen, Kommentare und den journalistischen Stil.",
+     "p": [
+      "Schlagzeilen sind kurz, oft ohne Verb oder Artikel: Mieten in Großstädten weiter gestiegen. Ergänze die fehlenden Wörter im Kopf.",
+      "Berichte nutzen indirekte Rede: Der Minister sagte, er sei zufrieden. Kommentare geben Meinungen: Es wäre klug, ...",
+      "Stil: Nominalstil und Passiv sind häufig: Die Eröffnung des Museums wurde verschoben."
+     ],
+     "q": "Liest du Nachrichten? Auf Papier, in einer App oder gar nicht? Welche Artikel magst du am liebsten?",
+     "c": "Lies drei deutsche Schlagzeilen und schreib jede als ganzen Satz mit Artikel und Verb."
+    },
+    "es": {
+     "t": "Leer la prensa",
+     "g": "Entiende titulares, artículos de opinión y el estilo periodístico.",
+     "p": [
+      "Los titulares son breves y a menudo sin verbo ni artículo: Mieten in Großstädten weiter gestiegen. Completa mentalmente.",
+      "Las noticias usan estilo indirecto: Der Minister sagte, er sei zufrieden. Los comentarios opinan: Es wäre klug, ...",
+      "Estilo: abundan el estilo nominal y la pasiva: Die Eröffnung des Museums wurde verschoben."
+     ],
+     "q": "¿Lees noticias? ¿En papel, en una app o nada? ¿Qué tipo de artículos prefieres?",
+     "c": "Lee tres titulares alemanes y reescribe cada uno como frase completa con artículo y verbo."
+    },
+    "fr": {
+     "t": "Lire la presse",
+     "g": "Comprendre les titres, les éditoriaux et le style journalistique.",
+     "p": [
+      "Les titres sont courts, souvent sans verbe ni article : Mieten in Großstädten weiter gestiegen. Complète-les mentalement.",
+      "Les articles utilisent le discours indirect : Der Minister sagte, er sei zufrieden. Les éditoriaux donnent un avis : Es wäre klug, ...",
+      "Style : le style nominal et le passif sont fréquents : Die Eröffnung des Museums wurde verschoben."
+     ],
+     "q": "Lis-tu l'actualité ? Sur papier, dans une appli ou pas du tout ? Quels articles préfères-tu ?",
+     "c": "Lis trois titres allemands et réécris chacun en phrase complète avec article et verbe."
+    },
+    "it": {
+     "t": "Leggere la stampa",
+     "g": "Capisci titoli, commenti e lo stile giornalistico.",
+     "p": [
+      "I titoli sono brevi, spesso senza verbo né articolo: Mieten in Großstädten weiter gestiegen. Completali mentalmente.",
+      "Le notizie usano il discorso indiretto: Der Minister sagte, er sei zufrieden. I commenti danno opinioni: Es wäre klug, ...",
+      "Stile: stile nominale e passivo sono frequenti: Die Eröffnung des Museums wurde verschoben."
+     ],
+     "q": "Leggi le notizie? Su carta, in un'app o per niente? Che tipo di articoli preferisci?",
+     "c": "Leggi tre titoli tedeschi e riscrivi ciascuno come frase completa con articolo e verbo."
+    },
+    "pt": {
+     "t": "Ler a imprensa",
+     "g": "Perceber títulos, artigos de opinião e o estilo jornalístico.",
+     "p": [
+      "Os títulos são curtos, muitas vezes sem verbo nem artigo: Mieten in Großstädten weiter gestiegen. Completa-os mentalmente.",
+      "As notícias usam discurso indireto: Der Minister sagte, er sei zufrieden. Os comentários opinam: Es wäre klug, ...",
+      "Estilo: o estilo nominal e a passiva são frequentes: Die Eröffnung des Museums wurde verschoben."
+     ],
+     "q": "Lês notícias? Em papel, numa aplicação ou nada? Que tipo de artigos preferes?",
+     "c": "Lê três títulos alemães e reescreve cada um como frase completa com artigo e verbo."
+    },
+    "pt_BR": {
+     "t": "Ler a imprensa",
+     "g": "Entender manchetes, artigos de opinião e o estilo jornalístico.",
+     "p": [
+      "Manchetes são curtas, muitas vezes sem verbo nem artigo: Mieten in Großstädten weiter gestiegen. Complete mentalmente.",
+      "As notícias usam discurso indireto: Der Minister sagte, er sei zufrieden. Os comentários opinam: Es wäre klug, ...",
+      "Estilo: o estilo nominal e a voz passiva são comuns: Die Eröffnung des Museums wurde verschoben."
+     ],
+     "q": "Você lê notícias? No papel, num aplicativo ou nada? Que tipo de matéria você prefere?",
+     "c": "Leia três manchetes alemãs e reescreva cada uma como frase completa com artigo e verbo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "die Schlagzeile",
+      "ex": "Die Schlagzeile war auf allen Titelseiten."
+     },
+     {
+      "w": "der Kommentar",
+      "ex": "Im Kommentar kritisiert die Autorin den Plan."
+     },
+     {
+      "w": "der Bericht",
+      "ex": "Der Bericht stützt sich auf mehrere Quellen."
+     },
+     {
+      "w": "verschieben",
+      "ex": "Das Konzert wurde auf nächste Woche verschoben."
+     },
+     {
+      "w": "die Titelseite",
+      "ex": "Auf der Titelseite sieht man ein großes Foto."
+     },
+     {
+      "w": "berichten über",
+      "ex": "Die Zeitung berichtet ausführlich über das Festival."
+     }
+    ],
+    "gram": "Indirekte Rede mit Konjunktiv I: Er sagte, er sei zufrieden / habe keine Zeit. Schlagzeilen lassen Hilfsverb weg: (sind) gestiegen."
+   }
+  },
+  {
+   "d": 348,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Debate: work and leisure",
+     "g": "Debate the four-day week with arguments and counter-arguments.",
+     "p": [
+      "Pro: Eine Vier-Tage-Woche steigert die Motivation und lässt mehr Zeit für Familie und Hobbys.",
+      "Contra: Nicht jede Branche kann das umsetzen, zum Beispiel Krankenhäuser oder Geschäfte.",
+      "Responding: Das mag stimmen, aber... / Da muss ich widersprechen. / Ein berechtigter Einwand, trotzdem..."
+     ],
+     "q": "Would you like a four-day week? Give me one argument and react to my counter-argument afterwards.",
+     "c": "Write three arguments for and three against the four-day week, then your own conclusion in two sentences."
+    },
+    "de": {
+     "t": "Debatte: Arbeit und Freizeit",
+     "g": "Du debattierst über die Vier-Tage-Woche mit Argumenten und Gegenargumenten.",
+     "p": [
+      "Pro: Eine Vier-Tage-Woche steigert die Motivation und lässt mehr Zeit für Familie und Hobbys.",
+      "Contra: Nicht jede Branche kann das umsetzen, zum Beispiel Krankenhäuser oder Geschäfte.",
+      "Reagieren: Das mag stimmen, aber... / Da muss ich widersprechen. / Ein berechtigter Einwand, trotzdem..."
+     ],
+     "q": "Hättest du gern eine Vier-Tage-Woche? Nenn mir ein Argument und reagier danach auf mein Gegenargument.",
+     "c": "Schreib je drei Argumente für und gegen die Vier-Tage-Woche und dann dein Fazit in zwei Sätzen."
+    },
+    "es": {
+     "t": "Debate: trabajo y ocio",
+     "g": "Debate sobre la semana de cuatro días con argumentos y contraargumentos.",
+     "p": [
+      "A favor: Eine Vier-Tage-Woche steigert die Motivation und lässt mehr Zeit für Familie und Hobbys.",
+      "En contra: Nicht jede Branche kann das umsetzen, zum Beispiel Krankenhäuser oder Geschäfte.",
+      "Responder: Das mag stimmen, aber... / Da muss ich widersprechen. / Ein berechtigter Einwand, trotzdem..."
+     ],
+     "q": "¿Te gustaría una semana de cuatro días? Dame un argumento y luego responde a mi contraargumento.",
+     "c": "Escribe tres argumentos a favor y tres en contra de la semana de cuatro días, y tu conclusión en dos frases."
+    },
+    "fr": {
+     "t": "Débat : travail et loisirs",
+     "g": "Débattre de la semaine de quatre jours avec arguments et contre-arguments.",
+     "p": [
+      "Pour : Eine Vier-Tage-Woche steigert die Motivation und lässt mehr Zeit für Familie und Hobbys.",
+      "Contre : Nicht jede Branche kann das umsetzen, zum Beispiel Krankenhäuser oder Geschäfte.",
+      "Répondre : Das mag stimmen, aber... / Da muss ich widersprechen. / Ein berechtigter Einwand, trotzdem..."
+     ],
+     "q": "Aimerais-tu une semaine de quatre jours ? Donne-moi un argument, puis réagis à mon contre-argument.",
+     "c": "Écris trois arguments pour et trois contre la semaine de quatre jours, puis ta conclusion en deux phrases."
+    },
+    "it": {
+     "t": "Dibattito: lavoro e tempo libero",
+     "g": "Dibatti sulla settimana di quattro giorni con argomenti e controargomenti.",
+     "p": [
+      "A favore: Eine Vier-Tage-Woche steigert die Motivation und lässt mehr Zeit für Familie und Hobbys.",
+      "Contro: Nicht jede Branche kann das umsetzen, zum Beispiel Krankenhäuser oder Geschäfte.",
+      "Rispondere: Das mag stimmen, aber... / Da muss ich widersprechen. / Ein berechtigter Einwand, trotzdem..."
+     ],
+     "q": "Ti piacerebbe una settimana di quattro giorni? Dammi un argomento e poi reagisci al mio controargomento.",
+     "c": "Scrivi tre argomenti a favore e tre contro la settimana di quattro giorni, poi la tua conclusione in due frasi."
+    },
+    "pt": {
+     "t": "Debate: trabalho e lazer",
+     "g": "Debater a semana de quatro dias com argumentos e contra-argumentos.",
+     "p": [
+      "A favor: Eine Vier-Tage-Woche steigert die Motivation und lässt mehr Zeit für Familie und Hobbys.",
+      "Contra: Nicht jede Branche kann das umsetzen, zum Beispiel Krankenhäuser oder Geschäfte.",
+      "Responder: Das mag stimmen, aber... / Da muss ich widersprechen. / Ein berechtigter Einwand, trotzdem..."
+     ],
+     "q": "Gostarias de uma semana de quatro dias? Dá-me um argumento e depois reage ao meu contra-argumento.",
+     "c": "Escreve três argumentos a favor e três contra a semana de quatro dias e a tua conclusão em duas frases."
+    },
+    "pt_BR": {
+     "t": "Debate: trabalho e lazer",
+     "g": "Debater a semana de quatro dias com argumentos e contra-argumentos.",
+     "p": [
+      "A favor: Eine Vier-Tage-Woche steigert die Motivation und lässt mehr Zeit für Familie und Hobbys.",
+      "Contra: Nicht jede Branche kann das umsetzen, zum Beispiel Krankenhäuser oder Geschäfte.",
+      "Responder: Das mag stimmen, aber... / Da muss ich widersprechen. / Ein berechtigter Einwand, trotzdem..."
+     ],
+     "q": "Você gostaria de uma semana de quatro dias? Me dê um argumento e depois reaja ao meu contra-argumento.",
+     "c": "Escreva três argumentos a favor e três contra a semana de quatro dias e sua conclusão em duas frases."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "die Vier-Tage-Woche",
+      "ex": "Einige Firmen testen die Vier-Tage-Woche."
+     },
+     {
+      "w": "die Work-Life-Balance",
+      "ex": "Eine gute Work-Life-Balance ist vielen wichtig."
+     },
+     {
+      "w": "die Branche",
+      "ex": "In der Pflegebranche fehlen Fachkräfte."
+     },
+     {
+      "w": "umsetzen",
+      "ex": "Die Idee ist gut, aber schwer umzusetzen."
+     },
+     {
+      "w": "der Einwand",
+      "ex": "Das ist ein berechtigter Einwand."
+     },
+     {
+      "w": "widersprechen",
+      "ex": "Da muss ich Ihnen leider widersprechen."
+     }
+    ],
+    "gram": "Einräumung: Das mag stimmen, aber... (mögen = Zugeständnis). widersprechen + Dativ: Ich widerspreche dir."
+   }
+  },
+  {
+   "d": 349,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Debate: city and environment",
+     "g": "Discuss car-free centres, green spaces and public transport.",
+     "p": [
+      "Pro car-free: Autofreie Innenstädte sind leiser, sicherer und laden zum Verweilen ein.",
+      "Contra: Geschäfte befürchten weniger Kunden; ältere Menschen sind oft auf das Auto angewiesen.",
+      "Nuance: Es kommt darauf an, ob es gute Alternativen gibt. / Ein Kompromiss wäre, ..."
+     ],
+     "q": "Should the centre of your town be car-free? Answer with nuance using Es kommt darauf an.",
+     "c": "Write a short letter of six sentences to your mayor proposing one green change, with an argument and a compromise."
+    },
+    "de": {
+     "t": "Debatte: Stadt und Umwelt",
+     "g": "Du diskutierst über autofreie Innenstädte, Grünflächen und Nahverkehr.",
+     "p": [
+      "Pro autofrei: Autofreie Innenstädte sind leiser, sicherer und laden zum Verweilen ein.",
+      "Contra: Geschäfte befürchten weniger Kunden; ältere Menschen sind oft auf das Auto angewiesen.",
+      "Differenzieren: Es kommt darauf an, ob es gute Alternativen gibt. / Ein Kompromiss wäre, ..."
+     ],
+     "q": "Sollte die Innenstadt deiner Stadt autofrei sein? Antworte differenziert mit Es kommt darauf an.",
+     "c": "Schreib einen kurzen Brief mit sechs Sätzen an deine Bürgermeisterin: eine grüne Idee, ein Argument, ein Kompromiss."
+    },
+    "es": {
+     "t": "Debate: ciudad y medio ambiente",
+     "g": "Debate sobre centros sin coches, zonas verdes y transporte público.",
+     "p": [
+      "A favor: Autofreie Innenstädte sind leiser, sicherer und laden zum Verweilen ein.",
+      "En contra: Geschäfte befürchten weniger Kunden; ältere Menschen sind oft auf das Auto angewiesen.",
+      "Matizar: Es kommt darauf an, ob es gute Alternativen gibt. / Ein Kompromiss wäre, ..."
+     ],
+     "q": "¿Debería el centro de tu ciudad ser peatonal? Responde con matices usando Es kommt darauf an.",
+     "c": "Escribe una carta breve de seis frases a tu alcaldía proponiendo un cambio verde, con un argumento y un compromiso."
+    },
+    "fr": {
+     "t": "Débat : ville et environnement",
+     "g": "Débattre des centres sans voitures, des espaces verts et des transports en commun.",
+     "p": [
+      "Pour : Autofreie Innenstädte sind leiser, sicherer und laden zum Verweilen ein.",
+      "Contre : Geschäfte befürchten weniger Kunden; ältere Menschen sind oft auf das Auto angewiesen.",
+      "Nuancer : Es kommt darauf an, ob es gute Alternativen gibt. / Ein Kompromiss wäre, ..."
+     ],
+     "q": "Le centre de ta ville devrait-il être sans voitures ? Réponds avec nuance grâce à Es kommt darauf an.",
+     "c": "Écris une courte lettre de six phrases à ta mairie pour proposer un changement vert, avec un argument et un compromis."
+    },
+    "it": {
+     "t": "Dibattito: città e ambiente",
+     "g": "Discuti di centri senz'auto, aree verdi e trasporto pubblico.",
+     "p": [
+      "A favore: Autofreie Innenstädte sind leiser, sicherer und laden zum Verweilen ein.",
+      "Contro: Geschäfte befürchten weniger Kunden; ältere Menschen sind oft auf das Auto angewiesen.",
+      "Sfumare: Es kommt darauf an, ob es gute Alternativen gibt. / Ein Kompromiss wäre, ..."
+     ],
+     "q": "Il centro della tua città dovrebbe essere senz'auto? Rispondi con sfumature usando Es kommt darauf an.",
+     "c": "Scrivi una breve lettera di sei frasi al tuo comune proponendo un cambiamento verde, con un argomento e un compromesso."
+    },
+    "pt": {
+     "t": "Debate: cidade e ambiente",
+     "g": "Debater centros sem carros, espaços verdes e transportes públicos.",
+     "p": [
+      "A favor: Autofreie Innenstädte sind leiser, sicherer und laden zum Verweilen ein.",
+      "Contra: Geschäfte befürchten weniger Kunden; ältere Menschen sind oft auf das Auto angewiesen.",
+      "Matizar: Es kommt darauf an, ob es gute Alternativen gibt. / Ein Kompromiss wäre, ..."
+     ],
+     "q": "O centro da tua cidade devia ser sem carros? Responde com nuance usando Es kommt darauf an.",
+     "c": "Escreve uma carta curta de seis frases à tua câmara municipal a propor uma mudança verde, com argumento e compromisso."
+    },
+    "pt_BR": {
+     "t": "Debate: cidade e meio ambiente",
+     "g": "Debater centros sem carros, áreas verdes e transporte público.",
+     "p": [
+      "A favor: Autofreie Innenstädte sind leiser, sicherer und laden zum Verweilen ein.",
+      "Contra: Geschäfte befürchten weniger Kunden; ältere Menschen sind oft auf das Auto angewiesen.",
+      "Matizar: Es kommt darauf an, ob es gute Alternativen gibt. / Ein Kompromiss wäre, ..."
+     ],
+     "q": "O centro da sua cidade deveria ser sem carros? Responda com nuance usando Es kommt darauf an.",
+     "c": "Escreva uma carta curta de seis frases à prefeitura propondo uma mudança verde, com um argumento e um meio-termo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "autofrei",
+      "ex": "Am Sonntag ist die Altstadt autofrei."
+     },
+     {
+      "w": "angewiesen sein auf",
+      "ex": "Viele Pendler sind auf das Auto angewiesen."
+     },
+     {
+      "w": "zum Verweilen einladen",
+      "ex": "Der neue Platz lädt zum Verweilen ein."
+     },
+     {
+      "w": "befürchten",
+      "ex": "Die Händler befürchten weniger Umsatz."
+     },
+     {
+      "w": "Es kommt darauf an, ob ...",
+      "ex": "Es kommt darauf an, ob die Busse oft genug fahren."
+     },
+     {
+      "w": "die Alternative",
+      "ex": "Das Fahrrad ist eine gute Alternative zum Auto."
+     }
+    ],
+    "gram": "angewiesen sein auf + Akkusativ; Es kommt darauf an, ob/wie... (Pronominaladverb + Nebensatz). Konjunktiv II: Ein Kompromiss wäre..."
+   }
+  },
+  {
+   "d": 350,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Debate: education",
+     "g": "Argue both sides about school, homework and online learning.",
+     "p": [
+      "Homework pro: Hausaufgaben festigen das Gelernte und fördern Selbstständigkeit. Contra: Sie verstärken Ungleichheit.",
+      "Online learning: Online-Unterricht ist flexibel, aber viele vermissen den persönlichen Kontakt.",
+      "Arguing both sides: Auf der einen Seite..., auf der anderen Seite... / Wägt man beides ab, so..."
+     ],
+     "q": "What was the best thing about your school, and what would you change?",
+     "c": "Write a balanced paragraph of six sentences on online learning with auf der einen Seite, auf der anderen Seite and a conclusion."
+    },
+    "de": {
+     "t": "Debatte: Bildung",
+     "g": "Du argumentierst beidseitig über Schule, Hausaufgaben und Online-Lernen.",
+     "p": [
+      "Hausaufgaben pro: Sie festigen das Gelernte und fördern Selbstständigkeit. Contra: Sie verstärken Ungleichheit.",
+      "Online-Lernen: Online-Unterricht ist flexibel, aber viele vermissen den persönlichen Kontakt.",
+      "Beide Seiten: Auf der einen Seite..., auf der anderen Seite... / Wägt man beides ab, so..."
+     ],
+     "q": "Was war das Beste an deiner Schule, und was würdest du ändern?",
+     "c": "Schreib einen ausgewogenen Absatz mit sechs Sätzen zum Online-Lernen mit auf der einen Seite, auf der anderen Seite und Fazit."
+    },
+    "es": {
+     "t": "Debate: educación",
+     "g": "Argumenta ambos lados sobre escuela, deberes y aprendizaje en línea.",
+     "p": [
+      "Deberes a favor: Hausaufgaben festigen das Gelernte und fördern Selbstständigkeit. En contra: Sie verstärken Ungleichheit.",
+      "Aprendizaje en línea: Online-Unterricht ist flexibel, aber viele vermissen den persönlichen Kontakt.",
+      "Ambos lados: Auf der einen Seite..., auf der anderen Seite... / Wägt man beides ab, so..."
+     ],
+     "q": "¿Qué era lo mejor de tu escuela y qué cambiarías?",
+     "c": "Escribe un párrafo equilibrado de seis frases sobre el aprendizaje en línea con auf der einen Seite, auf der anderen Seite y una conclusión."
+    },
+    "fr": {
+     "t": "Débat : éducation",
+     "g": "Argumenter des deux côtés sur l'école, les devoirs et l'apprentissage en ligne.",
+     "p": [
+      "Devoirs pour : Hausaufgaben festigen das Gelernte und fördern Selbstständigkeit. Contre : Sie verstärken Ungleichheit.",
+      "En ligne : Online-Unterricht ist flexibel, aber viele vermissen den persönlichen Kontakt.",
+      "Les deux côtés : Auf der einen Seite..., auf der anderen Seite... / Wägt man beides ab, so..."
+     ],
+     "q": "Qu'est-ce qui était le mieux dans ton école, et que changerais-tu ?",
+     "c": "Écris un paragraphe équilibré de six phrases sur l'apprentissage en ligne avec auf der einen Seite, auf der anderen Seite et une conclusion."
+    },
+    "it": {
+     "t": "Dibattito: istruzione",
+     "g": "Argomenta entrambe le parti su scuola, compiti e apprendimento online.",
+     "p": [
+      "Compiti a favore: Hausaufgaben festigen das Gelernte und fördern Selbstständigkeit. Contro: Sie verstärken Ungleichheit.",
+      "Online: Online-Unterricht ist flexibel, aber viele vermissen den persönlichen Kontakt.",
+      "Entrambe le parti: Auf der einen Seite..., auf der anderen Seite... / Wägt man beides ab, so..."
+     ],
+     "q": "Qual era la cosa migliore della tua scuola e che cosa cambieresti?",
+     "c": "Scrivi un paragrafo equilibrato di sei frasi sull'apprendimento online con auf der einen Seite, auf der anderen Seite e una conclusione."
+    },
+    "pt": {
+     "t": "Debate: educação",
+     "g": "Argumentar os dois lados sobre escola, trabalhos de casa e ensino online.",
+     "p": [
+      "TPC a favor: Hausaufgaben festigen das Gelernte und fördern Selbstständigkeit. Contra: Sie verstärken Ungleichheit.",
+      "Ensino online: Online-Unterricht ist flexibel, aber viele vermissen den persönlichen Kontakt.",
+      "Os dois lados: Auf der einen Seite..., auf der anderen Seite... / Wägt man beides ab, so..."
+     ],
+     "q": "Qual era a melhor coisa da tua escola e o que mudarias?",
+     "c": "Escreve um parágrafo equilibrado de seis frases sobre o ensino online com auf der einen Seite, auf der anderen Seite e uma conclusão."
+    },
+    "pt_BR": {
+     "t": "Debate: educação",
+     "g": "Argumentar os dois lados sobre escola, lição de casa e ensino online.",
+     "p": [
+      "Lição de casa a favor: Hausaufgaben festigen das Gelernte und fördern Selbstständigkeit. Contra: Sie verstärken Ungleichheit.",
+      "Ensino online: Online-Unterricht ist flexibel, aber viele vermissen den persönlichen Kontakt.",
+      "Os dois lados: Auf der einen Seite..., auf der anderen Seite... / Wägt man beides ab, so..."
+     ],
+     "q": "Qual era a melhor coisa da sua escola e o que você mudaria?",
+     "c": "Escreva um parágrafo equilibrado de seis frases sobre ensino online com auf der einen Seite, auf der anderen Seite e uma conclusão."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "die Hausaufgaben",
+      "ex": "Hausaufgaben helfen, das Gelernte zu wiederholen."
+     },
+     {
+      "w": "festigen",
+      "ex": "Durch Übung festigt man sein Wissen."
+     },
+     {
+      "w": "die Selbstständigkeit",
+      "ex": "Die Schule soll die Selbstständigkeit fördern."
+     },
+     {
+      "w": "der Online-Unterricht",
+      "ex": "Der Online-Unterricht spart den Schulweg."
+     },
+     {
+      "w": "abwägen",
+      "ex": "Man muss Vor- und Nachteile gut abwägen."
+     },
+     {
+      "w": "die Chancengleichheit",
+      "ex": "Bildung soll für Chancengleichheit sorgen."
+     }
+    ],
+    "gram": "Partizip als Nomen: das Gelernte (= was man gelernt hat). Konditional ohne wenn: Wägt man beides ab, so zeigt sich..."
+   }
+  }
+ ]
+}

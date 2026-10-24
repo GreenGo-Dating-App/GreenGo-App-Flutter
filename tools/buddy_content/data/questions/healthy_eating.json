@@ -1,0 +1,1305 @@
+{
+"topic": "healthy_eating",
+"questions": [
+{
+"id": "healthy_eating-001",
+"lv": "any",
+"i18n": {
+"en": "What is a dish from your childhood that still makes you smile?",
+"de": "Welches Gericht aus deiner Kindheit zaubert dir heute noch ein Lächeln ins Gesicht?",
+"es": "¿Qué plato de tu infancia todavía te hace sonreír?",
+"fr": "Quel plat de ton enfance te fait encore sourire aujourd'hui ?",
+"it": "Qual è un piatto della tua infanzia che ti fa ancora sorridere?",
+"pt": "Que prato da tua infância ainda te faz sorrir?",
+"pt_BR": "Qual prato da sua infância ainda te faz sorrir?"
+}
+},
+{
+"id": "healthy_eating-002",
+"lv": "any",
+"i18n": {
+"en": "Which vegetable do you enjoy most, and how do you like it cooked?",
+"de": "Welches Gemüse isst du am liebsten, und wie magst du es zubereitet?",
+"es": "¿Qué verdura te gusta más y cómo te gusta cocinarla?",
+"fr": "Quel légume préfères-tu, et comment aimes-tu le cuisiner ?",
+"it": "Qual è la verdura che ti piace di più e come ti piace cucinata?",
+"pt": "Qual é o legume de que mais gostas e como gostas de o cozinhar?",
+"pt_BR": "Qual é o legume que você mais gosta e como prefere prepará-lo?"
+}
+},
+{
+"id": "healthy_eating-003",
+"lv": "any",
+"i18n": {
+"en": "What does a typical breakfast look like for you?",
+"de": "Wie sieht ein typisches Frühstück bei dir aus?",
+"es": "¿Cómo es un desayuno típico para ti?",
+"fr": "À quoi ressemble ton petit-déjeuner habituel ?",
+"it": "Com'è di solito la tua colazione?",
+"pt": "Como é um pequeno-almoço típico para ti?",
+"pt_BR": "Como é um café da manhã típico para você?"
+}
+},
+{
+"id": "healthy_eating-004",
+"lv": "any",
+"i18n": {
+"en": "Do you prefer cooking at home or eating out? Why?",
+"de": "Kochst du lieber zu Hause oder gehst du lieber essen? Warum?",
+"es": "¿Prefieres cocinar en casa o comer fuera? ¿Por qué?",
+"fr": "Tu préfères cuisiner à la maison ou manger dehors ? Pourquoi ?",
+"it": "Preferisci cucinare a casa o mangiare fuori? Perché?",
+"pt": "Preferes cozinhar em casa ou comer fora? Porquê?",
+"pt_BR": "Você prefere cozinhar em casa ou comer fora? Por quê?"
+}
+},
+{
+"id": "healthy_eating-005",
+"lv": "any",
+"i18n": {
+"en": "Which fruit could you happily eat every single day?",
+"de": "Welches Obst könntest du jeden Tag mit Freude essen?",
+"es": "¿Qué fruta podrías comer feliz todos los días?",
+"fr": "Quel fruit pourrais-tu manger avec plaisir tous les jours ?",
+"it": "Quale frutto mangeresti volentieri ogni giorno?",
+"pt": "Que fruta comerias com prazer todos os dias?",
+"pt_BR": "Qual fruta você comeria feliz todos os dias?"
+}
+},
+{
+"id": "healthy_eating-006",
+"lv": "any",
+"i18n": {
+"en": "What is your favourite meal to share with friends or family?",
+"de": "Was ist dein Lieblingsessen, wenn du mit Freunden oder Familie isst?",
+"es": "¿Cuál es tu comida favorita para compartir con amigos o familia?",
+"fr": "Quel est ton repas préféré à partager entre amis ou en famille ?",
+"it": "Qual è il tuo piatto preferito da condividere con amici o famiglia?",
+"pt": "Qual é a tua refeição preferida para partilhar com amigos ou família?",
+"pt_BR": "Qual é a sua refeição favorita para dividir com amigos ou família?"
+}
+},
+{
+"id": "healthy_eating-007",
+"lv": "any",
+"i18n": {
+"en": "Which spice or herb do you use the most in your kitchen?",
+"de": "Welches Gewürz oder Kraut benutzt du in deiner Küche am häufigsten?",
+"es": "¿Qué especia o hierba usas más en tu cocina?",
+"fr": "Quelle épice ou quelle herbe utilises-tu le plus en cuisine ?",
+"it": "Quale spezia o erba aromatica usi di più in cucina?",
+"pt": "Que especiaria ou erva aromática usas mais na tua cozinha?",
+"pt_BR": "Qual tempero ou erva você mais usa na sua cozinha?"
+}
+},
+{
+"id": "healthy_eating-008",
+"lv": "any",
+"i18n": {
+"en": "What does healthy eating mean to you personally?",
+"de": "Was bedeutet gesunde Ernährung für dich ganz persönlich?",
+"es": "¿Qué significa para ti comer de forma saludable?",
+"fr": "Que signifie manger sainement pour toi, personnellement ?",
+"it": "Che cosa significa per te, personalmente, mangiare in modo sano?",
+"pt": "O que significa para ti comer de forma saudável?",
+"pt_BR": "O que significa comer de forma saudável para você?"
+}
+},
+{
+"id": "healthy_eating-009",
+"lv": "any",
+"i18n": {
+"en": "Who taught you to cook, or who would you like to learn from?",
+"de": "Wer hat dir das Kochen beigebracht, oder von wem würdest du gern lernen?",
+"es": "¿Quién te enseñó a cocinar o de quién te gustaría aprender?",
+"fr": "Qui t'a appris à cuisiner, ou de qui aimerais-tu apprendre ?",
+"it": "Chi ti ha insegnato a cucinare, o da chi ti piacerebbe imparare?",
+"pt": "Quem te ensinou a cozinhar ou com quem gostarias de aprender?",
+"pt_BR": "Quem te ensinou a cozinhar ou com quem você gostaria de aprender?"
+}
+},
+{
+"id": "healthy_eating-010",
+"lv": "any",
+"i18n": {
+"en": "What is a traditional dish from your country that you are proud of?",
+"de": "Auf welches traditionelle Gericht aus deinem Land bist du stolz?",
+"es": "¿De qué plato tradicional de tu país te sientes orgulloso?",
+"fr": "De quel plat traditionnel de ton pays es-tu fier ?",
+"it": "Di quale piatto tradizionale del tuo paese vai fiero?",
+"pt": "De que prato tradicional do teu país te orgulhas?",
+"pt_BR": "De qual prato típico do seu país você se orgulha?"
+}
+},
+{
+"id": "healthy_eating-011",
+"lv": "any",
+"i18n": {
+"en": "How do you usually stay hydrated during the day?",
+"de": "Wie sorgst du tagsüber dafür, genug zu trinken?",
+"es": "¿Cómo te mantienes hidratado durante el día?",
+"fr": "Comment fais-tu pour bien t'hydrater pendant la journée ?",
+"it": "Come fai di solito a bere abbastanza durante la giornata?",
+"pt": "Como costumas manter-te hidratado ao longo do dia?",
+"pt_BR": "Como você costuma se manter hidratado durante o dia?"
+}
+},
+{
+"id": "healthy_eating-012",
+"lv": "any",
+"i18n": {
+"en": "What is your go-to snack when you feel a little hungry?",
+"de": "Was ist dein Lieblingssnack, wenn du ein bisschen Hunger hast?",
+"es": "¿Cuál es tu tentempié de siempre cuando tienes un poco de hambre?",
+"fr": "Quel est ton en-cas préféré quand tu as un petit creux ?",
+"it": "Qual è il tuo spuntino preferito quando hai un po' di fame?",
+"pt": "Qual é o teu lanche de eleição quando tens um pouco de fome?",
+"pt_BR": "Qual é o seu lanche preferido quando bate uma fominha?"
+}
+},
+{
+"id": "healthy_eating-013",
+"lv": "any",
+"i18n": {
+"en": "Which cuisine from another country would you love to explore more?",
+"de": "Welche Küche aus einem anderen Land würdest du gern besser kennenlernen?",
+"es": "¿Qué cocina de otro país te encantaría explorar más?",
+"fr": "Quelle cuisine d'un autre pays aimerais-tu découvrir davantage ?",
+"it": "Quale cucina di un altro paese ti piacerebbe esplorare di più?",
+"pt": "Que cozinha de outro país gostavas de explorar mais?",
+"pt_BR": "Qual culinária de outro país você adoraria conhecer melhor?"
+}
+},
+{
+"id": "healthy_eating-014",
+"lv": "any",
+"i18n": {
+"en": "What is the most delicious thing you have eaten while travelling?",
+"de": "Was war das Leckerste, das du je auf Reisen gegessen hast?",
+"es": "¿Qué es lo más delicioso que has comido viajando?",
+"fr": "Quelle est la chose la plus délicieuse que tu aies mangée en voyage ?",
+"it": "Qual è la cosa più buona che hai mangiato in viaggio?",
+"pt": "Qual foi a coisa mais deliciosa que já comeste em viagem?",
+"pt_BR": "Qual foi a coisa mais deliciosa que você já comeu viajando?"
+}
+},
+{
+"id": "healthy_eating-015",
+"lv": "any",
+"i18n": {
+"en": "Do you have a favourite place to buy fresh food? What do you like about it?",
+"de": "Hast du einen Lieblingsort für frische Lebensmittel? Was gefällt dir dort?",
+"es": "¿Tienes un sitio favorito para comprar comida fresca? ¿Qué te gusta de él?",
+"fr": "As-tu un endroit préféré pour acheter des produits frais ? Qu'est-ce qui te plaît là-bas ?",
+"it": "Hai un posto preferito dove comprare cibo fresco? Che cosa ti piace di quel posto?",
+"pt": "Tens um sítio preferido para comprar produtos frescos? O que gostas nele?",
+"pt_BR": "Você tem um lugar favorito para comprar comida fresca? O que você gosta nele?"
+}
+},
+{
+"id": "healthy_eating-016",
+"lv": "any",
+"i18n": {
+"en": "What meal could you cook with your eyes closed?",
+"de": "Welches Gericht könntest du mit geschlossenen Augen kochen?",
+"es": "¿Qué plato podrías cocinar con los ojos cerrados?",
+"fr": "Quel plat pourrais-tu cuisiner les yeux fermés ?",
+"it": "Quale piatto sapresti cucinare a occhi chiusi?",
+"pt": "Que prato conseguias cozinhar de olhos fechados?",
+"pt_BR": "Que prato você conseguiria fazer de olhos fechados?"
+}
+},
+{
+"id": "healthy_eating-017",
+"lv": "any",
+"i18n": {
+"en": "How do mealtimes usually look in your home?",
+"de": "Wie laufen die Mahlzeiten bei dir zu Hause normalerweise ab?",
+"es": "¿Cómo suelen ser las comidas en tu casa?",
+"fr": "Comment se passent les repas chez toi en général ?",
+"it": "Come sono di solito i pasti a casa tua?",
+"pt": "Como costumam ser as refeições em tua casa?",
+"pt_BR": "Como costumam ser as refeições na sua casa?"
+}
+},
+{
+"id": "healthy_eating-018",
+"lv": "any",
+"i18n": {
+"en": "Which food smell instantly makes you feel at home?",
+"de": "Bei welchem Essensduft fühlst du dich sofort zu Hause?",
+"es": "¿Qué olor de comida te hace sentir en casa al instante?",
+"fr": "Quelle odeur de cuisine te donne tout de suite l'impression d'être chez toi ?",
+"it": "Quale profumo di cibo ti fa sentire subito a casa?",
+"pt": "Que cheiro de comida te faz sentir logo em casa?",
+"pt_BR": "Qual cheiro de comida te faz sentir em casa na hora?"
+}
+},
+{
+"id": "healthy_eating-019",
+"lv": "any",
+"i18n": {
+"en": "What is one small food habit you are proud of?",
+"de": "Auf welche kleine Essgewohnheit bist du stolz?",
+"es": "¿De qué pequeño hábito alimentario te sientes orgulloso?",
+"fr": "De quelle petite habitude alimentaire es-tu fier ?",
+"it": "Di quale piccola abitudine alimentare sei orgoglioso?",
+"pt": "De que pequeno hábito alimentar te orgulhas?",
+"pt_BR": "De qual pequeno hábito alimentar você se orgulha?"
+}
+},
+{
+"id": "healthy_eating-020",
+"lv": "any",
+"i18n": {
+"en": "Do you like trying new foods, or do you prefer familiar favourites?",
+"de": "Probierst du gern Neues, oder bleibst du lieber bei vertrauten Lieblingsgerichten?",
+"es": "¿Te gusta probar comidas nuevas o prefieres tus favoritas de siempre?",
+"fr": "Aimes-tu goûter de nouveaux plats ou préfères-tu tes classiques ?",
+"it": "Ti piace provare cibi nuovi o preferisci i tuoi piatti di sempre?",
+"pt": "Gostas de provar comidas novas ou preferes os teus favoritos de sempre?",
+"pt_BR": "Você gosta de provar comidas novas ou prefere os seus favoritos de sempre?"
+}
+},
+{
+"id": "healthy_eating-021",
+"lv": "any",
+"i18n": {
+"en": "What is your favourite way to enjoy a warm drink?",
+"de": "Wie genießt du ein warmes Getränk am liebsten?",
+"es": "¿Cuál es tu forma favorita de disfrutar una bebida caliente?",
+"fr": "Quelle est ta façon préférée de savourer une boisson chaude ?",
+"it": "Qual è il tuo modo preferito di gustare una bevanda calda?",
+"pt": "Qual é a tua forma preferida de saborear uma bebida quente?",
+"pt_BR": "Qual é o seu jeito favorito de curtir uma bebida quente?"
+}
+},
+{
+"id": "healthy_eating-022",
+"lv": "any",
+"i18n": {
+"en": "Which seasonal food do you look forward to every year?",
+"de": "Auf welches saisonale Lebensmittel freust du dich jedes Jahr?",
+"es": "¿Qué alimento de temporada esperas con ganas cada año?",
+"fr": "Quel produit de saison attends-tu avec impatience chaque année ?",
+"it": "Quale cibo di stagione aspetti con gioia ogni anno?",
+"pt": "Que alimento da época esperas com ansiedade todos os anos?",
+"pt_BR": "Qual alimento da estação você espera ansiosamente todo ano?"
+}
+},
+{
+"id": "healthy_eating-023",
+"lv": "any",
+"i18n": {
+"en": "If you could have dinner in any country tonight, where would you go?",
+"de": "Wenn du heute Abend in jedem Land der Welt essen könntest, wohin würdest du gehen?",
+"es": "Si esta noche pudieras cenar en cualquier país, ¿adónde irías?",
+"fr": "Si tu pouvais dîner dans n'importe quel pays ce soir, où irais-tu ?",
+"it": "Se stasera potessi cenare in qualsiasi paese, dove andresti?",
+"pt": "Se pudesses jantar em qualquer país esta noite, para onde irias?",
+"pt_BR": "Se você pudesse jantar em qualquer país hoje à noite, para onde iria?"
+}
+},
+{
+"id": "healthy_eating-024",
+"lv": "any",
+"i18n": {
+"en": "What is a food you disliked as a child but enjoy now?",
+"de": "Welches Essen mochtest du als Kind nicht, isst es heute aber gern?",
+"es": "¿Qué comida no te gustaba de niño y ahora disfrutas?",
+"fr": "Quel aliment n'aimais-tu pas enfant mais apprécies-tu aujourd'hui ?",
+"it": "Quale cibo non ti piaceva da bambino ma ora apprezzi?",
+"pt": "Que comida não gostavas em criança mas agora aprecias?",
+"pt_BR": "Qual comida você não gostava quando criança, mas hoje curte?"
+}
+},
+{
+"id": "healthy_eating-025",
+"lv": "any",
+"i18n": {
+"en": "How do you feel after a meal that you really enjoyed?",
+"de": "Wie fühlst du dich nach einer Mahlzeit, die dir richtig geschmeckt hat?",
+"es": "¿Cómo te sientes después de una comida que has disfrutado de verdad?",
+"fr": "Comment te sens-tu après un repas que tu as vraiment apprécié ?",
+"it": "Come ti senti dopo un pasto che ti è piaciuto davvero?",
+"pt": "Como te sentes depois de uma refeição de que gostaste mesmo?",
+"pt_BR": "Como você se sente depois de uma refeição que curtiu de verdade?"
+}
+},
+{
+"id": "healthy_eating-026",
+"lv": "any",
+"i18n": {
+"en": "What is your favourite soup, and when do you like to eat it?",
+"de": "Was ist deine Lieblingssuppe, und wann isst du sie am liebsten?",
+"es": "¿Cuál es tu sopa favorita y cuándo te gusta tomarla?",
+"fr": "Quelle est ta soupe préférée, et quand aimes-tu la manger ?",
+"it": "Qual è la tua zuppa preferita e quando ti piace mangiarla?",
+"pt": "Qual é a tua sopa preferida e quando gostas de a comer?",
+"pt_BR": "Qual é a sua sopa favorita e quando você gosta de tomá-la?"
+}
+},
+{
+"id": "healthy_eating-027",
+"lv": "any",
+"i18n": {
+"en": "Which kitchen tool could you not live without?",
+"de": "Auf welches Küchenutensil könntest du nicht verzichten?",
+"es": "¿Sin qué utensilio de cocina no podrías vivir?",
+"fr": "De quel ustensile de cuisine ne pourrais-tu pas te passer ?",
+"it": "Senza quale utensile da cucina non potresti vivere?",
+"pt": "Sem que utensílio de cozinha não conseguias viver?",
+"pt_BR": "Sem qual utensílio de cozinha você não viveria?"
+}
+},
+{
+"id": "healthy_eating-028",
+"lv": "any",
+"i18n": {
+"en": "What is a food tradition you would love to pass on to others?",
+"de": "Welche Esstradition würdest du gern an andere weitergeben?",
+"es": "¿Qué tradición culinaria te encantaría transmitir a otros?",
+"fr": "Quelle tradition culinaire aimerais-tu transmettre aux autres ?",
+"it": "Quale tradizione culinaria ti piacerebbe tramandare ad altri?",
+"pt": "Que tradição culinária gostavas de passar a outras pessoas?",
+"pt_BR": "Qual tradição culinária você adoraria passar adiante?"
+}
+},
+{
+"id": "healthy_eating-029",
+"lv": "any",
+"i18n": {
+"en": "Do you have a favourite festive dish? What makes it special?",
+"de": "Hast du ein Lieblingsgericht für Festtage? Was macht es besonders?",
+"es": "¿Tienes un plato festivo favorito? ¿Qué lo hace especial?",
+"fr": "As-tu un plat de fête préféré ? Qu'est-ce qui le rend spécial ?",
+"it": "Hai un piatto delle feste preferito? Che cosa lo rende speciale?",
+"pt": "Tens um prato festivo preferido? O que o torna especial?",
+"pt_BR": "Você tem um prato de festa favorito? O que o torna especial?"
+}
+},
+{
+"id": "healthy_eating-030",
+"lv": "any",
+"i18n": {
+"en": "What would your perfect relaxed Sunday lunch include?",
+"de": "Was gehört für dich zu einem perfekten, entspannten Sonntagsessen?",
+"es": "¿Qué incluiría tu comida de domingo ideal y relajada?",
+"fr": "Que comprendrait ton déjeuner du dimanche idéal et détendu ?",
+"it": "Che cosa ci sarebbe nel tuo pranzo della domenica perfetto e rilassato?",
+"pt": "O que teria o teu almoço de domingo perfeito e descontraído?",
+"pt_BR": "O que teria o seu almoço de domingo perfeito e tranquilo?"
+}
+},
+{
+"id": "healthy_eating-031",
+"lv": "any",
+"i18n": {
+"en": "Which colourful foods brighten up your plate most often?",
+"de": "Welche bunten Lebensmittel bringen am häufigsten Farbe auf deinen Teller?",
+"es": "¿Qué alimentos de colores alegran tu plato más a menudo?",
+"fr": "Quels aliments colorés égaient le plus souvent ton assiette ?",
+"it": "Quali cibi colorati rallegrano più spesso il tuo piatto?",
+"pt": "Que alimentos coloridos alegram mais vezes o teu prato?",
+"pt_BR": "Quais alimentos coloridos mais alegram o seu prato?"
+}
+},
+{
+"id": "healthy_eating-032",
+"lv": "any",
+"i18n": {
+"en": "Do you enjoy cooking alone or with company?",
+"de": "Kochst du lieber allein oder in Gesellschaft?",
+"es": "¿Disfrutas más cocinando solo o acompañado?",
+"fr": "Aimes-tu mieux cuisiner seul ou accompagné ?",
+"it": "Ti piace di più cucinare da solo o in compagnia?",
+"pt": "Gostas mais de cozinhar sozinho ou acompanhado?",
+"pt_BR": "Você curte mais cozinhar sozinho ou acompanhado?"
+}
+},
+{
+"id": "healthy_eating-033",
+"lv": "any",
+"i18n": {
+"en": "What is a simple meal that always makes you feel good?",
+"de": "Welche einfache Mahlzeit tut dir immer gut?",
+"es": "¿Qué comida sencilla siempre te sienta bien?",
+"fr": "Quel repas simple te fait toujours du bien ?",
+"it": "Qual è un pasto semplice che ti fa sempre stare bene?",
+"pt": "Que refeição simples te faz sempre sentir bem?",
+"pt_BR": "Qual refeição simples sempre te faz sentir bem?"
+}
+},
+{
+"id": "healthy_eating-034",
+"lv": "any",
+"i18n": {
+"en": "What food reminds you of a special trip or memory?",
+"de": "Welches Essen erinnert dich an eine besondere Reise oder Erinnerung?",
+"es": "¿Qué comida te recuerda un viaje o un recuerdo especial?",
+"fr": "Quel aliment te rappelle un voyage ou un souvenir spécial ?",
+"it": "Quale cibo ti ricorda un viaggio o un ricordo speciale?",
+"pt": "Que comida te lembra uma viagem ou uma memória especial?",
+"pt_BR": "Qual comida te lembra uma viagem ou uma lembrança especial?"
+}
+},
+{
+"id": "healthy_eating-035",
+"lv": "any",
+"i18n": {
+"en": "How do you like to celebrate good news with food?",
+"de": "Wie feierst du gute Nachrichten gern mit Essen?",
+"es": "¿Cómo te gusta celebrar las buenas noticias con comida?",
+"fr": "Comment aimes-tu fêter une bonne nouvelle autour d'un repas ?",
+"it": "Come ti piace festeggiare una bella notizia a tavola?",
+"pt": "Como gostas de celebrar boas notícias com comida?",
+"pt_BR": "Como você gosta de comemorar boas notícias com comida?"
+}
+},
+{
+"id": "healthy_eating-036",
+"lv": "any",
+"i18n": {
+"en": "Which fresh herb would you grow at home if you could?",
+"de": "Welches frische Kraut würdest du zu Hause anbauen, wenn du könntest?",
+"es": "¿Qué hierba fresca cultivarías en casa si pudieras?",
+"fr": "Quelle herbe fraîche ferais-tu pousser chez toi si tu pouvais ?",
+"it": "Quale erba aromatica fresca coltiveresti a casa, se potessi?",
+"pt": "Que erva aromática fresca cultivarias em casa, se pudesses?",
+"pt_BR": "Qual erva fresca você plantaria em casa, se pudesse?"
+}
+},
+{
+"id": "healthy_eating-037",
+"lv": "any",
+"i18n": {
+"en": "What is your favourite way to eat eggs, beans or another protein food?",
+"de": "Wie isst du Eier, Bohnen oder ein anderes eiweißreiches Lebensmittel am liebsten?",
+"es": "¿Cuál es tu forma favorita de comer huevos, legumbres u otra proteína?",
+"fr": "Quelle est ta façon préférée de manger des œufs, des légumineuses ou une autre protéine ?",
+"it": "Qual è il tuo modo preferito di mangiare uova, legumi o un'altra proteina?",
+"pt": "Qual é a tua forma preferida de comer ovos, feijão ou outra proteína?",
+"pt_BR": "Qual é o seu jeito favorito de comer ovos, feijão ou outra proteína?"
+}
+},
+{
+"id": "healthy_eating-038",
+"lv": "any",
+"i18n": {
+"en": "What is a meal you would cook to welcome a friend from abroad?",
+"de": "Welches Gericht würdest du kochen, um einen Freund aus dem Ausland willkommen zu heißen?",
+"es": "¿Qué plato cocinarías para recibir a un amigo del extranjero?",
+"fr": "Quel plat cuisinerais-tu pour accueillir un ami venu de l'étranger ?",
+"it": "Quale piatto cucineresti per accogliere un amico dall'estero?",
+"pt": "Que prato cozinharias para receber um amigo vindo do estrangeiro?",
+"pt_BR": "Que prato você faria para receber um amigo de outro país?"
+}
+},
+{
+"id": "healthy_eating-039",
+"lv": "any",
+"i18n": {
+"en": "What is one thing about food in your culture that visitors find surprising?",
+"de": "Was an der Esskultur deines Landes überrascht Besucher oft?",
+"es": "¿Qué cosa de la comida de tu cultura sorprende a los visitantes?",
+"fr": "Qu'est-ce qui surprend les visiteurs dans la cuisine de ta culture ?",
+"it": "Che cosa della cucina della tua cultura sorprende i visitatori?",
+"pt": "O que é que surpreende os visitantes na comida da tua cultura?",
+"pt_BR": "O que na comida da sua cultura costuma surpreender os visitantes?"
+}
+},
+{
+"id": "healthy_eating-040",
+"lv": "any",
+"i18n": {
+"en": "How has the way you eat changed over the years?",
+"de": "Wie hat sich deine Art zu essen im Laufe der Jahre verändert?",
+"es": "¿Cómo ha cambiado tu forma de comer con los años?",
+"fr": "Comment ta façon de manger a-t-elle changé au fil des années ?",
+"it": "Com'è cambiato il tuo modo di mangiare negli anni?",
+"pt": "Como mudou a tua forma de comer ao longo dos anos?",
+"pt_BR": "Como o seu jeito de comer mudou ao longo dos anos?"
+}
+},
+{
+"id": "healthy_eating-041",
+"lv": "beginner",
+"i18n": {
+"en": "How many different colours of vegetables and fruit did you eat this week?",
+"de": "Wie viele verschiedene Farben an Obst und Gemüse hast du diese Woche gegessen?",
+"es": "¿Cuántos colores distintos de frutas y verduras has comido esta semana?",
+"fr": "Combien de couleurs différentes de fruits et légumes as-tu mangées cette semaine ?",
+"it": "Quanti colori diversi di frutta e verdura hai mangiato questa settimana?",
+"pt": "Quantas cores diferentes de fruta e legumes comeste esta semana?",
+"pt_BR": "Quantas cores diferentes de frutas e verduras você comeu esta semana?"
+}
+},
+{
+"id": "healthy_eating-042",
+"lv": "beginner",
+"i18n": {
+"en": "What is one easy vegetable you could add to a meal you already love?",
+"de": "Welches einfache Gemüse könntest du zu einem Gericht geben, das du schon liebst?",
+"es": "¿Qué verdura fácil podrías añadir a un plato que ya te encanta?",
+"fr": "Quel légume facile pourrais-tu ajouter à un plat que tu adores déjà ?",
+"it": "Quale verdura semplice potresti aggiungere a un piatto che già ami?",
+"pt": "Que legume fácil podias juntar a um prato de que já gostas muito?",
+"pt_BR": "Qual verdura fácil você poderia colocar num prato que já ama?"
+}
+},
+{
+"id": "healthy_eating-043",
+"lv": "beginner",
+"i18n": {
+"en": "When during the day do you find it hardest to drink enough water?",
+"de": "Wann am Tag fällt es dir am schwersten, genug Wasser zu trinken?",
+"es": "¿En qué momento del día te cuesta más beber suficiente agua?",
+"fr": "À quel moment de la journée as-tu le plus de mal à boire assez d'eau ?",
+"it": "In quale momento della giornata fai più fatica a bere abbastanza acqua?",
+"pt": "Em que altura do dia te custa mais beber água suficiente?",
+"pt_BR": "Em que momento do dia é mais difícil beber água suficiente para você?"
+}
+},
+{
+"id": "healthy_eating-044",
+"lv": "beginner",
+"i18n": {
+"en": "How does a balanced plate compare with what you usually eat at lunch?",
+"de": "Wie sieht ein ausgewogener Teller im Vergleich zu deinem üblichen Mittagessen aus?",
+"es": "¿Cómo se compara un plato equilibrado con lo que sueles comer al mediodía?",
+"fr": "Comment une assiette équilibrée se compare-t-elle à ton déjeuner habituel ?",
+"it": "Come si confronta un piatto equilibrato con quello che mangi di solito a pranzo?",
+"pt": "Como é que um prato equilibrado se compara com o que costumas almoçar?",
+"pt_BR": "Como um prato equilibrado se compara ao que você costuma almoçar?"
+}
+},
+{
+"id": "healthy_eating-045",
+"lv": "beginner",
+"i18n": {
+"en": "Do you usually eat slowly or quickly? How do you notice it?",
+"de": "Isst du meistens langsam oder schnell? Woran merkst du das?",
+"es": "¿Sueles comer despacio o deprisa? ¿Cómo lo notas?",
+"fr": "Manges-tu plutôt lentement ou vite ? Comment t'en rends-tu compte ?",
+"it": "Di solito mangi lentamente o in fretta? Come te ne accorgi?",
+"pt": "Costumas comer devagar ou depressa? Como é que dás por isso?",
+"pt_BR": "Você costuma comer devagar ou rápido? Como percebe isso?"
+}
+},
+{
+"id": "healthy_eating-046",
+"lv": "beginner",
+"i18n": {
+"en": "Which whole grain would you like to try or eat more often?",
+"de": "Welches Vollkorngetreide würdest du gern probieren oder öfter essen?",
+"es": "¿Qué cereal integral te gustaría probar o comer más a menudo?",
+"fr": "Quelle céréale complète aimerais-tu goûter ou manger plus souvent ?",
+"it": "Quale cereale integrale ti piacerebbe provare o mangiare più spesso?",
+"pt": "Que cereal integral gostavas de provar ou comer mais vezes?",
+"pt_BR": "Qual grão integral você gostaria de provar ou comer com mais frequência?"
+}
+},
+{
+"id": "healthy_eating-047",
+"lv": "beginner",
+"i18n": {
+"en": "What is in your pantry right now that could become a quick, healthy meal?",
+"de": "Was hast du gerade im Vorrat, das zu einer schnellen, gesunden Mahlzeit werden könnte?",
+"es": "¿Qué tienes ahora en la despensa que podría convertirse en una comida rápida y sana?",
+"fr": "Qu'as-tu dans tes placards qui pourrait devenir un repas rapide et sain ?",
+"it": "Che cosa hai in dispensa adesso che potrebbe diventare un pasto veloce e sano?",
+"pt": "O que tens agora na despensa que podia virar uma refeição rápida e saudável?",
+"pt_BR": "O que você tem agora na despensa que poderia virar uma refeição rápida e saudável?"
+}
+},
+{
+"id": "healthy_eating-048",
+"lv": "beginner",
+"i18n": {
+"en": "How do you feel about frozen or canned vegetables?",
+"de": "Was hältst du von tiefgekühltem Gemüse oder Gemüse aus der Dose?",
+"es": "¿Qué opinas de las verduras congeladas o en conserva?",
+"fr": "Que penses-tu des légumes surgelés ou en conserve ?",
+"it": "Che cosa pensi delle verdure surgelate o in scatola?",
+"pt": "O que achas dos legumes congelados ou enlatados?",
+"pt_BR": "O que você acha de legumes congelados ou enlatados?"
+}
+},
+{
+"id": "healthy_eating-049",
+"lv": "beginner",
+"i18n": {
+"en": "Which drink would you like to swap for water more often?",
+"de": "Welches Getränk würdest du gern öfter durch Wasser ersetzen?",
+"es": "¿Qué bebida te gustaría cambiar por agua más a menudo?",
+"fr": "Quelle boisson aimerais-tu remplacer plus souvent par de l'eau ?",
+"it": "Quale bevanda ti piacerebbe sostituire più spesso con l'acqua?",
+"pt": "Que bebida gostavas de trocar por água mais vezes?",
+"pt_BR": "Qual bebida você gostaria de trocar por água mais vezes?"
+}
+},
+{
+"id": "healthy_eating-050",
+"lv": "beginner",
+"i18n": {
+"en": "What helps you notice when you are comfortably full?",
+"de": "Woran merkst du, dass du angenehm satt bist?",
+"es": "¿Qué te ayuda a notar cuándo estás agradablemente lleno?",
+"fr": "Qu'est-ce qui t'aide à sentir que tu es agréablement rassasié ?",
+"it": "Che cosa ti aiuta a capire quando sei piacevolmente sazio?",
+"pt": "O que te ajuda a perceber quando estás confortavelmente satisfeito?",
+"pt_BR": "O que te ajuda a perceber quando está satisfeito na medida certa?"
+}
+},
+{
+"id": "healthy_eating-051",
+"lv": "beginner",
+"i18n": {
+"en": "Which fruit would you choose for a simple, sweet dessert?",
+"de": "Welches Obst würdest du für ein einfaches, süßes Dessert wählen?",
+"es": "¿Qué fruta elegirías para un postre sencillo y dulce?",
+"fr": "Quel fruit choisirais-tu pour un dessert simple et sucré ?",
+"it": "Quale frutto sceglieresti per un dessert semplice e dolce?",
+"pt": "Que fruta escolherias para uma sobremesa simples e doce?",
+"pt_BR": "Qual fruta você escolheria para uma sobremesa simples e doce?"
+}
+},
+{
+"id": "healthy_eating-052",
+"lv": "beginner",
+"i18n": {
+"en": "Have you ever cooked with lentils or beans? What did you make?",
+"de": "Hast du schon einmal mit Linsen oder Bohnen gekocht? Was hast du gemacht?",
+"es": "¿Has cocinado alguna vez con lentejas o alubias? ¿Qué preparaste?",
+"fr": "As-tu déjà cuisiné des lentilles ou des haricots ? Qu'as-tu préparé ?",
+"it": "Hai mai cucinato con lenticchie o fagioli? Che cosa hai preparato?",
+"pt": "Já cozinhaste com lentilhas ou feijão? O que fizeste?",
+"pt_BR": "Você já cozinhou com lentilha ou feijão? O que fez?"
+}
+},
+{
+"id": "healthy_eating-053",
+"lv": "beginner",
+"i18n": {
+"en": "What is one small change to your breakfast you would like to try?",
+"de": "Welche kleine Veränderung beim Frühstück würdest du gern ausprobieren?",
+"es": "¿Qué pequeño cambio te gustaría probar en tu desayuno?",
+"fr": "Quel petit changement aimerais-tu essayer au petit-déjeuner ?",
+"it": "Quale piccolo cambiamento ti piacerebbe provare a colazione?",
+"pt": "Que pequena mudança gostavas de experimentar no teu pequeno-almoço?",
+"pt_BR": "Que pequena mudança você gostaria de experimentar no seu café da manhã?"
+}
+},
+{
+"id": "healthy_eating-054",
+"lv": "beginner",
+"i18n": {
+"en": "Which herbs or spices could help you use a little less salt?",
+"de": "Mit welchen Kräutern oder Gewürzen könntest du etwas weniger Salz verwenden?",
+"es": "¿Qué hierbas o especias te ayudarían a usar un poco menos de sal?",
+"fr": "Quelles herbes ou épices pourraient t'aider à utiliser un peu moins de sel ?",
+"it": "Quali erbe o spezie potrebbero aiutarti a usare un po' meno sale?",
+"pt": "Que ervas ou especiarias te podiam ajudar a usar um pouco menos de sal?",
+"pt_BR": "Quais ervas ou temperos poderiam te ajudar a usar um pouco menos de sal?"
+}
+},
+{
+"id": "healthy_eating-055",
+"lv": "beginner",
+"i18n": {
+"en": "Where do you usually eat your meals, and does it feel relaxing?",
+"de": "Wo isst du normalerweise, und empfindest du das als entspannend?",
+"es": "¿Dónde sueles comer y te resulta un momento tranquilo?",
+"fr": "Où prends-tu tes repas d'habitude, et est-ce un moment détendu ?",
+"it": "Dove consumi di solito i pasti, e ti sembra un momento rilassante?",
+"pt": "Onde costumas fazer as refeições, e é um momento descontraído?",
+"pt_BR": "Onde você costuma fazer as refeições, e é um momento tranquilo?"
+}
+},
+{
+"id": "healthy_eating-056",
+"lv": "beginner",
+"i18n": {
+"en": "What is your favourite way to add vegetables to pasta or rice?",
+"de": "Wie bringst du am liebsten Gemüse in Nudeln oder Reis?",
+"es": "¿Cuál es tu forma favorita de añadir verduras a la pasta o al arroz?",
+"fr": "Quelle est ta façon préférée d'ajouter des légumes aux pâtes ou au riz ?",
+"it": "Qual è il tuo modo preferito di aggiungere verdure alla pasta o al riso?",
+"pt": "Qual é a tua forma preferida de juntar legumes à massa ou ao arroz?",
+"pt_BR": "Qual é o seu jeito favorito de colocar legumes no macarrão ou no arroz?"
+}
+},
+{
+"id": "healthy_eating-057",
+"lv": "beginner",
+"i18n": {
+"en": "Which healthy snack would you like to keep handy at home or work?",
+"de": "Welchen gesunden Snack hättest du gern zu Hause oder bei der Arbeit griffbereit?",
+"es": "¿Qué tentempié saludable te gustaría tener a mano en casa o en el trabajo?",
+"fr": "Quel en-cas sain aimerais-tu avoir sous la main à la maison ou au travail ?",
+"it": "Quale spuntino sano ti piacerebbe avere sempre a portata di mano?",
+"pt": "Que lanche saudável gostavas de ter sempre à mão em casa ou no trabalho?",
+"pt_BR": "Qual lanche saudável você gostaria de ter sempre à mão em casa ou no trabalho?"
+}
+},
+{
+"id": "healthy_eating-058",
+"lv": "beginner",
+"i18n": {
+"en": "What is a vegetable you have never tried but feel curious about?",
+"de": "Welches Gemüse hast du noch nie probiert, bist aber neugierig darauf?",
+"es": "¿Qué verdura nunca has probado pero te da curiosidad?",
+"fr": "Quel légume n'as-tu jamais goûté mais te rend curieux ?",
+"it": "Quale verdura non hai mai assaggiato ma ti incuriosisce?",
+"pt": "Que legume nunca provaste mas te deixa curioso?",
+"pt_BR": "Qual legume você nunca provou, mas tem curiosidade de experimentar?"
+}
+},
+{
+"id": "healthy_eating-059",
+"lv": "beginner",
+"i18n": {
+"en": "How regular are your meal times on a normal weekday?",
+"de": "Wie regelmäßig sind deine Essenszeiten an einem normalen Wochentag?",
+"es": "¿Qué tan regulares son tus horarios de comida en un día normal?",
+"fr": "Tes horaires de repas sont-ils réguliers en semaine ?",
+"it": "Quanto sono regolari i tuoi orari dei pasti in un giorno feriale?",
+"pt": "Quão regulares são as tuas horas das refeições num dia normal de semana?",
+"pt_BR": "Seus horários de refeição são regulares num dia comum de semana?"
+}
+},
+{
+"id": "healthy_eating-060",
+"lv": "beginner",
+"i18n": {
+"en": "Which treat do you enjoy most, and when do you like to have it?",
+"de": "Welche Leckerei genießt du am meisten, und wann gönnst du sie dir gern?",
+"es": "¿Qué capricho disfrutas más y cuándo te gusta tomarlo?",
+"fr": "Quelle gourmandise préfères-tu, et quand aimes-tu te l'offrir ?",
+"it": "Quale golosità ti piace di più e quando ti piace concedertela?",
+"pt": "Que guloseima mais aprecias e quando gostas de a comer?",
+"pt_BR": "Qual docinho você mais curte e quando gosta de comê-lo?"
+}
+},
+{
+"id": "healthy_eating-061",
+"lv": "beginner",
+"i18n": {
+"en": "What would make cooking at home easier for you on busy days?",
+"de": "Was würde dir das Kochen zu Hause an vollen Tagen erleichtern?",
+"es": "¿Qué te facilitaría cocinar en casa los días ajetreados?",
+"fr": "Qu'est-ce qui te faciliterait la cuisine les jours chargés ?",
+"it": "Che cosa ti renderebbe più facile cucinare a casa nei giorni pieni?",
+"pt": "O que te tornaria mais fácil cozinhar em casa nos dias mais cheios?",
+"pt_BR": "O que tornaria mais fácil cozinhar em casa nos dias corridos?"
+}
+},
+{
+"id": "healthy_eating-062",
+"lv": "beginner",
+"i18n": {
+"en": "Do you prefer raw crunchy vegetables or cooked soft ones?",
+"de": "Magst du Gemüse lieber roh und knackig oder gekocht und weich?",
+"es": "¿Prefieres las verduras crudas y crujientes o cocidas y tiernas?",
+"fr": "Préfères-tu les légumes crus et croquants ou cuits et fondants ?",
+"it": "Preferisci le verdure crude e croccanti o cotte e morbide?",
+"pt": "Preferes legumes crus e estaladiços ou cozinhados e macios?",
+"pt_BR": "Você prefere legumes crus e crocantes ou cozidos e macios?"
+}
+},
+{
+"id": "healthy_eating-063",
+"lv": "beginner",
+"i18n": {
+"en": "What does your ideal quick lunch look like?",
+"de": "Wie sieht dein ideales schnelles Mittagessen aus?",
+"es": "¿Cómo sería tu almuerzo rápido ideal?",
+"fr": "À quoi ressemble ton déjeuner rapide idéal ?",
+"it": "Com'è il tuo pranzo veloce ideale?",
+"pt": "Como é o teu almoço rápido ideal?",
+"pt_BR": "Como é o seu almoço rápido ideal?"
+}
+},
+{
+"id": "healthy_eating-064",
+"lv": "beginner",
+"i18n": {
+"en": "Which fresh food do you find yourself throwing away most often?",
+"de": "Welches frische Lebensmittel landet bei dir am häufigsten im Müll?",
+"es": "¿Qué alimento fresco acabas tirando más a menudo?",
+"fr": "Quel produit frais finis-tu le plus souvent par jeter ?",
+"it": "Quale alimento fresco ti capita più spesso di buttare via?",
+"pt": "Que alimento fresco acabas por deitar fora mais vezes?",
+"pt_BR": "Qual alimento fresco você acaba jogando fora com mais frequência?"
+}
+},
+{
+"id": "healthy_eating-065",
+"lv": "beginner",
+"i18n": {
+"en": "How do you feel when you sit down to a meal without your phone?",
+"de": "Wie fühlt es sich an, wenn du ohne Handy zum Essen sitzt?",
+"es": "¿Cómo te sientes cuando comes sin el móvil?",
+"fr": "Comment te sens-tu quand tu passes à table sans ton téléphone ?",
+"it": "Come ti senti quando ti siedi a tavola senza il telefono?",
+"pt": "Como te sentes quando te sentas à mesa sem o telemóvel?",
+"pt_BR": "Como você se sente quando senta para comer sem o celular?"
+}
+},
+{
+"id": "healthy_eating-066",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you plan your meals for the week, if at all?",
+"de": "Planst du deine Mahlzeiten für die Woche, und wenn ja, wie?",
+"es": "¿Planificas tus comidas de la semana? Si es así, ¿cómo?",
+"fr": "Planifies-tu tes repas de la semaine ? Si oui, comment ?",
+"it": "Pianifichi i pasti della settimana? Se sì, come?",
+"pt": "Planeias as refeições da semana? Se sim, como?",
+"pt_BR": "Você planeja as refeições da semana? Se sim, como?"
+}
+},
+{
+"id": "healthy_eating-067",
+"lv": "intermediate",
+"i18n": {
+"en": "What do you look at first when you read a food label?",
+"de": "Worauf schaust du zuerst, wenn du ein Lebensmitteletikett liest?",
+"es": "¿Qué miras primero cuando lees la etiqueta de un alimento?",
+"fr": "Que regardes-tu en premier sur l'étiquette d'un aliment ?",
+"it": "Che cosa guardi per primo quando leggi l'etichetta di un alimento?",
+"pt": "O que olhas primeiro quando lês o rótulo de um alimento?",
+"pt_BR": "O que você olha primeiro quando lê o rótulo de um alimento?"
+}
+},
+{
+"id": "healthy_eating-068",
+"lv": "intermediate",
+"i18n": {
+"en": "Which cooking method do you use most, and which would you like to learn?",
+"de": "Welche Garmethode nutzt du am meisten, und welche würdest du gern lernen?",
+"es": "¿Qué técnica de cocina usas más y cuál te gustaría aprender?",
+"fr": "Quelle technique de cuisson utilises-tu le plus, et laquelle aimerais-tu apprendre ?",
+"it": "Quale metodo di cottura usi di più e quale ti piacerebbe imparare?",
+"pt": "Que método de cozinhar usas mais e qual gostavas de aprender?",
+"pt_BR": "Qual técnica de cozimento você mais usa e qual gostaria de aprender?"
+}
+},
+{
+"id": "healthy_eating-069",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you make a packed lunch that you actually look forward to?",
+"de": "Wie bereitest du ein Lunchpaket zu, auf das du dich wirklich freust?",
+"es": "¿Cómo preparas una comida para llevar que de verdad te apetezca?",
+"fr": "Comment prépares-tu un repas à emporter qui te fait vraiment envie ?",
+"it": "Come prepari un pranzo da portare via che non vedi l'ora di mangiare?",
+"pt": "Como preparas uma marmita que te dê mesmo vontade de comer?",
+"pt_BR": "Como você monta uma marmita que dá vontade de comer de verdade?"
+}
+},
+{
+"id": "healthy_eating-070",
+"lv": "intermediate",
+"i18n": {
+"en": "Which world cuisine has inspired the way you cook at home?",
+"de": "Welche Küche der Welt hat deine Art zu kochen geprägt?",
+"es": "¿Qué cocina del mundo ha inspirado tu forma de cocinar en casa?",
+"fr": "Quelle cuisine du monde a inspiré ta façon de cuisiner ?",
+"it": "Quale cucina del mondo ha ispirato il tuo modo di cucinare a casa?",
+"pt": "Que cozinha do mundo inspirou a tua forma de cozinhar em casa?",
+"pt_BR": "Qual culinária do mundo inspirou seu jeito de cozinhar em casa?"
+}
+},
+{
+"id": "healthy_eating-071",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you choose what to order when eating at a restaurant?",
+"de": "Wie entscheidest du, was du im Restaurant bestellst?",
+"es": "¿Cómo decides qué pedir cuando comes en un restaurante?",
+"fr": "Comment choisis-tu ce que tu commandes au restaurant ?",
+"it": "Come scegli cosa ordinare quando mangi al ristorante?",
+"pt": "Como escolhes o que pedir quando comes num restaurante?",
+"pt_BR": "Como você escolhe o que pedir quando come num restaurante?"
+}
+},
+{
+"id": "healthy_eating-072",
+"lv": "intermediate",
+"i18n": {
+"en": "What are your best tricks for using up leftovers?",
+"de": "Was sind deine besten Tricks, um Reste zu verwerten?",
+"es": "¿Cuáles son tus mejores trucos para aprovechar las sobras?",
+"fr": "Quelles sont tes meilleures astuces pour utiliser les restes ?",
+"it": "Quali sono i tuoi trucchi migliori per usare gli avanzi?",
+"pt": "Quais são os teus melhores truques para aproveitar as sobras?",
+"pt_BR": "Quais são os seus melhores truques para aproveitar as sobras?"
+}
+},
+{
+"id": "healthy_eating-073",
+"lv": "intermediate",
+"i18n": {
+"en": "Which marketing words on food packaging make you curious or suspicious?",
+"de": "Welche Werbebegriffe auf Verpackungen machen dich neugierig oder misstrauisch?",
+"es": "¿Qué palabras de marketing en los envases te despiertan curiosidad o desconfianza?",
+"fr": "Quels mots marketing sur les emballages te rendent curieux ou méfiant ?",
+"it": "Quali parole pubblicitarie sulle confezioni ti incuriosiscono o ti insospettiscono?",
+"pt": "Que palavras de marketing nas embalagens te deixam curioso ou desconfiado?",
+"pt_BR": "Quais palavras de marketing nas embalagens te deixam curioso ou desconfiado?"
+}
+},
+{
+"id": "healthy_eating-074",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you eat well when your days are very busy?",
+"de": "Wie ernährst du dich gut, wenn deine Tage sehr voll sind?",
+"es": "¿Cómo comes bien cuando tus días están muy llenos?",
+"fr": "Comment manges-tu bien quand tes journées sont très chargées ?",
+"it": "Come riesci a mangiare bene quando le giornate sono pienissime?",
+"pt": "Como consegues comer bem quando os teus dias estão muito cheios?",
+"pt_BR": "Como você consegue comer bem quando seus dias estão muito corridos?"
+}
+},
+{
+"id": "healthy_eating-075",
+"lv": "intermediate",
+"i18n": {
+"en": "Which dish would you like to make a little more balanced, and how?",
+"de": "Welches Gericht würdest du gern etwas ausgewogener machen, und wie?",
+"es": "¿Qué plato te gustaría hacer un poco más equilibrado y cómo?",
+"fr": "Quel plat aimerais-tu rendre un peu plus équilibré, et comment ?",
+"it": "Quale piatto ti piacerebbe rendere un po' più equilibrato, e come?",
+"pt": "Que prato gostavas de tornar um pouco mais equilibrado, e como?",
+"pt_BR": "Qual prato você gostaria de deixar um pouco mais equilibrado, e como?"
+}
+},
+{
+"id": "healthy_eating-076",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you handle food at parties and celebrations?",
+"de": "Wie gehst du auf Partys und Feiern mit dem Essen um?",
+"es": "¿Cómo te manejas con la comida en fiestas y celebraciones?",
+"fr": "Comment gères-tu la nourriture lors des fêtes et célébrations ?",
+"it": "Come ti comporti con il cibo a feste e celebrazioni?",
+"pt": "Como lidas com a comida em festas e celebrações?",
+"pt_BR": "Como você lida com a comida em festas e comemorações?"
+}
+},
+{
+"id": "healthy_eating-077",
+"lv": "intermediate",
+"i18n": {
+"en": "What is your favourite meal to prepare ahead for the week?",
+"de": "Welches Gericht bereitest du am liebsten für die Woche vor?",
+"es": "¿Cuál es tu plato favorito para preparar con antelación para la semana?",
+"fr": "Quel est ton plat préféré à préparer à l'avance pour la semaine ?",
+"it": "Qual è il tuo piatto preferito da preparare in anticipo per la settimana?",
+"pt": "Qual é o teu prato preferido para preparar com antecedência para a semana?",
+"pt_BR": "Qual é o seu prato favorito para preparar com antecedência para a semana?"
+}
+},
+{
+"id": "healthy_eating-078",
+"lv": "intermediate",
+"i18n": {
+"en": "Which fermented food do you enjoy, or would you like to try?",
+"de": "Welches fermentierte Lebensmittel magst du, oder würdest du gern probieren?",
+"es": "¿Qué alimento fermentado te gusta o te gustaría probar?",
+"fr": "Quel aliment fermenté aimes-tu, ou aimerais-tu goûter ?",
+"it": "Quale alimento fermentato ti piace o ti piacerebbe provare?",
+"pt": "Que alimento fermentado aprecias ou gostavas de provar?",
+"pt_BR": "Qual alimento fermentado você curte ou gostaria de provar?"
+}
+},
+{
+"id": "healthy_eating-079",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you build flavour in a dish without adding much salt?",
+"de": "Wie bringst du Geschmack in ein Gericht, ohne viel Salz zu verwenden?",
+"es": "¿Cómo das sabor a un plato sin añadir mucha sal?",
+"fr": "Comment donnes-tu du goût à un plat sans ajouter beaucoup de sel ?",
+"it": "Come dai sapore a un piatto senza aggiungere molto sale?",
+"pt": "Como dás sabor a um prato sem pôr muito sal?",
+"pt_BR": "Como você dá sabor a um prato sem colocar muito sal?"
+}
+},
+{
+"id": "healthy_eating-080",
+"lv": "intermediate",
+"i18n": {
+"en": "What did you learn from cooking a dish from another culture?",
+"de": "Was hast du gelernt, als du ein Gericht aus einer anderen Kultur gekocht hast?",
+"es": "¿Qué aprendiste al cocinar un plato de otra cultura?",
+"fr": "Qu'as-tu appris en cuisinant un plat d'une autre culture ?",
+"it": "Che cosa hai imparato cucinando un piatto di un'altra cultura?",
+"pt": "O que aprendeste ao cozinhar um prato de outra cultura?",
+"pt_BR": "O que você aprendeu ao cozinhar um prato de outra cultura?"
+}
+},
+{
+"id": "healthy_eating-081",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you shop for food when money is tight?",
+"de": "Wie kaufst du Lebensmittel ein, wenn das Geld knapp ist?",
+"es": "¿Cómo haces la compra cuando el dinero escasea?",
+"fr": "Comment fais-tu tes courses quand le budget est serré ?",
+"it": "Come fai la spesa quando il budget è ridotto?",
+"pt": "Como fazes as compras quando o dinheiro está apertado?",
+"pt_BR": "Como você faz compras de comida quando o dinheiro está curto?"
+}
+},
+{
+"id": "healthy_eating-082",
+"lv": "intermediate",
+"i18n": {
+"en": "Which comfort food would you like to make a lighter version of?",
+"de": "Von welchem Wohlfühlessen würdest du gern eine leichtere Version machen?",
+"es": "¿De qué comida reconfortante te gustaría hacer una versión más ligera?",
+"fr": "De quel plat réconfortant aimerais-tu faire une version plus légère ?",
+"it": "Di quale piatto consolatorio ti piacerebbe fare una versione più leggera?",
+"pt": "De que comida reconfortante gostavas de fazer uma versão mais leve?",
+"pt_BR": "De qual comida afetiva você gostaria de fazer uma versão mais leve?"
+}
+},
+{
+"id": "healthy_eating-083",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you stay hydrated when it is very hot or when you are active?",
+"de": "Wie trinkst du genug, wenn es sehr heiß ist oder du aktiv bist?",
+"es": "¿Cómo te hidratas cuando hace mucho calor o cuando haces ejercicio?",
+"fr": "Comment t'hydrates-tu quand il fait très chaud ou quand tu es actif ?",
+"it": "Come ti idrati quando fa molto caldo o quando fai attività fisica?",
+"pt": "Como te hidratas quando está muito calor ou quando estás ativo?",
+"pt_BR": "Como você se hidrata quando está muito calor ou quando está se exercitando?"
+}
+},
+{
+"id": "healthy_eating-084",
+"lv": "intermediate",
+"i18n": {
+"en": "What is the best food tip a friend or relative has ever given you?",
+"de": "Was ist der beste Tipp rund ums Essen, den dir jemand gegeben hat?",
+"es": "¿Cuál es el mejor consejo sobre comida que te ha dado un amigo o familiar?",
+"fr": "Quel est le meilleur conseil culinaire qu'un proche t'ait donné ?",
+"it": "Qual è il miglior consiglio sul cibo che ti ha dato un amico o un parente?",
+"pt": "Qual foi a melhor dica sobre comida que um amigo ou familiar te deu?",
+"pt_BR": "Qual foi a melhor dica sobre comida que um amigo ou parente já te deu?"
+}
+},
+{
+"id": "healthy_eating-085",
+"lv": "intermediate",
+"i18n": {
+"en": "Which store aisle do you find most confusing, and why?",
+"de": "Welcher Supermarktgang verwirrt dich am meisten, und warum?",
+"es": "¿Qué pasillo del supermercado te parece más confuso y por qué?",
+"fr": "Quel rayon du supermarché te semble le plus déroutant, et pourquoi ?",
+"it": "Quale corsia del supermercato trovi più confusa, e perché?",
+"pt": "Que corredor do supermercado achas mais confuso, e porquê?",
+"pt_BR": "Qual corredor do mercado você acha mais confuso, e por quê?"
+}
+},
+{
+"id": "healthy_eating-086",
+"lv": "advanced",
+"i18n": {
+"en": "How do you decide whether a nutrition headline is worth believing?",
+"de": "Wie entscheidest du, ob eine Schlagzeile über Ernährung glaubwürdig ist?",
+"es": "¿Cómo decides si un titular sobre nutrición merece tu confianza?",
+"fr": "Comment décides-tu si un titre sur la nutrition mérite d'être cru ?",
+"it": "Come decidi se un titolo sulla nutrizione è affidabile?",
+"pt": "Como decides se uma manchete sobre nutrição merece confiança?",
+"pt_BR": "Como você decide se uma manchete sobre nutrição merece confiança?"
+}
+},
+{
+"id": "healthy_eating-087",
+"lv": "advanced",
+"i18n": {
+"en": "Which food myth did you believe for a long time?",
+"de": "An welchen Ernährungsmythos hast du lange geglaubt?",
+"es": "¿Qué mito sobre la comida creíste durante mucho tiempo?",
+"fr": "À quel mythe alimentaire as-tu cru pendant longtemps ?",
+"it": "A quale mito sul cibo hai creduto per molto tempo?",
+"pt": "Em que mito sobre comida acreditaste durante muito tempo?",
+"pt_BR": "Em qual mito sobre comida você acreditou por muito tempo?"
+}
+},
+{
+"id": "healthy_eating-088",
+"lv": "advanced",
+"i18n": {
+"en": "What would your personal food philosophy sound like in one sentence?",
+"de": "Wie würde deine persönliche Esshaltung in einem Satz klingen?",
+"es": "¿Cómo resumirías tu filosofía personal sobre la comida en una frase?",
+"fr": "Comment résumerais-tu ta philosophie alimentaire en une phrase ?",
+"it": "Come riassumeresti in una frase la tua filosofia personale sul cibo?",
+"pt": "Como resumirias numa frase a tua filosofia pessoal sobre comida?",
+"pt_BR": "Como você resumiria em uma frase a sua filosofia pessoal sobre comida?"
+}
+},
+{
+"id": "healthy_eating-089",
+"lv": "advanced",
+"i18n": {
+"en": "How do your food choices connect with your care for the planet?",
+"de": "Wie hängen deine Essensentscheidungen mit deiner Sorge um den Planeten zusammen?",
+"es": "¿Cómo se relacionan tus elecciones de comida con tu cuidado del planeta?",
+"fr": "Comment tes choix alimentaires sont-ils liés à ton souci de la planète ?",
+"it": "In che modo le tue scelte alimentari si collegano alla cura del pianeta?",
+"pt": "Como é que as tuas escolhas alimentares se ligam ao cuidado com o planeta?",
+"pt_BR": "Como suas escolhas alimentares se conectam com o cuidado com o planeta?"
+}
+},
+{
+"id": "healthy_eating-090",
+"lv": "advanced",
+"i18n": {
+"en": "Where do you look for reliable nutrition information?",
+"de": "Wo suchst du nach verlässlichen Informationen über Ernährung?",
+"es": "¿Dónde buscas información fiable sobre nutrición?",
+"fr": "Où cherches-tu des informations fiables sur la nutrition ?",
+"it": "Dove cerchi informazioni affidabili sulla nutrizione?",
+"pt": "Onde procuras informação fiável sobre nutrição?",
+"pt_BR": "Onde você procura informações confiáveis sobre nutrição?"
+}
+},
+{
+"id": "healthy_eating-091",
+"lv": "advanced",
+"i18n": {
+"en": "What do you think traditional food cultures around the world have in common?",
+"de": "Was haben traditionelle Esskulturen weltweit deiner Meinung nach gemeinsam?",
+"es": "¿Qué crees que tienen en común las culturas culinarias tradicionales del mundo?",
+"fr": "À ton avis, qu'ont en commun les cultures culinaires traditionnelles du monde ?",
+"it": "Secondo te, che cosa hanno in comune le culture alimentari tradizionali del mondo?",
+"pt": "Na tua opinião, o que têm em comum as culturas alimentares tradicionais do mundo?",
+"pt_BR": "Na sua opinião, o que as culturas alimentares tradicionais do mundo têm em comum?"
+}
+},
+{
+"id": "healthy_eating-092",
+"lv": "advanced",
+"i18n": {
+"en": "How would you explain the idea of fibre to a curious friend?",
+"de": "Wie würdest du einem neugierigen Freund erklären, was Ballaststoffe sind?",
+"es": "¿Cómo le explicarías qué es la fibra a un amigo curioso?",
+"fr": "Comment expliquerais-tu les fibres à un ami curieux ?",
+"it": "Come spiegheresti le fibre a un amico curioso?",
+"pt": "Como explicarias o que são as fibras a um amigo curioso?",
+"pt_BR": "Como você explicaria o que são fibras para um amigo curioso?"
+}
+},
+{
+"id": "healthy_eating-093",
+"lv": "advanced",
+"i18n": {
+"en": "Which home food project would you love to try, like bread, yoghurt or pickles?",
+"de": "Welches Küchenprojekt würdest du gern ausprobieren, etwa Brot, Joghurt oder Eingelegtes?",
+"es": "¿Qué proyecto casero te encantaría probar, como pan, yogur o encurtidos?",
+"fr": "Quel projet maison aimerais-tu tenter : pain, yaourt ou légumes marinés ?",
+"it": "Quale progetto culinario fatto in casa ti piacerebbe provare, come pane, yogurt o sottaceti?",
+"pt": "Que projeto caseiro gostavas de experimentar, como pão, iogurte ou pickles?",
+"pt_BR": "Qual projeto caseiro você adoraria tentar, como pão, iogurte ou conservas?"
+}
+},
+{
+"id": "healthy_eating-094",
+"lv": "advanced",
+"i18n": {
+"en": "How do you talk about food with others without judging their choices?",
+"de": "Wie sprichst du mit anderen über Essen, ohne ihre Entscheidungen zu bewerten?",
+"es": "¿Cómo hablas de comida con otros sin juzgar sus elecciones?",
+"fr": "Comment parles-tu de nourriture avec les autres sans juger leurs choix ?",
+"it": "Come parli di cibo con gli altri senza giudicare le loro scelte?",
+"pt": "Como falas de comida com os outros sem julgar as escolhas deles?",
+"pt_BR": "Como você fala de comida com outras pessoas sem julgar as escolhas delas?"
+}
+},
+{
+"id": "healthy_eating-095",
+"lv": "advanced",
+"i18n": {
+"en": "What would you serve at a dinner party to delight guests from many cultures?",
+"de": "Was würdest du bei einem Abendessen servieren, um Gäste aus vielen Kulturen zu begeistern?",
+"es": "¿Qué servirías en una cena para encantar a invitados de muchas culturas?",
+"fr": "Que servirais-tu lors d'un dîner pour ravir des invités de cultures différentes ?",
+"it": "Che cosa serviresti a una cena per conquistare ospiti di tante culture?",
+"pt": "O que servirias num jantar para encantar convidados de várias culturas?",
+"pt_BR": "O que você serviria num jantar para encantar convidados de várias culturas?"
+}
+},
+{
+"id": "healthy_eating-096",
+"lv": "advanced",
+"i18n": {
+"en": "How do you get back to habits you like after a very busy or tough week?",
+"de": "Wie findest du nach einer vollen oder schwierigen Woche zu deinen guten Gewohnheiten zurück?",
+"es": "¿Cómo retomas los hábitos que te gustan tras una semana muy intensa o difícil?",
+"fr": "Comment retrouves-tu tes bonnes habitudes après une semaine chargée ou difficile ?",
+"it": "Come ritrovi le abitudini che ami dopo una settimana pienissima o difficile?",
+"pt": "Como voltas aos hábitos de que gostas depois de uma semana muito cheia ou difícil?",
+"pt_BR": "Como você retoma os hábitos que curte depois de uma semana muito corrida ou difícil?"
+}
+},
+{
+"id": "healthy_eating-097",
+"lv": "advanced",
+"i18n": {
+"en": "Which food waste habits would you like to change in your kitchen?",
+"de": "Welche Gewohnheiten rund um Lebensmittelverschwendung würdest du in deiner Küche gern ändern?",
+"es": "¿Qué hábitos de desperdicio de comida te gustaría cambiar en tu cocina?",
+"fr": "Quelles habitudes de gaspillage alimentaire aimerais-tu changer dans ta cuisine ?",
+"it": "Quali abitudini legate allo spreco alimentare vorresti cambiare in cucina?",
+"pt": "Que hábitos de desperdício alimentar gostavas de mudar na tua cozinha?",
+"pt_BR": "Quais hábitos de desperdício de comida você gostaria de mudar na sua cozinha?"
+}
+},
+{
+"id": "healthy_eating-098",
+"lv": "advanced",
+"i18n": {
+"en": "How do you think social media shapes the way people think about food?",
+"de": "Wie prägen soziale Medien deiner Meinung nach unser Denken über Essen?",
+"es": "¿Cómo crees que las redes sociales influyen en lo que pensamos sobre la comida?",
+"fr": "Comment les réseaux sociaux influencent-ils, selon toi, notre vision de la nourriture ?",
+"it": "Secondo te, in che modo i social influenzano il nostro modo di vedere il cibo?",
+"pt": "Como achas que as redes sociais moldam a forma como pensamos sobre comida?",
+"pt_BR": "Como você acha que as redes sociais influenciam o jeito como pensamos sobre comida?"
+}
+},
+{
+"id": "healthy_eating-099",
+"lv": "advanced",
+"i18n": {
+"en": "Which food tradition from another culture would you like to bring into your life?",
+"de": "Welche Esstradition aus einer anderen Kultur würdest du gern in dein Leben holen?",
+"es": "¿Qué tradición culinaria de otra cultura te gustaría incorporar a tu vida?",
+"fr": "Quelle tradition culinaire d'une autre culture aimerais-tu adopter ?",
+"it": "Quale tradizione alimentare di un'altra cultura vorresti portare nella tua vita?",
+"pt": "Que tradição alimentar de outra cultura gostavas de trazer para a tua vida?",
+"pt_BR": "Qual tradição alimentar de outra cultura você gostaria de trazer para a sua vida?"
+}
+},
+{
+"id": "healthy_eating-100",
+"lv": "advanced",
+"i18n": {
+"en": "Looking back, which new food or skill are you happiest to have discovered?",
+"de": "Welches neue Lebensmittel oder welche Fähigkeit hast du rückblickend am liebsten entdeckt?",
+"es": "Mirando atrás, ¿qué nuevo alimento o habilidad te alegra más haber descubierto?",
+"fr": "Avec le recul, quel nouvel aliment ou savoir-faire es-tu le plus heureux d'avoir découvert ?",
+"it": "Guardando indietro, quale nuovo cibo o abilità sei più felice di aver scoperto?",
+"pt": "Olhando para trás, que novo alimento ou competência estás mais feliz por ter descoberto?",
+"pt_BR": "Olhando para trás, qual novo alimento ou habilidade você está mais feliz por ter descoberto?"
+}
+}
+]
+}

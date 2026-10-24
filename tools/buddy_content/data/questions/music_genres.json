@@ -1,0 +1,1305 @@
+{
+"topic": "music_genres",
+"questions": [
+{
+"id": "music_genres-001",
+"lv": "any",
+"i18n": {
+"en": "Which music genre feels most like home to you, and why?",
+"de": "Welches Musikgenre fühlt sich für dich wie Zuhause an, und warum?",
+"es": "¿Qué género musical sientes como tu hogar y por qué?",
+"fr": "Quel genre musical te donne l'impression d'être chez toi, et pourquoi ?",
+"it": "Quale genere musicale ti fa sentire a casa, e perché?",
+"pt": "Que género musical sentes como a tua casa, e porquê?",
+"pt_BR": "Qual gênero musical faz você se sentir em casa, e por quê?"
+}
+},
+{
+"id": "music_genres-002",
+"lv": "any",
+"i18n": {
+"en": "What was the first album or song you ever bought or saved?",
+"de": "Welches Album oder welchen Song hast du dir als Erstes gekauft oder gespeichert?",
+"es": "¿Cuál fue el primer disco o la primera canción que compraste o guardaste?",
+"fr": "Quel est le premier album ou la première chanson que tu as achetés ou enregistrés ?",
+"it": "Qual è stato il primo album o la prima canzone che hai comprato o salvato?",
+"pt": "Qual foi o primeiro álbum ou a primeira música que compraste ou guardaste?",
+"pt_BR": "Qual foi o primeiro álbum ou a primeira música que você comprou ou salvou?"
+}
+},
+{
+"id": "music_genres-003",
+"lv": "any",
+"i18n": {
+"en": "What music did you grow up hearing at home?",
+"de": "Mit welcher Musik bist du zu Hause aufgewachsen?",
+"es": "¿Qué música se escuchaba en tu casa cuando eras pequeño?",
+"fr": "Quelle musique entendais-tu à la maison quand tu étais petit ?",
+"it": "Che musica si ascoltava a casa tua quando eri piccolo?",
+"pt": "Que música ouvias em casa quando eras pequeno?",
+"pt_BR": "Que música tocava na sua casa quando você era criança?"
+}
+},
+{
+"id": "music_genres-004",
+"lv": "any",
+"i18n": {
+"en": "Is there a genre you used to dislike but now enjoy? What changed?",
+"de": "Gibt es ein Genre, das du früher nicht mochtest, aber jetzt gern hörst? Was hat sich geändert?",
+"es": "¿Hay algún género que antes no te gustaba y ahora disfrutas? ¿Qué cambió?",
+"fr": "Y a-t-il un genre que tu n'aimais pas avant et que tu apprécies maintenant ? Qu'est-ce qui a changé ?",
+"it": "C'è un genere che prima non ti piaceva e ora ti piace? Che cosa è cambiato?",
+"pt": "Há algum género de que não gostavas e agora aprecias? O que mudou?",
+"pt_BR": "Tem algum gênero de que você não gostava e agora curte? O que mudou?"
+}
+},
+{
+"id": "music_genres-005",
+"lv": "any",
+"i18n": {
+"en": "What song always puts you in a good mood?",
+"de": "Welcher Song hebt immer deine Laune?",
+"es": "¿Qué canción siempre te pone de buen humor?",
+"fr": "Quelle chanson te met toujours de bonne humeur ?",
+"it": "Quale canzone ti mette sempre di buon umore?",
+"pt": "Que música te põe sempre bem-disposto?",
+"pt_BR": "Qual música sempre deixa você de bom humor?"
+}
+},
+{
+"id": "music_genres-006",
+"lv": "any",
+"i18n": {
+"en": "Where do you usually listen to music: at home, on the go, at work?",
+"de": "Wo hörst du meistens Musik: zu Hause, unterwegs oder bei der Arbeit?",
+"es": "¿Dónde sueles escuchar música: en casa, en la calle, en el trabajo?",
+"fr": "Où écoutes-tu de la musique le plus souvent : à la maison, en déplacement, au travail ?",
+"it": "Dove ascolti musica di solito: a casa, in giro o al lavoro?",
+"pt": "Onde costumas ouvir música: em casa, em movimento, no trabalho?",
+"pt_BR": "Onde você costuma ouvir música: em casa, na rua, no trabalho?"
+}
+},
+{
+"id": "music_genres-007",
+"lv": "any",
+"i18n": {
+"en": "Which artist would you love to see live one day?",
+"de": "Welche Künstlerin oder welchen Künstler würdest du gern einmal live sehen?",
+"es": "¿Qué artista te encantaría ver en directo algún día?",
+"fr": "Quel artiste aimerais-tu voir en concert un jour ?",
+"it": "Quale artista ti piacerebbe vedere dal vivo un giorno?",
+"pt": "Que artista adorarias ver ao vivo um dia?",
+"pt_BR": "Qual artista você adoraria ver ao vivo um dia?"
+}
+},
+{
+"id": "music_genres-008",
+"lv": "any",
+"i18n": {
+"en": "What is the best concert or live music moment you have experienced?",
+"de": "Was war das beste Konzert oder der schönste Live-Musik-Moment, den du erlebt hast?",
+"es": "¿Cuál es el mejor concierto o momento de música en vivo que has vivido?",
+"fr": "Quel est le meilleur concert ou moment de musique live que tu aies vécu ?",
+"it": "Qual è il concerto o il momento di musica dal vivo più bello che hai vissuto?",
+"pt": "Qual foi o melhor concerto ou momento de música ao vivo que viveste?",
+"pt_BR": "Qual foi o melhor show ou momento de música ao vivo que você já viveu?"
+}
+},
+{
+"id": "music_genres-009",
+"lv": "any",
+"i18n": {
+"en": "Do you prefer songs with lyrics or instrumental music? Why?",
+"de": "Magst du lieber Songs mit Text oder instrumentale Musik? Warum?",
+"es": "¿Prefieres canciones con letra o música instrumental? ¿Por qué?",
+"fr": "Tu préfères les chansons avec paroles ou la musique instrumentale ? Pourquoi ?",
+"it": "Preferisci canzoni con testo o musica strumentale? Perché?",
+"pt": "Preferes canções com letra ou música instrumental? Porquê?",
+"pt_BR": "Você prefere músicas com letra ou instrumentais? Por quê?"
+}
+},
+{
+"id": "music_genres-010",
+"lv": "any",
+"i18n": {
+"en": "What music from your country would you recommend to a visitor?",
+"de": "Welche Musik aus deinem Land würdest du einem Besuch empfehlen?",
+"es": "¿Qué música de tu país le recomendarías a alguien que te visita?",
+"fr": "Quelle musique de ton pays recommanderais-tu à un visiteur ?",
+"it": "Che musica del tuo paese consiglieresti a chi viene a trovarti?",
+"pt": "Que música do teu país recomendarias a quem te visita?",
+"pt_BR": "Que música do seu país você recomendaria para um visitante?"
+}
+},
+{
+"id": "music_genres-011",
+"lv": "any",
+"i18n": {
+"en": "Which song reminds you of a special trip or place?",
+"de": "Welcher Song erinnert dich an eine besondere Reise oder einen besonderen Ort?",
+"es": "¿Qué canción te recuerda un viaje o un lugar especial?",
+"fr": "Quelle chanson te rappelle un voyage ou un lieu spécial ?",
+"it": "Quale canzone ti ricorda un viaggio o un luogo speciale?",
+"pt": "Que música te lembra uma viagem ou um lugar especial?",
+"pt_BR": "Qual música lembra uma viagem ou um lugar especial para você?"
+}
+},
+{
+"id": "music_genres-012",
+"lv": "any",
+"i18n": {
+"en": "What kind of music do you put on when you need to focus?",
+"de": "Welche Musik hörst du, wenn du dich konzentrieren musst?",
+"es": "¿Qué música pones cuando necesitas concentrarte?",
+"fr": "Quelle musique mets-tu quand tu as besoin de te concentrer ?",
+"it": "Che musica metti quando hai bisogno di concentrarti?",
+"pt": "Que música pões quando precisas de te concentrar?",
+"pt_BR": "Que música você coloca quando precisa se concentrar?"
+}
+},
+{
+"id": "music_genres-013",
+"lv": "any",
+"i18n": {
+"en": "What music gets you moving or dancing straight away?",
+"de": "Bei welcher Musik fängst du sofort an, dich zu bewegen oder zu tanzen?",
+"es": "¿Qué música te hace moverte o bailar al instante?",
+"fr": "Quelle musique te donne immédiatement envie de bouger ou de danser ?",
+"it": "Quale musica ti fa subito muovere o ballare?",
+"pt": "Que música te põe logo a mexer ou a dançar?",
+"pt_BR": "Que música faz você se mexer ou dançar na hora?"
+}
+},
+{
+"id": "music_genres-014",
+"lv": "any",
+"i18n": {
+"en": "Is there a song in another language that you love? Do you know what it means?",
+"de": "Gibt es einen Song in einer anderen Sprache, den du liebst? Weißt du, was er bedeutet?",
+"es": "¿Hay alguna canción en otro idioma que te encante? ¿Sabes lo que significa?",
+"fr": "Y a-t-il une chanson dans une autre langue que tu adores ? Sais-tu ce qu'elle veut dire ?",
+"it": "C'è una canzone in un'altra lingua che ami? Sai che cosa significa?",
+"pt": "Há alguma canção noutra língua que adores? Sabes o que significa?",
+"pt_BR": "Tem alguma música em outro idioma que você ama? Você sabe o que ela significa?"
+}
+},
+{
+"id": "music_genres-015",
+"lv": "any",
+"i18n": {
+"en": "How do you usually discover new music?",
+"de": "Wie entdeckst du normalerweise neue Musik?",
+"es": "¿Cómo sueles descubrir música nueva?",
+"fr": "Comment découvres-tu de nouvelles musiques en général ?",
+"it": "Come scopri di solito nuova musica?",
+"pt": "Como costumas descobrir música nova?",
+"pt_BR": "Como você costuma descobrir música nova?"
+}
+},
+{
+"id": "music_genres-016",
+"lv": "any",
+"i18n": {
+"en": "Do you play an instrument or sing, or would you like to?",
+"de": "Spielst du ein Instrument oder singst du, oder würdest du es gern tun?",
+"es": "¿Tocas algún instrumento o cantas, o te gustaría hacerlo?",
+"fr": "Joues-tu d'un instrument ou chantes-tu, ou aimerais-tu le faire ?",
+"it": "Suoni uno strumento o canti, o ti piacerebbe farlo?",
+"pt": "Tocas algum instrumento ou cantas, ou gostavas de o fazer?",
+"pt_BR": "Você toca algum instrumento ou canta, ou gostaria de fazer isso?"
+}
+},
+{
+"id": "music_genres-017",
+"lv": "any",
+"i18n": {
+"en": "What was the soundtrack of your teenage years?",
+"de": "Was war der Soundtrack deiner Jugend?",
+"es": "¿Cuál fue la banda sonora de tu adolescencia?",
+"fr": "Quelle a été la bande-son de ton adolescence ?",
+"it": "Qual è stata la colonna sonora della tua adolescenza?",
+"pt": "Qual foi a banda sonora da tua adolescência?",
+"pt_BR": "Qual foi a trilha sonora da sua adolescência?"
+}
+},
+{
+"id": "music_genres-018",
+"lv": "any",
+"i18n": {
+"en": "If you could only listen to one genre for a month, which would you pick?",
+"de": "Wenn du einen Monat lang nur ein Genre hören dürftest, welches wäre es?",
+"es": "Si solo pudieras escuchar un género durante un mes, ¿cuál elegirías?",
+"fr": "Si tu ne pouvais écouter qu'un seul genre pendant un mois, lequel choisirais-tu ?",
+"it": "Se potessi ascoltare un solo genere per un mese, quale sceglieresti?",
+"pt": "Se só pudesses ouvir um género durante um mês, qual escolherias?",
+"pt_BR": "Se você só pudesse ouvir um gênero por um mês, qual escolheria?"
+}
+},
+{
+"id": "music_genres-019",
+"lv": "any",
+"i18n": {
+"en": "Which song would you play to introduce yourself to someone new?",
+"de": "Mit welchem Song würdest du dich jemandem Neuen vorstellen?",
+"es": "¿Qué canción pondrías para presentarte a alguien nuevo?",
+"fr": "Quelle chanson passerais-tu pour te présenter à quelqu'un de nouveau ?",
+"it": "Quale canzone faresti ascoltare per presentarti a una persona nuova?",
+"pt": "Que música porias para te apresentares a alguém novo?",
+"pt_BR": "Qual música você tocaria para se apresentar a alguém novo?"
+}
+},
+{
+"id": "music_genres-020",
+"lv": "any",
+"i18n": {
+"en": "Do you have a favourite voice in music? What do you love about it?",
+"de": "Hast du eine Lieblingsstimme in der Musik? Was gefällt dir daran?",
+"es": "¿Tienes una voz favorita en la música? ¿Qué te gusta de ella?",
+"fr": "As-tu une voix préférée dans la musique ? Qu'est-ce qui te plaît chez elle ?",
+"it": "Hai una voce preferita nella musica? Che cosa ti piace di lei?",
+"pt": "Tens uma voz preferida na música? O que adoras nela?",
+"pt_BR": "Você tem uma voz favorita na música? O que você ama nela?"
+}
+},
+{
+"id": "music_genres-021",
+"lv": "any",
+"i18n": {
+"en": "What music do you associate with celebrations in your family?",
+"de": "Welche Musik verbindest du mit Feiern in deiner Familie?",
+"es": "¿Qué música asocias con las celebraciones de tu familia?",
+"fr": "Quelle musique associes-tu aux fêtes de ta famille ?",
+"it": "Che musica associ alle feste della tua famiglia?",
+"pt": "Que música associas às festas da tua família?",
+"pt_BR": "Que música você associa às festas da sua família?"
+}
+},
+{
+"id": "music_genres-022",
+"lv": "any",
+"i18n": {
+"en": "Do you like listening to music alone or sharing it with others more?",
+"de": "Hörst du Musik lieber allein oder teilst du sie lieber mit anderen?",
+"es": "¿Te gusta más escuchar música solo o compartirla con otras personas?",
+"fr": "Tu préfères écouter de la musique seul ou la partager avec d'autres ?",
+"it": "Ti piace di più ascoltare musica da solo o condividerla con altri?",
+"pt": "Gostas mais de ouvir música sozinho ou de a partilhar com outros?",
+"pt_BR": "Você prefere ouvir música sozinho ou compartilhar com outras pessoas?"
+}
+},
+{
+"id": "music_genres-023",
+"lv": "any",
+"i18n": {
+"en": "Which instrument sound do you love the most?",
+"de": "Welchen Instrumentenklang liebst du am meisten?",
+"es": "¿Qué sonido de instrumento te gusta más?",
+"fr": "Quel son d'instrument aimes-tu le plus ?",
+"it": "Quale suono di strumento ami di più?",
+"pt": "Que som de instrumento adoras mais?",
+"pt_BR": "Qual som de instrumento você mais ama?"
+}
+},
+{
+"id": "music_genres-024",
+"lv": "any",
+"i18n": {
+"en": "What is a song you think everyone should hear at least once?",
+"de": "Welchen Song sollte deiner Meinung nach jeder mindestens einmal hören?",
+"es": "¿Qué canción crees que todo el mundo debería escuchar al menos una vez?",
+"fr": "Quelle chanson tout le monde devrait-il écouter au moins une fois, selon toi ?",
+"it": "Quale canzone pensi che tutti dovrebbero ascoltare almeno una volta?",
+"pt": "Que música achas que toda a gente devia ouvir pelo menos uma vez?",
+"pt_BR": "Qual música você acha que todo mundo deveria ouvir pelo menos uma vez?"
+}
+},
+{
+"id": "music_genres-025",
+"lv": "any",
+"i18n": {
+"en": "Do you listen to whole albums or mostly single songs and playlists?",
+"de": "Hörst du ganze Alben oder eher einzelne Songs und Playlists?",
+"es": "¿Escuchas discos enteros o sobre todo canciones sueltas y listas?",
+"fr": "Écoutes-tu des albums entiers ou plutôt des titres isolés et des playlists ?",
+"it": "Ascolti album interi o soprattutto singole canzoni e playlist?",
+"pt": "Ouves álbuns inteiros ou sobretudo músicas soltas e playlists?",
+"pt_BR": "Você ouve álbuns inteiros ou mais músicas soltas e playlists?"
+}
+},
+{
+"id": "music_genres-026",
+"lv": "any",
+"i18n": {
+"en": "What music do you like on a long road trip?",
+"de": "Welche Musik hörst du gern auf einer langen Autofahrt?",
+"es": "¿Qué música te gusta en un viaje largo por carretera?",
+"fr": "Quelle musique aimes-tu écouter pendant un long trajet en voiture ?",
+"it": "Che musica ti piace durante un lungo viaggio in macchina?",
+"pt": "Que música gostas de ouvir numa longa viagem de carro?",
+"pt_BR": "Que música você curte numa viagem longa de carro?"
+}
+},
+{
+"id": "music_genres-027",
+"lv": "any",
+"i18n": {
+"en": "Which decade of music do you find the most exciting?",
+"de": "Welches Musikjahrzehnt findest du am spannendsten?",
+"es": "¿Qué década musical te parece más emocionante?",
+"fr": "Quelle décennie musicale trouves-tu la plus passionnante ?",
+"it": "Quale decennio musicale trovi più entusiasmante?",
+"pt": "Que década da música achas mais entusiasmante?",
+"pt_BR": "Qual década da música você acha mais empolgante?"
+}
+},
+{
+"id": "music_genres-028",
+"lv": "any",
+"i18n": {
+"en": "Is there a song that makes you feel calm instantly?",
+"de": "Gibt es einen Song, der dich sofort beruhigt?",
+"es": "¿Hay alguna canción que te tranquilice al instante?",
+"fr": "Y a-t-il une chanson qui t'apaise instantanément ?",
+"it": "C'è una canzone che ti calma all'istante?",
+"pt": "Há alguma música que te acalme logo?",
+"pt_BR": "Tem alguma música que deixa você calmo na hora?"
+}
+},
+{
+"id": "music_genres-029",
+"lv": "any",
+"i18n": {
+"en": "What is your favourite song to sing along to?",
+"de": "Bei welchem Song singst du am liebsten mit?",
+"es": "¿Cuál es tu canción favorita para cantar a todo pulmón?",
+"fr": "Quelle est ta chanson préférée pour chanter à tue-tête ?",
+"it": "Qual è la tua canzone preferita da cantare a squarciagola?",
+"pt": "Qual é a tua música preferida para cantar em voz alta?",
+"pt_BR": "Qual é a sua música favorita para cantar junto?"
+}
+},
+{
+"id": "music_genres-030",
+"lv": "any",
+"i18n": {
+"en": "Which music video or performance has stayed in your memory?",
+"de": "Welches Musikvideo oder welcher Auftritt ist dir im Gedächtnis geblieben?",
+"es": "¿Qué videoclip o actuación se te ha quedado grabado?",
+"fr": "Quel clip ou quelle performance t'est resté en mémoire ?",
+"it": "Quale videoclip o esibizione ti è rimasto impresso?",
+"pt": "Que videoclipe ou atuação te ficou na memória?",
+"pt_BR": "Qual clipe ou apresentação ficou na sua memória?"
+}
+},
+{
+"id": "music_genres-031",
+"lv": "any",
+"i18n": {
+"en": "Do you have a favourite film soundtrack?",
+"de": "Hast du einen Lieblingsfilmsoundtrack?",
+"es": "¿Tienes una banda sonora de película favorita?",
+"fr": "As-tu une bande originale de film préférée ?",
+"it": "Hai una colonna sonora di film preferita?",
+"pt": "Tens uma banda sonora de filme preferida?",
+"pt_BR": "Você tem uma trilha sonora de filme favorita?"
+}
+},
+{
+"id": "music_genres-032",
+"lv": "any",
+"i18n": {
+"en": "Which genre would you like to understand better?",
+"de": "Welches Genre würdest du gern besser verstehen?",
+"es": "¿Qué género te gustaría entender mejor?",
+"fr": "Quel genre aimerais-tu mieux comprendre ?",
+"it": "Quale genere ti piacerebbe capire meglio?",
+"pt": "Que género gostavas de compreender melhor?",
+"pt_BR": "Qual gênero você gostaria de entender melhor?"
+}
+},
+{
+"id": "music_genres-033",
+"lv": "any",
+"i18n": {
+"en": "What do you notice first in a song: the beat, the melody or the words?",
+"de": "Was fällt dir an einem Song zuerst auf: der Beat, die Melodie oder der Text?",
+"es": "¿Qué notas primero en una canción: el ritmo, la melodía o la letra?",
+"fr": "Qu'est-ce que tu remarques en premier dans une chanson : le rythme, la mélodie ou les paroles ?",
+"it": "Che cosa noti per primo in una canzone: il ritmo, la melodia o il testo?",
+"pt": "O que notas primeiro numa música: o ritmo, a melodia ou a letra?",
+"pt_BR": "O que você nota primeiro numa música: a batida, a melodia ou a letra?"
+}
+},
+{
+"id": "music_genres-034",
+"lv": "any",
+"i18n": {
+"en": "Has a friend ever introduced you to a genre you now love?",
+"de": "Hat dir schon einmal jemand ein Genre gezeigt, das du jetzt liebst?",
+"es": "¿Algún amigo te ha descubierto un género que ahora te encanta?",
+"fr": "Un ami t'a-t-il déjà fait découvrir un genre que tu adores maintenant ?",
+"it": "Un amico ti ha mai fatto scoprire un genere che ora ami?",
+"pt": "Algum amigo já te apresentou um género que agora adoras?",
+"pt_BR": "Algum amigo já te apresentou um gênero que você agora ama?"
+}
+},
+{
+"id": "music_genres-035",
+"lv": "any",
+"i18n": {
+"en": "What music would you choose for a perfect Sunday morning?",
+"de": "Welche Musik würdest du für einen perfekten Sonntagmorgen wählen?",
+"es": "¿Qué música elegirías para un domingo por la mañana perfecto?",
+"fr": "Quelle musique choisirais-tu pour un dimanche matin parfait ?",
+"it": "Che musica sceglieresti per una domenica mattina perfetta?",
+"pt": "Que música escolherias para uma manhã de domingo perfeita?",
+"pt_BR": "Que música você escolheria para uma manhã de domingo perfeita?"
+}
+},
+{
+"id": "music_genres-036",
+"lv": "any",
+"i18n": {
+"en": "Which country's music scene would you love to explore in person?",
+"de": "Die Musikszene welches Landes würdest du gern vor Ort erkunden?",
+"es": "¿La escena musical de qué país te encantaría explorar en persona?",
+"fr": "La scène musicale de quel pays aimerais-tu explorer sur place ?",
+"it": "La scena musicale di quale paese ti piacerebbe esplorare di persona?",
+"pt": "A cena musical de que país adorarias explorar ao vivo?",
+"pt_BR": "A cena musical de qual país você adoraria explorar pessoalmente?"
+}
+},
+{
+"id": "music_genres-037",
+"lv": "any",
+"i18n": {
+"en": "Do you have a song that you connect with a good friend?",
+"de": "Gibt es einen Song, den du mit einer guten Freundschaft verbindest?",
+"es": "¿Tienes alguna canción que asocies con un buen amigo?",
+"fr": "As-tu une chanson que tu associes à un bon ami ?",
+"it": "C'è una canzone che colleghi a un buon amico?",
+"pt": "Tens alguma música que associes a um bom amigo?",
+"pt_BR": "Você tem alguma música que associa a um bom amigo?"
+}
+},
+{
+"id": "music_genres-038",
+"lv": "any",
+"i18n": {
+"en": "What would be on your playlist for a sunny afternoon?",
+"de": "Was wäre auf deiner Playlist für einen sonnigen Nachmittag?",
+"es": "¿Qué pondrías en tu lista para una tarde soleada?",
+"fr": "Qu'y aurait-il dans ta playlist pour un après-midi ensoleillé ?",
+"it": "Che cosa metteresti nella tua playlist per un pomeriggio di sole?",
+"pt": "O que estaria na tua playlist para uma tarde de sol?",
+"pt_BR": "O que estaria na sua playlist para uma tarde de sol?"
+}
+},
+{
+"id": "music_genres-039",
+"lv": "any",
+"i18n": {
+"en": "Is there an artist whose whole career you have followed?",
+"de": "Gibt es eine Künstlerin oder einen Künstler, deren Karriere du ganz verfolgt hast?",
+"es": "¿Hay algún artista cuya carrera hayas seguido de principio a fin?",
+"fr": "Y a-t-il un artiste dont tu as suivi toute la carrière ?",
+"it": "C'è un artista di cui hai seguito tutta la carriera?",
+"pt": "Há algum artista cuja carreira tenhas acompanhado toda?",
+"pt_BR": "Tem algum artista cuja carreira você acompanhou do começo ao fim?"
+}
+},
+{
+"id": "music_genres-040",
+"lv": "any",
+"i18n": {
+"en": "What music makes you feel nostalgic in a happy way?",
+"de": "Welche Musik macht dich auf schöne Weise nostalgisch?",
+"es": "¿Qué música te provoca una nostalgia bonita?",
+"fr": "Quelle musique te rend nostalgique de façon joyeuse ?",
+"it": "Che musica ti rende nostalgico in modo felice?",
+"pt": "Que música te deixa nostálgico de uma forma feliz?",
+"pt_BR": "Que música deixa você nostálgico de um jeito bom?"
+}
+},
+{
+"id": "music_genres-041",
+"lv": "beginner",
+"i18n": {
+"en": "Which genres from today's lesson did you already know before?",
+"de": "Welche Genres aus der heutigen Lektion kanntest du schon?",
+"es": "¿Qué géneros de la lección de hoy ya conocías?",
+"fr": "Quels genres de la leçon d'aujourd'hui connaissais-tu déjà ?",
+"it": "Quali generi della lezione di oggi conoscevi già?",
+"pt": "Que géneros da lição de hoje já conhecias?",
+"pt_BR": "Quais gêneros da lição de hoje você já conhecia?"
+}
+},
+{
+"id": "music_genres-042",
+"lv": "beginner",
+"i18n": {
+"en": "How would you describe the rhythm of your favourite song in simple words?",
+"de": "Wie würdest du den Rhythmus deines Lieblingssongs mit einfachen Worten beschreiben?",
+"es": "¿Cómo describirías el ritmo de tu canción favorita con palabras sencillas?",
+"fr": "Comment décrirais-tu le rythme de ta chanson préférée avec des mots simples ?",
+"it": "Come descriveresti il ritmo della tua canzone preferita con parole semplici?",
+"pt": "Como descreverias o ritmo da tua música preferida em palavras simples?",
+"pt_BR": "Como você descreveria o ritmo da sua música favorita em palavras simples?"
+}
+},
+{
+"id": "music_genres-043",
+"lv": "beginner",
+"i18n": {
+"en": "Have you ever listened to blues? What did it make you feel?",
+"de": "Hast du schon einmal Blues gehört? Was hat er in dir ausgelöst?",
+"es": "¿Has escuchado blues alguna vez? ¿Qué te hizo sentir?",
+"fr": "As-tu déjà écouté du blues ? Qu'est-ce que ça t'a fait ressentir ?",
+"it": "Hai mai ascoltato il blues? Che cosa ti ha fatto provare?",
+"pt": "Já ouviste blues? O que te fez sentir?",
+"pt_BR": "Você já ouviu blues? O que sentiu?"
+}
+},
+{
+"id": "music_genres-044",
+"lv": "beginner",
+"i18n": {
+"en": "Do you enjoy jazz, or does it still feel like a mystery to you?",
+"de": "Magst du Jazz, oder ist er für dich noch ein kleines Rätsel?",
+"es": "¿Disfrutas del jazz o todavía te parece un misterio?",
+"fr": "Aimes-tu le jazz, ou est-ce encore un mystère pour toi ?",
+"it": "Ti piace il jazz, o è ancora un mistero per te?",
+"pt": "Gostas de jazz, ou ainda é um mistério para ti?",
+"pt_BR": "Você curte jazz, ou ainda é um mistério para você?"
+}
+},
+{
+"id": "music_genres-045",
+"lv": "beginner",
+"i18n": {
+"en": "Which rock band or artist did you hear first?",
+"de": "Welche Rockband oder welchen Rockmusiker hast du als Erstes gehört?",
+"es": "¿Cuál fue el primer grupo o artista de rock que escuchaste?",
+"fr": "Quel groupe ou artiste rock as-tu entendu en premier ?",
+"it": "Qual è stata la prima band o il primo artista rock che hai ascoltato?",
+"pt": "Qual foi a primeira banda ou artista de rock que ouviste?",
+"pt_BR": "Qual foi a primeira banda ou artista de rock que você ouviu?"
+}
+},
+{
+"id": "music_genres-046",
+"lv": "beginner",
+"i18n": {
+"en": "What do you think makes a pop song so catchy?",
+"de": "Was macht einen Popsong deiner Meinung nach so eingängig?",
+"es": "¿Qué crees que hace que una canción pop sea tan pegadiza?",
+"fr": "Selon toi, qu'est-ce qui rend une chanson pop si accrocheuse ?",
+"it": "Secondo te, che cosa rende una canzone pop così orecchiabile?",
+"pt": "O que achas que torna uma música pop tão viciante?",
+"pt_BR": "O que você acha que deixa uma música pop tão chiclete?"
+}
+},
+{
+"id": "music_genres-047",
+"lv": "beginner",
+"i18n": {
+"en": "Have you ever tried dancing to salsa, samba or another Latin rhythm?",
+"de": "Hast du schon einmal zu Salsa, Samba oder einem anderen lateinamerikanischen Rhythmus getanzt?",
+"es": "¿Has probado alguna vez a bailar salsa, samba u otro ritmo latino?",
+"fr": "As-tu déjà essayé de danser sur de la salsa, de la samba ou un autre rythme latin ?",
+"it": "Hai mai provato a ballare salsa, samba o un altro ritmo latino?",
+"pt": "Já experimentaste dançar salsa, samba ou outro ritmo latino?",
+"pt_BR": "Você já tentou dançar salsa, samba ou outro ritmo latino?"
+}
+},
+{
+"id": "music_genres-048",
+"lv": "beginner",
+"i18n": {
+"en": "What is the first hip hop song you remember hearing?",
+"de": "Welchen Hip-Hop-Song hast du als Ersten bewusst gehört?",
+"es": "¿Cuál es la primera canción de hip hop que recuerdas haber escuchado?",
+"fr": "Quelle est la première chanson hip-hop dont tu te souviens ?",
+"it": "Qual è la prima canzone hip hop che ricordi di aver ascoltato?",
+"pt": "Qual é a primeira música de hip hop de que te lembras?",
+"pt_BR": "Qual é a primeira música de hip hop de que você se lembra?"
+}
+},
+{
+"id": "music_genres-049",
+"lv": "beginner",
+"i18n": {
+"en": "Which instrument would you most like to hear more of in your playlists?",
+"de": "Welches Instrument würdest du gern öfter in deinen Playlists hören?",
+"es": "¿Qué instrumento te gustaría escuchar más en tus listas?",
+"fr": "Quel instrument aimerais-tu entendre davantage dans tes playlists ?",
+"it": "Quale strumento ti piacerebbe sentire di più nelle tue playlist?",
+"pt": "Que instrumento gostavas de ouvir mais nas tuas playlists?",
+"pt_BR": "Qual instrumento você gostaria de ouvir mais nas suas playlists?"
+}
+},
+{
+"id": "music_genres-050",
+"lv": "beginner",
+"i18n": {
+"en": "Can you spot the chorus in a song you love? How does it feel when it arrives?",
+"de": "Erkennst du den Refrain in einem Song, den du liebst? Wie fühlt es sich an, wenn er kommt?",
+"es": "¿Sabes reconocer el estribillo de una canción que te encanta? ¿Qué sientes cuando llega?",
+"fr": "Arrives-tu à repérer le refrain d'une chanson que tu aimes ? Que ressens-tu quand il arrive ?",
+"it": "Riesci a riconoscere il ritornello in una canzone che ami? Che cosa provi quando arriva?",
+"pt": "Consegues identificar o refrão numa música de que gostas? O que sentes quando chega?",
+"pt_BR": "Você consegue reconhecer o refrão de uma música que ama? O que sente quando ele chega?"
+}
+},
+{
+"id": "music_genres-051",
+"lv": "beginner",
+"i18n": {
+"en": "Have you ever heard reggae? What do you notice about its rhythm?",
+"de": "Hast du schon einmal Reggae gehört? Was fällt dir an seinem Rhythmus auf?",
+"es": "¿Has escuchado reggae alguna vez? ¿Qué notas en su ritmo?",
+"fr": "As-tu déjà écouté du reggae ? Que remarques-tu dans son rythme ?",
+"it": "Hai mai ascoltato il reggae? Che cosa noti nel suo ritmo?",
+"pt": "Já ouviste reggae? O que notas no seu ritmo?",
+"pt_BR": "Você já ouviu reggae? O que você percebe no ritmo dele?"
+}
+},
+{
+"id": "music_genres-052",
+"lv": "beginner",
+"i18n": {
+"en": "Which electronic music do you enjoy: chill beats, house or something else?",
+"de": "Welche elektronische Musik magst du: entspannte Beats, House oder etwas anderes?",
+"es": "¿Qué música electrónica te gusta: beats tranquilos, house u otra cosa?",
+"fr": "Quelle musique électronique aimes-tu : des beats chill, de la house ou autre chose ?",
+"it": "Che musica elettronica ti piace: beat rilassati, house o altro?",
+"pt": "Que música eletrónica te agrada: batidas calmas, house ou outra coisa?",
+"pt_BR": "Que música eletrônica você curte: batidas tranquilas, house ou outra coisa?"
+}
+},
+{
+"id": "music_genres-053",
+"lv": "beginner",
+"i18n": {
+"en": "Do you know any music from Africa? What would you like to discover?",
+"de": "Kennst du Musik aus Afrika? Was würdest du gern entdecken?",
+"es": "¿Conoces música de África? ¿Qué te gustaría descubrir?",
+"fr": "Connais-tu de la musique d'Afrique ? Qu'aimerais-tu découvrir ?",
+"it": "Conosci musica dall'Africa? Che cosa ti piacerebbe scoprire?",
+"pt": "Conheces música de África? O que gostavas de descobrir?",
+"pt_BR": "Você conhece música da África? O que gostaria de descobrir?"
+}
+},
+{
+"id": "music_genres-054",
+"lv": "beginner",
+"i18n": {
+"en": "Have you ever listened to K-pop or J-pop? What did you think?",
+"de": "Hast du schon einmal K-Pop oder J-Pop gehört? Wie fandest du es?",
+"es": "¿Has escuchado K-pop o J-pop alguna vez? ¿Qué te pareció?",
+"fr": "As-tu déjà écouté de la K-pop ou de la J-pop ? Qu'en as-tu pensé ?",
+"it": "Hai mai ascoltato K-pop o J-pop? Che cosa ne pensi?",
+"pt": "Já ouviste K-pop ou J-pop? O que achaste?",
+"pt_BR": "Você já ouviu K-pop ou J-pop? O que achou?"
+}
+},
+{
+"id": "music_genres-055",
+"lv": "beginner",
+"i18n": {
+"en": "Is there a classical piece you recognise, even if you do not know its name?",
+"de": "Gibt es ein klassisches Stück, das du erkennst, auch wenn du den Namen nicht kennst?",
+"es": "¿Hay alguna pieza clásica que reconozcas aunque no sepas cómo se llama?",
+"fr": "Y a-t-il un morceau classique que tu reconnais, même sans connaître son nom ?",
+"it": "C'è un brano classico che riconosci anche se non ne conosci il nome?",
+"pt": "Há alguma peça clássica que reconheças, mesmo sem saberes o nome?",
+"pt_BR": "Tem alguma música clássica que você reconhece, mesmo sem saber o nome?"
+}
+},
+{
+"id": "music_genres-056",
+"lv": "beginner",
+"i18n": {
+"en": "What traditional music from your region do you know?",
+"de": "Welche traditionelle Musik aus deiner Region kennst du?",
+"es": "¿Qué música tradicional de tu región conoces?",
+"fr": "Quelle musique traditionnelle de ta région connais-tu ?",
+"it": "Quale musica tradizionale della tua regione conosci?",
+"pt": "Que música tradicional da tua região conheces?",
+"pt_BR": "Que música tradicional da sua região você conhece?"
+}
+},
+{
+"id": "music_genres-057",
+"lv": "beginner",
+"i18n": {
+"en": "Which song makes you want to learn more about where it comes from?",
+"de": "Bei welchem Song möchtest du mehr darüber erfahren, woher er stammt?",
+"es": "¿Qué canción te da ganas de saber más sobre su origen?",
+"fr": "Quelle chanson te donne envie d'en savoir plus sur ses origines ?",
+"it": "Quale canzone ti fa venire voglia di sapere di più sulle sue origini?",
+"pt": "Que música te dá vontade de saber mais sobre a sua origem?",
+"pt_BR": "Qual música dá vontade de saber mais sobre a origem dela?"
+}
+},
+{
+"id": "music_genres-058",
+"lv": "beginner",
+"i18n": {
+"en": "Would you rather explore old classics or brand-new releases first?",
+"de": "Würdest du lieber zuerst alte Klassiker oder ganz neue Songs erkunden?",
+"es": "¿Prefieres explorar primero clásicos antiguos o novedades recientes?",
+"fr": "Tu préfères explorer d'abord les vieux classiques ou les toutes nouvelles sorties ?",
+"it": "Preferiresti esplorare prima i grandi classici o le uscite più recenti?",
+"pt": "Preferias explorar primeiro os clássicos antigos ou os lançamentos novos?",
+"pt_BR": "Você prefere explorar primeiro os clássicos antigos ou os lançamentos novos?"
+}
+},
+{
+"id": "music_genres-059",
+"lv": "beginner",
+"i18n": {
+"en": "Which voice style do you like more: smooth and soft or powerful and loud?",
+"de": "Welcher Gesangsstil gefällt dir mehr: sanft und weich oder kraftvoll und laut?",
+"es": "¿Qué estilo de voz te gusta más: suave y dulce o potente y fuerte?",
+"fr": "Quel style de voix préfères-tu : doux et velouté ou puissant et fort ?",
+"it": "Quale stile vocale ti piace di più: morbido e delicato o potente e forte?",
+"pt": "Que estilo de voz preferes: suave e doce ou potente e forte?",
+"pt_BR": "Qual estilo de voz você prefere: suave e doce ou potente e forte?"
+}
+},
+{
+"id": "music_genres-060",
+"lv": "beginner",
+"i18n": {
+"en": "What would the first song on your personal mixtape be?",
+"de": "Was wäre der erste Song auf deinem persönlichen Mixtape?",
+"es": "¿Cuál sería la primera canción de tu recopilatorio personal?",
+"fr": "Quelle serait la première chanson de ta compilation personnelle ?",
+"it": "Quale sarebbe la prima canzone della tua compilation personale?",
+"pt": "Qual seria a primeira música da tua compilação pessoal?",
+"pt_BR": "Qual seria a primeira música da sua mixtape pessoal?"
+}
+},
+{
+"id": "music_genres-061",
+"lv": "beginner",
+"i18n": {
+"en": "Which words would you use to describe the mood of the music you like?",
+"de": "Mit welchen Worten würdest du die Stimmung deiner Lieblingsmusik beschreiben?",
+"es": "¿Con qué palabras describirías el ambiente de la música que te gusta?",
+"fr": "Quels mots utiliserais-tu pour décrire l'ambiance de la musique que tu aimes ?",
+"it": "Con quali parole descriveresti l'atmosfera della musica che ti piace?",
+"pt": "Que palavras usarias para descrever o ambiente da música de que gostas?",
+"pt_BR": "Que palavras você usaria para descrever o clima da música que você curte?"
+}
+},
+{
+"id": "music_genres-062",
+"lv": "beginner",
+"i18n": {
+"en": "Have you tried listening to a song really closely, with headphones and no distractions?",
+"de": "Hast du schon einmal einen Song ganz genau gehört, mit Kopfhörern und ohne Ablenkung?",
+"es": "¿Has probado a escuchar una canción con atención total, con auriculares y sin distracciones?",
+"fr": "As-tu déjà écouté une chanson très attentivement, au casque et sans distraction ?",
+"it": "Hai mai provato ad ascoltare una canzone con grande attenzione, in cuffia e senza distrazioni?",
+"pt": "Já experimentaste ouvir uma música com toda a atenção, com auscultadores e sem distrações?",
+"pt_BR": "Você já tentou ouvir uma música com toda a atenção, de fone e sem distrações?"
+}
+},
+{
+"id": "music_genres-063",
+"lv": "beginner",
+"i18n": {
+"en": "Which genre would you like your next week of listening to be about?",
+"de": "Welchem Genre möchtest du deine nächste Hörwoche widmen?",
+"es": "¿A qué género te gustaría dedicar tu próxima semana de escucha?",
+"fr": "À quel genre aimerais-tu consacrer ta prochaine semaine d'écoute ?",
+"it": "A quale genere vorresti dedicare la tua prossima settimana di ascolto?",
+"pt": "A que género gostavas de dedicar a tua próxima semana de escuta?",
+"pt_BR": "A qual gênero você gostaria de dedicar sua próxima semana de escuta?"
+}
+},
+{
+"id": "music_genres-064",
+"lv": "beginner",
+"i18n": {
+"en": "Do you prefer music with lots of instruments or something simple and minimal?",
+"de": "Magst du lieber Musik mit vielen Instrumenten oder etwas Schlichtes und Minimales?",
+"es": "¿Prefieres música con muchos instrumentos o algo sencillo y minimalista?",
+"fr": "Préfères-tu une musique avec beaucoup d'instruments ou quelque chose de simple et épuré ?",
+"it": "Preferisci musica con tanti strumenti o qualcosa di semplice ed essenziale?",
+"pt": "Preferes música com muitos instrumentos ou algo simples e minimalista?",
+"pt_BR": "Você prefere música com muitos instrumentos ou algo simples e minimalista?"
+}
+},
+{
+"id": "music_genres-065",
+"lv": "beginner",
+"i18n": {
+"en": "What music would you love to share with someone from another country?",
+"de": "Welche Musik würdest du gern mit jemandem aus einem anderen Land teilen?",
+"es": "¿Qué música te encantaría compartir con alguien de otro país?",
+"fr": "Quelle musique aimerais-tu partager avec quelqu'un d'un autre pays ?",
+"it": "Che musica ti piacerebbe condividere con qualcuno di un altro paese?",
+"pt": "Que música adorarias partilhar com alguém de outro país?",
+"pt_BR": "Que música você adoraria compartilhar com alguém de outro país?"
+}
+},
+{
+"id": "music_genres-066",
+"lv": "intermediate",
+"i18n": {
+"en": "Which genre do you think has influenced the most other styles, and why?",
+"de": "Welches Genre hat deiner Meinung nach die meisten anderen Stile beeinflusst, und warum?",
+"es": "¿Qué género crees que ha influido en más estilos y por qué?",
+"fr": "Selon toi, quel genre a influencé le plus d'autres styles, et pourquoi ?",
+"it": "Secondo te, quale genere ha influenzato più stili, e perché?",
+"pt": "Que género achas que influenciou mais estilos, e porquê?",
+"pt_BR": "Qual gênero você acha que influenciou mais estilos, e por quê?"
+}
+},
+{
+"id": "music_genres-067",
+"lv": "intermediate",
+"i18n": {
+"en": "Can you hear the bassline in your favourite song? What does it add?",
+"de": "Kannst du die Basslinie in deinem Lieblingssong heraushören? Was bringt sie?",
+"es": "¿Puedes oír la línea de bajo en tu canción favorita? ¿Qué aporta?",
+"fr": "Arrives-tu à entendre la ligne de basse dans ta chanson préférée ? Qu'apporte-t-elle ?",
+"it": "Riesci a sentire la linea di basso nella tua canzone preferita? Che cosa aggiunge?",
+"pt": "Consegues ouvir a linha de baixo na tua música preferida? O que acrescenta?",
+"pt_BR": "Você consegue ouvir a linha de baixo da sua música favorita? O que ela acrescenta?"
+}
+},
+{
+"id": "music_genres-068",
+"lv": "intermediate",
+"i18n": {
+"en": "Which cover version do you like better than the original?",
+"de": "Welche Coverversion gefällt dir besser als das Original?",
+"es": "¿Qué versión te gusta más que la original?",
+"fr": "Quelle reprise préfères-tu à l'originale ?",
+"it": "Quale cover ti piace più dell'originale?",
+"pt": "Que versão cover preferes ao original?",
+"pt_BR": "Qual versão cover você prefere ao original?"
+}
+},
+{
+"id": "music_genres-069",
+"lv": "intermediate",
+"i18n": {
+"en": "What sub-genre of your favourite style do you enjoy most?",
+"de": "Welches Subgenre deines Lieblingsstils magst du am meisten?",
+"es": "¿Qué subgénero de tu estilo favorito disfrutas más?",
+"fr": "Quel sous-genre de ton style préféré apprécies-tu le plus ?",
+"it": "Quale sottogenere del tuo stile preferito ti piace di più?",
+"pt": "Que subgénero do teu estilo preferido aprecias mais?",
+"pt_BR": "Qual subgênero do seu estilo favorito você mais curte?"
+}
+},
+{
+"id": "music_genres-070",
+"lv": "intermediate",
+"i18n": {
+"en": "Which album would you recommend to someone who wants to get into jazz?",
+"de": "Welches Album würdest du jemandem empfehlen, der in den Jazz einsteigen möchte?",
+"es": "¿Qué disco recomendarías a alguien que quiere empezar con el jazz?",
+"fr": "Quel album conseillerais-tu à quelqu'un qui veut découvrir le jazz ?",
+"it": "Quale album consiglieresti a chi vuole avvicinarsi al jazz?",
+"pt": "Que álbum recomendarias a quem quer começar a ouvir jazz?",
+"pt_BR": "Qual álbum você recomendaria para quem quer começar a ouvir jazz?"
+}
+},
+{
+"id": "music_genres-071",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you think streaming has changed the way you listen?",
+"de": "Wie hat Streaming deiner Meinung nach deine Art zu hören verändert?",
+"es": "¿Cómo crees que el streaming ha cambiado tu forma de escuchar?",
+"fr": "Comment le streaming a-t-il changé ta façon d'écouter, selon toi ?",
+"it": "Come pensi che lo streaming abbia cambiato il tuo modo di ascoltare?",
+"pt": "Como achas que o streaming mudou a tua forma de ouvir?",
+"pt_BR": "Como você acha que o streaming mudou seu jeito de ouvir música?"
+}
+},
+{
+"id": "music_genres-072",
+"lv": "intermediate",
+"i18n": {
+"en": "Which producer or songwriter behind the scenes do you admire?",
+"de": "Welche Produzentin oder welchen Songwriter hinter den Kulissen bewunderst du?",
+"es": "¿Qué productor o compositor detrás del escenario admiras?",
+"fr": "Quel producteur ou auteur-compositeur de l'ombre admires-tu ?",
+"it": "Quale produttore o autore dietro le quinte ammiri?",
+"pt": "Que produtor ou compositor dos bastidores admiras?",
+"pt_BR": "Qual produtor ou compositor dos bastidores você admira?"
+}
+},
+{
+"id": "music_genres-073",
+"lv": "intermediate",
+"i18n": {
+"en": "Have you noticed a sample from an old song in a new track? How did it feel?",
+"de": "Hast du schon einmal ein Sample aus einem alten Song in einem neuen Track entdeckt? Wie war das?",
+"es": "¿Has descubierto alguna vez un sample de una canción antigua en un tema nuevo? ¿Qué sentiste?",
+"fr": "As-tu déjà repéré un sample d'une vieille chanson dans un nouveau morceau ? Qu'as-tu ressenti ?",
+"it": "Ti è mai capitato di riconoscere un campionamento di una vecchia canzone in un brano nuovo? Com'è stato?",
+"pt": "Já reparaste num sample de uma música antiga numa faixa nova? Como foi?",
+"pt_BR": "Você já percebeu um sample de uma música antiga numa faixa nova? Como foi?"
+}
+},
+{
+"id": "music_genres-074",
+"lv": "intermediate",
+"i18n": {
+"en": "Which dance style would you like to learn to match a genre you love?",
+"de": "Welchen Tanzstil würdest du gern lernen, passend zu einem Genre, das du liebst?",
+"es": "¿Qué baile te gustaría aprender para acompañar un género que te encanta?",
+"fr": "Quelle danse aimerais-tu apprendre pour accompagner un genre que tu adores ?",
+"it": "Quale ballo ti piacerebbe imparare per accompagnare un genere che ami?",
+"pt": "Que dança gostavas de aprender para acompanhar um género que adoras?",
+"pt_BR": "Qual dança você gostaria de aprender para combinar com um gênero que você ama?"
+}
+},
+{
+"id": "music_genres-075",
+"lv": "intermediate",
+"i18n": {
+"en": "What makes a live version of a song better or worse than the studio recording?",
+"de": "Was macht die Live-Version eines Songs besser oder schlechter als die Studioaufnahme?",
+"es": "¿Qué hace que una versión en directo sea mejor o peor que la grabación de estudio?",
+"fr": "Qu'est-ce qui rend une version live meilleure ou moins bonne que l'enregistrement studio ?",
+"it": "Che cosa rende una versione live migliore o peggiore della registrazione in studio?",
+"pt": "O que torna uma versão ao vivo melhor ou pior do que a gravação de estúdio?",
+"pt_BR": "O que faz uma versão ao vivo ser melhor ou pior do que a gravação de estúdio?"
+}
+},
+{
+"id": "music_genres-076",
+"lv": "intermediate",
+"i18n": {
+"en": "Which Latin or Brazilian style would you most like to explore deeper?",
+"de": "Welchen lateinamerikanischen oder brasilianischen Stil würdest du gern genauer erkunden?",
+"es": "¿Qué estilo latino o brasileño te gustaría explorar más a fondo?",
+"fr": "Quel style latino ou brésilien aimerais-tu explorer plus en profondeur ?",
+"it": "Quale stile latino o brasiliano ti piacerebbe approfondire?",
+"pt": "Que estilo latino ou brasileiro gostavas de explorar mais a fundo?",
+"pt_BR": "Qual estilo latino ou brasileiro você gostaria de explorar mais a fundo?"
+}
+},
+{
+"id": "music_genres-077",
+"lv": "intermediate",
+"i18n": {
+"en": "Which record label or music scene do you find most inspiring?",
+"de": "Welches Plattenlabel oder welche Musikszene findest du am inspirierendsten?",
+"es": "¿Qué sello discográfico o escena musical te parece más inspiradora?",
+"fr": "Quel label ou quelle scène musicale trouves-tu le plus inspirant ?",
+"it": "Quale etichetta discografica o scena musicale trovi più stimolante?",
+"pt": "Que editora discográfica ou cena musical achas mais inspiradora?",
+"pt_BR": "Qual gravadora ou cena musical você acha mais inspiradora?"
+}
+},
+{
+"id": "music_genres-078",
+"lv": "intermediate",
+"i18n": {
+"en": "Do you prefer the raw sound of early recordings or polished modern production?",
+"de": "Magst du lieber den rohen Klang früher Aufnahmen oder eine glatte, moderne Produktion?",
+"es": "¿Prefieres el sonido crudo de las grabaciones antiguas o la producción moderna y pulida?",
+"fr": "Préfères-tu le son brut des vieux enregistrements ou une production moderne bien léchée ?",
+"it": "Preferisci il suono grezzo delle vecchie registrazioni o la produzione moderna e curata?",
+"pt": "Preferes o som cru das gravações antigas ou a produção moderna e polida?",
+"pt_BR": "Você prefere o som cru das gravações antigas ou a produção moderna e caprichada?"
+}
+},
+{
+"id": "music_genres-079",
+"lv": "intermediate",
+"i18n": {
+"en": "Which artist do you think mixes genres in the most interesting way?",
+"de": "Welche Künstlerin oder welcher Künstler mischt Genres deiner Meinung nach am spannendsten?",
+"es": "¿Qué artista crees que mezcla géneros de la forma más interesante?",
+"fr": "Selon toi, quel artiste mélange les genres de la façon la plus intéressante ?",
+"it": "Secondo te, quale artista mescola i generi nel modo più interessante?",
+"pt": "Que artista achas que mistura géneros da forma mais interessante?",
+"pt_BR": "Qual artista você acha que mistura gêneros do jeito mais interessante?"
+}
+},
+{
+"id": "music_genres-080",
+"lv": "intermediate",
+"i18n": {
+"en": "How would you explain your favourite genre to someone who has never heard it?",
+"de": "Wie würdest du dein Lieblingsgenre jemandem erklären, der es nie gehört hat?",
+"es": "¿Cómo explicarías tu género favorito a alguien que nunca lo ha escuchado?",
+"fr": "Comment expliquerais-tu ton genre préféré à quelqu'un qui ne l'a jamais entendu ?",
+"it": "Come spiegheresti il tuo genere preferito a qualcuno che non l'ha mai sentito?",
+"pt": "Como explicarias o teu género preferido a alguém que nunca o ouviu?",
+"pt_BR": "Como você explicaria seu gênero favorito para alguém que nunca o ouviu?"
+}
+},
+{
+"id": "music_genres-081",
+"lv": "intermediate",
+"i18n": {
+"en": "Which music documentary or book about music would you recommend?",
+"de": "Welche Musikdoku oder welches Buch über Musik würdest du empfehlen?",
+"es": "¿Qué documental o libro sobre música recomendarías?",
+"fr": "Quel documentaire ou livre sur la musique recommanderais-tu ?",
+"it": "Quale documentario o libro sulla musica consiglieresti?",
+"pt": "Que documentário ou livro sobre música recomendarias?",
+"pt_BR": "Qual documentário ou livro sobre música você recomendaria?"
+}
+},
+{
+"id": "music_genres-082",
+"lv": "intermediate",
+"i18n": {
+"en": "What local music scene in your city or region deserves more attention?",
+"de": "Welche lokale Musikszene in deiner Stadt oder Region verdient mehr Aufmerksamkeit?",
+"es": "¿Qué escena musical de tu ciudad o región merece más atención?",
+"fr": "Quelle scène musicale de ta ville ou de ta région mérite plus d'attention ?",
+"it": "Quale scena musicale della tua città o regione meriterebbe più attenzione?",
+"pt": "Que cena musical da tua cidade ou região merece mais atenção?",
+"pt_BR": "Qual cena musical da sua cidade ou região merece mais atenção?"
+}
+},
+{
+"id": "music_genres-083",
+"lv": "intermediate",
+"i18n": {
+"en": "Which song would you choose to show how a genre has changed over time?",
+"de": "Mit welchem Song würdest du zeigen, wie sich ein Genre im Lauf der Zeit verändert hat?",
+"es": "¿Qué canción elegirías para mostrar cómo ha cambiado un género con el tiempo?",
+"fr": "Quelle chanson choisirais-tu pour montrer comment un genre a évolué ?",
+"it": "Quale canzone sceglieresti per mostrare come un genere è cambiato nel tempo?",
+"pt": "Que música escolherias para mostrar como um género mudou ao longo do tempo?",
+"pt_BR": "Qual música você escolheria para mostrar como um gênero mudou com o tempo?"
+}
+},
+{
+"id": "music_genres-084",
+"lv": "intermediate",
+"i18n": {
+"en": "What do you look for when you build a playlist for friends?",
+"de": "Worauf achtest du, wenn du eine Playlist für Freunde zusammenstellst?",
+"es": "¿Qué buscas cuando haces una lista de canciones para tus amigos?",
+"fr": "Qu'est-ce que tu recherches quand tu crées une playlist pour des amis ?",
+"it": "Che cosa cerchi quando prepari una playlist per gli amici?",
+"pt": "O que procuras quando fazes uma playlist para amigos?",
+"pt_BR": "O que você procura quando monta uma playlist para os amigos?"
+}
+},
+{
+"id": "music_genres-085",
+"lv": "intermediate",
+"i18n": {
+"en": "Have you ever bought vinyl or browsed a record store? What was it like?",
+"de": "Hast du schon einmal Vinyl gekauft oder in einem Plattenladen gestöbert? Wie war das?",
+"es": "¿Has comprado vinilos o curioseado en una tienda de discos? ¿Qué tal fue?",
+"fr": "As-tu déjà acheté des vinyles ou fouillé chez un disquaire ? C'était comment ?",
+"it": "Hai mai comprato vinili o curiosato in un negozio di dischi? Com'è stato?",
+"pt": "Já compraste vinil ou andaste a explorar uma loja de discos? Como foi?",
+"pt_BR": "Você já comprou vinil ou garimpou numa loja de discos? Como foi?"
+}
+},
+{
+"id": "music_genres-086",
+"lv": "advanced",
+"i18n": {
+"en": "Do you think genre labels help listeners or limit artists? Why?",
+"de": "Helfen Genrebezeichnungen deiner Meinung nach dem Publikum, oder schränken sie Künstler ein? Warum?",
+"es": "¿Crees que las etiquetas de género ayudan al público o limitan a los artistas? ¿Por qué?",
+"fr": "Penses-tu que les étiquettes de genre aident le public ou limitent les artistes ? Pourquoi ?",
+"it": "Pensi che le etichette di genere aiutino il pubblico o limitino gli artisti? Perché?",
+"pt": "Achas que os rótulos de género ajudam o público ou limitam os artistas? Porquê?",
+"pt_BR": "Você acha que os rótulos de gênero ajudam o público ou limitam os artistas? Por quê?"
+}
+},
+{
+"id": "music_genres-087",
+"lv": "advanced",
+"i18n": {
+"en": "How do you think technology will shape the next big music genre?",
+"de": "Wie wird Technologie deiner Meinung nach das nächste große Musikgenre prägen?",
+"es": "¿Cómo crees que la tecnología dará forma al próximo gran género musical?",
+"fr": "Comment la technologie façonnera-t-elle le prochain grand genre musical, selon toi ?",
+"it": "Come pensi che la tecnologia darà forma al prossimo grande genere musicale?",
+"pt": "Como achas que a tecnologia vai moldar o próximo grande género musical?",
+"pt_BR": "Como você acha que a tecnologia vai moldar o próximo grande gênero musical?"
+}
+},
+{
+"id": "music_genres-088",
+"lv": "advanced",
+"i18n": {
+"en": "What does respectful borrowing from another culture's music look like to you?",
+"de": "Wie sieht für dich respektvolles Übernehmen aus der Musik einer anderen Kultur aus?",
+"es": "¿Cómo sería para ti tomar prestado con respeto de la música de otra cultura?",
+"fr": "À quoi ressemble, pour toi, un emprunt respectueux à la musique d'une autre culture ?",
+"it": "Che cosa significa per te prendere in prestito con rispetto dalla musica di un'altra cultura?",
+"pt": "Para ti, como é inspirar-se com respeito na música de outra cultura?",
+"pt_BR": "Para você, como é se inspirar com respeito na música de outra cultura?"
+}
+},
+{
+"id": "music_genres-089",
+"lv": "advanced",
+"i18n": {
+"en": "Which artist changed a genre forever, in your opinion, and how?",
+"de": "Welche Künstlerin oder welcher Künstler hat deiner Meinung nach ein Genre für immer verändert, und wie?",
+"es": "En tu opinión, ¿qué artista cambió un género para siempre y cómo?",
+"fr": "À ton avis, quel artiste a changé un genre pour toujours, et comment ?",
+"it": "Secondo te, quale artista ha cambiato un genere per sempre, e come?",
+"pt": "Na tua opinião, que artista mudou um género para sempre, e como?",
+"pt_BR": "Na sua opinião, qual artista mudou um gênero para sempre, e como?"
+}
+},
+{
+"id": "music_genres-090",
+"lv": "advanced",
+"i18n": {
+"en": "How has your own taste in music evolved over the years?",
+"de": "Wie hat sich dein eigener Musikgeschmack im Lauf der Jahre entwickelt?",
+"es": "¿Cómo ha evolucionado tu gusto musical con los años?",
+"fr": "Comment tes goûts musicaux ont-ils évolué au fil des années ?",
+"it": "Come si è evoluto il tuo gusto musicale negli anni?",
+"pt": "Como evoluiu o teu gosto musical ao longo dos anos?",
+"pt_BR": "Como o seu gosto musical evoluiu ao longo dos anos?"
+}
+},
+{
+"id": "music_genres-091",
+"lv": "advanced",
+"i18n": {
+"en": "Which rhythm or groove from another culture fascinates you most?",
+"de": "Welcher Rhythmus oder Groove aus einer anderen Kultur fasziniert dich am meisten?",
+"es": "¿Qué ritmo o groove de otra cultura te fascina más?",
+"fr": "Quel rythme ou groove d'une autre culture te fascine le plus ?",
+"it": "Quale ritmo o groove di un'altra cultura ti affascina di più?",
+"pt": "Que ritmo ou groove de outra cultura te fascina mais?",
+"pt_BR": "Qual ritmo ou groove de outra cultura mais fascina você?"
+}
+},
+{
+"id": "music_genres-092",
+"lv": "advanced",
+"i18n": {
+"en": "Do recommendation algorithms widen your taste or keep you in a bubble?",
+"de": "Erweitern Empfehlungsalgorithmen deinen Geschmack oder halten sie dich in einer Blase?",
+"es": "¿Los algoritmos de recomendación amplían tu gusto o te encierran en una burbuja?",
+"fr": "Les algorithmes de recommandation élargissent-ils tes goûts ou t'enferment-ils dans une bulle ?",
+"it": "Gli algoritmi di raccomandazione ampliano i tuoi gusti o ti chiudono in una bolla?",
+"pt": "Os algoritmos de recomendação alargam o teu gosto ou fecham-te numa bolha?",
+"pt_BR": "Os algoritmos de recomendação ampliam seu gosto ou te prendem numa bolha?"
+}
+},
+{
+"id": "music_genres-093",
+"lv": "advanced",
+"i18n": {
+"en": "Which ten albums would you put in your personal music canon?",
+"de": "Welche zehn Alben würdest du in deinen persönlichen Musikkanon aufnehmen?",
+"es": "¿Qué diez discos incluirías en tu canon musical personal?",
+"fr": "Quels dix albums mettrais-tu dans ton panthéon musical personnel ?",
+"it": "Quali dieci album metteresti nel tuo canone musicale personale?",
+"pt": "Que dez álbuns porias no teu cânone musical pessoal?",
+"pt_BR": "Quais dez álbuns você colocaria no seu cânone musical pessoal?"
+}
+},
+{
+"id": "music_genres-094",
+"lv": "advanced",
+"i18n": {
+"en": "If you wrote a song in a genre that is new to you, which would it be and why?",
+"de": "Wenn du einen Song in einem für dich neuen Genre schreiben würdest, welches wäre es und warum?",
+"es": "Si compusieras una canción en un género nuevo para ti, ¿cuál sería y por qué?",
+"fr": "Si tu écrivais une chanson dans un genre nouveau pour toi, lequel serait-ce et pourquoi ?",
+"it": "Se scrivessi una canzone in un genere nuovo per te, quale sarebbe e perché?",
+"pt": "Se escrevesses uma canção num género novo para ti, qual seria e porquê?",
+"pt_BR": "Se você compusesse uma música num gênero novo para você, qual seria e por quê?"
+}
+},
+{
+"id": "music_genres-095",
+"lv": "advanced",
+"i18n": {
+"en": "Which music city would you choose for a listening trip, and what would you do there?",
+"de": "Welche Musikstadt würdest du für eine Hörreise wählen, und was würdest du dort machen?",
+"es": "¿Qué ciudad musical elegirías para un viaje de escucha y qué harías allí?",
+"fr": "Quelle ville musicale choisirais-tu pour un voyage d'écoute, et qu'y ferais-tu ?",
+"it": "Quale città della musica sceglieresti per un viaggio d'ascolto, e che cosa faresti lì?",
+"pt": "Que cidade da música escolherias para uma viagem de escuta, e o que farias lá?",
+"pt_BR": "Qual cidade da música você escolheria para uma viagem de escuta, e o que faria lá?"
+}
+},
+{
+"id": "music_genres-096",
+"lv": "advanced",
+"i18n": {
+"en": "How can songs in other languages help someone learn about a culture?",
+"de": "Wie können Songs in anderen Sprachen helfen, eine Kultur kennenzulernen?",
+"es": "¿Cómo pueden las canciones en otros idiomas ayudar a conocer una cultura?",
+"fr": "Comment les chansons dans d'autres langues peuvent-elles aider à découvrir une culture ?",
+"it": "In che modo le canzoni in altre lingue possono aiutare a conoscere una cultura?",
+"pt": "Como podem as canções noutras línguas ajudar a conhecer uma cultura?",
+"pt_BR": "Como as músicas em outros idiomas podem ajudar a conhecer uma cultura?"
+}
+},
+{
+"id": "music_genres-097",
+"lv": "advanced",
+"i18n": {
+"en": "Which genre revival would you love to see happen next?",
+"de": "Welches Genre-Revival würdest du dir als Nächstes wünschen?",
+"es": "¿Qué género te encantaría ver resurgir próximamente?",
+"fr": "Quel genre aimerais-tu voir revenir à la mode prochainement ?",
+"it": "Quale genere ti piacerebbe vedere tornare di moda prossimamente?",
+"pt": "Que género adorarias ver regressar em força?",
+"pt_BR": "Qual gênero você adoraria ver voltar com tudo?"
+}
+},
+{
+"id": "music_genres-098",
+"lv": "advanced",
+"i18n": {
+"en": "What makes a music review useful to you, and what makes it annoying?",
+"de": "Was macht eine Musikkritik für dich nützlich, und was macht sie nervig?",
+"es": "¿Qué hace que una reseña musical te resulte útil y qué la hace molesta?",
+"fr": "Qu'est-ce qui rend une critique musicale utile pour toi, et qu'est-ce qui la rend agaçante ?",
+"it": "Che cosa rende utile per te una recensione musicale, e che cosa la rende fastidiosa?",
+"pt": "O que torna uma crítica musical útil para ti, e o que a torna irritante?",
+"pt_BR": "O que torna uma crítica musical útil para você, e o que a deixa chata?"
+}
+},
+{
+"id": "music_genres-099",
+"lv": "advanced",
+"i18n": {
+"en": "How would you sequence a playlist that tells a story from start to finish?",
+"de": "Wie würdest du eine Playlist anordnen, die von Anfang bis Ende eine Geschichte erzählt?",
+"es": "¿Cómo ordenarías una lista que cuente una historia de principio a fin?",
+"fr": "Comment organiserais-tu une playlist qui raconte une histoire du début à la fin ?",
+"it": "Come ordineresti una playlist che racconti una storia dall'inizio alla fine?",
+"pt": "Como ordenarias uma playlist que conte uma história do início ao fim?",
+"pt_BR": "Como você organizaria uma playlist que conta uma história do começo ao fim?"
+}
+},
+{
+"id": "music_genres-100",
+"lv": "advanced",
+"i18n": {
+"en": "After this journey, which genre surprised you the most, and why?",
+"de": "Welches Genre hat dich auf dieser Reise am meisten überrascht, und warum?",
+"es": "Después de este viaje, ¿qué género te ha sorprendido más y por qué?",
+"fr": "Après ce voyage, quel genre t'a le plus surpris, et pourquoi ?",
+"it": "Dopo questo viaggio, quale genere ti ha sorpreso di più, e perché?",
+"pt": "Depois desta viagem, que género te surpreendeu mais, e porquê?",
+"pt_BR": "Depois dessa jornada, qual gênero mais te surpreendeu, e por quê?"
+}
+}
+]
+}

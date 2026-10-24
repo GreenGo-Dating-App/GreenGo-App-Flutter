@@ -1,0 +1,2195 @@
+{
+"topic": "self_confidence",
+"days": [
+{
+"d": 1,
+"lv": "beginner",
+"t": "What confidence really is",
+"f": "Confidence as trust in your ability to learn and cope, not as never feeling nervous"
+},
+{
+"d": 2,
+"lv": "beginner",
+"t": "Confidence versus arrogance",
+"f": "How quiet, kind confidence differs from showing off or needing to win"
+},
+{
+"d": 3,
+"lv": "beginner",
+"t": "Your confidence snapshot",
+"f": "Noticing where you already feel sure of yourself and where you feel less so"
+},
+{
+"d": 4,
+"lv": "beginner",
+"t": "The power of one small win",
+"f": "Why finishing a tiny task builds momentum and proof that you can follow through"
+},
+{
+"d": 5,
+"lv": "beginner",
+"t": "Starting a wins journal",
+"f": "Writing down three things you did well each day, however small"
+},
+{
+"d": 6,
+"lv": "beginner",
+"t": "Noticing your inner voice",
+"f": "Becoming aware of the words you use when you talk to yourself"
+},
+{
+"d": 7,
+"lv": "beginner",
+"t": "Talking to yourself like a friend",
+"f": "Replacing harsh self-talk with the tone you would use for a good friend"
+},
+{
+"d": 8,
+"lv": "beginner",
+"t": "Catching all-or-nothing thoughts",
+"f": "Spotting words like always and never and finding a fairer version"
+},
+{
+"d": 9,
+"lv": "beginner",
+"t": "The word yet",
+"f": "Turning I can't do this into I can't do this yet"
+},
+{
+"d": 10,
+"lv": "beginner",
+"t": "Posture and presence",
+"f": "How standing tall and relaxing your shoulders can help you feel more at ease"
+},
+{
+"d": 11,
+"lv": "beginner",
+"t": "Eye contact basics",
+"f": "Comfortable, friendly eye contact in everyday conversations"
+},
+{
+"d": 12,
+"lv": "beginner",
+"t": "A calm breath before you start",
+"f": "A simple slow breath to steady yourself before something new"
+},
+{
+"d": 13,
+"lv": "beginner",
+"t": "Smiling and warmth",
+"f": "How a genuine smile helps you and others feel relaxed"
+},
+{
+"d": 14,
+"lv": "beginner",
+"t": "Speaking a little slower",
+"f": "Why a slower pace makes you sound and feel more sure"
+},
+{
+"d": 15,
+"lv": "beginner",
+"t": "Listing your strengths",
+"f": "Finding five strengths, from practical skills to personal qualities"
+},
+{
+"d": 16,
+"lv": "beginner",
+"t": "Asking others what they value in you",
+"f": "Gathering kind feedback from people who know you well"
+},
+{
+"d": 17,
+"lv": "beginner",
+"t": "Strengths in action",
+"f": "Choosing one strength and using it on purpose today"
+},
+{
+"d": 18,
+"lv": "beginner",
+"t": "Your values compass",
+"f": "Naming three values that matter most to you"
+},
+{
+"d": 19,
+"lv": "beginner",
+"t": "Acting in line with your values",
+"f": "How choices that match your values feel steadier and more confident"
+},
+{
+"d": 20,
+"lv": "beginner",
+"t": "Keeping small promises to yourself",
+"f": "Building self-trust by doing what you said you would do"
+},
+{
+"d": 21,
+"lv": "beginner",
+"t": "Setting a tiny daily goal",
+"f": "Choosing a goal so small you can't fail, then doing it"
+},
+{
+"d": 22,
+"lv": "beginner",
+"t": "Celebrating progress",
+"f": "Marking small steps forward instead of waiting for the finish line"
+},
+{
+"d": 23,
+"lv": "beginner",
+"t": "The comparison trap",
+"f": "Why comparing your inside to others' highlight reels feels unfair"
+},
+{
+"d": 24,
+"lv": "beginner",
+"t": "Comparing with your past self",
+"f": "Measuring growth against who you were last month"
+},
+{
+"d": 25,
+"lv": "beginner",
+"t": "Social media and self-image",
+"f": "Curating your feed so it inspires you instead of draining you"
+},
+{
+"d": 26,
+"lv": "beginner",
+"t": "Gratitude for yourself",
+"f": "Appreciating your body, mind and efforts for what they do every day"
+},
+{
+"d": 27,
+"lv": "beginner",
+"t": "Dressing in a way that feels like you",
+"f": "How clothes you feel comfortable in can lift your mood"
+},
+{
+"d": 28,
+"lv": "beginner",
+"t": "Small acts of self-care",
+"f": "Sleep, water, movement and rest as foundations for feeling capable"
+},
+{
+"d": 29,
+"lv": "beginner",
+"t": "Your comfort zone map",
+"f": "Drawing what feels easy, a bit stretchy and too much for now"
+},
+{
+"d": 30,
+"lv": "beginner",
+"t": "Review: your first month",
+"f": "Looking back at wins, kinder self-talk and the habits you started"
+},
+{
+"d": 31,
+"lv": "beginner",
+"t": "Mistakes as information",
+"f": "Treating errors as useful feedback rather than proof of failure"
+},
+{
+"d": 32,
+"lv": "beginner",
+"t": "Laughing at small slip-ups",
+"f": "Using light humour to move on from everyday blunders"
+},
+{
+"d": 33,
+"lv": "beginner",
+"t": "Saying sorry without overdoing it",
+"f": "Apologising once, clearly, and then letting it go"
+},
+{
+"d": 34,
+"lv": "beginner",
+"t": "Learning from a past mistake",
+"f": "Turning one old mistake into a lesson you can use now"
+},
+{
+"d": 35,
+"lv": "beginner",
+"t": "Perfectionism versus excellence",
+"f": "Aiming for good and finished instead of flawless and stuck"
+},
+{
+"d": 36,
+"lv": "beginner",
+"t": "The good-enough rule",
+"f": "Deciding in advance what good enough looks like for a task"
+},
+{
+"d": 37,
+"lv": "beginner",
+"t": "Starting before you feel ready",
+"f": "Why confidence often comes after action, not before it"
+},
+{
+"d": 38,
+"lv": "beginner",
+"t": "The five-second start",
+"f": "Counting down and moving before doubts pile up"
+},
+{
+"d": 39,
+"lv": "beginner",
+"t": "Accepting a compliment",
+"f": "Saying thank you instead of brushing praise away"
+},
+{
+"d": 40,
+"lv": "beginner",
+"t": "Giving genuine compliments",
+"f": "How noticing others' strengths builds warmth and your own ease"
+},
+{
+"d": 41,
+"lv": "beginner",
+"t": "Your name and introduction",
+"f": "Introducing yourself clearly with a friendly short line"
+},
+{
+"d": 42,
+"lv": "beginner",
+"t": "Starting small talk",
+"f": "Easy openers about the place, the moment or a shared activity"
+},
+{
+"d": 43,
+"lv": "beginner",
+"t": "Asking open questions",
+"f": "Questions that invite stories and take pressure off you"
+},
+{
+"d": 44,
+"lv": "beginner",
+"t": "Listening as a confidence skill",
+"f": "How real listening makes conversations easier and calmer"
+},
+{
+"d": 45,
+"lv": "beginner",
+"t": "Sharing a little about yourself",
+"f": "Offering small personal details so others can connect"
+},
+{
+"d": 46,
+"lv": "beginner",
+"t": "Ending a chat gracefully",
+"f": "Friendly ways to wrap up a conversation"
+},
+{
+"d": 47,
+"lv": "beginner",
+"t": "Saying hello first",
+"f": "Taking the first step in greeting neighbours or colleagues"
+},
+{
+"d": 48,
+"lv": "beginner",
+"t": "Handling awkward silences",
+"f": "Seeing pauses as normal and finding a gentle next topic"
+},
+{
+"d": 49,
+"lv": "beginner",
+"t": "Your confidence playlist",
+"f": "Music that lifts your energy before a challenge"
+},
+{
+"d": 50,
+"lv": "beginner",
+"t": "Visualising success",
+"f": "Picturing yourself handling a situation calmly and well"
+},
+{
+"d": 51,
+"lv": "beginner",
+"t": "Rehearsing out loud",
+"f": "Practising what you'll say so it feels familiar"
+},
+{
+"d": 52,
+"lv": "beginner",
+"t": "Preparing reduces nerves",
+"f": "How a little preparation turns worry into readiness"
+},
+{
+"d": 53,
+"lv": "beginner",
+"t": "Nervousness as energy",
+"f": "Reframing butterflies as excitement and focus"
+},
+{
+"d": 54,
+"lv": "beginner",
+"t": "Grounding in the moment",
+"f": "Noticing five things you can see to feel present and steady"
+},
+{
+"d": 55,
+"lv": "beginner",
+"t": "Your evidence file",
+"f": "Collecting notes, messages and memories that remind you of your abilities"
+},
+{
+"d": 56,
+"lv": "beginner",
+"t": "Recalling a time you were brave",
+"f": "Remembering a moment you surprised yourself"
+},
+{
+"d": 57,
+"lv": "beginner",
+"t": "Who inspires you and why",
+"f": "Learning from role models' habits, not comparing yourself to them"
+},
+{
+"d": 58,
+"lv": "beginner",
+"t": "Borrowing confidence",
+"f": "Asking how someone you admire would handle a situation"
+},
+{
+"d": 59,
+"lv": "beginner",
+"t": "Kind people around you",
+"f": "Spending more time with people who support your growth"
+},
+{
+"d": 60,
+"lv": "beginner",
+"t": "Review: building blocks",
+"f": "Revisiting mistakes, small talk, preparation and your evidence file"
+},
+{
+"d": 61,
+"lv": "beginner",
+"t": "What is assertiveness",
+"f": "Expressing needs honestly and respectfully, between passive and pushy"
+},
+{
+"d": 62,
+"lv": "beginner",
+"t": "Using I statements",
+"f": "Saying I feel and I need instead of blaming phrases"
+},
+{
+"d": 63,
+"lv": "beginner",
+"t": "Saying no kindly",
+"f": "Polite, clear ways to decline without long excuses"
+},
+{
+"d": 64,
+"lv": "beginner",
+"t": "Saying yes on purpose",
+"f": "Choosing commitments that match your priorities"
+},
+{
+"d": 65,
+"lv": "beginner",
+"t": "Asking for what you need",
+"f": "Making small, clear requests in daily life"
+},
+{
+"d": 66,
+"lv": "beginner",
+"t": "Asking for help",
+"f": "Seeing help-seeking as a smart, confident move"
+},
+{
+"d": 67,
+"lv": "beginner",
+"t": "Asking questions in class or at work",
+"f": "Why questions show curiosity, not weakness"
+},
+{
+"d": 68,
+"lv": "beginner",
+"t": "Personal boundaries basics",
+"f": "Knowing your limits with time, energy and space"
+},
+{
+"d": 69,
+"lv": "beginner",
+"t": "Communicating a boundary",
+"f": "Simple scripts to state a limit calmly"
+},
+{
+"d": 70,
+"lv": "beginner",
+"t": "Handling pushback calmly",
+"f": "Repeating your point gently when someone insists"
+},
+{
+"d": 71,
+"lv": "beginner",
+"t": "Your body speaks too",
+"f": "Open hands and relaxed posture when you share your view"
+},
+{
+"d": 72,
+"lv": "beginner",
+"t": "Taking up space comfortably",
+"f": "Sitting and standing in a way that feels settled"
+},
+{
+"d": 73,
+"lv": "beginner",
+"t": "Voice warm-ups",
+"f": "Simple humming and breathing to make your voice feel clearer"
+},
+{
+"d": 74,
+"lv": "beginner",
+"t": "Speaking up in a group",
+"f": "Adding one comment early to make speaking easier later"
+},
+{
+"d": 75,
+"lv": "beginner",
+"t": "Sharing an opinion",
+"f": "Saying I think with a short reason"
+},
+{
+"d": 76,
+"lv": "beginner",
+"t": "Disagreeing politely",
+"f": "Friendly ways to offer a different view"
+},
+{
+"d": 77,
+"lv": "beginner",
+"t": "Changing your mind gracefully",
+"f": "Seeing openness to new ideas as a strength"
+},
+{
+"d": 78,
+"lv": "beginner",
+"t": "Trying something new each week",
+"f": "A weekly mini-adventure to stretch your comfort zone"
+},
+{
+"d": 79,
+"lv": "beginner",
+"t": "Learning a new skill",
+"f": "How the beginner stage builds resilience and confidence"
+},
+{
+"d": 80,
+"lv": "beginner",
+"t": "Being a happy beginner",
+"f": "Enjoying the awkward early stage of learning"
+},
+{
+"d": 81,
+"lv": "beginner",
+"t": "Moving your body",
+"f": "How walks, dance or sport can lift mood and self-belief"
+},
+{
+"d": 82,
+"lv": "beginner",
+"t": "Rest without guilt",
+"f": "Why rest refuels you and is part of doing well"
+},
+{
+"d": 83,
+"lv": "beginner",
+"t": "A morning confidence routine",
+"f": "Three small habits to start your day feeling capable"
+},
+{
+"d": 84,
+"lv": "beginner",
+"t": "An evening reflection",
+"f": "Ending the day by noting what went well"
+},
+{
+"d": 85,
+"lv": "beginner",
+"t": "Affirmations that feel true",
+"f": "Writing believable statements instead of exaggerated ones"
+},
+{
+"d": 86,
+"lv": "beginner",
+"t": "Your personal motto",
+"f": "Creating a short phrase that reminds you who you want to be"
+},
+{
+"d": 87,
+"lv": "beginner",
+"t": "Facing a small fear",
+"f": "Choosing one mild fear and taking a first step toward it"
+},
+{
+"d": 88,
+"lv": "beginner",
+"t": "Step-by-step courage",
+"f": "Breaking a scary task into a ladder of small steps"
+},
+{
+"d": 89,
+"lv": "beginner",
+"t": "Rewarding brave steps",
+"f": "Treating yourself after doing something hard"
+},
+{
+"d": 90,
+"lv": "beginner",
+"t": "Review: speaking up",
+"f": "Looking back at assertiveness, boundaries and brave steps"
+},
+{
+"d": 91,
+"lv": "beginner",
+"t": "Confidence at work or study",
+"f": "Noticing which tasks make you feel strong and why"
+},
+{
+"d": 92,
+"lv": "beginner",
+"t": "Talking about your achievements",
+"f": "Describing what you did without bragging or shrinking"
+},
+{
+"d": 93,
+"lv": "beginner",
+"t": "Owning your ideas",
+"f": "Presenting an idea with we could try instead of this is probably silly"
+},
+{
+"d": 94,
+"lv": "beginner",
+"t": "Handling a mistake at work",
+"f": "Owning it, fixing it and sharing what you learned"
+},
+{
+"d": 95,
+"lv": "beginner",
+"t": "Making decisions with confidence",
+"f": "A simple pros, cons and gut-check method"
+},
+{
+"d": 96,
+"lv": "beginner",
+"t": "Trusting your judgement",
+"f": "Learning from past decisions that turned out fine"
+},
+{
+"d": 97,
+"lv": "beginner",
+"t": "Living with uncertainty",
+"f": "Accepting that you can act well without knowing everything"
+},
+{
+"d": 98,
+"lv": "beginner",
+"t": "What ifs and what thens",
+"f": "Answering worries with a calm plan for the worst case"
+},
+{
+"d": 99,
+"lv": "beginner",
+"t": "Worry time",
+"f": "Setting a short, fixed time for worries so they don't fill your day"
+},
+{
+"d": 100,
+"lv": "beginner",
+"t": "Day 100 celebration",
+"f": "Celebrating a hundred days of small steps and noticing your growth"
+},
+{
+"d": 101,
+"lv": "beginner",
+"t": "Confidence in new places",
+"f": "Feeling at ease when you arrive somewhere unfamiliar"
+},
+{
+"d": 102,
+"lv": "beginner",
+"t": "Meeting people from other cultures",
+"f": "Approaching cultural differences with curiosity and openness"
+},
+{
+"d": 103,
+"lv": "beginner",
+"t": "Speaking a foreign language bravely",
+"f": "Accepting mistakes as part of talking in a new language"
+},
+{
+"d": 104,
+"lv": "beginner",
+"t": "Asking for directions",
+"f": "A small real-life challenge to practise approaching strangers"
+},
+{
+"d": 105,
+"lv": "beginner",
+"t": "Ordering with confidence",
+"f": "Speaking clearly at a café or shop"
+},
+{
+"d": 106,
+"lv": "beginner",
+"t": "Phone call nerves",
+"f": "Preparing notes so calls feel simpler"
+},
+{
+"d": 107,
+"lv": "beginner",
+"t": "Writing messages with confidence",
+"f": "Clear, friendly messages without endless apologies"
+},
+{
+"d": 108,
+"lv": "beginner",
+"t": "Joining a group or club",
+"f": "Finding a community around something you enjoy"
+},
+{
+"d": 109,
+"lv": "beginner",
+"t": "Showing up again",
+"f": "Why returning a second time makes things easier"
+},
+{
+"d": 110,
+"lv": "beginner",
+"t": "Making plans with someone",
+"f": "Suggesting an activity to a friend or acquaintance"
+},
+{
+"d": 111,
+"lv": "beginner",
+"t": "Hearing no without taking it personally",
+"f": "Seeing refusals as about circumstances, not your worth"
+},
+{
+"d": 112,
+"lv": "beginner",
+"t": "Bouncing back from a bad day",
+"f": "A gentle reset routine for tough days"
+},
+{
+"d": 113,
+"lv": "beginner",
+"t": "Self-compassion basics",
+"f": "Treating yourself with kindness when things go wrong"
+},
+{
+"d": 114,
+"lv": "beginner",
+"t": "Common humanity",
+"f": "Remembering that everyone struggles and feels unsure at times"
+},
+{
+"d": 115,
+"lv": "beginner",
+"t": "Writing a kind letter to yourself",
+"f": "Encouraging words from your wisest, kindest self"
+},
+{
+"d": 116,
+"lv": "beginner",
+"t": "Noticing growth",
+"f": "Comparing a skill now with how it was months ago"
+},
+{
+"d": 117,
+"lv": "beginner",
+"t": "Your support team",
+"f": "Knowing who to call for advice, fun or encouragement"
+},
+{
+"d": 118,
+"lv": "beginner",
+"t": "Being a confidence booster for others",
+"f": "Encouraging a friend and seeing how it lifts you too"
+},
+{
+"d": 119,
+"lv": "beginner",
+"t": "Your beginner toolkit",
+"f": "Gathering your favourite tools from the first four months"
+},
+{
+"d": 120,
+"lv": "beginner",
+"t": "Review: four months of growth",
+"f": "Celebrating your progress and choosing what to deepen next"
+},
+{
+"d": 121,
+"lv": "intermediate",
+"t": "Confidence as a skill",
+"f": "Seeing confidence as something you build with practice"
+},
+{
+"d": 122,
+"lv": "intermediate",
+"t": "Your confidence goals",
+"f": "Setting three clear goals for the next phase"
+},
+{
+"d": 123,
+"lv": "intermediate",
+"t": "Measuring confidence",
+"f": "Rating situations from 1 to 10 to track change over time"
+},
+{
+"d": 124,
+"lv": "intermediate",
+"t": "Identifying triggers",
+"f": "Spotting situations that tend to shake your confidence"
+},
+{
+"d": 125,
+"lv": "intermediate",
+"t": "Preparing for your triggers",
+"f": "Making a plan for situations that feel tough"
+},
+{
+"d": 126,
+"lv": "intermediate",
+"t": "Thinking traps: mind reading",
+"f": "Questioning the idea that you know what others think"
+},
+{
+"d": 127,
+"lv": "intermediate",
+"t": "Thinking traps: fortune telling",
+"f": "Checking predictions that things will surely go badly"
+},
+{
+"d": 128,
+"lv": "intermediate",
+"t": "Thinking traps: labelling",
+"f": "Replacing a harsh label with a specific, fair description"
+},
+{
+"d": 129,
+"lv": "intermediate",
+"t": "The balanced thought",
+"f": "Writing a fair middle-ground view of a situation"
+},
+{
+"d": 130,
+"lv": "intermediate",
+"t": "Evidence for and against",
+"f": "Testing a worried thought like a friendly detective"
+},
+{
+"d": 131,
+"lv": "intermediate",
+"t": "The spotlight effect",
+"f": "Why people notice our slip-ups far less than we think"
+},
+{
+"d": 132,
+"lv": "intermediate",
+"t": "The imposter feeling",
+"f": "Understanding why capable people sometimes feel like frauds"
+},
+{
+"d": 133,
+"lv": "intermediate",
+"t": "Owning your successes",
+"f": "Giving yourself fair credit for what you achieved"
+},
+{
+"d": 134,
+"lv": "intermediate",
+"t": "Linking wins to your effort",
+"f": "Connecting good results to your choices and work"
+},
+{
+"d": 135,
+"lv": "intermediate",
+"t": "Receiving feedback well",
+"f": "Listening, thanking and taking what's useful"
+},
+{
+"d": 136,
+"lv": "intermediate",
+"t": "Asking for feedback",
+"f": "Requesting specific feedback to grow faster"
+},
+{
+"d": 137,
+"lv": "intermediate",
+"t": "Feedback is not your worth",
+"f": "Remembering feedback is about actions, not who you are"
+},
+{
+"d": 138,
+"lv": "intermediate",
+"t": "Handling criticism calmly",
+"f": "Pausing, breathing and asking questions before responding"
+},
+{
+"d": 139,
+"lv": "intermediate",
+"t": "Unhelpful criticism",
+"f": "Recognising when criticism isn't useful and letting it go"
+},
+{
+"d": 140,
+"lv": "intermediate",
+"t": "Giving feedback kindly",
+"f": "Specific, helpful comments that build others up"
+},
+{
+"d": 141,
+"lv": "intermediate",
+"t": "Small talk level two",
+"f": "Moving from surface topics to more interesting ones"
+},
+{
+"d": 142,
+"lv": "intermediate",
+"t": "Telling a short story",
+"f": "A simple structure: setting, problem, ending"
+},
+{
+"d": 143,
+"lv": "intermediate",
+"t": "Using humour naturally",
+"f": "Light, kind humour that relaxes a conversation"
+},
+{
+"d": 144,
+"lv": "intermediate",
+"t": "Remembering names",
+"f": "Easy tricks to remember people's names"
+},
+{
+"d": 145,
+"lv": "intermediate",
+"t": "Following up after meeting someone",
+"f": "Sending a friendly message after a good chat"
+},
+{
+"d": 146,
+"lv": "intermediate",
+"t": "Networking without stress",
+"f": "Treating networking as a series of curious conversations"
+},
+{
+"d": 147,
+"lv": "intermediate",
+"t": "Joining an ongoing conversation",
+"f": "Polite ways to enter a group that is already talking"
+},
+{
+"d": 148,
+"lv": "intermediate",
+"t": "Speaking with someone you admire",
+"f": "Staying relaxed with people you look up to"
+},
+{
+"d": 149,
+"lv": "intermediate",
+"t": "Being yourself in groups",
+"f": "Letting your real personality show in social settings"
+},
+{
+"d": 150,
+"lv": "intermediate",
+"t": "Review: thoughts and feedback",
+"f": "Revisiting thinking traps, feedback and social skills"
+},
+{
+"d": 151,
+"lv": "intermediate",
+"t": "Body language level two",
+"f": "Reading and using gestures, distance and facing direction"
+},
+{
+"d": 152,
+"lv": "intermediate",
+"t": "Greetings with confidence",
+"f": "Greetings around the world and how to adapt them warmly"
+},
+{
+"d": 153,
+"lv": "intermediate",
+"t": "Your voice: volume and tone",
+"f": "Finding a clear, warm speaking voice"
+},
+{
+"d": 154,
+"lv": "intermediate",
+"t": "Pausing for effect",
+"f": "Using pauses to sound calm and give your words weight"
+},
+{
+"d": 155,
+"lv": "intermediate",
+"t": "Fewer filler words",
+"f": "Replacing um and like with a short silent pause"
+},
+{
+"d": 156,
+"lv": "intermediate",
+"t": "Speaking in front of a few people",
+"f": "Practising a short talk for friends or family"
+},
+{
+"d": 157,
+"lv": "intermediate",
+"t": "Structuring a short talk",
+"f": "An opening, three points and a clear close"
+},
+{
+"d": 158,
+"lv": "intermediate",
+"t": "Opening with a hook",
+"f": "Starting with a question, story or surprising fact"
+},
+{
+"d": 159,
+"lv": "intermediate",
+"t": "Handling questions after a talk",
+"f": "Calm ways to answer, or to say you'll find out"
+},
+{
+"d": 160,
+"lv": "intermediate",
+"t": "When your mind goes blank",
+"f": "What to do if you forget your words mid-sentence"
+},
+{
+"d": 161,
+"lv": "intermediate",
+"t": "Confidence in video calls",
+"f": "Camera, light and posture tips for online calls"
+},
+{
+"d": 162,
+"lv": "intermediate",
+"t": "Recording yourself",
+"f": "Watching a short recording kindly to spot one improvement"
+},
+{
+"d": 163,
+"lv": "intermediate",
+"t": "Celebrating speaking progress",
+"f": "Noticing how much easier speaking has become"
+},
+{
+"d": 164,
+"lv": "intermediate",
+"t": "Assertiveness level two",
+"f": "Handling more complex conversations with respect"
+},
+{
+"d": 165,
+"lv": "intermediate",
+"t": "The broken record technique",
+"f": "Calmly repeating your request without escalating"
+},
+{
+"d": 166,
+"lv": "intermediate",
+"t": "Negotiating basics",
+"f": "Asking for a better deal or schedule with confidence"
+},
+{
+"d": 167,
+"lv": "intermediate",
+"t": "Asking for an opportunity",
+"f": "Preparing facts and a clear request for a new chance at work"
+},
+{
+"d": 168,
+"lv": "intermediate",
+"t": "Saying no to a friend",
+"f": "Staying kind while protecting your time"
+},
+{
+"d": 169,
+"lv": "intermediate",
+"t": "Handling people who interrupt",
+"f": "Polite ways to finish your point"
+},
+{
+"d": 170,
+"lv": "intermediate",
+"t": "Calm in tense moments",
+"f": "Lowering your voice and slowing down when things heat up"
+},
+{
+"d": 171,
+"lv": "intermediate",
+"t": "Repairing after a disagreement",
+"f": "Reaching out to reconnect after friction"
+},
+{
+"d": 172,
+"lv": "intermediate",
+"t": "Standing up for others",
+"f": "Speaking up kindly when someone is treated unfairly"
+},
+{
+"d": 173,
+"lv": "intermediate",
+"t": "People-pleasing patterns",
+"f": "Noticing when you say yes just to be liked"
+},
+{
+"d": 174,
+"lv": "intermediate",
+"t": "Approval from within",
+"f": "Building a sense of worth that doesn't depend on applause"
+},
+{
+"d": 175,
+"lv": "intermediate",
+"t": "Values-based decisions",
+"f": "Using your values to guide hard choices"
+},
+{
+"d": 176,
+"lv": "intermediate",
+"t": "Your personal strengths story",
+"f": "Linking your strengths into a story about who you are"
+},
+{
+"d": 177,
+"lv": "intermediate",
+"t": "Confidence and curiosity",
+"f": "Using curiosity to replace fear in new situations"
+},
+{
+"d": 178,
+"lv": "intermediate",
+"t": "Trying a creative hobby",
+"f": "Making something just for fun, without judging it"
+},
+{
+"d": 179,
+"lv": "intermediate",
+"t": "Sharing your creative work",
+"f": "Showing a drawing, song or text to someone you trust"
+},
+{
+"d": 180,
+"lv": "intermediate",
+"t": "Review: voice and assertiveness",
+"f": "Looking back at speaking, negotiating and boundaries"
+},
+{
+"d": 181,
+"lv": "intermediate",
+"t": "Setting a stretch goal",
+"f": "Choosing a goal that feels exciting and a little scary"
+},
+{
+"d": 182,
+"lv": "intermediate",
+"t": "Breaking goals into milestones",
+"f": "Mapping monthly steps toward your stretch goal"
+},
+{
+"d": 183,
+"lv": "intermediate",
+"t": "Tracking progress visually",
+"f": "Using charts, ticks or a calendar to see momentum"
+},
+{
+"d": 184,
+"lv": "intermediate",
+"t": "When motivation dips",
+"f": "Relying on routines when you don't feel like it"
+},
+{
+"d": 185,
+"lv": "intermediate",
+"t": "Consistency as self-respect",
+"f": "Seeing consistency as a gift to your future self"
+},
+{
+"d": 186,
+"lv": "intermediate",
+"t": "Setbacks on the way to a goal",
+"f": "Adjusting the plan instead of giving up"
+},
+{
+"d": 187,
+"lv": "intermediate",
+"t": "The fresh-start effect",
+"f": "Using a new week or month to restart with energy"
+},
+{
+"d": 188,
+"lv": "intermediate",
+"t": "Resilience basics",
+"f": "What resilience is and how everyday habits help it grow"
+},
+{
+"d": 189,
+"lv": "intermediate",
+"t": "Your resilience stories",
+"f": "Recalling hard times you got through and what helped"
+},
+{
+"d": 190,
+"lv": "intermediate",
+"t": "Flexible thinking",
+"f": "Finding several ways to see one situation"
+},
+{
+"d": 191,
+"lv": "intermediate",
+"t": "Problem-solving steps",
+"f": "Define the problem, brainstorm, choose and try"
+},
+{
+"d": 192,
+"lv": "intermediate",
+"t": "What can I control",
+"f": "Focusing your energy on what is in your hands"
+},
+{
+"d": 193,
+"lv": "intermediate",
+"t": "Letting go of the uncontrollable",
+"f": "Releasing worries that are outside your influence"
+},
+{
+"d": 194,
+"lv": "intermediate",
+"t": "Realistic optimism",
+"f": "Expecting good things while preparing for challenges"
+},
+{
+"d": 195,
+"lv": "intermediate",
+"t": "Hope and small plans",
+"f": "How a tiny plan for tomorrow can lift today"
+},
+{
+"d": 196,
+"lv": "intermediate",
+"t": "Confidence and sleep",
+"f": "How rest affects mood, focus and self-belief"
+},
+{
+"d": 197,
+"lv": "intermediate",
+"t": "Confidence and movement",
+"f": "Using exercise as a regular confidence boost"
+},
+{
+"d": 198,
+"lv": "intermediate",
+"t": "Confidence and regular meals",
+"f": "Regular meals and water for steady energy through the day"
+},
+{
+"d": 199,
+"lv": "intermediate",
+"t": "Spending time in nature",
+"f": "How fresh air and green spaces help you reset"
+},
+{
+"d": 200,
+"lv": "intermediate",
+"t": "Day 200 milestone",
+"f": "Celebrating two hundred days and the person you are becoming"
+},
+{
+"d": 201,
+"lv": "intermediate",
+"t": "Confidence in friendships",
+"f": "Being a reliable, honest and fun friend"
+},
+{
+"d": 202,
+"lv": "intermediate",
+"t": "Making new friends as an adult",
+"f": "Practical places and ways to meet people"
+},
+{
+"d": 203,
+"lv": "intermediate",
+"t": "Deepening a friendship",
+"f": "Moving from acquaintance to friend with time and openness"
+},
+{
+"d": 204,
+"lv": "intermediate",
+"t": "Opening up wisely",
+"f": "Sharing feelings with people who have earned your trust"
+},
+{
+"d": 205,
+"lv": "intermediate",
+"t": "Expressing appreciation",
+"f": "Telling people what they mean to you"
+},
+{
+"d": 206,
+"lv": "intermediate",
+"t": "Asking friends for support",
+"f": "Letting friends help you when you need it"
+},
+{
+"d": 207,
+"lv": "intermediate",
+"t": "Saying what you mean",
+"f": "Clear, honest communication without hints"
+},
+{
+"d": 208,
+"lv": "intermediate",
+"t": "Handling teasing with ease",
+"f": "Responding to light teasing with humour or a calm word"
+},
+{
+"d": 209,
+"lv": "intermediate",
+"t": "Confidence in family conversations",
+"f": "Sharing your views respectfully at home"
+},
+{
+"d": 210,
+"lv": "intermediate",
+"t": "Respecting different opinions",
+"f": "Staying confident when others see things differently"
+},
+{
+"d": 211,
+"lv": "intermediate",
+"t": "Cross-cultural confidence",
+"f": "Adapting to new customs while staying yourself"
+},
+{
+"d": 212,
+"lv": "intermediate",
+"t": "Learning from cultural mistakes",
+"f": "Turning a cultural misunderstanding into a nice story"
+},
+{
+"d": 213,
+"lv": "intermediate",
+"t": "Confidence while travelling",
+"f": "Navigating new places with calm and curiosity"
+},
+{
+"d": 214,
+"lv": "intermediate",
+"t": "Eating out alone with ease",
+"f": "Enjoying a meal or a café visit by yourself"
+},
+{
+"d": 215,
+"lv": "intermediate",
+"t": "Going to an event alone",
+"f": "Tips for attending a talk, class or event solo"
+},
+{
+"d": 216,
+"lv": "intermediate",
+"t": "Confidence in learning",
+"f": "Asking questions and making mistakes while studying"
+},
+{
+"d": 217,
+"lv": "intermediate",
+"t": "Learning out loud",
+"f": "Sharing what you're learning to strengthen it"
+},
+{
+"d": 218,
+"lv": "intermediate",
+"t": "Teaching someone a skill",
+"f": "How explaining something builds your confidence"
+},
+{
+"d": 219,
+"lv": "intermediate",
+"t": "Your growth mindset",
+"f": "Believing abilities grow with effort and good strategies"
+},
+{
+"d": 220,
+"lv": "intermediate",
+"t": "Effort and strategy",
+"f": "Changing your approach when hard work alone isn't enough"
+},
+{
+"d": 221,
+"lv": "intermediate",
+"t": "Confidence at interviews",
+"f": "Preparing short stories that show your skills"
+},
+{
+"d": 222,
+"lv": "intermediate",
+"t": "Answering tell me about yourself",
+"f": "A short, confident personal introduction"
+},
+{
+"d": 223,
+"lv": "intermediate",
+"t": "Talking about weaknesses honestly",
+"f": "Sharing an area of growth and your plan for it"
+},
+{
+"d": 224,
+"lv": "intermediate",
+"t": "Following up after an interview",
+"f": "Sending a polite thank-you message"
+},
+{
+"d": 225,
+"lv": "intermediate",
+"t": "Handling rejection in applications",
+"f": "Learning from a no and trying again"
+},
+{
+"d": 226,
+"lv": "intermediate",
+"t": "Confidence in team meetings",
+"f": "Preparing one point to share in every meeting"
+},
+{
+"d": 227,
+"lv": "intermediate",
+"t": "Leading a small task",
+"f": "Volunteering to organise something small"
+},
+{
+"d": 228,
+"lv": "intermediate",
+"t": "Delegating with trust",
+"f": "Asking others to help and trusting their work"
+},
+{
+"d": 229,
+"lv": "intermediate",
+"t": "Saying I don't know",
+"f": "Admitting gaps and offering to find out"
+},
+{
+"d": 230,
+"lv": "intermediate",
+"t": "Review: relationships and work",
+"f": "Revisiting friendships, culture, learning and work skills"
+},
+{
+"d": 231,
+"lv": "intermediate",
+"t": "Your confidence identity",
+"f": "Describing yourself as someone who grows and tries"
+},
+{
+"d": 232,
+"lv": "intermediate",
+"t": "Self-image versus reality",
+"f": "Checking whether your self-image is fair and up to date"
+},
+{
+"d": 233,
+"lv": "intermediate",
+"t": "Updating old labels",
+"f": "Letting go of labels from the past, like the shy one"
+},
+{
+"d": 234,
+"lv": "intermediate",
+"t": "Meeting your future self",
+"f": "Imagining yourself in five years and what you would like to see"
+},
+{
+"d": 235,
+"lv": "intermediate",
+"t": "Letter from your future self",
+"f": "Writing encouragement from the future you"
+},
+{
+"d": 236,
+"lv": "intermediate",
+"t": "Choices your future self will love",
+"f": "Small decisions today that help you tomorrow"
+},
+{
+"d": 237,
+"lv": "intermediate",
+"t": "Habits that sustain confidence",
+"f": "Picking three keystone habits to keep"
+},
+{
+"d": 238,
+"lv": "intermediate",
+"t": "Habit stacking",
+"f": "Linking a new habit to an existing routine"
+},
+{
+"d": 239,
+"lv": "intermediate",
+"t": "Environment design",
+"f": "Arranging your space to make good habits easier"
+},
+{
+"d": 240,
+"lv": "intermediate",
+"t": "Digital habits and confidence",
+"f": "Using your phone in ways that support you"
+},
+{
+"d": 241,
+"lv": "intermediate",
+"t": "Celebrating others' success",
+"f": "Feeling happy for others without feeling smaller"
+},
+{
+"d": 242,
+"lv": "intermediate",
+"t": "Abundance thinking",
+"f": "Seeing that others' wins don't take away from yours"
+},
+{
+"d": 243,
+"lv": "intermediate",
+"t": "Collaboration over competition",
+"f": "Building things together with others"
+},
+{
+"d": 244,
+"lv": "intermediate",
+"t": "Mentors and guides",
+"f": "Finding someone who can share their experience"
+},
+{
+"d": 245,
+"lv": "intermediate",
+"t": "Being a mentor",
+"f": "Sharing what you know with someone starting out"
+},
+{
+"d": 246,
+"lv": "intermediate",
+"t": "Kindness as confidence",
+"f": "How helping others builds a sense of worth"
+},
+{
+"d": 247,
+"lv": "intermediate",
+"t": "Volunteering",
+"f": "Giving time to a cause and seeing your impact"
+},
+{
+"d": 248,
+"lv": "intermediate",
+"t": "Gratitude for your journey",
+"f": "Appreciating how far you've come"
+},
+{
+"d": 249,
+"lv": "intermediate",
+"t": "Your intermediate toolkit",
+"f": "Gathering your favourite tools from this phase"
+},
+{
+"d": 250,
+"lv": "intermediate",
+"t": "Review: the middle of the path",
+"f": "Celebrating progress and setting goals for the advanced phase"
+},
+{
+"d": 251,
+"lv": "advanced",
+"t": "Confidence under pressure",
+"f": "Staying steady when the stakes are high"
+},
+{
+"d": 252,
+"lv": "advanced",
+"t": "Pre-performance routines",
+"f": "Creating a small ritual before big moments"
+},
+{
+"d": 253,
+"lv": "advanced",
+"t": "Recovering mid-performance",
+"f": "Getting back on track after a slip during a task"
+},
+{
+"d": 254,
+"lv": "advanced",
+"t": "Calm focus",
+"f": "Bringing attention back to the task, not the audience"
+},
+{
+"d": 255,
+"lv": "advanced",
+"t": "Box breathing",
+"f": "A steady four-step breath for intense moments"
+},
+{
+"d": 256,
+"lv": "advanced",
+"t": "Public speaking level three",
+"f": "Speaking to larger groups with clarity"
+},
+{
+"d": 257,
+"lv": "advanced",
+"t": "Stories that connect",
+"f": "Using personal stories to make a point memorable"
+},
+{
+"d": 258,
+"lv": "advanced",
+"t": "Using slides with confidence",
+"f": "Simple slides that support you instead of replacing you"
+},
+{
+"d": 259,
+"lv": "advanced",
+"t": "Speaking without notes",
+"f": "Using a key-word map instead of a full script"
+},
+{
+"d": 260,
+"lv": "advanced",
+"t": "Handling tough questions",
+"f": "Bridging, clarifying and staying respectful"
+},
+{
+"d": 261,
+"lv": "advanced",
+"t": "Speaking off the cuff",
+"f": "A quick structure: point, reason, example, point"
+},
+{
+"d": 262,
+"lv": "advanced",
+"t": "Toasts and short speeches",
+"f": "Giving a warm speech at a celebration"
+},
+{
+"d": 263,
+"lv": "advanced",
+"t": "Presenting online",
+"f": "Keeping your energy high on a screen"
+},
+{
+"d": 264,
+"lv": "advanced",
+"t": "Feedback on your talks",
+"f": "Gathering and using audience feedback"
+},
+{
+"d": 265,
+"lv": "advanced",
+"t": "Leadership presence",
+"f": "How calm, clear and kind leaders carry themselves"
+},
+{
+"d": 266,
+"lv": "advanced",
+"t": "Deciding as a leader",
+"f": "Making decisions with the information you have"
+},
+{
+"d": 267,
+"lv": "advanced",
+"t": "Communicating a vision",
+"f": "Explaining where a group is going and why"
+},
+{
+"d": 268,
+"lv": "advanced",
+"t": "Motivating others",
+"f": "Recognising effort and helping people feel valued"
+},
+{
+"d": 269,
+"lv": "advanced",
+"t": "Running a meeting",
+"f": "An agenda, good timing and inviting every voice"
+},
+{
+"d": 270,
+"lv": "advanced",
+"t": "Giving difficult feedback",
+"f": "Being honest, specific and caring at the same time"
+},
+{
+"d": 271,
+"lv": "advanced",
+"t": "Handling conflict in a team",
+"f": "Listening to all sides and finding next steps"
+},
+{
+"d": 272,
+"lv": "advanced",
+"t": "Leading through uncertainty",
+"f": "Staying honest and steady when answers are unclear"
+},
+{
+"d": 273,
+"lv": "advanced",
+"t": "Admitting a leadership mistake",
+"f": "How owning mistakes builds trust"
+},
+{
+"d": 274,
+"lv": "advanced",
+"t": "Quiet leadership",
+"f": "Leading through listening, example and preparation"
+},
+{
+"d": 275,
+"lv": "advanced",
+"t": "Introverts and confidence",
+"f": "Using reflection and depth as strengths"
+},
+{
+"d": 276,
+"lv": "advanced",
+"t": "Extroverts and confidence",
+"f": "Balancing energy with listening and patience"
+},
+{
+"d": 277,
+"lv": "advanced",
+"t": "Managing your energy",
+"f": "Planning social time and recharge time"
+},
+{
+"d": 278,
+"lv": "advanced",
+"t": "Advanced assertiveness",
+"f": "Holding firm on important issues with grace"
+},
+{
+"d": 279,
+"lv": "advanced",
+"t": "Saying no to big requests",
+"f": "Declining important asks while keeping relationships"
+},
+{
+"d": 280,
+"lv": "advanced",
+"t": "Review: pressure and leadership",
+"f": "Revisiting performance, speaking and leading"
+},
+{
+"d": 281,
+"lv": "advanced",
+"t": "Courage in big decisions",
+"f": "Approaching life choices like moves or career changes"
+},
+{
+"d": 282,
+"lv": "advanced",
+"t": "Minimising regret",
+"f": "Asking which choice your older self would be glad you made"
+},
+{
+"d": 283,
+"lv": "advanced",
+"t": "Taking calculated risks",
+"f": "Weighing risks and preparing a safety net"
+},
+{
+"d": 284,
+"lv": "advanced",
+"t": "Starting a personal project",
+"f": "Launching something you care about"
+},
+{
+"d": 285,
+"lv": "advanced",
+"t": "Sharing your project publicly",
+"f": "Showing your work to a wider audience"
+},
+{
+"d": 286,
+"lv": "advanced",
+"t": "Dealing with others' opinions",
+"f": "Staying focused when people doubt your plans"
+},
+{
+"d": 287,
+"lv": "advanced",
+"t": "Persistence over time",
+"f": "Keeping going when results come slowly"
+},
+{
+"d": 288,
+"lv": "advanced",
+"t": "Pivoting without shame",
+"f": "Changing direction as a smart choice, not a failure"
+},
+{
+"d": 289,
+"lv": "advanced",
+"t": "Failing forward",
+"f": "Using a big setback as a turning point"
+},
+{
+"d": 290,
+"lv": "advanced",
+"t": "Your comeback story",
+"f": "Writing about a time you rose after a fall"
+},
+{
+"d": 291,
+"lv": "advanced",
+"t": "Deep self-acceptance",
+"f": "Accepting all parts of yourself, including your flaws"
+},
+{
+"d": 292,
+"lv": "advanced",
+"t": "Strengths and their flip sides",
+"f": "Seeing how each strength can sometimes become a challenge"
+},
+{
+"d": 293,
+"lv": "advanced",
+"t": "Success on your own terms",
+"f": "Defining success without comparing yourself to others"
+},
+{
+"d": 294,
+"lv": "advanced",
+"t": "Inner critic as a coach",
+"f": "Turning harsh self-talk into useful guidance"
+},
+{
+"d": 295,
+"lv": "advanced",
+"t": "Naming your inner critic",
+"f": "Giving the critic a funny name to create some distance"
+},
+{
+"d": 296,
+"lv": "advanced",
+"t": "Talking back to doubts",
+"f": "A short, firm reply to familiar doubts"
+},
+{
+"d": 297,
+"lv": "advanced",
+"t": "Confidence in your body",
+"f": "Appreciating what your body can do"
+},
+{
+"d": 298,
+"lv": "advanced",
+"t": "Kind words about appearance",
+"f": "Moving away from judging looks, yours and others'"
+},
+{
+"d": 299,
+"lv": "advanced",
+"t": "Confidence at every age",
+"f": "Seeing each stage of life as a chance to grow"
+},
+{
+"d": 300,
+"lv": "advanced",
+"t": "Day 300 reflection",
+"f": "Celebrating three hundred days and your biggest changes"
+},
+{
+"d": 301,
+"lv": "advanced",
+"t": "Confidence in conflict",
+"f": "Staying calm and respectful in serious disagreements"
+},
+{
+"d": 302,
+"lv": "advanced",
+"t": "Seeking win-win solutions",
+"f": "Looking for options that work for both sides"
+},
+{
+"d": 303,
+"lv": "advanced",
+"t": "Handling a difficult person",
+"f": "Protecting your calm with boundaries and distance"
+},
+{
+"d": 304,
+"lv": "advanced",
+"t": "Forgiving yourself",
+"f": "Letting go of guilt after making amends"
+},
+{
+"d": 305,
+"lv": "advanced",
+"t": "Moving on from embarrassment",
+"f": "Turning embarrassing memories into funny stories"
+},
+{
+"d": 306,
+"lv": "advanced",
+"t": "Money talks with confidence",
+"f": "Talking calmly about shared costs and budgets with others"
+},
+{
+"d": 307,
+"lv": "advanced",
+"t": "Asking for fair treatment",
+"f": "Speaking up about workload or fairness"
+},
+{
+"d": 308,
+"lv": "advanced",
+"t": "Preparing for appointments",
+"f": "Writing your questions down before meeting a doctor or advisor"
+},
+{
+"d": 309,
+"lv": "advanced",
+"t": "Confidence as a caregiver",
+"f": "Trusting yourself while learning on the go"
+},
+{
+"d": 310,
+"lv": "advanced",
+"t": "Confidence in a new role",
+"f": "Learning fast and asking questions when you start something new"
+},
+{
+"d": 311,
+"lv": "advanced",
+"t": "Confidence when moving abroad",
+"f": "Building a new life step by step in a new country"
+},
+{
+"d": 312,
+"lv": "advanced",
+"t": "Building a network in a new city",
+"f": "Practical ways to meet people after a move"
+},
+{
+"d": 313,
+"lv": "advanced",
+"t": "Confidence with technology",
+"f": "Approaching new apps and tools with curiosity"
+},
+{
+"d": 314,
+"lv": "advanced",
+"t": "Creative confidence",
+"f": "Trusting your creative ideas and sharing them"
+},
+{
+"d": 315,
+"lv": "advanced",
+"t": "Writing with confidence",
+"f": "Expressing your ideas clearly in writing"
+},
+{
+"d": 316,
+"lv": "advanced",
+"t": "Your voice online",
+"f": "Posting thoughtful comments and content kindly"
+},
+{
+"d": 317,
+"lv": "advanced",
+"t": "Handling negative comments online",
+"f": "Letting go of unkind comments and protecting your peace"
+},
+{
+"d": 318,
+"lv": "advanced",
+"t": "Your personal brand",
+"f": "How you would like people to describe you"
+},
+{
+"d": 319,
+"lv": "advanced",
+"t": "Authenticity",
+"f": "Being the same person in different situations"
+},
+{
+"d": 320,
+"lv": "advanced",
+"t": "Living your values daily",
+"f": "Small actions that reflect what matters to you"
+},
+{
+"d": 321,
+"lv": "advanced",
+"t": "Purpose and confidence",
+"f": "How a sense of purpose gives you steady energy"
+},
+{
+"d": 322,
+"lv": "advanced",
+"t": "Meaning in small things",
+"f": "Seeing the value in everyday contributions"
+},
+{
+"d": 323,
+"lv": "advanced",
+"t": "Contribution",
+"f": "Using your strengths to help your community"
+},
+{
+"d": 324,
+"lv": "advanced",
+"t": "What people value in you",
+"f": "The qualities you hope friends and family appreciate in you"
+},
+{
+"d": 325,
+"lv": "advanced",
+"t": "Being a role model",
+"f": "How your confidence can inspire others"
+},
+{
+"d": 326,
+"lv": "advanced",
+"t": "Encouraging someone shy",
+"f": "Gentle ways to help a quieter person feel included"
+},
+{
+"d": 327,
+"lv": "advanced",
+"t": "Building confident teams",
+"f": "Creating an atmosphere where people feel safe to speak"
+},
+{
+"d": 328,
+"lv": "advanced",
+"t": "Celebrating together",
+"f": "Making room for shared wins in groups"
+},
+{
+"d": 329,
+"lv": "advanced",
+"t": "Joy and play",
+"f": "Remembering that fun and play build confidence too"
+},
+{
+"d": 330,
+"lv": "advanced",
+"t": "Review: depth and purpose",
+"f": "Revisiting self-acceptance, conflict and purpose"
+},
+{
+"d": 331,
+"lv": "advanced",
+"t": "Confidence plateaus",
+"f": "What to do when progress seems to stall"
+},
+{
+"d": 332,
+"lv": "advanced",
+"t": "Renewing motivation",
+"f": "Finding fresh reasons to keep growing"
+},
+{
+"d": 333,
+"lv": "advanced",
+"t": "Your next challenge",
+"f": "Choosing your next stretch for continued growth"
+},
+{
+"d": 334,
+"lv": "advanced",
+"t": "Building reflection into life",
+"f": "Making regular reflection a natural part of your weeks"
+},
+{
+"d": 335,
+"lv": "advanced",
+"t": "Monthly self-check-in",
+"f": "A simple monthly review of your habits and feelings"
+},
+{
+"d": 336,
+"lv": "advanced",
+"t": "Your confidence rituals",
+"f": "Choosing rituals you'll keep beyond the 365 days"
+},
+{
+"d": 337,
+"lv": "advanced",
+"t": "Comfort with silence",
+"f": "Being at ease with quiet moments, alone and with others"
+},
+{
+"d": 338,
+"lv": "advanced",
+"t": "Calm self-assurance",
+"f": "Feeling no need to prove yourself"
+},
+{
+"d": 339,
+"lv": "advanced",
+"t": "Humility and confidence together",
+"f": "Being sure of yourself and open to learning"
+},
+{
+"d": 340,
+"lv": "advanced",
+"t": "Gracious winning and losing",
+"f": "Staying kind whatever the outcome"
+},
+{
+"d": 341,
+"lv": "advanced",
+"t": "Patience with yourself",
+"f": "Accepting that growth has ups and downs"
+},
+{
+"d": 342,
+"lv": "advanced",
+"t": "Confidence in busy seasons",
+"f": "Staying gentle with yourself when life is demanding"
+},
+{
+"d": 343,
+"lv": "advanced",
+"t": "Reaching out for support",
+"f": "Knowing that asking a qualified professional for help is a strong choice"
+},
+{
+"d": 344,
+"lv": "advanced",
+"t": "Celebrating your uniqueness",
+"f": "Valuing the mix of traits that makes you you"
+},
+{
+"d": 345,
+"lv": "advanced",
+"t": "Your story so far",
+"f": "Writing a short story of your confidence journey"
+},
+{
+"d": 346,
+"lv": "advanced",
+"t": "Sharing your story",
+"f": "Telling a friend what you've learned this year"
+},
+{
+"d": 347,
+"lv": "advanced",
+"t": "Teaching what you learned",
+"f": "Explaining one confidence tool to someone else"
+},
+{
+"d": 348,
+"lv": "advanced",
+"t": "Your top ten tools",
+"f": "Choosing the ten tools that helped you most"
+},
+{
+"d": 349,
+"lv": "advanced",
+"t": "Your plan for next year",
+"f": "Setting intentions for continued growth"
+},
+{
+"d": 350,
+"lv": "advanced",
+"t": "Small daily anchors",
+"f": "Choosing three tiny daily habits to keep you steady"
+},
+{
+"d": 351,
+"lv": "advanced",
+"t": "Planning a big brave step",
+"f": "Choosing one meaningful brave step and preparing it well"
+},
+{
+"d": 352,
+"lv": "advanced",
+"t": "Taking the big step",
+"f": "Doing the brave thing and noting how it felt"
+},
+{
+"d": 353,
+"lv": "advanced",
+"t": "Reflecting on courage",
+"f": "What the brave step taught you about yourself"
+},
+{
+"d": 354,
+"lv": "advanced",
+"t": "Thanking people who helped",
+"f": "Expressing gratitude to those who supported your growth"
+},
+{
+"d": 355,
+"lv": "advanced",
+"t": "A letter to your day-one self",
+"f": "Telling your past self what you know now"
+},
+{
+"d": 356,
+"lv": "advanced",
+"t": "Your confidence mantra",
+"f": "A final short phrase to carry forward"
+},
+{
+"d": 357,
+"lv": "advanced",
+"t": "Balance across life areas",
+"f": "Checking work, friends, health and hobbies for balance"
+},
+{
+"d": 358,
+"lv": "advanced",
+"t": "Your next learning adventure",
+"f": "Choosing a new skill or topic to explore"
+},
+{
+"d": 359,
+"lv": "advanced",
+"t": "Supporting others' journeys",
+"f": "Becoming an encourager in your community"
+},
+{
+"d": 360,
+"lv": "advanced",
+"t": "Celebrating the whole year",
+"f": "Recalling your favourite moments of the path"
+},
+{
+"d": 361,
+"lv": "advanced",
+"t": "Final review: foundations",
+"f": "Revisiting self-talk, small wins and body language"
+},
+{
+"d": 362,
+"lv": "advanced",
+"t": "Final review: social courage",
+"f": "Revisiting conversations, assertiveness and boundaries"
+},
+{
+"d": 363,
+"lv": "advanced",
+"t": "Final review: resilience",
+"f": "Revisiting setbacks, self-compassion and growth mindset"
+},
+{
+"d": 364,
+"lv": "advanced",
+"t": "Final review: purpose",
+"f": "Revisiting values, leadership and contribution"
+},
+{
+"d": 365,
+"lv": "advanced",
+"t": "Graduation day",
+"f": "Celebrating 365 days and stepping forward with quiet confidence"
+}
+]
+}

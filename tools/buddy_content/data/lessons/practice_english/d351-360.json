@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_english",
+ "lessons": [
+  {
+   "d": 351,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Speaking at length: two minutes",
+     "g": "Plan and deliver a two-minute talk with clear structure and connectors.",
+     "p": [
+      "Plan in one minute: note three points with one example each. Don't write full sentences, just key words.",
+      "Structure: I'd like to talk about... To begin with... Another reason is... For example... Finally...",
+      "Keep going: If you forget a word, paraphrase: It's a kind of... Fill pauses with Let me think, or Well..."
+     ],
+     "q": "What topic could you talk about for two minutes without stopping? Why that one?",
+     "c": "Time yourself: talk for two minutes about a place you love, using to begin with, another and finally."
+    },
+    "de": {
+     "t": "Länger sprechen: zwei Minuten",
+     "g": "Du planst und hältst einen Zwei-Minuten-Beitrag mit klarer Struktur und Konnektoren.",
+     "p": [
+      "In einer Minute planen: drei Punkte mit je einem Beispiel notieren. Keine ganzen Sätze, nur Stichwörter.",
+      "Struktur: I'd like to talk about... To begin with... Another reason is... For example... Finally...",
+      "Weiterreden: Fehlt ein Wort, umschreibe es: It's a kind of... Pausen füllen mit Let me think oder Well..."
+     ],
+     "q": "Über welches Thema könntest du zwei Minuten ohne Pause reden? Warum gerade das?",
+     "c": "Stopp die Zeit: Sprich zwei Minuten über einen Lieblingsort mit to begin with, another und finally."
+    },
+    "es": {
+     "t": "Hablar dos minutos seguidos",
+     "g": "Planifica y da una charla de dos minutos con estructura clara y conectores.",
+     "p": [
+      "Planifica en un minuto: anota tres ideas con un ejemplo cada una. Nada de frases completas, solo palabras clave.",
+      "Estructura: I'd like to talk about... To begin with... Another reason is... For example... Finally...",
+      "Sigue hablando: si olvidas una palabra, parafrasea: It's a kind of... Rellena pausas con Let me think o Well..."
+     ],
+     "q": "¿De qué tema podrías hablar dos minutos sin parar? ¿Por qué ese?",
+     "c": "Cronométrate: habla dos minutos sobre un lugar que te encanta con to begin with, another y finally."
+    },
+    "fr": {
+     "t": "Parler deux minutes d'affilée",
+     "g": "Prépare et présente un exposé de deux minutes bien structuré, avec des connecteurs.",
+     "p": [
+      "Prépare en une minute : note trois idées avec un exemple chacune. Pas de phrases complètes, juste des mots clés.",
+      "Structure : I'd like to talk about... To begin with... Another reason is... For example... Finally...",
+      "Continue : si un mot t'échappe, reformule : It's a kind of... Comble les pauses avec Let me think ou Well..."
+     ],
+     "q": "Sur quel sujet pourrais-tu parler deux minutes sans t'arrêter ? Pourquoi celui-là ?",
+     "c": "Chronomètre-toi : parle deux minutes d'un lieu que tu aimes avec to begin with, another et finally."
+    },
+    "it": {
+     "t": "Parlare a lungo: due minuti",
+     "g": "Prepara e tieni un discorso di due minuti con struttura chiara e connettivi.",
+     "p": [
+      "Prepara in un minuto: annota tre punti con un esempio ciascuno. Niente frasi intere, solo parole chiave.",
+      "Struttura: I'd like to talk about... To begin with... Another reason is... For example... Finally...",
+      "Vai avanti: se ti sfugge una parola, parafrasa: It's a kind of... Riempi le pause con Let me think o Well..."
+     ],
+     "q": "Di quale argomento potresti parlare per due minuti senza fermarti? Perché proprio quello?",
+     "c": "Cronometrati: parla due minuti di un posto che ami usando to begin with, another e finally."
+    },
+    "pt": {
+     "t": "Falar dois minutos seguidos",
+     "g": "Planeia e faz uma intervenção de dois minutos com estrutura clara e conectores.",
+     "p": [
+      "Planeia num minuto: anota três pontos com um exemplo cada. Nada de frases completas, só palavras-chave.",
+      "Estrutura: I'd like to talk about... To begin with... Another reason is... For example... Finally...",
+      "Continua: se te esqueceres de uma palavra, parafraseia: It's a kind of... Preenche pausas com Let me think ou Well..."
+     ],
+     "q": "Sobre que tema conseguias falar dois minutos sem parar? Porquê esse?",
+     "c": "Cronometra-te: fala dois minutos sobre um lugar de que gostas com to begin with, another e finally."
+    },
+    "pt_BR": {
+     "t": "Falar dois minutos seguidos",
+     "g": "Planeje e faça uma fala de dois minutos com estrutura clara e conectores.",
+     "p": [
+      "Planeje em um minuto: anote três pontos com um exemplo cada. Nada de frases completas, só palavras-chave.",
+      "Estrutura: I'd like to talk about... To begin with... Another reason is... For example... Finally...",
+      "Continue: se esquecer uma palavra, parafraseie: It's a kind of... Preencha pausas com Let me think ou Well..."
+     ],
+     "q": "Sobre que tema você conseguiria falar dois minutos sem parar? Por que esse?",
+     "c": "Cronometre-se: fale dois minutos sobre um lugar que você ama usando to begin with, another e finally."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "to begin with",
+      "ex": "To begin with, the city is very easy to explore."
+     },
+     {
+      "w": "another reason is",
+      "ex": "Another reason is that the food is amazing."
+     },
+     {
+      "w": "it's a kind of",
+      "ex": "It's a kind of sweet bread with raisins."
+     },
+     {
+      "w": "let me think",
+      "ex": "Let me think... oh yes, it was in 2019."
+     },
+     {
+      "w": "what's more",
+      "ex": "What's more, the people are really friendly."
+     },
+     {
+      "w": "all in all",
+      "ex": "All in all, it's my favourite place in the world."
+     }
+    ],
+    "gram": "Long turn: sequencing (to begin with, finally), adding (what's more), paraphrasing (it's a kind of) and fillers (let me think)."
+   }
+  },
+  {
+   "d": 352,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Short poems in English",
+     "g": "Read and enjoy short poems, notice rhythm and rhyme, and try writing a haiku.",
+     "p": [
+      "Rhyme: words that end with the same sound: light/night, day/way. Rhythm: the pattern of stressed beats.",
+      "Shakespeare wrote: Shall I compare thee to a summer's day? Thee is old English for you. Read it aloud.",
+      "A haiku has 5-7-5 syllables: Soft rain on the roof / a cat sleeps beside the fire / the kettle whispers."
+     ],
+     "q": "Do you have a favourite poem or song lyric in your language? What do you like about it?",
+     "c": "Write your own haiku in English (5-7-5 syllables) about today's weather or your morning."
+    },
+    "de": {
+     "t": "Kurze Gedichte auf Englisch",
+     "g": "Du liest kurze Gedichte, achtest auf Rhythmus und Reim und schreibst ein Haiku.",
+     "p": [
+      "Reim: Wörter mit gleichem Endklang: light/night, day/way. Rhythmus: das Muster betonter Silben.",
+      "Shakespeare schrieb: Shall I compare thee to a summer's day? Thee ist altes Englisch für you. Lies laut und spür den Takt.",
+      "Ein Haiku hat 5-7-5 Silben: Soft rain on the roof / a cat sleeps beside the fire / the kettle whispers."
+     ],
+     "q": "Hast du ein Lieblingsgedicht oder einen Liedtext in deiner Sprache? Was gefällt dir daran?",
+     "c": "Schreib dein eigenes Haiku auf Englisch (5-7-5 Silben) über das heutige Wetter oder deinen Morgen."
+    },
+    "es": {
+     "t": "Poemas cortos en inglés",
+     "g": "Lee y disfruta poemas cortos, fíjate en el ritmo y la rima e intenta escribir un haiku.",
+     "p": [
+      "Rima: palabras que terminan igual: light/night, day/way. Ritmo: el patrón de sílabas acentuadas.",
+      "Shakespeare: Shall I compare thee to a summer's day? Thee es inglés antiguo para you. Léelo en voz alta.",
+      "Un haiku tiene 5-7-5 sílabas: Soft rain on the roof / a cat sleeps beside the fire / the kettle whispers."
+     ],
+     "q": "¿Tienes un poema o una letra de canción favorita en tu idioma? ¿Qué te gusta de ella?",
+     "c": "Escribe tu propio haiku en inglés (5-7-5 sílabas) sobre el tiempo de hoy o tu mañana."
+    },
+    "fr": {
+     "t": "Courts poèmes en anglais",
+     "g": "Lis et apprécie de courts poèmes, repère rythme et rimes, et essaie d'écrire un haïku.",
+     "p": [
+      "Rime : des mots qui finissent par le même son : light/night, day/way. Rythme : le motif des syllabes accentuées.",
+      "Shakespeare : Shall I compare thee to a summer's day? Thee est le you de l'anglais ancien. Lis-le à voix haute.",
+      "Un haïku a 5-7-5 syllabes : Soft rain on the roof / a cat sleeps beside the fire / the kettle whispers."
+     ],
+     "q": "As-tu un poème ou des paroles de chanson préférés dans ta langue ? Qu'est-ce qui te plaît ?",
+     "c": "Écris ton propre haïku en anglais (5-7-5 syllabes) sur la météo du jour ou ta matinée."
+    },
+    "it": {
+     "t": "Brevi poesie in inglese",
+     "g": "Leggi e goditi brevi poesie, nota ritmo e rima e prova a scrivere un haiku.",
+     "p": [
+      "Rima: parole che finiscono con lo stesso suono: light/night, day/way. Ritmo: lo schema delle sillabe accentate.",
+      "Shakespeare scrisse: Shall I compare thee to a summer's day? Thee è l'inglese antico per you. Leggilo ad alta voce.",
+      "Un haiku ha 5-7-5 sillabe: Soft rain on the roof / a cat sleeps beside the fire / the kettle whispers."
+     ],
+     "q": "Hai una poesia o un testo di canzone preferito nella tua lingua? Cosa ti piace?",
+     "c": "Scrivi il tuo haiku in inglese (5-7-5 sillabe) sul tempo di oggi o sulla tua mattina."
+    },
+    "pt": {
+     "t": "Poemas curtos em inglês",
+     "g": "Lê e aprecia poemas curtos, repara no ritmo e na rima e experimenta escrever um haiku.",
+     "p": [
+      "Rima: palavras que acabam com o mesmo som: light/night, day/way. Ritmo: o padrão das sílabas acentuadas.",
+      "Shakespeare: Shall I compare thee to a summer's day? Thee é inglês antigo para you. Lê em voz alta.",
+      "Um haiku tem 5-7-5 sílabas: Soft rain on the roof / a cat sleeps beside the fire / the kettle whispers."
+     ],
+     "q": "Tens um poema ou letra de canção preferida na tua língua? De que gostas nela?",
+     "c": "Escreve o teu próprio haiku em inglês (5-7-5 sílabas) sobre o tempo de hoje ou a tua manhã."
+    },
+    "pt_BR": {
+     "t": "Poemas curtos em inglês",
+     "g": "Leia e curta poemas curtos, perceba o ritmo e a rima e tente escrever um haicai.",
+     "p": [
+      "Rima: palavras que terminam com o mesmo som: light/night, day/way. Ritmo: o padrão das sílabas tônicas.",
+      "Shakespeare: Shall I compare thee to a summer's day? Thee é inglês antigo para you. Leia em voz alta.",
+      "Um haicai tem 5-7-5 sílabas: Soft rain on the roof / a cat sleeps beside the fire / the kettle whispers."
+     ],
+     "q": "Você tem um poema ou letra de música favorita na sua língua? O que gosta nela?",
+     "c": "Escreva seu próprio haicai em inglês (5-7-5 sílabas) sobre o tempo de hoje ou sua manhã."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "rhyme",
+      "ex": "Night rhymes with light and bright."
+     },
+     {
+      "w": "rhythm",
+      "ex": "Clap along to feel the rhythm of the poem."
+     },
+     {
+      "w": "verse",
+      "ex": "The second verse is my favourite."
+     },
+     {
+      "w": "haiku",
+      "ex": "A haiku has only seventeen syllables."
+     },
+     {
+      "w": "syllable",
+      "ex": "Butterfly has three syllables."
+     },
+     {
+      "w": "read aloud",
+      "ex": "Poems sound better when you read them aloud."
+     }
+    ],
+    "gram": "Poetry: rhyme (same end sound), rhythm (stress pattern), syllable counting; haiku = 5-7-5 syllables in three lines."
+   }
+  },
+  {
+   "d": 353,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "English literature classics",
+     "g": "Explore Shakespeare, Jane Austen and Charles Dickens and phrases from their works.",
+     "p": [
+      "Shakespeare gave English many phrases: break the ice, a wild-goose chase, all that glitters is not gold.",
+      "Jane Austen's Pride and Prejudice opens: It is a truth universally acknowledged... It is known for its wit and romance of manners.",
+      "Charles Dickens wrote Oliver Twist and A Christmas Carol. A Scrooge is a mean person; Please, sir, I want some more."
+     ],
+     "q": "Have you read or watched any English classic, in English or in translation? What did you think?",
+     "c": "Use two Shakespeare phrases in sentences about your own life, like break the ice at a party."
+    },
+    "de": {
+     "t": "Klassiker der englischen Literatur",
+     "g": "Du entdeckst Shakespeare, Jane Austen und Charles Dickens und Wendungen aus ihren Werken.",
+     "p": [
+      "Shakespeare schenkte dem Englischen viele Wendungen: break the ice, a wild-goose chase, all that glitters is not gold.",
+      "Jane Austens Pride and Prejudice beginnt: It is a truth universally acknowledged... Das Buch ist für seinen Witz bekannt.",
+      "Charles Dickens schrieb Oliver Twist und A Christmas Carol. A Scrooge ist ein Geizhals; Please, sir, I want some more."
+     ],
+     "q": "Hast du einen englischen Klassiker gelesen oder gesehen, auf Englisch oder übersetzt? Wie fandest du ihn?",
+     "c": "Verwende zwei Shakespeare-Wendungen in Sätzen über dein Leben, etwa break the ice auf einer Feier."
+    },
+    "es": {
+     "t": "Clásicos de la literatura inglesa",
+     "g": "Descubre a Shakespeare, Jane Austen y Charles Dickens y frases de sus obras.",
+     "p": [
+      "Shakespeare dio al inglés muchas expresiones: break the ice, a wild-goose chase, all that glitters is not gold.",
+      "Pride and Prejudice de Jane Austen empieza: It is a truth universally acknowledged... Es famosa por su ingenio.",
+      "Charles Dickens escribió Oliver Twist y A Christmas Carol. A Scrooge es un tacaño; Please, sir, I want some more."
+     ],
+     "q": "¿Has leído o visto algún clásico inglés, en inglés o traducido? ¿Qué te pareció?",
+     "c": "Usa dos expresiones de Shakespeare en frases sobre tu vida, como break the ice en una fiesta."
+    },
+    "fr": {
+     "t": "Classiques de la littérature anglaise",
+     "g": "Découvre Shakespeare, Jane Austen et Charles Dickens, et des expressions tirées de leurs œuvres.",
+     "p": [
+      "Shakespeare a offert à l'anglais beaucoup d'expressions : break the ice, a wild-goose chase, all that glitters is not gold.",
+      "Pride and Prejudice de Jane Austen commence par : It is a truth universally acknowledged... Le roman brille par son esprit.",
+      "Charles Dickens a écrit Oliver Twist et A Christmas Carol. A Scrooge est un grippe-sou ; Please, sir, I want some more."
+     ],
+     "q": "As-tu lu ou vu un classique anglais, en anglais ou traduit ? Qu'en as-tu pensé ?",
+     "c": "Utilise deux expressions de Shakespeare dans des phrases sur ta vie, comme break the ice à une fête."
+    },
+    "it": {
+     "t": "Classici della letteratura inglese",
+     "g": "Scopri Shakespeare, Jane Austen e Charles Dickens e le frasi nate dalle loro opere.",
+     "p": [
+      "Shakespeare ha regalato all'inglese molte espressioni: break the ice, a wild-goose chase, all that glitters is not gold.",
+      "Pride and Prejudice di Jane Austen inizia così: It is a truth universally acknowledged... È famoso per la sua ironia.",
+      "Charles Dickens scrisse Oliver Twist e A Christmas Carol. A Scrooge è un tirchio; Please, sir, I want some more."
+     ],
+     "q": "Hai letto o visto un classico inglese, in inglese o tradotto? Cosa ne pensi?",
+     "c": "Usa due espressioni di Shakespeare in frasi sulla tua vita, come break the ice a una festa."
+    },
+    "pt": {
+     "t": "Clássicos da literatura inglesa",
+     "g": "Descobre Shakespeare, Jane Austen e Charles Dickens e expressões das suas obras.",
+     "p": [
+      "Shakespeare deu ao inglês muitas expressões: break the ice, a wild-goose chase, all that glitters is not gold.",
+      "Pride and Prejudice de Jane Austen começa: It is a truth universally acknowledged... É conhecido pela sua ironia.",
+      "Charles Dickens escreveu Oliver Twist e A Christmas Carol. A Scrooge é um forreta; Please, sir, I want some more."
+     ],
+     "q": "Já leste ou viste algum clássico inglês, em inglês ou traduzido? O que achaste?",
+     "c": "Usa duas expressões de Shakespeare em frases sobre a tua vida, como break the ice numa festa."
+    },
+    "pt_BR": {
+     "t": "Clássicos da literatura inglesa",
+     "g": "Descubra Shakespeare, Jane Austen e Charles Dickens e expressões das suas obras.",
+     "p": [
+      "Shakespeare deu ao inglês muitas expressões: break the ice, a wild-goose chase, all that glitters is not gold.",
+      "Pride and Prejudice de Jane Austen começa: It is a truth universally acknowledged... É conhecido pela sua ironia.",
+      "Charles Dickens escreveu Oliver Twist e A Christmas Carol. A Scrooge é um pão-duro; Please, sir, I want some more."
+     ],
+     "q": "Você já leu ou assistiu a algum clássico inglês, em inglês ou traduzido? O que achou?",
+     "c": "Use duas expressões de Shakespeare em frases sobre sua vida, como break the ice numa festa."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "break the ice",
+      "ex": "A funny game helped break the ice."
+     },
+     {
+      "w": "a wild-goose chase",
+      "ex": "Looking for that shop was a wild-goose chase."
+     },
+     {
+      "w": "all that glitters is not gold",
+      "ex": "The offer looks great, but all that glitters is not gold."
+     },
+     {
+      "w": "a Scrooge",
+      "ex": "Don't be a Scrooge, buy everyone a coffee!"
+     },
+     {
+      "w": "a classic",
+      "ex": "Pride and Prejudice is a classic of English literature."
+     },
+     {
+      "w": "a novel",
+      "ex": "Dickens wrote many famous novels."
+     }
+    ],
+    "gram": "Literary phrases: many idioms come from Shakespeare; names become nouns (a Scrooge); past simple for authors' lives and works."
+   }
+  },
+  {
+   "d": 354,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Song lyrics and natural English",
+     "g": "Learn from song lyrics: contractions, slang and natural pronunciation.",
+     "p": [
+      "Songs use spoken forms: gonna, wanna, gotta, 'cause (because), ain't (very informal for isn't or haven't).",
+      "Sounds get dropped or linked: nothin' for nothing, lovin' for loving, and words blend to fit the beat.",
+      "Lyrics break grammar rules on purpose for rhythm. Enjoy them, but use standard forms in formal writing."
+     ],
+     "q": "Which English song do you love, and is there a line you didn't understand at first?",
+     "c": "Listen to an English song you like and write down three informal forms you hear, plus their standard versions."
+    },
+    "de": {
+     "t": "Songtexte und natürliches Englisch",
+     "g": "Du lernst aus Songtexten: Kurzformen, Slang und natürliche Aussprache.",
+     "p": [
+      "Songs nutzen gesprochene Formen: gonna, wanna, gotta, 'cause (because), ain't (sehr umgangssprachlich für isn't oder haven't).",
+      "Laute fallen weg oder verbinden sich: nothin' für nothing, lovin' für loving, Wörter verschmelzen im Takt.",
+      "Songtexte brechen absichtlich Grammatikregeln für den Rhythmus. Genieße sie, aber schreib formell in Standardform."
+     ],
+     "q": "Welchen englischen Song liebst du, und gibt es eine Zeile, die du anfangs nicht verstanden hast?",
+     "c": "Hör einen englischen Lieblingssong und notiere drei umgangssprachliche Formen und ihre Standardversion."
+    },
+    "es": {
+     "t": "Letras de canciones e inglés natural",
+     "g": "Aprende de las letras de canciones: contracciones, argot y pronunciación natural.",
+     "p": [
+      "Las canciones usan formas habladas: gonna, wanna, gotta, 'cause (because), ain't (muy informal por isn't o haven't).",
+      "Hay sonidos que se pierden o se unen: nothin' por nothing, lovin' por loving, y las palabras se funden con el ritmo.",
+      "Las letras rompen la gramática a propósito por el ritmo. Disfrútalas, pero usa formas estándar al escribir formalmente."
+     ],
+     "q": "¿Qué canción en inglés te encanta y hay algún verso que no entendiste al principio?",
+     "c": "Escucha una canción en inglés que te guste y anota tres formas informales con su versión estándar."
+    },
+    "fr": {
+     "t": "Paroles de chansons et anglais naturel",
+     "g": "Apprends grâce aux paroles de chansons : contractions, argot et prononciation naturelle.",
+     "p": [
+      "Les chansons utilisent l'oral : gonna, wanna, gotta, 'cause (because), ain't (très familier pour isn't ou haven't).",
+      "Des sons tombent ou se lient : nothin' pour nothing, lovin' pour loving, et les mots se fondent dans le rythme.",
+      "Les paroles cassent la grammaire exprès pour le rythme. Savoure-les, mais garde la forme standard à l'écrit formel."
+     ],
+     "q": "Quelle chanson anglaise adores-tu, et y a-t-il une phrase que tu n'avais pas comprise au début ?",
+     "c": "Écoute une chanson anglaise que tu aimes et note trois formes familières avec leur version standard."
+    },
+    "it": {
+     "t": "Testi delle canzoni e inglese naturale",
+     "g": "Impara dai testi delle canzoni: contrazioni, slang e pronuncia naturale.",
+     "p": [
+      "Le canzoni usano forme parlate: gonna, wanna, gotta, 'cause (because), ain't (molto informale per isn't o haven't).",
+      "Alcuni suoni cadono o si legano: nothin' per nothing, lovin' per loving, e le parole si fondono col ritmo.",
+      "I testi infrangono la grammatica apposta per il ritmo. Goditeli, ma usa le forme standard nello scritto formale."
+     ],
+     "q": "Quale canzone inglese ami, e c'è un verso che all'inizio non avevi capito?",
+     "c": "Ascolta una canzone inglese che ti piace e annota tre forme informali con la loro versione standard."
+    },
+    "pt": {
+     "t": "Letras de músicas e inglês natural",
+     "g": "Aprende com letras de músicas: contrações, calão e pronúncia natural.",
+     "p": [
+      "As músicas usam formas faladas: gonna, wanna, gotta, 'cause (because), ain't (muito informal para isn't ou haven't).",
+      "Há sons que caem ou se ligam: nothin' por nothing, lovin' por loving, e as palavras fundem-se com o ritmo.",
+      "As letras quebram a gramática de propósito pelo ritmo. Aproveita-as, mas usa as formas padrão na escrita formal."
+     ],
+     "q": "Que música em inglês adoras, e há algum verso que não percebeste ao início?",
+     "c": "Ouve uma música em inglês de que gostes e anota três formas informais com a versão padrão."
+    },
+    "pt_BR": {
+     "t": "Letras de música e inglês natural",
+     "g": "Aprenda com letras de música: contrações, gírias e pronúncia natural.",
+     "p": [
+      "As músicas usam formas faladas: gonna, wanna, gotta, 'cause (because), ain't (bem informal para isn't ou haven't).",
+      "Sons somem ou se ligam: nothin' por nothing, lovin' por loving, e as palavras se fundem no ritmo.",
+      "As letras quebram a gramática de propósito pelo ritmo. Curta, mas use as formas padrão na escrita formal."
+     ],
+     "q": "Que música em inglês você adora, e tem algum verso que não entendeu no começo?",
+     "c": "Ouça uma música em inglês de que gosta e anote três formas informais com a versão padrão."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "gonna",
+      "ex": "I'm gonna dance all night. (going to)"
+     },
+     {
+      "w": "wanna",
+      "ex": "Do you wanna come with us? (want to)"
+     },
+     {
+      "w": "'cause",
+      "ex": "I'm happy 'cause it's Friday. (because)"
+     },
+     {
+      "w": "ain't",
+      "ex": "It ain't over yet. (isn't, very informal)"
+     },
+     {
+      "w": "nothin'",
+      "ex": "There's nothin' to worry about. (nothing)"
+     },
+     {
+      "w": "chorus",
+      "ex": "Everyone sang along to the chorus."
+     }
+    ],
+    "gram": "Song English: informal contractions (gonna, wanna, 'cause, ain't) and dropped g (-in'); understand them, but use standard forms formally."
+   }
+  },
+  {
+   "d": 355,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Review: big ideas",
+     "g": "Recap discussions on technology, cities, work and culture in one big conversation.",
+     "p": [
+      "Technology: privacy, consent, algorithm, automation. Ask: To what extent should...? Predict with will, might, be likely to.",
+      "Cities, travel and work: green spaces, cycle lanes, overtourism, hidden gem, hybrid work, upskilling.",
+      "Culture and style: a hook, little did I know, rise sharply, rhyme and haiku, break the ice, gonna vs going to."
+     ],
+     "q": "Which big idea from the last two weeks would you most like to discuss with friends, and what is your view?",
+     "c": "Give a two-minute talk linking two topics, for example how AI might change cities, using five words from this unit."
+    },
+    "de": {
+     "t": "Review: große Ideen",
+     "g": "Du wiederholst Diskussionen über Technik, Städte, Arbeit und Kultur in einem großen Gespräch.",
+     "p": [
+      "Technik: privacy, consent, algorithm, automation. Frage: To what extent should...? Vorhersagen mit will, might, be likely to.",
+      "Städte, Reisen, Arbeit: green spaces, cycle lanes, overtourism, hidden gem, hybrid work, upskilling.",
+      "Kultur und Stil: a hook, little did I know, rise sharply, rhyme und haiku, break the ice, gonna vs going to."
+     ],
+     "q": "Über welche große Idee der letzten zwei Wochen würdest du am liebsten mit Freunden reden, und was meinst du dazu?",
+     "c": "Halte einen Zwei-Minuten-Vortrag, der zwei Themen verbindet, z. B. wie KI Städte verändern könnte, mit fünf Wörtern dieser Einheit."
+    },
+    "es": {
+     "t": "Repaso: grandes ideas",
+     "g": "Repasa los debates sobre tecnología, ciudades, trabajo y cultura en una gran conversación.",
+     "p": [
+      "Tecnología: privacy, consent, algorithm, automation. Pregunta: To what extent should...? Predice con will, might, be likely to.",
+      "Ciudades, viajes y trabajo: green spaces, cycle lanes, overtourism, hidden gem, hybrid work, upskilling.",
+      "Cultura y estilo: a hook, little did I know, rise sharply, rhyme y haiku, break the ice, gonna frente a going to."
+     ],
+     "q": "¿Qué gran idea de estas dos semanas te gustaría debatir con amigos y qué opinas tú?",
+     "c": "Da una charla de dos minutos que una dos temas, por ejemplo cómo la IA podría cambiar las ciudades, con cinco palabras de la unidad."
+    },
+    "fr": {
+     "t": "Révision : les grandes idées",
+     "g": "Révise les discussions sur la technologie, les villes, le travail et la culture en une grande conversation.",
+     "p": [
+      "Technologie : privacy, consent, algorithm, automation. Demande : To what extent should...? Prédis avec will, might, be likely to.",
+      "Villes, voyages et travail : green spaces, cycle lanes, overtourism, hidden gem, hybrid work, upskilling.",
+      "Culture et style : a hook, little did I know, rise sharply, rhyme et haïku, break the ice, gonna ou going to."
+     ],
+     "q": "De quelle grande idée de ces deux semaines aimerais-tu discuter avec des amis, et quel est ton avis ?",
+     "c": "Fais un exposé de deux minutes reliant deux thèmes, par exemple l'IA et les villes, avec cinq mots de l'unité."
+    },
+    "it": {
+     "t": "Ripasso: grandi idee",
+     "g": "Ripassa le discussioni su tecnologia, città, lavoro e cultura in una grande conversazione.",
+     "p": [
+      "Tecnologia: privacy, consent, algorithm, automation. Chiedi: To what extent should...? Prevedi con will, might, be likely to.",
+      "Città, viaggi e lavoro: green spaces, cycle lanes, overtourism, hidden gem, hybrid work, upskilling.",
+      "Cultura e stile: a hook, little did I know, rise sharply, rhyme e haiku, break the ice, gonna o going to."
+     ],
+     "q": "Di quale grande idea di queste due settimane ti piacerebbe discutere con gli amici, e cosa ne pensi?",
+     "c": "Fai un discorso di due minuti che colleghi due temi, ad esempio come l'IA potrebbe cambiare le città, con cinque parole dell'unità."
+    },
+    "pt": {
+     "t": "Revisão: grandes ideias",
+     "g": "Revê as discussões sobre tecnologia, cidades, trabalho e cultura numa grande conversa.",
+     "p": [
+      "Tecnologia: privacy, consent, algorithm, automation. Pergunta: To what extent should...? Prevê com will, might, be likely to.",
+      "Cidades, viagens e trabalho: green spaces, cycle lanes, overtourism, hidden gem, hybrid work, upskilling.",
+      "Cultura e estilo: a hook, little did I know, rise sharply, rhyme e haiku, break the ice, gonna ou going to."
+     ],
+     "q": "Que grande ideia destas duas semanas gostavas de discutir com amigos, e qual é a tua opinião?",
+     "c": "Faz uma intervenção de dois minutos que ligue dois temas, por exemplo como a IA pode mudar as cidades, com cinco palavras da unidade."
+    },
+    "pt_BR": {
+     "t": "Revisão: grandes ideias",
+     "g": "Revise as discussões sobre tecnologia, cidades, trabalho e cultura numa grande conversa.",
+     "p": [
+      "Tecnologia: privacy, consent, algorithm, automation. Pergunte: To what extent should...? Preveja com will, might, be likely to.",
+      "Cidades, viagens e trabalho: green spaces, cycle lanes, overtourism, hidden gem, hybrid work, upskilling.",
+      "Cultura e estilo: a hook, little did I know, rise sharply, rhyme e haicai, break the ice, gonna ou going to."
+     ],
+     "q": "Que grande ideia destas duas semanas você gostaria de discutir com amigos, e qual é a sua opinião?",
+     "c": "Faça uma fala de dois minutos ligando dois temas, por exemplo como a IA pode mudar as cidades, com cinco palavras da unidade."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "to what extent",
+      "ex": "To what extent will AI change how we learn?"
+     },
+     {
+      "w": "be likely to",
+      "ex": "Cities are likely to become greener."
+     },
+     {
+      "w": "a hidden gem",
+      "ex": "That little museum is a hidden gem."
+     },
+     {
+      "w": "hybrid work",
+      "ex": "Hybrid work gives people more freedom."
+     },
+     {
+      "w": "rise sharply",
+      "ex": "Online shopping rose sharply last decade."
+     },
+     {
+      "w": "little did I know",
+      "ex": "Little did I know how much I'd love poetry."
+     }
+    ],
+    "gram": "Review: discussion questions, future predictions, second conditional suggestions, trend language, narrative inversion and register."
+   }
+  },
+  {
+   "d": 356,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Exam skills: reading strategies",
+     "g": "Read smarter in exams: skimming, scanning, reading for detail and managing time.",
+     "p": [
+      "Skim for gist: read the title, first lines and topic sentences quickly to get the general idea.",
+      "Scan for specific facts: names, numbers, dates. Read for detail only where the answer seems to be.",
+      "Manage time: read the questions first, underline key words, and look for synonyms, not the exact same words."
+     ],
+     "q": "When you read in English, do you try to understand every word, or do you read for the main idea?",
+     "c": "Take a short English article: skim it in 30 seconds, write the main idea, then scan for two numbers or names."
+    },
+    "de": {
+     "t": "Prüfungstraining: Lesestrategien",
+     "g": "Du liest in Prüfungen klüger: Überfliegen, gezieltes Suchen, Detailverständnis und Zeitmanagement.",
+     "p": [
+      "Skimming für den Überblick: Titel, erste Zeilen und Kernsätze schnell lesen, um die Grundidee zu erfassen.",
+      "Scanning nach Fakten: Namen, Zahlen, Daten. Genau lesen nur dort, wo die Antwort stehen könnte.",
+      "Zeit einteilen: erst die Fragen lesen, Schlüsselwörter markieren und nach Synonymen suchen, nicht nach gleichen Wörtern."
+     ],
+     "q": "Versuchst du beim Lesen auf Englisch jedes Wort zu verstehen oder liest du für die Hauptidee?",
+     "c": "Nimm einen kurzen englischen Artikel: 30 Sekunden überfliegen, Hauptidee notieren, dann zwei Zahlen oder Namen suchen."
+    },
+    "es": {
+     "t": "Técnicas de examen: lectura",
+     "g": "Lee con estrategia en los exámenes: lectura rápida, búsqueda de datos, detalle y gestión del tiempo.",
+     "p": [
+      "Skimming para la idea general: lee rápido el título, las primeras líneas y las frases principales.",
+      "Scanning para datos concretos: nombres, cifras, fechas. Lee al detalle solo donde parece estar la respuesta.",
+      "Gestiona el tiempo: lee primero las preguntas, subraya palabras clave y busca sinónimos, no las mismas palabras."
+     ],
+     "q": "Cuando lees en inglés, ¿intentas entender cada palabra o lees para captar la idea principal?",
+     "c": "Toma un artículo corto en inglés: hojéalo en 30 segundos, escribe la idea principal y busca dos cifras o nombres."
+    },
+    "fr": {
+     "t": "Méthodes d'examen : la lecture",
+     "g": "Lis plus efficacement aux examens : lecture rapide, repérage, lecture détaillée et gestion du temps.",
+     "p": [
+      "Skimming pour l'idée générale : lis vite le titre, les premières lignes et les phrases clés.",
+      "Scanning pour les faits : noms, chiffres, dates. Lis en détail seulement là où la réponse semble se trouver.",
+      "Gère ton temps : lis d'abord les questions, souligne les mots clés et cherche des synonymes, pas les mêmes mots."
+     ],
+     "q": "Quand tu lis en anglais, essaies-tu de comprendre chaque mot ou lis-tu pour l'idée principale ?",
+     "c": "Prends un court article en anglais : parcours-le en 30 secondes, note l'idée principale, puis repère deux chiffres ou noms."
+    },
+    "it": {
+     "t": "Tecniche d'esame: la lettura",
+     "g": "Leggi in modo strategico agli esami: lettura veloce, ricerca mirata, dettaglio e gestione del tempo.",
+     "p": [
+      "Skimming per l'idea generale: leggi in fretta titolo, prime righe e frasi chiave.",
+      "Scanning per informazioni precise: nomi, numeri, date. Leggi nel dettaglio solo dove sembra esserci la risposta.",
+      "Gestisci il tempo: leggi prima le domande, sottolinea le parole chiave e cerca sinonimi, non le stesse parole."
+     ],
+     "q": "Quando leggi in inglese, cerchi di capire ogni parola o leggi per l'idea principale?",
+     "c": "Prendi un breve articolo in inglese: scorrilo in 30 secondi, scrivi l'idea principale, poi cerca due numeri o nomi."
+    },
+    "pt": {
+     "t": "Técnicas de exame: leitura",
+     "g": "Lê com estratégia nos exames: leitura rápida, procura de dados, pormenor e gestão do tempo.",
+     "p": [
+      "Skimming para a ideia geral: lê depressa o título, as primeiras linhas e as frases principais.",
+      "Scanning para dados concretos: nomes, números, datas. Lê em pormenor só onde parece estar a resposta.",
+      "Gere o tempo: lê primeiro as perguntas, sublinha palavras-chave e procura sinónimos, não as mesmas palavras."
+     ],
+     "q": "Quando lês em inglês, tentas perceber cada palavra ou lês para a ideia principal?",
+     "c": "Pega num artigo curto em inglês: percorre-o em 30 segundos, escreve a ideia principal e procura dois números ou nomes."
+    },
+    "pt_BR": {
+     "t": "Técnicas de prova: leitura",
+     "g": "Leia com estratégia nas provas: leitura rápida, busca de dados, detalhe e gestão do tempo.",
+     "p": [
+      "Skimming para a ideia geral: leia rápido o título, as primeiras linhas e as frases principais.",
+      "Scanning para dados específicos: nomes, números, datas. Leia em detalhe só onde a resposta parece estar.",
+      "Gerencie o tempo: leia as perguntas primeiro, sublinhe palavras-chave e procure sinônimos, não as mesmas palavras."
+     ],
+     "q": "Quando você lê em inglês, tenta entender cada palavra ou lê para pegar a ideia principal?",
+     "c": "Pegue um artigo curto em inglês: passe os olhos em 30 segundos, escreva a ideia principal e procure dois números ou nomes."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "skim",
+      "ex": "Skim the text first to get the general idea."
+     },
+     {
+      "w": "scan",
+      "ex": "Scan the page for the date of the event."
+     },
+     {
+      "w": "the gist",
+      "ex": "I read it quickly just to get the gist."
+     },
+     {
+      "w": "key words",
+      "ex": "Underline the key words in each question."
+     },
+     {
+      "w": "synonym",
+      "ex": "The text uses big, but the question says large: a synonym."
+     },
+     {
+      "w": "topic sentence",
+      "ex": "The topic sentence tells you what the paragraph is about."
+     }
+    ],
+    "gram": "Reading strategies: skim (gist), scan (specific info), read for detail; questions often paraphrase the text with synonyms."
+   }
+  },
+  {
+   "d": 357,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Exam skills: listening strategies",
+     "g": "Listen better in exams: predict, catch key words and handle distractors.",
+     "p": [
+      "Before listening: read the questions, predict the topic and the type of answer (a number, a place, a name).",
+      "While listening: focus on key words and synonyms. Speakers often correct themselves: It's on Monday... no, Tuesday.",
+      "Distractors are wrong answers that are mentioned. Listen for but, actually, in the end. Use the second listening to check."
+     ],
+     "q": "What do you find hardest in English listening tests: speed, accents, or tricky options?",
+     "c": "Listen to a short podcast clip: predict three words before, then note any self-corrections or changes of mind."
+    },
+    "de": {
+     "t": "Prüfungstraining: Hörstrategien",
+     "g": "Du hörst in Prüfungen besser zu: vorhersagen, Schlüsselwörter erfassen, Ablenker erkennen.",
+     "p": [
+      "Vor dem Hören: Fragen lesen, Thema und Antworttyp vorhersagen (eine Zahl, ein Ort, ein Name).",
+      "Beim Hören: auf Schlüsselwörter und Synonyme achten. Sprecher korrigieren sich oft: It's on Monday... no, Tuesday.",
+      "Ablenker sind falsche Antworten, die erwähnt werden. Achte auf but, actually, in the end. Nutze den zweiten Durchgang zur Kontrolle."
+     ],
+     "q": "Was ist für dich beim Hörverstehen am schwersten: Tempo, Akzente oder knifflige Optionen?",
+     "c": "Hör einen kurzen Podcast-Ausschnitt: Sag vorher drei Wörter voraus und notiere dann Selbstkorrekturen."
+    },
+    "es": {
+     "t": "Técnicas de examen: comprensión auditiva",
+     "g": "Escucha mejor en los exámenes: anticipa, capta palabras clave y evita distractores.",
+     "p": [
+      "Antes de escuchar: lee las preguntas, anticipa el tema y el tipo de respuesta (un número, un lugar, un nombre).",
+      "Mientras escuchas: céntrate en palabras clave y sinónimos. Los hablantes se corrigen: It's on Monday... no, Tuesday.",
+      "Los distractores son respuestas falsas que se mencionan. Atento a but, actually, in the end. Usa la segunda escucha para comprobar."
+     ],
+     "q": "¿Qué te cuesta más en las pruebas de comprensión auditiva: la velocidad, los acentos o las opciones engañosas?",
+     "c": "Escucha un fragmento corto de pódcast: anticipa tres palabras antes y anota luego las autocorrecciones."
+    },
+    "fr": {
+     "t": "Méthodes d'examen : la compréhension orale",
+     "g": "Écoute mieux aux examens : anticipe, repère les mots clés et déjoue les distracteurs.",
+     "p": [
+      "Avant l'écoute : lis les questions, anticipe le thème et le type de réponse (un nombre, un lieu, un nom).",
+      "Pendant l'écoute : concentre-toi sur les mots clés et les synonymes. On se corrige souvent : It's on Monday... no, Tuesday.",
+      "Les distracteurs sont de fausses réponses mentionnées. Guette but, actually, in the end. Vérifie à la deuxième écoute."
+     ],
+     "q": "Qu'est-ce qui est le plus dur pour toi en compréhension orale : le débit, les accents ou les pièges ?",
+     "c": "Écoute un court extrait de podcast : prédis trois mots avant, puis note les autocorrections."
+    },
+    "it": {
+     "t": "Tecniche d'esame: l'ascolto",
+     "g": "Ascolta meglio agli esami: anticipa, cogli le parole chiave e gestisci i distrattori.",
+     "p": [
+      "Prima dell'ascolto: leggi le domande, prevedi l'argomento e il tipo di risposta (un numero, un luogo, un nome).",
+      "Durante l'ascolto: concentrati su parole chiave e sinonimi. Chi parla spesso si corregge: It's on Monday... no, Tuesday.",
+      "I distrattori sono risposte sbagliate citate nel testo. Attento a but, actually, in the end. Usa il secondo ascolto per verificare."
+     ],
+     "q": "Cosa trovi più difficile nelle prove di ascolto in inglese: velocità, accenti o opzioni ingannevoli?",
+     "c": "Ascolta un breve spezzone di podcast: prevedi tre parole prima, poi annota le autocorrezioni."
+    },
+    "pt": {
+     "t": "Técnicas de exame: compreensão oral",
+     "g": "Ouve melhor nos exames: antecipa, apanha palavras-chave e lida com distratores.",
+     "p": [
+      "Antes de ouvir: lê as perguntas, antecipa o tema e o tipo de resposta (um número, um lugar, um nome).",
+      "Enquanto ouves: foca-te em palavras-chave e sinónimos. Os falantes corrigem-se: It's on Monday... no, Tuesday.",
+      "Os distratores são respostas erradas mencionadas. Atenção a but, actually, in the end. Usa a segunda audição para confirmar."
+     ],
+     "q": "O que te custa mais nos testes de compreensão oral em inglês: a velocidade, os sotaques ou as opções enganadoras?",
+     "c": "Ouve um excerto curto de podcast: antecipa três palavras antes e depois anota as autocorreções."
+    },
+    "pt_BR": {
+     "t": "Técnicas de prova: compreensão auditiva",
+     "g": "Ouça melhor nas provas: antecipe, pegue as palavras-chave e lide com distratores.",
+     "p": [
+      "Antes de ouvir: leia as perguntas, antecipe o tema e o tipo de resposta (um número, um lugar, um nome).",
+      "Enquanto ouve: foque em palavras-chave e sinônimos. Os falantes se corrigem: It's on Monday... no, Tuesday.",
+      "Distratores são respostas erradas mencionadas no áudio. Atenção a but, actually, in the end. Use a segunda vez para conferir."
+     ],
+     "q": "O que é mais difícil para você nas provas de listening em inglês: velocidade, sotaques ou opções enganosas?",
+     "c": "Ouça um trecho curto de podcast: antecipe três palavras antes e depois anote as autocorreções."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "predict",
+      "ex": "Predict the answer before you listen."
+     },
+     {
+      "w": "distractor",
+      "ex": "Be careful: the first time mentioned was a distractor."
+     },
+     {
+      "w": "actually",
+      "ex": "It starts at eight. Actually, no, half past eight."
+     },
+     {
+      "w": "in the end",
+      "ex": "In the end, they decided to take the train."
+     },
+     {
+      "w": "second listening",
+      "ex": "Use the second listening to check your answers."
+     },
+     {
+      "w": "key information",
+      "ex": "Write down key information like times and prices."
+     }
+    ],
+    "gram": "Listening: predict answer types; watch for corrections (actually, no, wait) and contrast (but) that signal distractors."
+   }
+  },
+  {
+   "d": 358,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Exam skills: writing an essay",
+     "g": "Plan, write and check a B2 essay in a set time.",
+     "p": [
+      "Plan (5 min): read the task, choose your position, note two or three main ideas with examples.",
+      "Write: introduction (topic + opinion), body paragraphs with topic sentences, conclusion (In conclusion, I believe...).",
+      "Check (5 min): word count, tenses, articles, linkers (however, moreover), spelling. Formal style: no contractions."
+     ],
+     "q": "Which part of essay writing is hardest for you: getting ideas, organising them, or the grammar?",
+     "c": "Plan an essay in five minutes: Is it better to study alone or in a group? Write your opinion and two main points."
+    },
+    "de": {
+     "t": "Prüfungstraining: Essay schreiben",
+     "g": "Du planst, schreibst und prüfst einen B2-Essay in vorgegebener Zeit.",
+     "p": [
+      "Planen (5 Min.): Aufgabe lesen, Position wählen, zwei bis drei Hauptideen mit Beispielen notieren.",
+      "Schreiben: Einleitung (Thema + Meinung), Absätze mit Kernsätzen, Schluss (In conclusion, I believe...).",
+      "Prüfen (5 Min.): Wortzahl, Zeiten, Artikel, Konnektoren (however, moreover), Rechtschreibung. Formell: keine Kurzformen."
+     ],
+     "q": "Was fällt dir beim Essay-Schreiben am schwersten: Ideen finden, ordnen oder die Grammatik?",
+     "c": "Plane einen Essay in fünf Minuten: Is it better to study alone or in a group? Notiere Meinung und zwei Hauptpunkte."
+    },
+    "es": {
+     "t": "Técnicas de examen: el ensayo",
+     "g": "Planifica, escribe y revisa un ensayo B2 en un tiempo limitado.",
+     "p": [
+      "Planifica (5 min): lee la tarea, elige tu postura y anota dos o tres ideas principales con ejemplos.",
+      "Escribe: introducción (tema + opinión), párrafos con frase principal y conclusión (In conclusion, I believe...).",
+      "Revisa (5 min): número de palabras, tiempos, artículos, conectores (however, moreover) y ortografía. Formal: sin contracciones."
+     ],
+     "q": "¿Qué parte de escribir un ensayo te cuesta más: tener ideas, organizarlas o la gramática?",
+     "c": "Planifica un ensayo en cinco minutos: Is it better to study alone or in a group? Escribe tu opinión y dos ideas."
+    },
+    "fr": {
+     "t": "Méthodes d'examen : la rédaction",
+     "g": "Planifie, rédige et relis une rédaction B2 en temps limité.",
+     "p": [
+      "Planifie (5 min) : lis le sujet, choisis ta position, note deux ou trois idées principales avec des exemples.",
+      "Rédige : introduction (sujet + avis), paragraphes avec phrase clé, conclusion (In conclusion, I believe...).",
+      "Relis (5 min) : nombre de mots, temps, articles, connecteurs (however, moreover), orthographe. Formel : pas de contractions."
+     ],
+     "q": "Quelle partie de la rédaction est la plus difficile pour toi : trouver des idées, les organiser ou la grammaire ?",
+     "c": "Planifie une rédaction en cinq minutes : Is it better to study alone or in a group? Note ton avis et deux idées."
+    },
+    "it": {
+     "t": "Tecniche d'esame: il saggio",
+     "g": "Pianifica, scrivi e rileggi un saggio B2 in un tempo stabilito.",
+     "p": [
+      "Pianifica (5 min): leggi la traccia, scegli la tua posizione, annota due o tre idee principali con esempi.",
+      "Scrivi: introduzione (tema + opinione), paragrafi con frase chiave, conclusione (In conclusion, I believe...).",
+      "Rileggi (5 min): numero di parole, tempi, articoli, connettivi (however, moreover), ortografia. Formale: niente contrazioni."
+     ],
+     "q": "Quale parte della scrittura di un saggio trovi più difficile: trovare idee, organizzarle o la grammatica?",
+     "c": "Pianifica un saggio in cinque minuti: Is it better to study alone or in a group? Scrivi opinione e due punti."
+    },
+    "pt": {
+     "t": "Técnicas de exame: o ensaio",
+     "g": "Planeia, escreve e revê um ensaio B2 num tempo limitado.",
+     "p": [
+      "Planeia (5 min): lê a tarefa, escolhe a tua posição e anota duas ou três ideias principais com exemplos.",
+      "Escreve: introdução (tema + opinião), parágrafos com frase principal e conclusão (In conclusion, I believe...).",
+      "Revê (5 min): número de palavras, tempos, artigos, conectores (however, moreover), ortografia. Formal: sem contrações."
+     ],
+     "q": "Que parte de escrever um ensaio te custa mais: ter ideias, organizá-las ou a gramática?",
+     "c": "Planeia um ensaio em cinco minutos: Is it better to study alone or in a group? Escreve a tua opinião e duas ideias."
+    },
+    "pt_BR": {
+     "t": "Técnicas de prova: a redação",
+     "g": "Planeje, escreva e revise uma redação B2 em tempo limitado.",
+     "p": [
+      "Planeje (5 min): leia a proposta, escolha sua posição e anote duas ou três ideias principais com exemplos.",
+      "Escreva: introdução (tema + opinião), parágrafos com frase principal e conclusão (In conclusion, I believe...).",
+      "Revise (5 min): número de palavras, tempos, artigos, conectores (however, moreover), ortografia. Formal: sem contrações."
+     ],
+     "q": "Que parte de escrever uma redação é mais difícil para você: ter ideias, organizá-las ou a gramática?",
+     "c": "Planeje uma redação em cinco minutos: Is it better to study alone or in a group? Anote sua opinião e duas ideias."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "in my opinion",
+      "ex": "In my opinion, public transport should be free."
+     },
+     {
+      "w": "firstly",
+      "ex": "Firstly, studying in a group is more motivating."
+     },
+     {
+      "w": "however",
+      "ex": "However, some people concentrate better alone."
+     },
+     {
+      "w": "moreover",
+      "ex": "Moreover, group work builds teamwork skills."
+     },
+     {
+      "w": "in conclusion",
+      "ex": "In conclusion, I believe both methods have value."
+     },
+     {
+      "w": "word count",
+      "ex": "Check your word count before you finish."
+     }
+    ],
+    "gram": "Essay structure: intro with thesis, body paragraphs with topic sentences, conclusion; formal linkers (firstly, however, moreover)."
+   }
+  },
+  {
+   "d": 359,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Exam skills: speaking test",
+     "g": "Shine in a speaking test: long turn, discussion and interaction tips.",
+     "p": [
+      "Long turn: compare and speculate about photos: Both pictures show... whereas... They might be... It looks as if...",
+      "Discussion: give opinions with reasons and examples, then extend: That's an interesting question. I'd say..., because...",
+      "Interaction: involve your partner: What do you think? Shall we decide on...? Don't worry about mistakes; keep talking."
+     ],
+     "q": "How do you feel before a speaking test or an important conversation in English? What helps you relax?",
+     "c": "Describe two imaginary photos (a beach holiday and a city break) for one minute using both, whereas and might."
+    },
+    "de": {
+     "t": "Prüfungstraining: mündliche Prüfung",
+     "g": "Du glänzt in der mündlichen Prüfung: Monolog, Diskussion und Interaktion.",
+     "p": [
+      "Monolog: Fotos vergleichen und vermuten: Both pictures show... whereas... They might be... It looks as if...",
+      "Diskussion: Meinung mit Grund und Beispiel, dann ausbauen: That's an interesting question. I'd say..., because...",
+      "Interaktion: Partner einbeziehen: What do you think? Shall we decide on...? Keine Angst vor Fehlern, weiterreden."
+     ],
+     "q": "Wie fühlst du dich vor einer mündlichen Prüfung oder einem wichtigen Gespräch auf Englisch? Was hilft dir?",
+     "c": "Beschreibe eine Minute lang zwei erfundene Fotos (Strandurlaub und Städtereise) mit both, whereas und might."
+    },
+    "es": {
+     "t": "Técnicas de examen: la prueba oral",
+     "g": "Brilla en la prueba oral: monólogo, debate e interacción.",
+     "p": [
+      "Monólogo: compara fotos y especula: Both pictures show... whereas... They might be... It looks as if...",
+      "Debate: da opiniones con razones y ejemplos y amplía: That's an interesting question. I'd say..., because...",
+      "Interacción: implica a tu compañero: What do you think? Shall we decide on...? No temas los errores; sigue hablando."
+     ],
+     "q": "¿Cómo te sientes antes de una prueba oral o una conversación importante en inglés? ¿Qué te ayuda a relajarte?",
+     "c": "Describe durante un minuto dos fotos imaginarias (playa y escapada urbana) con both, whereas y might."
+    },
+    "fr": {
+     "t": "Méthodes d'examen : l'épreuve orale",
+     "g": "Brille à l'oral : monologue, discussion et interaction.",
+     "p": [
+      "Monologue : compare des photos et fais des hypothèses : Both pictures show... whereas... They might be... It looks as if...",
+      "Discussion : donne ton avis avec raisons et exemples, puis développe : That's an interesting question. I'd say..., because...",
+      "Interaction : implique ton partenaire : What do you think? Shall we decide on...? Pas peur des erreurs, continue."
+     ],
+     "q": "Comment te sens-tu avant un oral ou une conversation importante en anglais ? Qu'est-ce qui t'aide à te détendre ?",
+     "c": "Décris pendant une minute deux photos imaginaires (plage et city break) avec both, whereas et might."
+    },
+    "it": {
+     "t": "Tecniche d'esame: la prova orale",
+     "g": "Brilla nella prova orale: monologo, discussione e interazione.",
+     "p": [
+      "Monologo: confronta foto e fai ipotesi: Both pictures show... whereas... They might be... It looks as if...",
+      "Discussione: dai opinioni con motivi ed esempi, poi approfondisci: That's an interesting question. I'd say..., because...",
+      "Interazione: coinvolgi il partner: What do you think? Shall we decide on...? Non temere gli errori, continua a parlare."
+     ],
+     "q": "Come ti senti prima di una prova orale o di una conversazione importante in inglese? Cosa ti aiuta a rilassarti?",
+     "c": "Descrivi per un minuto due foto immaginarie (mare e città) con both, whereas e might."
+    },
+    "pt": {
+     "t": "Técnicas de exame: a prova oral",
+     "g": "Brilha na prova oral: monólogo, discussão e interação.",
+     "p": [
+      "Monólogo: compara fotos e especula: Both pictures show... whereas... They might be... It looks as if...",
+      "Discussão: dá opiniões com razões e exemplos e desenvolve: That's an interesting question. I'd say..., because...",
+      "Interação: envolve o teu par: What do you think? Shall we decide on...? Não tenhas medo de errar; continua a falar."
+     ],
+     "q": "Como te sentes antes de uma prova oral ou de uma conversa importante em inglês? O que te ajuda a relaxar?",
+     "c": "Descreve durante um minuto duas fotos imaginárias (praia e cidade) com both, whereas e might."
+    },
+    "pt_BR": {
+     "t": "Técnicas de prova: a prova oral",
+     "g": "Brilhe na prova oral: monólogo, discussão e interação.",
+     "p": [
+      "Monólogo: compare fotos e especule: Both pictures show... whereas... They might be... It looks as if...",
+      "Discussão: dê opiniões com motivos e exemplos e desenvolva: That's an interesting question. I'd say..., because...",
+      "Interação: envolva seu parceiro: What do you think? Shall we decide on...? Não tenha medo de errar; continue falando."
+     ],
+     "q": "Como você se sente antes de uma prova oral ou de uma conversa importante em inglês? O que te ajuda a relaxar?",
+     "c": "Descreva por um minuto duas fotos imaginárias (praia e cidade) usando both, whereas e might."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "both pictures show",
+      "ex": "Both pictures show people enjoying their free time."
+     },
+     {
+      "w": "whereas",
+      "ex": "The first is outdoors, whereas the second is indoors."
+     },
+     {
+      "w": "it looks as if",
+      "ex": "It looks as if they're celebrating something."
+     },
+     {
+      "w": "they might be",
+      "ex": "They might be on holiday with friends."
+     },
+     {
+      "w": "I'd say",
+      "ex": "I'd say the beach looks more relaxing."
+     },
+     {
+      "w": "what do you think",
+      "ex": "I prefer the city. What do you think?"
+     }
+    ],
+    "gram": "Speculating: might/could/may be + -ing, It looks as if + clause; comparing: both, whereas, while; involving others: What do you think?"
+   }
+  },
+  {
+   "d": 360,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Mock B2: reading and writing",
+     "g": "Practise exam-style reading questions and write a 150-word text.",
+     "p": [
+      "Reading: skim first, read the questions, scan for key words and synonyms, then read the key part in detail.",
+      "Watch for tricks: true in general but not in the text, or opposite meaning with not, never, rarely.",
+      "Writing 150 words: plan, then intro, two body paragraphs, conclusion. Check linkers, tenses and word count."
+     ],
+     "q": "How did today's practice feel? Which part went well, and which would you like to practise again?",
+     "c": "Write a 150-word email to a friend recommending a book, film or app, in 25 minutes, then check it."
+    },
+    "de": {
+     "t": "Probe-B2: Lesen und Schreiben",
+     "g": "Du übst Leseaufgaben im Prüfungsformat und schreibst einen Text mit 150 Wörtern.",
+     "p": [
+      "Lesen: erst überfliegen, Fragen lesen, nach Schlüsselwörtern und Synonymen suchen, dann die Stelle genau lesen.",
+      "Vorsicht, Fallen: allgemein wahr, aber nicht im Text, oder Gegenteil durch not, never, rarely.",
+      "Schreiben, 150 Wörter: planen, dann Einleitung, zwei Hauptabsätze, Schluss. Konnektoren, Zeiten und Wortzahl prüfen."
+     ],
+     "q": "Wie hat sich die heutige Übung angefühlt? Was lief gut, und was möchtest du noch einmal üben?",
+     "c": "Schreib in 25 Minuten eine Mail mit 150 Wörtern an einen Freund mit einer Buch-, Film- oder App-Empfehlung, dann prüfe sie."
+    },
+    "es": {
+     "t": "Simulacro B2: lectura y escritura",
+     "g": "Practica preguntas de lectura tipo examen y escribe un texto de 150 palabras.",
+     "p": [
+      "Lectura: hojea primero, lee las preguntas, busca palabras clave y sinónimos y luego lee al detalle la parte clave.",
+      "Ojo con las trampas: algo cierto en general pero no en el texto, o el sentido contrario con not, never, rarely.",
+      "Escritura de 150 palabras: planifica, luego introducción, dos párrafos y conclusión. Revisa conectores, tiempos y extensión."
+     ],
+     "q": "¿Cómo te ha ido la práctica de hoy? ¿Qué salió bien y qué te gustaría repetir?",
+     "c": "Escribe en 25 minutos un correo de 150 palabras a un amigo recomendando un libro, una película o una app, y revísalo."
+    },
+    "fr": {
+     "t": "Examen blanc B2 : lecture et écriture",
+     "g": "Entraîne-toi aux questions de lecture type examen et écris un texte de 150 mots.",
+     "p": [
+      "Lecture : survole d'abord, lis les questions, repère mots clés et synonymes, puis lis en détail le passage clé.",
+      "Attention aux pièges : vrai en général mais pas dans le texte, ou sens inverse avec not, never, rarely.",
+      "Écriture en 150 mots : planifie, puis introduction, deux paragraphes, conclusion. Vérifie connecteurs, temps et nombre de mots."
+     ],
+     "q": "Comment s'est passé l'entraînement du jour ? Qu'est-ce qui a bien marché, et que veux-tu retravailler ?",
+     "c": "Écris en 25 minutes un mail de 150 mots à un ami pour recommander un livre, un film ou une appli, puis relis-le."
+    },
+    "it": {
+     "t": "Simulazione B2: lettura e scrittura",
+     "g": "Esercitati con domande di lettura in stile esame e scrivi un testo di 150 parole.",
+     "p": [
+      "Lettura: prima scorri, leggi le domande, cerca parole chiave e sinonimi, poi leggi nel dettaglio la parte chiave.",
+      "Attenzione alle trappole: vero in generale ma non nel testo, o significato opposto con not, never, rarely.",
+      "Scrittura di 150 parole: pianifica, poi introduzione, due paragrafi, conclusione. Controlla connettivi, tempi e lunghezza."
+     ],
+     "q": "Com'è andata l'esercitazione di oggi? Cosa è andato bene e cosa vorresti ripetere?",
+     "c": "Scrivi in 25 minuti un'email di 150 parole a un amico consigliando un libro, un film o un'app, poi rileggila."
+    },
+    "pt": {
+     "t": "Simulação B2: leitura e escrita",
+     "g": "Pratica perguntas de leitura ao estilo de exame e escreve um texto de 150 palavras.",
+     "p": [
+      "Leitura: percorre primeiro, lê as perguntas, procura palavras-chave e sinónimos e depois lê com atenção a parte-chave.",
+      "Cuidado com as armadilhas: verdade em geral mas não no texto, ou o sentido contrário com not, never, rarely.",
+      "Escrita de 150 palavras: planeia, depois introdução, dois parágrafos e conclusão. Revê conectores, tempos e extensão."
+     ],
+     "q": "Como correu a prática de hoje? O que correu bem e o que gostavas de repetir?",
+     "c": "Escreve em 25 minutos um e-mail de 150 palavras a um amigo a recomendar um livro, filme ou app, e revê-o."
+    },
+    "pt_BR": {
+     "t": "Simulado B2: leitura e escrita",
+     "g": "Pratique questões de leitura no estilo de prova e escreva um texto de 150 palavras.",
+     "p": [
+      "Leitura: passe os olhos primeiro, leia as perguntas, procure palavras-chave e sinônimos e depois leia com atenção a parte-chave.",
+      "Cuidado com as pegadinhas: verdade em geral mas não no texto, ou o sentido oposto com not, never, rarely.",
+      "Escrita de 150 palavras: planeje, depois introdução, dois parágrafos e conclusão. Revise conectores, tempos e tamanho."
+     ],
+     "q": "Como foi a prática de hoje? O que deu certo e o que você gostaria de repetir?",
+     "c": "Escreva em 25 minutos um e-mail de 150 palavras a um amigo recomendando um livro, filme ou app, e revise."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "according to the text",
+      "ex": "According to the text, the museum opened in 1990."
+     },
+     {
+      "w": "not mentioned",
+      "ex": "The price is not mentioned in the article."
+     },
+     {
+      "w": "rarely",
+      "ex": "The writer rarely travels by plane."
+     },
+     {
+      "w": "I'd highly recommend",
+      "ex": "I'd highly recommend this app to anyone learning English."
+     },
+     {
+      "w": "on top of that",
+      "ex": "On top of that, it's completely free."
+     },
+     {
+      "w": "proofread",
+      "ex": "Always proofread your text before handing it in."
+     }
+    ],
+    "gram": "Exam reading: watch negatives and frequency (not, never, rarely); writing: clear paragraphs, varied linkers, accurate tenses."
+   }
+  }
+ ]
+}

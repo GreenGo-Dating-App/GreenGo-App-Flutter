@@ -1,0 +1,1305 @@
+{
+"topic": "digital_detox",
+"questions": [
+{
+"id": "digital_detox-001",
+"lv": "any",
+"i18n": {
+"en": "What is the first thing you usually do with your phone in the morning?",
+"de": "Was machst du morgens normalerweise als Erstes mit deinem Handy?",
+"es": "¿Qué es lo primero que sueles hacer con el móvil por la mañana?",
+"fr": "Quelle est la première chose que tu fais avec ton téléphone le matin ?",
+"it": "Qual è la prima cosa che fai di solito con il telefono al mattino?",
+"pt": "Qual é a primeira coisa que costumas fazer com o telemóvel de manhã?",
+"pt_BR": "Qual é a primeira coisa que você costuma fazer com o celular de manhã?"
+}
+},
+{
+"id": "digital_detox-002",
+"lv": "any",
+"i18n": {
+"en": "Which app do you enjoy most, and why?",
+"de": "Welche App nutzt du am liebsten, und warum?",
+"es": "¿Qué aplicación disfrutas más y por qué?",
+"fr": "Quelle application préfères-tu, et pourquoi ?",
+"it": "Quale app ti piace di più e perché?",
+"pt": "Que aplicação aprecias mais e porquê?",
+"pt_BR": "Qual aplicativo você mais curte e por quê?"
+}
+},
+{
+"id": "digital_detox-003",
+"lv": "any",
+"i18n": {
+"en": "What is an offline hobby that always makes you lose track of time?",
+"de": "Bei welchem Offline-Hobby vergisst du immer die Zeit?",
+"es": "¿Qué afición sin pantallas te hace perder siempre la noción del tiempo?",
+"fr": "Quel loisir hors écran te fait toujours perdre la notion du temps ?",
+"it": "Quale hobby offline ti fa sempre perdere la cognizione del tempo?",
+"pt": "Que passatempo offline te faz sempre perder a noção do tempo?",
+"pt_BR": "Qual hobby offline sempre te faz perder a noção do tempo?"
+}
+},
+{
+"id": "digital_detox-004",
+"lv": "any",
+"i18n": {
+"en": "How do you feel when you accidentally leave your phone at home?",
+"de": "Wie fühlst du dich, wenn du dein Handy aus Versehen zu Hause lässt?",
+"es": "¿Cómo te sientes cuando te dejas el móvil en casa sin querer?",
+"fr": "Comment te sens-tu quand tu oublies ton téléphone à la maison ?",
+"it": "Come ti senti quando dimentichi il telefono a casa?",
+"pt": "Como te sentes quando te esqueces do telemóvel em casa?",
+"pt_BR": "Como você se sente quando esquece o celular em casa?"
+}
+},
+{
+"id": "digital_detox-005",
+"lv": "any",
+"i18n": {
+"en": "What did you love doing as a child before you had a phone?",
+"de": "Was hast du als Kind gern gemacht, bevor du ein Handy hattest?",
+"es": "¿Qué te encantaba hacer de niño antes de tener móvil?",
+"fr": "Qu'aimais-tu faire enfant, avant d'avoir un téléphone ?",
+"it": "Che cosa amavi fare da bambino, prima di avere un telefono?",
+"pt": "O que adoravas fazer em criança, antes de teres telemóvel?",
+"pt_BR": "O que você adorava fazer quando criança, antes de ter celular?"
+}
+},
+{
+"id": "digital_detox-006",
+"lv": "any",
+"i18n": {
+"en": "Where is your favourite place to relax without screens?",
+"de": "Wo entspannst du dich am liebsten ohne Bildschirm?",
+"es": "¿Cuál es tu lugar favorito para relajarte sin pantallas?",
+"fr": "Quel est ton endroit préféré pour te détendre sans écran ?",
+"it": "Qual è il tuo posto preferito per rilassarti senza schermi?",
+"pt": "Qual é o teu sítio preferido para relaxar sem ecrãs?",
+"pt_BR": "Qual é o seu lugar favorito para relaxar sem telas?"
+}
+},
+{
+"id": "digital_detox-007",
+"lv": "any",
+"i18n": {
+"en": "Which notification do you find the most distracting?",
+"de": "Welche Benachrichtigung lenkt dich am meisten ab?",
+"es": "¿Qué notificación te distrae más?",
+"fr": "Quelle notification te distrait le plus ?",
+"it": "Quale notifica ti distrae di più?",
+"pt": "Que notificação te distrai mais?",
+"pt_BR": "Qual notificação mais te distrai?"
+}
+},
+{
+"id": "digital_detox-008",
+"lv": "any",
+"i18n": {
+"en": "What does a healthy balance with technology look like for you?",
+"de": "Wie sieht für dich ein gesundes Gleichgewicht mit Technik aus?",
+"es": "¿Cómo sería para ti un equilibrio sano con la tecnología?",
+"fr": "À quoi ressemble pour toi un bon équilibre avec la technologie ?",
+"it": "Che aspetto ha per te un equilibrio sano con la tecnologia?",
+"pt": "Como é para ti um equilíbrio saudável com a tecnologia?",
+"pt_BR": "Como é para você um equilíbrio saudável com a tecnologia?"
+}
+},
+{
+"id": "digital_detox-009",
+"lv": "any",
+"i18n": {
+"en": "How do you usually spend your evenings?",
+"de": "Wie verbringst du normalerweise deine Abende?",
+"es": "¿Cómo sueles pasar las tardes y noches?",
+"fr": "Comment passes-tu tes soirées en général ?",
+"it": "Come trascorri di solito le serate?",
+"pt": "Como costumas passar as noites?",
+"pt_BR": "Como você costuma passar as noites?"
+}
+},
+{
+"id": "digital_detox-010",
+"lv": "any",
+"i18n": {
+"en": "What is a book you enjoyed so much you could not put it down?",
+"de": "Welches Buch hat dich so gefesselt, dass du es nicht weglegen konntest?",
+"es": "¿Qué libro te gustó tanto que no podías dejarlo?",
+"fr": "Quel livre as-tu tellement aimé que tu ne pouvais plus le lâcher ?",
+"it": "Quale libro ti è piaciuto così tanto da non riuscire a staccartene?",
+"pt": "Que livro gostaste tanto que não o conseguias largar?",
+"pt_BR": "Qual livro você gostou tanto que não conseguia largar?"
+}
+},
+{
+"id": "digital_detox-011",
+"lv": "any",
+"i18n": {
+"en": "Who in your life is great at being present and fully listening?",
+"de": "Wer in deinem Leben ist richtig gut darin, präsent zu sein und zuzuhören?",
+"es": "¿Quién en tu vida sabe estar presente y escuchar de verdad?",
+"fr": "Qui, dans ton entourage, sait vraiment être présent et écouter ?",
+"it": "Chi nella tua vita è bravissimo a essere presente e ad ascoltare davvero?",
+"pt": "Quem na tua vida sabe mesmo estar presente e ouvir com atenção?",
+"pt_BR": "Quem na sua vida é ótimo em estar presente e ouvir de verdade?"
+}
+},
+{
+"id": "digital_detox-012",
+"lv": "any",
+"i18n": {
+"en": "What is your favourite way to spend time outdoors?",
+"de": "Wie verbringst du am liebsten Zeit draußen?",
+"es": "¿Cuál es tu forma favorita de pasar tiempo al aire libre?",
+"fr": "Quelle est ta façon préférée de passer du temps dehors ?",
+"it": "Qual è il tuo modo preferito di passare il tempo all'aperto?",
+"pt": "Qual é a tua forma preferida de passar tempo ao ar livre?",
+"pt_BR": "Qual é o seu jeito favorito de passar tempo ao ar livre?"
+}
+},
+{
+"id": "digital_detox-013",
+"lv": "any",
+"i18n": {
+"en": "Which technology genuinely makes your life better?",
+"de": "Welche Technik macht dein Leben wirklich besser?",
+"es": "¿Qué tecnología mejora de verdad tu vida?",
+"fr": "Quelle technologie améliore vraiment ta vie ?",
+"it": "Quale tecnologia migliora davvero la tua vita?",
+"pt": "Que tecnologia torna mesmo a tua vida melhor?",
+"pt_BR": "Qual tecnologia realmente deixa a sua vida melhor?"
+}
+},
+{
+"id": "digital_detox-014",
+"lv": "any",
+"i18n": {
+"en": "What do you usually do while waiting in a queue?",
+"de": "Was machst du normalerweise, wenn du in einer Schlange wartest?",
+"es": "¿Qué sueles hacer mientras esperas en una cola?",
+"fr": "Que fais-tu d'habitude quand tu attends dans une file ?",
+"it": "Che cosa fai di solito mentre aspetti in fila?",
+"pt": "O que costumas fazer enquanto esperas numa fila?",
+"pt_BR": "O que você costuma fazer enquanto espera numa fila?"
+}
+},
+{
+"id": "digital_detox-015",
+"lv": "any",
+"i18n": {
+"en": "How do you feel after a long scroll through social media?",
+"de": "Wie fühlst du dich nach langem Scrollen durch soziale Medien?",
+"es": "¿Cómo te sientes después de un buen rato en las redes sociales?",
+"fr": "Comment te sens-tu après avoir longtemps fait défiler les réseaux sociaux ?",
+"it": "Come ti senti dopo aver scrollato a lungo i social?",
+"pt": "Como te sentes depois de muito tempo a percorrer as redes sociais?",
+"pt_BR": "Como você se sente depois de rolar as redes sociais por muito tempo?"
+}
+},
+{
+"id": "digital_detox-016",
+"lv": "any",
+"i18n": {
+"en": "What would you do with one extra free hour every day?",
+"de": "Was würdest du mit einer zusätzlichen freien Stunde pro Tag machen?",
+"es": "¿Qué harías con una hora libre extra cada día?",
+"fr": "Que ferais-tu d'une heure libre en plus chaque jour ?",
+"it": "Che cosa faresti con un'ora libera in più ogni giorno?",
+"pt": "O que farias com uma hora livre a mais todos os dias?",
+"pt_BR": "O que você faria com uma hora livre a mais todo dia?"
+}
+},
+{
+"id": "digital_detox-017",
+"lv": "any",
+"i18n": {
+"en": "Which friend would you love to meet in person more often?",
+"de": "Welche Freundin oder welchen Freund würdest du gern öfter persönlich treffen?",
+"es": "¿A qué amigo te encantaría ver en persona más a menudo?",
+"fr": "Quel ami aimerais-tu voir en personne plus souvent ?",
+"it": "Quale amico ti piacerebbe vedere di persona più spesso?",
+"pt": "Que amigo gostavas de encontrar pessoalmente mais vezes?",
+"pt_BR": "Qual amigo você adoraria encontrar pessoalmente com mais frequência?"
+}
+},
+{
+"id": "digital_detox-018",
+"lv": "any",
+"i18n": {
+"en": "What is your favourite screen-free activity on a rainy day?",
+"de": "Was machst du an einem Regentag am liebsten ohne Bildschirm?",
+"es": "¿Cuál es tu actividad favorita sin pantallas en un día de lluvia?",
+"fr": "Quelle est ton activité sans écran préférée un jour de pluie ?",
+"it": "Qual è la tua attività preferita senza schermi in una giornata di pioggia?",
+"pt": "Qual é a tua atividade preferida sem ecrãs num dia de chuva?",
+"pt_BR": "Qual é a sua atividade favorita sem telas num dia de chuva?"
+}
+},
+{
+"id": "digital_detox-019",
+"lv": "any",
+"i18n": {
+"en": "Do you have a place at home where phones are not welcome?",
+"de": "Gibt es bei dir zu Hause einen Ort, an dem Handys nicht erwünscht sind?",
+"es": "¿Tienes algún rincón en casa donde los móviles no son bienvenidos?",
+"fr": "As-tu un endroit chez toi où les téléphones ne sont pas les bienvenus ?",
+"it": "Hai un posto in casa dove i telefoni non sono i benvenuti?",
+"pt": "Tens algum sítio em casa onde os telemóveis não são bem-vindos?",
+"pt_BR": "Você tem algum lugar em casa onde celular não é bem-vindo?"
+}
+},
+{
+"id": "digital_detox-020",
+"lv": "any",
+"i18n": {
+"en": "What helps you feel calm at the end of a long day?",
+"de": "Was hilft dir, am Ende eines langen Tages zur Ruhe zu kommen?",
+"es": "¿Qué te ayuda a sentirte tranquilo al final de un día largo?",
+"fr": "Qu'est-ce qui t'aide à te sentir calme après une longue journée ?",
+"it": "Che cosa ti aiuta a sentirti calmo alla fine di una lunga giornata?",
+"pt": "O que te ajuda a sentir-te calmo no fim de um dia longo?",
+"pt_BR": "O que te ajuda a ficar calmo no fim de um dia longo?"
+}
+},
+{
+"id": "digital_detox-021",
+"lv": "any",
+"i18n": {
+"en": "Which activity makes you forget to check your phone completely?",
+"de": "Bei welcher Aktivität vergisst du völlig, aufs Handy zu schauen?",
+"es": "¿Con qué actividad te olvidas por completo de mirar el móvil?",
+"fr": "Quelle activité te fait complètement oublier de regarder ton téléphone ?",
+"it": "Quale attività ti fa dimenticare del tutto di controllare il telefono?",
+"pt": "Que atividade te faz esquecer completamente de ver o telemóvel?",
+"pt_BR": "Qual atividade te faz esquecer totalmente de olhar o celular?"
+}
+},
+{
+"id": "digital_detox-022",
+"lv": "any",
+"i18n": {
+"en": "How do people in your culture usually use phones at meals?",
+"de": "Wie gehen die Menschen in deiner Kultur beim Essen mit Handys um?",
+"es": "¿Cómo se suele usar el móvil en las comidas en tu cultura?",
+"fr": "Comment utilise-t-on le téléphone à table dans ta culture ?",
+"it": "Come si usa di solito il telefono a tavola nella tua cultura?",
+"pt": "Como se costuma usar o telemóvel às refeições na tua cultura?",
+"pt_BR": "Como as pessoas da sua cultura costumam usar o celular nas refeições?"
+}
+},
+{
+"id": "digital_detox-023",
+"lv": "any",
+"i18n": {
+"en": "What is a skill you would love to learn if you had more free time?",
+"de": "Welche Fähigkeit würdest du gern lernen, wenn du mehr Freizeit hättest?",
+"es": "¿Qué habilidad te encantaría aprender si tuvieras más tiempo libre?",
+"fr": "Quelle compétence aimerais-tu apprendre si tu avais plus de temps libre ?",
+"it": "Quale abilità ti piacerebbe imparare se avessi più tempo libero?",
+"pt": "Que competência gostavas de aprender se tivesses mais tempo livre?",
+"pt_BR": "Qual habilidade você adoraria aprender se tivesse mais tempo livre?"
+}
+},
+{
+"id": "digital_detox-024",
+"lv": "any",
+"i18n": {
+"en": "What does your ideal lazy Sunday look like?",
+"de": "Wie sieht dein idealer gemütlicher Sonntag aus?",
+"es": "¿Cómo es tu domingo tranquilo ideal?",
+"fr": "À quoi ressemble ton dimanche paresseux idéal ?",
+"it": "Com'è la tua domenica di relax ideale?",
+"pt": "Como é o teu domingo preguiçoso ideal?",
+"pt_BR": "Como é o seu domingo preguiçoso ideal?"
+}
+},
+{
+"id": "digital_detox-025",
+"lv": "any",
+"i18n": {
+"en": "Do you prefer reading on paper or on a screen? Why?",
+"de": "Liest du lieber auf Papier oder auf dem Bildschirm? Warum?",
+"es": "¿Prefieres leer en papel o en pantalla? ¿Por qué?",
+"fr": "Préfères-tu lire sur papier ou sur écran ? Pourquoi ?",
+"it": "Preferisci leggere su carta o su schermo? Perché?",
+"pt": "Preferes ler em papel ou num ecrã? Porquê?",
+"pt_BR": "Você prefere ler no papel ou na tela? Por quê?"
+}
+},
+{
+"id": "digital_detox-026",
+"lv": "any",
+"i18n": {
+"en": "What is a memorable moment you are glad you did not film?",
+"de": "An welchen schönen Moment erinnerst du dich, den du zum Glück nicht gefilmt hast?",
+"es": "¿Qué momento memorable te alegras de no haber grabado?",
+"fr": "Quel moment mémorable es-tu content de ne pas avoir filmé ?",
+"it": "Qual è un momento memorabile che sei contento di non aver filmato?",
+"pt": "Que momento memorável estás contente por não teres filmado?",
+"pt_BR": "Qual momento marcante você está feliz por não ter filmado?"
+}
+},
+{
+"id": "digital_detox-027",
+"lv": "any",
+"i18n": {
+"en": "Which sound of nature do you find most relaxing?",
+"de": "Welches Naturgeräusch findest du am entspannendsten?",
+"es": "¿Qué sonido de la naturaleza te relaja más?",
+"fr": "Quel son de la nature trouves-tu le plus apaisant ?",
+"it": "Quale suono della natura trovi più rilassante?",
+"pt": "Que som da natureza achas mais relaxante?",
+"pt_BR": "Qual som da natureza você acha mais relaxante?"
+}
+},
+{
+"id": "digital_detox-028",
+"lv": "any",
+"i18n": {
+"en": "How do you like to keep in touch with friends far away?",
+"de": "Wie hältst du am liebsten Kontakt zu Freunden, die weit weg wohnen?",
+"es": "¿Cómo te gusta mantener el contacto con amigos que viven lejos?",
+"fr": "Comment aimes-tu garder le contact avec des amis qui vivent loin ?",
+"it": "Come ti piace restare in contatto con gli amici lontani?",
+"pt": "Como gostas de manter o contacto com amigos que vivem longe?",
+"pt_BR": "Como você gosta de manter contato com amigos que moram longe?"
+}
+},
+{
+"id": "digital_detox-029",
+"lv": "any",
+"i18n": {
+"en": "What game do you love playing face to face with others?",
+"de": "Welches Spiel spielst du am liebsten mit anderen von Angesicht zu Angesicht?",
+"es": "¿A qué juego te encanta jugar cara a cara con otras personas?",
+"fr": "À quel jeu adores-tu jouer en face à face avec d'autres ?",
+"it": "A quale gioco ami giocare di persona con gli altri?",
+"pt": "A que jogo adoras jogar cara a cara com outras pessoas?",
+"pt_BR": "Qual jogo você adora jogar cara a cara com outras pessoas?"
+}
+},
+{
+"id": "digital_detox-030",
+"lv": "any",
+"i18n": {
+"en": "What is one thing you notice more when you look up from your screen?",
+"de": "Was fällt dir mehr auf, wenn du vom Bildschirm aufschaust?",
+"es": "¿Qué notas más cuando levantas la vista de la pantalla?",
+"fr": "Que remarques-tu davantage quand tu lèves les yeux de ton écran ?",
+"it": "Che cosa noti di più quando alzi lo sguardo dallo schermo?",
+"pt": "O que reparas mais quando levantas os olhos do ecrã?",
+"pt_BR": "O que você percebe mais quando tira os olhos da tela?"
+}
+},
+{
+"id": "digital_detox-031",
+"lv": "any",
+"i18n": {
+"en": "How do you feel about video calls compared with phone calls?",
+"de": "Wie findest du Videoanrufe im Vergleich zu normalen Telefonaten?",
+"es": "¿Qué opinas de las videollamadas en comparación con las llamadas normales?",
+"fr": "Que penses-tu des appels vidéo par rapport aux appels classiques ?",
+"it": "Che cosa pensi delle videochiamate rispetto alle normali telefonate?",
+"pt": "O que achas das videochamadas em comparação com as chamadas normais?",
+"pt_BR": "O que você acha das chamadas de vídeo comparadas às ligações normais?"
+}
+},
+{
+"id": "digital_detox-032",
+"lv": "any",
+"i18n": {
+"en": "What creative thing would you make if you had a free afternoon?",
+"de": "Was würdest du an einem freien Nachmittag Kreatives machen?",
+"es": "¿Qué cosa creativa harías si tuvieras una tarde libre?",
+"fr": "Que ferais-tu de créatif si tu avais un après-midi libre ?",
+"it": "Che cosa di creativo faresti se avessi un pomeriggio libero?",
+"pt": "Que coisa criativa farias se tivesses uma tarde livre?",
+"pt_BR": "O que você faria de criativo se tivesse uma tarde livre?"
+}
+},
+{
+"id": "digital_detox-033",
+"lv": "any",
+"i18n": {
+"en": "What does a perfect walk look like for you?",
+"de": "Wie sieht für dich ein perfekter Spaziergang aus?",
+"es": "¿Cómo es para ti un paseo perfecto?",
+"fr": "À quoi ressemble pour toi une promenade parfaite ?",
+"it": "Com'è per te una passeggiata perfetta?",
+"pt": "Como é para ti um passeio perfeito?",
+"pt_BR": "Como é para você uma caminhada perfeita?"
+}
+},
+{
+"id": "digital_detox-034",
+"lv": "any",
+"i18n": {
+"en": "Which daily moment would you most like to keep screen-free?",
+"de": "Welchen Moment am Tag würdest du am liebsten bildschirmfrei halten?",
+"es": "¿Qué momento del día te gustaría más mantener sin pantallas?",
+"fr": "Quel moment de la journée aimerais-tu le plus garder sans écran ?",
+"it": "Quale momento della giornata vorresti tenere libero dagli schermi?",
+"pt": "Que momento do dia gostavas mais de manter sem ecrãs?",
+"pt_BR": "Qual momento do dia você mais gostaria de manter sem telas?"
+}
+},
+{
+"id": "digital_detox-035",
+"lv": "any",
+"i18n": {
+"en": "What is your favourite place to watch a sunset or the sky?",
+"de": "Wo schaust du dir am liebsten einen Sonnenuntergang oder den Himmel an?",
+"es": "¿Cuál es tu lugar favorito para ver una puesta de sol o el cielo?",
+"fr": "Quel est ton endroit préféré pour regarder un coucher de soleil ou le ciel ?",
+"it": "Qual è il tuo posto preferito per guardare un tramonto o il cielo?",
+"pt": "Qual é o teu sítio preferido para ver o pôr do sol ou o céu?",
+"pt_BR": "Qual é o seu lugar favorito para ver o pôr do sol ou o céu?"
+}
+},
+{
+"id": "digital_detox-036",
+"lv": "any",
+"i18n": {
+"en": "How do you usually take a break during work or study?",
+"de": "Wie machst du normalerweise Pause bei der Arbeit oder beim Lernen?",
+"es": "¿Cómo sueles descansar durante el trabajo o el estudio?",
+"fr": "Comment fais-tu une pause d'habitude pendant le travail ou les études ?",
+"it": "Come fai di solito una pausa durante il lavoro o lo studio?",
+"pt": "Como costumas fazer uma pausa no trabalho ou nos estudos?",
+"pt_BR": "Como você costuma fazer uma pausa no trabalho ou nos estudos?"
+}
+},
+{
+"id": "digital_detox-037",
+"lv": "any",
+"i18n": {
+"en": "What is a conversation you remember because everyone was fully present?",
+"de": "An welches Gespräch erinnerst du dich, weil alle ganz bei der Sache waren?",
+"es": "¿Qué conversación recuerdas porque todos estaban plenamente presentes?",
+"fr": "De quelle conversation te souviens-tu parce que tout le monde était vraiment présent ?",
+"it": "Quale conversazione ricordi perché tutti erano davvero presenti?",
+"pt": "De que conversa te lembras porque todos estavam mesmo presentes?",
+"pt_BR": "De qual conversa você se lembra porque todos estavam realmente presentes?"
+}
+},
+{
+"id": "digital_detox-038",
+"lv": "any",
+"i18n": {
+"en": "Which offline tradition in your family or culture do you treasure?",
+"de": "Welche Offline-Tradition in deiner Familie oder Kultur liegt dir am Herzen?",
+"es": "¿Qué tradición sin pantallas de tu familia o cultura valoras mucho?",
+"fr": "Quelle tradition hors écran de ta famille ou de ta culture te tient à cœur ?",
+"it": "Quale tradizione senza schermi della tua famiglia o cultura ti sta a cuore?",
+"pt": "Que tradição sem ecrãs da tua família ou cultura valorizas muito?",
+"pt_BR": "Qual tradição sem telas da sua família ou cultura você mais valoriza?"
+}
+},
+{
+"id": "digital_detox-039",
+"lv": "any",
+"i18n": {
+"en": "What would you like to have more time for in your life?",
+"de": "Wofür hättest du in deinem Leben gern mehr Zeit?",
+"es": "¿Para qué te gustaría tener más tiempo en tu vida?",
+"fr": "Pour quoi aimerais-tu avoir plus de temps dans ta vie ?",
+"it": "Per che cosa vorresti avere più tempo nella tua vita?",
+"pt": "Para que gostavas de ter mais tempo na tua vida?",
+"pt_BR": "Para o que você gostaria de ter mais tempo na sua vida?"
+}
+},
+{
+"id": "digital_detox-040",
+"lv": "any",
+"i18n": {
+"en": "Which handmade or printed object do you treasure more than any digital file?",
+"de": "Welchen handgemachten oder gedruckten Gegenstand schätzt du mehr als jede digitale Datei?",
+"es": "¿Qué objeto hecho a mano o impreso valoras más que cualquier archivo digital?",
+"fr": "Quel objet fait main ou imprimé chéris-tu plus que n'importe quel fichier numérique ?",
+"it": "Quale oggetto fatto a mano o stampato ti è più caro di qualsiasi file digitale?",
+"pt": "Que objeto feito à mão ou impresso valorizas mais do que qualquer ficheiro digital?",
+"pt_BR": "Qual objeto feito à mão ou impresso você valoriza mais do que qualquer arquivo digital?"
+}
+},
+{
+"id": "digital_detox-041",
+"lv": "beginner",
+"i18n": {
+"en": "Have you ever checked your screen time report? What surprised you?",
+"de": "Hast du schon einmal deine Bildschirmzeit angeschaut? Was hat dich überrascht?",
+"es": "¿Has mirado alguna vez tu informe de tiempo de pantalla? ¿Qué te sorprendió?",
+"fr": "As-tu déjà consulté ton temps d'écran ? Qu'est-ce qui t'a surpris ?",
+"it": "Hai mai controllato il resoconto del tuo tempo davanti allo schermo? Che cosa ti ha sorpreso?",
+"pt": "Já viste o relatório do teu tempo de ecrã? O que te surpreendeu?",
+"pt_BR": "Você já olhou o relatório do seu tempo de tela? O que te surpreendeu?"
+}
+},
+{
+"id": "digital_detox-042",
+"lv": "beginner",
+"i18n": {
+"en": "In which moments do you pick up your phone without really deciding to?",
+"de": "In welchen Momenten greifst du zum Handy, ohne dich bewusst dafür zu entscheiden?",
+"es": "¿En qué momentos coges el móvil sin decidirlo realmente?",
+"fr": "À quels moments prends-tu ton téléphone sans vraiment le décider ?",
+"it": "In quali momenti prendi il telefono senza deciderlo davvero?",
+"pt": "Em que momentos pegas no telemóvel sem decidires realmente?",
+"pt_BR": "Em quais momentos você pega o celular sem realmente decidir?"
+}
+},
+{
+"id": "digital_detox-043",
+"lv": "beginner",
+"i18n": {
+"en": "Which notifications could you turn off without missing anything important?",
+"de": "Welche Benachrichtigungen könntest du abschalten, ohne etwas Wichtiges zu verpassen?",
+"es": "¿Qué notificaciones podrías desactivar sin perderte nada importante?",
+"fr": "Quelles notifications pourrais-tu désactiver sans rien rater d'important ?",
+"it": "Quali notifiche potresti disattivare senza perdere nulla di importante?",
+"pt": "Que notificações podias desligar sem perder nada importante?",
+"pt_BR": "Quais notificações você poderia desligar sem perder nada importante?"
+}
+},
+{
+"id": "digital_detox-044",
+"lv": "beginner",
+"i18n": {
+"en": "Where does your phone sleep at night?",
+"de": "Wo schläft dein Handy nachts?",
+"es": "¿Dónde duerme tu móvil por la noche?",
+"fr": "Où dort ton téléphone la nuit ?",
+"it": "Dove dorme il tuo telefono di notte?",
+"pt": "Onde dorme o teu telemóvel à noite?",
+"pt_BR": "Onde o seu celular dorme à noite?"
+}
+},
+{
+"id": "digital_detox-045",
+"lv": "beginner",
+"i18n": {
+"en": "Which app would you like to spend a little less time on?",
+"de": "Mit welcher App würdest du gern etwas weniger Zeit verbringen?",
+"es": "¿En qué aplicación te gustaría pasar un poco menos de tiempo?",
+"fr": "Sur quelle application aimerais-tu passer un peu moins de temps ?",
+"it": "Su quale app ti piacerebbe passare un po' meno tempo?",
+"pt": "Em que aplicação gostavas de passar um pouco menos de tempo?",
+"pt_BR": "Em qual aplicativo você gostaria de passar um pouco menos de tempo?"
+}
+},
+{
+"id": "digital_detox-046",
+"lv": "beginner",
+"i18n": {
+"en": "What could you do instead of scrolling while you wait for something?",
+"de": "Was könntest du statt Scrollen tun, während du auf etwas wartest?",
+"es": "¿Qué podrías hacer en lugar de deslizar la pantalla mientras esperas?",
+"fr": "Que pourrais-tu faire au lieu de faire défiler ton écran quand tu attends ?",
+"it": "Che cosa potresti fare invece di scrollare mentre aspetti qualcosa?",
+"pt": "O que podias fazer em vez de percorrer o ecrã enquanto esperas?",
+"pt_BR": "O que você poderia fazer em vez de rolar a tela enquanto espera?"
+}
+},
+{
+"id": "digital_detox-047",
+"lv": "beginner",
+"i18n": {
+"en": "How would your mornings change if you skipped the phone for the first half hour?",
+"de": "Wie würden sich deine Morgen verändern, wenn du die erste halbe Stunde aufs Handy verzichtest?",
+"es": "¿Cómo cambiarían tus mañanas sin móvil durante la primera media hora?",
+"fr": "Comment tes matins changeraient-ils sans téléphone la première demi-heure ?",
+"it": "Come cambierebbero le tue mattine senza telefono per la prima mezz'ora?",
+"pt": "Como mudariam as tuas manhãs sem telemóvel na primeira meia hora?",
+"pt_BR": "Como suas manhãs mudariam sem celular na primeira meia hora?"
+}
+},
+{
+"id": "digital_detox-048",
+"lv": "beginner",
+"i18n": {
+"en": "What is one small screen-time goal you could try this week?",
+"de": "Welches kleine Bildschirmzeit-Ziel könntest du diese Woche ausprobieren?",
+"es": "¿Qué pequeño objetivo de tiempo de pantalla podrías probar esta semana?",
+"fr": "Quel petit objectif de temps d'écran pourrais-tu essayer cette semaine ?",
+"it": "Quale piccolo obiettivo sul tempo davanti agli schermi potresti provare questa settimana?",
+"pt": "Que pequeno objetivo de tempo de ecrã podias experimentar esta semana?",
+"pt_BR": "Qual pequena meta de tempo de tela você poderia tentar nesta semana?"
+}
+},
+{
+"id": "digital_detox-049",
+"lv": "beginner",
+"i18n": {
+"en": "Which apps are on your home screen, and do they all deserve to be there?",
+"de": "Welche Apps sind auf deinem Startbildschirm, und verdienen sie alle diesen Platz?",
+"es": "¿Qué aplicaciones tienes en la pantalla de inicio y merecen todas estar ahí?",
+"fr": "Quelles applications sont sur ton écran d'accueil, et méritent-elles toutes d'y être ?",
+"it": "Quali app hai nella schermata principale, e meritano tutte di stare lì?",
+"pt": "Que aplicações tens no ecrã inicial, e merecem todas estar lá?",
+"pt_BR": "Quais aplicativos estão na sua tela inicial, e todos merecem estar lá?"
+}
+},
+{
+"id": "digital_detox-050",
+"lv": "beginner",
+"i18n": {
+"en": "What does your last hour before sleep usually look like?",
+"de": "Wie sieht deine letzte Stunde vor dem Schlafen normalerweise aus?",
+"es": "¿Cómo suele ser tu última hora antes de dormir?",
+"fr": "À quoi ressemble d'habitude ta dernière heure avant de dormir ?",
+"it": "Com'è di solito la tua ultima ora prima di dormire?",
+"pt": "Como costuma ser a tua última hora antes de dormir?",
+"pt_BR": "Como costuma ser a sua última hora antes de dormir?"
+}
+},
+{
+"id": "digital_detox-051",
+"lv": "beginner",
+"i18n": {
+"en": "Have you ever tried a walk without headphones? How did it feel?",
+"de": "Hast du schon einmal einen Spaziergang ohne Kopfhörer gemacht? Wie war das?",
+"es": "¿Has probado alguna vez a pasear sin auriculares? ¿Qué tal fue?",
+"fr": "As-tu déjà essayé de marcher sans écouteurs ? Qu'as-tu ressenti ?",
+"it": "Hai mai provato a camminare senza cuffie? Com'è stato?",
+"pt": "Já experimentaste caminhar sem auscultadores? Como foi?",
+"pt_BR": "Você já tentou caminhar sem fones de ouvido? Como foi?"
+}
+},
+{
+"id": "digital_detox-052",
+"lv": "beginner",
+"i18n": {
+"en": "How often do you take breaks to rest your eyes during screen work?",
+"de": "Wie oft machst du bei der Bildschirmarbeit Pausen für deine Augen?",
+"es": "¿Con qué frecuencia descansas la vista cuando trabajas con pantallas?",
+"fr": "À quelle fréquence reposes-tu tes yeux quand tu travailles sur écran ?",
+"it": "Quanto spesso fai pause per riposare gli occhi quando lavori al computer?",
+"pt": "Com que frequência fazes pausas para descansar os olhos ao trabalhar no ecrã?",
+"pt_BR": "Com que frequência você faz pausas para descansar os olhos diante da tela?"
+}
+},
+{
+"id": "digital_detox-053",
+"lv": "beginner",
+"i18n": {
+"en": "Which offline hobby would you like to pick up again?",
+"de": "Welches Offline-Hobby würdest du gern wieder aufnehmen?",
+"es": "¿Qué afición sin pantallas te gustaría retomar?",
+"fr": "Quel loisir hors écran aimerais-tu reprendre ?",
+"it": "Quale hobby offline ti piacerebbe riprendere?",
+"pt": "Que passatempo offline gostavas de retomar?",
+"pt_BR": "Qual hobby offline você gostaria de retomar?"
+}
+},
+{
+"id": "digital_detox-054",
+"lv": "beginner",
+"i18n": {
+"en": "How do you feel about turning on Do Not Disturb for a few hours?",
+"de": "Was hältst du davon, für ein paar Stunden Bitte nicht stören einzuschalten?",
+"es": "¿Qué te parece activar el modo No molestar durante unas horas?",
+"fr": "Que penses-tu d'activer le mode Ne pas déranger pendant quelques heures ?",
+"it": "Che cosa ne pensi di attivare la modalità Non disturbare per qualche ora?",
+"pt": "O que achas de ativar o modo Não incomodar durante algumas horas?",
+"pt_BR": "O que você acha de ativar o modo Não perturbe por algumas horas?"
+}
+},
+{
+"id": "digital_detox-055",
+"lv": "beginner",
+"i18n": {
+"en": "Do you eat meals with your phone on the table? How does it affect the meal?",
+"de": "Liegt dein Handy beim Essen auf dem Tisch? Wie wirkt sich das aus?",
+"es": "¿Comes con el móvil en la mesa? ¿Cómo afecta eso a la comida?",
+"fr": "Manges-tu avec ton téléphone sur la table ? Quel effet cela a-t-il sur le repas ?",
+"it": "Mangi con il telefono sul tavolo? Che effetto ha sul pasto?",
+"pt": "Comes com o telemóvel em cima da mesa? Como é que isso afeta a refeição?",
+"pt_BR": "Você come com o celular na mesa? Como isso afeta a refeição?"
+}
+},
+{
+"id": "digital_detox-056",
+"lv": "beginner",
+"i18n": {
+"en": "Which group chat pulls your attention the most during the day?",
+"de": "Welcher Gruppenchat zieht tagsüber am meisten Aufmerksamkeit auf sich?",
+"es": "¿Qué chat de grupo te roba más atención durante el día?",
+"fr": "Quel groupe de discussion accapare le plus ton attention dans la journée ?",
+"it": "Quale chat di gruppo ti ruba più attenzione durante il giorno?",
+"pt": "Que conversa de grupo te rouba mais atenção ao longo do dia?",
+"pt_BR": "Qual grupo de conversa mais rouba a sua atenção durante o dia?"
+}
+},
+{
+"id": "digital_detox-057",
+"lv": "beginner",
+"i18n": {
+"en": "How do you feel when you see a red badge on an app icon?",
+"de": "Wie fühlst du dich, wenn du ein rotes Zeichen auf einem App-Symbol siehst?",
+"es": "¿Cómo te sientes cuando ves un globo rojo en el icono de una aplicación?",
+"fr": "Que ressens-tu quand tu vois une pastille rouge sur l'icône d'une application ?",
+"it": "Come ti senti quando vedi il pallino rosso sull'icona di un'app?",
+"pt": "Como te sentes quando vês o círculo vermelho no ícone de uma aplicação?",
+"pt_BR": "Como você se sente quando vê a bolinha vermelha no ícone de um aplicativo?"
+}
+},
+{
+"id": "digital_detox-058",
+"lv": "beginner",
+"i18n": {
+"en": "What is a good reason you would like to use your phone less?",
+"de": "Was ist für dich ein guter Grund, dein Handy weniger zu nutzen?",
+"es": "¿Cuál es para ti una buena razón para usar menos el móvil?",
+"fr": "Quelle serait pour toi une bonne raison d'utiliser moins ton téléphone ?",
+"it": "Qual è per te un buon motivo per usare meno il telefono?",
+"pt": "Qual é para ti uma boa razão para usares menos o telemóvel?",
+"pt_BR": "Qual é para você um bom motivo para usar menos o celular?"
+}
+},
+{
+"id": "digital_detox-059",
+"lv": "beginner",
+"i18n": {
+"en": "Would you enjoy reading a paper book before bed? Which one?",
+"de": "Hättest du Freude daran, vor dem Schlafen ein gedrucktes Buch zu lesen? Welches?",
+"es": "¿Te gustaría leer un libro en papel antes de dormir? ¿Cuál?",
+"fr": "Aimerais-tu lire un livre papier avant de dormir ? Lequel ?",
+"it": "Ti piacerebbe leggere un libro di carta prima di dormire? Quale?",
+"pt": "Gostavas de ler um livro em papel antes de dormir? Qual?",
+"pt_BR": "Você curtiria ler um livro de papel antes de dormir? Qual?"
+}
+},
+{
+"id": "digital_detox-060",
+"lv": "beginner",
+"i18n": {
+"en": "How do you feel when you are bored for a few minutes?",
+"de": "Wie fühlst du dich, wenn dir ein paar Minuten langweilig ist?",
+"es": "¿Cómo te sientes cuando te aburres unos minutos?",
+"fr": "Comment te sens-tu quand tu t'ennuies quelques minutes ?",
+"it": "Come ti senti quando ti annoi per qualche minuto?",
+"pt": "Como te sentes quando estás aborrecido durante uns minutos?",
+"pt_BR": "Como você se sente quando fica entediado por alguns minutos?"
+}
+},
+{
+"id": "digital_detox-061",
+"lv": "beginner",
+"i18n": {
+"en": "Which room in your home could become a phone-free zone?",
+"de": "Welcher Raum bei dir zu Hause könnte eine handyfreie Zone werden?",
+"es": "¿Qué habitación de tu casa podría ser una zona sin móviles?",
+"fr": "Quelle pièce de ta maison pourrait devenir une zone sans téléphone ?",
+"it": "Quale stanza di casa tua potrebbe diventare una zona senza telefono?",
+"pt": "Que divisão da tua casa podia tornar-se uma zona sem telemóveis?",
+"pt_BR": "Qual cômodo da sua casa poderia virar uma zona sem celular?"
+}
+},
+{
+"id": "digital_detox-062",
+"lv": "beginner",
+"i18n": {
+"en": "How do you usually wake up: with a phone alarm or something else?",
+"de": "Wie wachst du normalerweise auf: mit dem Handywecker oder anders?",
+"es": "¿Cómo te despiertas normalmente: con la alarma del móvil u otra cosa?",
+"fr": "Comment te réveilles-tu d'habitude : avec l'alarme du téléphone ou autrement ?",
+"it": "Come ti svegli di solito: con la sveglia del telefono o in altro modo?",
+"pt": "Como costumas acordar: com o alarme do telemóvel ou de outra forma?",
+"pt_BR": "Como você costuma acordar: com o despertador do celular ou de outro jeito?"
+}
+},
+{
+"id": "digital_detox-063",
+"lv": "beginner",
+"i18n": {
+"en": "Who could join you in trying a small screen-free challenge?",
+"de": "Wer könnte bei einer kleinen bildschirmfreien Challenge mitmachen?",
+"es": "¿Quién podría acompañarte en un pequeño reto sin pantallas?",
+"fr": "Qui pourrait relever avec toi un petit défi sans écran ?",
+"it": "Chi potrebbe accompagnarti in una piccola sfida senza schermi?",
+"pt": "Quem podia acompanhar-te num pequeno desafio sem ecrãs?",
+"pt_BR": "Quem poderia topar um pequeno desafio sem telas com você?"
+}
+},
+{
+"id": "digital_detox-064",
+"lv": "beginner",
+"i18n": {
+"en": "What do you notice in your body after a long time on screens?",
+"de": "Was bemerkst du in deinem Körper nach langer Zeit vor dem Bildschirm?",
+"es": "¿Qué notas en tu cuerpo después de mucho tiempo frente a pantallas?",
+"fr": "Que remarques-tu dans ton corps après un long moment devant les écrans ?",
+"it": "Che cosa noti nel tuo corpo dopo tanto tempo davanti agli schermi?",
+"pt": "O que notas no teu corpo depois de muito tempo em frente a ecrãs?",
+"pt_BR": "O que você percebe no seu corpo depois de muito tempo em frente às telas?"
+}
+},
+{
+"id": "digital_detox-065",
+"lv": "beginner",
+"i18n": {
+"en": "What small win with your screen habits would make you proud this week?",
+"de": "Welcher kleine Erfolg mit deinen Bildschirmgewohnheiten würde dich diese Woche stolz machen?",
+"es": "¿Qué pequeño logro con tus hábitos de pantalla te haría sentir orgulloso esta semana?",
+"fr": "Quelle petite victoire sur tes habitudes d'écran te rendrait fier cette semaine ?",
+"it": "Quale piccola vittoria sulle tue abitudini con gli schermi ti renderebbe orgoglioso questa settimana?",
+"pt": "Que pequena vitória nos teus hábitos de ecrã te deixaria orgulhoso esta semana?",
+"pt_BR": "Qual pequena vitória nos seus hábitos de tela te deixaria orgulhoso nesta semana?"
+}
+},
+{
+"id": "digital_detox-066",
+"lv": "intermediate",
+"i18n": {
+"en": "Which accounts in your feed inspire you, and which drain you?",
+"de": "Welche Accounts in deinem Feed inspirieren dich, und welche ziehen dich runter?",
+"es": "¿Qué cuentas de tu feed te inspiran y cuáles te agotan?",
+"fr": "Quels comptes de ton fil t'inspirent, et lesquels te vident ?",
+"it": "Quali account nel tuo feed ti ispirano e quali ti svuotano?",
+"pt": "Que contas no teu feed te inspiram e quais te esgotam?",
+"pt_BR": "Quais perfis no seu feed te inspiram e quais te esgotam?"
+}
+},
+{
+"id": "digital_detox-067",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you feel when you compare your life with what you see online?",
+"de": "Wie fühlst du dich, wenn du dein Leben mit dem vergleichst, was du online siehst?",
+"es": "¿Cómo te sientes cuando comparas tu vida con lo que ves en internet?",
+"fr": "Que ressens-tu quand tu compares ta vie à ce que tu vois en ligne ?",
+"it": "Come ti senti quando confronti la tua vita con quello che vedi online?",
+"pt": "Como te sentes quando comparas a tua vida com o que vês online?",
+"pt_BR": "Como você se sente quando compara a sua vida com o que vê na internet?"
+}
+},
+{
+"id": "digital_detox-068",
+"lv": "intermediate",
+"i18n": {
+"en": "What helps you focus deeply on one task for a long time?",
+"de": "Was hilft dir, dich lange auf eine einzige Aufgabe zu konzentrieren?",
+"es": "¿Qué te ayuda a concentrarte a fondo en una sola tarea durante mucho tiempo?",
+"fr": "Qu'est-ce qui t'aide à te concentrer longtemps sur une seule tâche ?",
+"it": "Che cosa ti aiuta a concentrarti a fondo su un solo compito per molto tempo?",
+"pt": "O que te ajuda a concentrar-te a fundo numa só tarefa durante muito tempo?",
+"pt_BR": "O que te ajuda a se concentrar profundamente numa única tarefa por muito tempo?"
+}
+},
+{
+"id": "digital_detox-069",
+"lv": "intermediate",
+"i18n": {
+"en": "How quickly do you feel you need to reply to messages?",
+"de": "Wie schnell hast du das Gefühl, auf Nachrichten antworten zu müssen?",
+"es": "¿Con qué rapidez sientes que debes responder a los mensajes?",
+"fr": "À quelle vitesse as-tu l'impression de devoir répondre aux messages ?",
+"it": "Quanto in fretta senti di dover rispondere ai messaggi?",
+"pt": "Com que rapidez sentes que tens de responder às mensagens?",
+"pt_BR": "Com que rapidez você sente que precisa responder às mensagens?"
+}
+},
+{
+"id": "digital_detox-070",
+"lv": "intermediate",
+"i18n": {
+"en": "What boundaries do you have between work messages and personal time?",
+"de": "Welche Grenzen ziehst du zwischen beruflichen Nachrichten und deiner Freizeit?",
+"es": "¿Qué límites pones entre los mensajes de trabajo y tu tiempo personal?",
+"fr": "Quelles limites poses-tu entre les messages professionnels et ton temps personnel ?",
+"it": "Quali confini metti tra i messaggi di lavoro e il tempo personale?",
+"pt": "Que limites tens entre as mensagens de trabalho e o teu tempo pessoal?",
+"pt_BR": "Quais limites você coloca entre mensagens de trabalho e o seu tempo pessoal?"
+}
+},
+{
+"id": "digital_detox-071",
+"lv": "intermediate",
+"i18n": {
+"en": "How did you feel during the longest time you have spent offline?",
+"de": "Wie hast du dich während deiner längsten Zeit offline gefühlt?",
+"es": "¿Cómo te sentiste durante el periodo más largo que has pasado desconectado?",
+"fr": "Comment t'es-tu senti pendant la plus longue période passée hors ligne ?",
+"it": "Come ti sei sentito durante il periodo più lungo che hai passato offline?",
+"pt": "Como te sentiste durante o período mais longo que passaste offline?",
+"pt_BR": "Como você se sentiu durante o período mais longo que passou offline?"
+}
+},
+{
+"id": "digital_detox-072",
+"lv": "intermediate",
+"i18n": {
+"en": "Which family or household rule about screens would you like to create?",
+"de": "Welche Familien- oder Haushaltsregel zu Bildschirmen würdest du gern einführen?",
+"es": "¿Qué norma sobre pantallas te gustaría crear en tu familia o en casa?",
+"fr": "Quelle règle sur les écrans aimerais-tu instaurer en famille ou à la maison ?",
+"it": "Quale regola sugli schermi ti piacerebbe introdurre in famiglia o in casa?",
+"pt": "Que regra sobre ecrãs gostavas de criar na tua família ou em casa?",
+"pt_BR": "Qual regra sobre telas você gostaria de criar na sua família ou em casa?"
+}
+},
+{
+"id": "digital_detox-073",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you decide when to post something on social media?",
+"de": "Wie entscheidest du, wann du etwas in sozialen Medien postest?",
+"es": "¿Cómo decides cuándo publicar algo en las redes sociales?",
+"fr": "Comment décides-tu de publier quelque chose sur les réseaux sociaux ?",
+"it": "Come decidi quando pubblicare qualcosa sui social?",
+"pt": "Como decides quando publicar alguma coisa nas redes sociais?",
+"pt_BR": "Como você decide quando postar algo nas redes sociais?"
+}
+},
+{
+"id": "digital_detox-074",
+"lv": "intermediate",
+"i18n": {
+"en": "What would a phone-free weekend look like for you?",
+"de": "Wie würde ein handyfreies Wochenende für dich aussehen?",
+"es": "¿Cómo sería para ti un fin de semana sin móvil?",
+"fr": "À quoi ressemblerait pour toi un week-end sans téléphone ?",
+"it": "Come sarebbe per te un fine settimana senza telefono?",
+"pt": "Como seria para ti um fim de semana sem telemóvel?",
+"pt_BR": "Como seria para você um fim de semana sem celular?"
+}
+},
+{
+"id": "digital_detox-075",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you handle the fear of missing out when you step away online?",
+"de": "Wie gehst du mit der Angst um, etwas zu verpassen, wenn du offline gehst?",
+"es": "¿Cómo llevas el miedo a perderte algo cuando te desconectas?",
+"fr": "Comment gères-tu la peur de rater quelque chose quand tu te déconnectes ?",
+"it": "Come gestisci la paura di perderti qualcosa quando ti disconnetti?",
+"pt": "Como lidas com o medo de perder alguma coisa quando te desligas?",
+"pt_BR": "Como você lida com o medo de ficar por fora quando se desconecta?"
+}
+},
+{
+"id": "digital_detox-076",
+"lv": "intermediate",
+"i18n": {
+"en": "Which work or study habit steals most of your focus?",
+"de": "Welche Arbeits- oder Lerngewohnheit raubt dir am meisten Konzentration?",
+"es": "¿Qué hábito de trabajo o estudio te roba más concentración?",
+"fr": "Quelle habitude de travail ou d'étude te vole le plus de concentration ?",
+"it": "Quale abitudine di lavoro o di studio ti ruba più concentrazione?",
+"pt": "Que hábito de trabalho ou de estudo te rouba mais concentração?",
+"pt_BR": "Qual hábito de trabalho ou estudo mais rouba a sua concentração?"
+}
+},
+{
+"id": "digital_detox-077",
+"lv": "intermediate",
+"i18n": {
+"en": "How could you make time with friends more phone-light?",
+"de": "Wie könntest du Treffen mit Freunden handyärmer gestalten?",
+"es": "¿Cómo podrías hacer que el tiempo con amigos tenga menos móvil?",
+"fr": "Comment pourrais-tu passer du temps entre amis avec moins de téléphone ?",
+"it": "Come potresti rendere il tempo con gli amici meno legato al telefono?",
+"pt": "Como podias tornar o tempo com amigos menos dependente do telemóvel?",
+"pt_BR": "Como você poderia deixar o tempo com os amigos com menos celular?"
+}
+},
+{
+"id": "digital_detox-078",
+"lv": "intermediate",
+"i18n": {
+"en": "Which streaming habit would you like to change?",
+"de": "Welche Streaming-Gewohnheit würdest du gern ändern?",
+"es": "¿Qué hábito con las plataformas de streaming te gustaría cambiar?",
+"fr": "Quelle habitude de streaming aimerais-tu changer ?",
+"it": "Quale abitudine legata allo streaming ti piacerebbe cambiare?",
+"pt": "Que hábito de streaming gostavas de mudar?",
+"pt_BR": "Qual hábito de streaming você gostaria de mudar?"
+}
+},
+{
+"id": "digital_detox-079",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you feel about news: do you follow it closely or from a distance?",
+"de": "Wie hältst du es mit Nachrichten: Verfolgst du sie genau oder eher aus der Ferne?",
+"es": "¿Cómo te relacionas con las noticias: las sigues de cerca o desde lejos?",
+"fr": "Et les infos, tu les suis de près ou de loin ?",
+"it": "Come vivi le notizie: le segui da vicino o da lontano?",
+"pt": "Como te relacionas com as notícias: segues de perto ou à distância?",
+"pt_BR": "Como você lida com as notícias: acompanha de perto ou de longe?"
+}
+},
+{
+"id": "digital_detox-080",
+"lv": "intermediate",
+"i18n": {
+"en": "What offline ritual could you share with the people you live with?",
+"de": "Welches Offline-Ritual könntest du mit den Menschen teilen, mit denen du lebst?",
+"es": "¿Qué ritual sin pantallas podrías compartir con las personas con quienes vives?",
+"fr": "Quel rituel hors écran pourrais-tu partager avec les personnes qui vivent avec toi ?",
+"it": "Quale rituale senza schermi potresti condividere con le persone con cui vivi?",
+"pt": "Que ritual sem ecrãs podias partilhar com as pessoas com quem vives?",
+"pt_BR": "Qual ritual sem telas você poderia compartilhar com as pessoas que moram com você?"
+}
+},
+{
+"id": "digital_detox-081",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you feel about taking fewer photos at special events?",
+"de": "Was hältst du davon, bei besonderen Anlässen weniger Fotos zu machen?",
+"es": "¿Qué te parece hacer menos fotos en ocasiones especiales?",
+"fr": "Que penses-tu de prendre moins de photos lors d'événements spéciaux ?",
+"it": "Che cosa ne pensi di scattare meno foto agli eventi speciali?",
+"pt": "O que achas de tirar menos fotografias em ocasiões especiais?",
+"pt_BR": "O que você acha de tirar menos fotos em ocasiões especiais?"
+}
+},
+{
+"id": "digital_detox-082",
+"lv": "intermediate",
+"i18n": {
+"en": "Which paper tool, like a notebook or planner, could replace an app for you?",
+"de": "Welches Papierwerkzeug, etwa ein Notizbuch oder Planer, könnte bei dir eine App ersetzen?",
+"es": "¿Qué herramienta de papel, como una libreta o una agenda, podría sustituir una aplicación?",
+"fr": "Quel outil papier, comme un carnet ou un agenda, pourrait remplacer une application ?",
+"it": "Quale strumento di carta, come un quaderno o un'agenda, potrebbe sostituire un'app?",
+"pt": "Que ferramenta em papel, como um caderno ou agenda, podia substituir uma aplicação?",
+"pt_BR": "Qual ferramenta de papel, como um caderno ou agenda, poderia substituir um aplicativo?"
+}
+},
+{
+"id": "digital_detox-083",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you end your workday so you can truly switch off?",
+"de": "Wie beendest du deinen Arbeitstag, um wirklich abzuschalten?",
+"es": "¿Cómo terminas tu jornada para desconectar de verdad?",
+"fr": "Comment termines-tu ta journée de travail pour vraiment décrocher ?",
+"it": "Come concludi la giornata di lavoro per staccare davvero?",
+"pt": "Como terminas o teu dia de trabalho para desligares mesmo?",
+"pt_BR": "Como você encerra o seu dia de trabalho para desligar de verdade?"
+}
+},
+{
+"id": "digital_detox-084",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you use technology to learn something new without getting distracted?",
+"de": "Wie nutzt du Technik, um etwas Neues zu lernen, ohne dich ablenken zu lassen?",
+"es": "¿Cómo usas la tecnología para aprender algo nuevo sin distraerte?",
+"fr": "Comment utilises-tu la technologie pour apprendre quelque chose sans te disperser ?",
+"it": "Come usi la tecnologia per imparare qualcosa di nuovo senza distrarti?",
+"pt": "Como usas a tecnologia para aprender algo novo sem te distraíres?",
+"pt_BR": "Como você usa a tecnologia para aprender algo novo sem se distrair?"
+}
+},
+{
+"id": "digital_detox-085",
+"lv": "intermediate",
+"i18n": {
+"en": "Which short video or gaming habit would you like to bring into better balance?",
+"de": "Welche Gewohnheit bei Kurzvideos oder Spielen würdest du gern besser ausbalancieren?",
+"es": "¿Qué hábito con los vídeos cortos o los videojuegos te gustaría equilibrar mejor?",
+"fr": "Quelle habitude de vidéos courtes ou de jeux vidéo aimerais-tu mieux équilibrer ?",
+"it": "Quale abitudine con i video brevi o i videogiochi vorresti equilibrare meglio?",
+"pt": "Que hábito com vídeos curtos ou jogos gostavas de equilibrar melhor?",
+"pt_BR": "Qual hábito com vídeos curtos ou games você gostaria de equilibrar melhor?"
+}
+},
+{
+"id": "digital_detox-086",
+"lv": "advanced",
+"i18n": {
+"en": "How do you think app design influences the way people use their phones?",
+"de": "Wie beeinflusst das Design von Apps deiner Meinung nach, wie Menschen ihr Handy nutzen?",
+"es": "¿Cómo crees que el diseño de las aplicaciones influye en cómo usamos el móvil?",
+"fr": "Selon toi, comment le design des applications influence-t-il notre usage du téléphone ?",
+"it": "Secondo te, in che modo il design delle app influenza l'uso del telefono?",
+"pt": "Como achas que o design das aplicações influencia a forma como usamos o telemóvel?",
+"pt_BR": "Como você acha que o design dos aplicativos influencia o jeito como usamos o celular?"
+}
+},
+{
+"id": "digital_detox-087",
+"lv": "advanced",
+"i18n": {
+"en": "Which values do you want your technology use to support?",
+"de": "Welche Werte soll deine Techniknutzung unterstützen?",
+"es": "¿Qué valores quieres que apoye tu uso de la tecnología?",
+"fr": "Quelles valeurs veux-tu que ton usage de la technologie soutienne ?",
+"it": "Quali valori vuoi che il tuo uso della tecnologia sostenga?",
+"pt": "Que valores queres que o teu uso da tecnologia apoie?",
+"pt_BR": "Quais valores você quer que o seu uso da tecnologia apoie?"
+}
+},
+{
+"id": "digital_detox-088",
+"lv": "advanced",
+"i18n": {
+"en": "If you wrote three personal rules for technology, what would they be?",
+"de": "Wenn du drei persönliche Regeln für Technik aufschreiben würdest, welche wären das?",
+"es": "Si escribieras tres reglas personales sobre la tecnología, ¿cuáles serían?",
+"fr": "Si tu écrivais trois règles personnelles sur la technologie, lesquelles seraient-elles ?",
+"it": "Se scrivessi tre regole personali sulla tecnologia, quali sarebbero?",
+"pt": "Se escrevesses três regras pessoais sobre tecnologia, quais seriam?",
+"pt_BR": "Se você escrevesse três regras pessoais sobre tecnologia, quais seriam?"
+}
+},
+{
+"id": "digital_detox-089",
+"lv": "advanced",
+"i18n": {
+"en": "How has your attention changed since you started paying attention to screen habits?",
+"de": "Wie hat sich deine Konzentration verändert, seit du auf deine Bildschirmgewohnheiten achtest?",
+"es": "¿Cómo ha cambiado tu atención desde que te fijas en tus hábitos de pantalla?",
+"fr": "Comment ta concentration a-t-elle évolué depuis que tu observes tes habitudes d'écran ?",
+"it": "Com'è cambiata la tua attenzione da quando osservi le tue abitudini con gli schermi?",
+"pt": "Como mudou a tua atenção desde que começaste a observar os teus hábitos de ecrã?",
+"pt_BR": "Como a sua atenção mudou desde que começou a observar seus hábitos de tela?"
+}
+},
+{
+"id": "digital_detox-090",
+"lv": "advanced",
+"i18n": {
+"en": "Which digital tools would you keep if you could only choose five?",
+"de": "Welche digitalen Werkzeuge würdest du behalten, wenn du nur fünf wählen dürftest?",
+"es": "¿Qué herramientas digitales conservarías si solo pudieras elegir cinco?",
+"fr": "Quels outils numériques garderais-tu si tu ne pouvais en choisir que cinq ?",
+"it": "Quali strumenti digitali terresti se potessi sceglierne solo cinque?",
+"pt": "Que ferramentas digitais mantinhas se só pudesses escolher cinco?",
+"pt_BR": "Quais ferramentas digitais você manteria se só pudesse escolher cinco?"
+}
+},
+{
+"id": "digital_detox-091",
+"lv": "advanced",
+"i18n": {
+"en": "How would you help a friend who wants to spend less time on their phone?",
+"de": "Wie würdest du einem Freund helfen, der weniger Zeit am Handy verbringen möchte?",
+"es": "¿Cómo ayudarías a un amigo que quiere pasar menos tiempo con el móvil?",
+"fr": "Comment aiderais-tu un ami qui veut passer moins de temps sur son téléphone ?",
+"it": "Come aiuteresti un amico che vuole passare meno tempo al telefono?",
+"pt": "Como ajudarias um amigo que quer passar menos tempo ao telemóvel?",
+"pt_BR": "Como você ajudaria um amigo que quer passar menos tempo no celular?"
+}
+},
+{
+"id": "digital_detox-092",
+"lv": "advanced",
+"i18n": {
+"en": "What offline skill would you like to master over the next year?",
+"de": "Welche Offline-Fähigkeit würdest du im nächsten Jahr gern meistern?",
+"es": "¿Qué habilidad sin pantallas te gustaría dominar durante el próximo año?",
+"fr": "Quelle compétence hors écran aimerais-tu maîtriser au cours de l'année à venir ?",
+"it": "Quale abilità offline ti piacerebbe padroneggiare nel prossimo anno?",
+"pt": "Que competência offline gostavas de dominar ao longo do próximo ano?",
+"pt_BR": "Qual habilidade offline você gostaria de dominar ao longo do próximo ano?"
+}
+},
+{
+"id": "digital_detox-093",
+"lv": "advanced",
+"i18n": {
+"en": "How do you decide whether to try a new app or device?",
+"de": "Wie entscheidest du, ob du eine neue App oder ein neues Gerät ausprobierst?",
+"es": "¿Cómo decides si probar una aplicación o un dispositivo nuevo?",
+"fr": "Comment décides-tu d'essayer ou non une nouvelle application ou un nouvel appareil ?",
+"it": "Come decidi se provare una nuova app o un nuovo dispositivo?",
+"pt": "Como decides se experimentas uma nova aplicação ou um novo dispositivo?",
+"pt_BR": "Como você decide se vale a pena testar um novo aplicativo ou aparelho?"
+}
+},
+{
+"id": "digital_detox-094",
+"lv": "advanced",
+"i18n": {
+"en": "What would you like children to learn about balance with technology?",
+"de": "Was sollten Kinder deiner Meinung nach über den ausgewogenen Umgang mit Technik lernen?",
+"es": "¿Qué te gustaría que los niños aprendieran sobre el equilibrio con la tecnología?",
+"fr": "Qu'aimerais-tu que les enfants apprennent sur l'équilibre avec la technologie ?",
+"it": "Che cosa vorresti che i bambini imparassero sull'equilibrio con la tecnologia?",
+"pt": "O que gostavas que as crianças aprendessem sobre o equilíbrio com a tecnologia?",
+"pt_BR": "O que você gostaria que as crianças aprendessem sobre equilíbrio com a tecnologia?"
+}
+},
+{
+"id": "digital_detox-095",
+"lv": "advanced",
+"i18n": {
+"en": "How do you get back on track when old screen habits return?",
+"de": "Wie findest du zurück in die Spur, wenn alte Bildschirmgewohnheiten zurückkehren?",
+"es": "¿Cómo vuelves al buen camino cuando regresan tus viejos hábitos de pantalla?",
+"fr": "Comment te remets-tu sur la bonne voie quand tes anciennes habitudes d'écran reviennent ?",
+"it": "Come torni in carreggiata quando le vecchie abitudini con gli schermi ritornano?",
+"pt": "Como voltas ao bom caminho quando os velhos hábitos de ecrã regressam?",
+"pt_BR": "Como você volta para o caminho certo quando os velhos hábitos de tela voltam?"
+}
+},
+{
+"id": "digital_detox-096",
+"lv": "advanced",
+"i18n": {
+"en": "Which moments of silence or stillness have taught you something?",
+"de": "Welche Momente der Stille haben dich etwas gelehrt?",
+"es": "¿Qué momentos de silencio o calma te han enseñado algo?",
+"fr": "Quels moments de silence ou de calme t'ont appris quelque chose ?",
+"it": "Quali momenti di silenzio o di quiete ti hanno insegnato qualcosa?",
+"pt": "Que momentos de silêncio ou de calma te ensinaram alguma coisa?",
+"pt_BR": "Quais momentos de silêncio ou de calma te ensinaram algo?"
+}
+},
+{
+"id": "digital_detox-097",
+"lv": "advanced",
+"i18n": {
+"en": "How do you think technology will fit into your life ten years from now?",
+"de": "Wie wird Technik deiner Meinung nach in zehn Jahren in dein Leben passen?",
+"es": "¿Cómo crees que encajará la tecnología en tu vida dentro de diez años?",
+"fr": "Comment imagines-tu la place de la technologie dans ta vie dans dix ans ?",
+"it": "Come pensi che la tecnologia si inserirà nella tua vita tra dieci anni?",
+"pt": "Como achas que a tecnologia vai encaixar na tua vida daqui a dez anos?",
+"pt_BR": "Como você acha que a tecnologia vai se encaixar na sua vida daqui a dez anos?"
+}
+},
+{
+"id": "digital_detox-098",
+"lv": "advanced",
+"i18n": {
+"en": "Which offline community or group would you love to be part of?",
+"de": "Zu welcher Offline-Gemeinschaft oder Gruppe würdest du gern gehören?",
+"es": "¿De qué comunidad o grupo presencial te encantaría formar parte?",
+"fr": "De quelle communauté ou de quel groupe hors ligne aimerais-tu faire partie ?",
+"it": "Di quale comunità o gruppo dal vivo ti piacerebbe far parte?",
+"pt": "De que comunidade ou grupo presencial gostavas de fazer parte?",
+"pt_BR": "De qual comunidade ou grupo presencial você adoraria fazer parte?"
+}
+},
+{
+"id": "digital_detox-099",
+"lv": "advanced",
+"i18n": {
+"en": "What does it mean to you to use technology with intention?",
+"de": "Was bedeutet es für dich, Technik bewusst und mit Absicht zu nutzen?",
+"es": "¿Qué significa para ti usar la tecnología con intención?",
+"fr": "Que signifie pour toi utiliser la technologie de façon intentionnelle ?",
+"it": "Che cosa significa per te usare la tecnologia con intenzione?",
+"pt": "O que significa para ti usar a tecnologia com intenção?",
+"pt_BR": "O que significa para você usar a tecnologia com intenção?"
+}
+},
+{
+"id": "digital_detox-100",
+"lv": "advanced",
+"i18n": {
+"en": "Looking back, which change in your screen habits has made the biggest difference?",
+"de": "Welche Veränderung deiner Bildschirmgewohnheiten hat rückblickend am meisten bewirkt?",
+"es": "Mirando atrás, ¿qué cambio en tus hábitos de pantalla ha marcado la mayor diferencia?",
+"fr": "Avec le recul, quel changement dans tes habitudes d'écran a fait la plus grande différence ?",
+"it": "Guardando indietro, quale cambiamento nelle tue abitudini con gli schermi ha fatto più differenza?",
+"pt": "Olhando para trás, que mudança nos teus hábitos de ecrã fez a maior diferença?",
+"pt_BR": "Olhando para trás, qual mudança nos seus hábitos de tela fez mais diferença?"
+}
+}
+]
+}

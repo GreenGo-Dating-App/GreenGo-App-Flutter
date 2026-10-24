@@ -1,0 +1,1305 @@
+{
+ "topic": "fashion_basics",
+ "questions": [
+  {
+   "id": "fashion_basics-001",
+   "lv": "any",
+   "i18n": {
+    "en": "How would you describe your personal style in three words?",
+    "de": "Wie würdest du deinen persönlichen Stil in drei Worten beschreiben?",
+    "es": "¿Cómo describirías tu estilo personal en tres palabras?",
+    "fr": "Comment décrirais-tu ton style personnel en trois mots ?",
+    "it": "Come descriveresti il tuo stile personale in tre parole?",
+    "pt": "Como descreverias o teu estilo pessoal em três palavras?",
+    "pt_BR": "Como você descreveria seu estilo pessoal em três palavras?"
+   }
+  },
+  {
+   "id": "fashion_basics-002",
+   "lv": "any",
+   "i18n": {
+    "en": "What piece of clothing makes you feel most like yourself?",
+    "de": "In welchem Kleidungsstück fühlst du dich am meisten wie du selbst?",
+    "es": "¿Con qué prenda te sientes más tú mismo?",
+    "fr": "Dans quel vêtement te sens-tu le plus toi-même ?",
+    "it": "Quale capo ti fa sentire più te stesso?",
+    "pt": "Que peça de roupa te faz sentir mais tu próprio?",
+    "pt_BR": "Com qual peça de roupa você se sente mais você?"
+   }
+  },
+  {
+   "id": "fashion_basics-003",
+   "lv": "any",
+   "i18n": {
+    "en": "What is your favourite colour to wear, and why?",
+    "de": "Welche Farbe trägst du am liebsten, und warum?",
+    "es": "¿Qué color te gusta más llevar y por qué?",
+    "fr": "Quelle couleur aimes-tu le plus porter, et pourquoi ?",
+    "it": "Qual è il colore che preferisci indossare, e perché?",
+    "pt": "Qual é a tua cor favorita para vestir, e porquê?",
+    "pt_BR": "Qual é sua cor favorita pra usar, e por quê?"
+   }
+  },
+  {
+   "id": "fashion_basics-004",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you prefer comfort or looking smart, or do you try to have both?",
+    "de": "Ist dir Bequemlichkeit oder ein schicker Look wichtiger, oder willst du beides?",
+    "es": "¿Prefieres la comodidad o ir arreglado, o intentas tener las dos cosas?",
+    "fr": "Préfères-tu le confort ou l'élégance, ou essaies-tu d'avoir les deux ?",
+    "it": "Preferisci la comodità o un look curato, o cerchi di avere entrambi?",
+    "pt": "Preferes conforto ou um ar arranjado, ou tentas ter os dois?",
+    "pt_BR": "Você prefere conforto ou estar bem-vestido, ou tenta ter os dois?"
+   }
+  },
+  {
+   "id": "fashion_basics-005",
+   "lv": "any",
+   "i18n": {
+    "en": "How has your style changed over the years?",
+    "de": "Wie hat sich dein Stil im Lauf der Jahre verändert?",
+    "es": "¿Cómo ha cambiado tu estilo con los años?",
+    "fr": "Comment ton style a-t-il évolué au fil des années ?",
+    "it": "Come è cambiato il tuo stile negli anni?",
+    "pt": "Como mudou o teu estilo ao longo dos anos?",
+    "pt_BR": "Como seu estilo mudou ao longo dos anos?"
+   }
+  },
+  {
+   "id": "fashion_basics-006",
+   "lv": "any",
+   "i18n": {
+    "en": "What did people typically wear where you grew up?",
+    "de": "Was haben die Leute dort, wo du aufgewachsen bist, typischerweise getragen?",
+    "es": "¿Qué solía llevar la gente donde creciste?",
+    "fr": "Que portaient les gens en général là où tu as grandi ?",
+    "it": "Cosa indossava di solito la gente dove sei cresciuto?",
+    "pt": "O que é que as pessoas costumavam vestir onde cresceste?",
+    "pt_BR": "O que as pessoas costumavam usar onde você cresceu?"
+   }
+  },
+  {
+   "id": "fashion_basics-007",
+   "lv": "any",
+   "i18n": {
+    "en": "Who in your life has a style you really admire?",
+    "de": "Wer in deinem Leben hat einen Stil, den du wirklich bewunderst?",
+    "es": "¿Quién en tu vida tiene un estilo que admiras de verdad?",
+    "fr": "Qui, dans ton entourage, a un style que tu admires vraiment ?",
+    "it": "Chi nella tua vita ha uno stile che ammiri davvero?",
+    "pt": "Quem na tua vida tem um estilo que admiras mesmo?",
+    "pt_BR": "Quem na sua vida tem um estilo que você admira de verdade?"
+   }
+  },
+  {
+   "id": "fashion_basics-008",
+   "lv": "any",
+   "i18n": {
+    "en": "What is the oldest item in your wardrobe that you still wear?",
+    "de": "Was ist das älteste Teil in deinem Schrank, das du noch trägst?",
+    "es": "¿Cuál es la prenda más antigua de tu armario que todavía usas?",
+    "fr": "Quel est le vêtement le plus ancien de ta garde-robe que tu portes encore ?",
+    "it": "Qual è il capo più vecchio del tuo armadio che indossi ancora?",
+    "pt": "Qual é a peça mais antiga do teu roupeiro que ainda usas?",
+    "pt_BR": "Qual é a peça mais antiga do seu guarda-roupa que você ainda usa?"
+   }
+  },
+  {
+   "id": "fashion_basics-009",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you enjoy shopping for clothes, or is it a chore for you?",
+    "de": "Gehst du gern Kleidung kaufen, oder ist es eher lästig für dich?",
+    "es": "¿Disfrutas comprando ropa o te resulta una obligación?",
+    "fr": "Aimes-tu acheter des vêtements, ou est-ce une corvée pour toi ?",
+    "it": "Ti piace comprare vestiti o per te è una seccatura?",
+    "pt": "Gostas de comprar roupa ou é uma chatice para ti?",
+    "pt_BR": "Você curte comprar roupa ou acha uma chatice?"
+   }
+  },
+  {
+   "id": "fashion_basics-010",
+   "lv": "any",
+   "i18n": {
+    "en": "What does your favourite weekend outfit look like?",
+    "de": "Wie sieht dein liebstes Wochenend-Outfit aus?",
+    "es": "¿Cómo es tu conjunto favorito para el fin de semana?",
+    "fr": "À quoi ressemble ta tenue préférée du week-end ?",
+    "it": "Com'è il tuo outfit preferito del weekend?",
+    "pt": "Como é o teu coordenado favorito para o fim de semana?",
+    "pt_BR": "Como é seu look favorito de fim de semana?"
+   }
+  },
+  {
+   "id": "fashion_basics-011",
+   "lv": "any",
+   "i18n": {
+    "en": "Which accessory do you wear almost every day?",
+    "de": "Welches Accessoire trägst du fast jeden Tag?",
+    "es": "¿Qué accesorio llevas casi todos los días?",
+    "fr": "Quel accessoire portes-tu presque tous les jours ?",
+    "it": "Quale accessorio indossi quasi ogni giorno?",
+    "pt": "Que acessório usas quase todos os dias?",
+    "pt_BR": "Qual acessório você usa quase todo dia?"
+   }
+  },
+  {
+   "id": "fashion_basics-012",
+   "lv": "any",
+   "i18n": {
+    "en": "How does the weather where you live shape what you wear?",
+    "de": "Wie beeinflusst das Wetter bei dir, was du trägst?",
+    "es": "¿Cómo influye el clima de donde vives en lo que te pones?",
+    "fr": "Comment le climat de ta région influence-t-il ta façon de t'habiller ?",
+    "it": "Come influisce il clima di dove vivi su quello che indossi?",
+    "pt": "Como é que o clima onde vives influencia o que vestes?",
+    "pt_BR": "Como o clima de onde você mora influencia o que você veste?"
+   }
+  },
+  {
+   "id": "fashion_basics-013",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you plan your outfits ahead or decide in the morning?",
+    "de": "Planst du deine Outfits im Voraus oder entscheidest du morgens?",
+    "es": "¿Planeas tus conjuntos con antelación o decides por la mañana?",
+    "fr": "Prévois-tu tes tenues à l'avance ou décides-tu le matin ?",
+    "it": "Pianifichi i tuoi outfit in anticipo o decidi la mattina?",
+    "pt": "Planeias os teus coordenados com antecedência ou decides de manhã?",
+    "pt_BR": "Você planeja seus looks com antecedência ou decide de manhã?"
+   }
+  },
+  {
+   "id": "fashion_basics-014",
+   "lv": "any",
+   "i18n": {
+    "en": "What is a clothing item you would love to own one day?",
+    "de": "Welches Kleidungsstück hättest du eines Tages gern?",
+    "es": "¿Qué prenda te encantaría tener algún día?",
+    "fr": "Quel vêtement aimerais-tu posséder un jour ?",
+    "it": "Quale capo ti piacerebbe avere un giorno?",
+    "pt": "Que peça de roupa adorarias ter um dia?",
+    "pt_BR": "Qual peça de roupa você adoraria ter um dia?"
+   }
+  },
+  {
+   "id": "fashion_basics-015",
+   "lv": "any",
+   "i18n": {
+    "en": "Which shoes do you reach for most often?",
+    "de": "Zu welchen Schuhen greifst du am häufigsten?",
+    "es": "¿Qué zapatos te pones más a menudo?",
+    "fr": "Quelles chaussures mets-tu le plus souvent ?",
+    "it": "Quali scarpe indossi più spesso?",
+    "pt": "Que sapatos calças mais vezes?",
+    "pt_BR": "Qual sapato você mais usa?"
+   }
+  },
+  {
+   "id": "fashion_basics-016",
+   "lv": "any",
+   "i18n": {
+    "en": "How do clothes affect your mood during the day?",
+    "de": "Wie beeinflusst Kleidung deine Stimmung im Lauf des Tages?",
+    "es": "¿Cómo influye la ropa en tu estado de ánimo durante el día?",
+    "fr": "Comment tes vêtements influencent-ils ton humeur dans la journée ?",
+    "it": "Come influiscono i vestiti sul tuo umore durante la giornata?",
+    "pt": "Como é que a roupa influencia o teu humor ao longo do dia?",
+    "pt_BR": "Como a roupa afeta seu humor durante o dia?"
+   }
+  },
+  {
+   "id": "fashion_basics-017",
+   "lv": "any",
+   "i18n": {
+    "en": "Is there a traditional garment from your culture that you love?",
+    "de": "Gibt es ein traditionelles Kleidungsstück aus deiner Kultur, das du liebst?",
+    "es": "¿Hay alguna prenda tradicional de tu cultura que te encante?",
+    "fr": "Y a-t-il un vêtement traditionnel de ta culture que tu adores ?",
+    "it": "C'è un capo tradizionale della tua cultura che ami?",
+    "pt": "Há alguma peça tradicional da tua cultura de que gostes muito?",
+    "pt_BR": "Tem alguma roupa tradicional da sua cultura que você ama?"
+   }
+  },
+  {
+   "id": "fashion_basics-018",
+   "lv": "any",
+   "i18n": {
+    "en": "What is the best compliment you have ever received about an outfit?",
+    "de": "Was ist das schönste Kompliment, das du je für ein Outfit bekommen hast?",
+    "es": "¿Cuál es el mejor cumplido que te han hecho por un conjunto?",
+    "fr": "Quel est le plus beau compliment qu'on t'ait fait sur une tenue ?",
+    "it": "Qual è il complimento più bello che hai ricevuto per un outfit?",
+    "pt": "Qual foi o melhor elogio que já recebeste por causa de um coordenado?",
+    "pt_BR": "Qual foi o melhor elogio que você já recebeu por um look?"
+   }
+  },
+  {
+   "id": "fashion_basics-019",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you prefer bold patterns or simple, plain clothes?",
+    "de": "Magst du lieber auffällige Muster oder schlichte, einfarbige Kleidung?",
+    "es": "¿Prefieres estampados llamativos o ropa sencilla y lisa?",
+    "fr": "Préfères-tu les motifs audacieux ou les vêtements simples et unis ?",
+    "it": "Preferisci fantasie vivaci o capi semplici e in tinta unita?",
+    "pt": "Preferes padrões ousados ou roupa simples e lisa?",
+    "pt_BR": "Você prefere estampas marcantes ou roupas simples e lisas?"
+   }
+  },
+  {
+   "id": "fashion_basics-020",
+   "lv": "any",
+   "i18n": {
+    "en": "Which item in your wardrobe has a fun story behind it?",
+    "de": "Welches Teil in deinem Schrank hat eine lustige Geschichte?",
+    "es": "¿Qué prenda de tu armario tiene una historia divertida detrás?",
+    "fr": "Quel vêtement de ta garde-robe a une histoire amusante ?",
+    "it": "Quale capo del tuo armadio ha una storia divertente alle spalle?",
+    "pt": "Que peça do teu roupeiro tem uma história engraçada por trás?",
+    "pt_BR": "Qual peça do seu guarda-roupa tem uma história divertida por trás?"
+   }
+  },
+  {
+   "id": "fashion_basics-021",
+   "lv": "any",
+   "i18n": {
+    "en": "What would your dream wardrobe look like?",
+    "de": "Wie würde dein Traumkleiderschrank aussehen?",
+    "es": "¿Cómo sería tu armario de ensueño?",
+    "fr": "À quoi ressemblerait ta garde-robe de rêve ?",
+    "it": "Come sarebbe il tuo guardaroba dei sogni?",
+    "pt": "Como seria o teu roupeiro de sonho?",
+    "pt_BR": "Como seria seu guarda-roupa dos sonhos?"
+   }
+  },
+  {
+   "id": "fashion_basics-022",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you have a lucky outfit or item of clothing?",
+    "de": "Hast du ein Glücks-Outfit oder ein Glückskleidungsstück?",
+    "es": "¿Tienes algún conjunto o prenda de la suerte?",
+    "fr": "As-tu une tenue ou un vêtement porte-bonheur ?",
+    "it": "Hai un outfit o un capo portafortuna?",
+    "pt": "Tens algum coordenado ou peça da sorte?",
+    "pt_BR": "Você tem algum look ou peça da sorte?"
+   }
+  },
+  {
+   "id": "fashion_basics-023",
+   "lv": "any",
+   "i18n": {
+    "en": "How do you feel about wearing the same outfit often?",
+    "de": "Was hältst du davon, dasselbe Outfit oft zu tragen?",
+    "es": "¿Qué opinas de llevar el mismo conjunto a menudo?",
+    "fr": "Que penses-tu du fait de porter souvent la même tenue ?",
+    "it": "Cosa pensi dell'indossare spesso lo stesso outfit?",
+    "pt": "O que achas de usar muitas vezes o mesmo coordenado?",
+    "pt_BR": "O que você acha de usar o mesmo look com frequência?"
+   }
+  },
+  {
+   "id": "fashion_basics-024",
+   "lv": "any",
+   "i18n": {
+    "en": "Which era of fashion do you find most interesting?",
+    "de": "Welche Modeepoche findest du am spannendsten?",
+    "es": "¿Qué época de la moda te parece más interesante?",
+    "fr": "Quelle époque de la mode trouves-tu la plus intéressante ?",
+    "it": "Quale epoca della moda trovi più interessante?",
+    "pt": "Que época da moda achas mais interessante?",
+    "pt_BR": "Qual época da moda você acha mais interessante?"
+   }
+  },
+  {
+   "id": "fashion_basics-025",
+   "lv": "any",
+   "i18n": {
+    "en": "What clothes do you wear when you want to relax at home?",
+    "de": "Was trägst du, wenn du zu Hause entspannen willst?",
+    "es": "¿Qué ropa te pones cuando quieres relajarte en casa?",
+    "fr": "Que portes-tu quand tu veux te détendre à la maison ?",
+    "it": "Cosa indossi quando vuoi rilassarti a casa?",
+    "pt": "Que roupa vestes quando queres descontrair em casa?",
+    "pt_BR": "Que roupa você usa quando quer relaxar em casa?"
+   }
+  },
+  {
+   "id": "fashion_basics-026",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you like to express yourself with colour, shape or accessories?",
+    "de": "Drückst du dich lieber über Farbe, Schnitt oder Accessoires aus?",
+    "es": "¿Te gusta expresarte con el color, la forma o los accesorios?",
+    "fr": "Aimes-tu t'exprimer par la couleur, la coupe ou les accessoires ?",
+    "it": "Ti piace esprimerti con il colore, la forma o gli accessori?",
+    "pt": "Gostas de te expressar através da cor, da forma ou dos acessórios?",
+    "pt_BR": "Você gosta de se expressar pela cor, pelo formato ou pelos acessórios?"
+   }
+  },
+  {
+   "id": "fashion_basics-027",
+   "lv": "any",
+   "i18n": {
+    "en": "What is your go-to outfit when you have no time to think?",
+    "de": "Was ist dein Standard-Outfit, wenn du keine Zeit zum Nachdenken hast?",
+    "es": "¿Cuál es tu conjunto de confianza cuando no tienes tiempo para pensar?",
+    "fr": "Quelle est ta tenue de secours quand tu n'as pas le temps de réfléchir ?",
+    "it": "Qual è il tuo outfit sicuro quando non hai tempo di pensare?",
+    "pt": "Qual é o teu coordenado de sempre quando não tens tempo para pensar?",
+    "pt_BR": "Qual é seu look coringa quando não dá tempo de pensar?"
+   }
+  },
+  {
+   "id": "fashion_basics-028",
+   "lv": "any",
+   "i18n": {
+    "en": "Where do you usually find clothes you love?",
+    "de": "Wo findest du normalerweise Kleidung, die du liebst?",
+    "es": "¿Dónde sueles encontrar la ropa que te encanta?",
+    "fr": "Où trouves-tu en général les vêtements que tu adores ?",
+    "it": "Dove trovi di solito i vestiti che ami?",
+    "pt": "Onde costumas encontrar a roupa de que gostas?",
+    "pt_BR": "Onde você costuma encontrar roupas que ama?"
+   }
+  },
+  {
+   "id": "fashion_basics-029",
+   "lv": "any",
+   "i18n": {
+    "en": "Have you ever bought something second-hand that you really love?",
+    "de": "Hast du schon mal etwas Secondhand gekauft, das du richtig liebst?",
+    "es": "¿Alguna vez has comprado algo de segunda mano que te encante?",
+    "fr": "As-tu déjà acheté d'occasion quelque chose que tu adores ?",
+    "it": "Hai mai comprato qualcosa di seconda mano che ami davvero?",
+    "pt": "Já compraste alguma coisa em segunda mão de que gostes mesmo?",
+    "pt_BR": "Você já comprou algo de segunda mão que ama de verdade?"
+   }
+  },
+  {
+   "id": "fashion_basics-030",
+   "lv": "any",
+   "i18n": {
+    "en": "What fabric do you find the most comfortable to wear?",
+    "de": "Welcher Stoff ist für dich am angenehmsten zu tragen?",
+    "es": "¿Qué tejido te parece más cómodo de llevar?",
+    "fr": "Quelle matière trouves-tu la plus agréable à porter ?",
+    "it": "Quale tessuto trovi più comodo da indossare?",
+    "pt": "Que tecido achas mais confortável de usar?",
+    "pt_BR": "Qual tecido você acha mais confortável de usar?"
+   }
+  },
+  {
+   "id": "fashion_basics-031",
+   "lv": "any",
+   "i18n": {
+    "en": "Which celebration or event do you love dressing up for?",
+    "de": "Für welches Fest oder Ereignis machst du dich am liebsten schick?",
+    "es": "¿Para qué celebración o evento te encanta arreglarte?",
+    "fr": "Pour quelle fête ou quel événement adores-tu t'habiller ?",
+    "it": "Per quale festa o evento ami vestirti bene?",
+    "pt": "Para que festa ou evento adoras arranjar-te?",
+    "pt_BR": "Pra qual festa ou evento você adora se arrumar?"
+   }
+  },
+  {
+   "id": "fashion_basics-032",
+   "lv": "any",
+   "i18n": {
+    "en": "How do you take care of your favourite clothes?",
+    "de": "Wie pflegst du deine Lieblingskleidung?",
+    "es": "¿Cómo cuidas tu ropa favorita?",
+    "fr": "Comment prends-tu soin de tes vêtements préférés ?",
+    "it": "Come ti prendi cura dei tuoi capi preferiti?",
+    "pt": "Como cuidas da tua roupa favorita?",
+    "pt_BR": "Como você cuida das suas roupas favoritas?"
+   }
+  },
+  {
+   "id": "fashion_basics-033",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you prefer dressing classic or trying something new?",
+    "de": "Ziehst du dich lieber klassisch an oder probierst du gern Neues aus?",
+    "es": "¿Prefieres vestir clásico o probar cosas nuevas?",
+    "fr": "Préfères-tu t'habiller de façon classique ou essayer des nouveautés ?",
+    "it": "Preferisci vestirti in modo classico o provare qualcosa di nuovo?",
+    "pt": "Preferes vestir-te de forma clássica ou experimentar coisas novas?",
+    "pt_BR": "Você prefere se vestir de forma clássica ou experimentar coisas novas?"
+   }
+  },
+  {
+   "id": "fashion_basics-034",
+   "lv": "any",
+   "i18n": {
+    "en": "Which place in the world has a style you find inspiring?",
+    "de": "Welcher Ort auf der Welt hat einen Stil, der dich inspiriert?",
+    "es": "¿Qué lugar del mundo tiene un estilo que te inspira?",
+    "fr": "Quel endroit du monde a un style qui t'inspire ?",
+    "it": "Quale posto nel mondo ha uno stile che ti ispira?",
+    "pt": "Que lugar do mundo tem um estilo que te inspira?",
+    "pt_BR": "Qual lugar do mundo tem um estilo que te inspira?"
+   }
+  },
+  {
+   "id": "fashion_basics-035",
+   "lv": "any",
+   "i18n": {
+    "en": "What is a style rule you love to break?",
+    "de": "Welche Stilregel brichst du gern?",
+    "es": "¿Qué regla de estilo te encanta romper?",
+    "fr": "Quelle règle de style adores-tu enfreindre ?",
+    "it": "Quale regola di stile ti piace infrangere?",
+    "pt": "Que regra de estilo adoras quebrar?",
+    "pt_BR": "Qual regra de estilo você adora quebrar?"
+   }
+  },
+  {
+   "id": "fashion_basics-036",
+   "lv": "any",
+   "i18n": {
+    "en": "How do you choose what to wear for a special day?",
+    "de": "Wie wählst du aus, was du an einem besonderen Tag trägst?",
+    "es": "¿Cómo eliges qué ponerte para un día especial?",
+    "fr": "Comment choisis-tu ta tenue pour un jour spécial ?",
+    "it": "Come scegli cosa indossare per un giorno speciale?",
+    "pt": "Como escolhes o que vestir num dia especial?",
+    "pt_BR": "Como você escolhe o que vestir num dia especial?"
+   }
+  },
+  {
+   "id": "fashion_basics-037",
+   "lv": "any",
+   "i18n": {
+    "en": "Is there a colour you would like to wear more often?",
+    "de": "Gibt es eine Farbe, die du gern öfter tragen würdest?",
+    "es": "¿Hay algún color que te gustaría llevar más a menudo?",
+    "fr": "Y a-t-il une couleur que tu aimerais porter plus souvent ?",
+    "it": "C'è un colore che vorresti indossare più spesso?",
+    "pt": "Há alguma cor que gostasses de usar mais vezes?",
+    "pt_BR": "Tem alguma cor que você gostaria de usar mais?"
+   }
+  },
+  {
+   "id": "fashion_basics-038",
+   "lv": "any",
+   "i18n": {
+    "en": "What does dressing well mean to you?",
+    "de": "Was bedeutet es für dich, gut angezogen zu sein?",
+    "es": "¿Qué significa para ti vestir bien?",
+    "fr": "Que signifie pour toi être bien habillé ?",
+    "it": "Cosa significa per te vestirsi bene?",
+    "pt": "O que significa para ti vestir bem?",
+    "pt_BR": "O que é se vestir bem pra você?"
+   }
+  },
+  {
+   "id": "fashion_basics-039",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you have a piece of jewellery or accessory with special meaning?",
+    "de": "Hast du ein Schmuckstück oder Accessoire mit besonderer Bedeutung?",
+    "es": "¿Tienes alguna joya o accesorio con un significado especial?",
+    "fr": "As-tu un bijou ou un accessoire qui a une signification particulière ?",
+    "it": "Hai un gioiello o un accessorio con un significato speciale?",
+    "pt": "Tens alguma joia ou acessório com um significado especial?",
+    "pt_BR": "Você tem alguma joia ou acessório com um significado especial?"
+   }
+  },
+  {
+   "id": "fashion_basics-040",
+   "lv": "any",
+   "i18n": {
+    "en": "If you could swap wardrobes with anyone for a day, who would it be?",
+    "de": "Wenn du einen Tag lang mit jemandem den Kleiderschrank tauschen könntest, mit wem?",
+    "es": "Si pudieras cambiar de armario con alguien por un día, ¿con quién sería?",
+    "fr": "Si tu pouvais échanger ta garde-robe avec quelqu'un pour une journée, qui choisirais-tu ?",
+    "it": "Se potessi scambiare l'armadio con qualcuno per un giorno, chi sceglieresti?",
+    "pt": "Se pudesses trocar de roupeiro com alguém por um dia, quem seria?",
+    "pt_BR": "Se você pudesse trocar de guarda-roupa com alguém por um dia, quem seria?"
+   }
+  },
+  {
+   "id": "fashion_basics-041",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which item in your wardrobe fits you best right now?",
+    "de": "Welches Teil in deinem Schrank passt dir im Moment am besten?",
+    "es": "¿Qué prenda de tu armario te queda mejor ahora mismo?",
+    "fr": "Quel vêtement de ta garde-robe te va le mieux en ce moment ?",
+    "it": "Quale capo del tuo armadio ti sta meglio in questo momento?",
+    "pt": "Que peça do teu roupeiro te assenta melhor neste momento?",
+    "pt_BR": "Qual peça do seu guarda-roupa veste melhor em você agora?"
+   }
+  },
+  {
+   "id": "fashion_basics-042",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which clothes in your wardrobe have you not worn for a year?",
+    "de": "Welche Kleidung in deinem Schrank hast du seit einem Jahr nicht getragen?",
+    "es": "¿Qué ropa de tu armario no te has puesto en un año?",
+    "fr": "Quels vêtements de ta garde-robe n'as-tu pas portés depuis un an ?",
+    "it": "Quali capi del tuo armadio non indossi da un anno?",
+    "pt": "Que roupa do teu roupeiro não usas há um ano?",
+    "pt_BR": "Quais roupas do seu guarda-roupa você não usa há um ano?"
+   }
+  },
+  {
+   "id": "fashion_basics-043",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Do you read the care labels on your clothes before washing?",
+    "de": "Liest du die Pflegeetiketten deiner Kleidung vor dem Waschen?",
+    "es": "¿Lees las etiquetas de cuidado de tu ropa antes de lavarla?",
+    "fr": "Lis-tu les étiquettes d'entretien de tes vêtements avant de les laver ?",
+    "it": "Leggi le etichette di lavaggio dei tuoi vestiti prima di lavarli?",
+    "pt": "Lês as etiquetas de cuidados da tua roupa antes de a lavar?",
+    "pt_BR": "Você lê as etiquetas de lavagem das suas roupas antes de lavar?"
+   }
+  },
+  {
+   "id": "fashion_basics-044",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which neutral colour do you own the most of?",
+    "de": "Von welcher neutralen Farbe hast du am meisten Kleidung?",
+    "es": "¿De qué color neutro tienes más ropa?",
+    "fr": "De quelle couleur neutre as-tu le plus de vêtements ?",
+    "it": "Di quale colore neutro hai più capi?",
+    "pt": "De que cor neutra tens mais roupa?",
+    "pt_BR": "De qual cor neutra você tem mais roupa?"
+   }
+  },
+  {
+   "id": "fashion_basics-045",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What makes a pair of trousers or jeans feel just right for you?",
+    "de": "Wann fühlt sich eine Hose oder Jeans für dich genau richtig an?",
+    "es": "¿Qué hace que unos pantalones o vaqueros te resulten perfectos?",
+    "fr": "Qu'est-ce qui fait qu'un pantalon ou un jean te semble parfait ?",
+    "it": "Cosa rende un paio di pantaloni o jeans perfetti per te?",
+    "pt": "O que faz umas calças ou umas calças de ganga parecerem perfeitas para ti?",
+    "pt_BR": "O que faz uma calça ou um jeans parecer perfeito pra você?"
+   }
+  },
+  {
+   "id": "fashion_basics-046",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Do you prefer cotton, wool, linen or synthetic fabrics? Why?",
+    "de": "Magst du lieber Baumwolle, Wolle, Leinen oder Synthetik? Warum?",
+    "es": "¿Prefieres algodón, lana, lino o tejidos sintéticos? ¿Por qué?",
+    "fr": "Préfères-tu le coton, la laine, le lin ou les synthétiques ? Pourquoi ?",
+    "it": "Preferisci cotone, lana, lino o tessuti sintetici? Perché?",
+    "pt": "Preferes algodão, lã, linho ou tecidos sintéticos? Porquê?",
+    "pt_BR": "Você prefere algodão, lã, linho ou tecidos sintéticos? Por quê?"
+   }
+  },
+  {
+   "id": "fashion_basics-047",
+   "lv": "beginner",
+   "i18n": {
+    "en": "How do you usually wear a shirt: tucked in or loose?",
+    "de": "Wie trägst du ein Hemd meistens: in die Hose gesteckt oder offen darüber?",
+    "es": "¿Cómo sueles llevar la camisa: por dentro o por fuera?",
+    "fr": "Comment portes-tu une chemise d'habitude : rentrée ou par-dessus ?",
+    "it": "Come porti di solito la camicia: dentro o fuori dai pantaloni?",
+    "pt": "Como costumas usar uma camisa: por dentro ou por fora?",
+    "pt_BR": "Como você costuma usar camisa: por dentro ou por fora?"
+   }
+  },
+  {
+   "id": "fashion_basics-048",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which type of bag do you use every day?",
+    "de": "Welche Art von Tasche benutzt du jeden Tag?",
+    "es": "¿Qué tipo de bolso o mochila usas cada día?",
+    "fr": "Quel type de sac utilises-tu tous les jours ?",
+    "it": "Che tipo di borsa usi ogni giorno?",
+    "pt": "Que tipo de mala ou mochila usas todos os dias?",
+    "pt_BR": "Que tipo de bolsa ou mochila você usa todo dia?"
+   }
+  },
+  {
+   "id": "fashion_basics-049",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What is one basic item you think everyone should have?",
+    "de": "Welches Basic sollte deiner Meinung nach jeder haben?",
+    "es": "¿Qué prenda básica crees que todo el mundo debería tener?",
+    "fr": "Quelle pièce basique tout le monde devrait-il avoir selon toi ?",
+    "it": "Quale capo basico secondo te dovrebbero avere tutti?",
+    "pt": "Que peça básica achas que toda a gente devia ter?",
+    "pt_BR": "Qual peça básica você acha que todo mundo deveria ter?"
+   }
+  },
+  {
+   "id": "fashion_basics-050",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Do you like wearing one colour head to toe? Why or why not?",
+    "de": "Magst du es, eine Farbe von Kopf bis Fuß zu tragen? Warum oder warum nicht?",
+    "es": "¿Te gusta vestir de un solo color de pies a cabeza? ¿Por qué?",
+    "fr": "Aimes-tu porter une seule couleur de la tête aux pieds ? Pourquoi ?",
+    "it": "Ti piace vestirti di un solo colore dalla testa ai piedi? Perché?",
+    "pt": "Gostas de vestir uma só cor dos pés à cabeça? Porquê?",
+    "pt_BR": "Você gosta de usar uma cor só da cabeça aos pés? Por quê?"
+   }
+  },
+  {
+   "id": "fashion_basics-051",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which pattern do you feel most comfortable wearing?",
+    "de": "In welchem Muster fühlst du dich am wohlsten?",
+    "es": "¿Con qué estampado te sientes más a gusto?",
+    "fr": "Dans quel motif te sens-tu le plus à l'aise ?",
+    "it": "Con quale fantasia ti senti più a tuo agio?",
+    "pt": "Com que padrão te sentes mais à vontade?",
+    "pt_BR": "Com qual estampa você se sente mais à vontade?"
+   }
+  },
+  {
+   "id": "fashion_basics-052",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What do you wear when it rains where you live?",
+    "de": "Was trägst du, wenn es bei dir regnet?",
+    "es": "¿Qué te pones cuando llueve donde vives?",
+    "fr": "Que portes-tu quand il pleut chez toi ?",
+    "it": "Cosa indossi quando piove dove vivi?",
+    "pt": "O que vestes quando chove onde vives?",
+    "pt_BR": "O que você veste quando chove onde mora?"
+   }
+  },
+  {
+   "id": "fashion_basics-053",
+   "lv": "beginner",
+   "i18n": {
+    "en": "How many pairs of shoes do you really wear regularly?",
+    "de": "Wie viele Paar Schuhe trägst du wirklich regelmäßig?",
+    "es": "¿Cuántos pares de zapatos usas de verdad con regularidad?",
+    "fr": "Combien de paires de chaussures portes-tu vraiment régulièrement ?",
+    "it": "Quante paia di scarpe indossi davvero regolarmente?",
+    "pt": "Quantos pares de sapatos usas mesmo com regularidade?",
+    "pt_BR": "Quantos pares de sapato você usa de verdade com frequência?"
+   }
+  },
+  {
+   "id": "fashion_basics-054",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What does smart casual mean to you?",
+    "de": "Was bedeutet Smart Casual für dich?",
+    "es": "¿Qué significa para ti el estilo «smart casual»?",
+    "fr": "Que signifie pour toi le style chic décontracté ?",
+    "it": "Cosa significa per te lo stile casual elegante?",
+    "pt": "O que significa para ti um estilo casual cuidado?",
+    "pt_BR": "O que significa esporte fino pra você?"
+   }
+  },
+  {
+   "id": "fashion_basics-055",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What do you usually wear to work or study?",
+    "de": "Was trägst du normalerweise zur Arbeit oder zum Lernen?",
+    "es": "¿Qué sueles ponerte para trabajar o estudiar?",
+    "fr": "Que portes-tu d'habitude pour travailler ou étudier ?",
+    "it": "Cosa indossi di solito per lavorare o studiare?",
+    "pt": "O que costumas vestir para trabalhar ou estudar?",
+    "pt_BR": "O que você costuma usar pra trabalhar ou estudar?"
+   }
+  },
+  {
+   "id": "fashion_basics-056",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Do you have a favourite jacket or coat? What is it like?",
+    "de": "Hast du eine Lieblingsjacke oder einen Lieblingsmantel? Wie sieht sie oder er aus?",
+    "es": "¿Tienes una chaqueta o un abrigo favorito? ¿Cómo es?",
+    "fr": "As-tu une veste ou un manteau préféré ? Comment est-il ?",
+    "it": "Hai una giacca o un cappotto preferito? Com'è?",
+    "pt": "Tens um casaco preferido? Como é?",
+    "pt_BR": "Você tem uma jaqueta ou um casaco favorito? Como ele é?"
+   }
+  },
+  {
+   "id": "fashion_basics-057",
+   "lv": "beginner",
+   "i18n": {
+    "en": "How do you layer clothes when the weather changes during the day?",
+    "de": "Wie kombinierst du Schichten, wenn sich das Wetter im Lauf des Tages ändert?",
+    "es": "¿Cómo combinas capas cuando el tiempo cambia durante el día?",
+    "fr": "Comment superposes-tu tes vêtements quand la météo change dans la journée ?",
+    "it": "Come ti vesti a strati quando il tempo cambia durante il giorno?",
+    "pt": "Como combinas camadas quando o tempo muda ao longo do dia?",
+    "pt_BR": "Como você faz camadas quando o tempo muda ao longo do dia?"
+   }
+  },
+  {
+   "id": "fashion_basics-058",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which accessory could easily refresh an outfit you already own?",
+    "de": "Welches Accessoire könnte ein Outfit, das du schon hast, leicht auffrischen?",
+    "es": "¿Qué accesorio podría renovar fácilmente un conjunto que ya tienes?",
+    "fr": "Quel accessoire pourrait facilement rafraîchir une tenue que tu as déjà ?",
+    "it": "Quale accessorio potrebbe rinnovare facilmente un outfit che hai già?",
+    "pt": "Que acessório podia renovar facilmente um coordenado que já tens?",
+    "pt_BR": "Qual acessório poderia renovar fácil um look que você já tem?"
+   }
+  },
+  {
+   "id": "fashion_basics-059",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Do you know your measurements, or do you shop by trying things on?",
+    "de": "Kennst du deine Maße, oder kaufst du lieber durch Anprobieren?",
+    "es": "¿Conoces tus medidas o compras probándote la ropa?",
+    "fr": "Connais-tu tes mesures, ou achètes-tu en essayant ?",
+    "it": "Conosci le tue misure o compri provando i capi?",
+    "pt": "Sabes as tuas medidas ou compras experimentando a roupa?",
+    "pt_BR": "Você sabe suas medidas ou compra provando as roupas?"
+   }
+  },
+  {
+   "id": "fashion_basics-060",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What is the most comfortable outfit you own?",
+    "de": "Was ist das bequemste Outfit, das du besitzt?",
+    "es": "¿Cuál es el conjunto más cómodo que tienes?",
+    "fr": "Quelle est la tenue la plus confortable que tu possèdes ?",
+    "it": "Qual è l'outfit più comodo che hai?",
+    "pt": "Qual é o coordenado mais confortável que tens?",
+    "pt_BR": "Qual é o look mais confortável que você tem?"
+   }
+  },
+  {
+   "id": "fashion_basics-061",
+   "lv": "beginner",
+   "i18n": {
+    "en": "How do you dress for very hot or very cold days?",
+    "de": "Wie ziehst du dich an sehr heißen oder sehr kalten Tagen an?",
+    "es": "¿Cómo te vistes en días de mucho calor o mucho frío?",
+    "fr": "Comment t'habilles-tu les jours très chauds ou très froids ?",
+    "it": "Come ti vesti nelle giornate molto calde o molto fredde?",
+    "pt": "Como te vestes em dias muito quentes ou muito frios?",
+    "pt_BR": "Como você se veste em dias muito quentes ou muito frios?"
+   }
+  },
+  {
+   "id": "fashion_basics-062",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which shoes would you choose for a long day of walking?",
+    "de": "Welche Schuhe würdest du für einen langen Tag zu Fuß wählen?",
+    "es": "¿Qué zapatos elegirías para un día entero caminando?",
+    "fr": "Quelles chaussures choisirais-tu pour une longue journée de marche ?",
+    "it": "Quali scarpe sceglieresti per una lunga giornata a piedi?",
+    "pt": "Que sapatos escolherias para um dia inteiro a andar a pé?",
+    "pt_BR": "Qual sapato você escolheria pra um dia inteiro andando?"
+   }
+  },
+  {
+   "id": "fashion_basics-063",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Have you ever had something altered by a tailor? How did it go?",
+    "de": "Hast du schon mal etwas beim Schneider ändern lassen? Wie war es?",
+    "es": "¿Alguna vez te han arreglado una prenda en una sastrería? ¿Qué tal fue?",
+    "fr": "As-tu déjà fait retoucher un vêtement ? Comment ça s'est passé ?",
+    "it": "Hai mai fatto modificare un capo da un sarto? Com'è andata?",
+    "pt": "Já mandaste arranjar uma peça numa costureira? Como correu?",
+    "pt_BR": "Você já mandou ajustar uma roupa na costureira? Como foi?"
+   }
+  },
+  {
+   "id": "fashion_basics-064",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What colours make you feel bright and energetic?",
+    "de": "Welche Farben geben dir ein frisches, energiegeladenes Gefühl?",
+    "es": "¿Qué colores te hacen sentir luminoso y con energía?",
+    "fr": "Quelles couleurs te donnent un air lumineux et plein d'énergie ?",
+    "it": "Quali colori ti fanno sentire luminoso e pieno di energia?",
+    "pt": "Que cores te fazem sentir luminoso e cheio de energia?",
+    "pt_BR": "Quais cores fazem você se sentir radiante e cheio de energia?"
+   }
+  },
+  {
+   "id": "fashion_basics-065",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which item do you wish you had more ways to style?",
+    "de": "Für welches Teil hättest du gern mehr Kombinationsideen?",
+    "es": "¿Para qué prenda te gustaría tener más formas de combinarla?",
+    "fr": "Pour quel vêtement aimerais-tu avoir plus d'idées de style ?",
+    "it": "Per quale capo vorresti avere più idee di abbinamento?",
+    "pt": "Para que peça gostavas de ter mais ideias de combinação?",
+    "pt_BR": "Pra qual peça você queria ter mais ideias de combinação?"
+   }
+  },
+  {
+   "id": "fashion_basics-066",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What would be the core pieces of your capsule wardrobe?",
+    "de": "Was wären die Kernteile deiner Capsule Wardrobe?",
+    "es": "¿Cuáles serían las prendas clave de tu armario cápsula?",
+    "fr": "Quelles seraient les pièces essentielles de ta garde-robe capsule ?",
+    "it": "Quali sarebbero i capi base del tuo guardaroba capsule?",
+    "pt": "Quais seriam as peças-chave do teu roupeiro cápsula?",
+    "pt_BR": "Quais seriam as peças-chave do seu guarda-roupa cápsula?"
+   }
+  },
+  {
+   "id": "fashion_basics-067",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which style type feels closest to you: classic, sporty, bohemian or another?",
+    "de": "Welcher Stiltyp passt am ehesten zu dir: klassisch, sportlich, Boho oder ein anderer?",
+    "es": "¿Qué tipo de estilo sientes más tuyo: clásico, deportivo, bohemio u otro?",
+    "fr": "Quel style te ressemble le plus : classique, sportif, bohème ou autre ?",
+    "it": "Quale stile senti più tuo: classico, sportivo, bohémien o un altro?",
+    "pt": "Que tipo de estilo sentes mais teu: clássico, desportivo, boémio ou outro?",
+    "pt_BR": "Qual tipo de estilo é mais a sua cara: clássico, esportivo, boho ou outro?"
+   }
+  },
+  {
+   "id": "fashion_basics-068",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How do you check the quality of a garment before buying it?",
+    "de": "Wie prüfst du die Qualität eines Kleidungsstücks vor dem Kauf?",
+    "es": "¿Cómo compruebas la calidad de una prenda antes de comprarla?",
+    "fr": "Comment vérifies-tu la qualité d'un vêtement avant de l'acheter ?",
+    "it": "Come controlli la qualità di un capo prima di comprarlo?",
+    "pt": "Como verificas a qualidade de uma peça antes de a comprar?",
+    "pt_BR": "Como você confere a qualidade de uma peça antes de comprar?"
+   }
+  },
+  {
+   "id": "fashion_basics-069",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What is your favourite way to mix patterns or textures?",
+    "de": "Wie kombinierst du am liebsten Muster oder Texturen?",
+    "es": "¿Cuál es tu forma favorita de mezclar estampados o texturas?",
+    "fr": "Quelle est ta façon préférée de mélanger motifs ou textures ?",
+    "it": "Qual è il tuo modo preferito di mescolare fantasie o texture?",
+    "pt": "Qual é a tua forma favorita de misturar padrões ou texturas?",
+    "pt_BR": "Qual é seu jeito favorito de misturar estampas ou texturas?"
+   }
+  },
+  {
+   "id": "fashion_basics-070",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How do you dress for an important meeting or interview?",
+    "de": "Wie kleidest du dich für ein wichtiges Treffen oder Vorstellungsgespräch?",
+    "es": "¿Cómo te vistes para una reunión importante o una entrevista?",
+    "fr": "Comment t'habilles-tu pour une réunion importante ou un entretien ?",
+    "it": "Come ti vesti per una riunione importante o un colloquio?",
+    "pt": "Como te vestes para uma reunião importante ou uma entrevista?",
+    "pt_BR": "Como você se veste pra uma reunião importante ou entrevista?"
+   }
+  },
+  {
+   "id": "fashion_basics-071",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which traditional garment from another culture would you like to learn about?",
+    "de": "Über welches traditionelle Kleidungsstück einer anderen Kultur möchtest du mehr erfahren?",
+    "es": "¿Sobre qué prenda tradicional de otra cultura te gustaría aprender?",
+    "fr": "Sur quel vêtement traditionnel d'une autre culture aimerais-tu en apprendre plus ?",
+    "it": "Quale capo tradizionale di un'altra cultura ti piacerebbe conoscere?",
+    "pt": "Que peça tradicional de outra cultura gostavas de conhecer melhor?",
+    "pt_BR": "Sobre qual roupa tradicional de outra cultura você gostaria de aprender?"
+   }
+  },
+  {
+   "id": "fashion_basics-072",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How do you pack clothes for a trip so you have enough outfits?",
+    "de": "Wie packst du Kleidung für eine Reise, damit du genug Outfits hast?",
+    "es": "¿Cómo haces la maleta para tener suficientes conjuntos en un viaje?",
+    "fr": "Comment fais-tu ta valise pour avoir assez de tenues en voyage ?",
+    "it": "Come prepari la valigia per avere abbastanza outfit in viaggio?",
+    "pt": "Como fazes a mala para teres coordenados suficientes numa viagem?",
+    "pt_BR": "Como você faz a mala pra ter looks suficientes numa viagem?"
+   }
+  },
+  {
+   "id": "fashion_basics-073",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What do you think about renting clothes for special occasions?",
+    "de": "Was hältst du davon, Kleidung für besondere Anlässe zu mieten?",
+    "es": "¿Qué opinas de alquilar ropa para ocasiones especiales?",
+    "fr": "Que penses-tu de la location de vêtements pour les grandes occasions ?",
+    "it": "Cosa pensi del noleggio di abiti per le occasioni speciali?",
+    "pt": "O que achas de alugar roupa para ocasiões especiais?",
+    "pt_BR": "O que você acha de alugar roupa pra ocasiões especiais?"
+   }
+  },
+  {
+   "id": "fashion_basics-074",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which piece could become your signature item?",
+    "de": "Welches Teil könnte zu deinem Markenzeichen werden?",
+    "es": "¿Qué prenda podría convertirse en tu sello personal?",
+    "fr": "Quel vêtement pourrait devenir ta pièce signature ?",
+    "it": "Quale capo potrebbe diventare il tuo pezzo distintivo?",
+    "pt": "Que peça poderia tornar-se a tua marca pessoal?",
+    "pt_BR": "Qual peça poderia virar sua marca registrada?"
+   }
+  },
+  {
+   "id": "fashion_basics-075",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How do you avoid buying things you will not wear?",
+    "de": "Wie vermeidest du, Dinge zu kaufen, die du dann nicht trägst?",
+    "es": "¿Cómo evitas comprar cosas que luego no te pones?",
+    "fr": "Comment évites-tu d'acheter des vêtements que tu ne porteras pas ?",
+    "it": "Come eviti di comprare cose che poi non indosserai?",
+    "pt": "Como evitas comprar coisas que depois não vais usar?",
+    "pt_BR": "Como você evita comprar coisas que não vai usar?"
+   }
+  },
+  {
+   "id": "fashion_basics-076",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which shoes would complete most of the outfits in your wardrobe?",
+    "de": "Welche Schuhe würden die meisten Outfits in deinem Schrank vervollständigen?",
+    "es": "¿Qué zapatos completarían la mayoría de los conjuntos de tu armario?",
+    "fr": "Quelles chaussures compléteraient la plupart des tenues de ta garde-robe ?",
+    "it": "Quali scarpe completerebbero la maggior parte degli outfit del tuo armadio?",
+    "pt": "Que sapatos completariam a maioria dos coordenados do teu roupeiro?",
+    "pt_BR": "Qual sapato completaria a maioria dos looks do seu guarda-roupa?"
+   }
+  },
+  {
+   "id": "fashion_basics-077",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How do you adapt your outfits for a celebration in another culture?",
+    "de": "Wie passt du deine Kleidung für ein Fest in einer anderen Kultur an?",
+    "es": "¿Cómo adaptas tu ropa para una celebración en otra cultura?",
+    "fr": "Comment adaptes-tu ta tenue pour une fête dans une autre culture ?",
+    "it": "Come adatti il tuo abbigliamento per una festa in un'altra cultura?",
+    "pt": "Como adaptas a tua roupa para uma celebração noutra cultura?",
+    "pt_BR": "Como você adapta sua roupa pra uma celebração em outra cultura?"
+   }
+  },
+  {
+   "id": "fashion_basics-078",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which small alteration would make a piece you own perfect?",
+    "de": "Welche kleine Änderung würde ein Teil, das du hast, perfekt machen?",
+    "es": "¿Qué pequeño arreglo haría perfecta una prenda que ya tienes?",
+    "fr": "Quelle petite retouche rendrait parfait un vêtement que tu possèdes ?",
+    "it": "Quale piccola modifica renderebbe perfetto un capo che hai?",
+    "pt": "Que pequeno arranjo tornaria perfeita uma peça que já tens?",
+    "pt_BR": "Qual pequeno ajuste deixaria perfeita uma peça que você já tem?"
+   }
+  },
+  {
+   "id": "fashion_basics-079",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What do you think about having a personal uniform you wear often?",
+    "de": "Was hältst du von einer persönlichen Uniform, die du oft trägst?",
+    "es": "¿Qué opinas de tener un uniforme personal que llevas a menudo?",
+    "fr": "Que penses-tu d'avoir un uniforme personnel que tu portes souvent ?",
+    "it": "Cosa pensi di avere una divisa personale da indossare spesso?",
+    "pt": "O que achas de ter um uniforme pessoal que usas muitas vezes?",
+    "pt_BR": "O que você acha de ter um uniforme pessoal que usa sempre?"
+   }
+  },
+  {
+   "id": "fashion_basics-080",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How do you choose an outfit that looks good on a video call?",
+    "de": "Wie wählst du ein Outfit, das bei einem Videocall gut aussieht?",
+    "es": "¿Cómo eliges un conjunto que quede bien en una videollamada?",
+    "fr": "Comment choisis-tu une tenue qui rend bien en visioconférence ?",
+    "it": "Come scegli un outfit che stia bene in videochiamata?",
+    "pt": "Como escolhes um coordenado que fique bem numa videochamada?",
+    "pt_BR": "Como você escolhe um look que fica bem numa chamada de vídeo?"
+   }
+  },
+  {
+   "id": "fashion_basics-081",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What is your favourite way to style a simple white shirt or T-shirt?",
+    "de": "Wie stylst du am liebsten ein schlichtes weißes Hemd oder T-Shirt?",
+    "es": "¿Cuál es tu forma favorita de combinar una camisa o camiseta blanca sencilla?",
+    "fr": "Comment aimes-tu porter une simple chemise ou un t-shirt blanc ?",
+    "it": "Qual è il tuo modo preferito di abbinare una semplice camicia o t-shirt bianca?",
+    "pt": "Qual é a tua forma favorita de usar uma camisa ou t-shirt branca simples?",
+    "pt_BR": "Qual é seu jeito favorito de usar uma camisa ou camiseta branca simples?"
+   }
+  },
+  {
+   "id": "fashion_basics-082",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which colour palette would you choose for your wardrobe?",
+    "de": "Welche Farbpalette würdest du für deinen Kleiderschrank wählen?",
+    "es": "¿Qué paleta de colores elegirías para tu armario?",
+    "fr": "Quelle palette de couleurs choisirais-tu pour ta garde-robe ?",
+    "it": "Quale palette di colori sceglieresti per il tuo guardaroba?",
+    "pt": "Que paleta de cores escolherias para o teu roupeiro?",
+    "pt_BR": "Qual paleta de cores você escolheria pro seu guarda-roupa?"
+   }
+  },
+  {
+   "id": "fashion_basics-083",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How do you turn a daytime outfit into an evening look?",
+    "de": "Wie machst du aus einem Tages-Outfit einen Abendlook?",
+    "es": "¿Cómo conviertes un conjunto de día en uno de noche?",
+    "fr": "Comment transformes-tu une tenue de jour en tenue de soirée ?",
+    "it": "Come trasformi un outfit da giorno in un look da sera?",
+    "pt": "Como transformas um coordenado de dia num visual de noite?",
+    "pt_BR": "Como você transforma um look de dia num look de noite?"
+   }
+  },
+  {
+   "id": "fashion_basics-084",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Do you enjoy clothing swaps or vintage shops? What have you found?",
+    "de": "Magst du Kleidertauschpartys oder Vintage-Läden? Was hast du schon gefunden?",
+    "es": "¿Te gustan los intercambios de ropa o las tiendas vintage? ¿Qué has encontrado?",
+    "fr": "Aimes-tu les trocs de vêtements ou les friperies ? Qu'y as-tu trouvé ?",
+    "it": "Ti piacciono gli scambi di vestiti o i negozi vintage? Cosa hai trovato?",
+    "pt": "Gostas de trocas de roupa ou lojas vintage? O que já encontraste?",
+    "pt_BR": "Você curte trocas de roupa ou brechós? O que já achou?"
+   }
+  },
+  {
+   "id": "fashion_basics-085",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which wardrobe gap would unlock the most new outfits for you?",
+    "de": "Welche Lücke im Kleiderschrank würde dir die meisten neuen Outfits ermöglichen?",
+    "es": "¿Qué hueco de tu armario, si lo llenaras, te daría más conjuntos nuevos?",
+    "fr": "Quel manque dans ta garde-robe, une fois comblé, t'offrirait le plus de tenues ?",
+    "it": "Quale lacuna del guardaroba ti darebbe più outfit nuovi se la colmassi?",
+    "pt": "Que falta no teu roupeiro, se preenchida, te daria mais coordenados novos?",
+    "pt_BR": "Qual peça que falta no seu guarda-roupa te daria mais looks novos?"
+   }
+  },
+  {
+   "id": "fashion_basics-086",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How would you describe your style signature to a stranger?",
+    "de": "Wie würdest du einem fremden Menschen dein Stil-Markenzeichen beschreiben?",
+    "es": "¿Cómo describirías tu sello de estilo a un desconocido?",
+    "fr": "Comment décrirais-tu ton style signature à un inconnu ?",
+    "it": "Come descriveresti il tuo stile distintivo a uno sconosciuto?",
+    "pt": "Como descreverias a tua marca de estilo a um desconhecido?",
+    "pt_BR": "Como você descreveria sua marca de estilo pra um desconhecido?"
+   }
+  },
+  {
+   "id": "fashion_basics-087",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Which decade of fashion history influences your style the most?",
+    "de": "Welches Jahrzehnt der Modegeschichte beeinflusst deinen Stil am meisten?",
+    "es": "¿Qué década de la historia de la moda influye más en tu estilo?",
+    "fr": "Quelle décennie de l'histoire de la mode influence le plus ton style ?",
+    "it": "Quale decennio della storia della moda influenza di più il tuo stile?",
+    "pt": "Que década da história da moda mais influencia o teu estilo?",
+    "pt_BR": "Qual década da história da moda mais influencia seu estilo?"
+   }
+  },
+  {
+   "id": "fashion_basics-088",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How do you enjoy a trend without losing your personal style?",
+    "de": "Wie genießt du einen Trend, ohne deinen eigenen Stil zu verlieren?",
+    "es": "¿Cómo disfrutas de una tendencia sin perder tu estilo personal?",
+    "fr": "Comment profites-tu d'une tendance sans perdre ton style ?",
+    "it": "Come segui una tendenza senza perdere il tuo stile personale?",
+    "pt": "Como aproveitas uma tendência sem perder o teu estilo pessoal?",
+    "pt_BR": "Como você aproveita uma tendência sem perder seu estilo?"
+   }
+  },
+  {
+   "id": "fashion_basics-089",
+   "lv": "advanced",
+   "i18n": {
+    "en": "What does sustainable fashion mean in your daily life?",
+    "de": "Was bedeutet nachhaltige Mode in deinem Alltag?",
+    "es": "¿Qué significa la moda sostenible en tu día a día?",
+    "fr": "Que signifie la mode durable dans ton quotidien ?",
+    "it": "Cosa significa la moda sostenibile nella tua vita quotidiana?",
+    "pt": "O que significa a moda sustentável no teu dia a dia?",
+    "pt_BR": "O que moda sustentável significa no seu dia a dia?"
+   }
+  },
+  {
+   "id": "fashion_basics-090",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Which garment would you like to learn to mend or make yourself?",
+    "de": "Welches Kleidungsstück würdest du gern selbst flicken oder nähen lernen?",
+    "es": "¿Qué prenda te gustaría aprender a arreglar o hacer tú mismo?",
+    "fr": "Quel vêtement aimerais-tu apprendre à réparer ou à confectionner toi-même ?",
+    "it": "Quale capo ti piacerebbe imparare a riparare o a cucire da solo?",
+    "pt": "Que peça gostavas de aprender a arranjar ou a fazer tu mesmo?",
+    "pt_BR": "Qual peça você gostaria de aprender a consertar ou fazer sozinho?"
+   }
+  },
+  {
+   "id": "fashion_basics-091",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How do fashion images in media make you feel, and how do you respond?",
+    "de": "Wie fühlst du dich bei Modebildern in den Medien, und wie gehst du damit um?",
+    "es": "¿Cómo te hacen sentir las imágenes de moda en los medios y cómo reaccionas?",
+    "fr": "Que ressens-tu face aux images de mode dans les médias, et comment réagis-tu ?",
+    "it": "Come ti fanno sentire le immagini di moda nei media, e come reagisci?",
+    "pt": "Como te fazem sentir as imagens de moda nos media, e como reages?",
+    "pt_BR": "Como as imagens de moda na mídia fazem você se sentir, e como você reage?"
+   }
+  },
+  {
+   "id": "fashion_basics-092",
+   "lv": "advanced",
+   "i18n": {
+    "en": "What values guide your choices when you buy clothes?",
+    "de": "Welche Werte leiten deine Entscheidungen beim Kleidungskauf?",
+    "es": "¿Qué valores guían tus decisiones al comprar ropa?",
+    "fr": "Quelles valeurs guident tes choix quand tu achètes des vêtements ?",
+    "it": "Quali valori guidano le tue scelte quando compri vestiti?",
+    "pt": "Que valores orientam as tuas escolhas quando compras roupa?",
+    "pt_BR": "Quais valores guiam suas escolhas na hora de comprar roupa?"
+   }
+  },
+  {
+   "id": "fashion_basics-093",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How would you help a friend find a style that feels like them?",
+    "de": "Wie würdest du einer Freundin oder einem Freund helfen, einen passenden Stil zu finden?",
+    "es": "¿Cómo ayudarías a un amigo a encontrar un estilo que sienta suyo?",
+    "fr": "Comment aiderais-tu un ami à trouver un style qui lui ressemble ?",
+    "it": "Come aiuteresti un amico a trovare uno stile che lo rappresenti?",
+    "pt": "Como ajudarias um amigo a encontrar um estilo que seja a cara dele?",
+    "pt_BR": "Como você ajudaria um amigo a encontrar um estilo que seja a cara dele?"
+   }
+  },
+  {
+   "id": "fashion_basics-094",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Which global style, from Tokyo to Lagos, would you love to explore more?",
+    "de": "Welchen Stil aus aller Welt, von Tokio bis Lagos, würdest du gern näher erkunden?",
+    "es": "¿Qué estilo del mundo, de Tokio a Lagos, te encantaría explorar más?",
+    "fr": "Quel style du monde, de Tokyo à Lagos, aimerais-tu explorer davantage ?",
+    "it": "Quale stile del mondo, da Tokyo a Lagos, ti piacerebbe esplorare di più?",
+    "pt": "Que estilo do mundo, de Tóquio a Lagos, adorarias explorar mais?",
+    "pt_BR": "Qual estilo do mundo, de Tóquio a Lagos, você adoraria explorar mais?"
+   }
+  },
+  {
+   "id": "fashion_basics-095",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How do you balance quality, budget and style when building a wardrobe?",
+    "de": "Wie bringst du Qualität, Budget und Stil beim Aufbau deiner Garderobe in Einklang?",
+    "es": "¿Cómo equilibras calidad, presupuesto y estilo al crear tu armario?",
+    "fr": "Comment concilies-tu qualité, budget et style pour construire ta garde-robe ?",
+    "it": "Come bilanci qualità, budget e stile quando costruisci il tuo guardaroba?",
+    "pt": "Como equilibras qualidade, orçamento e estilo ao construir o teu roupeiro?",
+    "pt_BR": "Como você equilibra qualidade, orçamento e estilo ao montar seu guarda-roupa?"
+   }
+  },
+  {
+   "id": "fashion_basics-096",
+   "lv": "advanced",
+   "i18n": {
+    "en": "What would your personal style manifesto say?",
+    "de": "Was würde in deinem persönlichen Stil-Manifest stehen?",
+    "es": "¿Qué diría tu manifiesto de estilo personal?",
+    "fr": "Que dirait ton manifeste de style personnel ?",
+    "it": "Cosa direbbe il tuo manifesto di stile personale?",
+    "pt": "O que diria o teu manifesto de estilo pessoal?",
+    "pt_BR": "O que diria o seu manifesto de estilo pessoal?"
+   }
+  },
+  {
+   "id": "fashion_basics-097",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How has your relationship with clothes changed on this journey?",
+    "de": "Wie hat sich deine Beziehung zu Kleidung auf dieser Reise verändert?",
+    "es": "¿Cómo ha cambiado tu relación con la ropa en este camino?",
+    "fr": "Comment ta relation aux vêtements a-t-elle changé pendant ce parcours ?",
+    "it": "Come è cambiato il tuo rapporto con i vestiti in questo percorso?",
+    "pt": "Como mudou a tua relação com a roupa ao longo deste percurso?",
+    "pt_BR": "Como sua relação com a roupa mudou nessa jornada?"
+   }
+  },
+  {
+   "id": "fashion_basics-098",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Which outfit from this year are you proudest of, and why?",
+    "de": "Auf welches Outfit aus diesem Lernjahr bist du am stolzesten, und warum?",
+    "es": "¿De qué conjunto de este camino estás más orgulloso y por qué?",
+    "fr": "De quelle tenue de ce parcours es-tu le plus fier, et pourquoi ?",
+    "it": "Di quale outfit di questo percorso sei più orgoglioso, e perché?",
+    "pt": "De que coordenado deste percurso tens mais orgulho, e porquê?",
+    "pt_BR": "De qual look dessa jornada você mais se orgulha, e por quê?"
+   }
+  },
+  {
+   "id": "fashion_basics-099",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How do art, music or film inspire the way you dress?",
+    "de": "Wie inspirieren Kunst, Musik oder Film deine Art, dich zu kleiden?",
+    "es": "¿Cómo inspiran el arte, la música o el cine tu forma de vestir?",
+    "fr": "Comment l'art, la musique ou le cinéma inspirent-ils ta façon de t'habiller ?",
+    "it": "Come l'arte, la musica o il cinema ispirano il tuo modo di vestire?",
+    "pt": "Como é que a arte, a música ou o cinema inspiram a tua forma de vestir?",
+    "pt_BR": "Como arte, música ou cinema inspiram seu jeito de se vestir?"
+   }
+  },
+  {
+   "id": "fashion_basics-100",
+   "lv": "advanced",
+   "i18n": {
+    "en": "What style goal would you like to set for the year ahead?",
+    "de": "Welches Stilziel möchtest du dir für das kommende Jahr setzen?",
+    "es": "¿Qué objetivo de estilo te gustaría fijarte para el próximo año?",
+    "fr": "Quel objectif de style aimerais-tu te fixer pour l'année à venir ?",
+    "it": "Quale obiettivo di stile vorresti darti per il prossimo anno?",
+    "pt": "Que objetivo de estilo gostavas de definir para o próximo ano?",
+    "pt_BR": "Qual meta de estilo você gostaria de definir pro próximo ano?"
+   }
+  }
+ ]
+}

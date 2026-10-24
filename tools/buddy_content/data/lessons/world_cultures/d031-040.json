@@ -1,0 +1,835 @@
+{
+ "topic": "world_cultures",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Festivals of light",
+     "g": "Discover celebrations around the world that shine with lamps, candles and lanterns.",
+     "p": [
+      "Diwali, celebrated in India and by communities worldwide, fills homes with small oil lamps, colourful rangoli and sweets.",
+      "Hanukkah lasts eight nights, and each evening one more candle is lit, often with fried treats like latkes.",
+      "In Thailand, during Loy Krathong, people float small decorated baskets with candles on rivers and lakes."
+     ],
+     "q": "Why do you think light is such a popular symbol in celebrations around the world?",
+     "c": "Light a candle or lamp this evening and think of one good wish for the people around you."
+    },
+    "de": {
+     "t": "Lichterfeste",
+     "g": "Entdecke Feste auf der ganzen Welt, die mit Lampen, Kerzen und Laternen leuchten.",
+     "p": [
+      "Zu Diwali, gefeiert in Indien und von Gemeinschaften weltweit, schmücken kleine Öllampen, bunte Rangoli und Süßes die Häuser.",
+      "Chanukka dauert acht Abende, und jeden Abend wird eine Kerze mehr angezündet, oft mit Frittiertem wie Latkes.",
+      "In Thailand lässt man zu Loy Krathong kleine geschmückte Körbchen mit Kerzen auf Flüssen und Seen treiben."
+     ],
+     "q": "Warum ist Licht wohl ein so beliebtes Symbol bei Festen auf der ganzen Welt?",
+     "c": "Zünde heute Abend eine Kerze oder Lampe an und denke an einen guten Wunsch für die Menschen um dich."
+    },
+    "es": {
+     "t": "Fiestas de la luz",
+     "g": "Descubre celebraciones del mundo que brillan con lámparas, velas y farolillos.",
+     "p": [
+      "Diwali, celebrado en India y por comunidades de todo el mundo, llena las casas de lamparitas de aceite, rangoli de colores y dulces.",
+      "Janucá dura ocho noches y cada noche se enciende una vela más, a menudo con fritos como los latkes.",
+      "En Tailandia, durante Loy Krathong, se hacen flotar en ríos y lagos pequeñas cestas adornadas con velas."
+     ],
+     "q": "¿Por qué crees que la luz es un símbolo tan popular en las celebraciones del mundo?",
+     "c": "Enciende esta noche una vela o una lámpara y piensa en un buen deseo para la gente que te rodea."
+    },
+    "fr": {
+     "t": "Les fêtes de la lumière",
+     "g": "Découvre des célébrations du monde entier qui brillent de lampes, de bougies et de lanternes.",
+     "p": [
+      "Diwali, fêtée en Inde et par des communautés du monde entier, remplit les maisons de lampes à huile, de rangoli colorés et de douceurs.",
+      "Hanoukka dure huit soirs, et chaque soir on allume une bougie de plus, souvent avec des beignets comme les latkes.",
+      "En Thaïlande, pendant Loy Krathong, on fait flotter sur les rivières et les lacs de petits paniers décorés de bougies."
+     ],
+     "q": "Pourquoi la lumière est-elle, selon toi, un symbole si populaire dans les fêtes du monde ?",
+     "c": "Allume ce soir une bougie ou une lampe et pense à un vœu positif pour les gens qui t'entourent."
+    },
+    "it": {
+     "t": "Feste della luce",
+     "g": "Scopri celebrazioni nel mondo che brillano di lampade, candele e lanterne.",
+     "p": [
+      "Diwali, celebrata in India e da comunità in tutto il mondo, riempie le case di lampade a olio, rangoli colorati e dolci.",
+      "Hanukkah dura otto sere e ogni sera si accende una candela in più, spesso con fritti come i latkes.",
+      "In Thailandia, durante il Loy Krathong, si fanno galleggiare su fiumi e laghi piccoli cesti decorati con candele."
+     ],
+     "q": "Perché secondo te la luce è un simbolo così diffuso nelle feste del mondo?",
+     "c": "Accendi stasera una candela o una lampada e pensa a un augurio per le persone che ti stanno intorno."
+    },
+    "pt": {
+     "t": "Festas da luz",
+     "g": "Descobre celebrações pelo mundo que brilham com lamparinas, velas e lanternas.",
+     "p": [
+      "O Diwali, celebrado na Índia e por comunidades no mundo inteiro, enche as casas de lamparinas, rangoli coloridos e doces.",
+      "O Hanukkah dura oito noites e em cada noite acende-se mais uma vela, muitas vezes com fritos como os latkes.",
+      "Na Tailândia, no Loy Krathong, as pessoas põem a flutuar em rios e lagos pequenos cestos enfeitados com velas."
+     ],
+     "q": "Porque achas que a luz é um símbolo tão popular nas celebrações do mundo?",
+     "c": "Acende esta noite uma vela ou uma lamparina e pensa num bom desejo para as pessoas à tua volta."
+    },
+    "pt_BR": {
+     "t": "Festas da luz",
+     "g": "Descubra celebrações pelo mundo que brilham com lamparinas, velas e lanternas.",
+     "p": [
+      "O Diwali, celebrado na Índia e por comunidades no mundo todo, enche as casas de lamparinas, rangoli coloridos e doces.",
+      "O Hanukkah dura oito noites e a cada noite se acende mais uma vela, muitas vezes com frituras como os latkes.",
+      "Na Tailândia, no Loy Krathong, as pessoas soltam em rios e lagos pequenos cestos enfeitados com velas."
+     ],
+     "q": "Por que você acha que a luz é um símbolo tão popular nas celebrações do mundo?",
+     "c": "Acenda hoje à noite uma vela ou luminária e pense em um bom desejo para as pessoas ao seu redor."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "New Year around the world",
+     "g": "Explore how cultures welcome a new year at different times and in different ways.",
+     "p": [
+      "Lunar New Year falls between late January and mid February, while Nowruz arrives with the spring equinox in March.",
+      "In Scotland, Hogmanay brings singing Auld Lang Syne and first-footing, being the first guest of the year.",
+      "In Spain many people eat twelve grapes at midnight, one for each chime of the clock."
+     ],
+     "q": "How do you usually celebrate the new year, and which tradition matters most to you?",
+     "c": "Write down three small wishes for the coming months, as people do in many New Year traditions."
+    },
+    "de": {
+     "t": "Neujahr rund um die Welt",
+     "g": "Entdecke, wie Kulturen das neue Jahr zu verschiedenen Zeiten und auf verschiedene Arten begrüßen.",
+     "p": [
+      "Das Mondneujahr fällt zwischen Ende Januar und Mitte Februar, Nowruz kommt mit der Frühlings-Tagundnachtgleiche im März.",
+      "In Schottland singt man zu Hogmanay Auld Lang Syne und pflegt das first-footing: der erste Gast des Jahres zu sein.",
+      "In Spanien essen viele um Mitternacht zwölf Trauben, eine für jeden Glockenschlag."
+     ],
+     "q": "Wie feierst du meist den Jahreswechsel, und welche Tradition ist dir am wichtigsten?",
+     "c": "Schreib drei kleine Wünsche für die kommenden Monate auf, wie es viele Neujahrsbräuche tun."
+    },
+    "es": {
+     "t": "El Año Nuevo en el mundo",
+     "g": "Explora cómo las culturas reciben el año nuevo en fechas y formas distintas.",
+     "p": [
+      "El Año Nuevo lunar cae entre finales de enero y mediados de febrero, y Nowruz llega con el equinoccio de primavera en marzo.",
+      "En Escocia, Hogmanay trae el canto de Auld Lang Syne y el first-footing: ser la primera visita del año.",
+      "En España mucha gente toma doce uvas a medianoche, una por cada campanada del reloj."
+     ],
+     "q": "¿Cómo sueles celebrar el año nuevo y qué tradición es la más importante para ti?",
+     "c": "Escribe tres pequeños deseos para los próximos meses, como se hace en muchas tradiciones de Año Nuevo."
+    },
+    "fr": {
+     "t": "Le Nouvel An dans le monde",
+     "g": "Explore comment les cultures accueillent la nouvelle année à des dates et de façons différentes.",
+     "p": [
+      "Le Nouvel An lunaire tombe entre fin janvier et mi-février, et Norouz arrive avec l'équinoxe de printemps en mars.",
+      "En Écosse, Hogmanay rime avec le chant Auld Lang Syne et le first-footing : être le premier invité de l'année.",
+      "En Espagne, beaucoup mangent douze raisins à minuit, un à chaque coup de l'horloge."
+     ],
+     "q": "Comment fêtes-tu d'habitude la nouvelle année, et quelle tradition compte le plus pour toi ?",
+     "c": "Note trois petits souhaits pour les mois à venir, comme dans beaucoup de traditions du Nouvel An."
+    },
+    "it": {
+     "t": "Il Capodanno nel mondo",
+     "g": "Esplora come le culture accolgono l'anno nuovo in date e modi diversi.",
+     "p": [
+      "Il Capodanno lunare cade tra fine gennaio e metà febbraio, mentre il Nowruz arriva con l'equinozio di primavera a marzo.",
+      "In Scozia, l'Hogmanay porta il canto di Auld Lang Syne e il first-footing: essere il primo ospite dell'anno.",
+      "In Spagna molti mangiano dodici chicchi d'uva a mezzanotte, uno per ogni rintocco dell'orologio."
+     ],
+     "q": "Come festeggi di solito l'anno nuovo, e quale tradizione conta di più per te?",
+     "c": "Scrivi tre piccoli desideri per i prossimi mesi, come si fa in molte tradizioni di Capodanno."
+    },
+    "pt": {
+     "t": "O Ano Novo pelo mundo",
+     "g": "Explora como as culturas recebem o ano novo em datas e de formas diferentes.",
+     "p": [
+      "O Ano Novo lunar calha entre o fim de janeiro e meados de fevereiro, e o Nowruz chega com o equinócio da primavera em março.",
+      "Na Escócia, o Hogmanay traz o canto de Auld Lang Syne e o first-footing: ser a primeira visita do ano.",
+      "Em Portugal e Espanha muita gente come doze passas ou uvas à meia-noite, uma por cada badalada."
+     ],
+     "q": "Como costumas celebrar o ano novo, e que tradição é mais importante para ti?",
+     "c": "Escreve três pequenos desejos para os próximos meses, como se faz em muitas tradições de Ano Novo."
+    },
+    "pt_BR": {
+     "t": "O Ano-Novo pelo mundo",
+     "g": "Explore como as culturas recebem o ano novo em datas e jeitos diferentes.",
+     "p": [
+      "O Ano-Novo lunar cai entre o fim de janeiro e meados de fevereiro, e o Nowruz chega com o equinócio de primavera em março.",
+      "Na Escócia, o Hogmanay traz a canção Auld Lang Syne e o first-footing: ser a primeira visita do ano.",
+      "Na Espanha muita gente come doze uvas à meia-noite, uma a cada badalada; no Brasil, há quem pule sete ondas no mar."
+     ],
+     "q": "Como você costuma comemorar o Ano-Novo, e qual tradição é mais importante para você?",
+     "c": "Escreva três pequenos desejos para os próximos meses, como se faz em muitas tradições de Ano-Novo."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Lunar New Year customs",
+     "g": "Learn the customs behind Lunar New Year, celebrated in China, Vietnam, Korea and beyond.",
+     "p": [
+      "Families travel long distances for a reunion dinner on New Year's Eve, often with dumplings in northern China.",
+      "Red envelopes with money are given to children and younger relatives to wish them luck.",
+      "Homes are cleaned before the new year to sweep out the old, and lion dances and fireworks fill the streets."
+     ],
+     "q": "Which Lunar New Year custom would you most like to experience, and why?",
+     "c": "Do a small spring clean of one drawer or shelf today and make space for something new."
+    },
+    "de": {
+     "t": "Bräuche zum Mondneujahr",
+     "g": "Lerne die Bräuche hinter dem Mondneujahr kennen, gefeiert in China, Vietnam, Korea und darüber hinaus.",
+     "p": [
+      "Familien reisen weit für das Festessen am Silvesterabend, im Norden Chinas oft mit Teigtaschen.",
+      "Kinder und jüngere Verwandte bekommen rote Umschläge mit Geld, die ihnen Glück wünschen.",
+      "Vor dem neuen Jahr wird das Haus geputzt, um das Alte hinauszukehren, und Löwentänze und Feuerwerk füllen die Straßen."
+     ],
+     "q": "Welchen Brauch zum Mondneujahr würdest du am liebsten erleben und warum?",
+     "c": "Räum heute eine Schublade oder ein Regal auf und schaffe Platz für etwas Neues."
+    },
+    "es": {
+     "t": "Costumbres del Año Nuevo lunar",
+     "g": "Conoce las costumbres del Año Nuevo lunar, celebrado en China, Vietnam, Corea y otros lugares.",
+     "p": [
+      "Las familias viajan lejos para la cena de reunión en Nochevieja, a menudo con empanadillas en el norte de China.",
+      "Se regalan sobres rojos con dinero a los niños y a los parientes más jóvenes para desearles suerte.",
+      "Antes del año nuevo se limpia la casa para barrer lo viejo, y las danzas del león y los fuegos artificiales llenan las calles."
+     ],
+     "q": "¿Qué costumbre del Año Nuevo lunar te gustaría vivir más y por qué?",
+     "c": "Haz hoy una pequeña limpieza de un cajón o un estante y deja espacio para algo nuevo."
+    },
+    "fr": {
+     "t": "Les coutumes du Nouvel An lunaire",
+     "g": "Découvre les coutumes du Nouvel An lunaire, fêté en Chine, au Vietnam, en Corée et ailleurs.",
+     "p": [
+      "Les familles font de longs trajets pour le dîner de réunion du réveillon, souvent avec des raviolis dans le nord de la Chine.",
+      "On offre aux enfants et aux plus jeunes des enveloppes rouges avec de l'argent pour leur souhaiter chance.",
+      "On nettoie la maison avant la nouvelle année pour balayer l'ancienne, et danses du lion et feux d'artifice animent les rues."
+     ],
+     "q": "Quelle coutume du Nouvel An lunaire aimerais-tu le plus vivre, et pourquoi ?",
+     "c": "Range aujourd'hui un tiroir ou une étagère et fais de la place pour quelque chose de nouveau."
+    },
+    "it": {
+     "t": "Le usanze del Capodanno lunare",
+     "g": "Scopri le usanze del Capodanno lunare, festeggiato in Cina, Vietnam, Corea e oltre.",
+     "p": [
+      "Le famiglie fanno lunghi viaggi per la cena di riunione della vigilia, spesso con i ravioli nel nord della Cina.",
+      "Ai bambini e ai parenti più giovani si regalano buste rosse con denaro per augurare fortuna.",
+      "Prima dell'anno nuovo si pulisce la casa per spazzare via il vecchio, e danze del leone e fuochi d'artificio riempiono le strade."
+     ],
+     "q": "Quale usanza del Capodanno lunare ti piacerebbe di più vivere, e perché?",
+     "c": "Riordina oggi un cassetto o uno scaffale e fai spazio a qualcosa di nuovo."
+    },
+    "pt": {
+     "t": "Costumes do Ano Novo lunar",
+     "g": "Conhece os costumes do Ano Novo lunar, celebrado na China, no Vietname, na Coreia e não só.",
+     "p": [
+      "As famílias fazem longas viagens para o jantar de reunião na véspera, muitas vezes com pastéis cozidos no norte da China.",
+      "Dão-se envelopes vermelhos com dinheiro às crianças e aos familiares mais novos para lhes desejar sorte.",
+      "Antes do ano novo limpa-se a casa para varrer o velho, e as danças do leão e o fogo de artifício enchem as ruas."
+     ],
+     "q": "Que costume do Ano Novo lunar gostavas mais de viver, e porquê?",
+     "c": "Arruma hoje uma gaveta ou uma prateleira e abre espaço para algo novo."
+    },
+    "pt_BR": {
+     "t": "Costumes do Ano-Novo lunar",
+     "g": "Conheça os costumes do Ano-Novo lunar, celebrado na China, no Vietnã, na Coreia e em outros lugares.",
+     "p": [
+      "As famílias viajam longas distâncias para o jantar de reunião na véspera, muitas vezes com guioza no norte da China.",
+      "Crianças e parentes mais novos ganham envelopes vermelhos com dinheiro para desejar sorte.",
+      "Antes do ano novo a casa é limpa para varrer o velho, e danças do leão e fogos de artifício enchem as ruas."
+     ],
+     "q": "Qual costume do Ano-Novo lunar você mais gostaria de viver, e por quê?",
+     "c": "Arrume hoje uma gaveta ou prateleira e abra espaço para algo novo."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Nowruz, the Persian New Year",
+     "g": "Discover Nowruz, a spring festival with roots over three thousand years old, celebrated across many countries.",
+     "p": [
+      "Nowruz means new day and begins at the spring equinox, in Iran, Afghanistan, Central Asia, Azerbaijan and beyond.",
+      "Families set a haft-sin table with seven items starting with the letter sin, like sprouts, apples, garlic and vinegar.",
+      "On the thirteenth day many families go outdoors for a picnic to enjoy nature together."
+     ],
+     "q": "What signs tell you that spring or a new season has arrived where you live?",
+     "c": "Place something green, like a plant or fresh herbs, somewhere you will see it every day this week."
+    },
+    "de": {
+     "t": "Nowruz, das persische Neujahr",
+     "g": "Entdecke Nowruz, ein Frühlingsfest mit über dreitausend Jahre alten Wurzeln, das in vielen Ländern gefeiert wird.",
+     "p": [
+      "Nowruz bedeutet neuer Tag und beginnt zur Frühlings-Tagundnachtgleiche, im Iran, in Afghanistan, Zentralasien, Aserbaidschan und anderswo.",
+      "Familien decken den Haft-Sin-Tisch mit sieben Dingen, die mit dem Buchstaben Sin beginnen, etwa Sprossen, Äpfel, Knoblauch und Essig.",
+      "Am dreizehnten Tag gehen viele Familien zum Picknick ins Freie, um gemeinsam die Natur zu genießen."
+     ],
+     "q": "Woran merkst du, dass bei dir der Frühling oder eine neue Jahreszeit angekommen ist?",
+     "c": "Stell diese Woche etwas Grünes, eine Pflanze oder frische Kräuter, an einen Ort, den du täglich siehst."
+    },
+    "es": {
+     "t": "Nowruz, el Año Nuevo persa",
+     "g": "Descubre Nowruz, una fiesta de primavera con raíces de más de tres mil años, celebrada en muchos países.",
+     "p": [
+      "Nowruz significa día nuevo y empieza con el equinoccio de primavera, en Irán, Afganistán, Asia Central, Azerbaiyán y más allá.",
+      "Las familias preparan la mesa haft-sin con siete elementos que empiezan por la letra sin, como brotes, manzanas, ajo y vinagre.",
+      "El decimotercer día muchas familias salen al campo de pícnic para disfrutar juntas de la naturaleza."
+     ],
+     "q": "¿Qué señales te dicen que ha llegado la primavera o una nueva estación donde vives?",
+     "c": "Coloca algo verde, como una planta o hierbas frescas, en un lugar donde lo veas cada día esta semana."
+    },
+    "fr": {
+     "t": "Norouz, le Nouvel An persan",
+     "g": "Découvre Norouz, une fête du printemps aux racines plus que trimillénaires, célébrée dans de nombreux pays.",
+     "p": [
+      "Norouz signifie nouveau jour et commence à l'équinoxe de printemps, en Iran, en Afghanistan, en Asie centrale, en Azerbaïdjan et ailleurs.",
+      "Les familles dressent la table haft-sin de sept éléments commençant par sin, comme des pousses, des pommes, de l'ail et du vinaigre.",
+      "Le treizième jour, beaucoup de familles pique-niquent en plein air pour profiter ensemble de la nature."
+     ],
+     "q": "Quels signes te montrent que le printemps ou une nouvelle saison est arrivé chez toi ?",
+     "c": "Place cette semaine quelque chose de vert, une plante ou des herbes fraîches, là où tu le verras chaque jour."
+    },
+    "it": {
+     "t": "Nowruz, il Capodanno persiano",
+     "g": "Scopri il Nowruz, una festa di primavera con radici di oltre tremila anni, celebrata in molti paesi.",
+     "p": [
+      "Nowruz significa nuovo giorno e inizia con l'equinozio di primavera, in Iran, Afghanistan, Asia centrale, Azerbaigian e oltre.",
+      "Le famiglie preparano la tavola haft-sin con sette elementi che iniziano con la lettera sin, come germogli, mele, aglio e aceto.",
+      "Il tredicesimo giorno molte famiglie fanno un picnic all'aperto per godersi insieme la natura."
+     ],
+     "q": "Quali segnali ti dicono che è arrivata la primavera o una nuova stagione dove vivi?",
+     "c": "Metti qualcosa di verde, una pianta o erbe fresche, in un posto dove lo vedrai ogni giorno questa settimana."
+    },
+    "pt": {
+     "t": "Nowruz, o Ano Novo persa",
+     "g": "Descobre o Nowruz, uma festa da primavera com raízes de mais de três mil anos, celebrada em muitos países.",
+     "p": [
+      "Nowruz quer dizer dia novo e começa no equinócio da primavera, no Irão, no Afeganistão, na Ásia Central, no Azerbaijão e não só.",
+      "As famílias preparam a mesa haft-sin com sete elementos começados pela letra sin, como rebentos, maçãs, alho e vinagre.",
+      "No décimo terceiro dia muitas famílias fazem um piquenique ao ar livre para aproveitar juntas a natureza."
+     ],
+     "q": "Que sinais te mostram que a primavera ou uma nova estação chegou onde vives?",
+     "c": "Põe algo verde, como uma planta ou ervas frescas, num sítio onde o vejas todos os dias esta semana."
+    },
+    "pt_BR": {
+     "t": "Nowruz, o Ano-Novo persa",
+     "g": "Descubra o Nowruz, uma festa da primavera com raízes de mais de três mil anos, celebrada em muitos países.",
+     "p": [
+      "Nowruz significa dia novo e começa no equinócio de primavera, no Irã, no Afeganistão, na Ásia Central, no Azerbaijão e além.",
+      "As famílias montam a mesa haft-sin com sete itens que começam com a letra sin, como brotos, maçãs, alho e vinagre.",
+      "No décimo terceiro dia muitas famílias fazem piquenique ao ar livre para aproveitar juntas a natureza."
+     ],
+     "q": "Que sinais mostram que a primavera ou uma nova estação chegou onde você mora?",
+     "c": "Coloque algo verde, como uma planta ou ervas frescas, em um lugar onde você vai ver todos os dias nesta semana."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Carnival traditions",
+     "g": "Explore carnival in Rio, Venice, Notting Hill and Cologne: music, masks and parades.",
+     "p": [
+      "In Rio de Janeiro samba schools spend all year preparing costumes, floats and songs for their parade.",
+      "Venice is famous for elegant masks and costumes that once let people of every social class mingle freely.",
+      "London's Notting Hill Carnival celebrates Caribbean culture, and Cologne's carnival season opens on 11 November at 11:11."
+     ],
+     "q": "If you could join one carnival in the world, which would you choose and why?",
+     "c": "Listen to one song from a carnival tradition you do not know yet and notice its rhythm."
+    },
+    "de": {
+     "t": "Karnevalstraditionen",
+     "g": "Entdecke den Karneval in Rio, Venedig, Notting Hill und Köln: Musik, Masken und Umzüge.",
+     "p": [
+      "In Rio de Janeiro bereiten Sambaschulen das ganze Jahr Kostüme, Wagen und Lieder für ihren Umzug vor.",
+      "Venedig ist berühmt für elegante Masken und Kostüme, hinter denen sich einst Menschen aller Schichten frei mischten.",
+      "Der Notting Hill Carnival in London feiert die karibische Kultur, und in Köln beginnt die Session am 11.11. um 11:11 Uhr."
+     ],
+     "q": "Bei welchem Karneval der Welt würdest du gern mitmachen und warum?",
+     "c": "Hör dir ein Lied aus einer Karnevalstradition an, die du noch nicht kennst, und achte auf den Rhythmus."
+    },
+    "es": {
+     "t": "Tradiciones de carnaval",
+     "g": "Explora el carnaval de Río, Venecia, Notting Hill y Colonia: música, máscaras y desfiles.",
+     "p": [
+      "En Río de Janeiro las escuelas de samba preparan todo el año los disfraces, carrozas y canciones de su desfile.",
+      "Venecia es famosa por sus elegantes máscaras y trajes, que antaño permitían mezclarse a personas de toda clase social.",
+      "El carnaval de Notting Hill en Londres celebra la cultura caribeña, y en Colonia la temporada empieza el 11 de noviembre a las 11:11."
+     ],
+     "q": "Si pudieras ir a un carnaval del mundo, ¿cuál elegirías y por qué?",
+     "c": "Escucha una canción de una tradición de carnaval que aún no conozcas y fíjate en su ritmo."
+    },
+    "fr": {
+     "t": "Les traditions du carnaval",
+     "g": "Explore le carnaval de Rio, Venise, Notting Hill et Cologne : musique, masques et défilés.",
+     "p": [
+      "À Rio de Janeiro, les écoles de samba préparent toute l'année costumes, chars et chansons pour leur défilé.",
+      "Venise est célèbre pour ses masques et costumes élégants, qui permettaient jadis à toutes les classes de se mêler librement.",
+      "Le carnaval de Notting Hill à Londres célèbre la culture caribéenne, et à Cologne la saison s'ouvre le 11 novembre à 11 h 11."
+     ],
+     "q": "Si tu pouvais participer à un carnaval dans le monde, lequel choisirais-tu et pourquoi ?",
+     "c": "Écoute une chanson d'une tradition de carnaval que tu ne connais pas encore et observe son rythme."
+    },
+    "it": {
+     "t": "Tradizioni di carnevale",
+     "g": "Esplora il carnevale di Rio, Venezia, Notting Hill e Colonia: musica, maschere e sfilate.",
+     "p": [
+      "A Rio de Janeiro le scuole di samba preparano per tutto l'anno costumi, carri e canzoni per la loro sfilata.",
+      "Venezia è famosa per le maschere e i costumi eleganti, che un tempo permettevano a persone di ogni ceto di mescolarsi.",
+      "Il Notting Hill Carnival di Londra celebra la cultura caraibica, e a Colonia la stagione si apre l'11 novembre alle 11:11."
+     ],
+     "q": "Se potessi partecipare a un carnevale nel mondo, quale sceglieresti e perché?",
+     "c": "Ascolta una canzone di una tradizione di carnevale che non conosci ancora e fai caso al suo ritmo."
+    },
+    "pt": {
+     "t": "Tradições de Carnaval",
+     "g": "Explora o Carnaval do Rio, de Veneza, de Notting Hill e de Colónia: música, máscaras e desfiles.",
+     "p": [
+      "No Rio de Janeiro as escolas de samba passam o ano a preparar fantasias, carros alegóricos e sambas para o desfile.",
+      "Veneza é famosa pelas máscaras e trajes elegantes, que outrora deixavam pessoas de todas as classes misturar-se livremente.",
+      "O Carnaval de Notting Hill, em Londres, celebra a cultura caribenha, e em Colónia a época abre a 11 de novembro às 11h11."
+     ],
+     "q": "Se pudesses ir a um Carnaval do mundo, qual escolherias, e porquê?",
+     "c": "Ouve uma música de uma tradição de Carnaval que ainda não conheces e repara no ritmo."
+    },
+    "pt_BR": {
+     "t": "Tradições de Carnaval",
+     "g": "Explore o Carnaval do Rio, de Veneza, de Notting Hill e de Colônia: música, máscaras e desfiles.",
+     "p": [
+      "No Rio de Janeiro as escolas de samba passam o ano preparando fantasias, carros alegóricos e o samba-enredo do desfile.",
+      "Veneza é famosa pelas máscaras e trajes elegantes, que antigamente deixavam pessoas de todas as classes se misturar.",
+      "O Carnaval de Notting Hill, em Londres, celebra a cultura caribenha, e em Colônia a temporada abre em 11 de novembro às 11h11."
+     ],
+     "q": "Se você pudesse ir a um Carnaval do mundo, qual escolheria, e por quê?",
+     "c": "Ouça uma música de uma tradição de Carnaval que você ainda não conhece e repare no ritmo."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Harvest festivals",
+     "g": "Discover celebrations of the harvest and of gratitude around the world.",
+     "p": [
+      "Thanksgiving is celebrated in the United States in November and in Canada in October with a big family meal.",
+      "In Korea, Chuseok brings families back to their hometowns to share songpyeon rice cakes and honour their ancestors.",
+      "In southern India, Pongal is named after a rice dish that is boiled until it overflows, a sign of abundance."
+     ],
+     "q": "What are you grateful for this season, and how does your culture say thank you for good times?",
+     "c": "Write down three things you are thankful for today and tell one person why they are on your list."
+    },
+    "de": {
+     "t": "Erntefeste",
+     "g": "Entdecke Feste der Ernte und der Dankbarkeit auf der ganzen Welt.",
+     "p": [
+      "Thanksgiving feiert man in den USA im November und in Kanada im Oktober mit einem großen Familienessen.",
+      "In Korea kehren zu Chuseok Familien in ihre Heimatorte zurück, teilen Songpyeon-Reiskuchen und ehren ihre Vorfahren.",
+      "In Südindien ist Pongal nach einem Reisgericht benannt, das kocht, bis es überläuft, als Zeichen von Fülle."
+     ],
+     "q": "Wofür bist du in dieser Zeit dankbar, und wie sagt deine Kultur Danke für gute Zeiten?",
+     "c": "Schreib heute drei Dinge auf, für die du dankbar bist, und sag einer Person, warum sie auf deiner Liste steht."
+    },
+    "es": {
+     "t": "Fiestas de la cosecha",
+     "g": "Descubre celebraciones de la cosecha y de la gratitud en todo el mundo.",
+     "p": [
+      "Acción de Gracias se celebra en Estados Unidos en noviembre y en Canadá en octubre con una gran comida familiar.",
+      "En Corea, Chuseok reúne a las familias en su pueblo natal para compartir pasteles de arroz songpyeon y honrar a sus antepasados.",
+      "En el sur de India, Pongal debe su nombre a un plato de arroz que se hierve hasta desbordarse, señal de abundancia."
+     ],
+     "q": "¿Por qué estás agradecido en esta época y cómo da las gracias tu cultura por los buenos tiempos?",
+     "c": "Escribe hoy tres cosas por las que das gracias y dile a una persona por qué está en tu lista."
+    },
+    "fr": {
+     "t": "Les fêtes des récoltes",
+     "g": "Découvre les célébrations de la récolte et de la gratitude à travers le monde.",
+     "p": [
+      "Thanksgiving se fête aux États-Unis en novembre et au Canada en octobre autour d'un grand repas familial.",
+      "En Corée, Chuseok ramène les familles dans leur ville natale pour partager les gâteaux de riz songpyeon et honorer les ancêtres.",
+      "Dans le sud de l'Inde, Pongal tient son nom d'un plat de riz qu'on fait bouillir jusqu'à ce qu'il déborde, signe d'abondance."
+     ],
+     "q": "De quoi es-tu reconnaissant en ce moment, et comment ta culture dit-elle merci pour les bons moments ?",
+     "c": "Note aujourd'hui trois choses pour lesquelles tu es reconnaissant et dis à une personne pourquoi elle est sur ta liste."
+    },
+    "it": {
+     "t": "Feste del raccolto",
+     "g": "Scopri le celebrazioni del raccolto e della gratitudine in tutto il mondo.",
+     "p": [
+      "Il Thanksgiving si festeggia negli Stati Uniti a novembre e in Canada a ottobre con un grande pranzo in famiglia.",
+      "In Corea il Chuseok riporta le famiglie nei paesi d'origine per condividere i dolci di riso songpyeon e onorare gli antenati.",
+      "Nel sud dell'India il Pongal prende il nome da un piatto di riso che si fa bollire finché trabocca, segno di abbondanza."
+     ],
+     "q": "Per che cosa sei grato in questo periodo, e come dice grazie la tua cultura per i bei momenti?",
+     "c": "Scrivi oggi tre cose per cui sei grato e di' a una persona perché è nella tua lista."
+    },
+    "pt": {
+     "t": "Festas das colheitas",
+     "g": "Descobre celebrações das colheitas e da gratidão pelo mundo fora.",
+     "p": [
+      "O Dia de Ação de Graças celebra-se nos Estados Unidos em novembro e no Canadá em outubro com uma grande refeição em família.",
+      "Na Coreia, o Chuseok leva as famílias de volta à terra natal para partilhar bolos de arroz songpyeon e honrar os antepassados.",
+      "No sul da Índia, o Pongal tem o nome de um prato de arroz que se ferve até transbordar, sinal de abundância."
+     ],
+     "q": "Pelo que estás grato nesta altura, e como é que a tua cultura agradece os bons momentos?",
+     "c": "Escreve hoje três coisas pelas quais estás grato e diz a uma pessoa porque está na tua lista."
+    },
+    "pt_BR": {
+     "t": "Festas da colheita",
+     "g": "Descubra celebrações da colheita e da gratidão pelo mundo.",
+     "p": [
+      "O Dia de Ação de Graças é celebrado nos Estados Unidos em novembro e no Canadá em outubro com uma grande refeição em família.",
+      "Na Coreia, o Chuseok leva as famílias de volta à cidade natal para dividir bolinhos de arroz songpyeon e honrar os antepassados.",
+      "No sul da Índia, o Pongal leva o nome de um prato de arroz fervido até transbordar, sinal de fartura."
+     ],
+     "q": "Pelo que você é grato nesta época, e como sua cultura agradece pelos bons momentos?",
+     "c": "Escreva hoje três coisas pelas quais você é grato e conte a uma pessoa por que ela está na sua lista."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Holi, the festival of colours",
+     "g": "Learn how India and Nepal welcome spring with coloured powder, water and music.",
+     "p": [
+      "Holi takes place at the full moon in March, and the evening before, bonfires mark the victory of good over evil.",
+      "On the main day people of all ages throw bright powders and coloured water at friends, neighbours and strangers.",
+      "A popular saying goes: don't mind, it's Holi, as everyone ends up laughing and covered in colour."
+     ],
+     "q": "Is there a celebration where you live when people let go and have fun together in the streets?",
+     "c": "Add an unexpected splash of colour to your day today, in your clothes, your food or your desk."
+    },
+    "de": {
+     "t": "Holi, das Fest der Farben",
+     "g": "Erfahre, wie Indien und Nepal den Frühling mit Farbpulver, Wasser und Musik begrüßen.",
+     "p": [
+      "Holi findet beim Vollmond im März statt; am Vorabend stehen Feuer für den Sieg des Guten über das Böse.",
+      "Am Haupttag werfen Menschen jeden Alters leuchtende Pulver und farbiges Wasser auf Freunde, Nachbarn und Fremde.",
+      "Ein beliebter Spruch lautet: Nimm's nicht übel, es ist Holi, denn am Ende lachen alle und sind bunt."
+     ],
+     "q": "Gibt es bei dir ein Fest, an dem die Menschen loslassen und gemeinsam auf der Straße feiern?",
+     "c": "Bring heute einen unerwarteten Farbtupfer in deinen Tag, bei Kleidung, Essen oder auf dem Schreibtisch."
+    },
+    "es": {
+     "t": "Holi, la fiesta de los colores",
+     "g": "Aprende cómo India y Nepal reciben la primavera con polvos de colores, agua y música.",
+     "p": [
+      "Holi se celebra con la luna llena de marzo, y la víspera las hogueras simbolizan la victoria del bien sobre el mal.",
+      "El día principal, personas de todas las edades lanzan polvos brillantes y agua de colores a amigos, vecinos y desconocidos.",
+      "Un dicho popular es: no te enfades, es Holi, porque al final todos acaban riendo y llenos de color."
+     ],
+     "q": "¿Hay alguna fiesta donde vives en la que la gente se suelta y se divierte junta en la calle?",
+     "c": "Añade hoy un toque inesperado de color a tu día, en la ropa, la comida o tu escritorio."
+    },
+    "fr": {
+     "t": "Holi, la fête des couleurs",
+     "g": "Découvre comment l'Inde et le Népal accueillent le printemps avec des poudres colorées, de l'eau et de la musique.",
+     "p": [
+      "Holi a lieu à la pleine lune de mars ; la veille, des feux célèbrent la victoire du bien sur le mal.",
+      "Le grand jour, petits et grands lancent poudres vives et eau colorée sur amis, voisins et inconnus.",
+      "Un dicton populaire dit : ne te fâche pas, c'est Holi, car tout le monde finit par rire, couvert de couleurs."
+     ],
+     "q": "Existe-t-il chez toi une fête où les gens se lâchent et s'amusent ensemble dans la rue ?",
+     "c": "Ajoute aujourd'hui une touche de couleur inattendue à ta journée : vêtements, assiette ou bureau."
+    },
+    "it": {
+     "t": "Holi, la festa dei colori",
+     "g": "Scopri come India e Nepal accolgono la primavera con polveri colorate, acqua e musica.",
+     "p": [
+      "L'Holi si celebra con la luna piena di marzo, e la sera prima i falò segnano la vittoria del bene sul male.",
+      "Il giorno principale persone di ogni età lanciano polveri vivaci e acqua colorata su amici, vicini e sconosciuti.",
+      "Un detto popolare dice: non prendertela, è Holi, perché alla fine tutti ridono coperti di colore."
+     ],
+     "q": "Dove vivi c'è una festa in cui le persone si lasciano andare e si divertono insieme per strada?",
+     "c": "Aggiungi oggi un tocco di colore inaspettato alla tua giornata, nei vestiti, nel cibo o sulla scrivania."
+    },
+    "pt": {
+     "t": "Holi, a festa das cores",
+     "g": "Aprende como a Índia e o Nepal recebem a primavera com pós coloridos, água e música.",
+     "p": [
+      "O Holi acontece na lua cheia de março, e na véspera as fogueiras assinalam a vitória do bem sobre o mal.",
+      "No dia principal, pessoas de todas as idades atiram pós vivos e água colorida a amigos, vizinhos e desconhecidos.",
+      "Um ditado popular diz: não leves a mal, é Holi, porque no fim toda a gente acaba a rir e cheia de cor."
+     ],
+     "q": "Há alguma festa onde vives em que as pessoas se soltam e se divertem juntas na rua?",
+     "c": "Junta hoje um toque de cor inesperado ao teu dia, na roupa, na comida ou na secretária."
+    },
+    "pt_BR": {
+     "t": "Holi, a festa das cores",
+     "g": "Aprenda como a Índia e o Nepal recebem a primavera com pós coloridos, água e música.",
+     "p": [
+      "O Holi acontece na lua cheia de março, e na véspera as fogueiras marcam a vitória do bem sobre o mal.",
+      "No dia principal, pessoas de todas as idades jogam pós vibrantes e água colorida em amigos, vizinhos e desconhecidos.",
+      "Um ditado popular diz: não leve a mal, é Holi, porque no fim todo mundo acaba rindo e coberto de cor."
+     ],
+     "q": "Existe alguma festa onde você mora em que as pessoas se soltam e se divertem juntas na rua?",
+     "c": "Acrescente hoje um toque de cor inesperado ao seu dia, na roupa, na comida ou na mesa de trabalho."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Midsummer in the Nordic countries",
+     "g": "Discover how the Nordic countries celebrate the brightest night of the year.",
+     "p": [
+      "In Sweden, Midsummer Eve falls on a Friday in late June, with dancing around a flower-covered maypole.",
+      "People wear flower crowns and share herring, new potatoes and fresh strawberries outdoors.",
+      "In Finland and Norway bonfires are lit by lakes and the sea, and in the far north the sun barely sets."
+     ],
+     "q": "How would you spend a night when the sun hardly goes down?",
+     "c": "Spend a few minutes outside today, look at the sky and notice what time the sun sets where you are."
+    },
+    "de": {
+     "t": "Mittsommer in den nordischen Ländern",
+     "g": "Entdecke, wie die nordischen Länder die hellste Nacht des Jahres feiern.",
+     "p": [
+      "In Schweden fällt der Mittsommerabend auf einen Freitag Ende Juni, mit Tänzen um einen blumengeschmückten Mittsommerbaum.",
+      "Man trägt Blumenkränze und teilt draußen Hering, neue Kartoffeln und frische Erdbeeren.",
+      "In Finnland und Norwegen brennen Feuer an Seen und am Meer, und im hohen Norden geht die Sonne kaum unter."
+     ],
+     "q": "Wie würdest du eine Nacht verbringen, in der die Sonne kaum untergeht?",
+     "c": "Geh heute ein paar Minuten nach draußen, schau in den Himmel und finde heraus, wann bei dir die Sonne untergeht."
+    },
+    "es": {
+     "t": "El solsticio de verano nórdico",
+     "g": "Descubre cómo los países nórdicos celebran la noche más luminosa del año.",
+     "p": [
+      "En Suecia la víspera de Midsommar cae en un viernes de finales de junio, con bailes alrededor de un mástil cubierto de flores.",
+      "La gente lleva coronas de flores y comparte arenque, patatas nuevas y fresas al aire libre.",
+      "En Finlandia y Noruega se encienden hogueras junto a lagos y mar, y en el extremo norte el sol apenas se pone."
+     ],
+     "q": "¿Cómo pasarías una noche en la que el sol casi no se pone?",
+     "c": "Sal unos minutos hoy, mira el cielo y averigua a qué hora se pone el sol donde estás."
+    },
+    "fr": {
+     "t": "La Saint-Jean dans les pays nordiques",
+     "g": "Découvre comment les pays nordiques fêtent la nuit la plus lumineuse de l'année.",
+     "p": [
+      "En Suède, la veille de Midsommar tombe un vendredi de fin juin, avec des danses autour d'un mât fleuri.",
+      "On porte des couronnes de fleurs et on partage hareng, pommes de terre nouvelles et fraises en plein air.",
+      "En Finlande et en Norvège, des feux s'allument au bord des lacs et de la mer, et dans le Grand Nord le soleil se couche à peine."
+     ],
+     "q": "Comment passerais-tu une nuit où le soleil se couche à peine ?",
+     "c": "Sors quelques minutes aujourd'hui, regarde le ciel et cherche à quelle heure le soleil se couche chez toi."
+    },
+    "it": {
+     "t": "Il solstizio d'estate nei paesi nordici",
+     "g": "Scopri come i paesi nordici festeggiano la notte più luminosa dell'anno.",
+     "p": [
+      "In Svezia la vigilia di Midsommar cade di venerdì a fine giugno, con danze attorno a un palo coperto di fiori.",
+      "Si indossano corone di fiori e si condividono aringhe, patate novelle e fragole fresche all'aperto.",
+      "In Finlandia e Norvegia si accendono falò vicino a laghi e mare, e nell'estremo nord il sole tramonta appena."
+     ],
+     "q": "Come passeresti una notte in cui il sole quasi non tramonta?",
+     "c": "Esci qualche minuto oggi, guarda il cielo e scopri a che ora tramonta il sole dove ti trovi."
+    },
+    "pt": {
+     "t": "O solstício de verão nórdico",
+     "g": "Descobre como os países nórdicos celebram a noite mais luminosa do ano.",
+     "p": [
+      "Na Suécia, a véspera do Midsommar calha numa sexta-feira do fim de junho, com danças à volta de um mastro florido.",
+      "As pessoas usam coroas de flores e partilham arenque, batatas novas e morangos frescos ao ar livre.",
+      "Na Finlândia e na Noruega acendem-se fogueiras junto a lagos e ao mar, e no extremo norte o sol quase não se põe."
+     ],
+     "q": "Como passarias uma noite em que o sol quase não se põe?",
+     "c": "Sai uns minutos hoje, olha para o céu e descobre a que horas o sol se põe onde estás."
+    },
+    "pt_BR": {
+     "t": "O solstício de verão nórdico",
+     "g": "Descubra como os países nórdicos celebram a noite mais clara do ano.",
+     "p": [
+      "Na Suécia, a véspera do Midsommar cai numa sexta-feira do fim de junho, com danças em volta de um mastro coberto de flores.",
+      "As pessoas usam coroas de flores e dividem arenque, batatas novas e morangos frescos ao ar livre.",
+      "Na Finlândia e na Noruega se acendem fogueiras perto de lagos e do mar, e no extremo norte o sol quase não se põe."
+     ],
+     "q": "Como você passaria uma noite em que o sol quase não se põe?",
+     "c": "Saia alguns minutos hoje, olhe o céu e descubra que horas o sol se põe onde você está."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Music as identity",
+     "g": "See how rhythms like samba, flamenco and reggae carry a people's story.",
+     "p": [
+      "Samba grew from Afro-Brazilian roots in Rio de Janeiro and became a symbol of Brazil's joy and creativity.",
+      "Flamenco, from Andalusia in Spain, blends song, guitar, dance and rhythmic hand clapping called palmas.",
+      "Reggae was born in Jamaica in the late 1960s, and both reggae and flamenco are recognised by UNESCO as cultural heritage."
+     ],
+     "q": "Which song or style of music makes you feel most at home, and why?",
+     "c": "Listen to one samba, one flamenco and one reggae song today and describe each in one word."
+    },
+    "de": {
+     "t": "Musik als Identität",
+     "g": "Sieh, wie Rhythmen wie Samba, Flamenco und Reggae die Geschichte eines Volkes erzählen.",
+     "p": [
+      "Samba entstand aus afrobrasilianischen Wurzeln in Rio de Janeiro und wurde zum Symbol für Brasiliens Lebensfreude.",
+      "Flamenco aus Andalusien verbindet Gesang, Gitarre, Tanz und rhythmisches Händeklatschen, die palmas.",
+      "Reggae entstand Ende der 1960er in Jamaika; Reggae und Flamenco sind beide von der UNESCO als Kulturerbe anerkannt."
+     ],
+     "q": "Bei welchem Lied oder Musikstil fühlst du dich am meisten zu Hause und warum?",
+     "c": "Hör dir heute je einen Samba, einen Flamenco und einen Reggae an und beschreibe jeden mit einem Wort."
+    },
+    "es": {
+     "t": "La música como identidad",
+     "g": "Descubre cómo ritmos como la samba, el flamenco y el reggae cuentan la historia de un pueblo.",
+     "p": [
+      "La samba nació de raíces afrobrasileñas en Río de Janeiro y se volvió símbolo de la alegría y creatividad de Brasil.",
+      "El flamenco, de Andalucía, une cante, guitarra, baile y las palmas, ese ritmo marcado con las manos.",
+      "El reggae nació en Jamaica a finales de los años sesenta, y la UNESCO reconoce el reggae y el flamenco como patrimonio cultural."
+     ],
+     "q": "¿Qué canción o estilo de música te hace sentir más en casa y por qué?",
+     "c": "Escucha hoy una samba, un flamenco y un reggae y describe cada uno con una palabra."
+    },
+    "fr": {
+     "t": "La musique comme identité",
+     "g": "Vois comment des rythmes comme la samba, le flamenco et le reggae portent l'histoire d'un peuple.",
+     "p": [
+      "La samba est née de racines afro-brésiliennes à Rio de Janeiro et symbolise la joie et la créativité du Brésil.",
+      "Le flamenco, venu d'Andalousie, mêle chant, guitare, danse et claquements de mains rythmés appelés palmas.",
+      "Le reggae est né en Jamaïque à la fin des années 1960 ; reggae et flamenco sont reconnus par l'UNESCO comme patrimoine culturel."
+     ],
+     "q": "Quelle chanson ou quel style de musique te fait te sentir le plus chez toi, et pourquoi ?",
+     "c": "Écoute aujourd'hui une samba, un flamenco et un reggae, et décris chacun en un mot."
+    },
+    "it": {
+     "t": "La musica come identità",
+     "g": "Scopri come ritmi come samba, flamenco e reggae raccontano la storia di un popolo.",
+     "p": [
+      "La samba è nata da radici afro-brasiliane a Rio de Janeiro ed è diventata simbolo della gioia e della creatività del Brasile.",
+      "Il flamenco, dall'Andalusia, unisce canto, chitarra, danza e il battito ritmico delle mani chiamato palmas.",
+      "Il reggae è nato in Giamaica alla fine degli anni Sessanta; reggae e flamenco sono riconosciuti dall'UNESCO come patrimonio culturale."
+     ],
+     "q": "Quale canzone o stile musicale ti fa sentire più a casa, e perché?",
+     "c": "Ascolta oggi una samba, un flamenco e un reggae e descrivi ciascuno con una parola."
+    },
+    "pt": {
+     "t": "A música como identidade",
+     "g": "Vê como ritmos como o samba, o flamenco e o reggae contam a história de um povo.",
+     "p": [
+      "O samba nasceu de raízes afro-brasileiras no Rio de Janeiro e tornou-se símbolo da alegria e criatividade do Brasil.",
+      "O flamenco, da Andaluzia, junta canto, guitarra, dança e palmas ritmadas; em Portugal, o fado tem um papel parecido.",
+      "O reggae nasceu na Jamaica no fim dos anos 60, e reggae, flamenco e fado são reconhecidos pela UNESCO como património."
+     ],
+     "q": "Que música ou estilo musical te faz sentir mais em casa, e porquê?",
+     "c": "Ouve hoje um samba, um flamenco e um reggae e descreve cada um com uma palavra."
+    },
+    "pt_BR": {
+     "t": "A música como identidade",
+     "g": "Veja como ritmos como o samba, o flamenco e o reggae contam a história de um povo.",
+     "p": [
+      "O samba nasceu de raízes afro-brasileiras no Rio de Janeiro e virou símbolo da alegria e da criatividade do Brasil.",
+      "O flamenco, da Andaluzia, na Espanha, junta canto, violão, dança e as palmas, um ritmo marcado com as mãos.",
+      "O reggae nasceu na Jamaica no fim dos anos 60, e reggae e flamenco são reconhecidos pela UNESCO como patrimônio cultural."
+     ],
+     "q": "Qual música ou estilo musical faz você se sentir mais em casa, e por quê?",
+     "c": "Ouça hoje um samba, um flamenco e um reggae e descreva cada um com uma palavra."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Traditional instruments",
+     "g": "Meet five instruments that carry the sound of their cultures.",
+     "p": [
+      "The Indian sitar has a long neck and extra strings that vibrate on their own, giving its shimmering sound.",
+      "The djembe, a goblet-shaped drum from West Africa, is played with bare hands and invites everyone to join in.",
+      "Scottish bagpipes, the 13-string Japanese koto and the small Andean charango each have an unmistakable voice."
+     ],
+     "q": "Which traditional instrument from your culture or another would you love to learn?",
+     "c": "Listen to a short piece played on one of these five instruments and notice how it makes you feel."
+    },
+    "de": {
+     "t": "Traditionelle Instrumente",
+     "g": "Lerne fünf Instrumente kennen, die den Klang ihrer Kulturen tragen.",
+     "p": [
+      "Die indische Sitar hat einen langen Hals und zusätzliche Saiten, die von selbst mitschwingen und schimmernd klingen.",
+      "Die Djembe, eine kelchförmige Trommel aus Westafrika, spielt man mit bloßen Händen, und sie lädt alle zum Mitmachen ein.",
+      "Der schottische Dudelsack, das japanische Koto mit 13 Saiten und das kleine Charango der Anden haben jeweils eine unverwechselbare Stimme."
+     ],
+     "q": "Welches traditionelle Instrument aus deiner oder einer anderen Kultur würdest du gern lernen?",
+     "c": "Hör dir ein kurzes Stück auf einem dieser fünf Instrumente an und achte darauf, wie es auf dich wirkt."
+    },
+    "es": {
+     "t": "Instrumentos tradicionales",
+     "g": "Conoce cinco instrumentos que llevan el sonido de sus culturas.",
+     "p": [
+      "El sitar indio tiene un mástil largo y cuerdas extra que vibran solas, lo que le da su sonido brillante.",
+      "El djembé, un tambor en forma de copa de África occidental, se toca con las manos e invita a todos a unirse.",
+      "La gaita escocesa, el koto japonés de 13 cuerdas y el pequeño charango andino tienen cada uno una voz inconfundible."
+     ],
+     "q": "¿Qué instrumento tradicional de tu cultura o de otra te encantaría aprender?",
+     "c": "Escucha una pieza corta tocada con uno de estos cinco instrumentos y fíjate en cómo te hace sentir."
+    },
+    "fr": {
+     "t": "Les instruments traditionnels",
+     "g": "Découvre cinq instruments qui portent le son de leurs cultures.",
+     "p": [
+      "Le sitar indien a un long manche et des cordes supplémentaires qui vibrent seules, d'où son son scintillant.",
+      "Le djembé, tambour en forme de calice d'Afrique de l'Ouest, se joue à mains nues et invite chacun à participer.",
+      "La cornemuse écossaise, le koto japonais à 13 cordes et le petit charango des Andes ont chacun une voix unique."
+     ],
+     "q": "Quel instrument traditionnel de ta culture ou d'une autre aimerais-tu apprendre ?",
+     "c": "Écoute un court morceau joué sur l'un de ces cinq instruments et observe ce qu'il te fait ressentir."
+    },
+    "it": {
+     "t": "Strumenti tradizionali",
+     "g": "Conosci cinque strumenti che portano il suono delle loro culture.",
+     "p": [
+      "Il sitar indiano ha un manico lungo e corde extra che vibrano da sole, dandogli un suono scintillante.",
+      "Il djembe, tamburo a forma di calice dell'Africa occidentale, si suona a mani nude e invita tutti a partecipare.",
+      "La cornamusa scozzese, il koto giapponese a 13 corde e il piccolo charango andino hanno ognuno una voce inconfondibile."
+     ],
+     "q": "Quale strumento tradizionale della tua cultura o di un'altra ti piacerebbe imparare?",
+     "c": "Ascolta un breve brano suonato con uno di questi cinque strumenti e nota come ti fa sentire."
+    },
+    "pt": {
+     "t": "Instrumentos tradicionais",
+     "g": "Conhece cinco instrumentos que levam o som das suas culturas.",
+     "p": [
+      "A cítara indiana tem um braço longo e cordas extra que vibram sozinhas, o que lhe dá um som cintilante.",
+      "O djembé, um tambor em forma de cálice da África Ocidental, toca-se com as mãos e convida todos a participar.",
+      "A gaita de foles escocesa, o koto japonês de 13 cordas e o pequeno charango andino têm cada um uma voz inconfundível."
+     ],
+     "q": "Que instrumento tradicional da tua cultura ou de outra adoravas aprender?",
+     "c": "Ouve uma peça curta tocada num destes cinco instrumentos e repara no que sentes."
+    },
+    "pt_BR": {
+     "t": "Instrumentos tradicionais",
+     "g": "Conheça cinco instrumentos que carregam o som das suas culturas.",
+     "p": [
+      "A cítara indiana tem um braço longo e cordas extras que vibram sozinhas, o que lhe dá um som cintilante.",
+      "O djembê, um tambor em forma de cálice da África Ocidental, é tocado com as mãos e convida todo mundo a participar.",
+      "A gaita de foles escocesa, o koto japonês de 13 cordas e o pequeno charango andino têm cada um uma voz inconfundível."
+     ],
+     "q": "Que instrumento tradicional da sua cultura ou de outra você adoraria aprender?",
+     "c": "Ouça uma peça curta tocada em um desses cinco instrumentos e repare no que você sente."
+    }
+   }
+  }
+ ]
+}

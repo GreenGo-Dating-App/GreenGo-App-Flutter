@@ -1,0 +1,835 @@
+{
+ "topic": "slang_idioms",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What is an idiom?",
+     "g": "Understand what an idiom is and why its meaning goes beyond its words.",
+     "p": [
+      "An idiom is a fixed phrase whose meaning you cannot guess from each word, like “break the ice” = start a friendly conversation.",
+      "Idioms are used as a block: we say “break the ice”, never “smash the ice” or “break the frost”.",
+      "Every language has thousands of them, and they often paint a funny picture in your head."
+     ],
+     "q": "Which phrase in your language would sound totally strange if someone translated it word by word?",
+     "c": "Notice one idiom today in a song, a show or a chat and write down what it really means."
+    },
+    "de": {
+     "t": "Was ist eine Redewendung?",
+     "g": "Verstehen, was eine Redewendung ist und warum ihre Bedeutung mehr ist als ihre Wörter.",
+     "p": [
+      "Eine Redewendung ist ein fester Ausdruck, dessen Sinn man nicht aus den Wörtern errät: „das Eis brechen“ = locker ins Gespräch kommen.",
+      "Man benutzt sie als Block: Wir sagen „das Eis brechen“, nie „das Eis zerschlagen“.",
+      "Jede Sprache hat Tausende davon, und oft malen sie ein lustiges Bild im Kopf."
+     ],
+     "q": "Welcher Ausdruck deiner Sprache würde Wort für Wort übersetzt total seltsam klingen?",
+     "c": "Achte heute auf eine Redewendung in einem Lied, einer Serie oder einem Chat und notiere, was sie wirklich bedeutet."
+    },
+    "es": {
+     "t": "¿Qué es una expresión idiomática?",
+     "g": "Entender qué es una expresión idiomática y por qué su sentido va más allá de sus palabras.",
+     "p": [
+      "Es una frase fija cuyo sentido no se deduce palabra por palabra, como «romper el hielo» = empezar a charlar con confianza.",
+      "Se usa en bloque: decimos «romper el hielo», nunca «partir el hielo» ni «romper la escarcha».",
+      "Cada idioma tiene miles, y muchas dibujan una imagen divertida en la cabeza."
+     ],
+     "q": "¿Qué frase de tu idioma sonaría rarísima traducida palabra por palabra?",
+     "c": "Fíjate hoy en una expresión en una canción, una serie o un chat y apunta qué significa de verdad."
+    },
+    "fr": {
+     "t": "Qu'est-ce qu'une expression idiomatique ?",
+     "g": "Comprendre ce qu'est une expression idiomatique et pourquoi son sens dépasse ses mots.",
+     "p": [
+      "C'est une phrase figée dont on ne devine pas le sens mot à mot, comme « briser la glace » = engager la conversation.",
+      "On l'emploie en bloc : on dit « briser la glace », jamais « casser la glace en morceaux ».",
+      "Chaque langue en compte des milliers, et beaucoup dessinent une image amusante dans la tête."
+     ],
+     "q": "Quelle phrase de ta langue paraîtrait bizarre si on la traduisait mot à mot ?",
+     "c": "Repère aujourd'hui une expression dans une chanson, une série ou un chat et note son vrai sens."
+    },
+    "it": {
+     "t": "Che cos'è un modo di dire?",
+     "g": "Capire che cos'è un modo di dire e perché il suo senso va oltre le parole.",
+     "p": [
+      "È una frase fissa il cui senso non si capisce parola per parola, come «rompere il ghiaccio» = iniziare a chiacchierare.",
+      "Si usa in blocco: diciamo «rompere il ghiaccio», mai «spaccare il ghiaccio».",
+      "Ogni lingua ne ha migliaia, e spesso disegnano un'immagine buffa nella testa."
+     ],
+     "q": "Quale frase della tua lingua suonerebbe stranissima tradotta parola per parola?",
+     "c": "Oggi nota un modo di dire in una canzone, una serie o una chat e scrivi che cosa significa davvero."
+    },
+    "pt": {
+     "t": "O que é uma expressão idiomática?",
+     "g": "Perceber o que é uma expressão idiomática e porque o seu sentido vai além das palavras.",
+     "p": [
+      "É uma frase fixa cujo sentido não se adivinha palavra a palavra, como «quebrar o gelo» = começar uma conversa descontraída.",
+      "Usa-se em bloco: dizemos «quebrar o gelo», nunca «partir o gelo».",
+      "Cada língua tem milhares, e muitas pintam uma imagem divertida na cabeça."
+     ],
+     "q": "Que frase da tua língua soaria estranhíssima traduzida palavra a palavra?",
+     "c": "Repara hoje numa expressão numa canção, série ou conversa e aponta o que significa de verdade."
+    },
+    "pt_BR": {
+     "t": "O que é uma expressão idiomática?",
+     "g": "Entender o que é uma expressão idiomática e por que o sentido dela vai além das palavras.",
+     "p": [
+      "É uma frase fixa cujo sentido não dá para adivinhar palavra por palavra, como “quebrar o gelo” = começar um papo descontraído.",
+      "Ela é usada em bloco: a gente diz “quebrar o gelo”, nunca “rachar o gelo”.",
+      "Toda língua tem milhares, e muitas desenham uma imagem engraçada na cabeça."
+     ],
+     "q": "Que frase da sua língua ia soar muito estranha traduzida palavra por palavra?",
+     "c": "Repare hoje numa expressão numa música, série ou conversa e anote o que ela quer dizer de verdade."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What is slang?",
+     "g": "Learn what slang is, who uses it and why it changes so fast.",
+     "p": [
+      "Slang is informal vocabulary used by a group: friends, teenagers, gamers, a city or a job.",
+      "It shows you belong: using the group's words feels relaxed and close, like “chill” for calm.",
+      "Slang comes and goes; some words fade in a few years, others like “cool” stay for decades."
+     ],
+     "q": "What is a slang word your friends use that older people might not understand?",
+     "c": "Ask someone older which slang word was popular when they were young and what it meant."
+    },
+    "de": {
+     "t": "Was ist Slang?",
+     "g": "Lernen, was Slang ist, wer ihn benutzt und warum er sich so schnell ändert.",
+     "p": [
+      "Slang ist lockerer Wortschatz einer Gruppe: Freunde, Jugendliche, Gamer, eine Stadt oder ein Beruf.",
+      "Er zeigt Zugehörigkeit: Die Wörter der Gruppe klingen entspannt und vertraut, wie „chillen“ für sich entspannen.",
+      "Slang kommt und geht; manches verschwindet nach wenigen Jahren, anderes wie „cool“ bleibt jahrzehntelang."
+     ],
+     "q": "Welches Slangwort benutzen deine Freunde, das Ältere vielleicht nicht verstehen?",
+     "c": "Frag einen älteren Menschen, welches Slangwort früher angesagt war und was es bedeutete."
+    },
+    "es": {
+     "t": "¿Qué es la jerga?",
+     "g": "Aprender qué es la jerga, quién la usa y por qué cambia tan rápido.",
+     "p": [
+      "La jerga es vocabulario informal de un grupo: amigos, jóvenes, gamers, una ciudad o una profesión.",
+      "Muestra que perteneces: usar las palabras del grupo suena cercano y relajado, como «guay» en España.",
+      "La jerga va y viene; algunas palabras duran pocos años y otras, como «cool», siguen décadas después."
+     ],
+     "q": "¿Qué palabra de jerga usan tus amigos que la gente mayor quizá no entienda?",
+     "c": "Pregunta a alguien mayor qué palabra de jerga estaba de moda en su juventud y qué significaba."
+    },
+    "fr": {
+     "t": "Qu'est-ce que l'argot ?",
+     "g": "Apprendre ce qu'est l'argot, qui l'utilise et pourquoi il change si vite.",
+     "p": [
+      "L'argot est un vocabulaire familier propre à un groupe : amis, ados, gamers, une ville ou un métier.",
+      "Il montre qu'on fait partie du groupe : ses mots sonnent proches et détendus, comme « kiffer » pour aimer.",
+      "L'argot va et vient ; certains mots disparaissent en quelques années, d'autres comme « cool » restent."
+     ],
+     "q": "Quel mot d'argot tes amis utilisent-ils que des personnes plus âgées ne comprendraient pas ?",
+     "c": "Demande à une personne plus âgée quel mot d'argot était à la mode dans sa jeunesse."
+    },
+    "it": {
+     "t": "Che cos'è lo slang?",
+     "g": "Imparare che cos'è lo slang, chi lo usa e perché cambia così in fretta.",
+     "p": [
+      "Lo slang è il lessico informale di un gruppo: amici, ragazzi, gamer, una città o un mestiere.",
+      "Mostra che fai parte del gruppo: le sue parole suonano vicine e rilassate, come «figo» per bello.",
+      "Lo slang va e viene; certe parole spariscono in pochi anni, altre come «cool» restano per decenni."
+     ],
+     "q": "Quale parola slang usano i tuoi amici che le persone più grandi forse non capiscono?",
+     "c": "Chiedi a una persona più grande quale parola slang andava di moda quando era giovane."
+    },
+    "pt": {
+     "t": "O que é o calão?",
+     "g": "Aprender o que é o calão (a gíria), quem o usa e porque muda tão depressa.",
+     "p": [
+      "O calão é vocabulário informal de um grupo: amigos, jovens, gamers, uma cidade ou uma profissão.",
+      "Mostra que pertences ao grupo: as suas palavras soam próximas e descontraídas, como «fixe» para bom.",
+      "O calão vai e vem; algumas palavras desaparecem em poucos anos, outras como «cool» ficam décadas."
+     ],
+     "q": "Que palavra de calão os teus amigos usam que as pessoas mais velhas talvez não percebam?",
+     "c": "Pergunta a alguém mais velho que palavra de calão estava na moda quando era jovem."
+    },
+    "pt_BR": {
+     "t": "O que é gíria?",
+     "g": "Aprender o que é gíria, quem usa e por que ela muda tão rápido.",
+     "p": [
+      "Gíria é o vocabulário informal de um grupo: amigos, jovens, gamers, uma cidade ou uma profissão.",
+      "Ela mostra que você faz parte da turma: as palavras soam próximas e leves, como “legal” para bom.",
+      "A gíria vem e vai; algumas palavras somem em poucos anos, outras como “cool” ficam por décadas."
+     ],
+     "q": "Que gíria seus amigos usam que pessoas mais velhas talvez não entendam?",
+     "c": "Pergunte a alguém mais velho qual gíria estava na moda quando era jovem e o que significava."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Idiom, slang or proverb?",
+     "g": "Tell idioms, slang, proverbs and fixed expressions apart.",
+     "p": [
+      "Idiom: a phrase with a hidden meaning (“spill the beans” = reveal a secret). Slang: informal words of a group (“chill”).",
+      "Proverb: a full sentence of wisdom, like “practice makes perfect”. It gives advice or a lesson.",
+      "Fixed expression: a set phrase with a clear meaning, like “by the way” or “no problem”."
+     ],
+     "q": "Can you share a proverb from your culture that you have heard many times?",
+     "c": "Find one example of each type today: an idiom, a slang word, a proverb and a fixed expression."
+    },
+    "de": {
+     "t": "Redewendung, Slang oder Sprichwort?",
+     "g": "Redewendungen, Slang, Sprichwörter und feste Ausdrücke unterscheiden.",
+     "p": [
+      "Redewendung: versteckte Bedeutung („Tomaten auf den Augen haben“ = etwas übersehen). Slang: lockere Gruppenwörter („chillen“).",
+      "Sprichwort: ein ganzer Satz voller Weisheit, wie „Übung macht den Meister“. Er gibt einen Rat.",
+      "Fester Ausdruck: eine feste Wendung mit klarem Sinn, wie „übrigens“ oder „kein Problem“."
+     ],
+     "q": "Welches Sprichwort aus deiner Kultur hast du schon oft gehört?",
+     "c": "Finde heute je ein Beispiel: eine Redewendung, ein Slangwort, ein Sprichwort und einen festen Ausdruck."
+    },
+    "es": {
+     "t": "¿Expresión, jerga o refrán?",
+     "g": "Distinguir expresiones idiomáticas, jerga, refranes y frases hechas.",
+     "p": [
+      "Expresión idiomática: sentido oculto («tomar el pelo» = bromear con alguien). Jerga: palabras informales de un grupo («guay»).",
+      "Refrán: una frase completa con una enseñanza, como «a quien madruga, Dios le ayuda».",
+      "Frase hecha: una fórmula fija de sentido claro, como «por cierto» o «no pasa nada»."
+     ],
+     "q": "¿Qué refrán de tu cultura has oído muchísimas veces?",
+     "c": "Busca hoy un ejemplo de cada tipo: una expresión, una palabra de jerga, un refrán y una frase hecha."
+    },
+    "fr": {
+     "t": "Expression, argot ou proverbe ?",
+     "g": "Distinguer expressions idiomatiques, argot, proverbes et formules figées.",
+     "p": [
+      "Expression : un sens caché (« poser un lapin » = ne pas venir au rendez-vous). Argot : mots familiers d'un groupe (« kiffer »).",
+      "Proverbe : une phrase complète de sagesse, comme « petit à petit, l'oiseau fait son nid ».",
+      "Formule figée : une tournure fixe au sens clair, comme « au fait » ou « pas de souci »."
+     ],
+     "q": "Quel proverbe de ta culture as-tu entendu des dizaines de fois ?",
+     "c": "Trouve aujourd'hui un exemple de chaque type : expression, mot d'argot, proverbe et formule figée."
+    },
+    "it": {
+     "t": "Modo di dire, slang o proverbio?",
+     "g": "Distinguere modi di dire, slang, proverbi ed espressioni fisse.",
+     "p": [
+      "Modo di dire: senso nascosto («prendere un granchio» = sbagliarsi). Slang: parole informali di un gruppo («figo»).",
+      "Proverbio: una frase intera con una lezione, come «chi va piano va sano e va lontano».",
+      "Espressione fissa: una formula dal senso chiaro, come «a proposito» o «nessun problema»."
+     ],
+     "q": "Quale proverbio della tua cultura hai sentito tantissime volte?",
+     "c": "Trova oggi un esempio per tipo: un modo di dire, una parola slang, un proverbio e un'espressione fissa."
+    },
+    "pt": {
+     "t": "Expressão, calão ou provérbio?",
+     "g": "Distinguir expressões idiomáticas, calão, provérbios e expressões fixas.",
+     "p": [
+      "Expressão idiomática: sentido escondido («meter água» = fazer asneira). Calão: palavras informais de um grupo («fixe»).",
+      "Provérbio: uma frase inteira com uma lição, como «devagar se vai ao longe».",
+      "Expressão fixa: uma fórmula de sentido claro, como «já agora» ou «não há problema»."
+     ],
+     "q": "Que provérbio da tua cultura já ouviste vezes sem conta?",
+     "c": "Encontra hoje um exemplo de cada tipo: expressão, palavra de calão, provérbio e expressão fixa."
+    },
+    "pt_BR": {
+     "t": "Expressão, gíria ou provérbio?",
+     "g": "Diferenciar expressões idiomáticas, gírias, provérbios e expressões fixas.",
+     "p": [
+      "Expressão idiomática: sentido escondido (“pagar mico” = passar vergonha). Gíria: palavras informais de um grupo (“legal”).",
+      "Provérbio: uma frase inteira com uma lição, como “devagar se vai ao longe”.",
+      "Expressão fixa: uma fórmula de sentido claro, como “aliás” ou “sem problema”."
+     ],
+     "q": "Que provérbio da sua cultura você já ouviu um monte de vezes?",
+     "c": "Ache hoje um exemplo de cada tipo: expressão, gíria, provérbio e expressão fixa."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Why locals love idioms",
+     "g": "See how expressions add colour, humour and closeness to everyday talk.",
+     "p": [
+      "Idioms make speech vivid: “it's raining cats and dogs” paints a stronger picture than “it's raining a lot”.",
+      "They add humour and soften things: “I'm a bit under the weather” sounds lighter than “I'm ill”.",
+      "Sharing idioms builds closeness; when you use a local one, people smile and feel you get their culture."
+     ],
+     "q": "Which idiom in your language makes you smile every time you hear it?",
+     "c": "Use one idiom in a message to a friend today and see how they react."
+    },
+    "de": {
+     "t": "Warum Einheimische Redewendungen lieben",
+     "g": "Sehen, wie Ausdrücke Farbe, Humor und Nähe in den Alltag bringen.",
+     "p": [
+      "Redewendungen machen Sprache bildhaft: „Es regnet in Strömen“ wirkt stärker als „es regnet viel“.",
+      "Sie bringen Humor und machen Dinge sanfter: „Ich bin nicht ganz auf dem Damm“ klingt leichter als „ich bin krank“.",
+      "Sie schaffen Nähe; wer eine lokale Wendung benutzt, erntet ein Lächeln und zeigt Interesse an der Kultur."
+     ],
+     "q": "Bei welcher Redewendung deiner Sprache musst du jedes Mal schmunzeln?",
+     "c": "Benutze heute eine Redewendung in einer Nachricht an einen Freund und schau, wie er reagiert."
+    },
+    "es": {
+     "t": "Por qué a la gente le encantan",
+     "g": "Ver cómo las expresiones dan color, humor y cercanía al habla diaria.",
+     "p": [
+      "Las expresiones hacen el habla más viva: «llueve a cántaros» pinta más que «llueve mucho».",
+      "Aportan humor y suavizan: «estoy un poco pachucho» suena más ligero que «estoy enfermo».",
+      "Crean cercanía; si usas una expresión local, la gente sonríe y siente que entiendes su cultura."
+     ],
+     "q": "¿Qué expresión de tu idioma te hace sonreír cada vez que la oyes?",
+     "c": "Usa hoy una expresión en un mensaje a un amigo y mira cómo reacciona."
+    },
+    "fr": {
+     "t": "Pourquoi on adore les expressions",
+     "g": "Voir comment les expressions donnent couleur, humour et proximité au quotidien.",
+     "p": [
+      "Elles rendent la parole vivante : « il pleut des cordes » parle plus que « il pleut beaucoup ».",
+      "Elles ajoutent de l'humour et adoucissent : « je ne suis pas dans mon assiette » sonne plus léger que « je suis malade ».",
+      "Elles rapprochent ; quand tu utilises une expression locale, les gens sourient et sentent que tu comprends leur culture."
+     ],
+     "q": "Quelle expression de ta langue te fait sourire à chaque fois ?",
+     "c": "Glisse aujourd'hui une expression dans un message à un ami et observe sa réaction."
+    },
+    "it": {
+     "t": "Perché la gente ama i modi di dire",
+     "g": "Vedere come le espressioni danno colore, umorismo e vicinanza al parlato.",
+     "p": [
+      "Rendono il parlato vivace: «piove a catinelle» dipinge più di «piove molto».",
+      "Aggiungono umorismo e ammorbidiscono: «sono un po' giù di corda» suona più leggero di «sto male».",
+      "Creano vicinanza; se usi un'espressione locale, la gente sorride e sente che capisci la sua cultura."
+     ],
+     "q": "Quale modo di dire della tua lingua ti fa sorridere ogni volta?",
+     "c": "Usa oggi un modo di dire in un messaggio a un amico e guarda come reagisce."
+    },
+    "pt": {
+     "t": "Porque é que adoramos expressões",
+     "g": "Ver como as expressões dão cor, humor e proximidade à fala do dia a dia.",
+     "p": [
+      "Tornam a fala viva: «chove a potes» pinta melhor do que «chove muito».",
+      "Dão humor e suavizam: «estou um bocado em baixo» soa mais leve do que «estou doente».",
+      "Criam proximidade; quando usas uma expressão local, as pessoas sorriem e sentem que percebes a cultura."
+     ],
+     "q": "Que expressão da tua língua te faz sorrir sempre que a ouves?",
+     "c": "Usa hoje uma expressão numa mensagem a um amigo e vê como reage."
+    },
+    "pt_BR": {
+     "t": "Por que a gente ama expressões",
+     "g": "Ver como as expressões dão cor, humor e proximidade à fala do dia a dia.",
+     "p": [
+      "Elas deixam a fala viva: “chover canivete” pinta muito melhor do que “chover muito”.",
+      "Trazem humor e suavizam: “estou meio jururu” soa mais leve do que “estou mal”.",
+      "Criam proximidade; quando você usa uma expressão local, as pessoas sorriem e sentem que você entende a cultura."
+     ],
+     "q": "Que expressão da sua língua faz você sorrir toda vez que ouve?",
+     "c": "Use hoje uma expressão numa mensagem para um amigo e veja a reação."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Hello, casual style",
+     "g": "Greet people casually in English and answer naturally.",
+     "p": [
+      "“Hey” and “hi” work almost everywhere; “hiya” is friendly and common in the UK.",
+      "“What's up?” or “sup?” is not a real question about news; answer “not much” or “nothing much, you?”.",
+      "“Howdy” is a folksy hello linked to the southern and western US, often said with a smile."
+     ],
+     "q": "How do you usually greet your close friends, and how do you greet a new colleague?",
+     "c": "Greet someone today with “hey, what's up?” and answer the same question with “not much, you?”."
+    },
+    "de": {
+     "t": "Hallo, ganz locker",
+     "g": "Leute auf Englisch locker begrüßen und natürlich antworten.",
+     "p": [
+      "„Hey“ und „hi“ passen fast überall; „hiya“ ist freundlich und in Großbritannien verbreitet.",
+      "„What's up?“ oder „sup?“ fragt nicht wirklich nach Neuigkeiten; man antwortet „not much, you?“.",
+      "„Howdy“ ist ein uriges Hallo aus dem Süden und Westen der USA, meist mit einem Lächeln gesagt."
+     ],
+     "q": "Wie begrüßt du gute Freunde, und wie einen neuen Kollegen?",
+     "c": "Begrüße heute jemanden mit „hey, what's up?“ und antworte selbst mit „not much, you?“."
+    },
+    "es": {
+     "t": "Hola, en plan informal",
+     "g": "Saludar en inglés de forma informal y responder con naturalidad.",
+     "p": [
+      "«Hey» y «hi» sirven casi siempre; «hiya» es simpático y muy británico.",
+      "«What's up?» o «sup?» no pide noticias de verdad; se responde «not much, you?» (nada, ¿y tú?).",
+      "«Howdy» es un hola campechano del sur y el oeste de EE. UU., dicho con una sonrisa."
+     ],
+     "q": "¿Cómo saludas a tus amigos íntimos y cómo a un compañero nuevo?",
+     "c": "Saluda hoy a alguien con «hey, what's up?» y responde tú con «not much, you?»."
+    },
+    "fr": {
+     "t": "Salut, version décontractée",
+     "g": "Saluer en anglais de façon décontractée et répondre naturellement.",
+     "p": [
+      "« Hey » et « hi » marchent presque partout ; « hiya » est sympa et courant au Royaume-Uni.",
+      "« What's up? » ou « sup? » ne demande pas vraiment des nouvelles ; on répond « not much, you? ».",
+      "« Howdy » est un bonjour bon enfant du sud et de l'ouest des États-Unis, dit avec le sourire."
+     ],
+     "q": "Comment salues-tu tes amis proches, et un nouveau collègue ?",
+     "c": "Salue quelqu'un aujourd'hui avec « hey, what's up? » et réponds toi-même « not much, you? »."
+    },
+    "it": {
+     "t": "Ciao, in versione informale",
+     "g": "Salutare in inglese in modo informale e rispondere con naturalezza.",
+     "p": [
+      "«Hey» e «hi» vanno bene quasi ovunque; «hiya» è simpatico e diffuso nel Regno Unito.",
+      "«What's up?» o «sup?» non chiede davvero novità; si risponde «not much, you?» (niente, e tu?).",
+      "«Howdy» è un ciao alla buona del sud e dell'ovest degli USA, detto col sorriso."
+     ],
+     "q": "Come saluti gli amici stretti e come un nuovo collega?",
+     "c": "Oggi saluta qualcuno con «hey, what's up?» e rispondi tu con «not much, you?»."
+    },
+    "pt": {
+     "t": "Olá, em versão descontraída",
+     "g": "Cumprimentar em inglês de forma descontraída e responder com naturalidade.",
+     "p": [
+      "«Hey» e «hi» servem quase sempre; «hiya» é simpático e comum no Reino Unido.",
+      "«What's up?» ou «sup?» não pede mesmo novidades; responde-se «not much, you?» (nada de especial, e tu?).",
+      "«Howdy» é um olá à moda do sul e do oeste dos EUA, dito com um sorriso."
+     ],
+     "q": "Como cumprimentas os teus amigos chegados e um colega novo?",
+     "c": "Cumprimenta hoje alguém com «hey, what's up?» e responde tu com «not much, you?»."
+    },
+    "pt_BR": {
+     "t": "Oi, no estilo informal",
+     "g": "Cumprimentar em inglês de forma informal e responder com naturalidade.",
+     "p": [
+      "“Hey” e “hi” funcionam quase sempre; “hiya” é simpático e comum no Reino Unido.",
+      "“What's up?” ou “sup?” não pede novidades de verdade; responda “not much, you?” (nada demais, e você?).",
+      "“Howdy” é um oi bem caipira do sul e do oeste dos EUA, dito com um sorriso."
+     ],
+     "q": "Como você cumprimenta seus amigos próximos e um colega novo?",
+     "c": "Cumprimente alguém hoje com “hey, what's up?” e responda você mesmo com “not much, you?”."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Casual hellos around the world",
+     "g": "Discover casual greetings in other languages and where people use them.",
+     "p": [
+      "“¿Qué onda?” is a relaxed Mexican hello, like “what's up?”; in Spain friends often say “¿qué tal?”.",
+      "“Salut” is the casual French hi (and bye); “ciao” does the same job in Italy.",
+      "“Servus” is a friendly hello in Bavaria and Austria; in Brazil friends say “e aí?”, like “hey, what's up?”."
+     ],
+     "q": "Which casual hello from another language do you like the sound of most?",
+     "c": "Pick one greeting from today, find out how to reply to it, and use it with someone."
+    },
+    "de": {
+     "t": "Lockere Grüße weltweit",
+     "g": "Lockere Begrüßungen anderer Sprachen entdecken und wo man sie sagt.",
+     "p": [
+      "„¿Qué onda?“ ist ein lässiges Hallo in Mexiko, wie „was geht?“; in Spanien sagen Freunde oft „¿qué tal?“.",
+      "„Salut“ ist das lockere französische Hallo (und Tschüss); „ciao“ erfüllt in Italien dieselbe Rolle.",
+      "„Servus“ grüßt freundlich in Bayern und Österreich; in Brasilien sagen Freunde „e aí?“, also „na, was geht?“."
+     ],
+     "q": "Welcher lockere Gruß aus einer anderen Sprache gefällt dir am besten?",
+     "c": "Wähle einen Gruß von heute, finde die passende Antwort heraus und benutze ihn mit jemandem."
+    },
+    "es": {
+     "t": "Saludos informales del mundo",
+     "g": "Descubrir saludos informales de otros idiomas y dónde se usan.",
+     "p": [
+      "«¿Qué onda?» es un saludo relajado de México; en España los amigos suelen decir «¿qué tal?» o «¿qué pasa?».",
+      "«Salut» es el hola informal en francés (y también adiós); «ciao» hace lo mismo en Italia.",
+      "«Servus» es un hola cordial en Baviera y Austria; en Brasil los amigos dicen «e aí?», como «¿qué pasa?»."
+     ],
+     "q": "¿Qué saludo informal de otro idioma te gusta más cómo suena?",
+     "c": "Elige un saludo de hoy, averigua cómo se responde y úsalo con alguien."
+    },
+    "fr": {
+     "t": "Salutations décontractées du monde",
+     "g": "Découvrir des salutations familières d'autres langues et où on les dit.",
+     "p": [
+      "« ¿Qué onda? » est un salut décontracté au Mexique ; en Espagne, les amis disent souvent « ¿qué tal? ».",
+      "« Salut » est le bonjour familier en français (et l'au revoir) ; « ciao » joue le même rôle en Italie.",
+      "« Servus » est un bonjour amical en Bavière et en Autriche ; au Brésil, on dit « e aí? », comme « ça roule ? »."
+     ],
+     "q": "Quelle salutation familière d'une autre langue préfères-tu à l'oreille ?",
+     "c": "Choisis une salutation du jour, cherche comment y répondre et utilise-la avec quelqu'un."
+    },
+    "it": {
+     "t": "Saluti informali dal mondo",
+     "g": "Scoprire saluti informali di altre lingue e dove si usano.",
+     "p": [
+      "«¿Qué onda?» è un saluto rilassato messicano; in Spagna gli amici dicono spesso «¿qué tal?».",
+      "«Salut» è il ciao informale francese (anche per salutare andando via); «ciao» fa lo stesso in Italia.",
+      "«Servus» è un saluto amichevole in Baviera e in Austria; in Brasile gli amici dicono «e aí?», come «allora?»."
+     ],
+     "q": "Quale saluto informale di un'altra lingua ti piace di più come suona?",
+     "c": "Scegli un saluto di oggi, scopri come si risponde e usalo con qualcuno."
+    },
+    "pt": {
+     "t": "Cumprimentos informais pelo mundo",
+     "g": "Descobrir cumprimentos informais de outras línguas e onde se usam.",
+     "p": [
+      "«¿Qué onda?» é um olá descontraído no México; em Espanha os amigos dizem muitas vezes «¿qué tal?».",
+      "«Salut» é o olá informal em francês (e também adeus); «ciao» faz o mesmo em Itália.",
+      "«Servus» é um olá simpático na Baviera e na Áustria; no Brasil os amigos dizem «e aí?», como «então?»."
+     ],
+     "q": "Que cumprimento informal de outra língua achas que soa melhor?",
+     "c": "Escolhe um cumprimento de hoje, descobre como se responde e usa-o com alguém."
+    },
+    "pt_BR": {
+     "t": "Cumprimentos informais pelo mundo",
+     "g": "Descobrir cumprimentos informais de outras línguas e onde são usados.",
+     "p": [
+      "“¿Qué onda?” é um oi descontraído do México; na Espanha os amigos costumam dizer “¿qué tal?”.",
+      "“Salut” é o oi informal do francês (e também tchau); “ciao” faz o mesmo na Itália.",
+      "“Servus” é um oi simpático na Baviera e na Áustria; aqui no Brasil a gente diz “e aí?”."
+     ],
+     "q": "Qual cumprimento informal de outra língua tem o som que você mais curte?",
+     "c": "Escolha um cumprimento de hoje, descubra como responder e use com alguém."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Goodbye, casual style",
+     "g": "Say goodbye casually in English and a few other languages.",
+     "p": [
+      "“See ya”, “catch you later” and “later!” are relaxed ways to leave friends.",
+      "“Take care” is warm and works with almost anyone, from neighbours to colleagues.",
+      "In German friends say “tschüss”; in Italian “a dopo” means see you later today, “a presto” see you soon."
+     ],
+     "q": "How do you usually say goodbye at the end of a chat with a friend?",
+     "c": "End three conversations today with a different casual goodbye each time."
+    },
+    "de": {
+     "t": "Tschüss, ganz locker",
+     "g": "Sich auf Englisch und in anderen Sprachen locker verabschieden.",
+     "p": [
+      "„See ya“, „catch you later“ und „later!“ sind entspannte Abschiede unter Freunden.",
+      "„Take care“ (pass auf dich auf) ist herzlich und passt fast zu jedem, vom Nachbarn bis zur Kollegin.",
+      "Auf Deutsch sagt man „tschüss“ oder „bis später“; auf Italienisch heißt „a dopo“ bis später, „a presto“ bis bald."
+     ],
+     "q": "Wie verabschiedest du dich normalerweise am Ende eines Chats mit Freunden?",
+     "c": "Beende heute drei Gespräche mit jeweils einem anderen lockeren Abschied."
+    },
+    "es": {
+     "t": "Adiós, en plan informal",
+     "g": "Despedirse de manera informal en inglés y en otros idiomas.",
+     "p": [
+      "«See ya», «catch you later» y «later!» son despedidas relajadas entre amigos.",
+      "«Take care» (cuídate) es cálido y sirve con casi todo el mundo, de vecinos a compañeros.",
+      "En alemán se dice «tschüss»; en italiano «a dopo» es hasta luego y «a presto» hasta pronto."
+     ],
+     "q": "¿Cómo te despides normalmente al final de una charla con un amigo?",
+     "c": "Termina hoy tres conversaciones con una despedida informal distinta cada vez."
+    },
+    "fr": {
+     "t": "Au revoir, version décontractée",
+     "g": "Dire au revoir de façon décontractée en anglais et dans d'autres langues.",
+     "p": [
+      "« See ya », « catch you later » et « later! » sont des au revoir détendus entre amis.",
+      "« Take care » (prends soin de toi) est chaleureux et marche avec presque tout le monde.",
+      "En allemand on dit « tschüss » ; en italien « a dopo » veut dire à tout à l'heure, « a presto » à bientôt."
+     ],
+     "q": "Comment dis-tu au revoir à la fin d'une discussion entre amis ?",
+     "c": "Termine trois conversations aujourd'hui avec un au revoir familier différent à chaque fois."
+    },
+    "it": {
+     "t": "Ciao, in versione informale",
+     "g": "Salutare andando via, in modo informale, in inglese e in altre lingue.",
+     "p": [
+      "«See ya», «catch you later» e «later!» sono saluti rilassati tra amici.",
+      "«Take care» (abbi cura di te) è caloroso e va bene quasi con tutti, dai vicini ai colleghi.",
+      "In tedesco si dice «tschüss»; in italiano «a dopo» vale per più tardi oggi, «a presto» per i prossimi giorni."
+     ],
+     "q": "Come saluti di solito alla fine di una chiacchierata con un amico?",
+     "c": "Chiudi oggi tre conversazioni con un saluto informale diverso ogni volta."
+    },
+    "pt": {
+     "t": "Adeus, em versão descontraída",
+     "g": "Despedir-se de forma descontraída em inglês e noutras línguas.",
+     "p": [
+      "«See ya», «catch you later» e «later!» são despedidas descontraídas entre amigos.",
+      "«Take care» (cuida-te) é caloroso e serve com quase toda a gente, de vizinhos a colegas.",
+      "Em alemão diz-se «tschüss»; em italiano «a dopo» é até logo e «a presto» é até breve."
+     ],
+     "q": "Como te despedes normalmente no fim de uma conversa com um amigo?",
+     "c": "Termina hoje três conversas com uma despedida informal diferente de cada vez."
+    },
+    "pt_BR": {
+     "t": "Tchau, no estilo informal",
+     "g": "Se despedir de forma informal em inglês e em outras línguas.",
+     "p": [
+      "“See ya”, “catch you later” e “later!” são despedidas descontraídas entre amigos.",
+      "“Take care” (se cuida) é carinhoso e funciona com quase todo mundo, de vizinhos a colegas.",
+      "Em alemão se diz “tschüss”; em italiano “a dopo” é até mais tarde e “a presto” é até breve."
+     ],
+     "q": "Como você costuma se despedir no fim de um papo com um amigo?",
+     "c": "Termine hoje três conversas com uma despedida informal diferente a cada vez."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Saying thanks casually",
+     "g": "Thank people in a relaxed way in several languages.",
+     "p": [
+      "In the UK “cheers” often means thanks, as well as being said when people clink glasses.",
+      "“Thanks a lot” and “thanks a million” sound warm; careful, “thanks a lot” said flatly can sound sarcastic.",
+      "Brazilians say “valeu”; the French say “merci bien”; Italians say “grazie mille”, a thousand thanks."
+     ],
+     "q": "Which casual thank-you do you use most with friends?",
+     "c": "Thank three people today with three different casual thank-yous from this lesson."
+    },
+    "de": {
+     "t": "Locker Danke sagen",
+     "g": "Sich in mehreren Sprachen entspannt bedanken.",
+     "p": [
+      "In Großbritannien heißt „cheers“ oft danke und wird auch beim Anstoßen gesagt.",
+      "„Thanks a lot“ und „thanks a million“ klingen herzlich; flach gesagt kann „thanks a lot“ aber ironisch wirken.",
+      "In Brasilien sagt man „valeu“, in Frankreich „merci bien“, in Italien „grazie mille“, also tausend Dank."
+     ],
+     "q": "Welches lockere Danke benutzt du mit Freunden am häufigsten?",
+     "c": "Bedanke dich heute bei drei Leuten mit drei verschiedenen lockeren Dankesformeln."
+    },
+    "es": {
+     "t": "Dar las gracias en plan informal",
+     "g": "Dar las gracias de forma relajada en varios idiomas.",
+     "p": [
+      "En el Reino Unido «cheers» suele significar gracias, y también se dice al brindar.",
+      "«Thanks a lot» y «thanks a million» suenan cálidos; ojo, «thanks a lot» dicho sin ganas puede sonar irónico.",
+      "En Brasil se dice «valeu»; en Francia «merci bien»; en Italia «grazie mille», mil gracias."
+     ],
+     "q": "¿Qué gracias informal usas más con tus amigos?",
+     "c": "Da hoy las gracias a tres personas con tres fórmulas informales distintas de esta lección."
+    },
+    "fr": {
+     "t": "Dire merci de façon décontractée",
+     "g": "Remercier de façon détendue dans plusieurs langues.",
+     "p": [
+      "Au Royaume-Uni, « cheers » veut souvent dire merci, en plus d'être dit en trinquant.",
+      "« Thanks a lot » et « thanks a million » sont chaleureux ; attention, dit platement, « thanks a lot » peut sembler ironique.",
+      "Les Brésiliens disent « valeu », les Français « merci bien », les Italiens « grazie mille », mille mercis."
+     ],
+     "q": "Quel merci familier utilises-tu le plus avec tes amis ?",
+     "c": "Remercie trois personnes aujourd'hui avec trois mercis familiers différents de la leçon."
+    },
+    "it": {
+     "t": "Dire grazie in modo informale",
+     "g": "Ringraziare in modo rilassato in diverse lingue.",
+     "p": [
+      "Nel Regno Unito «cheers» spesso vuol dire grazie, oltre a essere detto quando si brinda.",
+      "«Thanks a lot» e «thanks a million» suonano calorosi; attenzione, «thanks a lot» detto piatto può sembrare ironico.",
+      "I brasiliani dicono «valeu», i francesi «merci bien», noi italiani «grazie mille»."
+     ],
+     "q": "Quale grazie informale usi di più con gli amici?",
+     "c": "Ringrazia oggi tre persone con tre formule informali diverse di questa lezione."
+    },
+    "pt": {
+     "t": "Agradecer de forma descontraída",
+     "g": "Agradecer de forma descontraída em várias línguas.",
+     "p": [
+      "No Reino Unido «cheers» quer muitas vezes dizer obrigado, e também se diz ao brindar.",
+      "«Thanks a lot» e «thanks a million» soam calorosos; cuidado, «thanks a lot» dito sem entusiasmo pode soar irónico.",
+      "No Brasil diz-se «valeu»; em França «merci bien»; em Itália «grazie mille», mil obrigados."
+     ],
+     "q": "Que agradecimento informal usas mais com os amigos?",
+     "c": "Agradece hoje a três pessoas com três fórmulas informais diferentes desta lição."
+    },
+    "pt_BR": {
+     "t": "Agradecer no estilo informal",
+     "g": "Agradecer de um jeito descontraído em várias línguas.",
+     "p": [
+      "No Reino Unido “cheers” muitas vezes quer dizer obrigado, e também se diz no brinde.",
+      "“Thanks a lot” e “thanks a million” soam calorosos; cuidado, “thanks a lot” dito sem empolgação pode soar irônico.",
+      "Aqui a gente diz “valeu”; na França dizem “merci bien”; na Itália “grazie mille”, mil obrigados."
+     ],
+     "q": "Qual agradecimento informal você mais usa com os amigos?",
+     "c": "Agradeça hoje a três pessoas com três jeitos informais diferentes desta lição."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Saying sorry casually",
+     "g": "Apologise casually and know how serious each phrase sounds.",
+     "p": [
+      "“Oops” is for tiny slips, like dropping a spoon; “my bad” admits a small mistake in a relaxed way.",
+      "“Sorry about that” is polite and fits most everyday situations, like a late reply.",
+      "For real problems, casual words feel too light: say “I'm really sorry” and explain. In Spanish, “perdona” is a friendly sorry."
+     ],
+     "q": "How do people in your culture usually apologise for a small mistake?",
+     "c": "Today, match the sorry to the situation: notice one tiny slip and one bigger one and choose your words."
+    },
+    "de": {
+     "t": "Locker Entschuldigung sagen",
+     "g": "Sich locker entschuldigen und wissen, wie ernst jeder Ausdruck klingt.",
+     "p": [
+      "„Oops“ (hoppla) passt zu Mini-Pannen; „my bad“ gibt einen kleinen Fehler locker zu.",
+      "„Sorry about that“ ist höflich und passt in den meisten Alltagssituationen, etwa bei einer späten Antwort.",
+      "Bei echten Problemen wirken lockere Worte zu leicht: Sag „es tut mir wirklich leid“. Auf Spanisch ist „perdona“ ein freundliches Sorry."
+     ],
+     "q": "Wie entschuldigt man sich in deiner Kultur für einen kleinen Fehler?",
+     "c": "Achte heute auf eine kleine und eine größere Panne und wähle jeweils die passende Entschuldigung."
+    },
+    "es": {
+     "t": "Pedir perdón en plan informal",
+     "g": "Disculparse de forma informal y saber lo serio que suena cada frase.",
+     "p": [
+      "«Oops» (uy) es para despistes mínimos; «my bad» reconoce un pequeño error de forma relajada.",
+      "«Sorry about that» es educado y sirve en casi todo lo cotidiano, como contestar tarde.",
+      "Para problemas reales, lo informal queda corto: di «lo siento de verdad». En español, «perdona» es un perdón cercano."
+     ],
+     "q": "¿Cómo se suele pedir perdón en tu cultura por un error pequeño?",
+     "c": "Hoy fíjate en un despiste pequeño y en uno mayor y elige la disculpa adecuada para cada uno."
+    },
+    "fr": {
+     "t": "S'excuser de façon décontractée",
+     "g": "S'excuser de façon familière et savoir à quel point chaque formule est sérieuse.",
+     "p": [
+      "« Oops » (oups) sert pour les mini-maladresses ; « my bad » reconnaît une petite erreur sans drame.",
+      "« Sorry about that » est poli et convient à la plupart des situations, comme une réponse tardive.",
+      "Pour un vrai problème, le familier paraît trop léger : dis « je suis vraiment désolé ». En espagnol, « perdona » est un pardon amical."
+     ],
+     "q": "Comment s'excuse-t-on d'une petite erreur dans ta culture ?",
+     "c": "Aujourd'hui, repère une petite maladresse et une plus grosse, et choisis l'excuse qui va avec."
+    },
+    "it": {
+     "t": "Chiedere scusa in modo informale",
+     "g": "Scusarsi in modo informale e capire quanto è seria ogni frase.",
+     "p": [
+      "«Oops» (ops) è per le piccole distrazioni; «my bad» ammette un piccolo errore in modo rilassato.",
+      "«Sorry about that» è educato e va bene nella maggior parte dei casi, come una risposta in ritardo.",
+      "Per i problemi veri l'informale è troppo leggero: di' «mi dispiace davvero». In spagnolo «perdona» è uno scusa amichevole."
+     ],
+     "q": "Come ci si scusa nella tua cultura per un piccolo errore?",
+     "c": "Oggi nota una piccola distrazione e una più grande e scegli le parole giuste per ognuna."
+    },
+    "pt": {
+     "t": "Pedir desculpa de forma descontraída",
+     "g": "Pedir desculpa de forma informal e saber quão sério soa cada expressão.",
+     "p": [
+      "«Oops» (ups) é para pequenos deslizes; «my bad» admite um pequeno erro de forma descontraída.",
+      "«Sorry about that» é educado e serve na maioria das situações, como responder tarde.",
+      "Para problemas a sério, o informal soa leve demais: diz «peço mesmo desculpa». Em espanhol, «perdona» é um desculpa simpático."
+     ],
+     "q": "Como se pede desculpa na tua cultura por um pequeno erro?",
+     "c": "Hoje repara num pequeno deslize e num maior e escolhe as palavras certas para cada um."
+    },
+    "pt_BR": {
+     "t": "Pedir desculpa no estilo informal",
+     "g": "Pedir desculpa de forma informal e saber o quanto cada frase soa séria.",
+     "p": [
+      "“Oops” (opa) é para mancadinhas; “my bad” admite um errinho de um jeito leve, tipo “foi mal”.",
+      "“Sorry about that” é educado e serve na maioria das situações, como responder tarde.",
+      "Para problemas sérios, o informal soa leve demais: diga “sinto muito mesmo”. Em espanhol, “perdona” é um desculpa amigável."
+     ],
+     "q": "Como as pessoas da sua cultura costumam pedir desculpa por um errinho?",
+     "c": "Hoje repare numa mancadinha e numa mancada maior e escolha as palavras certas para cada uma."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Yes and no, the casual way",
+     "g": "Say yes and no casually in English and a few other languages.",
+     "p": [
+      "“Yep”, “yeah” and “sure thing” are relaxed yeses; “sure thing” also sounds happy to help.",
+      "“Nope” and “nah” are casual noes; add a reason or a smile so they do not sound rude.",
+      "In Spanish “claro” means of course; in French “ouais” is a casual yes, and “bof” shows you are not keen."
+     ],
+     "q": "Which casual yes or no do you say most often in your own language?",
+     "c": "Answer a few questions today with “yep”, “sure thing” or “nah” and notice how relaxed it feels."
+    },
+    "de": {
+     "t": "Ja und Nein, ganz locker",
+     "g": "Locker Ja und Nein sagen, auf Englisch und in anderen Sprachen.",
+     "p": [
+      "„Yep“, „yeah“ und „sure thing“ sind lockere Jas; „sure thing“ klingt zudem hilfsbereit.",
+      "„Nope“ und „nah“ sind lockere Neins; mit Grund oder Lächeln wirken sie nicht unhöflich.",
+      "Auf Spanisch heißt „claro“ na klar; auf Französisch ist „ouais“ ein lockeres Ja, und „bof“ zeigt wenig Lust."
+     ],
+     "q": "Welches lockere Ja oder Nein sagst du in deiner Sprache am häufigsten?",
+     "c": "Beantworte heute ein paar Fragen mit „yep“, „sure thing“ oder „nah“ und spür, wie entspannt das klingt."
+    },
+    "es": {
+     "t": "Sí y no, en plan informal",
+     "g": "Decir sí y no de manera informal en inglés y otros idiomas.",
+     "p": [
+      "«Yep», «yeah» y «sure thing» son síes relajados; «sure thing» además suena a «encantado de ayudar».",
+      "«Nope» y «nah» son noes informales; añade un motivo o una sonrisa para que no suenen bruscos.",
+      "En español «claro» es por supuesto; en francés «ouais» es un sí informal y «bof» muestra pocas ganas."
+     ],
+     "q": "¿Qué sí o no informal dices más en tu idioma?",
+     "c": "Responde hoy algunas preguntas con «yep», «sure thing» o «nah» y nota lo relajado que suena."
+    },
+    "fr": {
+     "t": "Oui et non, version familière",
+     "g": "Dire oui et non de façon familière en anglais et dans d'autres langues.",
+     "p": [
+      "« Yep », « yeah » et « sure thing » sont des oui détendus ; « sure thing » sonne aussi serviable.",
+      "« Nope » et « nah » sont des non familiers ; ajoute une raison ou un sourire pour ne pas paraître sec.",
+      "En espagnol « claro » veut dire bien sûr ; en français « ouais » est un oui familier et « bof » montre peu d'envie."
+     ],
+     "q": "Quel oui ou non familier dis-tu le plus dans ta langue ?",
+     "c": "Réponds aujourd'hui à quelques questions avec « yep », « sure thing » ou « nah » et sens la décontraction."
+    },
+    "it": {
+     "t": "Sì e no, in modo informale",
+     "g": "Dire sì e no in modo informale in inglese e in altre lingue.",
+     "p": [
+      "«Yep», «yeah» e «sure thing» sono sì rilassati; «sure thing» suona anche disponibile.",
+      "«Nope» e «nah» sono no informali; aggiungi un motivo o un sorriso perché non sembrino bruschi.",
+      "In spagnolo «claro» vuol dire certo; in francese «ouais» è un sì informale e «bof» mostra poca voglia."
+     ],
+     "q": "Quale sì o no informale dici più spesso nella tua lingua?",
+     "c": "Oggi rispondi ad alcune domande con «yep», «sure thing» o «nah» e senti quanto è rilassato."
+    },
+    "pt": {
+     "t": "Sim e não, à maneira informal",
+     "g": "Dizer sim e não de forma informal em inglês e noutras línguas.",
+     "p": [
+      "«Yep», «yeah» e «sure thing» são sins descontraídos; «sure thing» também soa prestável.",
+      "«Nope» e «nah» são nãos informais; junta uma razão ou um sorriso para não soarem bruscos.",
+      "Em espanhol «claro» é claro que sim; em francês «ouais» é um sim informal e «bof» mostra pouca vontade."
+     ],
+     "q": "Que sim ou não informal dizes mais na tua língua?",
+     "c": "Responde hoje a algumas perguntas com «yep», «sure thing» ou «nah» e sente como soa descontraído."
+    },
+    "pt_BR": {
+     "t": "Sim e não, no estilo informal",
+     "g": "Dizer sim e não de um jeito informal em inglês e em outras línguas.",
+     "p": [
+      "“Yep”, “yeah” e “sure thing” são sins descontraídos; “sure thing” também soa como “pode deixar”.",
+      "“Nope” e “nah” são nãos informais; junte um motivo ou um sorriso para não soarem grossos.",
+      "Em espanhol “claro” é claro que sim; em francês “ouais” é um sim informal e “bof” mostra pouca vontade."
+     ],
+     "q": "Qual sim ou não informal você mais fala na sua língua?",
+     "c": "Responda hoje algumas perguntas com “yep”, “sure thing” ou “nah” e sinta como soa leve."
+    }
+   }
+  }
+ ]
+}

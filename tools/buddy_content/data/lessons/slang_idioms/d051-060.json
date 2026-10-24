@@ -1,0 +1,835 @@
+{
+ "topic": "slang_idioms",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Easy and hard tasks",
+     "g": "Describe tasks as easy or hard with lively expressions.",
+     "p": [
+      "“A walk in the park” means very easy, like “a piece of cake” from day 15: “The test was a walk in the park.”",
+      "“An uphill battle” is a long, hard struggle; “no picnic” means not easy at all: “Moving house is no picnic.”",
+      "French “c'est pas sorcier” (it's not witchcraft) means it's not complicated, like “it's not rocket science”."
+     ],
+     "q": "What is something that was an uphill battle at first but is now a walk in the park?",
+     "c": "Rate three tasks today as “a walk in the park”, “no picnic” or “an uphill battle”."
+    },
+    "de": {
+     "t": "Leichte und schwere Aufgaben",
+     "g": "Aufgaben mit lebendigen Ausdrücken als leicht oder schwer beschreiben.",
+     "p": [
+      "„A walk in the park“ (ein Spaziergang im Park) heißt kinderleicht, wie „a piece of cake“ von Tag 15.",
+      "„An uphill battle“ ist ein harter Kampf bergauf; „no picnic“ heißt, kein Zuckerschlecken: „Moving house is no picnic.“",
+      "Französisch „c'est pas sorcier“ (das ist keine Hexerei) heißt, das ist nicht kompliziert, wie „kein Hexenwerk“."
+     ],
+     "q": "Was war am Anfang ein harter Kampf und ist heute ein Spaziergang?",
+     "c": "Bewerte heute drei Aufgaben als „a walk in the park“, „no picnic“ oder „an uphill battle“."
+    },
+    "es": {
+     "t": "Tareas fáciles y difíciles",
+     "g": "Describir tareas fáciles o difíciles con expresiones vivas.",
+     "p": [
+      "«A walk in the park» (un paseo por el parque) es facilísimo, como «a piece of cake» del día 15.",
+      "«An uphill battle» es una batalla cuesta arriba; «no picnic» es nada fácil: «Moving house is no picnic».",
+      "El francés «c'est pas sorcier» (no es brujería) es no es complicado, como «no tiene ciencia»."
+     ],
+     "q": "¿Qué te costó muchísimo al principio y ahora es un paseo?",
+     "c": "Califica hoy tres tareas como «a walk in the park», «no picnic» o «an uphill battle»."
+    },
+    "fr": {
+     "t": "Tâches faciles et difficiles",
+     "g": "Décrire des tâches faciles ou difficiles avec des expressions vivantes.",
+     "p": [
+      "« A walk in the park » (une promenade dans le parc) veut dire très facile, comme « a piece of cake » du jour 15.",
+      "« An uphill battle » est un combat difficile ; « no picnic » veut dire pas une partie de plaisir : « Moving house is no picnic. »",
+      "« C'est pas sorcier » veut dire ce n'est pas compliqué, comme l'anglais « it's not rocket science »."
+     ],
+     "q": "Qu'est-ce qui était un vrai combat au début et qui est maintenant une promenade de santé ?",
+     "c": "Classe aujourd'hui trois tâches en « a walk in the park », « no picnic » ou « an uphill battle »."
+    },
+    "it": {
+     "t": "Compiti facili e difficili",
+     "g": "Descrivere compiti facili o difficili con espressioni vivaci.",
+     "p": [
+      "«A walk in the park» (una passeggiata nel parco) vuol dire facilissimo, come «a piece of cake» del giorno 15.",
+      "«An uphill battle» è una battaglia in salita; «no picnic» vuol dire non è una passeggiata: «Moving house is no picnic».",
+      "Il francese «c'est pas sorcier» (non è stregoneria) vuol dire non è complicato, non ci vuole un genio."
+     ],
+     "q": "Che cosa all'inizio era una battaglia in salita e ora è una passeggiata?",
+     "c": "Oggi valuta tre compiti come «a walk in the park», «no picnic» o «an uphill battle»."
+    },
+    "pt": {
+     "t": "Tarefas fáceis e difíceis",
+     "g": "Descrever tarefas fáceis ou difíceis com expressões vivas.",
+     "p": [
+      "«A walk in the park» (um passeio no parque) é facílimo, como «a piece of cake» do dia 15.",
+      "«An uphill battle» é uma luta a subir; «no picnic» é nada fácil: «Moving house is no picnic».",
+      "O francês «c'est pas sorcier» (não é bruxaria) é não é complicado, não é nenhum bicho de sete cabeças."
+     ],
+     "q": "O que foi uma luta ao início e agora é canja?",
+     "c": "Classifica hoje três tarefas como «a walk in the park», «no picnic» ou «an uphill battle»."
+    },
+    "pt_BR": {
+     "t": "Tarefas fáceis e difíceis",
+     "g": "Descrever tarefas fáceis ou difíceis com expressões animadas.",
+     "p": [
+      "“A walk in the park” (um passeio no parque) é moleza, como “a piece of cake” do dia 15.",
+      "“An uphill battle” é uma batalha ladeira acima; “no picnic” é nada fácil: “Moving house is no picnic”.",
+      "O francês “c'est pas sorcier” (não é bruxaria) é não é nenhum bicho de sete cabeças."
+     ],
+     "q": "O que foi uma batalha no começo e hoje é moleza?",
+     "c": "Classifique hoje três tarefas como “a walk in the park”, “no picnic” ou “an uphill battle”."
+    }
+   }
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Starting things",
+     "g": "Talk about starting projects with common expressions.",
+     "p": [
+      "“Kick off” means to start, from football: “Let's kick off the meeting with some good news.”",
+      "“Get the ball rolling” means to take the first step so things start moving.",
+      "“From scratch” means from the very beginning, with nothing ready; Spanish says “partir de cero”, to start from zero."
+     ],
+     "q": "Have you ever built or cooked something completely from scratch?",
+     "c": "Get the ball rolling today on one small thing you have been postponing."
+    },
+    "de": {
+     "t": "Dinge anfangen",
+     "g": "Mit gängigen Ausdrücken über den Start von Projekten sprechen.",
+     "p": [
+      "„Kick off“ heißt anfangen, aus dem Fußball wie der Anstoß: „Let's kick off the meeting with some good news.“",
+      "„Get the ball rolling“ heißt, den Stein ins Rollen bringen, den ersten Schritt machen.",
+      "„From scratch“ heißt bei null anfangen, ganz von vorn; Spanisch sagt „partir de cero“."
+     ],
+     "q": "Hast du schon einmal etwas ganz von null an gebaut oder gekocht?",
+     "c": "Bring heute bei einer kleinen Sache, die du aufgeschoben hast, den Stein ins Rollen."
+    },
+    "es": {
+     "t": "Empezar cosas",
+     "g": "Hablar de empezar proyectos con expresiones comunes.",
+     "p": [
+      "«Kick off» (sacar de centro) es empezar, del fútbol: «Let's kick off the meeting with some good news».",
+      "«Get the ball rolling» (poner la pelota a rodar) es dar el primer paso para que algo arranque.",
+      "«From scratch» es desde el principio, sin nada hecho; en español decimos «partir de cero»."
+     ],
+     "q": "¿Alguna vez has hecho o cocinado algo partiendo de cero?",
+     "c": "Pon hoy en marcha una cosa pequeña que llevas tiempo aplazando."
+    },
+    "fr": {
+     "t": "Commencer",
+     "g": "Parler du lancement d'un projet avec des expressions courantes.",
+     "p": [
+      "« Kick off » (donner le coup d'envoi) veut dire commencer, comme au football : « Let's kick off the meeting with some good news. »",
+      "« Get the ball rolling » (faire rouler la balle) veut dire lancer le mouvement, faire le premier pas.",
+      "« From scratch » veut dire partir de zéro ; l'espagnol dit « partir de cero »."
+     ],
+     "q": "As-tu déjà construit ou cuisiné quelque chose en partant de zéro ?",
+     "c": "Lance aujourd'hui une petite chose que tu repousses depuis un moment."
+    },
+    "it": {
+     "t": "Iniziare le cose",
+     "g": "Parlare dell'avvio di un progetto con espressioni comuni.",
+     "p": [
+      "«Kick off» (dare il calcio d'inizio) vuol dire cominciare, come nel calcio: «Let's kick off the meeting with some good news».",
+      "«Get the ball rolling» (far rotolare la palla) vuol dire fare il primo passo e mettere in moto le cose.",
+      "«From scratch» vuol dire partire da zero; lo spagnolo dice «partir de cero»."
+     ],
+     "q": "Hai mai costruito o cucinato qualcosa partendo da zero?",
+     "c": "Oggi metti in moto una piccola cosa che rimandi da tempo."
+    },
+    "pt": {
+     "t": "Começar coisas",
+     "g": "Falar do arranque de projetos com expressões comuns.",
+     "p": [
+      "«Kick off» (dar o pontapé de saída) é começar, como no futebol: «Let's kick off the meeting with some good news».",
+      "«Get the ball rolling» (pôr a bola a rolar) é dar o primeiro passo para as coisas andarem.",
+      "«From scratch» é começar do zero, sem nada feito; o espanhol diz «partir de cero»."
+     ],
+     "q": "Já construíste ou cozinhaste alguma coisa completamente do zero?",
+     "c": "Põe hoje a bola a rolar numa coisa pequena que andas a adiar."
+    },
+    "pt_BR": {
+     "t": "Começar as coisas",
+     "g": "Falar do começo de projetos com expressões comuns.",
+     "p": [
+      "“Kick off” (dar o pontapé inicial) é começar, como no futebol: “Let's kick off the meeting with some good news”.",
+      "“Get the ball rolling” (botar a bola para rolar) é dar o primeiro passo para as coisas andarem.",
+      "“From scratch” é começar do zero, sem nada pronto; o espanhol diz “partir de cero”."
+     ],
+     "q": "Você já construiu ou cozinhou algo totalmente do zero?",
+     "c": "Bote hoje a bola para rolar numa coisinha que você vem adiando."
+    }
+   }
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Finishing things",
+     "g": "Talk about finishing tasks with common expressions.",
+     "p": [
+      "“Wrap up” means to finish: “Let's wrap up the meeting in five minutes.”",
+      "“Call it a day” means to stop working for now: “We've done enough, let's call it a day.”",
+      "“That's a wrap!” comes from filming and means it's done; French says “ça y est !” when something is finally finished."
+     ],
+     "q": "How do you like to celebrate when you finish a big task?",
+     "c": "At the end of today, say “let's call it a day” or “that's a wrap!” and do something relaxing."
+    },
+    "de": {
+     "t": "Dinge abschließen",
+     "g": "Mit gängigen Ausdrücken über das Beenden von Aufgaben sprechen.",
+     "p": [
+      "„Wrap up“ heißt abschließen: „Let's wrap up the meeting in five minutes.“",
+      "„Call it a day“ heißt Feierabend machen: „We've done enough, let's call it a day.“",
+      "„That's a wrap!“ stammt vom Film und heißt, es ist im Kasten; Französisch sagt „ça y est !“, wenn etwas endlich fertig ist."
+     ],
+     "q": "Wie feierst du gern, wenn du eine große Aufgabe geschafft hast?",
+     "c": "Sag heute am Ende des Tages „let's call it a day“ oder „that's a wrap!“ und gönn dir etwas Entspannendes."
+    },
+    "es": {
+     "t": "Terminar cosas",
+     "g": "Hablar de terminar tareas con expresiones comunes.",
+     "p": [
+      "«Wrap up» (envolver) es terminar, cerrar: «Let's wrap up the meeting in five minutes».",
+      "«Call it a day» (llamarlo un día) es dejarlo por hoy: «We've done enough, let's call it a day».",
+      "«That's a wrap!» viene del cine y significa se acabó; en francés se dice «ça y est !» cuando algo por fin está listo."
+     ],
+     "q": "¿Cómo te gusta celebrar cuando terminas una tarea grande?",
+     "c": "Al final de hoy, di «let's call it a day» o «that's a wrap!» y haz algo relajante."
+    },
+    "fr": {
+     "t": "Finir les choses",
+     "g": "Parler de la fin d'une tâche avec des expressions courantes.",
+     "p": [
+      "« Wrap up » (emballer) veut dire boucler, terminer : « Let's wrap up the meeting in five minutes. »",
+      "« Call it a day » veut dire s'arrêter là pour aujourd'hui : « We've done enough, let's call it a day. »",
+      "« That's a wrap! » vient du cinéma et veut dire c'est dans la boîte ; en français, on dit « ça y est ! » quand c'est enfin fini."
+     ],
+     "q": "Comment aimes-tu fêter la fin d'une grosse tâche ?",
+     "c": "Ce soir, dis « let's call it a day » ou « ça y est ! » et fais quelque chose de reposant."
+    },
+    "it": {
+     "t": "Finire le cose",
+     "g": "Parlare della fine di un compito con espressioni comuni.",
+     "p": [
+      "«Wrap up» (impacchettare) vuol dire concludere: «Let's wrap up the meeting in five minutes».",
+      "«Call it a day» vuol dire chiudere qui per oggi: «We've done enough, let's call it a day».",
+      "«That's a wrap!» viene dal cinema e vuol dire è fatta; il francese dice «ça y est !» quando qualcosa è finalmente finito."
+     ],
+     "q": "Come ti piace festeggiare quando finisci un compito importante?",
+     "c": "Alla fine di oggi di' «let's call it a day» o «that's a wrap!» e fai qualcosa di rilassante."
+    },
+    "pt": {
+     "t": "Terminar coisas",
+     "g": "Falar do fim de tarefas com expressões comuns.",
+     "p": [
+      "«Wrap up» (embrulhar) é concluir, fechar: «Let's wrap up the meeting in five minutes».",
+      "«Call it a day» é dar o dia por terminado: «We've done enough, let's call it a day».",
+      "«That's a wrap!» vem do cinema e quer dizer está feito; o francês diz «ça y est !» quando algo fica finalmente pronto."
+     ],
+     "q": "Como gostas de celebrar quando acabas uma tarefa grande?",
+     "c": "No fim do dia de hoje, diz «let's call it a day» ou «that's a wrap!» e faz algo relaxante."
+    },
+    "pt_BR": {
+     "t": "Terminar as coisas",
+     "g": "Falar do fim de tarefas com expressões comuns.",
+     "p": [
+      "“Wrap up” (embrulhar) é encerrar, fechar: “Let's wrap up the meeting in five minutes”.",
+      "“Call it a day” é encerrar o expediente por hoje: “We've done enough, let's call it a day”.",
+      "“That's a wrap!” vem do cinema e quer dizer está feito; o francês diz “ça y est !” quando algo fica pronto, enfim."
+     ],
+     "q": "Como você gosta de comemorar quando termina uma tarefa grande?",
+     "c": "No fim de hoje, diga “let's call it a day” ou “that's a wrap!” e faça algo relaxante."
+    }
+   }
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Trying hard",
+     "g": "Praise effort with expressions about trying your best.",
+     "p": [
+      "“Go the extra mile” means doing more than expected: “The waiter went the extra mile to find us a table.”",
+      "“Give it your all” means putting in all your energy; “pull out all the stops” means using every possible effort.",
+      "Spanish “dejarse la piel” (to leave your skin) means to give absolutely everything to something."
+     ],
+     "q": "Who is someone you know who always goes the extra mile?",
+     "c": "Go the extra mile for someone today with one small, kind extra effort."
+    },
+    "de": {
+     "t": "Sich anstrengen",
+     "g": "Einsatz mit Ausdrücken über das Beste-Geben loben.",
+     "p": [
+      "„Go the extra mile“ heißt, mehr tun als erwartet: „The waiter went the extra mile to find us a table.“",
+      "„Give it your all“ heißt, alles geben; „pull out all the stops“ heißt, alle Register ziehen.",
+      "Spanisch „dejarse la piel“ (sich die Haut lassen) heißt, sich voll reinhängen, alles geben."
+     ],
+     "q": "Wen kennst du, der immer die Extrameile geht?",
+     "c": "Geh heute für jemanden die Extrameile, mit einer kleinen, netten Zusatzmühe."
+    },
+    "es": {
+     "t": "Esforzarse",
+     "g": "Elogiar el esfuerzo con expresiones sobre dar lo mejor de uno.",
+     "p": [
+      "«Go the extra mile» (recorrer la milla extra) es hacer más de lo esperado: «The waiter went the extra mile to find us a table».",
+      "«Give it your all» es darlo todo; «pull out all the stops» es tirar la casa por la ventana en esfuerzo, no escatimar.",
+      "«Dejarse la piel» es dar absolutamente todo por algo."
+     ],
+     "q": "¿Quién conoces que siempre hace más de lo que le piden?",
+     "c": "Haz hoy un esfuerzo extra, pequeño y amable, por alguien."
+    },
+    "fr": {
+     "t": "Faire de son mieux",
+     "g": "Saluer l'effort avec des expressions pour donner le meilleur de soi.",
+     "p": [
+      "« Go the extra mile » (faire le kilomètre de plus) = en faire plus que prévu : « The waiter went the extra mile to find us a table. »",
+      "« Give it your all » veut dire tout donner ; « pull out all the stops » veut dire mettre le paquet.",
+      "L'espagnol « dejarse la piel » (y laisser sa peau) veut dire se donner à fond."
+     ],
+     "q": "Qui connais-tu qui en fait toujours plus que prévu ?",
+     "c": "Fais aujourd'hui un petit effort en plus, gentil, pour quelqu'un."
+    },
+    "it": {
+     "t": "Impegnarsi",
+     "g": "Lodare l'impegno con espressioni sul dare il massimo.",
+     "p": [
+      "«Go the extra mile» (fare il miglio in più) vuol dire fare più del dovuto: «The waiter went the extra mile to find us a table».",
+      "«Give it your all» vuol dire dare tutto; «pull out all the stops» vuol dire fare di tutto, mettercela tutta.",
+      "Lo spagnolo «dejarse la piel» (lasciarci la pelle) vuol dire dare l'anima per qualcosa."
+     ],
+     "q": "Chi conosci che fa sempre più del dovuto?",
+     "c": "Oggi fai per qualcuno un piccolo sforzo in più, gentile."
+    },
+    "pt": {
+     "t": "Esforçar-se",
+     "g": "Elogiar o esforço com expressões sobre dar o máximo.",
+     "p": [
+      "«Go the extra mile» (fazer a milha extra) é fazer mais do que se espera: «The waiter went the extra mile to find us a table».",
+      "«Give it your all» é dar tudo; «pull out all the stops» é fazer das tripas coração, usar todos os meios.",
+      "O espanhol «dejarse la piel» (deixar lá a pele) é dar tudo por alguma coisa."
+     ],
+     "q": "Quem conheces que faz sempre mais do que lhe pedem?",
+     "c": "Faz hoje um pequeno esforço extra e simpático por alguém."
+    },
+    "pt_BR": {
+     "t": "Se esforçar",
+     "g": "Elogiar o esforço com expressões sobre dar o seu melhor.",
+     "p": [
+      "“Go the extra mile” (andar a milha extra) é fazer mais do que o esperado: “The waiter went the extra mile to find us a table”.",
+      "“Give it your all” é dar tudo de si; “pull out all the stops” é não medir esforços.",
+      "O espanhol “dejarse la piel” (deixar a pele) é dar o sangue por alguma coisa."
+     ],
+     "q": "Quem você conhece que sempre faz mais do que pedem?",
+     "c": "Faça hoje um pequeno esforço extra e gentil por alguém."
+    }
+   }
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Giving up",
+     "g": "Talk about giving up or stopping with well-known expressions.",
+     "p": [
+      "“Throw in the towel” means to give up, from boxing, where a coach throws a towel into the ring to stop a fight.",
+      "French uses a sponge: “jeter l'éponge”; Spanish uses the towel: “tirar la toalla”.",
+      "“Call it quits” means to agree to stop something; stopping can be wise, and you can always try again later."
+     ],
+     "q": "Is there something you nearly threw in the towel on but are glad you continued?",
+     "c": "Think of one goal you want to keep going with and write one reason not to throw in the towel."
+    },
+    "de": {
+     "t": "Aufgeben",
+     "g": "Mit bekannten Ausdrücken über Aufgeben oder Aufhören sprechen.",
+     "p": [
+      "„Throw in the towel“ heißt, das Handtuch werfen, aus dem Boxen, wo der Trainer so den Kampf beendet.",
+      "Französisch nimmt einen Schwamm: „jeter l'éponge“; Spanisch das Handtuch: „tirar la toalla“.",
+      "„Call it quits“ heißt, gemeinsam aufhören; Aufhören kann klug sein, und später kann man es wieder versuchen."
+     ],
+     "q": "Gibt es etwas, bei dem du fast das Handtuch geworfen hättest und froh bist, weitergemacht zu haben?",
+     "c": "Denk an ein Ziel, an dem du dranbleiben willst, und schreib einen Grund auf, nicht das Handtuch zu werfen."
+    },
+    "es": {
+     "t": "Rendirse",
+     "g": "Hablar de rendirse o parar con expresiones conocidas.",
+     "p": [
+      "«Throw in the towel» es tirar la toalla, del boxeo, donde el entrenador la lanza al ring para parar el combate.",
+      "El francés usa una esponja: «jeter l'éponge»; en español decimos «tirar la toalla».",
+      "«Call it quits» es acordar dejarlo; parar puede ser sensato y siempre se puede volver a intentar."
+     ],
+     "q": "¿Hay algo en lo que casi tiraste la toalla y te alegras de haber seguido?",
+     "c": "Piensa en una meta con la que quieres seguir y escribe un motivo para no tirar la toalla."
+    },
+    "fr": {
+     "t": "Abandonner",
+     "g": "Parler d'abandonner ou d'arrêter avec des expressions connues.",
+     "p": [
+      "« Throw in the towel » (jeter la serviette) veut dire abandonner, comme dans la boxe où l'entraîneur arrête le combat.",
+      "En français on jette une éponge : « jeter l'éponge » ; en espagnol une serviette : « tirar la toalla ».",
+      "« Call it quits » veut dire décider d'arrêter ; s'arrêter peut être sage, et on peut toujours réessayer plus tard."
+     ],
+     "q": "Y a-t-il quelque chose où tu as failli jeter l'éponge et où tu es content d'avoir continué ?",
+     "c": "Pense à un objectif que tu veux poursuivre et note une raison de ne pas jeter l'éponge."
+    },
+    "it": {
+     "t": "Arrendersi",
+     "g": "Parlare di arrendersi o smettere con espressioni famose.",
+     "p": [
+      "«Throw in the towel» vuol dire gettare la spugna, dalla boxe, dove l'allenatore lancia l'asciugamano sul ring.",
+      "Il francese usa la spugna, come noi: «jeter l'éponge»; lo spagnolo l'asciugamano: «tirar la toalla».",
+      "«Call it quits» vuol dire decidere di smettere; fermarsi può essere saggio e si può sempre riprovare."
+     ],
+     "q": "C'è qualcosa in cui stavi per gettare la spugna e sei contento di aver continuato?",
+     "c": "Pensa a un obiettivo che vuoi portare avanti e scrivi un motivo per non gettare la spugna."
+    },
+    "pt": {
+     "t": "Desistir",
+     "g": "Falar de desistir ou parar com expressões conhecidas.",
+     "p": [
+      "«Throw in the towel» é atirar a toalha ao chão, do boxe, onde o treinador a lança para o ringue para parar o combate.",
+      "O francês usa uma esponja: «jeter l'éponge»; o espanhol a toalha: «tirar la toalla».",
+      "«Call it quits» é decidir parar; parar pode ser sensato, e há sempre a hipótese de tentar outra vez."
+     ],
+     "q": "Há alguma coisa em que quase atiraste a toalha ao chão e estás contente por teres continuado?",
+     "c": "Pensa num objetivo em que queres continuar e escreve uma razão para não atirar a toalha ao chão."
+    },
+    "pt_BR": {
+     "t": "Desistir",
+     "g": "Falar de desistir ou parar com expressões conhecidas.",
+     "p": [
+      "“Throw in the towel” é jogar a toalha, do boxe, onde o técnico joga a toalha no ringue para parar a luta.",
+      "O francês usa uma esponja: “jeter l'éponge”; o espanhol a toalha: “tirar la toalla”.",
+      "“Call it quits” é decidir parar; parar pode ser sensato, e sempre dá para tentar de novo depois."
+     ],
+     "q": "Tem algo em que você quase jogou a toalha e ficou feliz por ter continuado?",
+     "c": "Pense numa meta em que quer continuar e escreva um motivo para não jogar a toalha."
+    }
+   }
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Talking a lot",
+     "g": "Describe chatty people with friendly expressions.",
+     "p": [
+      "A “chatterbox” is someone who loves to talk; it is usually affectionate.",
+      "“Talk someone's ear off” means to talk to them for a very long time: “My neighbour talked my ear off about her garden.”",
+      "“The gift of the gab” is a talent for speaking easily and persuasively; Portuguese says “ter lábia”."
+     ],
+     "q": "Are you more of a chatterbox or a good listener?",
+     "c": "Notice today who in your life has the gift of the gab, and tell them you like how they talk."
+    },
+    "de": {
+     "t": "Viel reden",
+     "g": "Gesprächige Menschen mit freundlichen Ausdrücken beschreiben.",
+     "p": [
+      "Eine „chatterbox“ ist eine Plaudertasche, jemand, der gern redet; meist liebevoll gemeint.",
+      "„Talk someone's ear off“ heißt, jemandem ein Ohr abkauen: „My neighbour talked my ear off about her garden.“",
+      "„The gift of the gab“ ist ein Talent zum gewandten Reden, ein gutes Mundwerk; Portugiesisch sagt „ter lábia“."
+     ],
+     "q": "Bist du eher Plaudertasche oder gute Zuhörerin bzw. guter Zuhörer?",
+     "c": "Achte heute darauf, wer in deinem Umfeld „the gift of the gab“ hat, und sag ihm, dass du seine Art zu reden magst."
+    },
+    "es": {
+     "t": "Hablar mucho",
+     "g": "Describir a la gente parlanchina con expresiones amables.",
+     "p": [
+      "Un «chatterbox» es un parlanchín, alguien a quien le encanta hablar; suele decirse con cariño.",
+      "«Talk someone's ear off» es dar la lata hablando, no parar de hablar: «My neighbour talked my ear off about her garden».",
+      "«The gift of the gab» es tener labia, el don de hablar con soltura; el portugués dice «ter lábia»."
+     ],
+     "q": "¿Eres más parlanchín o más de escuchar?",
+     "c": "Fíjate hoy en quién de tu entorno tiene labia y dile que te gusta cómo habla."
+    },
+    "fr": {
+     "t": "Parler beaucoup",
+     "g": "Décrire les bavards avec des expressions sympathiques.",
+     "p": [
+      "Un « chatterbox » est un moulin à paroles, quelqu'un qui adore parler ; c'est souvent affectueux.",
+      "« Talk someone's ear off » veut dire saouler quelqu'un de paroles : « My neighbour talked my ear off about her garden. »",
+      "« The gift of the gab » veut dire avoir du bagou, la parole facile ; le portugais dit « ter lábia »."
+     ],
+     "q": "Es-tu plutôt bavard ou plutôt à l'écoute ?",
+     "c": "Remarque aujourd'hui qui, autour de toi, a du bagou, et dis-lui que tu aimes sa façon de parler."
+    },
+    "it": {
+     "t": "Parlare tanto",
+     "g": "Descrivere le persone chiacchierone con espressioni simpatiche.",
+     "p": [
+      "Un «chatterbox» è un chiacchierone, qualcuno che adora parlare; di solito è affettuoso.",
+      "«Talk someone's ear off» vuol dire fare una testa così a qualcuno di chiacchiere: «My neighbour talked my ear off about her garden».",
+      "«The gift of the gab» è la parlantina, il dono di parlare con facilità; il portoghese dice «ter lábia»."
+     ],
+     "q": "Sei più un chiacchierone o un buon ascoltatore?",
+     "c": "Oggi nota chi intorno a te ha la parlantina e digli che ti piace come parla."
+    },
+    "pt": {
+     "t": "Falar muito",
+     "g": "Descrever pessoas faladoras com expressões simpáticas.",
+     "p": [
+      "Um «chatterbox» é um tagarela, alguém que adora falar; costuma dizer-se com carinho.",
+      "«Talk someone's ear off» é dar cabo dos ouvidos a alguém de tanto falar: «My neighbour talked my ear off about her garden».",
+      "«The gift of the gab» é ter o dom da palavra, ter lábia, falar com facilidade e charme."
+     ],
+     "q": "És mais tagarela ou mais de ouvir?",
+     "c": "Repara hoje em quem à tua volta tem lábia e diz-lhe que gostas da maneira como fala."
+    },
+    "pt_BR": {
+     "t": "Falar muito",
+     "g": "Descrever gente falante com expressões simpáticas.",
+     "p": [
+      "Um “chatterbox” é um tagarela, alguém que adora falar; geralmente é carinhoso.",
+      "“Talk someone's ear off” é alugar o ouvido de alguém: “My neighbour talked my ear off about her garden”.",
+      "“The gift of the gab” é ter lábia, o dom de falar com facilidade e charme."
+     ],
+     "q": "Você é mais tagarela ou mais de ouvir?",
+     "c": "Repare hoje em quem ao seu redor tem lábia e diga que você curte o jeito como a pessoa fala."
+    }
+   }
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Keeping secrets",
+     "g": "Keep nice secrets, like surprises, with playful expressions.",
+     "p": [
+      "“Keep it under wraps” means to keep something secret for now: “The surprise party is under wraps until Friday.”",
+      "“Mum's the word” (mainly British) means I won't tell anyone; “mum” here means silent, as in “keep mum”.",
+      "French “motus et bouche cousue” (silence and sewn mouth) means not a word, my lips are sealed."
+     ],
+     "q": "What is the best surprise you ever kept under wraps?",
+     "c": "Plan a tiny surprise for someone and keep it under wraps until the right moment."
+    },
+    "de": {
+     "t": "Geheimnisse bewahren",
+     "g": "Schöne Geheimnisse wie Überraschungen mit verspielten Ausdrücken für sich behalten.",
+     "p": [
+      "„Keep it under wraps“ heißt, etwas vorerst geheim halten: „The surprise party is under wraps until Friday.“",
+      "„Mum's the word“ (vor allem britisch) heißt, ich verrate nichts; „mum“ bedeutet hier still, wie in „keep mum“.",
+      "Französisch „motus et bouche cousue“ (Schweigen und zugenähter Mund) heißt, kein Wort, meine Lippen sind versiegelt."
+     ],
+     "q": "Was war die schönste Überraschung, die du je geheim gehalten hast?",
+     "c": "Plane eine kleine Überraschung für jemanden und halte sie bis zum richtigen Moment geheim."
+    },
+    "es": {
+     "t": "Guardar secretos",
+     "g": "Guardar secretos bonitos, como sorpresas, con expresiones divertidas.",
+     "p": [
+      "«Keep it under wraps» es mantener algo en secreto por ahora: «The surprise party is under wraps until Friday».",
+      "«Mum's the word» (sobre todo británico) es soy una tumba; «mum» aquí significa callado, como en «keep mum».",
+      "El francés «motus et bouche cousue» (silencio y boca cosida) es ni una palabra, punto en boca."
+     ],
+     "q": "¿Cuál es la mejor sorpresa que has mantenido en secreto?",
+     "c": "Prepara una pequeña sorpresa para alguien y guárdala en secreto hasta el momento justo."
+    },
+    "fr": {
+     "t": "Garder un secret",
+     "g": "Garder de jolis secrets, comme des surprises, avec des expressions amusantes.",
+     "p": [
+      "« Keep it under wraps » veut dire garder quelque chose secret pour l'instant : « The surprise party is under wraps until Friday. »",
+      "« Mum's the word » (surtout britannique) veut dire je ne dirai rien ; « mum » signifie ici silencieux, comme dans « keep mum ».",
+      "« Motus et bouche cousue » veut dire pas un mot, je serai muet comme une tombe."
+     ],
+     "q": "Quelle est la plus belle surprise que tu as gardée secrète ?",
+     "c": "Prépare une petite surprise pour quelqu'un et garde-la secrète jusqu'au bon moment."
+    },
+    "it": {
+     "t": "Mantenere i segreti",
+     "g": "Custodire bei segreti, come le sorprese, con espressioni divertenti.",
+     "p": [
+      "«Keep it under wraps» vuol dire tenere qualcosa segreto per ora: «The surprise party is under wraps until Friday».",
+      "«Mum's the word» (soprattutto britannico) vuol dire acqua in bocca; «mum» qui significa zitto, come in «keep mum».",
+      "Il francese «motus et bouche cousue» (silenzio e bocca cucita) vuol dire bocca cucita, non dirò una parola."
+     ],
+     "q": "Qual è la sorpresa più bella che hai tenuto segreta?",
+     "c": "Prepara una piccola sorpresa per qualcuno e tienila segreta fino al momento giusto."
+    },
+    "pt": {
+     "t": "Guardar segredos",
+     "g": "Guardar segredos bons, como surpresas, com expressões divertidas.",
+     "p": [
+      "«Keep it under wraps» é manter algo em segredo por agora: «The surprise party is under wraps until Friday».",
+      "«Mum's the word» (sobretudo britânico) é bico calado; «mum» aqui quer dizer calado, como em «keep mum».",
+      "O francês «motus et bouche cousue» (silêncio e boca cosida) é nem uma palavra, sou um túmulo."
+     ],
+     "q": "Qual foi a melhor surpresa que alguma vez guardaste em segredo?",
+     "c": "Prepara uma pequena surpresa para alguém e guarda-a em segredo até ao momento certo."
+    },
+    "pt_BR": {
+     "t": "Guardar segredos",
+     "g": "Guardar segredos bons, como surpresas, com expressões divertidas.",
+     "p": [
+      "“Keep it under wraps” é manter algo em segredo por enquanto: “The surprise party is under wraps until Friday”.",
+      "“Mum's the word” (mais britânico) é bico calado; “mum” aqui quer dizer calado, como em “keep mum”.",
+      "O francês “motus et bouche cousue” (silêncio e boca costurada) é nem uma palavra, sou um túmulo."
+     ],
+     "q": "Qual foi a melhor surpresa que você já guardou em segredo?",
+     "c": "Prepare uma pequena surpresa para alguém e guarde segredo até o momento certo."
+    }
+   }
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Gossip expressions",
+     "g": "Recognise playful expressions about news and gossip, and keep it kind.",
+     "p": [
+      "“I heard it through the grapevine” means I heard it informally, from person to person; also a famous song title.",
+      "“Spill the tea” is modern slang for share the gossip or the news; “a little bird told me” (day 28) hides your source.",
+      "Spanish “cotilleo” means gossip, chit-chat about others; the friendly rule: share good news, not hurtful rumours."
+     ],
+     "q": "What good news did you last hear through the grapevine?",
+     "c": "Spill the tea today on some happy news of your own, like a small win or a fun plan."
+    },
+    "de": {
+     "t": "Klatsch und Tratsch",
+     "g": "Verspielte Ausdrücke über Neuigkeiten und Tratsch erkennen und freundlich bleiben.",
+     "p": [
+      "„I heard it through the grapevine“ heißt, ich habe es über Umwege gehört, von Mund zu Mund; auch ein berühmter Songtitel.",
+      "„Spill the tea“ ist moderner Slang für „erzähl den neuesten Klatsch“; „a little bird told me“ (Tag 28) verschweigt die Quelle.",
+      "Spanisch „cotilleo“ heißt Tratsch; die nette Regel: gute Neuigkeiten teilen, keine verletzenden Gerüchte."
+     ],
+     "q": "Welche gute Nachricht hast du zuletzt über Umwege erfahren?",
+     "c": "Erzähl heute deine eigene schöne Neuigkeit, „spill the tea“, etwa einen kleinen Erfolg oder einen lustigen Plan."
+    },
+    "es": {
+     "t": "Expresiones de cotilleo",
+     "g": "Reconocer expresiones divertidas sobre noticias y cotilleos, siempre con buena intención.",
+     "p": [
+      "«I heard it through the grapevine» (lo oí por la vid) es me enteré de boca en boca; también es una canción famosa.",
+      "«Spill the tea» (derrama el té) es jerga moderna para cuéntame el chisme; «a little bird told me» (día 28) oculta la fuente.",
+      "«Cotilleo» es hablar de los demás; la regla amable: compartir buenas noticias, no rumores que hagan daño."
+     ],
+     "q": "¿Qué buena noticia te llegó la última vez de boca en boca?",
+     "c": "Cuenta hoy una buena noticia tuya, «spill the tea», como un pequeño logro o un plan divertido."
+    },
+    "fr": {
+     "t": "Expressions du commérage",
+     "g": "Reconnaître des expressions amusantes sur les nouvelles et les potins, en restant bienveillant.",
+     "p": [
+      "« I heard it through the grapevine » (je l'ai entendu par la vigne) = je l'ai su par le bouche-à-oreille ; aussi une chanson célèbre.",
+      "« Spill the tea » est de l'argot récent pour balance les potins ; « a little bird told me » (jour 28) cache la source.",
+      "L'espagnol « cotilleo » veut dire commérage ; la règle sympa : partager les bonnes nouvelles, pas les rumeurs blessantes."
+     ],
+     "q": "Quelle bonne nouvelle as-tu apprise récemment par le bouche-à-oreille ?",
+     "c": "Partage aujourd'hui une bonne nouvelle à toi, « spill the tea », comme une petite victoire ou un projet sympa."
+    },
+    "it": {
+     "t": "Espressioni sul pettegolezzo",
+     "g": "Riconoscere espressioni divertenti su notizie e pettegolezzi, restando gentili.",
+     "p": [
+      "«I heard it through the grapevine» (l'ho sentito dalla vite) vuol dire l'ho saputo col passaparola; è anche una canzone famosa.",
+      "«Spill the tea» (rovescia il tè) è slang moderno per racconta il gossip; «a little bird told me» (giorno 28) nasconde la fonte.",
+      "Lo spagnolo «cotilleo» vuol dire pettegolezzo; la regola gentile: condividere belle notizie, non voci che feriscono."
+     ],
+     "q": "Quale bella notizia hai saputo l'ultima volta col passaparola?",
+     "c": "Oggi racconta una tua bella notizia, «spill the tea», come un piccolo successo o un piano divertente."
+    },
+    "pt": {
+     "t": "Expressões de mexerico",
+     "g": "Reconhecer expressões divertidas sobre novidades e mexericos, sempre com boa intenção.",
+     "p": [
+      "«I heard it through the grapevine» (ouvi pela videira) é soube de boca em boca; é também o título de uma canção famosa.",
+      "«Spill the tea» (entorna o chá) é calão moderno para conta lá a novidade; «a little bird told me» (dia 28) esconde a fonte.",
+      "O espanhol «cotilleo» é mexerico; a regra simpática: partilhar boas notícias, não boatos que magoam."
+     ],
+     "q": "Que boa notícia soubeste da última vez de boca em boca?",
+     "c": "Conta hoje uma boa notícia tua, «spill the tea», como uma pequena vitória ou um plano divertido."
+    },
+    "pt_BR": {
+     "t": "Expressões de fofoca",
+     "g": "Reconhecer expressões divertidas sobre novidades e fofocas, sempre do bem.",
+     "p": [
+      "“I heard it through the grapevine” (ouvi pela videira) é fiquei sabendo de boca em boca; também é uma música famosa.",
+      "“Spill the tea” (derrama o chá) é gíria moderna para conta a fofoca; “a little bird told me” (dia 28) esconde a fonte.",
+      "O espanhol “cotilleo” é fofoca; a regra legal: espalhar notícia boa, não boato que machuca."
+     ],
+     "q": "Que notícia boa você ficou sabendo de boca em boca da última vez?",
+     "c": "Conte hoje uma notícia boa sua, “spill the tea”, como uma pequena conquista ou um plano divertido."
+    }
+   }
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Telling the truth",
+     "g": "Show that what you say is true and reliable with casual expressions.",
+     "p": [
+      "“Straight from the horse's mouth” means from the person who knows best: “I heard it straight from the horse's mouth: the trip is on!”",
+      "“No kidding!” can mean “really?!” or “I'm serious”; “honest!” or “honestly!” stresses that you are telling the truth.",
+      "These are friendly ways to add trust to news, very different from gossip you heard through the grapevine."
+     ],
+     "q": "Who is your go-to person for news “straight from the horse's mouth”?",
+     "c": "Share one true, fun fact about yourself today and finish with “honest!”."
+    },
+    "de": {
+     "t": "Die Wahrheit sagen",
+     "g": "Mit lockeren Ausdrücken zeigen, dass etwas stimmt und verlässlich ist.",
+     "p": [
+      "„Straight from the horse's mouth“ (direkt aus dem Maul des Pferdes) heißt, aus erster Hand.",
+      "„No kidding!“ kann „echt jetzt?!“ oder „im Ernst“ bedeuten; „honest!“ oder „honestly!“ heißt, ganz ehrlich.",
+      "Das sind freundliche Wege, einer Nachricht Vertrauen zu geben, ganz anders als Tratsch über Umwege."
+     ],
+     "q": "Wer ist für dich die Quelle für Neuigkeiten aus erster Hand?",
+     "c": "Erzähl heute eine wahre, lustige Tatsache über dich und schließ mit „honest!“ oder „ganz ehrlich!“."
+    },
+    "es": {
+     "t": "Decir la verdad",
+     "g": "Mostrar que lo que dices es cierto y fiable con expresiones informales.",
+     "p": [
+      "«Straight from the horse's mouth» (directo de la boca del caballo) es de primera mano, de quien mejor lo sabe.",
+      "«No kidding!» puede ser «¿en serio?» o «lo digo en serio»; «honest!» o «honestly!» es te lo juro, de verdad.",
+      "Son formas amables de dar confianza a una noticia, muy distintas del cotilleo de boca en boca."
+     ],
+     "q": "¿Quién es tu persona de referencia para noticias de primera mano?",
+     "c": "Comparte hoy un dato real y divertido sobre ti y termina con «honest!» o «¡de verdad!»."
+    },
+    "fr": {
+     "t": "Dire la vérité",
+     "g": "Montrer que ce qu'on dit est vrai et fiable avec des expressions familières.",
+     "p": [
+      "« Straight from the horse's mouth » (tout droit de la bouche du cheval) veut dire de source sûre, de première main.",
+      "« No kidding! » peut vouloir dire « sans blague ?! » ou « je suis sérieux » ; « honest! » ou « honestly! » veut dire je te jure.",
+      "Ce sont des façons sympas de donner confiance à une nouvelle, bien loin des potins du bouche-à-oreille."
+     ],
+     "q": "Qui est ta source de référence pour les nouvelles de première main ?",
+     "c": "Partage aujourd'hui un fait vrai et amusant sur toi et termine par « honest! » ou « promis ! »."
+    },
+    "it": {
+     "t": "Dire la verità",
+     "g": "Mostrare che ciò che dici è vero e affidabile con espressioni informali.",
+     "p": [
+      "«Straight from the horse's mouth» (direttamente dalla bocca del cavallo) vuol dire di prima mano, da fonte sicura.",
+      "«No kidding!» può voler dire «davvero?!» o «dico sul serio»; «honest!» o «honestly!» vuol dire giuro, davvero.",
+      "Sono modi simpatici per dare fiducia a una notizia, ben diversi dal passaparola."
+     ],
+     "q": "Chi è la tua fonte di fiducia per le notizie di prima mano?",
+     "c": "Oggi condividi un fatto vero e divertente su di te e chiudi con «honest!» o «giuro!»."
+    },
+    "pt": {
+     "t": "Dizer a verdade",
+     "g": "Mostrar que o que dizes é verdade e fiável com expressões informais.",
+     "p": [
+      "«Straight from the horse's mouth» (diretamente da boca do cavalo) é em primeira mão, de fonte segura.",
+      "«No kidding!» pode querer dizer «a sério?!» ou «estou a falar a sério»; «honest!» ou «honestly!» é juro, palavra.",
+      "São formas simpáticas de dar confiança a uma notícia, bem diferentes de um mexerico de boca em boca."
+     ],
+     "q": "Quem é a tua fonte de confiança para notícias em primeira mão?",
+     "c": "Partilha hoje um facto verdadeiro e divertido sobre ti e termina com «honest!» ou «palavra!»."
+    },
+    "pt_BR": {
+     "t": "Falar a verdade",
+     "g": "Mostrar que o que você diz é verdade e confiável com expressões informais.",
+     "p": [
+      "“Straight from the horse's mouth” (direto da boca do cavalo) é em primeira mão, de fonte segura.",
+      "“No kidding!” pode ser “sério?!” ou “é sério”; “honest!” ou “honestly!” é juro, palavra.",
+      "São jeitos simpáticos de dar confiança a uma notícia, bem diferente de fofoca de boca em boca."
+     ],
+     "q": "Quem é sua fonte de confiança para notícias em primeira mão?",
+     "c": "Compartilhe hoje um fato verdadeiro e divertido sobre você e termine com “honest!” ou “palavra!”."
+    }
+   }
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: feelings and actions",
+     "g": "Review this month's expressions about emotions, effort, secrets and talk.",
+     "p": [
+      "Feelings: “over the moon”, “feeling blue”, “blow a fuse”, “dog-tired”, “snowed under”, “no way!”.",
+      "Effort: “get the ball rolling”, “go the extra mile”, “call it a day”, “don't throw in the towel”.",
+      "Talk and secrets: “chatterbox”, “mum's the word”, “through the grapevine”, “straight from the horse's mouth”."
+     ],
+     "q": "Which expression from this month describes your week best?",
+     "c": "Describe your day in four sentences using one expression about feelings, effort, secrets and talk."
+    },
+    "de": {
+     "t": "Rückblick: Gefühle und Taten",
+     "g": "Die Ausdrücke dieses Monats über Gefühle, Einsatz, Geheimnisse und Reden wiederholen.",
+     "p": [
+      "Gefühle: „over the moon“, „feeling blue“, „blow a fuse“, „hundemüde“, „snowed under“, „no way!“.",
+      "Einsatz: „get the ball rolling“, „go the extra mile“, „call it a day“, „nicht das Handtuch werfen“.",
+      "Reden und Geheimnisse: „chatterbox“, „mum's the word“, „through the grapevine“, „straight from the horse's mouth“."
+     ],
+     "q": "Welcher Ausdruck aus diesem Monat beschreibt deine Woche am besten?",
+     "c": "Beschreib deinen Tag in vier Sätzen mit je einem Ausdruck zu Gefühlen, Einsatz, Geheimnissen und Reden."
+    },
+    "es": {
+     "t": "Repaso: sentimientos y acciones",
+     "g": "Repasar las expresiones del mes sobre emociones, esfuerzo, secretos y charla.",
+     "p": [
+      "Sentimientos: «over the moon», «estar de bajón», «blow a fuse», «estar hecho polvo», «estar liado», «¡no me digas!».",
+      "Esfuerzo: «get the ball rolling», «dejarse la piel», «call it a day», «no tirar la toalla».",
+      "Charla y secretos: «chatterbox», «mum's the word», «through the grapevine», «straight from the horse's mouth»."
+     ],
+     "q": "¿Qué expresión de este mes describe mejor tu semana?",
+     "c": "Describe tu día en cuatro frases con una expresión de sentimientos, esfuerzo, secretos y charla."
+    },
+    "fr": {
+     "t": "Révision : émotions et actions",
+     "g": "Revoir les expressions du mois sur les émotions, l'effort, les secrets et la parole.",
+     "p": [
+      "Émotions : « être aux anges », « avoir le cafard », « être soupe au lait », « crevé », « snowed under », « sans blague ! ».",
+      "Effort : « get the ball rolling », « go the extra mile », « ça y est ! », « ne pas jeter l'éponge ».",
+      "Parole et secrets : « avoir du bagou », « motus et bouche cousue », « through the grapevine », « straight from the horse's mouth »."
+     ],
+     "q": "Quelle expression de ce mois décrit le mieux ta semaine ?",
+     "c": "Décris ta journée en quatre phrases avec une expression sur les émotions, l'effort, les secrets et la parole."
+    },
+    "it": {
+     "t": "Ripasso: emozioni e azioni",
+     "g": "Ripassare le espressioni del mese su emozioni, impegno, segreti e chiacchiere.",
+     "p": [
+      "Emozioni: «over the moon», «feeling blue», «blow a fuse», «dog-tired», «snowed under», «no way!».",
+      "Impegno: «get the ball rolling», «go the extra mile», «call it a day», «non gettare la spugna».",
+      "Chiacchiere e segreti: «chatterbox», «acqua in bocca», «through the grapevine», «straight from the horse's mouth»."
+     ],
+     "q": "Quale espressione di questo mese descrive meglio la tua settimana?",
+     "c": "Descrivi la tua giornata in quattro frasi con un'espressione su emozioni, impegno, segreti e chiacchiere."
+    },
+    "pt": {
+     "t": "Revisão: sentimentos e ações",
+     "g": "Rever as expressões do mês sobre emoções, esforço, segredos e conversa.",
+     "p": [
+      "Sentimentos: «estar nas suas sete quintas», «feeling blue», «blow a fuse», «estar de rastos», «snowed under», «no way!».",
+      "Esforço: «get the ball rolling», «go the extra mile», «call it a day», «não atirar a toalha ao chão».",
+      "Conversa e segredos: «ter lábia», «mum's the word», «through the grapevine», «straight from the horse's mouth»."
+     ],
+     "q": "Que expressão deste mês descreve melhor a tua semana?",
+     "c": "Descreve o teu dia em quatro frases com uma expressão sobre sentimentos, esforço, segredos e conversa."
+    },
+    "pt_BR": {
+     "t": "Revisão: sentimentos e ações",
+     "g": "Revisar as expressões do mês sobre emoções, esforço, segredos e papo.",
+     "p": [
+      "Sentimentos: “over the moon”, “estar pra baixo”, “blow a fuse”, “estar um caco”, “snowed under”, “no way!”.",
+      "Esforço: “get the ball rolling”, “go the extra mile”, “call it a day”, “não jogar a toalha”.",
+      "Papo e segredos: “ter lábia”, “mum's the word”, “through the grapevine”, “straight from the horse's mouth”."
+     ],
+     "q": "Que expressão deste mês descreve melhor a sua semana?",
+     "c": "Descreva seu dia em quatro frases com uma expressão sobre sentimentos, esforço, segredos e papo."
+    }
+   }
+  }
+ ]
+}

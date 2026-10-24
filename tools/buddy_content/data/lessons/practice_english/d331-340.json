@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_english",
+ "lessons": [
+  {
+   "d": 331,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Networking conversations",
+     "g": "Introduce yourself, find common ground and follow up after events.",
+     "p": [
+      "Open: Hi, I don't think we've met. I'm Ana. What brings you here? How do you know the host?",
+      "Find common ground: Oh, me too! That sounds interesting, how did you get into that? Ask open questions.",
+      "Close and follow up: It was great talking to you. Shall we connect online? Lovely to meet you, let's keep in touch."
+     ],
+     "q": "How do you usually start a conversation with someone new at an event or a party?",
+     "c": "Write a 30-second self-introduction for a networking event and one follow-up message."
+    },
+    "de": {
+     "t": "Networking-Gespräche",
+     "g": "Du stellst dich vor, findest Gemeinsamkeiten und bleibst nach Events in Kontakt.",
+     "p": [
+      "Einstieg: Hi, I don't think we've met. I'm Ana. What brings you here? How do you know the host?",
+      "Gemeinsamkeiten finden: Oh, me too! That sounds interesting, how did you get into that? Stell offene Fragen.",
+      "Abschluss und Kontakt: It was great talking to you. Shall we connect online? Lovely to meet you, let's keep in touch."
+     ],
+     "q": "Wie beginnst du normalerweise ein Gespräch mit jemand Neuem auf einem Event oder einer Feier?",
+     "c": "Schreib eine 30-Sekunden-Vorstellung für ein Networking-Event und eine Folgenachricht."
+    },
+    "es": {
+     "t": "Conversaciones de networking",
+     "g": "Preséntate, encuentra puntos en común y haz seguimiento tras los eventos.",
+     "p": [
+      "Empieza: Hi, I don't think we've met. I'm Ana. What brings you here? How do you know the host?",
+      "Busca puntos en común: Oh, me too! That sounds interesting, how did you get into that? Haz preguntas abiertas.",
+      "Cierra y sigue en contacto: It was great talking to you. Shall we connect online? Lovely to meet you, let's keep in touch."
+     ],
+     "q": "¿Cómo sueles empezar una conversación con alguien nuevo en un evento o una fiesta?",
+     "c": "Escribe una presentación de 30 segundos para un evento de networking y un mensaje de seguimiento."
+    },
+    "fr": {
+     "t": "Conversations de networking",
+     "g": "Présente-toi, trouve des points communs et garde le contact après un événement.",
+     "p": [
+      "Engager : Hi, I don't think we've met. I'm Ana. What brings you here? How do you know the host?",
+      "Trouver des points communs : Oh, me too! That sounds interesting, how did you get into that? Pose des questions ouvertes.",
+      "Conclure et relancer : It was great talking to you. Shall we connect online? Lovely to meet you, let's keep in touch."
+     ],
+     "q": "Comment engages-tu d'habitude la conversation avec quelqu'un de nouveau lors d'un événement ?",
+     "c": "Écris une présentation de 30 secondes pour un événement de networking et un message de suivi."
+    },
+    "it": {
+     "t": "Conversazioni di networking",
+     "g": "Presentati, trova punti in comune e resta in contatto dopo gli eventi.",
+     "p": [
+      "Aprire: Hi, I don't think we've met. I'm Ana. What brings you here? How do you know the host?",
+      "Trovare punti in comune: Oh, me too! That sounds interesting, how did you get into that? Fai domande aperte.",
+      "Chiudere e ricontattare: It was great talking to you. Shall we connect online? Lovely to meet you, let's keep in touch."
+     ],
+     "q": "Come inizi di solito una conversazione con una persona nuova a un evento o a una festa?",
+     "c": "Scrivi una presentazione di 30 secondi per un evento di networking e un messaggio di follow-up."
+    },
+    "pt": {
+     "t": "Conversas de networking",
+     "g": "Apresenta-te, encontra pontos em comum e mantém o contacto depois dos eventos.",
+     "p": [
+      "Começar: Hi, I don't think we've met. I'm Ana. What brings you here? How do you know the host?",
+      "Pontos em comum: Oh, me too! That sounds interesting, how did you get into that? Faz perguntas abertas.",
+      "Fechar e manter contacto: It was great talking to you. Shall we connect online? Lovely to meet you, let's keep in touch."
+     ],
+     "q": "Como costumas começar uma conversa com alguém novo num evento ou numa festa?",
+     "c": "Escreve uma apresentação de 30 segundos para um evento de networking e uma mensagem de seguimento."
+    },
+    "pt_BR": {
+     "t": "Conversas de networking",
+     "g": "Apresente-se, encontre pontos em comum e mantenha contato depois dos eventos.",
+     "p": [
+      "Começar: Hi, I don't think we've met. I'm Ana. What brings you here? How do you know the host?",
+      "Pontos em comum: Oh, me too! That sounds interesting, how did you get into that? Faça perguntas abertas.",
+      "Fechar e manter contato: It was great talking to you. Shall we connect online? Lovely to meet you, let's keep in touch."
+     ],
+     "q": "Como você costuma começar uma conversa com alguém novo num evento ou numa festa?",
+     "c": "Escreva uma apresentação de 30 segundos para um evento de networking e uma mensagem de follow-up."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "I don't think we've met",
+      "ex": "Hi, I don't think we've met. I'm Leo."
+     },
+     {
+      "w": "what brings you here",
+      "ex": "So, what brings you here tonight?"
+     },
+     {
+      "w": "how did you get into",
+      "ex": "How did you get into graphic design?"
+     },
+     {
+      "w": "common ground",
+      "ex": "We found common ground: we both love hiking."
+     },
+     {
+      "w": "keep in touch",
+      "ex": "Let's keep in touch after the conference."
+     },
+     {
+      "w": "connect online",
+      "ex": "Shall we connect online and share ideas?"
+     }
+    ],
+    "gram": "Small talk: present perfect for first meetings (I don't think we've met), open wh-questions, shall we for friendly suggestions."
+   }
+  },
+  {
+   "d": 332,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Writing a cover letter",
+     "g": "Write a cover letter with a hook, relevant experience, motivation and a strong close.",
+     "p": [
+      "Hook: I am writing to apply for the position of... as advertised on... I was excited to see...",
+      "Experience and motivation: In my current role, I have... I am particularly drawn to your company because...",
+      "Close: I would welcome the opportunity to discuss... Thank you for considering my application. Yours sincerely."
+     ],
+     "q": "What job, course or volunteer role would you love to apply for, and what makes you a good fit?",
+     "c": "Write the first two sentences of a cover letter for your dream job."
+    },
+    "de": {
+     "t": "Ein Anschreiben verfassen",
+     "g": "Du schreibst ein Anschreiben mit Aufhänger, passender Erfahrung, Motivation und starkem Schluss.",
+     "p": [
+      "Aufhänger: I am writing to apply for the position of... as advertised on... I was excited to see...",
+      "Erfahrung und Motivation: In my current role, I have... I am particularly drawn to your company because...",
+      "Schluss: I would welcome the opportunity to discuss... Thank you for considering my application. Yours sincerely."
+     ],
+     "q": "Für welchen Job, Kurs oder welches Ehrenamt würdest du dich gern bewerben, und warum passt du dazu?",
+     "c": "Schreib die ersten zwei Sätze eines Anschreibens für deinen Traumjob."
+    },
+    "es": {
+     "t": "Escribir una carta de presentación",
+     "g": "Escribe una carta de presentación con gancho, experiencia, motivación y un cierre sólido.",
+     "p": [
+      "Gancho: I am writing to apply for the position of... as advertised on... I was excited to see...",
+      "Experiencia y motivación: In my current role, I have... I am particularly drawn to your company because...",
+      "Cierre: I would welcome the opportunity to discuss... Thank you for considering my application. Yours sincerely."
+     ],
+     "q": "¿A qué trabajo, curso o voluntariado te encantaría presentarte y por qué encajas?",
+     "c": "Escribe las dos primeras frases de una carta de presentación para el trabajo de tus sueños."
+    },
+    "fr": {
+     "t": "Écrire une lettre de motivation",
+     "g": "Rédige une lettre de motivation avec accroche, expérience, motivation et une conclusion forte.",
+     "p": [
+      "Accroche : I am writing to apply for the position of... as advertised on... I was excited to see...",
+      "Expérience et motivation : In my current role, I have... I am particularly drawn to your company because...",
+      "Conclusion : I would welcome the opportunity to discuss... Thank you for considering my application. Yours sincerely."
+     ],
+     "q": "À quel poste, cours ou bénévolat aimerais-tu postuler, et pourquoi es-tu le bon profil ?",
+     "c": "Écris les deux premières phrases d'une lettre de motivation pour le job de tes rêves."
+    },
+    "it": {
+     "t": "Scrivere una lettera di presentazione",
+     "g": "Scrivi una lettera di presentazione con aggancio, esperienza, motivazione e una chiusura forte.",
+     "p": [
+      "Aggancio: I am writing to apply for the position of... as advertised on... I was excited to see...",
+      "Esperienza e motivazione: In my current role, I have... I am particularly drawn to your company because...",
+      "Chiusura: I would welcome the opportunity to discuss... Thank you for considering my application. Yours sincerely."
+     ],
+     "q": "Per quale lavoro, corso o volontariato ti piacerebbe candidarti, e perché sei la persona giusta?",
+     "c": "Scrivi le prime due frasi di una lettera di presentazione per il lavoro dei tuoi sogni."
+    },
+    "pt": {
+     "t": "Escrever uma carta de apresentação",
+     "g": "Escreve uma carta de apresentação com gancho, experiência, motivação e um fecho forte.",
+     "p": [
+      "Gancho: I am writing to apply for the position of... as advertised on... I was excited to see...",
+      "Experiência e motivação: In my current role, I have... I am particularly drawn to your company because...",
+      "Fecho: I would welcome the opportunity to discuss... Thank you for considering my application. Yours sincerely."
+     ],
+     "q": "A que emprego, curso ou voluntariado gostavas de te candidatar, e porque és a pessoa certa?",
+     "c": "Escreve as duas primeiras frases de uma carta de apresentação para o emprego dos teus sonhos."
+    },
+    "pt_BR": {
+     "t": "Escrever uma carta de apresentação",
+     "g": "Escreva uma carta de apresentação com gancho, experiência, motivação e um fechamento forte.",
+     "p": [
+      "Gancho: I am writing to apply for the position of... as advertised on... I was excited to see...",
+      "Experiência e motivação: In my current role, I have... I am particularly drawn to your company because...",
+      "Fechamento: I would welcome the opportunity to discuss... Thank you for considering my application. Yours sincerely."
+     ],
+     "q": "Para qual emprego, curso ou trabalho voluntário você adoraria se candidatar, e por que combina com você?",
+     "c": "Escreva as duas primeiras frases de uma carta de apresentação para o emprego dos seus sonhos."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "I am writing to apply for",
+      "ex": "I am writing to apply for the role of designer."
+     },
+     {
+      "w": "as advertised on",
+      "ex": "I saw the position as advertised on your website."
+     },
+     {
+      "w": "in my current role",
+      "ex": "In my current role, I manage a team of five."
+     },
+     {
+      "w": "I am particularly drawn to",
+      "ex": "I am particularly drawn to your focus on design."
+     },
+     {
+      "w": "I would welcome the opportunity",
+      "ex": "I would welcome the opportunity to meet you."
+     },
+     {
+      "w": "thank you for considering",
+      "ex": "Thank you for considering my application."
+     }
+    ],
+    "gram": "Cover letters: present perfect for experience (I have led...), formal register, no contractions; Yours sincerely when you know the name."
+   }
+  },
+  {
+   "d": 333,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Remote work communication",
+     "g": "Communicate clearly at a distance: async updates, time zones and online etiquette.",
+     "p": [
+      "Async updates: Quick update: the report is done. Next step: review on Monday. Blocker: I need the data from Sam.",
+      "Time zones: Let's find a time that works for everyone. I'm based in Lisbon, so 3pm my time is 10am yours.",
+      "Online etiquette: Sorry, you're on mute. Can everyone see my screen? I'll drop the link in the chat."
+     ],
+     "q": "What do you find easier and harder about communicating online compared with face to face?",
+     "c": "Write a clear three-line async update about something you are working on or learning."
+    },
+    "de": {
+     "t": "Kommunikation im Homeoffice",
+     "g": "Du kommunizierst klar auf Distanz: asynchrone Updates, Zeitzonen und Online-Etikette.",
+     "p": [
+      "Async-Updates: Quick update: the report is done. Next step: review on Monday. Blocker: I need the data from Sam.",
+      "Zeitzonen: Let's find a time that works for everyone. I'm based in Lisbon, so 3pm my time is 10am yours.",
+      "Online-Etikette: Sorry, you're on mute. Can everyone see my screen? I'll drop the link in the chat."
+     ],
+     "q": "Was findest du an Online-Kommunikation leichter oder schwerer als von Angesicht zu Angesicht?",
+     "c": "Schreib ein klares Async-Update in drei Zeilen über etwas, woran du arbeitest oder was du lernst."
+    },
+    "es": {
+     "t": "Comunicación en el trabajo remoto",
+     "g": "Comunícate con claridad a distancia: actualizaciones asíncronas, husos horarios y etiqueta online.",
+     "p": [
+      "Actualizaciones: Quick update: the report is done. Next step: review on Monday. Blocker: I need the data from Sam.",
+      "Husos horarios: Let's find a time that works for everyone. I'm based in Lisbon, so 3pm my time is 10am yours.",
+      "Etiqueta online: Sorry, you're on mute. Can everyone see my screen? I'll drop the link in the chat."
+     ],
+     "q": "¿Qué te resulta más fácil y más difícil de comunicarte online frente a hacerlo en persona?",
+     "c": "Escribe una actualización asíncrona clara de tres líneas sobre algo en lo que trabajas o aprendes."
+    },
+    "fr": {
+     "t": "Communiquer en télétravail",
+     "g": "Communique clairement à distance : points asynchrones, fuseaux horaires et étiquette en ligne.",
+     "p": [
+      "Points asynchrones : Quick update: the report is done. Next step: review on Monday. Blocker: I need the data from Sam.",
+      "Fuseaux horaires : Let's find a time that works for everyone. I'm based in Lisbon, so 3pm my time is 10am yours.",
+      "Étiquette en ligne : Sorry, you're on mute. Can everyone see my screen? I'll drop the link in the chat."
+     ],
+     "q": "Qu'est-ce qui est plus facile ou plus difficile en ligne qu'en face à face ?",
+     "c": "Écris un point asynchrone clair de trois lignes sur un projet ou un apprentissage en cours."
+    },
+    "it": {
+     "t": "Comunicare nel lavoro da remoto",
+     "g": "Comunica in modo chiaro a distanza: aggiornamenti asincroni, fusi orari e galateo online.",
+     "p": [
+      "Aggiornamenti: Quick update: the report is done. Next step: review on Monday. Blocker: I need the data from Sam.",
+      "Fusi orari: Let's find a time that works for everyone. I'm based in Lisbon, so 3pm my time is 10am yours.",
+      "Galateo online: Sorry, you're on mute. Can everyone see my screen? I'll drop the link in the chat."
+     ],
+     "q": "Cosa trovi più facile e più difficile nel comunicare online rispetto a di persona?",
+     "c": "Scrivi un aggiornamento asincrono chiaro di tre righe su qualcosa a cui lavori o che stai imparando."
+    },
+    "pt": {
+     "t": "Comunicação em teletrabalho",
+     "g": "Comunica com clareza à distância: atualizações assíncronas, fusos horários e etiqueta online.",
+     "p": [
+      "Atualizações: Quick update: the report is done. Next step: review on Monday. Blocker: I need the data from Sam.",
+      "Fusos horários: Let's find a time that works for everyone. I'm based in Lisbon, so 3pm my time is 10am yours.",
+      "Etiqueta online: Sorry, you're on mute. Can everyone see my screen? I'll drop the link in the chat."
+     ],
+     "q": "O que achas mais fácil e mais difícil na comunicação online em comparação com a presencial?",
+     "c": "Escreve uma atualização assíncrona clara de três linhas sobre algo em que trabalhas ou que aprendes."
+    },
+    "pt_BR": {
+     "t": "Comunicação no trabalho remoto",
+     "g": "Comunique-se com clareza à distância: atualizações assíncronas, fusos horários e etiqueta online.",
+     "p": [
+      "Atualizações: Quick update: the report is done. Next step: review on Monday. Blocker: I need the data from Sam.",
+      "Fusos horários: Let's find a time that works for everyone. I'm based in Lisbon, so 3pm my time is 10am yours.",
+      "Etiqueta online: Sorry, you're on mute. Can everyone see my screen? I'll drop the link in the chat."
+     ],
+     "q": "O que você acha mais fácil e mais difícil na comunicação online em comparação com a presencial?",
+     "c": "Escreva uma atualização assíncrona clara de três linhas sobre algo em que você trabalha ou aprende."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "quick update",
+      "ex": "Quick update: the design is ready for review."
+     },
+     {
+      "w": "next step",
+      "ex": "Next step: test the app with five users."
+     },
+     {
+      "w": "a time that works",
+      "ex": "Let's find a time that works for everyone."
+     },
+     {
+      "w": "you're on mute",
+      "ex": "Sorry, Tom, I think you're on mute."
+     },
+     {
+      "w": "share my screen",
+      "ex": "Let me share my screen so you can see it."
+     },
+     {
+      "w": "I'll drop the link",
+      "ex": "I'll drop the link in the chat."
+     }
+    ],
+    "gram": "Remote messages: short, clear sentences; will for offers (I'll send it), let's for suggestions, present continuous for current work."
+   }
+  },
+  {
+   "d": 334,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Leadership and teamwork vocabulary",
+     "g": "Talk about teams with words like delegate, motivate, collaborate and take responsibility.",
+     "p": [
+      "Leaders delegate tasks, motivate people, set goals and take responsibility for results.",
+      "Teams collaborate, share ideas, support each other and resolve conflicts. A team player helps others succeed.",
+      "Useful phrases: She leads by example. We work well together. He's very approachable. Let's play to our strengths."
+     ],
+     "q": "Think of a great team you were part of. What made it work so well?",
+     "c": "Describe your ideal leader in four sentences using delegate, motivate, approachable and lead by example."
+    },
+    "de": {
+     "t": "Wortschatz Führung und Teamarbeit",
+     "g": "Du sprichst über Teams mit Wörtern wie delegate, motivate, collaborate und take responsibility.",
+     "p": [
+      "Führungskräfte delegieren Aufgaben, motivieren, setzen Ziele und übernehmen Verantwortung für Ergebnisse.",
+      "Teams arbeiten zusammen, teilen Ideen, unterstützen sich und lösen Konflikte. A team player hilft anderen zum Erfolg.",
+      "Nützliche Sätze: She leads by example. We work well together. He's very approachable. Let's play to our strengths."
+     ],
+     "q": "Denk an ein großartiges Team, in dem du warst. Warum hat es so gut funktioniert?",
+     "c": "Beschreibe deine ideale Führungskraft in vier Sätzen mit delegate, motivate, approachable und lead by example."
+    },
+    "es": {
+     "t": "Vocabulario de liderazgo y equipo",
+     "g": "Habla de equipos con palabras como delegate, motivate, collaborate y take responsibility.",
+     "p": [
+      "Los líderes delegan tareas, motivan, fijan objetivos y asumen la responsabilidad de los resultados.",
+      "Los equipos colaboran, comparten ideas, se apoyan y resuelven conflictos. A team player ayuda a otros a triunfar.",
+      "Frases útiles: She leads by example. We work well together. He's very approachable. Let's play to our strengths."
+     ],
+     "q": "Piensa en un gran equipo del que formaste parte. ¿Qué hizo que funcionara tan bien?",
+     "c": "Describe a tu líder ideal en cuatro frases con delegate, motivate, approachable y lead by example."
+    },
+    "fr": {
+     "t": "Vocabulaire du leadership et du travail d'équipe",
+     "g": "Parle d'équipes avec des mots comme delegate, motivate, collaborate et take responsibility.",
+     "p": [
+      "Les leaders délèguent, motivent, fixent des objectifs et assument la responsabilité des résultats.",
+      "Les équipes collaborent, partagent des idées, s'entraident et résolvent les conflits. A team player aide les autres.",
+      "Phrases utiles : She leads by example. We work well together. He's very approachable. Let's play to our strengths."
+     ],
+     "q": "Pense à une super équipe dont tu as fait partie. Qu'est-ce qui la faisait si bien fonctionner ?",
+     "c": "Décris ton leader idéal en quatre phrases avec delegate, motivate, approachable et lead by example."
+    },
+    "it": {
+     "t": "Lessico di leadership e lavoro di squadra",
+     "g": "Parla di squadre con parole come delegate, motivate, collaborate e take responsibility.",
+     "p": [
+      "I leader delegano compiti, motivano, fissano obiettivi e si assumono la responsabilità dei risultati.",
+      "I team collaborano, condividono idee, si sostengono e risolvono i conflitti. A team player aiuta gli altri.",
+      "Frasi utili: She leads by example. We work well together. He's very approachable. Let's play to our strengths."
+     ],
+     "q": "Pensa a un'ottima squadra di cui hai fatto parte. Cosa la faceva funzionare così bene?",
+     "c": "Descrivi il tuo leader ideale in quattro frasi con delegate, motivate, approachable e lead by example."
+    },
+    "pt": {
+     "t": "Vocabulário de liderança e equipa",
+     "g": "Fala de equipas com palavras como delegate, motivate, collaborate e take responsibility.",
+     "p": [
+      "Os líderes delegam tarefas, motivam, definem objetivos e assumem a responsabilidade pelos resultados.",
+      "As equipas colaboram, partilham ideias, apoiam-se e resolvem conflitos. A team player ajuda os outros a ter sucesso.",
+      "Frases úteis: She leads by example. We work well together. He's very approachable. Let's play to our strengths."
+     ],
+     "q": "Pensa numa ótima equipa de que fizeste parte. O que a fazia funcionar tão bem?",
+     "c": "Descreve o teu líder ideal em quatro frases com delegate, motivate, approachable e lead by example."
+    },
+    "pt_BR": {
+     "t": "Vocabulário de liderança e equipe",
+     "g": "Fale de equipes com palavras como delegate, motivate, collaborate e take responsibility.",
+     "p": [
+      "Líderes delegam tarefas, motivam, definem metas e assumem a responsabilidade pelos resultados.",
+      "Equipes colaboram, compartilham ideias, se apoiam e resolvem conflitos. A team player ajuda os outros a ter sucesso.",
+      "Frases úteis: She leads by example. We work well together. He's very approachable. Let's play to our strengths."
+     ],
+     "q": "Pense numa equipe ótima da qual você fez parte. O que a fazia funcionar tão bem?",
+     "c": "Descreva seu líder ideal em quatro frases com delegate, motivate, approachable e lead by example."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "delegate",
+      "ex": "A good manager knows how to delegate tasks."
+     },
+     {
+      "w": "motivate",
+      "ex": "She motivates the team with clear goals."
+     },
+     {
+      "w": "collaborate",
+      "ex": "We collaborate closely with the design team."
+     },
+     {
+      "w": "take responsibility",
+      "ex": "He always takes responsibility for mistakes."
+     },
+     {
+      "w": "lead by example",
+      "ex": "Our coach leads by example and trains hard."
+     },
+     {
+      "w": "approachable",
+      "ex": "My boss is friendly and very approachable."
+     }
+    ],
+    "gram": "Team vocabulary: verb + noun patterns (delegate tasks, set goals, resolve conflicts); take responsibility for + noun/-ing."
+   }
+  },
+  {
+   "d": 335,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Entrepreneurship and start-ups",
+     "g": "Talk about new businesses: pitch, investor, business plan, scale up, launch.",
+     "p": [
+      "A start-up begins with an idea and a business plan, then looks for funding from investors.",
+      "Founders pitch their idea, launch a product, find customers and, if it works, scale up the business.",
+      "Useful phrases: There's a gap in the market. We're bootstrapping. Our target customers are... It took off quickly."
+     ],
+     "q": "If you started a small business tomorrow, what would it be and who would your customers be?",
+     "c": "Write a 3-sentence pitch for an imaginary start-up: the problem, your solution and your target customers."
+    },
+    "de": {
+     "t": "Unternehmertum und Start-ups",
+     "g": "Du sprichst über neue Unternehmen: pitch, investor, business plan, scale up, launch.",
+     "p": [
+      "Ein Start-up beginnt mit einer Idee und einem Businessplan und sucht dann Geld von Investoren.",
+      "Gründer pitchen ihre Idee, bringen ein Produkt heraus, finden Kunden und skalieren, wenn es funktioniert.",
+      "Nützliche Sätze: There's a gap in the market. We're bootstrapping. Our target customers are... It took off quickly."
+     ],
+     "q": "Wenn du morgen ein kleines Unternehmen gründen würdest: Was wäre es, und wer wären deine Kunden?",
+     "c": "Schreib einen Pitch in drei Sätzen für ein erfundenes Start-up: Problem, Lösung und Zielkunden."
+    },
+    "es": {
+     "t": "Emprendimiento y start-ups",
+     "g": "Habla de nuevos negocios: pitch, investor, business plan, scale up, launch.",
+     "p": [
+      "Una start-up empieza con una idea y un plan de negocio y luego busca financiación de inversores.",
+      "Los fundadores presentan su idea, lanzan un producto, encuentran clientes y, si funciona, hacen crecer el negocio.",
+      "Frases útiles: There's a gap in the market. We're bootstrapping. Our target customers are... It took off quickly."
+     ],
+     "q": "Si mañana montaras un pequeño negocio, ¿cuál sería y quiénes serían tus clientes?",
+     "c": "Escribe un pitch de tres frases para una start-up imaginaria: el problema, tu solución y tus clientes."
+    },
+    "fr": {
+     "t": "Entrepreneuriat et start-up",
+     "g": "Parle de nouvelles entreprises : pitch, investor, business plan, scale up, launch.",
+     "p": [
+      "Une start-up commence par une idée et un business plan, puis cherche des fonds auprès d'investisseurs.",
+      "Les fondateurs pitchent leur idée, lancent un produit, trouvent des clients et, si ça marche, passent à l'échelle.",
+      "Phrases utiles : There's a gap in the market. We're bootstrapping. Our target customers are... It took off quickly."
+     ],
+     "q": "Si tu créais une petite entreprise demain, laquelle serait-ce et qui seraient tes clients ?",
+     "c": "Écris un pitch de trois phrases pour une start-up imaginaire : le problème, ta solution et tes clients cibles."
+    },
+    "it": {
+     "t": "Imprenditoria e start-up",
+     "g": "Parla di nuove imprese: pitch, investor, business plan, scale up, launch.",
+     "p": [
+      "Una start-up nasce da un'idea e un business plan, poi cerca finanziamenti dagli investitori.",
+      "I fondatori presentano l'idea, lanciano un prodotto, trovano clienti e, se funziona, fanno crescere l'azienda.",
+      "Frasi utili: There's a gap in the market. We're bootstrapping. Our target customers are... It took off quickly."
+     ],
+     "q": "Se domani aprissi una piccola attività, quale sarebbe e chi sarebbero i tuoi clienti?",
+     "c": "Scrivi un pitch di tre frasi per una start-up immaginaria: il problema, la soluzione e i clienti target."
+    },
+    "pt": {
+     "t": "Empreendedorismo e start-ups",
+     "g": "Fala de novos negócios: pitch, investor, business plan, scale up, launch.",
+     "p": [
+      "Uma start-up começa com uma ideia e um plano de negócios e depois procura financiamento de investidores.",
+      "Os fundadores apresentam a ideia, lançam um produto, encontram clientes e, se resultar, fazem crescer o negócio.",
+      "Frases úteis: There's a gap in the market. We're bootstrapping. Our target customers are... It took off quickly."
+     ],
+     "q": "Se amanhã abrisses um pequeno negócio, qual seria e quem seriam os teus clientes?",
+     "c": "Escreve um pitch de três frases para uma start-up imaginária: o problema, a solução e os clientes-alvo."
+    },
+    "pt_BR": {
+     "t": "Empreendedorismo e startups",
+     "g": "Fale de novos negócios: pitch, investor, business plan, scale up, launch.",
+     "p": [
+      "Uma startup começa com uma ideia e um plano de negócios e depois busca investimento de investidores.",
+      "Os fundadores apresentam a ideia, lançam um produto, conquistam clientes e, se der certo, escalam o negócio.",
+      "Frases úteis: There's a gap in the market. We're bootstrapping. Our target customers are... It took off quickly."
+     ],
+     "q": "Se amanhã você abrisse um pequeno negócio, qual seria e quem seriam seus clientes?",
+     "c": "Escreva um pitch de três frases para uma startup imaginária: o problema, a solução e os clientes-alvo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "pitch",
+      "ex": "She gave a great pitch to the investors."
+     },
+     {
+      "w": "investor",
+      "ex": "An investor offered to fund the project."
+     },
+     {
+      "w": "business plan",
+      "ex": "Every start-up needs a clear business plan."
+     },
+     {
+      "w": "scale up",
+      "ex": "They plan to scale up and open in five cities."
+     },
+     {
+      "w": "a gap in the market",
+      "ex": "We noticed a gap in the market for vegan snacks."
+     },
+     {
+      "w": "take off",
+      "ex": "The app took off after a popular review."
+     }
+    ],
+    "gram": "Business stories: past simple for events (they launched), present perfect for results (we've grown), phrasal verbs scale up and take off."
+   }
+  },
+  {
+   "d": 336,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Global English: accents around the world",
+     "g": "Understand British, American, Australian, Indian and other English accents.",
+     "p": [
+      "Sounds differ: British car often drops the r; American keeps it. Water sounds like wadder in American English.",
+      "Words differ too: flat/apartment, lift/elevator, holiday/vacation. Australians say arvo (afternoon) and mate.",
+      "Indian, Irish, Scottish, Nigerian and Singaporean English are all valid. Focus on being clear, not on one accent."
+     ],
+     "q": "Which English accent do you find easiest to understand, and which is the most challenging for you?",
+     "c": "Listen to two speakers with different accents today and note three differences in sounds or words."
+    },
+    "de": {
+     "t": "Globales Englisch: Akzente weltweit",
+     "g": "Du verstehst britische, amerikanische, australische, indische und andere englische Akzente.",
+     "p": [
+      "Laute unterscheiden sich: Im Britischen fällt das r in car oft weg, im Amerikanischen nicht. Water klingt dort wie wadder.",
+      "Auch Wörter: flat/apartment, lift/elevator, holiday/vacation. Australier sagen arvo (Nachmittag) und mate.",
+      "Indisches, irisches, schottisches, nigerianisches und Singapur-Englisch sind alle gültig. Klarheit zählt, nicht ein Akzent."
+     ],
+     "q": "Welchen englischen Akzent verstehst du am leichtesten, und welcher ist für dich am schwierigsten?",
+     "c": "Hör heute zwei Sprecher mit verschiedenen Akzenten und notiere drei Unterschiede bei Lauten oder Wörtern."
+    },
+    "es": {
+     "t": "Inglés global: acentos del mundo",
+     "g": "Entiende acentos británicos, estadounidenses, australianos, indios y otros.",
+     "p": [
+      "Los sonidos cambian: en británico car suele perder la r; en estadounidense no. Water suena como wadder allí.",
+      "También las palabras: flat/apartment, lift/elevator, holiday/vacation. En Australia dicen arvo (tarde) y mate.",
+      "El inglés de India, Irlanda, Escocia, Nigeria o Singapur es igual de válido. Busca claridad, no un acento concreto."
+     ],
+     "q": "¿Qué acento inglés entiendes con más facilidad y cuál te cuesta más?",
+     "c": "Escucha hoy a dos hablantes con acentos distintos y anota tres diferencias de sonidos o palabras."
+    },
+    "fr": {
+     "t": "L'anglais mondial : les accents",
+     "g": "Comprends les accents britannique, américain, australien, indien et d'autres encore.",
+     "p": [
+      "Les sons varient : en britannique, le r de car disparaît souvent ; pas en américain. Water y sonne comme wadder.",
+      "Les mots aussi : flat/apartment, lift/elevator, holiday/vacation. Les Australiens disent arvo (après-midi) et mate.",
+      "Les anglais indien, irlandais, écossais, nigérian ou singapourien sont tous valables. Vise la clarté, pas un accent."
+     ],
+     "q": "Quel accent anglais comprends-tu le plus facilement, et lequel est le plus difficile pour toi ?",
+     "c": "Écoute aujourd'hui deux locuteurs aux accents différents et note trois différences de sons ou de mots."
+    },
+    "it": {
+     "t": "Inglese globale: accenti nel mondo",
+     "g": "Comprendi gli accenti britannico, americano, australiano, indiano e altri.",
+     "p": [
+      "I suoni cambiano: in britannico la r di car spesso cade, in americano no. Water lì suona come wadder.",
+      "Anche le parole: flat/apartment, lift/elevator, holiday/vacation. Gli australiani dicono arvo (pomeriggio) e mate.",
+      "L'inglese indiano, irlandese, scozzese, nigeriano o di Singapore è valido. Punta alla chiarezza, non a un accento."
+     ],
+     "q": "Quale accento inglese capisci più facilmente, e quale trovi più difficile?",
+     "c": "Ascolta oggi due persone con accenti diversi e annota tre differenze di suoni o parole."
+    },
+    "pt": {
+     "t": "Inglês global: sotaques do mundo",
+     "g": "Percebe sotaques britânico, americano, australiano, indiano e outros.",
+     "p": [
+      "Os sons mudam: no britânico o r de car muitas vezes cai; no americano não. Water soa como wadder lá.",
+      "As palavras também: flat/apartment, lift/elevator, holiday/vacation. Os australianos dizem arvo (tarde) e mate.",
+      "O inglês da Índia, Irlanda, Escócia, Nigéria ou Singapura é igualmente válido. Procura clareza, não um sotaque."
+     ],
+     "q": "Que sotaque inglês percebes com mais facilidade, e qual é o mais difícil para ti?",
+     "c": "Ouve hoje dois falantes com sotaques diferentes e anota três diferenças de sons ou palavras."
+    },
+    "pt_BR": {
+     "t": "Inglês global: sotaques do mundo",
+     "g": "Entenda sotaques britânico, americano, australiano, indiano e outros.",
+     "p": [
+      "Os sons mudam: no britânico o r de car muitas vezes some; no americano não. Water soa como wadder lá.",
+      "As palavras também: flat/apartment, lift/elevator, holiday/vacation. Australianos dizem arvo (tarde) e mate.",
+      "O inglês da Índia, Irlanda, Escócia, Nigéria ou Singapura é igualmente válido. Busque clareza, não um sotaque."
+     ],
+     "q": "Qual sotaque inglês você entende com mais facilidade, e qual é o mais difícil para você?",
+     "c": "Ouça hoje dois falantes com sotaques diferentes e anote três diferenças de sons ou palavras."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "accent",
+      "ex": "She has a lovely Scottish accent."
+     },
+     {
+      "w": "flat / apartment",
+      "ex": "In London it's a flat; in New York, an apartment."
+     },
+     {
+      "w": "lift / elevator",
+      "ex": "Take the lift to the fifth floor."
+     },
+     {
+      "w": "holiday / vacation",
+      "ex": "We're going on vacation in July."
+     },
+     {
+      "w": "mate",
+      "ex": "Thanks, mate, see you later!"
+     },
+     {
+      "w": "I didn't quite catch that",
+      "ex": "Sorry, I didn't quite catch that. Could you repeat it?"
+     }
+    ],
+    "gram": "Varieties of English: vocabulary (flat/apartment) and spelling (colour/color) differ; all are correct, so be consistent in writing."
+   }
+  },
+  {
+   "d": 337,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Slang and informal English",
+     "g": "Understand casual English like cool, awesome, hang out, no worries and I'm knackered.",
+     "p": [
+      "Everyday slang: cool, awesome (great), hang out (spend time), chill (relax). No worries = it's fine.",
+      "British: knackered (very tired), cheers (thanks), quid (pound). American: gonna, wanna, buddy, my bad.",
+      "Use slang with friends and in chats, not in job interviews or formal emails. Listen first, then try it."
+     ],
+     "q": "What slang words have you heard in films, songs or online? Which ones would you feel comfortable using?",
+     "c": "Rewrite this formally: Hey, I'm knackered, gonna chill at home. Wanna hang out tomorrow? No worries if not!"
+    },
+    "de": {
+     "t": "Slang und lockeres Englisch",
+     "g": "Du verstehst lockeres Englisch wie cool, awesome, hang out, no worries und I'm knackered.",
+     "p": [
+      "Alltagsslang: cool, awesome (super), hang out (Zeit verbringen), chill (entspannen). No worries = kein Problem.",
+      "Britisch: knackered (todmüde), cheers (danke), quid (Pfund). Amerikanisch: gonna, wanna, buddy, my bad.",
+      "Slang passt zu Freunden und Chats, nicht zu Vorstellungsgesprächen oder formellen Mails. Erst zuhören, dann ausprobieren."
+     ],
+     "q": "Welche Slangwörter kennst du aus Filmen, Songs oder dem Internet? Welche würdest du selbst benutzen?",
+     "c": "Formuliere formell: Hey, I'm knackered, gonna chill at home. Wanna hang out tomorrow? No worries if not!"
+    },
+    "es": {
+     "t": "Argot e inglés informal",
+     "g": "Entiende el inglés coloquial: cool, awesome, hang out, no worries y I'm knackered.",
+     "p": [
+      "Argot diario: cool, awesome (genial), hang out (pasar el rato), chill (relajarse). No worries = no pasa nada.",
+      "Británico: knackered (agotado), cheers (gracias), quid (libra). Estadounidense: gonna, wanna, buddy, my bad.",
+      "Usa el argot con amigos y en chats, no en entrevistas ni correos formales. Escucha primero y luego pruébalo."
+     ],
+     "q": "¿Qué palabras de argot has oído en películas, canciones o internet? ¿Cuáles usarías tú?",
+     "c": "Pásalo a registro formal: Hey, I'm knackered, gonna chill at home. Wanna hang out tomorrow? No worries if not!"
+    },
+    "fr": {
+     "t": "Argot et anglais familier",
+     "g": "Comprends l'anglais familier : cool, awesome, hang out, no worries et I'm knackered.",
+     "p": [
+      "Argot courant : cool, awesome (génial), hang out (traîner ensemble), chill (se détendre). No worries = pas de souci.",
+      "Britannique : knackered (crevé), cheers (merci), quid (livre). Américain : gonna, wanna, buddy, my bad.",
+      "L'argot, c'est pour les amis et les chats, pas pour les entretiens ou les mails formels. Écoute d'abord, puis essaie."
+     ],
+     "q": "Quels mots d'argot as-tu entendus dans des films, des chansons ou en ligne ? Lesquels utiliserais-tu ?",
+     "c": "Réécris en registre formel : Hey, I'm knackered, gonna chill at home. Wanna hang out tomorrow? No worries if not!"
+    },
+    "it": {
+     "t": "Slang e inglese informale",
+     "g": "Capisci l'inglese colloquiale: cool, awesome, hang out, no worries e I'm knackered.",
+     "p": [
+      "Slang quotidiano: cool, awesome (fantastico), hang out (stare insieme), chill (rilassarsi). No worries = tranquillo.",
+      "Britannico: knackered (distrutto), cheers (grazie), quid (sterlina). Americano: gonna, wanna, buddy, my bad.",
+      "Usa lo slang con gli amici e in chat, non ai colloqui o nelle email formali. Prima ascolta, poi prova."
+     ],
+     "q": "Quali parole slang hai sentito in film, canzoni o online? Quali useresti volentieri?",
+     "c": "Riscrivi in modo formale: Hey, I'm knackered, gonna chill at home. Wanna hang out tomorrow? No worries if not!"
+    },
+    "pt": {
+     "t": "Calão e inglês informal",
+     "g": "Percebe o inglês informal: cool, awesome, hang out, no worries e I'm knackered.",
+     "p": [
+      "Calão do dia a dia: cool, awesome (espetacular), hang out (passar tempo), chill (relaxar). No worries = não faz mal.",
+      "Britânico: knackered (estoirado), cheers (obrigado), quid (libra). Americano: gonna, wanna, buddy, my bad.",
+      "Usa calão com amigos e em chats, não em entrevistas ou e-mails formais. Ouve primeiro e depois experimenta."
+     ],
+     "q": "Que palavras de calão já ouviste em filmes, músicas ou online? Quais usarias à vontade?",
+     "c": "Reescreve em registo formal: Hey, I'm knackered, gonna chill at home. Wanna hang out tomorrow? No worries if not!"
+    },
+    "pt_BR": {
+     "t": "Gírias e inglês informal",
+     "g": "Entenda o inglês informal: cool, awesome, hang out, no worries e I'm knackered.",
+     "p": [
+      "Gírias do dia a dia: cool, awesome (demais), hang out (sair junto), chill (relaxar). No worries = sem problema.",
+      "Britânico: knackered (morto de cansaço), cheers (valeu), quid (libra). Americano: gonna, wanna, buddy, my bad.",
+      "Use gírias com amigos e em chats, não em entrevistas ou e-mails formais. Ouça primeiro e depois experimente."
+     ],
+     "q": "Que gírias você já ouviu em filmes, músicas ou na internet? Quais usaria tranquilamente?",
+     "c": "Reescreva em registro formal: Hey, I'm knackered, gonna chill at home. Wanna hang out tomorrow? No worries if not!"
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "hang out",
+      "ex": "Do you want to hang out this weekend?"
+     },
+     {
+      "w": "no worries",
+      "ex": "No worries, it happens to everyone."
+     },
+     {
+      "w": "I'm knackered",
+      "ex": "I'm knackered after that long walk."
+     },
+     {
+      "w": "awesome",
+      "ex": "The concert was awesome!"
+     },
+     {
+      "w": "my bad",
+      "ex": "Oops, my bad, I took your seat."
+     },
+     {
+      "w": "gonna",
+      "ex": "I'm gonna grab a coffee. Want one?"
+     }
+    ],
+    "gram": "Informal English: contractions (gonna = going to, wanna = want to) and slang suit friends and chats; avoid them in formal writing."
+   }
+  },
+  {
+   "d": 338,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Humour and irony in English",
+     "g": "Understand and carefully use understatement, sarcasm and dry humour.",
+     "p": [
+      "Understatement says less than you mean: It's a bit chilly (in a snowstorm). Not bad at all = really good.",
+      "Sarcasm says the opposite: Oh great, another Monday! Tone of voice and context show it's a joke.",
+      "Dry humour is said with a straight face. Use irony gently, and never to hurt; if unsure, smile and ask."
+     ],
+     "q": "Is humour in your culture similar to English humour? Can you share a gentle example of irony?",
+     "c": "Write two understatements and one light sarcastic comment about everyday situations, like rain or traffic."
+    },
+    "de": {
+     "t": "Humor und Ironie im Englischen",
+     "g": "Du verstehst Untertreibung, Sarkasmus und trockenen Humor und nutzt sie vorsichtig.",
+     "p": [
+      "Untertreibung sagt weniger als gemeint: It's a bit chilly (im Schneesturm). Not bad at all = richtig gut.",
+      "Sarkasmus sagt das Gegenteil: Oh great, another Monday! Tonfall und Kontext zeigen, dass es ein Witz ist.",
+      "Trockener Humor kommt mit ernster Miene. Ironie behutsam einsetzen und nie verletzend; im Zweifel lächeln und nachfragen."
+     ],
+     "q": "Ist der Humor in deiner Kultur ähnlich wie der englische? Kennst du ein harmloses Beispiel für Ironie?",
+     "c": "Schreib zwei Untertreibungen und einen leicht sarkastischen Kommentar zu Alltagssituationen wie Regen oder Stau."
+    },
+    "es": {
+     "t": "Humor e ironía en inglés",
+     "g": "Entiende y usa con cuidado la atenuación, el sarcasmo y el humor seco.",
+     "p": [
+      "La atenuación dice menos de lo que piensas: It's a bit chilly (en plena nevada). Not bad at all = muy bueno.",
+      "El sarcasmo dice lo contrario: Oh great, another Monday! El tono y el contexto muestran que es broma.",
+      "El humor seco se dice con cara seria. Usa la ironía con suavidad y nunca para herir; si dudas, sonríe y pregunta."
+     ],
+     "q": "¿El humor de tu cultura se parece al inglés? ¿Puedes compartir un ejemplo amable de ironía?",
+     "c": "Escribe dos atenuaciones y un comentario sarcástico ligero sobre situaciones cotidianas, como la lluvia o el tráfico."
+    },
+    "fr": {
+     "t": "Humour et ironie en anglais",
+     "g": "Comprends et utilise avec prudence l'euphémisme, le sarcasme et l'humour pince-sans-rire.",
+     "p": [
+      "L'euphémisme en dit moins : It's a bit chilly (en pleine tempête de neige). Not bad at all = vraiment bien.",
+      "Le sarcasme dit l'inverse : Oh great, another Monday! Le ton et le contexte montrent que c'est une blague.",
+      "L'humour pince-sans-rire se dit sans sourire. Manie l'ironie avec douceur, jamais pour blesser ; dans le doute, souris et demande."
+     ],
+     "q": "L'humour de ta culture ressemble-t-il à l'humour anglais ? Peux-tu partager un exemple gentil d'ironie ?",
+     "c": "Écris deux euphémismes et un commentaire légèrement sarcastique sur le quotidien, comme la pluie ou les bouchons."
+    },
+    "it": {
+     "t": "Umorismo e ironia in inglese",
+     "g": "Comprendi e usa con attenzione understatement, sarcasmo e umorismo asciutto.",
+     "p": [
+      "L'understatement dice meno di quanto pensi: It's a bit chilly (in una tormenta). Not bad at all = davvero buono.",
+      "Il sarcasmo dice il contrario: Oh great, another Monday! Tono e contesto mostrano che è uno scherzo.",
+      "L'umorismo asciutto si dice serissimi. Usa l'ironia con delicatezza, mai per ferire; nel dubbio, sorridi e chiedi."
+     ],
+     "q": "L'umorismo della tua cultura somiglia a quello inglese? Sai fare un esempio gentile di ironia?",
+     "c": "Scrivi due understatement e un commento leggermente sarcastico su situazioni quotidiane, come pioggia o traffico."
+    },
+    "pt": {
+     "t": "Humor e ironia em inglês",
+     "g": "Percebe e usa com cuidado a atenuação, o sarcasmo e o humor seco.",
+     "p": [
+      "A atenuação diz menos do que pensas: It's a bit chilly (num nevão). Not bad at all = muito bom.",
+      "O sarcasmo diz o contrário: Oh great, another Monday! O tom e o contexto mostram que é brincadeira.",
+      "O humor seco diz-se com cara séria. Usa a ironia com delicadeza e nunca para magoar; na dúvida, sorri e pergunta."
+     ],
+     "q": "O humor da tua cultura é parecido com o inglês? Consegues partilhar um exemplo simpático de ironia?",
+     "c": "Escreve duas atenuações e um comentário ligeiramente sarcástico sobre o dia a dia, como chuva ou trânsito."
+    },
+    "pt_BR": {
+     "t": "Humor e ironia em inglês",
+     "g": "Entenda e use com cuidado a atenuação, o sarcasmo e o humor seco.",
+     "p": [
+      "A atenuação diz menos do que você pensa: It's a bit chilly (numa nevasca). Not bad at all = muito bom.",
+      "O sarcasmo diz o contrário: Oh great, another Monday! O tom e o contexto mostram que é brincadeira.",
+      "O humor seco é dito com cara séria. Use a ironia com leveza e nunca para magoar; na dúvida, sorria e pergunte."
+     ],
+     "q": "O humor da sua cultura é parecido com o inglês? Você consegue compartilhar um exemplo leve de ironia?",
+     "c": "Escreva duas atenuações e um comentário levemente sarcástico sobre o dia a dia, como chuva ou trânsito."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "understatement",
+      "ex": "Calling the marathon a nice walk is an understatement."
+     },
+     {
+      "w": "a bit",
+      "ex": "It's a bit warm today, isn't it? (it's 40 degrees)"
+     },
+     {
+      "w": "not bad at all",
+      "ex": "Your cake is not bad at all. Can I have more?"
+     },
+     {
+      "w": "sarcasm",
+      "ex": "Oh great, the printer's broken again, said with sarcasm."
+     },
+     {
+      "w": "dry humour",
+      "ex": "My uncle has a very dry sense of humour."
+     },
+     {
+      "w": "just kidding",
+      "ex": "You have to work all weekend. Just kidding!"
+     }
+    ],
+    "gram": "Irony and understatement: meaning comes from tone and context; a bit, rather and not bad soften; sarcasm often uses great, perfect, lovely."
+   }
+  },
+  {
+   "d": 339,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Understanding native speed",
+     "g": "Follow fast speech by listening for stressed words and using context.",
+     "p": [
+      "Native speakers stress key words and reduce the rest: I'm GOing to the SHOP sounds like I'm gonna the shop.",
+      "Linking joins words: an apple sounds like a napple; what do you sounds like whaddaya. Expect these sounds.",
+      "Don't panic over every word. Predict from context, catch the stressed words and ask: Sorry, could you slow down a bit?"
+     ],
+     "q": "What do you find hardest when people speak fast in English: speed, accents, linking or vocabulary?",
+     "c": "Watch one minute of a fast video twice: first for the general idea, then write down five stressed words."
+    },
+    "de": {
+     "t": "Muttersprachliches Tempo verstehen",
+     "g": "Du folgst schneller Sprache, indem du auf betonte Wörter und den Kontext achtest.",
+     "p": [
+      "Muttersprachler betonen Schlüsselwörter und verschleifen den Rest: I'm GOing to the SHOP klingt wie I'm gonna the shop.",
+      "Bindungen verbinden Wörter: an apple klingt wie a napple; what do you klingt wie whaddaya. Rechne damit.",
+      "Keine Panik bei jedem Wort. Aus dem Kontext vorhersagen, betonte Wörter erfassen und fragen: Sorry, could you slow down a bit?"
+     ],
+     "q": "Was ist für dich am schwersten, wenn schnell Englisch gesprochen wird: Tempo, Akzente, Bindungen oder Wortschatz?",
+     "c": "Schau eine Minute eines schnellen Videos zweimal: erst für den Inhalt, dann notiere fünf betonte Wörter."
+    },
+    "es": {
+     "t": "Entender la velocidad nativa",
+     "g": "Sigue el habla rápida escuchando las palabras acentuadas y usando el contexto.",
+     "p": [
+      "Los nativos acentúan las palabras clave y reducen el resto: I'm GOing to the SHOP suena como I'm gonna the shop.",
+      "El enlace une palabras: an apple suena como a napple; what do you suena como whaddaya. Espera esos sonidos.",
+      "No te agobies con cada palabra. Predice por el contexto, capta las palabras acentuadas y pide: Sorry, could you slow down a bit?"
+     ],
+     "q": "¿Qué te cuesta más cuando hablan rápido en inglés: la velocidad, los acentos, los enlaces o el vocabulario?",
+     "c": "Mira un minuto de un vídeo rápido dos veces: primero para la idea general y luego anota cinco palabras acentuadas."
+    },
+    "fr": {
+     "t": "Comprendre le débit natif",
+     "g": "Suis un débit rapide en écoutant les mots accentués et en t'aidant du contexte.",
+     "p": [
+      "Les natifs accentuent les mots clés et réduisent le reste : I'm GOing to the SHOP sonne comme I'm gonna the shop.",
+      "Les liaisons unissent les mots : an apple sonne comme a napple ; what do you comme whaddaya. Attends-toi à ces sons.",
+      "Pas de panique pour chaque mot. Anticipe grâce au contexte, saisis les mots accentués et demande : Sorry, could you slow down a bit?"
+     ],
+     "q": "Qu'est-ce qui est le plus dur quand on parle vite en anglais : le débit, les accents, les liaisons ou le vocabulaire ?",
+     "c": "Regarde une minute d'une vidéo rapide deux fois : d'abord pour l'idée générale, puis note cinq mots accentués."
+    },
+    "it": {
+     "t": "Capire la velocità dei madrelingua",
+     "g": "Segui il parlato veloce ascoltando le parole accentate e usando il contesto.",
+     "p": [
+      "I madrelingua accentano le parole chiave e riducono il resto: I'm GOing to the SHOP suona come I'm gonna the shop.",
+      "Il linking unisce le parole: an apple suona come a napple; what do you come whaddaya. Aspettati questi suoni.",
+      "Niente panico per ogni parola. Prevedi dal contesto, cogli le parole accentate e chiedi: Sorry, could you slow down a bit?"
+     ],
+     "q": "Cosa trovi più difficile quando parlano veloce in inglese: velocità, accenti, linking o vocabolario?",
+     "c": "Guarda un minuto di un video veloce due volte: prima per l'idea generale, poi annota cinque parole accentate."
+    },
+    "pt": {
+     "t": "Perceber a velocidade nativa",
+     "g": "Acompanha a fala rápida ouvindo as palavras acentuadas e usando o contexto.",
+     "p": [
+      "Os nativos acentuam as palavras-chave e reduzem o resto: I'm GOing to the SHOP soa como I'm gonna the shop.",
+      "A ligação junta palavras: an apple soa como a napple; what do you soa como whaddaya. Conta com estes sons.",
+      "Não entres em pânico com cada palavra. Prevê pelo contexto, apanha as palavras acentuadas e pede: Sorry, could you slow down a bit?"
+     ],
+     "q": "O que te custa mais quando falam depressa em inglês: a velocidade, os sotaques, as ligações ou o vocabulário?",
+     "c": "Vê um minuto de um vídeo rápido duas vezes: primeiro para a ideia geral, depois anota cinco palavras acentuadas."
+    },
+    "pt_BR": {
+     "t": "Entender a velocidade nativa",
+     "g": "Acompanhe a fala rápida ouvindo as palavras tônicas e usando o contexto.",
+     "p": [
+      "Os nativos enfatizam as palavras-chave e reduzem o resto: I'm GOing to the SHOP soa como I'm gonna the shop.",
+      "A ligação junta palavras: an apple soa como a napple; what do you soa como whaddaya. Espere esses sons.",
+      "Não entre em pânico com cada palavra. Preveja pelo contexto, pegue as palavras tônicas e peça: Sorry, could you slow down a bit?"
+     ],
+     "q": "O que é mais difícil para você quando falam rápido em inglês: velocidade, sotaques, ligações ou vocabulário?",
+     "c": "Assista a um minuto de um vídeo rápido duas vezes: primeiro para a ideia geral, depois anote cinco palavras tônicas."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "could you slow down",
+      "ex": "Sorry, could you slow down a bit?"
+     },
+     {
+      "w": "stressed words",
+      "ex": "Listen for the stressed words to get the meaning."
+     },
+     {
+      "w": "whaddaya",
+      "ex": "Whaddaya want for dinner? (what do you)"
+     },
+     {
+      "w": "gotta",
+      "ex": "I've gotta go now. (got to)"
+     },
+     {
+      "w": "the gist",
+      "ex": "I didn't get every word, but I got the gist."
+     },
+     {
+      "w": "catch",
+      "ex": "I didn't catch your name. Could you say it again?"
+     }
+    ],
+    "gram": "Connected speech: weak forms (to = tuh), linking (an apple), and reductions (gonna, gotta, whaddaya); content words carry stress."
+   }
+  },
+  {
+   "d": 340,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Review: professional English",
+     "g": "Recap meetings, presentations, feedback and informal English in real-life practice.",
+     "p": [
+      "Meetings: Let's get started, Moving on to, To sum up. Presentations: First, I'll... Let's now turn to... To conclude.",
+      "Q&A and negotiating: That's a great question. Let me come back to that. On condition that... Let's meet halfway.",
+      "Feedback and style: One thing you might consider is... Network: What brings you here? Slang only with friends."
+     ],
+     "q": "Which professional skill from this unit will be most useful for you: meetings, presentations, feedback or networking?",
+     "c": "Record a 60-second mini presentation about your week with an opening, two signposts and a conclusion."
+    },
+    "de": {
+     "t": "Review: Englisch im Beruf",
+     "g": "Du wiederholst Meetings, Präsentationen, Feedback und lockeres Englisch in realen Situationen.",
+     "p": [
+      "Meetings: Let's get started, Moving on to, To sum up. Präsentationen: First, I'll... Let's now turn to... To conclude.",
+      "Fragen und Verhandeln: That's a great question. Let me come back to that. On condition that... Let's meet halfway.",
+      "Feedback und Stil: One thing you might consider is... Networking: What brings you here? Slang nur unter Freunden."
+     ],
+     "q": "Welche berufliche Fähigkeit aus dieser Einheit ist für dich am nützlichsten: Meetings, Präsentationen, Feedback oder Networking?",
+     "c": "Nimm eine 60-Sekunden-Präsentation über deine Woche auf: Einstieg, zwei Überleitungen und Schluss."
+    },
+    "es": {
+     "t": "Repaso: inglés profesional",
+     "g": "Repasa reuniones, presentaciones, feedback e inglés informal en situaciones reales.",
+     "p": [
+      "Reuniones: Let's get started, Moving on to, To sum up. Presentaciones: First, I'll... Let's now turn to... To conclude.",
+      "Preguntas y negociación: That's a great question. Let me come back to that. On condition that... Let's meet halfway.",
+      "Feedback y estilo: One thing you might consider is... Networking: What brings you here? El argot, solo con amigos."
+     ],
+     "q": "¿Qué habilidad profesional de esta unidad te será más útil: reuniones, presentaciones, feedback o networking?",
+     "c": "Graba una minipresentación de 60 segundos sobre tu semana con apertura, dos transiciones y conclusión."
+    },
+    "fr": {
+     "t": "Révision : l'anglais professionnel",
+     "g": "Révise réunions, présentations, retours et anglais familier en situation réelle.",
+     "p": [
+      "Réunions : Let's get started, Moving on to, To sum up. Présentations : First, I'll... Let's now turn to... To conclude.",
+      "Questions et négociation : That's a great question. Let me come back to that. On condition that... Let's meet halfway.",
+      "Retours et style : One thing you might consider is... Networking : What brings you here? L'argot, seulement entre amis."
+     ],
+     "q": "Quelle compétence professionnelle de cette unité te sera la plus utile : réunions, présentations, retours ou networking ?",
+     "c": "Enregistre une mini-présentation de 60 secondes sur ta semaine avec ouverture, deux transitions et conclusion."
+    },
+    "it": {
+     "t": "Ripasso: inglese professionale",
+     "g": "Ripassa riunioni, presentazioni, feedback e inglese informale in situazioni reali.",
+     "p": [
+      "Riunioni: Let's get started, Moving on to, To sum up. Presentazioni: First, I'll... Let's now turn to... To conclude.",
+      "Domande e trattative: That's a great question. Let me come back to that. On condition that... Let's meet halfway.",
+      "Feedback e stile: One thing you might consider is... Networking: What brings you here? Lo slang solo con gli amici."
+     ],
+     "q": "Quale competenza professionale di questa unità ti sarà più utile: riunioni, presentazioni, feedback o networking?",
+     "c": "Registra una mini presentazione di 60 secondi sulla tua settimana con apertura, due passaggi e conclusione."
+    },
+    "pt": {
+     "t": "Revisão: inglês profissional",
+     "g": "Revê reuniões, apresentações, feedback e inglês informal em situações reais.",
+     "p": [
+      "Reuniões: Let's get started, Moving on to, To sum up. Apresentações: First, I'll... Let's now turn to... To conclude.",
+      "Perguntas e negociação: That's a great question. Let me come back to that. On condition that... Let's meet halfway.",
+      "Feedback e estilo: One thing you might consider is... Networking: What brings you here? Calão só com amigos."
+     ],
+     "q": "Que competência profissional desta unidade te será mais útil: reuniões, apresentações, feedback ou networking?",
+     "c": "Grava uma miniapresentação de 60 segundos sobre a tua semana com abertura, duas transições e conclusão."
+    },
+    "pt_BR": {
+     "t": "Revisão: inglês profissional",
+     "g": "Revise reuniões, apresentações, feedback e inglês informal em situações reais.",
+     "p": [
+      "Reuniões: Let's get started, Moving on to, To sum up. Apresentações: First, I'll... Let's now turn to... To conclude.",
+      "Perguntas e negociação: That's a great question. Let me come back to that. On condition that... Let's meet halfway.",
+      "Feedback e estilo: One thing you might consider is... Networking: What brings you here? Gírias só com amigos."
+     ],
+     "q": "Qual habilidade profissional desta unidade será mais útil para você: reuniões, apresentações, feedback ou networking?",
+     "c": "Grave uma miniapresentação de 60 segundos sobre sua semana com abertura, duas transições e conclusão."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "let's get started",
+      "ex": "Right, let's get started with the first item."
+     },
+     {
+      "w": "let's now turn to",
+      "ex": "Let's now turn to next year's plans."
+     },
+     {
+      "w": "that's a great question",
+      "ex": "That's a great question. Let me explain."
+     },
+     {
+      "w": "meet halfway",
+      "ex": "We could meet halfway on the delivery date."
+     },
+     {
+      "w": "one thing you might consider",
+      "ex": "One thing you might consider is a shorter intro."
+     },
+     {
+      "w": "keep in touch",
+      "ex": "It was lovely meeting you. Let's keep in touch."
+     }
+    ],
+    "gram": "Review: functional phrases for meetings, signposting, Q&A, conditions (provided that), diplomatic feedback and register awareness."
+   }
+  }
+ ]
+}

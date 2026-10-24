@@ -1,0 +1,1125 @@
+{
+  "topic": "practice_portuguese",
+  "lessons": [
+    {
+      "d": 61,
+      "lv": "A1",
+      "i18n": {
+        "en": {
+          "t": "Vir: to come",
+          "g": "Learn the present tense of vir and when to use ir or vir.",
+          "p": [
+            "Vir is irregular: venho, vens, vem, vimos, vêm. Venho de comboio means I come by train.",
+            "Ir is movement away from where you are; vir is movement towards the speaker: Vens cá? Vou já!",
+            "Vir de means to come from: Venho do trabalho. Note: vimos is both we come and we saw, context decides."
+          ],
+          "q": "Where do you come from today, and how do you usually come to work or class?",
+          "c": "Say three sentences: one with venho, one with vou, and one inviting a friend with Vens comigo?"
+        },
+        "de": {
+          "t": "Vir: kommen",
+          "g": "Du lernst das Präsens von vir und den Unterschied zwischen ir und vir.",
+          "p": [
+            "Vir ist unregelmäßig: venho, vens, vem, vimos, vêm. Venho de comboio heißt Ich komme mit dem Zug.",
+            "Ir ist Bewegung weg vom Sprecher, vir Bewegung zu ihm hin: Vens cá? Vou já! (Kommst du her? Ich komme gleich!)",
+            "Vir de heißt herkommen von: Venho do trabalho. Achtung: Auf Deutsch sagt man oft kommen, wo Portugiesisch ir verlangt."
+          ],
+          "q": "Woher kommst du heute, und wie kommst du normalerweise zur Arbeit oder zum Kurs?",
+          "c": "Bilde drei Sätze: einen mit venho, einen mit vou und eine Einladung mit Vens comigo?"
+        },
+        "es": {
+          "t": "Vir: venir",
+          "g": "Aprender el presente de vir y cuándo usar ir o vir.",
+          "p": [
+            "Vir es irregular: venho, vens, vem, vimos, vêm. Venho de comboio significa vengo en tren.",
+            "Como en español, ir es alejarse y vir acercarse a quien habla: Vens cá? Vou já! (¿Vienes? ¡Ya voy!)",
+            "Vir de es venir de: Venho do trabalho. Ojo: vimos es a la vez venimos y vimos; el contexto decide."
+          ],
+          "q": "¿De dónde vienes hoy y cómo sueles venir al trabajo o a clase?",
+          "c": "Di tres frases: una con venho, otra con vou y una invitación con Vens comigo?"
+        },
+        "fr": {
+          "t": "Vir : venir",
+          "g": "Apprendre le présent de vir et quand utiliser ir ou vir.",
+          "p": [
+            "Vir est irrégulier : venho, vens, vem, vimos, vêm. Venho de comboio veut dire je viens en train.",
+            "Ir indique qu'on s'éloigne, vir qu'on se rapproche de celui qui parle : Vens cá? Vou já! (Tu viens ? J'arrive !)",
+            "Vir de signifie venir de : Venho do trabalho. Attention : J'arrive se dit Vou já, pas Venho já."
+          ],
+          "q": "D'où viens-tu aujourd'hui, et comment viens-tu d'habitude au travail ou en cours ?",
+          "c": "Dis trois phrases : une avec venho, une avec vou et une invitation avec Vens comigo?"
+        },
+        "it": {
+          "t": "Vir: venire",
+          "g": "Impari il presente di vir e quando usare ir o vir.",
+          "p": [
+            "Vir è irregolare: venho, vens, vem, vimos, vêm. Venho de comboio vuol dire vengo in treno.",
+            "Ir è allontanarsi, vir avvicinarsi a chi parla: Vens cá? Vou já! (Vieni qui? Arrivo subito!)",
+            "Vir de significa venire da: Venho do trabalho. Attenzione: arrivo! in portoghese è Vou já!, non Venho já."
+          ],
+          "q": "Da dove vieni oggi, e come vieni di solito al lavoro o a lezione?",
+          "c": "Di' tre frasi: una con venho, una con vou e un invito con Vens comigo?"
+        },
+        "pt": {
+          "t": "Vir: o verbo vir",
+          "g": "Revê o presente de vir e como explicar a diferença entre ir e vir a um estrangeiro.",
+          "p": [
+            "Venho, vens, vem, vimos, vêm: o acento de vêm distingue o plural de vem, um erro frequente na escrita.",
+            "Ir afasta-se de quem fala, vir aproxima-se: Vens cá? Vou já! Muitos aprendentes dizem Venho já por engano.",
+            "Vimos é presente de vir e pretérito de ver ao mesmo tempo; vale a pena mostrar exemplos com contexto."
+          ],
+          "q": "Como explicarias a um estrangeiro porque se responde Vou já! quando alguém nos chama?",
+          "c": "Escreve quatro frases que mostrem bem a diferença entre ir e vir, para um amigo que está a aprender."
+        },
+        "pt_BR": {
+          "t": "Vir: o verbo vir",
+          "g": "Revise o presente de vir e o uso de ir e vir em Portugal.",
+          "p": [
+            "O presente é igual: venho, vens, vem, vimos, vêm. Em Portugal o tu é comum: Vens jantar cá a casa?",
+            "Cá e lá substituem muitas vezes aqui e ali: Vem cá! é a forma mais natural em Portugal.",
+            "Para responder a quem chama, diz-se Vou já! Lá também se ouve Já vou, mas Vou já é bem típico."
+          ],
+          "q": "Como você convidaria um amigo português para vir à sua casa, usando tu?",
+          "c": "Escreva três convites com vens e cá, como um português diria."
+        }
+      },
+      "target": {
+        "vocab": [
+          {
+            "w": "vir",
+            "ex": "Venho de autocarro todos os dias."
+          },
+          {
+            "w": "vens comigo?",
+            "ex": "Vou ao cinema. Vens comigo?"
+          },
+          {
+            "w": "vem cá",
+            "ex": "Vem cá, quero mostrar-te uma coisa."
+          },
+          {
+            "w": "vir de",
+            "ex": "Ela vem do trabalho às seis."
+          },
+          {
+            "w": "vou já!",
+            "ex": "Estás pronto? Sim, vou já!"
+          },
+          {
+            "w": "eles vêm",
+            "ex": "Os meus pais vêm de Coimbra."
+          }
+        ],
+        "gram": "Vir: venho, vens, vem, vimos, vêm. Ir é afastar-se de quem fala; vir é aproximar-se: vem cá, vou já."
+      }
+    },
+    {
+      "d": 62,
+      "lv": "A1",
+      "i18n": {
+        "en": {
+          "t": "Ir + infinitive: the near future",
+          "g": "Talk about your plans with ir plus a verb.",
+          "p": [
+            "Use the present of ir + infinitive: Vou viajar amanhã (I am going to travel tomorrow).",
+            "The forms: vou, vais, vai, vamos, vão. Negative: Não vou trabalhar no sábado.",
+            "Vamos + infinitive also means let's: Vamos comer? Brazilians use it exactly the same way."
+          ],
+          "q": "What are you going to do this weekend? Tell me two plans with vou.",
+          "c": "Write five sentences about next week, each starting with vou, vais, vai, vamos or vão."
+        },
+        "de": {
+          "t": "Ir + Infinitiv: die nahe Zukunft",
+          "g": "Du sprichst über Pläne mit ir plus Verb.",
+          "p": [
+            "Präsens von ir + Infinitiv: Vou viajar amanhã (Ich werde morgen reisen).",
+            "Die Formen: vou, vais, vai, vamos, vão. Verneint: Não vou trabalhar no sábado.",
+            "Vamos + Infinitiv heißt auch lass uns: Vamos comer? In Brasilien genauso."
+          ],
+          "q": "Was wirst du am Wochenende machen? Nenn mir zwei Pläne mit vou.",
+          "c": "Schreib fünf Sätze über nächste Woche, jeder beginnt mit vou, vais, vai, vamos oder vão."
+        },
+        "es": {
+          "t": "Ir + infinitivo: el futuro próximo",
+          "g": "Hablar de tus planes con ir más un verbo.",
+          "p": [
+            "Igual que en español, pero sin a: Vou viajar amanhã (voy a viajar mañana).",
+            "Las formas: vou, vais, vai, vamos, vão. Negativo: Não vou trabalhar no sábado.",
+            "Vamos + infinitivo también es vamos a: Vamos comer? Error típico: decir vou a viajar."
+          ],
+          "q": "¿Qué vas a hacer este fin de semana? Cuéntame dos planes con vou.",
+          "c": "Escribe cinco frases sobre la próxima semana, cada una con vou, vais, vai, vamos o vão."
+        },
+        "fr": {
+          "t": "Ir + infinitif : le futur proche",
+          "g": "Parler de tes projets avec ir suivi d'un verbe.",
+          "p": [
+            "Comme le futur proche français : Vou viajar amanhã (je vais voyager demain).",
+            "Les formes : vou, vais, vai, vamos, vão. Négation : Não vou trabalhar no sábado.",
+            "Vamos + infinitif veut aussi dire allons-y : Vamos comer? (On mange ?) Pareil au Brésil."
+          ],
+          "q": "Qu'est-ce que tu vas faire ce week-end ? Donne-moi deux projets avec vou.",
+          "c": "Écris cinq phrases sur la semaine prochaine, chacune avec vou, vais, vai, vamos ou vão."
+        },
+        "it": {
+          "t": "Ir + infinito: il futuro vicino",
+          "g": "Parli dei tuoi piani con ir più un verbo.",
+          "p": [
+            "Il presente di ir + infinito: Vou viajar amanhã (domani viaggerò, sto per viaggiare).",
+            "Le forme: vou, vais, vai, vamos, vão. Negativo: Não vou trabalhar no sábado.",
+            "Vamos + infinito vuol dire anche andiamo a, dai: Vamos comer? In Brasile è identico."
+          ],
+          "q": "Cosa farai questo fine settimana? Dimmi due piani con vou.",
+          "c": "Scrivi cinque frasi sulla prossima settimana, ognuna con vou, vais, vai, vamos o vão."
+        },
+        "pt": {
+          "t": "Ir + infinitivo: o futuro próximo",
+          "g": "Revê o futuro com ir + infinitivo, a forma mais usada na fala.",
+          "p": [
+            "Na conversa quase ninguém diz viajarei; diz-se vou viajar. O futuro simples fica para a escrita formal.",
+            "Vamos + infinitivo serve para propor: Vamos jantar fora? É uma forma simpática de convidar.",
+            "Os falantes de espanhol dizem muitas vezes vou a viajar; o português não leva preposição."
+          ],
+          "q": "Que planos tens para o próximo mês? Conta-me três com vou.",
+          "c": "Escreve um parágrafo sobre os teus planos de férias usando só ir + infinitivo."
+        },
+        "pt_BR": {
+          "t": "Ir + infinitivo: o futuro próximo",
+          "g": "Revise o futuro com ir + infinitivo, igual nos dois países.",
+          "p": [
+            "A estrutura é a mesma: Vou viajar amanhã. Em Portugal, com tu: Vais trabalhar hoje?",
+            "Em Portugal, uma frase como Vou estar a trabalhar corresponde ao brasileiro Vou estar trabalhando.",
+            "Vamos + infinitivo serve para propor: Vamos lanchar? Lanchar é muito usado em Portugal."
+          ],
+          "q": "Que planos você tem para o fim de semana? Conte dois usando vou.",
+          "c": "Escreva cinco frases sobre seus planos, com tu e com palavras de Portugal."
+        }
+      },
+      "target": {
+        "vocab": [
+          {
+            "w": "vou viajar",
+            "ex": "Vou viajar para o Porto amanhã."
+          },
+          {
+            "w": "vais trabalhar?",
+            "ex": "Vais trabalhar no sábado?"
+          },
+          {
+            "w": "vamos comer",
+            "ex": "Vamos comer uma francesinha?"
+          },
+          {
+            "w": "não vou sair",
+            "ex": "Hoje não vou sair, estou cansado."
+          },
+          {
+            "w": "eles vão visitar",
+            "ex": "Eles vão visitar os avós no domingo."
+          },
+          {
+            "w": "o plano",
+            "ex": "O plano é ir à praia de manhã."
+          }
+        ],
+        "gram": "Futuro próximo: ir no presente + infinitivo, sem preposição: vou estudar, vamos sair. Na fala substitui o futuro simples."
+      }
+    },
+    {
+      "d": 63,
+      "lv": "A1",
+      "i18n": {
+        "en": {
+          "t": "Future time expressions",
+          "g": "Say when things will happen in the future.",
+          "p": [
+            "Amanhã (tomorrow), depois de amanhã (the day after tomorrow), logo (later today), daqui a pouco (soon).",
+            "Na próxima semana, no próximo mês, no próximo ano; or with que vem: na semana que vem.",
+            "No fim de semana means at the weekend. Daqui a dois dias means in two days."
+          ],
+          "q": "When is your next holiday? Answer with an expression like no próximo mês.",
+          "c": "Make a mini-agenda: write four plans with amanhã, depois de amanhã, no fim de semana and daqui a."
+        },
+        "de": {
+          "t": "Zeitangaben für die Zukunft",
+          "g": "Du sagst, wann etwas in der Zukunft passiert.",
+          "p": [
+            "Amanhã (morgen), depois de amanhã (übermorgen), logo (später heute), daqui a pouco (gleich).",
+            "Na próxima semana, no próximo mês, no próximo ano; oder mit que vem: na semana que vem.",
+            "No fim de semana heißt am Wochenende. Daqui a dois dias heißt in zwei Tagen."
+          ],
+          "q": "Wann ist dein nächster Urlaub? Antworte mit einem Ausdruck wie no próximo mês.",
+          "c": "Mach eine Mini-Agenda: vier Pläne mit amanhã, depois de amanhã, no fim de semana und daqui a."
+        },
+        "es": {
+          "t": "Expresiones de tiempo futuro",
+          "g": "Decir cuándo pasarán las cosas en el futuro.",
+          "p": [
+            "Amanhã (mañana), depois de amanhã (pasado mañana), logo (luego, más tarde), daqui a pouco (dentro de poco).",
+            "Na próxima semana, no próximo mês, no próximo ano; o con que vem: na semana que vem.",
+            "No fim de semana es el fin de semana. Daqui a dois dias es dentro de dos días."
+          ],
+          "q": "¿Cuándo son tus próximas vacaciones? Responde con una expresión como no próximo mês.",
+          "c": "Haz una miniagenda: cuatro planes con amanhã, depois de amanhã, no fim de semana y daqui a."
+        },
+        "fr": {
+          "t": "Expressions de temps au futur",
+          "g": "Dire quand les choses vont se passer.",
+          "p": [
+            "Amanhã (demain), depois de amanhã (après-demain), logo (plus tard), daqui a pouco (tout à l'heure).",
+            "Na próxima semana, no próximo mês, no próximo ano ; ou avec que vem : na semana que vem.",
+            "No fim de semana, c'est le week-end. Daqui a dois dias veut dire dans deux jours."
+          ],
+          "q": "Quand sont tes prochaines vacances ? Réponds avec une expression comme no próximo mês.",
+          "c": "Fais un mini-agenda : quatre projets avec amanhã, depois de amanhã, no fim de semana et daqui a."
+        },
+        "it": {
+          "t": "Espressioni di tempo futuro",
+          "g": "Dici quando succederanno le cose.",
+          "p": [
+            "Amanhã (domani), depois de amanhã (dopodomani), logo (più tardi), daqui a pouco (tra poco).",
+            "Na próxima semana, no próximo mês, no próximo ano; oppure con que vem: na semana que vem.",
+            "No fim de semana vuol dire nel fine settimana. Daqui a dois dias vuol dire tra due giorni."
+          ],
+          "q": "Quando sono le tue prossime vacanze? Rispondi con un'espressione come no próximo mês.",
+          "c": "Fai una mini-agenda: quattro piani con amanhã, depois de amanhã, no fim de semana e daqui a."
+        },
+        "pt": {
+          "t": "Expressões de tempo futuro",
+          "g": "Revê as expressões de futuro e as suas nuances.",
+          "p": [
+            "Logo pode ser mais tarde hoje (Até logo!) e daqui a pouco é dentro de pouco tempo.",
+            "Na próxima semana e na semana que vem significam o mesmo; a segunda é mais coloquial.",
+            "Daqui a e dentro de indicam prazo: daqui a três dias, dentro de uma hora. Atenção a não usar há."
+          ],
+          "q": "Qual é a diferença, para ti, entre logo e daqui a pouco?",
+          "c": "Explica a um estrangeiro, com três exemplos, a diferença entre daqui a dois dias e há dois dias."
+        },
+        "pt_BR": {
+          "t": "Expressões de tempo futuro",
+          "g": "Revise as expressões de futuro e o uso de logo em Portugal.",
+          "p": [
+            "Em Portugal, logo quer dizer mais tarde: Logo à noite vou ao cinema. Até logo é até mais tarde.",
+            "Daqui a dois dias e dentro de uma semana servem para prazos, tal como no Brasil.",
+            "Na semana que vem e na próxima semana são iguais nos dois países, assim como daqui a pouco."
+          ],
+          "q": "O que você vai fazer logo à noite, para usar a expressão portuguesa?",
+          "c": "Escreva sua agenda dos próximos três dias com logo, amanhã e depois de amanhã."
+        }
+      },
+      "target": {
+        "vocab": [
+          {
+            "w": "amanhã",
+            "ex": "Amanhã vou ao ginásio."
+          },
+          {
+            "w": "depois de amanhã",
+            "ex": "Depois de amanhã é feriado."
+          },
+          {
+            "w": "na próxima semana",
+            "ex": "Na próxima semana começo um curso novo."
+          },
+          {
+            "w": "no fim de semana",
+            "ex": "No fim de semana vamos à praia."
+          },
+          {
+            "w": "daqui a pouco",
+            "ex": "O comboio chega daqui a pouco."
+          },
+          {
+            "w": "logo à noite",
+            "ex": "Logo à noite janto com a minha irmã."
+          }
+        ],
+        "gram": "Futuro: amanhã, depois de amanhã, na próxima semana = na semana que vem, daqui a dois dias. Logo = mais tarde hoje."
+      }
+    },
+    {
+      "d": 64,
+      "lv": "A1",
+      "i18n": {
+        "en": {
+          "t": "Making plans with friends",
+          "g": "Invite friends and reply to invitations politely.",
+          "p": [
+            "Invite with Queres ir ao cinema? or Vamos tomar um café? Use queres with tu, quer with você.",
+            "Say yes: Combinado!, Boa ideia!, Claro que sim! Agree a time: A que horas? Às oito?",
+            "Say no kindly: Hoje não posso, desculpa. Fica para a próxima? (Maybe next time?)"
+          ],
+          "q": "What would you like to invite me to do this week? Ask me in Portuguese!",
+          "c": "Write a short chat: invite a friend, they say Hoje não posso, and you agree on another day."
+        },
+        "de": {
+          "t": "Pläne mit Freunden machen",
+          "g": "Du lädst Freunde ein und antwortest höflich auf Einladungen.",
+          "p": [
+            "Einladen: Queres ir ao cinema? oder Vamos tomar um café? Queres mit tu, quer mit você.",
+            "Zusagen: Combinado!, Boa ideia!, Claro que sim! Zeit ausmachen: A que horas? Às oito?",
+            "Freundlich absagen: Hoje não posso, desculpa. Fica para a próxima? (Vielleicht nächstes Mal?)"
+          ],
+          "q": "Wozu möchtest du mich diese Woche einladen? Frag mich auf Portugiesisch!",
+          "c": "Schreib einen kurzen Chat: Einladung, Antwort Hoje não posso, und ihr findet einen anderen Tag."
+        },
+        "es": {
+          "t": "Hacer planes con amigos",
+          "g": "Invitar a amigos y responder a invitaciones con amabilidad.",
+          "p": [
+            "Invita con Queres ir ao cinema? o Vamos tomar um café? Queres con tu, quer con você.",
+            "Acepta: Combinado!, Boa ideia!, Claro que sim! Fija la hora: A que horas? Às oito?",
+            "Rechaza con cariño: Hoje não posso, desculpa. Fica para a próxima? (¿Lo dejamos para otra vez?)"
+          ],
+          "q": "¿A qué te gustaría invitarme esta semana? ¡Pregúntamelo en portugués!",
+          "c": "Escribe un chat corto: invitas, tu amigo dice Hoje não posso y quedáis otro día."
+        },
+        "fr": {
+          "t": "Faire des projets avec des amis",
+          "g": "Inviter des amis et répondre poliment aux invitations.",
+          "p": [
+            "Invite avec Queres ir ao cinema? ou Vamos tomar um café? Queres avec tu, quer avec você.",
+            "Accepter : Combinado!, Boa ideia!, Claro que sim! Fixer l'heure : A que horas? Às oito?",
+            "Refuser gentiment : Hoje não posso, desculpa. Fica para a próxima? (Ce sera pour la prochaine ?)"
+          ],
+          "q": "À quoi aimerais-tu m'inviter cette semaine ? Demande-le-moi en portugais !",
+          "c": "Écris un petit chat : tu invites, ton ami répond Hoje não posso, et vous choisissez un autre jour."
+        },
+        "it": {
+          "t": "Fare piani con gli amici",
+          "g": "Inviti gli amici e rispondi gentilmente agli inviti.",
+          "p": [
+            "Invita con Queres ir ao cinema? o Vamos tomar um café? Queres con tu, quer con você.",
+            "Accetta: Combinado!, Boa ideia!, Claro que sim! Fissa l'ora: A que horas? Às oito?",
+            "Rifiuta con garbo: Hoje não posso, desculpa. Fica para a próxima? (Facciamo la prossima volta?)"
+          ],
+          "q": "A cosa vorresti invitarmi questa settimana? Chiedimelo in portoghese!",
+          "c": "Scrivi una breve chat: inviti un amico, lui dice Hoje não posso e vi accordate per un altro giorno."
+        },
+        "pt": {
+          "t": "Combinar planos com amigos",
+          "g": "Revê as fórmulas para convidar, aceitar e recusar com simpatia.",
+          "p": [
+            "Combinado! e Está combinado! fecham um plano; Fica para a próxima suaviza uma recusa.",
+            "Bora? e Vamos lá? são coloquiais e muito ouvidos entre jovens, tanto em Portugal como no Brasil.",
+            "Recusar com uma razão curta é mais simpático: Hoje não posso, tenho um jantar de família."
+          ],
+          "q": "Como costumas recusar um convite sem parecer antipático?",
+          "c": "Escreve três mensagens de convite para um amigo estrangeiro e três respostas possíveis."
+        },
+        "pt_BR": {
+          "t": "Combinar programas com amigos",
+          "g": "Revise como convidar e responder ao estilo português.",
+          "p": [
+            "Em Portugal diz-se Queres ir? com tu; Combinado! e Está combinado! são muito usados.",
+            "Em vez de programa, ouve-se plano: Tens planos para sábado? Bora? também se diz por lá.",
+            "Para recusar: Hoje não posso, desculpa. Fica para a próxima. Tomar um café é o convite clássico."
+          ],
+          "q": "Como você convidaria um colega português para tomar um café depois do trabalho?",
+          "c": "Escreva um diálogo de convite com queres, combinado e fica para a próxima."
+        }
+      },
+      "target": {
+        "vocab": [
+          {
+            "w": "queres ir...?",
+            "ex": "Queres ir ao cinema hoje à noite?"
+          },
+          {
+            "w": "combinado!",
+            "ex": "Às oito no café? Combinado!"
+          },
+          {
+            "w": "hoje não posso",
+            "ex": "Desculpa, hoje não posso."
+          },
+          {
+            "w": "fica para a próxima",
+            "ex": "Não faz mal, fica para a próxima."
+          },
+          {
+            "w": "boa ideia!",
+            "ex": "Jantar na esplanada? Boa ideia!"
+          },
+          {
+            "w": "a que horas?",
+            "ex": "Vamos ao concerto? A que horas?"
+          }
+        ],
+        "gram": "Convidar: Queres + infinitivo? / Vamos + infinitivo? Aceitar: Combinado! Recusar: Hoje não posso. Fica para a próxima."
+      }
+    },
+    {
+      "d": 65,
+      "lv": "A1",
+      "i18n": {
+        "en": {
+          "t": "Telephone Portuguese",
+          "g": "Answer and make simple phone calls in Portuguese.",
+          "p": [
+            "In Portugal people answer with Estou? or Está?, also Sim? In Brazil you hear Alô?",
+            "Quem fala? (Who is speaking?) and Fala o João (João speaking). Posso falar com a Ana?",
+            "If you miss something: Pode repetir, por favor? or Pode falar mais devagar? Then Obrigado, adeus!"
+          ],
+          "q": "How do people answer the phone in your country? Compare it with Estou?",
+          "c": "Practise aloud: answer a call, ask who is speaking, ask them to repeat and say goodbye."
+        },
+        "de": {
+          "t": "Telefonieren auf Portugiesisch",
+          "g": "Du nimmst Anrufe an und führst einfache Telefonate.",
+          "p": [
+            "In Portugal meldet man sich mit Estou? oder Está?, auch Sim? In Brasilien hört man Alô?",
+            "Quem fala? (Wer spricht?) und Fala o João (Hier ist João). Posso falar com a Ana?",
+            "Wenn du etwas verpasst: Pode repetir, por favor? oder Pode falar mais devagar? Dann Obrigado, adeus!"
+          ],
+          "q": "Wie meldet man sich in deinem Land am Telefon? Vergleich es mit Estou?",
+          "c": "Übe laut: Anruf annehmen, fragen, wer spricht, um Wiederholung bitten und verabschieden."
+        },
+        "es": {
+          "t": "Portugués por teléfono",
+          "g": "Contestar y hacer llamadas sencillas en portugués.",
+          "p": [
+            "En Portugal se contesta con Estou? o Está?, también Sim? En Brasil se oye Alô?",
+            "Quem fala? (¿Quién habla?) y Fala o João (Soy João). Posso falar com a Ana?",
+            "Si no entiendes: Pode repetir, por favor? o Pode falar mais devagar? Luego Obrigado, adeus!"
+          ],
+          "q": "¿Cómo se contesta el teléfono en tu país? Compáralo con Estou?",
+          "c": "Practica en voz alta: contesta, pregunta quién habla, pide que repitan y despídete."
+        },
+        "fr": {
+          "t": "Le portugais au téléphone",
+          "g": "Répondre et passer des appels simples en portugais.",
+          "p": [
+            "Au Portugal on répond Estou? ou Está?, aussi Sim? Au Brésil on entend Alô?",
+            "Quem fala? (Qui est à l'appareil ?) et Fala o João (C'est João). Posso falar com a Ana?",
+            "Si tu n'as pas compris : Pode repetir, por favor? ou Pode falar mais devagar? Puis Obrigado, adeus!"
+          ],
+          "q": "Comment répond-on au téléphone dans ton pays ? Compare avec Estou?",
+          "c": "Entraîne-toi à voix haute : décroche, demande qui parle, fais répéter et dis au revoir."
+        },
+        "it": {
+          "t": "Il portoghese al telefono",
+          "g": "Rispondi e fai telefonate semplici in portoghese.",
+          "p": [
+            "In Portogallo si risponde Estou? o Está?, anche Sim? In Brasile si sente Alô?",
+            "Quem fala? (Chi parla?) e Fala o João (Sono João). Posso falar com a Ana?",
+            "Se non capisci: Pode repetir, por favor? o Pode falar mais devagar? Poi Obrigado, adeus!"
+          ],
+          "q": "Come si risponde al telefono nel tuo paese? Confrontalo con Estou?",
+          "c": "Esercitati ad alta voce: rispondi, chiedi chi parla, fai ripetere e saluta."
+        },
+        "pt": {
+          "t": "Português ao telefone",
+          "g": "Revê as fórmulas do telefone e o que surpreende os estrangeiros.",
+          "p": [
+            "Estou? e Está? parecem estranhos a quem aprende; vale a pena explicar que são o nosso olá ao telefone.",
+            "Quem fala?, Da parte de quem? e Um momento, por favor são as fórmulas mais úteis num escritório.",
+            "Pedir para repetir é normal: Pode repetir, por favor? A ligação está má, não o ouço bem."
+          ],
+          "q": "Que frase ao telefone achas mais difícil para um estrangeiro entender?",
+          "c": "Escreve um pequeno guião de chamada para um consultório, com seis falas simples."
+        },
+        "pt_BR": {
+          "t": "Português ao telefone",
+          "g": "Revise como se atende o telefone em Portugal.",
+          "p": [
+            "Em Portugal atende-se com Estou? ou Está?, em vez de Alô? Também se diz Sim? ou Diga.",
+            "Quem fala? e Da parte de quem? são comuns nos dois países; em Portugal, o telemóvel é o celular.",
+            "Para terminar, os portugueses dizem muitas vezes Adeus ou Até já, mesmo em chamadas rápidas."
+          ],
+          "q": "Como você atenderia o telemóvel de um amigo em Lisboa, ao estilo português?",
+          "c": "Escreva uma chamada curta ao estilo português com Estou?, telemóvel e Até já."
+        }
+      },
+      "target": {
+        "vocab": [
+          {
+            "w": "estou?",
+            "ex": "Estou? Sim, sou eu."
+          },
+          {
+            "w": "quem fala?",
+            "ex": "Boa tarde. Quem fala, por favor?"
+          },
+          {
+            "w": "posso falar com...?",
+            "ex": "Posso falar com a senhora Costa?"
+          },
+          {
+            "w": "pode repetir?",
+            "ex": "Desculpe, pode repetir, por favor?"
+          },
+          {
+            "w": "um momento",
+            "ex": "Um momento, vou chamá-lo."
+          },
+          {
+            "w": "o telemóvel",
+            "ex": "Liga-me para o telemóvel."
+          }
+        ],
+        "gram": "Ao telefone em Portugal: Estou? / Está? Pedidos com poder: Posso falar com...? Pode repetir? Pode falar mais devagar?"
+      }
+    },
+    {
+      "d": 66,
+      "lv": "A1",
+      "i18n": {
+        "en": {
+          "t": "Animals and pets",
+          "g": "Name common animals and talk about your pets.",
+          "p": [
+            "Pets: o cão (dog), o gato (cat), o peixe, o pássaro, o coelho. In Brazil a dog is usually o cachorro.",
+            "Talk about them with ter: Tenho um gato. Chama-se Tigre. Tem dois anos e é muito brincalhão.",
+            "Other animals: a vaca, o cavalo, a galinha, a ovelha, o porco. Animals use o or a like any noun."
+          ],
+          "q": "Do you have a pet, or would you like one? Tell me its name and what it is like.",
+          "c": "Describe a pet (real or dream) in four sentences: what it is, its name, age and personality."
+        },
+        "de": {
+          "t": "Tiere und Haustiere",
+          "g": "Du benennst bekannte Tiere und sprichst über deine Haustiere.",
+          "p": [
+            "Haustiere: o cão (Hund), o gato (Katze), o peixe, o pássaro, o coelho. In Brasilien heißt Hund meist o cachorro.",
+            "Mit ter: Tenho um gato. Chama-se Tigre. Tem dois anos e é muito brincalhão.",
+            "Weitere Tiere: a vaca, o cavalo, a galinha, a ovelha, o porco. Achtung: o gato ist männlich, nicht die Katze."
+          ],
+          "q": "Hast du ein Haustier oder hättest du gern eins? Sag mir den Namen und wie es ist.",
+          "c": "Beschreib ein Haustier (echt oder erträumt) in vier Sätzen: Tier, Name, Alter und Charakter."
+        },
+        "es": {
+          "t": "Animales y mascotas",
+          "g": "Nombrar animales comunes y hablar de tus mascotas.",
+          "p": [
+            "Mascotas: o cão (perro), o gato, o peixe (pez), o pássaro, o coelho (conejo). En Brasil, perro es o cachorro.",
+            "Con ter: Tenho um gato. Chama-se Tigre. Tem dois anos e é muito brincalhão (juguetón).",
+            "Otros: a vaca, o cavalo, a galinha, a ovelha (oveja), o porco (cerdo). Ojo: cachorro en Portugal es cachorrito."
+          ],
+          "q": "¿Tienes mascota o te gustaría tener una? Dime su nombre y cómo es.",
+          "c": "Describe una mascota (real o soñada) en cuatro frases: qué es, nombre, edad y carácter."
+        },
+        "fr": {
+          "t": "Animaux et animaux de compagnie",
+          "g": "Nommer des animaux courants et parler de tes animaux.",
+          "p": [
+            "Animaux de compagnie : o cão (chien), o gato (chat), o peixe, o pássaro, o coelho (lapin). Au Brésil, chien se dit o cachorro.",
+            "Avec ter : Tenho um gato. Chama-se Tigre. Tem dois anos e é muito brincalhão (joueur).",
+            "Autres : a vaca, o cavalo, a galinha (poule), a ovelha (brebis), o porco. Tous ont o ou a."
+          ],
+          "q": "As-tu un animal ou aimerais-tu en avoir un ? Dis-moi son nom et comment il est.",
+          "c": "Décris un animal (réel ou rêvé) en quatre phrases : espèce, nom, âge et caractère."
+        },
+        "it": {
+          "t": "Animali e animali domestici",
+          "g": "Nomini animali comuni e parli dei tuoi animali.",
+          "p": [
+            "Animali domestici: o cão (cane), o gato, o peixe, o pássaro (uccello), o coelho. In Brasile il cane è o cachorro.",
+            "Con ter: Tenho um gato. Chama-se Tigre. Tem dois anos e é muito brincalhão (giocherellone).",
+            "Altri: a vaca, o cavalo, a galinha, a ovelha (pecora), o porco (maiale). Ognuno con o o a."
+          ],
+          "q": "Hai un animale o ti piacerebbe averne uno? Dimmi come si chiama e com'è.",
+          "c": "Descrivi un animale (vero o sognato) in quattro frasi: che cos'è, nome, età e carattere."
+        },
+        "pt": {
+          "t": "Animais e animais de estimação",
+          "g": "Revê o vocabulário dos animais e as diferenças entre Portugal e Brasil.",
+          "p": [
+            "Cão em Portugal, cachorro no Brasil; em Portugal, cachorro é um cão bebé, o que confunde muitos aprendentes.",
+            "Os femininos irregulares merecem atenção: cão e cadela, cavalo e égua, boi e vaca, galo e galinha.",
+            "Animal de estimação é a expressão portuguesa; no Brasil diz-se bicho de estimação ou pet."
+          ],
+          "q": "Que animal de estimação achas que combina melhor com a vida numa cidade?",
+          "c": "Faz uma lista de cinco animais com o masculino e o feminino, para ajudar quem aprende."
+        },
+        "pt_BR": {
+          "t": "Animais e bichos de estimação",
+          "g": "Revise os nomes de animais que mudam em Portugal.",
+          "p": [
+            "Em Portugal, o cachorro é o cão; cachorro lá é filhote de cão. Animal de estimação é o termo comum.",
+            "O rato, a ratazana e o esquilo são iguais; o filhote chama-se muitas vezes cria ou bebé.",
+            "Uma frase típica: Tenho um cão e uma gata. O meu cão chama-se Bolinhas."
+          ],
+          "q": "Você tem um bicho de estimação? Descreva-o como um português falaria.",
+          "c": "Escreva quatro frases sobre um animal usando cão, cadela e o possessivo com artigo: o meu."
+        }
+      },
+      "target": {
+        "vocab": [
+          {
+            "w": "o cão",
+            "ex": "O meu cão adora passear no parque."
+          },
+          {
+            "w": "o gato",
+            "ex": "Tenho um gato preto muito calmo."
+          },
+          {
+            "w": "o animal de estimação",
+            "ex": "Tens algum animal de estimação?"
+          },
+          {
+            "w": "chama-se",
+            "ex": "A minha cadela chama-se Luna."
+          },
+          {
+            "w": "o cavalo",
+            "ex": "Há cavalos naquela quinta."
+          },
+          {
+            "w": "brincalhão",
+            "ex": "O meu coelho é pequeno e brincalhão."
+          }
+        ],
+        "gram": "Ter para animais: Tenho um cão. Femininos: cão/cadela, gato/gata, cavalo/égua. Em Portugal cão; no Brasil cachorro."
+      }
+    },
+    {
+      "d": 67,
+      "lv": "A1",
+      "i18n": {
+        "en": {
+          "t": "Nature and landscapes",
+          "g": "Name natural places and describe places you love.",
+          "p": [
+            "A praia (beach), o mar (sea), a montanha, o rio, o campo (countryside), a floresta, o lago.",
+            "Describe with é and tem: A praia é linda. A serra tem muitas árvores. Há um rio perto da aldeia.",
+            "Useful adjectives: bonito, calmo, verde, alto, limpo. Portugal has the Serra da Estrela and the Douro river."
+          ],
+          "q": "What landscape do you love most: sea, mountains or countryside? Why?",
+          "c": "Describe a place you love in four sentences, using é, tem, há and two adjectives."
+        },
+        "de": {
+          "t": "Natur und Landschaften",
+          "g": "Du benennst Naturorte und beschreibst Orte, die du liebst.",
+          "p": [
+            "A praia (Strand), o mar (Meer), a montanha (Berg), o rio (Fluss), o campo (Land), a floresta, o lago.",
+            "Beschreiben mit é und tem: A praia é linda. A serra tem muitas árvores. Há um rio perto da aldeia.",
+            "Adjektive: bonito, calmo, verde, alto, limpo. Portugal hat die Serra da Estrela und den Douro."
+          ],
+          "q": "Welche Landschaft liebst du am meisten: Meer, Berge oder Land? Warum?",
+          "c": "Beschreib einen Lieblingsort in vier Sätzen mit é, tem, há und zwei Adjektiven."
+        },
+        "es": {
+          "t": "Naturaleza y paisajes",
+          "g": "Nombrar lugares naturales y describir sitios que te encantan.",
+          "p": [
+            "A praia (playa), o mar, a montanha, o rio, o campo, a floresta (bosque), o lago.",
+            "Describe con é y tem: A praia é linda. A serra tem muitas árvores. Há um rio perto da aldeia.",
+            "Adjetivos: bonito, calmo, verde, alto, limpo. Ojo: o mar es masculino y o rio sin acento."
+          ],
+          "q": "¿Qué paisaje te gusta más: el mar, la montaña o el campo? ¿Por qué?",
+          "c": "Describe un lugar que te encanta en cuatro frases, con é, tem, há y dos adjetivos."
+        },
+        "fr": {
+          "t": "Nature et paysages",
+          "g": "Nommer des lieux naturels et décrire des endroits que tu aimes.",
+          "p": [
+            "A praia (plage), o mar (mer), a montanha, o rio (fleuve), o campo (campagne), a floresta, o lago.",
+            "Décris avec é et tem : A praia é linda. A serra tem muitas árvores. Há um rio perto da aldeia.",
+            "Adjectifs : bonito, calmo, verde, alto, limpo. Attention : o mar est masculin, la mer au féminin en français."
+          ],
+          "q": "Quel paysage préfères-tu : la mer, la montagne ou la campagne ? Pourquoi ?",
+          "c": "Décris un endroit que tu aimes en quatre phrases, avec é, tem, há et deux adjectifs."
+        },
+        "it": {
+          "t": "Natura e paesaggi",
+          "g": "Nomini luoghi naturali e descrivi i posti che ami.",
+          "p": [
+            "A praia (spiaggia), o mar, a montanha, o rio (fiume), o campo (campagna), a floresta, o lago.",
+            "Descrivi con é e tem: A praia é linda. A serra tem muitas árvores. Há um rio perto da aldeia.",
+            "Aggettivi: bonito, calmo, verde, alto, limpo. Il Portogallo ha la Serra da Estrela e il fiume Douro."
+          ],
+          "q": "Quale paesaggio ami di più: mare, montagna o campagna? Perché?",
+          "c": "Descrivi un posto che ami in quattro frasi, con é, tem, há e due aggettivi."
+        },
+        "pt": {
+          "t": "Natureza e paisagens",
+          "g": "Revê o vocabulário da natureza e como descrever paisagens com riqueza.",
+          "p": [
+            "Serra e montanha são quase sinónimos; serra é muito usada em nomes: Serra da Estrela, Serra de Sintra.",
+            "Para descrever, junta sensações: o cheiro a mar, o som do rio, a vista da serra, o verde do campo.",
+            "Praia fluvial é uma praia de rio, muito típica no interior de Portugal, e surpreende os estrangeiros."
+          ],
+          "q": "Qual é a paisagem portuguesa de que mais gostas e porquê?",
+          "c": "Descreve uma paisagem portuguesa em cinco frases, com pelo menos três sentidos diferentes."
+        },
+        "pt_BR": {
+          "t": "Natureza e paisagens",
+          "g": "Revise palavras de natureza com o sabor de Portugal.",
+          "p": [
+            "Em Portugal, serra é muito comum: Serra da Estrela, Serra de Sintra. Campo é o interior rural.",
+            "Praia fluvial é uma praia de rio, muito comum no centro e norte de Portugal.",
+            "Aldeia é um pequeno povoado no campo; vila é maior. O mar português é o Atlântico, mais frio."
+          ],
+          "q": "Que paisagem de Portugal você gostaria de conhecer primeiro?",
+          "c": "Compare uma praia brasileira com uma portuguesa em quatro frases."
+        }
+      },
+      "target": {
+        "vocab": [
+          {
+            "w": "a praia",
+            "ex": "No verão vamos sempre à praia."
+          },
+          {
+            "w": "a serra",
+            "ex": "A serra fica coberta de neve no inverno."
+          },
+          {
+            "w": "o rio",
+            "ex": "O rio Douro passa pelo Porto."
+          },
+          {
+            "w": "o campo",
+            "ex": "Os meus avós vivem no campo."
+          },
+          {
+            "w": "a paisagem",
+            "ex": "Que paisagem tão bonita!"
+          },
+          {
+            "w": "o mar",
+            "ex": "Gosto de ouvir o som do mar."
+          }
+        ],
+        "gram": "Descrever lugares: ser para características (A praia é calma), ter para o que contém (A serra tem lagos) e haver: Há um rio."
+      }
+    },
+    {
+      "d": 68,
+      "lv": "A1",
+      "i18n": {
+        "en": {
+          "t": "Comparisons",
+          "g": "Compare people, places and things.",
+          "p": [
+            "More than: mais ... do que. O Porto é mais pequeno do que Lisboa (Porto is smaller than Lisbon).",
+            "Less than: menos ... do que. As ... as: tão ... como, or tão ... quanto, common in Brazil.",
+            "With nouns use tanto/tanta ... como: Tenho tantos livros como tu. Do que can be just que."
+          ],
+          "q": "Compare your city with another city you know. Which is bigger, calmer or more beautiful?",
+          "c": "Write four comparisons between two places, using mais, menos and tão ... como."
+        },
+        "de": {
+          "t": "Vergleiche",
+          "g": "Du vergleichst Menschen, Orte und Dinge.",
+          "p": [
+            "Mehr als: mais ... do que. O Porto é mais pequeno do que Lisboa (Porto ist kleiner als Lissabon).",
+            "Weniger als: menos ... do que. So ... wie: tão ... como, in Brasilien oft tão ... quanto.",
+            "Mit Nomen: tanto/tanta ... como: Tenho tantos livros como tu. Do que darf auch nur que sein."
+          ],
+          "q": "Vergleich deine Stadt mit einer anderen. Welche ist größer, ruhiger oder schöner?",
+          "c": "Schreib vier Vergleiche zwischen zwei Orten mit mais, menos und tão ... como."
+        },
+        "es": {
+          "t": "Comparaciones",
+          "g": "Comparar personas, lugares y cosas.",
+          "p": [
+            "Más que: mais ... do que. O Porto é mais pequeno do que Lisboa (Oporto es más pequeño que Lisboa).",
+            "Menos que: menos ... do que. Tan ... como: tão ... como, o tão ... quanto, frecuente en Brasil.",
+            "Con sustantivos: tanto/tanta ... como: Tenho tantos livros como tu. Do que puede ser solo que."
+          ],
+          "q": "Compara tu ciudad con otra que conozcas. ¿Cuál es más grande, tranquila o bonita?",
+          "c": "Escribe cuatro comparaciones entre dos lugares, con mais, menos y tão ... como."
+        },
+        "fr": {
+          "t": "Les comparaisons",
+          "g": "Comparer des personnes, des lieux et des choses.",
+          "p": [
+            "Plus que : mais ... do que. O Porto é mais pequeno do que Lisboa (Porto est plus petit que Lisbonne).",
+            "Moins que : menos ... do que. Aussi ... que : tão ... como, ou tão ... quanto, fréquent au Brésil.",
+            "Avec un nom : tanto/tanta ... como : Tenho tantos livros como tu. Do que peut devenir que."
+          ],
+          "q": "Compare ta ville avec une autre ville que tu connais. Laquelle est plus grande, calme ou belle ?",
+          "c": "Écris quatre comparaisons entre deux lieux, avec mais, menos et tão ... como."
+        },
+        "it": {
+          "t": "I comparativi",
+          "g": "Confronti persone, luoghi e cose.",
+          "p": [
+            "Più di: mais ... do que. O Porto é mais pequeno do que Lisboa (Porto è più piccola di Lisbona).",
+            "Meno di: menos ... do que. Così ... come: tão ... como, o tão ... quanto, frequente in Brasile.",
+            "Con i nomi: tanto/tanta ... como: Tenho tantos livros como tu. Do que può essere solo que."
+          ],
+          "q": "Confronta la tua città con un'altra che conosci. Quale è più grande, tranquilla o bella?",
+          "c": "Scrivi quattro paragoni tra due luoghi, con mais, menos e tão ... como."
+        },
+        "pt": {
+          "t": "Comparações",
+          "g": "Revê as estruturas de comparação e as escolhas entre do que e que.",
+          "p": [
+            "Mais ... do que e mais ... que são ambos corretos; do que é mais frequente na fala portuguesa.",
+            "Tão ... como domina em Portugal; tão ... quanto é mais brasileiro, mas também se ouve.",
+            "Mais pequeno é normal em Portugal; no Brasil diz-se quase sempre menor. Ambos estão certos."
+          ],
+          "q": "Que comparação farias entre a vida no campo e na cidade?",
+          "c": "Escreve cinco comparações entre Portugal e outro país, variando as estruturas."
+        },
+        "pt_BR": {
+          "t": "Comparações",
+          "g": "Revise as comparações e o que muda em Portugal.",
+          "p": [
+            "Em Portugal diz-se mais pequeno com toda a naturalidade: O meu quarto é mais pequeno do que o teu.",
+            "Tão ... como é a forma mais comum lá; tão ... quanto soa mais brasileiro, mas entende-se.",
+            "Do que é preferido na fala: Lisboa é maior do que o Porto. Que também é correto."
+          ],
+          "q": "Compare sua cidade com Lisboa: o que é mais caro, mais quente ou mais animado?",
+          "c": "Escreva quatro comparações à portuguesa, com mais pequeno e tão ... como."
+        }
+      },
+      "target": {
+        "vocab": [
+          {
+            "w": "mais ... do que",
+            "ex": "O comboio é mais rápido do que o autocarro."
+          },
+          {
+            "w": "menos ... do que",
+            "ex": "Este café é menos forte do que aquele."
+          },
+          {
+            "w": "tão ... como",
+            "ex": "A Ana é tão alta como o irmão."
+          },
+          {
+            "w": "tanto/tanta ... como",
+            "ex": "Não tenho tanto tempo como tu."
+          },
+          {
+            "w": "mais pequeno",
+            "ex": "O meu quarto é mais pequeno do que o teu."
+          },
+          {
+            "w": "comparar",
+            "ex": "Vamos comparar os preços das duas lojas."
+          }
+        ],
+        "gram": "Comparação: mais/menos + adjetivo + do que; tão + adjetivo + como; tanto(s)/tanta(s) + nome + como."
+      }
+    },
+    {
+      "d": 69,
+      "lv": "A1",
+      "i18n": {
+        "en": {
+          "t": "Irregular comparatives",
+          "g": "Use melhor, pior, maior and menor correctly.",
+          "p": [
+            "Bom becomes melhor (better), mau becomes pior (worse): Este bolo é melhor do que aquele.",
+            "Grande becomes maior (bigger), pequeno becomes menor; in Portugal mais pequeno is also very common.",
+            "Never say mais bom or mais grande. Melhor and pior also work as adverbs: Hoje sinto-me melhor."
+          ],
+          "q": "What is better for you, summer or winter? Answer with melhor do que.",
+          "c": "Write four sentences with melhor, pior, maior and menor about food, cities or weather."
+        },
+        "de": {
+          "t": "Unregelmäßige Steigerung",
+          "g": "Du verwendest melhor, pior, maior und menor richtig.",
+          "p": [
+            "Bom wird melhor (besser), mau wird pior (schlechter): Este bolo é melhor do que aquele.",
+            "Grande wird maior (größer), pequeno wird menor; in Portugal ist mais pequeno auch sehr üblich.",
+            "Nie mais bom oder mais grande sagen. Melhor und pior gehen auch als Adverb: Hoje sinto-me melhor."
+          ],
+          "q": "Was ist für dich besser, Sommer oder Winter? Antworte mit melhor do que.",
+          "c": "Schreib vier Sätze mit melhor, pior, maior und menor über Essen, Städte oder Wetter."
+        },
+        "es": {
+          "t": "Comparativos irregulares",
+          "g": "Usar bien melhor, pior, maior y menor.",
+          "p": [
+            "Bom pasa a melhor (mejor), mau pasa a pior (peor): Este bolo é melhor do que aquele.",
+            "Grande pasa a maior (mayor, más grande), pequeno a menor; en Portugal mais pequeno también es muy común.",
+            "Nunca digas mais bom ni mais grande. Melhor y pior también son adverbios: Hoje sinto-me melhor."
+          ],
+          "q": "¿Qué es mejor para ti, el verano o el invierno? Responde con melhor do que.",
+          "c": "Escribe cuatro frases con melhor, pior, maior y menor sobre comida, ciudades o el tiempo."
+        },
+        "fr": {
+          "t": "Comparatifs irréguliers",
+          "g": "Utiliser correctement melhor, pior, maior et menor.",
+          "p": [
+            "Bom devient melhor (meilleur, mieux), mau devient pior (pire) : Este bolo é melhor do que aquele.",
+            "Grande devient maior (plus grand), pequeno devient menor ; au Portugal, mais pequeno est aussi très courant.",
+            "Ne dis jamais mais bom ni mais grande. Melhor sert aussi d'adverbe : Hoje sinto-me melhor."
+          ],
+          "q": "Qu'est-ce qui est mieux pour toi, l'été ou l'hiver ? Réponds avec melhor do que.",
+          "c": "Écris quatre phrases avec melhor, pior, maior et menor sur la cuisine, les villes ou la météo."
+        },
+        "it": {
+          "t": "Comparativi irregolari",
+          "g": "Usi bene melhor, pior, maior e menor.",
+          "p": [
+            "Bom diventa melhor (migliore, meglio), mau diventa pior (peggiore): Este bolo é melhor do que aquele.",
+            "Grande diventa maior (maggiore), pequeno diventa menor; in Portogallo è comunissimo anche mais pequeno.",
+            "Mai dire mais bom o mais grande. Melhor e pior sono anche avverbi: Hoje sinto-me melhor."
+          ],
+          "q": "Cosa è meglio per te, l'estate o l'inverno? Rispondi con melhor do que.",
+          "c": "Scrivi quattro frasi con melhor, pior, maior e menor su cibo, città o tempo."
+        },
+        "pt": {
+          "t": "Comparativos irregulares",
+          "g": "Revê os comparativos irregulares e os erros típicos dos aprendentes.",
+          "p": [
+            "Mais bom e mais grande são erros clássicos de quem aprende; o certo é melhor e maior.",
+            "Mais pequeno é correto e muito usado em Portugal, ao contrário de mais grande, que nunca se usa.",
+            "Mais bem e mais mal aparecem antes de particípios: É a sala mais bem decorada."
+          ],
+          "q": "Qual destes erros ouves mais a estrangeiros: mais bom ou mais grande?",
+          "c": "Escreve três pares de frases certo/errado para explicar estes comparativos a um aprendente."
+        },
+        "pt_BR": {
+          "t": "Comparativos irregulares",
+          "g": "Revise os comparativos e a preferência portuguesa por mais pequeno.",
+          "p": [
+            "Melhor, pior e maior são iguais nos dois países. Menor existe em Portugal, mas mais pequeno é mais natural.",
+            "Uma frase muito portuguesa: Este apartamento é mais pequeno, mas tem melhor vista.",
+            "Para dizer que alguém está melhor de saúde: Já estou melhor, obrigado. Igual ao Brasil."
+          ],
+          "q": "O que é melhor e o que é pior em morar numa cidade grande?",
+          "c": "Escreva quatro frases com melhor, pior, maior e mais pequeno sobre duas cidades."
+        }
+      },
+      "target": {
+        "vocab": [
+          {
+            "w": "melhor",
+            "ex": "Este restaurante é melhor do que o outro."
+          },
+          {
+            "w": "pior",
+            "ex": "O trânsito hoje está pior do que ontem."
+          },
+          {
+            "w": "maior",
+            "ex": "Lisboa é maior do que Braga."
+          },
+          {
+            "w": "menor",
+            "ex": "A minha mala é menor do que a tua."
+          },
+          {
+            "w": "mais pequeno",
+            "ex": "A cozinha é mais pequena do que a sala."
+          },
+          {
+            "w": "sinto-me melhor",
+            "ex": "Hoje já me sinto melhor."
+          }
+        ],
+        "gram": "Comparativos irregulares: bom > melhor, mau > pior, grande > maior, pequeno > menor (ou mais pequeno). Nunca mais bom."
+      }
+    },
+    {
+      "d": 70,
+      "lv": "A1",
+      "i18n": {
+        "en": {
+          "t": "Superlatives",
+          "g": "Say that something is the most or the least, and use -íssimo.",
+          "p": [
+            "The most: o/a mais + adjective: É a praia mais bonita do Algarve. Use de for the group.",
+            "Irregular forms: o melhor, o pior, o maior, o menor: É o melhor café da cidade.",
+            "The -íssimo ending means very, very: lindíssimo, caríssimo, facílimo. Muito lindo is also fine."
+          ],
+          "q": "What is the most beautiful place you have ever seen? Use o mais ... or -íssimo.",
+          "c": "Write three superlatives about your city and two words ending in -íssimo."
+        },
+        "de": {
+          "t": "Superlative",
+          "g": "Du sagst, dass etwas am meisten oder am wenigsten ist, und nutzt -íssimo.",
+          "p": [
+            "Der/die/das ...ste: o/a mais + Adjektiv: É a praia mais bonita do Algarve. Gruppe mit de.",
+            "Unregelmäßig: o melhor, o pior, o maior, o menor: É o melhor café da cidade.",
+            "Die Endung -íssimo heißt sehr, sehr: lindíssimo, caríssimo, facílimo. Muito lindo geht auch."
+          ],
+          "q": "Was ist der schönste Ort, den du je gesehen hast? Nutze o mais ... oder -íssimo.",
+          "c": "Schreib drei Superlative über deine Stadt und zwei Wörter auf -íssimo."
+        },
+        "es": {
+          "t": "Superlativos",
+          "g": "Decir que algo es lo más o lo menos, y usar -íssimo.",
+          "p": [
+            "El más: o/a mais + adjetivo: É a praia mais bonita do Algarve. El grupo va con de.",
+            "Formas irregulares: o melhor, o pior, o maior, o menor: É o melhor café da cidade.",
+            "La terminación -íssimo es como -ísimo: lindíssimo, caríssimo, facílimo. Ojo a la doble s."
+          ],
+          "q": "¿Cuál es el lugar más bonito que has visto? Usa o mais ... o -íssimo.",
+          "c": "Escribe tres superlativos sobre tu ciudad y dos palabras terminadas en -íssimo."
+        },
+        "fr": {
+          "t": "Les superlatifs",
+          "g": "Dire que quelque chose est le plus ou le moins, et utiliser -íssimo.",
+          "p": [
+            "Le plus : o/a mais + adjectif : É a praia mais bonita do Algarve. Le groupe avec de.",
+            "Formes irrégulières : o melhor, o pior, o maior, o menor : É o melhor café da cidade.",
+            "La terminaison -íssimo veut dire très, très : lindíssimo, caríssimo, facílimo. Muito lindo marche aussi."
+          ],
+          "q": "Quel est le plus bel endroit que tu aies vu ? Utilise o mais ... ou -íssimo.",
+          "c": "Écris trois superlatifs sur ta ville et deux mots en -íssimo."
+        },
+        "it": {
+          "t": "I superlativi",
+          "g": "Dici che qualcosa è il più o il meno, e usi -íssimo.",
+          "p": [
+            "Il più: o/a mais + aggettivo: É a praia mais bonita do Algarve. Il gruppo con de.",
+            "Forme irregolari: o melhor, o pior, o maior, o menor: É o melhor café da cidade.",
+            "Il suffisso -íssimo è come l'italiano -issimo: lindíssimo, caríssimo, facílimo. Attento all'accento."
+          ],
+          "q": "Qual è il posto più bello che hai mai visto? Usa o mais ... o -íssimo.",
+          "c": "Scrivi tre superlativi sulla tua città e due parole in -íssimo."
+        },
+        "pt": {
+          "t": "Superlativos",
+          "g": "Revê o superlativo relativo e o absoluto, com as formas eruditas.",
+          "p": [
+            "O superlativo relativo leva de: o aluno mais aplicado da turma, e não na turma.",
+            "Ao lado de lindíssimo existem formas eruditas: facílimo, dificílimo, paupérrimo, ótimo, péssimo.",
+            "Na fala, muitas vezes reforça-se com super ou mesmo: É super giro! É mesmo bom!"
+          ],
+          "q": "Qual é o teu adjetivo em -íssimo preferido para elogiar comida?",
+          "c": "Escreve cinco superlativos absolutos e explica a um estrangeiro quando são formais ou coloquiais."
+        },
+        "pt_BR": {
+          "t": "Superlativos",
+          "g": "Revise os superlativos e algumas expressões de Portugal.",
+          "p": [
+            "O mais + adjetivo + de é igual: É a cidade mais bonita de Portugal. -íssimo também: lindíssimo.",
+            "Em Portugal, giro é bonito ou legal: Que casa tão gira! Giríssimo também se ouve.",
+            "Para reforçar, os portugueses usam mesmo e super: Está mesmo bom! É super simpático."
+          ],
+          "q": "Qual é a cidade mais bonita que você já visitou? Responda com um superlativo.",
+          "c": "Escreva quatro elogios à portuguesa, com -íssimo, giro e mesmo."
+        }
+      },
+      "target": {
+        "vocab": [
+          {
+            "w": "o mais bonito",
+            "ex": "É o jardim mais bonito da cidade."
+          },
+          {
+            "w": "o melhor",
+            "ex": "Este é o melhor pastel de nata que já comi."
+          },
+          {
+            "w": "lindíssimo",
+            "ex": "O pôr do sol hoje está lindíssimo."
+          },
+          {
+            "w": "caríssimo",
+            "ex": "Aquele restaurante é caríssimo."
+          },
+          {
+            "w": "facílimo",
+            "ex": "O exercício é facílimo."
+          },
+          {
+            "w": "o maior",
+            "ex": "O Tejo é o maior rio de Portugal."
+          }
+        ],
+        "gram": "Superlativo relativo: o/a mais + adjetivo + de. Absoluto: -íssimo (lindíssimo), facílimo, ótimo, péssimo."
+      }
+    }
+  ]
+}

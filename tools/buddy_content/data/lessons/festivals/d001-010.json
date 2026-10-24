@@ -1,0 +1,835 @@
+{
+ "topic": "festivals",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Welcome to world festivals",
+     "g": "Discover what festivals are, why every culture has them and how our 365-day journey together will work.",
+     "p": [
+      "A festival is a special time when a community celebrates together with food, music, rituals or games.",
+      "Every culture on Earth has celebrations, linked to seasons, history, faith or simply the joy of meeting.",
+      "Each day brings one small lesson: new years, lights, harvests, carnivals and much more, step by step."
+     ],
+     "q": "What is the first festival that comes to mind when you think of your childhood?",
+     "c": "Write down three festivals you have heard of but never celebrated yourself."
+    },
+    "de": {
+     "t": "Willkommen bei den Festen der Welt",
+     "g": "Entdecke, was Feste sind, warum jede Kultur sie kennt und wie unsere gemeinsame Reise über 365 Tage abläuft.",
+     "p": [
+      "Ein Fest ist eine besondere Zeit, in der eine Gemeinschaft mit Essen, Musik, Bräuchen oder Spielen feiert.",
+      "Jede Kultur der Erde feiert, sei es wegen der Jahreszeiten, der Geschichte, des Glaubens oder aus Freude.",
+      "Jeden Tag gibt es eine kleine Lektion: Neujahr, Lichterfeste, Ernte, Karneval und vieles mehr."
+     ],
+     "q": "Welches Fest fällt dir zuerst ein, wenn du an deine Kindheit denkst?",
+     "c": "Schreib drei Feste auf, von denen du gehört, die du aber noch nie selbst gefeiert hast."
+    },
+    "es": {
+     "t": "Bienvenido a las fiestas del mundo",
+     "g": "Descubre qué son las fiestas, por qué todas las culturas las tienen y cómo será nuestro viaje de 365 días.",
+     "p": [
+      "Una fiesta es un momento especial en que una comunidad celebra junta con comida, música, ritos o juegos.",
+      "Todas las culturas del mundo celebran algo: las estaciones, la historia, la fe o la alegría de reunirse.",
+      "Cada día tendrás una pequeña lección: años nuevos, luces, cosechas, carnavales y mucho más."
+     ],
+     "q": "¿Cuál es la primera fiesta que te viene a la mente cuando piensas en tu infancia?",
+     "c": "Apunta tres fiestas de las que hayas oído hablar pero que nunca hayas celebrado."
+    },
+    "fr": {
+     "t": "Bienvenue dans les fêtes du monde",
+     "g": "Découvre ce qu'est une fête, pourquoi chaque culture en a et comment se déroulera notre voyage de 365 jours.",
+     "p": [
+      "Une fête est un moment spécial où une communauté célèbre ensemble avec des plats, de la musique, des rites ou des jeux.",
+      "Toutes les cultures célèbrent quelque chose : les saisons, l'histoire, la foi ou simplement la joie d'être ensemble.",
+      "Chaque jour, une petite leçon : nouvel an, lumières, récoltes, carnavals et bien plus encore."
+     ],
+     "q": "Quelle est la première fête qui te vient à l'esprit quand tu penses à ton enfance ?",
+     "c": "Note trois fêtes dont tu as entendu parler mais que tu n'as jamais célébrées."
+    },
+    "it": {
+     "t": "Benvenuto nelle feste del mondo",
+     "g": "Scopri cosa sono le feste, perché ogni cultura le celebra e come si svolgerà il nostro viaggio di 365 giorni.",
+     "p": [
+      "Una festa è un momento speciale in cui una comunità celebra insieme con cibo, musica, riti o giochi.",
+      "Ogni cultura della Terra festeggia qualcosa: le stagioni, la storia, la fede o la gioia di stare insieme.",
+      "Ogni giorno una piccola lezione: capodanni, luci, raccolti, carnevali e molto altro, passo dopo passo."
+     ],
+     "q": "Qual è la prima festa che ti viene in mente pensando alla tua infanzia?",
+     "c": "Scrivi tre feste di cui hai sentito parlare ma che non hai mai festeggiato."
+    },
+    "pt": {
+     "t": "Bem-vindo às festas do mundo",
+     "g": "Descobre o que são as festas, porque todas as culturas as têm e como vai ser a nossa viagem de 365 dias.",
+     "p": [
+      "Uma festa é um momento especial em que uma comunidade celebra em conjunto com comida, música, rituais ou jogos.",
+      "Todas as culturas do mundo celebram algo: as estações, a história, a fé ou simplesmente a alegria de estar juntos.",
+      "Todos os dias terás uma pequena lição: anos novos, luzes, colheitas, carnavais e muito mais."
+     ],
+     "q": "Qual é a primeira festa que te vem à cabeça quando pensas na tua infância?",
+     "c": "Escreve três festas de que já ouviste falar mas que nunca celebraste."
+    },
+    "pt_BR": {
+     "t": "Bem-vindo às festas do mundo",
+     "g": "Descubra o que são as festas, por que todas as culturas as têm e como vai ser a nossa jornada de 365 dias.",
+     "p": [
+      "Uma festa é um momento especial em que uma comunidade comemora junta com comida, música, rituais ou brincadeiras.",
+      "Todas as culturas do mundo celebram algo: as estações, a história, a fé ou simplesmente a alegria de estar juntos.",
+      "Todo dia você terá uma pequena lição: anos-novos, luzes, colheitas, carnavais e muito mais."
+     ],
+     "q": "Qual é a primeira festa que vem à sua cabeça quando você pensa na sua infância?",
+     "c": "Anote três festas de que você já ouviu falar, mas nunca comemorou."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Festival, holiday or tradition?",
+     "g": "Learn the simple differences between a festival, a public holiday, a feast day and a family tradition.",
+     "p": [
+      "A festival is a celebration with shared activities, like a carnival, a lantern night or a street party.",
+      "A public holiday is a day off set by law; a feast day honours a saint or event in a religious calendar.",
+      "A family tradition is a custom kept by one family, like a special dish cooked on the same day every year."
+     ],
+     "q": "Which public holidays does your country have, and which of them feel like real festivals to you?",
+     "c": "Pick one celebration you know and decide: festival, public holiday, feast day or family tradition?"
+    },
+    "de": {
+     "t": "Fest, Feiertag oder Tradition?",
+     "g": "Lerne die einfachen Unterschiede zwischen Fest, gesetzlichem Feiertag, kirchlichem Festtag und Familientradition.",
+     "p": [
+      "Ein Fest ist eine Feier mit gemeinsamen Aktivitäten, etwa ein Karneval, eine Laternennacht oder ein Straßenfest.",
+      "Ein gesetzlicher Feiertag ist arbeitsfrei; ein kirchlicher Festtag ehrt einen Heiligen oder ein Ereignis.",
+      "Eine Familientradition pflegt nur eine Familie, etwa ein besonderes Gericht, das jedes Jahr am selben Tag kommt."
+     ],
+     "q": "Welche Feiertage gibt es in deinem Land, und welche davon fühlen sich für dich wie echte Feste an?",
+     "c": "Wähle eine Feier, die du kennst: Ist sie ein Fest, ein Feiertag, ein Festtag oder eine Familientradition?"
+    },
+    "es": {
+     "t": "¿Fiesta, festivo o tradición?",
+     "g": "Aprende las diferencias sencillas entre una fiesta, un día festivo, una fiesta religiosa y una tradición familiar.",
+     "p": [
+      "Una fiesta es una celebración con actividades compartidas, como un carnaval, una noche de farolillos o una verbena.",
+      "Un festivo es un día libre fijado por ley; una fiesta religiosa honra a un santo o un hecho de un calendario religioso.",
+      "Una tradición familiar es una costumbre de una sola familia, como un plato especial que se cocina cada año."
+     ],
+     "q": "¿Qué festivos tiene tu país y cuáles te parecen verdaderas fiestas?",
+     "c": "Elige una celebración que conozcas y decide: ¿fiesta, festivo, fiesta religiosa o tradición familiar?"
+    },
+    "fr": {
+     "t": "Fête, jour férié ou tradition ?",
+     "g": "Apprends les différences simples entre une fête, un jour férié, une fête religieuse et une tradition familiale.",
+     "p": [
+      "Une fête est une célébration avec des activités partagées, comme un carnaval, une nuit des lanternes ou une fête de rue.",
+      "Un jour férié est fixé par la loi ; une fête religieuse honore un saint ou un événement d'un calendrier religieux.",
+      "Une tradition familiale est une coutume propre à une famille, comme un plat spécial préparé chaque année."
+     ],
+     "q": "Quels jours fériés a ton pays, et lesquels ressemblent pour toi à de vraies fêtes ?",
+     "c": "Choisis une célébration que tu connais : fête, jour férié, fête religieuse ou tradition familiale ?"
+    },
+    "it": {
+     "t": "Festa, festività o tradizione?",
+     "g": "Impara le differenze semplici tra una festa, un giorno festivo, una ricorrenza religiosa e una tradizione di famiglia.",
+     "p": [
+      "Una festa è una celebrazione con attività condivise, come un carnevale, una notte delle lanterne o una sagra.",
+      "Un giorno festivo è stabilito per legge; una ricorrenza religiosa onora un santo o un evento di un calendario religioso.",
+      "Una tradizione di famiglia è un'usanza di una sola famiglia, come un piatto speciale cucinato ogni anno."
+     ],
+     "q": "Quali festività ha il tuo Paese e quali ti sembrano vere feste?",
+     "c": "Scegli una celebrazione che conosci e decidi: festa, giorno festivo, ricorrenza religiosa o tradizione di famiglia?"
+    },
+    "pt": {
+     "t": "Festa, feriado ou tradição?",
+     "g": "Aprende as diferenças simples entre uma festa, um feriado, um dia santo e uma tradição de família.",
+     "p": [
+      "Uma festa é uma celebração com atividades partilhadas, como um carnaval, uma noite de lanternas ou um arraial.",
+      "Um feriado é um dia de descanso definido por lei; um dia santo homenageia um santo ou um acontecimento religioso.",
+      "Uma tradição de família é um costume de uma só família, como um prato especial cozinhado todos os anos."
+     ],
+     "q": "Que feriados tem o teu país e quais deles parecem verdadeiras festas para ti?",
+     "c": "Escolhe uma celebração que conheças e decide: festa, feriado, dia santo ou tradição de família?"
+    },
+    "pt_BR": {
+     "t": "Festa, feriado ou tradição?",
+     "g": "Aprenda as diferenças simples entre uma festa, um feriado, um dia santo e uma tradição de família.",
+     "p": [
+      "Uma festa é uma celebração com atividades compartilhadas, como um carnaval, uma noite de lanternas ou uma quermesse.",
+      "Um feriado é um dia de folga definido por lei; um dia santo homenageia um santo ou um acontecimento religioso.",
+      "Uma tradição de família é um costume de uma só família, como um prato especial preparado todo ano."
+     ],
+     "q": "Quais feriados o seu país tem e quais deles parecem festas de verdade para você?",
+     "c": "Escolha uma celebração que você conhece e decida: festa, feriado, dia santo ou tradição de família?"
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Why humans celebrate",
+     "g": "Explore the big reasons behind celebrations everywhere: seasons, harvests, history and community.",
+     "p": [
+      "Seasons: people mark the return of spring, the longest night of winter or the strong summer sun.",
+      "Harvests and history: thanking the land for food and remembering important events from the past.",
+      "Community: celebrations bring families and neighbours together and make the bonds between them stronger."
+     ],
+     "q": "Which reason for celebrating matters most to you: seasons, history, faith or friends?",
+     "c": "Choose one festival you know and find out which big reason started it."
+    },
+    "de": {
+     "t": "Warum Menschen feiern",
+     "g": "Entdecke die großen Gründe hinter Festen überall: Jahreszeiten, Ernte, Geschichte und Gemeinschaft.",
+     "p": [
+      "Jahreszeiten: Man feiert die Rückkehr des Frühlings, die längste Winternacht oder die kräftige Sommersonne.",
+      "Ernte und Geschichte: Man dankt für das Essen vom Feld und erinnert an wichtige Ereignisse der Vergangenheit.",
+      "Gemeinschaft: Feste bringen Familien und Nachbarn zusammen und stärken die Bindung zwischen ihnen."
+     ],
+     "q": "Welcher Grund zum Feiern ist dir am wichtigsten: Jahreszeiten, Geschichte, Glaube oder Freunde?",
+     "c": "Wähle ein Fest, das du kennst, und finde heraus, welcher große Grund dahintersteckt."
+    },
+    "es": {
+     "t": "Por qué celebramos los humanos",
+     "g": "Explora los grandes motivos de las celebraciones en todo el mundo: estaciones, cosechas, historia y comunidad.",
+     "p": [
+      "Estaciones: se celebra la vuelta de la primavera, la noche más larga del invierno o el fuerte sol del verano.",
+      "Cosechas e historia: se agradece a la tierra la comida y se recuerdan hechos importantes del pasado.",
+      "Comunidad: las fiestas reúnen a familias y vecinos y refuerzan los lazos entre ellos."
+     ],
+     "q": "¿Qué motivo para celebrar te importa más: las estaciones, la historia, la fe o los amigos?",
+     "c": "Elige una fiesta que conozcas y averigua qué gran motivo le dio origen."
+    },
+    "fr": {
+     "t": "Pourquoi les humains font la fête",
+     "g": "Explore les grandes raisons des célébrations partout dans le monde : saisons, récoltes, histoire et communauté.",
+     "p": [
+      "Les saisons : on fête le retour du printemps, la plus longue nuit de l'hiver ou le grand soleil d'été.",
+      "Récoltes et histoire : on remercie la terre pour la nourriture et on se souvient d'événements importants.",
+      "La communauté : les fêtes réunissent familles et voisins et renforcent les liens entre eux."
+     ],
+     "q": "Quelle raison de célébrer compte le plus pour toi : les saisons, l'histoire, la foi ou les amis ?",
+     "c": "Choisis une fête que tu connais et découvre quelle grande raison est à son origine."
+    },
+    "it": {
+     "t": "Perché gli esseri umani festeggiano",
+     "g": "Esplora i grandi motivi delle feste in tutto il mondo: stagioni, raccolti, storia e comunità.",
+     "p": [
+      "Le stagioni: si festeggia il ritorno della primavera, la notte più lunga dell'inverno o il forte sole d'estate.",
+      "Raccolti e storia: si ringrazia la terra per il cibo e si ricordano eventi importanti del passato.",
+      "La comunità: le feste riuniscono famiglie e vicini e rendono più forti i legami tra loro."
+     ],
+     "q": "Quale motivo per festeggiare conta di più per te: le stagioni, la storia, la fede o gli amici?",
+     "c": "Scegli una festa che conosci e scopri quale grande motivo l'ha fatta nascere."
+    },
+    "pt": {
+     "t": "Porque é que os humanos celebram",
+     "g": "Explora as grandes razões das celebrações em todo o mundo: estações, colheitas, história e comunidade.",
+     "p": [
+      "Estações: celebra-se o regresso da primavera, a noite mais longa do inverno ou o sol forte do verão.",
+      "Colheitas e história: agradece-se à terra pela comida e recordam-se acontecimentos importantes do passado.",
+      "Comunidade: as festas juntam famílias e vizinhos e tornam mais fortes os laços entre eles."
+     ],
+     "q": "Que razão para celebrar é mais importante para ti: as estações, a história, a fé ou os amigos?",
+     "c": "Escolhe uma festa que conheças e descobre que grande razão lhe deu origem."
+    },
+    "pt_BR": {
+     "t": "Por que os humanos comemoram",
+     "g": "Explore os grandes motivos das celebrações no mundo todo: estações, colheitas, história e comunidade.",
+     "p": [
+      "Estações: comemora-se a volta da primavera, a noite mais longa do inverno ou o sol forte do verão.",
+      "Colheitas e história: agradece-se à terra pela comida e lembram-se acontecimentos importantes do passado.",
+      "Comunidade: as festas reúnem famílias e vizinhos e fortalecem os laços entre eles."
+     ],
+     "q": "Qual motivo para comemorar é mais importante para você: as estações, a história, a fé ou os amigos?",
+     "c": "Escolha uma festa que você conhece e descubra qual grande motivo deu origem a ela."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Calendars that set the dates",
+     "g": "See how solar, lunar and lunisolar calendars work, and why some festivals move to a new date every year.",
+     "p": [
+      "Solar calendars follow the sun: in the Gregorian calendar, Christmas always falls on 25 December.",
+      "Lunar calendars follow the moon: the Islamic year is about 11 days shorter, so Eid moves through the seasons.",
+      "Lunisolar calendars mix both, so Lunar New Year always lands somewhere between late January and February."
+     ],
+     "q": "Do you know a festival whose date changes every year? Which one?",
+     "c": "Look up the dates of the next two Lunar New Years and see how far apart they are."
+    },
+    "de": {
+     "t": "Kalender, die die Termine bestimmen",
+     "g": "Erfahre, wie Sonnen-, Mond- und Lunisolarkalender funktionieren und warum manche Feste jedes Jahr wandern.",
+     "p": [
+      "Sonnenkalender folgen der Sonne: Im gregorianischen Kalender ist Weihnachten immer am 25. Dezember.",
+      "Mondkalender folgen dem Mond: Das islamische Jahr ist etwa 11 Tage kürzer, daher wandert das Zuckerfest.",
+      "Lunisolarkalender verbinden beides, deshalb liegt das Mondneujahr immer zwischen Ende Januar und Februar."
+     ],
+     "q": "Kennst du ein Fest, dessen Datum sich jedes Jahr ändert? Welches?",
+     "c": "Schlag die Daten der nächsten zwei Mondneujahre nach und vergleiche, wie weit sie auseinanderliegen."
+    },
+    "es": {
+     "t": "Los calendarios que fijan las fechas",
+     "g": "Descubre cómo funcionan los calendarios solar, lunar y lunisolar, y por qué algunas fiestas cambian de fecha.",
+     "p": [
+      "Los calendarios solares siguen al sol: en el calendario gregoriano, Navidad siempre cae el 25 de diciembre.",
+      "Los lunares siguen a la luna: el año islámico dura unos 11 días menos, así que el Eid recorre las estaciones.",
+      "Los lunisolares combinan ambos, por eso el Año Nuevo Lunar cae siempre entre finales de enero y febrero."
+     ],
+     "q": "¿Conoces alguna fiesta cuya fecha cambie cada año? ¿Cuál?",
+     "c": "Busca las fechas de los dos próximos Años Nuevos Lunares y mira cuántos días los separan."
+    },
+    "fr": {
+     "t": "Les calendriers qui fixent les dates",
+     "g": "Découvre les calendriers solaire, lunaire et luni-solaire, et pourquoi certaines fêtes changent de date chaque année.",
+     "p": [
+      "Les calendriers solaires suivent le soleil : dans le calendrier grégorien, Noël tombe toujours le 25 décembre.",
+      "Les calendriers lunaires suivent la lune : l'année musulmane dure environ 11 jours de moins, l'Aïd change donc de saison.",
+      "Les luni-solaires combinent les deux : le Nouvel An lunaire tombe toujours entre fin janvier et février."
+     ],
+     "q": "Connais-tu une fête dont la date change chaque année ? Laquelle ?",
+     "c": "Cherche les dates des deux prochains Nouvel An lunaires et regarde l'écart entre elles."
+    },
+    "it": {
+     "t": "I calendari che fissano le date",
+     "g": "Scopri come funzionano i calendari solare, lunare e lunisolare, e perché alcune feste cambiano data ogni anno.",
+     "p": [
+      "I calendari solari seguono il sole: nel calendario gregoriano il Natale cade sempre il 25 dicembre.",
+      "I calendari lunari seguono la luna: l'anno islamico dura circa 11 giorni in meno, così l'Eid attraversa le stagioni.",
+      "I lunisolari uniscono i due, perciò il Capodanno lunare cade sempre tra fine gennaio e febbraio."
+     ],
+     "q": "Conosci una festa la cui data cambia ogni anno? Quale?",
+     "c": "Cerca le date dei prossimi due Capodanni lunari e guarda quanti giorni le separano."
+    },
+    "pt": {
+     "t": "Os calendários que marcam as datas",
+     "g": "Descobre como funcionam os calendários solar, lunar e lunissolar, e porque algumas festas mudam de data.",
+     "p": [
+      "Os calendários solares seguem o sol: no calendário gregoriano, o Natal calha sempre a 25 de dezembro.",
+      "Os lunares seguem a lua: o ano islâmico tem cerca de 11 dias a menos, por isso o Eid percorre as estações.",
+      "Os lunissolares juntam os dois, por isso o Ano Novo Lunar calha sempre entre o fim de janeiro e fevereiro."
+     ],
+     "q": "Conheces alguma festa cuja data muda todos os anos? Qual?",
+     "c": "Procura as datas dos próximos dois Anos Novos Lunares e vê quantos dias as separam."
+    },
+    "pt_BR": {
+     "t": "Os calendários que definem as datas",
+     "g": "Descubra como funcionam os calendários solar, lunar e lunissolar, e por que algumas festas mudam de data.",
+     "p": [
+      "Os calendários solares seguem o sol: no calendário gregoriano, o Natal cai sempre em 25 de dezembro.",
+      "Os lunares seguem a lua: o ano islâmico tem cerca de 11 dias a menos, por isso o Eid passa por todas as estações.",
+      "Os lunissolares combinam os dois, por isso o Ano-Novo Lunar cai sempre entre o fim de janeiro e fevereiro."
+     ],
+     "q": "Você conhece alguma festa cuja data muda todo ano? Qual?",
+     "c": "Pesquise as datas dos próximos dois Anos-Novos Lunares e veja quantos dias as separam."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Your own festival calendar",
+     "g": "Make a personal list of the celebrations you know from home, school and family.",
+     "p": [
+      "Start with the big ones from home: national holidays and festivals everyone in your country knows.",
+      "Add school and family celebrations: birthdays, name days, graduations or a yearly family reunion.",
+      "Sort them by month: you will see which seasons are busiest and where there is room for new festivals."
+     ],
+     "q": "Which month of your year is the most festive, and why?",
+     "c": "Write the 12 months on a page and note at least one celebration you know next to each one."
+    },
+    "de": {
+     "t": "Dein eigener Festkalender",
+     "g": "Erstelle eine persönliche Liste der Feste, die du von zu Hause, aus der Schule und aus der Familie kennst.",
+     "p": [
+      "Beginne mit den großen Festen deiner Heimat: Feiertage und Feste, die jeder in deinem Land kennt.",
+      "Ergänze Schul- und Familienfeiern: Geburtstage, Namenstage, Abschlussfeiern oder ein jährliches Familientreffen.",
+      "Ordne sie nach Monaten: So siehst du, welche Zeiten voll sind und wo noch Platz für neue Feste ist."
+     ],
+     "q": "Welcher Monat ist in deinem Jahr der festlichste, und warum?",
+     "c": "Schreib die 12 Monate auf ein Blatt und notiere neben jedem mindestens eine Feier, die du kennst."
+    },
+    "es": {
+     "t": "Tu propio calendario de fiestas",
+     "g": "Haz una lista personal de las celebraciones que conoces de casa, del colegio y de la familia.",
+     "p": [
+      "Empieza por las grandes de tu tierra: festivos nacionales y fiestas que todo el mundo conoce en tu país.",
+      "Añade celebraciones escolares y familiares: cumpleaños, santos, graduaciones o una reunión familiar anual.",
+      "Ordénalas por meses: verás qué épocas están más llenas y dónde hay hueco para fiestas nuevas."
+     ],
+     "q": "¿Qué mes de tu año es el más festivo y por qué?",
+     "c": "Escribe los 12 meses en una hoja y anota al menos una celebración que conozcas junto a cada uno."
+    },
+    "fr": {
+     "t": "Ton propre calendrier des fêtes",
+     "g": "Dresse une liste personnelle des célébrations que tu connais de chez toi, de l'école et de ta famille.",
+     "p": [
+      "Commence par les grandes fêtes de ton pays : jours fériés et fêtes que tout le monde connaît.",
+      "Ajoute les fêtes d'école et de famille : anniversaires, fêtes du prénom, remises de diplômes ou réunion annuelle.",
+      "Classe-les par mois : tu verras les périodes les plus chargées et la place libre pour de nouvelles fêtes."
+     ],
+     "q": "Quel mois de ton année est le plus festif, et pourquoi ?",
+     "c": "Écris les 12 mois sur une feuille et note à côté de chacun au moins une célébration que tu connais."
+    },
+    "it": {
+     "t": "Il tuo calendario delle feste",
+     "g": "Prepara un elenco personale delle celebrazioni che conosci da casa, dalla scuola e dalla famiglia.",
+     "p": [
+      "Comincia dalle grandi feste di casa tua: festività nazionali e feste che tutti conoscono nel tuo Paese.",
+      "Aggiungi feste di scuola e di famiglia: compleanni, onomastici, lauree o una riunione di famiglia annuale.",
+      "Ordinale per mese: vedrai quali periodi sono più pieni e dove c'è spazio per feste nuove."
+     ],
+     "q": "Qual è il mese più festoso del tuo anno, e perché?",
+     "c": "Scrivi i 12 mesi su un foglio e annota accanto a ciascuno almeno una celebrazione che conosci."
+    },
+    "pt": {
+     "t": "O teu próprio calendário de festas",
+     "g": "Faz uma lista pessoal das celebrações que conheces de casa, da escola e da família.",
+     "p": [
+      "Começa pelas grandes festas da tua terra: feriados nacionais e festas que toda a gente conhece no teu país.",
+      "Junta celebrações da escola e da família: aniversários, dias do nome, formaturas ou um encontro de família anual.",
+      "Organiza-as por mês: vais ver que épocas estão mais cheias e onde há espaço para festas novas."
+     ],
+     "q": "Qual é o mês mais festivo do teu ano e porquê?",
+     "c": "Escreve os 12 meses numa folha e anota ao lado de cada um pelo menos uma celebração que conheças."
+    },
+    "pt_BR": {
+     "t": "O seu próprio calendário de festas",
+     "g": "Faça uma lista pessoal das celebrações que você conhece de casa, da escola e da família.",
+     "p": [
+      "Comece pelas grandes festas da sua terra: feriados nacionais e festas que todo mundo conhece no seu país.",
+      "Inclua celebrações da escola e da família: aniversários, formaturas ou um encontro anual da família.",
+      "Organize tudo por mês: você vai ver quais épocas estão mais cheias e onde há espaço para festas novas."
+     ],
+     "q": "Qual é o mês mais festivo do seu ano e por quê?",
+     "c": "Escreva os 12 meses numa folha e anote ao lado de cada um pelo menos uma celebração que você conhece."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The building blocks of a festival",
+     "g": "Discover the ingredients most celebrations share: food, music, lights, costumes, gifts and gatherings.",
+     "p": [
+      "Food and drink: almost every celebration has special dishes that people eat only at that time of year.",
+      "Senses and show: music, lights, colours, costumes and decorations change how a place looks and sounds.",
+      "People and gestures: gatherings, gifts, greetings and small rituals connect everyone who takes part."
+     ],
+     "q": "Which festival ingredient do you love most: the food, the music, the lights or the people?",
+     "c": "Think of one festival and list its food, its music, its decorations and one special gesture."
+    },
+    "de": {
+     "t": "Die Bausteine eines Festes",
+     "g": "Entdecke die Zutaten, die fast alle Feste teilen: Essen, Musik, Lichter, Kostüme, Geschenke und Treffen.",
+     "p": [
+      "Essen und Trinken: Fast jedes Fest hat besondere Gerichte, die man nur zu dieser Zeit im Jahr isst.",
+      "Sinne und Schau: Musik, Lichter, Farben, Kostüme und Schmuck verändern, wie ein Ort aussieht und klingt.",
+      "Menschen und Gesten: Treffen, Geschenke, Grüße und kleine Rituale verbinden alle, die mitfeiern."
+     ],
+     "q": "Welche Zutat eines Festes magst du am liebsten: das Essen, die Musik, die Lichter oder die Menschen?",
+     "c": "Denk an ein Fest und notiere sein Essen, seine Musik, seinen Schmuck und eine besondere Geste."
+    },
+    "es": {
+     "t": "Los ingredientes de una fiesta",
+     "g": "Descubre lo que comparten casi todas las celebraciones: comida, música, luces, disfraces, regalos y reuniones.",
+     "p": [
+      "Comida y bebida: casi todas las fiestas tienen platos especiales que solo se comen en esa época del año.",
+      "Sentidos y espectáculo: la música, las luces, los colores, los disfraces y los adornos transforman un lugar.",
+      "Personas y gestos: las reuniones, los regalos, los saludos y los pequeños ritos unen a todos los que participan."
+     ],
+     "q": "¿Qué ingrediente de una fiesta te gusta más: la comida, la música, las luces o la gente?",
+     "c": "Piensa en una fiesta y apunta su comida, su música, sus adornos y un gesto especial."
+    },
+    "fr": {
+     "t": "Les ingrédients d'une fête",
+     "g": "Découvre ce que partagent presque toutes les fêtes : plats, musique, lumières, costumes, cadeaux et rassemblements.",
+     "p": [
+      "Manger et boire : presque chaque fête a ses plats spéciaux, qu'on ne mange qu'à ce moment de l'année.",
+      "Les sens et le spectacle : musique, lumières, couleurs, costumes et décorations transforment un lieu.",
+      "Les gens et les gestes : rassemblements, cadeaux, vœux et petits rituels relient tous ceux qui participent."
+     ],
+     "q": "Quel ingrédient d'une fête préfères-tu : les plats, la musique, les lumières ou les gens ?",
+     "c": "Pense à une fête et note ses plats, sa musique, ses décorations et un geste particulier."
+    },
+    "it": {
+     "t": "Gli ingredienti di una festa",
+     "g": "Scopri cosa hanno in comune quasi tutte le feste: cibo, musica, luci, costumi, regali e ritrovi.",
+     "p": [
+      "Cibo e bevande: quasi ogni festa ha piatti speciali che si mangiano solo in quel periodo dell'anno.",
+      "Sensi e spettacolo: musica, luci, colori, costumi e decorazioni cambiano l'aspetto e il suono di un luogo.",
+      "Persone e gesti: ritrovi, regali, auguri e piccoli riti uniscono tutti quelli che partecipano."
+     ],
+     "q": "Quale ingrediente di una festa ami di più: il cibo, la musica, le luci o le persone?",
+     "c": "Pensa a una festa e annota il suo cibo, la sua musica, le sue decorazioni e un gesto speciale."
+    },
+    "pt": {
+     "t": "Os ingredientes de uma festa",
+     "g": "Descobre o que quase todas as celebrações partilham: comida, música, luzes, trajes, presentes e encontros.",
+     "p": [
+      "Comer e beber: quase todas as festas têm pratos especiais que só se comem nessa altura do ano.",
+      "Sentidos e espetáculo: música, luzes, cores, trajes e decorações mudam o aspeto e o som de um lugar.",
+      "Pessoas e gestos: encontros, presentes, cumprimentos e pequenos rituais unem todos os que participam."
+     ],
+     "q": "Que ingrediente de uma festa preferes: a comida, a música, as luzes ou as pessoas?",
+     "c": "Pensa numa festa e anota a comida, a música, as decorações e um gesto especial."
+    },
+    "pt_BR": {
+     "t": "Os ingredientes de uma festa",
+     "g": "Descubra o que quase todas as celebrações compartilham: comida, música, luzes, fantasias, presentes e encontros.",
+     "p": [
+      "Comer e beber: quase toda festa tem pratos especiais que só se comem naquela época do ano.",
+      "Sentidos e espetáculo: música, luzes, cores, fantasias e enfeites mudam o visual e o som de um lugar.",
+      "Pessoas e gestos: encontros, presentes, cumprimentos e pequenos rituais unem todos que participam."
+     ],
+     "q": "Qual ingrediente de uma festa você prefere: a comida, a música, as luzes ou as pessoas?",
+     "c": "Pense em uma festa e anote a comida, a música, os enfeites e um gesto especial dela."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "New Year on 1 January",
+     "g": "See how countries that follow the Gregorian calendar welcome 1 January with countdowns, fireworks and resolutions.",
+     "p": [
+      "At midnight many people count down the last ten seconds together and cheer as the new year begins.",
+      "Fireworks light up cities like Sydney, one of the first big cities in the world to greet the new year.",
+      "Resolutions are promises for the year ahead, such as moving more, reading more or learning a language."
+     ],
+     "q": "How do you usually spend the night of 31 December?",
+     "c": "Write one realistic, kind resolution that you could start this week."
+    },
+    "de": {
+     "t": "Neujahr am 1. Januar",
+     "g": "Erfahre, wie Länder mit gregorianischem Kalender den 1. Januar mit Countdown, Feuerwerk und Vorsätzen begrüßen.",
+     "p": [
+      "Um Mitternacht zählen viele gemeinsam die letzten zehn Sekunden herunter und jubeln, wenn das Jahr beginnt.",
+      "Feuerwerke erhellen Städte wie Sydney, eine der ersten großen Städte der Welt, die das neue Jahr begrüßt.",
+      "Vorsätze sind Versprechen für das neue Jahr, etwa mehr Bewegung, mehr Lesen oder eine neue Sprache."
+     ],
+     "q": "Wie verbringst du normalerweise die Nacht zum 1. Januar?",
+     "c": "Schreib einen realistischen, freundlichen Vorsatz auf, mit dem du diese Woche beginnen könntest."
+    },
+    "es": {
+     "t": "Año Nuevo el 1 de enero",
+     "g": "Descubre cómo los países con calendario gregoriano reciben el 1 de enero con cuenta atrás, fuegos y propósitos.",
+     "p": [
+      "A medianoche mucha gente cuenta junta los últimos diez segundos y lo celebra cuando empieza el año.",
+      "Los fuegos artificiales iluminan ciudades como Sídney, una de las primeras grandes ciudades en recibir el año.",
+      "Los propósitos son promesas para el año nuevo, como moverse más, leer más o aprender un idioma."
+     ],
+     "q": "¿Cómo sueles pasar la noche del 31 de diciembre?",
+     "c": "Escribe un propósito realista y amable que podrías empezar esta misma semana."
+    },
+    "fr": {
+     "t": "Le Nouvel An du 1er janvier",
+     "g": "Découvre comment les pays au calendrier grégorien accueillent le 1er janvier : compte à rebours, feux et résolutions.",
+     "p": [
+      "À minuit, beaucoup comptent ensemble les dix dernières secondes et applaudissent quand l'année commence.",
+      "Les feux d'artifice illuminent des villes comme Sydney, l'une des premières grandes villes à fêter l'an neuf.",
+      "Les bonnes résolutions sont des promesses pour l'année : bouger plus, lire plus ou apprendre une langue."
+     ],
+     "q": "Comment passes-tu d'habitude la nuit du 31 décembre ?",
+     "c": "Écris une résolution réaliste et bienveillante que tu pourrais commencer cette semaine."
+    },
+    "it": {
+     "t": "Capodanno il 1° gennaio",
+     "g": "Scopri come i Paesi con il calendario gregoriano accolgono il 1° gennaio tra conto alla rovescia, fuochi e propositi.",
+     "p": [
+      "A mezzanotte molti contano insieme gli ultimi dieci secondi e festeggiano quando inizia l'anno nuovo.",
+      "I fuochi d'artificio illuminano città come Sydney, una delle prime grandi città del mondo ad accogliere l'anno.",
+      "I buoni propositi sono promesse per l'anno nuovo, come muoversi di più, leggere di più o imparare una lingua."
+     ],
+     "q": "Come passi di solito la notte del 31 dicembre?",
+     "c": "Scrivi un proposito realistico e gentile che potresti iniziare già questa settimana."
+    },
+    "pt": {
+     "t": "Ano Novo a 1 de janeiro",
+     "g": "Descobre como os países com o calendário gregoriano recebem o 1 de janeiro com contagem decrescente, fogo de artifício e resoluções.",
+     "p": [
+      "À meia-noite muita gente conta em conjunto os últimos dez segundos e festeja quando o ano começa.",
+      "O fogo de artifício ilumina cidades como Sydney, uma das primeiras grandes cidades a receber o ano novo.",
+      "As resoluções são promessas para o ano novo, como mexer-se mais, ler mais ou aprender uma língua."
+     ],
+     "q": "Como costumas passar a noite de 31 de dezembro?",
+     "c": "Escreve uma resolução realista e simpática que podias começar já esta semana."
+    },
+    "pt_BR": {
+     "t": "Ano-Novo em 1º de janeiro",
+     "g": "Descubra como os países com calendário gregoriano recebem o 1º de janeiro com contagem regressiva, fogos e metas.",
+     "p": [
+      "À meia-noite muita gente faz junto a contagem dos últimos dez segundos e comemora quando o ano começa.",
+      "Os fogos iluminam cidades como Sydney, uma das primeiras grandes cidades do mundo a receber o ano novo.",
+      "As metas de ano-novo são promessas para o ano, como se exercitar mais, ler mais ou aprender um idioma."
+     ],
+     "q": "Como você costuma passar a noite de 31 de dezembro, o Réveillon?",
+     "c": "Escreva uma meta realista e gentil que você poderia começar ainda esta semana."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Lucky New Year foods",
+     "g": "Taste the world's lucky New Year bites, from Spanish grapes to Italian lentils and Southern US black-eyed peas.",
+     "p": [
+      "In Spain people eat twelve grapes at midnight, one with each chime of the clock, for twelve lucky months.",
+      "In Italy lentils are eaten on New Year's Eve, often with sausage; their coin shape stands for money.",
+      "In the southern US, black-eyed peas with greens are said to bring luck and prosperity for the year."
+     ],
+     "q": "Is there a food your family eats for luck at New Year?",
+     "c": "Try a lucky bite today: a few grapes, some lentils or any food you link to a fresh start."
+    },
+    "de": {
+     "t": "Glücksessen zum neuen Jahr",
+     "g": "Probiere die Glücksbissen der Welt: spanische Trauben, italienische Linsen und Augenbohnen aus dem Süden der USA.",
+     "p": [
+      "In Spanien isst man um Mitternacht zwölf Trauben, eine pro Glockenschlag, für zwölf glückliche Monate.",
+      "In Italien isst man an Silvester Linsen, oft mit Wurst; ihre Münzform steht für Geld und Wohlstand.",
+      "Im Süden der USA sollen Augenbohnen mit Blattgemüse Glück und Wohlstand für das ganze Jahr bringen."
+     ],
+     "q": "Gibt es ein Essen, das deine Familie zu Neujahr für das Glück isst?",
+     "c": "Probier heute einen Glücksbissen: ein paar Trauben, etwas Linsen oder etwas, das für dich Neuanfang bedeutet."
+    },
+    "es": {
+     "t": "Comidas de la suerte de Año Nuevo",
+     "g": "Prueba los bocados de la suerte del mundo: las uvas españolas, las lentejas italianas y los frijoles del sur de EE. UU.",
+     "p": [
+      "En España se toman doce uvas a medianoche, una por cada campanada, para tener doce meses de suerte.",
+      "En Italia se comen lentejas en Nochevieja, a menudo con embutido; su forma de moneda simboliza el dinero.",
+      "En el sur de Estados Unidos, los frijoles de ojo negro con verduras traen, según dicen, suerte y prosperidad."
+     ],
+     "q": "¿Hay alguna comida que tu familia tome para la suerte en Año Nuevo?",
+     "c": "Prueba hoy un bocado de la suerte: unas uvas, unas lentejas o cualquier comida que asocies a un nuevo comienzo."
+    },
+    "fr": {
+     "t": "Les plats porte-bonheur du Nouvel An",
+     "g": "Goûte aux porte-bonheur du monde : raisins espagnols, lentilles italiennes et haricots à œil noir du sud des États-Unis.",
+     "p": [
+      "En Espagne, on mange douze grains de raisin à minuit, un à chaque coup d'horloge, pour douze mois heureux.",
+      "En Italie, on mange des lentilles le soir du réveillon, souvent avec de la saucisse : leur forme évoque des pièces.",
+      "Dans le sud des États-Unis, les haricots à œil noir avec des légumes verts porteraient chance et prospérité."
+     ],
+     "q": "Y a-t-il un plat que ta famille mange pour la chance au Nouvel An ?",
+     "c": "Goûte aujourd'hui un porte-bonheur : quelques raisins, des lentilles ou un aliment qui évoque pour toi un nouveau départ."
+    },
+    "it": {
+     "t": "Cibi portafortuna di Capodanno",
+     "g": "Assaggia i bocconi portafortuna del mondo: l'uva spagnola, le lenticchie italiane e i fagioli del sud degli USA.",
+     "p": [
+      "In Spagna a mezzanotte si mangiano dodici chicchi d'uva, uno per ogni rintocco, per dodici mesi fortunati.",
+      "In Italia a San Silvestro si mangiano le lenticchie, spesso con cotechino o zampone: sembrano monete e portano soldi.",
+      "Nel sud degli Stati Uniti i fagioli dall'occhio con verdure a foglia porterebbero fortuna e prosperità."
+     ],
+     "q": "C'è un cibo che la tua famiglia mangia per fortuna a Capodanno?",
+     "c": "Prova oggi un boccone portafortuna: qualche acino d'uva, un po' di lenticchie o un cibo che per te sa di nuovo inizio."
+    },
+    "pt": {
+     "t": "Comidas da sorte no Ano Novo",
+     "g": "Prova os petiscos da sorte do mundo: as uvas espanholas, as lentilhas italianas e o feijão-frade do sul dos EUA.",
+     "p": [
+      "Em Espanha comem-se doze uvas à meia-noite, uma a cada badalada, para ter doze meses de sorte.",
+      "Em Itália comem-se lentilhas na passagem de ano, muitas vezes com enchido; parecem moedas e simbolizam dinheiro.",
+      "No sul dos Estados Unidos, o feijão-frade com verduras traz, dizem, sorte e prosperidade para o ano."
+     ],
+     "q": "Há alguma comida que a tua família coma para dar sorte no Ano Novo?",
+     "c": "Prova hoje um petisco da sorte: umas uvas, umas lentilhas ou um alimento que associes a um recomeço."
+    },
+    "pt_BR": {
+     "t": "Comidas da sorte no Ano-Novo",
+     "g": "Experimente as comidas da sorte do mundo: as uvas espanholas, as lentilhas italianas e o feijão-fradinho dos EUA.",
+     "p": [
+      "Na Espanha comem-se doze uvas à meia-noite, uma a cada badalada do relógio, para ter doze meses de sorte.",
+      "Na Itália comem-se lentilhas na virada do ano, muitas vezes com linguiça; parecem moedas e simbolizam dinheiro.",
+      "No sul dos Estados Unidos, o feijão-fradinho com verduras traz, dizem, sorte e prosperidade para o ano."
+     ],
+     "q": "Existe alguma comida que a sua família come para dar sorte no Ano-Novo?",
+     "c": "Experimente hoje uma comida da sorte: algumas uvas, um pouco de lentilha ou algo que lembre um recomeço."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Lunar New Year basics",
+     "g": "Learn how Lunar New Year brings family reunions, red envelopes, dumplings and lion dances across Asia.",
+     "p": [
+      "Families reunite, often travelling a long way home, for a big shared meal on New Year's Eve.",
+      "Red envelopes with money are given as wishes for luck, mostly to children; red is a lucky colour.",
+      "Dumplings, lion dances and lanterns are typical; Korea calls the holiday Seollal and Vietnam calls it Tết."
+     ],
+     "q": "Have you ever seen a lion dance or received a red envelope?",
+     "c": "Learn to say happy new year in Mandarin: Xīnnián kuàilè."
+    },
+    "de": {
+     "t": "Mondneujahr: die Grundlagen",
+     "g": "Erfahre, wie das Mondneujahr in Asien Familien vereint, mit roten Umschlägen, Teigtaschen und Löwentänzen.",
+     "p": [
+      "Familien kommen zusammen, oft nach langer Reise, um an Silvester gemeinsam ein großes Festessen zu genießen.",
+      "Rote Umschläge mit Geld werden als Glückswunsch verschenkt, meist an Kinder; Rot ist eine Glücksfarbe.",
+      "Teigtaschen, Löwentänze und Laternen gehören dazu; in Korea heißt das Fest Seollal, in Vietnam Tết."
+     ],
+     "q": "Hast du schon einmal einen Löwentanz gesehen oder einen roten Umschlag bekommen?",
+     "c": "Lerne, auf Mandarin ein frohes neues Jahr zu wünschen: Xīnnián kuàilè."
+    },
+    "es": {
+     "t": "Lo básico del Año Nuevo Lunar",
+     "g": "Aprende cómo el Año Nuevo Lunar trae reuniones familiares, sobres rojos, empanadillas y danzas del león en Asia.",
+     "p": [
+      "Las familias se reúnen, a menudo tras un largo viaje, para una gran cena compartida en la víspera de Año Nuevo.",
+      "Se regalan sobres rojos con dinero como deseo de suerte, sobre todo a los niños; el rojo es el color de la suerte.",
+      "Son típicos las empanadillas, la danza del león y los farolillos; en Corea se llama Seollal y en Vietnam, Tết."
+     ],
+     "q": "¿Has visto alguna vez una danza del león o has recibido un sobre rojo?",
+     "c": "Aprende a desear feliz año nuevo en mandarín: Xīnnián kuàilè."
+    },
+    "fr": {
+     "t": "Les bases du Nouvel An lunaire",
+     "g": "Découvre comment le Nouvel An lunaire réunit les familles en Asie avec enveloppes rouges, raviolis et danses du lion.",
+     "p": [
+      "Les familles se retrouvent, souvent après un long voyage, pour un grand repas partagé la veille du Nouvel An.",
+      "On offre des enveloppes rouges contenant de l'argent pour souhaiter bonne chance, surtout aux enfants.",
+      "Raviolis, danses du lion et lanternes sont typiques ; en Corée, la fête s'appelle Seollal, au Vietnam Tết."
+     ],
+     "q": "As-tu déjà vu une danse du lion ou reçu une enveloppe rouge ?",
+     "c": "Apprends à souhaiter bonne année en mandarin : Xīnnián kuàilè."
+    },
+    "it": {
+     "t": "Le basi del Capodanno lunare",
+     "g": "Scopri come il Capodanno lunare riunisce le famiglie in Asia tra buste rosse, ravioli e danze del leone.",
+     "p": [
+      "Le famiglie si ritrovano, spesso dopo un lungo viaggio, per una grande cena insieme alla vigilia di Capodanno.",
+      "Si regalano buste rosse con denaro come augurio di fortuna, soprattutto ai bambini; il rosso porta fortuna.",
+      "Ravioli, danza del leone e lanterne sono tipici; in Corea la festa si chiama Seollal, in Vietnam Tết."
+     ],
+     "q": "Hai mai visto una danza del leone o ricevuto una busta rossa?",
+     "c": "Impara ad augurare buon anno in mandarino: Xīnnián kuàilè."
+    },
+    "pt": {
+     "t": "O essencial do Ano Novo Lunar",
+     "g": "Aprende como o Ano Novo Lunar junta famílias na Ásia com envelopes vermelhos, pastéis cozidos e danças do leão.",
+     "p": [
+      "As famílias reúnem-se, muitas vezes depois de uma longa viagem, para um grande jantar na véspera de Ano Novo.",
+      "Oferecem-se envelopes vermelhos com dinheiro como votos de sorte, sobretudo às crianças; o vermelho dá sorte.",
+      "Os pastéis cozidos, a dança do leão e as lanternas são típicos; na Coreia chama-se Seollal e no Vietname, Tết."
+     ],
+     "q": "Já alguma vez viste uma dança do leão ou recebeste um envelope vermelho?",
+     "c": "Aprende a desejar feliz ano novo em mandarim: Xīnnián kuàilè."
+    },
+    "pt_BR": {
+     "t": "O básico do Ano-Novo Lunar",
+     "g": "Aprenda como o Ano-Novo Lunar reúne famílias na Ásia com envelopes vermelhos, guiozas e danças do leão.",
+     "p": [
+      "As famílias se reúnem, muitas vezes depois de uma longa viagem, para um grande jantar na véspera do Ano-Novo.",
+      "Envelopes vermelhos com dinheiro são dados como votos de sorte, principalmente às crianças; o vermelho dá sorte.",
+      "Guiozas, a dança do leão e as lanternas são típicos; na Coreia a festa se chama Seollal e no Vietnã, Tết."
+     ],
+     "q": "Você já viu uma dança do leão ou ganhou um envelope vermelho?",
+     "c": "Aprenda a desejar feliz ano-novo em mandarim: Xīnnián kuàilè."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The twelve zodiac animals",
+     "g": "Hear the legend of the great animal race and learn how each lunar year gets its animal.",
+     "p": [
+      "In the legend, the Jade Emperor held a race across a river, and the order of arrival set the order of the years.",
+      "The clever rat rode on the ox's back and jumped ahead at the finish to win; the pig arrived last.",
+      "The cycle repeats every 12 years: rat, ox, tiger, rabbit, dragon, snake, horse, goat, monkey, rooster, dog, pig."
+     ],
+     "q": "Which zodiac animal matches your birth year, and do you think it fits you?",
+     "c": "Find your zodiac animal and the animal of one friend or family member."
+    },
+    "de": {
+     "t": "Die zwölf Tierkreiszeichen",
+     "g": "Hör die Legende vom großen Wettrennen der Tiere und erfahre, wie jedes Mondjahr zu seinem Tier kommt.",
+     "p": [
+      "Der Legende nach veranstaltete der Jadekaiser ein Rennen über einen Fluss; die Ankunft bestimmte die Reihenfolge.",
+      "Die schlaue Ratte ritt auf dem Rücken des Ochsen und sprang im Ziel nach vorn; das Schwein kam als Letztes an.",
+      "Der Zyklus wiederholt sich alle 12 Jahre: Ratte, Ochse, Tiger, Hase, Drache, Schlange, Pferd, Ziege, Affe, Hahn, Hund, Schwein."
+     ],
+     "q": "Welches Tier gehört zu deinem Geburtsjahr, und passt es zu dir?",
+     "c": "Finde dein Tierkreiszeichen und das einer Freundin, eines Freundes oder eines Familienmitglieds."
+    },
+    "es": {
+     "t": "Los doce animales del zodiaco",
+     "g": "Conoce la leyenda de la gran carrera de animales y descubre cómo cada año lunar recibe su animal.",
+     "p": [
+      "Según la leyenda, el Emperador de Jade organizó una carrera para cruzar un río; el orden de llegada fijó el de los años.",
+      "La astuta rata viajó sobre el lomo del buey y saltó delante en la meta para ganar; el cerdo llegó el último.",
+      "El ciclo se repite cada 12 años: rata, buey, tigre, conejo, dragón, serpiente, caballo, cabra, mono, gallo, perro y cerdo."
+     ],
+     "q": "¿Qué animal del zodiaco corresponde a tu año de nacimiento? ¿Crees que te pega?",
+     "c": "Busca tu animal del zodiaco y el de un amigo o un familiar."
+    },
+    "fr": {
+     "t": "Les douze animaux du zodiaque",
+     "g": "Découvre la légende de la grande course des animaux et comment chaque année lunaire reçoit son animal.",
+     "p": [
+      "Selon la légende, l'Empereur de Jade organisa une course pour traverser une rivière ; l'ordre d'arrivée fixa celui des années.",
+      "Le rat malin voyagea sur le dos du bœuf puis sauta devant lui à l'arrivée ; le cochon arriva dernier.",
+      "Le cycle revient tous les 12 ans : rat, bœuf, tigre, lapin, dragon, serpent, cheval, chèvre, singe, coq, chien, cochon."
+     ],
+     "q": "Quel animal du zodiaque correspond à ton année de naissance, et te ressemble-t-il ?",
+     "c": "Trouve ton animal du zodiaque et celui d'un ami ou d'un membre de ta famille."
+    },
+    "it": {
+     "t": "I dodici animali dello zodiaco",
+     "g": "Ascolta la leggenda della grande corsa degli animali e scopri come ogni anno lunare riceve il suo animale.",
+     "p": [
+      "Secondo la leggenda, l'Imperatore di Giada indisse una corsa oltre un fiume; l'ordine d'arrivo fissò quello degli anni.",
+      "Il furbo topo viaggiò sulla schiena del bue e al traguardo saltò avanti vincendo; il maiale arrivò ultimo.",
+      "Il ciclo si ripete ogni 12 anni: topo, bue, tigre, coniglio, drago, serpente, cavallo, capra, scimmia, gallo, cane, maiale."
+     ],
+     "q": "Qual è l'animale del tuo anno di nascita, e pensi che ti somigli?",
+     "c": "Trova il tuo animale dello zodiaco e quello di un amico o di un familiare."
+    },
+    "pt": {
+     "t": "Os doze animais do zodíaco",
+     "g": "Conhece a lenda da grande corrida dos animais e descobre como cada ano lunar recebe o seu animal.",
+     "p": [
+      "Segundo a lenda, o Imperador de Jade fez uma corrida para atravessar um rio; a ordem de chegada fixou a dos anos.",
+      "O esperto rato viajou no dorso do boi e saltou para a frente na meta para ganhar; o porco chegou em último.",
+      "O ciclo repete-se a cada 12 anos: rato, boi, tigre, coelho, dragão, serpente, cavalo, cabra, macaco, galo, cão e porco."
+     ],
+     "q": "Que animal do zodíaco corresponde ao teu ano de nascimento? Achas que tem a ver contigo?",
+     "c": "Descobre o teu animal do zodíaco e o de um amigo ou familiar."
+    },
+    "pt_BR": {
+     "t": "Os doze animais do zodíaco",
+     "g": "Conheça a lenda da grande corrida dos animais e descubra como cada ano lunar ganha o seu animal.",
+     "p": [
+      "Segundo a lenda, o Imperador de Jade fez uma corrida para atravessar um rio; a ordem de chegada definiu a dos anos.",
+      "O esperto rato viajou nas costas do boi e pulou na frente na chegada para vencer; o porco chegou por último.",
+      "O ciclo se repete a cada 12 anos: rato, boi, tigre, coelho, dragão, serpente, cavalo, cabra, macaco, galo, cão e porco."
+     ],
+     "q": "Qual animal do zodíaco corresponde ao seu ano de nascimento? Você acha que ele combina com você?",
+     "c": "Descubra o seu animal do zodíaco e o de um amigo ou familiar."
+    }
+   }
+  }
+ ]
+}

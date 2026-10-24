@@ -1,0 +1,2195 @@
+{
+"topic": "mindfulness",
+"days": [
+{
+"d": 1,
+"lv": "beginner",
+"t": "Welcome to your mindfulness path",
+"f": "What mindfulness means in plain words and how one small practice a day builds up over 365 days"
+},
+{
+"d": 2,
+"lv": "beginner",
+"t": "Mindfulness in one sentence",
+"f": "Paying attention to the present moment on purpose, with curiosity and without harsh judgement"
+},
+{
+"d": 3,
+"lv": "beginner",
+"t": "Your starting point",
+"f": "Noticing how busy, calm or scattered your mind usually feels, with no pressure to change it yet"
+},
+{
+"d": 4,
+"lv": "beginner",
+"t": "One mindful minute",
+"f": "Sitting still for sixty seconds and simply noticing what you can see, hear and feel"
+},
+{
+"d": 5,
+"lv": "beginner",
+"t": "Finding your breath",
+"f": "Locating where you feel the breath most clearly: at the nose, in the chest or in the belly"
+},
+{
+"d": 6,
+"lv": "beginner",
+"t": "Counting breaths to ten",
+"f": "Counting each out-breath from one to ten and gently starting again when you lose count"
+},
+{
+"d": 7,
+"lv": "beginner",
+"t": "The wandering mind is normal",
+"f": "Why minds drift all the time and how noticing the drift is itself the practice"
+},
+{
+"d": 8,
+"lv": "beginner",
+"t": "A comfortable posture",
+"f": "Sitting on a chair or cushion in a way that feels upright, relaxed and stable"
+},
+{
+"d": 9,
+"lv": "beginner",
+"t": "Eyes open or closed",
+"f": "Trying both and choosing a soft downward gaze if closing the eyes feels odd"
+},
+{
+"d": 10,
+"lv": "beginner",
+"t": "Belly breathing basics",
+"f": "Letting the belly rise and fall naturally, without forcing deeper breaths"
+},
+{
+"d": 11,
+"lv": "beginner",
+"t": "The five senses check-in",
+"f": "Naming one thing you notice with each sense to arrive in the present moment"
+},
+{
+"d": 12,
+"lv": "beginner",
+"t": "Five-four-three-two-one grounding",
+"f": "A simple counting game with the senses to steady attention in a busy moment"
+},
+{
+"d": 13,
+"lv": "beginner",
+"t": "Mindful hand awareness",
+"f": "Feeling warmth, tingling and pressure in the hands for one minute"
+},
+{
+"d": 14,
+"lv": "beginner",
+"t": "A short body scan",
+"f": "Moving attention slowly from the feet up to the head in about five minutes"
+},
+{
+"d": 15,
+"lv": "beginner",
+"t": "Noticing tension",
+"f": "Spotting tightness in the shoulders, jaw or hands and letting it soften"
+},
+{
+"d": 16,
+"lv": "beginner",
+"t": "A mindful sip of water",
+"f": "Drinking one glass of water slowly, noticing temperature, taste and swallowing"
+},
+{
+"d": 17,
+"lv": "beginner",
+"t": "The raisin exercise",
+"f": "Exploring a single raisin or small fruit with all the senses as if for the first time"
+},
+{
+"d": 18,
+"lv": "beginner",
+"t": "Mindful eating at one meal",
+"f": "Eating the first few bites of a meal slowly and without screens"
+},
+{
+"d": 19,
+"lv": "beginner",
+"t": "Listening to sounds",
+"f": "Letting sounds come and go without labelling them as good or bad"
+},
+{
+"d": 20,
+"lv": "beginner",
+"t": "Mindful walking basics",
+"f": "Walking slowly and feeling each foot lift, move and touch the ground"
+},
+{
+"d": 21,
+"lv": "beginner",
+"t": "A mindful pause before you start",
+"f": "Taking three conscious breaths before beginning any task"
+},
+{
+"d": 22,
+"lv": "beginner",
+"t": "Kindness toward a busy mind",
+"f": "Meeting distraction with a friendly attitude instead of frustration"
+},
+{
+"d": 23,
+"lv": "beginner",
+"t": "Making a tiny daily slot",
+"f": "Choosing a regular time and place for a short practice that fits your day"
+},
+{
+"d": 24,
+"lv": "beginner",
+"t": "Habit anchors for practice",
+"f": "Linking a short breathing pause to something you already do, like making coffee"
+},
+{
+"d": 25,
+"lv": "beginner",
+"t": "Using a gentle timer",
+"f": "Setting a soft timer so you can relax into practice without watching the clock"
+},
+{
+"d": 26,
+"lv": "beginner",
+"t": "The three-minute breathing space",
+"f": "A short three-step pause: notice what is here, gather on the breath, then widen awareness"
+},
+{
+"d": 27,
+"lv": "beginner",
+"t": "Mindful hand washing",
+"f": "Turning hand washing into a mini practice of water, soap and touch"
+},
+{
+"d": 28,
+"lv": "beginner",
+"t": "Noticing the pleasant",
+"f": "Spotting small pleasant moments during the day and staying with them a few seconds"
+},
+{
+"d": 29,
+"lv": "beginner",
+"t": "Starting a practice journal",
+"f": "Writing one line after each practice about what you noticed"
+},
+{
+"d": 30,
+"lv": "beginner",
+"t": "Review: your first month",
+"f": "Looking back on the first practices and choosing the two you liked best"
+},
+{
+"d": 31,
+"lv": "beginner",
+"t": "The natural breath",
+"f": "Observing the breath without changing it, like watching waves on a shore"
+},
+{
+"d": 32,
+"lv": "beginner",
+"t": "A longer exhale for calm",
+"f": "Breathing out a little longer than you breathe in to help the body settle"
+},
+{
+"d": 33,
+"lv": "beginner",
+"t": "Box breathing",
+"f": "Breathing in, holding, breathing out and holding again for equal gentle counts of four"
+},
+{
+"d": 34,
+"lv": "beginner",
+"t": "Breath at the nostrils",
+"f": "Feeling the cool air coming in and the slightly warmer air going out"
+},
+{
+"d": 35,
+"lv": "beginner",
+"t": "Breath in the chest",
+"f": "Noticing the gentle expansion and release of the ribs with each breath"
+},
+{
+"d": 36,
+"lv": "beginner",
+"t": "When breathing feels awkward",
+"f": "What to do if focusing on the breath feels uncomfortable: use sounds or the feet instead"
+},
+{
+"d": 37,
+"lv": "beginner",
+"t": "Anchors beyond the breath",
+"f": "Using sounds, hands or feet as a steady point of attention"
+},
+{
+"d": 38,
+"lv": "beginner",
+"t": "Feet on the floor",
+"f": "Feeling contact with the ground as a quick way to feel steady"
+},
+{
+"d": 39,
+"lv": "beginner",
+"t": "A full body scan",
+"f": "A longer, slower scan from the toes to the top of the head with curiosity"
+},
+{
+"d": 40,
+"lv": "beginner",
+"t": "Scanning for comfort",
+"f": "Looking for areas of ease and comfort in the body, not only tension"
+},
+{
+"d": 41,
+"lv": "beginner",
+"t": "Mindful stretching",
+"f": "Moving slowly through simple stretches while feeling each sensation"
+},
+{
+"d": 42,
+"lv": "beginner",
+"t": "Posture check-ins",
+"f": "Noticing how you sit or stand at different moments of the day"
+},
+{
+"d": 43,
+"lv": "beginner",
+"t": "Relaxing the face",
+"f": "Softening the forehead, eyes and jaw with each out-breath"
+},
+{
+"d": 44,
+"lv": "beginner",
+"t": "The shoulder drop",
+"f": "Lifting the shoulders on an in-breath and letting them fall on the out-breath"
+},
+{
+"d": 45,
+"lv": "beginner",
+"t": "Noticing temperature",
+"f": "Feeling warmth and coolness on the skin as an anchor to the present"
+},
+{
+"d": 46,
+"lv": "beginner",
+"t": "Mindful standing",
+"f": "Standing still for a minute and sensing balance and tiny movements"
+},
+{
+"d": 47,
+"lv": "beginner",
+"t": "Body and mood connection",
+"f": "Noticing how posture and breathing change with different moods"
+},
+{
+"d": 48,
+"lv": "beginner",
+"t": "The energy check-in",
+"f": "Rating your energy from one to ten and noticing what lifts or drains it"
+},
+{
+"d": 49,
+"lv": "beginner",
+"t": "Mindful rest breaks",
+"f": "Taking short screen-free breaks to let body and mind reset"
+},
+{
+"d": 50,
+"lv": "beginner",
+"t": "Breathing with movement",
+"f": "Raising the arms with the in-breath and lowering them with the out-breath"
+},
+{
+"d": 51,
+"lv": "beginner",
+"t": "Counting down to calm",
+"f": "Counting slowly backwards from twenty, one number per breath"
+},
+{
+"d": 52,
+"lv": "beginner",
+"t": "The pause between breaths",
+"f": "Feeling the tiny natural pause at the end of each breath"
+},
+{
+"d": 53,
+"lv": "beginner",
+"t": "Sitting for five minutes",
+"f": "Extending your sit to five minutes with the breath as your anchor"
+},
+{
+"d": 54,
+"lv": "beginner",
+"t": "Common sitting discomforts",
+"f": "Adjusting gently when legs tingle or the back feels tired"
+},
+{
+"d": 55,
+"lv": "beginner",
+"t": "Sleepiness during practice",
+"f": "Simple tricks to stay alert: open the eyes, sit taller or practise earlier"
+},
+{
+"d": 56,
+"lv": "beginner",
+"t": "Restlessness during practice",
+"f": "Letting restless energy be noticed and named instead of fought"
+},
+{
+"d": 57,
+"lv": "beginner",
+"t": "Practising outdoors with open eyes",
+"f": "Sitting on a bench and resting attention on what you see and hear"
+},
+{
+"d": 58,
+"lv": "beginner",
+"t": "Mindful breathing in queues",
+"f": "Using waiting time for a few slow, conscious breaths"
+},
+{
+"d": 59,
+"lv": "beginner",
+"t": "The breath as a portable tool",
+"f": "Remembering that the breath is always available, wherever you are"
+},
+{
+"d": 60,
+"lv": "beginner",
+"t": "Review: breath and body",
+"f": "Revisiting your favourite breath and body practices from the last month"
+},
+{
+"d": 61,
+"lv": "beginner",
+"t": "Mindful seeing",
+"f": "Looking at an ordinary object for two minutes, noticing colour, shape and light"
+},
+{
+"d": 62,
+"lv": "beginner",
+"t": "The colour hunt",
+"f": "Picking one colour and noticing it everywhere during a walk"
+},
+{
+"d": 63,
+"lv": "beginner",
+"t": "Mindful listening to music",
+"f": "Listening to one song with full attention to each instrument and voice"
+},
+{
+"d": 64,
+"lv": "beginner",
+"t": "Smell awareness",
+"f": "Pausing to notice scents in the kitchen, the garden or the street"
+},
+{
+"d": 65,
+"lv": "beginner",
+"t": "Mindful touch",
+"f": "Exploring textures like fabric, wood and stone with curiosity"
+},
+{
+"d": 66,
+"lv": "beginner",
+"t": "Taste exploration",
+"f": "Noticing sweet, salty, sour, bitter and savoury flavours in one meal"
+},
+{
+"d": 67,
+"lv": "beginner",
+"t": "A mindful cup of tea or coffee",
+"f": "Preparing and drinking a hot drink with full attention to every step"
+},
+{
+"d": 68,
+"lv": "beginner",
+"t": "Mindful showering",
+"f": "Feeling water, temperature and scent instead of planning the day"
+},
+{
+"d": 69,
+"lv": "beginner",
+"t": "Mindful teeth brushing",
+"f": "Turning a two-minute routine into a small sensory practice"
+},
+{
+"d": 70,
+"lv": "beginner",
+"t": "Mindful dishwashing",
+"f": "Noticing warm water, bubbles and movement while washing up"
+},
+{
+"d": 71,
+"lv": "beginner",
+"t": "Mindful cooking",
+"f": "Chopping, stirring and smelling with attention to each step"
+},
+{
+"d": 72,
+"lv": "beginner",
+"t": "Mindful tidying",
+"f": "Making tidying a calm, focused activity instead of a rush"
+},
+{
+"d": 73,
+"lv": "beginner",
+"t": "Mindful commuting",
+"f": "Using the journey to notice your surroundings instead of scrolling"
+},
+{
+"d": 74,
+"lv": "beginner",
+"t": "The mindful phone pick-up",
+"f": "Pausing for one breath before unlocking your phone"
+},
+{
+"d": 75,
+"lv": "beginner",
+"t": "Mindful doorways",
+"f": "Using each doorway as a reminder to arrive fully where you are"
+},
+{
+"d": 76,
+"lv": "beginner",
+"t": "Mindful waiting",
+"f": "Turning red lights and queues into small moments of presence"
+},
+{
+"d": 77,
+"lv": "beginner",
+"t": "Mindful mornings",
+"f": "Starting the day with one minute of breathing before checking messages"
+},
+{
+"d": 78,
+"lv": "beginner",
+"t": "Mindful evenings",
+"f": "Ending the day with a short body scan or a quiet look back"
+},
+{
+"d": 79,
+"lv": "beginner",
+"t": "A calm wind-down routine",
+"f": "Building a relaxing pre-sleep routine with dim light and slow breathing"
+},
+{
+"d": 80,
+"lv": "beginner",
+"t": "Mindful nature moments",
+"f": "Noticing trees, sky, wind or birds for a few unhurried minutes"
+},
+{
+"d": 81,
+"lv": "beginner",
+"t": "Watching clouds",
+"f": "Observing clouds drift by as a gentle image for passing thoughts"
+},
+{
+"d": 82,
+"lv": "beginner",
+"t": "Mindful plant care",
+"f": "Caring for a plant with full attention to soil, leaves and water"
+},
+{
+"d": 83,
+"lv": "beginner",
+"t": "Single-tasking",
+"f": "Doing one thing at a time and noticing how it feels"
+},
+{
+"d": 84,
+"lv": "beginner",
+"t": "Mindful reading",
+"f": "Reading a page slowly and noticing each time attention drifts"
+},
+{
+"d": 85,
+"lv": "beginner",
+"t": "Mindful writing by hand",
+"f": "Writing a few lines slowly, feeling the pen and the paper"
+},
+{
+"d": 86,
+"lv": "beginner",
+"t": "Everyday reminders",
+"f": "Choosing small cues like a sticker or a sound to remember to pause"
+},
+{
+"d": 87,
+"lv": "beginner",
+"t": "Mindful moments with animals",
+"f": "Watching a pet or a bird with curiosity and full attention"
+},
+{
+"d": 88,
+"lv": "beginner",
+"t": "Your natural pace",
+"f": "Noticing the pace of daily chores and choosing not to rush"
+},
+{
+"d": 89,
+"lv": "beginner",
+"t": "Practice anywhere",
+"f": "Combining short formal sits with informal moments throughout the day"
+},
+{
+"d": 90,
+"lv": "beginner",
+"t": "Review: mindfulness in daily life",
+"f": "Choosing three everyday activities to keep as regular mindful moments"
+},
+{
+"d": 91,
+"lv": "beginner",
+"t": "Thoughts are not facts",
+"f": "Seeing thoughts as passing mental events rather than absolute truths"
+},
+{
+"d": 92,
+"lv": "beginner",
+"t": "Noticing thinking",
+"f": "Simply saying 'thinking' to yourself whenever you notice a thought"
+},
+{
+"d": 93,
+"lv": "beginner",
+"t": "Thoughts as clouds",
+"f": "Imagining thoughts drifting by like clouds across the sky"
+},
+{
+"d": 94,
+"lv": "beginner",
+"t": "Leaves on a stream",
+"f": "Placing each thought on an imagined leaf and watching it float away"
+},
+{
+"d": 95,
+"lv": "beginner",
+"t": "Planning mind and remembering mind",
+"f": "Noticing whether thoughts pull you toward the future or the past"
+},
+{
+"d": 96,
+"lv": "beginner",
+"t": "The inner commentator",
+"f": "Spotting the running commentary in your head with a light touch"
+},
+{
+"d": 97,
+"lv": "beginner",
+"t": "Labelling emotions",
+"f": "Naming feelings simply, like 'this is frustration', to create a little space"
+},
+{
+"d": 98,
+"lv": "beginner",
+"t": "Where emotions live in the body",
+"f": "Noticing how feelings show up as warmth, tightness or energy"
+},
+{
+"d": 99,
+"lv": "beginner",
+"t": "The RAIN steps",
+"f": "Recognise, Allow, Investigate with kindness, Nurture: a gentle way to meet feelings"
+},
+{
+"d": 100,
+"lv": "beginner",
+"t": "Day one hundred",
+"f": "Celebrating one hundred days and noticing what has changed for you"
+},
+{
+"d": 101,
+"lv": "beginner",
+"t": "Riding the wave of a feeling",
+"f": "Watching an emotion rise, peak and pass like a wave"
+},
+{
+"d": 102,
+"lv": "beginner",
+"t": "Pausing before reacting",
+"f": "Using one breath to create space between a trigger and your response"
+},
+{
+"d": 103,
+"lv": "beginner",
+"t": "The STOP practice",
+"f": "Stop, Take a breath, Observe, Proceed: a quick reset for busy moments"
+},
+{
+"d": 104,
+"lv": "beginner",
+"t": "Noticing impatience",
+"f": "Exploring impatience with curiosity in everyday situations"
+},
+{
+"d": 105,
+"lv": "beginner",
+"t": "Meeting boredom",
+"f": "Looking closely at boredom and discovering what is actually there"
+},
+{
+"d": 106,
+"lv": "beginner",
+"t": "Noticing worry thoughts",
+"f": "Recognising worry as a habit of mind and gently returning to the present"
+},
+{
+"d": 107,
+"lv": "beginner",
+"t": "Self-talk with kindness",
+"f": "Speaking to yourself the way you would speak to a good friend"
+},
+{
+"d": 108,
+"lv": "beginner",
+"t": "Pleasant, unpleasant, neutral",
+"f": "Noticing the quick feeling tone that every experience carries"
+},
+{
+"d": 109,
+"lv": "beginner",
+"t": "Noticing urges",
+"f": "Watching the urge to check, snack or scroll without acting on it right away"
+},
+{
+"d": 110,
+"lv": "beginner",
+"t": "Urge surfing",
+"f": "Riding an urge like a wave until it naturally fades"
+},
+{
+"d": 111,
+"lv": "beginner",
+"t": "Mindfulness and everyday stress",
+"f": "How a pause and slower breathing can help you feel steadier in busy moments"
+},
+{
+"d": 112,
+"lv": "beginner",
+"t": "Calm in small doses",
+"f": "Using thirty-second practices on hard days instead of skipping practice"
+},
+{
+"d": 113,
+"lv": "beginner",
+"t": "Joy noticing",
+"f": "Staying a few breaths longer with moments of joy or delight"
+},
+{
+"d": 114,
+"lv": "beginner",
+"t": "Gratitude moments",
+"f": "Noticing small things you appreciate as part of mindful awareness"
+},
+{
+"d": 115,
+"lv": "beginner",
+"t": "Beginner's mind",
+"f": "Looking at familiar things as if seeing them for the very first time"
+},
+{
+"d": 116,
+"lv": "beginner",
+"t": "Non-striving",
+"f": "Practising without trying to reach any special state"
+},
+{
+"d": 117,
+"lv": "beginner",
+"t": "Patience as practice",
+"f": "Letting things unfold in their own time, on the cushion and in daily life"
+},
+{
+"d": 118,
+"lv": "beginner",
+"t": "Acceptance is not giving up",
+"f": "Acknowledging what is here right now as a starting point for wise action"
+},
+{
+"d": 119,
+"lv": "beginner",
+"t": "Knowing when to ask for support",
+"f": "Mindfulness supports general wellbeing but never replaces a doctor or other professional"
+},
+{
+"d": 120,
+"lv": "beginner",
+"t": "Review: the beginner path",
+"f": "Looking back on four months of practice and setting a gentle next goal"
+},
+{
+"d": 121,
+"lv": "intermediate",
+"t": "Ten-minute sits",
+"f": "Extending your formal practice to ten minutes at a relaxed pace"
+},
+{
+"d": 122,
+"lv": "intermediate",
+"t": "Noting practice",
+"f": "Lightly labelling experiences as hearing, feeling or thinking as they arise"
+},
+{
+"d": 123,
+"lv": "intermediate",
+"t": "Choosing your anchor",
+"f": "Picking the anchor that works best for you and staying with it for a week"
+},
+{
+"d": 124,
+"lv": "intermediate",
+"t": "Sound meditation",
+"f": "Resting in the soundscape and noticing how sounds begin and end"
+},
+{
+"d": 125,
+"lv": "intermediate",
+"t": "Open awareness",
+"f": "Letting attention rest open, noticing whatever arises without choosing"
+},
+{
+"d": 126,
+"lv": "intermediate",
+"t": "Focused versus open attention",
+"f": "Comparing narrow focus with wide awareness and when each one helps"
+},
+{
+"d": 127,
+"lv": "intermediate",
+"t": "Mind like the sky",
+"f": "Seeing experiences as weather passing through a wide, open sky"
+},
+{
+"d": 128,
+"lv": "intermediate",
+"t": "Sitting without guidance",
+"f": "Practising without audio and trusting your own pace"
+},
+{
+"d": 129,
+"lv": "intermediate",
+"t": "Guided versus self-led practice",
+"f": "Exploring the benefits of each and finding your own balance"
+},
+{
+"d": 130,
+"lv": "intermediate",
+"t": "Slow walking meditation",
+"f": "A very slow walk noticing the lifting, moving and placing of each foot"
+},
+{
+"d": 131,
+"lv": "intermediate",
+"t": "Walking meditation outdoors",
+"f": "Taking walking practice into a park at a natural pace"
+},
+{
+"d": 132,
+"lv": "intermediate",
+"t": "A mindful movement flow",
+"f": "Linking simple, gentle movements to the breath for ten minutes"
+},
+{
+"d": 133,
+"lv": "intermediate",
+"t": "Lying-down practice",
+"f": "Practising while lying down and staying awake and attentive"
+},
+{
+"d": 134,
+"lv": "intermediate",
+"t": "Mindful stillness",
+"f": "Exploring complete physical stillness for a few minutes"
+},
+{
+"d": 135,
+"lv": "intermediate",
+"t": "Noticing subtle sensations",
+"f": "Finding faint sensations like the pulse, air on the skin and clothing"
+},
+{
+"d": 136,
+"lv": "intermediate",
+"t": "The breath counting challenge",
+"f": "Counting breaths to ten three times in a row without losing count"
+},
+{
+"d": 137,
+"lv": "intermediate",
+"t": "Concentration and ease",
+"f": "Balancing steady focus with a relaxed, light attitude"
+},
+{
+"d": 138,
+"lv": "intermediate",
+"t": "Working with sleepy sits",
+"f": "Adjusting time, posture and light when practice gets drowsy"
+},
+{
+"d": 139,
+"lv": "intermediate",
+"t": "Working with busy sits",
+"f": "Using counting or noting when the mind races"
+},
+{
+"d": 140,
+"lv": "intermediate",
+"t": "Practice after a long day",
+"f": "Short, gentle practices for evenings when energy is low"
+},
+{
+"d": 141,
+"lv": "intermediate",
+"t": "A morning practice ritual",
+"f": "Designing a calm morning sit with a set place and time"
+},
+{
+"d": 142,
+"lv": "intermediate",
+"t": "A practice corner at home",
+"f": "Creating a simple spot at home that invites you to practise"
+},
+{
+"d": 143,
+"lv": "intermediate",
+"t": "Tracking your practice",
+"f": "Keeping a simple log of days, length and observations"
+},
+{
+"d": 144,
+"lv": "intermediate",
+"t": "Missing a day kindly",
+"f": "Restarting without guilt when practice slips"
+},
+{
+"d": 145,
+"lv": "intermediate",
+"t": "Planning a mini retreat at home",
+"f": "Planning a calm hour that alternates sitting and walking practice"
+},
+{
+"d": 146,
+"lv": "intermediate",
+"t": "An hour of silence",
+"f": "Spending one hour without screens, music or talking"
+},
+{
+"d": 147,
+"lv": "intermediate",
+"t": "Mindful journaling prompts",
+"f": "Writing short reflections that deepen your awareness"
+},
+{
+"d": 148,
+"lv": "intermediate",
+"t": "Noticing progress gently",
+"f": "Spotting subtle changes, like returning to the breath more quickly"
+},
+{
+"d": 149,
+"lv": "intermediate",
+"t": "Patterns of attention",
+"f": "Discovering when your attention is sharpest and when it drifts most"
+},
+{
+"d": 150,
+"lv": "intermediate",
+"t": "Review: deepening your sit",
+"f": "Reviewing your sitting, walking and open awareness practices"
+},
+{
+"d": 151,
+"lv": "intermediate",
+"t": "Kindness practice basics",
+"f": "Silently wishing yourself well with simple phrases like 'may I be at ease'"
+},
+{
+"d": 152,
+"lv": "intermediate",
+"t": "Kind wishes for a friend",
+"f": "Extending warm wishes to someone you care about"
+},
+{
+"d": 153,
+"lv": "intermediate",
+"t": "Kind wishes for a neutral person",
+"f": "Wishing well to someone you barely know, like a shop assistant"
+},
+{
+"d": 154,
+"lv": "intermediate",
+"t": "Kind wishes for a difficult person",
+"f": "Gently including someone you find challenging, starting small"
+},
+{
+"d": 155,
+"lv": "intermediate",
+"t": "Kind wishes for everyone",
+"f": "Widening good wishes to all people everywhere"
+},
+{
+"d": 156,
+"lv": "intermediate",
+"t": "Self-compassion basics",
+"f": "Treating your own mistakes with understanding and warmth"
+},
+{
+"d": 157,
+"lv": "intermediate",
+"t": "The self-compassion break",
+"f": "Three steps: noticing difficulty, remembering others feel it too, offering yourself kindness"
+},
+{
+"d": 158,
+"lv": "intermediate",
+"t": "Soothing touch",
+"f": "Placing a hand on your heart or arm as a calming, friendly gesture"
+},
+{
+"d": 159,
+"lv": "intermediate",
+"t": "Common humanity",
+"f": "Remembering that everyone struggles sometimes and you are not alone"
+},
+{
+"d": 160,
+"lv": "intermediate",
+"t": "The inner critic, gently",
+"f": "Noticing the inner critic and answering it with a kinder voice"
+},
+{
+"d": 161,
+"lv": "intermediate",
+"t": "Mindful listening to others",
+"f": "Listening fully without planning your reply"
+},
+{
+"d": 162,
+"lv": "intermediate",
+"t": "Mindful speaking",
+"f": "Pausing before speaking and choosing words with care"
+},
+{
+"d": 163,
+"lv": "intermediate",
+"t": "Mindful conversations across cultures",
+"f": "Listening with curiosity to people from different backgrounds"
+},
+{
+"d": 164,
+"lv": "intermediate",
+"t": "Noticing assumptions",
+"f": "Spotting quick judgements about people and holding them lightly"
+},
+{
+"d": 165,
+"lv": "intermediate",
+"t": "Empathy in daily life",
+"f": "Imagining how a situation feels from another person's side"
+},
+{
+"d": 166,
+"lv": "intermediate",
+"t": "Appreciating others",
+"f": "Noticing and naming qualities you admire in the people around you"
+},
+{
+"d": 167,
+"lv": "intermediate",
+"t": "Mindful messaging",
+"f": "Reading and writing messages calmly before you press send"
+},
+{
+"d": 168,
+"lv": "intermediate",
+"t": "Mindful disagreements",
+"f": "Staying curious and calm when views differ"
+},
+{
+"d": 169,
+"lv": "intermediate",
+"t": "Sympathetic joy",
+"f": "Feeling genuine happiness for other people's successes"
+},
+{
+"d": 170,
+"lv": "intermediate",
+"t": "Mindful family time",
+"f": "Being fully present during meals or activities with family"
+},
+{
+"d": 171,
+"lv": "intermediate",
+"t": "Mindful friendship",
+"f": "Giving friends your full attention when you spend time together"
+},
+{
+"d": 172,
+"lv": "intermediate",
+"t": "Mindful meetings",
+"f": "Arriving present and listening carefully in group settings"
+},
+{
+"d": 173,
+"lv": "intermediate",
+"t": "Kindness in action",
+"f": "Doing one small, mindful act of kindness each day"
+},
+{
+"d": 174,
+"lv": "intermediate",
+"t": "Patience with others",
+"f": "Using the breath when others move or speak slowly"
+},
+{
+"d": 175,
+"lv": "intermediate",
+"t": "Letting small things go",
+"f": "Releasing minor irritations with a few calm breaths"
+},
+{
+"d": 176,
+"lv": "intermediate",
+"t": "Mindful hosting",
+"f": "Welcoming guests with presence and attention"
+},
+{
+"d": 177,
+"lv": "intermediate",
+"t": "Mindful presence online",
+"f": "Noticing how social media affects your mood and attention"
+},
+{
+"d": 178,
+"lv": "intermediate",
+"t": "Kindness to strangers",
+"f": "Smiling, thanking and really noticing the people you pass during the day"
+},
+{
+"d": 179,
+"lv": "intermediate",
+"t": "Shared silence",
+"f": "Enjoying quiet moments with others without needing to talk"
+},
+{
+"d": 180,
+"lv": "intermediate",
+"t": "Review: kindness and connection",
+"f": "Reflecting on how mindful kindness has shaped your relationships"
+},
+{
+"d": 181,
+"lv": "intermediate",
+"t": "A mindful start to work",
+"f": "Beginning the workday with a minute of breathing and a clear intention"
+},
+{
+"d": 182,
+"lv": "intermediate",
+"t": "Setting an intention",
+"f": "Choosing one quality, like patience or focus, to carry through the day"
+},
+{
+"d": 183,
+"lv": "intermediate",
+"t": "Focus blocks",
+"f": "Working on one task for a set time with full attention"
+},
+{
+"d": 184,
+"lv": "intermediate",
+"t": "Noticing multitasking",
+"f": "Observing what happens to quality and energy when you switch tasks"
+},
+{
+"d": 185,
+"lv": "intermediate",
+"t": "Mindful email",
+"f": "Handling messages in batches with a calm, focused mind"
+},
+{
+"d": 186,
+"lv": "intermediate",
+"t": "Mindful breaks at work",
+"f": "Using short breaks to stretch, breathe and look away from screens"
+},
+{
+"d": 187,
+"lv": "intermediate",
+"t": "The desk body scan",
+"f": "A quick seated scan to release tension during work"
+},
+{
+"d": 188,
+"lv": "intermediate",
+"t": "Mindful studying",
+"f": "Studying in short focused sessions with breathing pauses"
+},
+{
+"d": 189,
+"lv": "intermediate",
+"t": "Mindful language learning",
+"f": "Listening to new sounds and words with curiosity and patience"
+},
+{
+"d": 190,
+"lv": "intermediate",
+"t": "Calm before presentations",
+"f": "Using slow breathing and grounding before speaking in public"
+},
+{
+"d": 191,
+"lv": "intermediate",
+"t": "Mindful decision making",
+"f": "Pausing to notice options, feelings and values before deciding"
+},
+{
+"d": 192,
+"lv": "intermediate",
+"t": "Noticing perfectionism",
+"f": "Seeing the urge for perfection and choosing 'good enough' with kindness"
+},
+{
+"d": 193,
+"lv": "intermediate",
+"t": "Handling interruptions",
+"f": "Meeting interruptions with a breath instead of irritation"
+},
+{
+"d": 194,
+"lv": "intermediate",
+"t": "Mindful deadlines",
+"f": "Staying steady and focused when time is short"
+},
+{
+"d": 195,
+"lv": "intermediate",
+"t": "Creative flow",
+"f": "Noticing the absorbed state of flow and what helps it appear"
+},
+{
+"d": 196,
+"lv": "intermediate",
+"t": "Mindful problem solving",
+"f": "Stepping back to breathe when stuck before trying again"
+},
+{
+"d": 197,
+"lv": "intermediate",
+"t": "Mindful feedback",
+"f": "Receiving feedback with openness and a pause before reacting"
+},
+{
+"d": 198,
+"lv": "intermediate",
+"t": "Ending the workday",
+"f": "A simple ritual to close work and switch to personal time"
+},
+{
+"d": 199,
+"lv": "intermediate",
+"t": "Mindful working from home",
+"f": "Creating boundaries and pauses when home is also the office"
+},
+{
+"d": 200,
+"lv": "intermediate",
+"t": "Day two hundred",
+"f": "Celebrating two hundred days of practice and noting your favourite tools"
+},
+{
+"d": 201,
+"lv": "intermediate",
+"t": "Digital mindfulness",
+"f": "Noticing how often you reach for devices, and why"
+},
+{
+"d": 202,
+"lv": "intermediate",
+"t": "A notification detox",
+"f": "Turning off non-essential alerts to protect your attention"
+},
+{
+"d": 203,
+"lv": "intermediate",
+"t": "Mindful scrolling",
+"f": "Setting an intention before opening apps and noticing when to stop"
+},
+{
+"d": 204,
+"lv": "intermediate",
+"t": "The screen-free hour",
+"f": "Spending one hour each evening without screens"
+},
+{
+"d": 205,
+"lv": "intermediate",
+"t": "Mindful news habits",
+"f": "Choosing when and how much news to read with awareness"
+},
+{
+"d": 206,
+"lv": "intermediate",
+"t": "Attention as a resource",
+"f": "Treating attention as something valuable that is worth protecting"
+},
+{
+"d": 207,
+"lv": "intermediate",
+"t": "Boredom as a doorway",
+"f": "Letting moments of boredom become small creative pauses"
+},
+{
+"d": 208,
+"lv": "intermediate",
+"t": "Mindful hobbies",
+"f": "Bringing full attention to a hobby you enjoy"
+},
+{
+"d": 209,
+"lv": "intermediate",
+"t": "Mindful spending moments",
+"f": "Pausing before purchases to notice wants and needs"
+},
+{
+"d": 210,
+"lv": "intermediate",
+"t": "Review: work, study and screens",
+"f": "Choosing the practices that help most with focus and balance"
+},
+{
+"d": 211,
+"lv": "intermediate",
+"t": "Meeting difficult feelings gently",
+"f": "Approaching mild discomfort one breath at a time, and stepping back whenever needed"
+},
+{
+"d": 212,
+"lv": "intermediate",
+"t": "Turning toward small discomfort",
+"f": "Feeling small discomforts, like an itch, with curiosity before reacting"
+},
+{
+"d": 213,
+"lv": "intermediate",
+"t": "The space around feelings",
+"f": "Noticing that awareness is bigger than any single feeling"
+},
+{
+"d": 214,
+"lv": "intermediate",
+"t": "Frustration in traffic",
+"f": "Using the breath and a little humour when things move slowly"
+},
+{
+"d": 215,
+"lv": "intermediate",
+"t": "Calming nervous energy",
+"f": "Grounding through the feet and a long exhale when you feel jittery"
+},
+{
+"d": 216,
+"lv": "intermediate",
+"t": "A mindful response to criticism",
+"f": "Feeling the sting, breathing, and choosing a calm reply"
+},
+{
+"d": 217,
+"lv": "intermediate",
+"t": "Your stress signals",
+"f": "Recognising your personal early signs of stress in the body"
+},
+{
+"d": 218,
+"lv": "intermediate",
+"t": "Resetting after a hard moment",
+"f": "A short routine of breath, movement and kind words to yourself"
+},
+{
+"d": 219,
+"lv": "intermediate",
+"t": "Rest as part of practice",
+"f": "Seeing rest and doing nothing as healthy, not lazy"
+},
+{
+"d": 220,
+"lv": "intermediate",
+"t": "The emotional weather report",
+"f": "Describing your inner state like a weather forecast"
+},
+{
+"d": 221,
+"lv": "intermediate",
+"t": "Low-energy days",
+"f": "Adapting practice gently when you feel flat or tired"
+},
+{
+"d": 222,
+"lv": "intermediate",
+"t": "Cultivating calm",
+"f": "Building a steady sense of calm through regular practice"
+},
+{
+"d": 223,
+"lv": "intermediate",
+"t": "Cultivating contentment",
+"f": "Noticing moments when you have enough, right now"
+},
+{
+"d": 224,
+"lv": "intermediate",
+"t": "Equanimity basics",
+"f": "Staying balanced through ups and downs, like a steady boat on moving water"
+},
+{
+"d": 225,
+"lv": "intermediate",
+"t": "Mountain meditation",
+"f": "Imagining yourself as a steady mountain while the weather passes over it"
+},
+{
+"d": 226,
+"lv": "intermediate",
+"t": "Lake meditation",
+"f": "Imagining a calm lake whose depths stay still under surface ripples"
+},
+{
+"d": 227,
+"lv": "intermediate",
+"t": "Mindful hope",
+"f": "Holding hopeful thoughts lightly while staying present"
+},
+{
+"d": 228,
+"lv": "intermediate",
+"t": "Meeting change",
+"f": "Noticing everyday changes in seasons, plans and moods with openness"
+},
+{
+"d": 229,
+"lv": "intermediate",
+"t": "Letting go of small plans",
+"f": "Loosening your grip on minor plans that did not work out"
+},
+{
+"d": 230,
+"lv": "intermediate",
+"t": "Resilience habits",
+"f": "Combining sleep, movement, connection and practice for steadiness"
+},
+{
+"d": 231,
+"lv": "intermediate",
+"t": "Nature immersion",
+"f": "Spending unhurried time in nature with all the senses open"
+},
+{
+"d": 232,
+"lv": "intermediate",
+"t": "Mindful sky watching",
+"f": "Lying back and resting attention in the wide sky"
+},
+{
+"d": 233,
+"lv": "intermediate",
+"t": "Mindful water",
+"f": "Watching rain, a river or the sea and noticing rhythm and sound"
+},
+{
+"d": 234,
+"lv": "intermediate",
+"t": "Seasons and cycles",
+"f": "Noticing seasonal change in light, air and plants"
+},
+{
+"d": 235,
+"lv": "intermediate",
+"t": "The mindful night sky",
+"f": "Looking at the stars or the moon with quiet curiosity"
+},
+{
+"d": 236,
+"lv": "intermediate",
+"t": "Sounds of the city",
+"f": "Turning urban noise into a listening practice"
+},
+{
+"d": 237,
+"lv": "intermediate",
+"t": "Mindful travel",
+"f": "Exploring new places with fresh eyes and slow attention"
+},
+{
+"d": 238,
+"lv": "intermediate",
+"t": "Mindful cultural discovery",
+"f": "Tasting, hearing and seeing a new culture with beginner's mind"
+},
+{
+"d": 239,
+"lv": "intermediate",
+"t": "Mindful photography",
+"f": "Taking fewer, slower photos while really looking"
+},
+{
+"d": 240,
+"lv": "intermediate",
+"t": "Mindful drawing",
+"f": "Drawing or colouring slowly as a focused practice"
+},
+{
+"d": 241,
+"lv": "intermediate",
+"t": "Mindful music making",
+"f": "Playing an instrument or humming with attention to every note"
+},
+{
+"d": 242,
+"lv": "intermediate",
+"t": "Mindful dance",
+"f": "Moving freely to music while feeling the whole body"
+},
+{
+"d": 243,
+"lv": "intermediate",
+"t": "Mindful sports",
+"f": "Bringing breath awareness to running, cycling or swimming"
+},
+{
+"d": 244,
+"lv": "intermediate",
+"t": "Cooking with care for others",
+"f": "Preparing food with care and attention for people you like"
+},
+{
+"d": 245,
+"lv": "intermediate",
+"t": "Savouring",
+"f": "Stretching out the enjoyment of a good moment with full attention"
+},
+{
+"d": 246,
+"lv": "intermediate",
+"t": "Mindful celebrations",
+"f": "Being present at special occasions instead of on the phone"
+},
+{
+"d": 247,
+"lv": "intermediate",
+"t": "Half-speed living",
+"f": "Doing one ordinary activity at half your usual speed"
+},
+{
+"d": 248,
+"lv": "intermediate",
+"t": "Silence in nature",
+"f": "Spending ten minutes outdoors in complete silence"
+},
+{
+"d": 249,
+"lv": "intermediate",
+"t": "Mindfulness and play",
+"f": "Bringing lightness and fun into your practice"
+},
+{
+"d": 250,
+"lv": "intermediate",
+"t": "Review: the intermediate path",
+"f": "Looking back on months of deeper practice and choosing what to carry forward"
+},
+{
+"d": 251,
+"lv": "advanced",
+"t": "Twenty-minute sits",
+"f": "Building up to twenty minutes of steady, relaxed practice"
+},
+{
+"d": 252,
+"lv": "advanced",
+"t": "Noticing the noticing",
+"f": "Turning attention toward awareness itself for a few moments"
+},
+{
+"d": 253,
+"lv": "advanced",
+"t": "The changing nature of experience",
+"f": "Seeing how sensations, sounds and thoughts are constantly shifting"
+},
+{
+"d": 254,
+"lv": "advanced",
+"t": "The breath as constant change",
+"f": "Observing that no two breaths are ever exactly the same"
+},
+{
+"d": 255,
+"lv": "advanced",
+"t": "Sensations in motion",
+"f": "Noticing how body sensations flicker, pulse and move"
+},
+{
+"d": 256,
+"lv": "advanced",
+"t": "Thoughts arising and passing",
+"f": "Watching the beginning, middle and end of single thoughts"
+},
+{
+"d": 257,
+"lv": "advanced",
+"t": "Gaps between thoughts",
+"f": "Resting in the quiet moments between one thought and the next"
+},
+{
+"d": 258,
+"lv": "advanced",
+"t": "Noting in detail",
+"f": "Using finer labels like tingling, pressure, planning or remembering"
+},
+{
+"d": 259,
+"lv": "advanced",
+"t": "The story and the sensation",
+"f": "Separating raw experience from the stories the mind adds to it"
+},
+{
+"d": 260,
+"lv": "advanced",
+"t": "Reactivity patterns",
+"f": "Spotting your repeated reactions and their earliest signs"
+},
+{
+"d": 261,
+"lv": "advanced",
+"t": "Liking and disliking",
+"f": "Noticing how quickly the mind leans toward or away from things"
+},
+{
+"d": 262,
+"lv": "advanced",
+"t": "Curiosity as fuel",
+"f": "Using genuine curiosity to keep practice fresh"
+},
+{
+"d": 263,
+"lv": "advanced",
+"t": "Effort in balance",
+"f": "Finding the middle way between straining and drifting"
+},
+{
+"d": 264,
+"lv": "advanced",
+"t": "Choiceless awareness",
+"f": "Letting attention move freely to whatever is most present"
+},
+{
+"d": 265,
+"lv": "advanced",
+"t": "Spacious awareness",
+"f": "Resting as a wide, open field in which everything appears"
+},
+{
+"d": 266,
+"lv": "advanced",
+"t": "Practice without a goal",
+"f": "Sitting simply to be present, with nothing to achieve"
+},
+{
+"d": 267,
+"lv": "advanced",
+"t": "Walking in silence with others",
+"f": "Exploring how shared silence feels when walking with friends"
+},
+{
+"d": 268,
+"lv": "advanced",
+"t": "Long walking practice",
+"f": "Extending walking meditation to thirty minutes"
+},
+{
+"d": 269,
+"lv": "advanced",
+"t": "A detailed body scan",
+"f": "A slow scan exploring very small regions of the body one by one"
+},
+{
+"d": 270,
+"lv": "advanced",
+"t": "Gentle breathing ratios",
+"f": "Exploring easy patterns like four counts in and six out, never forcing"
+},
+{
+"d": 271,
+"lv": "advanced",
+"t": "Stillness and movement",
+"f": "Alternating sitting and slow movement within one session"
+},
+{
+"d": 272,
+"lv": "advanced",
+"t": "The whole body breathing",
+"f": "Feeling the breath as a gentle movement of the entire body"
+},
+{
+"d": 273,
+"lv": "advanced",
+"t": "Inner quiet",
+"f": "Noticing the quiet that is already present beneath activity"
+},
+{
+"d": 274,
+"lv": "advanced",
+"t": "Practising with noise",
+"f": "Including disturbing sounds as part of the practice"
+},
+{
+"d": 275,
+"lv": "advanced",
+"t": "Practising in public",
+"f": "Doing discreet practices on trains, in parks and in cafes"
+},
+{
+"d": 276,
+"lv": "advanced",
+"t": "Micro practices",
+"f": "Weaving ten-second pauses throughout the whole day"
+},
+{
+"d": 277,
+"lv": "advanced",
+"t": "Mindful transitions",
+"f": "Using every change of activity as a moment of awareness"
+},
+{
+"d": 278,
+"lv": "advanced",
+"t": "A half-day practice",
+"f": "Planning a gentle half day of mindful activities at home"
+},
+{
+"d": 279,
+"lv": "advanced",
+"t": "Reflecting on deeper practice",
+"f": "Writing about what you have discovered in longer sits"
+},
+{
+"d": 280,
+"lv": "advanced",
+"t": "Review: subtle awareness",
+"f": "Revisiting the insight practices and noting what stood out"
+},
+{
+"d": 281,
+"lv": "advanced",
+"t": "Clarifying your values",
+"f": "Identifying what matters most to you through quiet reflection"
+},
+{
+"d": 282,
+"lv": "advanced",
+"t": "Living by your values",
+"f": "Choosing one value to act on mindfully today"
+},
+{
+"d": 283,
+"lv": "advanced",
+"t": "Mindful goal setting",
+"f": "Setting goals that fit your values and checking how they feel in the body"
+},
+{
+"d": 284,
+"lv": "advanced",
+"t": "Purpose in small things",
+"f": "Finding meaning in ordinary daily actions"
+},
+{
+"d": 285,
+"lv": "advanced",
+"t": "Mindful generosity",
+"f": "Giving time, attention or help with full awareness"
+},
+{
+"d": 286,
+"lv": "advanced",
+"t": "Compassion practice",
+"f": "Wishing ease and relief from difficulty for yourself and others"
+},
+{
+"d": 287,
+"lv": "advanced",
+"t": "Compassion in action",
+"f": "Turning a caring intention into a concrete helpful act"
+},
+{
+"d": 288,
+"lv": "advanced",
+"t": "Caring without overwhelm",
+"f": "Caring for others while also taking good care of yourself"
+},
+{
+"d": 289,
+"lv": "advanced",
+"t": "Kindness for groups",
+"f": "Extending good wishes to communities, cities and countries"
+},
+{
+"d": 290,
+"lv": "advanced",
+"t": "Kindness for all living beings",
+"f": "Including animals and nature in your good wishes"
+},
+{
+"d": 291,
+"lv": "advanced",
+"t": "Deepening gratitude",
+"f": "Writing three specific things you appreciate each evening"
+},
+{
+"d": 292,
+"lv": "advanced",
+"t": "Appreciating your body",
+"f": "Thanking your body for everything it does every day"
+},
+{
+"d": 293,
+"lv": "advanced",
+"t": "Appreciating ordinary things",
+"f": "Noticing the value of everyday comforts like light and clean water"
+},
+{
+"d": 294,
+"lv": "advanced",
+"t": "Interconnection",
+"f": "Reflecting on the many people involved in bringing you a single meal"
+},
+{
+"d": 295,
+"lv": "advanced",
+"t": "Mindful consumption",
+"f": "Noticing how you buy, use and throw away things"
+},
+{
+"d": 296,
+"lv": "advanced",
+"t": "Your relationship with time",
+"f": "Noticing the feeling of rushing and choosing a steadier pace"
+},
+{
+"d": 297,
+"lv": "advanced",
+"t": "Simplicity",
+"f": "Reducing clutter and commitments to create space for presence"
+},
+{
+"d": 298,
+"lv": "advanced",
+"t": "Contentment and wanting",
+"f": "Exploring the gap between wanting more and enjoying what is here"
+},
+{
+"d": 299,
+"lv": "advanced",
+"t": "Inner freedom",
+"f": "Noticing moments when you are not pulled along by habits"
+},
+{
+"d": 300,
+"lv": "advanced",
+"t": "Day three hundred",
+"f": "Celebrating three hundred days and reflecting on your growth"
+},
+{
+"d": 301,
+"lv": "advanced",
+"t": "Wise speech",
+"f": "Speaking truthfully, kindly and at the right moment"
+},
+{
+"d": 302,
+"lv": "advanced",
+"t": "Mindful boundaries",
+"f": "Saying no with clarity and kindness"
+},
+{
+"d": 303,
+"lv": "advanced",
+"t": "Mindful leadership",
+"f": "Leading others with presence, good listening and calm"
+},
+{
+"d": 304,
+"lv": "advanced",
+"t": "Mindful caring for others",
+"f": "Bringing patience and presence to looking after children or relatives"
+},
+{
+"d": 305,
+"lv": "advanced",
+"t": "Mindful teamwork",
+"f": "Supporting group work with attention and openness"
+},
+{
+"d": 306,
+"lv": "advanced",
+"t": "Mindful conflict resolution",
+"f": "Using pauses and listening to find common ground"
+},
+{
+"d": 307,
+"lv": "advanced",
+"t": "A mindful apology",
+"f": "Taking responsibility calmly and sincerely"
+},
+{
+"d": 308,
+"lv": "advanced",
+"t": "Celebrating others mindfully",
+"f": "Acknowledging other people's efforts with genuine attention"
+},
+{
+"d": 309,
+"lv": "advanced",
+"t": "Being a calm presence",
+"f": "How your steadiness can help others feel at ease"
+},
+{
+"d": 310,
+"lv": "advanced",
+"t": "Review: values and compassion",
+"f": "Reflecting on how values and kindness show up in your days"
+},
+{
+"d": 311,
+"lv": "advanced",
+"t": "Your personal practice menu",
+"f": "Listing all the practices you know and grouping them by need"
+},
+{
+"d": 312,
+"lv": "advanced",
+"t": "Practice for energy",
+"f": "Choosing practices that refresh you when you feel sluggish"
+},
+{
+"d": 313,
+"lv": "advanced",
+"t": "Practice for calm",
+"f": "Choosing practices that help you slow down when life gets busy"
+},
+{
+"d": 314,
+"lv": "advanced",
+"t": "Practice for focus",
+"f": "Choosing practices that sharpen attention before work or study"
+},
+{
+"d": 315,
+"lv": "advanced",
+"t": "Practice for winding down",
+"f": "Choosing gentle evening practices that prepare you for rest"
+},
+{
+"d": 316,
+"lv": "advanced",
+"t": "Practice on the go",
+"f": "Building a set of quick practices for travel and busy days"
+},
+{
+"d": 317,
+"lv": "advanced",
+"t": "A weekly rhythm",
+"f": "Designing a week of varied practices with one longer session"
+},
+{
+"d": 318,
+"lv": "advanced",
+"t": "Monthly themes",
+"f": "Picking a monthly theme like patience or curiosity to explore"
+},
+{
+"d": 319,
+"lv": "advanced",
+"t": "Seasonal practice",
+"f": "Adapting your practice to the energy of each season"
+},
+{
+"d": 320,
+"lv": "advanced",
+"t": "Reading about mindfulness",
+"f": "Exploring well-known books and teachers with a curious, critical mind"
+},
+{
+"d": 321,
+"lv": "advanced",
+"t": "The science in simple terms",
+"f": "What research generally suggests about mindfulness, attention and wellbeing"
+},
+{
+"d": 322,
+"lv": "advanced",
+"t": "Myths about mindfulness",
+"f": "Clearing up common misunderstandings, like the idea of 'emptying the mind'"
+},
+{
+"d": 323,
+"lv": "advanced",
+"t": "Mindfulness across cultures",
+"f": "How many traditions value attention, breath and calm in different ways"
+},
+{
+"d": 324,
+"lv": "advanced",
+"t": "Mindfulness through history",
+"f": "A respectful look at how attention practices spread around the world"
+},
+{
+"d": 325,
+"lv": "advanced",
+"t": "Practising with a buddy",
+"f": "Sharing practice with a friend to stay motivated"
+},
+{
+"d": 326,
+"lv": "advanced",
+"t": "Joining a group",
+"f": "What to expect from group sits and classes"
+},
+{
+"d": 327,
+"lv": "advanced",
+"t": "Sharing mindfulness with others",
+"f": "Introducing a simple practice to friends without preaching"
+},
+{
+"d": 328,
+"lv": "advanced",
+"t": "Guiding a one-minute practice",
+"f": "Leading a friend through one simple minute of breathing"
+},
+{
+"d": 329,
+"lv": "advanced",
+"t": "Mindful family rituals",
+"f": "Creating small shared moments of presence at home"
+},
+{
+"d": 330,
+"lv": "advanced",
+"t": "Mindfulness for kids, simply",
+"f": "Playful ways children can notice their breath and senses"
+},
+{
+"d": 331,
+"lv": "advanced",
+"t": "Practice through life changes",
+"f": "Keeping a small practice during moves, new jobs or busy seasons"
+},
+{
+"d": 332,
+"lv": "advanced",
+"t": "Restarting after a long break",
+"f": "Returning to practice with beginner's mind and no guilt"
+},
+{
+"d": 333,
+"lv": "advanced",
+"t": "Avoiding practice burnout",
+"f": "Keeping practice light, varied and enjoyable"
+},
+{
+"d": 334,
+"lv": "advanced",
+"t": "Fine-tuning posture",
+"f": "Small adjustments that make longer sits more comfortable"
+},
+{
+"d": 335,
+"lv": "advanced",
+"t": "A personal retreat day",
+"f": "Planning a full day of gentle, mindful living at home"
+},
+{
+"d": 336,
+"lv": "advanced",
+"t": "After a retreat day",
+"f": "Bringing the calm of a retreat day back into normal life"
+},
+{
+"d": 337,
+"lv": "advanced",
+"t": "Measuring what matters",
+"f": "Reflecting on changes in quality of life rather than minutes logged"
+},
+{
+"d": 338,
+"lv": "advanced",
+"t": "Writing your practice plan",
+"f": "Drafting a simple practice plan for the next year"
+},
+{
+"d": 339,
+"lv": "advanced",
+"t": "Mindfulness in a balanced life",
+"f": "Combining practice with good sleep, food, movement and connection"
+},
+{
+"d": 340,
+"lv": "advanced",
+"t": "Review: your lifelong practice",
+"f": "Reviewing the personal toolkit you have built"
+},
+{
+"d": 341,
+"lv": "advanced",
+"t": "A mindful day from start to end",
+"f": "Bringing awareness to every part of one ordinary day"
+},
+{
+"d": 342,
+"lv": "advanced",
+"t": "Mindful mornings revisited",
+"f": "Refreshing your morning practice with everything you have learned"
+},
+{
+"d": 343,
+"lv": "advanced",
+"t": "Mindful meals revisited",
+"f": "Returning to mindful eating with deeper attention"
+},
+{
+"d": 344,
+"lv": "advanced",
+"t": "Mindful walking revisited",
+"f": "Taking a long, slow walk using all your skills"
+},
+{
+"d": 345,
+"lv": "advanced",
+"t": "The body scan revisited",
+"f": "Repeating your first body scan and noticing the differences"
+},
+{
+"d": 346,
+"lv": "advanced",
+"t": "The breath revisited",
+"f": "Returning to simple breath awareness with fresh eyes"
+},
+{
+"d": 347,
+"lv": "advanced",
+"t": "Thoughts revisited",
+"f": "Watching thoughts with the lightness you have built"
+},
+{
+"d": 348,
+"lv": "advanced",
+"t": "Kindness revisited",
+"f": "Repeating kind wishes for yourself and others"
+},
+{
+"d": 349,
+"lv": "advanced",
+"t": "Open awareness revisited",
+"f": "Resting in wide awareness for a longer session"
+},
+{
+"d": 350,
+"lv": "advanced",
+"t": "Presence in conversation",
+"f": "Practising full presence in every conversation today"
+},
+{
+"d": 351,
+"lv": "advanced",
+"t": "Presence in nature",
+"f": "Spending time outdoors as a celebration of your practice"
+},
+{
+"d": 352,
+"lv": "advanced",
+"t": "Presence in creativity",
+"f": "Making something by hand with complete attention"
+},
+{
+"d": 353,
+"lv": "advanced",
+"t": "Presence in rest",
+"f": "Allowing yourself a mindful rest without any guilt"
+},
+{
+"d": 354,
+"lv": "advanced",
+"t": "Your biggest lessons",
+"f": "Writing down the three most important things you have learned"
+},
+{
+"d": 355,
+"lv": "advanced",
+"t": "Your favourite practices",
+"f": "Choosing your top five practices for the year ahead"
+},
+{
+"d": 356,
+"lv": "advanced",
+"t": "Challenges you met",
+"f": "Recognising obstacles you handled with more calm than before"
+},
+{
+"d": 357,
+"lv": "advanced",
+"t": "Gratitude for the journey",
+"f": "Appreciating your own commitment and curiosity"
+},
+{
+"d": 358,
+"lv": "advanced",
+"t": "A letter to your future self",
+"f": "Writing kind words to read again in a year"
+},
+{
+"d": 359,
+"lv": "advanced",
+"t": "Intentions for the next year",
+"f": "Choosing one or two gentle intentions for continued practice"
+},
+{
+"d": 360,
+"lv": "advanced",
+"t": "Keeping the spark alive",
+"f": "Ideas to keep your practice fresh and enjoyable"
+},
+{
+"d": 361,
+"lv": "advanced",
+"t": "Mindfulness as a way of living",
+"f": "Seeing practice as an attitude you carry through daily life"
+},
+{
+"d": 362,
+"lv": "advanced",
+"t": "The long sit",
+"f": "A thirty-minute sit to celebrate how far you have come"
+},
+{
+"d": 363,
+"lv": "advanced",
+"t": "Sharing your journey",
+"f": "Telling someone what mindfulness has meant to you"
+},
+{
+"d": 364,
+"lv": "advanced",
+"t": "Review: the full year",
+"f": "Looking back over all four seasons of practice"
+},
+{
+"d": 365,
+"lv": "advanced",
+"t": "Beginning again",
+"f": "Celebrating day 365 and starting fresh with beginner's mind"
+}
+]
+}

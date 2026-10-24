@@ -1,0 +1,2195 @@
+{
+"topic": "stress_basics",
+"days": [
+{
+"d": 1,
+"lv": "beginner",
+"t": "Welcome to your calmer path",
+"f": "What this 365-day path covers and how one small stress-relief idea a day can help"
+},
+{
+"d": 2,
+"lv": "beginner",
+"t": "What stress is",
+"f": "Stress as the body and mind's natural response to demands and challenges"
+},
+{
+"d": 3,
+"lv": "beginner",
+"t": "Your stress snapshot",
+"f": "Noticing what currently feels heavy or light in your life, without judging it"
+},
+{
+"d": 4,
+"lv": "beginner",
+"t": "The stress response",
+"f": "The 'fight or flight' reaction in simple terms and why it once helped humans survive"
+},
+{
+"d": 5,
+"lv": "beginner",
+"t": "Short-term vs long-term stress",
+"f": "Why brief stress can be useful and why constant pressure wears us down"
+},
+{
+"d": 6,
+"lv": "beginner",
+"t": "Helpful stress",
+"f": "How a little pressure can boost focus and motivation before a challenge"
+},
+{
+"d": 7,
+"lv": "beginner",
+"t": "Signs in the body",
+"f": "Common physical clues like tense shoulders, a fast heartbeat or shallow breathing"
+},
+{
+"d": 8,
+"lv": "beginner",
+"t": "Signs in the mind",
+"f": "Racing thoughts, forgetfulness and difficulty focusing as everyday stress signals"
+},
+{
+"d": 9,
+"lv": "beginner",
+"t": "Signs in behaviour",
+"f": "Changes like snapping at people, rushing or skipping meals when under pressure"
+},
+{
+"d": 10,
+"lv": "beginner",
+"t": "Your personal stress signals",
+"f": "Identifying the first signs that tell you your stress is rising"
+},
+{
+"d": 11,
+"lv": "beginner",
+"t": "Stress triggers",
+"f": "The situations, people, places and thoughts that tend to set off stress"
+},
+{
+"d": 12,
+"lv": "beginner",
+"t": "Big stressors and small hassles",
+"f": "How daily little annoyances can add up as much as big events"
+},
+{
+"d": 13,
+"lv": "beginner",
+"t": "Starting a stress diary",
+"f": "A simple daily note of what stressed you, how you reacted and what helped"
+},
+{
+"d": 14,
+"lv": "beginner",
+"t": "Reading your first week",
+"f": "Spotting patterns in your stress diary such as times, places or tasks"
+},
+{
+"d": 15,
+"lv": "beginner",
+"t": "The stress bucket",
+"f": "A friendly picture of stress filling a bucket and relief ideas as the tap that drains it"
+},
+{
+"d": 16,
+"lv": "beginner",
+"t": "Rating your stress",
+"f": "Using a simple 1 to 10 scale to notice how stressed you feel"
+},
+{
+"d": 17,
+"lv": "beginner",
+"t": "Pause before reacting",
+"f": "Why a short pause between a trigger and your reaction makes a difference"
+},
+{
+"d": 18,
+"lv": "beginner",
+"t": "The power of naming it",
+"f": "How simply saying 'I feel stressed' can calm the mind a little"
+},
+{
+"d": 19,
+"lv": "beginner",
+"t": "Stress and energy",
+"f": "How stress can drain energy and why rest is part of the solution"
+},
+{
+"d": 20,
+"lv": "beginner",
+"t": "Stress is common",
+"f": "Remembering that everyone feels stress and it is not a personal failure"
+},
+{
+"d": 21,
+"lv": "beginner",
+"t": "Different people, different stress",
+"f": "Why the same situation can feel easy for one person and hard for another"
+},
+{
+"d": 22,
+"lv": "beginner",
+"t": "Stress across cultures",
+"f": "How various cultures talk about and handle pressure in daily life"
+},
+{
+"d": 23,
+"lv": "beginner",
+"t": "Words for stress",
+"f": "Expressions about stress and calm in different languages"
+},
+{
+"d": 24,
+"lv": "beginner",
+"t": "Your calm moments",
+"f": "Remembering times you felt truly relaxed and what made them so"
+},
+{
+"d": 25,
+"lv": "beginner",
+"t": "Building a relief menu",
+"f": "Starting a list of small things that help you feel calmer"
+},
+{
+"d": 26,
+"lv": "beginner",
+"t": "Small steps matter",
+"f": "Why tiny, regular relief habits work better than rare big escapes"
+},
+{
+"d": 27,
+"lv": "beginner",
+"t": "When to talk to a professional",
+"f": "Signs that it is a good idea to speak with a doctor or counsellor"
+},
+{
+"d": 28,
+"lv": "beginner",
+"t": "Kindness to yourself",
+"f": "Treating yourself with the patience you would offer a friend"
+},
+{
+"d": 29,
+"lv": "beginner",
+"t": "Setting a gentle goal",
+"f": "Choosing one realistic stress-relief goal for the coming month"
+},
+{
+"d": 30,
+"lv": "beginner",
+"t": "Month one review",
+"f": "Looking back at what stress is, your signals, triggers and diary"
+},
+{
+"d": 31,
+"lv": "beginner",
+"t": "Body first",
+"f": "Why calming the body is often the quickest way to calm the mind"
+},
+{
+"d": 32,
+"lv": "beginner",
+"t": "Belly breathing",
+"f": "Breathing slowly into your belly to signal safety to your body"
+},
+{
+"d": 33,
+"lv": "beginner",
+"t": "Box breathing",
+"f": "Inhale, hold, exhale, hold for four counts each: a simple calming pattern"
+},
+{
+"d": 34,
+"lv": "beginner",
+"t": "Longer exhales",
+"f": "Why breathing out longer than you breathe in tends to relax you"
+},
+{
+"d": 35,
+"lv": "beginner",
+"t": "Breathing on the go",
+"f": "Using quick breathing exercises on the bus, at work or in a queue"
+},
+{
+"d": 36,
+"lv": "beginner",
+"t": "Releasing your shoulders",
+"f": "Noticing tension in neck and shoulders and letting it drop"
+},
+{
+"d": 37,
+"lv": "beginner",
+"t": "Progressive muscle relaxation",
+"f": "Tensing and releasing muscle groups one at a time"
+},
+{
+"d": 38,
+"lv": "beginner",
+"t": "Gentle stretching breaks",
+"f": "Simple stretches to release tension during the day"
+},
+{
+"d": 39,
+"lv": "beginner",
+"t": "Shake it off",
+"f": "Light shaking and movement to release nervous energy"
+},
+{
+"d": 40,
+"lv": "beginner",
+"t": "Walking it out",
+"f": "Why a short walk is one of the simplest stress relievers"
+},
+{
+"d": 41,
+"lv": "beginner",
+"t": "Movement you enjoy",
+"f": "Finding exercise that feels like fun rather than another task"
+},
+{
+"d": 42,
+"lv": "beginner",
+"t": "Dancing for calm",
+"f": "Putting on a favourite song and moving freely"
+},
+{
+"d": 43,
+"lv": "beginner",
+"t": "Yoga basics for relaxation",
+"f": "Gentle, general yoga poses many people find calming"
+},
+{
+"d": 44,
+"lv": "beginner",
+"t": "Time in nature",
+"f": "How green spaces, parks and water can help us feel calmer"
+},
+{
+"d": 45,
+"lv": "beginner",
+"t": "Fresh air breaks",
+"f": "Stepping outside for a few minutes to reset"
+},
+{
+"d": 46,
+"lv": "beginner",
+"t": "Sunlight and mood",
+"f": "How daylight can lift energy and mood"
+},
+{
+"d": 47,
+"lv": "beginner",
+"t": "Warmth and comfort",
+"f": "A warm drink, a warm shower or a blanket to soothe the body"
+},
+{
+"d": 48,
+"lv": "beginner",
+"t": "Cold water splash",
+"f": "How a splash of cool water on the face can feel refreshing and grounding"
+},
+{
+"d": 49,
+"lv": "beginner",
+"t": "Laughter as relief",
+"f": "Why laughing with friends or at something funny can ease tension"
+},
+{
+"d": 50,
+"lv": "beginner",
+"t": "Music that calms",
+"f": "Building a playlist of songs that help you slow down"
+},
+{
+"d": 51,
+"lv": "beginner",
+"t": "Humming and singing",
+"f": "How singing along can relax breathing and lift mood"
+},
+{
+"d": 52,
+"lv": "beginner",
+"t": "Posture and stress",
+"f": "How sitting up and opening the chest can make you feel more confident"
+},
+{
+"d": 53,
+"lv": "beginner",
+"t": "Hands and jaw",
+"f": "Noticing hidden tension in clenched hands and jaw and releasing it"
+},
+{
+"d": 54,
+"lv": "beginner",
+"t": "Self-massage basics",
+"f": "Gentle massage of hands, neck and temples to unwind"
+},
+{
+"d": 55,
+"lv": "beginner",
+"t": "Grounding with the senses",
+"f": "The 5-4-3-2-1 exercise: noticing things you see, hear, feel, smell and taste"
+},
+{
+"d": 56,
+"lv": "beginner",
+"t": "Your body-calming toolkit",
+"f": "Choosing your three favourite physical relief tools"
+},
+{
+"d": 57,
+"lv": "beginner",
+"t": "Practise when calm",
+"f": "Why rehearsing techniques on easy days makes them work on hard days"
+},
+{
+"d": 58,
+"lv": "beginner",
+"t": "A five-minute reset",
+"f": "Combining breath, stretch and a sip of water into a quick routine"
+},
+{
+"d": 59,
+"lv": "beginner",
+"t": "Body relief week",
+"f": "Trying one physical relief tool every day and noting the effect"
+},
+{
+"d": 60,
+"lv": "beginner",
+"t": "Month two review",
+"f": "Recapping breathing, movement, nature and your body toolkit"
+},
+{
+"d": 61,
+"lv": "beginner",
+"t": "Thoughts and stress",
+"f": "How the way we interpret events shapes how stressed we feel"
+},
+{
+"d": 62,
+"lv": "beginner",
+"t": "Noticing your thoughts",
+"f": "Observing thoughts as passing events rather than facts"
+},
+{
+"d": 63,
+"lv": "beginner",
+"t": "Common thinking traps",
+"f": "Catastrophising, all-or-nothing thinking and other everyday traps"
+},
+{
+"d": 64,
+"lv": "beginner",
+"t": "Catastrophising",
+"f": "Spotting when the mind jumps to the worst case and gently zooming out"
+},
+{
+"d": 65,
+"lv": "beginner",
+"t": "All-or-nothing thinking",
+"f": "Finding the shades of grey between total success and failure"
+},
+{
+"d": 66,
+"lv": "beginner",
+"t": "Mind reading",
+"f": "Noticing when we assume what others think without evidence"
+},
+{
+"d": 67,
+"lv": "beginner",
+"t": "Reframing basics",
+"f": "Looking at a stressful situation from a more balanced angle"
+},
+{
+"d": 68,
+"lv": "beginner",
+"t": "What would a friend say?",
+"f": "Using the advice you would give a friend for yourself"
+},
+{
+"d": 69,
+"lv": "beginner",
+"t": "The bigger picture",
+"f": "Asking whether this will matter in a week, a month or a year"
+},
+{
+"d": 70,
+"lv": "beginner",
+"t": "Kind self-talk",
+"f": "Replacing harsh inner criticism with encouraging words"
+},
+{
+"d": 71,
+"lv": "beginner",
+"t": "Circle of control",
+"f": "Separating what you can control from what you cannot"
+},
+{
+"d": 72,
+"lv": "beginner",
+"t": "Acting on what you can change",
+"f": "Turning worry into one small, practical step"
+},
+{
+"d": 73,
+"lv": "beginner",
+"t": "Letting go of what you cannot change",
+"f": "Accepting what is outside your control with less struggle"
+},
+{
+"d": 74,
+"lv": "beginner",
+"t": "Worry time",
+"f": "Setting a daily slot for worries so they intrude less on the rest of your day"
+},
+{
+"d": 75,
+"lv": "beginner",
+"t": "Journaling for clarity",
+"f": "Writing thoughts down to see them more clearly"
+},
+{
+"d": 76,
+"lv": "beginner",
+"t": "Brain dump",
+"f": "Emptying everything on your mind onto paper to feel lighter"
+},
+{
+"d": 77,
+"lv": "beginner",
+"t": "Gratitude practice",
+"f": "Noticing three good things each day to balance a stressed mind"
+},
+{
+"d": 78,
+"lv": "beginner",
+"t": "Savouring good moments",
+"f": "Slowing down to fully enjoy pleasant experiences"
+},
+{
+"d": 79,
+"lv": "beginner",
+"t": "Mindful minutes",
+"f": "Simple one-minute exercises of paying full attention to the present"
+},
+{
+"d": 80,
+"lv": "beginner",
+"t": "Mindful everyday tasks",
+"f": "Washing dishes, walking or drinking tea with full attention"
+},
+{
+"d": 81,
+"lv": "beginner",
+"t": "Curiosity instead of judgement",
+"f": "Approaching difficult feelings with interest instead of criticism"
+},
+{
+"d": 82,
+"lv": "beginner",
+"t": "Patience with yourself",
+"f": "Why change takes time and setbacks are part of the process"
+},
+{
+"d": 83,
+"lv": "beginner",
+"t": "Humour and perspective",
+"f": "Finding lightness in stressful situations without dismissing them"
+},
+{
+"d": 84,
+"lv": "beginner",
+"t": "Optimism basics",
+"f": "How expecting good outcomes can support effort and calm"
+},
+{
+"d": 85,
+"lv": "beginner",
+"t": "Learning from stress",
+"f": "Asking what a stressful moment can teach you"
+},
+{
+"d": 86,
+"lv": "beginner",
+"t": "Your thinking toolkit",
+"f": "Choosing your favourite mental tools for stressful moments"
+},
+{
+"d": 87,
+"lv": "beginner",
+"t": "Practising reframing",
+"f": "Reframing three small daily stressors from your diary"
+},
+{
+"d": 88,
+"lv": "beginner",
+"t": "Mind tools week",
+"f": "Using one thinking tool every day and noting how it feels"
+},
+{
+"d": 89,
+"lv": "beginner",
+"t": "Your progress so far",
+"f": "Comparing your stress diary now with your first week"
+},
+{
+"d": 90,
+"lv": "beginner",
+"t": "Month three review",
+"f": "Recapping thinking traps, reframing, control and mindfulness"
+},
+{
+"d": 91,
+"lv": "beginner",
+"t": "Structure reduces stress",
+"f": "How a bit of planning lowers the feeling of chaos"
+},
+{
+"d": 92,
+"lv": "beginner",
+"t": "Your to-do list",
+"f": "Writing tasks down to free your mind"
+},
+{
+"d": 93,
+"lv": "beginner",
+"t": "Prioritising tasks",
+"f": "Sorting tasks by importance and urgency"
+},
+{
+"d": 94,
+"lv": "beginner",
+"t": "The urgent vs important matrix",
+"f": "A classic grid for deciding what to do first"
+},
+{
+"d": 95,
+"lv": "beginner",
+"t": "One thing at a time",
+"f": "Why multitasking often increases stress and errors"
+},
+{
+"d": 96,
+"lv": "beginner",
+"t": "Breaking big tasks down",
+"f": "Splitting overwhelming tasks into small, doable steps"
+},
+{
+"d": 97,
+"lv": "beginner",
+"t": "Realistic planning",
+"f": "Planning less than you think you can do to leave room for surprises"
+},
+{
+"d": 98,
+"lv": "beginner",
+"t": "Time blocks",
+"f": "Grouping similar tasks into focused blocks of time"
+},
+{
+"d": 99,
+"lv": "beginner",
+"t": "Taking regular breaks",
+"f": "Why short breaks keep energy and focus steady"
+},
+{
+"d": 100,
+"lv": "beginner",
+"t": "The Pomodoro technique",
+"f": "Working in 25-minute focus sessions with short breaks"
+},
+{
+"d": 101,
+"lv": "beginner",
+"t": "Starting the day calmly",
+"f": "A calm morning routine that sets a steady tone"
+},
+{
+"d": 102,
+"lv": "beginner",
+"t": "Ending the day well",
+"f": "A short shutdown ritual to leave work or study behind"
+},
+{
+"d": 103,
+"lv": "beginner",
+"t": "Saying no kindly",
+"f": "Polite ways to decline requests when your plate is full"
+},
+{
+"d": 104,
+"lv": "beginner",
+"t": "Healthy boundaries",
+"f": "Setting limits that protect your time and energy"
+},
+{
+"d": 105,
+"lv": "beginner",
+"t": "Digital overload",
+"f": "How constant notifications and messages raise stress"
+},
+{
+"d": 106,
+"lv": "beginner",
+"t": "Notification detox",
+"f": "Turning off non-essential alerts to reclaim your attention"
+},
+{
+"d": 107,
+"lv": "beginner",
+"t": "Email and message habits",
+"f": "Checking messages at set times instead of all day"
+},
+{
+"d": 108,
+"lv": "beginner",
+"t": "Tidy space, calmer mind",
+"f": "How a little order around you can make you feel more in control"
+},
+{
+"d": 109,
+"lv": "beginner",
+"t": "Preparing the night before",
+"f": "Setting out what you need so mornings feel lighter"
+},
+{
+"d": 110,
+"lv": "beginner",
+"t": "Buffer time",
+"f": "Leaving extra time between appointments to avoid rushing"
+},
+{
+"d": 111,
+"lv": "beginner",
+"t": "Running late without panic",
+"f": "Staying calm when you are behind schedule"
+},
+{
+"d": 112,
+"lv": "beginner",
+"t": "Morning rush fixes",
+"f": "Small changes that take the hurry out of busy mornings"
+},
+{
+"d": 113,
+"lv": "beginner",
+"t": "Single-tasking at home",
+"f": "Doing chores one at a time with full attention"
+},
+{
+"d": 114,
+"lv": "beginner",
+"t": "Calendar basics",
+"f": "Using one simple calendar to keep appointments out of your head"
+},
+{
+"d": 115,
+"lv": "beginner",
+"t": "Three goals a day",
+"f": "Choosing three realistic goals each morning instead of a never-ending list"
+},
+{
+"d": 116,
+"lv": "beginner",
+"t": "Weekly planning",
+"f": "A short weekly review to plan ahead and reduce surprises"
+},
+{
+"d": 117,
+"lv": "beginner",
+"t": "Rest as part of the plan",
+"f": "Scheduling free time and fun as seriously as tasks"
+},
+{
+"d": 118,
+"lv": "beginner",
+"t": "Daily structure week",
+"f": "Trying a simple daily plan with breaks and a shutdown ritual"
+},
+{
+"d": 119,
+"lv": "beginner",
+"t": "Beginner stage review",
+"f": "Recapping body tools, mind tools and daily structure"
+},
+{
+"d": 120,
+"lv": "beginner",
+"t": "Celebrating progress",
+"f": "Recognising what you have learned in your first four months"
+},
+{
+"d": 121,
+"lv": "intermediate",
+"t": "Welcome to the intermediate stage",
+"f": "What comes next: work and study, people, lifestyle and real-life situations"
+},
+{
+"d": 122,
+"lv": "intermediate",
+"t": "Work stress basics",
+"f": "Common sources of pressure at work and general ways to ease them"
+},
+{
+"d": 123,
+"lv": "intermediate",
+"t": "Study stress basics",
+"f": "Common sources of pressure in school and university"
+},
+{
+"d": 124,
+"lv": "intermediate",
+"t": "Deadlines without dread",
+"f": "Planning backwards from a deadline to avoid last-minute rushes"
+},
+{
+"d": 125,
+"lv": "intermediate",
+"t": "Procrastination and stress",
+"f": "Why putting things off often increases stress and how to start small"
+},
+{
+"d": 126,
+"lv": "intermediate",
+"t": "The two-minute rule",
+"f": "Doing tiny tasks right away so they do not pile up"
+},
+{
+"d": 127,
+"lv": "intermediate",
+"t": "Perfectionism",
+"f": "How aiming for perfect can create stress and why good enough is often great"
+},
+{
+"d": 128,
+"lv": "intermediate",
+"t": "Done is better than perfect",
+"f": "Practising finishing tasks at a reasonable standard"
+},
+{
+"d": 129,
+"lv": "intermediate",
+"t": "Exam nerves",
+"f": "Preparing steadily and calming your body before tests"
+},
+{
+"d": 130,
+"lv": "intermediate",
+"t": "Presentation nerves",
+"f": "Turning nervous energy into focus before speaking in public"
+},
+{
+"d": 131,
+"lv": "intermediate",
+"t": "Meeting stress",
+"f": "Preparing for meetings so they feel less overwhelming"
+},
+{
+"d": 132,
+"lv": "intermediate",
+"t": "Feedback without fear",
+"f": "Hearing feedback calmly and using it to grow"
+},
+{
+"d": 133,
+"lv": "intermediate",
+"t": "Mistakes at work",
+"f": "Handling errors with honesty, calm and a focus on solutions"
+},
+{
+"d": 134,
+"lv": "intermediate",
+"t": "Busy workload weeks",
+"f": "Survival tips for weeks when everything happens at once"
+},
+{
+"d": 135,
+"lv": "intermediate",
+"t": "Working from home calmly",
+"f": "Keeping boundaries between work and home life"
+},
+{
+"d": 136,
+"lv": "intermediate",
+"t": "Commute calm",
+"f": "Turning travel time into a moment of rest or enjoyment"
+},
+{
+"d": 137,
+"lv": "intermediate",
+"t": "Desk breaks and movement",
+"f": "Small movements during long hours at a desk"
+},
+{
+"d": 138,
+"lv": "intermediate",
+"t": "Lunch break power",
+"f": "Using your lunch break to truly recharge"
+},
+{
+"d": 139,
+"lv": "intermediate",
+"t": "Learning to delegate",
+"f": "Sharing tasks to lighten your load when possible"
+},
+{
+"d": 140,
+"lv": "intermediate",
+"t": "Asking for clarity",
+"f": "Reducing stress by asking questions when tasks are unclear"
+},
+{
+"d": 141,
+"lv": "intermediate",
+"t": "Work-life balance",
+"f": "Making room for rest, people and hobbies around work"
+},
+{
+"d": 142,
+"lv": "intermediate",
+"t": "Leaving work at work",
+"f": "Rituals for switching off after the working day"
+},
+{
+"d": 143,
+"lv": "intermediate",
+"t": "Holidays and recharging",
+"f": "Planning time off that truly rests you"
+},
+{
+"d": 144,
+"lv": "intermediate",
+"t": "Starting a new job or course",
+"f": "Easing into new roles with patience"
+},
+{
+"d": 145,
+"lv": "intermediate",
+"t": "Group projects",
+"f": "Handling shared work and different working styles calmly"
+},
+{
+"d": 146,
+"lv": "intermediate",
+"t": "Celebrating small wins at work",
+"f": "Noticing progress to stay motivated"
+},
+{
+"d": 147,
+"lv": "intermediate",
+"t": "Your work and study plan",
+"f": "Choosing two changes to make your days calmer"
+},
+{
+"d": 148,
+"lv": "intermediate",
+"t": "Ask for support",
+"f": "Knowing when to talk to a manager, teacher or colleague"
+},
+{
+"d": 149,
+"lv": "intermediate",
+"t": "Work and study week",
+"f": "Trying your new work or study habits for a week"
+},
+{
+"d": 150,
+"lv": "intermediate",
+"t": "Month review: work and study",
+"f": "Recapping deadlines, nerves, perfectionism and balance"
+},
+{
+"d": 151,
+"lv": "intermediate",
+"t": "People and stress",
+"f": "How relationships can be a source of both stress and support"
+},
+{
+"d": 152,
+"lv": "intermediate",
+"t": "Your support network",
+"f": "Mapping the people you can turn to"
+},
+{
+"d": 153,
+"lv": "intermediate",
+"t": "Reaching out",
+"f": "Simple ways to ask a friend for a chat when you are stressed"
+},
+{
+"d": 154,
+"lv": "intermediate",
+"t": "Talking it through",
+"f": "Why putting feelings into words with someone you trust helps"
+},
+{
+"d": 155,
+"lv": "intermediate",
+"t": "Active listening",
+"f": "Being a calm, supportive listener for others"
+},
+{
+"d": 156,
+"lv": "intermediate",
+"t": "Clear communication",
+"f": "Saying what you need simply and kindly"
+},
+{
+"d": 157,
+"lv": "intermediate",
+"t": "I-statements",
+"f": "Expressing feelings without blaming, starting with 'I feel'"
+},
+{
+"d": 158,
+"lv": "intermediate",
+"t": "Assertiveness basics",
+"f": "Standing up for yourself respectfully"
+},
+{
+"d": 159,
+"lv": "intermediate",
+"t": "Handling disagreements calmly",
+"f": "Staying calm and curious during disagreements"
+},
+{
+"d": 160,
+"lv": "intermediate",
+"t": "Cooling down before talking",
+"f": "Taking time to calm down before a difficult conversation"
+},
+{
+"d": 161,
+"lv": "intermediate",
+"t": "Apologising and forgiving",
+"f": "How repairing small conflicts reduces lingering stress"
+},
+{
+"d": 162,
+"lv": "intermediate",
+"t": "People-pleasing",
+"f": "Noticing when you say yes to everyone but yourself"
+},
+{
+"d": 163,
+"lv": "intermediate",
+"t": "Comparing yourself to others",
+"f": "Why comparison raises stress and how to refocus on your own path"
+},
+{
+"d": 164,
+"lv": "intermediate",
+"t": "Social media and stress",
+"f": "How feeds can fuel comparison and how to use them mindfully"
+},
+{
+"d": 165,
+"lv": "intermediate",
+"t": "Family stress",
+"f": "General ideas for keeping calm during busy family times"
+},
+{
+"d": 166,
+"lv": "intermediate",
+"t": "Shared homes",
+"f": "Living calmly with housemates or family"
+},
+{
+"d": 167,
+"lv": "intermediate",
+"t": "Loneliness and stress",
+"f": "Small steps towards connection when you feel isolated"
+},
+{
+"d": 168,
+"lv": "intermediate",
+"t": "Making new friends",
+"f": "Gentle ways to build new connections in a new place"
+},
+{
+"d": 169,
+"lv": "intermediate",
+"t": "Kindness as stress relief",
+"f": "How helping others can lift your own mood"
+},
+{
+"d": 170,
+"lv": "intermediate",
+"t": "Celebrating with others",
+"f": "Sharing good news to multiply positive feelings"
+},
+{
+"d": 171,
+"lv": "intermediate",
+"t": "Cross-cultural communication",
+"f": "Avoiding misunderstandings when talking with people from other cultures"
+},
+{
+"d": 172,
+"lv": "intermediate",
+"t": "Different styles of directness",
+"f": "How some cultures speak directly and others more indirectly"
+},
+{
+"d": 173,
+"lv": "intermediate",
+"t": "Patience with language barriers",
+"f": "Staying calm and friendly when words get lost in translation"
+},
+{
+"d": 174,
+"lv": "intermediate",
+"t": "Group chats and stress",
+"f": "Managing busy group chats without feeling overwhelmed"
+},
+{
+"d": 175,
+"lv": "intermediate",
+"t": "Taking space",
+"f": "Spending time alone to recharge, especially for introverts"
+},
+{
+"d": 176,
+"lv": "intermediate",
+"t": "Social energy budget",
+"f": "Balancing social events with quiet time"
+},
+{
+"d": 177,
+"lv": "intermediate",
+"t": "Your relationship toolkit",
+"f": "Choosing your favourite tools for calm communication"
+},
+{
+"d": 178,
+"lv": "intermediate",
+"t": "People week",
+"f": "Practising one communication skill every day"
+},
+{
+"d": 179,
+"lv": "intermediate",
+"t": "Asking for help",
+"f": "Why asking for help is a strength, not a weakness"
+},
+{
+"d": 180,
+"lv": "intermediate",
+"t": "Month review: people",
+"f": "Recapping support, communication, boundaries and connection"
+},
+{
+"d": 181,
+"lv": "intermediate",
+"t": "Lifestyle and stress",
+"f": "How daily habits like sleep, food and movement affect stress"
+},
+{
+"d": 182,
+"lv": "intermediate",
+"t": "Sleep and stress",
+"f": "Why rest and stress affect each other and simple sleep habits that help"
+},
+{
+"d": 183,
+"lv": "intermediate",
+"t": "A calming bedtime routine",
+"f": "Winding down in the evening to leave the day behind"
+},
+{
+"d": 184,
+"lv": "intermediate",
+"t": "Food and mood basics",
+"f": "How regular, balanced meals help keep energy steady"
+},
+{
+"d": 185,
+"lv": "intermediate",
+"t": "Caffeine and stress",
+"f": "How too much caffeine can make some people feel jittery"
+},
+{
+"d": 186,
+"lv": "intermediate",
+"t": "Drinking enough water",
+"f": "Why staying hydrated helps you feel more alert and steady"
+},
+{
+"d": 187,
+"lv": "intermediate",
+"t": "Eating mindfully",
+"f": "Slowing down at meals to enjoy food and take a real break"
+},
+{
+"d": 188,
+"lv": "intermediate",
+"t": "Regular movement",
+"f": "Building movement into your week as a stress buffer"
+},
+{
+"d": 189,
+"lv": "intermediate",
+"t": "Outdoor exercise",
+"f": "Combining movement and nature for double benefits"
+},
+{
+"d": 190,
+"lv": "intermediate",
+"t": "Hobbies that relax",
+"f": "Why hobbies give your mind a break from pressure"
+},
+{
+"d": 191,
+"lv": "intermediate",
+"t": "Creative outlets",
+"f": "Drawing, writing, music and crafts as ways to release tension"
+},
+{
+"d": 192,
+"lv": "intermediate",
+"t": "Cooking as relaxation",
+"f": "How preparing food can be calming and rewarding"
+},
+{
+"d": 193,
+"lv": "intermediate",
+"t": "Gardening and plants",
+"f": "How caring for plants can soothe the mind"
+},
+{
+"d": 194,
+"lv": "intermediate",
+"t": "Reading for calm",
+"f": "Getting lost in a good book as a mini holiday"
+},
+{
+"d": 195,
+"lv": "intermediate",
+"t": "Games and puzzles",
+"f": "Light play as a way to unwind"
+},
+{
+"d": 196,
+"lv": "intermediate",
+"t": "Pets and calm",
+"f": "How time with animals can feel soothing"
+},
+{
+"d": 197,
+"lv": "intermediate",
+"t": "A calm home",
+"f": "Creating a cosy, peaceful corner at home"
+},
+{
+"d": 198,
+"lv": "intermediate",
+"t": "Sounds and silence",
+"f": "Choosing calming sounds or quiet time in a noisy world"
+},
+{
+"d": 199,
+"lv": "intermediate",
+"t": "Scents and calm",
+"f": "Pleasant scents many people find relaxing"
+},
+{
+"d": 200,
+"lv": "intermediate",
+"t": "Screen time balance",
+"f": "Finding a healthy mix of online and offline time"
+},
+{
+"d": 201,
+"lv": "intermediate",
+"t": "A digital sunset",
+"f": "Switching off screens in the evening to unwind"
+},
+{
+"d": 202,
+"lv": "intermediate",
+"t": "Weekend recharge",
+"f": "Planning weekends that actually leave you rested"
+},
+{
+"d": 203,
+"lv": "intermediate",
+"t": "Mini adventures",
+"f": "Small new experiences that refresh your mind"
+},
+{
+"d": 204,
+"lv": "intermediate",
+"t": "Learning something new",
+"f": "How a new skill can be energising and distracting in a good way"
+},
+{
+"d": 205,
+"lv": "intermediate",
+"t": "Volunteering",
+"f": "How giving time to others can bring meaning and calm"
+},
+{
+"d": 206,
+"lv": "intermediate",
+"t": "Your lifestyle audit",
+"f": "Checking sleep, food, movement and fun in your week"
+},
+{
+"d": 207,
+"lv": "intermediate",
+"t": "One lifestyle change",
+"f": "Choosing the single habit that could help you most"
+},
+{
+"d": 208,
+"lv": "intermediate",
+"t": "Lifestyle week",
+"f": "Trying your chosen habit every day for a week"
+},
+{
+"d": 209,
+"lv": "intermediate",
+"t": "Your relief menu revisited",
+"f": "Updating your list of calming activities"
+},
+{
+"d": 210,
+"lv": "intermediate",
+"t": "Month review: lifestyle",
+"f": "Recapping sleep, food, movement, hobbies and screen balance"
+},
+{
+"d": 211,
+"lv": "intermediate",
+"t": "Change and stress",
+"f": "Why even positive changes can feel stressful"
+},
+{
+"d": 212,
+"lv": "intermediate",
+"t": "Moving to a new home",
+"f": "Settling in calmly after a move"
+},
+{
+"d": 213,
+"lv": "intermediate",
+"t": "Moving to a new country",
+"f": "Common stresses of living abroad and ways to adapt"
+},
+{
+"d": 214,
+"lv": "intermediate",
+"t": "Culture shock",
+"f": "The stages of culture shock and how to move through them"
+},
+{
+"d": 215,
+"lv": "intermediate",
+"t": "Homesickness",
+"f": "Gentle ways to stay connected to home while embracing the new"
+},
+{
+"d": 216,
+"lv": "intermediate",
+"t": "Travel stress",
+"f": "Planning ahead to make journeys smoother"
+},
+{
+"d": 217,
+"lv": "intermediate",
+"t": "Delays and cancellations",
+"f": "Staying calm when travel plans go wrong"
+},
+{
+"d": 218,
+"lv": "intermediate",
+"t": "Starting something new",
+"f": "Handling first-day nerves anywhere"
+},
+{
+"d": 219,
+"lv": "intermediate",
+"t": "Uncertainty",
+"f": "Living more calmly with things you cannot know yet"
+},
+{
+"d": 220,
+"lv": "intermediate",
+"t": "Waiting for news",
+"f": "Ways to pass waiting time with less worry"
+},
+{
+"d": 221,
+"lv": "intermediate",
+"t": "Money worries in general",
+"f": "General calm habits like planning and talking openly, without financial advice"
+},
+{
+"d": 222,
+"lv": "intermediate",
+"t": "Busy seasons",
+"f": "Handling holidays and peak times without burning out"
+},
+{
+"d": 223,
+"lv": "intermediate",
+"t": "Celebrations and stress",
+"f": "Enjoying festivities without trying to make everything perfect"
+},
+{
+"d": 224,
+"lv": "intermediate",
+"t": "Hosting guests calmly",
+"f": "Preparing simply so you can enjoy your visitors"
+},
+{
+"d": 225,
+"lv": "intermediate",
+"t": "Big decisions",
+"f": "Making choices calmly with lists, time and good advice"
+},
+{
+"d": 226,
+"lv": "intermediate",
+"t": "Too many choices",
+"f": "Why lots of options can be stressful and how to simplify"
+},
+{
+"d": 227,
+"lv": "intermediate",
+"t": "Unexpected problems",
+"f": "A calm step-by-step way to deal with surprises"
+},
+{
+"d": 228,
+"lv": "intermediate",
+"t": "Noise and crowds",
+"f": "Staying calm in busy, loud places"
+},
+{
+"d": 229,
+"lv": "intermediate",
+"t": "Queues and traffic",
+"f": "Turning waiting into a moment of calm"
+},
+{
+"d": 230,
+"lv": "intermediate",
+"t": "Technology troubles",
+"f": "Staying patient when devices fail you"
+},
+{
+"d": 231,
+"lv": "intermediate",
+"t": "Paperwork and admin",
+"f": "Tackling forms and admin tasks in small, calm sessions"
+},
+{
+"d": 232,
+"lv": "intermediate",
+"t": "Appointments without nerves",
+"f": "Preparing questions and calming nerves before important appointments"
+},
+{
+"d": 233,
+"lv": "intermediate",
+"t": "Job hunting stress",
+"f": "Keeping a steady routine and perspective while looking for work"
+},
+{
+"d": 234,
+"lv": "intermediate",
+"t": "Learning a new language",
+"f": "Handling the frustration of mistakes with patience and humour"
+},
+{
+"d": 235,
+"lv": "intermediate",
+"t": "Living in small spaces",
+"f": "Staying calm in small or shared homes"
+},
+{
+"d": 236,
+"lv": "intermediate",
+"t": "Weather and mood",
+"f": "How grey days or heatwaves can affect stress and simple ways to adapt"
+},
+{
+"d": 237,
+"lv": "intermediate",
+"t": "Caring for others",
+"f": "Looking after your own energy while helping family members"
+},
+{
+"d": 238,
+"lv": "intermediate",
+"t": "Noisy neighbours",
+"f": "Calm, friendly ways to talk about noise issues"
+},
+{
+"d": 239,
+"lv": "intermediate",
+"t": "Plans falling through",
+"f": "Bouncing back when plans are cancelled or changed"
+},
+{
+"d": 240,
+"lv": "intermediate",
+"t": "Busy social calendars",
+"f": "Choosing which invitations to accept without guilt"
+},
+{
+"d": 241,
+"lv": "intermediate",
+"t": "Life situations week",
+"f": "Applying your tools to one real situation in your life"
+},
+{
+"d": 242,
+"lv": "intermediate",
+"t": "Stress and growth",
+"f": "How handling challenges builds confidence over time"
+},
+{
+"d": 243,
+"lv": "intermediate",
+"t": "Reflecting on hard times",
+"f": "Remembering past challenges you got through"
+},
+{
+"d": 244,
+"lv": "intermediate",
+"t": "Your strengths",
+"f": "Identifying personal strengths that help you cope"
+},
+{
+"d": 245,
+"lv": "intermediate",
+"t": "Situations recap",
+"f": "Recapping change, travel, uncertainty and busy times"
+},
+{
+"d": 246,
+"lv": "intermediate",
+"t": "Mid-path check-in",
+"f": "Comparing your stress diary with your first weeks"
+},
+{
+"d": 247,
+"lv": "intermediate",
+"t": "Updating your goals",
+"f": "Adjusting your stress-relief goals for the next stage"
+},
+{
+"d": 248,
+"lv": "intermediate",
+"t": "Planning the advanced stage",
+"f": "Choosing what you most want to explore next"
+},
+{
+"d": 249,
+"lv": "intermediate",
+"t": "Intermediate stage review",
+"f": "Recapping work, people, lifestyle and life situations"
+},
+{
+"d": 250,
+"lv": "intermediate",
+"t": "Celebrating your growth",
+"f": "Recognising how your calm habits have grown"
+},
+{
+"d": 251,
+"lv": "advanced",
+"t": "Welcome to the advanced stage",
+"f": "What the final months cover: resilience, cultures of calm and your lifelong plan"
+},
+{
+"d": 252,
+"lv": "advanced",
+"t": "What resilience means",
+"f": "The ability to bend and bounce back, and how it can be built"
+},
+{
+"d": 253,
+"lv": "advanced",
+"t": "Resilience is a skill",
+"f": "Why resilience grows with practice, not just personality"
+},
+{
+"d": 254,
+"lv": "advanced",
+"t": "Growth mindset",
+"f": "Seeing challenges as chances to learn and grow"
+},
+{
+"d": 255,
+"lv": "advanced",
+"t": "Your values",
+"f": "Identifying what matters most to you as a guide in stressful times"
+},
+{
+"d": 256,
+"lv": "advanced",
+"t": "Living by your values",
+"f": "Making choices that match your values to reduce inner conflict"
+},
+{
+"d": 257,
+"lv": "advanced",
+"t": "Meaning and purpose",
+"f": "How a sense of purpose can make pressure feel more manageable"
+},
+{
+"d": 258,
+"lv": "advanced",
+"t": "Realistic optimism",
+"f": "Hoping for the best while preparing for challenges"
+},
+{
+"d": 259,
+"lv": "advanced",
+"t": "Flexible thinking",
+"f": "Adapting your plans and expectations when things change"
+},
+{
+"d": 260,
+"lv": "advanced",
+"t": "Acceptance",
+"f": "Making room for difficult feelings without fighting them"
+},
+{
+"d": 261,
+"lv": "advanced",
+"t": "Self-compassion in depth",
+"f": "Treating yourself kindly during setbacks"
+},
+{
+"d": 262,
+"lv": "advanced",
+"t": "Recovering after stress",
+"f": "Why recovery time after pressure matters"
+},
+{
+"d": 263,
+"lv": "advanced",
+"t": "Micro-recovery",
+"f": "Tiny pauses during the day that refill your energy"
+},
+{
+"d": 264,
+"lv": "advanced",
+"t": "Energy management",
+"f": "Managing energy, not just time, through the day"
+},
+{
+"d": 265,
+"lv": "advanced",
+"t": "Your energy givers and takers",
+"f": "Listing what fills and drains your energy"
+},
+{
+"d": 266,
+"lv": "advanced",
+"t": "Building confidence",
+"f": "Collecting evidence of your abilities to feel steadier"
+},
+{
+"d": 267,
+"lv": "advanced",
+"t": "Facing small fears",
+"f": "Taking small steps towards things that make you nervous"
+},
+{
+"d": 268,
+"lv": "advanced",
+"t": "Problem-solving steps",
+"f": "A clear method to tackle problems calmly"
+},
+{
+"d": 269,
+"lv": "advanced",
+"t": "Planning for setbacks",
+"f": "Preparing 'if this happens, I will do that' plans"
+},
+{
+"d": 270,
+"lv": "advanced",
+"t": "Learning from setbacks",
+"f": "Reviewing difficult moments to grow wiser"
+},
+{
+"d": 271,
+"lv": "advanced",
+"t": "Gratitude in depth",
+"f": "Deepening gratitude with letters and reflections"
+},
+{
+"d": 272,
+"lv": "advanced",
+"t": "Hope and goals",
+"f": "Setting meaningful goals that give you energy"
+},
+{
+"d": 273,
+"lv": "advanced",
+"t": "Celebrating effort",
+"f": "Valuing effort and progress, not just results"
+},
+{
+"d": 274,
+"lv": "advanced",
+"t": "Resilience role models",
+"f": "Learning from people you admire who handle pressure well"
+},
+{
+"d": 275,
+"lv": "advanced",
+"t": "Your resilience story",
+"f": "Writing about a time you showed resilience"
+},
+{
+"d": 276,
+"lv": "advanced",
+"t": "Resilience habits",
+"f": "The daily habits that keep you strong"
+},
+{
+"d": 277,
+"lv": "advanced",
+"t": "Resilience week",
+"f": "Practising one resilience skill each day"
+},
+{
+"d": 278,
+"lv": "advanced",
+"t": "Your resilience toolkit",
+"f": "Gathering your best tools in one place"
+},
+{
+"d": 279,
+"lv": "advanced",
+"t": "Check-in: how far you have come",
+"f": "Reviewing your diary and noting your growth"
+},
+{
+"d": 280,
+"lv": "advanced",
+"t": "Month review: resilience",
+"f": "Recapping values, optimism, acceptance and recovery"
+},
+{
+"d": 281,
+"lv": "advanced",
+"t": "Calm around the world",
+"f": "How different cultures approach rest and relaxation"
+},
+{
+"d": 282,
+"lv": "advanced",
+"t": "Hygge from Denmark",
+"f": "Cosiness, candles and togetherness as a way to unwind"
+},
+{
+"d": 283,
+"lv": "advanced",
+"t": "Lagom from Sweden",
+"f": "Finding 'just the right amount' in work and life"
+},
+{
+"d": 284,
+"lv": "advanced",
+"t": "Fika breaks",
+"f": "The Swedish coffee and cake break as a social pause"
+},
+{
+"d": 285,
+"lv": "advanced",
+"t": "Forest bathing in Japan",
+"f": "Shinrin-yoku: slowly soaking in the atmosphere of the forest"
+},
+{
+"d": 286,
+"lv": "advanced",
+"t": "Ikigai",
+"f": "The Japanese idea of a reason for being and how it relates to calm"
+},
+{
+"d": 287,
+"lv": "advanced",
+"t": "The tea ceremony",
+"f": "How Japanese tea traditions model slowness and attention"
+},
+{
+"d": 288,
+"lv": "advanced",
+"t": "Dolce far niente",
+"f": "The Italian art of sweet idleness and enjoying doing nothing"
+},
+{
+"d": 289,
+"lv": "advanced",
+"t": "The siesta",
+"f": "Midday rest in Spain and Latin America"
+},
+{
+"d": 290,
+"lv": "advanced",
+"t": "Sauna culture in Finland",
+"f": "How saunas are part of relaxation and social life"
+},
+{
+"d": 291,
+"lv": "advanced",
+"t": "Friluftsliv in Norway",
+"f": "The love of open-air living and time outdoors"
+},
+{
+"d": 292,
+"lv": "advanced",
+"t": "Tai chi",
+"f": "Slow, flowing movements practised in China for balance and calm"
+},
+{
+"d": 293,
+"lv": "advanced",
+"t": "Ubuntu",
+"f": "The Southern African idea that we are connected through others"
+},
+{
+"d": 294,
+"lv": "advanced",
+"t": "Pura vida",
+"f": "Costa Rica's relaxed outlook on life"
+},
+{
+"d": 295,
+"lv": "advanced",
+"t": "Wabi-sabi",
+"f": "The Japanese appreciation of imperfection and how it can ease perfectionism"
+},
+{
+"d": 296,
+"lv": "advanced",
+"t": "Mate and sharing",
+"f": "How sharing mate in South America is a social, calming ritual"
+},
+{
+"d": 297,
+"lv": "advanced",
+"t": "Bathing traditions",
+"f": "Hammams, onsen and other bathing customs that relax body and mind"
+},
+{
+"d": 298,
+"lv": "advanced",
+"t": "Gardens of calm",
+"f": "Zen gardens and other gardens designed for peace"
+},
+{
+"d": 299,
+"lv": "advanced",
+"t": "Music traditions for relaxation",
+"f": "Calming music from different cultures"
+},
+{
+"d": 300,
+"lv": "advanced",
+"t": "Festivals of rest",
+"f": "Holidays and traditions built around rest and family"
+},
+{
+"d": 301,
+"lv": "advanced",
+"t": "Slow living",
+"f": "The slow food and slow living movements"
+},
+{
+"d": 302,
+"lv": "advanced",
+"t": "Screen-free days",
+"f": "Trying a full day without screens to rest your attention"
+},
+{
+"d": 303,
+"lv": "advanced",
+"t": "Your cultural calm mix",
+"f": "Choosing ideas from around the world for your routine"
+},
+{
+"d": 304,
+"lv": "advanced",
+"t": "Trying a new ritual",
+"f": "Testing one cultural calm ritual for a week"
+},
+{
+"d": 305,
+"lv": "advanced",
+"t": "Sharing calm traditions",
+"f": "Telling friends about a calm custom from your culture"
+},
+{
+"d": 306,
+"lv": "advanced",
+"t": "Learning from others' traditions",
+"f": "Asking people from other cultures how they relax"
+},
+{
+"d": 307,
+"lv": "advanced",
+"t": "Culture review",
+"f": "Recapping the world's calm traditions you explored"
+},
+{
+"d": 308,
+"lv": "advanced",
+"t": "Stress myths",
+"f": "Common misunderstandings about stress and what is known"
+},
+{
+"d": 309,
+"lv": "advanced",
+"t": "Stress and the body revisited",
+"f": "A deeper look at how relaxation counters the stress response"
+},
+{
+"d": 310,
+"lv": "advanced",
+"t": "Heart rate and breathing",
+"f": "Why slow breathing tends to slow the heartbeat"
+},
+{
+"d": 311,
+"lv": "advanced",
+"t": "Stress and digestion",
+"f": "General links between stress and appetite"
+},
+{
+"d": 312,
+"lv": "advanced",
+"t": "Stress and sleep revisited",
+"f": "Breaking the cycle of stress and poor sleep"
+},
+{
+"d": 313,
+"lv": "advanced",
+"t": "Stress and memory",
+"f": "Why high stress can make it harder to remember and focus"
+},
+{
+"d": 314,
+"lv": "advanced",
+"t": "Science recap",
+"f": "Recapping the body and mind links you learned"
+},
+{
+"d": 315,
+"lv": "advanced",
+"t": "Early warning signs",
+"f": "Creating your personal list of stress warning signs"
+},
+{
+"d": 316,
+"lv": "advanced",
+"t": "Your stress levels map",
+"f": "Describing green, yellow and red levels for yourself"
+},
+{
+"d": 317,
+"lv": "advanced",
+"t": "Actions for each level",
+"f": "Matching relief tools to each stress level"
+},
+{
+"d": 318,
+"lv": "advanced",
+"t": "Exhaustion awareness",
+"f": "General signs of being worn out for a long time and why a professional can help"
+},
+{
+"d": 319,
+"lv": "advanced",
+"t": "Recognising limits of self-help",
+"f": "Knowing when to reach out to a doctor or counsellor"
+},
+{
+"d": 320,
+"lv": "advanced",
+"t": "Supporting a stressed friend",
+"f": "Kind ways to support someone under pressure"
+},
+{
+"d": 321,
+"lv": "advanced",
+"t": "Supporting your team",
+"f": "Helping create calmer group environments"
+},
+{
+"d": 322,
+"lv": "advanced",
+"t": "Stress-friendly environments",
+"f": "Designing spaces at home or work that feel calm"
+},
+{
+"d": 323,
+"lv": "advanced",
+"t": "Prevention habits",
+"f": "Daily habits that keep stress from building up"
+},
+{
+"d": 324,
+"lv": "advanced",
+"t": "Weekly reset ritual",
+"f": "A weekly routine to clear your mind and plan ahead"
+},
+{
+"d": 325,
+"lv": "advanced",
+"t": "Monthly reflection",
+"f": "A monthly check of how stress and calm are balancing"
+},
+{
+"d": 326,
+"lv": "advanced",
+"t": "Calm under pressure",
+"f": "Staying steady in moments of high pressure"
+},
+{
+"d": 327,
+"lv": "advanced",
+"t": "The calm pre-game",
+"f": "Routines for before big events like exams, interviews or performances"
+},
+{
+"d": 328,
+"lv": "advanced",
+"t": "After the storm",
+"f": "Recovering after an intense period"
+},
+{
+"d": 329,
+"lv": "advanced",
+"t": "Stress and creativity",
+"f": "Using calm states to spark new ideas"
+},
+{
+"d": 330,
+"lv": "advanced",
+"t": "Flow states",
+"f": "Finding activities that absorb you completely"
+},
+{
+"d": 331,
+"lv": "advanced",
+"t": "Play for adults",
+"f": "Why play is a powerful stress reliever at any age"
+},
+{
+"d": 332,
+"lv": "advanced",
+"t": "Laughter in depth",
+"f": "Building more humour and laughter into your weeks"
+},
+{
+"d": 333,
+"lv": "advanced",
+"t": "Nature prescription",
+"f": "Planning regular time in nature as a habit"
+},
+{
+"d": 334,
+"lv": "advanced",
+"t": "Digital wellbeing in depth",
+"f": "Long-term rules for a healthy relationship with tech"
+},
+{
+"d": 335,
+"lv": "advanced",
+"t": "Advanced breathing",
+"f": "Combining breathing techniques for different situations"
+},
+{
+"d": 336,
+"lv": "advanced",
+"t": "Longer relaxation practices",
+"f": "Trying 15 to 20 minute relaxation sessions"
+},
+{
+"d": 337,
+"lv": "advanced",
+"t": "Visualisation",
+"f": "Imagining a calm place or a successful outcome"
+},
+{
+"d": 338,
+"lv": "advanced",
+"t": "Calm words and mantras",
+"f": "Short calming phrases to repeat in stressful moments"
+},
+{
+"d": 339,
+"lv": "advanced",
+"t": "Mindfulness in depth",
+"f": "Building a longer, regular mindfulness practice"
+},
+{
+"d": 340,
+"lv": "advanced",
+"t": "Body awareness",
+"f": "Tuning in to your body's signals throughout the day"
+},
+{
+"d": 341,
+"lv": "advanced",
+"t": "Third-quarter review",
+"f": "Recapping warning signs, prevention and advanced techniques"
+},
+{
+"d": 342,
+"lv": "advanced",
+"t": "Your stress plan",
+"f": "Writing a clear personal plan for managing stress"
+},
+{
+"d": 343,
+"lv": "advanced",
+"t": "Your calm manual",
+"f": "A short guide to what calms you best"
+},
+{
+"d": 344,
+"lv": "advanced",
+"t": "Your support map revisited",
+"f": "Updating the people and places that support you"
+},
+{
+"d": 345,
+"lv": "advanced",
+"t": "Your relief menu final",
+"f": "Finalising your favourite calming activities"
+},
+{
+"d": 346,
+"lv": "advanced",
+"t": "Maintenance habits",
+"f": "The few daily actions that keep stress in check"
+},
+{
+"d": 347,
+"lv": "advanced",
+"t": "Adapting to life changes",
+"f": "Updating your plan for new jobs, homes or stages of life"
+},
+{
+"d": 348,
+"lv": "advanced",
+"t": "Balancing ambition and calm",
+"f": "Pursuing goals without losing your peace"
+},
+{
+"d": 349,
+"lv": "advanced",
+"t": "Joy and play",
+"f": "Making room for fun as part of a calm life"
+},
+{
+"d": 350,
+"lv": "advanced",
+"t": "Inspiring others",
+"f": "Sharing calm habits in a positive, non-preachy way"
+},
+{
+"d": 351,
+"lv": "advanced",
+"t": "Teaching a calming technique",
+"f": "Explaining one tool clearly to someone else"
+},
+{
+"d": 352,
+"lv": "advanced",
+"t": "Gratitude for your journey",
+"f": "Appreciating the progress you have made"
+},
+{
+"d": 353,
+"lv": "advanced",
+"t": "Your top ten calm tips",
+"f": "Writing your personal top ten from the whole year"
+},
+{
+"d": 354,
+"lv": "advanced",
+"t": "Favourite lesson replay",
+"f": "Revisiting the lesson that helped you most"
+},
+{
+"d": 355,
+"lv": "advanced",
+"t": "Body tools revisited",
+"f": "Refreshing your favourite physical relief tools"
+},
+{
+"d": 356,
+"lv": "advanced",
+"t": "Mind tools revisited",
+"f": "Refreshing your favourite thinking tools"
+},
+{
+"d": 357,
+"lv": "advanced",
+"t": "Structure revisited",
+"f": "Refreshing your daily and weekly planning habits"
+},
+{
+"d": 358,
+"lv": "advanced",
+"t": "People tools revisited",
+"f": "Refreshing your communication and support skills"
+},
+{
+"d": 359,
+"lv": "advanced",
+"t": "Lifestyle revisited",
+"f": "Refreshing sleep, food, movement and hobbies"
+},
+{
+"d": 360,
+"lv": "advanced",
+"t": "Year in review: beginner",
+"f": "Looking back on the foundations you built"
+},
+{
+"d": 361,
+"lv": "advanced",
+"t": "Year in review: intermediate",
+"f": "Looking back on work, people, lifestyle and change"
+},
+{
+"d": 362,
+"lv": "advanced",
+"t": "Year in review: advanced",
+"f": "Looking back on resilience, cultures and your plan"
+},
+{
+"d": 363,
+"lv": "advanced",
+"t": "Your calm story",
+"f": "Telling the story of how you handle stress now"
+},
+{
+"d": 364,
+"lv": "advanced",
+"t": "Setting next year's intention",
+"f": "One kind, simple intention for the year ahead"
+},
+{
+"d": 365,
+"lv": "advanced",
+"t": "Celebrating 365 days",
+"f": "Celebrating a full year of learning to live more calmly"
+}
+]
+}

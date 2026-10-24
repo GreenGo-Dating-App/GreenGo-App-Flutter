@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_english",
+ "lessons": [
+  {
+   "d": 261,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Headlines and their language",
+     "g": "Decode headlines: why they drop little words and use short, punchy verbs.",
+     "p": [
+      "Little words disappear: articles and be are dropped. CAT RESCUED FROM TREE = A cat was rescued from a tree.",
+      "Tense tricks: present simple = it just happened (TEAM WINS CUP), to + verb = future (QUEEN TO OPEN MUSEUM).",
+      "Short dramatic verbs: slash = cut, vow = promise, bid = attempt, clash = argue, quit = resign, boost = increase."
+     ],
+     "q": "Have you ever seen an English headline that confused you? What do you think it really meant?",
+     "c": "Rewrite three headlines as full sentences, e.g. FIRMS SLASH PRICES → Companies have cut their prices a lot."
+    },
+    "de": {
+     "t": "Headlines and their language",
+     "g": "Du entschlüsselst Schlagzeilen: Warum sie kleine Wörter weglassen und kurze, starke Verben nutzen.",
+     "p": [
+      "Kleine Wörter fallen weg: Artikel und be. CAT RESCUED FROM TREE = A cat was rescued from a tree.",
+      "Zeit-Tricks: present simple = gerade passiert (TEAM WINS CUP), to + Verb = Zukunft (QUEEN TO OPEN MUSEUM).",
+      "Kurze, dramatische Verben: slash = cut, vow = promise, bid = attempt, clash = argue, quit = resign, boost = increase."
+     ],
+     "q": "Hast du schon einmal eine englische Schlagzeile gesehen, die dich verwirrt hat? Was bedeutete sie wohl?",
+     "c": "Schreib drei Schlagzeilen als ganze Sätze, z. B. FIRMS SLASH PRICES → Companies have cut their prices a lot."
+    },
+    "es": {
+     "t": "Headlines and their language",
+     "g": "Descifra titulares: por qué quitan palabras pequeñas y usan verbos cortos y directos.",
+     "p": [
+      "Desaparecen palabras pequeñas: artículos y be. CAT RESCUED FROM TREE = A cat was rescued from a tree.",
+      "Trucos de tiempo: present simple = acaba de pasar (TEAM WINS CUP), to + verbo = futuro (QUEEN TO OPEN MUSEUM).",
+      "Verbos cortos y dramáticos: slash = cut, vow = promise, bid = attempt, clash = argue, quit = resign, boost = increase."
+     ],
+     "q": "¿Alguna vez te ha confundido un titular en inglés? ¿Qué crees que significaba de verdad?",
+     "c": "Reescribe tres titulares como frases completas, p. ej. FIRMS SLASH PRICES → Companies have cut their prices a lot."
+    },
+    "fr": {
+     "t": "Headlines and their language",
+     "g": "Décode les gros titres : pourquoi ils suppriment les petits mots et utilisent des verbes courts.",
+     "p": [
+      "Les petits mots disparaissent : articles et be. CAT RESCUED FROM TREE = A cat was rescued from a tree.",
+      "Astuces de temps : present simple = vient d'arriver (TEAM WINS CUP), to + verbe = futur (QUEEN TO OPEN MUSEUM).",
+      "Verbes courts et forts : slash = cut, vow = promise, bid = attempt, clash = argue, quit = resign, boost = increase."
+     ],
+     "q": "As-tu déjà vu un titre en anglais qui t'a dérouté ? Que voulait-il vraiment dire selon toi ?",
+     "c": "Réécris trois titres en phrases complètes, par ex. FIRMS SLASH PRICES → Companies have cut their prices a lot."
+    },
+    "it": {
+     "t": "Headlines and their language",
+     "g": "Decifra i titoli: perché tolgono le parole piccole e usano verbi brevi e incisivi.",
+     "p": [
+      "Le parole piccole spariscono: articoli e be. CAT RESCUED FROM TREE = A cat was rescued from a tree.",
+      "Trucchi dei tempi: present simple = appena successo (TEAM WINS CUP), to + verbo = futuro (QUEEN TO OPEN MUSEUM).",
+      "Verbi brevi e d'effetto: slash = cut, vow = promise, bid = attempt, clash = argue, quit = resign, boost = increase."
+     ],
+     "q": "Ti è mai capitato un titolo in inglese che ti ha confuso? Cosa pensi che volesse dire?",
+     "c": "Riscrivi tre titoli come frasi complete, ad es. FIRMS SLASH PRICES → Companies have cut their prices a lot."
+    },
+    "pt": {
+     "t": "Headlines and their language",
+     "g": "Descodifica manchetes: porque cortam as palavras pequenas e usam verbos curtos e fortes.",
+     "p": [
+      "As palavras pequenas desaparecem: artigos e be. CAT RESCUED FROM TREE = A cat was rescued from a tree.",
+      "Truques de tempo: present simple = acabou de acontecer (TEAM WINS CUP), to + verbo = futuro (QUEEN TO OPEN MUSEUM).",
+      "Verbos curtos e dramáticos: slash = cut, vow = promise, bid = attempt, clash = argue, quit = resign, boost = increase."
+     ],
+     "q": "Já viste alguma manchete em inglês que te confundiu? O que achas que queria mesmo dizer?",
+     "c": "Reescreve três manchetes como frases completas, p. ex. FIRMS SLASH PRICES → Companies have cut their prices a lot."
+    },
+    "pt_BR": {
+     "t": "Headlines and their language",
+     "g": "Decifre manchetes: por que elas cortam palavras pequenas e usam verbos curtos e fortes.",
+     "p": [
+      "As palavras pequenas somem: artigos e be. CAT RESCUED FROM TREE = A cat was rescued from a tree.",
+      "Truques de tempo: present simple = acabou de acontecer (TEAM WINS CUP), to + verbo = futuro (QUEEN TO OPEN MUSEUM).",
+      "Verbos curtos e dramáticos: slash = cut, vow = promise, bid = attempt, clash = argue, quit = resign, boost = increase."
+     ],
+     "q": "Você já viu uma manchete em inglês que te confundiu? O que acha que ela queria dizer?",
+     "c": "Reescreva três manchetes como frases completas, ex.: FIRMS SLASH PRICES → Companies have cut their prices a lot."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "to + verb (future)",
+      "ex": "PRIME MINISTER TO VISIT JAPAN means the visit will happen."
+     },
+     {
+      "w": "present simple (past)",
+      "ex": "LOCAL TEAM WINS CUP means the team has won the cup."
+     },
+     {
+      "w": "past participle (passive)",
+      "ex": "TEN RESCUED FROM SEA means ten people were rescued."
+     },
+     {
+      "w": "slash",
+      "ex": "Firms slash prices means companies cut prices a lot."
+     },
+     {
+      "w": "vow",
+      "ex": "Mayor vows to fix roads means the mayor promises to fix them."
+     },
+     {
+      "w": "bid",
+      "ex": "City makes bid to host Games means the city tries to host them."
+     }
+    ],
+    "gram": "Headlinese: articles and be are dropped, present simple = recent past, to + verb = future, past participle = passive: BRIDGE CLOSED."
+   }
+  },
+  {
+   "d": 262,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Fact or opinion?",
+     "g": "Spot facts, opinions and exaggeration in what you read and hear.",
+     "p": [
+      "A fact can be checked: Paris is the capital of France. An opinion is a belief: Paris is the most beautiful city.",
+      "Opinion signals: I think, I believe, the best, amazing, should. Exaggeration signals: always, never, everyone, the worst ever.",
+      "Challenge politely: Is that a fact or an opinion? What's the evidence? Where does that information come from?"
+     ],
+     "q": "Have you ever believed something online and later found out it wasn't true? What happened?",
+     "c": "Write two facts and two opinions about your city, then add one exaggeration and mark which is which."
+    },
+    "de": {
+     "t": "Fact or opinion?",
+     "g": "Du erkennst Fakten, Meinungen und Übertreibungen in dem, was du liest und hörst.",
+     "p": [
+      "Ein Fakt ist überprüfbar: Paris is the capital of France. Eine Meinung ist eine Ansicht: Paris is the most beautiful city.",
+      "Meinungssignale: I think, I believe, the best, amazing, should. Übertreibung: always, never, everyone, the worst ever.",
+      "Höflich nachfragen: Is that a fact or an opinion? What's the evidence? Where does that information come from?"
+     ],
+     "q": "Hast du schon einmal online etwas geglaubt, das sich später als falsch herausstellte? Was war passiert?",
+     "c": "Schreib zwei Fakten und zwei Meinungen über deine Stadt, dazu eine Übertreibung, und markiere, was was ist."
+    },
+    "es": {
+     "t": "Fact or opinion?",
+     "g": "Distingue hechos, opiniones y exageraciones en lo que lees y escuchas.",
+     "p": [
+      "Un hecho se puede comprobar: Paris is the capital of France. Una opinión es una creencia: Paris is the most beautiful city.",
+      "Señales de opinión: I think, I believe, the best, amazing, should. De exageración: always, never, everyone, the worst ever.",
+      "Cuestiona con educación: Is that a fact or an opinion? What's the evidence? Where does that information come from?"
+     ],
+     "q": "¿Alguna vez creíste algo en internet y luego descubriste que no era verdad? ¿Qué pasó?",
+     "c": "Escribe dos hechos y dos opiniones sobre tu ciudad, añade una exageración e indica qué es cada una."
+    },
+    "fr": {
+     "t": "Fact or opinion?",
+     "g": "Repère les faits, les opinions et les exagérations dans ce que tu lis et entends.",
+     "p": [
+      "Un fait se vérifie : Paris is the capital of France. Une opinion est un avis : Paris is the most beautiful city.",
+      "Signaux d'opinion : I think, I believe, the best, amazing, should. D'exagération : always, never, everyone, the worst ever.",
+      "Questionne poliment : Is that a fact or an opinion? What's the evidence? Where does that information come from?"
+     ],
+     "q": "As-tu déjà cru quelque chose en ligne avant de découvrir que c'était faux ? Que s'est-il passé ?",
+     "c": "Écris deux faits et deux opinions sur ta ville, ajoute une exagération et indique ce qu'est chaque phrase."
+    },
+    "it": {
+     "t": "Fact or opinion?",
+     "g": "Riconosci fatti, opinioni ed esagerazioni in ciò che leggi e ascolti.",
+     "p": [
+      "Un fatto si può verificare: Paris is the capital of France. Un'opinione è un parere: Paris is the most beautiful city.",
+      "Segnali di opinione: I think, I believe, the best, amazing, should. Di esagerazione: always, never, everyone, the worst ever.",
+      "Chiedi con garbo: Is that a fact or an opinion? What's the evidence? Where does that information come from?"
+     ],
+     "q": "Ti è mai capitato di credere a qualcosa online e scoprire poi che era falso? Cos'è successo?",
+     "c": "Scrivi due fatti e due opinioni sulla tua città, aggiungi un'esagerazione e indica cos'è ciascuna frase."
+    },
+    "pt": {
+     "t": "Fact or opinion?",
+     "g": "Distingue factos, opiniões e exageros no que lês e ouves.",
+     "p": [
+      "Um facto pode ser verificado: Paris is the capital of France. Uma opinião é uma crença: Paris is the most beautiful city.",
+      "Sinais de opinião: I think, I believe, the best, amazing, should. De exagero: always, never, everyone, the worst ever.",
+      "Questiona com educação: Is that a fact or an opinion? What's the evidence? Where does that information come from?"
+     ],
+     "q": "Já acreditaste em algo na internet e depois descobriste que não era verdade? O que aconteceu?",
+     "c": "Escreve dois factos e duas opiniões sobre a tua cidade, junta um exagero e indica o que é cada um."
+    },
+    "pt_BR": {
+     "t": "Fact or opinion?",
+     "g": "Diferencie fatos, opiniões e exageros no que você lê e ouve.",
+     "p": [
+      "Um fato pode ser verificado: Paris is the capital of France. Uma opinião é uma crença: Paris is the most beautiful city.",
+      "Sinais de opinião: I think, I believe, the best, amazing, should. De exagero: always, never, everyone, the worst ever.",
+      "Questione com educação: Is that a fact or an opinion? What's the evidence? Where does that information come from?"
+     ],
+     "q": "Você já acreditou em algo na internet e depois descobriu que não era verdade? O que aconteceu?",
+     "c": "Escreva dois fatos e duas opiniões sobre a sua cidade, inclua um exagero e indique o que é cada um."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "fact",
+      "ex": "It's a fact that water boils at 100 degrees at sea level."
+     },
+     {
+      "w": "opinion",
+      "ex": "In my opinion, it's the best café in town."
+     },
+     {
+      "w": "exaggeration",
+      "ex": "Saying everyone hates Mondays is an exaggeration."
+     },
+     {
+      "w": "evidence",
+      "ex": "Is there any evidence for that claim?"
+     },
+     {
+      "w": "claim",
+      "ex": "The advert claims the cream works in one day."
+     },
+     {
+      "w": "biased",
+      "ex": "The article seems biased: it only shows one side."
+     }
+    ],
+    "gram": "Facts can be checked (studies show); opinions use I think, best, should; extreme words (always, everyone) often signal exaggeration."
+   }
+  },
+  {
+   "d": 263,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Advertising language",
+     "g": "Learn how adverts speak: slogans, persuasive adjectives and urgency.",
+     "p": [
+      "Imperatives talk to you directly: Try it today! Don't miss out! Treat yourself!",
+      "Persuasive adjectives: brand-new, long-lasting, natural, delicious, unbeatable, guaranteed, the best ever.",
+      "Urgency: limited offer, only three left, ends Sunday, while stocks last. Ask yourself: do I really need it?"
+     ],
+     "q": "What's an advert or slogan you remember well? Why do you think it's so catchy?",
+     "c": "Invent a slogan and a two-line advert for an everyday object using an imperative, a compound adjective and urgency."
+    },
+    "de": {
+     "t": "Advertising language",
+     "g": "Du lernst, wie Werbung spricht: Slogans, überzeugende Adjektive und Zeitdruck.",
+     "p": [
+      "Imperative sprechen dich direkt an: Try it today! Don't miss out! Treat yourself!",
+      "Überzeugende Adjektive: brand-new, long-lasting, natural, delicious, unbeatable, guaranteed, the best ever.",
+      "Zeitdruck: limited offer, only three left, ends Sunday, while stocks last. Frag dich: Brauche ich das wirklich?"
+     ],
+     "q": "An welche Werbung oder welchen Slogan erinnerst du dich gut? Warum ist er so eingängig?",
+     "c": "Erfinde einen Slogan und eine Werbung in zwei Zeilen für einen Alltagsgegenstand mit Imperativ, zusammengesetztem Adjektiv und Zeitdruck."
+    },
+    "es": {
+     "t": "Advertising language",
+     "g": "Aprende cómo habla la publicidad: eslóganes, adjetivos persuasivos y urgencia.",
+     "p": [
+      "El imperativo te habla directamente: Try it today! Don't miss out! Treat yourself!",
+      "Adjetivos persuasivos: brand-new, long-lasting, natural, delicious, unbeatable, guaranteed, the best ever.",
+      "Urgencia: limited offer, only three left, ends Sunday, while stocks last. Pregúntate: ¿de verdad lo necesito?"
+     ],
+     "q": "¿Qué anuncio o eslogan recuerdas bien? ¿Por qué crees que es tan pegadizo?",
+     "c": "Inventa un eslogan y un anuncio de dos líneas para un objeto cotidiano con imperativo, adjetivo compuesto y urgencia."
+    },
+    "fr": {
+     "t": "Advertising language",
+     "g": "Découvre comment parle la publicité : slogans, adjectifs persuasifs et urgence.",
+     "p": [
+      "L'impératif te parle directement : Try it today! Don't miss out! Treat yourself!",
+      "Adjectifs persuasifs : brand-new, long-lasting, natural, delicious, unbeatable, guaranteed, the best ever.",
+      "L'urgence : limited offer, only three left, ends Sunday, while stocks last. Demande-toi : en ai-je vraiment besoin ?"
+     ],
+     "q": "Quelle pub ou quel slogan as-tu bien en tête ? Pourquoi est-il si accrocheur selon toi ?",
+     "c": "Invente un slogan et une pub de deux lignes pour un objet du quotidien avec un impératif, un adjectif composé et de l'urgence."
+    },
+    "it": {
+     "t": "Advertising language",
+     "g": "Scopri come parla la pubblicità: slogan, aggettivi persuasivi e urgenza.",
+     "p": [
+      "L'imperativo ti parla direttamente: Try it today! Don't miss out! Treat yourself!",
+      "Aggettivi persuasivi: brand-new, long-lasting, natural, delicious, unbeatable, guaranteed, the best ever.",
+      "Urgenza: limited offer, only three left, ends Sunday, while stocks last. Chiediti: ne ho davvero bisogno?"
+     ],
+     "q": "Quale pubblicità o slogan ricordi bene? Perché secondo te è così orecchiabile?",
+     "c": "Inventa uno slogan e una pubblicità di due righe per un oggetto quotidiano con imperativo, aggettivo composto e urgenza."
+    },
+    "pt": {
+     "t": "Advertising language",
+     "g": "Aprende como fala a publicidade: slogans, adjetivos persuasivos e urgência.",
+     "p": [
+      "O imperativo fala diretamente contigo: Try it today! Don't miss out! Treat yourself!",
+      "Adjetivos persuasivos: brand-new, long-lasting, natural, delicious, unbeatable, guaranteed, the best ever.",
+      "Urgência: limited offer, only three left, ends Sunday, while stocks last. Pergunta-te: preciso mesmo disto?"
+     ],
+     "q": "Que anúncio ou slogan recordas bem? Porque achas que fica tanto no ouvido?",
+     "c": "Inventa um slogan e um anúncio de duas linhas para um objeto do dia a dia com imperativo, adjetivo composto e urgência."
+    },
+    "pt_BR": {
+     "t": "Advertising language",
+     "g": "Aprenda como a publicidade fala: slogans, adjetivos persuasivos e urgência.",
+     "p": [
+      "O imperativo fala direto com você: Try it today! Don't miss out! Treat yourself!",
+      "Adjetivos persuasivos: brand-new, long-lasting, natural, delicious, unbeatable, guaranteed, the best ever.",
+      "Urgência: limited offer, only three left, ends Sunday, while stocks last. Pergunte-se: eu preciso mesmo disso?"
+     ],
+     "q": "De qual propaganda ou slogan você se lembra bem? Por que acha que ele gruda tanto?",
+     "c": "Invente um slogan e um anúncio de duas linhas para um objeto do dia a dia com imperativo, adjetivo composto e urgência."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "slogan",
+      "ex": "A good slogan is short and easy to remember."
+     },
+     {
+      "w": "catchy",
+      "ex": "That jingle is so catchy, I can't stop singing it."
+     },
+     {
+      "w": "limited offer",
+      "ex": "It's a limited offer: only until Sunday!"
+     },
+     {
+      "w": "brand-new",
+      "ex": "Try our brand-new flavour today."
+     },
+     {
+      "w": "guaranteed",
+      "ex": "Results guaranteed or your money back."
+     },
+     {
+      "w": "persuade",
+      "ex": "Adverts try to persuade us to buy things we don't need."
+     }
+    ],
+    "gram": "Ad language: imperatives (Try it now!), superlatives (the best ever), compound adjectives (brand-new, long-lasting), urgency words."
+   }
+  },
+  {
+   "d": 264,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Consumer choices",
+     "g": "Explain how you choose what to buy: brand, quality, value for money and reviews.",
+     "p": [
+      "What matters: the brand, the quality, the price, value for money, reviews, how long it lasts, if it's eco-friendly.",
+      "Compare: This one is more expensive, but it lasts longer. It's not as stylish as the other, but it's more comfortable.",
+      "Habits: I always compare prices. I never buy without reading reviews. I sometimes make impulse buys."
+     ],
+     "q": "What was your last big purchase? How did you decide which one to buy?",
+     "c": "Compare two products you know in four sentences using value for money, not as... as, a comparative and worth + -ing."
+    },
+    "de": {
+     "t": "Consumer choices",
+     "g": "Du erklärst, wie du beim Kaufen entscheidest: Marke, Qualität, Preis-Leistung und Bewertungen.",
+     "p": [
+      "Was zählt: the brand, the quality, the price, value for money, reviews, wie lange es hält, ob es umweltfreundlich ist.",
+      "Vergleichen: This one is more expensive, but it lasts longer. It's not as stylish as the other, but it's more comfortable.",
+      "Gewohnheiten: I always compare prices. I never buy without reading reviews. I sometimes make impulse buys."
+     ],
+     "q": "Was war dein letzter großer Kauf? Wie hast du dich für genau dieses Produkt entschieden?",
+     "c": "Vergleiche zwei Produkte in vier Sätzen mit value for money, not as... as, einem Komparativ und worth + -ing."
+    },
+    "es": {
+     "t": "Consumer choices",
+     "g": "Explica cómo eliges lo que compras: marca, calidad, relación calidad-precio y opiniones.",
+     "p": [
+      "Lo que importa: the brand, the quality, the price, value for money, reviews, cuánto dura, si es ecológico.",
+      "Compara: This one is more expensive, but it lasts longer. It's not as stylish as the other, but it's more comfortable.",
+      "Hábitos: I always compare prices. I never buy without reading reviews. I sometimes make impulse buys."
+     ],
+     "q": "¿Cuál fue tu última compra importante? ¿Cómo decidiste cuál comprar?",
+     "c": "Compara dos productos en cuatro frases con value for money, not as... as, un comparativo y worth + -ing."
+    },
+    "fr": {
+     "t": "Consumer choices",
+     "g": "Explique comment tu choisis ce que tu achètes : marque, qualité, rapport qualité-prix et avis.",
+     "p": [
+      "Ce qui compte : the brand, the quality, the price, value for money, reviews, la durée de vie, l'aspect écologique.",
+      "Compare : This one is more expensive, but it lasts longer. It's not as stylish as the other, but it's more comfortable.",
+      "Habitudes : I always compare prices. I never buy without reading reviews. I sometimes make impulse buys."
+     ],
+     "q": "Quel a été ton dernier gros achat ? Comment as-tu choisi lequel acheter ?",
+     "c": "Compare deux produits en quatre phrases avec value for money, not as... as, un comparatif et worth + -ing."
+    },
+    "it": {
+     "t": "Consumer choices",
+     "g": "Spiega come scegli cosa comprare: marca, qualità, rapporto qualità-prezzo e recensioni.",
+     "p": [
+      "Cosa conta: the brand, the quality, the price, value for money, reviews, quanto dura, se è ecologico.",
+      "Confronta: This one is more expensive, but it lasts longer. It's not as stylish as the other, but it's more comfortable.",
+      "Abitudini: I always compare prices. I never buy without reading reviews. I sometimes make impulse buys."
+     ],
+     "q": "Qual è stato il tuo ultimo acquisto importante? Come hai deciso quale comprare?",
+     "c": "Confronta due prodotti in quattro frasi con value for money, not as... as, un comparativo e worth + -ing."
+    },
+    "pt": {
+     "t": "Consumer choices",
+     "g": "Explica como escolhes o que compras: marca, qualidade, relação qualidade-preço e avaliações.",
+     "p": [
+      "O que conta: the brand, the quality, the price, value for money, reviews, quanto tempo dura, se é ecológico.",
+      "Compara: This one is more expensive, but it lasts longer. It's not as stylish as the other, but it's more comfortable.",
+      "Hábitos: I always compare prices. I never buy without reading reviews. I sometimes make impulse buys."
+     ],
+     "q": "Qual foi a tua última compra grande? Como decidiste qual comprar?",
+     "c": "Compara dois produtos em quatro frases com value for money, not as... as, um comparativo e worth + -ing."
+    },
+    "pt_BR": {
+     "t": "Consumer choices",
+     "g": "Explique como você escolhe o que comprar: marca, qualidade, custo-benefício e avaliações.",
+     "p": [
+      "O que importa: the brand, the quality, the price, value for money, reviews, quanto dura, se é ecológico.",
+      "Compare: This one is more expensive, but it lasts longer. It's not as stylish as the other, but it's more comfortable.",
+      "Hábitos: I always compare prices. I never buy without reading reviews. I sometimes make impulse buys."
+     ],
+     "q": "Qual foi a sua última compra grande? Como você decidiu qual comprar?",
+     "c": "Compare dois produtos em quatro frases com value for money, not as... as, um comparativo e worth + -ing."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "brand",
+      "ex": "I always buy the same brand of coffee."
+     },
+     {
+      "w": "quality",
+      "ex": "The quality is much better than the cheaper one."
+     },
+     {
+      "w": "value for money",
+      "ex": "This backpack is great value for money."
+     },
+     {
+      "w": "read reviews",
+      "ex": "I always read reviews before I buy online."
+     },
+     {
+      "w": "compare prices",
+      "ex": "It's worth comparing prices in a few shops."
+     },
+     {
+      "w": "impulse buy",
+      "ex": "Those shoes were an impulse buy, but I love them."
+     }
+    ],
+    "gram": "Justifying choices: comparatives and (not) as... as: It's not as cheap as the other one, but it lasts longer. Worth + -ing."
+   }
+  },
+  {
+   "d": 265,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Money vocabulary: save, spend, budget",
+     "g": "Use everyday money talk: saving, spending, budgets and what you can afford.",
+     "p": [
+      "Verbs: save up for something, spend money on something, waste money, afford something, pay for something.",
+      "Lend vs borrow: you lend something to a friend, you borrow something from a friend. Can I borrow your charger?",
+      "Budget phrases: stick to a budget, cut down on, it's a bargain, it costs a fortune, I'm a bit short this month."
+     ],
+     "q": "Are you a saver or a spender? What are you saving up for, or what would you love to save up for?",
+     "c": "Write four sentences about your money habits using save up for, spend money on, can't afford and borrow."
+    },
+    "de": {
+     "t": "Money vocabulary: save, spend, budget",
+     "g": "Du sprichst über Geld im Alltag: sparen, ausgeben, Budgets und was du dir leisten kannst.",
+     "p": [
+      "Verben: save up for something, spend money on something, waste money, afford something, pay for something.",
+      "Lend vs. borrow: Du leihst etwas aus (lend to), du leihst dir etwas (borrow from). Can I borrow your charger?",
+      "Budget-Ausdrücke: stick to a budget, cut down on, it's a bargain, it costs a fortune, I'm a bit short this month."
+     ],
+     "q": "Bist du eher Sparer oder Ausgeber? Wofür sparst du, oder wofür würdest du gern sparen?",
+     "c": "Schreib vier Sätze über deine Geldgewohnheiten mit save up for, spend money on, can't afford und borrow."
+    },
+    "es": {
+     "t": "Money vocabulary: save, spend, budget",
+     "g": "Habla de dinero en el día a día: ahorrar, gastar, presupuestos y lo que te puedes permitir.",
+     "p": [
+      "Verbos: save up for something, spend money on something, waste money, afford something, pay for something.",
+      "Lend o borrow: prestas algo a alguien (lend to), pides prestado a alguien (borrow from). Can I borrow your charger?",
+      "Presupuesto: stick to a budget, cut down on, it's a bargain, it costs a fortune, I'm a bit short this month."
+     ],
+     "q": "¿Eres más de ahorrar o de gastar? ¿Para qué estás ahorrando o para qué te gustaría ahorrar?",
+     "c": "Escribe cuatro frases sobre tus hábitos con el dinero con save up for, spend money on, can't afford y borrow."
+    },
+    "fr": {
+     "t": "Money vocabulary: save, spend, budget",
+     "g": "Parle d'argent au quotidien : épargner, dépenser, budget et ce que tu peux te permettre.",
+     "p": [
+      "Verbes : save up for something, spend money on something, waste money, afford something, pay for something.",
+      "Lend ou borrow : tu prêtes à quelqu'un (lend to), tu empruntes à quelqu'un (borrow from). Can I borrow your charger?",
+      "Le budget : stick to a budget, cut down on, it's a bargain, it costs a fortune, I'm a bit short this month."
+     ],
+     "q": "Es-tu plutôt économe ou dépensier ? Pour quoi économises-tu, ou pour quoi aimerais-tu économiser ?",
+     "c": "Écris quatre phrases sur tes habitudes avec l'argent avec save up for, spend money on, can't afford et borrow."
+    },
+    "it": {
+     "t": "Money vocabulary: save, spend, budget",
+     "g": "Parla di soldi nella vita quotidiana: risparmiare, spendere, budget e cosa puoi permetterti.",
+     "p": [
+      "Verbi: save up for something, spend money on something, waste money, afford something, pay for something.",
+      "Lend o borrow: presti qualcosa a qualcuno (lend to), prendi in prestito da qualcuno (borrow from). Can I borrow your charger?",
+      "Il budget: stick to a budget, cut down on, it's a bargain, it costs a fortune, I'm a bit short this month."
+     ],
+     "q": "Sei più risparmiatore o spendaccione? Per cosa stai risparmiando, o per cosa vorresti risparmiare?",
+     "c": "Scrivi quattro frasi sulle tue abitudini con i soldi con save up for, spend money on, can't afford e borrow."
+    },
+    "pt": {
+     "t": "Money vocabulary: save, spend, budget",
+     "g": "Fala de dinheiro no dia a dia: poupar, gastar, orçamentos e o que podes pagar.",
+     "p": [
+      "Verbos: save up for something, spend money on something, waste money, afford something, pay for something.",
+      "Lend ou borrow: emprestas a alguém (lend to), pedes emprestado a alguém (borrow from). Can I borrow your charger?",
+      "Orçamento: stick to a budget, cut down on, it's a bargain, it costs a fortune, I'm a bit short this month."
+     ],
+     "q": "És mais de poupar ou de gastar? Para que estás a poupar, ou para que gostavas de poupar?",
+     "c": "Escreve quatro frases sobre os teus hábitos com dinheiro com save up for, spend money on, can't afford e borrow."
+    },
+    "pt_BR": {
+     "t": "Money vocabulary: save, spend, budget",
+     "g": "Fale de dinheiro no dia a dia: economizar, gastar, orçamento e o que você pode bancar.",
+     "p": [
+      "Verbos: save up for something, spend money on something, waste money, afford something, pay for something.",
+      "Lend ou borrow: você empresta a alguém (lend to), pega emprestado de alguém (borrow from). Can I borrow your charger?",
+      "Orçamento: stick to a budget, cut down on, it's a bargain, it costs a fortune, I'm a bit short this month."
+     ],
+     "q": "Você é mais de economizar ou de gastar? Para que está juntando dinheiro, ou para que gostaria de juntar?",
+     "c": "Escreva quatro frases sobre seus hábitos com dinheiro com save up for, spend money on, can't afford e borrow."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "save up",
+      "ex": "I'm saving up for a new bike."
+     },
+     {
+      "w": "spend money on",
+      "ex": "We spend too much money on takeaways."
+     },
+     {
+      "w": "budget",
+      "ex": "I made a monthly budget to control my spending."
+     },
+     {
+      "w": "afford",
+      "ex": "I can't afford a car right now."
+     },
+     {
+      "w": "waste money",
+      "ex": "Buying clothes I never wear is a waste of money."
+     },
+     {
+      "w": "lend / borrow",
+      "ex": "Can you lend me ten pounds? Can I borrow your pen?"
+     }
+    ],
+    "gram": "Money verbs: spend money on + noun, save up for, afford + to + verb (I can't afford to go), lend TO someone vs borrow FROM someone."
+   }
+  },
+  {
+   "d": 266,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Making suggestions: Why don't we...?",
+     "g": "Suggest ideas to a group and react to other people's suggestions.",
+     "p": [
+      "Base verb after Why don't we, Let's and We could: Why don't we go bowling? Let's meet at seven. We could cook together.",
+      "-ing or a noun after How about and What about: How about trying the new café? What about Saturday?",
+      "React: Sounds great! Good idea! I'm not so sure. Maybe another time. What if we... instead?"
+     ],
+     "q": "Your friends want to do something fun this weekend. What three suggestions would you make?",
+     "c": "Plan a group outing in a short chat: write four suggestions, each with a different pattern, and two reactions."
+    },
+    "de": {
+     "t": "Making suggestions: Why don't we...?",
+     "g": "Du machst einer Gruppe Vorschläge und reagierst auf die Vorschläge anderer.",
+     "p": [
+      "Grundform nach Why don't we, Let's und We could: Why don't we go bowling? Let's meet at seven. We could cook together.",
+      "-ing oder Nomen nach How about und What about: How about trying the new café? What about Saturday?",
+      "Reagieren: Sounds great! Good idea! I'm not so sure. Maybe another time. What if we... instead?"
+     ],
+     "q": "Deine Freunde wollen am Wochenende etwas Lustiges machen. Welche drei Vorschläge würdest du machen?",
+     "c": "Plan einen Gruppenausflug als kurzen Chat: vier Vorschläge mit verschiedenen Mustern und zwei Reaktionen."
+    },
+    "es": {
+     "t": "Making suggestions: Why don't we...?",
+     "g": "Propón ideas a un grupo y reacciona a las propuestas de los demás.",
+     "p": [
+      "Verbo base tras Why don't we, Let's y We could: Why don't we go bowling? Let's meet at seven. We could cook together.",
+      "-ing o sustantivo tras How about y What about: How about trying the new café? What about Saturday?",
+      "Reacciona: Sounds great! Good idea! I'm not so sure. Maybe another time. What if we... instead?"
+     ],
+     "q": "Tus amigos quieren hacer algo divertido este fin de semana. ¿Qué tres propuestas harías?",
+     "c": "Planea una salida en grupo en un chat corto: cuatro propuestas con estructuras distintas y dos reacciones."
+    },
+    "fr": {
+     "t": "Making suggestions: Why don't we...?",
+     "g": "Propose des idées à un groupe et réagis aux suggestions des autres.",
+     "p": [
+      "Base verbale après Why don't we, Let's et We could : Why don't we go bowling? Let's meet at seven. We could cook together.",
+      "-ing ou un nom après How about et What about : How about trying the new café? What about Saturday?",
+      "Réagis : Sounds great! Good idea! I'm not so sure. Maybe another time. What if we... instead?"
+     ],
+     "q": "Tes amis veulent faire quelque chose de sympa ce week-end. Quelles trois propositions ferais-tu ?",
+     "c": "Organise une sortie de groupe en un court chat : quatre propositions avec des structures différentes et deux réactions."
+    },
+    "it": {
+     "t": "Making suggestions: Why don't we...?",
+     "g": "Proponi idee a un gruppo e reagisci alle proposte degli altri.",
+     "p": [
+      "Verbo base dopo Why don't we, Let's e We could: Why don't we go bowling? Let's meet at seven. We could cook together.",
+      "-ing o un nome dopo How about e What about: How about trying the new café? What about Saturday?",
+      "Reagisci: Sounds great! Good idea! I'm not so sure. Maybe another time. What if we... instead?"
+     ],
+     "q": "I tuoi amici vogliono fare qualcosa di divertente nel weekend. Quali tre proposte faresti?",
+     "c": "Organizza un'uscita di gruppo in una breve chat: quattro proposte con strutture diverse e due reazioni."
+    },
+    "pt": {
+     "t": "Making suggestions: Why don't we...?",
+     "g": "Faz sugestões a um grupo e reage às sugestões dos outros.",
+     "p": [
+      "Verbo base depois de Why don't we, Let's e We could: Why don't we go bowling? Let's meet at seven. We could cook together.",
+      "-ing ou nome depois de How about e What about: How about trying the new café? What about Saturday?",
+      "Reage: Sounds great! Good idea! I'm not so sure. Maybe another time. What if we... instead?"
+     ],
+     "q": "Os teus amigos querem fazer algo divertido este fim de semana. Que três sugestões farias?",
+     "c": "Planeia uma saída de grupo num chat curto: quatro sugestões com estruturas diferentes e duas reações."
+    },
+    "pt_BR": {
+     "t": "Making suggestions: Why don't we...?",
+     "g": "Dê sugestões a um grupo e reaja às sugestões dos outros.",
+     "p": [
+      "Verbo base depois de Why don't we, Let's e We could: Why don't we go bowling? Let's meet at seven. We could cook together.",
+      "-ing ou substantivo depois de How about e What about: How about trying the new café? What about Saturday?",
+      "Reaja: Sounds great! Good idea! I'm not so sure. Maybe another time. What if we... instead?"
+     ],
+     "q": "Seus amigos querem fazer algo divertido neste fim de semana. Que três sugestões você daria?",
+     "c": "Planeje um passeio em grupo num chat curto: quatro sugestões com estruturas diferentes e duas reações."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "Why don't we...?",
+      "ex": "Why don't we have a picnic in the park?"
+     },
+     {
+      "w": "How about + -ing?",
+      "ex": "How about going to the beach on Sunday?"
+     },
+     {
+      "w": "Let's...",
+      "ex": "Let's order a pizza tonight."
+     },
+     {
+      "w": "We could...",
+      "ex": "We could ask Sam to join us."
+     },
+     {
+      "w": "What about...?",
+      "ex": "What about a film instead?"
+     },
+     {
+      "w": "Sounds good!",
+      "ex": "Sounds good! What time shall we meet?"
+     }
+    ],
+    "gram": "Suggestions: Why don't we / Let's / We could + base verb; How about / What about + -ing or noun. Reply: Good idea! I'm not sure..."
+   }
+  },
+  {
+   "d": 267,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Giving instructions clearly",
+     "g": "Give clear step-by-step instructions that anyone can follow.",
+     "p": [
+      "Use imperatives and sequence words: First, open the app. Then, tap Settings. Next, choose your language. Finally, press Save.",
+      "Add helpful checks: Make sure you have your ticket. Don't forget to charge it. Be careful not to press it twice.",
+      "Once and after that link steps: Once it's ready, take it out. After that, leave it to cool for five minutes."
+     ],
+     "q": "What's something you're good at that you could teach me in five steps?",
+     "c": "Write instructions for something simple, like making tea, in five steps with first, then, make sure, once and finally."
+    },
+    "de": {
+     "t": "Giving instructions clearly",
+     "g": "Du gibst klare Schritt-für-Schritt-Anleitungen, denen jeder folgen kann.",
+     "p": [
+      "Imperative und Reihenfolgewörter: First, open the app. Then, tap Settings. Next, choose your language. Finally, press Save.",
+      "Hilfreiche Hinweise: Make sure you have your ticket. Don't forget to charge it. Be careful not to press it twice.",
+      "Once und after that verbinden Schritte: Once it's ready, take it out. After that, leave it to cool for five minutes."
+     ],
+     "q": "Was kannst du gut und könntest es mir in fünf Schritten beibringen?",
+     "c": "Schreib eine Anleitung für etwas Einfaches, z. B. Tee kochen, in fünf Schritten mit first, then, make sure, once und finally."
+    },
+    "es": {
+     "t": "Giving instructions clearly",
+     "g": "Da instrucciones claras paso a paso que cualquiera pueda seguir.",
+     "p": [
+      "Imperativos y palabras de secuencia: First, open the app. Then, tap Settings. Next, choose your language. Finally, press Save.",
+      "Añade avisos útiles: Make sure you have your ticket. Don't forget to charge it. Be careful not to press it twice.",
+      "Once y after that unen pasos: Once it's ready, take it out. After that, leave it to cool for five minutes."
+     ],
+     "q": "¿Qué se te da bien que podrías enseñarme en cinco pasos?",
+     "c": "Escribe instrucciones para algo sencillo, como hacer té, en cinco pasos con first, then, make sure, once y finally."
+    },
+    "fr": {
+     "t": "Giving instructions clearly",
+     "g": "Donne des instructions claires, étape par étape, que tout le monde peut suivre.",
+     "p": [
+      "Impératifs et mots de séquence : First, open the app. Then, tap Settings. Next, choose your language. Finally, press Save.",
+      "Ajoute des rappels utiles : Make sure you have your ticket. Don't forget to charge it. Be careful not to press it twice.",
+      "Once et after that relient les étapes : Once it's ready, take it out. After that, leave it to cool for five minutes."
+     ],
+     "q": "Dans quoi es-tu doué que tu pourrais m'apprendre en cinq étapes ?",
+     "c": "Écris les instructions pour une chose simple, comme faire du thé, en cinq étapes avec first, then, make sure, once et finally."
+    },
+    "it": {
+     "t": "Giving instructions clearly",
+     "g": "Dai istruzioni chiare passo dopo passo che chiunque possa seguire.",
+     "p": [
+      "Imperativi e parole di sequenza: First, open the app. Then, tap Settings. Next, choose your language. Finally, press Save.",
+      "Aggiungi avvisi utili: Make sure you have your ticket. Don't forget to charge it. Be careful not to press it twice.",
+      "Once e after that collegano i passaggi: Once it's ready, take it out. After that, leave it to cool for five minutes."
+     ],
+     "q": "In cosa sei bravo che potresti insegnarmi in cinque passaggi?",
+     "c": "Scrivi le istruzioni per una cosa semplice, come fare il tè, in cinque passaggi con first, then, make sure, once e finally."
+    },
+    "pt": {
+     "t": "Giving instructions clearly",
+     "g": "Dá instruções claras, passo a passo, que qualquer pessoa consiga seguir.",
+     "p": [
+      "Imperativos e palavras de sequência: First, open the app. Then, tap Settings. Next, choose your language. Finally, press Save.",
+      "Junta avisos úteis: Make sure you have your ticket. Don't forget to charge it. Be careful not to press it twice.",
+      "Once e after that ligam os passos: Once it's ready, take it out. After that, leave it to cool for five minutes."
+     ],
+     "q": "Em que és bom e me podias ensinar em cinco passos?",
+     "c": "Escreve instruções para algo simples, como fazer chá, em cinco passos com first, then, make sure, once e finally."
+    },
+    "pt_BR": {
+     "t": "Giving instructions clearly",
+     "g": "Dê instruções claras, passo a passo, que qualquer pessoa consiga seguir.",
+     "p": [
+      "Imperativos e palavras de sequência: First, open the app. Then, tap Settings. Next, choose your language. Finally, press Save.",
+      "Inclua avisos úteis: Make sure you have your ticket. Don't forget to charge it. Be careful not to press it twice.",
+      "Once e after that ligam os passos: Once it's ready, take it out. After that, leave it to cool for five minutes."
+     ],
+     "q": "Em que você é bom e poderia me ensinar em cinco passos?",
+     "c": "Escreva instruções para algo simples, como fazer chá, em cinco passos com first, then, make sure, once e finally."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "first of all",
+      "ex": "First of all, switch off the machine."
+     },
+     {
+      "w": "make sure you",
+      "ex": "Make sure you save your work before closing."
+     },
+     {
+      "w": "don't forget to",
+      "ex": "Don't forget to lock the door when you leave."
+     },
+     {
+      "w": "once",
+      "ex": "Once the water boils, add the pasta."
+     },
+     {
+      "w": "be careful not to",
+      "ex": "Be careful not to touch the hot pan."
+     },
+     {
+      "w": "finally",
+      "ex": "Finally, press the green button and wait."
+     }
+    ],
+    "gram": "Imperatives + sequence words (first, then, once, finally) and checks: Make sure you..., Don't forget to..., Be careful not to..."
+   }
+  },
+  {
+   "d": 268,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Explaining a process",
+     "g": "Explain how something is made, using the passive and sequence words.",
+     "p": [
+      "The passive focuses on the process: The cocoa beans are dried. Then they are roasted. Finally, the chocolate is shaped.",
+      "Made from (the material changes): Paper is made from wood. Made of (you can still see it): The table is made of oak.",
+      "Sequence words: first, then, next, after that, once, finally. Once the bread is baked, it is sliced and packed."
+     ],
+     "q": "Do you know how your favourite food or drink is made? Can you explain one step of the process?",
+     "c": "Explain how something is made, like bread or coffee, in five passive sentences with first, then, after that and finally."
+    },
+    "de": {
+     "t": "Explaining a process",
+     "g": "Du erklärst, wie etwas hergestellt wird, mit Passiv und Reihenfolgewörtern.",
+     "p": [
+      "Das Passiv betont den Ablauf: The cocoa beans are dried. Then they are roasted. Finally, the chocolate is shaped.",
+      "Made from (Material verändert sich): Paper is made from wood. Made of (noch erkennbar): The table is made of oak.",
+      "Reihenfolge: first, then, next, after that, once, finally. Once the bread is baked, it is sliced and packed."
+     ],
+     "q": "Weißt du, wie dein Lieblingsessen oder -getränk hergestellt wird? Kannst du einen Schritt erklären?",
+     "c": "Erklär in fünf Passivsätzen, wie etwas hergestellt wird, z. B. Brot oder Kaffee, mit first, then, after that und finally."
+    },
+    "es": {
+     "t": "Explaining a process",
+     "g": "Explica cómo se fabrica algo usando la pasiva y palabras de secuencia.",
+     "p": [
+      "La pasiva se centra en el proceso: The cocoa beans are dried. Then they are roasted. Finally, the chocolate is shaped.",
+      "Made from (el material cambia): Paper is made from wood. Made of (se sigue viendo): The table is made of oak.",
+      "Secuencia: first, then, next, after that, once, finally. Once the bread is baked, it is sliced and packed."
+     ],
+     "q": "¿Sabes cómo se hace tu comida o bebida favorita? ¿Puedes explicar un paso del proceso?",
+     "c": "Explica cómo se hace algo, como el pan o el café, en cinco frases pasivas con first, then, after that y finally."
+    },
+    "fr": {
+     "t": "Explaining a process",
+     "g": "Explique comment une chose est fabriquée avec le passif et des mots de séquence.",
+     "p": [
+      "Le passif met l'accent sur le processus : The cocoa beans are dried. Then they are roasted. Finally, the chocolate is shaped.",
+      "Made from (la matière change) : Paper is made from wood. Made of (encore visible) : The table is made of oak.",
+      "Séquence : first, then, next, after that, once, finally. Once the bread is baked, it is sliced and packed."
+     ],
+     "q": "Sais-tu comment est fabriqué ton plat ou ta boisson préférés ? Peux-tu expliquer une étape ?",
+     "c": "Explique comment on fabrique quelque chose, comme le pain ou le café, en cinq phrases au passif avec first, then, after that et finally."
+    },
+    "it": {
+     "t": "Explaining a process",
+     "g": "Spiega come si produce qualcosa usando il passivo e le parole di sequenza.",
+     "p": [
+      "Il passivo mette al centro il processo: The cocoa beans are dried. Then they are roasted. Finally, the chocolate is shaped.",
+      "Made from (il materiale cambia): Paper is made from wood. Made of (si vede ancora): The table is made of oak.",
+      "Sequenza: first, then, next, after that, once, finally. Once the bread is baked, it is sliced and packed."
+     ],
+     "q": "Sai come si produce il tuo cibo o la tua bevanda preferita? Sai spiegare un passaggio?",
+     "c": "Spiega come si fa qualcosa, come il pane o il caffè, in cinque frasi passive con first, then, after that e finally."
+    },
+    "pt": {
+     "t": "Explaining a process",
+     "g": "Explica como algo é feito, com a passiva e palavras de sequência.",
+     "p": [
+      "A passiva centra-se no processo: The cocoa beans are dried. Then they are roasted. Finally, the chocolate is shaped.",
+      "Made from (o material transforma-se): Paper is made from wood. Made of (ainda se vê): The table is made of oak.",
+      "Sequência: first, then, next, after that, once, finally. Once the bread is baked, it is sliced and packed."
+     ],
+     "q": "Sabes como é feita a tua comida ou bebida preferida? Consegues explicar um passo do processo?",
+     "c": "Explica como se faz algo, como pão ou café, em cinco frases na passiva com first, then, after that e finally."
+    },
+    "pt_BR": {
+     "t": "Explaining a process",
+     "g": "Explique como algo é feito, com a passiva e palavras de sequência.",
+     "p": [
+      "A passiva foca no processo: The cocoa beans are dried. Then they are roasted. Finally, the chocolate is shaped.",
+      "Made from (o material se transforma): Paper is made from wood. Made of (ainda dá para ver): The table is made of oak.",
+      "Sequência: first, then, next, after that, once, finally. Once the bread is baked, it is sliced and packed."
+     ],
+     "q": "Você sabe como é feita a sua comida ou bebida favorita? Consegue explicar um passo do processo?",
+     "c": "Explique como algo é feito, como pão ou café, em cinco frases na passiva com first, then, after that e finally."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "is made from",
+      "ex": "Paper is made from wood."
+     },
+     {
+      "w": "are picked",
+      "ex": "The coffee beans are picked by hand."
+     },
+     {
+      "w": "is heated",
+      "ex": "The milk is heated to kill bacteria."
+     },
+     {
+      "w": "is packed",
+      "ex": "The chocolate is packed and sent to shops."
+     },
+     {
+      "w": "raw materials",
+      "ex": "Cotton is one of the raw materials for clothes."
+     },
+     {
+      "w": "after that",
+      "ex": "After that, the bottles are washed and filled."
+     }
+    ],
+    "gram": "Present simple passive for processes: is/are + past participle: The grapes are picked, then they are crushed. Made from vs made of."
+   }
+  },
+  {
+   "d": 269,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Problem-solving conversations",
+     "g": "Solve problems together: define the problem, suggest options and agree on a solution.",
+     "p": [
+      "Define it: What's the problem exactly? The main issue is that... We need to work out how to...",
+      "Test options with the first conditional: If we leave now, we'll miss the traffic. One option is to... Another is to...",
+      "Weigh it up and decide: The advantage is... The drawback is... On balance, let's go with option B."
+     ],
+     "q": "Think of a small problem you solved recently. What options did you have, and why did you choose one?",
+     "c": "Take a problem like a noisy neighbour: write two options, one pro and con for each, and your decision with Let's go with."
+    },
+    "de": {
+     "t": "Problem-solving conversations",
+     "g": "Du löst Probleme gemeinsam: Problem benennen, Optionen vorschlagen, auf eine Lösung einigen.",
+     "p": [
+      "Benennen: What's the problem exactly? The main issue is that... We need to work out how to...",
+      "Optionen mit dem first conditional testen: If we leave now, we'll miss the traffic. One option is to... Another is to...",
+      "Abwägen und entscheiden: The advantage is... The drawback is... On balance, let's go with option B."
+     ],
+     "q": "Denk an ein kleines Problem, das du neulich gelöst hast. Welche Optionen hattest du, und warum hast du dich so entschieden?",
+     "c": "Nimm ein Problem wie laute Nachbarn: zwei Optionen, je ein Pro und Contra, und deine Entscheidung mit Let's go with."
+    },
+    "es": {
+     "t": "Problem-solving conversations",
+     "g": "Resuelve problemas en equipo: define el problema, propón opciones y acordad una solución.",
+     "p": [
+      "Defínelo: What's the problem exactly? The main issue is that... We need to work out how to...",
+      "Prueba opciones con el first conditional: If we leave now, we'll miss the traffic. One option is to... Another is to...",
+      "Sopesa y decide: The advantage is... The drawback is... On balance, let's go with option B."
+     ],
+     "q": "Piensa en un pequeño problema que resolviste hace poco. ¿Qué opciones tenías y por qué elegiste una?",
+     "c": "Toma un problema, como un vecino ruidoso: dos opciones, un pro y un contra de cada una y tu decisión con Let's go with."
+    },
+    "fr": {
+     "t": "Problem-solving conversations",
+     "g": "Résous des problèmes à plusieurs : définir le problème, proposer des options, choisir une solution.",
+     "p": [
+      "Définis-le : What's the problem exactly? The main issue is that... We need to work out how to...",
+      "Teste les options avec le first conditional : If we leave now, we'll miss the traffic. One option is to... Another is to...",
+      "Pèse le pour et le contre : The advantage is... The drawback is... On balance, let's go with option B."
+     ],
+     "q": "Pense à un petit problème que tu as résolu récemment. Quelles options avais-tu et pourquoi en as-tu choisi une ?",
+     "c": "Prends un problème, comme un voisin bruyant : deux options, un pour et un contre chacune, et ta décision avec Let's go with."
+    },
+    "it": {
+     "t": "Problem-solving conversations",
+     "g": "Risolvi problemi insieme: definisci il problema, proponi opzioni e scegliete una soluzione.",
+     "p": [
+      "Definiscilo: What's the problem exactly? The main issue is that... We need to work out how to...",
+      "Valuta le opzioni con il first conditional: If we leave now, we'll miss the traffic. One option is to... Another is to...",
+      "Soppesa e decidi: The advantage is... The drawback is... On balance, let's go with option B."
+     ],
+     "q": "Pensa a un piccolo problema che hai risolto di recente. Quali opzioni avevi e perché ne hai scelta una?",
+     "c": "Prendi un problema, come un vicino rumoroso: due opzioni, un pro e un contro per ciascuna e la tua decisione con Let's go with."
+    },
+    "pt": {
+     "t": "Problem-solving conversations",
+     "g": "Resolve problemas em conjunto: define o problema, sugere opções e chegam a uma solução.",
+     "p": [
+      "Define-o: What's the problem exactly? The main issue is that... We need to work out how to...",
+      "Testa opções com o first conditional: If we leave now, we'll miss the traffic. One option is to... Another is to...",
+      "Pesa os prós e contras e decide: The advantage is... The drawback is... On balance, let's go with option B."
+     ],
+     "q": "Pensa num pequeno problema que resolveste há pouco. Que opções tinhas e porque escolheste uma?",
+     "c": "Pega num problema, como um vizinho barulhento: duas opções, um pró e um contra de cada e a tua decisão com Let's go with."
+    },
+    "pt_BR": {
+     "t": "Problem-solving conversations",
+     "g": "Resolva problemas em grupo: defina o problema, sugira opções e cheguem a uma solução.",
+     "p": [
+      "Defina o problema: What's the problem exactly? The main issue is that... We need to work out how to...",
+      "Teste opções com o first conditional: If we leave now, we'll miss the traffic. One option is to... Another is to...",
+      "Pese os prós e contras e decida: The advantage is... The drawback is... On balance, let's go with option B."
+     ],
+     "q": "Pense num pequeno problema que você resolveu há pouco. Que opções tinha e por que escolheu uma?",
+     "c": "Pegue um problema, como um vizinho barulhento: duas opções, um pró e um contra de cada e sua decisão com Let's go with."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "What's the problem?",
+      "ex": "What's the problem with the printer?"
+     },
+     {
+      "w": "One option is to",
+      "ex": "One option is to ask the neighbours for help."
+     },
+     {
+      "w": "weigh it up",
+      "ex": "Let's weigh it up before we decide."
+     },
+     {
+      "w": "pros and cons",
+      "ex": "Let's list the pros and cons of each idea."
+     },
+     {
+      "w": "work out",
+      "ex": "We need to work out a solution by Friday."
+     },
+     {
+      "w": "the best way forward",
+      "ex": "I think the best way forward is to start again."
+     }
+    ],
+    "gram": "Problem-solving: If we + present, we'll... (first conditional) to test options; The advantage/drawback is that... ; Let's go with..."
+   }
+  },
+  {
+   "d": 270,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Review: culture, media and ideas",
+     "g": "Recap culture, media, reviews and suggestions in an open conversation.",
+     "p": [
+      "Culture: festivals, manners (It's polite to...), greetings, living abroad, learning strategies, art and photos.",
+      "Media and ideas: headlines, fact or opinion, ads, reviews (I'd highly recommend it), biographies and the passive.",
+      "Action language: suggestions (Why don't we...?), instructions (Make sure you...), processes (It is made from...)."
+     ],
+     "q": "Imagine a friend is visiting your city for a weekend. What would you suggest, and what customs should they know?",
+     "c": "Write a short message to a visitor: one custom, one festival, one film or place you recommend and one suggestion."
+    },
+    "de": {
+     "t": "Review: culture, media and ideas",
+     "g": "Du wiederholst Kultur, Medien, Kritiken und Vorschläge in einem offenen Gespräch.",
+     "p": [
+      "Kultur: Feste, Manieren (It's polite to...), Begrüßungen, Leben im Ausland, Lernstrategien, Kunst und Fotos.",
+      "Medien und Ideen: Schlagzeilen, Fakt oder Meinung, Werbung, Kritiken (I'd highly recommend it), Biografien und Passiv.",
+      "Handlungssprache: Vorschläge (Why don't we...?), Anleitungen (Make sure you...), Abläufe (It is made from...)."
+     ],
+     "q": "Stell dir vor, ein Freund besucht deine Stadt übers Wochenende. Was würdest du vorschlagen, und welche Sitten sollte er kennen?",
+     "c": "Schreib einem Gast eine kurze Nachricht: eine Sitte, ein Fest, ein Film oder Ort als Empfehlung und ein Vorschlag."
+    },
+    "es": {
+     "t": "Review: culture, media and ideas",
+     "g": "Repasa cultura, medios, reseñas y propuestas en una conversación abierta.",
+     "p": [
+      "Cultura: fiestas, modales (It's polite to...), saludos, vivir fuera, estrategias de aprendizaje, arte y fotos.",
+      "Medios e ideas: titulares, hecho u opinión, anuncios, reseñas (I'd highly recommend it), biografías y la pasiva.",
+      "Lenguaje práctico: propuestas (Why don't we...?), instrucciones (Make sure you...), procesos (It is made from...)."
+     ],
+     "q": "Imagina que un amigo visita tu ciudad un fin de semana. ¿Qué le propondrías y qué costumbres debería conocer?",
+     "c": "Escribe un mensaje corto a un visitante: una costumbre, una fiesta, una peli o lugar que recomiendas y una propuesta."
+    },
+    "fr": {
+     "t": "Review: culture, media and ideas",
+     "g": "Révise la culture, les médias, les critiques et les suggestions dans une conversation libre.",
+     "p": [
+      "Culture : fêtes, bonnes manières (It's polite to...), salutations, vie à l'étranger, stratégies d'apprentissage, art et photos.",
+      "Médias et idées : titres, fait ou opinion, pubs, critiques (I'd highly recommend it), biographies et passif.",
+      "Langage d'action : suggestions (Why don't we...?), instructions (Make sure you...), processus (It is made from...)."
+     ],
+     "q": "Imagine qu'un ami visite ta ville pour un week-end. Que lui proposerais-tu et quelles coutumes devrait-il connaître ?",
+     "c": "Écris un court message à un visiteur : une coutume, une fête, un film ou un lieu que tu recommandes et une suggestion."
+    },
+    "it": {
+     "t": "Review: culture, media and ideas",
+     "g": "Ripassa cultura, media, recensioni e proposte in una conversazione libera.",
+     "p": [
+      "Cultura: feste, buone maniere (It's polite to...), saluti, vivere all'estero, strategie di studio, arte e foto.",
+      "Media e idee: titoli, fatto o opinione, pubblicità, recensioni (I'd highly recommend it), biografie e passivo.",
+      "Lingua pratica: proposte (Why don't we...?), istruzioni (Make sure you...), processi (It is made from...)."
+     ],
+     "q": "Immagina che un amico visiti la tua città per un weekend. Cosa gli proporresti e quali usanze dovrebbe conoscere?",
+     "c": "Scrivi un breve messaggio a un visitatore: un'usanza, una festa, un film o un posto che consigli e una proposta."
+    },
+    "pt": {
+     "t": "Review: culture, media and ideas",
+     "g": "Revê cultura, media, críticas e sugestões numa conversa livre.",
+     "p": [
+      "Cultura: festas, boas maneiras (It's polite to...), cumprimentos, viver fora, estratégias de estudo, arte e fotografias.",
+      "Media e ideias: manchetes, facto ou opinião, anúncios, críticas (I'd highly recommend it), biografias e a passiva.",
+      "Linguagem prática: sugestões (Why don't we...?), instruções (Make sure you...), processos (It is made from...)."
+     ],
+     "q": "Imagina que um amigo visita a tua cidade num fim de semana. O que lhe sugerias e que costumes devia conhecer?",
+     "c": "Escreve uma mensagem curta a um visitante: um costume, uma festa, um filme ou sítio que recomendas e uma sugestão."
+    },
+    "pt_BR": {
+     "t": "Review: culture, media and ideas",
+     "g": "Revise cultura, mídia, resenhas e sugestões numa conversa livre.",
+     "p": [
+      "Cultura: festas, boas maneiras (It's polite to...), cumprimentos, morar fora, estratégias de estudo, arte e fotos.",
+      "Mídia e ideias: manchetes, fato ou opinião, propagandas, resenhas (I'd highly recommend it), biografias e a passiva.",
+      "Linguagem prática: sugestões (Why don't we...?), instruções (Make sure you...), processos (It is made from...)."
+     ],
+     "q": "Imagine que um amigo vai visitar sua cidade num fim de semana. O que você sugeriria e que costumes ele deveria conhecer?",
+     "c": "Escreva uma mensagem curta a um visitante: um costume, uma festa, um filme ou lugar que você recomenda e uma sugestão."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "festival",
+      "ex": "The Lantern Festival takes place in winter."
+     },
+     {
+      "w": "it's considered rude to",
+      "ex": "It's considered rude to arrive empty-handed."
+     },
+     {
+      "w": "must be",
+      "ex": "That must be a museum: look at the queue!"
+     },
+     {
+      "w": "highly recommend",
+      "ex": "I'd highly recommend this documentary."
+     },
+     {
+      "w": "according to",
+      "ex": "According to the article, sales have doubled."
+     },
+     {
+      "w": "How about...?",
+      "ex": "How about visiting the new exhibition together?"
+     }
+    ],
+    "gram": "Review: customs (it's polite to), speculation (might/must/can't), passive (was built), news (present perfect), How about + -ing."
+   }
+  }
+ ]
+}

@@ -1,0 +1,565 @@
+{
+ "topic": "practice_german",
+ "lessons": [
+  {
+   "d": 361,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Preparing a B2 style exam",
+     "g": "Know the typical formats of a B2 exam: listening, reading, writing and speaking.",
+     "p": [
+      "Reading and listening: multiple choice, matching headings, true or false. Read the questions first, then the text.",
+      "Writing: often a formal email or letter and an opinion text (Forumsbeitrag). Plan, write, then check for typical mistakes.",
+      "Speaking: present a topic, discuss with a partner, plan something together. Time management is key: üb mit der Uhr!"
+     ],
+     "q": "Which part of a B2 exam would be easiest for you, and which part would you practise most?",
+     "c": "Make a one-week study plan: one exam skill per day, 30 minutes each, and write it down in German."
+    },
+    "de": {
+     "t": "Auf eine B2-Prüfung vorbereiten",
+     "g": "Du kennst die typischen Formate: Hören, Lesen, Schreiben und Sprechen.",
+     "p": [
+      "Lesen und Hören: Multiple Choice, Überschriften zuordnen, richtig oder falsch. Erst die Aufgaben lesen, dann den Text.",
+      "Schreiben: oft eine formelle E-Mail und ein Meinungstext (Forumsbeitrag). Planen, schreiben, dann typische Fehler prüfen.",
+      "Sprechen: ein Thema präsentieren, mit einem Partner diskutieren, etwas gemeinsam planen. Zeitmanagement ist alles: Üb mit der Uhr!"
+     ],
+     "q": "Welcher Prüfungsteil wäre für dich am leichtesten, und welchen würdest du am meisten üben?",
+     "c": "Mach einen Lernplan für eine Woche: jeden Tag eine Fertigkeit, je 30 Minuten, und schreib ihn auf Deutsch auf."
+    },
+    "es": {
+     "t": "Prepararse para un examen tipo B2",
+     "g": "Conoce los formatos típicos de un examen B2: comprensión auditiva y lectora, escritura y expresión oral.",
+     "p": [
+      "Lectura y audición: opción múltiple, relacionar títulos, verdadero o falso. Lee primero las preguntas y luego el texto.",
+      "Escritura: a menudo un correo formal y un texto de opinión (Forumsbeitrag). Planifica, escribe y revisa errores típicos.",
+      "Oral: presentar un tema, debatir con un compañero, planear algo juntos. Gestionar el tiempo es clave: übe mit der Uhr!"
+     ],
+     "q": "¿Qué parte de un examen B2 te resultaría más fácil y cuál practicarías más?",
+     "c": "Haz un plan de estudio de una semana: una destreza por día, 30 minutos cada una, y escríbelo en alemán."
+    },
+    "fr": {
+     "t": "Préparer un examen de type B2",
+     "g": "Connaître les formats d'un examen B2 : compréhension orale et écrite, expression écrite et orale.",
+     "p": [
+      "Lecture et écoute : QCM, associer des titres, vrai ou faux. Lis d'abord les questions, puis le texte.",
+      "Écrit : souvent un e-mail formel et un texte d'opinion (Forumsbeitrag). Planifie, rédige, puis vérifie les fautes typiques.",
+      "Oral : présenter un sujet, discuter avec un partenaire, organiser quelque chose ensemble. Gère ton temps : üb mit der Uhr !"
+     ],
+     "q": "Quelle partie d'un examen B2 serait la plus facile pour toi, et laquelle travaillerais-tu le plus ?",
+     "c": "Fais un plan de révision d'une semaine : une compétence par jour, 30 minutes chacune, écrit en allemand."
+    },
+    "it": {
+     "t": "Prepararsi a un esame tipo B2",
+     "g": "Conosci i formati tipici di un esame B2: ascolto, lettura, scrittura e parlato.",
+     "p": [
+      "Lettura e ascolto: scelta multipla, abbinare titoli, vero o falso. Leggi prima le domande, poi il testo.",
+      "Scrittura: spesso un'e-mail formale e un testo d'opinione (Forumsbeitrag). Pianifica, scrivi e poi controlla gli errori tipici.",
+      "Parlato: presentare un tema, discutere con un partner, pianificare qualcosa insieme. Il tempo è tutto: üb mit der Uhr!"
+     ],
+     "q": "Quale parte di un esame B2 sarebbe la più facile per te e quale eserciteresti di più?",
+     "c": "Fai un piano di studio di una settimana: un'abilità al giorno, 30 minuti ciascuna, e scrivilo in tedesco."
+    },
+    "pt": {
+     "t": "Preparar um exame tipo B2",
+     "g": "Conhecer os formatos típicos de um exame B2: compreensão oral e escrita, escrita e oralidade.",
+     "p": [
+      "Leitura e audição: escolha múltipla, associar títulos, verdadeiro ou falso. Lê primeiro as perguntas e depois o texto.",
+      "Escrita: muitas vezes um e-mail formal e um texto de opinião (Forumsbeitrag). Planeia, escreve e revê os erros típicos.",
+      "Oral: apresentar um tema, discutir com um parceiro, planear algo juntos. Gerir o tempo é essencial: üb mit der Uhr!"
+     ],
+     "q": "Que parte de um exame B2 seria mais fácil para ti e qual praticarias mais?",
+     "c": "Faz um plano de estudo de uma semana: uma competência por dia, 30 minutos cada, e escreve-o em alemão."
+    },
+    "pt_BR": {
+     "t": "Preparar-se para uma prova tipo B2",
+     "g": "Conhecer os formatos típicos de uma prova B2: compreensão oral e escrita, redação e conversação.",
+     "p": [
+      "Leitura e audição: múltipla escolha, associar títulos, verdadeiro ou falso. Leia primeiro as perguntas e depois o texto.",
+      "Escrita: muitas vezes um e-mail formal e um texto de opinião (Forumsbeitrag). Planeje, escreva e revise os erros típicos.",
+      "Oral: apresentar um tema, discutir com um parceiro, planejar algo juntos. Gerenciar o tempo é essencial: üb mit der Uhr!"
+     ],
+     "q": "Qual parte de uma prova B2 seria mais fácil para você e qual você praticaria mais?",
+     "c": "Faça um plano de estudo de uma semana: uma habilidade por dia, 30 minutos cada, e escreva em alemão."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "die Prüfung",
+      "ex": "Nächsten Monat mache ich eine Prüfung."
+     },
+     {
+      "w": "der Prüfungsteil",
+      "ex": "Der schriftliche Prüfungsteil dauert neunzig Minuten."
+     },
+     {
+      "w": "zuordnen",
+      "ex": "Ordnen Sie die Überschriften den Texten zu."
+     },
+     {
+      "w": "der Forumsbeitrag",
+      "ex": "Schreiben Sie einen Forumsbeitrag zum Thema Reisen."
+     },
+     {
+      "w": "sich vorbereiten auf",
+      "ex": "Ich bereite mich gründlich auf die Prüfung vor."
+     },
+     {
+      "w": "das Zeitmanagement",
+      "ex": "Gutes Zeitmanagement ist in der Prüfung wichtig."
+     }
+    ],
+    "gram": "Prüfungsanweisungen im Imperativ mit Sie: Ordnen Sie zu! Lesen Sie den Text! sich vorbereiten auf + Akkusativ."
+   }
+  },
+  {
+   "d": 362,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Mock oral exam",
+     "g": "Present and defend a point of view for about ten minutes.",
+     "p": [
+      "Structure your talk: Mein Thema ist... / Zuerst möchte ich... erläutern. / Aus meiner Sicht... / Zum Schluss...",
+      "Defend your view: Ich verstehe Ihren Einwand, aber... / Dafür spricht vor allem, dass... / Ein Beispiel aus meinem Alltag...",
+      "Interact: ask your partner: Wie sehen Sie das? / Was halten Sie davon? Listening and reacting also earn points."
+     ],
+     "q": "Here is your topic: Sollten Kinder schon in der Grundschule eine Fremdsprache lernen? Give me your view in four sentences.",
+     "c": "Do a full mock exam: talk for five minutes on a topic of your choice, then answer three counter-arguments out loud."
+    },
+    "de": {
+     "t": "Mündliche Probeprüfung",
+     "g": "Du präsentierst und verteidigst einen Standpunkt etwa zehn Minuten lang.",
+     "p": [
+      "Vortrag gliedern: Mein Thema ist... / Zuerst möchte ich... erläutern. / Aus meiner Sicht... / Zum Schluss...",
+      "Standpunkt verteidigen: Ich verstehe Ihren Einwand, aber... / Dafür spricht vor allem, dass... / Ein Beispiel aus meinem Alltag...",
+      "Interagieren: Frag dein Gegenüber: Wie sehen Sie das? / Was halten Sie davon? Zuhören und Reagieren bringen auch Punkte."
+     ],
+     "q": "Dein Thema: Sollten Kinder schon in der Grundschule eine Fremdsprache lernen? Sag mir deine Meinung in vier Sätzen.",
+     "c": "Mach eine komplette Probeprüfung: fünf Minuten zu einem Thema deiner Wahl, dann laut auf drei Gegenargumente antworten."
+    },
+    "es": {
+     "t": "Simulacro de examen oral",
+     "g": "Presenta y defiende un punto de vista durante unos diez minutos.",
+     "p": [
+      "Estructura tu exposición: Mein Thema ist... / Zuerst möchte ich... erläutern. / Aus meiner Sicht... / Zum Schluss...",
+      "Defiende tu postura: Ich verstehe Ihren Einwand, aber... / Dafür spricht vor allem, dass... / Ein Beispiel aus meinem Alltag...",
+      "Interactúa: pregunta: Wie sehen Sie das? / Was halten Sie davon? Escuchar y reaccionar también da puntos."
+     ],
+     "q": "Tu tema: Sollten Kinder schon in der Grundschule eine Fremdsprache lernen? Dame tu opinión en cuatro frases.",
+     "c": "Haz un simulacro completo: habla cinco minutos sobre un tema que elijas y responde en voz alta a tres contraargumentos."
+    },
+    "fr": {
+     "t": "Examen oral blanc",
+     "g": "Présenter et défendre un point de vue pendant une dizaine de minutes.",
+     "p": [
+      "Structure ton exposé : Mein Thema ist... / Zuerst möchte ich... erläutern. / Aus meiner Sicht... / Zum Schluss...",
+      "Défends ton avis : Ich verstehe Ihren Einwand, aber... / Dafür spricht vor allem, dass... / Ein Beispiel aus meinem Alltag...",
+      "Interagis : demande à ton partenaire : Wie sehen Sie das? / Was halten Sie davon? Écouter et réagir rapporte aussi des points."
+     ],
+     "q": "Ton sujet : Sollten Kinder schon in der Grundschule eine Fremdsprache lernen? Donne-moi ton avis en quatre phrases.",
+     "c": "Fais un examen blanc complet : parle cinq minutes sur un sujet de ton choix, puis réponds à voix haute à trois objections."
+    },
+    "it": {
+     "t": "Simulazione d'esame orale",
+     "g": "Presenta e difendi un punto di vista per circa dieci minuti.",
+     "p": [
+      "Struttura l'intervento: Mein Thema ist... / Zuerst möchte ich... erläutern. / Aus meiner Sicht... / Zum Schluss...",
+      "Difendi la tua tesi: Ich verstehe Ihren Einwand, aber... / Dafür spricht vor allem, dass... / Ein Beispiel aus meinem Alltag...",
+      "Interagisci: chiedi al partner: Wie sehen Sie das? / Was halten Sie davon? Anche ascoltare e reagire dà punti."
+     ],
+     "q": "Il tuo tema: Sollten Kinder schon in der Grundschule eine Fremdsprache lernen? Dammi la tua opinione in quattro frasi.",
+     "c": "Fai una simulazione completa: parla cinque minuti su un tema a scelta, poi rispondi ad alta voce a tre controargomenti."
+    },
+    "pt": {
+     "t": "Simulação de exame oral",
+     "g": "Apresentar e defender um ponto de vista durante cerca de dez minutos.",
+     "p": [
+      "Estrutura a apresentação: Mein Thema ist... / Zuerst möchte ich... erläutern. / Aus meiner Sicht... / Zum Schluss...",
+      "Defende a tua posição: Ich verstehe Ihren Einwand, aber... / Dafür spricht vor allem, dass... / Ein Beispiel aus meinem Alltag...",
+      "Interage: pergunta ao parceiro: Wie sehen Sie das? / Was halten Sie davon? Ouvir e reagir também dá pontos."
+     ],
+     "q": "O teu tema: Sollten Kinder schon in der Grundschule eine Fremdsprache lernen? Dá-me a tua opinião em quatro frases.",
+     "c": "Faz uma simulação completa: fala cinco minutos sobre um tema à tua escolha e responde em voz alta a três contra-argumentos."
+    },
+    "pt_BR": {
+     "t": "Simulado de prova oral",
+     "g": "Apresentar e defender um ponto de vista por cerca de dez minutos.",
+     "p": [
+      "Estruture a apresentação: Mein Thema ist... / Zuerst möchte ich... erläutern. / Aus meiner Sicht... / Zum Schluss...",
+      "Defenda sua posição: Ich verstehe Ihren Einwand, aber... / Dafür spricht vor allem, dass... / Ein Beispiel aus meinem Alltag...",
+      "Interaja: pergunte ao parceiro: Wie sehen Sie das? / Was halten Sie davon? Ouvir e reagir também vale pontos."
+     ],
+     "q": "Seu tema: Sollten Kinder schon in der Grundschule eine Fremdsprache lernen? Me dê sua opinião em quatro frases.",
+     "c": "Faça um simulado completo: fale cinco minutos sobre um tema à sua escolha e responda em voz alta a três contra-argumentos."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "der Standpunkt",
+      "ex": "Ich möchte meinen Standpunkt kurz erläutern."
+     },
+     {
+      "w": "erläutern",
+      "ex": "Zuerst erläutere ich die wichtigsten Begriffe."
+     },
+     {
+      "w": "verteidigen",
+      "ex": "Sie verteidigte ihre Meinung sehr überzeugend."
+     },
+     {
+      "w": "Dafür spricht, dass ...",
+      "ex": "Dafür spricht vor allem, dass Kinder schnell lernen."
+     },
+     {
+      "w": "aus meiner Sicht",
+      "ex": "Aus meiner Sicht ist das eine gute Idee."
+     },
+     {
+      "w": "Wie sehen Sie das?",
+      "ex": "Ich finde das sinnvoll. Wie sehen Sie das?"
+     }
+    ],
+    "gram": "Pronominaladverb mit dass: Dafür spricht, dass... / Dagegen spricht, dass... Das Verb im dass-Satz steht am Ende."
+   }
+  },
+  {
+   "d": 363,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Your German journey",
+     "g": "Reflect on your progress using past, present and future.",
+     "p": [
+      "Past: Als ich angefangen habe, konnte ich nur... sagen. / Am Anfang fand ich die Artikel schwierig.",
+      "Present: Inzwischen kann ich... / Heute fällt es mir leicht, ... zu... / Ich bin stolz darauf, dass...",
+      "Future: In Zukunft möchte ich... / Mein nächstes Ziel ist... / Ich werde weiterhin... Celebrate how far you have come!"
+     ],
+     "q": "Think back to day one. What could you say then, and what can you say now?",
+     "c": "Write a short text of eight sentences about your German journey: two in the past, three in the present, three about the future."
+    },
+    "de": {
+     "t": "Deine Deutschreise",
+     "g": "Du blickst mit Vergangenheit, Gegenwart und Zukunft auf deinen Fortschritt.",
+     "p": [
+      "Vergangenheit: Als ich angefangen habe, konnte ich nur... sagen. / Am Anfang fand ich die Artikel schwierig.",
+      "Gegenwart: Inzwischen kann ich... / Heute fällt es mir leicht, ... zu... / Ich bin stolz darauf, dass...",
+      "Zukunft: In Zukunft möchte ich... / Mein nächstes Ziel ist... / Ich werde weiterhin... Feier, wie weit du gekommen bist!"
+     ],
+     "q": "Denk an Tag eins zurück. Was konntest du damals sagen, und was kannst du heute sagen?",
+     "c": "Schreib einen Text mit acht Sätzen über deine Deutschreise: zwei in der Vergangenheit, drei in der Gegenwart, drei über die Zukunft."
+    },
+    "es": {
+     "t": "Tu viaje con el alemán",
+     "g": "Reflexiona sobre tu progreso usando pasado, presente y futuro.",
+     "p": [
+      "Pasado: Als ich angefangen habe, konnte ich nur... sagen. / Am Anfang fand ich die Artikel schwierig.",
+      "Presente: Inzwischen kann ich... / Heute fällt es mir leicht, ... zu... / Ich bin stolz darauf, dass...",
+      "Futuro: In Zukunft möchte ich... / Mein nächstes Ziel ist... / Ich werde weiterhin... ¡Celebra todo lo que has avanzado!"
+     ],
+     "q": "Piensa en el primer día. ¿Qué podías decir entonces y qué puedes decir ahora?",
+     "c": "Escribe un texto de ocho frases sobre tu viaje con el alemán: dos en pasado, tres en presente y tres sobre el futuro."
+    },
+    "fr": {
+     "t": "Ton parcours en allemand",
+     "g": "Faire le bilan de tes progrès avec le passé, le présent et le futur.",
+     "p": [
+      "Passé : Als ich angefangen habe, konnte ich nur... sagen. / Am Anfang fand ich die Artikel schwierig.",
+      "Présent : Inzwischen kann ich... / Heute fällt es mir leicht, ... zu... / Ich bin stolz darauf, dass...",
+      "Futur : In Zukunft möchte ich... / Mein nächstes Ziel ist... / Ich werde weiterhin... Célèbre le chemin parcouru !"
+     ],
+     "q": "Repense au premier jour. Que savais-tu dire alors, et que sais-tu dire aujourd'hui ?",
+     "c": "Écris un texte de huit phrases sur ton parcours : deux au passé, trois au présent, trois sur l'avenir."
+    },
+    "it": {
+     "t": "Il tuo viaggio con il tedesco",
+     "g": "Rifletti sui tuoi progressi usando passato, presente e futuro.",
+     "p": [
+      "Passato: Als ich angefangen habe, konnte ich nur... sagen. / Am Anfang fand ich die Artikel schwierig.",
+      "Presente: Inzwischen kann ich... / Heute fällt es mir leicht, ... zu... / Ich bin stolz darauf, dass...",
+      "Futuro: In Zukunft möchte ich... / Mein nächstes Ziel ist... / Ich werde weiterhin... Festeggia la strada fatta!"
+     ],
+     "q": "Ripensa al primo giorno. Che cosa sapevi dire allora e che cosa sai dire oggi?",
+     "c": "Scrivi un testo di otto frasi sul tuo viaggio con il tedesco: due al passato, tre al presente, tre sul futuro."
+    },
+    "pt": {
+     "t": "A tua viagem com o alemão",
+     "g": "Refletir sobre o teu progresso usando passado, presente e futuro.",
+     "p": [
+      "Passado: Als ich angefangen habe, konnte ich nur... sagen. / Am Anfang fand ich die Artikel schwierig.",
+      "Presente: Inzwischen kann ich... / Heute fällt es mir leicht, ... zu... / Ich bin stolz darauf, dass...",
+      "Futuro: In Zukunft möchte ich... / Mein nächstes Ziel ist... / Ich werde weiterhin... Celebra o caminho que fizeste!"
+     ],
+     "q": "Pensa no primeiro dia. O que conseguias dizer na altura e o que consegues dizer agora?",
+     "c": "Escreve um texto de oito frases sobre a tua viagem com o alemão: duas no passado, três no presente, três sobre o futuro."
+    },
+    "pt_BR": {
+     "t": "Sua jornada com o alemão",
+     "g": "Refletir sobre seu progresso usando passado, presente e futuro.",
+     "p": [
+      "Passado: Als ich angefangen habe, konnte ich nur... sagen. / Am Anfang fand ich die Artikel schwierig.",
+      "Presente: Inzwischen kann ich... / Heute fällt es mir leicht, ... zu... / Ich bin stolz darauf, dass...",
+      "Futuro: In Zukunft möchte ich... / Mein nächstes Ziel ist... / Ich werde weiterhin... Comemore o quanto você avançou!"
+     ],
+     "q": "Pense no primeiro dia. O que você conseguia dizer naquela época e o que consegue dizer agora?",
+     "c": "Escreva um texto de oito frases sobre sua jornada com o alemão: duas no passado, três no presente, três sobre o futuro."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "der Fortschritt",
+      "ex": "Ich sehe jeden Monat Fortschritte."
+     },
+     {
+      "w": "stolz sein auf",
+      "ex": "Ich bin stolz auf meine erste E-Mail auf Deutsch."
+     },
+     {
+      "w": "leichtfallen",
+      "ex": "Das Hören fällt mir inzwischen leicht."
+     },
+     {
+      "w": "das Ziel",
+      "ex": "Mein nächstes Ziel ist ein Buch auf Deutsch."
+     },
+     {
+      "w": "weiterhin",
+      "ex": "Ich werde weiterhin jeden Tag üben."
+     },
+     {
+      "w": "damals",
+      "ex": "Damals konnte ich nur Hallo sagen."
+     }
+    ],
+    "gram": "Zeiten mischen: Präteritum/Perfekt (konnte, habe angefangen), Präsens (kann), Futur I (werde üben). Als für einmalig Vergangenes."
+   }
+  },
+  {
+   "d": 364,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Keeping German alive",
+     "g": "Build habits with books, series and friends to keep improving.",
+     "p": [
+      "Habits: a little every day beats a lot once a week. Ich nehme mir vor, jeden Tag 15 Minuten Deutsch zu lesen.",
+      "Media: German series, podcasts, music and books. Start with subtitles in German, then try without.",
+      "People: find a Tandempartner, join a Stammtisch or keep chatting here. Speaking regularly keeps the words alive."
+     ],
+     "q": "Which German series, book or song would you like to discover next?",
+     "c": "Write your personal German plan for the next month: three habits, one book or series, one person to practise with."
+    },
+    "de": {
+     "t": "Deutsch lebendig halten",
+     "g": "Du baust Gewohnheiten mit Büchern, Serien und Freunden auf, um dich zu verbessern.",
+     "p": [
+      "Gewohnheiten: täglich ein bisschen ist besser als einmal viel. Ich nehme mir vor, jeden Tag 15 Minuten Deutsch zu lesen.",
+      "Medien: deutsche Serien, Podcasts, Musik und Bücher. Erst mit deutschen Untertiteln, dann ohne.",
+      "Menschen: einen Tandempartner finden, zu einem Stammtisch gehen oder hier weiterplaudern. Regelmäßiges Sprechen hält die Wörter lebendig."
+     ],
+     "q": "Welche deutsche Serie, welches Buch oder welches Lied möchtest du als Nächstes entdecken?",
+     "c": "Schreib deinen Deutschplan für den nächsten Monat: drei Gewohnheiten, ein Buch oder eine Serie, eine Person zum Üben."
+    },
+    "es": {
+     "t": "Mantener vivo el alemán",
+     "g": "Crea hábitos con libros, series y amigos para seguir mejorando.",
+     "p": [
+      "Hábitos: un poco cada día vale más que mucho una vez por semana. Ich nehme mir vor, jeden Tag 15 Minuten Deutsch zu lesen.",
+      "Medios: series, pódcasts, música y libros en alemán. Empieza con subtítulos en alemán y luego prueba sin ellos.",
+      "Personas: busca un Tandempartner, ve a un Stammtisch o sigue charlando aquí. Hablar a menudo mantiene vivas las palabras."
+     ],
+     "q": "¿Qué serie, libro o canción alemana te gustaría descubrir ahora?",
+     "c": "Escribe tu plan de alemán para el próximo mes: tres hábitos, un libro o serie y una persona con quien practicar."
+    },
+    "fr": {
+     "t": "Garder l'allemand vivant",
+     "g": "Créer des habitudes avec livres, séries et amis pour continuer à progresser.",
+     "p": [
+      "Habitudes : un peu chaque jour vaut mieux que beaucoup une fois par semaine. Ich nehme mir vor, jeden Tag 15 Minuten Deutsch zu lesen.",
+      "Médias : séries, podcasts, musique et livres allemands. Commence avec des sous-titres allemands, puis sans.",
+      "Personnes : trouve un Tandempartner, va à un Stammtisch ou continue à discuter ici. Parler souvent garde les mots vivants."
+     ],
+     "q": "Quelle série, quel livre ou quelle chanson allemande aimerais-tu découvrir ensuite ?",
+     "c": "Écris ton plan d'allemand pour le mois prochain : trois habitudes, un livre ou une série, une personne avec qui pratiquer."
+    },
+    "it": {
+     "t": "Mantenere vivo il tedesco",
+     "g": "Crea abitudini con libri, serie e amici per continuare a migliorare.",
+     "p": [
+      "Abitudini: poco ogni giorno è meglio di tanto una volta a settimana. Ich nehme mir vor, jeden Tag 15 Minuten Deutsch zu lesen.",
+      "Media: serie, podcast, musica e libri in tedesco. Inizia con i sottotitoli in tedesco, poi prova senza.",
+      "Persone: trova un Tandempartner, vai a uno Stammtisch o continua a chiacchierare qui. Parlare spesso tiene vive le parole."
+     ],
+     "q": "Quale serie, libro o canzone tedesca vorresti scoprire adesso?",
+     "c": "Scrivi il tuo piano di tedesco per il prossimo mese: tre abitudini, un libro o una serie, una persona con cui esercitarti."
+    },
+    "pt": {
+     "t": "Manter o alemão vivo",
+     "g": "Criar hábitos com livros, séries e amigos para continuar a melhorar.",
+     "p": [
+      "Hábitos: um pouco todos os dias vale mais do que muito uma vez por semana. Ich nehme mir vor, jeden Tag 15 Minuten Deutsch zu lesen.",
+      "Media: séries, podcasts, música e livros em alemão. Começa com legendas em alemão e depois tenta sem.",
+      "Pessoas: arranja um Tandempartner, vai a um Stammtisch ou continua a conversar aqui. Falar com frequência mantém as palavras vivas."
+     ],
+     "q": "Que série, livro ou canção alemã gostarias de descobrir a seguir?",
+     "c": "Escreve o teu plano de alemão para o próximo mês: três hábitos, um livro ou série e uma pessoa com quem praticar."
+    },
+    "pt_BR": {
+     "t": "Manter o alemão vivo",
+     "g": "Criar hábitos com livros, séries e amigos para continuar melhorando.",
+     "p": [
+      "Hábitos: um pouco todo dia vale mais que muito uma vez por semana. Ich nehme mir vor, jeden Tag 15 Minuten Deutsch zu lesen.",
+      "Mídia: séries, podcasts, músicas e livros em alemão. Comece com legendas em alemão e depois tente sem.",
+      "Pessoas: encontre um Tandempartner, vá a um Stammtisch ou continue batendo papo aqui. Falar sempre mantém as palavras vivas."
+     ],
+     "q": "Qual série, livro ou música alemã você gostaria de descobrir agora?",
+     "c": "Escreva seu plano de alemão para o próximo mês: três hábitos, um livro ou série e uma pessoa com quem praticar."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "die Gewohnheit",
+      "ex": "Lesen vor dem Schlafen ist meine liebste Gewohnheit."
+     },
+     {
+      "w": "sich vornehmen",
+      "ex": "Ich nehme mir vor, jede Woche einen Podcast zu hören."
+     },
+     {
+      "w": "der Untertitel",
+      "ex": "Ich schaue Serien mit deutschen Untertiteln."
+     },
+     {
+      "w": "der Tandempartner",
+      "ex": "Mein Tandempartner lernt Spanisch und ich Deutsch."
+     },
+     {
+      "w": "der Stammtisch",
+      "ex": "Jeden Donnerstag gehe ich zum Sprachstammtisch."
+     },
+     {
+      "w": "dranbleiben",
+      "ex": "Das Wichtigste ist, dranzubleiben."
+     }
+    ],
+    "gram": "sich vornehmen + zu + Infinitiv: Ich nehme mir vor, mehr zu lesen. Trennbare Verben: dranzubleiben, aufzuhören (zu in der Mitte)."
+   }
+  },
+  {
+   "d": 365,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Final review: B2 celebration",
+     "g": "Celebrate a whole year of German with a full conversation on any topic!",
+     "p": [
+      "You did it: 365 days, from Hallo to essays, debates, idioms and poetry. Herzlichen Glückwunsch!",
+      "Today, mix everything: tell a story, give your opinion, use an idiom, a Konjunktiv and a precise word.",
+      "Remember Übung macht den Meister: German stays alive when you use it. Your next adventure is waiting!"
+     ],
+     "q": "Let's celebrate! Pick any topic you love and talk to me about it in German, as long as you like.",
+     "c": "Write a thank-you note in German to yourself for this year: what you learned, what you enjoyed and what comes next."
+    },
+    "de": {
+     "t": "Abschluss: B2-Feier",
+     "g": "Du feierst ein ganzes Jahr Deutsch mit einem freien Gespräch über ein Thema deiner Wahl!",
+     "p": [
+      "Geschafft: 365 Tage, von Hallo bis zu Aufsätzen, Debatten, Redewendungen und Gedichten. Herzlichen Glückwunsch!",
+      "Heute mischst du alles: eine Geschichte erzählen, deine Meinung sagen, mit Redewendung, Konjunktiv und präzisem Wort.",
+      "Denk daran: Übung macht den Meister. Deutsch bleibt lebendig, wenn du es benutzt. Dein nächstes Abenteuer wartet!"
+     ],
+     "q": "Lass uns feiern! Wähl ein Thema, das du liebst, und sprich mit mir darüber auf Deutsch, so lange du möchtest.",
+     "c": "Schreib dir selbst einen Dankesbrief auf Deutsch für dieses Jahr: was du gelernt hast, was dir Spaß gemacht hat, was jetzt kommt."
+    },
+    "es": {
+     "t": "Repaso final: celebración B2",
+     "g": "¡Celebra un año entero de alemán con una conversación libre sobre cualquier tema!",
+     "p": [
+      "Lo lograste: 365 días, de Hallo a ensayos, debates, modismos y poesía. Herzlichen Glückwunsch!",
+      "Hoy mézclalo todo: cuenta una historia, da tu opinión, usa un modismo, un Konjunktiv y una palabra precisa.",
+      "Recuerda Übung macht den Meister: el alemán sigue vivo cuando lo usas. ¡Tu próxima aventura te espera!"
+     ],
+     "q": "¡Celebremos! Elige un tema que te encante y háblame de él en alemán todo lo que quieras.",
+     "c": "Escríbete una nota de agradecimiento en alemán por este año: qué aprendiste, qué disfrutaste y qué viene ahora."
+    },
+    "fr": {
+     "t": "Révision finale : fête du B2",
+     "g": "Fête une année entière d'allemand avec une vraie conversation sur le sujet de ton choix !",
+     "p": [
+      "Tu l'as fait : 365 jours, de Hallo aux dissertations, débats, expressions et poèmes. Herzlichen Glückwunsch!",
+      "Aujourd'hui, mélange tout : raconte une histoire, donne ton avis, avec une expression, un Konjunktiv et un mot précis.",
+      "Souviens-toi : Übung macht den Meister. L'allemand reste vivant quand tu l'utilises. Ta prochaine aventure t'attend !"
+     ],
+     "q": "Faisons la fête ! Choisis un sujet que tu adores et parle-m'en en allemand aussi longtemps que tu veux.",
+     "c": "Écris-toi un mot de remerciement en allemand pour cette année : ce que tu as appris, aimé, et ce qui vient ensuite."
+    },
+    "it": {
+     "t": "Ripasso finale: festa del B2",
+     "g": "Festeggia un anno intero di tedesco con una conversazione libera su qualsiasi tema!",
+     "p": [
+      "Ce l'hai fatta: 365 giorni, da Hallo a saggi, dibattiti, modi di dire e poesie. Herzlichen Glückwunsch!",
+      "Oggi mescola tutto: racconta una storia, dai la tua opinione, usa un modo di dire, un Konjunktiv e una parola precisa.",
+      "Ricorda: Übung macht den Meister. Il tedesco resta vivo se lo usi. La tua prossima avventura ti aspetta!"
+     ],
+     "q": "Festeggiamo! Scegli un tema che ami e parlamene in tedesco per tutto il tempo che vuoi.",
+     "c": "Scriviti un biglietto di ringraziamento in tedesco per quest'anno: cosa hai imparato, cosa ti è piaciuto e cosa viene dopo."
+    },
+    "pt": {
+     "t": "Revisão final: festa do B2",
+     "g": "Celebra um ano inteiro de alemão com uma conversa livre sobre qualquer tema!",
+     "p": [
+      "Conseguiste: 365 dias, de Hallo a ensaios, debates, expressões e poesia. Herzlichen Glückwunsch!",
+      "Hoje mistura tudo: conta uma história, dá a tua opinião, usa uma expressão, um Konjunktiv e uma palavra precisa.",
+      "Lembra-te: Übung macht den Meister. O alemão fica vivo quando o usas. A tua próxima aventura está à espera!"
+     ],
+     "q": "Vamos celebrar! Escolhe um tema de que gostes muito e fala-me dele em alemão o tempo que quiseres.",
+     "c": "Escreve a ti próprio uma nota de agradecimento em alemão por este ano: o que aprendeste, o que gostaste e o que vem a seguir."
+    },
+    "pt_BR": {
+     "t": "Revisão final: festa do B2",
+     "g": "Comemore um ano inteiro de alemão com uma conversa livre sobre qualquer tema!",
+     "p": [
+      "Você conseguiu: 365 dias, de Hallo a redações, debates, expressões e poesia. Herzlichen Glückwunsch!",
+      "Hoje misture tudo: conte uma história, dê sua opinião, use uma expressão, um Konjunktiv e uma palavra precisa.",
+      "Lembre-se: Übung macht den Meister. O alemão continua vivo quando você usa. Sua próxima aventura está esperando!"
+     ],
+     "q": "Vamos comemorar! Escolha um tema que você ama e fale comigo sobre ele em alemão pelo tempo que quiser.",
+     "c": "Escreva para si mesmo um bilhete de agradecimento em alemão por este ano: o que aprendeu, o que curtiu e o que vem agora."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "Herzlichen Glückwunsch!",
+      "ex": "Herzlichen Glückwunsch zu einem ganzen Jahr Deutsch!"
+     },
+     {
+      "w": "geschafft",
+      "ex": "Wir haben es geschafft!"
+     },
+     {
+      "w": "feiern",
+      "ex": "Heute feiern wir deinen Erfolg."
+     },
+     {
+      "w": "das Abenteuer",
+      "ex": "Deutsch lernen war ein tolles Abenteuer."
+     },
+     {
+      "w": "sich freuen auf",
+      "ex": "Ich freue mich auf viele neue Gespräche."
+     },
+     {
+      "w": "Weiter so!",
+      "ex": "Du machst große Fortschritte. Weiter so!"
+     }
+    ],
+    "gram": "sich freuen auf (Zukunft) + Akk vs. sich freuen über (Gegenwart/Vergangenheit) + Akk: Ich freue mich über meinen Erfolg."
+   }
+  }
+ ]
+}

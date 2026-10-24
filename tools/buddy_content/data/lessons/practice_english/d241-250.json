@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_english",
+ "lessons": [
+  {
+   "d": 241,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Travel stories: the best trip",
+     "g": "Tell a vivid story about your best trip with narrative tenses and strong adjectives.",
+     "p": [
+      "Set the scene with the past continuous: The sun was shining and we were walking along the beach.",
+      "Main events in the past simple, earlier events in the past perfect: When we arrived, the bus had already left.",
+      "Swap weak words for strong ones: very good → amazing, very tired → exhausted, very beautiful → breathtaking."
+     ],
+     "q": "What was the best trip of your life? Where did you go, and what happened that you will never forget?",
+     "c": "Tell your best trip story in six sentences with one past continuous, one past perfect and two strong adjectives."
+    },
+    "de": {
+     "t": "Travel stories: the best trip",
+     "g": "Du erzählst lebendig von deiner schönsten Reise, mit Erzählzeiten und starken Adjektiven.",
+     "p": [
+      "Den Rahmen setzt das past continuous: The sun was shining and we were walking along the beach.",
+      "Hauptereignisse im past simple, Früheres im past perfect: When we arrived, the bus had already left.",
+      "Ersetze schwache durch starke Wörter: very good → amazing, very tired → exhausted, very beautiful → breathtaking."
+     ],
+     "q": "Was war die schönste Reise deines Lebens? Wohin ging es, und was ist passiert, das du nie vergisst?",
+     "c": "Erzähl deine Reise in sechs Sätzen mit einem past continuous, einem past perfect und zwei starken Adjektiven."
+    },
+    "es": {
+     "t": "Travel stories: the best trip",
+     "g": "Cuenta de forma viva tu mejor viaje con los tiempos narrativos y adjetivos potentes.",
+     "p": [
+      "Describe el ambiente con el past continuous: The sun was shining and we were walking along the beach.",
+      "Los hechos principales en past simple y lo anterior en past perfect: When we arrived, the bus had already left.",
+      "Cambia palabras flojas por fuertes: very good → amazing, very tired → exhausted, very beautiful → breathtaking."
+     ],
+     "q": "¿Cuál fue el mejor viaje de tu vida? ¿Adónde fuiste y qué pasó que nunca olvidarás?",
+     "c": "Cuenta tu mejor viaje en seis frases con un past continuous, un past perfect y dos adjetivos fuertes."
+    },
+    "fr": {
+     "t": "Travel stories: the best trip",
+     "g": "Raconte ton plus beau voyage de façon vivante avec les temps du récit et des adjectifs forts.",
+     "p": [
+      "Plante le décor avec le past continuous : The sun was shining and we were walking along the beach.",
+      "Les faits principaux au past simple, ce qui précède au past perfect : When we arrived, the bus had already left.",
+      "Remplace les mots faibles par des mots forts : very good → amazing, very tired → exhausted, very beautiful → breathtaking."
+     ],
+     "q": "Quel a été le plus beau voyage de ta vie ? Où es-tu allé et que s'est-il passé d'inoubliable ?",
+     "c": "Raconte ton voyage en six phrases avec un past continuous, un past perfect et deux adjectifs forts."
+    },
+    "it": {
+     "t": "Travel stories: the best trip",
+     "g": "Racconta in modo vivace il tuo viaggio più bello con i tempi narrativi e aggettivi forti.",
+     "p": [
+      "Descrivi l'atmosfera con il past continuous: The sun was shining and we were walking along the beach.",
+      "Eventi principali al past simple, quelli precedenti al past perfect: When we arrived, the bus had already left.",
+      "Sostituisci le parole deboli con quelle forti: very good → amazing, very tired → exhausted, very beautiful → breathtaking."
+     ],
+     "q": "Qual è stato il viaggio più bello della tua vita? Dove sei andato e cosa è successo di indimenticabile?",
+     "c": "Racconta il tuo viaggio in sei frasi con un past continuous, un past perfect e due aggettivi forti."
+    },
+    "pt": {
+     "t": "Travel stories: the best trip",
+     "g": "Conta de forma viva a tua melhor viagem com os tempos narrativos e adjetivos fortes.",
+     "p": [
+      "Cria o cenário com o past continuous: The sun was shining and we were walking along the beach.",
+      "Os acontecimentos principais no past simple, os anteriores no past perfect: When we arrived, the bus had already left.",
+      "Troca palavras fracas por fortes: very good → amazing, very tired → exhausted, very beautiful → breathtaking."
+     ],
+     "q": "Qual foi a melhor viagem da tua vida? Para onde foste e o que aconteceu que nunca vais esquecer?",
+     "c": "Conta a tua melhor viagem em seis frases com um past continuous, um past perfect e dois adjetivos fortes."
+    },
+    "pt_BR": {
+     "t": "Travel stories: the best trip",
+     "g": "Conte de forma viva a sua melhor viagem com os tempos narrativos e adjetivos fortes.",
+     "p": [
+      "Monte o cenário com o past continuous: The sun was shining and we were walking along the beach.",
+      "Os fatos principais no past simple, os anteriores no past perfect: When we arrived, the bus had already left.",
+      "Troque palavras fracas por fortes: very good → amazing, very tired → exhausted, very beautiful → breathtaking."
+     ],
+     "q": "Qual foi a melhor viagem da sua vida? Para onde você foi e o que aconteceu que você nunca vai esquecer?",
+     "c": "Conte sua melhor viagem em seis frases com um past continuous, um past perfect e dois adjetivos fortes."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "breathtaking",
+      "ex": "The view from the top of the mountain was breathtaking."
+     },
+     {
+      "w": "unforgettable",
+      "ex": "Sleeping under the stars was an unforgettable night."
+     },
+     {
+      "w": "exhausted",
+      "ex": "We were exhausted after the twelve-hour journey."
+     },
+     {
+      "w": "set off",
+      "ex": "We set off at dawn to avoid the traffic."
+     },
+     {
+      "w": "get lost",
+      "ex": "We got lost in the old town, but it was fun."
+     },
+     {
+      "w": "it turned out that",
+      "ex": "It turned out that the hotel was right next to the beach."
+     }
+    ],
+    "gram": "Narrative tenses: past continuous for background, past simple for events, past perfect for earlier ones: The bus had already left."
+   }
+  },
+  {
+   "d": 242,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Cultural differences",
+     "g": "Compare customs like personal space, punctuality and directness without stereotypes.",
+     "p": [
+      "Use soft, fair language: People in my country tend to arrive on time. Many people prefer to be direct.",
+      "Share your own experience: In my experience, people here stand quite close when they talk.",
+      "Avoid all and always: not All Brazilians are late, but Some people are more relaxed about time."
+     ],
+     "q": "Which custom in another culture surprised you the most? How is it different from your own?",
+     "c": "Write three fair sentences comparing a custom in your country with another one, using tend to and in my experience."
+    },
+    "de": {
+     "t": "Cultural differences",
+     "g": "Du vergleichst Gewohnheiten wie Abstand, Pünktlichkeit und Direktheit, ganz ohne Klischees.",
+     "p": [
+      "Benutze weiche, faire Sprache: People in my country tend to arrive on time. Many people prefer to be direct.",
+      "Erzähl aus eigener Erfahrung: In my experience, people here stand quite close when they talk.",
+      "Vermeide all und always: nicht All Brazilians are late, sondern Some people are more relaxed about time."
+     ],
+     "q": "Welche Gewohnheit in einer anderen Kultur hat dich am meisten überrascht? Was ist bei dir anders?",
+     "c": "Schreib drei faire Sätze, die eine Sitte deines Landes mit einer anderen vergleichen, mit tend to und in my experience."
+    },
+    "es": {
+     "t": "Cultural differences",
+     "g": "Compara costumbres como el espacio personal, la puntualidad y la franqueza sin estereotipos.",
+     "p": [
+      "Usa un lenguaje suave y justo: People in my country tend to arrive on time. Many people prefer to be direct.",
+      "Habla desde tu experiencia: In my experience, people here stand quite close when they talk.",
+      "Evita all y always: no All Brazilians are late, sino Some people are more relaxed about time."
+     ],
+     "q": "¿Qué costumbre de otra cultura te sorprendió más? ¿En qué se diferencia de la tuya?",
+     "c": "Escribe tres frases justas que comparen una costumbre de tu país con otra, usando tend to e in my experience."
+    },
+    "fr": {
+     "t": "Cultural differences",
+     "g": "Compare des coutumes comme l'espace personnel, la ponctualité et la franchise, sans stéréotypes.",
+     "p": [
+      "Utilise un langage nuancé : People in my country tend to arrive on time. Many people prefer to be direct.",
+      "Parle de ton expérience : In my experience, people here stand quite close when they talk.",
+      "Évite all et always : pas All Brazilians are late, mais Some people are more relaxed about time."
+     ],
+     "q": "Quelle coutume d'une autre culture t'a le plus surpris ? En quoi est-elle différente de la tienne ?",
+     "c": "Écris trois phrases nuancées qui comparent une coutume de ton pays à une autre, avec tend to et in my experience."
+    },
+    "it": {
+     "t": "Cultural differences",
+     "g": "Confronta usanze come lo spazio personale, la puntualità e la schiettezza senza stereotipi.",
+     "p": [
+      "Usa un linguaggio morbido e corretto: People in my country tend to arrive on time. Many people prefer to be direct.",
+      "Parla della tua esperienza: In my experience, people here stand quite close when they talk.",
+      "Evita all e always: non All Brazilians are late, ma Some people are more relaxed about time."
+     ],
+     "q": "Quale usanza di un'altra cultura ti ha sorpreso di più? In cosa è diversa dalla tua?",
+     "c": "Scrivi tre frasi equilibrate che confrontano un'usanza del tuo paese con un'altra, usando tend to e in my experience."
+    },
+    "pt": {
+     "t": "Cultural differences",
+     "g": "Compara costumes como o espaço pessoal, a pontualidade e a franqueza sem estereótipos.",
+     "p": [
+      "Usa uma linguagem suave e justa: People in my country tend to arrive on time. Many people prefer to be direct.",
+      "Fala da tua experiência: In my experience, people here stand quite close when they talk.",
+      "Evita all e always: não All Brazilians are late, mas Some people are more relaxed about time."
+     ],
+     "q": "Que costume de outra cultura te surpreendeu mais? Em que é diferente do teu?",
+     "c": "Escreve três frases justas a comparar um costume do teu país com outro, com tend to e in my experience."
+    },
+    "pt_BR": {
+     "t": "Cultural differences",
+     "g": "Compare costumes como espaço pessoal, pontualidade e franqueza sem estereótipos.",
+     "p": [
+      "Use uma linguagem suave e justa: People in my country tend to arrive on time. Many people prefer to be direct.",
+      "Fale da sua experiência: In my experience, people here stand quite close when they talk.",
+      "Evite all e always: não All Brazilians are late, mas Some people are more relaxed about time."
+     ],
+     "q": "Qual costume de outra cultura mais te surpreendeu? Em que ele é diferente do seu?",
+     "c": "Escreva três frases justas comparando um costume do seu país com outro, usando tend to e in my experience."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "punctuality",
+      "ex": "In some countries, punctuality is very important for meetings."
+     },
+     {
+      "w": "personal space",
+      "ex": "People often stand further apart to keep their personal space."
+     },
+     {
+      "w": "direct",
+      "ex": "My colleague is very direct: she says exactly what she thinks."
+     },
+     {
+      "w": "in my culture",
+      "ex": "In my culture, we usually take our shoes off at home."
+     },
+     {
+      "w": "tend to",
+      "ex": "People here tend to eat dinner quite late."
+     },
+     {
+      "w": "generalise",
+      "ex": "It's easy to generalise, but every person is different."
+     }
+    ],
+    "gram": "Talk about customs without stereotypes: tend to, usually, many people, in my experience. Avoid all and always: Many people tend to..."
+   }
+  },
+  {
+   "d": 243,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Festivals around the world",
+     "g": "Describe famous festivals and traditions around the world.",
+     "p": [
+      "Holi in India: people throw coloured powder. Carnival in Brazil: parades, samba and costumes.",
+      "Lantern Festival in China: lanterns light up the night. Oktoberfest in Munich: music, tents and traditional food.",
+      "Use the passive for traditions: It is celebrated in spring. Special food is prepared. It takes place every year."
+     ],
+     "q": "What is your favourite festival? When does it take place, and how do people celebrate it?",
+     "c": "Describe a festival from your country in four sentences, using takes place, is celebrated and people usually."
+    },
+    "de": {
+     "t": "Festivals around the world",
+     "g": "Du beschreibst berühmte Feste und Traditionen aus aller Welt.",
+     "p": [
+      "Holi in Indien: Man wirft farbiges Pulver. Karneval in Brasilien: Umzüge, Samba und Kostüme.",
+      "Laternenfest in China: Laternen erleuchten die Nacht. Oktoberfest in München: Musik, Zelte und traditionelles Essen.",
+      "Traditionen im Passiv: It is celebrated in spring. Special food is prepared. It takes place every year."
+     ],
+     "q": "Was ist dein Lieblingsfest? Wann findet es statt und wie wird es gefeiert?",
+     "c": "Beschreib ein Fest aus deinem Land in vier Sätzen mit takes place, is celebrated und people usually."
+    },
+    "es": {
+     "t": "Festivals around the world",
+     "g": "Describe festivales y tradiciones famosas de todo el mundo.",
+     "p": [
+      "Holi en la India: la gente lanza polvos de colores. Carnaval en Brasil: desfiles, samba y disfraces.",
+      "Festival de los Faroles en China: los faroles iluminan la noche. Oktoberfest en Múnich: música, carpas y comida típica.",
+      "Usa la pasiva para tradiciones: It is celebrated in spring. Special food is prepared. It takes place every year."
+     ],
+     "q": "¿Cuál es tu fiesta favorita? ¿Cuándo se celebra y cómo la vive la gente?",
+     "c": "Describe una fiesta de tu país en cuatro frases con takes place, is celebrated y people usually."
+    },
+    "fr": {
+     "t": "Festivals around the world",
+     "g": "Décris des fêtes et des traditions célèbres du monde entier.",
+     "p": [
+      "Holi en Inde : on lance des poudres colorées. Carnaval au Brésil : défilés, samba et costumes.",
+      "Fête des lanternes en Chine : les lanternes illuminent la nuit. Oktoberfest à Munich : musique, chapiteaux et plats typiques.",
+      "Le passif pour les traditions : It is celebrated in spring. Special food is prepared. It takes place every year."
+     ],
+     "q": "Quelle est ta fête préférée ? Quand a-t-elle lieu et comment la célèbre-t-on ?",
+     "c": "Décris une fête de ton pays en quatre phrases avec takes place, is celebrated et people usually."
+    },
+    "it": {
+     "t": "Festivals around the world",
+     "g": "Descrivi feste e tradizioni famose in tutto il mondo.",
+     "p": [
+      "Holi in India: si lanciano polveri colorate. Carnevale in Brasile: sfilate, samba e costumi.",
+      "Festa delle Lanterne in Cina: le lanterne illuminano la notte. Oktoberfest a Monaco: musica, tendoni e cibo tipico.",
+      "Il passivo per le tradizioni: It is celebrated in spring. Special food is prepared. It takes place every year."
+     ],
+     "q": "Qual è la tua festa preferita? Quando si svolge e come si festeggia?",
+     "c": "Descrivi una festa del tuo paese in quattro frasi con takes place, is celebrated e people usually."
+    },
+    "pt": {
+     "t": "Festivals around the world",
+     "g": "Descreve festivais e tradições famosas de todo o mundo.",
+     "p": [
+      "Holi na Índia: atira-se pó colorido. Carnaval no Brasil: desfiles, samba e fantasias.",
+      "Festival das Lanternas na China: as lanternas iluminam a noite. Oktoberfest em Munique: música, tendas e comida típica.",
+      "Usa a passiva para tradições: It is celebrated in spring. Special food is prepared. It takes place every year."
+     ],
+     "q": "Qual é a tua festa preferida? Quando se realiza e como é que as pessoas a celebram?",
+     "c": "Descreve uma festa do teu país em quatro frases com takes place, is celebrated e people usually."
+    },
+    "pt_BR": {
+     "t": "Festivals around the world",
+     "g": "Descreva festas e tradições famosas do mundo todo.",
+     "p": [
+      "Holi na Índia: as pessoas jogam pó colorido. Carnaval no Brasil: desfiles, samba e fantasias.",
+      "Festival das Lanternas na China: as lanternas iluminam a noite. Oktoberfest em Munique: música, tendas e comida típica.",
+      "Use a passiva para tradições: It is celebrated in spring. Special food is prepared. It takes place every year."
+     ],
+     "q": "Qual é a sua festa favorita? Quando ela acontece e como as pessoas comemoram?",
+     "c": "Descreva uma festa do seu país em quatro frases com takes place, is celebrated e people usually."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "festival",
+      "ex": "Holi is a colourful spring festival celebrated in India."
+     },
+     {
+      "w": "parade",
+      "ex": "The Carnival parade goes on for hours with music and dancers."
+     },
+     {
+      "w": "lantern",
+      "ex": "During the Lantern Festival, streets glow with red lanterns."
+     },
+     {
+      "w": "costume",
+      "ex": "Everyone wears a bright costume at the Carnival in Rio."
+     },
+     {
+      "w": "take place",
+      "ex": "Oktoberfest takes place in Munich every autumn."
+     },
+     {
+      "w": "celebrate",
+      "ex": "People celebrate the new year with fireworks and family meals."
+     }
+    ],
+    "gram": "Present simple passive for traditions: It is celebrated in March. Lanterns are hung in the streets. People throw coloured powder."
+   }
+  },
+  {
+   "d": 244,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Etiquette and good manners",
+     "g": "Talk about good manners and what is polite or rude in different places.",
+     "p": [
+      "It's polite to + verb: It's polite to hold the door open. It's considered rude to interrupt someone.",
+      "You're expected to / you're not supposed to: You're expected to take your shoes off. You're not supposed to eat on the metro.",
+      "Gerund as subject: Queuing is very important in the UK. Pointing at people is impolite in many places."
+     ],
+     "q": "What is considered polite in your country that might surprise a visitor?",
+     "c": "Write a mini guide for a visitor: two things that are polite and two that are considered rude in your country."
+    },
+    "de": {
+     "t": "Etiquette and good manners",
+     "g": "Du sprichst über gute Manieren und darüber, was wo höflich oder unhöflich ist.",
+     "p": [
+      "It's polite to + Verb: It's polite to hold the door open. It's considered rude to interrupt someone.",
+      "Erwartungen: You're expected to take your shoes off. You're not supposed to eat on the metro.",
+      "Gerund als Subjekt: Queuing is very important in the UK. Pointing at people is impolite in many places."
+     ],
+     "q": "Was gilt in deinem Land als höflich und könnte Besucher überraschen?",
+     "c": "Schreib einen Mini-Ratgeber für Gäste: zwei Dinge, die höflich sind, und zwei, die bei dir als unhöflich gelten."
+    },
+    "es": {
+     "t": "Etiquette and good manners",
+     "g": "Habla de buenos modales y de lo que es educado o maleducado en distintos lugares.",
+     "p": [
+      "It's polite to + verbo: It's polite to hold the door open. It's considered rude to interrupt someone.",
+      "Lo que se espera: You're expected to take your shoes off. You're not supposed to eat on the metro.",
+      "Gerundio como sujeto: Queuing is very important in the UK. Pointing at people is impolite in many places."
+     ],
+     "q": "¿Qué se considera educado en tu país que podría sorprender a un visitante?",
+     "c": "Escribe una mini guía para visitantes: dos cosas educadas y dos que se consideran de mala educación en tu país."
+    },
+    "fr": {
+     "t": "Etiquette and good manners",
+     "g": "Parle des bonnes manières et de ce qui est poli ou impoli selon les pays.",
+     "p": [
+      "It's polite to + verbe : It's polite to hold the door open. It's considered rude to interrupt someone.",
+      "Ce qu'on attend de toi : You're expected to take your shoes off. You're not supposed to eat on the metro.",
+      "Le gérondif comme sujet : Queuing is very important in the UK. Pointing at people is impolite in many places."
+     ],
+     "q": "Qu'est-ce qui est considéré comme poli dans ton pays et pourrait surprendre un visiteur ?",
+     "c": "Écris un mini guide pour un visiteur : deux choses polies et deux choses jugées impolies dans ton pays."
+    },
+    "it": {
+     "t": "Etiquette and good manners",
+     "g": "Parla delle buone maniere e di cosa è educato o maleducato nei vari paesi.",
+     "p": [
+      "It's polite to + verbo: It's polite to hold the door open. It's considered rude to interrupt someone.",
+      "Ciò che ci si aspetta: You're expected to take your shoes off. You're not supposed to eat on the metro.",
+      "Il gerundio come soggetto: Queuing is very important in the UK. Pointing at people is impolite in many places."
+     ],
+     "q": "Cosa è considerato educato nel tuo paese e potrebbe sorprendere un visitatore?",
+     "c": "Scrivi una mini guida per un turista: due cose educate e due considerate maleducate nel tuo paese."
+    },
+    "pt": {
+     "t": "Etiquette and good manners",
+     "g": "Fala de boas maneiras e do que é educado ou mal-educado em diferentes sítios.",
+     "p": [
+      "It's polite to + verbo: It's polite to hold the door open. It's considered rude to interrupt someone.",
+      "O que se espera: You're expected to take your shoes off. You're not supposed to eat on the metro.",
+      "Gerúndio como sujeito: Queuing is very important in the UK. Pointing at people is impolite in many places."
+     ],
+     "q": "O que é considerado educado no teu país e poderia surpreender um visitante?",
+     "c": "Escreve um mini guia para um visitante: duas coisas educadas e duas consideradas falta de educação no teu país."
+    },
+    "pt_BR": {
+     "t": "Etiquette and good manners",
+     "g": "Fale de boas maneiras e do que é educado ou mal-educado em lugares diferentes.",
+     "p": [
+      "It's polite to + verbo: It's polite to hold the door open. It's considered rude to interrupt someone.",
+      "O que se espera: You're expected to take your shoes off. You're not supposed to eat on the metro.",
+      "Gerúndio como sujeito: Queuing is very important in the UK. Pointing at people is impolite in many places."
+     ],
+     "q": "O que é considerado educado no seu país e poderia surpreender um visitante?",
+     "c": "Escreva um mini guia para um visitante: duas coisas educadas e duas consideradas falta de educação no seu país."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "polite",
+      "ex": "It's polite to say thank you to the bus driver."
+     },
+     {
+      "w": "rude",
+      "ex": "It's considered rude to talk loudly on your phone on the train."
+     },
+     {
+      "w": "it's customary to",
+      "ex": "It's customary to bring a small gift when you visit."
+     },
+     {
+      "w": "you're expected to",
+      "ex": "You're expected to queue patiently at the counter."
+     },
+     {
+      "w": "frowned upon",
+      "ex": "Being late for a dinner party is frowned upon here."
+     },
+     {
+      "w": "excuse me",
+      "ex": "Excuse me, is this seat free?"
+     }
+    ],
+    "gram": "It's polite/rude to + verb; It's considered rude to + verb; You're (not) expected to + verb; gerund as subject: Queuing is important."
+   }
+  },
+  {
+   "d": 245,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Food culture and table manners",
+     "g": "Talk about eating habits, mealtimes and table manners around the world.",
+     "p": [
+      "Mealtimes differ: In Spain, dinner is often at ten. In the UK, many people eat at six or seven.",
+      "Sharing and tipping: It's common to share dishes in China. Tipping is usual in the USA but less so in Japan.",
+      "Useful table phrases: Help yourself. Could you pass the salt? This is delicious. Could we have the bill, please?"
+     ],
+     "q": "What are mealtimes and table manners like in your home? Is anything different from other countries?",
+     "c": "Write four sentences about food culture in your country with it's common to, usually and people tend to."
+    },
+    "de": {
+     "t": "Food culture and table manners",
+     "g": "Du sprichst über Essgewohnheiten, Essenszeiten und Tischmanieren in aller Welt.",
+     "p": [
+      "Essenszeiten sind verschieden: In Spain, dinner is often at ten. In the UK, many people eat at six or seven.",
+      "Teilen und Trinkgeld: It's common to share dishes in China. Tipping is usual in the USA but less so in Japan.",
+      "Nützliche Sätze am Tisch: Help yourself. Could you pass the salt? This is delicious. Could we have the bill, please?"
+     ],
+     "q": "Wie sehen Essenszeiten und Tischmanieren bei dir zu Hause aus? Ist etwas anders als in anderen Ländern?",
+     "c": "Schreib vier Sätze über die Esskultur in deinem Land mit it's common to, usually und people tend to."
+    },
+    "es": {
+     "t": "Food culture and table manners",
+     "g": "Habla de hábitos alimentarios, horarios de comida y modales en la mesa en el mundo.",
+     "p": [
+      "Los horarios cambian: In Spain, dinner is often at ten. In the UK, many people eat at six or seven.",
+      "Compartir y propinas: It's common to share dishes in China. Tipping is usual in the USA but less so in Japan.",
+      "Frases útiles en la mesa: Help yourself. Could you pass the salt? This is delicious. Could we have the bill, please?"
+     ],
+     "q": "¿Cómo son los horarios y los modales en la mesa en tu casa? ¿Hay algo distinto a otros países?",
+     "c": "Escribe cuatro frases sobre la cultura gastronómica de tu país con it's common to, usually y people tend to."
+    },
+    "fr": {
+     "t": "Food culture and table manners",
+     "g": "Parle des habitudes alimentaires, des heures de repas et des manières de table dans le monde.",
+     "p": [
+      "Les horaires varient : In Spain, dinner is often at ten. In the UK, many people eat at six or seven.",
+      "Partage et pourboire : It's common to share dishes in China. Tipping is usual in the USA but less so in Japan.",
+      "Phrases utiles à table : Help yourself. Could you pass the salt? This is delicious. Could we have the bill, please?"
+     ],
+     "q": "Comment sont les heures de repas et les manières de table chez toi ? Qu'est-ce qui diffère d'autres pays ?",
+     "c": "Écris quatre phrases sur la culture culinaire de ton pays avec it's common to, usually et people tend to."
+    },
+    "it": {
+     "t": "Food culture and table manners",
+     "g": "Parla di abitudini alimentari, orari dei pasti e galateo a tavola nel mondo.",
+     "p": [
+      "Gli orari cambiano: In Spain, dinner is often at ten. In the UK, many people eat at six or seven.",
+      "Condividere e mance: It's common to share dishes in China. Tipping is usual in the USA but less so in Japan.",
+      "Frasi utili a tavola: Help yourself. Could you pass the salt? This is delicious. Could we have the bill, please?"
+     ],
+     "q": "Come sono gli orari dei pasti e le buone maniere a tavola a casa tua? Cosa cambia rispetto ad altri paesi?",
+     "c": "Scrivi quattro frasi sulla cultura del cibo nel tuo paese con it's common to, usually e people tend to."
+    },
+    "pt": {
+     "t": "Food culture and table manners",
+     "g": "Fala de hábitos alimentares, horários das refeições e maneiras à mesa pelo mundo.",
+     "p": [
+      "Os horários variam: In Spain, dinner is often at ten. In the UK, many people eat at six or seven.",
+      "Partilhar e gorjetas: It's common to share dishes in China. Tipping is usual in the USA but less so in Japan.",
+      "Frases úteis à mesa: Help yourself. Could you pass the salt? This is delicious. Could we have the bill, please?"
+     ],
+     "q": "Como são os horários e as maneiras à mesa em tua casa? Há algo diferente de outros países?",
+     "c": "Escreve quatro frases sobre a cultura gastronómica do teu país com it's common to, usually e people tend to."
+    },
+    "pt_BR": {
+     "t": "Food culture and table manners",
+     "g": "Fale de hábitos alimentares, horários das refeições e modos à mesa pelo mundo.",
+     "p": [
+      "Os horários mudam: In Spain, dinner is often at ten. In the UK, many people eat at six or seven.",
+      "Dividir pratos e gorjeta: It's common to share dishes in China. Tipping is usual in the USA but less so in Japan.",
+      "Frases úteis à mesa: Help yourself. Could you pass the salt? This is delicious. Could we have the bill, please?"
+     ],
+     "q": "Como são os horários e os modos à mesa na sua casa? Tem algo diferente de outros países?",
+     "c": "Escreva quatro frases sobre a cultura gastronômica do seu país com it's common to, usually e people tend to."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "share dishes",
+      "ex": "In many Asian countries, people share dishes at the table."
+     },
+     {
+      "w": "tip",
+      "ex": "In the USA, it's normal to tip around fifteen to twenty percent."
+     },
+     {
+      "w": "chopsticks",
+      "ex": "Never leave your chopsticks standing up in the rice."
+     },
+     {
+      "w": "have a big lunch",
+      "ex": "In Spain, many people have a big lunch and a light dinner."
+     },
+     {
+      "w": "help yourself",
+      "ex": "Please, help yourself to some more salad."
+     },
+     {
+      "w": "the bill",
+      "ex": "Could we have the bill, please?"
+     }
+    ],
+    "gram": "Habits with usually, tend to and used to; it's normal/common to + verb: It's common to share dishes. People usually eat late."
+   }
+  },
+  {
+   "d": 246,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Customs: gifts and greetings",
+     "g": "Describe customs for greetings and gifts in different cultures.",
+     "p": [
+      "Greetings vary: people shake hands, bow, hug or give one, two or even three kisses on the cheek.",
+      "Gift customs: in some places you open a gift right away, in others you wait. Wrapping can matter too.",
+      "Use when-clauses: When people meet for the first time, they usually shake hands."
+     ],
+     "q": "How do people greet each other in your country? Is it different with friends, family and colleagues?",
+     "c": "Explain to a visitor how to greet people and give a gift in your country in four sentences with when."
+    },
+    "de": {
+     "t": "Customs: gifts and greetings",
+     "g": "Du beschreibst Begrüßungs- und Geschenkbräuche in verschiedenen Kulturen.",
+     "p": [
+      "Begrüßungen sind verschieden: Händeschütteln, Verbeugen, Umarmen oder ein bis drei Wangenküsse.",
+      "Geschenke: Mancherorts öffnet man sie sofort, anderswo später. Auch die Verpackung kann wichtig sein.",
+      "Benutze when-Sätze: When people meet for the first time, they usually shake hands."
+     ],
+     "q": "Wie begrüßt man sich in deinem Land? Ist es bei Freunden, Familie und Kollegen unterschiedlich?",
+     "c": "Erklär einem Gast in vier Sätzen mit when, wie man sich in deinem Land begrüßt und etwas schenkt."
+    },
+    "es": {
+     "t": "Customs: gifts and greetings",
+     "g": "Describe costumbres de saludo y de regalos en distintas culturas.",
+     "p": [
+      "Los saludos varían: dar la mano, hacer una reverencia, abrazar o dar uno, dos o hasta tres besos.",
+      "Regalos: en algunos sitios se abren al momento y en otros se espera. El envoltorio también puede importar.",
+      "Usa oraciones con when: When people meet for the first time, they usually shake hands."
+     ],
+     "q": "¿Cómo se saluda la gente en tu país? ¿Es distinto con amigos, familia y compañeros de trabajo?",
+     "c": "Explica a un visitante en cuatro frases con when cómo saludar y dar un regalo en tu país."
+    },
+    "fr": {
+     "t": "Customs: gifts and greetings",
+     "g": "Décris les coutumes de salutation et de cadeaux dans différentes cultures.",
+     "p": [
+      "Les salutations varient : poignée de main, révérence, accolade, ou une, deux, voire trois bises.",
+      "Les cadeaux : ici on les ouvre tout de suite, ailleurs on attend. L'emballage peut aussi compter.",
+      "Utilise des phrases avec when : When people meet for the first time, they usually shake hands."
+     ],
+     "q": "Comment se salue-t-on dans ton pays ? Est-ce différent entre amis, en famille et entre collègues ?",
+     "c": "Explique à un visiteur en quatre phrases avec when comment saluer et offrir un cadeau dans ton pays."
+    },
+    "it": {
+     "t": "Customs: gifts and greetings",
+     "g": "Descrivi le usanze per salutare e fare regali in culture diverse.",
+     "p": [
+      "I saluti cambiano: stretta di mano, inchino, abbraccio o uno, due e persino tre baci sulla guancia.",
+      "I regali: in alcuni posti si aprono subito, in altri si aspetta. Anche la confezione può contare.",
+      "Usa frasi con when: When people meet for the first time, they usually shake hands."
+     ],
+     "q": "Come ci si saluta nel tuo paese? È diverso tra amici, in famiglia e con i colleghi?",
+     "c": "Spiega a un visitatore in quattro frasi con when come salutare e fare un regalo nel tuo paese."
+    },
+    "pt": {
+     "t": "Customs: gifts and greetings",
+     "g": "Descreve costumes de cumprimentos e de presentes em diferentes culturas.",
+     "p": [
+      "Os cumprimentos variam: aperto de mão, vénia, abraço ou um, dois e até três beijinhos.",
+      "Presentes: nalguns sítios abrem-se logo, noutros espera-se. O embrulho também pode contar.",
+      "Usa frases com when: When people meet for the first time, they usually shake hands."
+     ],
+     "q": "Como é que as pessoas se cumprimentam no teu país? É diferente entre amigos, família e colegas?",
+     "c": "Explica a um visitante, em quatro frases com when, como cumprimentar e oferecer um presente no teu país."
+    },
+    "pt_BR": {
+     "t": "Customs: gifts and greetings",
+     "g": "Descreva costumes de cumprimento e de presentes em diferentes culturas.",
+     "p": [
+      "Os cumprimentos variam: aperto de mão, reverência, abraço ou um, dois e até três beijinhos.",
+      "Presentes: em alguns lugares se abre na hora, em outros se espera. A embalagem também pode importar.",
+      "Use frases com when: When people meet for the first time, they usually shake hands."
+     ],
+     "q": "Como as pessoas se cumprimentam no seu país? É diferente entre amigos, família e colegas?",
+     "c": "Explique a um visitante, em quatro frases com when, como cumprimentar e dar um presente no seu país."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "shake hands",
+      "ex": "In business, people usually shake hands when they meet."
+     },
+     {
+      "w": "bow",
+      "ex": "In Japan, people often bow to say hello and thank you."
+     },
+     {
+      "w": "kiss on the cheek",
+      "ex": "In France, friends greet each other with a kiss on the cheek."
+     },
+     {
+      "w": "wrap a present",
+      "ex": "She wrapped the present in bright paper."
+     },
+     {
+      "w": "open a gift",
+      "ex": "In some countries, people don't open a gift in front of the giver."
+     },
+     {
+      "w": "hug",
+      "ex": "My family always hugs when we say goodbye."
+     }
+    ],
+    "gram": "Customs with when-clauses and present simple: When people meet, they shake hands. When you receive a gift, you thank the person."
+   }
+  },
+  {
+   "d": 247,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Living abroad",
+     "g": "Talk about moving abroad: settling in, culture shock and making new friends.",
+     "p": [
+      "Feelings: At first I felt homesick. I missed my family. Culture shock is completely normal.",
+      "Progress with the present perfect: I've lived here for a year. I've made new friends. I haven't found a flat yet.",
+      "Tips: join a club, learn a few local phrases, say yes to invitations and stay in touch with home."
+     ],
+     "q": "Would you like to live abroad one day? Where, and what do you think would be the hardest part?",
+     "c": "Write four tips for someone moving abroad, using settle in, homesick, culture shock and make new friends."
+    },
+    "de": {
+     "t": "Living abroad",
+     "g": "Du sprichst über das Leben im Ausland: Eingewöhnung, Kulturschock und neue Freundschaften.",
+     "p": [
+      "Gefühle: At first I felt homesick. I missed my family. Culture shock is completely normal.",
+      "Fortschritt im present perfect: I've lived here for a year. I've made new friends. I haven't found a flat yet.",
+      "Tipps: Tritt einem Verein bei, lerne ein paar lokale Sätze, nimm Einladungen an und halte Kontakt nach Hause."
+     ],
+     "q": "Würdest du gern einmal im Ausland leben? Wo, und was wäre wohl am schwierigsten?",
+     "c": "Schreib vier Tipps für jemanden, der ins Ausland zieht, mit settle in, homesick, culture shock und make new friends."
+    },
+    "es": {
+     "t": "Living abroad",
+     "g": "Habla de vivir en el extranjero: adaptarse, el choque cultural y hacer nuevos amigos.",
+     "p": [
+      "Sentimientos: At first I felt homesick. I missed my family. Culture shock is completely normal.",
+      "Progresos con el present perfect: I've lived here for a year. I've made new friends. I haven't found a flat yet.",
+      "Consejos: apúntate a un club, aprende frases locales, acepta invitaciones y mantén el contacto con casa."
+     ],
+     "q": "¿Te gustaría vivir en el extranjero algún día? ¿Dónde, y qué crees que sería lo más difícil?",
+     "c": "Escribe cuatro consejos para alguien que se muda al extranjero con settle in, homesick, culture shock y make new friends."
+    },
+    "fr": {
+     "t": "Living abroad",
+     "g": "Parle de la vie à l'étranger : s'installer, le choc culturel et se faire de nouveaux amis.",
+     "p": [
+      "Les émotions : At first I felt homesick. I missed my family. Culture shock is completely normal.",
+      "Les progrès au present perfect : I've lived here for a year. I've made new friends. I haven't found a flat yet.",
+      "Conseils : rejoins un club, apprends quelques phrases locales, accepte les invitations et garde le lien avec chez toi."
+     ],
+     "q": "Aimerais-tu vivre à l'étranger un jour ? Où, et qu'est-ce qui serait le plus difficile selon toi ?",
+     "c": "Écris quatre conseils pour quelqu'un qui part vivre à l'étranger avec settle in, homesick, culture shock et make new friends."
+    },
+    "it": {
+     "t": "Living abroad",
+     "g": "Parla di vivere all'estero: ambientarsi, lo shock culturale e farsi nuovi amici.",
+     "p": [
+      "Le emozioni: At first I felt homesick. I missed my family. Culture shock is completely normal.",
+      "I progressi con il present perfect: I've lived here for a year. I've made new friends. I haven't found a flat yet.",
+      "Consigli: iscriviti a un club, impara qualche frase locale, accetta gli inviti e resta in contatto con casa."
+     ],
+     "q": "Ti piacerebbe vivere all'estero un giorno? Dove, e quale pensi che sarebbe la parte più difficile?",
+     "c": "Scrivi quattro consigli per chi si trasferisce all'estero con settle in, homesick, culture shock e make new friends."
+    },
+    "pt": {
+     "t": "Living abroad",
+     "g": "Fala de viver no estrangeiro: adaptar-se, o choque cultural e fazer novos amigos.",
+     "p": [
+      "Sentimentos: At first I felt homesick. I missed my family. Culture shock is completely normal.",
+      "Progressos com o present perfect: I've lived here for a year. I've made new friends. I haven't found a flat yet.",
+      "Dicas: entra num clube, aprende algumas frases locais, aceita convites e mantém o contacto com casa."
+     ],
+     "q": "Gostavas de viver no estrangeiro um dia? Onde, e o que achas que seria mais difícil?",
+     "c": "Escreve quatro dicas para quem se muda para o estrangeiro com settle in, homesick, culture shock e make new friends."
+    },
+    "pt_BR": {
+     "t": "Living abroad",
+     "g": "Fale sobre morar no exterior: se adaptar, o choque cultural e fazer novos amigos.",
+     "p": [
+      "Sentimentos: At first I felt homesick. I missed my family. Culture shock is completely normal.",
+      "Progresso com o present perfect: I've lived here for a year. I've made new friends. I haven't found a flat yet.",
+      "Dicas: entre num clube, aprenda frases locais, aceite convites e mantenha contato com a sua casa."
+     ],
+     "q": "Você gostaria de morar no exterior um dia? Onde, e o que você acha que seria mais difícil?",
+     "c": "Escreva quatro dicas para quem vai morar fora com settle in, homesick, culture shock e make new friends."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "settle in",
+      "ex": "It took me a few months to settle in after the move."
+     },
+     {
+      "w": "homesick",
+      "ex": "I felt homesick during my first winter abroad."
+     },
+     {
+      "w": "culture shock",
+      "ex": "Culture shock is normal when you move to a new country."
+     },
+     {
+      "w": "make new friends",
+      "ex": "Joining a club helped me make new friends."
+     },
+     {
+      "w": "get used to",
+      "ex": "I'm slowly getting used to the local food."
+     },
+     {
+      "w": "miss",
+      "ex": "I really miss my mum's cooking."
+     }
+    ],
+    "gram": "Present perfect for life abroad up to now: I've lived here for two years. I've made some good friends. I haven't learned the language yet."
+   }
+  },
+  {
+   "d": 248,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Learning languages: tips that work",
+     "g": "Share language-learning strategies that really work.",
+     "p": [
+      "Shadowing: listen and repeat right after the speaker. Flashcards: review a few words every day.",
+      "Language exchange: talk with a partner, half in English, half in their language. Try thinking in English too.",
+      "Advice patterns: Try watching films with subtitles. It helps to read aloud. The best way to improve is to practise daily."
+     ],
+     "q": "Which learning strategy has helped you the most so far? Which one would you like to try next?",
+     "c": "Try one new strategy today, like five minutes of shadowing, and tell me in three sentences how it went."
+    },
+    "de": {
+     "t": "Learning languages: tips that work",
+     "g": "Du teilst Strategien zum Sprachenlernen, die wirklich funktionieren.",
+     "p": [
+      "Shadowing: hören und direkt nachsprechen. Flashcards: jeden Tag ein paar Wörter wiederholen.",
+      "Tandem: mit einem Partner sprechen, halb Englisch, halb seine Sprache. Versuch auch, auf Englisch zu denken.",
+      "Ratschläge: Try watching films with subtitles. It helps to read aloud. The best way to improve is to practise daily."
+     ],
+     "q": "Welche Lernstrategie hat dir bisher am meisten geholfen? Welche möchtest du als Nächstes ausprobieren?",
+     "c": "Probier heute eine neue Strategie aus, z. B. fünf Minuten Shadowing, und erzähl mir in drei Sätzen, wie es war."
+    },
+    "es": {
+     "t": "Learning languages: tips that work",
+     "g": "Comparte estrategias para aprender idiomas que funcionan de verdad.",
+     "p": [
+      "Shadowing: escuchar y repetir justo después del hablante. Flashcards: repasar unas palabras cada día.",
+      "Intercambio de idiomas: hablar con alguien mitad en inglés, mitad en su idioma. Prueba también a pensar en inglés.",
+      "Consejos: Try watching films with subtitles. It helps to read aloud. The best way to improve is to practise daily."
+     ],
+     "q": "¿Qué estrategia te ha ayudado más hasta ahora? ¿Cuál te gustaría probar después?",
+     "c": "Prueba hoy una estrategia nueva, como cinco minutos de shadowing, y cuéntame en tres frases cómo te fue."
+    },
+    "fr": {
+     "t": "Learning languages: tips that work",
+     "g": "Partage des stratégies d'apprentissage des langues qui marchent vraiment.",
+     "p": [
+      "Shadowing : écouter et répéter juste après la personne. Flashcards : réviser quelques mots chaque jour.",
+      "Échange linguistique : parler moitié en anglais, moitié dans la langue de l'autre. Essaie aussi de penser en anglais.",
+      "Conseils : Try watching films with subtitles. It helps to read aloud. The best way to improve is to practise daily."
+     ],
+     "q": "Quelle stratégie t'a le plus aidé jusqu'ici ? Laquelle aimerais-tu essayer ensuite ?",
+     "c": "Essaie une nouvelle stratégie aujourd'hui, par exemple cinq minutes de shadowing, et raconte-moi en trois phrases."
+    },
+    "it": {
+     "t": "Learning languages: tips that work",
+     "g": "Condividi strategie per imparare le lingue che funzionano davvero.",
+     "p": [
+      "Shadowing: ascoltare e ripetere subito dopo chi parla. Flashcards: ripassare qualche parola ogni giorno.",
+      "Scambio linguistico: parlare metà in inglese e metà nella lingua dell'altro. Prova anche a pensare in inglese.",
+      "Consigli: Try watching films with subtitles. It helps to read aloud. The best way to improve is to practise daily."
+     ],
+     "q": "Quale strategia ti ha aiutato di più finora? Quale vorresti provare dopo?",
+     "c": "Prova oggi una strategia nuova, come cinque minuti di shadowing, e raccontami in tre frasi com'è andata."
+    },
+    "pt": {
+     "t": "Learning languages: tips that work",
+     "g": "Partilha estratégias para aprender línguas que funcionam mesmo.",
+     "p": [
+      "Shadowing: ouvir e repetir logo a seguir a quem fala. Flashcards: rever algumas palavras todos os dias.",
+      "Intercâmbio de línguas: falar metade em inglês, metade na língua do outro. Experimenta também pensar em inglês.",
+      "Conselhos: Try watching films with subtitles. It helps to read aloud. The best way to improve is to practise daily."
+     ],
+     "q": "Que estratégia te ajudou mais até agora? Qual gostavas de experimentar a seguir?",
+     "c": "Experimenta hoje uma estratégia nova, como cinco minutos de shadowing, e conta-me em três frases como correu."
+    },
+    "pt_BR": {
+     "t": "Learning languages: tips that work",
+     "g": "Compartilhe estratégias para aprender idiomas que funcionam de verdade.",
+     "p": [
+      "Shadowing: ouvir e repetir logo depois de quem fala. Flashcards: revisar algumas palavras todo dia.",
+      "Intercâmbio de idiomas: conversar metade em inglês, metade na língua do outro. Tente também pensar em inglês.",
+      "Conselhos: Try watching films with subtitles. It helps to read aloud. The best way to improve is to practise daily."
+     ],
+     "q": "Qual estratégia mais te ajudou até agora? Qual você gostaria de testar em seguida?",
+     "c": "Teste hoje uma estratégia nova, como cinco minutos de shadowing, e me conte em três frases como foi."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "shadowing",
+      "ex": "Shadowing means repeating audio right after the speaker."
+     },
+     {
+      "w": "flashcards",
+      "ex": "I review ten flashcards every morning on the bus."
+     },
+     {
+      "w": "language exchange",
+      "ex": "At the language exchange, we speak English for half an hour."
+     },
+     {
+      "w": "think in English",
+      "ex": "Try to think in English when you plan your day."
+     },
+     {
+      "w": "make mistakes",
+      "ex": "Don't be afraid to make mistakes: that's how you learn."
+     },
+     {
+      "w": "pick up",
+      "ex": "I picked up a lot of slang from watching series."
+     }
+    ],
+    "gram": "Giving advice: Try + -ing (experiment), It helps to + verb, The best way to learn is to + verb: Try shadowing for five minutes."
+   }
+  },
+  {
+   "d": 249,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Education systems",
+     "g": "Compare education systems in different countries.",
+     "p": [
+      "Stages: nursery, primary school, secondary school, then college or university for a degree.",
+      "Key words: compulsory, state school, private school, exams, tuition fees, graduate, scholarship.",
+      "Compare with whereas and while: University is free in some countries, whereas in others tuition fees are high."
+     ],
+     "q": "What was school like in your country? What did you like, and what would you change?",
+     "c": "Write three sentences comparing education in your country with another country, using whereas, while and more than."
+    },
+    "de": {
+     "t": "Education systems",
+     "g": "Du vergleichst Bildungssysteme verschiedener Länder.",
+     "p": [
+      "Stufen: nursery, primary school, secondary school, dann college oder university für einen degree.",
+      "Wichtige Wörter: compulsory, state school, private school, exams, tuition fees, graduate, scholarship.",
+      "Vergleiche mit whereas und while: University is free in some countries, whereas in others tuition fees are high."
+     ],
+     "q": "Wie war die Schule in deinem Land? Was mochtest du, und was würdest du ändern?",
+     "c": "Schreib drei Sätze, die das Schulsystem deines Landes mit einem anderen vergleichen, mit whereas, while und more than."
+    },
+    "es": {
+     "t": "Education systems",
+     "g": "Compara los sistemas educativos de distintos países.",
+     "p": [
+      "Etapas: nursery, primary school, secondary school y luego college o university para sacar un degree.",
+      "Palabras clave: compulsory, state school, private school, exams, tuition fees, graduate, scholarship.",
+      "Compara con whereas y while: University is free in some countries, whereas in others tuition fees are high."
+     ],
+     "q": "¿Cómo era el colegio en tu país? ¿Qué te gustaba y qué cambiarías?",
+     "c": "Escribe tres frases que comparen la educación de tu país con la de otro, con whereas, while y more than."
+    },
+    "fr": {
+     "t": "Education systems",
+     "g": "Compare les systèmes éducatifs de différents pays.",
+     "p": [
+      "Les étapes : nursery, primary school, secondary school, puis college ou university pour un degree.",
+      "Mots clés : compulsory, state school, private school, exams, tuition fees, graduate, scholarship.",
+      "Compare avec whereas et while : University is free in some countries, whereas in others tuition fees are high."
+     ],
+     "q": "Comment était l'école dans ton pays ? Qu'est-ce que tu aimais et que changerais-tu ?",
+     "c": "Écris trois phrases comparant l'éducation de ton pays à celle d'un autre, avec whereas, while et more than."
+    },
+    "it": {
+     "t": "Education systems",
+     "g": "Confronta i sistemi scolastici di paesi diversi.",
+     "p": [
+      "Le fasi: nursery, primary school, secondary school, poi college o university per una degree.",
+      "Parole chiave: compulsory, state school, private school, exams, tuition fees, graduate, scholarship.",
+      "Confronta con whereas e while: University is free in some countries, whereas in others tuition fees are high."
+     ],
+     "q": "Com'era la scuola nel tuo paese? Cosa ti piaceva e cosa cambieresti?",
+     "c": "Scrivi tre frasi che confrontano l'istruzione del tuo paese con quella di un altro, con whereas, while e more than."
+    },
+    "pt": {
+     "t": "Education systems",
+     "g": "Compara os sistemas de ensino de diferentes países.",
+     "p": [
+      "As etapas: nursery, primary school, secondary school e depois college ou university para tirar um degree.",
+      "Palavras-chave: compulsory, state school, private school, exams, tuition fees, graduate, scholarship.",
+      "Compara com whereas e while: University is free in some countries, whereas in others tuition fees are high."
+     ],
+     "q": "Como era a escola no teu país? De que gostavas e o que mudarias?",
+     "c": "Escreve três frases a comparar o ensino do teu país com o de outro, com whereas, while e more than."
+    },
+    "pt_BR": {
+     "t": "Education systems",
+     "g": "Compare os sistemas de ensino de diferentes países.",
+     "p": [
+      "As etapas: nursery, primary school, secondary school e depois college ou university para fazer um degree.",
+      "Palavras-chave: compulsory, state school, private school, exams, tuition fees, graduate, scholarship.",
+      "Compare com whereas e while: University is free in some countries, whereas in others tuition fees are high."
+     ],
+     "q": "Como era a escola no seu país? Do que você gostava e o que mudaria?",
+     "c": "Escreva três frases comparando o ensino do seu país com o de outro, usando whereas, while e more than."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "primary school",
+      "ex": "Children start primary school at around five or six."
+     },
+     {
+      "w": "secondary school",
+      "ex": "Secondary school usually lasts five to seven years."
+     },
+     {
+      "w": "degree",
+      "ex": "She has a degree in engineering."
+     },
+     {
+      "w": "tuition fees",
+      "ex": "Tuition fees are very different from country to country."
+     },
+     {
+      "w": "compulsory",
+      "ex": "School is compulsory until the age of sixteen in many countries."
+     },
+     {
+      "w": "graduate",
+      "ex": "He graduated from university last summer."
+     }
+    ],
+    "gram": "Comparing systems: comparatives and while/whereas: In Finland school starts at seven, whereas in the UK it starts at four or five."
+   }
+  },
+  {
+   "d": 250,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "University and lifelong learning",
+     "g": "Talk about online courses, workshops and learning new skills at any age.",
+     "p": [
+      "Ways to learn: online courses, evening classes, weekend workshops, tutorials, mentors and books.",
+      "Ongoing learning with the present perfect continuous: I've been learning to code for three months.",
+      "Useful verbs: sign up for a course, brush up on your skills, pick up a hobby. It's never too late!"
+     ],
+     "q": "What new skill would you love to learn, and how would you learn it: a course, a workshop or on your own?",
+     "c": "Write three sentences about a skill you've been learning, with for or since, and one you plan to sign up for."
+    },
+    "de": {
+     "t": "University and lifelong learning",
+     "g": "Du sprichst über Onlinekurse, Workshops und neue Fähigkeiten in jedem Alter.",
+     "p": [
+      "Lernwege: online courses, evening classes, weekend workshops, Tutorials, Mentoren und Bücher.",
+      "Laufendes Lernen im present perfect continuous: I've been learning to code for three months.",
+      "Nützliche Verben: sign up for a course, brush up on your skills, pick up a hobby. It's never too late!"
+     ],
+     "q": "Welche neue Fähigkeit würdest du gern lernen, und wie: in einem Kurs, einem Workshop oder allein?",
+     "c": "Schreib drei Sätze über etwas, das du seit einiger Zeit lernst (mit for oder since), und einen Kurs, den du planst."
+    },
+    "es": {
+     "t": "University and lifelong learning",
+     "g": "Habla de cursos online, talleres y de aprender cosas nuevas a cualquier edad.",
+     "p": [
+      "Formas de aprender: online courses, evening classes, weekend workshops, tutoriales, mentores y libros.",
+      "Aprendizaje en curso con el present perfect continuous: I've been learning to code for three months.",
+      "Verbos útiles: sign up for a course, brush up on your skills, pick up a hobby. It's never too late!"
+     ],
+     "q": "¿Qué habilidad nueva te encantaría aprender y cómo: un curso, un taller o por tu cuenta?",
+     "c": "Escribe tres frases sobre algo que llevas tiempo aprendiendo, con for o since, y un curso al que piensas apuntarte."
+    },
+    "fr": {
+     "t": "University and lifelong learning",
+     "g": "Parle des cours en ligne, des ateliers et de l'apprentissage à tout âge.",
+     "p": [
+      "Façons d'apprendre : online courses, evening classes, weekend workshops, tutoriels, mentors et livres.",
+      "Un apprentissage en cours au present perfect continuous : I've been learning to code for three months.",
+      "Verbes utiles : sign up for a course, brush up on your skills, pick up a hobby. It's never too late!"
+     ],
+     "q": "Quelle nouvelle compétence aimerais-tu apprendre, et comment : un cours, un atelier ou seul ?",
+     "c": "Écris trois phrases sur ce que tu apprends depuis un moment, avec for ou since, et un cours auquel tu veux t'inscrire."
+    },
+    "it": {
+     "t": "University and lifelong learning",
+     "g": "Parla di corsi online, workshop e di imparare cose nuove a qualsiasi età.",
+     "p": [
+      "Modi per imparare: online courses, evening classes, weekend workshops, tutorial, mentori e libri.",
+      "Apprendimento in corso con il present perfect continuous: I've been learning to code for three months.",
+      "Verbi utili: sign up for a course, brush up on your skills, pick up a hobby. It's never too late!"
+     ],
+     "q": "Quale nuova abilità ti piacerebbe imparare, e come: un corso, un workshop o da solo?",
+     "c": "Scrivi tre frasi su qualcosa che stai imparando da tempo, con for o since, e un corso a cui vuoi iscriverti."
+    },
+    "pt": {
+     "t": "University and lifelong learning",
+     "g": "Fala de cursos online, workshops e de aprender coisas novas em qualquer idade.",
+     "p": [
+      "Formas de aprender: online courses, evening classes, weekend workshops, tutoriais, mentores e livros.",
+      "Aprendizagem em curso com o present perfect continuous: I've been learning to code for three months.",
+      "Verbos úteis: sign up for a course, brush up on your skills, pick up a hobby. It's never too late!"
+     ],
+     "q": "Que nova competência adoravas aprender, e como: um curso, um workshop ou sozinho?",
+     "c": "Escreve três frases sobre algo que andas a aprender, com for ou since, e um curso em que te queres inscrever."
+    },
+    "pt_BR": {
+     "t": "University and lifelong learning",
+     "g": "Fale sobre cursos online, workshops e aprender coisas novas em qualquer idade.",
+     "p": [
+      "Jeitos de aprender: online courses, evening classes, weekend workshops, tutoriais, mentores e livros.",
+      "Aprendizado em andamento com o present perfect continuous: I've been learning to code for three months.",
+      "Verbos úteis: sign up for a course, brush up on your skills, pick up a hobby. It's never too late!"
+     ],
+     "q": "Que habilidade nova você adoraria aprender, e como: um curso, um workshop ou sozinho?",
+     "c": "Escreva três frases sobre algo que você vem aprendendo, com for ou since, e um curso em que quer se inscrever."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "online course",
+      "ex": "I'm taking an online course in graphic design."
+     },
+     {
+      "w": "workshop",
+      "ex": "We went to a pottery workshop on Saturday."
+     },
+     {
+      "w": "lifelong learning",
+      "ex": "Lifelong learning keeps your mind active."
+     },
+     {
+      "w": "sign up for",
+      "ex": "I've signed up for an evening class in photography."
+     },
+     {
+      "w": "brush up on",
+      "ex": "I need to brush up on my maths before the exam."
+     },
+     {
+      "w": "it's never too late",
+      "ex": "It's never too late to learn to play the piano."
+     }
+    ],
+    "gram": "Present perfect continuous for ongoing learning: I've been learning Spanish for six months. She's been taking guitar lessons since May."
+   }
+  }
+ ]
+}

@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_portuguese",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Olá! First Portuguese greetings",
+     "g": "Greet people in Portuguese and pick the right greeting for the time of day.",
+     "p": [
+      "Olá works at any time and with anyone; it is the safest hello you can learn.",
+      "Bom dia is for the morning, boa tarde for the afternoon and boa noite for the evening, both to arrive and to leave.",
+      "Adeus is a full goodbye; tchau is casual and friendly, used a lot in Brazil and in Portugal among friends."
+     ],
+     "q": "It is 9 p.m. and you walk into a small restaurant in Porto. What do you say to the waiter?",
+     "c": "Greet three people today in Portuguese, even just in your head, choosing the greeting that fits the hour."
+    },
+    "de": {
+     "t": "Olá! Erste Grüße auf Portugiesisch",
+     "g": "Du lernst, auf Portugiesisch zu grüßen und den passenden Gruß für die Tageszeit zu wählen.",
+     "p": [
+      "Olá passt immer und bei allen; es ist das sicherste Hallo, das du lernen kannst.",
+      "Bom dia sagt man morgens, boa tarde nachmittags, boa noite abends, beim Kommen und beim Gehen.",
+      "Adeus ist ein richtiges Lebewohl; tchau ist locker, in Brasilien sehr häufig und in Portugal unter Freunden."
+     ],
+     "q": "Es ist 21 Uhr und du betrittst ein kleines Restaurant in Porto. Was sagst du zum Kellner?",
+     "c": "Grüße heute drei Menschen auf Portugiesisch, notfalls im Kopf, mit dem Gruß, der zur Uhrzeit passt."
+    },
+    "es": {
+     "t": "¡Olá! Primeros saludos en portugués",
+     "g": "Saludar en portugués y elegir el saludo correcto según la hora del día.",
+     "p": [
+      "Olá sirve a cualquier hora y con cualquier persona; es el hola más seguro que puedes aprender.",
+      "Bom dia por la mañana, boa tarde por la tarde y boa noite por la noche, tanto al llegar como al irse.",
+      "Adeus es un adiós completo; tchau es informal y cercano, muy usado en Brasil y entre amigos en Portugal."
+     ],
+     "q": "Son las nueve de la noche y entras en un restaurante pequeño de Oporto. ¿Qué le dices al camarero?",
+     "c": "Saluda hoy a tres personas en portugués, aunque sea mentalmente, con el saludo adecuado a la hora."
+    },
+    "fr": {
+     "t": "Olá ! Premières salutations en portugais",
+     "g": "Saluer en portugais et choisir la bonne formule selon le moment de la journée.",
+     "p": [
+      "Olá marche à toute heure et avec tout le monde ; c'est le bonjour le plus sûr à apprendre.",
+      "Bom dia le matin, boa tarde l'après-midi et boa noite le soir, en arrivant comme en partant.",
+      "Adeus est un vrai au revoir ; tchau est familier, très courant au Brésil et entre amis au Portugal."
+     ],
+     "q": "Il est 21 h et tu entres dans un petit restaurant à Porto. Que dis-tu au serveur ?",
+     "c": "Salue trois personnes en portugais aujourd'hui, même dans ta tête, avec la formule qui convient à l'heure."
+    },
+    "it": {
+     "t": "Olá! I primi saluti in portoghese",
+     "g": "Impari a salutare in portoghese e a scegliere il saluto giusto per l'ora del giorno.",
+     "p": [
+      "Olá va bene a qualsiasi ora e con chiunque; è il ciao più sicuro che puoi imparare.",
+      "Bom dia si dice la mattina, boa tarde il pomeriggio e boa noite la sera, sia arrivando che andando via.",
+      "Adeus è un arrivederci pieno; tchau è informale, molto usato in Brasile e tra amici in Portogallo."
+     ],
+     "q": "Sono le 21 ed entri in un piccolo ristorante a Porto. Cosa dici al cameriere?",
+     "c": "Saluta oggi tre persone in portoghese, anche solo nella tua testa, con il saluto adatto all'ora."
+    },
+    "pt": {
+     "t": "Olá! Os primeiros cumprimentos",
+     "g": "Revê os cumprimentos básicos e repara em como os usarias com alguém que está a aprender.",
+     "p": [
+      "Olá serve a qualquer hora e com qualquer pessoa: é o cumprimento mais seguro para quem começa.",
+      "Bom dia até ao almoço, boa tarde até escurecer e boa noite à noite, tanto à chegada como à saída.",
+      "Adeus é uma despedida completa; tchau é informal, muito brasileiro, mas já comum entre amigos em Portugal."
+     ],
+     "q": "São nove da noite e entras num pequeno restaurante no Porto. Como cumprimentas o empregado?",
+     "c": "Cumprimenta hoje três pessoas com atenção à hora do dia e repara em qual dizes mais vezes."
+    },
+    "pt_BR": {
+     "t": "Olá! Os primeiros cumprimentos",
+     "g": "Revise os cumprimentos básicos e veja como eles soam no português de Portugal.",
+     "p": [
+      "Olá serve a qualquer hora e com qualquer pessoa; em Portugal é mais comum que oi.",
+      "Bom dia, boa tarde e boa noite funcionam como no Brasil, tanto para chegar quanto para ir embora.",
+      "Em Portugal, adeus é uma despedida normal do dia a dia; tchau também se usa, mas entre amigos."
+     ],
+     "q": "São nove da noite e você entra num restaurante pequeno no Porto. O que você diz ao garçom?",
+     "c": "Cumprimente três pessoas hoje e, numa delas, troque o oi por um olá bem português."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "olá",
+      "ex": "Olá, tudo bem?"
+     },
+     {
+      "w": "bom dia",
+      "ex": "Bom dia, senhor Silva!"
+     },
+     {
+      "w": "boa tarde",
+      "ex": "Boa tarde, queria um café."
+     },
+     {
+      "w": "boa noite",
+      "ex": "Boa noite e até amanhã."
+     },
+     {
+      "w": "adeus",
+      "ex": "Adeus, bom fim de semana!"
+     },
+     {
+      "w": "tchau",
+      "ex": "Tchau, até logo!"
+     }
+    ],
+    "gram": "Bom dia até ao almoço, boa tarde até escurecer e boa noite à noite, tanto para chegar como para sair."
+   }
+  },
+  {
+   "d": 2,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "The Portuguese alphabet",
+     "g": "Learn the 26 letters and spell your name aloud in Portuguese.",
+     "p": [
+      "Portuguese uses 26 letters; k, w and y appear mostly in foreign words like quilo or whisky.",
+      "The letter h is silent at the start of words: hotel sounds like otel and hoje like oje.",
+      "To spell, say the letter names: Ana is a, ene, a. Ask Como se escreve? to check spelling."
+     ],
+     "q": "How would you spell your first name letter by letter in Portuguese?",
+     "c": "Spell your name and the name of your city aloud using the Portuguese letter names."
+    },
+    "de": {
+     "t": "Das portugiesische Alphabet",
+     "g": "Du lernst die 26 Buchstaben und buchstabierst deinen Namen laut auf Portugiesisch.",
+     "p": [
+      "Portugiesisch hat 26 Buchstaben; k, w und y kommen fast nur in Fremdwörtern vor.",
+      "Das h am Wortanfang ist stumm: hotel klingt wie otel und hoje wie oje.",
+      "Zum Buchstabieren sagst du die Namen: Ana ist a, ene, a. Mit Como se escreve? fragst du nach der Schreibweise."
+     ],
+     "q": "Wie buchstabierst du deinen Vornamen auf Portugiesisch?",
+     "c": "Buchstabiere heute deinen Namen und den deiner Stadt laut mit den portugiesischen Buchstabennamen."
+    },
+    "es": {
+     "t": "El alfabeto portugués",
+     "g": "Aprender las 26 letras y deletrear tu nombre en voz alta en portugués.",
+     "p": [
+      "El portugués usa 26 letras; la k, la w y la y aparecen sobre todo en palabras extranjeras.",
+      "La h inicial es muda, como en español: hotel suena otel y hoje suena oje.",
+      "Para deletrear di el nombre de cada letra: Ana es a, ene, a. Pregunta Como se escreve? para comprobar."
+     ],
+     "q": "¿Cómo deletrearías tu nombre letra por letra en portugués?",
+     "c": "Deletrea en voz alta tu nombre y el de tu ciudad con los nombres portugueses de las letras."
+    },
+    "fr": {
+     "t": "L'alphabet portugais",
+     "g": "Apprendre les 26 lettres et épeler ton prénom à voix haute en portugais.",
+     "p": [
+      "Le portugais compte 26 lettres ; k, w et y apparaissent surtout dans des mots étrangers.",
+      "Le h initial est muet, comme en français : hotel se dit otel et hoje se dit oje.",
+      "Pour épeler, dis le nom des lettres : Ana, c'est a, ene, a. Demande Como se escreve? pour vérifier."
+     ],
+     "q": "Comment épellerais-tu ton prénom lettre par lettre en portugais ?",
+     "c": "Épelle à voix haute ton prénom et le nom de ta ville avec les noms portugais des lettres."
+    },
+    "it": {
+     "t": "L'alfabeto portoghese",
+     "g": "Impari le 26 lettere e fai lo spelling del tuo nome ad alta voce in portoghese.",
+     "p": [
+      "Il portoghese usa 26 lettere; k, w e y compaiono soprattutto nelle parole straniere.",
+      "La h iniziale è muta, come in italiano: hotel si legge otel e hoje si legge oje.",
+      "Per fare lo spelling di' il nome delle lettere: Ana è a, ene, a. Chiedi Como se escreve? per controllare."
+     ],
+     "q": "Come faresti lo spelling del tuo nome lettera per lettera in portoghese?",
+     "c": "Fai ad alta voce lo spelling del tuo nome e della tua città con i nomi portoghesi delle lettere."
+    },
+    "pt": {
+     "t": "O alfabeto português",
+     "g": "Revê o nome das 26 letras e pratica soletrar devagar, como farias para um estrangeiro.",
+     "p": [
+      "Desde o Acordo Ortográfico, o k, o w e o y fazem parte do alfabeto, sobretudo em palavras estrangeiras.",
+      "O h inicial não se lê: hotel e hoje começam pelo som da vogal.",
+      "Para soletrar diz o nome das letras; Como se escreve? é a pergunta mais útil ao telefone."
+     ],
+     "q": "Qual é a letra do teu nome que os estrangeiros pronunciam pior?",
+     "c": "Soletra o teu nome completo em voz alta, devagar, como se estivesses ao telefone com um balcão de hotel."
+    },
+    "pt_BR": {
+     "t": "O alfabeto português",
+     "g": "Revise o nome das 26 letras e aprenda o jeito português de soletrar.",
+     "p": [
+      "Em Portugal o g costuma ser guê e o k é capa; no Brasil é comum ouvir gê e cá.",
+      "O h inicial não se pronuncia em lugar nenhum: hotel e hoje começam pelo som da vogal.",
+      "Em Portugal o sobrenome se chama apelido: Qual é o seu apelido? pede o seu sobrenome."
+     ],
+     "q": "Como você soletraria o seu sobrenome para um atendente em Lisboa?",
+     "c": "Soletre seu nome completo em voz alta usando os nomes das letras como em Portugal."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "o alfabeto",
+      "ex": "O alfabeto português tem 26 letras."
+     },
+     {
+      "w": "a letra",
+      "ex": "Qual é a primeira letra do teu nome?"
+     },
+     {
+      "w": "soletrar",
+      "ex": "Podes soletrar o teu apelido?"
+     },
+     {
+      "w": "como se escreve?",
+      "ex": "Como se escreve o seu nome?"
+     },
+     {
+      "w": "o apelido",
+      "ex": "O meu apelido é Ferreira."
+     },
+     {
+      "w": "maiúscula",
+      "ex": "Os nomes começam com letra maiúscula."
+     }
+    ],
+    "gram": "As letras têm nome: a, bê, cê, dê, é, efe, guê, agá, i, jota, capa, ele, eme... e o h não se pronuncia."
+   }
+  },
+  {
+   "d": 3,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Vowels: open, closed and nasal",
+     "g": "Hear and say the difference between open, closed and nasal vowels in Portuguese.",
+     "p": [
+      "The acute accent opens a vowel: café, avó. The circumflex closes it: você, avô.",
+      "Avó (grandmother) and avô (grandfather) differ only in that open or closed o, so listen carefully.",
+      "The tilde makes a vowel nasal, said partly through the nose: irmã, põe."
+     ],
+     "q": "Can you say avó and avô so that a friend hears which one you mean?",
+     "c": "Find three Portuguese words with é, ê or ã today and say each one aloud five times."
+    },
+    "de": {
+     "t": "Vokale: offen, geschlossen, nasal",
+     "g": "Du hörst und sprichst den Unterschied zwischen offenen, geschlossenen und nasalen Vokalen.",
+     "p": [
+      "Der Akut öffnet den Vokal: café, avó. Der Zirkumflex schließt ihn: você, avô.",
+      "Avó (Oma) und avô (Opa) unterscheiden sich nur durch das offene oder geschlossene o. Gut hinhören!",
+      "Die Tilde macht den Vokal nasal, teils durch die Nase gesprochen: irmã, põe."
+     ],
+     "q": "Kannst du avó und avô so sagen, dass man hört, wen du meinst?",
+     "c": "Such dir heute drei Wörter mit é, ê oder ã und sprich jedes fünfmal laut."
+    },
+    "es": {
+     "t": "Vocales: abiertas, cerradas y nasales",
+     "g": "Oír y pronunciar la diferencia entre vocales abiertas, cerradas y nasales.",
+     "p": [
+      "El acento agudo abre la vocal: café, avó. El circunflejo la cierra: você, avô.",
+      "Avó (abuela) y avô (abuelo) solo se distinguen por esa o abierta o cerrada; escucha bien.",
+      "La tilde ~ hace la vocal nasal, dicha en parte por la nariz: irmã, põe. Es un sonido que el español no tiene."
+     ],
+     "q": "¿Puedes decir avó y avô de forma que un amigo sepa a quién te refieres?",
+     "c": "Busca hoy tres palabras con é, ê o ã y repite cada una cinco veces en voz alta."
+    },
+    "fr": {
+     "t": "Voyelles ouvertes, fermées et nasales",
+     "g": "Entendre et prononcer la différence entre voyelles ouvertes, fermées et nasales.",
+     "p": [
+      "L'accent aigu ouvre la voyelle : café, avó. Le circonflexe la ferme : você, avô.",
+      "Avó (grand-mère) et avô (grand-père) ne diffèrent que par ce o ouvert ou fermé : écoute bien.",
+      "Le tilde rend la voyelle nasale, un peu comme dans « an » : irmã, põe."
+     ],
+     "q": "Peux-tu dire avó et avô pour qu'un ami entende de qui tu parles ?",
+     "c": "Trouve aujourd'hui trois mots avec é, ê ou ã et répète chacun cinq fois à voix haute."
+    },
+    "it": {
+     "t": "Vocali aperte, chiuse e nasali",
+     "g": "Senti e pronuncia la differenza tra vocali aperte, chiuse e nasali in portoghese.",
+     "p": [
+      "L'accento acuto apre la vocale: café, avó. Il circonflesso la chiude: você, avô.",
+      "Avó (nonna) e avô (nonno) cambiano solo per la o aperta o chiusa, come in italiano pèsca e pésca.",
+      "La tilde rende la vocale nasale, detta in parte con il naso: irmã, põe."
+     ],
+     "q": "Riesci a dire avó e avô in modo che un amico capisca di chi parli?",
+     "c": "Trova oggi tre parole con é, ê o ã e ripeti ognuna cinque volte ad alta voce."
+    },
+    "pt": {
+     "t": "Vogais abertas, fechadas e nasais",
+     "g": "Revê como os acentos mostram vogais abertas, fechadas e nasais e como explicá-lo a um estrangeiro.",
+     "p": [
+      "O acento agudo abre a vogal (café, avó) e o circunflexo fecha-a (você, avô).",
+      "Avó e avô são o par perfeito para mostrar a diferença a quem está a aprender.",
+      "Em Portugal as vogais átonas quase desaparecem: telefone soa a tlfone, o que confunde muitos estrangeiros."
+     ],
+     "q": "Que palavra portuguesa achas mais difícil de pronunciar para um estrangeiro?",
+     "c": "Diz devagar avó, avô, café e você e repara no que a tua boca faz em cada vogal."
+    },
+    "pt_BR": {
+     "t": "Vogais abertas, fechadas e nasais",
+     "g": "Revise vogais abertas, fechadas e nasais e note como Portugal reduz as vogais átonas.",
+     "p": [
+      "Os acentos funcionam igual: o agudo abre (café, avó), o circunflexo fecha (você, avô).",
+      "A grande diferença está nas vogais sem acento: em Lisboa, telefone soa quase tlfone.",
+      "Ouvir português europeu exige treino; as vogais tônicas são a sua âncora para entender."
+     ],
+     "q": "Que palavra do português de Portugal você acha mais difícil de entender?",
+     "c": "Ouça um áudio curto de português europeu e anote três palavras em que a vogal some."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "o café",
+      "ex": "Um café, se faz favor."
+     },
+     {
+      "w": "você",
+      "ex": "Você é de Lisboa?"
+     },
+     {
+      "w": "a avó",
+      "ex": "A minha avó mora no Porto."
+     },
+     {
+      "w": "o avô",
+      "ex": "O meu avô tem oitenta anos."
+     },
+     {
+      "w": "a irmã",
+      "ex": "A irmã do Pedro é simpática."
+     },
+     {
+      "w": "sim",
+      "ex": "Sim, quero um chá."
+     }
+    ],
+    "gram": "O acento agudo abre a vogal (avó, café), o circunflexo fecha-a (avô, você) e o til nasaliza-a (irmã, põe)."
+   }
+  },
+  {
+   "d": 4,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Nasal sounds: ão, ãe, õe",
+     "g": "Practise the famous Portuguese nasal diphthongs in pão, mãe and limões.",
+     "p": [
+      "Ão sounds like ow said through the nose: pão (bread), não (no), mão (hand).",
+      "Ãe is like a nasal eye sound: mãe (mother), cães (dogs). Õe is a nasal oy: limões, põe.",
+      "Do not add an n or g at the end; the sound simply fades out through your nose."
+     ],
+     "q": "Can you say não, mãe and limões in one sentence, slowly and then faster?",
+     "c": "Say Não, a minha mãe não quer pão five times, getting faster each time."
+    },
+    "de": {
+     "t": "Nasale Laute: ão, ãe, õe",
+     "g": "Du übst die berühmten portugiesischen Nasaldiphthonge in pão, mãe und limões.",
+     "p": [
+      "Ão klingt wie ein nasales au: pão (Brot), não (nein), mão (Hand).",
+      "Ãe ist ein nasales ai: mãe (Mutter), cães (Hunde). Õe ist ein nasales eu: limões, põe.",
+      "Hänge kein n oder ng an; der Laut klingt einfach durch die Nase aus."
+     ],
+     "q": "Kannst du não, mãe und limões in einem Satz sagen, erst langsam, dann schneller?",
+     "c": "Sag fünfmal Não, a minha mãe não quer pão und werde jedes Mal schneller."
+    },
+    "es": {
+     "t": "Sonidos nasales: ão, ãe, õe",
+     "g": "Practicar los famosos diptongos nasales portugueses en pão, mãe y limões.",
+     "p": [
+      "Ão suena como au dicho por la nariz: pão (pan), não (no), mão (mano).",
+      "Ãe es como ai nasal: mãe (madre), cães (perros). Õe es un oi nasal: limões, põe.",
+      "No añadas una n al final; el sonido simplemente se apaga por la nariz."
+     ],
+     "q": "¿Puedes decir não, mãe y limões en una frase, primero despacio y luego rápido?",
+     "c": "Di cinco veces Não, a minha mãe não quer pão, cada vez más rápido."
+    },
+    "fr": {
+     "t": "Les sons nasaux : ão, ãe, õe",
+     "g": "Pratiquer les célèbres diphtongues nasales portugaises de pão, mãe et limões.",
+     "p": [
+      "Ão ressemble à un « aon » nasal : pão (pain), não (non), mão (main).",
+      "Ãe est un « aïn » nasal : mãe (mère), cães (chiens). Õe est un « oïn » nasal : limões, põe.",
+      "N'ajoute pas de n prononcé à la fin ; le son s'éteint simplement par le nez."
+     ],
+     "q": "Peux-tu dire não, mãe et limões dans une phrase, lentement puis plus vite ?",
+     "c": "Dis cinq fois Não, a minha mãe não quer pão, de plus en plus vite."
+    },
+    "it": {
+     "t": "Suoni nasali: ão, ãe, õe",
+     "g": "Eserciti i famosi dittonghi nasali portoghesi in pão, mãe e limões.",
+     "p": [
+      "Ão suona come un au detto con il naso: pão (pane), não (no), mão (mano).",
+      "Ãe è un ai nasale: mãe (mamma), cães (cani). Õe è un oi nasale: limões, põe.",
+      "Non aggiungere una n finale; il suono si spegne semplicemente nel naso."
+     ],
+     "q": "Riesci a dire não, mãe e limões in una frase, prima piano e poi veloce?",
+     "c": "Ripeti cinque volte Não, a minha mãe não quer pão, ogni volta più veloce."
+    },
+    "pt": {
+     "t": "Sons nasais: ão, ãe, õe",
+     "g": "Revê os ditongos nasais que tornam o português tão reconhecível e difícil para estrangeiros.",
+     "p": [
+      "Ão (pão, mão), ãe (mãe, cães) e õe (limões, põe) são sons que poucas línguas têm.",
+      "Os plurais em -ão variam: pães, mãos, limões. É um bom tema de conversa com quem aprende.",
+      "Em Portugal, mãe e bem soam quase iguais no final; no Brasil, bem soa mais como bein."
+     ],
+     "q": "Como explicarias o som de pão a alguém que nunca ouviu português?",
+     "c": "Escreve uma frase com cinco palavras com ão, ãe ou õe e lê-a em voz alta."
+    },
+    "pt_BR": {
+     "t": "Sons nasais: ão, ãe, õe",
+     "g": "Revise os ditongos nasais e note pequenas diferenças entre Brasil e Portugal.",
+     "p": [
+      "Ão, ãe e õe soam muito parecido nos dois países: pão, mãe, limões.",
+      "Em Portugal, o -em final (bem, também) soa como ãe; no Brasil soa mais fechado, como ein.",
+      "Os plurais são iguais nos dois lados: pães, mãos, limões, cães."
+     ],
+     "q": "Você consegue ouvir a diferença entre o também de Lisboa e o de São Paulo?",
+     "c": "Diga Também quero pão e limões imitando um sotaque de Lisboa e depois o seu."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "o pão",
+      "ex": "Queria um pão com manteiga."
+     },
+     {
+      "w": "a mãe",
+      "ex": "A minha mãe chama-se Rosa."
+     },
+     {
+      "w": "a mão",
+      "ex": "Dá-me a tua mão."
+     },
+     {
+      "w": "os limões",
+      "ex": "Compro dois limões na loja."
+     },
+     {
+      "w": "os cães",
+      "ex": "Os cães do vizinho são simpáticos."
+     },
+     {
+      "w": "não",
+      "ex": "Não, obrigado."
+     }
+    ],
+    "gram": "Os ditongos nasais ão, ãe e õe dizem-se pelo nariz: pão, mãe, põe. No plural: pães, cães, limões."
+   }
+  },
+  {
+   "d": 5,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Chamo-me... introducing yourself",
+     "g": "Introduce yourself in Portuguese and ask someone their name.",
+     "p": [
+      "Chamo-me Ana means I am called Ana. Sou a Ana (I am Ana) and O meu nome é Ana also work.",
+      "Ask Como te chamas? to a friend; reply to a new person with Muito prazer and they answer Igualmente.",
+      "In Brazil you hear Me chamo Ana and Como você se chama? Both are correct Portuguese."
+     ],
+     "q": "Imagine you meet a new colleague in Lisbon. How do you introduce yourself?",
+     "c": "Introduce yourself aloud three ways today: with chamo-me, with sou and with o meu nome é."
+    },
+    "de": {
+     "t": "Chamo-me... sich vorstellen",
+     "g": "Du stellst dich auf Portugiesisch vor und fragst nach dem Namen.",
+     "p": [
+      "Chamo-me Ana heißt Ich heiße Ana. Sou a Ana (Ich bin Ana) und O meu nome é Ana gehen auch.",
+      "Frag Como te chamas?; einer neuen Person sagst du Muito prazer, sie antwortet Igualmente.",
+      "In Brasilien hörst du Me chamo Ana und Como você se chama? Beides ist korrektes Portugiesisch."
+     ],
+     "q": "Du triffst eine neue Kollegin in Lissabon. Wie stellst du dich vor?",
+     "c": "Stell dich heute laut auf drei Arten vor: mit chamo-me, mit sou und mit o meu nome é."
+    },
+    "es": {
+     "t": "Chamo-me... presentarte",
+     "g": "Presentarte en portugués y preguntar a alguien cómo se llama.",
+     "p": [
+      "Chamo-me Ana significa me llamo Ana. Sou a Ana (soy Ana) y O meu nome é Ana también valen.",
+      "Pregunta Como te chamas?; al conocer a alguien di Muito prazer y te responderá Igualmente.",
+      "En Brasil oirás Me chamo Ana y Como você se chama? Las dos formas son correctas."
+     ],
+     "q": "Conoces a un nuevo compañero en Lisboa. ¿Cómo te presentas?",
+     "c": "Preséntate hoy en voz alta de tres maneras: con chamo-me, con sou y con o meu nome é."
+    },
+    "fr": {
+     "t": "Chamo-me... se présenter",
+     "g": "Te présenter en portugais et demander son prénom à quelqu'un.",
+     "p": [
+      "Chamo-me Ana veut dire je m'appelle Ana. Sou a Ana (je suis Ana) et O meu nome é Ana marchent aussi.",
+      "Demande Como te chamas? ; à une nouvelle personne, dis Muito prazer, elle répond Igualmente.",
+      "Au Brésil, on entend Me chamo Ana et Como você se chama? Les deux sont corrects."
+     ],
+     "q": "Tu rencontres un nouveau collègue à Lisbonne. Comment te présentes-tu ?",
+     "c": "Présente-toi à voix haute de trois façons : avec chamo-me, avec sou et avec o meu nome é."
+    },
+    "it": {
+     "t": "Chamo-me... presentarsi",
+     "g": "Ti presenti in portoghese e chiedi a qualcuno come si chiama.",
+     "p": [
+      "Chamo-me Ana significa mi chiamo Ana. Sou a Ana (sono Ana) e O meu nome é Ana vanno bene lo stesso.",
+      "Chiedi Como te chamas?; a una persona nuova dici Muito prazer e lei risponde Igualmente.",
+      "In Brasile senti Me chamo Ana e Como você se chama? Sono entrambe forme corrette."
+     ],
+     "q": "Incontri un nuovo collega a Lisbona. Come ti presenti?",
+     "c": "Presentati oggi ad alta voce in tre modi: con chamo-me, con sou e con o meu nome é."
+    },
+    "pt": {
+     "t": "Chamo-me... apresentar-se",
+     "g": "Revê as formas de te apresentares e de perguntar o nome, em Portugal e no Brasil.",
+     "p": [
+      "Chamo-me, Sou o/a e O meu nome é são as três maneiras mais comuns de dizer quem és.",
+      "Muito prazer responde-se com Igualmente; entre jovens basta um Olá, eu sou a Rita.",
+      "No Brasil diz-se Me chamo e Como você se chama?: é bom reconhecer as duas versões."
+     ],
+     "q": "Como te apresentarias numa conversa com alguém que está a aprender português?",
+     "c": "Apresenta-te hoje a alguém novo, mesmo online, e usa Muito prazer na conversa."
+    },
+    "pt_BR": {
+     "t": "Chamo-me... apresentar-se",
+     "g": "Revise as apresentações e aprenda a versão de Portugal.",
+     "p": [
+      "Em Portugal o pronome vem depois: chamo-me Ana, em vez de me chamo Ana.",
+      "Com amigos, os portugueses perguntam Como te chamas?, usando tu, e não Como você se chama?",
+      "Muito prazer e Igualmente funcionam igualzinho nos dois países."
+     ],
+     "q": "Como você se apresentaria para um colega novo em Lisboa, à moda portuguesa?",
+     "c": "Apresente-se em voz alta à portuguesa: Olá, chamo-me... e pergunte Como te chamas?"
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "chamo-me",
+      "ex": "Chamo-me Ana. E tu?"
+     },
+     {
+      "w": "sou",
+      "ex": "Sou o Pedro, muito prazer."
+     },
+     {
+      "w": "muito prazer",
+      "ex": "Muito prazer, eu sou a Joana."
+     },
+     {
+      "w": "como te chamas?",
+      "ex": "Olá! Como te chamas?"
+     },
+     {
+      "w": "igualmente",
+      "ex": "Muito prazer! — Igualmente."
+     },
+     {
+      "w": "o meu nome é",
+      "ex": "O meu nome é Miguel Santos."
+     }
+    ],
+    "gram": "Em Portugal diz-se chamo-me, com o pronome depois do verbo; no Brasil diz-se me chamo, com o pronome antes."
+   }
+  },
+  {
+   "d": 6,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Tu, você or o senhor?",
+     "g": "Choose the right form of address in Portugal and in Brazil.",
+     "p": [
+      "In Portugal, tu is for friends, family and children; the verb takes the tu form: tu falas.",
+      "With strangers, the safest choice in Portugal is o senhor or a senhora, or simply the verb alone: Fala inglês?",
+      "In Brazil, você is the normal everyday you. Note too: men say obrigado, women say obrigada."
+     ],
+     "q": "Who would you call tu and who o senhor in Portugal: a waiter, a friend, your grandmother?",
+     "c": "Ask someone, even imaginary, Fala inglês? and then the same question with tu: Falas inglês?"
+    },
+    "de": {
+     "t": "Tu, você oder o senhor?",
+     "g": "Du wählst die richtige Anrede für Portugal und Brasilien.",
+     "p": [
+      "In Portugal ist tu für Freunde, Familie und Kinder; das Verb steht in der tu-Form: tu falas.",
+      "Bei Fremden ist in Portugal o senhor oder a senhora am sichersten, oder nur das Verb: Fala inglês?",
+      "In Brasilien ist você das normale Du. Und: Männer sagen obrigado, Frauen obrigada."
+     ],
+     "q": "Wen würdest du in Portugal mit tu, wen mit o senhor anreden: Kellner, Freund, Oma?",
+     "c": "Stell jemandem, auch nur in Gedanken, die Frage Fala inglês? und dann mit tu: Falas inglês?"
+    },
+    "es": {
+     "t": "¿Tu, você o o senhor?",
+     "g": "Elegir el tratamiento adecuado en Portugal y en Brasil.",
+     "p": [
+      "En Portugal, tu es para amigos, familia y niños, como el tú español: tu falas.",
+      "Con desconocidos, lo más seguro en Portugal es o senhor o a senhora, o solo el verbo: Fala inglês?",
+      "En Brasil, você es el tú de cada día. Y ojo: los hombres dicen obrigado y las mujeres obrigada."
+     ],
+     "q": "¿A quién tratarías de tu y a quién de o senhor en Portugal: un camarero, un amigo, tu abuela?",
+     "c": "Pregunta a alguien, aunque sea imaginario, Fala inglês? y luego con tu: Falas inglês?"
+    },
+    "fr": {
+     "t": "Tu, você ou o senhor ?",
+     "g": "Choisir la bonne forme d'adresse au Portugal et au Brésil.",
+     "p": [
+      "Au Portugal, tu sert pour les amis, la famille et les enfants, comme le tu français : tu falas.",
+      "Avec un inconnu, le plus sûr au Portugal est o senhor ou a senhora, ou juste le verbe : Fala inglês?",
+      "Au Brésil, você est le tu de tous les jours. Et : un homme dit obrigado, une femme obrigada."
+     ],
+     "q": "Qui tutoierais-tu au Portugal et qui appellerais-tu o senhor : un serveur, un ami, ta grand-mère ?",
+     "c": "Pose à quelqu'un, même imaginaire, la question Fala inglês? puis avec tu : Falas inglês?"
+    },
+    "it": {
+     "t": "Tu, você o o senhor?",
+     "g": "Scegli la forma di cortesia giusta in Portogallo e in Brasile.",
+     "p": [
+      "In Portogallo tu è per amici, famiglia e bambini, come in italiano: tu falas.",
+      "Con gli sconosciuti la scelta più sicura è o senhor o a senhora, o solo il verbo: Fala inglês?",
+      "In Brasile você è il tu di tutti i giorni. E attenzione: gli uomini dicono obrigado, le donne obrigada."
+     ],
+     "q": "A chi daresti del tu e a chi diresti o senhor in Portogallo: cameriere, amico, nonna?",
+     "c": "Chiedi a qualcuno, anche immaginario, Fala inglês? e poi con il tu: Falas inglês?"
+    },
+    "pt": {
+     "t": "Tu, você ou o senhor?",
+     "g": "Revê as formas de tratamento e como explicá-las a quem aprende, de Portugal ao Brasil.",
+     "p": [
+      "Em Portugal tu é para amigos e família; com desconhecidos usa-se o senhor, a senhora ou só o verbo.",
+      "Você existe em Portugal, mas pode soar distante; muitos preferem evitá-lo e dizer apenas Quer um café?",
+      "No Brasil você é o tratamento normal e tu ouve-se sobretudo em algumas regiões."
+     ],
+     "q": "Quando foi a última vez que hesitaste entre tu e o senhor com alguém?",
+     "c": "Repara hoje em quantas vezes usas tu, você ou o senhor e com quem."
+    },
+    "pt_BR": {
+     "t": "Tu, você ou o senhor?",
+     "g": "Entenda como funciona o tratamento em Portugal, bem diferente do Brasil.",
+     "p": [
+      "Em Portugal, tu é o normal com amigos e família, sempre com o verbo na 2.ª pessoa: tu falas.",
+      "Lá, você pode soar frio ou até indelicado; com desconhecidos prefira o senhor ou só o verbo.",
+      "Por favor também se diz se faz favor em Portugal, e obrigado/obrigada funciona igual."
+     ],
+     "q": "Como você pediria um café a um senhor idoso em Lisboa sem usar você?",
+     "c": "Treine três frases com tu e o verbo certo: tu falas, tu queres, tu és."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "tu",
+      "ex": "Tu és do Porto?"
+     },
+     {
+      "w": "você",
+      "ex": "Você fala inglês?"
+     },
+     {
+      "w": "o senhor",
+      "ex": "O senhor quer um café?"
+     },
+     {
+      "w": "a senhora",
+      "ex": "A senhora precisa de ajuda?"
+     },
+     {
+      "w": "se faz favor",
+      "ex": "Se faz favor, onde fica a estação?"
+     },
+     {
+      "w": "obrigado / obrigada",
+      "ex": "Muito obrigada pela ajuda!"
+     }
+    ],
+    "gram": "Com tu o verbo vai na 2.ª pessoa (tu falas); com você, o senhor e a senhora vai na 3.ª pessoa (fala)."
+   }
+  },
+  {
+   "d": 7,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Como estás? How are you",
+     "g": "Ask how someone is and answer naturally in Portuguese.",
+     "p": [
+      "Como estás? is for friends (tu); Como está? is polite (o senhor, você).",
+      "Answer Bem, obrigado or obrigada, Muito bem or Mais ou menos, then bounce back: E tu?",
+      "Tudo bem? is a quick, friendly how is it going? in both Portugal and Brazil; answer Tudo!"
+     ],
+     "q": "A neighbour you barely know says Bom dia! Como está? What do you answer?",
+     "c": "Answer the question Como estás? honestly in Portuguese three times today, morning, noon and evening."
+    },
+    "de": {
+     "t": "Como estás? Wie geht's?",
+     "g": "Du fragst, wie es jemandem geht, und antwortest natürlich.",
+     "p": [
+      "Como estás? ist für Freunde (tu); Como está? ist höflich (o senhor, você).",
+      "Antworte Bem, obrigado bzw. obrigada, Muito bem oder Mais ou menos und frag zurück: E tu?",
+      "Tudo bem? ist ein schnelles, freundliches Alles klar? in Portugal und Brasilien; Antwort: Tudo!"
+     ],
+     "q": "Eine Nachbarin, die du kaum kennst, sagt Bom dia! Como está? Was antwortest du?",
+     "c": "Beantworte heute dreimal ehrlich die Frage Como estás?: morgens, mittags und abends."
+    },
+    "es": {
+     "t": "Como estás? ¿Cómo estás?",
+     "g": "Preguntar cómo está alguien y responder con naturalidad.",
+     "p": [
+      "Como estás? es para amigos (tu); Como está? es la forma educada (o senhor, você).",
+      "Responde Bem, obrigado u obrigada, Muito bem o Mais ou menos, y devuelve la pregunta: E tu?",
+      "Tudo bem? es un ¿todo bien? rápido y amable en Portugal y Brasil; se responde Tudo!"
+     ],
+     "q": "Una vecina a la que apenas conoces dice Bom dia! Como está? ¿Qué le respondes?",
+     "c": "Responde con sinceridad a Como estás? tres veces hoy: por la mañana, a mediodía y por la noche."
+    },
+    "fr": {
+     "t": "Como estás? Comment ça va ?",
+     "g": "Demander comment va quelqu'un et répondre naturellement.",
+     "p": [
+      "Como estás? s'utilise entre amis (tu) ; Como está? est la forme polie (o senhor, você).",
+      "Réponds Bem, obrigado ou obrigada, Muito bem ou Mais ou menos, puis renvoie : E tu?",
+      "Tudo bem? est un « ça va ? » rapide et sympa au Portugal comme au Brésil ; on répond Tudo!"
+     ],
+     "q": "Une voisine que tu connais à peine dit Bom dia! Como está? Que réponds-tu ?",
+     "c": "Réponds honnêtement à Como estás? trois fois aujourd'hui : le matin, à midi et le soir."
+    },
+    "it": {
+     "t": "Como estás? Come stai?",
+     "g": "Chiedi come sta qualcuno e rispondi in modo naturale.",
+     "p": [
+      "Como estás? è per gli amici (tu); Como está? è la forma di cortesia (o senhor, você).",
+      "Rispondi Bem, obrigado o obrigada, Muito bem o Mais ou menos e rilancia: E tu?",
+      "Tudo bem? è un rapido e simpatico tutto bene? in Portogallo e in Brasile; si risponde Tudo!"
+     ],
+     "q": "Una vicina che conosci appena dice Bom dia! Como está? Cosa rispondi?",
+     "c": "Rispondi sinceramente a Como estás? tre volte oggi: mattina, mezzogiorno e sera."
+    },
+    "pt": {
+     "t": "Como estás? Perguntar como vai",
+     "g": "Revê as formas de perguntar como alguém está e as respostas mais naturais.",
+     "p": [
+      "Como estás? usa-se com tu; Como está? com o senhor, a senhora ou você.",
+      "Bem, obrigado (ou obrigada, se és mulher), Muito bem e Mais ou menos são as respostas clássicas.",
+      "Tudo bem? é rápido e usado nos dois países; em Portugal ouve-se também Então, tudo bem?"
+     ],
+     "q": "Qual é a tua resposta habitual quando alguém te pergunta Como estás?",
+     "c": "Hoje, quando te perguntarem como estás, responde algo diferente do habitual, por exemplo Ótimo!"
+    },
+    "pt_BR": {
+     "t": "Como estás? Perguntar como vai",
+     "g": "Revise como perguntar como alguém está e veja as versões de Portugal.",
+     "p": [
+      "Em Portugal o normal com amigos é Como estás?, com tu, e não Como você está?",
+      "Com desconhecidos diz-se Como está?, só com o verbo, ou Como está o senhor?",
+      "Tudo bem? funciona igual nos dois países; em Portugal é comum começar com Então, tudo bem?"
+     ],
+     "q": "Como você responderia a um Então, como estás? de um amigo português?",
+     "c": "Mande hoje uma mensagem a um amigo perguntando à portuguesa: Olá! Como estás?"
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "como estás?",
+      "ex": "Olá, Rita! Como estás?"
+     },
+     {
+      "w": "como está?",
+      "ex": "Bom dia, senhora Lopes. Como está?"
+     },
+     {
+      "w": "bem, obrigado",
+      "ex": "Estou bem, obrigado. E tu?"
+     },
+     {
+      "w": "muito bem",
+      "ex": "Estou muito bem, hoje está sol!"
+     },
+     {
+      "w": "mais ou menos",
+      "ex": "Mais ou menos, estou cansada."
+     },
+     {
+      "w": "tudo bem?",
+      "ex": "Olá, tudo bem? — Tudo!"
+     }
+    ],
+    "gram": "Pergunta-se como estás? com tu e como está? com você ou o senhor; responde-se estou bem, e tu? ou e o senhor?"
+   }
+  },
+  {
+   "d": 8,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Numbers 0 to 20",
+     "g": "Count from zero to twenty and use numbers for ages and phone numbers.",
+     "p": [
+      "Um/uma and dois/duas change with gender: um café, uma água, dois cafés, duas águas.",
+      "Portugal says dezasseis, dezassete, dezanove; Brazil says dezesseis, dezessete, dezenove.",
+      "For age use ter: Tenho vinte anos. Phone numbers are read digit by digit or in pairs."
+     ],
+     "q": "How old are you, in Portuguese words? And how many people live in your home?",
+     "c": "Read your phone number aloud in Portuguese, digit by digit, twice without stopping."
+    },
+    "de": {
+     "t": "Zahlen von 0 bis 20",
+     "g": "Du zählst von null bis zwanzig und nutzt Zahlen für Alter und Telefonnummern.",
+     "p": [
+      "Um/uma und dois/duas richten sich nach dem Geschlecht: um café, uma água, dois cafés, duas águas.",
+      "Portugal sagt dezasseis, dezassete, dezanove; Brasilien dezesseis, dezessete, dezenove.",
+      "Fürs Alter nimmst du ter: Tenho vinte anos. Telefonnummern liest man Ziffer für Ziffer oder paarweise."
+     ],
+     "q": "Wie alt bist du, auf Portugiesisch? Und wie viele Menschen wohnen bei dir?",
+     "c": "Lies deine Telefonnummer zweimal ohne Pause Ziffer für Ziffer auf Portugiesisch vor."
+    },
+    "es": {
+     "t": "Números del 0 al 20",
+     "g": "Contar de cero a veinte y usar los números para la edad y el teléfono.",
+     "p": [
+      "Um/uma y dois/duas cambian con el género: um café, uma água, dois cafés, duas águas.",
+      "Portugal dice dezasseis, dezassete, dezanove; Brasil dice dezesseis, dezessete, dezenove.",
+      "Para la edad usa ter: Tenho vinte anos. Los teléfonos se leen cifra a cifra o de dos en dos."
+     ],
+     "q": "¿Cuántos años tienes, en portugués? ¿Y cuántas personas viven en tu casa?",
+     "c": "Lee tu número de teléfono en portugués cifra a cifra, dos veces sin parar."
+    },
+    "fr": {
+     "t": "Les nombres de 0 à 20",
+     "g": "Compter de zéro à vingt et utiliser les nombres pour l'âge et le téléphone.",
+     "p": [
+      "Um/uma et dois/duas varient en genre : um café, uma água, dois cafés, duas águas.",
+      "Le Portugal dit dezasseis, dezassete, dezanove ; le Brésil dezesseis, dezessete, dezenove.",
+      "Pour l'âge, on utilise ter : Tenho vinte anos. Un numéro se lit chiffre par chiffre ou par paires."
+     ],
+     "q": "Quel âge as-tu, en portugais ? Et combien de personnes vivent chez toi ?",
+     "c": "Lis ton numéro de téléphone en portugais, chiffre par chiffre, deux fois sans t'arrêter."
+    },
+    "it": {
+     "t": "Numeri da 0 a 20",
+     "g": "Conti da zero a venti e usi i numeri per l'età e il telefono.",
+     "p": [
+      "Um/uma e dois/duas cambiano con il genere: um café, uma água, dois cafés, duas águas.",
+      "Il Portogallo dice dezasseis, dezassete, dezanove; il Brasile dezesseis, dezessete, dezenove.",
+      "Per l'età si usa ter: Tenho vinte anos. I numeri di telefono si leggono cifra per cifra o a coppie."
+     ],
+     "q": "Quanti anni hai, in portoghese? E quante persone vivono a casa tua?",
+     "c": "Leggi il tuo numero di telefono in portoghese, cifra per cifra, due volte senza fermarti."
+    },
+    "pt": {
+     "t": "Números de 0 a 20",
+     "g": "Revê os números até vinte e as diferenças de escrita entre Portugal e o Brasil.",
+     "p": [
+      "Um/uma e dois/duas concordam com o nome: duas bicas, dois pastéis.",
+      "Em Portugal escreve-se dezasseis, dezassete e dezanove; no Brasil dezesseis, dezessete e dezenove.",
+      "No Brasil, ao ditar números de telefone, o seis diz-se muitas vezes meia (de meia dúzia)."
+     ],
+     "q": "Quantos anos tinhas quando começaste a escola?",
+     "c": "Conta de vinte até zero em voz alta o mais depressa que conseguires, sem errar."
+    },
+    "pt_BR": {
+     "t": "Números de 0 a 20",
+     "g": "Revise os números até vinte e aprenda as formas de Portugal.",
+     "p": [
+      "Em Portugal: dezasseis, dezassete, dezanove; e catorze é mais comum que quatorze.",
+      "Em Portugal ninguém diz meia para o seis no telefone: diz-se sempre seis.",
+      "Um/uma e dois/duas concordam com o nome, como no Brasil: duas bicas, dois pastéis."
+     ],
+     "q": "Qual número de 0 a 20 você acha que soa mais diferente em Lisboa?",
+     "c": "Leia seu telefone em voz alta à portuguesa, dizendo seis em vez de meia."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "zero",
+      "ex": "O meu número começa por zero?"
+     },
+     {
+      "w": "dois / duas",
+      "ex": "Tenho duas irmãs e dois irmãos."
+     },
+     {
+      "w": "dez",
+      "ex": "O autocarro chega daqui a dez minutos."
+     },
+     {
+      "w": "catorze",
+      "ex": "A Inês tem catorze anos."
+     },
+     {
+      "w": "dezasseis",
+      "ex": "O meu filho tem dezasseis anos."
+     },
+     {
+      "w": "vinte",
+      "ex": "Esta sala tem vinte cadeiras."
+     }
+    ],
+    "gram": "Um e dois mudam com o género: um livro, uma casa; dois livros, duas casas. Os outros números não mudam."
+   }
+  },
+  {
+   "d": 9,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "De onde és? Where are you from",
+     "g": "Say where you are from and use common nationality words.",
+     "p": [
+      "Ask De onde és? (tu) or De onde é? (polite). Answer Sou de... plus the city or country.",
+      "With some countries de merges with the article: sou do Brasil, sou da Itália, but sou de Portugal.",
+      "Nationalities are lowercase and agree: brasileiro, brasileira; inglês, inglesa; alemão, alemã."
+     ],
+     "q": "Where are you from, and what is your nationality in Portuguese?",
+     "c": "Write your nationality in Portuguese, both masculine and feminine, and say Sou de... with your city."
+    },
+    "de": {
+     "t": "De onde és? Woher kommst du?",
+     "g": "Du sagst, woher du kommst, und lernst häufige Nationalitäten.",
+     "p": [
+      "Frag De onde és? (tu) oder De onde é? (höflich). Antwort: Sou de... plus Stadt oder Land.",
+      "Bei manchen Ländern verschmilzt de mit dem Artikel: sou do Brasil, sou da Itália, aber sou de Portugal.",
+      "Nationalitäten schreibt man klein, sie passen sich an: brasileiro, brasileira; alemão, alemã."
+     ],
+     "q": "Woher kommst du und wie heißt deine Nationalität auf Portugiesisch?",
+     "c": "Schreib deine Nationalität männlich und weiblich auf Portugiesisch und sag Sou de... mit deiner Stadt."
+    },
+    "es": {
+     "t": "De onde és? ¿De dónde eres?",
+     "g": "Decir de dónde eres y usar gentilicios comunes.",
+     "p": [
+      "Pregunta De onde és? (tu) o De onde é? (formal). Responde Sou de... más la ciudad o el país.",
+      "Con algunos países de se une al artículo: sou do Brasil, sou da Itália, pero sou de Portugal.",
+      "Los gentilicios van en minúscula y concuerdan: brasileiro, brasileira; espanhol, espanhola."
+     ],
+     "q": "¿De dónde eres y cuál es tu nacionalidad en portugués?",
+     "c": "Escribe tu nacionalidad en portugués en masculino y femenino y di Sou de... con tu ciudad."
+    },
+    "fr": {
+     "t": "De onde és? D'où viens-tu ?",
+     "g": "Dire d'où tu viens et utiliser les nationalités courantes.",
+     "p": [
+      "Demande De onde és? (tu) ou De onde é? (poli). Réponds Sou de... suivi de la ville ou du pays.",
+      "Avec certains pays, de fusionne avec l'article : sou do Brasil, sou da Itália, mais sou de Portugal.",
+      "Les nationalités s'écrivent en minuscule et s'accordent : francês, francesa ; alemão, alemã."
+     ],
+     "q": "D'où viens-tu et quelle est ta nationalité en portugais ?",
+     "c": "Écris ta nationalité en portugais au masculin et au féminin et dis Sou de... avec ta ville."
+    },
+    "it": {
+     "t": "De onde és? Di dove sei?",
+     "g": "Dici da dove vieni e usi le nazionalità più comuni.",
+     "p": [
+      "Chiedi De onde és? (tu) o De onde é? (cortese). Rispondi Sou de... più città o paese.",
+      "Con alcuni paesi de si unisce all'articolo: sou do Brasil, sou da Itália, ma sou de Portugal.",
+      "Le nazionalità si scrivono minuscole e concordano: italiano, italiana; alemão, alemã."
+     ],
+     "q": "Di dove sei e qual è la tua nazionalità in portoghese?",
+     "c": "Scrivi la tua nazionalità in portoghese al maschile e al femminile e di' Sou de... con la tua città."
+    },
+    "pt": {
+     "t": "De onde és? Origem e nacionalidade",
+     "g": "Revê como falar da origem e das nacionalidades, com atenção às contrações.",
+     "p": [
+      "Sou de Portugal, mas sou do Brasil e sou da França: alguns países levam artigo, outros não.",
+      "As nacionalidades escrevem-se com minúscula e concordam: inglês, inglesa; alemão, alemã.",
+      "Para cidades não há artigo, salvo exceções como o Porto: sou do Porto, sou de Lisboa."
+     ],
+     "q": "De que cidade és e o que mais gostas de contar sobre ela?",
+     "c": "Escreve cinco nacionalidades no masculino e no feminino, incluindo uma com -ão."
+    },
+    "pt_BR": {
+     "t": "De onde és? Origem e nacionalidade",
+     "g": "Revise como falar de origem e aprenda a pergunta portuguesa De onde és?",
+     "p": [
+      "Em Portugal, com amigos: De onde és?, com tu; com desconhecidos: De onde é?",
+      "Alguns nomes de lugares mudam: em Portugal diz-se Moscovo e Irão; no Brasil, Moscou e Irã.",
+      "Nacionalidades com minúscula e concordância, igual ao Brasil: brasileiro, brasileira."
+     ],
+     "q": "Como você responderia a um português que pergunta De onde és?",
+     "c": "Apresente-se em voz alta à portuguesa: Sou brasileiro/a, sou de... e pergunte E tu, de onde és?"
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "de onde és?",
+      "ex": "De onde és? — Sou do Brasil."
+     },
+     {
+      "w": "sou de",
+      "ex": "Sou de Lisboa, e tu?"
+     },
+     {
+      "w": "português / portuguesa",
+      "ex": "A Marta é portuguesa."
+     },
+     {
+      "w": "brasileiro / brasileira",
+      "ex": "O João é brasileiro."
+     },
+     {
+      "w": "inglês / inglesa",
+      "ex": "A minha colega é inglesa."
+     },
+     {
+      "w": "alemão / alemã",
+      "ex": "O Hans é alemão e a Anna é alemã."
+     }
+    ],
+    "gram": "As nacionalidades escrevem-se com minúscula e concordam com o género: português, portuguesa; alemão, alemã."
+   }
+  },
+  {
+   "d": 10,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Ser: the verb to be",
+     "g": "Conjugate ser in the present and use it for identity, origin, job and character.",
+     "p": [
+      "Eu sou, tu és, ele/ela/você é, nós somos, eles/elas/vocês são. Learn it like a little song.",
+      "Use ser for what someone is: Sou a Laura, sou de Faro, sou enfermeira, sou calma.",
+      "No article before jobs after ser: Sou professor, not Sou um professor."
+     ],
+     "q": "Can you say four true things about yourself using sou?",
+     "c": "Write four sentences with sou: your name, your city, your job or studies and one quality."
+    },
+    "de": {
+     "t": "Ser: das Verb sein",
+     "g": "Du konjugierst ser im Präsens und nutzt es für Identität, Herkunft, Beruf und Charakter.",
+     "p": [
+      "Eu sou, tu és, ele/ela/você é, nós somos, eles/elas/vocês são. Lern es wie ein kleines Lied.",
+      "Ser beschreibt, was jemand ist: Sou a Laura, sou de Faro, sou enfermeira, sou calma.",
+      "Vor Berufen kein Artikel: Sou professor, nicht Sou um professor, wie im Deutschen."
+     ],
+     "q": "Kannst du mit sou vier wahre Dinge über dich sagen?",
+     "c": "Schreib vier Sätze mit sou: Name, Stadt, Beruf oder Studium und eine Eigenschaft."
+    },
+    "es": {
+     "t": "Ser: el verbo ser",
+     "g": "Conjugar ser en presente y usarlo para identidad, origen, profesión y carácter.",
+     "p": [
+      "Eu sou, tu és, ele/ela/você é, nós somos, eles/elas/vocês são. Muy parecido al español.",
+      "Ser indica lo que alguien es: Sou a Laura, sou de Faro, sou enfermeira, sou calma.",
+      "Sin artículo delante de la profesión: Sou professor, igual que soy profesor."
+     ],
+     "q": "¿Puedes decir cuatro cosas verdaderas sobre ti usando sou?",
+     "c": "Escribe cuatro frases con sou: tu nombre, tu ciudad, tu trabajo o estudios y una cualidad."
+    },
+    "fr": {
+     "t": "Ser : le verbe être",
+     "g": "Conjuguer ser au présent et l'utiliser pour l'identité, l'origine, le métier et le caractère.",
+     "p": [
+      "Eu sou, tu és, ele/ela/você é, nós somos, eles/elas/vocês são. Apprends-le comme une comptine.",
+      "Ser dit ce qu'est quelqu'un : Sou a Laura, sou de Faro, sou enfermeira, sou calma.",
+      "Pas d'article devant un métier : Sou professor, comme je suis professeur."
+     ],
+     "q": "Peux-tu dire quatre choses vraies sur toi avec sou ?",
+     "c": "Écris quatre phrases avec sou : ton prénom, ta ville, ton métier ou tes études et une qualité."
+    },
+    "it": {
+     "t": "Ser: il verbo essere",
+     "g": "Coniughi ser al presente e lo usi per identità, origine, professione e carattere.",
+     "p": [
+      "Eu sou, tu és, ele/ela/você é, nós somos, eles/elas/vocês são. Imparalo come una filastrocca.",
+      "Ser dice cosa è qualcuno: Sou a Laura, sou de Faro, sou enfermeira, sou calma.",
+      "Niente articolo davanti alla professione: Sou professor, come sono insegnante."
+     ],
+     "q": "Riesci a dire quattro cose vere su di te usando sou?",
+     "c": "Scrivi quattro frasi con sou: nome, città, lavoro o studi e una qualità."
+    },
+    "pt": {
+     "t": "Ser: o verbo ser",
+     "g": "Revê o presente de ser e pensa em como o explicarias a quem aprende português.",
+     "p": [
+      "Eu sou, tu és, ele/ela/você é, nós somos, eles/elas/vocês são. Vós sois quase só se ouve na igreja ou no Norte.",
+      "Ser indica identidade, origem, profissão e caráter: Sou de Braga, sou engenheira, sou paciente.",
+      "Antes de profissões não há artigo: Sou médico. Um erro típico de estrangeiros é dizer Sou um médico."
+     ],
+     "q": "Que três palavras usarias para dizer como és, começando por Sou...?",
+     "c": "Escreve quatro frases sobre ti com sou e lê-as como se te apresentasses a um grupo novo."
+    },
+    "pt_BR": {
+     "t": "Ser: o verbo ser",
+     "g": "Revise o presente de ser, incluindo a forma tu és, muito usada em Portugal.",
+     "p": [
+      "Eu sou, tu és, ele/ela/você é, nós somos, eles/elas/vocês são: a forma tu és é a que mais se ouve lá.",
+      "Ser indica identidade, origem, profissão e caráter, igual ao Brasil.",
+      "Em Portugal, nomes próprios levam artigo: Sou a Laura, o Pedro é de Faro."
+     ],
+     "q": "Você consegue dizer três coisas sobre um amigo usando tu és, como se falasse com ele?",
+     "c": "Escreva quatro frases com sou e duas com tu és, à moda portuguesa."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "eu sou",
+      "ex": "Eu sou professora."
+     },
+     {
+      "w": "tu és",
+      "ex": "Tu és muito simpático."
+     },
+     {
+      "w": "ele / ela é",
+      "ex": "Ela é de Coimbra."
+     },
+     {
+      "w": "nós somos",
+      "ex": "Nós somos amigos."
+     },
+     {
+      "w": "eles / elas são",
+      "ex": "Eles são estudantes."
+     },
+     {
+      "w": "vocês são",
+      "ex": "Vocês são irmãos?"
+     }
+    ],
+    "gram": "Ser no presente: eu sou, tu és, ele/ela/você é, nós somos, eles/elas/vocês são. Usa-se para identidade e origem."
+   }
+  }
+ ]
+}

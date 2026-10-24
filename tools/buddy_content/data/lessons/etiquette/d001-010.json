@@ -1,0 +1,835 @@
+{
+ "topic": "etiquette",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Welcome to etiquette",
+     "g": "Discover why good manners work like a universal language that opens doors everywhere.",
+     "p": [
+      "Etiquette is the shared set of small habits that show people you respect them and their time.",
+      "Even when you do not speak the language, a smile, a greeting and patience are understood almost everywhere.",
+      "Good manners are learned, not inborn, so anyone can get better at them step by step, day by day."
+     ],
+     "q": "Can you remember a moment when someone's good manners made you feel welcome?",
+     "c": "Today, greet three people with a warm hello and notice how they respond."
+    },
+    "de": {
+     "t": "Willkommen bei der Etikette",
+     "g": "Entdecke, warum gute Umgangsformen wie eine Weltsprache wirken, die überall Türen öffnet.",
+     "p": [
+      "Etikette sind kleine gemeinsame Gewohnheiten, die zeigen, dass du Menschen und ihre Zeit respektierst.",
+      "Auch ohne die Sprache zu sprechen, versteht man fast überall ein Lächeln, einen Gruß und Geduld.",
+      "Gute Manieren sind nicht angeboren, sondern gelernt, also kann jeder sie Schritt für Schritt verbessern."
+     ],
+     "q": "Erinnerst du dich an einen Moment, in dem dich die guten Manieren eines Menschen willkommen fühlen ließen?",
+     "c": "Begrüße heute drei Menschen besonders herzlich und achte darauf, wie sie reagieren."
+    },
+    "es": {
+     "t": "Bienvenido a la etiqueta",
+     "g": "Descubre por qué los buenos modales funcionan como un idioma universal que abre puertas en todas partes.",
+     "p": [
+      "La etiqueta es el conjunto de pequeños hábitos compartidos que muestran respeto por las personas y su tiempo.",
+      "Aunque no hables el idioma, una sonrisa, un saludo y la paciencia se entienden casi en cualquier lugar.",
+      "Los buenos modales se aprenden, no se nace con ellos, así que cualquiera puede mejorar poco a poco."
+     ],
+     "q": "¿Recuerdas un momento en que los buenos modales de alguien te hicieron sentir bienvenido?",
+     "c": "Hoy, saluda a tres personas con un hola cálido y observa cómo reaccionan."
+    },
+    "fr": {
+     "t": "Bienvenue dans le savoir-vivre",
+     "g": "Découvre pourquoi les bonnes manières sont une langue universelle qui ouvre des portes partout.",
+     "p": [
+      "Le savoir-vivre, ce sont de petites habitudes partagées qui montrent ton respect pour les autres et leur temps.",
+      "Même sans parler la langue, un sourire, un bonjour et de la patience sont compris presque partout.",
+      "Les bonnes manières ne sont pas innées : elles s'apprennent, et chacun peut progresser pas à pas."
+     ],
+     "q": "Te souviens-tu d'un moment où la politesse de quelqu'un t'a fait te sentir bienvenu ?",
+     "c": "Aujourd'hui, salue chaleureusement trois personnes et observe leur réaction."
+    },
+    "it": {
+     "t": "Benvenuto nel galateo",
+     "g": "Scopri perché le buone maniere funzionano come una lingua universale che apre porte ovunque.",
+     "p": [
+      "Il galateo è un insieme di piccole abitudini condivise che mostrano rispetto per le persone e per il loro tempo.",
+      "Anche senza parlare la lingua, un sorriso, un saluto e un po' di pazienza si capiscono quasi ovunque.",
+      "Le buone maniere non sono innate ma si imparano, quindi chiunque può migliorare passo dopo passo."
+     ],
+     "q": "Ricordi un momento in cui le buone maniere di qualcuno ti hanno fatto sentire il benvenuto?",
+     "c": "Oggi saluta tre persone con un ciao caloroso e osserva come rispondono."
+    },
+    "pt": {
+     "t": "Bem-vindo à etiqueta",
+     "g": "Descobre porque é que as boas maneiras funcionam como uma língua universal que abre portas em todo o lado.",
+     "p": [
+      "A etiqueta é um conjunto de pequenos hábitos partilhados que mostram respeito pelas pessoas e pelo seu tempo.",
+      "Mesmo sem falar a língua, um sorriso, um cumprimento e paciência são compreendidos quase em todo o lado.",
+      "As boas maneiras não são inatas, aprendem-se, por isso qualquer pessoa pode melhorar passo a passo."
+     ],
+     "q": "Lembras-te de um momento em que as boas maneiras de alguém te fizeram sentir bem-vindo?",
+     "c": "Hoje, cumprimenta três pessoas com um olá caloroso e repara na reação delas."
+    },
+    "pt_BR": {
+     "t": "Boas-vindas à etiqueta",
+     "g": "Descubra por que as boas maneiras funcionam como uma língua universal que abre portas em qualquer lugar.",
+     "p": [
+      "Etiqueta é um conjunto de pequenos hábitos compartilhados que mostram respeito pelas pessoas e pelo tempo delas.",
+      "Mesmo sem falar o idioma, um sorriso, um cumprimento e paciência são entendidos em quase todo lugar.",
+      "Boas maneiras não nascem com a gente, são aprendidas, então qualquer pessoa pode melhorar aos poucos."
+     ],
+     "q": "Você lembra de um momento em que a educação de alguém fez você se sentir bem-vindo?",
+     "c": "Hoje, cumprimente três pessoas com um oi caloroso e repare em como elas reagem."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What etiquette really is",
+     "g": "Understand etiquette as kindness made visible rather than a rigid list of rules.",
+     "p": [
+      "The goal of every rule is the same: help others feel comfortable, safe and respected.",
+      "Rules can change with time and place, but consideration for others never goes out of style.",
+      "Making someone feel at ease matters more than knowing which fork to use."
+     ],
+     "q": "Which polite habit do you think matters most in everyday life, and why?",
+     "c": "Do one small, unasked kindness today, like holding a door or letting someone go first."
+    },
+    "de": {
+     "t": "Was Etikette wirklich ist",
+     "g": "Verstehe Etikette als sichtbar gemachte Freundlichkeit statt als starres Regelwerk.",
+     "p": [
+      "Jede Regel hat dasselbe Ziel: Andere sollen sich wohl, sicher und respektiert fühlen.",
+      "Regeln ändern sich mit Zeit und Ort, aber Rücksicht auf andere kommt nie aus der Mode.",
+      "Dass sich jemand bei dir wohlfühlt, zählt mehr als zu wissen, welche Gabel die richtige ist."
+     ],
+     "q": "Welche höfliche Gewohnheit ist im Alltag für dich die wichtigste, und warum?",
+     "c": "Tu heute eine kleine, ungefragte Freundlichkeit, etwa jemandem die Tür aufhalten."
+    },
+    "es": {
+     "t": "Qué es realmente la etiqueta",
+     "g": "Entiende la etiqueta como amabilidad hecha visible y no como una lista rígida de reglas.",
+     "p": [
+      "Todas las reglas buscan lo mismo: que los demás se sientan cómodos, seguros y respetados.",
+      "Las normas cambian con el tiempo y el lugar, pero la consideración por los demás nunca pasa de moda.",
+      "Hacer que alguien se sienta a gusto importa más que saber qué tenedor usar."
+     ],
+     "q": "¿Qué hábito educado crees que es el más importante en la vida diaria y por qué?",
+     "c": "Haz hoy un pequeño gesto amable sin que te lo pidan, como sujetar una puerta."
+    },
+    "fr": {
+     "t": "Ce qu'est vraiment le savoir-vivre",
+     "g": "Comprends le savoir-vivre comme de la gentillesse rendue visible, pas comme une liste de règles figées.",
+     "p": [
+      "Chaque règle vise la même chose : que les autres se sentent à l'aise, en sécurité et respectés.",
+      "Les règles changent selon l'époque et le lieu, mais l'attention aux autres ne se démode jamais.",
+      "Mettre quelqu'un à l'aise compte davantage que savoir quelle fourchette utiliser."
+     ],
+     "q": "Selon toi, quelle habitude polie compte le plus au quotidien, et pourquoi ?",
+     "c": "Fais aujourd'hui une petite gentillesse spontanée, comme tenir une porte à quelqu'un."
+    },
+    "it": {
+     "t": "Che cos'è davvero il galateo",
+     "g": "Capisci il galateo come gentilezza resa visibile, non come un elenco rigido di regole.",
+     "p": [
+      "Ogni regola ha lo stesso scopo: far sentire gli altri a proprio agio, al sicuro e rispettati.",
+      "Le regole cambiano con il tempo e il luogo, ma l'attenzione per gli altri non passa mai di moda.",
+      "Mettere qualcuno a suo agio conta più che sapere quale forchetta usare."
+     ],
+     "q": "Quale abitudine educata ti sembra la più importante nella vita di tutti i giorni, e perché?",
+     "c": "Oggi fai un piccolo gesto gentile non richiesto, come tenere aperta una porta."
+    },
+    "pt": {
+     "t": "O que é realmente a etiqueta",
+     "g": "Percebe a etiqueta como bondade tornada visível e não como uma lista rígida de regras.",
+     "p": [
+      "Todas as regras têm o mesmo objetivo: fazer os outros sentirem-se à vontade, seguros e respeitados.",
+      "As regras mudam com o tempo e o lugar, mas a consideração pelos outros nunca passa de moda.",
+      "Pôr alguém à vontade importa mais do que saber que garfo usar."
+     ],
+     "q": "Que hábito de cortesia achas mais importante no dia a dia, e porquê?",
+     "c": "Faz hoje um pequeno gesto amável sem que to peçam, como segurar uma porta."
+    },
+    "pt_BR": {
+     "t": "O que etiqueta realmente é",
+     "g": "Entenda a etiqueta como gentileza que se vê, e não como uma lista rígida de regras.",
+     "p": [
+      "Toda regra tem o mesmo objetivo: fazer os outros se sentirem à vontade, seguros e respeitados.",
+      "As regras mudam com o tempo e o lugar, mas a consideração pelos outros nunca sai de moda.",
+      "Deixar alguém à vontade importa mais do que saber qual garfo usar."
+     ],
+     "q": "Qual hábito educado você acha mais importante no dia a dia, e por quê?",
+     "c": "Faça hoje uma pequena gentileza sem ninguém pedir, como segurar uma porta."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Manners differ, respect is universal",
+     "g": "See how the same respect can look very different from one country to another.",
+     "p": [
+      "A gesture that is warm in one place, like a cheek kiss, may feel too close in another.",
+      "Behind different customs lies the same wish to honour others and keep relationships smooth.",
+      "When unsure, watch what locals do and follow their lead with a friendly attitude."
+     ],
+     "q": "Have you ever noticed a custom abroad or from another culture that surprised you?",
+     "c": "Ask someone from a different background how people greet each other where they grew up."
+    },
+    "de": {
+     "t": "Manieren sind verschieden, Respekt ist universell",
+     "g": "Sieh, wie derselbe Respekt von Land zu Land ganz unterschiedlich aussehen kann.",
+     "p": [
+      "Eine herzliche Geste wie ein Wangenkuss kann anderswo als zu nah empfunden werden.",
+      "Hinter verschiedenen Bräuchen steht derselbe Wunsch, andere zu ehren und Beziehungen zu pflegen.",
+      "Wenn du unsicher bist, beobachte die Einheimischen und folge ihrem Beispiel mit freundlicher Haltung."
+     ],
+     "q": "Ist dir schon einmal ein Brauch aus einer anderen Kultur aufgefallen, der dich überrascht hat?",
+     "c": "Frag jemanden mit anderer Herkunft, wie man sich dort begrüßt, wo er aufgewachsen ist."
+    },
+    "es": {
+     "t": "Los modales cambian, el respeto es universal",
+     "g": "Observa cómo el mismo respeto puede verse muy distinto de un país a otro.",
+     "p": [
+      "Un gesto cálido en un lugar, como un beso en la mejilla, puede resultar demasiado cercano en otro.",
+      "Detrás de costumbres distintas está el mismo deseo de honrar a los demás y cuidar las relaciones.",
+      "Si dudas, observa lo que hacen las personas del lugar y sigue su ejemplo con actitud amable."
+     ],
+     "q": "¿Alguna vez te sorprendió una costumbre de otra cultura?",
+     "c": "Pregunta a alguien de otro origen cómo se saluda la gente en el lugar donde creció."
+    },
+    "fr": {
+     "t": "Les manières changent, le respect est universel",
+     "g": "Vois comment un même respect peut prendre des formes très différentes d'un pays à l'autre.",
+     "p": [
+      "Un geste chaleureux ici, comme la bise, peut sembler trop proche ailleurs.",
+      "Derrière des coutumes différentes se cache le même désir d'honorer l'autre et de préserver les liens.",
+      "En cas de doute, observe les gens du coin et suis leur exemple avec bienveillance."
+     ],
+     "q": "As-tu déjà été surpris par une coutume venue d'une autre culture ?",
+     "c": "Demande à quelqu'un d'une autre origine comment on se salue là où il a grandi."
+    },
+    "it": {
+     "t": "Le maniere cambiano, il rispetto è universale",
+     "g": "Scopri come lo stesso rispetto possa avere forme molto diverse da un Paese all'altro.",
+     "p": [
+      "Un gesto caloroso in un luogo, come il bacio sulla guancia, altrove può sembrare troppo intimo.",
+      "Dietro usanze diverse c'è lo stesso desiderio di onorare gli altri e mantenere buoni rapporti.",
+      "Nel dubbio, osserva cosa fanno le persone del posto e segui il loro esempio con cordialità."
+     ],
+     "q": "Ti è mai capitato di stupirti per un'usanza di un'altra cultura?",
+     "c": "Chiedi a qualcuno di origine diversa come ci si saluta nel luogo in cui è cresciuto."
+    },
+    "pt": {
+     "t": "As maneiras mudam, o respeito é universal",
+     "g": "Vê como o mesmo respeito pode ter formas muito diferentes de país para país.",
+     "p": [
+      "Um gesto caloroso num sítio, como o beijinho na cara, pode parecer demasiado próximo noutro.",
+      "Por trás de costumes diferentes está o mesmo desejo de honrar os outros e cuidar das relações.",
+      "Na dúvida, observa o que fazem as pessoas do local e segue o exemplo delas com simpatia."
+     ],
+     "q": "Já te surpreendeu algum costume de outra cultura?",
+     "c": "Pergunta a alguém de outra origem como as pessoas se cumprimentam no sítio onde cresceu."
+    },
+    "pt_BR": {
+     "t": "As maneiras mudam, o respeito é universal",
+     "g": "Veja como o mesmo respeito pode ter formas bem diferentes de um país para outro.",
+     "p": [
+      "Um gesto caloroso em um lugar, como o beijo no rosto, pode parecer próximo demais em outro.",
+      "Por trás de costumes diferentes existe o mesmo desejo de honrar os outros e cuidar das relações.",
+      "Na dúvida, observe o que as pessoas do lugar fazem e siga o exemplo delas com simpatia."
+     ],
+     "q": "Algum costume de outra cultura já surpreendeu você?",
+     "c": "Pergunte a alguém de outra origem como as pessoas se cumprimentam no lugar onde cresceu."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Please and thank you worldwide",
+     "g": "Learn how people say please and thanks, and where they say it less often.",
+     "p": [
+      "In many English-speaking countries, please and thank you are expected even for tiny favours.",
+      "In some cultures, such as in parts of India, saying thanks to close family can feel oddly formal.",
+      "Learning to say thank you in the local language is one of the kindest things a traveller can do."
+     ],
+     "q": "How do you say thank you in the languages you know, and when do you use it most?",
+     "c": "Learn how to say please and thank you in one new language and use it today."
+    },
+    "de": {
+     "t": "Bitte und Danke weltweit",
+     "g": "Lerne, wie Menschen Bitte und Danke sagen und wo sie es seltener tun.",
+     "p": [
+      "In vielen englischsprachigen Ländern erwartet man Bitte und Danke selbst bei kleinsten Gefallen.",
+      "In manchen Kulturen, etwa in Teilen Indiens, wirkt ein Dank an enge Familie fast zu förmlich.",
+      "Danke in der Landessprache zu sagen, ist eine der freundlichsten Gesten, die Reisende zeigen können."
+     ],
+     "q": "Wie sagst du Danke in den Sprachen, die du kennst, und wann benutzt du es am häufigsten?",
+     "c": "Lerne Bitte und Danke in einer neuen Sprache und benutze beides heute."
+    },
+    "es": {
+     "t": "Por favor y gracias en el mundo",
+     "g": "Aprende cómo se dice por favor y gracias, y dónde se dice con menos frecuencia.",
+     "p": [
+      "En muchos países de habla inglesa se espera oír please y thank you incluso por favores mínimos.",
+      "En algunas culturas, como en partes de la India, dar las gracias a la familia cercana puede sonar demasiado formal.",
+      "Aprender a decir gracias en el idioma local es uno de los gestos más amables de un viajero."
+     ],
+     "q": "¿Cómo se dice gracias en los idiomas que conoces y cuándo lo usas más?",
+     "c": "Aprende a decir por favor y gracias en un idioma nuevo y úsalo hoy."
+    },
+    "fr": {
+     "t": "S'il vous plaît et merci dans le monde",
+     "g": "Apprends comment on dit s'il te plaît et merci, et où on le dit moins souvent.",
+     "p": [
+      "Dans beaucoup de pays anglophones, please et thank you sont attendus même pour un tout petit service.",
+      "Dans certaines cultures, comme dans des régions de l'Inde, remercier sa famille proche peut sembler trop formel.",
+      "Apprendre à dire merci dans la langue locale est l'un des gestes les plus aimables d'un voyageur."
+     ],
+     "q": "Comment dis-tu merci dans les langues que tu connais, et quand l'utilises-tu le plus ?",
+     "c": "Apprends à dire s'il vous plaît et merci dans une nouvelle langue et utilise-les aujourd'hui."
+    },
+    "it": {
+     "t": "Per favore e grazie nel mondo",
+     "g": "Impara come si dice per favore e grazie, e dove lo si dice meno spesso.",
+     "p": [
+      "In molti Paesi anglofoni please e thank you sono attesi anche per piccolissimi favori.",
+      "In alcune culture, come in parti dell'India, ringraziare i familiari stretti può sembrare troppo formale.",
+      "Imparare a dire grazie nella lingua locale è uno dei gesti più gentili che un viaggiatore possa fare."
+     ],
+     "q": "Come si dice grazie nelle lingue che conosci, e quando lo usi di più?",
+     "c": "Impara a dire per favore e grazie in una lingua nuova e usali oggi."
+    },
+    "pt": {
+     "t": "Por favor e obrigado pelo mundo",
+     "g": "Aprende como se diz por favor e obrigado, e onde se diz com menos frequência.",
+     "p": [
+      "Em muitos países de língua inglesa espera-se please e thank you mesmo para favores minúsculos.",
+      "Em algumas culturas, como em partes da Índia, agradecer à família próxima pode soar formal demais.",
+      "Aprender a dizer obrigado na língua local é um dos gestos mais simpáticos de um viajante."
+     ],
+     "q": "Como se diz obrigado nas línguas que conheces, e quando o usas mais?",
+     "c": "Aprende a dizer por favor e obrigado numa língua nova e usa-os hoje."
+    },
+    "pt_BR": {
+     "t": "Por favor e obrigado pelo mundo",
+     "g": "Aprenda como se diz por favor e obrigado, e onde isso se diz com menos frequência.",
+     "p": [
+      "Em muitos países de língua inglesa, please e thank you são esperados até para favores bem pequenos.",
+      "Em algumas culturas, como em partes da Índia, agradecer à família próxima pode soar formal demais.",
+      "Aprender a dizer obrigado na língua local é um dos gestos mais gentis de um viajante."
+     ],
+     "q": "Como se diz obrigado nos idiomas que você conhece, e quando você mais usa?",
+     "c": "Aprenda a dizer por favor e obrigado em um idioma novo e use hoje mesmo."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Saying sorry",
+     "g": "Explore when and how people apologise, from Canada to Japan.",
+     "p": [
+      "In Canada and the UK, sorry often works as a quick social lubricant, even for tiny bumps.",
+      "In Japan, apologies range from a light sumimasen to deeper, more formal expressions with a bow.",
+      "A good apology is sincere, short and focused on the other person, not on excuses."
+     ],
+     "q": "Is it easy or hard for you to say sorry, and does it depend on the situation?",
+     "c": "Next time you make a small mistake today, apologise simply and sincerely without excuses."
+    },
+    "de": {
+     "t": "Sich entschuldigen",
+     "g": "Entdecke, wann und wie sich Menschen entschuldigen, von Kanada bis Japan.",
+     "p": [
+      "In Kanada und Großbritannien ist sorry oft ein kurzes soziales Schmiermittel, selbst beim kleinsten Anrempeln.",
+      "In Japan reichen Entschuldigungen vom leichten Sumimasen bis zu förmlichen Worten mit Verbeugung.",
+      "Eine gute Entschuldigung ist aufrichtig, kurz und auf den anderen gerichtet, nicht auf Ausreden."
+     ],
+     "q": "Fällt es dir leicht oder schwer, dich zu entschuldigen, und hängt das von der Situation ab?",
+     "c": "Wenn dir heute ein kleiner Fehler passiert, entschuldige dich schlicht und ehrlich, ohne Ausreden."
+    },
+    "es": {
+     "t": "Pedir perdón",
+     "g": "Explora cuándo y cómo se pide perdón, desde Canadá hasta Japón.",
+     "p": [
+      "En Canadá y el Reino Unido, sorry suele ser un recurso social rápido, incluso por un roce mínimo.",
+      "En Japón, las disculpas van de un ligero sumimasen a expresiones más formales con una reverencia.",
+      "Una buena disculpa es sincera, breve y centrada en la otra persona, no en las excusas."
+     ],
+     "q": "¿Te resulta fácil o difícil pedir perdón, y depende de la situación?",
+     "c": "Si hoy cometes un pequeño error, discúlpate de forma simple y sincera, sin excusas."
+    },
+    "fr": {
+     "t": "S'excuser",
+     "g": "Découvre quand et comment on s'excuse, du Canada au Japon.",
+     "p": [
+      "Au Canada et au Royaume-Uni, sorry sert souvent à fluidifier les échanges, même pour un léger frôlement.",
+      "Au Japon, les excuses vont d'un simple sumimasen à des formules plus solennelles avec une inclinaison.",
+      "De bonnes excuses sont sincères, brèves et tournées vers l'autre, pas vers les justifications."
+     ],
+     "q": "Est-ce facile ou difficile pour toi de t'excuser, et cela dépend-il de la situation ?",
+     "c": "Si tu fais une petite erreur aujourd'hui, excuse-toi simplement et sincèrement, sans te justifier."
+    },
+    "it": {
+     "t": "Chiedere scusa",
+     "g": "Esplora quando e come le persone si scusano, dal Canada al Giappone.",
+     "p": [
+      "In Canada e nel Regno Unito sorry è spesso un modo rapido per rendere fluidi i rapporti, anche per un urto lieve.",
+      "In Giappone le scuse vanno da un leggero sumimasen a formule più solenni accompagnate da un inchino.",
+      "Delle buone scuse sono sincere, brevi e rivolte all'altra persona, non alle giustificazioni."
+     ],
+     "q": "Per te è facile o difficile chiedere scusa, e dipende dalla situazione?",
+     "c": "Se oggi commetti un piccolo errore, scusati in modo semplice e sincero, senza giustificarti."
+    },
+    "pt": {
+     "t": "Pedir desculpa",
+     "g": "Explora quando e como as pessoas pedem desculpa, do Canadá ao Japão.",
+     "p": [
+      "No Canadá e no Reino Unido, sorry funciona muitas vezes como um gesto social rápido, mesmo por um encontrão leve.",
+      "No Japão, as desculpas vão de um ligeiro sumimasen a expressões mais formais acompanhadas de uma vénia.",
+      "Um bom pedido de desculpa é sincero, curto e centrado na outra pessoa, não em justificações."
+     ],
+     "q": "Para ti é fácil ou difícil pedir desculpa, e depende da situação?",
+     "c": "Se hoje cometeres um pequeno erro, pede desculpa de forma simples e sincera, sem justificações."
+    },
+    "pt_BR": {
+     "t": "Pedir desculpas",
+     "g": "Explore quando e como as pessoas pedem desculpas, do Canadá ao Japão.",
+     "p": [
+      "No Canadá e no Reino Unido, sorry muitas vezes é um gesto social rápido, mesmo por um esbarrão leve.",
+      "No Japão, as desculpas vão de um leve sumimasen a expressões mais formais com uma reverência.",
+      "Um bom pedido de desculpas é sincero, curto e focado na outra pessoa, não em justificativas."
+     ],
+     "q": "Para você é fácil ou difícil pedir desculpas, e isso depende da situação?",
+     "c": "Se hoje você cometer um pequeno erro, peça desculpas de forma simples e sincera, sem justificativas."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Greeting etiquette basics",
+     "g": "Learn to choose the right greeting: handshake, bow, cheek kiss or nod.",
+     "p": [
+      "Greetings depend on the country, the setting and how well people know each other.",
+      "A safe start almost anywhere is a smile, eye contact suited to the culture and a spoken hello.",
+      "Let the other person lead: if they offer a hand, a bow or a kiss, you can mirror it."
+     ],
+     "q": "What is the usual greeting where you live, and does it change between friends and strangers?",
+     "c": "Watch how three people greet each other today and note what greeting each one used."
+    },
+    "de": {
+     "t": "Grundlagen der Begrüßung",
+     "g": "Lerne, die passende Begrüßung zu wählen: Händedruck, Verbeugung, Wangenkuss oder Nicken.",
+     "p": [
+      "Begrüßungen hängen vom Land, vom Anlass und davon ab, wie gut man sich kennt.",
+      "Ein sicherer Anfang fast überall: ein Lächeln, kulturell passender Blickkontakt und ein gesprochenes Hallo.",
+      "Lass den anderen führen: Bietet er die Hand, eine Verbeugung oder einen Kuss an, kannst du es spiegeln."
+     ],
+     "q": "Wie begrüßt man sich dort, wo du lebst, und ist es unter Freunden anders als unter Fremden?",
+     "c": "Beobachte heute, wie sich drei Menschen begrüßen, und notiere, welche Form sie gewählt haben."
+    },
+    "es": {
+     "t": "Lo básico del saludo",
+     "g": "Aprende a elegir el saludo adecuado: apretón de manos, reverencia, beso o un gesto con la cabeza.",
+     "p": [
+      "El saludo depende del país, del contexto y de cuánto se conocen las personas.",
+      "Un buen comienzo casi en cualquier lugar: una sonrisa, una mirada adecuada a la cultura y un hola.",
+      "Deja que la otra persona marque el ritmo: si ofrece la mano, una reverencia o un beso, puedes imitarlo."
+     ],
+     "q": "¿Cuál es el saludo habitual donde vives, y cambia entre amigos y desconocidos?",
+     "c": "Observa hoy cómo se saludan tres personas y anota qué saludo usó cada una."
+    },
+    "fr": {
+     "t": "Les bases des salutations",
+     "g": "Apprends à choisir la bonne salutation : poignée de main, inclinaison, bise ou signe de tête.",
+     "p": [
+      "Les salutations dépendent du pays, du contexte et du degré de familiarité.",
+      "Un bon début presque partout : un sourire, un regard adapté à la culture et un bonjour à voix haute.",
+      "Laisse l'autre mener : s'il tend la main, s'incline ou fait la bise, tu peux faire de même."
+     ],
+     "q": "Quelle est la salutation habituelle chez toi, et change-t-elle entre amis et inconnus ?",
+     "c": "Observe aujourd'hui comment trois personnes se saluent et note la salutation de chacune."
+    },
+    "it": {
+     "t": "Le basi del saluto",
+     "g": "Impara a scegliere il saluto giusto: stretta di mano, inchino, bacio sulla guancia o cenno del capo.",
+     "p": [
+      "Il saluto dipende dal Paese, dal contesto e da quanto le persone si conoscono.",
+      "Un inizio sicuro quasi ovunque: un sorriso, uno sguardo adatto alla cultura e un buongiorno detto a voce.",
+      "Lascia che sia l'altro a guidare: se offre la mano, un inchino o un bacio, puoi rispondere allo stesso modo."
+     ],
+     "q": "Qual è il saluto abituale dove vivi, e cambia tra amici e sconosciuti?",
+     "c": "Oggi osserva come si salutano tre persone e annota il tipo di saluto di ciascuna."
+    },
+    "pt": {
+     "t": "O básico dos cumprimentos",
+     "g": "Aprende a escolher o cumprimento certo: aperto de mão, vénia, beijinho ou aceno de cabeça.",
+     "p": [
+      "Os cumprimentos dependem do país, do contexto e de quão bem as pessoas se conhecem.",
+      "Um começo seguro quase em todo o lado: um sorriso, um olhar adequado à cultura e um olá dito em voz alta.",
+      "Deixa a outra pessoa conduzir: se oferecer a mão, uma vénia ou um beijinho, podes fazer o mesmo."
+     ],
+     "q": "Qual é o cumprimento habitual onde vives, e muda entre amigos e desconhecidos?",
+     "c": "Observa hoje como três pessoas se cumprimentam e anota o cumprimento de cada uma."
+    },
+    "pt_BR": {
+     "t": "O básico dos cumprimentos",
+     "g": "Aprenda a escolher o cumprimento certo: aperto de mão, reverência, beijo no rosto ou aceno de cabeça.",
+     "p": [
+      "Os cumprimentos dependem do país, do contexto e de quanto as pessoas se conhecem.",
+      "Um começo seguro em quase todo lugar: um sorriso, um olhar adequado à cultura e um oi dito em voz alta.",
+      "Deixe a outra pessoa conduzir: se ela oferecer a mão, uma reverência ou um beijo, você pode fazer igual."
+     ],
+     "q": "Qual é o cumprimento comum onde você mora, e ele muda entre amigos e desconhecidos?",
+     "c": "Observe hoje como três pessoas se cumprimentam e anote o cumprimento de cada uma."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The perfect handshake",
+     "g": "Discover how handshakes vary: firm or soft, long or short, around the world.",
+     "p": [
+      "In the US, Germany and Australia, a short, firm handshake with eye contact is the norm.",
+      "In much of Asia and the Middle East, a gentler, sometimes longer handshake is common and polite.",
+      "Some people prefer not to shake hands with the opposite sex; wait for them to offer and respect their choice."
+     ],
+     "q": "How would you describe your handshake, and has anyone ever surprised you with theirs?",
+     "c": "Practise a relaxed, friendly handshake with someone you know and ask for honest feedback."
+    },
+    "de": {
+     "t": "Der perfekte Händedruck",
+     "g": "Entdecke, wie unterschiedlich Händedrücke weltweit sind: fest oder sanft, kurz oder lang.",
+     "p": [
+      "In den USA, Deutschland und Australien ist ein kurzer, fester Händedruck mit Blickkontakt üblich.",
+      "In weiten Teilen Asiens und des Nahen Ostens ist ein sanfterer, manchmal längerer Händedruck höflich.",
+      "Manche geben dem anderen Geschlecht ungern die Hand; warte, ob sie dir die Hand reichen, und respektiere es."
+     ],
+     "q": "Wie würdest du deinen Händedruck beschreiben, und hat dich schon einmal jemand mit seinem überrascht?",
+     "c": "Übe mit einer vertrauten Person einen entspannten, freundlichen Händedruck und bitte um ehrliches Feedback."
+    },
+    "es": {
+     "t": "El apretón de manos perfecto",
+     "g": "Descubre cómo varía el apretón de manos en el mundo: firme o suave, largo o corto.",
+     "p": [
+      "En Estados Unidos, Alemania y Australia lo normal es un apretón breve y firme con contacto visual.",
+      "En gran parte de Asia y Oriente Medio es habitual y educado un apretón más suave y a veces más largo.",
+      "Algunas personas prefieren no dar la mano al otro sexo; espera a que la ofrezcan y respeta su decisión."
+     ],
+     "q": "¿Cómo describirías tu apretón de manos, y alguien te ha sorprendido alguna vez con el suyo?",
+     "c": "Practica un apretón relajado y amable con alguien de confianza y pídele una opinión sincera."
+    },
+    "fr": {
+     "t": "La poignée de main parfaite",
+     "g": "Découvre comment la poignée de main varie dans le monde : ferme ou douce, longue ou brève.",
+     "p": [
+      "Aux États-Unis, en Allemagne et en Australie, la norme est une poignée brève et ferme avec un regard franc.",
+      "Dans une grande partie de l'Asie et du Moyen-Orient, une poignée plus douce, parfois plus longue, est polie.",
+      "Certaines personnes préfèrent ne pas serrer la main du sexe opposé : attends qu'on te la tende et respecte ce choix."
+     ],
+     "q": "Comment décrirais-tu ta poignée de main, et quelqu'un t'a-t-il déjà surpris avec la sienne ?",
+     "c": "Entraîne-toi à une poignée de main détendue et amicale avec un proche et demande-lui un avis sincère."
+    },
+    "it": {
+     "t": "La stretta di mano perfetta",
+     "g": "Scopri come cambia la stretta di mano nel mondo: decisa o morbida, lunga o breve.",
+     "p": [
+      "Negli Stati Uniti, in Germania e in Australia è normale una stretta breve e decisa con lo sguardo negli occhi.",
+      "In gran parte dell'Asia e del Medio Oriente è comune ed educata una stretta più delicata, a volte più lunga.",
+      "Alcune persone preferiscono non stringere la mano all'altro sesso: aspetta che te la porgano e rispetta la scelta."
+     ],
+     "q": "Come descriveresti la tua stretta di mano, e qualcuno ti ha mai sorpreso con la sua?",
+     "c": "Esercitati con una persona di fiducia in una stretta rilassata e cordiale e chiedile un parere sincero."
+    },
+    "pt": {
+     "t": "O aperto de mão perfeito",
+     "g": "Descobre como o aperto de mão varia pelo mundo: firme ou suave, longo ou curto.",
+     "p": [
+      "Nos Estados Unidos, na Alemanha e na Austrália, o normal é um aperto curto e firme, olhando nos olhos.",
+      "Em grande parte da Ásia e do Médio Oriente, um aperto mais suave e por vezes mais longo é educado.",
+      "Algumas pessoas preferem não apertar a mão ao sexo oposto; espera que a ofereçam e respeita a escolha."
+     ],
+     "q": "Como descreverias o teu aperto de mão, e alguém já te surpreendeu com o seu?",
+     "c": "Pratica um aperto de mão descontraído e simpático com alguém de confiança e pede uma opinião sincera."
+    },
+    "pt_BR": {
+     "t": "O aperto de mão perfeito",
+     "g": "Descubra como o aperto de mão varia pelo mundo: firme ou suave, longo ou curto.",
+     "p": [
+      "Nos Estados Unidos, na Alemanha e na Austrália, o comum é um aperto curto e firme, olhando nos olhos.",
+      "Em boa parte da Ásia e do Oriente Médio, um aperto mais suave e às vezes mais longo é educado.",
+      "Algumas pessoas preferem não apertar a mão do sexo oposto; espere que ofereçam e respeite a escolha."
+     ],
+     "q": "Como você descreveria seu aperto de mão, e alguém já surpreendeu você com o dele?",
+     "c": "Pratique um aperto de mão tranquilo e simpático com alguém de confiança e peça uma opinião sincera."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Bowing basics in Japan",
+     "g": "Learn how to return a bow politely as a visitor to Japan.",
+     "p": [
+      "A light bow of about 15 degrees works for everyday greetings, thanks and small apologies.",
+      "Keep your back straight, look down slightly and keep your hands at your sides or in front.",
+      "Visitors are not expected to be perfect: a sincere small bow with a smile is warmly received."
+     ],
+     "q": "Have you ever bowed to someone, or seen bowing used as a greeting?",
+     "c": "Try a gentle 15-degree bow in front of a mirror, back straight and eyes lowered."
+    },
+    "de": {
+     "t": "Verbeugen in Japan: die Grundlagen",
+     "g": "Lerne, wie du als Besucher in Japan eine Verbeugung höflich erwiderst.",
+     "p": [
+      "Eine leichte Verbeugung von etwa 15 Grad passt zum alltäglichen Gruß, Dank und kleinen Entschuldigungen.",
+      "Halte den Rücken gerade, senke den Blick leicht und lass die Hände seitlich oder vor dem Körper.",
+      "Von Besuchern erwartet niemand Perfektion: Eine ehrliche kleine Verbeugung mit Lächeln kommt gut an."
+     ],
+     "q": "Hast du dich schon einmal vor jemandem verbeugt oder Verbeugungen als Gruß erlebt?",
+     "c": "Probiere vor dem Spiegel eine sanfte 15-Grad-Verbeugung mit geradem Rücken und gesenktem Blick."
+    },
+    "es": {
+     "t": "La reverencia en Japón",
+     "g": "Aprende a devolver una reverencia con educación como visitante en Japón.",
+     "p": [
+      "Una reverencia ligera de unos 15 grados sirve para saludos diarios, agradecimientos y pequeñas disculpas.",
+      "Mantén la espalda recta, baja un poco la mirada y deja las manos a los lados o por delante.",
+      "Nadie espera perfección de un visitante: una pequeña reverencia sincera con una sonrisa se agradece mucho."
+     ],
+     "q": "¿Alguna vez has hecho una reverencia o la has visto usar como saludo?",
+     "c": "Prueba ante el espejo una reverencia suave de 15 grados, con la espalda recta y la mirada baja."
+    },
+    "fr": {
+     "t": "S'incliner au Japon : les bases",
+     "g": "Apprends à rendre poliment une inclinaison en tant que visiteur au Japon.",
+     "p": [
+      "Une légère inclinaison d'environ 15 degrés convient aux salutations, remerciements et petites excuses du quotidien.",
+      "Garde le dos droit, baisse légèrement les yeux et laisse les mains le long du corps ou devant toi.",
+      "Personne n'attend la perfection d'un visiteur : une petite inclinaison sincère avec un sourire est très appréciée."
+     ],
+     "q": "T'es-tu déjà incliné devant quelqu'un, ou as-tu vu ce salut utilisé ?",
+     "c": "Essaie devant un miroir une inclinaison douce de 15 degrés, dos droit et regard baissé."
+    },
+    "it": {
+     "t": "L'inchino in Giappone: le basi",
+     "g": "Impara a ricambiare un inchino con garbo quando visiti il Giappone.",
+     "p": [
+      "Un inchino leggero di circa 15 gradi va bene per saluti quotidiani, ringraziamenti e piccole scuse.",
+      "Tieni la schiena dritta, abbassa leggermente lo sguardo e lascia le mani lungo i fianchi o davanti.",
+      "Nessuno si aspetta la perfezione da un visitatore: un piccolo inchino sincero con un sorriso è molto apprezzato."
+     ],
+     "q": "Ti è mai capitato di fare un inchino o di vederlo usare come saluto?",
+     "c": "Prova allo specchio un inchino leggero di 15 gradi, con la schiena dritta e lo sguardo basso."
+    },
+    "pt": {
+     "t": "A vénia no Japão: o básico",
+     "g": "Aprende a retribuir uma vénia com educação como visitante no Japão.",
+     "p": [
+      "Uma vénia leve de cerca de 15 graus serve para cumprimentos, agradecimentos e pequenas desculpas do dia a dia.",
+      "Mantém as costas direitas, baixa ligeiramente o olhar e deixa as mãos ao lado do corpo ou à frente.",
+      "Ninguém espera perfeição de um visitante: uma pequena vénia sincera com um sorriso é muito bem recebida."
+     ],
+     "q": "Já fizeste uma vénia a alguém ou viste este cumprimento a ser usado?",
+     "c": "Experimenta ao espelho uma vénia suave de 15 graus, com as costas direitas e o olhar baixo."
+    },
+    "pt_BR": {
+     "t": "A reverência no Japão: o básico",
+     "g": "Aprenda a retribuir uma reverência com educação como visitante no Japão.",
+     "p": [
+      "Uma reverência leve de uns 15 graus serve para cumprimentos, agradecimentos e pequenas desculpas do dia a dia.",
+      "Mantenha as costas retas, abaixe um pouco o olhar e deixe as mãos ao lado do corpo ou na frente.",
+      "Ninguém espera perfeição de um visitante: uma pequena reverência sincera com um sorriso é muito bem-vinda."
+     ],
+     "q": "Você já fez uma reverência para alguém ou viu esse cumprimento sendo usado?",
+     "c": "Experimente no espelho uma reverência suave de 15 graus, com as costas retas e o olhar baixo."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Greeting with cheek kisses",
+     "g": "Learn how many cheek kisses to give, which side to start on and when to let others lead.",
+     "p": [
+      "The number varies: one in much of Latin America, two in Spain and Italy, and two to four across regions of France.",
+      "Usually it is a light touch of cheeks with a kiss sound, not a real kiss on the skin.",
+      "If you are unsure, wait and follow the other person; a handshake or smile is always a fine alternative."
+     ],
+     "q": "Are cheek kisses common where you live, and how many do people usually give?",
+     "c": "Ask a friend from another region or country how many cheek kisses are normal there."
+    },
+    "de": {
+     "t": "Begrüßung mit Wangenküssen",
+     "g": "Lerne, wie viele Wangenküsse üblich sind, auf welcher Seite man beginnt und wann man den anderen führen lässt.",
+     "p": [
+      "Die Zahl variiert: einer in weiten Teilen Lateinamerikas, zwei in Spanien und Italien, zwei bis vier je nach Region Frankreichs.",
+      "Meist berühren sich nur die Wangen mit einem Kussgeräusch, die Lippen berühren die Haut nicht.",
+      "Wenn du unsicher bist, warte und folge dem anderen; ein Händedruck oder Lächeln ist immer eine gute Alternative."
+     ],
+     "q": "Sind Wangenküsse bei dir üblich, und wie viele gibt man normalerweise?",
+     "c": "Frag einen Freund aus einer anderen Region oder einem anderen Land, wie viele Wangenküsse dort normal sind."
+    },
+    "es": {
+     "t": "Saludar con besos en la mejilla",
+     "g": "Aprende cuántos besos dar, por qué lado empezar y cuándo dejar que la otra persona guíe.",
+     "p": [
+      "El número varía: uno en gran parte de Latinoamérica, dos en España e Italia, y de dos a cuatro según la región de Francia.",
+      "Normalmente es un leve roce de mejillas con sonido de beso, no un beso real en la piel.",
+      "Si dudas, espera y sigue a la otra persona; un apretón de manos o una sonrisa siempre son buena opción."
+     ],
+     "q": "¿Son comunes los besos en la mejilla donde vives, y cuántos se suelen dar?",
+     "c": "Pregunta a un amigo de otra región o país cuántos besos son normales allí."
+    },
+    "fr": {
+     "t": "Saluer en faisant la bise",
+     "g": "Apprends combien de bises faire, de quel côté commencer et quand laisser l'autre mener.",
+     "p": [
+      "Le nombre varie : une dans l'essentiel de l'Amérique latine, deux en Espagne et en Italie, de deux à quatre selon les régions de France.",
+      "En général, les joues se frôlent avec un bruit de bisou, sans vrai baiser sur la peau.",
+      "En cas de doute, attends et suis l'autre ; une poignée de main ou un sourire conviennent toujours."
+     ],
+     "q": "La bise est-elle courante chez toi, et combien en fait-on d'habitude ?",
+     "c": "Demande à un ami d'une autre région ou d'un autre pays combien de bises on fait chez lui."
+    },
+    "it": {
+     "t": "Salutare con i baci sulla guancia",
+     "g": "Impara quanti baci dare, da che lato iniziare e quando lasciare che sia l'altro a guidare.",
+     "p": [
+      "Il numero cambia: uno in gran parte dell'America Latina, due in Spagna e in Italia, da due a quattro secondo le regioni francesi.",
+      "Di solito è un leggero contatto delle guance con il suono del bacio, non un vero bacio sulla pelle.",
+      "Nel dubbio aspetta e segui l'altra persona; una stretta di mano o un sorriso vanno sempre bene."
+     ],
+     "q": "Dove vivi i baci sulla guancia sono comuni, e quanti se ne danno di solito?",
+     "c": "Chiedi a un amico di un'altra regione o di un altro Paese quanti baci sono normali da lui."
+    },
+    "pt": {
+     "t": "Cumprimentar com beijinhos",
+     "g": "Aprende quantos beijinhos dar, de que lado começar e quando deixar a outra pessoa conduzir.",
+     "p": [
+      "O número varia: um em grande parte da América Latina, dois em Portugal, Espanha e Itália, e de dois a quatro conforme a região de França.",
+      "Normalmente é um leve toque de faces com o som do beijo, não um beijo verdadeiro na pele.",
+      "Na dúvida, espera e segue a outra pessoa; um aperto de mão ou um sorriso são sempre boa alternativa."
+     ],
+     "q": "Os beijinhos são comuns onde vives, e quantos se costumam dar?",
+     "c": "Pergunta a um amigo de outra região ou país quantos beijinhos são normais lá."
+    },
+    "pt_BR": {
+     "t": "Cumprimentar com beijo no rosto",
+     "g": "Aprenda quantos beijos dar, de que lado começar e quando deixar a outra pessoa conduzir.",
+     "p": [
+      "O número varia: um em boa parte da América Latina, dois na Espanha e na Itália, e de dois a quatro conforme a região da França.",
+      "Normalmente é um leve encostar de rostos com o som do beijo, não um beijo de verdade na pele.",
+      "Na dúvida, espere e siga a outra pessoa; um aperto de mão ou um sorriso são sempre boa alternativa."
+     ],
+     "q": "Beijo no rosto é comum onde você mora, e quantos as pessoas costumam dar?",
+     "c": "Pergunte a um amigo de outra região ou país quantos beijos são normais por lá."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Greetings without touch",
+     "g": "Discover respectful greetings that need no touch: nods, a hand on the heart and namaste.",
+     "p": [
+      "In India and Nepal, namaste with palms pressed together at the chest is a warm, respectful greeting.",
+      "In parts of the Middle East and Southeast Asia, a hand placed on the heart shows sincere goodwill.",
+      "A smile with a slight nod works almost everywhere and suits anyone who prefers not to touch."
+     ],
+     "q": "Do you prefer greetings with or without touch, and does it depend on who you meet?",
+     "c": "Greet someone today with a smile and a slight nod or a hand on your heart instead of touching."
+    },
+    "de": {
+     "t": "Begrüßungen ohne Berührung",
+     "g": "Entdecke respektvolle Begrüßungen ganz ohne Berührung: Nicken, Hand aufs Herz und Namaste.",
+     "p": [
+      "In Indien und Nepal ist Namaste mit vor der Brust aneinandergelegten Handflächen ein herzlicher Gruß.",
+      "In Teilen des Nahen Ostens und Südostasiens zeigt eine Hand auf dem Herzen aufrichtiges Wohlwollen.",
+      "Ein Lächeln mit leichtem Nicken funktioniert fast überall und passt zu allen, die Berührung lieber meiden."
+     ],
+     "q": "Magst du Begrüßungen lieber mit oder ohne Berührung, und hängt es davon ab, wen du triffst?",
+     "c": "Begrüße heute jemanden mit Lächeln und leichtem Nicken oder mit der Hand auf dem Herzen."
+    },
+    "es": {
+     "t": "Saludos sin contacto",
+     "g": "Descubre saludos respetuosos sin contacto: un gesto con la cabeza, la mano en el corazón y el namasté.",
+     "p": [
+      "En la India y Nepal, el namasté, con las palmas juntas ante el pecho, es un saludo cálido y respetuoso.",
+      "En partes de Oriente Medio y el Sudeste Asiático, la mano sobre el corazón expresa buena voluntad sincera.",
+      "Una sonrisa con una leve inclinación de cabeza funciona casi en todas partes y respeta a quien prefiere no tocar."
+     ],
+     "q": "¿Prefieres saludos con o sin contacto, y depende de con quién te encuentres?",
+     "c": "Saluda hoy a alguien con una sonrisa y un leve gesto de cabeza o con la mano en el corazón."
+    },
+    "fr": {
+     "t": "Saluer sans se toucher",
+     "g": "Découvre des salutations respectueuses sans contact : signe de tête, main sur le cœur et namasté.",
+     "p": [
+      "En Inde et au Népal, le namasté, paumes jointes devant la poitrine, est un salut chaleureux et respectueux.",
+      "Dans certaines régions du Moyen-Orient et d'Asie du Sud-Est, la main sur le cœur exprime une bienveillance sincère.",
+      "Un sourire avec un léger signe de tête marche presque partout et convient à qui préfère éviter le contact."
+     ],
+     "q": "Préfères-tu les salutations avec ou sans contact, et cela dépend-il de la personne ?",
+     "c": "Salue aujourd'hui quelqu'un d'un sourire et d'un léger signe de tête ou la main sur le cœur."
+    },
+    "it": {
+     "t": "Saluti senza contatto",
+     "g": "Scopri saluti rispettosi senza contatto: un cenno del capo, la mano sul cuore e il namasté.",
+     "p": [
+      "In India e in Nepal il namasté, con i palmi uniti davanti al petto, è un saluto caloroso e rispettoso.",
+      "In parti del Medio Oriente e del Sud-est asiatico la mano sul cuore esprime sincera benevolenza.",
+      "Un sorriso con un lieve cenno del capo funziona quasi ovunque e rispetta chi preferisce non toccarsi."
+     ],
+     "q": "Preferisci i saluti con o senza contatto, e dipende da chi incontri?",
+     "c": "Oggi saluta qualcuno con un sorriso e un lieve cenno del capo o con la mano sul cuore."
+    },
+    "pt": {
+     "t": "Cumprimentos sem toque",
+     "g": "Descobre cumprimentos respeitosos sem toque: um aceno de cabeça, a mão no coração e o namaste.",
+     "p": [
+      "Na Índia e no Nepal, o namaste, com as palmas unidas à frente do peito, é um cumprimento caloroso e respeitoso.",
+      "Em partes do Médio Oriente e do Sudeste Asiático, a mão no coração mostra boa vontade sincera.",
+      "Um sorriso com um leve aceno de cabeça funciona quase em todo o lado e respeita quem prefere não tocar."
+     ],
+     "q": "Preferes cumprimentos com ou sem toque, e depende de quem encontras?",
+     "c": "Cumprimenta hoje alguém com um sorriso e um leve aceno ou com a mão no coração."
+    },
+    "pt_BR": {
+     "t": "Cumprimentos sem toque",
+     "g": "Descubra cumprimentos respeitosos sem toque: um aceno de cabeça, a mão no coração e o namastê.",
+     "p": [
+      "Na Índia e no Nepal, o namastê, com as palmas unidas diante do peito, é um cumprimento caloroso e respeitoso.",
+      "Em partes do Oriente Médio e do Sudeste Asiático, a mão no coração mostra boa vontade sincera.",
+      "Um sorriso com um leve aceno de cabeça funciona em quase todo lugar e respeita quem prefere não tocar."
+     ],
+     "q": "Você prefere cumprimentos com ou sem toque, e isso depende de quem você encontra?",
+     "c": "Cumprimente alguém hoje com um sorriso e um leve aceno ou com a mão no coração."
+    }
+   }
+  }
+ ]
+}

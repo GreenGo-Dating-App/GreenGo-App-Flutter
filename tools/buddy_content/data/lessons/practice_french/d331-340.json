@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_french",
+ "lessons": [
+  {
+   "d": 331,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Philosophy café",
+     "g": "Discuss big questions in French with ideas from Descartes, Rousseau and Simone de Beauvoir.",
+     "p": [
+      "Descartes: Je pense, donc je suis. Doubt everything to find what is certain. A key phrase of French thought.",
+      "Rousseau believed people are born good and shaped by society. Beauvoir wrote On ne naît pas femme, on le devient.",
+      "In a café philo, everyone asks questions: Qu'est-ce que le bonheur ? Peut-on être libre ? Use selon moi and je me demande si."
+     ],
+     "q": "Qu'est-ce que le bonheur pour toi? Answer in French in three or four sentences.",
+     "c": "Choose one big question and write a short French answer with selon moi, d'un côté and de l'autre."
+    },
+    "de": {
+     "t": "Philosophisches Café",
+     "g": "Du diskutierst große Fragen auf Französisch mit Ideen von Descartes, Rousseau und Simone de Beauvoir.",
+     "p": [
+      "Descartes: Je pense, donc je suis. Alles bezweifeln, um das Sichere zu finden. Ein Schlüsselsatz des französischen Denkens.",
+      "Rousseau meinte, der Mensch sei von Natur aus gut und werde von der Gesellschaft geprägt. Beauvoir: On ne naît pas femme, on le devient.",
+      "Im café philo stellen alle Fragen: Qu'est-ce que le bonheur ? Peut-on être libre ? Nutze selon moi und je me demande si."
+     ],
+     "q": "Qu'est-ce que le bonheur für dich? Antworte auf Französisch in drei, vier Sätzen.",
+     "c": "Wähle eine große Frage und schreib eine kurze Antwort auf Französisch mit selon moi, d'un côté und de l'autre."
+    },
+    "es": {
+     "t": "Café filosófico",
+     "g": "Debate grandes preguntas en francés con ideas de Descartes, Rousseau y Simone de Beauvoir.",
+     "p": [
+      "Descartes: Je pense, donc je suis. Dudar de todo para encontrar lo cierto. Una frase clave del pensamiento francés.",
+      "Rousseau creía que el ser humano nace bueno y la sociedad lo moldea. Beauvoir escribió On ne naît pas femme, on le devient.",
+      "En un café philo todos preguntan: Qu'est-ce que le bonheur ? Peut-on être libre ? Usa selon moi y je me demande si."
+     ],
+     "q": "Qu'est-ce que le bonheur para ti? Responde en francés en tres o cuatro frases.",
+     "c": "Elige una gran pregunta y escribe una respuesta breve en francés con selon moi, d'un côté y de l'autre."
+    },
+    "fr": {
+     "t": "Le café philo",
+     "g": "Discuter de grandes questions avec les idées de Descartes, Rousseau et Simone de Beauvoir.",
+     "p": [
+      "Descartes : Je pense, donc je suis. Douter de tout pour trouver une certitude. Une phrase clé de la pensée française.",
+      "Rousseau pensait que l'homme naît bon et que la société le transforme. Beauvoir : On ne naît pas femme, on le devient.",
+      "Au café philo, chacun pose des questions : Qu'est-ce que le bonheur ? Peut-on être libre ? On dit selon moi, je me demande si."
+     ],
+     "q": "Qu'est-ce que le bonheur pour toi ? Réponds en trois ou quatre phrases.",
+     "c": "Choisis une grande question et réponds brièvement avec selon moi, d'un côté et de l'autre."
+    },
+    "it": {
+     "t": "Caffè filosofico",
+     "g": "Discuti grandi domande in francese con le idee di Descartes, Rousseau e Simone de Beauvoir.",
+     "p": [
+      "Descartes: Je pense, donc je suis. Dubitare di tutto per trovare una certezza. Una frase chiave del pensiero francese.",
+      "Rousseau pensava che l'uomo nasca buono e che la società lo trasformi. Beauvoir scrisse On ne naît pas femme, on le devient.",
+      "In un café philo tutti fanno domande: Qu'est-ce que le bonheur ? Peut-on être libre ? Usa selon moi e je me demande si."
+     ],
+     "q": "Qu'est-ce que le bonheur per te? Rispondi in francese in tre o quattro frasi.",
+     "c": "Scegli una grande domanda e scrivi una breve risposta in francese con selon moi, d'un côté e de l'autre."
+    },
+    "pt": {
+     "t": "Café filosófico",
+     "g": "Debate grandes questões em francês com ideias de Descartes, Rousseau e Simone de Beauvoir.",
+     "p": [
+      "Descartes: Je pense, donc je suis. Duvidar de tudo para encontrar uma certeza. Uma frase-chave do pensamento francês.",
+      "Rousseau achava que o ser humano nasce bom e que a sociedade o molda. Beauvoir escreveu On ne naît pas femme, on le devient.",
+      "Num café philo, todos fazem perguntas: Qu'est-ce que le bonheur ? Peut-on être libre ? Usa selon moi e je me demande si."
+     ],
+     "q": "Qu'est-ce que le bonheur para ti? Responde em francês em três ou quatro frases.",
+     "c": "Escolhe uma grande questão e escreve uma resposta curta em francês com selon moi, d'un côté e de l'autre."
+    },
+    "pt_BR": {
+     "t": "Café filosófico",
+     "g": "Discuta grandes questões em francês com ideias de Descartes, Rousseau e Simone de Beauvoir.",
+     "p": [
+      "Descartes: Je pense, donc je suis. Duvidar de tudo para achar uma certeza. Uma frase-chave do pensamento francês.",
+      "Rousseau achava que o ser humano nasce bom e que a sociedade o molda. Beauvoir escreveu On ne naît pas femme, on le devient.",
+      "Num café philo, todo mundo faz perguntas: Qu'est-ce que le bonheur ? Peut-on être libre ? Use selon moi e je me demande si."
+     ],
+     "q": "Qu'est-ce que le bonheur para você? Responda em francês em três ou quatro frases.",
+     "c": "Escolha uma grande questão e escreva uma resposta curta em francês com selon moi, d'un côté e de l'autre."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "le bonheur",
+      "ex": "Pour moi, le bonheur, c'est le temps passé avec mes proches."
+     },
+     {
+      "w": "la liberté",
+      "ex": "La liberté implique aussi des responsabilités."
+     },
+     {
+      "w": "douter",
+      "ex": "Descartes nous invite à douter de tout."
+     },
+     {
+      "w": "je me demande si",
+      "ex": "Je me demande si on peut être heureux seul."
+     },
+     {
+      "w": "d'un côté... de l'autre",
+      "ex": "D'un côté, l'argent rassure ; de l'autre, il ne suffit pas."
+     },
+     {
+      "w": "une réflexion",
+      "ex": "Cette question mérite une vraie réflexion."
+     }
+    ],
+    "gram": "Je me demande si + indicatif (interrogation indirecte) : je me demande si le bonheur dépend de nous."
+   }
+  },
+  {
+   "d": 332,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Discussing art",
+     "g": "Talk about a work of art in French: the work, the movement, the technique and how it moves you.",
+     "p": [
+      "Une œuvre (a work) belongs to un mouvement: l'impressionnisme (Monet), le cubisme (Picasso, Braque), le surréalisme.",
+      "Technique: la lumière, les couleurs vives, le coup de pinceau, au premier plan, à l'arrière-plan.",
+      "Feelings: Ce qui m'émeut, c'est... / Ce tableau me fait penser à... / Je suis touché(e) par..."
+     ],
+     "q": "Which painting or work of art moves you most? Describe it in French.",
+     "c": "Describe a famous painting in four French sentences: movement, foreground, colours and your feeling."
+    },
+    "de": {
+     "t": "Über Kunst sprechen",
+     "g": "Du sprichst auf Französisch über ein Kunstwerk: Werk, Stilrichtung, Technik und was dich berührt.",
+     "p": [
+      "Une œuvre (ein Werk) gehört zu un mouvement: l'impressionnisme (Monet), le cubisme (Picasso, Braque), le surréalisme.",
+      "Technik: la lumière, les couleurs vives, le coup de pinceau, au premier plan, à l'arrière-plan.",
+      "Gefühle: Ce qui m'émeut, c'est... / Ce tableau me fait penser à... / Je suis touché(e) par..."
+     ],
+     "q": "Welches Gemälde oder Kunstwerk berührt dich am meisten? Beschreib es auf Französisch.",
+     "c": "Beschreib ein berühmtes Gemälde in vier französischen Sätzen: Stil, Vordergrund, Farben und dein Gefühl."
+    },
+    "es": {
+     "t": "Hablar de arte",
+     "g": "Habla de una obra de arte en francés: la obra, el movimiento, la técnica y lo que te emociona.",
+     "p": [
+      "Une œuvre (una obra) pertenece a un mouvement: l'impressionnisme (Monet), le cubisme (Picasso, Braque), le surréalisme.",
+      "Técnica: la lumière, les couleurs vives, le coup de pinceau, au premier plan, à l'arrière-plan.",
+      "Emociones: Ce qui m'émeut, c'est... / Ce tableau me fait penser à... / Je suis touché(e) par..."
+     ],
+     "q": "¿Qué cuadro u obra de arte te emociona más? Descríbelo en francés.",
+     "c": "Describe un cuadro famoso en cuatro frases en francés: movimiento, primer plano, colores y lo que sientes."
+    },
+    "fr": {
+     "t": "Parler d'art",
+     "g": "Parler d'une œuvre d'art : l'œuvre, le mouvement, la technique et ce qui nous émeut.",
+     "p": [
+      "Une œuvre appartient à un mouvement : l'impressionnisme (Monet), le cubisme (Picasso, Braque), le surréalisme.",
+      "La technique : la lumière, les couleurs vives, le coup de pinceau, au premier plan, à l'arrière-plan.",
+      "L'émotion : Ce qui m'émeut, c'est... / Ce tableau me fait penser à... / Je suis touché(e) par..."
+     ],
+     "q": "Quel tableau ou quelle œuvre te touche le plus ? Décris-le.",
+     "c": "Décris un tableau célèbre en quatre phrases : mouvement, premier plan, couleurs et ressenti."
+    },
+    "it": {
+     "t": "Parlare d'arte",
+     "g": "Parla di un'opera d'arte in francese: l'opera, il movimento, la tecnica e ciò che ti emoziona.",
+     "p": [
+      "Une œuvre (un'opera) appartiene a un mouvement: l'impressionnisme (Monet), le cubisme (Picasso, Braque), le surréalisme.",
+      "Tecnica: la lumière, les couleurs vives, le coup de pinceau, au premier plan, à l'arrière-plan.",
+      "Emozioni: Ce qui m'émeut, c'est... / Ce tableau me fait penser à... / Je suis touché(e) par..."
+     ],
+     "q": "Quale quadro od opera d'arte ti emoziona di più? Descrivilo in francese.",
+     "c": "Descrivi un quadro famoso in quattro frasi in francese: movimento, primo piano, colori e ciò che provi."
+    },
+    "pt": {
+     "t": "Falar de arte",
+     "g": "Fala de uma obra de arte em francês: a obra, o movimento, a técnica e o que te comove.",
+     "p": [
+      "Une œuvre (uma obra) pertence a un mouvement: l'impressionnisme (Monet), le cubisme (Picasso, Braque), le surréalisme.",
+      "Técnica: la lumière, les couleurs vives, le coup de pinceau, au premier plan, à l'arrière-plan.",
+      "Emoções: Ce qui m'émeut, c'est... / Ce tableau me fait penser à... / Je suis touché(e) par..."
+     ],
+     "q": "Que quadro ou obra de arte te comove mais? Descreve-o em francês.",
+     "c": "Descreve um quadro famoso em quatro frases em francês: movimento, primeiro plano, cores e o que sentes."
+    },
+    "pt_BR": {
+     "t": "Falando de arte",
+     "g": "Fale de uma obra de arte em francês: a obra, o movimento, a técnica e o que te emociona.",
+     "p": [
+      "Une œuvre (uma obra) pertence a un mouvement: l'impressionnisme (Monet), le cubisme (Picasso, Braque), le surréalisme.",
+      "Técnica: la lumière, les couleurs vives, le coup de pinceau, au premier plan, à l'arrière-plan.",
+      "Emoções: Ce qui m'émeut, c'est... / Ce tableau me fait penser à... / Je suis touché(e) par..."
+     ],
+     "q": "Qual quadro ou obra de arte mais te emociona? Descreva em francês.",
+     "c": "Descreva um quadro famoso em quatro frases em francês: movimento, primeiro plano, cores e o que você sente."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "une œuvre",
+      "ex": "Cette œuvre est exposée au musée d'Orsay."
+     },
+     {
+      "w": "un mouvement artistique",
+      "ex": "L'impressionnisme est un mouvement artistique né en France."
+     },
+     {
+      "w": "au premier plan",
+      "ex": "Au premier plan, on voit une barque sur l'eau."
+     },
+     {
+      "w": "le coup de pinceau",
+      "ex": "On reconnaît son coup de pinceau rapide."
+     },
+     {
+      "w": "émouvoir",
+      "ex": "Ce portrait m'émeut profondément."
+     },
+     {
+      "w": "faire penser à",
+      "ex": "Ces couleurs me font penser à l'été."
+     }
+    ],
+    "gram": "Mise en relief : ce qui m'émeut, c'est... / ce que j'aime, c'est... (ce qui sujet, ce que complément d'objet)."
+   }
+  },
+  {
+   "d": 333,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Architecture and heritage",
+     "g": "Talk about French architecture and heritage: cathedrals, châteaux, Haussmann and le patrimoine.",
+     "p": [
+      "Gothic cathedrals like Notre-Dame de Paris or Chartres have rose windows (des rosaces) and flying buttresses.",
+      "Châteaux de la Loire such as Chambord and Chenonceau show Renaissance style. Versailles is classical.",
+      "Haussmann reshaped Paris in the 19th century: wide boulevards and stone buildings with balconies."
+     ],
+     "q": "Which building or monument from your country would you show to a French visitor?",
+     "c": "Describe a monument you love in French using construit au, de style and classé au patrimoine."
+    },
+    "de": {
+     "t": "Architektur und Kulturerbe",
+     "g": "Du sprichst über französische Architektur und Kulturerbe: Kathedralen, Schlösser, Haussmann und le patrimoine.",
+     "p": [
+      "Gotische Kathedralen wie Notre-Dame de Paris oder Chartres haben Rosetten (des rosaces) und Strebebögen.",
+      "Loire-Schlösser wie Chambord und Chenonceau zeigen den Renaissancestil. Versailles ist klassisch.",
+      "Haussmann gestaltete Paris im 19. Jahrhundert um: breite Boulevards und Steinbauten mit Balkonen."
+     ],
+     "q": "Welches Gebäude oder Denkmal deines Landes würdest du einem französischen Gast zeigen?",
+     "c": "Beschreib ein Denkmal, das du liebst, auf Französisch mit construit au, de style und classé au patrimoine."
+    },
+    "es": {
+     "t": "Arquitectura y patrimonio",
+     "g": "Habla de la arquitectura y el patrimonio franceses: catedrales, castillos, Haussmann y le patrimoine.",
+     "p": [
+      "Las catedrales góticas como Notre-Dame de París o Chartres tienen rosetones (des rosaces) y arbotantes.",
+      "Los castillos del Loira como Chambord y Chenonceau muestran el estilo renacentista. Versalles es clásico.",
+      "Haussmann transformó París en el siglo XIX: amplios bulevares y edificios de piedra con balcones."
+     ],
+     "q": "¿Qué edificio o monumento de tu país le enseñarías a un visitante francés?",
+     "c": "Describe en francés un monumento que te encanta con construit au, de style y classé au patrimoine."
+    },
+    "fr": {
+     "t": "Architecture et patrimoine",
+     "g": "Parler de l'architecture et du patrimoine français : cathédrales, châteaux, Haussmann.",
+     "p": [
+      "Les cathédrales gothiques comme Notre-Dame de Paris ou Chartres ont des rosaces et des arcs-boutants.",
+      "Les châteaux de la Loire, comme Chambord et Chenonceau, sont de style Renaissance. Versailles est classique.",
+      "Haussmann a transformé Paris au XIXe siècle : larges boulevards et immeubles en pierre à balcons."
+     ],
+     "q": "Quel bâtiment ou monument de ton pays montrerais-tu à un visiteur français ?",
+     "c": "Décris un monument que tu aimes avec construit au, de style et classé au patrimoine."
+    },
+    "it": {
+     "t": "Architettura e patrimonio",
+     "g": "Parla dell'architettura e del patrimonio francesi: cattedrali, castelli, Haussmann e le patrimoine.",
+     "p": [
+      "Le cattedrali gotiche come Notre-Dame de Paris o Chartres hanno rosoni (des rosaces) e archi rampanti.",
+      "I castelli della Loira come Chambord e Chenonceau mostrano lo stile rinascimentale. Versailles è classica.",
+      "Haussmann trasformò Parigi nell'Ottocento: ampi boulevard ed edifici in pietra con balconi."
+     ],
+     "q": "Quale edificio o monumento del tuo paese mostreresti a un visitatore francese?",
+     "c": "Descrivi in francese un monumento che ami con construit au, de style e classé au patrimoine."
+    },
+    "pt": {
+     "t": "Arquitetura e património",
+     "g": "Fala da arquitetura e do património franceses: catedrais, castelos, Haussmann e le patrimoine.",
+     "p": [
+      "As catedrais góticas como Notre-Dame de Paris ou Chartres têm rosáceas (des rosaces) e arcobotantes.",
+      "Os castelos do Loire como Chambord e Chenonceau mostram o estilo renascentista. Versalhes é clássico.",
+      "Haussmann transformou Paris no século XIX: avenidas largas e prédios de pedra com varandas."
+     ],
+     "q": "Que edifício ou monumento do teu país mostrarias a um visitante francês?",
+     "c": "Descreve em francês um monumento de que gostas com construit au, de style e classé au patrimoine."
+    },
+    "pt_BR": {
+     "t": "Arquitetura e patrimônio",
+     "g": "Fale da arquitetura e do patrimônio franceses: catedrais, castelos, Haussmann e le patrimoine.",
+     "p": [
+      "As catedrais góticas como Notre-Dame de Paris ou Chartres têm rosáceas (des rosaces) e arcobotantes.",
+      "Os castelos do Loire como Chambord e Chenonceau mostram o estilo renascentista. Versalhes é clássico.",
+      "Haussmann transformou Paris no século XIX: avenidas largas e prédios de pedra com sacadas."
+     ],
+     "q": "Qual prédio ou monumento do seu país você mostraria a um visitante francês?",
+     "c": "Descreva em francês um monumento de que você gosta com construit au, de style e classé au patrimoine."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "le patrimoine",
+      "ex": "Le patrimoine français attire des millions de visiteurs."
+     },
+     {
+      "w": "une cathédrale",
+      "ex": "La cathédrale de Chartres est célèbre pour ses vitraux."
+     },
+     {
+      "w": "un château",
+      "ex": "Le château de Chambord se trouve dans la vallée de la Loire."
+     },
+     {
+      "w": "un immeuble haussmannien",
+      "ex": "Elle habite dans un immeuble haussmannien."
+     },
+     {
+      "w": "classé monument historique",
+      "ex": "Ce pont est classé monument historique."
+     },
+     {
+      "w": "restaurer",
+      "ex": "Il a fallu des années pour restaurer la façade."
+     }
+    ],
+    "gram": "Voix passive pour l'histoire d'un monument : la cathédrale a été construite au XIIIe siècle par des centaines d'artisans."
+   }
+  },
+  {
+   "d": 334,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Poetry",
+     "g": "Read a short French poem with Baudelaire, Verlaine and Prévert as guides.",
+     "p": [
+      "Baudelaire (Les Fleurs du mal) and Verlaine (Il pleure dans mon cœur / Comme il pleut sur la ville) love music and images.",
+      "Prévert writes simple, everyday words: Déjeuner du matin tells a scene with short lines and no rhyme.",
+      "Poetry words: un vers (line), une strophe (stanza), la rime, le rythme. Read aloud slowly and feel the sounds."
+     ],
+     "q": "Do you have a favourite poem or song lyric? What do you like about it?",
+     "c": "Write a four-line French poem about your morning, in the simple style of Prévert."
+    },
+    "de": {
+     "t": "Poesie",
+     "g": "Du liest ein kurzes französisches Gedicht, begleitet von Baudelaire, Verlaine und Prévert.",
+     "p": [
+      "Baudelaire (Les Fleurs du mal) und Verlaine (Il pleure dans mon cœur / Comme il pleut sur la ville) lieben Klang und Bilder.",
+      "Prévert nutzt einfache Alltagswörter: Déjeuner du matin erzählt eine Szene in kurzen Versen ohne Reim.",
+      "Poesiewörter: un vers (Vers), une strophe (Strophe), la rime, le rythme. Lies langsam und laut und spür die Klänge."
+     ],
+     "q": "Hast du ein Lieblingsgedicht oder einen Liedtext? Was gefällt dir daran?",
+     "c": "Schreib ein vierzeiliges französisches Gedicht über deinen Morgen im einfachen Stil von Prévert."
+    },
+    "es": {
+     "t": "Poesía",
+     "g": "Lee un poema francés breve con Baudelaire, Verlaine y Prévert como guías.",
+     "p": [
+      "Baudelaire (Les Fleurs du mal) y Verlaine (Il pleure dans mon cœur / Comme il pleut sur la ville) aman la música y las imágenes.",
+      "Prévert usa palabras sencillas y cotidianas: Déjeuner du matin cuenta una escena con versos cortos y sin rima.",
+      "Vocabulario: un vers (verso), une strophe (estrofa), la rime, le rythme. Lee despacio y en voz alta, siente los sonidos."
+     ],
+     "q": "¿Tienes un poema o una letra de canción favorita? ¿Qué te gusta de ella?",
+     "c": "Escribe un poema de cuatro versos en francés sobre tu mañana, al estilo sencillo de Prévert."
+    },
+    "fr": {
+     "t": "La poésie",
+     "g": "Lire un court poème avec Baudelaire, Verlaine et Prévert pour guides.",
+     "p": [
+      "Baudelaire (Les Fleurs du mal) et Verlaine (Il pleure dans mon cœur / Comme il pleut sur la ville) aiment la musique et les images.",
+      "Prévert emploie des mots simples du quotidien : Déjeuner du matin raconte une scène en vers courts, sans rimes.",
+      "Le vocabulaire : un vers, une strophe, la rime, le rythme. On lit lentement, à voix haute, pour sentir les sons."
+     ],
+     "q": "As-tu un poème ou des paroles de chanson préférés ? Qu'est-ce qui te plaît ?",
+     "c": "Écris un poème de quatre vers sur ton matin, dans le style simple de Prévert."
+    },
+    "it": {
+     "t": "Poesia",
+     "g": "Leggi una breve poesia francese con Baudelaire, Verlaine e Prévert come guide.",
+     "p": [
+      "Baudelaire (Les Fleurs du mal) e Verlaine (Il pleure dans mon cœur / Comme il pleut sur la ville) amano la musica e le immagini.",
+      "Prévert usa parole semplici e quotidiane: Déjeuner du matin racconta una scena in versi brevi, senza rima.",
+      "Lessico: un vers (verso), une strophe (strofa), la rime, le rythme. Leggi piano e ad alta voce, senti i suoni."
+     ],
+     "q": "Hai una poesia o un testo di canzone preferito? Cosa ti piace?",
+     "c": "Scrivi una poesia di quattro versi in francese sulla tua mattina, nello stile semplice di Prévert."
+    },
+    "pt": {
+     "t": "Poesia",
+     "g": "Lê um poema francês curto com Baudelaire, Verlaine e Prévert como guias.",
+     "p": [
+      "Baudelaire (Les Fleurs du mal) e Verlaine (Il pleure dans mon cœur / Comme il pleut sur la ville) adoram música e imagens.",
+      "Prévert usa palavras simples do dia a dia: Déjeuner du matin conta uma cena em versos curtos, sem rima.",
+      "Vocabulário: un vers (verso), une strophe (estrofe), la rime, le rythme. Lê devagar e em voz alta, sente os sons."
+     ],
+     "q": "Tens um poema ou letra de canção preferida? O que gostas nela?",
+     "c": "Escreve um poema de quatro versos em francês sobre a tua manhã, no estilo simples de Prévert."
+    },
+    "pt_BR": {
+     "t": "Poesia",
+     "g": "Leia um poema francês curto com Baudelaire, Verlaine e Prévert como guias.",
+     "p": [
+      "Baudelaire (Les Fleurs du mal) e Verlaine (Il pleure dans mon cœur / Comme il pleut sur la ville) amam música e imagens.",
+      "Prévert usa palavras simples do cotidiano: Déjeuner du matin conta uma cena em versos curtos, sem rima.",
+      "Vocabulário: un vers (verso), une strophe (estrofe), la rime, le rythme. Leia devagar e em voz alta, sinta os sons."
+     ],
+     "q": "Você tem um poema ou letra de música favorita? Do que você gosta nela?",
+     "c": "Escreva um poema de quatro versos em francês sobre a sua manhã, no estilo simples de Prévert."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "un poème",
+      "ex": "J'ai appris ce poème par cœur à l'école."
+     },
+     {
+      "w": "un vers",
+      "ex": "Le premier vers est très musical."
+     },
+     {
+      "w": "une strophe",
+      "ex": "Le poème compte trois strophes."
+     },
+     {
+      "w": "la rime",
+      "ex": "Ville rime avec tranquille."
+     },
+     {
+      "w": "un recueil",
+      "ex": "Les Fleurs du mal est un recueil de Baudelaire."
+     },
+     {
+      "w": "réciter",
+      "ex": "Elle a récité un poème de Prévert devant la classe."
+     }
+    ],
+    "gram": "Comparaison poétique avec comme : Il pleure dans mon cœur comme il pleut sur la ville."
+   }
+  },
+  {
+   "d": 335,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Theatre",
+     "g": "Talk about theatre in French: Molière, Racine, the stage, directing and famous lines.",
+     "p": [
+      "Molière wrote comedies that mock human faults: L'Avare, Le Malade imaginaire. French is called la langue de Molière.",
+      "Racine wrote tragedies in alexandrines (12-syllable lines), such as Phèdre and Andromaque.",
+      "Theatre words: la scène, les coulisses, la mise en scène, un metteur en scène, une réplique, applaudir."
+     ],
+     "q": "Have you ever been to the theatre or acted on stage? Tell me about it.",
+     "c": "Write a short French dialogue of four répliques between two characters in a comic scene."
+    },
+    "de": {
+     "t": "Theater",
+     "g": "Du sprichst auf Französisch über Theater: Molière, Racine, die Bühne, die Inszenierung und berühmte Repliken.",
+     "p": [
+      "Molière schrieb Komödien über menschliche Schwächen: L'Avare, Le Malade imaginaire. Französisch heißt la langue de Molière.",
+      "Racine schrieb Tragödien in Alexandrinern (Zwölfsilbern), etwa Phèdre und Andromaque.",
+      "Theaterwörter: la scène, les coulisses, la mise en scène, un metteur en scène, une réplique, applaudir."
+     ],
+     "q": "Warst du schon im Theater oder standest selbst auf der Bühne? Erzähl davon.",
+     "c": "Schreib einen kurzen französischen Dialog mit vier répliques zwischen zwei Figuren in einer komischen Szene."
+    },
+    "es": {
+     "t": "Teatro",
+     "g": "Habla de teatro en francés: Molière, Racine, el escenario, la puesta en escena y réplicas famosas.",
+     "p": [
+      "Molière escribió comedias que se burlan de los defectos humanos: L'Avare, Le Malade imaginaire. Al francés lo llaman la langue de Molière.",
+      "Racine escribió tragedias en alejandrinos (versos de doce sílabas), como Phèdre y Andromaque.",
+      "Vocabulario: la scène, les coulisses, la mise en scène, un metteur en scène, une réplique, applaudir."
+     ],
+     "q": "¿Has ido al teatro o has actuado alguna vez? Cuéntamelo.",
+     "c": "Escribe un breve diálogo en francés de cuatro répliques entre dos personajes en una escena cómica."
+    },
+    "fr": {
+     "t": "Le théâtre",
+     "g": "Parler de théâtre : Molière, Racine, la scène, la mise en scène et les répliques célèbres.",
+     "p": [
+      "Molière a écrit des comédies qui se moquent des défauts humains : L'Avare, Le Malade imaginaire. On parle de la langue de Molière.",
+      "Racine a écrit des tragédies en alexandrins (vers de douze syllabes), comme Phèdre et Andromaque.",
+      "Le vocabulaire : la scène, les coulisses, la mise en scène, un metteur en scène, une réplique, applaudir."
+     ],
+     "q": "Es-tu déjà allé au théâtre, ou as-tu déjà joué sur scène ? Raconte.",
+     "c": "Écris un court dialogue de quatre répliques entre deux personnages dans une scène comique."
+    },
+    "it": {
+     "t": "Teatro",
+     "g": "Parla di teatro in francese: Molière, Racine, il palcoscenico, la regia e le battute famose.",
+     "p": [
+      "Molière scrisse commedie che prendono in giro i difetti umani: L'Avare, Le Malade imaginaire. Il francese è la langue de Molière.",
+      "Racine scrisse tragedie in alessandrini (versi di dodici sillabe), come Phèdre e Andromaque.",
+      "Lessico: la scène, les coulisses, la mise en scène, un metteur en scène, une réplique, applaudir."
+     ],
+     "q": "Sei mai andato a teatro o hai mai recitato? Raccontami.",
+     "c": "Scrivi un breve dialogo in francese di quattro répliques tra due personaggi in una scena comica."
+    },
+    "pt": {
+     "t": "Teatro",
+     "g": "Fala de teatro em francês: Molière, Racine, o palco, a encenação e falas célebres.",
+     "p": [
+      "Molière escreveu comédias que troçam dos defeitos humanos: L'Avare, Le Malade imaginaire. O francês é la langue de Molière.",
+      "Racine escreveu tragédias em alexandrinos (versos de doze sílabas), como Phèdre e Andromaque.",
+      "Vocabulário: la scène, les coulisses, la mise en scène, un metteur en scène, une réplique, applaudir."
+     ],
+     "q": "Já foste ao teatro ou já representaste num palco? Conta-me.",
+     "c": "Escreve um breve diálogo em francês com quatro répliques entre duas personagens numa cena cómica."
+    },
+    "pt_BR": {
+     "t": "Teatro",
+     "g": "Fale de teatro em francês: Molière, Racine, o palco, a encenação e falas célebres.",
+     "p": [
+      "Molière escreveu comédias que zombam dos defeitos humanos: L'Avare, Le Malade imaginaire. O francês é la langue de Molière.",
+      "Racine escreveu tragédias em alexandrinos (versos de doze sílabas), como Phèdre e Andromaque.",
+      "Vocabulário: la scène, les coulisses, la mise en scène, un metteur en scène, une réplique, applaudir."
+     ],
+     "q": "Você já foi ao teatro ou já atuou num palco? Me conte.",
+     "c": "Escreva um breve diálogo em francês com quatro répliques entre dois personagens numa cena cômica."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la scène",
+      "ex": "Les comédiens entrent en scène sous les applaudissements."
+     },
+     {
+      "w": "les coulisses",
+      "ex": "Avant le spectacle, l'actrice attend dans les coulisses."
+     },
+     {
+      "w": "la mise en scène",
+      "ex": "La mise en scène modernise la pièce de Molière."
+     },
+     {
+      "w": "une réplique",
+      "ex": "Cette réplique a fait rire toute la salle."
+     },
+     {
+      "w": "une pièce de théâtre",
+      "ex": "Nous allons voir une pièce de théâtre samedi."
+     },
+     {
+      "w": "applaudir",
+      "ex": "Le public a applaudi pendant cinq minutes."
+     }
+    ],
+    "gram": "Passé simple dans les récits littéraires : Molière écrivit de nombreuses comédies ; Racine composa Phèdre."
+   }
+  },
+  {
+   "d": 336,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Comics: la bande dessinée",
+     "g": "Explore the bande dessinée, the ninth art, with Tintin, Astérix and more.",
+     "p": [
+      "La BD is called le neuvième art. Belgium and France are its heartlands, with a big festival in Angoulême.",
+      "Tintin, by the Belgian Hergé, is a young reporter. Astérix, by Goscinny and Uderzo, resists the Romans with a magic potion.",
+      "BD words: une planche (page), une case (panel), une bulle (speech balloon), un album, un dessinateur, un scénariste."
+     ],
+     "q": "Did you read comics as a child? Which characters did you love?",
+     "c": "Describe a comic or cartoon character in French: look, personality and a typical adventure."
+    },
+    "de": {
+     "t": "Comics: la bande dessinée",
+     "g": "Du entdeckst die bande dessinée, die neunte Kunst, mit Tintin, Astérix und mehr.",
+     "p": [
+      "Die BD heißt le neuvième art. Belgien und Frankreich sind ihre Hochburgen, mit einem großen Festival in Angoulême.",
+      "Tintin vom Belgier Hergé ist ein junger Reporter. Astérix von Goscinny und Uderzo trotzt mit Zaubertrank den Römern.",
+      "BD-Wörter: une planche (Seite), une case (Panel), une bulle (Sprechblase), un album, un dessinateur, un scénariste."
+     ],
+     "q": "Hast du als Kind Comics gelesen? Welche Figuren mochtest du?",
+     "c": "Beschreib eine Comicfigur auf Französisch: Aussehen, Charakter und ein typisches Abenteuer."
+    },
+    "es": {
+     "t": "Cómic: la bande dessinée",
+     "g": "Explora la bande dessinée, el noveno arte, con Tintín, Astérix y más.",
+     "p": [
+      "La BD se llama le neuvième art. Bélgica y Francia son su cuna, con un gran festival en Angulema.",
+      "Tintín, del belga Hergé, es un joven reportero. Astérix, de Goscinny y Uderzo, resiste a los romanos con una poción mágica.",
+      "Vocabulario: une planche (página), une case (viñeta), une bulle (bocadillo), un album, un dessinateur, un scénariste."
+     ],
+     "q": "¿Leías cómics de pequeño? ¿Qué personajes te encantaban?",
+     "c": "Describe un personaje de cómic en francés: aspecto, personalidad y una aventura típica."
+    },
+    "fr": {
+     "t": "La bande dessinée",
+     "g": "Découvrir la bande dessinée, le neuvième art, avec Tintin, Astérix et les autres.",
+     "p": [
+      "La BD est appelée le neuvième art. La Belgique et la France en sont les berceaux, avec un grand festival à Angoulême.",
+      "Tintin, du Belge Hergé, est un jeune reporter. Astérix, de Goscinny et Uderzo, résiste aux Romains grâce à la potion magique.",
+      "Le vocabulaire : une planche, une case, une bulle, un album, un dessinateur, un scénariste."
+     ],
+     "q": "Lisais-tu des BD quand tu étais enfant ? Quels personnages adorais-tu ?",
+     "c": "Décris un personnage de BD : son physique, son caractère et une aventure typique."
+    },
+    "it": {
+     "t": "Fumetti: la bande dessinée",
+     "g": "Scopri la bande dessinée, la nona arte, con Tintin, Astérix e altri.",
+     "p": [
+      "La BD si chiama le neuvième art. Belgio e Francia ne sono la culla, con un grande festival ad Angoulême.",
+      "Tintin, del belga Hergé, è un giovane reporter. Astérix, di Goscinny e Uderzo, resiste ai Romani con una pozione magica.",
+      "Lessico: une planche (tavola), une case (vignetta), une bulle (nuvoletta), un album, un dessinateur, un scénariste."
+     ],
+     "q": "Leggevi fumetti da bambino? Quali personaggi adoravi?",
+     "c": "Descrivi un personaggio dei fumetti in francese: aspetto, carattere e un'avventura tipica."
+    },
+    "pt": {
+     "t": "Banda desenhada: la bande dessinée",
+     "g": "Explora a bande dessinée, a nona arte, com Tintim, Astérix e outros.",
+     "p": [
+      "A BD chama-se le neuvième art. A Bélgica e a França são o seu berço, com um grande festival em Angoulême.",
+      "Tintim, do belga Hergé, é um jovem repórter. Astérix, de Goscinny e Uderzo, resiste aos romanos com uma poção mágica.",
+      "Vocabulário: une planche (prancha), une case (vinheta), une bulle (balão), un album, un dessinateur, un scénariste."
+     ],
+     "q": "Lias banda desenhada em criança? Que personagens adoravas?",
+     "c": "Descreve uma personagem de BD em francês: aspeto, personalidade e uma aventura típica."
+    },
+    "pt_BR": {
+     "t": "Quadrinhos: la bande dessinée",
+     "g": "Explore a bande dessinée, a nona arte, com Tintim, Asterix e outros.",
+     "p": [
+      "A BD é chamada de le neuvième art. Bélgica e França são seu berço, com um grande festival em Angoulême.",
+      "Tintim, do belga Hergé, é um jovem repórter. Asterix, de Goscinny e Uderzo, resiste aos romanos com uma poção mágica.",
+      "Vocabulário: une planche (página), une case (quadrinho), une bulle (balão), un album, un dessinateur, un scénariste."
+     ],
+     "q": "Você lia quadrinhos quando criança? Quais personagens você adorava?",
+     "c": "Descreva um personagem de quadrinhos em francês: aparência, personalidade e uma aventura típica."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "une bande dessinée",
+      "ex": "J'ai offert une bande dessinée à mon neveu."
+     },
+     {
+      "w": "une bulle",
+      "ex": "Le texte des dialogues est dans les bulles."
+     },
+     {
+      "w": "une case",
+      "ex": "Chaque case montre un moment de l'action."
+     },
+     {
+      "w": "un dessinateur",
+      "ex": "Ce dessinateur a un style très reconnaissable."
+     },
+     {
+      "w": "un album",
+      "ex": "Le nouvel album d'Astérix sort en octobre."
+     },
+     {
+      "w": "le neuvième art",
+      "ex": "Angoulême célèbre chaque année le neuvième art."
+     }
+    ],
+    "gram": "Imparfait pour les souvenirs d'enfance : quand j'étais petit, je lisais Tintin et je rêvais de voyager."
+   }
+  },
+  {
+   "d": 337,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Gastronomy as heritage",
+     "g": "Understand why the French gastronomic meal is on the UNESCO list and what savoir-vivre means at the table.",
+     "p": [
+      "Since 2010, le repas gastronomique des Français is on UNESCO's intangible heritage list: a social ritual, not just food.",
+      "Its order: l'apéritif, l'entrée, le plat, le fromage, le dessert, then le café. Pairing food and wine matters.",
+      "Savoir-vivre: wait before starting (Bon appétit !), keep your hands on the table, and praise the meal: C'est délicieux !"
+     ],
+     "q": "What is a typical celebration meal in your country? Describe it in French.",
+     "c": "Write the menu of an ideal French festive meal, from apéritif to café, in French."
+    },
+    "de": {
+     "t": "Gastronomie als Kulturerbe",
+     "g": "Du verstehst, warum das französische Festmahl zum UNESCO-Erbe gehört und was savoir-vivre bei Tisch heißt.",
+     "p": [
+      "Seit 2010 steht le repas gastronomique des Français auf der UNESCO-Liste des immateriellen Erbes: ein soziales Ritual, nicht nur Essen.",
+      "Die Abfolge: l'apéritif, l'entrée, le plat, le fromage, le dessert, dann le café. Speise und Wein abstimmen ist wichtig.",
+      "Savoir-vivre: Warten, bevor man beginnt (Bon appétit !), Hände auf dem Tisch und das Essen loben: C'est délicieux !"
+     ],
+     "q": "Was ist ein typisches Festessen in deinem Land? Beschreib es auf Französisch.",
+     "c": "Schreib das Menü eines idealen französischen Festmahls, vom apéritif bis zum café, auf Französisch."
+    },
+    "es": {
+     "t": "La gastronomía como patrimonio",
+     "g": "Entiende por qué la comida gastronómica francesa es patrimonio de la UNESCO y qué es el savoir-vivre en la mesa.",
+     "p": [
+      "Desde 2010, le repas gastronomique des Français figura en la lista del patrimonio inmaterial de la UNESCO: un ritual social, no solo comida.",
+      "Su orden: l'apéritif, l'entrée, le plat, le fromage, le dessert y le café. Maridar comida y vino es importante.",
+      "Savoir-vivre: espera antes de empezar (Bon appétit !), manos sobre la mesa y elogia la comida: C'est délicieux !"
+     ],
+     "q": "¿Cuál es una comida típica de celebración en tu país? Descríbela en francés.",
+     "c": "Escribe en francés el menú de una comida festiva francesa ideal, del apéritif al café."
+    },
+    "fr": {
+     "t": "La gastronomie, un patrimoine",
+     "g": "Comprendre pourquoi le repas gastronomique des Français est inscrit à l'UNESCO et ce qu'est le savoir-vivre à table.",
+     "p": [
+      "Depuis 2010, le repas gastronomique des Français est inscrit au patrimoine culturel immatériel de l'UNESCO : un rituel social.",
+      "L'ordre : l'apéritif, l'entrée, le plat, le fromage, le dessert, puis le café. L'accord mets et vins compte beaucoup.",
+      "Le savoir-vivre : attendre avant de commencer (Bon appétit !), les mains sur la table, complimenter : C'est délicieux !"
+     ],
+     "q": "Quel est un repas de fête typique dans ton pays ? Décris-le.",
+     "c": "Écris le menu d'un repas de fête idéal, de l'apéritif au café."
+    },
+    "it": {
+     "t": "La gastronomia come patrimonio",
+     "g": "Capisci perché il pasto gastronomico francese è patrimonio UNESCO e cos'è il savoir-vivre a tavola.",
+     "p": [
+      "Dal 2010, le repas gastronomique des Français è nella lista del patrimonio immateriale UNESCO: un rito sociale, non solo cibo.",
+      "L'ordine: l'apéritif, l'entrée, le plat, le fromage, le dessert, poi le café. L'abbinamento cibo-vino conta molto.",
+      "Savoir-vivre: aspetta prima di iniziare (Bon appétit !), mani sul tavolo e complimenti per il pasto: C'est délicieux !"
+     ],
+     "q": "Qual è un tipico pasto di festa nel tuo paese? Descrivilo in francese.",
+     "c": "Scrivi in francese il menù di un pasto di festa francese ideale, dall'apéritif al café."
+    },
+    "pt": {
+     "t": "A gastronomia como património",
+     "g": "Percebe porque é que a refeição gastronómica francesa é património da UNESCO e o que é o savoir-vivre à mesa.",
+     "p": [
+      "Desde 2010, le repas gastronomique des Français está na lista do património imaterial da UNESCO: um ritual social, não só comida.",
+      "A ordem: l'apéritif, l'entrée, le plat, le fromage, le dessert e depois le café. Harmonizar comida e vinho conta muito.",
+      "Savoir-vivre: espera antes de começar (Bon appétit !), mãos em cima da mesa e elogia a refeição: C'est délicieux !"
+     ],
+     "q": "Qual é uma refeição típica de festa no teu país? Descreve-a em francês.",
+     "c": "Escreve em francês o menu de uma refeição festiva francesa ideal, do apéritif ao café."
+    },
+    "pt_BR": {
+     "t": "A gastronomia como patrimônio",
+     "g": "Entenda por que a refeição gastronômica francesa é patrimônio da UNESCO e o que é o savoir-vivre à mesa.",
+     "p": [
+      "Desde 2010, le repas gastronomique des Français está na lista do patrimônio imaterial da UNESCO: um ritual social, não só comida.",
+      "A ordem: l'apéritif, l'entrée, le plat, le fromage, le dessert e depois le café. Harmonizar comida e vinho importa muito.",
+      "Savoir-vivre: espere antes de começar (Bon appétit !), mãos sobre a mesa e elogie a refeição: C'est délicieux !"
+     ],
+     "q": "Qual é uma refeição típica de festa no seu país? Descreva em francês.",
+     "c": "Escreva em francês o cardápio de uma refeição festiva francesa ideal, do apéritif ao café."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "le repas gastronomique",
+      "ex": "Le repas gastronomique peut durer plusieurs heures."
+     },
+     {
+      "w": "le patrimoine immatériel",
+      "ex": "La gastronomie française fait partie du patrimoine immatériel."
+     },
+     {
+      "w": "l'accord mets et vins",
+      "ex": "Le sommelier nous a conseillé un bel accord mets et vins."
+     },
+     {
+      "w": "le savoir-vivre",
+      "ex": "À table, le savoir-vivre est très important en France."
+     },
+     {
+      "w": "une entrée",
+      "ex": "En entrée, nous avons pris une soupe à l'oignon."
+     },
+     {
+      "w": "régaler",
+      "ex": "Merci pour ce dîner, vous nous avez régalés !"
+     }
+    ],
+    "gram": "Inscrire au patrimoine : être inscrit à + liste. Le repas gastronomique est inscrit au patrimoine de l'UNESCO depuis 2010."
+   }
+  },
+  {
+   "d": 338,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Everyday French customs",
+     "g": "Master everyday French codes: the obligatory bonjour, politeness and la bise.",
+     "p": [
+      "Always say Bonjour (or Bonsoir) when entering a shop, a bus or a waiting room. Skipping it seems rude.",
+      "Politeness codes: s'il vous plaît, merci, excusez-moi, and Monsieur / Madame with strangers. Use vous until invited to say tu.",
+      "La bise: cheek kisses among friends and family. The number varies by region, from one to four. Let the other person lead."
+     ],
+     "q": "How do people greet each other in your country? What would surprise a French person?",
+     "c": "Write a short French scene: entering a bakery, greeting, ordering and leaving politely."
+    },
+    "de": {
+     "t": "Französische Alltagsbräuche",
+     "g": "Du beherrschst französische Alltagscodes: das unverzichtbare bonjour, Höflichkeit und la bise.",
+     "p": [
+      "Sag immer Bonjour (oder Bonsoir), wenn du einen Laden, einen Bus oder ein Wartezimmer betrittst. Ohne wirkt es unhöflich.",
+      "Höflichkeit: s'il vous plaît, merci, excusez-moi, und Monsieur / Madame bei Fremden. Bleib beim vous, bis man dir das tu anbietet.",
+      "La bise: Wangenküsschen unter Freunden und Familie. Die Zahl variiert je nach Region, von eins bis vier. Lass die andere Person führen."
+     ],
+     "q": "Wie begrüßt man sich in deinem Land? Was würde eine Französin überraschen?",
+     "c": "Schreib eine kurze französische Szene: Bäckerei betreten, grüßen, bestellen, höflich gehen."
+    },
+    "es": {
+     "t": "Costumbres francesas cotidianas",
+     "g": "Domina los códigos franceses del día a día: el bonjour obligatorio, la cortesía y la bise.",
+     "p": [
+      "Di siempre Bonjour (o Bonsoir) al entrar en una tienda, un autobús o una sala de espera. No decirlo parece grosero.",
+      "Cortesía: s'il vous plaît, merci, excusez-moi, y Monsieur / Madame con desconocidos. Usa vous hasta que te propongan el tu.",
+      "La bise: besos en la mejilla entre amigos y familia. El número varía según la región, de uno a cuatro. Deja que el otro marque."
+     ],
+     "q": "¿Cómo se saluda la gente en tu país? ¿Qué sorprendería a un francés?",
+     "c": "Escribe una breve escena en francés: entrar en una panadería, saludar, pedir y despedirse con cortesía."
+    },
+    "fr": {
+     "t": "Les codes du quotidien",
+     "g": "Maîtriser les codes du quotidien : le bonjour obligatoire, la politesse et la bise.",
+     "p": [
+      "On dit toujours Bonjour (ou Bonsoir) en entrant dans un magasin, un bus ou une salle d'attente. Sinon, on paraît impoli.",
+      "La politesse : s'il vous plaît, merci, excusez-moi, et Monsieur / Madame avec les inconnus. On vouvoie jusqu'à ce qu'on propose le tu.",
+      "La bise : entre amis et en famille. Le nombre varie selon les régions, d'une à quatre. On laisse l'autre mener."
+     ],
+     "q": "Comment se salue-t-on dans ton pays ? Qu'est-ce qui surprendrait un Français ?",
+     "c": "Écris une courte scène : entrer dans une boulangerie, saluer, commander et partir poliment."
+    },
+    "it": {
+     "t": "Usanze francesi quotidiane",
+     "g": "Padroneggia i codici francesi di ogni giorno: il bonjour obbligatorio, la cortesia e la bise.",
+     "p": [
+      "Di' sempre Bonjour (o Bonsoir) entrando in un negozio, su un autobus o in una sala d'attesa. Non farlo sembra scortese.",
+      "Cortesia: s'il vous plaît, merci, excusez-moi, e Monsieur / Madame con gli sconosciuti. Usa il vous finché non ti propongono il tu.",
+      "La bise: baci sulle guance tra amici e in famiglia. Il numero varia da regione a regione, da uno a quattro. Lascia guidare l'altro."
+     ],
+     "q": "Come ci si saluta nel tuo paese? Cosa sorprenderebbe un francese?",
+     "c": "Scrivi una breve scena in francese: entrare in una panetteria, salutare, ordinare e uscire con garbo."
+    },
+    "pt": {
+     "t": "Costumes franceses do dia a dia",
+     "g": "Domina os códigos franceses do dia a dia: o bonjour obrigatório, a cortesia e la bise.",
+     "p": [
+      "Diz sempre Bonjour (ou Bonsoir) ao entrar numa loja, num autocarro ou numa sala de espera. Não o dizer parece mal-educado.",
+      "Cortesia: s'il vous plaît, merci, excusez-moi, e Monsieur / Madame com desconhecidos. Usa vous até te proporem o tu.",
+      "La bise: beijinhos na cara entre amigos e família. O número varia consoante a região, de um a quatro. Deixa o outro conduzir."
+     ],
+     "q": "Como se cumprimentam as pessoas no teu país? O que surpreenderia um francês?",
+     "c": "Escreve uma breve cena em francês: entrar numa padaria, cumprimentar, pedir e sair com educação."
+    },
+    "pt_BR": {
+     "t": "Costumes franceses do dia a dia",
+     "g": "Domine os códigos franceses do dia a dia: o bonjour obrigatório, a educação e la bise.",
+     "p": [
+      "Diga sempre Bonjour (ou Bonsoir) ao entrar numa loja, num ônibus ou numa sala de espera. Não dizer parece falta de educação.",
+      "Educação: s'il vous plaît, merci, excusez-moi, e Monsieur / Madame com desconhecidos. Use vous até te proporem o tu.",
+      "La bise: beijinhos no rosto entre amigos e família. O número varia conforme a região, de um a quatro. Deixe o outro conduzir."
+     ],
+     "q": "Como as pessoas se cumprimentam no seu país? O que surpreenderia um francês?",
+     "c": "Escreva uma breve cena em francês: entrar numa padaria, cumprimentar, pedir e sair com educação."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "faire la bise",
+      "ex": "Entre collègues proches, on se fait parfois la bise."
+     },
+     {
+      "w": "vouvoyer",
+      "ex": "Je vouvoie toujours mes voisins âgés."
+     },
+     {
+      "w": "tutoyer",
+      "ex": "On peut se tutoyer, si tu veux."
+     },
+     {
+      "w": "la politesse",
+      "ex": "La politesse ouvre beaucoup de portes en France."
+     },
+     {
+      "w": "impoli",
+      "ex": "Entrer sans dire bonjour est jugé impoli."
+     },
+     {
+      "w": "bonne journée",
+      "ex": "Merci, bonne journée à vous aussi !"
+     }
+    ],
+    "gram": "Tutoyer ou vouvoyer : on peut proposer le tu avec On se tutoie ? ou On peut se dire tu ?"
+   }
+  },
+  {
+   "d": 339,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Cultural differences",
+     "g": "Compare workplace customs, greetings and directness between French-speaking cultures and your own.",
+     "p": [
+      "At work: long lunches are common, la pause café is social, and debate in meetings is seen as engagement, not conflict.",
+      "Directness: the French may say Je ne suis pas d'accord openly, yet stay formal in writing. Québec is often more relaxed.",
+      "Avoid stereotypes: compare with nuance using alors que, tandis que and en revanche."
+     ],
+     "q": "What cultural difference has surprised you most when meeting people from another country?",
+     "c": "Write three French sentences comparing your culture and French culture with alors que and en revanche."
+    },
+    "de": {
+     "t": "Kulturelle Unterschiede",
+     "g": "Du vergleichst Bräuche bei der Arbeit, Begrüßungen und Direktheit zwischen frankophonen Kulturen und deiner.",
+     "p": [
+      "Bei der Arbeit: lange Mittagspausen sind üblich, la pause café ist sozial, Diskussionen im Meeting zeigen Engagement, nicht Streit.",
+      "Direktheit: Franzosen sagen oft offen Je ne suis pas d'accord, bleiben aber schriftlich formell. Québec ist oft lockerer.",
+      "Vermeide Klischees: vergleiche differenziert mit alors que, tandis que und en revanche."
+     ],
+     "q": "Welcher kulturelle Unterschied hat dich bei Menschen aus einem anderen Land am meisten überrascht?",
+     "c": "Schreib drei französische Sätze, die deine und die französische Kultur mit alors que und en revanche vergleichen."
+    },
+    "es": {
+     "t": "Diferencias culturales",
+     "g": "Compara costumbres laborales, saludos y franqueza entre las culturas francófonas y la tuya.",
+     "p": [
+      "En el trabajo: las comidas largas son habituales, la pause café es social y debatir en reuniones se ve como implicación, no como conflicto.",
+      "Franqueza: los franceses pueden decir Je ne suis pas d'accord abiertamente, pero son formales por escrito. Quebec suele ser más relajado.",
+      "Evita estereotipos: compara con matices usando alors que, tandis que y en revanche."
+     ],
+     "q": "¿Qué diferencia cultural te ha sorprendido más al conocer a gente de otro país?",
+     "c": "Escribe tres frases en francés que comparen tu cultura y la francesa con alors que y en revanche."
+    },
+    "fr": {
+     "t": "Les différences culturelles",
+     "g": "Comparer les usages au travail, les salutations et le franc-parler entre cultures francophones et la tienne.",
+     "p": [
+      "Au travail : la pause déjeuner est souvent longue, la pause café est sociale, et débattre en réunion montre qu'on s'implique.",
+      "Le franc-parler : on dit Je ne suis pas d'accord ouvertement, mais on reste formel à l'écrit. Au Québec, le ton est plus détendu.",
+      "Évite les clichés : compare avec nuance grâce à alors que, tandis que et en revanche."
+     ],
+     "q": "Quelle différence culturelle t'a le plus surpris en rencontrant des gens d'un autre pays ?",
+     "c": "Écris trois phrases qui comparent ta culture et la culture française avec alors que et en revanche."
+    },
+    "it": {
+     "t": "Differenze culturali",
+     "g": "Confronta usanze sul lavoro, saluti e franchezza tra le culture francofone e la tua.",
+     "p": [
+      "Al lavoro: le pause pranzo lunghe sono comuni, la pause café è sociale e discutere in riunione è visto come impegno, non conflitto.",
+      "Franchezza: i francesi possono dire apertamente Je ne suis pas d'accord, ma restano formali per iscritto. Il Québec è spesso più rilassato.",
+      "Evita gli stereotipi: confronta con sfumature usando alors que, tandis que ed en revanche."
+     ],
+     "q": "Quale differenza culturale ti ha sorpreso di più incontrando persone di un altro paese?",
+     "c": "Scrivi tre frasi in francese che confrontino la tua cultura e quella francese con alors que ed en revanche."
+    },
+    "pt": {
+     "t": "Diferenças culturais",
+     "g": "Compara costumes no trabalho, cumprimentos e franqueza entre as culturas francófonas e a tua.",
+     "p": [
+      "No trabalho: os almoços longos são comuns, la pause café é social e debater em reuniões é visto como empenho, não conflito.",
+      "Franqueza: os franceses podem dizer Je ne suis pas d'accord abertamente, mas são formais por escrito. O Quebeque é mais descontraído.",
+      "Evita estereótipos: compara com nuance usando alors que, tandis que e en revanche."
+     ],
+     "q": "Que diferença cultural te surpreendeu mais ao conhecer pessoas de outro país?",
+     "c": "Escreve três frases em francês a comparar a tua cultura e a francesa com alors que e en revanche."
+    },
+    "pt_BR": {
+     "t": "Diferenças culturais",
+     "g": "Compare costumes no trabalho, cumprimentos e franqueza entre as culturas francófonas e a sua.",
+     "p": [
+      "No trabalho: almoços longos são comuns, la pause café é social e debater em reuniões é visto como engajamento, não conflito.",
+      "Franqueza: os franceses podem dizer Je ne suis pas d'accord abertamente, mas são formais por escrito. O Quebec é mais descontraído.",
+      "Evite estereótipos: compare com nuance usando alors que, tandis que e en revanche."
+     ],
+     "q": "Qual diferença cultural mais te surpreendeu ao conhecer pessoas de outro país?",
+     "c": "Escreva três frases em francês comparando a sua cultura e a francesa com alors que e en revanche."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "une différence culturelle",
+      "ex": "Cette différence culturelle m'a d'abord surpris."
+     },
+     {
+      "w": "le franc-parler",
+      "ex": "Son franc-parler plaît à certains et choque d'autres."
+     },
+     {
+      "w": "alors que",
+      "ex": "Chez moi on dîne tôt, alors qu'en France on dîne vers vingt heures."
+     },
+     {
+      "w": "en revanche",
+      "ex": "Le déjeuner est long ; en revanche, la réunion commence à l'heure."
+     },
+     {
+      "w": "un cliché",
+      "ex": "Il faut se méfier des clichés sur les autres pays."
+     },
+     {
+      "w": "s'adapter",
+      "ex": "Il m'a fallu quelques mois pour m'adapter."
+     }
+    ],
+    "gram": "Opposition : alors que / tandis que + indicatif relient deux faits ; en revanche commence une nouvelle phrase."
+   }
+  },
+  {
+   "d": 340,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Living in a French-speaking country",
+     "g": "Talk about settling in, making friends and adapting to life in a French-speaking country.",
+     "p": [
+      "Settling in: trouver un logement, ouvrir un compte bancaire, faire les démarches administratives, s'inscrire.",
+      "Making friends: join une association, un club de sport or a language exchange. Say yes to invitations!",
+      "Adapting: Je me suis habitué(e) à..., j'ai eu du mal à..., au début... maintenant... Culture shock passes with time."
+     ],
+     "q": "If you moved to a French-speaking country, which city would you choose and why?",
+     "c": "Imagine your first month abroad and write it in French with au début, j'ai eu du mal à and maintenant."
+    },
+    "de": {
+     "t": "Leben in einem frankophonen Land",
+     "g": "Du sprichst über Ankommen, Freundschaften und Anpassung in einem frankophonen Land.",
+     "p": [
+      "Ankommen: trouver un logement, ouvrir un compte bancaire, faire les démarches administratives, s'inscrire.",
+      "Freunde finden: Tritt une association, einem club de sport oder einem Sprachtandem bei. Sag Ja zu Einladungen!",
+      "Anpassen: Je me suis habitué(e) à..., j'ai eu du mal à..., au début... maintenant... Der Kulturschock vergeht mit der Zeit."
+     ],
+     "q": "Wenn du in ein frankophones Land ziehen würdest, welche Stadt würdest du wählen und warum?",
+     "c": "Stell dir deinen ersten Monat im Ausland vor und schreib ihn auf Französisch mit au début, j'ai eu du mal à und maintenant."
+    },
+    "es": {
+     "t": "Vivir en un país francófono",
+     "g": "Habla de instalarte, hacer amigos y adaptarte a la vida en un país francófono.",
+     "p": [
+      "Instalarse: trouver un logement, ouvrir un compte bancaire, faire les démarches administratives, s'inscrire.",
+      "Hacer amigos: únete a une association, un club de sport o un intercambio de idiomas. ¡Acepta las invitaciones!",
+      "Adaptarse: Je me suis habitué(e) à..., j'ai eu du mal à..., au début... maintenant... El choque cultural pasa con el tiempo."
+     ],
+     "q": "Si te mudaras a un país francófono, ¿qué ciudad elegirías y por qué?",
+     "c": "Imagina tu primer mes en el extranjero y escríbelo en francés con au début, j'ai eu du mal à y maintenant."
+    },
+    "fr": {
+     "t": "Vivre dans un pays francophone",
+     "g": "Parler de son installation, des amitiés et de l'adaptation dans un pays francophone.",
+     "p": [
+      "S'installer : trouver un logement, ouvrir un compte bancaire, faire les démarches administratives, s'inscrire.",
+      "Se faire des amis : rejoindre une association, un club de sport, un échange linguistique. Dire oui aux invitations !",
+      "S'adapter : Je me suis habitué(e) à..., j'ai eu du mal à..., au début... maintenant... Le choc culturel passe avec le temps."
+     ],
+     "q": "Si tu t'installais dans un pays francophone, quelle ville choisirais-tu et pourquoi ?",
+     "c": "Imagine ton premier mois à l'étranger et raconte-le avec au début, j'ai eu du mal à et maintenant."
+    },
+    "it": {
+     "t": "Vivere in un paese francofono",
+     "g": "Parla di come sistemarti, fare amicizia e adattarti alla vita in un paese francofono.",
+     "p": [
+      "Sistemarsi: trouver un logement, ouvrir un compte bancaire, faire les démarches administratives, s'inscrire.",
+      "Fare amicizia: entra in une association, un club de sport o uno scambio linguistico. Accetta gli inviti!",
+      "Adattarsi: Je me suis habitué(e) à..., j'ai eu du mal à..., au début... maintenant... Lo shock culturale passa col tempo."
+     ],
+     "q": "Se ti trasferissi in un paese francofono, quale città sceglieresti e perché?",
+     "c": "Immagina il tuo primo mese all'estero e scrivilo in francese con au début, j'ai eu du mal à e maintenant."
+    },
+    "pt": {
+     "t": "Viver num país francófono",
+     "g": "Fala de te instalares, fazeres amigos e te adaptares à vida num país francófono.",
+     "p": [
+      "Instalar-se: trouver un logement, ouvrir un compte bancaire, faire les démarches administratives, s'inscrire.",
+      "Fazer amigos: entra numa association, num club de sport ou num intercâmbio de línguas. Aceita os convites!",
+      "Adaptar-se: Je me suis habitué(e) à..., j'ai eu du mal à..., au début... maintenant... O choque cultural passa com o tempo."
+     ],
+     "q": "Se te mudasses para um país francófono, que cidade escolherias e porquê?",
+     "c": "Imagina o teu primeiro mês no estrangeiro e escreve-o em francês com au début, j'ai eu du mal à e maintenant."
+    },
+    "pt_BR": {
+     "t": "Morar num país francófono",
+     "g": "Fale sobre se instalar, fazer amigos e se adaptar à vida num país francófono.",
+     "p": [
+      "Instalar-se: trouver un logement, ouvrir un compte bancaire, faire les démarches administratives, s'inscrire.",
+      "Fazer amigos: entre numa association, num club de sport ou num intercâmbio de idiomas. Aceite os convites!",
+      "Adaptar-se: Je me suis habitué(e) à..., j'ai eu du mal à..., au début... maintenant... O choque cultural passa com o tempo."
+     ],
+     "q": "Se você se mudasse para um país francófono, qual cidade escolheria e por quê?",
+     "c": "Imagine seu primeiro mês no exterior e escreva em francês com au début, j'ai eu du mal à e maintenant."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "s'installer",
+      "ex": "Ils se sont installés à Lyon il y a deux ans."
+     },
+     {
+      "w": "les démarches administratives",
+      "ex": "Les démarches administratives prennent du temps."
+     },
+     {
+      "w": "s'habituer à",
+      "ex": "Je me suis vite habituée au rythme des repas."
+     },
+     {
+      "w": "avoir du mal à",
+      "ex": "Au début, j'avais du mal à comprendre l'accent."
+     },
+     {
+      "w": "le choc culturel",
+      "ex": "Le choc culturel est normal les premiers mois."
+     },
+     {
+      "w": "se faire des amis",
+      "ex": "Je me suis fait des amis grâce au club de randonnée."
+     }
+    ],
+    "gram": "Accord du participe passé des verbes pronominaux : elle s'est installée, ils se sont habitués ; mais elle s'est fait des amis."
+   }
+  }
+ ]
+}

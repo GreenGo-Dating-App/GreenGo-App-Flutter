@@ -1,0 +1,1125 @@
+{
+  "topic": "practice_portuguese",
+  "lessons": [
+    {
+      "d": 81,
+      "lv": "A1",
+      "i18n": {
+        "en": {
+          "t": "Ordinal numbers",
+          "g": "Use primeiro, segundo, terceiro up to décimo, and name floors.",
+          "p": [
+            "Primeiro, segundo, terceiro, quarto, quinto, sexto, sétimo, oitavo, nono, décimo.",
+            "They agree like adjectives: a primeira vez, os primeiros dias. Short forms: 1.º, 1.ª.",
+            "Floors: o rés-do-chão is the ground floor in Portugal (o térreo in Brazil), then o primeiro andar."
+          ],
+          "q": "On which floor do you live or work? Answer with an ordinal number.",
+          "c": "Describe a building you know: what is on the rés-do-chão, the primeiro andar and the segundo andar?"
+        },
+        "de": {
+          "t": "Ordnungszahlen",
+          "g": "Du verwendest primeiro, segundo, terceiro bis décimo und benennst Stockwerke.",
+          "p": [
+            "Primeiro, segundo, terceiro, quarto, quinto, sexto, sétimo, oitavo, nono, décimo.",
+            "Sie werden angepasst wie Adjektive: a primeira vez, os primeiros dias. Kurz: 1.º, 1.ª.",
+            "Stockwerke: o rés-do-chão ist in Portugal das Erdgeschoss (in Brasilien o térreo), dann o primeiro andar."
+          ],
+          "q": "In welchem Stock wohnst oder arbeitest du? Antworte mit einer Ordnungszahl.",
+          "c": "Beschreib ein Gebäude: Was ist im rés-do-chão, im primeiro andar und im segundo andar?"
+        },
+        "es": {
+          "t": "Números ordinales",
+          "g": "Usar primeiro, segundo, terceiro hasta décimo y nombrar pisos.",
+          "p": [
+            "Primeiro, segundo, terceiro, quarto, quinto, sexto, sétimo, oitavo, nono, décimo.",
+            "Concuerdan como adjetivos: a primeira vez, os primeiros dias. Abreviados: 1.º, 1.ª.",
+            "Pisos: o rés-do-chão es la planta baja en Portugal (o térreo en Brasil), luego o primeiro andar."
+          ],
+          "q": "¿En qué piso vives o trabajas? Responde con un ordinal.",
+          "c": "Describe un edificio que conozcas: qué hay en el rés-do-chão, el primeiro andar y el segundo andar."
+        },
+        "fr": {
+          "t": "Les nombres ordinaux",
+          "g": "Utiliser primeiro, segundo, terceiro jusqu'à décimo, et nommer les étages.",
+          "p": [
+            "Primeiro, segundo, terceiro, quarto, quinto, sexto, sétimo, oitavo, nono, décimo.",
+            "Ils s'accordent comme des adjectifs : a primeira vez, os primeiros dias. Abrégés : 1.º, 1.ª.",
+            "Étages : o rés-do-chão est le rez-de-chaussée au Portugal (o térreo au Brésil), puis o primeiro andar."
+          ],
+          "q": "À quel étage habites-tu ou travailles-tu ? Réponds avec un ordinal.",
+          "c": "Décris un immeuble : qu'y a-t-il au rés-do-chão, au primeiro andar et au segundo andar ?"
+        },
+        "it": {
+          "t": "Numeri ordinali",
+          "g": "Usi primeiro, segundo, terceiro fino a décimo e nomini i piani.",
+          "p": [
+            "Primeiro, segundo, terceiro, quarto, quinto, sexto, sétimo, oitavo, nono, décimo.",
+            "Si accordano come aggettivi: a primeira vez, os primeiros dias. Abbreviati: 1.º, 1.ª.",
+            "Piani: o rés-do-chão è il pianterreno in Portogallo (o térreo in Brasile), poi o primeiro andar."
+          ],
+          "q": "A che piano abiti o lavori? Rispondi con un numero ordinale.",
+          "c": "Descrivi un edificio: cosa c'è al rés-do-chão, al primeiro andar e al segundo andar?"
+        },
+        "pt": {
+          "t": "Números ordinais",
+          "g": "Revê os ordinais e o seu uso em moradas e datas.",
+          "p": [
+            "Nas moradas: 3.º esquerdo, 2.º direito, R/C. Explica a um estrangeiro o que significa esq. e dto.",
+            "Em Portugal, o dia 1 do mês diz-se dia um ou primeiro; no Brasil prefere-se primeiro de maio.",
+            "Acima de décimo: décimo primeiro, vigésimo, centésimo. Na fala, muitos dizem simplesmente o andar onze."
+          ],
+          "q": "Como explicarias uma morada portuguesa como Rua X, 25, 3.º Esq. a um estrangeiro?",
+          "c": "Escreve três moradas fictícias à portuguesa e explica cada parte com palavras simples."
+        },
+        "pt_BR": {
+          "t": "Números ordinais",
+          "g": "Revise os ordinais e o vocabulário de andares em Portugal.",
+          "p": [
+            "Em Portugal, o térreo é o rés-do-chão (R/C). O primeiro andar fica logo acima, como no Brasil.",
+            "Nas moradas aparecem 2.º Esq. e 3.º Dto.: andar e lado do apartamento, esquerdo ou direito.",
+            "Morada é endereço, e código postal é o CEP. Os ordinais escrevem-se 1.º, 2.ª, com ponto."
+          ],
+          "q": "Como seria seu endereço escrito à portuguesa, com andar e lado?",
+          "c": "Escreva duas moradas portuguesas fictícias com R/C, andar e esquerdo ou direito."
+        }
+      },
+      "target": {
+        "vocab": [
+          {
+            "w": "primeiro",
+            "ex": "É a primeira vez que venho a Lisboa."
+          },
+          {
+            "w": "segundo",
+            "ex": "Vire na segunda rua à direita."
+          },
+          {
+            "w": "terceiro",
+            "ex": "Moro no terceiro andar."
+          },
+          {
+            "w": "o rés-do-chão",
+            "ex": "A loja fica no rés-do-chão."
+          },
+          {
+            "w": "o andar",
+            "ex": "Em que andar fica o escritório?"
+          },
+          {
+            "w": "décimo",
+            "ex": "O meu clube ficou em décimo lugar."
+          }
+        ],
+        "gram": "Ordinais concordam: primeiro/primeira, segundos/segundas. Abreviaturas 1.º, 2.ª. Moradas: R/C, 3.º Esq., 2.º Dto."
+      }
+    },
+    {
+      "d": 82,
+      "lv": "A1",
+      "i18n": {
+        "en": {
+          "t": "Connectors: e, mas, ou, porque",
+          "g": "Join short sentences into longer, natural ones.",
+          "p": [
+            "E (and), mas (but), ou (or): Gosto de chá, mas prefiro café. Queres água ou sumo?",
+            "Porque (because) gives a reason: Fico em casa porque está a chover. Porquê? means Why?",
+            "Também (also) and então (so) help a story flow: Estava cansado, então fui dormir."
+          ],
+          "q": "Why are you learning Portuguese? Answer with a sentence using porque.",
+          "c": "Join these ideas into three long sentences: I like Lisbon, it is hilly, I want to go back, I have no time."
+        },
+        "de": {
+          "t": "Konnektoren: e, mas, ou, porque",
+          "g": "Du verbindest kurze Sätze zu längeren, natürlichen Sätzen.",
+          "p": [
+            "E (und), mas (aber), ou (oder): Gosto de chá, mas prefiro café. Queres água ou sumo?",
+            "Porque (weil) nennt einen Grund: Fico em casa porque está a chover. Porquê? heißt Warum?",
+            "Também (auch) und então (also) lassen eine Geschichte fließen: Estava cansado, então fui dormir."
+          ],
+          "q": "Warum lernst du Portugiesisch? Antworte mit einem Satz mit porque.",
+          "c": "Verbinde zu drei langen Sätzen: Ich mag Lissabon, es ist hügelig, ich will zurück, ich habe keine Zeit."
+        },
+        "es": {
+          "t": "Conectores: e, mas, ou, porque",
+          "g": "Unir frases cortas en frases más largas y naturales.",
+          "p": [
+            "E (y), mas (pero), ou (o): Gosto de chá, mas prefiro café. Queres água ou sumo?",
+            "Porque da una razón: Fico em casa porque está a chover. Porquê? es ¿por qué? al final de la frase.",
+            "Também (también) y então (entonces) dan fluidez: Estava cansado, então fui dormir."
+          ],
+          "q": "¿Por qué aprendes portugués? Responde con una frase con porque.",
+          "c": "Une estas ideas en tres frases largas: me gusta Lisboa, tiene cuestas, quiero volver, no tengo tiempo."
+        },
+        "fr": {
+          "t": "Connecteurs : e, mas, ou, porque",
+          "g": "Relier des phrases courtes en phrases plus longues et naturelles.",
+          "p": [
+            "E (et), mas (mais), ou (ou) : Gosto de chá, mas prefiro café. Queres água ou sumo?",
+            "Porque (parce que) donne une raison : Fico em casa porque está a chover. Porquê? = Pourquoi ?",
+            "Também (aussi) et então (alors) font avancer le récit : Estava cansado, então fui dormir."
+          ],
+          "q": "Pourquoi apprends-tu le portugais ? Réponds avec une phrase avec porque.",
+          "c": "Relie ces idées en trois longues phrases : j'aime Lisbonne, ça monte, je veux y retourner, je n'ai pas le temps."
+        },
+        "it": {
+          "t": "Connettivi: e, mas, ou, porque",
+          "g": "Unisci frasi brevi in frasi più lunghe e naturali.",
+          "p": [
+            "E (e), mas (ma), ou (o): Gosto de chá, mas prefiro café. Queres água ou sumo?",
+            "Porque (perché) dà una ragione: Fico em casa porque está a chover. Porquê? = Perché? a fine frase.",
+            "Também (anche) e então (allora) fanno scorrere il racconto: Estava cansado, então fui dormir."
+          ],
+          "q": "Perché studi portoghese? Rispondi con una frase con porque.",
+          "c": "Unisci in tre frasi lunghe: mi piace Lisbona, è in salita, voglio tornarci, non ho tempo."
+        },
+        "pt": {
+          "t": "Conectores: e, mas, ou, porque",
+          "g": "Revê os conectores básicos e as diferenças ortográficas de porque.",
+          "p": [
+            "Em Portugal: porque (resposta), porquê (fim de frase ou nome: o porquê), por que (por qual). Confunde muitos.",
+            "No Brasil há quatro formas: por que, por quê, porque e porquê. Vale a pena comparar com estrangeiros.",
+            "Para variar: no entanto, contudo, por isso, além disso. Dão elegância a textos simples."
+          ],
+          "q": "Que conector usas mais quando contas uma história?",
+          "c": "Escreve um pequeno texto de cinco frases sobre o teu dia com pelo menos cinco conectores diferentes."
+        },
+        "pt_BR": {
+          "t": "Conectores: e, mas, ou, porque",
+          "g": "Revise os conectores e a grafia de porquê em Portugal.",
+          "p": [
+            "Em Portugal, a pergunta escreve-se Porque é que...? ou Porquê? No Brasil: Por que...?",
+            "Então, pois e portanto são comuns; pois é a resposta típica portuguesa: Pois, tens razão.",
+            "Também se ouve muito ora bem e aliás para organizar a conversa em Portugal."
+          ],
+          "q": "Porque é que você está aprendendo o português de Portugal?",
+          "c": "Escreva três perguntas com Porque é que...? e responda com porque."
+        }
+      },
+      "target": {
+        "vocab": [
+          {
+            "w": "e",
+            "ex": "Comi a sopa e o peixe."
+          },
+          {
+            "w": "mas",
+            "ex": "Gosto do inverno, mas prefiro o verão."
+          },
+          {
+            "w": "ou",
+            "ex": "Preferes praia ou montanha?"
+          },
+          {
+            "w": "porque",
+            "ex": "Estudo português porque adoro viajar."
+          },
+          {
+            "w": "então",
+            "ex": "Choveu muito, então ficámos em casa."
+          },
+          {
+            "w": "também",
+            "ex": "Eu também quero ir!"
+          }
+        ],
+        "gram": "Conectores: e, mas, ou, porque, então, também. Pergunta: Porque é que...? / Porquê? Resposta: porque..."
+      }
+    },
+    {
+      "d": 83,
+      "lv": "A1",
+      "i18n": {
+        "en": {
+          "t": "Adverbs in -mente",
+          "g": "Form adverbs with -mente and use bem, mal, muito, pouco.",
+          "p": [
+            "Add -mente to the feminine adjective: rápida becomes rapidamente, feliz becomes felizmente.",
+            "Very common: normalmente, geralmente, finalmente, infelizmente, realmente.",
+            "Short adverbs: bem (well), mal (badly), muito (a lot), pouco (a little): Falo bem? Durmo pouco."
+          ],
+          "q": "What do you normally do on Sunday mornings? Start your answer with normalmente.",
+          "c": "Write four sentences with rapidamente, felizmente, bem and pouco."
+        },
+        "de": {
+          "t": "Adverbien auf -mente",
+          "g": "Du bildest Adverbien mit -mente und nutzt bem, mal, muito, pouco.",
+          "p": [
+            "Häng -mente an die weibliche Form: rápida wird rapidamente, feliz wird felizmente.",
+            "Sehr häufig: normalmente, geralmente, finalmente, infelizmente, realmente.",
+            "Kurze Adverbien: bem (gut), mal (schlecht), muito (viel), pouco (wenig): Falo bem? Durmo pouco."
+          ],
+          "q": "Was machst du normalerweise am Sonntagmorgen? Beginne mit normalmente.",
+          "c": "Schreib vier Sätze mit rapidamente, felizmente, bem und pouco."
+        },
+        "es": {
+          "t": "Adverbios en -mente",
+          "g": "Formar adverbios en -mente y usar bem, mal, muito, pouco.",
+          "p": [
+            "Igual que en español: femenino + -mente. Rápida da rapidamente; feliz da felizmente.",
+            "Muy comunes: normalmente, geralmente, finalmente, infelizmente, realmente.",
+            "Adverbios cortos: bem (bien), mal, muito (mucho), pouco (poco): Falo bem? Durmo pouco."
+          ],
+          "q": "¿Qué haces normalmente los domingos por la mañana? Empieza con normalmente.",
+          "c": "Escribe cuatro frases con rapidamente, felizmente, bem y pouco."
+        },
+        "fr": {
+          "t": "Les adverbes en -mente",
+          "g": "Former des adverbes en -mente et utiliser bem, mal, muito, pouco.",
+          "p": [
+            "Ajoute -mente au féminin de l'adjectif : rápida donne rapidamente, feliz donne felizmente.",
+            "Très courants : normalmente, geralmente, finalmente, infelizmente, realmente.",
+            "Adverbes courts : bem (bien), mal, muito (beaucoup), pouco (peu) : Falo bem? Durmo pouco."
+          ],
+          "q": "Que fais-tu normalement le dimanche matin ? Commence par normalmente.",
+          "c": "Écris quatre phrases avec rapidamente, felizmente, bem et pouco."
+        },
+        "it": {
+          "t": "Avverbi in -mente",
+          "g": "Formi avverbi in -mente e usi bem, mal, muito, pouco.",
+          "p": [
+            "Come in italiano: femminile + -mente. Rápida dà rapidamente; feliz dà felizmente.",
+            "Molto comuni: normalmente, geralmente, finalmente, infelizmente, realmente.",
+            "Avverbi brevi: bem (bene), mal (male), muito (molto), pouco (poco): Falo bem? Durmo pouco."
+          ],
+          "q": "Cosa fai normalmente la domenica mattina? Comincia con normalmente.",
+          "c": "Scrivi quattro frasi con rapidamente, felizmente, bem e pouco."
+        },
+        "pt": {
+          "t": "Advérbios em -mente",
+          "g": "Revê os advérbios em -mente e algumas subtilezas de uso.",
+          "p": [
+            "Os adjetivos com acento perdem-no: rápido, rapidamente; fácil, facilmente. Muitos aprendentes erram aqui.",
+            "Com dois advérbios seguidos, só o último leva -mente: clara e calmamente. Soa culto e é correto.",
+            "Bem e mal têm comparativos: melhor e pior. Mais bem só antes de particípio: mais bem pago."
+          ],
+          "q": "Que advérbio em -mente usas mais na tua fala?",
+          "c": "Escreve três frases com dois advérbios coordenados e explica a regra a um estrangeiro."
+        },
+        "pt_BR": {
+          "t": "Advérbios em -mente",
+          "g": "Revise advérbios e expressões típicas de Portugal.",
+          "p": [
+            "Os advérbios em -mente são iguais: normalmente, finalmente. Em Portugal ouve-se muito se calhar (talvez).",
+            "Um bocado é um pouco: Falo um bocado de inglês. Imenso é muito: Gosto imenso de Lisboa.",
+            "Bem e mal são iguais; Está bem é a resposta portuguesa para tudo bem, ok."
+          ],
+          "q": "Como você diria Gosto muito de café à portuguesa, com imenso?",
+          "c": "Escreva quatro frases com se calhar, imenso, um bocado e está bem."
+        }
+      },
+      "target": {
+        "vocab": [
+          {
+            "w": "rapidamente",
+            "ex": "O tempo passa rapidamente."
+          },
+          {
+            "w": "felizmente",
+            "ex": "Felizmente não choveu."
+          },
+          {
+            "w": "normalmente",
+            "ex": "Normalmente janto às oito."
+          },
+          {
+            "w": "infelizmente",
+            "ex": "Infelizmente não posso ir."
+          },
+          {
+            "w": "bem",
+            "ex": "Falas muito bem português!"
+          },
+          {
+            "w": "pouco",
+            "ex": "Hoje dormi pouco."
+          }
+        ],
+        "gram": "Advérbios: adjetivo no feminino + -mente (rápida > rapidamente; fácil > facilmente). Advérbios simples: bem, mal, muito, pouco."
+      }
+    },
+    {
+      "d": 84,
+      "lv": "A1",
+      "i18n": {
+        "en": {
+          "t": "Muito, pouco, todo, cada",
+          "g": "Use quantifiers and make them agree.",
+          "p": [
+            "Muito and pouco agree before nouns: muitas pessoas, pouco tempo. Before adjectives they do not: muito bonita.",
+            "Todo agrees too: todo o dia (all day), todos os dias (every day). Toda a gente means everybody in Portugal.",
+            "Cada never changes: cada dia, cada pessoa. In Brazil todo mundo means everybody."
+          ],
+          "q": "What do you do todos os dias, and what do you do only sometimes?",
+          "c": "Write five sentences with muitas, pouco, todos os dias, toda a gente and cada."
+        },
+        "de": {
+          "t": "Muito, pouco, todo, cada",
+          "g": "Du benutzt Mengenwörter und passt sie an.",
+          "p": [
+            "Muito und pouco passen sich vor Nomen an: muitas pessoas, pouco tempo. Vor Adjektiven nicht: muito bonita.",
+            "Auch todo: todo o dia (den ganzen Tag), todos os dias (jeden Tag). Toda a gente heißt in Portugal alle.",
+            "Cada bleibt immer gleich: cada dia, cada pessoa. In Brasilien sagt man todo mundo für alle."
+          ],
+          "q": "Was machst du todos os dias, und was nur manchmal?",
+          "c": "Schreib fünf Sätze mit muitas, pouco, todos os dias, toda a gente und cada."
+        },
+        "es": {
+          "t": "Muito, pouco, todo, cada",
+          "g": "Usar cuantificadores y su concordancia.",
+          "p": [
+            "Muito y pouco concuerdan ante sustantivos: muitas pessoas, pouco tempo. Ante adjetivos no: muito bonita.",
+            "Todo también: todo o dia (todo el día), todos os dias (todos los días). Toda a gente es todo el mundo en Portugal.",
+            "Cada no cambia nunca: cada dia, cada pessoa. En Brasil se dice todo mundo."
+          ],
+          "q": "¿Qué haces todos os dias y qué haces solo a veces?",
+          "c": "Escribe cinco frases con muitas, pouco, todos os dias, toda a gente y cada."
+        },
+        "fr": {
+          "t": "Muito, pouco, todo, cada",
+          "g": "Utiliser les quantifieurs et leur accord.",
+          "p": [
+            "Muito et pouco s'accordent devant un nom : muitas pessoas, pouco tempo. Devant un adjectif, non : muito bonita.",
+            "Todo aussi : todo o dia (toute la journée), todos os dias (tous les jours). Toda a gente = tout le monde au Portugal.",
+            "Cada ne change jamais : cada dia, cada pessoa. Au Brésil on dit todo mundo."
+          ],
+          "q": "Que fais-tu todos os dias, et que fais-tu seulement parfois ?",
+          "c": "Écris cinq phrases avec muitas, pouco, todos os dias, toda a gente et cada."
+        },
+        "it": {
+          "t": "Muito, pouco, todo, cada",
+          "g": "Usi i quantificatori e il loro accordo.",
+          "p": [
+            "Muito e pouco si accordano davanti ai nomi: muitas pessoas, pouco tempo. Davanti agli aggettivi no: muito bonita.",
+            "Anche todo: todo o dia (tutto il giorno), todos os dias (tutti i giorni). Toda a gente = tutti, in Portogallo.",
+            "Cada non cambia mai: cada dia, cada pessoa. In Brasile si dice todo mundo."
+          ],
+          "q": "Cosa fai todos os dias, e cosa fai solo a volte?",
+          "c": "Scrivi cinque frasi con muitas, pouco, todos os dias, toda a gente e cada."
+        },
+        "pt": {
+          "t": "Muito, pouco, todo, cada",
+          "g": "Revê os quantificadores e as diferenças entre todo o e todo.",
+          "p": [
+            "Todo o dia (o dia inteiro) e todo dia (cada dia, uso brasileiro) têm sentidos diferentes em Portugal.",
+            "Toda a gente em Portugal, todo mundo no Brasil; ambas as formas se entendem dos dois lados.",
+            "Cada um e cada qual são invariáveis; cada vez mais e cada vez menos são expressões muito úteis."
+          ],
+          "q": "Que expressão com cada usas mais: cada vez mais, cada um ou cada qual?",
+          "c": "Escreve quatro frases que mostrem a diferença entre todo o dia e todos os dias."
+        },
+        "pt_BR": {
+          "t": "Muito, pouco, todo, cada",
+          "g": "Revise os quantificadores à portuguesa.",
+          "p": [
+            "Em Portugal diz-se toda a gente, não todo mundo: Toda a gente gosta de pastéis de nata.",
+            "Todo o dia é o dia inteiro; para cada dia, diz-se todos os dias. Todo dia soa brasileiro.",
+            "Imenso e bastante são muito usados: Há imensa gente na praia. Tenho bastante trabalho."
+          ],
+          "q": "O que toda a gente faz no verão em Portugal, na sua opinião?",
+          "c": "Escreva quatro frases com toda a gente, todos os dias, imenso e cada."
+        }
+      },
+      "target": {
+        "vocab": [
+          {
+            "w": "muitas pessoas",
+            "ex": "Há muitas pessoas na praia."
+          },
+          {
+            "w": "pouco tempo",
+            "ex": "Tenho pouco tempo hoje."
+          },
+          {
+            "w": "todos os dias",
+            "ex": "Bebo café todos os dias."
+          },
+          {
+            "w": "todo o dia",
+            "ex": "Choveu todo o dia."
+          },
+          {
+            "w": "toda a gente",
+            "ex": "Toda a gente gosta de festas."
+          },
+          {
+            "w": "cada",
+            "ex": "Cada pessoa traz um prato."
+          }
+        ],
+        "gram": "Muito/pouco/todo concordam com o nome: muitas casas, todas as noites. Cada é invariável. Todo o dia = o dia inteiro."
+      }
+    },
+    {
+      "d": 85,
+      "lv": "A1",
+      "i18n": {
+        "en": {
+          "t": "Portugal and Brazil: key differences",
+          "g": "Recognise key word and sound differences between Portugal and Brazil.",
+          "p": [
+            "Words: comboio vs trem (train), autocarro vs ônibus (bus), pequeno-almoço vs café da manhã.",
+            "Address: tu is common in Portugal; most Brazilians use você. Gerund: estou a ler vs estou lendo.",
+            "Sound: Portugal swallows unstressed vowels; Brazil keeps them open and clear. Both are the same language."
+          ],
+          "q": "Which variety do you hear more often, and which sounds nicer to you?",
+          "c": "Make a list of five Portugal-Brazil word pairs you already know."
+        },
+        "de": {
+          "t": "Portugal und Brasilien: Unterschiede",
+          "g": "Du erkennst wichtige Wort- und Klangunterschiede zwischen Portugal und Brasilien.",
+          "p": [
+            "Wörter: comboio vs trem (Zug), autocarro vs ônibus (Bus), pequeno-almoço vs café da manhã.",
+            "Anrede: tu ist in Portugal üblich; die meisten Brasilianer sagen você. Verlaufsform: estou a ler vs estou lendo.",
+            "Klang: Portugal verschluckt unbetonte Vokale, Brasilien spricht sie offen. Es ist dieselbe Sprache."
+          ],
+          "q": "Welche Variante hörst du öfter, und welche klingt für dich schöner?",
+          "c": "Mach eine Liste mit fünf Wortpaaren Portugal-Brasilien, die du schon kennst."
+        },
+        "es": {
+          "t": "Portugal y Brasil: diferencias clave",
+          "g": "Reconocer diferencias de palabras y sonidos entre Portugal y Brasil.",
+          "p": [
+            "Palabras: comboio vs trem (tren), autocarro vs ônibus (autobús), pequeno-almoço vs café da manhã.",
+            "Tratamiento: tu es común en Portugal; la mayoría de los brasileños usa você. Gerundio: estou a ler vs estou lendo.",
+            "Sonido: Portugal se come las vocales átonas; Brasil las abre y las pronuncia. Es la misma lengua."
+          ],
+          "q": "¿Qué variedad oyes más y cuál te suena más bonita?",
+          "c": "Haz una lista de cinco pares de palabras Portugal-Brasil que ya conozcas."
+        },
+        "fr": {
+          "t": "Portugal et Brésil : différences clés",
+          "g": "Reconnaître les différences de mots et de sons entre Portugal et Brésil.",
+          "p": [
+            "Mots : comboio vs trem (train), autocarro vs ônibus (bus), pequeno-almoço vs café da manhã.",
+            "Tutoiement : tu est courant au Portugal ; la plupart des Brésiliens utilisent você. Estou a ler vs estou lendo.",
+            "Sons : le Portugal avale les voyelles non accentuées ; le Brésil les ouvre. C'est la même langue."
+          ],
+          "q": "Quelle variante entends-tu le plus, et laquelle te plaît le plus ?",
+          "c": "Fais une liste de cinq paires de mots Portugal-Brésil que tu connais déjà."
+        },
+        "it": {
+          "t": "Portogallo e Brasile: differenze chiave",
+          "g": "Riconosci differenze di parole e suoni tra Portogallo e Brasile.",
+          "p": [
+            "Parole: comboio vs trem (treno), autocarro vs ônibus (autobus), pequeno-almoço vs café da manhã.",
+            "Tu è comune in Portogallo; la maggior parte dei brasiliani usa você. Gerundio: estou a ler vs estou lendo.",
+            "Suono: il Portogallo inghiotte le vocali atone; il Brasile le apre. È la stessa lingua."
+          ],
+          "q": "Quale varietà senti più spesso, e quale ti suona più bella?",
+          "c": "Fai una lista di cinque coppie di parole Portogallo-Brasile che conosci già."
+        },
+        "pt": {
+          "t": "Portugal e Brasil: diferenças",
+          "g": "Revê as diferenças principais e como as explicar sem preconceitos.",
+          "p": [
+            "Léxico: comboio/trem, autocarro/ônibus, telemóvel/celular, frigorífico/geladeira, casa de banho/banheiro.",
+            "Gramática: tu e você, estar a + infinitivo e gerúndio, posição dos pronomes: vejo-o e eu o vejo.",
+            "Ambas as variedades são igualmente corretas; a intercompreensão é alta, sobretudo na escrita."
+          ],
+          "q": "Que diferença entre Portugal e Brasil achas mais curiosa?",
+          "c": "Escreve uma tabela mental de seis pares de palavras e explica-os a um estrangeiro."
+        },
+        "pt_BR": {
+          "t": "Portugal e Brasil: diferenças",
+          "g": "Revise as principais diferenças que você já conhece.",
+          "p": [
+            "Comboio é trem, autocarro é ônibus, telemóvel é celular e casa de banho é banheiro.",
+            "Em Portugal usa-se tu com amigos e estar a + infinitivo: Estou a trabalhar.",
+            "As vogais átonas quase desaparecem na fala portuguesa: telefone soa como tlfone."
+          ],
+          "q": "Qual palavra de Portugal mais surpreendeu você até agora?",
+          "c": "Reescreva um parágrafo brasileiro curto com pelo menos seis palavras de Portugal."
+        }
+      },
+      "target": {
+        "vocab": [
+          {
+            "w": "o comboio",
+            "ex": "O comboio para o Porto sai às nove."
+          },
+          {
+            "w": "o autocarro",
+            "ex": "Apanho o autocarro na esquina."
+          },
+          {
+            "w": "o pequeno-almoço",
+            "ex": "Ao pequeno-almoço como pão com queijo."
+          },
+          {
+            "w": "o telemóvel",
+            "ex": "Esqueci-me do telemóvel em casa."
+          },
+          {
+            "w": "a casa de banho",
+            "ex": "Onde é a casa de banho?"
+          },
+          {
+            "w": "o frigorífico",
+            "ex": "O leite está no frigorífico."
+          }
+        ],
+        "gram": "Portugal/Brasil: comboio/trem, autocarro/ônibus, telemóvel/celular. Estou a ler/estou lendo. Tu comum em Portugal."
+      }
+    },
+    {
+      "d": 86,
+      "lv": "A1",
+      "i18n": {
+        "en": {
+          "t": "Where Portuguese is spoken",
+          "g": "Learn about the Lusophone world.",
+          "p": [
+            "Portuguese is official in Portugal, Brazil, Angola, Mozambique, Cape Verde, Guinea-Bissau and São Tomé and Príncipe.",
+            "It is also official in Timor-Leste and Equatorial Guinea, and is spoken in Macau. The community is the CPLP.",
+            "Words to know: lusófono (Portuguese-speaking), a língua oficial, falar português, o país."
+          ],
+          "q": "Which Portuguese-speaking country would you like to visit, and why?",
+          "c": "Write three sentences: Em Angola fala-se português, A capital de Cabo Verde é a Praia, and one of your own."
+        },
+        "de": {
+          "t": "Wo man Portugiesisch spricht",
+          "g": "Du lernst die portugiesischsprachige Welt kennen.",
+          "p": [
+            "Amtssprache in Portugal, Brasilien, Angola, Mosambik, Kap Verde, Guinea-Bissau und São Tomé und Príncipe.",
+            "Auch in Osttimor und Äquatorialguinea amtlich, gesprochen auch in Macau. Die Gemeinschaft heißt CPLP.",
+            "Wichtige Wörter: lusófono (portugiesischsprachig), a língua oficial, falar português, o país."
+          ],
+          "q": "Welches portugiesischsprachige Land möchtest du besuchen, und warum?",
+          "c": "Schreib drei Sätze: Em Angola fala-se português, A capital de Cabo Verde é a Praia, und einen eigenen."
+        },
+        "es": {
+          "t": "Dónde se habla portugués",
+          "g": "Conocer el mundo lusófono.",
+          "p": [
+            "El portugués es oficial en Portugal, Brasil, Angola, Mozambique, Cabo Verde, Guinea-Bisáu y Santo Tomé y Príncipe.",
+            "También en Timor Oriental y Guinea Ecuatorial, y se habla en Macao. La comunidad se llama CPLP.",
+            "Palabras: lusófono, a língua oficial, falar português, o país."
+          ],
+          "q": "¿Qué país lusófono te gustaría visitar y por qué?",
+          "c": "Escribe tres frases: Em Angola fala-se português, A capital de Cabo Verde é a Praia, y una tuya."
+        },
+        "fr": {
+          "t": "Où l'on parle portugais",
+          "g": "Découvrir le monde lusophone.",
+          "p": [
+            "Le portugais est officiel au Portugal, au Brésil, en Angola, au Mozambique, au Cap-Vert, en Guinée-Bissau et à São Tomé-et-Príncipe.",
+            "Il l'est aussi au Timor oriental et en Guinée équatoriale, et on le parle à Macao. La communauté : la CPLP.",
+            "Mots utiles : lusófono (lusophone), a língua oficial, falar português, o país."
+          ],
+          "q": "Quel pays lusophone aimerais-tu visiter, et pourquoi ?",
+          "c": "Écris trois phrases : Em Angola fala-se português, A capital de Cabo Verde é a Praia, et une à toi."
+        },
+        "it": {
+          "t": "Dove si parla portoghese",
+          "g": "Scopri il mondo lusofono.",
+          "p": [
+            "Il portoghese è ufficiale in Portogallo, Brasile, Angola, Mozambico, Capo Verde, Guinea-Bissau e São Tomé e Príncipe.",
+            "Anche a Timor Est e in Guinea Equatoriale, e si parla a Macao. La comunità si chiama CPLP.",
+            "Parole utili: lusófono, a língua oficial, falar português, o país."
+          ],
+          "q": "Quale paese lusofono ti piacerebbe visitare, e perché?",
+          "c": "Scrivi tre frasi: Em Angola fala-se português, A capital de Cabo Verde é a Praia, e una tua."
+        },
+        "pt": {
+          "t": "Onde se fala português",
+          "g": "Revê o mundo lusófono e a sua diversidade.",
+          "p": [
+            "A CPLP tem nove países: Portugal, Brasil, Angola, Moçambique, Cabo Verde, Guiné-Bissau, São Tomé e Príncipe, Timor-Leste e Guiné Equatorial.",
+            "Cada país tem o seu sotaque e vocabulário próprio; em Angola e Moçambique há palavras de línguas bantas.",
+            "O português é uma das línguas mais faladas do mundo e o Dia da Língua Portuguesa celebra-se a 5 de maio."
+          ],
+          "q": "Que sotaque lusófono gostarias de conhecer melhor?",
+          "c": "Escreve uma frase sobre cada um de quatro países lusófonos: capital, paisagem ou comida."
+        },
+        "pt_BR": {
+          "t": "Onde se fala português",
+          "g": "Conheça o mundo lusófono para além do Brasil e de Portugal.",
+          "p": [
+            "Angola, Moçambique, Cabo Verde, Guiné-Bissau, São Tomé e Príncipe e Timor-Leste também falam português.",
+            "A CPLP reúne os nove países de língua oficial portuguesa, incluindo a Guiné Equatorial.",
+            "O Dia da Língua Portuguesa e da Cultura na CPLP é celebrado a 5 de maio."
+          ],
+          "q": "Qual país lusófono da África ou da Ásia você gostaria de visitar?",
+          "c": "Escreva quatro frases sobre países lusófonos, com capital e uma curiosidade."
+        }
+      },
+      "target": {
+        "vocab": [
+          {
+            "w": "lusófono",
+            "ex": "O mundo lusófono é muito diverso."
+          },
+          {
+            "w": "a língua oficial",
+            "ex": "O português é a língua oficial de Angola."
+          },
+          {
+            "w": "fala-se português",
+            "ex": "Em Moçambique fala-se português."
+          },
+          {
+            "w": "o país",
+            "ex": "Cabo Verde é um país de ilhas."
+          },
+          {
+            "w": "a capital",
+            "ex": "A capital de Timor-Leste é Díli."
+          },
+          {
+            "w": "o sotaque",
+            "ex": "Cada país tem o seu sotaque."
+          }
+        ],
+        "gram": "Fala-se português em...: se impessoal (fala-se, vive-se). Países com artigo: o Brasil, a Guiné; sem artigo: Portugal, Angola."
+      }
+    },
+    {
+      "d": 87,
+      "lv": "A1",
+      "i18n": {
+        "en": {
+          "t": "Dialogue: meeting someone new",
+          "g": "Put it all together in a first-meeting conversation.",
+          "p": [
+            "Start: Olá, eu sou a Sara. Como te chamas? Muito prazer! Then: De onde és? Onde moras?",
+            "Keep it going: O que fazes? Gostas de...? Há quanto tempo estás em Portugal?",
+            "Close warmly: Foi um prazer! Vamos tomar um café um dia destes? Até breve!"
+          ],
+          "q": "Imagine we just met at a café in Porto. How would you introduce yourself?",
+          "c": "Write a ten-line first-meeting dialogue using greetings, origin, job, hobbies and a goodbye."
+        },
+        "de": {
+          "t": "Dialog: jemanden kennenlernen",
+          "g": "Du bringst alles in einem Kennenlerngespräch zusammen.",
+          "p": [
+            "Anfang: Olá, eu sou a Sara. Como te chamas? Muito prazer! Dann: De onde és? Onde moras?",
+            "Weiterreden: O que fazes? Gostas de...? Há quanto tempo estás em Portugal?",
+            "Herzlich abschließen: Foi um prazer! Vamos tomar um café um dia destes? Até breve!"
+          ],
+          "q": "Stell dir vor, wir treffen uns in einem Café in Porto. Wie stellst du dich vor?",
+          "c": "Schreib einen Kennenlerndialog mit zehn Zeilen: Gruß, Herkunft, Beruf, Hobbys und Abschied."
+        },
+        "es": {
+          "t": "Diálogo: conocer a alguien",
+          "g": "Juntarlo todo en una conversación de primer encuentro.",
+          "p": [
+            "Inicio: Olá, eu sou a Sara. Como te chamas? Muito prazer! Luego: De onde és? Onde moras?",
+            "Para seguir: O que fazes? Gostas de...? Há quanto tempo estás em Portugal?",
+            "Despídete con calidez: Foi um prazer! Vamos tomar um café um dia destes? Até breve!"
+          ],
+          "q": "Imagina que nos conocemos en un café de Oporto. ¿Cómo te presentarías?",
+          "c": "Escribe un diálogo de diez líneas con saludo, origen, trabajo, aficiones y despedida."
+        },
+        "fr": {
+          "t": "Dialogue : faire connaissance",
+          "g": "Tout réunir dans une conversation de première rencontre.",
+          "p": [
+            "Début : Olá, eu sou a Sara. Como te chamas? Muito prazer! Puis : De onde és? Onde moras?",
+            "Relancer : O que fazes? Gostas de...? Há quanto tempo estás em Portugal?",
+            "Conclure chaleureusement : Foi um prazer! Vamos tomar um café um dia destes? Até breve!"
+          ],
+          "q": "Imagine qu'on se rencontre dans un café à Porto. Comment te présenterais-tu ?",
+          "c": "Écris un dialogue de dix lignes : salutations, origine, métier, loisirs et au revoir."
+        },
+        "it": {
+          "t": "Dialogo: conoscere qualcuno",
+          "g": "Metti tutto insieme in una conversazione di primo incontro.",
+          "p": [
+            "Inizio: Olá, eu sou a Sara. Como te chamas? Muito prazer! Poi: De onde és? Onde moras?",
+            "Per continuare: O que fazes? Gostas de...? Há quanto tempo estás em Portugal?",
+            "Chiudi con calore: Foi um prazer! Vamos tomar um café um dia destes? Até breve!"
+          ],
+          "q": "Immagina di conoscermi in un caffè di Porto. Come ti presenteresti?",
+          "c": "Scrivi un dialogo di dieci righe con saluti, origine, lavoro, hobby e congedo."
+        },
+        "pt": {
+          "t": "Diálogo: conhecer alguém",
+          "g": "Revê como tornar uma primeira conversa natural e acolhedora.",
+          "p": [
+            "Em Portugal, entre jovens, passa-se rapidamente ao tu; com pessoas mais velhas, o senhor ou a senhora.",
+            "Perguntas abertas ajudam: O que te trouxe a Portugal? O que mais gostas cá? Evita perguntas íntimas.",
+            "Fechos simpáticos: Foi um prazer conhecer-te. Um dia destes combinamos um café. Até à próxima!"
+          ],
+          "q": "Que pergunta fazes para quebrar o gelo com alguém que acabaste de conhecer?",
+          "c": "Escreve um diálogo modelo de primeiro encontro para ajudar um estrangeiro, com oito falas."
+        },
+        "pt_BR": {
+          "t": "Diálogo: conhecer alguém",
+          "g": "Monte uma primeira conversa ao estilo português.",
+          "p": [
+            "Em Portugal, entre jovens, usa-se tu: Como te chamas? De onde és? Com mais velhos: o senhor.",
+            "Há quanto tempo estás cá? é uma pergunta comum; cá é aqui.",
+            "Para fechar: Foi um prazer! Um dia destes tomamos um café. Até breve! Dois beijinhos são o cumprimento comum."
+          ],
+          "q": "Como você se apresentaria a um português num café do Porto?",
+          "c": "Escreva um diálogo de oito falas com tu, cá e foi um prazer."
+        }
+      },
+      "target": {
+        "vocab": [
+          {
+            "w": "como te chamas?",
+            "ex": "Olá! Como te chamas?"
+          },
+          {
+            "w": "muito prazer",
+            "ex": "Muito prazer, eu sou o Rui."
+          },
+          {
+            "w": "de onde és?",
+            "ex": "De onde és? Sou de Faro."
+          },
+          {
+            "w": "o que fazes?",
+            "ex": "O que fazes na vida?"
+          },
+          {
+            "w": "há quanto tempo...?",
+            "ex": "Há quanto tempo vives em Lisboa?"
+          },
+          {
+            "w": "foi um prazer",
+            "ex": "Foi um prazer conhecer-te!"
+          }
+        ],
+        "gram": "Conhecer alguém: perguntas com tu (Como te chamas? De onde és? O que fazes?), Há quanto tempo + presente? Foi um prazer."
+      }
+    },
+    {
+      "d": 88,
+      "lv": "A1",
+      "i18n": {
+        "en": {
+          "t": "Writing a short message",
+          "g": "Write a simple message or postcard.",
+          "p": [
+            "Open: Olá Ana, tudo bem? or Querida Ana, for a postcard. Then the news: Estou em Lisboa. Está sol!",
+            "Middle: what you do and like: Hoje vou ao castelo. A comida é ótima. Tenho saudades tuas!",
+            "Close: Beijinhos (kisses, very common), Um abraço (a hug), Até breve! Then your name."
+          ],
+          "q": "Who would you send a postcard to from Portugal, and what would you write?",
+          "c": "Write a postcard of five sentences from a Portuguese city, with an opening, news and Beijinhos."
+        },
+        "de": {
+          "t": "Eine kurze Nachricht schreiben",
+          "g": "Du schreibst eine einfache Nachricht oder Postkarte.",
+          "p": [
+            "Anfang: Olá Ana, tudo bem? oder Querida Ana, für eine Postkarte. Dann Neuigkeiten: Estou em Lisboa. Está sol!",
+            "Mitte: was du machst und magst: Hoje vou ao castelo. A comida é ótima. Tenho saudades tuas!",
+            "Schluss: Beijinhos (Küsschen, sehr üblich), Um abraço (Umarmung), Até breve! Dann dein Name."
+          ],
+          "q": "Wem würdest du eine Postkarte aus Portugal schicken, und was würdest du schreiben?",
+          "c": "Schreib eine Postkarte mit fünf Sätzen aus einer portugiesischen Stadt, mit Anrede, Neuigkeiten und Beijinhos."
+        },
+        "es": {
+          "t": "Escribir un mensaje corto",
+          "g": "Escribir un mensaje o una postal sencilla.",
+          "p": [
+            "Inicio: Olá Ana, tudo bem? o Querida Ana, para una postal. Luego las noticias: Estou em Lisboa. Está sol!",
+            "En medio: qué haces y qué te gusta: Hoje vou ao castelo. A comida é ótima. Tenho saudades tuas!",
+            "Cierre: Beijinhos (besitos, muy común), Um abraço, Até breve! Y tu nombre."
+          ],
+          "q": "¿A quién mandarías una postal desde Portugal y qué escribirías?",
+          "c": "Escribe una postal de cinco frases desde una ciudad portuguesa, con saludo, noticias y Beijinhos."
+        },
+        "fr": {
+          "t": "Écrire un petit message",
+          "g": "Écrire un message simple ou une carte postale.",
+          "p": [
+            "Début : Olá Ana, tudo bem? ou Querida Ana, pour une carte. Puis les nouvelles : Estou em Lisboa. Está sol!",
+            "Milieu : ce que tu fais et aimes : Hoje vou ao castelo. A comida é ótima. Tenho saudades tuas!",
+            "Fin : Beijinhos (bisous, très courant), Um abraço (je t'embrasse), Até breve! Puis ton prénom."
+          ],
+          "q": "À qui enverrais-tu une carte postale du Portugal, et qu'écrirais-tu ?",
+          "c": "Écris une carte de cinq phrases depuis une ville portugaise, avec salutation, nouvelles et Beijinhos."
+        },
+        "it": {
+          "t": "Scrivere un breve messaggio",
+          "g": "Scrivi un messaggio semplice o una cartolina.",
+          "p": [
+            "Inizio: Olá Ana, tudo bem? o Querida Ana, per una cartolina. Poi le novità: Estou em Lisboa. Está sol!",
+            "Al centro: cosa fai e cosa ti piace: Hoje vou ao castelo. A comida é ótima. Tenho saudades tuas!",
+            "Chiusura: Beijinhos (bacini, comunissimo), Um abraço (un abbraccio), Até breve! Poi il tuo nome."
+          ],
+          "q": "A chi manderesti una cartolina dal Portogallo, e cosa scriveresti?",
+          "c": "Scrivi una cartolina di cinque frasi da una città portoghese, con saluto, novità e Beijinhos."
+        },
+        "pt": {
+          "t": "Escrever uma mensagem curta",
+          "g": "Revê as fórmulas de abertura e fecho em mensagens informais e formais.",
+          "p": [
+            "Informal: Olá!, Querida Ana, Beijinhos, Um abraço, Até já. Formal: Caro Sr. Silva, Com os melhores cumprimentos.",
+            "Beijinhos é muito usado entre amigos e família; entre colegas, Abraço ou Cumprimentos é mais neutro.",
+            "No Brasil fecha-se muito com Beijos ou Abraços; em Portugal, o diminutivo beijinhos é a marca afetuosa."
+          ],
+          "q": "Como terminas normalmente uma mensagem para um colega de trabalho?",
+          "c": "Escreve a mesma mensagem duas vezes: uma para um amigo e outra para um professor."
+        },
+        "pt_BR": {
+          "t": "Escrever uma mensagem curta",
+          "g": "Revise as fórmulas de mensagem típicas de Portugal.",
+          "p": [
+            "Em Portugal, Beijinhos é o fecho afetuoso mais comum; no Brasil, Beijos ou Bjs.",
+            "Querida Ana e Olá, tudo bem? são iguais; em mensagens formais, Com os melhores cumprimentos.",
+            "Até já é até daqui a pouco; Até logo é até mais tarde. Cá e lá aparecem muito nos postais."
+          ],
+          "q": "Como você terminaria uma mensagem para uma amiga portuguesa?",
+          "c": "Escreva um postal de Lisboa com Olá, cá, está sol, beijinhos e até breve."
+        }
+      },
+      "target": {
+        "vocab": [
+          {
+            "w": "querida Ana",
+            "ex": "Querida Ana, estou a adorar Lisboa!"
+          },
+          {
+            "w": "tudo bem?",
+            "ex": "Olá Pedro, tudo bem contigo?"
+          },
+          {
+            "w": "beijinhos",
+            "ex": "Até sábado! Beijinhos."
+          },
+          {
+            "w": "um abraço",
+            "ex": "Um abraço e até breve."
+          },
+          {
+            "w": "o postal",
+            "ex": "Mando-te um postal do Algarve."
+          },
+          {
+            "w": "até breve",
+            "ex": "Até breve, querida amiga!"
+          }
+        ],
+        "gram": "Mensagens: abertura (Olá, Querida...), notícias no presente, fecho (Beijinhos, Um abraço, Com os melhores cumprimentos)."
+      }
+    },
+    {
+      "d": 89,
+      "lv": "A1",
+      "i18n": {
+        "en": {
+          "t": "Listening tips",
+          "g": "Learn how to catch the reduced vowels of European Portuguese.",
+          "p": [
+            "Unstressed e often almost disappears: telefone sounds like tlfone, pequeno like pkenu. Listen for stressed syllables.",
+            "Unstressed o sounds like u: obrigado sounds like ubrigadu. Final s sounds like sh: as casas.",
+            "Tips: listen to short clips daily, read along with subtitles, and repeat phrases aloud (shadowing)."
+          ],
+          "q": "What do you find hardest when you listen to Portuguese from Portugal?",
+          "c": "Listen to one short Portuguese clip today and write down five words you catch."
+        },
+        "de": {
+          "t": "Hörtipps",
+          "g": "Du lernst, die verschluckten Vokale des europäischen Portugiesisch zu verstehen.",
+          "p": [
+            "Unbetontes e verschwindet fast: telefone klingt wie tlfone, pequeno wie pkenu. Achte auf betonte Silben.",
+            "Unbetontes o klingt wie u: obrigado klingt wie ubrigadu. End-s klingt wie sch: as casas.",
+            "Tipps: täglich kurze Clips hören, mit Untertiteln mitlesen und Sätze laut nachsprechen (Shadowing)."
+          ],
+          "q": "Was fällt dir beim Hören von Portugiesisch aus Portugal am schwersten?",
+          "c": "Hör dir heute einen kurzen portugiesischen Clip an und schreib fünf Wörter auf, die du verstehst."
+        },
+        "es": {
+          "t": "Consejos para escuchar",
+          "g": "Aprender a captar las vocales reducidas del portugués europeo.",
+          "p": [
+            "La e átona casi desaparece: telefone suena tlfone, pequeno suena pkenu. Escucha las sílabas tónicas.",
+            "La o átona suena u: obrigado suena ubrigadu. La s final suena como sh: as casas.",
+            "Consejos: escucha clips cortos a diario, lee con subtítulos y repite frases en voz alta (shadowing)."
+          ],
+          "q": "¿Qué te cuesta más al escuchar portugués de Portugal?",
+          "c": "Escucha hoy un clip corto en portugués y apunta cinco palabras que entiendas."
+        },
+        "fr": {
+          "t": "Conseils d'écoute",
+          "g": "Apprendre à saisir les voyelles réduites du portugais européen.",
+          "p": [
+            "Le e non accentué disparaît presque : telefone sonne tlfone, pequeno sonne pkenu. Repère les syllabes accentuées.",
+            "Le o non accentué sonne ou : obrigado sonne oubrigadou. Le s final sonne ch : as casas.",
+            "Conseils : écoute de courts extraits chaque jour, lis avec sous-titres et répète à voix haute (shadowing)."
+          ],
+          "q": "Qu'est-ce qui est le plus difficile pour toi quand tu écoutes le portugais du Portugal ?",
+          "c": "Écoute aujourd'hui un court extrait en portugais et note cinq mots que tu comprends."
+        },
+        "it": {
+          "t": "Consigli per l'ascolto",
+          "g": "Impari a cogliere le vocali ridotte del portoghese europeo.",
+          "p": [
+            "La e atona quasi scompare: telefone suona tlfone, pequeno suona pkenu. Ascolta le sillabe toniche.",
+            "La o atona suona u: obrigado suona ubrigadu. La s finale suona come sc: as casas.",
+            "Consigli: ascolta brevi clip ogni giorno, leggi con i sottotitoli e ripeti a voce alta (shadowing)."
+          ],
+          "q": "Cosa trovi più difficile quando ascolti il portoghese del Portogallo?",
+          "c": "Ascolta oggi una breve clip in portoghese e scrivi cinque parole che capisci."
+        },
+        "pt": {
+          "t": "Dicas de audição",
+          "g": "Reflete sobre a fala portuguesa e como ajudar estrangeiros a compreendê-la.",
+          "p": [
+            "Na fala rápida, as vogais átonas reduzem-se muito: de facto soa dfactu. Para nós é natural, para eles é um desafio.",
+            "Falar um pouco mais devagar e articular melhor ajuda imenso quem aprende, sem ser preciso mudar de sotaque.",
+            "Podcasts, telejornais e canções com letra são ótimos recursos para treinar o ouvido."
+          ],
+          "q": "Que conselho darias a um estrangeiro que diz que o português de Portugal soa muito rápido?",
+          "c": "Grava-te a ler uma frase em ritmo normal e depois em ritmo lento e claro; nota as diferenças."
+        },
+        "pt_BR": {
+          "t": "Dicas de audição",
+          "g": "Aprenda a entender a fala rápida de Portugal.",
+          "p": [
+            "As vogais átonas quase somem: pequeno soa pkenu, telefone soa tlfone. Foque nas sílabas tônicas.",
+            "O s final soa como xis: as casas soa ax cazax. O l final é mais escuro, como em Portugal.",
+            "Ouça rádio e podcasts portugueses um pouco por dia; em poucas semanas o ouvido se adapta."
+          ],
+          "q": "Qual sotaque de Portugal você acha mais difícil de entender?",
+          "c": "Ouça um telejornal português por cinco minutos e anote dez palavras que reconheceu."
+        }
+      },
+      "target": {
+        "vocab": [
+          {
+            "w": "ouvir",
+            "ex": "Gosto de ouvir rádio no carro."
+          },
+          {
+            "w": "perceber",
+            "ex": "Desculpe, não percebi. Pode repetir?"
+          },
+          {
+            "w": "mais devagar",
+            "ex": "Pode falar mais devagar, por favor?"
+          },
+          {
+            "w": "o sotaque",
+            "ex": "O sotaque do Porto é diferente do de Lisboa."
+          },
+          {
+            "w": "a legenda",
+            "ex": "Vejo filmes com legendas em português."
+          },
+          {
+            "w": "repetir em voz alta",
+            "ex": "Repito as frases em voz alta."
+          }
+        ],
+        "gram": "Em Portugal, perceber = compreender (não percebi). Vogais átonas reduzidas: e quase muda, o soa u, s final soa x."
+      }
+    },
+    {
+      "d": 90,
+      "lv": "A1",
+      "i18n": {
+        "en": {
+          "t": "Review: A1 complete",
+          "g": "Celebrate A1 by recapping verbs, numbers, questions and key phrases.",
+          "p": [
+            "Verbs: ser, estar, ter, ir, vir, fazer, dar, dizer, trazer; vou + infinitive for plans; estar a + infinitive.",
+            "Questions and phrases: Como te chamas? Onde fica? Quanto custa? Queres ir? Tenho saudades. Parabéns!",
+            "Grammar: comparisons, superlatives, object pronouns vejo-o, dá-me, and ter de. Three months done!"
+          ],
+          "q": "Tell me about yourself in five sentences: name, origin, routine, plans and one feeling.",
+          "c": "Record or write a one-minute self-introduction using at least ten words from this level."
+        },
+        "de": {
+          "t": "Wiederholung: A1 geschafft",
+          "g": "Du feierst A1 und wiederholst Verben, Zahlen, Fragen und Schlüsselsätze.",
+          "p": [
+            "Verben: ser, estar, ter, ir, vir, fazer, dar, dizer, trazer; vou + Infinitiv für Pläne; estar a + Infinitiv.",
+            "Fragen und Sätze: Como te chamas? Onde fica? Quanto custa? Queres ir? Tenho saudades. Parabéns!",
+            "Grammatik: Vergleiche, Superlative, Objektpronomen vejo-o, dá-me, und ter de. Drei Monate geschafft!"
+          ],
+          "q": "Erzähl mir in fünf Sätzen von dir: Name, Herkunft, Alltag, Pläne und ein Gefühl.",
+          "c": "Nimm eine einminütige Vorstellung auf oder schreib sie, mit mindestens zehn Wörtern dieses Niveaus."
+        },
+        "es": {
+          "t": "Repaso: A1 completado",
+          "g": "Celebrar el A1 repasando verbos, números, preguntas y frases clave.",
+          "p": [
+            "Verbos: ser, estar, ter, ir, vir, fazer, dar, dizer, trazer; vou + infinitivo para planes; estar a + infinitivo.",
+            "Preguntas y frases: Como te chamas? Onde fica? Quanto custa? Queres ir? Tenho saudades. Parabéns!",
+            "Gramática: comparativos, superlativos, pronombres vejo-o, dá-me, y ter de. ¡Tres meses completados!"
+          ],
+          "q": "Háblame de ti en cinco frases: nombre, origen, rutina, planes y un sentimiento.",
+          "c": "Graba o escribe una presentación de un minuto con al menos diez palabras de este nivel."
+        },
+        "fr": {
+          "t": "Révision : A1 terminé",
+          "g": "Fêter l'A1 en révisant verbes, nombres, questions et phrases clés.",
+          "p": [
+            "Verbes : ser, estar, ter, ir, vir, fazer, dar, dizer, trazer ; vou + infinitif pour les projets ; estar a + infinitif.",
+            "Questions et phrases : Como te chamas? Onde fica? Quanto custa? Queres ir? Tenho saudades. Parabéns!",
+            "Grammaire : comparatifs, superlatifs, pronoms vejo-o, dá-me, et ter de. Trois mois déjà !"
+          ],
+          "q": "Parle-moi de toi en cinq phrases : prénom, origine, routine, projets et un sentiment.",
+          "c": "Enregistre ou écris une présentation d'une minute avec au moins dix mots de ce niveau."
+        },
+        "it": {
+          "t": "Ripasso: A1 completato",
+          "g": "Festeggi l'A1 ripassando verbi, numeri, domande e frasi chiave.",
+          "p": [
+            "Verbi: ser, estar, ter, ir, vir, fazer, dar, dizer, trazer; vou + infinito per i piani; estar a + infinito.",
+            "Domande e frasi: Como te chamas? Onde fica? Quanto custa? Queres ir? Tenho saudades. Parabéns!",
+            "Grammatica: comparativi, superlativi, pronomi vejo-o, dá-me, e ter de. Tre mesi fatti!"
+          ],
+          "q": "Parlami di te in cinque frasi: nome, origine, routine, piani e un sentimento.",
+          "c": "Registra o scrivi una presentazione di un minuto con almeno dieci parole di questo livello."
+        },
+        "pt": {
+          "t": "Revisão: A1 concluído",
+          "g": "Celebra o nível A1 e revê o que um aprendente já domina.",
+          "p": [
+            "Um aprendente A1 apresenta-se, pede no café, pergunta o caminho, fala da rotina e faz planos simples.",
+            "Verbos-chave: ser, estar, ter, ir, vir, fazer, dar, dizer, trazer. Estruturas: vou + infinitivo, estar a, ter de.",
+            "Pronomes, comparativos e diferenças Portugal-Brasil fecham o nível. Agora vem o passado no A2!"
+          ],
+          "q": "Qual foi, para ti, o tema mais interessante destes três meses?",
+          "c": "Escreve cinco perguntas que farias a um aprendente para verificar se domina o nível A1."
+        },
+        "pt_BR": {
+          "t": "Revisão: A1 concluído",
+          "g": "Feche o A1 revendo o português de Portugal que você já usa.",
+          "p": [
+            "Vocabulário: comboio, autocarro, pequeno-almoço, telemóvel, casa de banho, rés-do-chão, beijinhos.",
+            "Gramática: estar a + infinitivo, tu com amigos, pronomes depois do verbo (vejo-o, dá-me) e ter de.",
+            "Expressões: Estou?, Vou já!, Combinado!, Fica para a próxima, um bocado, imenso. Três meses feitos!"
+          ],
+          "q": "Apresente-se em cinco frases como um português faria, usando tu e cá.",
+          "c": "Grave ou escreva um minuto sobre você com pelo menos dez palavras de Portugal."
+        }
+      },
+      "target": {
+        "vocab": [
+          {
+            "w": "eu sou",
+            "ex": "Eu sou a Inês e sou de Braga."
+          },
+          {
+            "w": "vou + infinitivo",
+            "ex": "Vou estudar o nível A2."
+          },
+          {
+            "w": "estou a aprender",
+            "ex": "Estou a aprender português há três meses."
+          },
+          {
+            "w": "tenho de",
+            "ex": "Tenho de praticar todos os dias."
+          },
+          {
+            "w": "gosto de",
+            "ex": "Gosto muito de falar português."
+          },
+          {
+            "w": "parabéns!",
+            "ex": "Acabaste o A1? Parabéns!"
+          }
+        ],
+        "gram": "Revisão A1: ser/estar/ter/ir/vir, vou + infinitivo, estar a + infinitivo, ter de, comparativos, pronomes (vejo-o, dá-me)."
+      }
+    }
+  ]
+}

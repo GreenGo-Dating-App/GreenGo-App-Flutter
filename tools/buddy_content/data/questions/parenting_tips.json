@@ -1,0 +1,1305 @@
+{
+"topic": "parenting_tips",
+"questions": [
+{
+"id": "parenting_tips-001",
+"lv": "any",
+"i18n": {
+"en": "What is your favourite moment of the day with the children in your life?",
+"de": "Was ist dein liebster Moment des Tages mit den Kindern in deinem Leben?",
+"es": "¿Cuál es tu momento favorito del día con los niños de tu vida?",
+"fr": "Quel est ton moment préféré de la journée avec les enfants de ta vie ?",
+"it": "Qual è il tuo momento preferito della giornata con i bambini della tua vita?",
+"pt": "Qual é o teu momento preferido do dia com as crianças da tua vida?",
+"pt_BR": "Qual é o seu momento favorito do dia com as crianças da sua vida?"
+}
+},
+{
+"id": "parenting_tips-002",
+"lv": "any",
+"i18n": {
+"en": "Which family tradition from your own childhood would you love to pass on?",
+"de": "Welche Familientradition aus deiner Kindheit würdest du gern weitergeben?",
+"es": "¿Qué tradición familiar de tu infancia te encantaría transmitir?",
+"fr": "Quelle tradition familiale de ton enfance aimerais-tu transmettre ?",
+"it": "Quale tradizione di famiglia della tua infanzia ti piacerebbe tramandare?",
+"pt": "Que tradição familiar da tua infância gostarias de passar adiante?",
+"pt_BR": "Qual tradição de família da sua infância você adoraria passar adiante?"
+}
+},
+{
+"id": "parenting_tips-003",
+"lv": "any",
+"i18n": {
+"en": "What is one thing that always makes your kids laugh?",
+"de": "Was bringt deine Kinder immer zum Lachen?",
+"es": "¿Qué es algo que siempre hace reír a tus hijos?",
+"fr": "Qu'est-ce qui fait toujours rire tes enfants ?",
+"it": "C'è qualcosa che fa sempre ridere i tuoi figli?",
+"pt": "O que é que faz sempre rir os teus filhos?",
+"pt_BR": "O que sempre faz seus filhos darem risada?"
+}
+},
+{
+"id": "parenting_tips-004",
+"lv": "any",
+"i18n": {
+"en": "What did you enjoy most about being a child yourself?",
+"de": "Was hat dir selbst als Kind am meisten Spaß gemacht?",
+"es": "¿Qué es lo que más disfrutabas de ser niño o niña?",
+"fr": "Qu'est-ce que tu aimais le plus quand tu étais enfant ?",
+"it": "Cosa ti piaceva di più quando eri bambino o bambina?",
+"pt": "O que é que mais gostavas de ser criança?",
+"pt_BR": "O que você mais curtia quando era criança?"
+}
+},
+{
+"id": "parenting_tips-005",
+"lv": "any",
+"i18n": {
+"en": "What does a perfect family weekend look like for you?",
+"de": "Wie sieht für dich ein perfektes Familienwochenende aus?",
+"es": "¿Cómo sería para ti un fin de semana en familia perfecto?",
+"fr": "À quoi ressemble pour toi un week-end en famille parfait ?",
+"it": "Com'è per te un weekend in famiglia perfetto?",
+"pt": "Como é para ti um fim de semana em família perfeito?",
+"pt_BR": "Como seria para você um fim de semana em família perfeito?"
+}
+},
+{
+"id": "parenting_tips-006",
+"lv": "any",
+"i18n": {
+"en": "Which children's book do you love reading aloud?",
+"de": "Welches Kinderbuch liest du besonders gern vor?",
+"es": "¿Qué libro infantil te encanta leer en voz alta?",
+"fr": "Quel livre pour enfants adores-tu lire à voix haute ?",
+"it": "Quale libro per bambini ami leggere ad alta voce?",
+"pt": "Que livro infantil adoras ler em voz alta?",
+"pt_BR": "Qual livro infantil você adora ler em voz alta?"
+}
+},
+{
+"id": "parenting_tips-007",
+"lv": "any",
+"i18n": {
+"en": "What is the best parenting advice you have ever received?",
+"de": "Was ist der beste Erziehungsrat, den du je bekommen hast?",
+"es": "¿Cuál es el mejor consejo sobre crianza que te han dado?",
+"fr": "Quel est le meilleur conseil sur l'éducation qu'on t'ait donné ?",
+"it": "Qual è il miglior consiglio da genitore che tu abbia mai ricevuto?",
+"pt": "Qual foi o melhor conselho sobre parentalidade que já recebeste?",
+"pt_BR": "Qual foi o melhor conselho sobre criação de filhos que você já recebeu?"
+}
+},
+{
+"id": "parenting_tips-008",
+"lv": "any",
+"i18n": {
+"en": "What is a game you love playing with children?",
+"de": "Welches Spiel spielst du besonders gern mit Kindern?",
+"es": "¿A qué juego te encanta jugar con los niños?",
+"fr": "À quel jeu adores-tu jouer avec les enfants ?",
+"it": "A quale gioco ami giocare con i bambini?",
+"pt": "Qual é o jogo que mais gostas de jogar com crianças?",
+"pt_BR": "Qual brincadeira você adora fazer com as crianças?"
+}
+},
+{
+"id": "parenting_tips-009",
+"lv": "any",
+"i18n": {
+"en": "How do you like to spend a rainy day at home with kids?",
+"de": "Wie verbringst du am liebsten einen Regentag mit Kindern zu Hause?",
+"es": "¿Cómo te gusta pasar un día de lluvia en casa con los niños?",
+"fr": "Comment aimes-tu passer une journée de pluie à la maison avec les enfants ?",
+"it": "Come ti piace passare una giornata di pioggia a casa con i bambini?",
+"pt": "Como gostas de passar um dia de chuva em casa com os miúdos?",
+"pt_BR": "Como você gosta de passar um dia de chuva em casa com as crianças?"
+}
+},
+{
+"id": "parenting_tips-010",
+"lv": "any",
+"i18n": {
+"en": "What is a meal your whole family enjoys together?",
+"de": "Welches Essen mag deine ganze Familie?",
+"es": "¿Qué comida disfruta toda tu familia junta?",
+"fr": "Quel plat toute ta famille aime-t-elle partager ?",
+"it": "Qual è un piatto che piace a tutta la tua famiglia?",
+"pt": "Que refeição é que toda a tua família adora?",
+"pt_BR": "Qual comida toda a sua família adora comer junta?"
+}
+},
+{
+"id": "parenting_tips-011",
+"lv": "any",
+"i18n": {
+"en": "Who were the adults who inspired you most as a child?",
+"de": "Welche Erwachsenen haben dich als Kind am meisten inspiriert?",
+"es": "¿Qué adultos te inspiraron más cuando eras niño o niña?",
+"fr": "Quels adultes t'ont le plus inspiré quand tu étais enfant ?",
+"it": "Quali adulti ti hanno ispirato di più da bambino o bambina?",
+"pt": "Que adultos mais te inspiraram quando eras criança?",
+"pt_BR": "Quais adultos mais te inspiraram quando você era criança?"
+}
+},
+{
+"id": "parenting_tips-012",
+"lv": "any",
+"i18n": {
+"en": "What is something your child has taught you?",
+"de": "Was hat dir dein Kind schon beigebracht?",
+"es": "¿Qué te ha enseñado tu hijo o tu hija?",
+"fr": "Qu'est-ce que ton enfant t'a appris ?",
+"it": "Cosa ti ha insegnato tuo figlio o tua figlia?",
+"pt": "O que é que o teu filho ou a tua filha já te ensinou?",
+"pt_BR": "O que seu filho ou sua filha já te ensinou?"
+}
+},
+{
+"id": "parenting_tips-013",
+"lv": "any",
+"i18n": {
+"en": "What does your ideal bedtime routine look like?",
+"de": "Wie sieht dein ideales Abendritual vor dem Schlafengehen aus?",
+"es": "¿Cómo es tu rutina ideal antes de dormir?",
+"fr": "À quoi ressemble ton rituel du coucher idéal ?",
+"it": "Com'è la tua routine ideale della buonanotte?",
+"pt": "Como é a tua rotina ideal antes de deitar?",
+"pt_BR": "Como é a sua rotina ideal na hora de dormir?"
+}
+},
+{
+"id": "parenting_tips-014",
+"lv": "any",
+"i18n": {
+"en": "Which outdoor place do your kids love the most?",
+"de": "Welchen Ort draußen lieben deine Kinder am meisten?",
+"es": "¿Qué lugar al aire libre les encanta más a tus hijos?",
+"fr": "Quel endroit en plein air tes enfants préfèrent-ils ?",
+"it": "Quale posto all'aperto amano di più i tuoi figli?",
+"pt": "Qual é o sítio ao ar livre de que os teus filhos mais gostam?",
+"pt_BR": "Qual lugar ao ar livre seus filhos mais amam?"
+}
+},
+{
+"id": "parenting_tips-015",
+"lv": "any",
+"i18n": {
+"en": "What values matter most to you in raising children?",
+"de": "Welche Werte sind dir bei der Erziehung am wichtigsten?",
+"es": "¿Qué valores son los más importantes para ti al criar a los niños?",
+"fr": "Quelles valeurs comptent le plus pour toi dans l'éducation des enfants ?",
+"it": "Quali valori contano di più per te nel crescere i bambini?",
+"pt": "Que valores são mais importantes para ti na educação das crianças?",
+"pt_BR": "Quais valores são mais importantes para você na criação dos filhos?"
+}
+},
+{
+"id": "parenting_tips-016",
+"lv": "any",
+"i18n": {
+"en": "What is a small habit that makes your family life easier?",
+"de": "Welche kleine Gewohnheit erleichtert euer Familienleben?",
+"es": "¿Qué pequeño hábito te facilita la vida familiar?",
+"fr": "Quelle petite habitude te simplifie la vie de famille ?",
+"it": "Quale piccola abitudine ti semplifica la vita in famiglia?",
+"pt": "Que pequeno hábito te facilita a vida em família?",
+"pt_BR": "Qual pequeno hábito facilita a sua vida em família?"
+}
+},
+{
+"id": "parenting_tips-017",
+"lv": "any",
+"i18n": {
+"en": "How do you recharge after a busy day with kids?",
+"de": "Wie tankst du nach einem anstrengenden Tag mit Kindern wieder auf?",
+"es": "¿Cómo recargas energía después de un día intenso con los niños?",
+"fr": "Comment te ressources-tu après une journée chargée avec les enfants ?",
+"it": "Come ricarichi le energie dopo una giornata intensa con i bambini?",
+"pt": "Como recarregas energias depois de um dia cheio com os miúdos?",
+"pt_BR": "Como você recarrega as energias depois de um dia corrido com as crianças?"
+}
+},
+{
+"id": "parenting_tips-018",
+"lv": "any",
+"i18n": {
+"en": "What song do you love singing with children?",
+"de": "Welches Lied singst du gern mit Kindern?",
+"es": "¿Qué canción te encanta cantar con los niños?",
+"fr": "Quelle chanson adores-tu chanter avec les enfants ?",
+"it": "Quale canzone ami cantare con i bambini?",
+"pt": "Que canção adoras cantar com as crianças?",
+"pt_BR": "Qual música você adora cantar com as crianças?"
+}
+},
+{
+"id": "parenting_tips-019",
+"lv": "any",
+"i18n": {
+"en": "What is a family trip you remember with a big smile?",
+"de": "An welchen Familienausflug denkst du mit einem breiten Lächeln zurück?",
+"es": "¿Qué viaje en familia recuerdas con una gran sonrisa?",
+"fr": "De quel voyage en famille te souviens-tu avec un grand sourire ?",
+"it": "Quale viaggio in famiglia ricordi con un gran sorriso?",
+"pt": "De que viagem em família te lembras com um grande sorriso?",
+"pt_BR": "De qual viagem em família você se lembra com um sorrisão?"
+}
+},
+{
+"id": "parenting_tips-020",
+"lv": "any",
+"i18n": {
+"en": "What are you most proud of as a parent or carer?",
+"de": "Worauf bist du als Elternteil oder Bezugsperson am meisten stolz?",
+"es": "¿De qué te sientes más orgulloso u orgullosa como madre, padre o cuidador?",
+"fr": "De quoi es-tu le plus fier ou la plus fière en tant que parent ou proche ?",
+"it": "Di cosa vai più fiero o fiera come genitore o figura di riferimento?",
+"pt": "De que é que mais te orgulhas como pai, mãe ou cuidador?",
+"pt_BR": "Do que você mais se orgulha como pai, mãe ou cuidador?"
+}
+},
+{
+"id": "parenting_tips-021",
+"lv": "any",
+"i18n": {
+"en": "How are family traditions in your culture different from others you know?",
+"de": "Wie unterscheiden sich Familientraditionen in deiner Kultur von anderen, die du kennst?",
+"es": "¿En qué se diferencian las tradiciones familiares de tu cultura de otras que conoces?",
+"fr": "En quoi les traditions familiales de ta culture diffèrent-elles d'autres que tu connais ?",
+"it": "In cosa le tradizioni familiari della tua cultura sono diverse da altre che conosci?",
+"pt": "Em que é que as tradições familiares da tua cultura diferem de outras que conheces?",
+"pt_BR": "Em que as tradições de família da sua cultura são diferentes de outras que você conhece?"
+}
+},
+{
+"id": "parenting_tips-022",
+"lv": "any",
+"i18n": {
+"en": "What is a hobby you would love to share with your children?",
+"de": "Welches Hobby würdest du gern mit deinen Kindern teilen?",
+"es": "¿Qué afición te encantaría compartir con tus hijos?",
+"fr": "Quel loisir aimerais-tu partager avec tes enfants ?",
+"it": "Quale hobby ti piacerebbe condividere con i tuoi figli?",
+"pt": "Que passatempo gostarias de partilhar com os teus filhos?",
+"pt_BR": "Qual hobby você adoraria compartilhar com seus filhos?"
+}
+},
+{
+"id": "parenting_tips-023",
+"lv": "any",
+"i18n": {
+"en": "What does a calm home feel like to you?",
+"de": "Wie fühlt sich für dich ein ruhiges Zuhause an?",
+"es": "¿Cómo se siente para ti un hogar tranquilo?",
+"fr": "Pour toi, c'est quoi une maison sereine ?",
+"it": "Che sensazione ti dà una casa tranquilla?",
+"pt": "Como é, para ti, uma casa tranquila?",
+"pt_BR": "Para você, como é uma casa tranquila?"
+}
+},
+{
+"id": "parenting_tips-024",
+"lv": "any",
+"i18n": {
+"en": "Which festival or holiday does your family enjoy most?",
+"de": "Welches Fest oder welchen Feiertag mag deine Familie am liebsten?",
+"es": "¿Qué fiesta o celebración disfruta más tu familia?",
+"fr": "Quelle fête ta famille préfère-t-elle ?",
+"it": "Quale festa o ricorrenza ama di più la tua famiglia?",
+"pt": "Que festa ou celebração é que a tua família mais aprecia?",
+"pt_BR": "Qual festa ou data comemorativa sua família mais curte?"
+}
+},
+{
+"id": "parenting_tips-025",
+"lv": "any",
+"i18n": {
+"en": "What is one word you would use to describe your family?",
+"de": "Mit welchem einen Wort würdest du deine Familie beschreiben?",
+"es": "¿Con qué palabra describirías a tu familia?",
+"fr": "Quel mot choisirais-tu pour décrire ta famille ?",
+"it": "Con quale parola descriveresti la tua famiglia?",
+"pt": "Que palavra usarias para descrever a tua família?",
+"pt_BR": "Qual palavra você usaria para descrever sua família?"
+}
+},
+{
+"id": "parenting_tips-026",
+"lv": "any",
+"i18n": {
+"en": "What kind of activities do your kids choose when they have free time?",
+"de": "Was machen deine Kinder am liebsten, wenn sie Freizeit haben?",
+"es": "¿Qué actividades eligen tus hijos cuando tienen tiempo libre?",
+"fr": "Quelles activités tes enfants choisissent-ils quand ils ont du temps libre ?",
+"it": "Quali attività scelgono i tuoi figli quando hanno tempo libero?",
+"pt": "Que atividades escolhem os teus filhos quando têm tempo livre?",
+"pt_BR": "Que atividades seus filhos escolhem quando têm tempo livre?"
+}
+},
+{
+"id": "parenting_tips-027",
+"lv": "any",
+"i18n": {
+"en": "Who in your family or community helps you most with the kids?",
+"de": "Wer in deiner Familie oder deinem Umfeld hilft dir am meisten mit den Kindern?",
+"es": "¿Quién de tu familia o tu entorno te ayuda más con los niños?",
+"fr": "Qui, dans ta famille ou ton entourage, t'aide le plus avec les enfants ?",
+"it": "Chi nella tua famiglia o nella tua comunità ti aiuta di più con i bambini?",
+"pt": "Quem na tua família ou comunidade mais te ajuda com os miúdos?",
+"pt_BR": "Quem na sua família ou comunidade mais te ajuda com as crianças?"
+}
+},
+{
+"id": "parenting_tips-028",
+"lv": "any",
+"i18n": {
+"en": "What is a funny thing a child once said to you?",
+"de": "Was hat ein Kind mal Lustiges zu dir gesagt?",
+"es": "¿Qué cosa graciosa te dijo alguna vez un niño?",
+"fr": "Quelle phrase drôle un enfant t'a-t-il déjà dite ?",
+"it": "Qual è una cosa buffa che un bambino ti ha detto una volta?",
+"pt": "Que coisa engraçada é que uma criança já te disse?",
+"pt_BR": "Qual foi a coisa mais engraçada que uma criança já te disse?"
+}
+},
+{
+"id": "parenting_tips-029",
+"lv": "any",
+"i18n": {
+"en": "How do you celebrate birthdays in your family?",
+"de": "Wie feiert ihr in deiner Familie Geburtstage?",
+"es": "¿Cómo celebráis los cumpleaños en tu familia?",
+"fr": "Comment fêtez-vous les anniversaires dans ta famille ?",
+"it": "Come festeggiate i compleanni nella tua famiglia?",
+"pt": "Como celebram os aniversários na tua família?",
+"pt_BR": "Como vocês comemoram aniversários na sua família?"
+}
+},
+{
+"id": "parenting_tips-030",
+"lv": "any",
+"i18n": {
+"en": "What chore do your kids actually like doing?",
+"de": "Welche Hausarbeit machen deine Kinder tatsächlich gern?",
+"es": "¿Qué tarea de casa les gusta de verdad a tus hijos?",
+"fr": "Quelle tâche ménagère tes enfants aiment-ils vraiment faire ?",
+"it": "Quale faccenda di casa piace davvero ai tuoi figli?",
+"pt": "Que tarefa de casa é que os teus filhos gostam mesmo de fazer?",
+"pt_BR": "Qual tarefa de casa seus filhos realmente gostam de fazer?"
+}
+},
+{
+"id": "parenting_tips-031",
+"lv": "any",
+"i18n": {
+"en": "What is your go-to trick for a grumpy morning?",
+"de": "Was ist dein bewährter Trick für einen mürrischen Morgen?",
+"es": "¿Cuál es tu truco infalible para una mañana de mal humor?",
+"fr": "Quelle est ton astuce préférée pour un matin grognon ?",
+"it": "Qual è il tuo trucco infallibile per una mattina di malumore?",
+"pt": "Qual é o teu truque infalível para uma manhã rabugenta?",
+"pt_BR": "Qual é o seu truque infalível para uma manhã de mau humor?"
+}
+},
+{
+"id": "parenting_tips-032",
+"lv": "any",
+"i18n": {
+"en": "What would your children say is the best thing about you?",
+"de": "Was würden deine Kinder sagen, ist das Beste an dir?",
+"es": "¿Qué dirían tus hijos que es lo mejor de ti?",
+"fr": "D'après tes enfants, quelle est ta plus grande qualité ?",
+"it": "Cosa direbbero i tuoi figli che è la cosa migliore di te?",
+"pt": "O que diriam os teus filhos que é o melhor em ti?",
+"pt_BR": "O que seus filhos diriam que é o melhor de você?"
+}
+},
+{
+"id": "parenting_tips-033",
+"lv": "any",
+"i18n": {
+"en": "Which skill do you most want your kids to learn?",
+"de": "Welche Fähigkeit sollen deine Kinder unbedingt lernen?",
+"es": "¿Qué habilidad te gustaría más que aprendieran tus hijos?",
+"fr": "Quelle compétence aimerais-tu le plus que tes enfants apprennent ?",
+"it": "Quale abilità vorresti di più che imparassero i tuoi figli?",
+"pt": "Que competência mais gostarias que os teus filhos aprendessem?",
+"pt_BR": "Qual habilidade você mais quer que seus filhos aprendam?"
+}
+},
+{
+"id": "parenting_tips-034",
+"lv": "any",
+"i18n": {
+"en": "What is a simple pleasure you enjoy as a family?",
+"de": "Welche einfache Freude genießt ihr als Familie?",
+"es": "¿Qué placer sencillo disfrutáis en familia?",
+"fr": "Quel plaisir simple partagez-vous en famille ?",
+"it": "Qual è un piacere semplice che vi godete in famiglia?",
+"pt": "Que prazer simples aproveitam em família?",
+"pt_BR": "Qual prazer simples vocês curtem em família?"
+}
+},
+{
+"id": "parenting_tips-035",
+"lv": "any",
+"i18n": {
+"en": "How do you like to start the day with your children?",
+"de": "Wie startest du am liebsten mit deinen Kindern in den Tag?",
+"es": "¿Cómo te gusta empezar el día con tus hijos?",
+"fr": "Comment aimes-tu commencer la journée avec tes enfants ?",
+"it": "Come ti piace iniziare la giornata con i tuoi figli?",
+"pt": "Como gostas de começar o dia com os teus filhos?",
+"pt_BR": "Como você gosta de começar o dia com seus filhos?"
+}
+},
+{
+"id": "parenting_tips-036",
+"lv": "any",
+"i18n": {
+"en": "What is a place you dream of visiting with your family?",
+"de": "Welchen Ort möchtest du gern mal mit deiner Familie besuchen?",
+"es": "¿Qué lugar sueñas con visitar con tu familia?",
+"fr": "Quel endroit rêves-tu de visiter en famille ?",
+"it": "Quale posto sogni di visitare con la tua famiglia?",
+"pt": "Que lugar sonhas visitar com a tua família?",
+"pt_BR": "Qual lugar você sonha em visitar com sua família?"
+}
+},
+{
+"id": "parenting_tips-037",
+"lv": "any",
+"i18n": {
+"en": "What languages are spoken in your home?",
+"de": "Welche Sprachen werden bei dir zu Hause gesprochen?",
+"es": "¿Qué idiomas se hablan en tu casa?",
+"fr": "Quelles langues parle-t-on chez toi ?",
+"it": "Quali lingue si parlano a casa tua?",
+"pt": "Que línguas se falam em tua casa?",
+"pt_BR": "Quais idiomas são falados na sua casa?"
+}
+},
+{
+"id": "parenting_tips-038",
+"lv": "any",
+"i18n": {
+"en": "What is something you do differently from how you were raised?",
+"de": "Was machst du anders als deine Eltern damals?",
+"es": "¿Qué haces de forma distinta a como te criaron a ti?",
+"fr": "Qu'est-ce que tu fais différemment de la façon dont tu as été élevé ?",
+"it": "Cosa fai in modo diverso da come sei stato cresciuto tu?",
+"pt": "O que fazes de forma diferente da maneira como foste educado?",
+"pt_BR": "O que você faz diferente de como foi criado?"
+}
+},
+{
+"id": "parenting_tips-039",
+"lv": "any",
+"i18n": {
+"en": "What kind of pet would your family love to have?",
+"de": "Welches Haustier hätte deine Familie gern?",
+"es": "¿Qué mascota le encantaría tener a tu familia?",
+"fr": "Quel animal de compagnie ta famille aimerait-elle avoir ?",
+"it": "Quale animale domestico piacerebbe avere alla tua famiglia?",
+"pt": "Que animal de estimação é que a tua família gostaria de ter?",
+"pt_BR": "Qual bichinho de estimação sua família adoraria ter?"
+}
+},
+{
+"id": "parenting_tips-040",
+"lv": "any",
+"i18n": {
+"en": "What is one small thing you want to try with your kids this week?",
+"de": "Was möchtest du diese Woche Kleines mit deinen Kindern ausprobieren?",
+"es": "¿Qué pequeña cosa quieres probar con tus hijos esta semana?",
+"fr": "Quelle petite chose veux-tu essayer avec tes enfants cette semaine ?",
+"it": "Quale piccola cosa vuoi provare con i tuoi figli questa settimana?",
+"pt": "Que pequena coisa queres experimentar com os teus filhos esta semana?",
+"pt_BR": "Que coisinha você quer experimentar com seus filhos nesta semana?"
+}
+},
+{
+"id": "parenting_tips-041",
+"lv": "beginner",
+"i18n": {
+"en": "How many children are part of your daily life, and how old are they?",
+"de": "Wie viele Kinder gehören zu deinem Alltag, und wie alt sind sie?",
+"es": "¿Cuántos niños forman parte de tu día a día y qué edad tienen?",
+"fr": "Combien d'enfants font partie de ton quotidien, et quel âge ont-ils ?",
+"it": "Quanti bambini fanno parte della tua vita quotidiana, e quanti anni hanno?",
+"pt": "Quantas crianças fazem parte do teu dia a dia e que idade têm?",
+"pt_BR": "Quantas crianças fazem parte do seu dia a dia e quantos anos elas têm?"
+}
+},
+{
+"id": "parenting_tips-042",
+"lv": "beginner",
+"i18n": {
+"en": "What does a typical morning look like in your home?",
+"de": "Wie sieht ein typischer Morgen bei euch zu Hause aus?",
+"es": "¿Cómo es una mañana típica en tu casa?",
+"fr": "À quoi ressemble un matin typique chez toi ?",
+"it": "Com'è una mattina tipica a casa tua?",
+"pt": "Como é uma manhã típica em tua casa?",
+"pt_BR": "Como é uma manhã típica na sua casa?"
+}
+},
+{
+"id": "parenting_tips-043",
+"lv": "beginner",
+"i18n": {
+"en": "What time do your kids usually go to bed?",
+"de": "Wann gehen deine Kinder normalerweise ins Bett?",
+"es": "¿A qué hora suelen acostarse tus hijos?",
+"fr": "À quelle heure tes enfants se couchent-ils d'habitude ?",
+"it": "A che ora vanno a letto di solito i tuoi figli?",
+"pt": "A que horas é que os teus filhos costumam ir para a cama?",
+"pt_BR": "Que horas seus filhos costumam ir dormir?"
+}
+},
+{
+"id": "parenting_tips-044",
+"lv": "beginner",
+"i18n": {
+"en": "What toys or games are most popular in your house?",
+"de": "Welche Spielsachen oder Spiele sind bei euch am beliebtesten?",
+"es": "¿Qué juguetes o juegos son los más populares en tu casa?",
+"fr": "Quels jouets ou jeux ont le plus de succès chez toi ?",
+"it": "Quali giochi sono i più amati a casa tua?",
+"pt": "Que brinquedos ou jogos são os mais populares lá em casa?",
+"pt_BR": "Quais brinquedos ou jogos fazem mais sucesso na sua casa?"
+}
+},
+{
+"id": "parenting_tips-045",
+"lv": "beginner",
+"i18n": {
+"en": "How often do you eat together as a family?",
+"de": "Wie oft esst ihr gemeinsam als Familie?",
+"es": "¿Con qué frecuencia coméis juntos en familia?",
+"fr": "À quelle fréquence mangez-vous ensemble en famille ?",
+"it": "Quanto spesso mangiate insieme in famiglia?",
+"pt": "Com que frequência comem juntos em família?",
+"pt_BR": "Com que frequência vocês comem juntos em família?"
+}
+},
+{
+"id": "parenting_tips-046",
+"lv": "beginner",
+"i18n": {
+"en": "Do you have a favourite story to tell your kids at night?",
+"de": "Hast du eine Lieblingsgeschichte, die du abends erzählst?",
+"es": "¿Tienes un cuento favorito para contar a tus hijos por la noche?",
+"fr": "As-tu une histoire préférée à raconter le soir à tes enfants ?",
+"it": "Hai una storia preferita da raccontare ai tuoi figli la sera?",
+"pt": "Tens uma história preferida para contar aos teus filhos à noite?",
+"pt_BR": "Você tem uma história favorita para contar aos seus filhos à noite?"
+}
+},
+{
+"id": "parenting_tips-047",
+"lv": "beginner",
+"i18n": {
+"en": "What helps your kids calm down when they are upset?",
+"de": "Was hilft deinen Kindern, sich zu beruhigen, wenn sie aufgewühlt sind?",
+"es": "¿Qué ayuda a tus hijos a calmarse cuando están alterados?",
+"fr": "Qu'est-ce qui aide tes enfants à se calmer quand ils sont contrariés ?",
+"it": "Cosa aiuta i tuoi figli a calmarsi quando sono turbati?",
+"pt": "O que ajuda os teus filhos a acalmarem-se quando estão chateados?",
+"pt_BR": "O que ajuda seus filhos a se acalmarem quando estão chateados?"
+}
+},
+{
+"id": "parenting_tips-048",
+"lv": "beginner",
+"i18n": {
+"en": "Which part of the daily routine is the trickiest for you?",
+"de": "Welcher Teil des Tagesablaufs ist für dich am kniffligsten?",
+"es": "¿Qué parte de la rutina diaria te resulta más complicada?",
+"fr": "Quelle partie de la routine quotidienne est la plus délicate pour toi ?",
+"it": "Quale parte della routine quotidiana è la più difficile per te?",
+"pt": "Que parte da rotina diária é a mais complicada para ti?",
+"pt_BR": "Qual parte da rotina diária é a mais difícil para você?"
+}
+},
+{
+"id": "parenting_tips-049",
+"lv": "beginner",
+"i18n": {
+"en": "How do your kids like to help around the house?",
+"de": "Wie helfen deine Kinder gern im Haushalt mit?",
+"es": "¿Cómo les gusta ayudar en casa a tus hijos?",
+"fr": "Comment tes enfants aiment-ils aider à la maison ?",
+"it": "Come amano aiutare in casa i tuoi figli?",
+"pt": "Como é que os teus filhos gostam de ajudar em casa?",
+"pt_BR": "Como seus filhos gostam de ajudar em casa?"
+}
+},
+{
+"id": "parenting_tips-050",
+"lv": "beginner",
+"i18n": {
+"en": "What snack do your children always ask for?",
+"de": "Nach welchem Snack fragen deine Kinder immer?",
+"es": "¿Qué merienda piden siempre tus hijos?",
+"fr": "Quel goûter tes enfants réclament-ils toujours ?",
+"it": "Quale merenda chiedono sempre i tuoi figli?",
+"pt": "Que lanche é que os teus filhos pedem sempre?",
+"pt_BR": "Qual lanchinho seus filhos sempre pedem?"
+}
+},
+{
+"id": "parenting_tips-051",
+"lv": "beginner",
+"i18n": {
+"en": "How do you usually praise your kids when they try hard?",
+"de": "Wie lobst du deine Kinder meistens, wenn sie sich anstrengen?",
+"es": "¿Cómo sueles elogiar a tus hijos cuando se esfuerzan?",
+"fr": "Comment félicites-tu tes enfants quand ils font des efforts ?",
+"it": "Come lodi di solito i tuoi figli quando si impegnano?",
+"pt": "Como costumas elogiar os teus filhos quando se esforçam?",
+"pt_BR": "Como você costuma elogiar seus filhos quando eles se esforçam?"
+}
+},
+{
+"id": "parenting_tips-052",
+"lv": "beginner",
+"i18n": {
+"en": "What is your favourite park or playground nearby?",
+"de": "Was ist dein liebster Park oder Spielplatz in der Nähe?",
+"es": "¿Cuál es tu parque o zona de juegos favorita cerca de casa?",
+"fr": "Quel est ton parc ou ton aire de jeux préféré près de chez toi ?",
+"it": "Qual è il tuo parco o parco giochi preferito vicino a casa?",
+"pt": "Qual é o teu parque ou parque infantil preferido perto de casa?",
+"pt_BR": "Qual é o seu parque ou parquinho favorito perto de casa?"
+}
+},
+{
+"id": "parenting_tips-053",
+"lv": "beginner",
+"i18n": {
+"en": "How do you spend one-on-one time with each child?",
+"de": "Wie verbringst du Zeit allein mit jedem Kind?",
+"es": "¿Cómo pasas tiempo a solas con cada hijo?",
+"fr": "Comment passes-tu du temps en tête-à-tête avec chaque enfant ?",
+"it": "Come passi del tempo da solo con ciascun figlio?",
+"pt": "Como passas tempo a sós com cada filho?",
+"pt_BR": "Como você passa um tempo exclusivo com cada filho?"
+}
+},
+{
+"id": "parenting_tips-054",
+"lv": "beginner",
+"i18n": {
+"en": "What crafts or art projects do your kids enjoy?",
+"de": "Welche Bastel- oder Kunstprojekte machen deine Kinder gern?",
+"es": "¿Qué manualidades o proyectos artísticos disfrutan tus hijos?",
+"fr": "Quels bricolages ou projets artistiques tes enfants aiment-ils ?",
+"it": "Quali lavoretti o progetti artistici piacciono ai tuoi figli?",
+"pt": "Que trabalhos manuais ou projetos artísticos os teus filhos adoram?",
+"pt_BR": "Quais trabalhos manuais ou artes seus filhos curtem fazer?"
+}
+},
+{
+"id": "parenting_tips-055",
+"lv": "beginner",
+"i18n": {
+"en": "How do you say goodbye at daycare or school drop-off?",
+"de": "Wie verabschiedet ihr euch an der Kita oder Schule?",
+"es": "¿Cómo os despedís al dejar a los niños en la guardería o el colegio?",
+"fr": "Comment vous dites-vous au revoir à la crèche ou à l'école ?",
+"it": "Come vi salutate all'asilo o a scuola?",
+"pt": "Como se despedem à porta da creche ou da escola?",
+"pt_BR": "Como vocês se despedem na porta da creche ou da escola?"
+}
+},
+{
+"id": "parenting_tips-056",
+"lv": "beginner",
+"i18n": {
+"en": "What is your favourite way to show affection to your kids?",
+"de": "Wie zeigst du deinen Kindern am liebsten deine Zuneigung?",
+"es": "¿Cuál es tu forma favorita de mostrar cariño a tus hijos?",
+"fr": "Quelle est ta façon préférée de montrer ta tendresse à tes enfants ?",
+"it": "Qual è il tuo modo preferito di mostrare affetto ai tuoi figli?",
+"pt": "Qual é a tua forma preferida de mostrar carinho aos teus filhos?",
+"pt_BR": "Qual é o seu jeito favorito de demonstrar carinho aos seus filhos?"
+}
+},
+{
+"id": "parenting_tips-057",
+"lv": "beginner",
+"i18n": {
+"en": "What do you do together after school or work?",
+"de": "Was macht ihr nach der Schule oder Arbeit zusammen?",
+"es": "¿Qué hacéis juntos después del colegio o del trabajo?",
+"fr": "Que faites-vous ensemble après l'école ou le travail ?",
+"it": "Cosa fate insieme dopo la scuola o il lavoro?",
+"pt": "O que fazem juntos depois da escola ou do trabalho?",
+"pt_BR": "O que vocês fazem juntos depois da escola ou do trabalho?"
+}
+},
+{
+"id": "parenting_tips-058",
+"lv": "beginner",
+"i18n": {
+"en": "Which family rule is the most important in your home?",
+"de": "Welche Familienregel ist bei euch die wichtigste?",
+"es": "¿Qué norma familiar es la más importante en tu casa?",
+"fr": "Quelle règle familiale est la plus importante chez toi ?",
+"it": "Quale regola di famiglia è la più importante a casa tua?",
+"pt": "Que regra familiar é a mais importante em tua casa?",
+"pt_BR": "Qual regra da família é a mais importante na sua casa?"
+}
+},
+{
+"id": "parenting_tips-059",
+"lv": "beginner",
+"i18n": {
+"en": "How do your kids react to trying new foods?",
+"de": "Wie reagieren deine Kinder auf neues Essen?",
+"es": "¿Cómo reaccionan tus hijos ante comidas nuevas?",
+"fr": "Comment tes enfants réagissent-ils quand ils goûtent de nouveaux plats ?",
+"it": "Come reagiscono i tuoi figli quando assaggiano cibi nuovi?",
+"pt": "Como reagem os teus filhos quando provam comidas novas?",
+"pt_BR": "Como seus filhos reagem quando experimentam comidas novas?"
+}
+},
+{
+"id": "parenting_tips-060",
+"lv": "beginner",
+"i18n": {
+"en": "What is a favourite family movie night choice?",
+"de": "Welcher Film ist bei euren Filmabenden besonders beliebt?",
+"es": "¿Qué película suele elegir tu familia para la noche de cine?",
+"fr": "Quel film choisissez-vous souvent pour vos soirées cinéma en famille ?",
+"it": "Quale film scegliete spesso per la serata film in famiglia?",
+"pt": "Que filme é o preferido nas vossas noites de cinema em família?",
+"pt_BR": "Qual filme é o queridinho nas noites de cinema em família?"
+}
+},
+{
+"id": "parenting_tips-061",
+"lv": "beginner",
+"i18n": {
+"en": "How do you handle the rush to get everyone out the door?",
+"de": "Wie meisterst du den Stress, wenn alle schnell aus dem Haus müssen?",
+"es": "¿Cómo llevas las prisas para que todos salgan de casa a tiempo?",
+"fr": "Comment gères-tu la course pour que tout le monde soit prêt à partir ?",
+"it": "Come gestisci la corsa per uscire tutti di casa in tempo?",
+"pt": "Como lidas com a correria para todos saírem de casa a horas?",
+"pt_BR": "Como você lida com a correria para todo mundo sair de casa no horário?"
+}
+},
+{
+"id": "parenting_tips-062",
+"lv": "beginner",
+"i18n": {
+"en": "What new skill has your child learned recently?",
+"de": "Welche neue Fähigkeit hat dein Kind kürzlich gelernt?",
+"es": "¿Qué nueva habilidad ha aprendido tu hijo últimamente?",
+"fr": "Quelle nouvelle compétence ton enfant a-t-il apprise récemment ?",
+"it": "Quale nuova abilità ha imparato di recente tuo figlio?",
+"pt": "Que nova competência aprendeu o teu filho recentemente?",
+"pt_BR": "Que habilidade nova seu filho aprendeu recentemente?"
+}
+},
+{
+"id": "parenting_tips-063",
+"lv": "beginner",
+"i18n": {
+"en": "How does your family relax together in the evening?",
+"de": "Wie entspannt ihr als Familie am Abend?",
+"es": "¿Cómo os relajáis juntos en familia por la noche?",
+"fr": "Comment vous détendez-vous en famille le soir ?",
+"it": "Come vi rilassate insieme in famiglia la sera?",
+"pt": "Como relaxam juntos em família ao fim do dia?",
+"pt_BR": "Como vocês relaxam juntos em família à noite?"
+}
+},
+{
+"id": "parenting_tips-064",
+"lv": "beginner",
+"i18n": {
+"en": "What do your children love to talk about most?",
+"de": "Worüber reden deine Kinder am liebsten?",
+"es": "¿De qué les encanta hablar más a tus hijos?",
+"fr": "De quoi tes enfants adorent-ils parler ?",
+"it": "Di cosa amano parlare di più i tuoi figli?",
+"pt": "Sobre o que é que os teus filhos mais gostam de falar?",
+"pt_BR": "Sobre o que seus filhos mais adoram conversar?"
+}
+},
+{
+"id": "parenting_tips-065",
+"lv": "beginner",
+"i18n": {
+"en": "Do you use any timers, charts or lists at home?",
+"de": "Nutzt du zu Hause Timer, Tabellen oder Listen?",
+"es": "¿Usas temporizadores, tablas o listas en casa?",
+"fr": "Utilises-tu des minuteurs, des tableaux ou des listes à la maison ?",
+"it": "Usi timer, tabelle o liste a casa?",
+"pt": "Usas temporizadores, quadros ou listas em casa?",
+"pt_BR": "Você usa timers, quadros ou listas em casa?"
+}
+},
+{
+"id": "parenting_tips-066",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you stay calm when your child has a big emotional moment?",
+"de": "Wie bleibst du ruhig, wenn dein Kind einen großen Gefühlsausbruch hat?",
+"es": "¿Cómo mantienes la calma cuando tu hijo tiene un gran momento emocional?",
+"fr": "Comment restes-tu calme quand ton enfant vit une grosse émotion ?",
+"it": "Come resti calmo quando tuo figlio vive un'emozione molto forte?",
+"pt": "Como manténs a calma quando o teu filho tem um grande momento emocional?",
+"pt_BR": "Como você mantém a calma quando seu filho tem um momento de emoção forte?"
+}
+},
+{
+"id": "parenting_tips-067",
+"lv": "intermediate",
+"i18n": {
+"en": "What rules about screens work well in your family?",
+"de": "Welche Bildschirmregeln funktionieren bei euch gut?",
+"es": "¿Qué normas sobre pantallas funcionan bien en tu familia?",
+"fr": "Quelles règles sur les écrans fonctionnent bien dans ta famille ?",
+"it": "Quali regole sugli schermi funzionano bene nella tua famiglia?",
+"pt": "Que regras sobre ecrãs funcionam bem na tua família?",
+"pt_BR": "Quais regras sobre telas funcionam bem na sua família?"
+}
+},
+{
+"id": "parenting_tips-068",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you help siblings solve their disagreements?",
+"de": "Wie hilfst du Geschwistern, ihre Streitigkeiten zu lösen?",
+"es": "¿Cómo ayudas a los hermanos a resolver sus desacuerdos?",
+"fr": "Comment aides-tu les frères et sœurs à régler leurs désaccords ?",
+"it": "Come aiuti i fratelli a risolvere i loro disaccordi?",
+"pt": "Como ajudas os irmãos a resolver os seus desentendimentos?",
+"pt_BR": "Como você ajuda os irmãos a resolverem suas brigas?"
+}
+},
+{
+"id": "parenting_tips-069",
+"lv": "intermediate",
+"i18n": {
+"en": "What consequences feel fair and useful to you?",
+"de": "Welche Konsequenzen findest du fair und sinnvoll?",
+"es": "¿Qué consecuencias te parecen justas y útiles?",
+"fr": "Quelles conséquences te semblent justes et utiles ?",
+"it": "Quali conseguenze ti sembrano giuste e utili?",
+"pt": "Que consequências te parecem justas e úteis?",
+"pt_BR": "Quais consequências parecem justas e úteis para você?"
+}
+},
+{
+"id": "parenting_tips-070",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you support your kids with homework without taking over?",
+"de": "Wie unterstützt du deine Kinder bei den Hausaufgaben, ohne sie zu übernehmen?",
+"es": "¿Cómo ayudas a tus hijos con los deberes sin hacerlos por ellos?",
+"fr": "Comment aides-tu tes enfants pour les devoirs sans les faire à leur place ?",
+"it": "Come aiuti i tuoi figli con i compiti senza sostituirti a loro?",
+"pt": "Como ajudas os teus filhos com os trabalhos de casa sem os fazeres por eles?",
+"pt_BR": "Como você ajuda seus filhos com a lição de casa sem fazer por eles?"
+}
+},
+{
+"id": "parenting_tips-071",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you make family meetings or group decisions work?",
+"de": "Wie gestaltet ihr Familienrunden oder gemeinsame Entscheidungen?",
+"es": "¿Cómo hacéis que funcionen las reuniones o decisiones en familia?",
+"fr": "Comment faites-vous fonctionner les réunions ou décisions en famille ?",
+"it": "Come fate funzionare le riunioni o le decisioni di famiglia?",
+"pt": "Como fazem funcionar as reuniões ou decisões em família?",
+"pt_BR": "Como vocês fazem as reuniões ou decisões em família funcionarem?"
+}
+},
+{
+"id": "parenting_tips-072",
+"lv": "intermediate",
+"i18n": {
+"en": "What does your child do to cheer up after a disappointment?",
+"de": "Was hilft deinem Kind, nach einer Enttäuschung wieder fröhlich zu werden?",
+"es": "¿Qué hace tu hijo para animarse después de una decepción?",
+"fr": "Que fait ton enfant pour retrouver le sourire après une déception ?",
+"it": "Cosa fa tuo figlio per tirarsi su dopo una delusione?",
+"pt": "O que faz o teu filho para se animar depois de uma desilusão?",
+"pt_BR": "O que seu filho faz para se animar depois de uma decepção?"
+}
+},
+{
+"id": "parenting_tips-073",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you and other carers agree on family rules?",
+"de": "Wie einigst du dich mit anderen Bezugspersonen auf Familienregeln?",
+"es": "¿Cómo os ponéis de acuerdo tú y otros cuidadores sobre las normas?",
+"fr": "Comment toi et les autres adultes vous mettez-vous d'accord sur les règles ?",
+"it": "Come vi mettete d'accordo tu e gli altri adulti sulle regole di famiglia?",
+"pt": "Como é que tu e outros cuidadores chegam a acordo sobre as regras?",
+"pt_BR": "Como você e outros cuidadores entram em acordo sobre as regras da família?"
+}
+},
+{
+"id": "parenting_tips-074",
+"lv": "intermediate",
+"i18n": {
+"en": "What chores do your kids handle on their own now?",
+"de": "Welche Aufgaben erledigen deine Kinder inzwischen allein?",
+"es": "¿Qué tareas hacen ya tus hijos solos?",
+"fr": "Quelles tâches tes enfants font-ils seuls maintenant ?",
+"it": "Quali faccende fanno ormai da soli i tuoi figli?",
+"pt": "Que tarefas é que os teus filhos já fazem sozinhos?",
+"pt_BR": "Quais tarefas seus filhos já fazem sozinhos?"
+}
+},
+{
+"id": "parenting_tips-075",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you talk with your kids about their friendships?",
+"de": "Wie sprichst du mit deinen Kindern über ihre Freundschaften?",
+"es": "¿Cómo hablas con tus hijos sobre sus amistades?",
+"fr": "Comment parles-tu avec tes enfants de leurs amitiés ?",
+"it": "Come parli con i tuoi figli delle loro amicizie?",
+"pt": "Como falas com os teus filhos sobre as amizades deles?",
+"pt_BR": "Como você conversa com seus filhos sobre as amizades deles?"
+}
+},
+{
+"id": "parenting_tips-076",
+"lv": "intermediate",
+"i18n": {
+"en": "Which after-school activity has been a great fit for your child?",
+"de": "Welche Freizeitaktivität passt richtig gut zu deinem Kind?",
+"es": "¿Qué actividad extraescolar le ha ido genial a tu hijo?",
+"fr": "Quelle activité extrascolaire convient parfaitement à ton enfant ?",
+"it": "Quale attività extrascolastica è stata perfetta per tuo figlio?",
+"pt": "Que atividade extracurricular tem sido perfeita para o teu filho?",
+"pt_BR": "Qual atividade extracurricular tem sido ótima para seu filho?"
+}
+},
+{
+"id": "parenting_tips-077",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you balance busy weeks with enough downtime?",
+"de": "Wie bringst du volle Wochen und genug Ruhezeit in Einklang?",
+"es": "¿Cómo equilibras las semanas ajetreadas con tiempo de descanso?",
+"fr": "Comment équilibres-tu les semaines chargées avec du temps calme ?",
+"it": "Come bilanci le settimane piene con abbastanza tempo libero?",
+"pt": "Como equilibras semanas cheias com tempo suficiente para descansar?",
+"pt_BR": "Como você equilibra semanas corridas com tempo de descanso?"
+}
+},
+{
+"id": "parenting_tips-078",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you keep your heritage alive for your children?",
+"de": "Wie hältst du deine Herkunft für deine Kinder lebendig?",
+"es": "¿Cómo mantienes viva tu herencia cultural para tus hijos?",
+"fr": "Comment fais-tu vivre ton héritage culturel auprès de tes enfants ?",
+"it": "Come mantieni vive le tue radici culturali per i tuoi figli?",
+"pt": "Como manténs viva a tua herança cultural para os teus filhos?",
+"pt_BR": "Como você mantém viva sua herança cultural para seus filhos?"
+}
+},
+{
+"id": "parenting_tips-079",
+"lv": "intermediate",
+"i18n": {
+"en": "What has helped your kids become more independent?",
+"de": "Was hat deinen Kindern geholfen, selbstständiger zu werden?",
+"es": "¿Qué ha ayudado a tus hijos a ser más independientes?",
+"fr": "Qu'est-ce qui a aidé tes enfants à devenir plus autonomes ?",
+"it": "Cosa ha aiutato i tuoi figli a diventare più indipendenti?",
+"pt": "O que ajudou os teus filhos a tornarem-se mais independentes?",
+"pt_BR": "O que ajudou seus filhos a ficarem mais independentes?"
+}
+},
+{
+"id": "parenting_tips-080",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you teach your kids about money and saving?",
+"de": "Wie bringst du deinen Kindern den Umgang mit Geld und Sparen bei?",
+"es": "¿Cómo enseñas a tus hijos sobre el dinero y el ahorro?",
+"fr": "Comment apprends-tu à tes enfants à gérer l'argent et à épargner ?",
+"it": "Come insegni ai tuoi figli il valore del denaro e del risparmio?",
+"pt": "Como ensinas os teus filhos sobre dinheiro e poupança?",
+"pt_BR": "Como você ensina seus filhos sobre dinheiro e economia?"
+}
+},
+{
+"id": "parenting_tips-081",
+"lv": "intermediate",
+"i18n": {
+"en": "What do you do when you feel your patience running low?",
+"de": "Was tust du, wenn du merkst, dass deine Geduld zur Neige geht?",
+"es": "¿Qué haces cuando sientes que se te acaba la paciencia?",
+"fr": "Que fais-tu quand tu sens ta patience s'épuiser ?",
+"it": "Cosa fai quando senti che la pazienza sta finendo?",
+"pt": "O que fazes quando sentes que a paciência está a acabar?",
+"pt_BR": "O que você faz quando sente que a paciência está acabando?"
+}
+},
+{
+"id": "parenting_tips-082",
+"lv": "intermediate",
+"i18n": {
+"en": "Which family outing worked better than you expected?",
+"de": "Welcher Familienausflug lief besser als erwartet?",
+"es": "¿Qué salida en familia salió mejor de lo que esperabas?",
+"fr": "Quelle sortie en famille s'est mieux passée que prévu ?",
+"it": "Quale uscita in famiglia è andata meglio del previsto?",
+"pt": "Que passeio em família correu melhor do que esperavas?",
+"pt_BR": "Qual passeio em família foi melhor do que você esperava?"
+}
+},
+{
+"id": "parenting_tips-083",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you encourage kindness between your kids and others?",
+"de": "Wie förderst du Freundlichkeit zwischen deinen Kindern und anderen?",
+"es": "¿Cómo fomentas la amabilidad entre tus hijos y los demás?",
+"fr": "Comment encourages-tu la gentillesse entre tes enfants et les autres ?",
+"it": "Come incoraggi la gentilezza tra i tuoi figli e gli altri?",
+"pt": "Como incentivas a gentileza entre os teus filhos e os outros?",
+"pt_BR": "Como você incentiva a gentileza entre seus filhos e as outras pessoas?"
+}
+},
+{
+"id": "parenting_tips-084",
+"lv": "intermediate",
+"i18n": {
+"en": "How have your parenting ideas changed over the years?",
+"de": "Wie haben sich deine Vorstellungen vom Elternsein über die Jahre verändert?",
+"es": "¿Cómo han cambiado tus ideas sobre la crianza con los años?",
+"fr": "Comment tes idées sur l'éducation ont-elles évolué au fil des ans ?",
+"it": "Come sono cambiate le tue idee sull'essere genitore negli anni?",
+"pt": "Como mudaram as tuas ideias sobre parentalidade ao longo dos anos?",
+"pt_BR": "Como suas ideias sobre criação de filhos mudaram ao longo dos anos?"
+}
+},
+{
+"id": "parenting_tips-085",
+"lv": "intermediate",
+"i18n": {
+"en": "What makes a good playdate in your experience?",
+"de": "Was macht deiner Erfahrung nach ein gelungenes Spieltreffen aus?",
+"es": "Según tu experiencia, ¿qué hace que una tarde de juegos con amigos salga bien?",
+"fr": "D'après ton expérience, qu'est-ce qui fait un bon après-midi entre copains ?",
+"it": "Secondo la tua esperienza, cosa rende riuscito un pomeriggio di gioco con amici?",
+"pt": "Na tua experiência, o que torna uma tarde de brincadeira com amigos um sucesso?",
+"pt_BR": "Na sua experiência, o que faz um encontro para brincar dar certo?"
+}
+},
+{
+"id": "parenting_tips-086",
+"lv": "advanced",
+"i18n": {
+"en": "How do you keep communication open with a preteen or teenager?",
+"de": "Wie hältst du das Gespräch mit einem Kind im Teenageralter offen?",
+"es": "¿Cómo mantienes una comunicación abierta con un preadolescente o adolescente?",
+"fr": "Comment gardes-tu le dialogue ouvert avec un préado ou un ado ?",
+"it": "Come mantieni aperta la comunicazione con un preadolescente o un adolescente?",
+"pt": "Como manténs a comunicação aberta com um pré-adolescente ou adolescente?",
+"pt_BR": "Como você mantém a conversa aberta com um pré-adolescente ou adolescente?"
+}
+},
+{
+"id": "parenting_tips-087",
+"lv": "advanced",
+"i18n": {
+"en": "What long-term qualities do you hope your children will carry into adulthood?",
+"de": "Welche Eigenschaften sollen deine Kinder ins Erwachsenenleben mitnehmen?",
+"es": "¿Qué cualidades esperas que tus hijos lleven a su vida adulta?",
+"fr": "Quelles qualités espères-tu que tes enfants emporteront dans leur vie d'adulte ?",
+"it": "Quali qualità speri che i tuoi figli portino con sé da adulti?",
+"pt": "Que qualidades esperas que os teus filhos levem para a vida adulta?",
+"pt_BR": "Quais qualidades você espera que seus filhos levem para a vida adulta?"
+}
+},
+{
+"id": "parenting_tips-088",
+"lv": "advanced",
+"i18n": {
+"en": "How do you decide how much freedom to give as your kids grow?",
+"de": "Wie entscheidest du, wie viel Freiheit deine Kinder mit dem Älterwerden bekommen?",
+"es": "¿Cómo decides cuánta libertad dar a tus hijos a medida que crecen?",
+"fr": "Comment décides-tu de la liberté à accorder à tes enfants à mesure qu'ils grandissent ?",
+"it": "Come decidi quanta libertà dare ai tuoi figli man mano che crescono?",
+"pt": "Como decides quanta liberdade dar aos teus filhos à medida que crescem?",
+"pt_BR": "Como você decide quanta liberdade dar aos seus filhos conforme eles crescem?"
+}
+},
+{
+"id": "parenting_tips-089",
+"lv": "advanced",
+"i18n": {
+"en": "How do you look after your own wellbeing as a parent?",
+"de": "Wie sorgst du als Elternteil für dein eigenes Wohlbefinden?",
+"es": "¿Cómo cuidas tu propio bienestar como madre o padre?",
+"fr": "Comment prends-tu soin de ton propre bien-être en tant que parent ?",
+"it": "Come ti prendi cura del tuo benessere come genitore?",
+"pt": "Como cuidas do teu próprio bem-estar enquanto pai ou mãe?",
+"pt_BR": "Como você cuida do seu próprio bem-estar como pai ou mãe?"
+}
+},
+{
+"id": "parenting_tips-090",
+"lv": "advanced",
+"i18n": {
+"en": "How do you handle respectful disagreements with your teenager?",
+"de": "Wie geht ihr respektvoll mit Meinungsverschiedenheiten mit deinem Teenager um?",
+"es": "¿Cómo manejas los desacuerdos respetuosos con tu hijo adolescente?",
+"fr": "Comment gères-tu les désaccords respectueux avec ton ado ?",
+"it": "Come gestisci i disaccordi rispettosi con tuo figlio adolescente?",
+"pt": "Como lidas com desacordos respeitosos com o teu filho adolescente?",
+"pt_BR": "Como você lida com discordâncias respeitosas com seu filho adolescente?"
+}
+},
+{
+"id": "parenting_tips-091",
+"lv": "advanced",
+"i18n": {
+"en": "What would you tell a new parent you wish someone had told you?",
+"de": "Was würdest du frischgebackenen Eltern sagen, das dir damals jemand hätte sagen sollen?",
+"es": "¿Qué le dirías a una madre o un padre primerizo que te hubiera gustado oír?",
+"fr": "Que dirais-tu à un jeune parent que tu aurais aimé entendre toi-même ?",
+"it": "Cosa diresti a un neogenitore che avresti voluto sentirti dire?",
+"pt": "O que dirias a um pai ou mãe de primeira viagem que gostavas de ter ouvido?",
+"pt_BR": "O que você diria a um pai ou mãe de primeira viagem que gostaria de ter ouvido?"
+}
+},
+{
+"id": "parenting_tips-092",
+"lv": "advanced",
+"i18n": {
+"en": "How do you help your kids build resilience after setbacks?",
+"de": "Wie hilfst du deinen Kindern, nach Rückschlägen widerstandsfähiger zu werden?",
+"es": "¿Cómo ayudas a tus hijos a desarrollar resiliencia tras los contratiempos?",
+"fr": "Comment aides-tu tes enfants à développer leur résilience après un échec ?",
+"it": "Come aiuti i tuoi figli a sviluppare resilienza dopo le difficoltà?",
+"pt": "Como ajudas os teus filhos a criar resiliência depois de contratempos?",
+"pt_BR": "Como você ajuda seus filhos a desenvolver resiliência depois de um tropeço?"
+}
+},
+{
+"id": "parenting_tips-093",
+"lv": "advanced",
+"i18n": {
+"en": "How do you talk with your kids about their future dreams?",
+"de": "Wie sprichst du mit deinen Kindern über ihre Zukunftsträume?",
+"es": "¿Cómo hablas con tus hijos sobre sus sueños de futuro?",
+"fr": "Comment parles-tu avec tes enfants de leurs rêves d'avenir ?",
+"it": "Come parli con i tuoi figli dei loro sogni per il futuro?",
+"pt": "Como falas com os teus filhos sobre os sonhos que têm para o futuro?",
+"pt_BR": "Como você conversa com seus filhos sobre os sonhos deles para o futuro?"
+}
+},
+{
+"id": "parenting_tips-094",
+"lv": "advanced",
+"i18n": {
+"en": "How do you share the mental load of family life at home?",
+"de": "Wie teilt ihr zu Hause die mentale Last des Familienlebens auf?",
+"es": "¿Cómo repartís en casa la carga mental de la vida familiar?",
+"fr": "Comment partagez-vous la charge mentale de la vie de famille à la maison ?",
+"it": "Come dividete a casa il carico mentale della vita familiare?",
+"pt": "Como partilham em casa a carga mental da vida familiar?",
+"pt_BR": "Como vocês dividem em casa a carga mental da vida em família?"
+}
+},
+{
+"id": "parenting_tips-095",
+"lv": "advanced",
+"i18n": {
+"en": "What does raising children between two cultures mean to you?",
+"de": "Was bedeutet es für dich, Kinder zwischen zwei Kulturen großzuziehen?",
+"es": "¿Qué significa para ti criar a tus hijos entre dos culturas?",
+"fr": "Que signifie pour toi élever des enfants entre deux cultures ?",
+"it": "Cosa significa per te crescere dei figli tra due culture?",
+"pt": "O que significa para ti educar filhos entre duas culturas?",
+"pt_BR": "O que significa para você criar filhos entre duas culturas?"
+}
+},
+{
+"id": "parenting_tips-096",
+"lv": "advanced",
+"i18n": {
+"en": "How do you involve your kids in decisions that affect the whole family?",
+"de": "Wie beziehst du deine Kinder in Entscheidungen ein, die die ganze Familie betreffen?",
+"es": "¿Cómo involucras a tus hijos en decisiones que afectan a toda la familia?",
+"fr": "Comment impliques-tu tes enfants dans les décisions qui concernent toute la famille ?",
+"it": "Come coinvolgi i tuoi figli nelle decisioni che riguardano tutta la famiglia?",
+"pt": "Como envolves os teus filhos nas decisões que afetam toda a família?",
+"pt_BR": "Como você envolve seus filhos nas decisões que afetam toda a família?"
+}
+},
+{
+"id": "parenting_tips-097",
+"lv": "advanced",
+"i18n": {
+"en": "Which life skills do you want your teenager to master before leaving home?",
+"de": "Welche Alltagsfähigkeiten soll dein Teenager beherrschen, bevor er auszieht?",
+"es": "¿Qué habilidades prácticas quieres que tu adolescente domine antes de independizarse?",
+"fr": "Quelles compétences pratiques veux-tu que ton ado maîtrise avant de quitter la maison ?",
+"it": "Quali abilità pratiche vuoi che tuo figlio adolescente padroneggi prima di andare a vivere da solo?",
+"pt": "Que competências práticas queres que o teu adolescente domine antes de sair de casa?",
+"pt_BR": "Quais habilidades práticas você quer que seu adolescente domine antes de sair de casa?"
+}
+},
+{
+"id": "parenting_tips-098",
+"lv": "advanced",
+"i18n": {
+"en": "How do you repair the relationship after a tough day with your child?",
+"de": "Wie stellst du nach einem schwierigen Tag die Verbindung zu deinem Kind wieder her?",
+"es": "¿Cómo reparas la relación después de un día difícil con tu hijo?",
+"fr": "Comment répares-tu le lien après une journée difficile avec ton enfant ?",
+"it": "Come ricuci il rapporto dopo una giornata difficile con tuo figlio?",
+"pt": "Como reparas a relação depois de um dia difícil com o teu filho?",
+"pt_BR": "Como você reconstrói a conexão depois de um dia difícil com seu filho?"
+}
+},
+{
+"id": "parenting_tips-099",
+"lv": "advanced",
+"i18n": {
+"en": "What legacy of values do you hope to leave your family?",
+"de": "Welche Werte möchtest du deiner Familie als Vermächtnis hinterlassen?",
+"es": "¿Qué legado de valores esperas dejar a tu familia?",
+"fr": "Quel héritage de valeurs espères-tu laisser à ta famille ?",
+"it": "Quale eredità di valori speri di lasciare alla tua famiglia?",
+"pt": "Que legado de valores esperas deixar à tua família?",
+"pt_BR": "Que legado de valores você espera deixar para sua família?"
+}
+},
+{
+"id": "parenting_tips-100",
+"lv": "advanced",
+"i18n": {
+"en": "How do you stay close to your kids as they need you less day to day?",
+"de": "Wie bleibst du deinen Kindern nah, wenn sie dich im Alltag weniger brauchen?",
+"es": "¿Cómo sigues cerca de tus hijos cuando ya te necesitan menos en el día a día?",
+"fr": "Comment restes-tu proche de tes enfants quand ils ont moins besoin de toi au quotidien ?",
+"it": "Come resti vicino ai tuoi figli quando hanno meno bisogno di te ogni giorno?",
+"pt": "Como te manténs próximo dos teus filhos quando precisam menos de ti no dia a dia?",
+"pt_BR": "Como você continua perto dos seus filhos quando eles precisam menos de você no dia a dia?"
+}
+}
+]
+}

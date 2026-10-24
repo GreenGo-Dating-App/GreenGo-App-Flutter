@@ -1,0 +1,1305 @@
+{
+"topic": "sleep_habits",
+"questions": [
+{
+"id": "sleep_habits-001",
+"lv": "any",
+"i18n": {
+"en": "What time do you usually go to bed on a normal weekday?",
+"de": "Wann gehst du an einem normalen Wochentag meistens ins Bett?",
+"es": "¿A qué hora sueles acostarte un día normal entre semana?",
+"fr": "À quelle heure te couches-tu d'habitude un jour de semaine ?",
+"it": "A che ora vai di solito a letto in un normale giorno feriale?",
+"pt": "A que horas costumas deitar-te num dia normal de semana?",
+"pt_BR": "Que horas você costuma ir para a cama num dia normal de semana?"
+}
+},
+{
+"id": "sleep_habits-002",
+"lv": "any",
+"i18n": {
+"en": "How do you usually feel when your alarm goes off?",
+"de": "Wie fühlst du dich meistens, wenn dein Wecker klingelt?",
+"es": "¿Cómo te sueles sentir cuando suena el despertador?",
+"fr": "Comment te sens-tu d'habitude quand ton réveil sonne ?",
+"it": "Come ti senti di solito quando suona la sveglia?",
+"pt": "Como te costumas sentir quando o despertador toca?",
+"pt_BR": "Como você costuma se sentir quando o despertador toca?"
+}
+},
+{
+"id": "sleep_habits-003",
+"lv": "any",
+"i18n": {
+"en": "Would you call yourself a morning person or a night owl? Why?",
+"de": "Bist du eher ein Morgenmensch oder eine Nachteule? Warum?",
+"es": "¿Te consideras más madrugador o noctámbulo? ¿Por qué?",
+"fr": "Tu te dirais plutôt du matin ou du soir ? Pourquoi ?",
+"it": "Ti definiresti più un tipo mattiniero o un nottambulo? Perché?",
+"pt": "Consideras-te mais uma pessoa da manhã ou da noite? Porquê?",
+"pt_BR": "Você se considera mais uma pessoa da manhã ou da noite? Por quê?"
+}
+},
+{
+"id": "sleep_habits-004",
+"lv": "any",
+"i18n": {
+"en": "What does your perfect night of sleep look like?",
+"de": "Wie sieht für dich die perfekte Nacht aus?",
+"es": "¿Cómo sería para ti una noche de sueño perfecta?",
+"fr": "À quoi ressemble ta nuit de sommeil idéale ?",
+"it": "Com'è per te la notte di sonno perfetta?",
+"pt": "Como seria para ti uma noite de sono perfeita?",
+"pt_BR": "Como seria para você uma noite de sono perfeita?"
+}
+},
+{
+"id": "sleep_habits-005",
+"lv": "any",
+"i18n": {
+"en": "What is the last thing you usually do before falling asleep?",
+"de": "Was machst du normalerweise als Letztes vor dem Einschlafen?",
+"es": "¿Qué es lo último que sueles hacer antes de dormirte?",
+"fr": "Quelle est la dernière chose que tu fais avant de t'endormir ?",
+"it": "Qual è l'ultima cosa che fai di solito prima di addormentarti?",
+"pt": "Qual é a última coisa que costumas fazer antes de adormecer?",
+"pt_BR": "Qual é a última coisa que você costuma fazer antes de pegar no sono?"
+}
+},
+{
+"id": "sleep_habits-006",
+"lv": "any",
+"i18n": {
+"en": "Do you sleep better at home or when you are travelling?",
+"de": "Schläfst du zu Hause oder unterwegs besser?",
+"es": "¿Duermes mejor en casa o cuando estás de viaje?",
+"fr": "Dors-tu mieux chez toi ou en voyage ?",
+"it": "Dormi meglio a casa o quando sei in viaggio?",
+"pt": "Dormes melhor em casa ou quando estás a viajar?",
+"pt_BR": "Você dorme melhor em casa ou quando está viajando?"
+}
+},
+{
+"id": "sleep_habits-007",
+"lv": "any",
+"i18n": {
+"en": "What is your favourite sleeping position?",
+"de": "Was ist deine liebste Schlafposition?",
+"es": "¿Cuál es tu postura favorita para dormir?",
+"fr": "Quelle est ta position préférée pour dormir ?",
+"it": "Qual è la tua posizione preferita per dormire?",
+"pt": "Qual é a tua posição preferida para dormir?",
+"pt_BR": "Qual é a sua posição favorita para dormir?"
+}
+},
+{
+"id": "sleep_habits-008",
+"lv": "any",
+"i18n": {
+"en": "Do you prefer a warm, cosy bedroom or a cool one at night?",
+"de": "Magst du nachts ein warmes, kuscheliges oder lieber ein kühles Schlafzimmer?",
+"es": "¿Prefieres un dormitorio cálido y acogedor o uno fresco por la noche?",
+"fr": "La nuit, tu préfères une chambre chaude et douillette ou plutôt fraîche ?",
+"it": "Di notte preferisci una camera calda e accogliente o fresca?",
+"pt": "À noite preferes um quarto quente e aconchegante ou mais fresco?",
+"pt_BR": "À noite você prefere um quarto quentinho e aconchegante ou mais fresco?"
+}
+},
+{
+"id": "sleep_habits-009",
+"lv": "any",
+"i18n": {
+"en": "Do you like total silence or some background sound when you sleep?",
+"de": "Magst du beim Schlafen völlige Stille oder ein leises Hintergrundgeräusch?",
+"es": "¿Te gusta dormir en silencio total o con algún sonido de fondo?",
+"fr": "Tu aimes dormir dans le silence total ou avec un petit bruit de fond ?",
+"it": "Ti piace dormire nel silenzio totale o con un sottofondo?",
+"pt": "Gostas de dormir em silêncio total ou com algum som de fundo?",
+"pt_BR": "Você gosta de dormir em silêncio total ou com algum som de fundo?"
+}
+},
+{
+"id": "sleep_habits-010",
+"lv": "any",
+"i18n": {
+"en": "What helps you relax most in the evening?",
+"de": "Was hilft dir abends am meisten beim Entspannen?",
+"es": "¿Qué es lo que más te ayuda a relajarte por la noche?",
+"fr": "Qu'est-ce qui t'aide le plus à te détendre le soir ?",
+"it": "Cosa ti aiuta di più a rilassarti la sera?",
+"pt": "O que te ajuda mais a relaxar à noite?",
+"pt_BR": "O que mais te ajuda a relaxar à noite?"
+}
+},
+{
+"id": "sleep_habits-011",
+"lv": "any",
+"i18n": {
+"en": "Do you enjoy naps? When do you take them?",
+"de": "Machst du gerne Nickerchen? Wann?",
+"es": "¿Te gustan las siestas? ¿Cuándo las haces?",
+"fr": "Tu aimes faire la sieste ? À quel moment ?",
+"it": "Ti piacciono i pisolini? Quando li fai?",
+"pt": "Gostas de fazer sestas? Quando as fazes?",
+"pt_BR": "Você gosta de cochilar? Quando você cochila?"
+}
+},
+{
+"id": "sleep_habits-012",
+"lv": "any",
+"i18n": {
+"en": "How do bedtimes in your country compare to other places you know?",
+"de": "Wie unterscheiden sich die Schlafenszeiten in deinem Land von anderen Orten, die du kennst?",
+"es": "¿Cómo son los horarios de dormir en tu país comparados con otros lugares que conoces?",
+"fr": "Comment les heures de coucher dans ton pays se comparent-elles à d'autres endroits que tu connais ?",
+"it": "Come sono gli orari del sonno nel tuo paese rispetto ad altri posti che conosci?",
+"pt": "Como são os horários de dormir no teu país comparados com outros sítios que conheces?",
+"pt_BR": "Como são os horários de dormir no seu país comparados com outros lugares que você conhece?"
+}
+},
+{
+"id": "sleep_habits-013",
+"lv": "any",
+"i18n": {
+"en": "What did your bedtime routine look like when you were a child?",
+"de": "Wie sah dein Abendritual aus, als du ein Kind warst?",
+"es": "¿Cómo era tu rutina antes de dormir cuando eras pequeño?",
+"fr": "À quoi ressemblait ton rituel du coucher quand tu étais enfant ?",
+"it": "Com'era la tua routine della buonanotte da bambino?",
+"pt": "Como era a tua rotina antes de dormir quando eras criança?",
+"pt_BR": "Como era sua rotina antes de dormir quando você era criança?"
+}
+},
+{
+"id": "sleep_habits-014",
+"lv": "any",
+"i18n": {
+"en": "Do you remember your dreams often? Is there one you like to recall?",
+"de": "Erinnerst du dich oft an deine Träume? Gibt es einen, an den du gern denkst?",
+"es": "¿Sueles recordar tus sueños? ¿Hay alguno que te guste recordar?",
+"fr": "Te souviens-tu souvent de tes rêves ? Y en a-t-il un que tu aimes te rappeler ?",
+"it": "Ti ricordi spesso i tuoi sogni? Ce n'è uno che ti piace ricordare?",
+"pt": "Costumas lembrar-te dos teus sonhos? Há algum de que gostes de te lembrar?",
+"pt_BR": "Você costuma lembrar dos seus sonhos? Tem algum que você gosta de lembrar?"
+}
+},
+{
+"id": "sleep_habits-015",
+"lv": "any",
+"i18n": {
+"en": "What is your favourite thing about your bedroom?",
+"de": "Was gefällt dir an deinem Schlafzimmer am besten?",
+"es": "¿Qué es lo que más te gusta de tu dormitorio?",
+"fr": "Qu'est-ce que tu préfères dans ta chambre ?",
+"it": "Cosa ti piace di più della tua camera da letto?",
+"pt": "O que é que mais gostas no teu quarto?",
+"pt_BR": "O que você mais gosta no seu quarto?"
+}
+},
+{
+"id": "sleep_habits-016",
+"lv": "any",
+"i18n": {
+"en": "How do you usually spend the first ten minutes after waking up?",
+"de": "Wie verbringst du meistens die ersten zehn Minuten nach dem Aufwachen?",
+"es": "¿Cómo sueles pasar los primeros diez minutos después de despertarte?",
+"fr": "Comment passes-tu d'habitude les dix premières minutes après ton réveil ?",
+"it": "Come passi di solito i primi dieci minuti dopo il risveglio?",
+"pt": "Como costumas passar os primeiros dez minutos depois de acordar?",
+"pt_BR": "Como você costuma passar os primeiros dez minutos depois de acordar?"
+}
+},
+{
+"id": "sleep_habits-017",
+"lv": "any",
+"i18n": {
+"en": "Do you have a favourite pillow, blanket or pyjamas? Tell me about it.",
+"de": "Hast du ein Lieblingskissen, eine Lieblingsdecke oder einen Lieblingsschlafanzug? Erzähl mal.",
+"es": "¿Tienes una almohada, manta o pijama favoritos? Cuéntame.",
+"fr": "As-tu un oreiller, une couverture ou un pyjama préféré ? Raconte-moi.",
+"it": "Hai un cuscino, una coperta o un pigiama preferito? Raccontami.",
+"pt": "Tens uma almofada, um cobertor ou um pijama preferido? Conta-me.",
+"pt_BR": "Você tem um travesseiro, cobertor ou pijama favorito? Me conta."
+}
+},
+{
+"id": "sleep_habits-018",
+"lv": "any",
+"i18n": {
+"en": "What usually keeps you up later than you planned?",
+"de": "Was hält dich meistens länger wach als geplant?",
+"es": "¿Qué es lo que suele hacer que te acuestes más tarde de lo previsto?",
+"fr": "Qu'est-ce qui te fait généralement veiller plus tard que prévu ?",
+"it": "Cosa ti fa di solito restare sveglio più a lungo del previsto?",
+"pt": "O que costuma fazer-te ficar acordado até mais tarde do que planeaste?",
+"pt_BR": "O que costuma te fazer ficar acordado até mais tarde do que planejou?"
+}
+},
+{
+"id": "sleep_habits-019",
+"lv": "any",
+"i18n": {
+"en": "How is your sleep different on weekends compared to weekdays?",
+"de": "Wie unterscheidet sich dein Schlaf am Wochenende von dem unter der Woche?",
+"es": "¿En qué se diferencia tu sueño los fines de semana respecto a los días laborables?",
+"fr": "En quoi ton sommeil diffère-t-il le week-end par rapport à la semaine ?",
+"it": "In cosa è diverso il tuo sonno nel fine settimana rispetto ai giorni feriali?",
+"pt": "Em que é diferente o teu sono ao fim de semana em comparação com os dias úteis?",
+"pt_BR": "Em que o seu sono é diferente no fim de semana em comparação com os dias úteis?"
+}
+},
+{
+"id": "sleep_habits-020",
+"lv": "any",
+"i18n": {
+"en": "What is the best night of sleep you can remember? Where were you?",
+"de": "An welche Nacht mit dem besten Schlaf erinnerst du dich? Wo warst du?",
+"es": "¿Cuál es la mejor noche de sueño que recuerdas? ¿Dónde estabas?",
+"fr": "Quelle est la meilleure nuit de sommeil dont tu te souviens ? Où étais-tu ?",
+"it": "Qual è la notte di sonno migliore che ricordi? Dov'eri?",
+"pt": "Qual é a melhor noite de sono de que te lembras? Onde estavas?",
+"pt_BR": "Qual é a melhor noite de sono de que você se lembra? Onde você estava?"
+}
+},
+{
+"id": "sleep_habits-021",
+"lv": "any",
+"i18n": {
+"en": "Do you drink coffee or tea? Until what time of day?",
+"de": "Trinkst du Kaffee oder Tee? Bis wann am Tag?",
+"es": "¿Tomas café o té? ¿Hasta qué hora del día?",
+"fr": "Tu bois du café ou du thé ? Jusqu'à quelle heure ?",
+"it": "Bevi caffè o tè? Fino a che ora del giorno?",
+"pt": "Bebes café ou chá? Até que horas do dia?",
+"pt_BR": "Você toma café ou chá? Até que horas do dia?"
+}
+},
+{
+"id": "sleep_habits-022",
+"lv": "any",
+"i18n": {
+"en": "What sounds, smells or feelings make you feel sleepy and calm?",
+"de": "Welche Geräusche, Düfte oder Gefühle machen dich schläfrig und ruhig?",
+"es": "¿Qué sonidos, olores o sensaciones te dan sueño y calma?",
+"fr": "Quels sons, odeurs ou sensations te rendent calme et somnolent ?",
+"it": "Quali suoni, profumi o sensazioni ti fanno sentire calmo e assonnato?",
+"pt": "Que sons, cheiros ou sensações te deixam calmo e com sono?",
+"pt_BR": "Que sons, cheiros ou sensações deixam você calmo e com sono?"
+}
+},
+{
+"id": "sleep_habits-023",
+"lv": "any",
+"i18n": {
+"en": "Do you read before bed? What kind of books or stories?",
+"de": "Liest du vor dem Schlafen? Was für Bücher oder Geschichten?",
+"es": "¿Lees antes de dormir? ¿Qué tipo de libros o historias?",
+"fr": "Lis-tu avant de dormir ? Quel genre de livres ou d'histoires ?",
+"it": "Leggi prima di dormire? Che tipo di libri o storie?",
+"pt": "Lês antes de dormir? Que tipo de livros ou histórias?",
+"pt_BR": "Você lê antes de dormir? Que tipo de livros ou histórias?"
+}
+},
+{
+"id": "sleep_habits-024",
+"lv": "any",
+"i18n": {
+"en": "How does a good night's sleep change your mood the next day?",
+"de": "Wie verändert eine gute Nacht deine Stimmung am nächsten Tag?",
+"es": "¿Cómo cambia tu estado de ánimo al día siguiente después de dormir bien?",
+"fr": "Comment une bonne nuit change-t-elle ton humeur le lendemain ?",
+"it": "Come cambia il tuo umore il giorno dopo una bella dormita?",
+"pt": "Como é que uma boa noite de sono muda o teu humor no dia seguinte?",
+"pt_BR": "Como uma boa noite de sono muda o seu humor no dia seguinte?"
+}
+},
+{
+"id": "sleep_habits-025",
+"lv": "any",
+"i18n": {
+"en": "What is one sleep habit you would love to improve?",
+"de": "Welche Schlafgewohnheit würdest du gern verbessern?",
+"es": "¿Qué hábito de sueño te encantaría mejorar?",
+"fr": "Quelle habitude de sommeil aimerais-tu améliorer ?",
+"it": "Quale abitudine legata al sonno ti piacerebbe migliorare?",
+"pt": "Que hábito de sono gostavas de melhorar?",
+"pt_BR": "Qual hábito de sono você adoraria melhorar?"
+}
+},
+{
+"id": "sleep_habits-026",
+"lv": "any",
+"i18n": {
+"en": "Do you use your phone in bed? How do you feel about that?",
+"de": "Benutzt du dein Handy im Bett? Wie findest du das?",
+"es": "¿Usas el móvil en la cama? ¿Qué opinas de eso?",
+"fr": "Utilises-tu ton téléphone au lit ? Qu'en penses-tu ?",
+"it": "Usi il telefono a letto? Cosa ne pensi?",
+"pt": "Usas o telemóvel na cama? O que achas disso?",
+"pt_BR": "Você usa o celular na cama? O que acha disso?"
+}
+},
+{
+"id": "sleep_habits-027",
+"lv": "any",
+"i18n": {
+"en": "What wakes you up most easily: light, sound or an alarm?",
+"de": "Was weckt dich am leichtesten: Licht, Geräusche oder ein Wecker?",
+"es": "¿Qué te despierta con más facilidad: la luz, los ruidos o el despertador?",
+"fr": "Qu'est-ce qui te réveille le plus facilement : la lumière, le bruit ou un réveil ?",
+"it": "Cosa ti sveglia più facilmente: la luce, i rumori o la sveglia?",
+"pt": "O que te acorda com mais facilidade: a luz, o barulho ou o despertador?",
+"pt_BR": "O que te acorda com mais facilidade: a luz, o barulho ou o despertador?"
+}
+},
+{
+"id": "sleep_habits-028",
+"lv": "any",
+"i18n": {
+"en": "Is there a traditional bedtime drink or snack where you grew up?",
+"de": "Gibt es dort, wo du aufgewachsen bist, ein typisches Getränk oder einen Snack vor dem Schlafen?",
+"es": "¿Hay alguna bebida o tentempié típico para antes de dormir donde creciste?",
+"fr": "Y a-t-il une boisson ou un en-cas traditionnel du soir là où tu as grandi ?",
+"it": "C'è una bevanda o uno spuntino tipico prima di dormire dove sei cresciuto?",
+"pt": "Há alguma bebida ou petisco tradicional antes de dormir na terra onde cresceste?",
+"pt_BR": "Tem alguma bebida ou lanchinho tradicional antes de dormir onde você cresceu?"
+}
+},
+{
+"id": "sleep_habits-029",
+"lv": "any",
+"i18n": {
+"en": "Do you know any lullabies or bedtime songs from your culture?",
+"de": "Kennst du Schlaflieder aus deiner Kultur?",
+"es": "¿Conoces alguna canción de cuna de tu cultura?",
+"fr": "Connais-tu des berceuses de ta culture ?",
+"it": "Conosci qualche ninna nanna della tua cultura?",
+"pt": "Conheces alguma canção de embalar da tua cultura?",
+"pt_BR": "Você conhece alguma canção de ninar da sua cultura?"
+}
+},
+{
+"id": "sleep_habits-030",
+"lv": "any",
+"i18n": {
+"en": "How do you feel about the idea of a midday siesta?",
+"de": "Was hältst du von der Idee einer Mittagsruhe?",
+"es": "¿Qué opinas de la idea de echarse una siesta a mediodía?",
+"fr": "Que penses-tu de l'idée d'une sieste en milieu de journée ?",
+"it": "Cosa pensi dell'idea di un riposino a metà giornata?",
+"pt": "O que achas da ideia de uma sesta a meio do dia?",
+"pt_BR": "O que você acha da ideia de tirar uma soneca depois do almoço?"
+}
+},
+{
+"id": "sleep_habits-031",
+"lv": "any",
+"i18n": {
+"en": "What does a relaxing Sunday evening look like for you?",
+"de": "Wie sieht für dich ein entspannter Sonntagabend aus?",
+"es": "¿Cómo es para ti un domingo por la noche relajado?",
+"fr": "À quoi ressemble un dimanche soir détendu pour toi ?",
+"it": "Com'è per te una domenica sera rilassante?",
+"pt": "Como é para ti um domingo à noite descontraído?",
+"pt_BR": "Como é pra você um domingo à noite tranquilo?"
+}
+},
+{
+"id": "sleep_habits-032",
+"lv": "any",
+"i18n": {
+"en": "Do you share your room with someone or a pet? How does it work?",
+"de": "Teilst du dein Zimmer mit jemandem oder einem Haustier? Wie klappt das?",
+"es": "¿Compartes habitación con alguien o con una mascota? ¿Qué tal funciona?",
+"fr": "Partages-tu ta chambre avec quelqu'un ou un animal ? Comment ça se passe ?",
+"it": "Condividi la camera con qualcuno o con un animale? Come va?",
+"pt": "Partilhas o quarto com alguém ou com um animal? Como corre?",
+"pt_BR": "Você divide o quarto com alguém ou com um bichinho? Como funciona?"
+}
+},
+{
+"id": "sleep_habits-033",
+"lv": "any",
+"i18n": {
+"en": "Where is the most unusual place you have ever slept?",
+"de": "Wo hast du schon einmal an einem ganz ungewöhnlichen Ort geschlafen?",
+"es": "¿Cuál es el lugar más curioso donde has dormido?",
+"fr": "Quel est l'endroit le plus insolite où tu aies dormi ?",
+"it": "Qual è il posto più insolito in cui tu abbia mai dormito?",
+"pt": "Qual é o sítio mais invulgar onde já dormiste?",
+"pt_BR": "Qual é o lugar mais inusitado onde você já dormiu?"
+}
+},
+{
+"id": "sleep_habits-034",
+"lv": "any",
+"i18n": {
+"en": "What would you change about your bedroom if you could?",
+"de": "Was würdest du an deinem Schlafzimmer ändern, wenn du könntest?",
+"es": "¿Qué cambiarías de tu dormitorio si pudieras?",
+"fr": "Que changerais-tu dans ta chambre si tu pouvais ?",
+"it": "Cosa cambieresti della tua camera se potessi?",
+"pt": "O que mudarias no teu quarto se pudesses?",
+"pt_BR": "O que você mudaria no seu quarto se pudesse?"
+}
+},
+{
+"id": "sleep_habits-035",
+"lv": "any",
+"i18n": {
+"en": "How do you like to wake up on a day off?",
+"de": "Wie wachst du an einem freien Tag am liebsten auf?",
+"es": "¿Cómo te gusta despertarte un día libre?",
+"fr": "Comment aimes-tu te réveiller un jour de repos ?",
+"it": "Come ti piace svegliarti in un giorno libero?",
+"pt": "Como gostas de acordar num dia de folga?",
+"pt_BR": "Como você gosta de acordar num dia de folga?"
+}
+},
+{
+"id": "sleep_habits-036",
+"lv": "any",
+"i18n": {
+"en": "Do you think people talk enough about sleep? Why or why not?",
+"de": "Findest du, dass man genug über Schlaf spricht? Warum (nicht)?",
+"es": "¿Crees que se habla lo suficiente del sueño? ¿Por qué?",
+"fr": "Penses-tu qu'on parle assez du sommeil ? Pourquoi ?",
+"it": "Pensi che si parli abbastanza del sonno? Perché?",
+"pt": "Achas que se fala o suficiente sobre o sono? Porquê?",
+"pt_BR": "Você acha que se fala o bastante sobre sono? Por quê?"
+}
+},
+{
+"id": "sleep_habits-037",
+"lv": "any",
+"i18n": {
+"en": "Which season do you sleep best in, and why?",
+"de": "In welcher Jahreszeit schläfst du am besten und warum?",
+"es": "¿En qué estación del año duermes mejor y por qué?",
+"fr": "En quelle saison dors-tu le mieux, et pourquoi ?",
+"it": "In quale stagione dormi meglio e perché?",
+"pt": "Em que estação do ano dormes melhor e porquê?",
+"pt_BR": "Em qual estação do ano você dorme melhor, e por quê?"
+}
+},
+{
+"id": "sleep_habits-038",
+"lv": "any",
+"i18n": {
+"en": "What do you enjoy doing in the last hour before bed?",
+"de": "Was machst du in der letzten Stunde vor dem Schlafen am liebsten?",
+"es": "¿Qué te gusta hacer en la última hora antes de dormir?",
+"fr": "Qu'aimes-tu faire pendant la dernière heure avant de dormir ?",
+"it": "Cosa ti piace fare nell'ultima ora prima di dormire?",
+"pt": "O que gostas de fazer na última hora antes de dormir?",
+"pt_BR": "O que você gosta de fazer na última hora antes de dormir?"
+}
+},
+{
+"id": "sleep_habits-039",
+"lv": "any",
+"i18n": {
+"en": "How do you feel after a night when you slept really well?",
+"de": "Wie fühlst du dich nach einer Nacht, in der du richtig gut geschlafen hast?",
+"es": "¿Cómo te sientes después de una noche en la que has dormido de maravilla?",
+"fr": "Comment te sens-tu après une nuit où tu as vraiment bien dormi ?",
+"it": "Come ti senti dopo una notte in cui hai dormito davvero bene?",
+"pt": "Como te sentes depois de uma noite em que dormiste mesmo bem?",
+"pt_BR": "Como você se sente depois de uma noite em que dormiu muito bem?"
+}
+},
+{
+"id": "sleep_habits-040",
+"lv": "any",
+"i18n": {
+"en": "Is there a sleep saying or proverb in your language you like?",
+"de": "Gibt es in deiner Sprache ein Sprichwort über Schlaf, das dir gefällt?",
+"es": "¿Hay algún dicho o refrán sobre el sueño en tu idioma que te guste?",
+"fr": "Y a-t-il un dicton sur le sommeil dans ta langue que tu aimes ?",
+"it": "C'è un detto o un proverbio sul sonno nella tua lingua che ti piace?",
+"pt": "Há algum ditado sobre o sono na tua língua de que gostes?",
+"pt_BR": "Tem algum ditado sobre sono na sua língua de que você goste?"
+}
+},
+{
+"id": "sleep_habits-041",
+"lv": "beginner",
+"i18n": {
+"en": "Roughly how many hours do you sleep on a typical night?",
+"de": "Wie viele Stunden schläfst du ungefähr in einer typischen Nacht?",
+"es": "¿Cuántas horas duermes más o menos una noche normal?",
+"fr": "Combien d'heures dors-tu à peu près une nuit normale ?",
+"it": "Quante ore dormi più o meno in una notte normale?",
+"pt": "Quantas horas dormes, mais ou menos, numa noite normal?",
+"pt_BR": "Quantas horas você dorme, mais ou menos, numa noite normal?"
+}
+},
+{
+"id": "sleep_habits-042",
+"lv": "beginner",
+"i18n": {
+"en": "What time do you usually wake up, and is it the same every day?",
+"de": "Wann wachst du meistens auf, und ist das jeden Tag gleich?",
+"es": "¿A qué hora sueles despertarte y es igual todos los días?",
+"fr": "À quelle heure te réveilles-tu en général, et est-ce pareil chaque jour ?",
+"it": "A che ora ti svegli di solito, ed è uguale ogni giorno?",
+"pt": "A que horas costumas acordar, e é igual todos os dias?",
+"pt_BR": "Que horas você costuma acordar, e é igual todos os dias?"
+}
+},
+{
+"id": "sleep_habits-043",
+"lv": "beginner",
+"i18n": {
+"en": "How dark is your bedroom at night?",
+"de": "Wie dunkel ist dein Schlafzimmer nachts?",
+"es": "¿Qué tan oscuro está tu dormitorio por la noche?",
+"fr": "Ta chambre est-elle sombre la nuit ?",
+"it": "Quanto è buia la tua camera di notte?",
+"pt": "Quão escuro fica o teu quarto à noite?",
+"pt_BR": "O seu quarto fica bem escuro à noite?"
+}
+},
+{
+"id": "sleep_habits-044",
+"lv": "beginner",
+"i18n": {
+"en": "Do you get some daylight soon after you wake up?",
+"de": "Bekommst du kurz nach dem Aufwachen etwas Tageslicht ab?",
+"es": "¿Recibes algo de luz natural poco después de despertarte?",
+"fr": "Prends-tu un peu la lumière du jour peu après ton réveil ?",
+"it": "Prendi un po' di luce naturale poco dopo esserti svegliato?",
+"pt": "Apanhas alguma luz do dia pouco depois de acordar?",
+"pt_BR": "Você pega um pouco de luz do dia logo depois de acordar?"
+}
+},
+{
+"id": "sleep_habits-045",
+"lv": "beginner",
+"i18n": {
+"en": "How often do you press the snooze button?",
+"de": "Wie oft drückst du die Schlummertaste?",
+"es": "¿Cuántas veces sueles posponer la alarma?",
+"fr": "Combien de fois appuies-tu sur le bouton de répétition ?",
+"it": "Quante volte premi il tasto per posticipare la sveglia?",
+"pt": "Quantas vezes carregas no botão de adiar o despertador?",
+"pt_BR": "Quantas vezes você aperta o soneca do despertador?"
+}
+},
+{
+"id": "sleep_habits-046",
+"lv": "beginner",
+"i18n": {
+"en": "Is your bedroom quiet at night, or are there noises?",
+"de": "Ist es nachts in deinem Schlafzimmer ruhig, oder gibt es Geräusche?",
+"es": "¿Tu dormitorio es silencioso por la noche o hay ruidos?",
+"fr": "Ta chambre est-elle calme la nuit, ou y a-t-il des bruits ?",
+"it": "La tua camera è silenziosa di notte o ci sono rumori?",
+"pt": "O teu quarto é silencioso à noite ou há barulhos?",
+"pt_BR": "Seu quarto é silencioso à noite ou tem barulho?"
+}
+},
+{
+"id": "sleep_habits-047",
+"lv": "beginner",
+"i18n": {
+"en": "What time do you usually have dinner?",
+"de": "Wann isst du normalerweise zu Abend?",
+"es": "¿A qué hora sueles cenar?",
+"fr": "À quelle heure dînes-tu d'habitude ?",
+"it": "A che ora ceni di solito?",
+"pt": "A que horas costumas jantar?",
+"pt_BR": "Que horas você costuma jantar?"
+}
+},
+{
+"id": "sleep_habits-048",
+"lv": "beginner",
+"i18n": {
+"en": "Would you be curious to keep a simple sleep diary for a week?",
+"de": "Hättest du Lust, eine Woche lang ein einfaches Schlaftagebuch zu führen?",
+"es": "¿Te animarías a llevar un diario de sueño sencillo durante una semana?",
+"fr": "Aurais-tu envie de tenir un petit journal de sommeil pendant une semaine ?",
+"it": "Ti andrebbe di tenere un semplice diario del sonno per una settimana?",
+"pt": "Terias curiosidade em manter um diário de sono simples durante uma semana?",
+"pt_BR": "Você toparia manter um diário de sono simples por uma semana?"
+}
+},
+{
+"id": "sleep_habits-049",
+"lv": "beginner",
+"i18n": {
+"en": "When during the day do you feel most awake and energetic?",
+"de": "Wann am Tag fühlst du dich am wachsten und energiegeladensten?",
+"es": "¿En qué momento del día te sientes más despierto y con más energía?",
+"fr": "À quel moment de la journée te sens-tu le plus réveillé et plein d'énergie ?",
+"it": "In quale momento della giornata ti senti più sveglio ed energico?",
+"pt": "Em que altura do dia te sentes mais desperto e com mais energia?",
+"pt_BR": "Em que momento do dia você se sente mais desperto e com mais energia?"
+}
+},
+{
+"id": "sleep_habits-050",
+"lv": "beginner",
+"i18n": {
+"en": "Do you ever feel sleepy after lunch? What do you do then?",
+"de": "Wirst du nach dem Mittagessen manchmal müde? Was machst du dann?",
+"es": "¿Te entra sueño después de comer? ¿Qué haces entonces?",
+"fr": "Il t'arrive d'avoir sommeil après le déjeuner ? Que fais-tu alors ?",
+"it": "Ti viene sonno dopo pranzo? Cosa fai allora?",
+"pt": "Ficas com sono depois do almoço? O que fazes nessa altura?",
+"pt_BR": "Você sente sono depois do almoço? O que faz nessa hora?"
+}
+},
+{
+"id": "sleep_habits-051",
+"lv": "beginner",
+"i18n": {
+"en": "How do you move your body during a normal day?",
+"de": "Wie bewegst du dich an einem normalen Tag?",
+"es": "¿Cómo te mueves durante un día normal?",
+"fr": "Comment bouges-tu au cours d'une journée normale ?",
+"it": "Come ti muovi durante una giornata normale?",
+"pt": "Como é que te mexes durante um dia normal?",
+"pt_BR": "Como você se movimenta durante um dia normal?"
+}
+},
+{
+"id": "sleep_habits-052",
+"lv": "beginner",
+"i18n": {
+"en": "What temperature feels best to you for sleeping?",
+"de": "Bei welcher Temperatur schläfst du am liebsten?",
+"es": "¿Con qué temperatura te resulta más agradable dormir?",
+"fr": "Quelle température te semble idéale pour dormir ?",
+"it": "Qual è la temperatura che preferisci per dormire?",
+"pt": "Que temperatura te parece melhor para dormir?",
+"pt_BR": "Qual temperatura parece melhor pra você dormir?"
+}
+},
+{
+"id": "sleep_habits-053",
+"lv": "beginner",
+"i18n": {
+"en": "Do you have a regular routine before bed, or is every night different?",
+"de": "Hast du vor dem Schlafen eine feste Routine, oder ist jeder Abend anders?",
+"es": "¿Tienes una rutina fija antes de dormir o cada noche es diferente?",
+"fr": "As-tu une routine régulière avant de dormir, ou chaque soir est-il différent ?",
+"it": "Hai una routine fissa prima di dormire o ogni sera è diversa?",
+"pt": "Tens uma rotina fixa antes de dormir ou cada noite é diferente?",
+"pt_BR": "Você tem uma rotina fixa antes de dormir ou cada noite é diferente?"
+}
+},
+{
+"id": "sleep_habits-054",
+"lv": "beginner",
+"i18n": {
+"en": "Do you prefer a shower in the morning or in the evening?",
+"de": "Duschst du lieber morgens oder abends?",
+"es": "¿Prefieres ducharte por la mañana o por la noche?",
+"fr": "Tu préfères te doucher le matin ou le soir ?",
+"it": "Preferisci fare la doccia la mattina o la sera?",
+"pt": "Preferes tomar banho de manhã ou à noite?",
+"pt_BR": "Você prefere tomar banho de manhã ou à noite?"
+}
+},
+{
+"id": "sleep_habits-055",
+"lv": "beginner",
+"i18n": {
+"en": "Where do you keep your phone at night?",
+"de": "Wo liegt dein Handy nachts?",
+"es": "¿Dónde dejas el móvil por la noche?",
+"fr": "Où laisses-tu ton téléphone la nuit ?",
+"it": "Dove tieni il telefono di notte?",
+"pt": "Onde deixas o telemóvel durante a noite?",
+"pt_BR": "Onde você deixa o celular à noite?"
+}
+},
+{
+"id": "sleep_habits-056",
+"lv": "beginner",
+"i18n": {
+"en": "What kind of light do you use in the evening at home?",
+"de": "Welches Licht nutzt du abends zu Hause?",
+"es": "¿Qué tipo de luz usas en casa por la noche?",
+"fr": "Quel type de lumière utilises-tu le soir chez toi ?",
+"it": "Che tipo di luce usi la sera a casa?",
+"pt": "Que tipo de luz usas em casa à noite?",
+"pt_BR": "Que tipo de luz você usa em casa à noite?"
+}
+},
+{
+"id": "sleep_habits-057",
+"lv": "beginner",
+"i18n": {
+"en": "Which calm activity could you try in your evening wind-down?",
+"de": "Welche ruhige Beschäftigung könntest du abends zum Runterkommen ausprobieren?",
+"es": "¿Qué actividad tranquila podrías probar para relajarte por la noche?",
+"fr": "Quelle activité calme pourrais-tu essayer pour décompresser le soir ?",
+"it": "Quale attività tranquilla potresti provare per rilassarti la sera?",
+"pt": "Que atividade calma podias experimentar para relaxar à noite?",
+"pt_BR": "Que atividade tranquila você poderia testar pra relaxar à noite?"
+}
+},
+{
+"id": "sleep_habits-058",
+"lv": "beginner",
+"i18n": {
+"en": "How long does it usually take you to fall asleep?",
+"de": "Wie lange brauchst du normalerweise zum Einschlafen?",
+"es": "¿Cuánto tiempo sueles tardar en dormirte?",
+"fr": "Combien de temps mets-tu d'habitude à t'endormir ?",
+"it": "Quanto tempo ci metti di solito ad addormentarti?",
+"pt": "Quanto tempo costumas demorar a adormecer?",
+"pt_BR": "Quanto tempo você costuma levar pra pegar no sono?"
+}
+},
+{
+"id": "sleep_habits-059",
+"lv": "beginner",
+"i18n": {
+"en": "Do you prefer soft or firm pillows?",
+"de": "Magst du lieber weiche oder feste Kissen?",
+"es": "¿Prefieres almohadas blandas o firmes?",
+"fr": "Tu préfères les oreillers moelleux ou fermes ?",
+"it": "Preferisci cuscini morbidi o rigidi?",
+"pt": "Preferes almofadas macias ou firmes?",
+"pt_BR": "Você prefere travesseiros macios ou firmes?"
+}
+},
+{
+"id": "sleep_habits-060",
+"lv": "beginner",
+"i18n": {
+"en": "Do you ever write a to-do list for tomorrow before bed?",
+"de": "Schreibst du abends manchmal eine To-do-Liste für morgen?",
+"es": "¿Alguna vez escribes una lista de tareas para mañana antes de dormir?",
+"fr": "T'arrive-t-il d'écrire une liste de choses à faire pour le lendemain avant de dormir ?",
+"it": "Ti capita di scrivere una lista di cose da fare per domani prima di dormire?",
+"pt": "Costumas escrever uma lista de tarefas para amanhã antes de dormir?",
+"pt_BR": "Você costuma escrever uma lista de tarefas pro dia seguinte antes de dormir?"
+}
+},
+{
+"id": "sleep_habits-061",
+"lv": "beginner",
+"i18n": {
+"en": "What small change to your bedroom could you make this week?",
+"de": "Welche kleine Veränderung könntest du diese Woche in deinem Schlafzimmer vornehmen?",
+"es": "¿Qué pequeño cambio podrías hacer en tu dormitorio esta semana?",
+"fr": "Quel petit changement pourrais-tu faire dans ta chambre cette semaine ?",
+"it": "Quale piccolo cambiamento potresti fare nella tua camera questa settimana?",
+"pt": "Que pequena mudança podias fazer no teu quarto esta semana?",
+"pt_BR": "Que pequena mudança você poderia fazer no seu quarto esta semana?"
+}
+},
+{
+"id": "sleep_habits-062",
+"lv": "beginner",
+"i18n": {
+"en": "Do you spend time outdoors on most days?",
+"de": "Bist du an den meisten Tagen draußen?",
+"es": "¿Pasas tiempo al aire libre casi todos los días?",
+"fr": "Passes-tu du temps dehors la plupart des jours ?",
+"it": "Passi del tempo all'aperto quasi tutti i giorni?",
+"pt": "Passas tempo ao ar livre na maioria dos dias?",
+"pt_BR": "Você passa um tempo ao ar livre na maioria dos dias?"
+}
+},
+{
+"id": "sleep_habits-063",
+"lv": "beginner",
+"i18n": {
+"en": "What helps you wake up gently in the morning?",
+"de": "Was hilft dir, morgens sanft wach zu werden?",
+"es": "¿Qué te ayuda a despertarte con suavidad por la mañana?",
+"fr": "Qu'est-ce qui t'aide à te réveiller en douceur le matin ?",
+"it": "Cosa ti aiuta a svegliarti con dolcezza la mattina?",
+"pt": "O que te ajuda a acordar com calma de manhã?",
+"pt_BR": "O que te ajuda a acordar com calma de manhã?"
+}
+},
+{
+"id": "sleep_habits-064",
+"lv": "beginner",
+"i18n": {
+"en": "Have you ever tried a slow breathing exercise before sleep?",
+"de": "Hast du schon einmal vor dem Schlafen eine langsame Atemübung ausprobiert?",
+"es": "¿Has probado alguna vez un ejercicio de respiración lenta antes de dormir?",
+"fr": "As-tu déjà essayé un exercice de respiration lente avant de dormir ?",
+"it": "Hai mai provato un esercizio di respirazione lenta prima di dormire?",
+"pt": "Já experimentaste algum exercício de respiração lenta antes de dormir?",
+"pt_BR": "Você já testou algum exercício de respiração lenta antes de dormir?"
+}
+},
+{
+"id": "sleep_habits-065",
+"lv": "beginner",
+"i18n": {
+"en": "What sleep goal would feel realistic for you this month?",
+"de": "Welches Schlafziel fühlt sich für diesen Monat realistisch an?",
+"es": "¿Qué meta de sueño te parece realista para este mes?",
+"fr": "Quel objectif de sommeil te semble réaliste pour ce mois-ci ?",
+"it": "Quale obiettivo per il sonno ti sembra realistico per questo mese?",
+"pt": "Que objetivo de sono te parece realista para este mês?",
+"pt_BR": "Qual meta de sono parece realista pra você este mês?"
+}
+},
+{
+"id": "sleep_habits-066",
+"lv": "intermediate",
+"i18n": {
+"en": "What is your personal caffeine cut-off time, if you have one?",
+"de": "Ab wann trinkst du keinen Kaffee mehr, falls du eine feste Grenze hast?",
+"es": "¿Tienes una hora límite para la cafeína? ¿Cuál es?",
+"fr": "As-tu une heure limite pour la caféine ? Laquelle ?",
+"it": "Hai un orario limite per la caffeina? Qual è?",
+"pt": "Tens uma hora limite para a cafeína? Qual é?",
+"pt_BR": "Você tem um horário limite pra cafeína? Qual é?"
+}
+},
+{
+"id": "sleep_habits-067",
+"lv": "intermediate",
+"i18n": {
+"en": "How do late dinners affect your sleep, in your experience?",
+"de": "Wie wirkt sich ein spätes Abendessen deiner Erfahrung nach auf deinen Schlaf aus?",
+"es": "Según tu experiencia, ¿cómo afectan las cenas tardías a tu sueño?",
+"fr": "D'après ton expérience, comment les dîners tardifs influencent-ils ton sommeil ?",
+"it": "Secondo la tua esperienza, come influiscono le cene tardive sul tuo sonno?",
+"pt": "Pela tua experiência, como é que os jantares tardios afetam o teu sono?",
+"pt_BR": "Pela sua experiência, como os jantares tarde afetam o seu sono?"
+}
+},
+{
+"id": "sleep_habits-068",
+"lv": "intermediate",
+"i18n": {
+"en": "What do you do when your mind is busy and you cannot fall asleep?",
+"de": "Was machst du, wenn dein Kopf voll ist und du nicht einschlafen kannst?",
+"es": "¿Qué haces cuando tienes la mente ocupada y no consigues dormirte?",
+"fr": "Que fais-tu quand ton esprit tourne et que tu n'arrives pas à t'endormir ?",
+"it": "Cosa fai quando la mente è piena di pensieri e non riesci ad addormentarti?",
+"pt": "O que fazes quando tens a cabeça cheia e não consegues adormecer?",
+"pt_BR": "O que você faz quando a cabeça está cheia e não consegue dormir?"
+}
+},
+{
+"id": "sleep_habits-069",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you handle the clock change in spring or autumn, if you have one?",
+"de": "Wie gehst du mit der Zeitumstellung im Frühling oder Herbst um, falls es sie bei dir gibt?",
+"es": "¿Cómo llevas el cambio de hora en primavera u otoño, si lo tenéis?",
+"fr": "Comment vis-tu le changement d'heure au printemps ou en automne, s'il existe chez toi ?",
+"it": "Come affronti il cambio dell'ora in primavera o in autunno, se c'è dove vivi?",
+"pt": "Como lidas com a mudança de hora na primavera ou no outono, se existir onde vives?",
+"pt_BR": "Como você lida com a mudança de horário, se ela existir onde você mora?"
+}
+},
+{
+"id": "sleep_habits-070",
+"lv": "intermediate",
+"i18n": {
+"en": "What is your best trick for sleeping on a plane, train or bus?",
+"de": "Was ist dein bester Trick, um im Flugzeug, Zug oder Bus zu schlafen?",
+"es": "¿Cuál es tu mejor truco para dormir en un avión, tren o autobús?",
+"fr": "Quelle est ta meilleure astuce pour dormir en avion, en train ou en bus ?",
+"it": "Qual è il tuo trucco migliore per dormire in aereo, treno o autobus?",
+"pt": "Qual é o teu melhor truque para dormir num avião, comboio ou autocarro?",
+"pt_BR": "Qual é o seu melhor truque pra dormir em avião, trem ou ônibus?"
+}
+},
+{
+"id": "sleep_habits-071",
+"lv": "intermediate",
+"i18n": {
+"en": "Have you ever had jet lag? How did you get over it?",
+"de": "Hattest du schon einmal Jetlag? Wie bist du damit klargekommen?",
+"es": "¿Has tenido alguna vez jet lag? ¿Cómo lo superaste?",
+"fr": "As-tu déjà eu le décalage horaire ? Comment t'en es-tu remis ?",
+"it": "Hai mai avuto il jet lag? Come l'hai superato?",
+"pt": "Já tiveste jet lag? Como é que o ultrapassaste?",
+"pt_BR": "Você já teve jet lag? Como superou?"
+}
+},
+{
+"id": "sleep_habits-072",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you balance late nights with friends and enough rest?",
+"de": "Wie bringst du lange Abende mit Freunden und genug Erholung unter einen Hut?",
+"es": "¿Cómo equilibras las noches con amigos y el descanso suficiente?",
+"fr": "Comment concilies-tu soirées entre amis et repos suffisant ?",
+"it": "Come concili le serate con gli amici e il giusto riposo?",
+"pt": "Como equilibras as noites com amigos e o descanso de que precisas?",
+"pt_BR": "Como você equilibra as noites com os amigos e o descanso de que precisa?"
+}
+},
+{
+"id": "sleep_habits-073",
+"lv": "intermediate",
+"i18n": {
+"en": "What is your ideal nap: short and quick or long and deep?",
+"de": "Wie sieht dein ideales Nickerchen aus: kurz und knackig oder lang und tief?",
+"es": "¿Cómo es tu siesta ideal: corta y rápida o larga y profunda?",
+"fr": "Quelle est ta sieste idéale : courte et rapide ou longue et profonde ?",
+"it": "Com'è il tuo pisolino ideale: breve e veloce o lungo e profondo?",
+"pt": "Como é a tua sesta ideal: curta e rápida ou longa e profunda?",
+"pt_BR": "Como é o seu cochilo ideal: curtinho ou longo e profundo?"
+}
+},
+{
+"id": "sleep_habits-074",
+"lv": "intermediate",
+"i18n": {
+"en": "How do your screen habits change in the evening?",
+"de": "Wie verändern sich deine Bildschirmgewohnheiten am Abend?",
+"es": "¿Cómo cambian tus hábitos con las pantallas por la noche?",
+"fr": "Comment tes habitudes d'écran changent-elles le soir ?",
+"it": "Come cambiano le tue abitudini con gli schermi la sera?",
+"pt": "Como mudam os teus hábitos com ecrãs à noite?",
+"pt_BR": "Como seus hábitos com telas mudam à noite?"
+}
+},
+{
+"id": "sleep_habits-075",
+"lv": "intermediate",
+"i18n": {
+"en": "What do you do the day after a poor night to stay positive?",
+"de": "Was tust du am Tag nach einer schlechten Nacht, um positiv zu bleiben?",
+"es": "¿Qué haces el día después de una mala noche para mantener el ánimo?",
+"fr": "Que fais-tu le lendemain d'une mauvaise nuit pour garder le moral ?",
+"it": "Cosa fai il giorno dopo una brutta nottata per restare positivo?",
+"pt": "O que fazes no dia a seguir a uma má noite para te manteres positivo?",
+"pt_BR": "O que você faz no dia seguinte a uma noite ruim pra continuar positivo?"
+}
+},
+{
+"id": "sleep_habits-076",
+"lv": "intermediate",
+"i18n": {
+"en": "How does exercise affect your sleep, from what you have noticed?",
+"de": "Wie wirkt sich Sport auf deinen Schlaf aus, soweit du es beobachtet hast?",
+"es": "Por lo que has notado, ¿cómo afecta el ejercicio a tu sueño?",
+"fr": "D'après ce que tu as remarqué, comment le sport influence-t-il ton sommeil ?",
+"it": "Da quello che hai notato, come influisce l'attività fisica sul tuo sonno?",
+"pt": "Pelo que tens notado, como é que o exercício afeta o teu sono?",
+"pt_BR": "Pelo que você já percebeu, como o exercício afeta o seu sono?"
+}
+},
+{
+"id": "sleep_habits-077",
+"lv": "intermediate",
+"i18n": {
+"en": "Do you keep the same wake-up time at weekends? How does it feel?",
+"de": "Stehst du am Wochenende zur gleichen Zeit auf? Wie fühlt sich das an?",
+"es": "¿Mantienes la misma hora de despertarte los fines de semana? ¿Qué tal te sienta?",
+"fr": "Gardes-tu la même heure de réveil le week-end ? Comment le vis-tu ?",
+"it": "Mantieni lo stesso orario di sveglia nel fine settimana? Come ti trovi?",
+"pt": "Manténs a mesma hora de acordar ao fim de semana? Como te sentes?",
+"pt_BR": "Você mantém o mesmo horário de acordar no fim de semana? Como se sente?"
+}
+},
+{
+"id": "sleep_habits-078",
+"lv": "intermediate",
+"i18n": {
+"en": "What is your favourite technique for relaxing your body in bed?",
+"de": "Was ist deine liebste Technik, um im Bett den Körper zu entspannen?",
+"es": "¿Cuál es tu técnica favorita para relajar el cuerpo en la cama?",
+"fr": "Quelle est ta technique préférée pour détendre ton corps au lit ?",
+"it": "Qual è la tua tecnica preferita per rilassare il corpo a letto?",
+"pt": "Qual é a tua técnica preferida para relaxar o corpo na cama?",
+"pt_BR": "Qual é a sua técnica favorita pra relaxar o corpo na cama?"
+}
+},
+{
+"id": "sleep_habits-079",
+"lv": "intermediate",
+"i18n": {
+"en": "How do excitement or big plans for the next day affect your sleep?",
+"de": "Wie wirkt sich Vorfreude oder ein großer Plan für den nächsten Tag auf deinen Schlaf aus?",
+"es": "¿Cómo afecta a tu sueño la emoción o un gran plan para el día siguiente?",
+"fr": "Comment l'excitation ou un grand projet pour le lendemain influence-t-il ton sommeil ?",
+"it": "Come influiscono sul tuo sonno l'emozione o un grande programma per il giorno dopo?",
+"pt": "Como é que a ansiedade boa ou um grande plano para o dia seguinte afetam o teu sono?",
+"pt_BR": "Como a empolgação ou um grande plano pro dia seguinte afetam o seu sono?"
+}
+},
+{
+"id": "sleep_habits-080",
+"lv": "intermediate",
+"i18n": {
+"en": "What part of your evening routine do you enjoy the most?",
+"de": "Welchen Teil deines Abendrituals genießt du am meisten?",
+"es": "¿Qué parte de tu rutina nocturna disfrutas más?",
+"fr": "Quelle partie de ta routine du soir apprécies-tu le plus ?",
+"it": "Quale parte della tua routine serale ti piace di più?",
+"pt": "Que parte da tua rotina da noite te dá mais prazer?",
+"pt_BR": "Qual parte da sua rotina da noite você mais curte?"
+}
+},
+{
+"id": "sleep_habits-081",
+"lv": "intermediate",
+"i18n": {
+"en": "How do seasons, like long summer evenings or dark winters, change your sleep?",
+"de": "Wie verändern Jahreszeiten, etwa lange Sommerabende oder dunkle Winter, deinen Schlaf?",
+"es": "¿Cómo cambian tu sueño las estaciones, como las tardes largas de verano o los inviernos oscuros?",
+"fr": "Comment les saisons, comme les longues soirées d'été ou les hivers sombres, changent-elles ton sommeil ?",
+"it": "Come cambiano il tuo sonno le stagioni, come le lunghe sere d'estate o gli inverni bui?",
+"pt": "Como é que as estações, como as noites longas de verão ou os invernos escuros, mudam o teu sono?",
+"pt_BR": "Como as estações, tipo as noites longas de verão ou os invernos escuros, mudam o seu sono?"
+}
+},
+{
+"id": "sleep_habits-082",
+"lv": "intermediate",
+"i18n": {
+"en": "Which habit has made the biggest difference to your sleep so far?",
+"de": "Welche Gewohnheit hat bisher den größten Unterschied für deinen Schlaf gemacht?",
+"es": "¿Qué hábito ha marcado más la diferencia en tu sueño hasta ahora?",
+"fr": "Quelle habitude a fait la plus grande différence pour ton sommeil jusqu'ici ?",
+"it": "Quale abitudine ha fatto finora la differenza più grande per il tuo sonno?",
+"pt": "Que hábito fez até agora a maior diferença no teu sono?",
+"pt_BR": "Qual hábito fez a maior diferença no seu sono até agora?"
+}
+},
+{
+"id": "sleep_habits-083",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you protect your sleep during busy or stressful weeks?",
+"de": "Wie schützt du deinen Schlaf in vollen oder anstrengenden Wochen?",
+"es": "¿Cómo proteges tu sueño en las semanas más ocupadas?",
+"fr": "Comment protèges-tu ton sommeil pendant les semaines chargées ?",
+"it": "Come proteggi il tuo sonno nelle settimane più piene?",
+"pt": "Como proteges o teu sono nas semanas mais cheias?",
+"pt_BR": "Como você protege o seu sono nas semanas mais corridas?"
+}
+},
+{
+"id": "sleep_habits-084",
+"lv": "intermediate",
+"i18n": {
+"en": "What would make your mornings feel less rushed?",
+"de": "Was würde deine Morgen weniger hektisch machen?",
+"es": "¿Qué haría que tus mañanas fueran menos apresuradas?",
+"fr": "Qu'est-ce qui rendrait tes matins moins pressés ?",
+"it": "Cosa renderebbe le tue mattine meno di corsa?",
+"pt": "O que tornaria as tuas manhãs menos apressadas?",
+"pt_BR": "O que deixaria as suas manhãs menos corridas?"
+}
+},
+{
+"id": "sleep_habits-085",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you feel about sleep trackers or sleep apps?",
+"de": "Was hältst du von Schlaftrackern oder Schlaf-Apps?",
+"es": "¿Qué opinas de los monitores o apps de sueño?",
+"fr": "Que penses-tu des trackers ou applis de sommeil ?",
+"it": "Cosa pensi dei tracker o delle app per il sonno?",
+"pt": "O que achas dos monitores ou aplicações de sono?",
+"pt_BR": "O que você acha dos monitores ou apps de sono?"
+}
+},
+{
+"id": "sleep_habits-086",
+"lv": "advanced",
+"i18n": {
+"en": "If you ran a two-week sleep experiment, what would you test?",
+"de": "Wenn du ein zweiwöchiges Schlafexperiment machen würdest, was würdest du testen?",
+"es": "Si hicieras un experimento de sueño de dos semanas, ¿qué pondrías a prueba?",
+"fr": "Si tu faisais une expérience de sommeil de deux semaines, que testerais-tu ?",
+"it": "Se facessi un esperimento sul sonno di due settimane, cosa metteresti alla prova?",
+"pt": "Se fizesses uma experiência de sono de duas semanas, o que testarias?",
+"pt_BR": "Se você fizesse um teste de sono de duas semanas, o que testaria?"
+}
+},
+{
+"id": "sleep_habits-087",
+"lv": "advanced",
+"i18n": {
+"en": "What patterns have you noticed in your sleep over the past months?",
+"de": "Welche Muster hast du in den letzten Monaten in deinem Schlaf bemerkt?",
+"es": "¿Qué patrones has notado en tu sueño durante los últimos meses?",
+"fr": "Quels schémas as-tu remarqués dans ton sommeil ces derniers mois ?",
+"it": "Quali schemi hai notato nel tuo sonno negli ultimi mesi?",
+"pt": "Que padrões notaste no teu sono nos últimos meses?",
+"pt_BR": "Que padrões você notou no seu sono nos últimos meses?"
+}
+},
+{
+"id": "sleep_habits-088",
+"lv": "advanced",
+"i18n": {
+"en": "Which sleep custom from another culture would you like to try?",
+"de": "Welchen Schlafbrauch aus einer anderen Kultur würdest du gern ausprobieren?",
+"es": "¿Qué costumbre de sueño de otra cultura te gustaría probar?",
+"fr": "Quelle coutume de sommeil d'une autre culture aimerais-tu essayer ?",
+"it": "Quale usanza legata al sonno di un'altra cultura ti piacerebbe provare?",
+"pt": "Que costume de sono de outra cultura gostavas de experimentar?",
+"pt_BR": "Qual costume de sono de outra cultura você gostaria de experimentar?"
+}
+},
+{
+"id": "sleep_habits-089",
+"lv": "advanced",
+"i18n": {
+"en": "What do you think about the old idea of a 'first' and 'second' sleep?",
+"de": "Was hältst du von der alten Idee eines ersten und zweiten Schlafs?",
+"es": "¿Qué opinas de la antigua idea de un 'primer' y un 'segundo' sueño?",
+"fr": "Que penses-tu de l'ancienne idée d'un « premier » et d'un « second » sommeil ?",
+"it": "Cosa pensi dell'antica idea di un 'primo' e di un 'secondo' sonno?",
+"pt": "O que achas da antiga ideia de um 'primeiro' e um 'segundo' sono?",
+"pt_BR": "O que você acha da antiga ideia de um 'primeiro' e um 'segundo' sono?"
+}
+},
+{
+"id": "sleep_habits-090",
+"lv": "advanced",
+"i18n": {
+"en": "How do you notice that sleep helps you learn or remember things?",
+"de": "Woran merkst du, dass Schlaf dir beim Lernen oder Erinnern hilft?",
+"es": "¿Cómo notas que dormir te ayuda a aprender o recordar cosas?",
+"fr": "À quoi remarques-tu que le sommeil t'aide à apprendre ou à retenir ?",
+"it": "Da cosa ti accorgi che il sonno ti aiuta a imparare o ricordare?",
+"pt": "Como notas que o sono te ajuda a aprender ou a lembrar coisas?",
+"pt_BR": "Como você percebe que o sono te ajuda a aprender ou lembrar das coisas?"
+}
+},
+{
+"id": "sleep_habits-091",
+"lv": "advanced",
+"i18n": {
+"en": "How would you design the most sleep-friendly bedroom imaginable?",
+"de": "Wie würdest du das schlaffreundlichste Schlafzimmer überhaupt gestalten?",
+"es": "¿Cómo diseñarías el dormitorio más ideal para dormir que puedas imaginar?",
+"fr": "Comment concevrais-tu la chambre la plus propice au sommeil qu'on puisse imaginer ?",
+"it": "Come progetteresti la camera più adatta al sonno che si possa immaginare?",
+"pt": "Como desenharias o quarto mais perfeito para dormir que consegues imaginar?",
+"pt_BR": "Como você projetaria o quarto mais perfeito pra dormir que dá pra imaginar?"
+}
+},
+{
+"id": "sleep_habits-092",
+"lv": "advanced",
+"i18n": {
+"en": "What is the minimum set of sleep habits you keep, even on chaotic days?",
+"de": "Welche Schlafgewohnheiten behältst du selbst an chaotischen Tagen mindestens bei?",
+"es": "¿Qué hábitos de sueño mínimos mantienes incluso en los días caóticos?",
+"fr": "Quelles habitudes de sommeil gardes-tu au minimum, même les jours chaotiques ?",
+"it": "Quali abitudini minime per il sonno mantieni anche nei giorni caotici?",
+"pt": "Que hábitos de sono mínimos manténs mesmo nos dias caóticos?",
+"pt_BR": "Quais hábitos mínimos de sono você mantém até nos dias caóticos?"
+}
+},
+{
+"id": "sleep_habits-093",
+"lv": "advanced",
+"i18n": {
+"en": "How do you think workplaces or schools could support better sleep?",
+"de": "Wie könnten Arbeitsplätze oder Schulen deiner Meinung nach besseren Schlaf fördern?",
+"es": "¿Cómo crees que los trabajos o las escuelas podrían favorecer un mejor descanso?",
+"fr": "Comment les entreprises ou les écoles pourraient-elles favoriser un meilleur sommeil, selon toi ?",
+"it": "Secondo te, come potrebbero i luoghi di lavoro o le scuole favorire un sonno migliore?",
+"pt": "Como achas que os locais de trabalho ou as escolas poderiam apoiar um sono melhor?",
+"pt_BR": "Como você acha que empresas ou escolas poderiam apoiar um sono melhor?"
+}
+},
+{
+"id": "sleep_habits-094",
+"lv": "advanced",
+"i18n": {
+"en": "What would your personal 'sleep manual' say in three sentences?",
+"de": "Was würde in drei Sätzen in deinem persönlichen Schlafhandbuch stehen?",
+"es": "¿Qué diría tu 'manual de sueño' personal en tres frases?",
+"fr": "Que dirait ton « manuel du sommeil » personnel en trois phrases ?",
+"it": "Cosa direbbe in tre frasi il tuo 'manuale del sonno' personale?",
+"pt": "O que diria em três frases o teu 'manual do sono' pessoal?",
+"pt_BR": "O que diria em três frases o seu 'manual do sono' pessoal?"
+}
+},
+{
+"id": "sleep_habits-095",
+"lv": "advanced",
+"i18n": {
+"en": "How have your ideas about sleep changed since you started this path?",
+"de": "Wie haben sich deine Vorstellungen über Schlaf verändert, seit du diesen Weg begonnen hast?",
+"es": "¿Cómo han cambiado tus ideas sobre el sueño desde que empezaste este camino?",
+"fr": "Comment tes idées sur le sommeil ont-elles changé depuis le début de ce parcours ?",
+"it": "Come sono cambiate le tue idee sul sonno da quando hai iniziato questo percorso?",
+"pt": "Como mudaram as tuas ideias sobre o sono desde que começaste este percurso?",
+"pt_BR": "Como suas ideias sobre sono mudaram desde que você começou esta jornada?"
+}
+},
+{
+"id": "sleep_habits-096",
+"lv": "advanced",
+"i18n": {
+"en": "How would you explain the body clock to a friend in simple words?",
+"de": "Wie würdest du einem Freund die innere Uhr in einfachen Worten erklären?",
+"es": "¿Cómo le explicarías el reloj biológico a un amigo con palabras sencillas?",
+"fr": "Comment expliquerais-tu l'horloge biologique à un ami avec des mots simples ?",
+"it": "Come spiegheresti l'orologio biologico a un amico con parole semplici?",
+"pt": "Como explicarias o relógio biológico a um amigo por palavras simples?",
+"pt_BR": "Como você explicaria o relógio biológico pra um amigo com palavras simples?"
+}
+},
+{
+"id": "sleep_habits-097",
+"lv": "advanced",
+"i18n": {
+"en": "How do you plan your sleep around travel across time zones?",
+"de": "Wie planst du deinen Schlaf bei Reisen über Zeitzonen hinweg?",
+"es": "¿Cómo planificas tu sueño cuando viajas a otros husos horarios?",
+"fr": "Comment organises-tu ton sommeil quand tu voyages à travers les fuseaux horaires ?",
+"it": "Come pianifichi il sonno quando viaggi attraverso diversi fusi orari?",
+"pt": "Como planeias o teu sono quando viajas para outros fusos horários?",
+"pt_BR": "Como você planeja o seu sono quando viaja para outros fusos horários?"
+}
+},
+{
+"id": "sleep_habits-098",
+"lv": "advanced",
+"i18n": {
+"en": "What does a balanced week of rest, fun and sleep look like to you?",
+"de": "Wie sieht für dich eine ausgewogene Woche mit Erholung, Spaß und Schlaf aus?",
+"es": "¿Cómo sería para ti una semana equilibrada de descanso, diversión y sueño?",
+"fr": "À quoi ressemble pour toi une semaine équilibrée entre repos, plaisir et sommeil ?",
+"it": "Com'è per te una settimana equilibrata tra riposo, divertimento e sonno?",
+"pt": "Como é para ti uma semana equilibrada entre descanso, diversão e sono?",
+"pt_BR": "Como é pra você uma semana equilibrada entre descanso, diversão e sono?"
+}
+},
+{
+"id": "sleep_habits-099",
+"lv": "advanced",
+"i18n": {
+"en": "Which sleep tip from this year would you pass on to someone you care about?",
+"de": "Welchen Schlaftipp aus diesem Jahr würdest du an jemanden weitergeben, der dir wichtig ist?",
+"es": "¿Qué consejo de sueño de este año le pasarías a alguien que te importa?",
+"fr": "Quel conseil sommeil de cette année transmettrais-tu à quelqu'un qui compte pour toi ?",
+"it": "Quale consiglio sul sonno di quest'anno passeresti a una persona a cui tieni?",
+"pt": "Que dica de sono deste ano passarias a alguém de quem gostas?",
+"pt_BR": "Qual dica de sono deste ano você passaria pra alguém de quem gosta?"
+}
+},
+{
+"id": "sleep_habits-100",
+"lv": "advanced",
+"i18n": {
+"en": "What sleep intention would you like to carry into the next year?",
+"de": "Welchen Vorsatz rund um Schlaf möchtest du ins nächste Jahr mitnehmen?",
+"es": "¿Qué intención sobre tu sueño te gustaría llevar al próximo año?",
+"fr": "Quelle intention pour ton sommeil aimerais-tu emporter dans l'année à venir ?",
+"it": "Quale intenzione sul sonno vorresti portare con te nel prossimo anno?",
+"pt": "Que intenção sobre o sono gostavas de levar para o próximo ano?",
+"pt_BR": "Qual intenção sobre o sono você gostaria de levar para o próximo ano?"
+}
+}
+]
+}

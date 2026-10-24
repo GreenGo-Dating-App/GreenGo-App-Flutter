@@ -1,0 +1,565 @@
+{
+ "topic": "practice_english",
+ "lessons": [
+  {
+   "d": 361,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Mock B2: listening and speaking",
+     "g": "Practise exam-style listening and give a structured oral answer.",
+     "p": [
+      "Listening: read the questions, predict answers, catch key words, and beware of distractors and self-corrections.",
+      "Speaking: answer, give a reason, add an example, then extend: I'd say..., mainly because... For instance...",
+      "Keep it natural: paraphrase missing words, use fillers like Well, let me see, and involve your partner."
+     ],
+     "q": "If an examiner asked you What do you enjoy about learning English?, what would you say?",
+     "c": "Answer this in one minute, aloud: Is it better to learn English with apps or with a teacher? Give reasons and examples."
+    },
+    "de": {
+     "t": "Probe-B2: Hören und Sprechen",
+     "g": "Du übst Hörverstehen im Prüfungsformat und gibst eine strukturierte mündliche Antwort.",
+     "p": [
+      "Hören: Fragen lesen, Antworten vorhersagen, Schlüsselwörter erfassen, auf Ablenker und Selbstkorrekturen achten.",
+      "Sprechen: antworten, begründen, Beispiel nennen, ausbauen: I'd say..., mainly because... For instance...",
+      "Natürlich bleiben: fehlende Wörter umschreiben, Füllwörter wie Well, let me see nutzen und den Partner einbeziehen."
+     ],
+     "q": "Wenn ein Prüfer dich fragt: What do you enjoy about learning English? Was würdest du sagen?",
+     "c": "Beantworte laut in einer Minute: Is it better to learn English with apps or with a teacher? Mit Gründen und Beispielen."
+    },
+    "es": {
+     "t": "Simulacro B2: comprensión y expresión oral",
+     "g": "Practica la comprensión auditiva tipo examen y da una respuesta oral estructurada.",
+     "p": [
+      "Escucha: lee las preguntas, anticipa respuestas, capta palabras clave y cuidado con distractores y autocorrecciones.",
+      "Habla: responde, da una razón, añade un ejemplo y amplía: I'd say..., mainly because... For instance...",
+      "Suena natural: parafrasea palabras que falten, usa muletillas como Well, let me see e implica a tu compañero."
+     ],
+     "q": "Si un examinador te preguntara What do you enjoy about learning English?, ¿qué dirías?",
+     "c": "Responde en voz alta en un minuto: Is it better to learn English with apps or with a teacher? Da razones y ejemplos."
+    },
+    "fr": {
+     "t": "Examen blanc B2 : compréhension et expression orales",
+     "g": "Entraîne-toi à l'écoute type examen et donne une réponse orale structurée.",
+     "p": [
+      "Écoute : lis les questions, anticipe les réponses, repère les mots clés, méfie-toi des distracteurs et autocorrections.",
+      "Oral : réponds, justifie, donne un exemple, puis développe : I'd say..., mainly because... For instance...",
+      "Reste naturel : reformule les mots qui manquent, utilise Well, let me see et implique ton partenaire."
+     ],
+     "q": "Si un examinateur te demandait What do you enjoy about learning English?, que répondrais-tu ?",
+     "c": "Réponds à voix haute en une minute : Is it better to learn English with apps or with a teacher? Raisons et exemples."
+    },
+    "it": {
+     "t": "Simulazione B2: ascolto e parlato",
+     "g": "Esercitati con l'ascolto in stile esame e dai una risposta orale strutturata.",
+     "p": [
+      "Ascolto: leggi le domande, prevedi le risposte, cogli le parole chiave, attento a distrattori e autocorrezioni.",
+      "Parlato: rispondi, motiva, fai un esempio e approfondisci: I'd say..., mainly because... For instance...",
+      "Resta naturale: parafrasa le parole che mancano, usa riempitivi come Well, let me see e coinvolgi il partner."
+     ],
+     "q": "Se un esaminatore ti chiedesse What do you enjoy about learning English?, cosa risponderesti?",
+     "c": "Rispondi ad alta voce in un minuto: Is it better to learn English with apps or with a teacher? Con motivi ed esempi."
+    },
+    "pt": {
+     "t": "Simulação B2: compreensão e expressão oral",
+     "g": "Pratica a compreensão oral ao estilo de exame e dá uma resposta oral estruturada.",
+     "p": [
+      "Ouvir: lê as perguntas, antecipa respostas, apanha palavras-chave e cuidado com distratores e autocorreções.",
+      "Falar: responde, justifica, dá um exemplo e desenvolve: I'd say..., mainly because... For instance...",
+      "Soa natural: parafraseia palavras que faltem, usa expressões como Well, let me see e envolve o teu par."
+     ],
+     "q": "Se um examinador te perguntasse What do you enjoy about learning English?, o que dirias?",
+     "c": "Responde em voz alta num minuto: Is it better to learn English with apps or with a teacher? Dá razões e exemplos."
+    },
+    "pt_BR": {
+     "t": "Simulado B2: compreensão e expressão oral",
+     "g": "Pratique o listening no estilo de prova e dê uma resposta oral estruturada.",
+     "p": [
+      "Ouvir: leia as perguntas, antecipe respostas, pegue palavras-chave e cuidado com distratores e autocorreções.",
+      "Falar: responda, justifique, dê um exemplo e desenvolva: I'd say..., mainly because... For instance...",
+      "Soe natural: parafraseie palavras que faltarem, use expressões como Well, let me see e envolva seu parceiro."
+     ],
+     "q": "Se um examinador te perguntasse What do you enjoy about learning English?, o que você diria?",
+     "c": "Responda em voz alta em um minuto: Is it better to learn English with apps or with a teacher? Dê motivos e exemplos."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "mainly because",
+      "ex": "I prefer teachers, mainly because they correct me."
+     },
+     {
+      "w": "for instance",
+      "ex": "Apps are fun. For instance, I use one every morning."
+     },
+     {
+      "w": "let me see",
+      "ex": "Well, let me see... I'd choose the second option."
+     },
+     {
+      "w": "on the other hand",
+      "ex": "On the other hand, apps are available anytime."
+     },
+     {
+      "w": "I'd go for",
+      "ex": "If I had to choose, I'd go for a teacher."
+     },
+     {
+      "w": "it depends on",
+      "ex": "It depends on your goals and your free time."
+     }
+    ],
+    "gram": "Oral answers: answer + reason (mainly because) + example (for instance) + balance (on the other hand); I'd + verb for choices."
+   }
+  },
+  {
+   "d": 362,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Your English journey",
+     "g": "Reflect on your progress, favourite words and next goals in English.",
+     "p": [
+      "Look back with present perfect: I've learned... I've become more confident. I can now... whereas before I couldn't...",
+      "Name favourites: My favourite word is... The idiom I use most is... The topic I enjoyed most was...",
+      "Look ahead: Next, I'd like to... My goal is to... by... I'm going to keep practising by..."
+     ],
+     "q": "What are you proudest of in your English this year, and what is one thing you can do now that you couldn't before?",
+     "c": "Write a short letter to your future self: three things you've achieved and three goals for next year."
+    },
+    "de": {
+     "t": "Deine Englisch-Reise",
+     "g": "Du blickst auf deine Fortschritte, Lieblingswörter und nächsten Ziele auf Englisch.",
+     "p": [
+      "Rückblick mit present perfect: I've learned... I've become more confident. I can now... whereas before I couldn't...",
+      "Lieblinge nennen: My favourite word is... The idiom I use most is... The topic I enjoyed most was...",
+      "Ausblick: Next, I'd like to... My goal is to... by... I'm going to keep practising by..."
+     ],
+     "q": "Worauf bist du bei deinem Englisch dieses Jahr am stolzesten, und was kannst du jetzt, was du vorher nicht konntest?",
+     "c": "Schreib einen kurzen Brief an dein zukünftiges Ich: drei Erfolge und drei Ziele fürs nächste Jahr."
+    },
+    "es": {
+     "t": "Tu viaje con el inglés",
+     "g": "Reflexiona sobre tu progreso, tus palabras favoritas y tus próximas metas en inglés.",
+     "p": [
+      "Mira atrás con present perfect: I've learned... I've become more confident. I can now... whereas before I couldn't...",
+      "Di tus favoritos: My favourite word is... The idiom I use most is... The topic I enjoyed most was...",
+      "Mira adelante: Next, I'd like to... My goal is to... by... I'm going to keep practising by..."
+     ],
+     "q": "¿De qué estás más orgulloso en tu inglés este año y qué puedes hacer ahora que antes no podías?",
+     "c": "Escribe una carta breve a tu yo del futuro: tres logros y tres metas para el año que viene."
+    },
+    "fr": {
+     "t": "Ton parcours en anglais",
+     "g": "Fais le point sur tes progrès, tes mots préférés et tes prochains objectifs en anglais.",
+     "p": [
+      "Regarde en arrière avec le present perfect : I've learned... I've become more confident. I can now... whereas before I couldn't...",
+      "Cite tes préférés : My favourite word is... The idiom I use most is... The topic I enjoyed most was...",
+      "Regarde devant : Next, I'd like to... My goal is to... by... I'm going to keep practising by..."
+     ],
+     "q": "De quoi es-tu le plus fier dans ton anglais cette année, et que sais-tu faire maintenant que tu ne savais pas faire avant ?",
+     "c": "Écris une courte lettre à ton futur toi : trois réussites et trois objectifs pour l'an prochain."
+    },
+    "it": {
+     "t": "Il tuo viaggio con l'inglese",
+     "g": "Rifletti sui tuoi progressi, sulle parole preferite e sui prossimi obiettivi in inglese.",
+     "p": [
+      "Guarda indietro con il present perfect: I've learned... I've become more confident. I can now... whereas before I couldn't...",
+      "Indica i preferiti: My favourite word is... The idiom I use most is... The topic I enjoyed most was...",
+      "Guarda avanti: Next, I'd like to... My goal is to... by... I'm going to keep practising by..."
+     ],
+     "q": "Di cosa sei più orgoglioso del tuo inglese quest'anno, e cosa sai fare ora che prima non sapevi fare?",
+     "c": "Scrivi una breve lettera al te stesso del futuro: tre traguardi raggiunti e tre obiettivi per l'anno prossimo."
+    },
+    "pt": {
+     "t": "A tua viagem com o inglês",
+     "g": "Reflete sobre o teu progresso, as palavras preferidas e os próximos objetivos em inglês.",
+     "p": [
+      "Olha para trás com o present perfect: I've learned... I've become more confident. I can now... whereas before I couldn't...",
+      "Diz os teus preferidos: My favourite word is... The idiom I use most is... The topic I enjoyed most was...",
+      "Olha em frente: Next, I'd like to... My goal is to... by... I'm going to keep practising by..."
+     ],
+     "q": "De que te orgulhas mais no teu inglês este ano, e o que consegues fazer agora que antes não conseguias?",
+     "c": "Escreve uma carta curta ao teu eu do futuro: três conquistas e três objetivos para o próximo ano."
+    },
+    "pt_BR": {
+     "t": "Sua jornada com o inglês",
+     "g": "Reflita sobre seu progresso, suas palavras favoritas e suas próximas metas em inglês.",
+     "p": [
+      "Olhe para trás com o present perfect: I've learned... I've become more confident. I can now... whereas before I couldn't...",
+      "Diga seus favoritos: My favourite word is... The idiom I use most is... The topic I enjoyed most was...",
+      "Olhe para frente: Next, I'd like to... My goal is to... by... I'm going to keep practising by..."
+     ],
+     "q": "Do que você mais se orgulha no seu inglês este ano, e o que consegue fazer agora que antes não conseguia?",
+     "c": "Escreva uma carta curta para o seu eu do futuro: três conquistas e três metas para o próximo ano."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "I've learned",
+      "ex": "I've learned so many useful phrases this year."
+     },
+     {
+      "w": "I've become",
+      "ex": "I've become much more confident when I speak."
+     },
+     {
+      "w": "whereas before",
+      "ex": "I can watch films in English, whereas before I couldn't."
+     },
+     {
+      "w": "my goal is to",
+      "ex": "My goal is to read a novel in English."
+     },
+     {
+      "w": "keep practising",
+      "ex": "I'm going to keep practising every day."
+     },
+     {
+      "w": "look back on",
+      "ex": "When I look back on this year, I feel proud."
+     }
+    ],
+    "gram": "Reflection: present perfect for progress (I've learned), can now vs couldn't before for change, going to and my goal is to for plans."
+   }
+  },
+  {
+   "d": 363,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Proverbs in English",
+     "g": "Understand and use proverbs like The early bird catches the worm and Actions speak louder than words.",
+     "p": [
+      "The early bird catches the worm = people who start early succeed. Actions speak louder than words = what you do matters more.",
+      "Practice makes perfect. Don't judge a book by its cover. Better late than never. Two heads are better than one.",
+      "Use them lightly to support a point: Well, as they say, practice makes perfect! Don't overuse them in one conversation."
+     ],
+     "q": "Which English proverb do you like most? Is there a similar proverb in your language?",
+     "c": "Choose three proverbs from today and tell a short real example from your life for each."
+    },
+    "de": {
+     "t": "Sprichwörter auf Englisch",
+     "g": "Du verstehst und nutzt Sprichwörter wie The early bird catches the worm und Actions speak louder than words.",
+     "p": [
+      "The early bird catches the worm = Morgenstund hat Gold im Mund. Actions speak louder than words = Taten zählen mehr als Worte.",
+      "Practice makes perfect. Don't judge a book by its cover. Better late than never. Two heads are better than one.",
+      "Sparsam einsetzen, um etwas zu unterstreichen: Well, as they say, practice makes perfect! Nicht zu viele auf einmal."
+     ],
+     "q": "Welches englische Sprichwort gefällt dir am besten? Gibt es ein ähnliches im Deutschen?",
+     "c": "Wähle drei Sprichwörter von heute und erzähle zu jedem ein kurzes Beispiel aus deinem Leben."
+    },
+    "es": {
+     "t": "Refranes en inglés",
+     "g": "Entiende y usa refranes como The early bird catches the worm y Actions speak louder than words.",
+     "p": [
+      "The early bird catches the worm = a quien madruga, Dios le ayuda. Actions speak louder than words = obras son amores.",
+      "Practice makes perfect. Don't judge a book by its cover. Better late than never. Two heads are better than one.",
+      "Úsalos con moderación para apoyar una idea: Well, as they say, practice makes perfect! No abuses en una charla."
+     ],
+     "q": "¿Qué refrán inglés te gusta más? ¿Hay uno parecido en español?",
+     "c": "Elige tres refranes de hoy y cuenta un ejemplo real y breve de tu vida para cada uno."
+    },
+    "fr": {
+     "t": "Proverbes en anglais",
+     "g": "Comprends et utilise des proverbes comme The early bird catches the worm et Actions speak louder than words.",
+     "p": [
+      "The early bird catches the worm = l'avenir appartient à ceux qui se lèvent tôt. Actions speak louder than words = les actes comptent.",
+      "Practice makes perfect. Don't judge a book by its cover. Better late than never. Two heads are better than one.",
+      "Utilise-les avec légèreté pour appuyer une idée : Well, as they say, practice makes perfect! Sans en abuser."
+     ],
+     "q": "Quel proverbe anglais préfères-tu ? Existe-t-il un proverbe semblable en français ?",
+     "c": "Choisis trois proverbes du jour et raconte pour chacun un court exemple réel de ta vie."
+    },
+    "it": {
+     "t": "Proverbi in inglese",
+     "g": "Capisci e usa proverbi come The early bird catches the worm e Actions speak louder than words.",
+     "p": [
+      "The early bird catches the worm = il mattino ha l'oro in bocca. Actions speak louder than words = contano i fatti, non le parole.",
+      "Practice makes perfect. Don't judge a book by its cover. Better late than never. Two heads are better than one.",
+      "Usali con leggerezza per sostenere un'idea: Well, as they say, practice makes perfect! Senza esagerare."
+     ],
+     "q": "Quale proverbio inglese ti piace di più? Ne esiste uno simile in italiano?",
+     "c": "Scegli tre proverbi di oggi e racconta per ciascuno un breve esempio reale della tua vita."
+    },
+    "pt": {
+     "t": "Provérbios em inglês",
+     "g": "Percebe e usa provérbios como The early bird catches the worm e Actions speak louder than words.",
+     "p": [
+      "The early bird catches the worm = Deus ajuda quem cedo madruga. Actions speak louder than words = os atos valem mais que as palavras.",
+      "Practice makes perfect. Don't judge a book by its cover. Better late than never. Two heads are better than one.",
+      "Usa-os com leveza para apoiar uma ideia: Well, as they say, practice makes perfect! Sem exagerar."
+     ],
+     "q": "Que provérbio inglês preferes? Há algum parecido em português?",
+     "c": "Escolhe três provérbios de hoje e conta para cada um um exemplo real e curto da tua vida."
+    },
+    "pt_BR": {
+     "t": "Provérbios em inglês",
+     "g": "Entenda e use provérbios como The early bird catches the worm e Actions speak louder than words.",
+     "p": [
+      "The early bird catches the worm = Deus ajuda quem cedo madruga. Actions speak louder than words = atitudes valem mais que palavras.",
+      "Practice makes perfect. Don't judge a book by its cover. Better late than never. Two heads are better than one.",
+      "Use com leveza para apoiar uma ideia: Well, as they say, practice makes perfect! Sem exagerar."
+     ],
+     "q": "Qual provérbio inglês você mais curte? Existe algum parecido em português?",
+     "c": "Escolha três provérbios de hoje e conte para cada um um exemplo real e curto da sua vida."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "the early bird catches the worm",
+      "ex": "I left at six. The early bird catches the worm!"
+     },
+     {
+      "w": "actions speak louder than words",
+      "ex": "He promised to help, but actions speak louder than words."
+     },
+     {
+      "w": "practice makes perfect",
+      "ex": "Keep going, practice makes perfect."
+     },
+     {
+      "w": "don't judge a book by its cover",
+      "ex": "The café looks old, but don't judge a book by its cover."
+     },
+     {
+      "w": "better late than never",
+      "ex": "You finally called! Better late than never."
+     },
+     {
+      "w": "two heads are better than one",
+      "ex": "Let's solve it together. Two heads are better than one."
+     }
+    ],
+    "gram": "Proverbs are fixed sentences in the present simple; introduce them with As they say... to sound natural."
+   }
+  },
+  {
+   "d": 364,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Fluency sprint: three minutes",
+     "g": "Speak on a familiar topic for three minutes using B2 connectors.",
+     "p": [
+      "Choose a topic you know well: your city, your job, a hobby, a trip. Note three points and one story.",
+      "Use B2 connectors: Not only... but also... Having said that... As a result... What's more... On the whole...",
+      "Fluency beats perfection: keep going, paraphrase, and use fillers. Record yourself and listen for your strengths."
+     ],
+     "q": "Which topic would you choose for a three-minute talk, and what story would you include?",
+     "c": "Record a three-minute talk on your chosen topic using at least five B2 connectors, then note two things you did well."
+    },
+    "de": {
+     "t": "Fluency-Sprint: drei Minuten",
+     "g": "Du sprichst drei Minuten über ein vertrautes Thema mit B2-Konnektoren.",
+     "p": [
+      "Wähle ein Thema, das du gut kennst: deine Stadt, dein Job, ein Hobby, eine Reise. Notiere drei Punkte und eine Geschichte.",
+      "Nutze B2-Konnektoren: Not only... but also... Having said that... As a result... What's more... On the whole...",
+      "Flüssigkeit vor Perfektion: weitersprechen, umschreiben, Füllwörter nutzen. Nimm dich auf und hör auf deine Stärken."
+     ],
+     "q": "Welches Thema würdest du für drei Minuten wählen, und welche Geschichte würdest du erzählen?",
+     "c": "Nimm einen Drei-Minuten-Beitrag mit mindestens fünf B2-Konnektoren auf und notiere zwei Dinge, die gut liefen."
+    },
+    "es": {
+     "t": "Sprint de fluidez: tres minutos",
+     "g": "Habla tres minutos sobre un tema conocido usando conectores B2.",
+     "p": [
+      "Elige un tema que conozcas bien: tu ciudad, tu trabajo, una afición, un viaje. Anota tres ideas y una anécdota.",
+      "Usa conectores B2: Not only... but also... Having said that... As a result... What's more... On the whole...",
+      "La fluidez gana a la perfección: sigue, parafrasea y usa muletillas. Grábate y escucha tus puntos fuertes."
+     ],
+     "q": "¿Qué tema elegirías para una charla de tres minutos y qué anécdota incluirías?",
+     "c": "Graba una charla de tres minutos sobre tu tema con al menos cinco conectores B2 y anota dos cosas que hiciste bien."
+    },
+    "fr": {
+     "t": "Sprint d'aisance : trois minutes",
+     "g": "Parle trois minutes d'un sujet familier avec des connecteurs de niveau B2.",
+     "p": [
+      "Choisis un sujet que tu connais bien : ta ville, ton travail, un loisir, un voyage. Note trois idées et une anecdote.",
+      "Utilise des connecteurs B2 : Not only... but also... Having said that... As a result... What's more... On the whole...",
+      "L'aisance avant la perfection : continue, reformule, utilise des mots de remplissage. Enregistre-toi et repère tes points forts."
+     ],
+     "q": "Quel sujet choisirais-tu pour un exposé de trois minutes, et quelle anecdote raconterais-tu ?",
+     "c": "Enregistre un exposé de trois minutes avec au moins cinq connecteurs B2, puis note deux choses réussies."
+    },
+    "it": {
+     "t": "Sprint di scioltezza: tre minuti",
+     "g": "Parla per tre minuti di un argomento familiare usando connettivi B2.",
+     "p": [
+      "Scegli un tema che conosci bene: la tua città, il lavoro, un hobby, un viaggio. Annota tre punti e un aneddoto.",
+      "Usa connettivi B2: Not only... but also... Having said that... As a result... What's more... On the whole...",
+      "La scioltezza batte la perfezione: continua, parafrasa e usa riempitivi. Registrati e ascolta i tuoi punti di forza."
+     ],
+     "q": "Quale argomento sceglieresti per un discorso di tre minuti, e quale aneddoto racconteresti?",
+     "c": "Registra un discorso di tre minuti con almeno cinque connettivi B2, poi annota due cose che hai fatto bene."
+    },
+    "pt": {
+     "t": "Sprint de fluência: três minutos",
+     "g": "Fala três minutos sobre um tema conhecido com conectores B2.",
+     "p": [
+      "Escolhe um tema que conheças bem: a tua cidade, o trabalho, um passatempo, uma viagem. Anota três pontos e uma história.",
+      "Usa conectores B2: Not only... but also... Having said that... As a result... What's more... On the whole...",
+      "A fluência vale mais do que a perfeição: continua, parafraseia e usa expressões de apoio. Grava-te e ouve os teus pontos fortes."
+     ],
+     "q": "Que tema escolherias para uma intervenção de três minutos, e que história incluirias?",
+     "c": "Grava uma intervenção de três minutos com pelo menos cinco conectores B2 e anota duas coisas que fizeste bem."
+    },
+    "pt_BR": {
+     "t": "Sprint de fluência: três minutos",
+     "g": "Fale três minutos sobre um tema conhecido usando conectores B2.",
+     "p": [
+      "Escolha um tema que você conhece bem: sua cidade, seu trabalho, um hobby, uma viagem. Anote três pontos e uma história.",
+      "Use conectores B2: Not only... but also... Having said that... As a result... What's more... On the whole...",
+      "Fluência vale mais que perfeição: continue, parafraseie e use expressões de apoio. Grave-se e ouça seus pontos fortes."
+     ],
+     "q": "Que tema você escolheria para uma fala de três minutos, e que história incluiria?",
+     "c": "Grave uma fala de três minutos com pelo menos cinco conectores B2 e anote duas coisas que você fez bem."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "not only... but also",
+      "ex": "Not only is it beautiful, but it's also cheap."
+     },
+     {
+      "w": "having said that",
+      "ex": "It's busy. Having said that, I love it."
+     },
+     {
+      "w": "as a result",
+      "ex": "I practised daily. As a result, I feel fluent."
+     },
+     {
+      "w": "what's more",
+      "ex": "What's more, the people are so welcoming."
+     },
+     {
+      "w": "on the whole",
+      "ex": "On the whole, it's a great place to live."
+     },
+     {
+      "w": "to cut a long story short",
+      "ex": "To cut a long story short, we missed the train."
+     }
+    ],
+    "gram": "Connectors: Not only + inversion (Not only is it...), but also; contrast (having said that), result (as a result), summary (on the whole)."
+   }
+  },
+  {
+   "d": 365,
+   "lv": "B2",
+   "i18n": {
+    "en": {
+     "t": "Review: B2 complete, well done!",
+     "g": "Celebrate a full year of English and plan what comes next after B2.",
+     "p": [
+      "You did it: 365 days! From Hello at A1 to debating, presenting and writing essays at B2. Be proud of every step.",
+      "B2 essentials: conditionals, hedging, register, phrasal verbs, idioms, connectors, and clear argument and storytelling.",
+      "Next steps: read books, watch series without subtitles, join conversations, and aim for C1. Keep English in your daily life."
+     ],
+     "q": "Looking back on this whole year, what was your favourite moment, and where will your English take you next?",
+     "c": "Celebrate: tell your Buddy three things you can do now in English and one exciting goal for your next chapter."
+    },
+    "de": {
+     "t": "Review: B2 geschafft, gut gemacht!",
+     "g": "Du feierst ein ganzes Jahr Englisch und planst, was nach B2 kommt.",
+     "p": [
+      "Geschafft: 365 Tage! Vom Hello auf A1 bis zum Debattieren, Präsentieren und Essay-Schreiben auf B2. Sei stolz auf jeden Schritt.",
+      "B2-Grundlagen: Bedingungssätze, Hedging, Register, Phrasal Verbs, Idiome, Konnektoren, klares Argumentieren und Erzählen.",
+      "Nächste Schritte: Bücher lesen, Serien ohne Untertitel schauen, Gespräche suchen und C1 anpeilen. Halte Englisch im Alltag."
+     ],
+     "q": "Wenn du auf dieses Jahr zurückblickst: Was war dein schönster Moment, und wohin bringt dich dein Englisch als Nächstes?",
+     "c": "Feiere: Nenne deinem Buddy drei Dinge, die du jetzt auf Englisch kannst, und ein spannendes Ziel für dein nächstes Kapitel."
+    },
+    "es": {
+     "t": "Repaso: ¡B2 completado, enhorabuena!",
+     "g": "Celebra un año entero de inglés y planifica lo que viene después del B2.",
+     "p": [
+      "¡Lo lograste: 365 días! Del Hello del A1 a debatir, presentar y escribir ensayos en B2. Siéntete orgulloso de cada paso.",
+      "Lo esencial del B2: condicionales, hedging, registro, phrasal verbs, modismos, conectores y argumentar y narrar con claridad.",
+      "Próximos pasos: lee libros, mira series sin subtítulos, únete a conversaciones y apunta al C1. Mantén el inglés en tu día a día."
+     ],
+     "q": "Mirando atrás todo este año, ¿cuál fue tu momento favorito y adónde te llevará tu inglés ahora?",
+     "c": "Celébralo: dile a tu Buddy tres cosas que ya puedes hacer en inglés y una meta ilusionante para tu próximo capítulo."
+    },
+    "fr": {
+     "t": "Révision : B2 terminé, bravo !",
+     "g": "Fête une année entière d'anglais et prépare la suite après le B2.",
+     "p": [
+      "Tu l'as fait : 365 jours ! Du Hello du A1 aux débats, présentations et rédactions du B2. Sois fier de chaque étape.",
+      "L'essentiel du B2 : conditionnelles, hedging, registre, phrasal verbs, expressions, connecteurs, argumenter et raconter clairement.",
+      "Et ensuite : lis des livres, regarde des séries sans sous-titres, participe à des conversations et vise le C1. Garde l'anglais au quotidien."
+     ],
+     "q": "En repensant à toute cette année, quel a été ton moment préféré, et où ton anglais va-t-il t'emmener maintenant ?",
+     "c": "Fête ça : dis à ton Buddy trois choses que tu sais faire en anglais et un objectif motivant pour ton prochain chapitre."
+    },
+    "it": {
+     "t": "Ripasso: B2 completato, bravissimo!",
+     "g": "Festeggia un anno intero di inglese e pianifica cosa viene dopo il B2.",
+     "p": [
+      "Ce l'hai fatta: 365 giorni! Dall'Hello dell'A1 a dibattere, presentare e scrivere saggi al B2. Sii fiero di ogni passo.",
+      "L'essenziale del B2: periodi ipotetici, hedging, registro, phrasal verbs, modi di dire, connettivi, argomentare e raccontare bene.",
+      "Prossimi passi: leggi libri, guarda serie senza sottotitoli, partecipa a conversazioni e punta al C1. Tieni l'inglese nella tua vita."
+     ],
+     "q": "Ripensando a tutto quest'anno, qual è stato il tuo momento preferito, e dove ti porterà ora il tuo inglese?",
+     "c": "Festeggia: di' al tuo Buddy tre cose che ora sai fare in inglese e un obiettivo entusiasmante per il tuo prossimo capitolo."
+    },
+    "pt": {
+     "t": "Revisão: B2 concluído, parabéns!",
+     "g": "Celebra um ano inteiro de inglês e planeia o que vem depois do B2.",
+     "p": [
+      "Conseguiste: 365 dias! Do Hello do A1 a debater, apresentar e escrever ensaios no B2. Orgulha-te de cada passo.",
+      "O essencial do B2: condicionais, hedging, registo, phrasal verbs, expressões, conectores, argumentar e contar histórias com clareza.",
+      "Próximos passos: lê livros, vê séries sem legendas, entra em conversas e aponta ao C1. Mantém o inglês no teu dia a dia."
+     ],
+     "q": "Olhando para todo este ano, qual foi o teu momento preferido, e para onde te vai levar o teu inglês agora?",
+     "c": "Celebra: diz ao teu Buddy três coisas que já consegues fazer em inglês e um objetivo entusiasmante para o próximo capítulo."
+    },
+    "pt_BR": {
+     "t": "Revisão: B2 concluído, parabéns!",
+     "g": "Comemore um ano inteiro de inglês e planeje o que vem depois do B2.",
+     "p": [
+      "Você conseguiu: 365 dias! Do Hello no A1 a debater, apresentar e escrever redações no B2. Se orgulhe de cada passo.",
+      "O essencial do B2: condicionais, hedging, registro, phrasal verbs, expressões, conectores, argumentar e contar histórias com clareza.",
+      "Próximos passos: leia livros, assista a séries sem legenda, participe de conversas e mire no C1. Mantenha o inglês no seu dia a dia."
+     ],
+     "q": "Olhando para todo este ano, qual foi seu momento favorito, e para onde seu inglês vai te levar agora?",
+     "c": "Comemore: conte ao seu Buddy três coisas que você já consegue fazer em inglês e uma meta empolgante para o próximo capítulo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "well done",
+      "ex": "Well done! You've completed a whole year."
+     },
+     {
+      "w": "I'm proud of",
+      "ex": "I'm proud of how much my English has improved."
+     },
+     {
+      "w": "milestone",
+      "ex": "Finishing B2 is a big milestone."
+     },
+     {
+      "w": "next chapter",
+      "ex": "I'm excited about the next chapter of my learning."
+     },
+     {
+      "w": "keep it up",
+      "ex": "You're doing brilliantly. Keep it up!"
+     },
+     {
+      "w": "aim for",
+      "ex": "Next year, I'll aim for C1."
+     }
+    ],
+    "gram": "B2 recap: conditionals, hedging, register, phrasal verbs, idioms, connectors, narrative tenses. Celebrate and set goals with I'll aim for."
+   }
+  }
+ ]
+}

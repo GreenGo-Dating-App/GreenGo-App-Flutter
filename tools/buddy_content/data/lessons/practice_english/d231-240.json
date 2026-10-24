@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_english",
+ "lessons": [
+  {
+   "d": 231,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Online safety basics",
+     "g": "Learn the words you need to talk about staying safe online.",
+     "p": [
+      "Accounts: a strong password, two-step login, log in, log out, update your apps, back up your files.",
+      "Dangers: a scam, a fake message, a suspicious link, a hacker. Never share your password with anyone.",
+      "Privacy: check your privacy settings, think before you post, only accept people you know."
+     ],
+     "q": "What do you do to keep your accounts safe, and have you ever received a strange message that looked like a scam?",
+     "c": "Write five safety tips for a friend using imperatives and should: Use a strong password. You shouldn't click..."
+    },
+    "de": {
+     "t": "Online safety basics",
+     "g": "Du lernst die Wörter, um über Sicherheit im Internet zu sprechen.",
+     "p": [
+      "Konten: a strong password, two-step login, log in, log out, update your apps, back up your files.",
+      "Gefahren: a scam, a fake message, a suspicious link, a hacker. Never share your password with anyone.",
+      "Privatsphäre: check your privacy settings, think before you post, only accept people you know."
+     ],
+     "q": "Was tust du, um deine Konten zu schützen, und hast du schon mal eine seltsame Nachricht bekommen, die nach Betrug aussah?",
+     "c": "Schreib fünf Sicherheitstipps für einen Freund mit Imperativ und should: Use a strong password. You shouldn't click..."
+    },
+    "es": {
+     "t": "Online safety basics",
+     "g": "Aprende las palabras para hablar de seguridad en internet.",
+     "p": [
+      "Cuentas: a strong password, two-step login, log in, log out, update your apps, back up your files.",
+      "Peligros: a scam, a fake message, a suspicious link, a hacker. Never share your password with anyone.",
+      "Privacidad: check your privacy settings, think before you post, only accept people you know."
+     ],
+     "q": "¿Qué haces para proteger tus cuentas, y has recibido alguna vez un mensaje raro que parecía una estafa?",
+     "c": "Escribe cinco consejos de seguridad para un amigo con imperativos y should: Use a strong password. You shouldn't click..."
+    },
+    "fr": {
+     "t": "Online safety basics",
+     "g": "Apprends les mots pour parler de sécurité en ligne.",
+     "p": [
+      "Comptes : a strong password, two-step login, log in, log out, update your apps, back up your files.",
+      "Dangers : a scam, a fake message, a suspicious link, a hacker. Never share your password with anyone.",
+      "Vie privée : check your privacy settings, think before you post, only accept people you know."
+     ],
+     "q": "Que fais-tu pour protéger tes comptes, et as-tu déjà reçu un message bizarre qui ressemblait à une arnaque ?",
+     "c": "Écris cinq conseils de sécurité pour un ami avec l'impératif et should : Use a strong password. You shouldn't click..."
+    },
+    "it": {
+     "t": "Online safety basics",
+     "g": "Impara le parole per parlare di sicurezza online.",
+     "p": [
+      "Account: a strong password, two-step login, log in, log out, update your apps, back up your files.",
+      "Pericoli: a scam, a fake message, a suspicious link, a hacker. Never share your password with anyone.",
+      "Privacy: check your privacy settings, think before you post, only accept people you know."
+     ],
+     "q": "Cosa fai per proteggere i tuoi account, e hai mai ricevuto un messaggio strano che sembrava una truffa?",
+     "c": "Scrivi cinque consigli di sicurezza per un amico con l'imperativo e should: Use a strong password. You shouldn't click..."
+    },
+    "pt": {
+     "t": "Online safety basics",
+     "g": "Aprende as palavras para falar de segurança na internet.",
+     "p": [
+      "Contas: a strong password, two-step login, log in, log out, update your apps, back up your files.",
+      "Perigos: a scam, a fake message, a suspicious link, a hacker. Never share your password with anyone.",
+      "Privacidade: check your privacy settings, think before you post, only accept people you know."
+     ],
+     "q": "O que fazes para proteger as tuas contas, e já recebeste uma mensagem estranha que parecia uma burla?",
+     "c": "Escreve cinco dicas de segurança para um amigo com imperativos e should: Use a strong password. You shouldn't click..."
+    },
+    "pt_BR": {
+     "t": "Online safety basics",
+     "g": "Aprenda as palavras para falar de segurança na internet.",
+     "p": [
+      "Contas: a strong password, two-step login, log in, log out, update your apps, back up your files.",
+      "Perigos: a scam, a fake message, a suspicious link, a hacker. Never share your password with anyone.",
+      "Privacidade: check your privacy settings, think before you post, only accept people you know."
+     ],
+     "q": "O que você faz para proteger suas contas, e já recebeu uma mensagem estranha que parecia golpe?",
+     "c": "Escreva cinco dicas de segurança para um amigo com imperativos e should: Use a strong password. You shouldn't click..."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "strong password",
+      "ex": "Use a strong password with numbers and symbols."
+     },
+     {
+      "w": "scam",
+      "ex": "That message about a prize was a scam."
+     },
+     {
+      "w": "privacy settings",
+      "ex": "Check your privacy settings once a month."
+     },
+     {
+      "w": "two-step login",
+      "ex": "Two-step login makes your account much safer."
+     },
+     {
+      "w": "suspicious link",
+      "ex": "Don't click on suspicious links."
+     },
+     {
+      "w": "back up",
+      "ex": "I back up my photos every week."
+     }
+    ],
+    "gram": "Safety advice: imperatives (Use..., Don't click...), should/shouldn't + verb, and always/never for strong rules."
+   }
+  },
+  {
+   "d": 232,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Gadgets you can't live without",
+     "g": "Describe the devices you use every day, what they do and why you love them.",
+     "p": [
+      "Gadgets: smartphone, laptop, tablet, smartwatch, earbuds, e-reader, power bank, smart speaker.",
+      "What it does: It lets me... It's used for... It helps me to... I use it to listen to podcasts.",
+      "Why you love it: It's light and easy to carry. I couldn't live without it. It's made my life so much easier."
+     ],
+     "q": "Which gadget could you not live without, and what do you use it for every day?",
+     "c": "Describe your favourite gadget in five sentences: what it is, how long you've had it, what it does and why you love it."
+    },
+    "de": {
+     "t": "Gadgets you can't live without",
+     "g": "Du beschreibst Geräte, die du täglich nutzt, was sie können und warum du sie liebst.",
+     "p": [
+      "Geräte: smartphone, laptop, tablet, smartwatch, earbuds, e-reader, power bank, smart speaker.",
+      "Was es macht: It lets me... It's used for... It helps me to... I use it to listen to podcasts.",
+      "Warum du es liebst: It's light and easy to carry. I couldn't live without it. It's made my life so much easier."
+     ],
+     "q": "Ohne welches Gerät könntest du nicht leben, und wofür benutzt du es jeden Tag?",
+     "c": "Beschreib dein Lieblingsgerät in fünf Sätzen: was es ist, seit wann du es hast, was es kann und warum du es liebst."
+    },
+    "es": {
+     "t": "Gadgets you can't live without",
+     "g": "Describe los aparatos que usas a diario, qué hacen y por qué te encantan.",
+     "p": [
+      "Aparatos: smartphone, laptop, tablet, smartwatch, earbuds, e-reader, power bank, smart speaker.",
+      "Qué hace: It lets me... It's used for... It helps me to... I use it to listen to podcasts.",
+      "Por qué te encanta: It's light and easy to carry. I couldn't live without it. It's made my life so much easier."
+     ],
+     "q": "¿Sin qué aparato no podrías vivir, y para qué lo usas cada día?",
+     "c": "Describe tu aparato favorito en cinco frases: qué es, desde cuándo lo tienes, qué hace y por qué te encanta."
+    },
+    "fr": {
+     "t": "Gadgets you can't live without",
+     "g": "Décris les appareils que tu utilises chaque jour, à quoi ils servent et pourquoi tu les adores.",
+     "p": [
+      "Appareils : smartphone, laptop, tablet, smartwatch, earbuds, e-reader, power bank, smart speaker.",
+      "Ce qu'il fait : It lets me... It's used for... It helps me to... I use it to listen to podcasts.",
+      "Pourquoi tu l'aimes : It's light and easy to carry. I couldn't live without it. It's made my life so much easier."
+     ],
+     "q": "De quel appareil ne pourrais-tu pas te passer, et à quoi te sert-il chaque jour ?",
+     "c": "Décris ton appareil préféré en cinq phrases : ce que c'est, depuis quand tu l'as, ce qu'il fait et pourquoi tu l'aimes."
+    },
+    "it": {
+     "t": "Gadgets you can't live without",
+     "g": "Descrivi i dispositivi che usi ogni giorno, cosa fanno e perché li ami.",
+     "p": [
+      "Dispositivi: smartphone, laptop, tablet, smartwatch, earbuds, e-reader, power bank, smart speaker.",
+      "Cosa fa: It lets me... It's used for... It helps me to... I use it to listen to podcasts.",
+      "Perché lo ami: It's light and easy to carry. I couldn't live without it. It's made my life so much easier."
+     ],
+     "q": "Senza quale dispositivo non potresti vivere, e per cosa lo usi ogni giorno?",
+     "c": "Descrivi il tuo dispositivo preferito in cinque frasi: cos'è, da quanto ce l'hai, cosa fa e perché lo ami."
+    },
+    "pt": {
+     "t": "Gadgets you can't live without",
+     "g": "Descreve os aparelhos que usas todos os dias, o que fazem e porque gostas deles.",
+     "p": [
+      "Aparelhos: smartphone, laptop, tablet, smartwatch, earbuds, e-reader, power bank, smart speaker.",
+      "O que faz: It lets me... It's used for... It helps me to... I use it to listen to podcasts.",
+      "Porque gostas: It's light and easy to carry. I couldn't live without it. It's made my life so much easier."
+     ],
+     "q": "Sem que aparelho não conseguias viver, e para que o usas todos os dias?",
+     "c": "Descreve o teu aparelho favorito em cinco frases: o que é, há quanto tempo o tens, o que faz e porque gostas dele."
+    },
+    "pt_BR": {
+     "t": "Gadgets you can't live without",
+     "g": "Descreva os aparelhos que você usa todo dia, o que eles fazem e por que você os adora.",
+     "p": [
+      "Aparelhos: smartphone, laptop, tablet, smartwatch, earbuds, e-reader, power bank, smart speaker.",
+      "O que faz: It lets me... It's used for... It helps me to... I use it to listen to podcasts.",
+      "Por que você adora: It's light and easy to carry. I couldn't live without it. It's made my life so much easier."
+     ],
+     "q": "Sem qual aparelho você não conseguiria viver, e para que o usa todo dia?",
+     "c": "Descreva seu aparelho favorito em cinco frases: o que é, há quanto tempo você tem, o que faz e por que adora."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "gadget",
+      "ex": "This little gadget charges my phone anywhere."
+     },
+     {
+      "w": "earbuds",
+      "ex": "I always carry my earbuds for podcasts."
+     },
+     {
+      "w": "it lets me",
+      "ex": "My e-reader lets me carry hundreds of books."
+     },
+     {
+      "w": "I use it to",
+      "ex": "I use my tablet to watch films on the train."
+     },
+     {
+      "w": "I couldn't live without",
+      "ex": "I couldn't live without my laptop."
+     },
+     {
+      "w": "easy to carry",
+      "ex": "It's small and easy to carry."
+     }
+    ],
+    "gram": "Describing gadgets: It lets me + verb, It helps me (to) + verb, I use it to + verb, It's used for + -ing."
+   }
+  },
+  {
+   "d": 233,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Linking contrast: although, however",
+     "g": "Contrast ideas with although, even though, however, despite and in spite of.",
+     "p": [
+      "Although / even though + clause: Although it was raining, we went out. Even though is stronger.",
+      "However starts a new sentence, with a comma: The hotel was old. However, it was very clean.",
+      "Despite / in spite of + noun or -ing: Despite the rain, we went out. In spite of feeling tired, she kept going."
+     ],
+     "q": "Tell me about something you enjoyed although it was difficult, using although or despite.",
+     "c": "Write the same idea three ways: with although, with however and with despite. Do it for two different ideas."
+    },
+    "de": {
+     "t": "Linking contrast: although, however",
+     "g": "Du stellst Gegensätze mit although, even though, however, despite und in spite of dar.",
+     "p": [
+      "Although / even though + Satz: Although it was raining, we went out. Even though ist stärker.",
+      "However beginnt einen neuen Satz, mit Komma: The hotel was old. However, it was very clean.",
+      "Despite / in spite of + Nomen oder -ing: Despite the rain, we went out. In spite of feeling tired, she kept going."
+     ],
+     "q": "Erzähl mir von etwas, das dir Spaß gemacht hat, obwohl es schwierig war, mit although oder despite.",
+     "c": "Schreib dieselbe Idee auf drei Arten: mit although, mit however und mit despite. Mach das für zwei Ideen."
+    },
+    "es": {
+     "t": "Linking contrast: although, however",
+     "g": "Contrasta ideas con although, even though, however, despite e in spite of.",
+     "p": [
+      "Although / even though + oración: Although it was raining, we went out. Even though es más fuerte.",
+      "However empieza una frase nueva, con coma: The hotel was old. However, it was very clean.",
+      "Despite / in spite of + sustantivo o -ing: Despite the rain, we went out. In spite of feeling tired, she kept going."
+     ],
+     "q": "Háblame de algo que disfrutaste aunque fue difícil, usando although o despite.",
+     "c": "Escribe la misma idea de tres formas: con although, con however y con despite. Hazlo con dos ideas distintas."
+    },
+    "fr": {
+     "t": "Linking contrast: although, however",
+     "g": "Oppose des idées avec although, even though, however, despite et in spite of.",
+     "p": [
+      "Although / even though + proposition : Although it was raining, we went out. Even though est plus fort.",
+      "However commence une nouvelle phrase, avec une virgule : The hotel was old. However, it was very clean.",
+      "Despite / in spite of + nom ou -ing : Despite the rain, we went out. In spite of feeling tired, she kept going."
+     ],
+     "q": "Parle-moi d'une chose que tu as aimée bien qu'elle ait été difficile, avec although ou despite.",
+     "c": "Écris la même idée de trois façons : avec although, however et despite. Fais-le pour deux idées."
+    },
+    "it": {
+     "t": "Linking contrast: although, however",
+     "g": "Contrapponi idee con although, even though, however, despite e in spite of.",
+     "p": [
+      "Although / even though + frase: Although it was raining, we went out. Even though è più forte.",
+      "However inizia una nuova frase, con la virgola: The hotel was old. However, it was very clean.",
+      "Despite / in spite of + nome o -ing: Despite the rain, we went out. In spite of feeling tired, she kept going."
+     ],
+     "q": "Parlami di qualcosa che ti è piaciuto anche se era difficile, usando although o despite.",
+     "c": "Scrivi la stessa idea in tre modi: con although, con however e con despite. Fallo per due idee diverse."
+    },
+    "pt": {
+     "t": "Linking contrast: although, however",
+     "g": "Contrasta ideias com although, even though, however, despite e in spite of.",
+     "p": [
+      "Although / even though + oração: Although it was raining, we went out. Even though é mais forte.",
+      "However começa uma frase nova, com vírgula: The hotel was old. However, it was very clean.",
+      "Despite / in spite of + substantivo ou -ing: Despite the rain, we went out. In spite of feeling tired, she kept going."
+     ],
+     "q": "Fala-me de algo de que gostaste embora tenha sido difícil, usando although ou despite.",
+     "c": "Escreve a mesma ideia de três maneiras: com although, com however e com despite. Faz isso para duas ideias."
+    },
+    "pt_BR": {
+     "t": "Linking contrast: although, however",
+     "g": "Contraste ideias com although, even though, however, despite e in spite of.",
+     "p": [
+      "Although / even though + oração: Although it was raining, we went out. Even though é mais forte.",
+      "However começa uma frase nova, com vírgula: The hotel was old. However, it was very clean.",
+      "Despite / in spite of + substantivo ou -ing: Despite the rain, we went out. In spite of feeling tired, she kept going."
+     ],
+     "q": "Me fale de algo que você curtiu embora tenha sido difícil, usando although ou despite.",
+     "c": "Escreva a mesma ideia de três jeitos: com although, com however e com despite. Faça isso para duas ideias."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "although",
+      "ex": "Although it was cold, we had a picnic."
+     },
+     {
+      "w": "even though",
+      "ex": "She smiled even though she was nervous."
+     },
+     {
+      "w": "however",
+      "ex": "The film was long. However, I loved it."
+     },
+     {
+      "w": "despite",
+      "ex": "Despite the traffic, we arrived on time."
+     },
+     {
+      "w": "in spite of",
+      "ex": "In spite of the noise, the baby slept."
+     },
+     {
+      "w": "but still",
+      "ex": "It was expensive, but I still bought it."
+     }
+    ],
+    "gram": "Contrast: although/even though + clause; however at the start of a new sentence + comma; despite/in spite of + noun or -ing."
+   }
+  },
+  {
+   "d": 234,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Linking reason and result",
+     "g": "Explain causes and effects with because of, due to, so, therefore and as a result.",
+     "p": [
+      "Reason + clause: because, as, since. As it was late, we took a taxi.",
+      "Reason + noun: because of, due to. The flight was delayed due to fog. We stayed in because of the rain.",
+      "Result: so (informal), therefore, as a result (more formal). It was sunny, so we went to the beach."
+     ],
+     "q": "Why did you start learning English, and what has changed as a result?",
+     "c": "Write three cause-and-effect pairs about your life, each with a different linker: because of, so, as a result."
+    },
+    "de": {
+     "t": "Linking reason and result",
+     "g": "Du erklärst Ursachen und Folgen mit because of, due to, so, therefore und as a result.",
+     "p": [
+      "Grund + Satz: because, as, since. As it was late, we took a taxi.",
+      "Grund + Nomen: because of, due to. The flight was delayed due to fog. We stayed in because of the rain.",
+      "Folge: so (locker), therefore, as a result (formeller). It was sunny, so we went to the beach."
+     ],
+     "q": "Warum hast du angefangen, Englisch zu lernen, und was hat sich dadurch verändert?",
+     "c": "Schreib drei Ursache-Folge-Paare aus deinem Leben, jedes mit einem anderen Verbindungswort: because of, so, as a result."
+    },
+    "es": {
+     "t": "Linking reason and result",
+     "g": "Explica causas y efectos con because of, due to, so, therefore y as a result.",
+     "p": [
+      "Causa + oración: because, as, since. As it was late, we took a taxi.",
+      "Causa + sustantivo: because of, due to. The flight was delayed due to fog. We stayed in because of the rain.",
+      "Resultado: so (informal), therefore, as a result (más formal). It was sunny, so we went to the beach."
+     ],
+     "q": "¿Por qué empezaste a aprender inglés, y qué ha cambiado como resultado?",
+     "c": "Escribe tres pares de causa y efecto de tu vida, cada uno con un conector distinto: because of, so, as a result."
+    },
+    "fr": {
+     "t": "Linking reason and result",
+     "g": "Explique causes et conséquences avec because of, due to, so, therefore et as a result.",
+     "p": [
+      "Cause + proposition : because, as, since. As it was late, we took a taxi.",
+      "Cause + nom : because of, due to. The flight was delayed due to fog. We stayed in because of the rain.",
+      "Conséquence : so (familier), therefore, as a result (plus formel). It was sunny, so we went to the beach."
+     ],
+     "q": "Pourquoi as-tu commencé à apprendre l'anglais, et qu'est-ce qui a changé depuis ?",
+     "c": "Écris trois paires cause-conséquence sur ta vie, chacune avec un connecteur différent : because of, so, as a result."
+    },
+    "it": {
+     "t": "Linking reason and result",
+     "g": "Spiega cause ed effetti con because of, due to, so, therefore e as a result.",
+     "p": [
+      "Causa + frase: because, as, since. As it was late, we took a taxi.",
+      "Causa + nome: because of, due to. The flight was delayed due to fog. We stayed in because of the rain.",
+      "Risultato: so (informale), therefore, as a result (più formale). It was sunny, so we went to the beach."
+     ],
+     "q": "Perché hai iniziato a studiare inglese, e cosa è cambiato di conseguenza?",
+     "c": "Scrivi tre coppie causa-effetto sulla tua vita, ognuna con un connettivo diverso: because of, so, as a result."
+    },
+    "pt": {
+     "t": "Linking reason and result",
+     "g": "Explica causas e efeitos com because of, due to, so, therefore e as a result.",
+     "p": [
+      "Causa + oração: because, as, since. As it was late, we took a taxi.",
+      "Causa + substantivo: because of, due to. The flight was delayed due to fog. We stayed in because of the rain.",
+      "Resultado: so (informal), therefore, as a result (mais formal). It was sunny, so we went to the beach."
+     ],
+     "q": "Porque começaste a aprender inglês, e o que mudou como resultado?",
+     "c": "Escreve três pares de causa e efeito da tua vida, cada um com um conector diferente: because of, so, as a result."
+    },
+    "pt_BR": {
+     "t": "Linking reason and result",
+     "g": "Explique causas e efeitos com because of, due to, so, therefore e as a result.",
+     "p": [
+      "Causa + oração: because, as, since. As it was late, we took a taxi.",
+      "Causa + substantivo: because of, due to. The flight was delayed due to fog. We stayed in because of the rain.",
+      "Resultado: so (informal), therefore, as a result (mais formal). It was sunny, so we went to the beach."
+     ],
+     "q": "Por que você começou a aprender inglês, e o que mudou como resultado?",
+     "c": "Escreva três pares de causa e efeito da sua vida, cada um com um conector diferente: because of, so, as a result."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "because of",
+      "ex": "The match was cancelled because of the storm."
+     },
+     {
+      "w": "due to",
+      "ex": "The train was late due to a technical problem."
+     },
+     {
+      "w": "so",
+      "ex": "I was hungry, so I made a sandwich."
+     },
+     {
+      "w": "therefore",
+      "ex": "The road was closed. Therefore, we took another route."
+     },
+     {
+      "w": "as a result",
+      "ex": "She practised daily. As a result, her English improved."
+     },
+     {
+      "w": "as",
+      "ex": "As it was a holiday, the shops were closed."
+     }
+    ],
+    "gram": "Reason: because/as/since + clause; because of/due to + noun. Result: so (informal), therefore/as a result (formal, new sentence + comma)."
+   }
+  },
+  {
+   "d": 235,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Purpose: to, in order to, so that",
+     "g": "Explain why people do things with to, in order to and so that.",
+     "p": [
+      "To + verb is the most common: I study English to travel. She went to the shop to buy bread.",
+      "In order to is more formal; in order not to for negatives: We left early in order not to miss the train.",
+      "So that + subject + can/could/will: I save money so that I can travel. I wrote it down so that I wouldn't forget."
+     ],
+     "q": "Why are you learning English? Give me three reasons using to, in order to and so that.",
+     "c": "Write five sentences about things you do and why: two with to, one with in order (not) to and two with so that."
+    },
+    "de": {
+     "t": "Purpose: to, in order to, so that",
+     "g": "Du erklärst mit to, in order to und so that, warum Menschen etwas tun.",
+     "p": [
+      "To + Verb ist am häufigsten: I study English to travel. She went to the shop to buy bread.",
+      "In order to ist formeller; Verneinung mit in order not to: We left early in order not to miss the train.",
+      "So that + Subjekt + can/could/will: I save money so that I can travel. I wrote it down so that I wouldn't forget."
+     ],
+     "q": "Warum lernst du Englisch? Nenne drei Gründe mit to, in order to und so that.",
+     "c": "Schreib fünf Sätze darüber, was du tust und warum: zwei mit to, einen mit in order (not) to und zwei mit so that."
+    },
+    "es": {
+     "t": "Purpose: to, in order to, so that",
+     "g": "Explica para qué hace la gente las cosas con to, in order to y so that.",
+     "p": [
+      "To + verbo es lo más común: I study English to travel. She went to the shop to buy bread.",
+      "In order to es más formal; en negativo, in order not to: We left early in order not to miss the train.",
+      "So that + sujeto + can/could/will: I save money so that I can travel. I wrote it down so that I wouldn't forget."
+     ],
+     "q": "¿Para qué aprendes inglés? Dame tres razones con to, in order to y so that.",
+     "c": "Escribe cinco frases sobre lo que haces y para qué: dos con to, una con in order (not) to y dos con so that."
+    },
+    "fr": {
+     "t": "Purpose: to, in order to, so that",
+     "g": "Explique pourquoi on fait les choses avec to, in order to et so that.",
+     "p": [
+      "To + verbe est le plus courant : I study English to travel. She went to the shop to buy bread.",
+      "In order to est plus formel ; à la forme négative, in order not to : We left early in order not to miss the train.",
+      "So that + sujet + can/could/will : I save money so that I can travel. I wrote it down so that I wouldn't forget."
+     ],
+     "q": "Pourquoi apprends-tu l'anglais ? Donne trois raisons avec to, in order to et so that.",
+     "c": "Écris cinq phrases sur ce que tu fais et pourquoi : deux avec to, une avec in order (not) to et deux avec so that."
+    },
+    "it": {
+     "t": "Purpose: to, in order to, so that",
+     "g": "Spiega perché le persone fanno le cose con to, in order to e so that.",
+     "p": [
+      "To + verbo è il più comune: I study English to travel. She went to the shop to buy bread.",
+      "In order to è più formale; al negativo in order not to: We left early in order not to miss the train.",
+      "So that + soggetto + can/could/will: I save money so that I can travel. I wrote it down so that I wouldn't forget."
+     ],
+     "q": "Perché studi inglese? Dammi tre motivi con to, in order to e so that.",
+     "c": "Scrivi cinque frasi su cosa fai e perché: due con to, una con in order (not) to e due con so that."
+    },
+    "pt": {
+     "t": "Purpose: to, in order to, so that",
+     "g": "Explica para que as pessoas fazem as coisas com to, in order to e so that.",
+     "p": [
+      "To + verbo é o mais comum: I study English to travel. She went to the shop to buy bread.",
+      "In order to é mais formal; na negativa, in order not to: We left early in order not to miss the train.",
+      "So that + sujeito + can/could/will: I save money so that I can travel. I wrote it down so that I wouldn't forget."
+     ],
+     "q": "Para que aprendes inglês? Dá-me três razões com to, in order to e so that.",
+     "c": "Escreve cinco frases sobre o que fazes e para quê: duas com to, uma com in order (not) to e duas com so that."
+    },
+    "pt_BR": {
+     "t": "Purpose: to, in order to, so that",
+     "g": "Explique para que as pessoas fazem as coisas com to, in order to e so that.",
+     "p": [
+      "To + verbo é o mais comum: I study English to travel. She went to the shop to buy bread.",
+      "In order to é mais formal; na negativa, in order not to: We left early in order not to miss the train.",
+      "So that + sujeito + can/could/will: I save money so that I can travel. I wrote it down so that I wouldn't forget."
+     ],
+     "q": "Para que você aprende inglês? Me dê três motivos com to, in order to e so that.",
+     "c": "Escreva cinco frases sobre o que você faz e para quê: duas com to, uma com in order (not) to e duas com so that."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "to",
+      "ex": "I get up early to go running."
+     },
+     {
+      "w": "in order to",
+      "ex": "He moved to London in order to study."
+     },
+     {
+      "w": "in order not to",
+      "ex": "I set two alarms in order not to oversleep."
+     },
+     {
+      "w": "so that",
+      "ex": "Speak slowly so that everyone can understand."
+     },
+     {
+      "w": "so that I could",
+      "ex": "I took notes so that I could review later."
+     },
+     {
+      "w": "for + noun",
+      "ex": "We stopped at a café for a quick lunch."
+     }
+    ],
+    "gram": "Purpose: to / in order to + verb (in order not to for negatives); so that + subject + can/could/will. Never for + verb: not for to buy."
+   }
+  },
+  {
+   "d": 236,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Time clauses: as soon as, until",
+     "g": "Order events clearly with as soon as, until, by the time and while.",
+     "p": [
+      "As soon as = immediately after: Call me as soon as you arrive. I'll start as soon as I finish lunch.",
+      "Until = up to that moment: Wait here until I come back. By the time = before or when: By the time we arrived, the show had started.",
+      "Future meaning but present tense after time words: I'll text you when I get home, not when I will get home."
+     ],
+     "q": "What is the first thing you do as soon as you wake up, and what do you do while you have breakfast?",
+     "c": "Write five sentences about tomorrow with as soon as, until, before, while and by the time. Remember: present after the time word!"
+    },
+    "de": {
+     "t": "Time clauses: as soon as, until",
+     "g": "Mit as soon as, until, by the time und while ordnest du Ereignisse klar.",
+     "p": [
+      "As soon as = sofort nachdem: Call me as soon as you arrive. I'll start as soon as I finish lunch.",
+      "Until = bis zu dem Moment: Wait here until I come back. By the time = bis: By the time we arrived, the show had started.",
+      "Zukunftsbedeutung, aber Präsens nach Zeitwörtern: I'll text you when I get home, nicht when I will get home."
+     ],
+     "q": "Was machst du als Erstes, sobald du aufwachst, und was tust du, während du frühstückst?",
+     "c": "Schreib fünf Sätze über morgen mit as soon as, until, before, while und by the time. Denk dran: Präsens nach dem Zeitwort!"
+    },
+    "es": {
+     "t": "Time clauses: as soon as, until",
+     "g": "Ordena los hechos con claridad usando as soon as, until, by the time y while.",
+     "p": [
+      "As soon as = en cuanto: Call me as soon as you arrive. I'll start as soon as I finish lunch.",
+      "Until = hasta que: Wait here until I come back. By the time = para cuando: By the time we arrived, the show had started.",
+      "Sentido futuro pero presente tras estas palabras: I'll text you when I get home, no when I will get home."
+     ],
+     "q": "¿Qué es lo primero que haces en cuanto te despiertas, y qué haces mientras desayunas?",
+     "c": "Escribe cinco frases sobre mañana con as soon as, until, before, while y by the time. ¡Recuerda: presente tras la palabra de tiempo!"
+    },
+    "fr": {
+     "t": "Time clauses: as soon as, until",
+     "g": "Organise les événements clairement avec as soon as, until, by the time et while.",
+     "p": [
+      "As soon as = dès que : Call me as soon as you arrive. I'll start as soon as I finish lunch.",
+      "Until = jusqu'à ce que : Wait here until I come back. By the time = le temps que : By the time we arrived, the show had started.",
+      "Sens futur mais présent après ces mots : I'll text you when I get home, et non when I will get home."
+     ],
+     "q": "Quelle est la première chose que tu fais dès que tu te réveilles, et que fais-tu pendant le petit-déjeuner ?",
+     "c": "Écris cinq phrases sur demain avec as soon as, until, before, while et by the time. Rappel : présent après le mot de temps !"
+    },
+    "it": {
+     "t": "Time clauses: as soon as, until",
+     "g": "Ordina gli eventi con chiarezza usando as soon as, until, by the time e while.",
+     "p": [
+      "As soon as = appena: Call me as soon as you arrive. I'll start as soon as I finish lunch.",
+      "Until = finché: Wait here until I come back. By the time = quando ormai: By the time we arrived, the show had started.",
+      "Senso futuro ma presente dopo queste parole: I'll text you when I get home, non when I will get home."
+     ],
+     "q": "Qual è la prima cosa che fai appena ti svegli, e cosa fai mentre fai colazione?",
+     "c": "Scrivi cinque frasi su domani con as soon as, until, before, while e by the time. Ricorda: presente dopo la parola di tempo!"
+    },
+    "pt": {
+     "t": "Time clauses: as soon as, until",
+     "g": "Ordena os acontecimentos com clareza usando as soon as, until, by the time e while.",
+     "p": [
+      "As soon as = assim que: Call me as soon as you arrive. I'll start as soon as I finish lunch.",
+      "Until = até: Wait here until I come back. By the time = quando: By the time we arrived, the show had started.",
+      "Sentido futuro mas presente depois destas palavras: I'll text you when I get home, e não when I will get home."
+     ],
+     "q": "Qual é a primeira coisa que fazes assim que acordas, e o que fazes enquanto tomas o pequeno-almoço?",
+     "c": "Escreve cinco frases sobre amanhã com as soon as, until, before, while e by the time. Lembra-te: presente depois da palavra de tempo!"
+    },
+    "pt_BR": {
+     "t": "Time clauses: as soon as, until",
+     "g": "Organize os acontecimentos com clareza usando as soon as, until, by the time e while.",
+     "p": [
+      "As soon as = assim que: Call me as soon as you arrive. I'll start as soon as I finish lunch.",
+      "Until = até: Wait here until I come back. By the time = quando: By the time we arrived, the show had started.",
+      "Sentido futuro mas presente depois dessas palavras: I'll text you when I get home, e não when I will get home."
+     ],
+     "q": "Qual é a primeira coisa que você faz assim que acorda, e o que faz enquanto toma café da manhã?",
+     "c": "Escreva cinco frases sobre amanhã com as soon as, until, before, while e by the time. Lembre: presente depois da palavra de tempo!"
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "as soon as",
+      "ex": "I'll call you as soon as I land."
+     },
+     {
+      "w": "until",
+      "ex": "Let's wait until the rain stops."
+     },
+     {
+      "w": "by the time",
+      "ex": "By the time I got there, the shop had closed."
+     },
+     {
+      "w": "while",
+      "ex": "I listen to podcasts while I cook."
+     },
+     {
+      "w": "before",
+      "ex": "Check the address before you leave."
+     },
+     {
+      "w": "once",
+      "ex": "Once you finish, you can go home."
+     }
+    ],
+    "gram": "Time clauses: as soon as, until, before, while, once, by the time. For the future, use present tense after them: when I get home."
+   }
+  },
+  {
+   "d": 237,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Giving examples: such as, for instance",
+     "g": "Support your ideas with clear examples.",
+     "p": [
+      "Such as / like + noun, inside the sentence: I love outdoor sports, such as hiking and kayaking.",
+      "For example / for instance, often with commas, can start a sentence: Some foods are very healthy. For example, beans.",
+      "Like is informal; such as is more neutral. Don't overuse: one or two examples are usually enough."
+     ],
+     "q": "What are some things you can do in your city for free? Give examples with such as or for instance.",
+     "c": "Write three opinions and support each one with an example: use such as, for example and for instance once each."
+    },
+    "de": {
+     "t": "Giving examples: such as, for instance",
+     "g": "Du stützt deine Ideen mit klaren Beispielen.",
+     "p": [
+      "Such as / like + Nomen, mitten im Satz: I love outdoor sports, such as hiking and kayaking.",
+      "For example / for instance, oft mit Kommas, auch am Satzanfang: Some foods are very healthy. For example, beans.",
+      "Like ist umgangssprachlich, such as neutraler. Ein oder zwei Beispiele reichen meistens."
+     ],
+     "q": "Was kann man in deiner Stadt kostenlos machen? Nenne Beispiele mit such as oder for instance.",
+     "c": "Schreib drei Meinungen und stütze jede mit einem Beispiel: benutze je einmal such as, for example und for instance."
+    },
+    "es": {
+     "t": "Giving examples: such as, for instance",
+     "g": "Apoya tus ideas con ejemplos claros.",
+     "p": [
+      "Such as / like + sustantivo, dentro de la frase: I love outdoor sports, such as hiking and kayaking.",
+      "For example / for instance, a menudo con comas, pueden abrir la frase: Some foods are very healthy. For example, beans.",
+      "Like es informal; such as, más neutro. No abuses: uno o dos ejemplos suelen bastar."
+     ],
+     "q": "¿Qué cosas se pueden hacer gratis en tu ciudad? Da ejemplos con such as o for instance.",
+     "c": "Escribe tres opiniones y apoya cada una con un ejemplo: usa una vez such as, for example y for instance."
+    },
+    "fr": {
+     "t": "Giving examples: such as, for instance",
+     "g": "Appuie tes idées avec des exemples clairs.",
+     "p": [
+      "Such as / like + nom, dans la phrase : I love outdoor sports, such as hiking and kayaking.",
+      "For example / for instance, souvent entre virgules, peuvent ouvrir la phrase : Some foods are very healthy. For example, beans.",
+      "Like est familier ; such as est plus neutre. Un ou deux exemples suffisent en général."
+     ],
+     "q": "Que peut-on faire gratuitement dans ta ville ? Donne des exemples avec such as ou for instance.",
+     "c": "Écris trois opinions et appuie chacune d'un exemple : utilise une fois such as, for example et for instance."
+    },
+    "it": {
+     "t": "Giving examples: such as, for instance",
+     "g": "Sostieni le tue idee con esempi chiari.",
+     "p": [
+      "Such as / like + nome, dentro la frase: I love outdoor sports, such as hiking and kayaking.",
+      "For example / for instance, spesso tra virgole, possono aprire la frase: Some foods are very healthy. For example, beans.",
+      "Like è informale; such as è più neutro. Non esagerare: uno o due esempi di solito bastano."
+     ],
+     "q": "Cosa si può fare gratis nella tua città? Fai esempi con such as o for instance.",
+     "c": "Scrivi tre opinioni e sostienile con un esempio ciascuna: usa una volta such as, for example e for instance."
+    },
+    "pt": {
+     "t": "Giving examples: such as, for instance",
+     "g": "Apoia as tuas ideias com exemplos claros.",
+     "p": [
+      "Such as / like + substantivo, dentro da frase: I love outdoor sports, such as hiking and kayaking.",
+      "For example / for instance, muitas vezes com vírgulas, podem abrir a frase: Some foods are very healthy. For example, beans.",
+      "Like é informal; such as é mais neutro. Não exageres: um ou dois exemplos costumam chegar."
+     ],
+     "q": "O que se pode fazer de graça na tua cidade? Dá exemplos com such as ou for instance.",
+     "c": "Escreve três opiniões e apoia cada uma com um exemplo: usa uma vez such as, for example e for instance."
+    },
+    "pt_BR": {
+     "t": "Giving examples: such as, for instance",
+     "g": "Apoie suas ideias com exemplos claros.",
+     "p": [
+      "Such as / like + substantivo, dentro da frase: I love outdoor sports, such as hiking and kayaking.",
+      "For example / for instance, muitas vezes com vírgulas, podem abrir a frase: Some foods are very healthy. For example, beans.",
+      "Like é informal; such as é mais neutro. Não exagere: um ou dois exemplos costumam bastar."
+     ],
+     "q": "O que dá para fazer de graça na sua cidade? Dê exemplos com such as ou for instance.",
+     "c": "Escreva três opiniões e apoie cada uma com um exemplo: use uma vez such as, for example e for instance."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "such as",
+      "ex": "I enjoy board games, such as chess and Scrabble."
+     },
+     {
+      "w": "for example",
+      "ex": "Some cities are great by bike. For example, Amsterdam."
+     },
+     {
+      "w": "for instance",
+      "ex": "You can save energy, for instance by turning off lights."
+     },
+     {
+      "w": "like",
+      "ex": "I love fruits like mangoes and papayas."
+     },
+     {
+      "w": "including",
+      "ex": "We visited many places, including two museums."
+     },
+     {
+      "w": "especially",
+      "ex": "I love summer, especially the long evenings."
+     }
+    ],
+    "gram": "Examples: such as / like + noun inside a sentence; for example / for instance with commas, also at the start of a sentence."
+   }
+  },
+  {
+   "d": 238,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Writing a paragraph",
+     "g": "Write a clear paragraph with a topic sentence, details and a closing line.",
+     "p": [
+      "Topic sentence: the main idea in one line. Learning a language has many benefits.",
+      "Supporting details: two or three reasons or examples with linkers. First, ... Also, ... For example, ...",
+      "Closing line: sum up or give your view. All in all, it's worth the effort. Stay on one main idea."
+     ],
+     "q": "If you wrote a paragraph about your hometown, what would your topic sentence be?",
+     "c": "Write one paragraph (5 to 7 sentences) on a topic you like: a topic sentence, three supporting details and a closing line."
+    },
+    "de": {
+     "t": "Writing a paragraph",
+     "g": "Du schreibst einen klaren Absatz mit Kernsatz, Details und Schlusssatz.",
+     "p": [
+      "Kernsatz: die Hauptidee in einer Zeile. Learning a language has many benefits.",
+      "Details: zwei oder drei Gründe oder Beispiele mit Verbindungswörtern. First, ... Also, ... For example, ...",
+      "Schlusssatz: zusammenfassen oder Meinung sagen. All in all, it's worth the effort. Bleib bei einer Hauptidee."
+     ],
+     "q": "Wenn du einen Absatz über deine Heimatstadt schreiben würdest, wie würde dein Kernsatz lauten?",
+     "c": "Schreib einen Absatz (5 bis 7 Sätze) zu einem Thema, das du magst: Kernsatz, drei Details und ein Schlusssatz."
+    },
+    "es": {
+     "t": "Writing a paragraph",
+     "g": "Escribe un párrafo claro con una frase principal, detalles y una frase final.",
+     "p": [
+      "Frase principal: la idea central en una línea. Learning a language has many benefits.",
+      "Detalles: dos o tres razones o ejemplos con conectores. First, ... Also, ... For example, ...",
+      "Frase final: resume o da tu opinión. All in all, it's worth the effort. Céntrate en una sola idea."
+     ],
+     "q": "Si escribieras un párrafo sobre tu ciudad natal, ¿cuál sería tu frase principal?",
+     "c": "Escribe un párrafo (de 5 a 7 frases) sobre un tema que te guste: frase principal, tres detalles y una frase final."
+    },
+    "fr": {
+     "t": "Writing a paragraph",
+     "g": "Rédige un paragraphe clair avec une phrase clé, des détails et une phrase de conclusion.",
+     "p": [
+      "Phrase clé : l'idée principale en une ligne. Learning a language has many benefits.",
+      "Détails : deux ou trois raisons ou exemples avec des connecteurs. First, ... Also, ... For example, ...",
+      "Conclusion : résume ou donne ton avis. All in all, it's worth the effort. Reste sur une seule idée."
+     ],
+     "q": "Si tu écrivais un paragraphe sur ta ville natale, quelle serait ta phrase clé ?",
+     "c": "Écris un paragraphe (5 à 7 phrases) sur un sujet que tu aimes : une phrase clé, trois détails et une conclusion."
+    },
+    "it": {
+     "t": "Writing a paragraph",
+     "g": "Scrivi un paragrafo chiaro con frase principale, dettagli e frase di chiusura.",
+     "p": [
+      "Frase principale: l'idea centrale in una riga. Learning a language has many benefits.",
+      "Dettagli: due o tre motivi o esempi con connettivi. First, ... Also, ... For example, ...",
+      "Chiusura: riassumi o dai la tua opinione. All in all, it's worth the effort. Resta su un'unica idea."
+     ],
+     "q": "Se scrivessi un paragrafo sulla tua città natale, quale sarebbe la frase principale?",
+     "c": "Scrivi un paragrafo (da 5 a 7 frasi) su un tema che ti piace: frase principale, tre dettagli e una chiusura."
+    },
+    "pt": {
+     "t": "Writing a paragraph",
+     "g": "Escreve um parágrafo claro com frase principal, detalhes e frase final.",
+     "p": [
+      "Frase principal: a ideia central numa linha. Learning a language has many benefits.",
+      "Detalhes: duas ou três razões ou exemplos com conectores. First, ... Also, ... For example, ...",
+      "Frase final: resume ou dá a tua opinião. All in all, it's worth the effort. Fica numa só ideia."
+     ],
+     "q": "Se escrevesses um parágrafo sobre a tua terra, qual seria a tua frase principal?",
+     "c": "Escreve um parágrafo (5 a 7 frases) sobre um tema de que gostes: frase principal, três detalhes e uma frase final."
+    },
+    "pt_BR": {
+     "t": "Writing a paragraph",
+     "g": "Escreva um parágrafo claro com frase principal, detalhes e frase de fechamento.",
+     "p": [
+      "Frase principal: a ideia central numa linha. Learning a language has many benefits.",
+      "Detalhes: dois ou três motivos ou exemplos com conectores. First, ... Also, ... For example, ...",
+      "Fechamento: resuma ou dê sua opinião. All in all, it's worth the effort. Fique numa ideia só."
+     ],
+     "q": "Se você escrevesse um parágrafo sobre sua cidade natal, qual seria a frase principal?",
+     "c": "Escreva um parágrafo (5 a 7 frases) sobre um tema de que você gosta: frase principal, três detalhes e um fechamento."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "topic sentence",
+      "ex": "Start with a clear topic sentence."
+     },
+     {
+      "w": "first of all",
+      "ex": "First of all, it helps you meet new people."
+     },
+     {
+      "w": "also",
+      "ex": "It is also good for your memory."
+     },
+     {
+      "w": "in addition",
+      "ex": "In addition, it opens doors at work."
+     },
+     {
+      "w": "all in all",
+      "ex": "All in all, it's a great hobby."
+     },
+     {
+      "w": "main idea",
+      "ex": "Each paragraph should have one main idea."
+     }
+    ],
+    "gram": "Paragraph: topic sentence + supporting details with linkers (First, Also, In addition, For example) + closing sentence (All in all)."
+   }
+  },
+  {
+   "d": 239,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Writing an opinion essay",
+     "g": "Plan and write a simple opinion essay in clear steps.",
+     "p": [
+      "Introduction: present the topic and your view. Many people think... In my opinion...",
+      "Body: two arguments with reasons and examples, then one counter-argument. Some people argue that... However...",
+      "Conclusion: repeat your view in new words. To sum up, ... For these reasons, I believe..."
+     ],
+     "q": "Here's a topic: Is it better to live in the city or the countryside? What is your opinion, and what is one argument against it?",
+     "c": "Plan an essay on a topic you choose: write one sentence for the introduction, two arguments, one counter-argument and the conclusion."
+    },
+    "de": {
+     "t": "Writing an opinion essay",
+     "g": "Du planst und schreibst Schritt für Schritt einen einfachen Meinungsaufsatz.",
+     "p": [
+      "Einleitung: Thema und Meinung vorstellen. Many people think... In my opinion...",
+      "Hauptteil: zwei Argumente mit Gründen und Beispielen, dann ein Gegenargument. Some people argue that... However...",
+      "Schluss: Meinung mit neuen Worten wiederholen. To sum up, ... For these reasons, I believe..."
+     ],
+     "q": "Ein Thema: Lebt man besser in der Stadt oder auf dem Land? Was meinst du, und was spricht dagegen?",
+     "c": "Plane einen Aufsatz zu einem Thema deiner Wahl: je ein Satz für Einleitung, zwei Argumente, ein Gegenargument und Schluss."
+    },
+    "es": {
+     "t": "Writing an opinion essay",
+     "g": "Planifica y escribe un ensayo de opinión sencillo paso a paso.",
+     "p": [
+      "Introducción: presenta el tema y tu opinión. Many people think... In my opinion...",
+      "Desarrollo: dos argumentos con razones y ejemplos, y luego un contraargumento. Some people argue that... However...",
+      "Conclusión: repite tu opinión con otras palabras. To sum up, ... For these reasons, I believe..."
+     ],
+     "q": "Un tema: ¿es mejor vivir en la ciudad o en el campo? ¿Qué opinas, y cuál es un argumento en contra?",
+     "c": "Planifica un ensayo sobre un tema que elijas: una frase para la introducción, dos argumentos, un contraargumento y la conclusión."
+    },
+    "fr": {
+     "t": "Writing an opinion essay",
+     "g": "Planifie et rédige un essai d'opinion simple, étape par étape.",
+     "p": [
+      "Introduction : présente le sujet et ton avis. Many people think... In my opinion...",
+      "Développement : deux arguments avec raisons et exemples, puis un contre-argument. Some people argue that... However...",
+      "Conclusion : redis ton avis autrement. To sum up, ... For these reasons, I believe..."
+     ],
+     "q": "Un sujet : vaut-il mieux vivre en ville ou à la campagne ? Quel est ton avis, et quel argument s'y oppose ?",
+     "c": "Planifie un essai sur un sujet de ton choix : une phrase d'introduction, deux arguments, un contre-argument et la conclusion."
+    },
+    "it": {
+     "t": "Writing an opinion essay",
+     "g": "Pianifica e scrivi un semplice saggio d'opinione passo dopo passo.",
+     "p": [
+      "Introduzione: presenta il tema e la tua opinione. Many people think... In my opinion...",
+      "Sviluppo: due argomenti con motivi ed esempi, poi un controargomento. Some people argue that... However...",
+      "Conclusione: ripeti la tua opinione con parole nuove. To sum up, ... For these reasons, I believe..."
+     ],
+     "q": "Un tema: è meglio vivere in città o in campagna? Qual è la tua opinione, e quale argomento è contrario?",
+     "c": "Pianifica un saggio su un tema a scelta: una frase per l'introduzione, due argomenti, un controargomento e la conclusione."
+    },
+    "pt": {
+     "t": "Writing an opinion essay",
+     "g": "Planeia e escreve um texto de opinião simples, passo a passo.",
+     "p": [
+      "Introdução: apresenta o tema e a tua opinião. Many people think... In my opinion...",
+      "Desenvolvimento: dois argumentos com razões e exemplos, depois um contra-argumento. Some people argue that... However...",
+      "Conclusão: repete a tua opinião com outras palavras. To sum up, ... For these reasons, I believe..."
+     ],
+     "q": "Um tema: é melhor viver na cidade ou no campo? Qual é a tua opinião, e que argumento há contra?",
+     "c": "Planeia um texto sobre um tema à escolha: uma frase para a introdução, dois argumentos, um contra-argumento e a conclusão."
+    },
+    "pt_BR": {
+     "t": "Writing an opinion essay",
+     "g": "Planeje e escreva uma redação de opinião simples, passo a passo.",
+     "p": [
+      "Introdução: apresente o tema e sua opinião. Many people think... In my opinion...",
+      "Desenvolvimento: dois argumentos com motivos e exemplos, depois um contra-argumento. Some people argue that... However...",
+      "Conclusão: repita sua opinião com outras palavras. To sum up, ... For these reasons, I believe..."
+     ],
+     "q": "Um tema: é melhor morar na cidade ou no campo? Qual é sua opinião, e que argumento existe contra?",
+     "c": "Planeje uma redação sobre um tema à sua escolha: uma frase para a introdução, dois argumentos, um contra-argumento e a conclusão."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "in my opinion",
+      "ex": "In my opinion, everyone should learn to cook."
+     },
+     {
+      "w": "some people argue that",
+      "ex": "Some people argue that cities are too noisy."
+     },
+     {
+      "w": "firstly",
+      "ex": "Firstly, public transport is better in cities."
+     },
+     {
+      "w": "another reason is",
+      "ex": "Another reason is the variety of jobs."
+     },
+     {
+      "w": "to sum up",
+      "ex": "To sum up, I prefer city life."
+     },
+     {
+      "w": "for these reasons",
+      "ex": "For these reasons, I believe it's a good idea."
+     }
+    ],
+    "gram": "Opinion essay: intro with your view, body with Firstly / Another reason is, a counter-argument (Some people argue...), then To sum up."
+   }
+  },
+  {
+   "d": 240,
+   "lv": "B1",
+   "i18n": {
+    "en": {
+     "t": "Review: work, tech and linking",
+     "g": "Recap work English, tech vocabulary and linking words with a short debate.",
+     "p": [
+      "Work: Tell me about yourself. I'm writing to... Could I add something? That sounds fair. I'll sort it out.",
+      "Tech and life: scroll, share, a strong password, a scam, on the one hand, sustainable, endangered, research shows.",
+      "Linking: although, however, despite, because of, as a result, so that, as soon as, such as, to sum up."
+     ],
+     "q": "Quick debate: Should everyone work from home? Give your opinion, one reason, one example and one point against.",
+     "c": "Write a five-sentence mini debate on a tech topic using although, because of, as a result, for example and to sum up."
+    },
+    "de": {
+     "t": "Review: work, tech and linking",
+     "g": "Du wiederholst Arbeitsenglisch, Technikwortschatz und Verbindungswörter in einer kleinen Debatte.",
+     "p": [
+      "Arbeit: Tell me about yourself. I'm writing to... Could I add something? That sounds fair. I'll sort it out.",
+      "Technik und Alltag: scroll, share, a strong password, a scam, on the one hand, sustainable, endangered, research shows.",
+      "Verbinden: although, however, despite, because of, as a result, so that, as soon as, such as, to sum up."
+     ],
+     "q": "Kurze Debatte: Sollten alle im Homeoffice arbeiten? Gib deine Meinung, einen Grund, ein Beispiel und ein Gegenargument.",
+     "c": "Schreib eine Mini-Debatte in fünf Sätzen zu einem Technikthema mit although, because of, as a result, for example und to sum up."
+    },
+    "es": {
+     "t": "Review: work, tech and linking",
+     "g": "Repasa el inglés del trabajo, el vocabulario tecnológico y los conectores con un pequeño debate.",
+     "p": [
+      "Trabajo: Tell me about yourself. I'm writing to... Could I add something? That sounds fair. I'll sort it out.",
+      "Tecnología y vida: scroll, share, a strong password, a scam, on the one hand, sustainable, endangered, research shows.",
+      "Conectores: although, however, despite, because of, as a result, so that, as soon as, such as, to sum up."
+     ],
+     "q": "Debate rápido: ¿todo el mundo debería teletrabajar? Da tu opinión, una razón, un ejemplo y un argumento en contra.",
+     "c": "Escribe un mini debate de cinco frases sobre tecnología con although, because of, as a result, for example y to sum up."
+    },
+    "fr": {
+     "t": "Review: work, tech and linking",
+     "g": "Révise l'anglais du travail, le vocabulaire tech et les connecteurs grâce à un petit débat.",
+     "p": [
+      "Travail : Tell me about yourself. I'm writing to... Could I add something? That sounds fair. I'll sort it out.",
+      "Tech et vie : scroll, share, a strong password, a scam, on the one hand, sustainable, endangered, research shows.",
+      "Connecteurs : although, however, despite, because of, as a result, so that, as soon as, such as, to sum up."
+     ],
+     "q": "Petit débat : tout le monde devrait-il télétravailler ? Donne ton avis, une raison, un exemple et un contre-argument.",
+     "c": "Écris un mini débat de cinq phrases sur la tech avec although, because of, as a result, for example et to sum up."
+    },
+    "it": {
+     "t": "Review: work, tech and linking",
+     "g": "Ripassa l'inglese del lavoro, il lessico tecnologico e i connettivi con un piccolo dibattito.",
+     "p": [
+      "Lavoro: Tell me about yourself. I'm writing to... Could I add something? That sounds fair. I'll sort it out.",
+      "Tecnologia e vita: scroll, share, a strong password, a scam, on the one hand, sustainable, endangered, research shows.",
+      "Connettivi: although, however, despite, because of, as a result, so that, as soon as, such as, to sum up."
+     ],
+     "q": "Dibattito lampo: tutti dovrebbero lavorare da casa? Dai la tua opinione, un motivo, un esempio e un argomento contrario.",
+     "c": "Scrivi un mini dibattito di cinque frasi sulla tecnologia con although, because of, as a result, for example e to sum up."
+    },
+    "pt": {
+     "t": "Review: work, tech and linking",
+     "g": "Revê o inglês do trabalho, o vocabulário de tecnologia e os conectores com um pequeno debate.",
+     "p": [
+      "Trabalho: Tell me about yourself. I'm writing to... Could I add something? That sounds fair. I'll sort it out.",
+      "Tecnologia e vida: scroll, share, a strong password, a scam, on the one hand, sustainable, endangered, research shows.",
+      "Conectores: although, however, despite, because of, as a result, so that, as soon as, such as, to sum up."
+     ],
+     "q": "Debate rápido: toda a gente devia trabalhar a partir de casa? Dá a tua opinião, uma razão, um exemplo e um contra-argumento.",
+     "c": "Escreve um mini debate de cinco frases sobre tecnologia com although, because of, as a result, for example e to sum up."
+    },
+    "pt_BR": {
+     "t": "Review: work, tech and linking",
+     "g": "Revise o inglês do trabalho, o vocabulário de tecnologia e os conectores com um pequeno debate.",
+     "p": [
+      "Trabalho: Tell me about yourself. I'm writing to... Could I add something? That sounds fair. I'll sort it out.",
+      "Tecnologia e vida: scroll, share, a strong password, a scam, on the one hand, sustainable, endangered, research shows.",
+      "Conectores: although, however, despite, because of, as a result, so that, as soon as, such as, to sum up."
+     ],
+     "q": "Debate rápido: todo mundo deveria trabalhar de casa? Dê sua opinião, um motivo, um exemplo e um contra-argumento.",
+     "c": "Escreva um mini debate de cinco frases sobre tecnologia com although, because of, as a result, for example e to sum up."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "although",
+      "ex": "Although remote work is flexible, it can feel lonely."
+     },
+     {
+      "w": "because of",
+      "ex": "Many people work from home because of the long commute."
+     },
+     {
+      "w": "as a result",
+      "ex": "As a result, offices are often quieter."
+     },
+     {
+      "w": "for example",
+      "ex": "Some jobs, for example nursing, can't be done from home."
+     },
+     {
+      "w": "on the other hand",
+      "ex": "On the other hand, teams like meeting in person."
+     },
+     {
+      "w": "to sum up",
+      "ex": "To sum up, a mix of both works best for me."
+     }
+    ],
+    "gram": "Review: work phrases, tech vocabulary and linkers for contrast (although), reason/result (because of, as a result), purpose and examples."
+   }
+  }
+ ]
+}

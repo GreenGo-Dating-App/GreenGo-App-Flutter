@@ -1,0 +1,835 @@
+{
+ "topic": "slang_idioms",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Hands and arms idioms",
+     "g": "Learn three English idioms with hands and arms.",
+     "p": [
+      "“Give someone a hand” means to help: “Can you give me a hand with these boxes?”",
+      "“Hands down” means easily and without doubt: “This is hands down the best pizza in town.”",
+      "“Cost an arm and a leg” means to be very expensive: “That concert ticket cost an arm and a leg!”"
+     ],
+     "q": "What is, hands down, your favourite food?",
+     "c": "Offer to give someone a hand today, and say it with this idiom."
+    },
+    "de": {
+     "t": "Redewendungen mit Händen und Armen",
+     "g": "Drei englische Redewendungen mit Händen und Armen lernen.",
+     "p": [
+      "„Give someone a hand“ heißt, jemandem helfen: „Can you give me a hand with these boxes?“",
+      "„Hands down“ heißt mühelos und ohne Zweifel: „This is hands down the best pizza in town.“",
+      "„Cost an arm and a leg“ (einen Arm und ein Bein kosten) heißt, sündhaft teuer sein."
+     ],
+     "q": "Was ist ohne Zweifel, „hands down“, dein Lieblingsessen?",
+     "c": "Biete heute jemandem deine Hilfe an und sag es mit „give you a hand“."
+    },
+    "es": {
+     "t": "Expresiones de manos y brazos",
+     "g": "Aprender tres expresiones inglesas con manos y brazos.",
+     "p": [
+      "«Give someone a hand» es echar una mano: «Can you give me a hand with these boxes?».",
+      "«Hands down» es sin duda y de calle: «This is hands down the best pizza in town».",
+      "«Cost an arm and a leg» (costar un brazo y una pierna) es costar un ojo de la cara."
+     ],
+     "q": "¿Cuál es, sin ninguna duda, tu comida favorita?",
+     "c": "Ofrece hoy echarle una mano a alguien y dilo con esta expresión."
+    },
+    "fr": {
+     "t": "Expressions des mains et des bras",
+     "g": "Apprendre trois expressions anglaises avec les mains et les bras.",
+     "p": [
+      "« Give someone a hand » veut dire donner un coup de main : « Can you give me a hand with these boxes? »",
+      "« Hands down » veut dire haut la main, sans hésiter : « This is hands down the best pizza in town. »",
+      "« Cost an arm and a leg » (coûter un bras et une jambe) veut dire coûter les yeux de la tête."
+     ],
+     "q": "Quel est, haut la main, ton plat préféré ?",
+     "c": "Propose aujourd'hui un coup de main à quelqu'un, et dis-le avec cette expression."
+    },
+    "it": {
+     "t": "Modi di dire con mani e braccia",
+     "g": "Imparare tre modi di dire inglesi con mani e braccia.",
+     "p": [
+      "«Give someone a hand» vuol dire dare una mano: «Can you give me a hand with these boxes?».",
+      "«Hands down» vuol dire senza dubbio, a mani basse: «This is hands down the best pizza in town».",
+      "«Cost an arm and a leg» (costare un braccio e una gamba) vuol dire costare un occhio della testa."
+     ],
+     "q": "Qual è, senza dubbio, il tuo piatto preferito?",
+     "c": "Oggi offri a qualcuno di dargli una mano, e dillo con questa espressione."
+    },
+    "pt": {
+     "t": "Expressões de mãos e braços",
+     "g": "Aprender três expressões inglesas com mãos e braços.",
+     "p": [
+      "«Give someone a hand» é dar uma mão: «Can you give me a hand with these boxes?».",
+      "«Hands down» é sem dúvida nenhuma: «This is hands down the best pizza in town».",
+      "«Cost an arm and a leg» (custar um braço e uma perna) é custar os olhos da cara."
+     ],
+     "q": "Qual é, sem dúvida nenhuma, a tua comida preferida?",
+     "c": "Oferece-te hoje para dar uma mão a alguém e di-lo com esta expressão."
+    },
+    "pt_BR": {
+     "t": "Expressões de mãos e braços",
+     "g": "Aprender três expressões inglesas com mãos e braços.",
+     "p": [
+      "“Give someone a hand” é dar uma mão: “Can you give me a hand with these boxes?”.",
+      "“Hands down” é disparado, sem dúvida: “This is hands down the best pizza in town”.",
+      "“Cost an arm and a leg” (custar um braço e uma perna) é custar os olhos da cara."
+     ],
+     "q": "Qual é, disparado, a sua comida favorita?",
+     "c": "Ofereça hoje uma mão para alguém e diga isso com essa expressão."
+    }
+   }
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Feet and legs idioms",
+     "g": "Learn three English idioms with feet and legs.",
+     "p": [
+      "“Get cold feet” means to feel nervous and nearly back out of a plan, like before a big trip or a speech.",
+      "“Put your foot in it” (UK) or “put your foot in your mouth” (US) means to say something awkward by accident.",
+      "“Break a leg!” is a friendly way to wish good luck, especially before a show or a performance."
+     ],
+     "q": "Have you ever got cold feet before something important? What happened?",
+     "c": "Wish someone “break a leg!” before a test, a game or a presentation today."
+    },
+    "de": {
+     "t": "Redewendungen mit Füßen und Beinen",
+     "g": "Drei englische Redewendungen mit Füßen und Beinen lernen.",
+     "p": [
+      "„Get cold feet“ (kalte Füße bekommen) heißt, nervös werden und fast einen Rückzieher machen, genau wie bei uns.",
+      "„Put your foot in it“ heißt, ins Fettnäpfchen treten, also versehentlich etwas Peinliches sagen.",
+      "„Break a leg!“ ist ein freundlicher Glückwunsch, vor allem vor einem Auftritt, wie „Hals- und Beinbruch!“."
+     ],
+     "q": "Hast du schon einmal vor etwas Wichtigem kalte Füße bekommen? Was ist passiert?",
+     "c": "Wünsch heute jemandem „break a leg!“ vor einer Prüfung, einem Spiel oder einer Präsentation."
+    },
+    "es": {
+     "t": "Expresiones de pies y piernas",
+     "g": "Aprender tres expresiones inglesas con pies y piernas.",
+     "p": [
+      "«Get cold feet» (tener los pies fríos) es entrarle a uno el miedo y casi echarse atrás antes de un plan.",
+      "«Put your foot in it» (meter el pie) es meter la pata, decir algo incómodo sin querer.",
+      "«Break a leg!» (¡rómpete una pierna!) es una forma amable de desear suerte, sobre todo antes de una actuación."
+     ],
+     "q": "¿Alguna vez te entró el miedo antes de algo importante? ¿Qué pasó?",
+     "c": "Desea hoy «break a leg!» a alguien antes de un examen, un partido o una presentación."
+    },
+    "fr": {
+     "t": "Expressions des pieds et des jambes",
+     "g": "Apprendre trois expressions anglaises avec les pieds et les jambes.",
+     "p": [
+      "« Get cold feet » (avoir les pieds froids) veut dire avoir la trouille et presque renoncer à un projet.",
+      "« Put your foot in it » (mettre le pied dedans) veut dire mettre les pieds dans le plat, faire une gaffe.",
+      "« Break a leg! » (casse-toi une jambe !) souhaite bonne chance, surtout avant un spectacle ou une audition."
+     ],
+     "q": "As-tu déjà eu la trouille avant quelque chose d'important ? Que s'est-il passé ?",
+     "c": "Souhaite « break a leg! » à quelqu'un aujourd'hui avant un examen, un match ou une présentation."
+    },
+    "it": {
+     "t": "Modi di dire con piedi e gambe",
+     "g": "Imparare tre modi di dire inglesi con piedi e gambe.",
+     "p": [
+      "«Get cold feet» (farsi venire i piedi freddi) vuol dire farsi prendere dall'ansia e quasi tirarsi indietro.",
+      "«Put your foot in it» (metterci il piede) vuol dire fare una gaffe, dire qualcosa di imbarazzante per sbaglio.",
+      "«Break a leg!» (rompiti una gamba!) è un augurio di buona fortuna, soprattutto prima di uno spettacolo."
+     ],
+     "q": "Ti è mai venuta l'ansia prima di qualcosa di importante? Com'è andata?",
+     "c": "Oggi augura «break a leg!» a qualcuno prima di un esame, una partita o una presentazione."
+    },
+    "pt": {
+     "t": "Expressões de pés e pernas",
+     "g": "Aprender três expressões inglesas com pés e pernas.",
+     "p": [
+      "«Get cold feet» (ficar com os pés frios) é ficar nervoso e quase desistir de um plano.",
+      "«Put your foot in it» (meter o pé) é meter a pata na poça, dizer algo constrangedor sem querer.",
+      "«Break a leg!» (parte uma perna!) é desejar boa sorte, sobretudo antes de um espetáculo."
+     ],
+     "q": "Já ficaste nervoso ao ponto de quase desistir de algo importante? O que aconteceu?",
+     "c": "Deseja hoje «break a leg!» a alguém antes de um exame, um jogo ou uma apresentação."
+    },
+    "pt_BR": {
+     "t": "Expressões de pés e pernas",
+     "g": "Aprender três expressões inglesas com pés e pernas.",
+     "p": [
+      "“Get cold feet” (ficar com os pés frios) é amarelar, ficar nervoso e quase desistir de um plano.",
+      "“Put your foot in it” (enfiar o pé) é pisar na bola, falar algo constrangedor sem querer.",
+      "“Break a leg!” (quebre uma perna!) é desejar boa sorte, principalmente antes de uma apresentação."
+     ],
+     "q": "Você já quase amarelou antes de algo importante? O que aconteceu?",
+     "c": "Deseje hoje “break a leg!” a alguém antes de uma prova, um jogo ou uma apresentação."
+    }
+   }
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Eyes and ears idioms",
+     "g": "Learn idioms about eyes and ears in English and French.",
+     "p": [
+      "“Keep an eye on” means to watch or look after: “Can you keep an eye on my bag?”",
+      "“I'm all ears” means I'm listening carefully; French says “être tout ouïe”, to be all hearing.",
+      "“See eye to eye” means to agree with someone: “We don't always see eye to eye, but we're good friends.”"
+     ],
+     "q": "Who do you always see eye to eye with?",
+     "c": "When someone wants to tell you something today, answer “I'm all ears!”."
+    },
+    "de": {
+     "t": "Redewendungen mit Augen und Ohren",
+     "g": "Redewendungen über Augen und Ohren auf Englisch und Französisch lernen.",
+     "p": [
+      "„Keep an eye on“ heißt, ein Auge auf etwas haben: „Can you keep an eye on my bag?“",
+      "„I'm all ears“ heißt, ich bin ganz Ohr; Französisch sagt „être tout ouïe“.",
+      "„See eye to eye“ heißt, einer Meinung sein: „We don't always see eye to eye, but we're good friends.“"
+     ],
+     "q": "Mit wem bist du fast immer einer Meinung?",
+     "c": "Wenn dir heute jemand etwas erzählen will, antworte „I'm all ears!“."
+    },
+    "es": {
+     "t": "Expresiones de ojos y oídos",
+     "g": "Aprender expresiones de ojos y oídos en inglés y francés.",
+     "p": [
+      "«Keep an eye on» es echar un ojo a algo: «Can you keep an eye on my bag?».",
+      "«I'm all ears» es soy todo oídos; en francés se dice «être tout ouïe».",
+      "«See eye to eye» es estar de acuerdo: «We don't always see eye to eye, but we're good friends»."
+     ],
+     "q": "¿Con quién estás casi siempre de acuerdo?",
+     "c": "Cuando hoy alguien quiera contarte algo, responde «I'm all ears!»."
+    },
+    "fr": {
+     "t": "Expressions des yeux et des oreilles",
+     "g": "Apprendre des expressions sur les yeux et les oreilles en anglais et en français.",
+     "p": [
+      "« Keep an eye on » veut dire garder un œil sur : « Can you keep an eye on my bag? »",
+      "« I'm all ears » veut dire je suis tout ouïe ; en français, « être tout ouïe ».",
+      "« See eye to eye » veut dire être d'accord : « We don't always see eye to eye, but we're good friends. »"
+     ],
+     "q": "Avec qui es-tu presque toujours d'accord ?",
+     "c": "Quand quelqu'un voudra te raconter quelque chose aujourd'hui, réponds « je suis tout ouïe ! »."
+    },
+    "it": {
+     "t": "Modi di dire con occhi e orecchie",
+     "g": "Imparare modi di dire su occhi e orecchie in inglese e francese.",
+     "p": [
+      "«Keep an eye on» vuol dire tenere d'occhio: «Can you keep an eye on my bag?».",
+      "«I'm all ears» vuol dire sono tutt'orecchi; in francese «être tout ouïe».",
+      "«See eye to eye» vuol dire essere d'accordo: «We don't always see eye to eye, but we're good friends»."
+     ],
+     "q": "Con chi sei quasi sempre d'accordo?",
+     "c": "Quando oggi qualcuno vuole raccontarti qualcosa, rispondi «sono tutt'orecchi!»."
+    },
+    "pt": {
+     "t": "Expressões de olhos e ouvidos",
+     "g": "Aprender expressões de olhos e ouvidos em inglês e francês.",
+     "p": [
+      "«Keep an eye on» é ficar de olho: «Can you keep an eye on my bag?».",
+      "«I'm all ears» é sou todo ouvidos; em francês diz-se «être tout ouïe».",
+      "«See eye to eye» é estar de acordo: «We don't always see eye to eye, but we're good friends»."
+     ],
+     "q": "Com quem estás quase sempre de acordo?",
+     "c": "Quando hoje alguém te quiser contar algo, responde «sou todo ouvidos!»."
+    },
+    "pt_BR": {
+     "t": "Expressões de olhos e ouvidos",
+     "g": "Aprender expressões de olhos e ouvidos em inglês e francês.",
+     "p": [
+      "“Keep an eye on” é ficar de olho: “Can you keep an eye on my bag?”.",
+      "“I'm all ears” é sou todo ouvidos; em francês se diz “être tout ouïe”.",
+      "“See eye to eye” é concordar: “We don't always see eye to eye, but we're good friends”."
+     ],
+     "q": "Com quem você quase sempre concorda?",
+     "c": "Quando alguém quiser te contar algo hoje, responda “sou todo ouvidos!”."
+    }
+   }
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Heart and mind idioms",
+     "g": "Learn idioms about the heart and mind in English and Portuguese.",
+     "p": [
+      "“Learn by heart” means to memorise; Portuguese says “saber de cor”, from the old idea that memory lived in the heart.",
+      "“A change of heart” means changing your opinion or decision: “I had a change of heart and joined the trip.”",
+      "“Slip your mind” means to forget: “Sorry, your birthday totally slipped my mind!”"
+     ],
+     "q": "What is something you learned by heart as a child and still remember?",
+     "c": "Learn one short idiom from this month by heart today and say it without looking."
+    },
+    "de": {
+     "t": "Redewendungen über Herz und Kopf",
+     "g": "Redewendungen über Herz und Kopf auf Englisch und Portugiesisch lernen.",
+     "p": [
+      "„Learn by heart“ heißt auswendig lernen; Portugiesisch sagt „saber de cor“, aus der alten Idee, dass das Gedächtnis im Herzen sitzt.",
+      "„A change of heart“ heißt, seine Meinung oder Entscheidung ändern: „I had a change of heart and joined the trip.“",
+      "„Slip your mind“ heißt, etwas vergessen: „Sorry, your birthday totally slipped my mind!“"
+     ],
+     "q": "Was hast du als Kind auswendig gelernt und weißt es noch heute?",
+     "c": "Lerne heute eine kurze Redewendung aus diesem Monat auswendig und sag sie, ohne nachzuschauen."
+    },
+    "es": {
+     "t": "Expresiones de corazón y mente",
+     "g": "Aprender expresiones sobre el corazón y la mente en inglés y portugués.",
+     "p": [
+      "«Learn by heart» es aprender de memoria; el portugués dice «saber de cor», como el español antiguo «de coro», del corazón.",
+      "«A change of heart» es cambiar de opinión o de decisión: «I had a change of heart and joined the trip».",
+      "«Slip your mind» es olvidarse: «Sorry, your birthday totally slipped my mind!»."
+     ],
+     "q": "¿Qué aprendiste de memoria de pequeño y todavía recuerdas?",
+     "c": "Aprende hoy de memoria una expresión corta de este mes y dila sin mirar."
+    },
+    "fr": {
+     "t": "Expressions du cœur et de l'esprit",
+     "g": "Apprendre des expressions sur le cœur et l'esprit en anglais et en portugais.",
+     "p": [
+      "« Learn by heart » veut dire apprendre par cœur ; le portugais dit « saber de cor », car on croyait que la mémoire logeait dans le cœur.",
+      "« A change of heart » veut dire changer d'avis : « I had a change of heart and joined the trip. »",
+      "« Slip your mind » veut dire oublier : « Sorry, your birthday totally slipped my mind! »"
+     ],
+     "q": "Qu'as-tu appris par cœur enfant et dont tu te souviens encore ?",
+     "c": "Apprends aujourd'hui par cœur une courte expression de ce mois et dis-la sans regarder."
+    },
+    "it": {
+     "t": "Modi di dire su cuore e mente",
+     "g": "Imparare modi di dire su cuore e mente in inglese e portoghese.",
+     "p": [
+      "«Learn by heart» vuol dire imparare a memoria; il portoghese dice «saber de cor», dall'idea antica che la memoria stesse nel cuore.",
+      "«A change of heart» vuol dire cambiare idea: «I had a change of heart and joined the trip».",
+      "«Slip your mind» vuol dire dimenticare: «Sorry, your birthday totally slipped my mind!»."
+     ],
+     "q": "Che cosa hai imparato a memoria da bambino e ricordi ancora?",
+     "c": "Oggi impara a memoria un breve modo di dire di questo mese e ripetilo senza guardare."
+    },
+    "pt": {
+     "t": "Expressões do coração e da mente",
+     "g": "Aprender expressões sobre o coração e a mente em inglês e português.",
+     "p": [
+      "«Learn by heart» é aprender de cor; «saber de cor» vem do latim «cor», coração, onde se julgava morar a memória.",
+      "«A change of heart» é mudar de ideias: «I had a change of heart and joined the trip».",
+      "«Slip your mind» é esquecer-se: «Sorry, your birthday totally slipped my mind!»."
+     ],
+     "q": "O que aprendeste de cor em criança e ainda sabes?",
+     "c": "Aprende hoje de cor uma expressão curta deste mês e di-la sem olhar."
+    },
+    "pt_BR": {
+     "t": "Expressões do coração e da mente",
+     "g": "Aprender expressões sobre o coração e a mente em inglês e português.",
+     "p": [
+      "“Learn by heart” é decorar; “saber de cor” vem do latim “cor”, coração, onde se achava que morava a memória.",
+      "“A change of heart” é mudar de ideia: “I had a change of heart and joined the trip”.",
+      "“Slip your mind” é esquecer: “Sorry, your birthday totally slipped my mind!”."
+     ],
+     "q": "O que você decorou quando criança e ainda sabe?",
+     "c": "Decore hoje uma expressão curta deste mês e fale sem olhar."
+    }
+   }
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Colour idioms in English",
+     "g": "Learn four common English colour idioms.",
+     "p": [
+      "“Feeling blue” means feeling a bit sad; “green with envy” means very jealous, usually in a light, joking way.",
+      "“Out of the blue” means suddenly and unexpectedly: “She called me out of the blue after years.”",
+      "“Red tape” means annoying official rules and paperwork that slow things down."
+     ],
+     "q": "Has anything nice ever happened to you completely out of the blue?",
+     "c": "Describe your mood today with a colour, in English or in your own language."
+    },
+    "de": {
+     "t": "Farb-Redewendungen auf Englisch",
+     "g": "Vier gängige englische Farb-Redewendungen lernen.",
+     "p": [
+      "„Feeling blue“ heißt, ein bisschen traurig sein; „green with envy“ heißt grün vor Neid, meist scherzhaft gemeint.",
+      "„Out of the blue“ heißt aus heiterem Himmel: „She called me out of the blue after years.“",
+      "„Red tape“ (rotes Band) ist lästige Bürokratie, Papierkram, der alles bremst."
+     ],
+     "q": "Ist dir schon einmal etwas Schönes aus heiterem Himmel passiert?",
+     "c": "Beschreib deine heutige Stimmung mit einer Farbe, auf Englisch oder in deiner Sprache."
+    },
+    "es": {
+     "t": "Expresiones de colores en inglés",
+     "g": "Aprender cuatro expresiones inglesas comunes con colores.",
+     "p": [
+      "«Feeling blue» (sentirse azul) es estar algo triste; «green with envy» es verde de envidia, casi siempre en broma.",
+      "«Out of the blue» es de repente, sin avisar: «She called me out of the blue after years».",
+      "«Red tape» (cinta roja) es el papeleo y la burocracia que retrasan todo."
+     ],
+     "q": "¿Te ha pasado algo bonito de repente, sin esperarlo?",
+     "c": "Describe hoy tu estado de ánimo con un color, en inglés o en tu idioma."
+    },
+    "fr": {
+     "t": "Expressions de couleur en anglais",
+     "g": "Apprendre quatre expressions anglaises courantes avec des couleurs.",
+     "p": [
+      "« Feeling blue » (se sentir bleu) veut dire avoir un coup de blues ; « green with envy » veut dire vert de jalousie, souvent pour rire.",
+      "« Out of the blue » veut dire tout à coup, sans prévenir : « She called me out of the blue after years. »",
+      "« Red tape » (ruban rouge) désigne la paperasse administrative qui ralentit tout."
+     ],
+     "q": "T'est-il déjà arrivé quelque chose de chouette complètement par surprise ?",
+     "c": "Décris ton humeur du jour avec une couleur, en anglais ou dans ta langue."
+    },
+    "it": {
+     "t": "Modi di dire con i colori in inglese",
+     "g": "Imparare quattro modi di dire inglesi comuni con i colori.",
+     "p": [
+      "«Feeling blue» (sentirsi blu) vuol dire essere un po' giù; «green with envy» vuol dire verde d'invidia, spesso per scherzo.",
+      "«Out of the blue» vuol dire all'improvviso: «She called me out of the blue after years».",
+      "«Red tape» (nastro rosso) è la burocrazia, le scartoffie che rallentano tutto."
+     ],
+     "q": "Ti è mai successo qualcosa di bello all'improvviso, senza aspettartelo?",
+     "c": "Descrivi il tuo umore di oggi con un colore, in inglese o nella tua lingua."
+    },
+    "pt": {
+     "t": "Expressões de cores em inglês",
+     "g": "Aprender quatro expressões inglesas comuns com cores.",
+     "p": [
+      "«Feeling blue» (sentir-se azul) é estar um pouco em baixo; «green with envy» é verde de inveja, muitas vezes a brincar.",
+      "«Out of the blue» é de repente, do nada: «She called me out of the blue after years».",
+      "«Red tape» (fita vermelha) é a burocracia e a papelada que atrasam tudo."
+     ],
+     "q": "Já te aconteceu algo bom completamente do nada?",
+     "c": "Descreve hoje o teu humor com uma cor, em inglês ou na tua língua."
+    },
+    "pt_BR": {
+     "t": "Expressões de cores em inglês",
+     "g": "Aprender quatro expressões inglesas comuns com cores.",
+     "p": [
+      "“Feeling blue” (sentir-se azul) é estar meio pra baixo; “green with envy” é verde de inveja, geralmente de brincadeira.",
+      "“Out of the blue” é do nada, de repente: “She called me out of the blue after years”.",
+      "“Red tape” (fita vermelha) é a burocracia e a papelada que atrasam tudo."
+     ],
+     "q": "Já aconteceu algo bom com você assim, do nada?",
+     "c": "Descreva hoje seu humor com uma cor, em inglês ou na sua língua."
+    }
+   }
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Colour idioms abroad",
+     "g": "Discover colour idioms in Spanish, French, Italian and Portuguese.",
+     "p": [
+      "Spanish “quedarse en blanco” (to stay in white) means your mind goes blank, for example in an exam.",
+      "French “voir la vie en rose” means seeing life through rose-tinted glasses, very positively.",
+      "Italian “essere al verde” (to be at the green) means having no money left; Portuguese “ficar vermelho” means to blush."
+     ],
+     "q": "When did your mind last “go blank”, quedarse en blanco?",
+     "c": "Pick your favourite colour idiom from today and explain it to someone in your own words."
+    },
+    "de": {
+     "t": "Farb-Redewendungen anderswo",
+     "g": "Farb-Redewendungen auf Spanisch, Französisch, Italienisch und Portugiesisch entdecken.",
+     "p": [
+      "Spanisch „quedarse en blanco“ (weiß bleiben) heißt, einen Blackout haben, etwa in einer Prüfung.",
+      "Französisch „voir la vie en rose“ heißt, das Leben durch die rosarote Brille sehen.",
+      "Italienisch „essere al verde“ (im Grünen sein) heißt, pleite sein; Portugiesisch „ficar vermelho“ heißt, rot werden."
+     ],
+     "q": "Wann hattest du zuletzt einen Blackout, ein „quedarse en blanco“?",
+     "c": "Such dir deine liebste Farb-Redewendung von heute aus und erklär sie jemandem in eigenen Worten."
+    },
+    "es": {
+     "t": "Expresiones de colores en otros idiomas",
+     "g": "Descubrir expresiones de colores en español, francés, italiano y portugués.",
+     "p": [
+      "«Quedarse en blanco» es no acordarse de nada de golpe, por ejemplo en un examen.",
+      "El francés «voir la vie en rose» es verlo todo de color de rosa.",
+      "El italiano «essere al verde» (estar en el verde) es estar sin blanca; el portugués «ficar vermelho» es ponerse rojo."
+     ],
+     "q": "¿Cuándo fue la última vez que te quedaste en blanco?",
+     "c": "Elige tu expresión de color favorita de hoy y explícasela a alguien con tus palabras."
+    },
+    "fr": {
+     "t": "Expressions de couleur ailleurs",
+     "g": "Découvrir des expressions de couleur en espagnol, français, italien et portugais.",
+     "p": [
+      "L'espagnol « quedarse en blanco » (rester en blanc) veut dire avoir un trou noir, par exemple à un examen.",
+      "« Voir la vie en rose » veut dire tout voir du bon côté, comme dans la célèbre chanson d'Édith Piaf.",
+      "L'italien « essere al verde » (être au vert) veut dire être fauché ; le portugais « ficar vermelho » veut dire rougir."
+     ],
+     "q": "Quand as-tu eu un trou noir pour la dernière fois ?",
+     "c": "Choisis ton expression de couleur préférée du jour et explique-la à quelqu'un avec tes mots."
+    },
+    "it": {
+     "t": "Modi di dire con i colori all'estero",
+     "g": "Scoprire modi di dire con i colori in spagnolo, francese, italiano e portoghese.",
+     "p": [
+      "Lo spagnolo «quedarse en blanco» (restare in bianco) vuol dire fare scena muta, avere un vuoto, per esempio a un esame.",
+      "Il francese «voir la vie en rose» vuol dire vedere tutto rosa, essere molto ottimisti.",
+      "«Essere al verde» vuol dire non avere più soldi; il portoghese «ficar vermelho» vuol dire arrossire."
+     ],
+     "q": "Quand'è stata l'ultima volta che hai avuto un vuoto totale?",
+     "c": "Scegli il tuo modo di dire con i colori preferito di oggi e spiegalo a qualcuno con parole tue."
+    },
+    "pt": {
+     "t": "Expressões de cores lá fora",
+     "g": "Descobrir expressões de cores em espanhol, francês, italiano e português.",
+     "p": [
+      "O espanhol «quedarse en blanco» (ficar em branco) é ter uma branca, por exemplo num exame.",
+      "O francês «voir la vie en rose» é ver a vida cor-de-rosa, com muito otimismo.",
+      "O italiano «essere al verde» (estar no verde) é estar teso, sem dinheiro; «ficar vermelho» é corar."
+     ],
+     "q": "Quando foi a última vez que tiveste uma branca?",
+     "c": "Escolhe a tua expressão de cor preferida de hoje e explica-a a alguém por palavras tuas."
+    },
+    "pt_BR": {
+     "t": "Expressões de cores lá fora",
+     "g": "Descobrir expressões de cores em espanhol, francês, italiano e português.",
+     "p": [
+      "O espanhol “quedarse en blanco” (ficar em branco) é dar um branco, por exemplo numa prova.",
+      "O francês “voir la vie en rose” é ver a vida cor-de-rosa, com muito otimismo.",
+      "O italiano “essere al verde” (estar no verde) é estar duro, sem grana; “ficar vermelho” é ficar com vergonha, corar."
+     ],
+     "q": "Quando foi a última vez que você deu um branco?",
+     "c": "Escolha sua expressão de cor favorita de hoje e explique para alguém com suas palavras."
+    }
+   }
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Number idioms",
+     "g": "Learn number idioms in English and Spanish.",
+     "p": [
+      "“On cloud nine” means extremely happy: “She was on cloud nine after the good news.”",
+      "“At sixes and sevens” (mainly British) means confused and disorganised: “We're at sixes and sevens after the move.”",
+      "Spanish “en un dos por tres” (in a two by three) means in no time, very quickly: “Lo hago en un dos por tres.”"
+     ],
+     "q": "What would put you on cloud nine this week?",
+     "c": "Do one small job today “en un dos por tres” and tell someone you did it in no time."
+    },
+    "de": {
+     "t": "Zahlen-Redewendungen",
+     "g": "Zahlen-Redewendungen auf Englisch und Spanisch lernen.",
+     "p": [
+      "„On cloud nine“ (auf Wolke neun) heißt überglücklich, wie unser „auf Wolke sieben“.",
+      "„At sixes and sevens“ (vor allem britisch) heißt durcheinander und chaotisch: „We're at sixes and sevens after the move.“",
+      "Spanisch „en un dos por tres“ (in einem zwei mal drei) heißt im Handumdrehen: „Lo hago en un dos por tres.“"
+     ],
+     "q": "Was würde dich diese Woche auf Wolke sieben bringen?",
+     "c": "Erledige heute eine kleine Aufgabe „en un dos por tres“ und erzähl jemandem, wie schnell es ging."
+    },
+    "es": {
+     "t": "Expresiones con números",
+     "g": "Aprender expresiones con números en inglés y español.",
+     "p": [
+      "«On cloud nine» (en la nube nueve) es estar en las nubes de felicidad, en el séptimo cielo.",
+      "«At sixes and sevens» (sobre todo británico) es estar hecho un lío, desorganizado: «We're at sixes and sevens after the move».",
+      "«En un dos por tres» es en un momento, rapidísimo: «lo hago en un dos por tres»."
+     ],
+     "q": "¿Qué te pondría en el séptimo cielo esta semana?",
+     "c": "Haz hoy una tarea pequeña en un dos por tres y cuéntale a alguien lo rápido que fue."
+    },
+    "fr": {
+     "t": "Expressions avec des chiffres",
+     "g": "Apprendre des expressions avec des chiffres en anglais et en espagnol.",
+     "p": [
+      "« On cloud nine » (sur le nuage neuf) veut dire être aux anges, au septième ciel.",
+      "« At sixes and sevens » (surtout britannique) veut dire être sens dessus dessous : « We're at sixes and sevens after the move. »",
+      "L'espagnol « en un dos por tres » (en un deux fois trois) veut dire en deux temps trois mouvements."
+     ],
+     "q": "Qu'est-ce qui te mettrait au septième ciel cette semaine ?",
+     "c": "Fais aujourd'hui une petite tâche « en un dos por tres » et raconte à quelqu'un que c'était fait en un clin d'œil."
+    },
+    "it": {
+     "t": "Modi di dire con i numeri",
+     "g": "Imparare modi di dire con i numeri in inglese e spagnolo.",
+     "p": [
+      "«On cloud nine» (sulla nuvola nove) vuol dire essere al settimo cielo.",
+      "«At sixes and sevens» (soprattutto britannico) vuol dire essere sottosopra, disorganizzati: «We're at sixes and sevens after the move».",
+      "Lo spagnolo «en un dos por tres» (in un due per tre) vuol dire in un attimo, in quattro e quattr'otto."
+     ],
+     "q": "Che cosa ti farebbe toccare il settimo cielo questa settimana?",
+     "c": "Oggi fai un piccolo lavoro «en un dos por tres» e racconta a qualcuno che l'hai finito in quattro e quattr'otto."
+    },
+    "pt": {
+     "t": "Expressões com números",
+     "g": "Aprender expressões com números em inglês e espanhol.",
+     "p": [
+      "«On cloud nine» (na nuvem nove) é estar no sétimo céu, felicíssimo.",
+      "«At sixes and sevens» (sobretudo britânico) é estar tudo de pernas para o ar: «We're at sixes and sevens after the move».",
+      "O espanhol «en un dos por tres» (num dois por três) é num instante, num abrir e fechar de olhos."
+     ],
+     "q": "O que te poria no sétimo céu esta semana?",
+     "c": "Faz hoje uma pequena tarefa «en un dos por tres» e conta a alguém que foi num instante."
+    },
+    "pt_BR": {
+     "t": "Expressões com números",
+     "g": "Aprender expressões com números em inglês e espanhol.",
+     "p": [
+      "“On cloud nine” (na nuvem nove) é estar nas nuvens, felicíssimo.",
+      "“At sixes and sevens” (mais britânico) é estar tudo de pernas pro ar: “We're at sixes and sevens after the move”.",
+      "O espanhol “en un dos por tres” (num dois por três) é num piscar de olhos, rapidinho."
+     ],
+     "q": "O que deixaria você nas nuvens esta semana?",
+     "c": "Faça hoje uma tarefinha “en un dos por tres” e conte para alguém que foi rapidinho."
+    }
+   }
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Time idioms",
+     "g": "Learn three English idioms about time.",
+     "p": [
+      "“In the nick of time” means just before it is too late: “We caught the train in the nick of time.”",
+      "“Once in a blue moon” means very rarely: “I eat fast food once in a blue moon.”",
+      "“Around the clock” means all day and all night, without stopping: “The café is open around the clock.”"
+     ],
+     "q": "What do you do only once in a blue moon?",
+     "c": "Tell someone today about something you do once in a blue moon, using the idiom."
+    },
+    "de": {
+     "t": "Zeit-Redewendungen",
+     "g": "Drei englische Redewendungen über die Zeit lernen.",
+     "p": [
+      "„In the nick of time“ heißt in letzter Sekunde: „We caught the train in the nick of time.“",
+      "„Once in a blue moon“ (einmal bei blauem Mond) heißt alle Jubeljahre, sehr selten.",
+      "„Around the clock“ heißt rund um die Uhr: „The café is open around the clock.“"
+     ],
+     "q": "Was machst du nur alle Jubeljahre?",
+     "c": "Erzähl heute jemandem von etwas, das du „once in a blue moon“ machst, und benutze die Wendung."
+    },
+    "es": {
+     "t": "Expresiones de tiempo",
+     "g": "Aprender tres expresiones inglesas sobre el tiempo.",
+     "p": [
+      "«In the nick of time» es justo a tiempo, en el último segundo: «We caught the train in the nick of time».",
+      "«Once in a blue moon» (una vez cada luna azul) es muy de vez en cuando, de higos a brevas.",
+      "«Around the clock» es las 24 horas, sin parar: «The café is open around the clock»."
+     ],
+     "q": "¿Qué haces solo de higos a brevas?",
+     "c": "Cuéntale hoy a alguien algo que haces «once in a blue moon» usando la expresión."
+    },
+    "fr": {
+     "t": "Expressions sur le temps",
+     "g": "Apprendre trois expressions anglaises sur le temps.",
+     "p": [
+      "« In the nick of time » veut dire juste à temps, à la dernière seconde : « We caught the train in the nick of time. »",
+      "« Once in a blue moon » (une fois par lune bleue) veut dire tous les trente-six du mois, très rarement.",
+      "« Around the clock » veut dire 24 heures sur 24 : « The café is open around the clock. »"
+     ],
+     "q": "Qu'est-ce que tu fais seulement tous les trente-six du mois ?",
+     "c": "Raconte aujourd'hui à quelqu'un une chose que tu fais « once in a blue moon », avec l'expression."
+    },
+    "it": {
+     "t": "Modi di dire sul tempo",
+     "g": "Imparare tre modi di dire inglesi sul tempo che passa.",
+     "p": [
+      "«In the nick of time» vuol dire appena in tempo, all'ultimo secondo: «We caught the train in the nick of time».",
+      "«Once in a blue moon» (una volta ogni luna blu) vuol dire molto di rado, ogni morte di papa.",
+      "«Around the clock» vuol dire 24 ore su 24: «The café is open around the clock»."
+     ],
+     "q": "Che cosa fai solo molto di rado?",
+     "c": "Oggi racconta a qualcuno una cosa che fai «once in a blue moon», usando l'espressione."
+    },
+    "pt": {
+     "t": "Expressões sobre o tempo",
+     "g": "Aprender três expressões inglesas sobre o tempo.",
+     "p": [
+      "«In the nick of time» é mesmo a tempo, à última da hora: «We caught the train in the nick of time».",
+      "«Once in a blue moon» (uma vez em cada lua azul) é muito raramente, de longe a longe.",
+      "«Around the clock» é 24 horas por dia, sem parar: «The café is open around the clock»."
+     ],
+     "q": "O que fazes só de longe a longe?",
+     "c": "Conta hoje a alguém algo que fazes «once in a blue moon», usando a expressão."
+    },
+    "pt_BR": {
+     "t": "Expressões sobre o tempo",
+     "g": "Aprender três expressões inglesas sobre o tempo.",
+     "p": [
+      "“In the nick of time” é bem na hora, no último segundo: “We caught the train in the nick of time”.",
+      "“Once in a blue moon” (uma vez a cada lua azul) é muito raramente, uma vez na vida, outra na morte.",
+      "“Around the clock” é 24 horas por dia, sem parar: “The café is open around the clock”."
+     ],
+     "q": "O que você faz só muito de vez em quando?",
+     "c": "Conte hoje para alguém algo que você faz “once in a blue moon”, usando a expressão."
+    }
+   }
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Money idioms",
+     "g": "Learn three English idioms about money and prices.",
+     "p": [
+      "“Break the bank” means to cost too much: “A picnic in the park won't break the bank.”",
+      "“Cheap as chips” (British) means very cheap: “These sunglasses were cheap as chips.”",
+      "“Pay through the nose” means to pay far too much: “We paid through the nose for parking.”"
+     ],
+     "q": "What is a fun thing to do that won't break the bank?",
+     "c": "Plan one fun activity for this week that is cheap as chips and share it with someone."
+    },
+    "de": {
+     "t": "Geld-Redewendungen",
+     "g": "Drei englische Redewendungen über Geld und Preise lernen.",
+     "p": [
+      "„Break the bank“ (die Bank sprengen) heißt, zu viel kosten: „A picnic in the park won't break the bank.“",
+      "„Cheap as chips“ (britisch, billig wie Pommes) heißt spottbillig: „These sunglasses were cheap as chips.“",
+      "„Pay through the nose“ (durch die Nase zahlen) heißt, viel zu viel bezahlen, sich dumm und dämlich zahlen."
+     ],
+     "q": "Was macht Spaß und kostet trotzdem kein Vermögen?",
+     "c": "Plane diese Woche eine spottbillige, lustige Aktivität und erzähl jemandem davon."
+    },
+    "es": {
+     "t": "Expresiones de dinero",
+     "g": "Aprender tres expresiones inglesas sobre el dinero y los precios.",
+     "p": [
+      "«Break the bank» (hacer saltar la banca) es costar demasiado: «A picnic in the park won't break the bank».",
+      "«Cheap as chips» (británico, barato como las patatas fritas) es tirado de precio: «These sunglasses were cheap as chips».",
+      "«Pay through the nose» (pagar por la nariz) es pagar un dineral, un ojo de la cara."
+     ],
+     "q": "¿Qué plan divertido no cuesta casi nada?",
+     "c": "Planea un plan divertido para esta semana que sea tirado de precio y compártelo con alguien."
+    },
+    "fr": {
+     "t": "Expressions sur l'argent",
+     "g": "Apprendre trois expressions anglaises sur l'argent et les prix.",
+     "p": [
+      "« Break the bank » (faire sauter la banque) veut dire coûter trop cher : « A picnic in the park won't break the bank. »",
+      "« Cheap as chips » (britannique, pas cher comme des frites) veut dire donné, très bon marché.",
+      "« Pay through the nose » (payer par le nez) veut dire payer le prix fort, beaucoup trop cher."
+     ],
+     "q": "Quelle activité sympa ne coûte presque rien ?",
+     "c": "Prévois une activité sympa pour cette semaine qui ne coûte presque rien et partage-la avec quelqu'un."
+    },
+    "it": {
+     "t": "Modi di dire sul denaro",
+     "g": "Imparare tre modi di dire inglesi su soldi e prezzi.",
+     "p": [
+      "«Break the bank» (far saltare il banco) vuol dire costare troppo: «A picnic in the park won't break the bank».",
+      "«Cheap as chips» (britannico, economico come le patatine) vuol dire che costa due soldi.",
+      "«Pay through the nose» (pagare dal naso) vuol dire pagare un occhio della testa."
+     ],
+     "q": "Quale attività divertente costa pochissimo?",
+     "c": "Programma per questa settimana un'attività divertente che costa due soldi e condividila con qualcuno."
+    },
+    "pt": {
+     "t": "Expressões sobre dinheiro",
+     "g": "Aprender três expressões inglesas sobre dinheiro e preços.",
+     "p": [
+      "«Break the bank» (rebentar a banca) é custar demasiado: «A picnic in the park won't break the bank».",
+      "«Cheap as chips» (britânico, barato como batatas fritas) é baratíssimo, ao preço da chuva.",
+      "«Pay through the nose» (pagar pelo nariz) é pagar os olhos da cara."
+     ],
+     "q": "Que atividade divertida quase não custa nada?",
+     "c": "Planeia para esta semana uma atividade divertida e baratíssima e partilha-a com alguém."
+    },
+    "pt_BR": {
+     "t": "Expressões sobre dinheiro",
+     "g": "Aprender três expressões inglesas sobre dinheiro e preços.",
+     "p": [
+      "“Break the bank” (quebrar a banca) é custar caro demais: “A picnic in the park won't break the bank”.",
+      "“Cheap as chips” (britânico, barato como batata frita) é baratinho, preço de banana.",
+      "“Pay through the nose” (pagar pelo nariz) é pagar os olhos da cara."
+     ],
+     "q": "Que programa divertido quase não custa nada?",
+     "c": "Planeje para esta semana um programa divertido e baratinho e compartilhe com alguém."
+    }
+   }
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Good luck expressions",
+     "g": "Wish people luck the way locals do in different languages.",
+     "p": [
+      "“Fingers crossed!” means I hope it goes well; people often cross their fingers as they say it.",
+      "“Knock on wood” (US) or “touch wood” (UK) is said after mentioning good luck, so it continues; some tap a table.",
+      "Italians say “in bocca al lupo!” (reply “crepi!”); Germans say “toi toi toi!”, often before an exam or a show."
+     ],
+     "q": "How do people in your culture wish someone luck before an exam?",
+     "c": "Wish someone luck today with one of these expressions, and explain what it means."
+    },
+    "de": {
+     "t": "Glückwünsche",
+     "g": "Leuten Glück wünschen wie die Einheimischen in verschiedenen Sprachen.",
+     "p": [
+      "„Fingers crossed!“ heißt, ich drücke die Daumen; im Englischen kreuzt man dabei die Finger.",
+      "„Knock on wood“ (USA) oder „touch wood“ (UK) entspricht unserem „toi toi toi, unberufen“; manche klopfen auf Holz.",
+      "Italiener sagen „in bocca al lupo!“ (Antwort „crepi!“); wir sagen „toi toi toi!“, etwa vor einer Prüfung oder Premiere."
+     ],
+     "q": "Wie wünscht man in deiner Kultur jemandem Glück vor einer Prüfung?",
+     "c": "Wünsch heute jemandem Glück mit einem dieser Ausdrücke und erklär ihm, was er bedeutet."
+    },
+    "es": {
+     "t": "Expresiones de buena suerte",
+     "g": "Desear suerte como los nativos en distintos idiomas.",
+     "p": [
+      "«Fingers crossed!» (dedos cruzados) es crucemos los dedos; en inglés se cruzan de verdad mientras se dice.",
+      "«Knock on wood» (EE. UU.) o «touch wood» (Reino Unido) es nuestro «toco madera»; algunos dan golpecitos en la mesa.",
+      "Los italianos dicen «in bocca al lupo!» (respuesta «crepi!»); los alemanes «toi toi toi!», antes de un examen o una función."
+     ],
+     "q": "¿Cómo se desea suerte en tu cultura antes de un examen?",
+     "c": "Desea hoy suerte a alguien con una de estas expresiones y explícale lo que significa."
+    },
+    "fr": {
+     "t": "Expressions pour souhaiter bonne chance",
+     "g": "Souhaiter bonne chance comme les gens du coin, dans différentes langues.",
+     "p": [
+      "« Fingers crossed! » (doigts croisés) veut dire je croise les doigts ; on les croise vraiment en le disant.",
+      "« Knock on wood » (US) ou « touch wood » (UK) correspond à « je touche du bois » ; certains tapotent la table.",
+      "Les Italiens disent « in bocca al lupo ! » (réponse « crepi ! ») ; les Allemands « toi toi toi ! », avant un examen ou un spectacle."
+     ],
+     "q": "Comment souhaite-t-on bonne chance avant un examen dans ta culture ?",
+     "c": "Souhaite bonne chance à quelqu'un aujourd'hui avec une de ces expressions et explique-lui son sens."
+    },
+    "it": {
+     "t": "Espressioni di buona fortuna",
+     "g": "Augurare buona fortuna come la gente del posto, in diverse lingue.",
+     "p": [
+      "«Fingers crossed!» (dita incrociate) vuol dire incrocio le dita; in inglese si incrociano davvero mentre lo si dice.",
+      "«Knock on wood» (USA) o «touch wood» (UK) è il nostro «tocca ferro»: gli anglofoni toccano legno, noi ferro.",
+      "Noi diciamo «in bocca al lupo!» (risposta «crepi!»); i tedeschi «toi toi toi!», prima di un esame o di uno spettacolo."
+     ],
+     "q": "Come si augura buona fortuna nella tua cultura prima di un esame?",
+     "c": "Oggi augura buona fortuna a qualcuno con una di queste espressioni e spiegagli che cosa significa."
+    },
+    "pt": {
+     "t": "Expressões de boa sorte",
+     "g": "Desejar sorte como os locais, em várias línguas.",
+     "p": [
+      "«Fingers crossed!» (dedos cruzados) é figas, estou a torcer; em inglês cruzam-se mesmo os dedos ao dizê-lo.",
+      "«Knock on wood» (EUA) ou «touch wood» (Reino Unido) é o nosso «bater na madeira»; há quem bata na mesa.",
+      "Os italianos dizem «in bocca al lupo!» (resposta «crepi!»); os alemães «toi toi toi!», antes de um exame ou espetáculo."
+     ],
+     "q": "Como se deseja sorte na tua cultura antes de um exame?",
+     "c": "Deseja hoje sorte a alguém com uma destas expressões e explica-lhe o que significa."
+    },
+    "pt_BR": {
+     "t": "Expressões de boa sorte",
+     "g": "Desejar sorte como os locais, em várias línguas.",
+     "p": [
+      "“Fingers crossed!” (dedos cruzados) é estou torcendo; em inglês as pessoas cruzam os dedos de verdade ao dizer.",
+      "“Knock on wood” (EUA) ou “touch wood” (Reino Unido) é o nosso “bater na madeira”; tem gente que bate na mesa.",
+      "Os italianos dizem “in bocca al lupo!” (resposta “crepi!”); os alemães “toi toi toi!”, antes de uma prova ou de um show."
+     ],
+     "q": "Como se deseja sorte na sua cultura antes de uma prova?",
+     "c": "Deseje sorte hoje a alguém com uma dessas expressões e explique o que ela significa."
+    }
+   }
+  }
+ ]
+}

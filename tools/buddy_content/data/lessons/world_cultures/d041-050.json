@@ -1,0 +1,835 @@
+{
+ "topic": "world_cultures",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Dance traditions",
+     "g": "Explore tango, Bollywood dance, flamenco and folk dances, and where they come from.",
+     "p": [
+      "Tango was born in the late 1800s around the Río de la Plata, in Buenos Aires and Montevideo, and is UNESCO heritage.",
+      "Bollywood dance mixes classical Indian dance, folk steps and modern moves, with expressive hands and faces.",
+      "Flamenco dancers stamp out rhythms with their feet, and Irish step dancers keep the upper body still while the feet fly."
+     ],
+     "q": "Which dance would you love to learn, and do you have a dance from your own culture?",
+     "c": "Watch a short video of a dance from another culture and try copying one simple step at home."
+    },
+    "de": {
+     "t": "Tanztraditionen",
+     "g": "Entdecke Tango, Bollywood-Tanz, Flamenco und Volkstänze und woher sie kommen.",
+     "p": [
+      "Tango entstand Ende des 19. Jahrhunderts am Río de la Plata, in Buenos Aires und Montevideo, und ist UNESCO-Kulturerbe.",
+      "Bollywood-Tanz mischt klassischen indischen Tanz, Volkstanzschritte und moderne Moves mit ausdrucksstarken Händen und Gesichtern.",
+      "Flamencotänzer stampfen Rhythmen mit den Füßen, und beim irischen Stepptanz bleibt der Oberkörper ruhig, während die Füße fliegen."
+     ],
+     "q": "Welchen Tanz würdest du gern lernen, und gibt es einen Tanz aus deiner eigenen Kultur?",
+     "c": "Schau ein kurzes Video eines Tanzes aus einer anderen Kultur und versuch zu Hause einen einfachen Schritt."
+    },
+    "es": {
+     "t": "Tradiciones de danza",
+     "g": "Explora el tango, el baile de Bollywood, el flamenco y las danzas folclóricas, y sus raíces.",
+     "p": [
+      "El tango nació a finales del siglo XIX en el Río de la Plata, en Buenos Aires y Montevideo, y es patrimonio de la UNESCO.",
+      "El baile de Bollywood mezcla danza clásica india, pasos folclóricos y movimientos modernos, con manos y caras expresivas.",
+      "En el flamenco se marca el ritmo con los pies, y en la danza irlandesa el torso se queda quieto mientras los pies vuelan."
+     ],
+     "q": "¿Qué baile te encantaría aprender y hay alguna danza propia de tu cultura?",
+     "c": "Mira un vídeo corto de un baile de otra cultura e intenta imitar un paso sencillo en casa."
+    },
+    "fr": {
+     "t": "Les traditions de danse",
+     "g": "Explore le tango, la danse de Bollywood, le flamenco et les danses folkloriques, et leurs origines.",
+     "p": [
+      "Le tango est né à la fin du XIXe siècle autour du Río de la Plata, à Buenos Aires et Montevideo, et figure au patrimoine de l'UNESCO.",
+      "La danse de Bollywood mêle danse classique indienne, pas folkloriques et gestes modernes, avec des mains et visages expressifs.",
+      "Les danseurs de flamenco frappent le rythme du pied, et en danse irlandaise le buste reste immobile pendant que les pieds volent."
+     ],
+     "q": "Quelle danse aimerais-tu apprendre, et existe-t-il une danse propre à ta culture ?",
+     "c": "Regarde une courte vidéo d'une danse d'une autre culture et essaie de reproduire un pas simple chez toi."
+    },
+    "it": {
+     "t": "Tradizioni di danza",
+     "g": "Esplora il tango, la danza di Bollywood, il flamenco e le danze popolari, e le loro radici.",
+     "p": [
+      "Il tango è nato alla fine dell'Ottocento sul Río de la Plata, tra Buenos Aires e Montevideo, ed è patrimonio UNESCO.",
+      "La danza di Bollywood unisce danza classica indiana, passi popolari e movimenti moderni, con mani e volti espressivi.",
+      "Nel flamenco il ritmo si batte con i piedi, e nella danza irlandese il busto resta fermo mentre i piedi volano."
+     ],
+     "q": "Quale danza ti piacerebbe imparare, e c'è una danza tipica della tua cultura?",
+     "c": "Guarda un breve video di una danza di un'altra cultura e prova a imitare un passo semplice a casa."
+    },
+    "pt": {
+     "t": "Tradições de dança",
+     "g": "Explora o tango, a dança de Bollywood, o flamenco e as danças folclóricas, e as suas origens.",
+     "p": [
+      "O tango nasceu no fim do século XIX no Rio da Prata, em Buenos Aires e Montevideu, e é património da UNESCO.",
+      "A dança de Bollywood mistura dança clássica indiana, passos folclóricos e movimentos modernos, com mãos e rostos expressivos.",
+      "No flamenco o ritmo marca-se com os pés, e na dança irlandesa o tronco fica imóvel enquanto os pés voam."
+     ],
+     "q": "Que dança adoravas aprender, e há alguma dança típica da tua cultura?",
+     "c": "Vê um vídeo curto de uma dança de outra cultura e tenta imitar um passo simples em casa."
+    },
+    "pt_BR": {
+     "t": "Tradições de dança",
+     "g": "Explore o tango, a dança de Bollywood, o flamenco e as danças folclóricas, e suas origens.",
+     "p": [
+      "O tango nasceu no fim do século XIX no Rio da Prata, em Buenos Aires e Montevidéu, e é patrimônio da UNESCO.",
+      "A dança de Bollywood mistura dança clássica indiana, passos folclóricos e movimentos modernos, com mãos e rostos expressivos.",
+      "No flamenco o ritmo é marcado com os pés, e na dança irlandesa o tronco fica parado enquanto os pés voam."
+     ],
+     "q": "Que dança você adoraria aprender, e existe alguma dança típica da sua cultura?",
+     "c": "Assista a um vídeo curto de uma dança de outra cultura e tente imitar um passo simples em casa."
+    }
+   }
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The Māori haka",
+     "g": "Understand what the haka means in New Zealand and when it is performed.",
+     "p": [
+      "The haka is a Māori ceremonial dance with powerful chanting, stamping, strong gestures and intense facial expressions.",
+      "It is performed by men and women to welcome guests, honour people and mark big moments like graduations.",
+      "Many people know it from the All Blacks rugby team, who perform the haka Ka Mate before international matches."
+     ],
+     "q": "What ceremony or song in your culture brings people together to show pride or respect?",
+     "c": "Watch a respectful performance of a haka and notice three things the performers express with their bodies."
+    },
+    "de": {
+     "t": "Der Haka der Māori",
+     "g": "Verstehe, was der Haka in Neuseeland bedeutet und wann er aufgeführt wird.",
+     "p": [
+      "Der Haka ist ein zeremonieller Tanz der Māori mit kraftvollem Sprechgesang, Stampfen, starken Gesten und intensiver Mimik.",
+      "Männer und Frauen führen ihn auf, um Gäste zu begrüßen, Menschen zu ehren und große Momente wie Abschlussfeiern zu würdigen.",
+      "Viele kennen ihn vom Rugbyteam All Blacks, das vor Länderspielen den Haka Ka Mate aufführt."
+     ],
+     "q": "Welche Zeremonie oder welches Lied bringt in deiner Kultur Menschen zusammen, um Stolz oder Respekt zu zeigen?",
+     "c": "Sieh dir eine respektvolle Haka-Aufführung an und achte auf drei Dinge, die die Tänzer mit dem Körper ausdrücken."
+    },
+    "es": {
+     "t": "El haka maorí",
+     "g": "Entiende qué significa el haka en Nueva Zelanda y cuándo se representa.",
+     "p": [
+      "El haka es una danza ceremonial maorí con cantos potentes, pisadas, gestos fuertes y expresiones faciales intensas.",
+      "Lo interpretan hombres y mujeres para dar la bienvenida, honrar a personas y celebrar grandes momentos como graduaciones.",
+      "Muchos lo conocen por la selección de rugby All Blacks, que interpreta el haka Ka Mate antes de los partidos internacionales."
+     ],
+     "q": "¿Qué ceremonia o canción de tu cultura une a la gente para mostrar orgullo o respeto?",
+     "c": "Mira una interpretación respetuosa de un haka y fíjate en tres cosas que los intérpretes expresan con el cuerpo."
+    },
+    "fr": {
+     "t": "Le haka maori",
+     "g": "Comprends ce que signifie le haka en Nouvelle-Zélande et quand il est exécuté.",
+     "p": [
+      "Le haka est une danse cérémonielle maorie avec des chants puissants, des frappes de pied, des gestes forts et des expressions intenses.",
+      "Hommes et femmes l'exécutent pour accueillir des invités, honorer des personnes et marquer de grands moments comme les remises de diplômes.",
+      "Beaucoup le connaissent grâce aux All Blacks, l'équipe de rugby qui exécute le haka Ka Mate avant ses matchs internationaux."
+     ],
+     "q": "Quelle cérémonie ou chanson de ta culture réunit les gens pour exprimer fierté ou respect ?",
+     "c": "Regarde une interprétation respectueuse d'un haka et note trois choses que les interprètes expriment avec leur corps."
+    },
+    "it": {
+     "t": "L'haka maori",
+     "g": "Comprendi cosa significa l'haka in Nuova Zelanda e quando viene eseguita.",
+     "p": [
+      "L'haka è una danza cerimoniale maori con canti potenti, colpi di piedi, gesti forti ed espressioni del viso intense.",
+      "La eseguono uomini e donne per accogliere ospiti, onorare persone e segnare grandi momenti come le lauree.",
+      "Molti la conoscono grazie agli All Blacks, la squadra di rugby che esegue l'haka Ka Mate prima delle partite internazionali."
+     ],
+     "q": "Quale cerimonia o canzone della tua cultura unisce le persone per mostrare orgoglio o rispetto?",
+     "c": "Guarda un'esecuzione rispettosa di un'haka e nota tre cose che gli interpreti esprimono con il corpo."
+    },
+    "pt": {
+     "t": "O haka maori",
+     "g": "Percebe o que significa o haka na Nova Zelândia e quando é executado.",
+     "p": [
+      "O haka é uma dança cerimonial maori com cânticos fortes, batidas de pés, gestos vigorosos e expressões faciais intensas.",
+      "É executado por homens e mulheres para receber convidados, homenagear pessoas e marcar grandes momentos como formaturas.",
+      "Muitos conhecem-no graças aos All Blacks, a seleção de râguebi que executa o haka Ka Mate antes dos jogos internacionais."
+     ],
+     "q": "Que cerimónia ou canção da tua cultura junta as pessoas para mostrar orgulho ou respeito?",
+     "c": "Vê uma atuação respeitosa de um haka e repara em três coisas que os intérpretes exprimem com o corpo."
+    },
+    "pt_BR": {
+     "t": "O haka maori",
+     "g": "Entenda o que significa o haka na Nova Zelândia e quando ele é apresentado.",
+     "p": [
+      "O haka é uma dança cerimonial maori com cantos fortes, batidas de pés, gestos vigorosos e expressões faciais intensas.",
+      "Homens e mulheres o apresentam para receber convidados, homenagear pessoas e marcar grandes momentos como formaturas.",
+      "Muita gente o conhece por causa dos All Blacks, a seleção de rúgbi que apresenta o haka Ka Mate antes dos jogos internacionais."
+     ],
+     "q": "Que cerimônia ou canção da sua cultura une as pessoas para mostrar orgulho ou respeito?",
+     "c": "Assista a uma apresentação respeitosa de um haka e repare em três coisas que os participantes expressam com o corpo."
+    }
+   }
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Storytelling and folk tales",
+     "g": "Meet folk heroes like Anansi and Baba Yaga and discover what their stories teach.",
+     "p": [
+      "Anansi the clever spider comes from the Akan people of Ghana, and his tales travelled with people to the Caribbean.",
+      "Baba Yaga, the mysterious old woman of Slavic tales, lives in a forest hut on chicken legs and tests travellers' courage.",
+      "In Turkey, the Middle East and Central Asia, the funny and wise Nasreddin Hodja teaches lessons with a smile."
+     ],
+     "q": "Which folk tale or story did you hear as a child, and what lesson did it teach you?",
+     "c": "Tell someone a short folk tale from your culture today, or read one from a culture you do not know."
+    },
+    "de": {
+     "t": "Erzählkunst und Volksmärchen",
+     "g": "Lerne Volkshelden wie Anansi und Baba Jaga kennen und entdecke, was ihre Geschichten lehren.",
+     "p": [
+      "Die schlaue Spinne Anansi stammt vom Volk der Akan in Ghana, und ihre Geschichten reisten mit den Menschen in die Karibik.",
+      "Baba Jaga, die geheimnisvolle Alte slawischer Märchen, wohnt in einer Waldhütte auf Hühnerbeinen und prüft den Mut Reisender.",
+      "In der Türkei, im Nahen Osten und in Zentralasien lehrt der witzige, weise Nasreddin Hodscha mit einem Lächeln."
+     ],
+     "q": "Welches Märchen hast du als Kind gehört, und welche Lehre steckte darin?",
+     "c": "Erzähl heute jemandem ein kurzes Märchen aus deiner Kultur oder lies eins aus einer Kultur, die du nicht kennst."
+    },
+    "es": {
+     "t": "Narración y cuentos populares",
+     "g": "Conoce a héroes populares como Anansi y Baba Yaga y descubre lo que enseñan sus historias.",
+     "p": [
+      "Anansi, la araña astuta, viene del pueblo akan de Ghana, y sus cuentos viajaron con la gente hasta el Caribe.",
+      "Baba Yaga, la misteriosa anciana de los cuentos eslavos, vive en una cabaña del bosque con patas de gallina y pone a prueba a los viajeros.",
+      "En Turquía, Oriente Medio y Asia Central, el divertido y sabio Nasreddín Hodja enseña lecciones con una sonrisa."
+     ],
+     "q": "¿Qué cuento escuchaste de niño y qué lección te enseñó?",
+     "c": "Cuéntale hoy a alguien un cuento corto de tu cultura o lee uno de una cultura que no conozcas."
+    },
+    "fr": {
+     "t": "Contes et récits populaires",
+     "g": "Rencontre des héros populaires comme Anansi et Baba Yaga et découvre ce que leurs histoires enseignent.",
+     "p": [
+      "Anansi, l'araignée rusée, vient du peuple akan du Ghana, et ses contes ont voyagé avec les gens jusqu'aux Caraïbes.",
+      "Baba Yaga, la mystérieuse vieille femme des contes slaves, vit dans une cabane sur pattes de poule et met les voyageurs à l'épreuve.",
+      "En Turquie, au Moyen-Orient et en Asie centrale, le drôle et sage Nasreddin Hodja donne des leçons avec le sourire."
+     ],
+     "q": "Quel conte as-tu entendu enfant, et quelle leçon t'a-t-il apprise ?",
+     "c": "Raconte aujourd'hui à quelqu'un un court conte de ta culture ou lis-en un d'une culture que tu ne connais pas."
+    },
+    "it": {
+     "t": "Narrazione e fiabe popolari",
+     "g": "Conosci eroi popolari come Anansi e Baba Jaga e scopri cosa insegnano le loro storie.",
+     "p": [
+      "Anansi, il ragno astuto, viene dal popolo akan del Ghana, e le sue storie hanno viaggiato con le persone fino ai Caraibi.",
+      "Baba Jaga, la misteriosa vecchia delle fiabe slave, vive in una capanna su zampe di gallina e mette alla prova i viaggiatori.",
+      "In Turchia, Medio Oriente e Asia centrale, il buffo e saggio Nasreddin Hodja insegna lezioni con un sorriso."
+     ],
+     "q": "Quale fiaba hai ascoltato da bambino, e che lezione ti ha insegnato?",
+     "c": "Racconta oggi a qualcuno una breve fiaba della tua cultura o leggine una di una cultura che non conosci."
+    },
+    "pt": {
+     "t": "Narração e contos populares",
+     "g": "Conhece heróis populares como Anansi e Baba Yaga e descobre o que as suas histórias ensinam.",
+     "p": [
+      "Anansi, a aranha esperta, vem do povo akan do Gana, e os seus contos viajaram com as pessoas até às Caraíbas.",
+      "Baba Yaga, a misteriosa velhinha dos contos eslavos, vive numa cabana na floresta com patas de galinha e testa a coragem dos viajantes.",
+      "Na Turquia, no Médio Oriente e na Ásia Central, o divertido e sábio Nasreddin Hodja ensina lições com um sorriso."
+     ],
+     "q": "Que conto ouviste em criança, e que lição te ensinou?",
+     "c": "Conta hoje a alguém um conto curto da tua cultura ou lê um de uma cultura que não conheces."
+    },
+    "pt_BR": {
+     "t": "Narração e contos populares",
+     "g": "Conheça heróis populares como Anansi e Baba Yaga e descubra o que suas histórias ensinam.",
+     "p": [
+      "Anansi, a aranha esperta, vem do povo akan de Gana, e seus contos viajaram com as pessoas até o Caribe.",
+      "Baba Yaga, a misteriosa velhinha dos contos eslavos, mora numa cabana na floresta com pés de galinha e testa a coragem dos viajantes.",
+      "Na Turquia, no Oriente Médio e na Ásia Central, o divertido e sábio Nasreddin Hodja ensina lições com um sorriso."
+     ],
+     "q": "Que conto você ouviu na infância, e que lição ele te ensinou?",
+     "c": "Conte hoje a alguém um conto curto da sua cultura ou leia um de uma cultura que você não conhece."
+    }
+   }
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Proverbs as windows",
+     "g": "Discover what popular sayings reveal about a culture's values.",
+     "p": [
+      "Japan says: fall seven times, stand up eight, a short lesson in patience and perseverance.",
+      "A Chinese saying from Laozi reminds us that a journey of a thousand miles begins with a single step.",
+      "A saying often called an African proverb teaches: if you want to go fast, go alone; if you want to go far, go together."
+     ],
+     "q": "What is your favourite proverb from your language, and what value does it show?",
+     "c": "Write down one proverb from your culture and try to translate its meaning for a friend abroad."
+    },
+    "de": {
+     "t": "Sprichwörter als Fenster",
+     "g": "Entdecke, was beliebte Redensarten über die Werte einer Kultur verraten.",
+     "p": [
+      "In Japan heißt es: Siebenmal hinfallen, achtmal aufstehen, eine kurze Lektion in Geduld und Ausdauer.",
+      "Ein chinesisches Wort von Laozi erinnert daran, dass auch eine Reise von tausend Meilen mit einem ersten Schritt beginnt.",
+      "Ein oft als afrikanisch bezeichnetes Sprichwort sagt: Willst du schnell gehen, geh allein; willst du weit gehen, geh gemeinsam."
+     ],
+     "q": "Was ist dein liebstes Sprichwort in deiner Sprache, und welchen Wert zeigt es?",
+     "c": "Schreib ein Sprichwort aus deiner Kultur auf und versuche, seine Bedeutung für einen Freund im Ausland zu übersetzen."
+    },
+    "es": {
+     "t": "Los refranes como ventanas",
+     "g": "Descubre lo que los refranes populares revelan sobre los valores de una cultura.",
+     "p": [
+      "En Japón se dice: cae siete veces, levántate ocho, una breve lección de paciencia y constancia.",
+      "Una frase china de Laozi recuerda que un viaje de mil millas comienza con un solo paso.",
+      "Un dicho a menudo llamado proverbio africano enseña: si quieres ir rápido, ve solo; si quieres llegar lejos, ve acompañado."
+     ],
+     "q": "¿Cuál es tu refrán favorito en tu idioma y qué valor muestra?",
+     "c": "Escribe un refrán de tu cultura e intenta explicar su significado a un amigo de otro país."
+    },
+    "fr": {
+     "t": "Les proverbes comme fenêtres",
+     "g": "Découvre ce que les dictons populaires révèlent des valeurs d'une culture.",
+     "p": [
+      "Au Japon, on dit : tombe sept fois, relève-toi huit, une courte leçon de patience et de persévérance.",
+      "Une phrase chinoise de Laozi rappelle qu'un voyage de mille lieues commence par un premier pas.",
+      "Un dicton souvent présenté comme africain enseigne : seul on va plus vite, ensemble on va plus loin."
+     ],
+     "q": "Quel est ton proverbe préféré dans ta langue, et quelle valeur montre-t-il ?",
+     "c": "Note un proverbe de ta culture et essaie d'en expliquer le sens à un ami étranger."
+    },
+    "it": {
+     "t": "I proverbi come finestre",
+     "g": "Scopri cosa rivelano i proverbi popolari sui valori di una cultura.",
+     "p": [
+      "In Giappone si dice: cadi sette volte, rialzati otto, una breve lezione di pazienza e perseveranza.",
+      "Una frase cinese di Laozi ricorda che un viaggio di mille miglia comincia con un solo passo.",
+      "Un detto spesso chiamato proverbio africano insegna: se vuoi andare veloce, vai da solo; se vuoi andare lontano, vai insieme."
+     ],
+     "q": "Qual è il tuo proverbio preferito nella tua lingua, e quale valore mostra?",
+     "c": "Scrivi un proverbio della tua cultura e prova a spiegarne il significato a un amico straniero."
+    },
+    "pt": {
+     "t": "Os provérbios como janelas",
+     "g": "Descobre o que os provérbios populares revelam sobre os valores de uma cultura.",
+     "p": [
+      "No Japão diz-se: cai sete vezes, levanta-te oito, uma pequena lição de paciência e persistência.",
+      "Uma frase chinesa de Laozi lembra que uma viagem de mil milhas começa com um único passo.",
+      "Um ditado muitas vezes chamado provérbio africano ensina: se queres ir depressa, vai sozinho; se queres ir longe, vai acompanhado."
+     ],
+     "q": "Qual é o teu provérbio preferido na tua língua, e que valor mostra?",
+     "c": "Escreve um provérbio da tua cultura e tenta explicar o seu significado a um amigo estrangeiro."
+    },
+    "pt_BR": {
+     "t": "Os provérbios como janelas",
+     "g": "Descubra o que os ditados populares revelam sobre os valores de uma cultura.",
+     "p": [
+      "No Japão se diz: caia sete vezes, levante-se oito, uma pequena lição de paciência e persistência.",
+      "Uma frase chinesa de Laozi lembra que uma jornada de mil milhas começa com um único passo.",
+      "Um ditado muitas vezes chamado de provérbio africano ensina: se quer ir rápido, vá sozinho; se quer ir longe, vá acompanhado."
+     ],
+     "q": "Qual é o seu ditado favorito no seu idioma, e que valor ele mostra?",
+     "c": "Escreva um ditado da sua cultura e tente explicar o significado dele a um amigo estrangeiro."
+    }
+   }
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Games people play",
+     "g": "Explore popular pastimes like mahjong, cricket and sepak takraw around the world.",
+     "p": [
+      "Mahjong, a tile game from China, is a lively social ritual where friends and family gather around the table.",
+      "Cricket, born in England, is a passion in India, Pakistan, Australia, the Caribbean and beyond.",
+      "In Southeast Asia, sepak takraw players kick a rattan ball over a net, like volleyball without using hands."
+     ],
+     "q": "Which game or sport did you play most as a child, and do you still play it?",
+     "c": "Learn the basic rules of a game from another culture today and explain them to someone."
+    },
+    "de": {
+     "t": "Spiele, die Menschen spielen",
+     "g": "Entdecke beliebte Zeitvertreibe wie Mahjong, Cricket und Sepak Takraw rund um die Welt.",
+     "p": [
+      "Mahjong, ein Spiel mit Steinen aus China, ist ein geselliges Ritual, bei dem sich Freunde und Familie am Tisch treffen.",
+      "Cricket, in England entstanden, ist eine Leidenschaft in Indien, Pakistan, Australien, der Karibik und darüber hinaus.",
+      "In Südostasien kicken Sepak-Takraw-Spieler einen Rattanball übers Netz, wie Volleyball ohne Hände."
+     ],
+     "q": "Welches Spiel oder welchen Sport hast du als Kind am meisten gespielt, und spielst du ihn noch?",
+     "c": "Lerne heute die Grundregeln eines Spiels aus einer anderen Kultur und erkläre sie jemandem."
+    },
+    "es": {
+     "t": "Juegos del mundo",
+     "g": "Explora pasatiempos populares como el mahjong, el críquet y el sepak takraw.",
+     "p": [
+      "El mahjong, un juego de fichas de China, es un animado ritual social que reúne a amigos y familia alrededor de la mesa.",
+      "El críquet, nacido en Inglaterra, es una pasión en India, Pakistán, Australia, el Caribe y más allá.",
+      "En el sudeste asiático, en el sepak takraw se patea una pelota de ratán por encima de una red, como un voleibol sin manos."
+     ],
+     "q": "¿A qué juego o deporte jugabas más de niño y todavía lo practicas?",
+     "c": "Aprende hoy las reglas básicas de un juego de otra cultura y explícaselas a alguien."
+    },
+    "fr": {
+     "t": "Les jeux du monde",
+     "g": "Explore des passe-temps populaires comme le mahjong, le cricket et le sepak takraw.",
+     "p": [
+      "Le mahjong, jeu de tuiles venu de Chine, est un rituel social animé qui réunit amis et famille autour de la table.",
+      "Le cricket, né en Angleterre, est une passion en Inde, au Pakistan, en Australie, aux Caraïbes et ailleurs.",
+      "En Asie du Sud-Est, au sepak takraw, on frappe du pied une balle en rotin par-dessus un filet, comme un volley sans les mains."
+     ],
+     "q": "À quel jeu ou sport jouais-tu le plus enfant, et y joues-tu encore ?",
+     "c": "Apprends aujourd'hui les règles de base d'un jeu d'une autre culture et explique-les à quelqu'un."
+    },
+    "it": {
+     "t": "Giochi del mondo",
+     "g": "Esplora passatempi popolari come il mahjong, il cricket e il sepak takraw.",
+     "p": [
+      "Il mahjong, gioco di tessere nato in Cina, è un vivace rito sociale che riunisce amici e famiglia attorno al tavolo.",
+      "Il cricket, nato in Inghilterra, è una passione in India, Pakistan, Australia, nei Caraibi e altrove.",
+      "Nel Sud-est asiatico, nel sepak takraw si calcia una palla di rattan oltre una rete, come una pallavolo senza mani."
+     ],
+     "q": "A quale gioco o sport giocavi di più da bambino, e ci giochi ancora?",
+     "c": "Impara oggi le regole di base di un gioco di un'altra cultura e spiegale a qualcuno."
+    },
+    "pt": {
+     "t": "Jogos pelo mundo",
+     "g": "Explora passatempos populares como o mahjong, o críquete e o sepak takraw.",
+     "p": [
+      "O mahjong, um jogo de peças da China, é um animado ritual social que junta amigos e família à volta da mesa.",
+      "O críquete, nascido em Inglaterra, é uma paixão na Índia, no Paquistão, na Austrália, nas Caraíbas e não só.",
+      "No Sudeste Asiático, no sepak takraw chuta-se uma bola de vime por cima de uma rede, como um voleibol sem mãos."
+     ],
+     "q": "A que jogo ou desporto jogavas mais em criança, e ainda jogas?",
+     "c": "Aprende hoje as regras básicas de um jogo de outra cultura e explica-as a alguém."
+    },
+    "pt_BR": {
+     "t": "Jogos pelo mundo",
+     "g": "Explore passatempos populares como o mahjong, o críquete e o sepak takraw.",
+     "p": [
+      "O mahjong, um jogo de peças da China, é um animado ritual social que reúne amigos e família em volta da mesa.",
+      "O críquete, nascido na Inglaterra, é uma paixão na Índia, no Paquistão, na Austrália, no Caribe e além.",
+      "No Sudeste Asiático, no sepak takraw se chuta uma bola de vime por cima de uma rede, como um vôlei sem as mãos."
+     ],
+     "q": "Que jogo ou esporte você mais jogava na infância, e ainda joga?",
+     "c": "Aprenda hoje as regras básicas de um jogo de outra cultura e explique para alguém."
+    }
+   }
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Football as a global culture",
+     "g": "See how the world's most popular sport shapes rituals and friendships.",
+     "p": [
+      "Football is played almost everywhere, from beaches and streets to giant stadiums, with just a ball and some space.",
+      "Fans share songs, scarves, colours and match-day rituals, and support for a club is often passed from parent to child.",
+      "A match can connect strangers instantly: talking about football is an easy way to start a conversation abroad."
+     ],
+     "q": "Do you follow football or another sport, and what rituals do you have around it?",
+     "c": "Find out the name of the most popular football club in a country you would like to visit."
+    },
+    "de": {
+     "t": "Fußball als globale Kultur",
+     "g": "Sieh, wie die beliebteste Sportart der Welt Rituale und Freundschaften prägt.",
+     "p": [
+      "Fußball wird fast überall gespielt, am Strand, auf der Straße und in riesigen Stadien, mit nur einem Ball und etwas Platz.",
+      "Fans teilen Lieder, Schals, Farben und Spieltagsrituale, und die Liebe zu einem Verein geht oft von Eltern auf Kinder über.",
+      "Ein Spiel verbindet Fremde sofort: Über Fußball zu reden ist im Ausland ein leichter Gesprächseinstieg."
+     ],
+     "q": "Verfolgst du Fußball oder einen anderen Sport, und welche Rituale hast du dabei?",
+     "c": "Finde heraus, wie der beliebteste Fußballverein in einem Land heißt, das du gern besuchen würdest."
+    },
+    "es": {
+     "t": "El fútbol como cultura global",
+     "g": "Descubre cómo el deporte más popular del mundo crea rituales y amistades.",
+     "p": [
+      "El fútbol se juega casi en todas partes, de playas y calles a estadios gigantes, con solo un balón y algo de espacio.",
+      "Los aficionados comparten cánticos, bufandas, colores y rituales de partido, y el amor por un club suele pasar de padres a hijos.",
+      "Un partido conecta al instante a desconocidos: hablar de fútbol es una forma fácil de empezar una charla en el extranjero."
+     ],
+     "q": "¿Sigues el fútbol u otro deporte y qué rituales tienes alrededor de él?",
+     "c": "Averigua el nombre del club de fútbol más popular de un país que te gustaría visitar."
+    },
+    "fr": {
+     "t": "Le football, une culture mondiale",
+     "g": "Vois comment le sport le plus populaire du monde crée des rituels et des amitiés.",
+     "p": [
+      "Le football se joue presque partout, sur les plages, dans les rues et dans des stades géants, avec juste un ballon et un peu d'espace.",
+      "Les supporters partagent chants, écharpes, couleurs et rituels de match, et l'amour d'un club se transmet souvent de parent à enfant.",
+      "Un match relie aussitôt des inconnus : parler foot est un moyen facile d'engager la conversation à l'étranger."
+     ],
+     "q": "Suis-tu le football ou un autre sport, et quels rituels as-tu autour de lui ?",
+     "c": "Cherche le nom du club de football le plus populaire d'un pays que tu aimerais visiter."
+    },
+    "it": {
+     "t": "Il calcio come cultura globale",
+     "g": "Scopri come lo sport più popolare del mondo crea riti e amicizie.",
+     "p": [
+      "Il calcio si gioca quasi ovunque, da spiagge e strade a stadi giganti, con solo un pallone e un po' di spazio.",
+      "I tifosi condividono cori, sciarpe, colori e riti della partita, e la passione per una squadra passa spesso da genitori a figli.",
+      "Una partita unisce subito degli sconosciuti: parlare di calcio è un modo facile per iniziare una conversazione all'estero."
+     ],
+     "q": "Segui il calcio o un altro sport, e che riti hai legati a esso?",
+     "c": "Scopri il nome della squadra di calcio più popolare di un paese che vorresti visitare."
+    },
+    "pt": {
+     "t": "O futebol como cultura global",
+     "g": "Vê como o desporto mais popular do mundo cria rituais e amizades.",
+     "p": [
+      "O futebol joga-se em quase todo o lado, de praias e ruas a estádios gigantes, só com uma bola e algum espaço.",
+      "Os adeptos partilham cânticos, cachecóis, cores e rituais de jogo, e o amor por um clube passa muitas vezes de pais para filhos.",
+      "Um jogo liga logo desconhecidos: falar de futebol é uma forma fácil de começar uma conversa no estrangeiro."
+     ],
+     "q": "Segues o futebol ou outro desporto, e que rituais tens à volta dele?",
+     "c": "Descobre o nome do clube de futebol mais popular de um país que gostavas de visitar."
+    },
+    "pt_BR": {
+     "t": "O futebol como cultura global",
+     "g": "Veja como o esporte mais popular do mundo cria rituais e amizades.",
+     "p": [
+      "O futebol é jogado em quase todo lugar, de praias e ruas a estádios gigantes, só com uma bola e um pouco de espaço.",
+      "Os torcedores compartilham cantos, cachecóis, cores e rituais de jogo, e o amor por um time muitas vezes passa de pais para filhos.",
+      "Um jogo conecta desconhecidos na hora: falar de futebol é um jeito fácil de puxar conversa no exterior."
+     ],
+     "q": "Você acompanha futebol ou outro esporte, e que rituais tem em volta dele?",
+     "c": "Descubra o nome do time de futebol mais popular de um país que você gostaria de visitar."
+    }
+   }
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Markets and bazaars",
+     "g": "Discover souks, floating markets and farmers' markets as lively social hubs.",
+     "p": [
+      "Istanbul's Grand Bazaar, one of the oldest covered markets in the world, has thousands of shops under its roofs.",
+      "In Thailand and Vietnam's Mekong Delta, floating markets sell fruit and food straight from small boats.",
+      "Markets are about more than shopping: people meet, chat, taste, and learn the news of the neighbourhood."
+     ],
+     "q": "What market do you love to visit, and what do you usually buy or eat there?",
+     "c": "Visit a local market or market stall this week and talk to one seller about their products."
+    },
+    "de": {
+     "t": "Märkte und Basare",
+     "g": "Entdecke Souks, schwimmende Märkte und Bauernmärkte als lebendige soziale Treffpunkte.",
+     "p": [
+      "Der Große Basar in Istanbul, einer der ältesten überdachten Märkte der Welt, hat Tausende Geschäfte unter seinen Dächern.",
+      "In Thailand und im Mekongdelta in Vietnam verkaufen schwimmende Märkte Obst und Essen direkt aus kleinen Booten.",
+      "Märkte sind mehr als Einkaufen: Man trifft sich, plaudert, probiert und erfährt die Neuigkeiten aus dem Viertel."
+     ],
+     "q": "Welchen Markt besuchst du gern, und was kaufst oder isst du dort meistens?",
+     "c": "Besuche diese Woche einen Markt oder Marktstand und sprich mit einem Verkäufer über seine Produkte."
+    },
+    "es": {
+     "t": "Mercados y bazares",
+     "g": "Descubre los zocos, los mercados flotantes y los mercados de agricultores como centros de vida social.",
+     "p": [
+      "El Gran Bazar de Estambul, uno de los mercados cubiertos más antiguos del mundo, reúne miles de tiendas bajo su techo.",
+      "En Tailandia y en el delta del Mekong en Vietnam, los mercados flotantes venden fruta y comida desde pequeñas barcas.",
+      "Un mercado es más que comprar: la gente se encuentra, charla, prueba y se entera de las noticias del barrio."
+     ],
+     "q": "¿Qué mercado te encanta visitar y qué sueles comprar o comer allí?",
+     "c": "Visita esta semana un mercado o un puesto local y habla con un vendedor sobre sus productos."
+    },
+    "fr": {
+     "t": "Marchés et bazars",
+     "g": "Découvre les souks, les marchés flottants et les marchés de producteurs comme lieux de vie sociale.",
+     "p": [
+      "Le Grand Bazar d'Istanbul, l'un des plus anciens marchés couverts du monde, abrite des milliers de boutiques.",
+      "En Thaïlande et dans le delta du Mékong au Vietnam, les marchés flottants vendent fruits et plats depuis de petites barques.",
+      "Un marché, c'est plus que des achats : on s'y retrouve, on bavarde, on goûte et on apprend les nouvelles du quartier."
+     ],
+     "q": "Quel marché aimes-tu visiter, et qu'y achètes-tu ou y manges-tu d'habitude ?",
+     "c": "Va cette semaine dans un marché ou chez un marchand local et parle avec un vendeur de ses produits."
+    },
+    "it": {
+     "t": "Mercati e bazar",
+     "g": "Scopri souk, mercati galleggianti e mercati contadini come vivaci luoghi d'incontro.",
+     "p": [
+      "Il Gran Bazar di Istanbul, uno dei mercati coperti più antichi del mondo, ospita migliaia di negozi sotto i suoi tetti.",
+      "In Thailandia e nel delta del Mekong in Vietnam, i mercati galleggianti vendono frutta e cibo direttamente dalle barche.",
+      "Il mercato è più che fare acquisti: ci si incontra, si chiacchiera, si assaggia e si scoprono le novità del quartiere."
+     ],
+     "q": "Quale mercato ami visitare, e cosa compri o mangi di solito lì?",
+     "c": "Visita questa settimana un mercato o una bancarella locale e parla con un venditore dei suoi prodotti."
+    },
+    "pt": {
+     "t": "Mercados e bazares",
+     "g": "Descobre os souks, os mercados flutuantes e os mercados de produtores como centros de vida social.",
+     "p": [
+      "O Grande Bazar de Istambul, um dos mercados cobertos mais antigos do mundo, tem milhares de lojas debaixo do seu teto.",
+      "Na Tailândia e no delta do Mekong, no Vietname, os mercados flutuantes vendem fruta e comida a partir de pequenos barcos.",
+      "O mercado é mais do que compras: as pessoas encontram-se, conversam, provam e ficam a saber as novidades do bairro."
+     ],
+     "q": "Que mercado adoras visitar, e o que costumas comprar ou comer lá?",
+     "c": "Visita esta semana um mercado ou banca local e conversa com um vendedor sobre os seus produtos."
+    },
+    "pt_BR": {
+     "t": "Mercados e bazares",
+     "g": "Descubra os souks, os mercados flutuantes e as feiras de produtores como centros de vida social.",
+     "p": [
+      "O Grande Bazar de Istambul, um dos mercados cobertos mais antigos do mundo, reúne milhares de lojas sob seu teto.",
+      "Na Tailândia e no delta do Mekong, no Vietnã, os mercados flutuantes vendem frutas e comida direto de pequenos barcos.",
+      "A feira é mais do que compras: as pessoas se encontram, conversam, provam e ficam sabendo das novidades do bairro."
+     ],
+     "q": "Que mercado ou feira você adora visitar, e o que costuma comprar ou comer lá?",
+     "c": "Visite nesta semana uma feira ou banca local e converse com um vendedor sobre os produtos dele."
+    }
+   }
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Haggling cultures",
+     "g": "Learn where bargaining is expected and how to do it with a smile.",
+     "p": [
+      "Haggling is common in many souks, bazaars and street markets, but not in shops with fixed, marked prices.",
+      "Start with a greeting and a little chat, ask the price, then offer less and meet somewhere in the middle.",
+      "Stay friendly and fair: if you agree on a price, buy the item, and if not, thank the seller and walk on politely."
+     ],
+     "q": "Have you ever bargained for something, and how did it feel?",
+     "c": "Practise a friendly bargaining phrase in another language, like asking for a better price with a smile."
+    },
+    "de": {
+     "t": "Feilschkulturen",
+     "g": "Erfahre, wo Handeln erwartet wird und wie man es mit einem Lächeln tut.",
+     "p": [
+      "Feilschen ist in vielen Souks, Basaren und Straßenmärkten üblich, nicht aber in Läden mit festen, ausgezeichneten Preisen.",
+      "Beginne mit einem Gruß und etwas Plauderei, frag nach dem Preis, biete weniger und trefft euch irgendwo in der Mitte.",
+      "Bleib freundlich und fair: Einigt ihr euch, kauf die Ware; wenn nicht, bedank dich und geh höflich weiter."
+     ],
+     "q": "Hast du schon einmal um etwas gefeilscht, und wie hat sich das angefühlt?",
+     "c": "Übe einen freundlichen Satz zum Handeln in einer anderen Sprache, etwa die Bitte um einen besseren Preis."
+    },
+    "es": {
+     "t": "Culturas del regateo",
+     "g": "Aprende dónde se espera regatear y cómo hacerlo con una sonrisa.",
+     "p": [
+      "Regatear es habitual en muchos zocos, bazares y mercados callejeros, pero no en tiendas con precios fijos y marcados.",
+      "Empieza con un saludo y algo de charla, pregunta el precio, ofrece menos y encontraos en un punto medio.",
+      "Sé amable y justo: si acordáis un precio, compra el artículo; si no, da las gracias y sigue tu camino con educación."
+     ],
+     "q": "¿Alguna vez has regateado por algo y cómo te sentiste?",
+     "c": "Practica una frase amable para regatear en otro idioma, como pedir un mejor precio con una sonrisa."
+    },
+    "fr": {
+     "t": "Les cultures du marchandage",
+     "g": "Découvre où le marchandage est attendu et comment le faire avec le sourire.",
+     "p": [
+      "On marchande dans beaucoup de souks, bazars et marchés de rue, mais pas dans les boutiques aux prix fixes et affichés.",
+      "Commence par saluer et bavarder un peu, demande le prix, propose moins et trouvez un terrain d'entente.",
+      "Reste aimable et juste : si vous tombez d'accord, achète l'objet ; sinon, remercie le vendeur et repars poliment."
+     ],
+     "q": "As-tu déjà marchandé pour quelque chose, et qu'as-tu ressenti ?",
+     "c": "Entraîne-toi à dire une phrase aimable de marchandage dans une autre langue, comme demander un meilleur prix."
+    },
+    "it": {
+     "t": "Culture della contrattazione",
+     "g": "Scopri dove contrattare è normale e come farlo con il sorriso.",
+     "p": [
+      "Contrattare è comune in molti souk, bazar e mercati di strada, ma non nei negozi con prezzi fissi ed esposti.",
+      "Inizia con un saluto e due chiacchiere, chiedi il prezzo, offri di meno e incontratevi a metà strada.",
+      "Resta gentile e corretto: se vi accordate sul prezzo, compra l'oggetto; se no, ringrazia e prosegui con garbo."
+     ],
+     "q": "Hai mai contrattato per qualcosa, e come ti sei sentito?",
+     "c": "Esercitati con una frase gentile per contrattare in un'altra lingua, come chiedere un prezzo migliore."
+    },
+    "pt": {
+     "t": "Culturas do regateio",
+     "g": "Aprende onde se espera regatear e como fazê-lo com um sorriso.",
+     "p": [
+      "Regatear é comum em muitos souks, bazares e mercados de rua, mas não em lojas com preços fixos e marcados.",
+      "Começa com um cumprimento e um pouco de conversa, pergunta o preço, oferece menos e encontrem um meio-termo.",
+      "Sê simpático e justo: se chegarem a acordo, compra o artigo; se não, agradece e segue caminho com educação."
+     ],
+     "q": "Já alguma vez regateaste alguma coisa, e como te sentiste?",
+     "c": "Pratica uma frase simpática para regatear noutra língua, como pedir um preço melhor com um sorriso."
+    },
+    "pt_BR": {
+     "t": "Culturas da pechincha",
+     "g": "Aprenda onde pechinchar é esperado e como fazer isso com um sorriso.",
+     "p": [
+      "Pechinchar é comum em muitos souks, bazares e mercados de rua, mas não em lojas com preços fixos e etiquetados.",
+      "Comece com um cumprimento e um papo rápido, pergunte o preço, ofereça menos e cheguem a um meio-termo.",
+      "Seja gentil e justo: se vocês fecharem o preço, compre o item; se não, agradeça e siga em frente com educação."
+     ],
+     "q": "Você já pechinchou alguma coisa, e como se sentiu?",
+     "c": "Pratique uma frase gentil para pechinchar em outro idioma, como pedir um preço melhor com um sorriso."
+    }
+   }
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Weekends and rest days",
+     "g": "Find out why the weekend falls on different days in different countries.",
+     "p": [
+      "In much of the world the weekend is Saturday and Sunday, but in countries like Egypt and Israel it is Friday and Saturday.",
+      "Weekly rest days grew from local calendars, traditions and work patterns, so they differ from place to place.",
+      "When working with friends or colleagues abroad, checking their weekend avoids messages on their day off."
+     ],
+     "q": "What does a perfect rest day look like for you?",
+     "c": "Find out which days are the weekend in three countries where you have friends or would like to travel."
+    },
+    "de": {
+     "t": "Wochenenden und Ruhetage",
+     "g": "Finde heraus, warum das Wochenende in verschiedenen Ländern auf verschiedene Tage fällt.",
+     "p": [
+      "In weiten Teilen der Welt ist Wochenende Samstag und Sonntag, in Ländern wie Ägypten und Israel aber Freitag und Samstag.",
+      "Wöchentliche Ruhetage entstanden aus lokalen Kalendern, Traditionen und Arbeitsrhythmen, deshalb unterscheiden sie sich.",
+      "Wer mit Freunden oder Kollegen im Ausland arbeitet, prüft besser ihr Wochenende, um sie am freien Tag nicht zu stören."
+     ],
+     "q": "Wie sieht für dich ein perfekter Ruhetag aus?",
+     "c": "Finde heraus, welche Tage in drei Ländern, in denen du Freunde hast oder reisen möchtest, Wochenende sind."
+    },
+    "es": {
+     "t": "Fines de semana y días de descanso",
+     "g": "Descubre por qué el fin de semana cae en días distintos según el país.",
+     "p": [
+      "En gran parte del mundo el fin de semana es sábado y domingo, pero en países como Egipto e Israel es viernes y sábado.",
+      "Los días de descanso semanal nacieron de calendarios, tradiciones y ritmos de trabajo locales, por eso varían.",
+      "Si trabajas con amigos o colegas de otro país, comprobar su fin de semana evita escribirles en su día libre."
+     ],
+     "q": "¿Cómo es para ti un día de descanso perfecto?",
+     "c": "Averigua qué días son fin de semana en tres países donde tengas amigos o quieras viajar."
+    },
+    "fr": {
+     "t": "Week-ends et jours de repos",
+     "g": "Découvre pourquoi le week-end tombe sur des jours différents selon les pays.",
+     "p": [
+      "Dans une grande partie du monde, le week-end est samedi et dimanche, mais dans des pays comme l'Égypte et Israël c'est vendredi et samedi.",
+      "Les jours de repos hebdomadaires viennent de calendriers, traditions et rythmes de travail locaux, d'où leurs différences.",
+      "Quand tu travailles avec des amis ou collègues à l'étranger, vérifier leur week-end évite de les déranger un jour de repos."
+     ],
+     "q": "À quoi ressemble pour toi une journée de repos parfaite ?",
+     "c": "Cherche quels jours forment le week-end dans trois pays où tu as des amis ou aimerais voyager."
+    },
+    "it": {
+     "t": "Weekend e giorni di riposo",
+     "g": "Scopri perché il weekend cade in giorni diversi a seconda del paese.",
+     "p": [
+      "In gran parte del mondo il weekend è sabato e domenica, ma in paesi come l'Egitto e Israele è venerdì e sabato.",
+      "I giorni di riposo settimanali sono nati da calendari, tradizioni e ritmi di lavoro locali, per questo cambiano.",
+      "Se lavori con amici o colleghi all'estero, controllare il loro weekend evita di scrivergli nel giorno libero."
+     ],
+     "q": "Com'è per te una giornata di riposo perfetta?",
+     "c": "Scopri quali giorni sono weekend in tre paesi dove hai amici o vorresti viaggiare."
+    },
+    "pt": {
+     "t": "Fins de semana e dias de descanso",
+     "g": "Descobre porque é que o fim de semana calha em dias diferentes conforme o país.",
+     "p": [
+      "Em grande parte do mundo o fim de semana é sábado e domingo, mas em países como o Egito e Israel é sexta e sábado.",
+      "Os dias de descanso semanal nasceram de calendários, tradições e ritmos de trabalho locais, por isso variam.",
+      "Se trabalhas com amigos ou colegas no estrangeiro, confirmar o fim de semana deles evita mensagens no dia de folga."
+     ],
+     "q": "Como é para ti um dia de descanso perfeito?",
+     "c": "Descobre que dias são fim de semana em três países onde tens amigos ou gostavas de viajar."
+    },
+    "pt_BR": {
+     "t": "Fins de semana e dias de descanso",
+     "g": "Descubra por que o fim de semana cai em dias diferentes conforme o país.",
+     "p": [
+      "Em grande parte do mundo o fim de semana é sábado e domingo, mas em países como Egito e Israel é sexta e sábado.",
+      "Os dias de descanso semanal nasceram de calendários, tradições e ritmos de trabalho locais, por isso variam.",
+      "Se você trabalha com amigos ou colegas no exterior, conferir o fim de semana deles evita mensagens no dia de folga."
+     ],
+     "q": "Como é para você um dia de descanso perfeito?",
+     "c": "Descubra quais dias são fim de semana em três países onde você tem amigos ou gostaria de viajar."
+    }
+   }
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The siesta and midday rest",
+     "g": "Discover where the afternoon break exists and how it is changing.",
+     "p": [
+      "The siesta is linked to Spain, where a long lunch and a rest helped people avoid the hottest hours of the day.",
+      "Similar midday breaks exist in Greece, southern Italy, parts of Latin America and the Philippines.",
+      "In big cities modern work hours have shortened the siesta, but many small towns still slow down after lunch."
+     ],
+     "q": "Do you take a break or a short rest after lunch, and would you like a siesta culture?",
+     "c": "Today, take ten calm minutes after lunch to rest, stretch or simply sit quietly."
+    },
+    "de": {
+     "t": "Siesta und Mittagsruhe",
+     "g": "Entdecke, wo es die Mittagspause gibt und wie sie sich verändert.",
+     "p": [
+      "Die Siesta verbindet man mit Spanien, wo ein langes Mittagessen und eine Pause halfen, die heißesten Stunden zu meiden.",
+      "Ähnliche Mittagspausen gibt es in Griechenland, Süditalien, Teilen Lateinamerikas und auf den Philippinen.",
+      "In Großstädten haben moderne Arbeitszeiten die Siesta verkürzt, doch viele Kleinstädte werden nach dem Mittag noch ruhiger."
+     ],
+     "q": "Machst du nach dem Mittagessen eine Pause, und würde dir eine Siesta-Kultur gefallen?",
+     "c": "Nimm dir heute nach dem Mittagessen zehn ruhige Minuten, um zu entspannen, dich zu dehnen oder still zu sitzen."
+    },
+    "es": {
+     "t": "La siesta y el descanso del mediodía",
+     "g": "Descubre dónde existe la pausa de la tarde y cómo está cambiando.",
+     "p": [
+      "La siesta se asocia a España, donde una comida larga y un descanso ayudaban a evitar las horas de más calor.",
+      "Hay pausas parecidas en Grecia, el sur de Italia, partes de Latinoamérica y Filipinas.",
+      "En las grandes ciudades los horarios modernos han acortado la siesta, pero muchos pueblos aún bajan el ritmo tras comer."
+     ],
+     "q": "¿Haces una pausa o descansas un poco después de comer? ¿Te gustaría una cultura de siesta?",
+     "c": "Hoy tómate diez minutos tranquilos después de comer para descansar, estirarte o simplemente sentarte en calma."
+    },
+    "fr": {
+     "t": "La sieste et la pause de midi",
+     "g": "Découvre où existe la pause de l'après-midi et comment elle évolue.",
+     "p": [
+      "La sieste est associée à l'Espagne, où un long déjeuner et un repos aidaient à éviter les heures les plus chaudes.",
+      "Des pauses semblables existent en Grèce, dans le sud de l'Italie, dans une partie de l'Amérique latine et aux Philippines.",
+      "Dans les grandes villes, les horaires modernes ont raccourci la sieste, mais bien des petites villes ralentissent encore après le déjeuner."
+     ],
+     "q": "Fais-tu une pause ou un petit repos après le déjeuner, et aimerais-tu une culture de la sieste ?",
+     "c": "Aujourd'hui, prends dix minutes calmes après le déjeuner pour te reposer, t'étirer ou simplement t'asseoir."
+    },
+    "it": {
+     "t": "La siesta e il riposo di mezzogiorno",
+     "g": "Scopri dove esiste la pausa pomeridiana e come sta cambiando.",
+     "p": [
+      "La siesta è legata alla Spagna, dove un lungo pranzo e un riposo aiutavano a evitare le ore più calde del giorno.",
+      "Pause simili esistono in Grecia, nel Sud Italia, in parte dell'America Latina e nelle Filippine.",
+      "Nelle grandi città gli orari moderni hanno accorciato la siesta, ma molti paesi rallentano ancora dopo pranzo."
+     ],
+     "q": "Fai una pausa o un breve riposo dopo pranzo, e ti piacerebbe una cultura della siesta?",
+     "c": "Oggi prenditi dieci minuti tranquilli dopo pranzo per riposare, fare stretching o semplicemente stare seduto in pace."
+    },
+    "pt": {
+     "t": "A sesta e o descanso do meio-dia",
+     "g": "Descobre onde existe a pausa da tarde e como está a mudar.",
+     "p": [
+      "A sesta está ligada a Espanha, onde um almoço longo e um descanso ajudavam a evitar as horas de mais calor.",
+      "Há pausas parecidas na Grécia, no sul de Itália, em partes da América Latina e nas Filipinas.",
+      "Nas grandes cidades os horários modernos encurtaram a sesta, mas muitas terras pequenas ainda abrandam depois do almoço."
+     ],
+     "q": "Fazes uma pausa ou descansas um pouco depois do almoço, e gostavas de uma cultura de sesta?",
+     "c": "Hoje tira dez minutos calmos depois do almoço para descansar, alongar ou simplesmente ficar sentado em sossego."
+    },
+    "pt_BR": {
+     "t": "A siesta e o descanso do meio-dia",
+     "g": "Descubra onde existe a pausa da tarde e como ela está mudando.",
+     "p": [
+      "A siesta é associada à Espanha, onde um almoço longo e um descanso ajudavam a evitar as horas mais quentes do dia.",
+      "Pausas parecidas existem na Grécia, no sul da Itália, em partes da América Latina e nas Filipinas.",
+      "Nas grandes cidades os horários modernos encurtaram a siesta, mas muitas cidades pequenas ainda desaceleram depois do almoço."
+     ],
+     "q": "Você faz uma pausa ou tira um cochilo depois do almoço, e gostaria de uma cultura de siesta?",
+     "c": "Hoje tire dez minutos tranquilos depois do almoço para descansar, se alongar ou simplesmente ficar sentado em paz."
+    }
+   }
+  }
+ ]
+}

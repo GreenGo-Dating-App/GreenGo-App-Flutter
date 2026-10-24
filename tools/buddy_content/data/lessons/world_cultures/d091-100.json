@@ -1,0 +1,835 @@
+{
+ "topic": "world_cultures",
+ "lessons": [
+  {
+   "d": 91,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "A tour of Northern Europe",
+     "g": "Meet the Nordic countries and the Baltics, known for nature, design and equality.",
+     "p": [
+      "The Nordic countries are Denmark, Norway, Sweden, Finland and Iceland, and the Baltic states are Estonia, Latvia and Lithuania.",
+      "In Norway, Sweden and Finland a right to roam lets everyone walk, camp and pick berries in nature, with respect for the land.",
+      "Simple, practical Nordic design is famous, and the Baltic song and dance festivals gather tens of thousands of singers."
+     ],
+     "q": "What would you enjoy most in Northern Europe: nature, design or a huge song festival?",
+     "c": "Spend a few minutes outdoors today and notice one detail of nature around you."
+    },
+    "de": {
+     "t": "Rundreise durch Nordeuropa",
+     "g": "Lerne die nordischen Länder und das Baltikum kennen, bekannt für Natur, Design und Gleichberechtigung.",
+     "p": [
+      "Die nordischen Länder sind Dänemark, Norwegen, Schweden, Finnland und Island, die baltischen Staaten Estland, Lettland und Litauen.",
+      "In Norwegen, Schweden und Finnland darf jeder dank Jedermannsrecht in der Natur wandern, zelten und Beeren pflücken, mit Rücksicht.",
+      "Schlichtes, praktisches nordisches Design ist berühmt, und die baltischen Sänger- und Tanzfeste vereinen Zehntausende Sänger."
+     ],
+     "q": "Was würde dir in Nordeuropa am besten gefallen: Natur, Design oder ein riesiges Sängerfest?",
+     "c": "Verbringe heute ein paar Minuten draußen und achte auf ein Detail der Natur um dich herum."
+    },
+    "es": {
+     "t": "Un recorrido por el norte de Europa",
+     "g": "Conoce los países nórdicos y los bálticos, famosos por su naturaleza, su diseño y la igualdad.",
+     "p": [
+      "Los países nórdicos son Dinamarca, Noruega, Suecia, Finlandia e Islandia, y los bálticos son Estonia, Letonia y Lituania.",
+      "En Noruega, Suecia y Finlandia el derecho de acceso permite a todos caminar, acampar y recoger bayas en la naturaleza con respeto.",
+      "El diseño nórdico, sencillo y práctico, es famoso, y los festivales bálticos de canto y danza reúnen a decenas de miles de cantantes."
+     ],
+     "q": "¿Qué disfrutarías más en el norte de Europa: la naturaleza, el diseño o un gran festival de canto?",
+     "c": "Pasa hoy unos minutos al aire libre y fíjate en un detalle de la naturaleza que te rodea."
+    },
+    "fr": {
+     "t": "Tour d'Europe du Nord",
+     "g": "Découvre les pays nordiques et les pays baltes, connus pour leur nature, leur design et l'égalité.",
+     "p": [
+      "Les pays nordiques sont le Danemark, la Norvège, la Suède, la Finlande et l'Islande, et les pays baltes l'Estonie, la Lettonie, la Lituanie.",
+      "En Norvège, en Suède et en Finlande, le droit d'accès à la nature permet à chacun de marcher, camper et cueillir des baies, avec respect.",
+      "Le design nordique, simple et pratique, est célèbre, et les fêtes baltes du chant et de la danse réunissent des milliers de choristes."
+     ],
+     "q": "Qu'apprécierais-tu le plus en Europe du Nord : la nature, le design ou une immense fête du chant ?",
+     "c": "Passe quelques minutes dehors aujourd'hui et remarque un détail de la nature autour de toi."
+    },
+    "it": {
+     "t": "Un giro nell'Europa del Nord",
+     "g": "Conosci i paesi nordici e i baltici, noti per la natura, il design e l'uguaglianza.",
+     "p": [
+      "I paesi nordici sono Danimarca, Norvegia, Svezia, Finlandia e Islanda, mentre i baltici sono Estonia, Lettonia e Lituania.",
+      "In Norvegia, Svezia e Finlandia il diritto di accesso permette a tutti di camminare, campeggiare e raccogliere bacche, con rispetto.",
+      "Il design nordico, semplice e pratico, è famoso, e i festival baltici del canto e della danza riuniscono decine di migliaia di coristi."
+     ],
+     "q": "Cosa ti piacerebbe di più nell'Europa del Nord: la natura, il design o un enorme festival del canto?",
+     "c": "Passa oggi qualche minuto all'aperto e nota un dettaglio della natura intorno a te."
+    },
+    "pt": {
+     "t": "Uma volta pelo Norte da Europa",
+     "g": "Conhece os países nórdicos e os bálticos, conhecidos pela natureza, pelo design e pela igualdade.",
+     "p": [
+      "Os países nórdicos são a Dinamarca, a Noruega, a Suécia, a Finlândia e a Islândia, e os bálticos a Estónia, a Letónia e a Lituânia.",
+      "Na Noruega, na Suécia e na Finlândia, o direito de acesso deixa todos caminhar, acampar e apanhar bagas na natureza, com respeito.",
+      "O design nórdico, simples e prático, é famoso, e os festivais bálticos de canto e dança juntam dezenas de milhares de cantores."
+     ],
+     "q": "O que apreciarias mais no Norte da Europa: a natureza, o design ou um enorme festival de canto?",
+     "c": "Passa hoje uns minutos ao ar livre e repara num detalhe da natureza à tua volta."
+    },
+    "pt_BR": {
+     "t": "Um passeio pelo Norte da Europa",
+     "g": "Conheça os países nórdicos e os bálticos, famosos pela natureza, pelo design e pela igualdade.",
+     "p": [
+      "Os países nórdicos são Dinamarca, Noruega, Suécia, Finlândia e Islândia, e os bálticos são Estônia, Letônia e Lituânia.",
+      "Na Noruega, na Suécia e na Finlândia, o direito de acesso deixa todos caminhar, acampar e colher frutinhas na natureza, com respeito.",
+      "O design nórdico, simples e prático, é famoso, e os festivais bálticos de canto e dança reúnem dezenas de milhares de cantores."
+     ],
+     "q": "O que você mais curtiria no Norte da Europa: a natureza, o design ou um enorme festival de canto?",
+     "c": "Passe hoje alguns minutos ao ar livre e repare num detalhe da natureza ao seu redor."
+    }
+   }
+  },
+  {
+   "d": 92,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Hygge, lagom and sisu",
+     "g": "Discover three Nordic words: Danish coziness, Swedish balance and Finnish grit.",
+     "p": [
+      "Hygge is the Danish art of coziness: candles, warm drinks, soft blankets and relaxed time with people you like.",
+      "Lagom is Swedish for just the right amount, not too much and not too little, a sense of balance in daily life.",
+      "Sisu is Finnish inner strength, the quiet courage to keep going when things get hard."
+     ],
+     "q": "Which of these three words would you like more of in your life right now?",
+     "c": "Create a small hygge moment today, with a warm drink, soft light and no rush."
+    },
+    "de": {
+     "t": "Hygge, Lagom und Sisu",
+     "g": "Entdecke drei nordische Wörter: dänische Gemütlichkeit, schwedisches Maß und finnische Ausdauer.",
+     "p": [
+      "Hygge ist die dänische Kunst der Gemütlichkeit: Kerzen, warme Getränke, weiche Decken und entspannte Zeit mit lieben Menschen.",
+      "Lagom ist Schwedisch für genau richtig, nicht zu viel und nicht zu wenig, ein Gefühl für Balance im Alltag.",
+      "Sisu ist finnische innere Stärke, der stille Mut, weiterzumachen, wenn es schwierig wird."
+     ],
+     "q": "Von welchem dieser drei Wörter hättest du gerade gern mehr in deinem Leben?",
+     "c": "Schaffe dir heute einen kleinen Hygge-Moment mit einem warmen Getränk, sanftem Licht und ohne Eile."
+    },
+    "es": {
+     "t": "Hygge, lagom y sisu",
+     "g": "Descubre tres palabras nórdicas: el confort danés, el equilibrio sueco y la tenacidad finlandesa.",
+     "p": [
+      "Hygge es el arte danés de lo acogedor: velas, bebidas calientes, mantas suaves y tiempo tranquilo con gente querida.",
+      "Lagom significa en sueco la medida justa, ni mucho ni poco, un sentido del equilibrio en la vida diaria.",
+      "Sisu es la fuerza interior finlandesa, el valor tranquilo de seguir adelante cuando las cosas se ponen difíciles."
+     ],
+     "q": "¿De cuál de estas tres palabras te gustaría tener más en tu vida ahora mismo?",
+     "c": "Crea hoy un pequeño momento hygge, con una bebida caliente, luz suave y sin prisa."
+    },
+    "fr": {
+     "t": "Hygge, lagom et sisu",
+     "g": "Découvre trois mots nordiques : le cocooning danois, l'équilibre suédois et la ténacité finlandaise.",
+     "p": [
+      "Le hygge est l'art danois du confort douillet : bougies, boissons chaudes, plaids moelleux et moments détendus entre proches.",
+      "Lagom signifie en suédois juste ce qu'il faut, ni trop ni trop peu, un sens de l'équilibre au quotidien.",
+      "Le sisu est la force intérieure finlandaise, le courage tranquille de continuer quand les choses deviennent difficiles."
+     ],
+     "q": "Duquel de ces trois mots aimerais-tu avoir plus dans ta vie en ce moment ?",
+     "c": "Crée aujourd'hui un petit moment hygge, avec une boisson chaude, une lumière douce et sans te presser."
+    },
+    "it": {
+     "t": "Hygge, lagom e sisu",
+     "g": "Scopri tre parole nordiche: l'atmosfera accogliente danese, l'equilibrio svedese e la tenacia finlandese.",
+     "p": [
+      "Hygge è l'arte danese dell'accoglienza: candele, bevande calde, coperte morbide e tempo rilassato con persone care.",
+      "Lagom in svedese significa la giusta misura, né troppo né troppo poco, un senso di equilibrio nella vita quotidiana.",
+      "Sisu è la forza interiore finlandese, il coraggio tranquillo di andare avanti quando le cose si fanno difficili."
+     ],
+     "q": "Di quale di queste tre parole vorresti avere di più nella tua vita in questo momento?",
+     "c": "Crea oggi un piccolo momento hygge, con una bevanda calda, una luce soffusa e senza fretta."
+    },
+    "pt": {
+     "t": "Hygge, lagom e sisu",
+     "g": "Descobre três palavras nórdicas: o aconchego dinamarquês, o equilíbrio sueco e a garra finlandesa.",
+     "p": [
+      "Hygge é a arte dinamarquesa do aconchego: velas, bebidas quentes, mantas macias e tempo descontraído com quem gostamos.",
+      "Lagom significa em sueco a medida certa, nem muito nem pouco, um sentido de equilíbrio no dia a dia.",
+      "Sisu é a força interior finlandesa, a coragem tranquila de continuar quando as coisas ficam difíceis."
+     ],
+     "q": "De qual destas três palavras gostavas de ter mais na tua vida neste momento?",
+     "c": "Cria hoje um pequeno momento hygge, com uma bebida quente, luz suave e sem pressa."
+    },
+    "pt_BR": {
+     "t": "Hygge, lagom e sisu",
+     "g": "Descubra três palavras nórdicas: o aconchego dinamarquês, o equilíbrio sueco e a garra finlandesa.",
+     "p": [
+      "Hygge é a arte dinamarquesa do aconchego: velas, bebidas quentes, mantas macias e tempo tranquilo com quem a gente gosta.",
+      "Lagom significa em sueco a medida certa, nem muito nem pouco, um senso de equilíbrio no dia a dia.",
+      "Sisu é a força interior finlandesa, a coragem tranquila de seguir em frente quando as coisas ficam difíceis."
+     ],
+     "q": "De qual dessas três palavras você gostaria de ter mais na sua vida agora?",
+     "c": "Crie hoje um pequeno momento hygge, com uma bebida quente, luz suave e sem pressa."
+    }
+   }
+  },
+  {
+   "d": 93,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "A tour of Eastern Europe",
+     "g": "Explore Poland, Czechia, Romania and Ukraine and their rich folk traditions.",
+     "p": [
+      "Folk embroidery is treasured across the region, like the Ukrainian vyshyvanka shirt with its colourful stitched patterns.",
+      "Czech puppetry has a long tradition, and Polish paper cut-outs called wycinanki decorate homes with bright designs.",
+      "In Romania and nearby countries, people give a small red and white token called mărțișor on 1 March to welcome spring."
+     ],
+     "q": "Which folk craft from Eastern Europe would you like to try making?",
+     "c": "Try making a simple paper cut-out pattern today, folding and cutting a piece of paper."
+    },
+    "de": {
+     "t": "Rundreise durch Osteuropa",
+     "g": "Erkunde Polen, Tschechien, Rumänien und die Ukraine und ihre reichen Volkstraditionen.",
+     "p": [
+      "Volksstickerei wird in der ganzen Region geschätzt, etwa das ukrainische Wyschywanka-Hemd mit bunten gestickten Mustern.",
+      "Das tschechische Puppenspiel hat eine lange Tradition, und polnische Scherenschnitte, Wycinanki genannt, schmücken Häuser bunt.",
+      "In Rumänien und Nachbarländern schenkt man am 1. März ein kleines rot-weißes Zeichen, Mărțișor, um den Frühling zu begrüßen."
+     ],
+     "q": "Welches osteuropäische Volkshandwerk würdest du gern selbst ausprobieren?",
+     "c": "Versuche heute einen einfachen Scherenschnitt, indem du ein Blatt Papier faltest und schneidest."
+    },
+    "es": {
+     "t": "Un recorrido por Europa del Este",
+     "g": "Explora Polonia, Chequia, Rumanía y Ucrania y sus ricas tradiciones populares.",
+     "p": [
+      "El bordado popular se aprecia en toda la región, como la camisa ucraniana vyshyvanka con sus coloridos dibujos bordados.",
+      "El teatro de títeres checo tiene una larga tradición, y los recortables polacos de papel, llamados wycinanki, alegran las casas.",
+      "En Rumanía y países vecinos se regala el 1 de marzo un pequeño adorno rojo y blanco llamado mărțișor para dar la bienvenida a la primavera."
+     ],
+     "q": "¿Qué artesanía popular de Europa del Este te gustaría probar a hacer?",
+     "c": "Prueba hoy a hacer un recortable sencillo, doblando y cortando una hoja de papel."
+    },
+    "fr": {
+     "t": "Tour d'Europe de l'Est",
+     "g": "Explore la Pologne, la Tchéquie, la Roumanie et l'Ukraine et leurs riches traditions populaires.",
+     "p": [
+      "La broderie populaire est chérie dans toute la région, comme la chemise ukrainienne vychyvanka aux motifs brodés colorés.",
+      "Les marionnettes tchèques ont une longue tradition, et les découpages polonais en papier, les wycinanki, ornent les maisons de motifs vifs.",
+      "En Roumanie et dans les pays voisins, on offre le 1er mars un petit porte-bonheur rouge et blanc, le mărțișor, pour saluer le printemps."
+     ],
+     "q": "Quel artisanat populaire d'Europe de l'Est aimerais-tu essayer ?",
+     "c": "Essaie aujourd'hui un découpage simple en pliant et en découpant une feuille de papier."
+    },
+    "it": {
+     "t": "Un giro nell'Europa dell'Est",
+     "g": "Esplora Polonia, Cechia, Romania e Ucraina e le loro ricche tradizioni popolari.",
+     "p": [
+      "Il ricamo popolare è amato in tutta la regione, come la camicia ucraina vyshyvanka con i suoi motivi ricamati colorati.",
+      "Il teatro delle marionette ceco ha una lunga tradizione, e i ritagli di carta polacchi, detti wycinanki, decorano le case con motivi vivaci.",
+      "In Romania e nei paesi vicini il 1° marzo si regala un portafortuna bianco e rosso, il mărțișor, per accogliere la primavera."
+     ],
+     "q": "Quale artigianato popolare dell'Europa dell'Est ti piacerebbe provare?",
+     "c": "Prova oggi a fare un semplice ritaglio di carta, piegando e tagliando un foglio."
+    },
+    "pt": {
+     "t": "Uma volta pela Europa de Leste",
+     "g": "Explora a Polónia, a Chéquia, a Roménia e a Ucrânia e as suas ricas tradições populares.",
+     "p": [
+      "O bordado popular é muito estimado na região, como a camisa ucraniana vyshyvanka com os seus padrões bordados coloridos.",
+      "O teatro de marionetas checo tem uma longa tradição, e os recortes de papel polacos, chamados wycinanki, alegram as casas.",
+      "Na Roménia e em países vizinhos oferece-se a 1 de março um pequeno enfeite vermelho e branco, o mărțișor, para saudar a primavera."
+     ],
+     "q": "Que artesanato popular da Europa de Leste gostavas de experimentar fazer?",
+     "c": "Experimenta hoje fazer um recorte de papel simples, dobrando e cortando uma folha."
+    },
+    "pt_BR": {
+     "t": "Um passeio pelo Leste Europeu",
+     "g": "Explore Polônia, Tchéquia, Romênia e Ucrânia e suas ricas tradições populares.",
+     "p": [
+      "O bordado popular é muito valorizado na região, como a camisa ucraniana vyshyvanka com seus padrões bordados coloridos.",
+      "O teatro de marionetes tcheco tem uma longa tradição, e os recortes de papel poloneses, chamados wycinanki, alegram as casas.",
+      "Na Romênia e em países vizinhos se dá em 1º de março um pequeno enfeite vermelho e branco, o mărțișor, para saudar a primavera."
+     ],
+     "q": "Que artesanato popular do Leste Europeu você gostaria de experimentar fazer?",
+     "c": "Experimente hoje fazer um recorte de papel simples, dobrando e cortando uma folha."
+    }
+   }
+  },
+  {
+   "d": 94,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Everyday life in Poland",
+     "g": "Discover daily life in Poland, from pierogi to name days and lively cities.",
+     "p": [
+      "Pierogi, filled dumplings with fillings like potato and cheese, cabbage or fruit, are a beloved comfort food.",
+      "Name days, called imieniny, are widely celebrated, and friends and colleagues bring flowers or small gifts.",
+      "Family ties are strong, and cities like Kraków, Gdańsk and Wrocław mix historic squares with a lively café culture."
+     ],
+     "q": "Which pierogi filling would you choose, sweet or savoury?",
+     "c": "Find out which day is your name day in Poland or another country that celebrates them."
+    },
+    "de": {
+     "t": "Alltag in Polen",
+     "g": "Entdecke den Alltag in Polen, von Pierogi über Namenstage bis zu lebendigen Städten.",
+     "p": [
+      "Pierogi, gefüllte Teigtaschen mit Kartoffeln und Quark, Kraut oder Obst, sind ein beliebtes Wohlfühlessen.",
+      "Namenstage, Imieniny genannt, werden viel gefeiert, und Freunde und Kollegen bringen Blumen oder kleine Geschenke.",
+      "Familienbande sind stark, und Städte wie Krakau, Danzig und Breslau verbinden historische Plätze mit lebhafter Cafékultur."
+     ],
+     "q": "Welche Pierogi-Füllung würdest du wählen, süß oder herzhaft?",
+     "c": "Finde heraus, wann dein Namenstag in Polen oder einem anderen Land wäre, das ihn feiert."
+    },
+    "es": {
+     "t": "La vida diaria en Polonia",
+     "g": "Descubre la vida diaria en Polonia, de los pierogi a las onomásticas y sus ciudades animadas.",
+     "p": [
+      "Los pierogi, empanadillas rellenas de patata y queso, col o fruta, son una comida reconfortante muy querida.",
+      "Las onomásticas, llamadas imieniny, se celebran mucho, y amigos y compañeros llevan flores o pequeños regalos.",
+      "Los lazos familiares son fuertes, y ciudades como Cracovia, Gdansk y Breslavia combinan plazas históricas con mucha vida de café."
+     ],
+     "q": "¿Qué relleno de pierogi elegirías, dulce o salado?",
+     "c": "Averigua qué día sería tu onomástica en Polonia o en otro país que la celebre."
+    },
+    "fr": {
+     "t": "La vie quotidienne en Pologne",
+     "g": "Découvre la vie quotidienne en Pologne, des pierogi aux fêtes du prénom et aux villes animées.",
+     "p": [
+      "Les pierogi, raviolis farcis de pomme de terre et fromage, de chou ou de fruits, sont un plat réconfortant très aimé.",
+      "Les fêtes du prénom, appelées imieniny, sont très célébrées, et amis et collègues apportent des fleurs ou de petits cadeaux.",
+      "Les liens familiaux sont forts, et des villes comme Cracovie, Gdańsk et Wrocław marient places historiques et vie de café animée."
+     ],
+     "q": "Quelle farce de pierogi choisirais-tu, sucrée ou salée ?",
+     "c": "Cherche quel jour serait ta fête du prénom en Pologne ou dans un autre pays qui la célèbre."
+    },
+    "it": {
+     "t": "La vita quotidiana in Polonia",
+     "g": "Scopri la vita quotidiana in Polonia, dai pierogi agli onomastici e alle città vivaci.",
+     "p": [
+      "I pierogi, ravioli ripieni di patate e formaggio, cavolo o frutta, sono un piatto confortante molto amato.",
+      "Gli onomastici, chiamati imieniny, si festeggiano molto, e amici e colleghi portano fiori o piccoli regali.",
+      "I legami familiari sono forti, e città come Cracovia, Danzica e Breslavia uniscono piazze storiche e una vivace vita da caffè."
+     ],
+     "q": "Quale ripieno di pierogi sceglieresti, dolce o salato?",
+     "c": "Scopri quale giorno sarebbe il tuo onomastico in Polonia o in un altro paese che lo festeggia."
+    },
+    "pt": {
+     "t": "O dia a dia na Polónia",
+     "g": "Descobre o dia a dia na Polónia, dos pierogi aos dias do nome e às cidades animadas.",
+     "p": [
+      "Os pierogi, pastéis cozidos recheados de batata e queijo, couve ou fruta, são uma comida reconfortante muito querida.",
+      "Os dias do nome, chamados imieniny, festejam-se muito, e amigos e colegas levam flores ou pequenas prendas.",
+      "Os laços familiares são fortes, e cidades como Cracóvia, Gdansk e Breslávia juntam praças históricas e muita vida de café."
+     ],
+     "q": "Que recheio de pierogi escolhias, doce ou salgado?",
+     "c": "Descobre em que dia seria o teu dia do nome na Polónia ou noutro país que o festeja."
+    },
+    "pt_BR": {
+     "t": "O dia a dia na Polônia",
+     "g": "Descubra o dia a dia na Polônia, dos pierogi aos dias do nome e às cidades animadas.",
+     "p": [
+      "Os pierogi, pasteizinhos cozidos recheados de batata e queijo, repolho ou fruta, são uma comida afetiva muito querida.",
+      "Os dias do nome, chamados imieniny, são muito comemorados, e amigos e colegas levam flores ou pequenos presentes.",
+      "Os laços de família são fortes, e cidades como Cracóvia, Gdansk e Breslávia unem praças históricas e muita vida de café."
+     ],
+     "q": "Que recheio de pierogi você escolheria, doce ou salgado?",
+     "c": "Descubra em que dia seria o seu dia do nome na Polônia ou em outro país que o comemora."
+    }
+   }
+  },
+  {
+   "d": 95,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "A tour of North America",
+     "g": "Meet the USA, Canada and Mexico: one continent, distinct cultures.",
+     "p": [
+      "The three countries share a continent but speak mainly English, French and Spanish, along with many Indigenous languages.",
+      "Mexico has ancient roots in civilisations like the Maya and Aztecs, and its cuisine is recognised by UNESCO.",
+      "Canada and the USA are home to people from every corner of the world, making their cities very diverse."
+     ],
+     "q": "Which North American country would you like to explore first, and why?",
+     "c": "Learn one word today in an Indigenous language of North America, such as Nahuatl, Cree or Navajo."
+    },
+    "de": {
+     "t": "Rundreise durch Nordamerika",
+     "g": "Lerne die USA, Kanada und Mexiko kennen: ein Kontinent, unterschiedliche Kulturen.",
+     "p": [
+      "Die drei Länder teilen einen Kontinent, sprechen aber vor allem Englisch, Französisch und Spanisch sowie viele indigene Sprachen.",
+      "Mexiko hat alte Wurzeln in Kulturen wie den Maya und Azteken, und seine Küche ist von der UNESCO anerkannt.",
+      "In Kanada und den USA leben Menschen aus allen Teilen der Welt, was ihre Städte sehr vielfältig macht."
+     ],
+     "q": "Welches Land Nordamerikas würdest du am liebsten zuerst erkunden, und warum?",
+     "c": "Lerne heute ein Wort in einer indigenen Sprache Nordamerikas, etwa Nahuatl, Cree oder Navajo."
+    },
+    "es": {
+     "t": "Un recorrido por Norteamérica",
+     "g": "Conoce Estados Unidos, Canadá y México: un continente, culturas distintas.",
+     "p": [
+      "Los tres países comparten continente, pero hablan sobre todo inglés, francés y español, junto a muchas lenguas indígenas.",
+      "México tiene raíces antiguas en civilizaciones como la maya y la azteca, y su cocina está reconocida por la UNESCO.",
+      "Canadá y Estados Unidos acogen a personas de todos los rincones del mundo, lo que hace sus ciudades muy diversas."
+     ],
+     "q": "¿Qué país de Norteamérica te gustaría explorar primero y por qué?",
+     "c": "Aprende hoy una palabra en una lengua indígena de Norteamérica, como el náhuatl, el cree o el navajo."
+    },
+    "fr": {
+     "t": "Tour d'Amérique du Nord",
+     "g": "Découvre les États-Unis, le Canada et le Mexique : un continent, des cultures distinctes.",
+     "p": [
+      "Les trois pays partagent un continent mais parlent surtout anglais, français et espagnol, ainsi que de nombreuses langues autochtones.",
+      "Le Mexique a des racines anciennes chez les Mayas et les Aztèques, et sa cuisine est reconnue par l'UNESCO.",
+      "Le Canada et les États-Unis accueillent des gens du monde entier, ce qui rend leurs villes très diverses."
+     ],
+     "q": "Quel pays d'Amérique du Nord aimerais-tu explorer en premier, et pourquoi ?",
+     "c": "Apprends aujourd'hui un mot dans une langue autochtone d'Amérique du Nord, comme le nahuatl, le cri ou le navajo."
+    },
+    "it": {
+     "t": "Un giro nell'America del Nord",
+     "g": "Conosci Stati Uniti, Canada e Messico: un continente, culture diverse.",
+     "p": [
+      "I tre paesi condividono un continente ma parlano soprattutto inglese, francese e spagnolo, insieme a molte lingue indigene.",
+      "Il Messico ha radici antiche in civiltà come i Maya e gli Aztechi, e la sua cucina è riconosciuta dall'UNESCO.",
+      "Canada e Stati Uniti accolgono persone da ogni angolo del mondo, e questo rende le loro città molto varie."
+     ],
+     "q": "Quale paese dell'America del Nord vorresti esplorare per primo, e perché?",
+     "c": "Impara oggi una parola in una lingua indigena del Nord America, come il nahuatl, il cree o il navajo."
+    },
+    "pt": {
+     "t": "Uma volta pela América do Norte",
+     "g": "Conhece os EUA, o Canadá e o México: um continente, culturas diferentes.",
+     "p": [
+      "Os três países partilham um continente, mas falam sobretudo inglês, francês e espanhol, além de muitas línguas indígenas.",
+      "O México tem raízes antigas em civilizações como os maias e os astecas, e a sua cozinha é reconhecida pela UNESCO.",
+      "O Canadá e os EUA acolhem pessoas de todos os cantos do mundo, o que torna as suas cidades muito diversas."
+     ],
+     "q": "Que país da América do Norte gostavas de explorar primeiro, e porquê?",
+     "c": "Aprende hoje uma palavra numa língua indígena da América do Norte, como o náuatle, o cree ou o navajo."
+    },
+    "pt_BR": {
+     "t": "Um passeio pela América do Norte",
+     "g": "Conheça EUA, Canadá e México: um continente, culturas diferentes.",
+     "p": [
+      "Os três países dividem um continente, mas falam principalmente inglês, francês e espanhol, além de muitas línguas indígenas.",
+      "O México tem raízes antigas em civilizações como os maias e os astecas, e sua culinária é reconhecida pela UNESCO.",
+      "O Canadá e os EUA recebem pessoas de todos os cantos do mundo, o que deixa suas cidades muito diversas."
+     ],
+     "q": "Qual país da América do Norte você gostaria de explorar primeiro, e por quê?",
+     "c": "Aprenda hoje uma palavra numa língua indígena da América do Norte, como o náuatle, o cree ou o navajo."
+    }
+   }
+  },
+  {
+   "d": 96,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Everyday life in the USA",
+     "g": "Explore daily life in the USA, from wide open spaces to friendly small talk.",
+     "p": [
+      "The country is huge, with deserts, mountains, forests and coasts, and many people love long road trips.",
+      "Chatting with strangers in shops or queues is common, and a friendly how are you is often just a greeting.",
+      "People with roots all over the world live side by side, so food, music and festivals are very diverse."
+     ],
+     "q": "Have you ever had a friendly chat with a stranger? How did it feel?",
+     "c": "Start a short, friendly chat with someone today, like a cashier or a neighbour."
+    },
+    "de": {
+     "t": "Alltag in den USA",
+     "g": "Erkunde den Alltag in den USA, von weiten Landschaften bis zum freundlichen Small Talk.",
+     "p": [
+      "Das Land ist riesig, mit Wüsten, Bergen, Wäldern und Küsten, und viele lieben lange Roadtrips.",
+      "Mit Fremden im Laden oder in der Schlange zu plaudern ist üblich, und ein freundliches How are you ist oft nur ein Gruß.",
+      "Menschen mit Wurzeln in aller Welt leben Seite an Seite, deshalb sind Essen, Musik und Feste sehr vielfältig."
+     ],
+     "q": "Hattest du schon einmal ein nettes Gespräch mit einem Fremden? Wie hat es sich angefühlt?",
+     "c": "Beginne heute ein kurzes, freundliches Gespräch, etwa mit einer Kassiererin oder einem Nachbarn."
+    },
+    "es": {
+     "t": "La vida diaria en Estados Unidos",
+     "g": "Explora la vida diaria en Estados Unidos, de los grandes espacios a la charla amable con desconocidos.",
+     "p": [
+      "El país es enorme, con desiertos, montañas, bosques y costas, y a mucha gente le encantan los largos viajes por carretera.",
+      "Charlar con desconocidos en tiendas o colas es habitual, y un amable how are you suele ser solo un saludo.",
+      "Personas con raíces en todo el mundo viven juntas, así que la comida, la música y las fiestas son muy diversas."
+     ],
+     "q": "¿Alguna vez tuviste una charla agradable con un desconocido? ¿Cómo te sentiste?",
+     "c": "Empieza hoy una charla breve y amable con alguien, como un cajero o un vecino."
+    },
+    "fr": {
+     "t": "La vie quotidienne aux États-Unis",
+     "g": "Explore la vie quotidienne aux États-Unis, des grands espaces aux conversations amicales.",
+     "p": [
+      "Le pays est immense, avec déserts, montagnes, forêts et côtes, et beaucoup adorent les longs road trips.",
+      "Bavarder avec des inconnus en magasin ou dans la file est courant, et un how are you aimable est souvent une simple salutation.",
+      "Des gens aux racines du monde entier vivent côte à côte, si bien que cuisine, musique et fêtes sont très variées."
+     ],
+     "q": "As-tu déjà eu une conversation sympathique avec un inconnu ? Qu'as-tu ressenti ?",
+     "c": "Engage aujourd'hui une courte conversation amicale, par exemple avec un caissier ou un voisin."
+    },
+    "it": {
+     "t": "La vita quotidiana negli Stati Uniti",
+     "g": "Esplora la vita quotidiana negli Stati Uniti, dai grandi spazi alle chiacchiere cordiali.",
+     "p": [
+      "Il paese è immenso, con deserti, montagne, foreste e coste, e molti amano i lunghi viaggi in auto.",
+      "Chiacchierare con sconosciuti nei negozi o in fila è comune, e un cordiale how are you è spesso solo un saluto.",
+      "Persone con radici in tutto il mondo vivono fianco a fianco, quindi cibo, musica e feste sono molto vari."
+     ],
+     "q": "Ti è mai capitato di chiacchierare piacevolmente con uno sconosciuto? Come ti sei sentito?",
+     "c": "Inizia oggi una breve chiacchierata cordiale con qualcuno, come un cassiere o un vicino."
+    },
+    "pt": {
+     "t": "O dia a dia nos EUA",
+     "g": "Explora o dia a dia nos EUA, dos grandes espaços às conversas simpáticas com desconhecidos.",
+     "p": [
+      "O país é enorme, com desertos, montanhas, florestas e costas, e muita gente adora longas viagens de carro.",
+      "Conversar com desconhecidos nas lojas ou nas filas é comum, e um simpático how are you é muitas vezes só um cumprimento.",
+      "Pessoas com raízes no mundo inteiro vivem lado a lado, por isso a comida, a música e as festas são muito diversas."
+     ],
+     "q": "Já tiveste uma conversa simpática com um desconhecido? Como te sentiste?",
+     "c": "Começa hoje uma conversa curta e simpática com alguém, como um empregado de caixa ou um vizinho."
+    },
+    "pt_BR": {
+     "t": "O dia a dia nos EUA",
+     "g": "Explore o dia a dia nos EUA, dos grandes espaços ao papo simpático com desconhecidos.",
+     "p": [
+      "O país é enorme, com desertos, montanhas, florestas e litoral, e muita gente adora longas viagens de carro.",
+      "Puxar papo com desconhecidos em lojas ou filas é comum, e um simpático how are you muitas vezes é só um cumprimento.",
+      "Pessoas com raízes no mundo todo vivem lado a lado, por isso a comida, a música e as festas são muito diversas."
+     ],
+     "q": "Você já teve um papo gostoso com um desconhecido? Como se sentiu?",
+     "c": "Comece hoje um papo curto e simpático com alguém, como um caixa ou um vizinho."
+    }
+   }
+  },
+  {
+   "d": 97,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Everyday life in Canada",
+     "g": "Discover daily life in Canada, with its politeness, two languages and love of hockey.",
+     "p": [
+      "Canadians are known for politeness, and saying sorry and thank you is part of everyday manners.",
+      "English and French are both official languages, and in Quebec French is the main language of daily life.",
+      "Ice hockey is a national passion, and cities like Toronto, Montreal and Vancouver are very multicultural."
+     ],
+     "q": "What would you like to try in Canada: a hockey game, a winter festival or a maple treat?",
+     "c": "Learn a short French phrase today, like bonjour or merci beaucoup, as many Canadians use it."
+    },
+    "de": {
+     "t": "Alltag in Kanada",
+     "g": "Entdecke den Alltag in Kanada mit seiner Höflichkeit, zwei Sprachen und der Liebe zum Eishockey.",
+     "p": [
+      "Kanadier sind für ihre Höflichkeit bekannt, und Sorry und Danke zu sagen gehört zu den alltäglichen Umgangsformen.",
+      "Englisch und Französisch sind beide Amtssprachen, und in Quebec ist Französisch die Hauptsprache im Alltag.",
+      "Eishockey ist eine nationale Leidenschaft, und Städte wie Toronto, Montreal und Vancouver sind sehr multikulturell."
+     ],
+     "q": "Was würdest du in Kanada gern erleben: ein Eishockeyspiel, ein Winterfest oder eine Ahorn-Leckerei?",
+     "c": "Lerne heute einen kurzen französischen Satz wie bonjour oder merci beaucoup, so wie viele Kanadier ihn nutzen."
+    },
+    "es": {
+     "t": "La vida diaria en Canadá",
+     "g": "Descubre la vida diaria en Canadá, con su cortesía, sus dos lenguas y su amor por el hockey.",
+     "p": [
+      "Los canadienses son conocidos por su cortesía, y decir perdón y gracias forma parte de los modales diarios.",
+      "El inglés y el francés son lenguas oficiales, y en Quebec el francés es la lengua principal del día a día.",
+      "El hockey sobre hielo es una pasión nacional, y ciudades como Toronto, Montreal y Vancouver son muy multiculturales."
+     ],
+     "q": "¿Qué te gustaría probar en Canadá: un partido de hockey, un festival de invierno o un dulce de arce?",
+     "c": "Aprende hoy una frase corta en francés, como bonjour o merci beaucoup, como hacen muchos canadienses."
+    },
+    "fr": {
+     "t": "La vie quotidienne au Canada",
+     "g": "Découvre la vie quotidienne au Canada, avec sa politesse, ses deux langues et sa passion du hockey.",
+     "p": [
+      "Les Canadiens sont connus pour leur politesse, et dire pardon et merci fait partie des bonnes manières au quotidien.",
+      "L'anglais et le français sont les deux langues officielles, et au Québec le français est la langue principale de la vie de tous les jours.",
+      "Le hockey sur glace est une passion nationale, et des villes comme Toronto, Montréal et Vancouver sont très multiculturelles."
+     ],
+     "q": "Qu'aimerais-tu essayer au Canada : un match de hockey, un festival d'hiver ou une douceur à l'érable ?",
+     "c": "Apprends aujourd'hui une courte expression en anglais canadien, comme how's it going, ou un mot québécois."
+    },
+    "it": {
+     "t": "La vita quotidiana in Canada",
+     "g": "Scopri la vita quotidiana in Canada, con la sua cortesia, due lingue e la passione per l'hockey.",
+     "p": [
+      "I canadesi sono noti per la loro cortesia, e dire scusa e grazie fa parte delle buone maniere di tutti i giorni.",
+      "Inglese e francese sono entrambe lingue ufficiali, e in Québec il francese è la lingua principale della vita quotidiana.",
+      "L'hockey su ghiaccio è una passione nazionale, e città come Toronto, Montréal e Vancouver sono molto multiculturali."
+     ],
+     "q": "Cosa ti piacerebbe provare in Canada: una partita di hockey, un festival invernale o un dolce all'acero?",
+     "c": "Impara oggi una breve frase in francese, come bonjour o merci beaucoup, come fanno molti canadesi."
+    },
+    "pt": {
+     "t": "O dia a dia no Canadá",
+     "g": "Descobre o dia a dia no Canadá, com a sua cortesia, as duas línguas e o amor pelo hóquei.",
+     "p": [
+      "Os canadianos são conhecidos pela cortesia, e dizer desculpe e obrigado faz parte das boas maneiras do dia a dia.",
+      "O inglês e o francês são línguas oficiais, e no Quebeque o francês é a língua principal do dia a dia.",
+      "O hóquei no gelo é uma paixão nacional, e cidades como Toronto, Montreal e Vancouver são muito multiculturais."
+     ],
+     "q": "O que gostavas de experimentar no Canadá: um jogo de hóquei, um festival de inverno ou um doce de ácer?",
+     "c": "Aprende hoje uma frase curta em francês, como bonjour ou merci beaucoup, como fazem muitos canadianos."
+    },
+    "pt_BR": {
+     "t": "O dia a dia no Canadá",
+     "g": "Descubra o dia a dia no Canadá, com sua cortesia, suas duas línguas e o amor pelo hóquei.",
+     "p": [
+      "Os canadenses são conhecidos pela cortesia, e dizer desculpa e obrigado faz parte das boas maneiras do dia a dia.",
+      "O inglês e o francês são línguas oficiais, e em Quebec o francês é a língua principal do dia a dia.",
+      "O hóquei no gelo é uma paixão nacional, e cidades como Toronto, Montreal e Vancouver são muito multiculturais."
+     ],
+     "q": "O que você gostaria de experimentar no Canadá: um jogo de hóquei, um festival de inverno ou um doce de bordo?",
+     "c": "Aprenda hoje uma frase curta em francês, como bonjour ou merci beaucoup, como fazem muitos canadenses."
+    }
+   }
+  },
+  {
+   "d": 98,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Everyday life in Mexico",
+     "g": "Explore daily life in Mexico, from busy markets to family gatherings and bright celebrations.",
+     "p": [
+      "Open-air markets called tianguis sell fresh fruit, chillies, flowers, crafts and hot food from early morning.",
+      "Family gatherings are big and joyful, with several generations, lots of food and often music late into the night.",
+      "Tacos come in endless regional styles, and celebrations are full of colour, with papel picado banners and piñatas."
+     ],
+     "q": "What would you most like to experience at a Mexican family gathering?",
+     "c": "Make a simple taco or a fresh salsa with tomato, onion and coriander today."
+    },
+    "de": {
+     "t": "Alltag in Mexiko",
+     "g": "Erkunde den Alltag in Mexiko, von belebten Märkten über Familientreffen bis zu bunten Festen.",
+     "p": [
+      "Freiluftmärkte, Tianguis genannt, verkaufen ab dem frühen Morgen frisches Obst, Chilis, Blumen, Kunsthandwerk und warme Speisen.",
+      "Familientreffen sind groß und fröhlich, mit mehreren Generationen, viel Essen und oft Musik bis spät in die Nacht.",
+      "Tacos gibt es in unzähligen regionalen Varianten, und Feste sind farbenfroh, mit Girlanden aus Papel picado und Piñatas."
+     ],
+     "q": "Was würdest du bei einem mexikanischen Familienfest am liebsten erleben?",
+     "c": "Mach dir heute einen einfachen Taco oder eine frische Salsa mit Tomate, Zwiebel und Koriander."
+    },
+    "es": {
+     "t": "La vida diaria en México",
+     "g": "Explora la vida diaria en México, de los mercados animados a las reuniones familiares y las fiestas llenas de color.",
+     "p": [
+      "Los tianguis, mercados al aire libre, venden desde temprano fruta fresca, chiles, flores, artesanías y comida caliente.",
+      "Las reuniones familiares son grandes y alegres, con varias generaciones, mucha comida y a menudo música hasta tarde.",
+      "Hay tacos de infinitos estilos regionales, y las fiestas se llenan de color con papel picado y piñatas."
+     ],
+     "q": "¿Qué te gustaría más vivir en una reunión familiar mexicana?",
+     "c": "Prepara hoy un taco sencillo o una salsa fresca con jitomate, cebolla y cilantro."
+    },
+    "fr": {
+     "t": "La vie quotidienne au Mexique",
+     "g": "Explore la vie quotidienne au Mexique, des marchés animés aux réunions de famille et aux fêtes colorées.",
+     "p": [
+      "Les marchés en plein air, les tianguis, vendent dès le matin fruits frais, piments, fleurs, artisanat et plats chauds.",
+      "Les réunions de famille sont grandes et joyeuses, avec plusieurs générations, beaucoup à manger et souvent de la musique tard le soir.",
+      "Les tacos existent en d'innombrables styles régionaux, et les fêtes sont pleines de couleurs, avec papel picado et piñatas."
+     ],
+     "q": "Que voudrais-tu le plus vivre lors d'une réunion de famille mexicaine ?",
+     "c": "Prépare aujourd'hui un taco simple ou une salsa fraîche à la tomate, à l'oignon et à la coriandre."
+    },
+    "it": {
+     "t": "La vita quotidiana in Messico",
+     "g": "Esplora la vita quotidiana in Messico, dai mercati vivaci alle riunioni di famiglia e alle feste colorate.",
+     "p": [
+      "I mercati all'aperto, chiamati tianguis, vendono fin dal mattino frutta fresca, peperoncini, fiori, artigianato e cibo caldo.",
+      "Le riunioni di famiglia sono grandi e allegre, con più generazioni, tanto cibo e spesso musica fino a tarda notte.",
+      "I tacos esistono in infiniti stili regionali, e le feste sono piene di colore, con festoni di papel picado e piñatas."
+     ],
+     "q": "Cosa ti piacerebbe di più vivere a una riunione di famiglia messicana?",
+     "c": "Prepara oggi un taco semplice o una salsa fresca con pomodoro, cipolla e coriandolo."
+    },
+    "pt": {
+     "t": "O dia a dia no México",
+     "g": "Explora o dia a dia no México, dos mercados animados às reuniões de família e às festas cheias de cor.",
+     "p": [
+      "Os tianguis, mercados ao ar livre, vendem desde cedo fruta fresca, malaguetas, flores, artesanato e comida quente.",
+      "As reuniões de família são grandes e alegres, com várias gerações, muita comida e muitas vezes música até tarde.",
+      "Há tacos de inúmeros estilos regionais, e as festas enchem-se de cor com bandeirinhas de papel picado e piñatas."
+     ],
+     "q": "O que gostavas mais de viver numa reunião de família mexicana?",
+     "c": "Prepara hoje um taco simples ou um molho fresco com tomate, cebola e coentros."
+    },
+    "pt_BR": {
+     "t": "O dia a dia no México",
+     "g": "Explore o dia a dia no México, dos mercados animados às reuniões de família e às festas cheias de cor.",
+     "p": [
+      "Os tianguis, feiras ao ar livre, vendem desde cedo frutas frescas, pimentas, flores, artesanato e comida quente.",
+      "As reuniões de família são grandes e alegres, com várias gerações, muita comida e muitas vezes música até tarde.",
+      "Há tacos de inúmeros estilos regionais, e as festas ficam cheias de cor com bandeirinhas de papel picado e piñatas."
+     ],
+     "q": "O que você mais gostaria de viver numa reunião de família mexicana?",
+     "c": "Prepare hoje um taco simples ou um molho fresco com tomate, cebola e coentro."
+    }
+   }
+  },
+  {
+   "d": 99,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Central America and the Caribbean",
+     "g": "Discover the rhythms, flavours and island cultures from Guatemala to Jamaica.",
+     "p": [
+      "In Guatemala many Maya women weave colourful textiles, and the patterns often show the town they come from.",
+      "In Costa Rica the phrase pura vida, pure life, is used as a greeting, a thank you and a way of seeing life.",
+      "The Caribbean gave the world reggae from Jamaica, the steelpan from Trinidad and Tobago, and merengue and bachata."
+     ],
+     "q": "Which Caribbean or Central American rhythm makes you want to dance?",
+     "c": "Listen to one reggae, merengue, bachata or steelpan song today."
+    },
+    "de": {
+     "t": "Mittelamerika und die Karibik",
+     "g": "Entdecke Rhythmen, Aromen und Inselkulturen von Guatemala bis Jamaika.",
+     "p": [
+      "In Guatemala weben viele Maya-Frauen bunte Stoffe, und die Muster zeigen oft, aus welchem Ort sie stammen.",
+      "In Costa Rica dient pura vida, reines Leben, als Gruß, als Dank und als Lebenseinstellung.",
+      "Die Karibik schenkte der Welt Reggae aus Jamaika, die Steelpan aus Trinidad und Tobago sowie Merengue und Bachata."
+     ],
+     "q": "Bei welchem karibischen oder mittelamerikanischen Rhythmus möchtest du tanzen?",
+     "c": "Hör dir heute einen Reggae-, Merengue-, Bachata- oder Steelpan-Song an."
+    },
+    "es": {
+     "t": "Centroamérica y el Caribe",
+     "g": "Descubre los ritmos, los sabores y las culturas isleñas de Guatemala a Jamaica.",
+     "p": [
+      "En Guatemala muchas mujeres mayas tejen telas de colores, y los dibujos suelen mostrar el pueblo del que vienen.",
+      "En Costa Rica la expresión pura vida se usa como saludo, como gracias y como forma de ver la vida.",
+      "El Caribe dio al mundo el reggae de Jamaica, el steelpan de Trinidad y Tobago, el merengue y la bachata."
+     ],
+     "q": "¿Qué ritmo del Caribe o de Centroamérica te dan ganas de bailar?",
+     "c": "Escucha hoy una canción de reggae, merengue, bachata o steelpan."
+    },
+    "fr": {
+     "t": "L'Amérique centrale et les Caraïbes",
+     "g": "Découvre les rythmes, les saveurs et les cultures insulaires du Guatemala à la Jamaïque.",
+     "p": [
+      "Au Guatemala, beaucoup de femmes mayas tissent des textiles colorés, et les motifs indiquent souvent leur village d'origine.",
+      "Au Costa Rica, l'expression pura vida, la vie pure, sert de salutation, de merci et de façon de voir la vie.",
+      "Les Caraïbes ont offert au monde le reggae jamaïcain, le steelpan de Trinité-et-Tobago, le merengue et la bachata."
+     ],
+     "q": "Quel rythme des Caraïbes ou d'Amérique centrale te donne envie de danser ?",
+     "c": "Écoute aujourd'hui une chanson de reggae, de merengue, de bachata ou de steelpan."
+    },
+    "it": {
+     "t": "America centrale e Caraibi",
+     "g": "Scopri ritmi, sapori e culture isolane dal Guatemala alla Giamaica.",
+     "p": [
+      "In Guatemala molte donne maya tessono stoffe colorate, e i motivi indicano spesso il paese da cui provengono.",
+      "In Costa Rica l'espressione pura vida, vita pura, si usa come saluto, come grazie e come modo di vedere la vita.",
+      "I Caraibi hanno dato al mondo il reggae giamaicano, lo steelpan di Trinidad e Tobago, il merengue e la bachata."
+     ],
+     "q": "Quale ritmo dei Caraibi o dell'America centrale ti fa venire voglia di ballare?",
+     "c": "Ascolta oggi una canzone reggae, merengue, bachata o steelpan."
+    },
+    "pt": {
+     "t": "A América Central e as Caraíbas",
+     "g": "Descobre os ritmos, os sabores e as culturas das ilhas, da Guatemala à Jamaica.",
+     "p": [
+      "Na Guatemala muitas mulheres maias tecem tecidos coloridos, e os padrões mostram muitas vezes a terra de onde vêm.",
+      "Na Costa Rica a expressão pura vida usa-se como cumprimento, como obrigado e como forma de ver a vida.",
+      "As Caraíbas deram ao mundo o reggae da Jamaica, o steelpan de Trindade e Tobago, o merengue e a bachata."
+     ],
+     "q": "Que ritmo das Caraíbas ou da América Central te dá vontade de dançar?",
+     "c": "Ouve hoje uma canção de reggae, merengue, bachata ou steelpan."
+    },
+    "pt_BR": {
+     "t": "A América Central e o Caribe",
+     "g": "Descubra os ritmos, os sabores e as culturas das ilhas, da Guatemala à Jamaica.",
+     "p": [
+      "Na Guatemala muitas mulheres maias tecem tecidos coloridos, e os padrões muitas vezes mostram a cidade de onde elas vêm.",
+      "Na Costa Rica a expressão pura vida é usada como cumprimento, como obrigado e como jeito de ver a vida.",
+      "O Caribe deu ao mundo o reggae da Jamaica, o steelpan de Trinidad e Tobago, o merengue e a bachata."
+     ],
+     "q": "Que ritmo do Caribe ou da América Central dá vontade de dançar em você?",
+     "c": "Ouça hoje uma música de reggae, merengue, bachata ou steelpan."
+    }
+   }
+  },
+  {
+   "d": 100,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "A tour of South America",
+     "g": "Explore a continent of contrasts, from the Andes to the Amazon and the coast.",
+     "p": [
+      "The Andes run along the west of the continent, while the Amazon rainforest covers a huge area in the north and centre.",
+      "Spanish is spoken in most countries, Portuguese in Brazil, and Indigenous languages like Quechua and Guaraní are alive today.",
+      "From Atlantic beaches to the dry Atacama Desert and the southern lands of Patagonia, landscapes shape local life."
+     ],
+     "q": "Which South American landscape would you most like to see: mountains, rainforest, desert or coast?",
+     "c": "Find the Andes, the Amazon and Patagonia on a map of South America today."
+    },
+    "de": {
+     "t": "Rundreise durch Südamerika",
+     "g": "Erkunde einen Kontinent der Gegensätze, von den Anden über den Amazonas bis zur Küste.",
+     "p": [
+      "Die Anden ziehen sich entlang des Westens, während der Amazonas-Regenwald ein riesiges Gebiet im Norden und in der Mitte bedeckt.",
+      "In den meisten Ländern spricht man Spanisch, in Brasilien Portugiesisch, und indigene Sprachen wie Quechua und Guaraní leben weiter.",
+      "Von Atlantikstränden über die trockene Atacama-Wüste bis nach Patagonien im Süden prägen Landschaften das Leben."
+     ],
+     "q": "Welche Landschaft Südamerikas würdest du am liebsten sehen: Berge, Regenwald, Wüste oder Küste?",
+     "c": "Finde heute die Anden, den Amazonas und Patagonien auf einer Karte Südamerikas."
+    },
+    "es": {
+     "t": "Un recorrido por Sudamérica",
+     "g": "Explora un continente de contrastes, de los Andes a la Amazonía y la costa.",
+     "p": [
+      "Los Andes recorren el oeste del continente, mientras la selva amazónica cubre una enorme zona del norte y el centro.",
+      "En la mayoría de países se habla español, en Brasil portugués, y lenguas indígenas como el quechua y el guaraní siguen vivas.",
+      "De las playas atlánticas al árido desierto de Atacama y las tierras australes de la Patagonia, el paisaje marca la vida local."
+     ],
+     "q": "¿Qué paisaje sudamericano te gustaría más ver: montañas, selva, desierto o costa?",
+     "c": "Busca hoy los Andes, la Amazonía y la Patagonia en un mapa de Sudamérica."
+    },
+    "fr": {
+     "t": "Tour d'Amérique du Sud",
+     "g": "Explore un continent de contrastes, des Andes à l'Amazonie et à la côte.",
+     "p": [
+      "Les Andes longent l'ouest du continent, tandis que la forêt amazonienne couvre une immense zone au nord et au centre.",
+      "On parle espagnol dans la plupart des pays, portugais au Brésil, et des langues autochtones comme le quechua et le guarani restent vivantes.",
+      "Des plages de l'Atlantique au désert aride d'Atacama et aux terres australes de Patagonie, les paysages façonnent la vie locale."
+     ],
+     "q": "Quel paysage d'Amérique du Sud aimerais-tu le plus voir : montagnes, forêt, désert ou côte ?",
+     "c": "Repère aujourd'hui les Andes, l'Amazonie et la Patagonie sur une carte de l'Amérique du Sud."
+    },
+    "it": {
+     "t": "Un giro nell'America del Sud",
+     "g": "Esplora un continente di contrasti, dalle Ande all'Amazzonia e alla costa.",
+     "p": [
+      "Le Ande percorrono l'ovest del continente, mentre la foresta amazzonica copre un'enorme area del nord e del centro.",
+      "Nella maggior parte dei paesi si parla spagnolo, in Brasile portoghese, e lingue indigene come quechua e guaraní sono ancora vive.",
+      "Dalle spiagge atlantiche all'arido deserto di Atacama e alle terre australi della Patagonia, i paesaggi plasmano la vita locale."
+     ],
+     "q": "Quale paesaggio sudamericano vorresti vedere di più: montagne, foresta, deserto o costa?",
+     "c": "Trova oggi le Ande, l'Amazzonia e la Patagonia su una mappa dell'America del Sud."
+    },
+    "pt": {
+     "t": "Uma volta pela América do Sul",
+     "g": "Explora um continente de contrastes, dos Andes à Amazónia e ao litoral.",
+     "p": [
+      "Os Andes percorrem o oeste do continente, enquanto a floresta amazónica cobre uma área enorme do norte e do centro.",
+      "Na maioria dos países fala-se espanhol, no Brasil português, e línguas indígenas como o quíchua e o guarani continuam vivas.",
+      "Das praias do Atlântico ao árido deserto do Atacama e às terras austrais da Patagónia, as paisagens moldam a vida local."
+     ],
+     "q": "Que paisagem sul-americana gostavas mais de ver: montanhas, floresta, deserto ou litoral?",
+     "c": "Encontra hoje os Andes, a Amazónia e a Patagónia num mapa da América do Sul."
+    },
+    "pt_BR": {
+     "t": "Um passeio pela América do Sul",
+     "g": "Explore um continente de contrastes, dos Andes à Amazônia e ao litoral.",
+     "p": [
+      "Os Andes percorrem o oeste do continente, enquanto a floresta amazônica cobre uma área enorme do norte e do centro.",
+      "Na maioria dos países se fala espanhol, no Brasil português, e línguas indígenas como o quéchua e o guarani continuam vivas.",
+      "Das praias do Atlântico ao árido deserto do Atacama e às terras do sul da Patagônia, as paisagens moldam a vida local."
+     ],
+     "q": "Que paisagem sul-americana você mais gostaria de ver: montanhas, floresta, deserto ou litoral?",
+     "c": "Encontre hoje os Andes, a Amazônia e a Patagônia num mapa da América do Sul."
+    }
+   }
+  }
+ ]
+}

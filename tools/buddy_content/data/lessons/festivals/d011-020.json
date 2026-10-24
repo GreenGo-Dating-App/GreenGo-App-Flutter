@@ -1,0 +1,835 @@
+{
+ "topic": "festivals",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Nowruz, the Persian New Year",
+     "g": "Discover Nowruz, a spring equinox new year with the haft-sin table, spring cleaning and family visits.",
+     "p": [
+      "Nowruz means new day; it begins at the spring equinox around 20 or 21 March in Iran, Central Asia and beyond.",
+      "Families set a haft-sin table with seven items whose names start with the letter sin, like sprouts, apples and garlic.",
+      "Homes get a big spring clean, people visit relatives, and on the 13th day many go out for a picnic in nature."
+     ],
+     "q": "Which season feels most like a fresh start to you, and why?",
+     "c": "Clean one small corner of your home today and put something green there, like a plant or sprouts."
+    },
+    "de": {
+     "t": "Nouruz, das persische Neujahr",
+     "g": "Entdecke Nouruz, ein Neujahr zur Tagundnachtgleiche im Frühling mit Haft-Sin-Tisch, Frühjahrsputz und Besuchen.",
+     "p": [
+      "Nouruz bedeutet neuer Tag; es beginnt zur Frühlings-Tagundnachtgleiche um den 20. oder 21. März, etwa im Iran und in Zentralasien.",
+      "Familien decken einen Haft-Sin-Tisch mit sieben Dingen, deren Namen mit dem Buchstaben Sin beginnen, etwa Sprossen, Äpfel und Knoblauch.",
+      "Das Haus wird gründlich geputzt, man besucht Verwandte, und am 13. Tag machen viele ein Picknick im Grünen."
+     ],
+     "q": "Welche Jahreszeit fühlt sich für dich am meisten nach Neuanfang an, und warum?",
+     "c": "Putze heute eine kleine Ecke deiner Wohnung und stelle etwas Grünes hin, etwa eine Pflanze oder Sprossen."
+    },
+    "es": {
+     "t": "Nowruz, el Año Nuevo persa",
+     "g": "Descubre Nowruz, un año nuevo del equinoccio de primavera con la mesa haft-sin, limpieza a fondo y visitas familiares.",
+     "p": [
+      "Nowruz significa día nuevo; empieza en el equinoccio de primavera, hacia el 20 o 21 de marzo, en Irán, Asia Central y más allá.",
+      "Las familias preparan la mesa haft-sin con siete elementos cuyo nombre empieza por la letra sin, como brotes, manzanas y ajo.",
+      "Se limpia la casa a fondo, se visita a los parientes y el día 13 muchos salen de pícnic al campo."
+     ],
+     "q": "¿Qué estación te parece más un nuevo comienzo y por qué?",
+     "c": "Limpia hoy un rincón de tu casa y pon allí algo verde, como una planta o unos brotes."
+    },
+    "fr": {
+     "t": "Norouz, le Nouvel An persan",
+     "g": "Découvre Norouz, un nouvel an de l'équinoxe de printemps avec la table haft-sin, le grand ménage et les visites.",
+     "p": [
+      "Norouz signifie nouveau jour ; il commence à l'équinoxe de printemps, vers le 20 ou 21 mars, en Iran, en Asie centrale et ailleurs.",
+      "Les familles dressent la table haft-sin avec sept éléments dont le nom commence par la lettre sin : pousses, pommes, ail.",
+      "On fait le grand ménage, on rend visite à la famille et, le 13e jour, beaucoup pique-niquent dans la nature."
+     ],
+     "q": "Quelle saison ressemble le plus à un nouveau départ pour toi, et pourquoi ?",
+     "c": "Range aujourd'hui un petit coin de chez toi et poses-y quelque chose de vert, comme une plante ou des pousses."
+    },
+    "it": {
+     "t": "Nowruz, il Capodanno persiano",
+     "g": "Scopri Nowruz, un capodanno dell'equinozio di primavera con la tavola haft-sin, le pulizie di casa e le visite.",
+     "p": [
+      "Nowruz significa giorno nuovo; inizia con l'equinozio di primavera, verso il 20 o 21 marzo, in Iran, Asia centrale e oltre.",
+      "Le famiglie preparano la tavola haft-sin con sette elementi il cui nome inizia con la lettera sin, come germogli, mele e aglio.",
+      "Si fanno grandi pulizie, si visitano i parenti e il 13° giorno molti fanno un picnic nella natura."
+     ],
+     "q": "Quale stagione ti sembra di più un nuovo inizio, e perché?",
+     "c": "Pulisci oggi un piccolo angolo di casa e mettici qualcosa di verde, come una pianta o dei germogli."
+    },
+    "pt": {
+     "t": "Nowruz, o Ano Novo persa",
+     "g": "Descobre o Nowruz, um ano novo do equinócio da primavera com a mesa haft-sin, limpezas e visitas à família.",
+     "p": [
+      "Nowruz significa dia novo; começa no equinócio da primavera, por volta de 20 ou 21 de março, no Irão, na Ásia Central e não só.",
+      "As famílias põem a mesa haft-sin com sete elementos cujos nomes começam pela letra sin, como rebentos, maçãs e alho.",
+      "A casa leva uma grande limpeza, visitam-se os parentes e, no 13.º dia, muitos fazem um piquenique na natureza."
+     ],
+     "q": "Que estação te parece mais um recomeço e porquê?",
+     "c": "Limpa hoje um cantinho da tua casa e põe lá algo verde, como uma planta ou rebentos."
+    },
+    "pt_BR": {
+     "t": "Nowruz, o Ano-Novo persa",
+     "g": "Descubra o Nowruz, um ano-novo do equinócio de primavera com a mesa haft-sin, faxina e visitas à família.",
+     "p": [
+      "Nowruz significa dia novo; começa no equinócio de primavera, por volta de 20 ou 21 de março, no Irã, na Ásia Central e além.",
+      "As famílias montam a mesa haft-sin com sete itens cujos nomes começam com a letra sin, como brotos, maçãs e alho.",
+      "A casa ganha uma faxina geral, os parentes são visitados e, no 13º dia, muitos fazem um piquenique ao ar livre."
+     ],
+     "q": "Qual estação parece mais um recomeço para você e por quê?",
+     "c": "Arrume hoje um cantinho da sua casa e coloque ali algo verde, como uma planta ou brotos."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Songkran, Thai New Year",
+     "g": "Meet Songkran, the mid-April Thai New Year of playful water splashing, fresh starts and respect for elders.",
+     "p": [
+      "Songkran is celebrated around 13 to 15 April, in the hottest part of the year in Thailand.",
+      "Streets turn into friendly water fights with buckets and water guns; the water stands for washing away the old year.",
+      "A gentle custom is pouring scented water over the hands of elders to show respect and receive their blessing."
+     ],
+     "q": "Would you enjoy a giant friendly water fight, or prefer the quiet custom with the elders?",
+     "c": "Do one small thing today to show respect to an older person in your life."
+    },
+    "de": {
+     "t": "Songkran, das thailändische Neujahr",
+     "g": "Lerne Songkran kennen, das thailändische Neujahr Mitte April mit Wasserspritzen, Neuanfang und Respekt vor Älteren.",
+     "p": [
+      "Songkran wird etwa vom 13. bis 15. April gefeiert, in der heißesten Zeit des Jahres in Thailand.",
+      "Straßen werden zu fröhlichen Wasserschlachten mit Eimern und Wasserpistolen; das Wasser wäscht das alte Jahr ab.",
+      "Ein sanfter Brauch: Man gießt duftendes Wasser über die Hände älterer Menschen, um Respekt zu zeigen."
+     ],
+     "q": "Hättest du Spaß an einer riesigen Wasserschlacht, oder magst du lieber den ruhigen Brauch mit den Älteren?",
+     "c": "Tu heute etwas Kleines, um einem älteren Menschen in deinem Leben Respekt zu zeigen."
+    },
+    "es": {
+     "t": "Songkran, el Año Nuevo tailandés",
+     "g": "Conoce Songkran, el Año Nuevo tailandés de mediados de abril con guerras de agua, nuevos comienzos y respeto a los mayores.",
+     "p": [
+      "Songkran se celebra hacia el 13 al 15 de abril, en la época más calurosa del año en Tailandia.",
+      "Las calles se llenan de guerras de agua amistosas con cubos y pistolas; el agua simboliza limpiar el año que se va.",
+      "Una costumbre tranquila es verter agua perfumada sobre las manos de los mayores para mostrarles respeto."
+     ],
+     "q": "¿Disfrutarías de una enorme guerra de agua o prefieres la costumbre tranquila con los mayores?",
+     "c": "Haz hoy un pequeño gesto de respeto hacia una persona mayor de tu vida."
+    },
+    "fr": {
+     "t": "Songkran, le Nouvel An thaï",
+     "g": "Découvre Songkran, le Nouvel An thaï de la mi-avril : batailles d'eau, nouveaux départs et respect des aînés.",
+     "p": [
+      "Songkran se fête vers le 13 au 15 avril, pendant la période la plus chaude de l'année en Thaïlande.",
+      "Les rues deviennent des batailles d'eau joyeuses avec seaux et pistolets ; l'eau lave symboliquement l'année passée.",
+      "Une coutume douce consiste à verser de l'eau parfumée sur les mains des aînés pour leur montrer du respect."
+     ],
+     "q": "Aimerais-tu une immense bataille d'eau, ou préfères-tu la coutume paisible avec les aînés ?",
+     "c": "Fais aujourd'hui un petit geste de respect envers une personne âgée de ton entourage."
+    },
+    "it": {
+     "t": "Songkran, il Capodanno thailandese",
+     "g": "Scopri Songkran, il Capodanno thailandese di metà aprile tra battaglie d'acqua, nuovi inizi e rispetto per gli anziani.",
+     "p": [
+      "Songkran si festeggia circa dal 13 al 15 aprile, nel periodo più caldo dell'anno in Thailandia.",
+      "Le strade diventano allegre battaglie d'acqua con secchi e pistole ad acqua; l'acqua lava via l'anno vecchio.",
+      "Un'usanza delicata è versare acqua profumata sulle mani degli anziani per mostrare rispetto."
+     ],
+     "q": "Ti divertiresti in una gigantesca battaglia d'acqua o preferisci l'usanza tranquilla con gli anziani?",
+     "c": "Fai oggi un piccolo gesto di rispetto verso una persona anziana della tua vita."
+    },
+    "pt": {
+     "t": "Songkran, o Ano Novo tailandês",
+     "g": "Conhece o Songkran, o Ano Novo tailandês de meados de abril com batalhas de água, recomeços e respeito pelos mais velhos.",
+     "p": [
+      "O Songkran celebra-se por volta de 13 a 15 de abril, na época mais quente do ano na Tailândia.",
+      "As ruas enchem-se de batalhas de água amigáveis com baldes e pistolas; a água lava simbolicamente o ano velho.",
+      "Um costume tranquilo é deitar água perfumada nas mãos dos mais velhos para lhes mostrar respeito."
+     ],
+     "q": "Divertias-te numa enorme batalha de água ou preferes o costume calmo com os mais velhos?",
+     "c": "Faz hoje um pequeno gesto de respeito por uma pessoa mais velha da tua vida."
+    },
+    "pt_BR": {
+     "t": "Songkran, o Ano-Novo tailandês",
+     "g": "Conheça o Songkran, o Ano-Novo tailandês de meados de abril com guerras de água, recomeços e respeito aos mais velhos.",
+     "p": [
+      "O Songkran é comemorado por volta de 13 a 15 de abril, na época mais quente do ano na Tailândia.",
+      "As ruas viram guerras de água amigáveis com baldes e pistolas; a água lava simbolicamente o ano que passou.",
+      "Um costume tranquilo é derramar água perfumada nas mãos dos mais velhos para mostrar respeito."
+     ],
+     "q": "Você curtiria uma guerra de água gigante ou prefere o costume tranquilo com os mais velhos?",
+     "c": "Faça hoje um pequeno gesto de respeito por uma pessoa mais velha da sua vida."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Happy New Year in many languages",
+     "g": "Learn how to wish people a happy new year in several languages and when each of those new years falls.",
+     "p": [
+      "On 1 January you can say Feliz Año Nuevo, Bonne année, Frohes neues Jahr, Buon anno or Feliz Ano Novo.",
+      "For Lunar New Year say Xīnnián kuàilè in Mandarin; in Japan, on 1 January, people say Akemashite omedetō.",
+      "At Nowruz in March say Nowruz mobarak; for the Jewish new year, Rosh Hashanah in autumn, say Shana tova."
+     ],
+     "q": "Which of these new year wishes would you most like to use, and with whom?",
+     "c": "Send a new year style wish today in a language that is not your own, even if it is not New Year."
+    },
+    "de": {
+     "t": "Frohes neues Jahr in vielen Sprachen",
+     "g": "Lerne, wie man in mehreren Sprachen ein frohes neues Jahr wünscht und wann diese Neujahre jeweils sind.",
+     "p": [
+      "Am 1. Januar sagt man Feliz Año Nuevo, Bonne année, Happy New Year, Buon anno oder Feliz Ano Novo.",
+      "Zum Mondneujahr sagt man auf Mandarin Xīnnián kuàilè; in Japan sagt man am 1. Januar Akemashite omedetō.",
+      "Zu Nouruz im März sagt man Nowruz mobarak; zum jüdischen Neujahr Rosch ha-Schana im Herbst Schana tova."
+     ],
+     "q": "Welchen dieser Neujahrswünsche würdest du am liebsten benutzen, und bei wem?",
+     "c": "Sende heute einen Neujahrsgruß in einer fremden Sprache, auch wenn gerade nicht Neujahr ist."
+    },
+    "es": {
+     "t": "Feliz año nuevo en muchos idiomas",
+     "g": "Aprende a desear feliz año nuevo en varios idiomas y descubre cuándo cae cada uno de esos años nuevos.",
+     "p": [
+      "El 1 de enero puedes decir Happy New Year, Bonne année, Frohes neues Jahr, Buon anno o Feliz Ano Novo.",
+      "En el Año Nuevo Lunar se dice Xīnnián kuàilè en mandarín; en Japón, el 1 de enero, se dice Akemashite omedetō.",
+      "En Nowruz, en marzo, se dice Nowruz mobarak; en el año nuevo judío, Rosh Hashaná, en otoño, Shaná tová."
+     ],
+     "q": "¿Cuál de estas felicitaciones te gustaría usar más y con quién?",
+     "c": "Envía hoy una felicitación de año nuevo en un idioma que no sea el tuyo, aunque no sea Año Nuevo."
+    },
+    "fr": {
+     "t": "Bonne année dans plein de langues",
+     "g": "Apprends à souhaiter la bonne année dans plusieurs langues et découvre quand tombe chacun de ces nouvels ans.",
+     "p": [
+      "Le 1er janvier, on peut dire Happy New Year, Feliz Año Nuevo, Frohes neues Jahr, Buon anno ou Feliz Ano Novo.",
+      "Au Nouvel An lunaire, on dit Xīnnián kuàilè en mandarin ; au Japon, le 1er janvier, on dit Akemashite omedetō.",
+      "À Norouz, en mars, on dit Nowruz mobarak ; au nouvel an juif, Roch Hachana, en automne, on dit Shana tova."
+     ],
+     "q": "Lequel de ces vœux aimerais-tu le plus utiliser, et avec qui ?",
+     "c": "Envoie aujourd'hui un vœu de bonne année dans une autre langue que la tienne, même hors saison."
+    },
+    "it": {
+     "t": "Buon anno in tante lingue",
+     "g": "Impara ad augurare buon anno in diverse lingue e scopri quando cade ciascuno di questi capodanni.",
+     "p": [
+      "Il 1° gennaio puoi dire Happy New Year, Feliz Año Nuevo, Bonne année, Frohes neues Jahr o Feliz Ano Novo.",
+      "Per il Capodanno lunare si dice Xīnnián kuàilè in mandarino; in Giappone, il 1° gennaio, si dice Akemashite omedetō.",
+      "Per Nowruz, a marzo, si dice Nowruz mobarak; per il capodanno ebraico, Rosh haShanah in autunno, Shana tova."
+     ],
+     "q": "Quale di questi auguri ti piacerebbe usare di più, e con chi?",
+     "c": "Manda oggi un augurio di buon anno in una lingua diversa dalla tua, anche se non è Capodanno."
+    },
+    "pt": {
+     "t": "Feliz Ano Novo em muitas línguas",
+     "g": "Aprende a desejar feliz ano novo em várias línguas e descobre quando calha cada um desses anos novos.",
+     "p": [
+      "A 1 de janeiro podes dizer Happy New Year, Feliz Año Nuevo, Bonne année, Frohes neues Jahr ou Buon anno.",
+      "No Ano Novo Lunar diz-se Xīnnián kuàilè em mandarim; no Japão, a 1 de janeiro, diz-se Akemashite omedetō.",
+      "No Nowruz, em março, diz-se Nowruz mobarak; no ano novo judaico, Rosh Hashaná, no outono, diz-se Shana tova."
+     ],
+     "q": "Qual destes votos de ano novo gostavas mais de usar e com quem?",
+     "c": "Envia hoje uns votos de ano novo numa língua que não é a tua, mesmo que não seja Ano Novo."
+    },
+    "pt_BR": {
+     "t": "Feliz Ano-Novo em muitos idiomas",
+     "g": "Aprenda a desejar feliz ano-novo em vários idiomas e descubra quando cai cada um desses anos-novos.",
+     "p": [
+      "Em 1º de janeiro você pode dizer Happy New Year, Feliz Año Nuevo, Bonne année, Frohes neues Jahr ou Buon anno.",
+      "No Ano-Novo Lunar diz-se Xīnnián kuàilè em mandarim; no Japão, em 1º de janeiro, diz-se Akemashite omedetō.",
+      "No Nowruz, em março, diz-se Nowruz mobarak; no ano-novo judaico, Rosh Hashaná, no outono, diz-se Shaná tová."
+     ],
+     "q": "Qual desses votos de ano-novo você mais gostaria de usar e com quem?",
+     "c": "Mande hoje votos de ano-novo em um idioma que não é o seu, mesmo que não seja Ano-Novo."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Festivals of light",
+     "g": "Find out why lamps, candles and lanterns shine in so many celebrations during the dark months.",
+     "p": [
+      "In the darkest weeks of the year, light brings warmth, safety and a feeling that brighter days will return.",
+      "Many traditions use light as a symbol of hope, knowledge or good winning over darkness.",
+      "Examples include Diwali lamps, Hanukkah candles, Christmas lights and Saint Lucia's candle crown in Sweden."
+     ],
+     "q": "Which festival lights have you seen, and how did they make you feel?",
+     "c": "Light a candle or a small lamp this evening and enjoy ten quiet minutes in its glow."
+    },
+    "de": {
+     "t": "Lichterfeste",
+     "g": "Erfahre, warum Lampen, Kerzen und Laternen in so vielen Festen der dunklen Monate leuchten.",
+     "p": [
+      "In den dunkelsten Wochen des Jahres schenkt Licht Wärme, Sicherheit und das Gefühl, dass hellere Tage kommen.",
+      "Viele Traditionen nutzen Licht als Zeichen für Hoffnung, Wissen oder den Sieg des Guten über die Dunkelheit.",
+      "Beispiele sind die Lampen an Diwali, die Kerzen an Chanukka, Weihnachtslichter und die Luciakrone in Schweden."
+     ],
+     "q": "Welche Festlichter hast du schon gesehen, und wie haben sie sich angefühlt?",
+     "c": "Zünde heute Abend eine Kerze oder eine kleine Lampe an und genieße zehn ruhige Minuten in ihrem Schein."
+    },
+    "es": {
+     "t": "Fiestas de la luz",
+     "g": "Descubre por qué lámparas, velas y farolillos brillan en tantas celebraciones de los meses oscuros.",
+     "p": [
+      "En las semanas más oscuras del año, la luz da calor, seguridad y la sensación de que volverán días más claros.",
+      "Muchas tradiciones usan la luz como símbolo de esperanza, de conocimiento o del bien que vence a la oscuridad.",
+      "Ejemplos: las lámparas de Diwali, las velas de Janucá, las luces de Navidad y la corona de velas de Santa Lucía en Suecia."
+     ],
+     "q": "¿Qué luces festivas has visto y cómo te hicieron sentir?",
+     "c": "Enciende esta noche una vela o una lamparita y disfruta de diez minutos tranquilos a su luz."
+    },
+    "fr": {
+     "t": "Les fêtes de la lumière",
+     "g": "Découvre pourquoi lampes, bougies et lanternes brillent dans tant de fêtes pendant les mois sombres.",
+     "p": [
+      "Pendant les semaines les plus sombres, la lumière apporte chaleur, sécurité et l'espoir du retour des beaux jours.",
+      "Beaucoup de traditions font de la lumière un symbole d'espoir, de savoir ou du bien qui l'emporte sur l'obscurité.",
+      "Exemples : les lampes de Diwali, les bougies de Hanoukka, les lumières de Noël et la couronne de Sainte-Lucie en Suède."
+     ],
+     "q": "Quelles lumières de fête as-tu déjà vues, et que t'ont-elles fait ressentir ?",
+     "c": "Allume ce soir une bougie ou une petite lampe et profite de dix minutes calmes à sa lueur."
+    },
+    "it": {
+     "t": "Feste della luce",
+     "g": "Scopri perché lampade, candele e lanterne brillano in tante feste durante i mesi bui.",
+     "p": [
+      "Nelle settimane più buie dell'anno la luce porta calore, sicurezza e la sensazione che torneranno giorni più chiari.",
+      "Molte tradizioni usano la luce come simbolo di speranza, di conoscenza o del bene che vince sul buio.",
+      "Esempi: le lampade di Diwali, le candele di Hanukkah, le luci di Natale e la corona di candele di Santa Lucia in Svezia."
+     ],
+     "q": "Quali luci di festa hai visto, e come ti hanno fatto sentire?",
+     "c": "Accendi stasera una candela o una piccola lampada e goditi dieci minuti tranquilli alla sua luce."
+    },
+    "pt": {
+     "t": "Festas da luz",
+     "g": "Descobre porque é que lamparinas, velas e lanternas brilham em tantas celebrações dos meses escuros.",
+     "p": [
+      "Nas semanas mais escuras do ano, a luz traz calor, segurança e a sensação de que voltarão dias mais claros.",
+      "Muitas tradições usam a luz como símbolo de esperança, de conhecimento ou do bem que vence a escuridão.",
+      "Exemplos: as lamparinas do Diwali, as velas do Hanukkah, as luzes de Natal e a coroa de velas de Santa Luzia na Suécia."
+     ],
+     "q": "Que luzes de festa já viste e como te fizeram sentir?",
+     "c": "Acende esta noite uma vela ou uma pequena luz e aproveita dez minutos calmos ao seu brilho."
+    },
+    "pt_BR": {
+     "t": "Festas da luz",
+     "g": "Descubra por que lamparinas, velas e lanternas brilham em tantas celebrações dos meses escuros.",
+     "p": [
+      "Nas semanas mais escuras do ano, a luz traz calor, segurança e a sensação de que dias mais claros vão voltar.",
+      "Muitas tradições usam a luz como símbolo de esperança, de conhecimento ou do bem vencendo a escuridão.",
+      "Exemplos: as lamparinas do Diwali, as velas do Hanukkah, as luzes de Natal e a coroa de velas de Santa Luzia na Suécia."
+     ],
+     "q": "Quais luzes de festa você já viu e como elas fizeram você se sentir?",
+     "c": "Acenda hoje à noite uma vela ou uma pequena luz e aproveite dez minutos tranquilos com ela."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Diwali basics",
+     "g": "Meet Diwali, the festival of lights, with oil lamps, rangoli, sweets, new clothes and family time.",
+     "p": [
+      "Diwali usually falls in October or November and is celebrated by Hindus, Sikhs, Jains and many others in India and worldwide.",
+      "Small clay oil lamps called diyas glow in windows and doorways, a symbol of light winning over darkness.",
+      "Families clean their homes, wear new clothes, share boxes of sweets and often enjoy fireworks together."
+     ],
+     "q": "Have you ever tasted Indian sweets or seen a home decorated for Diwali?",
+     "c": "Learn the greeting Happy Diwali or Shubh Deepavali and share it with someone today."
+    },
+    "de": {
+     "t": "Diwali: die Grundlagen",
+     "g": "Lerne Diwali kennen, das Lichterfest mit Öllampen, Rangoli, Süßigkeiten, neuer Kleidung und Zeit mit der Familie.",
+     "p": [
+      "Diwali fällt meist in den Oktober oder November und wird von Hindus, Sikhs, Jains und vielen anderen gefeiert.",
+      "Kleine Öllampen aus Ton, Diyas genannt, leuchten an Fenstern und Türen als Zeichen, dass Licht die Dunkelheit besiegt.",
+      "Familien putzen ihr Zuhause, tragen neue Kleidung, verschenken Süßigkeiten und genießen oft gemeinsam Feuerwerk."
+     ],
+     "q": "Hast du schon einmal indische Süßigkeiten probiert oder ein für Diwali geschmücktes Haus gesehen?",
+     "c": "Lerne den Gruß Happy Diwali oder Shubh Deepavali und schenke ihn heute jemandem."
+    },
+    "es": {
+     "t": "Lo básico de Diwali",
+     "g": "Conoce Diwali, la fiesta de las luces, con lámparas de aceite, rangoli, dulces, ropa nueva y tiempo en familia.",
+     "p": [
+      "Diwali suele caer en octubre o noviembre y lo celebran hindúes, sijs, jainistas y muchas personas en India y el mundo.",
+      "Pequeñas lámparas de barro con aceite, llamadas diyas, brillan en ventanas y puertas como símbolo de la luz que vence a la oscuridad.",
+      "Las familias limpian la casa, estrenan ropa, comparten cajas de dulces y a menudo disfrutan juntas de fuegos artificiales."
+     ],
+     "q": "¿Has probado alguna vez dulces indios o has visto una casa decorada para Diwali?",
+     "c": "Aprende el saludo Happy Diwali o Shubh Deepavali y dedícaselo hoy a alguien."
+    },
+    "fr": {
+     "t": "Les bases de Diwali",
+     "g": "Découvre Diwali, la fête des lumières : lampes à huile, rangoli, douceurs, habits neufs et moments en famille.",
+     "p": [
+      "Diwali tombe généralement en octobre ou novembre ; hindous, sikhs, jaïns et bien d'autres la fêtent en Inde et ailleurs.",
+      "De petites lampes à huile en terre, les diyas, brillent aux fenêtres et aux portes : la lumière triomphe de l'obscurité.",
+      "Les familles nettoient la maison, portent des habits neufs, partagent des boîtes de douceurs et admirent souvent des feux."
+     ],
+     "q": "As-tu déjà goûté des douceurs indiennes ou vu une maison décorée pour Diwali ?",
+     "c": "Apprends le vœu Happy Diwali ou Shubh Deepavali et offre-le à quelqu'un aujourd'hui."
+    },
+    "it": {
+     "t": "Le basi di Diwali",
+     "g": "Scopri Diwali, la festa delle luci, con lampade a olio, rangoli, dolci, vestiti nuovi e tempo in famiglia.",
+     "p": [
+      "Diwali cade di solito tra ottobre e novembre ed è celebrato da induisti, sikh, giainisti e molti altri in India e nel mondo.",
+      "Piccole lampade a olio di terracotta, le diya, brillano a finestre e porte come simbolo della luce che vince il buio.",
+      "Le famiglie puliscono la casa, indossano abiti nuovi, si scambiano scatole di dolci e spesso guardano i fuochi insieme."
+     ],
+     "q": "Hai mai assaggiato dolci indiani o visto una casa decorata per Diwali?",
+     "c": "Impara l'augurio Happy Diwali o Shubh Deepavali e dedicalo oggi a qualcuno."
+    },
+    "pt": {
+     "t": "O essencial do Diwali",
+     "g": "Conhece o Diwali, a festa das luzes, com lamparinas, rangoli, doces, roupa nova e tempo em família.",
+     "p": [
+      "O Diwali calha normalmente em outubro ou novembro e é celebrado por hindus, sikhs, jainistas e muitos outros, na Índia e no mundo.",
+      "Pequenas lamparinas de barro com azeite, as diyas, brilham em janelas e portas como símbolo da luz que vence a escuridão.",
+      "As famílias limpam a casa, estreiam roupa, partilham caixas de doces e muitas vezes veem fogo de artifício juntas."
+     ],
+     "q": "Já provaste doces indianos ou viste uma casa decorada para o Diwali?",
+     "c": "Aprende a saudação Happy Diwali ou Shubh Deepavali e oferece-a hoje a alguém."
+    },
+    "pt_BR": {
+     "t": "O básico do Diwali",
+     "g": "Conheça o Diwali, a festa das luzes, com lamparinas, rangoli, doces, roupas novas e tempo em família.",
+     "p": [
+      "O Diwali costuma cair em outubro ou novembro e é celebrado por hindus, sikhs, jainistas e muitos outros, na Índia e no mundo.",
+      "Pequenas lamparinas de barro com óleo, as diyas, brilham em janelas e portas como símbolo da luz que vence a escuridão.",
+      "As famílias limpam a casa, estreiam roupas, compartilham caixas de doces e muitas vezes assistem a fogos juntas."
+     ],
+     "q": "Você já provou doces indianos ou viu uma casa decorada para o Diwali?",
+     "c": "Aprenda a saudação Happy Diwali ou Shubh Deepavali e mande para alguém hoje."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Rangoli and floor art",
+     "g": "Explore rangoli, designs of coloured powder, rice and flowers that welcome guests at the door.",
+     "p": [
+      "Rangoli are patterns drawn on the floor near the entrance, especially for Diwali and other happy occasions in India.",
+      "They are made with coloured powder, rice flour, sand or flower petals, often in circles, lotus shapes or lamps.",
+      "In South India a version called kolam is drawn with rice flour, and many homes create one every morning."
+     ],
+     "q": "Do you decorate your doorway or entrance for special days? How?",
+     "c": "Draw a simple symmetrical rangoli-style pattern on paper, starting from a dot grid."
+    },
+    "de": {
+     "t": "Rangoli und Bodenkunst",
+     "g": "Entdecke Rangoli, Muster aus farbigem Pulver, Reis und Blüten, die Gäste an der Tür willkommen heißen.",
+     "p": [
+      "Rangoli sind Muster am Boden vor dem Eingang, vor allem zu Diwali und anderen freudigen Anlässen in Indien.",
+      "Sie entstehen aus farbigem Pulver, Reismehl, Sand oder Blütenblättern, oft als Kreise, Lotusblüten oder Lampen.",
+      "In Südindien zeichnet man eine Variante namens Kolam mit Reismehl, in vielen Häusern jeden Morgen neu."
+     ],
+     "q": "Schmückst du an besonderen Tagen deinen Eingang? Wie?",
+     "c": "Zeichne auf Papier ein einfaches, symmetrisches Muster im Rangoli-Stil, ausgehend von einem Punkteraster."
+    },
+    "es": {
+     "t": "Rangoli y el arte en el suelo",
+     "g": "Explora el rangoli, diseños de polvo de colores, arroz y flores que dan la bienvenida a los invitados en la puerta.",
+     "p": [
+      "Los rangoli son dibujos en el suelo junto a la entrada, sobre todo en Diwali y otras ocasiones alegres de la India.",
+      "Se hacen con polvo de colores, harina de arroz, arena o pétalos de flores, a menudo con círculos, lotos o lámparas.",
+      "En el sur de la India hay una versión llamada kolam, hecha con harina de arroz, que muchas casas dibujan cada mañana."
+     ],
+     "q": "¿Decoras la entrada de tu casa en días especiales? ¿Cómo?",
+     "c": "Dibuja en papel un diseño sencillo y simétrico estilo rangoli a partir de una cuadrícula de puntos."
+    },
+    "fr": {
+     "t": "Le rangoli et l'art au sol",
+     "g": "Découvre le rangoli, des motifs de poudres colorées, de riz et de fleurs qui accueillent les invités sur le seuil.",
+     "p": [
+      "Les rangoli sont des motifs tracés au sol devant l'entrée, surtout pour Diwali et d'autres occasions joyeuses en Inde.",
+      "On les réalise avec des poudres colorées, de la farine de riz, du sable ou des pétales : cercles, lotus ou lampes.",
+      "Dans le sud de l'Inde, une version appelée kolam est tracée à la farine de riz, chaque matin dans beaucoup de maisons."
+     ],
+     "q": "Décores-tu ton entrée pour les jours spéciaux ? Comment ?",
+     "c": "Dessine sur papier un motif simple et symétrique façon rangoli, à partir d'une grille de points."
+    },
+    "it": {
+     "t": "Rangoli e arte sul pavimento",
+     "g": "Esplora il rangoli, disegni di polveri colorate, riso e fiori che danno il benvenuto agli ospiti sulla porta.",
+     "p": [
+      "I rangoli sono decorazioni sul pavimento davanti all'ingresso, soprattutto per Diwali e altre occasioni liete in India.",
+      "Si fanno con polveri colorate, farina di riso, sabbia o petali di fiori, spesso a forma di cerchi, fiori di loto o lampade.",
+      "Nel sud dell'India una versione chiamata kolam si disegna con farina di riso, in molte case ogni mattina."
+     ],
+     "q": "Decori l'ingresso di casa nei giorni speciali? Come?",
+     "c": "Disegna su carta un motivo semplice e simmetrico in stile rangoli, partendo da una griglia di punti."
+    },
+    "pt": {
+     "t": "Rangoli e arte no chão",
+     "g": "Explora o rangoli, desenhos de pó colorido, arroz e flores que dão as boas-vindas aos convidados à porta.",
+     "p": [
+      "Os rangoli são desenhos no chão junto à entrada, sobretudo no Diwali e noutras ocasiões alegres na Índia.",
+      "Fazem-se com pó colorido, farinha de arroz, areia ou pétalas de flores, muitas vezes em círculos, lótus ou lamparinas.",
+      "No sul da Índia há uma versão chamada kolam, feita com farinha de arroz, que muitas casas desenham todas as manhãs."
+     ],
+     "q": "Decoras a entrada da tua casa em dias especiais? Como?",
+     "c": "Desenha numa folha um padrão simples e simétrico ao estilo rangoli, a partir de uma grelha de pontos."
+    },
+    "pt_BR": {
+     "t": "Rangoli e arte no chão",
+     "g": "Explore o rangoli, desenhos de pó colorido, arroz e flores que dão as boas-vindas aos convidados na porta.",
+     "p": [
+      "Os rangoli são desenhos no chão perto da entrada, principalmente no Diwali e em outras ocasiões alegres na Índia.",
+      "São feitos com pó colorido, farinha de arroz, areia ou pétalas de flores, muitas vezes em círculos, lótus ou lamparinas.",
+      "No sul da Índia existe uma versão chamada kolam, feita com farinha de arroz, que muitas casas desenham toda manhã."
+     ],
+     "q": "Você decora a entrada da sua casa em dias especiais? Como?",
+     "c": "Desenhe no papel um padrão simples e simétrico no estilo rangoli, a partir de uma grade de pontos."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Hanukkah basics",
+     "g": "Learn about Hanukkah: eight nights of candles, the menorah, latkes, doughnuts and the dreidel game.",
+     "p": [
+      "Hanukkah is a Jewish festival of eight nights, usually in December, remembering the rededication of the Temple in Jerusalem.",
+      "Each night one more candle is lit on the menorah, using a helper candle called the shamash, until all eight shine.",
+      "Foods fried in oil recall the story of oil that lasted eight days: potato latkes and jam doughnuts called sufganiyot."
+     ],
+     "q": "Have you ever tried latkes or seen a menorah glowing in a window?",
+     "c": "Make a simple paper dreidel or spinning top and play a quick game with someone."
+    },
+    "de": {
+     "t": "Chanukka: die Grundlagen",
+     "g": "Lerne Chanukka kennen: acht Nächte mit Kerzen, Leuchter, Latkes, Krapfen und dem Dreidel-Spiel.",
+     "p": [
+      "Chanukka ist ein jüdisches Fest von acht Nächten, meist im Dezember, zur Erinnerung an die Wiedereinweihung des Tempels in Jerusalem.",
+      "Jeden Abend wird eine Kerze mehr am Chanukka-Leuchter angezündet, mit einer Helferkerze namens Schamasch.",
+      "In Öl Gebackenes erinnert an das Öl, das acht Tage reichte: Kartoffelpuffer namens Latkes und Krapfen namens Sufganiyot."
+     ],
+     "q": "Hast du schon einmal Latkes probiert oder einen leuchtenden Chanukka-Leuchter im Fenster gesehen?",
+     "c": "Bastle einen einfachen Dreidel oder Kreisel aus Papier und spiele eine kurze Runde mit jemandem."
+    },
+    "es": {
+     "t": "Lo básico de Janucá",
+     "g": "Aprende sobre Janucá: ocho noches de velas, la menorá, latkes, buñuelos y el juego de la perinola.",
+     "p": [
+      "Janucá es una fiesta judía de ocho noches, normalmente en diciembre, que recuerda la nueva consagración del Templo de Jerusalén.",
+      "Cada noche se enciende una vela más en la menorá con una vela auxiliar llamada shamash, hasta que brillan las ocho.",
+      "Las frituras en aceite recuerdan el aceite que duró ocho días: tortitas de patata llamadas latkes y buñuelos llamados sufganiyot."
+     ],
+     "q": "¿Has probado alguna vez los latkes o has visto una menorá encendida en una ventana?",
+     "c": "Haz una perinola sencilla de papel y juega una partida rápida con alguien."
+    },
+    "fr": {
+     "t": "Les bases de Hanoukka",
+     "g": "Découvre Hanoukka : huit nuits de bougies, la ménorah, les latkes, les beignets et le jeu de la toupie.",
+     "p": [
+      "Hanoukka est une fête juive de huit nuits, souvent en décembre, qui rappelle la nouvelle consécration du Temple de Jérusalem.",
+      "Chaque soir, on allume une bougie de plus sur la ménorah à l'aide d'une bougie auxiliaire, le shamash, jusqu'à huit.",
+      "Les fritures rappellent l'huile qui dura huit jours : galettes de pommes de terre appelées latkes et beignets appelés soufganiyot."
+     ],
+     "q": "As-tu déjà goûté des latkes ou vu une ménorah briller à une fenêtre ?",
+     "c": "Fabrique une petite toupie en papier et fais une partie rapide avec quelqu'un."
+    },
+    "it": {
+     "t": "Le basi di Hanukkah",
+     "g": "Scopri Hanukkah: otto notti di candele, la menorah, i latkes, le frittelle e il gioco della trottola.",
+     "p": [
+      "Hanukkah è una festa ebraica di otto notti, di solito a dicembre, che ricorda la nuova consacrazione del Tempio di Gerusalemme.",
+      "Ogni sera si accende una candela in più sulla menorah con una candela aiutante chiamata shamash, fino ad arrivare a otto.",
+      "I cibi fritti nell'olio ricordano l'olio durato otto giorni: frittelle di patate dette latkes e bomboloni detti sufganiyot."
+     ],
+     "q": "Hai mai assaggiato i latkes o visto una menorah accesa a una finestra?",
+     "c": "Costruisci una semplice trottola di carta e fai una partita veloce con qualcuno."
+    },
+    "pt": {
+     "t": "O essencial do Hanukkah",
+     "g": "Aprende sobre o Hanukkah: oito noites de velas, a menorá, os latkes, os sonhos e o jogo do pião.",
+     "p": [
+      "O Hanukkah é uma festa judaica de oito noites, normalmente em dezembro, que recorda a nova consagração do Templo de Jerusalém.",
+      "Em cada noite acende-se mais uma vela na menorá com uma vela auxiliar chamada shamash, até brilharem as oito.",
+      "Os fritos em óleo recordam o azeite que durou oito dias: panquecas de batata chamadas latkes e sonhos chamados sufganiyot."
+     ],
+     "q": "Já provaste latkes ou viste uma menorá acesa numa janela?",
+     "c": "Faz um pião simples de papel e joga uma partida rápida com alguém."
+    },
+    "pt_BR": {
+     "t": "O básico do Hanukkah",
+     "g": "Aprenda sobre o Hanukkah: oito noites de velas, a menorá, os latkes, os sonhos e o jogo do pião.",
+     "p": [
+      "O Hanukkah é uma festa judaica de oito noites, geralmente em dezembro, que lembra a nova consagração do Templo de Jerusalém.",
+      "A cada noite acende-se mais uma vela na menorá com uma vela auxiliar chamada shamash, até as oito brilharem.",
+      "As frituras em óleo lembram o azeite que durou oito dias: bolinhos de batata chamados latkes e sonhos chamados sufganiyot."
+     ],
+     "q": "Você já provou latkes ou viu uma menorá acesa numa janela?",
+     "c": "Faça um pião simples de papel e jogue uma partida rápida com alguém."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Christmas customs worldwide",
+     "g": "See how trees, markets, nativity scenes and festive meals make Christmas look different from country to country.",
+     "p": [
+      "Decorated Christmas trees spread from Germany around the world, and German Christmas markets inspired many others.",
+      "Nativity scenes are a big tradition in Italy, Spain and Latin America; Naples is famous for its handmade figures.",
+      "The main meal is on 24 December in places like Poland and Portugal, but on 25 December in places like the UK."
+     ],
+     "q": "How is Christmas celebrated where you live, or how have you seen it celebrated?",
+     "c": "Compare the Christmas customs of two countries you know and spot one surprising difference."
+    },
+    "de": {
+     "t": "Weihnachtsbräuche weltweit",
+     "g": "Erfahre, wie Bäume, Märkte, Krippen und Festessen Weihnachten von Land zu Land anders aussehen lassen.",
+     "p": [
+      "Der geschmückte Weihnachtsbaum verbreitete sich von Deutschland aus in die Welt, und deutsche Weihnachtsmärkte inspirierten viele andere.",
+      "Krippen sind in Italien, Spanien und Lateinamerika eine große Tradition; Neapel ist für seine handgemachten Figuren berühmt.",
+      "Das Festessen gibt es in Polen und Portugal am 24. Dezember, in Großbritannien dagegen am 25. Dezember."
+     ],
+     "q": "Wie wird Weihnachten bei dir gefeiert, oder wie hast du es gefeiert gesehen?",
+     "c": "Vergleiche die Weihnachtsbräuche zweier Länder, die du kennst, und finde einen überraschenden Unterschied."
+    },
+    "es": {
+     "t": "Costumbres navideñas del mundo",
+     "g": "Descubre cómo árboles, mercadillos, belenes y comidas festivas hacen que la Navidad cambie de un país a otro.",
+     "p": [
+      "El árbol de Navidad decorado se extendió desde Alemania a todo el mundo, y sus mercadillos navideños inspiraron muchos otros.",
+      "Los belenes son una gran tradición en Italia, España y América Latina; Nápoles es famosa por sus figuras artesanales.",
+      "La cena principal es el 24 de diciembre en lugares como Polonia y Portugal, y el 25 en otros como el Reino Unido."
+     ],
+     "q": "¿Cómo se celebra la Navidad donde vives, o cómo has visto que se celebra?",
+     "c": "Compara las costumbres navideñas de dos países que conozcas y encuentra una diferencia sorprendente."
+    },
+    "fr": {
+     "t": "Les coutumes de Noël dans le monde",
+     "g": "Découvre comment sapins, marchés, crèches et repas de fête rendent Noël différent d'un pays à l'autre.",
+     "p": [
+      "Le sapin décoré s'est répandu depuis l'Allemagne dans le monde entier, et ses marchés de Noël en ont inspiré beaucoup d'autres.",
+      "La crèche est une grande tradition en Italie, en Espagne et en Amérique latine ; Naples est célèbre pour ses santons artisanaux.",
+      "Le grand repas a lieu le 24 décembre en Pologne ou au Portugal, mais le 25 décembre au Royaume-Uni, par exemple."
+     ],
+     "q": "Comment fête-t-on Noël chez toi, ou comment l'as-tu vu fêter ?",
+     "c": "Compare les coutumes de Noël de deux pays que tu connais et trouve une différence étonnante."
+    },
+    "it": {
+     "t": "Usanze natalizie nel mondo",
+     "g": "Scopri come alberi, mercatini, presepi e pranzi di festa rendono il Natale diverso da un Paese all'altro.",
+     "p": [
+      "L'albero di Natale decorato si è diffuso dalla Germania in tutto il mondo, e i mercatini tedeschi ne hanno ispirati molti altri.",
+      "Il presepe è una grande tradizione in Italia, Spagna e America Latina; Napoli è famosa per le sue statuine artigianali.",
+      "Il pasto principale è il 24 dicembre in Paesi come Polonia e Portogallo, ma il 25 dicembre in altri come il Regno Unito."
+     ],
+     "q": "Come si festeggia il Natale dove vivi, o come l'hai visto festeggiare?",
+     "c": "Confronta le usanze natalizie di due Paesi che conosci e trova una differenza sorprendente."
+    },
+    "pt": {
+     "t": "Costumes de Natal pelo mundo",
+     "g": "Descobre como árvores, mercados, presépios e refeições de festa tornam o Natal diferente de país para país.",
+     "p": [
+      "A árvore de Natal decorada espalhou-se da Alemanha para o mundo, e os mercados de Natal alemães inspiraram muitos outros.",
+      "O presépio é uma grande tradição em Itália, Espanha e América Latina; Nápoles é famosa pelas suas figuras artesanais.",
+      "A refeição principal é a 24 de dezembro em países como a Polónia e Portugal, mas a 25 noutros, como o Reino Unido."
+     ],
+     "q": "Como se celebra o Natal onde vives, ou como já o viste celebrar?",
+     "c": "Compara os costumes de Natal de dois países que conheças e encontra uma diferença surpreendente."
+    },
+    "pt_BR": {
+     "t": "Costumes de Natal pelo mundo",
+     "g": "Descubra como árvores, feirinhas, presépios e ceias tornam o Natal diferente de um país para outro.",
+     "p": [
+      "A árvore de Natal decorada se espalhou da Alemanha para o mundo, e as feiras de Natal alemãs inspiraram muitas outras.",
+      "O presépio é uma grande tradição na Itália, na Espanha e na América Latina; Nápoles é famosa pelas figuras artesanais.",
+      "A ceia principal é em 24 de dezembro em países como Polônia, Portugal e Brasil, mas em 25 em outros, como o Reino Unido."
+     ],
+     "q": "Como o Natal é comemorado onde você mora, ou como você já viu ser comemorado?",
+     "c": "Compare os costumes de Natal de dois países que você conhece e encontre uma diferença surpreendente."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Gift-bringers around the world",
+     "g": "Compare Santa Claus, Father Christmas, Sinterklaas, La Befana and the Three Kings, the world's gift-bringers.",
+     "p": [
+      "Santa Claus in the US and Father Christmas in the UK bring presents on the night of 24 to 25 December.",
+      "In the Netherlands Sinterklaas arrives by boat in November, and children get gifts on the evening of 5 December.",
+      "In Italy La Befana flies on a broom on the night before 6 January; in Spain the Three Kings bring gifts that day."
+     ],
+     "q": "Who brought presents in your childhood, and on which day?",
+     "c": "Ask someone from another country who brings gifts there and when."
+    },
+    "de": {
+     "t": "Gabenbringer rund um die Welt",
+     "g": "Vergleiche Santa Claus, Father Christmas, Sinterklaas, La Befana und die Heiligen Drei Könige.",
+     "p": [
+      "Santa Claus in den USA und Father Christmas in Großbritannien bringen die Geschenke in der Nacht vom 24. auf den 25. Dezember.",
+      "In den Niederlanden kommt Sinterklaas im November per Schiff an, und am Abend des 5. Dezember gibt es Geschenke.",
+      "In Italien fliegt La Befana in der Nacht vor dem 6. Januar auf einem Besen; in Spanien bringen die Heiligen Drei Könige dann Geschenke."
+     ],
+     "q": "Wer hat dir als Kind die Geschenke gebracht, und an welchem Tag?",
+     "c": "Frag jemanden aus einem anderen Land, wer dort die Geschenke bringt und wann."
+    },
+    "es": {
+     "t": "Portadores de regalos del mundo",
+     "g": "Compara a Santa Claus, Father Christmas, Sinterklaas, la Befana y los Reyes Magos, los portadores de regalos.",
+     "p": [
+      "Santa Claus en Estados Unidos y Father Christmas en el Reino Unido traen los regalos la noche del 24 al 25 de diciembre.",
+      "En los Países Bajos, Sinterklaas llega en barco en noviembre y los niños reciben regalos la tarde del 5 de diciembre.",
+      "En Italia, la Befana vuela en escoba la noche antes del 6 de enero; en España, los Reyes Magos traen regalos ese día."
+     ],
+     "q": "¿Quién te traía los regalos de pequeño y qué día?",
+     "c": "Pregunta a alguien de otro país quién trae los regalos allí y cuándo."
+    },
+    "fr": {
+     "t": "Les porteurs de cadeaux du monde",
+     "g": "Compare le père Noël, Father Christmas, Sinterklaas, la Befana et les Rois mages, porteurs de cadeaux du monde.",
+     "p": [
+      "Le père Noël aux États-Unis et Father Christmas au Royaume-Uni apportent les cadeaux la nuit du 24 au 25 décembre.",
+      "Aux Pays-Bas, Sinterklaas arrive en bateau en novembre, et les enfants reçoivent leurs cadeaux le soir du 5 décembre.",
+      "En Italie, la Befana vole sur un balai la nuit avant le 6 janvier ; en Espagne, les Rois mages apportent les cadeaux ce jour-là."
+     ],
+     "q": "Qui t'apportait les cadeaux quand tu étais enfant, et quel jour ?",
+     "c": "Demande à quelqu'un d'un autre pays qui apporte les cadeaux chez lui et quand."
+    },
+    "it": {
+     "t": "Chi porta i regali nel mondo",
+     "g": "Confronta Santa Claus, Father Christmas, Sinterklaas, la Befana e i Re Magi, i portatori di doni del mondo.",
+     "p": [
+      "Santa Claus negli USA e Father Christmas nel Regno Unito portano i regali nella notte tra il 24 e il 25 dicembre.",
+      "Nei Paesi Bassi Sinterklaas arriva in nave a novembre, e i bambini ricevono i doni la sera del 5 dicembre.",
+      "In Italia la Befana vola su una scopa la notte prima del 6 gennaio; in Spagna i Re Magi portano i regali quel giorno."
+     ],
+     "q": "Chi ti portava i regali da bambino, e in quale giorno?",
+     "c": "Chiedi a qualcuno di un altro Paese chi porta i regali lì e quando."
+    },
+    "pt": {
+     "t": "Quem traz os presentes pelo mundo",
+     "g": "Compara o Pai Natal, Father Christmas, Sinterklaas, a Befana e os Reis Magos, os portadores de presentes.",
+     "p": [
+      "O Santa Claus nos EUA e o Father Christmas no Reino Unido trazem os presentes na noite de 24 para 25 de dezembro.",
+      "Nos Países Baixos, Sinterklaas chega de barco em novembro, e as crianças recebem prendas na noite de 5 de dezembro.",
+      "Em Itália, a Befana voa numa vassoura na noite antes de 6 de janeiro; em Espanha, os Reis Magos trazem prendas nesse dia."
+     ],
+     "q": "Quem te trazia as prendas quando eras criança e em que dia?",
+     "c": "Pergunta a alguém de outro país quem traz os presentes lá e quando."
+    },
+    "pt_BR": {
+     "t": "Quem traz os presentes pelo mundo",
+     "g": "Compare o Papai Noel, Father Christmas, Sinterklaas, a Befana e os Reis Magos, os portadores de presentes.",
+     "p": [
+      "O Papai Noel nos EUA e o Father Christmas no Reino Unido trazem os presentes na noite de 24 para 25 de dezembro.",
+      "Na Holanda, Sinterklaas chega de barco em novembro, e as crianças ganham presentes na noite de 5 de dezembro.",
+      "Na Itália, a Befana voa numa vassoura na noite antes de 6 de janeiro; na Espanha, os Reis Magos trazem presentes nesse dia."
+     ],
+     "q": "Quem trazia seus presentes quando você era criança, e em que dia?",
+     "c": "Pergunte a alguém de outro país quem traz os presentes lá e quando."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Christmas foods across cultures",
+     "g": "Taste festive dishes from panettone and stollen to bacalhau, tamales and mince pies.",
+     "p": [
+      "Italy's panettone is a tall, airy sweet bread, and Germany's stollen is a fruit bread dusted with icing sugar.",
+      "In Portugal salt cod, bacalhau, is eaten on Christmas Eve, while in Mexico families make tamales together.",
+      "In the UK small mince pies are filled with spiced dried fruit, and Brazil loves rabanadas, a kind of French toast."
+     ],
+     "q": "What dish makes it feel like the holidays for you?",
+     "c": "Make or buy one festive treat from a country that is not your own and taste it mindfully."
+    },
+    "de": {
+     "t": "Weihnachtsessen der Kulturen",
+     "g": "Probiere Festtagsgerichte vom Panettone und Stollen bis zu Bacalhau, Tamales und Mince Pies.",
+     "p": [
+      "Der italienische Panettone ist ein hohes, luftiges Hefegebäck, der deutsche Stollen ein Früchtebrot mit Puderzucker.",
+      "In Portugal isst man an Heiligabend Stockfisch, Bacalhau, in Mexiko bereiten Familien gemeinsam Tamales zu.",
+      "In Großbritannien gibt es kleine Mince Pies mit gewürzten Trockenfrüchten, in Brasilien Rabanadas, eine Art Arme Ritter."
+     ],
+     "q": "Welches Gericht lässt für dich Festtagsstimmung aufkommen?",
+     "c": "Mach oder kauf eine Festtagsleckerei aus einem anderen Land und koste sie ganz bewusst."
+    },
+    "es": {
+     "t": "Comidas navideñas de varias culturas",
+     "g": "Prueba platos festivos, desde el panettone y el stollen hasta el bacalao, los tamales y los mince pies.",
+     "p": [
+      "El panettone italiano es un pan dulce alto y esponjoso, y el stollen alemán un pan de frutas cubierto de azúcar glas.",
+      "En Portugal se come bacalao en Nochebuena, y en México las familias preparan tamales juntas.",
+      "En el Reino Unido hay pastelitos mince pies rellenos de fruta seca especiada, y en Brasil encantan las rabanadas, como torrijas."
+     ],
+     "q": "¿Qué plato te hace sentir que llegan las fiestas?",
+     "c": "Prepara o compra un dulce festivo de un país que no sea el tuyo y saboréalo con calma."
+    },
+    "fr": {
+     "t": "Les plats de Noël des cultures",
+     "g": "Goûte aux plats de fête, du panettone et du stollen au bacalhau, aux tamales et aux mince pies.",
+     "p": [
+      "Le panettone italien est une brioche haute et légère ; le stollen allemand, un pain aux fruits saupoudré de sucre glace.",
+      "Au Portugal, on mange de la morue, le bacalhau, le soir du 24 ; au Mexique, les familles préparent des tamales ensemble.",
+      "Au Royaume-Uni, les mince pies sont garnies de fruits secs épicés, et le Brésil adore les rabanadas, une sorte de pain perdu."
+     ],
+     "q": "Quel plat te donne l'impression que les fêtes arrivent ?",
+     "c": "Prépare ou achète une douceur de fête d'un autre pays et déguste-la en pleine conscience."
+    },
+    "it": {
+     "t": "Cibi di Natale nelle varie culture",
+     "g": "Assaggia piatti di festa, dal panettone e lo stollen al bacalhau, ai tamales e ai mince pies.",
+     "p": [
+      "Il panettone italiano è un dolce alto e soffice; lo stollen tedesco è un pane alla frutta coperto di zucchero a velo.",
+      "In Portogallo la vigilia si mangia il baccalà, il bacalhau, mentre in Messico le famiglie preparano insieme i tamales.",
+      "Nel Regno Unito ci sono i mince pies, tortine di frutta secca speziata, e in Brasile le rabanadas, simili al pane fritto dolce."
+     ],
+     "q": "Quale piatto ti fa sentire aria di festa?",
+     "c": "Prepara o compra un dolce di festa di un altro Paese e assaporalo con calma."
+    },
+    "pt": {
+     "t": "Comidas de Natal de várias culturas",
+     "g": "Prova pratos de festa, do panettone e do stollen ao bacalhau, aos tamales e às mince pies.",
+     "p": [
+      "O panettone italiano é um bolo alto e fofo, e o stollen alemão é um pão de frutas polvilhado com açúcar em pó.",
+      "Em Portugal come-se bacalhau na consoada, a 24 de dezembro, e no México as famílias fazem tamales em conjunto.",
+      "No Reino Unido há as mince pies, com fruta seca e especiarias, e no Brasil adoram-se as rabanadas, como em Portugal."
+     ],
+     "q": "Que prato te faz sentir que chegaram as festas?",
+     "c": "Faz ou compra um doce de festa de outro país e saboreia-o com calma."
+    },
+    "pt_BR": {
+     "t": "Comidas de Natal de várias culturas",
+     "g": "Experimente pratos de festa, do panetone e do stollen ao bacalhau, aos tamales e às mince pies.",
+     "p": [
+      "O panetone italiano é um pão doce alto e fofinho, e o stollen alemão é um pão de frutas coberto de açúcar de confeiteiro.",
+      "Em Portugal come-se bacalhau na véspera de Natal, e no México as famílias preparam tamales juntas.",
+      "No Reino Unido há as mince pies, tortinhas de frutas secas com especiarias, e no Brasil todo mundo ama rabanadas."
+     ],
+     "q": "Qual prato faz você sentir que as festas chegaram?",
+     "c": "Faça ou compre um doce de festa de outro país e saboreie com calma."
+    }
+   }
+  }
+ ]
+}

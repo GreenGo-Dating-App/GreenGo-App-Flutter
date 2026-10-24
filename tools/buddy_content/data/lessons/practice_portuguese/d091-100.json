@@ -1,0 +1,1125 @@
+{
+  "topic": "practice_portuguese",
+  "lessons": [
+    {
+      "d": 91,
+      "lv": "A2",
+      "i18n": {
+        "en": {
+          "t": "Welcome to A2",
+          "g": "See what changes at A2 and check your A1 basics.",
+          "p": [
+            "At A2 you talk about the past, give instructions, and handle travel, health and shopping situations.",
+            "Quick check: can you introduce yourself, order food, ask the way and talk about plans with vou + verb?",
+            "New this level: past tenses (fui, comia), commands (fala!, fale!), por and para, and relative pronouns."
+          ],
+          "q": "Which A1 topic do you feel strongest in, and which one would you like to review?",
+          "c": "Write five A1 sentences about yourself today; next week you will rewrite them in the past."
+        },
+        "de": {
+          "t": "Willkommen bei A2",
+          "g": "Du siehst, was sich bei A2 ändert, und prüfst deine A1-Grundlagen.",
+          "p": [
+            "Bei A2 sprichst du über die Vergangenheit, gibst Anweisungen und meisterst Reise, Gesundheit und Einkauf.",
+            "Kurzer Check: Kannst du dich vorstellen, Essen bestellen, nach dem Weg fragen und mit vou + Verb planen?",
+            "Neu: Vergangenheitsformen (fui, comia), Befehle (fala!, fale!), por und para und Relativpronomen."
+          ],
+          "q": "In welchem A1-Thema fühlst du dich am sichersten, und welches möchtest du wiederholen?",
+          "c": "Schreib heute fünf A1-Sätze über dich; nächste Woche schreibst du sie in der Vergangenheit um."
+        },
+        "es": {
+          "t": "Bienvenido al A2",
+          "g": "Ver qué cambia en el A2 y repasar lo básico del A1.",
+          "p": [
+            "En el A2 hablas del pasado, das instrucciones y te manejas en viajes, salud y compras.",
+            "Repaso rápido: ¿sabes presentarte, pedir comida, preguntar el camino y hablar de planes con vou + verbo?",
+            "Nuevo en este nivel: pasados (fui, comia), imperativo (fala!, fale!), por y para y pronombres relativos."
+          ],
+          "q": "¿En qué tema del A1 te sientes más fuerte y cuál te gustaría repasar?",
+          "c": "Escribe hoy cinco frases A1 sobre ti; la semana que viene las reescribirás en pasado."
+        },
+        "fr": {
+          "t": "Bienvenue en A2",
+          "g": "Voir ce qui change en A2 et vérifier tes bases A1.",
+          "p": [
+            "En A2 tu parles du passé, tu donnes des instructions et tu gères voyages, santé et achats.",
+            "Petit test : sais-tu te présenter, commander, demander ton chemin et parler de projets avec vou + verbe ?",
+            "Nouveau : les temps du passé (fui, comia), l'impératif (fala!, fale!), por et para et les relatifs."
+          ],
+          "q": "Dans quel thème A1 te sens-tu le plus à l'aise, et lequel aimerais-tu revoir ?",
+          "c": "Écris aujourd'hui cinq phrases A1 sur toi ; la semaine prochaine, tu les réécriras au passé."
+        },
+        "it": {
+          "t": "Benvenuto all'A2",
+          "g": "Vedi cosa cambia all'A2 e controlli le basi dell'A1.",
+          "p": [
+            "All'A2 parli del passato, dai istruzioni e te la cavi in viaggio, salute e acquisti.",
+            "Controllo veloce: sai presentarti, ordinare, chiedere la strada e parlare di piani con vou + verbo?",
+            "Novità: i passati (fui, comia), l'imperativo (fala!, fale!), por e para e i pronomi relativi."
+          ],
+          "q": "In quale argomento dell'A1 ti senti più forte, e quale vorresti ripassare?",
+          "c": "Scrivi oggi cinque frasi A1 su di te; la prossima settimana le riscriverai al passato."
+        },
+        "pt": {
+          "t": "Bem-vindo ao A2",
+          "g": "Percebe o que muda no nível A2 e como acompanhar quem está a aprender.",
+          "p": [
+            "No A2, o aprendente passa a contar o passado, dar instruções e resolver situações de viagem e saúde.",
+            "O grande salto é a distinção entre pretérito perfeito e imperfeito, que muitos estrangeiros acham difícil.",
+            "Também chegam o imperativo, por e para e os relativos que, onde e quem. Paciência e exemplos ajudam."
+          ],
+          "q": "Que tempo verbal do passado achas mais difícil de explicar a um estrangeiro?",
+          "c": "Escreve cinco frases simples no presente que depois possas passar para o passado com um aprendente."
+        },
+        "pt_BR": {
+          "t": "Bem-vindo ao A2",
+          "g": "Veja o que vem no A2 com foco no português de Portugal.",
+          "p": [
+            "No A2 entram o passado (fui, comia), o imperativo e situações de viagem, saúde e compras.",
+            "Em Portugal, o pretérito perfeito é usado onde o Brasil também usa: Ontem jantei fora. Já comeste?",
+            "O imperfeito substitui muitas vezes o condicional na fala portuguesa: Eu queria... e Gostava de..."
+          ],
+          "q": "Que tema do A1 você gostaria de rever antes de começar o passado?",
+          "c": "Escreva cinco frases sobre sua semana no presente, com tu e palavras de Portugal."
+        }
+      },
+      "target": {
+        "vocab": [
+          {
+            "w": "o nível",
+            "ex": "Passei para o nível A2!"
+          },
+          {
+            "w": "rever",
+            "ex": "Vamos rever os verbos do A1."
+          },
+          {
+            "w": "o passado",
+            "ex": "Agora vamos falar do passado."
+          },
+          {
+            "w": "o objetivo",
+            "ex": "O meu objetivo é falar com confiança."
+          },
+          {
+            "w": "praticar",
+            "ex": "Pratico português todos os dias."
+          },
+          {
+            "w": "a confiança",
+            "ex": "Já tenho mais confiança a falar."
+          }
+        ],
+        "gram": "A2: passa-se do presente ao passado (falei, falava), ao imperativo (fala!, fale!) e às frases relativas (que, onde, quem)."
+      }
+    },
+    {
+      "d": 92,
+      "lv": "A2",
+      "i18n": {
+        "en": {
+          "t": "Pretérito perfeito: regular verbs",
+          "g": "Use the simple past falei, comi, parti for finished actions.",
+          "p": [
+            "-ar: falei, falaste, falou, falámos, falaram. -er: comi, comeste, comeu, comemos, comeram.",
+            "-ir: parti, partiste, partiu, partimos, partiram. In Portugal falámos (past) has an accent; Brazil writes falamos.",
+            "Use it for finished actions at a definite time: Ontem jantei com a Rita. Já comeste?"
+          ],
+          "q": "What did you eat yesterday? Answer with comi and two more verbs in the past.",
+          "c": "Write five sentences about yesterday with regular verbs: acordei, tomei, trabalhei, comi, saí."
+        },
+        "de": {
+          "t": "Pretérito perfeito: regelmäßige Verben",
+          "g": "Du verwendest das Perfekt falei, comi, parti für abgeschlossene Handlungen.",
+          "p": [
+            "-ar: falei, falaste, falou, falámos, falaram. -er: comi, comeste, comeu, comemos, comeram.",
+            "-ir: parti, partiste, partiu, partimos, partiram. In Portugal hat falámos (Vergangenheit) einen Akzent; Brasilien schreibt falamos.",
+            "Für abgeschlossene Handlungen zu einem bestimmten Zeitpunkt: Ontem jantei com a Rita. Já comeste?"
+          ],
+          "q": "Was hast du gestern gegessen? Antworte mit comi und zwei weiteren Verben in der Vergangenheit.",
+          "c": "Schreib fünf Sätze über gestern mit regelmäßigen Verben: acordei, tomei, trabalhei, comi, saí."
+        },
+        "es": {
+          "t": "Pretérito perfeito: verbos regulares",
+          "g": "Usar el pasado falei, comi, parti para acciones terminadas.",
+          "p": [
+            "-ar: falei, falaste, falou, falámos, falaram. -er: comi, comeste, comeu, comemos, comeram.",
+            "-ir: parti, partiste, partiu, partimos, partiram. En Portugal falámos (pasado) lleva tilde; Brasil escribe falamos.",
+            "Equivale al indefinido español: Ontem jantei com a Rita (ayer cené). Ojo: también para he comido: Já comeste?"
+          ],
+          "q": "¿Qué comiste ayer? Responde con comi y dos verbos más en pasado.",
+          "c": "Escribe cinco frases sobre ayer con verbos regulares: acordei, tomei, trabalhei, comi, saí."
+        },
+        "fr": {
+          "t": "Pretérito perfeito : verbes réguliers",
+          "g": "Utiliser le passé falei, comi, parti pour les actions terminées.",
+          "p": [
+            "-ar : falei, falaste, falou, falámos, falaram. -er : comi, comeste, comeu, comemos, comeram.",
+            "-ir : parti, partiste, partiu, partimos, partiram. Au Portugal, falámos (passé) prend un accent ; le Brésil écrit falamos.",
+            "Il correspond souvent au passé composé : Ontem jantei com a Rita (hier j'ai dîné avec Rita). Já comeste?"
+          ],
+          "q": "Qu'as-tu mangé hier ? Réponds avec comi et deux autres verbes au passé.",
+          "c": "Écris cinq phrases sur hier avec des verbes réguliers : acordei, tomei, trabalhei, comi, saí."
+        },
+        "it": {
+          "t": "Pretérito perfeito: verbi regolari",
+          "g": "Usi il passato falei, comi, parti per azioni concluse.",
+          "p": [
+            "-ar: falei, falaste, falou, falámos, falaram. -er: comi, comeste, comeu, comemos, comeram.",
+            "-ir: parti, partiste, partiu, partimos, partiram. In Portogallo falámos (passato) ha l'accento; il Brasile scrive falamos.",
+            "Corrisponde spesso al passato prossimo: Ontem jantei com a Rita (ieri ho cenato con Rita). Já comeste?"
+          ],
+          "q": "Cosa hai mangiato ieri? Rispondi con comi e altri due verbi al passato.",
+          "c": "Scrivi cinque frasi su ieri con verbi regolari: acordei, tomei, trabalhei, comi, saí."
+        },
+        "pt": {
+          "t": "Pretérito perfeito: verbos regulares",
+          "g": "Revê o pretérito perfeito e como o explicar a estrangeiros.",
+          "p": [
+            "Falámos (passado) e falamos (presente) distinguem-se pelo acento em Portugal; no Brasil escreve-se sem acento.",
+            "Muitos estrangeiros usam o perfeito composto como em inglês ou francês: tenho comido. Em português é outra coisa.",
+            "Tenho comido muito significa um hábito recente; para uma ação acabada diz-se comi."
+          ],
+          "q": "Como explicarias a diferença entre comi e tenho comido a um estrangeiro?",
+          "c": "Escreve três pares de frases com comi/tenho comido e explica a diferença de sentido."
+        },
+        "pt_BR": {
+          "t": "Pretérito perfeito: verbos regulares",
+          "g": "Revise o pretérito perfeito com as formas de tu e o acento de Portugal.",
+          "p": [
+            "Com tu: falaste, comeste, partiste. Em Portugal, o tu do passado é muito ouvido: Gostaste do filme?",
+            "Falámos (passado) leva acento em Portugal para se distinguir de falamos (presente).",
+            "O uso é igual ao do Brasil: Ontem jantámos fora. Já almoçaste? Sim, já almocei."
+          ],
+          "q": "O que você fez ontem à noite? Responda à portuguesa, com jantámos ou fomos.",
+          "c": "Escreva cinco perguntas no passado com tu: Gostaste, Comeste, Viste, Saíste, Dormiste."
+        }
+      },
+      "target": {
+        "vocab": [
+          {
+            "w": "falei",
+            "ex": "Ontem falei com a minha mãe."
+          },
+          {
+            "w": "comeste",
+            "ex": "Já comeste? Sim, comi uma sopa."
+          },
+          {
+            "w": "partiu",
+            "ex": "O comboio partiu às oito."
+          },
+          {
+            "w": "falámos",
+            "ex": "Falámos durante horas."
+          },
+          {
+            "w": "trabalharam",
+            "ex": "Eles trabalharam no sábado."
+          },
+          {
+            "w": "acordei",
+            "ex": "Hoje acordei muito cedo."
+          }
+        ],
+        "gram": "Pretérito perfeito regular: falei, falaste, falou, falámos, falaram; comi, comeste, comeu; parti, partiste, partiu."
+      }
+    },
+    {
+      "d": 93,
+      "lv": "A2",
+      "i18n": {
+        "en": {
+          "t": "Past of ser and ir",
+          "g": "Use fui, foste, foi: the same past forms for ser and ir.",
+          "p": [
+            "Ser and ir share the past: fui, foste, foi, fomos, foram. Context tells you which verb it is.",
+            "Ir: Fui ao cinema (I went to the cinema). Ser: Foi uma noite ótima (It was a great night).",
+            "Very useful: Como foi? (How was it?) Foi ótimo! Onde foste nas férias? Fomos a Sintra."
+          ],
+          "q": "Where did you go last weekend, and how was it? Use fui and foi.",
+          "c": "Write four sentences: two with ir (fui a, fomos ao) and two with ser (foi divertido, foram simpáticos)."
+        },
+        "de": {
+          "t": "Vergangenheit von ser und ir",
+          "g": "Du nutzt fui, foste, foi: dieselben Formen für ser und ir.",
+          "p": [
+            "Ser und ir haben dieselbe Vergangenheit: fui, foste, foi, fomos, foram. Der Kontext zeigt das Verb.",
+            "Ir: Fui ao cinema (Ich ging ins Kino). Ser: Foi uma noite ótima (Es war ein toller Abend).",
+            "Sehr nützlich: Como foi? (Wie war es?) Foi ótimo! Onde foste nas férias? Fomos a Sintra."
+          ],
+          "q": "Wohin bist du letztes Wochenende gegangen, und wie war es? Nutze fui und foi.",
+          "c": "Schreib vier Sätze: zwei mit ir (fui a, fomos ao) und zwei mit ser (foi divertido, foram simpáticos)."
+        },
+        "es": {
+          "t": "Pasado de ser e ir",
+          "g": "Usar fui, foste, foi: las mismas formas para ser e ir.",
+          "p": [
+            "Como en español, ser e ir comparten el pasado: fui, foste, foi, fomos, foram. El contexto decide.",
+            "Ir: Fui ao cinema (fui al cine). Ser: Foi uma noite ótima (fue una noche estupenda).",
+            "Muy útil: Como foi? (¿qué tal fue?) Foi ótimo! Onde foste nas férias? Fomos a Sintra."
+          ],
+          "q": "¿Adónde fuiste el fin de semana pasado y qué tal fue? Usa fui y foi.",
+          "c": "Escribe cuatro frases: dos con ir (fui a, fomos ao) y dos con ser (foi divertido, foram simpáticos)."
+        },
+        "fr": {
+          "t": "Passé de ser et ir",
+          "g": "Utiliser fui, foste, foi : les mêmes formes pour ser et ir.",
+          "p": [
+            "Ser et ir ont le même passé : fui, foste, foi, fomos, foram. Le contexte indique le verbe.",
+            "Ir : Fui ao cinema (je suis allé au cinéma). Ser : Foi uma noite ótima (C'était une super soirée).",
+            "Très utile : Como foi? (C'était comment ?) Foi ótimo! Onde foste nas férias? Fomos a Sintra."
+          ],
+          "q": "Où es-tu allé le week-end dernier, et c'était comment ? Utilise fui et foi.",
+          "c": "Écris quatre phrases : deux avec ir (fui a, fomos ao) et deux avec ser (foi divertido, foram simpáticos)."
+        },
+        "it": {
+          "t": "Passato di ser e ir",
+          "g": "Usi fui, foste, foi: le stesse forme per ser e ir.",
+          "p": [
+            "Ser e ir hanno lo stesso passato: fui, foste, foi, fomos, foram. Il contesto indica il verbo.",
+            "Ir: Fui ao cinema (sono andato al cinema). Ser: Foi uma noite ótima (è stata una serata fantastica).",
+            "Utilissimo: Como foi? (Com'è andata?) Foi ótimo! Onde foste nas férias? Fomos a Sintra."
+          ],
+          "q": "Dove sei andato lo scorso fine settimana, e com'è stato? Usa fui e foi.",
+          "c": "Scrivi quattro frasi: due con ir (fui a, fomos ao) e due con ser (foi divertido, foram simpáticos)."
+        },
+        "pt": {
+          "t": "Pretérito de ser e ir",
+          "g": "Revê as formas partilhadas de ser e ir e as dúvidas que geram.",
+          "p": [
+            "Fui, foste, foi servem para ser e ir; o contexto e a preposição a esclarecem: fui a Paris, fui feliz.",
+            "Erro comum de nativos e estrangeiros: fostes em vez de foste para tu. Fostes é a forma de vós.",
+            "Ir a indica ida breve, ir para sugere estadia longa: Fui a Paris no fim de semana; foi para Paris viver."
+          ],
+          "q": "Já ouviste alguém dizer tu fostes? Como explicarias a forma correta?",
+          "c": "Escreve quatro frases que mostrem fui como ser e como ir, e a diferença entre ir a e ir para."
+        },
+        "pt_BR": {
+          "t": "Pretérito de ser e ir",
+          "g": "Revise fui, foste, foi e o uso português de ir a.",
+          "p": [
+            "As formas são iguais: fui, foste, foi, fomos, foram. Com tu: Onde foste? Foste à praia?",
+            "Em Portugal diz-se ir a para idas curtas: Fui ao Porto no sábado. Ir em, comum no Brasil, não se usa lá.",
+            "Como foi? é a pergunta típica depois de um evento: Como foi o jantar? Foi ótimo!"
+          ],
+          "q": "Onde você foi no último feriado? Responda com fui a ou fui ao.",
+          "c": "Escreva quatro frases com fui a/ao/à e foi + adjetivo, à portuguesa."
+        }
+      },
+      "target": {
+        "vocab": [
+          {
+            "w": "fui",
+            "ex": "Fui ao mercado de manhã."
+          },
+          {
+            "w": "foste",
+            "ex": "Onde foste nas férias?"
+          },
+          {
+            "w": "foi",
+            "ex": "A festa foi muito divertida."
+          },
+          {
+            "w": "fomos",
+            "ex": "Fomos a Sintra no domingo."
+          },
+          {
+            "w": "como foi?",
+            "ex": "Como foi a viagem?"
+          },
+          {
+            "w": "foram",
+            "ex": "Os teus amigos foram muito simpáticos."
+          }
+        ],
+        "gram": "Ser e ir no pretérito perfeito: fui, foste, foi, fomos, foram. Ir a = ida breve (fui ao Porto); ser: foi ótimo."
+      }
+    },
+    {
+      "d": 94,
+      "lv": "A2",
+      "i18n": {
+        "en": {
+          "t": "Past of ter, estar, fazer",
+          "g": "Use tive, estive, fiz and other very common irregular past forms.",
+          "p": [
+            "Ter: tive, tiveste, teve, tivemos, tiveram. Estar: estive, estiveste, esteve, estivemos, estiveram.",
+            "Fazer: fiz, fizeste, fez, fizemos, fizeram. O que fizeste ontem? Fiz um bolo.",
+            "Notice: teve and esteve (no accent) for ele/ela. Tive sorte means I was lucky."
+          ],
+          "q": "What did you do last Saturday? Answer with fiz, estive and tive.",
+          "c": "Write about a busy day with five irregular verbs: tive, estive, fiz, fomos, foi."
+        },
+        "de": {
+          "t": "Vergangenheit von ter, estar, fazer",
+          "g": "Du nutzt tive, estive, fiz und weitere häufige unregelmäßige Formen.",
+          "p": [
+            "Ter: tive, tiveste, teve, tivemos, tiveram. Estar: estive, estiveste, esteve, estivemos, estiveram.",
+            "Fazer: fiz, fizeste, fez, fizemos, fizeram. O que fizeste ontem? Fiz um bolo.",
+            "Beachte: teve und esteve für ele/ela. Tive sorte heißt Ich hatte Glück."
+          ],
+          "q": "Was hast du letzten Samstag gemacht? Antworte mit fiz, estive und tive.",
+          "c": "Schreib über einen vollen Tag mit fünf unregelmäßigen Verben: tive, estive, fiz, fomos, foi."
+        },
+        "es": {
+          "t": "Pasado de ter, estar, fazer",
+          "g": "Usar tive, estive, fiz y otros pasados irregulares muy comunes.",
+          "p": [
+            "Ter: tive, tiveste, teve, tivemos, tiveram. Estar: estive, estiveste, esteve, estivemos, estiveram.",
+            "Fazer: fiz, fizeste, fez, fizemos, fizeram. Se parecen a tuve, estuve, hice: O que fizeste ontem? Fiz um bolo.",
+            "Atención: teve y esteve para ele/ela. Tive sorte es tuve suerte."
+          ],
+          "q": "¿Qué hiciste el sábado pasado? Responde con fiz, estive y tive.",
+          "c": "Escribe sobre un día ajetreado con cinco verbos irregulares: tive, estive, fiz, fomos, foi."
+        },
+        "fr": {
+          "t": "Passé de ter, estar, fazer",
+          "g": "Utiliser tive, estive, fiz et d'autres passés irréguliers fréquents.",
+          "p": [
+            "Ter : tive, tiveste, teve, tivemos, tiveram. Estar : estive, estiveste, esteve, estivemos, estiveram.",
+            "Fazer : fiz, fizeste, fez, fizemos, fizeram. O que fizeste ontem? Fiz um bolo (J'ai fait un gâteau).",
+            "Note : teve et esteve pour ele/ela. Tive sorte veut dire j'ai eu de la chance."
+          ],
+          "q": "Qu'as-tu fait samedi dernier ? Réponds avec fiz, estive et tive.",
+          "c": "Raconte une journée chargée avec cinq verbes irréguliers : tive, estive, fiz, fomos, foi."
+        },
+        "it": {
+          "t": "Passato di ter, estar, fazer",
+          "g": "Usi tive, estive, fiz e altri passati irregolari molto comuni.",
+          "p": [
+            "Ter: tive, tiveste, teve, tivemos, tiveram. Estar: estive, estiveste, esteve, estivemos, estiveram.",
+            "Fazer: fiz, fizeste, fez, fizemos, fizeram. O que fizeste ontem? Fiz um bolo (ho fatto una torta).",
+            "Nota: teve ed esteve per ele/ela. Tive sorte vuol dire ho avuto fortuna."
+          ],
+          "q": "Cosa hai fatto sabato scorso? Rispondi con fiz, estive e tive.",
+          "c": "Racconta una giornata piena con cinque verbi irregolari: tive, estive, fiz, fomos, foi."
+        },
+        "pt": {
+          "t": "Pretérito de ter, estar, fazer",
+          "g": "Revê estes irregulares e os erros típicos de quem aprende.",
+          "p": [
+            "Erros frequentes: fazi em vez de fiz, tenhei em vez de tive, estei em vez de estive. Corrige com carinho.",
+            "Esteve e teve não levam acento; têm é presente plural de ter e não deve ser confundido.",
+            "Estive em Paris (visita) e fui a Paris (deslocação) são ambos corretos, com nuances diferentes."
+          ],
+          "q": "Qual destes verbos achas que os estrangeiros erram mais no passado?",
+          "c": "Escreve um parágrafo curto com tive, estive e fiz, e sublinha as formas irregulares."
+        },
+        "pt_BR": {
+          "t": "Pretérito de ter, estar, fazer",
+          "g": "Revise tive, estive, fiz com as formas de tu.",
+          "p": [
+            "Com tu: tiveste, estiveste, fizeste. O que fizeste no fim de semana? é uma pergunta muito portuguesa.",
+            "Estive em Lisboa e Fui a Lisboa são ambos comuns em Portugal para contar uma visita.",
+            "Tive imensa sorte, com imenso, é uma forma bem portuguesa de dizer que teve muita sorte."
+          ],
+          "q": "O que você fez no último fim de semana? Responda com fiz, estive e tive.",
+          "c": "Escreva três perguntas com tiveste, estiveste e fizeste, e responda-as."
+        }
+      },
+      "target": {
+        "vocab": [
+          {
+            "w": "tive",
+            "ex": "Tive um dia muito cheio."
+          },
+          {
+            "w": "estive",
+            "ex": "Estive em casa de uns amigos."
+          },
+          {
+            "w": "fiz",
+            "ex": "Fiz um bolo de laranja."
+          },
+          {
+            "w": "o que fizeste?",
+            "ex": "O que fizeste no domingo?"
+          },
+          {
+            "w": "teve",
+            "ex": "Ela teve uma boa ideia."
+          },
+          {
+            "w": "esteve",
+            "ex": "O tempo esteve ótimo."
+          }
+        ],
+        "gram": "Irregulares: ter (tive, teve), estar (estive, esteve), fazer (fiz, fez, fizeram). Esteve e teve sem acento."
+      }
+    },
+    {
+      "d": 95,
+      "lv": "A2",
+      "i18n": {
+        "en": {
+          "t": "Time words for the past",
+          "g": "Say when things happened in the past.",
+          "p": [
+            "Ontem (yesterday), anteontem (the day before yesterday), ontem à noite (last night), hoje de manhã.",
+            "Na semana passada, no mês passado, no ano passado, no sábado passado: passado agrees with the noun.",
+            "Há + time means ago: há dois dias (two days ago), há muito tempo. Do not confuse it with daqui a."
+          ],
+          "q": "What did you do two days ago? Start with Há dois dias...",
+          "c": "Write five sentences about your past week using ontem, anteontem, há três dias, na segunda e na semana passada."
+        },
+        "de": {
+          "t": "Zeitangaben für die Vergangenheit",
+          "g": "Du sagst, wann etwas in der Vergangenheit passiert ist.",
+          "p": [
+            "Ontem (gestern), anteontem (vorgestern), ontem à noite (gestern Abend), hoje de manhã (heute Morgen).",
+            "Na semana passada, no mês passado, no ano passado, no sábado passado: passado passt sich an.",
+            "Há + Zeit heißt vor: há dois dias (vor zwei Tagen), há muito tempo. Nicht mit daqui a verwechseln."
+          ],
+          "q": "Was hast du vor zwei Tagen gemacht? Beginne mit Há dois dias...",
+          "c": "Schreib fünf Sätze über deine Woche mit ontem, anteontem, há três dias, na segunda und na semana passada."
+        },
+        "es": {
+          "t": "Expresiones de tiempo pasado",
+          "g": "Decir cuándo pasaron las cosas.",
+          "p": [
+            "Ontem (ayer), anteontem (anteayer), ontem à noite (anoche), hoje de manhã (esta mañana).",
+            "Na semana passada, no mês passado, no ano passado, no sábado passado: passado concuerda.",
+            "Há + tiempo es hace: há dois dias (hace dos días), há muito tempo. No lo confundas con daqui a."
+          ],
+          "q": "¿Qué hiciste hace dos días? Empieza con Há dois dias...",
+          "c": "Escribe cinco frases sobre tu semana con ontem, anteontem, há três dias, na segunda y na semana passada."
+        },
+        "fr": {
+          "t": "Expressions de temps au passé",
+          "g": "Dire quand les choses se sont passées.",
+          "p": [
+            "Ontem (hier), anteontem (avant-hier), ontem à noite (hier soir), hoje de manhã (ce matin).",
+            "Na semana passada, no mês passado, no ano passado, no sábado passado : passado s'accorde.",
+            "Há + durée veut dire il y a : há dois dias (il y a deux jours), há muito tempo. À distinguer de daqui a."
+          ],
+          "q": "Qu'as-tu fait il y a deux jours ? Commence par Há dois dias...",
+          "c": "Écris cinq phrases sur ta semaine avec ontem, anteontem, há três dias, na segunda et na semana passada."
+        },
+        "it": {
+          "t": "Espressioni di tempo passato",
+          "g": "Dici quando sono successe le cose.",
+          "p": [
+            "Ontem (ieri), anteontem (l'altro ieri), ontem à noite (ieri sera), hoje de manhã (stamattina).",
+            "Na semana passada, no mês passado, no ano passado, no sábado passado: passado si accorda.",
+            "Há + tempo vuol dire fa: há dois dias (due giorni fa), há muito tempo. Non confonderlo con daqui a."
+          ],
+          "q": "Cosa hai fatto due giorni fa? Comincia con Há dois dias...",
+          "c": "Scrivi cinque frasi sulla tua settimana con ontem, anteontem, há três dias, na segunda e na semana passada."
+        },
+        "pt": {
+          "t": "Expressões de tempo passado",
+          "g": "Revê as expressões de passado e um erro ortográfico muito comum.",
+          "p": [
+            "Há dois dias escreve-se com h (verbo haver); a dois passos é preposição. Há dois anos atrás é redundante.",
+            "Na semana passada e na passada semana existem; a primeira é a mais natural.",
+            "Hoje de manhã, ontem à tarde, anteontem à noite: o português combina dia e parte do dia com facilidade."
+          ],
+          "q": "Usas há ... atrás quando falas? Achas que soa natural?",
+          "c": "Escreve quatro frases com há (tempo) e quatro com a (distância ou futuro) para mostrar a diferença."
+        },
+        "pt_BR": {
+          "t": "Expressões de tempo passado",
+          "g": "Revise as expressões de passado com detalhes de Portugal.",
+          "p": [
+            "Há dois dias é igual nos dois países; atrás no fim é redundante e evita-se na escrita cuidada.",
+            "Ontem à noite é a forma comum; em Portugal não se usa ontem de noite com tanta frequência.",
+            "Na semana passada e no sábado passado são iguais; em Portugal fim de semana passado também é comum."
+          ],
+          "q": "O que você fez há uma semana, exatamente?",
+          "c": "Escreva cinco frases sobre sua semana com há, ontem à noite e na semana passada."
+        }
+      },
+      "target": {
+        "vocab": [
+          {
+            "w": "ontem",
+            "ex": "Ontem fui ao teatro."
+          },
+          {
+            "w": "anteontem",
+            "ex": "Anteontem choveu imenso."
+          },
+          {
+            "w": "ontem à noite",
+            "ex": "Ontem à noite jantei fora."
+          },
+          {
+            "w": "na semana passada",
+            "ex": "Na semana passada estive doente."
+          },
+          {
+            "w": "há dois dias",
+            "ex": "Cheguei a Lisboa há dois dias."
+          },
+          {
+            "w": "no ano passado",
+            "ex": "No ano passado visitei os Açores."
+          }
+        ],
+        "gram": "Passado: ontem, anteontem, na semana passada, no ano passado. Há + tempo = tempo decorrido: há dois dias, há muito tempo."
+      }
+    },
+    {
+      "d": 96,
+      "lv": "A2",
+      "i18n": {
+        "en": {
+          "t": "Telling about your weekend",
+          "g": "Describe what you did at the weekend.",
+          "p": [
+            "Use the perfeito for each action: Fui à praia, jantei com amigos, vi um filme, dormi muito.",
+            "Link the steps: primeiro, depois, a seguir, à noite, no fim. Add opinions: Foi ótimo! Adorei!",
+            "Answer Então, o fim de semana? (So, the weekend?) with Correu bem! (It went well!) and details."
+          ],
+          "q": "How was your last weekend? Tell me three things you did.",
+          "c": "Write six sentences about your weekend, in order, using primeiro, depois, à noite and no fim."
+        },
+        "de": {
+          "t": "Vom Wochenende erzählen",
+          "g": "Du beschreibst, was du am Wochenende gemacht hast.",
+          "p": [
+            "Das Perfekt für jede Handlung: Fui à praia, jantei com amigos, vi um filme, dormi muito.",
+            "Schritte verbinden: primeiro, depois, a seguir, à noite, no fim. Meinung: Foi ótimo! Adorei!",
+            "Auf Então, o fim de semana? (Und, wie war das Wochenende?) antwortet man Correu bem! mit Details."
+          ],
+          "q": "Wie war dein letztes Wochenende? Erzähl mir drei Dinge, die du gemacht hast.",
+          "c": "Schreib sechs Sätze über dein Wochenende in Reihenfolge, mit primeiro, depois, à noite und no fim."
+        },
+        "es": {
+          "t": "Contar tu fin de semana",
+          "g": "Describir lo que hiciste el fin de semana.",
+          "p": [
+            "Usa el perfeito para cada acción: Fui à praia, jantei com amigos, vi um filme, dormi muito.",
+            "Enlaza los pasos: primeiro, depois, a seguir, à noite, no fim. Opina: Foi ótimo! Adorei!",
+            "A Então, o fim de semana? (¿Qué tal el finde?) se responde Correu bem! (¡Fue bien!) con detalles."
+          ],
+          "q": "¿Qué tal tu último fin de semana? Cuéntame tres cosas que hiciste.",
+          "c": "Escribe seis frases sobre tu fin de semana en orden, con primeiro, depois, à noite y no fim."
+        },
+        "fr": {
+          "t": "Raconter ton week-end",
+          "g": "Décrire ce que tu as fait le week-end.",
+          "p": [
+            "Utilise le perfeito pour chaque action : Fui à praia, jantei com amigos, vi um filme, dormi muito.",
+            "Enchaîne : primeiro, depois, a seguir, à noite, no fim. Donne ton avis : Foi ótimo! Adorei!",
+            "À Então, o fim de semana? (Alors, ce week-end ?) on répond Correu bem! (Ça s'est bien passé !) et on détaille."
+          ],
+          "q": "Comment s'est passé ton dernier week-end ? Raconte-moi trois choses que tu as faites.",
+          "c": "Écris six phrases sur ton week-end, dans l'ordre, avec primeiro, depois, à noite et no fim."
+        },
+        "it": {
+          "t": "Raccontare il fine settimana",
+          "g": "Descrivi cosa hai fatto nel fine settimana.",
+          "p": [
+            "Usa il perfeito per ogni azione: Fui à praia, jantei com amigos, vi um filme, dormi muito.",
+            "Collega i passi: primeiro, depois, a seguir, à noite, no fim. Dai un'opinione: Foi ótimo! Adorei!",
+            "A Então, o fim de semana? (Allora, il weekend?) si risponde Correu bem! (È andato bene!) con dettagli."
+          ],
+          "q": "Com'è andato il tuo ultimo fine settimana? Raccontami tre cose che hai fatto.",
+          "c": "Scrivi sei frasi sul tuo fine settimana, in ordine, con primeiro, depois, à noite e no fim."
+        },
+        "pt": {
+          "t": "Contar o fim de semana",
+          "g": "Revê como contar o fim de semana de forma viva e organizada.",
+          "p": [
+            "Correu bem? e Então, como correu? são perguntas muito portuguesas; correr aqui significa decorrer.",
+            "Sequenciadores dão ritmo: primeiro, depois, a seguir, entretanto, por fim. Os estrangeiros esquecem-nos.",
+            "Uma boa história tem um pormenor: o que comeste, quem encontraste, o que te fez rir."
+          ],
+          "q": "Qual foi o melhor fim de semana que tiveste nos últimos meses?",
+          "c": "Conta o teu último fim de semana em seis frases com quatro sequenciadores diferentes."
+        },
+        "pt_BR": {
+          "t": "Contar o fim de semana",
+          "g": "Conte seu fim de semana como um português.",
+          "p": [
+            "A pergunta típica é Então, o fim de semana? ou Como correu? A resposta: Correu muito bem!",
+            "Fui à praia, jantámos fora, demos um passeio: o pretérito perfeito com nós leva acento em -ámos.",
+            "A seguir é depois; entretanto é enquanto isso. Ambos são muito usados em Portugal."
+          ],
+          "q": "Como correu o seu último fim de semana? Conte três coisas.",
+          "c": "Escreva seis frases sobre seu fim de semana com correu, jantámos, a seguir e entretanto."
+        }
+      },
+      "target": {
+        "vocab": [
+          {
+            "w": "correu bem",
+            "ex": "O fim de semana correu muito bem."
+          },
+          {
+            "w": "primeiro",
+            "ex": "Primeiro fui ao mercado."
+          },
+          {
+            "w": "depois",
+            "ex": "Depois almocei com a família."
+          },
+          {
+            "w": "a seguir",
+            "ex": "A seguir demos um passeio."
+          },
+          {
+            "w": "à noite",
+            "ex": "À noite vimos um filme."
+          },
+          {
+            "w": "adorei",
+            "ex": "Adorei o concerto de sábado!"
+          }
+        ],
+        "gram": "Contar o passado: pretérito perfeito + sequenciadores (primeiro, depois, a seguir, à noite, por fim). Como correu? Correu bem."
+      }
+    },
+    {
+      "d": 97,
+      "lv": "A2",
+      "i18n": {
+        "en": {
+          "t": "Past of poder, querer, saber",
+          "g": "Use pude, quis, soube and their special meanings in the past.",
+          "p": [
+            "Poder: pude, pudeste, pôde, pudemos, puderam. Não pude ir means I could not go (I tried or it did not happen).",
+            "Querer: quis, quiseste, quis, quisemos, quiseram. Não quis means I refused, did not want to.",
+            "Saber: soube, soubeste, soube... In the past it often means found out: Soube a notícia ontem."
+          ],
+          "q": "Tell me about something you could not do last week. Use não pude.",
+          "c": "Write three sentences: something you could not do (pude), refused (quis) and found out (soube)."
+        },
+        "de": {
+          "t": "Vergangenheit von poder, querer, saber",
+          "g": "Du nutzt pude, quis, soube und ihre besonderen Bedeutungen.",
+          "p": [
+            "Poder: pude, pudeste, pôde, pudemos, puderam. Não pude ir heißt Ich konnte nicht gehen.",
+            "Querer: quis, quiseste, quis, quisemos, quiseram. Não quis heißt Ich wollte nicht, habe abgelehnt.",
+            "Saber: soube, soubeste, soube... In der Vergangenheit oft erfahren: Soube a notícia ontem."
+          ],
+          "q": "Erzähl mir von etwas, das du letzte Woche nicht machen konntest. Nutze não pude.",
+          "c": "Schreib drei Sätze: etwas, das du nicht konntest (pude), ablehntest (quis) und erfuhrst (soube)."
+        },
+        "es": {
+          "t": "Pasado de poder, querer, saber",
+          "g": "Usar pude, quis, soube y sus significados especiales en pasado.",
+          "p": [
+            "Poder: pude, pudeste, pôde, pudemos, puderam. Não pude ir es no pude ir.",
+            "Querer: quis, quiseste, quis, quisemos, quiseram. Não quis es no quise, me negué.",
+            "Saber: soube, soubeste, soube... En pasado suele ser enterarse: Soube a notícia ontem (me enteré ayer)."
+          ],
+          "q": "Cuéntame algo que no pudiste hacer la semana pasada. Usa não pude.",
+          "c": "Escribe tres frases: algo que no pudiste hacer (pude), rechazaste (quis) y supiste (soube)."
+        },
+        "fr": {
+          "t": "Passé de poder, querer, saber",
+          "g": "Utiliser pude, quis, soube et leurs sens particuliers au passé.",
+          "p": [
+            "Poder : pude, pudeste, pôde, pudemos, puderam. Não pude ir veut dire je n'ai pas pu y aller.",
+            "Querer : quis, quiseste, quis, quisemos, quiseram. Não quis veut dire j'ai refusé, je n'ai pas voulu.",
+            "Saber : soube, soubeste, soube... Au passé, souvent apprendre : Soube a notícia ontem (j'ai appris la nouvelle hier)."
+          ],
+          "q": "Parle-moi d'une chose que tu n'as pas pu faire la semaine dernière. Utilise não pude.",
+          "c": "Écris trois phrases : une chose que tu n'as pas pu faire (pude), refusée (quis) et apprise (soube)."
+        },
+        "it": {
+          "t": "Passato di poder, querer, saber",
+          "g": "Usi pude, quis, soube e i loro significati speciali al passato.",
+          "p": [
+            "Poder: pude, pudeste, pôde, pudemos, puderam. Não pude ir vuol dire non sono potuto andare.",
+            "Querer: quis, quiseste, quis, quisemos, quiseram. Não quis vuol dire non ho voluto, ho rifiutato.",
+            "Saber: soube, soubeste, soube... Al passato spesso è venire a sapere: Soube a notícia ontem."
+          ],
+          "q": "Raccontami qualcosa che non hai potuto fare la settimana scorsa. Usa não pude.",
+          "c": "Scrivi tre frasi: qualcosa che non hai potuto fare (pude), rifiutato (quis) e scoperto (soube)."
+        },
+        "pt": {
+          "t": "Pretérito de poder, querer, saber",
+          "g": "Revê estes irregulares e as suas nuances de sentido no passado.",
+          "p": [
+            "Pôde (passado) leva acento para se distinguir de pode (presente). É uma das poucas marcas gráficas obrigatórias.",
+            "Soube significa muitas vezes tive conhecimento: Soube que te mudaste. Sabia indica conhecimento continuado.",
+            "Não quis é recusa; não queria é falta de vontade. Os estrangeiros raramente sentem esta diferença."
+          ],
+          "q": "Como explicarias a diferença entre soube e sabia com um exemplo simples?",
+          "c": "Escreve três pares de frases: pude/podia, quis/queria e soube/sabia, mostrando a diferença."
+        },
+        "pt_BR": {
+          "t": "Pretérito de poder, querer, saber",
+          "g": "Revise pude, quis, soube e os usos portugueses.",
+          "p": [
+            "As formas são iguais: pude, quis, soube. Com tu: pudeste, quiseste, soubeste.",
+            "Pôde, com acento, é o passado; pode é o presente. Essa regra vale nos dois países.",
+            "Soube que... é muito usado para notícias: Soube que vais mudar de casa! Parabéns!"
+          ],
+          "q": "Que notícia boa você soube recentemente? Conte com soube que.",
+          "c": "Escreva três frases com não pude, não quis e soube que, usando tu."
+        }
+      },
+      "target": {
+        "vocab": [
+          {
+            "w": "não pude",
+            "ex": "Não pude ir à festa, estava doente."
+          },
+          {
+            "w": "pôde",
+            "ex": "Ela não pôde vir ao jantar."
+          },
+          {
+            "w": "quis",
+            "ex": "Ele não quis comer a sopa."
+          },
+          {
+            "w": "soube",
+            "ex": "Soube a notícia pelo jornal."
+          },
+          {
+            "w": "soubeste?",
+            "ex": "Soubeste que a Rita vai casar?"
+          },
+          {
+            "w": "pudemos",
+            "ex": "Felizmente pudemos ver o pôr do sol."
+          }
+        ],
+        "gram": "Pretérito: poder (pude, pôde), querer (quis, quiseram), saber (soube). Soube = tomei conhecimento; não quis = recusei."
+      }
+    },
+    {
+      "d": 98,
+      "lv": "A2",
+      "i18n": {
+        "en": {
+          "t": "Past of dar, dizer, trazer, vir",
+          "g": "Use dei, disse, trouxe, vim in sentences.",
+          "p": [
+            "Dar: dei, deste, deu, demos, deram. Dizer: disse, disseste, disse, dissemos, disseram.",
+            "Trazer: trouxe, trouxeste, trouxe, trouxemos, trouxeram. The x in trouxe sounds like s.",
+            "Vir: vim, vieste, veio, viemos, vieram. Ele veio de autocarro (He came by bus)."
+          ],
+          "q": "What did someone give you or bring you recently? Use deu or trouxe.",
+          "c": "Tell a mini-story with four verbs: someone came (veio), brought (trouxe), said (disse) and gave (deu)."
+        },
+        "de": {
+          "t": "Vergangenheit von dar, dizer, trazer, vir",
+          "g": "Du verwendest dei, disse, trouxe, vim in Sätzen.",
+          "p": [
+            "Dar: dei, deste, deu, demos, deram. Dizer: disse, disseste, disse, dissemos, disseram.",
+            "Trazer: trouxe, trouxeste, trouxe, trouxemos, trouxeram. Das x in trouxe klingt wie s.",
+            "Vir: vim, vieste, veio, viemos, vieram. Ele veio de autocarro (Er kam mit dem Bus)."
+          ],
+          "q": "Was hat dir jemand kürzlich geschenkt oder mitgebracht? Nutze deu oder trouxe.",
+          "c": "Erzähl eine Mini-Geschichte mit vier Verben: jemand kam (veio), brachte (trouxe), sagte (disse) und gab (deu)."
+        },
+        "es": {
+          "t": "Pasado de dar, dizer, trazer, vir",
+          "g": "Usar dei, disse, trouxe, vim en frases.",
+          "p": [
+            "Dar: dei, deste, deu, demos, deram. Dizer: disse, disseste, disse, dissemos, disseram.",
+            "Trazer: trouxe, trouxeste, trouxe, trouxemos, trouxeram. La x de trouxe suena como s.",
+            "Vir: vim, vieste, veio, viemos, vieram. Ele veio de autocarro (vino en autobús)."
+          ],
+          "q": "¿Qué te regaló o te trajo alguien hace poco? Usa deu o trouxe.",
+          "c": "Cuenta una minihistoria con cuatro verbos: alguien vino (veio), trajo (trouxe), dijo (disse) y dio (deu)."
+        },
+        "fr": {
+          "t": "Passé de dar, dizer, trazer, vir",
+          "g": "Utiliser dei, disse, trouxe, vim dans des phrases.",
+          "p": [
+            "Dar : dei, deste, deu, demos, deram. Dizer : disse, disseste, disse, dissemos, disseram.",
+            "Trazer : trouxe, trouxeste, trouxe, trouxemos, trouxeram. Le x de trouxe se prononce s.",
+            "Vir : vim, vieste, veio, viemos, vieram. Ele veio de autocarro (il est venu en bus)."
+          ],
+          "q": "Qu'est-ce qu'on t'a donné ou apporté récemment ? Utilise deu ou trouxe.",
+          "c": "Raconte une mini-histoire avec quatre verbes : quelqu'un est venu (veio), a apporté (trouxe), a dit (disse) et a donné (deu)."
+        },
+        "it": {
+          "t": "Passato di dar, dizer, trazer, vir",
+          "g": "Usi dei, disse, trouxe, vim nelle frasi.",
+          "p": [
+            "Dar: dei, deste, deu, demos, deram. Dizer: disse, disseste, disse, dissemos, disseram.",
+            "Trazer: trouxe, trouxeste, trouxe, trouxemos, trouxeram. La x di trouxe si pronuncia s.",
+            "Vir: vim, vieste, veio, viemos, vieram. Ele veio de autocarro (è venuto in autobus)."
+          ],
+          "q": "Cosa ti ha regalato o portato qualcuno di recente? Usa deu o trouxe.",
+          "c": "Racconta una mini-storia con quattro verbi: qualcuno è venuto (veio), ha portato (trouxe), ha detto (disse) e ha dato (deu)."
+        },
+        "pt": {
+          "t": "Pretérito de dar, dizer, trazer, vir",
+          "g": "Revê estes irregulares e a pronúncia de trouxe.",
+          "p": [
+            "Trouxe pronuncia-se com som de s (trousse); muitos estrangeiros dizem trouche, por influência da escrita.",
+            "Veio e viu confundem-se: ele veio (vir), ele viu (ver). Vim é vir, vi é ver.",
+            "Erros comuns: dizi, trazi, vini. Repetir frases curtas em voz alta ajuda a fixar as formas."
+          ],
+          "q": "Qual destes verbos achas que mais confunde quem aprende português?",
+          "c": "Escreve uma pequena história com veio, viu, vim e vi, para treinar a diferença entre vir e ver."
+        },
+        "pt_BR": {
+          "t": "Pretérito de dar, dizer, trazer, vir",
+          "g": "Revise dei, disse, trouxe, vim com tu.",
+          "p": [
+            "Com tu: deste, disseste, trouxeste, vieste. Trouxeste o guarda-chuva? soa muito português.",
+            "Veio (vir) e viu (ver) são iguais nos dois países; em Portugal, Vieste de comboio? é comum.",
+            "O que é que ele disse?, com é que, é uma pergunta muito típica de Portugal."
+          ],
+          "q": "O que um amigo trouxe para você da última viagem dele?",
+          "c": "Escreva quatro perguntas com tu: deste, disseste, trouxeste e vieste."
+        }
+      },
+      "target": {
+        "vocab": [
+          {
+            "w": "dei",
+            "ex": "Dei um livro à minha irmã."
+          },
+          {
+            "w": "disse",
+            "ex": "Ele disse que vinha mais tarde."
+          },
+          {
+            "w": "trouxe",
+            "ex": "A Rita trouxe um bolo para o lanche."
+          },
+          {
+            "w": "vim",
+            "ex": "Vim a pé para o trabalho."
+          },
+          {
+            "w": "veio",
+            "ex": "O meu primo veio do Brasil."
+          },
+          {
+            "w": "deram",
+            "ex": "Os meus amigos deram-me uma surpresa."
+          }
+        ],
+        "gram": "Pretérito: dar (dei, deu), dizer (disse), trazer (trouxe, som de s), vir (vim, veio, vieram). Não confundir veio/viu."
+      }
+    },
+    {
+      "d": 99,
+      "lv": "A2",
+      "i18n": {
+        "en": {
+          "t": "Pretérito imperfeito: introduction",
+          "g": "Use falava, comia, partia for habits and descriptions in the past.",
+          "p": [
+            "-ar: falava, falavas, falava, falávamos, falavam. -er/-ir: comia, comias, comia, comíamos, comiam.",
+            "Use it for repeated habits: Todos os dias ia a pé para a escola (I used to walk to school every day).",
+            "And for descriptions: A casa era grande e tinha um jardim. Costumava + verb also means used to."
+          ],
+          "q": "What did you use to do every summer when you were younger? Use the imperfeito.",
+          "c": "Write five sentences about your old routine: Antigamente eu... with five imperfeito verbs."
+        },
+        "de": {
+          "t": "Pretérito imperfeito: Einführung",
+          "g": "Du nutzt falava, comia, partia für Gewohnheiten und Beschreibungen in der Vergangenheit.",
+          "p": [
+            "-ar: falava, falavas, falava, falávamos, falavam. -er/-ir: comia, comias, comia, comíamos, comiam.",
+            "Für Gewohnheiten: Todos os dias ia a pé para a escola (Jeden Tag ging ich zu Fuß zur Schule).",
+            "Und für Beschreibungen: A casa era grande e tinha um jardim. Costumava + Verb heißt pflegte zu."
+          ],
+          "q": "Was hast du früher jeden Sommer gemacht? Nutze das imperfeito.",
+          "c": "Schreib fünf Sätze über deinen früheren Alltag: Antigamente eu... mit fünf imperfeito-Verben."
+        },
+        "es": {
+          "t": "Pretérito imperfeito: introducción",
+          "g": "Usar falava, comia, partia para hábitos y descripciones en el pasado.",
+          "p": [
+            "-ar: falava, falavas, falava, falávamos, falavam. -er/-ir: comia, comias, comia, comíamos, comiam.",
+            "Funciona como el imperfecto español: Todos os dias ia a pé para a escola (iba andando al colegio).",
+            "Y para describir: A casa era grande e tinha um jardim. Costumava + verbo es solía."
+          ],
+          "q": "¿Qué hacías todos los veranos cuando eras más joven? Usa el imperfeito.",
+          "c": "Escribe cinco frases sobre tu antigua rutina: Antigamente eu... con cinco verbos en imperfeito."
+        },
+        "fr": {
+          "t": "Pretérito imperfeito : introduction",
+          "g": "Utiliser falava, comia, partia pour les habitudes et descriptions passées.",
+          "p": [
+            "-ar : falava, falavas, falava, falávamos, falavam. -er/-ir : comia, comias, comia, comíamos, comiam.",
+            "Comme l'imparfait : Todos os dias ia a pé para a escola (j'allais à l'école à pied tous les jours).",
+            "Et pour décrire : A casa era grande e tinha um jardim. Costumava + verbe = avoir l'habitude de."
+          ],
+          "q": "Que faisais-tu chaque été quand tu étais plus jeune ? Utilise l'imperfeito.",
+          "c": "Écris cinq phrases sur ton ancienne routine : Antigamente eu... avec cinq verbes à l'imperfeito."
+        },
+        "it": {
+          "t": "Pretérito imperfeito: introduzione",
+          "g": "Usi falava, comia, partia per abitudini e descrizioni nel passato.",
+          "p": [
+            "-ar: falava, falavas, falava, falávamos, falavam. -er/-ir: comia, comias, comia, comíamos, comiam.",
+            "Come l'imperfetto italiano: Todos os dias ia a pé para a escola (ogni giorno andavo a scuola a piedi).",
+            "E per descrivere: A casa era grande e tinha um jardim. Costumava + verbo = ero solito."
+          ],
+          "q": "Cosa facevi ogni estate quando eri più giovane? Usa l'imperfeito.",
+          "c": "Scrivi cinque frasi sulla tua vecchia routine: Antigamente eu... con cinque verbi all'imperfeito."
+        },
+        "pt": {
+          "t": "Pretérito imperfeito: introdução",
+          "g": "Revê o imperfeito e os seus usos para além do passado.",
+          "p": [
+            "Na fala portuguesa, o imperfeito substitui muitas vezes o condicional: Eu gostava de ir; Queria um café.",
+            "Costumava + infinitivo é uma alternativa natural para hábitos: Costumava passar o verão no Algarve.",
+            "Estudantes de inglês usam used to; mostra-lhes que o imperfeito, sozinho, já traz essa ideia."
+          ],
+          "q": "Que hábito tinhas em criança que hoje já não tens?",
+          "c": "Escreve três frases com imperfeito de hábito e três com imperfeito de cortesia (queria, gostava)."
+        },
+        "pt_BR": {
+          "t": "Pretérito imperfeito: introdução",
+          "g": "Revise o imperfeito e o uso de cortesia em Portugal.",
+          "p": [
+            "As formas são iguais: falava, comia. Com tu: falavas, comias. Em Portugal, o tu aparece muito aqui.",
+            "Em Portugal, Queria um café e Gostava de ir substituem quereria e gostaria na fala do dia a dia.",
+            "Costumava + infinitivo indica hábito: Costumava ir à praia todos os fins de semana."
+          ],
+          "q": "O que você costumava fazer aos domingos quando era adolescente?",
+          "c": "Escreva quatro frases de hábitos antigos e dois pedidos educados com queria e gostava."
+        }
+      },
+      "target": {
+        "vocab": [
+          {
+            "w": "falava",
+            "ex": "Antigamente falava pouco."
+          },
+          {
+            "w": "comia",
+            "ex": "Em criança comia muita fruta."
+          },
+          {
+            "w": "ia",
+            "ex": "Todos os dias ia a pé para a escola."
+          },
+          {
+            "w": "costumava",
+            "ex": "Costumava passar férias na aldeia."
+          },
+          {
+            "w": "antigamente",
+            "ex": "Antigamente não havia telemóveis."
+          },
+          {
+            "w": "tinha",
+            "ex": "A casa tinha um jardim enorme."
+          }
+        ],
+        "gram": "Imperfeito: falava, falavas, falávamos; comia, comias, comíamos. Usos: hábitos e descrições no passado; cortesia: queria."
+      }
+    },
+    {
+      "d": 100,
+      "lv": "A2",
+      "i18n": {
+        "en": {
+          "t": "When I was a child",
+          "g": "Talk about your childhood with the imperfeito.",
+          "p": [
+            "Start with Quando era criança... or Quando era pequeno/a... then use the imperfeito for habits.",
+            "Brincar (to play) is the verb for children's play: Brincava na rua com os meus primos.",
+            "Describe people and places: A minha avó era muito carinhosa. Morávamos numa casa perto do mar."
+          ],
+          "q": "What did you love doing when you were a child? Start with Quando era criança...",
+          "c": "Write six sentences about your childhood: home, school, games, food, holidays and a person."
+        },
+        "de": {
+          "t": "Als ich ein Kind war",
+          "g": "Du erzählst mit dem imperfeito von deiner Kindheit.",
+          "p": [
+            "Beginne mit Quando era criança... oder Quando era pequeno/a... und nutze dann das imperfeito.",
+            "Brincar ist das Verb für Kinderspiel: Brincava na rua com os meus primos.",
+            "Beschreib Menschen und Orte: A minha avó era muito carinhosa. Morávamos numa casa perto do mar."
+          ],
+          "q": "Was hast du als Kind am liebsten gemacht? Beginne mit Quando era criança...",
+          "c": "Schreib sechs Sätze über deine Kindheit: Zuhause, Schule, Spiele, Essen, Ferien und eine Person."
+        },
+        "es": {
+          "t": "Cuando era niño",
+          "g": "Hablar de tu infancia con el imperfeito.",
+          "p": [
+            "Empieza con Quando era criança... o Quando era pequeno/a... y usa el imperfeito para hábitos.",
+            "Brincar es jugar (los niños): Brincava na rua com os meus primos. Jogar es para juegos con reglas.",
+            "Describe personas y lugares: A minha avó era muito carinhosa. Morávamos numa casa perto do mar."
+          ],
+          "q": "¿Qué te encantaba hacer de niño? Empieza con Quando era criança...",
+          "c": "Escribe seis frases sobre tu infancia: casa, escuela, juegos, comida, vacaciones y una persona."
+        },
+        "fr": {
+          "t": "Quand j'étais enfant",
+          "g": "Parler de ton enfance avec l'imperfeito.",
+          "p": [
+            "Commence par Quando era criança... ou Quando era pequeno/a... puis l'imperfeito pour les habitudes.",
+            "Brincar est le verbe des jeux d'enfants : Brincava na rua com os meus primos (je jouais dans la rue).",
+            "Décris personnes et lieux : A minha avó era muito carinhosa. Morávamos numa casa perto do mar."
+          ],
+          "q": "Qu'est-ce que tu adorais faire quand tu étais enfant ? Commence par Quando era criança...",
+          "c": "Écris six phrases sur ton enfance : maison, école, jeux, nourriture, vacances et une personne."
+        },
+        "it": {
+          "t": "Quando ero bambino",
+          "g": "Parli della tua infanzia con l'imperfeito.",
+          "p": [
+            "Comincia con Quando era criança... o Quando era pequeno/a... e poi usa l'imperfeito per le abitudini.",
+            "Brincar è il verbo del gioco dei bambini: Brincava na rua com os meus primos (giocavo per strada).",
+            "Descrivi persone e luoghi: A minha avó era muito carinhosa. Morávamos numa casa perto do mar."
+          ],
+          "q": "Cosa adoravi fare da bambino? Comincia con Quando era criança...",
+          "c": "Scrivi sei frasi sulla tua infanzia: casa, scuola, giochi, cibo, vacanze e una persona."
+        },
+        "pt": {
+          "t": "Quando eu era criança",
+          "g": "Revê como contar memórias de infância com vivacidade.",
+          "p": [
+            "Quando era miúdo é a forma coloquial portuguesa; no Brasil diz-se quando era moleque ou criança.",
+            "Jogos de rua tradicionais (macaca, escondidas, berlinde) dão ótimos temas de conversa com estrangeiros.",
+            "O imperfeito pinta o cenário; um pormenor sensorial, como o cheiro da cozinha da avó, dá vida à memória."
+          ],
+          "q": "Que brincadeira de infância gostavas de partilhar com um estrangeiro?",
+          "c": "Escreve uma memória de infância em seis frases no imperfeito, com um pormenor sensorial."
+        },
+        "pt_BR": {
+          "t": "Quando eu era criança",
+          "g": "Fale da sua infância com palavras de Portugal.",
+          "p": [
+            "Em Portugal, uma criança é muitas vezes um miúdo ou uma miúda: Quando era miúdo, brincava na rua.",
+            "Jogar às escondidas é brincar de esconde-esconde; a macaca é a amarelinha.",
+            "O imperfeito com tu: Onde moravas em criança? Brincavas na rua? Tinhas animais?"
+          ],
+          "q": "Qual era a sua brincadeira favorita quando era miúdo ou miúda?",
+          "c": "Escreva seis frases sobre sua infância usando miúdo, escondidas e o imperfeito."
+        }
+      },
+      "target": {
+        "vocab": [
+          {
+            "w": "quando era criança",
+            "ex": "Quando era criança, vivia no campo."
+          },
+          {
+            "w": "brincar",
+            "ex": "Brincava no jardim com o meu irmão."
+          },
+          {
+            "w": "o miúdo",
+            "ex": "Quando era miúdo, adorava bicicletas."
+          },
+          {
+            "w": "morávamos",
+            "ex": "Morávamos perto da escola."
+          },
+          {
+            "w": "as escondidas",
+            "ex": "Jogávamos às escondidas no quintal."
+          },
+          {
+            "w": "a infância",
+            "ex": "Tive uma infância muito feliz."
+          }
+        ],
+        "gram": "Infância: Quando era criança/miúdo + imperfeito (brincava, morava, tinha). Brincar = jogo livre; jogar = jogo com regras."
+      }
+    }
+  ]
+}

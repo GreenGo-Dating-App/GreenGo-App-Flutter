@@ -1,0 +1,1305 @@
+{
+"topic": "anime",
+"questions": [
+{
+"id": "anime-001",
+"lv": "any",
+"i18n": {
+"en": "What was the first anime you ever watched, and how did you find it?",
+"de": "Was war der erste Anime, den du je gesehen hast, und wie bist du darauf gestoßen?",
+"es": "¿Cuál fue el primer anime que viste y cómo lo descubriste?",
+"fr": "Quel est le premier anime que tu as regardé, et comment l'as-tu découvert ?",
+"it": "Qual è stato il primo anime che hai visto e come l'hai scoperto?",
+"pt": "Qual foi o primeiro anime que viste e como o descobriste?",
+"pt_BR": "Qual foi o primeiro anime que você assistiu e como o descobriu?"
+}
+},
+{
+"id": "anime-002",
+"lv": "any",
+"i18n": {
+"en": "Which anime are you watching right now, and what do you like about it?",
+"de": "Welchen Anime schaust du gerade, und was gefällt dir daran?",
+"es": "¿Qué anime estás viendo ahora y qué te gusta de él?",
+"fr": "Quel anime regardes-tu en ce moment, et qu'est-ce qui te plaît ?",
+"it": "Quale anime stai guardando adesso e cosa ti piace?",
+"pt": "Que anime estás a ver agora e de que gostas nele?",
+"pt_BR": "Qual anime você está assistindo agora e do que está gostando?"
+}
+},
+{
+"id": "anime-003",
+"lv": "any",
+"i18n": {
+"en": "Do you prefer watching anime or reading manga?",
+"de": "Schaust du lieber Anime oder liest du lieber Manga?",
+"es": "¿Prefieres ver anime o leer manga?",
+"fr": "Tu préfères regarder des animes ou lire des mangas ?",
+"it": "Preferisci guardare anime o leggere manga?",
+"pt": "Preferes ver anime ou ler manga?",
+"pt_BR": "Você prefere assistir anime ou ler mangá?"
+}
+},
+{
+"id": "anime-004",
+"lv": "any",
+"i18n": {
+"en": "Which anime character would you love to have as a friend?",
+"de": "Welche Anime-Figur hättest du gern als Freund oder Freundin?",
+"es": "¿Qué personaje de anime te encantaría tener como amigo?",
+"fr": "Quel personnage d'anime aimerais-tu avoir comme ami ?",
+"it": "Quale personaggio anime vorresti avere come amico?",
+"pt": "Que personagem de anime gostavas de ter como amigo?",
+"pt_BR": "Qual personagem de anime você adoraria ter como amigo?"
+}
+},
+{
+"id": "anime-005",
+"lv": "any",
+"i18n": {
+"en": "What's your favourite Studio Ghibli film, and why?",
+"de": "Was ist dein Lieblingsfilm von Studio Ghibli, und warum?",
+"es": "¿Cuál es tu película favorita del Studio Ghibli y por qué?",
+"fr": "Quel est ton film préféré du Studio Ghibli, et pourquoi ?",
+"it": "Qual è il tuo film preferito dello Studio Ghibli e perché?",
+"pt": "Qual é o teu filme preferido do Studio Ghibli e porquê?",
+"pt_BR": "Qual é o seu filme favorito do Studio Ghibli, e por quê?"
+}
+},
+{
+"id": "anime-006",
+"lv": "any",
+"i18n": {
+"en": "Do you watch anime with subtitles or dubbed? What do you enjoy about it?",
+"de": "Schaust du Anime mit Untertiteln oder synchronisiert? Was gefällt dir daran?",
+"es": "¿Ves el anime subtitulado o doblado? ¿Qué te gusta de esa opción?",
+"fr": "Regardes-tu les animes en VOSTFR ou en VF ? Qu'est-ce qui te plaît dans ce choix ?",
+"it": "Guardi gli anime sottotitolati o doppiati? Cosa ti piace di questa scelta?",
+"pt": "Vês anime legendado ou dobrado? De que gostas nessa opção?",
+"pt_BR": "Você assiste anime legendado ou dublado? Do que gosta nessa opção?"
+}
+},
+{
+"id": "anime-007",
+"lv": "any",
+"i18n": {
+"en": "Which anime opening song can you never skip?",
+"de": "Welches Anime-Opening kannst du einfach nie überspringen?",
+"es": "¿Qué opening de anime nunca puedes saltarte?",
+"fr": "Quel générique d'anime ne peux-tu jamais passer ?",
+"it": "Quale sigla di un anime non riesci mai a saltare?",
+"pt": "Que genérico de abertura de anime nunca consegues saltar?",
+"pt_BR": "Qual abertura de anime você nunca consegue pular?"
+}
+},
+{
+"id": "anime-008",
+"lv": "any",
+"i18n": {
+"en": "If you could live in any anime world for a week, which would it be?",
+"de": "Wenn du eine Woche lang in einer Anime-Welt leben könntest, welche wäre es?",
+"es": "Si pudieras vivir una semana en el mundo de un anime, ¿cuál elegirías?",
+"fr": "Si tu pouvais vivre une semaine dans l'univers d'un anime, lequel choisirais-tu ?",
+"it": "Se potessi vivere una settimana nel mondo di un anime, quale sceglieresti?",
+"pt": "Se pudesses viver uma semana no mundo de um anime, qual escolherias?",
+"pt_BR": "Se você pudesse viver uma semana no mundo de um anime, qual escolheria?"
+}
+},
+{
+"id": "anime-009",
+"lv": "any",
+"i18n": {
+"en": "What kind of anime stories do you enjoy most?",
+"de": "Welche Art von Anime-Geschichten magst du am meisten?",
+"es": "¿Qué tipo de historias de anime disfrutas más?",
+"fr": "Quel genre d'histoires d'anime aimes-tu le plus ?",
+"it": "Che tipo di storie anime ti piacciono di più?",
+"pt": "De que tipo de histórias de anime gostas mais?",
+"pt_BR": "De que tipo de história de anime você mais gosta?"
+}
+},
+{
+"id": "anime-010",
+"lv": "any",
+"i18n": {
+"en": "Which anime would you recommend to someone who has never watched one?",
+"de": "Welchen Anime würdest du jemandem empfehlen, der noch nie einen gesehen hat?",
+"es": "¿Qué anime le recomendarías a alguien que nunca ha visto uno?",
+"fr": "Quel anime recommanderais-tu à quelqu'un qui n'en a jamais vu ?",
+"it": "Quale anime consiglieresti a chi non ne ha mai visto uno?",
+"pt": "Que anime recomendarias a alguém que nunca viu nenhum?",
+"pt_BR": "Qual anime você recomendaria para quem nunca assistiu nenhum?"
+}
+},
+{
+"id": "anime-011",
+"lv": "any",
+"i18n": {
+"en": "What's an anime scene that always makes you smile?",
+"de": "Welche Anime-Szene bringt dich immer zum Lächeln?",
+"es": "¿Qué escena de anime siempre te hace sonreír?",
+"fr": "Quelle scène d'anime te fait toujours sourire ?",
+"it": "Quale scena di un anime ti fa sempre sorridere?",
+"pt": "Que cena de anime te faz sempre sorrir?",
+"pt_BR": "Qual cena de anime sempre faz você sorrir?"
+}
+},
+{
+"id": "anime-012",
+"lv": "any",
+"i18n": {
+"en": "Which anime did you watch as a child, and do you still like it?",
+"de": "Welchen Anime hast du als Kind geschaut, und magst du ihn heute noch?",
+"es": "¿Qué anime veías de niño y todavía te gusta?",
+"fr": "Quel anime regardais-tu enfant, et l'aimes-tu encore ?",
+"it": "Quale anime guardavi da bambino e ti piace ancora?",
+"pt": "Que anime vias em criança e ainda gostas dele?",
+"pt_BR": "Qual anime você assistia na infância e ainda gosta dele?"
+}
+},
+{
+"id": "anime-013",
+"lv": "any",
+"i18n": {
+"en": "Do you prefer anime films or long series?",
+"de": "Magst du lieber Anime-Filme oder lange Serien?",
+"es": "¿Prefieres las películas de anime o las series largas?",
+"fr": "Tu préfères les films d'animation japonaise ou les longues séries ?",
+"it": "Preferisci i film d'animazione giapponese o le serie lunghe?",
+"pt": "Preferes filmes de anime ou séries longas?",
+"pt_BR": "Você prefere filmes de anime ou séries longas?"
+}
+},
+{
+"id": "anime-014",
+"lv": "any",
+"i18n": {
+"en": "Which anime food would you most like to taste in real life?",
+"de": "Welches Essen aus einem Anime würdest du am liebsten in echt probieren?",
+"es": "¿Qué comida de un anime te gustaría probar en la vida real?",
+"fr": "Quel plat vu dans un anime aimerais-tu goûter en vrai ?",
+"it": "Quale piatto visto in un anime vorresti assaggiare dal vivo?",
+"pt": "Que comida de um anime mais gostavas de provar na vida real?",
+"pt_BR": "Qual comida de anime você mais gostaria de provar na vida real?"
+}
+},
+{
+"id": "anime-015",
+"lv": "any",
+"i18n": {
+"en": "What first got you interested in Japanese culture?",
+"de": "Was hat dein Interesse an der japanischen Kultur zuerst geweckt?",
+"es": "¿Qué despertó primero tu interés por la cultura japonesa?",
+"fr": "Qu'est-ce qui a d'abord éveillé ton intérêt pour la culture japonaise ?",
+"it": "Che cosa ha acceso per primo il tuo interesse per la cultura giapponese?",
+"pt": "O que despertou primeiro o teu interesse pela cultura japonesa?",
+"pt_BR": "O que primeiro despertou o seu interesse pela cultura japonesa?"
+}
+},
+{
+"id": "anime-016",
+"lv": "any",
+"i18n": {
+"en": "Which anime art style do you find the most beautiful?",
+"de": "Welchen Anime-Zeichenstil findest du am schönsten?",
+"es": "¿Qué estilo artístico de anime te parece el más bonito?",
+"fr": "Quel style graphique d'anime trouves-tu le plus beau ?",
+"it": "Quale stile grafico di anime trovi più bello?",
+"pt": "Que estilo artístico de anime achas mais bonito?",
+"pt_BR": "Qual estilo artístico de anime você acha mais bonito?"
+}
+},
+{
+"id": "anime-017",
+"lv": "any",
+"i18n": {
+"en": "Do you have a favourite manga you've read more than once?",
+"de": "Hast du einen Lieblingsmanga, den du mehr als einmal gelesen hast?",
+"es": "¿Tienes un manga favorito que hayas leído más de una vez?",
+"fr": "As-tu un manga préféré que tu as lu plusieurs fois ?",
+"it": "Hai un manga preferito che hai letto più di una volta?",
+"pt": "Tens uma manga preferida que leste mais do que uma vez?",
+"pt_BR": "Você tem um mangá favorito que leu mais de uma vez?"
+}
+},
+{
+"id": "anime-018",
+"lv": "any",
+"i18n": {
+"en": "Who do you like to watch anime with?",
+"de": "Mit wem schaust du am liebsten Anime?",
+"es": "¿Con quién te gusta ver anime?",
+"fr": "Avec qui aimes-tu regarder des animes ?",
+"it": "Con chi ti piace guardare gli anime?",
+"pt": "Com quem gostas de ver anime?",
+"pt_BR": "Com quem você gosta de assistir anime?"
+}
+},
+{
+"id": "anime-019",
+"lv": "any",
+"i18n": {
+"en": "Which anime soundtrack do you listen to even without watching?",
+"de": "Welchen Anime-Soundtrack hörst du auch ohne die Serie?",
+"es": "¿Qué banda sonora de anime escuchas incluso sin verlo?",
+"fr": "Quelle bande originale d'anime écoutes-tu même sans regarder la série ?",
+"it": "Quale colonna sonora di un anime ascolti anche senza guardarlo?",
+"pt": "Que banda sonora de anime ouves mesmo sem ver a série?",
+"pt_BR": "Qual trilha sonora de anime você ouve mesmo sem assistir?"
+}
+},
+{
+"id": "anime-020",
+"lv": "any",
+"i18n": {
+"en": "What anime genre would you like to try but haven't yet?",
+"de": "Welches Anime-Genre würdest du gern einmal ausprobieren?",
+"es": "¿Qué género de anime te gustaría probar y aún no has probado?",
+"fr": "Quel genre d'anime aimerais-tu essayer mais n'as pas encore tenté ?",
+"it": "Quale genere di anime vorresti provare ma non hai ancora provato?",
+"pt": "Que género de anime gostavas de experimentar e ainda não experimentaste?",
+"pt_BR": "Qual gênero de anime você gostaria de experimentar e ainda não experimentou?"
+}
+},
+{
+"id": "anime-021",
+"lv": "any",
+"i18n": {
+"en": "Which anime would you love to watch with your family?",
+"de": "Welchen Anime würdest du gern mit deiner Familie schauen?",
+"es": "¿Qué anime te encantaría ver con tu familia?",
+"fr": "Quel anime aimerais-tu regarder en famille ?",
+"it": "Quale anime ti piacerebbe guardare con la tua famiglia?",
+"pt": "Que anime gostavas de ver com a tua família?",
+"pt_BR": "Qual anime você adoraria assistir com a sua família?"
+}
+},
+{
+"id": "anime-022",
+"lv": "any",
+"i18n": {
+"en": "Have you ever been to an anime convention or would you like to go?",
+"de": "Warst du schon einmal auf einer Anime-Convention, oder würdest du gern hin?",
+"es": "¿Has ido alguna vez a un salón de anime o te gustaría ir?",
+"fr": "Es-tu déjà allé à une convention d'anime, ou aimerais-tu y aller ?",
+"it": "Sei mai stato a una fiera di anime e fumetti o ti piacerebbe andarci?",
+"pt": "Já foste a uma convenção de anime ou gostavas de ir?",
+"pt_BR": "Você já foi a um evento de anime ou gostaria de ir?"
+}
+},
+{
+"id": "anime-023",
+"lv": "any",
+"i18n": {
+"en": "Which anime character do you relate to the most?",
+"de": "Mit welcher Anime-Figur kannst du dich am meisten identifizieren?",
+"es": "¿Con qué personaje de anime te identificas más?",
+"fr": "À quel personnage d'anime t'identifies-tu le plus ?",
+"it": "In quale personaggio anime ti rivedi di più?",
+"pt": "Com que personagem de anime te identificas mais?",
+"pt_BR": "Com qual personagem de anime você mais se identifica?"
+}
+},
+{
+"id": "anime-024",
+"lv": "any",
+"i18n": {
+"en": "What's a Japanese word you learned from anime?",
+"de": "Welches japanische Wort hast du durch Anime gelernt?",
+"es": "¿Qué palabra japonesa aprendiste gracias al anime?",
+"fr": "Quel mot japonais as-tu appris grâce aux animes ?",
+"it": "Quale parola giapponese hai imparato grazie agli anime?",
+"pt": "Que palavra japonesa aprendeste com o anime?",
+"pt_BR": "Qual palavra japonesa você aprendeu com os animes?"
+}
+},
+{
+"id": "anime-025",
+"lv": "any",
+"i18n": {
+"en": "Do you like calm, cosy anime or exciting adventures more?",
+"de": "Magst du lieber ruhige, gemütliche Anime oder spannende Abenteuer?",
+"es": "¿Te gustan más los animes tranquilos y acogedores o las aventuras emocionantes?",
+"fr": "Tu préfères les animes calmes et cosy ou les aventures palpitantes ?",
+"it": "Ti piacciono di più gli anime tranquilli e rilassanti o le avventure emozionanti?",
+"pt": "Gostas mais de animes calmos e aconchegantes ou de aventuras emocionantes?",
+"pt_BR": "Você gosta mais de animes calmos e aconchegantes ou de aventuras emocionantes?"
+}
+},
+{
+"id": "anime-026",
+"lv": "any",
+"i18n": {
+"en": "Which place in Japan would you visit because of an anime?",
+"de": "Welchen Ort in Japan würdest du wegen eines Animes besuchen?",
+"es": "¿Qué lugar de Japón visitarías por culpa de un anime?",
+"fr": "Quel endroit du Japon visiterais-tu à cause d'un anime ?",
+"it": "Quale luogo del Giappone visiteresti grazie a un anime?",
+"pt": "Que sítio do Japão visitarias por causa de um anime?",
+"pt_BR": "Qual lugar do Japão você visitaria por causa de um anime?"
+}
+},
+{
+"id": "anime-027",
+"lv": "any",
+"i18n": {
+"en": "What's an anime that taught you something valuable?",
+"de": "Welcher Anime hat dir etwas Wertvolles beigebracht?",
+"es": "¿Qué anime te enseñó algo valioso?",
+"fr": "Quel anime t'a appris quelque chose de précieux ?",
+"it": "Quale anime ti ha insegnato qualcosa di prezioso?",
+"pt": "Que anime te ensinou algo valioso?",
+"pt_BR": "Qual anime ensinou algo valioso para você?"
+}
+},
+{
+"id": "anime-028",
+"lv": "any",
+"i18n": {
+"en": "Do you collect anything related to anime, like figures or artbooks?",
+"de": "Sammelst du etwas rund um Anime, zum Beispiel Figuren oder Artbooks?",
+"es": "¿Coleccionas algo relacionado con el anime, como figuras o libros de arte?",
+"fr": "Collectionnes-tu des objets liés aux animes, comme des figurines ou des artbooks ?",
+"it": "Collezioni qualcosa legato agli anime, come figure o artbook?",
+"pt": "Colecionas alguma coisa ligada ao anime, como figuras ou livros de arte?",
+"pt_BR": "Você coleciona algo de anime, como bonecos ou artbooks?"
+}
+},
+{
+"id": "anime-029",
+"lv": "any",
+"i18n": {
+"en": "Which anime would you like to see turned into a live-action film?",
+"de": "Welchen Anime würdest du gern als Realverfilmung sehen?",
+"es": "¿Qué anime te gustaría ver convertido en película de imagen real?",
+"fr": "Quel anime aimerais-tu voir adapté en film avec de vrais acteurs ?",
+"it": "Quale anime vorresti vedere trasformato in un film live action?",
+"pt": "Que anime gostavas de ver adaptado a filme com atores reais?",
+"pt_BR": "Qual anime você gostaria de ver virar filme live-action?"
+}
+},
+{
+"id": "anime-030",
+"lv": "any",
+"i18n": {
+"en": "If you could ask Hayao Miyazaki one question, what would it be?",
+"de": "Wenn du Hayao Miyazaki eine Frage stellen könntest, welche wäre das?",
+"es": "Si pudieras hacerle una pregunta a Hayao Miyazaki, ¿cuál sería?",
+"fr": "Si tu pouvais poser une question à Hayao Miyazaki, laquelle serait-ce ?",
+"it": "Se potessi fare una domanda a Hayao Miyazaki, quale sarebbe?",
+"pt": "Se pudesses fazer uma pergunta a Hayao Miyazaki, qual seria?",
+"pt_BR": "Se você pudesse fazer uma pergunta a Hayao Miyazaki, qual seria?"
+}
+},
+{
+"id": "anime-031",
+"lv": "any",
+"i18n": {
+"en": "Which anime friendship do you admire the most?",
+"de": "Welche Freundschaft aus einem Anime bewunderst du am meisten?",
+"es": "¿Qué amistad de anime admiras más?",
+"fr": "Quelle amitié d'anime admires-tu le plus ?",
+"it": "Quale amicizia in un anime ammiri di più?",
+"pt": "Que amizade de anime admiras mais?",
+"pt_BR": "Qual amizade de anime você mais admira?"
+}
+},
+{
+"id": "anime-032",
+"lv": "any",
+"i18n": {
+"en": "How do you usually find new anime to watch?",
+"de": "Wie findest du normalerweise neue Anime zum Anschauen?",
+"es": "¿Cómo sueles encontrar nuevos animes para ver?",
+"fr": "Comment trouves-tu d'habitude de nouveaux animes à regarder ?",
+"it": "Come trovi di solito nuovi anime da guardare?",
+"pt": "Como costumas descobrir novos animes para ver?",
+"pt_BR": "Como você costuma descobrir novos animes para assistir?"
+}
+},
+{
+"id": "anime-033",
+"lv": "any",
+"i18n": {
+"en": "Which anime was popular in your country when you were growing up?",
+"de": "Welcher Anime war in deinem Land beliebt, als du aufgewachsen bist?",
+"es": "¿Qué anime era popular en tu país cuando eras pequeño?",
+"fr": "Quel anime était populaire dans ton pays quand tu grandissais ?",
+"it": "Quale anime era popolare nel tuo paese quando eri piccolo?",
+"pt": "Que anime era popular no teu país quando eras pequeno?",
+"pt_BR": "Qual anime era popular no seu país quando você era criança?"
+}
+},
+{
+"id": "anime-034",
+"lv": "any",
+"i18n": {
+"en": "Do you enjoy drawing anime-style characters?",
+"de": "Zeichnest du gern Figuren im Anime-Stil?",
+"es": "¿Te gusta dibujar personajes al estilo anime?",
+"fr": "Aimes-tu dessiner des personnages dans le style anime ?",
+"it": "Ti piace disegnare personaggi in stile anime?",
+"pt": "Gostas de desenhar personagens ao estilo anime?",
+"pt_BR": "Você gosta de desenhar personagens no estilo anime?"
+}
+},
+{
+"id": "anime-035",
+"lv": "any",
+"i18n": {
+"en": "Which anime mascot or cute character makes you happiest?",
+"de": "Welches Anime-Maskottchen oder welche niedliche Figur macht dich am glücklichsten?",
+"es": "¿Qué mascota o personaje adorable de anime te alegra más?",
+"fr": "Quelle mascotte ou quel personnage mignon d'anime te rend le plus heureux ?",
+"it": "Quale mascotte o personaggio carino di un anime ti rende più felice?",
+"pt": "Que mascote ou personagem fofo de anime te deixa mais feliz?",
+"pt_BR": "Qual mascote ou personagem fofo de anime deixa você mais feliz?"
+}
+},
+{
+"id": "anime-036",
+"lv": "any",
+"i18n": {
+"en": "What's the most beautiful anime background or landscape you remember?",
+"de": "Was ist der schönste Anime-Hintergrund oder die schönste Landschaft, an die du dich erinnerst?",
+"es": "¿Cuál es el fondo o paisaje de anime más bonito que recuerdas?",
+"fr": "Quel est le plus beau décor ou paysage d'anime dont tu te souviens ?",
+"it": "Qual è lo sfondo o paesaggio anime più bello che ricordi?",
+"pt": "Qual é o cenário ou paisagem de anime mais bonito de que te lembras?",
+"pt_BR": "Qual é o cenário ou paisagem de anime mais bonito de que você se lembra?"
+}
+},
+{
+"id": "anime-037",
+"lv": "any",
+"i18n": {
+"en": "Which sports anime would make you want to try that sport?",
+"de": "Bei welchem Sport-Anime würdest du die Sportart gern selbst ausprobieren?",
+"es": "¿Qué anime deportivo te daría ganas de probar ese deporte?",
+"fr": "Quel anime de sport te donnerait envie d'essayer ce sport ?",
+"it": "Quale anime sportivo ti farebbe venire voglia di provare quello sport?",
+"pt": "Que anime de desporto te daria vontade de experimentar esse desporto?",
+"pt_BR": "Qual anime de esporte faria você querer experimentar o esporte?"
+}
+},
+{
+"id": "anime-038",
+"lv": "any",
+"i18n": {
+"en": "What would your perfect anime watching evening look like?",
+"de": "Wie sähe dein perfekter Anime-Abend aus?",
+"es": "¿Cómo sería tu tarde perfecta viendo anime?",
+"fr": "À quoi ressemblerait ta soirée anime parfaite ?",
+"it": "Come sarebbe la tua serata anime perfetta?",
+"pt": "Como seria a tua noite perfeita a ver anime?",
+"pt_BR": "Como seria a sua noite perfeita assistindo anime?"
+}
+},
+{
+"id": "anime-039",
+"lv": "any",
+"i18n": {
+"en": "Which anime would you love to discuss with fans from another country?",
+"de": "Über welchen Anime würdest du gern mit Fans aus einem anderen Land sprechen?",
+"es": "¿De qué anime te encantaría hablar con fans de otro país?",
+"fr": "De quel anime aimerais-tu discuter avec des fans d'un autre pays ?",
+"it": "Di quale anime ti piacerebbe parlare con fan di un altro paese?",
+"pt": "Sobre que anime gostavas de conversar com fãs de outro país?",
+"pt_BR": "Sobre qual anime você adoraria conversar com fãs de outro país?"
+}
+},
+{
+"id": "anime-040",
+"lv": "any",
+"i18n": {
+"en": "If you starred in an anime, what would your special talent be?",
+"de": "Wenn du die Hauptfigur in einem Anime wärst, was wäre dein besonderes Talent?",
+"es": "Si fueras protagonista de un anime, ¿cuál sería tu talento especial?",
+"fr": "Si tu étais le héros d'un anime, quel serait ton talent spécial ?",
+"it": "Se fossi protagonista di un anime, quale sarebbe il tuo talento speciale?",
+"pt": "Se fosses protagonista de um anime, qual seria o teu talento especial?",
+"pt_BR": "Se você fosse protagonista de um anime, qual seria o seu talento especial?"
+}
+},
+{
+"id": "anime-041",
+"lv": "beginner",
+"i18n": {
+"en": "How often do you watch anime in a normal week?",
+"de": "Wie oft schaust du in einer normalen Woche Anime?",
+"es": "¿Con qué frecuencia ves anime en una semana normal?",
+"fr": "À quelle fréquence regardes-tu des animes dans une semaine normale ?",
+"it": "Quanto spesso guardi anime in una settimana normale?",
+"pt": "Com que frequência vês anime numa semana normal?",
+"pt_BR": "Com que frequência você assiste anime numa semana normal?"
+}
+},
+{
+"id": "anime-042",
+"lv": "beginner",
+"i18n": {
+"en": "Have you ever tried reading a manga from right to left? How was it?",
+"de": "Hast du schon einmal einen Manga von rechts nach links gelesen? Wie war das?",
+"es": "¿Has probado a leer un manga de derecha a izquierda? ¿Qué tal?",
+"fr": "As-tu déjà essayé de lire un manga de droite à gauche ? Comment c'était ?",
+"it": "Hai mai provato a leggere un manga da destra a sinistra? Com'è andata?",
+"pt": "Já experimentaste ler uma manga da direita para a esquerda? Como foi?",
+"pt_BR": "Você já tentou ler um mangá da direita para a esquerda? Como foi?"
+}
+},
+{
+"id": "anime-043",
+"lv": "beginner",
+"i18n": {
+"en": "Which anime did you watch on TV as a kid?",
+"de": "Welchen Anime hast du als Kind im Fernsehen gesehen?",
+"es": "¿Qué anime veías en la tele de pequeño?",
+"fr": "Quel anime regardais-tu à la télé quand tu étais petit ?",
+"it": "Quale anime guardavi in TV da piccolo?",
+"pt": "Que anime vias na televisão em criança?",
+"pt_BR": "Qual anime você assistia na TV quando era criança?"
+}
+},
+{
+"id": "anime-044",
+"lv": "beginner",
+"i18n": {
+"en": "Do you know the difference between shōnen and shōjo? Which do you prefer?",
+"de": "Kennst du den Unterschied zwischen Shōnen und Shōjo? Was magst du lieber?",
+"es": "¿Conoces la diferencia entre shōnen y shōjo? ¿Cuál prefieres?",
+"fr": "Connais-tu la différence entre shōnen et shōjo ? Lequel préfères-tu ?",
+"it": "Conosci la differenza tra shōnen e shōjo? Quale preferisci?",
+"pt": "Conheces a diferença entre shōnen e shōjo? Qual preferes?",
+"pt_BR": "Você conhece a diferença entre shōnen e shōjo? Qual prefere?"
+}
+},
+{
+"id": "anime-045",
+"lv": "beginner",
+"i18n": {
+"en": "Have you seen My Neighbor Totoro? What did you think of it?",
+"de": "Hast du Mein Nachbar Totoro gesehen? Wie fandest du ihn?",
+"es": "¿Has visto Mi vecino Totoro? ¿Qué te pareció?",
+"fr": "As-tu vu Mon voisin Totoro ? Qu'en as-tu pensé ?",
+"it": "Hai visto Il mio vicino Totoro? Che ne pensi?",
+"pt": "Já viste O Meu Vizinho Totoro? O que achaste?",
+"pt_BR": "Você já viu Meu Amigo Totoro? O que achou?"
+}
+},
+{
+"id": "anime-046",
+"lv": "beginner",
+"i18n": {
+"en": "Which streaming service or channel do you use to watch anime?",
+"de": "Welchen Streamingdienst oder Sender nutzt du für Anime?",
+"es": "¿Qué plataforma o canal usas para ver anime?",
+"fr": "Quelle plateforme ou chaîne utilises-tu pour regarder des animes ?",
+"it": "Quale piattaforma o canale usi per guardare anime?",
+"pt": "Que plataforma ou canal usas para ver anime?",
+"pt_BR": "Qual plataforma ou canal você usa para assistir anime?"
+}
+},
+{
+"id": "anime-047",
+"lv": "beginner",
+"i18n": {
+"en": "Do you watch the opening every time, or skip to the episode?",
+"de": "Schaust du jedes Mal das Opening, oder springst du direkt zur Folge?",
+"es": "¿Ves el opening cada vez o saltas directamente al episodio?",
+"fr": "Regardes-tu le générique à chaque fois, ou passes-tu directement à l'épisode ?",
+"it": "Guardi la sigla ogni volta o salti direttamente all'episodio?",
+"pt": "Vês o genérico todas as vezes ou saltas logo para o episódio?",
+"pt_BR": "Você assiste à abertura toda vez ou pula direto para o episódio?"
+}
+},
+{
+"id": "anime-048",
+"lv": "beginner",
+"i18n": {
+"en": "Which cute anime would you show to a young child?",
+"de": "Welchen niedlichen Anime würdest du einem kleinen Kind zeigen?",
+"es": "¿Qué anime adorable le enseñarías a un niño pequeño?",
+"fr": "Quel anime mignon montrerais-tu à un petit enfant ?",
+"it": "Quale anime tenero mostreresti a un bambino piccolo?",
+"pt": "Que anime fofinho mostrarias a uma criança pequena?",
+"pt_BR": "Qual anime fofinho você mostraria para uma criança pequena?"
+}
+},
+{
+"id": "anime-049",
+"lv": "beginner",
+"i18n": {
+"en": "Do you know any Japanese phrases like itadakimasu or ganbatte?",
+"de": "Kennst du japanische Ausdrücke wie itadakimasu oder ganbatte?",
+"es": "¿Conoces alguna expresión japonesa como itadakimasu o ganbatte?",
+"fr": "Connais-tu des expressions japonaises comme itadakimasu ou ganbatte ?",
+"it": "Conosci qualche espressione giapponese come itadakimasu o ganbatte?",
+"pt": "Conheces expressões japonesas como itadakimasu ou ganbatte?",
+"pt_BR": "Você conhece expressões japonesas como itadakimasu ou ganbatte?"
+}
+},
+{
+"id": "anime-050",
+"lv": "beginner",
+"i18n": {
+"en": "Have you ever watched Pokémon or Doraemon? What do you remember?",
+"de": "Hast du schon einmal Pokémon oder Doraemon geschaut? Woran erinnerst du dich?",
+"es": "¿Has visto alguna vez Pokémon o Doraemon? ¿Qué recuerdas?",
+"fr": "As-tu déjà regardé Pokémon ou Doraemon ? De quoi te souviens-tu ?",
+"it": "Hai mai guardato Pokémon o Doraemon? Cosa ricordi?",
+"pt": "Já viste Pokémon ou Doraemon? De que te lembras?",
+"pt_BR": "Você já assistiu Pokémon ou Doraemon? Do que se lembra?"
+}
+},
+{
+"id": "anime-051",
+"lv": "beginner",
+"i18n": {
+"en": "What do you notice first in anime: the story, the art or the music?",
+"de": "Was fällt dir bei Anime zuerst auf: die Geschichte, die Optik oder die Musik?",
+"es": "¿Qué notas primero en un anime: la historia, el dibujo o la música?",
+"fr": "Que remarques-tu d'abord dans un anime : l'histoire, le dessin ou la musique ?",
+"it": "Cosa noti per primo in un anime: la storia, i disegni o la musica?",
+"pt": "O que notas primeiro num anime: a história, o desenho ou a música?",
+"pt_BR": "O que você nota primeiro num anime: a história, o desenho ou a música?"
+}
+},
+{
+"id": "anime-052",
+"lv": "beginner",
+"i18n": {
+"en": "How many episodes do you usually watch in one go?",
+"de": "Wie viele Folgen schaust du normalerweise am Stück?",
+"es": "¿Cuántos episodios sueles ver seguidos?",
+"fr": "Combien d'épisodes regardes-tu d'habitude d'affilée ?",
+"it": "Quanti episodi guardi di solito di fila?",
+"pt": "Quantos episódios costumas ver de seguida?",
+"pt_BR": "Quantos episódios você costuma assistir de uma vez?"
+}
+},
+{
+"id": "anime-053",
+"lv": "beginner",
+"i18n": {
+"en": "Which anime character has the coolest design for you?",
+"de": "Welche Anime-Figur hat für dich das coolste Design?",
+"es": "¿Qué personaje de anime tiene el diseño más chulo para ti?",
+"fr": "Quel personnage d'anime a le design le plus cool selon toi ?",
+"it": "Quale personaggio anime ha il design più bello per te?",
+"pt": "Que personagem de anime tem o design mais fixe para ti?",
+"pt_BR": "Qual personagem de anime tem o visual mais legal para você?"
+}
+},
+{
+"id": "anime-054",
+"lv": "beginner",
+"i18n": {
+"en": "Do you prefer short episodes or full-length ones?",
+"de": "Magst du lieber kurze Folgen oder Folgen in voller Länge?",
+"es": "¿Prefieres episodios cortos o de duración normal?",
+"fr": "Tu préfères les épisodes courts ou ceux de durée normale ?",
+"it": "Preferisci episodi brevi o di durata normale?",
+"pt": "Preferes episódios curtos ou de duração normal?",
+"pt_BR": "Você prefere episódios curtos ou de duração normal?"
+}
+},
+{
+"id": "anime-055",
+"lv": "beginner",
+"i18n": {
+"en": "Would you like to read the manga of an anime you love?",
+"de": "Würdest du gern den Manga zu einem Anime lesen, den du liebst?",
+"es": "¿Te gustaría leer el manga de un anime que te encanta?",
+"fr": "Aimerais-tu lire le manga d'un anime que tu adores ?",
+"it": "Ti piacerebbe leggere il manga di un anime che ami?",
+"pt": "Gostavas de ler a manga de um anime de que gostas muito?",
+"pt_BR": "Você gostaria de ler o mangá de um anime que ama?"
+}
+},
+{
+"id": "anime-056",
+"lv": "beginner",
+"i18n": {
+"en": "Which anime made you curious about Japanese food?",
+"de": "Welcher Anime hat dich neugierig auf japanisches Essen gemacht?",
+"es": "¿Qué anime te despertó la curiosidad por la comida japonesa?",
+"fr": "Quel anime t'a rendu curieux de la cuisine japonaise ?",
+"it": "Quale anime ti ha incuriosito sul cibo giapponese?",
+"pt": "Que anime te deixou curioso em relação à comida japonesa?",
+"pt_BR": "Qual anime deixou você curioso sobre a comida japonesa?"
+}
+},
+{
+"id": "anime-057",
+"lv": "beginner",
+"i18n": {
+"en": "Do you have a favourite anime pet or animal character?",
+"de": "Hast du ein Lieblingshaustier oder eine Lieblingstierfigur aus einem Anime?",
+"es": "¿Tienes una mascota o personaje animal de anime favorito?",
+"fr": "As-tu un animal ou un personnage animal d'anime préféré ?",
+"it": "Hai un animaletto o un personaggio animale preferito negli anime?",
+"pt": "Tens um animal ou personagem animal de anime preferido?",
+"pt_BR": "Você tem um bichinho ou personagem animal de anime favorito?"
+}
+},
+{
+"id": "anime-058",
+"lv": "beginner",
+"i18n": {
+"en": "What anime would you watch on a rainy afternoon?",
+"de": "Welchen Anime würdest du an einem verregneten Nachmittag schauen?",
+"es": "¿Qué anime verías en una tarde de lluvia?",
+"fr": "Quel anime regarderais-tu par un après-midi pluvieux ?",
+"it": "Quale anime guarderesti in un pomeriggio di pioggia?",
+"pt": "Que anime verias numa tarde de chuva?",
+"pt_BR": "Qual anime você assistiria numa tarde de chuva?"
+}
+},
+{
+"id": "anime-059",
+"lv": "beginner",
+"i18n": {
+"en": "Which anime made you laugh the most?",
+"de": "Bei welchem Anime musstest du am meisten lachen?",
+"es": "¿Qué anime te ha hecho reír más?",
+"fr": "Quel anime t'a le plus fait rire ?",
+"it": "Quale anime ti ha fatto ridere di più?",
+"pt": "Que anime te fez rir mais?",
+"pt_BR": "Qual anime fez você rir mais?"
+}
+},
+{
+"id": "anime-060",
+"lv": "beginner",
+"i18n": {
+"en": "Have you ever watched an anime film in a cinema?",
+"de": "Hast du schon einmal einen Anime-Film im Kino gesehen?",
+"es": "¿Has visto alguna vez una película de anime en el cine?",
+"fr": "As-tu déjà vu un film d'animation japonaise au cinéma ?",
+"it": "Hai mai visto un film anime al cinema?",
+"pt": "Já viste algum filme de anime no cinema?",
+"pt_BR": "Você já assistiu a algum filme de anime no cinema?"
+}
+},
+{
+"id": "anime-061",
+"lv": "beginner",
+"i18n": {
+"en": "Which anime would be perfect for a sleepover with friends?",
+"de": "Welcher Anime wäre perfekt für einen Filmabend mit Freunden?",
+"es": "¿Qué anime sería perfecto para una noche de pelis con amigos?",
+"fr": "Quel anime serait parfait pour une soirée entre amis ?",
+"it": "Quale anime sarebbe perfetto per una serata tra amici?",
+"pt": "Que anime seria perfeito para uma noite de filmes com amigos?",
+"pt_BR": "Qual anime seria perfeito para uma noite de filmes com os amigos?"
+}
+},
+{
+"id": "anime-062",
+"lv": "beginner",
+"i18n": {
+"en": "Do you know what a mangaka does? Would you like that job?",
+"de": "Weißt du, was ein Mangaka macht? Hättest du Lust auf diesen Beruf?",
+"es": "¿Sabes qué hace un mangaka? ¿Te gustaría ese trabajo?",
+"fr": "Sais-tu ce que fait un mangaka ? Aimerais-tu ce métier ?",
+"it": "Sai cosa fa un mangaka? Ti piacerebbe quel lavoro?",
+"pt": "Sabes o que faz um mangaká? Gostavas desse trabalho?",
+"pt_BR": "Você sabe o que faz um mangaká? Gostaria desse trabalho?"
+}
+},
+{
+"id": "anime-063",
+"lv": "beginner",
+"i18n": {
+"en": "Which anime hairstyle would you love to try?",
+"de": "Welche Anime-Frisur würdest du gern einmal ausprobieren?",
+"es": "¿Qué peinado de anime te encantaría probar?",
+"fr": "Quelle coiffure d'anime aimerais-tu essayer ?",
+"it": "Quale acconciatura da anime ti piacerebbe provare?",
+"pt": "Que penteado de anime gostavas de experimentar?",
+"pt_BR": "Qual penteado de anime você adoraria experimentar?"
+}
+},
+{
+"id": "anime-064",
+"lv": "beginner",
+"i18n": {
+"en": "What anime are you planning to watch next?",
+"de": "Welchen Anime willst du als Nächstes schauen?",
+"es": "¿Qué anime piensas ver a continuación?",
+"fr": "Quel anime comptes-tu regarder ensuite ?",
+"it": "Quale anime pensi di guardare dopo?",
+"pt": "Que anime estás a pensar ver a seguir?",
+"pt_BR": "Qual anime você pretende assistir em seguida?"
+}
+},
+{
+"id": "anime-065",
+"lv": "beginner",
+"i18n": {
+"en": "Is there a Japanese custom from anime you'd like to try?",
+"de": "Gibt es einen japanischen Brauch aus Anime, den du gern ausprobieren würdest?",
+"es": "¿Hay alguna costumbre japonesa vista en anime que te gustaría probar?",
+"fr": "Y a-t-il une coutume japonaise vue dans un anime que tu aimerais essayer ?",
+"it": "C'è un'usanza giapponese vista negli anime che vorresti provare?",
+"pt": "Há algum costume japonês visto em anime que gostavas de experimentar?",
+"pt_BR": "Tem algum costume japonês visto em anime que você gostaria de experimentar?"
+}
+},
+{
+"id": "anime-066",
+"lv": "intermediate",
+"i18n": {
+"en": "Which anime studio's style do you recognise straight away?",
+"de": "Den Stil welches Anime-Studios erkennst du sofort?",
+"es": "¿El estilo de qué estudio de anime reconoces enseguida?",
+"fr": "Le style de quel studio d'animation reconnais-tu tout de suite ?",
+"it": "Lo stile di quale studio di animazione riconosci subito?",
+"pt": "O estilo de que estúdio de anime reconheces logo?",
+"pt_BR": "O estilo de qual estúdio de anime você reconhece na hora?"
+}
+},
+{
+"id": "anime-067",
+"lv": "intermediate",
+"i18n": {
+"en": "Do you prefer the manga or the anime version of a story you know?",
+"de": "Magst du bei einer Geschichte, die du kennst, lieber den Manga oder den Anime?",
+"es": "¿Prefieres la versión manga o anime de una historia que conoces?",
+"fr": "Préfères-tu la version manga ou anime d'une histoire que tu connais ?",
+"it": "Preferisci la versione manga o anime di una storia che conosci?",
+"pt": "Preferes a versão manga ou anime de uma história que conheces?",
+"pt_BR": "Você prefere a versão mangá ou anime de uma história que conhece?"
+}
+},
+{
+"id": "anime-068",
+"lv": "intermediate",
+"i18n": {
+"en": "Which anime character grew the most over their series?",
+"de": "Welche Anime-Figur hat sich im Laufe ihrer Serie am meisten entwickelt?",
+"es": "¿Qué personaje de anime evolucionó más a lo largo de su serie?",
+"fr": "Quel personnage d'anime a le plus évolué au fil de sa série ?",
+"it": "Quale personaggio anime è cresciuto di più nel corso della sua serie?",
+"pt": "Que personagem de anime evoluiu mais ao longo da sua série?",
+"pt_BR": "Qual personagem de anime mais evoluiu ao longo da série?"
+}
+},
+{
+"id": "anime-069",
+"lv": "intermediate",
+"i18n": {
+"en": "What do you think makes a slice-of-life anime so relaxing?",
+"de": "Was macht Slice-of-Life-Anime deiner Meinung nach so entspannend?",
+"es": "¿Qué crees que hace tan relajante a un anime de recuentos de la vida?",
+"fr": "Selon toi, qu'est-ce qui rend un anime tranche de vie si apaisant ?",
+"it": "Secondo te, cosa rende così rilassante un anime slice of life?",
+"pt": "O que achas que torna um anime slice of life tão relaxante?",
+"pt_BR": "O que você acha que torna um anime slice of life tão relaxante?"
+}
+},
+{
+"id": "anime-070",
+"lv": "intermediate",
+"i18n": {
+"en": "Which anime showed you something new about daily life in Japan?",
+"de": "Welcher Anime hat dir etwas Neues über den Alltag in Japan gezeigt?",
+"es": "¿Qué anime te mostró algo nuevo sobre la vida diaria en Japón?",
+"fr": "Quel anime t'a fait découvrir quelque chose de la vie quotidienne au Japon ?",
+"it": "Quale anime ti ha mostrato qualcosa di nuovo sulla vita quotidiana in Giappone?",
+"pt": "Que anime te mostrou algo novo sobre o dia a dia no Japão?",
+"pt_BR": "Qual anime mostrou algo novo para você sobre o dia a dia no Japão?"
+}
+},
+{
+"id": "anime-071",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you feel when a dub changes jokes to fit your language?",
+"de": "Wie findest du es, wenn eine Synchronfassung Witze an deine Sprache anpasst?",
+"es": "¿Qué te parece cuando un doblaje adapta los chistes a tu idioma?",
+"fr": "Que penses-tu quand un doublage adapte les blagues à ta langue ?",
+"it": "Cosa pensi quando un doppiaggio adatta le battute alla tua lingua?",
+"pt": "O que achas quando uma dobragem adapta as piadas à tua língua?",
+"pt_BR": "O que você acha quando uma dublagem adapta as piadas para o seu idioma?"
+}
+},
+{
+"id": "anime-072",
+"lv": "intermediate",
+"i18n": {
+"en": "Which anime would you choose to show what animation can really do?",
+"de": "Welchen Anime würdest du zeigen, um zu beweisen, was Animation kann?",
+"es": "¿Qué anime elegirías para mostrar todo lo que puede hacer la animación?",
+"fr": "Quel anime choisirais-tu pour montrer tout ce que l'animation peut faire ?",
+"it": "Quale anime sceglieresti per mostrare cosa può fare davvero l'animazione?",
+"pt": "Que anime escolherias para mostrar o que a animação consegue fazer?",
+"pt_BR": "Qual anime você escolheria para mostrar o que a animação é capaz de fazer?"
+}
+},
+{
+"id": "anime-073",
+"lv": "intermediate",
+"i18n": {
+"en": "Do you follow new anime each season or catch up later?",
+"de": "Verfolgst du neue Anime jede Season oder holst du sie später nach?",
+"es": "¿Sigues los animes nuevos cada temporada o los ves más tarde?",
+"fr": "Suis-tu les nouveaux animes chaque saison ou les rattrapes-tu plus tard ?",
+"it": "Segui i nuovi anime ogni stagione o li recuperi dopo?",
+"pt": "Acompanhas os animes novos de cada temporada ou vês mais tarde?",
+"pt_BR": "Você acompanha os animes novos de cada temporada ou assiste depois?"
+}
+},
+{
+"id": "anime-074",
+"lv": "intermediate",
+"i18n": {
+"en": "Which anime director's films would you like to watch all of?",
+"de": "Von welchem Anime-Regisseur würdest du gern alle Filme sehen?",
+"es": "¿De qué director de anime te gustaría ver todas las películas?",
+"fr": "De quel réalisateur d'anime aimerais-tu voir tous les films ?",
+"it": "Di quale regista anime vorresti vedere tutti i film?",
+"pt": "De que realizador de anime gostavas de ver todos os filmes?",
+"pt_BR": "De qual diretor de anime você gostaria de assistir a todos os filmes?"
+}
+},
+{
+"id": "anime-075",
+"lv": "intermediate",
+"i18n": {
+"en": "Which voice actor or actress do you love hearing in anime?",
+"de": "Welchen Synchronsprecher oder welche Sprecherin hörst du in Anime besonders gern?",
+"es": "¿Qué actor o actriz de voz te encanta escuchar en el anime?",
+"fr": "Quel comédien ou quelle comédienne de doublage aimes-tu entendre dans les animes ?",
+"it": "Quale doppiatore o doppiatrice ami sentire negli anime?",
+"pt": "Que ator ou atriz de voz adoras ouvir nos animes?",
+"pt_BR": "Qual dublador ou dubladora você adora ouvir nos animes?"
+}
+},
+{
+"id": "anime-076",
+"lv": "intermediate",
+"i18n": {
+"en": "Have you ever tried cosplay or would you like to? Which character?",
+"de": "Hast du schon einmal Cosplay gemacht oder hättest du Lust? Welche Figur?",
+"es": "¿Has hecho cosplay alguna vez o te gustaría? ¿De qué personaje?",
+"fr": "As-tu déjà fait du cosplay ou aimerais-tu essayer ? Quel personnage ?",
+"it": "Hai mai fatto cosplay o ti piacerebbe? Di quale personaggio?",
+"pt": "Já fizeste cosplay ou gostavas de fazer? De que personagem?",
+"pt_BR": "Você já fez cosplay ou gostaria de fazer? De qual personagem?"
+}
+},
+{
+"id": "anime-077",
+"lv": "intermediate",
+"i18n": {
+"en": "Which sports or hobby anime inspired you to try something new?",
+"de": "Welcher Sport- oder Hobby-Anime hat dich inspiriert, etwas Neues auszuprobieren?",
+"es": "¿Qué anime de deportes o aficiones te inspiró a probar algo nuevo?",
+"fr": "Quel anime de sport ou de loisir t'a donné envie d'essayer quelque chose de nouveau ?",
+"it": "Quale anime di sport o di hobby ti ha spinto a provare qualcosa di nuovo?",
+"pt": "Que anime de desporto ou passatempo te inspirou a experimentar algo novo?",
+"pt_BR": "Qual anime de esporte ou hobby inspirou você a experimentar algo novo?"
+}
+},
+{
+"id": "anime-078",
+"lv": "intermediate",
+"i18n": {
+"en": "What anime background or setting would you love to paint?",
+"de": "Welchen Anime-Hintergrund oder Schauplatz würdest du gern malen?",
+"es": "¿Qué fondo o escenario de anime te encantaría pintar?",
+"fr": "Quel décor d'anime aimerais-tu peindre ?",
+"it": "Quale sfondo o ambientazione anime ti piacerebbe dipingere?",
+"pt": "Que cenário de anime gostavas de pintar?",
+"pt_BR": "Qual cenário de anime você adoraria pintar?"
+}
+},
+{
+"id": "anime-079",
+"lv": "intermediate",
+"i18n": {
+"en": "Which anime would you recommend to someone learning Japanese?",
+"de": "Welchen Anime würdest du jemandem empfehlen, der Japanisch lernt?",
+"es": "¿Qué anime le recomendarías a alguien que aprende japonés?",
+"fr": "Quel anime recommanderais-tu à quelqu'un qui apprend le japonais ?",
+"it": "Quale anime consiglieresti a chi studia giapponese?",
+"pt": "Que anime recomendarias a alguém que está a aprender japonês?",
+"pt_BR": "Qual anime você recomendaria para alguém que está aprendendo japonês?"
+}
+},
+{
+"id": "anime-080",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you feel about long-running series with hundreds of episodes?",
+"de": "Was hältst du von langen Serien mit Hunderten von Folgen?",
+"es": "¿Qué opinas de las series largas con cientos de episodios?",
+"fr": "Que penses-tu des séries très longues avec des centaines d'épisodes ?",
+"it": "Cosa pensi delle serie lunghissime con centinaia di episodi?",
+"pt": "O que achas das séries longas com centenas de episódios?",
+"pt_BR": "O que você acha das séries longas com centenas de episódios?"
+}
+},
+{
+"id": "anime-081",
+"lv": "intermediate",
+"i18n": {
+"en": "Which anime used music in a way that really moved you?",
+"de": "Welcher Anime hat Musik so eingesetzt, dass sie dich wirklich berührt hat?",
+"es": "¿Qué anime usó la música de una forma que te emocionó de verdad?",
+"fr": "Quel anime a utilisé la musique d'une façon qui t'a vraiment touché ?",
+"it": "Quale anime ha usato la musica in un modo che ti ha davvero emozionato?",
+"pt": "Que anime usou a música de uma forma que te emocionou mesmo?",
+"pt_BR": "Qual anime usou a música de um jeito que realmente emocionou você?"
+}
+},
+{
+"id": "anime-082",
+"lv": "intermediate",
+"i18n": {
+"en": "Which Japanese festival or tradition from anime would you love to join?",
+"de": "An welchem japanischen Fest oder Brauch aus Anime würdest du gern teilnehmen?",
+"es": "¿En qué festival o tradición japonesa vista en anime te encantaría participar?",
+"fr": "À quelle fête ou tradition japonaise vue dans un anime aimerais-tu participer ?",
+"it": "A quale festa o tradizione giapponese vista negli anime vorresti partecipare?",
+"pt": "Em que festival ou tradição japonesa vista em anime gostavas de participar?",
+"pt_BR": "De qual festival ou tradição japonesa vista em anime você adoraria participar?"
+}
+},
+{
+"id": "anime-083",
+"lv": "intermediate",
+"i18n": {
+"en": "What do you think makes an anime opening truly memorable?",
+"de": "Was macht ein Anime-Opening deiner Meinung nach unvergesslich?",
+"es": "¿Qué crees que hace que un opening de anime sea inolvidable?",
+"fr": "Selon toi, qu'est-ce qui rend un générique d'anime inoubliable ?",
+"it": "Secondo te, cosa rende davvero memorabile la sigla di un anime?",
+"pt": "O que achas que torna um genérico de anime inesquecível?",
+"pt_BR": "O que você acha que torna uma abertura de anime inesquecível?"
+}
+},
+{
+"id": "anime-084",
+"lv": "intermediate",
+"i18n": {
+"en": "Which manga would you love to see adapted into an anime?",
+"de": "Welchen Manga würdest du gern als Anime sehen?",
+"es": "¿Qué manga te encantaría ver adaptado al anime?",
+"fr": "Quel manga aimerais-tu voir adapté en anime ?",
+"it": "Quale manga ti piacerebbe vedere trasformato in anime?",
+"pt": "Que manga gostavas de ver adaptada a anime?",
+"pt_BR": "Qual mangá você adoraria ver adaptado em anime?"
+}
+},
+{
+"id": "anime-085",
+"lv": "intermediate",
+"i18n": {
+"en": "How has anime changed the way you see your own culture?",
+"de": "Wie hat Anime deinen Blick auf deine eigene Kultur verändert?",
+"es": "¿Cómo ha cambiado el anime tu forma de ver tu propia cultura?",
+"fr": "Comment les animes ont-ils changé ta façon de voir ta propre culture ?",
+"it": "In che modo gli anime hanno cambiato il tuo modo di vedere la tua cultura?",
+"pt": "De que forma o anime mudou a tua maneira de ver a tua própria cultura?",
+"pt_BR": "Como os animes mudaram o seu jeito de ver a sua própria cultura?"
+}
+},
+{
+"id": "anime-086",
+"lv": "advanced",
+"i18n": {
+"en": "What do you look for when you analyse an anime scene closely?",
+"de": "Worauf achtest du, wenn du eine Anime-Szene genau analysierst?",
+"es": "¿En qué te fijas cuando analizas con detalle una escena de anime?",
+"fr": "À quoi fais-tu attention quand tu analyses de près une scène d'anime ?",
+"it": "A cosa fai attenzione quando analizzi da vicino una scena anime?",
+"pt": "Em que reparas quando analisas de perto uma cena de anime?",
+"pt_BR": "No que você presta atenção quando analisa de perto uma cena de anime?"
+}
+},
+{
+"id": "anime-087",
+"lv": "advanced",
+"i18n": {
+"en": "How do you think Studio Ghibli changed animation around the world?",
+"de": "Wie hat Studio Ghibli deiner Meinung nach die Animation weltweit verändert?",
+"es": "¿Cómo crees que el Studio Ghibli cambió la animación en todo el mundo?",
+"fr": "Comment le Studio Ghibli a-t-il changé l'animation dans le monde, selon toi ?",
+"it": "Secondo te, come ha cambiato lo Studio Ghibli l'animazione nel mondo?",
+"pt": "Como achas que o Studio Ghibli mudou a animação no mundo?",
+"pt_BR": "Como você acha que o Studio Ghibli mudou a animação no mundo?"
+}
+},
+{
+"id": "anime-088",
+"lv": "advanced",
+"i18n": {
+"en": "Which quiet moment in an anime said more than any dialogue could?",
+"de": "Welcher stille Moment in einem Anime sagte mehr als jeder Dialog?",
+"es": "¿Qué momento de silencio en un anime dijo más que cualquier diálogo?",
+"fr": "Quel moment de silence dans un anime en disait plus que n'importe quel dialogue ?",
+"it": "Quale momento di silenzio in un anime ha detto più di qualsiasi dialogo?",
+"pt": "Que momento de silêncio num anime disse mais do que qualquer diálogo?",
+"pt_BR": "Qual momento de silêncio num anime disse mais do que qualquer diálogo?"
+}
+},
+{
+"id": "anime-089",
+"lv": "advanced",
+"i18n": {
+"en": "What changes have you noticed between classic and modern anime?",
+"de": "Welche Unterschiede bemerkst du zwischen klassischen und modernen Anime?",
+"es": "¿Qué cambios has notado entre el anime clásico y el moderno?",
+"fr": "Quels changements as-tu remarqués entre les animes classiques et modernes ?",
+"it": "Quali cambiamenti hai notato tra gli anime classici e quelli moderni?",
+"pt": "Que mudanças notaste entre o anime clássico e o moderno?",
+"pt_BR": "Que mudanças você notou entre o anime clássico e o moderno?"
+}
+},
+{
+"id": "anime-090",
+"lv": "advanced",
+"i18n": {
+"en": "Which anime would you include in a list of essential titles for newcomers?",
+"de": "Welche Anime gehören für dich auf eine Liste mit Pflichttiteln für Neulinge?",
+"es": "¿Qué animes incluirías en una lista de títulos esenciales para principiantes?",
+"fr": "Quels animes mettrais-tu dans une liste de titres essentiels pour débutants ?",
+"it": "Quali anime metteresti in una lista di titoli essenziali per chi inizia?",
+"pt": "Que animes incluirias numa lista de títulos essenciais para quem está a começar?",
+"pt_BR": "Quais animes você incluiria numa lista de títulos essenciais para iniciantes?"
+}
+},
+{
+"id": "anime-091",
+"lv": "advanced",
+"i18n": {
+"en": "How does colour help tell the story in your favourite anime film?",
+"de": "Wie hilft Farbe, die Geschichte in deinem liebsten Anime-Film zu erzählen?",
+"es": "¿Cómo ayuda el color a contar la historia en tu película de anime favorita?",
+"fr": "Comment la couleur aide-t-elle à raconter l'histoire dans ton film d'animation préféré ?",
+"it": "In che modo il colore aiuta a raccontare la storia nel tuo film anime preferito?",
+"pt": "De que forma a cor ajuda a contar a história no teu filme de anime preferido?",
+"pt_BR": "Como a cor ajuda a contar a história no seu filme de anime favorito?"
+}
+},
+{
+"id": "anime-092",
+"lv": "advanced",
+"i18n": {
+"en": "What do you think an adaptation should keep from the original manga?",
+"de": "Was sollte eine Adaption deiner Meinung nach vom Original-Manga beibehalten?",
+"es": "¿Qué crees que debería conservar una adaptación del manga original?",
+"fr": "Selon toi, que doit garder une adaptation du manga original ?",
+"it": "Secondo te, cosa dovrebbe mantenere un adattamento del manga originale?",
+"pt": "O que achas que uma adaptação deve manter da manga original?",
+"pt_BR": "O que você acha que uma adaptação deve manter do mangá original?"
+}
+},
+{
+"id": "anime-093",
+"lv": "advanced",
+"i18n": {
+"en": "If you could pitch your own anime, what would the story be?",
+"de": "Wenn du deinen eigenen Anime vorschlagen könntest, worum ginge es?",
+"es": "Si pudieras proponer tu propio anime, ¿de qué trataría la historia?",
+"fr": "Si tu pouvais proposer ton propre anime, quelle serait l'histoire ?",
+"it": "Se potessi proporre un tuo anime, di cosa parlerebbe la storia?",
+"pt": "Se pudesses propor o teu próprio anime, qual seria a história?",
+"pt_BR": "Se você pudesse propor o seu próprio anime, qual seria a história?"
+}
+},
+{
+"id": "anime-094",
+"lv": "advanced",
+"i18n": {
+"en": "Which anime creator's career do you find most inspiring?",
+"de": "Welche Karriere eines Anime-Schaffenden findest du am inspirierendsten?",
+"es": "¿Qué trayectoria de un creador de anime te parece más inspiradora?",
+"fr": "Quel parcours de créateur d'anime trouves-tu le plus inspirant ?",
+"it": "Quale carriera di un autore di anime trovi più stimolante?",
+"pt": "Que percurso de um criador de anime achas mais inspirador?",
+"pt_BR": "Qual trajetória de criador de anime você acha mais inspiradora?"
+}
+},
+{
+"id": "anime-095",
+"lv": "advanced",
+"i18n": {
+"en": "How has streaming changed the way people around the world enjoy anime?",
+"de": "Wie hat Streaming verändert, wie Menschen weltweit Anime genießen?",
+"es": "¿Cómo ha cambiado el streaming la forma en que el mundo disfruta del anime?",
+"fr": "Comment le streaming a-t-il changé la façon dont le monde profite des animes ?",
+"it": "In che modo lo streaming ha cambiato il modo in cui il mondo vive gli anime?",
+"pt": "De que forma o streaming mudou a maneira como o mundo vê anime?",
+"pt_BR": "Como o streaming mudou o jeito como o mundo curte anime?"
+}
+},
+{
+"id": "anime-096",
+"lv": "advanced",
+"i18n": {
+"en": "Which anime would you rewatch to discover details you missed?",
+"de": "Welchen Anime würdest du erneut schauen, um übersehene Details zu entdecken?",
+"es": "¿Qué anime volverías a ver para descubrir detalles que se te escaparon?",
+"fr": "Quel anime reverrais-tu pour découvrir des détails qui t'ont échappé ?",
+"it": "Quale anime riguarderesti per scoprire dettagli che ti erano sfuggiti?",
+"pt": "Que anime voltavas a ver para descobrir detalhes que te escaparam?",
+"pt_BR": "Qual anime você assistiria de novo para descobrir detalhes que passaram batido?"
+}
+},
+{
+"id": "anime-097",
+"lv": "advanced",
+"i18n": {
+"en": "What makes a background painting feel alive to you?",
+"de": "Was lässt ein gemaltes Hintergrundbild für dich lebendig wirken?",
+"es": "¿Qué hace que un fondo pintado te parezca vivo?",
+"fr": "Qu'est-ce qui rend un décor peint vivant à tes yeux ?",
+"it": "Cosa rende vivo per te uno sfondo dipinto?",
+"pt": "O que faz um cenário pintado parecer vivo para ti?",
+"pt_BR": "O que faz um cenário pintado parecer vivo para você?"
+}
+},
+{
+"id": "anime-098",
+"lv": "advanced",
+"i18n": {
+"en": "How would you explain the value of anime to someone who doubts it?",
+"de": "Wie würdest du jemandem, der zweifelt, den Wert von Anime erklären?",
+"es": "¿Cómo le explicarías el valor del anime a alguien que tiene dudas?",
+"fr": "Comment expliquerais-tu la valeur des animes à quelqu'un de sceptique ?",
+"it": "Come spiegheresti il valore degli anime a qualcuno che ha dei dubbi?",
+"pt": "Como explicarias o valor do anime a alguém que tem dúvidas?",
+"pt_BR": "Como você explicaria o valor dos animes para alguém que tem dúvidas?"
+}
+},
+{
+"id": "anime-099",
+"lv": "advanced",
+"i18n": {
+"en": "Which anime do you think will still be loved in fifty years?",
+"de": "Welcher Anime wird deiner Meinung nach in fünfzig Jahren noch geliebt?",
+"es": "¿Qué anime crees que seguirá siendo querido dentro de cincuenta años?",
+"fr": "Quel anime sera encore aimé dans cinquante ans, selon toi ?",
+"it": "Quale anime secondo te sarà ancora amato tra cinquant'anni?",
+"pt": "Que anime achas que ainda vai ser adorado daqui a cinquenta anos?",
+"pt_BR": "Qual anime você acha que ainda vai ser amado daqui a cinquenta anos?"
+}
+},
+{
+"id": "anime-100",
+"lv": "advanced",
+"i18n": {
+"en": "How would you describe your journey as an anime fan in three words?",
+"de": "Wie würdest du deine Reise als Anime-Fan in drei Worten beschreiben?",
+"es": "¿Cómo describirías tu camino como fan del anime en tres palabras?",
+"fr": "Comment décrirais-tu ton parcours de fan d'anime en trois mots ?",
+"it": "Come descriveresti il tuo percorso da fan degli anime in tre parole?",
+"pt": "Como descreverias o teu percurso como fã de anime em três palavras?",
+"pt_BR": "Como você descreveria a sua jornada como fã de anime em três palavras?"
+}
+}
+]
+}

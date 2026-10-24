@@ -1,0 +1,2195 @@
+{
+"topic": "books",
+"days": [
+{
+"d": 1,
+"lv": "beginner",
+"t": "Why we read: the joys of books",
+"f": "How reading builds imagination, empathy, knowledge and relaxation in everyday life"
+},
+{
+"d": 2,
+"lv": "beginner",
+"t": "Your reader profile",
+"f": "Discovering what you already enjoy: topics, moods, lengths and formats that pull you in"
+},
+{
+"d": 3,
+"lv": "beginner",
+"t": "Fiction and nonfiction",
+"f": "The two great families of books and what each one offers a reader"
+},
+{
+"d": 4,
+"lv": "beginner",
+"t": "Anatomy of a book",
+"f": "Cover, blurb, title page, contents, chapters and what each part tells you"
+},
+{
+"d": 5,
+"lv": "beginner",
+"t": "How to pick a book in a shop",
+"f": "Using covers, first pages, blurbs and staff picks to choose wisely"
+},
+{
+"d": 6,
+"lv": "beginner",
+"t": "Libraries: your free superpower",
+"f": "Library cards, borrowing, holds, e-lending and the help librarians offer"
+},
+{
+"d": 7,
+"lv": "beginner",
+"t": "Paper, e-reader or audiobook?",
+"f": "Comparing formats and finding the one that fits your day"
+},
+{
+"d": 8,
+"lv": "beginner",
+"t": "Building a daily reading habit",
+"f": "Small goals, fixed moments and habit stacking to read a little every day"
+},
+{
+"d": 9,
+"lv": "beginner",
+"t": "Finding time to read",
+"f": "Commutes, lunch breaks, waiting rooms and bedtime as hidden reading time"
+},
+{
+"d": 10,
+"lv": "beginner",
+"t": "The perfect reading spot",
+"f": "Light, comfort, quiet and phone-free zones that help you focus"
+},
+{
+"d": 11,
+"lv": "beginner",
+"t": "What is a novel?",
+"f": "Length, invented characters and story arcs that define the novel form"
+},
+{
+"d": 12,
+"lv": "beginner",
+"t": "Short stories: big worlds, few pages",
+"f": "Why short stories suit busy readers and how they work"
+},
+{
+"d": 13,
+"lv": "beginner",
+"t": "Meet the main character",
+"f": "Protagonists, what they want and why we follow them through a story"
+},
+{
+"d": 14,
+"lv": "beginner",
+"t": "Plot basics: beginning, middle, end",
+"f": "How stories set up a situation, build tension and reach a resolution"
+},
+{
+"d": 15,
+"lv": "beginner",
+"t": "Setting: where and when",
+"f": "How time and place shape the mood and events of a book"
+},
+{
+"d": 16,
+"lv": "beginner",
+"t": "Who is telling the story?",
+"f": "First person, third person and how the narrator changes what we see"
+},
+{
+"d": 17,
+"lv": "beginner",
+"t": "Theme: what a book is really about",
+"f": "Looking past the plot to the big ideas a story explores"
+},
+{
+"d": 18,
+"lv": "beginner",
+"t": "Dialogue that sounds alive",
+"f": "How conversations reveal character and move the story forward"
+},
+{
+"d": 19,
+"lv": "beginner",
+"t": "Reading for pleasure vs study",
+"f": "Why both are valid and how to switch between relaxed and careful reading"
+},
+{
+"d": 20,
+"lv": "beginner",
+"t": "Keeping a reading journal",
+"f": "Simple notes, favourite quotes and quick ratings to remember what you read"
+},
+{
+"d": 21,
+"lv": "beginner",
+"t": "Children's classics we never outgrow",
+"f": "Books like Alice in Wonderland and The Little Prince and why adults reread them"
+},
+{
+"d": 22,
+"lv": "beginner",
+"t": "Fairy tales around the world",
+"f": "Grimm, Perrault, Andersen and folk tales from many cultures"
+},
+{
+"d": 23,
+"lv": "beginner",
+"t": "Fables and their morals",
+"f": "Aesop, La Fontaine and short animal stories that teach lessons"
+},
+{
+"d": 24,
+"lv": "beginner",
+"t": "Picture books as art",
+"f": "How text and illustration work together in great picture books"
+},
+{
+"d": 25,
+"lv": "beginner",
+"t": "Middle-grade adventures",
+"f": "Stories for young readers full of friendship, discovery and courage"
+},
+{
+"d": 26,
+"lv": "beginner",
+"t": "Young adult fiction",
+"f": "Coming-of-age themes and why YA attracts readers of every age"
+},
+{
+"d": 27,
+"lv": "beginner",
+"t": "Graphic novels and comics",
+"f": "Panels, speech bubbles and visual storytelling as real literature"
+},
+{
+"d": 28,
+"lv": "beginner",
+"t": "Poetry for beginners",
+"f": "Rhythm, images and short forms that make poems easy to enjoy"
+},
+{
+"d": 29,
+"lv": "beginner",
+"t": "Reading aloud",
+"f": "Why reading aloud helps understanding, memory and sharing stories"
+},
+{
+"d": 30,
+"lv": "beginner",
+"t": "Review: your first month of reading",
+"f": "Looking back at formats, habits and story basics from days 1 to 29"
+},
+{
+"d": 31,
+"lv": "beginner",
+"t": "Genres: a map of the bookshop",
+"f": "How genres help readers find books and why many books mix them"
+},
+{
+"d": 32,
+"lv": "beginner",
+"t": "Mystery: the joy of the puzzle",
+"f": "Clues, red herrings and the satisfying reveal of a good whodunit"
+},
+{
+"d": 33,
+"lv": "beginner",
+"t": "Agatha Christie's clever plots",
+"f": "Poirot, Miss Marple and the tricks of the queen of mystery"
+},
+{
+"d": 34,
+"lv": "beginner",
+"t": "Sherlock Holmes and deduction",
+"f": "Arthur Conan Doyle's detective and the art of observation"
+},
+{
+"d": 35,
+"lv": "beginner",
+"t": "Science fiction: asking what if",
+"f": "Imagining future technology, space and society to reflect on today"
+},
+{
+"d": 36,
+"lv": "beginner",
+"t": "Jules Verne's voyages",
+"f": "Adventures under the sea, around the world and to the moon"
+},
+{
+"d": 37,
+"lv": "beginner",
+"t": "Fantasy: worlds of wonder",
+"f": "Magic, invented maps and quests that define the fantasy genre"
+},
+{
+"d": 38,
+"lv": "beginner",
+"t": "Tolkien and Middle-earth",
+"f": "The Hobbit, The Lord of the Rings and the birth of modern fantasy"
+},
+{
+"d": 39,
+"lv": "beginner",
+"t": "Historical fiction",
+"f": "Novels that bring past eras alive through invented characters"
+},
+{
+"d": 40,
+"lv": "beginner",
+"t": "Adventure classics",
+"f": "Treasure Island, Robinson Crusoe and stories of travel and survival"
+},
+{
+"d": 41,
+"lv": "beginner",
+"t": "Humour books",
+"f": "Comic novels and funny essays that make reading a laugh"
+},
+{
+"d": 42,
+"lv": "beginner",
+"t": "Feel-good fiction",
+"f": "Warm, cosy stories about kindness, community and second chances"
+},
+{
+"d": 43,
+"lv": "beginner",
+"t": "Literary fiction",
+"f": "Books focused on character, style and ideas more than plot twists"
+},
+{
+"d": 44,
+"lv": "beginner",
+"t": "Memoirs and autobiographies",
+"f": "True life stories told by the people who lived them"
+},
+{
+"d": 45,
+"lv": "beginner",
+"t": "Biographies",
+"f": "Life stories of famous people written by researchers and writers"
+},
+{
+"d": 46,
+"lv": "beginner",
+"t": "Popular science books",
+"f": "Books that explain the universe, nature and the brain for everyone"
+},
+{
+"d": 47,
+"lv": "beginner",
+"t": "History books for curious readers",
+"f": "Narrative history that reads like a story"
+},
+{
+"d": 48,
+"lv": "beginner",
+"t": "Travel writing",
+"f": "Books that take you to faraway places through a writer's eyes"
+},
+{
+"d": 49,
+"lv": "beginner",
+"t": "Self-help and personal growth",
+"f": "How to read self-improvement books critically and keep what helps"
+},
+{
+"d": 50,
+"lv": "beginner",
+"t": "Essays: thinking on the page",
+"f": "Montaigne and the short, personal form of the essay"
+},
+{
+"d": 51,
+"lv": "beginner",
+"t": "Cookbooks as reading",
+"f": "Recipes, food stories and culture inside cookbooks"
+},
+{
+"d": 52,
+"lv": "beginner",
+"t": "Nature writing",
+"f": "Books about landscapes, animals and the natural world"
+},
+{
+"d": 53,
+"lv": "beginner",
+"t": "Trying a new genre",
+"f": "Stepping outside your comfort zone with a short, friendly title"
+},
+{
+"d": 54,
+"lv": "beginner",
+"t": "Book series: why we binge",
+"f": "Following characters across books and how series hook readers"
+},
+{
+"d": 55,
+"lv": "beginner",
+"t": "Standalone vs series",
+"f": "The pleasures of a complete story versus a long saga"
+},
+{
+"d": 56,
+"lv": "beginner",
+"t": "Spoilers and how to avoid them",
+"f": "Enjoying surprises and talking about books without ruining them"
+},
+{
+"d": 57,
+"lv": "beginner",
+"t": "Reading ratings and reviews",
+"f": "Using online reviews and star ratings without being misled"
+},
+{
+"d": 58,
+"lv": "beginner",
+"t": "Writing your first mini review",
+"f": "A simple formula: what it is about, what worked, who would like it"
+},
+{
+"d": 59,
+"lv": "beginner",
+"t": "Inspiring reading quotes",
+"f": "Famous lines about books and what they say about readers"
+},
+{
+"d": 60,
+"lv": "beginner",
+"t": "Review: genres and formats",
+"f": "Recap of genres and nonfiction types from days 31 to 59"
+},
+{
+"d": 61,
+"lv": "beginner",
+"t": "What makes a book a classic?",
+"f": "Lasting influence, universal themes and why classics still speak to us"
+},
+{
+"d": 62,
+"lv": "beginner",
+"t": "Don't fear the classics",
+"f": "Tips for tackling older books: good editions, notes and patience"
+},
+{
+"d": 63,
+"lv": "beginner",
+"t": "Homer and the epic",
+"f": "The Iliad, the Odyssey and the long journey of Odysseus home"
+},
+{
+"d": 64,
+"lv": "beginner",
+"t": "Greek myths retold",
+"f": "Why ancient myths keep inspiring new novels today"
+},
+{
+"d": 65,
+"lv": "beginner",
+"t": "Shakespeare for beginners",
+"f": "Comedies, sonnets and why his words are still everywhere"
+},
+{
+"d": 66,
+"lv": "beginner",
+"t": "A Midsummer Night's Dream",
+"f": "Magic, mix-ups and comedy in Shakespeare's playful forest"
+},
+{
+"d": 67,
+"lv": "beginner",
+"t": "Don Quixote: the first modern novel",
+"f": "Cervantes' dreaming knight and his loyal squire Sancho Panza"
+},
+{
+"d": 68,
+"lv": "beginner",
+"t": "Robinson Crusoe and the early novel",
+"f": "Daniel Defoe and the rise of the novel in the 1700s"
+},
+{
+"d": 69,
+"lv": "beginner",
+"t": "Gulliver's Travels",
+"f": "Jonathan Swift's satire of tiny and giant lands"
+},
+{
+"d": 70,
+"lv": "beginner",
+"t": "Jane Austen's world",
+"f": "Wit, manners and family life in Pride and Prejudice"
+},
+{
+"d": 71,
+"lv": "beginner",
+"t": "Austen's other novels",
+"f": "Emma, Sense and Sensibility and Persuasion compared"
+},
+{
+"d": 72,
+"lv": "beginner",
+"t": "The Brontë sisters",
+"f": "Charlotte, Emily and Anne and their bold novels from Yorkshire"
+},
+{
+"d": 73,
+"lv": "beginner",
+"t": "Charles Dickens",
+"f": "Memorable characters, London streets and stories published in instalments"
+},
+{
+"d": 74,
+"lv": "beginner",
+"t": "A Christmas Carol",
+"f": "Dickens' short tale of generosity and change"
+},
+{
+"d": 75,
+"lv": "beginner",
+"t": "Victor Hugo",
+"f": "Les Misérables and The Hunchback of Notre-Dame as grand novels of France"
+},
+{
+"d": 76,
+"lv": "beginner",
+"t": "Alexandre Dumas",
+"f": "The Three Musketeers and The Count of Monte Cristo as adventure classics"
+},
+{
+"d": 77,
+"lv": "beginner",
+"t": "Mark Twain",
+"f": "Tom Sawyer, Huckleberry Finn and humour along the Mississippi"
+},
+{
+"d": 78,
+"lv": "beginner",
+"t": "Little Women",
+"f": "Louisa May Alcott's four sisters, their ambitions and family warmth"
+},
+{
+"d": 79,
+"lv": "beginner",
+"t": "Lewis Carroll's wordplay",
+"f": "Nonsense, logic games and puns in Alice's adventures"
+},
+{
+"d": 80,
+"lv": "beginner",
+"t": "Pinocchio by Carlo Collodi",
+"f": "Italy's famous wooden puppet and the original story behind the legend"
+},
+{
+"d": 81,
+"lv": "beginner",
+"t": "The Little Prince",
+"f": "Antoine de Saint-Exupéry's gentle tale about seeing with the heart"
+},
+{
+"d": 82,
+"lv": "beginner",
+"t": "Heidi and the Swiss mountains",
+"f": "Johanna Spyri's story of nature, friendship and home"
+},
+{
+"d": 83,
+"lv": "beginner",
+"t": "Anne of Green Gables",
+"f": "L. M. Montgomery's imaginative orphan on Prince Edward Island"
+},
+{
+"d": 84,
+"lv": "beginner",
+"t": "Masters of the classic short story",
+"f": "Chekhov, Maupassant and O. Henry and the art of the short tale"
+},
+{
+"d": 85,
+"lv": "beginner",
+"t": "Edgar Allan Poe's detective",
+"f": "Auguste Dupin and Poe's role in creating the detective story"
+},
+{
+"d": 86,
+"lv": "beginner",
+"t": "Oscar Wilde's wit",
+"f": "Epigrams, The Importance of Being Earnest and his fairy tales"
+},
+{
+"d": 87,
+"lv": "beginner",
+"t": "H. G. Wells and early science fiction",
+"f": "The Time Machine and the first great ideas of the genre"
+},
+{
+"d": 88,
+"lv": "beginner",
+"t": "Abridged or full edition?",
+"f": "What changes when books are shortened and when that is fine"
+},
+{
+"d": 89,
+"lv": "beginner",
+"t": "Audiobook classics",
+"f": "Great narrators and why some classics shine when heard"
+},
+{
+"d": 90,
+"lv": "beginner",
+"t": "Review: meeting the classics",
+"f": "Recap of epics, novels and authors from days 61 to 89"
+},
+{
+"d": 91,
+"lv": "beginner",
+"t": "World literature: reading beyond borders",
+"f": "Why books from other cultures open new perspectives"
+},
+{
+"d": 92,
+"lv": "beginner",
+"t": "Translation: a bridge between languages",
+"f": "How translators carry meaning, style and humour into another language"
+},
+{
+"d": 93,
+"lv": "beginner",
+"t": "Russian classics made friendly",
+"f": "Tolstoy, Dostoevsky, Pushkin and tips for long Russian novels"
+},
+{
+"d": 94,
+"lv": "beginner",
+"t": "Russian names explained",
+"f": "Patronymics and nicknames so you never get lost in a Russian novel"
+},
+{
+"d": 95,
+"lv": "beginner",
+"t": "French literature highlights",
+"f": "From Molière to Proust and Camus, a quick tour of French books"
+},
+{
+"d": 96,
+"lv": "beginner",
+"t": "German-language literature",
+"f": "Goethe, the Brothers Grimm, Thomas Mann and Kafka"
+},
+{
+"d": 97,
+"lv": "beginner",
+"t": "Italian literature tour",
+"f": "Boccaccio, Manzoni, Calvino and Elena Ferrante"
+},
+{
+"d": 98,
+"lv": "beginner",
+"t": "Spanish literature tour",
+"f": "Cervantes, Lorca, Carmen Laforet and Carlos Ruiz Zafón"
+},
+{
+"d": 99,
+"lv": "beginner",
+"t": "Portuguese literature",
+"f": "Camões, Eça de Queirós, Fernando Pessoa and José Saramago"
+},
+{
+"d": 100,
+"lv": "beginner",
+"t": "Brazilian literature",
+"f": "Machado de Assis, Jorge Amado, Clarice Lispector and more"
+},
+{
+"d": 101,
+"lv": "beginner",
+"t": "The Latin American Boom",
+"f": "García Márquez, Vargas Llosa, Cortázar and Fuentes"
+},
+{
+"d": 102,
+"lv": "beginner",
+"t": "Magical realism",
+"f": "When the extraordinary is told as part of everyday life"
+},
+{
+"d": 103,
+"lv": "beginner",
+"t": "Japanese literature",
+"f": "The Tale of Genji, Natsume Sōseki and Haruki Murakami"
+},
+{
+"d": 104,
+"lv": "beginner",
+"t": "Haiku: poetry in three lines",
+"f": "Bashō and the art of capturing a single moment"
+},
+{
+"d": 105,
+"lv": "beginner",
+"t": "Chinese classics",
+"f": "Journey to the West and other great classical Chinese novels"
+},
+{
+"d": 106,
+"lv": "beginner",
+"t": "Indian literature",
+"f": "Tagore, R. K. Narayan and the great epics of India"
+},
+{
+"d": 107,
+"lv": "beginner",
+"t": "African literature",
+"f": "Chinua Achebe, Ngũgĩ wa Thiong'o and Chimamanda Ngozi Adichie"
+},
+{
+"d": 108,
+"lv": "beginner",
+"t": "Arabic literature",
+"f": "One Thousand and One Nights and the novels of Naguib Mahfouz"
+},
+{
+"d": 109,
+"lv": "beginner",
+"t": "Scandinavian storytelling",
+"f": "Andersen, Astrid Lindgren and the worldwide fame of Nordic mysteries"
+},
+{
+"d": 110,
+"lv": "beginner",
+"t": "The Nobel Prize in Literature",
+"f": "How the prize works and laureates worth discovering"
+},
+{
+"d": 111,
+"lv": "beginner",
+"t": "Other literary prizes",
+"f": "The Booker, the Pulitzer, the Goncourt and the Camões Prize"
+},
+{
+"d": 112,
+"lv": "beginner",
+"t": "Reading in a second language",
+"f": "Graded readers, parallel texts and choosing the right level"
+},
+{
+"d": 113,
+"lv": "beginner",
+"t": "Bilingual editions",
+"f": "Reading an original and its translation side by side to learn"
+},
+{
+"d": 114,
+"lv": "beginner",
+"t": "Your world reading challenge",
+"f": "Planning to read one book from each continent"
+},
+{
+"d": 115,
+"lv": "beginner",
+"t": "Book clubs: reading together",
+"f": "How book clubs work and what makes a great discussion"
+},
+{
+"d": 116,
+"lv": "beginner",
+"t": "Asking good questions about a book",
+"f": "Open questions that spark real conversations about stories"
+},
+{
+"d": 117,
+"lv": "beginner",
+"t": "Talking about books you didn't love",
+"f": "Giving honest, respectful opinions about books"
+},
+{
+"d": 118,
+"lv": "beginner",
+"t": "Recommending a book to a friend",
+"f": "Matching a book to a person's taste and mood"
+},
+{
+"d": 119,
+"lv": "beginner",
+"t": "Building your to-read list",
+"f": "Organising a list so it inspires you instead of overwhelming you"
+},
+{
+"d": 120,
+"lv": "beginner",
+"t": "Review: your beginner reading stage",
+"f": "Looking back at days 1 to 119 and choosing your next reading goals"
+},
+{
+"d": 121,
+"lv": "intermediate",
+"t": "Reading more deeply",
+"f": "Moving from what happens to how and why a book works"
+},
+{
+"d": 122,
+"lv": "intermediate",
+"t": "Character arcs",
+"f": "How characters change from the first page to the last"
+},
+{
+"d": 123,
+"lv": "intermediate",
+"t": "Round and flat characters",
+"f": "E. M. Forster's idea of complex and simple characters"
+},
+{
+"d": 124,
+"lv": "intermediate",
+"t": "Unreliable narrators",
+"f": "When the storyteller can't be fully trusted and why that is fun"
+},
+{
+"d": 125,
+"lv": "intermediate",
+"t": "Several narrators, one story",
+"f": "Books told by multiple voices and what each voice adds"
+},
+{
+"d": 126,
+"lv": "intermediate",
+"t": "Stream of consciousness",
+"f": "Virginia Woolf, James Joyce and writing the flow of thought"
+},
+{
+"d": 127,
+"lv": "intermediate",
+"t": "Foreshadowing",
+"f": "Small hints early in a book that prepare later surprises"
+},
+{
+"d": 128,
+"lv": "intermediate",
+"t": "Symbols in stories",
+"f": "Objects, colours and places that carry deeper meaning"
+},
+{
+"d": 129,
+"lv": "intermediate",
+"t": "Metaphor and simile",
+"f": "How comparisons create images and feelings"
+},
+{
+"d": 130,
+"lv": "intermediate",
+"t": "Tone and mood",
+"f": "How word choice makes a book feel playful, calm or tense"
+},
+{
+"d": 131,
+"lv": "intermediate",
+"t": "Pacing",
+"f": "Why some chapters race and others slow down"
+},
+{
+"d": 132,
+"lv": "intermediate",
+"t": "Structure: chapters and parts",
+"f": "How authors divide books and why it matters"
+},
+{
+"d": 133,
+"lv": "intermediate",
+"t": "Frame stories",
+"f": "Stories inside stories, from the Decameron to the Arabian Nights"
+},
+{
+"d": 134,
+"lv": "intermediate",
+"t": "Nonlinear timelines",
+"f": "Flashbacks, flash-forwards and stories told out of order"
+},
+{
+"d": 135,
+"lv": "intermediate",
+"t": "Openings that hook",
+"f": "Famous first lines and what they promise the reader"
+},
+{
+"d": 136,
+"lv": "intermediate",
+"t": "Endings: open or closed",
+"f": "Satisfying conclusions versus endings that leave questions"
+},
+{
+"d": 137,
+"lv": "intermediate",
+"t": "Subtext",
+"f": "What characters mean but never say out loud"
+},
+{
+"d": 138,
+"lv": "intermediate",
+"t": "Irony in literature",
+"f": "Verbal, situational and dramatic irony with examples"
+},
+{
+"d": 139,
+"lv": "intermediate",
+"t": "Satire",
+"f": "Using humour to criticise, from Swift to Orwell's Animal Farm"
+},
+{
+"d": 140,
+"lv": "intermediate",
+"t": "Allegory",
+"f": "Stories with a second meaning, from fables to Animal Farm"
+},
+{
+"d": 141,
+"lv": "intermediate",
+"t": "Archetypes",
+"f": "The mentor, the trickster and other figures found in every culture"
+},
+{
+"d": 142,
+"lv": "intermediate",
+"t": "The hero's journey",
+"f": "Joseph Campbell's pattern of departure, trials and return"
+},
+{
+"d": 143,
+"lv": "intermediate",
+"t": "Intertextuality",
+"f": "When books talk to other books through references and echoes"
+},
+{
+"d": 144,
+"lv": "intermediate",
+"t": "Retellings and rewrites",
+"f": "Modern novels that reimagine classics from new angles"
+},
+{
+"d": 145,
+"lv": "intermediate",
+"t": "Annotating a book",
+"f": "Margin notes, sticky tabs and highlighting with purpose"
+},
+{
+"d": 146,
+"lv": "intermediate",
+"t": "Close reading a paragraph",
+"f": "Slowing down to study word choice, rhythm and detail"
+},
+{
+"d": 147,
+"lv": "intermediate",
+"t": "Reading speed vs understanding",
+"f": "When to speed up, slow down or reread"
+},
+{
+"d": 148,
+"lv": "intermediate",
+"t": "Rereading favourite books",
+"f": "What changes when you return to a book years later"
+},
+{
+"d": 149,
+"lv": "intermediate",
+"t": "Beating a reading slump",
+"f": "Ways to rediscover the joy when reading feels hard"
+},
+{
+"d": 150,
+"lv": "intermediate",
+"t": "Review: tools of deep reading",
+"f": "Recap of character, structure and style tools from days 121 to 149"
+},
+{
+"d": 151,
+"lv": "intermediate",
+"t": "Literary periods: an overview",
+"f": "How literature changed from ancient times to today"
+},
+{
+"d": 152,
+"lv": "intermediate",
+"t": "Ancient storytelling",
+"f": "The Epic of Gilgamesh and the oldest written stories"
+},
+{
+"d": 153,
+"lv": "intermediate",
+"t": "Classical Greek drama",
+"f": "Comedy and tragedy in Athens and the birth of theatre"
+},
+{
+"d": 154,
+"lv": "intermediate",
+"t": "Roman authors",
+"f": "Virgil, Ovid and the many transformations of the Metamorphoses"
+},
+{
+"d": 155,
+"lv": "intermediate",
+"t": "Medieval tales",
+"f": "Chaucer's Canterbury Tales and the legends of King Arthur"
+},
+{
+"d": 156,
+"lv": "intermediate",
+"t": "The Renaissance",
+"f": "Petrarch, Shakespeare and the new spirit of humanism"
+},
+{
+"d": 157,
+"lv": "intermediate",
+"t": "The Enlightenment",
+"f": "Voltaire's Candide and books that celebrated reason"
+},
+{
+"d": 158,
+"lv": "intermediate",
+"t": "Romanticism",
+"f": "Nature, emotion and imagination in Wordsworth, Goethe and others"
+},
+{
+"d": 159,
+"lv": "intermediate",
+"t": "Realism",
+"f": "Balzac, Flaubert and novels about ordinary lives"
+},
+{
+"d": 160,
+"lv": "intermediate",
+"t": "Naturalism",
+"f": "Zola and writers who observed society like scientists"
+},
+{
+"d": 161,
+"lv": "intermediate",
+"t": "Victorian literature",
+"f": "Long novels, social change and serial publishing in Britain"
+},
+{
+"d": 162,
+"lv": "intermediate",
+"t": "The American Renaissance",
+"f": "Hawthorne, Melville, Thoreau and Emily Dickinson"
+},
+{
+"d": 163,
+"lv": "intermediate",
+"t": "Modernism",
+"f": "Experiments in form by Woolf, Joyce, Proust and Faulkner"
+},
+{
+"d": 164,
+"lv": "intermediate",
+"t": "The Lost Generation",
+"f": "Hemingway, Fitzgerald and expatriate writers in 1920s Paris"
+},
+{
+"d": 165,
+"lv": "intermediate",
+"t": "The Harlem Renaissance",
+"f": "Langston Hughes, Zora Neale Hurston and a cultural flowering"
+},
+{
+"d": 166,
+"lv": "intermediate",
+"t": "Existentialist novels",
+"f": "Camus, Sartre and stories about freedom and meaning"
+},
+{
+"d": 167,
+"lv": "intermediate",
+"t": "Postmodernism",
+"f": "Playful, self-aware books by Calvino, Borges and others"
+},
+{
+"d": 168,
+"lv": "intermediate",
+"t": "Borges' labyrinths",
+"f": "Short fictions about libraries, mirrors and infinity"
+},
+{
+"d": 169,
+"lv": "intermediate",
+"t": "Italo Calvino's imagination",
+"f": "Invisible Cities and If on a Winter's Night a Traveller"
+},
+{
+"d": 170,
+"lv": "intermediate",
+"t": "Contemporary literature trends",
+"f": "Autofiction, climate fiction and new global voices"
+},
+{
+"d": 171,
+"lv": "intermediate",
+"t": "Dystopian classics",
+"f": "Nineteen Eighty-Four, Brave New World and Fahrenheit 451"
+},
+{
+"d": 172,
+"lv": "intermediate",
+"t": "Utopias",
+"f": "Thomas More's Utopia and imagined ideal societies"
+},
+{
+"d": 173,
+"lv": "intermediate",
+"t": "Science fiction's golden age",
+"f": "Asimov, Clarke, Bradbury and big ideas about the future"
+},
+{
+"d": 174,
+"lv": "intermediate",
+"t": "Ursula K. Le Guin",
+"f": "Earthsea, The Left Hand of Darkness and thoughtful worldbuilding"
+},
+{
+"d": 175,
+"lv": "intermediate",
+"t": "Modern fantasy sagas",
+"f": "From Narnia to Earthsea and long fantasy series"
+},
+{
+"d": 176,
+"lv": "intermediate",
+"t": "Terry Pratchett's Discworld",
+"f": "Satire and big laughs wrapped in fantasy"
+},
+{
+"d": 177,
+"lv": "intermediate",
+"t": "Cosy mysteries",
+"f": "Small towns, amateur sleuths and gentle puzzles"
+},
+{
+"d": 178,
+"lv": "intermediate",
+"t": "The golden age of detective fiction",
+"f": "Christie, Sayers and the rules of fair-play mysteries"
+},
+{
+"d": 179,
+"lv": "intermediate",
+"t": "Spy novels",
+"f": "John le Carré, Ian Fleming and stories of secrets and codes"
+},
+{
+"d": 180,
+"lv": "intermediate",
+"t": "Review: periods and genres",
+"f": "Recap of literary history and genre deep dives from days 151 to 179"
+},
+{
+"d": 181,
+"lv": "intermediate",
+"t": "How poetry works",
+"f": "Lines, stanzas, sound and images in poems"
+},
+{
+"d": 182,
+"lv": "intermediate",
+"t": "Rhyme and rhythm",
+"f": "Meter, beats and why poems feel musical"
+},
+{
+"d": 183,
+"lv": "intermediate",
+"t": "The sonnet",
+"f": "Fourteen lines from Petrarch to Shakespeare"
+},
+{
+"d": 184,
+"lv": "intermediate",
+"t": "Free verse",
+"f": "Walt Whitman and poems without fixed rhyme"
+},
+{
+"d": 185,
+"lv": "intermediate",
+"t": "Great poets to start with",
+"f": "Dickinson, Neruda, Pessoa and Szymborska"
+},
+{
+"d": 186,
+"lv": "intermediate",
+"t": "Pablo Neruda's odes",
+"f": "Odes to everyday things like tomatoes and socks"
+},
+{
+"d": 187,
+"lv": "intermediate",
+"t": "Fernando Pessoa's heteronyms",
+"f": "One poet, many invented voices with their own styles"
+},
+{
+"d": 188,
+"lv": "intermediate",
+"t": "Song lyrics as poetry",
+"f": "Where music and poetry meet"
+},
+{
+"d": 189,
+"lv": "intermediate",
+"t": "Reading a poem slowly",
+"f": "A step-by-step method to enjoy any poem"
+},
+{
+"d": 190,
+"lv": "intermediate",
+"t": "Reading plays",
+"f": "How to read drama: stage directions, scenes and dialogue"
+},
+{
+"d": 191,
+"lv": "intermediate",
+"t": "Molière's comedies",
+"f": "Social comedy and memorable characters in French theatre"
+},
+{
+"d": 192,
+"lv": "intermediate",
+"t": "Chekhov's plays",
+"f": "Quiet drama and everyday life in The Cherry Orchard"
+},
+{
+"d": 193,
+"lv": "intermediate",
+"t": "Modern theatre classics",
+"f": "Ibsen, Shaw, Wilder and their famous plays"
+},
+{
+"d": 194,
+"lv": "intermediate",
+"t": "Children's literature today",
+"f": "Roald Dahl, Astrid Lindgren and modern favourites"
+},
+{
+"d": 195,
+"lv": "intermediate",
+"t": "Harry Potter as a phenomenon",
+"f": "How one series turned a generation into readers"
+},
+{
+"d": 196,
+"lv": "intermediate",
+"t": "Graphic novels as literature",
+"f": "Persepolis, Maus and award-winning comics"
+},
+{
+"d": 197,
+"lv": "intermediate",
+"t": "Manga as reading",
+"f": "Right-to-left pages and the huge world of Japanese comics"
+},
+{
+"d": 198,
+"lv": "intermediate",
+"t": "Bande dessinée",
+"f": "Tintin, Asterix and the European comics tradition"
+},
+{
+"d": 199,
+"lv": "intermediate",
+"t": "Fan fiction and reader communities",
+"f": "How fans extend stories and build communities"
+},
+{
+"d": 200,
+"lv": "intermediate",
+"t": "Day 200: your reading identity",
+"f": "Reflecting on how your tastes have grown so far"
+},
+{
+"d": 201,
+"lv": "intermediate",
+"t": "Nonfiction craft",
+"f": "How good nonfiction uses story, scenes and evidence"
+},
+{
+"d": 202,
+"lv": "intermediate",
+"t": "Narrative nonfiction",
+"f": "True stories told with the techniques of fiction"
+},
+{
+"d": 203,
+"lv": "intermediate",
+"t": "Reading science books well",
+"f": "Checking sources and separating facts from opinions"
+},
+{
+"d": 204,
+"lv": "intermediate",
+"t": "Reading history critically",
+"f": "Different perspectives on the same events"
+},
+{
+"d": 205,
+"lv": "intermediate",
+"t": "Big-idea books",
+"f": "Books that explain how societies, economies or minds work"
+},
+{
+"d": 206,
+"lv": "intermediate",
+"t": "Reading essays and columns",
+"f": "Short nonfiction to enjoy in a single sitting"
+},
+{
+"d": 207,
+"lv": "intermediate",
+"t": "Letters and diaries",
+"f": "Published correspondence and journals as literature"
+},
+{
+"d": 208,
+"lv": "intermediate",
+"t": "Samuel Pepys and famous diaries",
+"f": "Daily life in 1660s London seen through one of history's best-known diaries"
+},
+{
+"d": 209,
+"lv": "intermediate",
+"t": "Speeches as texts",
+"f": "Reading famous speeches to study persuasion and rhythm"
+},
+{
+"d": 210,
+"lv": "intermediate",
+"t": "Review: poetry, drama and nonfiction",
+"f": "Recap of days 181 to 209"
+},
+{
+"d": 211,
+"lv": "intermediate",
+"t": "How books are made",
+"f": "From manuscript to editor, designer, printer and bookshop"
+},
+{
+"d": 212,
+"lv": "intermediate",
+"t": "The editor's role",
+"f": "How editors shape books together with authors"
+},
+{
+"d": 213,
+"lv": "intermediate",
+"t": "Book covers and design",
+"f": "How covers signal genre and attract readers"
+},
+{
+"d": 214,
+"lv": "intermediate",
+"t": "Typography and reading comfort",
+"f": "Fonts, spacing and layout that make pages pleasant"
+},
+{
+"d": 215,
+"lv": "intermediate",
+"t": "Publishing paths",
+"f": "Traditional publishing, small presses and self-publishing"
+},
+{
+"d": 216,
+"lv": "intermediate",
+"t": "Bestseller lists",
+"f": "What they measure and what they miss"
+},
+{
+"d": 217,
+"lv": "intermediate",
+"t": "Independent bookshops",
+"f": "Why indie bookshops matter to readers and communities"
+},
+{
+"d": 218,
+"lv": "intermediate",
+"t": "Famous bookshops of the world",
+"f": "Shakespeare and Company, Livraria Lello and other beloved shops"
+},
+{
+"d": 219,
+"lv": "intermediate",
+"t": "Libraries through history",
+"f": "The Library of Alexandria and great libraries today"
+},
+{
+"d": 220,
+"lv": "intermediate",
+"t": "The printing press",
+"f": "Gutenberg and how print changed reading forever"
+},
+{
+"d": 221,
+"lv": "intermediate",
+"t": "History of the book",
+"f": "From clay tablets and scrolls to codices and e-books"
+},
+{
+"d": 222,
+"lv": "intermediate",
+"t": "Book collecting basics",
+"f": "First editions, signed copies and what makes a book collectable"
+},
+{
+"d": 223,
+"lv": "intermediate",
+"t": "Caring for your books",
+"f": "Shelving, light, humidity and gentle repairs"
+},
+{
+"d": 224,
+"lv": "intermediate",
+"t": "Organising your bookshelves",
+"f": "By genre, colour, author or mood: systems that work"
+},
+{
+"d": 225,
+"lv": "intermediate",
+"t": "Little free libraries and book swaps",
+"f": "Sharing books in your neighbourhood"
+},
+{
+"d": 226,
+"lv": "intermediate",
+"t": "Literary festivals and book fairs",
+"f": "Meeting authors and discovering new books at events"
+},
+{
+"d": 227,
+"lv": "intermediate",
+"t": "Literary tourism",
+"f": "Visiting authors' homes and places from novels"
+},
+{
+"d": 228,
+"lv": "intermediate",
+"t": "Book-to-film adaptations",
+"f": "What changes when a book becomes a movie or series"
+},
+{
+"d": 229,
+"lv": "intermediate",
+"t": "Book or movie first?",
+"f": "The pros and cons of each order"
+},
+{
+"d": 230,
+"lv": "intermediate",
+"t": "Book podcasts and radio",
+"f": "Author interviews, reading shows and literary audio"
+},
+{
+"d": 231,
+"lv": "intermediate",
+"t": "Booktube, Bookstagram and BookTok",
+"f": "Online reader communities and how they shape trends"
+},
+{
+"d": 232,
+"lv": "intermediate",
+"t": "Reading apps and trackers",
+"f": "Tools to log books, set goals and discover titles"
+},
+{
+"d": 233,
+"lv": "intermediate",
+"t": "E-reader tricks",
+"f": "Built-in dictionaries, highlights and adjustable text"
+},
+{
+"d": 234,
+"lv": "intermediate",
+"t": "Audiobook listening skills",
+"f": "Speed, focus and when to switch to print"
+},
+{
+"d": 235,
+"lv": "intermediate",
+"t": "Reading with children",
+"f": "Sharing stories with kids and building their love of books"
+},
+{
+"d": 236,
+"lv": "intermediate",
+"t": "Reading with friends abroad",
+"f": "Buddy reads and international reading exchanges"
+},
+{
+"d": 237,
+"lv": "intermediate",
+"t": "Reading challenges",
+"f": "Yearly goals, genre bingo and challenges that stay fun"
+},
+{
+"d": 238,
+"lv": "intermediate",
+"t": "Quality over quantity",
+"f": "Why fewer, deeper reads can be more rewarding"
+},
+{
+"d": 239,
+"lv": "intermediate",
+"t": "Quotes that stay with us",
+"f": "Collecting and using favourite lines from books"
+},
+{
+"d": 240,
+"lv": "intermediate",
+"t": "Review: the world of books",
+"f": "Recap of publishing, bookshops and reading culture from days 211 to 239"
+},
+{
+"d": 241,
+"lv": "intermediate",
+"t": "Women writers through history",
+"f": "From Murasaki Shikibu to Virginia Woolf and Toni Morrison"
+},
+{
+"d": 242,
+"lv": "intermediate",
+"t": "Toni Morrison",
+"f": "Song of Solomon, Jazz and her rich, musical prose"
+},
+{
+"d": 243,
+"lv": "intermediate",
+"t": "Gabriel García Márquez",
+"f": "One Hundred Years of Solitude and the Buendía family"
+},
+{
+"d": 244,
+"lv": "intermediate",
+"t": "Haruki Murakami",
+"f": "Dreamlike stories, music and cats in modern Japan"
+},
+{
+"d": 245,
+"lv": "intermediate",
+"t": "Chimamanda Ngozi Adichie",
+"f": "Americanah and her idea of the danger of a single story"
+},
+{
+"d": 246,
+"lv": "intermediate",
+"t": "Kazuo Ishiguro",
+"f": "Memory and quiet emotion in The Remains of the Day"
+},
+{
+"d": 247,
+"lv": "intermediate",
+"t": "José Saramago",
+"f": "Long flowing sentences and bold imaginative premises"
+},
+{
+"d": 248,
+"lv": "intermediate",
+"t": "Clarice Lispector",
+"f": "Inner life and intense prose in Brazilian literature"
+},
+{
+"d": 249,
+"lv": "intermediate",
+"t": "Elena Ferrante",
+"f": "A lifelong friendship in Naples in the Neapolitan Novels"
+},
+{
+"d": 250,
+"lv": "intermediate",
+"t": "Mid-path celebration",
+"f": "Looking back on 250 days of reading and planning the advanced stage"
+},
+{
+"d": 251,
+"lv": "advanced",
+"t": "Literary criticism made simple",
+"f": "What critics do and how criticism helps readers"
+},
+{
+"d": 252,
+"lv": "advanced",
+"t": "Reading through different lenses",
+"f": "Historical, biographical and formal ways to read one book"
+},
+{
+"d": 253,
+"lv": "advanced",
+"t": "Reader response",
+"f": "How each reader brings their own life to a text"
+},
+{
+"d": 254,
+"lv": "advanced",
+"t": "Formalism and the text itself",
+"f": "Focusing on form, language and structure"
+},
+{
+"d": 255,
+"lv": "advanced",
+"t": "Context matters",
+"f": "How an author's time and place shape a book"
+},
+{
+"d": 256,
+"lv": "advanced",
+"t": "The author and the work",
+"f": "Should a book be read apart from its writer's life?"
+},
+{
+"d": 257,
+"lv": "advanced",
+"t": "The canon and who decides",
+"f": "How lists of great books are made and how they change"
+},
+{
+"d": 258,
+"lv": "advanced",
+"t": "Rediscovered books",
+"f": "Forgotten authors brought back by new editions"
+},
+{
+"d": 259,
+"lv": "advanced",
+"t": "Translation deep dive",
+"f": "Domestication, foreignisation and the choices translators make"
+},
+{
+"d": 260,
+"lv": "advanced",
+"t": "Comparing two translations",
+"f": "Reading the same passage in different translations"
+},
+{
+"d": 261,
+"lv": "advanced",
+"t": "Untranslatable words",
+"f": "Saudade, hygge and words that challenge translators"
+},
+{
+"d": 262,
+"lv": "advanced",
+"t": "Famous translators",
+"f": "Constance Garnett, Gregory Rabassa and translators as artists"
+},
+{
+"d": 263,
+"lv": "advanced",
+"t": "Reading in the original language",
+"f": "Steps toward reading a full novel in a language you are learning"
+},
+{
+"d": 264,
+"lv": "advanced",
+"t": "Style: an author's fingerprint",
+"f": "Sentence length, vocabulary and voice that make a writer unique"
+},
+{
+"d": 265,
+"lv": "advanced",
+"t": "Minimalism in prose",
+"f": "Hemingway's iceberg theory and Raymond Carver's lean style"
+},
+{
+"d": 266,
+"lv": "advanced",
+"t": "Maximalist prose",
+"f": "Rich, long sentences in Proust and Dickens"
+},
+{
+"d": 267,
+"lv": "advanced",
+"t": "Voice in first-person novels",
+"f": "How a narrator's personality shapes every page"
+},
+{
+"d": 268,
+"lv": "advanced",
+"t": "Free indirect style",
+"f": "Austen and Flaubert blending narrator and character thoughts"
+},
+{
+"d": 269,
+"lv": "advanced",
+"t": "Worldbuilding in depth",
+"f": "How fantasy and science fiction build believable worlds"
+},
+{
+"d": 270,
+"lv": "advanced",
+"t": "Review: critical tools",
+"f": "Recap of criticism, translation and style from days 251 to 269"
+},
+{
+"d": 271,
+"lv": "advanced",
+"t": "The epistolary novel",
+"f": "Stories told in letters, from Samuel Richardson to 84, Charing Cross Road"
+},
+{
+"d": 272,
+"lv": "advanced",
+"t": "The Bildungsroman",
+"f": "Coming-of-age novels from Goethe's Wilhelm Meister to Jane Eyre"
+},
+{
+"d": 273,
+"lv": "advanced",
+"t": "The picaresque novel",
+"f": "Roguish heroes on the road, from Lazarillo de Tormes onward"
+},
+{
+"d": 274,
+"lv": "advanced",
+"t": "The novel of manners",
+"f": "Social customs and wit in Austen and Edith Wharton"
+},
+{
+"d": 275,
+"lv": "advanced",
+"t": "The campus novel",
+"f": "Stories set in universities and schools"
+},
+{
+"d": 276,
+"lv": "advanced",
+"t": "The family saga",
+"f": "Generations in one story, from Buddenbrooks to Isabel Allende"
+},
+{
+"d": 277,
+"lv": "advanced",
+"t": "The road novel",
+"f": "Journeys as stories, from Don Quixote to Kerouac"
+},
+{
+"d": 278,
+"lv": "advanced",
+"t": "Metafiction",
+"f": "Books that know they are books and play with the reader"
+},
+{
+"d": 279,
+"lv": "advanced",
+"t": "Experimental literature",
+"f": "Oulipo, Georges Perec and writing with playful constraints"
+},
+{
+"d": 280,
+"lv": "advanced",
+"t": "Flash fiction",
+"f": "Very short stories and the art of saying a lot in little space"
+},
+{
+"d": 281,
+"lv": "advanced",
+"t": "Literary journalism",
+"f": "Joan Didion, Gay Talese and the New Journalism style"
+},
+{
+"d": 282,
+"lv": "advanced",
+"t": "Philosophy in novels",
+"f": "Big questions explored through characters, as in Sophie's World"
+},
+{
+"d": 283,
+"lv": "advanced",
+"t": "Science in literature",
+"f": "How novelists use real science, from Verne to Andy Weir"
+},
+{
+"d": 284,
+"lv": "advanced",
+"t": "Climate fiction",
+"f": "Novels that imagine our relationship with nature and climate"
+},
+{
+"d": 285,
+"lv": "advanced",
+"t": "Food in literature",
+"f": "Proust's madeleine and meals that tell stories"
+},
+{
+"d": 286,
+"lv": "advanced",
+"t": "Cities in literature",
+"f": "Dickens' London, Joyce's Dublin and Pessoa's Lisbon"
+},
+{
+"d": 287,
+"lv": "advanced",
+"t": "Maps and journeys in books",
+"f": "Fictional maps and travel as a way to structure a story"
+},
+{
+"d": 288,
+"lv": "advanced",
+"t": "Music in literature",
+"f": "Novels about musicians and prose with musical rhythm"
+},
+{
+"d": 289,
+"lv": "advanced",
+"t": "Art in literature",
+"f": "Novels about painters, paintings and the creative life"
+},
+{
+"d": 290,
+"lv": "advanced",
+"t": "Humour as an art form",
+"f": "Comic timing, wordplay and surprise on the page"
+},
+{
+"d": 291,
+"lv": "advanced",
+"t": "Douglas Adams",
+"f": "The Hitchhiker's Guide to the Galaxy and comic science fiction"
+},
+{
+"d": 292,
+"lv": "advanced",
+"t": "P. G. Wodehouse",
+"f": "Jeeves and Wooster and the perfect comic sentence"
+},
+{
+"d": 293,
+"lv": "advanced",
+"t": "Animals in literature",
+"f": "From Black Beauty to Charlotte's Web and animal narrators"
+},
+{
+"d": 294,
+"lv": "advanced",
+"t": "Childhood in literature",
+"f": "How writers capture memories of growing up"
+},
+{
+"d": 295,
+"lv": "advanced",
+"t": "Friendship in literature",
+"f": "Great friendships from Frodo and Sam to Lila and Lenù"
+},
+{
+"d": 296,
+"lv": "advanced",
+"t": "Home and belonging",
+"f": "Migration, identity and finding home in modern novels"
+},
+{
+"d": 297,
+"lv": "advanced",
+"t": "Memory and time",
+"f": "Proust, Ishiguro and how novels play with memory"
+},
+{
+"d": 298,
+"lv": "advanced",
+"t": "Hope and resilience in stories",
+"f": "Uplifting books about overcoming difficulties"
+},
+{
+"d": 299,
+"lv": "advanced",
+"t": "Kindness as a literary theme",
+"f": "Stories that celebrate generosity and empathy"
+},
+{
+"d": 300,
+"lv": "advanced",
+"t": "Day 300 review",
+"f": "Recap of forms and themes from days 271 to 299"
+},
+{
+"d": 301,
+"lv": "advanced",
+"t": "Reading a long classic",
+"f": "Strategies for Middlemarch, Tolstoy and other big books"
+},
+{
+"d": 302,
+"lv": "advanced",
+"t": "Middlemarch",
+"f": "George Eliot's portrait of a whole English town"
+},
+{
+"d": 303,
+"lv": "advanced",
+"t": "Tolstoy's art of detail",
+"f": "How Tolstoy builds vivid scenes, families and everyday life"
+},
+{
+"d": 304,
+"lv": "advanced",
+"t": "In Search of Lost Time",
+"f": "Proust's huge novel of memory and how to begin it"
+},
+{
+"d": 305,
+"lv": "advanced",
+"t": "Ulysses without fear",
+"f": "Joyce's single day in Dublin and tips for first-time readers"
+},
+{
+"d": 306,
+"lv": "advanced",
+"t": "Moby-Dick as an adventure",
+"f": "Melville's sea novel, its digressions and its surprising humour"
+},
+{
+"d": 307,
+"lv": "advanced",
+"t": "One Hundred Years of Solitude, again",
+"f": "Following the Buendía family tree and its repeating names"
+},
+{
+"d": 308,
+"lv": "advanced",
+"t": "The Leopard",
+"f": "Lampedusa's portrait of a changing Sicily in the 1860s"
+},
+{
+"d": 309,
+"lv": "advanced",
+"t": "Pessoa's Book of Disquiet",
+"f": "A fragmentary diary of thoughts and daydreams from Lisbon"
+},
+{
+"d": 310,
+"lv": "advanced",
+"t": "Machado de Assis in depth",
+"f": "Dom Casmurro and the art of the ironic, unreliable narrator"
+},
+{
+"d": 311,
+"lv": "advanced",
+"t": "Kafka's strange worlds",
+"f": "The Metamorphosis and what Kafkaesque really means"
+},
+{
+"d": 312,
+"lv": "advanced",
+"t": "Hermann Hesse's journeys",
+"f": "Siddhartha, Demian and the search for the self"
+},
+{
+"d": 313,
+"lv": "advanced",
+"t": "Cervantes in depth",
+"f": "Metafiction and humour in Don Quixote Part Two"
+},
+{
+"d": 314,
+"lv": "advanced",
+"t": "Classical Chinese poetry",
+"f": "Li Bai, Du Fu and images of nature and friendship"
+},
+{
+"d": 315,
+"lv": "advanced",
+"t": "The Tale of Genji",
+"f": "Murasaki Shikibu's world of the Heian court around the year 1000"
+},
+{
+"d": 316,
+"lv": "advanced",
+"t": "Persian poetry",
+"f": "Ferdowsi's Shahnameh, Hafez and the Persian lyric tradition"
+},
+{
+"d": 317,
+"lv": "advanced",
+"t": "African oral traditions",
+"f": "Griots, the Epic of Sundiata and storytelling aloud"
+},
+{
+"d": 318,
+"lv": "advanced",
+"t": "Indigenous storytelling",
+"f": "Oral traditions and contemporary Indigenous authors"
+},
+{
+"d": 319,
+"lv": "advanced",
+"t": "Caribbean literature",
+"f": "Derek Walcott, V. S. Naipaul and island voices"
+},
+{
+"d": 320,
+"lv": "advanced",
+"t": "Writers from Oceania",
+"f": "Katherine Mansfield, Tim Winton and voices from Australia and New Zealand"
+},
+{
+"d": 321,
+"lv": "advanced",
+"t": "Canadian literature",
+"f": "Margaret Atwood, Alice Munro and L. M. Montgomery"
+},
+{
+"d": 322,
+"lv": "advanced",
+"t": "Korean literature",
+"f": "Han Kang, Shin Kyung-sook and modern Korean fiction"
+},
+{
+"d": 323,
+"lv": "advanced",
+"t": "Contemporary Japanese fiction",
+"f": "Banana Yoshimoto, Sayaka Murata and cosy Japanese bestsellers"
+},
+{
+"d": 324,
+"lv": "advanced",
+"t": "Turkish literature",
+"f": "Orhan Pamuk, Elif Shafak and stories between East and West"
+},
+{
+"d": 325,
+"lv": "advanced",
+"t": "Central European voices",
+"f": "Szymborska, Kundera, Olga Tokarczuk and their worlds"
+},
+{
+"d": 326,
+"lv": "advanced",
+"t": "Nordic literature beyond mysteries",
+"f": "Tove Jansson, Selma Lagerlöf and Jon Fosse"
+},
+{
+"d": 327,
+"lv": "advanced",
+"t": "Irish literature",
+"f": "Yeats, Joyce, Beckett and Seamus Heaney"
+},
+{
+"d": 328,
+"lv": "advanced",
+"t": "Scottish and Welsh writers",
+"f": "Robert Burns, Walter Scott and Dylan Thomas"
+},
+{
+"d": 329,
+"lv": "advanced",
+"t": "Literature of migration",
+"f": "Writers living between two countries and languages"
+},
+{
+"d": 330,
+"lv": "advanced",
+"t": "Review: world literature advanced",
+"f": "Recap of great books and world voices from days 301 to 329"
+},
+{
+"d": 331,
+"lv": "advanced",
+"t": "Writing about books",
+"f": "From quick reviews to thoughtful essays on what you read"
+},
+{
+"d": 332,
+"lv": "advanced",
+"t": "Comparative reading",
+"f": "Reading two books side by side to find connections"
+},
+{
+"d": 333,
+"lv": "advanced",
+"t": "Thematic reading projects",
+"f": "Choosing a theme and building a reading list around it"
+},
+{
+"d": 334,
+"lv": "advanced",
+"t": "Author deep dive projects",
+"f": "Reading a writer's work in order of publication"
+},
+{
+"d": 335,
+"lv": "advanced",
+"t": "Reading a book's era",
+"f": "Pairing a novel with the history of its time"
+},
+{
+"d": 336,
+"lv": "advanced",
+"t": "Authors on their own craft",
+"f": "What writers reveal in interviews, letters and prefaces"
+},
+{
+"d": 337,
+"lv": "advanced",
+"t": "Writers on writing",
+"f": "Bird by Bird, Steering the Craft and books about the writing life"
+},
+{
+"d": 338,
+"lv": "advanced",
+"t": "From reader to writer",
+"f": "How reading widely improves your own writing"
+},
+{
+"d": 339,
+"lv": "advanced",
+"t": "Imitation exercises",
+"f": "Writing a paragraph in the style of a favourite author"
+},
+{
+"d": 340,
+"lv": "advanced",
+"t": "Leading a book club discussion",
+"f": "Preparing questions and guiding a lively conversation"
+},
+{
+"d": 341,
+"lv": "advanced",
+"t": "Hosting a themed book club",
+"f": "Food, music and settings that match a book"
+},
+{
+"d": 342,
+"lv": "advanced",
+"t": "Recommending with precision",
+"f": "Read-alikes and matching readers to the right books"
+},
+{
+"d": 343,
+"lv": "advanced",
+"t": "Reading and wellbeing",
+"f": "How reading supports calm, focus and connection"
+},
+{
+"d": 344,
+"lv": "advanced",
+"t": "Bibliotherapy",
+"f": "The idea of matching books to life moments, as gentle inspiration"
+},
+{
+"d": 345,
+"lv": "advanced",
+"t": "Reading across generations",
+"f": "Sharing books with parents, grandparents and kids"
+},
+{
+"d": 346,
+"lv": "advanced",
+"t": "Literature and language learning",
+"f": "Using novels to grow vocabulary in any language"
+},
+{
+"d": 347,
+"lv": "advanced",
+"t": "Building a personal canon",
+"f": "Choosing the books that define you as a reader"
+},
+{
+"d": 348,
+"lv": "advanced",
+"t": "Your desert island books",
+"f": "Choosing ten books you would keep forever"
+},
+{
+"d": 349,
+"lv": "advanced",
+"t": "Building a home library",
+"f": "Curating, not hoarding: a library that reflects you"
+},
+{
+"d": 350,
+"lv": "advanced",
+"t": "Digital vs physical libraries",
+"f": "Balancing e-books, audiobooks and printed books"
+},
+{
+"d": 351,
+"lv": "advanced",
+"t": "The future of reading",
+"f": "Technology, attention and new forms of stories"
+},
+{
+"d": 352,
+"lv": "advanced",
+"t": "Interactive fiction",
+"f": "Choose-your-own-adventure books and story games"
+},
+{
+"d": 353,
+"lv": "advanced",
+"t": "Serialised fiction online",
+"f": "Web novels, newsletters and the return of the instalment"
+},
+{
+"d": 354,
+"lv": "advanced",
+"t": "Books that changed the world",
+"f": "Titles like On the Origin of Species and Silent Spring that shifted ideas"
+},
+{
+"d": 355,
+"lv": "advanced",
+"t": "Books that changed you",
+"f": "Reflecting on the reads that shaped your thinking"
+},
+{
+"d": 356,
+"lv": "advanced",
+"t": "A reading plan for next year",
+"f": "Setting goals that balance comfort and challenge"
+},
+{
+"d": 357,
+"lv": "advanced",
+"t": "A slow reading year",
+"f": "Choosing depth: one big book a month"
+},
+{
+"d": 358,
+"lv": "advanced",
+"t": "Planning your rereads",
+"f": "Picking classics to revisit with new eyes"
+},
+{
+"d": 359,
+"lv": "advanced",
+"t": "Giving books as gifts",
+"f": "Choosing the right book as a present for anyone"
+},
+{
+"d": 360,
+"lv": "advanced",
+"t": "Review: your advanced reading toolbox",
+"f": "Recap of projects, clubs and reading life from days 331 to 359"
+},
+{
+"d": 361,
+"lv": "advanced",
+"t": "Your reading story so far",
+"f": "Looking at how your tastes changed over the whole path"
+},
+{
+"d": 362,
+"lv": "advanced",
+"t": "Top ten of your year",
+"f": "Ranking and celebrating your favourite reads"
+},
+{
+"d": 363,
+"lv": "advanced",
+"t": "Sharing your recommendations",
+"f": "Turning your year of reading into a list for friends"
+},
+{
+"d": 364,
+"lv": "advanced",
+"t": "Lifelong reader habits",
+"f": "Keeping curiosity and joy in reading alive for years"
+},
+{
+"d": 365,
+"lv": "advanced",
+"t": "The next chapter",
+"f": "Celebrating 365 days and opening your next book"
+}
+]
+}

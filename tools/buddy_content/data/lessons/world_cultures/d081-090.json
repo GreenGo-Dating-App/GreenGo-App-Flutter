@@ -1,0 +1,835 @@
+{
+ "topic": "world_cultures",
+ "lessons": [
+  {
+   "d": 81,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "A tour of Western Europe",
+     "g": "Meet France, Germany, the Benelux countries, the UK and Ireland, close neighbours with different habits.",
+     "p": [
+      "Greetings vary: friends in France often kiss on the cheeks, while a handshake is common in Germany and the UK.",
+      "In the Netherlands bicycles are everywhere, and Belgium has three official languages: Dutch, French and German.",
+      "In Ireland, evenings of traditional music in pubs, called sessions, bring locals and visitors together."
+     ],
+     "q": "Which Western European country would you like to compare with your own, and why?",
+     "c": "Learn how to say thank you in Dutch, French, German or Irish today."
+    },
+    "de": {
+     "t": "Rundreise durch Westeuropa",
+     "g": "Lerne Frankreich, Deutschland, die Benelux-Länder, Großbritannien und Irland kennen, enge Nachbarn mit eigenen Gewohnheiten.",
+     "p": [
+      "Begrüßungen sind verschieden: In Frankreich gibt man sich unter Freunden oft Wangenküsse, in Deutschland und Großbritannien die Hand.",
+      "In den Niederlanden sind Fahrräder überall, und Belgien hat drei Amtssprachen: Niederländisch, Französisch und Deutsch.",
+      "In Irland bringen Abende mit traditioneller Musik im Pub, Sessions genannt, Einheimische und Besucher zusammen."
+     ],
+     "q": "Welches westeuropäische Land würdest du gern mit deinem eigenen vergleichen, und warum?",
+     "c": "Lerne heute, wie man auf Niederländisch, Französisch, Deutsch oder Irisch Danke sagt."
+    },
+    "es": {
+     "t": "Un recorrido por Europa Occidental",
+     "g": "Conoce Francia, Alemania, el Benelux, el Reino Unido e Irlanda, vecinos cercanos con hábitos distintos.",
+     "p": [
+      "Los saludos cambian: en Francia los amigos suelen darse besos en las mejillas, y en Alemania y el Reino Unido es común darse la mano.",
+      "En los Países Bajos hay bicicletas por todas partes, y Bélgica tiene tres lenguas oficiales: neerlandés, francés y alemán.",
+      "En Irlanda, las noches de música tradicional en los pubs, llamadas sessions, reúnen a vecinos y visitantes."
+     ],
+     "q": "¿Qué país de Europa Occidental te gustaría comparar con el tuyo y por qué?",
+     "c": "Aprende hoy a decir gracias en neerlandés, francés, alemán o irlandés."
+    },
+    "fr": {
+     "t": "Tour d'Europe de l'Ouest",
+     "g": "Découvre la France, l'Allemagne, le Benelux, le Royaume-Uni et l'Irlande, voisins proches aux habitudes différentes.",
+     "p": [
+      "Les salutations varient : en France, les amis se font souvent la bise, alors qu'on se serre la main en Allemagne et au Royaume-Uni.",
+      "Aux Pays-Bas, les vélos sont partout, et la Belgique a trois langues officielles : le néerlandais, le français et l'allemand.",
+      "En Irlande, les soirées de musique traditionnelle au pub, appelées sessions, réunissent habitants et visiteurs."
+     ],
+     "q": "Quel pays d'Europe de l'Ouest aimerais-tu comparer au tien, et pourquoi ?",
+     "c": "Apprends aujourd'hui à dire merci en néerlandais, français, allemand ou irlandais."
+    },
+    "it": {
+     "t": "Un giro nell'Europa occidentale",
+     "g": "Conosci Francia, Germania, Benelux, Regno Unito e Irlanda, vicini stretti con abitudini diverse.",
+     "p": [
+      "I saluti cambiano: in Francia gli amici si danno spesso baci sulle guance, mentre in Germania e nel Regno Unito si usa la stretta di mano.",
+      "Nei Paesi Bassi le biciclette sono ovunque, e il Belgio ha tre lingue ufficiali: olandese, francese e tedesco.",
+      "In Irlanda le serate di musica tradizionale nei pub, chiamate session, riuniscono gente del posto e visitatori."
+     ],
+     "q": "Quale paese dell'Europa occidentale vorresti confrontare con il tuo, e perché?",
+     "c": "Impara oggi a dire grazie in olandese, francese, tedesco o irlandese."
+    },
+    "pt": {
+     "t": "Uma volta pela Europa Ocidental",
+     "g": "Conhece a França, a Alemanha, o Benelux, o Reino Unido e a Irlanda, vizinhos próximos com hábitos diferentes.",
+     "p": [
+      "Os cumprimentos variam: em França os amigos dão muitas vezes beijinhos, enquanto na Alemanha e no Reino Unido se aperta a mão.",
+      "Nos Países Baixos há bicicletas por todo o lado, e a Bélgica tem três línguas oficiais: neerlandês, francês e alemão.",
+      "Na Irlanda, as noites de música tradicional nos pubs, chamadas sessions, juntam locais e visitantes."
+     ],
+     "q": "Que país da Europa Ocidental gostavas de comparar com o teu, e porquê?",
+     "c": "Aprende hoje a dizer obrigado em neerlandês, francês, alemão ou irlandês."
+    },
+    "pt_BR": {
+     "t": "Um passeio pela Europa Ocidental",
+     "g": "Conheça França, Alemanha, Benelux, Reino Unido e Irlanda, vizinhos próximos com hábitos diferentes.",
+     "p": [
+      "Os cumprimentos variam: na França os amigos costumam dar beijinhos no rosto, já na Alemanha e no Reino Unido o comum é o aperto de mão.",
+      "Na Holanda há bicicletas por toda parte, e a Bélgica tem três línguas oficiais: holandês, francês e alemão.",
+      "Na Irlanda, as noites de música tradicional nos pubs, chamadas sessions, reúnem moradores e visitantes."
+     ],
+     "q": "Qual país da Europa Ocidental você gostaria de comparar com o seu, e por quê?",
+     "c": "Aprenda hoje a dizer obrigado em holandês, francês, alemão ou irlandês."
+    }
+   }
+  },
+  {
+   "d": 82,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Everyday life in France",
+     "g": "Explore the French art of living, from the bakery to the dinner table.",
+     "p": [
+      "Many people buy fresh bread daily at the local bakery, and a baguette under the arm is a familiar sight.",
+      "Meals are taken seriously, and the French gastronomic meal is listed by UNESCO as intangible cultural heritage.",
+      "Lively discussion at the table is part of the pleasure, and a good meal can last for hours."
+     ],
+     "q": "What part of the French art of living would you enjoy most?",
+     "c": "Make one meal today a slow one: sit down, put your phone away and enjoy each course."
+    },
+    "de": {
+     "t": "Alltag in Frankreich",
+     "g": "Erkunde die französische Lebensart, von der Bäckerei bis zum Esstisch.",
+     "p": [
+      "Viele kaufen täglich frisches Brot beim Bäcker um die Ecke, und ein Baguette unter dem Arm ist ein vertrautes Bild.",
+      "Essen wird ernst genommen, und das französische Festmahl steht auf der UNESCO-Liste des immateriellen Kulturerbes.",
+      "Lebhafte Diskussionen am Tisch gehören zum Vergnügen, und ein gutes Essen kann Stunden dauern."
+     ],
+     "q": "Welcher Teil der französischen Lebensart würde dir am meisten gefallen?",
+     "c": "Mach heute eine Mahlzeit zu einer langsamen: Setz dich hin, leg das Handy weg und genieße jeden Gang."
+    },
+    "es": {
+     "t": "La vida diaria en Francia",
+     "g": "Explora el arte de vivir francés, de la panadería a la mesa.",
+     "p": [
+      "Mucha gente compra pan fresco cada día en la panadería del barrio, y una baguette bajo el brazo es una imagen habitual.",
+      "La comida se toma en serio, y la comida gastronómica francesa figura en la lista de patrimonio inmaterial de la UNESCO.",
+      "Las conversaciones animadas en la mesa son parte del placer, y una buena comida puede durar horas."
+     ],
+     "q": "¿Qué parte del arte de vivir francés disfrutarías más?",
+     "c": "Haz hoy una comida sin prisas: siéntate, aparta el móvil y saborea cada plato."
+    },
+    "fr": {
+     "t": "La vie quotidienne en France",
+     "g": "Explore l'art de vivre à la française, de la boulangerie à la table.",
+     "p": [
+      "Beaucoup achètent chaque jour leur pain frais à la boulangerie du quartier, et la baguette sous le bras est une image familière.",
+      "Les repas sont pris au sérieux, et le repas gastronomique des Français est inscrit au patrimoine immatériel de l'UNESCO.",
+      "Les discussions animées à table font partie du plaisir, et un bon repas peut durer des heures."
+     ],
+     "q": "Quelle part de l'art de vivre à la française apprécierais-tu le plus ?",
+     "c": "Fais aujourd'hui d'un repas un moment lent : assieds-toi, range ton téléphone et savoure chaque plat."
+    },
+    "it": {
+     "t": "La vita quotidiana in Francia",
+     "g": "Esplora l'arte di vivere francese, dalla panetteria alla tavola.",
+     "p": [
+      "Molti comprano ogni giorno il pane fresco nella panetteria di quartiere, e la baguette sotto il braccio è un'immagine familiare.",
+      "I pasti si prendono sul serio, e il pasto gastronomico francese è iscritto nel patrimonio immateriale dell'UNESCO.",
+      "Le discussioni vivaci a tavola fanno parte del piacere, e un buon pasto può durare ore."
+     ],
+     "q": "Quale parte dell'arte di vivere francese ti piacerebbe di più?",
+     "c": "Rendi oggi un pasto lento: siediti, metti via il telefono e gusta ogni portata."
+    },
+    "pt": {
+     "t": "O dia a dia em França",
+     "g": "Explora a arte de viver francesa, da padaria à mesa.",
+     "p": [
+      "Muita gente compra pão fresco todos os dias na padaria do bairro, e uma baguete debaixo do braço é uma imagem habitual.",
+      "As refeições levam-se a sério, e a refeição gastronómica francesa está na lista do património imaterial da UNESCO.",
+      "As conversas animadas à mesa fazem parte do prazer, e uma boa refeição pode durar horas."
+     ],
+     "q": "Que parte da arte de viver francesa apreciarias mais?",
+     "c": "Faz hoje de uma refeição um momento lento: senta-te, guarda o telemóvel e saboreia cada prato."
+    },
+    "pt_BR": {
+     "t": "O dia a dia na França",
+     "g": "Explore a arte de viver francesa, da padaria à mesa.",
+     "p": [
+      "Muita gente compra pão fresco todo dia na padaria do bairro, e uma baguete debaixo do braço é uma cena comum.",
+      "As refeições são levadas a sério, e a refeição gastronômica francesa está na lista de patrimônio imaterial da UNESCO.",
+      "As conversas animadas à mesa fazem parte do prazer, e uma boa refeição pode durar horas."
+     ],
+     "q": "Que parte da arte de viver francesa você mais curtiria?",
+     "c": "Faça hoje de uma refeição um momento sem pressa: sente-se, guarde o celular e saboreie cada prato."
+    }
+   }
+  },
+  {
+   "d": 83,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Everyday life in Germany",
+     "g": "Discover daily life in Germany, from careful recycling to quiet Sundays in nature.",
+     "p": [
+      "Recycling is part of daily routine, with bins for different materials and a deposit on many bottles and cans.",
+      "Sundays are traditionally quiet days: most shops close and many people enjoy rest, family and calm.",
+      "Germans love nature, and hiking in forests and mountains is a popular weekend activity for all ages."
+     ],
+     "q": "Which German habit would you like to try: careful recycling, quiet Sundays or long walks in nature?",
+     "c": "Sort your waste carefully today or take a walk in a park or forest."
+    },
+    "de": {
+     "t": "Alltag in Deutschland",
+     "g": "Entdecke den Alltag in Deutschland, von sorgfältiger Mülltrennung bis zu ruhigen Sonntagen in der Natur.",
+     "p": [
+      "Recycling gehört zur täglichen Routine, mit Tonnen für verschiedene Materialien und Pfand auf vielen Flaschen und Dosen.",
+      "Sonntage sind traditionell ruhige Tage: Die meisten Geschäfte schließen, und viele genießen Ruhe, Familie und Gelassenheit.",
+      "Die Deutschen lieben die Natur, und Wandern in Wäldern und Bergen ist am Wochenende bei Jung und Alt beliebt."
+     ],
+     "q": "Welche deutsche Gewohnheit würdest du gern ausprobieren: Mülltrennung, ruhige Sonntage oder lange Spaziergänge?",
+     "c": "Trenne heute deinen Müll besonders sorgfältig oder mach einen Spaziergang im Park oder Wald."
+    },
+    "es": {
+     "t": "La vida diaria en Alemania",
+     "g": "Descubre la vida diaria en Alemania, del reciclaje cuidadoso a los domingos tranquilos en la naturaleza.",
+     "p": [
+      "Reciclar es parte de la rutina diaria, con contenedores para cada material y un depósito en muchas botellas y latas.",
+      "Los domingos son tradicionalmente días tranquilos: casi todas las tiendas cierran y mucha gente disfruta del descanso y la familia.",
+      "A los alemanes les encanta la naturaleza, y el senderismo por bosques y montañas es un plan de fin de semana para todas las edades."
+     ],
+     "q": "¿Qué hábito alemán te gustaría probar: reciclar con cuidado, domingos tranquilos o largos paseos por la naturaleza?",
+     "c": "Separa hoy tus residuos con cuidado o da un paseo por un parque o un bosque."
+    },
+    "fr": {
+     "t": "La vie quotidienne en Allemagne",
+     "g": "Découvre la vie quotidienne en Allemagne, du tri soigneux aux dimanches calmes dans la nature.",
+     "p": [
+      "Le recyclage fait partie de la routine, avec des poubelles pour chaque matière et une consigne sur beaucoup de bouteilles et canettes.",
+      "Le dimanche est traditionnellement calme : la plupart des magasins ferment et beaucoup profitent du repos et de la famille.",
+      "Les Allemands aiment la nature, et la randonnée en forêt ou en montagne est une activité de week-end prisée à tout âge."
+     ],
+     "q": "Quelle habitude allemande aimerais-tu essayer : le tri soigneux, le dimanche calme ou les longues balades ?",
+     "c": "Trie soigneusement tes déchets aujourd'hui ou fais une promenade dans un parc ou une forêt."
+    },
+    "it": {
+     "t": "La vita quotidiana in Germania",
+     "g": "Scopri la vita quotidiana in Germania, dalla raccolta differenziata attenta alle domeniche tranquille nella natura.",
+     "p": [
+      "Il riciclo fa parte della routine, con bidoni per ogni materiale e un deposito su molte bottiglie e lattine.",
+      "La domenica è tradizionalmente un giorno tranquillo: quasi tutti i negozi chiudono e molti si godono riposo e famiglia.",
+      "I tedeschi amano la natura, e le escursioni in boschi e montagne sono un'attività del fine settimana per tutte le età."
+     ],
+     "q": "Quale abitudine tedesca vorresti provare: la differenziata attenta, le domeniche tranquille o le lunghe passeggiate?",
+     "c": "Fai oggi la raccolta differenziata con cura o una passeggiata in un parco o in un bosco."
+    },
+    "pt": {
+     "t": "O dia a dia na Alemanha",
+     "g": "Descobre o dia a dia na Alemanha, da reciclagem cuidadosa aos domingos calmos na natureza.",
+     "p": [
+      "Reciclar faz parte da rotina, com contentores para cada material e um depósito em muitas garrafas e latas.",
+      "O domingo é tradicionalmente um dia calmo: quase todas as lojas fecham e muita gente aproveita o descanso e a família.",
+      "Os alemães adoram a natureza, e caminhar em florestas e montanhas é uma atividade de fim de semana para todas as idades."
+     ],
+     "q": "Que hábito alemão gostavas de experimentar: reciclar com cuidado, domingos calmos ou longas caminhadas?",
+     "c": "Separa hoje o lixo com cuidado ou dá um passeio num parque ou numa floresta."
+    },
+    "pt_BR": {
+     "t": "O dia a dia na Alemanha",
+     "g": "Descubra o dia a dia na Alemanha, da reciclagem caprichada aos domingos tranquilos na natureza.",
+     "p": [
+      "Reciclar faz parte da rotina, com lixeiras para cada material e um depósito em muitas garrafas e latas.",
+      "O domingo é tradicionalmente um dia tranquilo: quase todas as lojas fecham e muita gente aproveita o descanso e a família.",
+      "Os alemães adoram a natureza, e fazer trilhas em florestas e montanhas é um programa de fim de semana para todas as idades."
+     ],
+     "q": "Que hábito alemão você gostaria de experimentar: reciclar com capricho, domingos tranquilos ou longas caminhadas?",
+     "c": "Separe hoje o lixo com cuidado ou faça um passeio num parque ou numa mata."
+    }
+   }
+  },
+  {
+   "d": 84,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Everyday life in the UK",
+     "g": "Explore daily life in the UK, from orderly queues to a cup of tea.",
+     "p": [
+      "Queuing patiently and taking turns is a strong social habit, at bus stops, shops and even at the bar.",
+      "Tea, often with milk, is drunk throughout the day, and offering a cuppa is a classic way to welcome someone.",
+      "The local pub is a social hub, and British humour is famously dry, full of understatement and gentle irony."
+     ],
+     "q": "Have you ever noticed humour that was hard to understand in another culture?",
+     "c": "Use a bit of understatement today, like calling a great day not bad at all."
+    },
+    "de": {
+     "t": "Alltag in Großbritannien",
+     "g": "Erkunde den Alltag in Großbritannien, von geordneten Schlangen bis zur Tasse Tee.",
+     "p": [
+      "Geduldig anstehen und warten, bis man dran ist, ist eine starke Gewohnheit, an der Bushaltestelle, im Laden und sogar an der Bar.",
+      "Tee, oft mit Milch, wird den ganzen Tag getrunken, und eine Tasse anzubieten ist ein klassisches Zeichen des Willkommens.",
+      "Der Pub um die Ecke ist ein sozialer Treffpunkt, und britischer Humor ist berühmt trocken, voller Untertreibung und Ironie."
+     ],
+     "q": "Ist dir schon einmal Humor begegnet, der in einer anderen Kultur schwer zu verstehen war?",
+     "c": "Übe dich heute in Untertreibung und nenne einen tollen Tag zum Beispiel gar nicht so schlecht."
+    },
+    "es": {
+     "t": "La vida diaria en el Reino Unido",
+     "g": "Explora la vida diaria en el Reino Unido, de las colas ordenadas a una taza de té.",
+     "p": [
+      "Hacer cola con paciencia y respetar el turno es un hábito social fuerte, en la parada del autobús, en las tiendas e incluso en el bar.",
+      "El té, a menudo con leche, se toma a lo largo del día, y ofrecer una taza es una forma clásica de dar la bienvenida.",
+      "El pub del barrio es un punto de encuentro, y el humor británico es famoso por ser seco, lleno de understatement e ironía suave."
+     ],
+     "q": "¿Alguna vez notaste un humor difícil de entender en otra cultura?",
+     "c": "Usa hoy un poco de understatement, como decir que un día estupendo no estuvo nada mal."
+    },
+    "fr": {
+     "t": "La vie quotidienne au Royaume-Uni",
+     "g": "Explore la vie quotidienne au Royaume-Uni, des files d'attente bien rangées à la tasse de thé.",
+     "p": [
+      "Faire la queue patiemment et attendre son tour est une habitude forte, à l'arrêt de bus, en magasin et même au bar.",
+      "Le thé, souvent au lait, se boit toute la journée, et proposer une tasse est une façon classique d'accueillir quelqu'un.",
+      "Le pub du coin est un lieu de rencontre, et l'humour britannique est réputé pince-sans-rire, plein d'euphémisme et d'ironie douce."
+     ],
+     "q": "As-tu déjà remarqué un humour difficile à comprendre dans une autre culture ?",
+     "c": "Essaie l'euphémisme aujourd'hui, par exemple en disant d'une super journée qu'elle n'était pas mal du tout."
+    },
+    "it": {
+     "t": "La vita quotidiana nel Regno Unito",
+     "g": "Esplora la vita quotidiana nel Regno Unito, dalle code ordinate a una tazza di tè.",
+     "p": [
+      "Fare la fila con pazienza e rispettare il turno è un'abitudine forte, alla fermata dell'autobus, nei negozi e perfino al bancone.",
+      "Il tè, spesso con latte, si beve durante tutta la giornata, e offrirne una tazza è un modo classico per accogliere qualcuno.",
+      "Il pub di quartiere è un punto d'incontro, e l'umorismo britannico è famoso per essere asciutto, pieno di understatement e ironia."
+     ],
+     "q": "Ti è mai capitato un umorismo difficile da capire in un'altra cultura?",
+     "c": "Prova oggi un po' di understatement, per esempio definendo una giornata splendida niente male."
+    },
+    "pt": {
+     "t": "O dia a dia no Reino Unido",
+     "g": "Explora o dia a dia no Reino Unido, das filas ordenadas a uma chávena de chá.",
+     "p": [
+      "Esperar na fila com paciência e respeitar a vez é um hábito forte, na paragem do autocarro, nas lojas e até ao balcão do bar.",
+      "O chá, muitas vezes com leite, bebe-se ao longo do dia, e oferecer uma chávena é uma forma clássica de receber alguém.",
+      "O pub do bairro é um ponto de encontro, e o humor britânico é famoso por ser seco, cheio de eufemismo e ironia suave."
+     ],
+     "q": "Já reparaste num humor difícil de perceber noutra cultura?",
+     "c": "Experimenta hoje um pouco de eufemismo, como dizer que um dia ótimo não foi nada mau."
+    },
+    "pt_BR": {
+     "t": "O dia a dia no Reino Unido",
+     "g": "Explore o dia a dia no Reino Unido, das filas organizadas a uma xícara de chá.",
+     "p": [
+      "Esperar na fila com paciência e respeitar a vez é um hábito forte, no ponto de ônibus, nas lojas e até no balcão do bar.",
+      "O chá, muitas vezes com leite, é tomado ao longo do dia, e oferecer uma xícara é um jeito clássico de receber alguém.",
+      "O pub do bairro é um ponto de encontro, e o humor britânico é famoso por ser seco, cheio de eufemismo e ironia suave."
+     ],
+     "q": "Você já percebeu um humor difícil de entender em outra cultura?",
+     "c": "Experimente hoje um pouco de eufemismo, como dizer que um dia ótimo não foi nada mau."
+    }
+   }
+  },
+  {
+   "d": 85,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "A tour of Southern Europe",
+     "g": "Visit Italy, Spain, Portugal and Greece, where sun, family and food shape daily life.",
+     "p": [
+      "The Mediterranean diet, rich in olive oil, vegetables, bread, fish and shared meals, is recognised by UNESCO.",
+      "Family often gathers for long Sunday lunches, with grandparents, children and cousins around one table.",
+      "Warm evenings bring people outdoors to squares, terraces and seafronts to walk, talk and meet friends."
+     ],
+     "q": "Which Southern European country would you like to visit for its food or way of life?",
+     "c": "Cook a simple dish with olive oil, tomatoes or fresh herbs today, Mediterranean style."
+    },
+    "de": {
+     "t": "Rundreise durch Südeuropa",
+     "g": "Besuche Italien, Spanien, Portugal und Griechenland, wo Sonne, Familie und Essen den Alltag prägen.",
+     "p": [
+      "Die Mittelmeerküche mit Olivenöl, Gemüse, Brot, Fisch und gemeinsamen Mahlzeiten ist von der UNESCO anerkannt.",
+      "Die Familie trifft sich oft zum langen Sonntagsessen, mit Großeltern, Kindern und Cousins an einem Tisch.",
+      "Warme Abende locken die Menschen auf Plätze, Terrassen und Uferpromenaden, um zu spazieren, zu reden und Freunde zu treffen."
+     ],
+     "q": "Welches südeuropäische Land würdest du wegen seines Essens oder seiner Lebensart gern besuchen?",
+     "c": "Koche heute ein einfaches Gericht mit Olivenöl, Tomaten oder frischen Kräutern, auf mediterrane Art."
+    },
+    "es": {
+     "t": "Un recorrido por el sur de Europa",
+     "g": "Visita Italia, España, Portugal y Grecia, donde el sol, la familia y la comida marcan la vida diaria.",
+     "p": [
+      "La dieta mediterránea, rica en aceite de oliva, verduras, pan, pescado y comidas compartidas, está reconocida por la UNESCO.",
+      "La familia suele reunirse en largas comidas de domingo, con abuelos, hijos y primos alrededor de una mesa.",
+      "Las noches templadas sacan a la gente a plazas, terrazas y paseos marítimos para caminar, charlar y ver a los amigos."
+     ],
+     "q": "¿Qué país del sur de Europa te gustaría visitar por su comida o su estilo de vida?",
+     "c": "Cocina hoy un plato sencillo con aceite de oliva, tomate o hierbas frescas, al estilo mediterráneo."
+    },
+    "fr": {
+     "t": "Tour d'Europe du Sud",
+     "g": "Visite l'Italie, l'Espagne, le Portugal et la Grèce, où le soleil, la famille et la cuisine rythment la vie.",
+     "p": [
+      "La diète méditerranéenne, riche en huile d'olive, légumes, pain, poisson et repas partagés, est reconnue par l'UNESCO.",
+      "La famille se retrouve souvent pour de longs déjeuners du dimanche, grands-parents, enfants et cousins autour d'une table.",
+      "Les soirées douces attirent les gens sur les places, les terrasses et les bords de mer pour marcher, parler et voir des amis."
+     ],
+     "q": "Quel pays d'Europe du Sud aimerais-tu visiter pour sa cuisine ou son mode de vie ?",
+     "c": "Cuisine aujourd'hui un plat simple à l'huile d'olive, aux tomates ou aux herbes fraîches, à la méditerranéenne."
+    },
+    "it": {
+     "t": "Un giro nell'Europa meridionale",
+     "g": "Visita Italia, Spagna, Portogallo e Grecia, dove sole, famiglia e cibo scandiscono la vita.",
+     "p": [
+      "La dieta mediterranea, ricca di olio d'oliva, verdure, pane, pesce e pasti condivisi, è riconosciuta dall'UNESCO.",
+      "La famiglia si riunisce spesso per lunghi pranzi della domenica, con nonni, figli e cugini attorno a un tavolo.",
+      "Le sere tiepide portano la gente in piazze, terrazze e lungomari per passeggiare, chiacchierare e vedere gli amici."
+     ],
+     "q": "Quale paese dell'Europa meridionale vorresti visitare per il cibo o lo stile di vita?",
+     "c": "Cucina oggi un piatto semplice con olio d'oliva, pomodori o erbe fresche, alla mediterranea."
+    },
+    "pt": {
+     "t": "Uma volta pelo Sul da Europa",
+     "g": "Visita a Itália, a Espanha, Portugal e a Grécia, onde o sol, a família e a comida marcam o dia a dia.",
+     "p": [
+      "A dieta mediterrânica, rica em azeite, legumes, pão, peixe e refeições partilhadas, é reconhecida pela UNESCO.",
+      "A família junta-se muitas vezes para longos almoços de domingo, com avós, filhos e primos à volta da mesa.",
+      "As noites amenas levam as pessoas para praças, esplanadas e marginais para passear, conversar e ver os amigos."
+     ],
+     "q": "Que país do Sul da Europa gostavas de visitar pela comida ou pelo modo de vida?",
+     "c": "Cozinha hoje um prato simples com azeite, tomate ou ervas frescas, à mediterrânica."
+    },
+    "pt_BR": {
+     "t": "Um passeio pelo Sul da Europa",
+     "g": "Visite Itália, Espanha, Portugal e Grécia, onde o sol, a família e a comida marcam o dia a dia.",
+     "p": [
+      "A dieta mediterrânea, rica em azeite, legumes, pão, peixe e refeições compartilhadas, é reconhecida pela UNESCO.",
+      "A família costuma se reunir em longos almoços de domingo, com avós, filhos e primos em volta da mesa.",
+      "As noites amenas levam as pessoas para praças, varandas e orlas para passear, conversar e encontrar os amigos."
+     ],
+     "q": "Que país do Sul da Europa você gostaria de visitar pela comida ou pelo estilo de vida?",
+     "c": "Cozinhe hoje um prato simples com azeite, tomate ou ervas frescas, ao estilo mediterrâneo."
+    }
+   }
+  },
+  {
+   "d": 86,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Everyday life in Italy",
+     "g": "Discover daily rituals in Italy, from espresso at the bar to the evening stroll.",
+     "p": [
+      "Many Italians drink a quick espresso standing at the bar, and cappuccino is usually a morning drink.",
+      "Regional pride is strong: each town and region defends its own dishes, dialect and traditions.",
+      "In the early evening many people take a passeggiata, a relaxed stroll through the main street or square to see and be seen."
+     ],
+     "q": "Which Italian ritual would fit best into your day?",
+     "c": "Take a short, relaxed walk this evening, like an Italian passeggiata."
+    },
+    "de": {
+     "t": "Alltag in Italien",
+     "g": "Entdecke tägliche Rituale in Italien, vom Espresso an der Bar bis zum Abendspaziergang.",
+     "p": [
+      "Viele Italiener trinken einen schnellen Espresso im Stehen an der Bar, und Cappuccino ist meist ein Morgengetränk.",
+      "Der Stolz auf die eigene Region ist groß: Jede Stadt und Region verteidigt ihre Gerichte, ihren Dialekt und ihre Bräuche.",
+      "Am frühen Abend machen viele eine Passeggiata, einen entspannten Bummel über Hauptstraße oder Platz, um zu sehen und gesehen zu werden."
+     ],
+     "q": "Welches italienische Ritual würde am besten in deinen Tag passen?",
+     "c": "Mach heute Abend einen kurzen, entspannten Spaziergang, wie eine italienische Passeggiata."
+    },
+    "es": {
+     "t": "La vida diaria en Italia",
+     "g": "Descubre los rituales diarios de Italia, del espresso en la barra al paseo de la tarde.",
+     "p": [
+      "Muchos italianos toman un espresso rápido de pie en la barra, y el capuchino suele ser una bebida de la mañana.",
+      "El orgullo regional es fuerte: cada pueblo y región defiende sus platos, su dialecto y sus tradiciones.",
+      "Al caer la tarde mucha gente hace la passeggiata, un paseo tranquilo por la calle principal o la plaza para ver y dejarse ver."
+     ],
+     "q": "¿Qué ritual italiano encajaría mejor en tu día?",
+     "c": "Da esta tarde un paseo corto y tranquilo, como una passeggiata italiana."
+    },
+    "fr": {
+     "t": "La vie quotidienne en Italie",
+     "g": "Découvre les rituels quotidiens en Italie, de l'espresso au comptoir à la promenade du soir.",
+     "p": [
+      "Beaucoup d'Italiens boivent un espresso rapide debout au comptoir, et le cappuccino se boit surtout le matin.",
+      "La fierté régionale est forte : chaque ville et chaque région défend ses plats, son dialecte et ses traditions.",
+      "En début de soirée, beaucoup font la passeggiata, une flânerie dans la rue principale ou sur la place pour voir et être vu."
+     ],
+     "q": "Quel rituel italien trouverait le mieux sa place dans ta journée ?",
+     "c": "Fais ce soir une courte promenade tranquille, comme une passeggiata italienne."
+    },
+    "it": {
+     "t": "La vita quotidiana in Italia",
+     "g": "Scopri i rituali quotidiani in Italia, dall'espresso al bancone alla passeggiata serale.",
+     "p": [
+      "Molti italiani bevono un espresso veloce in piedi al bancone del bar, e il cappuccino è di solito una bevanda del mattino.",
+      "L'orgoglio locale è forte: ogni città e regione difende i propri piatti, il proprio dialetto e le proprie tradizioni.",
+      "Al tramonto molti fanno la passeggiata, un giro rilassato per il corso o la piazza per vedere gli altri e farsi vedere."
+     ],
+     "q": "Quale rituale italiano si adatterebbe meglio alla tua giornata?",
+     "c": "Fai stasera una breve passeggiata rilassata, proprio come la passeggiata italiana."
+    },
+    "pt": {
+     "t": "O dia a dia em Itália",
+     "g": "Descobre os rituais diários em Itália, do expresso ao balcão ao passeio do fim da tarde.",
+     "p": [
+      "Muitos italianos bebem um expresso rápido de pé ao balcão, e o cappuccino é normalmente uma bebida da manhã.",
+      "O orgulho regional é forte: cada cidade e região defende os seus pratos, o seu dialeto e as suas tradições.",
+      "Ao fim da tarde muitos fazem a passeggiata, um passeio descontraído pela rua principal ou pela praça para ver e ser visto."
+     ],
+     "q": "Que ritual italiano encaixaria melhor no teu dia?",
+     "c": "Dá hoje ao fim da tarde um passeio curto e descontraído, como uma passeggiata italiana."
+    },
+    "pt_BR": {
+     "t": "O dia a dia na Itália",
+     "g": "Descubra os rituais diários na Itália, do espresso no balcão ao passeio do fim de tarde.",
+     "p": [
+      "Muitos italianos tomam um espresso rápido em pé no balcão, e o cappuccino costuma ser uma bebida da manhã.",
+      "O orgulho regional é forte: cada cidade e região defende seus pratos, seu dialeto e suas tradições.",
+      "No fim da tarde muitos fazem a passeggiata, um passeio tranquilo pela rua principal ou pela praça para ver e ser visto."
+     ],
+     "q": "Que ritual italiano combinaria mais com o seu dia?",
+     "c": "Faça hoje no fim da tarde um passeio curto e tranquilo, como uma passeggiata italiana."
+    }
+   }
+  },
+  {
+   "d": 87,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Everyday life in Spain",
+     "g": "Explore daily life in Spain, from late dinners to life in the plaza.",
+     "p": [
+      "Dinner is often eaten late, around nine or ten in the evening, and lunch is the main meal of the day for many.",
+      "Tapas, small shared plates, turn going out into a social outing, moving from bar to bar with friends.",
+      "The plaza is the heart of town life, where children play, neighbours chat and local fiestas fill the streets."
+     ],
+     "q": "Would a late dinner schedule suit you? Why or why not?",
+     "c": "Share a few small dishes with someone today, tapas style."
+    },
+    "de": {
+     "t": "Alltag in Spanien",
+     "g": "Erkunde den Alltag in Spanien, vom späten Abendessen bis zum Leben auf der Plaza.",
+     "p": [
+      "Zu Abend wird oft spät gegessen, gegen neun oder zehn Uhr, und für viele ist das Mittagessen die Hauptmahlzeit.",
+      "Tapas, kleine geteilte Teller, machen das Ausgehen zu einem geselligen Erlebnis, bei dem man mit Freunden von Bar zu Bar zieht.",
+      "Die Plaza ist das Herz des Ortes: Kinder spielen, Nachbarn plaudern, und bei lokalen Fiestas füllen sich die Straßen."
+     ],
+     "q": "Würde dir ein später Essensrhythmus gefallen? Warum oder warum nicht?",
+     "c": "Teile heute ein paar kleine Gerichte mit jemandem, im Tapas-Stil."
+    },
+    "es": {
+     "t": "La vida diaria en España",
+     "g": "Explora la vida diaria en España, de las cenas tardías a la vida en la plaza.",
+     "p": [
+      "Se suele cenar tarde, hacia las nueve o las diez de la noche, y para muchos la comida del mediodía es la principal del día.",
+      "Las tapas, pequeños platos para compartir, convierten salir en un plan social, yendo de bar en bar con los amigos.",
+      "La plaza es el corazón del pueblo: los niños juegan, los vecinos charlan y las fiestas locales llenan las calles."
+     ],
+     "q": "¿Te iría bien cenar tan tarde? ¿Por qué sí o por qué no?",
+     "c": "Comparte hoy unos platitos con alguien, al estilo de las tapas."
+    },
+    "fr": {
+     "t": "La vie quotidienne en Espagne",
+     "g": "Explore la vie quotidienne en Espagne, des dîners tardifs à la vie sur la plaza.",
+     "p": [
+      "On dîne souvent tard, vers vingt et une ou vingt-deux heures, et pour beaucoup le déjeuner est le repas principal.",
+      "Les tapas, petites assiettes à partager, font de chaque sortie un moment convivial, de bar en bar entre amis.",
+      "La plaza est le cœur de la ville : les enfants jouent, les voisins discutent et les fiestas locales remplissent les rues."
+     ],
+     "q": "Un dîner aussi tardif te conviendrait-il ? Pourquoi ?",
+     "c": "Partage aujourd'hui quelques petits plats avec quelqu'un, façon tapas."
+    },
+    "it": {
+     "t": "La vita quotidiana in Spagna",
+     "g": "Esplora la vita quotidiana in Spagna, dalle cene tardive alla vita in piazza.",
+     "p": [
+      "Si cena spesso tardi, verso le nove o le dieci di sera, e per molti il pranzo è il pasto principale della giornata.",
+      "Le tapas, piattini da condividere, trasformano l'uscita in un momento sociale, passando da un bar all'altro con gli amici.",
+      "La plaza è il cuore del paese: i bambini giocano, i vicini chiacchierano e le fiestas locali riempiono le strade."
+     ],
+     "q": "Ti troveresti bene a cenare così tardi? Perché sì o perché no?",
+     "c": "Condividi oggi qualche piattino con qualcuno, in stile tapas."
+    },
+    "pt": {
+     "t": "O dia a dia em Espanha",
+     "g": "Explora o dia a dia em Espanha, dos jantares tardios à vida na praça.",
+     "p": [
+      "Janta-se muitas vezes tarde, por volta das nove ou dez da noite, e para muitos o almoço é a refeição principal.",
+      "As tapas, pequenos pratos para partilhar, tornam sair num programa social, de bar em bar com os amigos.",
+      "A praça é o coração da terra: as crianças brincam, os vizinhos conversam e as festas locais enchem as ruas."
+     ],
+     "q": "Um jantar assim tão tarde servia-te? Porquê?",
+     "c": "Partilha hoje uns pratinhos com alguém, ao estilo das tapas."
+    },
+    "pt_BR": {
+     "t": "O dia a dia na Espanha",
+     "g": "Explore o dia a dia na Espanha, dos jantares tardios à vida na praça.",
+     "p": [
+      "O jantar costuma ser tarde, lá pelas nove ou dez da noite, e para muitos o almoço é a refeição principal.",
+      "As tapas, pratinhos para compartilhar, transformam sair num programa social, de bar em bar com os amigos.",
+      "A praça é o coração da cidade: as crianças brincam, os vizinhos conversam e as festas locais enchem as ruas."
+     ],
+     "q": "Jantar tão tarde funcionaria para você? Por quê?",
+     "c": "Compartilhe hoje alguns pratinhos com alguém, no estilo das tapas."
+    }
+   }
+  },
+  {
+   "d": 88,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Everyday life in Portugal",
+     "g": "Discover saudade, fado, pastries and the relaxed coastal rhythm of Portugal.",
+     "p": [
+      "Saudade is a deep, gentle longing for someone or something you love and miss, a feeling at the heart of Portuguese culture.",
+      "Fado, the soulful song of Lisbon and Coimbra, often expresses saudade and is recognised by UNESCO.",
+      "Pastéis de nata, custard tarts with a crisp pastry, are enjoyed with a small coffee at cafés all over the country."
+     ],
+     "q": "Is there a person, place or time you feel saudade for?",
+     "c": "Listen to one fado song today and notice the feeling it gives you."
+    },
+    "de": {
+     "t": "Alltag in Portugal",
+     "g": "Entdecke Saudade, Fado, Gebäck und den entspannten Küstenrhythmus Portugals.",
+     "p": [
+      "Saudade ist eine tiefe, sanfte Sehnsucht nach jemandem oder etwas, das man liebt und vermisst, ein Kerngefühl der portugiesischen Kultur.",
+      "Fado, das gefühlvolle Lied Lissabons und Coimbras, drückt oft Saudade aus und ist von der UNESCO anerkannt.",
+      "Pastéis de nata, Puddingtörtchen mit knusprigem Teig, genießt man im ganzen Land mit einem kleinen Kaffee im Café."
+     ],
+     "q": "Gibt es einen Menschen, einen Ort oder eine Zeit, nach der du Saudade empfindest?",
+     "c": "Hör dir heute ein Fado-Lied an und achte auf das Gefühl, das es in dir weckt."
+    },
+    "es": {
+     "t": "La vida diaria en Portugal",
+     "g": "Descubre la saudade, el fado, los pasteles y el ritmo tranquilo y costero de Portugal.",
+     "p": [
+      "La saudade es una añoranza profunda y suave de alguien o algo que amas y echas de menos, un sentimiento clave de la cultura portuguesa.",
+      "El fado, la canción llena de alma de Lisboa y Coímbra, suele expresar saudade y está reconocido por la UNESCO.",
+      "Los pastéis de nata, tartaletas de crema con hojaldre crujiente, se disfrutan con un café corto en cafeterías de todo el país."
+     ],
+     "q": "¿Hay alguna persona, lugar o época por la que sientas saudade?",
+     "c": "Escucha hoy un fado y fíjate en lo que te hace sentir."
+    },
+    "fr": {
+     "t": "La vie quotidienne au Portugal",
+     "g": "Découvre la saudade, le fado, les pâtisseries et le rythme côtier détendu du Portugal.",
+     "p": [
+      "La saudade est une nostalgie profonde et douce de quelqu'un ou de quelque chose qu'on aime et qui manque, au cœur de la culture portugaise.",
+      "Le fado, chant plein d'âme de Lisbonne et de Coimbra, exprime souvent la saudade et est reconnu par l'UNESCO.",
+      "Les pastéis de nata, tartelettes à la crème à la pâte croustillante, se dégustent avec un petit café dans tout le pays."
+     ],
+     "q": "Y a-t-il une personne, un lieu ou une époque pour lesquels tu ressens de la saudade ?",
+     "c": "Écoute aujourd'hui un fado et remarque l'émotion qu'il éveille en toi."
+    },
+    "it": {
+     "t": "La vita quotidiana in Portogallo",
+     "g": "Scopri la saudade, il fado, i dolci e il ritmo costiero rilassato del Portogallo.",
+     "p": [
+      "La saudade è una nostalgia profonda e dolce per qualcuno o qualcosa che ami e ti manca, un sentimento al cuore della cultura portoghese.",
+      "Il fado, il canto pieno d'anima di Lisbona e Coimbra, esprime spesso la saudade ed è riconosciuto dall'UNESCO.",
+      "I pastéis de nata, tortine alla crema con pasta croccante, si gustano con un caffè corto nei bar di tutto il paese."
+     ],
+     "q": "C'è una persona, un luogo o un periodo per cui provi saudade?",
+     "c": "Ascolta oggi un fado e nota quale emozione ti suscita."
+    },
+    "pt": {
+     "t": "O dia a dia em Portugal",
+     "g": "Descobre a saudade, o fado, a pastelaria e o ritmo costeiro e descontraído de Portugal.",
+     "p": [
+      "A saudade é uma vontade funda e suave de alguém ou de algo que amamos e de que sentimos falta, um sentimento central da cultura portuguesa.",
+      "O fado, a canção cheia de alma de Lisboa e de Coimbra, exprime muitas vezes saudade e é reconhecido pela UNESCO.",
+      "Os pastéis de nata, de massa estaladiça e creme, saboreiam-se com uma bica ou um café em pastelarias de todo o país."
+     ],
+     "q": "Há alguma pessoa, lugar ou época de que sintas saudade?",
+     "c": "Ouve hoje um fado e repara no sentimento que te desperta."
+    },
+    "pt_BR": {
+     "t": "O dia a dia em Portugal",
+     "g": "Descubra a saudade, o fado, os doces e o ritmo costeiro e tranquilo de Portugal.",
+     "p": [
+      "A saudade é uma vontade funda e suave de alguém ou de algo que amamos e de que sentimos falta, um sentimento central da cultura portuguesa.",
+      "O fado, a canção cheia de alma de Lisboa e de Coimbra, muitas vezes expressa saudade e é reconhecido pela UNESCO.",
+      "Os pastéis de nata, de massa crocante e creme, são saboreados com um cafezinho em confeitarias do país todo."
+     ],
+     "q": "Existe alguma pessoa, lugar ou época de que você sente saudade?",
+     "c": "Ouça hoje um fado e repare no sentimento que ele desperta em você."
+    }
+   }
+  },
+  {
+   "d": 89,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Everyday life in Greece",
+     "g": "Explore Greek hospitality, long meals, name days and island life.",
+     "p": [
+      "Philoxenia, literally love of strangers, is the Greek tradition of welcoming guests and visitors warmly.",
+      "Meals are long and shared, with many small dishes called meze, and friends often linger at the table for hours.",
+      "Many Greeks celebrate their name day, the day linked to their first name, often with more fuss than a birthday."
+     ],
+     "q": "Would you rather celebrate a birthday or a name day? Why?",
+     "c": "Find out if your name has a name day in Greece or in another country."
+    },
+    "de": {
+     "t": "Alltag in Griechenland",
+     "g": "Erkunde griechische Gastfreundschaft, lange Mahlzeiten, Namenstage und Inselleben.",
+     "p": [
+      "Philoxenia, wörtlich Liebe zu Fremden, ist die griechische Tradition, Gäste und Besucher herzlich aufzunehmen.",
+      "Mahlzeiten sind lang und geteilt, mit vielen kleinen Gerichten, Meze genannt, und Freunde bleiben oft stundenlang am Tisch.",
+      "Viele Griechen feiern ihren Namenstag, den Tag, der zu ihrem Vornamen gehört, oft mit mehr Aufwand als den Geburtstag."
+     ],
+     "q": "Würdest du lieber Geburtstag oder Namenstag feiern? Warum?",
+     "c": "Finde heraus, ob dein Name in Griechenland oder einem anderen Land einen Namenstag hat."
+    },
+    "es": {
+     "t": "La vida diaria en Grecia",
+     "g": "Explora la hospitalidad griega, las comidas largas, los santos y la vida en las islas.",
+     "p": [
+      "La filoxenia, literalmente amor al extranjero, es la tradición griega de recibir con calidez a invitados y visitantes.",
+      "Las comidas son largas y compartidas, con muchos platitos llamados meze, y los amigos se quedan horas en la mesa.",
+      "Muchos griegos celebran su onomástica, el día ligado a su nombre de pila, a veces con más fiesta que el cumpleaños."
+     ],
+     "q": "¿Preferirías celebrar tu cumpleaños o tu onomástica? ¿Por qué?",
+     "c": "Averigua si tu nombre tiene onomástica en Grecia o en otro país."
+    },
+    "fr": {
+     "t": "La vie quotidienne en Grèce",
+     "g": "Explore l'hospitalité grecque, les longs repas, les fêtes du prénom et la vie des îles.",
+     "p": [
+      "La philoxenia, littéralement l'amour de l'étranger, est la tradition grecque d'accueillir chaleureusement invités et visiteurs.",
+      "Les repas sont longs et partagés, avec de nombreux petits plats appelés mezze, et les amis restent à table pendant des heures.",
+      "Beaucoup de Grecs fêtent leur fête du prénom, le jour lié à leur prénom, souvent plus que leur anniversaire."
+     ],
+     "q": "Préférerais-tu fêter ton anniversaire ou la fête de ton prénom ? Pourquoi ?",
+     "c": "Cherche si ton prénom a une fête en Grèce ou dans un autre pays."
+    },
+    "it": {
+     "t": "La vita quotidiana in Grecia",
+     "g": "Esplora l'ospitalità greca, i pasti lunghi, gli onomastici e la vita sulle isole.",
+     "p": [
+      "La filoxenia, letteralmente amore per lo straniero, è la tradizione greca di accogliere con calore ospiti e visitatori.",
+      "I pasti sono lunghi e condivisi, con tanti piattini chiamati meze, e gli amici restano spesso a tavola per ore.",
+      "Molti greci festeggiano l'onomastico, il giorno legato al proprio nome, spesso più del compleanno."
+     ],
+     "q": "Preferiresti festeggiare il compleanno o l'onomastico? Perché?",
+     "c": "Scopri se il tuo nome ha un onomastico in Grecia o in un altro paese."
+    },
+    "pt": {
+     "t": "O dia a dia na Grécia",
+     "g": "Explora a hospitalidade grega, as refeições longas, os dias do nome e a vida nas ilhas.",
+     "p": [
+      "A filoxenia, literalmente amor ao estrangeiro, é a tradição grega de receber com calor convidados e visitantes.",
+      "As refeições são longas e partilhadas, com muitos pratinhos chamados meze, e os amigos ficam horas à mesa.",
+      "Muitos gregos festejam o dia do nome, o dia ligado ao seu nome próprio, muitas vezes mais do que o aniversário."
+     ],
+     "q": "Preferias festejar o aniversário ou o dia do teu nome? Porquê?",
+     "c": "Descobre se o teu nome tem um dia do nome na Grécia ou noutro país."
+    },
+    "pt_BR": {
+     "t": "O dia a dia na Grécia",
+     "g": "Explore a hospitalidade grega, as refeições longas, os dias do nome e a vida nas ilhas.",
+     "p": [
+      "A filoxenia, literalmente amor ao estrangeiro, é a tradição grega de receber com carinho convidados e visitantes.",
+      "As refeições são longas e compartilhadas, com muitos pratinhos chamados meze, e os amigos ficam horas à mesa.",
+      "Muitos gregos comemoram o dia do nome, o dia ligado ao seu nome, muitas vezes mais do que o aniversário."
+     ],
+     "q": "Você preferiria comemorar o aniversário ou o dia do seu nome? Por quê?",
+     "c": "Descubra se o seu nome tem um dia do nome na Grécia ou em outro país."
+    }
+   }
+  },
+  {
+   "d": 90,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: Asia, Africa and Europe",
+     "g": "Recap the first half of our world tour with a light quiz.",
+     "p": [
+      "Quick quiz: in which country do people greet with the wai, and where is pho a favourite breakfast?",
+      "Quick quiz: which country has its own 13-month calendar, and what does ubuntu mean?",
+      "Quick quiz: where do people take an evening passeggiata, and which Portuguese word means a gentle longing?"
+     ],
+     "q": "Which country from this first half of the tour surprised you the most?",
+     "c": "Answer the three quiz questions today, then share your favourite discovery with someone."
+    },
+    "de": {
+     "t": "Rückblick: Asien, Afrika und Europa",
+     "g": "Wiederhole die erste Hälfte unserer Weltreise mit einem kleinen Quiz.",
+     "p": [
+      "Quizfrage: In welchem Land grüßt man mit dem Wai, und wo ist Pho ein beliebtes Frühstück?",
+      "Quizfrage: Welches Land hat einen eigenen Kalender mit 13 Monaten, und was bedeutet Ubuntu?",
+      "Quizfrage: Wo macht man abends eine Passeggiata, und welches portugiesische Wort bedeutet sanfte Sehnsucht?"
+     ],
+     "q": "Welches Land aus der ersten Hälfte der Reise hat dich am meisten überrascht?",
+     "c": "Beantworte heute die drei Quizfragen und erzähle dann jemandem von deiner liebsten Entdeckung."
+    },
+    "es": {
+     "t": "Repaso: Asia, África y Europa",
+     "g": "Repasa la primera mitad de nuestra vuelta al mundo con un quiz ligero.",
+     "p": [
+      "Pregunta rápida: ¿en qué país se saluda con el wai y dónde el pho es un desayuno favorito?",
+      "Pregunta rápida: ¿qué país tiene su propio calendario de 13 meses y qué significa ubuntu?",
+      "Pregunta rápida: ¿dónde se da la passeggiata de la tarde y qué palabra portuguesa significa una suave añoranza?"
+     ],
+     "q": "¿Qué país de esta primera mitad del viaje te sorprendió más?",
+     "c": "Responde hoy las tres preguntas del quiz y luego comparte con alguien tu descubrimiento favorito."
+    },
+    "fr": {
+     "t": "Révision : Asie, Afrique et Europe",
+     "g": "Revois la première moitié de notre tour du monde avec un petit quiz.",
+     "p": [
+      "Quiz : dans quel pays salue-t-on avec le wai, et où le pho est-il un petit-déjeuner favori ?",
+      "Quiz : quel pays a son propre calendrier de 13 mois, et que signifie ubuntu ?",
+      "Quiz : où fait-on la passeggiata du soir, et quel mot portugais désigne une douce nostalgie ?"
+     ],
+     "q": "Quel pays de cette première moitié du voyage t'a le plus surpris ?",
+     "c": "Réponds aujourd'hui aux trois questions du quiz, puis partage ta découverte préférée avec quelqu'un."
+    },
+    "it": {
+     "t": "Ripasso: Asia, Africa ed Europa",
+     "g": "Ripassa la prima metà del nostro giro del mondo con un quiz leggero.",
+     "p": [
+      "Quiz: in quale paese ci si saluta con il wai, e dove il pho è una colazione amata?",
+      "Quiz: quale paese ha un proprio calendario di 13 mesi, e che cosa significa ubuntu?",
+      "Quiz: dove si fa la passeggiata serale, e quale parola portoghese indica una dolce nostalgia?"
+     ],
+     "q": "Quale paese di questa prima metà del viaggio ti ha sorpreso di più?",
+     "c": "Rispondi oggi alle tre domande del quiz, poi racconta a qualcuno la tua scoperta preferita."
+    },
+    "pt": {
+     "t": "Revisão: Ásia, África e Europa",
+     "g": "Revê a primeira metade da nossa volta ao mundo com um quiz leve.",
+     "p": [
+      "Quiz: em que país se cumprimenta com o wai, e onde é o pho um pequeno-almoço preferido?",
+      "Quiz: que país tem um calendário próprio com 13 meses, e o que significa ubuntu?",
+      "Quiz: onde se faz a passeggiata ao fim da tarde, e que palavra portuguesa quer dizer uma vontade suave de alguém?"
+     ],
+     "q": "Que país desta primeira metade da viagem mais te surpreendeu?",
+     "c": "Responde hoje às três perguntas do quiz e depois partilha com alguém a tua descoberta preferida."
+    },
+    "pt_BR": {
+     "t": "Revisão: Ásia, África e Europa",
+     "g": "Relembre a primeira metade da nossa volta ao mundo com um quiz leve.",
+     "p": [
+      "Quiz: em que país as pessoas se cumprimentam com o wai, e onde o pho é um café da manhã querido?",
+      "Quiz: que país tem um calendário próprio com 13 meses, e o que significa ubuntu?",
+      "Quiz: onde se faz a passeggiata no fim da tarde, e que palavra portuguesa quer dizer uma falta suave de alguém?"
+     ],
+     "q": "Qual país desta primeira metade da viagem mais surpreendeu você?",
+     "c": "Responda hoje às três perguntas do quiz e depois compartilhe com alguém sua descoberta favorita."
+    }
+   }
+  }
+ ]
+}

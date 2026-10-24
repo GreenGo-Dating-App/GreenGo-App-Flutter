@@ -1,0 +1,2195 @@
+{
+"topic": "healthy_eating",
+"days": [
+{
+"d": 1,
+"lv": "beginner",
+"t": "What healthy eating really means",
+"f": "Variety, balance and enjoyment as the heart of eating well, not rules or restriction"
+},
+{
+"d": 2,
+"lv": "beginner",
+"t": "Your food story",
+"f": "Noticing the foods, flavours and family meals that shaped how you eat today"
+},
+{
+"d": 3,
+"lv": "beginner",
+"t": "The idea of a balanced plate",
+"f": "A simple visual: vegetables and fruit, whole grains and protein foods sharing one plate"
+},
+{
+"d": 4,
+"lv": "beginner",
+"t": "Meet the food groups",
+"f": "The main food groups and the different good things each one brings to meals"
+},
+{
+"d": 5,
+"lv": "beginner",
+"t": "Eating the rainbow",
+"f": "Why different colours of vegetables and fruit offer different nutrients"
+},
+{
+"d": 6,
+"lv": "beginner",
+"t": "Water as your everyday drink",
+"f": "Simple ways to keep a water bottle or glass handy throughout the day"
+},
+{
+"d": 7,
+"lv": "beginner",
+"t": "Tasty ways to drink more water",
+"f": "Infusing water with citrus, mint or cucumber and enjoying herbal teas"
+},
+{
+"d": 8,
+"lv": "beginner",
+"t": "Regular meal rhythms",
+"f": "How a steady rhythm of meals and snacks can help energy feel more even"
+},
+{
+"d": 9,
+"lv": "beginner",
+"t": "Listening to hunger and fullness",
+"f": "Noticing gentle hunger signals and the feeling of being comfortably satisfied"
+},
+{
+"d": 10,
+"lv": "beginner",
+"t": "Slowing down at the table",
+"f": "Chewing well, putting the fork down and actually tasting your food"
+},
+{
+"d": 11,
+"lv": "beginner",
+"t": "One small change at a time",
+"f": "Why tiny, realistic swaps last longer than big dramatic changes"
+},
+{
+"d": 12,
+"lv": "beginner",
+"t": "Adding instead of cutting",
+"f": "Focusing on what to add to meals, like a vegetable or a handful of beans"
+},
+{
+"d": 13,
+"lv": "beginner",
+"t": "Whole foods versus highly processed foods",
+"f": "A friendly look at the processing spectrum, from fresh to ready-made"
+},
+{
+"d": 14,
+"lv": "beginner",
+"t": "Cooking more at home",
+"f": "How simple home cooking puts you in charge of ingredients and flavour"
+},
+{
+"d": 15,
+"lv": "beginner",
+"t": "A simple pantry starter kit",
+"f": "Staples like oats, rice, canned beans, tomatoes and spices for easy meals"
+},
+{
+"d": 16,
+"lv": "beginner",
+"t": "Fresh, frozen and canned",
+"f": "Why frozen and canned vegetables and fruit can be smart, nutritious choices"
+},
+{
+"d": 17,
+"lv": "beginner",
+"t": "Herbs and spices for flavour",
+"f": "Using herbs and spices to make food exciting while relying less on salt"
+},
+{
+"d": 18,
+"lv": "beginner",
+"t": "Getting to know salt",
+"f": "Where most salt in meals comes from and easy ways to enjoy food with less of it"
+},
+{
+"d": 19,
+"lv": "beginner",
+"t": "Getting to know added sugars",
+"f": "Spotting added sugars in drinks and snacks and enjoying sweets mindfully"
+},
+{
+"d": 20,
+"lv": "beginner",
+"t": "Fibre and why it matters",
+"f": "What fibre is, where it is found and how it supports digestion"
+},
+{
+"d": 21,
+"lv": "beginner",
+"t": "Building a better breakfast",
+"f": "Combining whole grains, fruit and a protein food for a satisfying start"
+},
+{
+"d": 22,
+"lv": "beginner",
+"t": "Simple, balanced lunches",
+"f": "Using the plate idea for quick lunches at home, school or work"
+},
+{
+"d": 23,
+"lv": "beginner",
+"t": "Easy weeknight dinners",
+"f": "Fast dinner ideas built from a few fresh and pantry ingredients"
+},
+{
+"d": 24,
+"lv": "beginner",
+"t": "Smart snacking basics",
+"f": "Snacks that combine fruit, vegetables, nuts or yoghurt to bridge the gap"
+},
+{
+"d": 25,
+"lv": "beginner",
+"t": "Eating with others",
+"f": "How shared meals with family or friends make eating more enjoyable"
+},
+{
+"d": 26,
+"lv": "beginner",
+"t": "Food and mood",
+"f": "General links between regular meals, hydration and feeling energised"
+},
+{
+"d": 27,
+"lv": "beginner",
+"t": "Enjoying treats without guilt",
+"f": "Why favourite treats can fit into a varied, relaxed way of eating"
+},
+{
+"d": 28,
+"lv": "beginner",
+"t": "Every body is different",
+"f": "Respecting that needs vary and that a doctor or dietitian helps with individual questions"
+},
+{
+"d": 29,
+"lv": "beginner",
+"t": "Kind words about food and bodies",
+"f": "Talking about food and bodies with kindness and without labels like good or bad"
+},
+{
+"d": 30,
+"lv": "beginner",
+"t": "Month one review",
+"f": "Looking back at the balanced plate, water, fibre and mindful eating habits"
+},
+{
+"d": 31,
+"lv": "beginner",
+"t": "Why vegetables deserve the spotlight",
+"f": "The vitamins, minerals and fibre vegetables bring to everyday meals"
+},
+{
+"d": 32,
+"lv": "beginner",
+"t": "Leafy greens",
+"f": "Spinach, kale, lettuce and chard, and easy ways to add them to meals"
+},
+{
+"d": 33,
+"lv": "beginner",
+"t": "The cabbage family",
+"f": "Broccoli, cauliflower, cabbage and Brussels sprouts and how to make them delicious"
+},
+{
+"d": 34,
+"lv": "beginner",
+"t": "Root vegetables",
+"f": "Carrots, beets, sweet potatoes and parsnips for colour and comfort"
+},
+{
+"d": 35,
+"lv": "beginner",
+"t": "The onion family",
+"f": "Onions, garlic, leeks and spring onions as the flavour base of world cooking"
+},
+{
+"d": 36,
+"lv": "beginner",
+"t": "Tomatoes and peppers",
+"f": "Versatile fruits used as vegetables, raw, roasted and in sauces"
+},
+{
+"d": 37,
+"lv": "beginner",
+"t": "Squash and pumpkin",
+"f": "Hearty, colourful squashes for soups, roasts and even baking"
+},
+{
+"d": 38,
+"lv": "beginner",
+"t": "Mushrooms",
+"f": "Savoury mushrooms and how they add depth to many dishes"
+},
+{
+"d": 39,
+"lv": "beginner",
+"t": "Sneaking veggies into favourite dishes",
+"f": "Grating, blending and chopping vegetables into sauces, eggs and pasta"
+},
+{
+"d": 40,
+"lv": "beginner",
+"t": "Roasting vegetables",
+"f": "How roasting brings out natural sweetness and crisp edges"
+},
+{
+"d": 41,
+"lv": "beginner",
+"t": "Raw vegetable ideas",
+"f": "Crunchy salads, slaws and veggie sticks with tasty dips"
+},
+{
+"d": 42,
+"lv": "beginner",
+"t": "Soups full of vegetables",
+"f": "Building a simple soup from vegetables, broth and herbs"
+},
+{
+"d": 43,
+"lv": "beginner",
+"t": "Fruit as a natural sweet",
+"f": "Enjoying whole fruit as a snack or a simple dessert"
+},
+{
+"d": 44,
+"lv": "beginner",
+"t": "Berries",
+"f": "Strawberries, blueberries and friends, fresh or frozen, in many dishes"
+},
+{
+"d": 45,
+"lv": "beginner",
+"t": "Citrus fruits",
+"f": "Oranges, lemons, limes and grapefruit for juice, zest and freshness"
+},
+{
+"d": 46,
+"lv": "beginner",
+"t": "Tropical fruits",
+"f": "Mango, pineapple, papaya and banana from warm climates around the world"
+},
+{
+"d": 47,
+"lv": "beginner",
+"t": "Apples, pears and stone fruits",
+"f": "Everyday fruits and the joy of eating them in season"
+},
+{
+"d": 48,
+"lv": "beginner",
+"t": "Whole fruit versus juice",
+"f": "Why whole fruit keeps its fibre and how to enjoy juice in small amounts"
+},
+{
+"d": 49,
+"lv": "beginner",
+"t": "Dried fruit",
+"f": "Raisins, dates and apricots as concentrated, sweet additions to meals"
+},
+{
+"d": 50,
+"lv": "beginner",
+"t": "Smoothies done well",
+"f": "Blending fruit, vegetables and yoghurt or milk into a balanced drink"
+},
+{
+"d": 51,
+"lv": "beginner",
+"t": "Seasonal produce",
+"f": "Why fruit and vegetables taste best and often cost less in season"
+},
+{
+"d": 52,
+"lv": "beginner",
+"t": "Visiting a market",
+"f": "Exploring a local market, talking to growers and discovering new produce"
+},
+{
+"d": 53,
+"lv": "beginner",
+"t": "Washing and storing produce",
+"f": "Simple ways to keep fruit and vegetables fresh for longer"
+},
+{
+"d": 54,
+"lv": "beginner",
+"t": "Trying one new vegetable",
+"f": "Choosing an unfamiliar vegetable and finding an easy way to cook it"
+},
+{
+"d": 55,
+"lv": "beginner",
+"t": "Vegetables in world cuisines",
+"f": "How cuisines from India to Mexico turn vegetables into star dishes"
+},
+{
+"d": 56,
+"lv": "beginner",
+"t": "Picky eating at any age",
+"f": "Gentle, patient ways to explore new tastes without pressure"
+},
+{
+"d": 57,
+"lv": "beginner",
+"t": "Growing herbs at home",
+"f": "Starting a small pot of basil, parsley or mint on a windowsill"
+},
+{
+"d": 58,
+"lv": "beginner",
+"t": "Colourful salads that satisfy",
+"f": "Adding grains, beans, nuts and dressing to turn salad into a meal"
+},
+{
+"d": 59,
+"lv": "beginner",
+"t": "Half a plate of plants",
+"f": "Practical ways to fill about half the plate with vegetables and fruit"
+},
+{
+"d": 60,
+"lv": "beginner",
+"t": "Produce month review",
+"f": "Celebrating the vegetables and fruit you tried and liked this month"
+},
+{
+"d": 61,
+"lv": "beginner",
+"t": "What whole grains are",
+"f": "The bran, germ and endosperm and why whole grains keep all three"
+},
+{
+"d": 62,
+"lv": "beginner",
+"t": "Oats",
+"f": "Porridge, overnight oats and oat-based baking for a fibre-rich start"
+},
+{
+"d": 63,
+"lv": "beginner",
+"t": "Brown rice and other rices",
+"f": "Brown, red, black and wild rice and how to cook them well"
+},
+{
+"d": 64,
+"lv": "beginner",
+"t": "Wholegrain bread",
+"f": "How to spot wholegrain bread on the shelf and enjoy it in many ways"
+},
+{
+"d": 65,
+"lv": "beginner",
+"t": "Wholewheat pasta and noodles",
+"f": "Wholegrain pasta, soba and other noodles in everyday cooking"
+},
+{
+"d": 66,
+"lv": "beginner",
+"t": "Quinoa",
+"f": "A seed cooked like a grain, from the Andes to kitchens worldwide"
+},
+{
+"d": 67,
+"lv": "beginner",
+"t": "Ancient grains",
+"f": "Barley, farro, millet, bulgur and spelt and their long history"
+},
+{
+"d": 68,
+"lv": "beginner",
+"t": "Corn and maize traditions",
+"f": "Tortillas, polenta and popcorn and the cultures built around maize"
+},
+{
+"d": 69,
+"lv": "beginner",
+"t": "Cooking grains in batches",
+"f": "Making a big pot of grains to use in meals across several days"
+},
+{
+"d": 70,
+"lv": "beginner",
+"t": "Legumes, the humble superstars",
+"f": "Beans, lentils and peas as sources of fibre and plant protein"
+},
+{
+"d": 71,
+"lv": "beginner",
+"t": "Lentils",
+"f": "Red, green and brown lentils and how quickly they cook"
+},
+{
+"d": 72,
+"lv": "beginner",
+"t": "Chickpeas",
+"f": "Hummus, curries, roasted snacks and stews made with chickpeas"
+},
+{
+"d": 73,
+"lv": "beginner",
+"t": "Beans from around the world",
+"f": "Black beans, kidney beans, cannellini and their classic dishes"
+},
+{
+"d": 74,
+"lv": "beginner",
+"t": "Peas and edamame",
+"f": "Green peas and young soybeans as easy, colourful additions"
+},
+{
+"d": 75,
+"lv": "beginner",
+"t": "Tofu and tempeh",
+"f": "Soy foods, how they are made and how to cook them with flavour"
+},
+{
+"d": 76,
+"lv": "beginner",
+"t": "Canned versus dried beans",
+"f": "Convenience versus cost, plus rinsing canned beans to reduce salt"
+},
+{
+"d": 77,
+"lv": "beginner",
+"t": "Making legumes easier to digest",
+"f": "Soaking, rinsing and introducing beans gradually"
+},
+{
+"d": 78,
+"lv": "beginner",
+"t": "Nuts",
+"f": "Almonds, walnuts, cashews and others as crunchy, nourishing additions"
+},
+{
+"d": 79,
+"lv": "beginner",
+"t": "Seeds",
+"f": "Sunflower, pumpkin, chia, flax and sesame seeds and how to use them"
+},
+{
+"d": 80,
+"lv": "beginner",
+"t": "Nut and seed butters",
+"f": "Choosing simple nut butters and enjoying them on toast or fruit"
+},
+{
+"d": 81,
+"lv": "beginner",
+"t": "Plant protein combos",
+"f": "Classic pairings like rice and beans or hummus and pita"
+},
+{
+"d": 82,
+"lv": "beginner",
+"t": "Meatless meals for everyone",
+"f": "Enjoying a plant-based dinner now and then, whatever your usual style"
+},
+{
+"d": 83,
+"lv": "beginner",
+"t": "Grain bowls",
+"f": "Building a bowl from grains, vegetables, protein and a tasty sauce"
+},
+{
+"d": 84,
+"lv": "beginner",
+"t": "Stews and curries",
+"f": "One-pot dishes that combine legumes, vegetables and spices"
+},
+{
+"d": 85,
+"lv": "beginner",
+"t": "Breakfast grains around the world",
+"f": "Congee, muesli, upma and other grain breakfasts from many cultures"
+},
+{
+"d": 86,
+"lv": "beginner",
+"t": "Baking with whole grains",
+"f": "Swapping some white flour for wholemeal in muffins and breads"
+},
+{
+"d": 87,
+"lv": "beginner",
+"t": "Flours from different plants",
+"f": "Chickpea, buckwheat, rice and almond flours and their uses"
+},
+{
+"d": 88,
+"lv": "beginner",
+"t": "Fibre-rich swaps",
+"f": "Easy swaps like brown rice for white rice or adding seeds to yoghurt"
+},
+{
+"d": 89,
+"lv": "beginner",
+"t": "Legume week challenge",
+"f": "Planning to enjoy beans or lentils in a few different meals this week"
+},
+{
+"d": 90,
+"lv": "beginner",
+"t": "Grains and legumes review",
+"f": "Revisiting whole grains, beans, nuts and seeds and favourite dishes"
+},
+{
+"d": 91,
+"lv": "beginner",
+"t": "Protein basics",
+"f": "What protein does in the body and the many foods that provide it"
+},
+{
+"d": 92,
+"lv": "beginner",
+"t": "Variety in protein foods",
+"f": "Rotating between fish, eggs, beans, dairy, poultry and other options"
+},
+{
+"d": 93,
+"lv": "beginner",
+"t": "Eggs",
+"f": "Boiled, scrambled, poached or baked, and eggs in dishes worldwide"
+},
+{
+"d": 94,
+"lv": "beginner",
+"t": "Fish and seafood",
+"f": "Oily and white fish and simple ways to cook them at home"
+},
+{
+"d": 95,
+"lv": "beginner",
+"t": "Poultry",
+"f": "Chicken and turkey prepared in lighter, flavourful ways"
+},
+{
+"d": 96,
+"lv": "beginner",
+"t": "Red meat in a varied diet",
+"f": "Enjoying red meat as part of variety and choosing leaner cuts sometimes"
+},
+{
+"d": 97,
+"lv": "beginner",
+"t": "Processed meats",
+"f": "What counts as processed meat and why many guidelines suggest eating it less"
+},
+{
+"d": 98,
+"lv": "beginner",
+"t": "Dairy foods",
+"f": "Milk, yoghurt and cheese and the calcium and protein they offer"
+},
+{
+"d": 99,
+"lv": "beginner",
+"t": "Fermented dairy",
+"f": "Yoghurt and kefir and the long tradition of fermenting milk"
+},
+{
+"d": 100,
+"lv": "beginner",
+"t": "Plant-based milks",
+"f": "Soy, oat, almond and other drinks and checking labels for added calcium"
+},
+{
+"d": 101,
+"lv": "beginner",
+"t": "Calcium beyond dairy",
+"f": "Leafy greens, tofu, almonds and fortified foods that contain calcium"
+},
+{
+"d": 102,
+"lv": "beginner",
+"t": "Fats in food",
+"f": "Why fats are needed and the difference between the main types"
+},
+{
+"d": 103,
+"lv": "beginner",
+"t": "Olive oil and other plant oils",
+"f": "Using olive, rapeseed and other oils in cooking and dressings"
+},
+{
+"d": 104,
+"lv": "beginner",
+"t": "Avocado",
+"f": "A creamy fruit full of healthy fats, from guacamole to toast"
+},
+{
+"d": 105,
+"lv": "beginner",
+"t": "Omega-3 sources",
+"f": "Oily fish, walnuts, flax and chia as sources of omega-3 fats"
+},
+{
+"d": 106,
+"lv": "beginner",
+"t": "Butter and cream in moderation",
+"f": "Enjoying rich ingredients in smaller amounts for flavour"
+},
+{
+"d": 107,
+"lv": "beginner",
+"t": "Fried foods occasionally",
+"f": "Enjoying fried favourites now and then and trying oven or air frying"
+},
+{
+"d": 108,
+"lv": "beginner",
+"t": "Building balanced meals with protein",
+"f": "Combining protein, vegetables and grains on one plate"
+},
+{
+"d": 109,
+"lv": "beginner",
+"t": "Portion awareness without counting",
+"f": "Using your hand and plate as relaxed guides instead of numbers"
+},
+{
+"d": 110,
+"lv": "beginner",
+"t": "Protein at breakfast",
+"f": "Eggs, yoghurt, beans or nut butter to start the day feeling full"
+},
+{
+"d": 111,
+"lv": "beginner",
+"t": "Batch-cooking protein",
+"f": "Cooking beans, eggs or chicken ahead for quick meals"
+},
+{
+"d": 112,
+"lv": "beginner",
+"t": "Simple marinades",
+"f": "Using acids, herbs and spices to add flavour to protein foods"
+},
+{
+"d": 113,
+"lv": "beginner",
+"t": "Fish dishes from coastal cultures",
+"f": "Grilled sardines, ceviche, fish curry and other coastal classics"
+},
+{
+"d": 114,
+"lv": "beginner",
+"t": "Protein foods on a budget",
+"f": "Eggs, lentils, canned fish and beans as affordable choices"
+},
+{
+"d": 115,
+"lv": "beginner",
+"t": "Vegetarian and vegan basics",
+"f": "General ideas for varied plant-based eating and when to ask a dietitian"
+},
+{
+"d": 116,
+"lv": "beginner",
+"t": "Fermented foods around the world",
+"f": "Kimchi, sauerkraut, miso and yoghurt as traditional fermented foods"
+},
+{
+"d": 117,
+"lv": "beginner",
+"t": "Drinks beyond water",
+"f": "Milk, tea, coffee and sparkling water as part of daily hydration"
+},
+{
+"d": 118,
+"lv": "beginner",
+"t": "Sugary drinks awareness",
+"f": "How soft drinks and energy drinks add sugar and easy alternatives"
+},
+{
+"d": 119,
+"lv": "beginner",
+"t": "Gut-friendly eating",
+"f": "General ideas about fibre, variety and fermented foods for digestion"
+},
+{
+"d": 120,
+"lv": "beginner",
+"t": "Beginner stage review",
+"f": "Celebrating 120 days of new habits, foods and kitchen confidence"
+},
+{
+"d": 121,
+"lv": "intermediate",
+"t": "Planning meals for the week",
+"f": "A simple weekly plan that saves time, money and stress"
+},
+{
+"d": 122,
+"lv": "intermediate",
+"t": "Writing a smart shopping list",
+"f": "Organising your list by store section and by planned meals"
+},
+{
+"d": 123,
+"lv": "intermediate",
+"t": "Shopping the store perimeter",
+"f": "Where fresh foods usually sit in a supermarket and how to navigate it"
+},
+{
+"d": 124,
+"lv": "intermediate",
+"t": "Reading the ingredients list",
+"f": "How ingredients are listed in order of amount and what to look for"
+},
+{
+"d": 125,
+"lv": "intermediate",
+"t": "Understanding nutrition labels",
+"f": "The main parts of a nutrition panel and how to compare products"
+},
+{
+"d": 126,
+"lv": "intermediate",
+"t": "Comparing similar products",
+"f": "Using labels to choose between two breads, cereals or yoghurts"
+},
+{
+"d": 127,
+"lv": "intermediate",
+"t": "Front-of-pack labels",
+"f": "Traffic lights, scores and symbols used in different countries"
+},
+{
+"d": 128,
+"lv": "intermediate",
+"t": "Marketing words on packaging",
+"f": "What claims like natural, light or wholesome may and may not mean"
+},
+{
+"d": 129,
+"lv": "intermediate",
+"t": "Spotting hidden salt",
+"f": "Bread, sauces, soups and snacks as common sources of salt"
+},
+{
+"d": 130,
+"lv": "intermediate",
+"t": "Spotting hidden sugar",
+"f": "The many names for sugar on ingredient lists"
+},
+{
+"d": 131,
+"lv": "intermediate",
+"t": "Breakfast cereal aisle",
+"f": "Choosing cereals with more whole grains and fibre and less sugar"
+},
+{
+"d": 132,
+"lv": "intermediate",
+"t": "Yoghurt aisle",
+"f": "Plain versus flavoured yoghurt and adding your own fruit"
+},
+{
+"d": 133,
+"lv": "intermediate",
+"t": "Bread aisle",
+"f": "Telling true wholegrain bread from bread that just looks brown"
+},
+{
+"d": 134,
+"lv": "intermediate",
+"t": "Snack aisle",
+"f": "Finding snacks with simple ingredients and enjoying favourites sometimes"
+},
+{
+"d": 135,
+"lv": "intermediate",
+"t": "Frozen aisle treasures",
+"f": "Frozen vegetables, fruit, fish and grains as time savers"
+},
+{
+"d": 136,
+"lv": "intermediate",
+"t": "Canned and jarred staples",
+"f": "Tomatoes, beans, fish and vegetables that keep for months"
+},
+{
+"d": 137,
+"lv": "intermediate",
+"t": "Eating well on a budget",
+"f": "Practical tips for nutritious meals when money is tight"
+},
+{
+"d": 138,
+"lv": "intermediate",
+"t": "Reducing food waste",
+"f": "Using leftovers, storing food well and planning portions"
+},
+{
+"d": 139,
+"lv": "intermediate",
+"t": "Understanding date labels",
+"f": "The difference between use-by and best-before dates"
+},
+{
+"d": 140,
+"lv": "intermediate",
+"t": "Organising your fridge",
+"f": "Where to store foods for freshness and safety"
+},
+{
+"d": 141,
+"lv": "intermediate",
+"t": "Organising your pantry",
+"f": "Keeping staples visible so healthy options are easy to reach"
+},
+{
+"d": 142,
+"lv": "intermediate",
+"t": "Shopping with kids or friends",
+"f": "Turning grocery trips into fun learning moments"
+},
+{
+"d": 143,
+"lv": "intermediate",
+"t": "Online grocery shopping",
+"f": "Using lists and filters to shop thoughtfully online"
+},
+{
+"d": 144,
+"lv": "intermediate",
+"t": "Choosing ready meals wisely",
+"f": "Reading labels on ready meals and adding a side of vegetables"
+},
+{
+"d": 145,
+"lv": "intermediate",
+"t": "Bulk buying basics",
+"f": "Which foods are worth buying in larger amounts and how to store them"
+},
+{
+"d": 146,
+"lv": "intermediate",
+"t": "Local and farmers markets",
+"f": "Benefits of buying seasonal food from local producers"
+},
+{
+"d": 147,
+"lv": "intermediate",
+"t": "Shopping in another country",
+"f": "Discovering new foods and labels when travelling or living abroad"
+},
+{
+"d": 148,
+"lv": "intermediate",
+"t": "Mindful food shopping",
+"f": "Shopping when not hungry and sticking to your plan"
+},
+{
+"d": 149,
+"lv": "intermediate",
+"t": "Building a weekly menu template",
+"f": "Using themes like soup night or bean night to plan easily"
+},
+{
+"d": 150,
+"lv": "intermediate",
+"t": "Shopping month review",
+"f": "Revisiting labels, lists and smart choices at the store"
+},
+{
+"d": 151,
+"lv": "intermediate",
+"t": "Knife skills basics",
+"f": "Holding a knife safely and basic cuts like dicing and slicing"
+},
+{
+"d": 152,
+"lv": "intermediate",
+"t": "Kitchen tools that help",
+"f": "A few useful tools for simple healthy cooking"
+},
+{
+"d": 153,
+"lv": "intermediate",
+"t": "Steaming",
+"f": "A gentle method that keeps vegetables bright and crisp"
+},
+{
+"d": 154,
+"lv": "intermediate",
+"t": "Stir-frying",
+"f": "Quick, high-heat cooking with little oil and lots of vegetables"
+},
+{
+"d": 155,
+"lv": "intermediate",
+"t": "Baking and roasting",
+"f": "Using the oven for vegetables, fish and whole dishes"
+},
+{
+"d": 156,
+"lv": "intermediate",
+"t": "Grilling",
+"f": "Cooking on a grill or griddle pan for smoky flavour"
+},
+{
+"d": 157,
+"lv": "intermediate",
+"t": "Poaching and simmering",
+"f": "Gentle cooking in liquid for eggs, fish and fruit"
+},
+{
+"d": 158,
+"lv": "intermediate",
+"t": "Sautéing with less oil",
+"f": "Using a good pan and a splash of water or broth"
+},
+{
+"d": 159,
+"lv": "intermediate",
+"t": "Making your own dressings",
+"f": "Simple vinaigrettes from oil, acid and seasoning"
+},
+{
+"d": 160,
+"lv": "intermediate",
+"t": "Homemade sauces",
+"f": "Tomato sauce, yoghurt sauce and pesto made from scratch"
+},
+{
+"d": 161,
+"lv": "intermediate",
+"t": "Cooking with spices",
+"f": "Toasting, blooming and pairing spices for bold flavour"
+},
+{
+"d": 162,
+"lv": "intermediate",
+"t": "Fresh herbs in cooking",
+"f": "When to add tender and hardy herbs for the best taste"
+},
+{
+"d": 163,
+"lv": "intermediate",
+"t": "Building flavour without salt",
+"f": "Using acids, aromatics, umami and heat to season food"
+},
+{
+"d": 164,
+"lv": "intermediate",
+"t": "Umami",
+"f": "The savoury fifth taste found in tomatoes, mushrooms and miso"
+},
+{
+"d": 165,
+"lv": "intermediate",
+"t": "One-pot meals",
+"f": "Cooking whole meals in one pot for less washing up"
+},
+{
+"d": 166,
+"lv": "intermediate",
+"t": "Sheet-pan dinners",
+"f": "Roasting protein and vegetables together on one tray"
+},
+{
+"d": 167,
+"lv": "intermediate",
+"t": "Slow cooking",
+"f": "Letting stews and beans cook gently for deep flavour"
+},
+{
+"d": 168,
+"lv": "intermediate",
+"t": "Quick meals in 15 minutes",
+"f": "Fast combinations for busy days using pantry staples"
+},
+{
+"d": 169,
+"lv": "intermediate",
+"t": "Cooking for one",
+"f": "Scaling recipes and using leftovers well when cooking solo"
+},
+{
+"d": 170,
+"lv": "intermediate",
+"t": "Cooking for a crowd",
+"f": "Planning simple, balanced dishes for family or friends"
+},
+{
+"d": 171,
+"lv": "intermediate",
+"t": "Food safety basics",
+"f": "Clean, separate, cook and chill as the four key safety habits"
+},
+{
+"d": 172,
+"lv": "intermediate",
+"t": "Storing leftovers safely",
+"f": "Cooling, storing and reheating leftovers the right way"
+},
+{
+"d": 173,
+"lv": "intermediate",
+"t": "Freezing meals",
+"f": "Which dishes freeze well and how to label and thaw them"
+},
+{
+"d": 174,
+"lv": "intermediate",
+"t": "Meal prep for the week",
+"f": "Preparing ingredients or meals ahead for easy eating"
+},
+{
+"d": 175,
+"lv": "intermediate",
+"t": "Reinventing leftovers",
+"f": "Turning last night's dinner into a new lunch"
+},
+{
+"d": 176,
+"lv": "intermediate",
+"t": "Adapting recipes to be more balanced",
+"f": "Adding vegetables, using whole grains and adjusting salt"
+},
+{
+"d": 177,
+"lv": "intermediate",
+"t": "Healthier baking ideas",
+"f": "Using fruit, whole grains and nuts in home baking"
+},
+{
+"d": 178,
+"lv": "intermediate",
+"t": "Cooking with children",
+"f": "Age-friendly kitchen tasks that build curiosity about food"
+},
+{
+"d": 179,
+"lv": "intermediate",
+"t": "Cooking from what you have",
+"f": "Creating a meal from whatever is in the fridge"
+},
+{
+"d": 180,
+"lv": "intermediate",
+"t": "Kitchen skills review",
+"f": "Revisiting cooking methods, safety and favourite recipes"
+},
+{
+"d": 181,
+"lv": "intermediate",
+"t": "Breakfasts around the world",
+"f": "Comparing morning meals from Japan, Turkey, Brazil and beyond"
+},
+{
+"d": 182,
+"lv": "intermediate",
+"t": "Make-ahead breakfasts",
+"f": "Overnight oats, egg muffins and chia pots for busy mornings"
+},
+{
+"d": 183,
+"lv": "intermediate",
+"t": "Packed lunches",
+"f": "Building a balanced lunchbox that stays fresh and tasty"
+},
+{
+"d": 184,
+"lv": "intermediate",
+"t": "Work and school lunches",
+"f": "Eating well away from home with a little planning"
+},
+{
+"d": 185,
+"lv": "intermediate",
+"t": "Afternoon energy",
+"f": "Snack and hydration ideas for the afternoon slump"
+},
+{
+"d": 186,
+"lv": "intermediate",
+"t": "Thoughtful snacking",
+"f": "Choosing snacks when truly hungry and enjoying them calmly"
+},
+{
+"d": 187,
+"lv": "intermediate",
+"t": "Dinner as a family ritual",
+"f": "Creating a relaxed evening meal tradition"
+},
+{
+"d": 188,
+"lv": "intermediate",
+"t": "Late evening eating",
+"f": "Gentle ideas for lighter evening meals and their timing"
+},
+{
+"d": 189,
+"lv": "intermediate",
+"t": "Eating out wisely",
+"f": "Navigating restaurant menus and enjoying the experience"
+},
+{
+"d": 190,
+"lv": "intermediate",
+"t": "Takeaway choices",
+"f": "Choosing balanced options from common takeaway cuisines"
+},
+{
+"d": 191,
+"lv": "intermediate",
+"t": "Fast food sometimes",
+"f": "Making the most of fast food when it is the convenient choice"
+},
+{
+"d": 192,
+"lv": "intermediate",
+"t": "Eating at events and parties",
+"f": "Enjoying celebrations while staying tuned in to your body"
+},
+{
+"d": 193,
+"lv": "intermediate",
+"t": "Eating while travelling",
+"f": "Finding balanced food at airports, stations and on the road"
+},
+{
+"d": 194,
+"lv": "intermediate",
+"t": "Eating on busy days",
+"f": "Strategies for nourishment when schedules are packed"
+},
+{
+"d": 195,
+"lv": "intermediate",
+"t": "Eating with shift work",
+"f": "General ideas for regular meals when working unusual hours"
+},
+{
+"d": 196,
+"lv": "intermediate",
+"t": "Eating for an active day",
+"f": "General ideas for food and water around exercise"
+},
+{
+"d": 197,
+"lv": "intermediate",
+"t": "Hydration in hot weather",
+"f": "Drinking enough and eating water-rich foods when it is hot"
+},
+{
+"d": 198,
+"lv": "intermediate",
+"t": "Warming foods in cold weather",
+"f": "Soups, stews and warm drinks for chilly days"
+},
+{
+"d": 199,
+"lv": "intermediate",
+"t": "Comfort food made balanced",
+"f": "Lightening classic comfort dishes while keeping the cosiness"
+},
+{
+"d": 200,
+"lv": "intermediate",
+"t": "Eating when stressed",
+"f": "Noticing stress eating and gentle ways to respond"
+},
+{
+"d": 201,
+"lv": "intermediate",
+"t": "Mindful eating practice",
+"f": "A simple exercise to eat one meal with full attention"
+},
+{
+"d": 202,
+"lv": "intermediate",
+"t": "Eating without screens",
+"f": "How eating away from screens can help you enjoy food more"
+},
+{
+"d": 203,
+"lv": "intermediate",
+"t": "Gratitude for food",
+"f": "Appreciating where food comes from and who prepared it"
+},
+{
+"d": 204,
+"lv": "intermediate",
+"t": "Coffee and tea habits",
+"f": "Enjoying coffee and tea and noticing how much sugar is added"
+},
+{
+"d": 205,
+"lv": "intermediate",
+"t": "Alcohol and healthy eating",
+"f": "General awareness, alcohol-free drinks and following local guidance"
+},
+{
+"d": 206,
+"lv": "intermediate",
+"t": "Meals across the day review",
+"f": "Revisiting breakfasts, lunches, snacks and dinners that work for you"
+},
+{
+"d": 207,
+"lv": "intermediate",
+"t": "The Mediterranean eating tradition",
+"f": "Olive oil, vegetables, legumes and shared meals in Mediterranean cultures"
+},
+{
+"d": 208,
+"lv": "intermediate",
+"t": "Japanese home cooking",
+"f": "Rice, miso soup, fish, vegetables and small dishes in Japanese meals"
+},
+{
+"d": 209,
+"lv": "intermediate",
+"t": "Indian vegetarian traditions",
+"f": "Dals, vegetable curries and spices in Indian home cooking"
+},
+{
+"d": 210,
+"lv": "intermediate",
+"t": "Mexican staples",
+"f": "Corn, beans, chillies and fresh salsas in Mexican food"
+},
+{
+"d": 211,
+"lv": "intermediate",
+"t": "Brazilian rice and beans",
+"f": "The everyday arroz com feijão and its place in Brazilian meals"
+},
+{
+"d": 212,
+"lv": "intermediate",
+"t": "Nordic food traditions",
+"f": "Rye bread, berries, fish and root vegetables in Nordic cooking"
+},
+{
+"d": 213,
+"lv": "intermediate",
+"t": "West African dishes",
+"f": "Stews, grains, leafy greens and peanuts in West African cuisine"
+},
+{
+"d": 214,
+"lv": "intermediate",
+"t": "Ethiopian cuisine",
+"f": "Injera, lentil stews and spice blends shared from one platter"
+},
+{
+"d": 215,
+"lv": "intermediate",
+"t": "Middle Eastern mezze",
+"f": "Hummus, tabbouleh, falafel and the joy of sharing small plates"
+},
+{
+"d": 216,
+"lv": "intermediate",
+"t": "Korean cuisine",
+"f": "Kimchi, banchan, rice and vegetables in Korean meals"
+},
+{
+"d": 217,
+"lv": "intermediate",
+"t": "Chinese home cooking",
+"f": "Stir-fries, steamed dishes and balance in Chinese cooking"
+},
+{
+"d": 218,
+"lv": "intermediate",
+"t": "Thai flavours",
+"f": "Balancing sweet, sour, salty and spicy with fresh herbs"
+},
+{
+"d": 219,
+"lv": "intermediate",
+"t": "Vietnamese freshness",
+"f": "Herbs, rice noodles and fresh rolls in Vietnamese food"
+},
+{
+"d": 220,
+"lv": "intermediate",
+"t": "Italian everyday cooking",
+"f": "Simple pasta, vegetables, beans and olive oil in Italian homes"
+},
+{
+"d": 221,
+"lv": "intermediate",
+"t": "Greek classics",
+"f": "Salads, legumes, yoghurt and grilled dishes from Greece"
+},
+{
+"d": 222,
+"lv": "intermediate",
+"t": "Spanish and Portuguese tables",
+"f": "Tapas, petiscos, fish and vegetables on Iberian tables"
+},
+{
+"d": 223,
+"lv": "intermediate",
+"t": "French market cooking",
+"f": "Seasonal produce and simple techniques in French home cooking"
+},
+{
+"d": 224,
+"lv": "intermediate",
+"t": "German and Central European foods",
+"f": "Wholegrain breads, cabbage and seasonal vegetables"
+},
+{
+"d": 225,
+"lv": "intermediate",
+"t": "Caribbean cooking",
+"f": "Beans, plantains, tropical fruit and spice in Caribbean food"
+},
+{
+"d": 226,
+"lv": "intermediate",
+"t": "Peruvian cuisine",
+"f": "Potatoes, quinoa, ceviche and fusion flavours from Peru"
+},
+{
+"d": 227,
+"lv": "intermediate",
+"t": "Turkish breakfast and meze",
+"f": "A spread of vegetables, cheese, olives and bread"
+},
+{
+"d": 228,
+"lv": "intermediate",
+"t": "Levantine and North African flavours",
+"f": "Couscous, tagines and spice blends from North Africa"
+},
+{
+"d": 229,
+"lv": "intermediate",
+"t": "Pacific Island foods",
+"f": "Coconut, root vegetables and fish in Pacific cuisines"
+},
+{
+"d": 230,
+"lv": "intermediate",
+"t": "Street food around the world",
+"f": "Popular street foods and how fresh choices are often available"
+},
+{
+"d": 231,
+"lv": "intermediate",
+"t": "Festive foods across cultures",
+"f": "How celebrations bring special dishes to the table"
+},
+{
+"d": 232,
+"lv": "intermediate",
+"t": "Food and hospitality customs",
+"f": "Sharing food as a sign of welcome in many cultures"
+},
+{
+"d": 233,
+"lv": "intermediate",
+"t": "Spices of the world",
+"f": "Turmeric, cumin, paprika, cinnamon and their cultural roots"
+},
+{
+"d": 234,
+"lv": "intermediate",
+"t": "Breads of the world",
+"f": "Naan, tortilla, pita, rye and sourdough traditions"
+},
+{
+"d": 235,
+"lv": "intermediate",
+"t": "Grains that feed the world",
+"f": "Rice, wheat, maize and their role in different cultures"
+},
+{
+"d": 236,
+"lv": "intermediate",
+"t": "Fusion cooking at home",
+"f": "Combining ideas from two cuisines in one tasty dish"
+},
+{
+"d": 237,
+"lv": "intermediate",
+"t": "Cooking a dish from a friend's culture",
+"f": "Asking a friend for a family recipe and trying it"
+},
+{
+"d": 238,
+"lv": "intermediate",
+"t": "Exploring an international grocery",
+"f": "Finding new ingredients in an international food shop"
+},
+{
+"d": 239,
+"lv": "intermediate",
+"t": "Common threads of traditional diets",
+"f": "What many traditional food cultures share: plants, home cooking, sharing"
+},
+{
+"d": 240,
+"lv": "intermediate",
+"t": "Eating together across cultures",
+"f": "Table manners and mealtime customs around the world"
+},
+{
+"d": 241,
+"lv": "intermediate",
+"t": "Learning food words in other languages",
+"f": "Fun food vocabulary that opens doors when travelling"
+},
+{
+"d": 242,
+"lv": "intermediate",
+"t": "Hosting an international potluck",
+"f": "Inviting friends to bring a dish from their culture"
+},
+{
+"d": 243,
+"lv": "intermediate",
+"t": "Respecting food customs and beliefs",
+"f": "Being curious and respectful about different food choices"
+},
+{
+"d": 244,
+"lv": "intermediate",
+"t": "Mealtimes around the world",
+"f": "How meal times and main meals differ between countries"
+},
+{
+"d": 245,
+"lv": "intermediate",
+"t": "Traditional drinks",
+"f": "Teas, mate, lassi and other traditional drinks from many places"
+},
+{
+"d": 246,
+"lv": "intermediate",
+"t": "Indonesian and Malaysian flavours",
+"f": "Sambal, rice dishes, satay and fresh herbs from Southeast Asian islands"
+},
+{
+"d": 247,
+"lv": "intermediate",
+"t": "Filipino home cooking",
+"f": "Adobo, sinigang and the warm family style of Filipino meals"
+},
+{
+"d": 248,
+"lv": "intermediate",
+"t": "Persian cuisine",
+"f": "Fragrant rice, herbs, stews and fruit in Persian cooking"
+},
+{
+"d": 249,
+"lv": "intermediate",
+"t": "Georgian feasts",
+"f": "Walnuts, herbs, breads and the tradition of the supra table"
+},
+{
+"d": 250,
+"lv": "intermediate",
+"t": "World food tour review",
+"f": "Looking back at the cuisines explored and favourite discoveries"
+},
+{
+"d": 251,
+"lv": "advanced",
+"t": "Carbohydrates explained",
+"f": "Starches, sugars and fibre and how the body uses carbohydrates"
+},
+{
+"d": 252,
+"lv": "advanced",
+"t": "Proteins explained",
+"f": "Amino acids and why variety in protein foods helps"
+},
+{
+"d": 253,
+"lv": "advanced",
+"t": "Fats explained",
+"f": "Unsaturated, saturated and trans fats in simple terms"
+},
+{
+"d": 254,
+"lv": "advanced",
+"t": "Vitamins at a glance",
+"f": "The main vitamins and examples of foods that contain them"
+},
+{
+"d": 255,
+"lv": "advanced",
+"t": "Minerals at a glance",
+"f": "Iron, calcium, potassium, magnesium and zinc and their food sources"
+},
+{
+"d": 256,
+"lv": "advanced",
+"t": "Vitamin C",
+"f": "Its roles and the fruits and vegetables rich in it"
+},
+{
+"d": 257,
+"lv": "advanced",
+"t": "Vitamin D",
+"f": "Sunlight, foods and why people should ask a doctor about their own needs"
+},
+{
+"d": 258,
+"lv": "advanced",
+"t": "Iron",
+"f": "Iron in plant and animal foods and pairing with vitamin C"
+},
+{
+"d": 259,
+"lv": "advanced",
+"t": "B vitamins",
+"f": "The family of B vitamins and the foods where they appear"
+},
+{
+"d": 260,
+"lv": "advanced",
+"t": "Potassium",
+"f": "Fruits, vegetables and legumes as natural sources of potassium"
+},
+{
+"d": 261,
+"lv": "advanced",
+"t": "Antioxidants and phytochemicals",
+"f": "Natural plant compounds and why colourful plants matter"
+},
+{
+"d": 262,
+"lv": "advanced",
+"t": "Fibre types",
+"f": "Soluble and insoluble fibre and the foods that provide each"
+},
+{
+"d": 263,
+"lv": "advanced",
+"t": "The gut microbiome",
+"f": "A general look at gut microbes and the role of fibre and variety"
+},
+{
+"d": 264,
+"lv": "advanced",
+"t": "Blood sugar and steady energy",
+"f": "How fibre, protein and whole foods help energy feel steadier"
+},
+{
+"d": 265,
+"lv": "advanced",
+"t": "Energy from food",
+"f": "A general idea of how food fuels the body, without counting numbers"
+},
+{
+"d": 266,
+"lv": "advanced",
+"t": "Satiety",
+"f": "Why fibre, protein and water help meals feel satisfying"
+},
+{
+"d": 267,
+"lv": "advanced",
+"t": "Hydration science",
+"f": "How the body uses water and signs that you may need a drink"
+},
+{
+"d": 268,
+"lv": "advanced",
+"t": "Supplements in context",
+"f": "Why food comes first and a doctor decides if supplements are needed"
+},
+{
+"d": 269,
+"lv": "advanced",
+"t": "Fortified foods",
+"f": "Foods with added nutrients like iodised salt and fortified cereals"
+},
+{
+"d": 270,
+"lv": "advanced",
+"t": "Food allergies and intolerances",
+"f": "General awareness and why diagnosis belongs to a doctor"
+},
+{
+"d": 271,
+"lv": "advanced",
+"t": "Nutrition across life stages",
+"f": "How needs change with age and why professionals give personal advice"
+},
+{
+"d": 272,
+"lv": "advanced",
+"t": "Eating well as you age",
+"f": "General ideas for enjoying varied, nourishing food in later life"
+},
+{
+"d": 273,
+"lv": "advanced",
+"t": "Children's eating basics",
+"f": "Family meals, variety and patience with young eaters"
+},
+{
+"d": 274,
+"lv": "advanced",
+"t": "Teen eating habits",
+"f": "Supporting teens with regular meals and a positive food mindset"
+},
+{
+"d": 275,
+"lv": "advanced",
+"t": "Sleep and eating patterns",
+"f": "General links between regular meals, evening habits and rest"
+},
+{
+"d": 276,
+"lv": "advanced",
+"t": "Physical activity and food",
+"f": "Fuelling an active lifestyle in a general, balanced way"
+},
+{
+"d": 277,
+"lv": "advanced",
+"t": "Food and the brain",
+"f": "General links between varied eating and feeling focused"
+},
+{
+"d": 278,
+"lv": "advanced",
+"t": "How dietary guidelines are made",
+"f": "How experts review research to create national food guides"
+},
+{
+"d": 279,
+"lv": "advanced",
+"t": "Comparing national food guides",
+"f": "Plates, pyramids and other models from different countries"
+},
+{
+"d": 280,
+"lv": "advanced",
+"t": "Science review day",
+"f": "Revisiting nutrients, fibre, the gut and food guides in simple terms"
+},
+{
+"d": 281,
+"lv": "advanced",
+"t": "Reading nutrition headlines",
+"f": "Asking who did the study and how big it was before believing a headline"
+},
+{
+"d": 282,
+"lv": "advanced",
+"t": "Correlation and causation",
+"f": "Why two things happening together does not mean one causes the other"
+},
+{
+"d": 283,
+"lv": "advanced",
+"t": "Spotting food myths",
+"f": "Common myths about food and how to check them calmly"
+},
+{
+"d": 284,
+"lv": "advanced",
+"t": "The myth of superfoods",
+"f": "Why variety matters more than any single miracle food"
+},
+{
+"d": 285,
+"lv": "advanced",
+"t": "Detox claims",
+"f": "Why the body has its own detox organs and what claims to question"
+},
+{
+"d": 286,
+"lv": "advanced",
+"t": "Fad diets and why to be careful",
+"f": "Recognising extreme promises and choosing balanced habits instead"
+},
+{
+"d": 287,
+"lv": "advanced",
+"t": "Clean eating culture",
+"f": "Why rigid labels about pure food can create stress"
+},
+{
+"d": 288,
+"lv": "advanced",
+"t": "Carbs are not the enemy",
+"f": "The place of whole grains and starchy foods in balanced eating"
+},
+{
+"d": 289,
+"lv": "advanced",
+"t": "Fat fears and facts",
+"f": "Why fats are not all the same and some are important"
+},
+{
+"d": 290,
+"lv": "advanced",
+"t": "Sugar facts without panic",
+"f": "A calm look at added sugars and enjoying sweetness sometimes"
+},
+{
+"d": 291,
+"lv": "advanced",
+"t": "Salt facts in perspective",
+"f": "Why many people eat more salt than they realise and simple changes"
+},
+{
+"d": 292,
+"lv": "advanced",
+"t": "Organic and conventional food",
+"f": "What organic means and why eating more produce of any kind helps"
+},
+{
+"d": 293,
+"lv": "advanced",
+"t": "Raw versus cooked",
+"f": "How cooking can make some nutrients easier to absorb"
+},
+{
+"d": 294,
+"lv": "advanced",
+"t": "Eating late at night myths",
+"f": "Separating myths from general ideas about evening eating"
+},
+{
+"d": 295,
+"lv": "advanced",
+"t": "Breakfast debates",
+"f": "Why some people love breakfast and others prefer to eat later"
+},
+{
+"d": 296,
+"lv": "advanced",
+"t": "Social media nutrition advice",
+"f": "Checking qualifications before following food advice online"
+},
+{
+"d": 297,
+"lv": "advanced",
+"t": "Who to trust for nutrition advice",
+"f": "Registered dietitians, doctors and reliable public health sources"
+},
+{
+"d": 298,
+"lv": "advanced",
+"t": "Body image and food",
+"f": "Separating self-worth from food and appearance"
+},
+{
+"d": 299,
+"lv": "advanced",
+"t": "Intuitive and mindful eating ideas",
+"f": "Trusting body signals and eating with attention"
+},
+{
+"d": 300,
+"lv": "advanced",
+"t": "Food guilt and how to let it go",
+"f": "Replacing guilt with curiosity and kindness"
+},
+{
+"d": 301,
+"lv": "advanced",
+"t": "Emotional eating with compassion",
+"f": "Understanding emotional eating and adding other comfort tools"
+},
+{
+"d": 302,
+"lv": "advanced",
+"t": "Ultra-processed foods debate",
+"f": "What the research generally suggests and practical balance"
+},
+{
+"d": 303,
+"lv": "advanced",
+"t": "Artificial sweeteners in perspective",
+"f": "General awareness and approved use by food safety agencies"
+},
+{
+"d": 304,
+"lv": "advanced",
+"t": "Gluten and wheat myths",
+"f": "Why gluten-free is essential for some people and optional for others"
+},
+{
+"d": 305,
+"lv": "advanced",
+"t": "Lactose and dairy questions",
+"f": "Lactose-free options and when to see a doctor about symptoms"
+},
+{
+"d": 306,
+"lv": "advanced",
+"t": "Plant-based trends",
+"f": "Benefits of more plants and the importance of planning variety"
+},
+{
+"d": 307,
+"lv": "advanced",
+"t": "Natural does not always mean healthy",
+"f": "Questioning natural claims on food packaging"
+},
+{
+"d": 308,
+"lv": "advanced",
+"t": "Portion sizes over time",
+"f": "How typical portion sizes and plate sizes have grown"
+},
+{
+"d": 309,
+"lv": "advanced",
+"t": "Myth-busting review",
+"f": "Revisiting the main myths and your new critical-thinking tools"
+},
+{
+"d": 310,
+"lv": "advanced",
+"t": "Sustainable eating",
+"f": "How food choices connect to the planet in general terms"
+},
+{
+"d": 311,
+"lv": "advanced",
+"t": "More plants for people and planet",
+"f": "How plant-rich eating can be good for both health and environment"
+},
+{
+"d": 312,
+"lv": "advanced",
+"t": "Seasonal and local in practice",
+"f": "Planning meals around what grows nearby each season"
+},
+{
+"d": 313,
+"lv": "advanced",
+"t": "Sustainable seafood",
+"f": "General ideas for choosing seafood responsibly"
+},
+{
+"d": 314,
+"lv": "advanced",
+"t": "Zero-waste kitchen",
+"f": "Using peels, stems and leftovers creatively"
+},
+{
+"d": 315,
+"lv": "advanced",
+"t": "Composting food scraps",
+"f": "Turning kitchen scraps into compost for plants"
+},
+{
+"d": 316,
+"lv": "advanced",
+"t": "Growing some of your own food",
+"f": "Starting with herbs, salad leaves or tomatoes"
+},
+{
+"d": 317,
+"lv": "advanced",
+"t": "Food packaging choices",
+"f": "Bringing bags, containers and buying loose produce"
+},
+{
+"d": 318,
+"lv": "advanced",
+"t": "Water footprint of food",
+"f": "A general look at how much water different foods need"
+},
+{
+"d": 319,
+"lv": "advanced",
+"t": "Fair trade and food workers",
+"f": "Thinking about the people who grow and harvest our food"
+},
+{
+"d": 320,
+"lv": "advanced",
+"t": "Community gardens",
+"f": "How shared gardens connect neighbours and fresh food"
+},
+{
+"d": 321,
+"lv": "advanced",
+"t": "Preserving food",
+"f": "Pickling, jamming and drying seasonal produce at home"
+},
+{
+"d": 322,
+"lv": "advanced",
+"t": "Fermenting at home",
+"f": "Simple, safe ferments like sauerkraut or quick pickles"
+},
+{
+"d": 323,
+"lv": "advanced",
+"t": "Making bread at home",
+"f": "The basics of yeast and sourdough bread with whole grains"
+},
+{
+"d": 324,
+"lv": "advanced",
+"t": "Making yoghurt at home",
+"f": "The simple steps of making yoghurt with milk and a starter"
+},
+{
+"d": 325,
+"lv": "advanced",
+"t": "Making your own stock",
+"f": "Turning vegetable scraps into flavourful stock"
+},
+{
+"d": 326,
+"lv": "advanced",
+"t": "Homemade snacks",
+"f": "Roasted chickpeas, energy balls and popcorn made at home"
+},
+{
+"d": 327,
+"lv": "advanced",
+"t": "Healthy eating for students",
+"f": "Simple, cheap, balanced meals in a small kitchen"
+},
+{
+"d": 328,
+"lv": "advanced",
+"t": "Healthy eating for busy parents",
+"f": "Quick family meals and sharing the cooking load"
+},
+{
+"d": 329,
+"lv": "advanced",
+"t": "Healthy eating at work",
+"f": "Creating a healthier food culture with colleagues"
+},
+{
+"d": 330,
+"lv": "advanced",
+"t": "Eating well when living abroad",
+"f": "Finding familiar comfort foods and exploring local ones"
+},
+{
+"d": 331,
+"lv": "advanced",
+"t": "Long-term meal planning",
+"f": "Rotating seasonal menus and favourite recipes"
+},
+{
+"d": 332,
+"lv": "advanced",
+"t": "Building a family recipe book",
+"f": "Collecting favourite balanced recipes to pass on"
+},
+{
+"d": 333,
+"lv": "advanced",
+"t": "Teaching others about food",
+"f": "Sharing what you have learned kindly and without preaching"
+},
+{
+"d": 334,
+"lv": "advanced",
+"t": "Food and community",
+"f": "Food banks, shared meals and helping others eat well"
+},
+{
+"d": 335,
+"lv": "advanced",
+"t": "Cooking as self-care",
+"f": "Seeing cooking as a relaxing and creative activity"
+},
+{
+"d": 336,
+"lv": "advanced",
+"t": "Celebrating with food",
+"f": "Making special occasions joyful with balanced festive dishes"
+},
+{
+"d": 337,
+"lv": "advanced",
+"t": "Holiday season eating",
+"f": "Enjoying holiday foods while keeping routines that feel good"
+},
+{
+"d": 338,
+"lv": "advanced",
+"t": "Adapting healthy eating to your culture",
+"f": "Keeping traditional dishes and adding balance in your own way"
+},
+{
+"d": 339,
+"lv": "advanced",
+"t": "Planet and community review",
+"f": "Revisiting sustainable choices and community food ideas"
+},
+{
+"d": 340,
+"lv": "advanced",
+"t": "Creating your own food philosophy",
+"f": "Writing down what eating well means to you personally"
+},
+{
+"d": 341,
+"lv": "advanced",
+"t": "Designing your ideal week of meals",
+"f": "Putting all your skills together in a realistic weekly plan"
+},
+{
+"d": 342,
+"lv": "advanced",
+"t": "Your signature balanced dish",
+"f": "Developing one balanced dish you can cook with pride"
+},
+{
+"d": 343,
+"lv": "advanced",
+"t": "Hosting a balanced dinner party",
+"f": "Planning a menu that delights guests and feels nourishing"
+},
+{
+"d": 344,
+"lv": "advanced",
+"t": "Cooking challenge with a mystery ingredient",
+"f": "Using creativity to cook with an unfamiliar ingredient"
+},
+{
+"d": 345,
+"lv": "advanced",
+"t": "Recreating a restaurant favourite at home",
+"f": "Making a lighter version of a favourite restaurant dish"
+},
+{
+"d": 346,
+"lv": "advanced",
+"t": "Bringing more variety into routine",
+"f": "Rotating grains, proteins and vegetables to avoid food boredom"
+},
+{
+"d": 347,
+"lv": "advanced",
+"t": "Flavour pairing",
+"f": "Classic pairings and how to invent your own"
+},
+{
+"d": 348,
+"lv": "advanced",
+"t": "Plating and presentation",
+"f": "Making simple food look beautiful on the plate"
+},
+{
+"d": 349,
+"lv": "advanced",
+"t": "Eating with all your senses",
+"f": "Noticing colour, smell, texture and sound in food"
+},
+{
+"d": 350,
+"lv": "advanced",
+"t": "Food journaling for curiosity",
+"f": "Noting meals and feelings to learn, not to judge"
+},
+{
+"d": 351,
+"lv": "advanced",
+"t": "Habits that stick",
+"f": "Linking new food habits to existing routines"
+},
+{
+"d": 352,
+"lv": "advanced",
+"t": "Handling setbacks kindly",
+"f": "Getting back to habits after busy or difficult weeks"
+},
+{
+"d": 353,
+"lv": "advanced",
+"t": "Healthy eating in tough times",
+"f": "Simple nourishing meals when energy or money is low"
+},
+{
+"d": 354,
+"lv": "advanced",
+"t": "Supporting a friend's healthy goals",
+"f": "Encouraging others without judging their choices"
+},
+{
+"d": 355,
+"lv": "advanced",
+"t": "Talking with a professional",
+"f": "When and how to ask a doctor or dietitian for personal guidance"
+},
+{
+"d": 356,
+"lv": "advanced",
+"t": "Food and joy",
+"f": "Remembering that eating well should feel enjoyable"
+},
+{
+"d": 357,
+"lv": "advanced",
+"t": "Cooking a meal for someone you care about",
+"f": "Planning and cooking a balanced meal as a gift for someone"
+},
+{
+"d": 358,
+"lv": "advanced",
+"t": "A note to your future self",
+"f": "Writing down the food habits you want to keep in the years ahead"
+},
+{
+"d": 359,
+"lv": "advanced",
+"t": "Your favourite discoveries this year",
+"f": "Looking back at the foods and recipes you loved"
+},
+{
+"d": 360,
+"lv": "advanced",
+"t": "Skills you have gained",
+"f": "Reviewing kitchen, shopping and label-reading skills"
+},
+{
+"d": 361,
+"lv": "advanced",
+"t": "Your food traditions going forward",
+"f": "Choosing traditions to keep, adapt or create"
+},
+{
+"d": 362,
+"lv": "advanced",
+"t": "Planning your next food adventure",
+"f": "Picking a cuisine, skill or ingredient to explore next"
+},
+{
+"d": 363,
+"lv": "advanced",
+"t": "Sharing your journey",
+"f": "Telling a friend what has changed in how you eat"
+},
+{
+"d": 364,
+"lv": "advanced",
+"t": "Final review of the path",
+"f": "A full look back at foundations, cooking, culture and science"
+},
+{
+"d": 365,
+"lv": "advanced",
+"t": "A lifelong love of good food",
+"f": "Celebrating 365 days and the joyful habits you will carry forward"
+}
+]
+}
