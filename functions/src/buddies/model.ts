@@ -67,6 +67,11 @@ export interface BuddySettings {
   level: Level;
   cefr: string | null;
   checkInsEnabled: boolean;
+  /**
+   * Owner 2026-10-24: the language this chat is translated into, chosen at
+   * creation and fixed. The server translates every message once into it.
+   */
+  chatLanguage: Language;
 }
 
 export interface MemoryFact { id: string; text: string; at: number; /** The user's exact words the fact is based on. */ evidence?: string }
@@ -115,13 +120,15 @@ export function validateSettings(raw: any, partial = false): Partial<BuddySettin
   else if (!partial) out.level = DEFAULT_LEVEL;
   if (has('cefr')) out.cefr = raw.cefr === null ? null : oneOf(raw.cefr, CEFR, 'cefr');
   else if (!partial) out.cefr = null;
+  if (has('chatLanguage')) out.chatLanguage = oneOf(raw.chatLanguage, LANGUAGES, 'chatLanguage');
+  else if (!partial) out.chatLanguage = out.language;
   if (has('checkInsEnabled')) {
     if (typeof raw.checkInsEnabled !== 'boolean') throw new BuddyInputError('Invalid checkInsEnabled');
     out.checkInsEnabled = raw.checkInsEnabled;
   } else if (!partial) {
     out.checkInsEnabled = true;
   }
-  const allowed = new Set(['name', 'avatar', 'topic', 'role', 'tone', 'language', 'level', 'cefr', 'checkInsEnabled']);
+  const allowed = new Set(['name', 'avatar', 'topic', 'role', 'tone', 'language', 'chatLanguage', 'level', 'cefr', 'checkInsEnabled']);
   for (const k of Object.keys(raw ?? {})) if (!allowed.has(k)) throw new BuddyInputError(`Unknown field ${k}`);
   return out;
 }

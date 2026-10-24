@@ -20,7 +20,7 @@ import { DEFAULT_RULES } from '../../ai/router/config';
 
 const settings = (o: Partial<BuddySettings> = {}): BuddySettings => ({
   name: 'Luna', avatar: AVATARS[0], topic: 'practice_italian', role: 'teacher', tone: 'warm', language: 'it',
-  level: 'beginner', cefr: 'A2', checkInsEnabled: true, ...o,
+  level: 'beginner', cefr: 'A2', checkInsEnabled: true, chatLanguage: 'it', ...o,
 });
 
 describe('topic catalogue', () => {
@@ -266,5 +266,40 @@ describe('stray JSON / tags in a message', () => {
   });
   it('user messages and replies are at most 200 characters', () => {
     expect(DEFAULT_RULES.text_buddies.maxInputChars).toBe(200);
+  });
+});
+
+// ------------------------------------- chat language fixed at creation + stored translations
+import { translateTurn } from '../buddies';
+import { _setConfig, defaultConfig, mockPreset } from '../../ai/router/config';
+
+describe('chat language + translate once', () => {
+  const prevProject = process.env.GCLOUD_PROJECT;
+  beforeAll(() => {
+    process.env.GCLOUD_PROJECT = 'greengo-chat-test';
+    _setConfig(mockPreset(defaultConfig()));
+  });
+  afterAll(() => {
+    process.env.GCLOUD_PROJECT = prevProject;
+    _setConfig(null);
+  });
+
+  it('chatLanguage defaults to the Buddy language and is validated', () => {
+    const { chatLanguage, ...rest } = settings();
+    void chatLanguage;
+    expect(validateSettings({ ...rest, avatar: 'fox' }).chatLanguage).toBe('it');
+    expect(validateSettings({ ...rest, avatar: 'fox', chatLanguage: 'pt_BR' }).chatLanguage).toBe('pt_BR');
+    expect(() => validateSettings({ ...rest, avatar: 'fox', chatLanguage: 'ru' })).toThrow(BuddyInputError);
+  });
+
+  it('translates the Buddy replies and the user text once into the chat language', async () => {
+    const tr = await translateTurn(settings({ language: 'en', chatLanguage: 'it' }), 'Hello there', ['Hi! How are you?'], 3);
+    expect(tr.replies).toEqual([{ text: '[→it] Hi! How are you?', lang: 'it' }]);
+    expect(tr.user).toEqual({ text: '[→it] Hello there', lang: 'it' });
+  });
+
+  it('translates nothing when the chat language is the Buddy language (pt == pt_BR)', async () => {
+    const tr = await translateTurn(settings({ language: 'pt', chatLanguage: 'pt_BR' }), null, ['Olá!'], 3);
+    expect(tr.replies).toEqual([null]);
   });
 });

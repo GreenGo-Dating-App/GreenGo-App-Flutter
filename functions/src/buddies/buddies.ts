@@ -27,7 +27,7 @@ import { aiConsentVersion, requireAiConsent } from '../shared/aiConsent';
 import { effectiveTier, EffectiveTier } from '../shared/effectiveTier';
 import { fifoDraw, refusal, REASON, validRequestId, DrawnSlice } from '../coins/ledger';
 import { loadConfig } from '../ai/router/config';
-import { eligibleChain, generate } from '../ai/router/router';
+import { eligibleChain, generate, translate } from '../ai/router/router';
 import { applyReplyRules, fitContext, graphemeLength, graphemes } from '../ai/router/rules';
 import { CapabilityRules } from '../ai/router/types';
 import { emitNotification } from '../notifications/notifyHelpers';
@@ -96,6 +96,7 @@ async function activeBuddyIds(uid: string, tier: EffectiveTier): Promise<Set<str
 const settingsOf = (d: any): BuddySettings => ({
   name: d.name, avatar: d.avatar, topic: d.topic, role: d.role, tone: d.tone, language: d.language,
   level: d.level, cefr: d.cefr ?? null, checkInsEnabled: d.checkInsEnabled !== false,
+  chatLanguage: d.chatLanguage ?? d.language,
 });
 
 async function rules(): Promise<CapabilityRules> {
@@ -186,7 +187,7 @@ export const createBuddy = callable('createBuddy', async (uid, data) => {
 export const updateBuddy = callable('updateBuddy', async (uid, data) => {
   const buddyId = okId(data.buddyId);
   // Owner 2026-10-24: the Buddy's language is fixed at creation.
-  if (data.settings && Object.prototype.hasOwnProperty.call(data.settings, 'language')) {
+  if (data.settings && ['language', 'chatLanguage'].some((k) => Object.prototype.hasOwnProperty.call(data.settings, k))) {
     throw new AppError('LANGUAGE_FIXED', "A Buddy's language cannot be changed after it is created.", 400, { reason: 'LANGUAGE_FIXED' });
   }
   const patch = validateSettings(data.settings ?? {}, true);
@@ -397,9 +398,13 @@ export async function handleSendBuddyMessage(uid: string, data: any) {
   // Crisis: fixed caring reply with helplines; no model, no charge.
   if (isCrisis(text)) {
     const reply = CRISIS_REPLY[lang] ?? CRISIS_REPLY.en;
-    await storeExchange(uid, ref, snap.data(), text, [reply], 'safety', 'none', requestId, r, now);
+    const tr = await translateTurn(buddy, text, [reply], consentVersion).catch(() => ({ user: null, replies: [null] }));
+    await storeExchange(uid, ref, snap.data(), text, [reply], 'safety', 'none', requestId, r, now, undefined, [], tr);
     const status = await buddyStatus(uid);
-    const result = { reply, kind: 'safety', charged: 'none', freeRepliesLeft: status.freeRepliesLeft };
+    const result = {
+      reply, replies: [reply], kind: 'safety', charged: 'none', freeRepliesLeft: status.freeRepliesLeft,
+      userTranslation: tr.user?.text ?? null, translations: tr.replies.map((x) => x?.text ?? null),
+    };
     return result;
   }
 
@@ -435,8 +440,14 @@ export async function handleSendBuddyMessage(uid: string, data: any) {
     ...(plan.balance !== null ? { coinBalance: plan.balance } : {}),
     ...(plan.kind !== 'free' ? { replyCredits: plan.credits } : {}),
   };
-  await storeExchange(uid, ref, snap.data(), text, parsed.messages, 'chat', plan.kind, requestId, r, now, result, parsed.keywords);
-  return result;
+  const tr = await translateTurn(buddy, text, parsed.messages, consentVersion);
+  const translated = {
+    ...result,
+    userTranslation: tr.user?.text ?? null,
+    translations: tr.replies.map((x) => x?.text ?? null),
+  };
+  await storeExchange(uid, ref, snap.data(), text, parsed.messages, 'chat', plan.kind, requestId, r, now, translated, parsed.keywords, tr);
+  return translated;
 }
 
 export interface BuddyKeyword { type: 'city' | 'attraction' | 'country'; name: string }
@@ -572,14 +583,56 @@ export function verifyMemoryFacts(raw: unknown, userTexts: string[], previous: M
   return out;
 }
 
+export interface StoredTranslation { text: string; lang: string }
+const baseLang = (c: string) => c.toLowerCase().replace(/_/g, '-').split('-')[0];
+const routerLang = (c: string) => c.replace('_', '-');
+
+/**
+ * Owner 2026-10-24: every message is translated ONCE, when it is created,
+ * into the Buddy's fixed chatLanguage and stored on the message (no
+ * per-device or per-language re-translation). Nothing is translated when the
+ * chat language is the Buddy's language (pt / pt_BR count as the same), or
+ * when a user message already is in it. Best effort: a failure never blocks
+ * the reply (the message simply has no translation).
+ */
+export async function translateTurn(b: BuddySettings, userText: string | null, replies: string[], consentVersion: number):
+  Promise<{ user: StoredTranslation | null; replies: (StoredTranslation | null)[] }> {
+  const target = b.chatLanguage ?? b.language;
+  const none = { user: null, replies: replies.map(() => null) };
+  if (!target) return none;
+  const out: { user: StoredTranslation | null; replies: (StoredTranslation | null)[] } = { user: null, replies: replies.map(() => null) };
+  try {
+    if (replies.length && baseLang(target) !== baseLang(b.language)) {
+      const r = await translate('translate_chat', replies, routerLang(target), { consentVersion }, { source: routerLang(b.language) });
+      r.items.forEach((it, i) => {
+        if (it && !it.sameLanguage && it.text.trim() && it.text !== replies[i]) out.replies[i] = { text: it.text, lang: target };
+      });
+    }
+    if (userText && userText.trim()) {
+      const r = await translate('translate_chat', [userText], routerLang(target), { consentVersion }, {});
+      const it = r.items[0];
+      const detected = it?.detectedLanguage ?? null;
+      const sameAsTarget = detected ? baseLang(detected) === baseLang(target) : false;
+      if (it && !it.sameLanguage && !sameAsTarget && it.text.trim() && it.text !== userText) out.user = { text: it.text, lang: target };
+    }
+  } catch (e: any) {
+    console.warn('buddy translateTurn failed', e?.message ?? e);
+  }
+  return out;
+}
+
 /** Writes the user message + the Buddy's 1-3 reply messages and updates the Buddy (one batch). */
 async function storeExchange(uid: string, ref: admin.firestore.DocumentReference, d: any, userText: string, replies: string[],
   kind: 'chat' | 'safety', charged: 'free' | 'coin' | 'credit' | 'none', requestId: string, r: CapabilityRules, nowMs: number,
-  result?: unknown, keywords: BuddyKeyword[] = []) {
+  result?: unknown, keywords: BuddyKeyword[] = [],
+  tr: { user: StoredTranslation | null; replies: (StoredTranslation | null)[] } = { user: null, replies: [] }) {
   const batch = db().batch();
   const tUser = admin.firestore.Timestamp.fromMillis(nowMs);
   const base = Math.max(nowMs + 1, Date.now());
-  batch.set(ref.collection('messages').doc(), { role: 'user', text: userText, kind: 'chat', charged: 'none', createdAt: tUser });
+  batch.set(ref.collection('messages').doc(), {
+    role: 'user', text: userText, kind: 'chat', charged: 'none', createdAt: tUser,
+    ...(tr.user ? { translation: tr.user } : {}),
+  });
   replies.forEach((text, i) => {
     const kw = keywords.filter((k) => text.toLowerCase().includes(k.name.toLowerCase()));
     batch.set(ref.collection('messages').doc(), {
@@ -587,6 +640,7 @@ async function storeExchange(uid: string, ref: admin.firestore.DocumentReference
       // The turn is charged once: on its first message.
       charged: i === 0 ? charged : 'none',
       ...(kw.length ? { keywords: kw } : {}),
+      ...(tr.replies[i] ? { translation: tr.replies[i] } : {}),
       // Owner 2026-10-24: bubbles 1 s apart (fixed order; the app reveals them one by one).
       createdAt: admin.firestore.Timestamp.fromMillis(base + i * BUBBLE_GAP_MS),
     });
@@ -785,7 +839,11 @@ async function checkInOne(doc: admin.firestore.QueryDocumentSnapshot, r: Capabil
   const batch = db().batch();
   const at = TS();
   // Free and never counted: kind 'checkin', charged 'none'.
-  batch.set(doc.ref.collection('messages').doc(), { role: 'buddy', text, kind: 'checkin', charged: 'none', createdAt: at });
+  const tr = await translateTurn(buddy, null, [text], consentVersion);
+  batch.set(doc.ref.collection('messages').doc(), {
+    role: 'buddy', text, kind: 'checkin', charged: 'none', createdAt: at,
+    ...(tr.replies[0] ? { translation: tr.replies[0] } : {}),
+  });
   batch.update(doc.ref, {
     lastMessage: text.slice(0, 200), lastMessageAt: at, messageCount: admin.firestore.FieldValue.increment(1),
     unansweredCheckIns: unanswered,
