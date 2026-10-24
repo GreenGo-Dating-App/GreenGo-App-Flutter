@@ -68,6 +68,17 @@ function mockJson(prompt: string): string {
 export function mockGenerate(req: GenerateRequest): string {
   guard();
   const prompt = `${req.system ?? ''}\n${req.messages.map((m) => m.content).join('\n')}`;
+  // Buddy chat turn: 1-3 messages as JSON (buddies/prompt.ts replyFormatBlock).
+  if (req.json && prompt.includes('"messages"')) {
+    const lang = req.system?.match(/You speak ONLY ([A-Za-z ]+?)\./)?.[1] ?? 'English';
+    const list = REPLIES[lang] ?? REPLIES.English;
+    const first = list[turn++ % list.length];
+    const echo = lastUser(req).slice(0, 40);
+    return JSON.stringify({
+      messages: echo.length > 20 ? [first, `(mock) "${echo}" - ${list[turn++ % list.length]}`] : [first],
+      keywords: [],
+    });
+  }
   if (req.json) return mockJson(prompt);
   const lang = req.system?.match(/You speak ONLY ([A-Za-z ]+?)\./)?.[1]
     ?? req.system?.match(/Always reply in ([A-Za-z ]+?)\./)?.[1] ?? 'English';

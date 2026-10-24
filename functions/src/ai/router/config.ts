@@ -45,7 +45,7 @@ export const DEFAULT_RULES: Record<Capability, CapabilityRules> = {
   text_assist: { maxInputChars: 1000, maxTokens: 1024, temperature: 0.3, timeoutMs: 20_000, retries: 0 },
   text_buddies: {
     maxOutputChars: 200,
-    maxInputChars: 500,
+    maxInputChars: 200,
     maxTokens: 120,
     temperature: 0.8,
     timeoutMs: 15_000,

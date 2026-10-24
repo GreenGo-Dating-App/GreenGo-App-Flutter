@@ -28,7 +28,7 @@ import { effectiveTier, EffectiveTier } from '../shared/effectiveTier';
 import { fifoDraw, refusal, REASON, validRequestId, DrawnSlice } from '../coins/ledger';
 import { loadConfig } from '../ai/router/config';
 import { eligibleChain, generate } from '../ai/router/router';
-import { fitContext } from '../ai/router/rules';
+import { applyReplyRules, fitContext, graphemeLength, graphemes } from '../ai/router/rules';
 import { CapabilityRules } from '../ai/router/types';
 import { emitNotification } from '../notifications/notifyHelpers';
 import { rawText } from '../shared/i18n';
@@ -37,12 +37,14 @@ import {
   FREE_REPLIES_PER_DAY, Language, MemoryFact, USER_MESSAGE_MAX, utcDay, validateSettings,
 } from './model';
 import { CRISIS_REPLY, FALLBACK_REPLY, isCrisis, isUnsafeReply } from './crisis';
-import { checkInPrompt, memoryPrompt, parseJsonObject, summaryPrompt, systemPrompt } from './prompt';
+import { checkInPrompt, memoryPrompt, parseJsonObject, replyFormatBlock, summaryPrompt, systemPrompt } from './prompt';
 
 const db = () => admin.firestore();
 const TS = () => admin.firestore.Timestamp.now();
 const runtime = { memory: '512MiB' as const, timeoutSeconds: 60 };
 export const BUDDY_JOBS = 'ai_buddy_jobs';
+/** Time between the bubbles of one Buddy turn. */
+export const BUBBLE_GAP_MS = 1000;
 /** Messages per user per 10 minutes (all Buddies). */
 export const RATE_LIMIT_10MIN = 30;
 
@@ -389,7 +391,7 @@ export async function handleSendBuddyMessage(uid: string, data: any) {
   // Crisis: fixed caring reply with helplines; no model, no charge.
   if (isCrisis(text)) {
     const reply = CRISIS_REPLY[lang] ?? CRISIS_REPLY.en;
-    await storeExchange(uid, ref, snap.data(), text, reply, 'safety', 'none', requestId, r, now);
+    await storeExchange(uid, ref, snap.data(), text, [reply], 'safety', 'none', requestId, r, now);
     const status = await buddyStatus(uid);
     const result = { reply, kind: 'safety', charged: 'none', freeRepliesLeft: status.freeRepliesLeft };
     return result;
@@ -399,15 +401,18 @@ export async function handleSendBuddyMessage(uid: string, data: any) {
   const plan = await reserveCharge(uid, tier, buddyId, requestId);
 
   let reply: string;
+  let parsed: ParsedReply = { messages: [], keywords: [] };
   try {
     const history = await recentTurns(ref, Math.max(2, r.contextMessages ?? 12));
     const turns = fitContext([...history.turns, { role: 'user', content: text } as Turn],
       Math.max(2, (r.contextMessages ?? 12) + 1), r.contextChars ?? 2400);
     const d = snap.data() ?? {};
     const memory: MemoryFact[] = Array.isArray(d.memory) ? d.memory : [];
-    const out = await generate('text_buddies', { system: systemPrompt(buddy, r, memory, String(d.summary ?? '')), messages: turns },
-      { consentVersion });
-    reply = isUnsafeReply(out.text, out.banned) ? (FALLBACK_REPLY[lang] ?? FALLBACK_REPLY.en) : out.text;
+    const system = `${systemPrompt(buddy, r, memory, String(d.summary ?? ''))}\n\n${replyFormatBlock(r.maxOutputChars ?? 200)}`;
+    const out = await generate('text_buddies', { system, messages: turns, json: true },
+      { consentVersion }, { rawReply: true, rules: { maxTokens: Math.max(r.maxTokens ?? 120, 1000) } });
+    parsed = parseBuddyReply(out.text, r, FALLBACK_REPLY[lang] ?? FALLBACK_REPLY.en);
+    reply = parsed.messages.join('\n');
   } catch (e: any) {
     console.warn('sendBuddyMessage: model failed', e?.message ?? e);
     await refundCharge(uid, requestId, plan);
@@ -416,27 +421,174 @@ export async function handleSendBuddyMessage(uid: string, data: any) {
 
   const result = {
     reply,
+    replies: parsed.messages,
+    keywords: parsed.keywords,
     kind: 'chat',
     charged: plan.kind,
     freeRepliesLeft: plan.freeLeft,
     ...(plan.balance !== null ? { coinBalance: plan.balance } : {}),
     ...(plan.kind !== 'free' ? { replyCredits: plan.credits } : {}),
   };
-  await storeExchange(uid, ref, snap.data(), text, reply, 'chat', plan.kind, requestId, r, now, result);
+  await storeExchange(uid, ref, snap.data(), text, parsed.messages, 'chat', plan.kind, requestId, r, now, result, parsed.keywords);
   return result;
 }
 
-/** Writes the user message + the Buddy reply and updates the Buddy (one batch). */
-async function storeExchange(uid: string, ref: admin.firestore.DocumentReference, d: any, userText: string, reply: string,
+export interface BuddyKeyword { type: 'city' | 'attraction' | 'country'; name: string }
+export interface ParsedReply { messages: string[]; keywords: BuddyKeyword[] }
+
+/** Closed JSON string literals after "messages": [ (salvages a reply cut off mid-JSON). */
+function salvageMessages(raw: string): string[] {
+  const at = raw.indexOf('"messages"');
+  if (at < 0) return [];
+  const rest = raw.slice(at + 10);
+  const lb = rest.indexOf('[');
+  if (lb < 0) return [];
+  const out: string[] = [];
+  const re = /"((?:[^"\\]|\\.)*)"/g;
+  const body = rest.slice(lb + 1);
+  const end = body.indexOf(']');
+  const scope = end >= 0 ? body.slice(0, end) : body;
+  let m: RegExpExecArray | null;
+  while ((m = re.exec(scope)) !== null) {
+    try { out.push(JSON.parse(`"${m[1]}"`)); } catch { /* skip */ }
+  }
+  return out;
+}
+
+/**
+ * Splits [text] into chat bubbles of at most [max] graphemes WITHOUT losing or
+ * cutting words: whole sentences are packed together; a sentence longer than
+ * [max] continues in the next bubble at a word boundary (no ellipsis).
+ */
+export function splitIntoBubbles(text: string, max: number): string[] {
+  const t = text.trim();
+  if (graphemeLength(t) <= max) return t ? [t] : [];
+  const sentences = t.match(/[^.!?…。！？]+[.!?…。！？]+["')\]]*\s*|[^.!?…。！？]+$/g) ?? [t];
+  const bubbles: string[] = [];
+  let cur = '';
+  const push = () => { if (cur.trim()) bubbles.push(cur.trim()); cur = ''; };
+  for (const sRaw of sentences) {
+    const s = sRaw.trim();
+    if (!s) continue;
+    if (graphemeLength(s) > max) {
+      push();
+      let rest = s;
+      while (graphemeLength(rest) > max) {
+        const g = graphemes(rest);
+        const head = g.slice(0, max).join('');
+        const cut = head.search(/\s\S*$/);
+        const piece = cut > 0 ? head.slice(0, cut) : head;
+        bubbles.push(piece.trim());
+        rest = rest.slice(piece.length).trim();
+      }
+      cur = rest;
+      continue;
+    }
+    if (graphemeLength(cur ? `${cur} ${s}` : s) > max) push();
+    cur = cur ? `${cur} ${s}` : s;
+  }
+  push();
+  return bubbles;
+}
+
+/**
+ * The model's JSON reply -> 1-3 chat bubbles (owner 2026-10-24: never
+ * truncated, max 200 chars each, blocks of 1-3 messages). Markdown and links
+ * stripped; a long message is split at sentence boundaries into more bubbles
+ * (never cut with an ellipsis); beyond 3 bubbles whole bubbles are dropped.
+ * Raw JSON is never shown: a reply cut off mid-JSON keeps its complete
+ * messages; unparseable JSON becomes [fallback]. Every bubble is screened.
+ */
+export function parseBuddyReply(raw: string, r: CapabilityRules, fallback: string): ParsedReply {
+  const max = r.maxOutputChars ?? 200;
+  const j = parseJsonObject(raw);
+  const looksJson = /^\s*[{[]/.test(raw) || raw.includes('"messages"');
+  let list: unknown[] = Array.isArray(j?.messages) ? j.messages
+    : typeof j?.message === 'string' ? [j.message]
+    : looksJson ? salvageMessages(raw) : [raw];
+  if (!list.length) list = [fallback];
+  const bubbles: string[] = [];
+  const extraKeywords: unknown[] = [];
+  for (const m of list) {
+    if (typeof m !== 'string') continue;
+    // The model sometimes puts its JSON (e.g. the keywords) inside a message:
+    // never show it; keep its keywords as metadata.
+    if (/^\s*[{[]/.test(m) || /"(keywords|messages)"\s*:/.test(m)) {
+      const inner = parseJsonObject(m);
+      if (Array.isArray(inner?.keywords)) extraKeywords.push(...inner.keywords);
+      continue;
+    }
+    const clean = applyReplyRules(m.replace(/<\/?[a-z]*\s*\/?>/gi, ' '), { stripMarkdown: true, stripLinks: true });
+    for (const b of splitIntoBubbles(clean.text, max)) {
+      if (bubbles.length >= 3) break;
+      const banned = applyReplyRules(b, { bannedTerms: r.bannedTerms }).banned;
+      const text = isUnsafeReply(b, banned) ? fallback : b;
+      if (!bubbles.includes(text)) bubbles.push(text);
+    }
+  }
+  if (!bubbles.length) bubbles.push(fallback);
+  const keywords: BuddyKeyword[] = [...(Array.isArray(j?.keywords) ? j.keywords : []), ...extraKeywords]
+    .filter((k: any) => k && typeof k.name === 'string' && ['city', 'attraction', 'country'].includes(k.type))
+    .slice(0, 10)
+    .map((k: any) => ({ type: k.type, name: String(k.name).trim().slice(0, 80) }))
+    .filter((k: BuddyKeyword) => k.name && bubbles.some((m) => m.toLowerCase().includes(k.name.toLowerCase())));
+  return { messages: bubbles, keywords };
+}
+
+/** Normalised for evidence matching: NFC, lower case, collapsed spaces, no edge punctuation. */
+const normEvidence = (s: string) => s.normalize('NFC').toLowerCase().replace(/\s+/g, ' ').replace(/^[\s"'.,!?;:]+|[\s"'.,!?;:]+$/g, '').trim();
+
+/**
+ * Keeps only memory facts whose evidence is the user's exact words (owner
+ * 2026-10-24: memory must be 100% accurate). A fact passes when its evidence
+ * (>= 3 chars) appears in one of [userTexts], or when the same fact with the
+ * same evidence was already stored (verified earlier).
+ */
+export function verifyMemoryFacts(raw: unknown, userTexts: string[], previous: MemoryFact[], maxFacts: number): MemoryFact[] {
+  const hay = userTexts.map(normEvidence);
+  const prev = new Map(previous.map((f) => [normEvidence(f.text), f]));
+  const out: MemoryFact[] = [];
+  for (const f of Array.isArray(raw) ? raw : []) {
+    if (!f || typeof f !== 'object') continue;
+    const text = typeof (f as any).fact === 'string' ? (f as any).fact.trim().slice(0, 120) : '';
+    const evidence = typeof (f as any).evidence === 'string' ? (f as any).evidence.trim().slice(0, 300) : '';
+    if (!text || !evidence) continue;
+    const ev = normEvidence(evidence);
+    const old = prev.get(normEvidence(text));
+    const fromUser = ev.length >= 3 && hay.some((h) => h.includes(ev));
+    const kept = old && old.evidence && normEvidence(old.evidence) === ev;
+    if (!fromUser && !kept) continue;
+    const id = factId(text);
+    if (out.some((x) => x.id === id)) continue;
+    out.push({ id, text, evidence, at: old?.at ?? Date.now() });
+    if (out.length >= maxFacts) break;
+  }
+  return out;
+}
+
+/** Writes the user message + the Buddy's 1-3 reply messages and updates the Buddy (one batch). */
+async function storeExchange(uid: string, ref: admin.firestore.DocumentReference, d: any, userText: string, replies: string[],
   kind: 'chat' | 'safety', charged: 'free' | 'coin' | 'credit' | 'none', requestId: string, r: CapabilityRules, nowMs: number,
-  result?: unknown) {
+  result?: unknown, keywords: BuddyKeyword[] = []) {
   const batch = db().batch();
   const tUser = admin.firestore.Timestamp.fromMillis(nowMs);
-  const tBuddy = admin.firestore.Timestamp.fromMillis(Math.max(nowMs + 1, Date.now()));
+  const base = Math.max(nowMs + 1, Date.now());
   batch.set(ref.collection('messages').doc(), { role: 'user', text: userText, kind: 'chat', charged: 'none', createdAt: tUser });
-  batch.set(ref.collection('messages').doc(), { role: 'buddy', text: reply, kind, charged, createdAt: tBuddy });
+  replies.forEach((text, i) => {
+    const kw = keywords.filter((k) => text.toLowerCase().includes(k.name.toLowerCase()));
+    batch.set(ref.collection('messages').doc(), {
+      role: 'buddy', text, kind,
+      // The turn is charged once: on its first message.
+      charged: i === 0 ? charged : 'none',
+      ...(kw.length ? { keywords: kw } : {}),
+      // Owner 2026-10-24: bubbles 1 s apart (fixed order; the app reveals them one by one).
+      createdAt: admin.firestore.Timestamp.fromMillis(base + i * BUBBLE_GAP_MS),
+    });
+  });
+  const reply = replies[replies.length - 1];
+  const tBuddy = admin.firestore.Timestamp.fromMillis(base + (replies.length - 1) * BUBBLE_GAP_MS);
   const userCount = (Number(d?.userMessageCount) || 0) + 1;
-  const msgCount = (Number(d?.messageCount) || 0) + 2;
+  const msgCount = (Number(d?.messageCount) || 0) + 1 + replies.length;
   const checkIn = r.checkInsEnabled !== false && d?.checkInsEnabled !== false;
   batch.update(ref, {
     lastMessage: reply.slice(0, 200),
@@ -475,7 +627,7 @@ export async function runBuddyJob(uid: string, buddyId: string, job: { memory?: 
   const d = snap.data() ?? {};
   const r = await rules();
   const consentVersion = await aiConsentVersion(uid);
-  const jsonRules = { maxTokens: 600, temperature: 0.2, maxOutputChars: undefined, stripMarkdown: false, stripLinks: false };
+  const jsonRules = { maxTokens: 1200, temperature: 0.2, maxOutputChars: undefined, stripMarkdown: false, stripLinks: false };
   const update: Record<string, unknown> = {};
 
   if (job.memory && (r.memoryMaxFacts ?? 20) > 0) {
@@ -487,15 +639,9 @@ export async function runBuddyJob(uid: string, buddyId: string, job: { memory?: 
       }, { consentVersion }, { rawReply: true, rules: jsonRules });
       const facts = parseJsonObject(out.text)?.facts;
       if (Array.isArray(facts)) {
-        const old = new Map<string, MemoryFact>((Array.isArray(d.memory) ? d.memory : []).map((f: MemoryFact) => [f.id, f]));
-        update.memory = facts
-          .filter((f: unknown): f is string => typeof f === 'string' && !!f.trim())
-          .slice(0, r.memoryMaxFacts ?? 20)
-          .map((f: string) => {
-            const text = f.trim().slice(0, 120);
-            const id = factId(text);
-            return { id, text, at: old.get(id)?.at ?? Date.now() };
-          });
+        // Only facts whose evidence is the user's exact words survive.
+        const userTexts = turns.filter((x) => x.role === 'user').map((x) => x.content);
+        update.memory = verifyMemoryFacts(facts, userTexts, Array.isArray(d.memory) ? d.memory : [], r.memoryMaxFacts ?? 20);
       }
     } catch (e: any) {
       console.warn('buddy memory job failed', e?.message ?? e);

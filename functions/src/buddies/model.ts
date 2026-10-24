@@ -4,11 +4,11 @@
  * Owner rules (2026-10-23):
  *  - Buddies per plan (effective tier): Free 1 (Base 1), Silver 3, Gold 5, Platinum 10.
  *  - Free Buddy REPLIES per UTC day, all Buddies together: Free / Base 10,
- *    Silver 30, Gold 50, Platinum 100. After that 0.2 coins per reply (1 coin = 5 replies).
+ *    Silver 30, Gold 50, Platinum 100. After that 1 coin per 3 replies (~0.33 each).
  *  - Messages the Buddy sends on its own (check-ins after inactivity) are
  *    never counted and never charged.
- *  - Replies are at most 200 characters (admin rule `text_buddies`), user
- *    messages at most 500.
+ *  - Replies are at most 200 characters per bubble (1-3 bubbles per turn),
+ *    user messages at most 200.
  *
  * Firestore (new, separate collections; never conversations / groups):
  *   ai_buddies/{uid}/buddies/{buddyId}                settings + state
@@ -25,10 +25,14 @@ export const BUDDY_REQUESTS = 'ai_buddy_requests';
 
 export const BUDDY_LIMIT: Record<EffectiveTier, number> = { FREE: 1, SILVER: 3, GOLD: 5, PLATINUM: 10, TEST: 10 };
 export const FREE_REPLIES_PER_DAY: Record<EffectiveTier, number> = { FREE: 10, SILVER: 30, GOLD: 50, PLATINUM: 100, TEST: 100 };
-/** Owner 2026-10-24: 0.2 coins per paid reply = 1 coin buys 5 replies (balances stay integers). */
-export const REPLIES_PER_COIN = 5;
-export const COINS_PER_REPLY = 1 / REPLIES_PER_COIN;
-export const USER_MESSAGE_MAX = 500;
+/**
+ * Owner 2026-10-24 (revised): 1 coin buys 3 paid reply turns (~0.33 coins
+ * each; a turn = the Buddy's 1-3 messages). Balances stay integers.
+ */
+export const REPLIES_PER_COIN = 3;
+export const COINS_PER_REPLY = Math.round(100 / REPLIES_PER_COIN) / 100;
+/** Owner 2026-10-24: user messages to a Buddy are at most 200 characters (like the replies). */
+export const USER_MESSAGE_MAX = 200;
 
 export const ROLES = ['friend', 'expert', 'teacher', 'coach', 'conversation_partner', 'debate_partner'] as const;
 export const TONES = ['warm', 'funny', 'calm', 'direct', 'formal', 'playful'] as const;
@@ -65,7 +69,7 @@ export interface BuddySettings {
   checkInsEnabled: boolean;
 }
 
-export interface MemoryFact { id: string; text: string; at: number }
+export interface MemoryFact { id: string; text: string; at: number; /** The user's exact words the fact is based on. */ evidence?: string }
 
 export class BuddyInputError extends Error {
   constructor(message: string) {
