@@ -1,4 +1,5 @@
 import '../entities/buddy.dart';
+import '../entities/buddy_avatar_option.dart';
 import '../entities/buddy_message.dart';
 import '../entities/buddy_status.dart';
 
@@ -50,4 +51,12 @@ abstract class BuddiesRepository {
 
   /// A fresh idempotency id for `sendBuddyMessage`.
   String newRequestId();
+
+  /// The avatar pictures (`buddy_avatars`, active, by `order`). Read once
+  /// and cached for the repository's lifetime; [refresh] reads again.
+  /// A failed read is not cached, so a retry reads again.
+  Future<List<BuddyAvatarOption>> avatarOptions({bool refresh = false});
+
+  /// The cached pictures, or null before the first successful read.
+  List<BuddyAvatarOption>? get cachedAvatarOptions;
 }

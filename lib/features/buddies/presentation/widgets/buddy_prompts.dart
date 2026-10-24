@@ -50,17 +50,21 @@ class BuddyPrompts {
   }
 
   /// Free replies used up and no coins: the coin shop prompt (same pattern
-  /// as the other coin features).
+  /// as the other coin features). [repliesPerCoin] > 1 = one coin buys
+  /// several replies (from `getBuddyStatus`, never hard-coded).
   Future<void> showInsufficientCoins(BuildContext context,
-      {required String uid, required int coins}) {
+      {required String uid, required int coins, int repliesPerCoin = 1}) {
     final l10n = AppLocalizations.of(context)!;
     return showDialog<void>(
       context: context,
       builder: (ctx) => AlertDialog(
         backgroundColor: AppColors.backgroundCard,
-        title: Text(l10n.insufficientCoinsTitle,
-            style: const TextStyle(color: AppColors.textPrimary)),
-        content: Text(l10n.buddyInsufficientCoinsBody(coins),
+        title:
+            Text(l10n.insufficientCoinsTitle, style: const TextStyle(color: AppColors.textPrimary)),
+        content: Text(
+            repliesPerCoin > 1
+                ? l10n.buddyInsufficientCoinsBundleBody(repliesPerCoin)
+                : l10n.buddyInsufficientCoinsBody(coins),
             style: const TextStyle(color: AppColors.textSecondary)),
         actions: [
           TextButton(
@@ -82,8 +86,7 @@ class BuddyPrompts {
               );
             },
             style: ElevatedButton.styleFrom(backgroundColor: AppColors.richGold),
-            child: Text(l10n.buddyBuyCoins,
-                style: const TextStyle(color: AppColors.deepBlack)),
+            child: Text(l10n.buddyBuyCoins, style: const TextStyle(color: AppColors.deepBlack)),
           ),
         ],
       ),

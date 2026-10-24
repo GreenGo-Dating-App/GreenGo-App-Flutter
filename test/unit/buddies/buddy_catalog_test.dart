@@ -42,29 +42,12 @@ void main() {
           if (!en.contains('buddyTopic_${t.id}')) 'buddyTopic_${t.id}',
         for (final g in kBuddyTopicGroups)
           if (!en.contains('buddyTopicGroup_$g')) 'buddyTopicGroup_$g',
-        for (final r in BuddyCatalog.roles) ...[
-          if (!en.contains('buddyRole_$r')) 'buddyRole_$r',
-          if (!en.contains('buddyRoleDesc_$r')) 'buddyRoleDesc_$r',
-        ],
         for (final t in BuddyCatalog.tones)
           if (!en.contains('buddyTone_$t')) 'buddyTone_$t',
-        for (final l in BuddyCatalog.levels)
-          if (!en.contains('buddyLevel_$l')) 'buddyLevel_$l',
         for (final l in BuddyCatalog.languages)
           if (!en.contains('buddyLang_$l')) 'buddyLang_$l',
       ];
       expect(missing, isEmpty);
-    });
-
-    test('suggestions use valid ids', () {
-      for (final s in BuddySuggestion.all) {
-        expect(BuddyCatalog.isKnownTopic(s.topic), isTrue, reason: s.id);
-        expect(BuddyCatalog.roles, contains(s.role));
-        expect(BuddyCatalog.tones, contains(s.tone));
-        expect(BuddyCatalog.avatars, contains(s.avatar));
-        expect(BuddyCatalog.levels, contains(s.level));
-        if (s.language != null) expect(BuddyCatalog.languages, contains(s.language));
-      }
     });
   });
 
@@ -78,9 +61,9 @@ void main() {
     expect(BuddyCatalog.cleanName('<b>'), isNull);
   });
 
-  test('language topics and locale mapping', () {
-    expect(BuddyCatalog.isLanguageTopic('practice_italian'), isTrue);
-    expect(BuddyCatalog.isLanguageTopic('movies'), isFalse);
+  test('legacy avatars, practice language and locale mapping', () {
+    expect(BuddyCatalog.isLegacyAvatar('buddy_07'), isTrue);
+    expect(BuddyCatalog.isLegacyAvatar('av_fox'), isFalse);
     expect(BuddyCatalog.practiceLanguage('practice_german'), 'de');
     expect(BuddyCatalog.languageForLocale('pt', 'BR'), 'pt_BR');
     expect(BuddyCatalog.languageForLocale('pt', 'PT'), 'pt');

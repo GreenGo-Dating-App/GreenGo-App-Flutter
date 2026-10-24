@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:greengo_chat/core/services/app_sound_service.dart';
 import 'package:greengo_chat/features/buddies/domain/buddy_exception.dart';
 import 'package:greengo_chat/features/buddies/domain/entities/buddy.dart';
+import 'package:greengo_chat/features/buddies/domain/entities/buddy_avatar_option.dart';
 import 'package:greengo_chat/features/buddies/domain/entities/buddy_message.dart';
 import 'package:greengo_chat/features/buddies/domain/entities/buddy_status.dart';
 import 'package:greengo_chat/features/buddies/domain/repositories/buddies_repository.dart';
@@ -25,10 +26,8 @@ Buddy fakeBuddy(
         name: name,
         avatar: avatar,
         topic: topic,
-        role: 'friend',
         tone: 'warm',
         language: 'en',
-        level: 'beginner',
       ),
       createdAt: createdAt ?? DateTime(2026, 10, 1),
       lastMessageAt: lastMessageAt,
@@ -48,6 +47,13 @@ const BuddyStatus kFreeStatus = BuddyStatus(
   freeRepliesLeft: 7,
   coinsPerReply: 1,
 );
+
+/// Three avatar pictures as `buddy_avatars` would hold them.
+const List<BuddyAvatarOption> kFakeAvatars = [
+  BuddyAvatarOption(id: 'av_fox', url: 'https://img.test/fox.png', label: 'Fox', order: 1),
+  BuddyAvatarOption(id: 'av_owl', url: 'https://img.test/owl.png', label: 'Owl', order: 2),
+  BuddyAvatarOption(id: 'av_cat', url: 'https://img.test/cat.png', label: 'Cat', order: 3),
+];
 
 /// In-memory [BuddiesRepository]: streams are driven by the test.
 class FakeBuddiesRepository implements BuddiesRepository {
@@ -73,6 +79,23 @@ class FakeBuddiesRepository implements BuddiesRepository {
 
   /// Completes sendMessage only when set (typing indicator tests).
   Completer<void>? sendGate;
+
+  /// What avatarOptions returns; set [avatarsError] to make it fail.
+  List<BuddyAvatarOption> avatars = kFakeAvatars;
+  Object? avatarsError;
+  int avatarReads = 0;
+  List<BuddyAvatarOption>? _avatarCache;
+
+  @override
+  List<BuddyAvatarOption>? get cachedAvatarOptions => _avatarCache;
+
+  @override
+  Future<List<BuddyAvatarOption>> avatarOptions({bool refresh = false}) async {
+    if (_avatarCache != null && !refresh) return _avatarCache!;
+    avatarReads++;
+    if (avatarsError != null) throw avatarsError!;
+    return _avatarCache = avatars;
+  }
 
   @override
   Stream<List<Buddy>> watchBuddies(String uid) => buddies.stream;
@@ -112,7 +135,8 @@ class FakeBuddiesRepository implements BuddiesRepository {
     sent.add({'text': text, 'requestId': requestId});
     if (sendGate != null) await sendGate!.future;
     if (sendAnswers.isEmpty) {
-      return BuddySendResult(reply: 'Reply to $text', kind: 'chat', charged: 'free', freeRepliesLeft: 5);
+      return BuddySendResult(
+          reply: 'Reply to $text', kind: 'chat', charged: 'free', freeRepliesLeft: 5);
     }
     final a = sendAnswers.removeAt(0);
     if (a is BuddySendResult) return a;
@@ -160,8 +184,9 @@ class FakeBuddyPrompts extends BuddyPrompts {
   }
 
   @override
-  Future<void> showInsufficientCoins(BuildContext context, {required String uid, required int coins}) async {
-    calls.add('coins:$coins');
+  Future<void> showInsufficientCoins(BuildContext context,
+      {required String uid, required int coins, int repliesPerCoin = 1}) async {
+    calls.add(repliesPerCoin > 1 ? 'coins:$coins/$repliesPerCoin' : 'coins:$coins');
   }
 
   @override

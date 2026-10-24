@@ -61,15 +61,18 @@ class BuddyChatScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final repo = repository ?? di.sl<BuddiesRepository>();
-    return BlocProvider(
-      create: (_) => BuddyChatBloc(repository: repo)
-        ..add(BuddyChatStarted(uid: userId, buddyId: buddyId, locked: locked)),
-      child: _BuddyChatView(
-        userId: userId,
-        buddyId: buddyId,
-        initialBuddy: initialBuddy,
-        repository: repo,
-        prompts: prompts,
+    return BuddyAvatarScope(
+      repository: repo,
+      child: BlocProvider(
+        create: (_) => BuddyChatBloc(repository: repo)
+          ..add(BuddyChatStarted(uid: userId, buddyId: buddyId, locked: locked)),
+        child: _BuddyChatView(
+          userId: userId,
+          buddyId: buddyId,
+          initialBuddy: initialBuddy,
+          repository: repo,
+          prompts: prompts,
+        ),
       ),
     );
   }
@@ -137,12 +140,14 @@ class _BuddyChatViewState extends State<_BuddyChatView> {
     switch (e.kind) {
       case BuddyErrorKind.insufficientCoins:
         await widget.prompts.showInsufficientCoins(context,
-            uid: widget.userId, coins: state.coinsPerReply);
+            uid: widget.userId,
+            coins: state.status?.coinsNeeded ?? 1,
+            repliesPerCoin: state.repliesPerCoin);
         break;
       case BuddyErrorKind.consentRequired:
       case BuddyErrorKind.consentUpdateRequired:
-        final ok = await widget.prompts.ensureAiConsent(context,
-            update: e.kind == BuddyErrorKind.consentUpdateRequired);
+        final ok = await widget.prompts
+            .ensureAiConsent(context, update: e.kind == BuddyErrorKind.consentUpdateRequired);
         if (ok && state.errorLocalId != null) {
           bloc.add(BuddyChatRetryPressed(state.errorLocalId!));
         } else if (!ok && mounted) {
@@ -204,15 +209,19 @@ class _BuddyChatViewState extends State<_BuddyChatView> {
       shape: const RoundedRectangleBorder(
         borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
       ),
-      builder: (_) => BlocProvider.value(
-        value: bloc,
-        child: BuddyQuickSettingsSheet(
-          buddyId: widget.buddyId,
-          repository: widget.repository,
-          prompts: widget.prompts,
-          onDeleted: () {
-            if (mounted) Navigator.of(context).maybePop();
-          },
+      // The sheet is a new route: give it the pictures (cached, no new read).
+      builder: (_) => BuddyAvatarScope(
+        repository: widget.repository,
+        child: BlocProvider.value(
+          value: bloc,
+          child: BuddyQuickSettingsSheet(
+            buddyId: widget.buddyId,
+            repository: widget.repository,
+            prompts: widget.prompts,
+            onDeleted: () {
+              if (mounted) Navigator.of(context).maybePop();
+            },
+          ),
         ),
       ),
     );
@@ -262,7 +271,8 @@ class _BuddyChatViewState extends State<_BuddyChatView> {
                             Flexible(
                               child: Text(name,
                                   overflow: TextOverflow.ellipsis,
-                                  style: const TextStyle(fontSize: 17, fontWeight: FontWeight.bold)),
+                                  style:
+                                      const TextStyle(fontSize: 17, fontWeight: FontWeight.bold)),
                             ),
                             const SizedBox(width: 6),
                             const BuddyAiBadge(),
@@ -310,8 +320,7 @@ class _BuddyChatViewState extends State<_BuddyChatView> {
         child: Padding(
           padding: const EdgeInsets.all(24),
           child: Text(userErrorMessage(context, state.loadError),
-              textAlign: TextAlign.center,
-              style: const TextStyle(color: AppColors.textSecondary)),
+              textAlign: TextAlign.center, style: const TextStyle(color: AppColors.textSecondary)),
         ),
       );
     }
@@ -443,7 +452,11 @@ class _BuddyChatViewState extends State<_BuddyChatView> {
               Padding(
                 padding: const EdgeInsets.only(bottom: 6),
                 child: Text(
-                  '${l10n.buddyFreeRepliesLeft(left)} · ${l10n.buddyThenCoinsPerReply(state.coinsPerReply)}',
+                  buddyQuotaLine(l10n,
+                      freeRepliesLeft: left,
+                      coinsPerReply: state.coinsPerReply,
+                      repliesPerCoin: state.repliesPerCoin,
+                      replyCredits: state.replyCredits),
                   key: const ValueKey('buddy-quota-line'),
                   textAlign: TextAlign.center,
                   style: const TextStyle(color: AppColors.textTertiary, fontSize: 12),

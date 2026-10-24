@@ -2,6 +2,7 @@ import 'package:uuid/uuid.dart';
 
 import '../../domain/buddy_exception.dart';
 import '../../domain/entities/buddy.dart';
+import '../../domain/entities/buddy_avatar_option.dart';
 import '../../domain/entities/buddy_message.dart';
 import '../../domain/entities/buddy_status.dart';
 import '../../domain/repositories/buddies_repository.dart';
@@ -12,6 +13,9 @@ class BuddiesRepositoryImpl implements BuddiesRepository {
 
   final BuddiesRemoteDataSource remote;
   final Uuid _uuid;
+
+  List<BuddyAvatarOption>? _avatars;
+  Future<List<BuddyAvatarOption>>? _avatarsLoading;
 
   /// Runs a callable and turns any failure into a [BuddyException].
   Future<Map<String, dynamic>> _call(String name, Map<String, Object?> data,
@@ -99,4 +103,28 @@ class BuddiesRepositoryImpl implements BuddiesRepository {
   /// `validRequestId` (/^[A-Za-z0-9_-]{8,80}$/).
   @override
   String newRequestId() => _uuid.v4();
+
+  @override
+  List<BuddyAvatarOption>? get cachedAvatarOptions => _avatars;
+
+  @override
+  Future<List<BuddyAvatarOption>> avatarOptions({bool refresh = false}) {
+    final cached = _avatars;
+    if (cached != null && !refresh) return Future.value(cached);
+    // Callers at the same time share one read.
+    return _avatarsLoading ??= _loadAvatars();
+  }
+
+  Future<List<BuddyAvatarOption>> _loadAvatars() async {
+    try {
+      // Future.sync: even a synchronous throw completes after `_avatarsLoading`
+      // is assigned, so the `finally` below always clears it.
+      final list =
+          List<BuddyAvatarOption>.unmodifiable(await Future.sync(remote.fetchAvatarOptions));
+      _avatars = list;
+      return list;
+    } finally {
+      _avatarsLoading = null;
+    }
+  }
 }

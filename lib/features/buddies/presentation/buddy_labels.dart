@@ -1,6 +1,30 @@
 // Buddy enum ids -> localized labels (generated once from the catalogue;
 // test/unit/buddies/buddy_catalog_test.dart checks every id has an ARB key).
+import 'package:intl/intl.dart';
+
 import '../../../generated/app_localizations.dart';
+
+/// The quota line under the Buddy chat and in the Buddies tab, from the
+/// server's numbers (never a hard-coded price):
+/// "7 free replies left today · then 0.2 coins per reply (1 coin = 5
+/// replies) · 4 prepaid replies".
+String buddyQuotaLine(
+  AppLocalizations l10n, {
+  required int freeRepliesLeft,
+  required num coinsPerReply,
+  required int repliesPerCoin,
+  int replyCredits = 0,
+}) {
+  final price = repliesPerCoin > 1
+      ? l10n.buddyThenPricePerReply(
+          NumberFormat.decimalPattern(l10n.localeName).format(coinsPerReply), repliesPerCoin)
+      : l10n.buddyThenCoinsPerReply(coinsPerReply.ceil());
+  return [
+    l10n.buddyFreeRepliesLeft(freeRepliesLeft),
+    price,
+    if (replyCredits > 0) l10n.buddyPrepaidReplies(replyCredits),
+  ].join(' · ');
+}
 
 /// Localized topic label (`buddyTopic_<id>`).
 String buddyTopicLabel(AppLocalizations l10n, String id) {
@@ -284,46 +308,6 @@ String buddyTopicGroupLabel(AppLocalizations l10n, String id) {
   }
 }
 
-/// Localized role name.
-String buddyRoleLabel(AppLocalizations l10n, String id) {
-  switch (id) {
-    case 'friend':
-      return l10n.buddyRole_friend;
-    case 'expert':
-      return l10n.buddyRole_expert;
-    case 'teacher':
-      return l10n.buddyRole_teacher;
-    case 'coach':
-      return l10n.buddyRole_coach;
-    case 'conversation_partner':
-      return l10n.buddyRole_conversation_partner;
-    case 'debate_partner':
-      return l10n.buddyRole_debate_partner;
-    default:
-      return id;
-  }
-}
-
-/// Localized one-line role description.
-String buddyRoleDescription(AppLocalizations l10n, String id) {
-  switch (id) {
-    case 'friend':
-      return l10n.buddyRoleDesc_friend;
-    case 'expert':
-      return l10n.buddyRoleDesc_expert;
-    case 'teacher':
-      return l10n.buddyRoleDesc_teacher;
-    case 'coach':
-      return l10n.buddyRoleDesc_coach;
-    case 'conversation_partner':
-      return l10n.buddyRoleDesc_conversation_partner;
-    case 'debate_partner':
-      return l10n.buddyRoleDesc_debate_partner;
-    default:
-      return id;
-  }
-}
-
 /// Localized tone.
 String buddyToneLabel(AppLocalizations l10n, String id) {
   switch (id) {
@@ -339,20 +323,6 @@ String buddyToneLabel(AppLocalizations l10n, String id) {
       return l10n.buddyTone_formal;
     case 'playful':
       return l10n.buddyTone_playful;
-    default:
-      return id;
-  }
-}
-
-/// Localized level.
-String buddyLevelLabel(AppLocalizations l10n, String id) {
-  switch (id) {
-    case 'beginner':
-      return l10n.buddyLevel_beginner;
-    case 'intermediate':
-      return l10n.buddyLevel_intermediate;
-    case 'expert':
-      return l10n.buddyLevel_expert;
     default:
       return id;
   }

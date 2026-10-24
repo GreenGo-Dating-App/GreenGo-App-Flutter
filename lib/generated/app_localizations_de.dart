@@ -28679,6 +28679,27 @@ class AppLocalizationsDe extends AppLocalizations {
   }
 
   @override
+  String buddyThenPricePerReply(String price, int replies) {
+    return 'danach $price Münzen pro Antwort (1 Münze = $replies Antworten)';
+  }
+
+  @override
+  String buddyPrepaidReplies(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count bezahlte Antworten übrig',
+      one: '1 bezahlte Antwort übrig',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String buddyInsufficientCoinsBundleBody(int replies) {
+    return 'Du hast die kostenlosen Buddy-Antworten für heute aufgebraucht. 1 Münze reicht für $replies Antworten.';
+  }
+
+  @override
   String get buddyLockedBadge => 'Gesperrt';
 
   @override
@@ -28804,28 +28825,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get buddyTopicPrompt => 'Worüber möchtest du reden?';
 
   @override
-  String get buddyTopicSearchHint => 'Themen suchen';
-
-  @override
-  String get buddyNoTopicsFound => 'Keine Themen gefunden';
-
-  @override
-  String get buddySuggestionsTitle => 'Schnellstart';
-
-  @override
-  String get buddyRolePrompt => 'Wie soll dein Buddy dir helfen?';
-
-  @override
   String get buddyLanguagePrompt => 'Welche Sprache soll dein Buddy sprechen?';
-
-  @override
-  String get buddyLevelPrompt => 'Dein Niveau';
-
-  @override
-  String get buddyCefrPrompt => 'Sprachniveau (optional)';
-
-  @override
-  String get buddyCefrNone => 'Weiß nicht';
 
   @override
   String get buddyNamePrompt => 'Gib deinem Buddy einen Namen';
@@ -28846,7 +28846,27 @@ class AppLocalizationsDe extends AppLocalizations {
   }
 
   @override
-  String get buddyTonePrompt => 'Tonfall';
+  String get buddyCategoryLabel => 'Kategorie';
+
+  @override
+  String get buddyCategoryHint => 'Tippe, um eine Kategorie zu suchen';
+
+  @override
+  String get buddyToneStepTitle => 'Wie soll dein Buddy klingen?';
+
+  @override
+  String get buddyLanguageOnlyNote =>
+      'Dein Buddy spricht immer nur diese Sprache.';
+
+  @override
+  String get buddyAvatarsLoadFailed =>
+      'Die Bilder konnten nicht geladen werden.';
+
+  @override
+  String get buddySettingAvatar => 'Bild';
+
+  @override
+  String get buddySettingName => 'Name';
 
   @override
   String get buddyNext => 'Weiter';
@@ -28858,46 +28878,10 @@ class AppLocalizationsDe extends AppLocalizations {
   String get buddyCreate => 'Buddy erstellen';
 
   @override
-  String get buddySuggestItalianTeacher => 'Italienischlehrer';
-
-  @override
-  String get buddySuggestEnglishPartner => 'Englisch-Gesprächspartner';
-
-  @override
-  String get buddySuggestRunningCoach => 'Lauf-Coach';
-
-  @override
-  String get buddySuggestMovieBuddy => 'Film-Buddy';
-
-  @override
-  String get buddySuggestTravelPlanner => 'Planer für günstiges Reisen';
-
-  @override
-  String get buddySuggestCookingFriend => 'Kochfreund';
-
-  @override
-  String get buddySuggestInterviewCoach => 'Coach für Vorstellungsgespräche';
-
-  @override
-  String get buddySuggestDebatePartner => 'Freundlicher Diskussionspartner';
-
-  @override
-  String get buddySettingRole => 'Rolle';
-
-  @override
   String get buddySettingTone => 'Tonfall';
 
   @override
-  String get buddySettingTopic => 'Thema';
-
-  @override
-  String get buddySettingLevel => 'Niveau';
-
-  @override
   String get buddySettingLanguage => 'Sprache';
-
-  @override
-  String get buddySettingCefr => 'Sprachniveau';
 
   @override
   String get buddySettingCheckIns => 'Check-ins';
@@ -28963,45 +28947,6 @@ class AppLocalizationsDe extends AppLocalizations {
       'Check-in-Nachrichten von deinen KI-Buddies';
 
   @override
-  String get buddyRole_friend => 'Freund';
-
-  @override
-  String get buddyRoleDesc_friend => 'Ein freundlicher Begleiter zum Plaudern';
-
-  @override
-  String get buddyRole_expert => 'Experte';
-
-  @override
-  String get buddyRoleDesc_expert => 'Kennt das Thema gut und erklärt es';
-
-  @override
-  String get buddyRole_teacher => 'Lehrer';
-
-  @override
-  String get buddyRoleDesc_teacher =>
-      'Lehrt Schritt für Schritt und korrigiert dich';
-
-  @override
-  String get buddyRole_coach => 'Coach';
-
-  @override
-  String get buddyRoleDesc_coach =>
-      'Motiviert dich und hilft dir, Ziele zu erreichen';
-
-  @override
-  String get buddyRole_conversation_partner => 'Gesprächspartner';
-
-  @override
-  String get buddyRoleDesc_conversation_partner =>
-      'Hält das Gespräch am Laufen, damit du üben kannst';
-
-  @override
-  String get buddyRole_debate_partner => 'Diskussionspartner';
-
-  @override
-  String get buddyRoleDesc_debate_partner => 'Vertritt höflich die Gegenseite';
-
-  @override
   String get buddyTone_warm => 'Herzlich';
 
   @override
@@ -29018,15 +28963,6 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get buddyTone_playful => 'Verspielt';
-
-  @override
-  String get buddyLevel_beginner => 'Anfänger';
-
-  @override
-  String get buddyLevel_intermediate => 'Fortgeschritten';
-
-  @override
-  String get buddyLevel_expert => 'Experte';
 
   @override
   String get buddyLang_en => 'Englisch';

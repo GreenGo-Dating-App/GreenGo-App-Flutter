@@ -12,6 +12,16 @@ Widget _app(Widget child) => MaterialApp(
       home: Scaffold(body: child),
     );
 
+/// The plan-usage line is horizontally centered (owner 2026-10-24).
+void expectCentered(WidgetTester tester) {
+  final screenMid = tester.getSize(find.byType(Scaffold)).width / 2;
+  for (final k in ['buddies-plan-usage', 'buddies-free-replies']) {
+    final f = find.byKey(ValueKey(k));
+    expect(tester.getCenter(f).dx, moreOrLessEquals(screenMid, epsilon: 1), reason: k);
+    expect(tester.widget<Text>(f).textAlign, TextAlign.center, reason: k);
+  }
+}
+
 void main() {
   late FakeBuddiesRepository repo;
   late FakeBuddyPrompts prompts;
@@ -38,6 +48,7 @@ void main() {
     expect(find.text('Create your Buddy'), findsOneWidget);
     expect(find.text('0 of 1 Buddies'), findsOneWidget);
     expect(find.text('7 free replies left today · then 1 coin per reply'), findsOneWidget);
+    expectCentered(tester);
 
     await tester.tap(find.byKey(const ValueKey('buddies-create')));
     await tester.pumpAndSettle();
@@ -47,7 +58,12 @@ void main() {
 
   testWidgets('list: name, topic, last message, AI badge; locked Buddy greyed', (tester) async {
     repo.status = const BuddyStatus(
-        tier: 'FREE', buddyLimit: 1, buddyCount: 2, freeRepliesPerDay: 10, freeRepliesLeft: 3, coinsPerReply: 1);
+        tier: 'FREE',
+        buddyLimit: 1,
+        buddyCount: 2,
+        freeRepliesPerDay: 10,
+        freeRepliesLeft: 3,
+        coinsPerReply: 1);
     await pumpTab(tester);
     repo.buddies.add([
       fakeBuddy('old',
@@ -64,6 +80,7 @@ void main() {
     expect(find.text('Sunny'), findsOneWidget);
     expect(find.text('Films · Seen any good films?'), findsOneWidget);
     expect(find.text('2 of 1 Buddies'), findsOneWidget);
+    expectCentered(tester);
     expect(find.byKey(const ValueKey('buddy-ai-badge')), findsWidgets);
     // Newest Buddy beyond the Free limit is locked.
     expect(find.byKey(const ValueKey('buddy-locked-new')), findsOneWidget);
@@ -74,5 +91,28 @@ void main() {
     await tester.tap(find.byKey(const ValueKey('buddies-new')));
     await tester.pump();
     expect(prompts.calls, ['upgrade:1']);
+  });
+
+  testWidgets('price comes from getBuddyStatus: 0.2 coins per reply + prepaid replies',
+      (tester) async {
+    repo.status = const BuddyStatus(
+        tier: 'SILVER',
+        buddyLimit: 10,
+        buddyCount: 0,
+        freeRepliesPerDay: 30,
+        freeRepliesLeft: 12,
+        coinsPerReply: 0.2,
+        repliesPerCoin: 5,
+        replyCredits: 2);
+    await pumpTab(tester);
+    repo.buddies.add(const []);
+    await tester.pump();
+    await tester.pump();
+    expect(find.text('0 of 10 Buddies'), findsOneWidget);
+    expect(
+        find.text('12 free replies left today · then 0.2 coins per reply (1 coin = 5 replies)'
+            ' · 2 prepaid replies'),
+        findsOneWidget);
+    expectCentered(tester);
   });
 }

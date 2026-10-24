@@ -13,7 +13,7 @@ import 'buddy_avatar.dart';
 import 'buddy_prompts.dart';
 import 'buddy_topic_picker.dart';
 
-/// Quick settings of a Buddy: role, tone, topic, level, language (+ CEFR),
+/// Quick settings of a Buddy: category, language, tone, picture, name,
 /// check-ins, what it remembers, clear chat, delete. Reads the live Buddy
 /// from the surrounding [BuddyChatBloc]; every change is a callable.
 class BuddyQuickSettingsSheet extends StatefulWidget {
@@ -73,12 +73,50 @@ class _BuddyQuickSettingsSheetState extends State<BuddyQuickSettingsSheet> {
                   Expanded(
                     child: Text(label, style: const TextStyle(color: AppColors.textPrimary)),
                   ),
-                  if (value == current) const Icon(Icons.check, color: AppColors.richGold, size: 18),
+                  if (value == current)
+                    const Icon(Icons.check, color: AppColors.richGold, size: 18),
                 ],
               ),
             ),
         ],
       ),
+    );
+  }
+
+  /// The picture grid in a dialog; pops the chosen `buddy_avatars` id.
+  Future<String?> _pickAvatar(String current) {
+    final l10n = AppLocalizations.of(context)!;
+    return showDialog<String>(
+      context: context,
+      // A dialog is a new route: it gets its own scope (cached list).
+      builder: (ctx) => BuddyAvatarScope(
+        repository: widget.repository,
+        child: AlertDialog(
+          backgroundColor: AppColors.backgroundCard,
+          title: Text(l10n.buddyAvatarPrompt, style: const TextStyle(color: AppColors.textPrimary)),
+          content: SizedBox(
+            width: 400,
+            child: SingleChildScrollView(
+              child: BuddyAvatarGrid(
+                selected: current,
+                onSelected: (id) => Navigator.of(ctx).pop(id),
+              ),
+            ),
+          ),
+          actions: [
+            TextButton(onPressed: () => Navigator.of(ctx).pop(), child: Text(l10n.cancel)),
+          ],
+        ),
+      ),
+    );
+  }
+
+  /// Rename dialog; pops the cleaned name (same rule as the server).
+  Future<String?> _editName(String current) {
+    final l10n = AppLocalizations.of(context)!;
+    return showDialog<String>(
+      context: context,
+      builder: (ctx) => _NameDialog(initial: current, l10n: l10n),
     );
   }
 
@@ -153,10 +191,10 @@ class _BuddyQuickSettingsSheetState extends State<BuddyQuickSettingsSheet> {
         final b = state.buddy;
         if (b == null) {
           return const SizedBox(
-              height: 160, child: Center(child: CircularProgressIndicator(color: AppColors.richGold)));
+              height: 160,
+              child: Center(child: CircularProgressIndicator(color: AppColors.richGold)));
         }
         final s = b.settings;
-        final languageTopic = BuddyCatalog.isLanguageTopic(s.topic);
         return DraggableScrollableSheet(
           expand: false,
           initialChildSize: 0.8,
@@ -183,57 +221,25 @@ class _BuddyQuickSettingsSheetState extends State<BuddyQuickSettingsSheet> {
                     Expanded(
                       child: Text(b.name,
                           style: const TextStyle(
-                              color: AppColors.textPrimary, fontSize: 18, fontWeight: FontWeight.bold)),
+                              color: AppColors.textPrimary,
+                              fontSize: 18,
+                              fontWeight: FontWeight.bold)),
                     ),
                     if (_busy)
                       const SizedBox.square(
                           dimension: 18,
-                          child: CircularProgressIndicator(strokeWidth: 2, color: AppColors.richGold)),
+                          child:
+                              CircularProgressIndicator(strokeWidth: 2, color: AppColors.richGold)),
                   ],
                 ),
                 const SizedBox(height: 8),
                 _row(
-                  key: 'role',
-                  label: l10n.buddySettingRole,
-                  value: buddyRoleLabel(l10n, s.role),
-                  onTap: () async {
-                    final v = await _pick(l10n.buddySettingRole,
-                        [for (final r in BuddyCatalog.roles) (r, buddyRoleLabel(l10n, r))], s.role);
-                    if (v != null && v != s.role) await _update({'role': v});
-                  },
-                ),
-                _row(
-                  key: 'tone',
-                  label: l10n.buddySettingTone,
-                  value: buddyToneLabel(l10n, s.tone),
-                  onTap: () async {
-                    final v = await _pick(l10n.buddySettingTone,
-                        [for (final t in BuddyCatalog.tones) (t, buddyToneLabel(l10n, t))], s.tone);
-                    if (v != null && v != s.tone) await _update({'tone': v});
-                  },
-                ),
-                _row(
                   key: 'topic',
-                  label: l10n.buddySettingTopic,
+                  label: l10n.buddyCategoryLabel,
                   value: buddyTopicLabel(l10n, s.topic),
                   onTap: () async {
-                    final v = await Navigator.of(context).push<String>(MaterialPageRoute(
-                        builder: (_) => BuddyTopicPickerScreen(selected: s.topic)));
-                    if (v == null || v == s.topic) return;
-                    await _update({
-                      'topic': v,
-                      if (!BuddyCatalog.isLanguageTopic(v) && s.cefr != null) 'cefr': null,
-                    });
-                  },
-                ),
-                _row(
-                  key: 'level',
-                  label: l10n.buddySettingLevel,
-                  value: buddyLevelLabel(l10n, s.level),
-                  onTap: () async {
-                    final v = await _pick(l10n.buddySettingLevel,
-                        [for (final x in BuddyCatalog.levels) (x, buddyLevelLabel(l10n, x))], s.level);
-                    if (v != null && v != s.level) await _update({'level': v});
+                    final v = await showBuddyCategoryDialog(context, selected: s.topic);
+                    if (v != null && v != s.topic) await _update({'topic': v});
                   },
                 ),
                 _row(
@@ -248,19 +254,43 @@ class _BuddyQuickSettingsSheetState extends State<BuddyQuickSettingsSheet> {
                     if (v != null && v != s.language) await _update({'language': v});
                   },
                 ),
-                if (languageTopic)
-                  _row(
-                    key: 'cefr',
-                    label: l10n.buddySettingCefr,
-                    value: s.cefr ?? l10n.buddyCefrNone,
-                    onTap: () async {
-                      final v = await _pick(l10n.buddySettingCefr,
-                          [('', l10n.buddyCefrNone), for (final c in BuddyCatalog.cefrLevels) (c, c)],
-                          s.cefr ?? '');
-                      if (v == null || v == (s.cefr ?? '')) return;
-                      await _update({'cefr': v.isEmpty ? null : v});
-                    },
+                _row(
+                  key: 'tone',
+                  label: l10n.buddySettingTone,
+                  value: buddyToneLabel(l10n, s.tone),
+                  onTap: () async {
+                    final v = await _pick(l10n.buddySettingTone,
+                        [for (final t in BuddyCatalog.tones) (t, buddyToneLabel(l10n, t))], s.tone);
+                    if (v != null && v != s.tone) await _update({'tone': v});
+                  },
+                ),
+                ListTile(
+                  key: const ValueKey('buddy-setting-avatar'),
+                  contentPadding: EdgeInsets.zero,
+                  title: Text(l10n.buddySettingAvatar,
+                      style: const TextStyle(color: AppColors.textTertiary, fontSize: 13)),
+                  subtitle: Align(
+                    alignment: Alignment.centerLeft,
+                    child: Padding(
+                      padding: const EdgeInsets.only(top: 4),
+                      child: BuddyAvatar(avatarId: s.avatar, size: 32),
+                    ),
                   ),
+                  trailing: const Icon(Icons.chevron_right, color: AppColors.textTertiary),
+                  onTap: () async {
+                    final v = await _pickAvatar(s.avatar);
+                    if (v != null && v != s.avatar) await _update({'avatar': v});
+                  },
+                ),
+                _row(
+                  key: 'name',
+                  label: l10n.buddySettingName,
+                  value: b.name,
+                  onTap: () async {
+                    final v = await _editName(b.name);
+                    if (v != null && v != b.name) await _update({'name': v});
+                  },
+                ),
                 SwitchListTile(
                   key: const ValueKey('buddy-setting-checkins'),
                   contentPadding: EdgeInsets.zero,
@@ -287,7 +317,8 @@ class _BuddyQuickSettingsSheetState extends State<BuddyQuickSettingsSheet> {
                       key: ValueKey('buddy-memory-${f.id}'),
                       contentPadding: EdgeInsets.zero,
                       dense: true,
-                      leading: const Icon(Icons.bookmark_border, color: AppColors.textTertiary, size: 20),
+                      leading: const Icon(Icons.bookmark_border,
+                          color: AppColors.textTertiary, size: 20),
                       title: Text(f.text, style: const TextStyle(color: AppColors.textSecondary)),
                       trailing: IconButton(
                         tooltip: l10n.buddyMemoryForget,
@@ -315,8 +346,10 @@ class _BuddyQuickSettingsSheetState extends State<BuddyQuickSettingsSheet> {
                 ListTile(
                   key: const ValueKey('buddy-clear-chat'),
                   contentPadding: EdgeInsets.zero,
-                  leading: const Icon(Icons.cleaning_services_outlined, color: AppColors.textSecondary),
-                  title: Text(l10n.buddyClearChat, style: const TextStyle(color: AppColors.textPrimary)),
+                  leading:
+                      const Icon(Icons.cleaning_services_outlined, color: AppColors.textSecondary),
+                  title: Text(l10n.buddyClearChat,
+                      style: const TextStyle(color: AppColors.textPrimary)),
                   onTap: () => _clearChat(b),
                 ),
                 ListTile(
@@ -348,4 +381,54 @@ class _BuddyQuickSettingsSheetState extends State<BuddyQuickSettingsSheet> {
         trailing: const Icon(Icons.chevron_right, color: AppColors.textTertiary),
         onTap: onTap,
       );
+}
+
+class _NameDialog extends StatefulWidget {
+  const _NameDialog({required this.initial, required this.l10n});
+
+  final String initial;
+  final AppLocalizations l10n;
+
+  @override
+  State<_NameDialog> createState() => _NameDialogState();
+}
+
+class _NameDialogState extends State<_NameDialog> {
+  late final TextEditingController _c = TextEditingController(text: widget.initial);
+
+  @override
+  void dispose() {
+    _c.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final l10n = widget.l10n;
+    final clean = BuddyCatalog.cleanName(_c.text);
+    return AlertDialog(
+      backgroundColor: AppColors.backgroundCard,
+      title: Text(l10n.buddySettingName, style: const TextStyle(color: AppColors.textPrimary)),
+      content: TextField(
+        key: const ValueKey('buddy-rename-field'),
+        controller: _c,
+        autofocus: true,
+        maxLength: BuddyCatalog.maxNameChars,
+        style: const TextStyle(color: AppColors.textPrimary),
+        onChanged: (_) => setState(() {}),
+        decoration: InputDecoration(
+          errorText: clean == null ? l10n.buddyNameInvalid : null,
+          errorMaxLines: 3,
+        ),
+      ),
+      actions: [
+        TextButton(onPressed: () => Navigator.of(context).pop(), child: Text(l10n.cancel)),
+        TextButton(
+          key: const ValueKey('buddy-rename-save'),
+          onPressed: clean == null ? null : () => Navigator.of(context).pop(clean),
+          child: Text(l10n.save),
+        ),
+      ],
+    );
+  }
 }

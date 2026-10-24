@@ -32,7 +32,9 @@ class BuddyCatalog {
 
   static const List<String> languages = <String>['en', 'de', 'es', 'fr', 'it', 'pt', 'pt_BR'];
 
-  /// Drawn avatars (never photos): `buddy_01` .. `buddy_24`.
+  /// Legacy drawn avatars `buddy_01` .. `buddy_24` (Buddies created before
+  /// 2026-10-24, and the fallback when the pictures can not be loaded).
+  /// New Buddies use a `buddy_avatars` picture id.
   static final List<String> avatars = List<String>.unmodifiable(
     List<String>.generate(24, (i) => 'buddy_${(i + 1).toString().padLeft(2, '0')}'),
   );
@@ -63,13 +65,6 @@ class BuddyCatalog {
 
   static bool isKnownTopic(String id) => _byId.containsKey(id);
 
-  /// Topics where a CEFR level (A1..C2) makes sense: language practice.
-  static bool isLanguageTopic(String topicId) =>
-      topicId.startsWith('practice_') ||
-      topicId == 'pronunciation' ||
-      topicId == 'slang_idioms' ||
-      topicId == 'travel_phrases';
-
   /// The language a practice topic is about (the Buddy should speak it).
   static String? practiceLanguage(String topicId) {
     switch (topicId) {
@@ -90,6 +85,9 @@ class BuddyCatalog {
     }
   }
 
+  /// True for a legacy drawn avatar id (`buddy_01` .. `buddy_24`).
+  static bool isLegacyAvatar(String avatarId) => avatars.contains(avatarId);
+
   /// Avatar index 0..23 of an avatar id (unknown ids fall back to 0).
   static int avatarIndex(String avatarId) {
     final i = avatars.indexOf(avatarId);
@@ -101,72 +99,4 @@ class BuddyCatalog {
     if (languageCode == 'pt') return countryCode == 'BR' ? 'pt_BR' : 'pt';
     return languages.contains(languageCode) ? languageCode : 'en';
   }
-}
-
-/// A ready-made Buddy in the builder ("Italian teacher", "Running coach").
-class BuddySuggestion {
-  const BuddySuggestion({
-    required this.id,
-    required this.topic,
-    required this.role,
-    required this.tone,
-    required this.avatar,
-    this.language,
-    this.level = 'beginner',
-  });
-
-  /// Stable id; the label comes from `buddySuggest<Id>` (see buddy_labels).
-  final String id;
-  final String topic;
-  final String role;
-  final String tone;
-  final String avatar;
-
-  /// Fixed Buddy language (language practice), or null = the app language.
-  final String? language;
-  final String level;
-
-  static const List<BuddySuggestion> all = <BuddySuggestion>[
-    BuddySuggestion(
-        id: 'italian_teacher',
-        topic: 'practice_italian',
-        role: 'teacher',
-        tone: 'warm',
-        avatar: 'buddy_03',
-        language: 'it'),
-    BuddySuggestion(
-        id: 'english_partner',
-        topic: 'practice_english',
-        role: 'conversation_partner',
-        tone: 'playful',
-        avatar: 'buddy_07',
-        language: 'en',
-        level: 'intermediate'),
-    BuddySuggestion(
-        id: 'running_coach', topic: 'running', role: 'coach', tone: 'direct', avatar: 'buddy_11'),
-    BuddySuggestion(
-        id: 'movie_buddy', topic: 'movies', role: 'friend', tone: 'funny', avatar: 'buddy_15'),
-    BuddySuggestion(
-        id: 'travel_planner',
-        topic: 'budget_travel',
-        role: 'expert',
-        tone: 'warm',
-        avatar: 'buddy_19'),
-    BuddySuggestion(
-        id: 'cooking_friend', topic: 'cooking', role: 'friend', tone: 'playful', avatar: 'buddy_05'),
-    BuddySuggestion(
-        id: 'interview_coach',
-        topic: 'job_interviews',
-        role: 'coach',
-        tone: 'formal',
-        avatar: 'buddy_22',
-        level: 'intermediate'),
-    BuddySuggestion(
-        id: 'debate_partner',
-        topic: 'debate_partner',
-        role: 'debate_partner',
-        tone: 'calm',
-        avatar: 'buddy_09',
-        level: 'intermediate'),
-  ];
 }

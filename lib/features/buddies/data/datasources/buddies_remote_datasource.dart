@@ -2,6 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:cloud_functions/cloud_functions.dart';
 
 import '../../domain/entities/buddy.dart';
+import '../../domain/entities/buddy_avatar_option.dart';
 import '../../domain/entities/buddy_message.dart';
 
 /// Firestore + callables of GreenGo Buddies (functions/src/buddies).
@@ -25,6 +26,12 @@ class BuddiesRemoteDataSource {
 
   /// Hard cap on the Buddies list (the top plan allows 10).
   static const int maxBuddies = 50;
+
+  /// Pictures people pick a Buddy avatar from (read-only for clients).
+  static const String avatarsCollection = 'buddy_avatars';
+
+  /// The catalogue is small (about 50 pictures); one bounded read.
+  static const int maxAvatars = 60;
 
   CollectionReference<Map<String, dynamic>> _buddies(String uid) =>
       _db.collection(collection).doc(uid).collection('buddies');
@@ -52,11 +59,27 @@ class BuddiesRemoteDataSource {
       .snapshots()
       .map((d) => d.exists ? buddyFromMap(d.id, d.data()!) : null);
 
-  Future<BuddyMessagePage> latestMessages(String uid, String buddyId, int limit) async {
-    final snap = await _messages(uid, buddyId)
-        .orderBy('createdAt', descending: true)
-        .limit(limit)
+  /// Active avatar pictures, ordered by `order` (then id).
+  ///
+  /// One equality filter only, sorted here: `active == true` + `orderBy`
+  /// on another field would need a composite index, and the list is tiny.
+  Future<List<BuddyAvatarOption>> fetchAvatarOptions() async {
+    final snap = await _db
+        .collection(avatarsCollection)
+        .where('active', isEqualTo: true)
+        .limit(maxAvatars)
         .get();
+    final list = <BuddyAvatarOption>[
+      for (final d in snap.docs)
+        if (BuddyAvatarOption.fromMap(d.id, d.data()) case final o?) o,
+    ];
+    list.sort((a, b) => a.order != b.order ? a.order.compareTo(b.order) : a.id.compareTo(b.id));
+    return list;
+  }
+
+  Future<BuddyMessagePage> latestMessages(String uid, String buddyId, int limit) async {
+    final snap =
+        await _messages(uid, buddyId).orderBy('createdAt', descending: true).limit(limit).get();
     return _page(snap, limit);
   }
 
@@ -76,8 +99,11 @@ class BuddiesRemoteDataSource {
       q = q.where('createdAt', isGreaterThan: Timestamp.fromDate(after));
     }
     // Only messages of this session arrive here (bounded anyway).
-    return q.orderBy('createdAt').limitToLast(200).snapshots().map(
-        (s) => s.docs.map((d) => messageFromMap(d.id, d.data())).toList());
+    return q
+        .orderBy('createdAt')
+        .limitToLast(200)
+        .snapshots()
+        .map((s) => s.docs.map((d) => messageFromMap(d.id, d.data())).toList());
   }
 
   BuddyMessagePage _page(QuerySnapshot<Map<String, dynamic>> snap, int limit) {
@@ -109,10 +135,10 @@ class BuddiesRemoteDataSource {
         name: (d['name'] as String?) ?? '',
         avatar: (d['avatar'] as String?) ?? 'buddy_01',
         topic: (d['topic'] as String?) ?? 'casual_chat',
-        role: (d['role'] as String?) ?? 'friend',
+        role: d['role'] as String?,
         tone: (d['tone'] as String?) ?? 'warm',
         language: (d['language'] as String?) ?? 'en',
-        level: (d['level'] as String?) ?? 'beginner',
+        level: d['level'] as String?,
         cefr: d['cefr'] as String?,
         checkInsEnabled: d['checkInsEnabled'] != false,
       ),

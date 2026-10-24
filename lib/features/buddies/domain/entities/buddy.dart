@@ -1,41 +1,47 @@
 import 'package:equatable/equatable.dart';
 
 /// What the user chose for a Buddy (server `BuddySettings`).
+///
+/// The builder asks only category ([topic]), [language], [tone], [name] and
+/// [avatar]. [role], [level] and [cefr] are optional since 2026-10-24: the
+/// server defaults them (friend / intermediate / none). They are still read
+/// from older Buddies, and only sent when set.
 class BuddySettings extends Equatable {
   const BuddySettings({
     required this.name,
     required this.avatar,
     required this.topic,
-    required this.role,
     required this.tone,
     required this.language,
-    required this.level,
+    this.role,
+    this.level,
     this.cefr,
     this.checkInsEnabled = true,
   });
 
   final String name;
+
+  /// A `buddy_avatars` document id, or a legacy drawn avatar `buddy_01..24`.
   final String avatar;
   final String topic;
-  final String role;
   final String tone;
   final String language;
-  final String level;
-
-  /// A1..C2 for language-practice topics, otherwise null.
+  final String? role;
+  final String? level;
   final String? cefr;
   final bool checkInsEnabled;
 
-  /// The callable payload (`createBuddy {settings}`).
+  /// The callable payload (`createBuddy {settings}`). Optional fields are
+  /// left out when unset (the server refuses a `null` role or level).
   Map<String, Object?> toMap() => <String, Object?>{
         'name': name,
         'avatar': avatar,
         'topic': topic,
-        'role': role,
         'tone': tone,
         'language': language,
-        'level': level,
-        'cefr': cefr,
+        if (role != null) 'role': role,
+        if (level != null) 'level': level,
+        if (cefr != null) 'cefr': cefr,
         'checkInsEnabled': checkInsEnabled,
       };
 
@@ -43,22 +49,19 @@ class BuddySettings extends Equatable {
     String? name,
     String? avatar,
     String? topic,
-    String? role,
     String? tone,
     String? language,
-    String? level,
-    String? Function()? cefr,
     bool? checkInsEnabled,
   }) =>
       BuddySettings(
         name: name ?? this.name,
         avatar: avatar ?? this.avatar,
         topic: topic ?? this.topic,
-        role: role ?? this.role,
         tone: tone ?? this.tone,
         language: language ?? this.language,
-        level: level ?? this.level,
-        cefr: cefr != null ? cefr() : this.cefr,
+        role: role,
+        level: level,
+        cefr: cefr,
         checkInsEnabled: checkInsEnabled ?? this.checkInsEnabled,
       );
 
@@ -106,8 +109,7 @@ class Buddy extends Equatable {
   String get name => settings.name;
 
   /// For "most recent first" lists: last activity, else creation.
-  DateTime get activityAt =>
-      lastMessageAt ?? createdAt ?? DateTime.fromMillisecondsSinceEpoch(0);
+  DateTime get activityAt => lastMessageAt ?? createdAt ?? DateTime.fromMillisecondsSinceEpoch(0);
 
   @override
   List<Object?> get props => [

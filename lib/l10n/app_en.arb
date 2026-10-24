@@ -18305,6 +18305,38 @@
       }
     }
   },
+  "buddyThenPricePerReply": "then {price} coins per reply (1 coin = {replies} replies)",
+  "@buddyThenPricePerReply": {
+    "description": "After the free replies: price of one Buddy reply when one coin buys several replies. price is a localized decimal like 0.2",
+    "placeholders": {
+      "price": {
+        "type": "String",
+        "example": "0.2"
+      },
+      "replies": {
+        "type": "int",
+        "example": "5"
+      }
+    }
+  },
+  "buddyPrepaidReplies": "{count, plural, =1{1 prepaid reply} other{{count} prepaid replies}}",
+  "@buddyPrepaidReplies": {
+    "description": "Buddy replies already paid with a coin and not used yet (they never expire)",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "buddyInsufficientCoinsBundleBody": "You used today's free Buddy replies. 1 coin buys {replies} replies.",
+  "@buddyInsufficientCoinsBundleBody": {
+    "description": "Dialog text: no coins left for a Buddy reply, when one coin buys several replies",
+    "placeholders": {
+      "replies": {
+        "type": "int"
+      }
+    }
+  },
   "buddyLockedBadge": "Locked",
   "@buddyLockedBadge": {
     "description": "Badge on a Buddy that is locked on the current plan"
@@ -18468,37 +18500,9 @@
   "@buddyTopicPrompt": {
     "description": "Builder step 1 title"
   },
-  "buddyTopicSearchHint": "Search topics",
-  "@buddyTopicSearchHint": {
-    "description": "Search field hint in the topic picker"
-  },
-  "buddyNoTopicsFound": "No topics found",
-  "@buddyNoTopicsFound": {
-    "description": "Topic search without results"
-  },
-  "buddySuggestionsTitle": "Quick start",
-  "@buddySuggestionsTitle": {
-    "description": "Header of ready-made Buddy suggestions"
-  },
-  "buddyRolePrompt": "How should your Buddy help?",
-  "@buddyRolePrompt": {
-    "description": "Builder step 2 title"
-  },
   "buddyLanguagePrompt": "Which language should your Buddy speak?",
   "@buddyLanguagePrompt": {
     "description": "Builder step 3 title"
-  },
-  "buddyLevelPrompt": "Your level",
-  "@buddyLevelPrompt": {
-    "description": "Builder: user's level in the topic"
-  },
-  "buddyCefrPrompt": "Language level (optional)",
-  "@buddyCefrPrompt": {
-    "description": "Builder: CEFR level for language practice"
-  },
-  "buddyCefrNone": "Not sure",
-  "@buddyCefrNone": {
-    "description": "CEFR option: no level chosen"
   },
   "buddyNamePrompt": "Give your Buddy a name",
   "@buddyNamePrompt": {
@@ -18525,9 +18529,33 @@
       }
     }
   },
-  "buddyTonePrompt": "Tone",
-  "@buddyTonePrompt": {
-    "description": "Builder: tone picker title"
+  "buddyCategoryLabel": "Category",
+  "@buddyCategoryLabel": {
+    "description": "Label of the Buddy category combobox and settings row"
+  },
+  "buddyCategoryHint": "Type to search a category",
+  "@buddyCategoryHint": {
+    "description": "Hint inside the Buddy category combobox"
+  },
+  "buddyToneStepTitle": "How should your Buddy sound?",
+  "@buddyToneStepTitle": {
+    "description": "Title of the tone step of the Buddy builder"
+  },
+  "buddyLanguageOnlyNote": "Your Buddy always speaks only this language.",
+  "@buddyLanguageOnlyNote": {
+    "description": "Note under the Buddy language choice"
+  },
+  "buddyAvatarsLoadFailed": "Couldn't load the pictures.",
+  "@buddyAvatarsLoadFailed": {
+    "description": "Shown when the Buddy avatar pictures could not be loaded"
+  },
+  "buddySettingAvatar": "Picture",
+  "@buddySettingAvatar": {
+    "description": "Buddy settings row: the avatar picture"
+  },
+  "buddySettingName": "Name",
+  "@buddySettingName": {
+    "description": "Buddy name field label and settings row"
   },
   "buddyNext": "Next",
   "@buddyNext": {
@@ -18541,61 +18569,13 @@
   "@buddyCreate": {
     "description": "Builder: final create button"
   },
-  "buddySuggestItalianTeacher": "Italian teacher",
-  "@buddySuggestItalianTeacher": {
-    "description": "Ready-made Buddy suggestion"
-  },
-  "buddySuggestEnglishPartner": "English conversation partner",
-  "@buddySuggestEnglishPartner": {
-    "description": "Ready-made Buddy suggestion"
-  },
-  "buddySuggestRunningCoach": "Running coach",
-  "@buddySuggestRunningCoach": {
-    "description": "Ready-made Buddy suggestion"
-  },
-  "buddySuggestMovieBuddy": "Film buddy",
-  "@buddySuggestMovieBuddy": {
-    "description": "Ready-made Buddy suggestion: someone to talk about films with"
-  },
-  "buddySuggestTravelPlanner": "Budget travel planner",
-  "@buddySuggestTravelPlanner": {
-    "description": "Ready-made Buddy suggestion"
-  },
-  "buddySuggestCookingFriend": "Cooking friend",
-  "@buddySuggestCookingFriend": {
-    "description": "Ready-made Buddy suggestion"
-  },
-  "buddySuggestInterviewCoach": "Job interview coach",
-  "@buddySuggestInterviewCoach": {
-    "description": "Ready-made Buddy suggestion"
-  },
-  "buddySuggestDebatePartner": "Friendly debate partner",
-  "@buddySuggestDebatePartner": {
-    "description": "Ready-made Buddy suggestion"
-  },
-  "buddySettingRole": "Role",
-  "@buddySettingRole": {
-    "description": "Settings row label"
-  },
   "buddySettingTone": "Tone",
   "@buddySettingTone": {
-    "description": "Settings row label"
-  },
-  "buddySettingTopic": "Topic",
-  "@buddySettingTopic": {
-    "description": "Settings row label"
-  },
-  "buddySettingLevel": "Level",
-  "@buddySettingLevel": {
     "description": "Settings row label"
   },
   "buddySettingLanguage": "Language",
   "@buddySettingLanguage": {
     "description": "Settings row label"
-  },
-  "buddySettingCefr": "Language level",
-  "@buddySettingCefr": {
-    "description": "Settings row label (CEFR)"
   },
   "buddySettingCheckIns": "Check-ins",
   "@buddySettingCheckIns": {
@@ -18696,54 +18676,6 @@
   "@notificationCatBuddiesSubtitle": {
     "description": "Notification settings: Buddies category subtitle"
   },
-  "buddyRole_friend": "Friend",
-  "@buddyRole_friend": {
-    "description": "AI Buddy role name"
-  },
-  "buddyRoleDesc_friend": "A friendly companion to chat with",
-  "@buddyRoleDesc_friend": {
-    "description": "Short description of the Buddy role 'Friend'"
-  },
-  "buddyRole_expert": "Expert",
-  "@buddyRole_expert": {
-    "description": "AI Buddy role name"
-  },
-  "buddyRoleDesc_expert": "Knows the topic well and explains it",
-  "@buddyRoleDesc_expert": {
-    "description": "Short description of the Buddy role 'Expert'"
-  },
-  "buddyRole_teacher": "Teacher",
-  "@buddyRole_teacher": {
-    "description": "AI Buddy role name"
-  },
-  "buddyRoleDesc_teacher": "Teaches step by step and corrects you",
-  "@buddyRoleDesc_teacher": {
-    "description": "Short description of the Buddy role 'Teacher'"
-  },
-  "buddyRole_coach": "Coach",
-  "@buddyRole_coach": {
-    "description": "AI Buddy role name"
-  },
-  "buddyRoleDesc_coach": "Motivates you and helps you reach goals",
-  "@buddyRoleDesc_coach": {
-    "description": "Short description of the Buddy role 'Coach'"
-  },
-  "buddyRole_conversation_partner": "Conversation partner",
-  "@buddyRole_conversation_partner": {
-    "description": "AI Buddy role name"
-  },
-  "buddyRoleDesc_conversation_partner": "Keeps the conversation going so you can practise",
-  "@buddyRoleDesc_conversation_partner": {
-    "description": "Short description of the Buddy role 'Conversation partner'"
-  },
-  "buddyRole_debate_partner": "Debate partner",
-  "@buddyRole_debate_partner": {
-    "description": "AI Buddy role name"
-  },
-  "buddyRoleDesc_debate_partner": "Politely argues the other side",
-  "@buddyRoleDesc_debate_partner": {
-    "description": "Short description of the Buddy role 'Debate partner'"
-  },
   "buddyTone_warm": "Warm",
   "@buddyTone_warm": {
     "description": "AI Buddy tone of voice (adjective)"
@@ -18767,18 +18699,6 @@
   "buddyTone_playful": "Playful",
   "@buddyTone_playful": {
     "description": "AI Buddy tone of voice (adjective)"
-  },
-  "buddyLevel_beginner": "Beginner",
-  "@buddyLevel_beginner": {
-    "description": "User's skill level in the Buddy topic"
-  },
-  "buddyLevel_intermediate": "Intermediate",
-  "@buddyLevel_intermediate": {
-    "description": "User's skill level in the Buddy topic"
-  },
-  "buddyLevel_expert": "Expert",
-  "@buddyLevel_expert": {
-    "description": "User's skill level in the Buddy topic"
   },
   "buddyLang_en": "English",
   "@buddyLang_en": {

@@ -30,9 +30,12 @@ class BuddiesTab extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final repo = repository ?? di.sl<BuddiesRepository>();
-    return BlocProvider(
-      create: (_) => BuddiesListBloc(repository: repo)..add(BuddiesListStarted(userId)),
-      child: _BuddiesTabView(userId: userId, repository: repo, prompts: prompts),
+    return BuddyAvatarScope(
+      repository: repo,
+      child: BlocProvider(
+        create: (_) => BuddiesListBloc(repository: repo)..add(BuddiesListStarted(userId)),
+        child: _BuddiesTabView(userId: userId, repository: repo, prompts: prompts),
+      ),
     );
   }
 }
@@ -63,8 +66,8 @@ class _BuddiesTabView extends StatelessWidget {
     bloc.add(const BuddiesStatusRequested());
     if (id != null && context.mounted) {
       await Navigator.of(context).push(MaterialPageRoute<void>(
-        builder: (_) => BuddyChatScreen(
-            userId: userId, buddyId: id, repository: repository, prompts: prompts),
+        builder: (_) =>
+            BuddyChatScreen(userId: userId, buddyId: id, repository: repository, prompts: prompts),
       ));
       bloc.add(const BuddiesStatusRequested());
     }
@@ -119,29 +122,43 @@ class _BuddiesTabView extends StatelessWidget {
   Widget _usageLines(AppLocalizations l10n, BuddiesListState state) {
     final s = state.status;
     if (s == null) return const SizedBox.shrink();
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Text(l10n.buddiesPlanUsage(state.buddyCount, s.buddyLimit),
-            key: const ValueKey('buddies-plan-usage'),
-            style: const TextStyle(color: AppColors.textPrimary, fontWeight: FontWeight.w600)),
-        const SizedBox(height: 2),
-        Text('${l10n.buddyFreeRepliesLeft(s.freeRepliesLeft)} · ${l10n.buddyThenCoinsPerReply(s.coinsPerReply)}',
-            key: const ValueKey('buddies-free-replies'),
-            style: const TextStyle(color: AppColors.textTertiary, fontSize: 12)),
-      ],
+    // Centered horizontally (owner 2026-10-24), in the list header and in
+    // the empty state.
+    return SizedBox(
+      width: double.infinity,
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          Text(l10n.buddiesPlanUsage(state.buddyCount, s.buddyLimit),
+              key: const ValueKey('buddies-plan-usage'),
+              textAlign: TextAlign.center,
+              style: const TextStyle(color: AppColors.textPrimary, fontWeight: FontWeight.w600)),
+          const SizedBox(height: 2),
+          Text(
+              buddyQuotaLine(l10n,
+                  freeRepliesLeft: s.freeRepliesLeft,
+                  coinsPerReply: s.coinsPerReply,
+                  repliesPerCoin: s.repliesPerCoin,
+                  replyCredits: s.replyCredits),
+              key: const ValueKey('buddies-free-replies'),
+              textAlign: TextAlign.center,
+              style: const TextStyle(color: AppColors.textTertiary, fontSize: 12)),
+        ],
+      ),
     );
   }
 
   Widget _header(BuildContext context, AppLocalizations l10n, BuddiesListState state) => Padding(
         padding: const EdgeInsets.fromLTRB(16, 12, 16, 8),
-        child: Row(
+        child: Column(
           children: [
-            Expanded(child: _usageLines(l10n, state)),
-            const SizedBox(width: 8),
+            _usageLines(l10n, state),
+            const SizedBox(height: 10),
             ElevatedButton.icon(
               key: const ValueKey('buddies-new'),
+              // The app theme's infinite minimum width would stretch it.
               style: ElevatedButton.styleFrom(
+                minimumSize: const Size(0, 44),
                 backgroundColor: AppColors.richGold,
                 foregroundColor: AppColors.deepBlack,
               ),
@@ -153,24 +170,29 @@ class _BuddiesTabView extends StatelessWidget {
         ),
       );
 
-  Widget _tile(BuildContext context, AppLocalizations l10n, BuddyListItem item, BuddiesListState state) {
+  Widget _tile(
+      BuildContext context, AppLocalizations l10n, BuddyListItem item, BuddiesListState state) {
     final b = item.buddy;
     final subtitle = item.locked
         ? l10n.buddyLockedHint
-        : [buddyTopicLabel(l10n, b.settings.topic), if ((b.lastMessage ?? '').isNotEmpty) b.lastMessage!]
-            .join(' · ');
+        : [
+            buddyTopicLabel(l10n, b.settings.topic),
+            if ((b.lastMessage ?? '').isNotEmpty) b.lastMessage!
+          ].join(' · ');
     return Opacity(
       opacity: item.locked ? 0.55 : 1,
       child: ListTile(
         key: ValueKey('buddy-tile-${b.id}'),
         contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
-        leading: BuddyAvatar(avatarId: b.settings.avatar, size: 52, showAiBadge: true, greyed: item.locked),
+        leading: BuddyAvatar(
+            avatarId: b.settings.avatar, size: 52, showAiBadge: true, greyed: item.locked),
         title: Row(
           children: [
             Flexible(
               child: Text(b.name,
                   overflow: TextOverflow.ellipsis,
-                  style: const TextStyle(color: AppColors.textPrimary, fontWeight: FontWeight.bold)),
+                  style:
+                      const TextStyle(color: AppColors.textPrimary, fontWeight: FontWeight.bold)),
             ),
             const SizedBox(width: 6),
             const BuddyAiBadge(compact: true),
@@ -227,13 +249,15 @@ class _BuddiesTabView extends StatelessWidget {
               const SizedBox(height: 8),
               Text(l10n.buddiesEmptyBody,
                   textAlign: TextAlign.center,
-                  style: const TextStyle(color: AppColors.textSecondary, fontSize: 14, height: 1.4)),
+                  style:
+                      const TextStyle(color: AppColors.textSecondary, fontSize: 14, height: 1.4)),
               const SizedBox(height: 16),
               _usageLines(l10n, state),
               const SizedBox(height: 16),
               ElevatedButton.icon(
                 key: const ValueKey('buddies-create'),
                 style: ElevatedButton.styleFrom(
+                  minimumSize: const Size(0, 48),
                   backgroundColor: AppColors.richGold,
                   foregroundColor: AppColors.deepBlack,
                   padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 14),

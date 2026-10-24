@@ -91,6 +91,8 @@ class BuddyChatState extends Equatable {
     this.locked = false,
     this.freeRepliesLeft,
     this.coinsPerReply = 1,
+    this.repliesPerCoin = 1,
+    this.replyCredits = 0,
     this.status,
     this.error,
     this.errorLocalId,
@@ -122,7 +124,13 @@ class BuddyChatState extends Equatable {
   final bool locked;
 
   final int? freeRepliesLeft;
-  final int coinsPerReply;
+
+  /// Reply price from `getBuddyStatus` (0.2 = 1 coin buys 5 replies).
+  final num coinsPerReply;
+  final int repliesPerCoin;
+
+  /// Prepaid replies left (paid with a coin, never expire).
+  final int replyCredits;
 
   /// Plan status (limit + tier for the upgrade prompt), when loaded.
   final BuddyStatus? status;
@@ -150,7 +158,9 @@ class BuddyChatState extends Equatable {
     bool? waitingReply,
     bool? locked,
     int? freeRepliesLeft,
-    int? coinsPerReply,
+    num? coinsPerReply,
+    int? repliesPerCoin,
+    int? replyCredits,
     BuddyStatus? status,
     BuddyException? error,
     String? errorLocalId,
@@ -170,6 +180,8 @@ class BuddyChatState extends Equatable {
         locked: locked ?? this.locked,
         freeRepliesLeft: freeRepliesLeft ?? this.freeRepliesLeft,
         coinsPerReply: coinsPerReply ?? this.coinsPerReply,
+        repliesPerCoin: repliesPerCoin ?? this.repliesPerCoin,
+        replyCredits: replyCredits ?? this.replyCredits,
         status: status ?? this.status,
         error: error ?? this.error,
         errorLocalId: errorLocalId ?? this.errorLocalId,
@@ -191,6 +203,8 @@ class BuddyChatState extends Equatable {
         locked,
         freeRepliesLeft,
         coinsPerReply,
+        repliesPerCoin,
+        replyCredits,
         status,
         error,
         errorLocalId,
@@ -299,6 +313,8 @@ class BuddyChatBloc extends Bloc<BuddyChatEvent, BuddyChatState> {
     emit(state.copyWith(
       freeRepliesLeft: event.status.freeRepliesLeft,
       coinsPerReply: event.status.coinsPerReply,
+      repliesPerCoin: event.status.repliesPerCoin,
+      replyCredits: event.status.replyCredits,
       status: event.status,
     ));
   }
@@ -309,8 +325,8 @@ class BuddyChatBloc extends Bloc<BuddyChatEvent, BuddyChatState> {
     if (state.loadingOlder || !state.hasMore || state.server.isEmpty) return;
     emit(state.copyWith(loadingOlder: true));
     try {
-      final page = await _repo.olderMessages(uid, id,
-          before: state.server.first.createdAt, limit: pageSize);
+      final page =
+          await _repo.olderMessages(uid, id, before: state.server.first.createdAt, limit: pageSize);
       emit(state.copyWith(
         server: mergeServerMessages(state.server, page.messages),
         hasMore: page.hasMore,
@@ -393,6 +409,7 @@ class BuddyChatBloc extends Bloc<BuddyChatEvent, BuddyChatState> {
         local: rec.local,
         waitingReply: false,
         freeRepliesLeft: r.freeRepliesLeft,
+        replyCredits: r.replyCredits,
         replySeq: state.replySeq + 1,
       ));
     } catch (e) {

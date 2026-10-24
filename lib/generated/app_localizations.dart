@@ -48298,6 +48298,24 @@ abstract class AppLocalizations {
   /// **'{coins, plural, =1{then 1 coin per reply} other{then {coins} coins per reply}}'**
   String buddyThenCoinsPerReply(int coins);
 
+  /// After the free replies: price of one Buddy reply when one coin buys several replies. price is a localized decimal like 0.2
+  ///
+  /// In en, this message translates to:
+  /// **'then {price} coins per reply (1 coin = {replies} replies)'**
+  String buddyThenPricePerReply(String price, int replies);
+
+  /// Buddy replies already paid with a coin and not used yet (they never expire)
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 prepaid reply} other{{count} prepaid replies}}'**
+  String buddyPrepaidReplies(int count);
+
+  /// Dialog text: no coins left for a Buddy reply, when one coin buys several replies
+  ///
+  /// In en, this message translates to:
+  /// **'You used today\'s free Buddy replies. 1 coin buys {replies} replies.'**
+  String buddyInsufficientCoinsBundleBody(int replies);
+
   /// Badge on a Buddy that is locked on the current plan
   ///
   /// In en, this message translates to:
@@ -48478,53 +48496,11 @@ abstract class AppLocalizations {
   /// **'What do you want to talk about?'**
   String get buddyTopicPrompt;
 
-  /// Search field hint in the topic picker
-  ///
-  /// In en, this message translates to:
-  /// **'Search topics'**
-  String get buddyTopicSearchHint;
-
-  /// Topic search without results
-  ///
-  /// In en, this message translates to:
-  /// **'No topics found'**
-  String get buddyNoTopicsFound;
-
-  /// Header of ready-made Buddy suggestions
-  ///
-  /// In en, this message translates to:
-  /// **'Quick start'**
-  String get buddySuggestionsTitle;
-
-  /// Builder step 2 title
-  ///
-  /// In en, this message translates to:
-  /// **'How should your Buddy help?'**
-  String get buddyRolePrompt;
-
   /// Builder step 3 title
   ///
   /// In en, this message translates to:
   /// **'Which language should your Buddy speak?'**
   String get buddyLanguagePrompt;
-
-  /// Builder: user's level in the topic
-  ///
-  /// In en, this message translates to:
-  /// **'Your level'**
-  String get buddyLevelPrompt;
-
-  /// Builder: CEFR level for language practice
-  ///
-  /// In en, this message translates to:
-  /// **'Language level (optional)'**
-  String get buddyCefrPrompt;
-
-  /// CEFR option: no level chosen
-  ///
-  /// In en, this message translates to:
-  /// **'Not sure'**
-  String get buddyCefrNone;
 
   /// Builder step 4: name field label
   ///
@@ -48556,11 +48532,47 @@ abstract class AppLocalizations {
   /// **'Avatar {number}'**
   String buddyAvatarLabel(int number);
 
-  /// Builder: tone picker title
+  /// Label of the Buddy category combobox and settings row
   ///
   /// In en, this message translates to:
-  /// **'Tone'**
-  String get buddyTonePrompt;
+  /// **'Category'**
+  String get buddyCategoryLabel;
+
+  /// Hint inside the Buddy category combobox
+  ///
+  /// In en, this message translates to:
+  /// **'Type to search a category'**
+  String get buddyCategoryHint;
+
+  /// Title of the tone step of the Buddy builder
+  ///
+  /// In en, this message translates to:
+  /// **'How should your Buddy sound?'**
+  String get buddyToneStepTitle;
+
+  /// Note under the Buddy language choice
+  ///
+  /// In en, this message translates to:
+  /// **'Your Buddy always speaks only this language.'**
+  String get buddyLanguageOnlyNote;
+
+  /// Shown when the Buddy avatar pictures could not be loaded
+  ///
+  /// In en, this message translates to:
+  /// **'Couldn\'t load the pictures.'**
+  String get buddyAvatarsLoadFailed;
+
+  /// Buddy settings row: the avatar picture
+  ///
+  /// In en, this message translates to:
+  /// **'Picture'**
+  String get buddySettingAvatar;
+
+  /// Buddy name field label and settings row
+  ///
+  /// In en, this message translates to:
+  /// **'Name'**
+  String get buddySettingName;
 
   /// Builder: next step
   ///
@@ -48580,60 +48592,6 @@ abstract class AppLocalizations {
   /// **'Create Buddy'**
   String get buddyCreate;
 
-  /// Ready-made Buddy suggestion
-  ///
-  /// In en, this message translates to:
-  /// **'Italian teacher'**
-  String get buddySuggestItalianTeacher;
-
-  /// Ready-made Buddy suggestion
-  ///
-  /// In en, this message translates to:
-  /// **'English conversation partner'**
-  String get buddySuggestEnglishPartner;
-
-  /// Ready-made Buddy suggestion
-  ///
-  /// In en, this message translates to:
-  /// **'Running coach'**
-  String get buddySuggestRunningCoach;
-
-  /// Ready-made Buddy suggestion: someone to talk about films with
-  ///
-  /// In en, this message translates to:
-  /// **'Film buddy'**
-  String get buddySuggestMovieBuddy;
-
-  /// Ready-made Buddy suggestion
-  ///
-  /// In en, this message translates to:
-  /// **'Budget travel planner'**
-  String get buddySuggestTravelPlanner;
-
-  /// Ready-made Buddy suggestion
-  ///
-  /// In en, this message translates to:
-  /// **'Cooking friend'**
-  String get buddySuggestCookingFriend;
-
-  /// Ready-made Buddy suggestion
-  ///
-  /// In en, this message translates to:
-  /// **'Job interview coach'**
-  String get buddySuggestInterviewCoach;
-
-  /// Ready-made Buddy suggestion
-  ///
-  /// In en, this message translates to:
-  /// **'Friendly debate partner'**
-  String get buddySuggestDebatePartner;
-
-  /// Settings row label
-  ///
-  /// In en, this message translates to:
-  /// **'Role'**
-  String get buddySettingRole;
-
   /// Settings row label
   ///
   /// In en, this message translates to:
@@ -48643,26 +48601,8 @@ abstract class AppLocalizations {
   /// Settings row label
   ///
   /// In en, this message translates to:
-  /// **'Topic'**
-  String get buddySettingTopic;
-
-  /// Settings row label
-  ///
-  /// In en, this message translates to:
-  /// **'Level'**
-  String get buddySettingLevel;
-
-  /// Settings row label
-  ///
-  /// In en, this message translates to:
   /// **'Language'**
   String get buddySettingLanguage;
-
-  /// Settings row label (CEFR)
-  ///
-  /// In en, this message translates to:
-  /// **'Language level'**
-  String get buddySettingCefr;
 
   /// Switch: the Buddy may write first
   ///
@@ -48760,78 +48700,6 @@ abstract class AppLocalizations {
   /// **'Check-in messages from your AI Buddies'**
   String get notificationCatBuddiesSubtitle;
 
-  /// AI Buddy role name
-  ///
-  /// In en, this message translates to:
-  /// **'Friend'**
-  String get buddyRole_friend;
-
-  /// Short description of the Buddy role 'Friend'
-  ///
-  /// In en, this message translates to:
-  /// **'A friendly companion to chat with'**
-  String get buddyRoleDesc_friend;
-
-  /// AI Buddy role name
-  ///
-  /// In en, this message translates to:
-  /// **'Expert'**
-  String get buddyRole_expert;
-
-  /// Short description of the Buddy role 'Expert'
-  ///
-  /// In en, this message translates to:
-  /// **'Knows the topic well and explains it'**
-  String get buddyRoleDesc_expert;
-
-  /// AI Buddy role name
-  ///
-  /// In en, this message translates to:
-  /// **'Teacher'**
-  String get buddyRole_teacher;
-
-  /// Short description of the Buddy role 'Teacher'
-  ///
-  /// In en, this message translates to:
-  /// **'Teaches step by step and corrects you'**
-  String get buddyRoleDesc_teacher;
-
-  /// AI Buddy role name
-  ///
-  /// In en, this message translates to:
-  /// **'Coach'**
-  String get buddyRole_coach;
-
-  /// Short description of the Buddy role 'Coach'
-  ///
-  /// In en, this message translates to:
-  /// **'Motivates you and helps you reach goals'**
-  String get buddyRoleDesc_coach;
-
-  /// AI Buddy role name
-  ///
-  /// In en, this message translates to:
-  /// **'Conversation partner'**
-  String get buddyRole_conversation_partner;
-
-  /// Short description of the Buddy role 'Conversation partner'
-  ///
-  /// In en, this message translates to:
-  /// **'Keeps the conversation going so you can practise'**
-  String get buddyRoleDesc_conversation_partner;
-
-  /// AI Buddy role name
-  ///
-  /// In en, this message translates to:
-  /// **'Debate partner'**
-  String get buddyRole_debate_partner;
-
-  /// Short description of the Buddy role 'Debate partner'
-  ///
-  /// In en, this message translates to:
-  /// **'Politely argues the other side'**
-  String get buddyRoleDesc_debate_partner;
-
   /// AI Buddy tone of voice (adjective)
   ///
   /// In en, this message translates to:
@@ -48867,24 +48735,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Playful'**
   String get buddyTone_playful;
-
-  /// User's skill level in the Buddy topic
-  ///
-  /// In en, this message translates to:
-  /// **'Beginner'**
-  String get buddyLevel_beginner;
-
-  /// User's skill level in the Buddy topic
-  ///
-  /// In en, this message translates to:
-  /// **'Intermediate'**
-  String get buddyLevel_intermediate;
-
-  /// User's skill level in the Buddy topic
-  ///
-  /// In en, this message translates to:
-  /// **'Expert'**
-  String get buddyLevel_expert;
 
   /// Language the Buddy speaks
   ///
