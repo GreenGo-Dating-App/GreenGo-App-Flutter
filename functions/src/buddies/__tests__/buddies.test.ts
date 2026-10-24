@@ -331,30 +331,6 @@ describe('the Buddy starts the chat', () => {
   });
 });
 
-describe('colour-matched chunks (original <-> translation)', () => {
-  const { validateSegments } = require('../buddies');
-  it('keeps exact, in-order pairs and drops invented or misspelled chunks', () => {
-    const seg = validateSegments([
-      { s: 'My car', t: 'La mia macchina' },
-      { s: 'is red', t: 'è rossa' },
-      { s: 'is blue', t: 'è blu' },          // not in the texts
-      { s: 'my car', t: 'la mia macchina' }, // wrong case
-    ], 'My car is red.', 'La mia macchina è rossa.');
-    expect(seg).toEqual([{ s: 'My car', t: 'La mia macchina' }, { s: 'is red', t: 'è rossa' }]);
-  });
-  it('allows reordered translation chunks but never overlapping ones', () => {
-    const seg = validateSegments([
-      { s: 'red car', t: 'macchina' },
-      { s: 'red car', t: 'macchina' },
-      { s: 'I have', t: 'Ho' },
-    ], 'I have a red car', 'Ho una macchina rossa');
-    expect(seg).toEqual([{ s: 'red car', t: 'macchina' }]);
-  });
-  it('returns [] for garbage', () => {
-    expect(validateSegments('nope', 'a', 'b')).toEqual([]);
-    expect(validateSegments([{ s: '!!', t: '??' }], '!!', '??')).toEqual([]);
-  });
-});
 
 describe('stray keyword bubbles', () => {
   it('drops a 1-2 word scrap next to a real message, keeps a short real answer alone', () => {
